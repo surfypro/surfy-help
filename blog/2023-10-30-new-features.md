@@ -11,3 +11,7 @@ tags: [features]
 
 - Mise en place de filtres sur les listes  par poste de travail, pièce, étage ou bâtiment quand il existe un lien
 - Harmonisations des fenêtres d'ouverture des options à droite
+
+:::tip
+
+Vous allez pouvoir faire des trucs trop cool !
