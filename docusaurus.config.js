@@ -93,7 +93,7 @@ const config = {
       algolia: {
         appId: 'NW817U8XR5',
         apiKey: '083fce28b9e49fd3eefa1a9a646eadcf',
-        indexName: 'help',
+        indexName: 'production_help',
         contextualSearch: true,
         searchPagePath: 'search',
       },
