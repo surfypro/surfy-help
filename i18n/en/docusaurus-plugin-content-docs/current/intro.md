@@ -4,6 +4,6 @@ sidebar_position: 1
 
 
 # Introduction
-Coucou je suis en français.
+English content
 
-Je suis pouya
+I am pouya pouya

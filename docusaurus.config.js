@@ -42,14 +42,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/surfy/surfy-help/tree/main/',
+            'https://github.com/surfypro/surfy-help/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/surfy/surfy-help/tree/main/',
+            'https://github.com/surfypro/surfy-help/tree/main/',
         },
         theme: {
           customCss: [require.resolve('./src/css/custom.css')],
@@ -75,31 +75,31 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Tutoriels',
           },
           {
             type: 'localeDropdown',
             position: 'right'
           },
-          // { to: '/blog', label: 'Blog', position: 'left' },
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/surfy/surfy-help',
+            href: 'https://github.com/surfypro/surfy-help',
             label: 'GitHub',
             position: 'right',
           },
 
         ],
       },
-      algolia: {
-        appId: '17D63GBKEP',
-        apiKey: '670c561b07906d6fa9cc55606b6701f2',
-        indexName: 'netlify_abcec12e-a9a4-450d-a722-405693c6e32e_main_all',
-        contextualSearch: true,
-        searchPagePath: 'search',
-        siteId: 'abcec12e-a9a4-450d-a722-405693c6e32e',
-        branch: 'main',
-        selector: 'div#search',
-      },
+      // algolia: {
+      //   appId: '17D63GBKEP',
+      //   apiKey: '670c561b07906d6fa9cc55606b6701f2',
+      //   indexName: 'netlify_abcec12e-a9a4-450d-a722-405693c6e32e_main_all',
+      //   contextualSearch: true,
+      //   searchPagePath: 'search',
+      //   siteId: 'abcec12e-a9a4-450d-a722-405693c6e32e',
+      //   branch: 'main',
+      //   selector: 'div#search',
+      // },
       footer: {
         style: 'dark',
         links: [
@@ -142,7 +142,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/surfy/surfy-help',
+                href: 'https://github.com/surfypro/surfy-help',
               },
             ],
           },
@@ -154,10 +154,10 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-  scripts: [
-    { src: 'https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js' }
-  ]
-  // plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
+  // scripts: [
+  //   { src: 'https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js' }
+  // ]
+  plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
 
 };
 

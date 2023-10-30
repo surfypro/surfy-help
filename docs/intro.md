@@ -2,49 +2,29 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Tutoriels Surfy
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Besoin d'un petit coup de pouce ? Nos tutoriels vous guideront pour réaliser quelques actions élémentaires dans Surfy
 
-## Getting Started
+## Les Surfaces dans Surfy
 
-Get started by **creating a new site**.
+Pour utiliser Surfy j'ai besoin de plans statiques en 2D qui serviront de fond de plan à chaque étage pour la construction de mes espaces.
+Dans Surfy je crée un bâtiment puis un étage avec son fond de plan et son échelle afin de pouvoir dessiner et qualifier les Pièces.
+J'obtiens alors les informations surfaciques par typologie de pièce ou par tout autre calque personnalisé: Organisations, natures de sol, zones d'évacuation, centres de coût, etc...
+Je peux également dupliquer un bâtiment ou un étage existant pour proposer un nouvel aménagement de mes espaces et décider en toute connaissance de mes données.
+Suite au réaménagement, je peux gommer les éléments obsolètes dans Paint3D pour mettre à jour mon fond de plan, et redéfinir mes espaces en séparant mes pièces suivant la nouvelle implantation.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Les Occupants dans Surfy
 
-### What you'll need
+La liste des occupants avec les renseignements complémentaires peut être intégrée dans Surfy à partir d'un fichier Excel ou manuellement au fil de l'arrivée des collaborateurs.
+Trouver facilement le poste ou le quartier d'un collaborateur, visualiser automatiquement sur les plans les postes de travail des équipiers locaux de sécurité, structurer et répertorier les équipes, attribuer un siège ergo ou un caisson,... autant de fonctionnalités qui vous sont expliquées ici.
+Le déménagement des équipes est géré facilement dans Surfy à partir d'une matrice de transfert simple et efficace.
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## Le Mobilier dans Surfy
 
-## Generate a new site
+Créer et dupliquer du Mobilier dans Surfy, à l'échelle ou sous forme d'icônes, à partir de la bibliothèque d'objets ou en créant ses propres types d'objets ou type de Postes de travail.
+Evaluer sa capacité à recevoir en comptant les postes de travail et les places assises disponibles dans le bâtiment.
 
-Generate a new Docusaurus site using the **classic template**.
+## Surfy Plus +
 
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
-
-
-My name is pouya
+Nous avons pensé à vous faciliter la tâche dans la recherche de vos informations dans Surfy: Ajout d'un nouvel utilisateur de votre plateforme, Filtre des listes, menu déroulant, recherche d'une personne ou d'une référence, fichiers Excel de vos données, calcul de votre prestation de nettoyage, trouvez rapidement ce que vous cherchez !
