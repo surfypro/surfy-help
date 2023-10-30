@@ -91,11 +91,14 @@ const config = {
         ],
       },
       algolia: {
-        appId: 'NW817U8XR5',
-        apiKey: '083fce28b9e49fd3eefa1a9a646eadcf',
-        indexName: 'production_help',
+        appId: '17D63GBKEP',
+        apiKey: '670c561b07906d6fa9cc55606b6701f2',
+        // indexName: 'production_help',
         contextualSearch: true,
         searchPagePath: 'search',
+        siteId: 'abcec12e-a9a4-450d-a722-405693c6e32e',
+        branch: 'main',
+        selector: 'div#search',
       },
       footer: {
         style: 'dark',
