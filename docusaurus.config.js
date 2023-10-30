@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Surfy University',
   tagline: 'Nous digitalisons les espaces en donnant accès aux plans et aux données',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/surfy-square.png',
 
   // Set the production url of your site here
   url: 'https://help.surfy.pro',
@@ -28,7 +28,7 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'fr',
+    defaultLocale: 'en',
     locales: ['en', 'fr'],
   },
 
@@ -42,14 +42,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/surfy/surfy-help/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/surfy/surfy-help/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -67,14 +67,20 @@ const config = {
         title: 'Surfy University',
         logo: {
           alt: 'Surfy Logo',
-          src: 'img/logo.svg',
+          // src: 'img/logo-surfy.svg',
+          src: 'img/surfy-square.png'
         },
         items: [
+
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tutorial',
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right'
           },
           // { to: '/blog', label: 'Blog', position: 'left' },
           {
@@ -82,6 +88,7 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+
         ],
       },
       footer: {
