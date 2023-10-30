@@ -52,7 +52,7 @@ const config = {
             'https://github.com/surfy/surfy-help/tree/main/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [require.resolve('./src/css/custom.css')],
         },
       }),
     ],
@@ -154,6 +154,9 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  scripts: [
+    { src: 'https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js' }
+  ]
   // plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
 
 };

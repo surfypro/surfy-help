@@ -3,7 +3,8 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+// import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import Head from '@docusaurus/Head';
 
 import styles from './index.module.css';
 
@@ -33,6 +34,10 @@ export default function Home(): JSX.Element {
       title={`${siteConfig.title}`}
       description="Welcome to Surfy Help home page">
       <HomepageHeader />
+      <Head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+        {/* <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script> */}
+      </Head>
       <main>
         {/* <HomepageFeatures /> */}
       </main>
