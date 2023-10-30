@@ -1,5 +1,5 @@
 ---
-slug: nouveautes-octobre
+# slug: nouveautes-octobre
 title: Nouveautés Octobre 2023
 authors: [vincent]
 tags: [features]
@@ -15,3 +15,5 @@ tags: [features]
 :::tip
 
 Vous allez pouvoir faire des trucs trop cool !
+
+:::

@@ -13,3 +13,5 @@ A partir du moment où vous donnez ces deux informations, vous avez la possibil
 Vous avez la possibilité d'ajouter l'adresse du bâtiment, très utile pour un multi site : vous retrouvez vos bâtiments sur une carte. Le type de bâtiment va vous permettre de dire si vous êtes propriétaire ou locataire, l'utilisateur propriétaire du bâtiment dans le cas d'un scénario c'est celui qui va créer le scénario, et puis le bâtiment de référence, c'est le bâtiment derrière lequel le scénario éventuel est caché c'est à dire son bâtiment d'origine à partir duquel il a été créé. 
  
 Mais le bâtiment de référence peut aussi être un bâtiment quelconque derrière lequel on cache le bâtiment en question. Une fois que vos informations sont remplies, vous validez la création et quand vous revenez sur votre page d'accueil vous avez votre bâtiment qui est créé. Vous pouvez ensuite le modifier pour créer des étages et compléter ainsi votre bâtiment. 
+
+[Lien vers filtrer les tableaux](/docs/navigation/filtres/filtrer-les-tableaux.md)
