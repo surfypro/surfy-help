@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Besoin d'un petit coup de pouce ? Nos tutoriels vous guideront pour réaliser quelques actions élémentaires dans Surfy
 
-## Les Surfaces dans Surfy
+## Les Surfaces dans Surfy 2
 
 Pour utiliser Surfy j'ai besoin de plans statiques en 2D qui serviront de fond de plan à chaque étage pour la construction de mes espaces.
 Dans Surfy je crée un bâtiment puis un étage avec son fond de plan et son échelle afin de pouvoir dessiner et qualifier les Pièces.
