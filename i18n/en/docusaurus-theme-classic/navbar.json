@@ -1,26 +1,26 @@
 {
-  "title": {
-    "message": "My Site",
-    "description": "The title in the navbar"
-  },
-  "item.label.Docs": {
-    "message": "Docs (en)",
-    "description": "Navbar item with label Docs"
-  },
-  "item.label.Blog": {
-    "message": "Blog (en)",
-    "description": "Navbar item with label Blog"
-  },
-  "item.label.GitHub": {
-    "message": "GitHub (en)",
-    "description": "Navbar item with label GitHub"
-  },
-  "logo.alt": {
-    "message": "Surfy Logo",
-    "description": "The alt text of navbar logo"
-  },
-  "item.label.Tutoriels": {
-    "message": "Tutoriels",
-    "description": "Navbar item with label Tutoriels"
-  }
+    "title": {
+        "message": "Surfy University",
+        "description": "La documentation de la solution Surfy"
+    },
+    "item.label.Docs": {
+        "message": "Docs (en)",
+        "description": "Navbar item with label Docs"
+    },
+    "item.label.Blog": {
+        "message": "Blog (en)",
+        "description": "Navbar item with label Blog"
+    },
+    "item.label.GitHub": {
+        "message": "GitHub (en)",
+        "description": "Navbar item with label GitHub"
+    },
+    "logo.alt": {
+        "message": "Surfy Logo",
+        "description": "The alt text of navbar logo"
+    },
+    "item.label.Tutoriels": {
+        "message": "Tutoriels",
+        "description": "Navbar item with label Tutoriels"
+    }
 }

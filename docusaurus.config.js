@@ -104,16 +104,16 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documentation',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Tutoriels',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Communautés',
             items: [
               {
                 label: 'Youtube',
@@ -130,7 +130,7 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'Plus',
             items: [
               {
                 label: 'App',
