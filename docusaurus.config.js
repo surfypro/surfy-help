@@ -28,8 +28,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr'],
+    defaultLocale: 'fr',
+    locales: ['fr', 'en'],
   },
 
   presets: [
@@ -90,16 +90,16 @@ const config = {
 
         ],
       },
-      // algolia: {
-      //   appId: '17D63GBKEP',
-      //   apiKey: '670c561b07906d6fa9cc55606b6701f2',
-      //   // indexName: 'production_help',
-      //   contextualSearch: true,
-      //   searchPagePath: 'search',
-      //   siteId: 'abcec12e-a9a4-450d-a722-405693c6e32e',
-      //   branch: 'main',
-      //   selector: 'div#search',
-      // },
+      algolia: {
+        appId: '17D63GBKEP',
+        apiKey: '670c561b07906d6fa9cc55606b6701f2',
+        indexName: 'netlify_abcec12e-a9a4-450d-a722-405693c6e32e_main_all',
+        contextualSearch: true,
+        searchPagePath: 'search',
+        siteId: 'abcec12e-a9a4-450d-a722-405693c6e32e',
+        branch: 'main',
+        selector: 'div#search',
+      },
       footer: {
         style: 'dark',
         links: [
@@ -154,7 +154,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-  plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
+  // plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
 
 };
 
