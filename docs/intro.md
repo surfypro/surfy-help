@@ -28,3 +28,4 @@ Evaluer sa capacité à recevoir en comptant les postes de travail et les places
 ## Surfy Plus +
 
 Nous avons pensé à vous faciliter la tâche dans la recherche de vos informations dans Surfy: Ajout d'un nouvel utilisateur de votre plateforme, Filtre des listes, menu déroulant, recherche d'une personne ou d'une référence, fichiers Excel de vos données, calcul de votre prestation de nettoyage, trouvez rapidement ce que vous cherchez !
+
