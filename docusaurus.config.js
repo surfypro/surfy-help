@@ -93,7 +93,7 @@ const config = {
       algolia: {
         appId: 'NW817U8XR5',
         apiKey: '083fce28b9e49fd3eefa1a9a646eadcf',
-        indexName: 'production_help',
+        indexName: 'crawler_Surfy Help',
         contextualSearch: true,
         searchPagePath: 'search',
         // siteId: 'abcec12e-a9a4-450d-a722-405693c6e32e',
