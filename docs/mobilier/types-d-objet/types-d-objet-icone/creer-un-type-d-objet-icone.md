@@ -4,7 +4,7 @@ Il existe 2 types d’objet : Icônes et Objets à l’échelle.
 Un type d’objet sous forme d'Icône permet de définir un nom, une Icône, une couleur, un fabricant, un prix, un modèle éventuel pour la vue 3D ainsi que des informations associées, afin de créer des objets sous forme d'icône ayant toutes ces caractéristiques. C’est la « Matrice » permettant la création de multiples objets identiques.
 Les objets issus de chaque type d’objet peuvent être personnalisés (date d’achat, référence, code d’immobilisation, association à une personne, …)
 
-## Créer un type d’objet sous forme d’Icône :
+## Créer un type d’objet sous forme d’Icône
 -	Dans « Mobilier », « Typologies », « Types d’objet », cliquer sur « Créer un type d’objet ».
 -	Renseigner le « nom » du type d’icône à créer
 -	Placer l’« indice de hauteur» à « 9 » afin que les icônes soient systématiquement au-dessus des autres objets, donc visibles. (Par défaut, l’indice de hauteur est à 0. Il peut être négatif)

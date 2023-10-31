@@ -5,7 +5,7 @@ Un type d’objet à l'échelle permet de définir un nom, une forme et une haut
 Les objets issus de chaque type d’objet peuvent être personnalisés (date d’achat, référence, code d’immobilisation, association à une personne, …)
 
 
-## Créer un type d’objet à l’échelle :
+## Créer un type d’objet à l’échelle
 -	Dans « Mobilier », « Typologies », « Types d’objet », cliquer sur « Créer un type d’objet ».
 -	Renseigner le « nom » du type d’objet à créer
 -	Par défaut, l’« indice de hauteur » est à 0. Il peut être négatif. En cas de chevauchement entre deux types d’objet, celui avec l’indice le plus haut sera systématiquement placé au-dessus de l’autre.
@@ -24,7 +24,7 @@ Les objets issus de chaque type d’objet peuvent être personnalisés (date d�
 -	Le « Modèle 3D » permet une visualisation 3D des Objets issus du type d’objet et placés sur le plan.
 -	La « Clé externe » permet d’identifier le type d’objet avec une utilisation extérieure à Surfy (interopérabilité avec des applications tiers)
 -	« Valider la création » ouvre une page blanche. Cliquer sur la page fait apparaitre une série d’icônes.
-## Créer la forme du type d’objet :
+## Créer la forme du type d’objet
 -	Cliquer sur « Ajouter une forme » pour dessiner la forme du type d’objet.
 -	On peut afficher le fond de plan d’un étage avec l’icône « choisir un plan de référence pour créer la forme » afin de décalquer la forme voulue.
 -	Une fois la forme à l'échelle dessinée, cliquer sur l'icône verte pour valider la création de la forme.
