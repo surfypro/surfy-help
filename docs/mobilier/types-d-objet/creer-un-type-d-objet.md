@@ -14,9 +14,10 @@ Les objets issus de chaque type d’objet peuvent être personnalisés (date d�
 -	Cocher « Afficher les informations sur le plan » permet d’afficher le champ « Référence » de chaque objet sur le plan.
 -	Un « Code » particulier vous donnera accès directement au type d’objet en le tapant dans la recherche lors de la création d’objet.
 -	Dans le champ « Icône », le « Crayon » vous donne accès à trois types d’icône :
-    o	Les Icônes de « Fontawsome », visibles en cochant « tout afficher » ou en recherchant par mot clé en anglais dans la case de recherche.
-    o	Les Icônes « SURFY » destinées aux illustrations ajoutées sur les plans aux endroits stratégiques (Toilettes, Escaliers, Ascenseurs, Points Copie, …) mais qui peuvent également être utilisées comme des icônes classiques.
-    o	Les Icônes « SURFY 2 » représentant les icônes réglementaires de la norme de Sécurité ISO 7010. Leur forme originale peut être carrée ou triangulaire.
+    -   Les Icônes de « Fontawsome », visibles en cochant « tout afficher » ou en recherchant par mot clé en anglais dans la case de recherche.
+    -   Les Icônes « SURFY » destinées aux illustrations ajoutées sur les plans aux endroits stratégiques (Toilettes, Escaliers, Ascenseurs, Points Copie, …) mais qui peuvent également être utilisées comme des icônes classiques.
+    -   Les Icônes « SURFY 2 » représentant les icônes réglementaires de la norme de Sécurité ISO 7010. Leur forme originale peut être carrée ou triangulaire.
+
 -	La « couleur » peut être choisie parmi une sélection, ou par code Hexa ou RGB pour respecter votre charte graphique.
 -	La « Hauteur » donnera dans ce cas la hauteur du modèle 3D associé, s’il existe.
 -	« Description » et « Prix » peuvent être renseignés.
@@ -48,8 +49,9 @@ Les objets issus de chaque type d’objet peuvent être personnalisés (date d�
 ## Créer la forme du type d’objet :
 -	Cliquer sur « Ajouter une forme » pour dessiner la forme du type d’objet.
 -	On peut afficher le fond de plan d’un étage avec l’icône « choisir un plan de référence pour créer la forme » afin de décalquer la forme voulue.
--   Une fois la forme à l'échelle dessinée, cliquer sur l'icône verte pour valider la création de la forme.
+-	Une fois la forme à l'échelle dessinée, cliquer sur l'icône verte pour valider la création de la forme.
 -	Pour supprimer un sommet de la forme, cliquer sur le sommet puis sur « Supprimer le sommet ».
--   Pour ajouter un sommet entre deux sommets existants, cliquer sur un des sommets puis sur « ajouter un sommet ». Appuyer sur la touche « shift » pour libérer l'horizontalité du placement de sommet. Le sommet à ajouter est situé entre les deux sommets. Si le sommet à ajouter n'est pas bien situé, cliquer sur le sommet adjacent puis sur « ajouter un sommet » pour créer le nouveau sommet au bon endroit.
--   Pour supprimer la forme de l'objet, cliquer en dehors de la forme puis sur « Supprimer la forme ».
--   Une fois votre forme validée, vous pouvez quitter la page votre forme est sauvegardée.
+-	Pour ajouter un sommet entre deux sommets existants, cliquer sur un des sommets puis sur « ajouter un sommet ». Appuyer sur la touche « shift » pour libérer l'horizontalité du placement de sommet. Le sommet à ajouter est situé entre les deux sommets. Si le sommet à ajouter n'est pas bien situé, cliquer sur le sommet adjacent puis sur « ajouter un sommet » pour créer le nouveau sommet au bon endroit.
+-	Pour supprimer la forme de l'objet, cliquer en dehors de la forme puis sur « Supprimer la forme ».
+-	Une fois votre forme validée, vous pouvez quitter la page votre forme est sauvegardée.
+
