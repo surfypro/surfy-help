@@ -1,4 +1,4 @@
-# Création de types d’objet dans Surfy
+# Création de types d’objet
 
 Il existe 2 types d’objet : Icônes et Objets à l’échelle.
 Un type d’objet permet de définir un nom, une forme et une hauteur (ou une Icône), une couleur, un fabricant, un prix, un modèle pour la vue 3D ainsi que des informations associées, afin de créer des objets à l’échelle ayant toutes ces caractéristiques. C’est la « Matrice » permettant la création de multiples objets identiques.
