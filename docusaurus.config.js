@@ -91,9 +91,9 @@ const config = {
         ],
       },
       algolia: {
-        appId: 'NW817U8XR5',
-        apiKey: '083fce28b9e49fd3eefa1a9a646eadcf',
-        indexName: 'crawler_Surfy Help',
+        appId: 'X4BNSJG6KM',
+        apiKey: 'f26cb9c3ca2be7964014e7228bce31a2',
+        indexName: 'help-surfy',
         contextualSearch: true,
         searchPagePath: 'search',
         // siteId: 'abcec12e-a9a4-450d-a722-405693c6e32e',
