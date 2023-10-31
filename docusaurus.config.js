@@ -90,16 +90,16 @@ const config = {
 
         ],
       },
-      // algolia: {
-      //   appId: '17D63GBKEP',
-      //   apiKey: '670c561b07906d6fa9cc55606b6701f2',
-      //   indexName: 'netlify_abcec12e-a9a4-450d-a722-405693c6e32e_main_all',
-      //   contextualSearch: true,
-      //   searchPagePath: 'search',
-      //   siteId: 'abcec12e-a9a4-450d-a722-405693c6e32e',
-      //   branch: 'main',
-      //   selector: 'div#search',
-      // },
+      algolia: {
+        appId: 'NW817U8XR5',
+        apiKey: '083fce28b9e49fd3eefa1a9a646eadcf',
+        indexName: 'crawler_Surfy Help',
+        contextualSearch: true,
+        searchPagePath: 'search',
+        // siteId: 'abcec12e-a9a4-450d-a722-405693c6e32e',
+        // branch: 'main',
+        // selector: 'div#search',
+      },
       footer: {
         style: 'dark',
         links: [
@@ -157,7 +157,7 @@ const config = {
   // scripts: [
   //   { src: 'https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js' }
   // ]
-  plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
+  // plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
 
 };
 
