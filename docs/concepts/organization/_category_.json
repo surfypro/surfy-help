@@ -1,0 +1,8 @@
+{
+  "label": "Organisations",
+  "position": 4,
+  "link": {
+    "slug": "organization",
+    "type": "generated-index"
+  }
+}

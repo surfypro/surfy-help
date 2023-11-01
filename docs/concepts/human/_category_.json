@@ -1,0 +1,8 @@
+{
+  "label": "Collaborateurs",
+  "position": 0,
+  "link": {
+    "slug": "human",
+    "type": "generated-index"
+  }
+}

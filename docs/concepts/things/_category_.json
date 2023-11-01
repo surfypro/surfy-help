@@ -1,0 +1,8 @@
+{
+  "label": "Mobiliers",
+  "position": 1,
+  "link": {
+    "slug": "things",
+    "type": "generated-index"
+  }
+}

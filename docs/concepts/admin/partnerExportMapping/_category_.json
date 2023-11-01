@@ -1,0 +1,8 @@
+{
+  "label": "Partenaires",
+  "position": 5,
+  "link": {
+    "slug": "partnerExportMapping",
+    "type": "generated-index"
+  }
+}

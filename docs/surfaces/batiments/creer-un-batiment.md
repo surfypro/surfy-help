@@ -2,9 +2,7 @@
 
 Comment créer un bâtiment dans Surfy
 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/M26SIN2q0Mk?si=HRkAhR7rLpw4F4sY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+<Youtube code="M26SIN2q0Mk"/>
 
 Pour créer un nouveau bâtiment à partir de la page d'accueil de Surfy, vous cliquez sur le menu contextuel, puis sur "Créer un bâtiment",  là vous donnez le nom du bâtiment bien sûr ensuite une couleur pour son environnement.  
 

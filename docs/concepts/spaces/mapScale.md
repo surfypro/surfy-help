@@ -1,0 +1,51 @@
+# Échelle plan
+
+
+
+## Propriétés de base
+
+### Distance {#length}
+        
+La distance representée sur le plan entre les 2 points en mètre
+### Epaisseur des lignes {#strokeWidth}
+        
+Il est possible de réduire l'épaisseur des lignes pour augmenter la lisibilité du plan
+### Nom de l'échelle {#name}
+        
+Pour se rémémorer le nom et le réutiliser sur d'autres étages
+### P1 {#p1}
+        
+
+### P2 {#p2}
+        
+
+### Ratio {#ratio}
+        
+
+### Taille des icônes des types d'espace {#roomIconSize}
+        
+La taille des icones sur le plan dans les espaces par rapport aux types de pièce
+### Taille des icônes des types d'objet {#itemTypeIconSize}
+        
+La taille des icones des types d'objet sur le plan, la taille sera limitée par la taille de l'espace
+### Taille du texte des pièces {#roomTextSize}
+        
+La taille du texte des pièces sur le plan pour optimiser l'affichage
+### Taille du texte des segments {#segmentDistanceTextSize}
+        
+La taille du texte sur les distances entre les points sur le plan pour optimiser l'affichage
+### Taille du texte sur les objets {#workplaceTextSize}
+        
+La taille du texte sur les postes de travail et sur les objets sur le plan pour optimiser l'affichage
+
+## En relation avec (BT)
+
+
+
+## En relation avec (HasMany)
+
+### Étages {#floors}
+        
+
+
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
