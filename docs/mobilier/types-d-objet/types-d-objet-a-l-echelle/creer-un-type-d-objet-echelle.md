@@ -24,7 +24,8 @@ Les objets issus de chaque type d’objet peuvent être personnalisés (date d�
 -	Le « Modèle 3D » permet une visualisation 3D des Objets issus du type d’objet et placés sur le plan.
 -	La « Clé externe » permet d’identifier le type d’objet avec une utilisation extérieure à Surfy (interopérabilité avec des applications tiers)
 -	« Valider la création » ouvre une page blanche. Cliquer sur la page fait apparaitre une série d’icônes.
-## Créer la forme du type d’objet
+
+## Créer la forme du type d’objet à l'échelle
 
 ### Le modèle 3D
 Surfy dispose d'un ensemble de modèles 3D représentant le mobilier courant: tables, assises, bureaux, armoires, etc... pouvant être associés aux types d'objet pour les représenter en vision 3D du bâtiment ou de l'étage.
