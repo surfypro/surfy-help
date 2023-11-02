@@ -27,8 +27,19 @@ Les objets issus de chaque type d’objet peuvent être personnalisés (date d�
 ## Créer la forme du type d’objet
 
 ### Le modèle 3D
-Surfy dispose d'un ensemble de modèles composés en 3 Dimensions et représentant le mobilier courant: tables, assises, bureaux, armoires, etc...
-Ces modèles sont orientés dans l'espace. La composition de la forme en 2D d'un type d'objet nécessite de se conformer à l'orientation du modèle 3D que l'on veut associer à ce type d'objet.
+Surfy dispose d'un ensemble de modèles 3D représentant le mobilier courant: tables, assises, bureaux, armoires, etc... pouvant être associés aux types d'objet pour les représenter en vision 3D du bâtiment ou de l'étage.
+Ces modèles sont orientés dans l'espace. La composition de la forme en 2D d'un type d'objet nécessite de se conformer à l'orientation du modèle 3D que l'on veut associer à ce type d'objet. 
+
+L'orientation de la forme 2D à dessiner est définie dans "Orientation des formes en association aux modèles 3D".
+
+### Orientation des formes en association aux modèles 3D
+
+Afin que les formes dessinées en 2D soient compatibles avec les modèles 3D, l'orientation suivante est nécessaire lors du dessin de la forme 2D :
+-   Armoires: ouverture en bas
+-   Tables: longueur horizontale, largeur verticale
+-   Bureaux: longueur horizontale, largeur verticale
+-   Assises: dossier en haut, assise en bas
+-   Bulles : ouverture en bas
 
 ### Créer la forme en 2D
 -	Cliquer sur « Ajouter une forme » pour dessiner la forme du type d’objet.
