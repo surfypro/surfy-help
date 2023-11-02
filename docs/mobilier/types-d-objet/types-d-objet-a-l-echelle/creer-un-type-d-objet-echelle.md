@@ -27,7 +27,7 @@ Les objets issus de chaque type d’objet peuvent être personnalisés (date d�
 
 ## Créer la forme du type d’objet à l'échelle
 
-### Le modèle 3D
+### Les modèles 3D
 Surfy dispose d'un ensemble de modèles 3D représentant le mobilier courant: tables, assises, bureaux, armoires, etc... pouvant être associés aux types d'objet pour les représenter en vision 3D du bâtiment ou de l'étage.
 Ces modèles sont orientés dans l'espace. La composition de la forme en 2D d'un type d'objet nécessite de se conformer à l'orientation du modèle 3D que l'on veut associer à ce type d'objet. 
 
