@@ -45,10 +45,10 @@ Afin que les formes dessinées en 2D soient compatibles avec les modèles 3D, l'
 ### Créer la forme en 2D
 -	Cliquer sur « Ajouter une forme » pour dessiner la forme du type d’objet.
 -	On peut afficher le fond de plan d’un étage avec l’icône « choisir un plan de référence pour créer la forme » afin de décalquer la forme voulue.
--   Chaque clic dépose un sommet. On peut s'affranchir de l'aide à la verticalité en maintenant la touche "Shift" enfoncée. Respecter la compatibilité avec les modèles 3D (voir "XXXXXXXXXXXXXXXX")
+-   Chaque clic dépose un sommet. On peut s'affranchir de l'aide à la verticalité en maintenant la touche "Shift" enfoncée. Respecter la compatibilité avec les modèles 3D permet d'associer une représentation bien orientée de l'objet dans les vues 3D de l'étage ou du bâtiment (voir "Orientation des formes en association aux modèles 3D")
 -	Une fois la forme à l'échelle dessinée, cliquer sur l'icône verte pour valider la création de la forme.
 -	Pour supprimer un sommet de la forme, cliquer sur le sommet puis sur « Supprimer le sommet ».
 -	Pour ajouter un sommet entre deux sommets existants, cliquer sur un des sommets puis sur « ajouter un sommet ». Appuyer sur la touche « shift » pour libérer l'horizontalité du placement de sommet. Le sommet à ajouter est situé entre les deux sommets. Si le sommet à ajouter n'est pas bien situé, cliquer sur le sommet adjacent puis sur « ajouter un sommet » pour créer le nouveau sommet au bon endroit.
 -	Pour supprimer la forme de l'objet, cliquer en dehors de la forme puis sur « Supprimer la forme ».
--	Une fois votre forme validée, vous pouvez quitter la page votre forme est sauvegardée.
+-	Une fois votre forme validée, vous pouvez quitter la page, votre forme est sauvegardée.
 
