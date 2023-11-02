@@ -30,7 +30,7 @@ Les objets issus de chaque type d’objet peuvent être personnalisés (date d�
 Surfy dispose d'un ensemble de modèles composés en 3 Dimensions et représentant le mobilier courant: tables, assises, bureaux, armoires, etc...
 Ces modèles sont orientés dans l'espace. La composition de la forme en 2D d'un type d'objet nécessite de se conformer à l'orientation du modèle 3D que l'on veut associer à ce type d'objet.
 
-### créer la forme en 2D
+### Créer la forme en 2D
 -	Cliquer sur « Ajouter une forme » pour dessiner la forme du type d’objet.
 -	On peut afficher le fond de plan d’un étage avec l’icône « choisir un plan de référence pour créer la forme » afin de décalquer la forme voulue.
 -   Chaque clic dépose un sommet. On peut s'affranchir de l'aide à la verticalité en maintenant la touche "Shift" enfoncée. Respecter la compatibilité avec les modèles 3D (voir "XXXXXXXXXXXXXXXX")
