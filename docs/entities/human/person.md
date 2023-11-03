@@ -62,7 +62,7 @@ Le téléphone portable de la personne
         
 Le titre de la personne
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Centre de coût {#costCenter}
         
@@ -83,7 +83,7 @@ Permet de déterminer le profil de sécurité des personnes pour la gestion d'in
         
 Permet de détérminer le type de contrat de la personne
 
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ### Affectations au bâtiment {#personToBuildings}
         
@@ -106,5 +106,7 @@ Les relations des personnes depuis cette personne
 ### Relations vers cette personne {#personToPersonTargets}
         
 Les relations des personnes vers cette personne
+
+
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

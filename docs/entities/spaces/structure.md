@@ -11,17 +11,17 @@
         
 Transformation de la structure pour la calibrer sur une carte
 
-## En relation avec (BT)
 
 
-
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ###  Structure Points {#structurePoints}
         
 
 ### Étages {#floors}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

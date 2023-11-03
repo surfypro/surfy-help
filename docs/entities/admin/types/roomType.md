@@ -26,13 +26,13 @@ L'icône pour le type d'espace permet d'afficher pour ce type d'espace une icôn
         
 
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Type de distribution des coûts {#distributionCostType}
         
 
 
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ###  Partner Export Mapping To Room Types {#partnerExportMappingToRoomTypes}
         
@@ -45,6 +45,8 @@ L'icône pour le type d'espace permet d'afficher pour ce type d'espace une icôn
 
 ### Typologies de pièce des étages {#roomTypeFloors}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

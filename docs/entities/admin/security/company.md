@@ -20,13 +20,13 @@ Le nombre de jours de travail par semaine peut être 5 pour les jours ouvrés, 6
         
 
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Type d'entreprise {#companyType}
         
 
 
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ### Bâtiments {#buildings}
         
@@ -36,6 +36,8 @@ Le bâtiment est utilisé pour regrouper les étages
 
 ### Utilisateurs de l'entreprise {#userCompanies}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

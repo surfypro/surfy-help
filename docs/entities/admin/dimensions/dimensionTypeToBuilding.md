@@ -6,7 +6,7 @@
 
 
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Bâtiment {#building}
         
@@ -15,7 +15,6 @@ Le bâtiment est utilisé pour regrouper les étages
         
 
 
-## En relation avec (HasMany)
 
 
 

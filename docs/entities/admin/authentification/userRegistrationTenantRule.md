@@ -14,19 +14,21 @@ Séparer les domaines avec des espaces et inclure l'arobase
         
 
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Connection d'authentification {#authentificationConnection}
         
 
 
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ### Associations de règle d'authentification à rôle {#userRegistrationTenantRuleToJupRoles}
         
 
 ### Associations de règle d'authentification à rôle de contenu {#userRegistrationTenantRuleToContentRoles}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

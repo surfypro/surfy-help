@@ -6,7 +6,7 @@
 
 
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Personne destination {#personTarget}
         
@@ -18,7 +18,6 @@
         
 
 
-## En relation avec (HasMany)
 
 
 

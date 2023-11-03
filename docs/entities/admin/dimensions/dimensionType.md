@@ -17,11 +17,9 @@ Le code permet d'identifier le type de dimension, il est utilisé lorsque des ca
         
 Permet de trier les types de calque d'analyse pour les afficher
 
-## En relation avec (BT)
 
 
-
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ### Calques d'affectation du bâtiment {#dimensionTypeToBuildings}
         
@@ -37,6 +35,8 @@ Permet de trier les types de calque d'analyse pour les afficher
 
 ### Calques d'analyse par étage {#dimensionFloors}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

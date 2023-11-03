@@ -6,13 +6,13 @@
 
 
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Utilisateur {#user}
         
 
 
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ###  Partner Export Mapping Configuration To Floors {#partnerExportMappingConfigurationToFloorCreatedBies}
         
@@ -418,6 +418,8 @@ Permet d’afficher les objets par Famille sur les plans et dans l’inventaire 
 
 ### Utilisateurs de l'entreprise {#userCompanyUpdatedBies}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

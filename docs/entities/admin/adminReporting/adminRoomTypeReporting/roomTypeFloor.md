@@ -59,7 +59,7 @@ Le taux de poste de travail en flex est calculé en divisant le nombre de postes
         
 Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Étage {#floor}
         
@@ -68,7 +68,6 @@ Taux de postes de travail partagés par au moins 2 personnes par rapport à l'en
         
 
 
-## En relation avec (HasMany)
 
 
 

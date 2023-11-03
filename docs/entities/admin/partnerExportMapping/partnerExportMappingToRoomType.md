@@ -6,7 +6,7 @@
 
 
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ###  Partner Export Mapping {#partnerExportMapping}
         
@@ -15,7 +15,6 @@
         
 
 
-## En relation avec (HasMany)
 
 
 

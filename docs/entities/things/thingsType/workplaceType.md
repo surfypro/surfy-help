@@ -20,17 +20,17 @@
         
 
 
-## En relation avec (BT)
 
 
-
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ### Postes de travail {#workplaces}
         
 
 ### Types d'objet dans type de poste de travail {#workplaceTypeItemTypes}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

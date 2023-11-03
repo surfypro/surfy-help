@@ -11,17 +11,17 @@ Le code est utilisé afin de pouvoir calculer automatiquement les coûts associ�
         
 
 
-## En relation avec (BT)
 
 
-
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ### Espaces {#rooms}
         
 
 ### Typologies d'espace {#roomTypes}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

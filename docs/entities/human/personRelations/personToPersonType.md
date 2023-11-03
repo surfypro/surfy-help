@@ -14,14 +14,14 @@ La définition de la relation dans le sens inverse du sens naturel, par exemple 
         
 La définition de la relation dans le sens naturel, par exemple entre un père et son fils, la définition naturelle est 'est le père de'
 
-## En relation avec (BT)
 
 
-
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ### Relations personne à personne {#personToPeople}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

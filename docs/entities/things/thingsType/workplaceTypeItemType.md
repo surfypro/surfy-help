@@ -20,7 +20,7 @@ Permet de définir le nombre de places assises disponibles dans le type de poste
         
 
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Type d'objet {#itemType}
         
@@ -29,7 +29,6 @@ Permet de définir le nombre de places assises disponibles dans le type de poste
         
 
 
-## En relation avec (HasMany)
 
 
 

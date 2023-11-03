@@ -14,14 +14,14 @@
         
 Nom du type de bâtiment
 
-## En relation avec (BT)
 
 
-
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ### Bâtiments {#buildings}
         
 Le bâtiment est utilisé pour regrouper les étages
+
+
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

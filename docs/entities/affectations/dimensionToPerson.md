@@ -6,7 +6,7 @@
 
 
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Calque d'analyse {#dimension}
         
@@ -15,7 +15,6 @@
         
 
 
-## En relation avec (HasMany)
 
 
 

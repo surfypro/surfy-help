@@ -20,14 +20,14 @@ Le prénom de l'utilisateur
         
 
 
-## En relation avec (BT)
 
 
-
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ### Utilisateurs de l'entreprise {#userCompanies}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

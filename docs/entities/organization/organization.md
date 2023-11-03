@@ -14,13 +14,13 @@ Ce code peut être utilisé pour contenir la codification de l'organisation ou l
         
 Nom qui va définir l'organisation
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Organisation mère {#organization}
         
 
 
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ### Espaces {#rooms}
         
@@ -39,6 +39,8 @@ Nom qui va définir l'organisation
 
 ### Postes de travail {#workplaces}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

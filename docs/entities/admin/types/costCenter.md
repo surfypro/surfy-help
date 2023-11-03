@@ -20,11 +20,9 @@ Répartir au prorata l'espace utilisé par ce centre de coût sur l'étage sur l
         
 
 
-## En relation avec (BT)
 
 
-
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ### Centres de coût des bâtiments {#costCenterBuildings}
         
@@ -40,6 +38,8 @@ Répartir au prorata l'espace utilisé par ce centre de coût sur l'étage sur l
 
 ### Postes de travail {#workplaces}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

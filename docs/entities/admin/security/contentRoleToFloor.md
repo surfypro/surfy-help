@@ -6,7 +6,7 @@
 
 
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Étage {#floor}
         
@@ -15,7 +15,6 @@
         
 
 
-## En relation avec (HasMany)
 
 
 

@@ -50,7 +50,7 @@ Permet de charger la photo du type d’objet, qui sera visible dans l’inventai
         
 Le prix d'achat du type d'objet
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Fabricant du type d'objet {#manufacturer}
         
@@ -62,7 +62,7 @@ Permet d’afficher les objets par Famille sur les plans et dans l’inventaire 
         
 Le Modèle 3D permet une représentation 3D réaliste des objets placés sur le plan; En absence de modèle 3D les objets sont représentés en forme pleine dans la vue 3D
 
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ### Objets {#items}
         
@@ -72,6 +72,8 @@ Le Modèle 3D permet une représentation 3D réaliste des objets placés sur le 
 
 ### Types d'objet dans type de poste de travail {#workplaceTypeItemTypes}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

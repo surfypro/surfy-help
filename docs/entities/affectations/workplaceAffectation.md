@@ -32,7 +32,7 @@
         
 
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Personne {#person}
         
@@ -41,7 +41,6 @@
         
 
 
-## En relation avec (HasMany)
 
 
 

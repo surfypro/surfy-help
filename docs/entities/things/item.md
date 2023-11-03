@@ -23,7 +23,7 @@ La référence de l'objet est utilisé pour le retrouver et pour differencier ce
         
 
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Espace {#room}
         
@@ -35,13 +35,15 @@ La référence de l'objet est utilisé pour le retrouver et pour differencier ce
         
 
 
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ### Associations d'objet à personne {#itemToPeople}
         
 
 ### Mouvements d'objet {#itemFacts}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

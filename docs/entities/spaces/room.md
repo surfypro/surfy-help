@@ -83,7 +83,7 @@ Taux de postes de travail partagés par au moins 2 personnes par rapport à l'en
         
 
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Centre de coût {#costCenter}
         
@@ -101,7 +101,7 @@ Permet de déterminer le mode de calcul de la clé de répartition des coûts
         
 
 
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ### Affectations d'espace {#roomAffectations}
         
@@ -117,6 +117,8 @@ Permet de déterminer le mode de calcul de la clé de répartition des coûts
 
 ### Postes de travail {#workplaces}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

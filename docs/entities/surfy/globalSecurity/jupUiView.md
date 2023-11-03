@@ -11,16 +11,18 @@
         
 
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Type d'entité {#jupObjectType}
         
 
 
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ### Associations rôle aux vues d'interface {#jupRoleToJupUiViews}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

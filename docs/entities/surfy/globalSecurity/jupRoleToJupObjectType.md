@@ -17,7 +17,7 @@ Autorise la mise à jour des entités
         
 Autorise la suppression d'entités
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Rôle {#jupRole}
         
@@ -26,7 +26,6 @@ Autorise la suppression d'entités
         
 
 
-## En relation avec (HasMany)
 
 
 

@@ -20,14 +20,14 @@ Utiliser X si l'objet est orienté à droite ou Y si l'objet est orienté vers l
         
 
 
-## En relation avec (BT)
 
 
-
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ### Types d'objet {#itemTypes}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

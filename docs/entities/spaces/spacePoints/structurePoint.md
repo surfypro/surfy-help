@@ -14,13 +14,12 @@
         
 
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Structure {#structure}
         
 
 
-## En relation avec (HasMany)
 
 
 

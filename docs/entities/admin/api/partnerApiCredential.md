@@ -23,11 +23,8 @@ Il faut activer la clé pour pouvoir l'utiliser
         
 
 
-## En relation avec (BT)
 
 
-
-## En relation avec (HasMany)
 
 
 

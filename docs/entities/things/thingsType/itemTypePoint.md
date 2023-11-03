@@ -14,13 +14,12 @@
         
 
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Type d'objet {#itemType}
         
 
 
-## En relation avec (HasMany)
 
 
 

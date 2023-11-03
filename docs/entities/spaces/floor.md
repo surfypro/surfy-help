@@ -77,7 +77,7 @@ Le taux de poste de travail en flex est calculé en divisant le nombre de postes
         
 Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail de l'étage
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Bâtiment {#building}
         
@@ -89,7 +89,7 @@ Le bâtiment est utilisé pour regrouper les étages
         
 
 
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ###  Partner Export Mapping Configuration To Floors {#partnerExportMappingConfigurationToFloors}
         
@@ -114,6 +114,8 @@ Le bâtiment est utilisé pour regrouper les étages
 
 ### Typologies de pièce des étages {#roomTypeFloors}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

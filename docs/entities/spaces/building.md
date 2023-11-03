@@ -119,7 +119,7 @@ Le taux de poste de travail en flex est calculé en divisant le nombre de postes
         
 Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail du bâtiment
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Bâtiment d'origine {#building}
         
@@ -134,7 +134,7 @@ L'utilisateur propriétaire du bâtiment voit toujours le bâtiment même en pr�
         
 À la première ouverture d'un plan de ce bâtiment, la vision par défaut sera sélectionné, suite à la première ouverture, ce sera la vision encours qui sera appliqué
 
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ### Affectations au bâtiment {#personToBuildings}
         
@@ -165,6 +165,8 @@ Scénarios générés à partir de ce bâtiment
 
 ### Typologies de pièce des bâtiments {#roomTypeBuildings}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

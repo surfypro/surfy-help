@@ -35,7 +35,7 @@ Taux d'affectation moyen du poste de travail en fonction de l'affectation des jo
         
 
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Centre de coût {#costCenter}
         
@@ -50,13 +50,15 @@ Le centre de coût permet de repartir les espaces dynamiquement pour la refactur
         
 
 
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ### Affectations au poste de travail {#workplaceAffectations}
         
 
 ### Objets {#items}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

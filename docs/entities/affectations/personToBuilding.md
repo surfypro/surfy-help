@@ -8,7 +8,7 @@
         
 Ajouter cette affectation au nombre total des personnes affectées au bâtiment
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Bâtiment {#building}
         
@@ -17,7 +17,6 @@ Le bâtiment est utilisé pour regrouper les étages
         
 
 
-## En relation avec (HasMany)
 
 
 

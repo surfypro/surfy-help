@@ -20,13 +20,13 @@ Le nombre de personnes qui sont affectées directement à ce calque d'affectatio
         
 La valeur peut être utilisé pour associé le calque à une valeur numérique afin de pouvoir réaliser des statisques analytiques
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Type de calque d'analyse {#dimensionType}
         
 
 
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ### Affectations aux calques d'affectation {#dimensionToPeople}
         
@@ -39,6 +39,8 @@ La valeur peut être utilisé pour associé le calque à une valeur numérique a
 
 ### Calques d'analyse par étage {#dimensionFloors}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

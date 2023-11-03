@@ -38,14 +38,14 @@ La taille du texte sur les distances entre les points sur le plan pour optimiser
         
 La taille du texte sur les postes de travail et sur les objets sur le plan pour optimiser l'affichage
 
-## En relation avec (BT)
 
 
-
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ### Étages {#floors}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

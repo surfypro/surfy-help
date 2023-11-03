@@ -11,16 +11,18 @@ Coordonnée sur l'axe X
         
 Coordonnée sur l'axe Y
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Étage {#floor}
         
 
 
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ### Points des pièces {#roomPointRooms}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

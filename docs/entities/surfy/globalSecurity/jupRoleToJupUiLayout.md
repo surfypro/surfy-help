@@ -8,7 +8,7 @@
         
 
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Rôle {#jupRole}
         
@@ -17,7 +17,6 @@
         
 
 
-## En relation avec (HasMany)
 
 
 

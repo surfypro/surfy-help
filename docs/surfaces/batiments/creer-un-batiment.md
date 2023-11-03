@@ -4,7 +4,6 @@ import {PropertyType} from '../../../src/components/MetaModel/PropertyType'
 
 Créer, modifier, supprimer un bâtiment dans Surfy
 
-
 ## Créer un bâtiment
 
 <Youtube code="M26SIN2q0Mk"/>

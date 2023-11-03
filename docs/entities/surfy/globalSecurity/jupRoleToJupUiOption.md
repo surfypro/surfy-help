@@ -8,7 +8,7 @@
         
 Autorise l'option a être vue par le rôle
 
-## En relation avec (BT)
+## Entités associées (unique)
 
 ### Option d'interface {#jupUiOption}
         
@@ -17,7 +17,6 @@ Autorise l'option a être vue par le rôle
         
 
 
-## En relation avec (HasMany)
 
 
 

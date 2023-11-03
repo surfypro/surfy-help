@@ -8,14 +8,14 @@ L'entreprise de la personne permet de conserver les informations de l'entreprise
         
 Le nom de l'entreprise des personnes par exemple le nom de l'entreprise d'un prestataire de service
 
-## En relation avec (BT)
 
 
-
-## En relation avec (HasMany)
+## Entités associées (liste)
 
 ### Personnes {#people}
         
+
+
 
 
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
