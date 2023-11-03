@@ -1,3 +1,5 @@
+import {PropertyType} from '../../../src/components/MetaModel/PropertyType'
+
 # Gérer les bâtiments
 
 Créer, modifier, supprimer un bâtiment dans Surfy
@@ -16,8 +18,7 @@ Pour créer un nouveau bâtiment à partir de la page d'accueil de Surfy,
 -   le "bâtiment de référence" est le bâtiment principal derrière lequel le nouveau bâtiment sera caché. Celui çi est alors considéré comme un scénario de son bâtiment de référence. Sans bâtiment de référence, le bâtiment sera en première page (page d'accueil) et sera considéré comme bâtiment principal.
 -   à la création d'un bâtiment scénario, le bâtiment de référence par défaut est le bâtiment à partir duquel le scénario a été créé.
  
-:::note 
-Le bâtiment de référence
+:::tip Le bâtiment de référence
 Le bâtiment de référence peut aussi être un bâtiment quelconque derrière lequel on cache le bâtiment en question. Une fois que vos informations sont remplies, vous validez la création et quand vous revenez sur votre page d'accueil vous avez votre bâtiment qui est créé. Vous pouvez ensuite le modifier pour créer des étages et compléter ainsi votre bâtiment. 
 :::
 
@@ -33,7 +34,3 @@ La suppression de bâtiment concerve les scénarios qui remontent d'un niveau hi
 
 [Lien vers filtrer les tableaux](/docs/navigation/filtres/filtrer-les-tableaux.md)
 
-
-<!-- 
-:::note hello
-::: -->

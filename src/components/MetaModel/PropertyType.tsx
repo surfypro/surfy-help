@@ -4,8 +4,10 @@ import entitiesPath from '../../../src/metaModel/entities.paths.json';
 import entitiesTranslations from '../../../src/metaModel/entities.translations.json';
 import { styled } from '@mui/material/styles';
 
-export function PropertyType(props: { objectTypeName: string, name: string }) {
-    const { objectTypeName, name } = props;
+export function PropertyType(props: { code: string }) {
+
+    const { code } = props;
+    const [objectTypeName, name] = code.split(':');
 
     // throw new Error("object type or property not found")
     const directoryPath = entitiesPath.objectTypePathMapping[objectTypeName];
