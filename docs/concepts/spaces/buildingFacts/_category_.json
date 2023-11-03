@@ -1,0 +1,8 @@
+{
+  "label": "Données horodatées des bâtiments",
+  "position": 6,
+  "link": {
+    "slug": "buildingFacts",
+    "type": "generated-index"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "label": "Administration globale",
+  "position": 1,
+  "link": {
+    "slug": "globalAdmin",
+    "type": "generated-index"
+  }
+}

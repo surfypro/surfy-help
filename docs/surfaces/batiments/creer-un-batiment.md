@@ -1,12 +1,8 @@
-# Gérer les bâtiments
+# Créer un bâtiment
 
 Créer, modifier, supprimer un bâtiment dans Surfy
 
-
-## Créer un bâtiment
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/M26SIN2q0Mk?si=HRkAhR7rLpw4F4sY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+<Youtube code="M26SIN2q0Mk"/>
 
 Pour créer un nouveau bâtiment à partir de la page d'accueil de Surfy,
 

@@ -1,0 +1,122 @@
+# Espace
+
+
+
+## Propriétés de base
+
+### Capacité {#capacity}
+        
+La capacité peut être utilisé pour définir le nombre de places disponibles dans une pièce ou pour connaître le maximum de personnes qu'on peut mettre dans une pièce
+### Email utilisé pour la réservation de cet espace {#bookingEmail}
+        
+Ce courriel permet de réserver cette salle via le système de messagerie
+### Empreinte Carbone {#carbonFootprint}
+        
+L'empreinte carbone est le nombre de CO2 émis
+### External Id2 {#externalId2}
+        
+
+### Information supplémentaire {#info}
+        
+Permet de conserver des informations supplémentaires de type texte sur l'espace
+### Nom de l'espace {#name}
+        
+Le nom d'espace est utilisé pour le définir et le retrouver facilement.
+### Nombre d'affectations {#peopleCount}
+        
+Le nombre de personnes affectées dans la pièce, soit directement, soit à travers un poste de travail
+### Nombre de places assises {#seatsCount}
+        
+Le nombre totale de places assises
+### Nombre de postes de travail {#workplacesCount}
+        
+Le nombre de postes de travail dans la pièce est calculé automatiquement
+### Nombre de postes de travail de passage {#transitWorkplacesCount}
+        
+Nombre de postes de travail de passage, ces postes ne sont pas comptabilisés dans les postes libres et ne sont pas en flex
+### Nombre de postes de travail partagés {#sharedWorkplacesCount}
+        
+Nombre de postes de travail partagés par au moins 2 personnes
+### Nombre de postes flex {#flexWorkplacesCount}
+        
+Nombre de postes flex dans la pièce
+### Nombre de postes libres {#freeWorkplacesCount}
+        
+Nombre de postes libres dans la pièce
+### Nombre total d'affectations {#totalPeopleCount}
+        
+Le nombre totale de personnes affectées, soit directement affécté aux pièces, soit à travers un poste de travail, soit via un calque d'affectation
+### Numéro de cylindre {#keyCylinderCode}
+        
+Le numéro de cylindre permet de définir le numéro de cylindre de la serrure de la porte de l'espace ou un élement en relation avec l'accès physique de l'espace
+### Périmètre {#perimeter}
+        
+Le périmètre d'espace représente son contour
+### Photo de l'espace {#picture}
+        
+La photo de l'espace permet de le visualiser facilement
+### Ratio d'occupation {#peopleRatio}
+        
+Le ratio d'occupation est le nombre de métres carrés de la pièce divisé par le nombre de personnes affectées aux espaces, soit directement, soit via un poste de travail , cette valeur est calculée
+### Ratio par poste de travail {#workplacesRatio}
+        
+Le ratio par poste de travail est le nombre de métres carrés de la pièce divisé par le nombre de postes de travail, cette valeur est calculée automatiquement
+### Surface {#area}
+        
+La surface qualifiée au sol pour cette pièce
+### Taux d'occupation {#occupancyRate}
+        
+Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisé par le nombre de postes de travail
+### Taux de foisonnement {#expansionRatio}
+        
+Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisé par le nombre de postes de travail
+### Taux de places assises {#seatsPeopleRatio}
+        
+Le nombre de places assises par personnes affectées
+### Taux de postes de travail en flex {#flexRatio}
+        
+Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail
+### Taux de postes de travail partagés {#sharedWorkplacesRatio}
+        
+Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail de l'espace
+### Text Anchor {#textAnchor}
+        
+
+
+## En relation avec (BT)
+
+### Centre de coût {#costCenter}
+        
+Permet de connaitre à quel centre de coût associer la pièce quand il s'agit de gérer la refacturation au centre de coût par pièce
+### Étage {#floor}
+        
+
+### Organisation {#organization}
+        
+
+### Type de distribution des coûts {#distributionCostType}
+        
+Permet de déterminer le mode de calcul de la clé de répartition des coûts
+### Typologie d'espace {#roomType}
+        
+
+
+## En relation avec (HasMany)
+
+### Affectations d'espace {#roomAffectations}
+        
+
+### Calques d'analyse des pièces {#dimensionRooms}
+        
+
+### Objets {#items}
+        
+
+### Points des pièces {#roomPointRooms}
+        
+
+### Postes de travail {#workplaces}
+        
+
+
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
