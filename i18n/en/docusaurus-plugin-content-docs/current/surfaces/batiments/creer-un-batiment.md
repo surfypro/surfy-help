@@ -2,7 +2,6 @@
 
 How to create a building in Surfy
 
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/M26SIN2q0Mk?si=HRkAhR7rLpw4F4sY&hl=en" title="Create a building" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 

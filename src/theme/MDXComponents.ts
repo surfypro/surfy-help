@@ -5,6 +5,6 @@ import { PropertyType } from '@site/src/components/MetaModel/PropertyType';
 
 export default {
     ...MDXComponents,
-    PropertyType,
+    P: PropertyType,
     Youtube
 }
