@@ -1,17 +1,30 @@
-# Créer un bâtiment
+# Gérer les bâtiments
 
-Comment créer un bâtiment dans Surfy
+Créer, modifier, supprimer un bâtiment dans Surfy
 
+
+## Créer un bâtiment
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/M26SIN2q0Mk?si=HRkAhR7rLpw4F4sY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
-Pour créer un nouveau bâtiment à partir de la page d'accueil de Surfy, vous cliquez sur le menu contextuel, puis sur "Créer un bâtiment",  là vous donnez le nom du bâtiment bien sûr ensuite une couleur pour son environnement.  
+Pour créer un nouveau bâtiment à partir de la page d'accueil de Surfy,
 
-A partir du moment où vous donnez ces deux informations, vous avez la possibilité de valider  la création du bâtiment, mais vous pouvez aussi compléter avec des informations supplémentaires  comme la surface théorique, la date de début et de fin de bail dans le cas où vous êtes locataire,  une date d'achat du bâtiment dans le cas où vous êtes propriétaire, vous avez une ligne pour y indiquer des liens vers des documents associés, vous avez la possibilité de mettre  une photo du bâtiment qui sera notamment visible sur la page d'accueil des profils lecteurs et puis vous pouvez compléter avec un nombre de places de parking, une année de construction, des charges annuelles, etc etc. 
+-   cliquer sur le menu contextuel, puis sur "Créer un bâtiment".
+-   indiquer le nom du bâtiment et une couleur pour son environnement.
+-   ces deux informations sont obligatoires. Cliquer sur "valider la création" ou compléter les informations puis "valider la création".
+-   ajouter l'adresse du bâtiment permet de placer les bâtiments sur une carte pour une gestion multisite optimisée.
+-   le "bâtiment de référence" est le bâtiment principal derrière lequel le nouveau bâtiment sera caché. Celui çi est alors considéré comme un scénario de son bâtiment de référence. Sans bâtiment de référence, le bâtiment sera en première page (page d'accueil) et sera considéré comme bâtiment principal.
+-   à la création d'un bâtiment scénario, le bâtiment de référence par défaut est le bâtiment à partir duquel le scénario a été créé.
  
-Vous avez la possibilité d'ajouter l'adresse du bâtiment, très utile pour un multi site : vous retrouvez vos bâtiments sur une carte. Le type de bâtiment va vous permettre de dire si vous êtes propriétaire ou locataire, l'utilisateur propriétaire du bâtiment dans le cas d'un scénario c'est celui qui va créer le scénario, et puis le bâtiment de référence, c'est le bâtiment derrière lequel le scénario éventuel est caché c'est à dire son bâtiment d'origine à partir duquel il a été créé. 
- 
-Mais le bâtiment de référence peut aussi être un bâtiment quelconque derrière lequel on cache le bâtiment en question. Une fois que vos informations sont remplies, vous validez la création et quand vous revenez sur votre page d'accueil vous avez votre bâtiment qui est créé. Vous pouvez ensuite le modifier pour créer des étages et compléter ainsi votre bâtiment. 
+
+ ## Supprimer un bâtiment
+
+Attention: la suppression de bâtiment implique la suppression de tous les étages, espaces, mobilier et de toutes les affectations de personnes dans le bâtiment. Il n'y a pas de retour en arrière (Undo) possible dans Surfy et ces informations seront perdues.
+
+Pour supprimer un bâtiment, depuis la page d'accueil cliquer sur l'icone en bout de ligne de couleur du bâtiment, puis cliquer sur "supprimer le bâtiment". Une double confirmation de suppression est demandée.
+
+La suppression de bâtiment concerve les scénarios qui remontent d'un niveau hiérarchique.
+
 
 [Lien vers filtrer les tableaux](/docs/navigation/filtres/filtrer-les-tableaux.md)
