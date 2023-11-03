@@ -1,6 +1,7 @@
 # Créer un bâtiment
 
 
+
 Comment créer un bâtiment dans Surfy
 
 <!-- <Youtube code="M26SIN2q0Mk"/> -->
@@ -8,7 +9,9 @@ Comment créer un bâtiment dans Surfy
 <!-- :::p b
 a2
 ::: -->
+<Youtube code="M26SIN2q0Mk"/>
 
+<PropertyType objectTypeName="building" name="color"/>
 <!-- 
 :::note hello
 ::: -->
@@ -24,10 +27,10 @@ Vous avez la possibilité d'ajouter l'adresse du bâtiment, très utile pour un 
  
 Mais le bâtiment de référence peut aussi être un bâtiment quelconque derrière lequel on cache le bâtiment en question. Une fois que vos informations sont remplies, vous validez la création et quand vous revenez sur votre page d'accueil vous avez votre bâtiment qui est créé. Vous pouvez ensuite le modifier pour créer des étages et compléter ainsi votre bâtiment. 
 
-<!-- :::note 
+:::note 
 Le bâtiment de référence
 Le bâtiment de référence peut aussi être un bâtiment quelconque derrière lequel on cache le bâtiment en question. Une fois que vos informations sont remplies, vous validez la création et quand vous revenez sur votre page d'accueil vous avez votre bâtiment qui est créé. Vous pouvez ensuite le modifier pour créer des étages et compléter ainsi votre bâtiment. 
 
-::: -->
+:::
 
 [Lien vers filtrer les tableaux](/docs/navigation/filtres/filtrer-les-tableaux.md)

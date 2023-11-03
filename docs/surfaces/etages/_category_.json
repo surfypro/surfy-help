@@ -1,0 +1,8 @@
+{
+  "label": "Etages",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Gérer les étages dans Surfy"
+  }
+}

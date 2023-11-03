@@ -24,12 +24,31 @@ Les objets issus de chaque type d’objet peuvent être personnalisés (date d�
 -	Le « Modèle 3D » permet une visualisation 3D des Objets issus du type d’objet et placés sur le plan.
 -	La « Clé externe » permet d’identifier le type d’objet avec une utilisation extérieure à Surfy (interopérabilité avec des applications tiers)
 -	« Valider la création » ouvre une page blanche. Cliquer sur la page fait apparaitre une série d’icônes.
-## Créer la forme du type d’objet
+
+## Créer la forme du type d’objet à l'échelle
+
+### Les modèles 3D
+Surfy dispose d'un ensemble de modèles 3D représentant le mobilier courant: tables, assises, bureaux, armoires, etc... pouvant être associés aux types d'objet pour les représenter en vision 3D du bâtiment ou de l'étage.
+Ces modèles sont orientés dans l'espace. La composition de la forme en 2D d'un type d'objet nécessite de se conformer à l'orientation du modèle 3D que l'on veut associer à ce type d'objet. 
+
+L'orientation de la forme 2D à dessiner est définie dans "Orientation des formes en association aux modèles 3D".
+
+### Orientation des formes en association aux modèles 3D
+
+Afin que les formes dessinées en 2D soient compatibles avec les modèles 3D, l'orientation suivante est nécessaire lors du dessin de la forme 2D :
+-   Armoires: ouverture en bas
+-   Tables: longueur horizontale, largeur verticale
+-   Bureaux: longueur horizontale, largeur verticale
+-   Assises: dossier en haut, assise en bas
+-   Bulles : ouverture en bas
+
+### Créer la forme en 2D
 -	Cliquer sur « Ajouter une forme » pour dessiner la forme du type d’objet.
 -	On peut afficher le fond de plan d’un étage avec l’icône « choisir un plan de référence pour créer la forme » afin de décalquer la forme voulue.
+-   Chaque clic dépose un sommet. Le dessin d'une forme suit la logique du fil unique. On peut s'affranchir de l'aide à la verticalité en maintenant la touche "Shift" enfoncée. Respecter la compatibilité avec les modèles 3D permet d'associer une représentation bien orientée de l'objet dans les vues 3D de l'étage ou du bâtiment (voir "Orientation des formes en association aux modèles 3D")
 -	Une fois la forme à l'échelle dessinée, cliquer sur l'icône verte pour valider la création de la forme.
 -	Pour supprimer un sommet de la forme, cliquer sur le sommet puis sur « Supprimer le sommet ».
 -	Pour ajouter un sommet entre deux sommets existants, cliquer sur un des sommets puis sur « ajouter un sommet ». Appuyer sur la touche « shift » pour libérer l'horizontalité du placement de sommet. Le sommet à ajouter est situé entre les deux sommets. Si le sommet à ajouter n'est pas bien situé, cliquer sur le sommet adjacent puis sur « ajouter un sommet » pour créer le nouveau sommet au bon endroit.
 -	Pour supprimer la forme de l'objet, cliquer en dehors de la forme puis sur « Supprimer la forme ».
--	Une fois votre forme validée, vous pouvez quitter la page votre forme est sauvegardée.
+-	Une fois votre forme validée, vous pouvez quitter la page, votre forme est sauvegardée.
 
