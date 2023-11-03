@@ -67,7 +67,6 @@ const config = {
         title: 'Surfy University',
         logo: {
           alt: 'Surfy Logo',
-          // src: 'img/logo-surfy.svg',
           src: 'img/surfy-square.png'
         },
         items: [
