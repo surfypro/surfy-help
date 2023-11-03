@@ -2,9 +2,10 @@
 
 Créer, modifier, qualifier ou supprimer un espace
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9A0XQaxj6hA?si=AZLCsb0APLySH7hZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Créer un espace
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9A0XQaxj6hA?si=AZLCsb0APLySH7hZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Pour créer un espace (ou pièce) sur un étage qui a déjà son fond de plan et son échelle :
 -   aller sur l'étage, cliquer sur le plan pour faire apparaître les icônes dans la zone située au dessus du plan
