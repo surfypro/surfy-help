@@ -1,6 +1,10 @@
 {
     "fr": {
         "objectTypeTranslations": {
+            "occupancyStatus": {
+                "label": "État d'occupation",
+                "description": "L'état d'occupation permet d'identifier l'état en temps réel d'un espace ou d'un poste de travail, comme par exemple s'il est libre, occupé ou squaté, l'état d'occupation est mis à jour par les objets connectés présent dans l'espace"
+            },
             "user": {
                 "label": "Utilisateur",
                 "description": null
@@ -103,6 +107,14 @@
             },
             "roomPointRoom": {
                 "label": "Point des pièces",
+                "description": null
+            },
+            "roomPointSegmentType": {
+                "label": "Type de segment",
+                "description": null
+            },
+            "roomPointSegment": {
+                "label": "Segment",
                 "description": null
             },
             "itemTypePoint": {
@@ -250,7 +262,7 @@
                 "description": null
             },
             "jupRoleToJupUiOption": {
-                "label": "Association rôle aux visions du plan",
+                "label": "Association rôle aux options d'interface",
                 "description": null
             },
             "jupRoleToJupUiOperation": {
@@ -335,6 +347,40 @@
             }
         },
         "propertyTypeTranslations": {
+            "occupancyStatus": {
+                "id": {
+                    "label": "Identifiant de l'état d'occupation",
+                    "description": null
+                },
+                "name": {
+                    "label": "Nom de l'état d'occupation",
+                    "description": null
+                },
+                "code": {
+                    "label": "Code de l'état d'occupation",
+                    "description": "Le code permet d'identifier et de réaliser des opérations techniques sur l'état d'occupation"
+                },
+                "color": {
+                    "label": "Couleur",
+                    "description": "La couleur permet de colorier les espaces ou les postes de travail sur les plans en fonction de leur état d'occupation"
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "rooms": {
+                    "label": "Espaces",
+                    "description": null
+                }
+            },
             "user": {
                 "id": {
                     "label": "Identifiant de l'utilisateur",
@@ -676,6 +722,14 @@
                 },
                 "roomPointRoomUpdatedBies": {
                     "label": "Points des pièces",
+                    "description": null
+                },
+                "roomPointSegmentCreatedBies": {
+                    "label": "Segments",
+                    "description": null
+                },
+                "roomPointSegmentUpdatedBies": {
+                    "label": "Segments",
                     "description": null
                 },
                 "itemTypePointCreatedBies": {
@@ -2862,6 +2916,10 @@
                     "label": "Numéro de cylindre",
                     "description": "Le numéro de cylindre permet de définir le numéro de cylindre de la serrure de la porte de l'espace ou un élement en relation avec l'accès physique de l'espace"
                 },
+                "livePeopleCount": {
+                    "label": "Nombre de personnes dans l'espace en temps réel",
+                    "description": "Cette valeur est mise à jour par les capteurs de comptage des personnes présent dans l'espace et fournit le nombre de personnes présent en temps réel dans l'espace"
+                },
                 "createdAt": {
                     "label": "Date de création",
                     "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
@@ -2881,6 +2939,14 @@
                 "floor": {
                     "label": "Étage",
                     "description": null
+                },
+                "occupancyStatusId": {
+                    "label": "Identifiant de l'état d'occupation",
+                    "description": "L'état d'occupation permet d'identifier l'état en temps réel d'un espace ou d'un poste de travail, comme par exemple s'il est libre, occupé ou squaté, l'état d'occupation est mis à jour par les objets connectés présent dans l'espace"
+                },
+                "occupancyStatus": {
+                    "label": "État d'occupation",
+                    "description": "L'état d'occupation permet d'identifier l'état en temps réel d'un espace ou d'un poste de travail, comme par exemple s'il est libre, occupé ou squaté, l'état d'occupation est mis à jour par les objets connectés présent dans l'espace"
                 },
                 "roomTypeId": {
                     "label": "Identifiant de la typologie d'espace",
@@ -3012,6 +3078,14 @@
                     "label": "Points des pièces",
                     "description": null
                 },
+                "roomPointSegmentStarts": {
+                    "label": "Segments",
+                    "description": null
+                },
+                "roomPointSegmentEnds": {
+                    "label": "Segments",
+                    "description": null
+                },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
                     "description": null
@@ -3056,6 +3130,110 @@
                 },
                 "roomPoint": {
                     "label": "Point des espaces",
+                    "description": null
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
+            "roomPointSegmentType": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "name": {
+                    "label": "Name",
+                    "description": null
+                },
+                "code": {
+                    "label": "Code",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "roomPointSegments": {
+                    "label": "Segments",
+                    "description": null
+                }
+            },
+            "roomPointSegment": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "reversePoints": {
+                    "label": "Inverser les points",
+                    "description": "Inverser les points du segment afin d'avoir l'affichage par exemple des portes dans le bon sens"
+                },
+                "displayBothSides": {
+                    "label": "Afficher des deux côtés",
+                    "description": "Afficher le segment des deux côtés du segment"
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "roomPointSegmentTypeId": {
+                    "label": "Id (Type de segment)",
+                    "description": null
+                },
+                "roomPointSegmentType": {
+                    "label": "Type de segment",
+                    "description": null
+                },
+                "roomPointStartId": {
+                    "label": "Id (point des espaces)",
+                    "description": null
+                },
+                "roomPointStart": {
+                    "label": " Room Point Start",
+                    "description": null
+                },
+                "roomPointEndId": {
+                    "label": "Id (point des espaces)",
+                    "description": null
+                },
+                "roomPointEnd": {
+                    "label": " Room Point End",
                     "description": null
                 },
                 "userCompanyCreatedById": {
@@ -5587,7 +5765,7 @@
                     "description": null
                 },
                 "jupRoleToJupUiOptions": {
-                    "label": "Associations rôle aux visions du plan",
+                    "label": "Associations rôle aux options d'interface",
                     "description": null
                 },
                 "jupRoleToJupUiOperations": {
@@ -5633,7 +5811,7 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "jupRoleToJupUiOptions": {
-                    "label": "Associations rôle aux visions du plan",
+                    "label": "Associations rôle aux options d'interface",
                     "description": null
                 }
             },

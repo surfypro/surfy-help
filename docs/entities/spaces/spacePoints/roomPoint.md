@@ -22,6 +22,12 @@ Coordonnée sur l'axe Y
 ### Points des pièces {#roomPointRooms}
         
 
+### Segments {#roomPointSegmentStarts}
+        
+
+### Segments {#roomPointSegmentEnds}
+        
+
 
 
 

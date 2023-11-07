@@ -25,6 +25,9 @@ Le nom d'espace est utilisé pour le définir et le retrouver facilement.
 ### Nombre d'affectations {#peopleCount}
         
 Le nombre de personnes affectées dans la pièce, soit directement, soit à travers un poste de travail
+### Nombre de personnes dans l'espace en temps réel {#livePeopleCount}
+        
+Cette valeur est mise à jour par les capteurs de comptage des personnes présent dans l'espace et fournit le nombre de personnes présent en temps réel dans l'espace
 ### Nombre de places assises {#seatsCount}
         
 Le nombre totale de places assises
@@ -91,6 +94,9 @@ Permet de connaitre à quel centre de coût associer la pièce quand il s'agit d
 ### Étage {#floor}
         
 
+### État d'occupation {#occupancyStatus}
+        
+L'état d'occupation permet d'identifier l'état en temps réel d'un espace ou d'un poste de travail, comme par exemple s'il est libre, occupé ou squaté, l'état d'occupation est mis à jour par les objets connectés présent dans l'espace
 ### Organisation {#organization}
         
 

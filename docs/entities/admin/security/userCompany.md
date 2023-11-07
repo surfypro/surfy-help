@@ -329,6 +329,12 @@ Permet d’afficher les objets par Famille sur les plans et dans l’inventaire 
 ### Rôles de l'utilisateur de l'entreprise {#jupUserCompanyToJupRoleUpdatedBies}
         
 
+### Segments {#roomPointSegmentCreatedBies}
+        
+
+### Segments {#roomPointSegmentUpdatedBies}
+        
+
 ### Statut des personnes {#personStateCreatedBies}
         
 

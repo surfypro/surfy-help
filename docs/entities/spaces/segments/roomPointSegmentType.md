@@ -1,13 +1,13 @@
-# Option d'interface
+# Type de segment
 
 
 
 ## Propriétés de base
 
-### Name {#name}
+### Code {#code}
         
 
-### Scope {#scope}
+### Name {#name}
         
 
 
@@ -15,7 +15,7 @@
 
 ## Entités associées (liste)
 
-### Associations rôle aux options d'interface {#jupRoleToJupUiOptions}
+### Segments {#roomPointSegments}
         
 
 
