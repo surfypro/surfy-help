@@ -99,9 +99,6 @@ Les nouveautés de novembre 2023 :
 - Amélioration des rapports Excel
     - Rajout des calques d'affectation ou d'analyse des espaces pour chaque objet physique ou virtuel dans le rapport de l'inventaire
     - Rajout des organisations et des centres de coût des espaces pour les affectations au postes de travail ou des espaces dans le rapport des personnes du batiment
-
-### FIX ###
-
 - Les personnes affectées uniquement à des scenarios sont maintenant correctement affichées dans la barre de recherche globale
 
 ## 14 Juin 2023 - v3.3.184 ##
@@ -219,8 +216,6 @@ Les nouveautés de novembre 2023 :
 
 ## 16 Février 2023 - v3.3.162 ##
 
-### FIX ###
-
 - Les étages des scenarios ont maintenant la bonne échelle directement après la création sans besoin de rafraichir la page
 
 ## 6 Février 2023 - v3.3.161 ##
@@ -230,9 +225,6 @@ Les nouveautés de novembre 2023 :
 - Possiblité de réutiliser un sommet lors de la création d'un espace
     - Option pour fuisonner plusieurs espaces en un seul via les options des sommets
 - La couleur par defaut des types d'objets est maintenant blanc
-
-### FIX ###
-
 - Remise en place des matrices de transfert
 
 ## 25 Janvier 2023 - v3.3.160 ##
@@ -246,9 +238,6 @@ Les nouveautés de novembre 2023 :
 - Possibilité de choisir des couleurs via un mode avancé
 - Mise en place d'un certificat pour la connexion avec SAP Success Factors (Amélioration de la sécurité)
 - Renommage des places flex et places libres en postes flex et postes libres afin de dissocier les postes de travail et places assises libres
-
-### FIX ###
-
 - Erreur sur le calcul des surfaces des organisations de type direction
 - Calcul des surfaces dans l'info bulle en 3d
 
@@ -273,9 +262,6 @@ Les nouveautés de novembre 2023 :
 - Mise en place des nouveaux plans 3d (étage et bâtiment)
     - Ajustement des rôles nécessaire
 - Mise en place du calcul automatique du nombre d'heures mensuel de travail dans le rapport de des prestations de nettoyage
-
-### FIX ###
-
 - Utilisation de la bonne image de fond dans les exports de tout le bâtiment en zip
 
 ## 28 Novembre 2022 - v3.3.142 ##
@@ -289,10 +275,7 @@ Les nouveautés de novembre 2023 :
     - Protection des copies de type d'entité par une option dans les rôles
     - Possibilité de copier dans le panier depuis la liste des entités (types d'objets et types de poste de travail)
 - Mise en place d'une navigation dédiée sur les icônes du plan pour les calques d'affectations dans le plan en 2d
-- Possiblité de rajouter des vidéos dans la liste des nouveautés, par exemple
-
-<Youtube code="TaqZGznZP1A"/>
-
+- Possiblité de rajouter des vidéos dans la liste des nouveautés
 - Ajout des places assises disponible par type d'objets
     - Calcul des ratios de places assises pour les dimensions d'analyse
     - Mise à jour possible des places assises par type d'objets depuis la page d'edition du type de poste de travail
@@ -312,10 +295,6 @@ Les nouveautés de novembre 2023 :
     - L'utilisateur propriétaire d'un bâtiment voit toujours le bâtiment et les étages du bâtiment même s'il y a des rôles de contenu en place. 
     - Le propriétaire peut être modifié ou retiré sur le bâtiment
     - Lors de la création d'un scénario, l'utilisateur qui fait la création du scénario devient le propriétaire du bâtiment
-
-
-### FIX ###
-
 - Problème de chargement des tableaux de bord
 
 
@@ -358,9 +337,6 @@ Les nouveautés de novembre 2023 :
     - Affichage de l'icone dans l'info-bulle des postes de travail affectés
 - Ajout du genre des personnes
     - Nécessite une mise à jour des vues et du contenu
-
-### FIX ###
-
 - Proxy des images de fond de plan
 - L'option centrer sur le plan ne tient plus compte de l'ancrage des pièces quand afficher la ligne n'est pas coché (aligment cuby)
 - Le rapport de qualité des données de types d'objets non utilisés supprime les type d'objets correctement
@@ -372,18 +348,12 @@ Les nouveautés de novembre 2023 :
     - Déplacement des icones de navigation sur la gauche
     - Les dimensions et indicateurs sont disponible via l'accordéon sous l'élément
     - Possiblité de les ouvrir ou refermer tous en même temps
-
-### FIX ###
-
 - Réajustement des taux et ratios sur les dimensions des bâtiments
 
 ## 18 Août 2022 - v3.3.96  ##
 
 - Ajout d'une aide pour les rôles dans Surfy permettant de faire un rappel des rôles et des fonctionnalités associés
 - Ajout du rapport des calques d'analyse des espaces par bâtiment
-
-### FIX ###
-
 - Ouverture du fichier de sauvegarde global
 
 ## 13 Août 2022 - v3.3.92  ##
@@ -418,8 +388,6 @@ Les nouveautés de novembre 2023 :
     - Ouverture de la fiche des personnes en cliquant sur la photo depuis le plan
     - Zoom sur le poste de travail sur le plan depuis la liste des postes de travail
 - Rajout des ratios des postes de travail en flex comme indicateur
-
-### FIX ###
 - Remise en place du zoom au chargement de l'editeur de type d'objets et de type de postes de travail
 
 ## 26 Juin 2022 - v3.3.81  ##
@@ -433,9 +401,6 @@ Les nouveautés de novembre 2023 :
     - Tri par ordre des niveaux des étages dans l'inventaire en PDF
 - Changement du comportement du zoom in/out dans le plan pour rester centrer sur les formes selectionnées
 - Amélioration de la rotation des postes de travail et objets depuis le plan 2d
-
-### FIX ###
-
 - Réajustement des taux de foisonnement des dimensions d'analyse, organisations et types de pièces
 
 ## 12 Mai 2022 - v3.3.73  ##
@@ -477,8 +442,6 @@ Les nouveautés de novembre 2023 :
 - Mise à jour des textes pour associer des entités
     - Par exemple "Créer et associer une affectation au poste de travail" devient "Créer une affectation au poste de travail"
     - Suppression de l'onglet "Associer une affectation au poste de travail" quand ce n'est pas pertinent
-
-### FIX ###
 - Fix du comportement de la rotation en 3D (Arrêt et rafraichissement)
 
 ## 20 Mars 2022 - v3.3.55 ##
@@ -517,9 +480,6 @@ Les nouveautés de novembre 2023 :
 - Possibilité de mettre en place des règles pour l'authentification (automatiquement associer des utilisateurs à une plateforme avec des rôles et des rôles de contenu lors de l'inscription)
 - Gestion du déplacement des textes dans les options des rôles
 - Sauvegarde des filtres sur les entités associées depuis les pages d'édition (par exemple organisations des pièces)
-
-
-### FIX ###
 - Export des icones surfy dans les images
 - Supprimer ou retirer l'échelle depuis le plan
 
@@ -530,9 +490,6 @@ Les nouveautés de novembre 2023 :
 - Mise en place d'un menu dédié aux qualités de données et un nouveau rapport de qualité des données pour les personnes affectées uniquement à un bâtiment
 - Mise en place de la sélection des propriétés dans les tableaux (pages de type liste)
 - Import des personnes à bâtiment dans import sap sf
-
-### FIX ###
-
 - Il est maintenant possible de naviguer à plus de 5 entités pour les objets associés depuis une page de visualisation d'entité par défaut
 
 ## 13 Février 2022 - v3.3.38 ##
