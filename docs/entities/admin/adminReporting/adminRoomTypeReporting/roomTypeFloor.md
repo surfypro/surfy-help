@@ -1,4 +1,4 @@
-# Typologie de pièce des étages
+# Typologie d'espace des étages
 
 
 
@@ -30,7 +30,7 @@ Nombre total de postes flex
 Nombre total de postes libres
 ### Nombre total d'affectations {#totalPeopleCount}
         
-Le nombre totale de personnes affectées, soit directement affécté aux pièces, soit à travers un poste de travail, soit via un calque d'affectation
+Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation
 ### People Count {#peopleCount}
         
 

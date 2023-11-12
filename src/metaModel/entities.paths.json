@@ -68,6 +68,8 @@
         "roomTypeBuilding": "/docs/entities/admin/adminReporting/adminRoomTypeReporting",
         "organizationFloor": "/docs/entities/admin/adminReporting/adminOrganizationReporting",
         "organizationBuilding": "/docs/entities/admin/adminReporting/adminOrganizationReporting",
+        "roomConnector": "/docs/entities/admin/connectors",
+        "roomConnectorType": "/docs/entities/admin/connectors",
         "jupRole": "/docs/entities/surfy/globalSecurity",
         "user": "/docs/entities/surfy/globalSecurity",
         "jupObjectType": "/docs/entities/surfy/globalSecurity",

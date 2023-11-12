@@ -7,5 +7,5 @@ Comment modifier un bâtiment dans Surfy
 
 
 
-[Créer un espace](./../espaces/gerer-les-espaces)
+[Créer un espace](./../espaces/gerer-les-espace)
 

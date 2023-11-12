@@ -78,6 +78,7 @@ const config: Config = {
           type: 'localeDropdown',
           position: 'right'
         },
+        { to: '/docs/changelog', label: 'Nouveautés', position: 'left' },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
           href: 'https://github.com/surfypro/surfy-help',

@@ -30,7 +30,7 @@
 ### Associations rôle à type d'objet {#jupRoleToJupObjectTypes}
         
 
-### Associations rôle aux options d'interface {#jupRoleToJupUiOptions}
+### Associations rôle aux visions du plan {#jupRoleToJupUiOptions}
         
 
 ### Associations rôle aux vues d'interface {#jupRoleToJupUiViews}

@@ -6,7 +6,7 @@
 
 ### Couleur {#color}
         
-La couleur de calque d'analyse permet de différencier les pièces sur le plan
+La couleur de calque d'analyse permet de différencier les espaces sur le plan
 ### Empreinte carbone par mètre carré {#carbonFootprintPerMeter}
         
 L'empreinte carbone par mètre carré permet de calculer l'empreinte carbone en kilogramme de CO2 d'un calque d'analyse par mètres carrés
@@ -31,7 +31,7 @@ La valeur peut être utilisé pour associé le calque à une valeur numérique a
 ### Affectations aux calques d'affectation {#dimensionToPeople}
         
 
-### Calques d'analyse des pièces {#dimensionRooms}
+### Calques d'analyse des espaces {#dimensionRooms}
         
 
 ### Calques d'analyse par bâtiment {#dimensionBuildings}

@@ -24,13 +24,13 @@ Pour se rémémorer le nom et le réutiliser sur d'autres étages
 
 ### Taille des icônes des types d'espace {#roomIconSize}
         
-La taille des icones sur le plan dans les espaces par rapport aux types de pièce
+La taille des icones sur le plan dans les espaces par rapport aux types d'espace
 ### Taille des icônes des types d'objet {#itemTypeIconSize}
         
 La taille des icones des types d'objet sur le plan, la taille sera limitée par la taille de l'espace
-### Taille du texte des pièces {#roomTextSize}
+### Taille du texte des espaces {#roomTextSize}
         
-La taille du texte des pièces sur le plan pour optimiser l'affichage
+La taille du texte des espaces sur le plan pour optimiser l'affichage
 ### Taille du texte des segments {#segmentDistanceTextSize}
         
 La taille du texte sur les distances entre les points sur le plan pour optimiser l'affichage

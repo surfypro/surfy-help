@@ -1,4 +1,4 @@
-# Option d'interface
+#  Room Connector Type
 
 
 
@@ -7,15 +7,12 @@
 ### Name {#name}
         
 
-### Scope {#scope}
-        
-
 
 
 
 ## Entités associées (liste)
 
-### Associations rôle aux visions du plan {#jupRoleToJupUiOptions}
+###  Room Connectors {#roomConnectors}
         
 
 

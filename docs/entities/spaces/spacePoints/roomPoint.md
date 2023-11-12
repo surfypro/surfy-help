@@ -19,9 +19,9 @@ Coordonnée sur l'axe Y
 
 ## Entités associées (liste)
 
-### Points des pièces {#roomPointRooms}
+### Associations entre un point et un espace {#roomPointRooms}
         
-
+L'association entre un point et un espace permet de conserver l'ordre des points dans un espace afin de constituer un polyon
 ### Segments {#roomPointSegmentStarts}
         
 
