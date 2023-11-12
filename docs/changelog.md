@@ -465,8 +465,6 @@ Les nouveautés de novembre 2023 :
 - Création de la fiche de la personne, lien via la recherche
 - Ajout du nombre d'affectations au batiment dans la somme des affectations du batiment
 - Message explicite dans les entity dialog quand aucune entité n'est trouvée
-
-### FIX
 - Remise en place de la légende dans les exports en image
 
 ## 5 Mars 2022 - v3.3.43 ##
