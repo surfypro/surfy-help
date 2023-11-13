@@ -19,7 +19,7 @@ Les nouveautés de novembre 2023 :
 - Changement de l'affichage des types boolean en lecture seule de la forme d'une case à cocher à "Oui" ou "Non"
     - Par exemple dans les comparaisons des imports
 - Rajout du nombre de postes de travail par centre de coût dans le rapport de distribution des coûts
-- Amélioration du rapport excel des centres de coût ventilés en rajoutant un onglet qui précise les surfaces à ventiller par centre de coût
+- Amélioration du rapport excel des centres de coût ventilés en rajoutant un onglet qui précise les surfaces à ventiler par centre de coût
 
 ---
 
