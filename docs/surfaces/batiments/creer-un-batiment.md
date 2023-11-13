@@ -21,12 +21,16 @@ Pour créer un nouveau bâtiment à partir de la page d'accueil de Surfy,
 Le bâtiment de référence peut aussi être un bâtiment quelconque derrière lequel on positionne le bâtiment en question. Cela permet d'établir un classement sur plusieurs niveaux de vos différents projets. Les bâtiments visibles sur la page d'accueil sont vos "bâtiments principaux" et les recherches peuvent en option ne s'exercer que sur ces seuls bâtiments.
 :::
 
+## Modifier un bâtiment
+
+Les informations d'un bâtiment peuvent être modifiées en cliquant sur le crayon de couleur en bas de la fiche du bâtiment, ou sur l'icone en bout de ligne de couleur du bâtiment puis sur "modifier le bâtiment XXX". Les informations peuvent alors être complétées.
+On peut ajouter l'image du bâtiment pour une vue simplifiée en mode Lecteur, l'adresse du bâtiment afin de le situer sur la carte, ou simplement changer le nom et la couleur du bâtiment. Cliquer sur "sauvegarder" pour enregistrer les modifications.
 
  ## Supprimer un bâtiment
 
 Attention: la suppression de bâtiment implique la suppression de tous les étages, espaces, mobilier et de toutes les affectations de personnes dans le bâtiment. Il n'y a pas de retour en arrière (Undo) possible dans Surfy et ces informations seront perdues.
 
-Pour supprimer un bâtiment, depuis la page d'accueil cliquer sur l'icone en bout de ligne de couleur du bâtiment, puis cliquer sur "supprimer le bâtiment". Une double confirmation de suppression est demandée.
+Pour supprimer un bâtiment, depuis la page d'accueil cliquer sur l'icone en bout de ligne de couleur du bâtiment, puis cliquer sur "supprimer le bâtiment XXX". Une double confirmation de suppression est demandée.
 
 La suppression de bâtiment concerve les scénarios qui remontent d'un niveau hiérarchique.
 
