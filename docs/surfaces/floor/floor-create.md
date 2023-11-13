@@ -1,13 +1,11 @@
-# Gérer les étages
 
-## Créer un étage
+
+# Créer un étage
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6wnzskeAskg?si=rmtQ1KBFJN67aZgd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Pour créer un étage à partir d'un bâtiment déjà existant, vous allez sur le bâtiment,
-
-(là en l'occurrence TEST)
-et vous "modifiez le bâtiment".
+Pour créer un étage à partir d'un bâtiment déjà existant :
+-   vous allez sur le bâtiment, et vous "modifiez le bâtiment".
 
 Dans les onglets un peu plus bas vous avez la possibilité de "créer un étage". Vous donnez bien sûr le nom de l'étage : "R + 1", le niveau : R+1 ça sera le niveau "1" et le bâtiment bien sûr c'est le bâtiment "TEST"
 puisqu'on est parti de ce bâtiment pour créer un étage.
