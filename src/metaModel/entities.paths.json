@@ -30,6 +30,7 @@
         "structurePoint": "/docs/entities/spaces/spacePoints",
         "factType": "/docs/entities/spaces/buildingFacts",
         "fact": "/docs/entities/spaces/buildingFacts",
+        "roomPointSegment": "/docs/entities/spaces",
         "organization": "/docs/entities/organization",
         "buildingType": "/docs/entities/admin/types",
         "roomType": "/docs/entities/admin/types",
@@ -67,6 +68,8 @@
         "roomTypeBuilding": "/docs/entities/admin/adminReporting/adminRoomTypeReporting",
         "organizationFloor": "/docs/entities/admin/adminReporting/adminOrganizationReporting",
         "organizationBuilding": "/docs/entities/admin/adminReporting/adminOrganizationReporting",
+        "roomConnector": "/docs/entities/admin/connectors",
+        "roomConnectorType": "/docs/entities/admin/connectors",
         "jupRole": "/docs/entities/surfy/globalSecurity",
         "user": "/docs/entities/surfy/globalSecurity",
         "jupObjectType": "/docs/entities/surfy/globalSecurity",
@@ -82,6 +85,8 @@
         "jupRoleToJupUiLayout": "/docs/entities/surfy/globalSecurity",
         "object3dModel": "/docs/entities/surfy/globalAdmin",
         "companyType": "/docs/entities/surfy/globalAdmin",
+        "occupancyStatus": "/docs/entities/surfy/globalAdmin",
+        "roomPointSegmentType": "/docs/entities/surfy/globalAdmin",
         "personGender": "/docs/entities/surfy"
     }
 }

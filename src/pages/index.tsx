@@ -33,9 +33,9 @@ export default function Home(): JSX.Element {
       title={`${siteConfig.title}`}
       description="Welcome to Surfy Help home page">
       <HomepageHeader />
-      <main>
+      {/* <main>
         <HomepageFeatures />
-      </main>
+      </main> */}
     </Layout>
   );
 }

@@ -104,6 +104,12 @@
 ### Associations de règle d'authentification à rôle de contenu {#userRegistrationTenantRuleToContentRoleUpdatedBies}
         
 
+### Associations entre un point et un espace {#roomPointRoomCreatedBies}
+        
+L'association entre un point et un espace permet de conserver l'ordre des points dans un espace afin de constituer un polyon
+### Associations entre un point et un espace {#roomPointRoomUpdatedBies}
+        
+L'association entre un point et un espace permet de conserver l'ordre des points dans un espace afin de constituer un polyon
 ### Associations rôle de contenu aux bâtiments {#contentRoleToBuildingCreatedBies}
         
 
@@ -137,10 +143,10 @@ Bâtiments dont l'utilisateur est le propriétaire
 ### Calques d'analyse {#dimensionUpdatedBies}
         
 
-### Calques d'analyse des pièces {#dimensionRoomCreatedBies}
+### Calques d'analyse des espaces {#dimensionRoomCreatedBies}
         
 
-### Calques d'analyse des pièces {#dimensionRoomUpdatedBies}
+### Calques d'analyse des espaces {#dimensionRoomUpdatedBies}
         
 
 ### Calques d'analyse par bâtiment {#dimensionBuildingCreatedBies}
@@ -179,6 +185,12 @@ Le centre de coût permet de repartir les espaces dynamiquement pour la refactur
 ### Clés d'api partenaire {#partnerApiCredentialUpdatedBies}
         
 
+### Connecteurs d'espace {#roomConnectorCreatedBies}
+        
+Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces dans des étages différents
+### Connecteurs d'espace {#roomConnectorUpdatedBies}
+        
+Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces dans des étages différents
 ### Échelles plan {#mapScaleCreatedBies}
         
 
@@ -269,12 +281,6 @@ Permet d’afficher les objets par Famille sur les plans et dans l’inventaire 
 ### Points des espaces {#roomPointUpdatedBies}
         
 
-### Points des pièces {#roomPointRoomCreatedBies}
-        
-
-### Points des pièces {#roomPointRoomUpdatedBies}
-        
-
 ### Points des types d'objet {#itemTypePointCreatedBies}
         
 
@@ -327,6 +333,12 @@ Permet d’afficher les objets par Famille sur les plans et dans l’inventaire 
         
 
 ### Rôles de l'utilisateur de l'entreprise {#jupUserCompanyToJupRoleUpdatedBies}
+        
+
+### Segments {#roomPointSegmentCreatedBies}
+        
+
+### Segments {#roomPointSegmentUpdatedBies}
         
 
 ### Statut des personnes {#personStateCreatedBies}
@@ -395,16 +407,16 @@ Permet d’afficher les objets par Famille sur les plans et dans l’inventaire 
 ### Typologies d'espace {#roomTypeUpdatedBies}
         
 
-### Typologies de pièce des bâtiments {#roomTypeBuildingCreatedBies}
+### Typologies d'espace des bâtiments {#roomTypeBuildingCreatedBies}
         
 
-### Typologies de pièce des bâtiments {#roomTypeBuildingUpdatedBies}
+### Typologies d'espace des bâtiments {#roomTypeBuildingUpdatedBies}
         
 
-### Typologies de pièce des étages {#roomTypeFloorCreatedBies}
+### Typologies d'espace des étages {#roomTypeFloorCreatedBies}
         
 
-### Typologies de pièce des étages {#roomTypeFloorUpdatedBies}
+### Typologies d'espace des étages {#roomTypeFloorUpdatedBies}
         
 
 ### Utilisateurs d'api {#apiUserCreatedBies}

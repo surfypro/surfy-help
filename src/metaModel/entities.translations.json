@@ -1,6 +1,10 @@
 {
     "fr": {
         "objectTypeTranslations": {
+            "occupancyStatus": {
+                "label": "État d'occupation",
+                "description": "L'état d'occupation permet d'identifier l'état en temps réel d'un espace ou d'un poste de travail, comme par exemple s'il est libre, occupé ou squaté, l'état d'occupation est mis à jour par les objets connectés présent dans l'espace"
+            },
             "user": {
                 "label": "Utilisateur",
                 "description": null
@@ -12,6 +16,14 @@
             "company": {
                 "label": "Entreprise",
                 "description": null
+            },
+            "roomConnectorType": {
+                "label": " Room Connector Type",
+                "description": null
+            },
+            "roomConnector": {
+                "label": "Connecteur d'espace",
+                "description": "Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces dans des étages différents"
             },
             "userCompany": {
                 "label": "Utilisateur de l'entreprise",
@@ -102,7 +114,15 @@
                 "description": null
             },
             "roomPointRoom": {
-                "label": "Point des pièces",
+                "label": "Association entre un point et un espace",
+                "description": "L'association entre un point et un espace permet de conserver l'ordre des points dans un espace afin de constituer un polyon"
+            },
+            "roomPointSegmentType": {
+                "label": "Type de segment",
+                "description": null
+            },
+            "roomPointSegment": {
+                "label": "Segment",
                 "description": null
             },
             "itemTypePoint": {
@@ -118,7 +138,7 @@
                 "description": null
             },
             "dimensionRoom": {
-                "label": "Calque d'analyse des pièces",
+                "label": "Calque d'analyse des espaces",
                 "description": null
             },
             "dimensionFloor": {
@@ -190,11 +210,11 @@
                 "description": null
             },
             "roomTypeFloor": {
-                "label": "Typologie de pièce des étages",
+                "label": "Typologie d'espace des étages",
                 "description": null
             },
             "roomTypeBuilding": {
-                "label": "Typologie de pièce des bâtiments",
+                "label": "Typologie d'espace des bâtiments",
                 "description": null
             },
             "itemToPerson": {
@@ -335,6 +355,40 @@
             }
         },
         "propertyTypeTranslations": {
+            "occupancyStatus": {
+                "id": {
+                    "label": "Identifiant de l'état d'occupation",
+                    "description": null
+                },
+                "name": {
+                    "label": "Nom de l'état d'occupation",
+                    "description": null
+                },
+                "code": {
+                    "label": "Code de l'état d'occupation",
+                    "description": "Le code permet d'identifier et de réaliser des opérations techniques sur l'état d'occupation"
+                },
+                "color": {
+                    "label": "Couleur",
+                    "description": "La couleur permet de colorier les espaces ou les postes de travail sur les plans en fonction de leur état d'occupation"
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "rooms": {
+                    "label": "Espaces",
+                    "description": null
+                }
+            },
             "user": {
                 "id": {
                     "label": "Identifiant de l'utilisateur",
@@ -465,6 +519,98 @@
                     "description": "Le bâtiment est utilisé pour regrouper les étages"
                 }
             },
+            "roomConnectorType": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "name": {
+                    "label": "Name",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "roomConnectors": {
+                    "label": "Connecteurs d'espace",
+                    "description": "Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces dans des étages différents"
+                }
+            },
+            "roomConnector": {
+                "id": {
+                    "label": "Identifiant du connecteur d'espace",
+                    "description": null
+                },
+                "name": {
+                    "label": "Nom du connecteur d'espace",
+                    "description": null
+                },
+                "waitTime": {
+                    "label": "Temps d'attente moyenne",
+                    "description": "Le temps d'attente moyenne avant que le connecteur d'espace soit disponible"
+                },
+                "timePerFloor": {
+                    "label": "Temps entre chaque étage",
+                    "description": "Le temps nécessaire pour pouvoir passer de chaque étage au prochain"
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "roomConnectorTypeId": {
+                    "label": "Id ( Room Connector Type)",
+                    "description": null
+                },
+                "roomConnectorType": {
+                    "label": " Room Connector Type",
+                    "description": null
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "rooms": {
+                    "label": "Espaces",
+                    "description": null
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
             "userCompany": {
                 "id": {
                     "label": "Identifiant de l'utilisateur de l'entreprise",
@@ -481,6 +627,14 @@
                 "externalId": {
                     "label": "Clé externe",
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "roomConnectorCreatedBies": {
+                    "label": "Connecteurs d'espace",
+                    "description": "Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces dans des étages différents"
+                },
+                "roomConnectorUpdatedBies": {
+                    "label": "Connecteurs d'espace",
+                    "description": "Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces dans des étages différents"
                 },
                 "userId": {
                     "label": "Identifiant de l'utilisateur",
@@ -671,11 +825,19 @@
                     "description": null
                 },
                 "roomPointRoomCreatedBies": {
-                    "label": "Points des pièces",
-                    "description": null
+                    "label": "Associations entre un point et un espace",
+                    "description": "L'association entre un point et un espace permet de conserver l'ordre des points dans un espace afin de constituer un polyon"
                 },
                 "roomPointRoomUpdatedBies": {
-                    "label": "Points des pièces",
+                    "label": "Associations entre un point et un espace",
+                    "description": "L'association entre un point et un espace permet de conserver l'ordre des points dans un espace afin de constituer un polyon"
+                },
+                "roomPointSegmentCreatedBies": {
+                    "label": "Segments",
+                    "description": null
+                },
+                "roomPointSegmentUpdatedBies": {
+                    "label": "Segments",
                     "description": null
                 },
                 "itemTypePointCreatedBies": {
@@ -703,11 +865,11 @@
                     "description": null
                 },
                 "dimensionRoomCreatedBies": {
-                    "label": "Calques d'analyse des pièces",
+                    "label": "Calques d'analyse des espaces",
                     "description": null
                 },
                 "dimensionRoomUpdatedBies": {
-                    "label": "Calques d'analyse des pièces",
+                    "label": "Calques d'analyse des espaces",
                     "description": null
                 },
                 "dimensionFloorCreatedBies": {
@@ -847,19 +1009,19 @@
                     "description": null
                 },
                 "roomTypeFloorCreatedBies": {
-                    "label": "Typologies de pièce des étages",
+                    "label": "Typologies d'espace des étages",
                     "description": null
                 },
                 "roomTypeFloorUpdatedBies": {
-                    "label": "Typologies de pièce des étages",
+                    "label": "Typologies d'espace des étages",
                     "description": null
                 },
                 "roomTypeBuildingCreatedBies": {
-                    "label": "Typologies de pièce des bâtiments",
+                    "label": "Typologies d'espace des bâtiments",
                     "description": null
                 },
                 "roomTypeBuildingUpdatedBies": {
-                    "label": "Typologies de pièce des bâtiments",
+                    "label": "Typologies d'espace des bâtiments",
                     "description": null
                 },
                 "itemToPersonCreatedBies": {
@@ -1498,7 +1660,7 @@
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
-                    "description": "Le nombre de places assises de ce type d'objet (fauteuil, siège, canapé, etc) est cumulé dans Surfy par pièce, étage et bâtiment"
+                    "description": "Le nombre de places assises de ce type d'objet (fauteuil, siège, canapé, etc) est cumulé dans Surfy par espace, étage et bâtiment"
                 },
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
@@ -1684,7 +1846,7 @@
                 },
                 "peopleCount": {
                     "label": "Nombre d'affectations",
-                    "description": "Le nombre de personnes affectées dans le bâtiment, aux quartiers, aux pièces ou aux postes de travail"
+                    "description": "Le nombre de personnes affectées dans le bâtiment, aux quartiers, aux espaces ou aux postes de travail"
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
@@ -1692,7 +1854,7 @@
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
-                    "description": "Le ratio d'occupation est le nombre de métres carrés dans le bâtiment divisé par le nombre de personnes affectées soit directement dans les quartiers, pièces, ou postes de travail, cette valeur est calculée"
+                    "description": "Le ratio d'occupation est le nombre de métres carrés dans le bâtiment divisé par le nombre de personnes affectées soit directement dans les quartiers, espaces, ou postes de travail, cette valeur est calculée"
                 },
                 "occupancyRate": {
                     "label": "Taux d'occupation",
@@ -1732,7 +1894,7 @@
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux pièces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
                 },
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
@@ -1839,7 +2001,7 @@
                     "description": null
                 },
                 "roomTypeBuildings": {
-                    "label": "Typologies de pièce des bâtiments",
+                    "label": "Typologies d'espace des bâtiments",
                     "description": null
                 },
                 "personToBuildings": {
@@ -1885,8 +2047,8 @@
                     "description": "Il est possible de réduire l'épaisseur des lignes pour augmenter la lisibilité du plan"
                 },
                 "roomTextSize": {
-                    "label": "Taille du texte des pièces",
-                    "description": "La taille du texte des pièces sur le plan pour optimiser l'affichage"
+                    "label": "Taille du texte des espaces",
+                    "description": "La taille du texte des espaces sur le plan pour optimiser l'affichage"
                 },
                 "workplaceTextSize": {
                     "label": "Taille du texte sur les objets",
@@ -1902,7 +2064,7 @@
                 },
                 "roomIconSize": {
                     "label": "Taille des icônes des types d'espace",
-                    "description": "La taille des icones sur le plan dans les espaces par rapport aux types de pièce"
+                    "description": "La taille des icones sur le plan dans les espaces par rapport aux types d'espace"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -2088,7 +2250,7 @@
                 },
                 "roomsArea": {
                     "label": "Surface qualifiée",
-                    "description": "La surface qualifiée est la somme des surfaces des pièces"
+                    "description": "La surface qualifiée est la somme des surfaces des espaces"
                 },
                 "roomsCount": {
                     "label": "Nombre d'espaces",
@@ -2104,7 +2266,7 @@
                 },
                 "peopleCount": {
                     "label": "Nombre d'affectations",
-                    "description": "Le nombre de personnes affectées dans la l'étage, soit directement affécté aux pièces, soit à travers un poste de travail"
+                    "description": "Le nombre de personnes affectées dans la l'étage, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
@@ -2112,7 +2274,7 @@
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
-                    "description": "Le ratio d'occupation est le nombre de métres carrés dans l'étage divisé par le nombre de personnes affectées soit directement dans les pièces, soit via un poste de travail, cette valeur est calculée"
+                    "description": "Le ratio d'occupation est le nombre de métres carrés dans l'étage divisé par le nombre de personnes affectées soit directement dans les espaces, soit via un poste de travail, cette valeur est calculée"
                 },
                 "occupancyRate": {
                     "label": "Taux d'occupation",
@@ -2152,7 +2314,7 @@
                 },
                 "totalPeopleCount": {
                     "label": "Nombre d'affectations",
-                    "description": "Le nombre de personnes affectées dans la l'étage, soit directement affécté aux pièces, soit à travers un poste de travail"
+                    "description": "Le nombre de personnes affectées dans la l'étage, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
@@ -2239,7 +2401,7 @@
                     "description": null
                 },
                 "roomTypeFloors": {
-                    "label": "Typologies de pièce des étages",
+                    "label": "Typologies d'espace des étages",
                     "description": null
                 },
                 "contentRoleToFloors": {
@@ -2391,11 +2553,11 @@
                     "description": null
                 },
                 "roomTypeFloors": {
-                    "label": "Typologies de pièce des étages",
+                    "label": "Typologies d'espace des étages",
                     "description": null
                 },
                 "roomTypeBuildings": {
-                    "label": "Typologies de pièce des bâtiments",
+                    "label": "Typologies d'espace des bâtiments",
                     "description": null
                 },
                 "partnerExportMappingToRoomTypes": {
@@ -2564,7 +2726,7 @@
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux pièces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
                 },
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
@@ -2694,7 +2856,7 @@
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux pièces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
                 },
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
@@ -2764,7 +2926,7 @@
                 },
                 "area": {
                     "label": "Surface",
-                    "description": "La surface qualifiée au sol pour cette pièce"
+                    "description": "La surface qualifiée au sol pour cet espace"
                 },
                 "perimeter": {
                     "label": "Périmètre",
@@ -2776,19 +2938,19 @@
                 },
                 "capacity": {
                     "label": "Capacité",
-                    "description": "La capacité peut être utilisé pour définir le nombre de places disponibles dans une pièce ou pour connaître le maximum de personnes qu'on peut mettre dans une pièce"
+                    "description": "La capacité peut être utilisé pour définir le nombre de places disponibles dans un espace ou pour connaître le maximum de personnes qu'on peut mettre dans un espace"
                 },
                 "workplacesCount": {
                     "label": "Nombre de postes de travail",
-                    "description": "Le nombre de postes de travail dans la pièce est calculé automatiquement"
+                    "description": "Le nombre de postes de travail dans l'espace est calculé automatiquement"
                 },
                 "workplacesRatio": {
                     "label": "Ratio par poste de travail",
-                    "description": "Le ratio par poste de travail est le nombre de métres carrés de la pièce divisé par le nombre de postes de travail, cette valeur est calculée automatiquement"
+                    "description": "Le ratio par poste de travail est le nombre de métres carrés de l'espace divisé par le nombre de postes de travail, cette valeur est calculée automatiquement"
                 },
                 "peopleCount": {
                     "label": "Nombre d'affectations",
-                    "description": "Le nombre de personnes affectées dans la pièce, soit directement, soit à travers un poste de travail"
+                    "description": "Le nombre de personnes affectées dans l'espace, soit directement, soit à travers un poste de travail"
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
@@ -2796,7 +2958,7 @@
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
-                    "description": "Le ratio d'occupation est le nombre de métres carrés de la pièce divisé par le nombre de personnes affectées aux espaces, soit directement, soit via un poste de travail , cette valeur est calculée"
+                    "description": "Le ratio d'occupation est le nombre de métres carrés de l'espace divisé par le nombre de personnes affectées aux espaces, soit directement, soit via un poste de travail , cette valeur est calculée"
                 },
                 "occupancyRate": {
                     "label": "Taux d'occupation",
@@ -2808,11 +2970,11 @@
                 },
                 "freeWorkplacesCount": {
                     "label": "Nombre de postes libres",
-                    "description": "Nombre de postes libres dans la pièce"
+                    "description": "Nombre de postes libres dans l'espace"
                 },
                 "flexWorkplacesCount": {
                     "label": "Nombre de postes flex",
-                    "description": "Nombre de postes flex dans la pièce"
+                    "description": "Nombre de postes flex dans l'espace"
                 },
                 "sharedWorkplacesCount": {
                     "label": "Nombre de postes de travail partagés",
@@ -2836,7 +2998,7 @@
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux pièces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
                 },
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
@@ -2862,6 +3024,10 @@
                     "label": "Numéro de cylindre",
                     "description": "Le numéro de cylindre permet de définir le numéro de cylindre de la serrure de la porte de l'espace ou un élement en relation avec l'accès physique de l'espace"
                 },
+                "livePeopleCount": {
+                    "label": "Nombre de personnes dans l'espace en temps réel",
+                    "description": "Cette valeur est mise à jour par les capteurs de comptage des personnes présent dans l'espace et fournit le nombre de personnes présent en temps réel dans l'espace"
+                },
                 "createdAt": {
                     "label": "Date de création",
                     "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
@@ -2881,6 +3047,14 @@
                 "floor": {
                     "label": "Étage",
                     "description": null
+                },
+                "occupancyStatusId": {
+                    "label": "Identifiant de l'état d'occupation",
+                    "description": "L'état d'occupation permet d'identifier l'état en temps réel d'un espace ou d'un poste de travail, comme par exemple s'il est libre, occupé ou squaté, l'état d'occupation est mis à jour par les objets connectés présent dans l'espace"
+                },
+                "occupancyStatus": {
+                    "label": "État d'occupation",
+                    "description": "L'état d'occupation permet d'identifier l'état en temps réel d'un espace ou d'un poste de travail, comme par exemple s'il est libre, occupé ou squaté, l'état d'occupation est mis à jour par les objets connectés présent dans l'espace"
                 },
                 "roomTypeId": {
                     "label": "Identifiant de la typologie d'espace",
@@ -2904,7 +3078,7 @@
                 },
                 "costCenter": {
                     "label": "Centre de coût",
-                    "description": "Permet de connaitre à quel centre de coût associer la pièce quand il s'agit de gérer la refacturation au centre de coût par pièce"
+                    "description": "Permet de connaitre à quel centre de coût associer l'espace quand il s'agit de gérer la refacturation au centre de coût par espace"
                 },
                 "distributionCostTypeId": {
                     "label": "Id (type de distribution des coûts)",
@@ -2913,6 +3087,14 @@
                 "distributionCostType": {
                     "label": "Type de distribution des coûts",
                     "description": "Permet de déterminer le mode de calcul de la clé de répartition des coûts"
+                },
+                "roomConnectorId": {
+                    "label": "Identifiant du connecteur d'espace",
+                    "description": "Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces dans des étages différents"
+                },
+                "roomConnector": {
+                    "label": "Connecteur d'espace",
+                    "description": "Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces dans des étages différents"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -2931,11 +3113,11 @@
                     "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
                 },
                 "roomPointRooms": {
-                    "label": "Points des pièces",
-                    "description": null
+                    "label": "Associations entre un point et un espace",
+                    "description": "L'association entre un point et un espace permet de conserver l'ordre des points dans un espace afin de constituer un polyon"
                 },
                 "dimensionRooms": {
-                    "label": "Calques d'analyse des pièces",
+                    "label": "Calques d'analyse des espaces",
                     "description": null
                 },
                 "roomAffectations": {
@@ -3009,7 +3191,15 @@
                     "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
                 },
                 "roomPointRooms": {
-                    "label": "Points des pièces",
+                    "label": "Associations entre un point et un espace",
+                    "description": "L'association entre un point et un espace permet de conserver l'ordre des points dans un espace afin de constituer un polyon"
+                },
+                "roomPointSegmentStarts": {
+                    "label": "Segments",
+                    "description": null
+                },
+                "roomPointSegmentEnds": {
+                    "label": "Segments",
                     "description": null
                 },
                 "companyId": {
@@ -3023,7 +3213,7 @@
             },
             "roomPointRoom": {
                 "id": {
-                    "label": "Identifiant",
+                    "label": "Identifiant de l'association entre un point et un espace",
                     "description": ""
                 },
                 "sortIndex": {
@@ -3043,7 +3233,7 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "roomId": {
-                    "label": "Identifiant de la pièce",
+                    "label": "Identifiant de l'espace",
                     "description": ""
                 },
                 "room": {
@@ -3056,6 +3246,110 @@
                 },
                 "roomPoint": {
                     "label": "Point des espaces",
+                    "description": null
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
+            "roomPointSegmentType": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "name": {
+                    "label": "Name",
+                    "description": null
+                },
+                "code": {
+                    "label": "Code",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "roomPointSegments": {
+                    "label": "Segments",
+                    "description": null
+                }
+            },
+            "roomPointSegment": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "reversePoints": {
+                    "label": "Inverser les points",
+                    "description": "Inverser les points du segment afin d'avoir l'affichage par exemple des portes dans le bon sens"
+                },
+                "displayBothSides": {
+                    "label": "Afficher des deux côtés",
+                    "description": "Afficher le segment des deux côtés du segment"
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "roomPointSegmentTypeId": {
+                    "label": "Id (Type de segment)",
+                    "description": null
+                },
+                "roomPointSegmentType": {
+                    "label": "Type de segment",
+                    "description": null
+                },
+                "roomPointStartId": {
+                    "label": "Id (point des espaces)",
+                    "description": null
+                },
+                "roomPointStart": {
+                    "label": " Room Point Start",
+                    "description": null
+                },
+                "roomPointEndId": {
+                    "label": "Id (point des espaces)",
+                    "description": null
+                },
+                "roomPointEnd": {
+                    "label": " Room Point End",
                     "description": null
                 },
                 "userCompanyCreatedById": {
@@ -3199,7 +3493,7 @@
                     "description": null
                 },
                 "dimensionRooms": {
-                    "label": "Calques d'analyse des pièces",
+                    "label": "Calques d'analyse des espaces",
                     "description": null
                 },
                 "dimensionFloors": {
@@ -3234,7 +3528,7 @@
                 },
                 "color": {
                     "label": "Couleur",
-                    "description": "La couleur de calque d'analyse permet de différencier les pièces sur le plan"
+                    "description": "La couleur de calque d'analyse permet de différencier les espaces sur le plan"
                 },
                 "value": {
                     "label": "Valeur numérique",
@@ -3285,7 +3579,7 @@
                     "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
                 },
                 "dimensionRooms": {
-                    "label": "Calques d'analyse des pièces",
+                    "label": "Calques d'analyse des espaces",
                     "description": null
                 },
                 "dimensionFloors": {
@@ -3311,7 +3605,7 @@
             },
             "dimensionRoom": {
                 "id": {
-                    "label": "Identifiant du calque d'analyse des pièces",
+                    "label": "Identifiant du calque d'analyse des espaces",
                     "description": null
                 },
                 "createdAt": {
@@ -3402,7 +3696,7 @@
                 },
                 "peopleCount": {
                     "label": "Nombre d'affectations",
-                    "description": "Le nombre de personnes affectées, soit directement affécté aux pièces, soit à travers un poste de travail pour cet étage"
+                    "description": "Le nombre de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail pour cet étage"
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
@@ -3450,7 +3744,7 @@
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux pièces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
                 },
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
@@ -3592,7 +3886,7 @@
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux pièces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
                 },
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
@@ -4418,11 +4712,11 @@
                 },
                 "position": {
                     "label": "Position",
-                    "description": "La position du poste de travail dans la pièce"
+                    "description": "La position du poste de travail dans l'espace"
                 },
                 "rotation": {
                     "label": "Rotation",
-                    "description": "L'angle de rotation du poste de travail dans la pièce"
+                    "description": "L'angle de rotation du poste de travail dans l'espace"
                 },
                 "isFlex": {
                     "label": "Est en flex ?",
@@ -4796,7 +5090,7 @@
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux pièces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
                 },
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
@@ -4926,7 +5220,7 @@
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux pièces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
                 },
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
@@ -5056,7 +5350,7 @@
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux pièces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
                 },
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
@@ -5186,7 +5480,7 @@
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux pièces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
                 },
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",

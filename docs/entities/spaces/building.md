@@ -57,7 +57,7 @@ Montant total des taxes et impôts
 Nom du bâtiment ou du scénario
 ### Nombre d'affectations {#peopleCount}
         
-Le nombre de personnes affectées dans le bâtiment, aux quartiers, aux pièces ou aux postes de travail
+Le nombre de personnes affectées dans le bâtiment, aux quartiers, aux espaces ou aux postes de travail
 ### Nombre d'affectations aux calques {#dimensionPeopleCount}
         
 Le nombre de personnes qui sont affectées aux calques d'affectations associé à ce bâtiment
@@ -87,13 +87,13 @@ Nombre de postes de travail en flex dans le bâtiment
 Nombre de postes libres dans le bâtiment
 ### Nombre total d'affectations {#totalPeopleCount}
         
-Le nombre totale de personnes affectées, soit directement affécté aux pièces, soit à travers un poste de travail, soit via un calque d'affectation
+Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation
 ### Photo du bâtiment {#picture}
         
 Vous pouvez utiliser une photo de votre bâtiment pour le repérer rapidement depuis la page d'accueil (voir les bâtiments avec des photos) ou pour illustrer les vues des collaborateurs
 ### Ratio d'occupation {#peopleRatio}
         
-Le ratio d'occupation est le nombre de métres carrés dans le bâtiment divisé par le nombre de personnes affectées soit directement dans les quartiers, pièces, ou postes de travail, cette valeur est calculée
+Le ratio d'occupation est le nombre de métres carrés dans le bâtiment divisé par le nombre de personnes affectées soit directement dans les quartiers, espaces, ou postes de travail, cette valeur est calculée
 ### Ratio postes de travail {#workplacesRatio}
         
 Le ratio par poste de travail est le nombre de métres carrés dans le bâtiment divisé par le nombre de postes de travail, cette valeur est calculée automatiquement
@@ -163,7 +163,7 @@ Scénarios générés à partir de ce bâtiment
 ### Organisations des bâtiments {#organizationBuildings}
         
 
-### Typologies de pièce des bâtiments {#roomTypeBuildings}
+### Typologies d'espace des bâtiments {#roomTypeBuildings}
         
 
 

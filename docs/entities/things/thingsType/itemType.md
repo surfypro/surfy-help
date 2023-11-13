@@ -42,7 +42,7 @@ Plus l'indice de hauteur est élevé plus l'objet sera positionné au dessus des
 Permet d'identifier rapidement le type d'objet avec un nom complet, logique et descriptif; On peut y indiquer les dimensions, par exemple: Table de Réunion 340x120; Conseil: commencer toujours par la dimension la plus grande
 ### Nombre de places assises {#seatsCount}
         
-Le nombre de places assises de ce type d'objet (fauteuil, siège, canapé, etc) est cumulé dans Surfy par pièce, étage et bâtiment
+Le nombre de places assises de ce type d'objet (fauteuil, siège, canapé, etc) est cumulé dans Surfy par espace, étage et bâtiment
 ### Photo {#picture}
         
 Permet de charger la photo du type d’objet, qui sera visible dans l’inventaire en pdf et sur la fiche de l’objet sélectionné sur le plan

@@ -24,10 +24,10 @@ Le nom du poste de travail est utilisé pour l'identifier plus simplement
 Nombre d'affectations sur le poste de travail
 ### Position {#position}
         
-La position du poste de travail dans la pièce
+La position du poste de travail dans l'espace
 ### Rotation {#rotation}
         
-L'angle de rotation du poste de travail dans la pièce
+L'angle de rotation du poste de travail dans l'espace
 ### Taux d'affectation moyen {#workplaceAffectationsCalculatedRateSum}
         
 Taux d'affectation moyen du poste de travail en fonction de l'affectation des jours de présence des personnes

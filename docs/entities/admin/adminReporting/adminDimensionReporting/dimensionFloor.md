@@ -9,7 +9,7 @@
 L'empreinte carbone est le nombre de CO2 émis
 ### Nombre d'affectations {#peopleCount}
         
-Le nombre de personnes affectées, soit directement affécté aux pièces, soit à travers un poste de travail pour cet étage
+Le nombre de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail pour cet étage
 ### Nombre d'affectations directes {#dimensionPeopleCount}
         
 Le nombre de personnes qui sont affectées directement à ce calque d'affectation
@@ -36,7 +36,7 @@ Nombre total de postes flex
 Nombre total de postes libres
 ### Nombre total d'affectations {#totalPeopleCount}
         
-Le nombre totale de personnes affectées, soit directement affécté aux pièces, soit à travers un poste de travail, soit via un calque d'affectation
+Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation
 ### Ratio d'occupation {#peopleRatio}
         
 Le ratio d'occupation est le nombre de métres carrés divisé par le nombre de personnes affectées soit directement dans les espaces, soit via un poste de travail

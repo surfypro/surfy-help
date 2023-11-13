@@ -27,7 +27,7 @@ Permet de trier les types de calque d'analyse pour les afficher
 ### Calques d'analyse {#dimensions}
         
 
-### Calques d'analyse des pièces {#dimensionRooms}
+### Calques d'analyse des espaces {#dimensionRooms}
         
 
 ### Calques d'analyse par bâtiment {#dimensionBuildings}

@@ -40,10 +40,10 @@ L'icône pour le type d'espace permet d'afficher pour ce type d'espace une icôn
 ### Espaces {#rooms}
         
 
-### Typologies de pièce des bâtiments {#roomTypeBuildings}
+### Typologies d'espace des bâtiments {#roomTypeBuildings}
         
 
-### Typologies de pièce des étages {#roomTypeFloors}
+### Typologies d'espace des étages {#roomTypeFloors}
         
 
 

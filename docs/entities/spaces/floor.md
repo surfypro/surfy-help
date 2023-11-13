@@ -24,10 +24,10 @@ Le niveau de l'étage permet de définir sa position par rapport aux autres éta
 Le nom de l'étage est utilisé pour pouvoir le retrouver facilement.
 ### Nombre d'affectations {#peopleCount}
         
-Le nombre de personnes affectées dans la l'étage, soit directement affécté aux pièces, soit à travers un poste de travail
+Le nombre de personnes affectées dans la l'étage, soit directement affécté aux espaces, soit à travers un poste de travail
 ### Nombre d'affectations {#totalPeopleCount}
         
-Le nombre de personnes affectées dans la l'étage, soit directement affécté aux pièces, soit à travers un poste de travail
+Le nombre de personnes affectées dans la l'étage, soit directement affécté aux espaces, soit à travers un poste de travail
 ### Nombre d'espaces {#roomsCount}
         
 Le nombre d'espaces présent dans cet étage
@@ -54,13 +54,13 @@ Nombre de postes libres dans l'étage
 L'opacité permet de voir plus ou moins le fond de plan
 ### Ratio d'occupation {#peopleRatio}
         
-Le ratio d'occupation est le nombre de métres carrés dans l'étage divisé par le nombre de personnes affectées soit directement dans les pièces, soit via un poste de travail, cette valeur est calculée
+Le ratio d'occupation est le nombre de métres carrés dans l'étage divisé par le nombre de personnes affectées soit directement dans les espaces, soit via un poste de travail, cette valeur est calculée
 ### Ratio postes de travail {#workplacesRatio}
         
 Le ratio postes de travail est le nombre de métres carrés dans l'étage divisé par le nombre de postes de travail, cette valeur est calculé automatiquement
 ### Surface qualifiée {#roomsArea}
         
-La surface qualifiée est la somme des surfaces des pièces
+La surface qualifiée est la somme des surfaces des espaces
 ### Taux d'occupation {#occupancyRate}
         
 Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail
@@ -112,7 +112,7 @@ Le bâtiment est utilisé pour regrouper les étages
 ### Points des espaces {#roomPoints}
         
 
-### Typologies de pièce des étages {#roomTypeFloors}
+### Typologies d'espace des étages {#roomTypeFloors}
         
 
 
