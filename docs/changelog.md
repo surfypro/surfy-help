@@ -4,6 +4,14 @@ Les nouveautés de novembre 2023 :
 
 <Youtube code="yXREgUBb_vQ"/>
 
+## 13 Novembre 2023 - v3.3.203 ##
+
+- Les centres de coût possèdent à la fin de leur nom 
+    - un * quand ils sont distribués par bâtiment
+    - deux ** quand ils sont distribués par étage
+- Mise en place d'une option permettant de rechercher dans les listes les champs sans valeur
+    - par exemple lister les personnes sans matricule ou email
+
 ## 10 Novembre 2023 - v3.3.202 ##
 
 - Amélioration du rapport de dédoublonnage des personnes en rajoutant toutes les propriétés des personnes
