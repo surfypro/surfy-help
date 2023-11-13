@@ -20,3 +20,9 @@
 ```
 
 [Site Surfy](https://www.surfy.pro)
+
+
+
+::: tip Titre
+[admonitions](https://docusaurus.io/fr/docs/markdown-features/admonitions)
+:::
