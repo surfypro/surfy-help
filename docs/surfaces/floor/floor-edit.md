@@ -8,6 +8,15 @@ Pour modifier l'étage créé et ajouter le fond de plan et l'échelle,
 -   dans le menu contextuel, cliquer sur "modifier l'étage XXX"
 
 
+## Importer le fond de plan
+
+-   cliquer sur "changer l'image" afin d'importer le fichier PNG du fond de plan de l'étage.
+-   charger l'image du fond de plan et cliquer sur "skip" pour éviter le recadrage de l'image.
+-   "sauvegarder" les modifications de l'étage.
+-   rafraichir par F5
+-   à partir du menu contextuel, cliquer sur "plan de l'étage en 2D"
+-   le nouveau fond de plan est affiché sur l'étage.
+
 
 ## Définir l'échelle du plan
 
@@ -45,16 +54,6 @@ On peut également :
 -   renseigner une hauteur sous plafond utile pour la vue 3D de l'étage
 -   donner une opacité du fond de plan permettant d'obtenir un fond de plan plus ou moins apparent
 -   donner une "structure" au bâtiment afin de délimiter correctement les espaces en vue 3D.
-
-
-## Importer le fond de plan
-
--   cliquer sur "changer l'image" afin d'importer le fichier PNG du fond de plan de l'étage.
--   charger l'image du fond de plan et cliquer sur "skip" pour éviter le recadrage de l'image.
--   "sauvegarder" les modifications de l'étage.
--   rafraichir par F5
--   à partir du menu contextuel, cliquer sur "plan de l'étage en 2D"
--   le nouveau fond de plan est affiché sur l'étage.
 
 
 ## Modifier le fond de plan d'un étage
