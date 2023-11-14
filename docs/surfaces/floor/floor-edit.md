@@ -1,8 +1,6 @@
 # Modifier un étage
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yw4XtiZNnu8?si=o1vG5EPM91qGQa4-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<Youtube code="yw4XtiZNnu8?si=o1vG5EPM91qGQa4-"/>
+<Youtube code="yw4XtiZNnu8"/>
 
 Une fois l'étage créé, pour le modifier et ajouter le fond de plan et l'échelle,
 
@@ -17,9 +15,6 @@ Si l'échelle n'est pas déjà définie, créer l'echelle avec l'aide du tutorie
 :::
 
 <Youtube code="NEuqxKqpIJM"/>
-
-https://youtu.be/NEuqxKqpIJM
-
 
 On peut également :
 -   donner une capacité réglementaire éventuelle en fonction du nombre de sanitaires ou des critères imposés. Les capacités      réglementaires seront cumulées sur l'ensemble du bâtiment pour donner une capacité réglementaire globale sur le bâtiment.
