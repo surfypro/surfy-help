@@ -1,5 +1,7 @@
 # Modifier un étage
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yw4XtiZNnu8?si=o1vG5EPM91qGQa4-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 Une fois l'étage créé, pour le modifier et ajouter le fond de plan et l'échelle,
 
 -   cliquer sur l'étage nouvellement créé
