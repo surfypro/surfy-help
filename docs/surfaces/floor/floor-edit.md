@@ -55,16 +55,15 @@ Pour cela, on extrait l'image du fond de plan existant pour la modifier sous "Pa
 On peut modifier l'image sous Paint3D au pixel près, donc supprimer ou ajouter très exactement les éléments voulus
 :::
 
-### réimporter le fond de plan dans Surfy
+### Réimporter le fond de plan dans Surfy
 
 
 -   cliquer sur l'étage du fond de plan à charger
 -   dans le menu contextuel, cliquer sur "modifier l'étage XXX"
 -   cliquer sur "changer l'image"
--   charger l'image modifiée du fond de plan et cliquer sur "skip" pour éviter le recadrage de l'image
+-   charger l'image modifiée du fond de plan et cliquer sur "skip" pour éviter le recadrage de l'image.
 -   "sauvegarder" les modifications de l'étage.
 -   rafraichir par F5
 -   à partir du menu contextuel, cliquer sur "plan de l'étage en 2D"
--   j'ai maintenant un plan débarrassé des cloisons intempestives,
+-   le nouveau fond de plan est affiché sur l'étage.
 
- et sur lequel je peux travailler correctement.
