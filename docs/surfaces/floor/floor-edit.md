@@ -10,7 +10,7 @@ Une fois l'étage créé, pour le modifier et ajouter le fond de plan et l'éche
 -   sauvegarder les modifications.
 
 :::tip
-Si l'échelle n'est pas déjà définie, créer l'echelle avec l'aide du tutoriel "Créer l'echelle dans Surfy"
+Si l'échelle n'est pas déjà définie, créer l'echelle avec l'aide du tutoriel "Création de l'echelle dans Surfy"
 :::
 <Youtube code="NEuqxKqpIJM"/>
 
