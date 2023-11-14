@@ -5,13 +5,19 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6wnzskeAskg?si=rmtQ1KBFJN67aZgd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Pour créer un étage à partir d'un bâtiment déjà existant :
--   vous allez sur le bâtiment, et vous "modifiez le bâtiment".
+-   cliquer sur le crayon en bas de la fiche du bâtiment pour "modifier le bâtiment XXX"
+-   en dessous des informations du bâtiment, cliquer sur "Créer un étage"
+-   indiquer le nom de l'étage : par exemple "R + 1"
+-   indiquer le niveau de l'étage relativement aux autres étages déjà présents : R+1 aura le niveau "1"
+-   le bâtiment est déjà renseigné puisqu'on modifie ce bâtiment pour créer l'étage.
 
-Dans les onglets un peu plus bas vous avez la possibilité de "créer un étage". Vous donnez bien sûr le nom de l'étage : "R + 1", le niveau : R+1 ça sera le niveau "1" et le bâtiment bien sûr c'est le bâtiment "TEST"
-puisqu'on est parti de ce bâtiment pour créer un étage.
 
-A partir du moment où j'ai ces trois informations, je peux valider la création.
+:::tip attention
+Pour pouvoir créer un étage, les trois informations Nom, Niveau et Bâtiment sont obligatoires.
+:::
 
-L' étage maintenant est créé, si je reviens sur ma page d'accueil le bâtiment "TEST" a bien un étage R+1. Maintenant je clique sur l'étage R+1 et je vais, par le menu contextuel, "modifier l'étage R+1". Là je vais pouvoir "charger l'image" du fond de plan mais aussi donner une capacité réglementaire, une hauteur sous plafond, une opacité du fond de plan, une échelle et une structure. L 'échelle va nous permettre de donner une échelle au plan, la structure va nous permettre de bien délimiter les plans en vue 3D, l'opacité du fond de plan va permettre d'avoir une opacité plus ou moins grande et de le voir plus ou moins, et puis les capacités réglementaires vont être cumulées sur l'ensemble du bâtiment pour donner une capacité réglementaire globale sur le bâtiment. Pour changer l'image du fond de plan, je vais aller chercher mon plan dans mon ordinateur, je le valide, mon plan apparaît ici et je sauvegarde. Maintenant quand je suis sur mon étage
-
-j'ai bien mon fond de plan sur lequel je vais pouvoir dessiner une échelle.
+-   valider la création
+-   créer les autres étages éventuels en modifiant le nom et le niveau des nouveaux étages à créer
+-   une fois les étages créés, cliquer sur le logo de l'entreprise en haut à gauche de l'écran pour revenir à la page d'accueil.
+-   Les étages créés apparaissent dans la fiche du bâtiment.
+-   cliquer sur l'étage nouvellement créé afin d'ajouter le fond de plan et l'échelle.
