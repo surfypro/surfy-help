@@ -1,23 +1,4 @@
-# Gérer les espaces
-
-Créer, modifier, qualifier ou supprimer un espace
-
-
-## Créer un espace
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9A0XQaxj6hA?si=AZLCsb0APLySH7hZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-Pour créer un espace (ou pièce) sur un étage qui a déjà son fond de plan et son échelle :
--   aller sur l'étage, cliquer sur le plan pour faire apparaître les icônes dans la zone située au dessus du plan
--   choisir d' "activer le mode édition du plan" en cliquant sur l'icône "crayon".
--   cliquer sur l'icône "Ajouter une pièce" permet d'avoir une croix indiquant l'horizontalité et la verticalité afin de faciliter le placement correct des sommets de l'espace à créer.
--   cliquer pour créer le premier sommet de la pièce. La possibilité d'avoir un trait horizontal, à 45 degrés ou vertical est annulée en appuyant sur la touche "Shift", ce qui permet de libérer complètement l'emplacement de création du sommet suivant.
--   en zoomant et dézoomant, placer la souris à l'endroit désiré et cliquer pour créer le deuxième sommet.
--   de même, cliquer pour créer le troisième sommet. Surfy propose de clore la pièce ou de continuer à créer des sommets.
--   pour terminer la pièce, cliquer pour créer le dernier sommet puis "sauvegarder la pièce en cours".
--   la pièce est créée et la fiche de la pièce indique sa surface et son périmètre.
-
-## Modifier un espace
+# Modifier un espace
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_B7Jb3eAn4I?si=VWTC1qkufqzoatIP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -43,8 +24,3 @@ Après rafraîchissement, l'espace affiche la couleur de la typologie choisie. C
 
 L'icône "goutte" au dessus du plan permet d'"activer la transparence des couleurs" et de voir les différents éléments présents sur le fond de plan à travers les couleurs des calques de Surfy.
 
-## Supprimer un espace
-
-Attention: la suppression d'espace implique la suppression de tout le mobilier associé et de toutes les affectations de personnes à cet espace ou aux postes de travail de l'espace. Il n'y a pas de retour en arrière (Undo) possible dans Surfy.
-
-Pour supprimer un espace, cliquer sur l'espace, puis cliquer sur l'icone "poubelle" en bas à droite de la fiche de la pièce. Une double confirmation de suppression est demandée.
