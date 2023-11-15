@@ -26,3 +26,25 @@
 ::: tip Titre
 [admonitions](https://docusaurus.io/fr/docs/markdown-features/admonitions)
 :::
+
+:::note
+Un peu de **contenu** avec la `syntaxe` _Markdown_. Consultez [cette `api`](#).
+:::
+
+:::tip
+Un peu de **contenu** avec la `syntaxe` _Markdown_. Consultez [cette `api`](#).
+:::
+
+:::info
+
+Un peu de **contenu** avec la `syntaxe` _Markdown_. Consultez [cette `api`](#).
+
+:::
+
+:::warning
+Un peu de **contenu** avec la `syntaxe` _Markdown_. Consultez [cette `api`](#).
+:::
+
+:::danger
+Un peu de **contenu** avec la `syntaxe` _Markdown_. Consultez [cette `api`](#).
+:::
