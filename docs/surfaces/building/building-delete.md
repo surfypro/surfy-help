@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
  # Supprimer un bâtiment
 
 :::warning Attention: 

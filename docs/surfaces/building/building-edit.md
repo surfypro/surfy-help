@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Modifier un bâtiment
 
 Les informations d'un bâtiment peuvent être modifiées en cliquant sur le crayon de couleur en bas de la fiche du bâtiment, ou sur l'icone en bout de ligne de couleur du bâtiment puis sur "modifier le bâtiment XXX". Les informations peuvent alors être complétées.
