@@ -1,4 +1,6 @@
-import {PropertyType} from '../../../src/components/MetaModel/PropertyType'
+---
+sidebar_position: 1
+---
 
 # Créer un bâtiment
 
