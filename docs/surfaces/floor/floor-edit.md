@@ -18,34 +18,6 @@ Pour modifier l'étage créé et ajouter le fond de plan et l'échelle,
 -   le nouveau fond de plan est affiché sur l'étage.
 
 
-## Définir l'échelle du plan
-
--   renseigner l'"échelle plan" dans le cas où une échelle a été créée sur les étages déjà présents.
--   sauvegarder les modifications.
-
-:::tip
-Si l'échelle n'est pas déjà définie, créer l'echelle avec l'aide du tutoriel "Création de l'echelle dans Surfy"
-:::
-
-<Youtube code="NEuqxKqpIJM"/>
-
-Pour créer l'échelle d'un étage dont le fond de plan est déjà entré dans Surfy,
-
--   cliquer sur l'étage
--   cliquer sur le fond de plan pour faire apparaître les icônes au-dessus du plan
--   zoomer sur le segment de l'échelle
--   cliquer sur l'icône "Gérer l'échelle"
--   cliquer sur le début du segment de l'échelle, un trait rouge apparaît.
--   cliquer sur la deuxième extrémité dusegment de l'échelle
--   le segment de l'échelle est défini
--   renseigner la distance correspondante en mètres dans la case "Distance". 
-
-:::tip Attention
-Toutes les pièces ou le mobilier dessinés dans Surfy se baseront sur cette échelle. On peut ajuster l'échelle très précisément en modifiant la longueur du segment ou en modifiant la valeur de la distance.
-:::
-
-
-Une fois votre échelle prête vous pouvez commencer à digitaliser vos pièces.
 
 ## Qualifier l'étage
 
