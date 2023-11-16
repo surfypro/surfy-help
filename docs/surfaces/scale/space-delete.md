@@ -1,4 +1,4 @@
-# Supprimer l'échelle d'un plan d'étage
+# Supprimer l'échelle d'un étage
 
 Pour supprimer l'échelle d'un étage,
 

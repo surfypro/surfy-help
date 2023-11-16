@@ -1,4 +1,4 @@
-# Créer l'échelle d'un plan d'étage
+# Créer l'échelle d'un étage
 
 <Youtube code="NEuqxKqpIJM"/>
 
