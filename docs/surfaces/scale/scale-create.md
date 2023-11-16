@@ -12,13 +12,12 @@ Pour créer l'échelle d'un étage dont le fond de plan est déjà entré dans S
 -   cliquer sur la deuxième extrémité du segment de l'échelle
 -   le segment de l'échelle est défini
 -   renseigner la distance correspondante en mètres dans la case "Distance". 
-
-:::tip Attention
-Tous les espaces ou le mobilier dessinés dans Surfy se baseront sur cette échelle.
-:::
+-   valider la valeur entrée en cliquant sur la coche verte.
 
 
-Une fois votre échelle prête vous pouvez commencer à digitaliser vos espaces et placer votre mobilier à l'échelle.
+Une fois votre échelle validée vous pouvez commencer à digitaliser vos espaces.
+Tous les espaces ou le mobilier dessinés dans l'étage se baseront sur cette échelle.
+
 
 :::tip Astuce
 Si on a digitalisé des espaces ou du mobilier avant d'avoir créé l'échelle, on peut créer celle ci a posteriori. Après rafraichissement, les données s'ajusteront à la nouvelle échelle.

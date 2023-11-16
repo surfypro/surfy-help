@@ -8,5 +8,5 @@ Pour supprimer l'échelle d'un étage,
 -   cliquer sur "Supprimer l'échelle".
 
 :::tip Bon à savoir
-Une échelle commune à plusieurs étages ne peut pas être supprimée ici. Pour retirer l'échelle du plan, cliquer sur "Dissocier l'échelle".
+Si l'échelle n'est attribuée qu'à l'étage concerné, celle ci sera détruite et n'apparaitra plus dans les choix d'échelle. Une échelle commune à plusieurs étages ne pourra pas être supprimée, mais sera dissociée de l'étage en cliquant sur "Dissocier l'échelle". L'étage concerné n'aura plus d'échelle mais celle ci sera toujours valide sur les autres étages qui l'utilisent.
 :::
