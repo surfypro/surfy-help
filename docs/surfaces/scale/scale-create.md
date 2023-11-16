@@ -6,12 +6,13 @@ Pour créer l'échelle d'un étage dont le fond de plan est déjà entré dans S
 
 -   cliquer sur l'étage
 -   cliquer sur le fond de plan pour faire apparaître les icônes au-dessus du plan
--   zoomer sur le segment de l'échelle
 -   cliquer sur l'icône "Gérer l'échelle"
+-   zommer sur le segment de l'échelle en référence sur le fond de plan
 -   cliquer sur le début du segment de l'échelle, un trait rouge apparaît.
 -   cliquer sur la deuxième extrémité du segment de l'échelle
 -   le segment de l'échelle est défini
--   renseigner la distance correspondante en mètres dans la case "Distance". 
+-   nommer éventuellement l'échelle pour une utilisation sur d'autres étages.
+-   renseigner la distance correspondante en mètres dans la case "Distance"
 -   valider la valeur entrée en cliquant sur la coche verte.
 
 
