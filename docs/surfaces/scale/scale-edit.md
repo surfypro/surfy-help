@@ -1,4 +1,8 @@
  
+---
+sidebar_position: 2
+---
+
 # Modifier l'échelle d'un étage 
  
 ## Changer l'échelle d'un étage

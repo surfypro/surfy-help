@@ -1,10 +1,14 @@
+---
+sidebar_position: 2
+---
+
 # Modifier un étage
 
 <Youtube code="yw4XtiZNnu8"/>
 
 Pour modifier l'étage créé et ajouter le fond de plan et l'échelle,
 
--   cliquer sur l'étage nouvellement créé
+-   accéder à l'étage nouvellement créé
 -   dans le menu contextuel, cliquer sur "modifier l'étage XXX"
 
 
@@ -39,7 +43,7 @@ Pour cela, on extrait l'image du fond de plan existant pour la modifier sous "Pa
 
 ### Extraire le fond de plan
 
--   cliquer sur l'étage
+-   accéder à l'étage
 -   dans le menu contextuel, cliquer sur "modifier l'étage XXX"
 -   sous la touche "changer l'image", au bout de la ligne, cliquer sur "copier l'URL" du fond de plan
 -   coller l'url dans un nouvel onglet du navigateur et cliquer sur "enter".  
@@ -63,7 +67,7 @@ On peut modifier l'image sous Paint3D au pixel près, donc supprimer ou ajouter 
 ### Réimporter le fond de plan dans Surfy
 
 
--   cliquer sur l'étage du fond de plan à charger
+-   accéder à l'étage du fond de plan à charger
 -   dans le menu contextuel, cliquer sur "modifier l'étage XXX"
 -   cliquer sur "changer l'image"
 -   charger l'image modifiée du fond de plan et cliquer sur "skip" pour éviter le recadrage de l'image.

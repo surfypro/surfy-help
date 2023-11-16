@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Supprimer l'échelle d'un étage
 
 Pour supprimer l'échelle d'un étage,

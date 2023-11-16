@@ -1,3 +1,8 @@
+
+---
+sidebar_position: 1
+---
+
 # Créer l'échelle d'un étage
 
 <Youtube code="NEuqxKqpIJM"/>
