@@ -26,6 +26,6 @@ Pour pouvoir créer un étage, les trois informations Nom, Niveau et Bâtiment s
 -   l'étage est prêt pour importer le fond de plan et créer l'échelle.
 
 
-:::Astuce
+:::tip Astuce
 On peut également accéder aux étages des bâtiments par l'arborescence du "menu Liste" à gauche de l'écran, onglet "Bâtiments".
 :::
