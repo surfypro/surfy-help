@@ -14,7 +14,7 @@ Pour créer un étage à partir d'un bâtiment déjà existant :
 -   le bâtiment est déjà renseigné puisqu'on modifie ce bâtiment pour créer l'étage.
 
 
-:::tip attention
+:::tip Remarque
 Pour pouvoir créer un étage, les trois informations Nom, Niveau et Bâtiment sont obligatoires.
 :::
 
@@ -23,7 +23,7 @@ Pour pouvoir créer un étage, les trois informations Nom, Niveau et Bâtiment s
 -   une fois les étages créés, cliquer sur le logo de l'entreprise en haut à gauche de l'écran pour revenir à la page d'accueil.
 -   Les étages créés apparaissent dans la fiche du bâtiment.
 -   Accéder à l'étage en cliquant sur l'étage désiré dans la fiche du bâtiment
--   l'étage est prêt pour importer le fond de plan et créer l'échelle.
+-   l'étage est prêt pour importer le fond de plan et créer l'<P code="floor:scale"/>.
 
 
 :::tip Astuce
