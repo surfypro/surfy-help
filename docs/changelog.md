@@ -11,6 +11,9 @@ Les nouveautés de novembre 2023 :
     - deux ** quand ils sont distribués par étage
 - Mise en place d'une option permettant de rechercher dans les listes les champs sans valeur    
     - par exemple lister les personnes sans matricule, email ou centre de coût
+- La liste des nouveautés est maintenant disponible depuis le site https://help.surfy.pro
+- En mode édition du plan les segments anciennement en pointillés sont maintenant en trait plein violet pour pouvoir facilement rajouter des points dessus
+
 
 
 ## 10 Novembre 2023 - v3.3.202 ##

@@ -80,11 +80,11 @@ const config: Config = {
         },
         { to: '/docs/changelog', label: 'Nouveautés', position: 'left' },
         { to: '/blog', label: 'Blog', position: 'left' },
-        {
-          href: 'https://github.com/surfypro/surfy-help',
-          label: 'GitHub',
-          position: 'right',
-        },
+        // {
+        //   href: 'https://github.com/surfypro/surfy-help',
+        //   label: 'GitHub',
+        //   position: 'right',
+        // },
 
       ],
     },
