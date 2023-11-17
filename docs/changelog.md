@@ -9,6 +9,9 @@ Les nouveautés de novembre 2023 :
 
 - Mise en page d'une section permettant en cas d'erreur de rafraichir la page, de se déconnecter ou de nous contacter 
 - Activation de la recherche des icônes fontawesome pour les types d'objets en majuscule ou minuscule
+- Harmonisation de l'affichage des icônes qui sont representés sur le plan (forme, couleur de fond, couleur de bordure)
+     - Dans la sélection des objets pour mettre sur le plan
+     - Dans la recherche globale des objets 
 -->
 
 ## 13 Novembre 2023 - v3.3.203 ##
