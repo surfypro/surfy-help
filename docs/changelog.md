@@ -8,6 +8,7 @@ Les nouveautés de novembre 2023 :
  ## 17 Novembre 2023 - v3.3.204 ##
 
 - Mise en page d'une section permettant en cas d'erreur de rafraichir la page, de se déconnecter ou de nous contacter 
+- Activation de la recherche des icônes fontawesome pour les types d'objets en majuscule ou minuscule
 -->
 
 ## 13 Novembre 2023 - v3.3.203 ##
