@@ -12,6 +12,7 @@ Les nouveautés de novembre 2023 :
 - Harmonisation de l'affichage des icônes qui sont representés sur le plan (forme, couleur de fond, couleur de bordure)
      - Dans la sélection des objets pour mettre sur le plan
      - Dans la recherche globale des objets 
+     - Lors de l'ajout sur le plan
 -->
 
 ## 13 Novembre 2023 - v3.3.203 ##
