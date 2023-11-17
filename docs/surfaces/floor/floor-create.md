@@ -23,7 +23,7 @@ Pour pouvoir créer un étage, les trois informations Nom, Niveau et Bâtiment s
 -   une fois les étages créés, cliquer sur le logo de l'entreprise en haut à gauche de l'écran pour revenir à la page d'accueil.
 -   Les étages créés apparaissent dans la fiche du bâtiment.
 -   Accéder à l'étage en cliquant sur l'étage désiré dans la fiche du bâtiment
--   l'étage est prêt pour importer le fond de plan et créer l'<P code="mapScale"/>.
+-   l'étage est prêt pour importer le fond de plan et créer l'<P code="floor:mapScale"/>
 
 
 :::tip Astuce
