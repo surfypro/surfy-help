@@ -6,34 +6,34 @@
 
 ### Capacité réglementaire {#regulatoryCapacity}
         
-La capacité réglementaire du plateau est le nombre de personnes admissibles sur le plateau au regard de la règlementation
+La capacité réglementaire du plateau, permet de gérer l'évacuation du public et des employés
 ### Empreinte Carbone {#carbonFootprint}
         
-L'empreinte carbone est le poids de CO2 émis pour la fabrication d'un objet ou d'un mètre carré de revêtement de sol
+L'empreinte carbone est le nombre de CO2 émis
 ### Fond de plan {#backgroundLayout}
         
-Le fond de plan permet d'avoir une image de l'étage afin de pouvoir dessiner les plans dans Surfy, il doit être à l'échelle
+Le fond de plan permet d'avoir un premier niveau de calque afin de pouvoir redessiner les plans, il doit être à l'échelle
 ### Hauteur sous plafond {#height}
         
-La hauteur sous plafond permet de définir la hauteur des murs de l'étage en visualisation 3D
+La hauteur sous plafond de l'étage
 ### Niveau {#level}
         
-Le niveau de l'étage permet de définir sa position par rapport aux autres étages, par exemple 0 pour le RDC ou -1 pour les parkings
+Le niveau de l'étage permet de définir sa position par rapport aux autres étages, par exemple utilisez 0 pour le RDC ou -1 pour les parkings
 ### Nom de l'étage {#name}
         
-Le nom de l'étage permet de le retrouver facilement dans le bâtiment
+Le nom de l'étage est utilisé pour pouvoir le retrouver facilement.
 ### Nombre d'affectations {#peopleCount}
         
-Le nombre de personnes affectées sur l'étage, soit directement affectées aux espaces, soit à travers un poste de travail
+Le nombre de personnes affectées dans la l'étage, soit directement affécté aux espaces, soit à travers un poste de travail
 ### Nombre d'affectations {#totalPeopleCount}
         
-Le nombre de personnes affectées sur l'étage, soit directement affécté aux espaces, soit à travers un poste de travail
+Le nombre de personnes affectées dans la l'étage, soit directement affécté aux espaces, soit à travers un poste de travail
 ### Nombre d'espaces {#roomsCount}
         
-Le nombre d'espaces digitalisés dans cet étage
+Le nombre d'espaces présent dans cet étage
 ### Nombre de places assises {#seatsCount}
         
-Le nombre total d'assises qualifiées en places assises, Le nombre de places assises d'un type d'objet est défini dans sa fiche
+Le nombre totale de places assises
 ### Nombre de postes de travail {#workplacesCount}
         
 Le nombre de postes de travail dans l'étage est calculé automatiquement
@@ -84,7 +84,7 @@ Taux de postes de travail partagés par au moins 2 personnes par rapport à l'en
 Le bâtiment est utilisé pour regrouper les étages
 ### Échelle plan {#mapScale}
         
-L'échelle permet de calculer en proportion les surfaces réelles et la taille des objets
+
 ### Structure {#structure}
         
 
