@@ -6,7 +6,7 @@ Les nouveautés de novembre 2023 :
 
 ## 13 Novembre 2023 - v3.3.203 ##
 
-- Les centres de coût possèdent à la fin de leur nom 
+- Les centres de coût possèdent à la fin de leur nom : 
     - une * quand ils sont distribués par bâtiment
     - deux ** quand ils sont distribués par étage
 - Mise en place d'une option permettant de rechercher dans les listes les champs sans valeur    
