@@ -1,3 +1,4 @@
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Type d'objet dans type de poste de travail
 
 
@@ -32,4 +33,3 @@ Permet de définir le nombre de places assises disponibles dans le type de poste
 
 
 
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

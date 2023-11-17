@@ -1,3 +1,4 @@
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Type de relation entre personnes
 
 
@@ -24,4 +25,3 @@ La définition de la relation dans le sens naturel, par exemple entre un père e
 
 
 
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

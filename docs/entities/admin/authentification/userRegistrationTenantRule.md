@@ -1,3 +1,4 @@
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Règle d'authentification
 
 
@@ -31,4 +32,3 @@ Séparer les domaines avec des espaces et inclure l'arobase
 
 
 
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

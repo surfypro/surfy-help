@@ -1,3 +1,4 @@
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Centre de coût
 
 Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation
@@ -42,4 +43,3 @@ Répartir au prorata l'espace utilisé par ce centre de coût sur l'étage sur l
 
 
 
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

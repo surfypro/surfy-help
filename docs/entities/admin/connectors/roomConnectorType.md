@@ -1,3 +1,4 @@
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 #  Room Connector Type
 
 
@@ -18,4 +19,3 @@ Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces d
 
 
 
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

@@ -1,3 +1,4 @@
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Étage
 
 
@@ -82,9 +83,9 @@ Taux de postes de travail partagés par au moins 2 personnes par rapport à l'en
 ### Bâtiment {#building}
         
 Le bâtiment est utilisé pour regrouper les étages
-### Échelle plan {#mapScale}
+### Échelle du plan {#mapScale}
         
-
+L'échelle permet de calculer en proportion les surfaces réelles et la taille des objets
 ### Structure {#structure}
         
 
@@ -118,4 +119,3 @@ Le bâtiment est utilisé pour regrouper les étages
 
 
 
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

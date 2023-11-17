@@ -1,3 +1,4 @@
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Échelle plan
 
 
@@ -48,4 +49,3 @@ La taille du texte sur les postes de travail et sur les objets sur le plan pour 
 
 
 
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
