@@ -4,6 +4,12 @@ Les nouveautés de novembre 2023 :
 
 <Youtube code="yXREgUBb_vQ"/>
 
+<!--
+ ## 17 Novembre 2023 - v3.3.204 ##
+
+- Mise en page d'une section permettant en cas d'erreur de rafraichir la page, de se déconnecter ou de nous contacter 
+-->
+
 ## 13 Novembre 2023 - v3.3.203 ##
 
 - Les centres de coût possèdent à la fin de leur nom : 
