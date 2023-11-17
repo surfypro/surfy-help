@@ -14,7 +14,7 @@ Pour créer un étage à partir d'un bâtiment déjà existant :
 -   le bâtiment est déjà renseigné puisqu'on modifie ce bâtiment pour créer l'étage.
 
 
-:::tip Remarque
+:::tip Bon à savoir
 Pour pouvoir créer un étage, les trois informations Nom, Niveau et Bâtiment sont obligatoires.
 :::
 
