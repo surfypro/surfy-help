@@ -4,7 +4,7 @@ Les nouveautés de novembre 2023 :
 
 <Youtube code="yXREgUBb_vQ"/>
 
-<!--
+
  ## 17 Novembre 2023 - v3.3.204 ##
 
 - Mise en page d'une section permettant en cas d'erreur de rafraichir la page, de se déconnecter ou de nous contacter 
@@ -13,7 +13,7 @@ Les nouveautés de novembre 2023 :
      - Dans la sélection des objets pour mettre sur le plan
      - Dans la recherche globale des objets 
      - Lors de l'ajout sur le plan
--->
+
 
 ## 13 Novembre 2023 - v3.3.203 ##
 
