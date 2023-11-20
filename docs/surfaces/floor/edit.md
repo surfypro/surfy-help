@@ -64,11 +64,9 @@ Pour cela, on extrait l'image du fond de plan existant pour la modifier sous "Pa
 
 ### Modifier le fond de plan avec Paint3D
 
-<Youtube code="c_q-iUf1Is4"/>
-
--   cliquer droit sur le fichier enregistré et "Ouvrir avec" Paint3D
+-   cliquer droit sur le fichier enregistré et "Ouvrir avec" Paint3D (ou tout autre logiciel de dessin respectant les dimensions du fichier)
 -   passer directement en "zone de dessin" dans Paint3D.
--   à gauche de l'écran, la largeur et la hauteur en pixel doivent être conservées afin de garder la bonne taille de l'image et de rester compatible avec le dessin des espaces dans Surfy.
+-   à gauche de l'écran, la largeur et la hauteur en pixels doivent être conservées afin de garder la bonne taille de l'image et de rester compatible avec le dessin des espaces dans Surfy.
 -   modifier le plan en sélectionnant la zone à supprimer + Backspace, ou en copiant/collant les éléments composant le plan.
 -   ajouter une version sur le cartouche du plan pour un bon archivage.
 -   "enregistrer sous" le fichier en ayant soin de garder la version non modifiée pour archivage.
