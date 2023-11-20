@@ -1,3 +1,4 @@
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Rôle de l'utilisateur de l'entreprise
 
 
@@ -18,4 +19,3 @@
 
 
 
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

@@ -1,3 +1,4 @@
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Typologie d'espace
 
 
@@ -49,4 +50,3 @@ L'icône pour le type d'espace permet d'afficher pour ce type d'espace une icôn
 
 
 
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

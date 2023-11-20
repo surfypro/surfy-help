@@ -1,3 +1,4 @@
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Segment
 
 
@@ -26,4 +27,3 @@ Inverser les points du segment afin d'avoir l'affichage par exemple des portes d
 
 
 
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

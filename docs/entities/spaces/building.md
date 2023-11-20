@@ -1,3 +1,4 @@
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Bâtiment
 
 Le bâtiment est utilisé pour regrouper les étages
@@ -169,4 +170,3 @@ Scénarios générés à partir de ce bâtiment
 
 
 
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

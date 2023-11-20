@@ -1,3 +1,4 @@
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Association d'utilisateur d'api au rôle
 
 
@@ -18,4 +19,3 @@
 
 
 
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

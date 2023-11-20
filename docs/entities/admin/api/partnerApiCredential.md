@@ -1,3 +1,4 @@
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Clé d'api partenaire
 
 
@@ -28,4 +29,3 @@ Il faut activer la clé pour pouvoir l'utiliser
 
 
 
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

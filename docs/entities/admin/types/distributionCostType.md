@@ -1,3 +1,4 @@
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Type de distribution des coûts
 
 
@@ -24,4 +25,3 @@ Le code est utilisé afin de pouvoir calculer automatiquement les coûts associ�
 
 
 
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

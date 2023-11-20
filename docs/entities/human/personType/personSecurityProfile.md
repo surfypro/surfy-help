@@ -1,3 +1,4 @@
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Profil de sécurité des personnes
 
 
@@ -24,4 +25,3 @@ Le nom du profil de sécurité des personnes permet de l'identifier facilement
 
 
 
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

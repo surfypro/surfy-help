@@ -1,3 +1,4 @@
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Type d'objet
 
 
@@ -76,4 +77,3 @@ Le Modèle 3D permet une représentation 3D réaliste des objets placés sur le 
 
 
 
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

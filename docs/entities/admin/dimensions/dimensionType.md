@@ -1,3 +1,4 @@
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Type de calque d'analyse
 
 
@@ -39,4 +40,3 @@ Permet de trier les types de calque d'analyse pour les afficher
 
 
 
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

@@ -2353,8 +2353,8 @@
                     "description": null
                 },
                 "mapScale": {
-                    "label": "Échelle plan",
-                    "description": null
+                    "label": "Échelle du plan",
+                    "description": "L'échelle permet de calculer en proportion les surfaces réelles et la taille des objets"
                 },
                 "structureId": {
                     "label": "Id (structure)",

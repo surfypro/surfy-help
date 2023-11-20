@@ -1,3 +1,4 @@
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Famille de types d'objet
 
 Permet d’afficher les objets par Famille sur les plans et dans l’inventaire en pdf
@@ -18,4 +19,3 @@ Le nom de la famille permet de l'identifier, ce nom est utilisé pour regrouper 
 
 
 
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->

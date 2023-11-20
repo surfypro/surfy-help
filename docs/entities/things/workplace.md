@@ -1,3 +1,4 @@
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Poste de travail
 
 
@@ -61,4 +62,3 @@ Le centre de coût permet de repartir les espaces dynamiquement pour la refactur
 
 
 
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
