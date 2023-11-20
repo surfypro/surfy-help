@@ -6,21 +6,7 @@ sidebar_position: 2
 
 <Youtube code="yw4XtiZNnu8"/>
 
-Pour modifier les informations de l'étage créé et ajouter ou modifier le fond de plan,
-
-
-
-## Importer le fond de plan
-
--   accéder à l'étage concerné
--   dans le menu contextuel, cliquer sur "modifier l'étage XXX"
--   cliquer sur "changer l'image" afin d'importer le fichier PNG du fond de plan de l'étage.
--   charger l'image du fond de plan et cliquer sur "skip" pour éviter le recadrage de l'image.
--   "sauvegarder" les modifications de l'étage.
--   rafraichir par F5
--   à partir du menu contextuel, cliquer sur "plan de l'étage en 2D"
--   le nouveau fond de plan est affiché sur l'étage.
-
+Pour modifier les informations de l'étage et ajouter ou modifier le fond de plan,
 
 
 ## Modifier les informations de l'étage
@@ -42,6 +28,22 @@ Les informations peuvent être renseignées ou modifiées :
 On peut changer le bâtiment d'appartenance de l'étage en cliquant sur le crayon de la ligne "Bâtiment" pour sélectionner le bâtiment sur lequel l'étage sera intégré. Cela permet notamment d'intégrer l'étage d'un scénario validé dans le bâtiment principal.
 :::
 
+
+## Importer le fond de plan
+
+-   accéder à l'étage concerné
+-   dans le menu contextuel, cliquer sur "modifier l'étage XXX"
+-   cliquer sur "changer l'image" afin d'importer le fichier PNG du fond de plan de l'étage.
+-   charger l'image du fond de plan et cliquer sur "skip" pour éviter le recadrage de l'image.
+-   "sauvegarder" les modifications de l'étage.
+-   rafraichir par F5
+-   à partir du menu contextuel, cliquer sur "plan de l'étage en 2D"
+-   le nouveau fond de plan est affiché sur l'étage.
+
+
+
+
+
 ## Modifier le fond de plan d'un étage
 
 
@@ -62,6 +64,7 @@ Pour cela, on extrait l'image du fond de plan existant pour la modifier sous "Pa
 
 ### Modifier le fond de plan avec Paint3D
 
+<Youtube code="c_q-iUf1Is4"/>
 
 -   cliquer droit sur le fichier enregistré et "Ouvrir avec" Paint3D
 -   passer directement en "zone de dessin" dans Paint3D.
