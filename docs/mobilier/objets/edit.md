@@ -10,5 +10,5 @@ Pour changer le type d'objet d'un objet sur le plan,
 -   "Sauvegarder" les modifications
 
 :::tip Bon à savoir
-L'objet modifié aura la forme et les caractéristiques du nouveau type d'objet, avec l'orientation et le placement de l'objet remplacé.
+L'objet modifié aura la forme et les caractéristiques du nouveau type d'objet, mais gardera toutes les informations (référence, code immo et association à personne), l'orientation et le placement de l'objet remplacé.
 :::
