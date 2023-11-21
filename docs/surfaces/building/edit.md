@@ -7,7 +7,7 @@ sidebar_position: 2
 Les informations d'un bâtiment peuvent être modifiées en cliquant sur le crayon en bas de la fiche du bâtiment, ou sur l'icone en bout de ligne de couleur du bâtiment puis sur "modifier le bâtiment XXX". Les informations suivantes peuvent alors être complétées:
 
 -   Nom du bâtiment : modifier le nom permet d'organiser ses bâtiments et scénarios
--   Couleur : la couleur du bâtiment permet de personnaliser son environnement et évite de se tromper de bâtiment
+-   Couleur : la couleur du bâtiment permet de personnaliser son environnement et d'éviter de se tromper de bâtiment
 
 Les informations suivantes sont déclaratives et optionnelles :
 -   Surface : renseigne la surface "officielle" occupée
