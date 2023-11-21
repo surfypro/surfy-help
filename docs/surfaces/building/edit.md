@@ -32,7 +32,7 @@ Les informations suivantes sont déclaratives et optionnelles :
 -   Utilisateur propriétaire du bâtiment : par défaut, permet de connaitre la personne ayant créé le bâtiment.
 -   Vision du plan par défaut : on peut choisir une vision pré programmée par défaut pour l'accès aux plans.
 -   Bâtiment d'origine : permet d'organiser les scénarios, en les "cachant" derrière leur "bâtiment d'origine". En l'absence de "bâtiment d'origine", le bâtiment concerné est présent sur la page d'accueil et devient un "Bâtiment principal". Les scénarios sont accessibles en cliquant sur l'icône en bas à droite de la fiche du bâtiment d'origine.
--   Cliquer sur "sauvegarder" pour enregistrer les modifications.
+-   Cliquer sur "sauvegarder" pour enregistrer les modifications du bâtiment.
 
 :::tip Bon à savoir
 On peut créer plusieurs niveaux de scénarios en organisant des "scénarios de scénarios de scénarios etc...", et créer ainsi une arborescence des projets.
