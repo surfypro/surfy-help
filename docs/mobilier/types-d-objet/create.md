@@ -1,3 +1,6 @@
+---
+sidebar_position: 1
+---
 # Les différents types d'objet
 
 Il existe 2 types d’objet : Icônes et Objets à l’échelle.
