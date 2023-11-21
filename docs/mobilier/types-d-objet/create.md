@@ -1,4 +1,4 @@
-# Création de type d'objet
+# Les différents types d'objet
 
 Il existe 2 types d’objet : Icônes et Objets à l’échelle.
 
