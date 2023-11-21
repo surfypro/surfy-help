@@ -15,7 +15,7 @@ Les informations suivantes sont déclaratives et optionnelles :
 -   Date de fin du bail
 -   Date d'achat du bâtiment
 -   Documents associés : permet d'enregistrer des liens vers les documents associés
--   Photo du bâtiment : en vue Lecteur, les photos des bâtiments sont affichées sur les fiches des bâtiments
+-   Photo du bâtiment : On peut ajouter une photo du bâtiment pour une vue simplifiée en mode Lecteur par exemple.
 -   Nombre de places de parking
 -   Année de construction de l'immeuble
 -   Charges annuelles
@@ -25,17 +25,18 @@ Les informations suivantes sont déclaratives et optionnelles :
 -   Charges d'exploitation annuelles
 -   Indice de référence des loyers
 -   Dépôt de garantie
--   Adresse : l'adresse permet de visualiser les bâtiments sur une carte et d'y accéder directement via cette carte
--   Type de bâtiment : locataire ou propriétaire, les informations à renseigner seront différentes
+
+
+-   Adresse : permet de visualiser les bâtiments sur une carte et d'y accéder directement via cette carte.
+-   Type de bâtiment : locataire ou propriétaire, les informations à renseigner seront différentes.
 -   Utilisateur propriétaire du bâtiment : par défaut, permet de connaitre la personne ayant créé le bâtiment.
--   Vision du plan par défaut : par défaut, on peut choisir une vision pré programmée pour l'accès au bâtiment
--   Bâtiment d'origine : permet d'organiser les scénarios, en les "cachant" derrière leur bâtiment d'origine. Les scénarios sont accessibles en cliquant sur l'icône en bas à droite de la fiche du bâtiment d'origine. Le bâtiment devient un "scénario" de son bâtiment d'origine, qu'il soit ou non créé à partir de ce bâtiment. En l'absence de "bâtiment de référence", le bâtiment concerné est présent sur la page d'accueil et devient un "Bâtiment principal". On peut créer plusieurs niveaux de scénarios et organiser des "scénarios de scénarios de scénarios etc...".
+-   Vision du plan par défaut : on peut choisir une vision pré programmée par défaut pour l'accès aux plans.
+-   Bâtiment d'origine : permet d'organiser les scénarios, en les "cachant" derrière leur "bâtiment d'origine". En l'absence de "bâtiment d'origine", le bâtiment concerné est présent sur la page d'accueil et devient un "Bâtiment principal". Les scénarios sont accessibles en cliquant sur l'icône en bas à droite de la fiche du bâtiment d'origine.
+-   Cliquer sur "sauvegarder" pour enregistrer les modifications.
 
-
-
-:::tip
-On peut ajouter l'image du bâtiment pour une vue simplifiée en mode Lecteur, ou l'adresse du bâtiment afin de le situer sur la carte, ou simplement changer le nom et la couleur du bâtiment.
+:::tip Bon à savoir
+On peut créer plusieurs niveaux de scénarios en organisant des "scénarios de scénarios de scénarios etc...", et créer ainsi une arborescence des projets.
 :::
 
 
- Cliquer sur "sauvegarder" pour enregistrer les modifications.
+
