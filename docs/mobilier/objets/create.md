@@ -1,4 +1,7 @@
-# Création d'objet
+---
+sidebar_position: 1
+---
+# Créer un objet
 
 <Youtube code="tho373GPmY8"/>
 
