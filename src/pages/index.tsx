@@ -21,6 +21,14 @@ function HomepageHeader() {
             Voir la documentation
           </Link>
         </div>
+        <div className='hero__subtitle' style={{ marginTop: 16 }}>
+          <p>
+            Nous souhaitons dans ce site rassembler toutes la documentation de l'application Surfy.<br />
+            Il est cependant encore en construction.<br />
+            Nous vous invitons à nous faire part de vos remarques et suggestions.
+          </p>
+        </div>
+
       </div>
     </header>
   );
