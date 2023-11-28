@@ -8,6 +8,9 @@
 ### Code secret {#clientSecret}
         
 le mot de passe secret de votre compte API peut être généré et ne devrait jamais être communiqué
+### Name {#name}
+        
+
 
 
 

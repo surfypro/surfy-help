@@ -5,6 +5,15 @@ Les nouveautés de novembre 2023 :
 <Youtube code="yXREgUBb_vQ"/>
 
 
+ <!-- ## x Decembre 2023 - v3.3.205 ##
+
+- Mise en place d'une option sur l'entreprise permettant d'activer les foncionnalités re recherche de chemin (beta) 
+    - Mise place du calcul de temps et de distance entre deux formes 
+- La vue 3d par defaut de l'étage est maintenant la vue zénithale
+- Mise en place d'un type de segment pour les portes coulissantes
+
+ -->
+
  ## 17 Novembre 2023 - v3.3.204 ##
 
 - Mise en page d'une section permettant en cas d'erreur de rafraichir la page, de se déconnecter ou de nous contacter 

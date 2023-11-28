@@ -486,6 +486,10 @@
                     "label": "Nombre de jours de travail par semaine",
                     "description": "Le nombre de jours de travail par semaine peut être 5 pour les jours ouvrés, 6 incluant le samedi et 7 incluant le dimanche"
                 },
+                "enablePathfinding": {
+                    "label": "Enable Pathfinding",
+                    "description": null
+                },
                 "createdAt": {
                     "label": "Date de création",
                     "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
@@ -6498,6 +6502,10 @@
                     "label": "Code secret",
                     "description": "le mot de passe secret de votre compte API peut être généré et ne devrait jamais être communiqué"
                 },
+                "name": {
+                    "label": "Name",
+                    "description": null
+                },
                 "createdAt": {
                     "label": "Date de création",
                     "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
@@ -7268,6 +7276,10 @@
                 },
                 "voltage": {
                     "label": "Voltage",
+                    "description": null
+                },
+                "time": {
+                    "label": "Time",
                     "description": null
                 },
                 "createdAt": {
