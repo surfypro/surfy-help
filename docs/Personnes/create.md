@@ -3,12 +3,53 @@ sidebar_position: 1
 ---
 # Créer une Personne
 
+
+## Créer une personne
+
 <Youtube code="eBXD7Atx9Dg"/>
 
 Pour créer une personne dans Surfy à partir de la page d'accueil,
--   cliquer sur "collaborateurs", "personnes",  "lister les personnes" déjà existantes dans la base. Ca permet de savoir quelle est la dernière personne entrée dans la base. A partir de là, on peut utiliser le menu contextuel et demander à "créer une personne". Pour créer une personne, il faut au minimum donner le prénom et le nom : les deux propriétés sont obligatoires.
+-   cliquer sur "collaborateurs", "personnes", afin de "lister les personnes" déjà existantes dans la base. La première personne de la liste est la dernière personne entrée dans la base.
+-   cliquer sur le menu contextuel, puis sur "créer une personne". 
+-   renseigner le nom et prénom, ces deux propriétés sont obligatoires.
+-   "valider" la création, ou compléter les informations éventuelles : 
+        -   email, photo, titre de la personne, référence écran, ordinateur, téléphone fixe, téléphone portable, matricule, date d'entrée, date de sortie, commentaire
+        -   la propriété "non affectable"permet de qualifier les personnes ne pouvant être affectées, personnes en congé maternité ou en congé longue durée
+        -   indiquer l'organisation de la personne à partir de la liste des organisations déjà créées
+        -   renseigner le statut, le profil sécurité, le centre de coût, l'entreprise de la personne
+        -   valider la création.
 
-A partir de ce moment-là, je peux "valider" la création mais je peux aussi renseigner l'email, donner une photo, donner le titre de la personne, sa référence écran, ordinateur, téléphone fixe, téléphone portable, matricule et cetera, tout un tas d'informations, date d'entrée, date de sortie, et puis la possibilité de rajouter un commentaire, de rendre la personne "non affectable", c'est le cas par exemple des personnes en congé maternité ou en congé longue durée, on peut lui donner l'organisation de la personne à partir de la liste des organisations déjà créées, on peut donner un statut, un profil de sécurité, et puis un centre de coût pour la refacturation des personnes éventuellement, et l'entreprise des personnes dans le cas d'un statut "prestataire" par exemple pour désigner l'entreprise de la personne. Une fois qu'on a renseigné les informations, on valide la création pour retomber sur la fiche de la personne et on peut, à partir du menu contextuel, revenir sur la "liste des personnes" et constater que la dernière personne rentrée est bien en premier. Cette méthode permet de rentrer les personnes une par une dans la base de Surfy. On a bien sûr la possibilité de rentrer les personnes en "masse", pour cela vous pouvez vous référer à la vidéo "Importation des
 
-personnes"
+## Importer des personnes 
 
+<Youtube code="J-SiqS2Wq8I"/>
+
+On peut importer des personnes en masse dans Surfy via Excel.
+
+-   à partir de la page d'accueil, cliquer sur "collaborateurs", "personnes", "importer des personnes".
+-   l'"aide sur l'import des données pour les personnes", en haut à droite de l'écran permet de "télécharger le gabarit d'import"
+-   le fichier téléchargé comprend toutes les colonnes nécessaires à l'import dans Surfy : le prénom, le nom de famille, l'email, le titre, la référence écran, référence ordinateur, téléphone fixe, portable, matricule, et toutes informations possibles à importer.
+
+:::tip Bon à savoir
+La colonne A "Identifiant Surfy" n'est pas à renseigner. L'identifiant est attribué par Surfy, il est unique, non modifiable et devient la véritable identité de la personne dans la base de données de Surfy.
+:::
+
+-   sélectionner uniquement les colonnes qui ont été remplies et les copier/coller dans une nouvelle feuille du fichier Excel. Les colonnes utilisées doivent être adjacentes.
+ -  sélectionner l'ensemble avec "ctrl A", copier avec "ctrl C"
+ -  dans la fenêtre d'import des personnes dans Surfy, coller les informations avec "ctrl V"
+ -  "comparer" les informations du fichier avec la base de Surfy permet de détecter les personnes qui seront créées.
+ -  créer l'ensemble des personnes dans Surfy, en cliquant sur "Tout créer".
+ -  les personnes sont importées dans la base de données de Surfy.
+
+
+L'"aide à l'import des données pour les personnes" permet aussi de choisir les propriétés à importer grace à l'icône "copier" en face de chaque propriété :
+ 
+-   copier chaque propriété désirée pour l'importation
+-   coller chaque propriété en têtes de colonne d'un fichier Excel vierge
+-   remplir les lignes avec les informations à importer.
+-   sélectionner uniquement les colonnes qui ont été remplies et les copier/coller dans une nouvelle feuille du fichier Excel afin que les colonnes utilisées soient adjacentes.
+ -  sélectionner l'ensemble avec "ctrl A", copier avec "ctrl C"
+ -  dans la fenêtre d'import des personnes dans Surfy, coller les informations avec "ctrl V"
+ -  "comparer" les informations du fichier avec la base de Surfy permet de détecter les personnes qui seront créées.
+ -  créer l'ensemble des personnes dans Surfy, en cliquant sur "Tout créer".
+ -  les personnes sont importées dans la base de données de Surfy.
