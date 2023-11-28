@@ -1,4 +1,4 @@
-# Modifier le fond de plan d'un étage
+# Modifier le fond de plan
 
 
 <Youtube code="c_q-iUf1Is4"/>
