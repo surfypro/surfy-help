@@ -1,5 +1,6 @@
 # Créer un type d'objet Icône
 
+<Youtube code="89my-CVLjOo"/>
 
 -	Dans « Mobilier », « Typologies », « Types d’objet », cliquer sur « Créer un type d’objet ».
 -	Renseigner le « nom » du type d’icône à créer

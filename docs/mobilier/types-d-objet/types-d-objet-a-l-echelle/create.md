@@ -5,6 +5,8 @@ sidebar_position: 1
 
 ## Créer la fiche du type d'objet
 
+<Youtube code="89my-CVLjOo"/>
+
 -	Dans « Mobilier », « Typologies », « Types d’objet », cliquer sur « Créer un type d’objet ».
 -	Renseigner le « nom » du type d’objet à créer
 -	Par défaut, l’« indice de hauteur » est à 0. Il peut être négatif. En cas de chevauchement entre deux types d’objet, celui avec l’indice le plus haut sera systématiquement placé au-dessus de l’autre.
