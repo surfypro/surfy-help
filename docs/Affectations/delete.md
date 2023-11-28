@@ -2,4 +2,4 @@
 sidebar_position: 3
 ---
 
-# Supprimer une Affectation de personne
+# Supprimer une Affectation
