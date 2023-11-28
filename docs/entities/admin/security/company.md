@@ -5,6 +5,9 @@
 
 ## Propriétés de base
 
+### Enable Pathfinding {#enablePathfinding}
+        
+
 ### Icon {#iconPath}
         
 Le logo de l'entreprise en carré
