@@ -1,0 +1,9 @@
+{
+  "label": "Affectations",
+  "position": 4,
+  "link": {
+    "slug": "PAffectations",
+    "type": "generated-index",
+    "description": "Les affectations dans Surfy"
+  }
+}
