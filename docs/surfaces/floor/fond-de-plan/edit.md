@@ -37,6 +37,5 @@ On peut modifier l'image sous Paint3D au pixel près, donc supprimer ou ajouter 
 -   cliquer sur "changer l'image"
 -   charger l'image modifiée du fond de plan et cliquer sur "skip" pour éviter le recadrage de l'image.
 -   "sauvegarder" les modifications de l'étage.
--   rafraichir par F5
 -   à partir du menu contextuel, cliquer sur "plan de l'étage en 2D"
 -   le nouveau fond de plan est affiché sur l'étage.
