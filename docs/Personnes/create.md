@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 # Créer une Personne
 
-<Youtube code="BXD7Atx9Dg"/>
+<Youtube code="eBXD7Atx9Dg"/>
 
 Pour créer une personne dans Surfy à partir de la page d'accueil,
 -   cliquer sur "collaborateurs", "personnes",  "lister les personnes" déjà existantes dans la base. Ca permet de savoir quelle est la dernière personne entrée dans la base. A partir de là, on peut utiliser le menu contextuel et demander à "créer une personne". Pour créer une personne, il faut au minimum donner le prénom et le nom : les deux propriétés sont obligatoires.
