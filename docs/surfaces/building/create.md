@@ -12,7 +12,6 @@ Pour créer un nouveau bâtiment à partir de la page d'accueil de Surfy,
 -   cliquer sur le menu contextuel, puis sur "Créer un bâtiment".
 -   indiquer le nom du bâtiment et une <P code="building:color"/> pour son environnement.
 
-Les informations de nom et de couleur du bâtiment sont obligatoires pour pouvoir créer le bâtiment.
 
 -   cliquer sur "valider la création" ou compléter les informations puis "valider la création".
 -   ajouter l'adresse du bâtiment permet de placer les bâtiments sur une carte pour une gestion multisite optimisée.

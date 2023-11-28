@@ -29,8 +29,9 @@ export function PropertyType(props: { code: string }) {
         </Box>
         <Box >{translations.description}</Box>
     </Paper >;
-    return <HelpTooltipStyled
-        title={Title} TransitionComponent={Fade} disableInteractive={true} ><a href={href} >{translations.label} </a></HelpTooltipStyled>
+    return <HelpTooltipStyled title={Title} TransitionComponent={Fade} disableInteractive={true}>
+        <a href={href}>{translations.label}</a>
+    </HelpTooltipStyled>
 }
 
 
