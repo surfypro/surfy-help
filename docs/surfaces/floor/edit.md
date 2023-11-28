@@ -6,7 +6,7 @@ sidebar_position: 2
 
 <Youtube code="yw4XtiZNnu8"/>
 
-Pour modifier les informations de l'étage et ajouter ou modifier le fond de plan,
+Pour modifier les informations de l'étage et importer le fond de plan,
 
 
 ## Modifier les informations de l'étage

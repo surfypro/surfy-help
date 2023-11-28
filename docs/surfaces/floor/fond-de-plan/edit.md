@@ -1,3 +1,6 @@
+---
+sidebar_position: 2
+---
 # Modifier le fond de plan
 
 
