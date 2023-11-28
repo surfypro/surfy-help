@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Créer un fond de plan
+# Créer le fond de plan
 
 ## Créer le fichier png
 
