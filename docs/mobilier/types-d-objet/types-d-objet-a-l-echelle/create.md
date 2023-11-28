@@ -1,3 +1,6 @@
+---
+sidebar_position: 1
+---
 # Créer un type d’objet à l’échelle
 
 ## Créer la fiche du type d'objet
