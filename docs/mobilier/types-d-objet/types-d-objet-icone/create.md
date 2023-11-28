@@ -1,3 +1,8 @@
+---
+sidebar_position: 1
+---
+
+
 # Créer un type d'objet Icône
 
 <Youtube code="89my-CVLjOo"/>
