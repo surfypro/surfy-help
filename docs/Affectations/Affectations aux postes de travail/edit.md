@@ -7,14 +7,13 @@ sidebar_position: 2
 
 ## Déplacer l'affectation d'une personne
 
-Si une personne est déjà affectée à un poste de travail, espace ou quartier :
+Si une personne est déjà affectée à un poste de travail ou à un espace :
 
-L'affecter à un autre poste de travail, espace ou quartier ouvre une fenêtre listant toutes les affectations de la personne.
+L'affecter à un autre poste de travail ou espace ouvre une fenêtre listant toutes les affectations de la personne.
 Par défaut, seules les affectations sur le même bâtiment sont cochées pour la suppression.
-En cliquant sur "Supprimer les affectations sélectionnées", les affectations pré existantes sur le même bâtiment sont supprimées.
-Elles sont conservées en cliquant sur "Fermer".
+En cliquant sur "Supprimer les affectations sélectionnées", les affectations pré existantes sur le même bâtiment seront supprimées.
+Elles seront conservées en cliquant sur "Fermer".
 Les affectations non cochées restent inchangées mais peuvent être cochées pour être supprimées.
-
 
 
 
@@ -22,7 +21,7 @@ Les affectations non cochées restent inchangées mais peuvent être cochées po
 
 <Youtube code="GN9jhWo29x4"/>
 
-La matrice de transfert permet de déménager une équipe d'un espace vers un autre espace, ou de postes de travail vers d'autres postes de travail sur l'ensemble des bâtiments dans Surfy.
+La matrice de transfert permet de déménager une équipe d'un espace vers un autre espace, ou de postes de travail vers d'autres postes de travail sur l'ensemble des bâtiments digitalisés dans Surfy.
 
 
 ### Créer la matrice de transfert
