@@ -1,0 +1,9 @@
+{
+  "label": "Affectations",
+  "position": 2,
+  "link": {
+    "slug": "Affectations",
+    "type": "generated-index",
+    "description": "Les affectations aux espaces"
+  }
+}
