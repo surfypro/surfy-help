@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 ---
-# Modifier une affectation à un espace
+# Modifier une Affectation à un espace
 
 ## Déplacer l'affectation d'une personne
 
