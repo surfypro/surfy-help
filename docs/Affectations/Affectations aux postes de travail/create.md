@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 ---
-# Créer une Affectation
+# Créer une Affectation à un poste de travail
 
 ## Affecter une personne dans Surfy
 
