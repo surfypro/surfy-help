@@ -17,7 +17,7 @@ Les affectations non cochées restent inchangées mais peuvent être cochées po
 
 
 
-## La Matrice de transfert
+## Utiliser la Matrice de transfert
 
 <Youtube code="GN9jhWo29x4"/>
 
