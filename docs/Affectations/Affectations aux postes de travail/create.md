@@ -3,6 +3,9 @@ sidebar_position: 1
 ---
 # Créer une Affectation à un poste de travail
 
+Les affectations aux postes de travail correspondent à des affectations fixes. On peut alors retrouver l'emplacement du poste de travail en faisant une recherche sur la personne, ou connaitre la personne affectée au poste de travail choisi.
+
+L'affectation à un poste de travail se fait toujours à partir du poste de travail auquel on affecte une ou plusieurs personnes.
 
 ## Affecter une personne à un poste de travail
 
@@ -28,10 +31,22 @@ Si la personne à affecter n'est pas encore créée dans la base de données de 
 
 -   cliquer sur le poste de travail à affecter
 -   dans la fiche du poste de travail à gauche, cliquer sur "Affecter une personne"
--   cliquer sur "créer et associer une personne"
-
-
+-   rechercher la personne
+-   si la personne n'existe pas dans Surfy, cliquer sur "créer et associer une personne"
+-   compléter la fiche de la personne
+-   valider la création de la personne
 -   la personne est créée et affectée au poste de travail.
 
 
 ## Affecter des personnes par import Excel
+
+On peut affecter des personnes en masse en important le fichier Excel correspondant.
+Ce fichier doit être composé au minimum :
+-   de l'identifiant de la personne à affecter
+-   de l'identifiant du poste de travail de l'affectation
+-   des bons en-têtes sur les colonnes à importer.
+
+:::tip Bon à savoir
+Les affectations créées par importation viennent s'ajouter aux affectations déjà présentes, sans demande de suppression des anciennes affectations.
+ Il faut donc veiller à supprimer toutes les affectations en trop avant d'importer le fichier.
+ :::
