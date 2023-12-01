@@ -29,7 +29,7 @@ Il n'y a pas de "Undo" dans Surfy, cette action est irréversible.
 
 ## A partir d'un export de Surfy
 
--   remplacer le prénom ou le nom de chaque personne à supprimer par le mot "delete" (ou tout autre mot)
+-   dans le fichier Excel, remplacer le prénom ou le nom de chaque personne à supprimer par le mot "delete" (ou tout autre mot)
 -   réimporter la liste des personnes avec leur identifiant ou clé et rafraichir par F5
 -   chaque personne à supprimer a maintenant pour nom ou prénom "delete". 
 -   cliquer sur "Collaborateurs" puis "personnes" et "lister les personnes"
