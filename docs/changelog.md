@@ -9,7 +9,7 @@ Les nouveautés de novembre 2023 :
 
 - Il n'est plus possible d'affecter une personne sur un poste de travail en flex ou de passage via l'interface du plan
 
- <!-- ## x Decembre 2023 - v3.3.205 ##
+ <!-- ## 1er Decembre 2023 - v3.3.205 ##
 
 - Mise en place d'une option sur l'entreprise permettant d'activer les foncionnalités re recherche de chemin (beta) 
     - Mise place du calcul de temps et de distance entre deux formes 
