@@ -18,6 +18,15 @@ L'affectation de la personne est supprimée
 Supprimer l'affectation d'une personne ne supprime pas la personne. En revanche, supprimer une personne supprime toutes ses affectations !
 :::
 
+## Suppression par la liste filtrée des affectations :
+
+Dans le menu Liste à gauche de l'écran,
+
+-   cliquer sur "Affectations", "Affectations au poste de travail" puis "Lister les affectations au poste de travail"
+-   filtrer la liste en fonction des critères voulus: bâtiment, étage, espace, ... par les deux premières icônes en haut à droite de l'écran
+-   Une fois la liste filtrée, on peut cocher chaque affectation à supprimer au début de chaque ligne, puis "supprimer les affectations au poste de travail sélectionnées" par l'icône "poubelle" en haut de page.
+
+
 ## Suppression d'affectation en masse par fichier Excel
 
 
@@ -39,7 +48,13 @@ On peut créer le fichier Excel comportant les affectations à supprimer de diff
     -   le fichier est téléchargé
 
 
+### Traitement des informations dans le fichier Excel
 
+Pour supprimer une affectation, il faut :
+-   effacer les cases "Identifiant Surfy", "Prénom" et "Nom de famille" (colonnes B, C, D) de la ligne de l'affectation à supprimer.
+-   en revanche, la colonnes A (identifiant de l'affectation) doit rester inchangée.
+-   les colonnes à importer sont A,B,C,D et doivent rester contigue
+-   copier ces colonnes contigues par "ctrl C".
 
 
 
