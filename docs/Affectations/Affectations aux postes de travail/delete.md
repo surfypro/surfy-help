@@ -53,13 +53,20 @@ On peut créer le fichier Excel comportant les affectations à supprimer de diff
 Pour supprimer une affectation, il faut :
 
 -   effacer les cases "Identifiant Surfy", "Prénom" et "Nom de famille" (colonnes B, C, D) de la ligne de l'affectation à supprimer.
--   en revanche, la colonnes A (identifiant de l'affectation) doit rester inchangée.
--   les colonnes à importer sont A,B,C,D et doivent rester contigue
--   copier ces colonnes contigues par "ctrl C".
+-   La colonnes A (identifiant de l'affectation) doit rester inchangée.
+-   les colonnes à importer sont A,B,C,D et doivent rester contigües
+-   copier ces colonnes contigües par "ctrl C".
 
 
 ### Importation du fichier Excel modifié
 
+Dans le menu Liste à gauche de l'écran,
+
+-   cliquer sur "Affectation", "Affectations au poste de travail" puis "importer des affectations au poste de travail"
+-   coller les colonnes contigües dans la case centrale
+-   cliquer sur "Comparer", Surfy propose les modifications à apporter
+-   cliquer sur "Créer tout", ou cocher les cases désirées et cliquer sur "Créer"
+-   les affectations cochées sont supprimées
 
 
--   
+ 
