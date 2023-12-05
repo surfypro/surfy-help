@@ -233,6 +233,22 @@
                 "label": "Calque d'affectation du bâtiment",
                 "description": null
             },
+            "workingLocation": {
+                "label": " Working Location",
+                "description": null
+            },
+            "personWorkingLocation": {
+                "label": " Person Working Location",
+                "description": null
+            },
+            "personToWorkplaceBooking": {
+                "label": " Person To Workplace Booking",
+                "description": null
+            },
+            "personToRoomBooking": {
+                "label": " Person To Room Booking",
+                "description": null
+            },
             "jupObjectType": {
                 "label": "Type d'entité",
                 "description": null
@@ -656,6 +672,14 @@
                     "label": "Entreprise",
                     "description": null
                 },
+                "personId": {
+                    "label": "Identifiant Surfy",
+                    "description": null
+                },
+                "person": {
+                    "label": "Personne",
+                    "description": null
+                },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
                     "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
@@ -1058,6 +1082,30 @@
                 },
                 "dimensionTypeToBuildingUpdatedBies": {
                     "label": "Calques d'affectation du bâtiment",
+                    "description": null
+                },
+                "personWorkingLocationCreatedBies": {
+                    "label": " Person Working Locations",
+                    "description": null
+                },
+                "personWorkingLocationUpdatedBies": {
+                    "label": " Person Working Locations",
+                    "description": null
+                },
+                "personToWorkplaceBookingCreatedBies": {
+                    "label": " Person To Workplace Bookings",
+                    "description": null
+                },
+                "personToWorkplaceBookingUpdatedBies": {
+                    "label": " Person To Workplace Bookings",
+                    "description": null
+                },
+                "personToRoomBookingCreatedBies": {
+                    "label": " Person To Room Bookings",
+                    "description": null
+                },
+                "personToRoomBookingUpdatedBies": {
+                    "label": " Person To Room Bookings",
                     "description": null
                 },
                 "contentRoleCreatedBies": {
@@ -2504,6 +2552,10 @@
                     "label": "Couleur en 3d",
                     "description": "Permet de gérer la couleur du type d'espace en 3d, cette option est uniquement applicable à la vision 3d de l'étage"
                 },
+                "code": {
+                    "label": "Code",
+                    "description": null
+                },
                 "displayWallsOn3d": {
                     "label": "Afficher les murs",
                     "description": "Permet d'afficher ou non les murs de l'espace dans le plan 3d de l'étage, les murs non affichés sont en pointillés en 2d, cela permet d'avoir une vue plus agréable notament pour les open spaces"
@@ -3134,6 +3186,10 @@
                 },
                 "items": {
                     "label": "Objets",
+                    "description": null
+                },
+                "personToRoomBookings": {
+                    "label": " Person To Room Bookings",
                     "description": null
                 },
                 "companyId": {
@@ -4278,6 +4334,10 @@
                     "label": "Clé externe",
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
+                "userCompanies": {
+                    "label": "Utilisateurs de l'entreprise",
+                    "description": null
+                },
                 "organizationId": {
                     "label": "Identifiant de l'organisation",
                     "description": null
@@ -4368,6 +4428,18 @@
                 },
                 "dimensionToPeople": {
                     "label": "Affectations aux calques d'affectation",
+                    "description": null
+                },
+                "personWorkingLocations": {
+                    "label": " Person Working Locations",
+                    "description": null
+                },
+                "personToWorkplaceBookings": {
+                    "label": " Person To Workplace Bookings",
+                    "description": null
+                },
+                "personToRoomBookings": {
+                    "label": " Person To Room Bookings",
                     "description": null
                 },
                 "companyId": {
@@ -4754,6 +4826,10 @@
                     "label": "Commentaire",
                     "description": "Une information supplémentaire sur le poste de travail"
                 },
+                "isBookable": {
+                    "label": "Est réservable ?",
+                    "description": "Si ce poste de travail est reservable dans un système de réservation"
+                },
                 "createdAt": {
                     "label": "Date de création",
                     "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
@@ -4820,6 +4896,10 @@
                 },
                 "workplaceAffectations": {
                     "label": "Affectations au poste de travail",
+                    "description": null
+                },
+                "personToWorkplaceBookings": {
+                    "label": " Person To Workplace Bookings",
                     "description": null
                 },
                 "companyId": {
@@ -5753,6 +5833,258 @@
                 "building": {
                     "label": "Bâtiment",
                     "description": "Le bâtiment est utilisé pour regrouper les étages"
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
+            "workingLocation": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "name": {
+                    "label": "Name",
+                    "description": null
+                },
+                "code": {
+                    "label": "Code",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "personWorkingLocations": {
+                    "label": " Person Working Locations",
+                    "description": null
+                }
+            },
+            "personWorkingLocation": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "date": {
+                    "label": "Date",
+                    "description": null
+                },
+                "daySlotType": {
+                    "label": "Day Slot Type",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "personId": {
+                    "label": "Identifiant Surfy",
+                    "description": null
+                },
+                "person": {
+                    "label": "Personne",
+                    "description": null
+                },
+                "workingLocationId": {
+                    "label": "Id ( Working Location)",
+                    "description": null
+                },
+                "workingLocation": {
+                    "label": " Working Location",
+                    "description": null
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "personToWorkplaceBookings": {
+                    "label": " Person To Workplace Bookings",
+                    "description": null
+                },
+                "personToRoomBookings": {
+                    "label": " Person To Room Bookings",
+                    "description": null
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
+            "personToWorkplaceBooking": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "startDatetime": {
+                    "label": "Start Datetime",
+                    "description": null
+                },
+                "endDatetime": {
+                    "label": "End Datetime",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "personId": {
+                    "label": "Identifiant Surfy",
+                    "description": null
+                },
+                "person": {
+                    "label": "Personne",
+                    "description": null
+                },
+                "workplaceId": {
+                    "label": "Identifiant du poste de travail",
+                    "description": ""
+                },
+                "workplace": {
+                    "label": "Poste de travail",
+                    "description": null
+                },
+                "personWorkingLocationId": {
+                    "label": "Id ( Person Working Location)",
+                    "description": null
+                },
+                "personWorkingLocation": {
+                    "label": " Person Working Location",
+                    "description": null
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
+            "personToRoomBooking": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "startDatetime": {
+                    "label": "Start Datetime",
+                    "description": null
+                },
+                "endDatetime": {
+                    "label": "End Datetime",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "personId": {
+                    "label": "Identifiant Surfy",
+                    "description": null
+                },
+                "person": {
+                    "label": "Personne",
+                    "description": null
+                },
+                "roomId": {
+                    "label": "Identifiant de l'espace",
+                    "description": ""
+                },
+                "room": {
+                    "label": "Espace",
+                    "description": null
+                },
+                "personWorkingLocationId": {
+                    "label": "Id ( Person Working Location)",
+                    "description": null
+                },
+                "personWorkingLocation": {
+                    "label": " Person Working Location",
+                    "description": null
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",

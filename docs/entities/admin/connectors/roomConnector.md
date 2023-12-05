@@ -1,5 +1,5 @@
-# Connecteur d'espace
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
+# Connecteur d'espace
 
 Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces dans des étages différents
 

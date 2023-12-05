@@ -1,5 +1,5 @@
-# Espace
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
+# Espace
 
 
 
@@ -112,6 +112,9 @@ Permet de déterminer le mode de calcul de la clé de répartition des coûts
 
 
 ## Entités associées (liste)
+
+###  Person To Room Bookings {#personToRoomBookings}
+        
 
 ### Affectations d'espace {#roomAffectations}
         

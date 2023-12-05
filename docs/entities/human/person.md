@@ -1,5 +1,5 @@
-# Personne
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
+# Personne
 
 
 
@@ -86,6 +86,15 @@ Permet de détérminer le type de contrat de la personne
 
 ## Entités associées (liste)
 
+###  Person To Room Bookings {#personToRoomBookings}
+        
+
+###  Person To Workplace Bookings {#personToWorkplaceBookings}
+        
+
+###  Person Working Locations {#personWorkingLocations}
+        
+
 ### Affectations au bâtiment {#personToBuildings}
         
 
@@ -107,6 +116,9 @@ Les relations des personnes depuis cette personne
 ### Relations vers cette personne {#personToPersonTargets}
         
 Les relations des personnes vers cette personne
+### Utilisateurs de l'entreprise {#userCompanies}
+        
+
 
 
 
