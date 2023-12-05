@@ -27,7 +27,7 @@ Dans le menu Liste à gauche de l'écran,
 -   Une fois la liste filtrée, on peut cocher chaque affectation à supprimer au début de chaque ligne, puis "supprimer les affectations au poste de travail sélectionnées" par l'icône "poubelle" en haut de page.
 
 
-## Suppression d'affectation en masse par fichier Excel
+## Suppression d'affectation en masse par fichier Excel (fonctionnalité non disponible)
 
 
 ### Création du fichier Excel
