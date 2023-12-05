@@ -1,0 +1,8 @@
+{
+  "label": "menuLeft planning",
+  "position": 5,
+  "link": {
+    "slug": "planning",
+    "type": "generated-index"
+  }
+}

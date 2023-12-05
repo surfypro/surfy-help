@@ -1,5 +1,5 @@
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Association de règle d'authentification à rôle de contenu
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 
 

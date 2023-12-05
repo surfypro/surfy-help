@@ -1,5 +1,5 @@
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Bâtiment
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Le bâtiment est utilisé pour regrouper les étages
 
