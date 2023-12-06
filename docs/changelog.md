@@ -9,17 +9,17 @@ Les nouveautés de novembre 2023 :
 
 - Il n'est plus possible d'affecter une personne sur un poste de travail en flex ou de passage via l'interface du plan
 
- <!-- ## 1er Decembre 2023 - v3.3.205 ##
+ -->
+## 2 Decembre 2023 - v3.3.205 ##
 
-- Mise en place d'une option sur l'entreprise permettant d'activer les foncionnalités re recherche de chemin (beta) 
+- Mise en place d'une option sur l'entreprise permettant d'activer les foncionnalités de recherche de chemin (beta) 
     - Mise place du calcul de temps et de distance entre deux formes 
 - La vue 3d par defaut de l'étage est maintenant la vue zénithale
 - Mise en place de deux nouveaux types de segment 
     - pour les portes coulissantes
     - pour les cloisons vides
-- La forme de création d'espace est maintenant sous les espaces existants ce qui permet de trouver les coins des espaces existants quand elles sont superposées avec l'espace en cours de création
 
- -->
+
 
  ## 17 Novembre 2023 - v3.3.204 ##
 

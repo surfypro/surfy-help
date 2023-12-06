@@ -1,5 +1,5 @@
-# Point des types d'objet
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
+# Point des types d'objet
 
 
 

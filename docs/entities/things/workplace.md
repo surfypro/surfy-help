@@ -1,5 +1,5 @@
-# Poste de travail
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
+# Poste de travail
 
 
 
@@ -17,6 +17,9 @@ Si ce poste est utilisé en mode Flex
 ### Est partagé ? {#isShared}
         
 Si ce poste est partagé par plusieurs personnes, ce champ automatique est validé dès qu'il y a au moins 2 affectations sur le poste de travail
+### Est réservable ? {#isBookable}
+        
+Si ce poste de travail est reservable dans un système de réservation
 ### Nom du poste de travail {#name}
         
 Le nom du poste de travail est utilisé pour l'identifier plus simplement
@@ -52,6 +55,9 @@ Le centre de coût permet de repartir les espaces dynamiquement pour la refactur
 
 
 ## Entités associées (liste)
+
+###  Person To Workplace Bookings {#personToWorkplaceBookings}
+        
 
 ### Affectations au poste de travail {#workplaceAffectations}
         

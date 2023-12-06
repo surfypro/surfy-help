@@ -1,5 +1,5 @@
-# Utilisateur de l'entreprise
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
+# Utilisateur de l'entreprise
 
 
 
@@ -8,6 +8,9 @@
 
 
 ## Entités associées (unique)
+
+### Personne {#person}
+        
 
 ### Utilisateur {#user}
         
@@ -37,6 +40,24 @@
         
 
 ###  Partner Export Mappings {#partnerExportMappingUpdatedBies}
+        
+
+###  Person To Room Bookings {#personToRoomBookingCreatedBies}
+        
+
+###  Person To Room Bookings {#personToRoomBookingUpdatedBies}
+        
+
+###  Person To Workplace Bookings {#personToWorkplaceBookingCreatedBies}
+        
+
+###  Person To Workplace Bookings {#personToWorkplaceBookingUpdatedBies}
+        
+
+###  Person Working Locations {#personWorkingLocationCreatedBies}
+        
+
+###  Person Working Locations {#personWorkingLocationUpdatedBies}
         
 
 ###  Structure Points {#structurePointCreatedBies}

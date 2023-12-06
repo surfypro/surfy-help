@@ -1,5 +1,5 @@
-#  Room Connector Type
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
+#  Room Connector Type
 
 
 

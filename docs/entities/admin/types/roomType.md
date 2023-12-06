@@ -1,5 +1,5 @@
-# Typologie d'espace
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
+# Typologie d'espace
 
 
 
@@ -11,6 +11,9 @@ Permet d'afficher ou non les murs de l'espace dans le plan 3d de l'étage, les m
 ### Cadence {#cadence}
         
 La cadence permet de définir une valeur analytique permettant de connaître la difficulté de nettoyage de la typologie de l'espace
+### Code {#code}
+        
+
 ### Couleur en 2d {#color}
         
 La couleur du type d'espace permet de differencier chaque type sur le plan en 2d

@@ -32,6 +32,9 @@
         "fact": "/docs/entities/spaces/buildingFacts",
         "roomPointSegment": "/docs/entities/spaces",
         "organization": "/docs/entities/organization",
+        "personWorkingLocation": "/docs/entities/booking",
+        "personToWorkplaceBooking": "/docs/entities/booking",
+        "personToRoomBooking": "/docs/entities/booking",
         "buildingType": "/docs/entities/admin/types",
         "roomType": "/docs/entities/admin/types",
         "distributionCostType": "/docs/entities/admin/types",
@@ -87,6 +90,7 @@
         "companyType": "/docs/entities/surfy/globalAdmin",
         "occupancyStatus": "/docs/entities/surfy/globalAdmin",
         "roomPointSegmentType": "/docs/entities/surfy/globalAdmin",
+        "workingLocation": "/docs/entities/surfy/globalAdmin",
         "personGender": "/docs/entities/surfy"
     }
 }

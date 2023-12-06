@@ -1,5 +1,5 @@
-# Centre de coût
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
+# Centre de coût
 
 Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation
 
