@@ -26,7 +26,7 @@ Une fois votre échelle validée vous pouvez commencer à digitaliser vos espace
 Tous les espaces ou le mobilier dessinés dans l'étage se baseront sur cette échelle.
 
 :::tip Bon à savoir
-S'il n'existe pas de segment d'échelle, on peut utiliser un mur porteur ou toute autre dimension fiable pour placer le segment et reporter la longueur dans la case "Distance".
+S'il n'existe pas de segment d'échelle, on peut utiliser la longueur d'un mur porteur mesuré sur place ou toute autre dimension fiable pour placer le segment et reporter la longueur dans la case "Distance".
 :::
 
 :::tip Astuce
