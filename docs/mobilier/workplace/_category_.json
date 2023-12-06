@@ -2,7 +2,7 @@
   "label": "Postes de travail",
   "position": 4,
   "link": {
-    "slug": "objects",
+    "slug": "workplace",
     "type": "generated-index",
     "description": "Tout savoir sur la gestion des postes de travail"
   }
