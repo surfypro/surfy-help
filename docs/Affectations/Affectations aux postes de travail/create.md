@@ -3,9 +3,9 @@ sidebar_position: 1
 ---
 # Créer une Affectation à un poste de travail
 
-Les affectations aux postes de travail correspondent à des affectations fixes. On peut alors retrouver l'emplacement du poste de travail en faisant une recherche sur la personne, ou connaitre la personne affectée au poste de travail choisi.
+Les affectations aux postes de travail correspondent à des affectations fixes. On peut retrouver l'emplacement du poste de travail ou connaitre la personne affectée à un poste de travail choisi en faisant une recherche sur la personne ou sur le poste de travail ou l'espace.
 
-L'affectation à un poste de travail se fait toujours à partir du poste de travail auquel on affecte une ou plusieurs personnes.
+L'affectation à un poste de travail se fait toujours à partir du poste de travail, auquel on peut affecter une ou plusieurs personnes.
 
 ## Affecter une personne à un poste de travail
 
@@ -47,6 +47,6 @@ Ce fichier doit être composé au minimum :
 -   des bons en-têtes sur les colonnes à importer.
 
 :::tip Bon à savoir
-Les affectations créées par importation viennent s'ajouter aux affectations déjà présentes, sans demande de suppression des anciennes affectations.
+Les affectations créées par importation viennent s'ajouter aux affectations déjà présentes, sans proposition de suppression des anciennes affectations.
  Il faut donc veiller à supprimer toutes les affectations en trop avant d'importer le fichier.
  :::
