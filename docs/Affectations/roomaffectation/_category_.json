@@ -2,7 +2,7 @@
   "label": "Affectations aux espaces",
   "position": 2,
   "link": {
-    "slug": "affectations",
+    "slug": "affectation",
     "type": "generated-index",
     "description": "Les affectations aux espaces"
   }

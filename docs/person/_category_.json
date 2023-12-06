@@ -2,7 +2,7 @@
   "label": "Personnes",
   "position": 3,
   "link": {
-    "slug": "Personnes",
+    "slug": "person",
     "type": "generated-index",
     "description": "Les personnes dans Surfy"
   }

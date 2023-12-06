@@ -2,7 +2,7 @@
   "label": "Affectations aux postes de travail",
   "position": 1,
   "link": {
-    "slug": "affectations",
+    "slug": "affectation",
     "type": "generated-index",
     "description": "Les affectations aux postes de travail"
   }

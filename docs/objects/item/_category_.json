@@ -2,7 +2,7 @@
   "label": "Objets",
   "position": 2,
   "link": {
-    "slug": "objects",
+    "slug": "item",
     "type": "generated-index",
     "description": "Tout savoir sur la gestion des objets"
   }

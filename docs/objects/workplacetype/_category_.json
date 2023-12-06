@@ -2,6 +2,7 @@
   "label": "Types de poste de travail",
   "position": 3,
   "link": {
+    "slug": "workplacetype",
     "type": "generated-index",
     "description": "Tout savoir sur le Type de poste de travail"
   }
