@@ -1,0 +1,9 @@
+{
+  "label": "Les affectations aux quartiers",
+  "position": 3,
+  "link": {
+    "slug": "quartiers",
+    "type": "generated-index",
+    "description": "Comprendre les affectations aux quartiers"
+  }
+}
