@@ -38,7 +38,7 @@ On peut créer le fichier Excel comportant les affectations à supprimer de diff
     -   depuis la page d'accueil, cliquer sur l'icône au bout de la bande de couleur du bâtiment XXX
     -   cliquer sur "Tableau de bord pour le bâtiment XXX"
     -   cliquer sur l'icône de la ligne "Rapport des personnes affectées dans le bâtiment XXX" 
-    -   le fichier est téléchargé
+    -   le fichier est téléchargé, l'onglet "Affectations aux postes de travail" contient les informations à modifier
 
 -   En générant la liste filtrée des affectations à supprimer :
 
