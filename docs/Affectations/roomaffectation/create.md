@@ -49,4 +49,5 @@ Ce fichier doit être composé au minimum :
 Les affectations créées par importation viennent s'ajouter aux affectations déjà présentes, sans proposition de suppression des anciennes affectations.
  Il faut donc veiller à supprimer toutes les affectations en trop avant d'importer le fichier.
  :::
+ 
 
