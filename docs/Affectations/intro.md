@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Les affectations dans Surfy
 
 On peut affecter une personne :
