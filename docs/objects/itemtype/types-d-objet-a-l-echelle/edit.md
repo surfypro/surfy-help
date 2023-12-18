@@ -7,7 +7,7 @@ sidebar_position: 2
 
 On peut modifier les informations d'un type d'objet en modifiant la fiche du type d'objet.
 
-En modifiant la fiche d'un type d'objet, on peut lui ajouter sa photo, changer son nom, sa couleur, sa hauteur en 3D, renseigner son fabricant, ajouter un modèle 3D, définir des places assises,...
+En modifiant la fiche d'un type d'objet, on peut lui ajouter sa photo, changer son nom, sa couleur, sa hauteur en 3D, renseigner son fabricant, ajouter un modèle 3D, définir des places assises,... Ces informations seront valables pour l'ensemble des objets tirés de ce type d'objet.
 
 Pour accéder à cette fiche,
 
