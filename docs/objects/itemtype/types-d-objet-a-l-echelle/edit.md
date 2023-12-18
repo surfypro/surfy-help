@@ -40,7 +40,7 @@ En cliquant sur la page blanche, une série d'icônes apparait:
 -   cliquer sur "supprimer les sommets sélectionnés" pour supprimer le sommet sélectionné en rouge
 -   une fois la forme modifiée, quitter la page sauvegarde la forme.
 
-:tip Bon à savoir
+:::tip Bon à savoir
 On peut accéder directement aux informations ou à la forme d'un type d'objet si celui ci est présent sur le plan: En cliquant sur un des objets du type d'objet, l'icône "Voir plus d'options pour le type d'objet XXX" sur la fiche de l'objet à gauche en début de la ligne "type d'objet", permet d'accéder directement à la fiche ou à la forme du type d'objet.
 :::
 
