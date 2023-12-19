@@ -4,7 +4,9 @@ sidebar_position: 3
 
 # Supprimer un type d'objet Icône
 
+:::tip Attention
 Supprimer un type d'objet supprime tous les objets issus de ce type d'objet.
+:::
 
 Pour supprimer un type d'objet:
 -   à partir de la page d'accueil, cliquer sur "Mobiliers", "Typologies" puis "types d'objet" et "Lister les types d'objet"
