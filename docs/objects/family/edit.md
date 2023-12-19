@@ -16,6 +16,6 @@ Pour modifier une famille de types d'objet,
 -   sauvegarder la modification.
 
 :::tip Bon à savoir
-Les types d'objet appartenant à la famille concernée sont listés en bas de la page, ou en cliquant sur "Voir la famille de types d'objet"
+Les types d'objet appartenant à la famille concernée sont listés en bas de la page, ou en cliquant sur "Voir la famille de types d'objet XXX"
 :::
 
