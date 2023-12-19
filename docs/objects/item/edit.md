@@ -3,6 +3,15 @@ sidebar_position: 2
 ---
 # Modifier un objet
 
+## Modifier les informations de l'objet
+
+-   cliquer sur l'objet
+-   dans la fiche de l'objet à gauche du plan, cliquer sur "Modifier"
+-   modifier le nom, la référence, le code d'immobilisation ou la date d'achat
+-   sauvegarder les modifications
+
+## Modifier le type d'objet d'un objet
+
 Pour changer le type d'objet d'un objet sur le plan,
 
 -   cliquer sur l'objet puis sur "Modifier" dans la fiche de l'objet, à gauche du plan.
@@ -13,7 +22,7 @@ Pour changer le type d'objet d'un objet sur le plan,
 L'objet modifié aura la forme et les caractéristiques du nouveau type d'objet, mais gardera toutes les informations (référence, code immo et association à personne), l'orientation et le placement de l'objet remplacé.
 :::
 
-### Déplacer un objet
+## Déplacer un objet
 
 -   "Activer le mode édition du plan" en cliquant sur l'icône "crayon" au dessus du plan
 -   cliquer sur l'objet à déplacer
@@ -23,10 +32,14 @@ L'objet modifié aura la forme et les caractéristiques du nouveau type d'objet,
 
 
 
-### Déplacer un groupe d'objets
+## Déplacer un groupe d'objets
 
 -   "Activer le mode édition du plan" en cliquant sur l'icône "crayon" au dessus du plan
 -   cliquer sur un des objets à déplacer puis sur les autres en maintenant la touche "shift" enfoncée
 -   une zone de sélection englobant les objets à déplacer est délimitée, les objets à déplacer sont sélectionnés.
 -   déplacer le groupe d'objets en cliquant sur l'icône "déplacer le groupe" de la zone de sélection
 -   cliquer sur le plan pour déselectionner les objets du groupe
+
+:::tip Bon à savoir
+On peut panacher des objets et des postes de travail dans les groupes d'objets, en déplacement ou en copie
+:::
