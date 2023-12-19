@@ -9,6 +9,8 @@ sidebar_position: 3
 Supprimer une famille de types d'objet supprime tous les types d'objet associés à cette famille, ainsi que tous les objets créés à partir des types d'objet de cette famille ! Il faut donc être très prudent dans la suppression de famille car elle peut entrainer des pertes d'objets définitives.
 :::
 
+Avant de supprimer une famille de types d'objet, il peut être nécessaire de changer la famille des types d'objet associés afin de ne pas les supprimer lors de la suppression de la famille à supprimer.
+
 Pour supprimer une famille de types d'objet,
 
 -   dans le menu de gauche, cliquer sur "Mobiliers", "Typologies", puis "Familles de types d'objet" et "Lister les familles de types d'objet".
@@ -16,3 +18,5 @@ Pour supprimer une famille de types d'objet,
 -   en haut à droite de l'écran, cliquer sur l'icône Poubelle "Supprimer la famille de types d'objet XXX"
 -   confirmer la suppression de la famille de types d'objet.
 -   la double confirmation indique que l'opération est irreversible, confirmer.
+
+La famille de types d'objet est supprimée, ainsi que tous les types d'objet et objets appartenant à cette famille.
