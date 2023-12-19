@@ -23,7 +23,7 @@ L'objet modifié aura la forme et les caractéristiques du nouveau type d'objet,
 
 
 
-### Déplacer un groupe d'objet
+### Déplacer un groupe d'objets
 
 -   "Activer le mode édition du plan" en cliquant sur l'icône "crayon" au dessus du plan
 -   cliquer sur un des objets à déplacer puis sur les autres en maintenant la touche "shift" enfoncée
