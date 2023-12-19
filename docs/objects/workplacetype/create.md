@@ -29,7 +29,7 @@ Pour composer un type de poste de travail, les types d'objet composant le type d
  -  quitter la page permet la sauvegarde de la composition
  -  le type de poste de travail créé est disponible à l'ajoût d'un poste de travail dans les espaces.
  
- :::tip Bon à savoir
+::: tip Bon à savoir
  Cocher la case permet de créer des objets "physiques" permettant l'attribution d'une référence, d'un code d'immobilisation et d'une date d'achat sur l'objet composant le poste de travail. Cela permet de créer un inventaire d'objets uniques.
  Par défaut, les objets virtuels utilisés sont interchangeables et font l'objet d'un simple comptage
  :::
