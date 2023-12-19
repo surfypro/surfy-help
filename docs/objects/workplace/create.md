@@ -28,3 +28,5 @@ Pour déplacer le poste de travail ou lui faire faire une rotation,
 :::tip Bon à savoir
 cliquer sur l'icone "activer la transparence des couleurs de fond des espaces" au dessus du plan permet de voir le fond de plan en transparence afin de pouvoir placer dans Surfy le mobilier présent sur le fond de plan.
 :::
+
+## Duplication de postes de travail ou de groupes de postes de travail
