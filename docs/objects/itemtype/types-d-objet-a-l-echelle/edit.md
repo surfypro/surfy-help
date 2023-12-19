@@ -7,7 +7,8 @@ sidebar_position: 2
 
 On peut modifier les informations d'un type d'objet en modifiant la fiche du type d'objet.
 
-En modifiant la fiche d'un type d'objet, on peut lui ajouter sa photo, changer son nom, sa couleur, sa hauteur en 3D, renseigner son fabricant, ajouter un modèle 3D, définir des places assises,... Ces informations seront valables pour l'ensemble des objets tirés de ce type d'objet.
+
+En modifiant la fiche d'un type d'objet, on peut lui ajouter sa photo, changer son nom, sa couleur, sa hauteur en 3D, renseigner son fabricant, ajouter un modèle 3D, définir des places assises,... Tous les objets créés à partir de ce type d'objet seront modifiés.
 
 Pour accéder à cette fiche,
 
@@ -48,4 +49,14 @@ On peut accéder directement aux informations ou à la forme d'un type d'objet s
 Modifier la forme d'un type d'objet peut modifier sa position sur les plans, calculée à partir du point central (barycentre) de la forme du type d'objet
 :::
 
+## Changer le type d'objet d'objets déjà créés
 
+Si des objets ont déjà été créés et placés sur les plans, on peut changer le type d'objet de ces objets.
+Pour cela:
+-   cliquer sur l'objet dont le type d'objet est à changer
+-   dans la fiche de l'objet à gauche, cliquer sur "Modifier" afin de modifier l'objet
+-   sur la ligne "type d'objet", cliquer sur l'icône crayon "changer le type de'objet"
+-   choisir le nouveau type d'objet
+-   sauvegarder les informations et rafraichir (F5)
+
+L'objet concerné à changé de type d'objet.
