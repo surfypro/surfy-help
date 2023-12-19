@@ -49,6 +49,17 @@ On peut accéder directement aux informations ou à la forme d'un type d'objet s
 Modifier la forme d'un type d'objet peut modifier sa position sur les plans, calculée à partir du point central (barycentre) de la forme du type d'objet
 :::
 
+
+## Modifier la famille du type d'objet
+
+-   a partir de la page d'accueil, cliquer sur "Mobiliers", "Typologies" puis "types d'objet" et "Lister les types d'objet"
+-   rechercher le type d'objet à modifier en cliquant sur l'icone "Filtrer les types d'objet" en haut à droite de l'écran
+-   renseigner le type d'objet à rechercher pour l'isoler dans la liste
+-   au début de la ligne du type d'objet, cliquer sur l'icone "Voir plus d'options pour le type d'objet XXX" puis sur "Modifier le type d'objet XXX"
+-   modifier la "famille du type d'objet" en cliquant sur le crayon et choisir la nouvelle famille pour le type d'objet concerné
+-   sauvegarder les modifications
+
+
 ## Changer le type d'objet d'objets déjà créés
 
 Si des objets ont déjà été créés et placés sur les plans, on peut changer le type d'objet de ces objets.

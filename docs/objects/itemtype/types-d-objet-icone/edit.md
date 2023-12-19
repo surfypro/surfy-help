@@ -24,6 +24,15 @@ Pour accéder à cette fiche,
 On peut accéder directement aux informations ou à la forme d'un type d'objet si celui ci est présent sur le plan: En cliquant sur un des objets du type d'objet, l'icône "Voir plus d'options pour le type d'objet XXX" sur la fiche de l'objet à gauche en début de la ligne "type d'objet", permet d'accéder directement à la fiche ou à la forme du type d'objet.
 :::
 
+## Modifier la famille du type d'objet
+
+-   a partir de la page d'accueil, cliquer sur "Mobiliers", "Typologies" puis "types d'objet" et "Lister les types d'objet"
+-   rechercher le type d'objet à modifier en cliquant sur l'icone "Filtrer les types d'objet" en haut à droite de l'écran
+-   renseigner le type d'objet à rechercher pour l'isoler dans la liste
+-   au début de la ligne du type d'objet, cliquer sur l'icone "Voir plus d'options pour le type d'objet XXX" puis sur "Modifier le type d'objet XXX"
+-   modifier la "famille du type d'objet" en cliquant sur le crayon et choisir la nouvelle famille pour le type d'objet concerné
+-   sauvegarder les modifications
+
 
 ## Changer le type d'objet d'objets déjà créés
 
