@@ -16,7 +16,7 @@ La date d'achat de l'objet
 
 ### Référence de l'objet {#reference}
         
-La référence de l'objet est utilisé pour le retrouver et pour differencier cet objet des autres
+La référence de l'objet est utilisée pour le retrouver et pour differencier cet objet des autres
 ### Rotation {#rotation}
         
 
