@@ -12,6 +12,8 @@ Pour ajouter un objet dans un espace,
 -   rechercher l'objet à ajouter par la recherche de son nom et/ou de sa famille et/ou de son code
 -   Cliquer sur l'objet choisi : il est disponible au bout de la souris et prêt à être déposé en cliquant sur le plan.
 
+L'objet créé peut être renseigné par sa référence, son code d'immobilisation et sa date d'achat. Il peut être associé à une personne (casier, siège ergonomique, ...)
+
 :::tip Bon à savoir
 L'objet appartient à l'espace depuis lequel il a été demandé. S'il n'est pas déposé dans l'espace où il a été demandé, une fenêtre de "validation du choix des espaces" permet de réattribuer l'objet à l'espace où il a été déposé en cliquant sur "Appliquer le changement d'espace".
 :::

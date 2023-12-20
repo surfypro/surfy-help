@@ -13,7 +13,8 @@ Pour ajouter un poste de travail dans un espace,
 -   rechercher le type du poste de travail à ajouter
 -   Cliquer sur le type de poste de travail choisi
 -   le poste de travail créé est disponible au bout de la souris et prêt à être déposé en cliquant sur le plan.
--   le poste de travail créé est "libre" par défaut
+
+Le poste de travail créé est "libre" par défaut, il peut être nommé, qualifié et affecté.
 
 :::tip Bon à savoir
 Le poste de travail appartient à l'espace depuis lequel il a été demandé. S'il n'est pas déposé dans l'espace où il a été demandé, une fenêtre de "validation du choix des espaces" permet de réattribuer le poste de travail à l'espace où il a été déposé en cliquant sur "Appliquer le changement d'espace".
