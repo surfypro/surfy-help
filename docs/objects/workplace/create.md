@@ -62,7 +62,3 @@ Pour "copier" les postes de travail, plusieurs options sont possibles:
 Les postes de travail dupliqués sont au bout de la souris, prêts à être déposés en cliquant sur le plan.
 Les postes de travail dupliqués conservent l'orientation et les distances relatives du groupe de postes de travail initial.
 
-
-:::tip Bon à savoir
-Si la référence d'agencement du mobilier est le fond de plan, cliquer sur l'icone "goutte""Activer la transparence des couleurs de fond des espaces" au dessus du plan permet de voir le fond de plan en transparence et d'aménager correctement les espaces.
-:::
