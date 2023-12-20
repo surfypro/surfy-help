@@ -5,6 +5,8 @@ sidebar_position: 1
 
 <Youtube code="tho373GPmY8"/>
 
+## Ajouter un objet à l'espace
+
 Pour ajouter un objet dans un espace,
 
 -   cliquer dans l'espace concerné par l'ajout d'objet.
@@ -28,7 +30,7 @@ Pour déplacer l'objet ou lui faire faire une rotation,
 cliquer sur l'icone "activer la transparence des couleurs de fond des espaces" au dessus du plan permet de voir le fond de plan en transparence afin de pouvoir placer dans Surfy le mobilier présent sur le fond de plan.
 :::
 
-## Duplication d'objets ou de groupes d'objets
+## Dupliquer un objet ou un groupe d'objets
 
 <Youtube code="zUIgR14paWY"/>
 
@@ -45,7 +47,7 @@ On peut dupliquer facilement et rapidement un objet ou un groupe d'objets dans S
 Cette fonctionnalité permet, en pointant la souris directement à la position des objets à créer, de les dupliquer avec un simple raccourci clavier ("shift" enfoncé, taper "C") et de les déposer en cliquant. Le nouvel objet ou groupe d'objets est maintenant sélectionné, et prêt pour une nouvelle duplication par "shift+C".
 :::
 
-### Dupliquer un groupe d'objet
+### Dupliquer un groupe d'objets
 
 -   "Activer le mode édition du plan" en cliquant sur l'icône "crayon" au dessus du plan
 -   cliquer sur un des objets à dupliquer puis sur les autres en maintenant la touche "shift" enfoncée
