@@ -58,6 +58,7 @@ Pour "copier" les objets, plusieurs options sont possibles:
 -   en appuyant simultanément sur la touche "shift" (majuscule) et la touche "C"
 
 Les objets dupliqués sont au bout de la souris, prêts à être déposés en cliquant sur le plan.
+
 Les objets dupliqués conservent l'orientation et le positionnement relatif du groupe d'objet initial.
 
 
