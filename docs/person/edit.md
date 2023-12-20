@@ -3,12 +3,13 @@ sidebar_position: 2
 ---
 # Modifier une Personne
 
-## Modifier une personne dans Surfy
+## Modifier les informations d'une personne
 
-Pour modifier une personne dans Surfy,
--   rechercher la personne XXX avec la loupe, par nom, prénom ou matricule
--   cliquer sur le résultat XXX de la recherche désiré
--   cliquer sur le menu contextuel, puis sur "modifier la personne XXX". 
+Pour modifier les informations d'une personne,
+
+-   rechercher la personne avec la loupe, par nom, prénom ou matricule
+-   cliquer sur le résultat recherché
+-   Dans le menu contextuel (etiquette grise sous la loupe de recherche), cliquer sur "modifier la personne XXX". 
 -   modifier les informations éventuelles : 
         -   email, photo, titre de la personne, référence écran, ordinateur, téléphone fixe, téléphone portable, matricule, date d'entrée, date de sortie, commentaire
         -   la propriété "non affectable"permet de qualifier les personnes ne pouvant être affectées, personnes en congé maternité ou en congé longue durée

@@ -20,7 +20,7 @@ Il n'y a pas de "Undo" dans Surfy, cette action est irréversible.
 
 ## A partir de la liste des personnes:
 
--   cliquer sur "Collaborateurs" puis "personnes" et "lister les personnes"
+-   cliquer sur "Collaborateurs" puis "Personnes" et "Lister les personnes"
 -   filtrer les personnes afin d'afficher les personnes à supprimer
 -   cocher la case en début de ligne de la personne à supprimer
 -   cliquer sur l'icône "supprimer les personnes sélectionnées"
@@ -33,7 +33,7 @@ Il n'y a pas de "Undo" dans Surfy, cette action est irréversible.
 -   réimporter la liste des personnes avec leur identifiant ou clé et rafraichir par F5
 -   chaque personne à supprimer a maintenant pour nom ou prénom "delete". 
 -   cliquer sur "Collaborateurs" puis "personnes" et "lister les personnes"
--   flitrer les noms ou prénoms avec le mot "delete" (ou tout autre mot)
+-   filtrer les noms ou prénoms avec le mot "delete" (ou tout autre mot)
 -   sélectionner toutes les lignes de la liste
 -   cliquer sur l'icône "supprimer les personnes sélectionnées"
 -   confirmer la suppression.
