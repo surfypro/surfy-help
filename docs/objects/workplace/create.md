@@ -30,3 +30,39 @@ cliquer sur l'icone "activer la transparence des couleurs de fond des espaces" a
 :::
 
 ## Duplication de postes de travail ou de groupes de postes de travail
+
+<Youtube code="zUIgR14paWY"/>
+
+On peut dupliquer facilement et rapidement un poste de travail ou un groupe de postes de travail dans Surfy.
+
+### Dupliquer un poste de travail
+
+-   "Activer le mode édition du plan" en cliquant sur l'icône "crayon" au dessus du plan
+-   cliquer sur le poste de travail à dupliquer et appuyer simultanément sur la touche "shift" (majuscule) et la touche "C" 
+-   le poste de travail dupliqué est au bout de la souris. Il conserve l'orientation du poste de travail initial
+-   cliquer sur le plan à l'endroit de dépot de le poste de travail dupliqué
+
+
+:::tip Bon à savoir: le "shift + C"
+Cette fonctionnalité permet, en pointant la souris directement à la position des postes de travail à créer, de les dupliquer avec un simple raccourci clavier ("shift" enfoncé, taper "C") et de les déposer en cliquant. Le nouveau poste de travail ou groupe de postes de travail est maintenant sélectionné, et prêt pour une nouvelle duplication par "shift+C".
+:::
+
+### Dupliquer un groupe de postes de travail
+
+-   "Activer le mode édition du plan" en cliquant sur l'icône "crayon" au dessus du plan
+-   cliquer sur un des postes de travail à dupliquer puis sur les autres en maintenant la touche "shift" enfoncée
+-   une zone de sélection englobant les postes de travail à dupliquer est délimitée, les postes de travail à dupliquer sont sélectionnés.
+
+Pour "copier" les postes de travail, plusieurs options sont possibles:
+
+-   en cliquant sur l'icône "copier" de la zone de sélection
+-   en cliquant sur l'icône "Dupliquer les formes" au dessus du plan
+-   en appuyant simultanément sur la touche "shift" (majuscule) et la touche "C"
+
+Les postes de travail dupliqués sont au bout de la souris, prêts à être déposés en cliquant sur le plan.
+Les postes de travail dupliqués conservent l'orientation et les distances relatives du groupe de postes de travail initial.
+
+
+:::tip Bon à savoir
+Si la référence d'agencement du mobilier est le fond de plan, cliquer sur l'icone "goutte""Activer la transparence des couleurs de fond des espaces" au dessus du plan permet de voir le fond de plan en transparence et d'aménager correctement les espaces.
+:::
