@@ -7,7 +7,7 @@
 
 ### Code d'immobilisation {#code}
         
-Le numéro d'immobilisation est utilisé pour conserver le numéro comptable
+Le code d'immobilisation est utilisé pour conserver le numéro comptable
 ### Date d'achat {#purchaseDate}
         
 La date d'achat de l'objet
@@ -16,12 +16,12 @@ La date d'achat de l'objet
 
 ### Référence de l'objet {#reference}
         
-La référence de l'objet est utilisée pour le retrouver et pour differencier cet objet des autres
+La référence de l'objet est utilisée pour retrouver l'objet et le différencier des autres
 ### Rotation {#rotation}
-        
+L'angle de rotation de l'objet par rapport à sa position initiale     
 
 ### Text Anchor {#textAnchor}
-        
+ Ancrage du texte       
 
 
 ## Entités associées (unique)
