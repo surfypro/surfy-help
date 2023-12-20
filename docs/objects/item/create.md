@@ -41,6 +41,9 @@ On peut dupliquer facilement et rapidement un objet ou un groupe d'objets dans S
 -   l'objet dupliqué est au bout de la souris. Il conserve l'orientation de l'objet initial
 -   cliquer sur le plan à l'endroit de dépot de l'objet dupliqué
 
+:::tip Bon à savoir: le "shift + C"
+Cette fonctionnalité permet, en pointant la souris directement à la position des objets à créer, de les dupliquer avec un simple raccourci clavier ("shift" enfoncé, taper "C") et de les déposer en cliquant. Le nouvel objet ou groupe d'objets est maintenant sélectionné, et prêt pour une nouvelle duplication par "shift+C".
+:::
 
 ### Dupliquer un groupe d'objet
 
@@ -57,9 +60,10 @@ Pour "copier" les objets, plusieurs options sont possibles:
 Les objets dupliqués sont au bout de la souris, prêts à être déposés en cliquant sur le plan.
 Les objets dupliqués conservent l'orientation et le positionnement relatif du groupe d'objet initial.
 
-:::tip Bon à savoir: le "shift + C"
-Cette fonctionnalité permet, en pointant la souris directement à la position des objets à créer, de les dupliquer avec un simple raccourci clavier ("shift" enfoncé, taper "C") et de les déposer en cliquant. Le nouvel objet ou groupe d'objets est maintenant sélectionné, et prêt pour une nouvelle duplication par "shift+C".
-:::
+
+
+
+
 
 
 

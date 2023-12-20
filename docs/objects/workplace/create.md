@@ -61,5 +61,6 @@ Pour "copier" les postes de travail, plusieurs options sont possibles:
 -   en appuyant simultanément sur la touche "shift" (majuscule) et la touche "C"
 
 Les postes de travail dupliqués sont au bout de la souris, prêts à être déposés en cliquant sur le plan.
+
 Les postes de travail dupliqués conservent l'orientation et le positionnement relatif du groupe de postes de travail initial.
 
