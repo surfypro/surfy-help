@@ -17,6 +17,8 @@ L'affectation au bâtiment est modifiée.
 
 :::tip Bon à savoir
 Depuis la page d'accueil et pour une mise à jour des informations des bâtiments, il est nécessaire de "recharger les données visibles" en cliquant sur l'icone en haut à droite de l'écran. Une fois les données recalculées, rafraichir par la flèche tournante en haut à gauche de l'écran, ou par F5.
+:::
+
 
 ## Modifier les affectations des personnes au bâtiment par import Excel
 
