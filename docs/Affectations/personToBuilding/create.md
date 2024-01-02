@@ -44,3 +44,5 @@ La personne est créée et affectée au bâtiment.
 -   remplir le fichier Excel d'import : identification personne, identification bâtiment.
 -   importer les colonnes nécessaires en copiant collant dans la case prévue à cet effet
 -   "Comparer" puis "Créer" les affectations au bâtiment listées.
+
+Les affectations au bâtiment sont créées.
