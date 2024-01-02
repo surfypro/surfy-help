@@ -25,8 +25,8 @@ Le type de calque étant créé, on peut associer des calques d'analyse à ce ty
 Une fois que le type de calque d'analyse est créé ou s'il est déjà existant, on peut créer et lui associer un calque d'analyse:
 
 -   cliquer sur "Administration", "Calques d'analyse", "Calques d'analyse", puis "Créer un calque d'analyse".
--   renseigner le "Nom du calque d'analyse"
--   choisir le "Type de calque d'analyse" dans la liste des types de calque en cliquant sur le "crayon"
+-   renseigner le "Nom du calque d'analyse" (ex: "Moquette")
+-   choisir le "Type de calque d'analyse" dans la liste des types de calque en cliquant sur le "crayon" (ex: "Nature des sols")
 -   choisir une couleur pour représenter les espaces qualifiés par ce calque d'analyse
 -   "valider la création" du calque d'analyse.
 
