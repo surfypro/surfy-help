@@ -3,7 +3,9 @@ sidebar_position: 2
 ---
 # Modifier une Affectation à un bâtiment
 
-Pour modifier l'affectation d'une personne à un bâtiment, depuis la page d'accueil,
+## Modifier l'affectation d'une personne à un bâtiment
+
+Depuis la page d'accueil,
 
 -   cliquer sur "Affectations", "Affectations au bâtiment", puis "Lister les affectations au bâtiment".
 -   rechercher l'affectation au bâtiment à modifier
