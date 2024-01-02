@@ -29,6 +29,22 @@ On peut changer le bâtiment d'appartenance de l'étage en cliquant sur le crayo
 :::
 
 
+## Modifier le bâtiment d'appartenance d'un étage
+
+On peut changer le bâtiment d’appartenance d’un étage de la manière suivante :
+
+-	Aller sur l’étage à déplacer
+-	Cliquer sur le menu contextuel (case grise « Etage » à gauche en dessous de la loupe de recherche)
+-	Cliquer sur « modifier l’étage XXX », les informations de l’étage apparaissent
+-	A la ligne « Bâtiment », cliquer sur le crayon pour changer le bâtiment d’appartenance
+-	« Sauvegarder » les modifications en haut à droite de l’écran.
+-	L’étage concerné a changé de bâtiment.
+
+:::tip Bon à savoir
+On peut permuter deux étages entre deux bâtiments, et garder ainsi son ancien aménagement en sécurité plutôt que de le supprimer, ou pour le supprimer plus tard. On peut modifier le nom de l'étage afin d'éviter de confondre les étages à permuter.
+:::
+
+
 ## Importer le fond de plan
 
 -   accéder à l'étage concerné
