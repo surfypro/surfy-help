@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 ---
-# Créer une Affectation à un bâtiment
+# Créer une Affectation à un quartier
 
 Gérer les affectations
 
