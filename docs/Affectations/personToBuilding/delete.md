@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Supprimer une Affectation à un bâtiment
 
-L'affectation d'un personne à un bâtiment peut être supprimée lors de la nouvelle affectation de la personne: les affectations existantes sur le même bâtiment sont proposées par défaut à la suppression, il suffit de "supprimer les affectations sélectionnées" pour ne garder que la nouvelle affectation
+L'affectation d'un personne à un bâtiment peut être supprimée lors de la nouvelle affectation de la personne: les affectations existantes sur le même bâtiment sont proposées par défaut à la suppression, il suffit de "supprimer les affectations sélectionnées" pour ne garder que la nouvelle affectation.
 
 ## Supprimer l'affectation d'une personne à un bâtiment
 
