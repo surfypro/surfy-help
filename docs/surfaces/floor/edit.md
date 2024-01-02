@@ -25,13 +25,14 @@ Les informations peuvent être renseignées ou modifiées :
 -   donner une "structure" au bâtiment afin de délimiter correctement les espaces en vue 3D.
 
 :::tip Bon à savoir
-On peut changer le bâtiment d'appartenance de l'étage en cliquant sur le crayon de la ligne "Bâtiment" pour sélectionner le bâtiment sur lequel l'étage sera intégré. Cela permet notamment d'intégrer l'étage d'un scénario validé dans le bâtiment principal.
+
 :::
 
 
 ## Modifier le bâtiment d'appartenance d'un étage
 
-On peut changer le bâtiment d’appartenance d’un étage de la manière suivante :
+On peut changer le bâtiment d'appartenance d'un étage afin d'intégrer l'étage d'un scénario validé dans le bâtiment principal.
+Toutes les informations de l'étage seront remplacées : aménagement, affectations, qualification des espaces, etc...
 
 -	Aller sur l’étage à déplacer
 -	Cliquer sur le menu contextuel (case grise « Etage » à gauche en dessous de la loupe de recherche)
@@ -41,7 +42,7 @@ On peut changer le bâtiment d’appartenance d’un étage de la manière suiva
 -	L’étage concerné a changé de bâtiment.
 
 :::tip Bon à savoir
-On peut permuter deux étages entre deux bâtiments, et garder ainsi son ancien aménagement en sécurité plutôt que de le supprimer, ou pour le supprimer plus tard. On peut modifier le nom de l'étage afin d'éviter de confondre les étages à permuter.
+On peut permuter deux étages entre deux bâtiments, et garder ainsi son ancien aménagement en sécurité plutôt que de le supprimer, ou pour le supprimer plus tard. Modifier le nom de l'étage permet d'éviter de confondre les étages à permuter.
 :::
 
 
