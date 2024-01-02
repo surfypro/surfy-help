@@ -20,7 +20,7 @@ Pour affecter une personne à un bâtiment, depuis la page d'accueil,
 La personne est affectée au bâtiment.
 
 :::tip Bon à savoir
-Depuis la page d'accueil et pour une mise à jour des informations des bâtiments, il est nécessaire de "recharger les données visibles" en cliquant sur l'icone en haut à droite de l'écran. Une fois les données recalculées, rafraichir par la flèche tournante en haut à gauche de l'écran, ou par F5.
+Depuis la page d'accueil et pour une mise à jour des informations des bâtiments, il est nécessaire de "recharger les données visibles" en cliquant sur l'icone en haut à droite de l'écran. Une fois les données recalculées, rafraichir par la flèche tournante en haut à gauche de l'écran, ou par F5 afin d'obtenir les bonnes informations sur la fiche du bâtiment.
 :::
 
 ## Créer et affecter une personne au bâtiment
