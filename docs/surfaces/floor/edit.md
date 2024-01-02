@@ -24,10 +24,6 @@ Les informations peuvent être renseignées ou modifiées :
 -   choisir une échelle déjà créée sur un autre étage, dans le cas où les échelles sont identiques
 -   donner une "structure" au bâtiment afin de délimiter correctement les espaces en vue 3D.
 
-:::tip Bon à savoir
-
-:::
-
 
 ## Modifier le bâtiment d'appartenance d'un étage
 
