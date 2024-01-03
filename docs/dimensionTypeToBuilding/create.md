@@ -19,7 +19,6 @@ Le type de calque étant créé, on peut associer des calques d'affectation à c
 
 ## Créer et associer un calque d'affectation à un type de calque d'affectation
 
-
 Une fois que le type de calque d'affectation est créé ou s'il est déjà existant, on peut créer et lui associer un calque d'affectation:
 
 -   cliquer sur "Administration", "Calques d'affectation", "Calques d'affectation", puis "Créer un calque d'affectation".
