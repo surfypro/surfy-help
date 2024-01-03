@@ -35,7 +35,7 @@ On peut également créer des calques d'affectation en modifiant le type de calq
 
 Après rafraichissement (F5), le calque est disponible pour la qualification des espaces:
 -   sélectionner l'espace à qualifier
--   cliquer sur "Modifier" dans la fiche de la pièce, à gauche du plan
+-   cliquer sur "Modifier" dans la fiche de l'espace, à gauche du plan
 -   choisir le type de calque voulu dans la liste des qualifications d'espace
 -   choisir le calque adapté pour l'espace sélectionné
 
