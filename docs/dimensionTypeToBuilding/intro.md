@@ -1,3 +1,8 @@
+---
+sidebar_position: 1
+---
+
+
 Un calque d'affectation permet de regrouper et représenter les espaces sur le plan afin de délimiter les quartiers dans lesquels les personnes peuvent être affectées. Il permet également le cumul des données concernant le quartier délimité.
 
 Un calque d'affectation est un calque d'analyse dont le type de calque est rattaché à un ou plusieurs bâtiments.
