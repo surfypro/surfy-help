@@ -43,3 +43,23 @@ Après rafraichissement (F5), le calque est disponible pour la qualification des
 -   choisir le calque adapté pour l'espace sélectionné
 
 L'espace sélectionné est qualifié par le calque choisi
+
+## Visualiser les calques d'analyse
+
+L'icône verticale "Palette" permet de visualiser sur le plan tous les calques d'analyse présents sur l'étage.
+Après rechargement des données (icône en haut à droite de l'écran) et rafraichissement (F5), les données cumulées pour chaque calque sont disponibles en ouvrant le papillon en face de chaque calque, ou en ouvrant le papillon global.
+
+## Rapport des données des calques d'analyse
+
+Le rapport des données des calques d'analyse est disponible pour chaque bâtiment :
+-   depuis la page d'accueil, cliquer sur l'icône en bout de ligne de couleur du bâtiment concerné
+-   cliquer sur "Tableau de bord pour le bâtiment XXX"
+-   cliquer sur "Rapport des calques d'analyse des espaces du bâtiment XXX"
+
+Le fichier Excel obtenu contient toutes les données liées aux calques d'analyse du bâtiment.
+
+
+:::tip Bon à savoir
+Depuis la page d'accueil, "Lister les bâtiments" dans le menu contextuel permet de sélectionner plusieurs bâtiments et d'obtenir les rapports du tableau de bord sur l'ensemble des bâtiments sélectionnés.
+:::
+
