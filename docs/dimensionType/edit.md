@@ -3,6 +3,8 @@ sidebar_position: 2
 ---
 # Modifier un calque d'analyse
 
+On peut facilement modifier le nom, la couleur ou le type de calque d'analyse d'un calque déjà créé dans Surfy.
+
 ## Modifier un type de calque d'analyse
 
 Pour modifier un type de calque d'analyse, depuis la page d'accueil :
@@ -23,7 +25,9 @@ On peut alors :
 On peut modifier directement un calque d'analyse, depuis la page d'accueil :
 
 -   cliquer sur "Administration", "Calques d'analyse", "Calques d'analyse", puis "Lister les calques d'analyse".
--   rechercher le calque d'analyse à modifier
+-   rechercher dans la liste le calque d'analyse à modifier
 -   au début de la ligne du calque concerné, cliquer sur l'icône puis sur "Modifier le calque d'analyse XXX"
--   modifier le "Nom du calque d'analyse", sa  ou son "type de calque d'analyse" associé
+-   modifier le "Nom du calque d'analyse"sa couleur ou son "type de calque d'analyse" associé
 -   "sauvegarder" les modifications du calque d'analyse.
+
+Aprsè rafraichissement (F5), le calque d'analyse prend en compte les modifications effectuées.
