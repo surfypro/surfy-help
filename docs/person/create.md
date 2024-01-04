@@ -13,7 +13,7 @@ Pour créer une personne dans Surfy à partir de la page d'accueil,
 -   cliquer sur le menu contextuel, puis sur "créer une personne". 
 -   renseigner le nom et prénom, ces deux propriétés sont obligatoires.
 -   "valider" la création, ou compléter les informations éventuelles : 
-        -   email, photo, titre de la personne, référence écran, ordinateur, téléphone fixe, téléphone portable, matricule, date d'entrée, date de sortie, commentaire
+        -   <P code="person:email"/>, <P code="person:picture"/>, titre de la personne, référence écran, ordinateur, téléphone fixe, téléphone portable, matricule, date d'entrée, date de sortie, commentaire
         -   la propriété "non affectable"permet de qualifier les personnes ne pouvant être affectées, personnes en congé maternité ou en congé longue durée
         -   indiquer l'organisation de la personne à partir de la liste des organisations déjà créées
         -   renseigner le statut, le profil sécurité, le centre de coût, l'entreprise de la personne
