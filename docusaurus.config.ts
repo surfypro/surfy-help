@@ -3,7 +3,7 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Surfy University',
+  title: 'Surfy Academy',
   tagline: 'Nous digitalisons les espaces en donnant accès aux plans et aux données',
   favicon: 'img/surfy-square.png',
 
@@ -62,7 +62,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/surfy-social-card.png',
     navbar: {
-      title: 'Surfy University',
+      title: 'Surfy Academy',
       logo: {
         alt: 'Surfy Logo',
         src: 'img/surfy-square.png'
