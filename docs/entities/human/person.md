@@ -1,7 +1,7 @@
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Personne
 
-
+Une personne permet de sauvegarder un collaborteur
 
 ## Propriétés de base
 
@@ -22,7 +22,7 @@ La date de sortie de la personne
 Le courriel de la personne
 ### Immatriculation {#registrationNumber}
         
-Le numéro d'immatriculation de la personne
+Le numéro d'immatriculation de la voiture de la personne
 ### Matricule {#code}
         
 Matricule RH de la personne
