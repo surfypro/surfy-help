@@ -9,8 +9,7 @@ sidebar_position: 1
 <Youtube code="eBXD7Atx9Dg"/>
 
 Pour créer une personne dans Surfy à partir de la page d'accueil,
--   cliquer sur "collaborateurs", "personnes", afin de "lister les personnes" déjà existantes dans la base. La première personne de la liste est la dernière personne entrée dans la base.
--   cliquer sur le menu contextuel, puis sur "créer une personne". 
+-   cliquer sur "collaborateurs", "personnes" puis sur "créer une personne". 
 -   renseigner le nom et prénom, ces deux propriétés sont obligatoires.
 -   "valider" la création, ou compléter les informations éventuelles : 
         -   <P code="person:email"/>, <P code="person:picture"/>, titre de la personne, référence écran, ordinateur, téléphone fixe, téléphone portable, matricule, date d'entrée, date de sortie, commentaire
@@ -18,6 +17,10 @@ Pour créer une personne dans Surfy à partir de la page d'accueil,
         -   indiquer l'organisation de la personne à partir de la liste des organisations déjà créées
         -   renseigner le statut, le profil sécurité, le centre de coût, l'entreprise de la personne
         -   valider la création.
+
+:::tip Bon à savoir
+ Dans le menu contextuel, "lister les personnes" permet d'obtenir la liste des personnes déjà entrées dans la base de données. La première personne de la liste est la dernière personne entrée dans la base.
+ :::
 
 
 ## Importer des personnes 
