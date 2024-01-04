@@ -3,9 +3,8 @@ sidebar_position: 2
 ---
 # Créer un calque d'affectation
 
-
-
-Pour créer un calque d'affectation, il faut que son type de calque d'affectation existe.
+Un calque d'affectation est un calque d'analyse dont le type de calque est associé à un ou plusieurs bâtiments.
+Pour créer un calque d'affectation, il faut que son type de calque existe et soit associé à un ou plusieurs bâtiments.
 
 ## Créer un type de calque d'affectation
 
