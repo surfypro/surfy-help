@@ -9,7 +9,7 @@ Ces suppressions entraineront la suppression des affectations aux calques suppri
 
 ## Supprimer un type de calque
 
-:::tip Bon à savoir
+:::warning Attention
 Supprimer un type de calque supprimera tous les calques associés au type de calque supprimé ainsi que toutes les affectations à ce calque. Les espaces qualifiés par ces calques perdront l'information du type de calque supprimé et des calques associés.
 :::
 
