@@ -5,11 +5,11 @@ sidebar_position: 3
 # Supprimer un calque d'analyse
 
 
-On peut supprimer un calque d'analyse ou un type de calque.
+On peut supprimer un calque d'analyse ou un type de calque qui n'est plus utile.
 
 ## Supprimer un type de calque
 
-:::tip Bon à savoir
+:::warning Attention
 Supprimer un type de calque supprimera tous les calques associés au type de calque supprimé. Les espaces qualifiés par ces calques perdront l'information du type de calque supprimé et des calques associés.
 :::
 

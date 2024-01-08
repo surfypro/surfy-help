@@ -18,7 +18,7 @@ On peut alors :
 -   modifier le nom, la description du type de calque
 -   ajouter ou supprimer un calque au type de calque concerné
 -   modifier les calques associés au type de calque en cliquant sur l'icône en début de ligne du calque puis "Modifier le calque d'analyse XXX"
--   associer des bâtiments au type de calque afin d'y associer des calques d'affectation
+-   associer des bâtiments au type de calque afin d'y créer des calques d'affectation
 -   "sauvegarder" les modifications du type de calque.
 
 ## Modifier directement un calque d'analyse
