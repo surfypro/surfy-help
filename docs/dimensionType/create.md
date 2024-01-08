@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 # Créer un calque d'analyse
 
-Un calque d'analyse permet de qualifier et représenter les espaces sur le plan afin d'obtenir le cumul des informations et la localisation des espaces regroupés.
+Un calque d'analyse permet de regrouper, qualifier et représenter les espaces sur le plan afin d'obtenir le cumul des informations et la localisation des espaces regroupés.
 Les "calques d'analyse" de même nature sont regroupés dans un "type de calque" commun.
 Par exemple, le type de calque "Nature des sols" regroupe les calques d'analyse "Moquette", "Carrelage" ou "Lino".
 
