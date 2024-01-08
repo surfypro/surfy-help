@@ -38,12 +38,11 @@ On peut également créer des calques d'analyse en modifiant le type de calque a
 Après rafraichissement (F5), le calque est disponible pour la qualification des espaces:
 -   sélectionner l'espace à qualifier
 -   cliquer sur "Modifier" dans la fiche de la pièce, à gauche du plan
--   choisir le type de calque voulu dans la liste des qualifications de l'espace
--   choisir le calque adapté pour l'espace sélectionné
--   L'espace sélectionné est qualifié par le calque choisi
+-   dans le type de calque voulu, choisir le calque adapté pour l'espace sélectionné
+-   L'espace sélectionné est qualifié par le calque choisi, la sauvegarde est automatique.
 
 :::tip Bon à savoir
-La sauvegarde automatique permet une qualification rapide des espaces en cliquant et qualifiant directement l'espace suivant, et ainsi de suite
+La sauvegarde automatique permet une qualification rapide des espaces en cliquant et qualifiant directement l'espace suivant, et ainsi de suite.
 :::
 
 ## Visualiser les calques d'analyse
