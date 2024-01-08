@@ -4,6 +4,7 @@ sidebar_position: 2
 # Créer un calque d'affectation
 
 Un calque d'affectation est un calque d'analyse dont le type de calque est associé à un ou plusieurs bâtiments.
+Il permet l'affectation de personnes à un "Quartier" composé de un ou plusieurs espaces des bâtiments concernés.
 
 Un calque d'affectation permet de regrouper, qualifier et représenter les espaces par Quartiers sur le plan, afin d'obtenir le cumul des informations, la localisation des espaces regroupés et l'ensemble des affectations des personnes aux Quartiers des bâtiments.
 
