@@ -25,7 +25,3 @@ Le bâtiment de référence peut aussi être un bâtiment quelconque derrière l
 
 
 
-
-
-[Lien vers filtrer les tableaux](/docs/navigation/filtres/filtrer-les-tableaux.md)
-
