@@ -33,13 +33,30 @@ La personne est créée et affectée au quartier correspondant.
 
 ## Visualiser les affectations à un quartier
 
-Dans la fiche du quartier, cliquer sur l'onglet "Affectations" permet de lister l'ensemble des personnes affectées au quartier, par ordre alphabétique.
+Pour visualiser dans Surfy les affectations à un quartier :
+-   cliquer sur le quartier pour le sélectionner
+-   dans la fiche du quartier, cliquer sur l'onglet "Affectations"
+
+On visualise alors la liste de l'ensemble des personnes affectées au quartier, par ordre alphabétique.
 
 ## Rapport de données des affectations aux quartiers
 
+On peut exporter la liste des personnes affectées aux quartiers d'un bâtiment en fichier Excel.
 
-Depuis la page d'accueil, cliquer sur l'icône au bout de la barre de couleur du bâtiment concerné
+Depuis la page d'accueil,
 
+-   cliquer sur l'icône au bout de la bande de couleur du bâtiment concerné
+-   demander le "Tableau de bord pour le bâtiment XXX", la liste des "rapports Excel" apparait
+-   cliquer sur l'icône en bout de ligne du "Rapport des personnes affectées dans le bâtiment XXX"
+-   ouvrir le fichier Excel correspondant, présent dans les téléchargements.
+-   ouvrir l'onglet "AffecAuxCalquDAffec"
+
+On obtient la liste des affectations aux calques d'affectation du bâtiment, ainsi que toutes les informations relatives aux personnes affectées à ces calques.
+
+
+:::tip Bon à savoir
+Depuis la page d'accueil, "Lister les bâtiments" dans le menu contextuel permet de sélectionner plusieurs bâtiments et d'obtenir les rapports du tableau de bord sur l'ensemble des bâtiments sélectionnés.
+:::
 
 
 
