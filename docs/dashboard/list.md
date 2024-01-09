@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Les rapports Excel des bâtiments
+# Les rapports de données du bâtiment
 
 ## Rapport des personnes affectées dans le bâtiment
 
