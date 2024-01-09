@@ -55,9 +55,8 @@ On obtient la liste des affectations aux calques d'affectation du bâtiment, ain
 
 
 :::tip Bon à savoir
-Depuis la page d'accueil, "Lister les bâtiments" dans le menu contextuel permet de sélectionner plusieurs bâtiments et d'obtenir les rapports du tableau de bord sur l'ensemble des bâtiments sélectionnés.
+Depuis la page d'accueil, "Lister les bâtiments" dans le menu contextuel permet de sélectionner plusieurs bâtiments et d'obtenir les rapports du tableau de bord sur l'ensemble des bâtiments sélectionnés en cliquant sur l'icône appropriée en haut de page.
 :::
 
-
-
 ## Affecter des personnes par import Excel
+
