@@ -9,6 +9,6 @@ Pour supprimer un objet,
 -   cliquer sur la poubelle en bas à droite de la fiche de l'objet
 -   confirmer la suppression
 
-:::tip Attention
+:::warning Attention
 La suppression de l'objet entraine la suppression des informations de référence, code d'immobilisation et association à personne de l'objet.
 :::

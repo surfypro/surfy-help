@@ -3,19 +3,19 @@ sidebar_position: 2
 ---
 # Modifier une Affectation à un quartier
 
-La manière la plus simple de "modifier une affectation" est de supprimer puis recréer une affectation à un quartier.
-Par exemple, si une personne change de quartier, son affectation initiale doit être supprimée et sa nouvelle affectation créée dans le nouveau quartier.
+## Modification de l'affectation d'une personne
+
+La manière la plus simple de modifier l'affectation d'une personne à un quartier dans Surfy est de supprimer son affectation au quartier puis de créer une nouvelle affectation.
 
 
-:::info Mode Expert
-Pour une modification en masse par fichier Excel, on peut utiliser l'Identifiant de l'affectation et remplacer la personne affectée, notamment pour transférer des équipes d'un quartier à un autre par import Excel. 
-:::
+Pour une modification en masse par fichier Excel, on peut utiliser l'Identifiant de l'affectation et remplacer la personne affectée, notamment pour transférer des équipes d'un quartier à un autre par import Excel.
+
 
 ## Modification d'affectation en masse par fichier Excel
 
 On peut modifier en masse des affectations à un quartier en changeant les personnes affectées dans un fichier Excel pour les remplacer par d'autres personnes à affecter au quartier. Cela revient à garder l'identifiant de l'affectation, mais à changer l'identifiant de la personne affectée :
 
-### Création du fichier Excel
+### Création du fichier Excel des affectations
 
 On peut créer le fichier Excel comportant les affectations à modifier de différentes manières :
 
