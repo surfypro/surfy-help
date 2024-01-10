@@ -3,7 +3,7 @@ sidebar_position: 2
 ---
 # Modifier une Affectation à un quartier
 
-La meilleure manière de "modifier une affectation" est de supprimer puis recréer une affectation à un quartier.
+La manière la plus simple de "modifier une affectation" est de supprimer puis recréer une affectation à un quartier.
 Par exemple, si une personne change de quartier, son affectation initiale doit être supprimée et sa nouvelle affectation créée dans le nouveau quartier.
 
 
