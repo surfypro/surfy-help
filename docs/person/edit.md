@@ -35,6 +35,30 @@ Chaque personne a un identifiant unique qui permet d'identifier la personne lors
 
 A l'importation dans Surfy et afin d'identifier correctement les personnes concernées, la colonne avec la clé est à joindre nécessairement aux colonnes comportant les informations à importer.
 
+## Résorber les doublons de Personnes
+
+La base de données de Surfy peut comporter des doublons de personnes : Nom ou prénom mal orthographiés, traits d'union ou accents présents ou pas, adresse Email ou matricule erronés. Les doublons détectés sont isolés dans Surfy grace à la présence d'une clé commune.
+Une fois les doublons isolés, on peut choisir et fusionner les informations puis supprimer la personne en doublon.
+
+Pour lister les doublons, dans le menu à gauche de l'écran,
+
+-       cliquer sur "Collaborateurs", "Personnes" puis "Les rapports et les actions pour la qualité de données pour les personnes"
+-       demander les "Personnes en doublon"
+
+Les doublons sont listés en trois catégories suivant la clé commune détectée: Email, Matricule ou Nom complet.
+Le nombre de doublons est indiqué dans chaque catégorie.
+
+Pour résorber les doublons,
+
+-       cliquer dans la catégorie comportant des doublons
+-       cliquer sur le doublon à résorber
+-       choisir un des doublons comme base de départ en cochant la case "Merge" correspondante (colonnes 1 ou 2)
+-       le "résultat de la fusion" affiche les informations du doublon choisi (colonne 3)
+-       cliquer sur les informations du doublon non choisi afin de récupérer ses informations dans la fusion
+-       les informations sélectionnées pour la fusion sont en gris dans les colonnes des doublons et affichées dans le "résultat de la fusion"
+-       "Fusionner" les doublons en bas de page rassemble les informations grisées dans le doublon choisi, le doublon non choisi est supprimé.
+
+
 ## Modifier des personnes par fichier Excel
 
 -   exporter en Excel la liste des personnes à modifier par le rapport des personnes ou la liste filtrée des personnes

@@ -63,7 +63,7 @@ Il est composé de 3 onglets :
 
 ## Rapport des espaces du bâtiment
 
-Le "Rapport des espaces du bâtiment" liste l'ensemble des espaces du bâtiment avec leur surface, périmètre, ratios, typologie, centre de coût, organisation et toutes les informations relatives aux espaces du bâtiment.
+Le "Rapport des espaces du bâtiment" liste l'ensemble des espaces du bâtiment avec leur surface, périmètre, ratios, typologie, centre de coût, empreinte carbone, organisation et toutes les informations relatives aux espaces du bâtiment.
 
 Chaque ligne correspond à un espace du bâtiment. Il n'y a pas de doublon de ligne.
 
@@ -77,9 +77,14 @@ Le "Rapport des prestations de nettoyage du bâtiment" permet d'établir le nomb
 Après activation des modifications, chaque ligne du fichier Excel affiche son "Nombre d'heure mensuel".
 Un calcul de somme en fin de colonne permet d'obtenir le nombre d'heure mensuel total pour le nettoyage des parties digitalisées dans Surfy.
 
+Chaque ligne correspond à un espace du bâtiment. Il n'y a pas de doublon de ligne.
 
 ## Rapport des calques d'analyse des espaces du bâtiment
 
-Le "Rapport des calques d'analyse des espaces du bâtiment"
+Le "Rapport des calques d'analyse des espaces du bâtiment" liste l'ensemble des espaces du bâtiment avec leur surface, périmètre, ratios, typologie, centre de coût, empreinte carbone, organisation et toutes les informations relatives aux espaces du bâtiment, ainsi que toutes les qualifications des espaces aux calques d'analyse ou d'affectation.
+
+Chaque ligne correspond à un espace du bâtiment. Il n'y a pas de doublon de ligne.
 
 ## Télécharger en excel le bâtiment à plat
+
+"Télécharger en excel le bâtiment à plat" permet de lister les identifiants et les noms des bâtiments, étages, espaces et postes de travail et permet de créer des tableaux de concordance afin de retrouver les identifiants dans les imports Excel.
