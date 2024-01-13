@@ -5,12 +5,12 @@ Les nouveautés de novembre 2023 :
 <Youtube code="yXREgUBb_vQ"/>
 
 
-<!-- ## x Decembre 2023 - v3.3.206 / planning ##
+## 13 Janvier 2024 - v3.3.208 ##
 
 - Il n'est plus possible d'affecter une personne sur un poste de travail en flex ou de passage via l'interface du plan
 - Il est maintenant possible de zoomer sur des calques d'analyse ou d'affectations dans la sélection
 
- -->
+
 ## 2 Decembre 2023 - v3.3.205 ##
 
 - Mise en place d'une option sur l'entreprise permettant d'activer les foncionnalités de recherche de chemin (beta) 
@@ -19,8 +19,6 @@ Les nouveautés de novembre 2023 :
 - Mise en place de deux nouveaux types de segment 
     - pour les portes coulissantes
     - pour les cloisons vides
-
-
 
  ## 17 Novembre 2023 - v3.3.204 ##
 
@@ -41,7 +39,6 @@ Les nouveautés de novembre 2023 :
     - par exemple lister les personnes sans matricule, email ou centre de coût
 - La liste des nouveautés est maintenant disponible depuis le site https://help.surfy.pro
 - En mode édition du plan les segments anciennement en pointillés sont maintenant en trait plein violet pour pouvoir facilement rajouter des points dessus
-
 
 
 ## 10 Novembre 2023 - v3.3.202 ##
