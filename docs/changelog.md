@@ -9,6 +9,7 @@ Les nouveautés de novembre 2023 :
 
 - Il n'est plus possible d'affecter une personne sur un poste de travail en flex ou de passage via l'interface du plan
 - Il est maintenant possible de zoomer sur des calques d'analyse ou d'affectations dans la sélection
+- Rajout d'une option "est réservable" sur les postes de travail permettant d'indiquer à un outil de réservation que le poste de travail est réservable
 
 
 ## 2 Decembre 2023 - v3.3.205 ##
