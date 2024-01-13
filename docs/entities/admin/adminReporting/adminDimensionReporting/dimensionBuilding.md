@@ -1,5 +1,5 @@
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Calque d'analyse par bâtiment
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 
 
@@ -71,7 +71,7 @@ Le bâtiment est utilisé pour regrouper les étages
 ### Calque d'analyse {#dimension}
         
 
-### Type de calque d'analyse {#dimensionType}
+### Type de calque {#dimensionType}
         
 
 

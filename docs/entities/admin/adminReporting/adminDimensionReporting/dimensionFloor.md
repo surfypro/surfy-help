@@ -1,5 +1,5 @@
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Calque d'analyse par étage
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 
 
@@ -71,7 +71,7 @@ Taux de postes de travail partagés par au moins 2 personnes par rapport à l'en
 ### Étage {#floor}
         
 
-### Type de calque d'analyse {#dimensionType}
+### Type de calque {#dimensionType}
         
 
 

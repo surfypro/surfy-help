@@ -1,7 +1,7 @@
+# Emplacement de travail des personnes
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
-#  Person Working Location
 
-
+Un emplacement de travail des personnes définie le lieu de travail des personnes
 
 ## Propriétés de base
 
@@ -22,6 +22,9 @@
 
 
 ## Entités associées (liste)
+
+###  Person To Dimension Bookings {#personToDimensionBookings}
+        
 
 ###  Person To Room Bookings {#personToRoomBookings}
         

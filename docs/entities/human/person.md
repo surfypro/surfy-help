@@ -1,5 +1,5 @@
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Personne
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une personne permet de sauvegarder un collaborteur
 
@@ -86,13 +86,13 @@ Permet de détérminer le type de contrat de la personne
 
 ## Entités associées (liste)
 
+###  Person To Dimension Bookings {#personToDimensionBookings}
+        
+
 ###  Person To Room Bookings {#personToRoomBookings}
         
 
 ###  Person To Workplace Bookings {#personToWorkplaceBookings}
-        
-
-###  Person Working Locations {#personWorkingLocations}
         
 
 ### Affectations au bâtiment {#personToBuildings}
@@ -110,6 +110,9 @@ Permet de détérminer le type de contrat de la personne
 ### Associations d'objet à personne {#itemToPeople}
         
 
+### Emplacements de travail des personnes {#personWorkingLocations}
+        
+Un emplacement de travail des personnes définie le lieu de travail des personnes
 ### Relations depuis cette personne {#personToPersonSources}
         
 Les relations des personnes depuis cette personne

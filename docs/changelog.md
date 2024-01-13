@@ -8,6 +8,7 @@ Les nouveautés de novembre 2023 :
 <!-- ## x Decembre 2023 - v3.3.206 / planning ##
 
 - Il n'est plus possible d'affecter une personne sur un poste de travail en flex ou de passage via l'interface du plan
+- Il est maintenant possible de zoomer sur des calques d'analyse ou d'affectations dans la sélection
 
  -->
 ## 2 Decembre 2023 - v3.3.205 ##
