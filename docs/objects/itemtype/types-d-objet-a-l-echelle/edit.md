@@ -3,12 +3,12 @@ sidebar_position: 2
 ---
 # Modifier un type d'objet à l'échelle
 
+En modifiant un type d'objet, tous les objets associés à ce type d'objet seront modifiés.
+
 ## Modifier les informations du type d'objet
 
-On peut modifier les informations d'un type d'objet en modifiant la fiche du type d'objet.
-
-
-En modifiant la fiche d'un type d'objet, on peut lui ajouter sa photo, changer son nom, sa couleur, sa hauteur en 3D, renseigner son fabricant, ajouter un modèle 3D, définir des places assises,... Tous les objets créés à partir de ce type d'objet seront modifiés.
+On peut modifier les informations d'un type d'objet en modifiant la fiche du type d'objet :
+On peut lui ajouter sa photo, changer son nom, sa couleur, sa hauteur en 3D, renseigner son fabricant, ajouter un modèle 3D, définir des places assises,... Tous les objets créés sur les plans à partir de ce type d'objet seront modifiés.
 
 Pour accéder à cette fiche,
 

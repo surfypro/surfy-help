@@ -3,11 +3,12 @@ sidebar_position: 2
 ---
 # Modifier un type d'objet Icône
 
+En modifiant un type d'objet, tous les objets associés à ce type d'objet seront modifiés.
+
 ## Modifier les informations du type d'objet Icône
 
-On peut modifier l'icône et les informations d'un type d'objet Icône en modifiant la fiche du type d'objet.
-
-En modifiant la fiche d'un type d'objet, on peut aussi lui ajouter une photo, changer son nom, sa couleur, renseigner son fabricant, ajouter un modèle 3D,... Tous les objets créés à partir de ce type d'objet seront modifiés.
+On peut modifier l'icône et les informations d'un type d'objet Icône en modifiant la fiche du type d'objet :
+On peut aussi lui ajouter une photo, changer son nom, sa couleur, renseigner son fabricant, ajouter un modèle 3D,... Tous les objets créés sur les plans à partir de ce type d'objet seront modifiés.
 
 Pour accéder à cette fiche,
 

@@ -42,7 +42,7 @@ Après rafraichissement (F5), le calque est disponible pour la qualification des
 -   L'espace sélectionné est qualifié par le calque choisi, la sauvegarde est automatique.
 
 :::tip Bon à savoir
-La sauvegarde automatique permet une qualification rapide des espaces en cliquant et qualifiant directement l'espace suivant, et ainsi de suite.
+La sauvegarde automatique des calques permet une qualification rapide des espaces en cliquant et qualifiant directement l'espace suivant, et ainsi de suite sans avoir à "modifier" et "sauvegarder" chaque espace
 :::
 
 ## Visualiser les calques d'analyse

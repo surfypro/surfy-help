@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Supprimer un type d'objet Icône
 
-:::tip Attention
+:::danger Attention
 Supprimer un type d'objet supprime tous les objets issus de ce type d'objet.
 :::
 

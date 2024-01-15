@@ -23,8 +23,8 @@ La convertion en PNG est obtenue à l'aide de logiciels gratuits du type "Conver
 -   nettoyer l'image PNG avec "Paint3D" ou équivalent afin de supprimer les éléments graphiques non désirés
 -   indexer et sauvegarder l'image PNG.
 
-:::tip Bon à savoir
-La taille de l'image s'exprime en pixels x pixels. Il est indispensable de conserver cette taille dans les fonds de plan successifs afin de "coller" aux espaces dessinés dans Surfy.
+:::warning Important
+La taille de l'image s'exprime en pixels par pixels. Il est indispensable de conserver cette taille dans les fonds de plan successifs afin de "coller" aux espaces dessinés dans Surfy.
 :::
 
 ## Importer le fichier png en fond de plan

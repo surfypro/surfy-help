@@ -45,9 +45,10 @@ Ce fichier doit être composé au minimum :
 -   de l'identifiant de l'espace de l'affectation
 -   des bons en-têtes sur les colonnes à importer.
 
-:::tip Bon à savoir
-Les affectations créées par importation viennent s'ajouter aux affectations déjà présentes, sans proposition de suppression des anciennes affectations.
- Il faut donc veiller à supprimer toutes les affectations en trop avant d'importer le fichier.
- :::
- 
+
+:::warning Attention
+Les nouvelles affectations créées par importation viennent s'ajouter aux affectations déjà présentes, sans proposition de suppression de ces affectations.
+Il faut donc veiller à supprimer toutes les affectations  obsolètes avant d'importer le fichier.
+Les affectations à conserver nécessitent de renseigner dans l'import l'"Identifiant de l'affectation" afin de ne pas créer un doublon d'affectation
+:::
 

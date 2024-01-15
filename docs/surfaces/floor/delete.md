@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Supprimer un étage
 
-:::tip Attention: 
+:::danger Attention 
 La suppression de l'étage implique la suppression de tous les espaces, mobilier et de toutes les affectations de personnes dans l'étage. Il n'y a pas de retour en arrière (Undo) possible dans Surfy et ces informations seront perdues.
 :::
 Pour supprimer un étage, 

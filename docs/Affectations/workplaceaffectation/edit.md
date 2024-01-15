@@ -48,7 +48,7 @@ Le fichier Excel comporte 2 onglets:
 
 La matrice ne transfère pas d'affectation au poste de travail vers une affectation à l'espace et vice versa.
 
-:::tip Important
+:::warning Important
 Les colonnes "Identifiant" ou "Id" ne doivent pas être modifiées ni supprimées. Elles sont déterminantes pour le bon déroulement du transfert.
 Les informations des personnes ne peuvent pas être modifiées dans cette matrice.
 Les seules informations à renseigner sont les colonnes de l'affectation d'arrivée.

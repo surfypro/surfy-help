@@ -4,9 +4,9 @@ sidebar_position: 3
 
 # Supprimer une Personne
 
-:::tip Attention
+:::warning Attention
 Supprimer une personne supprime toutes les informations relatives à cette personne ainsi que ses affectations.
-Il n'y a pas de "Undo" dans Surfy, cette action est irréversible. 
+Cette action est irréversible. 
 :::
 
 ## A partir de la fiche de la personne:
