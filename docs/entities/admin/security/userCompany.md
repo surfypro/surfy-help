@@ -1,5 +1,5 @@
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Utilisateur de l'entreprise
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 
 
@@ -42,6 +42,12 @@
 ###  Partner Export Mappings {#partnerExportMappingUpdatedBies}
         
 
+###  Person To Dimension Bookings {#personToDimensionBookingCreatedBies}
+        
+
+###  Person To Dimension Bookings {#personToDimensionBookingUpdatedBies}
+        
+
 ###  Person To Room Bookings {#personToRoomBookingCreatedBies}
         
 
@@ -52,12 +58,6 @@
         
 
 ###  Person To Workplace Bookings {#personToWorkplaceBookingUpdatedBies}
-        
-
-###  Person Working Locations {#personWorkingLocationCreatedBies}
-        
-
-###  Person Working Locations {#personWorkingLocationUpdatedBies}
         
 
 ###  Structure Points {#structurePointCreatedBies}
@@ -219,6 +219,12 @@ Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces d
 ### Échelles plan {#mapScaleUpdatedBies}
         
 
+### Emplacements de travail des personnes {#personWorkingLocationCreatedBies}
+        
+Un emplacement de travail des personnes définie le lieu de travail des personnes
+### Emplacements de travail des personnes {#personWorkingLocationUpdatedBies}
+        
+Un emplacement de travail des personnes définie le lieu de travail des personnes
 ### Entreprises des personnes {#personCompanyCreatedBies}
         
 L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier
@@ -393,10 +399,10 @@ Permet d’afficher les objets par Famille sur les plans et dans l’inventaire 
 ### Types de bâtiments {#buildingTypeUpdatedBies}
         
 
-### Types de calque d'analyse {#dimensionTypeCreatedBies}
+### Types de calque {#dimensionTypeCreatedBies}
         
 
-### Types de calque d'analyse {#dimensionTypeUpdatedBies}
+### Types de calque {#dimensionTypeUpdatedBies}
         
 
 ### Types de distribution des coûts {#distributionCostTypeCreatedBies}

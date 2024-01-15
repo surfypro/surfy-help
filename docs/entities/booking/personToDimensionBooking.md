@@ -1,4 +1,4 @@
-#  Person To Workplace Booking
+#  Person To Dimension Booking
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 
@@ -14,13 +14,13 @@
 
 ## Entités associées (unique)
 
+### Calque d'analyse {#dimension}
+        
+
 ### Emplacement de travail des personnes {#personWorkingLocation}
         
 Un emplacement de travail des personnes définie le lieu de travail des personnes
 ### Personne {#person}
-        
-
-### Poste de travail {#workplace}
         
 
 

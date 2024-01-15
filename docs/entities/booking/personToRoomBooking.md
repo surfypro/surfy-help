@@ -1,5 +1,5 @@
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 #  Person To Room Booking
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 
 
@@ -14,9 +14,9 @@
 
 ## Entités associées (unique)
 
-###  Person Working Location {#personWorkingLocation}
+### Emplacement de travail des personnes {#personWorkingLocation}
         
-
+Un emplacement de travail des personnes définie le lieu de travail des personnes
 ### Espace {#room}
         
 

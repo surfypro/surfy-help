@@ -130,7 +130,7 @@
                 "description": null
             },
             "dimensionType": {
-                "label": "Type de calque d'analyse",
+                "label": "Type de calque",
                 "description": null
             },
             "dimension": {
@@ -238,8 +238,8 @@
                 "description": null
             },
             "personWorkingLocation": {
-                "label": " Person Working Location",
-                "description": null
+                "label": "Emplacement de travail des personnes",
+                "description": "Un emplacement de travail des personnes définie le lieu de travail des personnes"
             },
             "personToWorkplaceBooking": {
                 "label": " Person To Workplace Booking",
@@ -247,6 +247,10 @@
             },
             "personToRoomBooking": {
                 "label": " Person To Room Booking",
+                "description": null
+            },
+            "personToDimensionBooking": {
+                "label": " Person To Dimension Booking",
                 "description": null
             },
             "jupObjectType": {
@@ -877,11 +881,11 @@
                     "description": null
                 },
                 "dimensionTypeCreatedBies": {
-                    "label": "Types de calque d'analyse",
+                    "label": "Types de calque",
                     "description": null
                 },
                 "dimensionTypeUpdatedBies": {
-                    "label": "Types de calque d'analyse",
+                    "label": "Types de calque",
                     "description": null
                 },
                 "dimensionCreatedBies": {
@@ -1085,12 +1089,12 @@
                     "description": null
                 },
                 "personWorkingLocationCreatedBies": {
-                    "label": " Person Working Locations",
-                    "description": null
+                    "label": "Emplacements de travail des personnes",
+                    "description": "Un emplacement de travail des personnes définie le lieu de travail des personnes"
                 },
                 "personWorkingLocationUpdatedBies": {
-                    "label": " Person Working Locations",
-                    "description": null
+                    "label": "Emplacements de travail des personnes",
+                    "description": "Un emplacement de travail des personnes définie le lieu de travail des personnes"
                 },
                 "personToWorkplaceBookingCreatedBies": {
                     "label": " Person To Workplace Bookings",
@@ -1106,6 +1110,14 @@
                 },
                 "personToRoomBookingUpdatedBies": {
                     "label": " Person To Room Bookings",
+                    "description": null
+                },
+                "personToDimensionBookingCreatedBies": {
+                    "label": " Person To Dimension Bookings",
+                    "description": null
+                },
+                "personToDimensionBookingUpdatedBies": {
+                    "label": " Person To Dimension Bookings",
                     "description": null
                 },
                 "contentRoleCreatedBies": {
@@ -3514,7 +3526,7 @@
                 },
                 "order": {
                     "label": "Ordre d'affichage",
-                    "description": "Permet de trier les types de calque d'analyse pour les afficher"
+                    "description": "Permet de trier les types de calque pour les afficher"
                 },
                 "description": {
                     "label": "Description",
@@ -3619,7 +3631,7 @@
                     "description": null
                 },
                 "dimensionType": {
-                    "label": "Type de calque d'analyse",
+                    "label": "Type de calque",
                     "description": null
                 },
                 "userCompanyCreatedById": {
@@ -3652,6 +3664,10 @@
                 },
                 "dimensionToPeople": {
                     "label": "Affectations aux calques d'affectation",
+                    "description": null
+                },
+                "personToDimensionBookings": {
+                    "label": " Person To Dimension Bookings",
                     "description": null
                 },
                 "companyId": {
@@ -3701,7 +3717,7 @@
                     "description": null
                 },
                 "dimensionType": {
-                    "label": "Type de calque d'analyse",
+                    "label": "Type de calque",
                     "description": null
                 },
                 "userCompanyCreatedById": {
@@ -3835,7 +3851,7 @@
                     "description": null
                 },
                 "dimensionType": {
-                    "label": "Type de calque d'analyse",
+                    "label": "Type de calque",
                     "description": null
                 },
                 "floorId": {
@@ -3977,7 +3993,7 @@
                     "description": null
                 },
                 "dimensionType": {
-                    "label": "Type de calque d'analyse",
+                    "label": "Type de calque",
                     "description": null
                 },
                 "buildingId": {
@@ -4431,8 +4447,8 @@
                     "description": null
                 },
                 "personWorkingLocations": {
-                    "label": " Person Working Locations",
-                    "description": null
+                    "label": "Emplacements de travail des personnes",
+                    "description": "Un emplacement de travail des personnes définie le lieu de travail des personnes"
                 },
                 "personToWorkplaceBookings": {
                     "label": " Person To Workplace Bookings",
@@ -4440,6 +4456,10 @@
                 },
                 "personToRoomBookings": {
                     "label": " Person To Room Bookings",
+                    "description": null
+                },
+                "personToDimensionBookings": {
+                    "label": " Person To Dimension Bookings",
                     "description": null
                 },
                 "companyId": {
@@ -5823,7 +5843,7 @@
                     "description": null
                 },
                 "dimensionType": {
-                    "label": "Type de calque d'analyse",
+                    "label": "Type de calque",
                     "description": null
                 },
                 "buildingId": {
@@ -5885,8 +5905,8 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "personWorkingLocations": {
-                    "label": " Person Working Locations",
-                    "description": null
+                    "label": "Emplacements de travail des personnes",
+                    "description": "Un emplacement de travail des personnes définie le lieu de travail des personnes"
                 }
             },
             "personWorkingLocation": {
@@ -5954,6 +5974,10 @@
                     "label": " Person To Room Bookings",
                     "description": null
                 },
+                "personToDimensionBookings": {
+                    "label": " Person To Dimension Bookings",
+                    "description": null
+                },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
                     "description": null
@@ -6005,12 +6029,12 @@
                     "description": null
                 },
                 "personWorkingLocationId": {
-                    "label": "Id ( Person Working Location)",
-                    "description": null
+                    "label": "Id (Emplacement de travail des personnes)",
+                    "description": "Un emplacement de travail des personnes définie le lieu de travail des personnes"
                 },
                 "personWorkingLocation": {
-                    "label": " Person Working Location",
-                    "description": null
+                    "label": "Emplacement de travail des personnes",
+                    "description": "Un emplacement de travail des personnes définie le lieu de travail des personnes"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -6079,12 +6103,86 @@
                     "description": null
                 },
                 "personWorkingLocationId": {
-                    "label": "Id ( Person Working Location)",
-                    "description": null
+                    "label": "Id (Emplacement de travail des personnes)",
+                    "description": "Un emplacement de travail des personnes définie le lieu de travail des personnes"
                 },
                 "personWorkingLocation": {
-                    "label": " Person Working Location",
+                    "label": "Emplacement de travail des personnes",
+                    "description": "Un emplacement de travail des personnes définie le lieu de travail des personnes"
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
                     "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
+            "personToDimensionBooking": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "startDatetime": {
+                    "label": "Start Datetime",
+                    "description": null
+                },
+                "endDatetime": {
+                    "label": "End Datetime",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "personId": {
+                    "label": "Identifiant Surfy",
+                    "description": null
+                },
+                "person": {
+                    "label": "Personne",
+                    "description": null
+                },
+                "dimensionId": {
+                    "label": "Identifiant du calque d'analyse",
+                    "description": "Identifiant interne à Surfy"
+                },
+                "dimension": {
+                    "label": "Calque d'analyse",
+                    "description": null
+                },
+                "personWorkingLocationId": {
+                    "label": "Id (Emplacement de travail des personnes)",
+                    "description": "Un emplacement de travail des personnes définie le lieu de travail des personnes"
+                },
+                "personWorkingLocation": {
+                    "label": "Emplacement de travail des personnes",
+                    "description": "Un emplacement de travail des personnes définie le lieu de travail des personnes"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",

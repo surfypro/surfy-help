@@ -1,5 +1,5 @@
+# Type de calque
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
-# Type de calque d'analyse
 
 
 
@@ -16,7 +16,7 @@ Le code permet d'identifier le type de dimension, il est utilisé lorsque des ca
 
 ### Ordre d'affichage {#order}
         
-Permet de trier les types de calque d'analyse pour les afficher
+Permet de trier les types de calque pour les afficher
 
 
 

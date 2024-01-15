@@ -35,6 +35,7 @@
         "personWorkingLocation": "/docs/entities/booking",
         "personToWorkplaceBooking": "/docs/entities/booking",
         "personToRoomBooking": "/docs/entities/booking",
+        "personToDimensionBooking": "/docs/entities/booking",
         "buildingType": "/docs/entities/admin/types",
         "roomType": "/docs/entities/admin/types",
         "distributionCostType": "/docs/entities/admin/types",

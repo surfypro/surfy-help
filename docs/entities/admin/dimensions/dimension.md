@@ -1,5 +1,5 @@
-<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 # Calque d'analyse
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 
 
@@ -23,11 +23,14 @@ La valeur peut être utilisé pour associé le calque à une valeur numérique a
 
 ## Entités associées (unique)
 
-### Type de calque d'analyse {#dimensionType}
+### Type de calque {#dimensionType}
         
 
 
 ## Entités associées (liste)
+
+###  Person To Dimension Bookings {#personToDimensionBookings}
+        
 
 ### Affectations aux calques d'affectation {#dimensionToPeople}
         
