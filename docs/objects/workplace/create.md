@@ -7,10 +7,13 @@ sidebar_position: 1
  
  ## Ajouter un poste de travail à l'espace
 
-Pour ajouter un poste de travail dans un espace,
+
+Pour ajouter un poste de travail dans un espace, il faut que le type de poste de travail correspondant soit créé.
+
+Si le type de poste de travail existe,
 
 -   cliquer dans l'espace concerné par l'ajout du poste de travail.
--   cliquer sur "ajouter un poste de travail" à droite de la touche "Modifier"
+-   cliquer sur l'icône "ajouter un poste de travail" à droite de la touche "Modifier"
 -   rechercher le type du poste de travail à ajouter
 -   Cliquer sur le type de poste de travail choisi
 -   le poste de travail créé est disponible au bout de la souris et prêt à être déposé en cliquant sur le plan.

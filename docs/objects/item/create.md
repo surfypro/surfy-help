@@ -7,10 +7,12 @@ sidebar_position: 1
 
 ## Ajouter un objet à l'espace
 
-Pour ajouter un objet dans un espace,
+Pour ajouter un objet dans un espace, il faut que le type d'objet soit créé.
+
+Si le type d'objet existe,
 
 -   cliquer dans l'espace concerné par l'ajout d'objet.
--   cliquer sur "ajouter un objet" à droite de la touche "Modifier"
+-   cliquer sur l'icône "ajouter un objet" à droite de la touche "Modifier"
 -   rechercher l'objet à ajouter par la recherche de son nom et/ou de sa famille et/ou de son code
 -   Cliquer sur l'objet choisi : il est disponible au bout de la souris et prêt à être déposé en cliquant sur le plan.
 
