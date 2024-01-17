@@ -5,6 +5,16 @@ Les nouveautés de novembre 2023 :
 <Youtube code="yXREgUBb_vQ"/>
 
 
+<!-- ## 17 Janvier 2024 - v3.3.211 ##
+
+- Amélioration de la navigation dans les plans via les appareils tactiles
+    - Activation du zoom via les gestes tactiles
+    - Amélioration de la selection des formes
+    - Désactivation des infos-bulles 
+- Possiblité de voir les icônes de sécurité (Surfy2) dans l'export en PDF de l'inventaire    
+    
+-->
+
 ## 13 Janvier 2024 - v3.3.208 ##
 
 - Il n'est plus possible d'affecter une personne sur un poste de travail en flex ou de passage via l'interface du plan
