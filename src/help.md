@@ -23,8 +23,8 @@
 
 
 
-::: tip Titre
-[admonitions](https://docusaurus.io/fr/docs/markdown-features/admonitions)
+::: tip Titre[admonitions](https://docusaurus.io/fr/docs/markdown-features/admonitions)
+
 :::
 
 :::note

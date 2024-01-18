@@ -83,15 +83,15 @@ Pour lister les organisations, depuis le menu de gauche,
 -   renseigner la Direction du Service en cliquant sur l'icône "crayon" de l'"Organisation Mère"
 -   valider la création
 
-## Rattacher un Service
+## Rattacher une organisation à une entité
 
-Dans Surfy on rattache un espace, un poste de travail ou une personne à un Service qui lui-même se rattache à sa Direction.
+Un espace, un poste de travail ou une personne peuvent être rattachés à un Service qui lui-même se rattache à sa Direction.
 La Direction du Service est indiquée entre parenthèses derrière le nom du Service. Cela permet de donner le même nom à deux Services de Directions différentes : Exemple: Service "Comptabilité" à la Direction "Logistique" et Service "Comptabilité" à la Direction "Achats".
 
 
-### Rattacher un espace à un Service
+### Rattacher un Service à un espace
 
-Pour rattacher un espace à un Service, depuis le plan de l'étage,
+Pour rattacher un Service à un espace, depuis le plan de l'étage,
 
 -   cliquer dans l'espace à rattacher
 -   dans la fiche de l'espace à gauche du plan, cliquer sur "modifier" l'espace
@@ -100,29 +100,40 @@ Pour rattacher un espace à un Service, depuis le plan de l'étage,
 -   "sauvegarder" la modification
 
 L'espace est rattaché au Service concerné.
+
 Une fois les espaces rattachés, il est nécessaire de "recharger les données du plan" en cliquant sur l'icône en haut à droite de l'écran, puis de rafraichir (F5).
-Depuis le plan de l'étage ou du bâtiment, cliquer sur l'icône verticale "Colorier les espaces sur le plan selon les organisations" permet alors de visualiser les organisations en couleur sur les plans.
+Depuis le plan de l'étage ou du bâtiment, cliquer sur l'icône verticale "Colorier les espaces sur le plan selon les organisations" pour visualiser les organisations en couleur sur les plans.
 
-Trois onglets sont disponibles:
--   Services : affiche les Services en couleur et les informations cumulées des Services
--   Directions : affiche les Directions en couleur et les informations cumulées des Directions
--   Hiérarchie : affiche les Services en couleur et les informations cumulées des Services par Direction
+Trois onglets sont proposés:
+-   SERVICES : affiche les Services en couleur et les informations cumulées des Services
+-   DIRECTIONS : affiche les Directions en couleur et les informations cumulées des Directions
+-   HIERARCHIE : affiche les Services en couleur et les informations cumulées des Services par Direction
 
-En ouvrant le "papillon" en bout de ligne de chaque organisation, on obtient les informations cumulées pour l'organisation.
+En ouvrant le "papillon" en bout de ligne de chaque organisation, on obtient les informations cumulées pour l'organisation, pour l'étage ou le bâtiment visualisé.
 
-### Rattacher un quartier à un Service
+### Rattacher un Service à un quartier
 
-Pour rattacher un quartier à un Service, il faut rattacher tous les espaces du quartier au Service concerné.
+Pour rattacher un Service à un quartier, il faut tout d'abord sortir de la navigation par quartier afin de pouvoir accéder à chaque espace du quartier :
 
-### Rattacher une personne à un Service
+-   en cliquant sur la croix au bout du bandeau bleu d'information "Vous êtes en navigation par Quartiers, les espaces seront regroupés ensemble lors de la sélection"
+-   ou en cliquant sur l'icône verticale "Changer la vision du plan" puis sur la vision "Typologies des espaces".
 
-Pour rattacher une personne à un Service,
+On peut ensuite "Modifier" chaque espace pour lui rattacher son Service (voir [Rattacher un Service à un espace](https://help.surfy.pro/docs/organization/create#rattacher-un-service-%C3%A0-un-espace)) et ainsi à tous les espaces du quartier concerné.
+
+Pour modifier les espaces d'un quartier, il faut "revenir à la navigation par espaces" :
+
+ 
+
+
+### Rattacher un Service à une personne
+
+Pour rattacher un Service à une personne,
 
 -   recherche la personne à rattacher
 -   modifier la personne
 -   
 
-### Rattacher un poste de travail un Service
+### Rattacher un Service à un poste de travail
 
 
 
