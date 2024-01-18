@@ -5,6 +5,18 @@ sidebar_position: 2
 
 ## Modifier les informations d'une personne
 
+On peut accéder à la fiche de la personne de plusieurs façons :
+
+-       par la loupe en effectuant une recherche puis en cliquant sur la personne recherchée
+-       par la liste filtrée des personnes ("collaborateurs", "Personnes", "Lister les personnes" puis "filtrer les personnes")
+-       par l'affectation de la personne en cliquant dans l'espace ou sur le poste de travail de la personne affectée puis sur l'icône "voir plus d'option pour la personne" en face du nom de la personne affectée dans la fiche de l'espace ou du poste de travail
+-       par la fiche de l'objet associé à la personne, en cliquant sur l'objet puis sur l'icône "voir plus d'option pour la personne"
+-       par la fiche des personnes en relation avec cette personne (manager, personne managée)
+
+:::tip Bon à savoir
+Depuis l'icône "Voir plus d'option pour la personne", on peut également "Voir les informations pour la personne dans la barre latérale" pour afficher les informations de la personne à droite de l'écran
+:::
+
 Pour modifier les informations d'une personne,
 
 -   rechercher la personne avec la loupe, par nom, prénom ou matricule
@@ -16,6 +28,7 @@ Pour modifier les informations d'une personne,
         -   indiquer l'organisation de la personne à partir de la liste des organisations déjà créées
         -   renseigner le statut, le profil sécurité, le centre de coût, l'entreprise de la personne
         -   valider les modifications.
+
 
 
 

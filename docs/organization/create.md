@@ -5,10 +5,15 @@ sidebar_position: 1
 
 Les organisations dans Surfy ont deux niveaux hiérarchiques : Les Directions et les Services.
 
-Utiliser les organisations permet de rattacher les espaces à des Services qui rapportent eux-mêmes à des Directions, permettant la qualification des espaces en couleurs sur les plans et les données cumulées, par Service ou par Direction.
+
+:::warning Important
+On ne peut rattacher un espace, une personne ou un poste de travail qu'à un Service.
+:::
+
+Utiliser les organisations permet de rattacher les espaces à des Services qui rapportent eux-mêmes à des Directions, ainsi que la qualification des espaces en couleurs sur les plans et les données cumulées, par Service ou par Direction.
 
 Les personnes et les postes de travail peuvent également être rattachés à des Services.
-On peut alors lister les personnes ou les postes de travail par organisation dans les listes filtrées ou dans les rapports de données, ou savoir simplement, par la fiche de la personne, à quelle organisation une personne appartient.
+On peut alors lister les personnes ou les postes de travail par organisation dans les listes filtrées ou dans les rapports de données, ou savoir à quelle organisation une personne est rattachée.
 
 
 <Youtube code="bvOEaYs1prg"/>
@@ -17,26 +22,26 @@ On peut alors lister les personnes ou les postes de travail par organisation dan
 
 ## Hiérarchie des organisations
 
-
-
 -   Un Service est toujours rattaché à une Direction.
 -   Si ce n'est pas le cas, l'organisation est considérée comme une Direction et non comme un Service.
--   Un espace, une personne ou un poste de travail se rattachent toujours à un Service.
 -   Seuls les Services sont proposés au rattachement des espaces, personnes ou postes de travail.
 
 
-### Qualification de la hiérarchie de l'organisation dans Surfy :
+### Hiérarchiser les organisations dans Surfy :
 
-Pour gérer la hiérachie des organisations, Surfy utilise deux termes:
+Pour créer la hiérachie entre les organisations, Surfy utilise deux termes:
 
 -   L'organisation Mère : C'est la Direction du Service
 -   L'organisation Fille : C'est le Service de la Direction
 
-Un Service a une Direction (une organisation Mère) mais pas de Service rattaché (pas d'organisation Fille)                                  
-Une Direction peut avoir des Services rattachés (organisations Filles éventuelles) mais pas de Direction (pas d'organisation Mère) 
+Un "Service" a une Direction (une organisation Mère) mais pas de Service rattaché (pas d'organisation Fille)                                  
+Une "Direction" peut avoir des Services rattachés (organisations Filles éventuelles) mais pas de Direction (pas d'organisation Mère) 
 
+
+:::warning Important
 Une organisation ne peut pas avoir une "organisation Mère" ET une ou des "organisations Filles".                                        
 En effet, dans ce cas l'organisation n'est ni une Direction, parce qu'elle a elle-même une Direction, ni un Service parce qu'elle a elle-même des Services. L'organisation n'étant pas clairement définie, cela fausse la base de données dans Surfy ainsi que l'affichage sur les plans.
+:::
 
 Pour visualiser la hiérarchie des organisations dans Surfy, depuis le menu de gauche :
 
@@ -45,6 +50,8 @@ Pour visualiser la hiérarchie des organisations dans Surfy, depuis le menu de g
 -   cliquer sur l'icône en bout de ligne " voir plus d'options pour l'organisation XXX" puis "voir l'organisation XXX" permet de visualiser les informations de l'organisation concernée.
 
 ## Créer une Direction
+
+Une Direction n'a PAS d'"Organisation Mère" et peut avoir des "Organisations Filles".
 
 Pour créer une Direction, depuis le menu de gauche :
 
@@ -57,6 +64,8 @@ L'organisation créée est considérée comme étant une Direction (pas d'organi
 En affichant la "Hiérarchie des Organisations", cette Direction apparait en tête de bloc et sera suivi des Services rattachés à cette Direction. Si aucun Service n'est encore associé à cette Direction, le bloc n'est pas créé et seule la Direction est affichée.
 
 ## Créer un Service
+
+Un Service a obligatoirement une "Organisation Mère" et n'a PAS d'"Organisation Fille".
 
 Pour créer un Service, sa Direction doit d'abord avoir été créée dans Surfy. 
 
@@ -80,14 +89,17 @@ Pour lister les organisations, depuis le menu de gauche,
 
 -   cliquer sur "organisations", "organisations" puis "lister les organisations" (ou cliquer sur le menu contextuel puis "lister les organisations" si déjà sur la page des organisations)
 -   la liste donne les organisations Mère et Filles pour chaque organisation
--   renseigner la Direction du Service en cliquant sur l'icône "crayon" de l'"Organisation Mère"
--   valider la création
+
 
 ## Rattacher une organisation à une entité
 
 Un espace, un poste de travail ou une personne peuvent être rattachés à un Service qui lui-même se rattache à sa Direction.
 La Direction du Service est indiquée entre parenthèses derrière le nom du Service. Cela permet de donner le même nom à deux Services de Directions différentes : Exemple: Service "Comptabilité" à la Direction "Logistique" et Service "Comptabilité" à la Direction "Achats".
 
+
+:::warning Important
+Si une organisation n'apparait pas dans la liste des Services à rattacher, c'est qu'aucune Direction n'est rattachée à cette organisation. Elle est donc considérée elle même comme une Direction. La deuxième cause possible est que cette organisation n'est pas encore créée.
+:::
 
 ### Rattacher un Service à un espace
 
@@ -118,22 +130,40 @@ Pour rattacher un Service à un quartier, il faut tout d'abord sortir de la navi
 -   en cliquant sur la croix au bout du bandeau bleu d'information "Vous êtes en navigation par Quartiers, les espaces seront regroupés ensemble lors de la sélection"
 -   ou en cliquant sur l'icône verticale "Changer la vision du plan" puis sur la vision "Typologies des espaces".
 
+
 On peut ensuite "Modifier" chaque espace pour lui rattacher son Service (voir [Rattacher un Service à un espace](https://help.surfy.pro/docs/organization/create#rattacher-un-service-%C3%A0-un-espace)) et ainsi à tous les espaces du quartier concerné.
 
-Pour modifier les espaces d'un quartier, il faut "revenir à la navigation par espaces" :
+Pour revenir ensuite à la navigation par quartier,
 
- 
+-   cliquer sur l'icône "Changer la vision du plan"
+-   sélectionner la vision "Calques d'affectation"
+
+La navigation par quartier est sélectionnée et les espaces du quartier sont rattachés au Service choisi.
+
+:::tip Bon à savoir
+La répartition des Services sur les espaces est indépendante du regroupement des espaces par quartier, même si les deux entités "Service" et "Quartier" englobent souvent des périmètres identiques.
+:::
 
 
 ### Rattacher un Service à une personne
 
 Pour rattacher un Service à une personne,
 
--   recherche la personne à rattacher
--   modifier la personne
--   
+-   rechercher la personne avec la loupe, sous le logo de l'entreprise en haut à gauche de l'écran
+-   cliquer sur le nom de la personne
+-   cliquer sur le menu contextuel (case grise sous la loupe) puis sur "Modifier la personne XXX"
+-   cliquer sur l'icône "crayon" de "L'organisation de la personne"
+-   choisir le Service correspondant à la personne
+-   "Sauvegarder" les modifications
+
 
 ### Rattacher un Service à un poste de travail
 
+Pour rattacher un Service à un poste de travail,
 
+-   cliquer sur le poste de travail sur le plan
+-   sur la fiche du poste de travail à gauche, cliquer sur "Modifier"
+-   cliquer sur l'icône "crayon" de la ligne "Organisation"
+-   choisir le Service correspondant au poste de travail
+-   "Sauvegarder" les modifications
 

@@ -56,3 +56,18 @@ L'"aide à l'import des données pour les personnes" permet aussi de choisir les
  -  "comparer" les informations du fichier avec la base de Surfy permet de détecter les personnes qui seront créées.
  -  créer l'ensemble des personnes dans Surfy, en cliquant sur "Tout créer".
  -  les personnes sont importées dans la base de données de Surfy.
+
+
+## Consulter la fiche de la personne
+
+On peut accéder à la fiche de la personne de plusieurs façons :
+
+-       par la loupe en effectuant une recherche puis en cliquant sur la personne recherchée
+-       par la liste filtrée des personnes ("collaborateurs", "Personnes", "Lister les personnes" puis "filtrer les personnes")
+-       par l'affectation de la personne en cliquant dans l'espace ou sur le poste de travail de la personne affectée puis sur l'icône "voir plus d'option pour la personne" en face du nom de la personne affectée dans la fiche de l'espace ou du poste de travail
+-       par la fiche de l'objet associé à la personne, en cliquant sur l'objet puis sur l'icône "voir plus d'option pour la personne"
+-       par la fiche des personnes en relation avec cette personne (manager, personne managée)
+
+:::tip Bon à savoir
+Depuis l'icône "Voir plus d'option pour la personne", on peut également "Voir les informations pour la personne dans la barre latérale" pour afficher les informations de la personne à droite de l'écran
+:::
