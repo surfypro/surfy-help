@@ -23,43 +23,43 @@ Les espaces et postes de travail sans "type de distribution des coûts" n’appa
 
  
 
-### Exports en Fichier Excel 
+## Exports en Fichier Excel 
 
 Les données sont disponibles en fichiers Excel, avec ou sans ventilation, par étage ou pour l’ensemble du bâtiment :
 
-Le fichier Excel, par Etage avec ventilation : 
+### Le fichier Excel, par Etage avec ventilation : 
 
 -   colonne A : Nom de l'étage  
--   colonne B : Centre de coût (Nom du Centre de Coût) 
--   colonne C : Surface des espaces incluant les ventilations de l'étage (Surface à refacturer, par étage et CdC) 
--   colonne D : Surface des espaces avant ventilation (Surface attribuée à chaque CdC, par étage) 
--   colonne E : Clés de répartition de l'étage avec ventilation (la somme des clés par étage donne 1) 
--   colonne F : Surface des espaces à ventiler sur l'étage (prorata de surface ventilée sur le CdC) 
--   colonne G : Surface totale de l'étage incluant les surfaces à ventiler (Somme de toutes les surfaces ayant un CdC) 
--   colonne H : Surface totale à ventiler sur l'étage (Somme de toutes les surfaces à ventiler sur l’étage) 
+-   colonne B : Centre de coût (Nom du Centre de Coût)
+-   colonne C : Surface des espaces incluant les ventilations de l'étage (Surface à refacturer, par étage et CdC)
+-   colonne D : Surface des espaces avant ventilation (Surface attribuée à chaque CdC, par étage)
+-   colonne E : Clés de répartition de l'étage avec ventilation (la somme des clés par étage donne 1)
+-   colonne F : Surface des espaces à ventiler sur l'étage (prorata de surface ventilée sur le CdC)
+-   colonne G : Surface totale de l'étage incluant les surfaces à ventiler (Somme de toutes les surfaces ayant un CdC)
+-   colonne H : Surface totale à ventiler sur l'étage (Somme de toutes les surfaces à ventiler sur l’étage)
 -   colonne I : Surface de l'étage à ventiler sur le bâtiment (Somme des surfaces à ventiler sur le bâtiment)
 
 
-Le fichier Excel, par Bâtiment avec ventilation : 
+### Le fichier Excel, par Bâtiment avec ventilation : 
 
--   colonne A : Centre de coût (Nom du Centre de Coût) 
--   colonne B : Surface des espaces incluant les ventilations (Surface à refacturer, par CdC) 
--   colonne C : Clés de répartition du bâtiment avec ventilation (La somme des clés sur le bâtiment donne 1) 
--   colonne D : Surface des espaces à ventiler (prorata de surface ventilée sur le CdC) 
--   colonne E : Surface des espaces avant ventilation (Surface attribuée à chaque CdC) 
--   colonne F : Surface totale à ventiler dans le bâtiment (Somme de toutes les surfaces à ventiler sur le bâtiment) 
--   colonne G : Surface totale du bâtiment non ventilée (Somme de toutes les surfaces non ventilées sur le bâtiment) 
--   colonne H : Surface totale du bâtiment incluant les surfaces à ventiler (Somme de toutes les surfaces ayant un CdC) 
+-   colonne A : Centre de coût (Nom du Centre de Coût)
+-   colonne B : Surface des espaces incluant les ventilations (Surface à refacturer, par CdC)
+-   colonne C : Clés de répartition du bâtiment avec ventilation (La somme des clés sur le bâtiment donne 1)
+-   colonne D : Surface des espaces à ventiler (prorata de surface ventilée sur le CdC)
+-   colonne E : Surface des espaces avant ventilation (Surface attribuée à chaque CdC)
+-   colonne F : Surface totale à ventiler dans le bâtiment (Somme de toutes les surfaces à ventiler sur le bâtiment)
+-   colonne G : Surface totale du bâtiment non ventilée (Somme de toutes les surfaces non ventilées sur le bâtiment)
+-   colonne H : Surface totale du bâtiment incluant les surfaces à ventiler (Somme de toutes les surfaces ayant un CdC)
 
  
-Le fichier Excel, sans ventilation : 
+### Le fichier Excel, sans ventilation : 
 
 -   colonne A : Centre de coût (Nom du Centre de Coût) 
 -   colonne B : Surface (Surface à refacturer, par CdC) 
 -   colonne C : Clés de répartition (la somme des clés sur le bâtiment donne 1) 
 
 
-Le fichier Excel, détails sans ventilation : 
+### Le fichier Excel, détails sans ventilation : 
 
 -   colonne A : Centre de coût (Nom du Centre de Coût) 
 -   colonne B : Type (entité à refacturer, espace ou poste de travail) 
