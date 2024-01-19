@@ -1,0 +1,8 @@
+{
+  "label": "Refacturation par Centre de coût",
+  "position": 9,
+  "link": {
+    "type": "generated-index",
+    "description": "La refacturation par centre de coût dans Surfy"
+  }
+}

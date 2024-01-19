@@ -1,6 +1,6 @@
 {
   "label": "Entités",
-  "position": 10,
+  "position": 12,
   "link": {
     "type": "generated-index",
     "description": "Les entités sont les objets de base de l'application. Elles sont utilisées pour représenter les données de l'application."
