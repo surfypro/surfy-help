@@ -4,7 +4,11 @@ sidebar_position: 1
 
 # Refacturer les espaces dans Surfy
 
-Pour refacturer les espaces par centres de coût dans Surfy, tous les espaces à facturer doivent être renseignés sur leur centre de coût et leur type de distribution des coûts doit être en "centre de coût par espace".
+Surfy propose un calcul automatique des clés de répartition et surfaces cumulées par centre de coût sur un ou plusieurs bâtiments afin de répartir et refacturer les charges du ou des bâtiments au prorata des surfaces d'occupation ou des personnes affectées à ces espaces.
+
+
+Pour refacturer les espaces par centres de coût dans Surfy, tous les espaces à facturer doivent être renseignés sur leur centre de coût, et leur type de distribution des coûts doit être en "centre de coût par espace".
+
 Pour refacturer les postes de travail par centres de coût dans Surfy, les postes de travail concernés doivent être renseignés sur leur centre de coût, et leur espace d'appartenance doit être renseigné en "centre de coût par poste de travail".
 
 ## Clés de répartition et surfaces qualifiées par centre de coût
