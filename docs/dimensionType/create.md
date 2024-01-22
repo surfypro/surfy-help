@@ -9,6 +9,8 @@ Par exemple, le type de calque "Nature des sols" regroupe les calques d'analyse 
 
 Pour créer un calque d'analyse, il faut que son type de calque existe.
 
+<Youtube code="G3d1bubX8FU"/>
+
 ## Créer un type de calque
 
 Pour créer un type de calque, depuis la page d'accueil :
