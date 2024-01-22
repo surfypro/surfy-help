@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Modifier un espace
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_B7Jb3eAn4I?si=VWTC1qkufqzoatIP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<Youtube code="_B7Jb3eAn4I"/>
 
 Pour modifier un espace dans Surfy,
 

@@ -2,14 +2,21 @@
 sidebar_position: 1
 ---
 
-# Refacturer les espaces dans Surfy
+# Refacturer les espaces par centre de coût
 
 Surfy propose un calcul automatique des clés de répartition et surfaces cumulées par centre de coût sur un ou plusieurs bâtiments afin de répartir et refacturer les charges du ou des bâtiments au prorata des surfaces d'occupation ou des personnes affectées à ces espaces.
 
 
-Pour refacturer les espaces par centres de coût dans Surfy, tous les espaces à facturer doivent être renseignés sur leur centre de coût, et leur type de distribution des coûts doit être en "centre de coût par espace".
+Pour refacturer les espaces par centres de coût dans Surfy, tous les espaces à facturer doivent être renseignés sur leur centre de coût et leur type de distribution des coûts.
 
-Pour refacturer les postes de travail par centres de coût dans Surfy, les postes de travail concernés doivent être renseignés sur leur centre de coût, et leur espace d'appartenance doit être renseigné en "centre de coût par poste de travail".
+Pour refacturer un espace entièrement à son centre de coût, le type de distribution des coûts de l'espace doit être "centre de coût par espace".
+
+Pour refacturer les postes de travail d'un espace à leur centre de coût, tous les postes de travail à facturer doivent être renseignés sur leur centre de coût et le type de distribution des coûts de leur espace d'appartenance doit être "centre de coût par poste de travail".
+
+
+On peut choisir le type de distribution des coûts pour chaque espace, et panacher ainsi des espaces refacturés par espace et des ratios d'espace facturés par poste de travail
+
+Pour plus d'information sur les types de distribution des coûts, voir le chapitre [Type de distribution des coûts](https://help.surfy.pro/docs/costcenter/create#type-de-distribution-des-co%C3%BBts).
 
 ## Clés de répartition et surfaces qualifiées par centre de coût
 
@@ -21,11 +28,14 @@ Les centres de coût à ventiler ne sont pas ventilés dans ce tableau. Ils sont
 
 En ouvrant le papillon à gauche de chaque centre de coût, on obtient la liste détaillée de chaque espace et des postes de travail de chaque espace, rattachés au centre de coût, avec la surface à refacturer et la clé de répartition interne au centre de coût pour l'espace ou les postes de travail de l'espace. 
 
-Le centre de coût nommé "-" liste les erreurs sur les espaces et les postes de travail qui ont un "type de distribution des coûts" mais pas de "centre de coût". On peut facilement compléter le centre de coût en cliquant sur chacun des espaces ou postes de travail listés dans cet onglet jusqu’à tout renseigner et retirer de la liste. 
+Le centre de coût nommé "-" liste les erreurs sur les espaces et les postes de travail qui ont un "type de distribution des coûts" mais pas de "centre de coût". On peut facilement compléter le centre de coût en cliquant sur le nom de chacun des espaces ou postes de travail listés dans cet onglet jusqu’à tout renseigner et retirer de la liste. 
 
 Les espaces et postes de travail sans "type de distribution des coûts" n’apparaissent nulle part et leur surface n’est comptabilisée nulle part. 
 
- 
+ :::tip Bon à savoir
+ Cliquer sur n'importe quel nom d'espace à la gauche des listes renvoit dans l'environnement de l'espace concerné, sur les plans. On peut alors modifier directement l'information, puis après rafraichissement(F5) revenir sur les clés de répartitions mises à jour.
+ :::
+
 
 ## Exports en Fichier Excel 
 

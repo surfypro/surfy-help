@@ -5,7 +5,8 @@ sidebar_position: 1
 
 # Créer un espace
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9A0XQaxj6hA?si=AZLCsb0APLySH7hZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<Youtube code="9A0XQaxj6hA"/>
 
 Pour créer un espace (ou pièce) sur un étage qui a déjà son fond de plan et son échelle :
 -   aller sur l'étage, cliquer sur le plan pour faire apparaître les icônes dans la zone située au dessus du plan
@@ -27,3 +28,4 @@ Après rafraîchissement, l'espace affiche la couleur de la typologie choisie. C
 :::tip Bon à savoir
 L'icône "goutte" au dessus du plan permet d'"activer la transparence des couleurs" et de voir les différents éléments présents sur le fond de plan à travers les couleurs des calques de Surfy.
 :::
+
