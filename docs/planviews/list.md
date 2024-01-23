@@ -36,9 +36,9 @@ On peut alors modifier le centre de coût de chaque espace ou poste de travail e
 
 La vision "Directions" colorie les espaces en fonction de leur Direction. Cette vision permet d'organiser ou de visualiser la bonne distribution des espaces en fonction de l'organisation de rattachement.
 
-## Vision d'"Occupation"
+## Vision d'"Occupations"
 
-La vision d'"Occupation" colorie les places libres, les postes Flex, les postes partagés et les postes de passage pour permettre une gestion rapide des capacités d'affectation sur l'étage.
+La vision d'"Occupations" colorie les places libres, les postes Flex, les postes partagés et les postes de passage pour permettre une gestion rapide des capacités d'affectation sur l'étage.
 
 ## Vision "Flex"
 
