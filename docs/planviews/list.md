@@ -38,11 +38,11 @@ La vision "Directions" colorie les espaces en fonction de leur Direction. Cette 
 
 ## Vision d'"Occupations"
 
-La vision d'"Occupations" colorie les places libres, les postes Flex, les postes partagés et les postes de passage pour permettre une gestion rapide des capacités d'affectation sur l'étage.
+La vision d'"Occupations" colorie les postes libres (en vert), les postes Flex (en rose), les postes partagés (en orange) et les postes de passage (en bleu) pour permettre une gestion rapide des capacités d'affectation sur l'étage.
 
 ## Vision "Flex"
 
-La vision "Flex" colorie les postes de travail définis en Flex et permet une localisation rapide des postes de travail réservables ou utilisables à la demande.
+La vision "Flex" colorie les postes de travail définis en Flex (en rose) et permet une localisation rapide des postes de travail réservables ou utilisables à la demande.
 
 ## Vision "Conformité de la sécurité"
 
