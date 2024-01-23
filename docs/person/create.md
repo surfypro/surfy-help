@@ -23,6 +23,21 @@ Pour créer une personne dans Surfy à partir de la page d'accueil,
  :::
 
 
+## Clé d'identification
+
+Afin de créer correctement les personnes dans Surfy et d'éviter les doublons, une clé d'identification est nécessaire. Elle permet de retrouver les personnes en évitant d'utiliser leur prénom et nom, sujets à erreurs.
+
+Différentes clés sont possibles :
+
+-   le matricule de la personne est la première clé fiable à utiliser.
+-   l'email est aussi un champ unique et peut être utilisée comme clé d'identification de la personne
+-   le "nom complet" peut toutefois être utilisé dans le cas d'une nomenclature maitrisée (orthographe et casse)
+-   l'identifiant Surfy unique délivré par Surfy, disponible depuis un export des personnes une fois les personnes créées dans Surfy.
+
+L'identifiant Surfy est la clé d'identification de chaque entité dans Surfy. Il est attribué par Surfy et est unique.
+Chaque personne a un identifiant unique qui permet d'identifier la personne lors d'un export puis d'un réimport de données.
+
+
 ## Importer des personnes 
 
 <Youtube code="J-SiqS2Wq8I"/>

@@ -46,9 +46,13 @@ Différentes clés sont possibles :
 L'identifiant Surfy est la clé d'identification de chaque entité dans Surfy. Il est attribué par Surfy et est unique.
 Chaque personne a un identifiant unique qui permet d'identifier la personne lors d'un export puis d'un réimport de données.
 
-A l'importation dans Surfy et afin d'identifier correctement les personnes concernées, la colonne avec la clé est à joindre nécessairement aux colonnes comportant les informations à importer.
+A l'importation de modifications sur les personnes dans Surfy et afin d'identifier correctement les personnes concernées, la colonne avec la clé est à joindre nécessairement aux colonnes comportant les informations à importer.
 
 ## Résorber les doublons de Personnes
+
+Détection des doublons, fusion des informations et suppression du doublon inutile.
+
+<Youtube code="tm65Pwrhogo"/>
 
 La base de données de Surfy peut comporter des doublons de personnes : Nom ou prénom mal orthographiés, traits d'union ou accents présents ou pas, adresse Email ou matricule erronés. Les doublons détectés sont isolés dans Surfy grace à la présence d'une clé commune.
 Une fois les doublons isolés, on peut choisir et fusionner les informations puis supprimer la personne en doublon.
