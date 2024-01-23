@@ -51,7 +51,7 @@ Un poste de travail affecté deux fois verra son nom apparaitre sur deux lignes 
 
 ## Rapport de l'inventaire du bâtiment
 
-Le "Rapport de l'inventaire du bâtiment" liste tous les objets présents sur le bâtiment avec leur type d'objet, famille, bâtiment, étage, quartier, espace d'appartenance ainsi que les calques des espaces d'appartenance des objets.
+Le "Rapport de l'inventaire du bâtiment" liste tous les objets présents sur le bâtiment avec leur type d'objet, famille, empreinte carbone, nombre de places assises et leur bâtiment, étage, quartier, espace d'appartenance ainsi que les calques des espaces d'appartenance des objets.
 
 Ce rapport permet d'obtenir l'ensemble du mobilier et de le trier en fonction de chaque calque d'analyse ou d'affectation.
 
