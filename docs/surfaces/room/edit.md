@@ -72,3 +72,4 @@ Surfy propose d'attribuer au nouvel espace "XXX(2)" tout le mobilier et les affe
 Dans tous les cas, les affectations à l'espace restent affectées à l'espace "XXX".
 
 Le nouvel espace créé peut être renseigné sur son nom, sa typologie et tous les calques et informations nécessaires.
+

@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Les rapports de données du bâtiment
 
+<Youtube code="r53dlxQAioU"/>
+
 Les rapports de données d'un bâtiment s'obtiennent à partir de la page d'accueil, en cliquant sur l'icône en bout de bande de couleur du bâtiment puis sur "Tableau de bord du bâtiment XXX".
 Cliquer sur l'icône du rapport permet sa mise à disposition dans les téléchargements.
 

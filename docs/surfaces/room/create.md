@@ -9,7 +9,8 @@ sidebar_position: 1
 <Youtube code="9A0XQaxj6hA"/>
 
 Pour créer un espace (ou pièce) sur un étage qui a déjà son fond de plan et son échelle :
--   aller sur l'étage, cliquer sur le plan pour faire apparaître les icônes dans la zone située au dessus du plan
+
+-   depuis l'étage, cliquer sur le plan pour faire apparaître les icônes dans la zone située au dessus du plan
 -   choisir d' "activer le mode édition du plan" en cliquant sur l'icône "crayon".
 -   cliquer sur l'icône "Ajouter un espace" permet d'avoir une croix indiquant l'horizontalité et la verticalité afin de faciliter le placement correct des sommets de l'espace à créer.
 -   cliquer pour créer le premier sommet de l'espace. La possibilité d'avoir un trait horizontal, à 45 degrés ou vertical est annulée en appuyant sur la touche "Shift", ce qui permet de libérer complètement l'emplacement de création du sommet suivant.

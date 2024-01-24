@@ -27,7 +27,11 @@ On peut afficher le nom des personnes affectées aux postes de travail en cliqua
 
 ## Créer et affecter une personne à un poste de travail
 
-Si la personne à affecter n'est pas encore créée dans la base de données de Surfy, on peut la créer et l'affecter en un seul mouvement :
+Si la personne à affecter n'est pas encore créée dans la base de données de Surfy, on peut la créer et l'affecter en un seul mouvement.
+
+<Youtube code="gqpkHBE_0Lw"/>
+
+Pour "créer et associer" une nouvelle personne,
 
 -   cliquer sur le poste de travail à affecter
 -   dans la fiche du poste de travail à gauche, cliquer sur "Affecter une personne"

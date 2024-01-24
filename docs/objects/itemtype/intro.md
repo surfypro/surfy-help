@@ -10,7 +10,7 @@ Il existe 2 types d’objet : Icônes et Objets à l’échelle.
 Un type d’objet sous forme d'Icône permet de définir un nom, une Icône, une couleur, un fabricant, un prix, un modèle éventuel pour la vue 3D ainsi que des informations associées, afin de créer des objets sous forme d'icône ayant toutes ces caractéristiques. C’est la « Matrice » permettant la création de multiples objets identiques.
 
 :::tip Bon à savoir
-La taille des icônes sur les plans dépendra de la valeur sélectionnée dans "Gérer l'échelle" puis "taille des icônes des types d'objet". La taille est appliquée seulement pour l'étage.
+La taille des icônes sur les plans dépendra de la valeur sélectionnée dans "Gérer l'échelle" puis "taille des icônes des types d'objet". La taille des icônes est appliquée seulement pour l'étage. Toutes les icônes ont la même taille.
 :::
 
 ### Type d'objet à l'échelle
