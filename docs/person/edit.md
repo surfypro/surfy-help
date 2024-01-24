@@ -50,7 +50,7 @@ A l'importation de modifications sur les personnes dans Surfy et afin d'identifi
 
 ## Résorber les doublons de Personnes
 
-Détection des doublons, fusion des informations et suppression du doublon inutile.
+Résorber les doublons de personnes s'effectue en trois étapes : Détection des doublons, fusion des informations et suppression du doublon inutile.
 
 <Youtube code="tm65Pwrhogo"/>
 
