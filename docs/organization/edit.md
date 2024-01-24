@@ -5,7 +5,7 @@ sidebar_position: 2
 
 ## Modifier les informations d'une Organisation
 
-Pour modifier les informations des organisations dans Surfy, depuis le menu de gauche :
+Pour modifier les informations des organisations dans Surfy, depuis le menu de gauche,
 
 -   cliquer sur "Organisations", "Organisations" puis "Voir la hiérarchie des organisations".
 -   les Directions sont en tête des blocs obtenus, les Services sont listés à la suite.

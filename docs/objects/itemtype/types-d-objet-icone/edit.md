@@ -10,9 +10,9 @@ En modifiant un type d'objet, tous les objets associés à ce type d'objet seron
 On peut modifier l'icône et les informations d'un type d'objet Icône en modifiant la fiche du type d'objet :
 On peut aussi lui ajouter une photo, changer son nom, sa couleur, renseigner son fabricant, ajouter un modèle 3D,... Tous les objets créés sur les plans à partir de ce type d'objet seront modifiés.
 
-Pour accéder à cette fiche,
+Pour accéder à cette fiche, depuis le menu de gauche,
 
--   a partir de la page d'accueil, cliquer sur "Mobiliers", "Typologies" puis "Types d'objet" et "Lister les types d'objet"
+-   cliquer sur "Mobiliers", "Typologies", "Types d'objet" puis "Lister les types d'objet"
 -   rechercher le type d'objet en cliquant sur l'icone "Filtrer les types d'objet" en haut à droite de l'écran
 -   renseigner le type d'objet à rechercher pour l'isoler dans la liste
 -   au début de la ligne du type d'objet, cliquer sur l'icone "Voir plus d'options pour le type d'objet XXX" puis sur "Modifier le type d'objet XXX"
@@ -27,7 +27,9 @@ On peut accéder directement aux informations ou à la forme d'un type d'objet s
 
 ### Modifier la famille du type d'objet
 
--   a partir de la page d'accueil, cliquer sur "Mobiliers", "Typologies" puis "types d'objet" et "Lister les types d'objet"
+Pour modifier la famille du type d'objet, depuis le menu de gauche,
+
+-   cliquer sur "Mobiliers", "Typologies" puis "types d'objet" et "Lister les types d'objet"
 -   rechercher le type d'objet à modifier en cliquant sur l'icone "Filtrer les types d'objet" en haut à droite de l'écran
 -   renseigner le type d'objet à rechercher pour l'isoler dans la liste
 -   au début de la ligne du type d'objet, cliquer sur l'icone "Voir plus d'options pour le type d'objet XXX" puis sur "Modifier le type d'objet XXX"
@@ -38,7 +40,9 @@ On peut accéder directement aux informations ou à la forme d'un type d'objet s
 ## Changer le type d'objet d'objets déjà créés
 
 Si des objets ont déjà été créés et placés sur les plans, on peut changer le type d'objet de ces objets.
-Pour cela:
+
+Pour cela,
+
 -   cliquer sur l'objet dont le type d'objet est à changer
 -   dans la fiche de l'objet à gauche, cliquer sur "Modifier" afin de modifier l'objet
 -   sur la ligne "type d'objet", cliquer sur l'icône crayon "changer le type de'objet"

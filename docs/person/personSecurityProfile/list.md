@@ -27,10 +27,30 @@ Au-dessus de cette liste, on peut "créer et associer" un nouveau profil sécuri
 :::
 
 
-ajouter un profil de sécurité "médecin", je sauvegarde. Quand je reviens dans la fiche de George Clooney, il est bien déclaré comme "médecin" dans la sécurité et et si je vais sur une de ses affectations George Clooney est bien déclaré "médecin" sur ce poste et le poste est bien allumé dans la couleur correspondante au médecin. En centrant le plan, on obtient tous les profils sécurité en couleur répertoriés sur la partie gauche, avec leur nombre sur l'étage. Quand un poste de travail est partagé par deux profils sécurité différents, le poste d'affectation est strié dans les deux couleurs. On peut avoir jusqu'à trois profils de sécurité différents sur un même poste de travail.
-
 ## Visualiser les profils Sécurité sur les plans
 
+### Vision "Conformité de la sécurité"
 
+Pour visualiser les profils Sécurité sur un plan, on peut sélectionner la vision "Conformité de la sécurité" :
 
+-   aller sur l'étage concerné
+-   cliquer sur l'icone verticale "visions du plan"
+-   sélectionner la vision "Conformité de la sécurité"
+
+Les postes de travail des équipiers de sécurité s'affichent dans la couleur du profil Sécurité de l'équipier de sécurité.
+Aucun calque n'est sélectionné, les plans sont "blancs" et les autres postes de travail également.
+
+:::warning
+Après un changement de vision ponctuel, il est préférable de revenir à la vision "Typologies des espaces" ou à la vision par défaut afin de ne pas être dans la mauvaise configuration à l'utilisation suivante.
+:::
+
+### Affichage des profils Sécurité par l'icône verticale "Bonhomme"
+
+On peut également visualiser en permanence les profils Sécurité sur les plans en cliquant sur l'icône verticale "bonhomme" pour "colorier les postes de travail par rapport aux personnes". Le calque actif n'est pas modifié.
+
+-   L'onglet "PAR AFFECTATIONS" affiche le nombre de personnes (et de postes de travail induits) affectées sur le plan par profil Sécurité et la validation d'affichage de chacun.
+
+-   L'onglet "PAR PROFILS DE SECURITE" affiche le nombre de personnes affectées sur le plan par profil de Sécurité. En cliquant sur le "papillon" en bout de ligne du profil Sécurité, on obtient le nom des équipiers de sécurité et leur poste d'affectation.
+
+Quand un poste de travail est partagé par deux profils sécurité différents, le poste d'affectation est strié dans les deux couleurs. On peut avoir jusqu'à trois profils Sécurité différents sur un même poste de travail.
 

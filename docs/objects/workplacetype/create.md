@@ -6,9 +6,9 @@ sidebar_position: 1
 <Youtube code="EV6UUY1utws"/>
 
 
-Pour créer un type de poste de travail dans Surfy, 
+Pour créer un type de poste de travail dans Surfy, depuis le menu de gauche, 
 
--   dans le menu de gauche, cliquer sur "Mobiliers", "Typologies", "Types de poste de travail" puis "créer un type de poste de travail".
+-   cliquer sur "Mobiliers", "Typologies", "Types de poste de travail" puis "créer un type de poste de travail".
 -   renseigner le nom du type de poste de travail (par exemple: PdT 180x80C) et la couleur (blanc par défaut)
 -   valider la création du type de poste de travail
 

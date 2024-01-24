@@ -10,9 +10,9 @@ En modifiant un type de poste de travail, tous les postes de travail associés �
 On peut modifier le nom et la couleur d'un type de poste de travail en modifiant la fiche du type de poste de travail.
 
 
-Pour accéder à la fiche du poste de travail,
+Pour accéder à la fiche du poste de travail, depuis le menu de gauche,
 
--   a partir de la page d'accueil, cliquer sur "Mobiliers", "Typologies" puis "types de poste de travail" et "Lister les types de poste de travail"
+-   cliquer sur "Mobiliers", "Typologies" puis "types de poste de travail" et "Lister les types de poste de travail"
 -   au début de la ligne du type de poste de travail, cliquer sur l'icone "Voir plus d'options pour le type de poste de travail XXX" puis sur "Modifier le type de poste de travail XXX"
 -   modifier le nom ou la couleur du type de poste de travail à modifier
 -   "Sauvegarder" les modifications
@@ -23,9 +23,9 @@ Un type de poste de travail est composé de un ou plusieurs types d'objet placé
 On peut ajouter, déplacer ou supprimer un type d'objet dans la composition d'un type de poste de travail afin de le modifier.
 
 
-Pour modifier la composition d'un type de poste de travail :
+Pour modifier la composition d'un type de poste de travail, depuis le menu de gauche,
 
--   a partir de la page d'accueil, cliquer sur "Mobiliers", "Typologies" puis "types de poste de travail" et "Lister les types de poste de travail"
+-   cliquer sur "Mobiliers", "Typologies" puis "types de poste de travail" et "Lister les types de poste de travail"
 -   au début de la ligne du type de poste de travail à modifier, cliquer sur l'icone "Voir plus d'options pour le type de poste de travail XXX" puis sur "Editer les formes et l'emplacement des types d'objet pour le type de poste de travail XXX"
 -   la composition actuelle apparait sur le plan.
 -   cliquer sur l'icône "Commencer la manipulation de l'espace de travail" en haut à gauche de la page, afin de faire apparaitre les icônes de modification de la composition

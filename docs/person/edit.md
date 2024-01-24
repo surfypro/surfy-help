@@ -21,7 +21,7 @@ Pour modifier les informations d'une personne,
 
 -   rechercher la personne avec la loupe, par nom, prénom ou matricule
 -   cliquer sur le résultat recherché
--   Dans le menu contextuel (etiquette grise sous la loupe de recherche), cliquer sur "modifier la personne XXX". 
+-   dans le menu contextuel (etiquette grise sous la loupe de recherche), cliquer sur "modifier la personne XXX". 
 -   modifier les informations éventuelles : 
         -   email, photo, titre de la personne, référence écran, ordinateur, téléphone fixe, téléphone portable, matricule, date d'entrée, date de sortie, commentaire
         -   la propriété "non affectable"permet de qualifier les personnes ne pouvant être affectées, personnes en congé maternité ou en congé longue durée

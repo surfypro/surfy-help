@@ -43,7 +43,7 @@ Une organisation ne peut pas avoir une "organisation Mère" ET une ou des "organ
 En effet, dans ce cas l'organisation n'est ni une Direction, parce qu'elle a elle-même une Direction, ni un Service parce qu'elle a elle-même des Services. L'organisation n'étant pas clairement définie, cela fausse la base de données dans Surfy ainsi que l'affichage sur les plans.
 :::
 
-Pour visualiser la hiérarchie des organisations dans Surfy, depuis le menu de gauche :
+Pour visualiser la hiérarchie des organisations dans Surfy, depuis le menu de gauche,
 
 -   cliquer sur "organisations", "organisations" puis "voir la hiérarchie des organisations".
 -   les Directions sont en tête des blocs obtenus, les Services sont listés dans chaque bloc.
@@ -53,7 +53,7 @@ Pour visualiser la hiérarchie des organisations dans Surfy, depuis le menu de g
 
 Une Direction n'a PAS d'"Organisation Mère" et peut avoir des "Organisations Filles".
 
-Pour créer une Direction, depuis le menu de gauche :
+Pour créer une Direction, depuis le menu de gauche,
 
 -   cliquer sur "organisations", "organisations" puis "créer une organisation" (ou cliquer sur le menu contextuel puis "créer une organisation" si déjà sur la page des organisations)
 -   renseigner le nom de la Direction et sa couleur
@@ -69,7 +69,7 @@ Un Service a obligatoirement une "Organisation Mère" et n'a PAS d'"Organisation
 
 Pour créer un Service, sa Direction doit d'abord avoir été créée dans Surfy. 
 
-Une fois la Direction créée, depuis le menu de gauche,
+Une fois la Direction créée, pour créer un Service, depuis le menu de gauche,
 
 -   cliquer sur "organisations", "organisations" puis "créer une organisation" (ou cliquer sur le menu contextuel puis "créer une organisation" si déjà sur la page des organisations)
 -   renseigner le nom du Service et sa couleur
