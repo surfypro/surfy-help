@@ -71,10 +71,15 @@ Chaque ligne correspond à un espace du bâtiment. Il n'y a pas de doublon de li
 
 ## Rapport des prestations de nettoyage du bâtiment
 
+<Youtube code="WCpIDzAikgk"/>
+
 Le "Rapport des prestations de nettoyage du bâtiment" permet d'établir le nombre d'heures mensuel nécessaire pour la réalisation de la prestation de nettoyage, en fonction de 2 critères :
 
 -   la cadence de nettoyage : définie dans la typologie des espaces, elle précise le nombre de m² qu'on peut nettoyer en une heure dans ce type d'espace.
 -   la fréquence de nettoyage : définie dans le calque d'analyse "Fréquence" de chaque espace, elle précise la fréquence à laquelle l'espace doit être nettoyé.
+
+Une fois les typologies d'espace renseignés sur leur cadence et tous les espaces à nettoyer renseignés sur leur fréquence, on peut demander le "Rapport des prestations de nettoyage du bâtiment".
+Le fichier apparait dans les téléchargements.
 
 Après activation des modifications, chaque ligne du fichier Excel affiche son "Nombre d'heure mensuel".
 Un calcul de somme en fin de colonne permet d'obtenir le nombre d'heure mensuel total pour le nettoyage des parties digitalisées dans Surfy.
