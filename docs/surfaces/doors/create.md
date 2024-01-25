@@ -12,19 +12,63 @@ Ce segment commun sera ensuite qualifié avec ou sans porte afin de refléter la
 
 ## Création d'un segment commun à deux espaces
     
+Un segment est une partie du périmètre d'un espace, délimitée par deux sommets.
+Un segment commun est un segment délimité par deux sommets communs à deux espaces.
 
 <Youtube code="iior39hytfk"/>
 
-Créer un segment commun entre deux espaces permet de définir un segment qui va séparer deux espaces à lui seul.
 
-Je passe en mode "édition du plan" et je clique sur la première pièce. Le segment de la pièce est bien séparé du segment de la circulation, ce sont ces deux segments qu'on va rassembler en un seul pour créer un passage et pouvoir déposer une porte. Pour cela, je vais fusionner deux sommets appartenant aux deux segments pour n'en faire plus qu'un seul. Mon premier segment de la pièce est bien situé, c'est celui-ci qui va servir de référence et sur lequel l'autre segment sera aligné. Le premier sommet sélectionné, je peux "ajouter un sommet sur un segment", créer le sommet et le sélectionner. Mes deux sommets sont maintenant sélectionnés, le premier qui est la référence et le deuxième qui va venir s'aligner sur le premier. Je "fusionne les sommets" et mon sommet est maintenant commun. Je fais la même chose de l'autre côté du segment. Mes sommets sont séparés, je peux sélectionner ce premier sommet qui va localiser le sommet final, je peux créer un nouveau sommet sur la circulation, sélectionner ce sommet. Les deux sommets sont sélectionnés, celui-ci étant sélectionné en premier va devenir la référence. Je peux maintenant "fusionner les sommets". Mon segment est maintenant commun, je peux bouger mon segment, il change la répartition entre les deux pièces. C'est un segment commun qui va pouvoir me servir maintenant à placer une porte ou un passage pour les itinéraires point à point.
+Pour créer un segment commun il faut "fusionner les sommets" des deux espaces, de chaque coté du segment.
+
+### Création des sommets à fusionner
+
+-   "activer le mode édition du plan" en cliquant sur l'icône "crayon" au dessus du plan
+
+-   cliquer dans le premier des deux espaces
+-   créer le segment à convertir, il doit être encadré par deux sommets :
+    -   cliquer sur l'icône "+" au dessus du plan pour "ajouter un sommet sur un segment"
+    -   passer la souris sur le segment
+    -   quand le segment est de couleur rouge, cliquer pour ajouter le sommet à l'endroit voulu
+    -   on peut déplacer le sommet après sa création en le glissant-déplaçant
+
+-   cliquer dans le deuxième espace
+-   créer un segment de la largeur approximative du segment du premier espace :
+    -   cliquer sur l'icône "+" au dessus du plan pour "ajouter un sommet sur un segment"
+    -   passer la souris sur le segment
+    -   quand le segment est de couleur rouge, cliquer pour ajouter les deux sommets près des sommets du premier espace
+
+-   une fois les sommets créés, cliquer sur l'icône "+" pour "arrêter l'ajout d'un sommet sur un segment".
 
 
-On qualifie ensuite le segment commun afin de refléter la réalité du passage entre les deux espaces.
+### Fusionner les sommets
+
+-   cliquer sur le premier sommet du premier espace
+-   enfoncer la touche "shift" et cliquer sur le premier sommet du deuxième espace
+-   les deux sommets sont sélectionnés en rouge
+-   cliquer sur l'icône "fusionner les sommets" au dessus du plan
+-   le premier sommet est commun aux deux espaces.
+
+-   cliquer sur le deuxième sommet du premier espace
+-   enfoncer la touche "shift" et cliquer sur le deuxième sommet du deuxième espace
+-   les deux sommets sont sélectionnés en rouge
+-   cliquer sur l'icône "fusionner les sommets" au dessus du plan
+-   le deuxième sommet est commun aux deux espaces.
+
+Une fois que les deux sommets des segments sont fusionnés, le segment obtenu est un segment commun.
+En mode "Edition du plan", les segments communs sont plus larges et affichés en rouge.
+
+On peut modifier la longueur ou la position d'un segment commun en déplaçant les sommets du segment.
+
+:::tip Bon à savoir
+Lors de la fusion des sommets, le premier sommet sélectionné pour la fusion donnera sa place au sommet fusionné.
+:::
+
+ Le segment commun va pouvoir être qualifié afin de placer une porte ou un passage pour les itinéraires point à point.
+
 
 ## Qualification d'un segment commun en porte ou passage
 
-On peut qualifier un segment de différentes façons :
+On peut donner différentes qualifications à un segment :
 
 -   sans cloison : permet de définir un passage sans cloison ni porte entre deux espaces différents
 -   cloison simple : permet de définir une cloison sans passage entre deux espaces, ou en périphérie d'espace ouvert
@@ -41,6 +85,7 @@ Pour qualifier un segment,
 -   renseigner le type segment dans la fiche du segment à gauche du plan
 -   La sauvegarde est automatique
 
+
 si besoin on peut inverser le sens de la porte ou afficher un double ouvrant,
 
 -   cliquer sur "modifier"
@@ -48,8 +93,13 @@ si besoin on peut inverser le sens de la porte ou afficher un double ouvrant,
 -   cocher la case "afficher des deux cotés" pour représenter une porte à double ouvrant
 -   sauvegarder les informations
 
+:::tip Bon à savoir
+La qualification du segment est valable sur toute la longueur du segment.
+Ainsi, la représentation de la porte couvrira toute la longueur du segment qualifié.
+:::
 
-## Qualification d'un segment simple en cloison
+
+## Qualification d'un segment simple en cloison simple
 
 Un segment simple n'appartient qu'à un seul espace. Il ne peut donc pas créer de passage.
 
