@@ -6,8 +6,15 @@ sidebar_position: 1
 
 <Youtube code="r53dlxQAioU"/>
 
-Les rapports de données d'un bâtiment s'obtiennent à partir de la page d'accueil, en cliquant sur l'icône en bout de bande de couleur du bâtiment puis sur "Tableau de bord du bâtiment XXX".
-Cliquer sur l'icône du rapport permet sa mise à disposition dans les téléchargements.
+Les rapports de données d'un bâtiment s'obtiennent à partir de la page d'accueil,
+
+-   cliquer sur l'icône en bout de ligne de couleur du bâtiment
+-   choisir "Tableau de bord du bâtiment XXX".
+-   cliquer sur l'icône du rapport voulu
+
+Le rapport en fichier Excel est disponible dans les téléchargements.
+
+## Rapports de données sur plusieurs bâtiments
 
 Pour obtenir les rapports de données sur plusieurs bâtiments :
 
@@ -16,8 +23,9 @@ depuis la page d'accueil,
 -   cliquer sur le menu contextuel (case grise sous la loupe de recherche)
 -   cliquer sur "Lister les bâtiments"
 -   sélectionner les bâtiments à analyser
--   cliquer sur le rapport de donnée voulu en haut de page
--   le rapport en fichier Excel est disponible dans les téléchargements
+-   cliquer sur le rapport de données voulu en haut de page
+
+Le rapport en fichier Excel est disponible dans les téléchargements.
 
 ## Rapport des personnes affectées dans le bâtiment
 

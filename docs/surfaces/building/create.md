@@ -10,36 +10,62 @@ sidebar_position: 1
 Pour créer un nouveau bâtiment à partir de la page d'accueil de Surfy,
 
 -   cliquer sur le menu contextuel, puis sur "Créer un bâtiment".
--   indiquer le nom du bâtiment et une <P code="building:color"/> pour son environnement.
-
-Les informations de nom et de couleur sont obligatoires pour créer un bâtiment.
-
+-   indiquer le nom du bâtiment et une couleur pour son environnement. Ces deux propriétés sont obligatoires.
 -   cliquer sur "valider la création" ou compléter les informations puis "valider la création".
 -   ajouter l'adresse du bâtiment permet de placer les bâtiments sur une carte pour une gestion multisite optimisée.
--   le "bâtiment de référence" est le bâtiment derrière lequel le nouveau bâtiment sera caché. Celui çi est alors considéré comme un scénario de son bâtiment de référence. Sans bâtiment de référence, le bâtiment sera en première page (page d'accueil) et sera considéré comme "bâtiment principal".
+-   le "bâtiment de référence" est le bâtiment derrière lequel le nouveau bâtiment sera caché. Celui çi sera considéré comme un scénario de son bâtiment de référence. Sans bâtiment de référence, le bâtiment sera en première page (page d'accueil) et sera considéré comme "bâtiment principal".
 -   à la création d'un scénario, le "bâtiment de référence" par défaut est le bâtiment à partir duquel le scénario a été créé.
  
 :::tip Le bâtiment de référence
-Le bâtiment de référence peut aussi être un bâtiment quelconque derrière lequel on positionne le bâtiment en question. Cela permet d'établir un classement sur plusieurs niveaux de vos différents projets. Les bâtiments visibles sur la page d'accueil sont vos "bâtiments principaux" et les recherches peuvent en option ne s'exercer que sur ces seuls bâtiments.
+Le bâtiment de référence peut aussi être un bâtiment quelconque derrière lequel on positionne le bâtiment en question. Cela permet d'établir un classement sur plusieurs niveaux des différents projets. Les bâtiments visibles sur la page d'accueil sont les "bâtiments principaux" et les recherches peuvent en option sous la loupe ne s'exercer que sur ces seuls bâtiments.
 :::
 
 ## Créer un scénario
 
-Créer un scénario dans Surfy c'est faire une copie partielle ou totale d'un bâtiment en vue d'un réaménagement, ou simplement d'une copie de sauvegarde.
+Créer un scénario dans Surfy c'est faire une copie partielle ou totale d'un bâtiment en vue d'un réaménagement, ou simplement pour effectuer une copie de sauvegarde.
 
 <Youtube code="6o7F-9XlyqM"/>
 
+Pour créer un nouveau scénario, depuis la page d'accueil,
+
+-   cliquer sur l'icône en bas à droite de la fiche du bâtiment pour obtenir "les scénarios et projets du bâtiment XXX"
+-   les fiches des scénarios existants apparaissent
+-   cliquer sur "créer un nouveau scénario"
+-   renseigner le nom du scénario à créer (exemple : projet 1, proposition réaménagement Compta, ...)
+-   donner une couleur différente de celle du bâtiment d'origine afin d'éviter des erreurs de bâtiment lors des modifications
+-   on peut dupliquer ou non :
+        -   les postes de travail
+        -   les affectations
+        -   les objets
+        -   les organisations des espaces
+        -   les calques  d'analyse des espaces
+-   sélectionner les étages à dupliquer
+-   cliquer sur "Créer un scénario"
+
+
+Après copie du bâtiment, le nouveau scénario apparait sur la page des scénarios de son bâtiment d'origine.
+L'icône en bas à droite du bâtiment d'origine s'incrémente d'un scénario supplémentaire.
 
 
 
--   cliquer sur l'icône en bas à droite "les scénarios et projets du bâtiment", ma page est vierge puisque je n'ai aucun scénario déjà créé ici mais je peux "créer un nouveau scénario", donc lui donner un nom : "projet 1",
+## Déplacer le scénario
 
-lui donner une couleur qui soit différente de mon bâtiment principal pour être sûr que je suis dans le bon environnement, et là je peux soit dupliquer ou non les postes de travail, dupliquer les affectations, dupliquer les objets, les organisations, ou les calques  d'analyse.
+On peut remonter le scénario sur la page d'accueil,
 
- Si je retire les affectations et les organisations, je suis dans un bâtiment aménagé mais fantôme avec personne d'affecté. Si je retire les postes de travail et les objets, j'obtiens des surfaces complètement vides avec des qualifications aux espaces du type "nature de  sol"
+-   cliquer sur l'icône "crayon" en bas de la fiche du bâtiment pour "modifier le bâtiment XXX"
+-   sur la ligne "Bâtiment d'origine", cliquer sur la croix pour "retirer le bâtiment"
+-   sauvegarder la modification
 
- mais mon bâtiment est complètement vide, et si je coche tout j'ai un bâtiment qui est l'exacte copie du bâtiment d'origine. Ensuite sur les étages je peux bien sûr tout sélectionner, tous désélectionner, ou ne sélectionner qu'un seul étage. Ensuite je vais "créer mon scénario" mon scénario est créé et se trouve derrière le bâtiment d'origine duquel il est tiré. Si je veux remonter ce projet en première page, je modifie le projet et je vais pouvoir ici dans" bâtiment de référence" supprimer  le bâtiment d'origine et du coup n'ayant plus de "bâtiment de référence", le bâtiment "projet 1" va se retrouver en première page ici. Si jamais maintenant je veux le cacher derrière le bâtiment "village" par exemple, je peux tout à fait modifier mon "projet 1"
+Le bâtiment scénario n'ayant plus de bâtiment d'origine, il se retrouve sur la page d'accueil, en "Bâtiment principal".
 
-et choisir comme "bâtiment de référence" mon bâtiment "village"
+On peut placer n'importe quel bâtiment A derrière n'importe quel autre bâtiment B, depuis la fiche du bâtiment A,
 
-je sauvegarde. Maintenant mon scénario n'est plus en première page, il n'est plus derrière le "bâtiment B", il est derrière le bâtiment "village". Ici le petit "1" indique qu'il y a un bâtiment derrière le bâtiment "village" et c'est le bâtiment "projet 1". Je peux faire revenir mon bâtiment "projet 1" derrière mon "bâtiment B", je sauvegarde et maintenant le petit "1" se situe derrière le "bâtiment B" et effectivement mon bâtiment projet est ici.
+-   cliquer sur l'icône "crayon" en bas de la fiche du bâtiment A pour "modifier le bâtiment A"
+-   sur la ligne "Bâtiment d'origine", cliquer sur l'icône "crayon"  pour "changer le bâtiment"
+-   choisir le "Bâtiment B"
+-   sauvegarder la modification
+
+Le bâtiment A est maintenant placé "derrière" le bâtiment B.
+Le bâtiment B incrémente le nombre de ses scénarios sur l'icône "les scénarios et projets du bâtiment B" en bas à droite de sa fiche.
+
+On peut donc créer une arborescence des bâtiments en organisant ces bâtiments sur plusieurs niveaux.

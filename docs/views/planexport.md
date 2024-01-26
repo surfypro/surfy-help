@@ -10,9 +10,9 @@ On peut exporter différents types de plans en fichiers PNG depuis Surfy :
 -   les plans 3D de l'étage
 -   les plans 3D du bâtiment, partiel ou complet
 
-Tous les plans sont exportés en fichiers PNG.
+Tous les plans sont exportés au format PNG.
 
-## Exporter les plans 2D
+## Exporter les plans 2D en Image
 
 ### Exporter le plan 2D d'un étage
 
@@ -50,7 +50,7 @@ Ils sont dynamiques et interactifs.
 
 Chaque modification sur le plan 2D est reportée immédiatement sur le plan 3D.
 
-### Exporter le plan 3D d'un Bâtiment
+### Exporter le plan 3D d'un bâtiment
 
 Pour obtenir le plan en 3D d'un bâtiment, depuis la page d'accueil,
 

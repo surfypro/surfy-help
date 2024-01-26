@@ -55,3 +55,17 @@ Le clic2 de la souris permet d'incliner et d'orienter le plan dans l'espace.
 Cliquer sur "Centre le plan en vue Zénithale" ou "Centre le plan en vue Isometric" permet d'afficher une image aux dimensions calibrées en vue zénithale ou Isométric, et donc interchangeable dans la mise à jour de solution tierce.
 :::
 
+## Afficher les plans 3D du bâtiment sur une carte
+
+On peut représenter un bâtiment en 3D, positionné et orienté correctement sur une carte de type "Maps".
+
+Pour afficher le bâtiment sur une carte, il faut tout d'abord entrer un adresse et calibrer le bâtiment sur la carte.
+Cette fonctionnalité n'est pas encore disponible
+
+Pour afficher les plans 3D du bâtiment sur une carte, depuis la page d'accueil,
+
+-   cliquer sur l'icône en bout de ligne de couleur du bâtiment concerné
+-   choisir "Voir le bâtiment en 3D sur un plan"
+
+Le bâtiment apparait en 3D dans son environnement.
+En passant la souris sur les espaces et le mobilier, on peut lire les informations de l'espace ou du mobilier et les affectations aux postes de travail. On peut afficher les calques et obtenir les données cumulées par calques, ...
