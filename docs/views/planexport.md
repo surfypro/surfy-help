@@ -43,14 +43,14 @@ Le fichier compressé est disponible dans les téléchargements.
 Tous les plans des étages reprennent la configuration du plan à partir duquel l'export est fait : pas besoin de charger le bon calque ni de choisir la bonne taille de police pour chaque étage, une fois suffit !
 :::
 
-## Sauvegarder les plans 3D en Image
+## Exporter les plans 3D en Image
 
 Les plans en 3D sont disponibles pour l'étage ou pour le bâtiment.
-Ils sont dynamiques et interactifs, comme les plans 2D.
+Ils sont dynamiques et interactifs.
 
 Chaque modification sur le plan 2D est reportée immédiatement sur le plan 3D.
 
-### les plans 3D Bâtiment
+### Exporter le plan 3D d'un Bâtiment
 
 Pour obtenir le plan en 3D d'un bâtiment, depuis la page d'accueil,
 
@@ -71,12 +71,34 @@ On peut incliner le plan 3D avec un angle constant, en cliquant sur "Centre le p
 
 Une fois le plan 3D correctement configuré,
 
--   cliquer sur l'icône verticale "engrenage" afin de "voir les options du plan"
+-   cliquer sur l'icône verticale "engrenage" afin de "voir les options du plan" (si ce n'est pas déjà le cas)
 -   cliquer sur "Télécharger l'image"
 
 L'export donne l'image du bâtiment 3D tel qu'il est sur l'écran.
 Le plan 3D du bâtiment est disponible dans les téléchargements.
 
 
-### Les plans 3D Etage
+### Exporter le plan 3D d'un étage
 
+Pour obtenir le plan en 3D d'un étage, à partir du plan de l'étage,
+
+-   cliquer dans le menu contextuel (case grise en dessous de la loupe de recherche)
+-   choisir "Le plan de l'étage XXX en 3D"
+
+Le plan de l'étage apparait en 3D en vue zénithale
+
+-   cliquer sur l'icône verticale "engrenage" afin de "voir les options du plan"
+-   choisir le type de représentation des cloisons (avec cloisons, sans cloison ou cloisons à mi-hauteur)
+-   la représentation "Cuby" remplace chaque espace par un cube reprenant la couleur du calque de l'espace
+
+La molette de la souris permet d'ajuster la taille du plan 3D.
+Le clic1 de la souris permet le déplacement du plan 3D dans la fenêtre de l'écran
+Le clic2 de la souris permet d'incliner et d'orienter le plan dans l'espace.
+
+:::tip Bon à savoir
+Cliquer sur "Centre le plan en vue Zénithale" ou "Centre le plan en vue Isometric" permet d'afficher une image aux dimensions calibrées en vue zénithale ou Isométric, et donc interchangeable dans la mise à jour de solution tierce.
+:::
+
+
+Cliquer sur "Télécharger l'image" génère le fichier PNG dans les téléchargements.
+L'image de l'étage en 3D est tel qu'il est sur l'écran.

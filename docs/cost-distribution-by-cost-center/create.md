@@ -42,7 +42,7 @@ Les espaces et postes de travail sans "type de distribution des coûts" n’appa
 Les données sont disponibles en fichiers Excel, avec ou sans ventilation, par étage ou pour l’ensemble du bâtiment :
 
 
-### Le fichier Excel, par Etage avec ventilation : 
+### Le fichier Excel, par Etage avec ventilation
 
 -   colonne A : Nom de l'étage  
 -   colonne B : Centre de coût (Nom du Centre de Coût)
@@ -55,7 +55,7 @@ Les données sont disponibles en fichiers Excel, avec ou sans ventilation, par �
 -   colonne I : Surface de l'étage à ventiler sur le bâtiment (Somme des surfaces à ventiler sur le bâtiment)
 
 
- ### Le fichier Excel, par Bâtiment avec ventilation :  
+ ### Le fichier Excel, par Bâtiment avec ventilation
 
 -   colonne A : Centre de coût (Nom du Centre de Coût) 
 -   colonne B : Surface des espaces incluant les ventilations (Surface à refacturer, par CdC) 
@@ -67,14 +67,14 @@ Les données sont disponibles en fichiers Excel, avec ou sans ventilation, par �
 -   colonne H : Surface totale du bâtiment incluant les surfaces à ventiler (Somme de toutes les surfaces ayant un CdC) 
 
 
-### Le fichier Excel, sans ventilation : 
+### Le fichier Excel, sans ventilation
 
 -   colonne A : Centre de coût (Nom du Centre de Coût) 
 -   colonne B : Surface (Surface à refacturer, par CdC) 
 -   colonne C : Clés de répartition (la somme des clés sur le bâtiment donne 1) 
 
 
-### Le fichier Excel, détails sans ventilation : 
+### Le fichier Excel, détails sans ventilation
 
 -   colonne A : Centre de coût (Nom du Centre de Coût) 
 -   colonne B : Type (entité à refacturer, espace ou poste de travail) 

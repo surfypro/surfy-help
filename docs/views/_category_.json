@@ -1,8 +1,8 @@
 {
-  "label": "Afficher les plans",
-  "position": 10,
+  "label": "Affichage des plans",
+  "position": 11,
   "link": {
     "type": "generated-index",
-    "description": "Tout savoir sur les vues des plans"
+    "description": "Tout savoir sur l'affichage des plans"
   }
 }
