@@ -1,7 +1,7 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
-# Afficher les Cartes de chaleur
+# Affichage des Cartes de chaleur
 
 Les cartes de chaleur permettent d'afficher la densité des données sur les plans en 2D.
 Les cartes de chaleur ne sont pas exportables en Image pour le moment, une capture d'écran est toujours possible.

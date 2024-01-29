@@ -18,6 +18,7 @@ On peut choisir le type de distribution des coûts pour chaque espace, et panach
 
 Pour plus d'information sur les types de distribution des coûts, voir le chapitre [Type de distribution des coûts](https://help.surfy.pro/docs/costcenter/create#type-de-distribution-des-co%C3%BBts).
 
+
 ## Clés de répartition et surfaces qualifiées par centre de coût
 
 Une fois ces informations entrées, à partir de la page d’accueil, cliquer sur l’icône au bout de la ligne de couleur du bâtiment pour demander les « Clés de répartition et surfaces qualifiées par Centre de Coût pour le bâtiment XXX » 
@@ -32,14 +33,22 @@ Le centre de coût nommé "-" liste les erreurs sur les espaces et les postes de
 
 Les espaces et postes de travail sans "type de distribution des coûts" n’apparaissent nulle part et leur surface n’est comptabilisée nulle part. 
 
- :::tip Bon à savoir
- Cliquer sur n'importe quel nom d'espace à la gauche des listes renvoit dans l'environnement de l'espace concerné, sur les plans. On peut alors modifier directement l'information, puis après rafraichissement(F5) revenir sur les clés de répartitions mises à jour.
- :::
+:::tip Bon à savoir
+Cliquer sur n'importe quel nom d'espace à la gauche des listes renvoit dans l'environnement de l'espace concerné, sur les plans. On peut alors modifier directement l'information, puis après rafraichissement(F5) revenir sur les clés de répartitions mises à jour.
+:::
+
+
+## Ventiler les parties communes
+
+Exemple de ventilation du centre de coût des "parties communes" entre deux autres centres de coût :
+
+<Youtube code="hc4hrITcg4o"/>
 
 
 ## Exports en Fichier Excel 
 
 Les données sont disponibles en fichiers Excel, avec ou sans ventilation, par étage ou pour l’ensemble du bâtiment :
+
 
 
 ### Le fichier Excel, par Etage avec ventilation

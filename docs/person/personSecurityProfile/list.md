@@ -37,7 +37,7 @@ Pour visualiser les profils Sécurité sur un plan, on peut sélectionner la vis
 -   cliquer sur l'icone verticale "visions du plan"
 -   sélectionner la vision "Conformité de la sécurité"
 
-Les postes de travail des équipiers de sécurité s'affichent dans la couleur du profil Sécurité de l'équipier de sécurité.
+Les postes de travail des équipiers de sécurité s'affichent dans la couleur du profil Sécurité de la personne.
 Aucun calque n'est sélectionné, les plans sont "blancs" et les autres postes de travail également.
 
 :::warning
@@ -47,6 +47,7 @@ Après un changement de vision ponctuel, il est préférable de revenir à la vi
 ### Affichage des profils Sécurité par l'icône verticale "Bonhomme"
 
 On peut également visualiser en permanence les profils Sécurité sur les plans en cliquant sur l'icône verticale "bonhomme" pour "colorier les postes de travail par rapport aux personnes". Le calque actif n'est pas modifié.
+Les postes de travail des équipiers de sécurité s'affichent dans la couleur du profil Sécurité de la personne.
 
 -   L'onglet "PAR AFFECTATIONS" affiche le nombre de personnes (et de postes de travail induits) affectées sur le plan par profil Sécurité et la validation d'affichage de chacun.
 

@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
-# Afficher les plans en 3D
+# Affichage des plans en 3D
 
 Par défaut, les plans sont affichés en 2D dans Surfy.
 

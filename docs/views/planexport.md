@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
-# Sauvegarder les plans en Image
+# Sauvegarde des plans en Image
 
 On peut exporter différents types de plans en fichiers PNG depuis Surfy :
 -   les plans 2D de l'étage
@@ -20,6 +20,9 @@ Pour exporter le plan d'un étage en Image,
 
 -   aller sur l'étage concerné
 -   afficher sur le plan le calque et les informations nécessaires à la sortie en Image : mobilier, affichage des textes, taille des polices, taille des icones, ...
+
+Pour plus d'informations sur la configuration d'affichage des plans, voir le chapitre [Affichage des plans en 2D](http://help.surfy.pro/docs/views/2Dviews).
+
 -   une fois le plan configuré, cliquer sur l'icône "nuage" au dessus du plan afin de "sauvegarder en Image" le plan de l'étage.
 
 -   choisir l'option de téléchargement en cliquant sur :

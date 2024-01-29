@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Utiliser les Visions du plan
+# Les Visions du plan
 
 Les visions du plan sont des pré-programmations de l'affichage et des fonctionnalités à choisir en fonction du domaine d'action de l'utilisateur. Ce sont des "raccourcis" vers les fonctionnalités demandées.
 
