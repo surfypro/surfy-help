@@ -5,15 +5,15 @@ sidebar_position: 1
 
 Les organisations dans Surfy ont deux niveaux hiérarchiques : Les Directions et les Services.
 
-
 :::warning Important
 On ne peut rattacher un espace, une personne ou un poste de travail qu'à un Service.
 :::
 
-Utiliser les organisations permet de rattacher les espaces à des Services qui rapportent eux-mêmes à des Directions, ainsi que la qualification des espaces en couleurs sur les plans et les données cumulées, par Service ou par Direction.
+Utiliser les organisations permet de rattacher les espaces à des Services rapportant eux-mêmes à des Directions.
+On peut alors visualiser la qualification des espaces en couleurs sur les plans et obtenir les données cumulées, par Service ou par Direction.
 
 Les personnes et les postes de travail peuvent également être rattachés à des Services.
-On peut alors lister les personnes ou les postes de travail par organisation dans les listes filtrées ou dans les rapports de données, ou savoir à quelle organisation une personne est rattachée.
+On peut ensuite lister les personnes ou les postes de travail par organisation dans les listes filtrées ou dans les rapports de données, ou savoir à quelle organisation une personne est rattachée.
 
 
 <Youtube code="bvOEaYs1prg"/>
@@ -23,7 +23,8 @@ On peut alors lister les personnes ou les postes de travail par organisation dan
 ## Hiérarchie des organisations
 
 -   Un Service est toujours rattaché à une Direction.
--   Si ce n'est pas le cas, l'organisation est considérée comme une Direction et non comme un Service.
+-   Une organisation qui n'a pas de Direction est elle même une Direction.
+-   Une Direction n'est jamais rattachée à une Direction.
 -   Seuls les Services sont proposés au rattachement des espaces, personnes ou postes de travail.
 
 
