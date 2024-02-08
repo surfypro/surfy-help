@@ -42,24 +42,6 @@
 ###  Partner Export Mappings {#partnerExportMappingUpdatedBies}
         
 
-###  Person To Dimension Bookings {#personToDimensionBookingCreatedBies}
-        
-
-###  Person To Dimension Bookings {#personToDimensionBookingUpdatedBies}
-        
-
-###  Person To Room Bookings {#personToRoomBookingCreatedBies}
-        
-
-###  Person To Room Bookings {#personToRoomBookingUpdatedBies}
-        
-
-###  Person To Workplace Bookings {#personToWorkplaceBookingCreatedBies}
-        
-
-###  Person To Workplace Bookings {#personToWorkplaceBookingUpdatedBies}
-        
-
 ###  Structure Points {#structurePointCreatedBies}
         
 
@@ -339,6 +321,24 @@ Permet d’afficher les objets par Famille sur les plans et dans l’inventaire 
 ### Relations personne à personne {#personToPersonUpdatedBies}
         
 
+### Réservations à l'espace des personnes {#personToRoomBookingCreatedBies}
+        
+Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+### Réservations à l'espace des personnes {#personToRoomBookingUpdatedBies}
+        
+Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+### Réservations au calque d'affectation des personnes {#personToDimensionBookingCreatedBies}
+        
+Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+### Réservations au calque d'affectation des personnes {#personToDimensionBookingUpdatedBies}
+        
+Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+### Réservations au poste de travail des personnes {#personToWorkplaceBookingCreatedBies}
+        
+Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+### Réservations au poste de travail des personnes {#personToWorkplaceBookingUpdatedBies}
+        
+Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
 ### Rôles de contenu {#contentRoleCreatedBies}
         
 

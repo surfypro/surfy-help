@@ -56,15 +56,15 @@ Le centre de coût permet de repartir les espaces dynamiquement pour la refactur
 
 ## Entités associées (liste)
 
-###  Person To Workplace Bookings {#personToWorkplaceBookings}
-        
-
 ### Affectations au poste de travail {#workplaceAffectations}
         
 
 ### Objets {#items}
         
 
+### Réservations au poste de travail des personnes {#personToWorkplaceBookings}
+        
+Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
 
 
 

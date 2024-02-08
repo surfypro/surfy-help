@@ -113,9 +113,6 @@ Permet de déterminer le mode de calcul de la clé de répartition des coûts
 
 ## Entités associées (liste)
 
-###  Person To Room Bookings {#personToRoomBookings}
-        
-
 ### Affectations d'espace {#roomAffectations}
         
 
@@ -131,6 +128,9 @@ L'association entre un point et un espace permet de conserver l'ordre des points
 ### Postes de travail {#workplaces}
         
 
+### Réservations à l'espace des personnes {#personToRoomBookings}
+        
+Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
 
 
 

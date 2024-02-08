@@ -86,15 +86,6 @@ Permet de détérminer le type de contrat de la personne
 
 ## Entités associées (liste)
 
-###  Person To Dimension Bookings {#personToDimensionBookings}
-        
-
-###  Person To Room Bookings {#personToRoomBookings}
-        
-
-###  Person To Workplace Bookings {#personToWorkplaceBookings}
-        
-
 ### Affectations au bâtiment {#personToBuildings}
         
 
@@ -119,6 +110,15 @@ Les relations des personnes depuis cette personne
 ### Relations vers cette personne {#personToPersonTargets}
         
 Les relations des personnes vers cette personne
+### Réservations à l'espace des personnes {#personToRoomBookings}
+        
+Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+### Réservations au calque d'affectation des personnes {#personToDimensionBookings}
+        
+Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+### Réservations au poste de travail des personnes {#personToWorkplaceBookings}
+        
+Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
 ### Utilisateurs de l'entreprise {#userCompanies}
         
 

@@ -11,7 +11,17 @@ Les nouveautés de novembre 2023 :
     - Activation du zoom via les gestes tactiles
     - Amélioration de la selection des formes
     - Désactivation des infos-bulles 
-- Possiblité de voir les icônes de sécurité (Surfy2) dans l'export en PDF de l'inventaire    
+- Possiblité de voir les icônes de sécurité (Surfy2) dans l'export en PDF de l'inventaire   
+- Sur le plan, les textes des espaces, postes de travail et objets ne sont plus cliquable pour sélectionner la forme et ne possèdent plus d'info bulle 
+- Amélioration du menu de gauche
+    - Rajout d'icones pour les options du premier niveau
+    - Il est maintenant possible de réduire le menu de gauche pour avoir plus d'espace sur le reste de la page
+- Amélioration des authentifications
+    - La connexion via google ouvre directement la page de connexion google via le popup
+    - Amélioration de la gestion de certificats pour la connexion via Microsoft 365
+- Harmonisation de l'affichage de la vue photos des bâtiments en fonction du type de bâtiment (vertical, horizontal ou sans images)
+
+** mise en place du vault pour la gestion des secrets **
     
 -->
 

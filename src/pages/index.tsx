@@ -24,22 +24,22 @@ function HomepageHeader() {
         </div>
         <div className='hero__subtitle' style={{ marginTop: 16 }}>
 
-        <Youtube code="BRBaZOa-lQo"/> <br />
+          <Youtube code="BRBaZOa-lQo" /> <br />
 
           <p>
 
             Bienvenue à la Surfy Academy<br />
             Vous trouverez ici notre guide utilisateur vous permettant de découvrir Surfy,<br />
 
-            ou d'approfondir vos connaissances sur ses fonctionnalités en choisissant l'onglet "Tutoriels".<br />
+            ou d'approfondir vos connaissances sur ses fonctionnalités en choisissant l'onglet <Link className="home" to="/docs/intro">"Tutoriels"</Link>.<br />
 
-            Pour découvrir l'historique des nouveautés choisissez l'onglet "Nouveautés"<br />
+            Pour découvrir l'historique des nouveautés choisissez l'onglet <Link className="home" to="/docs/changelog">"Nouveautés"</Link><br />
 
             Bon Surf(y) !
           </p>
         </div>
       </div>
-      
+
     </header>
   );
 }

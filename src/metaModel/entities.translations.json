@@ -242,16 +242,16 @@
                 "description": "Un emplacement de travail des personnes définie le lieu de travail des personnes"
             },
             "personToWorkplaceBooking": {
-                "label": " Person To Workplace Booking",
-                "description": null
+                "label": "Réservation au poste de travail des personnes",
+                "description": "Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
             },
             "personToRoomBooking": {
-                "label": " Person To Room Booking",
-                "description": null
+                "label": "Réservation à l'espace des personnes",
+                "description": "Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
             },
             "personToDimensionBooking": {
-                "label": " Person To Dimension Booking",
-                "description": null
+                "label": "Réservation au calque d'affectation des personnes",
+                "description": "Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
             },
             "jupObjectType": {
                 "label": "Type d'entité",
@@ -1097,28 +1097,28 @@
                     "description": "Un emplacement de travail des personnes définie le lieu de travail des personnes"
                 },
                 "personToWorkplaceBookingCreatedBies": {
-                    "label": " Person To Workplace Bookings",
-                    "description": null
+                    "label": "Réservations au poste de travail des personnes",
+                    "description": "Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
                 },
                 "personToWorkplaceBookingUpdatedBies": {
-                    "label": " Person To Workplace Bookings",
-                    "description": null
+                    "label": "Réservations au poste de travail des personnes",
+                    "description": "Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
                 },
                 "personToRoomBookingCreatedBies": {
-                    "label": " Person To Room Bookings",
-                    "description": null
+                    "label": "Réservations à l'espace des personnes",
+                    "description": "Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
                 },
                 "personToRoomBookingUpdatedBies": {
-                    "label": " Person To Room Bookings",
-                    "description": null
+                    "label": "Réservations à l'espace des personnes",
+                    "description": "Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
                 },
                 "personToDimensionBookingCreatedBies": {
-                    "label": " Person To Dimension Bookings",
-                    "description": null
+                    "label": "Réservations au calque d'affectation des personnes",
+                    "description": "Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
                 },
                 "personToDimensionBookingUpdatedBies": {
-                    "label": " Person To Dimension Bookings",
-                    "description": null
+                    "label": "Réservations au calque d'affectation des personnes",
+                    "description": "Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
                 },
                 "contentRoleCreatedBies": {
                     "label": "Rôles de contenu",
@@ -3201,8 +3201,8 @@
                     "description": null
                 },
                 "personToRoomBookings": {
-                    "label": " Person To Room Bookings",
-                    "description": null
+                    "label": "Réservations à l'espace des personnes",
+                    "description": "Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
                 },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
@@ -3667,8 +3667,8 @@
                     "description": null
                 },
                 "personToDimensionBookings": {
-                    "label": " Person To Dimension Bookings",
-                    "description": null
+                    "label": "Réservations au calque d'affectation des personnes",
+                    "description": "Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
                 },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
@@ -4451,16 +4451,16 @@
                     "description": "Un emplacement de travail des personnes définie le lieu de travail des personnes"
                 },
                 "personToWorkplaceBookings": {
-                    "label": " Person To Workplace Bookings",
-                    "description": null
+                    "label": "Réservations au poste de travail des personnes",
+                    "description": "Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
                 },
                 "personToRoomBookings": {
-                    "label": " Person To Room Bookings",
-                    "description": null
+                    "label": "Réservations à l'espace des personnes",
+                    "description": "Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
                 },
                 "personToDimensionBookings": {
-                    "label": " Person To Dimension Bookings",
-                    "description": null
+                    "label": "Réservations au calque d'affectation des personnes",
+                    "description": "Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
                 },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
@@ -4919,8 +4919,8 @@
                     "description": null
                 },
                 "personToWorkplaceBookings": {
-                    "label": " Person To Workplace Bookings",
-                    "description": null
+                    "label": "Réservations au poste de travail des personnes",
+                    "description": "Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
                 },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
@@ -5967,16 +5967,16 @@
                     "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
                 },
                 "personToWorkplaceBookings": {
-                    "label": " Person To Workplace Bookings",
-                    "description": null
+                    "label": "Réservations au poste de travail des personnes",
+                    "description": "Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
                 },
                 "personToRoomBookings": {
-                    "label": " Person To Room Bookings",
-                    "description": null
+                    "label": "Réservations à l'espace des personnes",
+                    "description": "Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
                 },
                 "personToDimensionBookings": {
-                    "label": " Person To Dimension Bookings",
-                    "description": null
+                    "label": "Réservations au calque d'affectation des personnes",
+                    "description": "Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
                 },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
@@ -5993,12 +5993,12 @@
                     "description": null
                 },
                 "startDatetime": {
-                    "label": "Start Datetime",
-                    "description": null
+                    "label": "Début de la réservation",
+                    "description": "La date et l'heure de début de la réservation"
                 },
                 "endDatetime": {
-                    "label": "End Datetime",
-                    "description": null
+                    "label": "Fin de la réservation",
+                    "description": "La date et l'heure de fin de la réservation"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -6067,12 +6067,12 @@
                     "description": null
                 },
                 "startDatetime": {
-                    "label": "Start Datetime",
-                    "description": null
+                    "label": "Début de la réservation",
+                    "description": "La date et l'heure de début de la réservation"
                 },
                 "endDatetime": {
-                    "label": "End Datetime",
-                    "description": null
+                    "label": "Fin de la réservation",
+                    "description": "La date et l'heure de fin de la réservation"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -6141,12 +6141,12 @@
                     "description": null
                 },
                 "startDatetime": {
-                    "label": "Start Datetime",
-                    "description": null
+                    "label": "Début de la réservation",
+                    "description": "La date et l'heure de début de la réservation"
                 },
                 "endDatetime": {
-                    "label": "End Datetime",
-                    "description": null
+                    "label": "Fin de la réservation",
+                    "description": "La date et l'heure de fin de la réservation"
                 },
                 "createdAt": {
                     "label": "Date de création",

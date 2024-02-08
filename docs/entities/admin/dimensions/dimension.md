@@ -29,9 +29,6 @@ La valeur peut être utilisé pour associé le calque à une valeur numérique a
 
 ## Entités associées (liste)
 
-###  Person To Dimension Bookings {#personToDimensionBookings}
-        
-
 ### Affectations aux calques d'affectation {#dimensionToPeople}
         
 
@@ -44,6 +41,9 @@ La valeur peut être utilisé pour associé le calque à une valeur numérique a
 ### Calques d'analyse par étage {#dimensionFloors}
         
 
+### Réservations au calque d'affectation des personnes {#personToDimensionBookings}
+        
+Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
 
 
 
