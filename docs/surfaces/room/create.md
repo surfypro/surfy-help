@@ -15,7 +15,7 @@ Pour créer un espace (ou pièce) sur un étage qui a déjà son fond de plan et
 -   cliquer sur l'icône "Ajouter un espace" permet d'avoir une croix indiquant l'horizontalité et la verticalité afin de faciliter le placement correct des sommets de l'espace à créer.
 
 :::warning Attention
-L'icône "Ajouter un espace" n'apparait que si aucun espace ni aucun objet n'est sélectionné (pour cela, cliquer sur une zone inactive du plan), et que l'icône "Activer le mode édition du plan" est activée.
+L'icône "Ajouter un espace" n'apparait que si aucun espace ni aucun objet n'est sélectionné (pour cela, cliquer sur une zone non digitalisée du plan), et que l'icône "Activer le mode édition du plan" est activée.
 :::
 
 
