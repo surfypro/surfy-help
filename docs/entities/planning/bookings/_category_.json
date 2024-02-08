@@ -1,0 +1,8 @@
+{
+  "label": "Réservations",
+  "position": 1,
+  "link": {
+    "slug": "bookings",
+    "type": "generated-index"
+  }
+}
