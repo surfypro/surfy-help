@@ -23,10 +23,10 @@ Coordonnée sur l'axe Y
 ### Associations entre un point et un espace {#roomPointRooms}
         
 L'association entre un point et un espace permet de conserver l'ordre des points dans un espace afin de constituer un polyon
-### Segments {#roomPointSegmentStarts}
+### Qualifications de segments {#roomPointSegmentStarts}
         
 
-### Segments {#roomPointSegmentEnds}
+### Qualifications de segments {#roomPointSegmentEnds}
         
 
 

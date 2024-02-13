@@ -44,6 +44,17 @@ const config: Config = {
           editUrl:
             'https://github.com/surfypro/surfy-help/tree/main/',
         },
+        // entities: {
+        //   admonitions: {
+        //     keywords: ['p'],
+        //     extendDefaults: true
+        //   },
+        //   sidebarPath: './sidebars.ts',
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     'https://github.com/surfypro/surfy-help/tree/main/',
+        // },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
@@ -57,7 +68,18 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'entities',
+        path: 'entities',
+        routeBasePath: 'entities',
+        sidebarPath: './sidebars.ts',
+        // ... other options
+      },
+    ],
+  ],
   themeConfig: {
     // Replace with your project's social card
     image: 'img/surfy-social-card.png',
@@ -74,12 +96,21 @@ const config: Config = {
           position: 'left',
           label: 'Tutoriels',
         },
+        // {
+        //   id: 'entities',
+        //   type: 'docSidebar',
+        //   sidebarId: 'entities',
+        //   position: 'left',
+        //   label: 'Reference',
+        // },
         {
           type: 'localeDropdown',
           position: 'right'
         },
         { to: '/docs/changelog', label: 'Nouveautés', position: 'left' },
         { to: '/blog', label: 'Blog', position: 'left' },
+        { label: 'References', to: '/entities' },
+
         // {
         //   href: 'https://github.com/surfypro/surfy-help',
         //   label: 'GitHub',

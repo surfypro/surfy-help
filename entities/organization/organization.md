@@ -17,7 +17,7 @@ Nom qui va définir l'organisation
 
 ## Entités associées (unique)
 
-### Organisation mère {#organization}
+### Direction {#organization}
         
 
 
@@ -32,13 +32,13 @@ Nom qui va définir l'organisation
 ### Organisations des étages {#organizationFloors}
         
 
-### Organisations filles {#organizations}
-        
-
 ### Personnes {#people}
         
 
 ### Postes de travail {#workplaces}
+        
+
+### Services {#organizations}
         
 
 

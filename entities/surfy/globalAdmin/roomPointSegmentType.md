@@ -16,7 +16,7 @@
 
 ## Entités associées (liste)
 
-### Segments {#roomPointSegments}
+### Qualifications de segments {#roomPointSegments}
         
 
 

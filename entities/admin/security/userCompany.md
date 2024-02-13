@@ -309,6 +309,12 @@ Permet d’afficher les objets par Famille sur les plans et dans l’inventaire 
 ### Profils de sécurité des personnes {#personSecurityProfileUpdatedBies}
         
 
+### Qualifications de segments {#roomPointSegmentCreatedBies}
+        
+
+### Qualifications de segments {#roomPointSegmentUpdatedBies}
+        
+
 ### Règles d'authentification {#userRegistrationTenantRuleCreatedBies}
         
 
@@ -361,12 +367,6 @@ Les réservations des postes de travail des personnes sont enregistrés et dispo
         
 
 ### Rôles de l'utilisateur de l'entreprise {#jupUserCompanyToJupRoleUpdatedBies}
-        
-
-### Segments {#roomPointSegmentCreatedBies}
-        
-
-### Segments {#roomPointSegmentUpdatedBies}
         
 
 ### Statut des personnes {#personStateCreatedBies}

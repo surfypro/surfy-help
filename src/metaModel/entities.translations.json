@@ -122,7 +122,7 @@
                 "description": null
             },
             "roomPointSegment": {
-                "label": "Segment",
+                "label": "Qualification de segment",
                 "description": null
             },
             "itemTypePoint": {
@@ -865,11 +865,11 @@
                     "description": "L'association entre un point et un espace permet de conserver l'ordre des points dans un espace afin de constituer un polyon"
                 },
                 "roomPointSegmentCreatedBies": {
-                    "label": "Segments",
+                    "label": "Qualifications de segments",
                     "description": null
                 },
                 "roomPointSegmentUpdatedBies": {
-                    "label": "Segments",
+                    "label": "Qualifications de segments",
                     "description": null
                 },
                 "itemTypePointCreatedBies": {
@@ -1475,15 +1475,15 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "organizationId": {
-                    "label": "Identifiant organisation mère",
+                    "label": "Identifiant de la direction",
                     "description": null
                 },
                 "organization": {
-                    "label": "Organisation mère",
+                    "label": "Direction",
                     "description": null
                 },
                 "organizations": {
-                    "label": "Organisations filles",
+                    "label": "Services",
                     "description": null
                 },
                 "userCompanyCreatedById": {
@@ -3267,11 +3267,11 @@
                     "description": "L'association entre un point et un espace permet de conserver l'ordre des points dans un espace afin de constituer un polyon"
                 },
                 "roomPointSegmentStarts": {
-                    "label": "Segments",
+                    "label": "Qualifications de segments",
                     "description": null
                 },
                 "roomPointSegmentEnds": {
-                    "label": "Segments",
+                    "label": "Qualifications de segments",
                     "description": null
                 },
                 "companyId": {
@@ -3371,7 +3371,7 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "roomPointSegments": {
-                    "label": "Segments",
+                    "label": "Qualifications de segments",
                     "description": null
                 }
             },
