@@ -1,6 +1,6 @@
 {
   "label": "Organisations",
-  "position": 4,
+  "position": 5,
   "link": {
     "slug": "organization",
     "type": "generated-index"

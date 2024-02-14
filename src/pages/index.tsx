@@ -33,7 +33,7 @@ function HomepageHeader() {
 
             ou d'approfondir vos connaissances sur ses fonctionnalités en choisissant l'onglet <Link className="home" to="/docs/intro">"Tutoriels"</Link>.<br />
 
-            Pour découvrir l'historique des nouveautés choisissez l'onglet <Link className="home" to="/docs/changelog">"Nouveautés"</Link>.<br />
+            Pour découvrir l'historique des nouveautés choisissez l'onglet <Link className="home" to="/changelog/app">"Nouveautés"</Link>.<br />
 
             Bon Surf(y) !
           </p>

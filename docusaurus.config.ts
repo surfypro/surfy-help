@@ -38,6 +38,7 @@ const config: Config = {
             keywords: ['p'],
             extendDefaults: true
           },
+
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -70,11 +71,31 @@ const config: Config = {
   ],
   plugins: [
     [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [{
+          from: '/docs/changelog',
+          to: '/changelog/app'
+          // to: '/docs/intro'
+        }]
+      }
+    ],
+    [
       '@docusaurus/plugin-content-docs',
       {
         id: 'entities',
         path: 'entities',
         routeBasePath: 'entities',
+        sidebarPath: './sidebars.ts',
+        // ... other options
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'changelog',
+        path: 'changelog',
+        routeBasePath: 'changelog',
         sidebarPath: './sidebars.ts',
         // ... other options
       },
@@ -96,20 +117,13 @@ const config: Config = {
           position: 'left',
           label: 'Tutoriels',
         },
-        // {
-        //   id: 'entities',
-        //   type: 'docSidebar',
-        //   sidebarId: 'entities',
-        //   position: 'left',
-        //   label: 'Reference',
-        // },
         {
           type: 'localeDropdown',
           position: 'right'
         },
-        { to: '/docs/changelog', label: 'Nouveautés', position: 'left' },
+        { to: '/entities/intro', label: 'Références' },
+        { to: '/changelog/app', label: 'Nouveautés', position: 'left' },
         { to: '/blog', label: 'Blog', position: 'left' },
-        { label: 'References', to: '/entities' },
 
         // {
         //   href: 'https://github.com/surfypro/surfy-help',

@@ -1,6 +1,6 @@
 {
   "label": "Collaborateurs",
-  "position": 0,
+  "position": 1,
   "link": {
     "slug": "human",
     "type": "generated-index"
