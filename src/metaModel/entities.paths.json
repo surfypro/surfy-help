@@ -44,7 +44,7 @@
         "dimensionType": "/entities/admin/dimensions",
         "dimensionRoom": "/entities/admin/dimensions",
         "dimensionTypeToBuilding": "/entities/admin/dimensions",
-        "company": "/entities/admin/security",
+        "company": "/entities/admin",
         "userCompany": "/entities/admin/security",
         "contentRole": "/entities/admin/security",
         "contentRoleToUserCompany": "/entities/admin/security",
