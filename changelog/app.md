@@ -1,8 +1,6 @@
 # Nouveautés
 
-
-
-<!-- ## 17 Janvier 2024 - v3.3.211 ##
+## 15 Février 2024 - v3.3.211 ##
 
 - Amélioration de la navigation dans les plans via les appareils tactiles
     - Activation du zoom via les gestes tactiles
@@ -17,9 +15,10 @@
     - La connexion via google ouvre directement la page de connexion google via le popup
     - Amélioration de la gestion de certificats pour la connexion via Microsoft 365
 - Harmonisation de l'affichage de la vue photos des bâtiments en fonction du type de bâtiment (vertical, horizontal ou sans images)
+- L'icône en haut à gauche pour voir le tableau de bord de l'entreprise n'est plus directement disponible, il faut passer par le menu administration > entreprises pour y accèder
 
+<!-- 
 ** mise en place du vault pour la gestion des secrets **
-    
 -->
 
 ## 13 Janvier 2024 - v3.3.208 ##
