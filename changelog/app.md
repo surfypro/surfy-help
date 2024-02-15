@@ -1,18 +1,15 @@
 # Nouveautés
 
-Les nouveautés de novembre 2023 :
-
-<Youtube code="yXREgUBb_vQ"/>
 
 
 <!-- ## 17 Janvier 2024 - v3.3.211 ##
 
 - Amélioration de la navigation dans les plans via les appareils tactiles
     - Activation du zoom via les gestes tactiles
-    - Amélioration de la selection des formes
+    - Amélioration de la sélection des formes
     - Désactivation des infos-bulles 
 - Possiblité de voir les icônes de sécurité (Surfy2) dans l'export en PDF de l'inventaire   
-- Sur le plan, les textes des espaces, postes de travail et objets ne sont plus cliquable pour sélectionner la forme et ne possèdent plus d'info bulle 
+- Sur le plan, cliquer sur le texte des espaces, des postes de travail ou des objets n'a pas d'incidence
 - Amélioration du menu de gauche
     - Rajout d'icones pour les options du premier niveau
     - Il est maintenant possible de réduire le menu de gauche pour avoir plus d'espace sur le reste de la page
@@ -28,7 +25,7 @@ Les nouveautés de novembre 2023 :
 ## 13 Janvier 2024 - v3.3.208 ##
 
 - Il n'est plus possible d'affecter une personne sur un poste de travail en flex ou de passage via l'interface du plan
-- Il est maintenant possible de zoomer sur des calques d'analyse ou d'affectations dans la sélection
+- Il est maintenant possible de zoomer sur le quartier d'affectation sélectionné
 - Rajout d'une option "est réservable" sur les postes de travail permettant d'indiquer à un outil de réservation que le poste de travail est réservable
 
 
@@ -40,6 +37,10 @@ Les nouveautés de novembre 2023 :
 - Mise en place de deux nouveaux types de segment 
     - pour les portes coulissantes
     - pour les cloisons vides
+
+Les nouveautés de novembre 2023 :
+
+<Youtube code="yXREgUBb_vQ"/>
 
  ## 17 Novembre 2023 - v3.3.204 ##
 
