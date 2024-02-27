@@ -124,6 +124,7 @@ const config: Config = {
         { to: '/entities/intro', label: 'Références' },
         { to: '/changelog/app', label: 'Nouveautés', position: 'left' },
         { to: '/blog', label: 'Blog', position: 'left' },
+        { to: 'https://www.surfy.pro/contact', label: 'Nous contacter', position: 'left', target: '_blank', rel: 'noopener noreferrer' }
 
         // {
         //   href: 'https://github.com/surfypro/surfy-help',

@@ -1,5 +1,15 @@
 # Nouveautés
 
+
+## 15 Février 2024 - v3.3.216 ##
+
+- Mise en place d'une option permettant de changer la qualitée de l'export de l'image du plan en 2D.
+
+<!-- 
+** mise en place du vault pour la gestion des secrets **
+-->
+
+
 ## 15 Février 2024 - v3.3.211 ##
 
 - Amélioration de la navigation dans les plans via les appareils tactiles
@@ -17,9 +27,6 @@
 - Harmonisation de l'affichage de la vue photos des bâtiments en fonction du type de bâtiment (vertical, horizontal ou sans images)
 - L'icône en haut à gauche pour voir le tableau de bord de l'entreprise n'est plus directement disponible, il faut passer par le menu administration > entreprises pour y accèder
 
-<!-- 
-** mise en place du vault pour la gestion des secrets **
--->
 
 ## 13 Janvier 2024 - v3.3.208 ##
 
