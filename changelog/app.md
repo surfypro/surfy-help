@@ -1,11 +1,13 @@
 # Nouveautés
 
 
-## 15 Février 2024 - v3.3.216 ##
+## 27 Février 2024 - v3.3.217 ##
 
 - Mise en place d'une option permettant de changer la qualitée de l'export de l'image du plan en 2D.
 
+
 <!-- 
+- Mise en place d'un export des images en PDF
 ** mise en place du vault pour la gestion des secrets **
 -->
 
