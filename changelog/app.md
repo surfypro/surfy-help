@@ -3,7 +3,7 @@
 
 ## 27 Février 2024 - v3.3.217 ##
 
-- Mise en place d'une option permettant de changer la qualitée de l'export de l'image du plan en 2D.
+- Mise en place d'une option permettant de changer la qualité de l'export de l'image du plan en 2D.
 
 
 <!-- 
