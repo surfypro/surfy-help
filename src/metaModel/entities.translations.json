@@ -372,6 +372,18 @@
             "itemFact": {
                 "label": "Mouvement d'objet",
                 "description": null
+            },
+            "featureFamily": {
+                "label": " Feature Family",
+                "description": null
+            },
+            "featureGroup": {
+                "label": " Feature Group",
+                "description": null
+            },
+            "feature": {
+                "label": " Feature",
+                "description": null
             }
         },
         "propertyTypeTranslations": {
@@ -1278,6 +1290,30 @@
                 },
                 "itemFactUpdatedBies": {
                     "label": "Mouvements d'objet",
+                    "description": null
+                },
+                "featureFamilyCreatedBies": {
+                    "label": " Feature Families",
+                    "description": null
+                },
+                "featureFamilyUpdatedBies": {
+                    "label": " Feature Families",
+                    "description": null
+                },
+                "featureGroupCreatedBies": {
+                    "label": " Feature Groups",
+                    "description": null
+                },
+                "featureGroupUpdatedBies": {
+                    "label": " Feature Groups",
+                    "description": null
+                },
+                "featureCreatedBies": {
+                    "label": " Features",
+                    "description": null
+                },
+                "featureUpdatedBies": {
+                    "label": " Features",
                     "description": null
                 }
             },
@@ -4960,6 +4996,10 @@
                     "label": "Text Anchor",
                     "description": null
                 },
+                "price": {
+                    "label": "Price",
+                    "description": null
+                },
                 "createdAt": {
                     "label": "Date de création",
                     "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
@@ -7730,6 +7770,172 @@
                 },
                 "item": {
                     "label": "Objet",
+                    "description": null
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
+            "featureFamily": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "name": {
+                    "label": "Name",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "featureGroups": {
+                    "label": " Feature Groups",
+                    "description": null
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
+            "featureGroup": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "name": {
+                    "label": "Name",
+                    "description": null
+                },
+                "sortOrder": {
+                    "label": "Sort Order",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "featureFamilyId": {
+                    "label": "Id ( Feature Family)",
+                    "description": null
+                },
+                "featureFamily": {
+                    "label": " Feature Family",
+                    "description": null
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "features": {
+                    "label": " Features",
+                    "description": null
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
+            "feature": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "name": {
+                    "label": "Name",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "featureGroupId": {
+                    "label": "Id ( Feature Group)",
+                    "description": null
+                },
+                "featureGroup": {
+                    "label": " Feature Group",
                     "description": null
                 },
                 "userCompanyCreatedById": {

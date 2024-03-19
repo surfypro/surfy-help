@@ -1,5 +1,11 @@
 # Nouveautés
 
+<!-- ## 7 Mars 2024  - v3.3.221 ## 
+
+- Double confirmation lors de la suppression des échelles du plan
+- Ajout du prix sur les objets en plus des types d'objets
+-->
+
 
 ## 7 Mars 2024  - v3.3.219 ##
 

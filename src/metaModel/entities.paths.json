@@ -92,6 +92,9 @@
         "occupancyStatus": "/entities/surfy/globalAdmin",
         "roomPointSegmentType": "/entities/surfy/globalAdmin",
         "workingLocation": "/entities/surfy/globalAdmin",
-        "personGender": "/entities/surfy"
+        "personGender": "/entities/surfy",
+        "featureFamily": "/entities/help",
+        "featureGroup": "/entities/help",
+        "feature": "/entities/help"
     }
 }
