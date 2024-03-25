@@ -1,6 +1,6 @@
 # Nouveautés
 
-<!-- ## 7 Mars 2024  - v3.3.221 ## 
+## 25 Mars 2024  - v3.3.223 ## 
 
 - Double confirmation lors de la suppression des échelles du plan
 - Ajout du prix sur les objets en plus des types d'objets
@@ -8,10 +8,9 @@
 - Voir les affectations aux bâtiments depuis le moteur de recherche quand une personne est recherchée
 - Le rapport de qualité des données des personnes "Personnes affectées à un bâtiment sans affectation de poste de travail" exclu mainteant les personnes "non affectables"
 - Mise en place d'un rapport de qualité des données sur les espaces permettant de trouver les espaces sans points ou avec 1 ou 2 points uniquement
-
 - Fixes
     - Amélioration des info-bulles avec plusieurs points qui étaient tronqués
--->
+
 
 
 ## 7 Mars 2024  - v3.3.219 ##

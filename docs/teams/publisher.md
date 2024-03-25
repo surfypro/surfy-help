@@ -29,7 +29,7 @@ L'application est hébérgée sur Microsoft Azure France. Elle est conforme aux 
 
 Retrouvez tous nos engagements sur notre site internet :
 
-https://www.surfy.pro/security
+https://www.surfy.fr/security
 
 # Déploiement & adoption pour les administrateurs IT
 
