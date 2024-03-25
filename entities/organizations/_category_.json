@@ -1,8 +1,8 @@
 {
-  "label": "Plannings",
+  "label": "Organisations",
   "position": 5,
   "link": {
-    "slug": "booking",
+    "slug": "organizations",
     "type": "generated-index"
   }
 }

@@ -3021,40 +3021,40 @@
             },
             "room": {
                 "id": {
-                    "label": "Identifiant de l'espace",
-                    "description": ""
+                    "label": "Id",
+                    "description": null
                 },
                 "name": {
-                    "label": "Nom de l'espace",
-                    "description": "Le nom d'espace est utilisé pour le définir et le retrouver facilement."
+                    "label": "Name",
+                    "description": null
                 },
                 "area": {
-                    "label": "Surface",
-                    "description": "La surface qualifiée au sol pour cet espace"
+                    "label": "Area",
+                    "description": null
                 },
                 "perimeter": {
-                    "label": "Périmètre",
-                    "description": "Le périmètre d'espace représente son contour"
+                    "label": "Perimeter",
+                    "description": null
                 },
                 "textAnchor": {
                     "label": "Text Anchor",
                     "description": null
                 },
                 "capacity": {
-                    "label": "Capacité",
-                    "description": "La capacité peut être utilisé pour définir le nombre de places disponibles dans un espace ou pour connaître le maximum de personnes qu'on peut mettre dans un espace"
+                    "label": "Capacity",
+                    "description": null
                 },
                 "workplacesCount": {
                     "label": "Nombre de postes de travail",
-                    "description": "Le nombre de postes de travail dans l'espace est calculé automatiquement"
+                    "description": "Le nombre total de postes de travail dans les espaces"
                 },
                 "workplacesRatio": {
-                    "label": "Ratio par poste de travail",
-                    "description": "Le ratio par poste de travail est le nombre de métres carrés de l'espace divisé par le nombre de postes de travail, cette valeur est calculée automatiquement"
+                    "label": "Ratio postes de travail",
+                    "description": "Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail"
                 },
                 "peopleCount": {
-                    "label": "Nombre d'affectations",
-                    "description": "Le nombre de personnes affectées dans l'espace, soit directement, soit à travers un poste de travail"
+                    "label": "People Count",
+                    "description": null
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
@@ -3062,31 +3062,31 @@
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
-                    "description": "Le ratio d'occupation est le nombre de métres carrés de l'espace divisé par le nombre de personnes affectées aux espaces, soit directement, soit via un poste de travail , cette valeur est calculée"
+                    "description": "Le ratio d'occupation est le nombre de métres carrés divisé par le nombre de personnes affectées soit directement dans les espaces, soit via un poste de travail"
                 },
                 "occupancyRate": {
                     "label": "Taux d'occupation",
-                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisé par le nombre de postes de travail"
+                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
                 },
                 "expansionRatio": {
                     "label": "Taux de foisonnement",
-                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisé par le nombre de postes de travail"
+                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisés par le nombre de postes de travail"
                 },
                 "freeWorkplacesCount": {
                     "label": "Nombre de postes libres",
-                    "description": "Nombre de postes libres dans l'espace"
+                    "description": "Nombre total de postes libres"
                 },
                 "flexWorkplacesCount": {
                     "label": "Nombre de postes flex",
-                    "description": "Nombre de postes flex dans l'espace"
+                    "description": "Nombre total de postes flex"
                 },
                 "sharedWorkplacesCount": {
                     "label": "Nombre de postes de travail partagés",
-                    "description": "Nombre de postes de travail partagés par au moins 2 personnes"
+                    "description": "Nombre total de postes de travail partagés par au moins 2 personnes"
                 },
                 "sharedWorkplacesRatio": {
                     "label": "Taux de postes de travail partagés",
-                    "description": "Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail de l'espace"
+                    "description": "Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail"
                 },
                 "transitWorkplacesCount": {
                     "label": "Nombre de postes de travail de passage",
@@ -3109,28 +3109,28 @@
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
                 },
                 "info": {
-                    "label": "Information supplémentaire",
-                    "description": "Permet de conserver des informations supplémentaires de type texte sur l'espace"
+                    "label": "Info",
+                    "description": null
                 },
                 "bookingEmail": {
-                    "label": "Email utilisé pour la réservation de cet espace",
-                    "description": "Ce courriel permet de réserver cette salle via le système de messagerie"
+                    "label": "Booking Email",
+                    "description": null
                 },
                 "externalId2": {
                     "label": "External Id2",
                     "description": null
                 },
                 "picture": {
-                    "label": "Photo de l'espace",
-                    "description": "La photo de l'espace permet de le visualiser facilement"
+                    "label": "Picture",
+                    "description": null
                 },
                 "keyCylinderCode": {
-                    "label": "Numéro de cylindre",
-                    "description": "Le numéro de cylindre permet de définir le numéro de cylindre de la serrure de la porte de l'espace ou un élement en relation avec l'accès physique de l'espace"
+                    "label": "Key Cylinder Code",
+                    "description": null
                 },
                 "livePeopleCount": {
-                    "label": "Nombre de personnes dans l'espace en temps réel",
-                    "description": "Cette valeur est mise à jour par les capteurs de comptage des personnes présent dans l'espace et fournit le nombre de personnes présent en temps réel dans l'espace"
+                    "label": "Live People Count",
+                    "description": null
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -3182,7 +3182,7 @@
                 },
                 "costCenter": {
                     "label": "Centre de coût",
-                    "description": "Permet de connaitre à quel centre de coût associer l'espace quand il s'agit de gérer la refacturation au centre de coût par espace"
+                    "description": "Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation"
                 },
                 "distributionCostTypeId": {
                     "label": "Id (type de distribution des coûts)",
@@ -3190,7 +3190,7 @@
                 },
                 "distributionCostType": {
                     "label": "Type de distribution des coûts",
-                    "description": "Permet de déterminer le mode de calcul de la clé de répartition des coûts"
+                    "description": null
                 },
                 "roomConnectorId": {
                     "label": "Identifiant du connecteur d'espace",
@@ -3342,7 +3342,7 @@
                 },
                 "roomId": {
                     "label": "Identifiant de l'espace",
-                    "description": ""
+                    "description": null
                 },
                 "room": {
                     "label": "Espace",
@@ -3741,8 +3741,8 @@
                     "description": null
                 },
                 "roomId": {
-                    "label": "Identifiant de l'espace",
-                    "description": ""
+                    "label": "Id (espace)",
+                    "description": null
                 },
                 "room": {
                     "label": "Espace",
@@ -4657,8 +4657,8 @@
                     "description": null
                 },
                 "roomId": {
-                    "label": "Identifiant de l'espace",
-                    "description": ""
+                    "label": "Id (espace)",
+                    "description": null
                 },
                 "room": {
                     "label": "Espace",
@@ -4907,8 +4907,8 @@
                     "description": null
                 },
                 "roomId": {
-                    "label": "Identifiant de l'espace",
-                    "description": ""
+                    "label": "Id (espace)",
+                    "description": null
                 },
                 "room": {
                     "label": "Espace",
@@ -4997,8 +4997,8 @@
                     "description": null
                 },
                 "price": {
-                    "label": "Price",
-                    "description": null
+                    "label": "Prix",
+                    "description": "Le prix d'achat de l'objet s'il est différent du prix du type d'objet"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -5021,8 +5021,8 @@
                     "description": null
                 },
                 "roomId": {
-                    "label": "Identifiant de l'espace",
-                    "description": ""
+                    "label": "Id (espace)",
+                    "description": null
                 },
                 "room": {
                     "label": "Espace",
@@ -6135,8 +6135,8 @@
                     "description": null
                 },
                 "roomId": {
-                    "label": "Identifiant de l'espace",
-                    "description": ""
+                    "label": "Id (espace)",
+                    "description": null
                 },
                 "room": {
                     "label": "Espace",

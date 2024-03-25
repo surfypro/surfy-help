@@ -31,7 +31,7 @@
         "factType": "/entities/spaces/buildingFacts",
         "fact": "/entities/spaces/buildingFacts",
         "roomPointSegment": "/entities/spaces",
-        "organization": "/entities/organization",
+        "organization": "/entities/organizations",
         "personWorkingLocation": "/entities/planning",
         "personToWorkplaceBooking": "/entities/planning/bookings",
         "personToRoomBooking": "/entities/planning/bookings",
