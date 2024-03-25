@@ -49,7 +49,7 @@ Pour cela il est nécessaire de prendre contact avec nos équipes via https://ww
 
 # Guide d'utilisation pour l'utilisateur final
 
-Les utilisateurs finaux peuvent trouver de l'aide dans l'usage de l'application teams via la page dédiée sur notre portail d'aide accessible via https://help.surfy.pro/teams/users
+Les utilisateurs finaux peuvent trouver de l'aide dans l'usage de l'application teams via la page dédiée sur notre portail d'aide accessible via [https://help.surfy.pro/teams/users](https://help.surfy.pro/docs/teams/users)
 
 # Comment obtenir du support ?
 
