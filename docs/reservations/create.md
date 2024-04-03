@@ -6,6 +6,8 @@ sidebar_position: 1
 
 <Youtube code="gC2BWSNqv54"/>
 
+## Réserver depuis l'application Surfy
+
 Dans Surfy, on peut réserver un poste de travail dans un quartier, à la journée ou demi-journée.
 Pour accéder à un quartier de réservation, il est nécessaire d'être affecté au préalable à ce quartier.
 On peut alors réserver un poste de travail (ou déclarer un télétravail) à la demi-journée ou à la journée.
@@ -35,4 +37,4 @@ Pour supprimer une réservation, cliquer sur la corbeille en face de la ligne à
 
 Dans Teams, on peut ajouter l'application Surfy en cliquant sur "Application" et en recherchant "Surfy".
 Une fois sélectionnée, l'application est ajoutée à Teams et permet directement de réserver un poste de travail ou de déclarer un télétravail.
-Cliquer sur l'icone "Surfy" de Teams permet la même expérience de réservation que dans Surfy.
+Cliquer sur l'icone "Surfy" de Teams permet la même expérience de réservation que dans Surfy. Voir https://help.surfy.pro/docs/reservations/create#r%C3%A9server-depuis-lapplication-surfy
