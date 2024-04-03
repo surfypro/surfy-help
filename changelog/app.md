@@ -1,8 +1,33 @@
 # Nouveautés
 
+## 25 Mars 2024  - v3.3.223 ## 
+
+- Double confirmation lors de la suppression des échelles du plan
+- Ajout du prix sur les objets en plus des types d'objets
+- Ajout du jour courant dans le planning des réservations des espaces pour la réservation des postes de travail en flex
+- Voir les affectations aux bâtiments depuis le moteur de recherche quand une personne est recherchée
+- Le rapport de qualité des données des personnes "Personnes affectées à un bâtiment sans affectation de poste de travail" exclu mainteant les personnes "non affectables"
+- Mise en place d'un rapport de qualité des données sur les espaces permettant de trouver les espaces sans points ou avec 1 ou 2 points uniquement
+- Fixes
+    - Amélioration des info-bulles avec plusieurs points qui étaient tronqués
 
 
-<!-- ## 17 Janvier 2024 - v3.3.211 ##
+
+## 7 Mars 2024  - v3.3.219 ##
+
+- Ajout d'un lien pour aller sur Surfy Academy depuis le menu du profil
+
+## 27 Février 2024 - v3.3.217 ##
+
+- Mise en place d'une option permettant de changer la qualité de l'export de l'image du plan en 2D.
+
+<!-- 
+- Mise en place d'un export des images en PDF
+** mise en place du vault pour la gestion des secrets **
+-->
+
+
+## 15 Février 2024 - v3.3.211 ##
 
 - Amélioration de la navigation dans les plans via les appareils tactiles
     - Activation du zoom via les gestes tactiles
@@ -17,10 +42,8 @@
     - La connexion via google ouvre directement la page de connexion google via le popup
     - Amélioration de la gestion de certificats pour la connexion via Microsoft 365
 - Harmonisation de l'affichage de la vue photos des bâtiments en fonction du type de bâtiment (vertical, horizontal ou sans images)
+- L'icône en haut à gauche pour voir le tableau de bord de l'entreprise n'est plus directement disponible, il faut passer par le menu administration > entreprises pour y accèder
 
-** mise en place du vault pour la gestion des secrets **
-    
--->
 
 ## 13 Janvier 2024 - v3.3.208 ##
 

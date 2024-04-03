@@ -18,6 +18,24 @@
 
 ## Entités associées (liste)
 
+###  Feature Families {#featureFamilyCreatedBies}
+        
+
+###  Feature Families {#featureFamilyUpdatedBies}
+        
+
+###  Feature Groups {#featureGroupCreatedBies}
+        
+
+###  Feature Groups {#featureGroupUpdatedBies}
+        
+
+###  Features {#featureCreatedBies}
+        
+
+###  Features {#featureUpdatedBies}
+        
+
 ###  Partner Export Mapping Configuration To Floors {#partnerExportMappingConfigurationToFloorCreatedBies}
         
 

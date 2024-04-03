@@ -1,8 +1,0 @@
-{
-  "label": "menuLeft connector",
-  "position": 7,
-  "link": {
-    "slug": "connector",
-    "type": "generated-index"
-  }
-}

@@ -14,6 +14,9 @@ La date d'achat de l'objet
 ### Position {#position}
         
 
+### Prix {#price}
+        
+Le prix d'achat de l'objet s'il est différent du prix du type d'objet
 ### Référence de l'objet {#reference}
         
 La référence de l'objet est utilisé pour le retrouver et pour differencier cet objet des autres
