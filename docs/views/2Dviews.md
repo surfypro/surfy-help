@@ -9,10 +9,11 @@ Pour afficher les informations des espaces sur le plan, depuis le plan de l'éta
 
 -   cliquer sur l'icône "Gérer le texte d'affichage des espaces" au dessus du plan
 -   une fiche apparait à droite de l'écran, comportant les onglets "PLAN" et "INFOBULLE".
+
 L'onglet "PLAN" permet le choix d'affichage des informations : 
     -   des "ESPACES" en cochant les informations des espaces à afficher sur le plan
     -   des "PERSONNES" dont le type d'affectation est sélectionné dans l'onglet "ESPACES", avec ou sans leur profil sécurité.
-    
+
 L'onglet "INFOBULLE" permet le choix d'affichage des informations de l'infobulle affichée au passage de la souris sur le plan.
 
  On peut changer l'ordre d'affichage des informations en glissant-déplaçant le signe "=" de bas en haut.

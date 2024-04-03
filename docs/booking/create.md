@@ -14,6 +14,10 @@ On peut alors réserver un poste de travail (ou déclarer un télétravail) à l
 
 Pour cela,
 
+-   cliquer sur l'icone "Gérer mon planning des prochaines semaines" en haut à gauche de l'écran, juste au dessus de la loupe de recherche, ou bien dans le menu de gauche cliquer sur "Planning", puis "Emplacement de travail des personnes", puis "Gérer mon planning des prochaines semaines".
+
+Les dates des 30 prochains jours s'affichent et permettent la réservation dans le quartier autorisé.
+
 -   cliquer sur l'icone en face de la date désirée, pour réserver en journée ou demi-journée
 -   pour déclarer un télétravail, cliquer sur "Télétravail" dans la période voulue.
 -   pour réserver un poste de travail, cliquer sur "Réserver un poste de travail"
