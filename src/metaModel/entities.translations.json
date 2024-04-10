@@ -1950,7 +1950,7 @@
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
-                    "description": "Le nombre totale de places assises"
+                    "description": "Le nombre total de places assises"
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
@@ -1994,7 +1994,7 @@
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
@@ -2370,7 +2370,7 @@
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
-                    "description": "Le nombre totale de places assises"
+                    "description": "Le nombre total de places assises"
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
@@ -2786,7 +2786,7 @@
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
-                    "description": "Le nombre totale de places assises"
+                    "description": "Le nombre total de places assises"
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
@@ -2830,7 +2830,7 @@
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
@@ -2916,7 +2916,7 @@
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
-                    "description": "Le nombre totale de places assises"
+                    "description": "Le nombre total de places assises"
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
@@ -2960,7 +2960,7 @@
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
@@ -3021,72 +3021,72 @@
             },
             "room": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifiant de l'espace",
                     "description": null
                 },
                 "name": {
-                    "label": "Name",
-                    "description": null
+                    "label": "Nom de l'espace",
+                    "description": "Le nom d'espace est utilisé pour le définir et le retrouver facilement."
                 },
                 "area": {
-                    "label": "Area",
-                    "description": null
+                    "label": "Surface",
+                    "description": "La surface qualifiée au sol pour cet espace"
                 },
                 "perimeter": {
-                    "label": "Perimeter",
-                    "description": null
+                    "label": "Périmètre",
+                    "description": "Le périmètre d'espace représente son contour"
                 },
                 "textAnchor": {
                     "label": "Text Anchor",
                     "description": null
                 },
                 "capacity": {
-                    "label": "Capacity",
-                    "description": null
+                    "label": "Capacité",
+                    "description": "La capacité peut être utilisé pour définir le nombre de places disponibles dans un espace ou pour connaître le maximum de personnes qu'on peut mettre dans un espace"
                 },
                 "workplacesCount": {
                     "label": "Nombre de postes de travail",
-                    "description": "Le nombre total de postes de travail dans les espaces"
+                    "description": "Le nombre de postes de travail dans l'espace est calculé automatiquement"
                 },
                 "workplacesRatio": {
-                    "label": "Ratio postes de travail",
-                    "description": "Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail"
+                    "label": "Ratio par poste de travail",
+                    "description": "Le ratio par poste de travail est le nombre de métres carrés de l'espace divisé par le nombre de postes de travail, cette valeur est calculée automatiquement"
                 },
                 "peopleCount": {
-                    "label": "People Count",
-                    "description": null
+                    "label": "Nombre d'affectations",
+                    "description": "Le nombre de personnes affectées dans l'espace, soit directement, soit à travers un poste de travail"
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
-                    "description": "Le nombre totale de places assises"
+                    "description": "Le nombre total de places assises"
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
-                    "description": "Le ratio d'occupation est le nombre de métres carrés divisé par le nombre de personnes affectées soit directement dans les espaces, soit via un poste de travail"
+                    "description": "Le ratio d'occupation est le nombre de métres carrés de l'espace divisé par le nombre de personnes affectées aux espaces, soit directement, soit via un poste de travail , cette valeur est calculée"
                 },
                 "occupancyRate": {
                     "label": "Taux d'occupation",
-                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
+                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisé par le nombre de postes de travail"
                 },
                 "expansionRatio": {
                     "label": "Taux de foisonnement",
-                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisés par le nombre de postes de travail"
+                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisé par le nombre de postes de travail"
                 },
                 "freeWorkplacesCount": {
                     "label": "Nombre de postes libres",
-                    "description": "Nombre total de postes libres"
+                    "description": "Nombre de postes libres dans l'espace"
                 },
                 "flexWorkplacesCount": {
                     "label": "Nombre de postes flex",
-                    "description": "Nombre total de postes flex"
+                    "description": "Nombre de postes flex dans l'espace"
                 },
                 "sharedWorkplacesCount": {
                     "label": "Nombre de postes de travail partagés",
-                    "description": "Nombre total de postes de travail partagés par au moins 2 personnes"
+                    "description": "Nombre de postes de travail partagés par au moins 2 personnes"
                 },
                 "sharedWorkplacesRatio": {
                     "label": "Taux de postes de travail partagés",
-                    "description": "Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail"
+                    "description": "Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail de l'espace"
                 },
                 "transitWorkplacesCount": {
                     "label": "Nombre de postes de travail de passage",
@@ -3102,35 +3102,35 @@
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
                 },
                 "info": {
-                    "label": "Info",
-                    "description": null
+                    "label": "Information supplémentaire",
+                    "description": "Permet de conserver des informations supplémentaires de type texte sur l'espace"
                 },
                 "bookingEmail": {
-                    "label": "Booking Email",
-                    "description": null
+                    "label": "Email utilisé pour la réservation de cet espace",
+                    "description": "Ce courriel permet de réserver cette salle via le système de messagerie"
                 },
                 "externalId2": {
                     "label": "External Id2",
                     "description": null
                 },
                 "picture": {
-                    "label": "Picture",
-                    "description": null
+                    "label": "Photo de l'espace",
+                    "description": "La photo de l'espace permet de le visualiser facilement"
                 },
                 "keyCylinderCode": {
-                    "label": "Key Cylinder Code",
-                    "description": null
+                    "label": "Numéro de cylindre",
+                    "description": "Le numéro de cylindre permet de définir le numéro de cylindre de la serrure de la porte de l'espace ou un élement en relation avec l'accès physique de l'espace"
                 },
                 "livePeopleCount": {
-                    "label": "Live People Count",
-                    "description": null
+                    "label": "Nombre de personnes dans l'espace en temps réel",
+                    "description": "Cette valeur est mise à jour par les capteurs de comptage des personnes présent dans l'espace et fournit le nombre de personnes présent en temps réel dans l'espace"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -3182,7 +3182,7 @@
                 },
                 "costCenter": {
                     "label": "Centre de coût",
-                    "description": "Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation"
+                    "description": "Permet de connaitre à quel centre de coût associer l'espace quand il s'agit de gérer la refacturation au centre de coût par espace"
                 },
                 "distributionCostTypeId": {
                     "label": "Id (type de distribution des coûts)",
@@ -3190,7 +3190,7 @@
                 },
                 "distributionCostType": {
                     "label": "Type de distribution des coûts",
-                    "description": null
+                    "description": "Permet de déterminer le mode de calcul de la clé de répartition des coûts"
                 },
                 "roomConnectorId": {
                     "label": "Identifiant du connecteur d'espace",
@@ -3646,6 +3646,14 @@
                     "label": "Nombre d'affectations directes",
                     "description": "Le nombre de personnes qui sont affectées directement à ce calque d'affectation dans le bâtiment"
                 },
+                "totalPeopleCount": {
+                    "label": "Nombre total d'affectations directes",
+                    "description": "Le nombre de personnes total qui sont affectées directement à ce calque d'affectation dans le bâtiment, l'addition des personnes réelles affectés et du nombre de personnes affectés manuellement"
+                },
+                "manualPeopleCount": {
+                    "label": "Nombre d'affectations directes manuelle",
+                    "description": "Le nombre de personnes qui sont affectées directement à ce calque d'affectation sans tenir compte des affectations avec des personnes réelles"
+                },
                 "carbonFootprintPerMeter": {
                     "label": "Empreinte carbone par mètre carré",
                     "description": "L'empreinte carbone par mètre carré permet de calculer l'empreinte carbone en kilogramme de CO2 d'un calque d'analyse par mètres carrés"
@@ -3741,7 +3749,7 @@
                     "description": null
                 },
                 "roomId": {
-                    "label": "Id (espace)",
+                    "label": "Identifiant de l'espace",
                     "description": null
                 },
                 "room": {
@@ -3786,10 +3794,6 @@
                     "label": "Identifiant du calque d'analyse par étage",
                     "description": null
                 },
-                "dimensionPeopleCount": {
-                    "label": "Nombre d'affectations directes",
-                    "description": "Le nombre de personnes qui sont affectées directement à ce calque d'affectation"
-                },
                 "roomsArea": {
                     "label": "Surface qualifiée",
                     "description": "La surface qualifiée est la somme des surfaces des espaces"
@@ -3812,7 +3816,7 @@
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
-                    "description": "Le nombre totale de places assises"
+                    "description": "Le nombre total de places assises"
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
@@ -3855,8 +3859,8 @@
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
-                    "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "label": "Nombre total d'affectations indirects sur l'étage",
+                    "description": "Le nombre total de personnes affectées indirects sur l'étage, soit directement affécté aux espaces, soit à travers un poste de travail, mais pas via les calques d'affectations qui sont qu'au niveau du bâtiment"
                 },
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
@@ -3929,8 +3933,8 @@
                     "description": null
                 },
                 "dimensionPeopleCount": {
-                    "label": "Nombre d'affectations directement à ce calque d'analyse",
-                    "description": "Le nombre de personnes qui sont affectées à ce calque d'analyse pour l'ensemble du bâtiment"
+                    "label": "Nombre d'affectations directement à ce calque d'affectation",
+                    "description": "Le nombre de personnes qui sont affectées à ce calque d'affectation pour l'ensemble du bâtiment"
                 },
                 "roomsArea": {
                     "label": "Surface qualifiée",
@@ -3954,7 +3958,7 @@
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
-                    "description": "Le nombre totale de places assises"
+                    "description": "Le nombre total de places assises"
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
@@ -3998,7 +4002,7 @@
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
                 },
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
@@ -4657,7 +4661,7 @@
                     "description": null
                 },
                 "roomId": {
-                    "label": "Id (espace)",
+                    "label": "Identifiant de l'espace",
                     "description": null
                 },
                 "room": {
@@ -4907,7 +4911,7 @@
                     "description": null
                 },
                 "roomId": {
-                    "label": "Id (espace)",
+                    "label": "Identifiant de l'espace",
                     "description": null
                 },
                 "room": {
@@ -5021,7 +5025,7 @@
                     "description": null
                 },
                 "roomId": {
-                    "label": "Id (espace)",
+                    "label": "Identifiant de l'espace",
                     "description": null
                 },
                 "room": {
@@ -5190,7 +5194,7 @@
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
-                    "description": "Le nombre totale de places assises"
+                    "description": "Le nombre total de places assises"
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
@@ -5234,7 +5238,7 @@
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
@@ -5320,7 +5324,7 @@
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
-                    "description": "Le nombre totale de places assises"
+                    "description": "Le nombre total de places assises"
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
@@ -5364,7 +5368,7 @@
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
@@ -5450,7 +5454,7 @@
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
-                    "description": "Le nombre totale de places assises"
+                    "description": "Le nombre total de places assises"
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
@@ -5494,7 +5498,7 @@
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
@@ -5580,7 +5584,7 @@
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
-                    "description": "Le nombre totale de places assises"
+                    "description": "Le nombre total de places assises"
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
@@ -5624,7 +5628,7 @@
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
@@ -6135,7 +6139,7 @@
                     "description": null
                 },
                 "roomId": {
-                    "label": "Id (espace)",
+                    "label": "Identifiant de l'espace",
                     "description": null
                 },
                 "room": {

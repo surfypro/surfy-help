@@ -17,6 +17,12 @@ Utile pour différencier le calque parmis d'autres
 ### Nombre d'affectations directes {#peopleCount}
         
 Le nombre de personnes qui sont affectées directement à ce calque d'affectation dans le bâtiment
+### Nombre d'affectations directes manuelle {#manualPeopleCount}
+        
+Le nombre de personnes qui sont affectées directement à ce calque d'affectation sans tenir compte des affectations avec des personnes réelles
+### Nombre total d'affectations directes {#totalPeopleCount}
+        
+Le nombre de personnes total qui sont affectées directement à ce calque d'affectation dans le bâtiment, l'addition des personnes réelles affectés et du nombre de personnes affectés manuellement
 ### Valeur numérique {#value}
         
 La valeur peut être utilisé pour associé le calque à une valeur numérique afin de pouvoir réaliser des statisques analytiques

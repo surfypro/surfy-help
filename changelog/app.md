@@ -1,5 +1,17 @@
 # Nouveautés
 
+## 10 Avril 2024  - v3.3.228 ## 
+
+- Il est maintenant possible de recalculer les données du bâtiment directement depuis la carte de selection d'un calque d'affectations
+- Dans la réserveration des postes de travail seuls les postes de travail réservables sont réservables. Les postes de travail non réservables sont transparents et n'ont pas texte d'affichage dessus
+- Il est possible de réserver des postes de travails en étant dans plusieurs quartiers
+- Dans la recherche globale, les liens des vues non disponible en fonction des rôles ne sont plus cliquables
+
+
+## 4 Avril 2024  - v3.3.224 ## 
+
+- Il est maintenant possible de rentrer le nombre d'affectations dans un quartier manuellement sans devoir créer et associer des personnes réelles dans Surfy
+
 ## 25 Mars 2024  - v3.3.223 ## 
 
 - Double confirmation lors de la suppression des échelles du plan
@@ -10,8 +22,6 @@
 - Mise en place d'un rapport de qualité des données sur les espaces permettant de trouver les espaces sans points ou avec 1 ou 2 points uniquement
 - Fixes
     - Amélioration des info-bulles avec plusieurs points qui étaient tronqués
-
-
 
 ## 7 Mars 2024  - v3.3.219 ##
 

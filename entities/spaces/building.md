@@ -67,7 +67,7 @@ Le nombre de personnes qui sont affectées aux calques d'affectations associé �
 Le nombre d'espaces créés dans ce bâtiment
 ### Nombre de places assises {#seatsCount}
         
-Le nombre totale de places assises
+Le nombre total de places assises
 ### Nombre de places de parking {#parkingSpaceCount}
         
 Nombre de places de parking disponibles
@@ -88,7 +88,7 @@ Nombre de postes de travail en flex dans le bâtiment
 Nombre de postes libres dans le bâtiment
 ### Nombre total d'affectations {#totalPeopleCount}
         
-Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation
+Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail
 ### Photo du bâtiment {#picture}
         
 Vous pouvez utiliser une photo de votre bâtiment pour le repérer rapidement depuis la page d'accueil (voir les bâtiments avec des photos) ou pour illustrer les vues des collaborateurs

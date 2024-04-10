@@ -13,7 +13,7 @@ L'empreinte carbone est le nombre de CO2 émis
 Le nombre total d'espaces
 ### Nombre de places assises {#seatsCount}
         
-Le nombre totale de places assises
+Le nombre total de places assises
 ### Nombre de postes de travail {#workplacesCount}
         
 Le nombre total de postes de travail dans les espaces
@@ -31,7 +31,7 @@ Nombre total de postes flex
 Nombre total de postes libres
 ### Nombre total d'affectations {#totalPeopleCount}
         
-Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation
+Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail
 ### People Count {#peopleCount}
         
 

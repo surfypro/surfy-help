@@ -34,7 +34,7 @@ Le nombre de personnes affectées dans la l'étage, soit directement affécté a
 Le nombre d'espaces présent dans cet étage
 ### Nombre de places assises {#seatsCount}
         
-Le nombre totale de places assises
+Le nombre total de places assises
 ### Nombre de postes de travail {#workplacesCount}
         
 Le nombre de postes de travail dans l'étage est calculé automatiquement
