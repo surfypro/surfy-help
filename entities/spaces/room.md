@@ -5,9 +5,12 @@
 
 ## Propriétés de base
 
-### Capacité {#capacity}
+### Capacité declarée {#capacity}
         
-La capacité peut être utilisé pour définir le nombre de places disponibles dans un espace ou pour connaître le maximum de personnes qu'on peut mettre dans un espace
+La capacité declarée peut être utilisé pour définir le nombre de places disponibles dans un espace ou pour connaître le maximum de personnes qu'on peut mettre dans un espace
+### Capacité totale {#totalCapacityCount}
+        
+La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces
 ### Email utilisé pour la réservation de cet espace {#bookingEmail}
         
 Ce courriel permet de réserver cette salle via le système de messagerie
@@ -74,9 +77,12 @@ Permet de connaître le taux d'usage des postes de travail, c'est le nombre de p
 ### Taux de foisonnement {#expansionRatio}
         
 Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisé par le nombre de postes de travail
-### Taux de places assises {#seatsPeopleRatio}
+### Taux de places assises par affectations {#seatsPeopleRatio}
         
 Le nombre de places assises par personnes affectées
+### Taux de places assises par postes de travail {#totalCapacityWorkplaceCountRatio}
+        
+Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail
 ### Taux de postes de travail en flex {#flexRatio}
         
 Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail

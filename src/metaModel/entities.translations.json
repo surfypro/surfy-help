@@ -1989,7 +1989,7 @@
                     "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
                 },
                 "seatsPeopleRatio": {
-                    "label": "Taux de places assises",
+                    "label": "Taux de places assises par affectations",
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
@@ -1999,6 +1999,14 @@
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
                 },
                 "dimensionPeopleCount": {
                     "label": "Nombre d'affectations aux calques",
@@ -2409,7 +2417,7 @@
                     "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
                 },
                 "seatsPeopleRatio": {
-                    "label": "Taux de places assises",
+                    "label": "Taux de places assises par affectations",
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
@@ -2419,6 +2427,14 @@
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
                 },
                 "backgroundLayout": {
                     "label": "Fond de plan",
@@ -2825,7 +2841,7 @@
                     "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
                 },
                 "seatsPeopleRatio": {
-                    "label": "Taux de places assises",
+                    "label": "Taux de places assises par affectations",
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
@@ -2835,6 +2851,14 @@
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -2955,7 +2979,7 @@
                     "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
                 },
                 "seatsPeopleRatio": {
-                    "label": "Taux de places assises",
+                    "label": "Taux de places assises par affectations",
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
@@ -2965,6 +2989,14 @@
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -3041,8 +3073,8 @@
                     "description": null
                 },
                 "capacity": {
-                    "label": "Capacité",
-                    "description": "La capacité peut être utilisé pour définir le nombre de places disponibles dans un espace ou pour connaître le maximum de personnes qu'on peut mettre dans un espace"
+                    "label": "Capacité declarée",
+                    "description": "La capacité declarée peut être utilisé pour définir le nombre de places disponibles dans un espace ou pour connaître le maximum de personnes qu'on peut mettre dans un espace"
                 },
                 "workplacesCount": {
                     "label": "Nombre de postes de travail",
@@ -3097,7 +3129,7 @@
                     "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
                 },
                 "seatsPeopleRatio": {
-                    "label": "Taux de places assises",
+                    "label": "Taux de places assises par affectations",
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
@@ -3107,6 +3139,14 @@
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
                 },
                 "info": {
                     "label": "Information supplémentaire",
@@ -3855,7 +3895,7 @@
                     "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
                 },
                 "seatsPeopleRatio": {
-                    "label": "Taux de places assises",
+                    "label": "Taux de places assises par affectations",
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
@@ -3865,6 +3905,14 @@
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -3997,7 +4045,7 @@
                     "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
                 },
                 "seatsPeopleRatio": {
-                    "label": "Taux de places assises",
+                    "label": "Taux de places assises par affectations",
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
@@ -4007,6 +4055,14 @@
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -5233,7 +5289,7 @@
                     "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
                 },
                 "seatsPeopleRatio": {
-                    "label": "Taux de places assises",
+                    "label": "Taux de places assises par affectations",
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
@@ -5243,6 +5299,14 @@
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -5363,7 +5427,7 @@
                     "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
                 },
                 "seatsPeopleRatio": {
-                    "label": "Taux de places assises",
+                    "label": "Taux de places assises par affectations",
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
@@ -5373,6 +5437,14 @@
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -5493,7 +5565,7 @@
                     "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
                 },
                 "seatsPeopleRatio": {
-                    "label": "Taux de places assises",
+                    "label": "Taux de places assises par affectations",
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
@@ -5503,6 +5575,14 @@
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -5623,7 +5703,7 @@
                     "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
                 },
                 "seatsPeopleRatio": {
-                    "label": "Taux de places assises",
+                    "label": "Taux de places assises par affectations",
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
@@ -5633,6 +5713,14 @@
                 "carbonFootprint": {
                     "label": "Empreinte Carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
                 },
                 "createdAt": {
                     "label": "Date de création",

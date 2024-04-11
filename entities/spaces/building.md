@@ -14,6 +14,9 @@ Année de construction de l'immeuble permettant de mesurer sa vétusté
 ### Capacité réglementaire {#regulatoryCapacity}
         
 La capacité réglementaire du plateau, permet de gérer l'évacuation du public et des employés
+### Capacité totale {#totalCapacityCount}
+        
+La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces
 ### Charges annuelles {#yearlyCondominiumFees}
         
 Montant des charges annuelles de gestion ou de copropriété par exemple
@@ -110,9 +113,12 @@ Permet de connaître le taux d'usage des postes de travail, c'est le nombre de p
 ### Taux de foisonnement {#expansionRatio}
         
 Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du  nombre de personnes affectées divisés par le nombre de postes de travail
-### Taux de places assises {#seatsPeopleRatio}
+### Taux de places assises par affectations {#seatsPeopleRatio}
         
 Le nombre de places assises par personnes affectées
+### Taux de places assises par postes de travail {#totalCapacityWorkplaceCountRatio}
+        
+Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail
 ### Taux de postes de travail en flex {#flexRatio}
         
 Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail

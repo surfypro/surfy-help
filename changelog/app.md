@@ -1,5 +1,13 @@
 # Nouveautés
 
+<!-- ## 12 Avril 2024  - v3.3.229 ## 
+
+- La propriété sur l'espace Capacité se nomme maintenant Capacité déclarée
+- Des nouvelles propriétés calculées sont maintenant disponible
+    - La capacité totale qui est la somme des capacités déclarées des espaces et des places assises 
+    - Le taux de places assises par postes de travail
+-->
+
 ## 10 Avril 2024  - v3.3.228 ## 
 
 - Il est maintenant possible de recalculer les données du bâtiment directement depuis la carte de selection d'un calque d'affectations
