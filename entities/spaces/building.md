@@ -143,6 +143,9 @@ L'utilisateur propriétaire du bâtiment voit toujours le bâtiment même en pr�
 
 ## Entités associées (liste)
 
+###  Room Type Group Buildings {#roomTypeGroupBuildings}
+        
+
 ### Affectations au bâtiment {#personToBuildings}
         
 

@@ -1,12 +1,17 @@
 # Nouveautés
 
-<!-- ## 12 Avril 2024  - v3.3.229 ## 
+## 15 Avril 2024  - v3.3.229 ## 
 
 - La propriété sur l'espace Capacité se nomme maintenant Capacité déclarée
 - Des nouvelles propriétés calculées sont maintenant disponible
     - La capacité totale qui est la somme des capacités déclarées des espaces et des places assises 
     - Le taux de places assises par postes de travail
--->
+- Mise en place des groupes de types d'espaces permettant de grouper des types d'espaces et donc de grouper les indicateurs par groupe de type d'espaces. Le groupement prend en compte une inclusion de type d'espaces ou une exclusion. Par exemple :
+    - Surface totale hors parking
+    - Nombre de places de parking (pmr, vélo, moto, éléctrique, ...)
+    - Capacité totale hors réstauration
+    - Capacité totale des espaces de réunions
+
 
 ## 10 Avril 2024  - v3.3.228 ## 
 

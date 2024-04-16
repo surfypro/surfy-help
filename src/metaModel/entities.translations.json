@@ -34,7 +34,7 @@
                 "description": null
             },
             "personCompany": {
-                "label": "Entreprise des personnes",
+                "label": "Prestataire",
                 "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
             },
             "jupUiLayout": {
@@ -89,8 +89,24 @@
                 "label": "Type de distribution des coûts",
                 "description": null
             },
+            "roomTypeGroup": {
+                "label": "Groupe de typologie d'espace",
+                "description": null
+            },
             "roomType": {
                 "label": "Typologie d'espace",
+                "description": null
+            },
+            "roomTypeGroupToRoomType": {
+                "label": "Association groupe de typologie d'espace à typologie d'espace",
+                "description": null
+            },
+            "roomTypeGroupFloor": {
+                "label": " Room Type Group Floor",
+                "description": null
+            },
+            "roomTypeGroupBuilding": {
+                "label": " Room Type Group Building",
                 "description": null
             },
             "costCenter": {
@@ -252,6 +268,22 @@
             "personToDimensionBooking": {
                 "label": "Réservation au calque d'affectation des personnes",
                 "description": "Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
+            },
+            "personCompanyMission": {
+                "label": "Mission du prestataire",
+                "description": "Les missions des prestataires permettent de connaitre le domaine d'intervention des prestataires"
+            },
+            "personCompanyToItemType": {
+                "label": "Type d'objet du prestataire",
+                "description": "Les types d'objets des prestataires permettent de définir une relation entre le type d'objet et le prestataires et d'y définir la mission"
+            },
+            "personCompanyToRoomType": {
+                "label": "Type d'espace du prestataire",
+                "description": "Les types d'espaces des prestataires permettent de définir une relation entre un type d'espaces et le prestataire et d'y définir une mission"
+            },
+            "personCompanyToItem": {
+                "label": "Intervention sur un objet",
+                "description": "Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur"
             },
             "jupObjectType": {
                 "label": "Type d'entité",
@@ -721,11 +753,11 @@
                     "description": null
                 },
                 "personCompanyCreatedBies": {
-                    "label": "Entreprises des personnes",
+                    "label": "Prestataires",
                     "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
                 },
                 "personCompanyUpdatedBies": {
-                    "label": "Entreprises des personnes",
+                    "label": "Prestataires",
                     "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
                 },
                 "buildingTypeCreatedBies": {
@@ -826,6 +858,30 @@
                 },
                 "roomTypeUpdatedBies": {
                     "label": "Typologies d'espace",
+                    "description": null
+                },
+                "roomTypeGroupToRoomTypeCreatedBies": {
+                    "label": "Associations groupes de typologies d'espace à typologies d'espace",
+                    "description": null
+                },
+                "roomTypeGroupToRoomTypeUpdatedBies": {
+                    "label": "Associations groupes de typologies d'espace à typologies d'espace",
+                    "description": null
+                },
+                "roomTypeGroupFloorCreatedBies": {
+                    "label": " Room Type Group Floors",
+                    "description": null
+                },
+                "roomTypeGroupFloorUpdatedBies": {
+                    "label": " Room Type Group Floors",
+                    "description": null
+                },
+                "roomTypeGroupBuildingCreatedBies": {
+                    "label": " Room Type Group Buildings",
+                    "description": null
+                },
+                "roomTypeGroupBuildingUpdatedBies": {
+                    "label": " Room Type Group Buildings",
                     "description": null
                 },
                 "costCenterCreatedBies": {
@@ -1132,6 +1188,30 @@
                     "label": "Réservations au calque d'affectation des personnes",
                     "description": "Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
                 },
+                "personCompanyToItemTypeCreatedBies": {
+                    "label": "Types d'objets des prestataires",
+                    "description": "Les types d'objets des prestataires permettent de définir une relation entre le type d'objet et le prestataires et d'y définir la mission"
+                },
+                "personCompanyToItemTypeUpdatedBies": {
+                    "label": "Types d'objets des prestataires",
+                    "description": "Les types d'objets des prestataires permettent de définir une relation entre le type d'objet et le prestataires et d'y définir la mission"
+                },
+                "personCompanyToRoomTypeCreatedBies": {
+                    "label": "Types d'espaces des prestataires",
+                    "description": "Les types d'espaces des prestataires permettent de définir une relation entre un type d'espaces et le prestataire et d'y définir une mission"
+                },
+                "personCompanyToRoomTypeUpdatedBies": {
+                    "label": "Types d'espaces des prestataires",
+                    "description": "Les types d'espaces des prestataires permettent de définir une relation entre un type d'espaces et le prestataire et d'y définir une mission"
+                },
+                "personCompanyToItemCreatedBies": {
+                    "label": "Interventions sur des objet",
+                    "description": "Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur"
+                },
+                "personCompanyToItemUpdatedBies": {
+                    "label": "Interventions sur des objet",
+                    "description": "Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur"
+                },
                 "contentRoleCreatedBies": {
                     "label": "Rôles de contenu",
                     "description": null
@@ -1350,7 +1430,19 @@
                 },
                 "name": {
                     "label": "Nom",
-                    "description": "Le nom de l'entreprise des personnes par exemple le nom de l'entreprise d'un prestataire de service"
+                    "description": "Le nom de du prestataire, par exemple le nom de l'entreprise d'un prestataire de service"
+                },
+                "comment": {
+                    "label": "Informations complémentaires",
+                    "description": "Des informations complémentaires sur le prestataire, comme sa mission, ses valeurs, la couverture fonctionelle de sa préstation etc"
+                },
+                "contact": {
+                    "label": "Contact",
+                    "description": "Les informations de contact du prestataire"
+                },
+                "documents": {
+                    "label": "Documents associés",
+                    "description": "Le lien vers les documents associés à ce prestataire"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -1383,6 +1475,18 @@
                 "people": {
                     "label": "Personnes",
                     "description": null
+                },
+                "personCompanyToItemTypes": {
+                    "label": "Types d'objets des prestataires",
+                    "description": "Les types d'objets des prestataires permettent de définir une relation entre le type d'objet et le prestataires et d'y définir la mission"
+                },
+                "personCompanyToRoomTypes": {
+                    "label": "Types d'espaces des prestataires",
+                    "description": "Les types d'espaces des prestataires permettent de définir une relation entre un type d'espaces et le prestataire et d'y définir une mission"
+                },
+                "personCompanyToItems": {
+                    "label": "Interventions sur des objet",
+                    "description": "Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur"
                 },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
@@ -1842,6 +1946,10 @@
                     "label": "Objets",
                     "description": null
                 },
+                "personCompanyToItemTypes": {
+                    "label": "Types d'objets des prestataires",
+                    "description": "Les types d'objets des prestataires permettent de définir une relation entre le type d'objet et le prestataires et d'y définir la mission"
+                },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
                     "description": null
@@ -2090,6 +2198,10 @@
                 },
                 "floors": {
                     "label": "Étages",
+                    "description": null
+                },
+                "roomTypeGroupBuildings": {
+                    "label": " Room Type Group Buildings",
                     "description": null
                 },
                 "costCenterBuildings": {
@@ -2496,6 +2608,10 @@
                     "label": "Mis à jour par l'utilisateur",
                     "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
                 },
+                "roomTypeGroupFloors": {
+                    "label": " Room Type Group Floors",
+                    "description": null
+                },
                 "costCenterFloors": {
                     "label": "Centres de coût des étages",
                     "description": null
@@ -2595,6 +2711,52 @@
                     "description": null
                 }
             },
+            "roomTypeGroup": {
+                "id": {
+                    "label": "Identifiant du groupe de typologie d'espace",
+                    "description": null
+                },
+                "name": {
+                    "label": "Nom du groupe de typologie d'espace",
+                    "description": null
+                },
+                "code": {
+                    "label": "Code",
+                    "description": null
+                },
+                "color": {
+                    "label": "Couleur",
+                    "description": null
+                },
+                "exclude": {
+                    "label": "Exclure",
+                    "description": "Exclure les typologies d'espace de ce groupe"
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "roomTypeGroupToRoomTypes": {
+                    "label": "Associations groupes de typologies d'espace à typologies d'espace",
+                    "description": null
+                },
+                "roomTypeGroupFloors": {
+                    "label": " Room Type Group Floors",
+                    "description": null
+                },
+                "roomTypeGroupBuildings": {
+                    "label": " Room Type Group Buildings",
+                    "description": null
+                }
+            },
             "roomType": {
                 "id": {
                     "label": "Identifiant de la typologie d'espace",
@@ -2668,6 +2830,10 @@
                     "label": "Mis à jour par l'utilisateur",
                     "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
                 },
+                "roomTypeGroupToRoomTypes": {
+                    "label": "Associations groupes de typologies d'espace à typologies d'espace",
+                    "description": null
+                },
                 "rooms": {
                     "label": "Espaces",
                     "description": null
@@ -2680,9 +2846,347 @@
                     "label": "Typologies d'espace des bâtiments",
                     "description": null
                 },
+                "personCompanyToRoomTypes": {
+                    "label": "Types d'espaces des prestataires",
+                    "description": "Les types d'espaces des prestataires permettent de définir une relation entre un type d'espaces et le prestataire et d'y définir une mission"
+                },
                 "partnerExportMappingToRoomTypes": {
                     "label": " Partner Export Mapping To Room Types",
                     "description": null
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
+            "roomTypeGroupToRoomType": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "roomTypeGroupId": {
+                    "label": "Identifiant du groupe de typologie d'espace",
+                    "description": null
+                },
+                "roomTypeGroup": {
+                    "label": "Groupe de typologie d'espace",
+                    "description": null
+                },
+                "roomTypeId": {
+                    "label": "Identifiant de la typologie d'espace",
+                    "description": null
+                },
+                "roomType": {
+                    "label": "Typologie d'espace",
+                    "description": null
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
+            "roomTypeGroupFloor": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "roomsArea": {
+                    "label": "Surface qualifiée",
+                    "description": "La surface qualifiée est la somme des surfaces des espaces"
+                },
+                "roomsCount": {
+                    "label": "Nombre d'espaces",
+                    "description": "Le nombre total d'espaces"
+                },
+                "workplacesCount": {
+                    "label": "Nombre de postes de travail",
+                    "description": "Le nombre total de postes de travail dans les espaces"
+                },
+                "workplacesRatio": {
+                    "label": "Ratio postes de travail",
+                    "description": "Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail"
+                },
+                "peopleCount": {
+                    "label": "People Count",
+                    "description": null
+                },
+                "seatsCount": {
+                    "label": "Nombre de places assises",
+                    "description": "Le nombre total de places assises"
+                },
+                "peopleRatio": {
+                    "label": "Ratio d'occupation",
+                    "description": "Le ratio d'occupation est le nombre de métres carrés divisé par le nombre de personnes affectées soit directement dans les espaces, soit via un poste de travail"
+                },
+                "occupancyRate": {
+                    "label": "Taux d'occupation",
+                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
+                },
+                "expansionRatio": {
+                    "label": "Taux de foisonnement",
+                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisés par le nombre de postes de travail"
+                },
+                "freeWorkplacesCount": {
+                    "label": "Nombre de postes libres",
+                    "description": "Nombre total de postes libres"
+                },
+                "flexWorkplacesCount": {
+                    "label": "Nombre de postes flex",
+                    "description": "Nombre total de postes flex"
+                },
+                "sharedWorkplacesCount": {
+                    "label": "Nombre de postes de travail partagés",
+                    "description": "Nombre total de postes de travail partagés par au moins 2 personnes"
+                },
+                "sharedWorkplacesRatio": {
+                    "label": "Taux de postes de travail partagés",
+                    "description": "Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail"
+                },
+                "transitWorkplacesCount": {
+                    "label": "Nombre de postes de travail de passage",
+                    "description": "Nombre de postes de travail de passage, ces postes ne sont pas comptabilisés dans les postes libres et ne sont pas en flex"
+                },
+                "flexRatio": {
+                    "label": "Taux de postes de travail en flex",
+                    "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
+                },
+                "seatsPeopleRatio": {
+                    "label": "Taux de places assises par affectations",
+                    "description": "Le nombre de places assises par personnes affectées"
+                },
+                "totalPeopleCount": {
+                    "label": "Nombre total d'affectations",
+                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
+                },
+                "carbonFootprint": {
+                    "label": "Empreinte Carbone",
+                    "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "roomTypeGroupId": {
+                    "label": "Identifiant du groupe de typologie d'espace",
+                    "description": null
+                },
+                "roomTypeGroup": {
+                    "label": "Groupe de typologie d'espace",
+                    "description": null
+                },
+                "floorId": {
+                    "label": "Identifiant de l'étage",
+                    "description": null
+                },
+                "floor": {
+                    "label": "Étage",
+                    "description": null
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
+            "roomTypeGroupBuilding": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "roomsArea": {
+                    "label": "Surface qualifiée",
+                    "description": "La surface qualifiée est la somme des surfaces des espaces"
+                },
+                "roomsCount": {
+                    "label": "Nombre d'espaces",
+                    "description": "Le nombre total d'espaces"
+                },
+                "workplacesCount": {
+                    "label": "Nombre de postes de travail",
+                    "description": "Le nombre total de postes de travail dans les espaces"
+                },
+                "workplacesRatio": {
+                    "label": "Ratio postes de travail",
+                    "description": "Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail"
+                },
+                "peopleCount": {
+                    "label": "People Count",
+                    "description": null
+                },
+                "seatsCount": {
+                    "label": "Nombre de places assises",
+                    "description": "Le nombre total de places assises"
+                },
+                "peopleRatio": {
+                    "label": "Ratio d'occupation",
+                    "description": "Le ratio d'occupation est le nombre de métres carrés divisé par le nombre de personnes affectées soit directement dans les espaces, soit via un poste de travail"
+                },
+                "occupancyRate": {
+                    "label": "Taux d'occupation",
+                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
+                },
+                "expansionRatio": {
+                    "label": "Taux de foisonnement",
+                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisés par le nombre de postes de travail"
+                },
+                "freeWorkplacesCount": {
+                    "label": "Nombre de postes libres",
+                    "description": "Nombre total de postes libres"
+                },
+                "flexWorkplacesCount": {
+                    "label": "Nombre de postes flex",
+                    "description": "Nombre total de postes flex"
+                },
+                "sharedWorkplacesCount": {
+                    "label": "Nombre de postes de travail partagés",
+                    "description": "Nombre total de postes de travail partagés par au moins 2 personnes"
+                },
+                "sharedWorkplacesRatio": {
+                    "label": "Taux de postes de travail partagés",
+                    "description": "Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail"
+                },
+                "transitWorkplacesCount": {
+                    "label": "Nombre de postes de travail de passage",
+                    "description": "Nombre de postes de travail de passage, ces postes ne sont pas comptabilisés dans les postes libres et ne sont pas en flex"
+                },
+                "flexRatio": {
+                    "label": "Taux de postes de travail en flex",
+                    "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
+                },
+                "seatsPeopleRatio": {
+                    "label": "Taux de places assises par affectations",
+                    "description": "Le nombre de places assises par personnes affectées"
+                },
+                "totalPeopleCount": {
+                    "label": "Nombre total d'affectations",
+                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
+                },
+                "carbonFootprint": {
+                    "label": "Empreinte Carbone",
+                    "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "roomTypeGroupId": {
+                    "label": "Identifiant du groupe de typologie d'espace",
+                    "description": null
+                },
+                "roomTypeGroup": {
+                    "label": "Groupe de typologie d'espace",
+                    "description": null
+                },
+                "buildingId": {
+                    "label": "Identifiant du bâtiment",
+                    "description": "Le bâtiment est utilisé pour regrouper les étages"
+                },
+                "building": {
+                    "label": "Bâtiment",
+                    "description": "Le bâtiment est utilisé pour regrouper les étages"
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
                 },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
@@ -4483,11 +4987,11 @@
                     "description": "Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation"
                 },
                 "personCompanyId": {
-                    "label": "Id (entreprise des personnes)",
+                    "label": "Id (prestataire)",
                     "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
                 },
                 "personCompany": {
-                    "label": "Entreprise des personnes",
+                    "label": "Prestataire",
                     "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
                 },
                 "personGenderId": {
@@ -5115,6 +5619,10 @@
                 "itemToPeople": {
                     "label": "Associations d'objet à personne",
                     "description": null
+                },
+                "personCompanyToItems": {
+                    "label": "Interventions sur des objet",
+                    "description": "Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur"
                 },
                 "itemFacts": {
                     "label": "Mouvements d'objet",
@@ -6315,6 +6823,234 @@
                 "personWorkingLocation": {
                     "label": "Emplacement de travail des personnes",
                     "description": "Un emplacement de travail des personnes définie le lieu de travail des personnes"
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
+            "personCompanyMission": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "name": {
+                    "label": "Nom",
+                    "description": "Le nom de la mission du prestataire"
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "personCompanyToItemTypes": {
+                    "label": "Types d'objets des prestataires",
+                    "description": "Les types d'objets des prestataires permettent de définir une relation entre le type d'objet et le prestataires et d'y définir la mission"
+                },
+                "personCompanyToRoomTypes": {
+                    "label": "Types d'espaces des prestataires",
+                    "description": "Les types d'espaces des prestataires permettent de définir une relation entre un type d'espaces et le prestataire et d'y définir une mission"
+                }
+            },
+            "personCompanyToItemType": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "personCompanyId": {
+                    "label": "Id (prestataire)",
+                    "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
+                },
+                "personCompany": {
+                    "label": "Prestataire",
+                    "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
+                },
+                "itemTypeId": {
+                    "label": "Identifiant du type de l'objet",
+                    "description": "Identifiant du type de l'objet"
+                },
+                "itemType": {
+                    "label": "Type d'objet",
+                    "description": null
+                },
+                "personCompanyMissionId": {
+                    "label": "Id (mission du prestataire)",
+                    "description": "Les missions des prestataires permettent de connaitre le domaine d'intervention des prestataires"
+                },
+                "personCompanyMission": {
+                    "label": "Mission du prestataire",
+                    "description": "Les missions des prestataires permettent de connaitre le domaine d'intervention des prestataires"
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
+            "personCompanyToRoomType": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "personCompanyId": {
+                    "label": "Id (prestataire)",
+                    "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
+                },
+                "personCompany": {
+                    "label": "Prestataire",
+                    "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
+                },
+                "roomTypeId": {
+                    "label": "Identifiant de la typologie d'espace",
+                    "description": null
+                },
+                "roomType": {
+                    "label": "Typologie d'espace",
+                    "description": null
+                },
+                "personCompanyMissionId": {
+                    "label": "Id (mission du prestataire)",
+                    "description": "Les missions des prestataires permettent de connaitre le domaine d'intervention des prestataires"
+                },
+                "personCompanyMission": {
+                    "label": "Mission du prestataire",
+                    "description": "Les missions des prestataires permettent de connaitre le domaine d'intervention des prestataires"
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
+            "personCompanyToItem": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "datetime": {
+                    "label": "Date et heure de l'intervention",
+                    "description": "Le moment auquel l'intervention a eu lieu"
+                },
+                "comment": {
+                    "label": "Commentaire",
+                    "description": "Un commentaire sur l'intervention"
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "personCompanyId": {
+                    "label": "Id (prestataire)",
+                    "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
+                },
+                "personCompany": {
+                    "label": "Prestataire",
+                    "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
+                },
+                "itemId": {
+                    "label": "Identifiant de l'objet",
+                    "description": null
+                },
+                "item": {
+                    "label": "Objet",
+                    "description": null
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",

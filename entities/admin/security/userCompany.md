@@ -60,6 +60,18 @@
 ###  Partner Export Mappings {#partnerExportMappingUpdatedBies}
         
 
+###  Room Type Group Buildings {#roomTypeGroupBuildingCreatedBies}
+        
+
+###  Room Type Group Buildings {#roomTypeGroupBuildingUpdatedBies}
+        
+
+###  Room Type Group Floors {#roomTypeGroupFloorCreatedBies}
+        
+
+###  Room Type Group Floors {#roomTypeGroupFloorUpdatedBies}
+        
+
 ###  Structure Points {#structurePointCreatedBies}
         
 
@@ -132,6 +144,12 @@ L'association entre un point et un espace permet de conserver l'ordre des points
 ### Associations entre un point et un espace {#roomPointRoomUpdatedBies}
         
 L'association entre un point et un espace permet de conserver l'ordre des points dans un espace afin de constituer un polyon
+### Associations groupes de typologies d'espace à typologies d'espace {#roomTypeGroupToRoomTypeCreatedBies}
+        
+
+### Associations groupes de typologies d'espace à typologies d'espace {#roomTypeGroupToRoomTypeUpdatedBies}
+        
+
 ### Associations rôle de contenu aux bâtiments {#contentRoleToBuildingCreatedBies}
         
 
@@ -225,12 +243,6 @@ Un emplacement de travail des personnes définie le lieu de travail des personne
 ### Emplacements de travail des personnes {#personWorkingLocationUpdatedBies}
         
 Un emplacement de travail des personnes définie le lieu de travail des personnes
-### Entreprises des personnes {#personCompanyCreatedBies}
-        
-L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier
-### Entreprises des personnes {#personCompanyUpdatedBies}
-        
-L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier
 ### Espaces {#roomCreatedBies}
         
 
@@ -261,6 +273,12 @@ Permet d’afficher les objets par Famille sur les plans et dans l’inventaire 
 ### Familles de types d'objet {#itemTypeFamilyUpdatedBies}
         
 Permet d’afficher les objets par Famille sur les plans et dans l’inventaire en pdf
+### Interventions sur des objet {#personCompanyToItemCreatedBies}
+        
+Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur
+### Interventions sur des objet {#personCompanyToItemUpdatedBies}
+        
+Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur
 ### Mouvements d'objet {#itemFactCreatedBies}
         
 
@@ -321,6 +339,12 @@ Permet d’afficher les objets par Famille sur les plans et dans l’inventaire 
 ### Postes de travail {#workplaceUpdatedBies}
         
 
+### Prestataires {#personCompanyCreatedBies}
+        
+L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier
+### Prestataires {#personCompanyUpdatedBies}
+        
+L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier
 ### Profils de sécurité des personnes {#personSecurityProfileCreatedBies}
         
 
@@ -399,6 +423,12 @@ Les réservations des postes de travail des personnes sont enregistrés et dispo
 ### Structures {#structureUpdatedBies}
         
 
+### Types d'espaces des prestataires {#personCompanyToRoomTypeCreatedBies}
+        
+Les types d'espaces des prestataires permettent de définir une relation entre un type d'espaces et le prestataire et d'y définir une mission
+### Types d'espaces des prestataires {#personCompanyToRoomTypeUpdatedBies}
+        
+Les types d'espaces des prestataires permettent de définir une relation entre un type d'espaces et le prestataire et d'y définir une mission
 ### Types d'objet {#itemTypeCreatedBies}
         
 
@@ -411,6 +441,12 @@ Les réservations des postes de travail des personnes sont enregistrés et dispo
 ### Types d'objet dans type de poste de travail {#workplaceTypeItemTypeUpdatedBies}
         
 
+### Types d'objets des prestataires {#personCompanyToItemTypeCreatedBies}
+        
+Les types d'objets des prestataires permettent de définir une relation entre le type d'objet et le prestataires et d'y définir la mission
+### Types d'objets des prestataires {#personCompanyToItemTypeUpdatedBies}
+        
+Les types d'objets des prestataires permettent de définir une relation entre le type d'objet et le prestataires et d'y définir la mission
 ### Types de bâtiments {#buildingTypeCreatedBies}
         
 

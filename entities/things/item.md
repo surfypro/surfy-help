@@ -44,6 +44,9 @@ La référence de l'objet est utilisé pour le retrouver et pour differencier ce
 ### Associations d'objet à personne {#itemToPeople}
         
 
+### Interventions sur des objet {#personCompanyToItems}
+        
+Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur
 ### Mouvements d'objet {#itemFacts}
         
 

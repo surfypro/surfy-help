@@ -74,6 +74,9 @@ Le Modèle 3D permet une représentation 3D réaliste des objets placés sur le 
 ### Types d'objet dans type de poste de travail {#workplaceTypeItemTypes}
         
 
+### Types d'objets des prestataires {#personCompanyToItemTypes}
+        
+Les types d'objets des prestataires permettent de définir une relation entre le type d'objet et le prestataires et d'y définir la mission
 
 
 

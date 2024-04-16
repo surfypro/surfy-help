@@ -41,12 +41,15 @@ L'icône pour le type d'espace permet d'afficher pour ce type d'espace une icôn
 ###  Partner Export Mapping To Room Types {#partnerExportMappingToRoomTypes}
         
 
-###  Room Type Group To Room Types {#roomTypeGroupToRoomTypes}
+### Associations groupes de typologies d'espace à typologies d'espace {#roomTypeGroupToRoomTypes}
         
 
 ### Espaces {#rooms}
         
 
+### Types d'espaces des prestataires {#personCompanyToRoomTypes}
+        
+Les types d'espaces des prestataires permettent de définir une relation entre un type d'espaces et le prestataire et d'y définir une mission
 ### Typologies d'espace des bâtiments {#roomTypeBuildings}
         
 
