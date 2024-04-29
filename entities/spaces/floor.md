@@ -10,8 +10,8 @@
 La capacité réglementaire du plateau, permet de gérer l'évacuation du public et des employés
 ### Capacité totale {#totalCapacityCount}
         
-La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces
-### Empreinte Carbone {#carbonFootprint}
+La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces
+### Empreinte carbone {#carbonFootprint}
         
 L'empreinte carbone est le nombre de CO2 émis
 ### Fond de plan {#backgroundLayout}

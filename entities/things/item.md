@@ -29,7 +29,7 @@ La référence de l'objet est utilisé pour le retrouver et pour differencier ce
 
 ## Entités associées (unique)
 
-### Espace {#room}
+### Espace de l'objet {#room}
         
 
 ### Poste de travail {#workplace}

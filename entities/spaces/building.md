@@ -16,7 +16,7 @@ Année de construction de l'immeuble permettant de mesurer sa vétusté
 La capacité réglementaire du plateau, permet de gérer l'évacuation du public et des employés
 ### Capacité totale {#totalCapacityCount}
         
-La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces
+La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces
 ### Charges annuelles {#yearlyCondominiumFees}
         
 Montant des charges annuelles de gestion ou de copropriété par exemple
@@ -41,7 +41,7 @@ Montant de la caution déposée à la signature du bail
 ### Documents associés {#documents}
         
 Conservez un lien vers l'emplacement des documents associés à ce bâtiment dans votre GED
-### Empreinte Carbone {#carbonFootprint}
+### Empreinte carbone {#carbonFootprint}
         
 L'empreinte carbone est le nombre de CO2 émis
 ### Indice de référence des loyers {#rentReferenceIndex}

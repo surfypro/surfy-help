@@ -44,7 +44,7 @@ Taux d'affectation moyen du poste de travail en fonction de l'affectation des jo
 ### Centre de coût {#costCenter}
         
 Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation
-### Espace {#room}
+### Espace du poste de travail {#room}
         
 
 ### Organisation {#organization}

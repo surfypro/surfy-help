@@ -2105,12 +2105,12 @@
                     "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
                 },
                 "totalCapacityCount": {
                     "label": "Capacité totale",
-                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
                 },
                 "totalCapacityWorkplaceCountRatio": {
                     "label": "Taux de places assises par postes de travail",
@@ -2537,12 +2537,12 @@
                     "description": "Le nombre de personnes affectées dans la l'étage, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
                 },
                 "totalCapacityCount": {
                     "label": "Capacité totale",
-                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
                 },
                 "totalCapacityWorkplaceCountRatio": {
                     "label": "Taux de places assises par postes de travail",
@@ -2995,12 +2995,12 @@
                     "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
                 },
                 "totalCapacityCount": {
                     "label": "Capacité totale",
-                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
                 },
                 "totalCapacityWorkplaceCountRatio": {
                     "label": "Taux de places assises par postes de travail",
@@ -3133,12 +3133,12 @@
                     "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
                 },
                 "totalCapacityCount": {
                     "label": "Capacité totale",
-                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
                 },
                 "totalCapacityWorkplaceCountRatio": {
                     "label": "Taux de places assises par postes de travail",
@@ -3353,12 +3353,12 @@
                     "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
                 },
                 "totalCapacityCount": {
                     "label": "Capacité totale",
-                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
                 },
                 "totalCapacityWorkplaceCountRatio": {
                     "label": "Taux de places assises par postes de travail",
@@ -3491,12 +3491,12 @@
                     "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
                 },
                 "totalCapacityCount": {
                     "label": "Capacité totale",
-                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
                 },
                 "totalCapacityWorkplaceCountRatio": {
                     "label": "Taux de places assises par postes de travail",
@@ -3577,8 +3577,8 @@
                     "description": null
                 },
                 "capacity": {
-                    "label": "Capacité declarée",
-                    "description": "La capacité declarée peut être utilisé pour définir le nombre de places disponibles dans un espace ou pour connaître le maximum de personnes qu'on peut mettre dans un espace"
+                    "label": "Capacité complémentaire",
+                    "description": "La capacité declarée peut être utilisé pour définir le nombre de places disponibles dans un espace ou pour connaître le maximum de personnes qu'on peut mettre dans un espace, ce chiffre s'ajoute au nombre de places assises pour donner la capacité totale"
                 },
                 "workplacesCount": {
                     "label": "Nombre de postes de travail",
@@ -3641,12 +3641,12 @@
                     "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
                 },
                 "totalCapacityCount": {
                     "label": "Capacité totale",
-                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
                 },
                 "totalCapacityWorkplaceCountRatio": {
                     "label": "Taux de places assises par postes de travail",
@@ -4407,12 +4407,12 @@
                     "description": "Le nombre total de personnes affectées indirects sur l'étage, soit directement affécté aux espaces, soit à travers un poste de travail, mais pas via les calques d'affectations qui sont qu'au niveau du bâtiment"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
                 },
                 "totalCapacityCount": {
                     "label": "Capacité totale",
-                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
                 },
                 "totalCapacityWorkplaceCountRatio": {
                     "label": "Taux de places assises par postes de travail",
@@ -4557,12 +4557,12 @@
                     "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
                 },
                 "totalCapacityCount": {
                     "label": "Capacité totale",
-                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
                 },
                 "totalCapacityWorkplaceCountRatio": {
                     "label": "Taux de places assises par postes de travail",
@@ -5475,7 +5475,7 @@
                     "description": null
                 },
                 "room": {
-                    "label": "Espace",
+                    "label": "Espace du poste de travail",
                     "description": null
                 },
                 "organizationId": {
@@ -5589,7 +5589,7 @@
                     "description": null
                 },
                 "room": {
-                    "label": "Espace",
+                    "label": "Espace de l'objet",
                     "description": null
                 },
                 "workplaceId": {
@@ -5805,12 +5805,12 @@
                     "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
                 },
                 "totalCapacityCount": {
                     "label": "Capacité totale",
-                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
                 },
                 "totalCapacityWorkplaceCountRatio": {
                     "label": "Taux de places assises par postes de travail",
@@ -5943,12 +5943,12 @@
                     "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
                 },
                 "totalCapacityCount": {
                     "label": "Capacité totale",
-                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
                 },
                 "totalCapacityWorkplaceCountRatio": {
                     "label": "Taux de places assises par postes de travail",
@@ -6081,12 +6081,12 @@
                     "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
                 },
                 "totalCapacityCount": {
                     "label": "Capacité totale",
-                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
                 },
                 "totalCapacityWorkplaceCountRatio": {
                     "label": "Taux de places assises par postes de travail",
@@ -6219,12 +6219,12 @@
                     "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
                 },
                 "totalCapacityCount": {
                     "label": "Capacité totale",
-                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité declarée au niveau des espaces"
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
                 },
                 "totalCapacityWorkplaceCountRatio": {
                     "label": "Taux de places assises par postes de travail",
