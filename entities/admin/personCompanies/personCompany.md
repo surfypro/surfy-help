@@ -1,7 +1,7 @@
-# Prestataire
+# Entreprise prestataire
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier
+L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion
 
 ## Propriétés de base
 
@@ -16,7 +16,7 @@ Le lien vers les documents associés à ce prestataire
 Des informations complémentaires sur le prestataire, comme sa mission, ses valeurs, la couverture fonctionelle de sa préstation etc
 ### Nom {#name}
         
-Le nom de du prestataire, par exemple le nom de l'entreprise d'un prestataire de service
+Le nom du prestataire, par exemple le nom de l'entreprise d'un prestataire de service
 
 
 

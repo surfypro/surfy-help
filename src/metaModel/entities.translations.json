@@ -34,8 +34,8 @@
                 "description": null
             },
             "personCompany": {
-                "label": "Prestataire",
-                "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
+                "label": "Entreprise prestataire",
+                "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
             },
             "jupUiLayout": {
                 "label": "Vision du plan",
@@ -753,12 +753,12 @@
                     "description": null
                 },
                 "personCompanyCreatedBies": {
-                    "label": "Prestataires",
-                    "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
+                    "label": "Entreprises prestataires",
+                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
                 },
                 "personCompanyUpdatedBies": {
-                    "label": "Prestataires",
-                    "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
+                    "label": "Entreprises prestataires",
+                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
                 },
                 "buildingTypeCreatedBies": {
                     "label": "Types de bâtiments",
@@ -1430,7 +1430,7 @@
                 },
                 "name": {
                     "label": "Nom",
-                    "description": "Le nom de du prestataire, par exemple le nom de l'entreprise d'un prestataire de service"
+                    "description": "Le nom du prestataire, par exemple le nom de l'entreprise d'un prestataire de service"
                 },
                 "comment": {
                     "label": "Informations complémentaires",
@@ -4987,12 +4987,12 @@
                     "description": "Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation"
                 },
                 "personCompanyId": {
-                    "label": "Id (prestataire)",
-                    "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
+                    "label": "Id (entreprise prestataire)",
+                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
                 },
                 "personCompany": {
-                    "label": "Prestataire",
-                    "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
+                    "label": "Entreprise prestataire",
+                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
                 },
                 "personGenderId": {
                     "label": "Id (Genre de la personne)",
@@ -6897,12 +6897,12 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "personCompanyId": {
-                    "label": "Id (prestataire)",
-                    "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
+                    "label": "Id (entreprise prestataire)",
+                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
                 },
                 "personCompany": {
-                    "label": "Prestataire",
-                    "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
+                    "label": "Entreprise prestataire",
+                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
                 },
                 "itemTypeId": {
                     "label": "Identifiant du type de l'objet",
@@ -6963,12 +6963,12 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "personCompanyId": {
-                    "label": "Id (prestataire)",
-                    "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
+                    "label": "Id (entreprise prestataire)",
+                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
                 },
                 "personCompany": {
-                    "label": "Prestataire",
-                    "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
+                    "label": "Entreprise prestataire",
+                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
                 },
                 "roomTypeId": {
                     "label": "Identifiant de la typologie d'espace",
@@ -7037,12 +7037,12 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "personCompanyId": {
-                    "label": "Id (prestataire)",
-                    "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
+                    "label": "Id (entreprise prestataire)",
+                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
                 },
                 "personCompany": {
-                    "label": "Prestataire",
-                    "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
+                    "label": "Entreprise prestataire",
+                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
                 },
                 "itemId": {
                     "label": "Identifiant de l'objet",

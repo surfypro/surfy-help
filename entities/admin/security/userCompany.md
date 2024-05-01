@@ -243,6 +243,12 @@ Un emplacement de travail des personnes définie le lieu de travail des personne
 ### Emplacements de travail des personnes {#personWorkingLocationUpdatedBies}
         
 Un emplacement de travail des personnes définie le lieu de travail des personnes
+### Entreprises prestataires {#personCompanyCreatedBies}
+        
+L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion
+### Entreprises prestataires {#personCompanyUpdatedBies}
+        
+L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion
 ### Espaces {#roomCreatedBies}
         
 
@@ -339,12 +345,6 @@ Les interventions des prestataires sur des objets permettent de définir par exe
 ### Postes de travail {#workplaceUpdatedBies}
         
 
-### Prestataires {#personCompanyCreatedBies}
-        
-L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier
-### Prestataires {#personCompanyUpdatedBies}
-        
-L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier
 ### Profils de sécurité des personnes {#personSecurityProfileCreatedBies}
         
 
