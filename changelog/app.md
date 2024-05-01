@@ -3,7 +3,7 @@
 ## 30 Avril 2024  - v3.3.232 ## 
 
 - Depuis le plan en édition, le raccourci pour fusionner des sommets est maintenant shift + w
-- L'entreprise des personnes se nomme maintant entreprise prestataire.
+- L'entreprise des personnes se nomme maintenant entreprise prestataire.
     - Il est possible d'associer une entreprise prestataire à type d'objet et d'y associer un prestation (Par exemple : Extincteurs en gestion par Dubernard)
     - Il est possible d'associer une entreprise prestataire à un type d'espace (par exemple Otis pour les ascenseurs pour l'entretien)
 - Il est possible de créer une intervention sur un objet par un préstaire avec une date et une description
