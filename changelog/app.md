@@ -6,7 +6,7 @@
 - L'entreprise des personnes se nomme maintenant entreprise prestataire.
     - Il est possible d'associer une entreprise prestataire à type d'objet et d'y associer un prestation (Par exemple : Extincteurs en gestion par Dubernard)
     - Il est possible d'associer une entreprise prestataire à un type d'espace (par exemple Otis pour les ascenseurs pour l'entretien)
-- Il est possible de créer une intervention sur un objet par un préstaire avec une date et une description
+- Il est possible de créer une intervention sur un objet par un prestataire avec une date et une description
 - Les prestataires sont visible sur le plan sur la fiche carte des objets et des espaces
 - Création d'un rapport de qualité des données sur les objets permettant de trouver les objets de l'inventaire physiques qui ne sont pas dans la même espace que le poste de travail auquels ils sont rattachés
 - Création d'un rapport de qualité des données sur les espaces permettant de trouver les espaces qui ont la capacité complémentaire égale au nombre de places assises afin de régulariser la situation et remettre la capacité complémentaire à 0 pour avoir une capacité totale correcte
