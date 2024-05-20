@@ -35,9 +35,12 @@ Une fois que le type de calque est créé ou s'il est déjà existant, on peut c
 On peut également créer des calques d'analyse en modifiant le type de calque afin de lui associer directement les calques à créer : Pour cela, il faut "Modifier le type de calque XXX" puis "Créer un calque d'analyse" et lui donner son nom et sa couleur. Le calque créé aura par défaut le type de calque XXX en modification.
 :::
 
+Après rafraichissement (F5), le calque est disponible pour la qualification des espaces.
+
 ## Qualifier un espace par un calque d'analyse
 
-Après rafraichissement (F5), le calque est disponible pour la qualification des espaces:
+Pour qualifier un espace par un calque d'analyse,
+
 -   sélectionner l'espace à qualifier
 -   cliquer sur "Modifier" dans la fiche de la pièce, à gauche du plan
 -   dans le type de calque voulu, choisir le calque adapté pour l'espace sélectionné
@@ -50,7 +53,7 @@ La sauvegarde automatique des calques permet une qualification rapide des espace
 ## Visualiser les calques d'analyse
 
 L'icône verticale "Palette" permet de visualiser sur le plan tous les calques d'analyse présents sur l'étage.
-Après rechargement des données (icône en haut à droite de l'écran) et rafraichissement (F5), les données cumulées pour chaque calque sont disponibles en ouvrant le papillon en face de chaque calque, ou en ouvrant le papillon global.
+Après recalcul des données (icône en haut à droite de l'écran "Recharger les données du plan") et rafraichissement (F5), les données cumulées pour chaque calque sont disponibles en ouvrant le papillon en face de chaque calque, ou en ouvrant le papillon global pour l'ensemble des calques présents.
 
 ## Rapport des données des calques d'analyse
 

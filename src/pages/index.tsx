@@ -29,7 +29,7 @@ function HomepageHeader() {
           <p>
 
             Bienvenue à la Surfy Academy<br />
-            Vous trouverez ici notre guide utilisateur vous permettant de découvrir Surfy,<br />
+            Notre guide utilisateur vous permet de découvrir Surfy,<br />
 
             ou d'approfondir vos connaissances sur ses fonctionnalités en choisissant l'onglet <Link className="home" to="/docs/intro">"Tutoriels"</Link>.<br />
 
