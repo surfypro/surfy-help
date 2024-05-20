@@ -34,8 +34,8 @@
                 "description": null
             },
             "personCompany": {
-                "label": "Entreprise des personnes",
-                "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
+                "label": "Entreprise prestataire",
+                "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
             },
             "jupUiLayout": {
                 "label": "Vision du plan",
@@ -89,8 +89,24 @@
                 "label": "Type de distribution des coûts",
                 "description": null
             },
+            "roomTypeGroup": {
+                "label": "Groupe de typologie d'espace",
+                "description": null
+            },
             "roomType": {
                 "label": "Typologie d'espace",
+                "description": null
+            },
+            "roomTypeGroupToRoomType": {
+                "label": "Association groupe de typologie d'espace à typologie d'espace",
+                "description": null
+            },
+            "roomTypeGroupFloor": {
+                "label": " Room Type Group Floor",
+                "description": null
+            },
+            "roomTypeGroupBuilding": {
+                "label": " Room Type Group Building",
                 "description": null
             },
             "costCenter": {
@@ -252,6 +268,22 @@
             "personToDimensionBooking": {
                 "label": "Réservation au calque d'affectation des personnes",
                 "description": "Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
+            },
+            "personCompanyMission": {
+                "label": "Mission du prestataire",
+                "description": "Les missions des prestataires permettent de connaitre le domaine d'intervention des prestataires"
+            },
+            "personCompanyToItemType": {
+                "label": "Type d'objet du prestataire",
+                "description": "Les types d'objets des prestataires permettent de définir une relation entre le type d'objet et le prestataires et d'y définir la mission"
+            },
+            "personCompanyToRoomType": {
+                "label": "Type d'espace du prestataire",
+                "description": "Les types d'espaces des prestataires permettent de définir une relation entre un type d'espaces et le prestataire et d'y définir une mission"
+            },
+            "personCompanyToItem": {
+                "label": "Intervention sur un objet",
+                "description": "Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur"
             },
             "jupObjectType": {
                 "label": "Type d'entité",
@@ -721,12 +753,12 @@
                     "description": null
                 },
                 "personCompanyCreatedBies": {
-                    "label": "Entreprises des personnes",
-                    "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
+                    "label": "Entreprises prestataires",
+                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
                 },
                 "personCompanyUpdatedBies": {
-                    "label": "Entreprises des personnes",
-                    "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
+                    "label": "Entreprises prestataires",
+                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
                 },
                 "buildingTypeCreatedBies": {
                     "label": "Types de bâtiments",
@@ -826,6 +858,30 @@
                 },
                 "roomTypeUpdatedBies": {
                     "label": "Typologies d'espace",
+                    "description": null
+                },
+                "roomTypeGroupToRoomTypeCreatedBies": {
+                    "label": "Associations groupes de typologies d'espace à typologies d'espace",
+                    "description": null
+                },
+                "roomTypeGroupToRoomTypeUpdatedBies": {
+                    "label": "Associations groupes de typologies d'espace à typologies d'espace",
+                    "description": null
+                },
+                "roomTypeGroupFloorCreatedBies": {
+                    "label": " Room Type Group Floors",
+                    "description": null
+                },
+                "roomTypeGroupFloorUpdatedBies": {
+                    "label": " Room Type Group Floors",
+                    "description": null
+                },
+                "roomTypeGroupBuildingCreatedBies": {
+                    "label": " Room Type Group Buildings",
+                    "description": null
+                },
+                "roomTypeGroupBuildingUpdatedBies": {
+                    "label": " Room Type Group Buildings",
                     "description": null
                 },
                 "costCenterCreatedBies": {
@@ -1132,6 +1188,30 @@
                     "label": "Réservations au calque d'affectation des personnes",
                     "description": "Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
                 },
+                "personCompanyToItemTypeCreatedBies": {
+                    "label": "Types d'objets des prestataires",
+                    "description": "Les types d'objets des prestataires permettent de définir une relation entre le type d'objet et le prestataires et d'y définir la mission"
+                },
+                "personCompanyToItemTypeUpdatedBies": {
+                    "label": "Types d'objets des prestataires",
+                    "description": "Les types d'objets des prestataires permettent de définir une relation entre le type d'objet et le prestataires et d'y définir la mission"
+                },
+                "personCompanyToRoomTypeCreatedBies": {
+                    "label": "Types d'espaces des prestataires",
+                    "description": "Les types d'espaces des prestataires permettent de définir une relation entre un type d'espaces et le prestataire et d'y définir une mission"
+                },
+                "personCompanyToRoomTypeUpdatedBies": {
+                    "label": "Types d'espaces des prestataires",
+                    "description": "Les types d'espaces des prestataires permettent de définir une relation entre un type d'espaces et le prestataire et d'y définir une mission"
+                },
+                "personCompanyToItemCreatedBies": {
+                    "label": "Interventions sur des objet",
+                    "description": "Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur"
+                },
+                "personCompanyToItemUpdatedBies": {
+                    "label": "Interventions sur des objet",
+                    "description": "Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur"
+                },
                 "contentRoleCreatedBies": {
                     "label": "Rôles de contenu",
                     "description": null
@@ -1350,7 +1430,19 @@
                 },
                 "name": {
                     "label": "Nom",
-                    "description": "Le nom de l'entreprise des personnes par exemple le nom de l'entreprise d'un prestataire de service"
+                    "description": "Le nom du prestataire, par exemple le nom de l'entreprise d'un prestataire de service"
+                },
+                "comment": {
+                    "label": "Informations complémentaires",
+                    "description": "Des informations complémentaires sur le prestataire, comme sa mission, ses valeurs, la couverture fonctionelle de sa préstation etc"
+                },
+                "contact": {
+                    "label": "Contact",
+                    "description": "Les informations de contact du prestataire"
+                },
+                "documents": {
+                    "label": "Documents associés",
+                    "description": "Le lien vers les documents associés à ce prestataire"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -1383,6 +1475,18 @@
                 "people": {
                     "label": "Personnes",
                     "description": null
+                },
+                "personCompanyToItemTypes": {
+                    "label": "Types d'objets des prestataires",
+                    "description": "Les types d'objets des prestataires permettent de définir une relation entre le type d'objet et le prestataires et d'y définir la mission"
+                },
+                "personCompanyToRoomTypes": {
+                    "label": "Types d'espaces des prestataires",
+                    "description": "Les types d'espaces des prestataires permettent de définir une relation entre un type d'espaces et le prestataire et d'y définir une mission"
+                },
+                "personCompanyToItems": {
+                    "label": "Interventions sur des objet",
+                    "description": "Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur"
                 },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
@@ -1842,6 +1946,10 @@
                     "label": "Objets",
                     "description": null
                 },
+                "personCompanyToItemTypes": {
+                    "label": "Types d'objets des prestataires",
+                    "description": "Les types d'objets des prestataires permettent de définir une relation entre le type d'objet et le prestataires et d'y définir la mission"
+                },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
                     "description": null
@@ -1950,7 +2058,7 @@
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
-                    "description": "Le nombre totale de places assises"
+                    "description": "Le nombre total de places assises"
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
@@ -1989,16 +2097,24 @@
                     "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
                 },
                 "seatsPeopleRatio": {
-                    "label": "Taux de places assises",
+                    "label": "Taux de places assises par affectations",
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
                 },
                 "dimensionPeopleCount": {
                     "label": "Nombre d'affectations aux calques",
@@ -2082,6 +2198,10 @@
                 },
                 "floors": {
                     "label": "Étages",
+                    "description": null
+                },
+                "roomTypeGroupBuildings": {
+                    "label": " Room Type Group Buildings",
                     "description": null
                 },
                 "costCenterBuildings": {
@@ -2370,7 +2490,7 @@
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
-                    "description": "Le nombre totale de places assises"
+                    "description": "Le nombre total de places assises"
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
@@ -2409,7 +2529,7 @@
                     "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
                 },
                 "seatsPeopleRatio": {
-                    "label": "Taux de places assises",
+                    "label": "Taux de places assises par affectations",
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
@@ -2417,8 +2537,16 @@
                     "description": "Le nombre de personnes affectées dans la l'étage, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
                 },
                 "backgroundLayout": {
                     "label": "Fond de plan",
@@ -2479,6 +2607,10 @@
                 "userCompanyUpdatedBy": {
                     "label": "Mis à jour par l'utilisateur",
                     "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "roomTypeGroupFloors": {
+                    "label": " Room Type Group Floors",
+                    "description": null
                 },
                 "costCenterFloors": {
                     "label": "Centres de coût des étages",
@@ -2579,6 +2711,52 @@
                     "description": null
                 }
             },
+            "roomTypeGroup": {
+                "id": {
+                    "label": "Identifiant du groupe de typologie d'espace",
+                    "description": null
+                },
+                "name": {
+                    "label": "Nom du groupe de typologie d'espace",
+                    "description": null
+                },
+                "code": {
+                    "label": "Code",
+                    "description": null
+                },
+                "color": {
+                    "label": "Couleur",
+                    "description": null
+                },
+                "exclude": {
+                    "label": "Exclure",
+                    "description": "Exclure les typologies d'espace de ce groupe"
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "roomTypeGroupToRoomTypes": {
+                    "label": "Associations groupes de typologies d'espace à typologies d'espace",
+                    "description": null
+                },
+                "roomTypeGroupFloors": {
+                    "label": " Room Type Group Floors",
+                    "description": null
+                },
+                "roomTypeGroupBuildings": {
+                    "label": " Room Type Group Buildings",
+                    "description": null
+                }
+            },
             "roomType": {
                 "id": {
                     "label": "Identifiant de la typologie d'espace",
@@ -2652,6 +2830,10 @@
                     "label": "Mis à jour par l'utilisateur",
                     "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
                 },
+                "roomTypeGroupToRoomTypes": {
+                    "label": "Associations groupes de typologies d'espace à typologies d'espace",
+                    "description": null
+                },
                 "rooms": {
                     "label": "Espaces",
                     "description": null
@@ -2664,9 +2846,347 @@
                     "label": "Typologies d'espace des bâtiments",
                     "description": null
                 },
+                "personCompanyToRoomTypes": {
+                    "label": "Types d'espaces des prestataires",
+                    "description": "Les types d'espaces des prestataires permettent de définir une relation entre un type d'espaces et le prestataire et d'y définir une mission"
+                },
                 "partnerExportMappingToRoomTypes": {
                     "label": " Partner Export Mapping To Room Types",
                     "description": null
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
+            "roomTypeGroupToRoomType": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "roomTypeGroupId": {
+                    "label": "Identifiant du groupe de typologie d'espace",
+                    "description": null
+                },
+                "roomTypeGroup": {
+                    "label": "Groupe de typologie d'espace",
+                    "description": null
+                },
+                "roomTypeId": {
+                    "label": "Identifiant de la typologie d'espace",
+                    "description": null
+                },
+                "roomType": {
+                    "label": "Typologie d'espace",
+                    "description": null
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
+            "roomTypeGroupFloor": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "roomsArea": {
+                    "label": "Surface qualifiée",
+                    "description": "La surface qualifiée est la somme des surfaces des espaces"
+                },
+                "roomsCount": {
+                    "label": "Nombre d'espaces",
+                    "description": "Le nombre total d'espaces"
+                },
+                "workplacesCount": {
+                    "label": "Nombre de postes de travail",
+                    "description": "Le nombre total de postes de travail dans les espaces"
+                },
+                "workplacesRatio": {
+                    "label": "Ratio postes de travail",
+                    "description": "Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail"
+                },
+                "peopleCount": {
+                    "label": "People Count",
+                    "description": null
+                },
+                "seatsCount": {
+                    "label": "Nombre de places assises",
+                    "description": "Le nombre total de places assises"
+                },
+                "peopleRatio": {
+                    "label": "Ratio d'occupation",
+                    "description": "Le ratio d'occupation est le nombre de métres carrés divisé par le nombre de personnes affectées soit directement dans les espaces, soit via un poste de travail"
+                },
+                "occupancyRate": {
+                    "label": "Taux d'occupation",
+                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
+                },
+                "expansionRatio": {
+                    "label": "Taux de foisonnement",
+                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisés par le nombre de postes de travail"
+                },
+                "freeWorkplacesCount": {
+                    "label": "Nombre de postes libres",
+                    "description": "Nombre total de postes libres"
+                },
+                "flexWorkplacesCount": {
+                    "label": "Nombre de postes flex",
+                    "description": "Nombre total de postes flex"
+                },
+                "sharedWorkplacesCount": {
+                    "label": "Nombre de postes de travail partagés",
+                    "description": "Nombre total de postes de travail partagés par au moins 2 personnes"
+                },
+                "sharedWorkplacesRatio": {
+                    "label": "Taux de postes de travail partagés",
+                    "description": "Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail"
+                },
+                "transitWorkplacesCount": {
+                    "label": "Nombre de postes de travail de passage",
+                    "description": "Nombre de postes de travail de passage, ces postes ne sont pas comptabilisés dans les postes libres et ne sont pas en flex"
+                },
+                "flexRatio": {
+                    "label": "Taux de postes de travail en flex",
+                    "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
+                },
+                "seatsPeopleRatio": {
+                    "label": "Taux de places assises par affectations",
+                    "description": "Le nombre de places assises par personnes affectées"
+                },
+                "totalPeopleCount": {
+                    "label": "Nombre total d'affectations",
+                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
+                },
+                "carbonFootprint": {
+                    "label": "Empreinte carbone",
+                    "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "roomTypeGroupId": {
+                    "label": "Identifiant du groupe de typologie d'espace",
+                    "description": null
+                },
+                "roomTypeGroup": {
+                    "label": "Groupe de typologie d'espace",
+                    "description": null
+                },
+                "floorId": {
+                    "label": "Identifiant de l'étage",
+                    "description": null
+                },
+                "floor": {
+                    "label": "Étage",
+                    "description": null
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
+            "roomTypeGroupBuilding": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "roomsArea": {
+                    "label": "Surface qualifiée",
+                    "description": "La surface qualifiée est la somme des surfaces des espaces"
+                },
+                "roomsCount": {
+                    "label": "Nombre d'espaces",
+                    "description": "Le nombre total d'espaces"
+                },
+                "workplacesCount": {
+                    "label": "Nombre de postes de travail",
+                    "description": "Le nombre total de postes de travail dans les espaces"
+                },
+                "workplacesRatio": {
+                    "label": "Ratio postes de travail",
+                    "description": "Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail"
+                },
+                "peopleCount": {
+                    "label": "People Count",
+                    "description": null
+                },
+                "seatsCount": {
+                    "label": "Nombre de places assises",
+                    "description": "Le nombre total de places assises"
+                },
+                "peopleRatio": {
+                    "label": "Ratio d'occupation",
+                    "description": "Le ratio d'occupation est le nombre de métres carrés divisé par le nombre de personnes affectées soit directement dans les espaces, soit via un poste de travail"
+                },
+                "occupancyRate": {
+                    "label": "Taux d'occupation",
+                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
+                },
+                "expansionRatio": {
+                    "label": "Taux de foisonnement",
+                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisés par le nombre de postes de travail"
+                },
+                "freeWorkplacesCount": {
+                    "label": "Nombre de postes libres",
+                    "description": "Nombre total de postes libres"
+                },
+                "flexWorkplacesCount": {
+                    "label": "Nombre de postes flex",
+                    "description": "Nombre total de postes flex"
+                },
+                "sharedWorkplacesCount": {
+                    "label": "Nombre de postes de travail partagés",
+                    "description": "Nombre total de postes de travail partagés par au moins 2 personnes"
+                },
+                "sharedWorkplacesRatio": {
+                    "label": "Taux de postes de travail partagés",
+                    "description": "Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail"
+                },
+                "transitWorkplacesCount": {
+                    "label": "Nombre de postes de travail de passage",
+                    "description": "Nombre de postes de travail de passage, ces postes ne sont pas comptabilisés dans les postes libres et ne sont pas en flex"
+                },
+                "flexRatio": {
+                    "label": "Taux de postes de travail en flex",
+                    "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
+                },
+                "seatsPeopleRatio": {
+                    "label": "Taux de places assises par affectations",
+                    "description": "Le nombre de places assises par personnes affectées"
+                },
+                "totalPeopleCount": {
+                    "label": "Nombre total d'affectations",
+                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
+                },
+                "carbonFootprint": {
+                    "label": "Empreinte carbone",
+                    "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "roomTypeGroupId": {
+                    "label": "Identifiant du groupe de typologie d'espace",
+                    "description": null
+                },
+                "roomTypeGroup": {
+                    "label": "Groupe de typologie d'espace",
+                    "description": null
+                },
+                "buildingId": {
+                    "label": "Identifiant du bâtiment",
+                    "description": "Le bâtiment est utilisé pour regrouper les étages"
+                },
+                "building": {
+                    "label": "Bâtiment",
+                    "description": "Le bâtiment est utilisé pour regrouper les étages"
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
                 },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
@@ -2786,7 +3306,7 @@
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
-                    "description": "Le nombre totale de places assises"
+                    "description": "Le nombre total de places assises"
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
@@ -2825,16 +3345,24 @@
                     "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
                 },
                 "seatsPeopleRatio": {
-                    "label": "Taux de places assises",
+                    "label": "Taux de places assises par affectations",
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -2916,7 +3444,7 @@
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
-                    "description": "Le nombre totale de places assises"
+                    "description": "Le nombre total de places assises"
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
@@ -2955,16 +3483,24 @@
                     "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
                 },
                 "seatsPeopleRatio": {
-                    "label": "Taux de places assises",
+                    "label": "Taux de places assises par affectations",
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -3021,72 +3557,72 @@
             },
             "room": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifiant de l'espace",
                     "description": null
                 },
                 "name": {
-                    "label": "Name",
-                    "description": null
+                    "label": "Nom de l'espace",
+                    "description": "Le nom d'espace est utilisé pour le définir et le retrouver facilement."
                 },
                 "area": {
-                    "label": "Area",
-                    "description": null
+                    "label": "Surface",
+                    "description": "La surface qualifiée au sol pour cet espace"
                 },
                 "perimeter": {
-                    "label": "Perimeter",
-                    "description": null
+                    "label": "Périmètre",
+                    "description": "Le périmètre d'espace représente son contour"
                 },
                 "textAnchor": {
                     "label": "Text Anchor",
                     "description": null
                 },
                 "capacity": {
-                    "label": "Capacity",
-                    "description": null
+                    "label": "Capacité complémentaire",
+                    "description": "La capacité declarée peut être utilisé pour définir le nombre de places disponibles dans un espace ou pour connaître le maximum de personnes qu'on peut mettre dans un espace, ce chiffre s'ajoute au nombre de places assises pour donner la capacité totale"
                 },
                 "workplacesCount": {
                     "label": "Nombre de postes de travail",
-                    "description": "Le nombre total de postes de travail dans les espaces"
+                    "description": "Le nombre de postes de travail dans l'espace est calculé automatiquement"
                 },
                 "workplacesRatio": {
-                    "label": "Ratio postes de travail",
-                    "description": "Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail"
+                    "label": "Ratio par poste de travail",
+                    "description": "Le ratio par poste de travail est le nombre de métres carrés de l'espace divisé par le nombre de postes de travail, cette valeur est calculée automatiquement"
                 },
                 "peopleCount": {
-                    "label": "People Count",
-                    "description": null
+                    "label": "Nombre d'affectations",
+                    "description": "Le nombre de personnes affectées dans l'espace, soit directement, soit à travers un poste de travail"
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
-                    "description": "Le nombre totale de places assises"
+                    "description": "Le nombre total de places assises"
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
-                    "description": "Le ratio d'occupation est le nombre de métres carrés divisé par le nombre de personnes affectées soit directement dans les espaces, soit via un poste de travail"
+                    "description": "Le ratio d'occupation est le nombre de métres carrés de l'espace divisé par le nombre de personnes affectées aux espaces, soit directement, soit via un poste de travail , cette valeur est calculée"
                 },
                 "occupancyRate": {
                     "label": "Taux d'occupation",
-                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
+                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisé par le nombre de postes de travail"
                 },
                 "expansionRatio": {
                     "label": "Taux de foisonnement",
-                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisés par le nombre de postes de travail"
+                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisé par le nombre de postes de travail"
                 },
                 "freeWorkplacesCount": {
                     "label": "Nombre de postes libres",
-                    "description": "Nombre total de postes libres"
+                    "description": "Nombre de postes libres dans l'espace"
                 },
                 "flexWorkplacesCount": {
                     "label": "Nombre de postes flex",
-                    "description": "Nombre total de postes flex"
+                    "description": "Nombre de postes flex dans l'espace"
                 },
                 "sharedWorkplacesCount": {
                     "label": "Nombre de postes de travail partagés",
-                    "description": "Nombre total de postes de travail partagés par au moins 2 personnes"
+                    "description": "Nombre de postes de travail partagés par au moins 2 personnes"
                 },
                 "sharedWorkplacesRatio": {
                     "label": "Taux de postes de travail partagés",
-                    "description": "Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail"
+                    "description": "Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail de l'espace"
                 },
                 "transitWorkplacesCount": {
                     "label": "Nombre de postes de travail de passage",
@@ -3097,40 +3633,48 @@
                     "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
                 },
                 "seatsPeopleRatio": {
-                    "label": "Taux de places assises",
+                    "label": "Taux de places assises par affectations",
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
                 },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
+                },
                 "info": {
-                    "label": "Info",
-                    "description": null
+                    "label": "Information supplémentaire",
+                    "description": "Permet de conserver des informations supplémentaires de type texte sur l'espace"
                 },
                 "bookingEmail": {
-                    "label": "Booking Email",
-                    "description": null
+                    "label": "Email utilisé pour la réservation de cet espace",
+                    "description": "Ce courriel permet de réserver cette salle via le système de messagerie"
                 },
                 "externalId2": {
                     "label": "External Id2",
                     "description": null
                 },
                 "picture": {
-                    "label": "Picture",
-                    "description": null
+                    "label": "Photo de l'espace",
+                    "description": "La photo de l'espace permet de le visualiser facilement"
                 },
                 "keyCylinderCode": {
-                    "label": "Key Cylinder Code",
-                    "description": null
+                    "label": "Numéro de cylindre",
+                    "description": "Le numéro de cylindre permet de définir le numéro de cylindre de la serrure de la porte de l'espace ou un élement en relation avec l'accès physique de l'espace"
                 },
                 "livePeopleCount": {
-                    "label": "Live People Count",
-                    "description": null
+                    "label": "Nombre de personnes dans l'espace en temps réel",
+                    "description": "Cette valeur est mise à jour par les capteurs de comptage des personnes présent dans l'espace et fournit le nombre de personnes présent en temps réel dans l'espace"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -3182,7 +3726,7 @@
                 },
                 "costCenter": {
                     "label": "Centre de coût",
-                    "description": "Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation"
+                    "description": "Permet de connaitre à quel centre de coût associer l'espace quand il s'agit de gérer la refacturation au centre de coût par espace"
                 },
                 "distributionCostTypeId": {
                     "label": "Id (type de distribution des coûts)",
@@ -3190,7 +3734,7 @@
                 },
                 "distributionCostType": {
                     "label": "Type de distribution des coûts",
-                    "description": null
+                    "description": "Permet de déterminer le mode de calcul de la clé de répartition des coûts"
                 },
                 "roomConnectorId": {
                     "label": "Identifiant du connecteur d'espace",
@@ -3646,6 +4190,14 @@
                     "label": "Nombre d'affectations directes",
                     "description": "Le nombre de personnes qui sont affectées directement à ce calque d'affectation dans le bâtiment"
                 },
+                "totalPeopleCount": {
+                    "label": "Nombre total d'affectations directes",
+                    "description": "Le nombre de personnes total qui sont affectées directement à ce calque d'affectation dans le bâtiment, l'addition des personnes réelles affectés et du nombre de personnes affectés manuellement"
+                },
+                "manualPeopleCount": {
+                    "label": "Nombre d'affectations directes manuelle",
+                    "description": "Le nombre de personnes qui sont affectées directement à ce calque d'affectation sans tenir compte des affectations avec des personnes réelles"
+                },
                 "carbonFootprintPerMeter": {
                     "label": "Empreinte carbone par mètre carré",
                     "description": "L'empreinte carbone par mètre carré permet de calculer l'empreinte carbone en kilogramme de CO2 d'un calque d'analyse par mètres carrés"
@@ -3741,7 +4293,7 @@
                     "description": null
                 },
                 "roomId": {
-                    "label": "Id (espace)",
+                    "label": "Identifiant de l'espace",
                     "description": null
                 },
                 "room": {
@@ -3786,10 +4338,6 @@
                     "label": "Identifiant du calque d'analyse par étage",
                     "description": null
                 },
-                "dimensionPeopleCount": {
-                    "label": "Nombre d'affectations directes",
-                    "description": "Le nombre de personnes qui sont affectées directement à ce calque d'affectation"
-                },
                 "roomsArea": {
                     "label": "Surface qualifiée",
                     "description": "La surface qualifiée est la somme des surfaces des espaces"
@@ -3812,7 +4360,7 @@
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
-                    "description": "Le nombre totale de places assises"
+                    "description": "Le nombre total de places assises"
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
@@ -3851,16 +4399,24 @@
                     "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
                 },
                 "seatsPeopleRatio": {
-                    "label": "Taux de places assises",
+                    "label": "Taux de places assises par affectations",
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
-                    "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "label": "Nombre total d'affectations indirects sur l'étage",
+                    "description": "Le nombre total de personnes affectées indirects sur l'étage, soit directement affécté aux espaces, soit à travers un poste de travail, mais pas via les calques d'affectations qui sont qu'au niveau du bâtiment"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -3929,8 +4485,8 @@
                     "description": null
                 },
                 "dimensionPeopleCount": {
-                    "label": "Nombre d'affectations directement à ce calque d'analyse",
-                    "description": "Le nombre de personnes qui sont affectées à ce calque d'analyse pour l'ensemble du bâtiment"
+                    "label": "Nombre d'affectations directement à ce calque d'affectation",
+                    "description": "Le nombre de personnes qui sont affectées à ce calque d'affectation pour l'ensemble du bâtiment"
                 },
                 "roomsArea": {
                     "label": "Surface qualifiée",
@@ -3954,7 +4510,7 @@
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
-                    "description": "Le nombre totale de places assises"
+                    "description": "Le nombre total de places assises"
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
@@ -3993,16 +4549,24 @@
                     "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
                 },
                 "seatsPeopleRatio": {
-                    "label": "Taux de places assises",
+                    "label": "Taux de places assises par affectations",
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -4423,12 +4987,12 @@
                     "description": "Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation"
                 },
                 "personCompanyId": {
-                    "label": "Id (entreprise des personnes)",
-                    "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
+                    "label": "Id (entreprise prestataire)",
+                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
                 },
                 "personCompany": {
-                    "label": "Entreprise des personnes",
-                    "description": "L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier"
+                    "label": "Entreprise prestataire",
+                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
                 },
                 "personGenderId": {
                     "label": "Id (Genre de la personne)",
@@ -4657,7 +5221,7 @@
                     "description": null
                 },
                 "roomId": {
-                    "label": "Id (espace)",
+                    "label": "Identifiant de l'espace",
                     "description": null
                 },
                 "room": {
@@ -4907,11 +5471,11 @@
                     "description": null
                 },
                 "roomId": {
-                    "label": "Id (espace)",
+                    "label": "Identifiant de l'espace",
                     "description": null
                 },
                 "room": {
-                    "label": "Espace",
+                    "label": "Espace du poste de travail",
                     "description": null
                 },
                 "organizationId": {
@@ -5021,11 +5585,11 @@
                     "description": null
                 },
                 "roomId": {
-                    "label": "Id (espace)",
+                    "label": "Identifiant de l'espace",
                     "description": null
                 },
                 "room": {
-                    "label": "Espace",
+                    "label": "Espace de l'objet",
                     "description": null
                 },
                 "workplaceId": {
@@ -5055,6 +5619,10 @@
                 "itemToPeople": {
                     "label": "Associations d'objet à personne",
                     "description": null
+                },
+                "personCompanyToItems": {
+                    "label": "Interventions sur des objet",
+                    "description": "Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur"
                 },
                 "itemFacts": {
                     "label": "Mouvements d'objet",
@@ -5190,7 +5758,7 @@
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
-                    "description": "Le nombre totale de places assises"
+                    "description": "Le nombre total de places assises"
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
@@ -5229,16 +5797,24 @@
                     "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
                 },
                 "seatsPeopleRatio": {
-                    "label": "Taux de places assises",
+                    "label": "Taux de places assises par affectations",
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -5320,7 +5896,7 @@
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
-                    "description": "Le nombre totale de places assises"
+                    "description": "Le nombre total de places assises"
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
@@ -5359,16 +5935,24 @@
                     "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
                 },
                 "seatsPeopleRatio": {
-                    "label": "Taux de places assises",
+                    "label": "Taux de places assises par affectations",
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -5450,7 +6034,7 @@
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
-                    "description": "Le nombre totale de places assises"
+                    "description": "Le nombre total de places assises"
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
@@ -5489,16 +6073,24 @@
                     "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
                 },
                 "seatsPeopleRatio": {
-                    "label": "Taux de places assises",
+                    "label": "Taux de places assises par affectations",
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -5580,7 +6172,7 @@
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
-                    "description": "Le nombre totale de places assises"
+                    "description": "Le nombre total de places assises"
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
@@ -5619,16 +6211,24 @@
                     "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
                 },
                 "seatsPeopleRatio": {
-                    "label": "Taux de places assises",
+                    "label": "Taux de places assises par affectations",
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
                     "label": "Nombre total d'affectations",
-                    "description": "Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation"
+                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {
-                    "label": "Empreinte Carbone",
+                    "label": "Empreinte carbone",
                     "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -6135,7 +6735,7 @@
                     "description": null
                 },
                 "roomId": {
-                    "label": "Id (espace)",
+                    "label": "Identifiant de l'espace",
                     "description": null
                 },
                 "room": {
@@ -6223,6 +6823,234 @@
                 "personWorkingLocation": {
                     "label": "Emplacement de travail des personnes",
                     "description": "Un emplacement de travail des personnes définie le lieu de travail des personnes"
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
+            "personCompanyMission": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "name": {
+                    "label": "Nom",
+                    "description": "Le nom de la mission du prestataire"
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "personCompanyToItemTypes": {
+                    "label": "Types d'objets des prestataires",
+                    "description": "Les types d'objets des prestataires permettent de définir une relation entre le type d'objet et le prestataires et d'y définir la mission"
+                },
+                "personCompanyToRoomTypes": {
+                    "label": "Types d'espaces des prestataires",
+                    "description": "Les types d'espaces des prestataires permettent de définir une relation entre un type d'espaces et le prestataire et d'y définir une mission"
+                }
+            },
+            "personCompanyToItemType": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "personCompanyId": {
+                    "label": "Id (entreprise prestataire)",
+                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
+                },
+                "personCompany": {
+                    "label": "Entreprise prestataire",
+                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
+                },
+                "itemTypeId": {
+                    "label": "Identifiant du type de l'objet",
+                    "description": "Identifiant du type de l'objet"
+                },
+                "itemType": {
+                    "label": "Type d'objet",
+                    "description": null
+                },
+                "personCompanyMissionId": {
+                    "label": "Id (mission du prestataire)",
+                    "description": "Les missions des prestataires permettent de connaitre le domaine d'intervention des prestataires"
+                },
+                "personCompanyMission": {
+                    "label": "Mission du prestataire",
+                    "description": "Les missions des prestataires permettent de connaitre le domaine d'intervention des prestataires"
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
+            "personCompanyToRoomType": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "personCompanyId": {
+                    "label": "Id (entreprise prestataire)",
+                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
+                },
+                "personCompany": {
+                    "label": "Entreprise prestataire",
+                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
+                },
+                "roomTypeId": {
+                    "label": "Identifiant de la typologie d'espace",
+                    "description": null
+                },
+                "roomType": {
+                    "label": "Typologie d'espace",
+                    "description": null
+                },
+                "personCompanyMissionId": {
+                    "label": "Id (mission du prestataire)",
+                    "description": "Les missions des prestataires permettent de connaitre le domaine d'intervention des prestataires"
+                },
+                "personCompanyMission": {
+                    "label": "Mission du prestataire",
+                    "description": "Les missions des prestataires permettent de connaitre le domaine d'intervention des prestataires"
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
+            "personCompanyToItem": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "datetime": {
+                    "label": "Date et heure de l'intervention",
+                    "description": "Le moment auquel l'intervention a eu lieu"
+                },
+                "comment": {
+                    "label": "Commentaire",
+                    "description": "Un commentaire sur l'intervention"
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "personCompanyId": {
+                    "label": "Id (entreprise prestataire)",
+                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
+                },
+                "personCompany": {
+                    "label": "Entreprise prestataire",
+                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
+                },
+                "itemId": {
+                    "label": "Identifiant de l'objet",
+                    "description": null
+                },
+                "item": {
+                    "label": "Objet",
+                    "description": null
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",

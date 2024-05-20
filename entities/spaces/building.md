@@ -14,6 +14,9 @@ Année de construction de l'immeuble permettant de mesurer sa vétusté
 ### Capacité réglementaire {#regulatoryCapacity}
         
 La capacité réglementaire du plateau, permet de gérer l'évacuation du public et des employés
+### Capacité totale {#totalCapacityCount}
+        
+La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces
 ### Charges annuelles {#yearlyCondominiumFees}
         
 Montant des charges annuelles de gestion ou de copropriété par exemple
@@ -38,7 +41,7 @@ Montant de la caution déposée à la signature du bail
 ### Documents associés {#documents}
         
 Conservez un lien vers l'emplacement des documents associés à ce bâtiment dans votre GED
-### Empreinte Carbone {#carbonFootprint}
+### Empreinte carbone {#carbonFootprint}
         
 L'empreinte carbone est le nombre de CO2 émis
 ### Indice de référence des loyers {#rentReferenceIndex}
@@ -67,7 +70,7 @@ Le nombre de personnes qui sont affectées aux calques d'affectations associé �
 Le nombre d'espaces créés dans ce bâtiment
 ### Nombre de places assises {#seatsCount}
         
-Le nombre totale de places assises
+Le nombre total de places assises
 ### Nombre de places de parking {#parkingSpaceCount}
         
 Nombre de places de parking disponibles
@@ -88,7 +91,7 @@ Nombre de postes de travail en flex dans le bâtiment
 Nombre de postes libres dans le bâtiment
 ### Nombre total d'affectations {#totalPeopleCount}
         
-Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation
+Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail
 ### Photo du bâtiment {#picture}
         
 Vous pouvez utiliser une photo de votre bâtiment pour le repérer rapidement depuis la page d'accueil (voir les bâtiments avec des photos) ou pour illustrer les vues des collaborateurs
@@ -110,9 +113,12 @@ Permet de connaître le taux d'usage des postes de travail, c'est le nombre de p
 ### Taux de foisonnement {#expansionRatio}
         
 Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du  nombre de personnes affectées divisés par le nombre de postes de travail
-### Taux de places assises {#seatsPeopleRatio}
+### Taux de places assises par affectations {#seatsPeopleRatio}
         
 Le nombre de places assises par personnes affectées
+### Taux de places assises par postes de travail {#totalCapacityWorkplaceCountRatio}
+        
+Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail
 ### Taux de postes de travail en flex {#flexRatio}
         
 Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail
@@ -136,6 +142,9 @@ L'utilisateur propriétaire du bâtiment voit toujours le bâtiment même en pr�
 À la première ouverture d'un plan de ce bâtiment, la vision par défaut sera sélectionné, suite à la première ouverture, ce sera la vision encours qui sera appliqué
 
 ## Entités associées (liste)
+
+###  Room Type Group Buildings {#roomTypeGroupBuildings}
+        
 
 ### Affectations au bâtiment {#personToBuildings}
         

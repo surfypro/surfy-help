@@ -5,84 +5,90 @@
 
 ## Propriétés de base
 
-### Area {#area}
+### Capacité complémentaire {#capacity}
         
-
-### Booking Email {#bookingEmail}
+La capacité declarée peut être utilisé pour définir le nombre de places disponibles dans un espace ou pour connaître le maximum de personnes qu'on peut mettre dans un espace, ce chiffre s'ajoute au nombre de places assises pour donner la capacité totale
+### Capacité totale {#totalCapacityCount}
         
-
-### Capacity {#capacity}
+La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces
+### Email utilisé pour la réservation de cet espace {#bookingEmail}
         
-
-### Empreinte Carbone {#carbonFootprint}
+Ce courriel permet de réserver cette salle via le système de messagerie
+### Empreinte carbone {#carbonFootprint}
         
 L'empreinte carbone est le nombre de CO2 émis
 ### External Id2 {#externalId2}
         
 
-### Info {#info}
+### Information supplémentaire {#info}
         
-
-### Key Cylinder Code {#keyCylinderCode}
+Permet de conserver des informations supplémentaires de type texte sur l'espace
+### Nom de l'espace {#name}
         
-
-### Live People Count {#livePeopleCount}
+Le nom d'espace est utilisé pour le définir et le retrouver facilement.
+### Nombre d'affectations {#peopleCount}
         
-
-### Name {#name}
+Le nombre de personnes affectées dans l'espace, soit directement, soit à travers un poste de travail
+### Nombre de personnes dans l'espace en temps réel {#livePeopleCount}
         
-
+Cette valeur est mise à jour par les capteurs de comptage des personnes présent dans l'espace et fournit le nombre de personnes présent en temps réel dans l'espace
 ### Nombre de places assises {#seatsCount}
         
-Le nombre totale de places assises
+Le nombre total de places assises
 ### Nombre de postes de travail {#workplacesCount}
         
-Le nombre total de postes de travail dans les espaces
+Le nombre de postes de travail dans l'espace est calculé automatiquement
 ### Nombre de postes de travail de passage {#transitWorkplacesCount}
         
 Nombre de postes de travail de passage, ces postes ne sont pas comptabilisés dans les postes libres et ne sont pas en flex
 ### Nombre de postes de travail partagés {#sharedWorkplacesCount}
         
-Nombre total de postes de travail partagés par au moins 2 personnes
+Nombre de postes de travail partagés par au moins 2 personnes
 ### Nombre de postes flex {#flexWorkplacesCount}
         
-Nombre total de postes flex
+Nombre de postes flex dans l'espace
 ### Nombre de postes libres {#freeWorkplacesCount}
         
-Nombre total de postes libres
+Nombre de postes libres dans l'espace
 ### Nombre total d'affectations {#totalPeopleCount}
         
-Le nombre totale de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation
-### People Count {#peopleCount}
+Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail
+### Numéro de cylindre {#keyCylinderCode}
         
-
-### Perimeter {#perimeter}
+Le numéro de cylindre permet de définir le numéro de cylindre de la serrure de la porte de l'espace ou un élement en relation avec l'accès physique de l'espace
+### Périmètre {#perimeter}
         
-
-### Picture {#picture}
+Le périmètre d'espace représente son contour
+### Photo de l'espace {#picture}
         
-
+La photo de l'espace permet de le visualiser facilement
 ### Ratio d'occupation {#peopleRatio}
         
-Le ratio d'occupation est le nombre de métres carrés divisé par le nombre de personnes affectées soit directement dans les espaces, soit via un poste de travail
-### Ratio postes de travail {#workplacesRatio}
+Le ratio d'occupation est le nombre de métres carrés de l'espace divisé par le nombre de personnes affectées aux espaces, soit directement, soit via un poste de travail , cette valeur est calculée
+### Ratio par poste de travail {#workplacesRatio}
         
-Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail
+Le ratio par poste de travail est le nombre de métres carrés de l'espace divisé par le nombre de postes de travail, cette valeur est calculée automatiquement
+### Surface {#area}
+        
+La surface qualifiée au sol pour cet espace
 ### Taux d'occupation {#occupancyRate}
         
-Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail
+Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisé par le nombre de postes de travail
 ### Taux de foisonnement {#expansionRatio}
         
-Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisés par le nombre de postes de travail
-### Taux de places assises {#seatsPeopleRatio}
+Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisé par le nombre de postes de travail
+### Taux de places assises par affectations {#seatsPeopleRatio}
         
 Le nombre de places assises par personnes affectées
+### Taux de places assises par postes de travail {#totalCapacityWorkplaceCountRatio}
+        
+Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail
 ### Taux de postes de travail en flex {#flexRatio}
         
 Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail
 ### Taux de postes de travail partagés {#sharedWorkplacesRatio}
         
-Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail
+Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail de l'espace
 ### Text Anchor {#textAnchor}
         
 
@@ -91,7 +97,7 @@ Taux de postes de travail partagés par au moins 2 personnes par rapport à l'en
 
 ### Centre de coût {#costCenter}
         
-Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation
+Permet de connaitre à quel centre de coût associer l'espace quand il s'agit de gérer la refacturation au centre de coût par espace
 ### Connecteur d'espace {#roomConnector}
         
 Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces dans des étages différents
@@ -106,7 +112,7 @@ L'état d'occupation permet d'identifier l'état en temps réel d'un espace ou d
 
 ### Type de distribution des coûts {#distributionCostType}
         
-
+Permet de déterminer le mode de calcul de la clé de répartition des coûts
 ### Typologie d'espace {#roomType}
         
 

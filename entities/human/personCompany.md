@@ -5,6 +5,15 @@ L'entreprise de la personne permet de conserver les informations de l'entreprise
 
 ## Propriétés de base
 
+### Comment {#comment}
+        
+
+### Contact {#contact}
+        
+
+### Documents {#documents}
+        
+
 ### Nom {#name}
         
 Le nom de l'entreprise des personnes par exemple le nom de l'entreprise d'un prestataire de service
@@ -12,6 +21,15 @@ Le nom de l'entreprise des personnes par exemple le nom de l'entreprise d'un pre
 
 
 ## Entités associées (liste)
+
+###  Person Company To Item Types {#personCompanyToItemTypes}
+        
+
+###  Person Company To Items {#personCompanyToItems}
+        
+
+###  Person Company To Room Types {#personCompanyToRoomTypes}
+        
 
 ### Personnes {#people}
         

@@ -1,4 +1,4 @@
-# Organisation des bâtiments
+#  Room Type Group Building
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 
@@ -71,7 +71,7 @@ Taux de postes de travail partagés par au moins 2 personnes par rapport à l'en
 ### Bâtiment {#building}
         
 Le bâtiment est utilisé pour regrouper les étages
-### Organisation {#organization}
+### Groupe de typologie d'espace {#roomTypeGroup}
         
 
 

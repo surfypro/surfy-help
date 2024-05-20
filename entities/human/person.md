@@ -68,9 +68,9 @@ Le titre de la personne
 ### Centre de coût {#costCenter}
         
 Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation
-### Entreprise des personnes {#personCompany}
+### Entreprise prestataire {#personCompany}
         
-L'entreprise de la personne permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier
+L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion
 ### Genre de la personne {#personGender}
         
 

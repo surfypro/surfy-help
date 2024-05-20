@@ -8,7 +8,10 @@
 ### Capacité réglementaire {#regulatoryCapacity}
         
 La capacité réglementaire du plateau, permet de gérer l'évacuation du public et des employés
-### Empreinte Carbone {#carbonFootprint}
+### Capacité totale {#totalCapacityCount}
+        
+La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces
+### Empreinte carbone {#carbonFootprint}
         
 L'empreinte carbone est le nombre de CO2 émis
 ### Fond de plan {#backgroundLayout}
@@ -34,7 +37,7 @@ Le nombre de personnes affectées dans la l'étage, soit directement affécté a
 Le nombre d'espaces présent dans cet étage
 ### Nombre de places assises {#seatsCount}
         
-Le nombre totale de places assises
+Le nombre total de places assises
 ### Nombre de postes de travail {#workplacesCount}
         
 Le nombre de postes de travail dans l'étage est calculé automatiquement
@@ -68,9 +71,12 @@ Permet de connaître le taux d'usage des postes de travail, c'est le nombre de p
 ### Taux de foisonnement {#expansionRatio}
         
 Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisés par le nombre de postes de travail
-### Taux de places assises {#seatsPeopleRatio}
+### Taux de places assises par affectations {#seatsPeopleRatio}
         
 Le nombre de places assises par personnes affectées
+### Taux de places assises par postes de travail {#totalCapacityWorkplaceCountRatio}
+        
+Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail
 ### Taux de postes de travail en flex {#flexRatio}
         
 Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail
@@ -93,6 +99,9 @@ L'échelle permet de calculer en proportion les surfaces réelles et la taille d
 ## Entités associées (liste)
 
 ###  Partner Export Mapping Configuration To Floors {#partnerExportMappingConfigurationToFloors}
+        
+
+###  Room Type Group Floors {#roomTypeGroupFloors}
         
 
 ### Associations rôle de contenu aux étages {#contentRoleToFloors}

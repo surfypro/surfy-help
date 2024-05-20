@@ -1,4 +1,4 @@
-# Organisation des bâtiments
+#  Room Type Group Floor
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 
@@ -68,10 +68,10 @@ Taux de postes de travail partagés par au moins 2 personnes par rapport à l'en
 
 ## Entités associées (unique)
 
-### Bâtiment {#building}
+### Étage {#floor}
         
-Le bâtiment est utilisé pour regrouper les étages
-### Organisation {#organization}
+
+### Groupe de typologie d'espace {#roomTypeGroup}
         
 
 
