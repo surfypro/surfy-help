@@ -4,32 +4,32 @@
 
 - Depuis le plan en édition, le raccourci pour fusionner des sommets est maintenant shift + w
 - L'entreprise des personnes se nomme maintenant entreprise prestataire.
-    - Il est possible d'associer une entreprise prestataire à type d'objet et d'y associer un prestation (Par exemple : Extincteurs en gestion par Dubernard)
-    - Il est possible d'associer une entreprise prestataire à un type d'espace (par exemple Otis pour les ascenseurs pour l'entretien)
+    - Il est possible d'associer une entreprise prestataire à un type d'objet et d'y associer un prestation (Par exemple : Extincteurs en gestion par Dubernard)
+    - Il est possible d'associer une entreprise prestataire à un type d'espace (par exemple Otis pour l'entretien des ascenseurs)
 - Il est possible de créer une intervention sur un objet par un prestataire avec une date et une description
-- Les prestataires sont visible sur le plan sur la fiche carte des objets et des espaces
-- Création d'un rapport de qualité des données sur les objets permettant de trouver les objets de l'inventaire physiques qui ne sont pas dans la même espace que le poste de travail auquels ils sont rattachés
-- Création d'un rapport de qualité des données sur les espaces permettant de trouver les espaces qui ont la capacité complémentaire égale au nombre de places assises afin de régulariser la situation et remettre la capacité complémentaire à 0 pour avoir une capacité totale correcte
+- Les prestataires sont visibles sur le plan sur la fiche des objets et des espaces
+- Création d'un rapport de qualité des données sur les objets, permettant de trouver les objets de l'inventaire physique qui ne sont pas dans le même espace que le poste de travail auquel ils sont rattachés
+- Création d'un rapport de qualité des données sur les espaces permettant de trouver les espaces qui ont la capacité complémentaire égale au nombre de places assises afin de régulariser la situation et remettre la capacité complémentaire à 0 et avoir une capacité totale correcte
 
 ## 15 Avril 2024  - v3.3.229 ## 
 
 - La propriété sur l'espace Capacité se nomme maintenant Capacité complémentaire
-- Des nouvelles propriétés calculées sont maintenant disponible
-    - La capacité totale qui est la somme des capacités complémentaires des espaces et des places assises (attention à bien supprimer les capacités complémentaires des espaces qui font doublons avec les places assises pour avoir une capacité totale correcte)
+- Des nouvelles propriétés calculées sont maintenant disponibles
+    - La capacité totale, qui est la somme des capacités complémentaires des espaces et des places assises (attention à bien supprimer les capacités complémentaires des espaces qui font doublons avec les places assises pour avoir une capacité totale correcte)
     - Le taux de places assises par postes de travail
-- Mise en place des groupes de types d'espaces permettant de grouper des types d'espaces et donc de grouper les indicateurs par groupe de type d'espaces. Le groupement prend en compte une inclusion de type d'espaces ou une exclusion. Par exemple :
+- Mise en place des groupes de types d'espace permettant de grouper des types d'espace et donc de grouper les indicateurs par groupe de types d'espace. Le groupement prend en compte une inclusion de type d'espace ou une exclusion. Par exemple :
     - Surface totale hors parking
     - Nombre de places de parking (pmr, vélo, moto, éléctrique, ...)
-    - Capacité totale hors réstauration
-    - Capacité totale des espaces de réunions
+    - Capacité totale hors restauration
+    - Capacité totale des espaces de réunion
 
 
 ## 10 Avril 2024  - v3.3.228 ## 
 
-- Il est maintenant possible de recalculer les données du bâtiment directement depuis la carte de selection d'un calque d'affectations
-- Dans la réserveration des postes de travail seuls les postes de travail réservables sont réservables. Les postes de travail non réservables sont transparents et n'ont pas texte d'affichage dessus
-- Il est possible de réserver des postes de travails en étant dans plusieurs quartiers
-- Dans la recherche globale, les liens des vues non disponible en fonction des rôles ne sont plus cliquables
+- Il est maintenant possible de recalculer les données du bâtiment directement depuis la carte de selection d'un calque d'affectation
+- Dans la réservation des postes de travail seuls les postes de travail cochés "réservables" sont réservables. Les postes de travail non réservables sont transparents, inertes et n'ont pas texte d'affichage
+- Il est possible de réserver des postes de travail en étant présent dans plusieurs quartiers
+- Dans la recherche globale, les liens des vues nons disponibles en fonction des rôles ne sont plus cliquables
 
 
 ## 4 Avril 2024  - v3.3.224 ## 
