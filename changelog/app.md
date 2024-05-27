@@ -418,8 +418,9 @@ Les nouveautés de novembre 2023 :
 
 - Possibilité de copier un bâtiment dans le panier via la page des scénarios
     - Les échelles des plans doivent avoir des noms uniques dans la plateforme source et cible
-    - Les structure des plans doivent avoir des noms uniques dans la plateforme source et cible
+    - Les structures des plans doivent avoir des noms uniques dans la plateforme source et cible
     - Les pièces et les postes de travail doivent avoir tous un nom
+    - Les types d'objet doivent avoir un nom unique dans la plateforme source et cible
 - Rafraîchissement des données des scénarios d'un bâtiment depuis une icône dans la page des scénarios
 
 ## 5 Novembre 2022 - v3.3.123 ##
