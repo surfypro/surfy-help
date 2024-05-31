@@ -13,7 +13,9 @@ Pour créer un type d'objet sous forme d'icône, depuis le menu de gauche,
 -	renseigner le « nom » du type d’icône à créer
 -	placer l’« indice de hauteur» à « 9 » afin que les icônes soient systématiquement au-dessus des autres objets, donc visibles. (Par défaut, l’indice de hauteur est à 0. Il peut être négatif)
 -	la « Famille de types d’objet » permet d’afficher les objets par Famille sur les plans et dans l’inventaire en pdf.
--	ces trois premiers champs (Nom, Indice de hauteur, Famille) sont obligatoires.
+
+Ces trois premiers champs (Nom, Indice de hauteur, Famille) sont obligatoires.
+s
 -	le champ « Photo » permet de charger la photo du type d’objet, qui sera visible dans l’inventaire en pdf et sur la fiche de l’objet sélectionné sur le plan.
 -	cocher « Afficher les informations sur le plan » permet d’afficher le champ « Référence » de chaque objet sur le plan.
 -	un « Code » particulier vous donnera accès directement au type d’objet en le tapant dans la recherche lors de la création d’objet.
