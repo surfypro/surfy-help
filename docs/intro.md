@@ -9,6 +9,8 @@ Besoin d'un petit coup de pouce ? Nos tutoriels vous guideront pour réaliser qu
 A gauche de l'écran, l'arborescence des fonctionnalités<br />
 A droite de l'écran, la recherche par mots clés et les chapitres de la page active<br />
 
+
+
 ## Les Surfaces dans Surfy
 
 Pour utiliser Surfy j'ai besoin de plans statiques en 2D qui serviront de fond de plan à chaque étage pour la construction de mes espaces.<br />
