@@ -36,6 +36,10 @@ Enchainer les étapes pour arriver à ses fins, grâce aux suites Surfy :
 
 -   Réservation des espaces et postes de travail
     -   Mettre en place la réservation des espaces et des postes de travail
+    -   Créer les calques d'affectation par quartier
+    -   Affecter les personnes aux quartiers
+    -   Réserver dans Surfy
+    -   Utiliser Teams pour la réservation dans Surfy
 
 
 ## Gestion des coûts
