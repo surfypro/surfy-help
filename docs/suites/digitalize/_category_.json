@@ -1,9 +1,9 @@
 {
-  "label": "Digitaliser un bâtiment",
-  "position": 2,
+  "label": "La digitalisation",
+  "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Les étapes pour digitaliser un bâtiment"
+    "description": "Tout savoir sur la digitalisation d'un bâtiment"
   }
 }
 
