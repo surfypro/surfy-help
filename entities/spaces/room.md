@@ -5,12 +5,12 @@
 
 ## Propriétés de base
 
-### Capacité complémentaire {#capacity}
+### Capacité hors assises {#capacity}
         
 La capacité declarée peut être utilisé pour définir le nombre de places disponibles dans un espace ou pour connaître le maximum de personnes qu'on peut mettre dans un espace, ce chiffre s'ajoute au nombre de places assises pour donner la capacité totale
 ### Capacité totale {#totalCapacityCount}
         
-La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces
+La capacité totale de places est la somme du nombre de places assises et de la capacité hors assises au niveau des espaces
 ### Email utilisé pour la réservation de cet espace {#bookingEmail}
         
 Ce courriel permet de réserver cette salle via le système de messagerie

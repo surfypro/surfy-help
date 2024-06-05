@@ -1,5 +1,13 @@
 # Nouveautés
 
+## 5 Juin 2024  - v3.3.233 ## 
+
+- Les tuiles des entreprises possèdent maintenant un lien vers le tableau de bord de l'entreprise
+- Une personne peut reserver dans plusieurs quartiers des postes de travail en flex
+- L'icône de vision des plans et maintenant le premier de la liste
+- Les portes sont maintenant pris en compte dans les scenarios et export d'images 2d
+- Les cases à cocher pour selectionner les objets ou dimensions sur le plan gérent maintenant les couleurs blancs.
+
 ## 30 Avril 2024  - v3.3.232 ## 
 
 - Depuis le plan en édition, le raccourci pour fusionner des sommets est maintenant shift + w
