@@ -2,11 +2,11 @@
 
 ## 5 Juin 2024  - v3.3.233 ## 
 
-- Les tuiles des entreprises possèdent maintenant un lien vers le tableau de bord de l'entreprise
-- Une personne peut reserver dans plusieurs quartiers des postes de travail en flex
-- L'icône de vision des plans et maintenant le premier de la liste
-- Les portes sont maintenant pris en compte dans les scenarios et export d'images 2d
-- Les cases à cocher pour selectionner les objets ou dimensions sur le plan gérent maintenant les couleurs blancs.
+- La tuile de l'entreprise possède maintenant un lien vers le tableau de bord de l'entreprise
+- Une personne peut réserver des postes de travail en flex dans plusieurs quartiers 
+- L'icône de vision des plans est maintenant la première de la liste des icones verticales
+- Les portes sont maintenant prises en compte dans les scenarios et exports d'images 2d
+- Les cases à cocher pour sélectionner les objets ou dimensions sur le plan sont plus lisibles.
 
 ## 30 Avril 2024  - v3.3.232 ## 
 
