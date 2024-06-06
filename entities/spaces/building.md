@@ -16,7 +16,7 @@ Année de construction de l'immeuble permettant de mesurer sa vétusté
 La capacité réglementaire du plateau, permet de gérer l'évacuation du public et des employés
 ### Capacité totale {#totalCapacityCount}
         
-La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces
+La capacité totale de places est la somme du nombre de places assises et de la capacité hors assises au niveau des espaces
 ### Charges annuelles {#yearlyCondominiumFees}
         
 Montant des charges annuelles de gestion ou de copropriété par exemple

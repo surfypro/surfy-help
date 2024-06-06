@@ -1,5 +1,13 @@
 # Nouveautés
 
+## 5 Juin 2024  - v3.3.233 ## 
+
+- Les tuiles des entreprises possèdent maintenant un lien vers le tableau de bord de l'entreprise
+- Une personne peut reserver dans plusieurs quartiers des postes de travail en flex
+- L'icône de vision des plans et maintenant le premier de la liste
+- Les portes sont maintenant pris en compte dans les scenarios et export d'images 2d
+- Les cases à cocher pour selectionner les objets ou dimensions sur le plan gérent maintenant les couleurs blancs.
+
 ## 30 Avril 2024  - v3.3.232 ## 
 
 - Depuis le plan en édition, le raccourci pour fusionner des sommets est maintenant shift + w
@@ -9,13 +17,13 @@
 - Il est possible de créer une intervention sur un objet par un prestataire avec une date et une description
 - Les prestataires sont visibles sur le plan sur la fiche des objets et des espaces
 - Création d'un rapport de qualité des données sur les objets, permettant de trouver les objets de l'inventaire physique qui ne sont pas dans le même espace que le poste de travail auquel ils sont rattachés
-- Création d'un rapport de qualité des données sur les espaces permettant de trouver les espaces qui ont la capacité complémentaire égale au nombre de places assises afin de régulariser la situation et remettre la capacité complémentaire à 0 et avoir une capacité totale correcte
+- Création d'un rapport de qualité des données sur les espaces permettant de trouver les espaces qui ont la capacité hors assises égale au nombre de places assises afin de régulariser la situation et remettre la capacité hors assises à 0 et avoir une capacité totale correcte
 
 ## 15 Avril 2024  - v3.3.229 ## 
 
-- La propriété sur l'espace Capacité se nomme maintenant Capacité complémentaire
-- Des nouvelles propriétés calculées sont maintenant disponibles
-    - La capacité totale, qui est la somme des capacités complémentaires des espaces et des places assises (attention à bien supprimer les capacités complémentaires des espaces qui font doublons avec les places assises pour avoir une capacité totale correcte)
+- La propriété sur l'espace Capacité se nomme maintenant Capacité hors assises
+- Des nouvelles propriétés calculées sont maintenant disponible
+    - La capacité totale qui est la somme des capacités hors assises des espaces et des places assises (attention à bien supprimer les capacités hors assises des espaces qui font doublons avec les places assises pour avoir une capacité totale correcte)
     - Le taux de places assises par postes de travail
 - Mise en place des groupes de types d'espace permettant de grouper des types d'espace et donc de grouper les indicateurs par groupe de types d'espace. Le groupement prend en compte une inclusion de type d'espace ou une exclusion. Par exemple :
     - Surface totale hors parking

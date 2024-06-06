@@ -7,7 +7,7 @@
 
 ### Capacité totale {#totalCapacityCount}
         
-La capacité totale de places est la somme du nombre de places assises et de la capacité complémentaire au niveau des espaces
+La capacité totale de places est la somme du nombre de places assises et de la capacité hors assises au niveau des espaces
 ### Empreinte carbone {#carbonFootprint}
         
 L'empreinte carbone est le nombre de CO2 émis
