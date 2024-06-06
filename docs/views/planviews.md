@@ -52,9 +52,9 @@ La vision "Flex" colorie les postes de travail définis en Flex (en rose) et per
 La vision "Conformité de la sécurité" affiche les équipiers de Sécurité (Guide File, Serre File, Secouriste, Pompier, ...) en coloriant leur poste d'affectation dans une couleur définie.
 
 
-## Vision "Calques d'affectation"
+## Vision "Quartiers"
 
-La vision des "Calques d'affectation" visualise le calque d'affectation s'il est présent, regroupe les espaces en quartiers suivant ce calque et permet d'affecter directement les personnes aux quartiers.
+La vision "Quartiers" visualise le calque d'affectation s'il est présent, regroupe les espaces en quartiers suivant ce calque et permet d'affecter directement les personnes aux quartiers.
 
 
 ## Vision "Cloisons"
