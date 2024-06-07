@@ -15,9 +15,9 @@ sidebar_position: 2
 
 ## Aménager les espaces
 
-    -   Agencer le mobilier : objets et postes de travail
-    -   Copier et placer le mobilier   
-    -   Créer du nouveau mobilier
+    -   Agencer le mobilier : objets et postes de travail [Introduction au mobilier](https://help.surfy.pro/docs/category/mobilier)
+    -   Copier et placer le mobilier [Créer un objet](https://help.surfy.pro/docs/objects/item/create)   
+    -   Créer du nouveau mobilier  [Les différents type d'objet](https://help.surfy.pro/docs/objects/itemtype/intro)
     -   Référencer le mobilier
     -   Gérer un inventaire
 
