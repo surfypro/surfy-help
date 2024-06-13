@@ -3,7 +3,7 @@ sidebar_position: 2
 ---
 # Modifier un objet
 
-## Modifier les informations de l'objet
+## Modifier les informations d'un objet
 
 -   cliquer sur l'objet
 -   dans la fiche de l'objet à gauche du plan, cliquer sur "Modifier"
