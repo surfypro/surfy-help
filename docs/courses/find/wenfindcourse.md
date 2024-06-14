@@ -35,5 +35,8 @@ CHAPITRE EN COURS DE CONSTRUCTION
 
 ## Recherche d'affectation
 
-## Recherche par identifiant
+### Recherche par nom ou prénom
+### Recherche par nom du poste de travail
+### Recherche par quartier d'affectation
+
 

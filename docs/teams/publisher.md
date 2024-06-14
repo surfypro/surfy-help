@@ -19,7 +19,7 @@ Pour plus d'informations, merci de nous contacter via la page https://www.surfy.
 
 # Démo de la solution
 
-Une démo vidéo est disponible en vidéo 
+Une démo est disponible en vidéo 
 
 <Youtube code="0x6KKyPN7Zc"/>
 
@@ -34,7 +34,7 @@ https://www.surfy.fr/security
 # Déploiement & adoption pour les administrateurs IT
 
 Afin de pouvoir charger les images des utilisateurs, l'administrateur de l'entreprise doit donner son consentement.
-Les consentemsnts demandés sont les suivants :
+Les consentements demandés sont les suivants :
 
 - profile
 - email
