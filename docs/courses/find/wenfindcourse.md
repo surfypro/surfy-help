@@ -33,18 +33,18 @@ La recherche sur les espaces peut utiliser plusieurs critères :
 
 ## Recherche d'objet
 
-Recherche par référence
-Recherche par code d'immobilisation
-Recherche par nom de poste de travail
-Recherche par type d'objet
-Recherche par association à personne
-Recherche par identifiant
+-   Recherche par référence
+-   Recherche par code d'immobilisation
+-   Recherche par nom de poste de travail
+-   Recherche par type d'objet
+-   Recherche par association à personne
+-   Recherche par identifiant
 
 
 ## Recherche d'affectation
 
-Recherche par nom ou prénom
-Recherche par nom du poste de travail
-Recherche par quartier d'affectation
+-   Recherche par nom ou prénom
+-   Recherche par nom du poste de travail
+-   Recherche par quartier d'affectation
 
 
