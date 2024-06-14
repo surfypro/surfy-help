@@ -73,7 +73,7 @@ L'"aide à l'import des données pour les personnes" permet aussi de choisir les
  -  les personnes sont importées dans la base de données de Surfy.
 
 
-## Consulter la fiche de la personne
+## Rechercher une personne
 
 On peut accéder à la fiche de la personne de plusieurs façons :
 
