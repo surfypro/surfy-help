@@ -3,6 +3,19 @@ sidebar_position: 2
 ---
 # Affichage des plans en 2D
 
+## Visualiser un plan en 2D
+
+Pour visualiser un plan en 2D depuis la page d'accueil, cliquer sur le nom de l'étage du bâtiment concerné.
+Si le plan à afficher concerne un scénario, cliquer sur l'icône "les scénarios et projets du bâtiment XXX" en bas à droite de la fiche de son bâtiment d'origine puis cliquer sur l'étage voulu.
+
+On peut afficher le plan 2D depuis le menu de gauche, en cliquant sur "Bâtiments" puis sur le bâtiment concerné.
+Cliquer alors sur l'étage à afficher, ou sur l'icône "les scénarios et projets du bâtiment XXX" puis sur l'étage voulu.
+
+Le plan de l'étage est visualisé suivant la [Vision](http://help.surfy.pro/docs/views/planviews) utilisée.
+
+Les informations et données liées au plan sont affichées sur la partie gauche de l'écran et peuvent être réduites en cliquant sur l'icône verticale "Fermer le menu du plan".
+Le menu à gauche de l'écran (Menu Listes) peut également être réduit en cliquant sur les trois traits horizontaux "Réduire le menu" sous le logo de l'entreprise en haut à gauche de l'écran.
+
 ## Gérer le texte d'affichage des espaces
 
 Pour afficher les informations des espaces sur le plan, depuis le plan de l'étage,
