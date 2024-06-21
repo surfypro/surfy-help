@@ -93,6 +93,16 @@ const config: Config = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'courses',
+        path: 'courses',
+        routeBasePath: 'courses',
+        sidebarPath: './sidebars.ts',
+        // ... other options
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'changelog',
         path: 'changelog',
         routeBasePath: 'changelog',
@@ -122,6 +132,7 @@ const config: Config = {
           position: 'right'
         },
         { to: '/entities/intro', label: 'Références' },
+        { to: '/courses/intro', label: 'Cours' },
         { to: '/changelog/app', label: 'Nouveautés', position: 'left' },
         { to: '/blog', label: 'Blog', position: 'left' },
         { to: 'https://www.surfy.pro/contact', label: 'Nous contacter', position: 'left', target: '_blank', rel: 'noopener noreferrer' }
