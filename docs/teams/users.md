@@ -36,6 +36,10 @@ Surfy s'intègre parfaitement à Microsoft Teams, rendant encore plus facile la 
 
 Nous espérons que ce guide vous aidera à tirer pleinement parti de l'application Surfy pour une gestion de l'environnement de travail plus efficace et agréable. Bonne journée et bonne utilisation de Surfy !
 
-# Vidéo de Démonstration
+# Vidéos de Démonstration
+
+<Youtube code="56m9pJCDRps"/>
+
 
 <Youtube code="0x6KKyPN7Zc"/>
+
