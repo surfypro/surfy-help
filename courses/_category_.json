@@ -1,0 +1,8 @@
+{
+  "label": "Cours",
+  "position": 0,
+  "link": {
+    "type": "generated-index",
+    "description": "Les cours sont composés de plusieurs tutoriels, qui sont des pages de contenu structurées pour guider l'utilisateur dans l'apprentissage d'un sujet."
+  }
+}
