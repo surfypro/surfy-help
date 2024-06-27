@@ -19,16 +19,16 @@ Un mail vers vincent@surfy.pro est créé dans votre messagerie qu’il
 vous suffit d’envoyer afin de nous prévenir de votre demande d’accès en
 attente :
 
-1. Une fois votre accès validé et votre rôle attribué par Surfy en relation 
+5. Une fois votre accès validé et votre rôle attribué par Surfy en relation 
 avec votre entreprise, nous vous confirmons par mail la validation de 
 votre accès.
 
-1. Recommencez alors les étapes 1) et 2).
+6. Recommencez alors les étapes 1. et 2.
 
-1. Vous avez accès à votre plateforme Surfy suivant le rôle qui vous a été 
+7. Vous avez accès à votre plateforme Surfy suivant le rôle qui vous a été 
 attribué (Administrateur, Lecteur, ...).
 
-1. Créez un favori dans votre navigateur afin de pouvoir accéder 
+8. Créez un favori dans votre navigateur afin de pouvoir accéder 
 directement à Surfy.
 
-1. Bon Surf(y) 
+9. Bon Surf(y) 
