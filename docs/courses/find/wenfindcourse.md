@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 # Rechercher avec la loupe
 
-CHAPITRE EN COURS DE CONSTRUCTION
+
 
 ## Recherche de personne
 

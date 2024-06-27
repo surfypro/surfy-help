@@ -21,7 +21,7 @@ Pour exporter le plan d'un étage en Image,
 -   aller sur l'étage concerné
 -   afficher sur le plan le calque et les informations nécessaires à la sortie en Image : mobilier, affichage des textes, taille des polices, taille des icones, ...
 
-Pour plus d'informations sur la configuration d'affichage des plans, voir le chapitre [Affichage des plans en 2D](http://help.surfy.pro/docs/views/2Dviews).
+Pour plus d'informations sur la configuration d'affichage des plans, voir le chapitre [Affichage des plans en 2D](http://help.surfy.pro/docs/courses/views/2Dviews).
 
 -   une fois le plan configuré, cliquer sur l'icône "nuage" au dessus du plan afin de "sauvegarder en Image" le plan de l'étage.
 
@@ -42,7 +42,7 @@ On peut exporter les plans de plusieurs étages simultanément,
 
 Le fichier compressé est disponible dans les téléchargements.
 
-:::Bon à savoir
+:::tip Bon à savoir
 Tous les plans des étages reprennent la configuration du plan à partir duquel l'export est fait : pas besoin de charger le bon calque ni de choisir la bonne taille de police pour chaque étage, une fois suffit !
 :::
 

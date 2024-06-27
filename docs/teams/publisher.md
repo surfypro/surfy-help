@@ -1,6 +1,6 @@
-# Introduction
+# Réserver avec Teams dans Surfy
 
-# Se familiariser avec la solution
+## Se familiariser avec la solution
 
 Surfy propose de digitaliser les plans des bâtiments pour faciliter la gestion de l'environnement de travail. 
 
@@ -11,25 +11,24 @@ Vous pouvez utiliser l'application Surfy
 - indiquer que vous êtes en télétravail
 - voir quels collègues ont réservé un poste de travail sur le plan
 
-L'application est disponible seulement dans les régions francophone. 
+L'application de réservation est disponible uniquement en Français. 
 
-Pour utiliser l'application Teams, il est nécessaire de disposer d'un compte Surfy et d'avoir configuré vos espaces.
+Pour utiliser l'application Teams de réservation, il est nécessaire de disposer d'un compte Surfy et d'avoir [configuré vos espaces.](https://help.surfy.pro/docs/courses/occupy/occupycourse#mettre-en-place-laffectation-aux-quartiers)
 
-Pour plus d'informations, merci de nous contacter via la page https://www.surfy.pro/contact pour configurer Surfy et vous permettre d'utiliser l'application Teams.
+Pour plus d'informations, merci de nous contacter via la page https://www.surfy.pro/contact pour configurer Surfy et vous permettre d'utiliser l'application Teams pour la réservation dans Surfy.
 
-# Démo de la solution
+## Comment ça marche
 
-Une démo est disponible en vidéo 
 
-<Youtube code="0x6KKyPN7Zc"/>
+<Youtube code="56m9pJCDRps"/>
+
+
 
 # Sécurité de l'application & conformité pour les administrateurs IT
 
-L'application est hébérgée sur Microsoft Azure France. Elle est conforme aux réglementations RGPD.
+L'application est hébérgée chez Microsoft Azure France. Elle est conforme aux réglementations RGPD.
 
-Retrouvez tous nos engagements sur notre site internet :
-
-https://www.surfy.fr/security
+Retrouvez tous nos engagements sur notre site internet : https://www.surfy.fr/security
 
 # Déploiement & adoption pour les administrateurs IT
 
@@ -44,13 +43,15 @@ Les consentements demandés sont les suivants :
 
 # Instructions pour les étapes de configuration de Surfy
 
-Pourque l'application Teams puisse correctement fonctionner, le compte de l'entreprise doit être crée dans l'application Surfy et un premier bâtiment doit être configuré.
-Pour cela il est nécessaire de prendre contact avec nos équipes via https://www.surfy.pro/contact.
+Pour que l'application Teams fonctionne correctement avec Surfy, le compte de l'entreprise doit être créé dans Surfy.
+Pour cela il est nécessaire de prendre contact avec nos équipes via notre [page de contact](https://www.surfy.pro/contact).
+
+Une plateforme dédiée vous sera attribuée, un bâtiment doit être digitalisé et les personnes créées.
 
 # Guide d'utilisation pour l'utilisateur final
 
-Les utilisateurs finaux peuvent trouver de l'aide dans l'usage de l'application teams via la page dédiée sur notre portail d'aide accessible via [https://help.surfy.pro/teams/users](https://help.surfy.pro/docs/teams/users)
+Les utilisateurs finaux peuvent trouver de l'aide dans l'usage de l'application Teams en cliquant [ici](https://help.surfy.pro/docs/teams/users) 
 
 # Comment obtenir du support ?
 
-Notre équipe est toujours disponible pour vous aider, merci de vous reporter à notre page de contact pour obtenir de l'aide : https://www.surfy.pro/contact
+Notre équipe reste disponible pour vous accompagner, merci de vous reporter à notre [page de contact](https://www.surfy.pro/contact) pour obtenir de l'aide.

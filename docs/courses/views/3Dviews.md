@@ -7,7 +7,7 @@ sidebar_position: 3
 ## Afficher le plan 3D d'un étage
 
 Par défaut, les plans d'étage sont affichés en 2D dans Surfy.
-Cliquer pour [Visualiser un plan d'étage en 2D](http://help.surfy.pro/docs/views/2Dviews#visualiser-un-plan-en-2d)
+Cliquer pour [Visualiser un plan d'étage en 2D](http://help.surfy.pro/docs/courses/views/2Dviews#visualiser-un-plan-en-2d)
 
 Pour obtenir le plan en 3D d'un étage, à partir du plan 2D de l'étage,
 

@@ -50,6 +50,14 @@ Ce fichier doit être composé au minimum :
 -   de l'identifiant du poste de travail de l'affectation
 -   des bons en-têtes sur les colonnes à importer.
 
+Pour cela :
+-	Sortir le fichier Excel « rapport des postes de travail » pour obtenir l’identifiant des postes de travail
+-	Sortir la « liste des personnes » en Excel pour obtenir leur identifiant
+-	Sortir le gabarit d’affectation des personnes à un postes de travail pour obtenir les en-têtes corrects pour la réimportation du fichier Excel
+-	Remplir les colonnes «Identifiant Surfy (workplaceAffectation:person) » avec l’identifiant de la personne, et « Identifiant du poste de travail (workplaceAffectation:workplace) » avec l’identifiant du poste de travail.
+-	Importer ces deux colonnes uniquement, dans « importer des affectations au poste de travail ».
+
+
 :::warning Attention
 Les nouvelles affectations créées par importation viennent s'ajouter aux affectations déjà présentes, sans proposition de suppression de ces affectations.
 Il faut donc veiller à supprimer toutes les affectations  obsolètes avant d'importer le fichier.

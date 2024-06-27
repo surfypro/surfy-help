@@ -11,7 +11,7 @@ Si le plan à afficher concerne un scénario, cliquer sur l'icône "les scénari
 On peut afficher le plan 2D depuis le menu de gauche, en cliquant sur "Bâtiments" puis sur le bâtiment concerné.
 Cliquer alors sur l'étage à afficher, ou sur l'icône "les scénarios et projets du bâtiment XXX" puis sur l'étage voulu.
 
-Le plan de l'étage est visualisé suivant la [Vision](http://help.surfy.pro/docs/views/planviews) utilisée.
+Le plan de l'étage est visualisé suivant la [Vision](https://help.surfy.pro/docs/courses/views/planviews) utilisée.
 
 Les informations et données liées au plan sont affichées sur la partie gauche de l'écran et peuvent être réduites en cliquant sur l'icône verticale "Fermer le menu du plan".
 Le menu à gauche de l'écran (Menu Listes) peut également être réduit en cliquant sur les trois traits horizontaux "Réduire le menu" sous le logo de l'entreprise en haut à gauche de l'écran.
@@ -109,12 +109,14 @@ Les espaces regroupés ont leur informations cumulées par calque en cliquant su
 ## Afficher l'état des postes de travail sur le plan
 
 Cliquer sur l'icône verticale "colorier les postes de travail par rapport à leur état" permet de colorier les postes de travail :
--   en vert pour les postes affectables mais libres. Cette qualification est automatiquement donnée au poste de travail concerné
+-   en vert pour les postes affectables mais libres. Cette qualification est automatique
 -   en rose pour les postes déclarés en "Flex"
--   en orange pour les postes partagés à plusieurs. Cette qualification est automatiquement donnée au poste de travail concerné
+-   en orange pour les postes partagés à plusieurs. Cette qualification est automatique
 -   en bleu foncé pour les postes déclarés "de passage"
--   en vert/bleu pour les postes déclarés "réservables"
-Les postes de travail non concernés par ces qualifications restent en blanc.
+-   en bleu ciel pour les postes déclarés "réservables"
+
+Les postes de travail non concernés par ces qualifications restent dans leur couleur d'origine (blanc).
+Les postes de travail déclarés "en Flex" ou "de passage" ne peuvent pas être affectés à une personne.
 
 ## Afficher les profils Sécurité sur le plan
 
