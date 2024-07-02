@@ -9,8 +9,6 @@ Besoin d'un petit coup de pouce ? Nos tutoriels vous guideront pour réaliser qu
 A gauche de l'écran, l'arborescence des fonctionnalités<br />
 A droite de l'écran, la recherche par mots clés et les chapitres de la page active<br />
 
-
-
 ## Les Surfaces dans Surfy
 
 Pour utiliser Surfy j'ai besoin de plans statiques en 2D qui serviront de fond de plan à chaque étage pour la construction de mes espaces.<br />
@@ -35,4 +33,3 @@ Evaluer sa capacité à recevoir en comptant les postes de travail et les places
 
 Nous avons pensé à vous faciliter la tâche dans la recherche de vos informations dans Surfy: <br />
 Ajout d'un nouvel utilisateur de votre plateforme, Filtre des listes, menu déroulant, recherche d'une personne ou d'une référence, fichiers Excel de vos données, calcul de votre prestation de nettoyage, trouvez rapidement ce que vous cherchez !
-
