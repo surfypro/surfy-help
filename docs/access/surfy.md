@@ -1,10 +1,10 @@
-# SURFY via la création d’un compte sécurisé SURFY
+# Accès par compte Surfy
 
-## Première connexion à votre plateforme
+## Création du compte Surfy
 
-1) Rendez-vous sur le site https://app.surfy.pro 
+1) Rendez-vous sur https://app.surfy.pro 
 
-![surfyconnexion](https://res.cloudinary.com/dngnxxqr4/image/upload/v1719473656/entrez_les_donn%C3%A9es_rcpxt3.png)
+![surfyconnexion](https://res.cloudinary.com/dngnxxqr4/image/upload/v1719407257/page_connexion_surfy_b4jrgy.png)
 
 2) Cliquez sur « COMPTE SURFY » puis sur « Don’t have an account ? SIGN 
 UP » ou sur « INSCRIPTION » afin de créer votre compte Surfy.
@@ -29,31 +29,25 @@ votre mot de passe. Vous obtenez la page suivante :
 
 ![pagesuivante](https://res.cloudinary.com/dngnxxqr4/image/upload/v1719473656/compte_surfy_bxslbx.png)
 
-7) Si votre entreprise utilise Surfy, cliquez sur 
-Un mail vers vincent@surfy.pro est créé dans votre messagerie qu’il vous suffit d’envoyer 
-afin de nous prévenir de votre demande d’accès en attente :
+7)  Si votre entreprise utilise Surfy, cliquez sur ![bouton](https://res.cloudinary.com/dngnxxqr4/image/upload/v1719473656/bouton_zzwr3n.png)
+
+8) Si votre entreprise utilise l'authentification automatique et si vous réunissez les conditions, vous avez directement accès à la plateforme de votre entreprise.
+
+    Si ce n'est pas le cas, un mail vers vincent@surfy.pro est créé dans votre messagerie qu’il vous suffit d’envoyer afin de nous prévenir de votre demande d’accès en attente :
 
 ![mail](https://res.cloudinary.com/dngnxxqr4/image/upload/v1719474574/mail_a0sj1r.png)
 
-8) Si votre entreprise utilise Surfy sans authentification automatique, 
-cliquez sur
+    Votre demande est envoyée à Surfy pour validation d’accès à la plateforme de l’entreprise concernée.
 
-![bouton](https://res.cloudinary.com/dngnxxqr4/image/upload/v1719473656/bouton_zzwr3n.png
-)
-Votre demande est envoyée à Surfy pour validation d’accès à la 
-plateforme de l’entreprise concernée.
+    
+9) Une fois votre accès validé et votre rôle attribué en relation avec votre entreprise, nous vous confirmons par mail cette validation.
 
-9) Une fois votre accès validé et votre rôle attribué par Surfy en relation 
-avec votre entreprise, nous vous confirmons par mail la validation de 
-votre accès.
+## Connexion via un compte Surfy
 
-10) Retournez sur http://app.surfy.pro (compte Surfy) et connectez-vous 
-(Log in) avec votre adresse mail et mot de passe.
+10) Une fois votre accès validé, rendez vous sur http://app.surfy.pro (compte Surfy) et connectez-vous (Log in) avec votre adresse mail et mot de passe.
 
-11) Vous avez accès à votre plateforme Surfy suivant le rôle qui vous a 
-été attribué (Administrateur, Lecteur, ...).
+11) Vous avez accès à votre plateforme Surfy suivant le rôle qui vous a été attribué (Administrateur, Lecteur, ...).
 
-12) Créez un favori dans votre navigateur afin de pouvoir accéder 
-directement à Surfy.
+12) Créez un favori dans votre navigateur afin de pouvoir accéder directement à la plateforme.
 
-13) Bon Surf(y) 
+13) Bon Surf(y) !
