@@ -17,6 +17,9 @@ Le nom de famille de l'utilisateur
 ### Prénom {#firstname}
         
 Le prénom de l'utilisateur
+### Refresh Token {#refreshToken}
+        
+
 ### Sub {#sub}
         
 

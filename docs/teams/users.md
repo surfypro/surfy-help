@@ -40,6 +40,4 @@ Nous espérons que ce guide vous aidera à tirer pleinement parti de l'applicati
 
 <Youtube code="56m9pJCDRps"/>
 
-
 <Youtube code="0x6KKyPN7Zc"/>
-

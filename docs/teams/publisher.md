@@ -50,7 +50,7 @@ Une plateforme dédiée vous sera attribuée, un bâtiment doit être digitalis�
 
 # Guide d'utilisation pour l'utilisateur final
 
-Les utilisateurs finaux peuvent trouver de l'aide dans l'usage de l'application Teams en cliquant [ici](https://help.surfy.pro/docs/teams/users) 
+Les utilisateurs finaux peuvent trouver de l'aide dans l'usage de l'application Teams en cliquant [ici](/docs/teams/users.md) 
 
 # Comment obtenir du support ?
 

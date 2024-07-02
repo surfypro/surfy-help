@@ -478,6 +478,10 @@
                     "label": "Sub",
                     "description": null
                 },
+                "refreshToken": {
+                    "label": "Refresh Token",
+                    "description": null
+                },
                 "createdAt": {
                     "label": "Date de création",
                     "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
