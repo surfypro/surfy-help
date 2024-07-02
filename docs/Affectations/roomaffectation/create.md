@@ -6,7 +6,7 @@ Les affectations aux espaces correspondent à des affectations libres dans un es
 
 L'affectation à un espace se fait toujours à partir de l'espace, auquel on peut affecter une ou plusieurs personnes.
 
-## Affecter une personne à un espace :
+## Affecter une personne à un espace
 
 Pour affecter une personne à un espace,
 

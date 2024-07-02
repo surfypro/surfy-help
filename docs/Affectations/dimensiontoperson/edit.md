@@ -6,7 +6,7 @@ sidebar_position: 2
 ## Modification de l'affectation à un quartier d'une personne
 
 La manière la plus simple de modifier l'affectation à un quartier d'une personne dans Surfy est de supprimer son affectation au quartier puis de créer une nouvelle affectation, qu'elle soit à un quartier ou non.
-Pour déplacer une personne d'un quartier à un autre, voir les chapitres [Supprimer une affectation à un quartier](https://help.surfy.pro/docs/Affectations/dimensiontoperson/delete) et [Créer une affectation à un quartier](https://help.surfy.pro/docs/Affectations/dimensiontoperson/create)
+Pour déplacer une personne d'un quartier à un autre, voir les chapitres [Supprimer une affectation à un quartier](/docs/Affectations/dimensiontoperson/delete.md) et [Créer une affectation à un quartier](/docs/Affectations/dimensiontoperson/create.md)
 
 
 ## Modification d'affectation à un quartier en masse par fichier Excel

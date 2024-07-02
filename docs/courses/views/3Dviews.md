@@ -7,7 +7,7 @@ sidebar_position: 3
 ## Afficher le plan 3D d'un étage
 
 Par défaut, les plans d'étage sont affichés en 2D dans Surfy.
-Cliquer pour [Visualiser un plan d'étage en 2D](http://help.surfy.pro/docs/courses/views/2Dviews#visualiser-un-plan-en-2d)
+Cliquer pour [Visualiser un plan d'étage en 2D](/docs/courses/views/2Dviews.md#visualiser-un-plan-en-2d)
 
 Pour obtenir le plan en 3D d'un étage, à partir du plan 2D de l'étage,
 
@@ -60,7 +60,7 @@ On peut représenter un bâtiment en 3D, positionné et orienté correctement su
 Pour afficher le bâtiment géolocalisé sur une carte,
 
 -   renseigner l'adresse du bâtiment en cliquant sur l'icône Crayon "Modifier le bâtiment" sur la fiche du bâtiment
--   créer et calibrer la structure du RDC (ou de l'étage le plus bas hors sous sols). Voir [Créer la structure d'un étage](http://help.surfy.pro/docs/surfaces/structure/create).
+-   créer et calibrer la structure du RDC (ou de l'étage le plus bas hors sous sols). Voir [Créer la structure d'un étage](/docs/surfaces/structure/create.md).
 
 
 Pour visualiser le bâtiment géolocalisé sur un plan, cliquer sur l'icône en bout de ligne de couleur du bâtiment concerné puis sur "Voir le bâtiment en 3D sur un plan".

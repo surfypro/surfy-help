@@ -11,7 +11,7 @@ Si le plan à afficher concerne un scénario, cliquer sur l'icône "les scénari
 On peut afficher le plan 2D depuis le menu de gauche, en cliquant sur "Bâtiments" puis sur le bâtiment concerné.
 Cliquer alors sur l'étage à afficher, ou sur l'icône "les scénarios et projets du bâtiment XXX" puis sur l'étage voulu.
 
-Le plan de l'étage est visualisé suivant la [Vision](https://help.surfy.pro/docs/courses/views/planviews) utilisée.
+Le plan de l'étage est visualisé suivant la [Vision](/docs/courses/views/planviews.md) utilisée.
 
 Les informations et données liées au plan sont affichées sur la partie gauche de l'écran et peuvent être réduites en cliquant sur l'icône verticale "Fermer le menu du plan".
 Le menu à gauche de l'écran (Menu Listes) peut également être réduit en cliquant sur les trois traits horizontaux "Réduire le menu" sous le logo de l'entreprise en haut à gauche de l'écran.
@@ -122,7 +122,7 @@ Les postes de travail déclarés "en Flex" ou "de passage" ne peuvent pas être 
 
 Cliquer sur l'icône verticale "colorier les postes de travail par rapport aux personnes" permet de colorier les postes de travail des personnes affectées suivant leur profil sécurité.
 Deux voire trois affectations de profils de sécurité différents sur le même poste de travail, striera le poste de travail avec les couleurs des profils sécurité des personnes affectées.
-Pour plus d'information sur les profils Sécurité, voir le chapitre [Visualiser les profils Sécurité sur les plans](https://help.surfy.pro/docs/person/personSecurityProfile/list#visualiser-les-profils-s%C3%A9curit%C3%A9-sur-les-plans).
+Pour plus d'information sur les profils Sécurité, voir le chapitre [Visualiser les profils Sécurité sur les plans](/docs/person/personSecurityProfile/list.md#visualiser-les-profils-s%C3%A9curit%C3%A9-sur-les-plans).
 
 
 ## Afficher les objets sur le plan

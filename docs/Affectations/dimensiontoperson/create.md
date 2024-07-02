@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 # Créer une Affectation à un quartier
 
-Pour affecter des personnes à des quartiers, il faut tout d'abord créer des calques d'affectation puis définir les quartiers en qualifiant les espaces. Consulter la rubrique [Calques d'affectation](https://help.surfy.pro/docs/dimensionTypeToBuilding/create) pour tout savoir sur la création, modification ou suppression d'un calque d'affectation.
+Pour affecter des personnes à des quartiers, il faut tout d'abord créer des calques d'affectation puis définir les quartiers en qualifiant les espaces. Consulter la rubrique [Calques d'affectation](/docs/dimensionTypeToBuilding/create.md) pour tout savoir sur la création, modification ou suppression d'un calque d'affectation.
 
 Une fois les quartiers créés sur les plans,
 

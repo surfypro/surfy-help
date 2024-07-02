@@ -16,7 +16,7 @@ Pour refacturer les postes de travail d'un espace à leur centre de coût, tous 
 
 On peut choisir le type de distribution des coûts pour chaque espace, et panacher ainsi des espaces refacturés par espace et des ratios d'espace facturés par poste de travail
 
-Pour plus d'information sur les types de distribution des coûts, voir le chapitre [Type de distribution des coûts](https://help.surfy.pro/docs/costcenter/create#type-de-distribution-des-co%C3%BBts).
+Pour plus d'information sur les types de distribution des coûts, voir le chapitre [Type de distribution des coûts](/docs/costcenter/create.md#type-de-distribution-des-co%C3%BBts).
 
 
 ## Clés de répartition et surfaces qualifiées par centre de coût

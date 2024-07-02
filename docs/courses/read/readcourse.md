@@ -10,29 +10,29 @@ sidebar_position: 1
 
 Les liens ci dessous permettent d'accéder aux tutoriels correspondants :
 
-[Choisir la Vision adaptée](https://help.surfy.pro/docs/courses/views/planviews)
+[Choisir la Vision adaptée](/docs/courses/views/planviews.md)
 
-[Rechercher avec la loupe](https://help.surfy.pro/docs/courses/find/wenfindcourse)
+[Rechercher avec la loupe](/docs/courses/find/wenfindcourse.md)
 
-[Afficher les plans en 2D](https://help.surfy.pro/docs/courses/views/2Dviews)
+[Afficher les plans en 2D](/docs/courses/views/2Dviews.md)
 
-[Sauvegarder les plans en image](https://help.surfy.pro/docs/courses/views/planexport)
+[Sauvegarder les plans en image](/docs/courses/views/planexport.md)
 
-[Afficher les plans en 3D](https://help.surfy.pro/docs/courses/views/3Dviews)
+[Afficher les plans en 3D](/docs/courses/views/3Dviews.md)
 
-[Afficher les cartes de chaleur](https://help.surfy.pro/docs/courses/views/heatmap)
+[Afficher les cartes de chaleur](/docs/courses/views/heatmap.md)
 
-[Obtenir les rapports de données du bâtiment](https://help.surfy.pro/docs/BuildingData/Buildingdashboard/Buildingreporting)
+[Obtenir les rapports de données du bâtiment](/docs/BuildingData/Buildingdashboard/Buildingreporting.md)
 
-[Obtenir l'inventaire en pdf du bâtiment](https://help.surfy.pro/docs/BuildingData/Buildinginventory)
+[Obtenir l'inventaire en pdf du bâtiment](/docs/BuildingData/Buildinginventory.md)
 
-[Rechercher dans les listes](https://help.surfy.pro/docs/courses/find/listfindcourse)
+[Rechercher dans les listes](/docs/courses/find/listfindcourse.md)
 
-[Visualiser les calques d'analyse](https://help.surfy.pro/docs/dimensionType/create#visualiser-les-calques-danalyse)
+[Visualiser les calques d'analyse](/docs/dimensionType/create.md#visualiser-les-calques-danalyse)
 
-[Rechercher un poste libre, de passage ou autre](https://help.surfy.pro/docs/courses/views/2Dviews#afficher-l%C3%A9tat-des-postes-de-travail-sur-le-plan)
+[Rechercher un poste libre, de passage ou autre](/docs/courses/views/2Dviews.md#afficher-l%C3%A9tat-des-postes-de-travail-sur-le-plan)
 
-[Afficher les profils Sécurité sur les plans](https://help.surfy.pro/docs/person/personsecurityprofile/list/#visualiser-les-profils-s%C3%A9curit%C3%A9-sur-les-plans)
+[Afficher les profils Sécurité sur les plans](/docs/person/personSecurityProfile/list.md#visualiser-les-profils-s%C3%A9curit%C3%A9-sur-les-plans)
 
 
 

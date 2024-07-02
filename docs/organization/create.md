@@ -132,7 +132,7 @@ Pour rattacher un Service à un quartier, il faut tout d'abord sortir de la navi
 -   ou en cliquant sur l'icône verticale "Changer la vision du plan" puis sur la vision "Typologies des espaces".
 
 
-On peut ensuite "Modifier" chaque espace pour lui rattacher son Service (voir [Rattacher un Service à un espace](https://help.surfy.pro/docs/organization/create#rattacher-un-service-%C3%A0-un-espace)) et ainsi à tous les espaces du quartier concerné.
+On peut ensuite "Modifier" chaque espace pour lui rattacher son Service (voir [Rattacher un Service à un espace](/docs/organization/create.md#rattacher-un-service-%C3%A0-un-espace)) et ainsi à tous les espaces du quartier concerné.
 
 Pour revenir ensuite à la navigation par quartier,
 

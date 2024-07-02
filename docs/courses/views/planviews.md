@@ -32,7 +32,7 @@ Cette vision affiche le nom des espaces et des postes de travail.
 
 On peut obtenir les données cumulées par Typologie en cliquant sur l'icône verticale "Colorier les espaces sur le plan en fonction des typologies d'espace" puis sur le papillon "Ouvrir tous les détails et indicateurs".
 
-Cette vision est adaptée à la [Direction de l'environnement de travail](https://www.surfy.pro/ug/environnement-de-travail) qui maintient à jour la vie du bâtiment digitalisé dans Surfy, notamment en [aménageant les espaces](https://help.surfy.pro/docs/courses/digitalize/digicourse).
+Cette vision est adaptée à la [Direction de l'environnement de travail](https://www.surfy.pro/ug/environnement-de-travail) qui maintient à jour la vie du bâtiment digitalisé dans Surfy, notamment en [aménageant les espaces](/docs/courses/digitalize/digicourse.md).
 
 ## Vision "Refacturation"
 
@@ -41,7 +41,7 @@ La vision "Refacturation" colorie les espaces et les postes de travail par centr
 On peut obtenir les données cumulées par centre de coût en cliquant sur l'icône verticale "Colorier les espaces et postes de travail par rapport aux centres de coût" puis sur l'onglet "Espaces" puis sur le papillon "Ouvrir tous les détails et indicateurs".
 L'onglet "Postes de travail" permet un comptage des postes par centre de coût.
 
-Cette vision correspond particulièrement aux [fonctions Finances](https://www.surfy.pro/ug/fonction-finances) ou [Directeurs Immobilier](https://www.surfy.pro/ug/direction-immobiliere) afin de gérer la [refacturation des surfaces par centre de coût](https://help.surfy.pro/docs/cost-distribution-by-cost-center/create).
+Cette vision correspond particulièrement aux [fonctions Finances](https://www.surfy.pro/ug/fonction-finances) ou [Directeurs Immobilier](https://www.surfy.pro/ug/direction-immobiliere) afin de gérer la [refacturation des surfaces par centre de coût](/docs/cost-distribution-by-cost-center/create.md).
 
 
 ## Vision "Directions"
@@ -51,7 +51,7 @@ Cette vision permet d'organiser ou de visualiser la bonne distribution des espac
 
 On peut obtenir les données cumulées par Direction ou par Service en cliquant sur l'icône verticale "Colorier les espaces sur le plan selon les Organisations" puis sur le papillon "Ouvrir tous les détails et indicateurs".
 
-Cette vision est adaptée aux [assistant(e)s de Direction]((https://www.surfy.pro/ff/affecter-les-collaborateurs)) désirant maîtriser le périmètre de leur Service ou Direction et [gérer l'affectation des collaborateurs](https://help.surfy.pro/docs/category/affectations-aux-postes-de-travail) sur ce périmètre.
+Cette vision est adaptée aux [assistant(e)s de Direction](https://www.surfy.pro/ff/affecter-les-collaborateurs) désirant maîtriser le périmètre de leur Service ou Direction et [gérer l'affectation des collaborateurs](/docs/category/affectations-aux-postes-de-travail) sur ce périmètre.
 
 ## Vision "Occupations"
 
@@ -59,7 +59,7 @@ La vision "Occupations" colorie les postes de travail libres (en vert), les post
 Le nom de chaque espace et poste de travail est affiché.
 Aucun calque d'analyse n'est affiché, les espaces restent sans couleur.
 
-On peut sélectionner l'[affichage de ces informations](https://help.surfy.pro/docs/courses/views/2Dviews#afficher-l%C3%A9tat-des-postes-de-travail-sur-le-plan) en cliquant sur l'icône verticale "Colorier les postes de travail par rapport à leur état".
+On peut sélectionner l'[affichage de ces informations](/docs/courses/views/2Dviews.md#afficher-l%C3%A9tat-des-postes-de-travail-sur-le-plan) en cliquant sur l'icône verticale "Colorier les postes de travail par rapport à leur état".
 
 Cette vision est destinée à accéder rapidement aux informations d'occupation et permet de revenir aussi rapidement à la vision précédente.
 Le nombre de postes de travail de chaque qualification est indiqué en permanence dans la fiche du bâtiment, de l'étage ou de l'espace considéré.
@@ -69,7 +69,7 @@ Le nombre de postes de travail de chaque qualification est indiqué en permanenc
 La vision "Flex" colorie les postes de travail qualifiés en Flex (en rose) et permet une localisation rapide de ces postes de travail.
 Aucun calque d'analyse n'est affiché, les espaces restent sans couleur.
 
-On peut accéder à l'[affichage de ces informations](https://help.surfy.pro/docs/courses/views/2Dviews#afficher-l%C3%A9tat-des-postes-de-travail-sur-le-plan) en cliquant sur l'icône verticale "Colorier les postes de travail par rapport à leur état".
+On peut accéder à l'[affichage de ces informations](/docs/courses/views/2Dviews.md#afficher-l%C3%A9tat-des-postes-de-travail-sur-le-plan) en cliquant sur l'icône verticale "Colorier les postes de travail par rapport à leur état".
 Les postes "réservables" peuvent être coloriés (en bleu ciel) afin de les repérer sur le plan.
 
 Cette vision est destinée à accéder rapidement à l'information et permet de revenir aussi rapidement à la vision précédente.
@@ -81,20 +81,20 @@ La vision "Conformité de la sécurité" affiche le nom et la qualité des équi
 Aucun calque d'analyse n'est affiché, les espaces restent sans couleur.
 
 Cette vision est destinée à accéder rapidement à l'information et permet de revenir aussi rapidement à la vision précédente.
-Elle est destinée aux [responsables de la Sécurité](https://www.surfy.pro/ug/sante-et-securite) désirant [gérer les équipiers de Sécurité](https://help.surfy.pro/docs/person/personsecurityprofile/list/#visualiser-les-profils-s%C3%A9curit%C3%A9-sur-les-plans) en toute sérénité.
+Elle est destinée aux [responsables de la Sécurité](https://www.surfy.pro/ug/sante-et-securite) désirant [gérer les équipiers de Sécurité](/docs/person/personSecurityProfile/list.md#visualiser-les-profils-s%C3%A9curit%C3%A9-sur-les-plans) en toute sérénité.
 
 
 ## Vision "Quartiers"
 
 La vision "Quartiers" colorie les espaces par les calques d'affectation, regroupe les espaces en quartiers suivant ces calques et permet d'affecter directement les personnes à ces quartiers.
 
-C'est la vision idéale pour le [gestionnaire des affectations](https://www.surfy.pro/ff/affecter-les-collaborateurs), lui permettant de [gérer l'affectation aux quartiers](https://help.surfy.pro/docs/category/affectations-aux-quartiers) mais aussi les [affectations fixes aux postes de travail](https://help.surfy.pro/docs/category/affectations-aux-postes-de-travail).
+C'est la vision idéale pour le [gestionnaire des affectations](https://www.surfy.pro/ff/affecter-les-collaborateurs), lui permettant de [gérer l'affectation aux quartiers](/docs/category/affectations-aux-quartiers) mais aussi les [affectations fixes aux postes de travail](/docs/category/affectations-aux-postes-de-travail).
 On peut en effet mélanger dans un même espace des postes de travail déclarés en Flex (réservable ou non) et des postes à affectation fixe.
 
 
 ## Vision "Cloisons"
 
 Dans la vision "Cloisons", aucune information ni aucun calque ne sont affichés sur le plan afin de visualiser uniquement le fond de plan.
-Cette vision permet aux [aménageurs](https://www.surfy.pro/ff/amenager-et-optimiser-les-espaces) de vérifier la conformité et de [modifier le fond de plan](https://help.surfy.pro/docs/surfaces/background/edit) si nécessaire.
+Cette vision permet aux [aménageurs](https://www.surfy.pro/ff/amenager-et-optimiser-les-espaces) de vérifier la conformité et de [modifier le fond de plan](/docs/surfaces/background/edit.md) si nécessaire.
 
 

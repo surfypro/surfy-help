@@ -49,6 +49,6 @@ La structure de l'étage apparait sur une carte à l'adresse du bâtiment et à 
 La "Transformation" permet de modifier la position X, la position Y ainsi que la rotation de la structure afin de positionner précisément la structure sur la carte.
 Valider les modifications en cochant la coche verte.
 
-La structure étant calibrée, le bâtiment peut être géolocalisé sur la carte. Voir [Afficher un bâtiment en 3D sur une carte](https://help.surfy.pro/docs/views/3dviews/#afficher-un-b%C3%A2timent-en-3d-sur-une-carte)
+La structure étant calibrée, le bâtiment peut être géolocalisé sur la carte. Voir [Afficher un bâtiment en 3D sur une carte](/docs/courses/views/3Dviews.md#afficher-un-bâtiment-en-3d-sur-une-carte)
 
 

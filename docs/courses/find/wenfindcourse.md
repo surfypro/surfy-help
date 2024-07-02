@@ -17,7 +17,7 @@ La recherche sur les personnes peut utiliser plusieurs critères :
 -   Recherche par identifiant
 
 
-[Rechercher une personne par un de ces critères](https://help.surfy.pro/docs/person/create#rechercher-une-personne)
+[Rechercher une personne par un de ces critères](/docs/person/create.md#rechercher-une-personne)
 
 
 ## Recherche d'espace

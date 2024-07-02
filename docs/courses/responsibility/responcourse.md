@@ -11,7 +11,7 @@ sidebar_position: 4
     -   Copier et placer les objets de sécurité sur le plan
     -   Qualifier les espaces en zones d'évacuation
 
-[Exporter le plan en Image](https://help.surfy.pro/docs/courses/views/planexport#exporter-les-plans-2d-en-image)
+[Exporter le plan en Image](/docs/courses/views/planexport.md#exporter-les-plans-2d-en-image)
 
 ## Contrôler l'empreinte carbone
 

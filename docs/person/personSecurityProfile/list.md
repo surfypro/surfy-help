@@ -10,7 +10,7 @@ sidebar_position: 2
 
 Pour attribuer un profil Sécurité à une personne, celui ci doit être déjà créé afin d'être présent dans la liste de choix.
 
-Pour créer un profil Sécurité, voir le chapitre [Créer un profil Sécurité](https://help.surfy.pro/docs/person/personSecurityProfile/create)
+Pour créer un profil Sécurité, voir le chapitre [Créer un profil Sécurité](/docs/person/personSecurityProfile/create.md)
 
 
 Pour attribuer un profil sécurité à une personne,

@@ -6,7 +6,7 @@ sidebar_position: 1
 Les centres de coût permettent la refacturation des espaces, des personnes et des ratios surfaciques par poste de travail aux différentes entités.
 Surfy propose un calcul automatique des clés de répartition et surfaces cumulées par centre de coût sur un ou plusieurs bâtiments afin de répartir et refacturer les charges du ou des bâtiments au prorata des surfaces d'occupation ou des personnes affectées à ces espaces.
 
-Pour plus d'informations sur le calcul de la refacturation dans Surfy, voir le chapitre [Refacturer les espaces dans Surfy](https://help.surfy.pro/docs/cost-distribution-by-cost-center/create).
+Pour plus d'informations sur le calcul de la refacturation dans Surfy, voir le chapitre [Refacturer les espaces dans Surfy](/docs/cost-distribution-by-cost-center/create.md).
 
 ## Créer un centre de coût
 
