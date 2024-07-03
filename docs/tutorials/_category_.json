@@ -1,0 +1,8 @@
+{
+  "label": "Tutoriels",
+  "position": 0,
+  "link": {
+    "type": "generated-index", 
+    "description": "Les tutoriels pour accompagner l'utilisateur dans l'apprentissage d'une fonctionnalité."
+  }
+}

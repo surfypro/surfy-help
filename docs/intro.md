@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Introduction
+# Les tutoriels
 
 Besoin d'un petit coup de pouce ? Nos tutoriels vous guideront pour réaliser quelques actions élémentaires dans Surfy.
 
