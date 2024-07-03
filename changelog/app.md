@@ -1,6 +1,6 @@
 # Nouveautés
 
-<!-- ## 11 Juin 2024  - v3.3.234 ## 
+<!-- ## 11 Juillet 2024  - v3.3.236 ## 
 
 - Mise en place des icones de fontawesome en version 6.5.2
 - Mise en place d'un mode avancé pour la visualisation des type d'objets en 3D pour pouvoir les prévisualiser sans les axes et la zone d'occupation au sol
