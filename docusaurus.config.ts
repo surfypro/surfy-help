@@ -131,8 +131,8 @@ const config: Config = {
           type: 'localeDropdown',
           position: 'right'
         },
+        { to: '/docs/courses/intro', label: 'Cours' },
         { to: '/entities/intro', label: 'Références' },
-        // { to: '/courses/intro', label: 'Cours' },
         { to: '/changelog/app', label: 'Nouveautés', position: 'left' },
         { to: '/blog', label: 'Blog', position: 'left' },
         { to: 'https://www.surfy.pro/contact', label: 'Nous contacter', position: 'left', target: '_blank', rel: 'noopener noreferrer' }
