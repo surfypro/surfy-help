@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 # Les différents types d'objet
 
-Outre les postes de travail qui possèdent des propriétés particulières (voir [Les types de poste de travail](/docs/tutorials/workplacetype)), il existe 2 catégories de types d’objet : Icônes et Objets à l’échelle.
+Outre les postes de travail qui possèdent des propriétés particulières (voir [Les types de poste de travail](/docs/tutorials/objects/workplacetype/category/les-types-de-poste-de-travail)), il existe 2 catégories de types d’objet : Icônes et Objets à l’échelle.
 
 ### Type d'objet sous forme d'icône
 
