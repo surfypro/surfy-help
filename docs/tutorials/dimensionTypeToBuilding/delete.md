@@ -20,7 +20,7 @@ Aprsè rafraichissement (F5), le calque d'affectation est supprimé et n'apparai
 
 ## Supprimer un type de calque
 
-:::warning Attention
+:::danger Attention
 Supprimer un type de calque supprimera tous les calques associés au type de calque supprimé ainsi que toutes les affectations à ce calque. Les espaces qualifiés par ces calques perdront l'information du type de calque supprimé et des calques associés.
 :::
 

@@ -16,7 +16,7 @@ Pour passer en navigation "par quartiers", ou "par calques d'affectation",
 
 
 :::tip Vision du plan
-Cliquer sur l'icône verticale "Changer la vision du plan" et sélectionner "Calques d'affectation" permet en 2 clics de configurer Surfy en mode affectation par quartier : Les calques d'affectation s'affichent sur le plan et le type de calque est sélectionné pour la navigation. Tant que la vision n'est pas changée, elle reste effective même après rafraichissement (F5). Il faut donc penser à revenir dans la vision par défaut "Typologies des espaces" pour une utilisation standard.
+Cliquer sur l'icône verticale "Changer la vision du plan" et sélectionner la vision "Quartiers" permet en 2 clics de configurer Surfy en mode affectation par quartier : Les calques d'affectation s'affichent sur le plan et le type de calque est sélectionné pour la navigation. Tant que la vision n'est pas changée, elle reste effective même après rafraichissement (F5). Il faut donc penser à revenir dans la vision par défaut "Typologies des espaces" pour une utilisation standard. Voir [la vision par quartiers](/docs/courses/views/planviews.md#vision-quartiers).
 :::
 
 

@@ -41,6 +41,6 @@ Pour modifier la composition d'un type de poste de travail, depuis le menu de ga
 On peut accéder directement aux informations ou à la composition d'un type de poste de travail si celui ci est présent sur le plan: En cliquant sur un des postes de travail, l'icône "Voir plus d'options pour le type de poste de travail XXX" sur la fiche du poste de travail à gauche en début de la ligne "type de poste de travail", permet d'accéder directement à la fiche ou à la composition du type de poste de travail.
 :::
 
-:::tip Attention
+:::danger Attention
 Modifier la composition d'un type de poste de travail peut modifier sa position sur les plans, calculée à partir du point central (barycentre) de la composition du type de poste de travail
 :::

@@ -18,7 +18,7 @@ L'affectation de la personne est supprimée
 Supprimer l'affectation d'une personne ne supprime pas la personne. En revanche, supprimer une personne supprime toutes ses affectations !
 :::
 
-## Suppression par la liste filtrée des affectations :
+## Suppression par la liste filtrée des affectations
 
 Dans le menu Liste à gauche de l'écran,
 

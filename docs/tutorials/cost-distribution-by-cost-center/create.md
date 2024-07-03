@@ -11,10 +11,16 @@ Pour refacturer les espaces par centres de coût dans Surfy, tous les espaces à
 
 Pour refacturer un espace entièrement à son centre de coût, le type de distribution des coûts de l'espace doit être "centre de coût par espace".
 
-Pour refacturer les postes de travail d'un espace à leur centre de coût, tous les postes de travail à facturer doivent être renseignés sur leur centre de coût et le type de distribution des coûts de leur espace d'appartenance doit être "centre de coût par poste de travail".
+Pour refacturer les ratios de surface par postes de travail d'un espace à leur centre de coût, tous les postes de travail à facturer doivent être renseignés sur leur centre de coût et le type de distribution des coûts de leur espace d'appartenance doit être "centre de coût par poste de travail".
 
 
-On peut choisir le type de distribution des coûts pour chaque espace, et panacher ainsi des espaces refacturés par espace et des ratios d'espace facturés par poste de travail
+On peut choisir le type de distribution des coûts pour chaque espace, et panacher ainsi des espaces refacturés par espace et des ratios d'espace facturés par poste de travail.
+
+## Visualiser les centres de coût sur le plan
+
+On peut visualiser les centres de coût de chaque espace et de chaque poste de travail sur le plan en cliquant sur l'icône verticale "Euro" puis en sélectionnant les centres de coût à afficher sur les onglets "ESPACES" et "POSTES DE TRAVAIL".
+Les données cumulées par centre de coût sont disponibles en cliquant sur le papillon en bout de ligne du centre de coût ou sur le papillon d'ouverture globale.
+
 
 Pour plus d'information sur les types de distribution des coûts, voir le chapitre [Type de distribution des coûts](/docs/tutorials/costcenter/create.md#type-de-distribution-des-co%C3%BBts).
 

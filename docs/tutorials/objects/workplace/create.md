@@ -3,12 +3,35 @@ sidebar_position: 1
 ---
 # Créer un Poste de travail
 
+## Qu'est ce qu'un poste de travail ?
+
+Un poste de travail est un groupe d'objets à qui on peut attribuer des qualifications particulières :
+
+-   déclaration en poste Flex, de passage, réservable en fonction de la destination du poste de travail
+-   [affectation d'un collaborateur](/docs/tutorials/affectations/workplaceaffectation/create.md#affecter-une-personne-à-un-poste-de-travail) si le poste n'est pas déclaré en Flex ou de passage
+-   [rattachement à un Service](/docs/tutorials/organization/create.md#rattacher-un-service-à-un-poste-de-travail)
+-   [rattachement à un centre de coût](/docs/tutorials/costcenter/create.md#attribuer-un-centre-de-coût-à-un-poste-de-travail)
+-   colorisation des postes en fonction de leur [état d'utilisation](/docs/courses/views/2Dviews.md#afficher-létat-des-postes-de-travail-sur-le-plan)
+-   colorisation des postes en fonction du [profil sécurité](/docs/courses/views/2Dviews.md#afficher-les-profils-sécurité-sur-le-plan) de la personne affectée au poste
+-   colorisation en fonction de leur [centre de coût](/docs/tutorials/cost-distribution-by-cost-center/create.md#visualiser-les-centres-de-coût-sur-le-plan)
+
+Sur la fiche du bâtiment, de l'étage, de l'espace ou de tout regroupement d'espaces, les postes de travail sont comptabilisés suivant leur état.
+Les postes de travail peuvent être comptabilisés en places assises lors de la [composition du type de poste de travail](/docs/tutorials/objects/workplacetype/create.md#composer-le-type-de-poste-de-travail)
+
+Le nombre de postes de travail permet notamment de calculer les ratios et les taux d'occupation sur tout regroupement d'espaces.
+
+Dans le [rapport de l'inventaire en fichier Excel](/docs/tutorials/BuildingData/Buildingdashboard/Buildingreporting.md#rapport-de-linventaire-du-bâtiment), les objets composant le poste de travail sont comptabilisés dans les onglets "Postes de travail" et "Fusion".
+
+
 <Youtube code="tho373GPmY8"/>
  
+
  ## Ajouter un poste de travail à l'espace
 
 
-Pour ajouter un poste de travail dans un espace, il faut que le type de poste de travail correspondant soit créé.
+Pour ajouter un poste de travail dans un espace, il faut que le type de poste de travail correspondant ait été créé.
+
+Pour cela, voir le chapitre [création de type de poste de travail](/docs/tutorials/objects/workplacetype/create.md)
 
 Si le type de poste de travail existe,
 

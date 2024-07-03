@@ -25,7 +25,7 @@ Pour composer un type de poste de travail, les types d'objet composant le type d
 -   déplacer et tourner les objets en cliquant sur "déplaçer le type d'objet" pour composer le type de poste de travail
 -   cliquer sur "Lister les types d'objet" pour afficher la liste des types d'objet utilisés
 -   placer les éléments de la liste les uns sur/sous les autres en glissant déplaçant le signe "=" du type d'objet du haut vers le bas
- -  cliquer sur le "papillon" à droite du nom des types d'objet afin de définir le nombre de places assises pour chacun d'entre eux (exemple: 1 place assise pour le fauteuil)
+ -  cliquer sur le "papillon" à droite du nom des types d'objet afin de définir le nombre de places assises pour chacun d'entre eux (exemple: 1 place assise pour le fauteuil Bureau)
  -  quitter la page permet la sauvegarde de la composition
  -  le type de poste de travail créé est disponible à l'ajoût d'un poste de travail dans les espaces.
  
