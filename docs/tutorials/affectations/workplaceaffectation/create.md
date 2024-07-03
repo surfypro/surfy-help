@@ -42,7 +42,7 @@ Pour "créer et associer" une nouvelle personne,
 -   la personne est créée et affectée au poste de travail.
 
 
-## Affecter des personnes par import Excel
+## Affecter des personnes aux postes de travail par import Excel
 
 On peut affecter des personnes en masse en important le fichier Excel correspondant.
 Ce fichier doit être composé au minimum :

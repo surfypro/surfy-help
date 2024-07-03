@@ -37,7 +37,7 @@ Si la personne à affecter n'est pas encore créée dans la base de données de 
 -   la personne est créée et affectée à l'espace.
 
 
-## Affecter des personnes par import Excel
+## Affecter des personnes aux espaces par import Excel
 
 On peut affecter des personnes en masse en important le fichier Excel correspondant.
 Ce fichier doit être composé au minimum :

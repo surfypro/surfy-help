@@ -58,5 +58,5 @@ On obtient la liste des affectations aux calques d'affectation du bâtiment, ain
 Depuis la page d'accueil, "Lister les bâtiments" dans le menu contextuel permet de sélectionner plusieurs bâtiments et d'obtenir les rapports du tableau de bord sur l'ensemble des bâtiments sélectionnés en cliquant sur l'icône appropriée en haut de page.
 :::
 
-## Affecter des personnes par import Excel
+## Affecter des personnes aux quartiers par import Excel
 

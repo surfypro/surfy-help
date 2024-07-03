@@ -17,7 +17,7 @@ La recherche sur les personnes peut utiliser plusieurs critères :
 -   Recherche par identifiant
 
 
-[Rechercher une personne par un de ces critères](/docs/person/create.md#rechercher-une-personne)
+[Rechercher une personne par un de ces critères](/docs//tutorials/person/create.md#rechercher-une-personne)
 
 
 ## Recherche d'espace

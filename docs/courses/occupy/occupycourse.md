@@ -8,16 +8,16 @@ sidebar_position: 4
 
 ### Affecter les personnes aux postes de travail, aux espaces, aux bâtiments
 
-[Créer une personne](/docs/person/create.md)
+[Créer une personne](/docs/tutorials/person/create.md)
 
-[Créer et affecter une personne](/docs/person/create.md)
+[Créer et affecter une personne](/docs/tutorials/affectations/workplaceaffectation/create.md#cr%C3%A9er-et-affecter-une-personne-%C3%A0-un-poste-de-travail)
 
-[Importer une liste de personnes](/docs/person/create.md#importer-des-personnes)
+[Importer une liste de personnes](/docs/tutorials/person/create.md#importer-des-personnes)
 
 
-[Affecter une personne dans Surfy](/docs/Affectations/intro.md)
+[Affecter une personne dans Surfy](/docs/tutorials/affectations/intro.md)
 
-Affecter des personnes en masse [aux postes de travail](/docs/affectations/workplaceaffectation/create.md#affecter-des-personnes-par-import-excel), [aux espaces](/docs/affectations/roomaffectation/create.md#affecter-des-personnes-par-import-excel) ou [aux bâtiments](/docs/affectations/personToBuilding/create.md#affecter-des-personnes-au-b%C3%A2timent-par-import-excel)
+Affecter des personnes en masse [aux postes de travail](/docs/tutorials/affectations/workplaceaffectation/create.md#affecter-des-personnes-par-import-excel), [aux espaces](/docs/tutorials/affectations/roomaffectation/create.md#affecter-des-personnes-par-import-excel) ou [aux bâtiments](/docs/tutorials/affectations/personToBuilding/create.md#affecter-des-personnes-au-b%C3%A2timent-par-import-excel)
 
 
 
