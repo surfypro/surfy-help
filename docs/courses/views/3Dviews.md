@@ -60,7 +60,7 @@ On peut représenter un bâtiment en 3D, positionné et orienté correctement su
 Pour afficher le bâtiment géolocalisé sur une carte,
 
 -   renseigner l'adresse du bâtiment en cliquant sur l'icône Crayon "Modifier le bâtiment" sur la fiche du bâtiment
--   créer et calibrer la structure du RDC (ou de l'étage le plus bas hors sous sols). Voir [Créer la structure d'un étage](/docs/surfaces/structure/create.md).
+-   créer et calibrer la structure du RDC (ou de l'étage le plus bas hors sous sols). Voir [Créer la structure d'un étage](/docs/tutorials/surfaces/structure/create.md).
 
 
 Pour visualiser le bâtiment géolocalisé sur un plan, cliquer sur l'icône en bout de ligne de couleur du bâtiment concerné puis sur "Voir le bâtiment en 3D sur un plan".

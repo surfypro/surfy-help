@@ -22,17 +22,17 @@ Les liens ci dessous permettent d'accéder aux tutoriels correspondants :
 
 [Afficher les cartes de chaleur](/docs/courses/views/heatmap.md)
 
-[Obtenir les rapports de données du bâtiment](/docs/BuildingData/Buildingdashboard/Buildingreporting.md)
+[Obtenir les rapports de données du bâtiment](/docs/tutorials/BuildingData/Buildingdashboard/Buildingreporting.md)
 
-[Obtenir l'inventaire en pdf du bâtiment](/docs/BuildingData/Buildinginventory.md)
+[Obtenir l'inventaire en pdf du bâtiment](/docs/tutorials/BuildingData/Buildinginventory.md)
 
 [Rechercher dans les listes](/docs/courses/find/listfindcourse.md)
 
-[Visualiser les calques d'analyse](/docs/dimensionType/create.md#visualiser-les-calques-danalyse)
+[Visualiser les calques d'analyse](/docs/tutorials/dimensionType/create.md#visualiser-les-calques-danalyse)
 
 [Rechercher un poste libre, de passage ou autre](/docs/courses/views/2Dviews.md#afficher-l%C3%A9tat-des-postes-de-travail-sur-le-plan)
 
-[Afficher les profils Sécurité sur les plans](/docs/person/personSecurityProfile/list.md#visualiser-les-profils-s%C3%A9curit%C3%A9-sur-les-plans)
+[Afficher les profils Sécurité sur les plans](/docs/tutorials/person/personSecurityProfile/list.md#visualiser-les-profils-s%C3%A9curit%C3%A9-sur-les-plans)
 
 
 

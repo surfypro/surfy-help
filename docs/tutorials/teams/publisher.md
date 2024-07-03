@@ -13,7 +13,7 @@ Vous pouvez utiliser l'application Surfy
 
 L'application de réservation est disponible uniquement en Français. 
 
-Pour utiliser l'application Teams de réservation, il est nécessaire de disposer d'un compte Surfy et d'avoir [configuré vos espaces.](/docs/courses/occupy/occupycourse.md#mettre-en-place-laffectation-aux-quartiers)
+Pour utiliser l'application Teams de réservation, il est nécessaire de disposer d'un compte Surfy et d'avoir mis en place [l'affectation aux quartiers](/docs/courses/occupy/occupycourse.md#mettre-en-place-laffectation-aux-quartiers)
 
 Pour plus d'informations, merci de [nous contacter ici](https://www.surfy.pro/contact) pour configurer Surfy et vous permettre d'utiliser l'application Teams pour la réservation dans Surfy.
 
@@ -50,7 +50,7 @@ Une plateforme dédiée vous sera attribuée, un bâtiment doit être digitalis�
 
 # Guide d'utilisation pour l'utilisateur final
 
-Les utilisateurs finaux peuvent trouver de l'aide dans l'usage de l'application Teams en cliquant [ici](/docs/teams/users.md) 
+Les utilisateurs finaux peuvent trouver de l'aide dans l'usage de l'application Teams en cliquant [ici](/docs/tutorials/teams/users.md) 
 
 # Comment obtenir du support ?
 

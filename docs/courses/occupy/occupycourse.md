@@ -17,24 +17,24 @@ sidebar_position: 4
 
 [Affecter une personne dans Surfy](/docs/tutorials/affectations/intro.md)
 
-Affecter des personnes en masse [aux postes de travail](/docs/tutorials/affectations/workplaceaffectation/create.md#affecter-des-personnes-par-import-excel), [aux espaces](/docs/tutorials/affectations/roomaffectation/create.md#affecter-des-personnes-par-import-excel) ou [aux bâtiments](/docs/tutorials/affectations/personToBuilding/create.md#affecter-des-personnes-au-b%C3%A2timent-par-import-excel)
+Affecter des personnes en masse [aux postes de travail](/docs/tutorials/affectations/workplaceaffectation/create.md#affecter-des-personnes-aux-postes-de-travail-par-import-excel), [aux espaces](/docs/tutorials/affectations/roomaffectation/create.md#affecter-des-personnes-aux-espaces-par-import-excel) ou [aux bâtiments](/docs/tutorials/affectations/personToBuilding/create.md#affecter-des-personnes-au-bâtiment-par-import-excel)
 
 
 
 
 ### Mettre en place l'affectation aux quartiers
 
-[Créer les calques d'affectation aux quartiers](/docs/dimensionTypeToBuilding/create.md)
+[Créer les calques d'affectation aux quartiers](/docs/tutorials/dimensionTypeToBuilding/create.md)
 
-[Qualifier les espaces par calques d'affectation aux quartiers](/docs/dimensionTypeToBuilding/create.md#qualifier-un-espace-par-un-calque-daffectation)
+[Qualifier les espaces par calques d'affectation aux quartiers](/docs/tutorials/dimensionTypeToBuilding/create.md#qualifier-un-espace-par-un-calque-daffectation)
 
-[Visualiser les calques d'affectation aux quartiers](/docs/dimensionTypeToBuilding/create.md#visualiser-les-calques-daffectation)
+[Visualiser les calques d'affectation aux quartiers](/docs/tutorials/dimensionTypeToBuilding/create.md#visualiser-les-calques-daffectation)
 
-[Affecter les personnes aux quartiers](/docs/affectations/dimensiontoperson/create.md)
+[Affecter les personnes aux quartiers](/docs/tutorials/affectations/dimensiontoperson/create.md)
 
 [Lister les affectations aux quartiers](/docs/courses/find/listfindcourse.md)
 
-[Exporter le rapport des personnes affectées par quartier](/docs/dimensionTypeToBuilding/create.md#rapport-des-donn%C3%A9es-des-calques-daffectation)
+[Exporter le rapport des personnes affectées par quartier](/docs/tutorials/dimensionTypeToBuilding/create.md#rapport-des-donn%C3%A9es-des-calques-daffectation)
 
 ## Réservation des postes de travail et des espaces
 
@@ -42,9 +42,9 @@ Affecter des personnes en masse [aux postes de travail](/docs/tutorials/affectat
 
 
 
-[Réserver dans Surfy](/docs/booking/create.md)
+[Réserver dans Surfy](/docs/tutorials/booking/create.md)
 
-[Utiliser Teams pour la réservation dans Surfy](/docs/teams/publisher.md)
+[Utiliser Teams pour la réservation dans Surfy](/docs/tutorials/teams/publisher.md)
 
 
 ### Mettre en place la réservation d'espace

@@ -41,4 +41,4 @@ Pour supprimer une réservation, cliquer sur la corbeille en face de la ligne à
 
 Dans Teams, on peut ajouter l'application Surfy en cliquant sur "Application" et en recherchant "Surfy".
 Une fois sélectionnée, l'application est ajoutée à Teams et permet directement de réserver un poste de travail ou de déclarer un télétravail.
-Cliquer sur l'icone "Surfy" de Teams permet la même expérience de réservation que dans Surfy. Voir [Réserver depuis l'application Surfy](/docs/booking/create.md#r%C3%A9server-depuis-lapplication-surfy)
+Cliquer sur l'icone "Surfy" de Teams permet la même expérience de réservation que dans Surfy. Voir [Réserver depuis l'application Surfy](/docs/tutorials/booking/create.md#r%C3%A9server-depuis-lapplication-surfy)

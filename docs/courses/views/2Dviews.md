@@ -122,7 +122,7 @@ Les postes de travail déclarés "en Flex" ou "de passage" ne peuvent pas être 
 
 Cliquer sur l'icône verticale "colorier les postes de travail par rapport aux personnes" permet de colorier les postes de travail des personnes affectées suivant leur profil sécurité.
 Deux voire trois affectations de profils de sécurité différents sur le même poste de travail, striera le poste de travail avec les couleurs des profils sécurité des personnes affectées.
-Pour plus d'information sur les profils Sécurité, voir le chapitre [Visualiser les profils Sécurité sur les plans](/docs/person/personSecurityProfile/list.md#visualiser-les-profils-s%C3%A9curit%C3%A9-sur-les-plans).
+Pour plus d'information sur les profils Sécurité, voir le chapitre [Visualiser les profils Sécurité sur les plans](/docs/tutorials/person/personSecurityProfile/list.md#visualiser-les-profils-s%C3%A9curit%C3%A9-sur-les-plans).
 
 
 ## Afficher les objets sur le plan

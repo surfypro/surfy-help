@@ -41,7 +41,7 @@ La vision "Refacturation" colorie les espaces et les postes de travail par centr
 On peut obtenir les données cumulées par centre de coût en cliquant sur l'icône verticale "Colorier les espaces et postes de travail par rapport aux centres de coût" puis sur l'onglet "Espaces" puis sur le papillon "Ouvrir tous les détails et indicateurs".
 L'onglet "Postes de travail" permet un comptage des postes par centre de coût.
 
-Cette vision correspond particulièrement aux [fonctions Finances](https://www.surfy.pro/ug/fonction-finances) ou [Directeurs Immobilier](https://www.surfy.pro/ug/direction-immobiliere) afin de gérer la [refacturation des surfaces par centre de coût](/docs/cost-distribution-by-cost-center/create.md).
+Cette vision correspond particulièrement aux [fonctions Finances](https://www.surfy.pro/ug/fonction-finances) ou [Directeurs Immobilier](https://www.surfy.pro/ug/direction-immobiliere) afin de gérer la [refacturation des surfaces par centre de coût](/docs/tutorials/cost-distribution-by-cost-center/create.md).
 
 
 ## Vision "Directions"
@@ -51,7 +51,7 @@ Cette vision permet d'organiser ou de visualiser la bonne distribution des espac
 
 On peut obtenir les données cumulées par Direction ou par Service en cliquant sur l'icône verticale "Colorier les espaces sur le plan selon les Organisations" puis sur le papillon "Ouvrir tous les détails et indicateurs".
 
-Cette vision est adaptée aux [assistant(e)s de Direction](https://www.surfy.pro/ff/affecter-les-collaborateurs) désirant maîtriser le périmètre de leur Service ou Direction et [gérer l'affectation des collaborateurs](/docs/category/affectations-aux-postes-de-travail) sur ce périmètre.
+Cette vision est adaptée aux [assistant(e)s de Direction](https://www.surfy.pro/ff/affecter-les-collaborateurs) désirant maîtriser le périmètre de leur Service ou Direction et [gérer l'affectation des collaborateurs](/docs/tutorials/category/affectations-aux-postes-de-travail) sur ce périmètre.
 
 ## Vision "Occupations"
 
@@ -81,20 +81,20 @@ La vision "Conformité de la sécurité" affiche le nom et la qualité des équi
 Aucun calque d'analyse n'est affiché, les espaces restent sans couleur.
 
 Cette vision est destinée à accéder rapidement à l'information et permet de revenir aussi rapidement à la vision précédente.
-Elle est destinée aux [responsables de la Sécurité](https://www.surfy.pro/ug/sante-et-securite) désirant [gérer les équipiers de Sécurité](/docs/person/personSecurityProfile/list.md#visualiser-les-profils-s%C3%A9curit%C3%A9-sur-les-plans) en toute sérénité.
+Elle est destinée aux [responsables de la Sécurité](https://www.surfy.pro/ug/sante-et-securite) désirant [gérer les équipiers de Sécurité](/docs/tutorials/person/personSecurityProfile/list.md#visualiser-les-profils-s%C3%A9curit%C3%A9-sur-les-plans) en toute sérénité.
 
 
 ## Vision "Quartiers"
 
 La vision "Quartiers" colorie les espaces par les calques d'affectation, regroupe les espaces en quartiers suivant ces calques et permet d'affecter directement les personnes à ces quartiers.
 
-C'est la vision idéale pour le [gestionnaire des affectations](https://www.surfy.pro/ff/affecter-les-collaborateurs), lui permettant de [gérer l'affectation aux quartiers](/docs/category/affectations-aux-quartiers) mais aussi les [affectations fixes aux postes de travail](/docs/category/affectations-aux-postes-de-travail).
+C'est la vision idéale pour le [gestionnaire des affectations](https://www.surfy.pro/ff/affecter-les-collaborateurs), lui permettant de [gérer l'affectation aux quartiers](/docs/tutorials/affectations/dimensiontoperson/create.md) mais aussi les [affectations fixes aux postes de travail](/docs/tutorials/affectations/workplaceaffectation/create.md).
 On peut en effet mélanger dans un même espace des postes de travail déclarés en Flex (réservable ou non) et des postes à affectation fixe.
 
 
 ## Vision "Cloisons"
 
 Dans la vision "Cloisons", aucune information ni aucun calque ne sont affichés sur le plan afin de visualiser uniquement le fond de plan.
-Cette vision permet aux [aménageurs](https://www.surfy.pro/ff/amenager-et-optimiser-les-espaces) de vérifier la conformité et de [modifier le fond de plan](/docs/surfaces/background/edit.md) si nécessaire.
+Cette vision permet aux [aménageurs](https://www.surfy.pro/ff/amenager-et-optimiser-les-espaces) de vérifier la conformité et de [modifier le fond de plan](/docs/tutorials/surfaces/background/edit.md) si nécessaire.
 
 
