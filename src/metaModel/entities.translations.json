@@ -9,6 +9,10 @@
                 "label": "Utilisateur",
                 "description": null
             },
+            "userRefreshToken": {
+                "label": " User Refresh Token",
+                "description": null
+            },
             "companyType": {
                 "label": "Type d'entreprise",
                 "description": null
@@ -478,6 +482,32 @@
                     "label": "Sub",
                     "description": null
                 },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "userRefreshTokens": {
+                    "label": " User Refresh Tokens",
+                    "description": null
+                },
+                "userCompanies": {
+                    "label": "Utilisateurs de l'entreprise",
+                    "description": null
+                }
+            },
+            "userRefreshToken": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
                 "refreshToken": {
                     "label": "Refresh Token",
                     "description": null
@@ -494,8 +524,12 @@
                     "label": "Clé externe",
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
-                "userCompanies": {
-                    "label": "Utilisateurs de l'entreprise",
+                "userId": {
+                    "label": "Identifiant de l'utilisateur",
+                    "description": ""
+                },
+                "user": {
+                    "label": "Utilisateur",
                     "description": null
                 }
             },
