@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Accès par compte sécurisé Office365
 
 ## Création du compte Office365

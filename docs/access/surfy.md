@@ -1,4 +1,8 @@
-# Accès par compte Surfy
+---
+sidebar_position: 3
+---
+
+# Accès par compte sécurisé Surfy
 
 ## Création du compte Surfy
 

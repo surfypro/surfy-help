@@ -1,9 +1,9 @@
 {
-  "label": "Les Tutoriels",
+  "label": "Documentation",
   "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Tout savoir sur les fonctionnalités principales de Surfy"
+    "description": "Comment est organisée la documentation de Surfy"
   }
 }
 

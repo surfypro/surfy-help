@@ -2,9 +2,10 @@
 sidebar_position: 1
 ---
 
-# Les tutoriels
+# A propos des tutos
 
-Besoin d'un petit coup de pouce ? Nos tutoriels vous guideront pour réaliser quelques actions élémentaires dans Surfy.
+Besoin d'un petit coup de pouce ? Nos tutoriels vous guideront dans la prise en main des fonctionnalités de Surfy.
+
 
 A gauche de l'écran, l'arborescence des fonctionnalités<br />
 A droite de l'écran, la recherche par mots clés et les chapitres de la page active<br />
