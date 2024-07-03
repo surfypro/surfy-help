@@ -1,9 +1,0 @@
-{
-  "label": "Bâtiments",
-  "position": 1,
-  "link": {
-    "slug": "buildings",
-    "type": "generated-index",
-    "description": "5 minutes pour comprendre les bâtiments"
-  }
-}

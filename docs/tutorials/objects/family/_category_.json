@@ -1,0 +1,9 @@
+{
+  "label": "Les Familles de mobilier",
+  "position": 1,
+  "link": {
+    "slug": "itemtypefamily",
+    "type": "generated-index",
+    "description": "Tout savoir sur les familles de type d'objet"
+  }
+}
