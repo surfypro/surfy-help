@@ -57,7 +57,7 @@ Une Direction n'a PAS d'"Organisation Mère" et peut avoir des "Organisations Fi
 Pour créer une Direction, depuis le menu de gauche,
 
 -   cliquer sur "organisations", "organisations" puis "créer une organisation" (ou cliquer sur le menu contextuel puis "créer une organisation" si déjà sur la page des organisations)
--   renseigner le nom de la Direction et sa couleur
+-   renseigner le nom de la Direction et sa <P code="organization:color"/>
 -   ne pas renseigner d'"organisation Mère", laisser le champ vide.
 -   valider la création
 

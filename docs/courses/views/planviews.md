@@ -8,8 +8,6 @@ Les visions du plan sont des pré-programmations de l'affichage et des fonctionn
 
 <Youtube code="C-0l8So1Uto"/>
 
-
-
 ## Choisir une vision du plan
 
 On peut choisir une vision particulière des plans en fonction de la tâche à accomplir ou des informations à obtenir, à partir du plan d'un étage, en cliquant sur l'icône verticale "changer la vision du plan".
@@ -52,7 +50,8 @@ Cette vision permet d'organiser ou de visualiser la bonne distribution des espac
 
 On peut obtenir les données cumulées par Direction ou par Service en cliquant sur l'icône verticale "Colorier les espaces sur le plan selon les Organisations" puis sur le papillon "Ouvrir tous les détails et indicateurs".
 
-Cette vision est adaptée aux [assistant(e)s de Direction](https://www.surfy.pro/ff/affecter-les-collaborateurs) désirant maîtriser le périmètre de leur Service ou Direction et [gérer l'affectation des collaborateurs](/docs/tutorials/category/affectations-aux-postes-de-travail) sur ce périmètre.
+Cette vision est adaptée aux [assistant(e)s de Direction](https://www.surfy.pro/ff/affecter-les-collaborateurs) désirant maîtriser le périmètre de leur Service ou Direction 
+<!-- et [gérer l'affectation des collaborateurs](/docs/tutorials/category/affectations-aux-postes-de-travail.md) sur ce périmètre. -->
 
 ## Vision "Occupations"
 
