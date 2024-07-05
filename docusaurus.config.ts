@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Surfy Academy',
-  tagline: 'Nous digitalisons les espaces en donnant accès aux plans et aux données',
+  tagline: 'Bienvenue sur le site de formation des utilisateurs Surfy !',
   favicon: 'img/surfy-square.png',
 
   // Set the production url of your site here

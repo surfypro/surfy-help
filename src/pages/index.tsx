@@ -18,9 +18,14 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
+            to="/docs/tutorials/intro">
             Voir les tutoriels
-          </Link>
+          </Link>       
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/courses/intro">
+            Voir les cours
+          </Link>          
         </div>
         <div className='hero__subtitle' style={{ marginTop: 16 }}>
 
@@ -28,10 +33,9 @@ function HomepageHeader() {
 
           <p>
 
-            Bienvenue à la Surfy Academy<br />
-            Notre guide utilisateur vous permet de découvrir Surfy,<br />
-
-            ou d'approfondir vos connaissances sur ses fonctionnalités en choisissant l'onglet <Link className="home" to="/docs/intro">"Tutoriels"</Link>.<br />
+            Notre guide utilisateur vous permet de découvrir Surfy :<br />
+            En approfondissant vos connaissances sur une fonctionnalité particulière, choisir l'onglet <Link className="home" to="/docs/tutorials/intro">"Tutoriels"</Link>.<br />
+            En suivant un cours Surfy sur un sujet global, guidé par une suite logique de tutoriels, choisir l'onglet <Link className="home" to="/docs/courses/intro">"Cours"</Link>.<br />
 
             Pour découvrir l'historique des nouveautés choisissez l'onglet <Link className="home" to="/changelog/app">"Nouveautés"</Link>.<br />
 

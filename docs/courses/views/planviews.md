@@ -13,6 +13,7 @@ Les visions du plan sont des pré-programmations de l'affichage et des fonctionn
 ## Choisir une vision du plan
 
 On peut choisir une vision particulière des plans en fonction de la tâche à accomplir ou des informations à obtenir, à partir du plan d'un étage, en cliquant sur l'icône verticale "changer la vision du plan".
+Changer de vision réinitialise la configuration des plans en affichant les informations correspondants à la vision demandée.
 
 
 
