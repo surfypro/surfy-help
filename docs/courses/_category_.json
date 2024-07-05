@@ -1,6 +1,6 @@
 {
   "label": "Les Cours",
-  "position": 2,
+  "position": 3,
   "link": {
     "type": "generated-index",
     "description": "Les cours Surfy sont composés de suites de tutoriels pour guider l'utilisateur dans l'apprentissage d'un sujet."
