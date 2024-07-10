@@ -17,18 +17,18 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className="button homebutton button--secondary button--lg"
             to="/docs/tutorials/intro">
             Voir les tutoriels
           </Link>       
           <Link
-            className="button button--secondary button--lg"
+            className="button homebutton button--secondary button--lg"
             to="/docs/courses/intro">
             Voir les cours
           </Link>          
         </div>
         <div className='hero__subtitle' style={{ marginTop: 16 }}>
-
+          
           <Youtube code="T9C7k2dElBE" /> <br />
 
           <p>

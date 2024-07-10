@@ -36,3 +36,7 @@ a.home {
 a.home::hover {
   color: #666;
 }
+
+.homebutton{
+  margin:4px;
+}

@@ -73,8 +73,8 @@ const config: Config = {
     [
       '@docusaurus/plugin-google-gtag',
       {
-        trackingID: 'G-999X9XX9XX',
-        anonymizeIP: true,
+        trackingID: 'G-27L76PKED0',
+        anonymizeIP: false,
       },
     ],
     [
@@ -132,8 +132,9 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutoriels',
+          label: 'Documentation',
         },
+        { to: '/docs/tutorials/intro', label: 'Tutoriels' },
         {
           type: 'localeDropdown',
           position: 'right'
@@ -166,7 +167,11 @@ const config: Config = {
           items: [
             {
               label: 'Tutoriels',
-              to: '/docs/intro',
+              to: '/docs/tutorials/intro',
+            },
+            {
+              label: 'Cours',
+              to: '/docs/courses/intro',
             },
           ],
         },

@@ -1,6 +1,6 @@
 {
   "label": "Documentation",
-  "position": 1,
+  "position": 0,
   "link": {
     "type": "generated-index",
     "description": "Comment est organisée la documentation de Surfy"
