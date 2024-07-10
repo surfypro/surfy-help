@@ -71,12 +71,10 @@ const config: Config = {
   ],
   plugins: [
     [
-      '@docusaurus/preset-classic',
+      '@docusaurus/plugin-google-gtag',
       {
-        gtag: {
-          trackingID: 'G-27L76PKED0'
-          // anonymizeIP: true,
-        },
+        trackingID: 'G-999X9XX9XX',
+        anonymizeIP: true,
       },
     ],
     [
@@ -141,11 +139,10 @@ const config: Config = {
           position: 'right'
         },
         { to: '/docs/courses/intro', label: 'Cours' },
-        { to: '/entities/intro', label: 'Références' },
         { to: '/changelog/app', label: 'Nouveautés', position: 'left' },
-        { to: '/blog', label: 'Blog', position: 'left' },
-        { to: 'https://www.surfy.pro/contact', label: 'Nous contacter', position: 'left', target: '_blank', rel: 'noopener noreferrer' }
-
+        // { to: '/blog', label: 'Blog', position: 'left' },
+        { to: 'https://www.surfy.pro/contact', label: 'Nous contacter', position: 'left', target: '_blank', rel: 'noopener noreferrer' },
+        { to: '/entities/intro', label: 'Developpeurs' },
         // {
         //   href: 'https://github.com/surfypro/surfy-help',
         //   label: 'GitHub',
