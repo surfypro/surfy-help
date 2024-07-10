@@ -139,8 +139,7 @@ const config: Config = {
           type: 'localeDropdown',
           position: 'right'
         },
-        { to: '/docs/access/intro', label: 'Accès' },         
-        { to: '/docs/tutorials/intro', label: 'Tutoriels' },               
+             
         { to: '/docs/courses/intro', label: 'Cours' },
         { to: '/changelog/app', label: 'Nouveautés', position: 'left' },
         // { to: '/blog', label: 'Blog', position: 'left' },
