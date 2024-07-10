@@ -9,7 +9,7 @@ sidebar_position: 1
 Les rapports de données d'un bâtiment s'obtiennent à partir de la page d'accueil,
 
 -   cliquer sur l'icône en bout de ligne de couleur du bâtiment
--   choisir "Tableau de bord du bâtiment XXX".
+-   choisir "Tableau de bord pour le bâtiment XXX".
 -   cliquer sur l'icône du rapport voulu
 
 Le rapport en fichier Excel est disponible dans les téléchargements.

@@ -125,12 +125,14 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutoriels',
+          label: 'Démarrer',
         },
         {
           type: 'localeDropdown',
           position: 'right'
         },
+        { to: '/docs/access/intro', label: 'Accès' },         
+        { to: '/docs/tutorials/intro', label: 'Tutoriels' },               
         { to: '/docs/courses/intro', label: 'Cours' },
         { to: '/entities/intro', label: 'Références' },
         { to: '/changelog/app', label: 'Nouveautés', position: 'left' },
