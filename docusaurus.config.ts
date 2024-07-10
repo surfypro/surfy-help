@@ -71,6 +71,13 @@ const config: Config = {
   ],
   plugins: [
     [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-27L76PKED0',
+        anonymizeIP: false,
+      },
+    ],
+    [
       '@docusaurus/plugin-client-redirects',
       {
         redirects: [{
@@ -125,8 +132,9 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Démarrer',
+          label: 'Documentation',
         },
+        { to: '/docs/tutorials/intro', label: 'Tutoriels' },
         {
           type: 'localeDropdown',
           position: 'right'
@@ -134,11 +142,10 @@ const config: Config = {
         { to: '/docs/access/intro', label: 'Accès' },         
         { to: '/docs/tutorials/intro', label: 'Tutoriels' },               
         { to: '/docs/courses/intro', label: 'Cours' },
-        { to: '/entities/intro', label: 'Références' },
         { to: '/changelog/app', label: 'Nouveautés', position: 'left' },
-        { to: '/blog', label: 'Blog', position: 'left' },
-        { to: 'https://www.surfy.pro/contact', label: 'Nous contacter', position: 'left', target: '_blank', rel: 'noopener noreferrer' }
-
+        // { to: '/blog', label: 'Blog', position: 'left' },
+        { to: 'https://www.surfy.pro/contact', label: 'Nous contacter', position: 'left', target: '_blank', rel: 'noopener noreferrer' },
+        { to: '/entities/intro', label: 'Developpeurs' },
         // {
         //   href: 'https://github.com/surfypro/surfy-help',
         //   label: 'GitHub',
@@ -162,7 +169,11 @@ const config: Config = {
           items: [
             {
               label: 'Tutoriels',
-              to: '/docs/intro',
+              to: '/docs/tutorials/intro',
+            },
+            {
+              label: 'Cours',
+              to: '/docs/courses/intro',
             },
           ],
         },
