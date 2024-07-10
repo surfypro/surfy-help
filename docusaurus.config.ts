@@ -71,6 +71,15 @@ const config: Config = {
   ],
   plugins: [
     [
+      '@docusaurus/preset-classic',
+      {
+        gtag: {
+          trackingID: 'G-27L76PKED0'
+          // anonymizeIP: true,
+        },
+      },
+    ],
+    [
       '@docusaurus/plugin-client-redirects',
       {
         redirects: [{
