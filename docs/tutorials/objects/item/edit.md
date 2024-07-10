@@ -30,7 +30,16 @@ L'objet modifié aura la forme et les caractéristiques du nouveau type d'objet,
 -   faire pivoter l'objet avec la flèche rouge par pas de 45°. Pour libérer l'angle, appuyer en même temps sur la touche "shift"
 -   cliquer sur la case bleue pour replacer l'objet dans sa position initiale.
 
+## Rechercher un objet
 
+On peut géolocaliser et accéder à la fiche d'un objet de plusieurs façons :
+
+-   en cliquant sur l'objet sur le plan
+-   par la loupe en effectuant une recherche de la référence ou du code d'immobilisation de l'objet    
+-   par la loupe en effectuant une recherche par type d'objet puis en cliquant sur l'objet recherché
+-   par la [liste filtrée](/docs/courses/find/listfindcourse) des objets ("Mobiliers", "Objets", "Lister les objets" puis "filtrer les objets")
+-   par l'association à la personne en recherchant une personne et en cliquant sur l'objet associé à la personne recherchée
+-   par la recherche d'espace puis l'onglet "INVENTAIRE" de l'espace
 
 ## Déplacer un groupe d'objets
 

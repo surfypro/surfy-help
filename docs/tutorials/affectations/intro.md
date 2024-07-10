@@ -39,3 +39,13 @@ Par exemple, le type de calque d'affectation "Quartiers Bâtiment A" regroupe le
 ## Affectation à un bâtiment
 
 L'affectation au bâtiment permet de préselectionner les personnes en leur attribuant un bâtiment d'appartenance avant de leur attribuer une affectation plus précise, dans le cas d'une gestion multi sites par exemple.
+
+## Rechercher une affectation
+
+On peut accéder à l'affectation d'une personne de plusieurs façons :
+
+-   par la loupe en effectuant une recherche sur la personne puis en cliquant sur l'affectation de la personne recherchée
+-   par la loupe en effectuant une recherche sur l'espace ou le quartier puis en cliquant sur l'onglet "AFFECTATIONS" de la fiche de l'espace ou du quartier
+-   par la loupe en effectuant une recherche sur le nom du poste de travail puis en cliquant sur le poste concerné
+-   par la [liste filtrée](/docs/courses/find/listfindcourse) des affectations en choisissant le type d'affectation puis en listant et filtrant la liste
+
