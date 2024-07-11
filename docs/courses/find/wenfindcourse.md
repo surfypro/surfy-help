@@ -30,7 +30,7 @@ La recherche sur les espaces peut utiliser plusieurs critères :
 -   Recherche par objet
 -   Recherche par identifiant
 
-[Rechercher un espace par un de ces critères](/docs/tutorials/surfaces/room/edit#rechercher-un-espace)
+[Rechercher un espace par un de ces critères](/docs/tutorials/surfaces/room/edit.md#rechercher-un-espace)
 
 ## Recherche d'objet
 
@@ -41,7 +41,7 @@ La recherche sur les espaces peut utiliser plusieurs critères :
 -   Recherche par association à personne
 -   Recherche par identifiant
 
-[Rechercher un objet par un de ces critères](/docs/tutorials/objects/item/edit#rechercher-un-objet)
+[Rechercher un objet par un de ces critères](/docs/tutorials/objects/item/edit.md#rechercher-un-objet)
 
 ## Recherche d'affectation
 
@@ -50,4 +50,4 @@ La recherche sur les espaces peut utiliser plusieurs critères :
 -   Recherche par quartier d'affectation
 
 
-[Rechercher une affectation par un de ces critères](/docs/tutorials/affectations/intro#rechercher-une-affectation)
+[Rechercher une affectation par un de ces critères](/docs/tutorials/affectations/intro.md#rechercher-une-affectation)

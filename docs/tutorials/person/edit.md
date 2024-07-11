@@ -82,7 +82,7 @@ Pour résorber les doublons,
 
 ## Modifier des personnes par fichier Excel
 
--   exporter en Excel la liste des personnes à modifier par le rapport des personnes ou la liste filtrée des personnes
+-   exporter en Excel la liste des personnes à modifier par le rapport des personnes ou la [liste filtrée](/docs/courses/find/listfindcourse) des personnes
 -   compléter les informations à importer dans les colonnes avec leurs en-têtes
 -   sélectionner la colonne comportant la clé d'identification
 -   sélectionner également les colonnes qui ont été remplies
