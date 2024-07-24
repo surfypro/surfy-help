@@ -7,9 +7,9 @@ Pour affecter des personnes à des quartiers, il faut tout d'abord créer des ca
 
 Une fois les quartiers créés sur les plans,
 
--   cliquer sur l'icone verticale "Grille" pour "Colorier les espaces sur le plan en fonction des calques d'affectation"
+-   cliquer sur l'icone verticale "Grille" pour "Colorier les espaces sur le plan en fonction des calques d'affectation" et visualiser les cumuls d'informations par calque d'affectation.
 -   "sélectionner le type de calque pour la navigation" afin d'activer la sélection par quartiers entiers, en cliquant sur l'icone en bout de ligne du nom du calque
--   les informations du quartier, ses affectations et son inventaire sont accessibles de la même manière que pour un espace classique, en cliquant dans le quartier
+-   les informations du quartier, ses affectations et son inventaire sont accessibles de la même manière que pour un espace classique, en cliquant dans le quartier pour afficher ces informations à gauche de l'écran.
 
 :::tip Vision du plan
 Cliquer sur l'icône verticale "Changer la vision du plan" et sélectionner "Quartiers" permet en 2 clics de configurer Surfy en mode affectation par quartier : Les calques d'affectation s'affichent sur le plan et le type de calque est sélectionné pour la navigation. Tant que la vision n'est pas changée, elle reste effective même après rafraichissement (F5). Il faut donc penser à revenir dans la vision par défaut "Typologies des espaces" pour une utilisation standard. Voir [la vision par quartiers](/docs/courses/views/planviews.md#vision-quartiers).

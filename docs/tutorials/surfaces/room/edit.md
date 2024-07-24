@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Modifier un espace
@@ -21,8 +21,10 @@ Pour modifier un espace dans Surfy,
 
 ## Qualifier un espace
 
--   une fois l'espace créé, on peut le "modifier" pour lui donner un nom, une capacité éventuelle, une organisation, une typologie de l'espace, un centre de coût, et toutes les qualifications qui peuvent être renseignées dans les différents calques d'analyse.
+-   une fois l'espace créé, on peut le "modifier" pour lui donner un nom, une capacité éventuelle, une organisation, une typologie de l'espace, un centre de coût.
 -   "sauvegarder" les informations. 
+-   Les calques d'analyse peuvent être renseignés, la sauvegarde des calques est automatique et permet de qualifier rapidement d'un espace à un autre.
+
 Il est important de renseigner au moins une qualification d'espace comme la "typologie", afin de donner une couleur aux espaces des plans. 
 Après rafraîchissement, l'espace affiche la couleur de la typologie choisie. Cela permet de savoir quels espaces sont créés et  renseignés.
 

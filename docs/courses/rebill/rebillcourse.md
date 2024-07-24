@@ -19,9 +19,10 @@ Voir le chapitre des tutoriels [Refacturer les espaces par centre de coût](/doc
 ## Estimer une prestation de nettoyage
 
     -   [Définir les fréquences de nettoyage](/docs/tutorials/dimensionType/create.md#créer-et-associer-un-calque-danalyse-à-un-type-de-calque)
-    -   Qualifier les espaces par fréquence de nettoyage
-    -   Qualifier les typologies d'espace en cadence de nettoyage
-    -   Obtenir le nombre d'heures mensuel nécessaire pour la prestation de nettoyage
+    -   Définir les [cadences de nettoyage](/entities/admin/types/roomtype/#cadence) des typologies d'espace
+    -   [Qualifier les espaces par fréquence de nettoyage](/docs/tutorials/surfaces/room/edit#qualifier-un-espace)
+    -   [Obtenir le nombre d'heures mensuel nécessaire pour la prestation de nettoyage](/docs/tutorials/BuildingData/Buildingdashboard/Buildingreporting#rapport-des-prestations-de-nettoyage-du-bâtiment)
+    
 
 
 
