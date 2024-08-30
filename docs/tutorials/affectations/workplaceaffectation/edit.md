@@ -29,7 +29,7 @@ La matrice de transfert permet de déménager une équipe d'un espace vers un au
 -   sélectionner les espaces dans lesquelles sont actuellement les équipes à déménager
 -   la touche "shift" permet de sélectionner plusieurs espaces.
 -   les espaces sont cumulés à gauche de l'écran.
--   sélectionner l'ensemble des espaces concernés,
+-   sélectionner l'ensemble des espaces concernés en cochant les cases
 -   cliquer sur l'icône "créer une matrice de transfert dans Excel permettant de réaliser facilement les déplacements de mes collaborateurs". 
 -   Ouvrir le fichier Excel téléchargé.
 

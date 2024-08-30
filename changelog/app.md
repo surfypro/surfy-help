@@ -1,9 +1,9 @@
 # Nouveautés
 
-<!-- ## 11 Juillet 2024  - v3.3.236 ## 
+<!-- ## 26 Août 2024  - v3.3.236 ## 
 
-- Mise en place des icones de fontawesome en version 6.5.2
-- Mise en place d'un mode avancé pour la visualisation des type d'objets en 3D pour pouvoir les prévisualiser sans les axes et la zone d'occupation au sol
+- Mise à jour des icones de fontawesome en version 6.5.2
+- Mise en place d'un mode avancé pour la visualisation des type d'objets en 3D pour les prévisualiser sans les axes et la zone d'occupation au sol
 - La page de connexion comporte maintenant un lien d'inscription et un lien vers le site internet de surfy
 - Amélioration des visualisations en 3D pour retirer l'effet de l'écran qui tremble
  -->

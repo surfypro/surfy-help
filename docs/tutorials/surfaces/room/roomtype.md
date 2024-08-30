@@ -4,7 +4,7 @@ sidebar_position: 1
 # Les Typologies d'espace
 
 Pour gérer la typologie des espaces, il est conseillé d'utiliser la vision "Typologie des espaces".
-En savoir plus sur [les visions du plan](/docs/courses/views/planviews.md/#vision-typologies-des-espaces)
+En savoir plus sur [les visions du plan](/docs/courses/views/planviews.md#vision-typologies-des-espaces).
 
 La typologie d'un espace est la première qualification qu'on peut donner à un espace, étant souvent déductible des informations du fond de plan.
 Elle permet de colorier les plans au fur et à mesure de la digitalisation et d'obtenir les informations cumulées par typologie.
@@ -53,7 +53,7 @@ Cette nouvelle typologie sera directement associée à l'espace après avoir ét
 La typologie désirée n'apparait pas.
 
 -   cliquer sur "Créer et associer une typologie d'espace" en haut de l'écran, la page de création de typologie apparait.
--   nommer et renseigner les informations de la typologie, voir[Créer une typologie d'espace](/docs/tutorials/surfaces/room.md/roomtype#cr%C3%A9er-une-typologie-despace)
+-   nommer et renseigner les informations de la typologie, voir [Créer une typologie d'espace](/docs/tutorials/surfaces/room/roomtype.md#cr%C3%A9er-une-typologie-despace)
 -   "Valider la création"
 
 La nouvelle typologie est créée et associée à l'espace sélectionné.

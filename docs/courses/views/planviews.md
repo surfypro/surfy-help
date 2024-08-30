@@ -29,6 +29,8 @@ Elle permet de colorier les espaces par typologie, c'est à dire par leur destin
 Les typologies doivent être renseignées au minimum dans Surfy afin d'obtenir des premiers plans en couleur.
 Cette vision affiche le nom des espaces et des postes de travail.
 
+Voir le chapitre [Créer une typologie d'espace](/docs/tutorials/surfaces/room/roomtype.md#créer-une-typologie-despace)
+
 On peut obtenir les données cumulées par Typologie en cliquant sur l'icône verticale "Colorier les espaces sur le plan en fonction des typologies d'espace" puis sur le papillon "Ouvrir tous les détails et indicateurs".
 
 Cette vision est adaptée à la [Direction de l'environnement de travail](https://www.surfy.pro/ug/environnement-de-travail) qui maintient à jour la vie du bâtiment digitalisé dans Surfy, notamment en [aménageant les espaces](/docs/courses/digitalize/digicourse.md).
