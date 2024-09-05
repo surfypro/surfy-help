@@ -9,13 +9,13 @@
 
 ## Entités associées (unique)
 
-### Personne destination {#personTarget}
+### Personne destination [personTarget] {#personTarget}
         
 
-### Personne source {#personSource}
+### Personne source [personSource] {#personSource}
         
 
-### Type de relation entre personnes {#personToPersonType}
+### Type de relation entre personnes [personToPersonType] {#personToPersonType}
         
 
 

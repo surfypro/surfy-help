@@ -5,22 +5,22 @@
 
 ## Propriétés de base
 
-### Measure {#measure}
+### Measure [measure] {#measure}
         
 
-### Time {#time}
+### Time [time] {#time}
         
 
-### Value {#value}
+### Value [value] {#value}
         
 
-### Voltage {#voltage}
+### Voltage [voltage] {#voltage}
         
 
 
 ## Entités associées (unique)
 
-### Objet {#item}
+### Objet [item] {#item}
         
 
 

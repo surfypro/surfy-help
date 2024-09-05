@@ -9,10 +9,10 @@
 
 ## Entités associées (unique)
 
-### Espace {#room}
+### Espace [room] {#room}
         
 
-### Personne {#person}
+### Personne [person] {#person}
         
 
 

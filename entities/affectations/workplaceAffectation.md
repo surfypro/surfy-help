@@ -5,40 +5,40 @@
 
 ## Propriétés de base
 
-### Calculated Rate {#calculatedRate}
+### Calculated Rate [calculatedRate] {#calculatedRate}
         
 
-### Friday Rate {#fridayRate}
+### Friday Rate [fridayRate] {#fridayRate}
         
 
-### Monday Rate {#mondayRate}
+### Monday Rate [mondayRate] {#mondayRate}
         
 
-### Rate {#rate}
+### Rate [rate] {#rate}
         
 
-### Saturday Rate {#saturdayRate}
+### Saturday Rate [saturdayRate] {#saturdayRate}
         
 
-### Sunday Rate {#sundayRate}
+### Sunday Rate [sundayRate] {#sundayRate}
         
 
-### Thursday Rate {#thursdayRate}
+### Thursday Rate [thursdayRate] {#thursdayRate}
         
 
-### Tuesday Rate {#tuesdayRate}
+### Tuesday Rate [tuesdayRate] {#tuesdayRate}
         
 
-### Wednesday Rate {#wednesdayRate}
+### Wednesday Rate [wednesdayRate] {#wednesdayRate}
         
 
 
 ## Entités associées (unique)
 
-### Personne {#person}
+### Personne [person] {#person}
         
 
-### Poste de travail {#workplace}
+### Poste de travail [workplace] {#workplace}
         
 
 

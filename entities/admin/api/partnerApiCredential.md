@@ -5,22 +5,22 @@
 
 ## Propriétés de base
 
-### Activé {#enable}
+### Activé [enable] {#enable}
         
 Il faut activer la clé pour pouvoir l'utiliser
-### Client Id {#clientId}
+### Client Id [clientId] {#clientId}
         
 
-### Client Secret {#clientSecret}
+### Client Secret [clientSecret] {#clientSecret}
         
 
-### Code {#code}
+### Code [code] {#code}
         
 
-### Host {#host}
+### Host [host] {#host}
         
 
-### Label {#label}
+### Label [label] {#label}
         
 
 

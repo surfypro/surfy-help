@@ -5,19 +5,19 @@
 
 ## Propriétés de base
 
-### Email {#email}
+### Email [email] {#email}
         
 Le courriel utilisé par l'utilisateur pour les correspondances ou pour l'authentification
-### Nom de famille {#lastname}
+### Nom de famille [lastname] {#lastname}
         
 Le nom de famille de l'utilisateur
-### Picture {#picture}
+### Picture [picture] {#picture}
         
 
-### Prénom {#firstname}
+### Prénom [firstname] {#firstname}
         
 Le prénom de l'utilisateur
-### Sub {#sub}
+### Sub [sub] {#sub}
         
 
 
@@ -25,7 +25,7 @@ Le prénom de l'utilisateur
 
 ## Entités associées (liste)
 
-### Utilisateurs de l'entreprise {#userCompanies}
+### Utilisateurs de l'entreprise [userCompanies] {#userCompanies}
         
 
 

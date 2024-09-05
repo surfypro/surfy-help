@@ -5,7 +5,7 @@
 
 ## Propriétés de base
 
-### Nom {#name}
+### Nom [name] {#name}
         
 Le nom du genre de la personne
 
@@ -13,7 +13,7 @@ Le nom du genre de la personne
 
 ## Entités associées (liste)
 
-### Personnes {#people}
+### Personnes [people] {#people}
         
 
 

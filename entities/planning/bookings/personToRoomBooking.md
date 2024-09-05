@@ -5,22 +5,22 @@ Les réservations aux espaces des personnes sont enregistrés et disponible avec
 
 ## Propriétés de base
 
-### Début de la réservation {#startDatetime}
+### Début de la réservation [startDatetime] {#startDatetime}
         
 La date et l'heure de début de la réservation
-### Fin de la réservation {#endDatetime}
+### Fin de la réservation [endDatetime] {#endDatetime}
         
 La date et l'heure de fin de la réservation
 
 ## Entités associées (unique)
 
-### Emplacement de travail des personnes {#personWorkingLocation}
+### Emplacement de travail des personnes [personWorkingLocation] {#personWorkingLocation}
         
 Un emplacement de travail des personnes définie le lieu de travail des personnes
-### Espace {#room}
+### Espace [room] {#room}
         
 
-### Personne {#person}
+### Personne [person] {#person}
         
 
 

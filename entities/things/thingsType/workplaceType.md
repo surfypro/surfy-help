@@ -5,19 +5,19 @@
 
 ## Propriétés de base
 
-### Center {#center}
+### Center [center] {#center}
         
 
-### Color {#color}
+### Color [color] {#color}
         
 
-### Nom du type de poste de travail {#name}
+### Nom du type de poste de travail [name] {#name}
         
 
-### Size {#size}
+### Size [size] {#size}
         
 
-### Z Index {#zIndex}
+### Z Index [zIndex] {#zIndex}
         
 
 
@@ -25,10 +25,10 @@
 
 ## Entités associées (liste)
 
-### Postes de travail {#workplaces}
+### Postes de travail [workplaces] {#workplaces}
         
 
-### Types d'objet dans type de poste de travail {#workplaceTypeItemTypes}
+### Types d'objet dans type de poste de travail [workplaceTypeItemTypes] {#workplaceTypeItemTypes}
         
 
 

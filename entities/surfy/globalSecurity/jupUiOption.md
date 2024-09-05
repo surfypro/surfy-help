@@ -5,10 +5,10 @@
 
 ## Propriétés de base
 
-### Name {#name}
+### Name [name] {#name}
         
 
-### Scope {#scope}
+### Scope [scope] {#scope}
         
 
 
@@ -16,7 +16,7 @@
 
 ## Entités associées (liste)
 
-### Associations rôle aux visions du plan {#jupRoleToJupUiOptions}
+### Associations rôle aux visions du plan [jupRoleToJupUiOptions] {#jupRoleToJupUiOptions}
         
 
 

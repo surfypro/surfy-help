@@ -5,16 +5,16 @@ L'association entre un point et un espace permet de conserver l'ordre des points
 
 ## Propriétés de base
 
-### Index de tri {#sortIndex}
+### Index de tri [sortIndex] {#sortIndex}
         
 
 
 ## Entités associées (unique)
 
-### Espace {#room}
+### Espace [room] {#room}
         
 
-### Point des espaces {#roomPoint}
+### Point des espaces [roomPoint] {#roomPoint}
         
 
 

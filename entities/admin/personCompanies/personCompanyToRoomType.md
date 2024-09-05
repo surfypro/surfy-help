@@ -9,13 +9,13 @@ Les types d'espaces des prestataires permettent de définir une relation entre u
 
 ## Entités associées (unique)
 
-### Entreprise prestataire {#personCompany}
+### Entreprise prestataire [personCompany] {#personCompany}
         
 L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion
-### Mission du prestataire {#personCompanyMission}
+### Mission du prestataire [personCompanyMission] {#personCompanyMission}
         
 Les missions des prestataires permettent de connaitre le domaine d'intervention des prestataires
-### Typologie d'espace {#roomType}
+### Typologie d'espace [roomType] {#roomType}
         
 
 

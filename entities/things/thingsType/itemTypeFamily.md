@@ -5,7 +5,7 @@ Permet d’afficher les objets par Famille sur les plans et dans l’inventaire 
 
 ## Propriétés de base
 
-### Nom de la famille de types de l'objet {#name}
+### Nom de la famille de types de l'objet [name] {#name}
         
 Le nom de la famille permet de l'identifier, ce nom est utilisé pour regrouper les types d'objet
 
@@ -13,7 +13,7 @@ Le nom de la famille permet de l'identifier, ce nom est utilisé pour regrouper 
 
 ## Entités associées (liste)
 
-### Types d'objet {#itemTypes}
+### Types d'objet [itemTypes] {#itemTypes}
         
 
 

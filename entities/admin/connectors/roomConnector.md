@@ -5,25 +5,25 @@ Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces d
 
 ## Propriétés de base
 
-### Nom du connecteur d'espace {#name}
+### Nom du connecteur d'espace [name] {#name}
         
 
-### Temps d'attente moyenne {#waitTime}
+### Temps d'attente moyenne [waitTime] {#waitTime}
         
 Le temps d'attente moyenne avant que le connecteur d'espace soit disponible
-### Temps entre chaque étage {#timePerFloor}
+### Temps entre chaque étage [timePerFloor] {#timePerFloor}
         
 Le temps nécessaire pour pouvoir passer de chaque étage au prochain
 
 ## Entités associées (unique)
 
-###  Room Connector Type {#roomConnectorType}
+###  Room Connector Type [roomConnectorType] {#roomConnectorType}
         
 
 
 ## Entités associées (liste)
 
-### Espaces {#rooms}
+### Espaces [rooms] {#rooms}
         
 
 

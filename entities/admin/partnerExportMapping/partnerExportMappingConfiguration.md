@@ -5,7 +5,7 @@
 
 ## Propriétés de base
 
-### Code {#code}
+### Code [code] {#code}
         
 
 
@@ -13,10 +13,10 @@
 
 ## Entités associées (liste)
 
-###  Partner Export Mapping Configuration To Floors {#partnerExportMappingConfigurationToFloors}
+###  Partner Export Mapping Configuration To Floors [partnerExportMappingConfigurationToFloors] {#partnerExportMappingConfigurationToFloors}
         
 
-###  Partner Export Mappings {#partnerExportMappings}
+###  Partner Export Mappings [partnerExportMappings] {#partnerExportMappings}
         
 
 

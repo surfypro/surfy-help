@@ -5,7 +5,7 @@
 
 ## Propriétés de base
 
-### Name {#name}
+### Name [name] {#name}
         
 
 
@@ -13,7 +13,7 @@
 
 ## Entités associées (liste)
 
-###  Feature Groups {#featureGroups}
+###  Feature Groups [featureGroups] {#featureGroups}
         
 
 

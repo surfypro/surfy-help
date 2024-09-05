@@ -5,16 +5,16 @@
 
 ## Propriétés de base
 
-### Comptabiliser l'affectation {#addToPeopleCount}
+### Comptabiliser l'affectation [addToPeopleCount] {#addToPeopleCount}
         
 Ajouter cette affectation au nombre total des personnes affectées au bâtiment
 
 ## Entités associées (unique)
 
-### Bâtiment {#building}
+### Bâtiment [building] {#building}
         
 Le bâtiment est utilisé pour regrouper les étages
-### Personne {#person}
+### Personne [person] {#person}
         
 
 

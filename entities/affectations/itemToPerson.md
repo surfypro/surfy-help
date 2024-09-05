@@ -9,10 +9,10 @@
 
 ## Entités associées (unique)
 
-### Objet {#item}
+### Objet [item] {#item}
         
 
-### Personne {#person}
+### Personne [person] {#person}
         
 
 

@@ -5,10 +5,10 @@
 
 ## Propriétés de base
 
-### Code {#code}
+### Code [code] {#code}
         
 
-### Name {#name}
+### Name [name] {#name}
         
 
 
@@ -16,7 +16,7 @@
 
 ## Entités associées (liste)
 
-### Emplacements de travail des personnes {#personWorkingLocations}
+### Emplacements de travail des personnes [personWorkingLocations] {#personWorkingLocations}
         
 Un emplacement de travail des personnes définie le lieu de travail des personnes
 

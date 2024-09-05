@@ -5,7 +5,7 @@
 
 ## Propriétés de base
 
-### Nom du statut de la personne {#name}
+### Nom du statut de la personne [name] {#name}
         
 
 
@@ -13,7 +13,7 @@
 
 ## Entités associées (liste)
 
-### Personnes {#people}
+### Personnes [people] {#people}
         
 
 

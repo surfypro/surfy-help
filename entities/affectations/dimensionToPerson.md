@@ -9,10 +9,10 @@
 
 ## Entités associées (unique)
 
-### Calque d'analyse {#dimension}
+### Calque d'analyse [dimension] {#dimension}
         
 
-### Personne {#person}
+### Personne [person] {#person}
         
 
 

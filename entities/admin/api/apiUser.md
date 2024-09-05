@@ -5,10 +5,10 @@
 
 ## Propriétés de base
 
-### Code secret {#clientSecret}
+### Code secret [clientSecret] {#clientSecret}
         
 le mot de passe secret de votre compte API peut être généré et ne devrait jamais être communiqué
-### Name {#name}
+### Name [name] {#name}
         
 
 
@@ -16,10 +16,10 @@ le mot de passe secret de votre compte API peut être généré et ne devrait ja
 
 ## Entités associées (liste)
 
-### Associations d'utilisateur d'api au rôle {#apiUserToJupRoles}
+### Associations d'utilisateur d'api au rôle [apiUserToJupRoles] {#apiUserToJupRoles}
         
 
-### Associations d'utilisateur d'api au rôle de contenu {#apiUserToContentRoles}
+### Associations d'utilisateur d'api au rôle de contenu [apiUserToContentRoles] {#apiUserToContentRoles}
         
 
 

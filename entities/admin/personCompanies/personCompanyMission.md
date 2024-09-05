@@ -5,7 +5,7 @@ Les missions des prestataires permettent de connaitre le domaine d'intervention 
 
 ## Propriétés de base
 
-### Nom {#name}
+### Nom [name] {#name}
         
 Le nom de la mission du prestataire
 
@@ -13,10 +13,10 @@ Le nom de la mission du prestataire
 
 ## Entités associées (liste)
 
-### Types d'espaces des prestataires {#personCompanyToRoomTypes}
+### Types d'espaces des prestataires [personCompanyToRoomTypes] {#personCompanyToRoomTypes}
         
 Les types d'espaces des prestataires permettent de définir une relation entre un type d'espaces et le prestataire et d'y définir une mission
-### Types d'objets des prestataires {#personCompanyToItemTypes}
+### Types d'objets des prestataires [personCompanyToItemTypes] {#personCompanyToItemTypes}
         
 Les types d'objets des prestataires permettent de définir une relation entre le type d'objet et le prestataires et d'y définir la mission
 

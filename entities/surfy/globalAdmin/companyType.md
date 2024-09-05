@@ -5,10 +5,10 @@
 
 ## Propriétés de base
 
-### Billable {#billable}
+### Billable [billable] {#billable}
         
 
-### Nom du type d'entreprise {#name}
+### Nom du type d'entreprise [name] {#name}
         
 
 
@@ -16,7 +16,7 @@
 
 ## Entités associées (liste)
 
-### Entreprises {#companies}
+### Entreprises [companies] {#companies}
         
 
 
