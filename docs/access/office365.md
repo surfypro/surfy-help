@@ -8,37 +8,40 @@ sidebar_position: 1
 
 1. Rendez-vous sur https://app.surfy.pro :
 
-![accueil](https://res.cloudinary.com/dngnxxqr4/image/upload/v1719408842/page_de_connexion_kk2wx2.png)
+![accueil](https://res.cloudinary.com/dngnxxqr4/image/upload/v1725529169/tutoriels/access/acc%C3%A8s%20Surfy.png)
 
 2. Accédez à Surfy en cliquant sur « OFFICE 365 » et choisissez le compte Microsoft à utiliser :
 
 ![office365](https://res.cloudinary.com/dngnxxqr4/image/upload/v1719408850/office_365_u8syk2.png)
 
+:::warning
+Si votre administrateur IT n’autorise pas Surfy (message "autorisation requise"), choisissez un autre type d’accès : [Google](/docs/access/google) ou [compte Surfy](/docs/access/surfy).
+:::
 
-    Si votre IT n’autorise pas Surfy (message "autorisation requise"), choisissez un autre type d’accès : [Google](/docs/access/google) ou [compte Surfy](/docs/access/surfy).
+3. Votre Administrateur IT autorise Surfy à utiliser les comptes Office365 :
 
-3. Si votre Administrateur IT autorise Surfy à utiliser les comptes Office365, vous obtenez la page suivante :
-
-![pagesuivante](https://res.cloudinary.com/dngnxxqr4/image/upload/v1719408844/page_suivante_weckcd.png)
-
-    
-4. Cliquez sur ![boutoncliquable](https://res.cloudinary.com/dngnxxqr4/image/upload/v1719408842/bouton_e4bkr5.png)
-
+ :::tip A ce stade
  Si votre entreprise utilise l'authentification automatique et si vous réunissez les conditions, vous avez directement accès à la plateforme de votre entreprise.
+ :::
 
- Si ce n'est pas le cas, un mail vers vincent@surfy.pro est créé dans votre messagerie qu’il 
-vous suffit d’envoyer afin de nous prévenir de votre demande d’accès en
-attente :
+Si votre entreprise n'utilise pas l'authentification automatique, vous obtenez la page suivante :
+![pagesuivante](https://res.cloudinary.com/dngnxxqr4/image/upload/v1725527994/tutoriels/access/google/wu9g3mdfxk4omjgtdopl.png)
 
-![mail](https://res.cloudinary.com/dngnxxqr4/image/upload/v1719408843/mail_p7fdgc.png)
+ 
+4. Cliquez sur ![boutoncliquable](https://res.cloudinary.com/dngnxxqr4/image/upload/v1725529998/tutoriels/access/google/tezrai39oldhxxdmmqlo.png)
 
-5. Une fois votre accès validé et votre rôle attribué en relation avec votre entreprise, nous vous confirmons par mail cette validation.
+5. Remplissez le formulaire et cliquez sur "Envoyer" :
+![formulaire](https://res.cloudinary.com/dngnxxqr4/image/upload/v1725527994/tutoriels/access/google/fs1qudetrbekkl0inbsg.png)
+
+   Une demande d'accès est envoyée à l'administrateur Surfy pour validation.
+
+6. Une fois votre accès validé et votre rôle attribué en relation avec votre entreprise, une confirmation par mail vous est envoyée.
 
 ## Connexion via votre compte Office365
 
 6. Une fois votre accès validé, rendez-vous sur https://app.surfy.pro :
 
-![acceuil](https://res.cloudinary.com/dngnxxqr4/image/upload/v1719408842/page_de_connexion_kk2wx2.png)
+![accueil](https://res.cloudinary.com/dngnxxqr4/image/upload/v1725529169/tutoriels/access/acc%C3%A8s%20Surfy.png)
 
 7. Accédez à Surfy en cliquant sur « OFFICE 365 » et choisissez le compte Microsoft à utiliser :
 
