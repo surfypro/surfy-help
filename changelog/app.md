@@ -6,9 +6,14 @@
 - Mise en place d'un mode avancé pour la visualisation des types d'objet en 3D afin de les prévisualiser sans les axes et la zone d'occupation au sol
 - La page de connexion comporte maintenant un lien d'inscription et un lien vers le site internet de Surfy
 - Amélioration des visualisations en 3D pour retirer l'effet de l'écran qui tremble
-- Mise a jour des systemes de connexion a Surfy en utilisant openid connect
-- La vision centres de coût ouvre sur les centres de coût des espaces par défaut
+- Mise a jour des systemes de connexions a Surfy en utilisant openid connect
+- La vision centre de coûts ouvre sur les centre de coûts des espaces par default
 - Amélioration des imports automatiques en créant des couleurs automatiquement pour les nouvelles entités
+- Ajout du nom de la vision en cours sur le texte d'info bulle pour changer les visions sur la vue du plan
+- Ajout du nom de la vision en cours en haut de la page du plan entre parenthèses après le nom du l'étage en 2D en 3D et sur le bâtiment en 3D
+- Ajout de l'adresse du bâtiment dans la légende de l'image du plan
+- Ajout d'une option depuis le téléchargement des images du plan pour prévisualiser la légende avant la sortie en image
+- Amélioration de la navigation des étages en 3D
  -->
 
 ## 5 Juin 2024  - v3.3.233 ## 
