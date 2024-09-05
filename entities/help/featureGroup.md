@@ -5,22 +5,22 @@
 
 ## Propriétés de base
 
-### Name {#name}
+### Name [name] {#name}
         
 
-### Sort Order {#sortOrder}
+### Sort Order [sortOrder] {#sortOrder}
         
 
 
 ## Entités associées (unique)
 
-###  Feature Family {#featureFamily}
+###  Feature Family [featureFamily] {#featureFamily}
         
 
 
 ## Entités associées (liste)
 
-###  Features {#features}
+###  Features [features] {#features}
         
 
 

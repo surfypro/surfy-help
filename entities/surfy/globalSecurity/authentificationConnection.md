@@ -5,7 +5,7 @@
 
 ## Propriétés de base
 
-### Name {#name}
+### Name [name] {#name}
         
 
 
@@ -13,7 +13,7 @@
 
 ## Entités associées (liste)
 
-### Règles d'authentification {#userRegistrationTenantRules}
+### Règles d'authentification [userRegistrationTenantRules] {#userRegistrationTenantRules}
         
 
 

@@ -9,10 +9,10 @@
 
 ## Entités associées (unique)
 
-### Groupe de typologie d'espace {#roomTypeGroup}
+### Groupe de typologie d'espace [roomTypeGroup] {#roomTypeGroup}
         
 
-### Typologie d'espace {#roomType}
+### Typologie d'espace [roomType] {#roomType}
         
 
 

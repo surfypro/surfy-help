@@ -5,16 +5,16 @@ L'entreprise prestataire permet de conserver les informations de l'entreprise d'
 
 ## Propriétés de base
 
-### Contact {#contact}
+### Contact [contact] {#contact}
         
 Les informations de contact du prestataire
-### Documents associés {#documents}
+### Documents associés [documents] {#documents}
         
 Le lien vers les documents associés à ce prestataire
-### Informations complémentaires {#comment}
+### Informations complémentaires [comment] {#comment}
         
 Des informations complémentaires sur le prestataire, comme sa mission, ses valeurs, la couverture fonctionelle de sa préstation etc
-### Nom {#name}
+### Nom [name] {#name}
         
 Le nom du prestataire, par exemple le nom de l'entreprise d'un prestataire de service
 
@@ -22,16 +22,16 @@ Le nom du prestataire, par exemple le nom de l'entreprise d'un prestataire de se
 
 ## Entités associées (liste)
 
-### Interventions sur des objet {#personCompanyToItems}
+### Interventions sur des objet [personCompanyToItems] {#personCompanyToItems}
         
 Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur
-### Personnes {#people}
+### Personnes [people] {#people}
         
 
-### Types d'espaces des prestataires {#personCompanyToRoomTypes}
+### Types d'espaces des prestataires [personCompanyToRoomTypes] {#personCompanyToRoomTypes}
         
 Les types d'espaces des prestataires permettent de définir une relation entre un type d'espaces et le prestataire et d'y définir une mission
-### Types d'objets des prestataires {#personCompanyToItemTypes}
+### Types d'objets des prestataires [personCompanyToItemTypes] {#personCompanyToItemTypes}
         
 Les types d'objets des prestataires permettent de définir une relation entre le type d'objet et le prestataires et d'y définir la mission
 

@@ -9,10 +9,10 @@
 
 ## Entités associées (unique)
 
-### Rôle {#jupRole}
+### Rôle [jupRole] {#jupRole}
         
 
-### Utilisateur d'api {#apiUser}
+### Utilisateur d'api [apiUser] {#apiUser}
         
 
 

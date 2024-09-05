@@ -5,22 +5,22 @@ Les réservations aux calques d'affectations des personnes sont enregistrés et 
 
 ## Propriétés de base
 
-### Début de la réservation {#startDatetime}
+### Début de la réservation [startDatetime] {#startDatetime}
         
 La date et l'heure de début de la réservation
-### Fin de la réservation {#endDatetime}
+### Fin de la réservation [endDatetime] {#endDatetime}
         
 La date et l'heure de fin de la réservation
 
 ## Entités associées (unique)
 
-### Calque d'analyse {#dimension}
+### Calque d'analyse [dimension] {#dimension}
         
 
-### Emplacement de travail des personnes {#personWorkingLocation}
+### Emplacement de travail des personnes [personWorkingLocation] {#personWorkingLocation}
         
 Un emplacement de travail des personnes définie le lieu de travail des personnes
-### Personne {#person}
+### Personne [person] {#person}
         
 
 

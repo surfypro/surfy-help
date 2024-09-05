@@ -5,10 +5,10 @@
 
 ## Propriétés de base
 
-### Name {#name}
+### Name [name] {#name}
         
 
-### Transformation {#transform}
+### Transformation [transform] {#transform}
         
 Transformation de la structure pour la calibrer sur une carte
 
@@ -16,10 +16,10 @@ Transformation de la structure pour la calibrer sur une carte
 
 ## Entités associées (liste)
 
-###  Structure Points {#structurePoints}
+###  Structure Points [structurePoints] {#structurePoints}
         
 
-### Étages {#floors}
+### Étages [floors] {#floors}
         
 
 

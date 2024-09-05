@@ -1,11 +1,14 @@
 # Nouveautés
 
-<!-- ## 26 Août 2024  - v3.3.236 ## 
+<!-- ## 6 Septembre 2024  - v3.3.236 ## 
 
-- Mise à jour des icones de fontawesome en version 6.5.2.
-- Mise en place d'un mode avancé pour la visualisation des type d'objets en 3D pour les prévisualiser sans les axes et la zone d'occupation au sol
+- Mise en place des icones de fontawesome en version 6.5.2
+- Mise en place d'un mode avancé pour la visualisation des type d'objets en 3D pour pouvoir les prévisualiser sans les axes et la zone d'occupation au sol
 - La page de connexion comporte maintenant un lien d'inscription et un lien vers le site internet de surfy
 - Amélioration des visualisations en 3D pour retirer l'effet de l'écran qui tremble
+- Mise a jour des systemes de connexions a Surfy en utilisant openid connect
+- La vision centre de coûts ouvre sur les centre de coûts des espaces par default
+- Amélioration des imports automatique en créant des couleurs automatiques pour les entitiés avec des couleurs
  -->
 
 ## 5 Juin 2024  - v3.3.233 ## 

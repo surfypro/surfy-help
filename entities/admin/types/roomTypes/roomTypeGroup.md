@@ -5,16 +5,16 @@
 
 ## Propriétés de base
 
-### Code {#code}
+### Code [code] {#code}
         
 
-### Couleur {#color}
+### Couleur [color] {#color}
         
 
-### Exclure {#exclude}
+### Exclure [exclude] {#exclude}
         
 Exclure les typologies d'espace de ce groupe
-### Nom du groupe de typologie d'espace {#name}
+### Nom du groupe de typologie d'espace [name] {#name}
         
 
 
@@ -22,13 +22,13 @@ Exclure les typologies d'espace de ce groupe
 
 ## Entités associées (liste)
 
-###  Room Type Group Buildings {#roomTypeGroupBuildings}
+###  Room Type Group Buildings [roomTypeGroupBuildings] {#roomTypeGroupBuildings}
         
 
-###  Room Type Group Floors {#roomTypeGroupFloors}
+###  Room Type Group Floors [roomTypeGroupFloors] {#roomTypeGroupFloors}
         
 
-### Associations groupes de typologies d'espace à typologies d'espace {#roomTypeGroupToRoomTypes}
+### Associations groupes de typologies d'espace à typologies d'espace [roomTypeGroupToRoomTypes] {#roomTypeGroupToRoomTypes}
         
 
 

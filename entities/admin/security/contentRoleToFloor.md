@@ -9,10 +9,10 @@
 
 ## Entités associées (unique)
 
-### Étage {#floor}
+### Étage [floor] {#floor}
         
 
-### Rôle de contenu {#contentRole}
+### Rôle de contenu [contentRole] {#contentRole}
         
 
 

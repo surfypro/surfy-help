@@ -5,7 +5,7 @@
 
 ## Propriétés de base
 
-### Name {#name}
+### Name [name] {#name}
         
 
 
@@ -13,10 +13,10 @@
 
 ## Entités associées (liste)
 
-### Associations rôle à type d'objet {#jupRoleToJupObjectTypes}
+### Associations rôle à type d'objet [jupRoleToJupObjectTypes] {#jupRoleToJupObjectTypes}
         
 
-### Vues d'interface {#jupUiViews}
+### Vues d'interface [jupUiViews] {#jupUiViews}
         
 
 

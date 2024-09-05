@@ -5,10 +5,10 @@
 
 ## Propriétés de base
 
-### Code {#code}
+### Code [code] {#code}
         
 
-### Name {#name}
+### Name [name] {#name}
         
 
 
@@ -16,7 +16,7 @@
 
 ## Entités associées (liste)
 
-### Qualifications de segments {#roomPointSegments}
+### Qualifications de segments [roomPointSegments] {#roomPointSegments}
         
 
 

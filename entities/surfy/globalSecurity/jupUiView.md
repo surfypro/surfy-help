@@ -5,22 +5,22 @@
 
 ## Propriétés de base
 
-### Is Default View {#isDefaultView}
+### Is Default View [isDefaultView] {#isDefaultView}
         
 
-### Name {#name}
+### Name [name] {#name}
         
 
 
 ## Entités associées (unique)
 
-### Type d'entité {#jupObjectType}
+### Type d'entité [jupObjectType] {#jupObjectType}
         
 
 
 ## Entités associées (liste)
 
-### Associations rôle aux vues d'interface {#jupRoleToJupUiViews}
+### Associations rôle aux vues d'interface [jupRoleToJupUiViews] {#jupRoleToJupUiViews}
         
 
 

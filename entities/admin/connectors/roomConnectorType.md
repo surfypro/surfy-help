@@ -5,7 +5,7 @@
 
 ## Propriétés de base
 
-### Name {#name}
+### Name [name] {#name}
         
 
 
@@ -13,7 +13,7 @@
 
 ## Entités associées (liste)
 
-### Connecteurs d'espace {#roomConnectors}
+### Connecteurs d'espace [roomConnectors] {#roomConnectors}
         
 Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces dans des étages différents
 

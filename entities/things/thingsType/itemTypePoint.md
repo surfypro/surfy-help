@@ -5,19 +5,19 @@
 
 ## Propriétés de base
 
-### Index de tri {#sortIndex}
+### Index de tri [sortIndex] {#sortIndex}
         
 
-### x {#x}
+### x [x] {#x}
         
 
-### y {#y}
+### y [y] {#y}
         
 
 
 ## Entités associées (unique)
 
-### Type d'objet {#itemType}
+### Type d'objet [itemType] {#itemType}
         
 
 

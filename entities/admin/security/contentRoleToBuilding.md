@@ -9,10 +9,10 @@
 
 ## Entités associées (unique)
 
-### Bâtiment {#building}
+### Bâtiment [building] {#building}
         
 Le bâtiment est utilisé pour regrouper les étages
-### Rôle de contenu {#contentRole}
+### Rôle de contenu [contentRole] {#contentRole}
         
 
 

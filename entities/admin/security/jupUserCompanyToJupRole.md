@@ -9,10 +9,10 @@
 
 ## Entités associées (unique)
 
-### Rôle {#jupRole}
+### Rôle [jupRole] {#jupRole}
         
 
-### Utilisateur de l'entreprise {#userCompany}
+### Utilisateur de l'entreprise [userCompany] {#userCompany}
         
 
 

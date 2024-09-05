@@ -9,13 +9,13 @@
 
 ## Entités associées (unique)
 
-### Calque d'analyse {#dimension}
+### Calque d'analyse [dimension] {#dimension}
         
 
-### Espace {#room}
+### Espace [room] {#room}
         
 
-### Type de calque {#dimensionType}
+### Type de calque [dimensionType] {#dimensionType}
         
 
 

@@ -5,13 +5,13 @@ L'état d'occupation permet d'identifier l'état en temps réel d'un espace ou d
 
 ## Propriétés de base
 
-### Code de l'état d'occupation {#code}
+### Code de l'état d'occupation [code] {#code}
         
 Le code permet d'identifier et de réaliser des opérations techniques sur l'état d'occupation
-### Couleur {#color}
+### Couleur [color] {#color}
         
 La couleur permet de colorier les espaces ou les postes de travail sur les plans en fonction de leur état d'occupation
-### Nom de l'état d'occupation {#name}
+### Nom de l'état d'occupation [name] {#name}
         
 
 
@@ -19,7 +19,7 @@ La couleur permet de colorier les espaces ou les postes de travail sur les plans
 
 ## Entités associées (liste)
 
-### Espaces {#rooms}
+### Espaces [rooms] {#rooms}
         
 
 

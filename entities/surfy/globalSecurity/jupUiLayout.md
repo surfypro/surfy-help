@@ -5,7 +5,7 @@
 
 ## Propriétés de base
 
-### Name {#name}
+### Name [name] {#name}
         
 
 
@@ -13,10 +13,10 @@
 
 ## Entités associées (liste)
 
-###  Jup Role To Jup Ui Layouts {#jupRoleToJupUiLayouts}
+###  Jup Role To Jup Ui Layouts [jupRoleToJupUiLayouts] {#jupRoleToJupUiLayouts}
         
 
-### Bâtiments {#buildings}
+### Bâtiments [buildings] {#buildings}
         
 Le bâtiment est utilisé pour regrouper les étages
 

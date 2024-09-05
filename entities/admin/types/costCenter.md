@@ -5,19 +5,19 @@ Le centre de coût permet de repartir les espaces dynamiquement pour la refactur
 
 ## Propriétés de base
 
-### Couleur {#color}
+### Couleur [color] {#color}
         
 
-### Distribuer par bâtiment {#distributeByBuilding}
+### Distribuer par bâtiment [distributeByBuilding] {#distributeByBuilding}
         
 Répartir au prorata l'espace utilisé par ce centre de coût dans le bâtiment sur les autres centres de coût dans le bâtiment
-### Distribuer par étage {#distributeByFloor}
+### Distribuer par étage [distributeByFloor] {#distributeByFloor}
         
 Répartir au prorata l'espace utilisé par ce centre de coût sur l'étage sur les autres centres de coût du même l'étage
-### Info {#info}
+### Info [info] {#info}
         
 
-### Nom du centre de coût {#name}
+### Nom du centre de coût [name] {#name}
         
 
 
@@ -25,19 +25,19 @@ Répartir au prorata l'espace utilisé par ce centre de coût sur l'étage sur l
 
 ## Entités associées (liste)
 
-### Centres de coût des bâtiments {#costCenterBuildings}
+### Centres de coût des bâtiments [costCenterBuildings] {#costCenterBuildings}
         
 
-### Centres de coût des étages {#costCenterFloors}
+### Centres de coût des étages [costCenterFloors] {#costCenterFloors}
         
 
-### Espaces {#rooms}
+### Espaces [rooms] {#rooms}
         
 
-### Personnes {#people}
+### Personnes [people] {#people}
         
 
-### Postes de travail {#workplaces}
+### Postes de travail [workplaces] {#workplaces}
         
 
 

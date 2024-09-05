@@ -9,10 +9,10 @@
 
 ## Entités associées (unique)
 
-###  Partner Export Mapping Configuration {#partnerExportMappingConfiguration}
+###  Partner Export Mapping Configuration [partnerExportMappingConfiguration] {#partnerExportMappingConfiguration}
         
 
-### Étage {#floor}
+### Étage [floor] {#floor}
         
 
 

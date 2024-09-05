@@ -9,10 +9,6 @@
                 "label": "Utilisateur",
                 "description": null
             },
-            "userRefreshToken": {
-                "label": " User Refresh Token",
-                "description": null
-            },
             "companyType": {
                 "label": "Type d'entreprise",
                 "description": null
@@ -494,42 +490,8 @@
                     "label": "Clé externe",
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
-                "userRefreshTokens": {
-                    "label": " User Refresh Tokens",
-                    "description": null
-                },
                 "userCompanies": {
                     "label": "Utilisateurs de l'entreprise",
-                    "description": null
-                }
-            },
-            "userRefreshToken": {
-                "id": {
-                    "label": "Id",
-                    "description": null
-                },
-                "refreshToken": {
-                    "label": "Refresh Token",
-                    "description": null
-                },
-                "createdAt": {
-                    "label": "Date de création",
-                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
-                },
-                "updatedAt": {
-                    "label": "Date de mise à jour",
-                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
-                },
-                "externalId": {
-                    "label": "Clé externe",
-                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
-                },
-                "userId": {
-                    "label": "Identifiant de l'utilisateur",
-                    "description": ""
-                },
-                "user": {
-                    "label": "Utilisateur",
                     "description": null
                 }
             },
@@ -2826,7 +2788,7 @@
                 },
                 "cadence": {
                     "label": "Cadence",
-                    "description": "La cadence permet de définir une valeur analytique permettant de connaître la difficulté de nettoyage de la typologie de l'espace"
+                    "description": "La cadence est une valeur numérique permettant d'indiquer la difficulté de nettoyage de la typologie de l'espace. Elle est égale au nombre de m² pouvant être traités en une heure dans cette typologie (circulation, laboratoire, ...)"
                 },
                 "isBookable": {
                     "label": "Est réservable ?",
