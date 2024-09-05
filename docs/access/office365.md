@@ -8,7 +8,7 @@ sidebar_position: 1
 
 1. Rendez-vous sur https://app.surfy.pro :
 
-![acceuil](https://res.cloudinary.com/dngnxxqr4/image/upload/v1719408842/page_de_connexion_kk2wx2.png)
+![accueil](https://res.cloudinary.com/dngnxxqr4/image/upload/v1719408842/page_de_connexion_kk2wx2.png)
 
 2. Accédez à Surfy en cliquant sur « OFFICE 365 » et choisissez le compte Microsoft à utiliser :
 
