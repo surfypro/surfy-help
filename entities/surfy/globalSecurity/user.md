@@ -25,9 +25,6 @@ Le prénom de l'utilisateur
 
 ## Entités associées (liste)
 
-###  User Refresh Tokens {#userRefreshTokens}
-        
-
 ### Utilisateurs de l'entreprise {#userCompanies}
         
 

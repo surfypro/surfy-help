@@ -10,7 +10,7 @@
 Permet d'afficher ou non les murs de l'espace dans le plan 3d de l'étage, les murs non affichés sont en pointillés en 2d, cela permet d'avoir une vue plus agréable notament pour les open spaces
 ### Cadence {#cadence}
         
-La cadence permet de définir une valeur analytique permettant de connaître la difficulté de nettoyage de la typologie de l'espace
+La cadence est une valeur numérique permettant d'indiquer la difficulté de nettoyage de la typologie de l'espace. Elle est égale au nombre de m² pouvant être traités en une heure dans cette typologie (circulation, laboratoire, ...)
 ### Code {#code}
         
 
