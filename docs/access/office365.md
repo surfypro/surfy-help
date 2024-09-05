@@ -15,10 +15,10 @@ sidebar_position: 1
 ![office365](https://res.cloudinary.com/dngnxxqr4/image/upload/v1719408850/office_365_u8syk2.png)
 
 :::warning
-Si votre administrateur IT n’autorise pas Surfy (message "autorisation requise"), choisissez un autre type d’accès : [Google](/docs/access/google) ou [compte Surfy](/docs/access/surfy).
+Si Microsoft vous informe d'une "autorisation requise", vous devez demander à votre administrateur informatique d'autoriser l'application Surfy à utiliser les comptes Office365.
 :::
 
-3. Votre Administrateur IT autorise Surfy à utiliser les comptes Office365 :
+3. Votre Administrateur informatique autorise Surfy à utiliser les comptes Office365 :
 
  :::tip A ce stade
  Si votre entreprise utilise l'authentification automatique et si vous réunissez les conditions, vous avez directement accès à la plateforme de votre entreprise.
