@@ -1,6 +1,6 @@
 # Nouveautés
 
-<!-- ## 6 Septembre 2024  - v3.4.13 ## 
+## 6 Septembre 2024  - v3.4.13 ## 
 
 - Mise en place des icones de fontawesome en version 6.5.2
 - Mise en place d'un mode avancé pour la visualisation des types d'objet en 3D afin de les prévisualiser sans les axes et la zone d'occupation au sol
@@ -14,7 +14,7 @@
 - Ajout de l'adresse du bâtiment dans la légende de l'image du plan
 - Ajout d'une option depuis le téléchargement des images du plan pour prévisualiser la légende avant la sortie en image
 - Amélioration de la navigation des étages en 3D
- -->
+
 
 ## 5 Juin 2024  - v3.3.233 ## 
 
