@@ -18,7 +18,7 @@ J'obtiens alors les informations surfaciques par typologie d'espace ou par tout 
 Je peux également dupliquer un bâtiment ou un étage existant pour proposer un nouvel aménagement de mes espaces et décider en toute connaissance de mes données.<br />
 Suite au réaménagement, je peux gommer les éléments obsolètes dans Paint3D pour mettre à jour mon fond de plan, et redéfinir mes espaces suivant la nouvelle implantation.<br />
 
-## Les Occupants dans Surfy
+## Les Personnes dans Surfy
 
 La liste des occupants avec les renseignements complémentaires peut être intégrée dans Surfy à partir d'un fichier Excel ou manuellement au fil de l'arrivée des collaborateurs.<br />
 Trouver facilement le poste ou le quartier d'un collaborateur, visualiser automatiquement sur les plans les postes de travail des équipiers locaux de sécurité, structurer et répertorier les équipes, attribuer un siège ergo ou un caisson,... autant de fonctionnalités qui vous sont expliquées ici.<br />
@@ -33,4 +33,4 @@ Evaluer sa capacité à recevoir en comptant les postes de travail et les places
 ## Surfy Plus +
 
 Nous avons pensé à vous faciliter la tâche dans la recherche de vos informations dans Surfy: <br />
-Ajout d'un nouvel utilisateur de votre plateforme, Filtre des listes, menu déroulant, recherche d'une personne ou d'une référence, fichiers Excel de vos données, calcul de votre prestation de nettoyage, trouvez rapidement ce que vous cherchez !
+Ajout d'un nouvel utilisateur de votre plateforme, Filtre des listes, recherche d'une personne ou d'une référence, fichiers Excel de vos données, calcul de votre prestation de nettoyage, trouvez rapidement ce que vous cherchez !

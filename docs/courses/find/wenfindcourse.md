@@ -3,7 +3,9 @@ sidebar_position: 1
 ---
 # Rechercher avec la loupe
 
-
+La loupe de recherche se situe en dessous du logo de l'entreprise, en haut à gauche de l'écran.
+Elle permet de multiples recherches.
+Les [scénarios](docs/tutorials/surfaces/building/create.md#déplacer-le-scénario) peuvent être exclus de la recherche en décochant la case "inclure les scénarios dans la recherche".
 
 ## Recherche de personne
 
