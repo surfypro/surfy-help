@@ -1,16 +1,25 @@
-#  Room Type Group Building
+# Campus
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Le campus est utilisé pour regrouper des bâtiments qui sont au même endroit.
 
 ## Propriétés de base
+
+### Address [address] {#address}
+        
 
 ### Capacité totale [totalCapacityCount] {#totalCapacityCount}
         
 La capacité totale de places est la somme du nombre de places assises et de la capacité hors assises au niveau des espaces
+### Couleur [color] {#color}
+        
+Couleur du campus
 ### Empreinte carbone [carbonFootprint] {#carbonFootprint}
         
 L'empreinte carbone est le nombre de CO2 émis
+### Nom du campus [name] {#name}
+        
+Nom du campus
 ### Nombre d'espaces [roomsCount] {#roomsCount}
         
 Le nombre total d'espaces
@@ -66,15 +75,13 @@ Le taux de poste de travail en flex est calculé en divisant le nombre de postes
         
 Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail
 
-## Entités associées (unique)
 
-### Bâtiment [building] {#building}
+
+## Entités associées (liste)
+
+### Bâtiments [buildings] {#buildings}
         
 Le bâtiment est utilisé pour regrouper les étages
-### Groupe de typologie d'espace [roomTypeGroup] {#roomTypeGroup}
-        
-
-
 
 
 

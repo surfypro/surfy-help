@@ -201,6 +201,12 @@ Bâtiments dont l'utilisateur est le propriétaire
 ### Calques d'analyse par étage [dimensionFloorUpdatedBies] {#dimensionFloorUpdatedBies}
         
 
+### Campus [campusCreatedBies] {#campusCreatedBies}
+        
+Le campus est utilisé pour regrouper des bâtiments qui sont au même endroit.
+### Campus [campusUpdatedBies] {#campusUpdatedBies}
+        
+Le campus est utilisé pour regrouper des bâtiments qui sont au même endroit.
 ### Centres de coût [costCenterCreatedBies] {#costCenterCreatedBies}
         
 Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation

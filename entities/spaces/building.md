@@ -109,10 +109,10 @@ Le ratio par poste de travail est le nombre de métres carrés dans le bâtiment
 La surface qualifiée représente l'ensemble des zones modélisées dans Surfy
 ### Taux d'occupation [occupancyRate] {#occupancyRate}
         
-Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail
+Permet de connaître le taux d'occupation des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail
 ### Taux de foisonnement [expansionRatio] {#expansionRatio}
         
-Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du  nombre de personnes affectées divisés par le nombre de postes de travail
+Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisés par le nombre de postes de travail
 ### Taux de places assises par affectations [seatsPeopleRatio] {#seatsPeopleRatio}
         
 Le nombre de places assises par personnes affectées
@@ -131,6 +131,9 @@ Taux de postes de travail partagés par au moins 2 personnes par rapport à l'en
 ### Bâtiment d'origine [building] {#building}
         
 Le bâtiment d'origne ou de référence est utilisé dans le cadre de la création de scénarios, il permet d'identifier le bâtiment d'origine depuis lequel le bâtiment a été crée
+### Campus [campus] {#campus}
+        
+Le campus est utilisé pour regrouper des bâtiments qui sont au même endroit.
 ### Type de bâtiment [buildingType] {#buildingType}
         
 

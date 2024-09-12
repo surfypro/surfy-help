@@ -17,6 +17,10 @@
                 "label": "Entreprise",
                 "description": null
             },
+            "campus": {
+                "label": "Campus",
+                "description": "Le campus est utilisé pour regrouper des bâtiments qui sont au même endroit."
+            },
             "roomConnectorType": {
                 "label": " Room Connector Type",
                 "description": null
@@ -587,6 +591,144 @@
                     "description": "Le bâtiment est utilisé pour regrouper les étages"
                 }
             },
+            "campus": {
+                "id": {
+                    "label": "Identifiant du campus",
+                    "description": null
+                },
+                "name": {
+                    "label": "Nom du campus",
+                    "description": "Nom du campus"
+                },
+                "color": {
+                    "label": "Couleur",
+                    "description": "Couleur du campus"
+                },
+                "address": {
+                    "label": "Address",
+                    "description": null
+                },
+                "roomsArea": {
+                    "label": "Surface qualifiée",
+                    "description": "La surface qualifiée est la somme des surfaces des espaces"
+                },
+                "roomsCount": {
+                    "label": "Nombre d'espaces",
+                    "description": "Le nombre total d'espaces"
+                },
+                "workplacesCount": {
+                    "label": "Nombre de postes de travail",
+                    "description": "Le nombre total de postes de travail dans les espaces"
+                },
+                "workplacesRatio": {
+                    "label": "Ratio postes de travail",
+                    "description": "Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail"
+                },
+                "peopleCount": {
+                    "label": "People Count",
+                    "description": null
+                },
+                "seatsCount": {
+                    "label": "Nombre de places assises",
+                    "description": "Le nombre total de places assises"
+                },
+                "peopleRatio": {
+                    "label": "Ratio d'occupation",
+                    "description": "Le ratio d'occupation est le nombre de métres carrés divisé par le nombre de personnes affectées soit directement dans les espaces, soit via un poste de travail"
+                },
+                "occupancyRate": {
+                    "label": "Taux d'occupation",
+                    "description": "Permet de connaître le taux d'occupation des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
+                },
+                "expansionRatio": {
+                    "label": "Taux de foisonnement",
+                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisés par le nombre de postes de travail"
+                },
+                "freeWorkplacesCount": {
+                    "label": "Nombre de postes libres",
+                    "description": "Nombre total de postes libres"
+                },
+                "flexWorkplacesCount": {
+                    "label": "Nombre de postes flex",
+                    "description": "Nombre total de postes flex"
+                },
+                "sharedWorkplacesCount": {
+                    "label": "Nombre de postes de travail partagés",
+                    "description": "Nombre total de postes de travail partagés par au moins 2 personnes"
+                },
+                "sharedWorkplacesRatio": {
+                    "label": "Taux de postes de travail partagés",
+                    "description": "Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail"
+                },
+                "transitWorkplacesCount": {
+                    "label": "Nombre de postes de travail de passage",
+                    "description": "Nombre de postes de travail de passage, ces postes ne sont pas comptabilisés dans les postes libres et ne sont pas en flex"
+                },
+                "flexRatio": {
+                    "label": "Taux de postes de travail en flex",
+                    "description": "Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail"
+                },
+                "seatsPeopleRatio": {
+                    "label": "Taux de places assises par affectations",
+                    "description": "Le nombre de places assises par personnes affectées"
+                },
+                "totalPeopleCount": {
+                    "label": "Nombre total d'affectations",
+                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
+                },
+                "carbonFootprint": {
+                    "label": "Empreinte carbone",
+                    "description": "L'empreinte carbone est le nombre de CO2 émis"
+                },
+                "totalCapacityCount": {
+                    "label": "Capacité totale",
+                    "description": "La capacité totale de places est la somme du nombre de places assises et de la capacité hors assises au niveau des espaces"
+                },
+                "totalCapacityWorkplaceCountRatio": {
+                    "label": "Taux de places assises par postes de travail",
+                    "description": "Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail"
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "buildings": {
+                    "label": "Bâtiments",
+                    "description": "Le bâtiment est utilisé pour regrouper les étages"
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
             "roomConnectorType": {
                 "id": {
                     "label": "Id",
@@ -695,6 +837,14 @@
                 "externalId": {
                     "label": "Clé externe",
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "campusCreatedBies": {
+                    "label": "Campus",
+                    "description": "Le campus est utilisé pour regrouper des bâtiments qui sont au même endroit."
+                },
+                "campusUpdatedBies": {
+                    "label": "Campus",
+                    "description": "Le campus est utilisé pour regrouper des bâtiments qui sont au même endroit."
                 },
                 "roomConnectorCreatedBies": {
                     "label": "Connecteurs d'espace",
@@ -2066,11 +2216,11 @@
                 },
                 "occupancyRate": {
                     "label": "Taux d'occupation",
-                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
+                    "description": "Permet de connaître le taux d'occupation des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
                 },
                 "expansionRatio": {
                     "label": "Taux de foisonnement",
-                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du  nombre de personnes affectées divisés par le nombre de postes de travail"
+                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisés par le nombre de postes de travail"
                 },
                 "freeWorkplacesCount": {
                     "label": "Nombre de postes libres",
@@ -2167,6 +2317,14 @@
                 "jupUiLayout": {
                     "label": "Vision du plan par défaut",
                     "description": "À la première ouverture d'un plan de ce bâtiment, la vision par défaut sera sélectionné, suite à la première ouverture, ce sera la vision encours qui sera appliqué"
+                },
+                "campusId": {
+                    "label": "Identifiant du campus",
+                    "description": "Le campus est utilisé pour regrouper des bâtiments qui sont au même endroit."
+                },
+                "campus": {
+                    "label": "Campus",
+                    "description": "Le campus est utilisé pour regrouper des bâtiments qui sont au même endroit."
                 },
                 "buildingId": {
                     "label": "Identifiant du bâtiment de référence",
@@ -2498,7 +2656,7 @@
                 },
                 "occupancyRate": {
                     "label": "Taux d'occupation",
-                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
+                    "description": "Permet de connaître le taux d'occupation des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
                 },
                 "expansionRatio": {
                     "label": "Taux de foisonnement",
@@ -2956,7 +3114,7 @@
                 },
                 "occupancyRate": {
                     "label": "Taux d'occupation",
-                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
+                    "description": "Permet de connaître le taux d'occupation des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
                 },
                 "expansionRatio": {
                     "label": "Taux de foisonnement",
@@ -3094,7 +3252,7 @@
                 },
                 "occupancyRate": {
                     "label": "Taux d'occupation",
-                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
+                    "description": "Permet de connaître le taux d'occupation des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
                 },
                 "expansionRatio": {
                     "label": "Taux de foisonnement",
@@ -3314,7 +3472,7 @@
                 },
                 "occupancyRate": {
                     "label": "Taux d'occupation",
-                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
+                    "description": "Permet de connaître le taux d'occupation des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
                 },
                 "expansionRatio": {
                     "label": "Taux de foisonnement",
@@ -3452,7 +3610,7 @@
                 },
                 "occupancyRate": {
                     "label": "Taux d'occupation",
-                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
+                    "description": "Permet de connaître le taux d'occupation des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
                 },
                 "expansionRatio": {
                     "label": "Taux de foisonnement",
@@ -3602,11 +3760,11 @@
                 },
                 "occupancyRate": {
                     "label": "Taux d'occupation",
-                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisé par le nombre de postes de travail"
+                    "description": "Permet de connaître le taux d'occupation des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
                 },
                 "expansionRatio": {
                     "label": "Taux de foisonnement",
-                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisé par le nombre de postes de travail"
+                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisés par le nombre de postes de travail"
                 },
                 "freeWorkplacesCount": {
                     "label": "Nombre de postes libres",
@@ -4368,7 +4526,7 @@
                 },
                 "occupancyRate": {
                     "label": "Taux d'occupation",
-                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
+                    "description": "Permet de connaître le taux d'occupation des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
                 },
                 "expansionRatio": {
                     "label": "Taux de foisonnement",
@@ -4518,7 +4676,7 @@
                 },
                 "occupancyRate": {
                     "label": "Taux d'occupation",
-                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
+                    "description": "Permet de connaître le taux d'occupation des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
                 },
                 "expansionRatio": {
                     "label": "Taux de foisonnement",
@@ -5766,7 +5924,7 @@
                 },
                 "occupancyRate": {
                     "label": "Taux d'occupation",
-                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
+                    "description": "Permet de connaître le taux d'occupation des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
                 },
                 "expansionRatio": {
                     "label": "Taux de foisonnement",
@@ -5904,7 +6062,7 @@
                 },
                 "occupancyRate": {
                     "label": "Taux d'occupation",
-                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
+                    "description": "Permet de connaître le taux d'occupation des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
                 },
                 "expansionRatio": {
                     "label": "Taux de foisonnement",
@@ -6042,7 +6200,7 @@
                 },
                 "occupancyRate": {
                     "label": "Taux d'occupation",
-                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
+                    "description": "Permet de connaître le taux d'occupation des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
                 },
                 "expansionRatio": {
                     "label": "Taux de foisonnement",
@@ -6180,7 +6338,7 @@
                 },
                 "occupancyRate": {
                     "label": "Taux d'occupation",
-                    "description": "Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
+                    "description": "Permet de connaître le taux d'occupation des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail"
                 },
                 "expansionRatio": {
                     "label": "Taux de foisonnement",
