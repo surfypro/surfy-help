@@ -67,7 +67,7 @@ Le ratio postes de travail est le nombre de métres carrés dans l'étage divis�
 La surface qualifiée est la somme des surfaces des espaces
 ### Taux d'occupation [occupancyRate] {#occupancyRate}
         
-Permet de connaître le taux d'usage des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail
+Permet de connaître le taux d'occupation des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail
 ### Taux de foisonnement [expansionRatio] {#expansionRatio}
         
 Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisés par le nombre de postes de travail

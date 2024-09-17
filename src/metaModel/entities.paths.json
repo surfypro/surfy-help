@@ -22,6 +22,7 @@
         "room": "/entities/spaces",
         "floor": "/entities/spaces",
         "building": "/entities/spaces",
+        "campus": "/entities/spaces",
         "structure": "/entities/spaces",
         "mapScale": "/entities/spaces",
         "roomPoint": "/entities/spaces/spacePoints",
