@@ -34,7 +34,7 @@ On peut alors :
 -   ajouter un calque au type de calque concerné en cliquant sur "Créer un calque d'analyse"
 -   modifier les calques associés au type de calque en cliquant sur l'icône en début de ligne puis "Modifier le calque d'analyse XXX"
 -   supprimer un calque d'analyse associé au type de calque en cochant la case en début de ligne puis "supprimer" par la "Poubelle" en haut de page
--   associer un ou plusieurs bâtiments afin de créer un type de calque dédié à l'affectation
+-   associer ou retirer un ou plusieurs bâtiments afin de créer un type de calque dédié à l'affectation sur le bon bâtiment en cliquant sur "Créer  un calque d'affectation du bâtiment"
 -   "sauvegarder" les modifications du type de calque.
 
 Après rechargement des données (icône en haut à droite de l'écran) et rafraichissement (F5), les modifications sont visibles sur les plans et les données des calques.

@@ -31,6 +31,12 @@ Pour associer le type de calque à des bâtiments, en vue de créer des calques 
 -   choisir le ou les bâtiments à associer aux calques d'affectation (ex: "bâtiment A")
 -   sauvegarder les modifications
 
+:::tip BON A SAVOIR
+Seuls les "bâtiments principaux" peuvent être accessibles à la réservation de poste de travail via un calque d'affectation.
+A l'inverse, déplacer sur la page d'accueil un scénario contenant un calque d'affectation issu de son bâtiment d'origine donne la possibilité de réserver sur les quartiers de ce bâtiment et risque de créer des confusions.
+Il faut dans ce cas retirer l'association de ce bâtiment au calque d'affectation correspondant afin qu'il n'intervienne pas dans la réservation sur le bâtiment principal.
+:::
+
 ## Créer et associer un calque d'affectation à un type de calque
 
 Une fois que le type de calque est créé et associé à un ou des bâtiments, on peut créer et lui associer un calque d'affectation:

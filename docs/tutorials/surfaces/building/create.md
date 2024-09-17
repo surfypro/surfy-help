@@ -69,3 +69,9 @@ Le bâtiment A est maintenant placé "derrière" le bâtiment B.
 Le bâtiment B incrémente le nombre de ses scénarios sur l'icône "les scénarios et projets du bâtiment B" en bas à droite de sa fiche.
 
 On peut donc créer une arborescence des bâtiments en organisant ces bâtiments sur plusieurs niveaux.
+
+:::tip BON A SAVOIR
+Si le scénario a été créé depuis un bâtiment possédant un calque d'affectation, ce scénario n'intervient pas dans la possibilité de réserver un poste de travail tant qu'il reste en scénario derrière un bâtiment principal. Seuls les "bâtiments principaux" peuvent être accessibles à la réservation de poste de travail via un calque d'affectation.
+A l'inverse, déplacer sur la page d'accueil un scénario contenant un calque d'affectation issu de son bâtiment d'origine donne la possibilité de réserver sur les quartiers de ce bâtiment et risque de créer des confusions.
+Il faut dans ce cas retirer l'association de ce bâtiment au calque d'affectation correspondant afin qu'il n'intervienne pas dans la réservation sur le bâtiment principal.
+:::
