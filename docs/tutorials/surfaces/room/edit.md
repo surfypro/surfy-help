@@ -19,7 +19,7 @@ Pour modifier un espace dans Surfy,
 -   On peut séparer complètement les deux espaces en cliquant sur "séparer le sommet" en deux afin d'avoir un sommet sur l'espace de gauche et un sommet sur l'espace de droite.
 -   pour regrouper plusieurs sommets en un seul, sélectionner les sommets avec "shift" et cliquer sur "fusionner les sommets".
 
-## Qualifier un espace
+## Qualifier un espace ou modifier les informations d'un espace
 
 -   une fois l'espace créé, on peut le "modifier" pour lui donner un nom, une capacité éventuelle, une organisation, une typologie de l'espace, un centre de coût.
 -   "sauvegarder" les informations. 
