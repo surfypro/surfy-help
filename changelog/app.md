@@ -5,7 +5,7 @@
 - Mise en place des campus permettant de regrouper plusieurs bâtiments
     - Ajout d'une icône permettant d'avoir la vue groupée des bâtiments dans les raccourcis du haut du menu
 - Ajout de la politique de confidentialité dans la page de login
-- Dans le mode plan en 2d, les info bulles apparaissent maintenant à gauche des formes pour éviter l'effet de tremplement de l'écran
+- Dans le mode plan en 2d, les info bulles apparaissent maintenant à gauche des formes pour éviter l'effet de tremblement de l'écran
 - Dans l'association automatique à une plateforme via les règles d'authentification, seule le type de connection de la règle permet l'association avec la plateforme 
 - Les regroupements de typologies d'espaces ont maintenant, depuis l'onglet du plan, une aide qui rappelle les typologies incluses ou non dans le regroupement.
 -->
