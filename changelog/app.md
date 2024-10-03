@@ -4,7 +4,7 @@
 
 - Les bâtiments peuvent être maintenant recherchés dans la barre de recherche globale
 - Mise en place des campus permettant de regrouper plusieurs bâtiments
-    - Ajout d'une icône permettant d'avoir la vue groupée des bâtiments dans les raccourcis du haut du menu
+- Ajout d'une icône permettant d'avoir la vue groupée des bâtiments dans les raccourcis du haut du menu
 - Ajout de la politique de confidentialité dans la page de login -->
 
 ## 6 Septembre 2024  - v3.4.13 ## 
