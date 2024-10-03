@@ -1,11 +1,12 @@
 # Nouveautés
 
-## 30 Septembre 2024  - v3.4.22 ## 
+<!-- ## 30 Septembre 2024  - v3.4.22 ## 
 - Les bâtiments peuvent être maintenant recherchés dans la barre de recherche globale
 - Mise en place des campus permettant de regrouper plusieurs bâtiments
     - Ajout d'une icône permettant d'avoir la vue groupée des bâtiments dans les raccourcis du haut du menu
 - Ajout de la politique de confidentialité dans la page de login
 - Dans le mode plan en 2d, les info bulles apparaissent maintenant à gauche des formes pour éviter l'effet de tremplement de l'écran
+- Dans l'association automatique à une plateforme via les règles d'authentification, seule le type de connection de la règle permet l'association avec la plateforme -->
 
 ## 6 Septembre 2024  - v3.4.13 ## 
 
