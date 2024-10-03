@@ -1,7 +1,6 @@
 # Nouveautés
 
-<!-- ## x Septembre 2024  - v3.4.19 ## 
-
+<!-- ## 30 Septembre 2024  - v3.4.22 ## 
 - Les bâtiments peuvent être maintenant recherchés dans la barre de recherche globale
 - Mise en place des campus permettant de regrouper plusieurs bâtiments
 - Ajout d'une icône permettant d'avoir la vue groupée des bâtiments dans les raccourcis du haut du menu
