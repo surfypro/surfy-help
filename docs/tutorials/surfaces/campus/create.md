@@ -31,3 +31,16 @@ Si on associe un bâtiment à un campus, son ancienne association avec un autre 
 :::
 
 
+## Visualiser les bâtiments par campus
+
+Pour visualiser les bâtiments regroupés par campus,
+
+-   cliquer sur l'icône "Vue groupée des bâtiments" en haut à gauche de l'écran, sous le logo de l'entreprise.
+
+Les bâtiments apparaissent par campus, avec possibilité d'accès direct à l'étage d'un bâtiment quelconque du campus.
+
+Les bâtiments non associés à un campus ont leurs accès directs aux étages.
+
+Les informations suivantes sont disponibles :
+-   Les mesures et indicateurs dans les bâtiments simples
+-   Le nombre de bâtiments regroupés dans le campus, avec accès direct aux étages de chaque bâtiment
