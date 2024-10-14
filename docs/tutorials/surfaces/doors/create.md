@@ -129,7 +129,7 @@ Pour créer un connecteur d'espace, depuis le menu de gauche,
 
 La liste des espaces connectés par le connecteur d'espace s'affiche en bas de page.
 
-:::Warning ATTENTION
+:::warning ATTENTION
 Cocher et supprimer la ligne d'un espace sur cette page supprime l'espace et tout son contenu !
 Pour retirer un connecteur à un espace, il faut modifier l'espace en retirant le connecteur depuis la fiche de l'espace.
 :::
