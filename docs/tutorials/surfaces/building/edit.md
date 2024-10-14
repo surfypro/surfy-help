@@ -31,6 +31,7 @@ Les informations suivantes sont déclaratives et optionnelles :
 -   Type de bâtiment : locataire ou propriétaire, les informations à renseigner seront différentes.
 -   Utilisateur propriétaire du bâtiment : par défaut, permet de connaitre la personne ayant créé le bâtiment.
 -   Vision du plan par défaut : on peut choisir une vision pré programmée par défaut pour l'accès aux plans.
+-   Campus : permet d'associer ou de retirer l'association d'un bâtiment à un campus.
 -   Bâtiment d'origine : permet d'organiser les scénarios, en les "cachant" derrière leur "bâtiment d'origine". En l'absence de "bâtiment d'origine", le bâtiment concerné est présent sur la page d'accueil et devient un "Bâtiment principal". Les scénarios sont accessibles en cliquant sur l'icône en bas à droite de la fiche du bâtiment d'origine.
 -   Cliquer sur "sauvegarder" pour enregistrer les modifications du bâtiment.
 
