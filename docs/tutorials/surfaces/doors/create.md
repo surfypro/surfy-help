@@ -123,6 +123,9 @@ Pour créer un connecteur d'espace, depuis le menu de gauche,
 -   renseigner le nom (ex: Escalier C) et le type de connecteur d'espace (Escalier)
 -   renseigner le temps d'attente moyen et le temps de transfert entre chaque étage
 -   valider la création
+
+Pour associer le connecteur d'espace aux espaces depuis la fiche du connecteur,
+
 -   cliquer sur le menu contextuel (case grise dans le menu de gauche, sous la recherche), puis sur "Modifier le connecteur d'espace XXX"
 -   cliquer sur l'onglet "Associer un espace"
 -   rechercher et sélectionner les espaces à connecter en validant chacun d'eux
@@ -134,7 +137,17 @@ Cocher et supprimer la ligne d'un espace sur cette page supprime l'espace et tou
 Pour retirer un connecteur à un espace, il faut modifier l'espace en retirant le connecteur depuis la fiche de l'espace.
 :::
 
-### Appliquer les connecteurs d'espace
+### Associer les connecteurs d'espace aux espaces depuis le plan
+
+Pour associer un connecteur d'espace à un espace depuis le plan de l'étage,
+
+-   cliquer dans l'espace à associer
+-   dans la fiche de l'espace, cliquer sur "Modifier" afin de modifier les informations de l'espace
+-   cliquer sur le crayon face à "Connecteur d'espace"
+-   choisir le connecteur appropriée à l'espace. Le type de connecteur d'espace est indiqué entre crochet
+-   sauvegarder les modifications
+
+L'espace associé permet de le connecter aux autres espaces ayant le même connecteur associé.
 
 ## Qualification d'un segment simple en cloison simple
 
