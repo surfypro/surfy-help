@@ -106,7 +106,7 @@ Le connecteur d'espace permet à deux espaces non contigüs de communiquer virtu
 ### Le type de connecteur d'espace 
 
 Un connecteur d'espace est associé à un type de connecteur d'espace : Ascenseur ou Escalier.
-Pour créer un type de connecteur d'espace supplémentaire (navette,...) depuis le menu de gauche,
+Pour créer un type de connecteur d'espace supplémentaire (ex: Navette,...) depuis le menu de gauche,
 
 -   cliquer sur "Administration", "Connecteurs" puis "Room Connector Types" et "Créer RoomConnectorType"
 -   renseigner le nom du type de connecteur (ex: Navette)
