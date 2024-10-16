@@ -5,6 +5,10 @@ authors: [vincent]
 tags: [features]
 ---
 
+Les nouveautés d'Octobre 2023
+
+<!-- truncate -->
+
 # Les nouveautés d'Octobre 2023
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0ES_njXDAec?si=OnVi2hSTOHD8js4j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
