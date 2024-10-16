@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Configurer l'itinéraire point à point
+# Configurer la recherche d'itinéraire
 
 Un itinéraire point à point permet d'obtenir le cheminement d'un point d'origine vers un point d'arrivée dans Surfy.
 
