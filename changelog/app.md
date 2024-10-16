@@ -2,6 +2,12 @@
 
 <!-- ## x Octobre 2024  - v3.4.23 ## 
 - Changement des palettes pour changer les couleurs
+- Ajout des couleurs dans la page de la hiérarchie des organisations
+- La vision du plan "Directions" affiche maintenant le nom du service sur le plan et n'affiche plus la surface
+- Ajout d'un nom d'affichage pour les espaces, utile pour les nom d'affichage des salles de réunions par exemple
+- Mise en place de la page Salle de réunion permettant de voir toutes les salles de réunions rapidement
+    - Les salles de réunions affichés sont les types d'espaces dans un groupe de type d'espaces avec le code MEETING
+- Lors de la création d'une entité il y a maintenant un mode permettant de modifier la fiche après la création. Ce mode est maintenant le mode par defaut.
 -->
 
 ## 3 Octobre 2024  - v3.4.22 ## 

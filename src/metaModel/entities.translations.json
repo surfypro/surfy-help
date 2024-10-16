@@ -765,7 +765,7 @@
                     "description": null
                 },
                 "waitTime": {
-                    "label": "Temps d'attente moyenne",
+                    "label": "Temps d'attente moyen",
                     "description": "Le temps d'attente moyenne avant que le connecteur d'espace soit disponible"
                 },
                 "timePerFloor": {
@@ -1829,6 +1829,10 @@
                 "name": {
                     "label": "Nom de la famille de types de l'objet",
                     "description": "Le nom de la famille permet de l'identifier, ce nom est utilisé pour regrouper les types d'objet"
+                },
+                "code": {
+                    "label": "Code",
+                    "description": null
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -3721,6 +3725,10 @@
                 "name": {
                     "label": "Nom de l'espace",
                     "description": "Le nom d'espace est utilisé pour le définir et le retrouver facilement."
+                },
+                "prettyName": {
+                    "label": "Nom d'affichage",
+                    "description": "Permet d'avoir un nom d'affichage en plus du nom technique de l'espace, par exemple pour les salles de réunions"
                 },
                 "area": {
                     "label": "Surface",

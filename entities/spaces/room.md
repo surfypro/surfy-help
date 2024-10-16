@@ -23,6 +23,9 @@ L'empreinte carbone est le nombre de CO2 émis
 ### Information supplémentaire [info] {#info}
         
 Permet de conserver des informations supplémentaires de type texte sur l'espace
+### Nom d'affichage [prettyName] {#prettyName}
+        
+Permet d'avoir un nom d'affichage en plus du nom technique de l'espace, par exemple pour les salles de réunions
 ### Nom de l'espace [name] {#name}
         
 Le nom d'espace est utilisé pour le définir et le retrouver facilement.

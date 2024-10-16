@@ -8,7 +8,7 @@ Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces d
 ### Nom du connecteur d'espace [name] {#name}
         
 
-### Temps d'attente moyenne [waitTime] {#waitTime}
+### Temps d'attente moyen [waitTime] {#waitTime}
         
 Le temps d'attente moyenne avant que le connecteur d'espace soit disponible
 ### Temps entre chaque étage [timePerFloor] {#timePerFloor}
