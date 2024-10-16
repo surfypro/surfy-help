@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Un itinéraire point à point permet d'obtenir le cheminement d'un point d'origine vers un point d'arrivée dans Surfy.
 
-## la fonctionnalité Pathfinding
+## La fonctionnalité Pathfinding
 
 Pour obtenir un itinéraire point à point dans Surfy, la fonctionnalité "Pathfinding" doit être validée.
 Une fois cette fonctionnalité validée, une icône verticale "serpentin" permettant de "Trouver son chemin dans les espaces" est disponible en fin de liste des icônes verticales.
@@ -28,7 +28,7 @@ La fonctionnalité "Pathfinding" est opérationnelle.
 
 Pour utiliser l'itinéraire point à point, il est nécessaire de [créer les portes et passages](/docs/tutorials/surfaces/doors/create.md) entre les différents espaces.
 
-## Le connecteur d'espaces
+## Le connecteur d'espace
 
 Le connecteur d'espace permet à deux espaces non contigüs de communiquer virtuellement, par exemple entre deux niveaux via les ascenseurs ou les escaliers. Cette donnée est utilisée dans l'itinéraire point à point pour changer de niveau ou de bâtiment.
 
@@ -41,7 +41,7 @@ Pour créer un type de connecteur d'espace supplémentaire (ex: Navette,...) dep
 -   renseigner le nom du type de connecteur (ex: Navette)
 -   valider la création
 
-### Configurer le connecteur d'espaces
+### Configurer le connecteur d'espace
 
 On définit un connecteur d'espace pour un escalier ou un ascenseur déservant plusieurs niveaux, mais également pour un trajet non identifié dans Surfy : Taxi, navette, téléphérique, ...
 La durée du transfert par le connecteur d'espace est prise en compte dans le calcul total de la durée de l'itinéraire.
