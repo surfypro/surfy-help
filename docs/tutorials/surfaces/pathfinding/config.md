@@ -16,7 +16,7 @@ Pour valider la fonctionnalité "Pathfinding", depuis le menu de gauche,
 -   cliquer sur "Administration" puis "Entreprises" et "Vue des entreprises en tuile"
 -   cliquer sur l'icône en bout de ligne de l'entreprise pour "Voir plus d'option pour l'entreprise XXX"
 -   cliquer sur "Modifier l'entreprise XXX"
--   cocher la case "Enable Pathfinding"
+-   dans la fiche de l'entreprise, cocher la case "Enable Pathfinding"
 -   sauvegarder les modifications.
 
 Cliquer sur le logo de l'entreprise pour revenir sur la page d'accueil.
@@ -43,7 +43,7 @@ Pour créer un type de connecteur d'espace supplémentaire (ex: Navette,...) dep
 
 ### Configurer le connecteur d'espace
 
-On définit un connecteur d'espace pour un escalier ou un ascenseur déservant plusieurs niveaux, mais également pour un trajet non identifié dans Surfy : Taxi, navette, téléphérique, ...
+On définit un connecteur d'espace pour un escalier ou un ascenseur desservant plusieurs niveaux, mais également pour un trajet non identifié dans Surfy : Taxi, navette, téléphérique, ...
 La durée du transfert par le connecteur d'espace est prise en compte dans le calcul total de la durée de l'itinéraire.
 
 Pour créer un connecteur d'espace, depuis le menu de gauche,
@@ -72,11 +72,11 @@ Pour associer un connecteur d'espace à un espace depuis le plan de l'étage,
 
 -   cliquer dans l'espace à associer
 -   dans la fiche de l'espace, cliquer sur "Modifier" afin de modifier les informations de l'espace
--   cliquer sur le crayon face à "Connecteur d'espace"
--   choisir le connecteur appropriée à l'espace. Le type de connecteur d'espace est indiqué entre crochet
+-   cliquer sur l'icône "crayon" face à "Connecteur d'espace"
+-   choisir le connecteur appropriée à l'espace. Le type de connecteur d'espace est indiqué entre crochets
 -   sauvegarder les modifications
 
-L'espace associé permet de le connecter aux autres espaces ayant le même connecteur associé.
+L'espace associé est connecté aux autres espaces ayant le même connecteur associé.
 
 
 Le changement de niveau au cours d'un itinéraire est en cours de développement.
