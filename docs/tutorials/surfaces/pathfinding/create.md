@@ -56,3 +56,5 @@ Cliquer sur cette case permet de générer une toile d'araignée et un ensemble 
 Une fois le graph généré, déplacer la souris sur le plan permet d'afficher l'itinéraire depuis le point d'origine vers l'emplacement de la souris (point d'arrivée). La distance et le temps nécessaire sont indiqués dans l'info bulle.
 
 ### Changer de niveau dans l'itinéraire point à point
+
+Le changement de niveau au cours d'un itinéraire est en cours de développement.
