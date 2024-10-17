@@ -15,7 +15,7 @@ La recherche sur les personnes peut utiliser plusieurs critères :
 -   Recherche par matricule
 -   Recherche par affectation
 -   Recherche par objet associé
--   Recherche par hiérarchie
+-   Recherche par relation entre personnes
 -   Recherche par identifiant
 
 
