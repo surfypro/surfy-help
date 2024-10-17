@@ -2,6 +2,7 @@
   "label": "Les Calques d'affectation",
   "position": 7,
   "link": {
+    "slug": "dimensiontypetobuilding",
     "type": "generated-index",
     "description": "Tout savoir sur les calques d'affectation"
   }
