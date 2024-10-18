@@ -2,6 +2,7 @@
   "label": "Les Affectations",
   "position": 5,
   "link": {
+    "slug": "affectations",
     "type": "generated-index",
     "description": "Tout savoir sur les affectations"
   }

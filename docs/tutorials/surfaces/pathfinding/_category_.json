@@ -2,6 +2,7 @@
   "label": "L'Itinéraire point à point",
   "position": 9,
   "link": {
+    "slug": "pathfinding",
     "type": "generated-index",
     "description": "Tout comprendre sur l'itinéraire point à point"
   }

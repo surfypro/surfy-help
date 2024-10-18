@@ -2,6 +2,7 @@
   "label": "Le Mobilier",
   "position": 2,
   "link": {
+    "slug": "objects",
     "type": "generated-index",
     "description": "Tout savoir sur le mobilier"
   }
