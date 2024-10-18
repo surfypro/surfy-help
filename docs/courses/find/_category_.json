@@ -2,6 +2,7 @@
   "label": "Rechercher dans Surfy",
   "position": 2,
   "link": {
+    "slug": "find",
     "type": "generated-index",
     "description": "Tout savoir sur la recherche d'éléments dans Surfy"
   }

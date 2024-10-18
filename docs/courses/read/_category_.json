@@ -2,6 +2,7 @@
   "label": "Le mode Lecteur",
   "position": 1,
   "link": {
+    "slug": "reader",
     "type": "generated-index",
     "description": "Les fonctionnalités du mode Lecteur"
   }

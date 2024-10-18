@@ -2,6 +2,7 @@
   "label": "La gestion des coûts",
   "position": 5,
   "link": {
+    "slug": "rebillcourse",
     "type": "generated-index",
     "description": "Les étapes pour gérer les coûts"
   }
