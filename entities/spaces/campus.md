@@ -20,6 +20,9 @@ L'empreinte carbone est le nombre de CO2 émis
 ### Nom du campus [name] {#name}
         
 Nom du campus
+### Nombre d'affectations [peopleCount] {#peopleCount}
+        
+
 ### Nombre d'espaces [roomsCount] {#roomsCount}
         
 Le nombre total d'espaces
@@ -44,9 +47,6 @@ Nombre total de postes libres
 ### Nombre total d'affectations [totalPeopleCount] {#totalPeopleCount}
         
 Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail
-### People Count [peopleCount] {#peopleCount}
-        
-
 ### Ratio d'occupation [peopleRatio] {#peopleRatio}
         
 Le ratio d'occupation est le nombre de métres carrés divisé par le nombre de personnes affectées soit directement dans les espaces, soit via un poste de travail
