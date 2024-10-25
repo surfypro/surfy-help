@@ -5,6 +5,9 @@ Le centre de coût permet de repartir les espaces dynamiquement pour la refactur
 
 ## Propriétés de base
 
+### Code [code] {#code}
+        
+
 ### Couleur [color] {#color}
         
 

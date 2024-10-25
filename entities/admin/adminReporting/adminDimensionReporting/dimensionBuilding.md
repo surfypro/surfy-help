@@ -11,6 +11,9 @@ La capacité totale de places est la somme du nombre de places assises et de la 
 ### Empreinte carbone [carbonFootprint] {#carbonFootprint}
         
 L'empreinte carbone est le nombre de CO2 émis
+### Nombre d'affectations [peopleCount] {#peopleCount}
+        
+
 ### Nombre d'affectations directement à ce calque d'affectation [dimensionPeopleCount] {#dimensionPeopleCount}
         
 Le nombre de personnes qui sont affectées à ce calque d'affectation pour l'ensemble du bâtiment
@@ -38,9 +41,6 @@ Nombre total de postes libres
 ### Nombre total d'affectations [totalPeopleCount] {#totalPeopleCount}
         
 Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation
-### People Count [peopleCount] {#peopleCount}
-        
-
 ### Ratio d'occupation [peopleRatio] {#peopleRatio}
         
 Le ratio d'occupation est le nombre de métres carrés divisé par le nombre de personnes affectées soit directement dans les espaces, soit via un poste de travail

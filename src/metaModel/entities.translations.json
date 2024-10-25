@@ -326,7 +326,7 @@
                 "description": null
             },
             "jupRoleToJupUiOption": {
-                "label": "Association rôle aux visions du plan",
+                "label": "Association rôle aux options d'interface",
                 "description": null
             },
             "jupRoleToJupUiOperation": {
@@ -625,7 +625,7 @@
                     "description": "Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail"
                 },
                 "peopleCount": {
-                    "label": "People Count",
+                    "label": "Nombre d'affectations",
                     "description": null
                 },
                 "seatsCount": {
@@ -3105,7 +3105,7 @@
                     "description": "Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail"
                 },
                 "peopleCount": {
-                    "label": "People Count",
+                    "label": "Nombre d'affectations",
                     "description": null
                 },
                 "seatsCount": {
@@ -3243,7 +3243,7 @@
                     "description": "Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail"
                 },
                 "peopleCount": {
-                    "label": "People Count",
+                    "label": "Nombre d'affectations",
                     "description": null
                 },
                 "seatsCount": {
@@ -3384,6 +3384,10 @@
                     "label": "Distribuer par bâtiment",
                     "description": "Répartir au prorata l'espace utilisé par ce centre de coût dans le bâtiment sur les autres centres de coût dans le bâtiment"
                 },
+                "code": {
+                    "label": "Code",
+                    "description": null
+                },
                 "createdAt": {
                     "label": "Date de création",
                     "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
@@ -3463,7 +3467,7 @@
                     "description": "Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail"
                 },
                 "peopleCount": {
-                    "label": "People Count",
+                    "label": "Nombre d'affectations",
                     "description": null
                 },
                 "seatsCount": {
@@ -3601,7 +3605,7 @@
                     "description": "Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail"
                 },
                 "peopleCount": {
-                    "label": "People Count",
+                    "label": "Nombre d'affectations",
                     "description": null
                 },
                 "seatsCount": {
@@ -4671,7 +4675,7 @@
                     "description": "Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail"
                 },
                 "peopleCount": {
-                    "label": "People Count",
+                    "label": "Nombre d'affectations",
                     "description": null
                 },
                 "seatsCount": {
@@ -5919,7 +5923,7 @@
                     "description": "Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail"
                 },
                 "peopleCount": {
-                    "label": "People Count",
+                    "label": "Nombre d'affectations",
                     "description": null
                 },
                 "seatsCount": {
@@ -6057,7 +6061,7 @@
                     "description": "Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail"
                 },
                 "peopleCount": {
-                    "label": "People Count",
+                    "label": "Nombre d'affectations",
                     "description": null
                 },
                 "seatsCount": {
@@ -6195,7 +6199,7 @@
                     "description": "Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail"
                 },
                 "peopleCount": {
-                    "label": "People Count",
+                    "label": "Nombre d'affectations",
                     "description": null
                 },
                 "seatsCount": {
@@ -6333,7 +6337,7 @@
                     "description": "Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail"
                 },
                 "peopleCount": {
-                    "label": "People Count",
+                    "label": "Nombre d'affectations",
                     "description": null
                 },
                 "seatsCount": {
@@ -7349,7 +7353,7 @@
                     "description": null
                 },
                 "jupRoleToJupUiOptions": {
-                    "label": "Associations rôle aux visions du plan",
+                    "label": "Associations rôle aux options d'interface",
                     "description": null
                 },
                 "jupRoleToJupUiOperations": {
@@ -7395,7 +7399,7 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "jupRoleToJupUiOptions": {
-                    "label": "Associations rôle aux visions du plan",
+                    "label": "Associations rôle aux options d'interface",
                     "description": null
                 }
             },
