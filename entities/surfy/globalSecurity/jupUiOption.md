@@ -16,7 +16,7 @@
 
 ## Entités associées (liste)
 
-### Associations rôle aux options d'interface [jupRoleToJupUiOptions] {#jupRoleToJupUiOptions}
+### Associations rôle aux visions du plan [jupRoleToJupUiOptions] {#jupRoleToJupUiOptions}
         
 
 

@@ -137,7 +137,7 @@ Le campus est utilisé pour regrouper des bâtiments qui sont au même endroit.
 ### Type de bâtiment [buildingType] {#buildingType}
         
 
-### Utilisateur propriétaire du bâitment [userCompanyOwner] {#userCompanyOwner}
+### Utilisateur propriétaire du bâtiment [userCompanyOwner] {#userCompanyOwner}
         
 L'utilisateur propriétaire du bâtiment voit toujours le bâtiment même en présence de rôle de contenu, en cas de création de scénario, l'utilisateur qui a crée le scénario devient le propriétaire, le propriétaire peut être changé par la suite
 ### Vision du plan par défaut [jupUiLayout] {#jupUiLayout}

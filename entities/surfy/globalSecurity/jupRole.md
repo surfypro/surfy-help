@@ -31,7 +31,7 @@
 ### Associations rôle à type d'objet [jupRoleToJupObjectTypes] {#jupRoleToJupObjectTypes}
         
 
-### Associations rôle aux options d'interface [jupRoleToJupUiOptions] {#jupRoleToJupUiOptions}
+### Associations rôle aux visions du plan [jupRoleToJupUiOptions] {#jupRoleToJupUiOptions}
         
 
 ### Associations rôle aux vues d'interface [jupRoleToJupUiViews] {#jupRoleToJupUiViews}
