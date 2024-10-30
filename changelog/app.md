@@ -1,6 +1,6 @@
 # Nouveautés
 
-## x Octobre 2024  - v3.4.23 ## 
+## 29 Octobre 2024  - v3.4.32 ## 
 - Modification des palettes de choix des couleurs
 - Ajout des couleurs dans la page de la "hiérarchie des organisations"
 - La vision du plan "Directions" affiche maintenant le nom de la Direction et celui du service sur le plan
