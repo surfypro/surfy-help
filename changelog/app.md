@@ -5,6 +5,7 @@
 - Ajout des couleurs dans la page de la "hiérarchie des organisations"
 - La vision du plan "Directions" affiche maintenant le nom de la Direction et celui du service sur le plan
 - Ajout d'un "nom d'affichage" pour les espaces, utile pour afficher le nom usuel des salles de réunion par exemple
+    - Ce nom peut être recherché ou affiché sur la plan
 - Mise en place de la page "Salles de réunion" permettant de visualiser toutes les salles de réunions du bâtiment rapidement
     - Les salles de réunions affichées sont les types d'espace regroupés dans un groupe de type d'espace avec le code MEETING
 - Lors de la création d'une entité il y a maintenant un mode permettant de "modifier après la création". Le mode "modifier la fiche après la création" est le mode par defaut. Il vient se rajouter aux modes "continuer à créer" ou "ouvrir après la création".
