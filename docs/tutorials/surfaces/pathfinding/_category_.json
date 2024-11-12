@@ -1,6 +1,6 @@
 {
   "label": "L'Itinéraire point à point",
-  "position": 9,
+  "position": 10,
   "link": {
     "slug": "pathfinding",
     "type": "generated-index",
