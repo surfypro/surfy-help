@@ -1,14 +1,19 @@
 # Nouveautés
 
-<!-- ## x Octobre 2024  - v3.4.23 ## 
+## 5 Novembre 2024  - v3.4.36 ## 
+
+- Affichage en couleurs dans la boite de sélection des typologies d'espaces
+
+## 29 Octobre 2024  - v3.4.32 ## 
 - Modification des palettes de choix des couleurs
 - Ajout des couleurs dans la page de la "hiérarchie des organisations"
 - La vision du plan "Directions" affiche maintenant le nom de la Direction et celui du service sur le plan
 - Ajout d'un "nom d'affichage" pour les espaces, utile pour afficher le nom usuel des salles de réunion par exemple
+    - Ce nom peut être recherché ou affiché sur la plan
 - Mise en place de la page "Salles de réunion" permettant de visualiser toutes les salles de réunions du bâtiment rapidement
     - Les salles de réunions affichées sont les types d'espace regroupés dans un groupe de type d'espace avec le code MEETING
-- Lors de la création d'une entité il y a maintenant un mode permettant de "modifier la fiche après la création", "continuer à créer" ou "ouvrir après la création". Le mode "modifier la fiche après la création" est le mode par defaut.
--->
+- Lors de la création d'une entité il y a maintenant un mode permettant de "modifier après la création". Le mode "modifier la fiche après la création" est le mode par defaut. Il vient se rajouter aux modes "continuer à créer" ou "ouvrir après la création".
+- Mise en place des icones de fontawesome en version 6.6.0
 
 ## 3 Octobre 2024  - v3.4.22 ## 
 - Les bâtiments peuvent être maintenant recherchés dans la barre de recherche globale
@@ -18,7 +23,6 @@
 - Dans le mode plan en 2d, les info bulles apparaissent maintenant à gauche des formes pour éviter l'effet de tremblement de l'écran
 - Dans l'association automatique à une plateforme via les règles d'authentification, seule le type de connection de la règle permet l'association avec la plateforme 
 - Les regroupements de typologies d'espaces ont maintenant, depuis l'onglet du plan, une aide qui rappelle les typologies incluses ou non dans le regroupement.
-
 
 ## 6 Septembre 2024  - v3.4.13 ## 
 
