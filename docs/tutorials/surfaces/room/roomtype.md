@@ -104,3 +104,26 @@ Pour supprimer une typologie d'espace, depuis la page d'accueil :
 -   confirmer la suppression
 
 La typologie d'espace est supprimée.
+
+## Les groupes de typologies d'espace
+
+On peut regrouper plusieurs typologies dans un groupe de typologies, permettant le regroupement de plusieurs espaces de typologies différentes (exemple: tous les espaces de réunion, bulles box et salles comprises), ou l'exclusion de certaines typologies (exemple: sous-sols hors parkings)
+
+Des groupes de typologies sont proposés à l'utilisation. Depuis le menu de gauche,
+
+-   cliquer sur "Administration", "Typologies", "Typologies d'espace" puis "Groupes de typologie d'espace" et "Lister les groupes de typologie d'espace"
+-   cliquer sur l'icône en début de ligne du groupe de typologie d'espace choisi (exemple: "Espaces de réunion") pour "Modifier le groupe de typologie d'espace XXX"
+-   cliquer sur "Créer une association groupe de typologie d'espace à typologie d'espace"
+-   cliquer sur l'icône "crayon" pour ajouter une typologie d'espace au groupe (exemple: "Box de réunion")
+-   valider la création
+
+La typologie d'espace est ajoutée au groupe, et s'ajoute à la liste des typologies du groupe, en dessous de la sélection.
+
+### Visualiser les groupes de typologies :
+
+Pour obtenir les informations des groupes, depuis le plan de l'étage,
+
+-   cliquer sur l'icône verticale "Voir les indicateurs des espaces sur le plan en fonction des groupes de typologies d'espace"
+
+Les informations cumulées pour chaque groupe de typologies d'espace sont affichées en ouvrant le "papillon" en fin de ligne.
+La liste des typologies groupée s'obtient en passant la souris sur l'icône "?".

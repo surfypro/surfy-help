@@ -19,4 +19,4 @@ Le mobilier présent dans l'espace est représenté à l'identique des plans. Pa
 
 Les équipements (exemple : "Equipements de service") sont listés sous la représentation de chaque espace de réunion.
 
-Cliquer sur l'icône "carte routière" permet de "localiser l'espace sur le plan" et affiche l'espace dans son contexte sur le plan général de l'étage
+Cliquer sur l'icône "carte routière" permet de "localiser l'espace sur le plan" et affiche l'espace dans son contexte sur le plan général de l'étage.

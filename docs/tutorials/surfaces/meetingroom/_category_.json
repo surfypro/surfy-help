@@ -2,7 +2,7 @@
   "label": "Les Espaces de réunion",
   "position": 9,
   "link": {
-    "slug": "meetingroom",
+    "slug": "meetingrooms",
     "type": "generated-index",
     "description": "Gérer et visualiser les Espaces de réunion"
   }
