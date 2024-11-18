@@ -3,7 +3,7 @@
 ## 13 Novembre 2024  - v3.4.38 ## 
 
 - Amélioration du moteur 3d cuby
-    - Possiblité d'activer ou non l'affichage des étages fantômes depuis les plans 3d
+    - Possibilité d'activer ou non l'affichage des étages fantômes depuis les plans 3d
     - Le plan 3D du bâtiment sur le plan se centre mieux et possède une meilleure luminosité
     - Les espaces entre les étages prennent en compte maintenant la hauteur sous plafond de l'étage et il est possible d'avoir 0m d'écart à l'affichage entre les étages 
 - Les rapports de qualité des données des personnes ont été modifiés
