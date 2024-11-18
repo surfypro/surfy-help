@@ -1,5 +1,16 @@
 # Nouveautés
 
+## 13 Novembre 2024  - v3.4.38 ## 
+
+- Amélioration du moteur 3d cuby
+    - Possiblité d'activier ou non l'affichage des étages fantômes depuis les plans 3d
+    - Le plan 3D du bâtiment sur le plan se centre mieux sur le bâtiment et possède une meilleure luminosité
+    - Les espaces entre les étages prennent en compte maintenant la hauteur de sous plafond de l'étage et il est possible d'avoir 0m d'écart à l'affichage entre les étages 
+- Les rapports de qualité des données des personnes ont été modifiés
+    - Le rapport des personnes sans affectations exclut maintenant les espaces, les postes de travail, les bâtiments et les quartiers
+    - Le rapport des personnes sans affectations mais affecté à un bâtiment, exclut maintenant les affectations aux espaces, postes de travail et quarties
+
+
 ## 5 Novembre 2024  - v3.4.36 ## 
 
 - Affichage en couleurs dans la boite de sélection des typologies d'espaces
