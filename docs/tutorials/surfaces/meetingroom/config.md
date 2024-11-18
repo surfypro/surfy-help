@@ -26,9 +26,9 @@ La typologie d'espace est associée au groupe, et s'ajoute à la liste des typol
 Tous les espaces ayant une de ces typologies seront affichés dans la page "Voir et naviquer dans les salles de réunion".
 
 
-:::warning ATTENTION
+:::danger ATTENTION
 A ce stade, cocher la case d'une typologie puis cliquer sur l'icone "corbeille" supprime la typologie au lieu de la retirer du groupe de typologies, rendant "sans typologie" les espaces concernés.
-Pour retirer une typologie du groupe de typologies, il faut [modifier la typologie elle même](docs/tutorials/surfaces/room/roomtype.md#modifier-une-typologie-despace) puis cocher et supprimer l'association au groupe concerné.
+Pour retirer une typologie du groupe de typologies, il faut [modifier la typologie elle même](/docs/tutorials/surfaces/room/roomtype.md#modifier-une-typologie-despace) puis cocher et supprimer l'association au groupe concerné.
 :::
 
 ## Choisir les équipements à afficher

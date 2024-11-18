@@ -80,7 +80,7 @@ Pour modifier une typologie d'espace, par exemple sont nom ou sa couleur, depuis
 
 -   cliquer sur "Administration", "Typologies", "Typologies d'espaces", "Typologies d'espace" puis "Lister les typologies d'espace".
 -   rechercher la typologie à modifier, un filtre est disponible en haut à droite de l'écran " Filtrer les typologies d'espace".
--   cliquer sur l'icône en début de ligne de la typologie à modifier pour "modifier la typologie d'espace XXX".
+-   cliquer sur l'icône en début de ligne de la typologie pour "modifier la typologie d'espace XXX".
 -   modifier les informations,
 -   "Sauvegarder" les modifications.
 

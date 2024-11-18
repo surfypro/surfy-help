@@ -34,5 +34,4 @@ Les liens ci dessous permettent d'accéder aux tutoriels correspondants :
 
 [Afficher les profils Sécurité sur les plans](/docs/tutorials/person/personSecurityProfile/list.md#visualiser-les-profils-s%C3%A9curit%C3%A9-sur-les-plans)
 
-
-
+[Afficher les salles de réunion](/docs/tutorials/surfaces/meetingroom/read.md)

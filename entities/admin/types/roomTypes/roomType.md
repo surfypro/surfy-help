@@ -8,11 +8,14 @@
 ### Afficher les murs [displayWallsOn3d] {#displayWallsOn3d}
         
 Permet d'afficher ou non les murs de l'espace dans le plan 3d de l'étage, les murs non affichés sont en pointillés en 2d, cela permet d'avoir une vue plus agréable notament pour les open spaces
+
 ### Cadence [cadence] {#cadence}
         
 La cadence est une valeur numérique permettant d'indiquer la difficulté de nettoyage de la typologie de l'espace. Elle est égale au nombre de m² pouvant être traités en une heure dans cette typologie (circulation, laboratoire, ...)
+
 ### Code [code] {#code}
-        
+
+Le code permet d'associer la typologie à des fonctionnalités particulières, par exemple "MEETING" pour le regroupement des espaces de réunion       
 
 ### Couleur en 2d [color] {#color}
         
