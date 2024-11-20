@@ -1,5 +1,9 @@
 # Nouveautés
 
+## 20 Novembre 2024  - v3.4.40 ## 
+
+- Le message d'avertissement pour la selection des dimensions sur le plan est maintenant déplacé sur la barre du haut avec le fil d'ariane avec une icône d'avertissement
+
 ## 13 Novembre 2024  - v3.4.38 ## 
 
 - Amélioration du moteur 3d cuby
@@ -9,7 +13,6 @@
 - Les rapports de qualité des données des personnes ont été modifiés
     - Le rapport des personnes sans affectation exclut maintenant les espaces, les postes de travail, les bâtiments et les quartiers
     - Le rapport des personnes sans affectation mais affectées à un bâtiment, exclut maintenant les affectations aux espaces, postes de travail et quartiers
-
 
 ## 5 Novembre 2024  - v3.4.36 ## 
 
