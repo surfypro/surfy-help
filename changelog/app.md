@@ -3,6 +3,7 @@
 ## 20 Novembre 2024  - v3.4.40 ## 
 
 - Le message d'avertissement pour la selection des dimensions sur le plan est maintenant déplacé sur la barre du haut avec le fil d'ariane avec une icône d'avertissement
+- Mise en place de la réservation des parking dans la bâtiment d'affectation sur la page du planning. Les codes à utiliser sur les types d'espaces sont PARKING-CAR, PARKING-ELECTRIC-CAR et PARKING-PRM.
 
 ## 13 Novembre 2024  - v3.4.38 ## 
 
