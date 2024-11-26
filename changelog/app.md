@@ -3,7 +3,7 @@
 <!-- ## xx Novembre 2024  - v3.4.41 ## 
 
 - Les tailles des icônes de type cercle, triangle et rectangle sont maintenant uniformisées
-- Les tailles des icônes dans les types de poste de travail est mainteant statique et fait 30cm quelque soit la taille des icônes dans l'échelle du plan -->
+- La taille des icônes dans les types de poste de travail est mainteant statique et fait 30cm quelque soit la taille des icônes dans l'échelle du plan -->
 
 ## 20 Novembre 2024  - v3.4.40 ## 
 
