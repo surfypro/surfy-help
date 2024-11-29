@@ -3,7 +3,9 @@
 <!-- ## xx Novembre 2024  - v3.4.41 ## 
 
 - Les tailles des icônes de type cercle, triangle et rectangle sont maintenant uniformisées
-- La taille des icônes dans les types de poste de travail est mainteant statique et fait 30cm quelque soit la taille des icônes dans l'échelle du plan -->
+- La taille des icônes dans les types de poste de travail est mainteant statique et fait 30cm quelque soit la taille des icônes dans l'échelle du plan 
+- Les réservations des postes de travail en flex peuvent maintenant être réalisé sur tout un bâtiment, il faut affecter les personnes directement sur le bâtiment et mettres les postes de travail en flex et réservables
+-->
 
 ## 20 Novembre 2024  - v3.4.40 ## 
 
