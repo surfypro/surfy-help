@@ -1,4 +1,4 @@
-# through your secure Google account
+# Through your secure Google account
 
 ## First connection to your SURFY platform
 

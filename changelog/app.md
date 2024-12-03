@@ -1,6 +1,14 @@
 # Nouveautés
 
-30 Novembre 2024  - v3.4.43 ## 
+<!-- ## x Decembre 2024  - v3.4.4x ## 
+
+- Amélioration globale de la vitesse de déplacements des objets
+    - Amélioration du déplacement des points des espaces en mode édition du plan
+    - Amélioration du déplacement des points de l'échelle
+    - Amélioration du déplacement de la navigation dans le plan en 2D
+- Les quartiers sont maintenant affichable sur les zones de texte des espaces sur le plan en 2D et dans leur info-bulle  -->
+
+## 30 Novembre 2024  - v3.4.43 ## 
 
 - Les tailles des icônes de type cercle, triangle et rectangle sont maintenant uniformisées
 - La taille des icônes dans les types de poste de travail est mainteant statique et fait 30cm quelque soit la taille des icônes dans l'échelle du plan 
