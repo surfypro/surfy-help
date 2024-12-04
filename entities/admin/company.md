@@ -20,6 +20,9 @@ Le chemin du logo de votre entreprise
 ### Nombre de jours de travail par semaine [workingDaysCount] {#workingDaysCount}
         
 Le nombre de jours de travail par semaine peut être 5 pour les jours ouvrés, 6 incluant le samedi et 7 incluant le dimanche
+### Planning Number Of Days [planningNumberOfDays] {#planningNumberOfDays}
+        
+
 ### Proxy Images [proxyImages] {#proxyImages}
         
 
