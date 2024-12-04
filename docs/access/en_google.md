@@ -2,9 +2,9 @@
 sidebar_position: 7
 ---
 
-# Access via Secure Google Account  
+# Access via secure Google account  
 
-## Creating a Google Account  
+## Creating a Google account  
 
 1. Visit [https://app.surfy.pro](https://app.surfy.pro):  
 
@@ -35,7 +35,7 @@ If your company uses automatic authentication and you meet the requirements, you
 
 6. Once your access is approved and your role related to your company is assigned, you will receive a confirmation email.  
 
-## Connecting via Your Google Account  
+## Connecting via your Google account  
 
 7. Once your access is approved, go back to [https://app.surfy.pro](https://app.surfy.pro):  
 

@@ -1,7 +1,7 @@
 ---
 sidebar_position: 9
 ---
-# Access via Secure Business Account  
+# Access via secure Business account  
 
 1. Visit [https://app.surfy.pro](https://app.surfy.pro):  
 

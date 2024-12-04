@@ -1,9 +1,9 @@
 ---
 sidebar_position: 8
 ---
-# Access via Secure Surfy Account  
+# Access via secure Surfy account  
 
-## Creating a Surfy Account  
+## Creating a Surfy account  
 
 1. Visit [https://app.surfy.pro](https://app.surfy.pro):  
 
@@ -43,7 +43,7 @@ If your company uses automatic authentication and you meet the requirements, you
 
 10. Once your access is approved and your role related to your company is assigned, you will receive a confirmation email.  
 
-## Connecting via a Surfy Account  
+## Connecting via a Surfy account  
 
 11. After your access is approved, visit [https://app.surfy.pro](https://app.surfy.pro), select "SURFY ACCOUNT" and log in with your email and password.  
 

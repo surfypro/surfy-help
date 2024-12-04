@@ -38,7 +38,7 @@ If your company does not use automatic authentication, you will see the followin
 
 6. Once your access is approved and your role related to your company is assigned, you will receive a confirmation email.  
 
-## Connecting via Your Office365 Account  
+## Connecting via your Office365 account  
 
 7. Once your access is approved, return to [https://app.surfy.pro](https://app.surfy.pro):  
 
