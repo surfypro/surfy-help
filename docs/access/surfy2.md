@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 10
 ---
 
 # Accès par compte sécurisé Surfy2
@@ -8,7 +8,7 @@ sidebar_position: 4
 
 1) Rendez-vous sur https://app.surfy.pro 
 
-![accueil](https://res.cloudinary.com/dngnxxqr4/image/upload/v1725529169/tutoriels/access/acc%C3%A8s%20Surfy.png)
+![accueil](https://res.cloudinary.com/dngnxxqr4/image/upload/v1733308454/General_access_likbjv.png)
 
 2) Cliquez sur « COMPTE SURFY » puis sur « Don’t have an account ? SIGN 
 UP » ou sur « INSCRIPTION » afin de créer votre compte Surfy.

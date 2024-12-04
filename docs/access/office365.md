@@ -15,7 +15,7 @@ sidebar_position: 1
 ![office365](https://res.cloudinary.com/dngnxxqr4/image/upload/v1719408850/office_365_u8syk2.png)
 
 :::warning
-Si Microsoft vous informe d'une "autorisation requise", vous devez demander à votre administrateur informatique d'autoriser l'application Surfy à utiliser les comptes Office365.
+Si Microsoft vous informe d'une "autorisation requise", vous devez demander à votre administrateur informatique d'autoriser l'application Surfy à utiliser les comptes Office365. Si l'autorisation n'est pas donnée, vous pouvez opter pour la création d'un [compte Surfy](/docs/access/surfy) ou d'un [compte Google](/docs/access/google)
 :::
 
 3. Votre Administrateur informatique autorise Surfy à utiliser les comptes Office365 :
