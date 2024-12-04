@@ -3,6 +3,8 @@ sidebar_position: 9
 ---
 # Access via secure Business account  
 
+## Creating a Business account
+
 1. Visit [https://app.surfy.pro](https://app.surfy.pro):  
 
 ![SurfyLogoutPage](https://res.cloudinary.com/dngnxxqr4/image/upload/v1733308454/General_access_likbjv.png)  

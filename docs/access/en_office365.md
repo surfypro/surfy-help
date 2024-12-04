@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Access via secure Office365 account
 
-## Creating the Office365 account
+## Creating a Office365 account
 
 1. Visit [https://app.surfy.pro](https://app.surfy.pro):  
 
