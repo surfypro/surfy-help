@@ -3,6 +3,8 @@ sidebar_position: 4
 ---
 # Accès par compte sécurisé d'Entreprise
 
+## Création du compte d'entreprise
+
 1. Rendez-vous sur https://app.surfy.pro :
 
 ![pagedeconnexionSurfy](https://res.cloudinary.com/dngnxxqr4/image/upload/v1725529169/tutoriels/access/acc%C3%A8s%20Surfy.png)
