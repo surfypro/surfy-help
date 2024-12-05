@@ -4,6 +4,8 @@ sidebar_position: 0
 
 # L'accès à Surfy
 
+## Qui peut accéder à Surfy ?
+
 On accède à la plateforme Surfy d'un entreprise en créant un compte sécurisé validé par l'entreprise.
 Les fonctionnalités accessibles sont déterminées par l'entreprise, en fonction des droits réservés à l'utilisateur.
 Le contenu visible est également déterminé par l'entreprise en fonction de l'utilisateur.
