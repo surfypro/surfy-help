@@ -1,11 +1,8 @@
 ---
-sidebar_position: 0
+sidebar_position: 1
 ---
 
-# Documentation
 
-La documentation de Surfy se compose des éléments suivants :
+# Introduction
+English content
 
-- [Les aides pour se connecter à la plateforme](/docs/access/intro)
-- [Les tutoriels pour utiliser les fontionnalités](/docs/tutorials/intro.md)
-- [Les cours permettant de se former aux concepts de façon structurée](/docs/courses/intro.md)

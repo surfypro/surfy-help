@@ -1,0 +1,130 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Collaborateurs": {
+    "message": "Collaborateurs",
+    "description": "The label for category Collaborateurs in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Typologies": {
+    "message": "Typologies",
+    "description": "The label for category Typologies in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Relations": {
+    "message": "Relations",
+    "description": "The label for category Relations in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Mobiliers": {
+    "message": "Mobiliers",
+    "description": "The label for category Mobiliers in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Données horodatées des objets": {
+    "message": "Données horodatées des objets",
+    "description": "The label for category Données horodatées des objets in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Affectations": {
+    "message": "Affectations",
+    "description": "The label for category Affectations in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Espaces": {
+    "message": "Espaces",
+    "description": "The label for category Espaces in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Points": {
+    "message": "Points",
+    "description": "The label for category Points in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Données horodatées des bâtiments": {
+    "message": "Données horodatées des bâtiments",
+    "description": "The label for category Données horodatées des bâtiments in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Organisations": {
+    "message": "Organisations",
+    "description": "The label for category Organisations in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Plannings": {
+    "message": "Plannings",
+    "description": "The label for category Plannings in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Réservations": {
+    "message": "Réservations",
+    "description": "The label for category Réservations in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Administration": {
+    "message": "Administration",
+    "description": "The label for category Administration in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Typologies d'espaces": {
+    "message": "Typologies d'espaces",
+    "description": "The label for category Typologies d'espaces in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Calques d'analyse": {
+    "message": "Calques d'analyse",
+    "description": "The label for category Calques d'analyse in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Sécurité": {
+    "message": "Sécurité",
+    "description": "The label for category Sécurité in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Prestataires": {
+    "message": "Prestataires",
+    "description": "The label for category Prestataires in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.API": {
+    "message": "API",
+    "description": "The label for category API in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Authentification": {
+    "message": "Authentification",
+    "description": "The label for category Authentification in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Partenaires": {
+    "message": "Partenaires",
+    "description": "The label for category Partenaires in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Reporting": {
+    "message": "Reporting",
+    "description": "The label for category Reporting in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Dimensions": {
+    "message": "Dimensions",
+    "description": "The label for category Dimensions in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Centre de coûts": {
+    "message": "Centre de coûts",
+    "description": "The label for category Centre de coûts in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Type d'espaces": {
+    "message": "Type d'espaces",
+    "description": "The label for category Type d'espaces in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Groupes de typologies d'espaces": {
+    "message": "Groupes de typologies d'espaces",
+    "description": "The label for category Groupes de typologies d'espaces in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Connecteurs": {
+    "message": "Connecteurs",
+    "description": "The label for category Connecteurs in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.menuLeft legend": {
+    "message": "menuLeft legend",
+    "description": "The label for category menuLeft legend in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Surfy": {
+    "message": "Surfy",
+    "description": "The label for category Surfy in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Sécurité globale": {
+    "message": "Sécurité globale",
+    "description": "The label for category Sécurité globale in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Administration globale": {
+    "message": "Administration globale",
+    "description": "The label for category Administration globale in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Aide": {
+    "message": "Aide",
+    "description": "The label for category Aide in sidebar tutorialSidebar"
+  }
+}

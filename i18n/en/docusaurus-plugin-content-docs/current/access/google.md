@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# Access via secure Google account  
+# Access via secure Google account   !
 
 ## Creating a Google account  
 
