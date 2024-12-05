@@ -24,8 +24,8 @@ Surfy operates in SaaS mode, with the application and data hosted in France on M
 
 To access Surfy, the organization must have an active subscription to the solution.  
 
-Future users can create a [Surfy](/docs/access/en_surfy) account, a [Microsoft Office 365](/docs/access/en_office365) account, or a [Google](/docs/access/en_google) account to request connection to the organization’s platform.  
-If the organization uses secure access via a [business](/docs/access/en_business) account, users can directly access the platform by selecting that option.  
+Future users can create a [Surfy](/docs/access/surfy) account, a [Microsoft Office 365](/docs/access/office365) account, or a [Google](/docs/access/google) account to request connection to the organization’s platform.  
+If the organization uses secure access via a [business](/docs/access/company) account, users can directly access the platform by selecting that option.  
 
 ### Organization Users  
 

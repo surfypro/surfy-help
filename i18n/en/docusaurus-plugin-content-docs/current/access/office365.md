@@ -17,7 +17,7 @@ sidebar_position: 6
 :::warning  
 If Microsoft notifies you that "permission is required," you must ask your IT administrator to authorize the Surfy application to use Office365 accounts.
 
-If the authorization is not granted, you can choose to create a [Surfy account](/docs/access/en_surfy) or a [Google account](/docs/access/en_google).
+If the authorization is not granted, you can choose to create a [Surfy account](/docs/access/surfy) or a [Google account](/docs/access/google).
 :::  
 
 3. Your IT Administrator authorizes Surfy to use Office365 accounts:  
