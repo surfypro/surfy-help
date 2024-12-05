@@ -36,6 +36,12 @@
 ###  Features [featureUpdatedBies] {#featureUpdatedBies}
         
 
+###  Legends [legendCreatedBies] {#legendCreatedBies}
+        
+
+###  Legends [legendUpdatedBies] {#legendUpdatedBies}
+        
+
 ###  Partner Export Mapping Configuration To Floors [partnerExportMappingConfigurationToFloorCreatedBies] {#partnerExportMappingConfigurationToFloorCreatedBies}
         
 
@@ -58,18 +64,6 @@
         
 
 ###  Partner Export Mappings [partnerExportMappingUpdatedBies] {#partnerExportMappingUpdatedBies}
-        
-
-###  Room Type Group Buildings [roomTypeGroupBuildingCreatedBies] {#roomTypeGroupBuildingCreatedBies}
-        
-
-###  Room Type Group Buildings [roomTypeGroupBuildingUpdatedBies] {#roomTypeGroupBuildingUpdatedBies}
-        
-
-###  Room Type Group Floors [roomTypeGroupFloorCreatedBies] {#roomTypeGroupFloorCreatedBies}
-        
-
-###  Room Type Group Floors [roomTypeGroupFloorUpdatedBies] {#roomTypeGroupFloorUpdatedBies}
         
 
 ###  Structure Points [structurePointCreatedBies] {#structurePointCreatedBies}
@@ -285,6 +279,18 @@ Permet d’afficher les objets par Famille sur les plans et dans l’inventaire 
 ### Familles de types d'objet [itemTypeFamilyUpdatedBies] {#itemTypeFamilyUpdatedBies}
         
 Permet d’afficher les objets par Famille sur les plans et dans l’inventaire en pdf
+### Groupes de typologies d'espace des bâtiments [roomTypeGroupBuildingCreatedBies] {#roomTypeGroupBuildingCreatedBies}
+        
+
+### Groupes de typologies d'espace des bâtiments [roomTypeGroupBuildingUpdatedBies] {#roomTypeGroupBuildingUpdatedBies}
+        
+
+### Groupes de typologies d'espace des étages [roomTypeGroupFloorCreatedBies] {#roomTypeGroupFloorCreatedBies}
+        
+
+### Groupes de typologies d'espace des étages [roomTypeGroupFloorUpdatedBies] {#roomTypeGroupFloorUpdatedBies}
+        
+
 ### Interventions sur des objet [personCompanyToItemCreatedBies] {#personCompanyToItemCreatedBies}
         
 Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur

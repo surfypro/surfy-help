@@ -101,9 +101,6 @@ L'échelle permet de calculer en proportion les surfaces réelles et la taille d
 ###  Partner Export Mapping Configuration To Floors [partnerExportMappingConfigurationToFloors] {#partnerExportMappingConfigurationToFloors}
         
 
-###  Room Type Group Floors [roomTypeGroupFloors] {#roomTypeGroupFloors}
-        
-
 ### Associations rôle de contenu aux étages [contentRoleToFloors] {#contentRoleToFloors}
         
 
@@ -114,6 +111,9 @@ L'échelle permet de calculer en proportion les surfaces réelles et la taille d
         
 
 ### Espaces [rooms] {#rooms}
+        
+
+### Groupes de typologies d'espace des étages [roomTypeGroupFloors] {#roomTypeGroupFloors}
         
 
 ### Organisations des étages [organizationFloors] {#organizationFloors}

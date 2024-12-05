@@ -1,4 +1,4 @@
-#  Room Type Group Floor
+# Groupe de typologie d'espace des étages
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

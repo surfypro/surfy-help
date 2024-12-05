@@ -106,11 +106,11 @@
                 "description": null
             },
             "roomTypeGroupFloor": {
-                "label": " Room Type Group Floor",
+                "label": "Groupe de typologie d'espace des étages",
                 "description": null
             },
             "roomTypeGroupBuilding": {
-                "label": " Room Type Group Building",
+                "label": "Groupe de typologie d'espace des bâtiments",
                 "description": null
             },
             "costCenter": {
@@ -289,6 +289,10 @@
                 "label": "Intervention sur un objet",
                 "description": "Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur"
             },
+            "legend": {
+                "label": " Legend",
+                "description": null
+            },
             "jupObjectType": {
                 "label": "Type d'entité",
                 "description": null
@@ -326,7 +330,7 @@
                 "description": null
             },
             "jupRoleToJupUiOption": {
-                "label": "Association rôle aux options d'interface",
+                "label": "Association rôle aux visions du plan",
                 "description": null
             },
             "jupRoleToJupUiOperation": {
@@ -1023,19 +1027,19 @@
                     "description": null
                 },
                 "roomTypeGroupFloorCreatedBies": {
-                    "label": " Room Type Group Floors",
+                    "label": "Groupes de typologies d'espace des étages",
                     "description": null
                 },
                 "roomTypeGroupFloorUpdatedBies": {
-                    "label": " Room Type Group Floors",
+                    "label": "Groupes de typologies d'espace des étages",
                     "description": null
                 },
                 "roomTypeGroupBuildingCreatedBies": {
-                    "label": " Room Type Group Buildings",
+                    "label": "Groupes de typologies d'espace des bâtiments",
                     "description": null
                 },
                 "roomTypeGroupBuildingUpdatedBies": {
-                    "label": " Room Type Group Buildings",
+                    "label": "Groupes de typologies d'espace des bâtiments",
                     "description": null
                 },
                 "costCenterCreatedBies": {
@@ -1365,6 +1369,14 @@
                 "personCompanyToItemUpdatedBies": {
                     "label": "Interventions sur des objet",
                     "description": "Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur"
+                },
+                "legendCreatedBies": {
+                    "label": " Legends",
+                    "description": null
+                },
+                "legendUpdatedBies": {
+                    "label": " Legends",
+                    "description": null
                 },
                 "contentRoleCreatedBies": {
                     "label": "Rôles de contenu",
@@ -2367,7 +2379,7 @@
                     "description": null
                 },
                 "roomTypeGroupBuildings": {
-                    "label": " Room Type Group Buildings",
+                    "label": "Groupes de typologies d'espace des bâtiments",
                     "description": null
                 },
                 "costCenterBuildings": {
@@ -2775,7 +2787,7 @@
                     "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
                 },
                 "roomTypeGroupFloors": {
-                    "label": " Room Type Group Floors",
+                    "label": "Groupes de typologies d'espace des étages",
                     "description": null
                 },
                 "costCenterFloors": {
@@ -2915,11 +2927,11 @@
                     "description": null
                 },
                 "roomTypeGroupFloors": {
-                    "label": " Room Type Group Floors",
+                    "label": "Groupes de typologies d'espace des étages",
                     "description": null
                 },
                 "roomTypeGroupBuildings": {
-                    "label": " Room Type Group Buildings",
+                    "label": "Groupes de typologies d'espace des bâtiments",
                     "description": null
                 }
             },
@@ -7251,6 +7263,56 @@
                     "description": null
                 }
             },
+            "legend": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "name": {
+                    "label": "Name",
+                    "description": null
+                },
+                "configuration": {
+                    "label": "Configuration",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
             "jupObjectType": {
                 "id": {
                     "label": "Id",
@@ -7357,7 +7419,7 @@
                     "description": null
                 },
                 "jupRoleToJupUiOptions": {
-                    "label": "Associations rôle aux options d'interface",
+                    "label": "Associations rôle aux visions du plan",
                     "description": null
                 },
                 "jupRoleToJupUiOperations": {
@@ -7403,7 +7465,7 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "jupRoleToJupUiOptions": {
-                    "label": "Associations rôle aux options d'interface",
+                    "label": "Associations rôle aux visions du plan",
                     "description": null
                 }
             },

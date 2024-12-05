@@ -22,13 +22,13 @@ Exclure les typologies d'espace de ce groupe
 
 ## Entités associées (liste)
 
-###  Room Type Group Buildings [roomTypeGroupBuildings] {#roomTypeGroupBuildings}
-        
-
-###  Room Type Group Floors [roomTypeGroupFloors] {#roomTypeGroupFloors}
-        
-
 ### Associations groupes de typologies d'espace à typologies d'espace [roomTypeGroupToRoomTypes] {#roomTypeGroupToRoomTypes}
+        
+
+### Groupes de typologies d'espace des bâtiments [roomTypeGroupBuildings] {#roomTypeGroupBuildings}
+        
+
+### Groupes de typologies d'espace des étages [roomTypeGroupFloors] {#roomTypeGroupFloors}
         
 
 

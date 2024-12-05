@@ -1,4 +1,4 @@
-# Option d'interface
+#  Legend
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 
@@ -8,15 +8,15 @@
 ### Name [name] {#name}
         
 
-### Scope [scope] {#scope}
-        
-
 
 
 
 ## Entités associées (liste)
 
-### Associations rôle aux visions du plan [jupRoleToJupUiOptions] {#jupRoleToJupUiOptions}
+###  Legend Room Type Groups [legendRoomTypeGroups] {#legendRoomTypeGroups}
+        
+
+###  Legend To Room Types [legendToRoomTypes] {#legendToRoomTypes}
         
 
 

@@ -146,9 +146,6 @@ L'utilisateur propriétaire du bâtiment voit toujours le bâtiment même en pr�
 
 ## Entités associées (liste)
 
-###  Room Type Group Buildings [roomTypeGroupBuildings] {#roomTypeGroupBuildings}
-        
-
 ### Affectations au bâtiment [personToBuildings] {#personToBuildings}
         
 
@@ -171,6 +168,9 @@ Scénarios générés à partir de ce bâtiment
         
 
 ### Faits [facts] {#facts}
+        
+
+### Groupes de typologies d'espace des bâtiments [roomTypeGroupBuildings] {#roomTypeGroupBuildings}
         
 
 ### Organisations des bâtiments [organizationBuildings] {#organizationBuildings}

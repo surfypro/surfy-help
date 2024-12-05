@@ -83,6 +83,7 @@
         "roomConnector": "/entities/admin/connectors",
         "roomConnectorType": "/entities/admin/connectors",
         "company": "/entities/admin",
+        "legend": "/entities/admin",
         "jupRole": "/entities/surfy/globalSecurity",
         "user": "/entities/surfy/globalSecurity",
         "jupObjectType": "/entities/surfy/globalSecurity",
