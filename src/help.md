@@ -1,5 +1,8 @@
 # Title 1
 
+## version anglaise
+
+yarn start -- --locale en
 
 ## Youtube
 
