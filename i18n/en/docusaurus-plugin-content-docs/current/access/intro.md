@@ -3,7 +3,7 @@ sidebar_position: 5
 ---
 # Access to Surfy  
 
-## who can access the platform ?
+## Who can access the platform ?
 
 Accessing an organization's Surfy platform requires creating a secure account validated by the organization.  
 The features available to each user are determined by the organization based on assigned roles, and visible content is customized according to user permissions.  
