@@ -1,0 +1,9 @@
+{
+  "label": "Les Organisations",
+  "position": 4,
+  "link": {
+    "slug": "organizations",
+    "type": "generated-index",
+    "description": "Les organisations dans Surfy"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "label": "Tutorials",
+  "position": 3,
+  "link": {
+    "slug": "tutorials",
+    "type": "generated-index", 
+    "description": "The tutorials support the user in learning a Surfy functionality."
+  }
+}

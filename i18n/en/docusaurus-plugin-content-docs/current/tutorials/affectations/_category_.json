@@ -1,0 +1,9 @@
+{
+  "label": "Assignments",
+  "position": 5,
+  "link": {
+    "slug": "assignments",
+    "type": "generated-index",
+    "description": "All about assignments"
+  }
+}

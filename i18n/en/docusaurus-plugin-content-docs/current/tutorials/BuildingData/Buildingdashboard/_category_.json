@@ -1,0 +1,9 @@
+{
+  "label": "Le tableau de bord du bâtiment",
+  "position": 1,
+  "link": {
+    "slug": "buildingdashboard",
+    "type": "generated-index",
+    "description": "Tout savoir sur le tableau de bord du bâtiment"
+  }
+}

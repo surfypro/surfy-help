@@ -1,0 +1,9 @@
+{
+  "label": "Assignments to quarters",
+  "position": 4,
+  "link": { 
+    "slug": "dimensiontoperson",
+    "type": "generated-index",
+    "description": "How to assign a person to a quarter"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "label": "La Réservation",
+  "position": 12,
+  "link": {
+    "slug": "booking",
+    "type": "generated-index",
+    "description": "Tout savoir sur le planning de réservation de Surfy"
+  }
+}
