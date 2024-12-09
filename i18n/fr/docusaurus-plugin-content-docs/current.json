@@ -3,372 +3,372 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.s1.category.Se connecter": {
+  "sidebar.help-sidebar.category.Se connecter": {
     "message": "Se connecter",
-    "description": "The label for category Se connecter in sidebar s1"
+    "description": "The label for category Se connecter in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Se connecter.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Se connecter.link.generated-index.description": {
     "message": "Comment se connecter à Surfy avec Google, Microsoft ou Surfy",
-    "description": "The generated-index page description for category Se connecter in sidebar s1"
+    "description": "The generated-index page description for category Se connecter in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Tutoriels": {
+  "sidebar.help-sidebar.category.Les Tutoriels": {
     "message": "Les Tutoriels",
-    "description": "The label for category Les Tutoriels in sidebar s1"
+    "description": "The label for category Les Tutoriels in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Tutoriels.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Tutoriels.link.generated-index.description": {
     "message": "Les tutoriels accompagnent l'utilisateur dans l'apprentissage d'une fonctionnalité.",
-    "description": "The generated-index page description for category Les Tutoriels in sidebar s1"
+    "description": "The generated-index page description for category Les Tutoriels in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Surfaces": {
+  "sidebar.help-sidebar.category.Les Surfaces": {
     "message": "Les Surfaces",
-    "description": "The label for category Les Surfaces in sidebar s1"
+    "description": "The label for category Les Surfaces in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Surfaces.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Surfaces.link.generated-index.description": {
     "message": "Les Surfaces dans Surfy",
-    "description": "The generated-index page description for category Les Surfaces in sidebar s1"
+    "description": "The generated-index page description for category Les Surfaces in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Campus": {
+  "sidebar.help-sidebar.category.Les Campus": {
     "message": "Les Campus",
-    "description": "The label for category Les Campus in sidebar s1"
+    "description": "The label for category Les Campus in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Campus.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Campus.link.generated-index.description": {
     "message": "5 minutes pour comprendre les Campus",
-    "description": "The generated-index page description for category Les Campus in sidebar s1"
+    "description": "The generated-index page description for category Les Campus in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Bâtiments": {
+  "sidebar.help-sidebar.category.Les Bâtiments": {
     "message": "Les Bâtiments",
-    "description": "The label for category Les Bâtiments in sidebar s1"
+    "description": "The label for category Les Bâtiments in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Bâtiments.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Bâtiments.link.generated-index.description": {
     "message": "5 minutes pour comprendre les bâtiments",
-    "description": "The generated-index page description for category Les Bâtiments in sidebar s1"
+    "description": "The generated-index page description for category Les Bâtiments in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Etages": {
+  "sidebar.help-sidebar.category.Les Etages": {
     "message": "Les Etages",
-    "description": "The label for category Les Etages in sidebar s1"
+    "description": "The label for category Les Etages in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Etages.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Etages.link.generated-index.description": {
     "message": "Tout comprendre sur les étages",
-    "description": "The generated-index page description for category Les Etages in sidebar s1"
+    "description": "The generated-index page description for category Les Etages in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Espaces": {
+  "sidebar.help-sidebar.category.Les Espaces": {
     "message": "Les Espaces",
-    "description": "The label for category Les Espaces in sidebar s1"
+    "description": "The label for category Les Espaces in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Espaces.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Espaces.link.generated-index.description": {
     "message": "Tout comprendre sur les espaces dans Surfy",
-    "description": "The generated-index page description for category Les Espaces in sidebar s1"
+    "description": "The generated-index page description for category Les Espaces in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Le Fond de plan": {
+  "sidebar.help-sidebar.category.Le Fond de plan": {
     "message": "Le Fond de plan",
-    "description": "The label for category Le Fond de plan in sidebar s1"
+    "description": "The label for category Le Fond de plan in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Le Fond de plan.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Le Fond de plan.link.generated-index.description": {
     "message": "Tout savoir sur le fond de plan",
-    "description": "The generated-index page description for category Le Fond de plan in sidebar s1"
+    "description": "The generated-index page description for category Le Fond de plan in sidebar help-sidebar"
   },
-  "sidebar.s1.category.L'Echelle": {
+  "sidebar.help-sidebar.category.L'Echelle": {
     "message": "L'Echelle",
-    "description": "The label for category L'Echelle in sidebar s1"
+    "description": "The label for category L'Echelle in sidebar help-sidebar"
   },
-  "sidebar.s1.category.L'Echelle.link.generated-index.description": {
+  "sidebar.help-sidebar.category.L'Echelle.link.generated-index.description": {
     "message": "Tout comprendre sur l'échelle des plans",
-    "description": "The generated-index page description for category L'Echelle in sidebar s1"
+    "description": "The generated-index page description for category L'Echelle in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Structures": {
+  "sidebar.help-sidebar.category.Les Structures": {
     "message": "Les Structures",
-    "description": "The label for category Les Structures in sidebar s1"
+    "description": "The label for category Les Structures in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Structures.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Structures.link.generated-index.description": {
     "message": "Tout savoir sur la structure de l'étage",
-    "description": "The generated-index page description for category Les Structures in sidebar s1"
+    "description": "The generated-index page description for category Les Structures in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Portes et Passages": {
+  "sidebar.help-sidebar.category.Les Portes et Passages": {
     "message": "Les Portes et Passages",
-    "description": "The label for category Les Portes et Passages in sidebar s1"
+    "description": "The label for category Les Portes et Passages in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Portes et Passages.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Portes et Passages.link.generated-index.description": {
     "message": "Tout comprendre sur les portes et les passages dans Surfy",
-    "description": "The generated-index page description for category Les Portes et Passages in sidebar s1"
+    "description": "The generated-index page description for category Les Portes et Passages in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Espaces de réunion": {
+  "sidebar.help-sidebar.category.Les Espaces de réunion": {
     "message": "Les Espaces de réunion",
-    "description": "The label for category Les Espaces de réunion in sidebar s1"
+    "description": "The label for category Les Espaces de réunion in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Espaces de réunion.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Espaces de réunion.link.generated-index.description": {
     "message": "Gérer et visualiser les Espaces de réunion",
-    "description": "The generated-index page description for category Les Espaces de réunion in sidebar s1"
+    "description": "The generated-index page description for category Les Espaces de réunion in sidebar help-sidebar"
   },
-  "sidebar.s1.category.L'Itinéraire point à point": {
+  "sidebar.help-sidebar.category.L'Itinéraire point à point": {
     "message": "L'Itinéraire point à point",
-    "description": "The label for category L'Itinéraire point à point in sidebar s1"
+    "description": "The label for category L'Itinéraire point à point in sidebar help-sidebar"
   },
-  "sidebar.s1.category.L'Itinéraire point à point.link.generated-index.description": {
+  "sidebar.help-sidebar.category.L'Itinéraire point à point.link.generated-index.description": {
     "message": "Tout comprendre sur l'itinéraire point à point",
-    "description": "The generated-index page description for category L'Itinéraire point à point in sidebar s1"
+    "description": "The generated-index page description for category L'Itinéraire point à point in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Le Mobilier": {
+  "sidebar.help-sidebar.category.Le Mobilier": {
     "message": "Le Mobilier",
-    "description": "The label for category Le Mobilier in sidebar s1"
+    "description": "The label for category Le Mobilier in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Le Mobilier.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Le Mobilier.link.generated-index.description": {
     "message": "Tout savoir sur le mobilier",
-    "description": "The generated-index page description for category Le Mobilier in sidebar s1"
+    "description": "The generated-index page description for category Le Mobilier in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Familles de mobilier": {
+  "sidebar.help-sidebar.category.Les Familles de mobilier": {
     "message": "Les Familles de mobilier",
-    "description": "The label for category Les Familles de mobilier in sidebar s1"
+    "description": "The label for category Les Familles de mobilier in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Familles de mobilier.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Familles de mobilier.link.generated-index.description": {
     "message": "Tout savoir sur les familles de type d'objet",
-    "description": "The generated-index page description for category Les Familles de mobilier in sidebar s1"
+    "description": "The generated-index page description for category Les Familles de mobilier in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Types d'objet": {
+  "sidebar.help-sidebar.category.Les Types d'objet": {
     "message": "Les Types d'objet",
-    "description": "The label for category Les Types d'objet in sidebar s1"
+    "description": "The label for category Les Types d'objet in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Types d'objet.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Types d'objet.link.generated-index.description": {
     "message": "Tout savoir sur les types d'objet",
-    "description": "The generated-index page description for category Les Types d'objet in sidebar s1"
+    "description": "The generated-index page description for category Les Types d'objet in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Types d'objet à l'échelle": {
+  "sidebar.help-sidebar.category.Les Types d'objet à l'échelle": {
     "message": "Les Types d'objet à l'échelle",
-    "description": "The label for category Les Types d'objet à l'échelle in sidebar s1"
+    "description": "The label for category Les Types d'objet à l'échelle in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Types d'objet à l'échelle.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Types d'objet à l'échelle.link.generated-index.description": {
     "message": "Tout savoir sur le type d'objet à l'échelle",
-    "description": "The generated-index page description for category Les Types d'objet à l'échelle in sidebar s1"
+    "description": "The generated-index page description for category Les Types d'objet à l'échelle in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Types d'objet Icône": {
+  "sidebar.help-sidebar.category.Les Types d'objet Icône": {
     "message": "Les Types d'objet Icône",
-    "description": "The label for category Les Types d'objet Icône in sidebar s1"
+    "description": "The label for category Les Types d'objet Icône in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Types d'objet Icône.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Types d'objet Icône.link.generated-index.description": {
     "message": "Tout savoir sur le type d'objet Icône",
-    "description": "The generated-index page description for category Les Types d'objet Icône in sidebar s1"
+    "description": "The generated-index page description for category Les Types d'objet Icône in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Types de poste de travail": {
+  "sidebar.help-sidebar.category.Les Types de poste de travail": {
     "message": "Les Types de poste de travail",
-    "description": "The label for category Les Types de poste de travail in sidebar s1"
+    "description": "The label for category Les Types de poste de travail in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Types de poste de travail.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Types de poste de travail.link.generated-index.description": {
     "message": "Tout savoir sur le Type de poste de travail",
-    "description": "The generated-index page description for category Les Types de poste de travail in sidebar s1"
+    "description": "The generated-index page description for category Les Types de poste de travail in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Objets": {
+  "sidebar.help-sidebar.category.Les Objets": {
     "message": "Les Objets",
-    "description": "The label for category Les Objets in sidebar s1"
+    "description": "The label for category Les Objets in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Objets.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Objets.link.generated-index.description": {
     "message": "Tout savoir sur la gestion des objets",
-    "description": "The generated-index page description for category Les Objets in sidebar s1"
+    "description": "The generated-index page description for category Les Objets in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Postes de travail": {
+  "sidebar.help-sidebar.category.Les Postes de travail": {
     "message": "Les Postes de travail",
-    "description": "The label for category Les Postes de travail in sidebar s1"
+    "description": "The label for category Les Postes de travail in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Postes de travail.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Postes de travail.link.generated-index.description": {
     "message": "Tout savoir sur la gestion des postes de travail",
-    "description": "The generated-index page description for category Les Postes de travail in sidebar s1"
+    "description": "The generated-index page description for category Les Postes de travail in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Personnes": {
+  "sidebar.help-sidebar.category.Les Personnes": {
     "message": "Les Personnes",
-    "description": "The label for category Les Personnes in sidebar s1"
+    "description": "The label for category Les Personnes in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Personnes.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Personnes.link.generated-index.description": {
     "message": "Les personnes dans Surfy",
-    "description": "The generated-index page description for category Les Personnes in sidebar s1"
+    "description": "The generated-index page description for category Les Personnes in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Relations": {
+  "sidebar.help-sidebar.category.Les Relations": {
     "message": "Les Relations",
-    "description": "The label for category Les Relations in sidebar s1"
+    "description": "The label for category Les Relations in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Relations.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Relations.link.generated-index.description": {
     "message": "Les relations aux personnes dans Surfy",
-    "description": "The generated-index page description for category Les Relations in sidebar s1"
+    "description": "The generated-index page description for category Les Relations in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Profils Sécurité": {
+  "sidebar.help-sidebar.category.Les Profils Sécurité": {
     "message": "Les Profils Sécurité",
-    "description": "The label for category Les Profils Sécurité in sidebar s1"
+    "description": "The label for category Les Profils Sécurité in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Profils Sécurité.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Profils Sécurité.link.generated-index.description": {
     "message": "Les profils Sécurité dans Surfy",
-    "description": "The generated-index page description for category Les Profils Sécurité in sidebar s1"
+    "description": "The generated-index page description for category Les Profils Sécurité in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Organisations": {
+  "sidebar.help-sidebar.category.Les Organisations": {
     "message": "Les Organisations",
-    "description": "The label for category Les Organisations in sidebar s1"
+    "description": "The label for category Les Organisations in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Organisations.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Organisations.link.generated-index.description": {
     "message": "Les organisations dans Surfy",
-    "description": "The generated-index page description for category Les Organisations in sidebar s1"
+    "description": "The generated-index page description for category Les Organisations in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Affectations": {
+  "sidebar.help-sidebar.category.Les Affectations": {
     "message": "Les Affectations",
-    "description": "The label for category Les Affectations in sidebar s1"
+    "description": "The label for category Les Affectations in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Affectations.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Affectations.link.generated-index.description": {
     "message": "Tout savoir sur les affectations",
-    "description": "The generated-index page description for category Les Affectations in sidebar s1"
+    "description": "The generated-index page description for category Les Affectations in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Affectations aux postes de travail": {
+  "sidebar.help-sidebar.category.Affectations aux postes de travail": {
     "message": "Affectations aux postes de travail",
-    "description": "The label for category Affectations aux postes de travail in sidebar s1"
+    "description": "The label for category Affectations aux postes de travail in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Affectations aux postes de travail.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Affectations aux postes de travail.link.generated-index.description": {
     "message": "Les affectations aux postes de travail",
-    "description": "The generated-index page description for category Affectations aux postes de travail in sidebar s1"
+    "description": "The generated-index page description for category Affectations aux postes de travail in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Affectations aux espaces": {
+  "sidebar.help-sidebar.category.Affectations aux espaces": {
     "message": "Affectations aux espaces",
-    "description": "The label for category Affectations aux espaces in sidebar s1"
+    "description": "The label for category Affectations aux espaces in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Affectations aux espaces.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Affectations aux espaces.link.generated-index.description": {
     "message": "Les affectations aux espaces",
-    "description": "The generated-index page description for category Affectations aux espaces in sidebar s1"
+    "description": "The generated-index page description for category Affectations aux espaces in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Affectations aux quartiers": {
+  "sidebar.help-sidebar.category.Affectations aux quartiers": {
     "message": "Affectations aux quartiers",
-    "description": "The label for category Affectations aux quartiers in sidebar s1"
+    "description": "The label for category Affectations aux quartiers in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Affectations aux quartiers.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Affectations aux quartiers.link.generated-index.description": {
     "message": "Les affectations aux quartiers",
-    "description": "The generated-index page description for category Affectations aux quartiers in sidebar s1"
+    "description": "The generated-index page description for category Affectations aux quartiers in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Affectations aux bâtiments": {
+  "sidebar.help-sidebar.category.Affectations aux bâtiments": {
     "message": "Affectations aux bâtiments",
-    "description": "The label for category Affectations aux bâtiments in sidebar s1"
+    "description": "The label for category Affectations aux bâtiments in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Affectations aux bâtiments.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Affectations aux bâtiments.link.generated-index.description": {
     "message": "Les affectations aux bâtiments",
-    "description": "The generated-index page description for category Affectations aux bâtiments in sidebar s1"
+    "description": "The generated-index page description for category Affectations aux bâtiments in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Calques d'analyse": {
+  "sidebar.help-sidebar.category.Les Calques d'analyse": {
     "message": "Les Calques d'analyse",
-    "description": "The label for category Les Calques d'analyse in sidebar s1"
+    "description": "The label for category Les Calques d'analyse in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Calques d'analyse.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Calques d'analyse.link.generated-index.description": {
     "message": "Tout savoir sur les calques d'analyse",
-    "description": "The generated-index page description for category Les Calques d'analyse in sidebar s1"
+    "description": "The generated-index page description for category Les Calques d'analyse in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Calques d'affectation": {
+  "sidebar.help-sidebar.category.Les Calques d'affectation": {
     "message": "Les Calques d'affectation",
-    "description": "The label for category Les Calques d'affectation in sidebar s1"
+    "description": "The label for category Les Calques d'affectation in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Calques d'affectation.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Calques d'affectation.link.generated-index.description": {
     "message": "Tout savoir sur les calques d'affectation",
-    "description": "The generated-index page description for category Les Calques d'affectation in sidebar s1"
+    "description": "The generated-index page description for category Les Calques d'affectation in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Centres de coût": {
+  "sidebar.help-sidebar.category.Les Centres de coût": {
     "message": "Les Centres de coût",
-    "description": "The label for category Les Centres de coût in sidebar s1"
+    "description": "The label for category Les Centres de coût in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Centres de coût.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Centres de coût.link.generated-index.description": {
     "message": "Les centres de coût dans Surfy",
-    "description": "The generated-index page description for category Les Centres de coût in sidebar s1"
+    "description": "The generated-index page description for category Les Centres de coût in sidebar help-sidebar"
   },
-  "sidebar.s1.category.La Refacturation des espaces": {
+  "sidebar.help-sidebar.category.La Refacturation des espaces": {
     "message": "La Refacturation des espaces",
-    "description": "The label for category La Refacturation des espaces in sidebar s1"
+    "description": "The label for category La Refacturation des espaces in sidebar help-sidebar"
   },
-  "sidebar.s1.category.La Refacturation des espaces.link.generated-index.description": {
+  "sidebar.help-sidebar.category.La Refacturation des espaces.link.generated-index.description": {
     "message": "La refacturation par centre de coût dans Surfy",
-    "description": "The generated-index page description for category La Refacturation des espaces in sidebar s1"
+    "description": "The generated-index page description for category La Refacturation des espaces in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Données du bâtiment": {
+  "sidebar.help-sidebar.category.Les Données du bâtiment": {
     "message": "Les Données du bâtiment",
-    "description": "The label for category Les Données du bâtiment in sidebar s1"
+    "description": "The label for category Les Données du bâtiment in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Données du bâtiment.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Données du bâtiment.link.generated-index.description": {
     "message": "Les données du bâtiment dans Surfy",
-    "description": "The generated-index page description for category Les Données du bâtiment in sidebar s1"
+    "description": "The generated-index page description for category Les Données du bâtiment in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Le tableau de bord du bâtiment": {
+  "sidebar.help-sidebar.category.Le tableau de bord du bâtiment": {
     "message": "Le tableau de bord du bâtiment",
-    "description": "The label for category Le tableau de bord du bâtiment in sidebar s1"
+    "description": "The label for category Le tableau de bord du bâtiment in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Le tableau de bord du bâtiment.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Le tableau de bord du bâtiment.link.generated-index.description": {
     "message": "Tout savoir sur le tableau de bord du bâtiment",
-    "description": "The generated-index page description for category Le tableau de bord du bâtiment in sidebar s1"
+    "description": "The generated-index page description for category Le tableau de bord du bâtiment in sidebar help-sidebar"
   },
-  "sidebar.s1.category.La Réservation": {
+  "sidebar.help-sidebar.category.La Réservation": {
     "message": "La Réservation",
-    "description": "The label for category La Réservation in sidebar s1"
+    "description": "The label for category La Réservation in sidebar help-sidebar"
   },
-  "sidebar.s1.category.La Réservation.link.generated-index.description": {
+  "sidebar.help-sidebar.category.La Réservation.link.generated-index.description": {
     "message": "Tout savoir sur le planning de réservation de Surfy",
-    "description": "The generated-index page description for category La Réservation in sidebar s1"
+    "description": "The generated-index page description for category La Réservation in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Surfy avec Teams": {
+  "sidebar.help-sidebar.category.Surfy avec Teams": {
     "message": "Surfy avec Teams",
-    "description": "The label for category Surfy avec Teams in sidebar s1"
+    "description": "The label for category Surfy avec Teams in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Surfy avec Teams.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Surfy avec Teams.link.generated-index.description": {
     "message": "Tout savoir sur l'application Teams de Surfy",
-    "description": "The generated-index page description for category Surfy avec Teams in sidebar s1"
+    "description": "The generated-index page description for category Surfy avec Teams in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Cours": {
+  "sidebar.help-sidebar.category.Les Cours": {
     "message": "Les Cours",
-    "description": "The label for category Les Cours in sidebar s1"
+    "description": "The label for category Les Cours in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Les Cours.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Les Cours.link.generated-index.description": {
     "message": "Nos cours sont composés de suites de tutoriels",
-    "description": "The generated-index page description for category Les Cours in sidebar s1"
+    "description": "The generated-index page description for category Les Cours in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Tout sur les plans": {
+  "sidebar.help-sidebar.category.Tout sur les plans": {
     "message": "Tout sur les plans",
-    "description": "The label for category Tout sur les plans in sidebar s1"
+    "description": "The label for category Tout sur les plans in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Tout sur les plans.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Tout sur les plans.link.generated-index.description": {
     "message": "Tout savoir sur la visualisation des plans en 2D et 3D",
-    "description": "The generated-index page description for category Tout sur les plans in sidebar s1"
+    "description": "The generated-index page description for category Tout sur les plans in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Le mode Lecteur": {
+  "sidebar.help-sidebar.category.Le mode Lecteur": {
     "message": "Le mode Lecteur",
-    "description": "The label for category Le mode Lecteur in sidebar s1"
+    "description": "The label for category Le mode Lecteur in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Le mode Lecteur.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Le mode Lecteur.link.generated-index.description": {
     "message": "Les fonctionnalités du mode Lecteur",
-    "description": "The generated-index page description for category Le mode Lecteur in sidebar s1"
+    "description": "The generated-index page description for category Le mode Lecteur in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Rechercher dans Surfy": {
+  "sidebar.help-sidebar.category.Rechercher dans Surfy": {
     "message": "Rechercher dans Surfy",
-    "description": "The label for category Rechercher dans Surfy in sidebar s1"
+    "description": "The label for category Rechercher dans Surfy in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Rechercher dans Surfy.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Rechercher dans Surfy.link.generated-index.description": {
     "message": "Tout savoir sur la recherche d'éléments dans Surfy",
-    "description": "The generated-index page description for category Rechercher dans Surfy in sidebar s1"
+    "description": "The generated-index page description for category Rechercher dans Surfy in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Digitaliser les espaces": {
+  "sidebar.help-sidebar.category.Digitaliser les espaces": {
     "message": "Digitaliser les espaces",
-    "description": "The label for category Digitaliser les espaces in sidebar s1"
+    "description": "The label for category Digitaliser les espaces in sidebar help-sidebar"
   },
-  "sidebar.s1.category.Digitaliser les espaces.link.generated-index.description": {
+  "sidebar.help-sidebar.category.Digitaliser les espaces.link.generated-index.description": {
     "message": "Tout savoir sur la digitalisation d'un bâtiment",
-    "description": "The generated-index page description for category Digitaliser les espaces in sidebar s1"
+    "description": "The generated-index page description for category Digitaliser les espaces in sidebar help-sidebar"
   },
-  "sidebar.s1.category.L'occupation des locaux": {
+  "sidebar.help-sidebar.category.L'occupation des locaux": {
     "message": "L'occupation des locaux",
-    "description": "The label for category L'occupation des locaux in sidebar s1"
+    "description": "The label for category L'occupation des locaux in sidebar help-sidebar"
   },
-  "sidebar.s1.category.L'occupation des locaux.link.generated-index.description": {
+  "sidebar.help-sidebar.category.L'occupation des locaux.link.generated-index.description": {
     "message": "Les étapes pour gérer l'occupation d'un bâtiment",
-    "description": "The generated-index page description for category L'occupation des locaux in sidebar s1"
+    "description": "The generated-index page description for category L'occupation des locaux in sidebar help-sidebar"
   },
-  "sidebar.s1.category.La gestion des coûts": {
+  "sidebar.help-sidebar.category.La gestion des coûts": {
     "message": "La gestion des coûts",
-    "description": "The label for category La gestion des coûts in sidebar s1"
+    "description": "The label for category La gestion des coûts in sidebar help-sidebar"
   },
-  "sidebar.s1.category.La gestion des coûts.link.generated-index.description": {
+  "sidebar.help-sidebar.category.La gestion des coûts.link.generated-index.description": {
     "message": "Les étapes pour gérer les coûts",
-    "description": "The generated-index page description for category La gestion des coûts in sidebar s1"
+    "description": "The generated-index page description for category La gestion des coûts in sidebar help-sidebar"
   },
-  "sidebar.s1.category.L'environnement et la sécurité": {
+  "sidebar.help-sidebar.category.L'environnement et la sécurité": {
     "message": "L'environnement et la sécurité",
-    "description": "The label for category L'environnement et la sécurité in sidebar s1"
+    "description": "The label for category L'environnement et la sécurité in sidebar help-sidebar"
   },
-  "sidebar.s1.category.L'environnement et la sécurité.link.generated-index.description": {
+  "sidebar.help-sidebar.category.L'environnement et la sécurité.link.generated-index.description": {
     "message": "Gérer la responsabilité sociale et environnementale de l'entreprise",
-    "description": "The generated-index page description for category L'environnement et la sécurité in sidebar s1"
+    "description": "The generated-index page description for category L'environnement et la sécurité in sidebar help-sidebar"
   }
 }
