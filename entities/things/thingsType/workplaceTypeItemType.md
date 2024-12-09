@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Indice de hauteur {#zIndex}
 
@@ -36,7 +36,7 @@ Nom technique: ```position```
 Nom technique: ```rotation```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Type d'objet {#itemType}
 

@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Activé {#enable}
 

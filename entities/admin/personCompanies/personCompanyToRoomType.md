@@ -3,11 +3,11 @@
 
 Les types d'espaces des prestataires permettent de définir une relation entre un type d'espaces et le prestataire et d'y définir une mission
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Entreprise prestataire {#personCompany}
 

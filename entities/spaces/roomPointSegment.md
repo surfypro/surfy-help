@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Afficher des deux côtés {#displayBothSides}
 
@@ -18,7 +18,7 @@ Inverser les points du segment afin d'avoir l'affichage par exemple des portes d
 Nom technique: ```reversePoints```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ###  Room Point End {#roomPointEnd}
 

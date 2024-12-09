@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Code {#code}
 
@@ -26,7 +26,7 @@ Nom technique: ```labelForward```
 
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Relations personne à personne {#personToPeople}
 

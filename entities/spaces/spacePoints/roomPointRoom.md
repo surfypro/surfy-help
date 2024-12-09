@@ -3,7 +3,7 @@
 
 L'association entre un point et un espace permet de conserver l'ordre des points dans un espace afin de constituer un polyon
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Index de tri {#sortIndex}
 
@@ -12,7 +12,7 @@ L'association entre un point et un espace permet de conserver l'ordre des points
 Nom technique: ```sortIndex```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Espace {#room}
 

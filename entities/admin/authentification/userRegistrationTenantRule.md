@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Associer automatiquement les rôles {#automaticUserToRoleMapping}
 
@@ -24,7 +24,7 @@ Nom technique: ```domains```
 Nom technique: ```name```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Connection d'authentification {#authentificationConnection}
 
@@ -33,7 +33,7 @@ Nom technique: ```name```
 Nom technique: ```authentificationConnection```
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Associations de règle d'authentification à rôle {#userRegistrationTenantRuleToJupRoles}
 

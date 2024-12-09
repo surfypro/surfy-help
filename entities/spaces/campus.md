@@ -3,7 +3,7 @@
 
 Le campus est utilisé pour regrouper des bâtiments qui sont au même endroit.
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Address {#address}
 
@@ -146,7 +146,7 @@ Nom technique: ```sharedWorkplacesRatio```
 
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Bâtiments {#buildings}
 

@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Code secret {#clientSecret}
 
@@ -20,7 +20,7 @@ Nom technique: ```name```
 
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Associations d'utilisateur d'api au rôle {#apiUserToJupRoles}
 

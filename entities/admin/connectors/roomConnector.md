@@ -3,7 +3,7 @@
 
 Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces dans des étages différents
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Nom du connecteur d'espace {#name}
 
@@ -24,7 +24,7 @@ Le temps nécessaire pour pouvoir passer de chaque étage au prochain
 Nom technique: ```timePerFloor```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ###  Room Connector Type {#roomConnectorType}
 
@@ -33,7 +33,7 @@ Nom technique: ```timePerFloor```
 Nom technique: ```roomConnectorType```
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Espaces {#rooms}
 

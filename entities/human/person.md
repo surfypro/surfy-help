@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Badge RIE {#badgeRestaurant}
 
@@ -120,7 +120,7 @@ Le titre de la personne
 Nom technique: ```title```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Centre de coût {#costCenter}
 
@@ -159,7 +159,7 @@ Permet de détérminer le type de contrat de la personne
 Nom technique: ```personState```
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Affectations au bâtiment {#personToBuildings}
 

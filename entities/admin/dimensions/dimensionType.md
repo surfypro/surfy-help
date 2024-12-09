@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Code du type de dimension {#code}
 
@@ -32,7 +32,7 @@ Nom technique: ```order```
 
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Calques d'affectation du bâtiment {#dimensionTypeToBuildings}
 

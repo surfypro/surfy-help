@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Name {#name}
 
@@ -12,7 +12,7 @@
 Nom technique: ```name```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ###  Feature Group {#featureGroup}
 

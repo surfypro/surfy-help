@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Distance {#length}
 
@@ -74,7 +74,7 @@ Nom technique: ```workplaceTextSize```
 
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Étages {#floors}
 

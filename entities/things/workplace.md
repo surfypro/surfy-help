@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Commentaire {#comment}
 
@@ -72,7 +72,7 @@ Nom technique: ```workplaceAffectationsCalculatedRateSum```
 Nom technique: ```textAnchor```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Centre de coût {#costCenter}
 
@@ -99,7 +99,7 @@ Nom technique: ```organization```
 Nom technique: ```workplaceType```
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Affectations au poste de travail {#workplaceAffectations}
 

@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Nom du fabricant du type d'objet {#name}
 
@@ -20,7 +20,7 @@ Nom technique: ```website```
 
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Types d'objet {#itemTypes}
 

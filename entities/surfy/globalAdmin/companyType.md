@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Billable {#billable}
 
@@ -20,7 +20,7 @@ Nom technique: ```name```
 
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Entreprises {#companies}
 

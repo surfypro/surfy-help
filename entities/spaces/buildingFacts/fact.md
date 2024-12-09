@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Date {#date}
 
@@ -18,7 +18,7 @@ Nom technique: ```date```
 Nom technique: ```value```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Bâtiment {#building}
 

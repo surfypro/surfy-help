@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Création (C) {#arCreate}
 
@@ -30,7 +30,7 @@ Autorise la suppression d'entités
 Nom technique: ```arDelete```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Rôle {#jupRole}
 

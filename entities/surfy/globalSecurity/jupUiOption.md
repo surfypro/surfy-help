@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Name {#name}
 
@@ -20,7 +20,7 @@ Nom technique: ```scope```
 
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Associations rôle aux visions du plan {#jupRoleToJupUiOptions}
 

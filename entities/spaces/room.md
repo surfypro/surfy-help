@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Capacité hors assises {#capacity}
 
@@ -186,7 +186,7 @@ Nom technique: ```sharedWorkplacesRatio```
 Nom technique: ```textAnchor```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Centre de coût {#costCenter}
 
@@ -231,7 +231,7 @@ Nom technique: ```distributionCostType```
 Nom technique: ```roomType```
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Affectations d'espace {#roomAffectations}
 

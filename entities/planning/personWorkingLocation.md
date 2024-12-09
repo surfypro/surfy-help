@@ -3,7 +3,7 @@
 
 Un emplacement de travail des personnes définie le lieu de travail des personnes
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Date {#date}
 
@@ -18,7 +18,7 @@ Nom technique: ```date```
 Nom technique: ```daySlotType```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ###  Working Location {#workingLocation}
 
@@ -33,7 +33,7 @@ Nom technique: ```workingLocation```
 Nom technique: ```person```
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Réservations à l'espace des personnes {#personToRoomBookings}
 

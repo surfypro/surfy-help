@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Afficher les informations sur le plan {#displayItemReferenceInMap}
 
@@ -96,7 +96,7 @@ Le prix d'achat du type d'objet
 Nom technique: ```price```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Fabricant du type d'objet {#manufacturer}
 
@@ -117,7 +117,7 @@ Le Modèle 3D permet une représentation 3D réaliste des objets placés sur le 
 Nom technique: ```object3dModel```
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Objets {#items}
 

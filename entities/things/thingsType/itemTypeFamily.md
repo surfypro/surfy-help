@@ -3,7 +3,7 @@
 
 Permet d’afficher les objets par Famille sur les plans et dans l’inventaire en pdf
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Code {#code}
 
@@ -20,7 +20,7 @@ Nom technique: ```name```
 
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Types d'objet {#itemTypes}
 

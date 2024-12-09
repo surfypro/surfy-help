@@ -3,7 +3,7 @@
 
 Le Modèle 3D permet une représentation 3D réaliste des objets placés sur le plan; En absence de modèle 3D les objets sont représentés en forme pleine dans la vue 3D
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Model {#model}
 
@@ -38,7 +38,7 @@ Nom technique: ```type```
 
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Types d'objet {#itemTypes}
 

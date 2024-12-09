@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### x {#x}
 
@@ -18,7 +18,7 @@ Coordonnée sur l'axe Y
 Nom technique: ```y```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Étage {#floor}
 
@@ -27,7 +27,7 @@ Nom technique: ```y```
 Nom technique: ```floor```
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Associations entre un point et un espace {#roomPointRooms}
 

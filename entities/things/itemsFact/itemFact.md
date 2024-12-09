@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Measure {#measure}
 
@@ -30,7 +30,7 @@ Nom technique: ```value```
 Nom technique: ```voltage```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Objet {#item}
 

@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Couleur {#color}
 
@@ -48,7 +48,7 @@ La valeur peut être utilisé pour associé le calque à une valeur numérique a
 Nom technique: ```value```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Type de calque {#dimensionType}
 
@@ -57,7 +57,7 @@ Nom technique: ```value```
 Nom technique: ```dimensionType```
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Affectations aux calques d'affectation {#dimensionToPeople}
 

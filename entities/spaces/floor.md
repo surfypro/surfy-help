@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Capacité réglementaire {#regulatoryCapacity}
 
@@ -53,7 +53,7 @@ Le nombre de personnes affectées dans la l'étage, soit directement affécté a
 
 Nom technique: ```peopleCount```
 
-### Nombre d'affectations {#totalPeopleCount}
+### Nombre d'affectations totale {#totalPeopleCount}
 
 Le nombre de personnes affectées dans la l'étage, soit directement affécté aux espaces, soit à travers un poste de travail
 
@@ -162,7 +162,7 @@ Taux de postes de travail partagés par au moins 2 personnes par rapport à l'en
 Nom technique: ```sharedWorkplacesRatio```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Bâtiment {#building}
 
@@ -183,7 +183,7 @@ Nom technique: ```mapScale```
 Nom technique: ```structure```
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ###  Partner Export Mapping Configuration To Floors {#partnerExportMappingConfigurationToFloors}
 

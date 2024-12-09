@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Is Default View {#isDefaultView}
 
@@ -18,7 +18,7 @@ Nom technique: ```isDefaultView```
 Nom technique: ```name```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Type d'entité {#jupObjectType}
 
@@ -27,7 +27,7 @@ Nom technique: ```name```
 Nom technique: ```jupObjectType```
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Associations rôle aux vues d'interface {#jupRoleToJupUiViews}
 

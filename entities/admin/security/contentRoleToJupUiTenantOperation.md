@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Can See {#canSee}
 
@@ -12,7 +12,7 @@
 Nom technique: ```canSee```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Opération d'interface pour une entreprise {#jupUiTenantOperation}
 

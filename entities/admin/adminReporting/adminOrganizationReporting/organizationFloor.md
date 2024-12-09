@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Capacité totale {#totalCapacityCount}
 
@@ -126,7 +126,7 @@ Taux de postes de travail partagés par au moins 2 personnes par rapport à l'en
 Nom technique: ```sharedWorkplacesRatio```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Étage {#floor}
 

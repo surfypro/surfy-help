@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Label {#label}
 
@@ -18,7 +18,7 @@ Nom technique: ```label```
 Nom technique: ```partnerCode```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ###  Partner Export Mapping Configuration {#partnerExportMappingConfiguration}
 
@@ -27,7 +27,7 @@ Nom technique: ```partnerCode```
 Nom technique: ```partnerExportMappingConfiguration```
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ###  Partner Export Mapping To Room Types {#partnerExportMappingToRoomTypes}
 

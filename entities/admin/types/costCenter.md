@@ -3,7 +3,7 @@
 
 Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Code {#code}
 
@@ -44,7 +44,7 @@ Nom technique: ```name```
 
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Centres de coût des bâtiments {#costCenterBuildings}
 

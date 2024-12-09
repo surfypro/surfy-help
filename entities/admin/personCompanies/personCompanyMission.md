@@ -3,7 +3,7 @@
 
 Les missions des prestataires permettent de connaitre le domaine d'intervention des prestataires
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Nom {#name}
 
@@ -14,7 +14,7 @@ Nom technique: ```name```
 
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Types d'espaces des prestataires {#personCompanyToRoomTypes}
 

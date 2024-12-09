@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Code d'immobilisation {#code}
 
@@ -48,7 +48,7 @@ Nom technique: ```rotation```
 Nom technique: ```textAnchor```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Espace de l'objet {#room}
 
@@ -69,7 +69,7 @@ Nom technique: ```workplace```
 Nom technique: ```itemType```
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Associations d'objet à personne {#itemToPeople}
 

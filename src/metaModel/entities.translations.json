@@ -2711,7 +2711,7 @@
                     "description": "Le nombre de places assises par personnes affectées"
                 },
                 "totalPeopleCount": {
-                    "label": "Nombre d'affectations",
+                    "label": "Nombre d'affectations totale",
                     "description": "Le nombre de personnes affectées dans la l'étage, soit directement affécté aux espaces, soit à travers un poste de travail"
                 },
                 "carbonFootprint": {

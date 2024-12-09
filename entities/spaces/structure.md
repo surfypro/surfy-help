@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Name {#name}
 
@@ -20,7 +20,7 @@ Nom technique: ```transform```
 
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ###  Structure Points {#structurePoints}
 

@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Index de tri {#sortIndex}
 
@@ -24,7 +24,7 @@ Nom technique: ```x```
 Nom technique: ```y```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Type d'objet {#itemType}
 

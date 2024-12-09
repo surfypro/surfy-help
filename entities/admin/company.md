@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Enable Pathfinding {#enablePathfinding}
 
@@ -48,7 +48,7 @@ Nom technique: ```planningNumberOfDays```
 Nom technique: ```proxyImages```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Type d'entreprise {#companyType}
 
@@ -57,7 +57,7 @@ Nom technique: ```proxyImages```
 Nom technique: ```companyType```
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Bâtiments {#buildings}
 

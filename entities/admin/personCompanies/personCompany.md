@@ -3,7 +3,7 @@
 
 L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Contact {#contact}
 
@@ -32,7 +32,7 @@ Nom technique: ```name```
 
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Interventions sur des objet {#personCompanyToItems}
 

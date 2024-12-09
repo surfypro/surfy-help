@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Afficher les murs {#displayWallsOn3d}
 
@@ -54,7 +54,7 @@ Nom technique: ```icon```
 Nom technique: ```name```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Type de distribution des coûts {#distributionCostType}
 
@@ -63,7 +63,7 @@ Nom technique: ```name```
 Nom technique: ```distributionCostType```
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ###  Partner Export Mapping To Room Types {#partnerExportMappingToRoomTypes}
 

@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Email {#email}
 
@@ -38,7 +38,7 @@ Nom technique: ```sub```
 
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Utilisateurs de l'entreprise {#userCompanies}
 

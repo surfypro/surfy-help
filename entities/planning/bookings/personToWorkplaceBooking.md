@@ -3,7 +3,7 @@
 
 Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Début de la réservation {#startDatetime}
 
@@ -18,7 +18,7 @@ La date et l'heure de fin de la réservation
 Nom technique: ```endDatetime```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Emplacement de travail des personnes {#personWorkingLocation}
 

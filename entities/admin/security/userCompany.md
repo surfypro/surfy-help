@@ -3,11 +3,11 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Personne {#person}
 
@@ -22,7 +22,7 @@ Nom technique: ```person```
 Nom technique: ```user```
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ###  Feature Families {#featureFamilyCreatedBies}
 

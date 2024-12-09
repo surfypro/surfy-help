@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Peut voir l'option {#canSee}
 
@@ -12,7 +12,7 @@ Autorise l'option a être vue par le rôle
 Nom technique: ```canSee```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Option d'interface {#jupUiOption}
 

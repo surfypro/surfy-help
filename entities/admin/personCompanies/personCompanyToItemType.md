@@ -3,11 +3,11 @@
 
 Les types d'objets des prestataires permettent de définir une relation entre le type d'objet et le prestataires et d'y définir la mission
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Entreprise prestataire {#personCompany}
 

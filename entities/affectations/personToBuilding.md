@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Comptabiliser l'affectation {#addToPeopleCount}
 
@@ -12,7 +12,7 @@ Ajouter cette affectation au nombre total des personnes affectées au bâtiment
 Nom technique: ```addToPeopleCount```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Bâtiment {#building}
 

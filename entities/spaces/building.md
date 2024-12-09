@@ -3,7 +3,7 @@
 
 Le bâtiment est utilisé pour regrouper les étages
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Adresse {#address}
 
@@ -246,7 +246,7 @@ Taux de postes de travail partagés par au moins 2 personnes par rapport à l'en
 Nom technique: ```sharedWorkplacesRatio```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Bâtiment d'origine {#building}
 
@@ -279,7 +279,7 @@ Nom technique: ```userCompanyOwner```
 Nom technique: ```jupUiLayout```
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Affectations au bâtiment {#personToBuildings}
 

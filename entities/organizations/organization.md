@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Code {#code}
 
@@ -24,7 +24,7 @@ Nom qui va définir l'organisation
 Nom technique: ```name```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Direction {#organization}
 
@@ -33,7 +33,7 @@ Nom technique: ```name```
 Nom technique: ```organization```
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Espaces {#rooms}
 

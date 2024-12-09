@@ -3,7 +3,7 @@
 
 L'état d'occupation permet d'identifier l'état en temps réel d'un espace ou d'un poste de travail, comme par exemple s'il est libre, occupé ou squaté, l'état d'occupation est mis à jour par les objets connectés présent dans l'espace
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Code de l'état d'occupation {#code}
 
@@ -26,7 +26,7 @@ Nom technique: ```name```
 
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Espaces {#rooms}
 

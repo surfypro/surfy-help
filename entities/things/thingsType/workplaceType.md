@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Center {#center}
 
@@ -38,7 +38,7 @@ Nom technique: ```zIndex```
 
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ### Postes de travail {#workplaces}
 

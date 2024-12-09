@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Code {#code}
 
@@ -14,7 +14,7 @@ Nom technique: ```code```
 
 
 
-## Entités associées (liste)
+## Entités associées (liste) {#properties-has-many} ##
 
 ###  Partner Export Mapping Configuration To Floors {#partnerExportMappingConfigurationToFloors}
 

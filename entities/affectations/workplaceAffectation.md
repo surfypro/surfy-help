@@ -3,7 +3,7 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Calculated Rate {#calculatedRate}
 
@@ -60,7 +60,7 @@ Nom technique: ```tuesdayRate```
 Nom technique: ```wednesdayRate```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Personne {#person}
 

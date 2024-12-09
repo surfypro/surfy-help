@@ -3,7 +3,7 @@
 
 Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur
 
-## Propriétés de base
+## Propriétés de base {#properties-base} ##
 
 ### Commentaire {#comment}
 
@@ -18,7 +18,7 @@ Le moment auquel l'intervention a eu lieu
 Nom technique: ```datetime```
 
 
-## Entités associées (unique)
+## Entités associées (unique) {#properties-belongs-to} ##
 
 ### Entreprise prestataire {#personCompany}
 
