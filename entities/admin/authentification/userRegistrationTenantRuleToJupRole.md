@@ -9,11 +9,17 @@
 
 ## Entités associées (unique)
 
-### Règle d'authentification [userRegistrationTenantRule] {#userRegistrationTenantRule}
-        
+### Règle d'authentification {#userRegistrationTenantRule}
 
-### Rôle [jupRole] {#jupRole}
-        
+
+
+Nom technique: ```userRegistrationTenantRule```
+
+### Rôle {#jupRole}
+
+
+
+Nom technique: ```jupRole```
 
 
 

@@ -5,22 +5,34 @@
 
 ## Propriétés de base
 
-### Color [color] {#color}
-        
+### Color {#color}
 
-### Icon [icon] {#icon}
-        
 
-### Nom du profil de sécurité [name] {#name}
-        
+
+Nom technique: ```color```
+
+### Icon {#icon}
+
+
+
+Nom technique: ```icon```
+
+### Nom du profil de sécurité {#name}
+
 Le nom du profil de sécurité des personnes permet de l'identifier facilement
+
+Nom technique: ```name```
+
 
 
 
 ## Entités associées (liste)
 
-### Personnes [people] {#people}
-        
+### Personnes {#people}
+
+
+
+Nom technique: ```people```
 
 
 

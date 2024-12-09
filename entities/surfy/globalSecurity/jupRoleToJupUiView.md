@@ -5,17 +5,26 @@
 
 ## Propriétés de base
 
-### Peut voir la vue [canSee] {#canSee}
-        
+### Peut voir la vue {#canSee}
+
 Autorise la vue a être vue par le rôle
+
+Nom technique: ```canSee```
+
 
 ## Entités associées (unique)
 
-### Rôle [jupRole] {#jupRole}
-        
+### Rôle {#jupRole}
 
-### Vue d'interface [jupUiView] {#jupUiView}
-        
+
+
+Nom technique: ```jupRole```
+
+### Vue d'interface {#jupUiView}
+
+
+
+Nom technique: ```jupUiView```
 
 
 

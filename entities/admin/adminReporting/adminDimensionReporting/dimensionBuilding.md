@@ -5,80 +5,152 @@
 
 ## Propriétés de base
 
-### Capacité totale [totalCapacityCount] {#totalCapacityCount}
-        
-La capacité totale de places est la somme du nombre de places assises et de la capacité hors assises au niveau des espaces
-### Empreinte carbone [carbonFootprint] {#carbonFootprint}
-        
-L'empreinte carbone est le nombre de CO2 émis
-### Nombre d'affectations [peopleCount] {#peopleCount}
-        
+### Capacité totale {#totalCapacityCount}
 
-### Nombre d'affectations directement à ce calque d'affectation [dimensionPeopleCount] {#dimensionPeopleCount}
-        
+La capacité totale de places est la somme du nombre de places assises et de la capacité hors assises au niveau des espaces
+
+Nom technique: ```totalCapacityCount```
+
+### Empreinte carbone {#carbonFootprint}
+
+L'empreinte carbone est le nombre de CO2 émis
+
+Nom technique: ```carbonFootprint```
+
+### Nombre d'affectations {#peopleCount}
+
+
+
+Nom technique: ```peopleCount```
+
+### Nombre d'affectations directement à ce calque d'affectation {#dimensionPeopleCount}
+
 Le nombre de personnes qui sont affectées à ce calque d'affectation pour l'ensemble du bâtiment
-### Nombre d'espaces [roomsCount] {#roomsCount}
-        
+
+Nom technique: ```dimensionPeopleCount```
+
+### Nombre d'espaces {#roomsCount}
+
 Le nombre total d'espaces
-### Nombre de places assises [seatsCount] {#seatsCount}
-        
+
+Nom technique: ```roomsCount```
+
+### Nombre de places assises {#seatsCount}
+
 Le nombre total de places assises
-### Nombre de postes de travail [workplacesCount] {#workplacesCount}
-        
+
+Nom technique: ```seatsCount```
+
+### Nombre de postes de travail {#workplacesCount}
+
 Le nombre total de postes de travail dans les espaces
-### Nombre de postes de travail de passage [transitWorkplacesCount] {#transitWorkplacesCount}
-        
+
+Nom technique: ```workplacesCount```
+
+### Nombre de postes de travail de passage {#transitWorkplacesCount}
+
 Nombre de postes de travail de passage, ces postes ne sont pas comptabilisés dans les postes libres et ne sont pas en flex
-### Nombre de postes de travail partagés [sharedWorkplacesCount] {#sharedWorkplacesCount}
-        
+
+Nom technique: ```transitWorkplacesCount```
+
+### Nombre de postes de travail partagés {#sharedWorkplacesCount}
+
 Nombre total de postes de travail partagés par au moins 2 personnes
-### Nombre de postes flex [flexWorkplacesCount] {#flexWorkplacesCount}
-        
+
+Nom technique: ```sharedWorkplacesCount```
+
+### Nombre de postes flex {#flexWorkplacesCount}
+
 Nombre total de postes flex
-### Nombre de postes libres [freeWorkplacesCount] {#freeWorkplacesCount}
-        
+
+Nom technique: ```flexWorkplacesCount```
+
+### Nombre de postes libres {#freeWorkplacesCount}
+
 Nombre total de postes libres
-### Nombre total d'affectations [totalPeopleCount] {#totalPeopleCount}
-        
+
+Nom technique: ```freeWorkplacesCount```
+
+### Nombre total d'affectations {#totalPeopleCount}
+
 Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation
-### Ratio d'occupation [peopleRatio] {#peopleRatio}
-        
+
+Nom technique: ```totalPeopleCount```
+
+### Ratio d'occupation {#peopleRatio}
+
 Le ratio d'occupation est le nombre de métres carrés divisé par le nombre de personnes affectées soit directement dans les espaces, soit via un poste de travail
-### Ratio postes de travail [workplacesRatio] {#workplacesRatio}
-        
+
+Nom technique: ```peopleRatio```
+
+### Ratio postes de travail {#workplacesRatio}
+
 Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail
-### Surface qualifiée [roomsArea] {#roomsArea}
-        
+
+Nom technique: ```workplacesRatio```
+
+### Surface qualifiée {#roomsArea}
+
 La surface qualifiée est la somme des surfaces des espaces
-### Taux d'occupation [occupancyRate] {#occupancyRate}
-        
+
+Nom technique: ```roomsArea```
+
+### Taux d'occupation {#occupancyRate}
+
 Permet de connaître le taux d'occupation des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail
-### Taux de foisonnement [expansionRatio] {#expansionRatio}
-        
+
+Nom technique: ```occupancyRate```
+
+### Taux de foisonnement {#expansionRatio}
+
 Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisés par le nombre de postes de travail
-### Taux de places assises par affectations [seatsPeopleRatio] {#seatsPeopleRatio}
-        
+
+Nom technique: ```expansionRatio```
+
+### Taux de places assises par affectations {#seatsPeopleRatio}
+
 Le nombre de places assises par personnes affectées
-### Taux de places assises par postes de travail [totalCapacityWorkplaceCountRatio] {#totalCapacityWorkplaceCountRatio}
-        
+
+Nom technique: ```seatsPeopleRatio```
+
+### Taux de places assises par postes de travail {#totalCapacityWorkplaceCountRatio}
+
 Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail
-### Taux de postes de travail en flex [flexRatio] {#flexRatio}
-        
+
+Nom technique: ```totalCapacityWorkplaceCountRatio```
+
+### Taux de postes de travail en flex {#flexRatio}
+
 Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail
-### Taux de postes de travail partagés [sharedWorkplacesRatio] {#sharedWorkplacesRatio}
-        
+
+Nom technique: ```flexRatio```
+
+### Taux de postes de travail partagés {#sharedWorkplacesRatio}
+
 Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail
+
+Nom technique: ```sharedWorkplacesRatio```
+
 
 ## Entités associées (unique)
 
-### Bâtiment [building] {#building}
-        
-Le bâtiment est utilisé pour regrouper les étages
-### Calque d'analyse [dimension] {#dimension}
-        
+### Bâtiment {#building}
 
-### Type de calque [dimensionType] {#dimensionType}
-        
+Le bâtiment est utilisé pour regrouper les étages
+
+Nom technique: ```building```
+
+### Calque d'analyse {#dimension}
+
+
+
+Nom technique: ```dimension```
+
+### Type de calque {#dimensionType}
+
+
+
+Nom technique: ```dimensionType```
 
 
 

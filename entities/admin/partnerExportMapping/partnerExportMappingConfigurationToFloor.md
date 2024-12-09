@@ -9,11 +9,17 @@
 
 ## Entités associées (unique)
 
-###  Partner Export Mapping Configuration [partnerExportMappingConfiguration] {#partnerExportMappingConfiguration}
-        
+###  Partner Export Mapping Configuration {#partnerExportMappingConfiguration}
 
-### Étage [floor] {#floor}
-        
+
+
+Nom technique: ```partnerExportMappingConfiguration```
+
+### Étage {#floor}
+
+
+
+Nom technique: ```floor```
 
 
 

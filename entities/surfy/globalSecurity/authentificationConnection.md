@@ -5,16 +5,22 @@
 
 ## Propriétés de base
 
-### Name [name] {#name}
-        
+### Name {#name}
+
+
+
+Nom technique: ```name```
 
 
 
 
 ## Entités associées (liste)
 
-### Règles d'authentification [userRegistrationTenantRules] {#userRegistrationTenantRules}
-        
+### Règles d'authentification {#userRegistrationTenantRules}
+
+
+
+Nom technique: ```userRegistrationTenantRules```
 
 
 

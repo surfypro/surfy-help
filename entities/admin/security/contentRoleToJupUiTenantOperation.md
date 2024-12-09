@@ -5,17 +5,26 @@
 
 ## Propriétés de base
 
-### Can See [canSee] {#canSee}
-        
+### Can See {#canSee}
+
+
+
+Nom technique: ```canSee```
 
 
 ## Entités associées (unique)
 
-### Opération d'interface pour une entreprise [jupUiTenantOperation] {#jupUiTenantOperation}
-        
+### Opération d'interface pour une entreprise {#jupUiTenantOperation}
 
-### Rôle de contenu [contentRole] {#contentRole}
-        
+
+
+Nom technique: ```jupUiTenantOperation```
+
+### Rôle de contenu {#contentRole}
+
+
+
+Nom technique: ```contentRole```
 
 
 

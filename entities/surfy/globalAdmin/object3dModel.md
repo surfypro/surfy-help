@@ -5,28 +5,46 @@ Le Modèle 3D permet une représentation 3D réaliste des objets placés sur le 
 
 ## Propriétés de base
 
-### Model [model] {#model}
-        
+### Model {#model}
 
-### Name [name] {#name}
-        
 
-### Orientation [origin] {#origin}
-        
+
+Nom technique: ```model```
+
+### Name {#name}
+
+
+
+Nom technique: ```name```
+
+### Orientation {#origin}
+
 Utiliser X si l'objet est orienté à droite ou Y si l'objet est orienté vers le bas
-### Rotation [rotation] {#rotation}
-        
 
-### Type [type] {#type}
-        
+Nom technique: ```origin```
+
+### Rotation {#rotation}
+
+
+
+Nom technique: ```rotation```
+
+### Type {#type}
+
+
+
+Nom technique: ```type```
 
 
 
 
 ## Entités associées (liste)
 
-### Types d'objet [itemTypes] {#itemTypes}
-        
+### Types d'objet {#itemTypes}
+
+
+
+Nom technique: ```itemTypes```
 
 
 

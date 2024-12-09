@@ -5,16 +5,22 @@
 
 ## Propriétés de base
 
-### Name [name] {#name}
-        
+### Name {#name}
+
+
+
+Nom technique: ```name```
 
 
 
 
 ## Entités associées (liste)
 
-###  Feature Groups [featureGroups] {#featureGroups}
-        
+###  Feature Groups {#featureGroups}
+
+
+
+Nom technique: ```featureGroups```
 
 
 

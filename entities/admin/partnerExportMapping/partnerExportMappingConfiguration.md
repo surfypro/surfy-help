@@ -5,19 +5,28 @@
 
 ## Propriétés de base
 
-### Code [code] {#code}
-        
+### Code {#code}
+
+
+
+Nom technique: ```code```
 
 
 
 
 ## Entités associées (liste)
 
-###  Partner Export Mapping Configuration To Floors [partnerExportMappingConfigurationToFloors] {#partnerExportMappingConfigurationToFloors}
-        
+###  Partner Export Mapping Configuration To Floors {#partnerExportMappingConfigurationToFloors}
 
-###  Partner Export Mappings [partnerExportMappings] {#partnerExportMappings}
-        
+
+
+Nom technique: ```partnerExportMappingConfigurationToFloors```
+
+###  Partner Export Mappings {#partnerExportMappings}
+
+
+
+Nom technique: ```partnerExportMappings```
 
 
 

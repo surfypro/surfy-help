@@ -9,11 +9,17 @@
 
 ## Entités associées (unique)
 
-### Rôle de contenu [contentRole] {#contentRole}
-        
+### Rôle de contenu {#contentRole}
 
-### Utilisateur d'api [apiUser] {#apiUser}
-        
+
+
+Nom technique: ```contentRole```
+
+### Utilisateur d'api {#apiUser}
+
+
+
+Nom technique: ```apiUser```
 
 
 

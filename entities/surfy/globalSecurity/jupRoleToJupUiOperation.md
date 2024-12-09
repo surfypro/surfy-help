@@ -5,17 +5,26 @@
 
 ## Propriétés de base
 
-### Can See [canSee] {#canSee}
-        
+### Can See {#canSee}
+
+
+
+Nom technique: ```canSee```
 
 
 ## Entités associées (unique)
 
-### Opération d'interface [jupUiOperation] {#jupUiOperation}
-        
+### Opération d'interface {#jupUiOperation}
 
-### Rôle [jupRole] {#jupRole}
-        
+
+
+Nom technique: ```jupUiOperation```
+
+### Rôle {#jupRole}
+
+
+
+Nom technique: ```jupRole```
 
 
 

@@ -5,11 +5,17 @@
 
 ## Propriétés de base
 
-### Configuration [configuration] {#configuration}
-        
+### Configuration {#configuration}
 
-### Name [name] {#name}
-        
+
+
+Nom technique: ```configuration```
+
+### Name {#name}
+
+
+
+Nom technique: ```name```
 
 
 

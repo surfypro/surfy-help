@@ -5,20 +5,32 @@
 
 ## Propriétés de base
 
-### Sort Index [sortIndex] {#sortIndex}
-        
+### Sort Index {#sortIndex}
 
-### X [x] {#x}
-        
 
-### Y [y] {#y}
-        
+
+Nom technique: ```sortIndex```
+
+### X {#x}
+
+
+
+Nom technique: ```x```
+
+### Y {#y}
+
+
+
+Nom technique: ```y```
 
 
 ## Entités associées (unique)
 
-### Structure [structure] {#structure}
-        
+### Structure {#structure}
+
+
+
+Nom technique: ```structure```
 
 
 

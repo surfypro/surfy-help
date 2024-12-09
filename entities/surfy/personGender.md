@@ -5,16 +5,22 @@
 
 ## Propriétés de base
 
-### Nom [name] {#name}
-        
+### Nom {#name}
+
 Le nom du genre de la personne
+
+Nom technique: ```name```
+
 
 
 
 ## Entités associées (liste)
 
-### Personnes [people] {#people}
-        
+### Personnes {#people}
+
+
+
+Nom technique: ```people```
 
 
 

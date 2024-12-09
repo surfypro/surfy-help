@@ -9,11 +9,17 @@
 
 ## Entités associées (unique)
 
-### Règle d'authentification [userRegistrationTenantRule] {#userRegistrationTenantRule}
-        
+### Règle d'authentification {#userRegistrationTenantRule}
 
-### Rôle de contenu [contentRole] {#contentRole}
-        
+
+
+Nom technique: ```userRegistrationTenantRule```
+
+### Rôle de contenu {#contentRole}
+
+
+
+Nom technique: ```contentRole```
 
 
 

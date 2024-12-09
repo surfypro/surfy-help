@@ -5,17 +5,26 @@
 
 ## Propriétés de base
 
-### Peut voir l'option [canSee] {#canSee}
-        
+### Peut voir l'option {#canSee}
+
 Autorise l'option a être vue par le rôle
+
+Nom technique: ```canSee```
+
 
 ## Entités associées (unique)
 
-### Option d'interface [jupUiOption] {#jupUiOption}
-        
+### Option d'interface {#jupUiOption}
 
-### Rôle [jupRole] {#jupRole}
-        
+
+
+Nom technique: ```jupUiOption```
+
+### Rôle {#jupRole}
+
+
+
+Nom technique: ```jupRole```
 
 
 

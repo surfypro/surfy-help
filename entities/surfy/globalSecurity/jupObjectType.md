@@ -5,19 +5,28 @@
 
 ## Propriétés de base
 
-### Name [name] {#name}
-        
+### Name {#name}
+
+
+
+Nom technique: ```name```
 
 
 
 
 ## Entités associées (liste)
 
-### Associations rôle à type d'objet [jupRoleToJupObjectTypes] {#jupRoleToJupObjectTypes}
-        
+### Associations rôle à type d'objet {#jupRoleToJupObjectTypes}
 
-### Vues d'interface [jupUiViews] {#jupUiViews}
-        
+
+
+Nom technique: ```jupRoleToJupObjectTypes```
+
+### Vues d'interface {#jupUiViews}
+
+
+
+Nom technique: ```jupUiViews```
 
 
 

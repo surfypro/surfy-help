@@ -9,11 +9,17 @@
 
 ## Entités associées (unique)
 
-### Espace [room] {#room}
-        
+### Espace {#room}
 
-### Personne [person] {#person}
-        
+
+
+Nom technique: ```room```
+
+### Personne {#person}
+
+
+
+Nom technique: ```person```
 
 
 

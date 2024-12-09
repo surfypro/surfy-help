@@ -5,50 +5,89 @@
 
 ## Propriétés de base
 
-### Code d'immobilisation [code] {#code}
-        
+### Code d'immobilisation {#code}
+
 Le numéro d'immobilisation est utilisé pour conserver le numéro comptable
-### Date d'achat [purchaseDate] {#purchaseDate}
-        
+
+Nom technique: ```code```
+
+### Date d'achat {#purchaseDate}
+
 La date d'achat de l'objet
-### Position [position] {#position}
-        
 
-### Prix [price] {#price}
-        
+Nom technique: ```purchaseDate```
+
+### Position {#position}
+
+
+
+Nom technique: ```position```
+
+### Prix {#price}
+
 Le prix d'achat de l'objet s'il est différent du prix du type d'objet
-### Référence de l'objet [reference] {#reference}
-        
-La référence de l'objet est utilisé pour le retrouver et pour differencier cet objet des autres
-### Rotation [rotation] {#rotation}
-        
 
-### Text Anchor [textAnchor] {#textAnchor}
-        
+Nom technique: ```price```
+
+### Référence de l'objet {#reference}
+
+La référence de l'objet est utilisé pour le retrouver et pour differencier cet objet des autres
+
+Nom technique: ```reference```
+
+### Rotation {#rotation}
+
+
+
+Nom technique: ```rotation```
+
+### Text Anchor {#textAnchor}
+
+
+
+Nom technique: ```textAnchor```
 
 
 ## Entités associées (unique)
 
-### Espace de l'objet [room] {#room}
-        
+### Espace de l'objet {#room}
 
-### Poste de travail [workplace] {#workplace}
-        
 
-### Type d'objet [itemType] {#itemType}
-        
+
+Nom technique: ```room```
+
+### Poste de travail {#workplace}
+
+
+
+Nom technique: ```workplace```
+
+### Type d'objet {#itemType}
+
+
+
+Nom technique: ```itemType```
 
 
 ## Entités associées (liste)
 
-### Associations d'objet à personne [itemToPeople] {#itemToPeople}
-        
+### Associations d'objet à personne {#itemToPeople}
 
-### Interventions sur des objet [personCompanyToItems] {#personCompanyToItems}
-        
+
+
+Nom technique: ```itemToPeople```
+
+### Interventions sur des objet {#personCompanyToItems}
+
 Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur
-### Mouvements d'objet [itemFacts] {#itemFacts}
-        
+
+Nom technique: ```personCompanyToItems```
+
+### Mouvements d'objet {#itemFacts}
+
+
+
+Nom technique: ```itemFacts```
 
 
 

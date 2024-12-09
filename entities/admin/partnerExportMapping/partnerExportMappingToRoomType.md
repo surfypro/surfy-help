@@ -9,11 +9,17 @@
 
 ## Entités associées (unique)
 
-###  Partner Export Mapping [partnerExportMapping] {#partnerExportMapping}
-        
+###  Partner Export Mapping {#partnerExportMapping}
 
-### Typologie d'espace [roomType] {#roomType}
-        
+
+
+Nom technique: ```partnerExportMapping```
+
+### Typologie d'espace {#roomType}
+
+
+
+Nom technique: ```roomType```
 
 
 

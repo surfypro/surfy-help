@@ -5,20 +5,32 @@
 
 ## Propriétés de base
 
-### Date [date] {#date}
-        
+### Date {#date}
 
-### Value [value] {#value}
-        
+
+
+Nom technique: ```date```
+
+### Value {#value}
+
+
+
+Nom technique: ```value```
 
 
 ## Entités associées (unique)
 
-### Bâtiment [building] {#building}
-        
+### Bâtiment {#building}
+
 Le bâtiment est utilisé pour regrouper les étages
-### Type de Fait [factType] {#factType}
-        
+
+Nom technique: ```building```
+
+### Type de Fait {#factType}
+
+
+
+Nom technique: ```factType```
 
 
 

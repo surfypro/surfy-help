@@ -5,16 +5,22 @@
 
 ## Propriétés de base
 
-### Name [name] {#name}
-        
+### Name {#name}
+
+
+
+Nom technique: ```name```
 
 
 
 
 ## Entités associées (liste)
 
-### Association rôle aux opérations d'interface [jupRoleToJupUiOperations] {#jupRoleToJupUiOperations}
-        
+### Association rôle aux opérations d'interface {#jupRoleToJupUiOperations}
+
+
+
+Nom technique: ```jupRoleToJupUiOperations```
 
 
 

@@ -5,23 +5,35 @@
 
 ## Propriétés de base
 
-### Code [code] {#code}
-        
+### Code {#code}
 
-### Color [color] {#color}
-        
 
-### Nom du type de bâtiment [name] {#name}
-        
+
+Nom technique: ```code```
+
+### Color {#color}
+
+
+
+Nom technique: ```color```
+
+### Nom du type de bâtiment {#name}
+
 Nom du type de bâtiment
+
+Nom technique: ```name```
+
 
 
 
 ## Entités associées (liste)
 
-### Bâtiments [buildings] {#buildings}
-        
+### Bâtiments {#buildings}
+
 Le bâtiment est utilisé pour regrouper les étages
+
+Nom technique: ```buildings```
+
 
 
 

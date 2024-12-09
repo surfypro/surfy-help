@@ -5,19 +5,28 @@
 
 ## Propriétés de base
 
-### Code [code] {#code}
-        
+### Code {#code}
 
-### Name [name] {#name}
-        
+
+
+Nom technique: ```code```
+
+### Name {#name}
+
+
+
+Nom technique: ```name```
 
 
 
 
 ## Entités associées (liste)
 
-### Faits [facts] {#facts}
-        
+### Faits {#facts}
+
+
+
+Nom technique: ```facts```
 
 
 

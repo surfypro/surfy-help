@@ -9,11 +9,17 @@
 
 ## Entités associées (unique)
 
-### Rôle de contenu [contentRole] {#contentRole}
-        
+### Rôle de contenu {#contentRole}
 
-### Utilisateur de l'entreprise [userCompany] {#userCompany}
-        
+
+
+Nom technique: ```contentRole```
+
+### Utilisateur de l'entreprise {#userCompany}
+
+
+
+Nom technique: ```userCompany```
 
 
 

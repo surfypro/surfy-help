@@ -9,11 +9,17 @@
 
 ## Entités associées (unique)
 
-### Groupe de typologie d'espace [roomTypeGroup] {#roomTypeGroup}
-        
+### Groupe de typologie d'espace {#roomTypeGroup}
 
-### Typologie d'espace [roomType] {#roomType}
-        
+
+
+Nom technique: ```roomTypeGroup```
+
+### Typologie d'espace {#roomType}
+
+
+
+Nom technique: ```roomType```
 
 
 

@@ -9,11 +9,17 @@
 
 ## Entités associées (unique)
 
-### Bâtiment [building] {#building}
-        
+### Bâtiment {#building}
+
 Le bâtiment est utilisé pour regrouper les étages
-### Rôle de contenu [contentRole] {#contentRole}
-        
+
+Nom technique: ```building```
+
+### Rôle de contenu {#contentRole}
+
+
+
+Nom technique: ```contentRole```
 
 
 

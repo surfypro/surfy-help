@@ -5,28 +5,46 @@
 
 ## Propriétés de base
 
-### Email [email] {#email}
-        
-Le courriel utilisé par l'utilisateur pour les correspondances ou pour l'authentification
-### Nom de famille [lastname] {#lastname}
-        
-Le nom de famille de l'utilisateur
-### Picture [picture] {#picture}
-        
+### Email {#email}
 
-### Prénom [firstname] {#firstname}
-        
+Le courriel utilisé par l'utilisateur pour les correspondances ou pour l'authentification
+
+Nom technique: ```email```
+
+### Nom de famille {#lastname}
+
+Le nom de famille de l'utilisateur
+
+Nom technique: ```lastname```
+
+### Picture {#picture}
+
+
+
+Nom technique: ```picture```
+
+### Prénom {#firstname}
+
 Le prénom de l'utilisateur
-### Sub [sub] {#sub}
-        
+
+Nom technique: ```firstname```
+
+### Sub {#sub}
+
+
+
+Nom technique: ```sub```
 
 
 
 
 ## Entités associées (liste)
 
-### Utilisateurs de l'entreprise [userCompanies] {#userCompanies}
-        
+### Utilisateurs de l'entreprise {#userCompanies}
+
+
+
+Nom technique: ```userCompanies```
 
 
 

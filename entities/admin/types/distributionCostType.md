@@ -5,22 +5,34 @@
 
 ## Propriétés de base
 
-### Code [code] {#code}
-        
+### Code {#code}
+
 Le code est utilisé afin de pouvoir calculer automatiquement les coûts associés
-### Nom du type de distribution des coûts [name] {#name}
-        
+
+Nom technique: ```code```
+
+### Nom du type de distribution des coûts {#name}
+
+
+
+Nom technique: ```name```
 
 
 
 
 ## Entités associées (liste)
 
-### Espaces [rooms] {#rooms}
-        
+### Espaces {#rooms}
 
-### Typologies d'espace [roomTypes] {#roomTypes}
-        
+
+
+Nom technique: ```rooms```
+
+### Typologies d'espace {#roomTypes}
+
+
+
+Nom technique: ```roomTypes```
 
 
 

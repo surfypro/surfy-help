@@ -5,35 +5,59 @@ L'entreprise prestataire permet de conserver les informations de l'entreprise d'
 
 ## Propriétés de base
 
-### Contact [contact] {#contact}
-        
+### Contact {#contact}
+
 Les informations de contact du prestataire
-### Documents associés [documents] {#documents}
-        
+
+Nom technique: ```contact```
+
+### Documents associés {#documents}
+
 Le lien vers les documents associés à ce prestataire
-### Informations complémentaires [comment] {#comment}
-        
+
+Nom technique: ```documents```
+
+### Informations complémentaires {#comment}
+
 Des informations complémentaires sur le prestataire, comme sa mission, ses valeurs, la couverture fonctionelle de sa préstation etc
-### Nom [name] {#name}
-        
+
+Nom technique: ```comment```
+
+### Nom {#name}
+
 Le nom du prestataire, par exemple le nom de l'entreprise d'un prestataire de service
+
+Nom technique: ```name```
+
 
 
 
 ## Entités associées (liste)
 
-### Interventions sur des objet [personCompanyToItems] {#personCompanyToItems}
-        
-Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur
-### Personnes [people] {#people}
-        
+### Interventions sur des objet {#personCompanyToItems}
 
-### Types d'espaces des prestataires [personCompanyToRoomTypes] {#personCompanyToRoomTypes}
-        
+Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur
+
+Nom technique: ```personCompanyToItems```
+
+### Personnes {#people}
+
+
+
+Nom technique: ```people```
+
+### Types d'espaces des prestataires {#personCompanyToRoomTypes}
+
 Les types d'espaces des prestataires permettent de définir une relation entre un type d'espaces et le prestataire et d'y définir une mission
-### Types d'objets des prestataires [personCompanyToItemTypes] {#personCompanyToItemTypes}
-        
+
+Nom technique: ```personCompanyToRoomTypes```
+
+### Types d'objets des prestataires {#personCompanyToItemTypes}
+
 Les types d'objets des prestataires permettent de définir une relation entre le type d'objet et le prestataires et d'y définir la mission
+
+Nom technique: ```personCompanyToItemTypes```
+
 
 
 

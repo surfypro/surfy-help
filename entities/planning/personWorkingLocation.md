@@ -5,33 +5,54 @@ Un emplacement de travail des personnes définie le lieu de travail des personne
 
 ## Propriétés de base
 
-### Date [date] {#date}
-        
+### Date {#date}
 
-### Day Slot Type [daySlotType] {#daySlotType}
-        
+
+
+Nom technique: ```date```
+
+### Day Slot Type {#daySlotType}
+
+
+
+Nom technique: ```daySlotType```
 
 
 ## Entités associées (unique)
 
-###  Working Location [workingLocation] {#workingLocation}
-        
+###  Working Location {#workingLocation}
 
-### Personne [person] {#person}
-        
+
+
+Nom technique: ```workingLocation```
+
+### Personne {#person}
+
+
+
+Nom technique: ```person```
 
 
 ## Entités associées (liste)
 
-### Réservations à l'espace des personnes [personToRoomBookings] {#personToRoomBookings}
-        
+### Réservations à l'espace des personnes {#personToRoomBookings}
+
 Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
-### Réservations au calque d'affectation des personnes [personToDimensionBookings] {#personToDimensionBookings}
-        
+
+Nom technique: ```personToRoomBookings```
+
+### Réservations au calque d'affectation des personnes {#personToDimensionBookings}
+
 Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
-### Réservations au poste de travail des personnes [personToWorkplaceBookings] {#personToWorkplaceBookings}
-        
+
+Nom technique: ```personToDimensionBookings```
+
+### Réservations au poste de travail des personnes {#personToWorkplaceBookings}
+
 Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+
+Nom technique: ```personToWorkplaceBookings```
+
 
 
 

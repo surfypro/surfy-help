@@ -5,19 +5,28 @@ Permet d’afficher les objets par Famille sur les plans et dans l’inventaire 
 
 ## Propriétés de base
 
-### Code [code] {#code}
-        
+### Code {#code}
 
-### Nom de la famille de types de l'objet [name] {#name}
-        
+
+
+Nom technique: ```code```
+
+### Nom de la famille de types de l'objet {#name}
+
 Le nom de la famille permet de l'identifier, ce nom est utilisé pour regrouper les types d'objet
+
+Nom technique: ```name```
+
 
 
 
 ## Entités associées (liste)
 
-### Types d'objet [itemTypes] {#itemTypes}
-        
+### Types d'objet {#itemTypes}
+
+
+
+Nom technique: ```itemTypes```
 
 
 

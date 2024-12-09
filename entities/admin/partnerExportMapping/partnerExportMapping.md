@@ -5,23 +5,35 @@
 
 ## Propriétés de base
 
-### Label [label] {#label}
-        
+### Label {#label}
 
-### Partner Code [partnerCode] {#partnerCode}
-        
+
+
+Nom technique: ```label```
+
+### Partner Code {#partnerCode}
+
+
+
+Nom technique: ```partnerCode```
 
 
 ## Entités associées (unique)
 
-###  Partner Export Mapping Configuration [partnerExportMappingConfiguration] {#partnerExportMappingConfiguration}
-        
+###  Partner Export Mapping Configuration {#partnerExportMappingConfiguration}
+
+
+
+Nom technique: ```partnerExportMappingConfiguration```
 
 
 ## Entités associées (liste)
 
-###  Partner Export Mapping To Room Types [partnerExportMappingToRoomTypes] {#partnerExportMappingToRoomTypes}
-        
+###  Partner Export Mapping To Room Types {#partnerExportMappingToRoomTypes}
+
+
+
+Nom technique: ```partnerExportMappingToRoomTypes```
 
 
 

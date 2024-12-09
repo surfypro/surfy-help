@@ -5,16 +5,22 @@
 
 ## Propriétés de base
 
-### Name [name] {#name}
-        
+### Name {#name}
+
+
+
+Nom technique: ```name```
 
 
 
 
 ## Entités associées (liste)
 
-### Association rôle de contenu aux opérations d'interface pour une entreprise [contentRoleToJupUiTenantOperations] {#contentRoleToJupUiTenantOperations}
-        
+### Association rôle de contenu aux opérations d'interface pour une entreprise {#contentRoleToJupUiTenantOperations}
+
+
+
+Nom technique: ```contentRoleToJupUiTenantOperations```
 
 
 

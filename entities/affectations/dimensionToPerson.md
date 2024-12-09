@@ -9,11 +9,17 @@
 
 ## Entités associées (unique)
 
-### Calque d'analyse [dimension] {#dimension}
-        
+### Calque d'analyse {#dimension}
 
-### Personne [person] {#person}
-        
+
+
+Nom technique: ```dimension```
+
+### Personne {#person}
+
+
+
+Nom technique: ```person```
 
 
 

@@ -5,19 +5,28 @@
 
 ## Propriétés de base
 
-### Nom du fabricant du type d'objet [name] {#name}
-        
+### Nom du fabricant du type d'objet {#name}
+
 Permet d'identifier le nom du fabricant ou la marque
-### Site internet [website] {#website}
-        
+
+Nom technique: ```name```
+
+### Site internet {#website}
+
 L'adresse du site internet du fabricant
+
+Nom technique: ```website```
+
 
 
 
 ## Entités associées (liste)
 
-### Types d'objet [itemTypes] {#itemTypes}
-        
+### Types d'objet {#itemTypes}
+
+
+
+Nom technique: ```itemTypes```
 
 
 

@@ -5,17 +5,26 @@
 
 ## Propriétés de base
 
-### Can See [canSee] {#canSee}
-        
+### Can See {#canSee}
+
+
+
+Nom technique: ```canSee```
 
 
 ## Entités associées (unique)
 
-### Rôle [jupRole] {#jupRole}
-        
+### Rôle {#jupRole}
 
-### Vision du plan [jupUiLayout] {#jupUiLayout}
-        
+
+
+Nom technique: ```jupRole```
+
+### Vision du plan {#jupUiLayout}
+
+
+
+Nom technique: ```jupUiLayout```
 
 
 

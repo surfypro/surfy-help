@@ -5,16 +5,22 @@
 
 ## Propriétés de base
 
-### Nom du statut de la personne [name] {#name}
-        
+### Nom du statut de la personne {#name}
+
+
+
+Nom technique: ```name```
 
 
 
 
 ## Entités associées (liste)
 
-### Personnes [people] {#people}
-        
+### Personnes {#people}
+
+
+
+Nom technique: ```people```
 
 
 

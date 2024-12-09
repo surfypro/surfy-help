@@ -5,31 +5,52 @@
 
 ## Propriétés de base
 
-### Name [name] {#name}
-        
+### Name {#name}
+
+
+
+Nom technique: ```name```
 
 
 
 
 ## Entités associées (liste)
 
-### Association rôle de contenu aux opérations d'interface pour une entreprise [contentRoleToJupUiTenantOperations] {#contentRoleToJupUiTenantOperations}
-        
+### Association rôle de contenu aux opérations d'interface pour une entreprise {#contentRoleToJupUiTenantOperations}
 
-### Associations d'utilisateur d'api au rôle de contenu [apiUserToContentRoles] {#apiUserToContentRoles}
-        
 
-### Associations de règle d'authentification à rôle de contenu [userRegistrationTenantRuleToContentRoles] {#userRegistrationTenantRuleToContentRoles}
-        
 
-### Associations rôle de contenu aux bâtiments [contentRoleToBuildings] {#contentRoleToBuildings}
-        
+Nom technique: ```contentRoleToJupUiTenantOperations```
 
-### Associations rôle de contenu aux étages [contentRoleToFloors] {#contentRoleToFloors}
-        
+### Associations d'utilisateur d'api au rôle de contenu {#apiUserToContentRoles}
 
-### Rôles de contenu de l'utilisateur de l'entreprise [contentRoleToUserCompanies] {#contentRoleToUserCompanies}
-        
+
+
+Nom technique: ```apiUserToContentRoles```
+
+### Associations de règle d'authentification à rôle de contenu {#userRegistrationTenantRuleToContentRoles}
+
+
+
+Nom technique: ```userRegistrationTenantRuleToContentRoles```
+
+### Associations rôle de contenu aux bâtiments {#contentRoleToBuildings}
+
+
+
+Nom technique: ```contentRoleToBuildings```
+
+### Associations rôle de contenu aux étages {#contentRoleToFloors}
+
+
+
+Nom technique: ```contentRoleToFloors```
+
+### Rôles de contenu de l'utilisateur de l'entreprise {#contentRoleToUserCompanies}
+
+
+
+Nom technique: ```contentRoleToUserCompanies```
 
 
 

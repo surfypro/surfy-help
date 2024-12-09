@@ -5,44 +5,77 @@
 
 ## Propriétés de base
 
-### Enable Pathfinding [enablePathfinding] {#enablePathfinding}
-        
+### Enable Pathfinding {#enablePathfinding}
 
-### Icon [iconPath] {#iconPath}
-        
+
+
+Nom technique: ```enablePathfinding```
+
+### Icon {#iconPath}
+
 Le logo de l'entreprise en carré
-### Logo [logoPath] {#logoPath}
-        
+
+Nom technique: ```iconPath```
+
+### Logo {#logoPath}
+
 Le chemin du logo de votre entreprise
-### Nom de l'entreprise [name] {#name}
-        
 
-### Nombre de jours de travail par semaine [workingDaysCount] {#workingDaysCount}
-        
+Nom technique: ```logoPath```
+
+### Nom de l'entreprise {#name}
+
+
+
+Nom technique: ```name```
+
+### Nombre de jours de travail par semaine {#workingDaysCount}
+
 Le nombre de jours de travail par semaine peut être 5 pour les jours ouvrés, 6 incluant le samedi et 7 incluant le dimanche
-### Planning Number Of Days [planningNumberOfDays] {#planningNumberOfDays}
-        
 
-### Proxy Images [proxyImages] {#proxyImages}
-        
+Nom technique: ```workingDaysCount```
+
+### Planning Number Of Days {#planningNumberOfDays}
+
+
+
+Nom technique: ```planningNumberOfDays```
+
+### Proxy Images {#proxyImages}
+
+
+
+Nom technique: ```proxyImages```
 
 
 ## Entités associées (unique)
 
-### Type d'entreprise [companyType] {#companyType}
-        
+### Type d'entreprise {#companyType}
+
+
+
+Nom technique: ```companyType```
 
 
 ## Entités associées (liste)
 
-### Bâtiments [buildings] {#buildings}
-        
-Le bâtiment est utilisé pour regrouper les étages
-### Types de bâtiments [buildingTypes] {#buildingTypes}
-        
+### Bâtiments {#buildings}
 
-### Utilisateurs de l'entreprise [userCompanies] {#userCompanies}
-        
+Le bâtiment est utilisé pour regrouper les étages
+
+Nom technique: ```buildings```
+
+### Types de bâtiments {#buildingTypes}
+
+
+
+Nom technique: ```buildingTypes```
+
+### Utilisateurs de l'entreprise {#userCompanies}
+
+
+
+Nom technique: ```userCompanies```
 
 
 

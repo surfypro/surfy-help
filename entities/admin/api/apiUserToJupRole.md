@@ -9,11 +9,17 @@
 
 ## Entités associées (unique)
 
-### Rôle [jupRole] {#jupRole}
-        
+### Rôle {#jupRole}
 
-### Utilisateur d'api [apiUser] {#apiUser}
-        
+
+
+Nom technique: ```jupRole```
+
+### Utilisateur d'api {#apiUser}
+
+
+
+Nom technique: ```apiUser```
 
 
 

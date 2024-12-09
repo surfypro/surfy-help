@@ -5,41 +5,74 @@
 
 ## Propriétés de base
 
-### Calculated Rate [calculatedRate] {#calculatedRate}
-        
+### Calculated Rate {#calculatedRate}
 
-### Friday Rate [fridayRate] {#fridayRate}
-        
 
-### Monday Rate [mondayRate] {#mondayRate}
-        
 
-### Rate [rate] {#rate}
-        
+Nom technique: ```calculatedRate```
 
-### Saturday Rate [saturdayRate] {#saturdayRate}
-        
+### Friday Rate {#fridayRate}
 
-### Sunday Rate [sundayRate] {#sundayRate}
-        
 
-### Thursday Rate [thursdayRate] {#thursdayRate}
-        
 
-### Tuesday Rate [tuesdayRate] {#tuesdayRate}
-        
+Nom technique: ```fridayRate```
 
-### Wednesday Rate [wednesdayRate] {#wednesdayRate}
-        
+### Monday Rate {#mondayRate}
+
+
+
+Nom technique: ```mondayRate```
+
+### Rate {#rate}
+
+
+
+Nom technique: ```rate```
+
+### Saturday Rate {#saturdayRate}
+
+
+
+Nom technique: ```saturdayRate```
+
+### Sunday Rate {#sundayRate}
+
+
+
+Nom technique: ```sundayRate```
+
+### Thursday Rate {#thursdayRate}
+
+
+
+Nom technique: ```thursdayRate```
+
+### Tuesday Rate {#tuesdayRate}
+
+
+
+Nom technique: ```tuesdayRate```
+
+### Wednesday Rate {#wednesdayRate}
+
+
+
+Nom technique: ```wednesdayRate```
 
 
 ## Entités associées (unique)
 
-### Personne [person] {#person}
-        
+### Personne {#person}
 
-### Poste de travail [workplace] {#workplace}
-        
+
+
+Nom technique: ```person```
+
+### Poste de travail {#workplace}
+
+
+
+Nom technique: ```workplace```
 
 
 

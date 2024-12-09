@@ -9,11 +9,17 @@
 
 ## Entités associées (unique)
 
-### Bâtiment [building] {#building}
-        
+### Bâtiment {#building}
+
 Le bâtiment est utilisé pour regrouper les étages
-### Type de calque [dimensionType] {#dimensionType}
-        
+
+Nom technique: ```building```
+
+### Type de calque {#dimensionType}
+
+
+
+Nom technique: ```dimensionType```
 
 
 

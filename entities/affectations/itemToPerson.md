@@ -9,11 +9,17 @@
 
 ## Entités associées (unique)
 
-### Objet [item] {#item}
-        
+### Objet {#item}
 
-### Personne [person] {#person}
-        
+
+
+Nom technique: ```item```
+
+### Personne {#person}
+
+
+
+Nom technique: ```person```
 
 
 

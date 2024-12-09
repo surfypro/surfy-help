@@ -5,29 +5,50 @@
 
 ## Propriétés de base
 
-### Indice de hauteur [zIndex] {#zIndex}
-        
-L'indice de hauteur permet de définir l'ordre d'affichage des types d'objets, plus l'indice est grand plus l'objet sera au dessus des autres
-### Inventaire physique [physicalInventory] {#physicalInventory}
-        
-Si cette option est cochée pour chaque poste de travail un objet physique sera créé dans Surfy, cet objet pourra avoir une référence unique, dans tous les cas l'inventaire du bâtiment sera à jour
-### Nombre de places assise [seatsCount] {#seatsCount}
-        
-Permet de définir le nombre de places assises disponibles dans le type de poste de travail pour ce type d'objet
-### Position [position] {#position}
-        
+### Indice de hauteur {#zIndex}
 
-### Rotation [rotation] {#rotation}
-        
+L'indice de hauteur permet de définir l'ordre d'affichage des types d'objets, plus l'indice est grand plus l'objet sera au dessus des autres
+
+Nom technique: ```zIndex```
+
+### Inventaire physique {#physicalInventory}
+
+Si cette option est cochée pour chaque poste de travail un objet physique sera créé dans Surfy, cet objet pourra avoir une référence unique, dans tous les cas l'inventaire du bâtiment sera à jour
+
+Nom technique: ```physicalInventory```
+
+### Nombre de places assise {#seatsCount}
+
+Permet de définir le nombre de places assises disponibles dans le type de poste de travail pour ce type d'objet
+
+Nom technique: ```seatsCount```
+
+### Position {#position}
+
+
+
+Nom technique: ```position```
+
+### Rotation {#rotation}
+
+
+
+Nom technique: ```rotation```
 
 
 ## Entités associées (unique)
 
-### Type d'objet [itemType] {#itemType}
-        
+### Type d'objet {#itemType}
 
-### Type de poste de travail [workplaceType] {#workplaceType}
-        
+
+
+Nom technique: ```itemType```
+
+### Type de poste de travail {#workplaceType}
+
+
+
+Nom technique: ```workplaceType```
 
 
 

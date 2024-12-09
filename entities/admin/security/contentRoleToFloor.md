@@ -9,11 +9,17 @@
 
 ## Entités associées (unique)
 
-### Étage [floor] {#floor}
-        
+### Étage {#floor}
 
-### Rôle de contenu [contentRole] {#contentRole}
-        
+
+
+Nom technique: ```floor```
+
+### Rôle de contenu {#contentRole}
+
+
+
+Nom technique: ```contentRole```
 
 
 

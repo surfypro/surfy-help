@@ -5,19 +5,28 @@
 
 ## Propriétés de base
 
-### Code [code] {#code}
-        
+### Code {#code}
 
-### Name [name] {#name}
-        
+
+
+Nom technique: ```code```
+
+### Name {#name}
+
+
+
+Nom technique: ```name```
 
 
 
 
 ## Entités associées (liste)
 
-### Qualifications de segments [roomPointSegments] {#roomPointSegments}
-        
+### Qualifications de segments {#roomPointSegments}
+
+
+
+Nom technique: ```roomPointSegments```
 
 
 

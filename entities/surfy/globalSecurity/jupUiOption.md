@@ -5,19 +5,28 @@
 
 ## Propriétés de base
 
-### Name [name] {#name}
-        
+### Name {#name}
 
-### Scope [scope] {#scope}
-        
+
+
+Nom technique: ```name```
+
+### Scope {#scope}
+
+
+
+Nom technique: ```scope```
 
 
 
 
 ## Entités associées (liste)
 
-### Associations rôle aux visions du plan [jupRoleToJupUiOptions] {#jupRoleToJupUiOptions}
-        
+### Associations rôle aux visions du plan {#jupRoleToJupUiOptions}
+
+
+
+Nom technique: ```jupRoleToJupUiOptions```
 
 
 
