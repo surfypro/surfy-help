@@ -3,23 +3,23 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 
 
-## Entités associées (unique) {#properties-belongs-to} ##
+## Entités associées (unique) {#properties-belongs-to}
 
 ### Bâtiment {#building}
 
 Le bâtiment est utilisé pour regrouper les étages
 
-Nom technique: ```building```
+*Nom technique:* ```building```
 
 ### Type de calque {#dimensionType}
 
 
 
-Nom technique: ```dimensionType```
+*Nom technique:* ```dimensionType```
 
 
 

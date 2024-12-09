@@ -3,54 +3,54 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 ### Code {#code}
 
 
 
-Nom technique: ```code```
+*Nom technique:* ```code```
 
 ### Couleur {#color}
 
 
 
-Nom technique: ```color```
+*Nom technique:* ```color```
 
 ### Exclure {#exclude}
 
 Exclure les typologies d'espace de ce groupe
 
-Nom technique: ```exclude```
+*Nom technique:* ```exclude```
 
 ### Nom du groupe de typologie d'espace {#name}
 
 
 
-Nom technique: ```name```
+*Nom technique:* ```name```
 
 
 
 
-## Entités associées (liste) {#properties-has-many} ##
+## Entités associées (liste) {#properties-has-many}
 
 ### Associations groupes de typologies d'espace à typologies d'espace {#roomTypeGroupToRoomTypes}
 
 
 
-Nom technique: ```roomTypeGroupToRoomTypes```
+*Nom technique:* ```roomTypeGroupToRoomTypes```
 
 ### Groupes de typologies d'espace des bâtiments {#roomTypeGroupBuildings}
 
 
 
-Nom technique: ```roomTypeGroupBuildings```
+*Nom technique:* ```roomTypeGroupBuildings```
 
 ### Groupes de typologies d'espace des étages {#roomTypeGroupFloors}
 
 
 
-Nom technique: ```roomTypeGroupFloors```
+*Nom technique:* ```roomTypeGroupFloors```
 
 
 

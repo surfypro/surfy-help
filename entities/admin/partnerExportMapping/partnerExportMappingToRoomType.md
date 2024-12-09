@@ -3,23 +3,23 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 
 
-## Entités associées (unique) {#properties-belongs-to} ##
+## Entités associées (unique) {#properties-belongs-to}
 
 ###  Partner Export Mapping {#partnerExportMapping}
 
 
 
-Nom technique: ```partnerExportMapping```
+*Nom technique:* ```partnerExportMapping```
 
 ### Typologie d'espace {#roomType}
 
 
 
-Nom technique: ```roomType```
+*Nom technique:* ```roomType```
 
 
 

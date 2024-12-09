@@ -3,23 +3,23 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 
 
-## Entités associées (unique) {#properties-belongs-to} ##
+## Entités associées (unique) {#properties-belongs-to}
 
 ### Rôle {#jupRole}
 
 
 
-Nom technique: ```jupRole```
+*Nom technique:* ```jupRole```
 
 ### Utilisateur d'api {#apiUser}
 
 
 
-Nom technique: ```apiUser```
+*Nom technique:* ```apiUser```
 
 
 

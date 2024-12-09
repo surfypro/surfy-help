@@ -1,0 +1,8 @@
+{
+  "label": "Points",
+  "position": 6,
+  "link": {
+    "slug": "spacePoints",
+    "type": "generated-index"
+  }
+}

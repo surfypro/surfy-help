@@ -3,23 +3,23 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 
 
-## Entités associées (unique) {#properties-belongs-to} ##
+## Entités associées (unique) {#properties-belongs-to}
 
 ### Étage {#floor}
 
 
 
-Nom technique: ```floor```
+*Nom technique:* ```floor```
 
 ### Rôle de contenu {#contentRole}
 
 
 
-Nom technique: ```contentRole```
+*Nom technique:* ```contentRole```
 
 
 

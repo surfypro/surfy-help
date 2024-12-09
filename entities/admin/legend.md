@@ -3,19 +3,19 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 ### Configuration {#configuration}
 
 
 
-Nom technique: ```configuration```
+*Nom technique:* ```configuration```
 
 ### Name {#name}
 
 
 
-Nom technique: ```name```
+*Nom technique:* ```name```
 
 
 

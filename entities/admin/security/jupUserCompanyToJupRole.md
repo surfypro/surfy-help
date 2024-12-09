@@ -3,23 +3,23 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 
 
-## Entités associées (unique) {#properties-belongs-to} ##
+## Entités associées (unique) {#properties-belongs-to}
 
 ### Rôle {#jupRole}
 
 
 
-Nom technique: ```jupRole```
+*Nom technique:* ```jupRole```
 
 ### Utilisateur de l'entreprise {#userCompany}
 
 
 
-Nom technique: ```userCompany```
+*Nom technique:* ```userCompany```
 
 
 

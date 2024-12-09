@@ -3,24 +3,24 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 ### Name {#name}
 
 
 
-Nom technique: ```name```
+*Nom technique:* ```name```
 
 
 
 
-## Entités associées (liste) {#properties-has-many} ##
+## Entités associées (liste) {#properties-has-many}
 
 ### Association rôle de contenu aux opérations d'interface pour une entreprise {#contentRoleToJupUiTenantOperations}
 
 
 
-Nom technique: ```contentRoleToJupUiTenantOperations```
+*Nom technique:* ```contentRoleToJupUiTenantOperations```
 
 
 

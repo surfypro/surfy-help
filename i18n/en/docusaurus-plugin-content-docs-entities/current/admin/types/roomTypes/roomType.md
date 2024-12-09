@@ -1,0 +1,106 @@
+# Space typology
+<!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
+
+
+
+## Basic properties {#properties-base}
+
+### 2d color {#color}
+
+The color of the type of space makes it possible to differentiate each type on the 2d plan
+
+*Technical name:* ```color```
+
+### 3d color {#color3d}
+
+Allows you to manage the color of the type of space in 3d, this option is only applicable to the 3d vision of the floor
+
+*Technical name:* ```color3d```
+
+### Cadence {#cadence}
+
+The rate is a numerical value indicating the difficulty of cleaning the type of space. It is equal to the number of m² that can be treated in one hour in this type (circulation, laboratory, etc.)
+
+*Technical name:* ```cadence```
+
+### Code {#code}
+
+
+
+*Technical name:* ```code```
+
+### Icon {#icon}
+
+The icon for the type of space makes it possible to display for this type of space an icon in 2d and 3d plans instead of the classic information on the plan, associated with the background color this makes it possible to render the more pleasant reading of the plan
+
+*Technical name:* ```icon```
+
+### Is bookable? {#isBookable}
+
+Check this box if this type of space can be reserved
+
+*Technical name:* ```isBookable```
+
+### Show walls {#displayWallsOn3d}
+
+Allows you to display or not the walls of the space in the 3d floor plan, the undisplayed walls are dotted in 2d, this allows you to have a more pleasant view, especially for open spaces
+
+*Technical name:* ```displayWallsOn3d```
+
+### Space type name {#name}
+
+
+
+*Technical name:* ```name```
+
+
+## Associated entities (unique) {#properties-belongs-to}
+
+### Type of cost distribution {#distributionCostType}
+
+
+
+*Technical name:* ```distributionCostType```
+
+
+## Associated entities (list) {#properties-has-many}
+
+###  Partner Export Mapping To Room Types {#partnerExportMappingToRoomTypes}
+
+
+
+*Technical name:* ```partnerExportMappingToRoomTypes```
+
+### Associations groups of space typologies to space typologies {#roomTypeGroupToRoomTypes}
+
+
+
+*Technical name:* ```roomTypeGroupToRoomTypes```
+
+### Building space typologies {#roomTypeBuildings}
+
+
+
+*Technical name:* ```roomTypeBuildings```
+
+### Floor space typologies {#roomTypeFloors}
+
+
+
+*Technical name:* ```roomTypeFloors```
+
+### Spaces {#rooms}
+
+
+
+*Technical name:* ```rooms```
+
+### Types of provider spaces {#personCompanyToRoomTypes}
+
+The types of spaces of the service providers make it possible to define a relationship between a type of space and the service provider and to define a mission.
+
+*Technical name:* ```personCompanyToRoomTypes```
+
+
+
+

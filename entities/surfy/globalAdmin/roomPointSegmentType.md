@@ -3,30 +3,30 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 ### Code {#code}
 
 
 
-Nom technique: ```code```
+*Nom technique:* ```code```
 
 ### Name {#name}
 
 
 
-Nom technique: ```name```
+*Nom technique:* ```name```
 
 
 
 
-## Entités associées (liste) {#properties-has-many} ##
+## Entités associées (liste) {#properties-has-many}
 
 ### Qualifications de segments {#roomPointSegments}
 
 
 
-Nom technique: ```roomPointSegments```
+*Nom technique:* ```roomPointSegments```
 
 
 

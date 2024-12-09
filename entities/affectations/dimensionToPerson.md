@@ -3,23 +3,23 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 
 
-## Entités associées (unique) {#properties-belongs-to} ##
+## Entités associées (unique) {#properties-belongs-to}
 
 ### Calque d'analyse {#dimension}
 
 
 
-Nom technique: ```dimension```
+*Nom technique:* ```dimension```
 
 ### Personne {#person}
 
 
 
-Nom technique: ```person```
+*Nom technique:* ```person```
 
 
 

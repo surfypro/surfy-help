@@ -3,23 +3,23 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 
 
-## Entités associées (unique) {#properties-belongs-to} ##
+## Entités associées (unique) {#properties-belongs-to}
 
 ### Règle d'authentification {#userRegistrationTenantRule}
 
 
 
-Nom technique: ```userRegistrationTenantRule```
+*Nom technique:* ```userRegistrationTenantRule```
 
 ### Rôle {#jupRole}
 
 
 
-Nom technique: ```jupRole```
+*Nom technique:* ```jupRole```
 
 
 

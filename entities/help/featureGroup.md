@@ -3,37 +3,37 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 ### Name {#name}
 
 
 
-Nom technique: ```name```
+*Nom technique:* ```name```
 
 ### Sort Order {#sortOrder}
 
 
 
-Nom technique: ```sortOrder```
+*Nom technique:* ```sortOrder```
 
 
-## Entités associées (unique) {#properties-belongs-to} ##
+## Entités associées (unique) {#properties-belongs-to}
 
 ###  Feature Family {#featureFamily}
 
 
 
-Nom technique: ```featureFamily```
+*Nom technique:* ```featureFamily```
 
 
-## Entités associées (liste) {#properties-has-many} ##
+## Entités associées (liste) {#properties-has-many}
 
 ###  Features {#features}
 
 
 
-Nom technique: ```features```
+*Nom technique:* ```features```
 
 
 

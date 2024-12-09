@@ -3,37 +3,37 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 ### Is Default View {#isDefaultView}
 
 
 
-Nom technique: ```isDefaultView```
+*Nom technique:* ```isDefaultView```
 
 ### Name {#name}
 
 
 
-Nom technique: ```name```
+*Nom technique:* ```name```
 
 
-## Entités associées (unique) {#properties-belongs-to} ##
+## Entités associées (unique) {#properties-belongs-to}
 
 ### Type d'entité {#jupObjectType}
 
 
 
-Nom technique: ```jupObjectType```
+*Nom technique:* ```jupObjectType```
 
 
-## Entités associées (liste) {#properties-has-many} ##
+## Entités associées (liste) {#properties-has-many}
 
 ### Associations rôle aux vues d'interface {#jupRoleToJupUiViews}
 
 
 
-Nom technique: ```jupRoleToJupUiViews```
+*Nom technique:* ```jupRoleToJupUiViews```
 
 
 

@@ -3,28 +3,28 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 ### Peut voir la vue {#canSee}
 
 Autorise la vue a être vue par le rôle
 
-Nom technique: ```canSee```
+*Nom technique:* ```canSee```
 
 
-## Entités associées (unique) {#properties-belongs-to} ##
+## Entités associées (unique) {#properties-belongs-to}
 
 ### Rôle {#jupRole}
 
 
 
-Nom technique: ```jupRole```
+*Nom technique:* ```jupRole```
 
 ### Vue d'interface {#jupUiView}
 
 
 
-Nom technique: ```jupUiView```
+*Nom technique:* ```jupUiView```
 
 
 

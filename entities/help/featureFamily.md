@@ -3,24 +3,24 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 ### Name {#name}
 
 
 
-Nom technique: ```name```
+*Nom technique:* ```name```
 
 
 
 
-## Entités associées (liste) {#properties-has-many} ##
+## Entités associées (liste) {#properties-has-many}
 
 ###  Feature Groups {#featureGroups}
 
 
 
-Nom technique: ```featureGroups```
+*Nom technique:* ```featureGroups```
 
 
 

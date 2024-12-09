@@ -3,36 +3,36 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 ### Code secret {#clientSecret}
 
 le mot de passe secret de votre compte API peut être généré et ne devrait jamais être communiqué
 
-Nom technique: ```clientSecret```
+*Nom technique:* ```clientSecret```
 
 ### Name {#name}
 
 
 
-Nom technique: ```name```
+*Nom technique:* ```name```
 
 
 
 
-## Entités associées (liste) {#properties-has-many} ##
+## Entités associées (liste) {#properties-has-many}
 
 ### Associations d'utilisateur d'api au rôle {#apiUserToJupRoles}
 
 
 
-Nom technique: ```apiUserToJupRoles```
+*Nom technique:* ```apiUserToJupRoles```
 
 ### Associations d'utilisateur d'api au rôle de contenu {#apiUserToContentRoles}
 
 
 
-Nom technique: ```apiUserToContentRoles```
+*Nom technique:* ```apiUserToContentRoles```
 
 
 

@@ -3,30 +3,30 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 ### Code {#code}
 
 
 
-Nom technique: ```code```
+*Nom technique:* ```code```
 
 ### Name {#name}
 
 
 
-Nom technique: ```name```
+*Nom technique:* ```name```
 
 
 
 
-## Entités associées (liste) {#properties-has-many} ##
+## Entités associées (liste) {#properties-has-many}
 
 ### Emplacements de travail des personnes {#personWorkingLocations}
 
 Un emplacement de travail des personnes définie le lieu de travail des personnes
 
-Nom technique: ```personWorkingLocations```
+*Nom technique:* ```personWorkingLocations```
 
 
 

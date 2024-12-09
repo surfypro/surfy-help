@@ -3,23 +3,23 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 
 
-## Entités associées (unique) {#properties-belongs-to} ##
+## Entités associées (unique) {#properties-belongs-to}
 
 ### Bâtiment {#building}
 
 Le bâtiment est utilisé pour regrouper les étages
 
-Nom technique: ```building```
+*Nom technique:* ```building```
 
 ### Rôle de contenu {#contentRole}
 
 
 
-Nom technique: ```contentRole```
+*Nom technique:* ```contentRole```
 
 
 

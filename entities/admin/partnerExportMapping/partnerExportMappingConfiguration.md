@@ -3,30 +3,30 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 ### Code {#code}
 
 
 
-Nom technique: ```code```
+*Nom technique:* ```code```
 
 
 
 
-## Entités associées (liste) {#properties-has-many} ##
+## Entités associées (liste) {#properties-has-many}
 
 ###  Partner Export Mapping Configuration To Floors {#partnerExportMappingConfigurationToFloors}
 
 
 
-Nom technique: ```partnerExportMappingConfigurationToFloors```
+*Nom technique:* ```partnerExportMappingConfigurationToFloors```
 
 ###  Partner Export Mappings {#partnerExportMappings}
 
 
 
-Nom technique: ```partnerExportMappings```
+*Nom technique:* ```partnerExportMappings```
 
 
 

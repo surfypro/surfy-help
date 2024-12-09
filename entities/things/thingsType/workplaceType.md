@@ -3,54 +3,54 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 ### Center {#center}
 
 
 
-Nom technique: ```center```
+*Nom technique:* ```center```
 
 ### Color {#color}
 
 
 
-Nom technique: ```color```
+*Nom technique:* ```color```
 
 ### Nom du type de poste de travail {#name}
 
 
 
-Nom technique: ```name```
+*Nom technique:* ```name```
 
 ### Size {#size}
 
 
 
-Nom technique: ```size```
+*Nom technique:* ```size```
 
 ### Z Index {#zIndex}
 
 
 
-Nom technique: ```zIndex```
+*Nom technique:* ```zIndex```
 
 
 
 
-## Entités associées (liste) {#properties-has-many} ##
+## Entités associées (liste) {#properties-has-many}
 
 ### Postes de travail {#workplaces}
 
 
 
-Nom technique: ```workplaces```
+*Nom technique:* ```workplaces```
 
 ### Types d'objet dans type de poste de travail {#workplaceTypeItemTypes}
 
 
 
-Nom technique: ```workplaceTypeItemTypes```
+*Nom technique:* ```workplaceTypeItemTypes```
 
 
 

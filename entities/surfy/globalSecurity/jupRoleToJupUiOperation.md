@@ -3,28 +3,28 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 ### Can See {#canSee}
 
 
 
-Nom technique: ```canSee```
+*Nom technique:* ```canSee```
 
 
-## Entités associées (unique) {#properties-belongs-to} ##
+## Entités associées (unique) {#properties-belongs-to}
 
 ### Opération d'interface {#jupUiOperation}
 
 
 
-Nom technique: ```jupUiOperation```
+*Nom technique:* ```jupUiOperation```
 
 ### Rôle {#jupRole}
 
 
 
-Nom technique: ```jupRole```
+*Nom technique:* ```jupRole```
 
 
 

@@ -3,30 +3,30 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 ### Name {#name}
 
 
 
-Nom technique: ```name```
+*Nom technique:* ```name```
 
 
 
 
-## Entités associées (liste) {#properties-has-many} ##
+## Entités associées (liste) {#properties-has-many}
 
 ###  Jup Role To Jup Ui Layouts {#jupRoleToJupUiLayouts}
 
 
 
-Nom technique: ```jupRoleToJupUiLayouts```
+*Nom technique:* ```jupRoleToJupUiLayouts```
 
 ### Bâtiments {#buildings}
 
 Le bâtiment est utilisé pour regrouper les étages
 
-Nom technique: ```buildings```
+*Nom technique:* ```buildings```
 
 
 

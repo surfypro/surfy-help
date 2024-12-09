@@ -1,0 +1,8 @@
+{
+  "label": "Administration",
+  "position": 7,
+  "link": {
+    "slug": "admin",
+    "type": "generated-index"
+  }
+}

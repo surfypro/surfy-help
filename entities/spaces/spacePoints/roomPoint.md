@@ -3,49 +3,49 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 ### x {#x}
 
 Coordonnée sur l'axe X
 
-Nom technique: ```x```
+*Nom technique:* ```x```
 
 ### y {#y}
 
 Coordonnée sur l'axe Y
 
-Nom technique: ```y```
+*Nom technique:* ```y```
 
 
-## Entités associées (unique) {#properties-belongs-to} ##
+## Entités associées (unique) {#properties-belongs-to}
 
 ### Étage {#floor}
 
 
 
-Nom technique: ```floor```
+*Nom technique:* ```floor```
 
 
-## Entités associées (liste) {#properties-has-many} ##
+## Entités associées (liste) {#properties-has-many}
 
 ### Associations entre un point et un espace {#roomPointRooms}
 
 L'association entre un point et un espace permet de conserver l'ordre des points dans un espace afin de constituer un polyon
 
-Nom technique: ```roomPointRooms```
+*Nom technique:* ```roomPointRooms```
 
 ### Qualifications de segments {#roomPointSegmentStarts}
 
 
 
-Nom technique: ```roomPointSegmentStarts```
+*Nom technique:* ```roomPointSegmentStarts```
 
 ### Qualifications de segments {#roomPointSegmentEnds}
 
 
 
-Nom technique: ```roomPointSegmentEnds```
+*Nom technique:* ```roomPointSegmentEnds```
 
 
 

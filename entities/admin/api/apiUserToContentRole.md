@@ -3,23 +3,23 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 
 
-## Entités associées (unique) {#properties-belongs-to} ##
+## Entités associées (unique) {#properties-belongs-to}
 
 ### Rôle de contenu {#contentRole}
 
 
 
-Nom technique: ```contentRole```
+*Nom technique:* ```contentRole```
 
 ### Utilisateur d'api {#apiUser}
 
 
 
-Nom technique: ```apiUser```
+*Nom technique:* ```apiUser```
 
 
 

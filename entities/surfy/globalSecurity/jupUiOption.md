@@ -3,30 +3,30 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 ### Name {#name}
 
 
 
-Nom technique: ```name```
+*Nom technique:* ```name```
 
 ### Scope {#scope}
 
 
 
-Nom technique: ```scope```
+*Nom technique:* ```scope```
 
 
 
 
-## Entités associées (liste) {#properties-has-many} ##
+## Entités associées (liste) {#properties-has-many}
 
 ### Associations rôle aux visions du plan {#jupRoleToJupUiOptions}
 
 
 
-Nom technique: ```jupRoleToJupUiOptions```
+*Nom technique:* ```jupRoleToJupUiOptions```
 
 
 

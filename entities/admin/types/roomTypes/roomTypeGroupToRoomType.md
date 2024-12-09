@@ -3,23 +3,23 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 
 
-## Entités associées (unique) {#properties-belongs-to} ##
+## Entités associées (unique) {#properties-belongs-to}
 
 ### Groupe de typologie d'espace {#roomTypeGroup}
 
 
 
-Nom technique: ```roomTypeGroup```
+*Nom technique:* ```roomTypeGroup```
 
 ### Typologie d'espace {#roomType}
 
 
 
-Nom technique: ```roomType```
+*Nom technique:* ```roomType```
 
 
 

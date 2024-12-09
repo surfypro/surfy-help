@@ -1,22 +1,22 @@
 import React from "react";
 import { Box, Fade, Paper, Tooltip, TooltipProps, tooltipClasses } from '@mui/material';
 import entitiesPath from '../../../src/metaModel/entities.paths.json';
-import entitiesTranslations from '../../../src/metaModel/entities.translations.json';
 import { styled } from '@mui/material/styles';
+import { useTranslations } from "../Translations/translations";
+
 
 export function PropertyType(props: { code: string }) {
-
+    const entitiesTranslations = useTranslations();
     const { code } = props;
     const [objectTypeName, name] = code.split(':');
 
-    // throw new Error("object type or property not found")
     const directoryPath = entitiesPath.objectTypePathMapping[objectTypeName];
     if (!directoryPath) {
         throw new Error(`object type ${objectTypeName} not found in entities`);
     }
 
-    const translations: { label: string, description: string | null } = entitiesTranslations['fr'].propertyTypeTranslations[objectTypeName][name];
-    const objectTypeTranslation = entitiesTranslations['fr'].objectTypeTranslations[objectTypeName];
+    const translations: { label: string, description: string | null } = entitiesTranslations.propertyTypeTranslations[objectTypeName][name];
+    const objectTypeTranslation = entitiesTranslations.objectTypeTranslations[objectTypeName];
 
     const href = `${directoryPath}/${objectTypeName}#${name}`;
 

@@ -3,43 +3,43 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 ### Activé {#enable}
 
 Il faut activer la clé pour pouvoir l'utiliser
 
-Nom technique: ```enable```
+*Nom technique:* ```enable```
 
 ### Client Id {#clientId}
 
 
 
-Nom technique: ```clientId```
+*Nom technique:* ```clientId```
 
 ### Client Secret {#clientSecret}
 
 
 
-Nom technique: ```clientSecret```
+*Nom technique:* ```clientSecret```
 
 ### Code {#code}
 
 
 
-Nom technique: ```code```
+*Nom technique:* ```code```
 
 ### Host {#host}
 
 
 
-Nom technique: ```host```
+*Nom technique:* ```host```
 
 ### Label {#label}
 
 
 
-Nom technique: ```label```
+*Nom technique:* ```label```
 
 
 

@@ -3,29 +3,29 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 
 
-## Entités associées (unique) {#properties-belongs-to} ##
+## Entités associées (unique) {#properties-belongs-to}
 
 ### Personne destination {#personTarget}
 
 
 
-Nom technique: ```personTarget```
+*Nom technique:* ```personTarget```
 
 ### Personne source {#personSource}
 
 
 
-Nom technique: ```personSource```
+*Nom technique:* ```personSource```
 
 ### Type de relation entre personnes {#personToPersonType}
 
 
 
-Nom technique: ```personToPersonType```
+*Nom technique:* ```personToPersonType```
 
 
 

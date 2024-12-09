@@ -3,34 +3,34 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 ### Index de tri {#sortIndex}
 
 
 
-Nom technique: ```sortIndex```
+*Nom technique:* ```sortIndex```
 
 ### x {#x}
 
 
 
-Nom technique: ```x```
+*Nom technique:* ```x```
 
 ### y {#y}
 
 
 
-Nom technique: ```y```
+*Nom technique:* ```y```
 
 
-## Entités associées (unique) {#properties-belongs-to} ##
+## Entités associées (unique) {#properties-belongs-to}
 
 ### Type d'objet {#itemType}
 
 
 
-Nom technique: ```itemType```
+*Nom technique:* ```itemType```
 
 
 

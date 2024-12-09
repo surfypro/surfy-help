@@ -3,24 +3,24 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 ### Name {#name}
 
 
 
-Nom technique: ```name```
+*Nom technique:* ```name```
 
 
 
 
-## Entités associées (liste) {#properties-has-many} ##
+## Entités associées (liste) {#properties-has-many}
 
 ### Connecteurs d'espace {#roomConnectors}
 
 Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces dans des étages différents
 
-Nom technique: ```roomConnectors```
+*Nom technique:* ```roomConnectors```
 
 
 

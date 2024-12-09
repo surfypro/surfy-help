@@ -3,23 +3,23 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 
 
-## Entités associées (unique) {#properties-belongs-to} ##
+## Entités associées (unique) {#properties-belongs-to}
 
 ### Objet {#item}
 
 
 
-Nom technique: ```item```
+*Nom technique:* ```item```
 
 ### Personne {#person}
 
 
 
-Nom technique: ```person```
+*Nom technique:* ```person```
 
 
 

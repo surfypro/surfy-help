@@ -3,142 +3,142 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 ### Capacité totale {#totalCapacityCount}
 
 La capacité totale de places est la somme du nombre de places assises et de la capacité hors assises au niveau des espaces
 
-Nom technique: ```totalCapacityCount```
+*Nom technique:* ```totalCapacityCount```
 
 ### Empreinte carbone {#carbonFootprint}
 
 L'empreinte carbone est le nombre de CO2 émis
 
-Nom technique: ```carbonFootprint```
+*Nom technique:* ```carbonFootprint```
 
 ### Nombre d'affectations {#peopleCount}
 
 
 
-Nom technique: ```peopleCount```
+*Nom technique:* ```peopleCount```
 
 ### Nombre d'espaces {#roomsCount}
 
 Le nombre total d'espaces
 
-Nom technique: ```roomsCount```
+*Nom technique:* ```roomsCount```
 
 ### Nombre de places assises {#seatsCount}
 
 Le nombre total de places assises
 
-Nom technique: ```seatsCount```
+*Nom technique:* ```seatsCount```
 
 ### Nombre de postes de travail {#workplacesCount}
 
 Le nombre total de postes de travail dans les espaces
 
-Nom technique: ```workplacesCount```
+*Nom technique:* ```workplacesCount```
 
 ### Nombre de postes de travail de passage {#transitWorkplacesCount}
 
 Nombre de postes de travail de passage, ces postes ne sont pas comptabilisés dans les postes libres et ne sont pas en flex
 
-Nom technique: ```transitWorkplacesCount```
+*Nom technique:* ```transitWorkplacesCount```
 
 ### Nombre de postes de travail partagés {#sharedWorkplacesCount}
 
 Nombre total de postes de travail partagés par au moins 2 personnes
 
-Nom technique: ```sharedWorkplacesCount```
+*Nom technique:* ```sharedWorkplacesCount```
 
 ### Nombre de postes flex {#flexWorkplacesCount}
 
 Nombre total de postes flex
 
-Nom technique: ```flexWorkplacesCount```
+*Nom technique:* ```flexWorkplacesCount```
 
 ### Nombre de postes libres {#freeWorkplacesCount}
 
 Nombre total de postes libres
 
-Nom technique: ```freeWorkplacesCount```
+*Nom technique:* ```freeWorkplacesCount```
 
 ### Nombre total d'affectations {#totalPeopleCount}
 
 Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail
 
-Nom technique: ```totalPeopleCount```
+*Nom technique:* ```totalPeopleCount```
 
 ### Ratio d'occupation {#peopleRatio}
 
 Le ratio d'occupation est le nombre de métres carrés divisé par le nombre de personnes affectées soit directement dans les espaces, soit via un poste de travail
 
-Nom technique: ```peopleRatio```
+*Nom technique:* ```peopleRatio```
 
 ### Ratio postes de travail {#workplacesRatio}
 
 Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail
 
-Nom technique: ```workplacesRatio```
+*Nom technique:* ```workplacesRatio```
 
 ### Surface qualifiée {#roomsArea}
 
 La surface qualifiée est la somme des surfaces des espaces
 
-Nom technique: ```roomsArea```
+*Nom technique:* ```roomsArea```
 
 ### Taux d'occupation {#occupancyRate}
 
 Permet de connaître le taux d'occupation des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail
 
-Nom technique: ```occupancyRate```
+*Nom technique:* ```occupancyRate```
 
 ### Taux de foisonnement {#expansionRatio}
 
 Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisés par le nombre de postes de travail
 
-Nom technique: ```expansionRatio```
+*Nom technique:* ```expansionRatio```
 
 ### Taux de places assises par affectations {#seatsPeopleRatio}
 
 Le nombre de places assises par personnes affectées
 
-Nom technique: ```seatsPeopleRatio```
+*Nom technique:* ```seatsPeopleRatio```
 
 ### Taux de places assises par postes de travail {#totalCapacityWorkplaceCountRatio}
 
 Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail
 
-Nom technique: ```totalCapacityWorkplaceCountRatio```
+*Nom technique:* ```totalCapacityWorkplaceCountRatio```
 
 ### Taux de postes de travail en flex {#flexRatio}
 
 Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail
 
-Nom technique: ```flexRatio```
+*Nom technique:* ```flexRatio```
 
 ### Taux de postes de travail partagés {#sharedWorkplacesRatio}
 
 Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail
 
-Nom technique: ```sharedWorkplacesRatio```
+*Nom technique:* ```sharedWorkplacesRatio```
 
 
-## Entités associées (unique) {#properties-belongs-to} ##
+## Entités associées (unique) {#properties-belongs-to}
 
 ### Bâtiment {#building}
 
 Le bâtiment est utilisé pour regrouper les étages
 
-Nom technique: ```building```
+*Nom technique:* ```building```
 
 ### Centre de coût {#costCenter}
 
 Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation
 
-Nom technique: ```costCenter```
+*Nom technique:* ```costCenter```
 
 
 

@@ -3,24 +3,24 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 ### Name {#name}
 
 
 
-Nom technique: ```name```
+*Nom technique:* ```name```
 
 
 
 
-## Entités associées (liste) {#properties-has-many} ##
+## Entités associées (liste) {#properties-has-many}
 
 ### Règles d'authentification {#userRegistrationTenantRules}
 
 
 
-Nom technique: ```userRegistrationTenantRules```
+*Nom technique:* ```userRegistrationTenantRules```
 
 
 

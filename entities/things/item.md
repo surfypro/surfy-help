@@ -3,91 +3,91 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 ### Code d'immobilisation {#code}
 
 Le numéro d'immobilisation est utilisé pour conserver le numéro comptable
 
-Nom technique: ```code```
+*Nom technique:* ```code```
 
 ### Date d'achat {#purchaseDate}
 
 La date d'achat de l'objet
 
-Nom technique: ```purchaseDate```
+*Nom technique:* ```purchaseDate```
 
 ### Position {#position}
 
 
 
-Nom technique: ```position```
+*Nom technique:* ```position```
 
 ### Prix {#price}
 
 Le prix d'achat de l'objet s'il est différent du prix du type d'objet
 
-Nom technique: ```price```
+*Nom technique:* ```price```
 
 ### Référence de l'objet {#reference}
 
 La référence de l'objet est utilisé pour le retrouver et pour differencier cet objet des autres
 
-Nom technique: ```reference```
+*Nom technique:* ```reference```
 
 ### Rotation {#rotation}
 
 
 
-Nom technique: ```rotation```
+*Nom technique:* ```rotation```
 
 ### Text Anchor {#textAnchor}
 
 
 
-Nom technique: ```textAnchor```
+*Nom technique:* ```textAnchor```
 
 
-## Entités associées (unique) {#properties-belongs-to} ##
+## Entités associées (unique) {#properties-belongs-to}
 
 ### Espace de l'objet {#room}
 
 
 
-Nom technique: ```room```
+*Nom technique:* ```room```
 
 ### Poste de travail {#workplace}
 
 
 
-Nom technique: ```workplace```
+*Nom technique:* ```workplace```
 
 ### Type d'objet {#itemType}
 
 
 
-Nom technique: ```itemType```
+*Nom technique:* ```itemType```
 
 
-## Entités associées (liste) {#properties-has-many} ##
+## Entités associées (liste) {#properties-has-many}
 
 ### Associations d'objet à personne {#itemToPeople}
 
 
 
-Nom technique: ```itemToPeople```
+*Nom technique:* ```itemToPeople```
 
 ### Interventions sur des objet {#personCompanyToItems}
 
 Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur
 
-Nom technique: ```personCompanyToItems```
+*Nom technique:* ```personCompanyToItems```
 
 ### Mouvements d'objet {#itemFacts}
 
 
 
-Nom technique: ```itemFacts```
+*Nom technique:* ```itemFacts```
 
 
 

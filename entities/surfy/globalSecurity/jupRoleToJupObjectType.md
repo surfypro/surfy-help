@@ -3,46 +3,46 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 ### Création (C) {#arCreate}
 
 Autorise la création d'entité
 
-Nom technique: ```arCreate```
+*Nom technique:* ```arCreate```
 
 ### Lecture (R) {#arRead}
 
 Autorise la lecture des entités
 
-Nom technique: ```arRead```
+*Nom technique:* ```arRead```
 
 ### Mise à jour (U) {#arUpdate}
 
 Autorise la mise à jour des entités
 
-Nom technique: ```arUpdate```
+*Nom technique:* ```arUpdate```
 
 ### Suppression (D) {#arDelete}
 
 Autorise la suppression d'entités
 
-Nom technique: ```arDelete```
+*Nom technique:* ```arDelete```
 
 
-## Entités associées (unique) {#properties-belongs-to} ##
+## Entités associées (unique) {#properties-belongs-to}
 
 ### Rôle {#jupRole}
 
 
 
-Nom technique: ```jupRole```
+*Nom technique:* ```jupRole```
 
 ### Type d'entité {#jupObjectType}
 
 
 
-Nom technique: ```jupObjectType```
+*Nom technique:* ```jupObjectType```
 
 
 

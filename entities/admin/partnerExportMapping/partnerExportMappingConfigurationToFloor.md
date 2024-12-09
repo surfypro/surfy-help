@@ -3,23 +3,23 @@
 
 
 
-## Propriétés de base {#properties-base} ##
+## Propriétés de base {#properties-base}
 
 
 
-## Entités associées (unique) {#properties-belongs-to} ##
+## Entités associées (unique) {#properties-belongs-to}
 
 ###  Partner Export Mapping Configuration {#partnerExportMappingConfiguration}
 
 
 
-Nom technique: ```partnerExportMappingConfiguration```
+*Nom technique:* ```partnerExportMappingConfiguration```
 
 ### Étage {#floor}
 
 
 
-Nom technique: ```floor```
+*Nom technique:* ```floor```
 
 
 
