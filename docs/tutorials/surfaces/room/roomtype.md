@@ -23,7 +23,7 @@ Pour créer une typologie d'espace depuis la page d'accueil :
 -   on peut donner une couleur  différente pour la vue 3D. A défaut, c'est la couleur 2D qui est utilisée en 3D.
 -   on peut définir une icône qui sera affichée sur les espaces de la typologie en vue 3D, et en vue 2D en cliquant sur l'icône "Activer l'affichage des icônes sur le plan en 2D" au dessus du plan en 2D. Cela permet de mettre en avant des points stratégiques (Toilettes, Repro, ascenseurs, ...) sur les plans fournis.
 
-Pour plus d'informations sur les champs à compléter, voir les [propriétés de base de la Typologie d'espace](/entities/admin/types/roomTypes/roomType).
+Pour plus d'informations sur les champs à compléter, voir les [propriétés de base de la Typologie d'espace](/entities/admin/types/room-types/room-type).
 
 -   "valider la création" de la typologie.
 
@@ -84,7 +84,7 @@ Pour modifier une typologie d'espace, par exemple sont nom ou sa couleur, depuis
 -   modifier les informations,
 -   "Sauvegarder" les modifications.
 
-Pour plus d'informations sur les champs à compléter, voir les [propriétés de base de la Typologie d'espace](/entities/admin/types/roomTypes/roomType).
+Pour plus d'informations sur les champs à compléter, voir les [propriétés de base de la Typologie d'espace](/entities/admin/types/room-types/room-type).
 
 :::tip BON A SAVOIR
 On peut aussi modifier une typologie depuis un espace qualifié par cette typologie, en cliquant dans l'espace puis sur l'icône à droite de la ligne "Typologie d'espace" de la fiche de l'espace. Cette icône "Voir plus d'option pour la typologie XXX" permet de "Modifier la typologie d'espace XXX" et d'accéder directement à la modification de la typologie.
