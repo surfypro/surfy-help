@@ -6,9 +6,9 @@ sidebar_position: 2
 
  ## Digitaliser un bâtiment
 
-    -   [Créer un bâtiment](/docs/tutorials/surfaces/building/create.md)
-    -   [Créer un étage](/docs/tutorials/surfaces/floor/create.md)
-    -   [Créer le fond de plan](/docs/tutorials/surfaces/background/create.md)
+    -   [Créer un bâtiment](/en/docs/tutorials/surfaces/building/create.md)
+    -   [Créer un étage](/en/docs/tutorials/surfaces/floor/create.md)
+    -   [Créer le fond de plan](/en/docs/tutorials/surfaces/background/create.md)
     -   [Créer l'échelle du plan](/docs/tutorials/surfaces/mapscale/create.md)
     -   [Créer un espace](/docs/tutorials/surfaces/room/create.md)
     -   [Qualifier un espace](/docs/tutorials/surfaces/room/create.md#qualifier-un-espace)
