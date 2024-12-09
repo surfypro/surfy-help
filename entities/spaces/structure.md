@@ -22,7 +22,7 @@ Transformation de la structure pour la calibrer sur une carte
 
 ## Entités associées (liste) {#properties-has-many}
 
-###  Structure Points {#structurePoints}
+###  Structure Points {#structure-points}
 
 
 

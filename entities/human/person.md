@@ -5,7 +5,7 @@
 
 ## Propriétés de base {#properties-base}
 
-### Badge RIE {#badgeRestaurant}
+### Badge RIE {#badge-restaurant}
 
 La référence du badge du RIE ou du restaurant
 
@@ -17,13 +17,13 @@ Commentaire sur la personne permettant de conserver des informations supplément
 
 *Nom technique:* ```info```
 
-### Date d'entrée {#startDate}
+### Date d'entrée {#start-date}
 
 La date d'entrée de la personne
 
 *Nom technique:* ```startDate```
 
-### Date de sortie {#endDate}
+### Date de sortie {#end-date}
 
 La date de sortie de la personne
 
@@ -35,7 +35,7 @@ Le courriel de la personne
 
 *Nom technique:* ```email```
 
-### Immatriculation {#registrationNumber}
+### Immatriculation {#registration-number}
 
 Le numéro d'immatriculation de la personne
 
@@ -59,19 +59,19 @@ Le nom de famille de la personne
 
 *Nom technique:* ```lastname```
 
-### Non Affectable {#notAffectable}
+### Non Affectable {#not-affectable}
 
 La personne ne peut pas être affectée à un poste de travail, un espace, un bâtiment ou un calque d'affectation
 
 *Nom technique:* ```notAffectable```
 
-### Numéro de badge {#badgeNumber}
+### Numéro de badge {#badge-number}
 
 Le numéro de badge de la personne
 
 *Nom technique:* ```badgeNumber```
 
-### Numéro de casier {#boxNumber}
+### Numéro de casier {#box-number}
 
 Le numéro de casier de la personne
 
@@ -89,13 +89,13 @@ Le prénom de la personne
 
 *Nom technique:* ```firstname```
 
-### Référence écran {#monitorReference}
+### Référence écran {#monitor-reference}
 
 La référence de l'écran peut êre utilisée pour enregistrer la référence de l'écran associé à cette personne
 
 *Nom technique:* ```monitorReference```
 
-### Référence ordinateur {#computerReference}
+### Référence ordinateur {#computer-reference}
 
 La référence de l'ordinateur peut êre utilisée pour enregistrer la référence de l'ordinateur associé à cette personne
 
@@ -122,19 +122,19 @@ Le titre de la personne
 
 ## Entités associées (unique) {#properties-belongs-to}
 
-### Centre de coût {#costCenter}
+### Centre de coût {#cost-center}
 
 Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation
 
 *Nom technique:* ```costCenter```
 
-### Entreprise prestataire {#personCompany}
+### Entreprise prestataire {#person-company}
 
 L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion
 
 *Nom technique:* ```personCompany```
 
-### Genre de la personne {#personGender}
+### Genre de la personne {#person-gender}
 
 
 
@@ -146,13 +146,13 @@ L'organisation de rattachement de la personne
 
 *Nom technique:* ```organization```
 
-### Profil de sécurité {#personSecurityProfile}
+### Profil de sécurité {#person-security-profile}
 
 Permet de déterminer le profil de sécurité des personnes pour la gestion d'incidents
 
 *Nom technique:* ```personSecurityProfile```
 
-### Statut {#personState}
+### Statut {#person-state}
 
 Permet de détérminer le type de contrat de la personne
 
@@ -161,73 +161,73 @@ Permet de détérminer le type de contrat de la personne
 
 ## Entités associées (liste) {#properties-has-many}
 
-### Affectations au bâtiment {#personToBuildings}
+### Affectations au bâtiment {#person-to-buildings}
 
 
 
 *Nom technique:* ```personToBuildings```
 
-### Affectations au poste de travail {#workplaceAffectations}
+### Affectations au poste de travail {#workplace-affectations}
 
 
 
 *Nom technique:* ```workplaceAffectations```
 
-### Affectations aux calques d'affectation {#dimensionToPeople}
+### Affectations aux calques d'affectation {#dimension-to-people}
 
 
 
 *Nom technique:* ```dimensionToPeople```
 
-### Affectations d'espace {#roomAffectations}
+### Affectations d'espace {#room-affectations}
 
 
 
 *Nom technique:* ```roomAffectations```
 
-### Associations d'objet à personne {#itemToPeople}
+### Associations d'objet à personne {#item-to-people}
 
 
 
 *Nom technique:* ```itemToPeople```
 
-### Emplacements de travail des personnes {#personWorkingLocations}
+### Emplacements de travail des personnes {#person-working-locations}
 
 Un emplacement de travail des personnes définie le lieu de travail des personnes
 
 *Nom technique:* ```personWorkingLocations```
 
-### Relations depuis cette personne {#personToPersonSources}
+### Relations depuis cette personne {#person-to-person-sources}
 
 Les relations des personnes depuis cette personne
 
 *Nom technique:* ```personToPersonSources```
 
-### Relations vers cette personne {#personToPersonTargets}
+### Relations vers cette personne {#person-to-person-targets}
 
 Les relations des personnes vers cette personne
 
 *Nom technique:* ```personToPersonTargets```
 
-### Réservations à l'espace des personnes {#personToRoomBookings}
+### Réservations à l'espace des personnes {#person-to-room-bookings}
 
 Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
 
 *Nom technique:* ```personToRoomBookings```
 
-### Réservations au calque d'affectation des personnes {#personToDimensionBookings}
+### Réservations au calque d'affectation des personnes {#person-to-dimension-bookings}
 
 Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
 
 *Nom technique:* ```personToDimensionBookings```
 
-### Réservations au poste de travail des personnes {#personToWorkplaceBookings}
+### Réservations au poste de travail des personnes {#person-to-workplace-bookings}
 
 Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
 
 *Nom technique:* ```personToWorkplaceBookings```
 
-### Utilisateurs de l'entreprise {#userCompanies}
+### Utilisateurs de l'entreprise {#user-companies}
 
 
 

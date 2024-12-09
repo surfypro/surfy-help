@@ -1,8 +1,0 @@
-{
-  "label": "Cost center",
-  "position": 1,
-  "link": {
-    "slug": "adminCostCenterReporting",
-    "type": "generated-index"
-  }
-}

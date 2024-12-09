@@ -5,7 +5,7 @@
 
 ## Basic properties {#properties-base}
 
-### Carbon footprint per square meter {#carbonFootprintPerMeter}
+### Carbon footprint per square meter {#carbon-footprint-per-meter}
 
 The carbon footprint per square meter calculates the carbon footprint in kilograms of CO2 of an analysis layer per square meters
 
@@ -23,13 +23,13 @@ Useful to differentiate the layer among others
 
 *Technical name:* ```name```
 
-### Number of direct assignments {#peopleCount}
+### Number of direct assignments {#people-count}
 
 The number of people who are directly assigned to this assignment layer in the building
 
 *Technical name:* ```peopleCount```
 
-### Number of direct manual assignments {#manualPeopleCount}
+### Number of direct manual assignments {#manual-people-count}
 
 The number of people who are assigned directly to this assignment layer without considering assignments with real people
 
@@ -41,7 +41,7 @@ The value can be used to associate the layer with a numerical value in order to 
 
 *Technical name:* ```value```
 
-### Total number of direct assignments {#totalPeopleCount}
+### Total number of direct assignments {#total-people-count}
 
 The total number of people who are assigned directly to this assignment layer in the building, the addition of the actual people assigned and the number of people assigned manually
 
@@ -50,7 +50,7 @@ The total number of people who are assigned directly to this assignment layer in
 
 ## Associated entities (unique) {#properties-belongs-to}
 
-### Layer type {#dimensionType}
+### Layer type {#dimension-type}
 
 
 
@@ -59,31 +59,31 @@ The total number of people who are assigned directly to this assignment layer in
 
 ## Associated entities (list) {#properties-has-many}
 
-### Analysis layers by building {#dimensionBuildings}
+### Analysis layers by building {#dimension-buildings}
 
 
 
 *Technical name:* ```dimensionBuildings```
 
-### Analysis layers per floor {#dimensionFloors}
+### Analysis layers per floor {#dimension-floors}
 
 
 
 *Technical name:* ```dimensionFloors```
 
-### Assignments to Assignment Layers {#dimensionToPeople}
+### Assignments to Assignment Layers {#dimension-to-people}
 
 
 
 *Technical name:* ```dimensionToPeople```
 
-### Reservations on the people assignment layer {#personToDimensionBookings}
+### Reservations on the people assignment layer {#person-to-dimension-bookings}
 
 Reservations on people assignment layers are recorded and available with the start and end dates of the reservation
 
 *Technical name:* ```personToDimensionBookings```
 
-### Space analysis layers {#dimensionRooms}
+### Space analysis layers {#dimension-rooms}
 
 
 

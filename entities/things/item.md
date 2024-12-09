@@ -11,7 +11,7 @@ Le numéro d'immobilisation est utilisé pour conserver le numéro comptable
 
 *Nom technique:* ```code```
 
-### Date d'achat {#purchaseDate}
+### Date d'achat {#purchase-date}
 
 La date d'achat de l'objet
 
@@ -41,7 +41,7 @@ La référence de l'objet est utilisé pour le retrouver et pour differencier ce
 
 *Nom technique:* ```rotation```
 
-### Text Anchor {#textAnchor}
+### Text Anchor {#text-anchor}
 
 
 
@@ -62,7 +62,7 @@ La référence de l'objet est utilisé pour le retrouver et pour differencier ce
 
 *Nom technique:* ```workplace```
 
-### Type d'objet {#itemType}
+### Type d'objet {#item-type}
 
 
 
@@ -71,19 +71,19 @@ La référence de l'objet est utilisé pour le retrouver et pour differencier ce
 
 ## Entités associées (liste) {#properties-has-many}
 
-### Associations d'objet à personne {#itemToPeople}
+### Associations d'objet à personne {#item-to-people}
 
 
 
 *Nom technique:* ```itemToPeople```
 
-### Interventions sur des objet {#personCompanyToItems}
+### Interventions sur des objet {#person-company-to-items}
 
 Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur
 
 *Nom technique:* ```personCompanyToItems```
 
-### Mouvements d'objet {#itemFacts}
+### Mouvements d'objet {#item-facts}
 
 
 

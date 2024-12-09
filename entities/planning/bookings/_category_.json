@@ -1,5 +1,5 @@
 {
-  "label": "Réservations",
+  "label": "bookings",
   "position": 1,
   "link": {
     "slug": "bookings",

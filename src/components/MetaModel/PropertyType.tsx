@@ -3,6 +3,8 @@ import { Box, Fade, Paper, Tooltip, TooltipProps, tooltipClasses } from '@mui/ma
 import entitiesPath from '../../../src/metaModel/entities.paths.json';
 import { styled } from '@mui/material/styles';
 import { useTranslations } from "../Translations/translations";
+import {toDocumentationLinkString} from "../../../../surfy/src/back/documentation/documentionStyle";
+
 
 
 export function PropertyType(props: { code: string }) {
@@ -18,7 +20,7 @@ export function PropertyType(props: { code: string }) {
     const translations: { label: string, description: string | null } = entitiesTranslations.propertyTypeTranslations[objectTypeName][name];
     const objectTypeTranslation = entitiesTranslations.objectTypeTranslations[objectTypeName];
 
-    const href = `${directoryPath}/${objectTypeName}#${name}`;
+    const href = `${directoryPath}/${toDocumentationLinkString(objectTypeName)}#${toDocumentationLinkString(name)}`;
 
     const Title = <Paper sx={{ p: 2 }}>
         <Box style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>

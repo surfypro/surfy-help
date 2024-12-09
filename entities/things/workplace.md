@@ -11,25 +11,25 @@ Une information supplémentaire sur le poste de travail
 
 *Nom technique:* ```comment```
 
-### Est de passage ? {#isTransit}
+### Est de passage ? {#is-transit}
 
 Si ce poste est de passage, ce poste sera exclu des postes de travail libres sans être réservable en flex, un poste de passage permet d'avoir un poste de travail disponible pour tout ceux qui souhaitent l'utiliser sans être inclus dans un système de réservation
 
 *Nom technique:* ```isTransit```
 
-### Est en flex ? {#isFlex}
+### Est en flex ? {#is-flex}
 
 Si ce poste est utilisé en mode Flex
 
 *Nom technique:* ```isFlex```
 
-### Est partagé ? {#isShared}
+### Est partagé ? {#is-shared}
 
 Si ce poste est partagé par plusieurs personnes, ce champ automatique est validé dès qu'il y a au moins 2 affectations sur le poste de travail
 
 *Nom technique:* ```isShared```
 
-### Est réservable ? {#isBookable}
+### Est réservable ? {#is-bookable}
 
 Si ce poste de travail est reservable dans un système de réservation
 
@@ -41,7 +41,7 @@ Le nom du poste de travail est utilisé pour l'identifier plus simplement
 
 *Nom technique:* ```name```
 
-### Nombre d'affectations {#workplaceAffectationsCount}
+### Nombre d'affectations {#workplace-affectations-count}
 
 Nombre d'affectations sur le poste de travail
 
@@ -59,13 +59,13 @@ L'angle de rotation du poste de travail dans l'espace
 
 *Nom technique:* ```rotation```
 
-### Taux d'affectation moyen {#workplaceAffectationsCalculatedRateSum}
+### Taux d'affectation moyen {#workplace-affectations-calculated-rate-sum}
 
 Taux d'affectation moyen du poste de travail en fonction de l'affectation des jours de présence des personnes
 
 *Nom technique:* ```workplaceAffectationsCalculatedRateSum```
 
-### Text Anchor {#textAnchor}
+### Text Anchor {#text-anchor}
 
 
 
@@ -74,7 +74,7 @@ Taux d'affectation moyen du poste de travail en fonction de l'affectation des jo
 
 ## Entités associées (unique) {#properties-belongs-to}
 
-### Centre de coût {#costCenter}
+### Centre de coût {#cost-center}
 
 Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation
 
@@ -92,7 +92,7 @@ Le centre de coût permet de repartir les espaces dynamiquement pour la refactur
 
 *Nom technique:* ```organization```
 
-### Type de poste de travail {#workplaceType}
+### Type de poste de travail {#workplace-type}
 
 
 
@@ -101,7 +101,7 @@ Le centre de coût permet de repartir les espaces dynamiquement pour la refactur
 
 ## Entités associées (liste) {#properties-has-many}
 
-### Affectations au poste de travail {#workplaceAffectations}
+### Affectations au poste de travail {#workplace-affectations}
 
 
 
@@ -113,7 +113,7 @@ Le centre de coût permet de repartir les espaces dynamiquement pour la refactur
 
 *Nom technique:* ```items```
 
-### Réservations au poste de travail des personnes {#personToWorkplaceBookings}
+### Réservations au poste de travail des personnes {#person-to-workplace-bookings}
 
 Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
 

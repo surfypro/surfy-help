@@ -35,13 +35,13 @@ Name that will define the organization
 
 ## Associated entities (list) {#properties-has-many}
 
-### Building organizations {#organizationBuildings}
+### Building organizations {#organization-buildings}
 
 
 
 *Technical name:* ```organizationBuildings```
 
-### Floor organization {#organizationFloors}
+### Floor organization {#organization-floors}
 
 
 

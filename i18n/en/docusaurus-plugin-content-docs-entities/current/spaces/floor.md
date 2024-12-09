@@ -5,25 +5,25 @@
 
 ## Basic properties {#properties-base}
 
-### Background {#backgroundLayout}
+### Background {#background-layout}
 
 The background allows you to have a first layer level in order to redraw the plans, it must be to scale
 
 *Technical name:* ```backgroundLayout```
 
-### Background opacity {#backgroundLayoutOpacity}
+### Background opacity {#background-layout-opacity}
 
 The opacity allows you to see more or less the background
 
 *Technical name:* ```backgroundLayoutOpacity```
 
-### Bulking rate {#expansionRatio}
+### Bulking rate {#expansion-ratio}
 
 Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations
 
 *Technical name:* ```expansionRatio```
 
-### Carbon footprint {#carbonFootprint}
+### Carbon footprint {#carbon-footprint}
 
 The carbon footprint is the number of CO2 emitted
 
@@ -47,115 +47,115 @@ The name of the floor is used to be able to find it easily.
 
 *Technical name:* ```name```
 
-### Number of assignments {#peopleCount}
+### Number of assignments {#people-count}
 
 The number of people assigned to the floor, either directly assigned to spaces, or through a workstation
 
 *Technical name:* ```peopleCount```
 
-### Number of flex positions {#flexWorkplacesCount}
+### Number of flex positions {#flex-workplaces-count}
 
 Number of flex posts in the floor
 
 *Technical name:* ```flexWorkplacesCount```
 
-### Number of seats {#seatsCount}
+### Number of seats {#seats-count}
 
 The total number of seats
 
 *Technical name:* ```seatsCount```
 
-### Number of shared workstations {#sharedWorkplacesCount}
+### Number of shared workstations {#shared-workplaces-count}
 
 Number of workstations shared on the floor by at least 2 people
 
 *Technical name:* ```sharedWorkplacesCount```
 
-### Number of spaces {#roomsCount}
+### Number of spaces {#rooms-count}
 
 The number of spaces present in this floor
 
 *Technical name:* ```roomsCount```
 
-### Number of total assignments {#totalPeopleCount}
+### Number of total assignments {#total-people-count}
 
 The number of people assigned to the floor, either directly assigned to spaces, or through a workstation
 
 *Technical name:* ```totalPeopleCount```
 
-### Number of transit workstations {#transitWorkplacesCount}
+### Number of transit workstations {#transit-workplaces-count}
 
 Number of temporary workstations, these positions are not counted in free positions and are not flex
 
 *Technical name:* ```transitWorkplacesCount```
 
-### Number of vacancies {#freeWorkplacesCount}
+### Number of vacancies {#free-workplaces-count}
 
 Number of free extensions on the floor
 
 *Technical name:* ```freeWorkplacesCount```
 
-### Number of workstations {#workplacesCount}
+### Number of workstations {#workplaces-count}
 
 The number of workstations in the floor is calculated automatically
 
 *Technical name:* ```workplacesCount```
 
-### Occupancy rate {#occupancyRate}
+### Occupancy rate {#occupancy-rate}
 
 Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations
 
 *Technical name:* ```occupancyRate```
 
-### Occupancy ratio {#peopleRatio}
+### Occupancy ratio {#people-ratio}
 
 The occupancy ratio is the number of square meters on the floor divided by the number of people assigned either directly to the spaces or via a workstation, this value is calculated
 
 *Technical name:* ```peopleRatio```
 
-### Qualified surface {#roomsArea}
+### Qualified surface {#rooms-area}
 
 The qualified surface is the sum of the surfaces of the spaces
 
 *Technical name:* ```roomsArea```
 
-### Rate of flex workstations {#flexRatio}
+### Rate of flex workstations {#flex-ratio}
 
 The flex workstation rate is calculated by dividing the number of flex workstations by the total number of workstations
 
 *Technical name:* ```flexRatio```
 
-### Rate of seats per workstation {#totalCapacityWorkplaceCountRatio}
+### Rate of seats per workstation {#total-capacity-workplace-count-ratio}
 
 The rate of places per workstation is the total capacity of the spaces divided by the number of workstations, this allows us to understand the rate of places according to the number of workstations
 
 *Technical name:* ```totalCapacityWorkplaceCountRatio```
 
-### Rate of shared workstations {#sharedWorkplacesRatio}
+### Rate of shared workstations {#shared-workplaces-ratio}
 
 Rate of workstations shared by at least 2 people compared to all the workstations on the floor
 
 *Technical name:* ```sharedWorkplacesRatio```
 
-### Regulatory capacity {#regulatoryCapacity}
+### Regulatory capacity {#regulatory-capacity}
 
 The regulatory capacity of the platform, makes it possible to manage the evacuation of the public and employees
 
 *Technical name:* ```regulatoryCapacity```
 
-### Seating rate by assignment {#seatsPeopleRatio}
+### Seating rate by assignment {#seats-people-ratio}
 
 The number of seats per person affected
 
 *Technical name:* ```seatsPeopleRatio```
 
-### Total capacity {#totalCapacityCount}
+### Total capacity {#total-capacity-count}
 
 The total seat capacity is the sum of the number of seats and the non-seated capacity at the space level.
 
 *Technical name:* ```totalCapacityCount```
 
-### Workstation ratio {#workplacesRatio}
+### Workstation ratio {#workplaces-ratio}
 
 The workstation ratio is the number of square meters in the floor divided by the number of workstations, this value is calculated automatically
 
@@ -170,7 +170,7 @@ The building is used to group the floors
 
 *Technical name:* ```building```
 
-### Plan scale {#mapScale}
+### Plan scale {#map-scale}
 
 The scale allows us to calculate in proportion the actual areas and sizes of objects
 
@@ -185,49 +185,49 @@ The scale allows us to calculate in proportion the actual areas and sizes of obj
 
 ## Associated entities (list) {#properties-has-many}
 
-###  Partner Export Mapping Configuration To Floors {#partnerExportMappingConfigurationToFloors}
+###  Partner Export Mapping Configuration To Floors {#partner-export-mapping-configuration-to-floors}
 
 
 
 *Technical name:* ```partnerExportMappingConfigurationToFloors```
 
-### Analysis layers per floor {#dimensionFloors}
+### Analysis layers per floor {#dimension-floors}
 
 
 
 *Technical name:* ```dimensionFloors```
 
-### Floor cost centers {#costCenterFloors}
+### Floor cost centers {#cost-center-floors}
 
 
 
 *Technical name:* ```costCenterFloors```
 
-### Floor organization {#organizationFloors}
+### Floor organization {#organization-floors}
 
 
 
 *Technical name:* ```organizationFloors```
 
-### Floor space typologies {#roomTypeFloors}
+### Floor space typologies {#room-type-floors}
 
 
 
 *Technical name:* ```roomTypeFloors```
 
-### Floor space typology groups {#roomTypeGroupFloors}
+### Floor space typology groups {#room-type-group-floors}
 
 
 
 *Technical name:* ```roomTypeGroupFloors```
 
-### Points of spaces {#roomPoints}
+### Points of spaces {#room-points}
 
 
 
 *Technical name:* ```roomPoints```
 
-### Role associations of content to floors {#contentRoleToFloors}
+### Role associations of content to floors {#content-role-to-floors}
 
 
 

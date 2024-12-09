@@ -1,8 +1,0 @@
-{
-  "label": "Time-stamped building data",
-  "position": 7,
-  "link": {
-    "slug": "buildingFacts",
-    "type": "generated-index"
-  }
-}

@@ -11,37 +11,37 @@
 
 *Technical name:* ```name```
 
-### Enable Pathfinding {#enablePathfinding}
+### Enable Pathfinding {#enable-pathfinding}
 
 
 
 *Technical name:* ```enablePathfinding```
 
-### icon {#iconPath}
+### icon {#icon-path}
 
 The company logo in square
 
 *Technical name:* ```iconPath```
 
-### Logo {#logoPath}
+### Logo {#logo-path}
 
 The path of your company's logo
 
 *Technical name:* ```logoPath```
 
-### Number of working days per week {#workingDaysCount}
+### Number of working days per week {#working-days-count}
 
 The number of working days per week can be 5 for working days, 6 including Saturday and 7 including Sunday
 
 *Technical name:* ```workingDaysCount```
 
-### Planning Number Of Days {#planningNumberOfDays}
+### Planning Number Of Days {#planning-number-of-days}
 
 
 
 *Technical name:* ```planningNumberOfDays```
 
-### Proxy Images {#proxyImages}
+### Proxy Images {#proxy-images}
 
 
 
@@ -50,7 +50,7 @@ The number of working days per week can be 5 for working days, 6 including Satur
 
 ## Associated entities (unique) {#properties-belongs-to}
 
-### Type of company {#companyType}
+### Type of company {#company-type}
 
 
 
@@ -65,13 +65,13 @@ The building is used to group the floors
 
 *Technical name:* ```buildings```
 
-### Business users {#userCompanies}
+### Business users {#user-companies}
 
 
 
 *Technical name:* ```userCompanies```
 
-### Types of buildings {#buildingTypes}
+### Types of buildings {#building-types}
 
 
 

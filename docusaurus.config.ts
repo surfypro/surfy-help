@@ -130,7 +130,7 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'help-sidebar',
           position: 'left',
           label: 'Documentation',
         },

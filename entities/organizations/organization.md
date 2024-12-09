@@ -41,13 +41,13 @@ Nom qui va définir l'organisation
 
 *Nom technique:* ```rooms```
 
-### Organisations des bâtiments {#organizationBuildings}
+### Organisations des bâtiments {#organization-buildings}
 
 
 
 *Nom technique:* ```organizationBuildings```
 
-### Organisations des étages {#organizationFloors}
+### Organisations des étages {#organization-floors}
 
 
 

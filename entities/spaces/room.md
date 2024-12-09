@@ -11,25 +11,25 @@ La capacité declarée peut être utilisé pour définir le nombre de places dis
 
 *Nom technique:* ```capacity```
 
-### Capacité totale {#totalCapacityCount}
+### Capacité totale {#total-capacity-count}
 
 La capacité totale de places est la somme du nombre de places assises et de la capacité hors assises au niveau des espaces
 
 *Nom technique:* ```totalCapacityCount```
 
-### Email utilisé pour la réservation de cet espace {#bookingEmail}
+### Email utilisé pour la réservation de cet espace {#booking-email}
 
 Ce courriel permet de réserver cette salle via le système de messagerie
 
 *Nom technique:* ```bookingEmail```
 
-### Empreinte carbone {#carbonFootprint}
+### Empreinte carbone {#carbon-footprint}
 
 L'empreinte carbone est le nombre de CO2 émis
 
 *Nom technique:* ```carbonFootprint```
 
-### External Id2 {#externalId2}
+### External Id2 {#external-id-2}
 
 
 
@@ -41,7 +41,7 @@ Permet de conserver des informations supplémentaires de type texte sur l'espace
 
 *Nom technique:* ```info```
 
-### Nom d'affichage {#prettyName}
+### Nom d'affichage {#pretty-name}
 
 Permet d'avoir un nom d'affichage en plus du nom technique de l'espace, par exemple pour les salles de réunions
 
@@ -53,61 +53,61 @@ Le nom d'espace est utilisé pour le définir et le retrouver facilement.
 
 *Nom technique:* ```name```
 
-### Nombre d'affectations {#peopleCount}
+### Nombre d'affectations {#people-count}
 
 Le nombre de personnes affectées dans l'espace, soit directement, soit à travers un poste de travail
 
 *Nom technique:* ```peopleCount```
 
-### Nombre de personnes dans l'espace en temps réel {#livePeopleCount}
+### Nombre de personnes dans l'espace en temps réel {#live-people-count}
 
 Cette valeur est mise à jour par les capteurs de comptage des personnes présent dans l'espace et fournit le nombre de personnes présent en temps réel dans l'espace
 
 *Nom technique:* ```livePeopleCount```
 
-### Nombre de places assises {#seatsCount}
+### Nombre de places assises {#seats-count}
 
 Le nombre total de places assises
 
 *Nom technique:* ```seatsCount```
 
-### Nombre de postes de travail {#workplacesCount}
+### Nombre de postes de travail {#workplaces-count}
 
 Le nombre de postes de travail dans l'espace est calculé automatiquement
 
 *Nom technique:* ```workplacesCount```
 
-### Nombre de postes de travail de passage {#transitWorkplacesCount}
+### Nombre de postes de travail de passage {#transit-workplaces-count}
 
 Nombre de postes de travail de passage, ces postes ne sont pas comptabilisés dans les postes libres et ne sont pas en flex
 
 *Nom technique:* ```transitWorkplacesCount```
 
-### Nombre de postes de travail partagés {#sharedWorkplacesCount}
+### Nombre de postes de travail partagés {#shared-workplaces-count}
 
 Nombre de postes de travail partagés par au moins 2 personnes
 
 *Nom technique:* ```sharedWorkplacesCount```
 
-### Nombre de postes flex {#flexWorkplacesCount}
+### Nombre de postes flex {#flex-workplaces-count}
 
 Nombre de postes flex dans l'espace
 
 *Nom technique:* ```flexWorkplacesCount```
 
-### Nombre de postes libres {#freeWorkplacesCount}
+### Nombre de postes libres {#free-workplaces-count}
 
 Nombre de postes libres dans l'espace
 
 *Nom technique:* ```freeWorkplacesCount```
 
-### Nombre total d'affectations {#totalPeopleCount}
+### Nombre total d'affectations {#total-people-count}
 
 Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail
 
 *Nom technique:* ```totalPeopleCount```
 
-### Numéro de cylindre {#keyCylinderCode}
+### Numéro de cylindre {#key-cylinder-code}
 
 Le numéro de cylindre permet de définir le numéro de cylindre de la serrure de la porte de l'espace ou un élement en relation avec l'accès physique de l'espace
 
@@ -125,13 +125,13 @@ La photo de l'espace permet de le visualiser facilement
 
 *Nom technique:* ```picture```
 
-### Ratio d'occupation {#peopleRatio}
+### Ratio d'occupation {#people-ratio}
 
 Le ratio d'occupation est le nombre de métres carrés de l'espace divisé par le nombre de personnes affectées aux espaces, soit directement, soit via un poste de travail , cette valeur est calculée
 
 *Nom technique:* ```peopleRatio```
 
-### Ratio par poste de travail {#workplacesRatio}
+### Ratio par poste de travail {#workplaces-ratio}
 
 Le ratio par poste de travail est le nombre de métres carrés de l'espace divisé par le nombre de postes de travail, cette valeur est calculée automatiquement
 
@@ -143,43 +143,43 @@ La surface qualifiée au sol pour cet espace
 
 *Nom technique:* ```area```
 
-### Taux d'occupation {#occupancyRate}
+### Taux d'occupation {#occupancy-rate}
 
 Permet de connaître le taux d'occupation des postes de travail, c'est le nombre de personnes affectées divisés par le nombre de postes de travail
 
 *Nom technique:* ```occupancyRate```
 
-### Taux de foisonnement {#expansionRatio}
+### Taux de foisonnement {#expansion-ratio}
 
 Permet de connaître le taux d'usage des postes de travail, c'est l'inverse du nombre de personnes affectées divisés par le nombre de postes de travail
 
 *Nom technique:* ```expansionRatio```
 
-### Taux de places assises par affectations {#seatsPeopleRatio}
+### Taux de places assises par affectations {#seats-people-ratio}
 
 Le nombre de places assises par personnes affectées
 
 *Nom technique:* ```seatsPeopleRatio```
 
-### Taux de places assises par postes de travail {#totalCapacityWorkplaceCountRatio}
+### Taux de places assises par postes de travail {#total-capacity-workplace-count-ratio}
 
 Le taux de places par postes de travail est la capacité totale des espaces divisé par le nombre de postes de travail, cela permet de comprendre le taux de places en fonction du nombre de postes de travail
 
 *Nom technique:* ```totalCapacityWorkplaceCountRatio```
 
-### Taux de postes de travail en flex {#flexRatio}
+### Taux de postes de travail en flex {#flex-ratio}
 
 Le taux de poste de travail en flex est calculé en divisant le nombre de postes de travail en flex par le nombre total de postes de travail
 
 *Nom technique:* ```flexRatio```
 
-### Taux de postes de travail partagés {#sharedWorkplacesRatio}
+### Taux de postes de travail partagés {#shared-workplaces-ratio}
 
 Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail de l'espace
 
 *Nom technique:* ```sharedWorkplacesRatio```
 
-### Text Anchor {#textAnchor}
+### Text Anchor {#text-anchor}
 
 
 
@@ -188,13 +188,13 @@ Taux de postes de travail partagés par au moins 2 personnes par rapport à l'en
 
 ## Entités associées (unique) {#properties-belongs-to}
 
-### Centre de coût {#costCenter}
+### Centre de coût {#cost-center}
 
 Permet de connaitre à quel centre de coût associer l'espace quand il s'agit de gérer la refacturation au centre de coût par espace
 
 *Nom technique:* ```costCenter```
 
-### Connecteur d'espace {#roomConnector}
+### Connecteur d'espace {#room-connector}
 
 Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces dans des étages différents
 
@@ -206,7 +206,7 @@ Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces d
 
 *Nom technique:* ```floor```
 
-### État d'occupation {#occupancyStatus}
+### État d'occupation {#occupancy-status}
 
 L'état d'occupation permet d'identifier l'état en temps réel d'un espace ou d'un poste de travail, comme par exemple s'il est libre, occupé ou squaté, l'état d'occupation est mis à jour par les objets connectés présent dans l'espace
 
@@ -218,13 +218,13 @@ L'état d'occupation permet d'identifier l'état en temps réel d'un espace ou d
 
 *Nom technique:* ```organization```
 
-### Type de distribution des coûts {#distributionCostType}
+### Type de distribution des coûts {#distribution-cost-type}
 
 Permet de déterminer le mode de calcul de la clé de répartition des coûts
 
 *Nom technique:* ```distributionCostType```
 
-### Typologie d'espace {#roomType}
+### Typologie d'espace {#room-type}
 
 
 
@@ -233,19 +233,19 @@ Permet de déterminer le mode de calcul de la clé de répartition des coûts
 
 ## Entités associées (liste) {#properties-has-many}
 
-### Affectations d'espace {#roomAffectations}
+### Affectations d'espace {#room-affectations}
 
 
 
 *Nom technique:* ```roomAffectations```
 
-### Associations entre un point et un espace {#roomPointRooms}
+### Associations entre un point et un espace {#room-point-rooms}
 
 L'association entre un point et un espace permet de conserver l'ordre des points dans un espace afin de constituer un polyon
 
 *Nom technique:* ```roomPointRooms```
 
-### Calques d'analyse des espaces {#dimensionRooms}
+### Calques d'analyse des espaces {#dimension-rooms}
 
 
 
@@ -263,7 +263,7 @@ L'association entre un point et un espace permet de conserver l'ordre des points
 
 *Nom technique:* ```workplaces```
 
-### Réservations à l'espace des personnes {#personToRoomBookings}
+### Réservations à l'espace des personnes {#person-to-room-bookings}
 
 Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
 

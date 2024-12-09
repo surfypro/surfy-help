@@ -14,7 +14,7 @@
 
 ## Entités associées (unique) {#properties-belongs-to}
 
-###  Feature Group {#featureGroup}
+###  Feature Group {#feature-group}
 
 
 

@@ -12,3 +12,5 @@ La documentation de Surfy se compose des éléments suivants :
 
 
 <P code="building:color"/>
+<P code="roomPointSegment:displayBothSides"/>
+<P code="dimensionFloor:id"/>
