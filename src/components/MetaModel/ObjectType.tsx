@@ -7,8 +7,6 @@ import { useTranslations } from "../Translations/translations";
 import { HelpTooltipStyled } from "./HelpTooltipStyled";
 import { toDocumentationLinkString } from "@site/src/utils/documentionStyle";
 
-
-
 export function ObjectType(props: { code: string }) {
     const entitiesTranslations = useTranslations();
     const { code:objectTypeName } = props;
@@ -20,7 +18,6 @@ export function ObjectType(props: { code: string }) {
     }
 
     const translations: { label: string, description: string | null } = entitiesTranslations.objectTypeTranslations[objectTypeName];
-    // const objectTypeTranslation = entitiesTranslations.objectTypeTranslations[objectTypeName];
 
     const href = `${directoryPath}/${toDocumentationLinkString(objectTypeName)}`;
 
