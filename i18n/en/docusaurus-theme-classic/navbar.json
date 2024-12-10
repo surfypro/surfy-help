@@ -1,26 +1,34 @@
 {
-    "title": {
-        "message": "Surfy Academy",
-        "description": "La documentation de la solution Surfy"
-    },
-    "item.label.Docs": {
-        "message": "Docs (en)",
-        "description": "Navbar item with label Docs"
-    },
-    "item.label.Blog": {
-        "message": "Blog (en)",
-        "description": "Navbar item with label Blog"
-    },
-    "item.label.GitHub": {
-        "message": "GitHub (en)",
-        "description": "Navbar item with label GitHub"
-    },
-    "logo.alt": {
-        "message": "Surfy Logo",
-        "description": "The alt text of navbar logo"
-    },
-    "item.label.Tutoriels": {
-        "message": "Tutoriels",
-        "description": "Navbar item with label Tutoriels"
-    }
+  "title": {
+    "message": "Surfy Academy",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Surfy Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Tutoriels": {
+    "message": "Tutoriels",
+    "description": "Navbar item with label Tutoriels"
+  },
+  "item.label.Documentation": {
+    "message": "Documentation",
+    "description": "Navbar item with label Documentation"
+  },
+  "item.label.Cours": {
+    "message": "Cours",
+    "description": "Navbar item with label Cours"
+  },
+  "item.label.Nouveautés": {
+    "message": "Nouveautés",
+    "description": "Navbar item with label Nouveautés"
+  },
+  "item.label.Nous contacter": {
+    "message": "Nous contacter",
+    "description": "Navbar item with label Nous contacter"
+  },
+  "item.label.Developpeurs": {
+    "message": "Developpeurs",
+    "description": "Navbar item with label Developpeurs"
+  }
 }

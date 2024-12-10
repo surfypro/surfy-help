@@ -3,24 +3,36 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base}
 
-### Name [name] {#name}
-        
+### Name {#name}
 
-### Transformation [transform] {#transform}
-        
+
+
+*Nom technique:* ```name```
+
+### Transformation {#transform}
+
 Transformation de la structure pour la calibrer sur une carte
 
+*Nom technique:* ```transform```
 
 
-## Entités associées (liste)
 
-###  Structure Points [structurePoints] {#structurePoints}
-        
 
-### Étages [floors] {#floors}
-        
+## Entités associées (liste) {#properties-has-many}
+
+###  Structure Points {#structure-points}
+
+
+
+*Nom technique:* ```structurePoints```
+
+### Étages {#floors}
+
+
+
+*Nom technique:* ```floors```
 
 
 

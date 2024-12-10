@@ -1,5 +1,12 @@
 # Nouveautés
 
+## 5 Decembre 2024  - v3.4.46 ## 
+
+- Amélioration du zoom sur les plans sur les écran tactile et mobiles
+- Mise en place d'une entité Légende permettant de créer des légendes plus personnsalisé pour les plans à sortir en image
+    - Les légendes doivent être configurée et peuvent être utilisée dans les exports en image
+
+
 ## 3 Decembre 2024  - v3.4.44 ## 
 
 - Amélioration globale de la vitesse de déplacements des objets

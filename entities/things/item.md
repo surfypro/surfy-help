@@ -3,52 +3,91 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base}
 
-### Code d'immobilisation [code] {#code}
-        
+### Code d'immobilisation {#code}
+
 Le numéro d'immobilisation est utilisé pour conserver le numéro comptable
-### Date d'achat [purchaseDate] {#purchaseDate}
-        
+
+*Nom technique:* ```code```
+
+### Date d'achat {#purchase-date}
+
 La date d'achat de l'objet
-### Position [position] {#position}
-        
 
-### Prix [price] {#price}
-        
+*Nom technique:* ```purchaseDate```
+
+### Position {#position}
+
+
+
+*Nom technique:* ```position```
+
+### Prix {#price}
+
 Le prix d'achat de l'objet s'il est différent du prix du type d'objet
-### Référence de l'objet [reference] {#reference}
-        
+
+*Nom technique:* ```price```
+
+### Référence de l'objet {#reference}
+
 La référence de l'objet est utilisé pour le retrouver et pour differencier cet objet des autres
-### Rotation [rotation] {#rotation}
-        
 
-### Text Anchor [textAnchor] {#textAnchor}
-        
+*Nom technique:* ```reference```
 
-
-## Entités associées (unique)
-
-### Espace de l'objet [room] {#room}
-        
-
-### Poste de travail [workplace] {#workplace}
-        
-
-### Type d'objet [itemType] {#itemType}
-        
+### Rotation {#rotation}
 
 
-## Entités associées (liste)
 
-### Associations d'objet à personne [itemToPeople] {#itemToPeople}
-        
+*Nom technique:* ```rotation```
 
-### Interventions sur des objet [personCompanyToItems] {#personCompanyToItems}
-        
+### Text Anchor {#text-anchor}
+
+
+
+*Nom technique:* ```textAnchor```
+
+
+## Entités associées (unique) {#properties-belongs-to}
+
+### Espace de l'objet {#room}
+
+
+
+*Nom technique:* ```room```
+
+### Poste de travail {#workplace}
+
+
+
+*Nom technique:* ```workplace```
+
+### Type d'objet {#item-type}
+
+
+
+*Nom technique:* ```itemType```
+
+
+## Entités associées (liste) {#properties-has-many}
+
+### Associations d'objet à personne {#item-to-people}
+
+
+
+*Nom technique:* ```itemToPeople```
+
+### Interventions sur des objet {#person-company-to-items}
+
 Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur
-### Mouvements d'objet [itemFacts] {#itemFacts}
-        
+
+*Nom technique:* ```personCompanyToItems```
+
+### Mouvements d'objet {#item-facts}
+
+
+
+*Nom technique:* ```itemFacts```
 
 
 

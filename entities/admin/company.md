@@ -3,46 +3,79 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base}
 
-### Enable Pathfinding [enablePathfinding] {#enablePathfinding}
-        
+### Enable Pathfinding {#enable-pathfinding}
 
-### Icon [iconPath] {#iconPath}
-        
+
+
+*Nom technique:* ```enablePathfinding```
+
+### Icon {#icon-path}
+
 Le logo de l'entreprise en carré
-### Logo [logoPath] {#logoPath}
-        
+
+*Nom technique:* ```iconPath```
+
+### Logo {#logo-path}
+
 Le chemin du logo de votre entreprise
-### Nom de l'entreprise [name] {#name}
-        
 
-### Nombre de jours de travail par semaine [workingDaysCount] {#workingDaysCount}
-        
+*Nom technique:* ```logoPath```
+
+### Nom de l'entreprise {#name}
+
+
+
+*Nom technique:* ```name```
+
+### Nombre de jours de travail par semaine {#working-days-count}
+
 Le nombre de jours de travail par semaine peut être 5 pour les jours ouvrés, 6 incluant le samedi et 7 incluant le dimanche
-### Planning Number Of Days [planningNumberOfDays] {#planningNumberOfDays}
-        
 
-### Proxy Images [proxyImages] {#proxyImages}
-        
+*Nom technique:* ```workingDaysCount```
 
-
-## Entités associées (unique)
-
-### Type d'entreprise [companyType] {#companyType}
-        
+### Planning Number Of Days {#planning-number-of-days}
 
 
-## Entités associées (liste)
 
-### Bâtiments [buildings] {#buildings}
-        
+*Nom technique:* ```planningNumberOfDays```
+
+### Proxy Images {#proxy-images}
+
+
+
+*Nom technique:* ```proxyImages```
+
+
+## Entités associées (unique) {#properties-belongs-to}
+
+### Type d'entreprise {#company-type}
+
+
+
+*Nom technique:* ```companyType```
+
+
+## Entités associées (liste) {#properties-has-many}
+
+### Bâtiments {#buildings}
+
 Le bâtiment est utilisé pour regrouper les étages
-### Types de bâtiments [buildingTypes] {#buildingTypes}
-        
 
-### Utilisateurs de l'entreprise [userCompanies] {#userCompanies}
-        
+*Nom technique:* ```buildings```
+
+### Types de bâtiments {#building-types}
+
+
+
+*Nom technique:* ```buildingTypes```
+
+### Utilisateurs de l'entreprise {#user-companies}
+
+
+
+*Nom technique:* ```userCompanies```
 
 
 

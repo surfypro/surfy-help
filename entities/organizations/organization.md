@@ -3,43 +3,73 @@
 
 
 
-## Propriétés de base
+## Propriétés de base {#properties-base}
 
-### Code [code] {#code}
-        
+### Code {#code}
+
 Ce code peut être utilisé pour contenir la codification de l'organisation ou la clé pour l'identification via un logiciel tiers
-### Color [color] {#color}
-        
 
-### Nom [name] {#name}
-        
+*Nom technique:* ```code```
+
+### Color {#color}
+
+
+
+*Nom technique:* ```color```
+
+### Nom {#name}
+
 Nom qui va définir l'organisation
 
-## Entités associées (unique)
-
-### Direction [organization] {#organization}
-        
+*Nom technique:* ```name```
 
 
-## Entités associées (liste)
+## Entités associées (unique) {#properties-belongs-to}
 
-### Espaces [rooms] {#rooms}
-        
+### Direction {#organization}
 
-### Organisations des bâtiments [organizationBuildings] {#organizationBuildings}
-        
 
-### Organisations des étages [organizationFloors] {#organizationFloors}
-        
 
-### Personnes [people] {#people}
-        
+*Nom technique:* ```organization```
 
-### Postes de travail [workplaces] {#workplaces}
-        
 
-### Services [organizations] {#organizations}
-        
+## Entités associées (liste) {#properties-has-many}
+
+### Espaces {#rooms}
+
+
+
+*Nom technique:* ```rooms```
+
+### Organisations des bâtiments {#organization-buildings}
+
+
+
+*Nom technique:* ```organizationBuildings```
+
+### Organisations des étages {#organization-floors}
+
+
+
+*Nom technique:* ```organizationFloors```
+
+### Personnes {#people}
+
+
+
+*Nom technique:* ```people```
+
+### Postes de travail {#workplaces}
+
+
+
+*Nom technique:* ```workplaces```
+
+### Services {#organizations}
+
+
+
+*Nom technique:* ```organizations```
 
 
 

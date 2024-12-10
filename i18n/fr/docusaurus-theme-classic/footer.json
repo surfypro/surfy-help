@@ -13,7 +13,11 @@
   },
   "link.item.label.Tutoriels": {
     "message": "Tutoriels",
-    "description": "The label of footer link with label=Tutoriels linking to /docs/intro"
+    "description": "The label of footer link with label=Tutoriels linking to /docs/tutorials/intro"
+  },
+  "link.item.label.Cours": {
+    "message": "Cours",
+    "description": "The label of footer link with label=Cours linking to /docs/courses/intro"
   },
   "link.item.label.Youtube": {
     "message": "Youtube",

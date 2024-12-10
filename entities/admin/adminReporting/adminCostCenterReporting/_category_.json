@@ -1,8 +1,0 @@
-{
-  "label": "Centre de coûts",
-  "position": 1,
-  "link": {
-    "slug": "adminCostCenterReporting",
-    "type": "generated-index"
-  }
-}
