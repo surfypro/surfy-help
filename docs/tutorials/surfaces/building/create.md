@@ -20,7 +20,7 @@ Pour créer un nouveau bâtiment à partir de la page d'accueil de Surfy,
 Le bâtiment de référence peut aussi être un bâtiment quelconque derrière lequel on positionne le bâtiment en question. Cela permet d'établir un classement sur plusieurs niveaux des différents projets. Les bâtiments visibles sur la page d'accueil sont les "bâtiments principaux" et les recherches peuvent en option sous la loupe ne s'exercer que sur ces seuls bâtiments.
 :::
 
-## Créer un scénario
+## Créer un scénario {#create-scenario} ##
 
 Créer un scénario dans Surfy c'est faire une copie partielle ou totale d'un bâtiment en vue d'un réaménagement, ou simplement pour effectuer une copie de sauvegarde.
 

@@ -1,9 +1,0 @@
-{
-  "label": "Assignments to building",
-  "position": 5,
-  "link": { 
-    "slug": "persontobuilding",
-    "type": "generated-index",
-    "description": "How to assign a person to a building"
-  }
-}
