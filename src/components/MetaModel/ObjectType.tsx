@@ -2,8 +2,8 @@ import React from "react";
 import { Box, Fade, Paper, Tooltip, TooltipProps, tooltipClasses } from '@mui/material';
 import entitiesPath from '../../metaModel/entities.paths.json';
 import { useTranslations } from "../Translations/translations";
-import {toDocumentationLinkString} from "../../../../surfy/src/back/documentation/documentionStyle";
 import { HelpTooltipStyled } from "./HelpTooltipStyled";
+import { toDocumentationLinkString } from "@site/src/utils/documentionStyle";
 
 
 
