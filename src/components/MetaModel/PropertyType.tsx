@@ -1,5 +1,7 @@
 import React from "react";
-import { Box, Fade, Paper } from '@mui/material';
+import Box from '@mui/material/Box';
+import Fade from '@mui/material/Fade';
+import Paper from '@mui/material/Paper';
 import entitiesPath from '../../../src/metaModel/entities.paths.json';
 import { useTranslations } from "../Translations/translations";
 import { HelpTooltipStyled } from "./HelpTooltipStyled";
