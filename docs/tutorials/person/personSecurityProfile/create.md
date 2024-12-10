@@ -5,16 +5,14 @@ sidebar_position: 1
 
 # Créer un profil Sécurité
 
-Un profil Sécurité est attribué à un équipier de sécurité pour le localiser facilement sur les plans ou dans les informations des personnes.
+Un <OT code="personSecurityProfile" /> est attribué à un équipier de sécurité pour le localiser facilement sur les plans ou dans les informations des personnes.
 
 <Youtube code="NxKeIipAJfs"/>
 
 Pour créer un profil Sécurité, depuis le menu de gauche :
 
 -   cliquer sur "Collaborateurs", "Typologies", "Profils de Sécurité des personnes", puis "Créer un profil de sécurité des personnes".
--   Renseigner le "nom du profil Sécurité" (exemple : guide file, serre file, pompier, infirmier, ...) 
--   renseigner une couleur afin de colorier sur les plans les postes de travail affectés au profil sécurité correspondant
--   choisir une icône qui sera accolée aux noms des équipiers de sécurité correspondant pour rappel
+-   Renseigner le nom (exemple : guide file, serre file, pompier, infirmier, ...) et les informations du <OT code="personSecurityProfile" />
 -   valider la création
 
 :::tip Bon à savoir
