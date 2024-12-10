@@ -3,6 +3,9 @@
 
 Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
 
+<OH code="personToWorkplaceBooking"/>
+
+
 ## Propriétés de base {#properties-base}
 
 ### Début de la réservation {#start-datetime}
@@ -10,12 +13,14 @@ Les réservations des postes de travail des personnes sont enregistrés et dispo
 La date et l'heure de début de la réservation
 
 *Nom technique:* ```startDatetime```
+<PH code="personToWorkplaceBooking:startDatetime"/>
 
 ### Fin de la réservation {#end-datetime}
 
 La date et l'heure de fin de la réservation
 
 *Nom technique:* ```endDatetime```
+<PH code="personToWorkplaceBooking:endDatetime"/>
 
 
 ## Entités associées (unique) {#properties-belongs-to}
@@ -25,18 +30,21 @@ La date et l'heure de fin de la réservation
 Un emplacement de travail des personnes définie le lieu de travail des personnes
 
 *Nom technique:* ```personWorkingLocation```
+<PH code="personToWorkplaceBooking:personWorkingLocation"/>
 
 ### Personne {#person}
 
 
 
 *Nom technique:* ```person```
+<PH code="personToWorkplaceBooking:person"/>
 
 ### Poste de travail {#workplace}
 
 
 
 *Nom technique:* ```workplace```
+<PH code="personToWorkplaceBooking:workplace"/>
 
 
 

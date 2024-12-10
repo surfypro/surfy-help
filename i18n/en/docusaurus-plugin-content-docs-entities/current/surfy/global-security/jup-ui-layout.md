@@ -3,6 +3,9 @@
 
 
 
+<OH code="jupUiLayout"/>
+
+
 ## Basic properties {#properties-base}
 
 ### Name {#name}
@@ -10,6 +13,7 @@
 
 
 *Technical name:* ```name```
+<PH code="jupUiLayout:name"/>
 
 
 
@@ -21,12 +25,14 @@
 
 
 *Technical name:* ```jupRoleToJupUiLayouts```
+<PH code="jupUiLayout:jupRoleToJupUiLayouts"/>
 
 ### Buildings {#buildings}
 
 The building is used to group the floors
 
 *Technical name:* ```buildings```
+<PH code="jupUiLayout:buildings"/>
 
 
 

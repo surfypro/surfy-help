@@ -3,6 +3,9 @@
 
 The service provider object types make it possible to define a relationship between the object type and the service provider and to define the mission.
 
+<OH code="personCompanyToItemType"/>
+
+
 ## Basic properties {#properties-base}
 
 
@@ -14,18 +17,21 @@ The service provider object types make it possible to define a relationship betw
 The missions of the service providers make it possible to know the area of ​​intervention of the service providers
 
 *Technical name:* ```personCompanyMission```
+<PH code="personCompanyToItemType:personCompanyMission"/>
 
 ### Object type {#item-type}
 
 
 
 *Technical name:* ```itemType```
+<PH code="personCompanyToItemType:itemType"/>
 
 ### Service provider company {#person-company}
 
 The service provider company makes it possible to keep information about the company of a service provider to know, for example, the number of positions or the space occupied by the latter, or to know what types of equipment or type of spaces are available. he is in management
 
 *Technical name:* ```personCompany```
+<PH code="personCompanyToItemType:personCompany"/>
 
 
 

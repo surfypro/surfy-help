@@ -3,6 +3,9 @@
 
 
 
+<OH code="jupUiOperation"/>
+
+
 ## Basic properties {#properties-base}
 
 ### Name {#name}
@@ -10,6 +13,7 @@
 
 
 *Technical name:* ```name```
+<PH code="jupUiOperation:name"/>
 
 
 
@@ -21,6 +25,7 @@
 
 
 *Technical name:* ```jupRoleToJupUiOperations```
+<PH code="jupUiOperation:jupRoleToJupUiOperations"/>
 
 
 

@@ -3,6 +3,9 @@
 
 
 
+<OH code="dimensionRoom"/>
+
+
 ## Basic properties {#properties-base}
 
 
@@ -14,18 +17,21 @@
 
 
 *Technical name:* ```dimension```
+<PH code="dimensionRoom:dimension"/>
 
 ### Layer type {#dimension-type}
 
 
 
 *Technical name:* ```dimensionType```
+<PH code="dimensionRoom:dimensionType"/>
 
 ### Space {#room}
 
 
 
 *Technical name:* ```room```
+<PH code="dimensionRoom:room"/>
 
 
 

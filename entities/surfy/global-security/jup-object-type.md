@@ -3,6 +3,9 @@
 
 
 
+<OH code="jupObjectType"/>
+
+
 ## Propriétés de base {#properties-base}
 
 ### Name {#name}
@@ -10,6 +13,7 @@
 
 
 *Nom technique:* ```name```
+<PH code="jupObjectType:name"/>
 
 
 
@@ -21,12 +25,14 @@
 
 
 *Nom technique:* ```jupRoleToJupObjectTypes```
+<PH code="jupObjectType:jupRoleToJupObjectTypes"/>
 
 ### Vues d'interface {#jup-ui-views}
 
 
 
 *Nom technique:* ```jupUiViews```
+<PH code="jupObjectType:jupUiViews"/>
 
 
 

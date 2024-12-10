@@ -3,6 +3,9 @@
 
 
 
+<OH code="roomTypeGroupToRoomType"/>
+
+
 ## Basic properties {#properties-base}
 
 
@@ -14,12 +17,14 @@
 
 
 *Technical name:* ```roomType```
+<PH code="roomTypeGroupToRoomType:roomType"/>
 
 ### Space typology group {#room-type-group}
 
 
 
 *Technical name:* ```roomTypeGroup```
+<PH code="roomTypeGroupToRoomType:roomTypeGroup"/>
 
 
 

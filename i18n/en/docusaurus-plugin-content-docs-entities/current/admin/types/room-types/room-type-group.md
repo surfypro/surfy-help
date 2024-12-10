@@ -3,6 +3,9 @@
 
 
 
+<OH code="roomTypeGroup"/>
+
+
 ## Basic properties {#properties-base}
 
 ### Code {#code}
@@ -10,24 +13,28 @@
 
 
 *Technical name:* ```code```
+<PH code="roomTypeGroup:code"/>
 
 ### Color {#color}
 
 
 
 *Technical name:* ```color```
+<PH code="roomTypeGroup:color"/>
 
 ### Exclude {#exclude}
 
 Exclude space typologies from this group
 
 *Technical name:* ```exclude```
+<PH code="roomTypeGroup:exclude"/>
 
 ### Space typology group name {#name}
 
 
 
 *Technical name:* ```name```
+<PH code="roomTypeGroup:name"/>
 
 
 
@@ -39,18 +46,21 @@ Exclude space typologies from this group
 
 
 *Technical name:* ```roomTypeGroupToRoomTypes```
+<PH code="roomTypeGroup:roomTypeGroupToRoomTypes"/>
 
 ### Floor space typology groups {#room-type-group-floors}
 
 
 
 *Technical name:* ```roomTypeGroupFloors```
+<PH code="roomTypeGroup:roomTypeGroupFloors"/>
 
 ### Groups of building space typologies {#room-type-group-buildings}
 
 
 
 *Technical name:* ```roomTypeGroupBuildings```
+<PH code="roomTypeGroup:roomTypeGroupBuildings"/>
 
 
 

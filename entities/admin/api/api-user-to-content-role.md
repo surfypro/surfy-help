@@ -3,6 +3,9 @@
 
 
 
+<OH code="apiUserToContentRole"/>
+
+
 ## Propriétés de base {#properties-base}
 
 
@@ -14,12 +17,14 @@
 
 
 *Nom technique:* ```contentRole```
+<PH code="apiUserToContentRole:contentRole"/>
 
 ### Utilisateur d'api {#api-user}
 
 
 
 *Nom technique:* ```apiUser```
+<PH code="apiUserToContentRole:apiUser"/>
 
 
 

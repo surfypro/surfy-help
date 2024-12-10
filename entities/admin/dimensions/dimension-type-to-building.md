@@ -3,6 +3,9 @@
 
 
 
+<OH code="dimensionTypeToBuilding"/>
+
+
 ## Propriétés de base {#properties-base}
 
 
@@ -14,12 +17,14 @@
 Le bâtiment est utilisé pour regrouper les étages
 
 *Nom technique:* ```building```
+<PH code="dimensionTypeToBuilding:building"/>
 
 ### Type de calque {#dimension-type}
 
 
 
 *Nom technique:* ```dimensionType```
+<PH code="dimensionTypeToBuilding:dimensionType"/>
 
 
 

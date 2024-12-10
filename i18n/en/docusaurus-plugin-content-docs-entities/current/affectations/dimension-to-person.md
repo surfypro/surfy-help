@@ -3,6 +3,9 @@
 
 
 
+<OH code="dimensionToPerson"/>
+
+
 ## Basic properties {#properties-base}
 
 
@@ -14,12 +17,14 @@
 
 
 *Technical name:* ```dimension```
+<PH code="dimensionToPerson:dimension"/>
 
 ### Nobody {#person}
 
 
 
 *Technical name:* ```person```
+<PH code="dimensionToPerson:person"/>
 
 
 

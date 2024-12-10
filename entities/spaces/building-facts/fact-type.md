@@ -3,6 +3,9 @@
 
 
 
+<OH code="factType"/>
+
+
 ## Propriétés de base {#properties-base}
 
 ### Code {#code}
@@ -10,12 +13,14 @@
 
 
 *Nom technique:* ```code```
+<PH code="factType:code"/>
 
 ### Name {#name}
 
 
 
 *Nom technique:* ```name```
+<PH code="factType:name"/>
 
 
 
@@ -27,6 +32,7 @@
 
 
 *Nom technique:* ```facts```
+<PH code="factType:facts"/>
 
 
 

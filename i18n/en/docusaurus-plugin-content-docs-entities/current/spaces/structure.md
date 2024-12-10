@@ -3,6 +3,9 @@
 
 
 
+<OH code="structure"/>
+
+
 ## Basic properties {#properties-base}
 
 ### Name {#name}
@@ -10,12 +13,14 @@
 
 
 *Technical name:* ```name```
+<PH code="structure:name"/>
 
 ### Transformation {#transform}
 
 Transformation of the structure to calibrate it on a map
 
 *Technical name:* ```transform```
+<PH code="structure:transform"/>
 
 
 
@@ -27,12 +32,14 @@ Transformation of the structure to calibrate it on a map
 
 
 *Technical name:* ```structurePoints```
+<PH code="structure:structurePoints"/>
 
 ### Floors {#floors}
 
 
 
 *Technical name:* ```floors```
+<PH code="structure:floors"/>
 
 
 

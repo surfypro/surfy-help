@@ -3,6 +3,9 @@
 
 Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces dans des étages différents
 
+<OH code="roomConnector"/>
+
+
 ## Propriétés de base {#properties-base}
 
 ### Nom du connecteur d'espace {#name}
@@ -10,18 +13,21 @@ Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces d
 
 
 *Nom technique:* ```name```
+<PH code="roomConnector:name"/>
 
 ### Temps d'attente moyen {#wait-time}
 
 Le temps d'attente moyenne avant que le connecteur d'espace soit disponible
 
 *Nom technique:* ```waitTime```
+<PH code="roomConnector:waitTime"/>
 
 ### Temps entre chaque étage {#time-per-floor}
 
 Le temps nécessaire pour pouvoir passer de chaque étage au prochain
 
 *Nom technique:* ```timePerFloor```
+<PH code="roomConnector:timePerFloor"/>
 
 
 ## Entités associées (unique) {#properties-belongs-to}
@@ -31,6 +37,7 @@ Le temps nécessaire pour pouvoir passer de chaque étage au prochain
 
 
 *Nom technique:* ```roomConnectorType```
+<PH code="roomConnector:roomConnectorType"/>
 
 
 ## Entités associées (liste) {#properties-has-many}
@@ -40,6 +47,7 @@ Le temps nécessaire pour pouvoir passer de chaque étage au prochain
 
 
 *Nom technique:* ```rooms```
+<PH code="roomConnector:rooms"/>
 
 
 

@@ -1,9 +1,9 @@
 import React from "react";
-import { Box, Fade, Paper, Tooltip, TooltipProps, tooltipClasses } from '@mui/material';
+import { Box, Fade, Paper } from '@mui/material';
 import entitiesPath from '../../../src/metaModel/entities.paths.json';
-import { styled } from '@mui/material/styles';
 import { useTranslations } from "../Translations/translations";
 import {toDocumentationLinkString} from "../../../../surfy/src/back/documentation/documentionStyle";
+import { HelpTooltipStyled } from "./HelpTooltipStyled";
 
 
 
@@ -31,34 +31,9 @@ export function PropertyType(props: { code: string }) {
         </Box>
         <Box >{translations.description}</Box>
     </Paper >;
-    return <HelpTooltipStyled title={Title} TransitionComponent={Fade} disableInteractive={true}>
+    return <HelpTooltipStyled title={Title} slots={{
+        transition:Fade
+    }} disableInteractive={true}>
         <a href={href}>{translations.label}</a>
     </HelpTooltipStyled>
 }
-
-
-const HelpTooltipStyled = styled(({ className, ...props }: TooltipProps) => (
-    <Tooltip {...props} classes={{ popper: className }} />
-))(({ theme }) => ({
-    [`& .${tooltipClasses.tooltip}`]: {
-        backgroundColor: 'transparent',
-        maxWidth: 500,
-        minWidth: 500,
-        fontSize: 14
-    },
-}));
-
-
-
-// const defaultHelpTooltipStyle = {
-//     backgroundColor: 'red',
-//     padding: 0,
-//     maxWidth: 500,
-//     fontSize: 14
-// };
-// const HelpTooltipStyled = styled(() => ({
-//     tooltip: {
-//         ...defaultHelpTooltipStyle
-//     }
-// }))(Tooltip);
-

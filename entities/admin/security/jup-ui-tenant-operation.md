@@ -3,6 +3,9 @@
 
 
 
+<OH code="jupUiTenantOperation"/>
+
+
 ## Propriétés de base {#properties-base}
 
 ### Name {#name}
@@ -10,6 +13,7 @@
 
 
 *Nom technique:* ```name```
+<PH code="jupUiTenantOperation:name"/>
 
 
 
@@ -21,6 +25,7 @@
 
 
 *Nom technique:* ```contentRoleToJupUiTenantOperations```
+<PH code="jupUiTenantOperation:contentRoleToJupUiTenantOperations"/>
 
 
 

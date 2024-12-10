@@ -3,6 +3,9 @@
 
 
 
+<OH code="apiUserToJupRole"/>
+
+
 ## Basic properties {#properties-base}
 
 
@@ -14,12 +17,14 @@
 
 
 *Technical name:* ```apiUser```
+<PH code="apiUserToJupRole:apiUser"/>
 
 ### Role {#jup-role}
 
 
 
 *Technical name:* ```jupRole```
+<PH code="apiUserToJupRole:jupRole"/>
 
 
 

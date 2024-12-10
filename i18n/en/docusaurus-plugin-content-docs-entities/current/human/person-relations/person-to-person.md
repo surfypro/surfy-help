@@ -3,6 +3,9 @@
 
 
 
+<OH code="personToPerson"/>
+
+
 ## Basic properties {#properties-base}
 
 
@@ -14,18 +17,21 @@
 
 
 *Technical name:* ```personTarget```
+<PH code="personToPerson:personTarget"/>
 
 ### Source person {#person-source}
 
 
 
 *Technical name:* ```personSource```
+<PH code="personToPerson:personSource"/>
 
 ### Type of relationship between people {#person-to-person-type}
 
 
 
 *Technical name:* ```personToPersonType```
+<PH code="personToPerson:personToPersonType"/>
 
 
 

@@ -3,6 +3,9 @@
 
 Space connectors allow you to create a link between several spaces on different floors
 
+<OH code="roomConnector"/>
+
+
 ## Basic properties {#properties-base}
 
 ### Average waiting time {#wait-time}
@@ -10,18 +13,21 @@ Space connectors allow you to create a link between several spaces on different 
 The average wait time before the space connector becomes available
 
 *Technical name:* ```waitTime```
+<PH code="roomConnector:waitTime"/>
 
 ### Space connector name {#name}
 
 
 
 *Technical name:* ```name```
+<PH code="roomConnector:name"/>
 
 ### Time between each floor {#time-per-floor}
 
 The time required to be able to move from each floor to the next
 
 *Technical name:* ```timePerFloor```
+<PH code="roomConnector:timePerFloor"/>
 
 
 ## Associated entities (unique) {#properties-belongs-to}
@@ -31,6 +37,7 @@ The time required to be able to move from each floor to the next
 
 
 *Technical name:* ```roomConnectorType```
+<PH code="roomConnector:roomConnectorType"/>
 
 
 ## Associated entities (list) {#properties-has-many}
@@ -40,6 +47,7 @@ The time required to be able to move from each floor to the next
 
 
 *Technical name:* ```rooms```
+<PH code="roomConnector:rooms"/>
 
 
 

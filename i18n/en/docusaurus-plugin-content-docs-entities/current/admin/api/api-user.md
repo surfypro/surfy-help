@@ -3,6 +3,9 @@
 
 
 
+<OH code="apiUser"/>
+
+
 ## Basic properties {#properties-base}
 
 ### Name {#name}
@@ -10,12 +13,14 @@
 
 
 *Technical name:* ```name```
+<PH code="apiUser:name"/>
 
 ### Secret code {#client-secret}
 
 the secret password for your API account can be generated and should never be disclosed
 
 *Technical name:* ```clientSecret```
+<PH code="apiUser:clientSecret"/>
 
 
 
@@ -27,12 +32,14 @@ the secret password for your API account can be generated and should never be di
 
 
 *Technical name:* ```apiUserToContentRoles```
+<PH code="apiUser:apiUserToContentRoles"/>
 
 ### API user associations to role {#api-user-to-jup-roles}
 
 
 
 *Technical name:* ```apiUserToJupRoles```
+<PH code="apiUser:apiUserToJupRoles"/>
 
 
 

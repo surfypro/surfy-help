@@ -3,6 +3,9 @@
 
 
 
+<OH code="contentRoleToUserCompany"/>
+
+
 ## Propriétés de base {#properties-base}
 
 
@@ -14,12 +17,14 @@
 
 
 *Nom technique:* ```contentRole```
+<PH code="contentRoleToUserCompany:contentRole"/>
 
 ### Utilisateur de l'entreprise {#user-company}
 
 
 
 *Nom technique:* ```userCompany```
+<PH code="contentRoleToUserCompany:userCompany"/>
 
 
 

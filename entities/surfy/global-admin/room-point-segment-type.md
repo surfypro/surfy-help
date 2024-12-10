@@ -3,6 +3,9 @@
 
 
 
+<OH code="roomPointSegmentType"/>
+
+
 ## Propriétés de base {#properties-base}
 
 ### Code {#code}
@@ -10,12 +13,14 @@
 
 
 *Nom technique:* ```code```
+<PH code="roomPointSegmentType:code"/>
 
 ### Name {#name}
 
 
 
 *Nom technique:* ```name```
+<PH code="roomPointSegmentType:name"/>
 
 
 
@@ -27,6 +32,7 @@
 
 
 *Nom technique:* ```roomPointSegments```
+<PH code="roomPointSegmentType:roomPointSegments"/>
 
 
 

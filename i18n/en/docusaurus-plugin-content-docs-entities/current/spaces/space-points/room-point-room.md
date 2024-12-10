@@ -3,6 +3,9 @@
 
 The association between a point and a space makes it possible to preserve the order of the points in a space in order to constitute a polyon
 
+<OH code="roomPointRoom"/>
+
+
 ## Basic properties {#properties-base}
 
 ### Sort index {#sort-index}
@@ -10,6 +13,7 @@ The association between a point and a space makes it possible to preserve the or
 
 
 *Technical name:* ```sortIndex```
+<PH code="roomPointRoom:sortIndex"/>
 
 
 ## Associated entities (unique) {#properties-belongs-to}
@@ -19,12 +23,14 @@ The association between a point and a space makes it possible to preserve the or
 
 
 *Technical name:* ```roomPoint```
+<PH code="roomPointRoom:roomPoint"/>
 
 ### Space {#room}
 
 
 
 *Technical name:* ```room```
+<PH code="roomPointRoom:room"/>
 
 
 

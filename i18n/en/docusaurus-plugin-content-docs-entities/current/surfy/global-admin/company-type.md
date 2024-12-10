@@ -3,6 +3,9 @@
 
 
 
+<OH code="companyType"/>
+
+
 ## Basic properties {#properties-base}
 
 ### Billable {#billable}
@@ -10,12 +13,14 @@
 
 
 *Technical name:* ```billable```
+<PH code="companyType:billable"/>
 
 ### Business type name {#name}
 
 
 
 *Technical name:* ```name```
+<PH code="companyType:name"/>
 
 
 
@@ -27,6 +32,7 @@
 
 
 *Technical name:* ```companies```
+<PH code="companyType:companies"/>
 
 
 

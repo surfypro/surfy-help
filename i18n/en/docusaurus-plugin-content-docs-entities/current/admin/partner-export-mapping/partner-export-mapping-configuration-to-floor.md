@@ -3,6 +3,9 @@
 
 
 
+<OH code="partnerExportMappingConfigurationToFloor"/>
+
+
 ## Basic properties {#properties-base}
 
 
@@ -14,12 +17,14 @@
 
 
 *Technical name:* ```partnerExportMappingConfiguration```
+<PH code="partnerExportMappingConfigurationToFloor:partnerExportMappingConfiguration"/>
 
 ### Floor {#floor}
 
 
 
 *Technical name:* ```floor```
+<PH code="partnerExportMappingConfigurationToFloor:floor"/>
 
 
 

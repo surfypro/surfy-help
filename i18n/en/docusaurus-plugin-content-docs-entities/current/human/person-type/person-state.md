@@ -3,6 +3,9 @@
 
 
 
+<OH code="personState"/>
+
+
 ## Basic properties {#properties-base}
 
 ### Person Status Name {#name}
@@ -10,6 +13,7 @@
 
 
 *Technical name:* ```name```
+<PH code="personState:name"/>
 
 
 
@@ -21,6 +25,7 @@
 
 
 *Technical name:* ```people```
+<PH code="personState:people"/>
 
 
 

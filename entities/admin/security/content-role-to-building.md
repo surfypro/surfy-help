@@ -3,6 +3,9 @@
 
 
 
+<OH code="contentRoleToBuilding"/>
+
+
 ## Propriétés de base {#properties-base}
 
 
@@ -14,12 +17,14 @@
 Le bâtiment est utilisé pour regrouper les étages
 
 *Nom technique:* ```building```
+<PH code="contentRoleToBuilding:building"/>
 
 ### Rôle de contenu {#content-role}
 
 
 
 *Nom technique:* ```contentRole```
+<PH code="contentRoleToBuilding:contentRole"/>
 
 
 

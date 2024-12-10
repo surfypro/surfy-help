@@ -3,6 +3,9 @@
 
 
 
+<OH code="itemTypePoint"/>
+
+
 ## Basic properties {#properties-base}
 
 ### Sort index {#sort-index}
@@ -10,18 +13,21 @@
 
 
 *Technical name:* ```sortIndex```
+<PH code="itemTypePoint:sortIndex"/>
 
 ### there {#y}
 
 
 
 *Technical name:* ```y```
+<PH code="itemTypePoint:y"/>
 
 ### x {#x}
 
 
 
 *Technical name:* ```x```
+<PH code="itemTypePoint:x"/>
 
 
 ## Associated entities (unique) {#properties-belongs-to}
@@ -31,6 +37,7 @@
 
 
 *Technical name:* ```itemType```
+<PH code="itemTypePoint:itemType"/>
 
 
 

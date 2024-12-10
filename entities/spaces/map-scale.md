@@ -3,6 +3,9 @@
 
 
 
+<OH code="mapScale"/>
+
+
 ## Propriétés de base {#properties-base}
 
 ### Distance {#length}
@@ -10,66 +13,77 @@
 La distance representée sur le plan entre les 2 points en mètre
 
 *Nom technique:* ```length```
+<PH code="mapScale:length"/>
 
 ### Epaisseur des lignes {#stroke-width}
 
 Il est possible de réduire l'épaisseur des lignes pour augmenter la lisibilité du plan
 
 *Nom technique:* ```strokeWidth```
+<PH code="mapScale:strokeWidth"/>
 
 ### Nom de l'échelle {#name}
 
 Pour se rémémorer le nom et le réutiliser sur d'autres étages
 
 *Nom technique:* ```name```
+<PH code="mapScale:name"/>
 
 ### P1 {#p-1}
 
 
 
 *Nom technique:* ```p1```
+<PH code="mapScale:p1"/>
 
 ### P2 {#p-2}
 
 
 
 *Nom technique:* ```p2```
+<PH code="mapScale:p2"/>
 
 ### Ratio {#ratio}
 
 
 
 *Nom technique:* ```ratio```
+<PH code="mapScale:ratio"/>
 
 ### Taille des icônes des types d'espace {#room-icon-size}
 
 La taille des icones sur le plan dans les espaces par rapport aux types d'espace
 
 *Nom technique:* ```roomIconSize```
+<PH code="mapScale:roomIconSize"/>
 
 ### Taille des icônes des types d'objet {#item-type-icon-size}
 
 La taille des icones des types d'objet sur le plan, la taille sera limitée par la taille de l'espace
 
 *Nom technique:* ```itemTypeIconSize```
+<PH code="mapScale:itemTypeIconSize"/>
 
 ### Taille du texte des espaces {#room-text-size}
 
 La taille du texte des espaces sur le plan pour optimiser l'affichage
 
 *Nom technique:* ```roomTextSize```
+<PH code="mapScale:roomTextSize"/>
 
 ### Taille du texte des segments {#segment-distance-text-size}
 
 La taille du texte sur les distances entre les points sur le plan pour optimiser l'affichage
 
 *Nom technique:* ```segmentDistanceTextSize```
+<PH code="mapScale:segmentDistanceTextSize"/>
 
 ### Taille du texte sur les objets {#workplace-text-size}
 
 La taille du texte sur les postes de travail et sur les objets sur le plan pour optimiser l'affichage
 
 *Nom technique:* ```workplaceTextSize```
+<PH code="mapScale:workplaceTextSize"/>
 
 
 
@@ -81,6 +95,7 @@ La taille du texte sur les postes de travail et sur les objets sur le plan pour 
 
 
 *Nom technique:* ```floors```
+<PH code="mapScale:floors"/>
 
 
 

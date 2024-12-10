@@ -3,6 +3,9 @@
 
 
 
+<OH code="apiUser"/>
+
+
 ## Propriétés de base {#properties-base}
 
 ### Code secret {#client-secret}
@@ -10,12 +13,14 @@
 le mot de passe secret de votre compte API peut être généré et ne devrait jamais être communiqué
 
 *Nom technique:* ```clientSecret```
+<PH code="apiUser:clientSecret"/>
 
 ### Name {#name}
 
 
 
 *Nom technique:* ```name```
+<PH code="apiUser:name"/>
 
 
 
@@ -27,12 +32,14 @@ le mot de passe secret de votre compte API peut être généré et ne devrait ja
 
 
 *Nom technique:* ```apiUserToJupRoles```
+<PH code="apiUser:apiUserToJupRoles"/>
 
 ### Associations d'utilisateur d'api au rôle de contenu {#api-user-to-content-roles}
 
 
 
 *Nom technique:* ```apiUserToContentRoles```
+<PH code="apiUser:apiUserToContentRoles"/>
 
 
 

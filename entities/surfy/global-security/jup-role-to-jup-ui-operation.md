@@ -3,6 +3,9 @@
 
 
 
+<OH code="jupRoleToJupUiOperation"/>
+
+
 ## Propriétés de base {#properties-base}
 
 ### Can See {#can-see}
@@ -10,6 +13,7 @@
 
 
 *Nom technique:* ```canSee```
+<PH code="jupRoleToJupUiOperation:canSee"/>
 
 
 ## Entités associées (unique) {#properties-belongs-to}
@@ -19,12 +23,14 @@
 
 
 *Nom technique:* ```jupUiOperation```
+<PH code="jupRoleToJupUiOperation:jupUiOperation"/>
 
 ### Rôle {#jup-role}
 
 
 
 *Nom technique:* ```jupRole```
+<PH code="jupRoleToJupUiOperation:jupRole"/>
 
 
 

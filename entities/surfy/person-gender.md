@@ -3,6 +3,9 @@
 
 
 
+<OH code="personGender"/>
+
+
 ## Propriétés de base {#properties-base}
 
 ### Nom {#name}
@@ -10,6 +13,7 @@
 Le nom du genre de la personne
 
 *Nom technique:* ```name```
+<PH code="personGender:name"/>
 
 
 
@@ -21,6 +25,7 @@ Le nom du genre de la personne
 
 
 *Nom technique:* ```people```
+<PH code="personGender:people"/>
 
 
 

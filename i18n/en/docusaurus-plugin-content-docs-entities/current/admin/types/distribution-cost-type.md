@@ -3,6 +3,9 @@
 
 
 
+<OH code="distributionCostType"/>
+
+
 ## Basic properties {#properties-base}
 
 ### Code {#code}
@@ -10,12 +13,14 @@
 The code is used in order to be able to automatically calculate the associated costs
 
 *Technical name:* ```code```
+<PH code="distributionCostType:code"/>
 
 ### Name of the cost distribution type {#name}
 
 
 
 *Technical name:* ```name```
+<PH code="distributionCostType:name"/>
 
 
 
@@ -27,12 +32,14 @@ The code is used in order to be able to automatically calculate the associated c
 
 
 *Technical name:* ```roomTypes```
+<PH code="distributionCostType:roomTypes"/>
 
 ### Spaces {#rooms}
 
 
 
 *Technical name:* ```rooms```
+<PH code="distributionCostType:rooms"/>
 
 
 

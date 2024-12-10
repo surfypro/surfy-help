@@ -3,6 +3,9 @@
 
 
 
+<OH code="jupUserCompanyToJupRole"/>
+
+
 ## Propriétés de base {#properties-base}
 
 
@@ -14,12 +17,14 @@
 
 
 *Nom technique:* ```jupRole```
+<PH code="jupUserCompanyToJupRole:jupRole"/>
 
 ### Utilisateur de l'entreprise {#user-company}
 
 
 
 *Nom technique:* ```userCompany```
+<PH code="jupUserCompanyToJupRole:userCompany"/>
 
 
 

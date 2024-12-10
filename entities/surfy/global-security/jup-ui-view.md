@@ -3,6 +3,9 @@
 
 
 
+<OH code="jupUiView"/>
+
+
 ## Propriétés de base {#properties-base}
 
 ### Is Default View {#is-default-view}
@@ -10,12 +13,14 @@
 
 
 *Nom technique:* ```isDefaultView```
+<PH code="jupUiView:isDefaultView"/>
 
 ### Name {#name}
 
 
 
 *Nom technique:* ```name```
+<PH code="jupUiView:name"/>
 
 
 ## Entités associées (unique) {#properties-belongs-to}
@@ -25,6 +30,7 @@
 
 
 *Nom technique:* ```jupObjectType```
+<PH code="jupUiView:jupObjectType"/>
 
 
 ## Entités associées (liste) {#properties-has-many}
@@ -34,6 +40,7 @@
 
 
 *Nom technique:* ```jupRoleToJupUiViews```
+<PH code="jupUiView:jupRoleToJupUiViews"/>
 
 
 

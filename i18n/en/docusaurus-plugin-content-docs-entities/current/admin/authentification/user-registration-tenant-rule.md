@@ -3,6 +3,9 @@
 
 
 
+<OH code="userRegistrationTenantRule"/>
+
+
 ## Basic properties {#properties-base}
 
 ### Areas {#domains}
@@ -10,18 +13,21 @@
 Separate domains with spaces and include the at sign
 
 *Technical name:* ```domains```
+<PH code="userRegistrationTenantRule:domains"/>
 
 ### Automatically associate roles {#automatic-user-to-role-mapping}
 
 Automatically associate roles and content roles with users who meet this rule
 
 *Technical name:* ```automaticUserToRoleMapping```
+<PH code="userRegistrationTenantRule:automaticUserToRoleMapping"/>
 
 ### Name {#name}
 
 
 
 *Technical name:* ```name```
+<PH code="userRegistrationTenantRule:name"/>
 
 
 ## Associated entities (unique) {#properties-belongs-to}
@@ -31,6 +37,7 @@ Automatically associate roles and content roles with users who meet this rule
 
 
 *Technical name:* ```authentificationConnection```
+<PH code="userRegistrationTenantRule:authentificationConnection"/>
 
 
 ## Associated entities (list) {#properties-has-many}
@@ -40,12 +47,14 @@ Automatically associate roles and content roles with users who meet this rule
 
 
 *Technical name:* ```userRegistrationTenantRuleToContentRoles```
+<PH code="userRegistrationTenantRule:userRegistrationTenantRuleToContentRoles"/>
 
 ### Authentication rule-to-role associations {#user-registration-tenant-rule-to-jup-roles}
 
 
 
 *Technical name:* ```userRegistrationTenantRuleToJupRoles```
+<PH code="userRegistrationTenantRule:userRegistrationTenantRuleToJupRoles"/>
 
 
 

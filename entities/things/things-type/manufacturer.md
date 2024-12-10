@@ -3,6 +3,9 @@
 
 
 
+<OH code="manufacturer"/>
+
+
 ## Propriétés de base {#properties-base}
 
 ### Nom du fabricant du type d'objet {#name}
@@ -10,12 +13,14 @@
 Permet d'identifier le nom du fabricant ou la marque
 
 *Nom technique:* ```name```
+<PH code="manufacturer:name"/>
 
 ### Site internet {#website}
 
 L'adresse du site internet du fabricant
 
 *Nom technique:* ```website```
+<PH code="manufacturer:website"/>
 
 
 
@@ -27,6 +32,7 @@ L'adresse du site internet du fabricant
 
 
 *Nom technique:* ```itemTypes```
+<PH code="manufacturer:itemTypes"/>
 
 
 

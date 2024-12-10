@@ -3,6 +3,9 @@
 
 The missions of the service providers make it possible to know the area of ​​intervention of the service providers
 
+<OH code="personCompanyMission"/>
+
+
 ## Basic properties {#properties-base}
 
 ### Last name {#name}
@@ -10,6 +13,7 @@ The missions of the service providers make it possible to know the area of ​�
 The name of the service provider’s mission
 
 *Technical name:* ```name```
+<PH code="personCompanyMission:name"/>
 
 
 
@@ -21,12 +25,14 @@ The name of the service provider’s mission
 The service provider object types make it possible to define a relationship between the object type and the service provider and to define the mission.
 
 *Technical name:* ```personCompanyToItemTypes```
+<PH code="personCompanyMission:personCompanyToItemTypes"/>
 
 ### Types of provider spaces {#person-company-to-room-types}
 
 The types of spaces of the service providers make it possible to define a relationship between a type of space and the service provider and to define a mission.
 
 *Technical name:* ```personCompanyToRoomTypes```
+<PH code="personCompanyMission:personCompanyToRoomTypes"/>
 
 
 

@@ -3,6 +3,9 @@
 
 
 
+<OH code="contentRoleToBuilding"/>
+
+
 ## Basic properties {#properties-base}
 
 
@@ -14,12 +17,14 @@
 The building is used to group the floors
 
 *Technical name:* ```building```
+<PH code="contentRoleToBuilding:building"/>
 
 ### Content role {#content-role}
 
 
 
 *Technical name:* ```contentRole```
+<PH code="contentRoleToBuilding:contentRole"/>
 
 
 

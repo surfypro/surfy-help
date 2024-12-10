@@ -3,6 +3,9 @@
 
 People's workstation reservations are recorded and available with the start and end dates of the reservation
 
+<OH code="personToWorkplaceBooking"/>
+
+
 ## Basic properties {#properties-base}
 
 ### End of reservation {#end-datetime}
@@ -10,12 +13,14 @@ People's workstation reservations are recorded and available with the start and 
 The date and time the reservation ends
 
 *Technical name:* ```endDatetime```
+<PH code="personToWorkplaceBooking:endDatetime"/>
 
 ### Start of booking {#start-datetime}
 
 The start date and time of the reservation
 
 *Technical name:* ```startDatetime```
+<PH code="personToWorkplaceBooking:startDatetime"/>
 
 
 ## Associated entities (unique) {#properties-belongs-to}
@@ -25,18 +30,21 @@ The start date and time of the reservation
 
 
 *Technical name:* ```person```
+<PH code="personToWorkplaceBooking:person"/>
 
 ### People's work location {#person-working-location}
 
 A workplace of people defines the workplace of people
 
 *Technical name:* ```personWorkingLocation```
+<PH code="personToWorkplaceBooking:personWorkingLocation"/>
 
 ### Workplace {#workplace}
 
 
 
 *Technical name:* ```workplace```
+<PH code="personToWorkplaceBooking:workplace"/>
 
 
 

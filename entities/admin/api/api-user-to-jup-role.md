@@ -3,6 +3,9 @@
 
 
 
+<OH code="apiUserToJupRole"/>
+
+
 ## Propriétés de base {#properties-base}
 
 
@@ -14,12 +17,14 @@
 
 
 *Nom technique:* ```jupRole```
+<PH code="apiUserToJupRole:jupRole"/>
 
 ### Utilisateur d'api {#api-user}
 
 
 
 *Nom technique:* ```apiUser```
+<PH code="apiUserToJupRole:apiUser"/>
 
 
 

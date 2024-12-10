@@ -3,6 +3,9 @@
 
 
 
+<OH code="partnerExportMapping"/>
+
+
 ## Propriétés de base {#properties-base}
 
 ### Label {#label}
@@ -10,12 +13,14 @@
 
 
 *Nom technique:* ```label```
+<PH code="partnerExportMapping:label"/>
 
 ### Partner Code {#partner-code}
 
 
 
 *Nom technique:* ```partnerCode```
+<PH code="partnerExportMapping:partnerCode"/>
 
 
 ## Entités associées (unique) {#properties-belongs-to}
@@ -25,6 +30,7 @@
 
 
 *Nom technique:* ```partnerExportMappingConfiguration```
+<PH code="partnerExportMapping:partnerExportMappingConfiguration"/>
 
 
 ## Entités associées (liste) {#properties-has-many}
@@ -34,6 +40,7 @@
 
 
 *Nom technique:* ```partnerExportMappingToRoomTypes```
+<PH code="partnerExportMapping:partnerExportMappingToRoomTypes"/>
 
 
 

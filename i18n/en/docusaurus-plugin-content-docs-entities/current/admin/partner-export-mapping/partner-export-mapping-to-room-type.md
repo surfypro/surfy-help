@@ -3,6 +3,9 @@
 
 
 
+<OH code="partnerExportMappingToRoomType"/>
+
+
 ## Basic properties {#properties-base}
 
 
@@ -14,12 +17,14 @@
 
 
 *Technical name:* ```partnerExportMapping```
+<PH code="partnerExportMappingToRoomType:partnerExportMapping"/>
 
 ### Space typology {#room-type}
 
 
 
 *Technical name:* ```roomType```
+<PH code="partnerExportMappingToRoomType:roomType"/>
 
 
 

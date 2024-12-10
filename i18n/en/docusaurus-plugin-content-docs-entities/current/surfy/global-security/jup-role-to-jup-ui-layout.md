@@ -3,6 +3,9 @@
 
 
 
+<OH code="jupRoleToJupUiLayout"/>
+
+
 ## Basic properties {#properties-base}
 
 ### Can See {#can-see}
@@ -10,6 +13,7 @@
 
 
 *Technical name:* ```canSee```
+<PH code="jupRoleToJupUiLayout:canSee"/>
 
 
 ## Associated entities (unique) {#properties-belongs-to}
@@ -19,12 +23,14 @@
 
 
 *Technical name:* ```jupRole```
+<PH code="jupRoleToJupUiLayout:jupRole"/>
 
 ### View of the plan {#jup-ui-layout}
 
 
 
 *Technical name:* ```jupUiLayout```
+<PH code="jupRoleToJupUiLayout:jupUiLayout"/>
 
 
 

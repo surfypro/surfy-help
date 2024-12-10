@@ -3,6 +3,9 @@
 
 
 
+<OH code="contentRoleToFloor"/>
+
+
 ## Propriétés de base {#properties-base}
 
 
@@ -14,12 +17,14 @@
 
 
 *Nom technique:* ```floor```
+<PH code="contentRoleToFloor:floor"/>
 
 ### Rôle de contenu {#content-role}
 
 
 
 *Nom technique:* ```contentRole```
+<PH code="contentRoleToFloor:contentRole"/>
 
 
 

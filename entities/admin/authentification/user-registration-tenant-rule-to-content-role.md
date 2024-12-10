@@ -3,6 +3,9 @@
 
 
 
+<OH code="userRegistrationTenantRuleToContentRole"/>
+
+
 ## Propriétés de base {#properties-base}
 
 
@@ -14,12 +17,14 @@
 
 
 *Nom technique:* ```userRegistrationTenantRule```
+<PH code="userRegistrationTenantRuleToContentRole:userRegistrationTenantRule"/>
 
 ### Rôle de contenu {#content-role}
 
 
 
 *Nom technique:* ```contentRole```
+<PH code="userRegistrationTenantRuleToContentRole:contentRole"/>
 
 
 

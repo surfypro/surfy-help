@@ -3,6 +3,9 @@
 
 
 
+<OH code="roomConnectorType"/>
+
+
 ## Propriétés de base {#properties-base}
 
 ### Name {#name}
@@ -10,6 +13,7 @@
 
 
 *Nom technique:* ```name```
+<PH code="roomConnectorType:name"/>
 
 
 
@@ -21,6 +25,7 @@
 Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces dans des étages différents
 
 *Nom technique:* ```roomConnectors```
+<PH code="roomConnectorType:roomConnectors"/>
 
 
 

@@ -3,6 +3,9 @@
 
 
 
+<OH code="itemToPerson"/>
+
+
 ## Propriétés de base {#properties-base}
 
 
@@ -14,12 +17,14 @@
 
 
 *Nom technique:* ```item```
+<PH code="itemToPerson:item"/>
 
 ### Personne {#person}
 
 
 
 *Nom technique:* ```person```
+<PH code="itemToPerson:person"/>
 
 
 

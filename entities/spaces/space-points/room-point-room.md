@@ -3,6 +3,9 @@
 
 L'association entre un point et un espace permet de conserver l'ordre des points dans un espace afin de constituer un polyon
 
+<OH code="roomPointRoom"/>
+
+
 ## Propriétés de base {#properties-base}
 
 ### Index de tri {#sort-index}
@@ -10,6 +13,7 @@ L'association entre un point et un espace permet de conserver l'ordre des points
 
 
 *Nom technique:* ```sortIndex```
+<PH code="roomPointRoom:sortIndex"/>
 
 
 ## Entités associées (unique) {#properties-belongs-to}
@@ -19,12 +23,14 @@ L'association entre un point et un espace permet de conserver l'ordre des points
 
 
 *Nom technique:* ```room```
+<PH code="roomPointRoom:room"/>
 
 ### Point des espaces {#room-point}
 
 
 
 *Nom technique:* ```roomPoint```
+<PH code="roomPointRoom:roomPoint"/>
 
 
 

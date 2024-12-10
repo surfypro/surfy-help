@@ -3,6 +3,9 @@
 
 
 
+<OH code="authentificationConnection"/>
+
+
 ## Basic properties {#properties-base}
 
 ### Name {#name}
@@ -10,6 +13,7 @@
 
 
 *Technical name:* ```name```
+<PH code="authentificationConnection:name"/>
 
 
 
@@ -21,6 +25,7 @@
 
 
 *Technical name:* ```userRegistrationTenantRules```
+<PH code="authentificationConnection:userRegistrationTenantRules"/>
 
 
 

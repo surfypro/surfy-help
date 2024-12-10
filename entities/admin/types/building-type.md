@@ -3,6 +3,9 @@
 
 
 
+<OH code="buildingType"/>
+
+
 ## Propriétés de base {#properties-base}
 
 ### Code {#code}
@@ -10,18 +13,21 @@
 
 
 *Nom technique:* ```code```
+<PH code="buildingType:code"/>
 
 ### Color {#color}
 
 
 
 *Nom technique:* ```color```
+<PH code="buildingType:color"/>
 
 ### Nom du type de bâtiment {#name}
 
 Nom du type de bâtiment
 
 *Nom technique:* ```name```
+<PH code="buildingType:name"/>
 
 
 
@@ -33,6 +39,7 @@ Nom du type de bâtiment
 Le bâtiment est utilisé pour regrouper les étages
 
 *Nom technique:* ```buildings```
+<PH code="buildingType:buildings"/>
 
 
 

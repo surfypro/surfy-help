@@ -3,6 +3,9 @@
 
 
 
+<OH code="featureGroup"/>
+
+
 ## Propriétés de base {#properties-base}
 
 ### Name {#name}
@@ -10,12 +13,14 @@
 
 
 *Nom technique:* ```name```
+<PH code="featureGroup:name"/>
 
 ### Sort Order {#sort-order}
 
 
 
 *Nom technique:* ```sortOrder```
+<PH code="featureGroup:sortOrder"/>
 
 
 ## Entités associées (unique) {#properties-belongs-to}
@@ -25,6 +30,7 @@
 
 
 *Nom technique:* ```featureFamily```
+<PH code="featureGroup:featureFamily"/>
 
 
 ## Entités associées (liste) {#properties-has-many}
@@ -34,6 +40,7 @@
 
 
 *Nom technique:* ```features```
+<PH code="featureGroup:features"/>
 
 
 

@@ -3,6 +3,9 @@
 
 
 
+<OH code="userRegistrationTenantRuleToJupRole"/>
+
+
 ## Propriétés de base {#properties-base}
 
 
@@ -14,12 +17,14 @@
 
 
 *Nom technique:* ```userRegistrationTenantRule```
+<PH code="userRegistrationTenantRuleToJupRole:userRegistrationTenantRule"/>
 
 ### Rôle {#jup-role}
 
 
 
 *Nom technique:* ```jupRole```
+<PH code="userRegistrationTenantRuleToJupRole:jupRole"/>
 
 
 

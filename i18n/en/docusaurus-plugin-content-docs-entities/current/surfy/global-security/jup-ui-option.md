@@ -3,6 +3,9 @@
 
 
 
+<OH code="jupUiOption"/>
+
+
 ## Basic properties {#properties-base}
 
 ### Name {#name}
@@ -10,12 +13,14 @@
 
 
 *Technical name:* ```name```
+<PH code="jupUiOption:name"/>
 
 ### Scope {#scope}
 
 
 
 *Technical name:* ```scope```
+<PH code="jupUiOption:scope"/>
 
 
 
@@ -27,6 +32,7 @@
 
 
 *Technical name:* ```jupRoleToJupUiOptions```
+<PH code="jupUiOption:jupRoleToJupUiOptions"/>
 
 
 

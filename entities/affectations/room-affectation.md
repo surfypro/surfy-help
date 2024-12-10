@@ -3,6 +3,9 @@
 
 
 
+<OH code="roomAffectation"/>
+
+
 ## Propriétés de base {#properties-base}
 
 
@@ -14,12 +17,14 @@
 
 
 *Nom technique:* ```room```
+<PH code="roomAffectation:room"/>
 
 ### Personne {#person}
 
 
 
 *Nom technique:* ```person```
+<PH code="roomAffectation:person"/>
 
 
 

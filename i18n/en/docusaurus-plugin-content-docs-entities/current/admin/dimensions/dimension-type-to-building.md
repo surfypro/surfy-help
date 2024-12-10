@@ -3,6 +3,9 @@
 
 
 
+<OH code="dimensionTypeToBuilding"/>
+
+
 ## Basic properties {#properties-base}
 
 
@@ -14,12 +17,14 @@
 The building is used to group the floors
 
 *Technical name:* ```building```
+<PH code="dimensionTypeToBuilding:building"/>
 
 ### Layer type {#dimension-type}
 
 
 
 *Technical name:* ```dimensionType```
+<PH code="dimensionTypeToBuilding:dimensionType"/>
 
 
 

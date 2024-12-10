@@ -3,6 +3,9 @@
 
 
 
+<OH code="contentRoleToJupUiTenantOperation"/>
+
+
 ## Basic properties {#properties-base}
 
 ### Can See {#can-see}
@@ -10,6 +13,7 @@
 
 
 *Technical name:* ```canSee```
+<PH code="contentRoleToJupUiTenantOperation:canSee"/>
 
 
 ## Associated entities (unique) {#properties-belongs-to}
@@ -19,12 +23,14 @@
 
 
 *Technical name:* ```contentRole```
+<PH code="contentRoleToJupUiTenantOperation:contentRole"/>
 
 ### Interface operation for a company {#jup-ui-tenant-operation}
 
 
 
 *Technical name:* ```jupUiTenantOperation```
+<PH code="contentRoleToJupUiTenantOperation:jupUiTenantOperation"/>
 
 
 

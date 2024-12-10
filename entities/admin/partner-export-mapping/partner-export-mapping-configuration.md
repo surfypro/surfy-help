@@ -3,6 +3,9 @@
 
 
 
+<OH code="partnerExportMappingConfiguration"/>
+
+
 ## Propriétés de base {#properties-base}
 
 ### Code {#code}
@@ -10,6 +13,7 @@
 
 
 *Nom technique:* ```code```
+<PH code="partnerExportMappingConfiguration:code"/>
 
 
 
@@ -21,12 +25,14 @@
 
 
 *Nom technique:* ```partnerExportMappingConfigurationToFloors```
+<PH code="partnerExportMappingConfiguration:partnerExportMappingConfigurationToFloors"/>
 
 ###  Partner Export Mappings {#partner-export-mappings}
 
 
 
 *Nom technique:* ```partnerExportMappings```
+<PH code="partnerExportMappingConfiguration:partnerExportMappings"/>
 
 
 

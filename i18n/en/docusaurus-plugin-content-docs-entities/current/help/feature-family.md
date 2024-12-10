@@ -3,6 +3,9 @@
 
 
 
+<OH code="featureFamily"/>
+
+
 ## Basic properties {#properties-base}
 
 ### Name {#name}
@@ -10,6 +13,7 @@
 
 
 *Technical name:* ```name```
+<PH code="featureFamily:name"/>
 
 
 
@@ -21,6 +25,7 @@
 
 
 *Technical name:* ```featureGroups```
+<PH code="featureFamily:featureGroups"/>
 
 
 

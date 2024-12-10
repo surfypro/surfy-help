@@ -3,6 +3,9 @@
 
 
 
+<OH code="dimensionRoom"/>
+
+
 ## Propriétés de base {#properties-base}
 
 
@@ -14,18 +17,21 @@
 
 
 *Nom technique:* ```dimension```
+<PH code="dimensionRoom:dimension"/>
 
 ### Espace {#room}
 
 
 
 *Nom technique:* ```room```
+<PH code="dimensionRoom:room"/>
 
 ### Type de calque {#dimension-type}
 
 
 
 *Nom technique:* ```dimensionType```
+<PH code="dimensionRoom:dimensionType"/>
 
 
 
