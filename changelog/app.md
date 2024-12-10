@@ -2,26 +2,26 @@
 
 ## 5 Decembre 2024  - v3.4.46 ## 
 
-- Amélioration du zoom sur les plans sur les écran tactile et mobiles
-- Mise en place d'une entité Légende permettant de créer des légendes plus personnsalisé pour les plans à sortir en image
-    - Les légendes doivent être configurée et peuvent être utilisée dans les exports en image
+- Amélioration du zoom sur les plans sur les écrans tactiles et mobiles
+- Mise en place d'une entité Légende permettant de créer des légendes plus personnalisé pour les plans à sortir en image
+    - Les légendes doivent être configurées et peuvent être utilisées dans les exports en image
 
 
 ## 3 Decembre 2024  - v3.4.44 ## 
 
-- Amélioration globale de la vitesse de déplacements des objets
+- Amélioration globale de la vitesse de déplacement des objets
     - Amélioration du déplacement des points des espaces en mode édition du plan
     - Amélioration du déplacement des points de l'échelle
     - Amélioration du déplacement de la navigation dans le plan en 2D
-- Les quartiers sont maintenant affichable sur les zones de texte des espaces sur le plan en 2D et dans leur info-bulle
+- Les quartiers sont maintenant affichables sur les zones de texte des espaces sur le plan en 2D et dans leur info-bulle
 
 
 ## 30 Novembre 2024  - v3.4.43 ## 
 
 - Les tailles des icônes de type cercle, triangle et rectangle sont maintenant uniformisées
-- La taille des icônes dans les types de poste de travail est mainteant statique et fait 30cm quelque soit la taille des icônes dans l'échelle du plan 
-- Les réservations des postes de travail en flex peuvent maintenant être réalisé sur tout un bâtiment, il faut affecter les personnes directement sur le bâtiment et mettres les postes de travail en flex et réservables
-- Le nombre de jours réservable dans le planning est maintenant paramétrable depuis les propriétés de l'entreprise
+- La taille des icônes dans les types de poste de travail est maintenant statique et fait 30cm quelque soit la taille des icônes dans l'échelle du plan 
+- Les réservations des postes de travail en flex peuvent maintenant être réalisées sur tout un bâtiment, il faut affecter les personnes directement sur le bâtiment et mettre les postes de travail en flex et réservables
+- Le nombre de jours réservables dans le planning est maintenant paramètrable depuis les propriétés de l'entreprise
 
 
 ## 20 Novembre 2024  - v3.4.40 ## 
