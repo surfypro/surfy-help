@@ -202,7 +202,7 @@ const config: Config = {
             },
             {
               label: 'API',
-              href: 'https://app.surfy.pro/apidocs/',
+              href: 'https://help.surfy.pro/apidocs/',
             },
             {
               label: 'GitHub',

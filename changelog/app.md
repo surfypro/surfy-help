@@ -12,6 +12,7 @@
 - Synchronization mis en place avec le logiciel de gestion RH Lucca
 - Le choix de la langue est conservée même après la déconnexion à Surfy
 - La fenêtre de sauvegarde en image prend en compte le changement d'étage
+- Les plans en 3D peuvent maintenant être sauvegardés en image
 -->
 
 ## 3 Decembre 2024  - v3.4.44 ## 
