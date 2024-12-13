@@ -22,7 +22,7 @@ Allows you to define all types of contracts between people and the company
 
 ### People {#people}
 
-
+These are the people entered into Surfy's database
 
 *Technical name:* ```people```
 <PH code="personState:people"/>

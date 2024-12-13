@@ -100,7 +100,7 @@ The interventions of service providers on objects make it possible to define, fo
 
 ### Object-to-person associations {#item-to-people}
 
-
+Allows you to associate an object with a person (ergonomic seat, locker)
 
 *Technical name:* ```itemToPeople```
 <PH code="item:itemToPeople"/>

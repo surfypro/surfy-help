@@ -21,7 +21,7 @@
 
 ### Utilisateur de l'entreprise {#user-company}
 
-
+Les utilisateurs de l'entreprise ont accès à la plateforme Surfy de leur entreprise
 
 *Nom technique:* ```userCompany```
 <PH code="contentRoleToUserCompany:userCompany"/>

@@ -1,7 +1,7 @@
 # Utilisateur de l'entreprise
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Les utilisateurs de l'entreprise ont accès à la plateforme Surfy de leur entreprise
 
 <OH code="userCompany"/>
 
@@ -14,7 +14,7 @@
 
 ### Personne {#person}
 
-
+Ce sont les personnes entrées dans la base de données de Surfy
 
 *Nom technique:* ```person```
 <PH code="userCompany:person"/>
@@ -70,20 +70,6 @@
 
 *Nom technique:* ```featureUpdatedBies```
 <PH code="userCompany:featureUpdatedBies"/>
-
-###  Legends {#legend-created-bies}
-
-
-
-*Nom technique:* ```legendCreatedBies```
-<PH code="userCompany:legendCreatedBies"/>
-
-###  Legends {#legend-updated-bies}
-
-
-
-*Nom technique:* ```legendUpdatedBies```
-<PH code="userCompany:legendUpdatedBies"/>
 
 ###  Partner Export Mapping Configuration To Floors {#partner-export-mapping-configuration-to-floor-created-bies}
 
@@ -157,56 +143,56 @@
 
 ### Affectations au bâtiment {#person-to-building-created-bies}
 
-
+Permet d'attribuer une personne à un bâtiment, sans information supplémentaire. L'affectation peut être comptabilisée, ou non.
 
 *Nom technique:* ```personToBuildingCreatedBies```
 <PH code="userCompany:personToBuildingCreatedBies"/>
 
 ### Affectations au bâtiment {#person-to-building-updated-bies}
 
-
+Permet d'attribuer une personne à un bâtiment, sans information supplémentaire. L'affectation peut être comptabilisée, ou non.
 
 *Nom technique:* ```personToBuildingUpdatedBies```
 <PH code="userCompany:personToBuildingUpdatedBies"/>
 
 ### Affectations au poste de travail {#workplace-affectation-created-bies}
 
-
+Permet d'attribuer un poste de travail fixe à une personne
 
 *Nom technique:* ```workplaceAffectationCreatedBies```
 <PH code="userCompany:workplaceAffectationCreatedBies"/>
 
 ### Affectations au poste de travail {#workplace-affectation-updated-bies}
 
-
+Permet d'attribuer un poste de travail fixe à une personne
 
 *Nom technique:* ```workplaceAffectationUpdatedBies```
 <PH code="userCompany:workplaceAffectationUpdatedBies"/>
 
 ### Affectations aux calques d'affectation {#dimension-to-person-created-bies}
 
-
+Permet d'affecter une personne à un quartier, territoire ou village
 
 *Nom technique:* ```dimensionToPersonCreatedBies```
 <PH code="userCompany:dimensionToPersonCreatedBies"/>
 
 ### Affectations aux calques d'affectation {#dimension-to-person-updated-bies}
 
-
+Permet d'affecter une personne à un quartier, territoire ou village
 
 *Nom technique:* ```dimensionToPersonUpdatedBies```
 <PH code="userCompany:dimensionToPersonUpdatedBies"/>
 
 ### Affectations d'espace {#room-affectation-created-bies}
 
-
+Permet d'affecter une personne à un espace simple
 
 *Nom technique:* ```roomAffectationCreatedBies```
 <PH code="userCompany:roomAffectationCreatedBies"/>
 
 ### Affectations d'espace {#room-affectation-updated-bies}
 
-
+Permet d'affecter une personne à un espace simple
 
 *Nom technique:* ```roomAffectationUpdatedBies```
 <PH code="userCompany:roomAffectationUpdatedBies"/>
@@ -227,14 +213,14 @@
 
 ### Associations d'objet à personne {#item-to-person-created-bies}
 
-
+Permet d'associer un objet à une personne (siège ergonomique, casier)
 
 *Nom technique:* ```itemToPersonCreatedBies```
 <PH code="userCompany:itemToPersonCreatedBies"/>
 
 ### Associations d'objet à personne {#item-to-person-updated-bies}
 
-
+Permet d'associer un objet à une personne (siège ergonomique, casier)
 
 *Nom technique:* ```itemToPersonUpdatedBies```
 <PH code="userCompany:itemToPersonUpdatedBies"/>
@@ -458,14 +444,14 @@ Le campus est utilisé pour regrouper des bâtiments qui sont au même endroit.
 
 ### Centres de coût {#cost-center-created-bies}
 
-Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation
+Le centre de coût permet de répartir les espaces dynamiquement pour la refacturation
 
 *Nom technique:* ```costCenterCreatedBies```
 <PH code="userCompany:costCenterCreatedBies"/>
 
 ### Centres de coût {#cost-center-updated-bies}
 
-Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation
+Le centre de coût permet de répartir les espaces dynamiquement pour la refacturation
 
 *Nom technique:* ```costCenterUpdatedBies```
 <PH code="userCompany:costCenterUpdatedBies"/>
@@ -556,14 +542,14 @@ Un emplacement de travail des personnes définie le lieu de travail des personne
 
 ### Entreprises prestataires {#person-company-created-bies}
 
-L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion
+L'entreprise prestataire permet de gérer le personnel prestataire par entreprise d'appartenance
 
 *Nom technique:* ```personCompanyCreatedBies```
 <PH code="userCompany:personCompanyCreatedBies"/>
 
 ### Entreprises prestataires {#person-company-updated-bies}
 
-L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion
+L'entreprise prestataire permet de gérer le personnel prestataire par entreprise d'appartenance
 
 *Nom technique:* ```personCompanyUpdatedBies```
 <PH code="userCompany:personCompanyUpdatedBies"/>
@@ -680,6 +666,20 @@ Les interventions des prestataires sur des objets permettent de définir par exe
 *Nom technique:* ```personCompanyToItemUpdatedBies```
 <PH code="userCompany:personCompanyToItemUpdatedBies"/>
 
+### Légende {#legend-created-bies}
+
+La légende permet de configurer les propriété visible quand le plan est sauvegardé en image
+
+*Nom technique:* ```legendCreatedBies```
+<PH code="userCompany:legendCreatedBies"/>
+
+### Légende {#legend-updated-bies}
+
+La légende permet de configurer les propriété visible quand le plan est sauvegardé en image
+
+*Nom technique:* ```legendUpdatedBies```
+<PH code="userCompany:legendUpdatedBies"/>
+
 ### Mouvements d'objet {#item-fact-created-bies}
 
 
@@ -766,14 +766,14 @@ Les interventions des prestataires sur des objets permettent de définir par exe
 
 ### Personnes {#person-created-bies}
 
-
+Ce sont les personnes entrées dans la base de données de Surfy
 
 *Nom technique:* ```personCreatedBies```
 <PH code="userCompany:personCreatedBies"/>
 
 ### Personnes {#person-updated-bies}
 
-
+Ce sont les personnes entrées dans la base de données de Surfy
 
 *Nom technique:* ```personUpdatedBies```
 <PH code="userCompany:personUpdatedBies"/>
@@ -878,42 +878,42 @@ Permet de définir les différents profils sécurité associables à des personn
 
 ### Réservations à l'espace des personnes {#person-to-room-booking-created-bies}
 
-Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+Les réservations aux espaces des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation
 
 *Nom technique:* ```personToRoomBookingCreatedBies```
 <PH code="userCompany:personToRoomBookingCreatedBies"/>
 
 ### Réservations à l'espace des personnes {#person-to-room-booking-updated-bies}
 
-Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+Les réservations aux espaces des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation
 
 *Nom technique:* ```personToRoomBookingUpdatedBies```
 <PH code="userCompany:personToRoomBookingUpdatedBies"/>
 
 ### Réservations au calque d'affectation des personnes {#person-to-dimension-booking-created-bies}
 
-Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+Les réservations aux calques d'affectation des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation
 
 *Nom technique:* ```personToDimensionBookingCreatedBies```
 <PH code="userCompany:personToDimensionBookingCreatedBies"/>
 
 ### Réservations au calque d'affectation des personnes {#person-to-dimension-booking-updated-bies}
 
-Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+Les réservations aux calques d'affectation des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation
 
 *Nom technique:* ```personToDimensionBookingUpdatedBies```
 <PH code="userCompany:personToDimensionBookingUpdatedBies"/>
 
 ### Réservations au poste de travail des personnes {#person-to-workplace-booking-created-bies}
 
-Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+Les réservations des postes de travail des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation
 
 *Nom technique:* ```personToWorkplaceBookingCreatedBies```
 <PH code="userCompany:personToWorkplaceBookingCreatedBies"/>
 
 ### Réservations au poste de travail des personnes {#person-to-workplace-booking-updated-bies}
 
-Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+Les réservations des postes de travail des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation
 
 *Nom technique:* ```personToWorkplaceBookingUpdatedBies```
 <PH code="userCompany:personToWorkplaceBookingUpdatedBies"/>
@@ -1200,14 +1200,14 @@ Les types d'objets des prestataires permettent de définir une relation entre le
 
 ### Utilisateurs de l'entreprise {#user-company-created-bies}
 
-
+Les utilisateurs de l'entreprise ont accès à la plateforme Surfy de leur entreprise
 
 *Nom technique:* ```userCompanyCreatedBies```
 <PH code="userCompany:userCompanyCreatedBies"/>
 
 ### Utilisateurs de l'entreprise {#user-company-updated-bies}
 
-
+Les utilisateurs de l'entreprise ont accès à la plateforme Surfy de leur entreprise
 
 *Nom technique:* ```userCompanyUpdatedBies```
 <PH code="userCompany:userCompanyUpdatedBies"/>

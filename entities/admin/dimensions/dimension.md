@@ -72,7 +72,7 @@ La valeur peut être utilisé pour associé le calque à une valeur numérique a
 
 ### Affectations aux calques d'affectation {#dimension-to-people}
 
-
+Permet d'affecter une personne à un quartier, territoire ou village
 
 *Nom technique:* ```dimensionToPeople```
 <PH code="dimension:dimensionToPeople"/>
@@ -100,7 +100,7 @@ La valeur peut être utilisé pour associé le calque à une valeur numérique a
 
 ### Réservations au calque d'affectation des personnes {#person-to-dimension-bookings}
 
-Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+Les réservations aux calques d'affectation des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation
 
 *Nom technique:* ```personToDimensionBookings```
 <PH code="dimension:personToDimensionBookings"/>

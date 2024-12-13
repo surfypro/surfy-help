@@ -1,7 +1,7 @@
 # Entreprise prestataire
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion
+L'entreprise prestataire permet de gérer le personnel prestataire par entreprise d'appartenance
 
 <OH code="personCompany"/>
 
@@ -50,7 +50,7 @@ Les interventions des prestataires sur des objets permettent de définir par exe
 
 ### Personnes {#people}
 
-
+Ce sont les personnes entrées dans la base de données de Surfy
 
 *Nom technique:* ```people```
 <PH code="personCompany:people"/>

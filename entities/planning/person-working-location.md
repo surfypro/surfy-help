@@ -34,7 +34,7 @@ Un emplacement de travail des personnes définie le lieu de travail des personne
 
 ### Personne {#person}
 
-
+Ce sont les personnes entrées dans la base de données de Surfy
 
 *Nom technique:* ```person```
 <PH code="personWorkingLocation:person"/>
@@ -44,21 +44,21 @@ Un emplacement de travail des personnes définie le lieu de travail des personne
 
 ### Réservations à l'espace des personnes {#person-to-room-bookings}
 
-Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+Les réservations aux espaces des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation
 
 *Nom technique:* ```personToRoomBookings```
 <PH code="personWorkingLocation:personToRoomBookings"/>
 
 ### Réservations au calque d'affectation des personnes {#person-to-dimension-bookings}
 
-Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+Les réservations aux calques d'affectation des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation
 
 *Nom technique:* ```personToDimensionBookings```
 <PH code="personWorkingLocation:personToDimensionBookings"/>
 
 ### Réservations au poste de travail des personnes {#person-to-workplace-bookings}
 
-Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+Les réservations des postes de travail des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation
 
 *Nom technique:* ```personToWorkplaceBookings```
 <PH code="personWorkingLocation:personToWorkplaceBookings"/>

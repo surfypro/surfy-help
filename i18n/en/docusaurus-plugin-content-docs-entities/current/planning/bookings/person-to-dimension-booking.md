@@ -1,7 +1,7 @@
 # Reservation to the people assignment layer
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-Reservations on people assignment layers are recorded and available with the start and end dates of the reservation
+Reservations to people assignment layers are recorded and available with reservation start and end dates
 
 <OH code="personToDimensionBooking"/>
 
@@ -34,7 +34,7 @@ The start date and time of the reservation
 
 ### Nobody {#person}
 
-
+These are the people entered into Surfy's database
 
 *Technical name:* ```person```
 <PH code="personToDimensionBooking:person"/>

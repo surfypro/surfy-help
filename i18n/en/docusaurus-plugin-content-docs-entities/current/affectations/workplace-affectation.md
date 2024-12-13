@@ -1,7 +1,7 @@
 # Work station assignment
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Allows a fixed workstation to be assigned to a person
 
 <OH code="workplaceAffectation"/>
 
@@ -76,7 +76,7 @@
 
 ### Nobody {#person}
 
-
+These are the people entered into Surfy's database
 
 *Technical name:* ```person```
 <PH code="workplaceAffectation:person"/>

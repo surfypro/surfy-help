@@ -90,7 +90,7 @@ Taux d'affectation moyen du poste de travail en fonction de l'affectation des jo
 
 ### Centre de coût {#cost-center}
 
-Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation
+Le centre de coût permet de répartir les espaces dynamiquement pour la refacturation
 
 *Nom technique:* ```costCenter```
 <PH code="workplace:costCenter"/>
@@ -121,7 +121,7 @@ Le centre de coût permet de repartir les espaces dynamiquement pour la refactur
 
 ### Affectations au poste de travail {#workplace-affectations}
 
-
+Permet d'attribuer un poste de travail fixe à une personne
 
 *Nom technique:* ```workplaceAffectations```
 <PH code="workplace:workplaceAffectations"/>
@@ -135,7 +135,7 @@ Le centre de coût permet de repartir les espaces dynamiquement pour la refactur
 
 ### Réservations au poste de travail des personnes {#person-to-workplace-bookings}
 
-Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+Les réservations des postes de travail des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation
 
 *Nom technique:* ```personToWorkplaceBookings```
 <PH code="workplace:personToWorkplaceBookings"/>

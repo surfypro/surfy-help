@@ -86,7 +86,7 @@ Le bâtiment est utilisé pour regrouper les étages
 
 ### Utilisateurs de l'entreprise {#user-companies}
 
-
+Les utilisateurs de l'entreprise ont accès à la plateforme Surfy de leur entreprise
 
 *Nom technique:* ```userCompanies```
 <PH code="company:userCompanies"/>

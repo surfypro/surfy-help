@@ -1,7 +1,7 @@
 # Assignment to Assignment Layer
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Allows you to assign a person to a district, territory or village
 
 <OH code="dimensionToPerson"/>
 
@@ -21,7 +21,7 @@
 
 ### Nobody {#person}
 
-
+These are the people entered into Surfy's database
 
 *Technical name:* ```person```
 <PH code="dimensionToPerson:person"/>

@@ -1,7 +1,7 @@
 # Reservation at people's workstations
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-People's workstation reservations are recorded and available with the start and end dates of the reservation
+People's workstation reservations are recorded and available with reservation start and end dates
 
 <OH code="personToWorkplaceBooking"/>
 
@@ -27,7 +27,7 @@ The start date and time of the reservation
 
 ### Nobody {#person}
 
-
+These are the people entered into Surfy's database
 
 *Technical name:* ```person```
 <PH code="personToWorkplaceBooking:person"/>

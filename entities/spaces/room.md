@@ -275,7 +275,7 @@ Permet de déterminer le mode de calcul de la clé de répartition des coûts
 
 ### Affectations d'espace {#room-affectations}
 
-
+Permet d'affecter une personne à un espace simple
 
 *Nom technique:* ```roomAffectations```
 <PH code="room:roomAffectations"/>
@@ -310,7 +310,7 @@ L'association entre un point et un espace permet de conserver l'ordre des points
 
 ### Réservations à l'espace des personnes {#person-to-room-bookings}
 
-Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+Les réservations aux espaces des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation
 
 *Nom technique:* ```personToRoomBookings```
 <PH code="room:personToRoomBookings"/>

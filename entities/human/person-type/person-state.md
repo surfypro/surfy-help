@@ -22,7 +22,7 @@ Permet de définir tous les types de contrat des personnes vis à vis de l'entre
 
 ### Personnes {#people}
 
-
+Ce sont les personnes entrées dans la base de données de Surfy
 
 *Nom technique:* ```people```
 <PH code="personState:people"/>

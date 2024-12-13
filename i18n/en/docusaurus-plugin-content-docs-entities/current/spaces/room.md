@@ -296,7 +296,7 @@ The association between a point and a space makes it possible to preserve the or
 
 ### Reservations for the people area {#person-to-room-bookings}
 
-Reservations for people's spaces are recorded and available with the start and end dates of the reservation
+Reservations for people's spaces are recorded and available with the reservation start and end dates
 
 *Technical name:* ```personToRoomBookings```
 <PH code="room:personToRoomBookings"/>
@@ -310,7 +310,7 @@ Reservations for people's spaces are recorded and available with the start and e
 
 ### Space assignments {#room-affectations}
 
-
+Allows you to assign a person to a single space
 
 *Technical name:* ```roomAffectations```
 <PH code="room:roomAffectations"/>

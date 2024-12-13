@@ -153,7 +153,7 @@ The workstation ratio is the number of square meters divided by the number of wo
 
 ### Cost center {#cost-center}
 
-The cost center allows you to distribute spaces dynamically for re-invoicing
+The cost center allows spaces to be distributed dynamically for re-invoicing
 
 *Technical name:* ```costCenter```
 <PH code="costCenterFloor:costCenter"/>

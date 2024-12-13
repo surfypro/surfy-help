@@ -1,7 +1,7 @@
 # Reservation for the people area
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-Reservations for people's spaces are recorded and available with the start and end dates of the reservation
+Reservations for people's spaces are recorded and available with the reservation start and end dates
 
 <OH code="personToRoomBooking"/>
 
@@ -27,7 +27,7 @@ The start date and time of the reservation
 
 ### Nobody {#person}
 
-
+These are the people entered into Surfy's database
 
 *Technical name:* ```person```
 <PH code="personToRoomBooking:person"/>

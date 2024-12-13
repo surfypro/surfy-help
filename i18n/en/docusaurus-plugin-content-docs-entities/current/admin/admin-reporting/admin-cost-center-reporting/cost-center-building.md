@@ -160,7 +160,7 @@ The building is used to group the floors
 
 ### Cost center {#cost-center}
 
-The cost center allows you to distribute spaces dynamically for re-invoicing
+The cost center allows spaces to be distributed dynamically for re-invoicing
 
 *Technical name:* ```costCenter```
 <PH code="costCenterBuilding:costCenter"/>

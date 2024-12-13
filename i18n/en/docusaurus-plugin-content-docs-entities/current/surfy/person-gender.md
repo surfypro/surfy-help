@@ -1,7 +1,7 @@
 # Gender of the person
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Allows you to count each gender, for example for managing toilets
 
 <OH code="personGender"/>
 
@@ -22,7 +22,7 @@ The gender name of the person
 
 ### People {#people}
 
-
+These are the people entered into Surfy's database
 
 *Technical name:* ```people```
 <PH code="personGender:people"/>

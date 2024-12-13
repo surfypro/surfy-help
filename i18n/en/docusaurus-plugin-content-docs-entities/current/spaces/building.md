@@ -345,7 +345,7 @@ When a plan of this building is first opened, the default vision will be selecte
 
 ### Building assignments {#person-to-buildings}
 
-
+Allows you to assign a person to a building, without additional information. The assignment can be counted, or not.
 
 *Technical name:* ```personToBuildings```
 <PH code="building:personToBuildings"/>

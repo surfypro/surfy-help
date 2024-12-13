@@ -90,7 +90,7 @@ The name of the workstation is used to identify it more simply
 
 ### Cost center {#cost-center}
 
-The cost center allows you to distribute spaces dynamically for re-invoicing
+The cost center allows spaces to be distributed dynamically for re-invoicing
 
 *Technical name:* ```costCenter```
 <PH code="workplace:costCenter"/>
@@ -128,14 +128,14 @@ The cost center allows you to distribute spaces dynamically for re-invoicing
 
 ### Reservations at people's workstations {#person-to-workplace-bookings}
 
-People's workstation reservations are recorded and available with the start and end dates of the reservation
+People's workstation reservations are recorded and available with reservation start and end dates
 
 *Technical name:* ```personToWorkplaceBookings```
 <PH code="workplace:personToWorkplaceBookings"/>
 
 ### Workstation assignments {#workplace-affectations}
 
-
+Allows a fixed workstation to be assigned to a person
 
 *Technical name:* ```workplaceAffectations```
 <PH code="workplace:workplaceAffectations"/>

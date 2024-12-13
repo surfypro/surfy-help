@@ -14,7 +14,7 @@
 
 ### Business user {#user-company}
 
-
+Enterprise users have access to their company's Surfy platform
 
 *Technical name:* ```userCompany```
 <PH code="contentRoleToUserCompany:userCompany"/>

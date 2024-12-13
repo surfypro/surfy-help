@@ -1,7 +1,7 @@
 # Affectation d'espace
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Permet d'affecter une personne à un espace simple
 
 <OH code="roomAffectation"/>
 
@@ -21,7 +21,7 @@
 
 ### Personne {#person}
 
-
+Ce sont les personnes entrées dans la base de données de Surfy
 
 *Nom technique:* ```person```
 <PH code="roomAffectation:person"/>

@@ -1,7 +1,7 @@
 # Service provider company
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-The service provider company makes it possible to keep information about the company of a service provider to know, for example, the number of positions or the space occupied by the latter, or to know what types of equipment or type of spaces are available. he is in management
+The service provider company allows you to manage service provider personnel by company to which they belong
 
 <OH code="personCompany"/>
 
@@ -50,7 +50,7 @@ The interventions of service providers on objects make it possible to define, fo
 
 ### People {#people}
 
-
+These are the people entered into Surfy's database
 
 *Technical name:* ```people```
 <PH code="personCompany:people"/>

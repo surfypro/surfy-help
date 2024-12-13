@@ -79,7 +79,7 @@ The building is used to group the floors
 
 ### Business users {#user-companies}
 
-
+Enterprise users have access to their company's Surfy platform
 
 *Technical name:* ```userCompanies```
 <PH code="company:userCompanies"/>

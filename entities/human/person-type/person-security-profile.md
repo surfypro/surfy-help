@@ -36,7 +36,7 @@ Permet de définir les différents profils sécurité associables à des personn
 
 ### Personnes {#people}
 
-
+Ce sont les personnes entrées dans la base de données de Surfy
 
 *Nom technique:* ```people```
 <PH code="personSecurityProfile:people"/>

@@ -34,7 +34,7 @@ A workplace of people defines the workplace of people
 
 ### Nobody {#person}
 
-
+These are the people entered into Surfy's database
 
 *Technical name:* ```person```
 <PH code="personWorkingLocation:person"/>
@@ -44,21 +44,21 @@ A workplace of people defines the workplace of people
 
 ### Reservations at people's workstations {#person-to-workplace-bookings}
 
-People's workstation reservations are recorded and available with the start and end dates of the reservation
+People's workstation reservations are recorded and available with reservation start and end dates
 
 *Technical name:* ```personToWorkplaceBookings```
 <PH code="personWorkingLocation:personToWorkplaceBookings"/>
 
 ### Reservations for the people area {#person-to-room-bookings}
 
-Reservations for people's spaces are recorded and available with the start and end dates of the reservation
+Reservations for people's spaces are recorded and available with the reservation start and end dates
 
 *Technical name:* ```personToRoomBookings```
 <PH code="personWorkingLocation:personToRoomBookings"/>
 
 ### Reservations on the people assignment layer {#person-to-dimension-bookings}
 
-Reservations on people assignment layers are recorded and available with the start and end dates of the reservation
+Reservations to people assignment layers are recorded and available with reservation start and end dates
 
 *Technical name:* ```personToDimensionBookings```
 <PH code="personWorkingLocation:personToDimensionBookings"/>

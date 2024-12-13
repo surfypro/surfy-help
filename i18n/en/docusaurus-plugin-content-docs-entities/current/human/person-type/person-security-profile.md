@@ -36,7 +36,7 @@ Allows you to define the different security profiles that can be associated with
 
 ### People {#people}
 
-
+These are the people entered into Surfy's database
 
 *Technical name:* ```people```
 <PH code="personSecurityProfile:people"/>

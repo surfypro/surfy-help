@@ -50,7 +50,7 @@ Le prénom de l'utilisateur
 
 ### Utilisateurs de l'entreprise {#user-companies}
 
-
+Les utilisateurs de l'entreprise ont accès à la plateforme Surfy de leur entreprise
 
 *Nom technique:* ```userCompanies```
 <PH code="user:userCompanies"/>

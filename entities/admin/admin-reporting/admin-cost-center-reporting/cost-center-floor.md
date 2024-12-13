@@ -153,7 +153,7 @@ Taux de postes de travail partagés par au moins 2 personnes par rapport à l'en
 
 ### Centre de coût {#cost-center}
 
-Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation
+Le centre de coût permet de répartir les espaces dynamiquement pour la refacturation
 
 *Nom technique:* ```costCenter```
 <PH code="costCenterFloor:costCenter"/>

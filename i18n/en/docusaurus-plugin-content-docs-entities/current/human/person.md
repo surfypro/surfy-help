@@ -1,7 +1,7 @@
 # Nobody
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+These are the people entered into Surfy's database
 
 <OH code="person"/>
 
@@ -146,14 +146,14 @@ The title of the person
 
 ### Cost center {#cost-center}
 
-The cost center allows you to distribute spaces dynamically for re-invoicing
+The cost center allows spaces to be distributed dynamically for re-invoicing
 
 *Technical name:* ```costCenter```
 <PH code="person:costCenter"/>
 
 ### Gender of the person {#person-gender}
 
-
+Allows you to count each gender, for example for managing toilets
 
 *Technical name:* ```personGender```
 <PH code="person:personGender"/>
@@ -167,7 +167,7 @@ Allows to indicate the security profile of the person for security management
 
 ### Service provider company {#person-company}
 
-The service provider company makes it possible to keep information about the company of a service provider to know, for example, the number of positions or the space occupied by the latter, or to know what types of equipment or type of spaces are available. he is in management
+The service provider company allows you to manage service provider personnel by company to which they belong
 
 *Technical name:* ```personCompany```
 <PH code="person:personCompany"/>
@@ -181,7 +181,7 @@ Allows you to indicate the type of contract the person has with the company
 
 ### The organization of the person {#organization}
 
-The person's home organization
+The person's attachment service
 
 *Technical name:* ```organization```
 <PH code="person:organization"/>
@@ -191,28 +191,28 @@ The person's home organization
 
 ### Assignments to Assignment Layers {#dimension-to-people}
 
-
+Allows you to assign a person to a district, territory or village
 
 *Technical name:* ```dimensionToPeople```
 <PH code="person:dimensionToPeople"/>
 
 ### Building assignments {#person-to-buildings}
 
-
+Allows you to assign a person to a building, without additional information. The assignment can be counted, or not.
 
 *Technical name:* ```personToBuildings```
 <PH code="person:personToBuildings"/>
 
 ### Business users {#user-companies}
 
-
+Enterprise users have access to their company's Surfy platform
 
 *Technical name:* ```userCompanies```
 <PH code="person:userCompanies"/>
 
 ### Object-to-person associations {#item-to-people}
 
-
+Allows you to associate an object with a person (ergonomic seat, locker)
 
 *Technical name:* ```itemToPeople```
 <PH code="person:itemToPeople"/>
@@ -226,49 +226,49 @@ A workplace of people defines the workplace of people
 
 ### Relations with this person {#person-to-person-targets}
 
-People's relationships to that person
+Allows you to know the ascending relationship between two people, for example the hierarchical relationship
 
 *Technical name:* ```personToPersonTargets```
 <PH code="person:personToPersonTargets"/>
 
 ### Relationships from this person {#person-to-person-sources}
 
-People's relationships from that person
+Allows you to know the descending relationship between two people, for example the hierarchical relationship
 
 *Technical name:* ```personToPersonSources```
 <PH code="person:personToPersonSources"/>
 
 ### Reservations at people's workstations {#person-to-workplace-bookings}
 
-People's workstation reservations are recorded and available with the start and end dates of the reservation
+People's workstation reservations are recorded and available with reservation start and end dates
 
 *Technical name:* ```personToWorkplaceBookings```
 <PH code="person:personToWorkplaceBookings"/>
 
 ### Reservations for the people area {#person-to-room-bookings}
 
-Reservations for people's spaces are recorded and available with the start and end dates of the reservation
+Reservations for people's spaces are recorded and available with the reservation start and end dates
 
 *Technical name:* ```personToRoomBookings```
 <PH code="person:personToRoomBookings"/>
 
 ### Reservations on the people assignment layer {#person-to-dimension-bookings}
 
-Reservations on people assignment layers are recorded and available with the start and end dates of the reservation
+Reservations to people assignment layers are recorded and available with reservation start and end dates
 
 *Technical name:* ```personToDimensionBookings```
 <PH code="person:personToDimensionBookings"/>
 
 ### Space assignments {#room-affectations}
 
-
+Allows you to assign a person to a single space
 
 *Technical name:* ```roomAffectations```
 <PH code="person:roomAffectations"/>
 
 ### Workstation assignments {#workplace-affectations}
 
-
+Allows a fixed workstation to be assigned to a person
 
 *Technical name:* ```workplaceAffectations```
 <PH code="person:workplaceAffectations"/>
