@@ -5,7 +5,14 @@
 - Amélioration du zoom sur les plans sur les écrans tactiles et mobiles
 - Mise en place d'une entité "Légende" permettant de créer des légendes personnalisées pour les plans à sortir en image
     - Les légendes doivent être configurées et peuvent être utilisées dans les exports en image
-- Les ouvertures de plans lors de la réservation des postes de travail utilisent maintenant la même fenêtre de droite -->
+- Les ouvertures de plans lors de la réservation des postes de travail utilisent maintenant la même fenêtre de droite
+- Tableaux de bord pour avoir en fonction de la période choisie :
+    - Les réservations des postes de travail par jours de la semaine
+    - Les réservations des postes de travail par date
+- Synchronization mis en place avec le logiciel de gestion RH Lucca
+- Le choix de la langue est conservée même après la déconnexion à Surfy
+- La fenêtre de sauvegarde en image prend en compte le changement d'étage
+-->
 
 ## 3 Decembre 2024  - v3.4.44 ## 
 
