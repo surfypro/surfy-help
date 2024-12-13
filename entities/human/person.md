@@ -10,7 +10,7 @@
 
 ### Badge RIE {#badge-restaurant}
 
-La référence du badge du RIE ou du restaurant
+La référence du badge du RIE ou du restaurant d'entreprise
 
 *Nom technique:* ```badgeRestaurant```
 <PH code="person:badgeRestaurant"/>
@@ -24,14 +24,14 @@ Commentaire sur la personne permettant de conserver des informations supplément
 
 ### Date d'entrée {#start-date}
 
-La date d'entrée de la personne
+La date d'entrée de la personne dans l'entreprise
 
 *Nom technique:* ```startDate```
 <PH code="person:startDate"/>
 
 ### Date de sortie {#end-date}
 
-La date de sortie de la personne
+La date de sortie de la personne de l'entreprise
 
 *Nom technique:* ```endDate```
 <PH code="person:endDate"/>
@@ -52,7 +52,7 @@ Le numéro d'immatriculation de la personne
 
 ### Matricule {#code}
 
-Matricule RH de la personne
+Le matricule RH de la personne
 
 *Nom technique:* ```code```
 <PH code="person:code"/>
@@ -108,14 +108,14 @@ Le prénom de la personne
 
 ### Référence écran {#monitor-reference}
 
-La référence de l'écran peut êre utilisée pour enregistrer la référence de l'écran associé à cette personne
+La référence de l'écran informatique associé à cette personne
 
 *Nom technique:* ```monitorReference```
 <PH code="person:monitorReference"/>
 
 ### Référence ordinateur {#computer-reference}
 
-La référence de l'ordinateur peut êre utilisée pour enregistrer la référence de l'ordinateur associé à cette personne
+La référence de l'ordinateur associé à cette personne
 
 *Nom technique:* ```computerReference```
 <PH code="person:computerReference"/>
@@ -174,14 +174,14 @@ L'organisation de rattachement de la personne
 
 ### Profil de sécurité {#person-security-profile}
 
-Permet de déterminer le profil de sécurité des personnes pour la gestion d'incidents
+Permet d'indiquer le profil de sécurité de la personne pour la gestion de la sécurité
 
 *Nom technique:* ```personSecurityProfile```
 <PH code="person:personSecurityProfile"/>
 
 ### Statut {#person-state}
 
-Permet de détérminer le type de contrat de la personne
+Permet d'indiquer le type de contrat de la personne vis à vis de l'entreprise
 
 *Nom technique:* ```personState```
 <PH code="person:personState"/>

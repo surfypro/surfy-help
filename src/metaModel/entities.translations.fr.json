@@ -179,11 +179,11 @@
             },
             "personState": {
                 "label": "Statut des personnes",
-                "description": null
+                "description": "Permet de définir tous les types de contrat des personnes vis à vis de l'entreprise"
             },
             "personSecurityProfile": {
                 "label": "Profil de sécurité des personnes",
-                "description": null
+                "description": "Permet de définir les différents profils sécurité associables à des personnes"
             },
             "person": {
                 "label": "Personne",
@@ -1164,19 +1164,19 @@
                 },
                 "personStateCreatedBies": {
                     "label": "Statut des personnes",
-                    "description": null
+                    "description": "Permet de définir tous les types de contrat des personnes vis à vis de l'entreprise"
                 },
                 "personStateUpdatedBies": {
                     "label": "Statut des personnes",
-                    "description": null
+                    "description": "Permet de définir tous les types de contrat des personnes vis à vis de l'entreprise"
                 },
                 "personSecurityProfileCreatedBies": {
                     "label": "Profils de sécurité des personnes",
-                    "description": null
+                    "description": "Permet de définir les différents profils sécurité associables à des personnes"
                 },
                 "personSecurityProfileUpdatedBies": {
                     "label": "Profils de sécurité des personnes",
-                    "description": null
+                    "description": "Permet de définir les différents profils sécurité associables à des personnes"
                 },
                 "personCreatedBies": {
                     "label": "Personnes",
@@ -4992,15 +4992,15 @@
                 },
                 "name": {
                     "label": "Nom du profil de sécurité",
-                    "description": "Le nom du profil de sécurité des personnes permet de l'identifier facilement"
+                    "description": "Permet de définir les différents profils sécurité associables à des personnes"
                 },
                 "color": {
-                    "label": "Color",
-                    "description": null
+                    "label": "Couleur du profil de sécurité",
+                    "description": "Permet de colorier le poste de travail d'affectation et l'icône sécurité de la personne en fonction de son profil sécurité"
                 },
                 "icon": {
-                    "label": "Icon",
-                    "description": null
+                    "label": "Icône du profil de sécurité",
+                    "description": "Permet d'attribuer une icône à un profil sécurité afin de visualiser clairement les profils sécurité sur le plan ou dans les listes"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -5074,11 +5074,11 @@
                 },
                 "monitorReference": {
                     "label": "Référence écran",
-                    "description": "La référence de l'écran peut êre utilisée pour enregistrer la référence de l'écran associé à cette personne"
+                    "description": "La référence de l'écran informatique associé à cette personne"
                 },
                 "computerReference": {
                     "label": "Référence ordinateur",
-                    "description": "La référence de l'ordinateur peut êre utilisée pour enregistrer la référence de l'ordinateur associé à cette personne"
+                    "description": "La référence de l'ordinateur associé à cette personne"
                 },
                 "telephone": {
                     "label": "Téléphone fixe",
@@ -5090,7 +5090,7 @@
                 },
                 "code": {
                     "label": "Matricule",
-                    "description": "Matricule RH de la personne"
+                    "description": "Le matricule RH de la personne"
                 },
                 "badgeNumber": {
                     "label": "Numéro de badge",
@@ -5098,7 +5098,7 @@
                 },
                 "badgeRestaurant": {
                     "label": "Badge RIE",
-                    "description": "La référence du badge du RIE ou du restaurant"
+                    "description": "La référence du badge du RIE ou du restaurant d'entreprise"
                 },
                 "boxNumber": {
                     "label": "Numéro de casier",
@@ -5110,11 +5110,11 @@
                 },
                 "startDate": {
                     "label": "Date d'entrée",
-                    "description": "La date d'entrée de la personne"
+                    "description": "La date d'entrée de la personne dans l'entreprise"
                 },
                 "endDate": {
                     "label": "Date de sortie",
-                    "description": "La date de sortie de la personne"
+                    "description": "La date de sortie de la personne de l'entreprise"
                 },
                 "info": {
                     "label": "Commentaire",
@@ -5150,19 +5150,19 @@
                 },
                 "personStateId": {
                     "label": "Identifiant du statut des personnes",
-                    "description": null
+                    "description": "Permet de définir tous les types de contrat des personnes vis à vis de l'entreprise"
                 },
                 "personState": {
                     "label": "Statut",
-                    "description": "Permet de détérminer le type de contrat de la personne"
+                    "description": "Permet d'indiquer le type de contrat de la personne vis à vis de l'entreprise"
                 },
                 "personSecurityProfileId": {
                     "label": "Identifiant du profil de sécurité des personnes",
-                    "description": null
+                    "description": "Permet de définir les différents profils sécurité associables à des personnes"
                 },
                 "personSecurityProfile": {
                     "label": "Profil de sécurité",
-                    "description": "Permet de déterminer le profil de sécurité des personnes pour la gestion d'incidents"
+                    "description": "Permet d'indiquer le profil de sécurité de la personne pour la gestion de la sécurité"
                 },
                 "costCenterId": {
                     "label": "Identifiant du centre de coût",

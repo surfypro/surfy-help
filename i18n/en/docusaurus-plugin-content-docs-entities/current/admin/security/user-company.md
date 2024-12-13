@@ -843,14 +843,14 @@ A workplace of people defines the workplace of people
 
 ### Personal safety profiles {#person-security-profile-created-bies}
 
-
+Allows you to define the different security profiles that can be associated with people
 
 *Technical name:* ```personSecurityProfileCreatedBies```
 <PH code="userCompany:personSecurityProfileCreatedBies"/>
 
 ### Personal safety profiles {#person-security-profile-updated-bies}
 
-
+Allows you to define the different security profiles that can be associated with people
 
 *Technical name:* ```personSecurityProfileUpdatedBies```
 <PH code="userCompany:personSecurityProfileUpdatedBies"/>
@@ -1088,14 +1088,14 @@ Space connectors allow you to create a link between several spaces on different 
 
 ### Status of persons {#person-state-created-bies}
 
-
+Allows you to define all types of contracts between people and the company
 
 *Technical name:* ```personStateCreatedBies```
 <PH code="userCompany:personStateCreatedBies"/>
 
 ### Status of persons {#person-state-updated-bies}
 
-
+Allows you to define all types of contracts between people and the company
 
 *Technical name:* ```personStateUpdatedBies```
 <PH code="userCompany:personStateUpdatedBies"/>

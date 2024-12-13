@@ -822,14 +822,14 @@ Les interventions des prestataires sur des objets permettent de définir par exe
 
 ### Profils de sécurité des personnes {#person-security-profile-created-bies}
 
-
+Permet de définir les différents profils sécurité associables à des personnes
 
 *Nom technique:* ```personSecurityProfileCreatedBies```
 <PH code="userCompany:personSecurityProfileCreatedBies"/>
 
 ### Profils de sécurité des personnes {#person-security-profile-updated-bies}
 
-
+Permet de définir les différents profils sécurité associables à des personnes
 
 *Nom technique:* ```personSecurityProfileUpdatedBies```
 <PH code="userCompany:personSecurityProfileUpdatedBies"/>
@@ -976,14 +976,14 @@ Les réservations des postes de travail des personnes sont enregistrés et dispo
 
 ### Statut des personnes {#person-state-created-bies}
 
-
+Permet de définir tous les types de contrat des personnes vis à vis de l'entreprise
 
 *Nom technique:* ```personStateCreatedBies```
 <PH code="userCompany:personStateCreatedBies"/>
 
 ### Statut des personnes {#person-state-updated-bies}
 
-
+Permet de définir tous les types de contrat des personnes vis à vis de l'entreprise
 
 *Nom technique:* ```personStateUpdatedBies```
 <PH code="userCompany:personStateUpdatedBies"/>

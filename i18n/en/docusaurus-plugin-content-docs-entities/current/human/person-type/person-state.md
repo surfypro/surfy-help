@@ -1,7 +1,7 @@
 # Status of persons
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Allows you to define all types of contracts between people and the company
 
 <OH code="personState"/>
 

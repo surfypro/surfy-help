@@ -179,11 +179,11 @@
             },
             "personState": {
                 "label": "Status of persons",
-                "description": null
+                "description": "Allows you to define all types of contracts between people and the company"
             },
             "personSecurityProfile": {
                 "label": "Personal safety profile",
-                "description": null
+                "description": "Allows you to define the different security profiles that can be associated with people"
             },
             "person": {
                 "label": "Nobody",
@@ -1164,19 +1164,19 @@
                 },
                 "personStateCreatedBies": {
                     "label": "Status of persons",
-                    "description": null
+                    "description": "Allows you to define all types of contracts between people and the company"
                 },
                 "personStateUpdatedBies": {
                     "label": "Status of persons",
-                    "description": null
+                    "description": "Allows you to define all types of contracts between people and the company"
                 },
                 "personSecurityProfileCreatedBies": {
                     "label": "Personal safety profiles",
-                    "description": null
+                    "description": "Allows you to define the different security profiles that can be associated with people"
                 },
                 "personSecurityProfileUpdatedBies": {
                     "label": "Personal safety profiles",
-                    "description": null
+                    "description": "Allows you to define the different security profiles that can be associated with people"
                 },
                 "personCreatedBies": {
                     "label": "People",
@@ -4992,15 +4992,15 @@
                 },
                 "name": {
                     "label": "Security profile name",
-                    "description": "The name of the personal safety profile makes it easy to identify"
+                    "description": "Allows you to define the different security profiles that can be associated with people"
                 },
                 "color": {
-                    "label": "Color",
-                    "description": null
+                    "label": "Security profile color",
+                    "description": "Allows you to color the person's assigned workstation and security icon according to their security profile"
                 },
                 "icon": {
-                    "label": "Icon",
-                    "description": null
+                    "label": "Security profile icon",
+                    "description": "Allows you to assign an icon to a security profile in order to clearly visualize the security profiles on the map or in the lists"
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -5074,11 +5074,11 @@
                 },
                 "monitorReference": {
                     "label": "Screen reference",
-                    "description": "The screen reference can be used to record the screen reference associated with this person"
+                    "description": "The reference of the computer screen associated with this person"
                 },
                 "computerReference": {
                     "label": "Computer reference",
-                    "description": "The computer reference can be used to record the computer reference associated with this person"
+                    "description": "The reference of the computer associated with this person"
                 },
                 "telephone": {
                     "label": "Phone",
@@ -5090,7 +5090,7 @@
                 },
                 "code": {
                     "label": "Registration number",
-                    "description": "HR number of the person"
+                    "description": "The person's HR number"
                 },
                 "badgeNumber": {
                     "label": "Badge number",
@@ -5098,7 +5098,7 @@
                 },
                 "badgeRestaurant": {
                     "label": "RIE badge",
-                    "description": "The reference of the RIE or restaurant badge"
+                    "description": "The reference of the RIE or company restaurant badge"
                 },
                 "boxNumber": {
                     "label": "Locker number",
@@ -5110,11 +5110,11 @@
                 },
                 "startDate": {
                     "label": "Entry date",
-                    "description": "The date of entry of the person"
+                    "description": "The date the person joined the company"
                 },
                 "endDate": {
                     "label": "Release date",
-                    "description": "The person's release date"
+                    "description": "The person's exit date from the company"
                 },
                 "info": {
                     "label": "Comment",
@@ -5150,19 +5150,19 @@
                 },
                 "personStateId": {
                     "label": "Person status identifier",
-                    "description": null
+                    "description": "Allows you to define all types of contracts between people and the company"
                 },
                 "personState": {
                     "label": "Status",
-                    "description": "Allows you to determine the person's type of contract"
+                    "description": "Allows you to indicate the type of contract the person has with the company"
                 },
                 "personSecurityProfileId": {
                     "label": "Personal security profile identifier",
-                    "description": null
+                    "description": "Allows you to define the different security profiles that can be associated with people"
                 },
                 "personSecurityProfile": {
                     "label": "Security profile",
-                    "description": "Allows you to determine the safety profile of people for incident management"
+                    "description": "Allows to indicate the security profile of the person for security management"
                 },
                 "costCenterId": {
                     "label": "Cost center identifier",

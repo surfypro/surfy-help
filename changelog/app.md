@@ -1,11 +1,11 @@
 # Nouveautés
 
-## 5 Decembre 2024  - v3.4.46 ## 
+## 13 Decembre 2024 - v3.4.47 ##
 
 - Amélioration du zoom sur les plans sur les écrans tactiles et mobiles
 - Mise en place d'une entité "Légende" permettant de créer des légendes personnalisées pour les plans à sortir en image
     - Les légendes doivent être configurées et peuvent être utilisées dans les exports en image
-
+- Les ouvertures de plans lors de la réservation des postes de travail utilisent maintenant la même fenêtre de droite
 
 ## 3 Decembre 2024  - v3.4.44 ## 
 

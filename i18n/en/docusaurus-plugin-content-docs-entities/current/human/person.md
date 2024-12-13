@@ -31,7 +31,7 @@ Comment on the person allowing to keep additional or miscellaneous information
 
 ### Computer reference {#computer-reference}
 
-The computer reference can be used to record the computer reference associated with this person
+The reference of the computer associated with this person
 
 *Technical name:* ```computerReference```
 <PH code="person:computerReference"/>
@@ -45,7 +45,7 @@ The person's email
 
 ### Entry date {#start-date}
 
-The date of entry of the person
+The date the person joined the company
 
 *Technical name:* ```startDate```
 <PH code="person:startDate"/>
@@ -108,28 +108,28 @@ The person's registration number
 
 ### Registration number {#code}
 
-HR number of the person
+The person's HR number
 
 *Technical name:* ```code```
 <PH code="person:code"/>
 
 ### Release date {#end-date}
 
-The person's release date
+The person's exit date from the company
 
 *Technical name:* ```endDate```
 <PH code="person:endDate"/>
 
 ### RIE badge {#badge-restaurant}
 
-The reference of the RIE or restaurant badge
+The reference of the RIE or company restaurant badge
 
 *Technical name:* ```badgeRestaurant```
 <PH code="person:badgeRestaurant"/>
 
 ### Screen reference {#monitor-reference}
 
-The screen reference can be used to record the screen reference associated with this person
+The reference of the computer screen associated with this person
 
 *Technical name:* ```monitorReference```
 <PH code="person:monitorReference"/>
@@ -160,7 +160,7 @@ The cost center allows you to distribute spaces dynamically for re-invoicing
 
 ### Security profile {#person-security-profile}
 
-Allows you to determine the safety profile of people for incident management
+Allows to indicate the security profile of the person for security management
 
 *Technical name:* ```personSecurityProfile```
 <PH code="person:personSecurityProfile"/>
@@ -174,7 +174,7 @@ The service provider company makes it possible to keep information about the com
 
 ### Status {#person-state}
 
-Allows you to determine the person's type of contract
+Allows you to indicate the type of contract the person has with the company
 
 *Technical name:* ```personState```
 <PH code="person:personState"/>
