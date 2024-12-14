@@ -1,6 +1,6 @@
 # Nouveautés
 
-<!-- ## 13 Decembre 2024 - v3.4.47 ##
+## 14 Decembre 2024 - v3.4.47 ##
 
 - Amélioration du zoom sur les plans sur les écrans tactiles et mobiles
 - Mise en place d'une entité "Légende" permettant de créer des légendes personnalisées pour les plans à sortir en image
@@ -13,7 +13,7 @@
 - Le choix de la langue est conservée même après la déconnexion à Surfy
 - La fenêtre de sauvegarde en image prend en compte le changement d'étage
 - Les plans en 3D peuvent maintenant être sauvegardés en image
--->
+
 
 ## 3 Decembre 2024  - v3.4.44 ## 
 
