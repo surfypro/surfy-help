@@ -1,5 +1,9 @@
 # Nouveautés
 
+<!-- ## x Decembre 2024 - v3.4.4x ##
+
+- La palette des couleurs possède maintenant le blanc et le noir -->
+
 ## 14 Decembre 2024 - v3.4.47 ##
 
 - Amélioration du zoom sur les plans sur les écrans tactiles et mobiles

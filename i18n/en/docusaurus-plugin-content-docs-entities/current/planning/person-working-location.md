@@ -32,7 +32,7 @@ A workplace of people defines the workplace of people
 *Technical name:* ```workingLocation```
 <PH code="personWorkingLocation:workingLocation"/>
 
-### Nobody {#person}
+### Person {#person}
 
 These are the people entered into Surfy's database
 

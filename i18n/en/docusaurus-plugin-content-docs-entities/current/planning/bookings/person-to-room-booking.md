@@ -25,19 +25,19 @@ The start date and time of the reservation
 
 ## Associated entities (unique) {#properties-belongs-to}
 
-### Nobody {#person}
-
-These are the people entered into Surfy's database
-
-*Technical name:* ```person```
-<PH code="personToRoomBooking:person"/>
-
 ### People's work location {#person-working-location}
 
 A workplace of people defines the workplace of people
 
 *Technical name:* ```personWorkingLocation```
 <PH code="personToRoomBooking:personWorkingLocation"/>
+
+### Person {#person}
+
+These are the people entered into Surfy's database
+
+*Technical name:* ```person```
+<PH code="personToRoomBooking:person"/>
 
 ### Space {#room}
 

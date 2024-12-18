@@ -31,7 +31,7 @@
 
 ### Workstation type name {#name}
 
-
+???
 
 *Technical name:* ```name```
 <PH code="workplaceType:name"/>

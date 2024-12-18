@@ -186,7 +186,7 @@
                 "description": "Allows you to define the different security profiles that can be associated with people"
             },
             "person": {
-                "label": "Nobody",
+                "label": "Person",
                 "description": "These are the people entered into Surfy's database"
             },
             "personToPersonType": {
@@ -464,7 +464,7 @@
             "user": {
                 "id": {
                     "label": "User ID",
-                    "description": ""
+                    "description": "???"
                 },
                 "email": {
                     "label": "E-mail",
@@ -649,7 +649,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -864,7 +864,7 @@
                 },
                 "userId": {
                     "label": "User ID",
-                    "description": ""
+                    "description": "???"
                 },
                 "user": {
                     "label": "User",
@@ -883,7 +883,7 @@
                     "description": "These are the people entered into Surfy's database"
                 },
                 "person": {
-                    "label": "Nobody",
+                    "label": "Person",
                     "description": "These are the people entered into Surfy's database"
                 },
                 "userCompanyCreatedById": {
@@ -1704,7 +1704,7 @@
                 },
                 "code": {
                     "label": "Code",
-                    "description": ""
+                    "description": "???"
                 },
                 "color": {
                     "label": "Color",
@@ -2239,7 +2239,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -2421,7 +2421,7 @@
                     "description": null
                 },
                 "name": {
-                    "label": "Name of the ladder",
+                    "label": "Name of the scale",
                     "description": "To remember the name and reuse it on other floors"
                 },
                 "p1": {
@@ -2679,7 +2679,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -3137,7 +3137,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -3275,7 +3275,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -3499,7 +3499,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -3637,7 +3637,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -3791,7 +3791,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -4052,11 +4052,11 @@
             "roomPointRoom": {
                 "id": {
                     "label": "Identifier of the association between a point and a space",
-                    "description": ""
+                    "description": "???"
                 },
                 "sortIndex": {
                     "label": "Sort index",
-                    "description": ""
+                    "description": "???"
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -4218,19 +4218,19 @@
             "itemTypePoint": {
                 "id": {
                     "label": "login",
-                    "description": ""
+                    "description": "???"
                 },
                 "x": {
                     "label": "x",
-                    "description": ""
+                    "description": "???"
                 },
                 "y": {
                     "label": "there",
-                    "description": ""
+                    "description": "???"
                 },
                 "sortIndex": {
                     "label": "Sort index",
-                    "description": ""
+                    "description": "???"
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -4250,7 +4250,7 @@
                 },
                 "itemType": {
                     "label": "Type of object",
-                    "description": ""
+                    "description": "???"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -4557,7 +4557,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -4707,7 +4707,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -5341,7 +5341,7 @@
                     "description": null
                 },
                 "personSourceId": {
-                    "label": "Id (nobody)",
+                    "label": "Id (person)",
                     "description": "These are the people entered into Surfy's database"
                 },
                 "personSource": {
@@ -5349,7 +5349,7 @@
                     "description": "These are the people entered into Surfy's database"
                 },
                 "personTargetId": {
-                    "label": "Id (nobody)",
+                    "label": "Id (person)",
                     "description": "These are the people entered into Surfy's database"
                 },
                 "personTarget": {
@@ -5403,7 +5403,7 @@
                     "description": "These are the people entered into Surfy's database"
                 },
                 "person": {
-                    "label": "Nobody",
+                    "label": "Person",
                     "description": "These are the people entered into Surfy's database"
                 },
                 "roomId": {
@@ -5442,11 +5442,11 @@
             "workplaceType": {
                 "id": {
                     "label": "Workstation typology identifier",
-                    "description": ""
+                    "description": "???"
                 },
                 "name": {
                     "label": "Workstation type name",
-                    "description": ""
+                    "description": "???"
                 },
                 "zIndex": {
                     "label": "Z Index",
@@ -5548,7 +5548,7 @@
                 },
                 "workplaceTypeId": {
                     "label": "Workstation typology identifier",
-                    "description": ""
+                    "description": "???"
                 },
                 "workplaceType": {
                     "label": "Type of workstation",
@@ -5590,7 +5590,7 @@
             "workplace": {
                 "id": {
                     "label": "Workstation identifier",
-                    "description": ""
+                    "description": "???"
                 },
                 "position": {
                     "label": "Position",
@@ -5650,7 +5650,7 @@
                 },
                 "workplaceTypeId": {
                     "label": "Workstation typology identifier",
-                    "description": ""
+                    "description": "???"
                 },
                 "workplaceType": {
                     "label": "Type of workstation",
@@ -5780,7 +5780,7 @@
                 },
                 "workplaceId": {
                     "label": "Workstation identifier",
-                    "description": ""
+                    "description": "???"
                 },
                 "workplace": {
                     "label": "Workplace",
@@ -5881,12 +5881,12 @@
                     "description": "These are the people entered into Surfy's database"
                 },
                 "person": {
-                    "label": "Nobody",
+                    "label": "Person",
                     "description": "These are the people entered into Surfy's database"
                 },
                 "workplaceId": {
                     "label": "Workstation identifier",
-                    "description": ""
+                    "description": "???"
                 },
                 "workplace": {
                     "label": "Workplace",
@@ -5955,7 +5955,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -6093,7 +6093,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -6231,7 +6231,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -6369,7 +6369,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -6491,7 +6491,7 @@
                     "description": "These are the people entered into Surfy's database"
                 },
                 "person": {
-                    "label": "Nobody",
+                    "label": "Person",
                     "description": "These are the people entered into Surfy's database"
                 },
                 "itemId": {
@@ -6553,7 +6553,7 @@
                     "description": "These are the people entered into Surfy's database"
                 },
                 "person": {
-                    "label": "Nobody",
+                    "label": "Person",
                     "description": "These are the people entered into Surfy's database"
                 },
                 "buildingId": {
@@ -6619,7 +6619,7 @@
                     "description": "These are the people entered into Surfy's database"
                 },
                 "person": {
-                    "label": "Nobody",
+                    "label": "Person",
                     "description": "These are the people entered into Surfy's database"
                 },
                 "userCompanyCreatedById": {
@@ -6765,7 +6765,7 @@
                     "description": "These are the people entered into Surfy's database"
                 },
                 "person": {
-                    "label": "Nobody",
+                    "label": "Person",
                     "description": "These are the people entered into Surfy's database"
                 },
                 "workingLocationId": {
@@ -6843,12 +6843,12 @@
                     "description": "These are the people entered into Surfy's database"
                 },
                 "person": {
-                    "label": "Nobody",
+                    "label": "Person",
                     "description": "These are the people entered into Surfy's database"
                 },
                 "workplaceId": {
                     "label": "Workstation identifier",
-                    "description": ""
+                    "description": "???"
                 },
                 "workplace": {
                     "label": "Workplace",
@@ -6917,7 +6917,7 @@
                     "description": "These are the people entered into Surfy's database"
                 },
                 "person": {
-                    "label": "Nobody",
+                    "label": "Person",
                     "description": "These are the people entered into Surfy's database"
                 },
                 "roomId": {
@@ -6991,7 +6991,7 @@
                     "description": "These are the people entered into Surfy's database"
                 },
                 "person": {
-                    "label": "Nobody",
+                    "label": "Person",
                     "description": "These are the people entered into Surfy's database"
                 },
                 "dimensionId": {

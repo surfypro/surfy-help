@@ -32,19 +32,19 @@ The start date and time of the reservation
 *Technical name:* ```dimension```
 <PH code="personToDimensionBooking:dimension"/>
 
-### Nobody {#person}
-
-These are the people entered into Surfy's database
-
-*Technical name:* ```person```
-<PH code="personToDimensionBooking:person"/>
-
 ### People's work location {#person-working-location}
 
 A workplace of people defines the workplace of people
 
 *Technical name:* ```personWorkingLocation```
 <PH code="personToDimensionBooking:personWorkingLocation"/>
+
+### Person {#person}
+
+These are the people entered into Surfy's database
+
+*Technical name:* ```person```
+<PH code="personToDimensionBooking:person"/>
 
 
 

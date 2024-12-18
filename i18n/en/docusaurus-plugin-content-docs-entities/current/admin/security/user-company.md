@@ -12,7 +12,7 @@ Enterprise users have access to their company's Surfy platform
 
 ## Associated entities (unique) {#properties-belongs-to}
 
-### Nobody {#person}
+### Person {#person}
 
 These are the people entered into Surfy's database
 

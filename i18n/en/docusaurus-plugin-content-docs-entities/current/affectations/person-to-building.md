@@ -25,7 +25,7 @@ The building is used to group the floors
 *Technical name:* ```building```
 <PH code="personToBuilding:building"/>
 
-### Nobody {#person}
+### Person {#person}
 
 These are the people entered into Surfy's database
 

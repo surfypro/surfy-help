@@ -12,7 +12,7 @@ Allows you to assign a person to a single space
 
 ## Associated entities (unique) {#properties-belongs-to}
 
-### Nobody {#person}
+### Person {#person}
 
 These are the people entered into Surfy's database
 

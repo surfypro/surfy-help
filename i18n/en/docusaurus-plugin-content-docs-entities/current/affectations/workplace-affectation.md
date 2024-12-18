@@ -74,7 +74,7 @@ Allows a fixed workstation to be assigned to a person
 
 ## Associated entities (unique) {#properties-belongs-to}
 
-### Nobody {#person}
+### Person {#person}
 
 These are the people entered into Surfy's database
 

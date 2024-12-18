@@ -22,13 +22,6 @@ The qualified floor space for this space
 *Technical name:* ```area```
 <PH code="room:area"/>
 
-### Bulking rate {#expansion-ratio}
-
-Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations
-
-*Technical name:* ```expansionRatio```
-<PH code="room:expansionRatio"/>
-
 ### Capacity excluding seats {#capacity}
 
 The declared capacity can be used to define the number of seats available in a space or to know the maximum number of people that can be put in a space, this figure is added to the number of seats to give the total capacity
@@ -63,6 +56,13 @@ This email is used to reserve this room via the messaging system
 
 *Technical name:* ```bookingEmail```
 <PH code="room:bookingEmail"/>
+
+### Expansion rate {#expansion-ratio}
+
+Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations
+
+*Technical name:* ```expansionRatio```
+<PH code="room:expansionRatio"/>
 
 ### External Id2 {#external-id-2}
 

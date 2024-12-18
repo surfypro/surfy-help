@@ -19,7 +19,7 @@ Allows you to assign a person to a district, territory or village
 *Technical name:* ```dimension```
 <PH code="dimensionToPerson:dimension"/>
 
-### Nobody {#person}
+### Person {#person}
 
 These are the people entered into Surfy's database
 

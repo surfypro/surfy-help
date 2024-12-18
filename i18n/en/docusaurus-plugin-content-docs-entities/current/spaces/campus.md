@@ -15,13 +15,6 @@ The campus is used to group buildings that are in the same location.
 *Technical name:* ```address```
 <PH code="campus:address"/>
 
-### Bulking rate {#expansion-ratio}
-
-Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations
-
-*Technical name:* ```expansionRatio```
-<PH code="campus:expansionRatio"/>
-
 ### Campus Name {#name}
 
 Campus Name
@@ -42,6 +35,13 @@ Campus Color
 
 *Technical name:* ```color```
 <PH code="campus:color"/>
+
+### Expansion rate {#expansion-ratio}
+
+Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations
+
+*Technical name:* ```expansionRatio```
+<PH code="campus:expansionRatio"/>
 
 ### Number of assignments {#people-count}
 
