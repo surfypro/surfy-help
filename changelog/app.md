@@ -1,5 +1,6 @@
 # Nouveautés
 
+
 ## 5 Decembre 2024  - v3.4.46 ## 
 
 - Amélioration du zoom sur les plans sur les écrans tactiles et mobiles
