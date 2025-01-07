@@ -1,6 +1,5 @@
 # Nouveautés
 
-
 ## 27 Decembre 2024 - v3.4.49
 
 - La palette des couleurs possède maintenant le blanc et le noir 
