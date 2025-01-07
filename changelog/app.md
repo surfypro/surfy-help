@@ -16,7 +16,7 @@
 - Tableaux de bord pour avoir en fonction de la période choisie :
     - Les réservations des postes de travail par jours de la semaine
     - Les réservations des postes de travail par date
-- Synchronization mis en place avec le logiciel de gestion RH Lucca
+- Synchronisation mis en place avec le logiciel de gestion RH Lucca
 - Le choix de la langue est conservée même après la déconnexion à Surfy
 - La fenêtre de sauvegarde en image prend en compte le changement d'étage
 - Les plans en 3D peuvent maintenant être sauvegardés en image
