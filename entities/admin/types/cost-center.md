@@ -1,7 +1,7 @@
 # Centre de coût
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation
+Le centre de coût permet de répartir les espaces dynamiquement pour la refacturation
 
 <OH code="costCenter"/>
 
@@ -78,7 +78,7 @@ Répartir au prorata l'espace utilisé par ce centre de coût sur l'étage sur l
 
 ### Personnes {#people}
 
-
+Ce sont les personnes entrées dans la base de données de Surfy
 
 *Nom technique:* ```people```
 <PH code="costCenter:people"/>

@@ -27,7 +27,7 @@ Le moment auquel l'intervention a eu lieu
 
 ### Entreprise prestataire {#person-company}
 
-L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion
+L'entreprise prestataire permet de gérer le personnel prestataire par entreprise d'appartenance
 
 *Nom technique:* ```personCompany```
 <PH code="personCompanyToItem:personCompany"/>

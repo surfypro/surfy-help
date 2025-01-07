@@ -58,7 +58,7 @@ Name that will define the organization
 
 ### People {#people}
 
-
+These are the people entered into Surfy's database
 
 *Technical name:* ```people```
 <PH code="organization:people"/>

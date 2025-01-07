@@ -1,7 +1,7 @@
 # Business user
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Enterprise users have access to their company's Surfy platform
 
 <OH code="userCompany"/>
 
@@ -12,9 +12,9 @@
 
 ## Associated entities (unique) {#properties-belongs-to}
 
-### Nobody {#person}
+### Person {#person}
 
-
+These are the people entered into Surfy's database
 
 *Technical name:* ```person```
 <PH code="userCompany:person"/>
@@ -70,20 +70,6 @@
 
 *Technical name:* ```featureUpdatedBies```
 <PH code="userCompany:featureUpdatedBies"/>
-
-###  Legends {#legend-created-bies}
-
-
-
-*Technical name:* ```legendCreatedBies```
-<PH code="userCompany:legendCreatedBies"/>
-
-###  Legends {#legend-updated-bies}
-
-
-
-*Technical name:* ```legendUpdatedBies```
-<PH code="userCompany:legendUpdatedBies"/>
 
 ###  Partner Export Mapping Configuration To Floors {#partner-export-mapping-configuration-to-floor-created-bies}
 
@@ -241,14 +227,14 @@
 
 ### Assignments to Assignment Layers {#dimension-to-person-created-bies}
 
-
+Allows you to assign a person to a district, territory or village
 
 *Technical name:* ```dimensionToPersonCreatedBies```
 <PH code="userCompany:dimensionToPersonCreatedBies"/>
 
 ### Assignments to Assignment Layers {#dimension-to-person-updated-bies}
 
-
+Allows you to assign a person to a district, territory or village
 
 *Technical name:* ```dimensionToPersonUpdatedBies```
 <PH code="userCompany:dimensionToPersonUpdatedBies"/>
@@ -353,14 +339,14 @@ The association between a point and a space makes it possible to preserve the or
 
 ### Building assignments {#person-to-building-created-bies}
 
-
+Allows you to assign a person to a building, without additional information. The assignment can be counted, or not.
 
 *Technical name:* ```personToBuildingCreatedBies```
 <PH code="userCompany:personToBuildingCreatedBies"/>
 
 ### Building assignments {#person-to-building-updated-bies}
 
-
+Allows you to assign a person to a building, without additional information. The assignment can be counted, or not.
 
 *Technical name:* ```personToBuildingUpdatedBies```
 <PH code="userCompany:personToBuildingUpdatedBies"/>
@@ -423,14 +409,14 @@ The building is used to group the floors
 
 ### Business users {#user-company-created-bies}
 
-
+Enterprise users have access to their company's Surfy platform
 
 *Technical name:* ```userCompanyCreatedBies```
 <PH code="userCompany:userCompanyCreatedBies"/>
 
 ### Business users {#user-company-updated-bies}
 
-
+Enterprise users have access to their company's Surfy platform
 
 *Technical name:* ```userCompanyUpdatedBies```
 <PH code="userCompany:userCompanyUpdatedBies"/>
@@ -507,14 +493,14 @@ The campus is used to group buildings that are in the same location.
 
 ### Cost centers {#cost-center-created-bies}
 
-The cost center allows you to distribute spaces dynamically for re-invoicing
+The cost center allows spaces to be distributed dynamically for re-invoicing
 
 *Technical name:* ```costCenterCreatedBies```
 <PH code="userCompany:costCenterCreatedBies"/>
 
 ### Cost centers {#cost-center-updated-bies}
 
-The cost center allows you to distribute spaces dynamically for re-invoicing
+The cost center allows spaces to be distributed dynamically for re-invoicing
 
 *Technical name:* ```costCenterUpdatedBies```
 <PH code="userCompany:costCenterUpdatedBies"/>
@@ -687,6 +673,20 @@ The interventions of service providers on objects make it possible to define, fo
 *Technical name:* ```dimensionTypeUpdatedBies```
 <PH code="userCompany:dimensionTypeUpdatedBies"/>
 
+### Legend {#legend-created-bies}
+
+The legend allows you to configure the properties visible when the plan is saved as an image
+
+*Technical name:* ```legendCreatedBies```
+<PH code="userCompany:legendCreatedBies"/>
+
+### Legend {#legend-updated-bies}
+
+The legend allows you to configure the properties visible when the plan is saved as an image
+
+*Technical name:* ```legendUpdatedBies```
+<PH code="userCompany:legendUpdatedBies"/>
+
 ### Object movements {#item-fact-created-bies}
 
 
@@ -745,14 +745,14 @@ The interventions of service providers on objects make it possible to define, fo
 
 ### Object-to-person associations {#item-to-person-created-bies}
 
-
+Allows you to associate an object with a person (ergonomic seat, locker)
 
 *Technical name:* ```itemToPersonCreatedBies```
 <PH code="userCompany:itemToPersonCreatedBies"/>
 
 ### Object-to-person associations {#item-to-person-updated-bies}
 
-
+Allows you to associate an object with a person (ergonomic seat, locker)
 
 *Technical name:* ```itemToPersonUpdatedBies```
 <PH code="userCompany:itemToPersonUpdatedBies"/>
@@ -801,14 +801,14 @@ The interventions of service providers on objects make it possible to define, fo
 
 ### People {#person-created-bies}
 
-
+These are the people entered into Surfy's database
 
 *Technical name:* ```personCreatedBies```
 <PH code="userCompany:personCreatedBies"/>
 
 ### People {#person-updated-bies}
 
-
+These are the people entered into Surfy's database
 
 *Technical name:* ```personUpdatedBies```
 <PH code="userCompany:personUpdatedBies"/>
@@ -843,14 +843,14 @@ A workplace of people defines the workplace of people
 
 ### Personal safety profiles {#person-security-profile-created-bies}
 
-
+Allows you to define the different security profiles that can be associated with people
 
 *Technical name:* ```personSecurityProfileCreatedBies```
 <PH code="userCompany:personSecurityProfileCreatedBies"/>
 
 ### Personal safety profiles {#person-security-profile-updated-bies}
 
-
+Allows you to define the different security profiles that can be associated with people
 
 *Technical name:* ```personSecurityProfileUpdatedBies```
 <PH code="userCompany:personSecurityProfileUpdatedBies"/>
@@ -920,42 +920,42 @@ The service provider object types make it possible to define a relationship betw
 
 ### Reservations at people's workstations {#person-to-workplace-booking-created-bies}
 
-People's workstation reservations are recorded and available with the start and end dates of the reservation
+People's workstation reservations are recorded and available with reservation start and end dates
 
 *Technical name:* ```personToWorkplaceBookingCreatedBies```
 <PH code="userCompany:personToWorkplaceBookingCreatedBies"/>
 
 ### Reservations at people's workstations {#person-to-workplace-booking-updated-bies}
 
-People's workstation reservations are recorded and available with the start and end dates of the reservation
+People's workstation reservations are recorded and available with reservation start and end dates
 
 *Technical name:* ```personToWorkplaceBookingUpdatedBies```
 <PH code="userCompany:personToWorkplaceBookingUpdatedBies"/>
 
 ### Reservations for the people area {#person-to-room-booking-created-bies}
 
-Reservations for people's spaces are recorded and available with the start and end dates of the reservation
+Reservations for people's spaces are recorded and available with the reservation start and end dates
 
 *Technical name:* ```personToRoomBookingCreatedBies```
 <PH code="userCompany:personToRoomBookingCreatedBies"/>
 
 ### Reservations for the people area {#person-to-room-booking-updated-bies}
 
-Reservations for people's spaces are recorded and available with the start and end dates of the reservation
+Reservations for people's spaces are recorded and available with the reservation start and end dates
 
 *Technical name:* ```personToRoomBookingUpdatedBies```
 <PH code="userCompany:personToRoomBookingUpdatedBies"/>
 
 ### Reservations on the people assignment layer {#person-to-dimension-booking-created-bies}
 
-Reservations on people assignment layers are recorded and available with the start and end dates of the reservation
+Reservations to people assignment layers are recorded and available with reservation start and end dates
 
 *Technical name:* ```personToDimensionBookingCreatedBies```
 <PH code="userCompany:personToDimensionBookingCreatedBies"/>
 
 ### Reservations on the people assignment layer {#person-to-dimension-booking-updated-bies}
 
-Reservations on people assignment layers are recorded and available with the start and end dates of the reservation
+Reservations to people assignment layers are recorded and available with reservation start and end dates
 
 *Technical name:* ```personToDimensionBookingUpdatedBies```
 <PH code="userCompany:personToDimensionBookingUpdatedBies"/>
@@ -1004,14 +1004,14 @@ Reservations on people assignment layers are recorded and available with the sta
 
 ### Service companies {#person-company-created-bies}
 
-The service provider company makes it possible to keep information about the company of a service provider to know, for example, the number of positions or the space occupied by the latter, or to know what types of equipment or type of spaces are available. he is in management
+The service provider company allows you to manage service provider personnel by company to which they belong
 
 *Technical name:* ```personCompanyCreatedBies```
 <PH code="userCompany:personCompanyCreatedBies"/>
 
 ### Service companies {#person-company-updated-bies}
 
-The service provider company makes it possible to keep information about the company of a service provider to know, for example, the number of positions or the space occupied by the latter, or to know what types of equipment or type of spaces are available. he is in management
+The service provider company allows you to manage service provider personnel by company to which they belong
 
 *Technical name:* ```personCompanyUpdatedBies```
 <PH code="userCompany:personCompanyUpdatedBies"/>
@@ -1032,14 +1032,14 @@ The service provider company makes it possible to keep information about the com
 
 ### Space assignments {#room-affectation-created-bies}
 
-
+Allows you to assign a person to a single space
 
 *Technical name:* ```roomAffectationCreatedBies```
 <PH code="userCompany:roomAffectationCreatedBies"/>
 
 ### Space assignments {#room-affectation-updated-bies}
 
-
+Allows you to assign a person to a single space
 
 *Technical name:* ```roomAffectationUpdatedBies```
 <PH code="userCompany:roomAffectationUpdatedBies"/>
@@ -1088,14 +1088,14 @@ Space connectors allow you to create a link between several spaces on different 
 
 ### Status of persons {#person-state-created-bies}
 
-
+Allows you to define all types of contracts between people and the company
 
 *Technical name:* ```personStateCreatedBies```
 <PH code="userCompany:personStateCreatedBies"/>
 
 ### Status of persons {#person-state-updated-bies}
 
-
+Allows you to define all types of contracts between people and the company
 
 *Technical name:* ```personStateUpdatedBies```
 <PH code="userCompany:personStateUpdatedBies"/>
@@ -1200,14 +1200,14 @@ The types of spaces of the service providers make it possible to define a relati
 
 ### Workstation assignments {#workplace-affectation-created-bies}
 
-
+Allows a fixed workstation to be assigned to a person
 
 *Technical name:* ```workplaceAffectationCreatedBies```
 <PH code="userCompany:workplaceAffectationCreatedBies"/>
 
 ### Workstation assignments {#workplace-affectation-updated-bies}
 
-
+Allows a fixed workstation to be assigned to a person
 
 *Technical name:* ```workplaceAffectationUpdatedBies```
 <PH code="userCompany:workplaceAffectationUpdatedBies"/>

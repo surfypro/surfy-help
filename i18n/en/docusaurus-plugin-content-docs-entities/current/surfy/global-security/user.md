@@ -50,7 +50,7 @@ The user's last name
 
 ### Business users {#user-companies}
 
-
+Enterprise users have access to their company's Surfy platform
 
 *Technical name:* ```userCompanies```
 <PH code="user:userCompanies"/>

@@ -8,19 +8,19 @@
 
 ## Basic properties {#properties-base}
 
-### Bulking rate {#expansion-ratio}
-
-Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations
-
-*Technical name:* ```expansionRatio```
-<PH code="costCenterBuilding:expansionRatio"/>
-
 ### Carbon footprint {#carbon-footprint}
 
 The carbon footprint is the number of CO2 emitted
 
 *Technical name:* ```carbonFootprint```
 <PH code="costCenterBuilding:carbonFootprint"/>
+
+### Expansion rate {#expansion-ratio}
+
+Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations
+
+*Technical name:* ```expansionRatio```
+<PH code="costCenterBuilding:expansionRatio"/>
 
 ### Number of assignments {#people-count}
 
@@ -160,7 +160,7 @@ The building is used to group the floors
 
 ### Cost center {#cost-center}
 
-The cost center allows you to distribute spaces dynamically for re-invoicing
+The cost center allows spaces to be distributed dynamically for re-invoicing
 
 *Technical name:* ```costCenter```
 <PH code="costCenterBuilding:costCenter"/>

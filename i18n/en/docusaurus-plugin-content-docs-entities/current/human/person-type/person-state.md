@@ -1,7 +1,7 @@
 # Status of persons
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Allows you to define all types of contracts between people and the company
 
 <OH code="personState"/>
 
@@ -22,7 +22,7 @@
 
 ### People {#people}
 
-
+These are the people entered into Surfy's database
 
 *Technical name:* ```people```
 <PH code="personState:people"/>

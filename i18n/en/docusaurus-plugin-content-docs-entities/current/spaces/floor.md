@@ -22,13 +22,6 @@ The opacity allows you to see more or less the background
 *Technical name:* ```backgroundLayoutOpacity```
 <PH code="floor:backgroundLayoutOpacity"/>
 
-### Bulking rate {#expansion-ratio}
-
-Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations
-
-*Technical name:* ```expansionRatio```
-<PH code="floor:expansionRatio"/>
-
 ### Carbon footprint {#carbon-footprint}
 
 The carbon footprint is the number of CO2 emitted
@@ -42,6 +35,13 @@ The height under the ceiling of the floor
 
 *Technical name:* ```height```
 <PH code="floor:height"/>
+
+### Expansion rate {#expansion-ratio}
+
+Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations
+
+*Technical name:* ```expansionRatio```
+<PH code="floor:expansionRatio"/>
 
 ### Level {#level}
 

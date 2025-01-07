@@ -1,7 +1,7 @@
 # Affectation au poste de travail
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Permet d'attribuer un poste de travail fixe à une personne
 
 <OH code="workplaceAffectation"/>
 
@@ -76,7 +76,7 @@
 
 ### Personne {#person}
 
-
+Ce sont les personnes entrées dans la base de données de Surfy
 
 *Nom technique:* ```person```
 <PH code="workplaceAffectation:person"/>

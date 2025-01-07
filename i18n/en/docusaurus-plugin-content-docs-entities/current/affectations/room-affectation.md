@@ -1,7 +1,7 @@
 # Space allocation
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Allows you to assign a person to a single space
 
 <OH code="roomAffectation"/>
 
@@ -12,9 +12,9 @@
 
 ## Associated entities (unique) {#properties-belongs-to}
 
-### Nobody {#person}
+### Person {#person}
 
-
+These are the people entered into Surfy's database
 
 *Technical name:* ```person```
 <PH code="roomAffectation:person"/>

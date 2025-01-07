@@ -331,7 +331,7 @@ L'utilisateur propriétaire du bâtiment voit toujours le bâtiment même en pr�
 
 ### Affectations au bâtiment {#person-to-buildings}
 
-
+Permet d'attribuer une personne à un bâtiment, sans information supplémentaire. L'affectation peut être comptabilisée, ou non.
 
 *Nom technique:* ```personToBuildings```
 <PH code="building:personToBuildings"/>

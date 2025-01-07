@@ -13,7 +13,7 @@
   },
   "link.item.label.API": {
     "message": "API",
-    "description": "The label of footer link with label=API linking to https://app.surfy.pro/apidocs/"
+    "description": "The label of footer link with label=API linking to https://help.surfy.pro/apidocs/"
   },
   "link.item.label.GitHub": {
     "message": "GitHub",

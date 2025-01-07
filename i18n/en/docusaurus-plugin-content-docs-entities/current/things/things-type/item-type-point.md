@@ -10,21 +10,21 @@
 
 ### Sort index {#sort-index}
 
-
+???
 
 *Technical name:* ```sortIndex```
 <PH code="itemTypePoint:sortIndex"/>
 
 ### there {#y}
 
-
+???
 
 *Technical name:* ```y```
 <PH code="itemTypePoint:y"/>
 
 ### x {#x}
 
-
+???
 
 *Technical name:* ```x```
 <PH code="itemTypePoint:x"/>
@@ -34,7 +34,7 @@
 
 ### Type of object {#item-type}
 
-
+???
 
 *Technical name:* ```itemType```
 <PH code="itemTypePoint:itemType"/>

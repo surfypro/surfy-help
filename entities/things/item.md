@@ -86,7 +86,7 @@ La référence de l'objet est utilisé pour le retrouver et pour differencier ce
 
 ### Associations d'objet à personne {#item-to-people}
 
-
+Permet d'associer un objet à une personne (siège ergonomique, casier)
 
 *Nom technique:* ```itemToPeople```
 <PH code="item:itemToPeople"/>

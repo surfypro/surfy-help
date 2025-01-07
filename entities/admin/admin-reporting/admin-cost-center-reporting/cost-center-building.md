@@ -160,7 +160,7 @@ Le bâtiment est utilisé pour regrouper les étages
 
 ### Centre de coût {#cost-center}
 
-Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation
+Le centre de coût permet de répartir les espaces dynamiquement pour la refacturation
 
 *Nom technique:* ```costCenter```
 <PH code="costCenterBuilding:costCenter"/>

@@ -34,7 +34,7 @@ When the intervention took place
 
 ### Service provider company {#person-company}
 
-The service provider company makes it possible to keep information about the company of a service provider to know, for example, the number of positions or the space occupied by the latter, or to know what types of equipment or type of spaces are available. he is in management
+The service provider company allows you to manage service provider personnel by company to which they belong
 
 *Technical name:* ```personCompany```
 <PH code="personCompanyToItem:personCompany"/>

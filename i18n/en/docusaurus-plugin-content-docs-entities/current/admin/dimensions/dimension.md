@@ -86,14 +86,14 @@ The total number of people who are assigned directly to this assignment layer in
 
 ### Assignments to Assignment Layers {#dimension-to-people}
 
-
+Allows you to assign a person to a district, territory or village
 
 *Technical name:* ```dimensionToPeople```
 <PH code="dimension:dimensionToPeople"/>
 
 ### Reservations on the people assignment layer {#person-to-dimension-bookings}
 
-Reservations on people assignment layers are recorded and available with the start and end dates of the reservation
+Reservations to people assignment layers are recorded and available with reservation start and end dates
 
 *Technical name:* ```personToDimensionBookings```
 <PH code="dimension:personToDimensionBookings"/>

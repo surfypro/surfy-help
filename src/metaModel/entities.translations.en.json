@@ -31,15 +31,15 @@
             },
             "userCompany": {
                 "label": "Business user",
-                "description": null
+                "description": "Enterprise users have access to their company's Surfy platform"
             },
             "personGender": {
                 "label": "Gender of the person",
-                "description": null
+                "description": "Allows you to count each gender, for example for managing toilets"
             },
             "personCompany": {
                 "label": "Service provider company",
-                "description": "The service provider company makes it possible to keep information about the company of a service provider to know, for example, the number of positions or the space occupied by the latter, or to know what types of equipment or type of spaces are available. he is in management"
+                "description": "The service provider company allows you to manage service provider personnel by company to which they belong"
             },
             "jupUiLayout": {
                 "label": "View of the plan",
@@ -115,7 +115,7 @@
             },
             "costCenter": {
                 "label": "Cost center",
-                "description": "The cost center allows you to distribute spaces dynamically for re-invoicing"
+                "description": "The cost center allows spaces to be distributed dynamically for re-invoicing"
             },
             "costCenterBuilding": {
                 "label": "Building cost center",
@@ -179,15 +179,15 @@
             },
             "personState": {
                 "label": "Status of persons",
-                "description": null
+                "description": "Allows you to define all types of contracts between people and the company"
             },
             "personSecurityProfile": {
                 "label": "Personal safety profile",
-                "description": null
+                "description": "Allows you to define the different security profiles that can be associated with people"
             },
             "person": {
-                "label": "Nobody",
-                "description": null
+                "label": "Person",
+                "description": "These are the people entered into Surfy's database"
             },
             "personToPersonType": {
                 "label": "Type of relationship between people",
@@ -199,7 +199,7 @@
             },
             "roomAffectation": {
                 "label": "Space allocation",
-                "description": null
+                "description": "Allows you to assign a person to a single space"
             },
             "workplaceType": {
                 "label": "Type of workstation",
@@ -219,7 +219,7 @@
             },
             "workplaceAffectation": {
                 "label": "Work station assignment",
-                "description": null
+                "description": "Allows a fixed workstation to be assigned to a person"
             },
             "organizationFloor": {
                 "label": "Organization of floors",
@@ -239,15 +239,15 @@
             },
             "itemToPerson": {
                 "label": "Object-to-person association",
-                "description": null
+                "description": "Allows you to associate an object with a person (ergonomic seat, locker)"
             },
             "personToBuilding": {
                 "label": "Affection to the building",
-                "description": null
+                "description": "Allows you to assign a person to a building, without additional information. The assignment can be counted, or not."
             },
             "dimensionToPerson": {
                 "label": "Assignment to Assignment Layer",
-                "description": null
+                "description": "Allows you to assign a person to a district, territory or village"
             },
             "dimensionTypeToBuilding": {
                 "label": "Building assignment layer",
@@ -263,15 +263,15 @@
             },
             "personToWorkplaceBooking": {
                 "label": "Reservation at people's workstations",
-                "description": "People's workstation reservations are recorded and available with the start and end dates of the reservation"
+                "description": "People's workstation reservations are recorded and available with reservation start and end dates"
             },
             "personToRoomBooking": {
                 "label": "Reservation for the people area",
-                "description": "Reservations for people's spaces are recorded and available with the start and end dates of the reservation"
+                "description": "Reservations for people's spaces are recorded and available with the reservation start and end dates"
             },
             "personToDimensionBooking": {
                 "label": "Reservation to the people assignment layer",
-                "description": "Reservations on people assignment layers are recorded and available with the start and end dates of the reservation"
+                "description": "Reservations to people assignment layers are recorded and available with reservation start and end dates"
             },
             "personCompanyMission": {
                 "label": "Mission of the service provider",
@@ -290,8 +290,8 @@
                 "description": "The interventions of service providers on objects make it possible to define, for example, the date of a visit to a fire extinguisher"
             },
             "legend": {
-                "label": " Legend",
-                "description": null
+                "label": "Legend",
+                "description": "The legend allows you to configure the properties visible when the plan is saved as an image"
             },
             "jupObjectType": {
                 "label": "Entity type",
@@ -464,7 +464,7 @@
             "user": {
                 "id": {
                     "label": "User ID",
-                    "description": ""
+                    "description": "???"
                 },
                 "email": {
                     "label": "E-mail",
@@ -500,7 +500,7 @@
                 },
                 "userCompanies": {
                     "label": "Business users",
-                    "description": null
+                    "description": "Enterprise users have access to their company's Surfy platform"
                 }
             },
             "companyType": {
@@ -588,7 +588,7 @@
                 },
                 "userCompanies": {
                     "label": "Business users",
-                    "description": null
+                    "description": "Enterprise users have access to their company's Surfy platform"
                 },
                 "buildingTypes": {
                     "label": "Types of buildings",
@@ -649,7 +649,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -864,7 +864,7 @@
                 },
                 "userId": {
                     "label": "User ID",
-                    "description": ""
+                    "description": "???"
                 },
                 "user": {
                     "label": "User",
@@ -880,11 +880,11 @@
                 },
                 "personId": {
                     "label": "Surfy ID",
-                    "description": null
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "person": {
-                    "label": "Nobody",
-                    "description": null
+                    "label": "Person",
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -896,7 +896,7 @@
                 },
                 "userCompanyCreatedBies": {
                     "label": "Business users",
-                    "description": null
+                    "description": "Enterprise users have access to their company's Surfy platform"
                 },
                 "userCompanyUpdatedById": {
                     "label": "ID of the user who modified",
@@ -908,15 +908,15 @@
                 },
                 "userCompanyUpdatedBies": {
                     "label": "Business users",
-                    "description": null
+                    "description": "Enterprise users have access to their company's Surfy platform"
                 },
                 "personCompanyCreatedBies": {
                     "label": "Service companies",
-                    "description": "The service provider company makes it possible to keep information about the company of a service provider to know, for example, the number of positions or the space occupied by the latter, or to know what types of equipment or type of spaces are available. he is in management"
+                    "description": "The service provider company allows you to manage service provider personnel by company to which they belong"
                 },
                 "personCompanyUpdatedBies": {
                     "label": "Service companies",
-                    "description": "The service provider company makes it possible to keep information about the company of a service provider to know, for example, the number of positions or the space occupied by the latter, or to know what types of equipment or type of spaces are available. he is in management"
+                    "description": "The service provider company allows you to manage service provider personnel by company to which they belong"
                 },
                 "buildingTypeCreatedBies": {
                     "label": "Types of buildings",
@@ -1044,11 +1044,11 @@
                 },
                 "costCenterCreatedBies": {
                     "label": "Cost centers",
-                    "description": "The cost center allows you to distribute spaces dynamically for re-invoicing"
+                    "description": "The cost center allows spaces to be distributed dynamically for re-invoicing"
                 },
                 "costCenterUpdatedBies": {
                     "label": "Cost centers",
-                    "description": "The cost center allows you to distribute spaces dynamically for re-invoicing"
+                    "description": "The cost center allows spaces to be distributed dynamically for re-invoicing"
                 },
                 "costCenterBuildingCreatedBies": {
                     "label": "Building cost centers",
@@ -1164,27 +1164,27 @@
                 },
                 "personStateCreatedBies": {
                     "label": "Status of persons",
-                    "description": null
+                    "description": "Allows you to define all types of contracts between people and the company"
                 },
                 "personStateUpdatedBies": {
                     "label": "Status of persons",
-                    "description": null
+                    "description": "Allows you to define all types of contracts between people and the company"
                 },
                 "personSecurityProfileCreatedBies": {
                     "label": "Personal safety profiles",
-                    "description": null
+                    "description": "Allows you to define the different security profiles that can be associated with people"
                 },
                 "personSecurityProfileUpdatedBies": {
                     "label": "Personal safety profiles",
-                    "description": null
+                    "description": "Allows you to define the different security profiles that can be associated with people"
                 },
                 "personCreatedBies": {
                     "label": "People",
-                    "description": null
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "personUpdatedBies": {
                     "label": "People",
-                    "description": null
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "personToPersonTypeCreatedBies": {
                     "label": "Types of relationship between people",
@@ -1204,11 +1204,11 @@
                 },
                 "roomAffectationCreatedBies": {
                     "label": "Space assignments",
-                    "description": null
+                    "description": "Allows you to assign a person to a single space"
                 },
                 "roomAffectationUpdatedBies": {
                     "label": "Space assignments",
-                    "description": null
+                    "description": "Allows you to assign a person to a single space"
                 },
                 "workplaceTypeCreatedBies": {
                     "label": "Types of workstations",
@@ -1244,11 +1244,11 @@
                 },
                 "workplaceAffectationCreatedBies": {
                     "label": "Workstation assignments",
-                    "description": null
+                    "description": "Allows a fixed workstation to be assigned to a person"
                 },
                 "workplaceAffectationUpdatedBies": {
                     "label": "Workstation assignments",
-                    "description": null
+                    "description": "Allows a fixed workstation to be assigned to a person"
                 },
                 "organizationFloorCreatedBies": {
                     "label": "Floor organization",
@@ -1284,27 +1284,27 @@
                 },
                 "itemToPersonCreatedBies": {
                     "label": "Object-to-person associations",
-                    "description": null
+                    "description": "Allows you to associate an object with a person (ergonomic seat, locker)"
                 },
                 "itemToPersonUpdatedBies": {
                     "label": "Object-to-person associations",
-                    "description": null
+                    "description": "Allows you to associate an object with a person (ergonomic seat, locker)"
                 },
                 "personToBuildingCreatedBies": {
                     "label": "Building assignments",
-                    "description": null
+                    "description": "Allows you to assign a person to a building, without additional information. The assignment can be counted, or not."
                 },
                 "personToBuildingUpdatedBies": {
                     "label": "Building assignments",
-                    "description": null
+                    "description": "Allows you to assign a person to a building, without additional information. The assignment can be counted, or not."
                 },
                 "dimensionToPersonCreatedBies": {
                     "label": "Assignments to Assignment Layers",
-                    "description": null
+                    "description": "Allows you to assign a person to a district, territory or village"
                 },
                 "dimensionToPersonUpdatedBies": {
                     "label": "Assignments to Assignment Layers",
-                    "description": null
+                    "description": "Allows you to assign a person to a district, territory or village"
                 },
                 "dimensionTypeToBuildingCreatedBies": {
                     "label": "Building assignment layers",
@@ -1324,27 +1324,27 @@
                 },
                 "personToWorkplaceBookingCreatedBies": {
                     "label": "Reservations at people's workstations",
-                    "description": "People's workstation reservations are recorded and available with the start and end dates of the reservation"
+                    "description": "People's workstation reservations are recorded and available with reservation start and end dates"
                 },
                 "personToWorkplaceBookingUpdatedBies": {
                     "label": "Reservations at people's workstations",
-                    "description": "People's workstation reservations are recorded and available with the start and end dates of the reservation"
+                    "description": "People's workstation reservations are recorded and available with reservation start and end dates"
                 },
                 "personToRoomBookingCreatedBies": {
                     "label": "Reservations for the people area",
-                    "description": "Reservations for people's spaces are recorded and available with the start and end dates of the reservation"
+                    "description": "Reservations for people's spaces are recorded and available with the reservation start and end dates"
                 },
                 "personToRoomBookingUpdatedBies": {
                     "label": "Reservations for the people area",
-                    "description": "Reservations for people's spaces are recorded and available with the start and end dates of the reservation"
+                    "description": "Reservations for people's spaces are recorded and available with the reservation start and end dates"
                 },
                 "personToDimensionBookingCreatedBies": {
                     "label": "Reservations on the people assignment layer",
-                    "description": "Reservations on people assignment layers are recorded and available with the start and end dates of the reservation"
+                    "description": "Reservations to people assignment layers are recorded and available with reservation start and end dates"
                 },
                 "personToDimensionBookingUpdatedBies": {
                     "label": "Reservations on the people assignment layer",
-                    "description": "Reservations on people assignment layers are recorded and available with the start and end dates of the reservation"
+                    "description": "Reservations to people assignment layers are recorded and available with reservation start and end dates"
                 },
                 "personCompanyToItemTypeCreatedBies": {
                     "label": "Provider object types",
@@ -1371,12 +1371,12 @@
                     "description": "The interventions of service providers on objects make it possible to define, for example, the date of a visit to a fire extinguisher"
                 },
                 "legendCreatedBies": {
-                    "label": " Legends",
-                    "description": null
+                    "label": "Legend",
+                    "description": "The legend allows you to configure the properties visible when the plan is saved as an image"
                 },
                 "legendUpdatedBies": {
-                    "label": " Legends",
-                    "description": null
+                    "label": "Legend",
+                    "description": "The legend allows you to configure the properties visible when the plan is saved as an image"
                 },
                 "contentRoleCreatedBies": {
                     "label": "Content roles",
@@ -1586,7 +1586,7 @@
                 },
                 "people": {
                     "label": "People",
-                    "description": null
+                    "description": "These are the people entered into Surfy's database"
                 }
             },
             "personCompany": {
@@ -1640,7 +1640,7 @@
                 },
                 "people": {
                     "label": "People",
-                    "description": null
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "personCompanyToItemTypes": {
                     "label": "Provider object types",
@@ -1704,7 +1704,7 @@
                 },
                 "code": {
                     "label": "Code",
-                    "description": ""
+                    "description": "???"
                 },
                 "color": {
                     "label": "Color",
@@ -1814,7 +1814,7 @@
                 },
                 "people": {
                     "label": "People",
-                    "description": null
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "workplaces": {
                     "label": "Personal work places",
@@ -2239,7 +2239,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -2324,7 +2324,7 @@
                 },
                 "userCompanyOwnerId": {
                     "label": "Id (business user)",
-                    "description": null
+                    "description": "Enterprise users have access to their company's Surfy platform"
                 },
                 "userCompanyOwner": {
                     "label": "Building owner user",
@@ -2404,7 +2404,7 @@
                 },
                 "personToBuildings": {
                     "label": "Building assignments",
-                    "description": null
+                    "description": "Allows you to assign a person to a building, without additional information. The assignment can be counted, or not."
                 },
                 "dimensionTypeToBuildings": {
                     "label": "Building assignment layers",
@@ -2421,7 +2421,7 @@
                     "description": null
                 },
                 "name": {
-                    "label": "Name of the ladder",
+                    "label": "Name of the scale",
                     "description": "To remember the name and reuse it on other floors"
                 },
                 "p1": {
@@ -2679,7 +2679,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -3137,7 +3137,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -3275,7 +3275,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -3446,7 +3446,7 @@
                 },
                 "people": {
                     "label": "People",
-                    "description": null
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "workplaces": {
                     "label": "Personal work places",
@@ -3499,7 +3499,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -3560,11 +3560,11 @@
                 },
                 "costCenterId": {
                     "label": "Cost center identifier",
-                    "description": "The cost center allows you to distribute spaces dynamically for re-invoicing"
+                    "description": "The cost center allows spaces to be distributed dynamically for re-invoicing"
                 },
                 "costCenter": {
                     "label": "Cost center",
-                    "description": "The cost center allows you to distribute spaces dynamically for re-invoicing"
+                    "description": "The cost center allows spaces to be distributed dynamically for re-invoicing"
                 },
                 "buildingId": {
                     "label": "Building identifier",
@@ -3637,7 +3637,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -3698,11 +3698,11 @@
                 },
                 "costCenterId": {
                     "label": "Cost center identifier",
-                    "description": "The cost center allows you to distribute spaces dynamically for re-invoicing"
+                    "description": "The cost center allows spaces to be distributed dynamically for re-invoicing"
                 },
                 "costCenter": {
                     "label": "Cost center",
-                    "description": "The cost center allows you to distribute spaces dynamically for re-invoicing"
+                    "description": "The cost center allows spaces to be distributed dynamically for re-invoicing"
                 },
                 "floorId": {
                     "label": "Identifier of the floor",
@@ -3791,7 +3791,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -3908,7 +3908,7 @@
                 },
                 "costCenterId": {
                     "label": "Cost center identifier",
-                    "description": "The cost center allows you to distribute spaces dynamically for re-invoicing"
+                    "description": "The cost center allows spaces to be distributed dynamically for re-invoicing"
                 },
                 "costCenter": {
                     "label": "Cost center",
@@ -3956,7 +3956,7 @@
                 },
                 "roomAffectations": {
                     "label": "Space assignments",
-                    "description": null
+                    "description": "Allows you to assign a person to a single space"
                 },
                 "workplaces": {
                     "label": "Personal work places",
@@ -3968,7 +3968,7 @@
                 },
                 "personToRoomBookings": {
                     "label": "Reservations for the people area",
-                    "description": "Reservations for people's spaces are recorded and available with the start and end dates of the reservation"
+                    "description": "Reservations for people's spaces are recorded and available with the reservation start and end dates"
                 },
                 "companyId": {
                     "label": "Company ID",
@@ -4052,11 +4052,11 @@
             "roomPointRoom": {
                 "id": {
                     "label": "Identifier of the association between a point and a space",
-                    "description": ""
+                    "description": "???"
                 },
                 "sortIndex": {
                     "label": "Sort index",
-                    "description": ""
+                    "description": "???"
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -4218,19 +4218,19 @@
             "itemTypePoint": {
                 "id": {
                     "label": "login",
-                    "description": ""
+                    "description": "???"
                 },
                 "x": {
                     "label": "x",
-                    "description": ""
+                    "description": "???"
                 },
                 "y": {
                     "label": "there",
-                    "description": ""
+                    "description": "???"
                 },
                 "sortIndex": {
                     "label": "Sort index",
-                    "description": ""
+                    "description": "???"
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -4250,7 +4250,7 @@
                 },
                 "itemType": {
                     "label": "Type of object",
-                    "description": ""
+                    "description": "???"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -4438,11 +4438,11 @@
                 },
                 "dimensionToPeople": {
                     "label": "Assignments to Assignment Layers",
-                    "description": null
+                    "description": "Allows you to assign a person to a district, territory or village"
                 },
                 "personToDimensionBookings": {
                     "label": "Reservations on the people assignment layer",
-                    "description": "Reservations on people assignment layers are recorded and available with the start and end dates of the reservation"
+                    "description": "Reservations to people assignment layers are recorded and available with reservation start and end dates"
                 },
                 "companyId": {
                     "label": "Company ID",
@@ -4557,7 +4557,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -4707,7 +4707,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -4974,7 +4974,7 @@
                 },
                 "people": {
                     "label": "People",
-                    "description": null
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "companyId": {
                     "label": "Company ID",
@@ -4992,15 +4992,15 @@
                 },
                 "name": {
                     "label": "Security profile name",
-                    "description": "The name of the personal safety profile makes it easy to identify"
+                    "description": "Allows you to define the different security profiles that can be associated with people"
                 },
                 "color": {
-                    "label": "Color",
-                    "description": null
+                    "label": "Security profile color",
+                    "description": "Allows you to color the person's assigned workstation and security icon according to their security profile"
                 },
                 "icon": {
-                    "label": "Icon",
-                    "description": null
+                    "label": "Security profile icon",
+                    "description": "Allows you to assign an icon to a security profile in order to clearly visualize the security profiles on the map or in the lists"
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -5032,7 +5032,7 @@
                 },
                 "people": {
                     "label": "People",
-                    "description": null
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "companyId": {
                     "label": "Company ID",
@@ -5074,11 +5074,11 @@
                 },
                 "monitorReference": {
                     "label": "Screen reference",
-                    "description": "The screen reference can be used to record the screen reference associated with this person"
+                    "description": "The reference of the computer screen associated with this person"
                 },
                 "computerReference": {
                     "label": "Computer reference",
-                    "description": "The computer reference can be used to record the computer reference associated with this person"
+                    "description": "The reference of the computer associated with this person"
                 },
                 "telephone": {
                     "label": "Phone",
@@ -5090,7 +5090,7 @@
                 },
                 "code": {
                     "label": "Registration number",
-                    "description": "HR number of the person"
+                    "description": "The person's HR number"
                 },
                 "badgeNumber": {
                     "label": "Badge number",
@@ -5098,7 +5098,7 @@
                 },
                 "badgeRestaurant": {
                     "label": "RIE badge",
-                    "description": "The reference of the RIE or restaurant badge"
+                    "description": "The reference of the RIE or company restaurant badge"
                 },
                 "boxNumber": {
                     "label": "Locker number",
@@ -5110,11 +5110,11 @@
                 },
                 "startDate": {
                     "label": "Entry date",
-                    "description": "The date of entry of the person"
+                    "description": "The date the person joined the company"
                 },
                 "endDate": {
                     "label": "Release date",
-                    "description": "The person's release date"
+                    "description": "The person's exit date from the company"
                 },
                 "info": {
                     "label": "Comment",
@@ -5138,7 +5138,7 @@
                 },
                 "userCompanies": {
                     "label": "Business users",
-                    "description": null
+                    "description": "Enterprise users have access to their company's Surfy platform"
                 },
                 "organizationId": {
                     "label": "Organization ID",
@@ -5146,47 +5146,47 @@
                 },
                 "organization": {
                     "label": "The organization of the person",
-                    "description": "The person's home organization"
+                    "description": "The person's attachment service"
                 },
                 "personStateId": {
                     "label": "Person status identifier",
-                    "description": null
+                    "description": "Allows you to define all types of contracts between people and the company"
                 },
                 "personState": {
                     "label": "Status",
-                    "description": "Allows you to determine the person's type of contract"
+                    "description": "Allows you to indicate the type of contract the person has with the company"
                 },
                 "personSecurityProfileId": {
                     "label": "Personal security profile identifier",
-                    "description": null
+                    "description": "Allows you to define the different security profiles that can be associated with people"
                 },
                 "personSecurityProfile": {
                     "label": "Security profile",
-                    "description": "Allows you to determine the safety profile of people for incident management"
+                    "description": "Allows to indicate the security profile of the person for security management"
                 },
                 "costCenterId": {
                     "label": "Cost center identifier",
-                    "description": "The cost center allows you to distribute spaces dynamically for re-invoicing"
+                    "description": "The cost center allows spaces to be distributed dynamically for re-invoicing"
                 },
                 "costCenter": {
                     "label": "Cost center",
-                    "description": "The cost center allows you to distribute spaces dynamically for re-invoicing"
+                    "description": "The cost center allows spaces to be distributed dynamically for re-invoicing"
                 },
                 "personCompanyId": {
                     "label": "Id (service provider company)",
-                    "description": "The service provider company makes it possible to keep information about the company of a service provider to know, for example, the number of positions or the space occupied by the latter, or to know what types of equipment or type of spaces are available. he is in management"
+                    "description": "The service provider company allows you to manage service provider personnel by company to which they belong"
                 },
                 "personCompany": {
                     "label": "Service provider company",
-                    "description": "The service provider company makes it possible to keep information about the company of a service provider to know, for example, the number of positions or the space occupied by the latter, or to know what types of equipment or type of spaces are available. he is in management"
+                    "description": "The service provider company allows you to manage service provider personnel by company to which they belong"
                 },
                 "personGenderId": {
                     "label": "Id (gender of the person)",
-                    "description": null
+                    "description": "Allows you to count each gender, for example for managing toilets"
                 },
                 "personGender": {
                     "label": "Gender of the person",
-                    "description": null
+                    "description": "Allows you to count each gender, for example for managing toilets"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -5206,31 +5206,31 @@
                 },
                 "personToPersonSources": {
                     "label": "Relationships from this person",
-                    "description": "People's relationships from that person"
+                    "description": "Allows you to know the descending relationship between two people, for example the hierarchical relationship"
                 },
                 "personToPersonTargets": {
                     "label": "Relations with this person",
-                    "description": "People's relationships to that person"
+                    "description": "Allows you to know the ascending relationship between two people, for example the hierarchical relationship"
                 },
                 "roomAffectations": {
                     "label": "Space assignments",
-                    "description": null
+                    "description": "Allows you to assign a person to a single space"
                 },
                 "workplaceAffectations": {
                     "label": "Workstation assignments",
-                    "description": null
+                    "description": "Allows a fixed workstation to be assigned to a person"
                 },
                 "itemToPeople": {
                     "label": "Object-to-person associations",
-                    "description": null
+                    "description": "Allows you to associate an object with a person (ergonomic seat, locker)"
                 },
                 "personToBuildings": {
                     "label": "Building assignments",
-                    "description": null
+                    "description": "Allows you to assign a person to a building, without additional information. The assignment can be counted, or not."
                 },
                 "dimensionToPeople": {
                     "label": "Assignments to Assignment Layers",
-                    "description": null
+                    "description": "Allows you to assign a person to a district, territory or village"
                 },
                 "personWorkingLocations": {
                     "label": "People's work locations",
@@ -5238,15 +5238,15 @@
                 },
                 "personToWorkplaceBookings": {
                     "label": "Reservations at people's workstations",
-                    "description": "People's workstation reservations are recorded and available with the start and end dates of the reservation"
+                    "description": "People's workstation reservations are recorded and available with reservation start and end dates"
                 },
                 "personToRoomBookings": {
                     "label": "Reservations for the people area",
-                    "description": "Reservations for people's spaces are recorded and available with the start and end dates of the reservation"
+                    "description": "Reservations for people's spaces are recorded and available with the reservation start and end dates"
                 },
                 "personToDimensionBookings": {
                     "label": "Reservations on the people assignment layer",
-                    "description": "Reservations on people assignment layers are recorded and available with the start and end dates of the reservation"
+                    "description": "Reservations to people assignment layers are recorded and available with reservation start and end dates"
                 },
                 "companyId": {
                     "label": "Company ID",
@@ -5341,20 +5341,20 @@
                     "description": null
                 },
                 "personSourceId": {
-                    "label": "Id (nobody)",
-                    "description": null
+                    "label": "Id (person)",
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "personSource": {
                     "label": "Source person",
-                    "description": null
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "personTargetId": {
-                    "label": "Id (nobody)",
-                    "description": null
+                    "label": "Id (person)",
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "personTarget": {
                     "label": "Destination person",
-                    "description": null
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -5400,11 +5400,11 @@
                 },
                 "personId": {
                     "label": "Surfy ID",
-                    "description": null
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "person": {
-                    "label": "Nobody",
-                    "description": null
+                    "label": "Person",
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "roomId": {
                     "label": "Space ID",
@@ -5442,11 +5442,11 @@
             "workplaceType": {
                 "id": {
                     "label": "Workstation typology identifier",
-                    "description": ""
+                    "description": "???"
                 },
                 "name": {
                     "label": "Workstation type name",
-                    "description": ""
+                    "description": "???"
                 },
                 "zIndex": {
                     "label": "Z Index",
@@ -5548,7 +5548,7 @@
                 },
                 "workplaceTypeId": {
                     "label": "Workstation typology identifier",
-                    "description": ""
+                    "description": "???"
                 },
                 "workplaceType": {
                     "label": "Type of workstation",
@@ -5590,7 +5590,7 @@
             "workplace": {
                 "id": {
                     "label": "Workstation identifier",
-                    "description": ""
+                    "description": "???"
                 },
                 "position": {
                     "label": "Position",
@@ -5650,7 +5650,7 @@
                 },
                 "workplaceTypeId": {
                     "label": "Workstation typology identifier",
-                    "description": ""
+                    "description": "???"
                 },
                 "workplaceType": {
                     "label": "Type of workstation",
@@ -5674,11 +5674,11 @@
                 },
                 "costCenterId": {
                     "label": "Cost center identifier",
-                    "description": "The cost center allows you to distribute spaces dynamically for re-invoicing"
+                    "description": "The cost center allows spaces to be distributed dynamically for re-invoicing"
                 },
                 "costCenter": {
                     "label": "Cost center",
-                    "description": "The cost center allows you to distribute spaces dynamically for re-invoicing"
+                    "description": "The cost center allows spaces to be distributed dynamically for re-invoicing"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -5702,11 +5702,11 @@
                 },
                 "workplaceAffectations": {
                     "label": "Workstation assignments",
-                    "description": null
+                    "description": "Allows a fixed workstation to be assigned to a person"
                 },
                 "personToWorkplaceBookings": {
                     "label": "Reservations at people's workstations",
-                    "description": "People's workstation reservations are recorded and available with the start and end dates of the reservation"
+                    "description": "People's workstation reservations are recorded and available with reservation start and end dates"
                 },
                 "companyId": {
                     "label": "Company ID",
@@ -5780,7 +5780,7 @@
                 },
                 "workplaceId": {
                     "label": "Workstation identifier",
-                    "description": ""
+                    "description": "???"
                 },
                 "workplace": {
                     "label": "Workplace",
@@ -5804,7 +5804,7 @@
                 },
                 "itemToPeople": {
                     "label": "Object-to-person associations",
-                    "description": null
+                    "description": "Allows you to associate an object with a person (ergonomic seat, locker)"
                 },
                 "personCompanyToItems": {
                     "label": "Interventions on objects",
@@ -5878,15 +5878,15 @@
                 },
                 "personId": {
                     "label": "Surfy ID",
-                    "description": null
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "person": {
-                    "label": "Nobody",
-                    "description": null
+                    "label": "Person",
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "workplaceId": {
                     "label": "Workstation identifier",
-                    "description": ""
+                    "description": "???"
                 },
                 "workplace": {
                     "label": "Workplace",
@@ -5955,7 +5955,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -6093,7 +6093,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -6231,7 +6231,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -6369,7 +6369,7 @@
                     "description": "Allows you to know the occupancy rate of workstations, it is the number of people assigned divided by the number of workstations"
                 },
                 "expansionRatio": {
-                    "label": "Bulking rate",
+                    "label": "Expansion rate",
                     "description": "Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations"
                 },
                 "freeWorkplacesCount": {
@@ -6488,11 +6488,11 @@
                 },
                 "personId": {
                     "label": "Surfy ID",
-                    "description": null
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "person": {
-                    "label": "Nobody",
-                    "description": null
+                    "label": "Person",
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "itemId": {
                     "label": "Identifier of the object",
@@ -6550,11 +6550,11 @@
                 },
                 "personId": {
                     "label": "Surfy ID",
-                    "description": null
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "person": {
-                    "label": "Nobody",
-                    "description": null
+                    "label": "Person",
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "buildingId": {
                     "label": "Building identifier",
@@ -6616,11 +6616,11 @@
                 },
                 "personId": {
                     "label": "Surfy ID",
-                    "description": null
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "person": {
-                    "label": "Nobody",
-                    "description": null
+                    "label": "Person",
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -6762,11 +6762,11 @@
                 },
                 "personId": {
                     "label": "Surfy ID",
-                    "description": null
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "person": {
-                    "label": "Nobody",
-                    "description": null
+                    "label": "Person",
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "workingLocationId": {
                     "label": "Id ( Working Location)",
@@ -6794,15 +6794,15 @@
                 },
                 "personToWorkplaceBookings": {
                     "label": "Reservations at people's workstations",
-                    "description": "People's workstation reservations are recorded and available with the start and end dates of the reservation"
+                    "description": "People's workstation reservations are recorded and available with reservation start and end dates"
                 },
                 "personToRoomBookings": {
                     "label": "Reservations for the people area",
-                    "description": "Reservations for people's spaces are recorded and available with the start and end dates of the reservation"
+                    "description": "Reservations for people's spaces are recorded and available with the reservation start and end dates"
                 },
                 "personToDimensionBookings": {
                     "label": "Reservations on the people assignment layer",
-                    "description": "Reservations on people assignment layers are recorded and available with the start and end dates of the reservation"
+                    "description": "Reservations to people assignment layers are recorded and available with reservation start and end dates"
                 },
                 "companyId": {
                     "label": "Company ID",
@@ -6840,15 +6840,15 @@
                 },
                 "personId": {
                     "label": "Surfy ID",
-                    "description": null
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "person": {
-                    "label": "Nobody",
-                    "description": null
+                    "label": "Person",
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "workplaceId": {
                     "label": "Workstation identifier",
-                    "description": ""
+                    "description": "???"
                 },
                 "workplace": {
                     "label": "Workplace",
@@ -6914,11 +6914,11 @@
                 },
                 "personId": {
                     "label": "Surfy ID",
-                    "description": null
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "person": {
-                    "label": "Nobody",
-                    "description": null
+                    "label": "Person",
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "roomId": {
                     "label": "Space ID",
@@ -6988,11 +6988,11 @@
                 },
                 "personId": {
                     "label": "Surfy ID",
-                    "description": null
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "person": {
-                    "label": "Nobody",
-                    "description": null
+                    "label": "Person",
+                    "description": "These are the people entered into Surfy's database"
                 },
                 "dimensionId": {
                     "label": "Analysis layer identifier",
@@ -7084,11 +7084,11 @@
                 },
                 "personCompanyId": {
                     "label": "Id (service provider company)",
-                    "description": "The service provider company makes it possible to keep information about the company of a service provider to know, for example, the number of positions or the space occupied by the latter, or to know what types of equipment or type of spaces are available. he is in management"
+                    "description": "The service provider company allows you to manage service provider personnel by company to which they belong"
                 },
                 "personCompany": {
                     "label": "Service provider company",
-                    "description": "The service provider company makes it possible to keep information about the company of a service provider to know, for example, the number of positions or the space occupied by the latter, or to know what types of equipment or type of spaces are available. he is in management"
+                    "description": "The service provider company allows you to manage service provider personnel by company to which they belong"
                 },
                 "itemTypeId": {
                     "label": "Identifier of the type of the object",
@@ -7150,11 +7150,11 @@
                 },
                 "personCompanyId": {
                     "label": "Id (service provider company)",
-                    "description": "The service provider company makes it possible to keep information about the company of a service provider to know, for example, the number of positions or the space occupied by the latter, or to know what types of equipment or type of spaces are available. he is in management"
+                    "description": "The service provider company allows you to manage service provider personnel by company to which they belong"
                 },
                 "personCompany": {
                     "label": "Service provider company",
-                    "description": "The service provider company makes it possible to keep information about the company of a service provider to know, for example, the number of positions or the space occupied by the latter, or to know what types of equipment or type of spaces are available. he is in management"
+                    "description": "The service provider company allows you to manage service provider personnel by company to which they belong"
                 },
                 "roomTypeId": {
                     "label": "Space typology identifier",
@@ -7224,11 +7224,11 @@
                 },
                 "personCompanyId": {
                     "label": "Id (service provider company)",
-                    "description": "The service provider company makes it possible to keep information about the company of a service provider to know, for example, the number of positions or the space occupied by the latter, or to know what types of equipment or type of spaces are available. he is in management"
+                    "description": "The service provider company allows you to manage service provider personnel by company to which they belong"
                 },
                 "personCompany": {
                     "label": "Service provider company",
-                    "description": "The service provider company makes it possible to keep information about the company of a service provider to know, for example, the number of positions or the space occupied by the latter, or to know what types of equipment or type of spaces are available. he is in management"
+                    "description": "The service provider company allows you to manage service provider personnel by company to which they belong"
                 },
                 "itemId": {
                     "label": "Identifier of the object",
@@ -7584,11 +7584,11 @@
                 },
                 "userCompanyId": {
                     "label": "Company user ID",
-                    "description": null
+                    "description": "Enterprise users have access to their company's Surfy platform"
                 },
                 "userCompany": {
                     "label": "Business user",
-                    "description": null
+                    "description": "Enterprise users have access to their company's Surfy platform"
                 },
                 "jupRoleId": {
                     "label": "Id (Role)",
@@ -7864,11 +7864,11 @@
                 },
                 "userCompanyId": {
                     "label": "Company user ID",
-                    "description": null
+                    "description": "Enterprise users have access to their company's Surfy platform"
                 },
                 "userCompany": {
                     "label": "Business user",
-                    "description": null
+                    "description": "Enterprise users have access to their company's Surfy platform"
                 },
                 "contentRoleId": {
                     "label": "Id (Content role)",

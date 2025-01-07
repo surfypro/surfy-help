@@ -1,7 +1,7 @@
 # Affection to the building
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Allows you to assign a person to a building, without additional information. The assignment can be counted, or not.
 
 <OH code="personToBuilding"/>
 
@@ -25,9 +25,9 @@ The building is used to group the floors
 *Technical name:* ```building```
 <PH code="personToBuilding:building"/>
 
-### Nobody {#person}
+### Person {#person}
 
-
+These are the people entered into Surfy's database
 
 *Technical name:* ```person```
 <PH code="personToBuilding:person"/>

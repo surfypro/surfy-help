@@ -1,7 +1,7 @@
 # Affection au bâtiment
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Permet d'attribuer une personne à un bâtiment, sans information supplémentaire. L'affectation peut être comptabilisée, ou non.
 
 <OH code="personToBuilding"/>
 
@@ -27,7 +27,7 @@ Le bâtiment est utilisé pour regrouper les étages
 
 ### Personne {#person}
 
-
+Ce sont les personnes entrées dans la base de données de Surfy
 
 *Nom technique:* ```person```
 <PH code="personToBuilding:person"/>

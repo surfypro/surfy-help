@@ -1,11 +1,11 @@
 import React from "react";
-import { Box, Fade, Paper, Tooltip, TooltipProps, tooltipClasses } from '@mui/material';
+import Box from '@mui/material/Box';
+import Fade from '@mui/material/Fade';
+import Paper from '@mui/material/Paper';
 import entitiesPath from '../../metaModel/entities.paths.json';
 import { useTranslations } from "../Translations/translations";
 import { HelpTooltipStyled } from "./HelpTooltipStyled";
 import { toDocumentationLinkString } from "@site/src/utils/documentionStyle";
-
-
 
 export function ObjectType(props: { code: string }) {
     const entitiesTranslations = useTranslations();
@@ -18,7 +18,6 @@ export function ObjectType(props: { code: string }) {
     }
 
     const translations: { label: string, description: string | null } = entitiesTranslations.objectTypeTranslations[objectTypeName];
-    // const objectTypeTranslation = entitiesTranslations.objectTypeTranslations[objectTypeName];
 
     const href = `${directoryPath}/${toDocumentationLinkString(objectTypeName)}`;
 

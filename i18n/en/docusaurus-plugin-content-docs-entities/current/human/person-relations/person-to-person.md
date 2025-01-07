@@ -14,14 +14,14 @@
 
 ### Destination person {#person-target}
 
-
+These are the people entered into Surfy's database
 
 *Technical name:* ```personTarget```
 <PH code="personToPerson:personTarget"/>
 
 ### Source person {#person-source}
 
-
+These are the people entered into Surfy's database
 
 *Technical name:* ```personSource```
 <PH code="personToPerson:personSource"/>

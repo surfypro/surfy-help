@@ -1,7 +1,7 @@
 # Personne
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Ce sont les personnes entrées dans la base de données de Surfy
 
 <OH code="person"/>
 
@@ -10,7 +10,7 @@
 
 ### Badge RIE {#badge-restaurant}
 
-La référence du badge du RIE ou du restaurant
+La référence du badge du RIE ou du restaurant d'entreprise
 
 *Nom technique:* ```badgeRestaurant```
 <PH code="person:badgeRestaurant"/>
@@ -24,14 +24,14 @@ Commentaire sur la personne permettant de conserver des informations supplément
 
 ### Date d'entrée {#start-date}
 
-La date d'entrée de la personne
+La date d'entrée de la personne dans l'entreprise
 
 *Nom technique:* ```startDate```
 <PH code="person:startDate"/>
 
 ### Date de sortie {#end-date}
 
-La date de sortie de la personne
+La date de sortie de la personne de l'entreprise
 
 *Nom technique:* ```endDate```
 <PH code="person:endDate"/>
@@ -52,7 +52,7 @@ Le numéro d'immatriculation de la personne
 
 ### Matricule {#code}
 
-Matricule RH de la personne
+Le matricule RH de la personne
 
 *Nom technique:* ```code```
 <PH code="person:code"/>
@@ -108,14 +108,14 @@ Le prénom de la personne
 
 ### Référence écran {#monitor-reference}
 
-La référence de l'écran peut êre utilisée pour enregistrer la référence de l'écran associé à cette personne
+La référence de l'écran informatique associé à cette personne
 
 *Nom technique:* ```monitorReference```
 <PH code="person:monitorReference"/>
 
 ### Référence ordinateur {#computer-reference}
 
-La référence de l'ordinateur peut êre utilisée pour enregistrer la référence de l'ordinateur associé à cette personne
+La référence de l'ordinateur associé à cette personne
 
 *Nom technique:* ```computerReference```
 <PH code="person:computerReference"/>
@@ -146,42 +146,42 @@ Le titre de la personne
 
 ### Centre de coût {#cost-center}
 
-Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation
+Le centre de coût permet de répartir les espaces dynamiquement pour la refacturation
 
 *Nom technique:* ```costCenter```
 <PH code="person:costCenter"/>
 
 ### Entreprise prestataire {#person-company}
 
-L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion
+L'entreprise prestataire permet de gérer le personnel prestataire par entreprise d'appartenance
 
 *Nom technique:* ```personCompany```
 <PH code="person:personCompany"/>
 
 ### Genre de la personne {#person-gender}
 
-
+Permet de dénombrer chaque genre, par exemple pour la gestion des sanitaires
 
 *Nom technique:* ```personGender```
 <PH code="person:personGender"/>
 
 ### L'organisation de la personne {#organization}
 
-L'organisation de rattachement de la personne
+Le Service de rattachement de la personne
 
 *Nom technique:* ```organization```
 <PH code="person:organization"/>
 
 ### Profil de sécurité {#person-security-profile}
 
-Permet de déterminer le profil de sécurité des personnes pour la gestion d'incidents
+Permet d'indiquer le profil de sécurité de la personne pour la gestion de la sécurité
 
 *Nom technique:* ```personSecurityProfile```
 <PH code="person:personSecurityProfile"/>
 
 ### Statut {#person-state}
 
-Permet de détérminer le type de contrat de la personne
+Permet d'indiquer le type de contrat de la personne vis à vis de l'entreprise
 
 *Nom technique:* ```personState```
 <PH code="person:personState"/>
@@ -191,35 +191,35 @@ Permet de détérminer le type de contrat de la personne
 
 ### Affectations au bâtiment {#person-to-buildings}
 
-
+Permet d'attribuer une personne à un bâtiment, sans information supplémentaire. L'affectation peut être comptabilisée, ou non.
 
 *Nom technique:* ```personToBuildings```
 <PH code="person:personToBuildings"/>
 
 ### Affectations au poste de travail {#workplace-affectations}
 
-
+Permet d'attribuer un poste de travail fixe à une personne
 
 *Nom technique:* ```workplaceAffectations```
 <PH code="person:workplaceAffectations"/>
 
 ### Affectations aux calques d'affectation {#dimension-to-people}
 
-
+Permet d'affecter une personne à un quartier, territoire ou village
 
 *Nom technique:* ```dimensionToPeople```
 <PH code="person:dimensionToPeople"/>
 
 ### Affectations d'espace {#room-affectations}
 
-
+Permet d'affecter une personne à un espace simple
 
 *Nom technique:* ```roomAffectations```
 <PH code="person:roomAffectations"/>
 
 ### Associations d'objet à personne {#item-to-people}
 
-
+Permet d'associer un objet à une personne (siège ergonomique, casier)
 
 *Nom technique:* ```itemToPeople```
 <PH code="person:itemToPeople"/>
@@ -233,42 +233,42 @@ Un emplacement de travail des personnes définie le lieu de travail des personne
 
 ### Relations depuis cette personne {#person-to-person-sources}
 
-Les relations des personnes depuis cette personne
+Permet de connaitre la relation descendante entre deux personnes, par exemple la relation hiérarchique
 
 *Nom technique:* ```personToPersonSources```
 <PH code="person:personToPersonSources"/>
 
 ### Relations vers cette personne {#person-to-person-targets}
 
-Les relations des personnes vers cette personne
+Permet de connaitre la relation ascendante entre deux personnes, par exemple la relation hiérarchique
 
 *Nom technique:* ```personToPersonTargets```
 <PH code="person:personToPersonTargets"/>
 
 ### Réservations à l'espace des personnes {#person-to-room-bookings}
 
-Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+Les réservations aux espaces des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation
 
 *Nom technique:* ```personToRoomBookings```
 <PH code="person:personToRoomBookings"/>
 
 ### Réservations au calque d'affectation des personnes {#person-to-dimension-bookings}
 
-Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+Les réservations aux calques d'affectation des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation
 
 *Nom technique:* ```personToDimensionBookings```
 <PH code="person:personToDimensionBookings"/>
 
 ### Réservations au poste de travail des personnes {#person-to-workplace-bookings}
 
-Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+Les réservations des postes de travail des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation
 
 *Nom technique:* ```personToWorkplaceBookings```
 <PH code="person:personToWorkplaceBookings"/>
 
 ### Utilisateurs de l'entreprise {#user-companies}
 
-
+Les utilisateurs de l'entreprise ont accès à la plateforme Surfy de leur entreprise
 
 *Nom technique:* ```userCompanies```
 <PH code="person:userCompanies"/>

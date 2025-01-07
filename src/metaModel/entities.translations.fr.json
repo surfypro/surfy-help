@@ -31,15 +31,15 @@
             },
             "userCompany": {
                 "label": "Utilisateur de l'entreprise",
-                "description": null
+                "description": "Les utilisateurs de l'entreprise ont accès à la plateforme Surfy de leur entreprise"
             },
             "personGender": {
                 "label": "Genre de la personne",
-                "description": null
+                "description": "Permet de dénombrer chaque genre, par exemple pour la gestion des sanitaires"
             },
             "personCompany": {
                 "label": "Entreprise prestataire",
-                "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
+                "description": "L'entreprise prestataire permet de gérer le personnel prestataire par entreprise d'appartenance"
             },
             "jupUiLayout": {
                 "label": "Vision du plan",
@@ -115,7 +115,7 @@
             },
             "costCenter": {
                 "label": "Centre de coût",
-                "description": "Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation"
+                "description": "Le centre de coût permet de répartir les espaces dynamiquement pour la refacturation"
             },
             "costCenterBuilding": {
                 "label": "Centre de coût des bâtiments",
@@ -179,15 +179,15 @@
             },
             "personState": {
                 "label": "Statut des personnes",
-                "description": null
+                "description": "Permet de définir tous les types de contrat des personnes vis à vis de l'entreprise"
             },
             "personSecurityProfile": {
                 "label": "Profil de sécurité des personnes",
-                "description": null
+                "description": "Permet de définir les différents profils sécurité associables à des personnes"
             },
             "person": {
                 "label": "Personne",
-                "description": null
+                "description": "Ce sont les personnes entrées dans la base de données de Surfy"
             },
             "personToPersonType": {
                 "label": "Type de relation entre personnes",
@@ -199,7 +199,7 @@
             },
             "roomAffectation": {
                 "label": "Affectation d'espace",
-                "description": null
+                "description": "Permet d'affecter une personne à un espace simple"
             },
             "workplaceType": {
                 "label": "Type de poste de travail",
@@ -219,7 +219,7 @@
             },
             "workplaceAffectation": {
                 "label": "Affectation au poste de travail",
-                "description": null
+                "description": "Permet d'attribuer un poste de travail fixe à une personne"
             },
             "organizationFloor": {
                 "label": "Organisation des étages",
@@ -239,15 +239,15 @@
             },
             "itemToPerson": {
                 "label": "Association d'objet à personne",
-                "description": null
+                "description": "Permet d'associer un objet à une personne (siège ergonomique, casier)"
             },
             "personToBuilding": {
                 "label": "Affection au bâtiment",
-                "description": null
+                "description": "Permet d'attribuer une personne à un bâtiment, sans information supplémentaire. L'affectation peut être comptabilisée, ou non."
             },
             "dimensionToPerson": {
                 "label": "Affectation au calque d'affectation",
-                "description": null
+                "description": "Permet d'affecter une personne à un quartier, territoire ou village"
             },
             "dimensionTypeToBuilding": {
                 "label": "Calque d'affectation du bâtiment",
@@ -263,15 +263,15 @@
             },
             "personToWorkplaceBooking": {
                 "label": "Réservation au poste de travail des personnes",
-                "description": "Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
+                "description": "Les réservations des postes de travail des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation"
             },
             "personToRoomBooking": {
                 "label": "Réservation à l'espace des personnes",
-                "description": "Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
+                "description": "Les réservations aux espaces des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation"
             },
             "personToDimensionBooking": {
                 "label": "Réservation au calque d'affectation des personnes",
-                "description": "Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
+                "description": "Les réservations aux calques d'affectation des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation"
             },
             "personCompanyMission": {
                 "label": "Mission du prestataire",
@@ -290,8 +290,8 @@
                 "description": "Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur"
             },
             "legend": {
-                "label": " Legend",
-                "description": null
+                "label": "Légende",
+                "description": "La légende permet de configurer les propriété visible quand le plan est sauvegardé en image"
             },
             "jupObjectType": {
                 "label": "Type d'entité",
@@ -500,7 +500,7 @@
                 },
                 "userCompanies": {
                     "label": "Utilisateurs de l'entreprise",
-                    "description": null
+                    "description": "Les utilisateurs de l'entreprise ont accès à la plateforme Surfy de leur entreprise"
                 }
             },
             "companyType": {
@@ -588,7 +588,7 @@
                 },
                 "userCompanies": {
                     "label": "Utilisateurs de l'entreprise",
-                    "description": null
+                    "description": "Les utilisateurs de l'entreprise ont accès à la plateforme Surfy de leur entreprise"
                 },
                 "buildingTypes": {
                     "label": "Types de bâtiments",
@@ -880,11 +880,11 @@
                 },
                 "personId": {
                     "label": "Identifiant Surfy",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "person": {
                     "label": "Personne",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -896,7 +896,7 @@
                 },
                 "userCompanyCreatedBies": {
                     "label": "Utilisateurs de l'entreprise",
-                    "description": null
+                    "description": "Les utilisateurs de l'entreprise ont accès à la plateforme Surfy de leur entreprise"
                 },
                 "userCompanyUpdatedById": {
                     "label": "Identifiant de l'utilisateur qui a modifié",
@@ -908,15 +908,15 @@
                 },
                 "userCompanyUpdatedBies": {
                     "label": "Utilisateurs de l'entreprise",
-                    "description": null
+                    "description": "Les utilisateurs de l'entreprise ont accès à la plateforme Surfy de leur entreprise"
                 },
                 "personCompanyCreatedBies": {
                     "label": "Entreprises prestataires",
-                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
+                    "description": "L'entreprise prestataire permet de gérer le personnel prestataire par entreprise d'appartenance"
                 },
                 "personCompanyUpdatedBies": {
                     "label": "Entreprises prestataires",
-                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
+                    "description": "L'entreprise prestataire permet de gérer le personnel prestataire par entreprise d'appartenance"
                 },
                 "buildingTypeCreatedBies": {
                     "label": "Types de bâtiments",
@@ -1044,11 +1044,11 @@
                 },
                 "costCenterCreatedBies": {
                     "label": "Centres de coût",
-                    "description": "Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation"
+                    "description": "Le centre de coût permet de répartir les espaces dynamiquement pour la refacturation"
                 },
                 "costCenterUpdatedBies": {
                     "label": "Centres de coût",
-                    "description": "Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation"
+                    "description": "Le centre de coût permet de répartir les espaces dynamiquement pour la refacturation"
                 },
                 "costCenterBuildingCreatedBies": {
                     "label": "Centres de coût des bâtiments",
@@ -1164,27 +1164,27 @@
                 },
                 "personStateCreatedBies": {
                     "label": "Statut des personnes",
-                    "description": null
+                    "description": "Permet de définir tous les types de contrat des personnes vis à vis de l'entreprise"
                 },
                 "personStateUpdatedBies": {
                     "label": "Statut des personnes",
-                    "description": null
+                    "description": "Permet de définir tous les types de contrat des personnes vis à vis de l'entreprise"
                 },
                 "personSecurityProfileCreatedBies": {
                     "label": "Profils de sécurité des personnes",
-                    "description": null
+                    "description": "Permet de définir les différents profils sécurité associables à des personnes"
                 },
                 "personSecurityProfileUpdatedBies": {
                     "label": "Profils de sécurité des personnes",
-                    "description": null
+                    "description": "Permet de définir les différents profils sécurité associables à des personnes"
                 },
                 "personCreatedBies": {
                     "label": "Personnes",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "personUpdatedBies": {
                     "label": "Personnes",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "personToPersonTypeCreatedBies": {
                     "label": "Types de relation entre personnes",
@@ -1204,11 +1204,11 @@
                 },
                 "roomAffectationCreatedBies": {
                     "label": "Affectations d'espace",
-                    "description": null
+                    "description": "Permet d'affecter une personne à un espace simple"
                 },
                 "roomAffectationUpdatedBies": {
                     "label": "Affectations d'espace",
-                    "description": null
+                    "description": "Permet d'affecter une personne à un espace simple"
                 },
                 "workplaceTypeCreatedBies": {
                     "label": "Types de poste de travail",
@@ -1244,11 +1244,11 @@
                 },
                 "workplaceAffectationCreatedBies": {
                     "label": "Affectations au poste de travail",
-                    "description": null
+                    "description": "Permet d'attribuer un poste de travail fixe à une personne"
                 },
                 "workplaceAffectationUpdatedBies": {
                     "label": "Affectations au poste de travail",
-                    "description": null
+                    "description": "Permet d'attribuer un poste de travail fixe à une personne"
                 },
                 "organizationFloorCreatedBies": {
                     "label": "Organisations des étages",
@@ -1284,27 +1284,27 @@
                 },
                 "itemToPersonCreatedBies": {
                     "label": "Associations d'objet à personne",
-                    "description": null
+                    "description": "Permet d'associer un objet à une personne (siège ergonomique, casier)"
                 },
                 "itemToPersonUpdatedBies": {
                     "label": "Associations d'objet à personne",
-                    "description": null
+                    "description": "Permet d'associer un objet à une personne (siège ergonomique, casier)"
                 },
                 "personToBuildingCreatedBies": {
                     "label": "Affectations au bâtiment",
-                    "description": null
+                    "description": "Permet d'attribuer une personne à un bâtiment, sans information supplémentaire. L'affectation peut être comptabilisée, ou non."
                 },
                 "personToBuildingUpdatedBies": {
                     "label": "Affectations au bâtiment",
-                    "description": null
+                    "description": "Permet d'attribuer une personne à un bâtiment, sans information supplémentaire. L'affectation peut être comptabilisée, ou non."
                 },
                 "dimensionToPersonCreatedBies": {
                     "label": "Affectations aux calques d'affectation",
-                    "description": null
+                    "description": "Permet d'affecter une personne à un quartier, territoire ou village"
                 },
                 "dimensionToPersonUpdatedBies": {
                     "label": "Affectations aux calques d'affectation",
-                    "description": null
+                    "description": "Permet d'affecter une personne à un quartier, territoire ou village"
                 },
                 "dimensionTypeToBuildingCreatedBies": {
                     "label": "Calques d'affectation du bâtiment",
@@ -1324,27 +1324,27 @@
                 },
                 "personToWorkplaceBookingCreatedBies": {
                     "label": "Réservations au poste de travail des personnes",
-                    "description": "Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
+                    "description": "Les réservations des postes de travail des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation"
                 },
                 "personToWorkplaceBookingUpdatedBies": {
                     "label": "Réservations au poste de travail des personnes",
-                    "description": "Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
+                    "description": "Les réservations des postes de travail des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation"
                 },
                 "personToRoomBookingCreatedBies": {
                     "label": "Réservations à l'espace des personnes",
-                    "description": "Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
+                    "description": "Les réservations aux espaces des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation"
                 },
                 "personToRoomBookingUpdatedBies": {
                     "label": "Réservations à l'espace des personnes",
-                    "description": "Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
+                    "description": "Les réservations aux espaces des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation"
                 },
                 "personToDimensionBookingCreatedBies": {
                     "label": "Réservations au calque d'affectation des personnes",
-                    "description": "Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
+                    "description": "Les réservations aux calques d'affectation des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation"
                 },
                 "personToDimensionBookingUpdatedBies": {
                     "label": "Réservations au calque d'affectation des personnes",
-                    "description": "Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
+                    "description": "Les réservations aux calques d'affectation des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation"
                 },
                 "personCompanyToItemTypeCreatedBies": {
                     "label": "Types d'objets des prestataires",
@@ -1371,12 +1371,12 @@
                     "description": "Les interventions des prestataires sur des objets permettent de définir par exemple la date d'une visite sur un extincteur"
                 },
                 "legendCreatedBies": {
-                    "label": " Legends",
-                    "description": null
+                    "label": "Légende",
+                    "description": "La légende permet de configurer les propriété visible quand le plan est sauvegardé en image"
                 },
                 "legendUpdatedBies": {
-                    "label": " Legends",
-                    "description": null
+                    "label": "Légende",
+                    "description": "La légende permet de configurer les propriété visible quand le plan est sauvegardé en image"
                 },
                 "contentRoleCreatedBies": {
                     "label": "Rôles de contenu",
@@ -1586,7 +1586,7 @@
                 },
                 "people": {
                     "label": "Personnes",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 }
             },
             "personCompany": {
@@ -1640,7 +1640,7 @@
                 },
                 "people": {
                     "label": "Personnes",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "personCompanyToItemTypes": {
                     "label": "Types d'objets des prestataires",
@@ -1814,7 +1814,7 @@
                 },
                 "people": {
                     "label": "Personnes",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "workplaces": {
                     "label": "Postes de travail",
@@ -2324,7 +2324,7 @@
                 },
                 "userCompanyOwnerId": {
                     "label": "Id (utilisateur de l'entreprise)",
-                    "description": null
+                    "description": "Les utilisateurs de l'entreprise ont accès à la plateforme Surfy de leur entreprise"
                 },
                 "userCompanyOwner": {
                     "label": "Utilisateur propriétaire du bâitment",
@@ -2404,7 +2404,7 @@
                 },
                 "personToBuildings": {
                     "label": "Affectations au bâtiment",
-                    "description": null
+                    "description": "Permet d'attribuer une personne à un bâtiment, sans information supplémentaire. L'affectation peut être comptabilisée, ou non."
                 },
                 "dimensionTypeToBuildings": {
                     "label": "Calques d'affectation du bâtiment",
@@ -3446,7 +3446,7 @@
                 },
                 "people": {
                     "label": "Personnes",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "workplaces": {
                     "label": "Postes de travail",
@@ -3560,11 +3560,11 @@
                 },
                 "costCenterId": {
                     "label": "Identifiant du centre de coût",
-                    "description": "Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation"
+                    "description": "Le centre de coût permet de répartir les espaces dynamiquement pour la refacturation"
                 },
                 "costCenter": {
                     "label": "Centre de coût",
-                    "description": "Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation"
+                    "description": "Le centre de coût permet de répartir les espaces dynamiquement pour la refacturation"
                 },
                 "buildingId": {
                     "label": "Identifiant du bâtiment",
@@ -3698,11 +3698,11 @@
                 },
                 "costCenterId": {
                     "label": "Identifiant du centre de coût",
-                    "description": "Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation"
+                    "description": "Le centre de coût permet de répartir les espaces dynamiquement pour la refacturation"
                 },
                 "costCenter": {
                     "label": "Centre de coût",
-                    "description": "Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation"
+                    "description": "Le centre de coût permet de répartir les espaces dynamiquement pour la refacturation"
                 },
                 "floorId": {
                     "label": "Identifiant de l'étage",
@@ -3908,7 +3908,7 @@
                 },
                 "costCenterId": {
                     "label": "Identifiant du centre de coût",
-                    "description": "Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation"
+                    "description": "Le centre de coût permet de répartir les espaces dynamiquement pour la refacturation"
                 },
                 "costCenter": {
                     "label": "Centre de coût",
@@ -3956,7 +3956,7 @@
                 },
                 "roomAffectations": {
                     "label": "Affectations d'espace",
-                    "description": null
+                    "description": "Permet d'affecter une personne à un espace simple"
                 },
                 "workplaces": {
                     "label": "Postes de travail",
@@ -3968,7 +3968,7 @@
                 },
                 "personToRoomBookings": {
                     "label": "Réservations à l'espace des personnes",
-                    "description": "Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
+                    "description": "Les réservations aux espaces des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation"
                 },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
@@ -4438,11 +4438,11 @@
                 },
                 "dimensionToPeople": {
                     "label": "Affectations aux calques d'affectation",
-                    "description": null
+                    "description": "Permet d'affecter une personne à un quartier, territoire ou village"
                 },
                 "personToDimensionBookings": {
                     "label": "Réservations au calque d'affectation des personnes",
-                    "description": "Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
+                    "description": "Les réservations aux calques d'affectation des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation"
                 },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
@@ -4974,7 +4974,7 @@
                 },
                 "people": {
                     "label": "Personnes",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
@@ -4992,15 +4992,15 @@
                 },
                 "name": {
                     "label": "Nom du profil de sécurité",
-                    "description": "Le nom du profil de sécurité des personnes permet de l'identifier facilement"
+                    "description": "Permet de définir les différents profils sécurité associables à des personnes"
                 },
                 "color": {
-                    "label": "Color",
-                    "description": null
+                    "label": "Couleur du profil de sécurité",
+                    "description": "Permet de colorier le poste de travail d'affectation et l'icône sécurité de la personne en fonction de son profil sécurité"
                 },
                 "icon": {
-                    "label": "Icon",
-                    "description": null
+                    "label": "Icône du profil de sécurité",
+                    "description": "Permet d'attribuer une icône à un profil sécurité afin de visualiser clairement les profils sécurité sur le plan ou dans les listes"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -5032,7 +5032,7 @@
                 },
                 "people": {
                     "label": "Personnes",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
@@ -5074,11 +5074,11 @@
                 },
                 "monitorReference": {
                     "label": "Référence écran",
-                    "description": "La référence de l'écran peut êre utilisée pour enregistrer la référence de l'écran associé à cette personne"
+                    "description": "La référence de l'écran informatique associé à cette personne"
                 },
                 "computerReference": {
                     "label": "Référence ordinateur",
-                    "description": "La référence de l'ordinateur peut êre utilisée pour enregistrer la référence de l'ordinateur associé à cette personne"
+                    "description": "La référence de l'ordinateur associé à cette personne"
                 },
                 "telephone": {
                     "label": "Téléphone fixe",
@@ -5090,7 +5090,7 @@
                 },
                 "code": {
                     "label": "Matricule",
-                    "description": "Matricule RH de la personne"
+                    "description": "Le matricule RH de la personne"
                 },
                 "badgeNumber": {
                     "label": "Numéro de badge",
@@ -5098,7 +5098,7 @@
                 },
                 "badgeRestaurant": {
                     "label": "Badge RIE",
-                    "description": "La référence du badge du RIE ou du restaurant"
+                    "description": "La référence du badge du RIE ou du restaurant d'entreprise"
                 },
                 "boxNumber": {
                     "label": "Numéro de casier",
@@ -5110,11 +5110,11 @@
                 },
                 "startDate": {
                     "label": "Date d'entrée",
-                    "description": "La date d'entrée de la personne"
+                    "description": "La date d'entrée de la personne dans l'entreprise"
                 },
                 "endDate": {
                     "label": "Date de sortie",
-                    "description": "La date de sortie de la personne"
+                    "description": "La date de sortie de la personne de l'entreprise"
                 },
                 "info": {
                     "label": "Commentaire",
@@ -5138,7 +5138,7 @@
                 },
                 "userCompanies": {
                     "label": "Utilisateurs de l'entreprise",
-                    "description": null
+                    "description": "Les utilisateurs de l'entreprise ont accès à la plateforme Surfy de leur entreprise"
                 },
                 "organizationId": {
                     "label": "Identifiant de l'organisation",
@@ -5146,47 +5146,47 @@
                 },
                 "organization": {
                     "label": "L'organisation de la personne",
-                    "description": "L'organisation de rattachement de la personne"
+                    "description": "Le Service de rattachement de la personne"
                 },
                 "personStateId": {
                     "label": "Identifiant du statut des personnes",
-                    "description": null
+                    "description": "Permet de définir tous les types de contrat des personnes vis à vis de l'entreprise"
                 },
                 "personState": {
                     "label": "Statut",
-                    "description": "Permet de détérminer le type de contrat de la personne"
+                    "description": "Permet d'indiquer le type de contrat de la personne vis à vis de l'entreprise"
                 },
                 "personSecurityProfileId": {
                     "label": "Identifiant du profil de sécurité des personnes",
-                    "description": null
+                    "description": "Permet de définir les différents profils sécurité associables à des personnes"
                 },
                 "personSecurityProfile": {
                     "label": "Profil de sécurité",
-                    "description": "Permet de déterminer le profil de sécurité des personnes pour la gestion d'incidents"
+                    "description": "Permet d'indiquer le profil de sécurité de la personne pour la gestion de la sécurité"
                 },
                 "costCenterId": {
                     "label": "Identifiant du centre de coût",
-                    "description": "Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation"
+                    "description": "Le centre de coût permet de répartir les espaces dynamiquement pour la refacturation"
                 },
                 "costCenter": {
                     "label": "Centre de coût",
-                    "description": "Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation"
+                    "description": "Le centre de coût permet de répartir les espaces dynamiquement pour la refacturation"
                 },
                 "personCompanyId": {
                     "label": "Id (entreprise prestataire)",
-                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
+                    "description": "L'entreprise prestataire permet de gérer le personnel prestataire par entreprise d'appartenance"
                 },
                 "personCompany": {
                     "label": "Entreprise prestataire",
-                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
+                    "description": "L'entreprise prestataire permet de gérer le personnel prestataire par entreprise d'appartenance"
                 },
                 "personGenderId": {
                     "label": "Id (Genre de la personne)",
-                    "description": null
+                    "description": "Permet de dénombrer chaque genre, par exemple pour la gestion des sanitaires"
                 },
                 "personGender": {
                     "label": "Genre de la personne",
-                    "description": null
+                    "description": "Permet de dénombrer chaque genre, par exemple pour la gestion des sanitaires"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -5206,31 +5206,31 @@
                 },
                 "personToPersonSources": {
                     "label": "Relations depuis cette personne",
-                    "description": "Les relations des personnes depuis cette personne"
+                    "description": "Permet de connaitre la relation descendante entre deux personnes, par exemple la relation hiérarchique"
                 },
                 "personToPersonTargets": {
                     "label": "Relations vers cette personne",
-                    "description": "Les relations des personnes vers cette personne"
+                    "description": "Permet de connaitre la relation ascendante entre deux personnes, par exemple la relation hiérarchique"
                 },
                 "roomAffectations": {
                     "label": "Affectations d'espace",
-                    "description": null
+                    "description": "Permet d'affecter une personne à un espace simple"
                 },
                 "workplaceAffectations": {
                     "label": "Affectations au poste de travail",
-                    "description": null
+                    "description": "Permet d'attribuer un poste de travail fixe à une personne"
                 },
                 "itemToPeople": {
                     "label": "Associations d'objet à personne",
-                    "description": null
+                    "description": "Permet d'associer un objet à une personne (siège ergonomique, casier)"
                 },
                 "personToBuildings": {
                     "label": "Affectations au bâtiment",
-                    "description": null
+                    "description": "Permet d'attribuer une personne à un bâtiment, sans information supplémentaire. L'affectation peut être comptabilisée, ou non."
                 },
                 "dimensionToPeople": {
                     "label": "Affectations aux calques d'affectation",
-                    "description": null
+                    "description": "Permet d'affecter une personne à un quartier, territoire ou village"
                 },
                 "personWorkingLocations": {
                     "label": "Emplacements de travail des personnes",
@@ -5238,15 +5238,15 @@
                 },
                 "personToWorkplaceBookings": {
                     "label": "Réservations au poste de travail des personnes",
-                    "description": "Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
+                    "description": "Les réservations des postes de travail des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation"
                 },
                 "personToRoomBookings": {
                     "label": "Réservations à l'espace des personnes",
-                    "description": "Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
+                    "description": "Les réservations aux espaces des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation"
                 },
                 "personToDimensionBookings": {
                     "label": "Réservations au calque d'affectation des personnes",
-                    "description": "Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
+                    "description": "Les réservations aux calques d'affectation des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation"
                 },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
@@ -5342,19 +5342,19 @@
                 },
                 "personSourceId": {
                     "label": "Id (personne)",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "personSource": {
                     "label": "Personne source",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "personTargetId": {
                     "label": "Id (personne)",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "personTarget": {
                     "label": "Personne destination",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -5400,11 +5400,11 @@
                 },
                 "personId": {
                     "label": "Identifiant Surfy",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "person": {
                     "label": "Personne",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "roomId": {
                     "label": "Identifiant de l'espace",
@@ -5674,11 +5674,11 @@
                 },
                 "costCenterId": {
                     "label": "Identifiant du centre de coût",
-                    "description": "Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation"
+                    "description": "Le centre de coût permet de répartir les espaces dynamiquement pour la refacturation"
                 },
                 "costCenter": {
                     "label": "Centre de coût",
-                    "description": "Le centre de coût permet de repartir les espaces dynamiquement pour la refacturation"
+                    "description": "Le centre de coût permet de répartir les espaces dynamiquement pour la refacturation"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -5702,11 +5702,11 @@
                 },
                 "workplaceAffectations": {
                     "label": "Affectations au poste de travail",
-                    "description": null
+                    "description": "Permet d'attribuer un poste de travail fixe à une personne"
                 },
                 "personToWorkplaceBookings": {
                     "label": "Réservations au poste de travail des personnes",
-                    "description": "Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
+                    "description": "Les réservations des postes de travail des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation"
                 },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
@@ -5804,7 +5804,7 @@
                 },
                 "itemToPeople": {
                     "label": "Associations d'objet à personne",
-                    "description": null
+                    "description": "Permet d'associer un objet à une personne (siège ergonomique, casier)"
                 },
                 "personCompanyToItems": {
                     "label": "Interventions sur des objet",
@@ -5878,11 +5878,11 @@
                 },
                 "personId": {
                     "label": "Identifiant Surfy",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "person": {
                     "label": "Personne",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "workplaceId": {
                     "label": "Identifiant du poste de travail",
@@ -6488,11 +6488,11 @@
                 },
                 "personId": {
                     "label": "Identifiant Surfy",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "person": {
                     "label": "Personne",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "itemId": {
                     "label": "Identifiant de l'objet",
@@ -6550,11 +6550,11 @@
                 },
                 "personId": {
                     "label": "Identifiant Surfy",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "person": {
                     "label": "Personne",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "buildingId": {
                     "label": "Identifiant du bâtiment",
@@ -6616,11 +6616,11 @@
                 },
                 "personId": {
                     "label": "Identifiant Surfy",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "person": {
                     "label": "Personne",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -6762,11 +6762,11 @@
                 },
                 "personId": {
                     "label": "Identifiant Surfy",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "person": {
                     "label": "Personne",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "workingLocationId": {
                     "label": "Id ( Working Location)",
@@ -6794,15 +6794,15 @@
                 },
                 "personToWorkplaceBookings": {
                     "label": "Réservations au poste de travail des personnes",
-                    "description": "Les réservations des postes de travail des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
+                    "description": "Les réservations des postes de travail des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation"
                 },
                 "personToRoomBookings": {
                     "label": "Réservations à l'espace des personnes",
-                    "description": "Les réservations aux espaces des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
+                    "description": "Les réservations aux espaces des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation"
                 },
                 "personToDimensionBookings": {
                     "label": "Réservations au calque d'affectation des personnes",
-                    "description": "Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation"
+                    "description": "Les réservations aux calques d'affectation des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation"
                 },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
@@ -6840,11 +6840,11 @@
                 },
                 "personId": {
                     "label": "Identifiant Surfy",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "person": {
                     "label": "Personne",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "workplaceId": {
                     "label": "Identifiant du poste de travail",
@@ -6914,11 +6914,11 @@
                 },
                 "personId": {
                     "label": "Identifiant Surfy",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "person": {
                     "label": "Personne",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "roomId": {
                     "label": "Identifiant de l'espace",
@@ -6988,11 +6988,11 @@
                 },
                 "personId": {
                     "label": "Identifiant Surfy",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "person": {
                     "label": "Personne",
-                    "description": null
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "dimensionId": {
                     "label": "Identifiant du calque d'analyse",
@@ -7084,11 +7084,11 @@
                 },
                 "personCompanyId": {
                     "label": "Id (entreprise prestataire)",
-                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
+                    "description": "L'entreprise prestataire permet de gérer le personnel prestataire par entreprise d'appartenance"
                 },
                 "personCompany": {
                     "label": "Entreprise prestataire",
-                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
+                    "description": "L'entreprise prestataire permet de gérer le personnel prestataire par entreprise d'appartenance"
                 },
                 "itemTypeId": {
                     "label": "Identifiant du type de l'objet",
@@ -7150,11 +7150,11 @@
                 },
                 "personCompanyId": {
                     "label": "Id (entreprise prestataire)",
-                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
+                    "description": "L'entreprise prestataire permet de gérer le personnel prestataire par entreprise d'appartenance"
                 },
                 "personCompany": {
                     "label": "Entreprise prestataire",
-                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
+                    "description": "L'entreprise prestataire permet de gérer le personnel prestataire par entreprise d'appartenance"
                 },
                 "roomTypeId": {
                     "label": "Identifiant de la typologie d'espace",
@@ -7224,11 +7224,11 @@
                 },
                 "personCompanyId": {
                     "label": "Id (entreprise prestataire)",
-                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
+                    "description": "L'entreprise prestataire permet de gérer le personnel prestataire par entreprise d'appartenance"
                 },
                 "personCompany": {
                     "label": "Entreprise prestataire",
-                    "description": "L'entreprise prestataire permet de conserver les informations de l'entreprise d'un prestataire de service pour connaître par exemple le nombres de postes ou l'espace occupé par ce dernier, ou savoir quels sont les types équipements ou type d'espaces qu'il a en gestion"
+                    "description": "L'entreprise prestataire permet de gérer le personnel prestataire par entreprise d'appartenance"
                 },
                 "itemId": {
                     "label": "Identifiant de l'objet",
@@ -7584,11 +7584,11 @@
                 },
                 "userCompanyId": {
                     "label": "Identifiant de l'utilisateur de l'entreprise",
-                    "description": null
+                    "description": "Les utilisateurs de l'entreprise ont accès à la plateforme Surfy de leur entreprise"
                 },
                 "userCompany": {
                     "label": "Utilisateur de l'entreprise",
-                    "description": null
+                    "description": "Les utilisateurs de l'entreprise ont accès à la plateforme Surfy de leur entreprise"
                 },
                 "jupRoleId": {
                     "label": "Id (Rôle)",
@@ -7864,11 +7864,11 @@
                 },
                 "userCompanyId": {
                     "label": "Identifiant de l'utilisateur de l'entreprise",
-                    "description": null
+                    "description": "Les utilisateurs de l'entreprise ont accès à la plateforme Surfy de leur entreprise"
                 },
                 "userCompany": {
                     "label": "Utilisateur de l'entreprise",
-                    "description": null
+                    "description": "Les utilisateurs de l'entreprise ont accès à la plateforme Surfy de leur entreprise"
                 },
                 "contentRoleId": {
                     "label": "Id (Rôle de contenu)",

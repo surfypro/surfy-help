@@ -1,7 +1,7 @@
 # Réservation au calque d'affectation des personnes
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-Les réservations aux calques d'affectations des personnes sont enregistrés et disponible avec les dates de début et fin de réservation
+Les réservations aux calques d'affectation des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation
 
 <OH code="personToDimensionBooking"/>
 
@@ -41,7 +41,7 @@ Un emplacement de travail des personnes définie le lieu de travail des personne
 
 ### Personne {#person}
 
-
+Ce sont les personnes entrées dans la base de données de Surfy
 
 *Nom technique:* ```person```
 <PH code="personToDimensionBooking:person"/>

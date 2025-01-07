@@ -8,19 +8,19 @@
 
 ## Basic properties {#properties-base}
 
-### Bulking rate {#expansion-ratio}
-
-Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations
-
-*Technical name:* ```expansionRatio```
-<PH code="roomTypeBuilding:expansionRatio"/>
-
 ### Carbon footprint {#carbon-footprint}
 
 The carbon footprint is the number of CO2 emitted
 
 *Technical name:* ```carbonFootprint```
 <PH code="roomTypeBuilding:carbonFootprint"/>
+
+### Expansion rate {#expansion-ratio}
+
+Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations
+
+*Technical name:* ```expansionRatio```
+<PH code="roomTypeBuilding:expansionRatio"/>
 
 ### Number of assignments {#people-count}
 

@@ -1,7 +1,7 @@
 # Affectation au calque d'affectation
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Permet d'affecter une personne à un quartier, territoire ou village
 
 <OH code="dimensionToPerson"/>
 
@@ -21,7 +21,7 @@
 
 ### Personne {#person}
 
-
+Ce sont les personnes entrées dans la base de données de Surfy
 
 *Nom technique:* ```person```
 <PH code="dimensionToPerson:person"/>

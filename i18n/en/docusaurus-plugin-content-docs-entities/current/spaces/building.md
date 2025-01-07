@@ -57,13 +57,6 @@ Building purchase date
 *Technical name:* ```purchaseDate```
 <PH code="building:purchaseDate"/>
 
-### Bulking rate {#expansion-ratio}
-
-Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations
-
-*Technical name:* ```expansionRatio```
-<PH code="building:expansionRatio"/>
-
 ### Carbon footprint {#carbon-footprint}
 
 The carbon footprint is the number of CO2 emitted
@@ -84,6 +77,13 @@ End date of the lease
 
 *Technical name:* ```leaseEndDate```
 <PH code="building:leaseEndDate"/>
+
+### Expansion rate {#expansion-ratio}
+
+Allows to know the rate of use of workstations, it is the inverse of the number of people affected divided by the number of workstations
+
+*Technical name:* ```expansionRatio```
+<PH code="building:expansionRatio"/>
 
 ### Lease start date {#lease-start-date}
 
@@ -345,7 +345,7 @@ When a plan of this building is first opened, the default vision will be selecte
 
 ### Building assignments {#person-to-buildings}
 
-
+Allows you to assign a person to a building, without additional information. The assignment can be counted, or not.
 
 *Technical name:* ```personToBuildings```
 <PH code="building:personToBuildings"/>

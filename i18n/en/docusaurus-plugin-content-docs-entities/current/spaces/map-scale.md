@@ -22,7 +22,7 @@ It is possible to reduce the thickness of the lines to increase the readability 
 *Technical name:* ```strokeWidth```
 <PH code="mapScale:strokeWidth"/>
 
-### Name of the ladder {#name}
+### Name of the scale {#name}
 
 To remember the name and reuse it on other floors
 

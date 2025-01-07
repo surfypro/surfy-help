@@ -10,7 +10,7 @@ The association between a point and a space makes it possible to preserve the or
 
 ### Sort index {#sort-index}
 
-
+???
 
 *Technical name:* ```sortIndex```
 <PH code="roomPointRoom:sortIndex"/>
