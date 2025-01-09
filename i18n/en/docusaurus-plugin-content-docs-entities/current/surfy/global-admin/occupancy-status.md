@@ -36,7 +36,7 @@ The code makes it possible to identify and carry out technical operations on the
 
 ### Spaces {#rooms}
 
-
+Spaces are workplaces or areas in order to divide a floor into sub-spaces.
 
 *Technical name:* ```rooms```
 <PH code="occupancyStatus:rooms"/>

@@ -160,7 +160,7 @@ The building is used to group the floors
 
 ### Organization {#organization}
 
-
+Organizations have two hierarchical levels: departments and services, and help define the organizational structure of the company.
 
 *Technical name:* ```organization```
 <PH code="organizationBuilding:organization"/>

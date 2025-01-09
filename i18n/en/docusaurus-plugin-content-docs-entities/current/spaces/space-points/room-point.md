@@ -27,7 +27,7 @@ Coordinate on the X axis
 
 ### Floor {#floor}
 
-
+Floors represent a work platform or a level of a building.
 
 *Technical name:* ```floor```
 <PH code="roomPoint:floor"/>

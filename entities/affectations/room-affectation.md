@@ -14,7 +14,7 @@ Permet d'affecter une personne à un espace simple
 
 ### Espace {#room}
 
-
+Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces
 
 *Nom technique:* ```room```
 <PH code="roomAffectation:room"/>

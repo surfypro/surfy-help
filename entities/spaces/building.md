@@ -350,13 +350,6 @@ Scénarios générés à partir de ce bâtiment
 *Nom technique:* ```buildings```
 <PH code="building:buildings"/>
 
-### Calques d'affectation du bâtiment {#dimension-type-to-buildings}
-
-
-
-*Nom technique:* ```dimensionTypeToBuildings```
-<PH code="building:dimensionTypeToBuildings"/>
-
 ### Calques d'analyse par bâtiment {#dimension-buildings}
 
 
@@ -373,7 +366,7 @@ Scénarios générés à partir de ce bâtiment
 
 ### Étages {#floors}
 
-
+Les étages represent un plateau de travail ou un niveau d'un bâtiment
 
 *Nom technique:* ```floors```
 <PH code="building:floors"/>
@@ -398,6 +391,13 @@ Scénarios générés à partir de ce bâtiment
 
 *Nom technique:* ```organizationBuildings```
 <PH code="building:organizationBuildings"/>
+
+### Types de calques d'affectation du bâtiment {#dimension-type-to-buildings}
+
+Les types de calques d'affectation du bâtiment permettent de définir les différents types de calques d'affectation du bâtiment. En associant un type de calque d'affectation à un bâtiment, cela permet de transformer un calque d'analyse en calque d'affectation.
+
+*Nom technique:* ```dimensionTypeToBuildings```
+<PH code="building:dimensionTypeToBuildings"/>
 
 ### Typologies d'espace des bâtiments {#room-type-buildings}
 

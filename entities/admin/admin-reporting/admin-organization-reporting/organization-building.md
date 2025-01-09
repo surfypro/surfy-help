@@ -160,7 +160,7 @@ Le bâtiment est utilisé pour regrouper les étages
 
 ### Organisation {#organization}
 
-
+Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise
 
 *Nom technique:* ```organization```
 <PH code="organizationBuilding:organization"/>

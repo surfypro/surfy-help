@@ -29,7 +29,7 @@ Le code est utilisé afin de pouvoir calculer automatiquement les coûts associ�
 
 ### Espaces {#rooms}
 
-
+Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces
 
 *Nom technique:* ```rooms```
 <PH code="distributionCostType:rooms"/>

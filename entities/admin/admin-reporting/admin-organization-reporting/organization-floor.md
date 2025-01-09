@@ -153,14 +153,14 @@ Taux de postes de travail partagés par au moins 2 personnes par rapport à l'en
 
 ### Étage {#floor}
 
-
+Les étages represent un plateau de travail ou un niveau d'un bâtiment
 
 *Nom technique:* ```floor```
 <PH code="organizationFloor:floor"/>
 
 ### Organisation {#organization}
 
-
+Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise
 
 *Nom technique:* ```organization```
 <PH code="organizationFloor:organization"/>

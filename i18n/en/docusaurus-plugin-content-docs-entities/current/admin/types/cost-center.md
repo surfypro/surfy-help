@@ -85,7 +85,7 @@ These are the people entered into Surfy's database
 
 ### Spaces {#rooms}
 
-
+Spaces are workplaces or areas in order to divide a floor into sub-spaces.
 
 *Technical name:* ```rooms```
 <PH code="costCenter:rooms"/>

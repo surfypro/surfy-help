@@ -77,13 +77,6 @@ L'icône pour le type d'espace permet d'afficher pour ce type d'espace une icôn
 
 ## Entités associées (liste) {#properties-has-many}
 
-###  Partner Export Mapping To Room Types {#partner-export-mapping-to-room-types}
-
-
-
-*Nom technique:* ```partnerExportMappingToRoomTypes```
-<PH code="roomType:partnerExportMappingToRoomTypes"/>
-
 ### Associations groupes de typologies d'espace à typologies d'espace {#room-type-group-to-room-types}
 
 
@@ -93,10 +86,17 @@ L'icône pour le type d'espace permet d'afficher pour ce type d'espace une icôn
 
 ### Espaces {#rooms}
 
-
+Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces
 
 *Nom technique:* ```rooms```
 <PH code="roomType:rooms"/>
+
+### Transformations des exports partenaires pour les types d'espaces {#partner-export-mapping-to-room-types}
+
+
+
+*Nom technique:* ```partnerExportMappingToRoomTypes```
+<PH code="roomType:partnerExportMappingToRoomTypes"/>
 
 ### Types d'espaces des prestataires {#person-company-to-room-types}
 

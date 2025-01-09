@@ -36,7 +36,7 @@ Transformation de la structure pour la calibrer sur une carte
 
 ### Étages {#floors}
 
-
+Les étages represent un plateau de travail ou un niveau d'un bâtiment
 
 *Nom technique:* ```floors```
 <PH code="structure:floors"/>

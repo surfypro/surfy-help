@@ -92,7 +92,7 @@ La taille du texte sur les postes de travail et sur les objets sur le plan pour 
 
 ### Étages {#floors}
 
-
+Les étages represent un plateau de travail ou un niveau d'un bâtiment
 
 *Nom technique:* ```floors```
 <PH code="mapScale:floors"/>

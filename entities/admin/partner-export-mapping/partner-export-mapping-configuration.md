@@ -1,4 +1,4 @@
-#  Partner Export Mapping Configuration
+# Configuration de la transformation des exports partenaires
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 
@@ -20,14 +20,14 @@
 
 ## Entités associées (liste) {#properties-has-many}
 
-###  Partner Export Mapping Configuration To Floors {#partner-export-mapping-configuration-to-floors}
+### Etages inclus Configurations des transformations des exports partenaires {#partner-export-mapping-configuration-to-floors}
 
 
 
 *Nom technique:* ```partnerExportMappingConfigurationToFloors```
 <PH code="partnerExportMappingConfiguration:partnerExportMappingConfigurationToFloors"/>
 
-###  Partner Export Mappings {#partner-export-mappings}
+### Transformations des exports partenaires {#partner-export-mappings}
 
 
 

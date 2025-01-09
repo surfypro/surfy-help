@@ -92,7 +92,7 @@ The size of the text on the workstations and on the objects on the map to optimi
 
 ### Floors {#floors}
 
-
+Floors represent a work platform or a level of a building.
 
 *Technical name:* ```floors```
 <PH code="mapScale:floors"/>

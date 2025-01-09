@@ -51,7 +51,7 @@
             },
             "organization": {
                 "label": "Organisation",
-                "description": null
+                "description": "Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise"
             },
             "itemTypeFamily": {
                 "label": "Famille de types d'objet",
@@ -87,7 +87,7 @@
             },
             "floor": {
                 "label": "Étage",
-                "description": null
+                "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
             },
             "distributionCostType": {
                 "label": "Type de distribution des coûts",
@@ -127,7 +127,7 @@
             },
             "room": {
                 "label": "Espace",
-                "description": null
+                "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
             },
             "roomPoint": {
                 "label": "Point des espaces",
@@ -250,8 +250,8 @@
                 "description": "Permet d'affecter une personne à un quartier, territoire ou village"
             },
             "dimensionTypeToBuilding": {
-                "label": "Calque d'affectation du bâtiment",
-                "description": null
+                "label": "Type de calque d'affectation du bâtiment",
+                "description": "Les types de calques d'affectation du bâtiment permettent de définir les différents types de calques d'affectation du bâtiment. En associant un type de calque d'affectation à un bâtiment, cela permet de transformer un calque d'analyse en calque d'affectation."
             },
             "workingLocation": {
                 "label": " Working Location",
@@ -390,19 +390,19 @@
                 "description": null
             },
             "partnerExportMappingConfiguration": {
-                "label": " Partner Export Mapping Configuration",
+                "label": "Configuration de la transformation des exports partenaires",
                 "description": null
             },
             "partnerExportMapping": {
-                "label": " Partner Export Mapping",
+                "label": "Transformation des exports partenaires",
                 "description": null
             },
             "partnerExportMappingToRoomType": {
-                "label": " Partner Export Mapping To Room Type",
+                "label": "Transformation des exports partenaires pour les types d'espaces",
                 "description": null
             },
             "partnerExportMappingConfigurationToFloor": {
-                "label": " Partner Export Mapping Configuration To Floor",
+                "label": "Etage inclus dans la configuration de la transformation des exports partenaires",
                 "description": null
             },
             "jupRoleToJupUiLayout": {
@@ -458,7 +458,7 @@
                 },
                 "rooms": {
                     "label": "Espaces",
-                    "description": null
+                    "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 }
             },
             "user": {
@@ -818,7 +818,7 @@
                 },
                 "rooms": {
                     "label": "Espaces",
-                    "description": null
+                    "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
@@ -928,11 +928,11 @@
                 },
                 "organizationCreatedBies": {
                     "label": "Organisations",
-                    "description": null
+                    "description": "Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise"
                 },
                 "organizationUpdatedBies": {
                     "label": "Organisations",
-                    "description": null
+                    "description": "Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise"
                 },
                 "itemTypeFamilyCreatedBies": {
                     "label": "Familles de types d'objet",
@@ -996,11 +996,11 @@
                 },
                 "floorCreatedBies": {
                     "label": "Étages",
-                    "description": null
+                    "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "floorUpdatedBies": {
                     "label": "Étages",
-                    "description": null
+                    "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "distributionCostTypeCreatedBies": {
                     "label": "Types de distribution des coûts",
@@ -1068,11 +1068,11 @@
                 },
                 "roomCreatedBies": {
                     "label": "Espaces",
-                    "description": null
+                    "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "roomUpdatedBies": {
                     "label": "Espaces",
-                    "description": null
+                    "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "roomPointCreatedBies": {
                     "label": "Points des espaces",
@@ -1307,12 +1307,12 @@
                     "description": "Permet d'affecter une personne à un quartier, territoire ou village"
                 },
                 "dimensionTypeToBuildingCreatedBies": {
-                    "label": "Calques d'affectation du bâtiment",
-                    "description": null
+                    "label": "Types de calques d'affectation du bâtiment",
+                    "description": "Les types de calques d'affectation du bâtiment permettent de définir les différents types de calques d'affectation du bâtiment. En associant un type de calque d'affectation à un bâtiment, cela permet de transformer un calque d'analyse en calque d'affectation."
                 },
                 "dimensionTypeToBuildingUpdatedBies": {
-                    "label": "Calques d'affectation du bâtiment",
-                    "description": null
+                    "label": "Types de calques d'affectation du bâtiment",
+                    "description": "Les types de calques d'affectation du bâtiment permettent de définir les différents types de calques d'affectation du bâtiment. En associant un type de calque d'affectation à un bâtiment, cela permet de transformer un calque d'analyse en calque d'affectation."
                 },
                 "personWorkingLocationCreatedBies": {
                     "label": "Emplacements de travail des personnes",
@@ -1499,35 +1499,35 @@
                     "description": null
                 },
                 "partnerExportMappingConfigurationCreatedBies": {
-                    "label": " Partner Export Mapping Configurations",
+                    "label": "Configurations des transformations des exports partenaires",
                     "description": null
                 },
                 "partnerExportMappingConfigurationUpdatedBies": {
-                    "label": " Partner Export Mapping Configurations",
+                    "label": "Configurations des transformations des exports partenaires",
                     "description": null
                 },
                 "partnerExportMappingCreatedBies": {
-                    "label": " Partner Export Mappings",
+                    "label": "Transformations des exports partenaires",
                     "description": null
                 },
                 "partnerExportMappingUpdatedBies": {
-                    "label": " Partner Export Mappings",
+                    "label": "Transformations des exports partenaires",
                     "description": null
                 },
                 "partnerExportMappingToRoomTypeCreatedBies": {
-                    "label": " Partner Export Mapping To Room Types",
+                    "label": "Transformations des exports partenaires pour les types d'espaces",
                     "description": null
                 },
                 "partnerExportMappingToRoomTypeUpdatedBies": {
-                    "label": " Partner Export Mapping To Room Types",
+                    "label": "Transformations des exports partenaires pour les types d'espaces",
                     "description": null
                 },
                 "partnerExportMappingConfigurationToFloorCreatedBies": {
-                    "label": " Partner Export Mapping Configuration To Floors",
+                    "label": "Etages inclus Configurations des transformations des exports partenaires",
                     "description": null
                 },
                 "partnerExportMappingConfigurationToFloorUpdatedBies": {
-                    "label": " Partner Export Mapping Configuration To Floors",
+                    "label": "Etages inclus Configurations des transformations des exports partenaires",
                     "description": null
                 },
                 "itemFactCreatedBies": {
@@ -1782,15 +1782,15 @@
                 },
                 "organizationId": {
                     "label": "Identifiant de la direction",
-                    "description": null
+                    "description": "Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise"
                 },
                 "organization": {
                     "label": "Direction",
-                    "description": null
+                    "description": "Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise"
                 },
                 "organizations": {
                     "label": "Services",
-                    "description": null
+                    "description": "Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -1810,7 +1810,7 @@
                 },
                 "rooms": {
                     "label": "Espaces",
-                    "description": null
+                    "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "people": {
                     "label": "Personnes",
@@ -2051,6 +2051,10 @@
                 "iconBorderColor": {
                     "label": "Couleur de bordure de l'icône",
                     "description": "La couleur de bordure permet de configurer correctement les icones multi-couleurs, notamment triangulaires"
+                },
+                "isAffectable": {
+                    "label": "Est associable à une personne ?",
+                    "description": "Permet de savoir si le type d'objet est associable à une personne"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -2376,7 +2380,7 @@
                 },
                 "floors": {
                     "label": "Étages",
-                    "description": null
+                    "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "roomTypeGroupBuildings": {
                     "label": "Groupes de typologies d'espace des bâtiments",
@@ -2407,8 +2411,8 @@
                     "description": "Permet d'attribuer une personne à un bâtiment, sans information supplémentaire. L'affectation peut être comptabilisée, ou non."
                 },
                 "dimensionTypeToBuildings": {
-                    "label": "Calques d'affectation du bâtiment",
-                    "description": null
+                    "label": "Types de calques d'affectation du bâtiment",
+                    "description": "Les types de calques d'affectation du bâtiment permettent de définir les différents types de calques d'affectation du bâtiment. En associant un type de calque d'affectation à un bâtiment, cela permet de transformer un calque d'analyse en calque d'affectation."
                 },
                 "contentRoleToBuildings": {
                     "label": "Associations rôle de contenu aux bâtiments",
@@ -2494,7 +2498,7 @@
                 },
                 "floors": {
                     "label": "Étages",
-                    "description": null
+                    "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
@@ -2552,7 +2556,7 @@
                 },
                 "floors": {
                     "label": "Étages",
-                    "description": null
+                    "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
@@ -2796,7 +2800,7 @@
                 },
                 "rooms": {
                     "label": "Espaces",
-                    "description": null
+                    "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "roomPoints": {
                     "label": "Points des espaces",
@@ -2819,7 +2823,7 @@
                     "description": null
                 },
                 "partnerExportMappingConfigurationToFloors": {
-                    "label": " Partner Export Mapping Configuration To Floors",
+                    "label": "Etages inclus Configurations des transformations des exports partenaires",
                     "description": null
                 },
                 "companyId": {
@@ -2878,7 +2882,7 @@
                 },
                 "rooms": {
                     "label": "Espaces",
-                    "description": null
+                    "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
@@ -3014,7 +3018,7 @@
                 },
                 "rooms": {
                     "label": "Espaces",
-                    "description": null
+                    "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "roomTypeFloors": {
                     "label": "Typologies d'espace des étages",
@@ -3029,7 +3033,7 @@
                     "description": "Les types d'espaces des prestataires permettent de définir une relation entre un type d'espaces et le prestataire et d'y définir une mission"
                 },
                 "partnerExportMappingToRoomTypes": {
-                    "label": " Partner Export Mapping To Room Types",
+                    "label": "Transformations des exports partenaires pour les types d'espaces",
                     "description": null
                 },
                 "companyId": {
@@ -3206,11 +3210,11 @@
                 },
                 "floorId": {
                     "label": "Identifiant de l'étage",
-                    "description": null
+                    "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "floor": {
                     "label": "Étage",
-                    "description": null
+                    "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -3442,7 +3446,7 @@
                 },
                 "rooms": {
                     "label": "Espaces",
-                    "description": null
+                    "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "people": {
                     "label": "Personnes",
@@ -3706,11 +3710,11 @@
                 },
                 "floorId": {
                     "label": "Identifiant de l'étage",
-                    "description": null
+                    "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "floor": {
                     "label": "Étage",
-                    "description": null
+                    "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -3876,11 +3880,11 @@
                 },
                 "floorId": {
                     "label": "Identifiant de l'étage",
-                    "description": null
+                    "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "floor": {
                     "label": "Étage",
-                    "description": null
+                    "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "occupancyStatusId": {
                     "label": "Identifiant de l'état d'occupation",
@@ -3900,11 +3904,11 @@
                 },
                 "organizationId": {
                     "label": "Identifiant de l'organisation",
-                    "description": null
+                    "description": "Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise"
                 },
                 "organization": {
                     "label": "Organisation",
-                    "description": null
+                    "description": "Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise"
                 },
                 "costCenterId": {
                     "label": "Identifiant du centre de coût",
@@ -4006,11 +4010,11 @@
                 },
                 "floorId": {
                     "label": "Identifiant de l'étage",
-                    "description": null
+                    "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "floor": {
                     "label": "Étage",
-                    "description": null
+                    "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -4072,11 +4076,11 @@
                 },
                 "roomId": {
                     "label": "Identifiant de l'espace",
-                    "description": null
+                    "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "room": {
                     "label": "Espace",
-                    "description": null
+                    "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "roomPointId": {
                     "label": "Identifiant du point",
@@ -4343,8 +4347,8 @@
                     "description": null
                 },
                 "dimensionTypeToBuildings": {
-                    "label": "Calques d'affectation du bâtiment",
-                    "description": null
+                    "label": "Types de calques d'affectation du bâtiment",
+                    "description": "Les types de calques d'affectation du bâtiment permettent de définir les différents types de calques d'affectation du bâtiment. En associant un type de calque d'affectation à un bâtiment, cela permet de transformer un calque d'analyse en calque d'affectation."
                 },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
@@ -4480,11 +4484,11 @@
                 },
                 "roomId": {
                     "label": "Identifiant de l'espace",
-                    "description": null
+                    "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "room": {
                     "label": "Espace",
-                    "description": null
+                    "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "dimensionTypeId": {
                     "label": "Identifiant du type de dimension",
@@ -4634,11 +4638,11 @@
                 },
                 "floorId": {
                     "label": "Identifiant de l'étage",
-                    "description": null
+                    "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "floor": {
                     "label": "Étage",
-                    "description": null
+                    "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -5142,7 +5146,7 @@
                 },
                 "organizationId": {
                     "label": "Identifiant de l'organisation",
-                    "description": null
+                    "description": "Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise"
                 },
                 "organization": {
                     "label": "L'organisation de la personne",
@@ -5408,11 +5412,11 @@
                 },
                 "roomId": {
                     "label": "Identifiant de l'espace",
-                    "description": null
+                    "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "room": {
                     "label": "Espace",
-                    "description": null
+                    "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -5658,19 +5662,19 @@
                 },
                 "roomId": {
                     "label": "Identifiant de l'espace",
-                    "description": null
+                    "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "room": {
                     "label": "Espace du poste de travail",
-                    "description": null
+                    "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "organizationId": {
                     "label": "Identifiant de l'organisation",
-                    "description": null
+                    "description": "Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise"
                 },
                 "organization": {
                     "label": "Organisation",
-                    "description": null
+                    "description": "Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise"
                 },
                 "costCenterId": {
                     "label": "Identifiant du centre de coût",
@@ -5750,6 +5754,10 @@
                     "label": "Prix",
                     "description": "Le prix d'achat de l'objet s'il est différent du prix du type d'objet"
                 },
+                "itemAffectationsCount": {
+                    "label": "Nombre d'associations aux personnes",
+                    "description": "Le nombre d'associations de cet objet aux personnes"
+                },
                 "createdAt": {
                     "label": "Date de création",
                     "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
@@ -5772,11 +5780,11 @@
                 },
                 "roomId": {
                     "label": "Identifiant de l'espace",
-                    "description": null
+                    "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "room": {
                     "label": "Espace de l'objet",
-                    "description": null
+                    "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "workplaceId": {
                     "label": "Identifiant du poste de travail",
@@ -6016,19 +6024,19 @@
                 },
                 "organizationId": {
                     "label": "Identifiant de l'organisation",
-                    "description": null
+                    "description": "Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise"
                 },
                 "organization": {
                     "label": "Organisation",
-                    "description": null
+                    "description": "Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise"
                 },
                 "floorId": {
                     "label": "Identifiant de l'étage",
-                    "description": null
+                    "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "floor": {
                     "label": "Étage",
-                    "description": null
+                    "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -6154,11 +6162,11 @@
                 },
                 "organizationId": {
                     "label": "Identifiant de l'organisation",
-                    "description": null
+                    "description": "Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise"
                 },
                 "organization": {
                     "label": "Organisation",
-                    "description": null
+                    "description": "Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise"
                 },
                 "buildingId": {
                     "label": "Identifiant du bâtiment",
@@ -6300,11 +6308,11 @@
                 },
                 "floorId": {
                     "label": "Identifiant de l'étage",
-                    "description": null
+                    "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "floor": {
                     "label": "Étage",
-                    "description": null
+                    "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -6922,11 +6930,11 @@
                 },
                 "roomId": {
                     "label": "Identifiant de l'espace",
-                    "description": null
+                    "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "room": {
                     "label": "Espace",
-                    "description": null
+                    "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "personWorkingLocationId": {
                     "label": "Id (Emplacement de travail des personnes)",
@@ -7930,11 +7938,11 @@
                 },
                 "floorId": {
                     "label": "Identifiant de l'étage",
-                    "description": null
+                    "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "floor": {
                     "label": "Étage",
-                    "description": null
+                    "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -8563,11 +8571,11 @@
                     "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
                 },
                 "partnerExportMappings": {
-                    "label": " Partner Export Mappings",
+                    "label": "Transformations des exports partenaires",
                     "description": null
                 },
                 "partnerExportMappingConfigurationToFloors": {
-                    "label": " Partner Export Mapping Configuration To Floors",
+                    "label": "Etages inclus Configurations des transformations des exports partenaires",
                     "description": null
                 },
                 "companyId": {
@@ -8605,11 +8613,11 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "partnerExportMappingConfigurationId": {
-                    "label": "Id ( Partner Export Mapping Configuration)",
+                    "label": "Id (Configuration de la transformation des exports partenaires)",
                     "description": null
                 },
                 "partnerExportMappingConfiguration": {
-                    "label": " Partner Export Mapping Configuration",
+                    "label": "Configuration de la transformation des exports partenaires",
                     "description": null
                 },
                 "userCompanyCreatedById": {
@@ -8629,7 +8637,7 @@
                     "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
                 },
                 "partnerExportMappingToRoomTypes": {
-                    "label": " Partner Export Mapping To Room Types",
+                    "label": "Transformations des exports partenaires pour les types d'espaces",
                     "description": null
                 },
                 "companyId": {
@@ -8659,11 +8667,11 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "partnerExportMappingId": {
-                    "label": "Id ( Partner Export Mapping)",
+                    "label": "Id (Transformation des exports partenaires)",
                     "description": null
                 },
                 "partnerExportMapping": {
-                    "label": " Partner Export Mapping",
+                    "label": "Transformation des exports partenaires",
                     "description": null
                 },
                 "roomTypeId": {
@@ -8717,20 +8725,20 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "partnerExportMappingConfigurationId": {
-                    "label": "Id ( Partner Export Mapping Configuration)",
+                    "label": "Id (Configuration de la transformation des exports partenaires)",
                     "description": null
                 },
                 "partnerExportMappingConfiguration": {
-                    "label": " Partner Export Mapping Configuration",
+                    "label": "Configuration de la transformation des exports partenaires",
                     "description": null
                 },
                 "floorId": {
                     "label": "Identifiant de l'étage",
-                    "description": null
+                    "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "floor": {
                     "label": "Étage",
-                    "description": null
+                    "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",

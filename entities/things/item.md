@@ -22,6 +22,13 @@ La date d'achat de l'objet
 *Nom technique:* ```purchaseDate```
 <PH code="item:purchaseDate"/>
 
+### Nombre d'associations aux personnes {#item-affectations-count}
+
+Le nombre d'associations de cet objet aux personnes
+
+*Nom technique:* ```itemAffectationsCount```
+<PH code="item:itemAffectationsCount"/>
+
 ### Position {#position}
 
 
@@ -62,7 +69,7 @@ La référence de l'objet est utilisé pour le retrouver et pour differencier ce
 
 ### Espace de l'objet {#room}
 
-
+Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces
 
 *Nom technique:* ```room```
 <PH code="item:room"/>

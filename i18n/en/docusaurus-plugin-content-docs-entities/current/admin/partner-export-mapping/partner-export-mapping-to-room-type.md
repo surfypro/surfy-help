@@ -1,4 +1,4 @@
-#  Partner Export Mapping To Room Type
+# Transformation of partner exports for space types
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 
@@ -12,19 +12,19 @@
 
 ## Associated entities (unique) {#properties-belongs-to}
 
-###  Partner Export Mapping {#partner-export-mapping}
-
-
-
-*Technical name:* ```partnerExportMapping```
-<PH code="partnerExportMappingToRoomType:partnerExportMapping"/>
-
 ### Space typology {#room-type}
 
 
 
 *Technical name:* ```roomType```
 <PH code="partnerExportMappingToRoomType:roomType"/>
+
+### Transformation of partner exports {#partner-export-mapping}
+
+
+
+*Technical name:* ```partnerExportMapping```
+<PH code="partnerExportMappingToRoomType:partnerExportMapping"/>
 
 
 

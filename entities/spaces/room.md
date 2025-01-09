@@ -1,7 +1,7 @@
 # Espace
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces
 
 <OH code="room"/>
 
@@ -237,7 +237,7 @@ Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces d
 
 ### Étage {#floor}
 
-
+Les étages represent un plateau de travail ou un niveau d'un bâtiment
 
 *Nom technique:* ```floor```
 <PH code="room:floor"/>
@@ -251,7 +251,7 @@ L'état d'occupation permet d'identifier l'état en temps réel d'un espace ou d
 
 ### Organisation {#organization}
 
-
+Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise
 
 *Nom technique:* ```organization```
 <PH code="room:organization"/>

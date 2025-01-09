@@ -71,62 +71,6 @@ These are the people entered into Surfy's database
 *Technical name:* ```featureUpdatedBies```
 <PH code="userCompany:featureUpdatedBies"/>
 
-###  Partner Export Mapping Configuration To Floors {#partner-export-mapping-configuration-to-floor-created-bies}
-
-
-
-*Technical name:* ```partnerExportMappingConfigurationToFloorCreatedBies```
-<PH code="userCompany:partnerExportMappingConfigurationToFloorCreatedBies"/>
-
-###  Partner Export Mapping Configuration To Floors {#partner-export-mapping-configuration-to-floor-updated-bies}
-
-
-
-*Technical name:* ```partnerExportMappingConfigurationToFloorUpdatedBies```
-<PH code="userCompany:partnerExportMappingConfigurationToFloorUpdatedBies"/>
-
-###  Partner Export Mapping Configurations {#partner-export-mapping-configuration-created-bies}
-
-
-
-*Technical name:* ```partnerExportMappingConfigurationCreatedBies```
-<PH code="userCompany:partnerExportMappingConfigurationCreatedBies"/>
-
-###  Partner Export Mapping Configurations {#partner-export-mapping-configuration-updated-bies}
-
-
-
-*Technical name:* ```partnerExportMappingConfigurationUpdatedBies```
-<PH code="userCompany:partnerExportMappingConfigurationUpdatedBies"/>
-
-###  Partner Export Mapping To Room Types {#partner-export-mapping-to-room-type-created-bies}
-
-
-
-*Technical name:* ```partnerExportMappingToRoomTypeCreatedBies```
-<PH code="userCompany:partnerExportMappingToRoomTypeCreatedBies"/>
-
-###  Partner Export Mapping To Room Types {#partner-export-mapping-to-room-type-updated-bies}
-
-
-
-*Technical name:* ```partnerExportMappingToRoomTypeUpdatedBies```
-<PH code="userCompany:partnerExportMappingToRoomTypeUpdatedBies"/>
-
-###  Partner Export Mappings {#partner-export-mapping-created-bies}
-
-
-
-*Technical name:* ```partnerExportMappingCreatedBies```
-<PH code="userCompany:partnerExportMappingCreatedBies"/>
-
-###  Partner Export Mappings {#partner-export-mapping-updated-bies}
-
-
-
-*Technical name:* ```partnerExportMappingUpdatedBies```
-<PH code="userCompany:partnerExportMappingUpdatedBies"/>
-
 ###  Structure Points {#structure-point-created-bies}
 
 
@@ -322,20 +266,6 @@ The association between a point and a space makes it possible to preserve the or
 
 *Technical name:* ```userRegistrationTenantRuleUpdatedBies```
 <PH code="userCompany:userRegistrationTenantRuleUpdatedBies"/>
-
-### Building assignment layers {#dimension-type-to-building-created-bies}
-
-
-
-*Technical name:* ```dimensionTypeToBuildingCreatedBies```
-<PH code="userCompany:dimensionTypeToBuildingCreatedBies"/>
-
-### Building assignment layers {#dimension-type-to-building-updated-bies}
-
-
-
-*Technical name:* ```dimensionTypeToBuildingUpdatedBies```
-<PH code="userCompany:dimensionTypeToBuildingUpdatedBies"/>
 
 ### Building assignments {#person-to-building-created-bies}
 
@@ -605,17 +535,31 @@ Allows you to display objects by Family on the plans and in the pdf inventory
 
 ### Floors {#floor-created-bies}
 
-
+Floors represent a work platform or a level of a building.
 
 *Technical name:* ```floorCreatedBies```
 <PH code="userCompany:floorCreatedBies"/>
 
 ### Floors {#floor-updated-bies}
 
-
+Floors represent a work platform or a level of a building.
 
 *Technical name:* ```floorUpdatedBies```
 <PH code="userCompany:floorUpdatedBies"/>
+
+### Floors included Configurations of partner export transformations {#partner-export-mapping-configuration-to-floor-created-bies}
+
+
+
+*Technical name:* ```partnerExportMappingConfigurationToFloorCreatedBies```
+<PH code="userCompany:partnerExportMappingConfigurationToFloorCreatedBies"/>
+
+### Floors included Configurations of partner export transformations {#partner-export-mapping-configuration-to-floor-updated-bies}
+
+
+
+*Technical name:* ```partnerExportMappingConfigurationToFloorUpdatedBies```
+<PH code="userCompany:partnerExportMappingConfigurationToFloorUpdatedBies"/>
 
 ### Groups of building space typologies {#room-type-group-building-created-bies}
 
@@ -773,14 +717,14 @@ Allows you to associate an object with a person (ergonomic seat, locker)
 
 ### Organizations {#organization-created-bies}
 
-
+Organizations have two hierarchical levels: departments and services, and help define the organizational structure of the company.
 
 *Technical name:* ```organizationCreatedBies```
 <PH code="userCompany:organizationCreatedBies"/>
 
 ### Organizations {#organization-updated-bies}
 
-
+Organizations have two hierarchical levels: departments and services, and help define the organizational structure of the company.
 
 *Technical name:* ```organizationUpdatedBies```
 <PH code="userCompany:organizationUpdatedBies"/>
@@ -798,6 +742,34 @@ Allows you to associate an object with a person (ergonomic seat, locker)
 
 *Technical name:* ```partnerApiCredentialUpdatedBies```
 <PH code="userCompany:partnerApiCredentialUpdatedBies"/>
+
+### Partner export transformation configurations {#partner-export-mapping-configuration-created-bies}
+
+
+
+*Technical name:* ```partnerExportMappingConfigurationCreatedBies```
+<PH code="userCompany:partnerExportMappingConfigurationCreatedBies"/>
+
+### Partner export transformation configurations {#partner-export-mapping-configuration-updated-bies}
+
+
+
+*Technical name:* ```partnerExportMappingConfigurationUpdatedBies```
+<PH code="userCompany:partnerExportMappingConfigurationUpdatedBies"/>
+
+### Partner export transformations for space types {#partner-export-mapping-to-room-type-created-bies}
+
+
+
+*Technical name:* ```partnerExportMappingToRoomTypeCreatedBies```
+<PH code="userCompany:partnerExportMappingToRoomTypeCreatedBies"/>
+
+### Partner export transformations for space types {#partner-export-mapping-to-room-type-updated-bies}
+
+
+
+*Technical name:* ```partnerExportMappingToRoomTypeUpdatedBies```
+<PH code="userCompany:partnerExportMappingToRoomTypeUpdatedBies"/>
 
 ### People {#person-created-bies}
 
@@ -1074,14 +1046,14 @@ Space connectors allow you to create a link between several spaces on different 
 
 ### Spaces {#room-created-bies}
 
-
+Spaces are workplaces or areas in order to divide a floor into sub-spaces.
 
 *Technical name:* ```roomCreatedBies```
 <PH code="userCompany:roomCreatedBies"/>
 
 ### Spaces {#room-updated-bies}
 
-
+Spaces are workplaces or areas in order to divide a floor into sub-spaces.
 
 *Technical name:* ```roomUpdatedBies```
 <PH code="userCompany:roomUpdatedBies"/>
@@ -1113,6 +1085,34 @@ Allows you to define all types of contracts between people and the company
 
 *Technical name:* ```structureUpdatedBies```
 <PH code="userCompany:structureUpdatedBies"/>
+
+### Transformations of partner exports {#partner-export-mapping-created-bies}
+
+
+
+*Technical name:* ```partnerExportMappingCreatedBies```
+<PH code="userCompany:partnerExportMappingCreatedBies"/>
+
+### Transformations of partner exports {#partner-export-mapping-updated-bies}
+
+
+
+*Technical name:* ```partnerExportMappingUpdatedBies```
+<PH code="userCompany:partnerExportMappingUpdatedBies"/>
+
+### Types of building assignment layers {#dimension-type-to-building-created-bies}
+
+Building assignment layer types are used to define the different types of building assignment layers. By associating an assignment layer type with a building, this allows an analysis layer to be transformed into an assignment layer.
+
+*Technical name:* ```dimensionTypeToBuildingCreatedBies```
+<PH code="userCompany:dimensionTypeToBuildingCreatedBies"/>
+
+### Types of building assignment layers {#dimension-type-to-building-updated-bies}
+
+Building assignment layer types are used to define the different types of building assignment layers. By associating an assignment layer type with a building, this allows an analysis layer to be transformed into an assignment layer.
+
+*Technical name:* ```dimensionTypeToBuildingUpdatedBies```
+<PH code="userCompany:dimensionTypeToBuildingUpdatedBies"/>
 
 ### Types of buildings {#building-type-created-bies}
 

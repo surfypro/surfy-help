@@ -1,7 +1,7 @@
 # Organisation
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise
 
 <OH code="organization"/>
 
@@ -34,7 +34,7 @@ Nom qui va définir l'organisation
 
 ### Direction {#organization}
 
-
+Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise
 
 *Nom technique:* ```organization```
 <PH code="organization:organization"/>
@@ -44,7 +44,7 @@ Nom qui va définir l'organisation
 
 ### Espaces {#rooms}
 
-
+Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces
 
 *Nom technique:* ```rooms```
 <PH code="organization:rooms"/>
@@ -79,7 +79,7 @@ Ce sont les personnes entrées dans la base de données de Surfy
 
 ### Services {#organizations}
 
-
+Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise
 
 *Nom technique:* ```organizations```
 <PH code="organization:organizations"/>

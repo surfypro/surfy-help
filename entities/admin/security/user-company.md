@@ -71,62 +71,6 @@ Ce sont les personnes entrées dans la base de données de Surfy
 *Nom technique:* ```featureUpdatedBies```
 <PH code="userCompany:featureUpdatedBies"/>
 
-###  Partner Export Mapping Configuration To Floors {#partner-export-mapping-configuration-to-floor-created-bies}
-
-
-
-*Nom technique:* ```partnerExportMappingConfigurationToFloorCreatedBies```
-<PH code="userCompany:partnerExportMappingConfigurationToFloorCreatedBies"/>
-
-###  Partner Export Mapping Configuration To Floors {#partner-export-mapping-configuration-to-floor-updated-bies}
-
-
-
-*Nom technique:* ```partnerExportMappingConfigurationToFloorUpdatedBies```
-<PH code="userCompany:partnerExportMappingConfigurationToFloorUpdatedBies"/>
-
-###  Partner Export Mapping Configurations {#partner-export-mapping-configuration-created-bies}
-
-
-
-*Nom technique:* ```partnerExportMappingConfigurationCreatedBies```
-<PH code="userCompany:partnerExportMappingConfigurationCreatedBies"/>
-
-###  Partner Export Mapping Configurations {#partner-export-mapping-configuration-updated-bies}
-
-
-
-*Nom technique:* ```partnerExportMappingConfigurationUpdatedBies```
-<PH code="userCompany:partnerExportMappingConfigurationUpdatedBies"/>
-
-###  Partner Export Mapping To Room Types {#partner-export-mapping-to-room-type-created-bies}
-
-
-
-*Nom technique:* ```partnerExportMappingToRoomTypeCreatedBies```
-<PH code="userCompany:partnerExportMappingToRoomTypeCreatedBies"/>
-
-###  Partner Export Mapping To Room Types {#partner-export-mapping-to-room-type-updated-bies}
-
-
-
-*Nom technique:* ```partnerExportMappingToRoomTypeUpdatedBies```
-<PH code="userCompany:partnerExportMappingToRoomTypeUpdatedBies"/>
-
-###  Partner Export Mappings {#partner-export-mapping-created-bies}
-
-
-
-*Nom technique:* ```partnerExportMappingCreatedBies```
-<PH code="userCompany:partnerExportMappingCreatedBies"/>
-
-###  Partner Export Mappings {#partner-export-mapping-updated-bies}
-
-
-
-*Nom technique:* ```partnerExportMappingUpdatedBies```
-<PH code="userCompany:partnerExportMappingUpdatedBies"/>
-
 ###  Structure Points {#structure-point-created-bies}
 
 
@@ -358,20 +302,6 @@ Bâtiments dont l'utilisateur est le propriétaire
 *Nom technique:* ```buildingOwners```
 <PH code="userCompany:buildingOwners"/>
 
-### Calques d'affectation du bâtiment {#dimension-type-to-building-created-bies}
-
-
-
-*Nom technique:* ```dimensionTypeToBuildingCreatedBies```
-<PH code="userCompany:dimensionTypeToBuildingCreatedBies"/>
-
-### Calques d'affectation du bâtiment {#dimension-type-to-building-updated-bies}
-
-
-
-*Nom technique:* ```dimensionTypeToBuildingUpdatedBies```
-<PH code="userCompany:dimensionTypeToBuildingUpdatedBies"/>
-
 ### Calques d'analyse {#dimension-created-bies}
 
 
@@ -498,6 +428,20 @@ Le centre de coût permet de répartir les espaces dynamiquement pour la refactu
 *Nom technique:* ```partnerApiCredentialUpdatedBies```
 <PH code="userCompany:partnerApiCredentialUpdatedBies"/>
 
+### Configurations des transformations des exports partenaires {#partner-export-mapping-configuration-created-bies}
+
+
+
+*Nom technique:* ```partnerExportMappingConfigurationCreatedBies```
+<PH code="userCompany:partnerExportMappingConfigurationCreatedBies"/>
+
+### Configurations des transformations des exports partenaires {#partner-export-mapping-configuration-updated-bies}
+
+
+
+*Nom technique:* ```partnerExportMappingConfigurationUpdatedBies```
+<PH code="userCompany:partnerExportMappingConfigurationUpdatedBies"/>
+
 ### Connecteurs d'espace {#room-connector-created-bies}
 
 Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces dans des étages différents
@@ -556,31 +500,45 @@ L'entreprise prestataire permet de gérer le personnel prestataire par entrepris
 
 ### Espaces {#room-created-bies}
 
-
+Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces
 
 *Nom technique:* ```roomCreatedBies```
 <PH code="userCompany:roomCreatedBies"/>
 
 ### Espaces {#room-updated-bies}
 
-
+Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces
 
 *Nom technique:* ```roomUpdatedBies```
 <PH code="userCompany:roomUpdatedBies"/>
 
 ### Étages {#floor-created-bies}
 
-
+Les étages represent un plateau de travail ou un niveau d'un bâtiment
 
 *Nom technique:* ```floorCreatedBies```
 <PH code="userCompany:floorCreatedBies"/>
 
 ### Étages {#floor-updated-bies}
 
-
+Les étages represent un plateau de travail ou un niveau d'un bâtiment
 
 *Nom technique:* ```floorUpdatedBies```
 <PH code="userCompany:floorUpdatedBies"/>
+
+### Etages inclus Configurations des transformations des exports partenaires {#partner-export-mapping-configuration-to-floor-created-bies}
+
+
+
+*Nom technique:* ```partnerExportMappingConfigurationToFloorCreatedBies```
+<PH code="userCompany:partnerExportMappingConfigurationToFloorCreatedBies"/>
+
+### Etages inclus Configurations des transformations des exports partenaires {#partner-export-mapping-configuration-to-floor-updated-bies}
+
+
+
+*Nom technique:* ```partnerExportMappingConfigurationToFloorUpdatedBies```
+<PH code="userCompany:partnerExportMappingConfigurationToFloorUpdatedBies"/>
 
 ### Fabricants du type d'objet {#manufacturer-created-bies}
 
@@ -724,14 +682,14 @@ La légende permet de configurer les propriété visible quand le plan est sauve
 
 ### Organisations {#organization-created-bies}
 
-
+Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise
 
 *Nom technique:* ```organizationCreatedBies```
 <PH code="userCompany:organizationCreatedBies"/>
 
 ### Organisations {#organization-updated-bies}
 
-
+Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise
 
 *Nom technique:* ```organizationUpdatedBies```
 <PH code="userCompany:organizationUpdatedBies"/>
@@ -1002,6 +960,34 @@ Permet de définir tous les types de contrat des personnes vis à vis de l'entre
 *Nom technique:* ```structureUpdatedBies```
 <PH code="userCompany:structureUpdatedBies"/>
 
+### Transformations des exports partenaires {#partner-export-mapping-created-bies}
+
+
+
+*Nom technique:* ```partnerExportMappingCreatedBies```
+<PH code="userCompany:partnerExportMappingCreatedBies"/>
+
+### Transformations des exports partenaires {#partner-export-mapping-updated-bies}
+
+
+
+*Nom technique:* ```partnerExportMappingUpdatedBies```
+<PH code="userCompany:partnerExportMappingUpdatedBies"/>
+
+### Transformations des exports partenaires pour les types d'espaces {#partner-export-mapping-to-room-type-created-bies}
+
+
+
+*Nom technique:* ```partnerExportMappingToRoomTypeCreatedBies```
+<PH code="userCompany:partnerExportMappingToRoomTypeCreatedBies"/>
+
+### Transformations des exports partenaires pour les types d'espaces {#partner-export-mapping-to-room-type-updated-bies}
+
+
+
+*Nom technique:* ```partnerExportMappingToRoomTypeUpdatedBies```
+<PH code="userCompany:partnerExportMappingToRoomTypeUpdatedBies"/>
+
 ### Types d'espaces des prestataires {#person-company-to-room-type-created-bies}
 
 Les types d'espaces des prestataires permettent de définir une relation entre un type d'espaces et le prestataire et d'y définir une mission
@@ -1085,6 +1071,20 @@ Les types d'objets des prestataires permettent de définir une relation entre le
 
 *Nom technique:* ```dimensionTypeUpdatedBies```
 <PH code="userCompany:dimensionTypeUpdatedBies"/>
+
+### Types de calques d'affectation du bâtiment {#dimension-type-to-building-created-bies}
+
+Les types de calques d'affectation du bâtiment permettent de définir les différents types de calques d'affectation du bâtiment. En associant un type de calque d'affectation à un bâtiment, cela permet de transformer un calque d'analyse en calque d'affectation.
+
+*Nom technique:* ```dimensionTypeToBuildingCreatedBies```
+<PH code="userCompany:dimensionTypeToBuildingCreatedBies"/>
+
+### Types de calques d'affectation du bâtiment {#dimension-type-to-building-updated-bies}
+
+Les types de calques d'affectation du bâtiment permettent de définir les différents types de calques d'affectation du bâtiment. En associant un type de calque d'affectation à un bâtiment, cela permet de transformer un calque d'analyse en calque d'affectation.
+
+*Nom technique:* ```dimensionTypeToBuildingUpdatedBies```
+<PH code="userCompany:dimensionTypeToBuildingUpdatedBies"/>
 
 ### Types de distribution des coûts {#distribution-cost-type-created-bies}
 

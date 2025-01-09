@@ -1,4 +1,4 @@
-#  Partner Export Mapping To Room Type
+# Transformation des exports partenaires pour les types d'espaces
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 
@@ -12,7 +12,7 @@
 
 ## Entités associées (unique) {#properties-belongs-to}
 
-###  Partner Export Mapping {#partner-export-mapping}
+### Transformation des exports partenaires {#partner-export-mapping}
 
 
 

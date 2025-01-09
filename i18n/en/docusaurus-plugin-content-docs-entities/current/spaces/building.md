@@ -336,13 +336,6 @@ When a plan of this building is first opened, the default vision will be selecte
 *Technical name:* ```dimensionBuildings```
 <PH code="building:dimensionBuildings"/>
 
-### Building assignment layers {#dimension-type-to-buildings}
-
-
-
-*Technical name:* ```dimensionTypeToBuildings```
-<PH code="building:dimensionTypeToBuildings"/>
-
 ### Building assignments {#person-to-buildings}
 
 Allows you to assign a person to a building, without additional information. The assignment can be counted, or not.
@@ -387,7 +380,7 @@ Scenarios generated from this building
 
 ### Floors {#floors}
 
-
+Floors represent a work platform or a level of a building.
 
 *Technical name:* ```floors```
 <PH code="building:floors"/>
@@ -405,6 +398,13 @@ Scenarios generated from this building
 
 *Technical name:* ```contentRoleToBuildings```
 <PH code="building:contentRoleToBuildings"/>
+
+### Types of building assignment layers {#dimension-type-to-buildings}
+
+Building assignment layer types are used to define the different types of building assignment layers. By associating an assignment layer type with a building, this allows an analysis layer to be transformed into an assignment layer.
+
+*Technical name:* ```dimensionTypeToBuildings```
+<PH code="building:dimensionTypeToBuildings"/>
 
 
 

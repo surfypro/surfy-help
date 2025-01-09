@@ -1,7 +1,7 @@
 # Floor
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Floors represent a work platform or a level of a building.
 
 <OH code="floor"/>
 
@@ -217,13 +217,6 @@ The scale allows us to calculate in proportion the actual areas and sizes of obj
 
 ## Associated entities (list) {#properties-has-many}
 
-###  Partner Export Mapping Configuration To Floors {#partner-export-mapping-configuration-to-floors}
-
-
-
-*Technical name:* ```partnerExportMappingConfigurationToFloors```
-<PH code="floor:partnerExportMappingConfigurationToFloors"/>
-
 ### Analysis layers per floor {#dimension-floors}
 
 
@@ -259,6 +252,13 @@ The scale allows us to calculate in proportion the actual areas and sizes of obj
 *Technical name:* ```roomTypeGroupFloors```
 <PH code="floor:roomTypeGroupFloors"/>
 
+### Floors included Configurations of partner export transformations {#partner-export-mapping-configuration-to-floors}
+
+
+
+*Technical name:* ```partnerExportMappingConfigurationToFloors```
+<PH code="floor:partnerExportMappingConfigurationToFloors"/>
+
 ### Points of spaces {#room-points}
 
 
@@ -275,7 +275,7 @@ The scale allows us to calculate in proportion the actual areas and sizes of obj
 
 ### Spaces {#rooms}
 
-
+Spaces are workplaces or areas in order to divide a floor into sub-spaces.
 
 *Technical name:* ```rooms```
 <PH code="floor:rooms"/>

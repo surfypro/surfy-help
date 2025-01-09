@@ -77,13 +77,6 @@ Allows you to display or not the walls of the space in the 3d floor plan, the un
 
 ## Associated entities (list) {#properties-has-many}
 
-###  Partner Export Mapping To Room Types {#partner-export-mapping-to-room-types}
-
-
-
-*Technical name:* ```partnerExportMappingToRoomTypes```
-<PH code="roomType:partnerExportMappingToRoomTypes"/>
-
 ### Associations groups of space typologies to space typologies {#room-type-group-to-room-types}
 
 
@@ -105,9 +98,16 @@ Allows you to display or not the walls of the space in the 3d floor plan, the un
 *Technical name:* ```roomTypeFloors```
 <PH code="roomType:roomTypeFloors"/>
 
+### Partner export transformations for space types {#partner-export-mapping-to-room-types}
+
+
+
+*Technical name:* ```partnerExportMappingToRoomTypes```
+<PH code="roomType:partnerExportMappingToRoomTypes"/>
+
 ### Spaces {#rooms}
 
-
+Spaces are workplaces or areas in order to divide a floor into sub-spaces.
 
 *Technical name:* ```rooms```
 <PH code="roomType:rooms"/>

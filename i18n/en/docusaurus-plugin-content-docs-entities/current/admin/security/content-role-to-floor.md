@@ -21,7 +21,7 @@
 
 ### Floor {#floor}
 
-
+Floors represent a work platform or a level of a building.
 
 *Technical name:* ```floor```
 <PH code="contentRoleToFloor:floor"/>

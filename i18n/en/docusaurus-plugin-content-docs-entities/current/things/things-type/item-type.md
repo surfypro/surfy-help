@@ -78,6 +78,13 @@ The shape of the icon can influence its display on the plan
 *Technical name:* ```iconShape```
 <PH code="itemType:iconShape"/>
 
+### Is it associatable with a person ? {#is-affectable}
+
+Allows you to know if the object type is associable with a person
+
+*Technical name:* ```isAffectable```
+<PH code="itemType:isAffectable"/>
+
 ### Number of seats {#seats-count}
 
 The number of seats for this type of object (armchair, seat, sofa, etc.) is accumulated in Surfy by space, floor and building

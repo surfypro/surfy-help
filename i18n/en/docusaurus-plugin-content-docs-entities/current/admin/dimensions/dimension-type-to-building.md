@@ -1,7 +1,7 @@
-# Building assignment layer
+# Building assignment layer type
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Building assignment layer types are used to define the different types of building assignment layers. By associating an assignment layer type with a building, this allows an analysis layer to be transformed into an assignment layer.
 
 <OH code="dimensionTypeToBuilding"/>
 

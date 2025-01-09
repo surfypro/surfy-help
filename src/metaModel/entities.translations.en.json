@@ -51,7 +51,7 @@
             },
             "organization": {
                 "label": "Organization",
-                "description": null
+                "description": "Organizations have two hierarchical levels: departments and services, and help define the organizational structure of the company."
             },
             "itemTypeFamily": {
                 "label": "Family of object types",
@@ -87,7 +87,7 @@
             },
             "floor": {
                 "label": "Floor",
-                "description": null
+                "description": "Floors represent a work platform or a level of a building."
             },
             "distributionCostType": {
                 "label": "Type of cost distribution",
@@ -127,7 +127,7 @@
             },
             "room": {
                 "label": "Space",
-                "description": null
+                "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
             },
             "roomPoint": {
                 "label": "Point of spaces",
@@ -250,8 +250,8 @@
                 "description": "Allows you to assign a person to a district, territory or village"
             },
             "dimensionTypeToBuilding": {
-                "label": "Building assignment layer",
-                "description": null
+                "label": "Building assignment layer type",
+                "description": "Building assignment layer types are used to define the different types of building assignment layers. By associating an assignment layer type with a building, this allows an analysis layer to be transformed into an assignment layer."
             },
             "workingLocation": {
                 "label": " Working Location",
@@ -390,19 +390,19 @@
                 "description": null
             },
             "partnerExportMappingConfiguration": {
-                "label": " Partner Export Mapping Configuration",
+                "label": "Configuring Partner Export Transformation",
                 "description": null
             },
             "partnerExportMapping": {
-                "label": " Partner Export Mapping",
+                "label": "Transformation of partner exports",
                 "description": null
             },
             "partnerExportMappingToRoomType": {
-                "label": " Partner Export Mapping To Room Type",
+                "label": "Transformation of partner exports for space types",
                 "description": null
             },
             "partnerExportMappingConfigurationToFloor": {
-                "label": " Partner Export Mapping Configuration To Floor",
+                "label": "Floor included in the configuration of the transformation of partner exports",
                 "description": null
             },
             "jupRoleToJupUiLayout": {
@@ -458,7 +458,7 @@
                 },
                 "rooms": {
                     "label": "Spaces",
-                    "description": null
+                    "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 }
             },
             "user": {
@@ -818,7 +818,7 @@
                 },
                 "rooms": {
                     "label": "Spaces",
-                    "description": null
+                    "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "companyId": {
                     "label": "Company ID",
@@ -928,11 +928,11 @@
                 },
                 "organizationCreatedBies": {
                     "label": "Organizations",
-                    "description": null
+                    "description": "Organizations have two hierarchical levels: departments and services, and help define the organizational structure of the company."
                 },
                 "organizationUpdatedBies": {
                     "label": "Organizations",
-                    "description": null
+                    "description": "Organizations have two hierarchical levels: departments and services, and help define the organizational structure of the company."
                 },
                 "itemTypeFamilyCreatedBies": {
                     "label": "Families of object types",
@@ -996,11 +996,11 @@
                 },
                 "floorCreatedBies": {
                     "label": "Floors",
-                    "description": null
+                    "description": "Floors represent a work platform or a level of a building."
                 },
                 "floorUpdatedBies": {
                     "label": "Floors",
-                    "description": null
+                    "description": "Floors represent a work platform or a level of a building."
                 },
                 "distributionCostTypeCreatedBies": {
                     "label": "Types of cost distribution",
@@ -1068,11 +1068,11 @@
                 },
                 "roomCreatedBies": {
                     "label": "Spaces",
-                    "description": null
+                    "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "roomUpdatedBies": {
                     "label": "Spaces",
-                    "description": null
+                    "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "roomPointCreatedBies": {
                     "label": "Points of spaces",
@@ -1307,12 +1307,12 @@
                     "description": "Allows you to assign a person to a district, territory or village"
                 },
                 "dimensionTypeToBuildingCreatedBies": {
-                    "label": "Building assignment layers",
-                    "description": null
+                    "label": "Types of building assignment layers",
+                    "description": "Building assignment layer types are used to define the different types of building assignment layers. By associating an assignment layer type with a building, this allows an analysis layer to be transformed into an assignment layer."
                 },
                 "dimensionTypeToBuildingUpdatedBies": {
-                    "label": "Building assignment layers",
-                    "description": null
+                    "label": "Types of building assignment layers",
+                    "description": "Building assignment layer types are used to define the different types of building assignment layers. By associating an assignment layer type with a building, this allows an analysis layer to be transformed into an assignment layer."
                 },
                 "personWorkingLocationCreatedBies": {
                     "label": "People's work locations",
@@ -1499,35 +1499,35 @@
                     "description": null
                 },
                 "partnerExportMappingConfigurationCreatedBies": {
-                    "label": " Partner Export Mapping Configurations",
+                    "label": "Partner export transformation configurations",
                     "description": null
                 },
                 "partnerExportMappingConfigurationUpdatedBies": {
-                    "label": " Partner Export Mapping Configurations",
+                    "label": "Partner export transformation configurations",
                     "description": null
                 },
                 "partnerExportMappingCreatedBies": {
-                    "label": " Partner Export Mappings",
+                    "label": "Transformations of partner exports",
                     "description": null
                 },
                 "partnerExportMappingUpdatedBies": {
-                    "label": " Partner Export Mappings",
+                    "label": "Transformations of partner exports",
                     "description": null
                 },
                 "partnerExportMappingToRoomTypeCreatedBies": {
-                    "label": " Partner Export Mapping To Room Types",
+                    "label": "Partner export transformations for space types",
                     "description": null
                 },
                 "partnerExportMappingToRoomTypeUpdatedBies": {
-                    "label": " Partner Export Mapping To Room Types",
+                    "label": "Partner export transformations for space types",
                     "description": null
                 },
                 "partnerExportMappingConfigurationToFloorCreatedBies": {
-                    "label": " Partner Export Mapping Configuration To Floors",
+                    "label": "Floors included Configurations of partner export transformations",
                     "description": null
                 },
                 "partnerExportMappingConfigurationToFloorUpdatedBies": {
-                    "label": " Partner Export Mapping Configuration To Floors",
+                    "label": "Floors included Configurations of partner export transformations",
                     "description": null
                 },
                 "itemFactCreatedBies": {
@@ -1782,15 +1782,15 @@
                 },
                 "organizationId": {
                     "label": "Management ID",
-                    "description": null
+                    "description": "Organizations have two hierarchical levels: departments and services, and help define the organizational structure of the company."
                 },
                 "organization": {
                     "label": "Direction",
-                    "description": null
+                    "description": "Organizations have two hierarchical levels: departments and services, and help define the organizational structure of the company."
                 },
                 "organizations": {
                     "label": "Services",
-                    "description": null
+                    "description": "Organizations have two hierarchical levels: departments and services, and help define the organizational structure of the company."
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -1810,7 +1810,7 @@
                 },
                 "rooms": {
                     "label": "Spaces",
-                    "description": null
+                    "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "people": {
                     "label": "People",
@@ -2051,6 +2051,10 @@
                 "iconBorderColor": {
                     "label": "Icon border color",
                     "description": "The border color allows you to correctly configure multi-color icons, especially triangular ones."
+                },
+                "isAffectable": {
+                    "label": "Is it associatable with a person ?",
+                    "description": "Allows you to know if the object type is associable with a person"
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -2376,7 +2380,7 @@
                 },
                 "floors": {
                     "label": "Floors",
-                    "description": null
+                    "description": "Floors represent a work platform or a level of a building."
                 },
                 "roomTypeGroupBuildings": {
                     "label": "Groups of building space typologies",
@@ -2407,8 +2411,8 @@
                     "description": "Allows you to assign a person to a building, without additional information. The assignment can be counted, or not."
                 },
                 "dimensionTypeToBuildings": {
-                    "label": "Building assignment layers",
-                    "description": null
+                    "label": "Types of building assignment layers",
+                    "description": "Building assignment layer types are used to define the different types of building assignment layers. By associating an assignment layer type with a building, this allows an analysis layer to be transformed into an assignment layer."
                 },
                 "contentRoleToBuildings": {
                     "label": "Role associations of content to buildings",
@@ -2494,7 +2498,7 @@
                 },
                 "floors": {
                     "label": "Floors",
-                    "description": null
+                    "description": "Floors represent a work platform or a level of a building."
                 },
                 "companyId": {
                     "label": "Company ID",
@@ -2552,7 +2556,7 @@
                 },
                 "floors": {
                     "label": "Floors",
-                    "description": null
+                    "description": "Floors represent a work platform or a level of a building."
                 },
                 "companyId": {
                     "label": "Company ID",
@@ -2796,7 +2800,7 @@
                 },
                 "rooms": {
                     "label": "Spaces",
-                    "description": null
+                    "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "roomPoints": {
                     "label": "Points of spaces",
@@ -2819,7 +2823,7 @@
                     "description": null
                 },
                 "partnerExportMappingConfigurationToFloors": {
-                    "label": " Partner Export Mapping Configuration To Floors",
+                    "label": "Floors included Configurations of partner export transformations",
                     "description": null
                 },
                 "companyId": {
@@ -2878,7 +2882,7 @@
                 },
                 "rooms": {
                     "label": "Spaces",
-                    "description": null
+                    "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "companyId": {
                     "label": "Company ID",
@@ -3014,7 +3018,7 @@
                 },
                 "rooms": {
                     "label": "Spaces",
-                    "description": null
+                    "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "roomTypeFloors": {
                     "label": "Floor space typologies",
@@ -3029,7 +3033,7 @@
                     "description": "The types of spaces of the service providers make it possible to define a relationship between a type of space and the service provider and to define a mission."
                 },
                 "partnerExportMappingToRoomTypes": {
-                    "label": " Partner Export Mapping To Room Types",
+                    "label": "Partner export transformations for space types",
                     "description": null
                 },
                 "companyId": {
@@ -3206,11 +3210,11 @@
                 },
                 "floorId": {
                     "label": "Identifier of the floor",
-                    "description": null
+                    "description": "Floors represent a work platform or a level of a building."
                 },
                 "floor": {
                     "label": "Floor",
-                    "description": null
+                    "description": "Floors represent a work platform or a level of a building."
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -3442,7 +3446,7 @@
                 },
                 "rooms": {
                     "label": "Spaces",
-                    "description": null
+                    "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "people": {
                     "label": "People",
@@ -3706,11 +3710,11 @@
                 },
                 "floorId": {
                     "label": "Identifier of the floor",
-                    "description": null
+                    "description": "Floors represent a work platform or a level of a building."
                 },
                 "floor": {
                     "label": "Floor",
-                    "description": null
+                    "description": "Floors represent a work platform or a level of a building."
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -3876,11 +3880,11 @@
                 },
                 "floorId": {
                     "label": "Identifier of the floor",
-                    "description": null
+                    "description": "Floors represent a work platform or a level of a building."
                 },
                 "floor": {
                     "label": "Floor",
-                    "description": null
+                    "description": "Floors represent a work platform or a level of a building."
                 },
                 "occupancyStatusId": {
                     "label": "Occupancy status identifier",
@@ -3900,11 +3904,11 @@
                 },
                 "organizationId": {
                     "label": "Organization ID",
-                    "description": null
+                    "description": "Organizations have two hierarchical levels: departments and services, and help define the organizational structure of the company."
                 },
                 "organization": {
                     "label": "Organization",
-                    "description": null
+                    "description": "Organizations have two hierarchical levels: departments and services, and help define the organizational structure of the company."
                 },
                 "costCenterId": {
                     "label": "Cost center identifier",
@@ -4006,11 +4010,11 @@
                 },
                 "floorId": {
                     "label": "Identifier of the floor",
-                    "description": null
+                    "description": "Floors represent a work platform or a level of a building."
                 },
                 "floor": {
                     "label": "Floor",
-                    "description": null
+                    "description": "Floors represent a work platform or a level of a building."
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -4072,11 +4076,11 @@
                 },
                 "roomId": {
                     "label": "Space ID",
-                    "description": null
+                    "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "room": {
                     "label": "Space",
-                    "description": null
+                    "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "roomPointId": {
                     "label": "Point identifier",
@@ -4343,8 +4347,8 @@
                     "description": null
                 },
                 "dimensionTypeToBuildings": {
-                    "label": "Building assignment layers",
-                    "description": null
+                    "label": "Types of building assignment layers",
+                    "description": "Building assignment layer types are used to define the different types of building assignment layers. By associating an assignment layer type with a building, this allows an analysis layer to be transformed into an assignment layer."
                 },
                 "companyId": {
                     "label": "Company ID",
@@ -4480,11 +4484,11 @@
                 },
                 "roomId": {
                     "label": "Space ID",
-                    "description": null
+                    "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "room": {
                     "label": "Space",
-                    "description": null
+                    "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "dimensionTypeId": {
                     "label": "Identifier of the type of dimension",
@@ -4634,11 +4638,11 @@
                 },
                 "floorId": {
                     "label": "Identifier of the floor",
-                    "description": null
+                    "description": "Floors represent a work platform or a level of a building."
                 },
                 "floor": {
                     "label": "Floor",
-                    "description": null
+                    "description": "Floors represent a work platform or a level of a building."
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -5142,7 +5146,7 @@
                 },
                 "organizationId": {
                     "label": "Organization ID",
-                    "description": null
+                    "description": "Organizations have two hierarchical levels: departments and services, and help define the organizational structure of the company."
                 },
                 "organization": {
                     "label": "The organization of the person",
@@ -5408,11 +5412,11 @@
                 },
                 "roomId": {
                     "label": "Space ID",
-                    "description": null
+                    "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "room": {
                     "label": "Space",
-                    "description": null
+                    "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -5658,19 +5662,19 @@
                 },
                 "roomId": {
                     "label": "Space ID",
-                    "description": null
+                    "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "room": {
                     "label": "Workstation space",
-                    "description": null
+                    "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "organizationId": {
                     "label": "Organization ID",
-                    "description": null
+                    "description": "Organizations have two hierarchical levels: departments and services, and help define the organizational structure of the company."
                 },
                 "organization": {
                     "label": "Organization",
-                    "description": null
+                    "description": "Organizations have two hierarchical levels: departments and services, and help define the organizational structure of the company."
                 },
                 "costCenterId": {
                     "label": "Cost center identifier",
@@ -5750,6 +5754,10 @@
                     "label": "Price",
                     "description": "The purchase price of the item if it is different from the price of the item type"
                 },
+                "itemAffectationsCount": {
+                    "label": "Number of associations to people",
+                    "description": "The number of associations of this object with people"
+                },
                 "createdAt": {
                     "label": "Creation date",
                     "description": "Date of creation in Surfy, allows you to know the history of creation in Surfy"
@@ -5772,11 +5780,11 @@
                 },
                 "roomId": {
                     "label": "Space ID",
-                    "description": null
+                    "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "room": {
                     "label": "Object space",
-                    "description": null
+                    "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "workplaceId": {
                     "label": "Workstation identifier",
@@ -6016,19 +6024,19 @@
                 },
                 "organizationId": {
                     "label": "Organization ID",
-                    "description": null
+                    "description": "Organizations have two hierarchical levels: departments and services, and help define the organizational structure of the company."
                 },
                 "organization": {
                     "label": "Organization",
-                    "description": null
+                    "description": "Organizations have two hierarchical levels: departments and services, and help define the organizational structure of the company."
                 },
                 "floorId": {
                     "label": "Identifier of the floor",
-                    "description": null
+                    "description": "Floors represent a work platform or a level of a building."
                 },
                 "floor": {
                     "label": "Floor",
-                    "description": null
+                    "description": "Floors represent a work platform or a level of a building."
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -6154,11 +6162,11 @@
                 },
                 "organizationId": {
                     "label": "Organization ID",
-                    "description": null
+                    "description": "Organizations have two hierarchical levels: departments and services, and help define the organizational structure of the company."
                 },
                 "organization": {
                     "label": "Organization",
-                    "description": null
+                    "description": "Organizations have two hierarchical levels: departments and services, and help define the organizational structure of the company."
                 },
                 "buildingId": {
                     "label": "Building identifier",
@@ -6300,11 +6308,11 @@
                 },
                 "floorId": {
                     "label": "Identifier of the floor",
-                    "description": null
+                    "description": "Floors represent a work platform or a level of a building."
                 },
                 "floor": {
                     "label": "Floor",
-                    "description": null
+                    "description": "Floors represent a work platform or a level of a building."
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -6922,11 +6930,11 @@
                 },
                 "roomId": {
                     "label": "Space ID",
-                    "description": null
+                    "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "room": {
                     "label": "Space",
-                    "description": null
+                    "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "personWorkingLocationId": {
                     "label": "Id (People's work location)",
@@ -7930,11 +7938,11 @@
                 },
                 "floorId": {
                     "label": "Identifier of the floor",
-                    "description": null
+                    "description": "Floors represent a work platform or a level of a building."
                 },
                 "floor": {
                     "label": "Floor",
-                    "description": null
+                    "description": "Floors represent a work platform or a level of a building."
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -8563,11 +8571,11 @@
                     "description": "Updated by this user in Surfy, allows to know the history of the modification in Surfy"
                 },
                 "partnerExportMappings": {
-                    "label": " Partner Export Mappings",
+                    "label": "Transformations of partner exports",
                     "description": null
                 },
                 "partnerExportMappingConfigurationToFloors": {
-                    "label": " Partner Export Mapping Configuration To Floors",
+                    "label": "Floors included Configurations of partner export transformations",
                     "description": null
                 },
                 "companyId": {
@@ -8605,11 +8613,11 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "partnerExportMappingConfigurationId": {
-                    "label": "Id ( Partner Export Mapping Configuration)",
+                    "label": "Id (Configuring Partner Export Transformation)",
                     "description": null
                 },
                 "partnerExportMappingConfiguration": {
-                    "label": " Partner Export Mapping Configuration",
+                    "label": "Configuring Partner Export Transformation",
                     "description": null
                 },
                 "userCompanyCreatedById": {
@@ -8629,7 +8637,7 @@
                     "description": "Updated by this user in Surfy, allows to know the history of the modification in Surfy"
                 },
                 "partnerExportMappingToRoomTypes": {
-                    "label": " Partner Export Mapping To Room Types",
+                    "label": "Partner export transformations for space types",
                     "description": null
                 },
                 "companyId": {
@@ -8659,11 +8667,11 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "partnerExportMappingId": {
-                    "label": "Id ( Partner Export Mapping)",
+                    "label": "Id (Transformation of partner exports)",
                     "description": null
                 },
                 "partnerExportMapping": {
-                    "label": " Partner Export Mapping",
+                    "label": "Transformation of partner exports",
                     "description": null
                 },
                 "roomTypeId": {
@@ -8717,20 +8725,20 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "partnerExportMappingConfigurationId": {
-                    "label": "Id ( Partner Export Mapping Configuration)",
+                    "label": "Id (Configuring Partner Export Transformation)",
                     "description": null
                 },
                 "partnerExportMappingConfiguration": {
-                    "label": " Partner Export Mapping Configuration",
+                    "label": "Configuring Partner Export Transformation",
                     "description": null
                 },
                 "floorId": {
                     "label": "Identifier of the floor",
-                    "description": null
+                    "description": "Floors represent a work platform or a level of a building."
                 },
                 "floor": {
                     "label": "Floor",
-                    "description": null
+                    "description": "Floors represent a work platform or a level of a building."
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",

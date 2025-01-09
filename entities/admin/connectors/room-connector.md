@@ -44,7 +44,7 @@ Le temps nécessaire pour pouvoir passer de chaque étage au prochain
 
 ### Espaces {#rooms}
 
-
+Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces
 
 *Nom technique:* ```rooms```
 <PH code="roomConnector:rooms"/>

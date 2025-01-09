@@ -1,4 +1,4 @@
-#  Partner Export Mapping
+# Transformation of partner exports
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 
@@ -25,7 +25,7 @@
 
 ## Associated entities (unique) {#properties-belongs-to}
 
-###  Partner Export Mapping Configuration {#partner-export-mapping-configuration}
+### Configuring Partner Export Transformation {#partner-export-mapping-configuration}
 
 
 
@@ -35,7 +35,7 @@
 
 ## Associated entities (list) {#properties-has-many}
 
-###  Partner Export Mapping To Room Types {#partner-export-mapping-to-room-types}
+### Partner export transformations for space types {#partner-export-mapping-to-room-types}
 
 
 

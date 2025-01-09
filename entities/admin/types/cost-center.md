@@ -71,7 +71,7 @@ Répartir au prorata l'espace utilisé par ce centre de coût sur l'étage sur l
 
 ### Espaces {#rooms}
 
-
+Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces
 
 *Nom technique:* ```rooms```
 <PH code="costCenter:rooms"/>
