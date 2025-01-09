@@ -2,7 +2,7 @@
 
 ## 27 Decembre 2024 - v3.4.49
 
-- La palette des couleurs possède maintenant le blanc et le noir 
+- La palette des couleurs possède maintenant le blanc et le noir.
 - Dans la sélection des types d'espace il y a maintenant l'icone de la typologie
 - Mise en place des sélections en couleur pour les centres de coût, les organisations et les profils de sécurité
 
