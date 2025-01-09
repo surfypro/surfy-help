@@ -14,7 +14,7 @@
 
 ### Étage {#floor}
 
-
+Les étages represent un plateau de travail ou un niveau d'un bâtiment
 
 *Nom technique:* ```floor```
 <PH code="contentRoleToFloor:floor"/>

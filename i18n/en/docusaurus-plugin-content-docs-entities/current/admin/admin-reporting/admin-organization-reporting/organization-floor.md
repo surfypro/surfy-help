@@ -153,14 +153,14 @@ The workstation ratio is the number of square meters divided by the number of wo
 
 ### Floor {#floor}
 
-
+Floors represent a work platform or a level of a building.
 
 *Technical name:* ```floor```
 <PH code="organizationFloor:floor"/>
 
 ### Organization {#organization}
 
-
+Organizations have two hierarchical levels: departments and services, and help define the organizational structure of the company.
 
 *Technical name:* ```organization```
 <PH code="organizationFloor:organization"/>

@@ -1,7 +1,7 @@
 # Étage
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Les étages represent un plateau de travail ou un niveau d'un bâtiment
 
 <OH code="floor"/>
 
@@ -217,13 +217,6 @@ L'échelle permet de calculer en proportion les surfaces réelles et la taille d
 
 ## Entités associées (liste) {#properties-has-many}
 
-###  Partner Export Mapping Configuration To Floors {#partner-export-mapping-configuration-to-floors}
-
-
-
-*Nom technique:* ```partnerExportMappingConfigurationToFloors```
-<PH code="floor:partnerExportMappingConfigurationToFloors"/>
-
 ### Associations rôle de contenu aux étages {#content-role-to-floors}
 
 
@@ -247,10 +240,17 @@ L'échelle permet de calculer en proportion les surfaces réelles et la taille d
 
 ### Espaces {#rooms}
 
-
+Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces
 
 *Nom technique:* ```rooms```
 <PH code="floor:rooms"/>
+
+### Etages inclus Configurations des transformations des exports partenaires {#partner-export-mapping-configuration-to-floors}
+
+
+
+*Nom technique:* ```partnerExportMappingConfigurationToFloors```
+<PH code="floor:partnerExportMappingConfigurationToFloors"/>
 
 ### Groupes de typologies d'espace des étages {#room-type-group-floors}
 

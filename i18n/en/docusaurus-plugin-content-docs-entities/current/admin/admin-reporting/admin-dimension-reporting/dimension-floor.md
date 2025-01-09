@@ -160,7 +160,7 @@ The workstation ratio is the number of square meters divided by the number of wo
 
 ### Floor {#floor}
 
-
+Floors represent a work platform or a level of a building.
 
 *Technical name:* ```floor```
 <PH code="dimensionFloor:floor"/>

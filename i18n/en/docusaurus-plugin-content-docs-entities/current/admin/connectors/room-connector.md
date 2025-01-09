@@ -44,7 +44,7 @@ The time required to be able to move from each floor to the next
 
 ### Spaces {#rooms}
 
-
+Spaces are workplaces or areas in order to divide a floor into sub-spaces.
 
 *Technical name:* ```rooms```
 <PH code="roomConnector:rooms"/>

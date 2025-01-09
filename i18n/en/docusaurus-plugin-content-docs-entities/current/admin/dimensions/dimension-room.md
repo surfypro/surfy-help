@@ -28,7 +28,7 @@
 
 ### Space {#room}
 
-
+Spaces are workplaces or areas in order to divide a floor into sub-spaces.
 
 *Technical name:* ```room```
 <PH code="dimensionRoom:room"/>

@@ -36,7 +36,7 @@ The code is used in order to be able to automatically calculate the associated c
 
 ### Spaces {#rooms}
 
-
+Spaces are workplaces or areas in order to divide a floor into sub-spaces.
 
 *Technical name:* ```rooms```
 <PH code="distributionCostType:rooms"/>

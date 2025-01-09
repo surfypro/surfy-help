@@ -97,7 +97,7 @@ The cost center allows spaces to be distributed dynamically for re-invoicing
 
 ### Organization {#organization}
 
-
+Organizations have two hierarchical levels: departments and services, and help define the organizational structure of the company.
 
 *Technical name:* ```organization```
 <PH code="workplace:organization"/>
@@ -111,7 +111,7 @@ The cost center allows spaces to be distributed dynamically for re-invoicing
 
 ### Workstation space {#room}
 
-
+Spaces are workplaces or areas in order to divide a floor into sub-spaces.
 
 *Technical name:* ```room```
 <PH code="workplace:room"/>

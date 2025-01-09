@@ -62,19 +62,19 @@ Allows you to sort layer types to display them
 *Technical name:* ```dimensionFloors```
 <PH code="dimensionType:dimensionFloors"/>
 
-### Building assignment layers {#dimension-type-to-buildings}
-
-
-
-*Technical name:* ```dimensionTypeToBuildings```
-<PH code="dimensionType:dimensionTypeToBuildings"/>
-
 ### Space analysis layers {#dimension-rooms}
 
 
 
 *Technical name:* ```dimensionRooms```
 <PH code="dimensionType:dimensionRooms"/>
+
+### Types of building assignment layers {#dimension-type-to-buildings}
+
+Building assignment layer types are used to define the different types of building assignment layers. By associating an assignment layer type with a building, this allows an analysis layer to be transformed into an assignment layer.
+
+*Technical name:* ```dimensionTypeToBuildings```
+<PH code="dimensionType:dimensionTypeToBuildings"/>
 
 
 

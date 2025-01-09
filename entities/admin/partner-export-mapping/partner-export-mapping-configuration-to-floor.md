@@ -1,4 +1,4 @@
-#  Partner Export Mapping Configuration To Floor
+# Etage inclus dans la configuration de la transformation des exports partenaires
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 
@@ -12,7 +12,7 @@
 
 ## Entités associées (unique) {#properties-belongs-to}
 
-###  Partner Export Mapping Configuration {#partner-export-mapping-configuration}
+### Configuration de la transformation des exports partenaires {#partner-export-mapping-configuration}
 
 
 
@@ -21,7 +21,7 @@
 
 ### Étage {#floor}
 
-
+Les étages represent un plateau de travail ou un niveau d'un bâtiment
 
 *Nom technique:* ```floor```
 <PH code="partnerExportMappingConfigurationToFloor:floor"/>

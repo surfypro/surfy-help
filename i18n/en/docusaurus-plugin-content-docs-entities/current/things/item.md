@@ -22,6 +22,13 @@ The asset number is used to keep the accounting number
 *Technical name:* ```code```
 <PH code="item:code"/>
 
+### Number of associations to people {#item-affectations-count}
+
+The number of associations of this object with people
+
+*Technical name:* ```itemAffectationsCount```
+<PH code="item:itemAffectationsCount"/>
+
 ### Object reference {#reference}
 
 The object reference is used to find it and to differentiate this object from others
@@ -62,7 +69,7 @@ The purchase price of the item if it is different from the price of the item typ
 
 ### Object space {#room}
 
-
+Spaces are workplaces or areas in order to divide a floor into sub-spaces.
 
 *Technical name:* ```room```
 <PH code="item:room"/>

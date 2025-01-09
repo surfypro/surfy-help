@@ -27,7 +27,7 @@ The association between a point and a space makes it possible to preserve the or
 
 ### Space {#room}
 
-
+Spaces are workplaces or areas in order to divide a floor into sub-spaces.
 
 *Technical name:* ```room```
 <PH code="roomPointRoom:room"/>

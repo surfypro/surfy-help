@@ -1,7 +1,7 @@
 # Space
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Spaces are workplaces or areas in order to divide a floor into sub-spaces.
 
 <OH code="room"/>
 
@@ -230,7 +230,7 @@ Allows you to know which cost center to associate the space with when it comes t
 
 ### Floor {#floor}
 
-
+Floors represent a work platform or a level of a building.
 
 *Technical name:* ```floor```
 <PH code="room:floor"/>
@@ -244,7 +244,7 @@ The occupancy status makes it possible to identify the real-time status of a spa
 
 ### Organization {#organization}
 
-
+Organizations have two hierarchical levels: departments and services, and help define the organizational structure of the company.
 
 *Technical name:* ```organization```
 <PH code="room:organization"/>

@@ -57,6 +57,13 @@ L'empreinte carbone est le poids en Kilogrammes de CO2 émis par chaque objet is
 *Nom technique:* ```carbonFootprint```
 <PH code="itemType:carbonFootprint"/>
 
+### Est associable à une personne ? {#is-affectable}
+
+Permet de savoir si le type d'objet est associable à une personne
+
+*Nom technique:* ```isAffectable```
+<PH code="itemType:isAffectable"/>
+
 ### Forme de l'icone {#icon-shape}
 
 La forme de l'icone permet d'influencer son affichage sur le plan

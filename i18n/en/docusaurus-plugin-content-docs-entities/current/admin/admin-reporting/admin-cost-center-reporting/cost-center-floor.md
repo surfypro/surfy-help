@@ -160,7 +160,7 @@ The cost center allows spaces to be distributed dynamically for re-invoicing
 
 ### Floor {#floor}
 
-
+Floors represent a work platform or a level of a building.
 
 *Technical name:* ```floor```
 <PH code="costCenterFloor:floor"/>

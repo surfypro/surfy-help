@@ -36,7 +36,7 @@ Transformation of the structure to calibrate it on a map
 
 ### Floors {#floors}
 
-
+Floors represent a work platform or a level of a building.
 
 *Technical name:* ```floors```
 <PH code="structure:floors"/>

@@ -36,7 +36,7 @@ La couleur permet de colorier les espaces ou les postes de travail sur les plans
 
 ### Espaces {#rooms}
 
-
+Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces
 
 *Nom technique:* ```rooms```
 <PH code="occupancyStatus:rooms"/>

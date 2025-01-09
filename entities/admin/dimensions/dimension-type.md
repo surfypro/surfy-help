@@ -41,13 +41,6 @@ Permet de trier les types de calque pour les afficher
 
 ## Entités associées (liste) {#properties-has-many}
 
-### Calques d'affectation du bâtiment {#dimension-type-to-buildings}
-
-
-
-*Nom technique:* ```dimensionTypeToBuildings```
-<PH code="dimensionType:dimensionTypeToBuildings"/>
-
 ### Calques d'analyse {#dimensions}
 
 
@@ -75,6 +68,13 @@ Permet de trier les types de calque pour les afficher
 
 *Nom technique:* ```dimensionFloors```
 <PH code="dimensionType:dimensionFloors"/>
+
+### Types de calques d'affectation du bâtiment {#dimension-type-to-buildings}
+
+Les types de calques d'affectation du bâtiment permettent de définir les différents types de calques d'affectation du bâtiment. En associant un type de calque d'affectation à un bâtiment, cela permet de transformer un calque d'analyse en calque d'affectation.
+
+*Nom technique:* ```dimensionTypeToBuildings```
+<PH code="dimensionType:dimensionTypeToBuildings"/>
 
 
 

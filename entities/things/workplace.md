@@ -97,14 +97,14 @@ Le centre de coût permet de répartir les espaces dynamiquement pour la refactu
 
 ### Espace du poste de travail {#room}
 
-
+Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces
 
 *Nom technique:* ```room```
 <PH code="workplace:room"/>
 
 ### Organisation {#organization}
 
-
+Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise
 
 *Nom technique:* ```organization```
 <PH code="workplace:organization"/>
