@@ -526,14 +526,14 @@ Les étages represent un plateau de travail ou un niveau d'un bâtiment
 *Nom technique:* ```floorUpdatedBies```
 <PH code="userCompany:floorUpdatedBies"/>
 
-### Etages inclus Configurations des transformations des exports partenaires {#partner-export-mapping-configuration-to-floor-created-bies}
+### Etages inclus dans la configuration de la transformation des exports partenaires {#partner-export-mapping-configuration-to-floor-created-bies}
 
 
 
 *Nom technique:* ```partnerExportMappingConfigurationToFloorCreatedBies```
 <PH code="userCompany:partnerExportMappingConfigurationToFloorCreatedBies"/>
 
-### Etages inclus Configurations des transformations des exports partenaires {#partner-export-mapping-configuration-to-floor-updated-bies}
+### Etages inclus dans la configuration de la transformation des exports partenaires {#partner-export-mapping-configuration-to-floor-updated-bies}
 
 
 
@@ -609,6 +609,20 @@ Permet d’afficher les objets par Famille sur les plans et dans l’inventaire 
 
 *Nom technique:* ```roomTypeGroupFloorUpdatedBies```
 <PH code="userCompany:roomTypeGroupFloorUpdatedBies"/>
+
+### Hôtes de messages pour fenêtre contextuelle {#opener-post-message-host-created-bies}
+
+Un hôte de message pour fenêtre contextuelle est un élément qui permet de communiquer avec une fenêtre contextuelle ouverte sur les actions du plan
+
+*Nom technique:* ```openerPostMessageHostCreatedBies```
+<PH code="userCompany:openerPostMessageHostCreatedBies"/>
+
+### Hôtes de messages pour fenêtre contextuelle {#opener-post-message-host-updated-bies}
+
+Un hôte de message pour fenêtre contextuelle est un élément qui permet de communiquer avec une fenêtre contextuelle ouverte sur les actions du plan
+
+*Nom technique:* ```openerPostMessageHostUpdatedBies```
+<PH code="userCompany:openerPostMessageHostUpdatedBies"/>
 
 ### Interventions sur des objet {#person-company-to-item-created-bies}
 

@@ -63,6 +63,7 @@
         "apiUserToJupRole": "/entities/admin/api",
         "apiUserToContentRole": "/entities/admin/api",
         "partnerApiCredential": "/entities/admin/api",
+        "openerPostMessageHost": "/entities/admin/api",
         "userRegistrationTenantRule": "/entities/admin/authentification",
         "userRegistrationTenantRuleToJupRole": "/entities/admin/authentification",
         "userRegistrationTenantRuleToContentRole": "/entities/admin/authentification",

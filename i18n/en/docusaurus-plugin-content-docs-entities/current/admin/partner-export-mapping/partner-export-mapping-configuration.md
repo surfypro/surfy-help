@@ -20,7 +20,7 @@
 
 ## Associated entities (list) {#properties-has-many}
 
-### Floors included Configurations of partner export transformations {#partner-export-mapping-configuration-to-floors}
+### Floors included in the configuration of the transformation of partner exports {#partner-export-mapping-configuration-to-floors}
 
 
 

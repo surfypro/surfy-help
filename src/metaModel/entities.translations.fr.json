@@ -293,6 +293,10 @@
                 "label": "Légende",
                 "description": "La légende permet de configurer les propriété visible quand le plan est sauvegardé en image"
             },
+            "openerPostMessageHost": {
+                "label": "Hôte de message pour fenêtre contextuelle",
+                "description": "Un hôte de message pour fenêtre contextuelle est un élément qui permet de communiquer avec une fenêtre contextuelle ouverte sur les actions du plan"
+            },
             "jupObjectType": {
                 "label": "Type d'entité",
                 "description": null
@@ -1378,6 +1382,14 @@
                     "label": "Légende",
                     "description": "La légende permet de configurer les propriété visible quand le plan est sauvegardé en image"
                 },
+                "openerPostMessageHostCreatedBies": {
+                    "label": "Hôtes de messages pour fenêtre contextuelle",
+                    "description": "Un hôte de message pour fenêtre contextuelle est un élément qui permet de communiquer avec une fenêtre contextuelle ouverte sur les actions du plan"
+                },
+                "openerPostMessageHostUpdatedBies": {
+                    "label": "Hôtes de messages pour fenêtre contextuelle",
+                    "description": "Un hôte de message pour fenêtre contextuelle est un élément qui permet de communiquer avec une fenêtre contextuelle ouverte sur les actions du plan"
+                },
                 "contentRoleCreatedBies": {
                     "label": "Rôles de contenu",
                     "description": null
@@ -1523,11 +1535,11 @@
                     "description": null
                 },
                 "partnerExportMappingConfigurationToFloorCreatedBies": {
-                    "label": "Etages inclus Configurations des transformations des exports partenaires",
+                    "label": "Etages inclus dans la configuration de la transformation des exports partenaires",
                     "description": null
                 },
                 "partnerExportMappingConfigurationToFloorUpdatedBies": {
-                    "label": "Etages inclus Configurations des transformations des exports partenaires",
+                    "label": "Etages inclus dans la configuration de la transformation des exports partenaires",
                     "description": null
                 },
                 "itemFactCreatedBies": {
@@ -2823,7 +2835,7 @@
                     "description": null
                 },
                 "partnerExportMappingConfigurationToFloors": {
-                    "label": "Etages inclus Configurations des transformations des exports partenaires",
+                    "label": "Etages inclus dans la configuration de la transformation des exports partenaires",
                     "description": null
                 },
                 "companyId": {
@@ -7321,6 +7333,56 @@
                     "description": null
                 }
             },
+            "openerPostMessageHost": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "host": {
+                    "label": "Host",
+                    "description": null
+                },
+                "description": {
+                    "label": "Description",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                }
+            },
             "jupObjectType": {
                 "id": {
                     "label": "Id",
@@ -8575,7 +8637,7 @@
                     "description": null
                 },
                 "partnerExportMappingConfigurationToFloors": {
-                    "label": "Etages inclus Configurations des transformations des exports partenaires",
+                    "label": "Etages inclus dans la configuration de la transformation des exports partenaires",
                     "description": null
                 },
                 "companyId": {

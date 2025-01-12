@@ -245,7 +245,7 @@ Les espaces sont des lieux de travail ou des zones afin de découper un étage e
 *Nom technique:* ```rooms```
 <PH code="floor:rooms"/>
 
-### Etages inclus Configurations des transformations des exports partenaires {#partner-export-mapping-configuration-to-floors}
+### Etages inclus dans la configuration de la transformation des exports partenaires {#partner-export-mapping-configuration-to-floors}
 
 
 
