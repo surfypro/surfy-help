@@ -20,7 +20,7 @@
 
 ## Entités associées (liste) {#properties-has-many}
 
-### Etages inclus Configurations des transformations des exports partenaires {#partner-export-mapping-configuration-to-floors}
+### Etages inclus dans la configuration de la transformation des exports partenaires {#partner-export-mapping-configuration-to-floors}
 
 
 

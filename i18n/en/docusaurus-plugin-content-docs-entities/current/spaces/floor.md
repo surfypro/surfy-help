@@ -252,7 +252,7 @@ The scale allows us to calculate in proportion the actual areas and sizes of obj
 *Technical name:* ```roomTypeGroupFloors```
 <PH code="floor:roomTypeGroupFloors"/>
 
-### Floors included Configurations of partner export transformations {#partner-export-mapping-configuration-to-floors}
+### Floors included in the configuration of the transformation of partner exports {#partner-export-mapping-configuration-to-floors}
 
 
 

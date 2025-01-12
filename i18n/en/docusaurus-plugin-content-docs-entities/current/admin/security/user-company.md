@@ -547,14 +547,14 @@ Floors represent a work platform or a level of a building.
 *Technical name:* ```floorUpdatedBies```
 <PH code="userCompany:floorUpdatedBies"/>
 
-### Floors included Configurations of partner export transformations {#partner-export-mapping-configuration-to-floor-created-bies}
+### Floors included in the configuration of the transformation of partner exports {#partner-export-mapping-configuration-to-floor-created-bies}
 
 
 
 *Technical name:* ```partnerExportMappingConfigurationToFloorCreatedBies```
 <PH code="userCompany:partnerExportMappingConfigurationToFloorCreatedBies"/>
 
-### Floors included Configurations of partner export transformations {#partner-export-mapping-configuration-to-floor-updated-bies}
+### Floors included in the configuration of the transformation of partner exports {#partner-export-mapping-configuration-to-floor-updated-bies}
 
 
 
@@ -630,6 +630,20 @@ The legend allows you to configure the properties visible when the plan is saved
 
 *Technical name:* ```legendUpdatedBies```
 <PH code="userCompany:legendUpdatedBies"/>
+
+### Message hosts for pop-up window {#opener-post-message-host-created-bies}
+
+A pop-up message host is an element that allows you to communicate with a pop-up window opened on the actions in the plan.
+
+*Technical name:* ```openerPostMessageHostCreatedBies```
+<PH code="userCompany:openerPostMessageHostCreatedBies"/>
+
+### Message hosts for pop-up window {#opener-post-message-host-updated-bies}
+
+A pop-up message host is an element that allows you to communicate with a pop-up window opened on the actions in the plan.
+
+*Technical name:* ```openerPostMessageHostUpdatedBies```
+<PH code="userCompany:openerPostMessageHostUpdatedBies"/>
 
 ### Object movements {#item-fact-created-bies}
 

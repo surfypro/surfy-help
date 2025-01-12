@@ -1,13 +1,14 @@
 # Nouveautés
 
-<!-- ## 9 Janvier 2025 - v3.4.50
+## 12 Janvier 2025 - v3.4.52
 
 - Améliorations dans la gestion des erreurs lors de l'importation
 - Mise en place d'une option permettant de savoir si le type d'objet est affectable à une personne
     - Il est nécessaire de cocher cette propriété pour les casiers et les types d'objets affectables avant cette version
 - Les tableaux de bord graphiques par dates peuvent être groupés par jour, semaine, mois, trimestre ou année
 - Dans les pages d'édition et de visualisation des entités, les associations sous les propriétés sont maintenant séparées en 3 parties : les associations de base, les associations de reporting et les associations de sécurité. De plus, au lieu d'être ouvertes et affichées directement, il faut maintenant déplier l'association que vous souhaitez voir pour en avoir le détail. Cette modification permet de charger plus rapidement la page, de présenter moins d'informations non pertinentes à l'utilisateur et d'offrir plus d'espace pour les tableaux. Les associations sont triées par ordre alphabétique.
--->
+- Amélioration de l'API permettant l'utilisation des plans dans un contexte extérieur, par exemple intégrer des plans Surfy dans un autre logiciel pour choisir un poste de travail libre à affecter.
+
 
 ## 27 Decembre 2024 - v3.4.49
 
