@@ -1,0 +1,10 @@
+{
+  "label": "Les certifications disponibles",
+  "position": 3,
+  "link": {
+    "slug": "certificationlist",
+    "type": "generated-index",
+    "description": "Tout savoir sur les certifications Surfy"
+  }
+}
+
