@@ -1,5 +1,9 @@
 # Nouveautés
 
+## 22 Janvier 2025 - v3.4.58
+
+- Amélioration des performances de l'application
+
 ## 12 Janvier 2025 - v3.4.52
 
 - Améliorations dans la gestion des erreurs lors de l'importation
