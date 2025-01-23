@@ -1,5 +1,9 @@
 # Nouveautés
 
+## 23 Janvier 2025 - v3.4.59
+
+- Les objets sont colorés par défaut en fonction de la couleur du type d'objet dans toutes les visions, sauf la vision des occupations
+
 ## 22 Janvier 2025 - v3.4.58
 
 - Amélioration des performances de l'application

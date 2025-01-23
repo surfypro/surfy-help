@@ -134,6 +134,13 @@ The occupancy ratio is the number of square meters on the floor divided by the n
 *Technical name:* ```peopleRatio```
 <PH code="floor:peopleRatio"/>
 
+### Pathfinding Graph {#pathfinding-graph}
+
+
+
+*Technical name:* ```pathfindingGraph```
+<PH code="floor:pathfindingGraph"/>
+
 ### Qualified surface {#rooms-area}
 
 The qualified surface is the sum of the surfaces of the spaces

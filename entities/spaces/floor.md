@@ -127,6 +127,13 @@ L'opacité permet de voir plus ou moins le fond de plan
 *Nom technique:* ```backgroundLayoutOpacity```
 <PH code="floor:backgroundLayoutOpacity"/>
 
+### Pathfinding Graph {#pathfinding-graph}
+
+
+
+*Nom technique:* ```pathfindingGraph```
+<PH code="floor:pathfindingGraph"/>
+
 ### Ratio d'occupation {#people-ratio}
 
 Le ratio d'occupation est le nombre de métres carrés dans l'étage divisé par le nombre de personnes affectées soit directement dans les espaces, soit via un poste de travail, cette valeur est calculée

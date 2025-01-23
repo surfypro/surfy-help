@@ -62,7 +62,7 @@
 *Technical name:* ```jupRoleToJupUiOperations```
 <PH code="jupRole:jupRoleToJupUiOperations"/>
 
-### Role associations with interface options {#jup-role-to-jup-ui-options}
+### Role associations to plan visions {#jup-role-to-jup-ui-options}
 
 
 

@@ -334,7 +334,7 @@
                 "description": null
             },
             "jupRoleToJupUiOption": {
-                "label": "Association rôle aux options d'interface",
+                "label": "Association rôle aux visions du plan",
                 "description": null
             },
             "jupRoleToJupUiOperation": {
@@ -2749,6 +2749,10 @@
                 "backgroundLayoutOpacity": {
                     "label": "Opacité du fond de plan",
                     "description": "L'opacité permet de voir plus ou moins le fond de plan"
+                },
+                "pathfindingGraph": {
+                    "label": "Pathfinding Graph",
+                    "description": null
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -7489,7 +7493,7 @@
                     "description": null
                 },
                 "jupRoleToJupUiOptions": {
-                    "label": "Associations rôle aux options d'interface",
+                    "label": "Associations rôle aux visions du plan",
                     "description": null
                 },
                 "jupRoleToJupUiOperations": {
@@ -7535,7 +7539,7 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "jupRoleToJupUiOptions": {
-                    "label": "Associations rôle aux options d'interface",
+                    "label": "Associations rôle aux visions du plan",
                     "description": null
                 }
             },

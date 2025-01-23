@@ -334,7 +334,7 @@
                 "description": null
             },
             "jupRoleToJupUiOption": {
-                "label": "Role association with interface options",
+                "label": "Association role to visions of the plan",
                 "description": null
             },
             "jupRoleToJupUiOperation": {
@@ -2749,6 +2749,10 @@
                 "backgroundLayoutOpacity": {
                     "label": "Background opacity",
                     "description": "The opacity allows you to see more or less the background"
+                },
+                "pathfindingGraph": {
+                    "label": "Pathfinding Graph",
+                    "description": null
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -7489,7 +7493,7 @@
                     "description": null
                 },
                 "jupRoleToJupUiOptions": {
-                    "label": "Role associations with interface options",
+                    "label": "Role associations to plan visions",
                     "description": null
                 },
                 "jupRoleToJupUiOperations": {
@@ -7535,7 +7539,7 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "jupRoleToJupUiOptions": {
-                    "label": "Role associations with interface options",
+                    "label": "Role associations to plan visions",
                     "description": null
                 }
             },
