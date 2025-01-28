@@ -6,11 +6,15 @@ import entitiesPath from '../../../src/metaModel/entities.paths.json';
 import { useTranslations } from "../Translations/translations";
 import { HelpTooltipStyled } from "./HelpTooltipStyled";
 import { toDocumentationLinkString } from "@site/src/utils/documentionStyle";
+import { getPropertyTypeByCode, PropertyTypeCodes} from "@site/schema";
 
-export function PropertyType(props: { code: string }) {
+export function PropertyType(props: { code: PropertyTypeCodes }) {
     const entitiesTranslations = useTranslations();
     const { code } = props;
-    const [objectTypeName, name] = code.split(':');
+
+    const propertyType =getPropertyTypeByCode(code);
+
+    const {objectTypeName, name} = propertyType;
 
     const directoryPath = entitiesPath.objectTypePathMapping[objectTypeName];
     if (!directoryPath) {
@@ -24,7 +28,7 @@ export function PropertyType(props: { code: string }) {
 
     const Title = <Paper sx={{ p: 2 }}>
         <Box style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
-            <h2 >{translations.label}</h2>
+            <h2 >{translations.label}</h2> {propertyType.options.mandatory ? '*' : ''}
             <Box style={{ flexGrow: 1, display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
                 {objectTypeTranslation.label}
             </Box>

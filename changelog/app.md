@@ -1,5 +1,11 @@
 # Nouveautés
 
+<!-- ## 24 Janvier 2025 - v3.4.60
+
+- Introduction de Surfy Copilot en version Beta pour aider à la création des plans
+- Les types d'objets peuvent être exclus de la création du graphe d'orientation via une option dans les propriétés du type d'objet
+- Les icônes sont toutes exclues de la création du graphe d'orientation -->
+
 ## 23 Janvier 2025 - v3.4.59
 
 - Les objets sont colorés par défaut en fonction de la couleur du type d'objet dans toutes les visions, sauf dans la vision des occupations où ils sont blancs.

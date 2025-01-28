@@ -2068,6 +2068,10 @@
                     "label": "Est associable à une personne ?",
                     "description": "Permet de savoir si le type d'objet est associable à une personne"
                 },
+                "excludeFromPathfinding": {
+                    "label": "Activer la navigation",
+                    "description": "Permet d'activer la navigation pour ce type d'objet"
+                },
                 "createdAt": {
                     "label": "Date de création",
                     "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
@@ -2751,8 +2755,8 @@
                     "description": "L'opacité permet de voir plus ou moins le fond de plan"
                 },
                 "pathfindingGraph": {
-                    "label": "Pathfinding Graph",
-                    "description": null
+                    "label": "Graphe de navigation de l'étage",
+                    "description": "Le graphe de navigation permet de calculer les chemins les plus courts entre les points de l'étage"
                 },
                 "createdAt": {
                     "label": "Date de création",

@@ -36,6 +36,13 @@ Le fond de plan permet d'avoir un premier niveau de calque afin de pouvoir redes
 *Nom technique:* ```backgroundLayout```
 <PH code="floor:backgroundLayout"/>
 
+### Graphe de navigation de l'étage {#pathfinding-graph}
+
+Le graphe de navigation permet de calculer les chemins les plus courts entre les points de l'étage
+
+*Nom technique:* ```pathfindingGraph```
+<PH code="floor:pathfindingGraph"/>
+
 ### Hauteur sous plafond {#height}
 
 La hauteur sous plafond de l'étage
@@ -126,13 +133,6 @@ L'opacité permet de voir plus ou moins le fond de plan
 
 *Nom technique:* ```backgroundLayoutOpacity```
 <PH code="floor:backgroundLayoutOpacity"/>
-
-### Pathfinding Graph {#pathfinding-graph}
-
-
-
-*Nom technique:* ```pathfindingGraph```
-<PH code="floor:pathfindingGraph"/>
 
 ### Ratio d'occupation {#people-ratio}
 

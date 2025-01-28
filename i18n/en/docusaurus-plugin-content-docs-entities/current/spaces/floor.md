@@ -43,6 +43,13 @@ Allows to know the rate of use of workstations, it is the inverse of the number 
 *Technical name:* ```expansionRatio```
 <PH code="floor:expansionRatio"/>
 
+### Floor navigation graph {#pathfinding-graph}
+
+The navigation graph allows you to calculate the shortest paths between the points on the floor
+
+*Technical name:* ```pathfindingGraph```
+<PH code="floor:pathfindingGraph"/>
+
 ### Level {#level}
 
 The level of the floor allows to define its position relative to the other floors, for example use 0 for the ground floor or -1 for the car parks
@@ -133,13 +140,6 @@ The occupancy ratio is the number of square meters on the floor divided by the n
 
 *Technical name:* ```peopleRatio```
 <PH code="floor:peopleRatio"/>
-
-### Pathfinding Graph {#pathfinding-graph}
-
-
-
-*Technical name:* ```pathfindingGraph```
-<PH code="floor:pathfindingGraph"/>
 
 ### Qualified surface {#rooms-area}
 

@@ -8,6 +8,13 @@
 
 ## Propriétés de base {#properties-base}
 
+### Activer la navigation {#exclude-from-pathfinding}
+
+Permet d'activer la navigation pour ce type d'objet
+
+*Nom technique:* ```excludeFromPathfinding```
+<PH code="itemType:excludeFromPathfinding"/>
+
 ### Afficher les informations sur le plan {#display-item-reference-in-map}
 
 Permet d’afficher le champ « Référence » de chaque objet sur le plan

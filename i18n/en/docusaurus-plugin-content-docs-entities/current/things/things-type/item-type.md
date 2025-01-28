@@ -36,6 +36,13 @@ Allows you to have additional information on the type of object
 *Technical name:* ```description```
 <PH code="itemType:description"/>
 
+### Enable navigation {#exclude-from-pathfinding}
+
+Enables navigation for this object type
+
+*Technical name:* ```excludeFromPathfinding```
+<PH code="itemType:excludeFromPathfinding"/>
+
 ### Height {#height}
 
 Allows you to give the height in centimeters of the type of object in 3d vision

@@ -2068,6 +2068,10 @@
                     "label": "Is it associatable with a person ?",
                     "description": "Allows you to know if the object type is associable with a person"
                 },
+                "excludeFromPathfinding": {
+                    "label": "Enable navigation",
+                    "description": "Enables navigation for this object type"
+                },
                 "createdAt": {
                     "label": "Creation date",
                     "description": "Date of creation in Surfy, allows you to know the history of creation in Surfy"
@@ -2751,8 +2755,8 @@
                     "description": "The opacity allows you to see more or less the background"
                 },
                 "pathfindingGraph": {
-                    "label": "Pathfinding Graph",
-                    "description": null
+                    "label": "Floor navigation graph",
+                    "description": "The navigation graph allows you to calculate the shortest paths between the points on the floor"
                 },
                 "createdAt": {
                     "label": "Creation date",
