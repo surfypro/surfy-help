@@ -3,7 +3,6 @@ import React from "react";
 import { SetupRecoilContext } from '@site/surfy';
 import { useCurrentLocale } from "../components/Translations/translations";
 
-
 const theme = createTheme({
     typography: {
         fontFamily: `var(--ifm-font-family-base)`,

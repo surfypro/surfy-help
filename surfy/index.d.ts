@@ -1,5 +1,4 @@
 import { default as default_2 } from 'react';
-import { Localization } from '@mui/material/locale';
 
 declare type ApiUserPropertyNames = 'id' | 'clientSecret' | 'name' | 'createdAt' | 'updatedAt' | 'externalId' | 'userCompanyCreatedById' | 'userCompanyCreatedBy' | 'userCompanyUpdatedById' | 'userCompanyUpdatedBy' | 'apiUserToJupRoles' | 'apiUserToContentRoles' | 'companyId' | 'company';
 
@@ -236,15 +235,6 @@ declare interface IJupTransform {
     translate: IPoint2d;
     rotate: number;
     scale: number;
-}
-
-export declare interface ILanguage {
-    name: string;
-    code: JupLanguageCode;
-    mui: Localization;
-    muiDatePicker: IDatePickerLocalization;
-    momentCode: MomentLocalCode;
-    flagCode: string;
 }
 
 declare interface IModel3d {
