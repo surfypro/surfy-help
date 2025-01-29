@@ -1,6 +1,7 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import {resolve} from 'path';
 
 const config: Config = {
   title: 'Surfy Academy',
@@ -117,6 +118,40 @@ const config: Config = {
         // ... other options
       },
     ],
+    // function myCustomPlugin(context, options) {
+    //   return {
+    //     name: 'custom-webpack-plugin',
+    //     configureWebpack(config, isServer, utils, content) {
+    //       return {
+    //         module: {
+    //           rules: [
+    //             {
+    //               test: /\.(tsx)$/,
+    //               include: [
+    //                 resolve(__dirname, 'docs'),
+    //                 resolve(__dirname, 'src')
+    //               ],
+    //               use: [
+    //                 {
+    //                   loader: 'babel-loader',
+    //                   options: {
+    //                     presets: [
+    //                       '@babel/preset-react',
+    //                       '@babel/preset-typescript', // Enables TypeScript support
+    //                     ],
+    //                   },
+    //                 },
+    //                 // {
+    //                 //   loader: '@mdx-js/loader',
+    //                 // },
+    //               ],
+    //             }
+    //           ],
+    //         },
+    //       };
+    //     },
+    //   }
+    // }
   ],
   themeConfig: {
     // Replace with your project's social card

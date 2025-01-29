@@ -5,6 +5,7 @@ import { ObjectType } from '../components/MetaModel/ObjectType';
 import { PropertyTypeHelper } from '../components/MetaModel/helpers/PropertyTypeHelper';
 import { ObjectTypeHelper } from '../components/MetaModel/helpers/ObjectTypeHelper';
 
+
 export default {
     ...MDXComponents,
     P: PropertyType,

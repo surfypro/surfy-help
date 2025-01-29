@@ -15,7 +15,7 @@ Pour créer un nouveau bâtiment à partir de la page d'accueil de Surfy,
 -   ajouter la propriété <P code="building:address" /> du bâtiment permet de placer les bâtiments sur une carte pour une gestion multisite optimisée.
 -   le "bâtiment de référence" est le bâtiment derrière lequel le nouveau bâtiment sera caché. Celui-ci sera considéré comme un scénario de son bâtiment de référence. Sans bâtiment de référence, le bâtiment sera en première page (page d'accueil) et sera considéré comme "bâtiment principal".
 -   à la création d'un scénario, le "bâtiment de référence" par défaut est le bâtiment à partir duquel le scénario a été créé.
- 
+
 :::tip Le bâtiment de référence
 Le bâtiment de référence peut aussi être un bâtiment quelconque derrière lequel on positionne le bâtiment en question. Cela permet d'établir un classement sur plusieurs niveaux des différents projets. Les bâtiments visibles sur la page d'accueil sont les "bâtiments principaux" et les recherches peuvent en option sous la loupe ne s'exercer que sur ces seuls bâtiments.
 :::

@@ -1,12 +1,20 @@
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import fr from '../../../src/metaModel/entities.translations.fr.json';
 import en from '../../../src/metaModel/entities.translations.en.json';
+import { LocalFiles, SupportedLanguageCode } from "./translations.models";
 
-const locales = { fr, en };
 
-export function useTranslations(){
+const locales: LocalFiles = { ...fr, ...en };
+
+
+export function useCurrentLocale() {
     const context = useDocusaurusContext();
-    const locale = context.i18n.currentLocale;
-    const entitiesTranslations = locales[locale][locale];
+    const currentLocale = context.i18n.currentLocale as SupportedLanguageCode;
+    return currentLocale;
+}
+
+export function useTranslations() {
+    const currentLocale = useCurrentLocale();
+    const entitiesTranslations = locales[currentLocale];
     return entitiesTranslations;
 }

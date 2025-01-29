@@ -1,8 +1,0 @@
-{
-  "src/schema/index.ts": {
-    "file": "index.js",
-    "name": "index",
-    "src": "src/schema/index.ts",
-    "isEntry": true
-  }
-}

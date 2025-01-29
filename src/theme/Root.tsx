@@ -1,5 +1,7 @@
 import { ThemeProvider, createTheme } from "@mui/material";
 import React from "react";
+import { SetupRecoilContext } from '@site/surfy';
+import { useCurrentLocale } from "../components/Translations/translations";
 
 
 const theme = createTheme({
@@ -16,7 +18,12 @@ const theme = createTheme({
         }
     }
 });
-export default function Root(props: { children }) {
+export default function Root(props: { children: React.ReactNode }) {
     const { children } = props;
-    return <ThemeProvider theme={theme}>{children}</ThemeProvider>
+    const language = useCurrentLocale();
+    return <ThemeProvider theme={theme}>
+        <SetupRecoilContext defaultLanguage={language}>
+            {children}
+        </SetupRecoilContext>
+    </ThemeProvider>
 }
