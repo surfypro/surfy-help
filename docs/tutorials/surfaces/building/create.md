@@ -4,7 +4,6 @@ sidebar_position: 1
 
 # Créer un bâtiment
 
-
 <Youtube code="M26SIN2q0Mk"/>
 
 Pour créer un nouveau bâtiment à partir de la page d'accueil de Surfy,
