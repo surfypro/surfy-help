@@ -2,6 +2,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import fr from '../../../src/metaModel/entities.translations.fr.json';
 import en from '../../../src/metaModel/entities.translations.en.json';
 
+
 const locales = { fr, en };
 
 export function useTranslations(){

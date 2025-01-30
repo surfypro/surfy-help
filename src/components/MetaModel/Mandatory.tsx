@@ -29,9 +29,9 @@ export function Mandatory(props: { code: string }) {
     return <p>
         <a href={href}>{objectTypeTranslation.label}</a>
         <ul>
-            {Object.entries(entitiesTranslations.propertyTypeTranslations[objectTypeName]).filter((mandatory) => true).map(([name, translation, mandatory]) => (
+            {Object.entries(entitiesTranslations.propertyTypeTranslations[objectTypeName]).filter((o) => o).map(([name, translation]) => (
                 <li key={name}>
-                    <a href={`${href}#${toDocumentationLinkString(name)}`}>{translation.label}{mandatory ? '*' : ''}</a>
+                    <a href={`${href}#${toDocumentationLinkString(name)}`}>{translation}{mandatory ? '*' : ''}</a>
                 </li>
             ))}
         </ul>
