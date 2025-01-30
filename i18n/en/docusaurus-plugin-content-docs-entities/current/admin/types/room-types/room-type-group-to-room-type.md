@@ -6,7 +6,8 @@
 <OH code="roomTypeGroupToRoomType"/>
 
 
-## Basic properties {#properties-base}
+
+
 
 
 

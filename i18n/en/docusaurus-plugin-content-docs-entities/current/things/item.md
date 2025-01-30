@@ -6,8 +6,29 @@
 <OH code="item"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
+### Position {#position}
+
+
+
+*Technical name:* ```position```
+<PH code="item:position"/>
+
+### Rotation {#rotation}
+
+
+
+*Technical name:* ```rotation```
+<PH code="item:rotation"/>
+
+    
+
+
+## Basic properties {#properties-base}
+    
 ### Date of purchase {#purchase-date}
 
 The date of purchase of the object
@@ -36,26 +57,12 @@ The object reference is used to find it and to differentiate this object from ot
 *Technical name:* ```reference```
 <PH code="item:reference"/>
 
-### Position {#position}
-
-
-
-*Technical name:* ```position```
-<PH code="item:position"/>
-
 ### Price {#price}
 
 The purchase price of the item if it is different from the price of the item type
 
 *Technical name:* ```price```
 <PH code="item:price"/>
-
-### Rotation {#rotation}
-
-
-
-*Technical name:* ```rotation```
-<PH code="item:rotation"/>
 
 ### Text Anchor {#text-anchor}
 
@@ -64,6 +71,7 @@ The purchase price of the item if it is different from the price of the item typ
 *Technical name:* ```textAnchor```
 <PH code="item:textAnchor"/>
 
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

@@ -6,8 +6,12 @@ Permet d'attribuer une personne à un bâtiment, sans information supplémentair
 <OH code="personToBuilding"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+
+
+## Propriétés de base {#properties-base}
+    
 ### Comptabiliser l'affectation {#add-to-people-count}
 
 Ajouter cette affectation au nombre total des personnes affectées au bâtiment
@@ -15,6 +19,7 @@ Ajouter cette affectation au nombre total des personnes affectées au bâtiment
 *Nom technique:* ```addToPeopleCount```
 <PH code="personToBuilding:addToPeopleCount"/>
 
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 

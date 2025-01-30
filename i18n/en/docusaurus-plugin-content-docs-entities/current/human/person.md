@@ -6,8 +6,29 @@ These are the people entered into Surfy's database
 <OH code="person"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
+### First name {#firstname}
+
+The first name of the person
+
+*Technical name:* ```firstname```
+<PH code="person:firstname"/>
+
+### Last name {#lastname}
+
+Person's last name
+
+*Technical name:* ```lastname```
+<PH code="person:lastname"/>
+
+    
+
+
+## Basic properties {#properties-base}
+    
 ### Badge number {#badge-number}
 
 The person's badge number
@@ -50,26 +71,12 @@ The date the person joined the company
 *Technical name:* ```startDate```
 <PH code="person:startDate"/>
 
-### First name {#firstname}
-
-The first name of the person
-
-*Technical name:* ```firstname```
-<PH code="person:firstname"/>
-
 ### Full Name {#fullname}
 
 The full name of the person making it easier to find
 
 *Technical name:* ```fullname```
 <PH code="person:fullname"/>
-
-### Last name {#lastname}
-
-Person's last name
-
-*Technical name:* ```lastname```
-<PH code="person:lastname"/>
 
 ### Locker number {#box-number}
 
@@ -141,6 +148,7 @@ The title of the person
 *Technical name:* ```title```
 <PH code="person:title"/>
 
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

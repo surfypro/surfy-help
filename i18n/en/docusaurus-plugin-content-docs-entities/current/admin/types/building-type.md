@@ -6,8 +6,22 @@
 <OH code="buildingType"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
+### Name of the type of building {#name}
+
+Name of the type of building
+
+*Technical name:* ```name```
+<PH code="buildingType:name"/>
+
+    
+
+
+## Basic properties {#properties-base}
+    
 ### Code {#code}
 
 ???
@@ -22,13 +36,7 @@
 *Technical name:* ```color```
 <PH code="buildingType:color"/>
 
-### Name of the type of building {#name}
-
-Name of the type of building
-
-*Technical name:* ```name```
-<PH code="buildingType:name"/>
-
+    
 
 
 

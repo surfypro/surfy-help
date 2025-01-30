@@ -6,8 +6,22 @@
 <OH code="dimensionType"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
+### Name of the dimension type {#name}
+
+
+
+*Technical name:* ```name```
+<PH code="dimensionType:name"/>
+
+    
+
+
+## Basic properties {#properties-base}
+    
 ### Description {#description}
 
 
@@ -22,13 +36,6 @@ The code identifies the type of dimension, it is used when specific calculations
 *Technical name:* ```code```
 <PH code="dimensionType:code"/>
 
-### Name of the dimension type {#name}
-
-
-
-*Technical name:* ```name```
-<PH code="dimensionType:name"/>
-
 ### order of appearance {#order}
 
 Allows you to sort layer types to display them
@@ -36,6 +43,7 @@ Allows you to sort layer types to display them
 *Technical name:* ```order```
 <PH code="dimensionType:order"/>
 
+    
 
 
 

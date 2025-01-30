@@ -6,15 +6,10 @@
 <OH code="jupUiView"/>
 
 
-## Basic properties {#properties-base}
-
-### Is Default View {#is-default-view}
 
 
-
-*Technical name:* ```isDefaultView```
-<PH code="jupUiView:isDefaultView"/>
-
+## Required Properties {#properties-mandatory}
+    
 ### Name {#name}
 
 
@@ -22,6 +17,19 @@
 *Technical name:* ```name```
 <PH code="jupUiView:name"/>
 
+    
+
+
+## Basic properties {#properties-base}
+    
+### Is Default View {#is-default-view}
+
+
+
+*Technical name:* ```isDefaultView```
+<PH code="jupUiView:isDefaultView"/>
+
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

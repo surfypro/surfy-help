@@ -6,15 +6,10 @@ A pop-up message host is an element that allows you to communicate with a pop-up
 <OH code="openerPostMessageHost"/>
 
 
-## Basic properties {#properties-base}
-
-### Description {#description}
 
 
-
-*Technical name:* ```description```
-<PH code="openerPostMessageHost:description"/>
-
+## Required Properties {#properties-mandatory}
+    
 ### Host {#host}
 
 
@@ -22,6 +17,19 @@ A pop-up message host is an element that allows you to communicate with a pop-up
 *Technical name:* ```host```
 <PH code="openerPostMessageHost:host"/>
 
+    
+
+
+## Basic properties {#properties-base}
+    
+### Description {#description}
+
+
+
+*Technical name:* ```description```
+<PH code="openerPostMessageHost:description"/>
+
+    
 
 
 

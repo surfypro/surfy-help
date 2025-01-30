@@ -6,7 +6,8 @@
 <OH code="contentRoleToFloor"/>
 
 
-## Propriétés de base {#properties-base}
+
+
 
 
 

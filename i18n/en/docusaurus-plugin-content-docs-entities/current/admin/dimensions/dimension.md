@@ -6,8 +6,22 @@
 <OH code="dimension"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
+### Name of the analysis layer {#name}
+
+Useful to differentiate the layer among others
+
+*Technical name:* ```name```
+<PH code="dimension:name"/>
+
+    
+
+
+## Basic properties {#properties-base}
+    
 ### Carbon footprint per square meter {#carbon-footprint-per-meter}
 
 The carbon footprint per square meter calculates the carbon footprint in kilograms of CO2 of an analysis layer per square meters
@@ -21,13 +35,6 @@ The analysis layer color allows you to differentiate spaces on the plan
 
 *Technical name:* ```color```
 <PH code="dimension:color"/>
-
-### Name of the analysis layer {#name}
-
-Useful to differentiate the layer among others
-
-*Technical name:* ```name```
-<PH code="dimension:name"/>
 
 ### Number of direct assignments {#people-count}
 
@@ -57,6 +64,7 @@ The total number of people who are assigned directly to this assignment layer in
 *Technical name:* ```totalPeopleCount```
 <PH code="dimension:totalPeopleCount"/>
 
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

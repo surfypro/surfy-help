@@ -6,8 +6,10 @@
 <OH code="jupUiOption"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
 ### Name {#name}
 
 
@@ -15,6 +17,11 @@
 *Technical name:* ```name```
 <PH code="jupUiOption:name"/>
 
+    
+
+
+## Basic properties {#properties-base}
+    
 ### Scope {#scope}
 
 
@@ -22,6 +29,7 @@
 *Technical name:* ```scope```
 <PH code="jupUiOption:scope"/>
 
+    
 
 
 

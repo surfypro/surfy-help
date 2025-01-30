@@ -6,8 +6,22 @@ The service provider company allows you to manage service provider personnel by 
 <OH code="personCompany"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
+### Last name {#name}
+
+The name of the service provider, for example the company name of a service provider
+
+*Technical name:* ```name```
+<PH code="personCompany:name"/>
+
+    
+
+
+## Basic properties {#properties-base}
+    
 ### Contact {#contact}
 
 Contact information of the service provider
@@ -22,13 +36,6 @@ Additional information on the service provider, such as its mission, its values,
 *Technical name:* ```comment```
 <PH code="personCompany:comment"/>
 
-### Last name {#name}
-
-The name of the service provider, for example the company name of a service provider
-
-*Technical name:* ```name```
-<PH code="personCompany:name"/>
-
 ### Related documents {#documents}
 
 The link to the documents associated with this service provider
@@ -36,6 +43,7 @@ The link to the documents associated with this service provider
 *Technical name:* ```documents```
 <PH code="personCompany:documents"/>
 
+    
 
 
 

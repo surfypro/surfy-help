@@ -6,15 +6,10 @@ Un hôte de message pour fenêtre contextuelle est un élément qui permet de co
 <OH code="openerPostMessageHost"/>
 
 
-## Propriétés de base {#properties-base}
-
-### Description {#description}
 
 
-
-*Nom technique:* ```description```
-<PH code="openerPostMessageHost:description"/>
-
+## Propriétés obligatoires {#properties-mandatory}
+    
 ### Host {#host}
 
 
@@ -22,6 +17,19 @@ Un hôte de message pour fenêtre contextuelle est un élément qui permet de co
 *Nom technique:* ```host```
 <PH code="openerPostMessageHost:host"/>
 
+    
+
+
+## Propriétés de base {#properties-base}
+    
+### Description {#description}
+
+
+
+*Nom technique:* ```description```
+<PH code="openerPostMessageHost:description"/>
+
+    
 
 
 

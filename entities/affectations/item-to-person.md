@@ -6,7 +6,8 @@ Permet d'associer un objet à une personne (siège ergonomique, casier)
 <OH code="itemToPerson"/>
 
 
-## Propriétés de base {#properties-base}
+
+
 
 
 

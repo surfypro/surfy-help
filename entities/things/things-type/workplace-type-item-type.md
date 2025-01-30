@@ -6,28 +6,16 @@
 <OH code="workplaceTypeItemType"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
 ### Indice de hauteur {#z-index}
 
 L'indice de hauteur permet de définir l'ordre d'affichage des types d'objets, plus l'indice est grand plus l'objet sera au dessus des autres
 
 *Nom technique:* ```zIndex```
 <PH code="workplaceTypeItemType:zIndex"/>
-
-### Inventaire physique {#physical-inventory}
-
-Si cette option est cochée pour chaque poste de travail un objet physique sera créé dans Surfy, cet objet pourra avoir une référence unique, dans tous les cas l'inventaire du bâtiment sera à jour
-
-*Nom technique:* ```physicalInventory```
-<PH code="workplaceTypeItemType:physicalInventory"/>
-
-### Nombre de places assise {#seats-count}
-
-Permet de définir le nombre de places assises disponibles dans le type de poste de travail pour ce type d'objet
-
-*Nom technique:* ```seatsCount```
-<PH code="workplaceTypeItemType:seatsCount"/>
 
 ### Position {#position}
 
@@ -43,6 +31,26 @@ Permet de définir le nombre de places assises disponibles dans le type de poste
 *Nom technique:* ```rotation```
 <PH code="workplaceTypeItemType:rotation"/>
 
+    
+
+
+## Propriétés de base {#properties-base}
+    
+### Inventaire physique {#physical-inventory}
+
+Si cette option est cochée pour chaque poste de travail un objet physique sera créé dans Surfy, cet objet pourra avoir une référence unique, dans tous les cas l'inventaire du bâtiment sera à jour
+
+*Nom technique:* ```physicalInventory```
+<PH code="workplaceTypeItemType:physicalInventory"/>
+
+### Nombre de places assise {#seats-count}
+
+Permet de définir le nombre de places assises disponibles dans le type de poste de travail pour ce type d'objet
+
+*Nom technique:* ```seatsCount```
+<PH code="workplaceTypeItemType:seatsCount"/>
+
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 

@@ -6,14 +6,19 @@ Allows you to count each gender, for example for managing toilets
 <OH code="personGender"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
 ### Last name {#name}
 
 The gender name of the person
 
 *Technical name:* ```name```
 <PH code="personGender:name"/>
+
+    
+
 
 
 

@@ -6,8 +6,22 @@
 <OH code="roomType"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
+### Space type name {#name}
+
+
+
+*Technical name:* ```name```
+<PH code="roomType:name"/>
+
+    
+
+
+## Basic properties {#properties-base}
+    
 ### 2d color {#color}
 
 The color of the type of space makes it possible to differentiate each type on the 2d plan
@@ -57,13 +71,7 @@ Allows you to display or not the walls of the space in the 3d floor plan, the un
 *Technical name:* ```displayWallsOn3d```
 <PH code="roomType:displayWallsOn3d"/>
 
-### Space type name {#name}
-
-
-
-*Technical name:* ```name```
-<PH code="roomType:name"/>
-
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

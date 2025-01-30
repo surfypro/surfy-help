@@ -6,7 +6,8 @@ Les types d'objets des prestataires permettent de définir une relation entre le
 <OH code="personCompanyToItemType"/>
 
 
-## Propriétés de base {#properties-base}
+
+
 
 
 

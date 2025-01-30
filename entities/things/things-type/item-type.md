@@ -6,8 +6,29 @@
 <OH code="itemType"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
+### Indice de hauteur {#z-index}
+
+Plus l'indice de hauteur est élevé plus l'objet sera positionné au dessus des autres; Il peut être négatif; par exemple pour un siège: -1; Conseil: pour les Icones, fixer l'indice à 9
+
+*Nom technique:* ```zIndex```
+<PH code="itemType:zIndex"/>
+
+### Nom du type d'objet {#name}
+
+Permet d'identifier rapidement le type d'objet avec un nom complet, logique et descriptif; On peut y indiquer les dimensions, par exemple: Table de Réunion 340x120; Conseil: commencer toujours par la dimension la plus grande
+
+*Nom technique:* ```name```
+<PH code="itemType:name"/>
+
+    
+
+
+## Propriétés de base {#properties-base}
+    
 ### Activer la navigation {#exclude-from-pathfinding}
 
 Permet d'activer la navigation pour ce type d'objet
@@ -92,20 +113,6 @@ Vous donne accès à trois types d’icône: 1) Les Icones de « Fontawsome », 
 *Nom technique:* ```icon```
 <PH code="itemType:icon"/>
 
-### Indice de hauteur {#z-index}
-
-Plus l'indice de hauteur est élevé plus l'objet sera positionné au dessus des autres; Il peut être négatif; par exemple pour un siège: -1; Conseil: pour les Icones, fixer l'indice à 9
-
-*Nom technique:* ```zIndex```
-<PH code="itemType:zIndex"/>
-
-### Nom du type d'objet {#name}
-
-Permet d'identifier rapidement le type d'objet avec un nom complet, logique et descriptif; On peut y indiquer les dimensions, par exemple: Table de Réunion 340x120; Conseil: commencer toujours par la dimension la plus grande
-
-*Nom technique:* ```name```
-<PH code="itemType:name"/>
-
 ### Nombre de places assises {#seats-count}
 
 Le nombre de places assises de ce type d'objet (fauteuil, siège, canapé, etc) est cumulé dans Surfy par espace, étage et bâtiment
@@ -127,6 +134,7 @@ Le prix d'achat du type d'objet
 *Nom technique:* ```price```
 <PH code="itemType:price"/>
 
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 

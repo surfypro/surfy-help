@@ -6,8 +6,12 @@ Les interventions des prestataires sur des objets permettent de définir par exe
 <OH code="personCompanyToItem"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+
+
+## Propriétés de base {#properties-base}
+    
 ### Commentaire {#comment}
 
 Un commentaire sur l'intervention
@@ -22,6 +26,7 @@ Le moment auquel l'intervention a eu lieu
 *Nom technique:* ```datetime```
 <PH code="personCompanyToItem:datetime"/>
 
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 

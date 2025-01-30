@@ -6,7 +6,8 @@ Allows you to assign a person to a single space
 <OH code="roomAffectation"/>
 
 
-## Basic properties {#properties-base}
+
+
 
 
 

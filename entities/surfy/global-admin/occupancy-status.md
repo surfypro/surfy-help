@@ -6,8 +6,10 @@ L'état d'occupation permet d'identifier l'état en temps réel d'un espace ou d
 <OH code="occupancyStatus"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
 ### Code de l'état d'occupation {#code}
 
 Le code permet d'identifier et de réaliser des opérations techniques sur l'état d'occupation
@@ -28,6 +30,9 @@ La couleur permet de colorier les espaces ou les postes de travail sur les plans
 
 *Nom technique:* ```name```
 <PH code="occupancyStatus:name"/>
+
+    
+
 
 
 

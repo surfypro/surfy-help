@@ -6,8 +6,12 @@
 <OH code="contentRole"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+
+
+## Propriétés de base {#properties-base}
+    
 ### Name {#name}
 
 
@@ -15,6 +19,7 @@
 *Nom technique:* ```name```
 <PH code="contentRole:name"/>
 
+    
 
 
 

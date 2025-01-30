@@ -6,15 +6,10 @@
 <OH code="partnerExportMapping"/>
 
 
-## Propriétés de base {#properties-base}
-
-### Label {#label}
 
 
-
-*Nom technique:* ```label```
-<PH code="partnerExportMapping:label"/>
-
+## Propriétés obligatoires {#properties-mandatory}
+    
 ### Partner Code {#partner-code}
 
 
@@ -22,6 +17,19 @@
 *Nom technique:* ```partnerCode```
 <PH code="partnerExportMapping:partnerCode"/>
 
+    
+
+
+## Propriétés de base {#properties-base}
+    
+### Label {#label}
+
+
+
+*Nom technique:* ```label```
+<PH code="partnerExportMapping:label"/>
+
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 

@@ -6,8 +6,22 @@ Permet de définir les différents profils sécurité associables à des personn
 <OH code="personSecurityProfile"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
+### Nom du profil de sécurité {#name}
+
+Permet de définir les différents profils sécurité associables à des personnes
+
+*Nom technique:* ```name```
+<PH code="personSecurityProfile:name"/>
+
+    
+
+
+## Propriétés de base {#properties-base}
+    
 ### Couleur du profil de sécurité {#color}
 
 Permet de colorier le poste de travail d'affectation et l'icône sécurité de la personne en fonction de son profil sécurité
@@ -22,13 +36,7 @@ Permet d'attribuer une icône à un profil sécurité afin de visualiser clairem
 *Nom technique:* ```icon```
 <PH code="personSecurityProfile:icon"/>
 
-### Nom du profil de sécurité {#name}
-
-Permet de définir les différents profils sécurité associables à des personnes
-
-*Nom technique:* ```name```
-<PH code="personSecurityProfile:name"/>
-
+    
 
 
 

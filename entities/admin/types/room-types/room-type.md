@@ -6,8 +6,22 @@
 <OH code="roomType"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
+### Nom de la typologie d'espace {#name}
+
+
+
+*Nom technique:* ```name```
+<PH code="roomType:name"/>
+
+    
+
+
+## Propriétés de base {#properties-base}
+    
 ### Afficher les murs {#display-walls-on-3d}
 
 Permet d'afficher ou non les murs de l'espace dans le plan 3d de l'étage, les murs non affichés sont en pointillés en 2d, cela permet d'avoir une vue plus agréable notament pour les open spaces
@@ -57,13 +71,7 @@ L'icône pour le type d'espace permet d'afficher pour ce type d'espace une icôn
 *Nom technique:* ```icon```
 <PH code="roomType:icon"/>
 
-### Nom de la typologie d'espace {#name}
-
-
-
-*Nom technique:* ```name```
-<PH code="roomType:name"/>
-
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 

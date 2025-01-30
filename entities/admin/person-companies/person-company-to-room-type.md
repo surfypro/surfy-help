@@ -6,7 +6,8 @@ Les types d'espaces des prestataires permettent de définir une relation entre u
 <OH code="personCompanyToRoomType"/>
 
 
-## Propriétés de base {#properties-base}
+
+
 
 
 

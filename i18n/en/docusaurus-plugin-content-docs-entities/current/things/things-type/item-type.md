@@ -6,8 +6,29 @@
 <OH code="itemType"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
+### Height index {#z-index}
+
+The higher the height index, the more the object will be positioned above the others; It can be negative; for example for a seat: -1; Tip: for Icons, set the index to 9
+
+*Technical name:* ```zIndex```
+<PH code="itemType:zIndex"/>
+
+### Object type name {#name}
+
+Allows you to quickly identify the type of object with a complete, logical and descriptive name; You can indicate the dimensions, for example: Meeting Table 340x120; Tip: always start with the largest dimension
+
+*Technical name:* ```name```
+<PH code="itemType:name"/>
+
+    
+
+
+## Basic properties {#properties-base}
+    
 ### Carbon footprint {#carbon-footprint}
 
 The carbon footprint is the weight in Kilograms of CO2 emitted by each object from this type of object; it is given by the manufacturer
@@ -49,13 +70,6 @@ Allows you to give the height in centimeters of the type of object in 3d vision
 
 *Technical name:* ```height```
 <PH code="itemType:height"/>
-
-### Height index {#z-index}
-
-The higher the height index, the more the object will be positioned above the others; It can be negative; for example for a seat: -1; Tip: for Icons, set the index to 9
-
-*Technical name:* ```zIndex```
-<PH code="itemType:zIndex"/>
 
 ### Icon {#icon}
 
@@ -99,13 +113,6 @@ The number of seats for this type of object (armchair, seat, sofa, etc.) is accu
 *Technical name:* ```seatsCount```
 <PH code="itemType:seatsCount"/>
 
-### Object type name {#name}
-
-Allows you to quickly identify the type of object with a complete, logical and descriptive name; You can indicate the dimensions, for example: Meeting Table 340x120; Tip: always start with the largest dimension
-
-*Technical name:* ```name```
-<PH code="itemType:name"/>
-
 ### Photo {#picture}
 
 Allows you to load the photo of the type of object, which will be visible in the inventory in PDF and on the sheet of the object selected on the plan
@@ -127,6 +134,7 @@ Allows you to display the “Reference” field of each object on the plan
 *Technical name:* ```displayItemReferenceInMap```
 <PH code="itemType:displayItemReferenceInMap"/>
 
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

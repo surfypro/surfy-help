@@ -6,8 +6,10 @@ Un emplacement de travail des personnes définie le lieu de travail des personne
 <OH code="personWorkingLocation"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
 ### Date {#date}
 
 
@@ -21,6 +23,9 @@ Un emplacement de travail des personnes définie le lieu de travail des personne
 
 *Nom technique:* ```daySlotType```
 <PH code="personWorkingLocation:daySlotType"/>
+
+    
+
 
 
 ## Entités associées (unique) {#properties-belongs-to}

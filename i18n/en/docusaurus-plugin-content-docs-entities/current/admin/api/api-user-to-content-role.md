@@ -6,7 +6,8 @@
 <OH code="apiUserToContentRole"/>
 
 
-## Basic properties {#properties-base}
+
+
 
 
 

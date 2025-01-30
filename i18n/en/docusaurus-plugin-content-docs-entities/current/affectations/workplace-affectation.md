@@ -6,8 +6,12 @@ Allows a fixed workstation to be assigned to a person
 <OH code="workplaceAffectation"/>
 
 
-## Basic properties {#properties-base}
 
+
+
+
+## Basic properties {#properties-base}
+    
 ### Calculated Rate {#calculated-rate}
 
 
@@ -71,6 +75,7 @@ Allows a fixed workstation to be assigned to a person
 *Technical name:* ```wednesdayRate```
 <PH code="workplaceAffectation:wednesdayRate"/>
 
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

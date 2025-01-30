@@ -6,8 +6,10 @@
 <OH code="structure"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
 ### Name {#name}
 
 
@@ -15,6 +17,11 @@
 *Nom technique:* ```name```
 <PH code="structure:name"/>
 
+    
+
+
+## Propriétés de base {#properties-base}
+    
 ### Transformation {#transform}
 
 Transformation de la structure pour la calibrer sur une carte
@@ -22,6 +29,7 @@ Transformation de la structure pour la calibrer sur une carte
 *Nom technique:* ```transform```
 <PH code="structure:transform"/>
 
+    
 
 
 

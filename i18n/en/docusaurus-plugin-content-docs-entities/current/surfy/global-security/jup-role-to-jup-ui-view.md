@@ -6,8 +6,12 @@
 <OH code="jupRoleToJupUiView"/>
 
 
-## Basic properties {#properties-base}
 
+
+
+
+## Basic properties {#properties-base}
+    
 ### Can see the view {#can-see}
 
 Allow the view to be seen by the role
@@ -15,6 +19,7 @@ Allow the view to be seen by the role
 *Technical name:* ```canSee```
 <PH code="jupRoleToJupUiView:canSee"/>
 
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

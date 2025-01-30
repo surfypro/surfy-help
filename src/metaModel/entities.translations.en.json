@@ -2480,11 +2480,11 @@
                 },
                 "p1": {
                     "label": "P1",
-                    "description": null
+                    "description": "Starting point"
                 },
                 "p2": {
                     "label": "P2",
-                    "description": null
+                    "description": "Point of arrival"
                 },
                 "length": {
                     "label": "Distance",

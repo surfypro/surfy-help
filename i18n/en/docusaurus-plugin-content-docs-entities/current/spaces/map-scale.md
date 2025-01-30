@@ -6,8 +6,29 @@
 <OH code="mapScale"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
+### P1 {#p-1}
+
+Starting point
+
+*Technical name:* ```p1```
+<PH code="mapScale:p1"/>
+
+### P2 {#p-2}
+
+Point of arrival
+
+*Technical name:* ```p2```
+<PH code="mapScale:p2"/>
+
+    
+
+
+## Basic properties {#properties-base}
+    
 ### Distance {#length}
 
 The distance shown on the plan between the 2 points in meters
@@ -28,20 +49,6 @@ To remember the name and reuse it on other floors
 
 *Technical name:* ```name```
 <PH code="mapScale:name"/>
-
-### P1 {#p-1}
-
-
-
-*Technical name:* ```p1```
-<PH code="mapScale:p1"/>
-
-### P2 {#p-2}
-
-
-
-*Technical name:* ```p2```
-<PH code="mapScale:p2"/>
 
 ### Ratio {#ratio}
 
@@ -85,6 +92,7 @@ The size of the text on the workstations and on the objects on the map to optimi
 *Technical name:* ```workplaceTextSize```
 <PH code="mapScale:workplaceTextSize"/>
 
+    
 
 
 

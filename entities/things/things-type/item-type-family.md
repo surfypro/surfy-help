@@ -6,15 +6,10 @@ Permet d’afficher les objets par Famille sur les plans et dans l’inventaire 
 <OH code="itemTypeFamily"/>
 
 
-## Propriétés de base {#properties-base}
-
-### Code {#code}
 
 
-
-*Nom technique:* ```code```
-<PH code="itemTypeFamily:code"/>
-
+## Propriétés obligatoires {#properties-mandatory}
+    
 ### Nom de la famille de types de l'objet {#name}
 
 Le nom de la famille permet de l'identifier, ce nom est utilisé pour regrouper les types d'objet
@@ -22,6 +17,19 @@ Le nom de la famille permet de l'identifier, ce nom est utilisé pour regrouper 
 *Nom technique:* ```name```
 <PH code="itemTypeFamily:name"/>
 
+    
+
+
+## Propriétés de base {#properties-base}
+    
+### Code {#code}
+
+
+
+*Nom technique:* ```code```
+<PH code="itemTypeFamily:code"/>
+
+    
 
 
 

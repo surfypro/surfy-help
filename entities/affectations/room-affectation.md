@@ -6,7 +6,8 @@ Permet d'affecter une personne à un espace simple
 <OH code="roomAffectation"/>
 
 
-## Propriétés de base {#properties-base}
+
+
 
 
 

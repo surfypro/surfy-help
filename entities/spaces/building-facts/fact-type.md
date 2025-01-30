@@ -6,8 +6,10 @@
 <OH code="factType"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
 ### Code {#code}
 
 
@@ -21,6 +23,9 @@
 
 *Nom technique:* ```name```
 <PH code="factType:name"/>
+
+    
+
 
 
 

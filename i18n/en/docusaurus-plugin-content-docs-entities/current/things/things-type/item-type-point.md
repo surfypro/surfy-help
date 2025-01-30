@@ -6,8 +6,10 @@
 <OH code="itemTypePoint"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
 ### Sort index {#sort-index}
 
 ???
@@ -28,6 +30,9 @@
 
 *Technical name:* ```x```
 <PH code="itemTypePoint:x"/>
+
+    
+
 
 
 ## Associated entities (unique) {#properties-belongs-to}

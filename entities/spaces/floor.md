@@ -6,8 +6,29 @@ Les étages represent un plateau de travail ou un niveau d'un bâtiment
 <OH code="floor"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
+### Niveau {#level}
+
+Le niveau de l'étage permet de définir sa position par rapport aux autres étages, par exemple utilisez 0 pour le RDC ou -1 pour les parkings
+
+*Nom technique:* ```level```
+<PH code="floor:level"/>
+
+### Nom de l'étage {#name}
+
+Le nom de l'étage est utilisé pour pouvoir le retrouver facilement.
+
+*Nom technique:* ```name```
+<PH code="floor:name"/>
+
+    
+
+
+## Propriétés de base {#properties-base}
+    
 ### Capacité réglementaire {#regulatory-capacity}
 
 La capacité réglementaire du plateau, permet de gérer l'évacuation du public et des employés
@@ -49,20 +70,6 @@ La hauteur sous plafond de l'étage
 
 *Nom technique:* ```height```
 <PH code="floor:height"/>
-
-### Niveau {#level}
-
-Le niveau de l'étage permet de définir sa position par rapport aux autres étages, par exemple utilisez 0 pour le RDC ou -1 pour les parkings
-
-*Nom technique:* ```level```
-<PH code="floor:level"/>
-
-### Nom de l'étage {#name}
-
-Le nom de l'étage est utilisé pour pouvoir le retrouver facilement.
-
-*Nom technique:* ```name```
-<PH code="floor:name"/>
 
 ### Nombre d'affectations {#people-count}
 
@@ -197,6 +204,7 @@ Taux de postes de travail partagés par au moins 2 personnes par rapport à l'en
 *Nom technique:* ```sharedWorkplacesRatio```
 <PH code="floor:sharedWorkplacesRatio"/>
 
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 

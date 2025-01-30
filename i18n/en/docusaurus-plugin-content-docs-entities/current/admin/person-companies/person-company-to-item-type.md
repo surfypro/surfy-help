@@ -6,7 +6,8 @@ The service provider object types make it possible to define a relationship betw
 <OH code="personCompanyToItemType"/>
 
 
-## Basic properties {#properties-base}
+
+
 
 
 

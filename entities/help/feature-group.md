@@ -6,8 +6,12 @@
 <OH code="featureGroup"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+
+
+## Propriétés de base {#properties-base}
+    
 ### Name {#name}
 
 
@@ -22,6 +26,7 @@
 *Nom technique:* ```sortOrder```
 <PH code="featureGroup:sortOrder"/>
 
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 

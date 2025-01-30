@@ -6,8 +6,29 @@ Floors represent a work platform or a level of a building.
 <OH code="floor"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
+### Level {#level}
+
+The level of the floor allows to define its position relative to the other floors, for example use 0 for the ground floor or -1 for the car parks
+
+*Technical name:* ```level```
+<PH code="floor:level"/>
+
+### Name of the floor {#name}
+
+The name of the floor is used to be able to find it easily.
+
+*Technical name:* ```name```
+<PH code="floor:name"/>
+
+    
+
+
+## Basic properties {#properties-base}
+    
 ### Background {#background-layout}
 
 The background allows you to have a first layer level in order to redraw the plans, it must be to scale
@@ -49,20 +70,6 @@ The navigation graph allows you to calculate the shortest paths between the poin
 
 *Technical name:* ```pathfindingGraph```
 <PH code="floor:pathfindingGraph"/>
-
-### Level {#level}
-
-The level of the floor allows to define its position relative to the other floors, for example use 0 for the ground floor or -1 for the car parks
-
-*Technical name:* ```level```
-<PH code="floor:level"/>
-
-### Name of the floor {#name}
-
-The name of the floor is used to be able to find it easily.
-
-*Technical name:* ```name```
-<PH code="floor:name"/>
 
 ### Number of assignments {#people-count}
 
@@ -197,6 +204,7 @@ The workstation ratio is the number of square meters in the floor divided by the
 *Technical name:* ```workplacesRatio```
 <PH code="floor:workplacesRatio"/>
 
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

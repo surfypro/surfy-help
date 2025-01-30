@@ -6,8 +6,29 @@
 <OH code="workplace"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
+### Position {#position}
+
+La position du poste de travail dans l'espace
+
+*Nom technique:* ```position```
+<PH code="workplace:position"/>
+
+### Rotation {#rotation}
+
+L'angle de rotation du poste de travail dans l'espace
+
+*Nom technique:* ```rotation```
+<PH code="workplace:rotation"/>
+
+    
+
+
+## Propriétés de base {#properties-base}
+    
 ### Commentaire {#comment}
 
 Une information supplémentaire sur le poste de travail
@@ -57,20 +78,6 @@ Nombre d'affectations sur le poste de travail
 *Nom technique:* ```workplaceAffectationsCount```
 <PH code="workplace:workplaceAffectationsCount"/>
 
-### Position {#position}
-
-La position du poste de travail dans l'espace
-
-*Nom technique:* ```position```
-<PH code="workplace:position"/>
-
-### Rotation {#rotation}
-
-L'angle de rotation du poste de travail dans l'espace
-
-*Nom technique:* ```rotation```
-<PH code="workplace:rotation"/>
-
 ### Taux d'affectation moyen {#workplace-affectations-calculated-rate-sum}
 
 Taux d'affectation moyen du poste de travail en fonction de l'affectation des jours de présence des personnes
@@ -85,6 +92,7 @@ Taux d'affectation moyen du poste de travail en fonction de l'affectation des jo
 *Nom technique:* ```textAnchor```
 <PH code="workplace:textAnchor"/>
 
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 

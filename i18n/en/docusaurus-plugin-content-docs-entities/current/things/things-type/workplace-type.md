@@ -6,8 +6,29 @@
 <OH code="workplaceType"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
+### Workstation type name {#name}
+
+???
+
+*Technical name:* ```name```
+<PH code="workplaceType:name"/>
+
+### Z Index {#z-index}
+
+
+
+*Technical name:* ```zIndex```
+<PH code="workplaceType:zIndex"/>
+
+    
+
+
+## Basic properties {#properties-base}
+    
 ### Center {#center}
 
 
@@ -29,20 +50,7 @@
 *Technical name:* ```size```
 <PH code="workplaceType:size"/>
 
-### Workstation type name {#name}
-
-???
-
-*Technical name:* ```name```
-<PH code="workplaceType:name"/>
-
-### Z Index {#z-index}
-
-
-
-*Technical name:* ```zIndex```
-<PH code="workplaceType:zIndex"/>
-
+    
 
 
 

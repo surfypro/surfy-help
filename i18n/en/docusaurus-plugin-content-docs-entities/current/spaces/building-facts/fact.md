@@ -6,8 +6,10 @@
 <OH code="fact"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
 ### Date {#date}
 
 
@@ -21,6 +23,9 @@
 
 *Technical name:* ```value```
 <PH code="fact:value"/>
+
+    
+
 
 
 ## Associated entities (unique) {#properties-belongs-to}
