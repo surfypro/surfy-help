@@ -43147,7 +43147,6 @@ function getPublicConfiguration(jupEnv) {
 }
 function getJupEnvFromLocationOrigin(origin) {
   const o = `${origin}`;
-  console.log("O", o);
   if (p2.origins.includes(o)) {
     return "p2";
   }
@@ -43659,10 +43658,9 @@ function guessI18nMissingKey(key) {
   return words.join(" ");
 }
 function fetchLanguageJson(language) {
-  const version = getPublicAppVersion();
+  const version2 = getPublicAppVersion();
   const config = getPublicConfigurationFront();
-  console.log("BE", config.endpoints);
-  const url = `${config.endpoints.backend}/assets/i18n/${language}.json?v=${version}`;
+  const url = `${config.endpoints.backend}/assets/i18n/${language}.json?v=${version2}`;
   return fetch(url, {
     cache: "default"
   }).then((res) => res.json());
@@ -50451,10 +50449,33 @@ function PropertyTypeMandatoryLabel(props) {
     /* @__PURE__ */ jsxRuntimeExports.jsx(PropertyTypeMandatoryText, { propertyType })
   ] });
 }
+function getTranslatedUnit(translation, unit) {
+  if (unit) {
+    return translation(`${unit.type}.${unit.value}`);
+  }
+}
+const PropertyTypeLabel = React__default.forwardRef((props, ref2) => {
+  const { propertyType, displayUnit, style: style2, ...otherProps } = props;
+  const i18n = useI18nApi();
+  const unit = displayUnit && propertyType.options.unit && ` (${getTranslatedUnit(i18n.translate, propertyType.options.unit)})`;
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { ref: ref2, style: style2, ...otherProps, children: [
+    getPropertyTypeLabelWithTranslation(i18n, props.propertyType),
+    unit
+  ] });
+});
+const version = { "major": 3, "minor": 4, "build": 60 };
+function getAppVersion() {
+  const { major, minor, build } = version;
+  return `${major}.${minor}.${build}`;
+}
+const appVersion = getAppVersion();
 export {
+  PropertyTypeLabel,
   PropertyTypeMandatoryLabel,
   SetupRecoilContext,
+  appVersion,
   getObjectTypeDefinitionByName,
   getPropertyTypeByCode,
-  getPropertyTypeByName
+  getPropertyTypeByName,
+  versionCookieKeyName
 };

@@ -12,6 +12,8 @@ declare type ApiUserToJupRolePropertyNames = 'id' | 'createdAt' | 'updatedAt' | 
 
 declare type ApiUserToJupRolePropertyTypeRecord = Record<ApiUserToJupRolePropertyNames, IPropertyTypeDefinition>;
 
+export declare const appVersion: string;
+
 declare type AuthentificationConnectionPropertyNames = 'id' | 'name' | 'createdAt' | 'updatedAt' | 'externalId' | 'userRegistrationTenantRules';
 
 declare type AuthentificationConnectionPropertyTypeRecord = Record<AuthentificationConnectionPropertyNames, IPropertyTypeDefinition>;
@@ -302,6 +304,12 @@ declare interface IPropertyTypeUnitDefinition {
     type: PropertyTypeJupUnitType;
 }
 
+declare interface IProps {
+    propertyType: IPropertyTypeDefinition;
+    displayUnit?: boolean;
+    style?: default_2.CSSProperties;
+}
+
 declare interface ISize {
     width: number;
     height: number;
@@ -534,6 +542,8 @@ declare type PropertyTypeJupUnitType = 'distance' | 'weight';
 declare type PropertyTypeJupValues = string | string[] | number | number[] | boolean | null | IPoint3d | IPoint2d | IEntity | IEntity[] | IJupImage | IModel3d | IJupIcon | IJupAddress | IJupTransform | IconShapeType | DaySlotType | IJupLegendConfiguration | IFloorPathfindingGraph;
 
 declare type PropertyTypeJupWeightUnits = 'kilogram' | 'gram';
+
+export declare const PropertyTypeLabel: default_2.ForwardRefExoticComponent<IProps & default_2.RefAttributes<HTMLDivElement>>;
 
 export declare function PropertyTypeMandatoryLabel(props: {
     propertyType: IPropertyTypeDefinition;
@@ -2980,6 +2990,8 @@ declare type UserRegistrationTenantRuleToContentRolePropertyTypeRecord = Record<
 declare type UserRegistrationTenantRuleToJupRolePropertyNames = 'id' | 'createdAt' | 'updatedAt' | 'externalId' | 'userRegistrationTenantRuleId' | 'userRegistrationTenantRule' | 'jupRoleId' | 'jupRole' | 'userCompanyCreatedById' | 'userCompanyCreatedBy' | 'userCompanyUpdatedById' | 'userCompanyUpdatedBy' | 'companyId' | 'company';
 
 declare type UserRegistrationTenantRuleToJupRolePropertyTypeRecord = Record<UserRegistrationTenantRuleToJupRolePropertyNames, IPropertyTypeDefinition>;
+
+export declare const versionCookieKeyName = "x-version";
 
 export declare type VisibleCamelizedObjectTypeNames = "occupancyStatus" | "user" | "companyType" | "company" | "campus" | "roomConnectorType" | "roomConnector" | "userCompany" | "personGender" | "personCompany" | "jupUiLayout" | "buildingType" | "organization" | "itemTypeFamily" | "manufacturer" | "object3dModel" | "itemType" | "building" | "mapScale" | "structure" | "structurePoint" | "floor" | "distributionCostType" | "roomTypeGroup" | "roomType" | "roomTypeGroupToRoomType" | "roomTypeGroupFloor" | "roomTypeGroupBuilding" | "costCenter" | "costCenterBuilding" | "costCenterFloor" | "room" | "roomPoint" | "roomPointRoom" | "roomPointSegmentType" | "roomPointSegment" | "itemTypePoint" | "dimensionType" | "dimension" | "dimensionRoom" | "dimensionFloor" | "dimensionBuilding" | "factType" | "fact" | "personState" | "personSecurityProfile" | "person" | "personToPersonType" | "personToPerson" | "roomAffectation" | "workplaceType" | "workplaceTypeItemType" | "workplace" | "item" | "workplaceAffectation" | "organizationFloor" | "organizationBuilding" | "roomTypeFloor" | "roomTypeBuilding" | "itemToPerson" | "personToBuilding" | "dimensionToPerson" | "dimensionTypeToBuilding" | "workingLocation" | "personWorkingLocation" | "personToWorkplaceBooking" | "personToRoomBooking" | "personToDimensionBooking" | "personCompanyMission" | "personCompanyToItemType" | "personCompanyToRoomType" | "personCompanyToItem" | "legend" | "openerPostMessageHost" | "jupObjectType" | "jupUiView" | "jupRole" | "jupUiOption" | "jupUiOperation" | "contentRole" | "jupUserCompanyToJupRole" | "jupRoleToJupUiView" | "jupRoleToJupObjectType" | "jupRoleToJupUiOption" | "jupRoleToJupUiOperation" | "contentRoleToBuilding" | "contentRoleToUserCompany" | "contentRoleToFloor" | "partnerApiCredential" | "apiUser" | "apiUserToJupRole" | "apiUserToContentRole" | "jupUiTenantOperation" | "contentRoleToJupUiTenantOperation" | "authentificationConnection" | "userRegistrationTenantRule" | "userRegistrationTenantRuleToJupRole" | "userRegistrationTenantRuleToContentRole" | "partnerExportMappingConfiguration" | "partnerExportMapping" | "partnerExportMappingToRoomType" | "partnerExportMappingConfigurationToFloor" | "jupRoleToJupUiLayout" | "itemFact" | "featureFamily" | "featureGroup" | "feature";
 

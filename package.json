@@ -1,5 +1,5 @@
 {
-  "name": "surfy-help-3",
+  "name": "surfy-help",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -27,9 +27,11 @@
     "@mdx-js/react": "^3.1.0",
     "@mui/icons-material": "^6.4.1",
     "@mui/material": "^6.4.1",
+    "@types/js-cookie": "^3.0.6",
     "@types/react-copy-to-clipboard": "^5.0.7",
     "babel-loader": "^9.2.1",
     "clsx": "^2.1.1",
+    "js-cookie": "^3.0.5",
     "pluralize": "^8.0.0",
     "prism-react-renderer": "^2.4.1",
     "react": "18.3.1",

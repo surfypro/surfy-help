@@ -4,7 +4,7 @@ import Paper from '@mui/material/Paper';
 import { useTranslations } from "../Translations/translations";
 import { HelpTooltipStyled } from "./HelpTooltipStyled";
 import { toDocumentationLinkString } from "@site/src/utils/documentionStyle";
-import { getPropertyTypeByCode, PropertyTypeCodes, PropertyTypeMandatoryLabel } from "@site/surfy";
+import { getPropertyTypeByCode, PropertyTypeCodes, PropertyTypeLabel, PropertyTypeMandatoryLabel } from "@site/surfy";
 import { objectTypePathMapping } from "@site/src/metaModel/metamodel.json.helper";
 
 export function PropertyType(props: { code: PropertyTypeCodes }) {
@@ -26,7 +26,7 @@ export function PropertyType(props: { code: PropertyTypeCodes }) {
 
     const Title = <Paper sx={{ p: 2 }}>
         <Box style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
-            <h2 >{translations.label}</h2>
+            <h2 ><PropertyTypeLabel propertyType={propertyType} /></h2>
             <Box style={{ flexGrow: 1, display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
                 {objectTypeTranslation.label}
             </Box>
