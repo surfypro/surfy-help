@@ -6,7 +6,8 @@
 <OH code="userRegistrationTenantRuleToContentRole"/>
 
 
-## Basic properties {#properties-base}
+
+
 
 
 

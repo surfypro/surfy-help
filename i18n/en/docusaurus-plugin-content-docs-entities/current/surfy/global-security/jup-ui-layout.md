@@ -6,14 +6,19 @@
 <OH code="jupUiLayout"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
 ### Name {#name}
 
 
 
 *Technical name:* ```name```
 <PH code="jupUiLayout:name"/>
+
+    
+
 
 
 

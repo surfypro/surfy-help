@@ -6,7 +6,8 @@
 <OH code="userRegistrationTenantRuleToJupRole"/>
 
 
-## Basic properties {#properties-base}
+
+
 
 
 

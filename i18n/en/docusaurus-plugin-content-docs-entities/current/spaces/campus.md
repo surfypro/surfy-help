@@ -6,15 +6,10 @@ The campus is used to group buildings that are in the same location.
 <OH code="campus"/>
 
 
-## Basic properties {#properties-base}
-
-### Address {#address}
 
 
-
-*Technical name:* ```address```
-<PH code="campus:address"/>
-
+## Required Properties {#properties-mandatory}
+    
 ### Campus Name {#name}
 
 Campus Name
@@ -22,19 +17,31 @@ Campus Name
 *Technical name:* ```name```
 <PH code="campus:name"/>
 
-### Carbon footprint {#carbon-footprint}
-
-The carbon footprint is the number of CO2 emitted
-
-*Technical name:* ```carbonFootprint```
-<PH code="campus:carbonFootprint"/>
-
 ### Color {#color}
 
 Campus Color
 
 *Technical name:* ```color```
 <PH code="campus:color"/>
+
+    
+
+
+## Basic properties {#properties-base}
+    
+### Address {#address}
+
+
+
+*Technical name:* ```address```
+<PH code="campus:address"/>
+
+### Carbon footprint {#carbon-footprint}
+
+The carbon footprint is the number of CO2 emitted
+
+*Technical name:* ```carbonFootprint```
+<PH code="campus:carbonFootprint"/>
 
 ### Expansion rate {#expansion-ratio}
 
@@ -169,6 +176,7 @@ The workstation ratio is the number of square meters divided by the number of wo
 *Technical name:* ```workplacesRatio```
 <PH code="campus:workplacesRatio"/>
 
+    
 
 
 

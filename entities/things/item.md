@@ -6,8 +6,29 @@
 <OH code="item"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
+### Position {#position}
+
+
+
+*Nom technique:* ```position```
+<PH code="item:position"/>
+
+### Rotation {#rotation}
+
+
+
+*Nom technique:* ```rotation```
+<PH code="item:rotation"/>
+
+    
+
+
+## Propriétés de base {#properties-base}
+    
 ### Code d'immobilisation {#code}
 
 Le numéro d'immobilisation est utilisé pour conserver le numéro comptable
@@ -29,13 +50,6 @@ Le nombre d'associations de cet objet aux personnes
 *Nom technique:* ```itemAffectationsCount```
 <PH code="item:itemAffectationsCount"/>
 
-### Position {#position}
-
-
-
-*Nom technique:* ```position```
-<PH code="item:position"/>
-
 ### Prix {#price}
 
 Le prix d'achat de l'objet s'il est différent du prix du type d'objet
@@ -50,13 +64,6 @@ La référence de l'objet est utilisé pour le retrouver et pour differencier ce
 *Nom technique:* ```reference```
 <PH code="item:reference"/>
 
-### Rotation {#rotation}
-
-
-
-*Nom technique:* ```rotation```
-<PH code="item:rotation"/>
-
 ### Text Anchor {#text-anchor}
 
 
@@ -64,6 +71,7 @@ La référence de l'objet est utilisé pour le retrouver et pour differencier ce
 *Nom technique:* ```textAnchor```
 <PH code="item:textAnchor"/>
 
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 

@@ -6,8 +6,29 @@ The building is used to group the floors
 <OH code="building"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
+### Color {#color}
+
+The color of the building is used to define the background color in the presentations of the floors or the building and to be able to distinguish this building from the others
+
+*Technical name:* ```color```
+<PH code="building:color"/>
+
+### Name of Building {#name}
+
+Name of building or scenario
+
+*Technical name:* ```name```
+<PH code="building:name"/>
+
+    
+
+
+## Basic properties {#properties-base}
+    
 ### Address {#address}
 
 The address of the building to locate it on the map
@@ -64,13 +85,6 @@ The carbon footprint is the number of CO2 emitted
 *Technical name:* ```carbonFootprint```
 <PH code="building:carbonFootprint"/>
 
-### Color {#color}
-
-The color of the building is used to define the background color in the presentations of the floors or the building and to be able to distinguish this building from the others
-
-*Technical name:* ```color```
-<PH code="building:color"/>
-
 ### End date of the lease {#lease-end-date}
 
 End date of the lease
@@ -91,13 +105,6 @@ Lease start date
 
 *Technical name:* ```leaseStartDate```
 <PH code="building:leaseStartDate"/>
-
-### Name of Building {#name}
-
-Name of building or scenario
-
-*Technical name:* ```name```
-<PH code="building:name"/>
 
 ### Number of assignments {#people-count}
 
@@ -288,6 +295,7 @@ Year of construction of the building allowing its obsolescence to be measured
 *Technical name:* ```constructionYear```
 <PH code="building:constructionYear"/>
 
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

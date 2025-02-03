@@ -6,8 +6,22 @@
 <OH code="roomTypeGroup"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
+### Space typology group name {#name}
+
+
+
+*Technical name:* ```name```
+<PH code="roomTypeGroup:name"/>
+
+    
+
+
+## Basic properties {#properties-base}
+    
 ### Code {#code}
 
 
@@ -29,13 +43,7 @@ Exclude space typologies from this group
 *Technical name:* ```exclude```
 <PH code="roomTypeGroup:exclude"/>
 
-### Space typology group name {#name}
-
-
-
-*Technical name:* ```name```
-<PH code="roomTypeGroup:name"/>
-
+    
 
 
 

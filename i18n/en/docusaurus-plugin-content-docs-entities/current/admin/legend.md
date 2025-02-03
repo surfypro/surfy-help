@@ -6,15 +6,10 @@ The legend allows you to configure the properties visible when the plan is saved
 <OH code="legend"/>
 
 
-## Basic properties {#properties-base}
-
-### Configuration {#configuration}
 
 
-
-*Technical name:* ```configuration```
-<PH code="legend:configuration"/>
-
+## Required Properties {#properties-mandatory}
+    
 ### Name {#name}
 
 
@@ -22,6 +17,19 @@ The legend allows you to configure the properties visible when the plan is saved
 *Technical name:* ```name```
 <PH code="legend:name"/>
 
+    
+
+
+## Basic properties {#properties-base}
+    
+### Configuration {#configuration}
+
+
+
+*Technical name:* ```configuration```
+<PH code="legend:configuration"/>
+
+    
 
 
 

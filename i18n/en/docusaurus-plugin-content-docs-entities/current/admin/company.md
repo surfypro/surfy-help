@@ -6,8 +6,10 @@
 <OH code="company"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
 ### Company Name {#name}
 
 
@@ -15,6 +17,11 @@
 *Technical name:* ```name```
 <PH code="company:name"/>
 
+    
+
+
+## Basic properties {#properties-base}
+    
 ### Enable Pathfinding {#enable-pathfinding}
 
 
@@ -57,6 +64,7 @@ The number of working days per week can be 5 for working days, 6 including Satur
 *Technical name:* ```proxyImages```
 <PH code="company:proxyImages"/>
 
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

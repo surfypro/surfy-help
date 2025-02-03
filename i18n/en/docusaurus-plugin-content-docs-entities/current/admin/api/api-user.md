@@ -6,15 +6,10 @@
 <OH code="apiUser"/>
 
 
-## Basic properties {#properties-base}
-
-### Name {#name}
 
 
-
-*Technical name:* ```name```
-<PH code="apiUser:name"/>
-
+## Required Properties {#properties-mandatory}
+    
 ### Secret code {#client-secret}
 
 the secret password for your API account can be generated and should never be disclosed
@@ -22,6 +17,19 @@ the secret password for your API account can be generated and should never be di
 *Technical name:* ```clientSecret```
 <PH code="apiUser:clientSecret"/>
 
+    
+
+
+## Basic properties {#properties-base}
+    
+### Name {#name}
+
+
+
+*Technical name:* ```name```
+<PH code="apiUser:name"/>
+
+    
 
 
 

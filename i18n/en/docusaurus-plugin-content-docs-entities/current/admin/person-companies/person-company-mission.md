@@ -6,14 +6,19 @@ The missions of the service providers make it possible to know the area of ​�
 <OH code="personCompanyMission"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
 ### Last name {#name}
 
 The name of the service provider’s mission
 
 *Technical name:* ```name```
 <PH code="personCompanyMission:name"/>
+
+    
+
 
 
 

@@ -6,8 +6,10 @@ The occupancy status makes it possible to identify the real-time status of a spa
 <OH code="occupancyStatus"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
 ### Color {#color}
 
 Color allows you to color spaces or workstations on plans according to their occupancy status
@@ -28,6 +30,9 @@ The code makes it possible to identify and carry out technical operations on the
 
 *Technical name:* ```code```
 <PH code="occupancyStatus:code"/>
+
+    
+
 
 
 

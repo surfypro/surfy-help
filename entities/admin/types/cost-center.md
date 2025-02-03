@@ -6,8 +6,22 @@ Le centre de coût permet de répartir les espaces dynamiquement pour la refactu
 <OH code="costCenter"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
+### Nom du centre de coût {#name}
+
+
+
+*Nom technique:* ```name```
+<PH code="costCenter:name"/>
+
+    
+
+
+## Propriétés de base {#properties-base}
+    
 ### Code {#code}
 
 
@@ -43,13 +57,7 @@ Répartir au prorata l'espace utilisé par ce centre de coût sur l'étage sur l
 *Nom technique:* ```info```
 <PH code="costCenter:info"/>
 
-### Nom du centre de coût {#name}
-
-
-
-*Nom technique:* ```name```
-<PH code="costCenter:name"/>
-
+    
 
 
 

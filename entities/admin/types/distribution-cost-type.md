@@ -6,8 +6,10 @@
 <OH code="distributionCostType"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
 ### Code {#code}
 
 Le code est utilisé afin de pouvoir calculer automatiquement les coûts associés
@@ -21,6 +23,9 @@ Le code est utilisé afin de pouvoir calculer automatiquement les coûts associ�
 
 *Nom technique:* ```name```
 <PH code="distributionCostType:name"/>
+
+    
+
 
 
 

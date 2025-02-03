@@ -6,8 +6,22 @@ Organizations have two hierarchical levels: departments and services, and help d
 <OH code="organization"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
+### Last name {#name}
+
+Name that will define the organization
+
+*Technical name:* ```name```
+<PH code="organization:name"/>
+
+    
+
+
+## Basic properties {#properties-base}
+    
 ### Code {#code}
 
 This code can be used to contain the organization coding or the key for identification via third party software
@@ -22,13 +36,7 @@ This code can be used to contain the organization coding or the key for identifi
 *Technical name:* ```color```
 <PH code="organization:color"/>
 
-### Last name {#name}
-
-Name that will define the organization
-
-*Technical name:* ```name```
-<PH code="organization:name"/>
-
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

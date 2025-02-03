@@ -6,14 +6,19 @@ Permet de définir tous les types de contrat des personnes vis à vis de l'entre
 <OH code="personState"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
 ### Nom du statut de la personne {#name}
 
 
 
 *Nom technique:* ```name```
 <PH code="personState:name"/>
+
+    
+
 
 
 

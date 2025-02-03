@@ -6,7 +6,8 @@
 <OH code="partnerExportMappingConfigurationToFloor"/>
 
 
-## Basic properties {#properties-base}
+
+
 
 
 

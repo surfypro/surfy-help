@@ -6,7 +6,8 @@ Allows you to associate an object with a person (ergonomic seat, locker)
 <OH code="itemToPerson"/>
 
 
-## Basic properties {#properties-base}
+
+
 
 
 

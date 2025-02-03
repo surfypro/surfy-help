@@ -6,8 +6,29 @@
 <OH code="mapScale"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
+### P1 {#p-1}
+
+Point de départ
+
+*Nom technique:* ```p1```
+<PH code="mapScale:p1"/>
+
+### P2 {#p-2}
+
+Point d'arrivé
+
+*Nom technique:* ```p2```
+<PH code="mapScale:p2"/>
+
+    
+
+
+## Propriétés de base {#properties-base}
+    
 ### Distance {#length}
 
 La distance representée sur le plan entre les 2 points en mètre
@@ -28,20 +49,6 @@ Pour se rémémorer le nom et le réutiliser sur d'autres étages
 
 *Nom technique:* ```name```
 <PH code="mapScale:name"/>
-
-### P1 {#p-1}
-
-
-
-*Nom technique:* ```p1```
-<PH code="mapScale:p1"/>
-
-### P2 {#p-2}
-
-
-
-*Nom technique:* ```p2```
-<PH code="mapScale:p2"/>
 
 ### Ratio {#ratio}
 
@@ -85,6 +92,7 @@ La taille du texte sur les postes de travail et sur les objets sur le plan pour 
 *Nom technique:* ```workplaceTextSize```
 <PH code="mapScale:workplaceTextSize"/>
 
+    
 
 
 

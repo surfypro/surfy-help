@@ -6,8 +6,10 @@
 <OH code="roomTypeFloor"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
 ### Capacité totale {#total-capacity-count}
 
 La capacité totale de places est la somme du nombre de places assises et de la capacité hors assises au niveau des espaces
@@ -147,6 +149,9 @@ Taux de postes de travail partagés par au moins 2 personnes par rapport à l'en
 
 *Nom technique:* ```sharedWorkplacesRatio```
 <PH code="roomTypeFloor:sharedWorkplacesRatio"/>
+
+    
+
 
 
 ## Entités associées (unique) {#properties-belongs-to}

@@ -106,6 +106,7 @@
         "personGender": "/entities/surfy",
         "featureFamily": "/entities/help",
         "featureGroup": "/entities/help",
-        "feature": "/entities/help"
+        "feature": "/entities/help",
+        "userRefreshToken": null
     }
 }

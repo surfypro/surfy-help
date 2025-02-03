@@ -6,8 +6,29 @@ Ce sont les personnes entrées dans la base de données de Surfy
 <OH code="person"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
+### Nom de famille {#lastname}
+
+Le nom de famille de la personne
+
+*Nom technique:* ```lastname```
+<PH code="person:lastname"/>
+
+### Prénom {#firstname}
+
+Le prénom de la personne
+
+*Nom technique:* ```firstname```
+<PH code="person:firstname"/>
+
+    
+
+
+## Propriétés de base {#properties-base}
+    
 ### Badge RIE {#badge-restaurant}
 
 La référence du badge du RIE ou du restaurant d'entreprise
@@ -64,13 +85,6 @@ Le nom complet de la personne permettant de le retrouver plus facilement
 *Nom technique:* ```fullname```
 <PH code="person:fullname"/>
 
-### Nom de famille {#lastname}
-
-Le nom de famille de la personne
-
-*Nom technique:* ```lastname```
-<PH code="person:lastname"/>
-
 ### Non Affectable {#not-affectable}
 
 La personne ne peut pas être affectée à un poste de travail, un espace, un bâtiment ou un calque d'affectation
@@ -98,13 +112,6 @@ La photo de la personne pour l'avoir en trombinoscope ou dans la recherche
 
 *Nom technique:* ```picture```
 <PH code="person:picture"/>
-
-### Prénom {#firstname}
-
-Le prénom de la personne
-
-*Nom technique:* ```firstname```
-<PH code="person:firstname"/>
 
 ### Référence écran {#monitor-reference}
 
@@ -141,6 +148,7 @@ Le titre de la personne
 *Nom technique:* ```title```
 <PH code="person:title"/>
 
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 

@@ -6,7 +6,8 @@ Les utilisateurs de l'entreprise ont accès à la plateforme Surfy de leur entre
 <OH code="userCompany"/>
 
 
-## Propriétés de base {#properties-base}
+
+
 
 
 

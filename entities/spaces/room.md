@@ -6,8 +6,12 @@ Les espaces sont des lieux de travail ou des zones afin de découper un étage e
 <OH code="room"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+
+
+## Propriétés de base {#properties-base}
+    
 ### Capacité hors assises {#capacity}
 
 La capacité declarée peut être utilisé pour définir le nombre de places disponibles dans un espace ou pour connaître le maximum de personnes qu'on peut mettre dans un espace, ce chiffre s'ajoute au nombre de places assises pour donner la capacité totale
@@ -218,6 +222,7 @@ Taux de postes de travail partagés par au moins 2 personnes par rapport à l'en
 *Nom technique:* ```textAnchor```
 <PH code="room:textAnchor"/>
 
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 

@@ -6,8 +6,10 @@ Les réservations aux espaces des personnes sont enregistrées et disponibles av
 <OH code="personToRoomBooking"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
 ### Début de la réservation {#start-datetime}
 
 La date et l'heure de début de la réservation
@@ -21,6 +23,9 @@ La date et l'heure de fin de la réservation
 
 *Nom technique:* ```endDatetime```
 <PH code="personToRoomBooking:endDatetime"/>
+
+    
+
 
 
 ## Entités associées (unique) {#properties-belongs-to}

@@ -6,8 +6,29 @@
 <OH code="workplace"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
+### Position {#position}
+
+The position of the workstation in space
+
+*Technical name:* ```position```
+<PH code="workplace:position"/>
+
+### Rotation {#rotation}
+
+The angle of rotation of the workstation in space
+
+*Technical name:* ```rotation```
+<PH code="workplace:rotation"/>
+
+    
+
+
+## Basic properties {#properties-base}
+    
 ### Average assignment rate {#workplace-affectations-calculated-rate-sum}
 
 Average assignment rate of the workstation according to the assignment of the days of presence of the people
@@ -57,20 +78,6 @@ Number of assignments on the workstation
 *Technical name:* ```workplaceAffectationsCount```
 <PH code="workplace:workplaceAffectationsCount"/>
 
-### Position {#position}
-
-The position of the workstation in space
-
-*Technical name:* ```position```
-<PH code="workplace:position"/>
-
-### Rotation {#rotation}
-
-The angle of rotation of the workstation in space
-
-*Technical name:* ```rotation```
-<PH code="workplace:rotation"/>
-
 ### Text Anchor {#text-anchor}
 
 
@@ -85,6 +92,7 @@ The name of the workstation is used to identify it more simply
 *Technical name:* ```name```
 <PH code="workplace:name"/>
 
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

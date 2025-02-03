@@ -6,8 +6,12 @@ Allows you to assign a person to a building, without additional information. The
 <OH code="personToBuilding"/>
 
 
-## Basic properties {#properties-base}
 
+
+
+
+## Basic properties {#properties-base}
+    
 ### Count assignment {#add-to-people-count}
 
 Add this assignment to the total number of people assigned to the building
@@ -15,6 +19,7 @@ Add this assignment to the total number of people assigned to the building
 *Technical name:* ```addToPeopleCount```
 <PH code="personToBuilding:addToPeopleCount"/>
 
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

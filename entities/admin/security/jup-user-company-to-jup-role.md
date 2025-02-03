@@ -6,7 +6,8 @@
 <OH code="jupUserCompanyToJupRole"/>
 
 
-## Propriétés de base {#properties-base}
+
+
 
 
 

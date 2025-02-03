@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Créer un étage
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6wnzskeAskg?si=rmtQ1KBFJN67aZgd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<Youtube code="6wnzskeAskg"/>
 
 Pour créer un étage à partir d'un bâtiment déjà existant :
 -   cliquer sur le crayon en bas de la fiche du bâtiment pour "modifier le bâtiment XXX"

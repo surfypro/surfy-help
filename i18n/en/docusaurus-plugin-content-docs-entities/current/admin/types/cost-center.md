@@ -6,8 +6,22 @@ The cost center allows spaces to be distributed dynamically for re-invoicing
 <OH code="costCenter"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
+### Name of cost center {#name}
+
+
+
+*Technical name:* ```name```
+<PH code="costCenter:name"/>
+
+    
+
+
+## Basic properties {#properties-base}
+    
 ### Code {#code}
 
 
@@ -43,13 +57,7 @@ Prorate the space used by this cost center on the floor to other cost centers on
 *Technical name:* ```info```
 <PH code="costCenter:info"/>
 
-### Name of cost center {#name}
-
-
-
-*Technical name:* ```name```
-<PH code="costCenter:name"/>
-
+    
 
 
 

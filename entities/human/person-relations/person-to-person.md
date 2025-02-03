@@ -6,7 +6,8 @@
 <OH code="personToPerson"/>
 
 
-## Propriétés de base {#properties-base}
+
+
 
 
 

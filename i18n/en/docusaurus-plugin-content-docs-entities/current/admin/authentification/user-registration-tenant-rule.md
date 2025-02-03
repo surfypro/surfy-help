@@ -6,8 +6,12 @@
 <OH code="userRegistrationTenantRule"/>
 
 
-## Basic properties {#properties-base}
 
+
+
+
+## Basic properties {#properties-base}
+    
 ### Areas {#domains}
 
 Separate domains with spaces and include the at sign
@@ -29,6 +33,7 @@ Automatically associate roles and content roles with users who meet this rule
 *Technical name:* ```name```
 <PH code="userRegistrationTenantRule:name"/>
 
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

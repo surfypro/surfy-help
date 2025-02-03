@@ -6,8 +6,22 @@
 <OH code="company"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
+### Nom de l'entreprise {#name}
+
+
+
+*Nom technique:* ```name```
+<PH code="company:name"/>
+
+    
+
+
+## Propriétés de base {#properties-base}
+    
 ### Enable Pathfinding {#enable-pathfinding}
 
 
@@ -28,13 +42,6 @@ Le chemin du logo de votre entreprise
 
 *Nom technique:* ```logoPath```
 <PH code="company:logoPath"/>
-
-### Nom de l'entreprise {#name}
-
-
-
-*Nom technique:* ```name```
-<PH code="company:name"/>
 
 ### Nombre de jours de travail par semaine {#working-days-count}
 
@@ -57,6 +64,7 @@ Le nombre de jours de travail par semaine peut être 5 pour les jours ouvrés, 6
 *Nom technique:* ```proxyImages```
 <PH code="company:proxyImages"/>
 
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 

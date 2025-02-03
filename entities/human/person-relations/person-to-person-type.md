@@ -6,15 +6,10 @@
 <OH code="personToPersonType"/>
 
 
-## Propriétés de base {#properties-base}
-
-### Code {#code}
 
 
-
-*Nom technique:* ```code```
-<PH code="personToPersonType:code"/>
-
+## Propriétés obligatoires {#properties-mandatory}
+    
 ### Relation inverse {#label-backward}
 
 La définition de la relation dans le sens inverse du sens naturel, par exemple entre un père et son fils, la définition inverse du sens naturel est 'est le fils de'
@@ -29,6 +24,19 @@ La définition de la relation dans le sens naturel, par exemple entre un père e
 *Nom technique:* ```labelForward```
 <PH code="personToPersonType:labelForward"/>
 
+    
+
+
+## Propriétés de base {#properties-base}
+    
+### Code {#code}
+
+
+
+*Nom technique:* ```code```
+<PH code="personToPersonType:code"/>
+
+    
 
 
 

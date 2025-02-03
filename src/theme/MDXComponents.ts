@@ -6,6 +6,7 @@ import { PropertyTypeHelper } from '../components/MetaModel/helpers/PropertyType
 import { ObjectTypeHelper } from '../components/MetaModel/helpers/ObjectTypeHelper';
 import { Mandatory } from '@site/src/components/MetaModel/Mandatory';
 
+
 export default {
     ...MDXComponents,
     P: PropertyType,

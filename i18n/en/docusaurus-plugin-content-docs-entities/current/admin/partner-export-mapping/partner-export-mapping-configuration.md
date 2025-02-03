@@ -6,14 +6,19 @@
 <OH code="partnerExportMappingConfiguration"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
 ### Code {#code}
 
 
 
 *Technical name:* ```code```
 <PH code="partnerExportMappingConfiguration:code"/>
+
+    
+
 
 
 

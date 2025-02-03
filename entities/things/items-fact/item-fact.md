@@ -6,8 +6,22 @@
 <OH code="itemFact"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
+### Value {#value}
+
+
+
+*Nom technique:* ```value```
+<PH code="itemFact:value"/>
+
+    
+
+
+## Propriétés de base {#properties-base}
+    
 ### Measure {#measure}
 
 
@@ -22,13 +36,6 @@
 *Nom technique:* ```time```
 <PH code="itemFact:time"/>
 
-### Value {#value}
-
-
-
-*Nom technique:* ```value```
-<PH code="itemFact:value"/>
-
 ### Voltage {#voltage}
 
 
@@ -36,6 +43,7 @@
 *Nom technique:* ```voltage```
 <PH code="itemFact:voltage"/>
 
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 

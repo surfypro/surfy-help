@@ -6,8 +6,22 @@
 <OH code="dimensionType"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
+### Nom du type de dimension {#name}
+
+
+
+*Nom technique:* ```name```
+<PH code="dimensionType:name"/>
+
+    
+
+
+## Propriétés de base {#properties-base}
+    
 ### Code du type de dimension {#code}
 
 Le code permet d'identifier le type de dimension, il est utilisé lorsque des calculs spécifiques s'appliquent sur le type de dimension
@@ -22,13 +36,6 @@ Le code permet d'identifier le type de dimension, il est utilisé lorsque des ca
 *Nom technique:* ```description```
 <PH code="dimensionType:description"/>
 
-### Nom du type de dimension {#name}
-
-
-
-*Nom technique:* ```name```
-<PH code="dimensionType:name"/>
-
 ### Ordre d'affichage {#order}
 
 Permet de trier les types de calque pour les afficher
@@ -36,6 +43,7 @@ Permet de trier les types de calque pour les afficher
 *Nom technique:* ```order```
 <PH code="dimensionType:order"/>
 
+    
 
 
 

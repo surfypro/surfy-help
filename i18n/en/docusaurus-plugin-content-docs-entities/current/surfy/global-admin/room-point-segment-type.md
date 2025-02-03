@@ -6,8 +6,10 @@
 <OH code="roomPointSegmentType"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
 ### Code {#code}
 
 
@@ -21,6 +23,9 @@
 
 *Technical name:* ```name```
 <PH code="roomPointSegmentType:name"/>
+
+    
+
 
 
 

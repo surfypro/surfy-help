@@ -6,8 +6,10 @@
 <OH code="structure"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
 ### Name {#name}
 
 
@@ -15,6 +17,11 @@
 *Technical name:* ```name```
 <PH code="structure:name"/>
 
+    
+
+
+## Basic properties {#properties-base}
+    
 ### Transformation {#transform}
 
 Transformation of the structure to calibrate it on a map
@@ -22,6 +29,7 @@ Transformation of the structure to calibrate it on a map
 *Technical name:* ```transform```
 <PH code="structure:transform"/>
 
+    
 
 
 

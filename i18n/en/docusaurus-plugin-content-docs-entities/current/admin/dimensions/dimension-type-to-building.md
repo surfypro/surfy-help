@@ -6,7 +6,8 @@ Building assignment layer types are used to define the different types of buildi
 <OH code="dimensionTypeToBuilding"/>
 
 
-## Basic properties {#properties-base}
+
+
 
 
 

@@ -1,6 +1,8 @@
 import { ThemeProvider, createTheme } from "@mui/material";
-import React from "react";
-
+import React, { useEffect } from "react";
+import { SetupRecoilContext, versionCookieKeyName, appVersion } from '@site/surfy';
+import { useCurrentLocale } from "../components/Translations/translations";
+import Cookies from 'js-cookie'
 
 const theme = createTheme({
     typography: {
@@ -16,7 +18,15 @@ const theme = createTheme({
         }
     }
 });
-export default function Root(props: { children }) {
+export default function Root(props: { children: React.ReactNode }) {
     const { children } = props;
-    return <ThemeProvider theme={theme}>{children}</ThemeProvider>
+    const language = useCurrentLocale();
+    useEffect(() => {
+        Cookies.set(versionCookieKeyName, appVersion);
+    }, [appVersion]);
+    return <ThemeProvider theme={theme}>
+        <SetupRecoilContext defaultLanguage={language}>
+            {children}
+        </SetupRecoilContext>
+    </ThemeProvider>
 }

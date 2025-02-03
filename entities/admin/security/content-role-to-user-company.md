@@ -6,7 +6,8 @@
 <OH code="contentRoleToUserCompany"/>
 
 
-## Propriétés de base {#properties-base}
+
+
 
 
 

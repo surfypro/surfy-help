@@ -6,7 +6,8 @@
 <OH code="apiUserToJupRole"/>
 
 
-## Propriétés de base {#properties-base}
+
+
 
 
 

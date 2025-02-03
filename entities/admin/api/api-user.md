@@ -6,8 +6,10 @@
 <OH code="apiUser"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
 ### Code secret {#client-secret}
 
 le mot de passe secret de votre compte API peut être généré et ne devrait jamais être communiqué
@@ -15,6 +17,11 @@ le mot de passe secret de votre compte API peut être généré et ne devrait ja
 *Nom technique:* ```clientSecret```
 <PH code="apiUser:clientSecret"/>
 
+    
+
+
+## Propriétés de base {#properties-base}
+    
 ### Name {#name}
 
 
@@ -22,6 +29,7 @@ le mot de passe secret de votre compte API peut être généré et ne devrait ja
 *Nom technique:* ```name```
 <PH code="apiUser:name"/>
 
+    
 
 
 

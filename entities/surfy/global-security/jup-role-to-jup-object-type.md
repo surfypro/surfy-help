@@ -6,8 +6,12 @@
 <OH code="jupRoleToJupObjectType"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+
+
+## Propriétés de base {#properties-base}
+    
 ### Création (C) {#ar-create}
 
 Autorise la création d'entité
@@ -36,6 +40,7 @@ Autorise la suppression d'entités
 *Nom technique:* ```arDelete```
 <PH code="jupRoleToJupObjectType:arDelete"/>
 
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 

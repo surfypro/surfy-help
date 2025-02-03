@@ -6,8 +6,10 @@
 <OH code="user"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
 ### E-mail {#email}
 
 The email used by the user for correspondence or for authentication
@@ -15,6 +17,18 @@ The email used by the user for correspondence or for authentication
 *Technical name:* ```email```
 <PH code="user:email"/>
 
+### Sub {#sub}
+
+
+
+*Technical name:* ```sub```
+<PH code="user:sub"/>
+
+    
+
+
+## Basic properties {#properties-base}
+    
 ### First name {#firstname}
 
 The user's first name
@@ -36,13 +50,7 @@ The user's last name
 *Technical name:* ```picture```
 <PH code="user:picture"/>
 
-### Sub {#sub}
-
-
-
-*Technical name:* ```sub```
-<PH code="user:sub"/>
-
+    
 
 
 

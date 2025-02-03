@@ -6,15 +6,10 @@ Allows you to display objects by Family on the plans and in the pdf inventory
 <OH code="itemTypeFamily"/>
 
 
-## Basic properties {#properties-base}
-
-### Code {#code}
 
 
-
-*Technical name:* ```code```
-<PH code="itemTypeFamily:code"/>
-
+## Required Properties {#properties-mandatory}
+    
 ### Name of the object's type family {#name}
 
 The name of the family allows it to be identified, this name is used to group the types of object
@@ -22,6 +17,19 @@ The name of the family allows it to be identified, this name is used to group th
 *Technical name:* ```name```
 <PH code="itemTypeFamily:name"/>
 
+    
+
+
+## Basic properties {#properties-base}
+    
+### Code {#code}
+
+
+
+*Technical name:* ```code```
+<PH code="itemTypeFamily:code"/>
+
+    
 
 
 

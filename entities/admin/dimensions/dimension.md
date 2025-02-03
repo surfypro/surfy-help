@@ -6,8 +6,22 @@
 <OH code="dimension"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
+### Nom du calque d'analyse {#name}
+
+Utile pour différencier le calque parmis d'autres
+
+*Nom technique:* ```name```
+<PH code="dimension:name"/>
+
+    
+
+
+## Propriétés de base {#properties-base}
+    
 ### Couleur {#color}
 
 La couleur de calque d'analyse permet de différencier les espaces sur le plan
@@ -21,13 +35,6 @@ L'empreinte carbone par mètre carré permet de calculer l'empreinte carbone en 
 
 *Nom technique:* ```carbonFootprintPerMeter```
 <PH code="dimension:carbonFootprintPerMeter"/>
-
-### Nom du calque d'analyse {#name}
-
-Utile pour différencier le calque parmis d'autres
-
-*Nom technique:* ```name```
-<PH code="dimension:name"/>
 
 ### Nombre d'affectations directes {#people-count}
 
@@ -57,6 +64,7 @@ La valeur peut être utilisé pour associé le calque à une valeur numérique a
 *Nom technique:* ```value```
 <PH code="dimension:value"/>
 
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 
