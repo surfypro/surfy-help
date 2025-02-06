@@ -111,13 +111,13 @@ On peut regrouper plusieurs typologies dans un groupe de typologies, permettant 
 
 Des groupes de typologies sont proposés à l'utilisation. Depuis le menu de gauche,
 
--   cliquer sur "Administration", "Typologies", "Typologies d'espace" puis "Groupes de typologie d'espace" et "Lister les groupes de typologie d'espace"
--   cliquer sur l'icône en début de ligne du groupe de typologie d'espace choisi (exemple: "Espaces de réunion") pour "Modifier le groupe de typologie d'espace XXX"
--   cliquer sur "Créer une association groupe de typologie d'espace à typologie d'espace"
--   cliquer sur l'icône "crayon" pour ajouter une typologie d'espace au groupe (exemple: "Box de réunion")
+-   cliquer sur "Administration", "Typologies", "Typologies d'espace" puis "Lister les typologies d'espace"
+-   cliquer sur l'icône en début de la typologie d'espace choisi (exemple: "Salle de réunion") pour "Modifier la typologie d'espace XXX"
+-   cliquer sur "Association groupe de typologie d'espace à typologie d'espace" puis "Créer une association groupe de typologie d'espace à typologie d'espace"
+-   cliquer sur l'icône "crayon" pour donner le groupe de typologie d'espace "Espaces de réunion" à la typologie d'espace
 -   valider la création
 
-La typologie d'espace est ajoutée au groupe, et s'ajoute à la liste des typologies du groupe, en dessous de la sélection.
+Le groupe de typologie d'espace est donné à la typologie, et s'ajoute à la liste des groupes de typologie de la typologie, en dessous de la sélection.
 
 ### Visualiser les groupes de typologies :
 
