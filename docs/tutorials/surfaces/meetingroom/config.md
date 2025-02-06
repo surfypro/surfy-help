@@ -6,30 +6,19 @@ sidebar_position: 1
 
 Pour qu'un espace soit visualisé et accessible depuis la page "Voir et naviquer dans les salles de réunion", il faut que sa typologie d'espace (bulle, box, salle de réunion, ...) soit associée au groupe de typologie d'espace "Espaces de réunion", ou à tout autre groupe de typologie dont le code est "MEETING".
 
-## Accéder au groupe de typologie
-
-Pour accéder aux groupes de typologie, depuis le menu de gauche,
-
--   cliquer sur "Administration", "Typologies", "Typologies d'espace" puis "Groupes de typologie d'espace" et "Lister les groupes de typologie d'espace"
--   cliquer sur l'icône en début de ligne du groupe de typologie d'espace choisi (exemple: "Espaces de réunion") pour "Modifier le groupe de typologie d'espace XXX"
 
 ## Choisir les typologies d'espace à afficher
 
-En modification du groupe de typologies d'espace,
+En modification de la typologie d'espace,
 
--   vérifier que le "Code" est renseigné avec l'information "MEETING"
 -   cliquer sur "Créer une association groupe de typologie d'espace à typologie d'espace"
--   cliquer sur l'icône "crayon" pour ajouter une typologie d'espace au groupe (exemple: "Box de réunion")
+-   cliquer sur l'icône "crayon" pour ajouter le groupe de typologies d'espace "Espaces de réunion" à la typologie
 -   valider la création
 
-La typologie d'espace est associée au groupe, et s'ajoute à la liste des typologies du groupe, en dessous de la sélection.
-Tous les espaces ayant une de ces typologies seront affichés dans la page "Voir et naviquer dans les salles de réunion".
+Le groupe de typologies d'espace est associée à la typologie, et s'ajoute à la liste des "groupes de typologies d'espace" de la typologie, en dessous de la sélection.
+Tous les espaces ayant une des typologies contenues dans le groupe de typologie d'espaces "Espaces de réunion" seront affichés dans la page "Voir et naviquer dans les salles de réunion".
 
-
-:::danger ATTENTION
-A ce stade, cocher la case d'une typologie puis cliquer sur l'icone "corbeille" supprime la typologie au lieu de la retirer du groupe de typologies, rendant "sans typologie" les espaces concernés.
 Pour retirer une typologie du groupe de typologies, il faut [modifier la typologie elle même](/docs/tutorials/surfaces/room/roomtype.md#modifier-une-typologie-despace) puis cocher et supprimer l'association au groupe concerné.
-:::
 
 ## Choisir les équipements à afficher
 
