@@ -6,7 +6,8 @@
 <OH code="partnerExportMappingToRoomType"/>
 
 
-## Propriétés de base {#properties-base}
+
+
 
 
 

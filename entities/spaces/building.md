@@ -6,8 +6,29 @@ Le bâtiment est utilisé pour regrouper les étages
 <OH code="building"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
+### Couleur {#color}
+
+La couleur du bâtiment est utilisée pour définir la couleur de fond dans les présentations des étages ou du bâtiment et pouvoir distinguer ce bâtiment des autres
+
+*Nom technique:* ```color```
+<PH code="building:color"/>
+
+### Nom du bâtiment {#name}
+
+Nom du bâtiment ou du scénario
+
+*Nom technique:* ```name```
+<PH code="building:name"/>
+
+    
+
+
+## Propriétés de base {#properties-base}
+    
 ### Adresse {#address}
 
 L'adresse du bâtiment pour le localiser sur la carte
@@ -49,13 +70,6 @@ Montant annuel des charges d'exploitations (exemple : eau, éléctricité)
 
 *Nom technique:* ```yearlyExploitationFees```
 <PH code="building:yearlyExploitationFees"/>
-
-### Couleur {#color}
-
-La couleur du bâtiment est utilisée pour définir la couleur de fond dans les présentations des étages ou du bâtiment et pouvoir distinguer ce bâtiment des autres
-
-*Nom technique:* ```color```
-<PH code="building:color"/>
 
 ### Date d'achat du bâtiment {#purchase-date}
 
@@ -126,13 +140,6 @@ Montant total des taxes et impôts
 
 *Nom technique:* ```yearlyTaxFees```
 <PH code="building:yearlyTaxFees"/>
-
-### Nom du bâtiment {#name}
-
-Nom du bâtiment ou du scénario
-
-*Nom technique:* ```name```
-<PH code="building:name"/>
 
 ### Nombre d'affectations {#people-count}
 
@@ -288,6 +295,7 @@ Taux de postes de travail partagés par au moins 2 personnes par rapport à l'en
 *Nom technique:* ```sharedWorkplacesRatio```
 <PH code="building:sharedWorkplacesRatio"/>
 
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 

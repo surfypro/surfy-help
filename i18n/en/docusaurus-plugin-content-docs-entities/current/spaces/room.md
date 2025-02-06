@@ -6,8 +6,12 @@ Spaces are workplaces or areas in order to divide a floor into sub-spaces.
 <OH code="room"/>
 
 
-## Basic properties {#properties-base}
 
+
+
+
+## Basic properties {#properties-base}
+    
 ### Additional information {#info}
 
 Allows you to keep additional text-type information on the space
@@ -218,6 +222,7 @@ The total number of people assigned, either directly assigned to spaces or throu
 *Technical name:* ```totalPeopleCount```
 <PH code="room:totalPeopleCount"/>
 
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

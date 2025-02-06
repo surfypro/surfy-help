@@ -6,7 +6,8 @@
 <OH code="contentRoleToBuilding"/>
 
 
-## Basic properties {#properties-base}
+
+
 
 
 

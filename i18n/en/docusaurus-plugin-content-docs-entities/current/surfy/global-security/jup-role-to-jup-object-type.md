@@ -6,8 +6,12 @@
 <OH code="jupRoleToJupObjectType"/>
 
 
-## Basic properties {#properties-base}
 
+
+
+
+## Basic properties {#properties-base}
+    
 ### Creation (C) {#ar-create}
 
 Allows entity creation
@@ -36,6 +40,7 @@ Allows updating of entities
 *Technical name:* ```arUpdate```
 <PH code="jupRoleToJupObjectType:arUpdate"/>
 
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

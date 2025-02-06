@@ -6,8 +6,10 @@
 <OH code="roomPoint"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
 ### x {#x}
 
 Coordonnée sur l'axe X
@@ -21,6 +23,9 @@ Coordonnée sur l'axe Y
 
 *Nom technique:* ```y```
 <PH code="roomPoint:y"/>
+
+    
+
 
 
 ## Entités associées (unique) {#properties-belongs-to}

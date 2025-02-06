@@ -6,8 +6,22 @@ L'entreprise prestataire permet de gérer le personnel prestataire par entrepris
 <OH code="personCompany"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
+### Nom {#name}
+
+Le nom du prestataire, par exemple le nom de l'entreprise d'un prestataire de service
+
+*Nom technique:* ```name```
+<PH code="personCompany:name"/>
+
+    
+
+
+## Propriétés de base {#properties-base}
+    
 ### Contact {#contact}
 
 Les informations de contact du prestataire
@@ -29,13 +43,7 @@ Des informations complémentaires sur le prestataire, comme sa mission, ses vale
 *Nom technique:* ```comment```
 <PH code="personCompany:comment"/>
 
-### Nom {#name}
-
-Le nom du prestataire, par exemple le nom de l'entreprise d'un prestataire de service
-
-*Nom technique:* ```name```
-<PH code="personCompany:name"/>
-
+    
 
 
 

@@ -6,7 +6,8 @@ Enterprise users have access to their company's Surfy platform
 <OH code="userCompany"/>
 
 
-## Basic properties {#properties-base}
+
+
 
 
 

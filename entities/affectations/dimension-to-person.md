@@ -6,7 +6,8 @@ Permet d'affecter une personne à un quartier, territoire ou village
 <OH code="dimensionToPerson"/>
 
 
-## Propriétés de base {#properties-base}
+
+
 
 
 

@@ -6,8 +6,12 @@
 <OH code="contentRoleToJupUiTenantOperation"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+
+
+## Propriétés de base {#properties-base}
+    
 ### Can See {#can-see}
 
 
@@ -15,6 +19,7 @@
 *Nom technique:* ```canSee```
 <PH code="contentRoleToJupUiTenantOperation:canSee"/>
 
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 

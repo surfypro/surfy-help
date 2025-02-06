@@ -6,14 +6,19 @@ Permet de dénombrer chaque genre, par exemple pour la gestion des sanitaires
 <OH code="personGender"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
 ### Nom {#name}
 
 Le nom du genre de la personne
 
 *Nom technique:* ```name```
 <PH code="personGender:name"/>
+
+    
+
 
 
 

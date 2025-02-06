@@ -6,14 +6,19 @@
 <OH code="authentificationConnection"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
 ### Name {#name}
 
 
 
 *Nom technique:* ```name```
 <PH code="authentificationConnection:name"/>
+
+    
+
 
 
 

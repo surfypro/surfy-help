@@ -6,8 +6,12 @@ Permet d'attribuer un poste de travail fixe à une personne
 <OH code="workplaceAffectation"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+
+
+## Propriétés de base {#properties-base}
+    
 ### Calculated Rate {#calculated-rate}
 
 
@@ -71,6 +75,7 @@ Permet d'attribuer un poste de travail fixe à une personne
 *Nom technique:* ```wednesdayRate```
 <PH code="workplaceAffectation:wednesdayRate"/>
 
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 

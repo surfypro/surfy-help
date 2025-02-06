@@ -117,6 +117,40 @@ const config: Config = {
         // ... other options
       },
     ],
+    // function myCustomPlugin(context, options) {
+    //   return {
+    //     name: 'custom-webpack-plugin',
+    //     configureWebpack(config, isServer, utils, content) {
+    //       return {
+    //         module: {
+    //           rules: [
+    //             {
+    //               test: /\.(tsx)$/,
+    //               include: [
+    //                 resolve(__dirname, 'docs'),
+    //                 resolve(__dirname, 'src')
+    //               ],
+    //               use: [
+    //                 {
+    //                   loader: 'babel-loader',
+    //                   options: {
+    //                     presets: [
+    //                       '@babel/preset-react',
+    //                       '@babel/preset-typescript', // Enables TypeScript support
+    //                     ],
+    //                   },
+    //                 },
+    //                 // {
+    //                 //   loader: '@mdx-js/loader',
+    //                 // },
+    //               ],
+    //             }
+    //           ],
+    //         },
+    //       };
+    //     },
+    //   }
+    // }
   ],
   themeConfig: {
     // Replace with your project's social card
@@ -139,7 +173,7 @@ const config: Config = {
           type: 'localeDropdown',
           position: 'right'
         },
-             
+
         { to: '/docs/courses/intro', label: 'Cours' },
         { to: '/changelog/app', label: 'Nouveautés', position: 'left' },
         // { to: '/blog', label: 'Blog', position: 'left' },

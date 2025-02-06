@@ -1,0 +1,8 @@
+{
+  "src/surfy-help/index.ts": {
+    "file": "index.js",
+    "name": "index",
+    "src": "src/surfy-help/index.ts",
+    "isEntry": true
+  }
+}

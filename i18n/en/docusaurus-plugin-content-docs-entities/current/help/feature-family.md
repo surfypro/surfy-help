@@ -6,8 +6,12 @@
 <OH code="featureFamily"/>
 
 
-## Basic properties {#properties-base}
 
+
+
+
+## Basic properties {#properties-base}
+    
 ### Name {#name}
 
 
@@ -15,6 +19,7 @@
 *Technical name:* ```name```
 <PH code="featureFamily:name"/>
 
+    
 
 
 

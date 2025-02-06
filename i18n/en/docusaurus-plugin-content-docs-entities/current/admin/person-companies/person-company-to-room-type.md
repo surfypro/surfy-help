@@ -6,7 +6,8 @@ The types of spaces of the service providers make it possible to define a relati
 <OH code="personCompanyToRoomType"/>
 
 
-## Basic properties {#properties-base}
+
+
 
 
 

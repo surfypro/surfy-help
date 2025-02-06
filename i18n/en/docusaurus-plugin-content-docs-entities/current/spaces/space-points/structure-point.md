@@ -6,8 +6,10 @@
 <OH code="structurePoint"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
 ### Sort Index {#sort-index}
 
 
@@ -28,6 +30,9 @@
 
 *Technical name:* ```y```
 <PH code="structurePoint:y"/>
+
+    
+
 
 
 ## Associated entities (unique) {#properties-belongs-to}

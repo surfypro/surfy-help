@@ -6,8 +6,10 @@
 <OH code="jupRole"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
 ### Code {#code}
 
 
@@ -15,6 +17,11 @@
 *Nom technique:* ```code```
 <PH code="jupRole:code"/>
 
+    
+
+
+## Propriétés de base {#properties-base}
+    
 ### Name {#name}
 
 
@@ -22,6 +29,7 @@
 *Nom technique:* ```name```
 <PH code="jupRole:name"/>
 
+    
 
 
 

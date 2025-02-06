@@ -6,7 +6,8 @@ Allows you to assign a person to a district, territory or village
 <OH code="dimensionToPerson"/>
 
 
-## Basic properties {#properties-base}
+
+
 
 
 

@@ -6,8 +6,12 @@
 <OH code="jupRoleToJupUiOption"/>
 
 
-## Basic properties {#properties-base}
 
+
+
+
+## Basic properties {#properties-base}
+    
 ### Can see option {#can-see}
 
 Allow the option to be seen by the role
@@ -15,6 +19,7 @@ Allow the option to be seen by the role
 *Technical name:* ```canSee```
 <PH code="jupRoleToJupUiOption:canSee"/>
 
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

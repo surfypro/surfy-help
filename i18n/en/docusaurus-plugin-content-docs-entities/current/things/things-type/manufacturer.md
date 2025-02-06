@@ -6,8 +6,10 @@
 <OH code="manufacturer"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
 ### Object type vendor name {#name}
 
 Identifies the manufacturer's name or brand
@@ -15,6 +17,11 @@ Identifies the manufacturer's name or brand
 *Technical name:* ```name```
 <PH code="manufacturer:name"/>
 
+    
+
+
+## Basic properties {#properties-base}
+    
 ### Website {#website}
 
 Manufacturer's website address
@@ -22,6 +29,7 @@ Manufacturer's website address
 *Technical name:* ```website```
 <PH code="manufacturer:website"/>
 
+    
 
 
 

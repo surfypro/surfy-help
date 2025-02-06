@@ -2,17 +2,17 @@ import React from "react";
 import Box from '@mui/material/Box';
 import Fade from '@mui/material/Fade';
 import Paper from '@mui/material/Paper';
-import entitiesPath from '../../metaModel/entities.paths.json';
 import { useTranslations } from "../Translations/translations";
 import { HelpTooltipStyled } from "./HelpTooltipStyled";
 import { toDocumentationLinkString } from "@site/src/utils/documentionStyle";
+import { VisibleCamelizedObjectTypeNames } from '@site/surfy'
+import { objectTypePathMapping } from "@site/src/metaModel/metamodel.json.helper";
 
-export function ObjectType(props: { code: string }) {
+export function ObjectType(props: { code: VisibleCamelizedObjectTypeNames }) {
     const entitiesTranslations = useTranslations();
-    const { code:objectTypeName } = props;
-    // const [objectTypeName, name] = code.split(':');
+    const { code: objectTypeName } = props;
 
-    const directoryPath = entitiesPath.objectTypePathMapping[objectTypeName];
+    const directoryPath = objectTypePathMapping[objectTypeName];
     if (!directoryPath) {
         throw new Error(`object type ${objectTypeName} not found in entities`);
     }

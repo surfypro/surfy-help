@@ -6,15 +6,10 @@ La légende permet de configurer les propriété visible quand le plan est sauve
 <OH code="legend"/>
 
 
-## Propriétés de base {#properties-base}
-
-### Configuration {#configuration}
 
 
-
-*Nom technique:* ```configuration```
-<PH code="legend:configuration"/>
-
+## Propriétés obligatoires {#properties-mandatory}
+    
 ### Name {#name}
 
 
@@ -22,6 +17,19 @@ La légende permet de configurer les propriété visible quand le plan est sauve
 *Nom technique:* ```name```
 <PH code="legend:name"/>
 
+    
+
+
+## Propriétés de base {#properties-base}
+    
+### Configuration {#configuration}
+
+
+
+*Nom technique:* ```configuration```
+<PH code="legend:configuration"/>
+
+    
 
 
 

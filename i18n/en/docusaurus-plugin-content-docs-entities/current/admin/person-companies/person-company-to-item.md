@@ -6,8 +6,12 @@ The interventions of service providers on objects make it possible to define, fo
 <OH code="personCompanyToItem"/>
 
 
-## Basic properties {#properties-base}
 
+
+
+
+## Basic properties {#properties-base}
+    
 ### Comment {#comment}
 
 A comment on the intervention
@@ -22,6 +26,7 @@ When the intervention took place
 *Technical name:* ```datetime```
 <PH code="personCompanyToItem:datetime"/>
 
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

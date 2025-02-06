@@ -6,8 +6,10 @@
 <OH code="organizationFloor"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
 ### Carbon footprint {#carbon-footprint}
 
 The carbon footprint is the number of CO2 emitted
@@ -147,6 +149,9 @@ The workstation ratio is the number of square meters divided by the number of wo
 
 *Technical name:* ```workplacesRatio```
 <PH code="organizationFloor:workplacesRatio"/>
+
+    
+
 
 
 ## Associated entities (unique) {#properties-belongs-to}

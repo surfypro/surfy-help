@@ -1,5 +1,21 @@
 # Nouveautés
 
+<!-- ## 31 Janvier 2025 - v3.4.61
+
+- Introduction de Surfy Copilot en version Beta pour aider à la création des plans
+- Les types d'objets peuvent être exclus de la création du graphe d'orientation via une option dans les propriétés du type d'objet
+- Les icônes sont toutes exclues de la création du graphe d'orientation 
+- Les prix sont maintenant affichés avec 2 décimales après la virgule et en info-bulle la valeur exacte est disponible.
+-->
+
+## 23 Janvier 2025 - v3.4.59
+
+- Les objets sont colorés par défaut en fonction de la couleur du type d'objet dans toutes les visions, sauf dans la vision des occupations où ils sont blancs.
+
+## 22 Janvier 2025 - v3.4.58
+
+- Amélioration des performances de l'application
+
 ## 12 Janvier 2025 - v3.4.52
 
 - Améliorations dans la gestion des erreurs lors de l'importation

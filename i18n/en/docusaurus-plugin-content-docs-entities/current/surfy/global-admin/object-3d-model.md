@@ -6,8 +6,10 @@ The 3D Model allows a realistic 3D representation of objects placed on the plan;
 <OH code="object3dModel"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
 ### Model {#model}
 
 
@@ -42,6 +44,9 @@ Use X if the object is facing right or Y if the object is facing down
 
 *Technical name:* ```type```
 <PH code="object3dModel:type"/>
+
+    
+
 
 
 

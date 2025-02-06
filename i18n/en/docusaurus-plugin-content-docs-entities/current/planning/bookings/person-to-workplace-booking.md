@@ -6,8 +6,10 @@ People's workstation reservations are recorded and available with reservation st
 <OH code="personToWorkplaceBooking"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
 ### End of reservation {#end-datetime}
 
 The date and time the reservation ends
@@ -21,6 +23,9 @@ The start date and time of the reservation
 
 *Technical name:* ```startDatetime```
 <PH code="personToWorkplaceBooking:startDatetime"/>
+
+    
+
 
 
 ## Associated entities (unique) {#properties-belongs-to}

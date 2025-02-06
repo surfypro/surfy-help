@@ -6,8 +6,12 @@
 <OH code="jupRoleToJupUiLayout"/>
 
 
-## Basic properties {#properties-base}
 
+
+
+
+## Basic properties {#properties-base}
+    
 ### Can See {#can-see}
 
 
@@ -15,6 +19,7 @@
 *Technical name:* ```canSee```
 <PH code="jupRoleToJupUiLayout:canSee"/>
 
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

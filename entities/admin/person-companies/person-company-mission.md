@@ -6,14 +6,19 @@ Les missions des prestataires permettent de connaitre le domaine d'intervention 
 <OH code="personCompanyMission"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
 ### Nom {#name}
 
 Le nom de la mission du prestataire
 
 *Nom technique:* ```name```
 <PH code="personCompanyMission:name"/>
+
+    
+
 
 
 

@@ -6,14 +6,19 @@ Allows you to define all types of contracts between people and the company
 <OH code="personState"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
 ### Person Status Name {#name}
 
 
 
 *Technical name:* ```name```
 <PH code="personState:name"/>
+
+    
+
 
 
 

@@ -6,14 +6,19 @@ L'association entre un point et un espace permet de conserver l'ordre des points
 <OH code="roomPointRoom"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
 ### Index de tri {#sort-index}
 
 
 
 *Nom technique:* ```sortIndex```
 <PH code="roomPointRoom:sortIndex"/>
+
+    
+
 
 
 ## Entités associées (unique) {#properties-belongs-to}

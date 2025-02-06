@@ -6,8 +6,12 @@
 <OH code="userRegistrationTenantRule"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+
+
+## Propriétés de base {#properties-base}
+    
 ### Associer automatiquement les rôles {#automatic-user-to-role-mapping}
 
 Associer automatiquement les rôles et les rôles de contenu aux utilisateurs qui respectent cette règle
@@ -29,6 +33,7 @@ Séparer les domaines avec des espaces et inclure l'arobase
 *Nom technique:* ```name```
 <PH code="userRegistrationTenantRule:name"/>
 
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 

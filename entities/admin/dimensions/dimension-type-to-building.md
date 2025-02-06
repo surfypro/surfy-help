@@ -6,7 +6,8 @@ Les types de calques d'affectation du bâtiment permettent de définir les diff�
 <OH code="dimensionTypeToBuilding"/>
 
 
-## Propriétés de base {#properties-base}
+
+
 
 
 

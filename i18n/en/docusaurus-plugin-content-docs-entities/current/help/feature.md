@@ -6,8 +6,12 @@
 <OH code="feature"/>
 
 
-## Basic properties {#properties-base}
 
+
+
+
+## Basic properties {#properties-base}
+    
 ### Name {#name}
 
 
@@ -15,6 +19,7 @@
 *Technical name:* ```name```
 <PH code="feature:name"/>
 
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

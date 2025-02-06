@@ -6,7 +6,8 @@
 <OH code="dimensionRoom"/>
 
 
-## Basic properties {#properties-base}
+
+
 
 
 

@@ -6,8 +6,10 @@
 <OH code="partnerApiCredential"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
 ### Client Id {#client-id}
 
 
@@ -29,13 +31,6 @@
 *Technical name:* ```code```
 <PH code="partnerApiCredential:code"/>
 
-### Enabled {#enable}
-
-You must activate the key to use it
-
-*Technical name:* ```enable```
-<PH code="partnerApiCredential:enable"/>
-
 ### Host {#host}
 
 
@@ -50,6 +45,19 @@ You must activate the key to use it
 *Technical name:* ```label```
 <PH code="partnerApiCredential:label"/>
 
+    
+
+
+## Basic properties {#properties-base}
+    
+### Enabled {#enable}
+
+You must activate the key to use it
+
+*Technical name:* ```enable```
+<PH code="partnerApiCredential:enable"/>
+
+    
 
 
 

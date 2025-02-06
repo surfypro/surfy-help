@@ -6,8 +6,10 @@ A workplace of people defines the workplace of people
 <OH code="personWorkingLocation"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
 ### Date {#date}
 
 
@@ -21,6 +23,9 @@ A workplace of people defines the workplace of people
 
 *Technical name:* ```daySlotType```
 <PH code="personWorkingLocation:daySlotType"/>
+
+    
+
 
 
 ## Associated entities (unique) {#properties-belongs-to}

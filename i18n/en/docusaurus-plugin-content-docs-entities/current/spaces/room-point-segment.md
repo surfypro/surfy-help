@@ -6,8 +6,12 @@
 <OH code="roomPointSegment"/>
 
 
-## Basic properties {#properties-base}
 
+
+
+
+## Basic properties {#properties-base}
+    
 ### Reverse points {#reverse-points}
 
 Reverse the points of the segment in order to have the display, for example, of doors in the right direction
@@ -22,6 +26,7 @@ Show segment on both sides of segment
 *Technical name:* ```displayBothSides```
 <PH code="roomPointSegment:displayBothSides"/>
 
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

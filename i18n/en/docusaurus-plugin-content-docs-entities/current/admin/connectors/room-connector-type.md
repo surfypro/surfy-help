@@ -6,14 +6,19 @@
 <OH code="roomConnectorType"/>
 
 
-## Basic properties {#properties-base}
 
+
+## Required Properties {#properties-mandatory}
+    
 ### Name {#name}
 
 
 
 *Technical name:* ```name```
 <PH code="roomConnectorType:name"/>
+
+    
+
 
 
 

@@ -6,8 +6,29 @@ Le campus est utilisé pour regrouper des bâtiments qui sont au même endroit.
 <OH code="campus"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
+### Couleur {#color}
+
+Couleur du campus
+
+*Nom technique:* ```color```
+<PH code="campus:color"/>
+
+### Nom du campus {#name}
+
+Nom du campus
+
+*Nom technique:* ```name```
+<PH code="campus:name"/>
+
+    
+
+
+## Propriétés de base {#properties-base}
+    
 ### Address {#address}
 
 
@@ -22,26 +43,12 @@ La capacité totale de places est la somme du nombre de places assises et de la 
 *Nom technique:* ```totalCapacityCount```
 <PH code="campus:totalCapacityCount"/>
 
-### Couleur {#color}
-
-Couleur du campus
-
-*Nom technique:* ```color```
-<PH code="campus:color"/>
-
 ### Empreinte carbone {#carbon-footprint}
 
 L'empreinte carbone est le nombre de CO2 émis
 
 *Nom technique:* ```carbonFootprint```
 <PH code="campus:carbonFootprint"/>
-
-### Nom du campus {#name}
-
-Nom du campus
-
-*Nom technique:* ```name```
-<PH code="campus:name"/>
 
 ### Nombre d'affectations {#people-count}
 
@@ -169,6 +176,7 @@ Taux de postes de travail partagés par au moins 2 personnes par rapport à l'en
 *Nom technique:* ```sharedWorkplacesRatio```
 <PH code="campus:sharedWorkplacesRatio"/>
 
+    
 
 
 

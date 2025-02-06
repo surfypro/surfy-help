@@ -6,8 +6,22 @@ Les organisations ont deux niveaux hiérarchiques : les directions et les servic
 <OH code="organization"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
+### Nom {#name}
+
+Nom qui va définir l'organisation
+
+*Nom technique:* ```name```
+<PH code="organization:name"/>
+
+    
+
+
+## Propriétés de base {#properties-base}
+    
 ### Code {#code}
 
 Ce code peut être utilisé pour contenir la codification de l'organisation ou la clé pour l'identification via un logiciel tiers
@@ -22,13 +36,7 @@ Ce code peut être utilisé pour contenir la codification de l'organisation ou l
 *Nom technique:* ```color```
 <PH code="organization:color"/>
 
-### Nom {#name}
-
-Nom qui va définir l'organisation
-
-*Nom technique:* ```name```
-<PH code="organization:name"/>
-
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 

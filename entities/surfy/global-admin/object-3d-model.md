@@ -6,8 +6,10 @@ Le Modèle 3D permet une représentation 3D réaliste des objets placés sur le 
 <OH code="object3dModel"/>
 
 
-## Propriétés de base {#properties-base}
 
+
+## Propriétés obligatoires {#properties-mandatory}
+    
 ### Model {#model}
 
 
@@ -42,6 +44,9 @@ Utiliser X si l'objet est orienté à droite ou Y si l'objet est orienté vers l
 
 *Nom technique:* ```type```
 <PH code="object3dModel:type"/>
+
+    
+
 
 
 
