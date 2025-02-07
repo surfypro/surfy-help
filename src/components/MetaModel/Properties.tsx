@@ -4,12 +4,6 @@ import { useTranslations } from "../Translations/translations";
 import { getObjectTypeDefinitionByName, CamelizedObjectTypeNames, PropertyTypeCodes } from "@site/surfy";
 import { PropertyType } from "./PropertyType";
 
-type Translation = {
-    label: string;
-    description: string | null;
-    mandatory?: boolean;
-};
-
 /**
  * Component that displays the list of properties for a given object type.
  * It uses the translation system to display labels and descriptions
@@ -35,7 +29,6 @@ export function Properties(props: { objectTypeName: CamelizedObjectTypeNames; ma
         .filter(prop => !prop.options.technical)
         .filter(prop => !mandatory || prop.options.mandatory);
 
-    const translations = entitiesTranslations.propertyTypeTranslations[objectTypeName];
     const objectTypeTranslation = entitiesTranslations.objectTypeTranslations[objectTypeName];
 
     return (

@@ -4,13 +4,18 @@ import '@testing-library/jest-dom';
 import { Properties } from './Properties';
 import { useTranslations } from '../Translations/translations';
 import { PropertyTypeCodes } from '@site/surfy';
-import { P } from '../MetaModel/P';
+import { PropertyType } from './PropertyType';
 
-// Mock the P component
-jest.mock('../MetaModel/P', () => ({
-    P: ({ code }: { code: PropertyTypeCodes }) => {
+// Mock the PropertyType component
+jest.mock('./PropertyType', () => ({
+    PropertyType: ({ code }: { code: PropertyTypeCodes }) => {
         const [objectType, propertyName] = code.split(':');
-        return <span>{propertyName}</span>;
+        const descriptions: { [key: string]: string } = {
+            'building:name': 'Building name',
+            'building:address': 'Building address',
+            'building:surface': 'Building surface area'
+        };
+        return <span title={descriptions[code] || ''}>{propertyName}</span>;
     }
 }));
 
@@ -61,18 +66,15 @@ describe('Properties Component', () => {
                 building: {
                     name: {
                         label: 'Name',
-                        description: 'Building name',
-                        mandatory: true
+                        description: 'Building name'
                     },
                     address: {
                         label: 'Address',
-                        description: 'Building address',
-                        mandatory: true
+                        description: 'Building address'
                     },
                     surface: {
                         label: 'Surface',
-                        description: 'Building surface area',
-                        mandatory: false
+                        description: 'Building surface area'
                     }
                 }
             },
@@ -109,10 +111,10 @@ describe('Properties Component', () => {
     it('should display tooltips with property descriptions', () => {
         render(<Properties objectTypeName="building" />);
 
-        // Check if descriptions are available in tooltips using aria-label
-        expect(screen.getByLabelText('Building name')).toBeInTheDocument();
-        expect(screen.getByLabelText('Building address')).toBeInTheDocument();
-        expect(screen.getByLabelText('Building surface area')).toBeInTheDocument();
+        // Check if descriptions are available in tooltips using title attribute
+        expect(screen.getByTitle('Building name')).toBeInTheDocument();
+        expect(screen.getByTitle('Building address')).toBeInTheDocument();
+        expect(screen.getByTitle('Building surface area')).toBeInTheDocument();
     });
 
     it('should handle properties with missing descriptions', () => {
@@ -121,8 +123,7 @@ describe('Properties Component', () => {
             propertyTypeTranslations: {
                 building: {
                     name: {
-                        label: 'Name',
-                        mandatory: true
+                        label: 'Name'
                     }
                 }
             },
