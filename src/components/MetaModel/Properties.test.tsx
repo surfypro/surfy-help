@@ -1,9 +1,18 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { Mandatory } from './Mandatory';
+import { Properties } from './Properties';
 import { useTranslations } from '../Translations/translations';
 import { PropertyTypeCodes } from '@site/surfy';
+import { P } from '../MetaModel/P';
+
+// Mock the P component
+jest.mock('../MetaModel/P', () => ({
+    P: ({ code }: { code: PropertyTypeCodes }) => {
+        const [objectType, propertyName] = code.split(':');
+        return <span>{propertyName}</span>;
+    }
+}));
 
 // Mock the translations hook
 jest.mock('../Translations/translations', () => ({
@@ -22,10 +31,29 @@ jest.mock('@site/surfy', () => ({
             calculated: false,
             technical: false
         }
-    })
+    }),
+    getObjectTypeDefinitionByName: jest.fn().mockReturnValue({
+        propertiesByName: {
+            name: {
+                name: 'name',
+                options: { mandatory: true, technical: false }
+            },
+            address: {
+                name: 'address',
+                options: { mandatory: true, technical: false }
+            },
+            surface: {
+                name: 'surface',
+                options: { mandatory: false, technical: false }
+            }
+        }
+    }),
+    CamelizedObjectTypeNames: {
+        building: 'building'
+    }
 }));
 
-describe('Mandatory Component', () => {
+describe('Properties Component', () => {
     beforeEach(() => {
         // Setup mock translation data
         (useTranslations as jest.Mock).mockReturnValue({
@@ -57,24 +85,29 @@ describe('Mandatory Component', () => {
         });
     });
 
-    const propertyCode = 'building:name' as PropertyTypeCodes;
-
-    it('should render the building properties with mandatory indicators', () => {
-        render(<Mandatory code={propertyCode} />);
+    it('should render all properties when mandatory is false', () => {
+        render(<Properties objectTypeName="building" mandatory={false} />);
 
         // Check if the building title is rendered
         expect(screen.getByText('Building')).toBeInTheDocument();
 
-        // Check if mandatory properties are rendered with asterisk
-        expect(screen.getByText('Name *')).toBeInTheDocument();
-        expect(screen.getByText('Address *')).toBeInTheDocument();
+        // Check if all properties are rendered
+        expect(screen.getByText('name')).toBeInTheDocument();
+        expect(screen.getByText('address')).toBeInTheDocument();
+        expect(screen.getByText('surface')).toBeInTheDocument();
+    });
 
-        // Check if non-mandatory property is rendered without asterisk
-        expect(screen.getByText('Surface')).toBeInTheDocument();
+    it('should render only mandatory properties when mandatory is true', () => {
+        render(<Properties objectTypeName="building" mandatory={true} />);
+
+        // Check if only mandatory properties are rendered
+        expect(screen.getByText('name')).toBeInTheDocument();
+        expect(screen.getByText('address')).toBeInTheDocument();
+        expect(screen.queryByText('surface')).not.toBeInTheDocument();
     });
 
     it('should display tooltips with property descriptions', () => {
-        render(<Mandatory code={propertyCode} />);
+        render(<Properties objectTypeName="building" />);
 
         // Check if descriptions are available in tooltips using aria-label
         expect(screen.getByLabelText('Building name')).toBeInTheDocument();
@@ -100,9 +133,9 @@ describe('Mandatory Component', () => {
             }
         });
 
-        render(<Mandatory code={propertyCode} />);
+        render(<Properties objectTypeName="building" />);
         
         // Should still render without crashing
-        expect(screen.getByText('Name *')).toBeInTheDocument();
+        expect(screen.getByText('name')).toBeInTheDocument();
     });
 }); 
