@@ -1,88 +1,50 @@
 ---
-description: 
+description: n
 globs: 
 ---
----
-description: Règles de gestion des données pour la documentation Docusaurus
-globs: ["src/data/**/*.ts", "src/data/**/*.tsx"]
----
-# Gestion des Données dans Docusaurus
+# Version Control Rules
 
-## Gestion d'État
-### Hooks de Configuration
-```typescript
-// Accès à la configuration du site
-const { siteConfig } = useDocusaurusContext();
-// Accès aux métadonnées de la page
-const { metadata, frontMatter } = useDoc();
-```
+## Commit Messages
 
-### Gestion du Routage
-```typescript
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import { useLocation, useHistory } from '@docusaurus/router';
+- All commit messages MUST be written in English
+- Follow the conventional commits specification:
+  - Format: `type(scope): message`
+  - Types: feat, fix, docs, style, refactor, test, chore
+  - Example: `feat(auth): add login with Google`
+- Keep commits atomic and focused
+- Write clear and descriptive messages
+- Include relevant ticket numbers when applicable
+- Add emojis to express emotions
 
-// Construction d'URLs
-const url = useBaseUrl('/docs/intro');
-// Navigation programmatique
-const history = useHistory();
-history.push('/docs/advanced');
-```
+## Pull Requests
 
-## Gestion des Métadonnées
-### Structure Frontmatter
-```yaml
----
-id: page-id
-title: Titre de la Page
-description: Description pour le SEO
-sidebar_label: Label dans la Sidebar
-tags: [tag1, tag2]
----
-```
+- All PR titles and descriptions MUST be written in English
+- PR title should be clear and descriptive
+- PR description should include:
+  - Purpose of the changes
+  - Summary of main modifications
+  - Testing performed
+  - Screenshots for UI changes
+  - Breaking changes if any
+- Link related issues or tickets
+- Keep PRs focused and reasonably sized
 
-### Accès aux Métadonnées
-```typescript
-function DocComponent() {
-  const { frontMatter, metadata, toc } = useDoc();
-  
-  return (
-    <div>
-      <h1>{frontMatter.title}</h1>
-      <div>{metadata.description}</div>
-      <TableOfContents toc={toc} />
-    </div>
-  );
-}
-```
+## Branch Management
 
-## Gestion du Contenu
-### Chargement des Assets
-```typescript
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+- Use feature branches for development
+- Keep branches up to date with main
+- Delete branches after merging
+- Use meaningful branch names in English
+  - Format: `type/description`
+  - Example: `feature/google-auth`
 
-function AssetComponent() {
-  const {siteConfig} = useDocusaurusContext();
-  const imagePath = `${siteConfig.baseUrl}img/tutorial/example.png`;
-  
-  return <img src={imagePath} alt="Example" />;
-}
-```
+## Code Review
 
-### Gestion des Versions
-```typescript
-import { useDocsVersion } from '@docusaurus/theme-common/internal';
-
-function VersionInfo() {
-  const version = useDocsVersion();
-  return <div>Version: {version.label}</div>;
-}
-```
-
-## Bonnes Pratiques
-- Utiliser les hooks Docusaurus pour accéder aux données du site
-- Structurer les métadonnées de manière cohérente
-- Optimiser les assets pour le chargement
-- Maintenir une organisation claire des versions de documentation
-- Utiliser le système de tags pour une meilleure navigation
-- Implémenter un bon SEO via les métadonnées
+- Review comments should be in English
+- Be constructive and specific
+- Focus on:
+  - Code quality
+  - Test coverage
+  - Documentation
+  - Performance implications
+  - Security considerations

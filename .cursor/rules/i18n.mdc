@@ -2,61 +2,39 @@
 description: 
 globs: 
 ---
----
-description: Règles d'internationalisation pour la documentation Docusaurus
-globs: ["i18n/**/*.json", "docs/**/*.md", "docs/**/*.mdx"]
----
-# Internationalisation (i18n)
+# Internationalization Rules
 
-## Structure des Fichiers
-```
-website
-├── i18n
-│   └── fr
-│       ├── docusaurus-theme-classic
-│       │   └── navbar.json
-│       └── docusaurus-plugin-content-docs
-│           └── current
-│               ├── tutorials
-│               │   └── intro.md
-│               └── api
-│                   └── intro.md
-└── docs
-    ├── tutorials
-    │   └── intro.md
-    └── api
-        └── intro.md
-```
+## Code and Documentation Language
 
-## Configuration i18n
-```typescript
-// docusaurus.config.ts
-{
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr'],
-    localeConfigs: {
-      en: {
-        label: 'English',
-        direction: 'ltr',
-      },
-      fr: {
-        label: 'Français',
-        direction: 'ltr',
-      },
-    },
-  }
-}
-```
+- All code, including variable names, function names, and comments MUST be in English
+- All technical documentation MUST be in English
+- All commit messages and PR descriptions MUST be in English
 
-## Règles de Traduction
-- Maintenir l'anglais comme source de vérité (defaultLocale)
-- Traduire tous les fichiers markdown dans `i18n/<locale>/`
-- Traduire les éléments d'interface dans `docusaurus-theme-classic`
-- Utiliser des clés de traduction cohérentes pour les composants réutilisables
+## Content Language
 
-## Bonnes Pratiques
-- Éviter le texte en dur dans les composants React
-- Utiliser les outils de traduction de Docusaurus
-- Maintenir la cohérence terminologique entre les langues
-- Vérifier la qualité des traductions avant le déploiement
+- User-facing content should be internationalized
+- Support multiple languages through translation files
+- Use translation keys instead of hardcoded strings
+- Keep translation files organized by feature/module
+- Include language codes in file names (e.g., `en.json`, `fr.json`)
+
+## Translation Management
+
+- Use a consistent format for translation keys
+- Keep translations up to date
+- Document any special formatting or variables in strings
+- Test UI with different language lengths
+- Handle pluralization correctly
+
+## Default Language
+
+- Use English as the default/fallback language
+- Ensure all strings have English translations
+- Document any region-specific variations (e.g., en-US vs en-GB)
+
+## Code Practices
+
+- Use translation hooks consistently
+- Avoid string concatenation for translated content
+- Handle missing translations gracefully
+- Support RTL languages when relevant

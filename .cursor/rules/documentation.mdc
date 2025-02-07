@@ -2,25 +2,43 @@
 description: 
 globs: 
 ---
-# Documentation et Commentaires
+# Documentation Rules
 
-## Règles Principales
-- Tous les commentaires et la documentation doivent être en anglais
-- Chaque élément interactif doit avoir un texte d'aide
-- Les props des composants doivent être documentés avec des interfaces TypeScript
-- La logique complexe doit inclure des commentaires explicatifs
+## Language
 
-## Exemple de Documentation
-```typescript
-/**
- * Component to manage workplace affectations
- * @param workplace - The workplace to manage
- * @param onUpdate - Callback called when updating
- */
-```
+- All code documentation MUST be written in English
+- This includes:
+  - JSDoc comments
+  - Inline comments
+  - README files
+  - API documentation
+  - Component documentation
+  - Type definitions documentation
 
-## Bonnes Pratiques
-- Documenter le comportement attendu
-- Expliquer les cas limites
-- Inclure des exemples d'utilisation
-- Maintenir la documentation à jour avec le code
+## Documentation Style
+
+- Use clear and concise language
+- Document all public APIs and components
+- Include examples when relevant
+- Keep documentation up to date with code changes
+- Use proper grammar and spelling
+
+## Component Documentation
+
+- Document props and their types
+- Include usage examples
+- Explain component behavior and side effects
+- Document any dependencies or requirements
+
+## Type Documentation
+
+- Document complex types and interfaces
+- Explain the purpose of each type
+- Include examples for non-obvious use cases
+
+## Code Comments
+
+- Write meaningful comments that explain "why" not "what"
+- Keep comments up to date with code changes
+- Remove commented-out code
+- Use TODO comments sparingly and include JIRA ticket numbers when relevant
