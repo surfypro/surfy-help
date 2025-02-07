@@ -1,0 +1,26 @@
+---
+description: 
+globs: 
+---
+# Documentation et Commentaires
+
+## Règles Principales
+- Tous les commentaires et la documentation doivent être en anglais
+- Chaque élément interactif doit avoir un texte d'aide
+- Les props des composants doivent être documentés avec des interfaces TypeScript
+- La logique complexe doit inclure des commentaires explicatifs
+
+## Exemple de Documentation
+```typescript
+/**
+ * Component to manage workplace affectations
+ * @param workplace - The workplace to manage
+ * @param onUpdate - Callback called when updating
+ */
+```
+
+## Bonnes Pratiques
+- Documenter le comportement attendu
+- Expliquer les cas limites
+- Inclure des exemples d'utilisation
+- Maintenir la documentation à jour avec le code

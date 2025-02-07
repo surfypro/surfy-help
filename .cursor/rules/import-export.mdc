@@ -1,0 +1,87 @@
+---
+description: 
+globs: 
+---
+# Import/Export et Synchronisation
+
+## Règles d'Import
+### Structure des Données
+```typescript
+interface ImportData<T> {
+  source: T[];
+  target: T[];
+  mapping: {
+    sourceId: string | number;
+    targetId: string | number;
+  }[];
+}
+```
+
+### Pattern de Synchronisation
+```typescript
+async function synchronizeEntities<T extends { id: number }>(
+  sourceEntities: T[],
+  targetEntities: T[],
+  compare: (source: T, target: T) => boolean
+): Promise<void> {
+  const toCreate = sourceEntities.filter(
+    source => !targetEntities.some(target => compare(source, target))
+  );
+  const toUpdate = sourceEntities.filter(
+    source => targetEntities.some(target => compare(source, target))
+  );
+  
+  await Promise.all([
+    createEntities(toCreate),
+    updateEntities(toUpdate)
+  ]);
+}
+```
+
+## Règles d'Export
+### Format Excel
+```typescript
+interface IExcelExport {
+  headers: IExcelHeaderType[];
+  data: PropertyTypeJupValues[][];
+}
+
+const customReport = async (
+  queryData: IBackendQueryData, 
+  file: IExcelFile
+): Promise<IExcelFile> => {
+  // Configuration des colonnes
+  const headers: IExcelHeaderType[] = [
+    { label: 'ID', columnId: 'id' },
+    { label: 'Nom', columnId: 'name' }
+  ];
+  
+  // Transformation des données
+  const data = entities.map(entity => [
+    entity.id,
+    entity.name
+  ]);
+  
+  return {
+    ...file,
+    sheets: [{
+      name: 'Export',
+      headers,
+      data
+    }]
+  };
+};
+```
+
+## Règles de Mapping
+- Définir des règles de correspondance claires
+- Gérer les cas de données manquantes
+- Valider les données avant import
+- Permettre la prévisualisation des changements
+
+## Bonnes Pratiques
+- Implémenter des validations pré-import
+- Fournir des rapports de synchronisation
+- Permettre l'annulation des imports
+- Gérer les erreurs de manière gracieuse
+- Maintenir un historique des imports 

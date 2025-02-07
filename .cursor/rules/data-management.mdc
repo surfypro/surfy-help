@@ -1,0 +1,88 @@
+---
+description: 
+globs: 
+---
+---
+description: Règles de gestion des données pour la documentation Docusaurus
+globs: ["src/data/**/*.ts", "src/data/**/*.tsx"]
+---
+# Gestion des Données dans Docusaurus
+
+## Gestion d'État
+### Hooks de Configuration
+```typescript
+// Accès à la configuration du site
+const { siteConfig } = useDocusaurusContext();
+// Accès aux métadonnées de la page
+const { metadata, frontMatter } = useDoc();
+```
+
+### Gestion du Routage
+```typescript
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import { useLocation, useHistory } from '@docusaurus/router';
+
+// Construction d'URLs
+const url = useBaseUrl('/docs/intro');
+// Navigation programmatique
+const history = useHistory();
+history.push('/docs/advanced');
+```
+
+## Gestion des Métadonnées
+### Structure Frontmatter
+```yaml
+---
+id: page-id
+title: Titre de la Page
+description: Description pour le SEO
+sidebar_label: Label dans la Sidebar
+tags: [tag1, tag2]
+---
+```
+
+### Accès aux Métadonnées
+```typescript
+function DocComponent() {
+  const { frontMatter, metadata, toc } = useDoc();
+  
+  return (
+    <div>
+      <h1>{frontMatter.title}</h1>
+      <div>{metadata.description}</div>
+      <TableOfContents toc={toc} />
+    </div>
+  );
+}
+```
+
+## Gestion du Contenu
+### Chargement des Assets
+```typescript
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+
+function AssetComponent() {
+  const {siteConfig} = useDocusaurusContext();
+  const imagePath = `${siteConfig.baseUrl}img/tutorial/example.png`;
+  
+  return <img src={imagePath} alt="Example" />;
+}
+```
+
+### Gestion des Versions
+```typescript
+import { useDocsVersion } from '@docusaurus/theme-common/internal';
+
+function VersionInfo() {
+  const version = useDocsVersion();
+  return <div>Version: {version.label}</div>;
+}
+```
+
+## Bonnes Pratiques
+- Utiliser les hooks Docusaurus pour accéder aux données du site
+- Structurer les métadonnées de manière cohérente
+- Optimiser les assets pour le chargement
+- Maintenir une organisation claire des versions de documentation
+- Utiliser le système de tags pour une meilleure navigation
+- Implémenter un bon SEO via les métadonnées
