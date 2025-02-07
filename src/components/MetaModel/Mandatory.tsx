@@ -2,46 +2,64 @@ import React from "react";
 import Box from '@mui/material/Box';
 import Fade from '@mui/material/Fade';
 import Paper from '@mui/material/Paper';
-import entitiesPath from '../../../src/metaModel/entities.paths.json';
 import { useTranslations } from "../Translations/translations";
 import { HelpTooltipStyled } from "./HelpTooltipStyled";
 import { toDocumentationLinkString } from "@site/src/utils/documentionStyle";
+import { getPropertyTypeByCode, PropertyTypeCodes } from "@site/surfy";
 
-export function Mandatory(props: { code: string }) {
+type Translation = {
+    label: string;
+    description: string | null;
+    mandatory?: boolean;
+};
+
+type PropertyTypeTranslations = {
+    [key: string]: Translation;
+};
+
+/**
+ * Component that displays the list of mandatory properties for a given object type.
+ * It uses the translation system to display labels and descriptions
+ * in the appropriate language.
+ *
+ * @component
+ * @param {Object} props - Component properties
+ * @param {PropertyTypeCodes} props.code - The code identifying the object type
+ * @returns {JSX.Element} A React element displaying the mandatory properties
+ *
+ * @example
+ * ```tsx
+ * <Mandatory code="building" />
+ * ```
+ */
+export function Mandatory(props: { code: PropertyTypeCodes}) {
     const entitiesTranslations = useTranslations();
     const { code } = props;
-    const objectTypeName = code
-    // const name = 'address'
-    // const [objectTypeName, name] = code.split(':');
+    
+    const propertyType = getPropertyTypeByCode(code);
+    const { objectTypeName } = propertyType;
 
-    const directoryPath = entitiesPath.objectTypePathMapping[objectTypeName];
-    if (!directoryPath) {
-        throw new Error(`object type ${objectTypeName} not found in entities`);
-    }
-
-    console.log(objectTypeName)
-    console.log(directoryPath)
-    const translations: { label: string, description: string | null } = entitiesTranslations.propertyTypeTranslations[objectTypeName];
+    const translations = entitiesTranslations.propertyTypeTranslations[objectTypeName] as PropertyTypeTranslations;
     const objectTypeTranslation = entitiesTranslations.objectTypeTranslations[objectTypeName];
 
-    const href = `${directoryPath}/${toDocumentationLinkString(objectTypeName)}`;
-
-    return <p>
-        <a href={href}>{objectTypeTranslation.label}</a>
-        <ul>
-            {Object.entries(entitiesTranslations.propertyTypeTranslations[objectTypeName]).filter((o) => o).map(([name, translation]) => (
-                <li key={name}>
-                    <a href={`${href}#${toDocumentationLinkString(name)}`}>{translation}{mandatory ? '*' : ''}</a>
-                </li>
-            ))}
-        </ul>
-    </p>
+    return (
+        <Box>
+            <h2>{objectTypeTranslation.label}</h2>
+            <Box component="ul">
+                {Object.entries(translations).map(([name, translation]) => (
+                    <Box component="li" key={name}>
+                        <HelpTooltipStyled 
+                            title={translation.description || ''} 
+                            slots={{ transition: Fade }}
+                        >
+                            <span>
+                                {translation.label}
+                                {translation.mandatory && ' *'}
+                            </span>
+                        </HelpTooltipStyled>
+                    </Box>
+                ))}
+            </Box>
+        </Box>
+    );
 }
-
-        // <Box style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
-        //     <h2 >{translations.label}</h2>
-        //     <Box style={{ flexGrow: 1, display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
-        //         {objectTypeTranslation.label}
-        //     </Box>
-        // </Box>
-        // <Box >{translations.description}</Box>
