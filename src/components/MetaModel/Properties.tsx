@@ -1,7 +1,7 @@
 import React from "react";
 import Box from '@mui/material/Box';
 import { useTranslations } from "../Translations/translations";
-import { getObjectTypeDefinitionByName, CamelizedObjectTypeNames, PropertyTypeCodes } from "@site/surfy";
+import { isTenantObjectType, getObjectTypeDefinitionByName, CamelizedObjectTypeNames, PropertyTypeCodes } from "@site/surfy";
 import { PropertyType } from "./PropertyType";
 
 /**
@@ -26,8 +26,11 @@ export function Properties(props: { objectTypeName: CamelizedObjectTypeNames; ma
     
     const objectTypeDefinition = getObjectTypeDefinitionByName(objectTypeName);
     const properties = Object.values(objectTypeDefinition.propertiesByName)
-        .filter(prop => !prop.options.technical)
-        .filter(prop => !mandatory || prop.options.mandatory);
+        .filter(propertyTypeDefinition => !propertyTypeDefinition.options.technical)
+        .filter(propertyTypeDefinition => !propertyTypeDefinition.options.calculated)
+        .filter(propertyTypeDefinition =>
+            propertyTypeDefinition.association?.targetModelName && !isTenantObjectType(propertyTypeDefinition.association?.targetModelName))
+        .filter(propertyTypeDefinition => !mandatory || propertyTypeDefinition.options.mandatory);
 
     const objectTypeTranslation = entitiesTranslations.objectTypeTranslations[objectTypeName];
 

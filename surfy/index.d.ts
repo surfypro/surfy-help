@@ -329,6 +329,8 @@ declare interface ISize {
     height: number;
 }
 
+export declare function isTenantObjectType(objecTypeName: Surfy.CamelizedObjectTypes): boolean;
+
 declare type ItemFactPropertyNames = 'id' | 'measure' | 'value' | 'voltage' | 'time' | 'createdAt' | 'updatedAt' | 'externalId' | 'itemId' | 'item' | 'userCompanyCreatedById' | 'userCompanyCreatedBy' | 'userCompanyUpdatedById' | 'userCompanyUpdatedBy' | 'companyId' | 'company';
 
 declare type ItemFactPropertyTypeRecord = Record<ItemFactPropertyNames, IPropertyTypeDefinition>;

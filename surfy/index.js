@@ -44228,6 +44228,10 @@ function getTargetObjectTypeCapitalizedName(propertyType) {
     return capitalizeFirstLetter(name.replace(regexp, ""));
   }
 }
+const tenantInfo = {
+  objectType: "company",
+  idProperty: "companyId"
+};
 function includeJupType(list, type2) {
   return list.includes(type2);
 }
@@ -63227,6 +63231,9 @@ function I18NHelpContext(props) {
   }
   return null;
 }
+function isTenantObjectType(objecTypeName) {
+  return objecTypeName === tenantInfo.objectType;
+}
 export {
   I18NHelpContext,
   PropertyTypeLabel,
@@ -63236,5 +63243,6 @@ export {
   getObjectTypeDefinitionByName,
   getPropertyTypeByCode,
   getPropertyTypeByName,
+  isTenantObjectType,
   versionCookieKeyName
 };
