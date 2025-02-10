@@ -29,7 +29,7 @@ export function Properties(props: { objectTypeName: CamelizedObjectTypeNames; ma
         .filter(propertyTypeDefinition => !propertyTypeDefinition.options.technical)
         .filter(propertyTypeDefinition => !propertyTypeDefinition.options.calculated)
         .filter(propertyTypeDefinition =>
-            propertyTypeDefinition.association?.targetModelName && !isTenantObjectType(propertyTypeDefinition.association?.targetModelName))
+            !propertyTypeDefinition.association?.targetModelName || !isTenantObjectType(propertyTypeDefinition.association?.targetModelName))
         .filter(propertyTypeDefinition => !mandatory || propertyTypeDefinition.options.mandatory);
 
     const objectTypeTranslation = entitiesTranslations.objectTypeTranslations[objectTypeName];
