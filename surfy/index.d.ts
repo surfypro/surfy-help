@@ -1,4 +1,5 @@
 import { default as default_2 } from 'react';
+import { ReactNode } from 'react';
 
 declare type ApiUserPropertyNames = 'id' | 'clientSecret' | 'name' | 'createdAt' | 'updatedAt' | 'externalId' | 'userCompanyCreatedById' | 'userCompanyCreatedBy' | 'userCompanyUpdatedById' | 'userCompanyUpdatedBy' | 'apiUserToJupRoles' | 'apiUserToContentRoles' | 'companyId' | 'company';
 
@@ -139,6 +140,13 @@ export declare function getPropertyTypeByCode(code: PropertyTypeCodes): IPropert
 export declare function getPropertyTypeByName<T extends string>(objectTypeName: Surfy.CamelizedObjectTypes, propertyTypeName: T): IPropertyTypeDefinition;
 
 declare type GridNodeType = 'edge' | 'edge-merged' | 'grid' | 'merged';
+
+declare interface I18NContextProps {
+    defaultLanguage?: JupLanguageCode;
+    children: React.ReactNode;
+}
+
+export declare function I18NHelpContext(props: I18NContextProps): ReactNode;
 
 declare type IconShapeType = 'circle' | 'rectangle' | 'triangle';
 
@@ -308,6 +316,12 @@ declare interface IProps {
     propertyType: IPropertyTypeDefinition;
     displayUnit?: boolean;
     style?: default_2.CSSProperties;
+}
+
+declare interface IProps_2 {
+    defaultLanguage?: JupLanguageCode;
+    children: default_2.ReactNode;
+    I18nContext: default_2.FunctionComponent<I18NContextProps>;
 }
 
 declare interface ISize {
@@ -609,10 +623,7 @@ declare type RoomTypePropertyNames = 'id' | 'name' | 'color' | 'icon' | 'color3d
 
 declare type RoomTypePropertyTypeRecord = Record<RoomTypePropertyNames, IPropertyTypeDefinition>;
 
-export declare function SetupRecoilContext(props: {
-    defaultLanguage?: JupLanguageCode;
-    children: default_2.ReactNode;
-}): default_2.JSX.Element;
+export declare function SetupRecoilContext(props: IProps_2): default_2.JSX.Element;
 
 declare type StructurePointPropertyNames = 'id' | 'x' | 'y' | 'sortIndex' | 'createdAt' | 'updatedAt' | 'externalId' | 'structureId' | 'structure' | 'userCompanyCreatedById' | 'userCompanyCreatedBy' | 'userCompanyUpdatedById' | 'userCompanyUpdatedBy' | 'companyId' | 'company';
 
