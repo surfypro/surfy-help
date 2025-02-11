@@ -12,6 +12,7 @@ import MouseIcon from '@mui/icons-material/Mouse';
 import EditIcon from '@mui/icons-material/Edit';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import SaveIcon from '@mui/icons-material/Save';
+import { useTranslations } from "../Translations/translations";
 
 interface CreateObjectTutorialProps {
   objectTypeName: CamelizedObjectTypeNames;
@@ -19,6 +20,10 @@ interface CreateObjectTutorialProps {
 
 // Need to export as default to work with MDX
 export default function CreateObjectTutorial({ objectTypeName }: CreateObjectTutorialProps) {
+  const entitiesTranslations = useTranslations();
+  const objectTypeTranslation = entitiesTranslations.objectTypeTranslations[objectTypeName];
+  const objectLabel = objectTypeTranslation.label.toLowerCase();
+
   return (
     <Paper elevation={2} sx={{ p: 3, my: 2, bgcolor: 'background.paper' }}>
       <Typography variant="h6" gutterBottom sx={{ color: 'primary.main', mb: 2 }}>
@@ -31,7 +36,7 @@ export default function CreateObjectTutorial({ objectTypeName }: CreateObjectTut
           </ListItemIcon>
           <ListItemText 
             primary="Cliquer sur le menu contextuel"
-            secondary="puis sur 'Créer un bâtiment'"
+            secondary={`puis sur 'Créer un ${objectLabel}'`}
           />
         </ListItem>
         <ListItem>
@@ -39,7 +44,7 @@ export default function CreateObjectTutorial({ objectTypeName }: CreateObjectTut
             <EditIcon color="primary" />
           </ListItemIcon>
           <ListItemText 
-            primary="Indiquez les propriétés obligatoires de l'objet :"
+            primary={`Indiquez les propriétés obligatoires du ${objectLabel} :`}
           />
         </ListItem>
         <ListItem sx={{ pl: 4 }}>
