@@ -16,8 +16,6 @@ export function PropertyTypeHelper(props: { code: string }) {
     }
     const text = `<P code="${code}" />`;
     return <>
-        {translate('key1', { name: 'Joh2n' })}
-        {translate('key2', { name: 'Joh2n' })}
         <code>
             {text}
         </code>
