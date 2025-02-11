@@ -63,6 +63,14 @@ export default function CreateObjectTutorial({
             <MouseIcon color="primary" />
           </ListItemIcon>
           <ListItemText
+            slotProps={{
+              secondary: {
+                component: "span",
+                sx: {
+                  color: "#777",
+                },
+              },
+            }}
             primary={
               getCreateActionPath(objectTypeName)
                 ? `Dans le menu de gauche, accédez à ${getCreateActionPath(objectTypeName)}`
@@ -89,6 +97,14 @@ export default function CreateObjectTutorial({
             <CheckCircleIcon color="primary" />
           </ListItemIcon>
           <ListItemText
+            slotProps={{
+              secondary: {
+                component: "span",
+                sx: {
+                  color: "#777",
+                },
+              },
+            }}
             primary="Vous pouvez saisir d'autres propriétés optionnelles"
             secondary="Ces informations pourront être complétées ultérieurement"
           />
@@ -98,6 +114,14 @@ export default function CreateObjectTutorial({
             <SaveIcon color="primary" />
           </ListItemIcon>
           <ListItemText
+            slotProps={{
+              secondary: {
+                component: "span",
+                sx: {
+                  color: "#777",
+                },
+              },
+            }}
             primary="Valider la création"
             secondary="Cliquez sur 'valider la création' pour terminer"
           />
