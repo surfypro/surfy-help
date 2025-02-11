@@ -28,12 +28,39 @@ export function Properties(props: { objectTypeName: CamelizedObjectTypeNames; ma
     const { objectTypeName, mandatory } = props;
     
     const objectTypeDefinition = getObjectTypeDefinitionByName(objectTypeName);
+    
+    console.log('Debug Properties:', {
+        objectTypeName,
+        definition: objectTypeDefinition,
+        properties: objectTypeDefinition?.propertiesByName ? Object.values(objectTypeDefinition.propertiesByName) : []
+    });
+
+    if (!objectTypeDefinition?.propertiesByName) {
+        return (
+            <Box sx={{ p: 1 }}>
+                <Typography variant="body2" color="text.secondary">
+                    Aucune propriété disponible
+                </Typography>
+            </Box>
+        );
+    }
+
     const properties = Object.values(objectTypeDefinition.propertiesByName)
         .filter(propertyTypeDefinition => !propertyTypeDefinition.options.technical)
         .filter(propertyTypeDefinition => !propertyTypeDefinition.options.calculated)
         .filter(propertyTypeDefinition =>
             !propertyTypeDefinition.association?.targetModelName || !isTenantObjectType(propertyTypeDefinition.association?.targetModelName))
         .filter(propertyTypeDefinition => !mandatory || propertyTypeDefinition.options.mandatory);
+
+    if (properties.length === 0) {
+        return (
+            <Box sx={{ p: 1 }}>
+                <Typography variant="body2" color="text.secondary">
+                    {mandatory ? "Aucune propriété obligatoire" : "Aucune propriété disponible"}
+                </Typography>
+            </Box>
+        );
+    }
 
     const objectTypeTranslation = entitiesTranslations.objectTypeTranslations[objectTypeName];
 
