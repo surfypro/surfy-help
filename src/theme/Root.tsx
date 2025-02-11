@@ -26,7 +26,7 @@ export default function Root(props: { children: React.ReactNode }) {
         Cookies.set(versionCookieKeyName, appVersion);
     }, [appVersion]);
     return <ThemeProvider theme={theme}>
-        <SetupRecoilContext defaultLanguage={'it'} I18nContext={I18NHelpContext}>
+        <SetupRecoilContext defaultLanguage={language} I18nContext={I18NHelpContext}>
             {children}
         </SetupRecoilContext>
     </ThemeProvider>

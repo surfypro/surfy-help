@@ -7,16 +7,16 @@ import { IconButton } from "@mui/material";
 export function ObjectTypeHelper(props: { code: string }) {
     const { code } = props;
 
-    if (!isDevMode()){
+    if (!isDevMode()) {
         return null;
     }
     const text = `<OT code="${code}" />`;
     return <>
-    <code>
-        {text}
-    </code>
+        <code>
+            {text}
+        </code>
         <CopyToClipboard text={text}>
-            <IconButton><ContentCopyTwoToneIcon/></IconButton>
+            <IconButton><ContentCopyTwoToneIcon /></IconButton>
         </CopyToClipboard>
     </>;
 }
