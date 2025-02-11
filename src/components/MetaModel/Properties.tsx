@@ -36,7 +36,6 @@ export function Properties(props: { objectTypeName: CamelizedObjectTypeNames; ma
 
     return (
         <Box>
-            <h2>{objectTypeTranslation.label}</h2>
             <Box component="ul">
                 {properties.map(property => {
                     const propertyCode = `${objectTypeName}:${property.name}` as PropertyTypeCodes;
