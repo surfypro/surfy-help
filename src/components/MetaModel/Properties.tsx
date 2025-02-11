@@ -40,10 +40,14 @@ export function Properties(props: { objectTypeName: CamelizedObjectTypeNames; ma
     return (
         <Box>
             <List sx={{ 
-                pl: 2,
                 '& .MuiListItem-root': {
                     px: 1,
-                    py: 0.5
+                    py: 0.75,
+                    borderRadius: 1,
+                    '&:hover': {
+                        bgcolor: 'action.hover',
+                        transition: 'background-color 0.2s'
+                    }
                 }
             }}>
                 {properties.map(property => {
