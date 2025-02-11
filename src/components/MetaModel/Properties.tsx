@@ -1,5 +1,8 @@
 import React from "react";
 import Box from '@mui/material/Box';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import Typography from '@mui/material/Typography';
 import { useTranslations } from "../Translations/translations";
 import { isTenantObjectType, getObjectTypeDefinitionByName, CamelizedObjectTypeNames, PropertyTypeCodes } from "@site/surfy";
 import { PropertyType } from "./PropertyType";
@@ -36,16 +39,22 @@ export function Properties(props: { objectTypeName: CamelizedObjectTypeNames; ma
 
     return (
         <Box>
-            <Box component="ul">
+            <List sx={{ 
+                pl: 2,
+                '& .MuiListItem-root': {
+                    px: 1,
+                    py: 0.5
+                }
+            }}>
                 {properties.map(property => {
                     const propertyCode = `${objectTypeName}:${property.name}` as PropertyTypeCodes;
                     return (
-                        <li key={property.name}>
+                        <ListItem key={property.name} disableGutters>
                             <PropertyType code={propertyCode} />
-                        </li>
+                        </ListItem>
                     );
                 })}
-            </Box>
+            </List>
         </Box>
     );
 }
