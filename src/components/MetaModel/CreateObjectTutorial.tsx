@@ -16,11 +16,6 @@ interface CreateObjectTutorialProps {
   objectTypeName: CamelizedObjectTypeNames;
 }
 
-const defaultLabels: Record<string, string> = {
-  itemTypeFamily: "famille de types d'objet",
-  // Ajoutez d'autres labels par défaut ici si nécessaire
-};
-
 // Need to export as default to work with MDX
 export default function CreateObjectTutorial({
   objectTypeName,
@@ -29,14 +24,14 @@ export default function CreateObjectTutorial({
   const objectTypeTranslation =
     entitiesTranslations.objectTypeTranslations[objectTypeName];
   const objectLabel =
-    objectTypeTranslation?.label?.toLowerCase() ||
-    defaultLabels[objectTypeName] ||
+    objectTypeTranslation?.label?.toLowerCase()
     objectTypeName;
 
   const getCreateActionPath = (type: CamelizedObjectTypeNames) => {
     const paths: Record<string, string> = {
       itemTypeFamily: "Mobiliers > Typologies > Familles de types d'objet",
       building: "Logo en haut à gauche > Bâtiments",
+      floor: "Bâtiments > (parmi les batiments) Modifier le bâtiment BaT > Étages",
 
       // Ajoutez d'autres chemins ici si nécessaire
     };
@@ -81,7 +76,7 @@ export default function CreateObjectTutorial({
             <EditIcon color="primary" />
           </ListItemIcon>
           <ListItemText
-            primary={`Indiquez les propriétés obligatoires ${isMasculine(objectLabel) ? "du" : "de la"} ${objectLabel} :`}
+            primary={`Indiquez les propriétés obligatoires de l'objet ${objectLabel} :`}
           />
         </ListItem>
         <ListItem sx={{ pl: 4 }}>
