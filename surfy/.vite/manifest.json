@@ -1,15 +1,8 @@
 {
-  "_vendor-BmPXeNk3.js": {
-    "file": "assets/vendor-BmPXeNk3.js",
-    "name": "vendor"
-  },
   "src/surfy-help/index.ts": {
     "file": "index.js",
     "name": "index",
     "src": "src/surfy-help/index.ts",
-    "isEntry": true,
-    "imports": [
-      "_vendor-BmPXeNk3.js"
-    ]
+    "isEntry": true
   }
 }
