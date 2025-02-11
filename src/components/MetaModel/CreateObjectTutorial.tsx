@@ -39,7 +39,7 @@ export default function CreateObjectTutorial({
   };
 
   const isMasculine = (label: string) => {
-    const masculineWords = ["bâtiment"];
+    const masculineWords = ["bâtiment", "étage"];
     return masculineWords.includes(label);
   };
 
