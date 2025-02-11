@@ -16,8 +16,7 @@ interface CreateObjectTutorialProps {
   objectTypeName: CamelizedObjectTypeNames;
 }
 
-// Need to export as default to work with MDX
-export default function CreateObjectTutorial({
+export function CreateObjectTutorial({
   objectTypeName,
 }: CreateObjectTutorialProps) {
   const entitiesTranslations = useTranslations();
@@ -30,9 +29,14 @@ export default function CreateObjectTutorial({
   const getCreateActionPath = (type: CamelizedObjectTypeNames) => {
     const paths: Record<string, string> = {
       itemTypeFamily: "Mobiliers > Typologies > Familles de types d'objet",
-      building: "Logo en haut à gauche > Bâtiments",
-      floor: "Bâtiments > (parmi les batiments) Modifier le bâtiment BaT > Étages",
-
+      building: "Espaces > Bâtiments",
+      floor: "Espaces > Étages"
+//       spliter en 4 composants
+// le premier composant : 2 parametres
+//     building et create : trouver le chemin pour creer un batiment
+      // 1 Libre (pas de mandatory BT) - ex : bat ou famille type objet
+      // 2 : 1 mandatory BT - ex : type  d'objet ou étage
+      // 3 : 2 mandatory BT dont un qui est espace, et ils ont des coordonnées ex : objet, poste de travail
       // Ajoutez d'autres chemins ici si nécessaire
     };
     return paths[type] || "";

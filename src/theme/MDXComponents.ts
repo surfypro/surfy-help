@@ -2,10 +2,10 @@ import MDXComponents from '@theme-original/MDXComponents';
 import { Youtube } from '@site/src/components/videos/Youtube';
 import { PropertyType } from '@site/src/components/MetaModel/PropertyType';
 import { Properties } from '@site/src/components/MetaModel/Properties';
+import { CreateObjectTutorial } from '@site/src/components/MetaModel/CreateObjectTutorial';
 import { ObjectType } from '../components/MetaModel/ObjectType';
 import { PropertyTypeHelper } from '../components/MetaModel/helpers/PropertyTypeHelper';
 import { ObjectTypeHelper } from '../components/MetaModel/helpers/ObjectTypeHelper';
-
 export default {
     ...MDXComponents,
     P: PropertyType,
@@ -13,5 +13,6 @@ export default {
     PH: PropertyTypeHelper,
     OH:ObjectTypeHelper,
     Youtube,
-    Properties
+    Properties,
+    CreateObjectTutorial
 }
