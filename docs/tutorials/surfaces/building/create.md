@@ -8,9 +8,8 @@ sidebar_position: 1
 
 Pour créer un nouveau bâtiment à partir de la page d'accueil de Surfy,
 
-<Properties objectTypeName="building" mandatory={true} />
+<CreateObjectTutorial objectTypeName="building" />
 
-- cliquer sur le menu contextuel, puis sur "Créer un bâtiment".
 - indiquer les propriétés <P code="building:name" /> et <P code="building:color" /> pour son environnement. Ces deux propriétés sont obligatoires.
 - cliquer sur "valider la création" ou compléter les informations puis "valider la création".
 - ajouter la propriété <P code="building:address" /> du bâtiment permet de placer les bâtiments sur une carte pour une gestion multisite optimisée.
