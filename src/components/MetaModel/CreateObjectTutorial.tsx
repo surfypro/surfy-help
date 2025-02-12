@@ -2,13 +2,10 @@ import React from "react";
 import { CamelizedObjectTypeNames } from "@site/surfy";
 import Box from "@mui/material/Box";
 import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import SaveIcon from "@mui/icons-material/Save";
 import { CreateObjectTutorialPath } from "./CreateObjectTutorialPath";
 import { CreateObjectTutorialProperties } from "./CreateObjectTutorialProperties";
 import { CreateObjectTutorialOptionalProperties } from "./CreateObjectTutorialOptionalProperties";
+import { CreateObjectTutorialValidation } from "./CreateObjectTutorialValidation";
 
 interface CreateObjectTutorialProps {
   objectTypeName: CamelizedObjectTypeNames;
@@ -35,23 +32,7 @@ export function CreateObjectTutorial({
         <CreateObjectTutorialPath objectTypeName={objectTypeName} />
         <CreateObjectTutorialProperties objectTypeName={objectTypeName} />
         <CreateObjectTutorialOptionalProperties />
-        <ListItem>
-          <ListItemIcon>
-            <SaveIcon color="primary" />
-          </ListItemIcon>
-          <ListItemText
-            slotProps={{
-              secondary: {
-                component: "span",
-                sx: {
-                  color: "#777",
-                },
-              },
-            }}
-            primary="Valider la création"
-            secondary="Cliquez sur 'valider la création' pour terminer"
-          />
-        </ListItem>
+        <CreateObjectTutorialValidation />
       </List>
     </Box>
   );
