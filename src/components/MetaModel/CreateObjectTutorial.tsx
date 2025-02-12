@@ -5,11 +5,10 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import SaveIcon from "@mui/icons-material/Save";
-import { useTranslations } from "../Translations/translations";
 import { CreateObjectTutorialPath } from "./CreateObjectTutorialPath";
 import { CreateObjectTutorialProperties } from "./CreateObjectTutorialProperties";
+import { CreateObjectTutorialOptionalProperties } from "./CreateObjectTutorialOptionalProperties";
 
 interface CreateObjectTutorialProps {
   objectTypeName: CamelizedObjectTypeNames;
@@ -35,23 +34,7 @@ export function CreateObjectTutorial({
       >
         <CreateObjectTutorialPath objectTypeName={objectTypeName} />
         <CreateObjectTutorialProperties objectTypeName={objectTypeName} />
-        <ListItem>
-          <ListItemIcon>
-            <CheckCircleIcon color="primary" />
-          </ListItemIcon>
-          <ListItemText
-            slotProps={{
-              secondary: {
-                component: "span",
-                sx: {
-                  color: "#777",
-                },
-              },
-            }}
-            primary="Vous pouvez saisir d'autres propriétés optionnelles"
-            secondary="Ces informations pourront être complétées ultérieurement"
-          />
-        </ListItem>
+        <CreateObjectTutorialOptionalProperties />
         <ListItem>
           <ListItemIcon>
             <SaveIcon color="primary" />
