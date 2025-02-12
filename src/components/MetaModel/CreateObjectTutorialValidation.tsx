@@ -3,6 +3,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import SaveIcon from "@mui/icons-material/Save";
+import { getSecondaryTextProps } from "./helpers/ListItemTextProps";
 
 export function CreateObjectTutorialValidation() {
   return (
@@ -11,14 +12,7 @@ export function CreateObjectTutorialValidation() {
         <SaveIcon color="primary" />
       </ListItemIcon>
       <ListItemText
-        slotProps={{
-          secondary: {
-            component: "span",
-            sx: {
-              color: "#777",
-            },
-          },
-        }}
+        slotProps={getSecondaryTextProps()}
         primary="Valider la création"
         secondary="Cliquez sur 'valider la création' pour terminer"
       />
