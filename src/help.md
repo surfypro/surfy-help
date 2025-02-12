@@ -2,10 +2,11 @@
 
 ## version anglaise
 
-yarn start -- --locale en
+pnpm start -- --locale en
 
 ## clé paragraphe
-## Créer un scénario {#create-scenario} ##
+
+## Créer un scénario {#create-scenario}
 
 ## Youtube
 
@@ -26,8 +27,6 @@ yarn start -- --locale en
 ```
 
 [Site Surfy](https://www.surfy.pro)
-
-
 
 ::: tip Titre[admonitions](https://docusaurus.io/fr/docs/markdown-features/admonitions)
 
