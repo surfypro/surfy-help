@@ -4,7 +4,7 @@ import Paper from '@mui/material/Paper';
 import { useTranslations } from "../Translations/translations";
 import { HelpTooltipStyled } from "./HelpTooltipStyled";
 import { toDocumentationLinkString } from "@site/src/utils/documentionStyle";
-import { getPropertyTypeByCode, PropertyTypeCodes, PropertyTypeLabel, PropertyTypeMandatoryLabel, a } from "@site/surfy";
+import { getPropertyTypeByCode, PropertyTypeCodes, PropertyTypeLabel, PropertyTypeMandatoryLabel } from "@site/surfy";
 import { objectTypePathMapping } from "@site/src/metaModel/metamodel.json.helper";
 import { Box } from '@mui/material';
 
