@@ -1,16 +1,15 @@
 import React from "react";
-import { Properties } from "./Properties";
 import { CamelizedObjectTypeNames } from "@site/surfy";
 import Box from "@mui/material/Box";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import EditIcon from "@mui/icons-material/Edit";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import SaveIcon from "@mui/icons-material/Save";
 import { useTranslations } from "../Translations/translations";
 import { CreateObjectTutorialPath } from "./CreateObjectTutorialPath";
+import { CreateObjectTutorialProperties } from "./CreateObjectTutorialProperties";
 
 interface CreateObjectTutorialProps {
   objectTypeName: CamelizedObjectTypeNames;
@@ -19,13 +18,6 @@ interface CreateObjectTutorialProps {
 export function CreateObjectTutorial({
   objectTypeName,
 }: CreateObjectTutorialProps) {
-  const entitiesTranslations = useTranslations();
-  const objectTypeTranslation =
-    entitiesTranslations.objectTypeTranslations[objectTypeName];
-  const objectLabel =
-    objectTypeTranslation?.label?.toLowerCase() ||
-    objectTypeName;
-
   return (
     <Box>
       <List
@@ -42,19 +34,7 @@ export function CreateObjectTutorial({
         }}
       >
         <CreateObjectTutorialPath objectTypeName={objectTypeName} />
-        <ListItem>
-          <ListItemIcon>
-            <EditIcon color="primary" />
-          </ListItemIcon>
-          <ListItemText
-            primary={`Indiquez les propriétés obligatoires de l'objet ${objectLabel} :`}
-          />
-        </ListItem>
-        <ListItem sx={{ pl: 4 }}>
-          <Box sx={{ width: "100%" }}>
-            <Properties objectTypeName={objectTypeName} mandatory={true} />
-          </Box>
-        </ListItem>
+        <CreateObjectTutorialProperties objectTypeName={objectTypeName} />
         <ListItem>
           <ListItemIcon>
             <CheckCircleIcon color="primary" />
