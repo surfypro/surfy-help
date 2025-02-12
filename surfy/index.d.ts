@@ -365,6 +365,11 @@ declare interface ITextAnchor {
     displayLine: boolean;
 }
 
+declare interface IViewCore {
+    name: string;
+    isDefaultView?: boolean;
+}
+
 declare type JupIconSet = 'fontawesome' | 'material-ui' | 'surfy' | 'icomoon';
 
 declare type JupIconSyle = FontAwesomeIconsStyle | 'surfyicon' | 'icomoon';
@@ -444,6 +449,11 @@ export declare type MomentLocalCode = 'fr' | 'en-gb' | 'es' | 'it' | 'nl';
 declare type Object3dModelPropertyNames = 'id' | 'name' | 'type' | 'rotation' | 'origin' | 'model' | 'createdAt' | 'updatedAt' | 'externalId' | 'itemTypes';
 
 declare type Object3dModelPropertyTypeRecord = Record<Object3dModelPropertyNames, IPropertyTypeDefinition>;
+
+export declare function ObjectTypeIndexViewHelp(props: {
+    objectTypeName: Surfy.CamelizedObjectTypes;
+    view: IViewCore;
+}): default_2.JSX.Element;
 
 declare type OccupancyStatusPropertyNames = 'id' | 'name' | 'code' | 'color' | 'createdAt' | 'updatedAt' | 'externalId' | 'rooms';
 

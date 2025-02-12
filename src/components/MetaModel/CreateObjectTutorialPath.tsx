@@ -1,5 +1,5 @@
 import React from "react";
-import { CamelizedObjectTypeNames, useFlattenDeterminants } from "@site/surfy";
+import { CamelizedObjectTypeNames, useFlattenDeterminants, ObjectTypeIndexViewHelp } from "@site/surfy";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
@@ -50,7 +50,10 @@ export function CreateObjectTutorialPath({ objectTypeName }: CreateObjectTutoria
             ? `Dans le menu de gauche, accédez à ${getCreateActionPath(objectTypeName)}`
             : "Cliquer sur le menu contextuel"
         }
-        secondary={`puis sur 'Créer ${isMasculine(objectLabel) ? "un" : "une"} ${objectLabel}'`}
+        // secondary={`puis sur 'Créer ${isMasculine(objectLabel) ? "un" : "une"} ${objectLabel}'`}
+        secondary={<>
+          <ObjectTypeIndexViewHelp objectTypeName={objectTypeName} view={{ name: 'create', isDefaultView: true }} />
+        </>}
       />
     </ListItem>
   );

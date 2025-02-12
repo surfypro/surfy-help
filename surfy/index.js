@@ -69884,10 +69884,21 @@ function getFlattenDeterminants(polyglotApi, objectTypeName) {
     "determinants.undefined": determinants.undefined
   };
 }
+function objectTypeIndexViewHelp(i18nApi, objectTypeName, viewName, isDefaultView) {
+  const { singular } = getObjectTypeDefinitionByName(objectTypeName).capitalized;
+  const actionKey = isDefaultView === true ? `entity.views.${viewName}.help` : `models.${singular}.views.${viewName}.help`;
+  return i18nApi.translate(actionKey, { ...getFlattenDeterminants(i18nApi, objectTypeName) });
+}
+function ObjectTypeIndexViewHelp(props) {
+  const { objectTypeName, view } = props;
+  const i18nApi = useI18nApi();
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: objectTypeIndexViewHelp(i18nApi, objectTypeName, view.name, view.isDefaultView) });
+}
 const a = 40;
 const b = 145;
 export {
   I18NHelpContext,
+  ObjectTypeIndexViewHelp,
   PropertyTypeLabel,
   PropertyTypeMandatoryLabel,
   SetupRecoilContext,
