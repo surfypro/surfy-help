@@ -1,3 +1,4 @@
+import { ListItemProps } from "@mui/material";
 import { ListItemTextProps } from "@mui/material/ListItemText";
 
 export const getSecondaryTextProps = (): ListItemTextProps['slotProps'] => ({
@@ -7,4 +8,5 @@ export const getSecondaryTextProps = (): ListItemTextProps['slotProps'] => ({
       color: "#777",
     },
   },
-}); 
+});
+

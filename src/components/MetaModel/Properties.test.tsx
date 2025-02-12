@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { Properties } from './Properties';
 import { useTranslations } from '../Translations/translations';
-import { PropertyTypeCodes } from '@site/surfy';
+import { PropertyTypeCodes, getPropertyTypeByCode, getObjectTypeDefinitionByName, getPropertyTypeByName } from '@site/surfy';
 import { PropertyType } from './PropertyType';
 
 // Mock the PropertyType component
@@ -25,38 +25,33 @@ jest.mock('../Translations/translations', () => ({
 }));
 
 // Mock the getPropertyTypeByCode function
-jest.mock('@site/surfy', () => ({
-    getPropertyTypeByCode: jest.fn().mockReturnValue({
-        objectTypeName: 'building',
-        name: 'name',
-        type: 'string',
-        options: {
-            mandatory: true,
-            readOnly: false,
-            calculated: false,
-            technical: false
-        }
-    }),
-    getObjectTypeDefinitionByName: jest.fn().mockReturnValue({
-        propertiesByName: {
-            name: {
-                name: 'name',
-                options: { mandatory: true, technical: false }
-            },
-            address: {
-                name: 'address',
-                options: { mandatory: true, technical: false }
-            },
-            surface: {
-                name: 'surface',
-                options: { mandatory: false, technical: false }
+jest.mock('@site/surfy', () => {
+    const namePropertyType = getPropertyTypeByName('building', 'name');
+    return {
+        // const buildingDefition = getObjectTypeDefinitionByName('building');
+
+        getPropertyTypeByCode: namePropertyType,
+        getObjectTypeDefinitionByName: jest.fn().mockReturnValue({
+            propertiesByName: {
+                name: {
+                    name: 'name',
+                    options: { mandatory: true, technical: false }
+                },
+                address: {
+                    name: 'address',
+                    options: { mandatory: true, technical: false }
+                },
+                surface: {
+                    name: 'surface',
+                    options: { mandatory: false, technical: false }
+                }
             }
+        }),
+        CamelizedObjectTypeNames: {
+            building: 'building'
         }
-    }),
-    CamelizedObjectTypeNames: {
-        building: 'building'
     }
-}));
+});
 
 describe('Properties Component', () => {
     beforeEach(() => {
@@ -135,7 +130,7 @@ describe('Properties Component', () => {
         });
 
         render(<Properties objectTypeName="building" />);
-        
+
         // Should still render without crashing
         expect(screen.getByText('name')).toBeInTheDocument();
     });

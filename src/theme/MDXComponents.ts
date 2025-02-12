@@ -9,9 +9,9 @@ import { ObjectTypeHelper } from '../components/MetaModel/helpers/ObjectTypeHelp
 export default {
     ...MDXComponents,
     P: PropertyType,
-    OT:ObjectType,
+    OT: ObjectType,
     PH: PropertyTypeHelper,
-    OH:ObjectTypeHelper,
+    OH: ObjectTypeHelper,
     Youtube,
     Properties,
     CreateObjectTutorial

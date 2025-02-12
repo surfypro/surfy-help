@@ -1,6 +1,8 @@
 import { default as default_2 } from 'react';
 import { ReactNode } from 'react';
 
+export declare const a = 40;
+
 declare type ApiUserPropertyNames = 'id' | 'clientSecret' | 'name' | 'createdAt' | 'updatedAt' | 'externalId' | 'userCompanyCreatedById' | 'userCompanyCreatedBy' | 'userCompanyUpdatedById' | 'userCompanyUpdatedBy' | 'apiUserToJupRoles' | 'apiUserToContentRoles' | 'companyId' | 'company';
 
 declare type ApiUserPropertyTypeRecord = Record<ApiUserPropertyNames, IPropertyTypeDefinition>;
@@ -18,6 +20,8 @@ export declare const appVersion: string;
 declare type AuthentificationConnectionPropertyNames = 'id' | 'name' | 'createdAt' | 'updatedAt' | 'externalId' | 'userRegistrationTenantRules';
 
 declare type AuthentificationConnectionPropertyTypeRecord = Record<AuthentificationConnectionPropertyNames, IPropertyTypeDefinition>;
+
+export declare const b = 145;
 
 declare type BuildingPropertyNames = 'id' | 'name' | 'color' | 'surface' | 'leaseStartDate' | 'leaseEndDate' | 'purchaseDate' | 'documents' | 'picture' | 'regulatoryCapacity' | 'parkingSpaceCount' | 'constructionYear' | 'yearlyCondominiumFees' | 'yearlyRent' | 'yearlyParkingRent' | 'yearlyTaxFees' | 'yearlyExploitationFees' | 'rentReferenceIndex' | 'securityDeposit' | 'roomsArea' | 'roomsCount' | 'workplacesCount' | 'workplacesRatio' | 'peopleCount' | 'seatsCount' | 'peopleRatio' | 'occupancyRate' | 'expansionRatio' | 'freeWorkplacesCount' | 'flexWorkplacesCount' | 'sharedWorkplacesCount' | 'sharedWorkplacesRatio' | 'transitWorkplacesCount' | 'flexRatio' | 'seatsPeopleRatio' | 'totalPeopleCount' | 'carbonFootprint' | 'totalCapacityCount' | 'totalCapacityWorkplaceCountRatio' | 'dimensionPeopleCount' | 'address' | 'createdAt' | 'updatedAt' | 'externalId' | 'companyId' | 'company' | 'buildingTypeId' | 'buildingType' | 'userCompanyOwnerId' | 'userCompanyOwner' | 'jupUiLayoutId' | 'jupUiLayout' | 'campusId' | 'campus' | 'buildingId' | 'building' | 'buildings' | 'userCompanyCreatedById' | 'userCompanyCreatedBy' | 'userCompanyUpdatedById' | 'userCompanyUpdatedBy' | 'floors' | 'roomTypeGroupBuildings' | 'costCenterBuildings' | 'dimensionBuildings' | 'facts' | 'organizationBuildings' | 'roomTypeBuildings' | 'personToBuildings' | 'dimensionTypeToBuildings' | 'contentRoleToBuildings';
 
@@ -361,6 +365,11 @@ declare interface ITextAnchor {
     displayLine: boolean;
 }
 
+declare interface IViewCore {
+    name: string;
+    isDefaultView?: boolean;
+}
+
 declare type JupIconSet = 'fontawesome' | 'material-ui' | 'surfy' | 'icomoon';
 
 declare type JupIconSyle = FontAwesomeIconsStyle | 'surfyicon' | 'icomoon';
@@ -440,6 +449,11 @@ export declare type MomentLocalCode = 'fr' | 'en-gb' | 'es' | 'it' | 'nl';
 declare type Object3dModelPropertyNames = 'id' | 'name' | 'type' | 'rotation' | 'origin' | 'model' | 'createdAt' | 'updatedAt' | 'externalId' | 'itemTypes';
 
 declare type Object3dModelPropertyTypeRecord = Record<Object3dModelPropertyNames, IPropertyTypeDefinition>;
+
+export declare function ObjectTypeIndexViewHelp(props: {
+    objectTypeName: Surfy.CamelizedObjectTypes;
+    view: IViewCore;
+}): default_2.JSX.Element;
 
 declare type OccupancyStatusPropertyNames = 'id' | 'name' | 'code' | 'color' | 'createdAt' | 'updatedAt' | 'externalId' | 'rooms';
 
@@ -559,7 +573,7 @@ declare type PropertyTypeJupValues = string | string[] | number | number[] | boo
 
 declare type PropertyTypeJupWeightUnits = 'kilogram' | 'gram';
 
-export declare const PropertyTypeLabel: default_2.ForwardRefExoticComponent<IProps & default_2.RefAttributes<HTMLDivElement>>;
+export declare const PropertyTypeLabel: default_2.ForwardRefExoticComponent<IProps & default_2.RefAttributes<HTMLSpanElement>>;
 
 export declare function PropertyTypeMandatoryLabel(props: {
     propertyType: IPropertyTypeDefinition;
@@ -2983,6 +2997,13 @@ declare namespace Surfy {
 declare type TranslationMethodDataType = Record<string, string | undefined | null | number | ReactNode>;
 
 declare type TranslationMethodType = (key: string, data?: TranslationMethodDataType) => string;
+
+export declare function useFlattenDeterminants(objectTypeName: Surfy.CamelizedObjectTypes): {
+    'determinant.defined': string;
+    'determinant.undefined': string;
+    'determinants.defined': string;
+    'determinants.undefined': string;
+};
 
 declare type UserCompanyPropertyNames = 'id' | 'createdAt' | 'updatedAt' | 'externalId' | 'campusCreatedBies' | 'campusUpdatedBies' | 'roomConnectorCreatedBies' | 'roomConnectorUpdatedBies' | 'userId' | 'user' | 'companyId' | 'company' | 'personId' | 'person' | 'userCompanyCreatedById' | 'userCompanyCreatedBy' | 'userCompanyCreatedBies' | 'userCompanyUpdatedById' | 'userCompanyUpdatedBy' | 'userCompanyUpdatedBies' | 'personCompanyCreatedBies' | 'personCompanyUpdatedBies' | 'buildingTypeCreatedBies' | 'buildingTypeUpdatedBies' | 'organizationCreatedBies' | 'organizationUpdatedBies' | 'itemTypeFamilyCreatedBies' | 'itemTypeFamilyUpdatedBies' | 'manufacturerCreatedBies' | 'manufacturerUpdatedBies' | 'itemTypeCreatedBies' | 'itemTypeUpdatedBies' | 'buildingOwners' | 'buildingCreatedBies' | 'buildingUpdatedBies' | 'mapScaleCreatedBies' | 'mapScaleUpdatedBies' | 'structureCreatedBies' | 'structureUpdatedBies' | 'structurePointCreatedBies' | 'structurePointUpdatedBies' | 'floorCreatedBies' | 'floorUpdatedBies' | 'distributionCostTypeCreatedBies' | 'distributionCostTypeUpdatedBies' | 'roomTypeCreatedBies' | 'roomTypeUpdatedBies' | 'roomTypeGroupToRoomTypeCreatedBies' | 'roomTypeGroupToRoomTypeUpdatedBies' | 'roomTypeGroupFloorCreatedBies' | 'roomTypeGroupFloorUpdatedBies' | 'roomTypeGroupBuildingCreatedBies' | 'roomTypeGroupBuildingUpdatedBies' | 'costCenterCreatedBies' | 'costCenterUpdatedBies' | 'costCenterBuildingCreatedBies' | 'costCenterBuildingUpdatedBies' | 'costCenterFloorCreatedBies' | 'costCenterFloorUpdatedBies' | 'roomCreatedBies' | 'roomUpdatedBies' | 'roomPointCreatedBies' | 'roomPointUpdatedBies' | 'roomPointRoomCreatedBies' | 'roomPointRoomUpdatedBies' | 'roomPointSegmentCreatedBies' | 'roomPointSegmentUpdatedBies' | 'itemTypePointCreatedBies' | 'itemTypePointUpdatedBies' | 'dimensionTypeCreatedBies' | 'dimensionTypeUpdatedBies' | 'dimensionCreatedBies' | 'dimensionUpdatedBies' | 'dimensionRoomCreatedBies' | 'dimensionRoomUpdatedBies' | 'dimensionFloorCreatedBies' | 'dimensionFloorUpdatedBies' | 'dimensionBuildingCreatedBies' | 'dimensionBuildingUpdatedBies' | 'factTypeCreatedBies' | 'factTypeUpdatedBies' | 'factCreatedBies' | 'factUpdatedBies' | 'personStateCreatedBies' | 'personStateUpdatedBies' | 'personSecurityProfileCreatedBies' | 'personSecurityProfileUpdatedBies' | 'personCreatedBies' | 'personUpdatedBies' | 'personToPersonTypeCreatedBies' | 'personToPersonTypeUpdatedBies' | 'personToPersonCreatedBies' | 'personToPersonUpdatedBies' | 'roomAffectationCreatedBies' | 'roomAffectationUpdatedBies' | 'workplaceTypeCreatedBies' | 'workplaceTypeUpdatedBies' | 'workplaceTypeItemTypeCreatedBies' | 'workplaceTypeItemTypeUpdatedBies' | 'workplaceCreatedBies' | 'workplaceUpdatedBies' | 'itemCreatedBies' | 'itemUpdatedBies' | 'workplaceAffectationCreatedBies' | 'workplaceAffectationUpdatedBies' | 'organizationFloorCreatedBies' | 'organizationFloorUpdatedBies' | 'organizationBuildingCreatedBies' | 'organizationBuildingUpdatedBies' | 'roomTypeFloorCreatedBies' | 'roomTypeFloorUpdatedBies' | 'roomTypeBuildingCreatedBies' | 'roomTypeBuildingUpdatedBies' | 'itemToPersonCreatedBies' | 'itemToPersonUpdatedBies' | 'personToBuildingCreatedBies' | 'personToBuildingUpdatedBies' | 'dimensionToPersonCreatedBies' | 'dimensionToPersonUpdatedBies' | 'dimensionTypeToBuildingCreatedBies' | 'dimensionTypeToBuildingUpdatedBies' | 'personWorkingLocationCreatedBies' | 'personWorkingLocationUpdatedBies' | 'personToWorkplaceBookingCreatedBies' | 'personToWorkplaceBookingUpdatedBies' | 'personToRoomBookingCreatedBies' | 'personToRoomBookingUpdatedBies' | 'personToDimensionBookingCreatedBies' | 'personToDimensionBookingUpdatedBies' | 'personCompanyToItemTypeCreatedBies' | 'personCompanyToItemTypeUpdatedBies' | 'personCompanyToRoomTypeCreatedBies' | 'personCompanyToRoomTypeUpdatedBies' | 'personCompanyToItemCreatedBies' | 'personCompanyToItemUpdatedBies' | 'legendCreatedBies' | 'legendUpdatedBies' | 'openerPostMessageHostCreatedBies' | 'openerPostMessageHostUpdatedBies' | 'contentRoleCreatedBies' | 'contentRoleUpdatedBies' | 'jupUserCompanyToJupRoles' | 'jupUserCompanyToJupRoleCreatedBies' | 'jupUserCompanyToJupRoleUpdatedBies' | 'contentRoleToBuildingCreatedBies' | 'contentRoleToBuildingUpdatedBies' | 'contentRoleToUserCompanies' | 'contentRoleToUserCompanyCreatedBies' | 'contentRoleToUserCompanyUpdatedBies' | 'contentRoleToFloorCreatedBies' | 'contentRoleToFloorUpdatedBies' | 'partnerApiCredentialCreatedBies' | 'partnerApiCredentialUpdatedBies' | 'apiUserCreatedBies' | 'apiUserUpdatedBies' | 'apiUserToJupRoleCreatedBies' | 'apiUserToJupRoleUpdatedBies' | 'apiUserToContentRoleCreatedBies' | 'apiUserToContentRoleUpdatedBies' | 'jupUiTenantOperationCreatedBies' | 'jupUiTenantOperationUpdatedBies' | 'contentRoleToJupUiTenantOperationCreatedBies' | 'contentRoleToJupUiTenantOperationUpdatedBies' | 'userRegistrationTenantRuleCreatedBies' | 'userRegistrationTenantRuleUpdatedBies' | 'userRegistrationTenantRuleToJupRoleCreatedBies' | 'userRegistrationTenantRuleToJupRoleUpdatedBies' | 'userRegistrationTenantRuleToContentRoleCreatedBies' | 'userRegistrationTenantRuleToContentRoleUpdatedBies' | 'partnerExportMappingConfigurationCreatedBies' | 'partnerExportMappingConfigurationUpdatedBies' | 'partnerExportMappingCreatedBies' | 'partnerExportMappingUpdatedBies' | 'partnerExportMappingToRoomTypeCreatedBies' | 'partnerExportMappingToRoomTypeUpdatedBies' | 'partnerExportMappingConfigurationToFloorCreatedBies' | 'partnerExportMappingConfigurationToFloorUpdatedBies' | 'itemFactCreatedBies' | 'itemFactUpdatedBies' | 'featureFamilyCreatedBies' | 'featureFamilyUpdatedBies' | 'featureGroupCreatedBies' | 'featureGroupUpdatedBies' | 'featureCreatedBies' | 'featureUpdatedBies';
 
