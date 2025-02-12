@@ -1,0 +1,73 @@
+---
+description: Coding style for ts
+globs: *.ts
+---
+---
+description: Style de code pour la documentation Docusaurus
+globs: ["**/*.ts", "**/*.tsx", "**/*.md", "**/*.mdx"]
+---
+# Style de Code pour Docusaurus
+
+## Style Markdown
+- Utiliser des titres hiérarchiques (h1 pour le titre principal, h2 pour les sections)
+- Ajouter des espaces après les marqueurs de liste
+- Utiliser des liens relatifs pour la documentation interne
+- Préférer les backticks pour le code inline
+- Utiliser les blocs de code avec highlighting
+
+## Style TypeScript/React
+```typescript
+// Imports organisés par groupe
+import React from 'react';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { useDoc } from '@docusaurus/theme-common/internal';
+import styles from './styles.module.css';
+
+// Interface avec documentation JSDoc
+/** Props pour le composant de carte tutoriel */
+interface TutorialCardProps {
+  /** Identifiant unique du tutoriel */
+  id: string;
+  /** Titre affiché */
+  title: string;
+}
+
+// Composant avec types explicites
+export function TutorialCard({ id, title }: TutorialCardProps): JSX.Element {
+  return (
+    <div className={styles.card}>
+      <h3>{title}</h3>
+    </div>
+  );
+}
+```
+
+## Conventions de Nommage
+- Fichiers de composants : PascalCase.tsx
+- Fichiers de styles : styles.module.css
+- Fichiers markdown : kebab-case.md
+- Variables/fonctions : camelCase
+- Interfaces/Types : PascalCase
+
+## Organisation des Fichiers
+```
+src/
+  components/
+    TutorialCard/
+      index.tsx
+      styles.module.css
+  theme/
+    MDXComponents.ts
+docs/
+  tutorials/
+    getting-started.md
+    advanced-usage.md
+```
+
+## Bonnes Pratiques
+- Utiliser TypeScript strict mode
+- Documenter les composants et fonctions complexes
+- Maintenir une structure de fichiers cohérente
+- Suivre les conventions ESLint de Docusaurus
+- Utiliser les composants MDX de manière consistante
+- Préférer les composants fonctionnels

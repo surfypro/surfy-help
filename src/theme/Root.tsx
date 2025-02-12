@@ -18,6 +18,7 @@ const theme = createTheme({
         }
     }
 });
+
 export default function Root(props: { children: React.ReactNode }) {
     const { children } = props;
     const language = useCurrentLocale();

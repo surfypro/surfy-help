@@ -1,0 +1,80 @@
+---
+description: 
+globs: 
+---
+---
+description: Règles pour les composants React dans Docusaurus
+globs: ["src/components/**/*.tsx", "src/components/**/*.ts"]
+---
+# Patterns de Composants React pour Docusaurus
+
+## Structure de Base
+```typescript
+import React from 'react';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { translate } from '@docusaurus/Translate';
+
+interface TutorialCardProps {
+  // Required props first
+  title: string;
+  description: string;
+  // Optional props with '?' suffix
+  imageSrc?: string;
+  linkTo?: string;
+}
+
+export function TutorialCard({ title, description, imageSrc, linkTo }: TutorialCardProps) {
+  // 1. Hooks
+  const { siteConfig } = useDocusaurusContext();
+  
+  // 2. Translations
+  const translatedTitle = translate({
+    message: title,
+    description: 'Tutorial card title'
+  });
+  
+  // 3. Component render
+  return (
+    <div className="tutorial-card">
+      {imageSrc && <img src={imageSrc} alt={translatedTitle} />}
+      <h3>{translatedTitle}</h3>
+      <p>{description}</p>
+    </div>
+  );
+}
+```
+
+## Pattern de Props
+```typescript
+interface CustomComponentProps {
+  // Required props first
+  id: string;
+  content: string;
+  // Optional props with '?' suffix
+  className?: string;
+  // Toujours documenter avec JSDoc
+  /** Callback appelé lors du clic sur le composant */
+  onClick?: () => void;
+}
+```
+
+## Pattern de Hooks Personnalisés
+```typescript
+function useCustomHook() {
+  const { siteConfig } = useDocusaurusContext();
+  const [data, setData] = React.useState(null);
+
+  React.useEffect(() => {
+    // Logique du hook
+  }, []);
+
+  return { data };
+}
+```
+
+## Règles Générales
+- Utiliser les hooks Docusaurus (`useDocusaurusContext`, etc.)
+- Préférer les composants fonctionnels avec TypeScript
+- Documenter les props et les composants
+- Suivre les conventions de nommage Docusaurus
+- Utiliser les styles CSS modules pour le styling

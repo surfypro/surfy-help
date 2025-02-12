@@ -1,0 +1,36 @@
+---
+description: 
+globs: 
+---
+---
+description: Règles pour les composants UI dans un contexte Docusaurus
+globs: ["src/components/**/*.tsx", "src/components/**/*.ts"]
+---
+# Composants UI Docusaurus
+
+## Composants de Base
+- `MDXComponents` : Pour la personnalisation du rendu MDX
+- `DocSidebar` : Pour la navigation latérale
+- `DocItem` : Pour le contenu principal des pages de documentation
+- `DocPaginator` : Pour la navigation entre les pages
+
+## Composants Personnalisés
+- Préfixer les composants personnalisés avec un nom significatif (ex: `TutorialCard`)
+- Utiliser des composants atomiques réutilisables
+- Documenter les props avec TypeScript et JSDoc
+
+## Composants de Mise en Page
+- `Layout` : Pour la structure globale des pages
+- `Section` : Pour les sections de contenu
+- `Container` : Pour le conteneur principal du contenu
+
+## Composants Interactifs
+- Privilégier les composants natifs Docusaurus quand ils existent
+- Pour les composants personnalisés, suivre le style visuel de Docusaurus
+- Assurer la compatibilité avec le mode sombre/clair
+
+## Règles Générales
+- Respecter la hiérarchie visuelle de Docusaurus
+- Maintenir une expérience utilisateur cohérente
+- Utiliser les styles et thèmes Docusaurus par défaut
+- Éviter les dépendances UI externes sauf si absolument nécessaire

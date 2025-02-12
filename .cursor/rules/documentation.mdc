@@ -1,0 +1,44 @@
+---
+description: 
+globs: 
+---
+# Documentation Rules
+
+## Language
+
+- All code documentation MUST be written in English
+- This includes:
+  - JSDoc comments
+  - Inline comments
+  - README files
+  - API documentation
+  - Component documentation
+  - Type definitions documentation
+
+## Documentation Style
+
+- Use clear and concise language
+- Document all public APIs and components
+- Include examples when relevant
+- Keep documentation up to date with code changes
+- Use proper grammar and spelling
+
+## Component Documentation
+
+- Document props and their types
+- Include usage examples
+- Explain component behavior and side effects
+- Document any dependencies or requirements
+
+## Type Documentation
+
+- Document complex types and interfaces
+- Explain the purpose of each type
+- Include examples for non-obvious use cases
+
+## Code Comments
+
+- Write meaningful comments that explain "why" not "what"
+- Keep comments up to date with code changes
+- Remove commented-out code
+- Use TODO comments sparingly and include JIRA ticket numbers when relevant

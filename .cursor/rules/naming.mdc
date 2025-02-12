@@ -1,0 +1,25 @@
+---
+description: 
+globs: 
+---
+# Conventions de Nommage
+
+## Composants
+- Utiliser PascalCase pour les noms de composants
+- Préfixes :
+  - `Jup` : Pour les composants génériques/utilitaires (ex: JupLoader)
+- Suffixes :
+  - `Drawer` : Pour les composants de panneau latéral
+  - `Tooltip` : Pour les composants de tooltip
+  - `Dialog` : Pour les boîtes de dialogue modales
+
+## Fichiers
+- `{ComponentName}.tsx` : Fichiers de composants
+- `{name}.recoil.ts` : Fichiers de state management
+- `{name}.fr.i18n.json` : Fichiers de traduction
+- `{name}.models.ts` : Fichiers de modèles de données
+
+## Règles Générales
+- Noms descriptifs et explicites
+- Cohérence dans tout le projet
+- Éviter les abréviations sauf si standard 

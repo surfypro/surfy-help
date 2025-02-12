@@ -1,0 +1,84 @@
+---
+description: 
+globs: 
+---
+---
+description: Règles de qualité des données pour la documentation Docusaurus
+globs: ["docs/**/*.md", "docs/**/*.mdx", "src/data/**/*.ts"]
+---
+# Qualité des Données Documentation
+
+## Validation du Contenu Markdown
+```typescript
+import { validateMarkdownFile } from '@docusaurus/utils';
+
+function validateDocContent(content: string, filePath: string) {
+  // Vérification de la structure frontmatter
+  const { frontMatter, content: markdownContent } = validateMarkdownFile(content);
+  
+  const errors = [];
+  
+  // Validation du frontmatter
+  if (!frontMatter.id) errors.push('Missing document ID');
+  if (!frontMatter.title) errors.push('Missing title');
+  
+  // Validation des liens internes
+  const internalLinks = extractInternalLinks(markdownContent);
+  for (const link of internalLinks) {
+    if (!isValidDocLink(link)) {
+      errors.push(`Invalid internal link: ${link}`);
+    }
+  }
+  
+  return errors;
+}
+```
+
+## Vérification des Références
+```typescript
+function checkDocReferences(docs: DocMetadata[]) {
+  const referenceMap = new Map<string, Set<string>>();
+  
+  // Construction de la carte des références
+  docs.forEach(doc => {
+    const references = extractReferences(doc.content);
+    references.forEach(ref => {
+      if (!referenceMap.has(ref)) {
+        referenceMap.set(ref, new Set());
+      }
+      referenceMap.get(ref)?.add(doc.id);
+    });
+  });
+  
+  // Vérification des références cassées
+  const brokenRefs = Array.from(referenceMap.entries())
+    .filter(([ref]) => !doesDocExist(ref))
+    .map(([ref, sources]) => ({
+      ref,
+      referencedBy: Array.from(sources)
+    }));
+    
+  return brokenRefs;
+}
+```
+
+## Règles de Validation
+- Vérifier la présence des métadonnées obligatoires
+- Valider les liens internes et externes
+- S'assurer de la cohérence des versions
+- Vérifier la structure des sidebars
+- Valider les assets référencés
+
+## Maintenance de la Documentation
+- Identifier les pages obsolètes
+- Vérifier la cohérence des traductions
+- Maintenir la cohérence des tags
+- Assurer la qualité des images et médias
+
+## Bonnes Pratiques
+- Utiliser des linters Markdown
+- Implémenter des tests automatisés pour la documentation
+- Maintenir un glossaire cohérent
+- Vérifier régulièrement les liens morts
+- Assurer la compatibilité des plugins
+- Valider le SEO des pages

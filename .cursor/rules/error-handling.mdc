@@ -1,0 +1,28 @@
+---
+description: 
+globs: 
+---
+# Gestion des Erreurs
+
+## Early Returns
+```typescript
+if (error) {
+  return <ErrorDisplay error={error} />;
+}
+```
+
+## Messages Utilisateur
+```typescript
+const handleError = (error: Error) => {
+  setError({
+    message: "Une erreur est survenue lors de l'opération",
+    details: error.message
+  });
+};
+```
+
+## Règles Générales
+- Toujours gérer les cas d'erreur de manière explicite
+- Afficher des messages d'erreur en français
+- Fournir des détails techniques uniquement si nécessaire
+- Utiliser les composants de feedback appropriés
