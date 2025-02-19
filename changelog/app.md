@@ -1,12 +1,13 @@
 # Nouveautés
 
-<!-- ## 31 Janvier 2025 - v3.4.61
+## 19 Février 2025 - v3.4.62
 
-- Introduction de Surfy Copilot en version Beta pour aider à la création des plans
-- Les types d'objets peuvent être exclus de la création du graphe d'orientation via une option dans les propriétés du type d'objet
-- Les icônes sont toutes exclues de la création du graphe d'orientation 
+<!-- - Introduction de Surfy Copilot en version Beta pour aider à la création des plans -->
+- Amélioration du parcours de chemin dans les plans
+    - Les types d'objets peuvent être exclus de la création du graphe d'orientation via une option dans les propriétés du type d'objet
+    - Les icônes sont toutes exclues de la création du graphe d'orientation 
+    - Le graphe d'orientation généré est maintenant disponible pour tous les utilisateurs sans nécessiter de régénération
 - Les prix sont maintenant affichés avec 2 décimales après la virgule et en info-bulle la valeur exacte est disponible.
--->
 
 ## 23 Janvier 2025 - v3.4.59
 
