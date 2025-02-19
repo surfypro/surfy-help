@@ -1,6 +1,6 @@
 # Nouveautés
 
-## 19 Février 2025 - v3.4.62
+## 19 Février 2025 - v3.4.63
 
 <!-- - Introduction de Surfy Copilot en version Beta pour aider à la création des plans -->
 - Amélioration du parcours de chemin dans les plans
