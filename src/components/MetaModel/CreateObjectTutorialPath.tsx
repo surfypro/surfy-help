@@ -1,10 +1,9 @@
 import React from "react";
-import { CamelizedObjectTypeNames, useFlattenDeterminants, ObjectTypeIndexViewHelp } from "@site/surfy";
+import { CamelizedObjectTypeNames, useFlattenDeterminants } from "@site/surfy";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import MouseIcon from "@mui/icons-material/Mouse";
-import { useTranslations } from "../Translations/translations";
 import { getSecondaryTextProps } from "./helpers/ListItemTextProps";
 
 interface CreateObjectTutorialPathProps {
@@ -12,11 +11,6 @@ interface CreateObjectTutorialPathProps {
 }
 
 export function CreateObjectTutorialPath({ objectTypeName }: CreateObjectTutorialPathProps) {
-  const entitiesTranslations = useTranslations();
-  const objectTypeTranslation = entitiesTranslations.objectTypeTranslations[objectTypeName];
-  const objectLabel = objectTypeTranslation?.label?.toLowerCase() || objectTypeName;
-
-
   const determinants = useFlattenDeterminants(objectTypeName);
 
   const getCreateActionPath = (type: CamelizedObjectTypeNames) => {
@@ -33,11 +27,6 @@ export function CreateObjectTutorialPath({ objectTypeName }: CreateObjectTutoria
     return paths[type] || "";
   };
 
-  const isMasculine = (label: string) => {
-    const masculineWords = ["bâtiment", "étage"];
-    return masculineWords.includes(label);
-  };
-
   return (
     <ListItem>
       <ListItemIcon>
@@ -50,10 +39,7 @@ export function CreateObjectTutorialPath({ objectTypeName }: CreateObjectTutoria
             ? `Dans le menu de gauche, accédez à ${getCreateActionPath(objectTypeName)}`
             : "Cliquer sur le menu contextuel"
         }
-        // secondary={`puis sur 'Créer ${isMasculine(objectLabel) ? "un" : "une"} ${objectLabel}'`}
-        secondary={<>
-          <ObjectTypeIndexViewHelp objectTypeName={objectTypeName} view={{ name: 'create', isDefaultView: true }} />
-        </>}
+        secondary={`puis sur 'Créer ${determinants["determinant.undefined"]}'`}
       />
     </ListItem>
   );
