@@ -6,11 +6,11 @@ import ListItemText from "@mui/material/ListItemText";
 import MouseIcon from "@mui/icons-material/Mouse";
 import { getSecondaryTextProps } from "./helpers/ListItemTextProps";
 
-interface CreateObjectTutorialPathListItemProps {
+interface IProps {
   objectTypeName: CamelizedObjectTypeNames;
 }
 
-export function CreateObjectTutorialPathListItem({ objectTypeName }: CreateObjectTutorialPathListItemProps) {
+export function CreateObjectTutorialPathListItem({ objectTypeName }: IProps) {
   const determinants = useFlattenDeterminants(objectTypeName);
 
   const getCreateActionPath = (type: CamelizedObjectTypeNames) => {

@@ -8,11 +8,11 @@ import EditIcon from "@mui/icons-material/Edit";
 import { useTranslations } from "../Translations/translations";
 import { Properties } from "./Properties";
 
-interface CreateObjectTutorialPropertiesListItemProps {
+interface IProps {
   objectTypeName: CamelizedObjectTypeNames;
 }
 
-export function CreateObjectTutorialPropertiesListItem({ objectTypeName }: CreateObjectTutorialPropertiesListItemProps) {
+export function CreateObjectTutorialPropertiesListItem({ objectTypeName }: IProps) {
   const entitiesTranslations = useTranslations();
   const objectTypeTranslation = entitiesTranslations.objectTypeTranslations[objectTypeName];
   const objectLabel = objectTypeTranslation?.label?.toLowerCase() || objectTypeName;

@@ -8,9 +8,12 @@ import { getPropertyTypeByCode, PropertyTypeCodes, PropertyTypeLabel, PropertyTy
 import { objectTypePathMapping } from "@site/src/metaModel/metamodel.json.helper";
 import { Box } from '@mui/material';
 
-export function PropertyType(props: { code: PropertyTypeCodes }) {
+interface IProps {
+  code: PropertyTypeCodes;
+}
+
+export function PropertyType({ code }: IProps) {
     const entitiesTranslations = useTranslations();
-    const { code } = props;
 
     const propertyType = getPropertyTypeByCode(code);
 

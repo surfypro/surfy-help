@@ -7,6 +7,11 @@ import { useTranslations } from "../Translations/translations";
 import { isTenantObjectType, getObjectTypeDefinitionByName, CamelizedObjectTypeNames, PropertyTypeCodes } from "@site/surfy";
 import { PropertyType } from "./PropertyType";
 
+interface IProps {
+  objectTypeName: CamelizedObjectTypeNames;
+  mandatory?: boolean;
+}
+
 /**
  * Component that displays the list of properties for a given object type.
  * It uses the translation system to display labels and descriptions
@@ -23,9 +28,8 @@ import { PropertyType } from "./PropertyType";
  * <Properties objectTypeName="building" mandatory={true} />
  * ```
  */
-export function Properties(props: { objectTypeName: CamelizedObjectTypeNames; mandatory?: boolean }) {
+export function Properties({ objectTypeName, mandatory }: IProps) {
     const entitiesTranslations = useTranslations();
-    const { objectTypeName, mandatory } = props;
     
     const objectTypeDefinition = getObjectTypeDefinitionByName(objectTypeName);
     
