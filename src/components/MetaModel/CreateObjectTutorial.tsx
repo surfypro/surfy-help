@@ -7,13 +7,13 @@ import { CreateObjectTutorialOptionalPropertiesListItem } from "./CreateObjectTu
 import { CreateObjectTutorialValidationListItem } from "./CreateObjectTutorialValidationListItem";
 import { CreateObjectTutorialPropertiesListItem } from "./CreateObjectTutorialPropertiesListItem";
 
-interface IProps {
+interface CreateObjectTutorialProps {
   objectTypeName: CamelizedObjectTypeNames;
 }
 
 export function CreateObjectTutorial({
   objectTypeName,
-}: IProps) {
+}: CreateObjectTutorialProps) {
   return (
     <Box>
       <List>
