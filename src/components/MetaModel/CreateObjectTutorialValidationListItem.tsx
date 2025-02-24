@@ -5,7 +5,7 @@ import ListItemText from "@mui/material/ListItemText";
 import SaveIcon from "@mui/icons-material/Save";
 import { getSecondaryTextProps } from "./helpers/ListItemTextProps";
 
-export function CreateObjectTutorialValidation() {
+export function CreateObjectTutorialValidationListItem() {
   return (
     <ListItem>
       <ListItemIcon>
