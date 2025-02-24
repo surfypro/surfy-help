@@ -16,19 +16,7 @@ export function CreateObjectTutorial({
 }: CreateObjectTutorialProps) {
   return (
     <Box>
-      <List
-        sx={{
-          "& .MuiListItem-root": {
-            px: 1,
-            py: 0.75,
-            borderRadius: 1,
-            "&:hover": {
-              bgcolor: "action.hover",
-              transition: "background-color 0.2s",
-            },
-          },
-        }}
-      >
+      <List>
         <CreateObjectTutorialPath objectTypeName={objectTypeName} />
         <CreateObjectTutorialProperties objectTypeName={objectTypeName} />
         <CreateObjectTutorialOptionalProperties />

@@ -37,10 +37,8 @@ export function Properties(props: { objectTypeName: CamelizedObjectTypeNames; ma
 
     if (!objectTypeDefinition?.propertiesByName) {
         return (
-            <Box sx={{ p: 1 }}>
-                <Typography variant="body2" color="text.secondary">
-                    Aucune propriété disponible
-                </Typography>
+            <Box>
+                Aucune propriété disponible
             </Box>
         );
     }
@@ -54,10 +52,8 @@ export function Properties(props: { objectTypeName: CamelizedObjectTypeNames; ma
 
     if (properties.length === 0) {
         return (
-            <Box sx={{ p: 1 }}>
-                <Typography variant="body2" color="text.secondary">
-                    {mandatory ? "Aucune propriété obligatoire" : "Aucune propriété disponible"}
-                </Typography>
+            <Box>
+                {mandatory ? "Aucune propriété obligatoire" : "Aucune propriété disponible"}
             </Box>
         );
     }
@@ -66,21 +62,11 @@ export function Properties(props: { objectTypeName: CamelizedObjectTypeNames; ma
 
     return (
         <Box>
-            <List sx={{ 
-                '& .MuiListItem-root': {
-                    px: 1,
-                    py: 0.75,
-                    borderRadius: 1,
-                    '&:hover': {
-                        bgcolor: 'action.hover',
-                        transition: 'background-color 0.2s'
-                    }
-                }
-            }}>
+            <List>
                 {properties.map(property => {
                     const propertyCode = `${objectTypeName}:${property.name}` as PropertyTypeCodes;
                     return (
-                        <ListItem key={property.name} disableGutters>
+                        <ListItem key={property.name}>
                             <PropertyType code={propertyCode} />
                         </ListItem>
                     );

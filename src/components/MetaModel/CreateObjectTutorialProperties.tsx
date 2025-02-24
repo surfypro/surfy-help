@@ -27,8 +27,8 @@ export function CreateObjectTutorialProperties({ objectTypeName }: CreateObjectT
           primary={`Indiquez les propriétés obligatoires de l'objet ${objectLabel} :`}
         />
       </ListItem>
-      <ListItem sx={{ pl: 4 }}>
-        <Box sx={{ width: "100%" }}>
+      <ListItem>
+        <Box>
           <Properties objectTypeName={objectTypeName} mandatory={true} />
         </Box>
       </ListItem>
