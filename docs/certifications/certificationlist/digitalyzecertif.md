@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Digitalisation des espaces
+# Certification "Digitalisation des espaces"
 
 Durée de l'évaluation : 2 heures
 
