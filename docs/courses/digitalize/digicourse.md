@@ -11,8 +11,10 @@ sidebar_position: 2
     -   [Créer le fond de plan](/docs/tutorials/surfaces/background/create.md)
     -   [Créer l'échelle du plan](/docs/tutorials/surfaces/mapscale/create.md)
     -   [Créer un espace](/docs/tutorials/surfaces/room/create.md)
+    -   [Gérer les portes et passages](/docs/doors)
     -   [Qualifier un espace](/docs/tutorials/surfaces/room/create.md#qualifier-un-espace)
     -   [Modifier un espace](/docs/tutorials/surfaces/room/edit.md)
+    -   [Gérer les calques d'analyse des espaces](/docs/dimensiontypes)
 
 ## Aménager les espaces
 

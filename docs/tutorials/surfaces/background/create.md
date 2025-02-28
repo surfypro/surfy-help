@@ -15,7 +15,18 @@ La convertion en PNG est obtenue à l'aide de logiciels gratuits du type "Conver
 
 ### A partir d'un plan Autocad
 
-Paragraphe en construction
+La création d'un fond de plan à partir d'Autocad nécessite une formation rapide auprès de nos services.
+Il faut disposer d'une licence Autocad.
+
+Les points à respecter sont :
+-   une échelle correcte placée dans Autocad, visible sur la sortie en png
+-   un cadre commun à tous les étages, suffisamment large pour englober l'étage le plus large
+-   un positionnement identique des étages dans le cadre afin d'assurer une bonne verticalité entre les étages
+-   une sortie en png depuis Autocad
+-   un nombre de pixel correct dans la sortie en png (2000 à 5000 pixels X 3000 à 7000 pixels, suivant la taille du plan)
+
+Surfy propose la création des fonds de plan en png pour les utilisateurs ne disposant pas d'une licence Autocad.
+Merci de nous contacter pour une [formation ou conversion dwg vers png](https://www.surfy.pro/contact)
 
 ### A partir d'une image
 
