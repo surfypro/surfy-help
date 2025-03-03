@@ -1,0 +1,40 @@
+---
+description: 
+globs: 
+---
+# Internationalization Rules
+
+## Code and Documentation Language
+
+- All code, including variable names, function names, and comments MUST be in English
+- All technical documentation MUST be in English
+- All commit messages and PR descriptions MUST be in English
+
+## Content Language
+
+- User-facing content should be internationalized
+- Support multiple languages through translation files
+- Use translation keys instead of hardcoded strings
+- Keep translation files organized by feature/module
+- Include language codes in file names (e.g., `en.json`, `fr.json`)
+
+## Translation Management
+
+- Use a consistent format for translation keys
+- Keep translations up to date
+- Document any special formatting or variables in strings
+- Test UI with different language lengths
+- Handle pluralization correctly
+
+## Default Language
+
+- Use English as the default/fallback language
+- Ensure all strings have English translations
+- Document any region-specific variations (e.g., en-US vs en-GB)
+
+## Code Practices
+
+- Use translation hooks consistently
+- Avoid string concatenation for translated content
+- Handle missing translations gracefully
+- Support RTL languages when relevant

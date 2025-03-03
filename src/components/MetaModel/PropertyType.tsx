@@ -1,4 +1,4 @@
-import Box from '@mui/material/Box';
+import React from 'react';
 import Fade from '@mui/material/Fade';
 import Paper from '@mui/material/Paper';
 import { useTranslations } from "../Translations/translations";
@@ -6,10 +6,14 @@ import { HelpTooltipStyled } from "./HelpTooltipStyled";
 import { toDocumentationLinkString } from "@site/src/utils/documentionStyle";
 import { getPropertyTypeByCode, PropertyTypeCodes, PropertyTypeLabel, PropertyTypeMandatoryLabel } from "@site/surfy";
 import { objectTypePathMapping } from "@site/src/metaModel/metamodel.json.helper";
+import { Box } from '@mui/material';
 
-export function PropertyType(props: { code: PropertyTypeCodes }) {
+interface IProps {
+  code: PropertyTypeCodes;
+}
+
+export function PropertyType({ code }: IProps) {
     const entitiesTranslations = useTranslations();
-    const { code } = props;
 
     const propertyType = getPropertyTypeByCode(code);
 
@@ -24,21 +28,26 @@ export function PropertyType(props: { code: PropertyTypeCodes }) {
 
     const href = `${directoryPath}/${toDocumentationLinkString(objectTypeName)}#${toDocumentationLinkString(name)}`;
 
-    const Title = <Paper sx={{ p: 2 }}>
+    const Title = <Paper sx={{ p: 2, m: 0 }}>
         <Box style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
-            <h2 ><PropertyTypeLabel propertyType={propertyType} /></h2>
+            <h2 style={{ margin: 0 }}><PropertyTypeLabel propertyType={propertyType} /></h2>
             <Box style={{ flexGrow: 1, display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
                 {objectTypeTranslation.label}
             </Box>
         </Box>
-        <Box >{translations.description}</Box>
+        <Box>{translations.description}</Box>
         <Box sx={{ mt: 2 }}>
             {propertyType.options.mandatory === true && <PropertyTypeMandatoryLabel propertyType={propertyType} />}
         </Box>
-    </Paper >;
-    return <HelpTooltipStyled title={Title} slots={{
-        transition: Fade
-    }} disableInteractive={true}>
-        <a href={href}>{translations.label}</a>
-    </HelpTooltipStyled>
+    </Paper>;
+
+    return (
+        <HelpTooltipStyled
+            title={Title}
+            slots={{ transition: Fade }}
+            disableInteractive={true}
+        >
+            <a href={href}>{translations.label}</a>
+        </HelpTooltipStyled>
+    );
 }

@@ -1,0 +1,50 @@
+---
+description: n
+globs: 
+---
+# Version Control Rules
+
+## Commit Messages
+
+- All commit messages MUST be written in English
+- Follow the conventional commits specification:
+  - Format: `type(scope): message`
+  - Types: feat, fix, docs, style, refactor, test, chore
+  - Example: `feat(auth): add login with Google`
+- Keep commits atomic and focused
+- Write clear and descriptive messages
+- Include relevant ticket numbers when applicable
+- Add emojis to express emotions
+
+## Pull Requests
+
+- All PR titles and descriptions MUST be written in English
+- PR title should be clear and descriptive
+- PR description should include:
+  - Purpose of the changes
+  - Summary of main modifications
+  - Testing performed
+  - Screenshots for UI changes
+  - Breaking changes if any
+- Link related issues or tickets
+- Keep PRs focused and reasonably sized
+
+## Branch Management
+
+- Use feature branches for development
+- Keep branches up to date with main
+- Delete branches after merging
+- Use meaningful branch names in English
+  - Format: `type/description`
+  - Example: `feature/google-auth`
+
+## Code Review
+
+- Review comments should be in English
+- Be constructive and specific
+- Focus on:
+  - Code quality
+  - Test coverage
+  - Documentation
+  - Performance implications
+  - Security considerations
