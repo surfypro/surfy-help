@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# A propos des tutos
+# A propos des tutoriels
 
 Besoin d'un petit coup de pouce ? Nos tutoriels vous guideront dans la prise en main des fonctionnalités de Surfy.
 
@@ -28,7 +28,7 @@ Le déménagement des équipes est géré facilement dans Surfy à partir d'une 
 
 Créer et dupliquer du Mobilier dans Surfy, à l'échelle ou sous forme d'icônes, à partir de la bibliothèque d'objets ou en créant ses propres types d'objets ou types de Postes de travail.<br />
 Référencer et localiser ses équipements sur les plans, connaitre son inventaire en toutes circonstances,<br />
-Evaluer sa capacité à recevoir en comptant les postes de travail et les places assises disponibles dans le bâtiment.<br />
+Evaluer sa capacité à recevoir en situant les postes de travail libres et le nombre de places assises disponibles dans le bâtiment.<br />
 
 ## Surfy Plus +
 

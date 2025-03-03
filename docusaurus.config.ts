@@ -168,6 +168,7 @@ const config: Config = {
           position: 'left',
           label: 'Documentation',
         },
+        { to: '/docs/profile', label: 'Surfy pour tous' },
         { to: '/docs/tutorials/intro', label: 'Tutoriels' },
         {
           type: 'localeDropdown',
@@ -175,6 +176,7 @@ const config: Config = {
         },
 
         { to: '/docs/courses/intro', label: 'Cours' },
+        { to: '/docs/certifications/intro', label: 'Certifications' },
         { to: '/changelog/app', label: 'Nouveautés', position: 'left' },
         // { to: '/blog', label: 'Blog', position: 'left' },
         { to: 'https://www.surfy.pro/contact', label: 'Nous contacter', position: 'left', target: '_blank', rel: 'noopener noreferrer' },
