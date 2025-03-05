@@ -171,5 +171,5 @@ Pour visualiser le bâtiment complet, il faut alors intégrer tous les étages d
 
 ## L'accès ENTREPRISE
 
-Sur demande, nous pouvons configurer un accès "ENTREPRISE" permettant aux utilisateurs de se connecter directement à la plateforme de l'entreprise en utilisant leur adresse mail professionnelle via un accès à définir (Okta, ...).
+Sur demande, on peut configurer un accès "ENTREPRISE" permettant aux utilisateurs de se connecter directement à la plateforme de l'entreprise en utilisant leur adresse mail professionnelle via un accès à définir (Okta, ...).
 Le rôle des utilisateurs (en général le rôle Lecteur) est configuré ainsi que le contenu visible (Batiments X et Z, étage Y,...) pour l'ensemble des collaborateurs accédant à la plateforme. Ces rôles peuvent ensuite être modifiés individuellement pour les cas particuliers.
