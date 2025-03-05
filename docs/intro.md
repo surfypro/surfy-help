@@ -6,7 +6,7 @@ sidebar_position: 0
 
 Pour vous accompagner dans la maîtrise de Surfy et répondre à vos objectifs, notre documentation est à votre disposition :
 
-- [Surfy, pour qui ?](/docs/userprofile/intro.md)<br />
+- [Surfy, pour tous](/docs/userprofile/intro.md)<br />
 En fonction de votre métier et de votre rôle dans l'entreprise, accédez directement aux tutoriels adaptés.
 
 
