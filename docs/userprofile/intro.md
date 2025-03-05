@@ -16,21 +16,23 @@ Son utilisation offre plusieurs bénéfices en proposant des fonctionnalités in
 
 ## Ressources Humaines (RH)
 
-### Gestion des espaces et des effectifs
+Gestion des espaces et des effectifs
 
+✅ Connexion possible au SIRH pour une mise à jour fluide des entrants, sortants, informations complémentaires, avec gestion des externes.<br />
 ✅ Affectation des collaborateurs aux postes de travail : permet d’assigner des employés à des bureaux spécifiques pour optimiser l’organisation des équipes.<br />
-✅ Réservation et suivi des espaces : les employés peuvent réserver des postes via Microsoft Teams, facilitant la gestion des présences et du télétravail.<br />
+✅ Réservation et suivi des espaces : les employés peuvent réserver des postes flex via Microsoft Teams, facilitant la gestion des présences et du télétravail.<br />
 ✅ Suivi des affectations : consultation des réservations et gestion des déplacements internes pour une meilleure planification des ressources humaines.<br />
 
-### Services Généraux & Administration
+## Services Généraux & Administration
 
 Optimisation des espaces de travail et des infrastructures
 
 ✅ Cartographie interactive des bâtiments : digitalisation des plans des locaux pour une gestion simplifiée des espaces et du mobilier.<br />
 ✅ Gestion des affectations en temps réel : assignation des postes de travail et mise à jour des disponibilités selon les besoins de l’entreprise.<br />
-✅ Recherche rapide des espaces, du mobilier et des occupants : fonction de recherche avancée pour localiser des bureaux, salles de réunion, occupants ou équipements spécifiques.<br />
+✅ Recherche rapide des espaces, du mobilier et des occupants : fonction de recherche avancée pour localiser les bureaux, salles de réunion, occupants ou équipements spécifiques.<br />
+✅ Inventaire détaillé et localisation des ressources et du mobilier.<br />
 
-### Informatique (IT & Support technique)
+## Informatique (IT & Support technique)
 
 Simplification de la gestion des outils et infrastructures
 
@@ -38,7 +40,7 @@ Simplification de la gestion des outils et infrastructures
 ✅ Automatisation des réservations : réduction des demandes manuelles pour l’attribution des ressources IT (postes de travail, salles informatiques).<br />
 ✅ Optimisation de l’assistance technique : localisation rapide des postes et équipements pour une meilleure gestion du support technique.<br />
 
-### Finance & Comptabilité
+## Finance & Comptabilité
 
 Amélioration de la gestion budgétaire des espaces
 
@@ -46,7 +48,7 @@ Amélioration de la gestion budgétaire des espaces
 ✅ Rapports et analyses d’utilisation : meilleure visibilité sur l’utilisation des espaces pour une allocation budgétaire plus efficace.<br />
 ✅ Réduction des espaces inutilisés : identification des zones sous-utilisées pour optimiser les baux et la gestion immobilière.<br />
 
-### Juridique & Conformité
+## Juridique & Conformité
 
 Sécurisation et gestion des accès
 
