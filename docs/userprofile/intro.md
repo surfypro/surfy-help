@@ -20,7 +20,7 @@ Gestion des espaces et des effectifs
 
 ✅ Connexion possible au SIRH pour une mise à jour fluide des entrants, sortants, informations complémentaires, avec gestion des externes.<br />
 ✅ Affectation des collaborateurs aux postes de travail : permet d’assigner des employés à des bureaux spécifiques pour optimiser l’organisation des équipes.<br />
-✅ Réservation et suivi des espaces : les employés peuvent réserver des postes flex via Microsoft Teams, facilitant la gestion des présences et du télétravail.<br />
+✅ Réservation et suivi des espaces : les occupants peuvent réserver des postes flex via Microsoft Teams, facilitant la gestion des présences et du télétravail.<br />
 ✅ Suivi des affectations : consultation des réservations et gestion des déplacements internes pour une meilleure planification des ressources humaines.<br />
 
 ## Services Généraux & Administration
