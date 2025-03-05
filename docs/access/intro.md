@@ -157,7 +157,7 @@ Le bâtiment sélectionné s'ajoute aux éventuels bâtiments déjà associés a
 Pour définir un rôle de contenu par étage, chaque étage concerné doit être inclus dans un rôle de contenu.<br />
 
 Pour cela, suivre la procédure de [Rôle de contenu au bâtiment](/docs/access/intro#rôle-de-contenu-au-bâtiment), et cliquer sur "Créer une association du rôle de contenu à l'étage" afin de choisir l'étage concerné, puis valider.<br />
-Pour visualiser le bâtiment complet, il faut alors intégrer tous les étages d'un bâtiment dans un rôle de contenu spécifique au bâtiment, ou ajouter les rôles de contenu de chaque étage à l'utilisateur concerné.
+Pour visualiser le bâtiment complet, il faut alors intégrer tous les étages d'un bâtiment dans un rôle de contenu spécifique au bâtiment et l'attribuer à l'utilisateur, ou ajouter les rôles de contenu de chaque étage à l'utilisateur concerné.
 
 
 ## L'authentification automatique
