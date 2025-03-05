@@ -130,7 +130,7 @@ Pour retirer un utilisateur de l'entreprise, dans le menu de gauche,
 -   cliquer sur la corbeille en haut de page
 -   confirmer la suppression
 
-### Créer un rôle de contenu
+## Créer un rôle de contenu
 
 On peut créer des rôles de contenu composés d'étages ou de bâtiments.
 
@@ -154,13 +154,20 @@ Le bâtiment sélectionné s'ajoute aux éventuels bâtiments déjà associés a
 
 ### Rôle de contenu à l'étage
 
+Pour définir un rôle de contenu par étage, chaque étage concerné doit être inclus dans un rôle de contenu.<br />
+
+Pour cela, suivre la procédure de [Rôle de contenu au bâtiment](/docs/access/intro#rôle-de-contenu-au-bâtiment), et cliquer sur "Créer une association du rôle de contenu à l'étage" afin de choisir l'étage concerné, puis valider.<br />
+Pour visualiser le bâtiment complet, il faut alors intégrer tous les étages d'un bâtiment dans un rôle de contenu spécifique, ou ajouter les rôles de contenu de chaque étage à l'utilisateur concerné.
 
 
 ## L'authentification automatique
 
 
 -   cliquer sur "Administration" puis "Authentification" et "Créer une règle d'authentification".
--   cliquer sur l'icône "Crayon" de la "connection d'authentification" afin de choisir le type de connexion
+-   cliquer sur l'icône "Crayon" de la "connection d'authentification" afin de choisir le type de connexion (par OFFICE365, GOOGLE ou COMPTE SURFY)
+-   choisir le rôle à donner pour les utilisateurs à venir.
+-   choisir le rôle de contenu visible aux collaborateurs à venir.
+-   associer (ou non) le rôle de contenu lors de la connection par authentification.
 
 ## L'accès ENTREPRISE
 
