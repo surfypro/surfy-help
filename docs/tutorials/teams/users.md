@@ -1,6 +1,6 @@
 # Guide d'Utilisateur
 
-Bienvenue dans votre guide de démarrage rapide pour l'application Surfy, conçu pour révolutionner la façon dont vous gérez votre environnement de travail au quotidien. Surfy est une application innovante qui digitalise les plans des bâtiments, offrant une gestion simplifiée de votre espace de travail. Voici comment vous pouvez tirer le meilleur parti de Surfy.
+Bienvenue dans votre guide de démarrage rapide pour l'application Surfy, conçue pour révolutionner la façon dont vous gérez votre environnement de travail au quotidien. Surfy est une application innovante qui digitalise les plans des bâtiments, offrant une gestion simplifiée de votre espace de travail. Voici comment vous pouvez tirer le meilleur parti de Surfy.
 
 ## Disponibilité de l'Application
 

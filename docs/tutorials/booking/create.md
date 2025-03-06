@@ -8,7 +8,7 @@ sidebar_position: 1
 
 ## Réserver depuis l'application Surfy
 
-Dans Surfy, on peut réserver un poste de travail dans un quartier, à la journée ou demi-journée.
+On peut réserver un poste de travail dans Surfy, à la journée ou demi-journée.
 Pour accéder à un quartier de réservation, il est nécessaire d'être affecté au préalable à ce quartier.
 On peut alors réserver un poste de travail (ou déclarer un télétravail) à la demi-journée ou à la journée.
 
@@ -16,7 +16,7 @@ Pour cela,
 
 -   cliquer sur l'icone "Gérer mon planning des prochaines semaines" en haut à gauche de l'écran, juste au dessus de la loupe de recherche, ou bien dans le menu de gauche cliquer sur "Planning", puis "Emplacement de travail des personnes", puis "Gérer mon planning des prochaines semaines".
 
-Les dates des 30 prochains jours s'affichent et permettent la réservation dans le quartier autorisé.
+Les dates des X prochains jours (X étant configurable) s'affichent et permettent la réservation dans le quartier autorisé.
 
 -   cliquer sur l'icone en face de la date désirée, pour réserver en journée ou demi-journée
 -   pour déclarer un télétravail, cliquer sur "Télétravail" dans la période voulue.
