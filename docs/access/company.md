@@ -5,7 +5,7 @@ sidebar_position: 4
 
 Pour accéder à la plateforme de votre entreprise via l'accès ENTREPRISE, il est nécessaire que l'entreprise ait configuré un accès spécifique avec Surfy.<br />
 Si c'est le cas, vous pouvez suivre la procédure ci dessous.<br />
-Si ce n'est pas le cas mais que votre entreprise est utilisatrice de Surfy, utiliser les accès établis par votre entreprise (OFFICE365, GOOGLE ou Compte SURFY)<br />
+Si ce n'est pas le cas mais que votre entreprise est utilisatrice de Surfy, utiliser les accès établis par votre entreprise ([OFFICE365](/docs/access/office365), [GOOGLE](/docs/access/google) ou [Compte SURFY](/docs/access/surfy))<br />
 
 ## Création du compte d'entreprise
 
