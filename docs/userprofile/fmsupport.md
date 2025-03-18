@@ -13,10 +13,9 @@ Son utilisation offre plusieurs bénéfices en proposant des fonctionnalités in
 ✅ Meilleure collaboration entre les services via un partage efficace des informations.<br />
 
 
-
 ## Ressources Humaines (RH)
 
-Gestion des espaces et des effectifs
+Gestion des espaces et des effectifs.
 
 ✅ Connexion possible au SIRH pour une mise à jour fluide des entrants, sortants, informations complémentaires, avec gestion des externes.<br />
 ✅ Affectation des collaborateurs aux postes de travail : permet d’assigner des employés à des bureaux spécifiques pour optimiser l’organisation des équipes.<br />
@@ -57,6 +56,16 @@ Sécurisation et gestion des accès
 ✅ Gestion des règles de distanciation et de conformité : adaptation rapide des affectations en fonction des nouvelles normes (ex. post-COVID).<br />
 
 
+## Sécurité
+
+Surfy met un accent particulier sur la santé et la sécurité des personnes en offrant des outils intégrés pour assurer une sécurité optimale et garantir la conformité réglementaire.<br />
 
 
-EN COURS DE CONSTRUCTION
+Principales fonctionnalités de sécurité proposées par Surfy :
+
+✅ Plans d'évacuation digitaux conformes à la norme ISO 7010 : Ces plans assurent une communication claire lors des évacuations, incluant des itinéraires adaptés aux personnes à mobilité réduite.<br /> 
+✅ Localisation des équipements de secours : Surfy permet de localiser précisément les équipements de premier secours, tels que les extincteurs et les défibrillateurs, garantissant une réactivité optimale en cas d'urgence.<br />
+✅ Identification des Équipiers Locaux de Sécurité (ELS) : La plateforme facilite l'identification et la localisation des ELS, tels que les guides-file et serre-file, essentiels pour une évacuation efficace.<br /> 
+✅ Gestion des profils de sécurité : Surfy offre la possibilité de créer et d'attribuer des profils de sécurité aux collaborateurs, permettant une visualisation sur les plans et une gestion efficace des responsabilités en matière de sécurité.<br />
+
+En intégrant ces fonctionnalités, Surfy contribue activement à la protection des personnes et des biens au sein des environnements de travail, en assurant une gestion efficace des risques et une conformité aux réglementations en vigueur.
