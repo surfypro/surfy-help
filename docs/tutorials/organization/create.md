@@ -10,10 +10,10 @@ On ne peut rattacher un espace, une personne ou un poste de travail qu'à un Ser
 :::
 
 Utiliser les organisations permet de rattacher les espaces à des Services rapportant eux-mêmes à des Directions.
-On peut alors visualiser la qualification des espaces en couleurs sur les plans et obtenir les données cumulées, par Service ou par Direction.
+On peut alors visualiser la qualification des espaces en couleurs sur les plans et obtenir les [données cumulées, par Service ou par Direction](/docs/tutorials/organization/edit.md#visualiser-les-organisations-sur-les-plans).
 
 Les personnes et les postes de travail peuvent également être rattachés à des Services.
-On peut ensuite lister les personnes ou les postes de travail par organisation dans les listes filtrées ou dans les rapports de données, ou savoir à quelle organisation une personne est rattachée.
+On peut ensuite lister les personnes ou les postes de travail par organisation dans les listes filtrées ou dans les rapports de données, ou savoir à quelle organisation une personne est  en recherchant sa fiche avec la loupe.
 
 
 <Youtube code="bvOEaYs1prg"/>
@@ -23,24 +23,19 @@ On peut ensuite lister les personnes ou les postes de travail par organisation d
 ## Hiérarchie des organisations
 
 -   Un Service est toujours rattaché à une Direction.
--   Une organisation qui n'a pas de Direction est elle même une Direction.
--   Une Direction n'est jamais rattachée à une Direction.
+-   Une organisation qui n'a pas de Direction est, de fait, elle même une Direction.
+-   Une Direction ne doit jamais être rattachée à une Direction.
 -   Seuls les Services sont proposés au rattachement des espaces, personnes ou postes de travail.
 
 
 ### Hiérarchiser les organisations dans Surfy :
 
-Pour créer la hiérachie entre les organisations, Surfy utilise deux termes:
-
--   L'organisation Mère : C'est la Direction du Service
--   L'organisation Fille : C'est le Service de la Direction
-
-Un "Service" a une Direction (une organisation Mère) mais pas de Service rattaché (pas d'organisation Fille)                                  
-Une "Direction" peut avoir des Services rattachés (organisations Filles éventuelles) mais pas de Direction (pas d'organisation Mère) 
+Un "Service" a une Direction mais pas de Service rattaché                                  
+Une "Direction" peut avoir des Services rattachés mais pas de Direction
 
 
 :::warning Important
-Une organisation ne peut pas avoir une "organisation Mère" ET une ou des "organisations Filles".                                        
+Une organisation ne peut pas avoir une "Direction" ET un ou des "Services".                                        
 En effet, dans ce cas l'organisation n'est ni une Direction, parce qu'elle a elle-même une Direction, ni un Service parce qu'elle a elle-même des Services. L'organisation n'étant pas clairement définie, cela fausse la base de données dans Surfy ainsi que l'affichage sur les plans.
 :::
 
@@ -52,21 +47,21 @@ Pour visualiser la hiérarchie des organisations dans Surfy, depuis le menu de g
 
 ## Créer une Direction
 
-Une Direction n'a PAS d'"Organisation Mère" et peut avoir des "Organisations Filles".
+Une Direction n'a PAS de "Direction" et peut avoir des "Services".
 
 Pour créer une Direction, depuis le menu de gauche,
 
 -   cliquer sur "organisations", "organisations" puis "créer une organisation" (ou cliquer sur le menu contextuel puis "créer une organisation" si déjà sur la page des organisations)
 -   renseigner le nom de la Direction et sa <P code="organization:color"/>
--   ne pas renseigner d'"organisation Mère", laisser le champ vide.
+-   ne pas renseigner de "Direction", laisser le champ vide.
 -   valider la création
 
-L'organisation créée est considérée comme étant une Direction (pas d'organisation Mère)
+L'organisation créée est considérée comme étant une Direction
 En affichant la "Hiérarchie des Organisations", cette Direction apparait en tête de bloc et sera suivi des Services rattachés à cette Direction. Si aucun Service n'est encore associé à cette Direction, le bloc n'est pas créé et seule la Direction est affichée.
 
 ## Créer un Service
 
-Un Service a obligatoirement une "Organisation Mère" et n'a PAS d'"Organisation Fille".
+Un Service a obligatoirement une "Direction" et n'a PAS de "Service".
 
 Pour créer un Service, sa Direction doit d'abord avoir été créée dans Surfy. 
 
@@ -77,19 +72,19 @@ Une fois la Direction créée, pour créer un Service, depuis le menu de gauche,
 -   renseigner la Direction du Service en cliquant sur le crayon de l'"Organisation Mère" et en sélectionnant une Direction
 -   valider la création
 
-L'organisation créée est considérée comme étant un Service (Organisation Mère présente)
+L'organisation créée est considérée comme étant un Service (Direction présente)
 En affichant la "Hiérarchie des Organisations", ce Service apparait dans le bloc de sa Direction de rattachement.
 
 
 ## Lister les Organisations
 
-Lister les organisations permet notamment de vérifier qu'aucune organisation n'est rattachée en même temps à une "Organisation Mère" et à une ou plusieurs "organisations Filles".
+Lister les organisations permet notamment de vérifier qu'aucune organisation n'est rattachée en même temps à une "Direction et à une ou plusieurs "Services".
 La liste permet également de modifier chaque organisation en cliquant sur l'icône en début de ligne de l'organisation concernée.
 
 Pour lister les organisations, depuis le menu de gauche,
 
 -   cliquer sur "organisations", "organisations" puis "lister les organisations" (ou cliquer sur le menu contextuel puis "lister les organisations" si déjà sur la page des organisations)
--   la liste donne les organisations Mère et Filles pour chaque organisation
+-   la liste donne la Direction ou les Services pour chaque organisation
 
 
 ## Rattacher une organisation à une entité

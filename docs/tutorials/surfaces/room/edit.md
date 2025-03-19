@@ -40,7 +40,7 @@ L'icône "goutte" au dessus du plan permet d'"activer la transparence des couleu
 On peut géolocaliser et accéder à la fiche d'un espace de plusieurs façons :
 
 -   par la loupe en effectuant une recherche puis en cliquant sur l'espace recherché
--   par la [liste filtrée](/docs/courses/find/listfindcourse) des espaces ("Espaces", "Espaces", "Lister les espaces" puis "filtrer les espaces")
+-   par la [liste filtrée](/docs/courses/find/listfindcourse.md) des espaces ("Espaces", "Espaces", "Lister les espaces" puis "filtrer les espaces")
 -   par l'affectation de la personne en cliquant dans l'espace de la personne affectée
 
 
@@ -57,7 +57,7 @@ Ces sommets doivent être positionnés sur les segments de l'espace.
 
 ### Créer les sommets pour la séparation
 
--   accéder à l'espace à séparer
+-   accéder à l'étage de l'espace à séparer
 -   "activer le mode édition du plan" en cliquant sur l'icône "crayon" au dessus du plan de l'étage
 -   cliquer dans l'espace à séparer
 -   cliquer sur l'icône "+" noire au dessus du plan afin d'"ajouter un sommet sur un segment".
@@ -68,7 +68,7 @@ Il se colorie en rouge lors du passage de la souris et permet alors d'ajouter le
 -   zoomer sur le segment
 -   au passage de la souris sur le segment celui ci passe en rouge et affiche un cercle rouge pour créer un sommet. 
 -   cliquer dans le cercle pour créer le sommet.
--   renouveller l'opération pour créer le deuxième sommet
+-   renouveller l'opération pour créer le deuxième sommet sur l'autre segment à séparer
 -   cliquer sur l'icône "arrêter l'ajout d'un sommet sur un segment" au dessus du plan
 
 ### Séparer l'espace

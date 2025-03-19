@@ -22,13 +22,15 @@ L'icône "Ajouter un espace" n'apparait que si aucun espace ni aucun objet n'est
 -   cliquer pour créer le premier sommet de l'espace. La possibilité d'avoir un trait horizontal, à 45 degrés ou vertical est annulée en appuyant sur la touche "Shift", ce qui permet de libérer complètement l'emplacement de création du sommet suivant.
 -   en zoomant et dézoomant, placer la souris à l'endroit désiré et cliquer pour créer le deuxième sommet.
 -   de même, cliquer pour créer le troisième sommet. Surfy propose de clore l'espace ou de continuer à créer des sommets.
--   pour clore l'espace, cliquer pour créer le dernier sommet puis "sauvegarder l'espace en cours".
+-   pour clore l'espace, cliquer pour créer le dernier sommet puis sur l'icone "disquette" au dessus du plan pour "sauvegarder l'espace en cours".
 -   l'espace est créé et la fiche de l'espace indique sa surface et son périmètre.
 
 ## Qualifier un espace
 
--   une fois l'espace créé, on doit le "modifier" pour lui donner un nom, une capacité éventuelle, une organisation, une typologie de l'espace, un centre de coût, et toutes les qualifications qui peuvent être renseignées dans les différents calques d'analyse.
--   "sauvegarder" les informations. 
+-   une fois l'espace créé, on doit le "modifier" sur sa fiche à gauche du plan pour lui donner un nom, une capacité éventuelle, une organisation, une typologie de l'espace, un centre de coût.
+-   "sauvegarder" les informations.
+-   compléter éventuellement les qualifications dans les différents calques d'analyse. La sauvegarde de ces informations est automatique.
+
 Il est important de renseigner au moins une qualification d'espace comme la "typologie", afin de donner une couleur aux espaces des plans. 
 Après rafraîchissement, l'espace affiche la couleur de la typologie choisie. Cela permet de savoir quels espaces sont créés et  renseignés.
 

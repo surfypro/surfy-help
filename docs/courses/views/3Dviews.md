@@ -36,10 +36,15 @@ Chaque modification sur le plan 2D est reportée immédiatement sur le plan 3D.
 
 ## Afficher le plan 3D d'un Bâtiment
 
+Outre la visualisation du bâtiment complet en 3D, cette fonctionnalité permet d'accéder au cumul des informations des différents calques pour l'ensemble du bâtiment.
+
 Pour obtenir le plan en 3D d'un bâtiment, depuis la page d'accueil,
 
 -   cliquer sur l'icône en bout de ligne de couleur du bâtiment concerné
 -   sélectionner "le plan en 3D interactif du bâtiment XXX"
+
+Le plan 3D du bâtiment est affiché, et le cumul des informations des calques pour l'ensemble du bâtiment est accessible par les icônes verticales, de la même façon [que pour un étage](/docs/courses/views/2Dviews.md#afficher-les-calques-sur-le-plan).
+
 -   cliquer sur l'icône verticale "engrenage" afin de "voir les options du plan"
 -   sélectionner les étages à afficher dans le bâtiment
 -   choisir le type de représentation des cloisons (avec cloisons, sans cloison ou cloisons à mi-hauteur)

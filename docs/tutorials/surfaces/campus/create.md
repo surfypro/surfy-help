@@ -44,3 +44,7 @@ Les bâtiments non associés à un campus ont leurs accès directs aux étages.
 Les informations suivantes sont disponibles :
 -   Les mesures et indicateurs dans les bâtiments simples
 -   Le nombre de bâtiments regroupés dans le campus, avec accès direct aux étages de chaque bâtiment
+
+:::tip BON A SAVOIR
+Les scénarios ne sont pas accessibles dans la "vue groupée des bâtiments". Pour accéder aux scénarios ou à la vue par bâtiments, cliquer sur le logo de l'entreprise.
+:::

@@ -30,7 +30,7 @@ Cette action est irréversible.
 ## A partir d'un export de Surfy
 
 -   dans le fichier Excel, remplacer le prénom ou le nom de chaque personne à supprimer par le mot "delete" (ou tout autre mot)
--   réimporter la liste des personnes avec leur identifiant ou clé et rafraichir par F5
+-   réimporter la liste des personnes avec leur identifiant Surfy ou clé (matricule ou email) et rafraichir par F5
 -   chaque personne à supprimer a maintenant pour nom ou prénom "delete". 
 -   cliquer sur "Collaborateurs" puis "personnes" et "lister les personnes"
 -   filtrer les noms ou prénoms avec le mot "delete" (ou tout autre mot)

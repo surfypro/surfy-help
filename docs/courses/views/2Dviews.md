@@ -105,6 +105,9 @@ Les espaces regroupés ont leur informations cumulées par calque en cliquant su
 -   "colorier les espaces sur le plan selon les organisations" affiche et donne les cumuls par Service et par Direction
 -   "colorier les espaces et les postes de travail par rapport aux centres de coût" affiche et donne les cumuls par centre de coût, pour les espaces, les postes de travail et les personnes.
 
+:::tip BON A SAVOIR
+On peut visualiser les cumuls des différents calques pour l'ensemble du bâtiment en [visualisant le bâtiment en 3D](/docs/courses/views/3Dviews.md#afficher-le-plan-3d-dun-bâtiment)
+:::
 
 ## Afficher l'état des postes de travail sur le plan
 
