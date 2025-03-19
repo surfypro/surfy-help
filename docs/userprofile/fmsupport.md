@@ -58,6 +58,8 @@ Sécurisation et gestion des accès
 
 ## Sécurité
 
+Plans d'évacuation, localisation des ELS et équipements de sécurité
+
 Surfy met un accent particulier sur la santé et la sécurité des personnes en offrant des outils intégrés pour assurer une sécurité optimale et garantir la conformité réglementaire.<br />
 
 
