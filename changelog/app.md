@@ -3,10 +3,25 @@
 <!-- ## 31 Janvier 2025 - v3.4.61
 
 - Introduction de Surfy Copilot en version Beta pour aider à la création des plans
+-->
+
+## 20 Mars 2025 - v3.4.67
+
+- Amélioration de l'interface avec SAP pour l'import des personnes
+
+## 6 Mars 2025 - v3.4.64
+
+- Ajout des traductions en allemand
+
+## 2 Mars 2025 - v3.4.63
+
+- Les prix sont maintenant affichés avec 2 décimales après la virgule et en info-bulle la valeur exacte est disponible.
+
+## 20 Février 2025 - v3.4.62
+
 - Les types d'objets peuvent être exclus de la création du graphe d'orientation via une option dans les propriétés du type d'objet
 - Les icônes sont toutes exclues de la création du graphe d'orientation 
-- Les prix sont maintenant affichés avec 2 décimales après la virgule et en info-bulle la valeur exacte est disponible.
--->
+
 
 ## 23 Janvier 2025 - v3.4.59
 
