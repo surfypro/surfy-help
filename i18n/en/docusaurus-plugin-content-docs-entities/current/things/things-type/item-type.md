@@ -57,9 +57,9 @@ Allows you to have additional information on the type of object
 *Technical name:* ```description```
 <PH code="itemType:description"/>
 
-### Enable navigation {#exclude-from-pathfinding}
+### Disable navigation {#exclude-from-pathfinding}
 
-Enables navigation for this object type
+If this option is checked, the path search will not take this type of object into account for path creation.
 
 *Technical name:* ```excludeFromPathfinding```
 <PH code="itemType:excludeFromPathfinding"/>

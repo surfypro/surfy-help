@@ -29,13 +29,6 @@ Permet d'identifier rapidement le type d'objet avec un nom complet, logique et d
 
 ## Propriétés de base {#properties-base}
     
-### Activer la navigation {#exclude-from-pathfinding}
-
-Permet d'activer la navigation pour ce type d'objet
-
-*Nom technique:* ```excludeFromPathfinding```
-<PH code="itemType:excludeFromPathfinding"/>
-
 ### Afficher les informations sur le plan {#display-item-reference-in-map}
 
 Permet d’afficher le champ « Référence » de chaque objet sur le plan
@@ -70,6 +63,13 @@ La couleur de fond permet de configurer correctement les icones multi-couleurs, 
 
 *Nom technique:* ```iconBackgroundColor```
 <PH code="itemType:iconBackgroundColor"/>
+
+### Désactiver la navigation {#exclude-from-pathfinding}
+
+Si cette option est coché, la recherche de chemin ne prendra pas en compte ce type d'objet pour la création du chemin
+
+*Nom technique:* ```excludeFromPathfinding```
+<PH code="itemType:excludeFromPathfinding"/>
 
 ### Description {#description}
 
