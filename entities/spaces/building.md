@@ -320,7 +320,7 @@ Le campus est utilisé pour regrouper des bâtiments qui sont au même endroit.
 *Nom technique:* ```buildingType```
 <PH code="building:buildingType"/>
 
-### Utilisateur propriétaire du bâtiment {#user-company-owner}
+### Utilisateur propriétaire du bâitment {#user-company-owner}
 
 L'utilisateur propriétaire du bâtiment voit toujours le bâtiment même en présence de rôle de contenu, en cas de création de scénario, l'utilisateur qui a crée le scénario devient le propriétaire, le propriétaire peut être changé par la suite
 

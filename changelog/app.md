@@ -5,6 +5,12 @@
 - Introduction de Surfy Copilot en version Beta pour aider à la création des plans
 -->
 
+## 2 Avril 2025 - v3.4.70
+
+- Amélioration de l'affichage des bâtiments sur le plan google maps
+- Les uilisateurs ne peuvent être recherchés que par email
+- Il est maintenant possible d'importer des campus via Excel
+
 ## 20 Mars 2025 - v3.4.67
 
 - Amélioration de l'interface avec SAP pour l'import des personnes
