@@ -121,9 +121,11 @@ En ouvrant le "papillon" en bout de ligne de chaque organisation, on obtient les
 
 ### Rattacher un Service à un quartier
 
-Pour rattacher un Service à un quartier, il faut tout d'abord sortir de la navigation par quartier afin de pouvoir accéder à chaque espace du quartier :
+Rattacher un service à un quartier implique de rattacher tous les espaces du quartier à ce service.
 
--   en cliquant sur la croix au bout du bandeau bleu d'information "Vous êtes en navigation par Quartiers, les espaces seront regroupés ensemble lors de la sélection"
+Il faut donc tout d'abord sortir de la navigation par quartier afin de pouvoir accéder à chaque espace du quartier :
+
+-   en cliquant sur l'icône triangulaire au bout du bandeau bleu d'information "Vous êtes en navigation par Quartiers, les espaces seront regroupés ensemble lors de la sélection"
 -   ou en cliquant sur l'icône verticale "Changer la vision du plan" puis sur la vision "Typologies des espaces".
 
 
@@ -132,7 +134,7 @@ On peut ensuite "Modifier" chaque espace pour lui rattacher son Service (voir [R
 Pour revenir ensuite à la navigation par quartier,
 
 -   cliquer sur l'icône "Changer la vision du plan"
--   sélectionner la vision "Calques d'affectation"
+-   sélectionner la vision "Quartiers"
 
 La navigation par quartier est sélectionnée et les espaces du quartier sont rattachés au Service choisi.
 
