@@ -2103,8 +2103,8 @@
                     "description": "Allows you to know if the object type is associable with a person"
                 },
                 "excludeFromPathfinding": {
-                    "label": "Enable navigation",
-                    "description": "Enables navigation for this object type"
+                    "label": "Disable navigation",
+                    "description": "If this option is checked, the path search will not take this type of object into account for path creation."
                 },
                 "createdAt": {
                     "label": "Creation date",

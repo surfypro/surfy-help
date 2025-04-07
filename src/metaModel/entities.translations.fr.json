@@ -2103,8 +2103,8 @@
                     "description": "Permet de savoir si le type d'objet est associable à une personne"
                 },
                 "excludeFromPathfinding": {
-                    "label": "Activer la navigation",
-                    "description": "Permet d'activer la navigation pour ce type d'objet"
+                    "label": "Désactiver la navigation",
+                    "description": "Si cette option est coché, la recherche de chemin ne prendra pas en compte ce type d'objet pour la création du chemin"
                 },
                 "createdAt": {
                     "label": "Date de création",
