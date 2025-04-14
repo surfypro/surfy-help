@@ -96,7 +96,7 @@ Pour attribuer un rôle de contenu à un utilisateur de l'entreprise, dans le me
 -   cliquer sur l'icone "point rouge" en début de ligne de l'utilisateur concerné pour "modifier l'utilisateur de l'entreprise xxxx@xx"
 -   cliquer sur "Rôle de contenu de l'utilisateur de l'entreprise" puis sur "CREER UN ROLE DE CONTENU DE L'UTILISATEUR DE L'ENTREPRISE"
 
-La liste des rôles de contenu disponibles apparait. Si le rôle de contenu désiré n'apparait pas, il faut [Créer un rôle de contenu](docs/access/intro.md#créer-un-rôle-de-contenu)
+La liste des rôles de contenu disponibles apparait. Si le rôle de contenu désiré n'apparait pas, il faut [Créer un rôle de contenu](docs/access/intro.md#créer-un-rôle-de-contenu) afin de pouvoir l'attribuer à l'utilisateur.
 
 -   choisir le rôle de contenu à attribuer à l'utilisateur puis "Valider la création".
 
