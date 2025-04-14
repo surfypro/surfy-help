@@ -48,7 +48,15 @@ L'utilisateur de l'entreprise est créé, il reste à lui attribuer un rôle d'u
 Une fois ces rôles donnés, l'utilisateur peut accéder librement à la plateforme suivant les rôles attribués.
 
 
-## Attribuer un rôle d'utilisateur
+## Le rôle d'utilisateur
+
+Les rôles d'utilisateur sont pré-programmés dans Surfy.<br />
+Ils ne sont pas modifiables par l'administrateur Surfy de l'entreprise.<br />
+Chaque rôle d'utilisateur est créé pour un ensemble de fonctionnalités précises.
+L'administrateur Surfy de l'entreprise peut attribuer des fonctionnalités en cumulant des rôles aux différents utilisateurs depuis une liste exhaustive de rôles.
+
+
+### Attribuer un rôle d'utilisateur
 
 Pour attribuer un rôle d'utilisateur à un utilisateur, depuis le menu de gauche,
 
@@ -71,7 +79,7 @@ Pour accéder aux deux comptes simultanément (admin et tiers), il est nécessai
 :::
 
 
-## Modifier le rôle d'un utilisateur
+### Modifier le rôle d'un utilisateur
 
 Pour modifier le rôle d'un utilisateur de l'entreprise, on peut retirer un rôle puis attribuer un autre rôle plus adapté à son utilisation de Surfy.
 
@@ -84,8 +92,9 @@ Pour retirer un rôle à un utilisateur de l'entreprise,
 -   cliquer sur la corbeille qui apparait
 -   confirmer la suppression
 
+## Le rôle de contenu
 
-## Attribuer un rôle de contenu à l'utilisateur de l'entreprise
+### Attribuer un rôle de contenu à l'utilisateur de l'entreprise
 
 Le rôle de contenu permet de choisir les étages ou bâtiments qui seront visibles par l'utilisateur concerné.
 
@@ -108,7 +117,7 @@ Pour vérifier le bon paramétrage des accès d'un utilisateur, on peut utiliser
 Pour accéder aux deux comptes simultanément (admin et tiers), il est nécessaire d'utiliser deux navigateurs différents ou d'être en navigation privée.
 :::
 
-## Modifier le rôle de contenu d'un utilisateur de l'entreprise
+### Modifier le rôle de contenu d'un utilisateur de l'entreprise
 
 Pour modifier le rôle de contenu d'un utilisateur de l'entreprise, on peut retirer un rôle de contenu et/ou attribuer un autre rôle de contenu plus adapté à son utilisation de Surfy.
 
