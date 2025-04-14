@@ -51,7 +51,7 @@ Une fois ces rôles donnés, l'utilisateur peut accéder librement à la platefo
 
 ## Attribuer un rôle d'utilisateur
 
-Pour attribuer un rôle d'utilisateur à un utilisateur, dans le menu de gauche,
+Pour attribuer un rôle d'utilisateur à un utilisateur, depuis le menu de gauche,
 
 -   cliquer sur "Administration" puis "Sécurité" et "Utilisateurs de l'entreprise" pour "Lister les utilisateurs de l'entreprise".
 -   cliquer sur l'icone "point rouge" en début de ligne de l'utilisateur concerné pour "modifier l'utilisateur de l'entreprise xxxx@xx"
@@ -174,6 +174,16 @@ L'utilisateur retiré de son entreprise est toujours potentiellement réattribua
 
 ## L'authentification automatique
 
+L'authentification automatique permet d'accorder automatiquement l'accès à une plateforme aux futurs utilisateurs, si ceux-ci remplissent les conditions nécessaires :
+
+-   Email avec un nom de domaine précisé dans l'authentification automatique
+-   Type de connexion conforme au choix indiqué dans l'authentification automatique
+
+L'utilisateur a alors directement accès à la plateforme, suivant les droits précisés dans l'authentification automatique.
+
+### Créer une règle d'authentification automatique
+
+Pour créer une règle d'authentification, depuis le menu de gauche,
 
 -   cliquer sur "Administration" puis "Authentification" et "Créer une règle d'authentification".
 -   cliquer sur l'icône "Crayon" de la "connection d'authentification" afin de choisir le type de connexion :
@@ -193,3 +203,4 @@ On peut alors associer un rôle d'utilisateur et un rôle de contenu éventuel p
 -    cliquer sur "Associations de règle d'authentification à contenu" puis "CREER UNE ASSOCIATION DE REGLE D'AUTHENTIFICATION A CONTENU" pour choisir le rôle de contenu visible aux collaborateurs acceptés.
 
 Si aucun rôle de contenu n'est associé, les utilisateurs acceptés auront accès à tous les bâtiments de la plateforme.
+Si aucun rôle d'utilisateur n'est associé, ou si la case "Associer automatiquement les rôles" n'est pas cochée, l'utilisateur est accepté sur la plateforme mais ne peut pas accéder à celle-ci tant que l'administrateur ne lui a pas donné de rôle d'utilisateur.
