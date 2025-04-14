@@ -202,5 +202,5 @@ On peut alors associer un rôle d'utilisateur et un rôle de contenu éventuel p
 -   cliquer sur "Associations de règle d'authentification à rôle" puis "CREER UNE ASSOCIATION DE REGLE D'AUTHENTIFICATION A ROLE" pour choisir le rôle d'utilisateur aux collaborateurs acceptés.
 -    cliquer sur "Associations de règle d'authentification à contenu" puis "CREER UNE ASSOCIATION DE REGLE D'AUTHENTIFICATION A CONTENU" pour choisir le rôle de contenu visible aux collaborateurs acceptés.
 
-Si aucun rôle de contenu n'est associé, les utilisateurs acceptés auront accès à tous les bâtiments de la plateforme.
+Si aucun rôle de contenu n'est associé, les utilisateurs acceptés auront accès à tous les bâtiments de la plateforme.<br />
 Si aucun rôle d'utilisateur n'est associé, ou si la case "Associer automatiquement les rôles" n'est pas cochée, l'utilisateur est accepté sur la plateforme mais ne peut pas accéder à celle-ci tant que l'administrateur ne lui a pas donné de rôle d'utilisateur.
