@@ -4,15 +4,9 @@ sidebar_position: 0
 
 # L'accès à Surfy
 
-## Qui peut accéder à Surfy ?
-
-On accède à la plateforme Surfy d'un entreprise en créant un compte sécurisé validé par l'entreprise.
-Les fonctionnalités accessibles sont déterminées par l'entreprise, en fonction des droits réservés à l'utilisateur.
-Le contenu visible est également déterminé par l'entreprise en fonction de l'utilisateur.
-
 ## Le mode SaaS
 
-Le SaaS, ou Sorfware as a Service, est un modèle de licence et de distribution utilisé pour fournir des applications logicielles sur Internet, comme un service. Les utilisateurs accèdent aux applications par un abonnement.
+Un SaaS, ou Software as a Service, est un modèle de licence et de distribution utilisé pour fournir des applications logicielles sur Internet, comme un service. Les utilisateurs accèdent aux applications par un abonnement.
 
 L'accès à Surfy se fait en mode SaaS. L'application et les données sont hébergées en France sur les serveurs de Microsoft Azure.
 
@@ -20,6 +14,11 @@ L'accès à Surfy se fait en mode SaaS. L'application et les données sont hébe
 
 [Pourquoi la sécurité des données est notre priorité](https://www.surfy.pro/security)
 
+## Qui peut accéder à Surfy ?
+
+Le futur utilisateur accède à la plateforme Surfy de son entreprise en créant un compte sécurisé validé par l'entreprise.
+Les fonctionnalités accessibles sont déterminées par l'entreprise, en fonction des droits réservés à l'utilisateur.
+Le contenu visible est également déterminé par l'entreprise en fonction de l'utilisateur.
 
 ## Créer un utilisateur
 
