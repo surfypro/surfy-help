@@ -30,19 +30,19 @@ A workplace of people defines the workplace of people
 
 ## Associated entities (unique) {#properties-belongs-to}
 
-###  Working Location {#working-location}
-
-
-
-*Technical name:* ```workingLocation```
-<PH code="personWorkingLocation:workingLocation"/>
-
 ### Person {#person}
 
 These are the people entered into Surfy's database
 
 *Technical name:* ```person```
 <PH code="personWorkingLocation:person"/>
+
+### Work location {#working-location}
+
+A workplace defines where people work
+
+*Technical name:* ```workingLocation```
+<PH code="personWorkingLocation:workingLocation"/>
 
 
 ## Associated entities (list) {#properties-has-many}

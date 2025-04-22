@@ -85,6 +85,13 @@ Le bâtiment est utilisé pour regrouper les étages
 *Nom technique:* ```buildings```
 <PH code="company:buildings"/>
 
+### Emplacements de travail de l'entreprise {#company-working-locations}
+
+Un emplacement de travail de l'entreprise permet de personnaliser pour une entreprise les lieux de travail des personnes pour la réservation
+
+*Nom technique:* ```companyWorkingLocations```
+<PH code="company:companyWorkingLocations"/>
+
 ### Types de bâtiments {#building-types}
 
 

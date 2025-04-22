@@ -471,6 +471,20 @@ Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces d
 *Nom technique:* ```mapScaleUpdatedBies```
 <PH code="userCompany:mapScaleUpdatedBies"/>
 
+### Emplacements de travail de l'entreprise {#company-working-location-created-bies}
+
+Un emplacement de travail de l'entreprise permet de personnaliser pour une entreprise les lieux de travail des personnes pour la réservation
+
+*Nom technique:* ```companyWorkingLocationCreatedBies```
+<PH code="userCompany:companyWorkingLocationCreatedBies"/>
+
+### Emplacements de travail de l'entreprise {#company-working-location-updated-bies}
+
+Un emplacement de travail de l'entreprise permet de personnaliser pour une entreprise les lieux de travail des personnes pour la réservation
+
+*Nom technique:* ```companyWorkingLocationUpdatedBies```
+<PH code="userCompany:companyWorkingLocationUpdatedBies"/>
+
 ### Emplacements de travail des personnes {#person-working-location-created-bies}
 
 Un emplacement de travail des personnes définie le lieu de travail des personnes

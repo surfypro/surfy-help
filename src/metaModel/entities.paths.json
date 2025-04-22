@@ -36,6 +36,7 @@
         "personToWorkplaceBooking": "/entities/planning/bookings",
         "personToRoomBooking": "/entities/planning/bookings",
         "personToDimensionBooking": "/entities/planning/bookings",
+        "companyWorkingLocation": "/entities/planning/planning-admin",
         "buildingType": "/entities/admin/types",
         "distributionCostType": "/entities/admin/types",
         "costCenter": "/entities/admin/types",

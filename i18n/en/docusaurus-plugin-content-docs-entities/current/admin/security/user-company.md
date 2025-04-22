@@ -408,6 +408,20 @@ The campus is used to group buildings that are in the same location.
 *Technical name:* ```jupUserCompanyToJupRoleUpdatedBies```
 <PH code="userCompany:jupUserCompanyToJupRoleUpdatedBies"/>
 
+### Company work locations {#company-working-location-created-bies}
+
+A company work location allows a company to customize people's work locations for booking
+
+*Technical name:* ```companyWorkingLocationCreatedBies```
+<PH code="userCompany:companyWorkingLocationCreatedBies"/>
+
+### Company work locations {#company-working-location-updated-bies}
+
+A company work location allows a company to customize people's work locations for booking
+
+*Technical name:* ```companyWorkingLocationUpdatedBies```
+<PH code="userCompany:companyWorkingLocationUpdatedBies"/>
+
 ### Content roles {#content-role-created-bies}
 
 

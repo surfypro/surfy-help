@@ -258,8 +258,8 @@
                 "description": "Les types de calques d'affectation du bâtiment permettent de définir les différents types de calques d'affectation du bâtiment. En associant un type de calque d'affectation à un bâtiment, cela permet de transformer un calque d'analyse en calque d'affectation."
             },
             "workingLocation": {
-                "label": " Working Location",
-                "description": null
+                "label": "Emplacement de travail",
+                "description": "Un emplacement de travail définit le lieu de travail des personnes"
             },
             "personWorkingLocation": {
                 "label": "Emplacement de travail des personnes",
@@ -300,6 +300,10 @@
             "openerPostMessageHost": {
                 "label": "Hôte de message pour fenêtre contextuelle",
                 "description": "Un hôte de message pour fenêtre contextuelle est un élément qui permet de communiquer avec une fenêtre contextuelle ouverte sur les actions du plan"
+            },
+            "companyWorkingLocation": {
+                "label": "Emplacement de travail de l'entreprise",
+                "description": "Un emplacement de travail de l'entreprise permet de personnaliser pour une entreprise les lieux de travail des personnes pour la réservation"
             },
             "jupObjectType": {
                 "label": "Type d'entité",
@@ -635,6 +639,10 @@
                 "buildings": {
                     "label": "Bâtiments",
                     "description": "Le bâtiment est utilisé pour regrouper les étages"
+                },
+                "companyWorkingLocations": {
+                    "label": "Emplacements de travail de l'entreprise",
+                    "description": "Un emplacement de travail de l'entreprise permet de personnaliser pour une entreprise les lieux de travail des personnes pour la réservation"
                 }
             },
             "campus": {
@@ -1423,6 +1431,14 @@
                 "openerPostMessageHostUpdatedBies": {
                     "label": "Hôtes de messages pour fenêtre contextuelle",
                     "description": "Un hôte de message pour fenêtre contextuelle est un élément qui permet de communiquer avec une fenêtre contextuelle ouverte sur les actions du plan"
+                },
+                "companyWorkingLocationCreatedBies": {
+                    "label": "Emplacements de travail de l'entreprise",
+                    "description": "Un emplacement de travail de l'entreprise permet de personnaliser pour une entreprise les lieux de travail des personnes pour la réservation"
+                },
+                "companyWorkingLocationUpdatedBies": {
+                    "label": "Emplacements de travail de l'entreprise",
+                    "description": "Un emplacement de travail de l'entreprise permet de personnaliser pour une entreprise les lieux de travail des personnes pour la réservation"
                 },
                 "contentRoleCreatedBies": {
                     "label": "Rôles de contenu",
@@ -5182,6 +5198,10 @@
                     "label": "Non Affectable",
                     "description": "La personne ne peut pas être affectée à un poste de travail, un espace, un bâtiment ou un calque d'affectation"
                 },
+                "notAffectableEndDate": {
+                    "label": "Date de fin de la non affectabilité",
+                    "description": "La date de fin du comportement non affectable de la personne"
+                },
                 "createdAt": {
                     "label": "Date de création",
                     "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
@@ -6795,6 +6815,10 @@
                 "personWorkingLocations": {
                     "label": "Emplacements de travail des personnes",
                     "description": "Un emplacement de travail des personnes définie le lieu de travail des personnes"
+                },
+                "companyWorkingLocations": {
+                    "label": "Emplacements de travail de l'entreprise",
+                    "description": "Un emplacement de travail de l'entreprise permet de personnaliser pour une entreprise les lieux de travail des personnes pour la réservation"
                 }
             },
             "personWorkingLocation": {
@@ -6831,12 +6855,12 @@
                     "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "workingLocationId": {
-                    "label": "Id ( Working Location)",
-                    "description": null
+                    "label": "Id (Emplacement de travail)",
+                    "description": "Un emplacement de travail définit le lieu de travail des personnes"
                 },
                 "workingLocation": {
-                    "label": " Working Location",
-                    "description": null
+                    "label": "Emplacement de travail",
+                    "description": "Un emplacement de travail définit le lieu de travail des personnes"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -7423,6 +7447,56 @@
                 "company": {
                     "label": "Entreprise",
                     "description": null
+                }
+            },
+            "companyWorkingLocation": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": null
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": null
+                },
+                "workingLocationId": {
+                    "label": "Id (Emplacement de travail)",
+                    "description": "Un emplacement de travail définit le lieu de travail des personnes"
+                },
+                "workingLocation": {
+                    "label": "Emplacement de travail",
+                    "description": "Un emplacement de travail définit le lieu de travail des personnes"
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
                 }
             },
             "jupObjectType": {

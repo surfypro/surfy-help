@@ -92,6 +92,13 @@ Enterprise users have access to their company's Surfy platform
 *Technical name:* ```userCompanies```
 <PH code="company:userCompanies"/>
 
+### Company work locations {#company-working-locations}
+
+A company work location allows a company to customize people's work locations for booking
+
+*Technical name:* ```companyWorkingLocations```
+<PH code="company:companyWorkingLocations"/>
+
 ### Types of buildings {#building-types}
 
 
