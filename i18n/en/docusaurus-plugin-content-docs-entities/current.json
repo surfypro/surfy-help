@@ -134,5 +134,9 @@
   "sidebar.help-sidebar.category.help": {
     "message": "Assistance",
     "description": "The label for category help in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.planning-admin": {
+    "message": " Schedule administration",
+    "description": "no-description"
   }
 }

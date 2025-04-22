@@ -64,6 +64,13 @@ The person's email
 *Technical name:* ```email```
 <PH code="person:email"/>
 
+### End date of non-assignability {#not-affectable-end-date}
+
+The end date of the person 's unassignable behavior
+
+*Technical name:* ```notAffectableEndDate```
+<PH code="person:notAffectableEndDate"/>
+
 ### Entry date {#start-date}
 
 The date the person joined the company

@@ -30,9 +30,9 @@ Un emplacement de travail des personnes définie le lieu de travail des personne
 
 ## Entités associées (unique) {#properties-belongs-to}
 
-###  Working Location {#working-location}
+### Emplacement de travail {#working-location}
 
-
+Un emplacement de travail définit le lieu de travail des personnes
 
 *Nom technique:* ```workingLocation```
 <PH code="personWorkingLocation:workingLocation"/>

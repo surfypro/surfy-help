@@ -50,6 +50,13 @@ La date d'entrée de la personne dans l'entreprise
 *Nom technique:* ```startDate```
 <PH code="person:startDate"/>
 
+### Date de fin de la non affectabilité {#not-affectable-end-date}
+
+La date de fin du comportement non affectable de la personne
+
+*Nom technique:* ```notAffectableEndDate```
+<PH code="person:notAffectableEndDate"/>
+
 ### Date de sortie {#end-date}
 
 La date de sortie de la personne de l'entreprise
