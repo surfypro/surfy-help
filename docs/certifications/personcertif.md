@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Certification "Gestionnaire des personnes"
 
-Durée de l'évaluation : 2 heures
+Durée de l'évaluation : 2 heures.
 
 La certification "Gestionnaire des personnes" implique la maîtrise de la création, qualification, modification, affectation (à un poste de travail, un espace, un bâtiment ou un quartier), association (à un objet) des personnes manuellement ou par importation en masse.
 
