@@ -3,14 +3,14 @@
 <!-- ## 22 Avril 2025 - v3.4.81
 
 - Amélioration de l'interface de réservation des postes de travail
-    - Mise en place d'une entité <OT code="companyWorkingLocation"/> dans le menu planning/administration des plannings, permettant d'ajouter un emplacement de travail par entreprise. Pour utiliser uniquement certains emplacements de travail pour la réservation des postes de travail en flex, l'entreprise doit posséder des emplacements de travail. Sinon, tous les emplacements de travail seront utilisés pour la réservation.
-    - Mise en place d'une vue dans planning/emplacement de travail des personnes pour voir les réservations sur un plan, permettant de visualiser où se trouvent les personnes ayant réservé un poste de travail avec une navigation par date et par étage.
-        - Mise en place d'un petit moteur de recherche dans cette page permettant de localiser un collègue sur le plan et voir son planning. Cette fonctionnalité est aussi accessible depuis l'application Teams.
-    - Ajout de l'icone du profil de sécurité des personnes sur les info bulles des personnes sur les plans des réservations.
+    - Mise en place d'une entité <OT code="companyWorkingLocation"/> dans le menu "planning"/"administration des plannings", permettant d'ajouter un emplacement de travail par entreprise. Pour utiliser uniquement certains emplacements de travail pour la réservation des postes de travail en flex, l'entreprise doit posséder des emplacements de travail. Sinon, tous les emplacements de travail seront utilisés pour la réservation.
+    - Mise en place d'une vue dans "planning"/"emplacement de travail des personnes" pour voir les réservations sur un plan, permettant de visualiser où se trouvent les personnes ayant réservé un poste de travail avec une navigation par date et par étage.
+    - Mise en place d'un moteur de recherche dans cette page permettant de localiser un collègue sur le plan et voir son planning. Cette fonctionnalité est aussi accessible depuis l'application Teams.
+    - Ajout de l'icone du profil de sécurité des personnes sur les info-bulles des personnes sur les plans des réservations.
     - Lors de l'affichage du poste de travail réservé par une personne dans le planning, tous les postes de travail réservables sont affichés au lieu de seulement les postes de travail de l'espace du poste de travail.
 - Ajout d'icônes supplémentaires pour les équipements audio/vidéo des salles de réunion.
 - Ajout d'une nouvelle propriété <P code="person:notAffectableEndDate"/>
-- Ajout d'un nouveau rapport de qualité des données permettant de lister les personnes dont la date de fin d'affectabilité est expirées -->
+- Ajout d'un nouveau rapport de qualité des données permettant de lister les personnes dont la date de fin d'affectabilité est expirée -->
 
 <!-- ## 31 Janvier 2025 - v3.4.61
 - Introduction de Surfy Copilot en version Beta pour aider à la création des plans
