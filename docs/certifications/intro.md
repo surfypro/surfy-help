@@ -12,54 +12,74 @@ Plusieurs niveaux de certification sont possibles:
 
 ## Certification Intégrateur
 
-La certification "Intégrateur" implique la maîtrise de l'ensemble des fonctionnalités relatives à la digitalisation des plans dans Surfy. Elle se compose de deux chapitres, "Digitalisation des espaces" et "Gestion du mobilier".
+•	<strong>Objectif :</strong> Maîtriser la digitalisation des plans et la gestion du mobilier dans Surfy. 
 
-### Digitalisation des espaces
+•	<strong>Tutoriels recommandés :</strong>
 
-Durée de l'évaluation : 2 heures
+    o	Digitalisation des espaces :
 
-La validation "Digitalisation des espaces" implique la maîtrise de la création et de la maintenance des plans, de la création d'un bâtiment aux modifications de cloisons et de passages, des qualifications des espaces par import en masse.
+        	Création et maintenance des plans.<br />
+        	Création et modification de cloisons et de passages.<br />
+        	Ajout d'informations telles que nomenclature, typologie des espaces, calques d'analyse, organisations, centres de coût.<br />
+        	Qualification des espaces par import en masse.<br />
 
-Le candidat digitalise le plan png fourni par Surfy et le complète par les informations demandées (nomenclature, typologie des espaces, calques d'analyse, organisations, centres de coût), dans le temps imparti.
+    o	Gestion du mobilier :
 
-Voir le [cours sur la digitalisation des espaces](/docs/courses/digitalize/digicourse#digitaliser-un-bâtiment).
+        	Création de types d'objet à l'échelle et sous forme d'icône.<br />
+        	Création de types de poste de travail.<br />
+        	Placement et référencement des objets et postes de travail sur le plan.<br />
+        	Gestion de l'inventaire par familles de type d'objet.<br />
+        	Association d'objets à des personnes.<br />
+        	Import/export en masse des données liées au mobilier.<br />
 
-
-### Gestion du mobilier
-
-Durée d'évaluation : 2 heures
-
-La validation "Gestion du mobilier" implique la maîtrise de la création de types d'objet à l'échelle et sous forme d'icône, ainsi que la création de types de poste de travail. Elle concerne également le placement des objets et postes de travail sur le plan ainsi que leur référencement et leur qualification, la gestion de l'inventaire par familles de type d'objet, l'association d'objet à personne et l'import/export en masse de ces données.
-
-Le candidat crée les types d'objet et les types de poste de travail demandés, place et référence les objets sur le plan suivant l'implantation fournie, dans le temps imparti.
-
-Voir le [cours sur l'aménagement des espaces](/docs/courses/digitalize/digicourse#aménager-les-espaces)
 
 
 ## Certification Gestionnaire des personnes
 
-Durée d'évaluation : 2 heures
+•	<strong>Objectif :</strong> Gérer efficacement les données relatives aux personnes dans Surfy.
 
-La certification "Gestionnaire des personnes" implique la maîtrise de la création, qualification, modification, affectation (à un poste de travail, un espace, un bâtiment ou un quartier), association (à un objet) des personnes manuellement ou par importation en masse, ainsi que l'exploitation des données générées par fichier Excel.
+•	<strong>Tutoriels recommandés :</strong>
 
-Le cours associé à la [gestion des personnes](/docs/courses/occupy/occupycourse#affectation-des-personnes)
+    	Création, qualification, modification et affectation des personnes à un poste de travail, espace, quartier ou bâtiment.<br />
+    	Association des personnes à des objets.<br />
+       Gestion de la hiérachie entre personnes.<br />
+    	Importation en masse des données relatives aux personnes.<br />
+    	Exploitation des données générées via des fichiers Excel.<br />
+
 
 ## Certification Gestionnaire de la réservation
 
-Durée d'évaluation : 2 heures
+•	<strong>Objectif :</strong> Maîtriser les fonctionnalités de réservation dans Surfy. 
 
-La certification "Gestionnaire de la réservation" implique la maîtrise des calques d'affectation (quartiers), de la qualification des postes de travail (En flex, réservable), de l'affectation des personnes à leur quartier ou bâtiment de réservation, ainsi que de l'exploitation des données et graphiques de réservation.
+•	<strong>Tutoriels recommandés :</strong>
 
-Le cours associé à la [réservation des postes de travail et des espaces](/docs/courses/occupy/occupycourse#mettre-en-place-laffectation-aux-quartiers)
+    	Gestion des calques d'affectation (quartiers).<br />
+    	Qualification des postes de travail (flex, réservable).<br />
+    	Affectation des personnes à leur quartier ou bâtiment de réservation.<br />
+    	Exploitation des données et graphiques de réservation.<br /> 
 
 
 ## Certification Administrateur
 
-Durée de l'évaluation : 4 heures
+•	<strong>Objectif :</strong> Superviser l'ensemble des fonctionnalités de Surfy.
 
-La certification "Administrateur" implique l'obtention des certifications "Intégrateur" et "Gestionnaire des personnes", et la maîtrise de l'ensemble des fonctionnalités décrites dans la Surfy Academy.
+•	<strong>Pré-requis :</strong> Obtention des certifications "Intégrateur", "Gestionnaire des personnes" et "Gestionnaire de la réservation". 
+
+•	<strong>Tutoriels recommandés :</strong>
+
+    	Maîtrise de toutes les fonctionnalités décrites dans la Surfy Academy.
 
 
 ## Certification Expert
 
-La certification Expert comprend l'administration générale de la plateforme (Certification Administrateur), ainsi que les notions de configuration des comptes et accès, le recalibrage des plans et autres notions d'expertises. Merci de [nous contacter](https://www.surfy.pro/contact) pour accéder au mode Expert.
+•	<strong>Objectif :</strong> Approfondir les connaissances pour une utilisation avancée de Surfy.
+
+•	<strong>Pré-requis :</strong> Obtention de la certification "Administrateur".
+
+•	<strong>Tutoriels recommandés :</strong>
+
+    	Configuration des comptes et des accès.<br />
+    	Recalibrage des plans.<br />
+    	Autres notions d'expertise avancée.<br />
+
+
