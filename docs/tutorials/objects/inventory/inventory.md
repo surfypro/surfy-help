@@ -77,6 +77,8 @@ Pour référencer un objet composant un poste de travail, celui ci doit être d�
 En cliquant sur un poste de travail sur le plan, la liste des objets le composant s'affiche en bas de la fiche du poste de travail.
 
 -   Cliquer sur l'icône "crayon" pour "modifier l'objet" en bout de ligne de l'objet à référencer permet d'accéder à la référence, au code d'immobilisation et à la date d'achat de l'objet à droite de l'écran.
+
+Si l'icône "crayon" n'apparait pas, c'est que l'objet n'a pas été déclaré "physique". Voir dans ce cas comment [configurer les objets physiques pour un type de poste de travail](/docs/tutorials/objects/inventory/#configurer-les-objets-physiques-pour-un-type-de-poste-de-travail)
 -   compléter les informations et "sauvegarder".
 
 L'objet composant le poste de travail est référencé.
