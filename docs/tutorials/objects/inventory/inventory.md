@@ -26,7 +26,7 @@ La "Référence" de l'objet peut être affichée sur tous les objets du même ty
 Le "Code d'immobilisation" peut être recherché avec la loupe afin de géolocaliser l'objet sur le plan. Il est visible en passant la souris sur l'objet mais n'est pas affichable sur l'objet.<br />
 :::
 
-## Référencer les objets d'un poste de travail
+## Référencer les objets d'un type de poste de travail
 
 Un poste de travail est composé d'un ou plusieurs objets "virtuels" regroupés.<br />
 Par défaut, ces objets "virtuels" ne peuvent pas être référencés individuellement.<br />
