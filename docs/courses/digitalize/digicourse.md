@@ -15,6 +15,7 @@ sidebar_position: 2
     -   [Qualifier un espace](/docs/tutorials/surfaces/room/create.md#qualifier-un-espace)
     -   [Modifier un espace](/docs/tutorials/surfaces/room/edit.md)
     -   [Gérer les calques d'analyse des espaces](/docs/dimensiontypes)
+    -   [Gérer les calques d'affectation des espaces(Quartiers)](/docs/dimensiontypetobuilding)
 
 ## Aménager les espaces
 
