@@ -73,6 +73,7 @@ Sur le plan, on peut maintenant indiquer une référence à chaque objet physiqu
 
 ### Référencer les objets des postes de travail
 
+Pour référencer un objet composant un poste de travail, celui ci doit être déclaré "physique".<br />
 En cliquant sur un poste de travail sur le plan, la liste des objets le composant s'affiche en bas de la fiche du poste de travail.
 
 -   Cliquer sur l'icône "crayon" pour "modifier l'objet" en bout de ligne de l'objet à référencer permet d'accéder à la référence, au code d'immobilisation et à la date d'achat de l'objet à droite de l'écran.
