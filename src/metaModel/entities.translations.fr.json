@@ -342,7 +342,7 @@
                 "description": null
             },
             "jupRoleToJupUiOption": {
-                "label": "Association rôle aux visions du plan",
+                "label": "Association rôle aux options d'interface",
                 "description": null
             },
             "jupRoleToJupUiOperation": {
@@ -7605,7 +7605,7 @@
                     "description": null
                 },
                 "jupRoleToJupUiOptions": {
-                    "label": "Associations rôle aux visions du plan",
+                    "label": "Associations rôle aux options d'interface",
                     "description": null
                 },
                 "jupRoleToJupUiOperations": {
@@ -7651,7 +7651,7 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "jupRoleToJupUiOptions": {
-                    "label": "Associations rôle aux visions du plan",
+                    "label": "Associations rôle aux options d'interface",
                     "description": null
                 }
             },

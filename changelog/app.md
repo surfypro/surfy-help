@@ -1,5 +1,11 @@
 # Nouveautés
 
+## 12 Mai 2025 - v3.4.85
+
+- Amélioration de la refacturation des espaces : lorsqu'un espace est distribué par poste de travail, les postes de travail peuvent désormais faire partie d'un centre de coût ventilé.
+- Les objets faisant partie d'un inventaire physique d'un poste de travail changent correctement d'espace en cas de mouvement du poste de travail.
+- Mise en place d'un rapport de qualité des données sur les affectations de postes de travail permettant de voir les dernières affectations de postes de travail dans les bâtiments de référence.
+
 ## 22 Avril 2025 - v3.4.82
 
 - Amélioration de l'interface de réservation des postes de travail

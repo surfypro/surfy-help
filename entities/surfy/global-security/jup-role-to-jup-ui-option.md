@@ -1,4 +1,4 @@
-# Association rôle aux visions du plan
+# Association rôle aux options d'interface
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 
