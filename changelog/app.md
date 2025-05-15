@@ -3,7 +3,7 @@
 ## xx Mai 2025 - v3.4.88
 
 - Amélioration du déplacement des espaces
-- Amélioration de la sauvegarde en image des plans avec la possibilité de sélectionner uniquement quels type d'objets afficher sur l'image
+- Amélioration de la sauvegarde en image des plans avec la possibilité de sélectionner uniquement quel type d'objets afficher sur l'image
 
 ## 12 Mai 2025 - v3.4.85
 
