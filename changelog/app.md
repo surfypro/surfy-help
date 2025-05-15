@@ -1,5 +1,10 @@
 # Nouveautés
 
+## xx Mai 2025 - v3.4.88
+
+- Amélioration du déplacement des espaces
+- Amélioration de la sauvegarde en image des plans avec la possibilité de sélectionner uniquement quels type d'objets afficher sur l'image
+
 ## 12 Mai 2025 - v3.4.85
 
 - Amélioration de la refacturation des espaces : lorsqu'un espace est distribué par poste de travail, les postes de travail peuvent désormais faire partie d'un centre de coût ventilé.

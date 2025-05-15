@@ -70,7 +70,7 @@
 *Nom technique:* ```jupRoleToJupObjectTypes```
 <PH code="jupRole:jupRoleToJupObjectTypes"/>
 
-### Associations rôle aux options d'interface {#jup-role-to-jup-ui-options}
+### Associations rôle aux visions du plan {#jup-role-to-jup-ui-options}
 
 
 

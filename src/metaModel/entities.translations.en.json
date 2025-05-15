@@ -342,7 +342,7 @@
                 "description": null
             },
             "jupRoleToJupUiOption": {
-                "label": "Role association with interface options",
+                "label": "Association role to visions of the plan",
                 "description": null
             },
             "jupRoleToJupUiOperation": {
@@ -7605,7 +7605,7 @@
                     "description": null
                 },
                 "jupRoleToJupUiOptions": {
-                    "label": "Role associations with interface options",
+                    "label": "Role associations to plan visions",
                     "description": null
                 },
                 "jupRoleToJupUiOperations": {
@@ -7651,7 +7651,7 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "jupRoleToJupUiOptions": {
-                    "label": "Role associations with interface options",
+                    "label": "Role associations to plan visions",
                     "description": null
                 }
             },
