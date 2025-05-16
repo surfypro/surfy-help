@@ -1,6 +1,6 @@
 # Nouveautés
 
-## xx Mai 2025 - v3.4.88
+## 15 Mai 2025 - v3.4.88
 
 - Amélioration du déplacement des espaces
 - Amélioration de la sauvegarde en image des plans avec la possibilité de sélectionner uniquement quel type d'objets afficher sur l'image
