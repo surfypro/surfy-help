@@ -2,7 +2,7 @@
 
 ## 25 Mai 2025 - v3.4.91
 
-- Les identifiants des objets associés peuvent désormais être exportés dans les exports Excel depuis les pages listes s'ils sont sélectionnées.
+- Les identifiants des objets associés peuvent désormais être exportés dans les exports Excel depuis les pages listes s'ils sont sélectionnés.
 - Une nouvelle vision avec les occupations par Services est maintenant disponible.
 - Ajout de deux nouveaux rapports dans les rapports graphiques pour les réservations des postes de travail en flex :
     - Nombre de personnes ayant réservé par date et par quartier
