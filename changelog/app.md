@@ -4,7 +4,7 @@
 
 - Les identifiants des objets associés peuvent désormais être exportés dans les exports Excel depuis les pages listes si elles sont sélectionnées.
 - Une nouvelle vision avec les occupations par Services est maintenant disponible.
-- Ajout de deux nouveaux rapports 
+- Ajout de deux nouveaux rapports dans les rapports graphiques pour les réservations des postes de travail en flex :
     - Nombre de personnes ayant réservé par date et par quartier
     - Nombre de réservations par date et par quartier
 - Mise en place d'un rapport de qualité des données sur les affectations aux quartiers permettant de voir les dernières affectations aux quartiers dans les bâtiments de référence.
