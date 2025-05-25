@@ -2,7 +2,7 @@
 
 ## 22 Avril 2025 - v3.4.82
 
-- Amélioration de l'interface de réservation des postes de travail
+- Amélioration de l'interface de réservation des postes de travail.
     - Mise en place d'une entité <OT code="companyWorkingLocation"/> dans le menu "planning"/"administration des plannings", permettant d'ajouter un emplacement de travail par entreprise. Pour utiliser uniquement certains emplacements de travail pour la réservation des postes de travail en flex, l'entreprise doit posséder des emplacements de travail. Sinon, tous les emplacements de travail seront utilisés pour la réservation.
     - Mise en place d'une vue dans "planning"/"emplacement de travail des personnes" pour voir les réservations sur un plan, permettant de visualiser où se trouvent les personnes ayant réservé un poste de travail avec une navigation par date et par étage.
     - Mise en place d'un moteur de recherche dans cette page permettant de localiser un collègue sur le plan et voir son planning. Cette fonctionnalité est aussi accessible depuis l'application Teams.
