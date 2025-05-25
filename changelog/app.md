@@ -1,13 +1,13 @@
 # Nouveautés
 
-<!-- ## 21 Mai 2025 - v3.4.91
+## 25 Mai 2025 - v3.4.91
 
 - Les identifiants des objets associés peuvent désormais être exportés dans les exports Excel depuis les pages listes si elles sont sélectionnées.
 - Une nouvelle vision avec les occupations par Services est maintenant disponible.
 - Ajout de deux nouveaux rapports 
     - Nombre de personnes ayant réservé par date et par quartier
     - Nombre de réservations par date et par quartier
-- Mise en place d'un rapport de qualité des données sur les affectations aux quartiers permettant de voir les dernières affectations aux quartiers dans les bâtiments de référence. -->
+- Mise en place d'un rapport de qualité des données sur les affectations aux quartiers permettant de voir les dernières affectations aux quartiers dans les bâtiments de référence.
 
 ## 15 Mai 2025 - v3.4.88
 
