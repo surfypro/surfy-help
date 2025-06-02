@@ -44,3 +44,27 @@ On peut accéder directement aux informations ou à la composition d'un type de 
 :::danger Attention
 Modifier la composition d'un type de poste de travail peut modifier sa position sur les plans, calculée à partir du point central (barycentre) de la composition du type de poste de travail
 :::
+
+ ## Modifier un poste de travail avec des objets "physiques"
+
+Depuis la page de composition du type de poste de travail,
+
+-   cliquer sur l'icône "Lister les types d'objet" pour afficher à droite la liste des types d'objet utilisés
+-   cocher la case "inventaire physique" d'un type d'objet utilisé dans la composition du poste de travail permet de définir les objets à déclarer "physiques", permettant l'attribution d'une référence, d'un code d'immobilisation et d'une date d'achat sur l'objet correspondant. Cela permet de créer un inventaire d'objets uniques.
+
+Par défaut, les objets utilisés dans la composition d'un type de poste de travail ne peuvent être référencés et font l'objet d'un simple comptage.
+
+### Création des objets physiques
+
+Une fois la case "Inventaire physique" cochée, il est nécessaire de créer les objets physiques associés.
+
+Pour cela, depuis le menu de gauche,
+
+-   cliquer sur "Administration" puis "Entreprises" puis "Les rapports et actions pour la qualité de données pour les entreprises" puis "cohérence de l'inventaire"
+-   la liste des objets physiques à créer apparait, classés par type de poste de travail.
+-   cliquer sur la case "CREATE" afin de créer les objets physiques du type de poste de travail correspondant.
+
+### Suppression des objets physiques
+
+Si un type de poste de travail est composé d'objets auparavant "physique" mais qui ont été décochés dans la composition du type de poste de travail, les postes de travail correspondants seront proposés à la suppression.<br />
+Cliquer sur "DELETE" supprimera uniquement les objets "Physiques" mais ne supprimera pas les postes de travail correspondants, qui resteront présents mais non référençables.

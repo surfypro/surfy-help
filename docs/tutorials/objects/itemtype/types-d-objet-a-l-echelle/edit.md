@@ -41,18 +41,31 @@ On peut modifier la forme d'un type d'objet, depuis le menu de gauche,
 -   au début de la ligne du type d'objet, cliquer sur l'icone "Voir plus d'options pour le type d'objet XXX" puis sur "Editer la forme du type d'objet XXX"
 -   la forme actuelle apparait sur le plan.
 
-En cliquant sur la page blanche, une série d'icônes apparait:
+En cliquant sur la page, une série d'icônes apparait:
 
 -   cliquer sur "Centrer le plan pour tout voir" permet de centrer la forme du type d'objet pour modifications.
 -   cliquer sur un sommet de la forme permet de déplacer ce sommet, ou de créer d'autres sommets en cliquant sur "ajouter un sommet".
--   un sommet supplémentaire est proposé entre deux sommets existants. La touche "Shift" enfoncée permet de libérer le placement du sommet
+
+### Ajouter un sommet
+
+Depuis la forme du type d'objet,
+
+-   cliquer sur le sommet après lequel rajouter un nouveau sommet
+-   cliquer sur l'icône "+" grisée pour "Ajouter un sommet"
+-   un sommet supplémentaire est proposé entre deux sommets existants. La touche "Shift" enfoncée permet de libérer le placement du sommet. Les nouveaux sommets créés partiront du sommet sélectionné en rouge pour rejoindre ensuite le sommet en bleu.
 -   si le sommet à créer n'est pas entre les deux sommets voulus, choisir le sommet précédent ou suivant afin de créer le sommet au bon endroit de la forme.
--   cliquer sur l'endroit où créer le sommet, le nouveau sommet apparait.
--   cliquer sur "supprimer les sommets sélectionnés" pour supprimer le sommet sélectionné en rouge
--   une fois la forme modifiée, quitter la page sauvegarde la forme.
+-   cliquer sur l'endroit où créer le sommet, le nouveau sommet apparait entre le sommet rouge et le sommet bleu.
+-   cliquer sur l'icône "+" grisée afin d' "arrêter l'ajout d'un sommet".
+-   une fois la forme modifiée, cliquer en dehors de la forme. Quitter la page sauvegarde la forme.
+
+### Suprimer un sommet
+
+-   cliquer sur le sommet à supprimer
+-   pour supprimer plusieurs sommets, les sélectionner avec la touche "shift" enfoncée. Les sommets sélectionnés en rouge seront supprimés
+-   cliquer sur l'icône "Poubelle" pour "supprimer les sommets sélectionnés".
 
 :::tip Bon à savoir
-On peut accéder directement aux informations ou à la forme d'un type d'objet si celui ci est présent sur le plan: En cliquant sur un des objets du type d'objet, l'icône "Voir plus d'options pour le type d'objet XXX" sur la fiche de l'objet à gauche en début de la ligne "type d'objet", permet d'accéder directement à la fiche ou à la forme du type d'objet.
+On peut accéder directement aux informations ou à la forme d'un type d'objet si celui ci est présent sur le plan: En cliquant sur un des objets du type d'objet, l'icône "Voir plus d'options pour le type d'objet XXX" sur la fiche de l'objet à gauche en début de la ligne "type d'objet" permet d'accéder directement à la fiche ou à la forme du type d'objet.
 :::
 
 :::danger Attention
@@ -72,4 +85,4 @@ Pour cela:
 -   choisir le nouveau type d'objet
 -   sauvegarder les informations et rafraichir (F5)
 
-L'objet concerné à changé de type d'objet.
+L'objet concerné à changé de type d'objet. Il faut éventuellement replacer correctement le nouvel objet si son orientation ou sa forme n'est pas compatible avec le précédent.

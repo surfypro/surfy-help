@@ -15,14 +15,14 @@ Pour créer un type d'objet sous forme d'icône, depuis le menu de gauche,
 -	la « Famille de types d’objet » permet d’afficher les objets par Famille sur les plans et dans l’inventaire en pdf.
 
 Ces trois premiers champs (Nom, Indice de hauteur, Famille) sont obligatoires.
-s
+
 -	le champ « Photo » permet de charger la photo du type d’objet, qui sera visible dans l’inventaire en pdf et sur la fiche de l’objet sélectionné sur le plan.
 -	cocher « Afficher les informations sur le plan » permet d’afficher le champ « Référence » de chaque objet sur le plan.
 -	un « Code » particulier vous donnera accès directement au type d’objet en le tapant dans la recherche lors de la création d’objet.
 -	dans le champ « Icône », le « Crayon » vous donne accès à trois types d’icône :
     -   les Icônes de « Fontawsome », visibles en cochant « tout afficher » ou en recherchant par mot clé en anglais dans la case de recherche.
     -   les Icônes « SURFY » destinées aux illustrations ajoutées sur les plans aux endroits stratégiques (Toilettes, Escaliers, Ascenseurs, Points Copie, …) mais qui peuvent également être utilisées comme des icônes classiques.
-    -   les Icônes « SURFY 2 » représentant les icônes réglementaires de la norme de Sécurité ISO 7010. Leur forme originale peut être carrée ou triangulaire.
+    -   les Icônes « SURFY 2 » représentant les icônes réglementaires de la norme de Sécurité ISO 7010. Leur forme originale peut être carrée ou triangulaire. Les couleurs et formes des icônes "SURFY 2" sont automatiquement renseignées dans Surfy et peuvent être modifiées.
 
 -	la « couleur » peut être choisie parmi une sélection, ou par code Hexa ou RGB pour respecter votre charte graphique.
 -	la « Hauteur » donnera dans ce cas la hauteur du modèle 3D associé, s’il existe.
