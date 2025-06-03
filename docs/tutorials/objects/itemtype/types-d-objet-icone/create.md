@@ -30,7 +30,7 @@ Ces trois premiers champs (Nom, Indice de hauteur, Famille) sont obligatoires.
 -	« Nombre de places assises » (uniquement pour les assises, sièges, canapés, etc…) et « Empreinte Carbone » (donnée éventuellement par le fabricant, par objet) peuvent être renseignés et sont cumulés dans Surfy par pièce, étage ou bâtiment.
 -	la « Forme de l’icône » permet de définir un type d’icône carré, rond ou triangulaire. Les couleurs de fond et de bordure permettent de configurer correctement les icônes multi-couleurs, notamment triangulaires.
 -	le « Fabricant » du mobilier peut être renseigné
--	le « Modèle 3D » permet une visualisation 3D des Icônes issues du type d’icône et placées sur le plan. L'orientation de l'icone se fait en mode "édition du plan". Pour plus de lisibilité, la sortie de ce mode remet l'icone en position d'origine mais le modèle 3D sera orienté suivant l'orientation de l'icone en mode "édition du plan".
+-	le « Modèle 3D » permet une visualisation 3D des Icônes issues du type d’icône et placées sur le plan (copieurs, extincteurs, fontaines à eau, portes manteaux). L'orientation de l'icone se fait en mode "édition du plan". Pour plus de lisibilité, la sortie de ce mode remet l'icone en position d'origine mais le modèle 3D sera orienté suivant l'orientation de l'icone en mode "édition du plan".
 -	la « Clé externe » permet d’identifier le type d’objet avec une utilisation extérieure à Surfy (interopérabilité avec des applications tiers)
 
 Après validation de la création de type d'objet, le type d'objet correspondant est disponible pour la création d'objets.

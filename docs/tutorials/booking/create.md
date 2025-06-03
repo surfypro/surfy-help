@@ -16,7 +16,7 @@ Pour cela,
 
 -   cliquer sur l'icone "Gérer mon planning des prochaines semaines" en haut à gauche de l'écran, juste au dessus de la loupe de recherche, ou bien dans le menu de gauche cliquer sur "Planning", puis "Emplacement de travail des personnes", puis "Gérer mon planning des prochaines semaines".
 
-Les dates des X prochains jours (X étant configurable) s'affichent et permettent la réservation dans le quartier autorisé.
+Les dates des X prochains jours (X étant configurable dans la fiche de l'entreprise) s'affichent et permettent la réservation dans le quartier autorisé.
 
 -   cliquer sur l'icone en face de la date désirée, pour réserver en journée ou demi-journée
 -   pour déclarer un télétravail, cliquer sur "Télétravail" dans la période voulue.
