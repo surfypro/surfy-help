@@ -58,15 +58,6 @@ Le plan de l'étage s'affiche, avec l'ensemble des réservations effectuées à 
 Les réservations du collègue sur la période à venir s'affichent.<br />
 En cliquant sur l'intitulé du poste réservé, on accède à sa géolocalisation sur le plan.<br />
 
-Le rôle "Administrateur de planning" permet de :
-
--   lister et filtrer les réservations passées ou à venir sur l'ensemble des quartiers réservables
--   connaitre le nombre de réservations en fonction du jour de la semaine
--   connaitre le nombre de réservations par jour, semaine, mois, année
--   connaitre le nombre de collaborateurs ayant réservé par jour, semaine, mois, année
--   connaitre le nombre de réservations par quartier par jour, semaine, mois, année
--   connaitre le nombre de collaborateurs ayant réservé par quartier par jour, semaine, mois, année
-
 # Sécurité de l'application & conformité pour les administrateurs IT
 
 L'application est hébérgée chez Microsoft Azure France. Elle est conforme aux réglementations RGPD.
