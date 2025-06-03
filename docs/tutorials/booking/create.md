@@ -19,10 +19,11 @@ Pour cela,
 Les dates des X prochains jours (X étant configurable dans la fiche de l'entreprise) s'affichent et permettent la réservation dans le quartier autorisé.
 
 -   cliquer sur l'icone en face de la date désirée, pour réserver en journée ou demi-journée
--   pour déclarer un télétravail, cliquer sur "Télétravail" dans la période voulue.
--   pour réserver un poste de travail, cliquer sur "Réserver un poste de travail"
+-   pour déclarer un télétravail, cliquer sur "TELETRAVAIL" à la date voulue.
+-   pour réserver un poste de travail, cliquer sur "BUREAU"
+-   cliquer sur le quartier de réservation désiré
 
-Le quartier autorisé pour la réservation s'affiche.
+Le quartier autorisé à la réservation s'affiche.
 
 -   cliquer sur le poste de travail choisi pour la réservation
 
@@ -41,4 +42,5 @@ Pour supprimer une réservation, cliquer sur la corbeille en face de la ligne à
 
 Dans Teams, on peut ajouter l'application Surfy en cliquant sur "Application" et en recherchant "Surfy".
 Une fois sélectionnée, l'application est ajoutée à Teams et permet directement de réserver un poste de travail ou de déclarer un télétravail.
-Cliquer sur l'icone "Surfy" de Teams permet la même expérience de réservation que dans Surfy. Voir [Réserver depuis l'application Surfy](/docs/tutorials/booking/create.md#r%C3%A9server-depuis-lapplication-surfy)
+Cliquer sur l'icone "Surfy" de Teams permet la même expérience de réservation que dans Surfy.<br />
+Pour réserver avec Teams dans Surfy, voir le chapitre [Réserver avec Teams dans Surfy](/docs/tutorials/teams/publisher)
