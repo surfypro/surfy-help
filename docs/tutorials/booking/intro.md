@@ -29,7 +29,7 @@ Une fois ajoutée dans Teams, l'application permet au collaborateur d'accéder a
 Les deux accès mènent aux mêmes fonctionnalités.<br />
 L'utilisation de Teams offre une expérience plus directe et plus adaptée à une utilisation des fonctionnalités de réservation sur smartphone.
 
-Plus d'informations sur [les fonctionnalités de réservation de postes de travail](/docs/tutorials/booking/workplace) et pour [utiliser Teams pour les fonctionnalités de réservation](/docs/tutorials/booking/teams)
+Plus d'informations sur [les fonctionnalités de réservation via l'application Surfy](/docs/tutorials/booking/workplace) et pour [utiliser Teams pour les fonctionnalités de réservation](/docs/tutorials/booking/teams).
 
 # Sécurité de l'application & conformité pour les administrateurs IT
 
