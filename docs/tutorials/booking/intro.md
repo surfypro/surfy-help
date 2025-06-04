@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Surfy propose de digitaliser les plans des bâtiments pour faciliter la gestion de l'environnement de travail.<br />
 
-Si les plans de l'entreprise sont déjà digitalisés dans Surfy, les fonctionnalités de réservation sont disponibles dès maintenant, après obtention par l'entreprise de la license de réservation auprès de Surfy ([Nous contacter](https://www.surfy.pro/contact)), et après [configuration des quartiers d'affectation](/docs/tutorials/dimensionTypeToBuilding/create) et [affectation des collaborateurs aux quartiers d'affectation](/docs/tutorials/affectations/dimensiontoperson/create).
+Si les plans de l'entreprise sont déjà digitalisés dans Surfy, les fonctionnalités de réservation sont disponibles dès maintenant, après obtention par l'entreprise de la licence de réservation auprès de Surfy ([Nous contacter](https://www.surfy.pro/contact)), et après [configuration des quartiers d'affectation](/docs/tutorials/dimensionTypeToBuilding/create) et [affectation des collaborateurs aux quartiers d'affectation](/docs/tutorials/affectations/dimensiontoperson/create).
 
 L'application de réservation est disponible uniquement en Français.
 
