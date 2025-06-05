@@ -16,7 +16,7 @@ Plusieurs niveaux de certification sont possibles:
 
 •	<strong>Tutoriels recommandés :</strong>
 
-    o	Digitalisation des espaces : Voir le cours sur [la digitalisation des espaces](/docs/courses/digitalize/digicourse#digitaliser-un-bâtiment)
+    o	Digitalisation des espaces :
 
 
         	Création et maintenance des plans.<br />
