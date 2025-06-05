@@ -16,7 +16,8 @@ Plusieurs niveaux de certification sont possibles:
 
 •	<strong>Tutoriels recommandés :</strong>
 
-    o	Digitalisation des espaces :
+    o	Digitalisation des espaces : Voir le cours sur [la digitalisation des espaces](/docs/courses/digitalize/digicourse#digitaliser-un-bâtiment)
+
 
         	Création et maintenance des plans.<br />
         	Création et modification de cloisons et de passages.<br />
@@ -56,7 +57,7 @@ Plusieurs niveaux de certification sont possibles:
     	Gestion des calques d'affectation (quartiers).<br />
     	Qualification des postes de travail (flex, réservable).<br />
     	Affectation des personnes à leur quartier ou bâtiment de réservation.<br />
-    	Exploitation des données et graphiques de réservation.<br /> 
+    	L'administrateur de planning.<br /> 
 
 
 ## Certification Administrateur
