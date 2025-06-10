@@ -25,7 +25,7 @@ Ces trois premiers champs (Nom, Indice de hauteur, Famille) sont obligatoires.
 -	« Description » et « Prix » peuvent être renseignés.
 -	« Nombre de places assises » (uniquement pour les assises, sièges, canapés, etc…) et « Empreinte Carbone » (donnée éventuellement par le fabricant, par objet) peuvent être renseignés et sont cumulés dans Surfy par pièce, étage ou bâtiment.
 -	les champs « Forme de l’icône », « Couleur de fond » et « couleur de bordure » sont réservés aux créations d’icônes et ne sont pas à renseigner en création de types d’objet à l’échelle.
--	le « Fabricant » peut être renseigné.
+-	le « Fabricant » peut être renseigné. Si le fabricant n'est pas dans la liste, on peut "créer et associer un fabricant de type d'objet" directement depuis la liste.
 -	le « Modèle 3D » permet une visualisation 3D des Objets issus du type d’objet et placés sur le plan.
 -	la « Clé externe » permet d’identifier le type d’objet avec une utilisation extérieure à Surfy (interopérabilité avec des applications tiers)
 -	« Valider la création ».
@@ -51,16 +51,18 @@ Afin que les formes dessinées en 2D soient compatibles avec les modèles 3D, l'
 
 ### Créer la forme en 2D
 
-Depuis le menu contextuel (case grise sous la loupe de recherche) :
+Depuis la fiche du type d'objet, cliquer sur le menu contextuel (case grise sous la loupe de recherche), puis :
 
 -	cliquer sur « Editer la forme du type d'objet XXX » pour dessiner la forme du type d’objet.
 -   cliquer sur la page blanche afin de faire apparaitre les icônes de création.
 -	on peut afficher le fond de plan d’un étage avec l’icône « choisir un plan de référence pour créer la forme » afin de décalquer la forme voulue.
 -   cliquer sur l'icône "+" afin d' "ajouter une forme".
--   chaque clic dépose un sommet. Le dessin d'une forme suit la logique du fil unique. On peut s'affranchir de l'aide à la verticalité en maintenant la touche "Shift" enfoncée. Respecter la compatibilité avec les modèles 3D permet d'associer une représentation bien orientée de l'objet dans les vues 3D de l'étage ou du bâtiment (voir "Orientation des formes en association aux modèles 3D")
+-   chaque clic dépose un sommet. Le dessin d'une forme suit la logique du fil unique. On peut s'affranchir de l'aide à la verticalité en maintenant la touche "Shift" enfoncée. Respecter la compatibilité avec les modèles 3D permet d'associer une représentation bien orientée de l'objet dans les vues 3D de l'étage ou du bâtiment. Voir [Orientation des formes en association aux modèles 3D](/docs/tutorials/objects/itemtype/types-d-objet-a-l-echelle/create#orientation-des-formes-en-association-aux-modèles-3d)
+
+Il est conseillé de matérialiser la poignée d'ouverture en bas de la forme des armoires afin que celles-ci soient bien orientées lors du placement sur le plan en 2D et également en vue 3D.
 
 :::tip BON A SAVOIR
-Pour créer une forme aux dimensions exactes, après avoir cliqué le premier point, entrer la valeur du segment à dessiner puis en maintenant la souris dans la direction du segment à créer, appuyer sur "Enter". Le segment à la bonne longueur est créé.
+Pour créer une forme aux dimensions exactes, après avoir cliqué le premier point, entrer la valeur du segment à dessiner (en mètres) puis en maintenant la souris dans la direction du segment à créer, appuyer sur "Enter". Le segment à la bonne longueur est créé.
 :::
 
 -	une fois la forme à l'échelle dessinée, cliquer sur l'icône verte pour valider la création de la forme.
