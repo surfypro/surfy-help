@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Supprimer un espace
 
-:::tip Attention:
+:::danger Attention:
 La suppression d'espace implique la suppression de tout le mobilier associé et de toutes les affectations de personnes à cet espace ou aux postes de travail de l'espace. Cette action est irréversible.
 :::
 

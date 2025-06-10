@@ -66,10 +66,16 @@ Pour cela, depuis le menu de gauche,
 
 Les postes de travail correspondant au type de poste de travail à créer en "physique" s'affichent.
 
--   cliquer sur "Create" pour créer les objets physiques concernés.
+-   cliquer sur "CREATE" pour créer les objets physiques concernés.
+
+:::warning BON A SAVOIR
+Si des postes de travail "physiques" ont été créés et que la case "objet physique" a été ensuite décochée sur les objets composant le type de poste de travail, ces postes de travail anciennement "physiques" sont proposés à la suppression. Cliquer sur "DELETE" ne supprimera que leur représentation "physique" et ne supprimera pas les postes de travail sur les plans, ceux-ci étant virtuels.<br />
+Cependant, si certains objets anciennement "physiques" ont gardé une information de référencement propre, ils ne pourront pas être supprimés et s'afficheront en erreur dans cette page.
+:::
 
 Les postes de travail physiques sont créés.<br />
-Sur le plan, on peut maintenant indiquer une référence à chaque objet physique des postes de travail.
+La page de création/suppression indique "All is fine".<br />
+Sur le plan, on peut maintenant référencer chaque objet physique des postes de travail.
 
 ### Référencer les objets des postes de travail
 

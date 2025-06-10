@@ -35,6 +35,12 @@ Après rafraîchissement, l'espace affiche la couleur de la typologie choisie. C
 L'icône "goutte" au dessus du plan permet d'"activer la transparence des couleurs" et de voir les différents éléments présents sur le fond de plan à travers les couleurs des calques de Surfy.
 :::
 
+## Importer en masse des informations aux espaces
+
+On peut importer un fichier excel comportant les informations à compléter aux espaces.<br />
+Il est nécessaire d'importer la colonne comportant l'identifiant Surfy de l'espace, ainsi que la colonne comportant les informations à compléter en utilisant les bons en-têtes pour chaque colonne. Ces colonnes doivent être contiguës pour être importées dans Surfy.<br />
+Pour plus de détail sur l'import en masse, merci de [nous contacter](https://www.surfy.pro/contact)
+
 ## Rechercher un espace
 
 On peut géolocaliser et accéder à la fiche d'un espace de plusieurs façons :

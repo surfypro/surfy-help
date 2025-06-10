@@ -5,7 +5,7 @@ sidebar_position: 3
 # Supprimer un type d'objet à l'échelle
 
 :::danger Attention
-Supprimer un type d'objet supprimera tous les objets issus de ce type d'objet.
+Supprimer un type d'objet supprimera tous les objets issus de ce type d'objet sur l'ensemble des bâtiments.
 :::
 
 Pour supprimer un type d'objet, depuis le menu de gauche,

@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Supprimer une Personne
 
-:::warning Attention
+:::danger Attention
 Supprimer une personne supprime toutes les informations relatives à cette personne ainsi que ses affectations.
 Cette action est irréversible. 
 :::

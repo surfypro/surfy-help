@@ -88,3 +88,10 @@ Après rafraîchissement, l'espace affiche la couleur de la typologie choisie. C
 L'icône "goutte" au dessus du plan permet d'"activer la transparence des couleurs" et de voir les différents éléments présents sur le fond de plan à travers les couleurs des calques de Surfy.
 :::
 
+## Rechercher un espace
+
+On peut géolocaliser et accéder à la fiche d'un espace de plusieurs façons :
+
+-   par la loupe en effectuant une recherche puis en cliquant sur l'espace recherché
+-   par la [liste filtrée](/docs/courses/find/listfindcourse.md) des espaces ("Espaces", "Espaces", "Lister les espaces" puis "filtrer les espaces")
+-   par l'affectation de la personne en cliquant dans l'espace de la personne affectée
