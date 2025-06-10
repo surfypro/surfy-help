@@ -25,21 +25,21 @@ L'icône "Ajouter un espace" n'apparait que si aucun espace ni aucun objet n'est
 -   pour clore l'espace, cliquer pour créer le dernier sommet puis sur l'icone "disquette" au dessus du plan pour "sauvegarder l'espace en cours".
 -   l'espace est créé et la fiche de l'espace indique sa surface et son périmètre.
 
-## Créer des espaces contigüs
+## Créer des espaces contigus
 
 Créer le plan d'un étage implique une certaine continuité entre les espaces. Par exemple entre un bureau fermé et la circulation, ou entre un espace ouvert et la circulation.<br />
-Pour assurer cette continuité et créer une "toile d'araignée" plutôt qu'une suite d'espaces indépendants, il est nécessaire de créer des segments communs aux espaces contigüs.
+Pour assurer cette continuité et créer une "toile d'araignée" plutôt qu'une suite d'espaces indépendants, il est nécessaire de créer des segments communs aux espaces contigus.
 
-Pour créer un segment commun à deux espaces, il faut fusionner un sommet de l'espace 1 avec un sommet de l'espace 2, de chaque coté du segment à rendre commun. Une fois que les sommets de part et d'autre du segment sont communs, le segment est commun et se colorie en rouge.<br />
+Pour créer un segment commun à deux espaces, il faut fusionner un sommet de l'espace A avec un sommet de l'espace B, de chaque coté du segment à rendre commun. Une fois que les sommets de part et d'autre du segment sont communs, le segment est commun et se colorie en rouge.<br />
 On peut alors qualifier le segment commun en "Porte" ou "sans cloison".
 
-Les portes sont matérialisées sur la vue 2D des plans, avec leur sens d'ouverture et encombrement. Les passages sont représentés en pointillés.
+Les portes sont matérialisées sur la vue 2D des plans, avec leur sens d'ouverture et débattement. Les passages sont représentés en pointillés.
 Les portes et passages sont également visualisés dans la vue 3D de l'étage ou du bâtiment.
 
 Plus d'informations sur la [création d'un segment commun à deux espaces](/docs/tutorials/surfaces/doors/create#création-dun-segment-commun-à-deux-espaces)
 et sur la [création de portes et passages](/docs/tutorials/surfaces/doors/create#qualification-dun-segment-commun-en-porte-ou-passage).
 
-Une fois les segments communs créés et qualifiés en portes ou passages, l'itinéraire point à point peut être utilisé pour tracer le déplacement sur le plan et obtenir le temps et la distance à parcourir entre le point de départ et le point d'arrivée.<br />
+Une fois les segments communs créés et qualifiés en portes ou passages, l'itinéraire peut être utilisé pour tracer le déplacement sur le plan et obtenir le temps et la distance à parcourir entre le point de départ et le point d'arrivée.<br />
 Plus d'informations sur la [création d'un itinéraire](/docs/tutorials/surfaces/pathfinding/create)
 
 
