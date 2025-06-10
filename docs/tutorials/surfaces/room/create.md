@@ -33,13 +33,16 @@ Pour assurer cette continuité et créer une "toile d'araignée" plutôt qu'une 
 Pour créer un segment commun à deux espaces, il faut fusionner un sommet de l'espace 1 avec un sommet de l'espace 2, de chaque coté du segment à rendre commun. Une fois que les sommets de part et d'autre du segment sont communs, le segment est commun et se colorie en rouge.<br />
 On peut alors qualifier le segment commun en "Porte" ou "sans cloison".
 
+Les portes sont matérialisées sur la vue 2D des plans, avec leur sens d'ouverture et encombrement. Les passages sont représentés en pointillés.
+Les portes et passages sont également visualisés dans la vue 3D de l'étage ou du bâtiment.
+
 Plus d'informations sur la [création d'un segment commun à deux espaces](/docs/tutorials/surfaces/doors/create#création-dun-segment-commun-à-deux-espaces)
 et sur la [création de portes et passages](/docs/tutorials/surfaces/doors/create#qualification-dun-segment-commun-en-porte-ou-passage).
 
 Une fois les segments communs créés et qualifiés en portes ou passages, l'itinéraire point à point peut être utilisé pour tracer le déplacement sur le plan et obtenir le temps et la distance à parcourir entre le point de départ et le point d'arrivée.<br />
 Plus d'informations sur la [création d'un itinéraire](/docs/tutorials/surfaces/pathfinding/create)
 
-Les portes et passages sont correctement visualisés dans la vue 3D de l'étage ou du bâtiment.
+
 
 ### Créer des espaces reliés par des segments communs
 
@@ -49,13 +52,13 @@ Pour créer des espaces reliés par des segments communs,
 -   "activer le mode édition du plan" en cliquant sur l'icône "crayon".
 -   créer le premier espace en ayant soin de créer des sommets aux endroits de jonction avec le deuxième espace. En cas d'oubli, ces sommets peuvent être créés postérieurement.
 -   créer le deuxième espace. A la jonction entre les deux espaces, maintenir la touche "alt" enfoncée.
--   cliquer sur le sommet de jonction du premier espace, allumé en vert. Le sommet créé est commun avec le sommet du premier espace.
+-   cliquer sur le premier sommet de jonction du premier espace, allumé en vert. Le sommet créé est commun avec le sommet du premier espace.
 -   maintenir la touche "alt" enfoncée et cliquer sur le deuxième sommet de jonction entre les deux espaces. Le deuxième sommet commun est créé, le segment entre les deux sommets communs est maintenant commun.
 -   relacher la touche "alt" lors de la création de sommets simples.
 
-En cas d'absence ou d'oubli, pour créer un sommet supplémentaire afin de le fusionner :
+En cas d'absence ou d'oubli, une fois l'espace créé et pour créer un sommet supplémentaire afin de le fusionner :
 
--   cliquer sur l'icône "+" gris foncé au dessus du plan pour "ajouter un sommet sur un segment"
+-   cliquer sur un sommet puis sur l'icône "+" gris foncé au dessus du plan pour "ajouter un sommet sur un segment"
 -   passer la souris sur le segment sur lequel le sommet est à créer
 -   quand le segment est de couleur rouge, cliquer pour ajouter le sommet à l'endroit voulu
 -   on peut déplacer le sommet après sa création en le glissant-déplaçant
