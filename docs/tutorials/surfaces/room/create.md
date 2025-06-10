@@ -62,7 +62,7 @@ En cas d'absence ou d'oubli, une fois l'espace créé et pour créer un sommet s
 -   passer la souris sur le segment sur lequel le sommet est à créer
 -   quand le segment est de couleur rouge, cliquer pour ajouter le sommet à l'endroit voulu
 -   on peut déplacer le sommet après sa création en le glissant-déplaçant
--   sélectionner les deux sommets à fusionner puis sur l'icône "fusionner les sommets" au dessus du plan
+-   sélectionner (avec "shift" enfoncé) les deux sommets à fusionner puis sur l'icône "fusionner les sommets" au dessus du plan
 -   cliquer sur un sommet puis sur l'icône "+" gris foncé pour "arrêter l'ajout d'un sommet sur un segment".
 
 En mode "Edition du plan", les segments communs sont plus larges et coloriés en rouge, permettant de les repérer facilement afin de leur attribuer une porte ou passage.
