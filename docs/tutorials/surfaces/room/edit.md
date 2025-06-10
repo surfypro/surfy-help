@@ -6,7 +6,7 @@ sidebar_position: 3
 
 <Youtube code="_B7Jb3eAn4I"/>
 
-Pour modifier un espace dans Surfy,
+Pour modifier la surface d'un espace dans Surfy,
 
 -   activer le "mode édition du plan".
 -   cliquer dans l'espace pour faire apparaître ses sommets.

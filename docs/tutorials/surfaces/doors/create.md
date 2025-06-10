@@ -18,46 +18,46 @@ Un segment commun est un segment délimité par deux sommets communs à deux esp
 <Youtube code="iior39hytfk"/>
 
 
-Pour créer un segment commun il faut "fusionner les sommets" des deux espaces, de chaque coté du segment.
+Pour créer un segment commun à deux espaces indépendants, il faut "fusionner les sommets" des deux espaces, de chaque coté du segment à rendre commun.
 
 ### Création des sommets à fusionner
 
 -   "activer le mode édition du plan" en cliquant sur l'icône "crayon" au dessus du plan
 
 -   cliquer dans le premier des deux espaces
--   créer le segment à convertir, il doit être encadré par deux sommets :
-    -   cliquer sur l'icône "+" au dessus du plan pour "ajouter un sommet sur un segment"
+-   pour créer le segment à convertir, il doit être encadré par deux sommets :
+    -   cliquer sur l'icône "+" gris foncé au dessus du plan pour "ajouter un sommet sur un segment"
     -   passer la souris sur le segment
     -   quand le segment est de couleur rouge, cliquer pour ajouter le sommet à l'endroit voulu
     -   on peut déplacer le sommet après sa création en le glissant-déplaçant
 
 -   cliquer dans le deuxième espace
 -   créer un segment de la largeur approximative du segment du premier espace :
-    -   cliquer sur l'icône "+" au dessus du plan pour "ajouter un sommet sur un segment"
+    -   cliquer sur l'icône "+" gris foncé au dessus du plan pour "ajouter un sommet sur un segment"
     -   passer la souris sur le segment
     -   quand le segment est de couleur rouge, cliquer pour ajouter les deux sommets près des sommets du premier espace
 
--   une fois les sommets créés, cliquer sur l'icône "+" pour "arrêter l'ajout d'un sommet sur un segment".
+-   une fois les sommets créés, cliquer sur un sommet puis sur l'icône "+" gris foncé pour "arrêter l'ajout d'un sommet sur un segment".
 
 
 ### Fusionner les sommets
 
--   cliquer sur le premier sommet du premier espace
+-   cliquer sur le premier sommet du premier espace. Le sommet fusionné prendra sa position.
 -   enfoncer la touche "shift" et cliquer sur le premier sommet du deuxième espace
 -   les deux sommets sont sélectionnés en rouge
 -   cliquer sur l'icône "fusionner les sommets" au dessus du plan
--   le premier sommet est commun aux deux espaces.
+-   le premier sommet est commun aux deux espaces, positionné sur le premier sommet sélectionné pour la fusion.
 
--   cliquer sur le deuxième sommet du premier espace
+-   cliquer sur le deuxième sommet du premier espace. Le sommet fusionné prendra sa position.
 -   enfoncer la touche "shift" et cliquer sur le deuxième sommet du deuxième espace
 -   les deux sommets sont sélectionnés en rouge
 -   cliquer sur l'icône "fusionner les sommets" au dessus du plan
--   le deuxième sommet est commun aux deux espaces.
+-   le deuxième sommet est commun aux deux espaces, positionné sur le premier sommet sélectionné pour la fusion.
 
 Une fois que les deux sommets des segments sont fusionnés, le segment obtenu est un segment commun.
-En mode "Edition du plan", les segments communs sont plus larges et affichés en rouge.
+En mode "Edition du plan", les segments communs sont plus larges et coloriés en rouge.
 
-On peut modifier la longueur ou la position d'un segment commun en déplaçant les sommets du segment.
+On peut modifier la longueur ou la position d'un segment commun en glissant-déplaçant les sommets du segment.
 
 :::tip Bon à savoir
 Lors de la fusion des sommets, le premier sommet sélectionné pour la fusion donnera sa place au sommet fusionné.
