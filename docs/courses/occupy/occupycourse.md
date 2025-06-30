@@ -42,9 +42,9 @@ Affecter des personnes en masse [aux postes de travail](/docs/tutorials/affectat
 
 
 
-[Réserver dans Surfy](/docs/tutorials/booking/create.md)
+[Réserver dans Surfy](/docs/tutorials/booking/workplace.md)
 
-[Utiliser Teams pour la réservation dans Surfy](/docs/tutorials/teams/publisher.md)
+[Utiliser Teams pour la réservation dans Surfy](/docs/tutorials/booking/teams.md)
 
 
 ### Mettre en place la réservation d'espace
