@@ -22,6 +22,13 @@ Useful to differentiate the layer among others
 
 ## Basic properties {#properties-base}
     
+### Booking surcharge rate {#crowded-for-booking-rate}
+
+The reservation overload rate allows you to define the occupancy percentage beyond which a space is considered overloaded for reservations.
+
+*Technical name:* ```crowdedForBookingRate```
+<PH code="dimension:crowdedForBookingRate"/>
+
 ### Carbon footprint per square meter {#carbon-footprint-per-meter}
 
 The carbon footprint per square meter calculates the carbon footprint in kilograms of CO2 of an analysis layer per square meters

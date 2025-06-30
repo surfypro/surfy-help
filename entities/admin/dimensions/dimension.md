@@ -57,6 +57,13 @@ Le nombre de personnes total qui sont affectées directement à ce calque d'affe
 *Nom technique:* ```totalPeopleCount```
 <PH code="dimension:totalPeopleCount"/>
 
+### Taux de surcharge pour la réservation {#crowded-for-booking-rate}
+
+Le taux de surcharge pour la réservation permet de définir le pourcentage d'occupation au-delà duquel un espace est considéré comme surchargé pour les réservations
+
+*Nom technique:* ```crowdedForBookingRate```
+<PH code="dimension:crowdedForBookingRate"/>
+
 ### Valeur numérique {#value}
 
 La valeur peut être utilisé pour associé le calque à une valeur numérique afin de pouvoir réaliser des statisques analytiques

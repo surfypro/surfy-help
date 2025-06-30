@@ -608,6 +608,10 @@
                     "label": "Planning Number Of Days",
                     "description": null
                 },
+                "enableCrowdedDimensionForBooking": {
+                    "label": "Activer la surcharge des dimensions pour la réservation",
+                    "description": "Permet d'activer la fonctionnalité de surcharge des dimensions pour les réservations, permettant de définir des seuils d'occupation au-delà desquels un espace est considéré comme surchargé et active la priorité sur les affectations des quartiers"
+                },
                 "createdAt": {
                     "label": "Date de création",
                     "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
@@ -4462,6 +4466,10 @@
                     "label": "Empreinte carbone par mètre carré",
                     "description": "L'empreinte carbone par mètre carré permet de calculer l'empreinte carbone en kilogramme de CO2 d'un calque d'analyse par mètres carrés"
                 },
+                "crowdedForBookingRate": {
+                    "label": "Taux de surcharge pour la réservation",
+                    "description": "Le taux de surcharge pour la réservation permet de définir le pourcentage d'occupation au-delà duquel un espace est considéré comme surchargé pour les réservations"
+                },
                 "createdAt": {
                     "label": "Date de création",
                     "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
@@ -6675,6 +6683,10 @@
                 "id": {
                     "label": "Id",
                     "description": null
+                },
+                "priority": {
+                    "label": "Priorité",
+                    "description": "Définit la priorité de l'affectation de la personne à la dimension. Une valeur plus faible signifie une priorité plus élevée."
                 },
                 "createdAt": {
                     "label": "Date de création",

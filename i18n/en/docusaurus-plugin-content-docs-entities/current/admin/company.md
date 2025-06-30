@@ -22,6 +22,13 @@
 
 ## Basic properties {#properties-base}
     
+### Enable dimension override for booking {#enable-crowded-dimension-for-booking}
+
+Enables the dimension overload feature for reservations, allowing occupancy thresholds to be set beyond which a space is considered overloaded and enables priority over territories assignments
+
+*Technical name:* ```enableCrowdedDimensionForBooking```
+<PH code="company:enableCrowdedDimensionForBooking"/>
+
 ### Enable Pathfinding {#enable-pathfinding}
 
 
