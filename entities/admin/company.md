@@ -22,6 +22,13 @@
 
 ## Propriétés de base {#properties-base}
     
+### Activer la surcharge des dimensions pour la réservation {#enable-crowded-dimension-for-booking}
+
+Permet d'activer la fonctionnalité de surcharge des dimensions pour les réservations, permettant de définir des seuils d'occupation au-delà desquels un espace est considéré comme surchargé et active la priorité sur les affectations des quartiers
+
+*Nom technique:* ```enableCrowdedDimensionForBooking```
+<PH code="company:enableCrowdedDimensionForBooking"/>
+
 ### Enable Pathfinding {#enable-pathfinding}
 
 

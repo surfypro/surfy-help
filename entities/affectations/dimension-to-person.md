@@ -10,6 +10,16 @@ Permet d'affecter une personne à un quartier, territoire ou village
 
 
 
+## Propriétés de base {#properties-base}
+    
+### Priorité {#priority}
+
+Définit la priorité de l'affectation de la personne à la dimension. Une valeur plus faible signifie une priorité plus élevée.
+
+*Nom technique:* ```priority```
+<PH code="dimensionToPerson:priority"/>
+
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 

@@ -1,5 +1,13 @@
 # Nouveautés
 
+<!-- ## 26 Juin 2025 - v3.4.92
+- Ajout d'une fonctionnalité de défilement infini dans la page d'affichage des salles de réunion pour permettre de voir toutes les salles du bâtiment.
+- Après la sélection d'un bâtiment dans la page d'affichage des salles de réunion, l'accordéon des bâtiments se referme automatiquement.
+- Ajout d'une fonctionnalité permettant de gérer la surcharge des quartiers dans la réservation des postes de travail
+    - Il est possible maintenant de définir la priorité du quartier dans l'association quartier à personne
+    - Il est possible de définir un seuil de surcharge pour chaque quartier
+    - Il est possible d'activer la gestion de surcharge depuis l'entreprise -->
+
 ## 25 Mai 2025 - v3.4.91
 
 - Les identifiants des objets associés peuvent désormais être exportés dans les exports Excel depuis les pages listes s'ils sont sélectionnés.

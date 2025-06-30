@@ -10,6 +10,16 @@ Allows you to assign a person to a district, territory or village
 
 
 
+## Basic properties {#properties-base}
+    
+### Priority {#priority}
+
+Sets the priority of the person 's assignment to the dimension. A lower value means a higher priority.
+
+*Technical name:* ```priority```
+<PH code="dimensionToPerson:priority"/>
+
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 
