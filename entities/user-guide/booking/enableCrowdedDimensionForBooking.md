@@ -1,3 +1,7 @@
+---
+draft: true
+---
+
 # Fonctionnalité de surcharge des dimensions pour la réservation
 
 ## À quoi sert cette fonctionnalité ?
