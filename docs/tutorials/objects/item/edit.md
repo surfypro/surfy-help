@@ -10,18 +10,6 @@ sidebar_position: 2
 -   modifier le nom, la référence, le code d'immobilisation ou la date d'achat
 -   sauvegarder les modifications
 
-## Modifier le type d'objet d'un objet
-
-Pour changer le type d'objet d'un objet sur le plan,
-
--   cliquer sur l'objet puis sur "Modifier" dans la fiche de l'objet, à gauche du plan.
--   cliquer sur le crayon "Changer le type d'objet" et choisir le nouveau type d'objet à appliquer à l'objet
--   "Sauvegarder" les modifications
-
-:::tip Bon à savoir
-L'objet modifié aura la forme et les caractéristiques du nouveau type d'objet, mais gardera toutes les informations (référence, code immo et association à personne), l'orientation et le placement de l'objet remplacé.
-:::
-
 ## Déplacer un objet
 
 -   "Activer le mode édition du plan" en cliquant sur l'icône "crayon" au dessus du plan
@@ -51,4 +39,16 @@ On peut géolocaliser et accéder à la fiche d'un objet de plusieurs façons :
 
 :::tip Bon à savoir
 On peut panacher des objets et des postes de travail dans les groupes d'objets, en déplacement ou en copie
+:::
+
+## Modifier le type d'objet d'un objet
+
+Pour changer le type d'objet d'un objet sur le plan,
+
+-   cliquer sur l'objet puis sur "Modifier" dans la fiche de l'objet, à gauche du plan.
+-   cliquer sur le crayon "Changer le type d'objet" et choisir le nouveau type d'objet à appliquer à l'objet
+-   "Sauvegarder" les modifications
+
+:::tip Bon à savoir
+L'objet modifié aura la forme et les caractéristiques du nouveau type d'objet, mais gardera toutes les informations (référence, code immo et association à personne), l'orientation et le placement de l'objet remplacé.
 :::
