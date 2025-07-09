@@ -1,5 +1,6 @@
 ---
 draft: true
+
 ---
 
 # Fonctionnalité de surcharge des dimensions pour la réservation
