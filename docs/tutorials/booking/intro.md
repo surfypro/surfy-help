@@ -73,7 +73,7 @@ Pour modifier la priorité d'une affectation à un quartier, depuis le menu de g
 
 Si l'affectation d'un collaborateur à un quartier a une priorité à "0", le quartier correspondant sera systématiquement proposé au collaborateur pour la réservation.
 
-Si le taux de surcharge pour la réservation d'un quartier est atteint et qu'un collaborateur affecté à ce quartier est également affecté à un quartier de priorité plus basse, le quartier de priorité plus basse lui est proposé à la réservation.
+Si le taux de surcharge pour la réservation d'un quartier est atteint et qu'un collaborateur affecté à ce quartier est également affecté à un quartier de priorité plus basse sur le même bâtiment, le quartier de priorité plus basse lui est proposé à la réservation.
 
 Plusieurs affectations d'un collaborateur aux quartiers peuvent avoir un numéro de priorité identique. Les quartiers correspondants suivront alors une règle de priorité identique.<br />
 
