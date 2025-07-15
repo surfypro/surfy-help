@@ -192,7 +192,7 @@ const config: Config = {
     algolia: {
       appId: 'X4BNSJG6KM',
       apiKey: 'f26cb9c3ca2be7964014e7228bce31a2',
-      indexName: 'help-surfy',
+      indexName: 'help-surfy.tmp',
       contextualSearch: true,
       searchPagePath: 'search',
     },
