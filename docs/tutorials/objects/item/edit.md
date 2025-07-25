@@ -7,7 +7,7 @@ sidebar_position: 2
 
 -   cliquer sur l'objet
 -   dans la fiche de l'objet à gauche du plan, cliquer sur "Modifier"
--   modifier le nom, la référence, le code d'immobilisation ou la date d'achat
+-   modifier la <P code="item:reference" />, le <P code="item:code" /> ou la <P code="item:purchaseDate" />
 -   sauvegarder les modifications
 
 ## Déplacer un objet

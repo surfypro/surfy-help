@@ -68,8 +68,8 @@ Pour créer un Service, sa Direction doit d'abord avoir été créée dans Surfy
 Une fois la Direction créée, pour créer un Service, depuis le menu de gauche,
 
 -   cliquer sur "organisations", "organisations" puis "créer une organisation" (ou cliquer sur le menu contextuel puis "créer une organisation" si déjà sur la page des organisations)
--   renseigner le nom du Service et sa couleur
--   renseigner la Direction du Service en cliquant sur le crayon de l'"Organisation Mère" et en sélectionnant une Direction
+-   renseigner le nom du Service et sa <P code="organization:color"/>
+-   renseigner la Direction du Service en cliquant sur le crayon de la"<P code="organization:organization" />" et en séléctionnant une Direction
 -   valider la création
 
 L'organisation créée est considérée comme étant un Service (Direction présente)

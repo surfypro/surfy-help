@@ -28,7 +28,7 @@ Pour associer le type de calque à des bâtiments, en vue de créer des calques 
 
 -   dans le menu contextuel, cliquer sur "Modifier le type de calque XXX"
 -   en bas de page, cliquer sur "Créer un calque d'affectation du bâtiment"
--   choisir le ou les bâtiments à associer aux calques d'affectation (ex: "bâtiment A")
+-   choisir le ou les <P code="dimensionTypeToBuilding:building" /> à associer aux calques d'affectation (ex: "bâtiment A")
 -   sauvegarder les modifications
 
 :::tip BON A SAVOIR
@@ -43,7 +43,7 @@ Une fois que le type de calque est créé et associé à un ou des bâtiments, o
 
 -   cliquer sur "Administration", "Calques d'analyse", "Calques d'analyse", puis "Créer un calque d'analyse".
 -   renseigner le "Nom du calque d'analyse" (ex: "Quartier A1")
--   choisir le "type de calque" associé à un ou des bâtiments dans la liste des types de calque en cliquant sur le "crayon" (ex: "Quartiers Bât A"). Le calque d'analyse devient calque d'affectation.
+-   choisir le <P code="dimensionTypeToBuilding:dimensionType" /> associé à un ou des bâtiments dans la liste des types de calque en cliquant sur le "crayon" (ex: "Quartiers Bât A"). Le calque d'analyse devient calque d'affectation.
 -   choisir une couleur pour représenter les espaces qualifiés par ce calque d'affectation
 -   "valider la création" du calque d'affectation.
 

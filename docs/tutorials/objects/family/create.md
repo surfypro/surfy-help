@@ -12,7 +12,7 @@ Elle permet le classement de l'inventaire par familles. La famille permet égale
 Pour créer une famille de types d'objet,
 
 -   dans le menu de gauche, cliquer sur "Mobiliers", "Typologies", puis "Familles de types d'objet" et "Créer une famille de types d'objet".
--   renseigner le nom de la famille à créer
+-   renseigner <P code="itemTypeFamily:name" /> pour la famille à créer
 -   valider la création
 
 Après rafraichissement (F5), la nouvelle famille de types d'objet est proposée dans le choix "Famille de types d'objet" à la création/modification des types d'objet, et regroupera tous les objets issus des types d'objet de la famille concernée.
