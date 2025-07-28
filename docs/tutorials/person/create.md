@@ -15,7 +15,7 @@ Pour créer une personne dans Surfy à partir de la page d'accueil,
         -   <P code="person:email" />, <P code="person:picture" />, <P code="person:title" />, <P code="person:monitorReference" />, <P code="person:computerReference" />, <P code="person:telephone" />, <P code="person:cellphone" />, <P code="person:code" />, <P code="person:startDate" />, <P code="person:endDate" />, <P code="person:info" />
         -   la propriété <P code="person:notAffectable" /> permet de qualifier les personnes ne pouvant être affectées, personnes en congé maternité ou en congé longue durée
         -   indiquer <P code="person:organization" /> à partir de la liste des organisations déjà créées
-        -   renseigner <P code="person:personState" />, <P code="person:personSecurityProfile" />, <P code="person:costCenter" />, <P code="person:company" />
+        -   renseigner <P code="person:personState" />, <P code="person:personSecurityProfile" />, <P code="person:costCenter" />, et éventuellement l'Entreprise de la personne pour les prestataires.
         -   valider la création.
 
 :::tip Bon à savoir
