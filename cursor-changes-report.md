@@ -24,11 +24,15 @@ Ce fichier liste les tutoriels modifiés pour appliquer la règle Cursor (balise
 - **Résumé** : Le nom de la famille de types d'objet est balisé lors de la création.
 
 #### docs/tutorials/objects/item/create.md
-- **Propriétés balisées** : reference, code, purchaseDate
-- **Résumé** : Les propriétés principales de l'objet (mobilier) sont balisées lors de la création.
+- **Propriétés balisées** : item:reference, item:code, item:purchaseDate
+- **Résumé** : Les propriétés principales de l'objet mobilier (référence, code d'immobilisation, date d'achat) sont balisées lors de la création.
 
 #### docs/tutorials/objects/item/edit.md
-- **Propriétés balisées** : reference, code, purchaseDate
-- **Résumé** : Les propriétés éditables de l'objet sont balisées lors de la modification.
+- **Propriétés balisées** : item:reference, item:code, item:purchaseDate
+- **Résumé** : Les propriétés éditables de l'objet mobilier sont balisées lors de la modification.
+
+#### docs/tutorials/objects/item/delete.md
+- **Propriétés balisées** : item:reference, item:code
+- **Résumé** : Les propriétés supprimées avec l'objet (référence, code d'immobilisation) sont mentionnées dans l'avertissement et balisées si citées.
 
 // Rapport à compléter au fil du traitement de tous les tutoriels... 
