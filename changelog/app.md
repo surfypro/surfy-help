@@ -6,7 +6,9 @@
 - L'icône de rotation des objets et des postes de travail est désormais positionnée au-dessus des autres formes.
 - Le rapport de qualité des données sur les affectations aux quartiers inclut désormais l'email des personnes affectées, le nom du type de calque d'affectation, l'identifiant de l'affectation ainsi que la priorité du quartier.
 - Ajout de la priorité d'affectation des quartiers dans le rapport d'affectation du bâtiment.
+- Dans la recherche de personnes, seules les affectations aux quartiers avec les plus petites priorités sont affichées.
 - Les types pourcentages sont désormais importables depuis Excel.
+- Les bâtiments dans "Voir toutes les réservations sur un plan" sont maintenant uniquement ceux avec des calques d'affectation ; il y a aussi désormais une photo et la liste des étages pour faire la sélection.
 -->
 
 ## 2 Juillet 2025 - v3.4.94
