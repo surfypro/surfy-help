@@ -5,9 +5,6 @@ Les organisations ont deux niveaux hiérarchiques : les directions et les servic
 
 <OH code="organization"/>
 
-
-
-
 ## Propriétés obligatoires {#properties-mandatory}
     
 ### Nom {#name}
