@@ -1,10 +1,11 @@
 # Nouveautés
 
-## 4 Août 2025 - v3.4.96
+<!-- ## 4 Août 2025 - v3.4.96
 
 - Amélioration de l'affichage des propriétés des types d'objets dans la documentation
 - L'icône de rotation des objets et des postes de travail est maintenant positionnée au-dessus des autres formes
-
+- Le rapport de qualité des données sur les affectations aux quartiers inclut maintenant l'email des personnes affectées, le nom du type de calque d'affectation, l'identifiant de l'affectation ainsi que la priorité du quartier 
+- Ajout de la priorité d'affectation des quartiers dans le rapport d'affectation du bâtiment-->
 
 ## 2 Juillet 2025 - v3.4.94
 - Ajout d'une fonctionnalité de défilement infini dans la page d'affichage des salles de réunion pour permettre de voir toutes les salles du bâtiment.
