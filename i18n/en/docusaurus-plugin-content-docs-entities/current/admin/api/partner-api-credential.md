@@ -1,7 +1,7 @@
 # Partner API key
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+A Partner API Key is used to authenticate and authorize access to APIs for external partners
 
 <OH code="partnerApiCredential"/>
 

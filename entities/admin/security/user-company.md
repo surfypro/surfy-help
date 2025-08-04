@@ -282,19 +282,47 @@ L'association entre un point et un espace permet de conserver l'ordre des points
 *Nom technique:* ```roomPointRoomUpdatedBies```
 <PH code="userCompany:roomPointRoomUpdatedBies"/>
 
-### Associations groupes de typologies d'espace à typologies d'espace {#room-type-group-to-room-type-created-bies}
+### Associations groupe de typologie d'espace à typologie d'espace {#room-type-group-to-room-type-created-bies}
 
-
+Une association groupe de typologie d'espace à typologie d'espace permet de définir quels types d'espaces appartiennent à quels groupes
 
 *Nom technique:* ```roomTypeGroupToRoomTypeCreatedBies```
 <PH code="userCompany:roomTypeGroupToRoomTypeCreatedBies"/>
 
-### Associations groupes de typologies d'espace à typologies d'espace {#room-type-group-to-room-type-updated-bies}
+### Associations groupe de typologie d'espace à typologie d'espace {#room-type-group-to-room-type-updated-bies}
 
-
+Une association groupe de typologie d'espace à typologie d'espace permet de définir quels types d'espaces appartiennent à quels groupes
 
 *Nom technique:* ```roomTypeGroupToRoomTypeUpdatedBies```
 <PH code="userCompany:roomTypeGroupToRoomTypeUpdatedBies"/>
+
+### Associations groupe de typologie d'espace aux bâtiments {#room-type-group-building-created-bies}
+
+Une association groupe de typologie d'espace aux bâtiments permet de définir les groupes de types d'espaces disponibles dans chaque bâtiment
+
+*Nom technique:* ```roomTypeGroupBuildingCreatedBies```
+<PH code="userCompany:roomTypeGroupBuildingCreatedBies"/>
+
+### Associations groupe de typologie d'espace aux bâtiments {#room-type-group-building-updated-bies}
+
+Une association groupe de typologie d'espace aux bâtiments permet de définir les groupes de types d'espaces disponibles dans chaque bâtiment
+
+*Nom technique:* ```roomTypeGroupBuildingUpdatedBies```
+<PH code="userCompany:roomTypeGroupBuildingUpdatedBies"/>
+
+### Associations groupe de typologie d'espace aux étages {#room-type-group-floor-created-bies}
+
+Une association groupe de typologie d'espace aux étages permet de définir les groupes de types d'espaces disponibles dans chaque étage
+
+*Nom technique:* ```roomTypeGroupFloorCreatedBies```
+<PH code="userCompany:roomTypeGroupFloorCreatedBies"/>
+
+### Associations groupe de typologie d'espace aux étages {#room-type-group-floor-updated-bies}
+
+Une association groupe de typologie d'espace aux étages permet de définir les groupes de types d'espaces disponibles dans chaque étage
+
+*Nom technique:* ```roomTypeGroupFloorUpdatedBies```
+<PH code="userCompany:roomTypeGroupFloorUpdatedBies"/>
 
 ### Associations organisation aux bâtiments {#organization-building-created-bies}
 
@@ -372,6 +400,34 @@ Une association rôle de contenu aux étages permet de définir les permissions 
 
 *Nom technique:* ```contentRoleToFloorUpdatedBies```
 <PH code="userCompany:contentRoleToFloorUpdatedBies"/>
+
+### Associations typologie d'espace aux bâtiments {#room-type-building-created-bies}
+
+Une association typologie d'espace aux bâtiments permet de définir les types d'espaces disponibles dans chaque bâtiment
+
+*Nom technique:* ```roomTypeBuildingCreatedBies```
+<PH code="userCompany:roomTypeBuildingCreatedBies"/>
+
+### Associations typologie d'espace aux bâtiments {#room-type-building-updated-bies}
+
+Une association typologie d'espace aux bâtiments permet de définir les types d'espaces disponibles dans chaque bâtiment
+
+*Nom technique:* ```roomTypeBuildingUpdatedBies```
+<PH code="userCompany:roomTypeBuildingUpdatedBies"/>
+
+### Associations typologie d'espace aux étages {#room-type-floor-created-bies}
+
+Une association typologie d'espace aux étages permet de définir les types d'espaces disponibles dans chaque étage
+
+*Nom technique:* ```roomTypeFloorCreatedBies```
+<PH code="userCompany:roomTypeFloorCreatedBies"/>
+
+### Associations typologie d'espace aux étages {#room-type-floor-updated-bies}
+
+Une association typologie d'espace aux étages permet de définir les types d'espaces disponibles dans chaque étage
+
+*Nom technique:* ```roomTypeFloorUpdatedBies```
+<PH code="userCompany:roomTypeFloorUpdatedBies"/>
 
 ### Associations utilisateur de l'entreprise au rôle {#jup-user-company-to-jup-roles}
 
@@ -667,34 +723,6 @@ Une fonctionnalité représente une caractéristique ou une capacité spécifiqu
 *Nom technique:* ```featureUpdatedBies```
 <PH code="userCompany:featureUpdatedBies"/>
 
-### Groupes de typologies d'espace des bâtiments {#room-type-group-building-created-bies}
-
-
-
-*Nom technique:* ```roomTypeGroupBuildingCreatedBies```
-<PH code="userCompany:roomTypeGroupBuildingCreatedBies"/>
-
-### Groupes de typologies d'espace des bâtiments {#room-type-group-building-updated-bies}
-
-
-
-*Nom technique:* ```roomTypeGroupBuildingUpdatedBies```
-<PH code="userCompany:roomTypeGroupBuildingUpdatedBies"/>
-
-### Groupes de typologies d'espace des étages {#room-type-group-floor-created-bies}
-
-
-
-*Nom technique:* ```roomTypeGroupFloorCreatedBies```
-<PH code="userCompany:roomTypeGroupFloorCreatedBies"/>
-
-### Groupes de typologies d'espace des étages {#room-type-group-floor-updated-bies}
-
-
-
-*Nom technique:* ```roomTypeGroupFloorUpdatedBies```
-<PH code="userCompany:roomTypeGroupFloorUpdatedBies"/>
-
 ### Hôtes de messages pour fenêtre contextuelle {#opener-post-message-host-created-bies}
 
 Un hôte de message pour fenêtre contextuelle est un élément qui permet de communiquer avec une fenêtre contextuelle ouverte sur les actions du plan
@@ -809,14 +837,14 @@ Ce sont les personnes entrées dans la base de données de Surfy
 
 ### Points des espaces {#room-point-created-bies}
 
-
+Un point des espaces définit les coordonnées géométriques pour dessiner le contour d'un espace
 
 *Nom technique:* ```roomPointCreatedBies```
 <PH code="userCompany:roomPointCreatedBies"/>
 
 ### Points des espaces {#room-point-updated-bies}
 
-
+Un point des espaces définit les coordonnées géométriques pour dessiner le contour d'un espace
 
 *Nom technique:* ```roomPointUpdatedBies```
 <PH code="userCompany:roomPointUpdatedBies"/>
@@ -865,14 +893,14 @@ Permet de définir les différents profils sécurité associables à des personn
 
 ### Qualifications de segments {#room-point-segment-created-bies}
 
-
+Une qualification de segment permet de définir les propriétés d'affichage et d'orientation d'un segment entre deux points d'espace
 
 *Nom technique:* ```roomPointSegmentCreatedBies```
 <PH code="userCompany:roomPointSegmentCreatedBies"/>
 
 ### Qualifications de segments {#room-point-segment-updated-bies}
 
-
+Une qualification de segment permet de définir les propriétés d'affichage et d'orientation d'un segment entre deux points d'espace
 
 *Nom technique:* ```roomPointSegmentUpdatedBies```
 <PH code="userCompany:roomPointSegmentUpdatedBies"/>
@@ -893,14 +921,14 @@ Permet de définir les différents profils sécurité associables à des personn
 
 ### Relations personne à personne {#person-to-person-created-bies}
 
-
+Une relation personne à personne permet de définir les liens hiérarchiques ou organisationnels entre les personnes
 
 *Nom technique:* ```personToPersonCreatedBies```
 <PH code="userCompany:personToPersonCreatedBies"/>
 
 ### Relations personne à personne {#person-to-person-updated-bies}
 
-
+Une relation personne à personne permet de définir les liens hiérarchiques ou organisationnels entre les personnes
 
 *Nom technique:* ```personToPersonUpdatedBies```
 <PH code="userCompany:personToPersonUpdatedBies"/>
@@ -977,14 +1005,14 @@ Permet de définir tous les types de contrat des personnes vis à vis de l'entre
 
 ### Structures {#structure-created-bies}
 
-
+Une structure définit une forme géométrique qui peut être utilisée pour calibrer et positionner des éléments sur des cartes
 
 *Nom technique:* ```structureCreatedBies```
 <PH code="userCompany:structureCreatedBies"/>
 
 ### Structures {#structure-updated-bies}
 
-
+Une structure définit une forme géométrique qui peut être utilisée pour calibrer et positionner des éléments sur des cartes
 
 *Nom technique:* ```structureUpdatedBies```
 <PH code="userCompany:structureUpdatedBies"/>
@@ -1159,14 +1187,14 @@ Un type de fait permet de catégoriser les différents types de données factuel
 
 ### Types de relation entre personnes {#person-to-person-type-created-bies}
 
-
+Un type de relation entre personnes définit les différents types de liens qui peuvent exister entre les personnes
 
 *Nom technique:* ```personToPersonTypeCreatedBies```
 <PH code="userCompany:personToPersonTypeCreatedBies"/>
 
 ### Types de relation entre personnes {#person-to-person-type-updated-bies}
 
-
+Un type de relation entre personnes définit les différents types de liens qui peuvent exister entre les personnes
 
 *Nom technique:* ```personToPersonTypeUpdatedBies```
 <PH code="userCompany:personToPersonTypeUpdatedBies"/>
@@ -1184,34 +1212,6 @@ Un type de fait permet de catégoriser les différents types de données factuel
 
 *Nom technique:* ```roomTypeUpdatedBies```
 <PH code="userCompany:roomTypeUpdatedBies"/>
-
-### Typologies d'espace des bâtiments {#room-type-building-created-bies}
-
-
-
-*Nom technique:* ```roomTypeBuildingCreatedBies```
-<PH code="userCompany:roomTypeBuildingCreatedBies"/>
-
-### Typologies d'espace des bâtiments {#room-type-building-updated-bies}
-
-
-
-*Nom technique:* ```roomTypeBuildingUpdatedBies```
-<PH code="userCompany:roomTypeBuildingUpdatedBies"/>
-
-### Typologies d'espace des étages {#room-type-floor-created-bies}
-
-
-
-*Nom technique:* ```roomTypeFloorCreatedBies```
-<PH code="userCompany:roomTypeFloorCreatedBies"/>
-
-### Typologies d'espace des étages {#room-type-floor-updated-bies}
-
-
-
-*Nom technique:* ```roomTypeFloorUpdatedBies```
-<PH code="userCompany:roomTypeFloorUpdatedBies"/>
 
 ### Utilisateurs d'api {#api-user-created-bies}
 

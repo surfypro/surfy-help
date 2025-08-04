@@ -22,7 +22,7 @@ An API user role association allows you to define access permissions to API feat
 
 ### Role {#jup-role}
 
-
+A role defines access permissions to features in the user interface
 
 *Technical name:* ```jupRole```
 <PH code="apiUserToJupRole:jupRole"/>

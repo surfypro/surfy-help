@@ -1,7 +1,7 @@
-# Groupe de typologie d'espace des étages
+# Association groupe de typologie d'espace aux étages
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Une association groupe de typologie d'espace aux étages permet de définir les groupes de types d'espaces disponibles dans chaque étage
 
 <OH code="roomTypeGroupFloor"/>
 
@@ -165,7 +165,7 @@ Les étages represent un plateau de travail ou un niveau d'un bâtiment
 
 ### Groupe de typologie d'espace {#room-type-group}
 
-
+Un groupe de typologie d'espace permet de regrouper plusieurs types d'espaces pour faciliter leur gestion et leur affichage
 
 *Nom technique:* ```roomTypeGroup```
 <PH code="roomTypeGroupFloor:roomTypeGroup"/>

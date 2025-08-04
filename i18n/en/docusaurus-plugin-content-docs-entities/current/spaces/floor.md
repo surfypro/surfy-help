@@ -73,14 +73,14 @@ The navigation graph allows you to calculate the shortest paths between the poin
 
 ### Number of assignments {#people-count}
 
-The number of people assigned to the floor, either directly assigned to spaces, or through a workstation
+
 
 *Technical name:* ```peopleCount```
 <PH code="floor:peopleCount"/>
 
 ### Number of flex positions {#flex-workplaces-count}
 
-Number of flex posts in the floor
+Total number of flex positions
 
 *Technical name:* ```flexWorkplacesCount```
 <PH code="floor:flexWorkplacesCount"/>
@@ -94,24 +94,17 @@ The total number of seats
 
 ### Number of shared workstations {#shared-workplaces-count}
 
-Number of workstations shared on the floor by at least 2 people
+Total number of workstations shared by at least 2 people
 
 *Technical name:* ```sharedWorkplacesCount```
 <PH code="floor:sharedWorkplacesCount"/>
 
 ### Number of spaces {#rooms-count}
 
-The number of spaces present in this floor
+The total number of spaces
 
 *Technical name:* ```roomsCount```
 <PH code="floor:roomsCount"/>
-
-### Number of total assignments {#total-people-count}
-
-The number of people assigned to the floor, either directly assigned to spaces, or through a workstation
-
-*Technical name:* ```totalPeopleCount```
-<PH code="floor:totalPeopleCount"/>
 
 ### Number of transit workstations {#transit-workplaces-count}
 
@@ -122,14 +115,14 @@ Number of temporary workstations, these positions are not counted in free positi
 
 ### Number of vacancies {#free-workplaces-count}
 
-Number of free extensions on the floor
+Total number of vacancies
 
 *Technical name:* ```freeWorkplacesCount```
 <PH code="floor:freeWorkplacesCount"/>
 
 ### Number of workstations {#workplaces-count}
 
-The number of workstations in the floor is calculated automatically
+The total number of workstations in the spaces
 
 *Technical name:* ```workplacesCount```
 <PH code="floor:workplacesCount"/>
@@ -143,7 +136,7 @@ Allows you to know the occupancy rate of workstations, it is the number of peopl
 
 ### Occupancy ratio {#people-ratio}
 
-The occupancy ratio is the number of square meters on the floor divided by the number of people assigned either directly to the spaces or via a workstation, this value is calculated
+The occupancy ratio is the number of square meters divided by the number of people assigned either directly to the spaces or via a workstation
 
 *Technical name:* ```peopleRatio```
 <PH code="floor:peopleRatio"/>
@@ -171,7 +164,7 @@ The rate of places per workstation is the total capacity of the spaces divided b
 
 ### Rate of shared workstations {#shared-workplaces-ratio}
 
-Rate of workstations shared by at least 2 people compared to all the workstations on the floor
+Percentage of workstations shared by at least 2 people compared to all workstations
 
 *Technical name:* ```sharedWorkplacesRatio```
 <PH code="floor:sharedWorkplacesRatio"/>
@@ -197,9 +190,16 @@ The total seat capacity is the sum of the number of seats and the non-seated cap
 *Technical name:* ```totalCapacityCount```
 <PH code="floor:totalCapacityCount"/>
 
+### Total number of assignments {#total-people-count}
+
+The total number of people assigned, either directly assigned to spaces or through a workstation
+
+*Technical name:* ```totalPeopleCount```
+<PH code="floor:totalPeopleCount"/>
+
 ### Workstation ratio {#workplaces-ratio}
 
-The workstation ratio is the number of square meters in the floor divided by the number of workstations, this value is calculated automatically
+The workstation ratio is the number of square meters divided by the number of workstations
 
 *Technical name:* ```workplacesRatio```
 <PH code="floor:workplacesRatio"/>
@@ -224,7 +224,7 @@ The scale allows us to calculate in proportion the actual areas and sizes of obj
 
 ### Structure {#structure}
 
-
+A structure defines a geometric shape that can be used to calibrate and position features on maps
 
 *Technical name:* ```structure```
 <PH code="floor:structure"/>
@@ -232,40 +232,40 @@ The scale allows us to calculate in proportion the actual areas and sizes of obj
 
 ## Associated entities (list) {#properties-has-many}
 
-### Analysis layers per floor {#dimension-floors}
+### Analysis layer associations to floors {#dimension-floors}
 
-
+An analysis layer to floor association allows you to define specific analysis layers for each floor
 
 *Technical name:* ```dimensionFloors```
 <PH code="floor:dimensionFloors"/>
 
-### Floor cost centers {#cost-center-floors}
+### Associations group of space typology on the floors {#room-type-group-floors}
 
+A space typology group association on floors allows you to define the groups of space types available on each floor
 
+*Technical name:* ```roomTypeGroupFloors```
+<PH code="floor:roomTypeGroupFloors"/>
 
-*Technical name:* ```costCenterFloors```
-<PH code="floor:costCenterFloors"/>
+### Associations of space typology on the floors {#room-type-floors}
 
-### Floor organization {#organization-floors}
-
-
-
-*Technical name:* ```organizationFloors```
-<PH code="floor:organizationFloors"/>
-
-### Floor space typologies {#room-type-floors}
-
-
+A space typology association with floors makes it possible to define the types of spaces available on each floor
 
 *Technical name:* ```roomTypeFloors```
 <PH code="floor:roomTypeFloors"/>
 
-### Floor space typology groups {#room-type-group-floors}
+### Associations organization on the floors {#organization-floors}
 
+An organizational association on floors allows you to define the organizations responsible for each floor
 
+*Technical name:* ```organizationFloors```
+<PH code="floor:organizationFloors"/>
 
-*Technical name:* ```roomTypeGroupFloors```
-<PH code="floor:roomTypeGroupFloors"/>
+### Cost center associations on floors {#cost-center-floors}
+
+A cost center to floor association allows you to define specific cost centers for each floor
+
+*Technical name:* ```costCenterFloors```
+<PH code="floor:costCenterFloors"/>
 
 ### Floors included in the configuration of the transformation of partner exports {#partner-export-mapping-configuration-to-floors}
 
@@ -276,7 +276,7 @@ The scale allows us to calculate in proportion the actual areas and sizes of obj
 
 ### Points of spaces {#room-points}
 
-
+A point in spaces defines the geometric coordinates for drawing the outline of a space
 
 *Technical name:* ```roomPoints```
 <PH code="floor:roomPoints"/>

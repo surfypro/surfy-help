@@ -83,7 +83,7 @@
             },
             "structure": {
                 "label": "Structure",
-                "description": null
+                "description": "Une structure définit une forme géométrique qui peut être utilisée pour calibrer et positionner des éléments sur des cartes"
             },
             "structurePoint": {
                 "label": " Structure Point",
@@ -99,7 +99,7 @@
             },
             "roomTypeGroup": {
                 "label": "Groupe de typologie d'espace",
-                "description": null
+                "description": "Un groupe de typologie d'espace permet de regrouper plusieurs types d'espaces pour faciliter leur gestion et leur affichage"
             },
             "roomType": {
                 "label": "Typologie d'espace",
@@ -107,15 +107,15 @@
             },
             "roomTypeGroupToRoomType": {
                 "label": "Association groupe de typologie d'espace à typologie d'espace",
-                "description": null
+                "description": "Une association groupe de typologie d'espace à typologie d'espace permet de définir quels types d'espaces appartiennent à quels groupes"
             },
             "roomTypeGroupFloor": {
-                "label": "Groupe de typologie d'espace des étages",
-                "description": null
+                "label": "Association groupe de typologie d'espace aux étages",
+                "description": "Une association groupe de typologie d'espace aux étages permet de définir les groupes de types d'espaces disponibles dans chaque étage"
             },
             "roomTypeGroupBuilding": {
-                "label": "Groupe de typologie d'espace des bâtiments",
-                "description": null
+                "label": "Association groupe de typologie d'espace aux bâtiments",
+                "description": "Une association groupe de typologie d'espace aux bâtiments permet de définir les groupes de types d'espaces disponibles dans chaque bâtiment"
             },
             "costCenter": {
                 "label": "Centre de coût",
@@ -135,7 +135,7 @@
             },
             "roomPoint": {
                 "label": "Point des espaces",
-                "description": null
+                "description": "Un point des espaces définit les coordonnées géométriques pour dessiner le contour d'un espace"
             },
             "roomPointRoom": {
                 "label": "Association entre un point et un espace",
@@ -143,11 +143,11 @@
             },
             "roomPointSegmentType": {
                 "label": "Type de segment",
-                "description": null
+                "description": "Un type de segment définit les différents types de segments qui peuvent exister entre les points d'espaces"
             },
             "roomPointSegment": {
                 "label": "Qualification de segment",
-                "description": null
+                "description": "Une qualification de segment permet de définir les propriétés d'affichage et d'orientation d'un segment entre deux points d'espace"
             },
             "itemTypePoint": {
                 "label": "Point des types d'objet",
@@ -195,11 +195,11 @@
             },
             "personToPersonType": {
                 "label": "Type de relation entre personnes",
-                "description": null
+                "description": "Un type de relation entre personnes définit les différents types de liens qui peuvent exister entre les personnes"
             },
             "personToPerson": {
                 "label": "Relation personne à personne",
-                "description": null
+                "description": "Une relation personne à personne permet de définir les liens hiérarchiques ou organisationnels entre les personnes"
             },
             "roomAffectation": {
                 "label": "Affectation d'espace",
@@ -234,12 +234,12 @@
                 "description": "Une association organisation aux bâtiments permet de définir les organisations responsables de chaque bâtiment"
             },
             "roomTypeFloor": {
-                "label": "Typologie d'espace des étages",
-                "description": null
+                "label": "Association typologie d'espace aux étages",
+                "description": "Une association typologie d'espace aux étages permet de définir les types d'espaces disponibles dans chaque étage"
             },
             "roomTypeBuilding": {
-                "label": "Typologie d'espace des bâtiments",
-                "description": null
+                "label": "Association typologie d'espace aux bâtiments",
+                "description": "Une association typologie d'espace aux bâtiments permet de définir les types d'espaces disponibles dans chaque bâtiment"
             },
             "itemToPerson": {
                 "label": "Association d'objet à personne",
@@ -815,7 +815,7 @@
             },
             "roomConnector": {
                 "id": {
-                    "label": "Identifiant du connecteur d'espace",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -1030,11 +1030,11 @@
                 },
                 "structureCreatedBies": {
                     "label": "Structures",
-                    "description": null
+                    "description": "Une structure définit une forme géométrique qui peut être utilisée pour calibrer et positionner des éléments sur des cartes"
                 },
                 "structureUpdatedBies": {
                     "label": "Structures",
-                    "description": null
+                    "description": "Une structure définit une forme géométrique qui peut être utilisée pour calibrer et positionner des éléments sur des cartes"
                 },
                 "structurePointCreatedBies": {
                     "label": " Structure Points",
@@ -1069,28 +1069,28 @@
                     "description": null
                 },
                 "roomTypeGroupToRoomTypeCreatedBies": {
-                    "label": "Associations groupes de typologies d'espace à typologies d'espace",
-                    "description": null
+                    "label": "Associations groupe de typologie d'espace à typologie d'espace",
+                    "description": "Une association groupe de typologie d'espace à typologie d'espace permet de définir quels types d'espaces appartiennent à quels groupes"
                 },
                 "roomTypeGroupToRoomTypeUpdatedBies": {
-                    "label": "Associations groupes de typologies d'espace à typologies d'espace",
-                    "description": null
+                    "label": "Associations groupe de typologie d'espace à typologie d'espace",
+                    "description": "Une association groupe de typologie d'espace à typologie d'espace permet de définir quels types d'espaces appartiennent à quels groupes"
                 },
                 "roomTypeGroupFloorCreatedBies": {
-                    "label": "Groupes de typologies d'espace des étages",
-                    "description": null
+                    "label": "Associations groupe de typologie d'espace aux étages",
+                    "description": "Une association groupe de typologie d'espace aux étages permet de définir les groupes de types d'espaces disponibles dans chaque étage"
                 },
                 "roomTypeGroupFloorUpdatedBies": {
-                    "label": "Groupes de typologies d'espace des étages",
-                    "description": null
+                    "label": "Associations groupe de typologie d'espace aux étages",
+                    "description": "Une association groupe de typologie d'espace aux étages permet de définir les groupes de types d'espaces disponibles dans chaque étage"
                 },
                 "roomTypeGroupBuildingCreatedBies": {
-                    "label": "Groupes de typologies d'espace des bâtiments",
-                    "description": null
+                    "label": "Associations groupe de typologie d'espace aux bâtiments",
+                    "description": "Une association groupe de typologie d'espace aux bâtiments permet de définir les groupes de types d'espaces disponibles dans chaque bâtiment"
                 },
                 "roomTypeGroupBuildingUpdatedBies": {
-                    "label": "Groupes de typologies d'espace des bâtiments",
-                    "description": null
+                    "label": "Associations groupe de typologie d'espace aux bâtiments",
+                    "description": "Une association groupe de typologie d'espace aux bâtiments permet de définir les groupes de types d'espaces disponibles dans chaque bâtiment"
                 },
                 "costCenterCreatedBies": {
                     "label": "Centres de coût",
@@ -1126,11 +1126,11 @@
                 },
                 "roomPointCreatedBies": {
                     "label": "Points des espaces",
-                    "description": null
+                    "description": "Un point des espaces définit les coordonnées géométriques pour dessiner le contour d'un espace"
                 },
                 "roomPointUpdatedBies": {
                     "label": "Points des espaces",
-                    "description": null
+                    "description": "Un point des espaces définit les coordonnées géométriques pour dessiner le contour d'un espace"
                 },
                 "roomPointRoomCreatedBies": {
                     "label": "Associations entre un point et un espace",
@@ -1142,11 +1142,11 @@
                 },
                 "roomPointSegmentCreatedBies": {
                     "label": "Qualifications de segments",
-                    "description": null
+                    "description": "Une qualification de segment permet de définir les propriétés d'affichage et d'orientation d'un segment entre deux points d'espace"
                 },
                 "roomPointSegmentUpdatedBies": {
                     "label": "Qualifications de segments",
-                    "description": null
+                    "description": "Une qualification de segment permet de définir les propriétés d'affichage et d'orientation d'un segment entre deux points d'espace"
                 },
                 "itemTypePointCreatedBies": {
                     "label": "Points des types d'objet",
@@ -1238,19 +1238,19 @@
                 },
                 "personToPersonTypeCreatedBies": {
                     "label": "Types de relation entre personnes",
-                    "description": null
+                    "description": "Un type de relation entre personnes définit les différents types de liens qui peuvent exister entre les personnes"
                 },
                 "personToPersonTypeUpdatedBies": {
                     "label": "Types de relation entre personnes",
-                    "description": null
+                    "description": "Un type de relation entre personnes définit les différents types de liens qui peuvent exister entre les personnes"
                 },
                 "personToPersonCreatedBies": {
                     "label": "Relations personne à personne",
-                    "description": null
+                    "description": "Une relation personne à personne permet de définir les liens hiérarchiques ou organisationnels entre les personnes"
                 },
                 "personToPersonUpdatedBies": {
                     "label": "Relations personne à personne",
-                    "description": null
+                    "description": "Une relation personne à personne permet de définir les liens hiérarchiques ou organisationnels entre les personnes"
                 },
                 "roomAffectationCreatedBies": {
                     "label": "Affectations d'espace",
@@ -1317,20 +1317,20 @@
                     "description": "Une association organisation aux bâtiments permet de définir les organisations responsables de chaque bâtiment"
                 },
                 "roomTypeFloorCreatedBies": {
-                    "label": "Typologies d'espace des étages",
-                    "description": null
+                    "label": "Associations typologie d'espace aux étages",
+                    "description": "Une association typologie d'espace aux étages permet de définir les types d'espaces disponibles dans chaque étage"
                 },
                 "roomTypeFloorUpdatedBies": {
-                    "label": "Typologies d'espace des étages",
-                    "description": null
+                    "label": "Associations typologie d'espace aux étages",
+                    "description": "Une association typologie d'espace aux étages permet de définir les types d'espaces disponibles dans chaque étage"
                 },
                 "roomTypeBuildingCreatedBies": {
-                    "label": "Typologies d'espace des bâtiments",
-                    "description": null
+                    "label": "Associations typologie d'espace aux bâtiments",
+                    "description": "Une association typologie d'espace aux bâtiments permet de définir les types d'espaces disponibles dans chaque bâtiment"
                 },
                 "roomTypeBuildingUpdatedBies": {
-                    "label": "Typologies d'espace des bâtiments",
-                    "description": null
+                    "label": "Associations typologie d'espace aux bâtiments",
+                    "description": "Une association typologie d'espace aux bâtiments permet de définir les types d'espaces disponibles dans chaque bâtiment"
                 },
                 "itemToPersonCreatedBies": {
                     "label": "Associations d'objet à personne",
@@ -1631,7 +1631,7 @@
             },
             "personGender": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifiant du genre de la personne",
                     "description": null
                 },
                 "name": {
@@ -2453,8 +2453,8 @@
                     "description": "Les étages represent un plateau de travail ou un niveau d'un bâtiment"
                 },
                 "roomTypeGroupBuildings": {
-                    "label": "Groupes de typologies d'espace des bâtiments",
-                    "description": null
+                    "label": "Associations groupe de typologie d'espace aux bâtiments",
+                    "description": "Une association groupe de typologie d'espace aux bâtiments permet de définir les groupes de types d'espaces disponibles dans chaque bâtiment"
                 },
                 "costCenterBuildings": {
                     "label": "Associations centre de coût aux bâtiments",
@@ -2473,8 +2473,8 @@
                     "description": "Une association organisation aux bâtiments permet de définir les organisations responsables de chaque bâtiment"
                 },
                 "roomTypeBuildings": {
-                    "label": "Typologies d'espace des bâtiments",
-                    "description": null
+                    "label": "Associations typologie d'espace aux bâtiments",
+                    "description": "Une association typologie d'espace aux bâtiments permet de définir les types d'espaces disponibles dans chaque bâtiment"
                 },
                 "personToBuildings": {
                     "label": "Affectations au bâtiment",
@@ -2581,7 +2581,7 @@
             },
             "structure": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifiant de la structure",
                     "description": null
                 },
                 "name": {
@@ -2667,12 +2667,12 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "structureId": {
-                    "label": "Id (structure)",
-                    "description": null
+                    "label": "Identifiant de la structure",
+                    "description": "Une structure définit une forme géométrique qui peut être utilisée pour calibrer et positionner des éléments sur des cartes"
                 },
                 "structure": {
                     "label": "Structure",
-                    "description": null
+                    "description": "Une structure définit une forme géométrique qui peut être utilisée pour calibrer et positionner des éléments sur des cartes"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -2841,12 +2841,12 @@
                     "description": "L'échelle permet de calculer en proportion les surfaces réelles et la taille des objets"
                 },
                 "structureId": {
-                    "label": "Id (structure)",
-                    "description": null
+                    "label": "Identifiant de la structure",
+                    "description": "Une structure définit une forme géométrique qui peut être utilisée pour calibrer et positionner des éléments sur des cartes"
                 },
                 "structure": {
                     "label": "Structure",
-                    "description": null
+                    "description": "Une structure définit une forme géométrique qui peut être utilisée pour calibrer et positionner des éléments sur des cartes"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -2865,8 +2865,8 @@
                     "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
                 },
                 "roomTypeGroupFloors": {
-                    "label": "Groupes de typologies d'espace des étages",
-                    "description": null
+                    "label": "Associations groupe de typologie d'espace aux étages",
+                    "description": "Une association groupe de typologie d'espace aux étages permet de définir les groupes de types d'espaces disponibles dans chaque étage"
                 },
                 "costCenterFloors": {
                     "label": "Associations centre de coût aux étages",
@@ -2878,7 +2878,7 @@
                 },
                 "roomPoints": {
                     "label": "Points des espaces",
-                    "description": null
+                    "description": "Un point des espaces définit les coordonnées géométriques pour dessiner le contour d'un espace"
                 },
                 "dimensionFloors": {
                     "label": "Associations calque d'analyse aux étages",
@@ -2889,8 +2889,8 @@
                     "description": "Une association organisation aux étages permet de définir les organisations responsables de chaque étage"
                 },
                 "roomTypeFloors": {
-                    "label": "Typologies d'espace des étages",
-                    "description": null
+                    "label": "Associations typologie d'espace aux étages",
+                    "description": "Une association typologie d'espace aux étages permet de définir les types d'espaces disponibles dans chaque étage"
                 },
                 "contentRoleToFloors": {
                     "label": "Associations rôle de contenu aux étages",
@@ -2969,7 +2969,7 @@
             },
             "roomTypeGroup": {
                 "id": {
-                    "label": "Identifiant du groupe de typologie d'espace",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -3001,21 +3001,21 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "roomTypeGroupToRoomTypes": {
-                    "label": "Associations groupes de typologies d'espace à typologies d'espace",
-                    "description": null
+                    "label": "Associations groupe de typologie d'espace à typologie d'espace",
+                    "description": "Une association groupe de typologie d'espace à typologie d'espace permet de définir quels types d'espaces appartiennent à quels groupes"
                 },
                 "roomTypeGroupFloors": {
-                    "label": "Groupes de typologies d'espace des étages",
-                    "description": null
+                    "label": "Associations groupe de typologie d'espace aux étages",
+                    "description": "Une association groupe de typologie d'espace aux étages permet de définir les groupes de types d'espaces disponibles dans chaque étage"
                 },
                 "roomTypeGroupBuildings": {
-                    "label": "Groupes de typologies d'espace des bâtiments",
-                    "description": null
+                    "label": "Associations groupe de typologie d'espace aux bâtiments",
+                    "description": "Une association groupe de typologie d'espace aux bâtiments permet de définir les groupes de types d'espaces disponibles dans chaque bâtiment"
                 }
             },
             "roomType": {
                 "id": {
-                    "label": "Identifiant de la typologie d'espace",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -3087,20 +3087,20 @@
                     "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
                 },
                 "roomTypeGroupToRoomTypes": {
-                    "label": "Associations groupes de typologies d'espace à typologies d'espace",
-                    "description": null
+                    "label": "Associations groupe de typologie d'espace à typologie d'espace",
+                    "description": "Une association groupe de typologie d'espace à typologie d'espace permet de définir quels types d'espaces appartiennent à quels groupes"
                 },
                 "rooms": {
                     "label": "Espaces",
                     "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "roomTypeFloors": {
-                    "label": "Typologies d'espace des étages",
-                    "description": null
+                    "label": "Associations typologie d'espace aux étages",
+                    "description": "Une association typologie d'espace aux étages permet de définir les types d'espaces disponibles dans chaque étage"
                 },
                 "roomTypeBuildings": {
-                    "label": "Typologies d'espace des bâtiments",
-                    "description": null
+                    "label": "Associations typologie d'espace aux bâtiments",
+                    "description": "Une association typologie d'espace aux bâtiments permet de définir les types d'espaces disponibles dans chaque bâtiment"
                 },
                 "personCompanyToRoomTypes": {
                     "label": "Types d'espaces des prestataires",
@@ -3121,7 +3121,7 @@
             },
             "roomTypeGroupToRoomType": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifiant de l'association groupe de typologie d'espace à typologie d'espace",
                     "description": null
                 },
                 "createdAt": {
@@ -3137,15 +3137,15 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "roomTypeGroupId": {
-                    "label": "Identifiant du groupe de typologie d'espace",
-                    "description": null
+                    "label": "Id (groupe de typologie d'espace)",
+                    "description": "Un groupe de typologie d'espace permet de regrouper plusieurs types d'espaces pour faciliter leur gestion et leur affichage"
                 },
                 "roomTypeGroup": {
                     "label": "Groupe de typologie d'espace",
-                    "description": null
+                    "description": "Un groupe de typologie d'espace permet de regrouper plusieurs types d'espaces pour faciliter leur gestion et leur affichage"
                 },
                 "roomTypeId": {
-                    "label": "Identifiant de la typologie d'espace",
+                    "label": "Id (typologie d'espace)",
                     "description": null
                 },
                 "roomType": {
@@ -3179,7 +3179,7 @@
             },
             "roomTypeGroupFloor": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifiant de l'association groupe de typologie d'espace aux étages",
                     "description": null
                 },
                 "roomsArea": {
@@ -3275,12 +3275,12 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "roomTypeGroupId": {
-                    "label": "Identifiant du groupe de typologie d'espace",
-                    "description": null
+                    "label": "Id (groupe de typologie d'espace)",
+                    "description": "Un groupe de typologie d'espace permet de regrouper plusieurs types d'espaces pour faciliter leur gestion et leur affichage"
                 },
                 "roomTypeGroup": {
                     "label": "Groupe de typologie d'espace",
-                    "description": null
+                    "description": "Un groupe de typologie d'espace permet de regrouper plusieurs types d'espaces pour faciliter leur gestion et leur affichage"
                 },
                 "floorId": {
                     "label": "Id (étage)",
@@ -3317,7 +3317,7 @@
             },
             "roomTypeGroupBuilding": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifiant de l'association groupe de typologie d'espace aux bâtiments",
                     "description": null
                 },
                 "roomsArea": {
@@ -3413,12 +3413,12 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "roomTypeGroupId": {
-                    "label": "Identifiant du groupe de typologie d'espace",
-                    "description": null
+                    "label": "Id (groupe de typologie d'espace)",
+                    "description": "Un groupe de typologie d'espace permet de regrouper plusieurs types d'espaces pour faciliter leur gestion et leur affichage"
                 },
                 "roomTypeGroup": {
                     "label": "Groupe de typologie d'espace",
-                    "description": null
+                    "description": "Un groupe de typologie d'espace permet de regrouper plusieurs types d'espaces pour faciliter leur gestion et leur affichage"
                 },
                 "buildingId": {
                     "label": "Identifiant du bâtiment",
@@ -3817,7 +3817,7 @@
             },
             "room": {
                 "id": {
-                    "label": "Identifiant de l'espace",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -3846,15 +3846,15 @@
                 },
                 "workplacesCount": {
                     "label": "Nombre de postes de travail",
-                    "description": "Le nombre de postes de travail dans l'espace est calculé automatiquement"
+                    "description": "Le nombre total de postes de travail dans les espaces"
                 },
                 "workplacesRatio": {
-                    "label": "Ratio par poste de travail",
-                    "description": "Le ratio par poste de travail est le nombre de métres carrés de l'espace divisé par le nombre de postes de travail, cette valeur est calculée automatiquement"
+                    "label": "Ratio postes de travail",
+                    "description": "Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail"
                 },
                 "peopleCount": {
                     "label": "Nombre d'affectations",
-                    "description": "Le nombre de personnes affectées dans l'espace, soit directement, soit à travers un poste de travail"
+                    "description": null
                 },
                 "seatsCount": {
                     "label": "Nombre de places assises",
@@ -3862,7 +3862,7 @@
                 },
                 "peopleRatio": {
                     "label": "Ratio d'occupation",
-                    "description": "Le ratio d'occupation est le nombre de métres carrés de l'espace divisé par le nombre de personnes affectées aux espaces, soit directement, soit via un poste de travail , cette valeur est calculée"
+                    "description": "Le ratio d'occupation est le nombre de métres carrés divisé par le nombre de personnes affectées soit directement dans les espaces, soit via un poste de travail"
                 },
                 "occupancyRate": {
                     "label": "Taux d'occupation",
@@ -3874,19 +3874,19 @@
                 },
                 "freeWorkplacesCount": {
                     "label": "Nombre de postes libres",
-                    "description": "Nombre de postes libres dans l'espace"
+                    "description": "Nombre total de postes libres"
                 },
                 "flexWorkplacesCount": {
                     "label": "Nombre de postes flex",
-                    "description": "Nombre de postes flex dans l'espace"
+                    "description": "Nombre total de postes flex"
                 },
                 "sharedWorkplacesCount": {
                     "label": "Nombre de postes de travail partagés",
-                    "description": "Nombre de postes de travail partagés par au moins 2 personnes"
+                    "description": "Nombre total de postes de travail partagés par au moins 2 personnes"
                 },
                 "sharedWorkplacesRatio": {
                     "label": "Taux de postes de travail partagés",
-                    "description": "Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail de l'espace"
+                    "description": "Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail"
                 },
                 "transitWorkplacesCount": {
                     "label": "Nombre de postes de travail de passage",
@@ -3969,7 +3969,7 @@
                     "description": "L'état d'occupation permet d'identifier l'état en temps réel d'un espace ou d'un poste de travail, comme par exemple s'il est libre, occupé ou squaté, l'état d'occupation est mis à jour par les objets connectés présent dans l'espace"
                 },
                 "roomTypeId": {
-                    "label": "Identifiant de la typologie d'espace",
+                    "label": "Id (typologie d'espace)",
                     "description": null
                 },
                 "roomType": {
@@ -4001,7 +4001,7 @@
                     "description": "Permet de déterminer le mode de calcul de la clé de répartition des coûts"
                 },
                 "roomConnectorId": {
-                    "label": "Identifiant du connecteur d'espace",
+                    "label": "Id (Connecteur d'espace)",
                     "description": "Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces dans des étages différents"
                 },
                 "roomConnector": {
@@ -4059,15 +4059,15 @@
             },
             "roomPoint": {
                 "id": {
-                    "label": "Identifiant du point des espaces",
+                    "label": "Id",
                     "description": null
                 },
                 "x": {
-                    "label": "x",
+                    "label": "Coordonnée X",
                     "description": "Coordonnée sur l'axe X"
                 },
                 "y": {
-                    "label": "y",
+                    "label": "Coordonnée Y",
                     "description": "Coordonnée sur l'axe Y"
                 },
                 "createdAt": {
@@ -4112,11 +4112,11 @@
                 },
                 "roomPointSegmentStarts": {
                     "label": "Qualifications de segments",
-                    "description": null
+                    "description": "Une qualification de segment permet de définir les propriétés d'affichage et d'orientation d'un segment entre deux points d'espace"
                 },
                 "roomPointSegmentEnds": {
                     "label": "Qualifications de segments",
-                    "description": null
+                    "description": "Une qualification de segment permet de définir les propriétés d'affichage et d'orientation d'un segment entre deux points d'espace"
                 },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
@@ -4129,12 +4129,12 @@
             },
             "roomPointRoom": {
                 "id": {
-                    "label": "Identifiant de l'association entre un point et un espace",
-                    "description": ""
+                    "label": "Id",
+                    "description": null
                 },
                 "sortIndex": {
                     "label": "Index de tri",
-                    "description": ""
+                    "description": "L'ordre du point dans la séquence pour former le polygone de l'espace"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -4149,7 +4149,7 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "roomId": {
-                    "label": "Identifiant de l'espace",
+                    "label": "Id (espace)",
                     "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "room": {
@@ -4157,12 +4157,12 @@
                     "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "roomPointId": {
-                    "label": "Identifiant du point",
-                    "description": null
+                    "label": "Id (point des espaces)",
+                    "description": "Un point des espaces définit les coordonnées géométriques pour dessiner le contour d'un espace"
                 },
                 "roomPoint": {
                     "label": "Point des espaces",
-                    "description": null
+                    "description": "Un point des espaces définit les coordonnées géométriques pour dessiner le contour d'un espace"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -4191,7 +4191,7 @@
             },
             "roomPointSegmentType": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifiant du type de segment",
                     "description": null
                 },
                 "name": {
@@ -4216,12 +4216,12 @@
                 },
                 "roomPointSegments": {
                     "label": "Qualifications de segments",
-                    "description": null
+                    "description": "Une qualification de segment permet de définir les propriétés d'affichage et d'orientation d'un segment entre deux points d'espace"
                 }
             },
             "roomPointSegment": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifiant de la qualification de segment",
                     "description": null
                 },
                 "reversePoints": {
@@ -4245,28 +4245,28 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "roomPointSegmentTypeId": {
-                    "label": "Id (Type de segment)",
-                    "description": null
+                    "label": "Identifiant du type de segment",
+                    "description": "Un type de segment définit les différents types de segments qui peuvent exister entre les points d'espaces"
                 },
                 "roomPointSegmentType": {
                     "label": "Type de segment",
-                    "description": null
+                    "description": "Un type de segment définit les différents types de segments qui peuvent exister entre les points d'espaces"
                 },
                 "roomPointStartId": {
                     "label": "Id (point des espaces)",
-                    "description": null
+                    "description": "Un point des espaces définit les coordonnées géométriques pour dessiner le contour d'un espace"
                 },
                 "roomPointStart": {
                     "label": " Room Point Start",
-                    "description": null
+                    "description": "Un point des espaces définit les coordonnées géométriques pour dessiner le contour d'un espace"
                 },
                 "roomPointEndId": {
                     "label": "Id (point des espaces)",
-                    "description": null
+                    "description": "Un point des espaces définit les coordonnées géométriques pour dessiner le contour d'un espace"
                 },
                 "roomPointEnd": {
                     "label": " Room Point End",
-                    "description": null
+                    "description": "Un point des espaces définit les coordonnées géométriques pour dessiner le contour d'un espace"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -4537,7 +4537,7 @@
             },
             "dimensionRoom": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifiant de l'association calque d'analyse aux espaces",
                     "description": null
                 },
                 "createdAt": {
@@ -4561,7 +4561,7 @@
                     "description": "Un calque d'analyse permet de catégoriser et analyser les espaces selon différents critères pour des analyses statistiques et de reporting"
                 },
                 "roomId": {
-                    "label": "Identifiant de l'espace",
+                    "label": "Id (espace)",
                     "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "room": {
@@ -5019,7 +5019,7 @@
             },
             "personState": {
                 "id": {
-                    "label": "Identifiant du statut des personnes",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -5069,7 +5069,7 @@
             },
             "personSecurityProfile": {
                 "id": {
-                    "label": "Identifiant du profil de sécurité des personnes",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -5235,7 +5235,7 @@
                     "description": "Le Service de rattachement de la personne"
                 },
                 "personStateId": {
-                    "label": "Identifiant du statut des personnes",
+                    "label": "Id (statut des personnes)",
                     "description": "Permet de définir tous les types de contrat des personnes vis à vis de l'entreprise"
                 },
                 "personState": {
@@ -5243,7 +5243,7 @@
                     "description": "Permet d'indiquer le type de contrat de la personne vis à vis de l'entreprise"
                 },
                 "personSecurityProfileId": {
-                    "label": "Identifiant du profil de sécurité des personnes",
+                    "label": "Id (profil de sécurité des personnes)",
                     "description": "Permet de définir les différents profils sécurité associables à des personnes"
                 },
                 "personSecurityProfile": {
@@ -5267,7 +5267,7 @@
                     "description": "L'entreprise prestataire permet de gérer le personnel prestataire par entreprise d'appartenance"
                 },
                 "personGenderId": {
-                    "label": "Id (Genre de la personne)",
+                    "label": "Identifiant du genre de la personne",
                     "description": "Permet de dénombrer chaque genre, par exemple pour la gestion des sanitaires"
                 },
                 "personGender": {
@@ -5345,7 +5345,7 @@
             },
             "personToPersonType": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifiant du type de relation entre personnes",
                     "description": null
                 },
                 "labelForward": {
@@ -5390,7 +5390,7 @@
                 },
                 "personToPeople": {
                     "label": "Relations personne à personne",
-                    "description": null
+                    "description": "Une relation personne à personne permet de définir les liens hiérarchiques ou organisationnels entre les personnes"
                 },
                 "companyId": {
                     "label": "Identifiant de l'entreprise",
@@ -5403,7 +5403,7 @@
             },
             "personToPerson": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifiant de la relation personne à personne",
                     "description": null
                 },
                 "createdAt": {
@@ -5419,12 +5419,12 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "personToPersonTypeId": {
-                    "label": "Id (Type de relation entre personnes)",
-                    "description": null
+                    "label": "Identifiant du type de relation entre personnes",
+                    "description": "Un type de relation entre personnes définit les différents types de liens qui peuvent exister entre les personnes"
                 },
                 "personToPersonType": {
                     "label": "Type de relation entre personnes",
-                    "description": null
+                    "description": "Un type de relation entre personnes définit les différents types de liens qui peuvent exister entre les personnes"
                 },
                 "personSourceId": {
                     "label": "Id (personne)",
@@ -5469,7 +5469,7 @@
             },
             "roomAffectation": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifiant de l'affectation d'espace",
                     "description": null
                 },
                 "createdAt": {
@@ -5493,7 +5493,7 @@
                     "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "roomId": {
-                    "label": "Identifiant de l'espace",
+                    "label": "Id (espace)",
                     "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "room": {
@@ -5743,7 +5743,7 @@
                     "description": null
                 },
                 "roomId": {
-                    "label": "Identifiant de l'espace",
+                    "label": "Id (espace)",
                     "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "room": {
@@ -5861,7 +5861,7 @@
                     "description": "Un type d'objet permet de catégoriser et définir les caractéristiques des objets physiques présents dans les espaces de travail"
                 },
                 "roomId": {
-                    "label": "Identifiant de l'espace",
+                    "label": "Id (espace)",
                     "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "room": {
@@ -6285,7 +6285,7 @@
             },
             "roomTypeFloor": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifiant de l'association typologie d'espace aux étages",
                     "description": null
                 },
                 "roomsArea": {
@@ -6381,7 +6381,7 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "roomTypeId": {
-                    "label": "Identifiant de la typologie d'espace",
+                    "label": "Id (typologie d'espace)",
                     "description": null
                 },
                 "roomType": {
@@ -6423,7 +6423,7 @@
             },
             "roomTypeBuilding": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifiant de l'association typologie d'espace aux bâtiments",
                     "description": null
                 },
                 "roomsArea": {
@@ -6519,7 +6519,7 @@
                     "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
                 },
                 "roomTypeId": {
-                    "label": "Identifiant de la typologie d'espace",
+                    "label": "Id (typologie d'espace)",
                     "description": null
                 },
                 "roomType": {
@@ -6619,7 +6619,7 @@
             },
             "personToBuilding": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifiant de l'affectation au bâtiment",
                     "description": null
                 },
                 "addToPeopleCount": {
@@ -6835,7 +6835,7 @@
             },
             "personWorkingLocation": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifiant de l'emplacement de travail des personnes",
                     "description": null
                 },
                 "date": {
@@ -6913,7 +6913,7 @@
             },
             "personToWorkplaceBooking": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifiant de la réservation au poste de travail des personnes",
                     "description": null
                 },
                 "startDatetime": {
@@ -6953,7 +6953,7 @@
                     "description": null
                 },
                 "personWorkingLocationId": {
-                    "label": "Id (Emplacement de travail des personnes)",
+                    "label": "Identifiant de l'emplacement de travail des personnes",
                     "description": "Un emplacement de travail des personnes définie le lieu de travail des personnes"
                 },
                 "personWorkingLocation": {
@@ -6987,7 +6987,7 @@
             },
             "personToRoomBooking": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifiant de la réservation à l'espace des personnes",
                     "description": null
                 },
                 "startDatetime": {
@@ -7019,7 +7019,7 @@
                     "description": "Ce sont les personnes entrées dans la base de données de Surfy"
                 },
                 "roomId": {
-                    "label": "Identifiant de l'espace",
+                    "label": "Id (espace)",
                     "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "room": {
@@ -7027,7 +7027,7 @@
                     "description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces"
                 },
                 "personWorkingLocationId": {
-                    "label": "Id (Emplacement de travail des personnes)",
+                    "label": "Identifiant de l'emplacement de travail des personnes",
                     "description": "Un emplacement de travail des personnes définie le lieu de travail des personnes"
                 },
                 "personWorkingLocation": {
@@ -7061,7 +7061,7 @@
             },
             "personToDimensionBooking": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifiant de la réservation au calque d'affectation des personnes",
                     "description": null
                 },
                 "startDatetime": {
@@ -7101,7 +7101,7 @@
                     "description": "Un calque d'analyse permet de catégoriser et analyser les espaces selon différents critères pour des analyses statistiques et de reporting"
                 },
                 "personWorkingLocationId": {
-                    "label": "Id (Emplacement de travail des personnes)",
+                    "label": "Identifiant de l'emplacement de travail des personnes",
                     "description": "Un emplacement de travail des personnes définie le lieu de travail des personnes"
                 },
                 "personWorkingLocation": {
@@ -7165,7 +7165,7 @@
             },
             "personCompanyToItemType": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifiant du type d'objet du prestataire",
                     "description": null
                 },
                 "createdAt": {
@@ -7231,7 +7231,7 @@
             },
             "personCompanyToRoomType": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifiant du type d'espace du prestataire",
                     "description": null
                 },
                 "createdAt": {
@@ -7255,7 +7255,7 @@
                     "description": "L'entreprise prestataire permet de gérer le personnel prestataire par entreprise d'appartenance"
                 },
                 "roomTypeId": {
-                    "label": "Identifiant de la typologie d'espace",
+                    "label": "Id (typologie d'espace)",
                     "description": null
                 },
                 "roomType": {
@@ -7297,7 +7297,7 @@
             },
             "personCompanyToItem": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifiant de l'intervention sur un objet",
                     "description": null
                 },
                 "datetime": {
@@ -8865,7 +8865,7 @@
                     "description": null
                 },
                 "roomTypeId": {
-                    "label": "Identifiant de la typologie d'espace",
+                    "label": "Id (typologie d'espace)",
                     "description": null
                 },
                 "roomType": {

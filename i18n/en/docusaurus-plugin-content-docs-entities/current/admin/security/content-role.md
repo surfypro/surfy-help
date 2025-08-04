@@ -39,19 +39,19 @@ Content role name
 *Technical name:* ```contentRoleToJupUiTenantOperations```
 <PH code="contentRole:contentRoleToJupUiTenantOperations"/>
 
+### Associations content role to enterprise user {#content-role-to-user-companies}
+
+A content role to enterprise user association allows you to define specific access permissions for enterprise users for a given role
+
+*Technical name:* ```contentRoleToUserCompanies```
+<PH code="contentRole:contentRoleToUserCompanies"/>
+
 ### Authentication rule to content role associations {#user-registration-tenant-rule-to-content-roles}
 
 
 
 *Technical name:* ```userRegistrationTenantRuleToContentRoles```
 <PH code="contentRole:userRegistrationTenantRuleToContentRoles"/>
-
-### Company User Content Roles {#content-role-to-user-companies}
-
-
-
-*Technical name:* ```contentRoleToUserCompanies```
-<PH code="contentRole:contentRoleToUserCompanies"/>
 
 ### Role associations of content to buildings {#content-role-to-buildings}
 

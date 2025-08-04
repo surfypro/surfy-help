@@ -30,9 +30,9 @@
 
 ## Associated entities (unique) {#properties-belongs-to}
 
-###  Feature Family {#feature-family}
+### Family of features {#feature-family}
 
-
+A feature family allows you to group related features according to their domain or use.
 
 *Technical name:* ```featureFamily```
 <PH code="featureGroup:featureFamily"/>
@@ -40,9 +40,9 @@
 
 ## Associated entities (list) {#properties-has-many}
 
-###  Features {#features}
+### Features {#features}
 
-
+A feature represents a specific characteristic or capability available in the system
 
 *Technical name:* ```features```
 <PH code="featureGroup:features"/>

@@ -77,14 +77,14 @@ Allows to know the rate of use of workstations, it is the inverse of the number 
 
 ### Number of assignments {#people-count}
 
-The number of people assigned to the space, either directly or through a workstation
+
 
 *Technical name:* ```peopleCount```
 <PH code="room:peopleCount"/>
 
 ### Number of flex positions {#flex-workplaces-count}
 
-Number of flex positions in the space
+Total number of flex positions
 
 *Technical name:* ```flexWorkplacesCount```
 <PH code="room:flexWorkplacesCount"/>
@@ -105,7 +105,7 @@ The total number of seats
 
 ### Number of shared workstations {#shared-workplaces-count}
 
-Number of workstations shared by at least 2 people
+Total number of workstations shared by at least 2 people
 
 *Technical name:* ```sharedWorkplacesCount```
 <PH code="room:sharedWorkplacesCount"/>
@@ -119,14 +119,14 @@ Number of temporary workstations, these positions are not counted in free positi
 
 ### Number of vacancies {#free-workplaces-count}
 
-Number of free positions in the space
+Total number of vacancies
 
 *Technical name:* ```freeWorkplacesCount```
 <PH code="room:freeWorkplacesCount"/>
 
 ### Number of workstations {#workplaces-count}
 
-The number of workstations in the space is calculated automatically
+The total number of workstations in the spaces
 
 *Technical name:* ```workplacesCount```
 <PH code="room:workplacesCount"/>
@@ -140,7 +140,7 @@ Allows you to know the occupancy rate of workstations, it is the number of peopl
 
 ### Occupancy ratio {#people-ratio}
 
-The occupancy ratio is the number of square meters of the space divided by the number of people assigned to the spaces, either directly or via a workstation, this value is calculated
+The occupancy ratio is the number of square meters divided by the number of people assigned either directly to the spaces or via a workstation
 
 *Technical name:* ```peopleRatio```
 <PH code="room:peopleRatio"/>
@@ -175,17 +175,10 @@ The rate of places per workstation is the total capacity of the spaces divided b
 
 ### Rate of shared workstations {#shared-workplaces-ratio}
 
-Rate of workstations shared by at least 2 people compared to all workstations in the space
+Percentage of workstations shared by at least 2 people compared to all workstations
 
 *Technical name:* ```sharedWorkplacesRatio```
 <PH code="room:sharedWorkplacesRatio"/>
-
-### Ratio per workstation {#workplaces-ratio}
-
-The ratio per workstation is the number of square meters of space divided by the number of workstations, this value is calculated automatically
-
-*Technical name:* ```workplacesRatio```
-<PH code="room:workplacesRatio"/>
 
 ### Seating rate by assignment {#seats-people-ratio}
 
@@ -221,6 +214,13 @@ The total number of people assigned, either directly assigned to spaces or throu
 
 *Technical name:* ```totalPeopleCount```
 <PH code="room:totalPeopleCount"/>
+
+### Workstation ratio {#workplaces-ratio}
+
+The workstation ratio is the number of square meters divided by the number of workstations
+
+*Technical name:* ```workplacesRatio```
+<PH code="room:workplacesRatio"/>
 
     
 
@@ -278,6 +278,13 @@ Allows you to determine the method of calculating the cost distribution key
 
 ## Associated entities (list) {#properties-has-many}
 
+### Analysis layer associations to spaces {#dimension-rooms}
+
+An analysis layer association to spaces allows you to define specific analysis layers for each space
+
+*Technical name:* ```dimensionRooms```
+<PH code="room:dimensionRooms"/>
+
 ### Associations between a point and a space {#room-point-rooms}
 
 The association between a point and a space makes it possible to preserve the order of the points in a space in order to constitute a polyon
@@ -287,7 +294,7 @@ The association between a point and a space makes it possible to preserve the or
 
 ### Objects {#items}
 
-
+An object represents a physical or material element present in workspaces
 
 *Technical name:* ```items```
 <PH code="room:items"/>
@@ -305,13 +312,6 @@ Reservations for people's spaces are recorded and available with the reservation
 
 *Technical name:* ```personToRoomBookings```
 <PH code="room:personToRoomBookings"/>
-
-### Space analysis layers {#dimension-rooms}
-
-
-
-*Technical name:* ```dimensionRooms```
-<PH code="room:dimensionRooms"/>
 
 ### Space assignments {#room-affectations}
 

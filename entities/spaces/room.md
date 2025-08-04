@@ -70,7 +70,7 @@ Le nom d'espace est utilisé pour le définir et le retrouver facilement.
 
 ### Nombre d'affectations {#people-count}
 
-Le nombre de personnes affectées dans l'espace, soit directement, soit à travers un poste de travail
+
 
 *Nom technique:* ```peopleCount```
 <PH code="room:peopleCount"/>
@@ -91,7 +91,7 @@ Le nombre total de places assises
 
 ### Nombre de postes de travail {#workplaces-count}
 
-Le nombre de postes de travail dans l'espace est calculé automatiquement
+Le nombre total de postes de travail dans les espaces
 
 *Nom technique:* ```workplacesCount```
 <PH code="room:workplacesCount"/>
@@ -105,21 +105,21 @@ Nombre de postes de travail de passage, ces postes ne sont pas comptabilisés da
 
 ### Nombre de postes de travail partagés {#shared-workplaces-count}
 
-Nombre de postes de travail partagés par au moins 2 personnes
+Nombre total de postes de travail partagés par au moins 2 personnes
 
 *Nom technique:* ```sharedWorkplacesCount```
 <PH code="room:sharedWorkplacesCount"/>
 
 ### Nombre de postes flex {#flex-workplaces-count}
 
-Nombre de postes flex dans l'espace
+Nombre total de postes flex
 
 *Nom technique:* ```flexWorkplacesCount```
 <PH code="room:flexWorkplacesCount"/>
 
 ### Nombre de postes libres {#free-workplaces-count}
 
-Nombre de postes libres dans l'espace
+Nombre total de postes libres
 
 *Nom technique:* ```freeWorkplacesCount```
 <PH code="room:freeWorkplacesCount"/>
@@ -154,14 +154,14 @@ La photo de l'espace permet de le visualiser facilement
 
 ### Ratio d'occupation {#people-ratio}
 
-Le ratio d'occupation est le nombre de métres carrés de l'espace divisé par le nombre de personnes affectées aux espaces, soit directement, soit via un poste de travail , cette valeur est calculée
+Le ratio d'occupation est le nombre de métres carrés divisé par le nombre de personnes affectées soit directement dans les espaces, soit via un poste de travail
 
 *Nom technique:* ```peopleRatio```
 <PH code="room:peopleRatio"/>
 
-### Ratio par poste de travail {#workplaces-ratio}
+### Ratio postes de travail {#workplaces-ratio}
 
-Le ratio par poste de travail est le nombre de métres carrés de l'espace divisé par le nombre de postes de travail, cette valeur est calculée automatiquement
+Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail
 
 *Nom technique:* ```workplacesRatio```
 <PH code="room:workplacesRatio"/>
@@ -210,7 +210,7 @@ Le taux de poste de travail en flex est calculé en divisant le nombre de postes
 
 ### Taux de postes de travail partagés {#shared-workplaces-ratio}
 
-Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail de l'espace
+Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail
 
 *Nom technique:* ```sharedWorkplacesRatio```
 <PH code="room:sharedWorkplacesRatio"/>

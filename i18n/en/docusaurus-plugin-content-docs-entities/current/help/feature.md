@@ -1,7 +1,7 @@
-#  Feature
+# Functionality
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+A feature represents a specific characteristic or capability available in the system
 
 <OH code="feature"/>
 
@@ -12,9 +12,9 @@
 
 ## Basic properties {#properties-base}
     
-### Name {#name}
+### Last name {#name}
 
-
+Feature Name
 
 *Technical name:* ```name```
 <PH code="feature:name"/>

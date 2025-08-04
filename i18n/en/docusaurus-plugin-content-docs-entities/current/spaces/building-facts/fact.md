@@ -1,7 +1,7 @@
 # Fact
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+A fact represents a factual data or event recorded in the system for analysis and reporting
 
 <OH code="fact"/>
 
@@ -39,7 +39,7 @@ The building is used to group the floors
 
 ### Type of Fact {#fact-type}
 
-
+A fact type is used to categorize the different types of factual data or events recorded in the system
 
 *Technical name:* ```factType```
 <PH code="fact:factType"/>

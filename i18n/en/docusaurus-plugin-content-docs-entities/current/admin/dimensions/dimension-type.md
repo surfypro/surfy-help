@@ -1,7 +1,7 @@
 # Layer type
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+A layer type allows you to categorize analysis layers according to their use or area of application.
 
 <OH code="dimensionType"/>
 
@@ -49,33 +49,33 @@ Allows you to sort layer types to display them
 
 ## Associated entities (list) {#properties-has-many}
 
-### Analysis layers {#dimensions}
+### Analysis layer associations to buildings {#dimension-buildings}
 
-
-
-*Technical name:* ```dimensions```
-<PH code="dimensionType:dimensions"/>
-
-### Analysis layers by building {#dimension-buildings}
-
-
+An analysis layer association with buildings allows you to define specific analysis layers for each building
 
 *Technical name:* ```dimensionBuildings```
 <PH code="dimensionType:dimensionBuildings"/>
 
-### Analysis layers per floor {#dimension-floors}
+### Analysis layer associations to floors {#dimension-floors}
 
-
+An analysis layer to floor association allows you to define specific analysis layers for each floor
 
 *Technical name:* ```dimensionFloors```
 <PH code="dimensionType:dimensionFloors"/>
 
-### Space analysis layers {#dimension-rooms}
+### Analysis layer associations to spaces {#dimension-rooms}
 
-
+An analysis layer association to spaces allows you to define specific analysis layers for each space
 
 *Technical name:* ```dimensionRooms```
 <PH code="dimensionType:dimensionRooms"/>
+
+### Analysis layers {#dimensions}
+
+An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses.
+
+*Technical name:* ```dimensions```
+<PH code="dimensionType:dimensions"/>
 
 ### Types of building assignment layers {#dimension-type-to-buildings}
 

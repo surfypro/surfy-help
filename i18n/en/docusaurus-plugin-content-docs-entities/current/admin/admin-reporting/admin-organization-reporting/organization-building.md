@@ -1,7 +1,7 @@
-# Organization of buildings
+# Association organization to buildings
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+An organization-building association allows you to define the organizations responsible for each building
 
 <OH code="organizationBuilding"/>
 

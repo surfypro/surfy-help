@@ -224,7 +224,7 @@ L'échelle permet de calculer en proportion les surfaces réelles et la taille d
 
 ### Structure {#structure}
 
-
+Une structure définit une forme géométrique qui peut être utilisée pour calibrer et positionner des éléments sur des cartes
 
 *Nom technique:* ```structure```
 <PH code="floor:structure"/>
@@ -246,6 +246,13 @@ Une association centre de coût aux étages permet de définir les centres de co
 *Nom technique:* ```costCenterFloors```
 <PH code="floor:costCenterFloors"/>
 
+### Associations groupe de typologie d'espace aux étages {#room-type-group-floors}
+
+Une association groupe de typologie d'espace aux étages permet de définir les groupes de types d'espaces disponibles dans chaque étage
+
+*Nom technique:* ```roomTypeGroupFloors```
+<PH code="floor:roomTypeGroupFloors"/>
+
 ### Associations organisation aux étages {#organization-floors}
 
 Une association organisation aux étages permet de définir les organisations responsables de chaque étage
@@ -259,6 +266,13 @@ Une association rôle de contenu aux étages permet de définir les permissions 
 
 *Nom technique:* ```contentRoleToFloors```
 <PH code="floor:contentRoleToFloors"/>
+
+### Associations typologie d'espace aux étages {#room-type-floors}
+
+Une association typologie d'espace aux étages permet de définir les types d'espaces disponibles dans chaque étage
+
+*Nom technique:* ```roomTypeFloors```
+<PH code="floor:roomTypeFloors"/>
 
 ### Espaces {#rooms}
 
@@ -274,26 +288,12 @@ Les espaces sont des lieux de travail ou des zones afin de découper un étage e
 *Nom technique:* ```partnerExportMappingConfigurationToFloors```
 <PH code="floor:partnerExportMappingConfigurationToFloors"/>
 
-### Groupes de typologies d'espace des étages {#room-type-group-floors}
-
-
-
-*Nom technique:* ```roomTypeGroupFloors```
-<PH code="floor:roomTypeGroupFloors"/>
-
 ### Points des espaces {#room-points}
 
-
+Un point des espaces définit les coordonnées géométriques pour dessiner le contour d'un espace
 
 *Nom technique:* ```roomPoints```
 <PH code="floor:roomPoints"/>
-
-### Typologies d'espace des étages {#room-type-floors}
-
-
-
-*Nom technique:* ```roomTypeFloors```
-<PH code="floor:roomTypeFloors"/>
 
 
 

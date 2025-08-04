@@ -1,5 +1,10 @@
 # Nouveautés
 
+## 4 Août 2025 - v3.4.96
+
+- Amélioration de l'affichage des propriétés des types d'objets dans la documentation
+
+
 ## 2 Juillet 2025 - v3.4.94
 - Ajout d'une fonctionnalité de défilement infini dans la page d'affichage des salles de réunion pour permettre de voir toutes les salles du bâtiment.
 - Après la sélection d'un bâtiment dans la page d'affichage des salles de réunion, l'accordéon des bâtiments se referme automatiquement.

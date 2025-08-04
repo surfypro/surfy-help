@@ -1,7 +1,7 @@
-# Building space typology
+# Association of space typology with buildings
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+A space typology association with buildings makes it possible to define the types of spaces available in each building
 
 <OH code="roomTypeBuilding"/>
 

@@ -56,7 +56,7 @@ If this option is checked for each workstation a physical object will be created
 
 ### Object type {#item-type}
 
-
+An object type allows you to categorize and define the characteristics of physical objects present in workspaces
 
 *Technical name:* ```itemType```
 <PH code="workplaceTypeItemType:itemType"/>

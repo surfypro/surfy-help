@@ -1,7 +1,7 @@
-# Analysis layer per floor
+# Association of analysis layer to floors
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+An analysis layer to floor association allows you to define specific analysis layers for each floor
 
 <OH code="dimensionFloor"/>
 
@@ -158,7 +158,7 @@ The workstation ratio is the number of square meters divided by the number of wo
 
 ### Analysis layer {#dimension}
 
-
+An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses.
 
 *Technical name:* ```dimension```
 <PH code="dimensionFloor:dimension"/>
@@ -172,7 +172,7 @@ Floors represent a work platform or a level of a building.
 
 ### Layer type {#dimension-type}
 
-
+A layer type allows you to categorize analysis layers according to their use or area of application.
 
 *Technical name:* ```dimensionType```
 <PH code="dimensionFloor:dimensionType"/>

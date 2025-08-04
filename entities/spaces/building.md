@@ -358,6 +358,13 @@ Une association centre de coût aux bâtiments permet de définir les centres de
 *Nom technique:* ```costCenterBuildings```
 <PH code="building:costCenterBuildings"/>
 
+### Associations groupe de typologie d'espace aux bâtiments {#room-type-group-buildings}
+
+Une association groupe de typologie d'espace aux bâtiments permet de définir les groupes de types d'espaces disponibles dans chaque bâtiment
+
+*Nom technique:* ```roomTypeGroupBuildings```
+<PH code="building:roomTypeGroupBuildings"/>
+
 ### Associations organisation aux bâtiments {#organization-buildings}
 
 Une association organisation aux bâtiments permet de définir les organisations responsables de chaque bâtiment
@@ -371,6 +378,13 @@ Une association rôle de contenu aux bâtiments permet de définir les permissio
 
 *Nom technique:* ```contentRoleToBuildings```
 <PH code="building:contentRoleToBuildings"/>
+
+### Associations typologie d'espace aux bâtiments {#room-type-buildings}
+
+Une association typologie d'espace aux bâtiments permet de définir les types d'espaces disponibles dans chaque bâtiment
+
+*Nom technique:* ```roomTypeBuildings```
+<PH code="building:roomTypeBuildings"/>
 
 ### Bâtiments scénarios {#buildings}
 
@@ -393,26 +407,12 @@ Un fait représente une donnée factuelle ou un événement enregistré dans le 
 *Nom technique:* ```facts```
 <PH code="building:facts"/>
 
-### Groupes de typologies d'espace des bâtiments {#room-type-group-buildings}
-
-
-
-*Nom technique:* ```roomTypeGroupBuildings```
-<PH code="building:roomTypeGroupBuildings"/>
-
 ### Types de calques d'affectation du bâtiment {#dimension-type-to-buildings}
 
 Les types de calques d'affectation du bâtiment permettent de définir les différents types de calques d'affectation du bâtiment. En associant un type de calque d'affectation à un bâtiment, cela permet de transformer un calque d'analyse en calque d'affectation.
 
 *Nom technique:* ```dimensionTypeToBuildings```
 <PH code="building:dimensionTypeToBuildings"/>
-
-### Typologies d'espace des bâtiments {#room-type-buildings}
-
-
-
-*Nom technique:* ```roomTypeBuildings```
-<PH code="building:roomTypeBuildings"/>
 
 
 

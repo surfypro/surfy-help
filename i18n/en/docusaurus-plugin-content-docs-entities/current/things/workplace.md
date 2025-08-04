@@ -129,7 +129,7 @@ Spaces are workplaces or areas in order to divide a floor into sub-spaces.
 
 ### Objects {#items}
 
-
+An object represents a physical or material element present in workspaces
 
 *Technical name:* ```items```
 <PH code="workplace:items"/>

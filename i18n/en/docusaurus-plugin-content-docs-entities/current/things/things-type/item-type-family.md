@@ -37,7 +37,7 @@ The name of the family allows it to be identified, this name is used to group th
 
 ### Object types {#item-types}
 
-
+An object type allows you to categorize and define the characteristics of physical objects present in workspaces
 
 *Technical name:* ```itemTypes```
 <PH code="itemTypeFamily:itemTypes"/>

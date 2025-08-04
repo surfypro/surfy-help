@@ -32,7 +32,7 @@ The start date and time of the reservation
 
 ### Analysis layer {#dimension}
 
-
+An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses.
 
 *Technical name:* ```dimension```
 <PH code="personToDimensionBooking:dimension"/>

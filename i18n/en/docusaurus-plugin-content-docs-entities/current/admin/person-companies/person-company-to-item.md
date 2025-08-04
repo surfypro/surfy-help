@@ -32,7 +32,7 @@ When the intervention took place
 
 ### Object {#item}
 
-
+An object represents a physical or material element present in workspaces
 
 *Technical name:* ```item```
 <PH code="personCompanyToItem:item"/>

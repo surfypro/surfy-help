@@ -85,12 +85,26 @@ Un type de distribution des coûts permet de définir les méthodes de répartit
 
 ## Entités associées (liste) {#properties-has-many}
 
-### Associations groupes de typologies d'espace à typologies d'espace {#room-type-group-to-room-types}
+### Associations groupe de typologie d'espace à typologie d'espace {#room-type-group-to-room-types}
 
-
+Une association groupe de typologie d'espace à typologie d'espace permet de définir quels types d'espaces appartiennent à quels groupes
 
 *Nom technique:* ```roomTypeGroupToRoomTypes```
 <PH code="roomType:roomTypeGroupToRoomTypes"/>
+
+### Associations typologie d'espace aux bâtiments {#room-type-buildings}
+
+Une association typologie d'espace aux bâtiments permet de définir les types d'espaces disponibles dans chaque bâtiment
+
+*Nom technique:* ```roomTypeBuildings```
+<PH code="roomType:roomTypeBuildings"/>
+
+### Associations typologie d'espace aux étages {#room-type-floors}
+
+Une association typologie d'espace aux étages permet de définir les types d'espaces disponibles dans chaque étage
+
+*Nom technique:* ```roomTypeFloors```
+<PH code="roomType:roomTypeFloors"/>
 
 ### Espaces {#rooms}
 
@@ -112,20 +126,6 @@ Les types d'espaces des prestataires permettent de définir une relation entre u
 
 *Nom technique:* ```personCompanyToRoomTypes```
 <PH code="roomType:personCompanyToRoomTypes"/>
-
-### Typologies d'espace des bâtiments {#room-type-buildings}
-
-
-
-*Nom technique:* ```roomTypeBuildings```
-<PH code="roomType:roomTypeBuildings"/>
-
-### Typologies d'espace des étages {#room-type-floors}
-
-
-
-*Nom technique:* ```roomTypeFloors```
-<PH code="roomType:roomTypeFloors"/>
 
 
 

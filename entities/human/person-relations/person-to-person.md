@@ -1,7 +1,7 @@
 # Relation personne à personne
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Une relation personne à personne permet de définir les liens hiérarchiques ou organisationnels entre les personnes
 
 <OH code="personToPerson"/>
 
@@ -29,7 +29,7 @@ Ce sont les personnes entrées dans la base de données de Surfy
 
 ### Type de relation entre personnes {#person-to-person-type}
 
-
+Un type de relation entre personnes définit les différents types de liens qui peuvent exister entre les personnes
 
 *Nom technique:* ```personToPersonType```
 <PH code="personToPerson:personToPersonType"/>

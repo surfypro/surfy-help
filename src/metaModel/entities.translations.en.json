@@ -47,7 +47,7 @@
             },
             "jupUiLayout": {
                 "label": "View of the plan",
-                "description": null
+                "description": "An interface layout defines the arrangement and organization of elements in the user interface"
             },
             "buildingType": {
                 "label": "Type of building",
@@ -63,7 +63,7 @@
             },
             "manufacturer": {
                 "label": "Object type manufacturer",
-                "description": null
+                "description": "A manufacturer represents a company or brand that produces objects or equipment"
             },
             "object3dModel": {
                 "label": "3d model",
@@ -71,7 +71,7 @@
             },
             "itemType": {
                 "label": "Object type",
-                "description": null
+                "description": "An object type allows you to categorize and define the characteristics of physical objects present in workspaces"
             },
             "building": {
                 "label": "Building",
@@ -79,11 +79,11 @@
             },
             "mapScale": {
                 "label": "Plane scale",
-                "description": null
+                "description": "A map scale allows you to define the display and scale parameters for maps"
             },
             "structure": {
                 "label": "Structure",
-                "description": null
+                "description": "A structure defines a geometric shape that can be used to calibrate and position features on maps"
             },
             "structurePoint": {
                 "label": " Structure Point",
@@ -95,39 +95,39 @@
             },
             "distributionCostType": {
                 "label": "Type of cost distribution",
-                "description": null
+                "description": "A cost distribution type allows you to define the methods for distributing costs between different cost centers"
             },
             "roomTypeGroup": {
                 "label": "Space typology group",
-                "description": null
+                "description": "A space typology group allows you to group several types of spaces to facilitate their management and display."
             },
             "roomType": {
                 "label": "Space typology",
                 "description": null
             },
             "roomTypeGroupToRoomType": {
-                "label": "Association of space typology group with space typology",
-                "description": null
+                "label": "Space typology group association to space typology",
+                "description": "A space typology group to space typology association allows you to define which space types belong to which groups"
             },
             "roomTypeGroupFloor": {
-                "label": "Floor space typology group",
-                "description": null
+                "label": "Association of space typology groups on floors",
+                "description": "A space typology group association on floors allows you to define the groups of space types available on each floor"
             },
             "roomTypeGroupBuilding": {
-                "label": "Building space typology group",
-                "description": null
+                "label": "Association of building space typology groups",
+                "description": "A space typology group association with buildings allows you to define the groups of space types available in each building"
             },
             "costCenter": {
                 "label": "Cost center",
                 "description": "The cost center allows spaces to be distributed dynamically for re-invoicing"
             },
             "costCenterBuilding": {
-                "label": "Building cost center",
-                "description": null
+                "label": "Cost center association with buildings",
+                "description": "A cost center association with buildings allows you to define specific cost centers for each building"
             },
             "costCenterFloor": {
-                "label": "Floor cost center",
-                "description": null
+                "label": "Cost center association on floors",
+                "description": "A cost center to floor association allows you to define specific cost centers for each floor"
             },
             "room": {
                 "label": "Space",
@@ -135,7 +135,7 @@
             },
             "roomPoint": {
                 "label": "Point of spaces",
-                "description": null
+                "description": "A point in spaces defines the geometric coordinates for drawing the outline of a space"
             },
             "roomPointRoom": {
                 "label": "Association between a point and a space",
@@ -143,43 +143,43 @@
             },
             "roomPointSegmentType": {
                 "label": "Segment type",
-                "description": null
+                "description": "A segment type defines the different types of segments that can exist between space points"
             },
             "roomPointSegment": {
                 "label": "Segment qualification",
-                "description": null
+                "description": "A segment qualification allows you to define the display and orientation properties of a segment between two space points"
             },
             "itemTypePoint": {
                 "label": "Point of object types",
-                "description": null
+                "description": "An object types point allows you to define specific positions for object types on the plans"
             },
             "dimensionType": {
                 "label": "Layer type",
-                "description": null
+                "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
             },
             "dimension": {
                 "label": "Analysis layer",
-                "description": null
+                "description": "An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses."
             },
             "dimensionRoom": {
-                "label": "Space analysis layer",
-                "description": null
+                "label": "Association of analysis layer to spaces",
+                "description": "An analysis layer association to spaces allows you to define specific analysis layers for each space"
             },
             "dimensionFloor": {
-                "label": "Analysis layer per floor",
-                "description": null
+                "label": "Association of analysis layer to floors",
+                "description": "An analysis layer to floor association allows you to define specific analysis layers for each floor"
             },
             "dimensionBuilding": {
-                "label": "Analysis layer by building",
-                "description": null
+                "label": "Association of analysis layer to buildings",
+                "description": "An analysis layer association with buildings allows you to define specific analysis layers for each building"
             },
             "factType": {
                 "label": "Type of Fact",
-                "description": null
+                "description": "A fact type is used to categorize the different types of factual data or events recorded in the system"
             },
             "fact": {
                 "label": "Fact",
-                "description": null
+                "description": "A fact represents a factual data or event recorded in the system for analysis and reporting"
             },
             "personState": {
                 "label": "Status of persons",
@@ -195,11 +195,11 @@
             },
             "personToPersonType": {
                 "label": "Type of relationship between people",
-                "description": null
+                "description": "A type of relationship between people defines the different types of links that can exist between people"
             },
             "personToPerson": {
                 "label": "Person-to-person relationship",
-                "description": null
+                "description": "A person to person relationship allows you to define the hierarchical or organizational links between people"
             },
             "roomAffectation": {
                 "label": "Space allocation",
@@ -219,27 +219,27 @@
             },
             "item": {
                 "label": "Object",
-                "description": null
+                "description": "An object represents a physical or material element present in workspaces"
             },
             "workplaceAffectation": {
                 "label": "Work station assignment",
                 "description": "Allows a fixed workstation to be assigned to a person"
             },
             "organizationFloor": {
-                "label": "Organization of floors",
-                "description": null
+                "label": "Association organization on the floors",
+                "description": "An organizational association on floors allows you to define the organizations responsible for each floor"
             },
             "organizationBuilding": {
-                "label": "Organization of buildings",
-                "description": null
+                "label": "Association organization to buildings",
+                "description": "An organization-building association allows you to define the organizations responsible for each building"
             },
             "roomTypeFloor": {
-                "label": "Floor space typology",
-                "description": null
+                "label": "Association of space typology on floors",
+                "description": "A space typology association with floors makes it possible to define the types of spaces available on each floor"
             },
             "roomTypeBuilding": {
-                "label": "Building space typology",
-                "description": null
+                "label": "Association of space typology with buildings",
+                "description": "A space typology association with buildings makes it possible to define the types of spaces available in each building"
             },
             "itemToPerson": {
                 "label": "Object-to-person association",
@@ -307,55 +307,55 @@
             },
             "jupObjectType": {
                 "label": "Entity type",
-                "description": null
+                "description": "An entity type defines the different types of objects available in the user interface"
             },
             "jupUiView": {
                 "label": "Interface view",
-                "description": null
+                "description": "An interface view defines the different perspectives and displays available in the user interface"
             },
             "jupRole": {
                 "label": "Role",
-                "description": null
+                "description": "A role defines access permissions to features in the user interface"
             },
             "jupUiOption": {
                 "label": "Interface option",
-                "description": null
+                "description": "An interface option defines the settings and configurations available in the user interface"
             },
             "jupUiOperation": {
                 "label": "Interface operation",
-                "description": null
+                "description": "An interface operation defines the actions and functionality available in the user interface"
             },
             "contentRole": {
                 "label": "Content role",
                 "description": "A content role defines access permissions to different platform data for users"
             },
             "jupUserCompanyToJupRole": {
-                "label": "Role of the business user",
-                "description": null
+                "label": "Company user association to role",
+                "description": "An enterprise user role association allows you to define feature access permissions for a specific enterprise user"
             },
             "jupRoleToJupUiView": {
                 "label": "Role association with interface views",
-                "description": null
+                "description": "A role to interface view association allows you to define access permissions to the different interface views for a role"
             },
             "jupRoleToJupObjectType": {
                 "label": "Role to object type association",
-                "description": null
+                "description": "A role to object type association allows you to define specific CRUD permissions for a role on an entity type"
             },
             "jupRoleToJupUiOption": {
-                "label": "Association role to visions of the plan",
-                "description": null
+                "label": "Role association with interface options",
+                "description": "A role association with interface options allows you to define access permissions to the different interface options for a role"
             },
             "jupRoleToJupUiOperation": {
                 "label": "Role association with interface operations",
-                "description": null
+                "description": "A role association to interface operations allows you to define access permissions to the different interface operations for a role"
             },
             "contentRoleToBuilding": {
                 "label": "Role association of content with buildings",
                 "description": "A content role to building association allows you to define building-specific access permissions for a given role"
             },
             "contentRoleToUserCompany": {
-                "label": "Company user content role",
-                "description": null
+                "label": "Associating content role to business user",
+                "description": "A content role to enterprise user association allows you to define specific access permissions for enterprise users for a given role"
             },
             "contentRoleToFloor": {
                 "label": "Association role of content to floors",
@@ -363,7 +363,7 @@
             },
             "partnerApiCredential": {
                 "label": "Partner API key",
-                "description": null
+                "description": "A Partner API Key is used to authenticate and authorize access to APIs for external partners"
             },
             "apiUser": {
                 "label": "API user",
@@ -379,7 +379,7 @@
             },
             "jupUiTenantOperation": {
                 "label": "Interface operation for a company",
-                "description": null
+                "description": "An interface operation for a business defines the specific actions and features available to a business in the user interface"
             },
             "contentRoleToJupUiTenantOperation": {
                 "label": "Associating content role to interface operations for an enterprise",
@@ -418,30 +418,30 @@
                 "description": null
             },
             "jupRoleToJupUiLayout": {
-                "label": " Jup Role To Jup Ui Layout",
-                "description": null
+                "label": "Associating roles with interface layouts",
+                "description": "A role association to interface layouts allows you to define access permissions to different interface layouts for a role"
             },
             "itemFact": {
                 "label": "Object movement",
-                "description": null
+                "description": "An object movement records the movements or changes in status of an object in the system"
             },
             "featureFamily": {
-                "label": " Feature Family",
-                "description": null
+                "label": "Family of features",
+                "description": "A feature family allows you to group related features according to their domain or use."
             },
             "featureGroup": {
                 "label": " Feature Group",
                 "description": null
             },
             "feature": {
-                "label": " Feature",
-                "description": null
+                "label": "Functionality",
+                "description": "A feature represents a specific characteristic or capability available in the system"
             }
         },
         "propertyTypeTranslations": {
             "occupancyStatus": {
                 "id": {
-                    "label": "Occupancy status identifier",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -815,7 +815,7 @@
             },
             "roomConnector": {
                 "id": {
-                    "label": "Space Connector ID",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -994,19 +994,19 @@
                 },
                 "manufacturerCreatedBies": {
                     "label": "Object type manufacturers",
-                    "description": null
+                    "description": "A manufacturer represents a company or brand that produces objects or equipment"
                 },
                 "manufacturerUpdatedBies": {
                     "label": "Object type manufacturers",
-                    "description": null
+                    "description": "A manufacturer represents a company or brand that produces objects or equipment"
                 },
                 "itemTypeCreatedBies": {
                     "label": "Object types",
-                    "description": null
+                    "description": "An object type allows you to categorize and define the characteristics of physical objects present in workspaces"
                 },
                 "itemTypeUpdatedBies": {
                     "label": "Object types",
-                    "description": null
+                    "description": "An object type allows you to categorize and define the characteristics of physical objects present in workspaces"
                 },
                 "buildingOwners": {
                     "label": "Proprietary buildings",
@@ -1022,19 +1022,19 @@
                 },
                 "mapScaleCreatedBies": {
                     "label": "Flat scales",
-                    "description": null
+                    "description": "A map scale allows you to define the display and scale parameters for maps"
                 },
                 "mapScaleUpdatedBies": {
                     "label": "Flat scales",
-                    "description": null
+                    "description": "A map scale allows you to define the display and scale parameters for maps"
                 },
                 "structureCreatedBies": {
                     "label": "Structures",
-                    "description": null
+                    "description": "A structure defines a geometric shape that can be used to calibrate and position features on maps"
                 },
                 "structureUpdatedBies": {
                     "label": "Structures",
-                    "description": null
+                    "description": "A structure defines a geometric shape that can be used to calibrate and position features on maps"
                 },
                 "structurePointCreatedBies": {
                     "label": " Structure Points",
@@ -1054,11 +1054,11 @@
                 },
                 "distributionCostTypeCreatedBies": {
                     "label": "Types of cost distribution",
-                    "description": null
+                    "description": "A cost distribution type allows you to define the methods for distributing costs between different cost centers"
                 },
                 "distributionCostTypeUpdatedBies": {
                     "label": "Types of cost distribution",
-                    "description": null
+                    "description": "A cost distribution type allows you to define the methods for distributing costs between different cost centers"
                 },
                 "roomTypeCreatedBies": {
                     "label": "Space typologies",
@@ -1069,28 +1069,28 @@
                     "description": null
                 },
                 "roomTypeGroupToRoomTypeCreatedBies": {
-                    "label": "Associations groups of space typologies to space typologies",
-                    "description": null
+                    "label": "Space typology group associations to space typology",
+                    "description": "A space typology group to space typology association allows you to define which space types belong to which groups"
                 },
                 "roomTypeGroupToRoomTypeUpdatedBies": {
-                    "label": "Associations groups of space typologies to space typologies",
-                    "description": null
+                    "label": "Space typology group associations to space typology",
+                    "description": "A space typology group to space typology association allows you to define which space types belong to which groups"
                 },
                 "roomTypeGroupFloorCreatedBies": {
-                    "label": "Floor space typology groups",
-                    "description": null
+                    "label": "Associations group of space typology on the floors",
+                    "description": "A space typology group association on floors allows you to define the groups of space types available on each floor"
                 },
                 "roomTypeGroupFloorUpdatedBies": {
-                    "label": "Floor space typology groups",
-                    "description": null
+                    "label": "Associations group of space typology on the floors",
+                    "description": "A space typology group association on floors allows you to define the groups of space types available on each floor"
                 },
                 "roomTypeGroupBuildingCreatedBies": {
-                    "label": "Groups of building space typologies",
-                    "description": null
+                    "label": "Associations of space typology group to buildings",
+                    "description": "A space typology group association with buildings allows you to define the groups of space types available in each building"
                 },
                 "roomTypeGroupBuildingUpdatedBies": {
-                    "label": "Groups of building space typologies",
-                    "description": null
+                    "label": "Associations of space typology group to buildings",
+                    "description": "A space typology group association with buildings allows you to define the groups of space types available in each building"
                 },
                 "costCenterCreatedBies": {
                     "label": "Cost centers",
@@ -1101,20 +1101,20 @@
                     "description": "The cost center allows spaces to be distributed dynamically for re-invoicing"
                 },
                 "costCenterBuildingCreatedBies": {
-                    "label": "Building cost centers",
-                    "description": null
+                    "label": "Cost center associations to buildings",
+                    "description": "A cost center association with buildings allows you to define specific cost centers for each building"
                 },
                 "costCenterBuildingUpdatedBies": {
-                    "label": "Building cost centers",
-                    "description": null
+                    "label": "Cost center associations to buildings",
+                    "description": "A cost center association with buildings allows you to define specific cost centers for each building"
                 },
                 "costCenterFloorCreatedBies": {
-                    "label": "Floor cost centers",
-                    "description": null
+                    "label": "Cost center associations on floors",
+                    "description": "A cost center to floor association allows you to define specific cost centers for each floor"
                 },
                 "costCenterFloorUpdatedBies": {
-                    "label": "Floor cost centers",
-                    "description": null
+                    "label": "Cost center associations on floors",
+                    "description": "A cost center to floor association allows you to define specific cost centers for each floor"
                 },
                 "roomCreatedBies": {
                     "label": "Spaces",
@@ -1126,11 +1126,11 @@
                 },
                 "roomPointCreatedBies": {
                     "label": "Points of spaces",
-                    "description": null
+                    "description": "A point in spaces defines the geometric coordinates for drawing the outline of a space"
                 },
                 "roomPointUpdatedBies": {
                     "label": "Points of spaces",
-                    "description": null
+                    "description": "A point in spaces defines the geometric coordinates for drawing the outline of a space"
                 },
                 "roomPointRoomCreatedBies": {
                     "label": "Associations between a point and a space",
@@ -1142,75 +1142,75 @@
                 },
                 "roomPointSegmentCreatedBies": {
                     "label": "Segment qualifications",
-                    "description": null
+                    "description": "A segment qualification allows you to define the display and orientation properties of a segment between two space points"
                 },
                 "roomPointSegmentUpdatedBies": {
                     "label": "Segment qualifications",
-                    "description": null
+                    "description": "A segment qualification allows you to define the display and orientation properties of a segment between two space points"
                 },
                 "itemTypePointCreatedBies": {
                     "label": "Points of object types",
-                    "description": null
+                    "description": "An object types point allows you to define specific positions for object types on the plans"
                 },
                 "itemTypePointUpdatedBies": {
                     "label": "Points of object types",
-                    "description": null
+                    "description": "An object types point allows you to define specific positions for object types on the plans"
                 },
                 "dimensionTypeCreatedBies": {
                     "label": "Layer Types",
-                    "description": null
+                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
                 },
                 "dimensionTypeUpdatedBies": {
                     "label": "Layer Types",
-                    "description": null
+                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
                 },
                 "dimensionCreatedBies": {
                     "label": "Analysis layers",
-                    "description": null
+                    "description": "An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses."
                 },
                 "dimensionUpdatedBies": {
                     "label": "Analysis layers",
-                    "description": null
+                    "description": "An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses."
                 },
                 "dimensionRoomCreatedBies": {
-                    "label": "Space analysis layers",
-                    "description": null
+                    "label": "Analysis layer associations to spaces",
+                    "description": "An analysis layer association to spaces allows you to define specific analysis layers for each space"
                 },
                 "dimensionRoomUpdatedBies": {
-                    "label": "Space analysis layers",
-                    "description": null
+                    "label": "Analysis layer associations to spaces",
+                    "description": "An analysis layer association to spaces allows you to define specific analysis layers for each space"
                 },
                 "dimensionFloorCreatedBies": {
-                    "label": "Analysis layers per floor",
-                    "description": null
+                    "label": "Analysis layer associations to floors",
+                    "description": "An analysis layer to floor association allows you to define specific analysis layers for each floor"
                 },
                 "dimensionFloorUpdatedBies": {
-                    "label": "Analysis layers per floor",
-                    "description": null
+                    "label": "Analysis layer associations to floors",
+                    "description": "An analysis layer to floor association allows you to define specific analysis layers for each floor"
                 },
                 "dimensionBuildingCreatedBies": {
-                    "label": "Analysis layers by building",
-                    "description": null
+                    "label": "Analysis layer associations to buildings",
+                    "description": "An analysis layer association with buildings allows you to define specific analysis layers for each building"
                 },
                 "dimensionBuildingUpdatedBies": {
-                    "label": "Analysis layers by building",
-                    "description": null
+                    "label": "Analysis layer associations to buildings",
+                    "description": "An analysis layer association with buildings allows you to define specific analysis layers for each building"
                 },
                 "factTypeCreatedBies": {
                     "label": "Types of Fact",
-                    "description": null
+                    "description": "A fact type is used to categorize the different types of factual data or events recorded in the system"
                 },
                 "factTypeUpdatedBies": {
                     "label": "Types of Fact",
-                    "description": null
+                    "description": "A fact type is used to categorize the different types of factual data or events recorded in the system"
                 },
                 "factCreatedBies": {
                     "label": "Facts",
-                    "description": null
+                    "description": "A fact represents a factual data or event recorded in the system for analysis and reporting"
                 },
                 "factUpdatedBies": {
                     "label": "Facts",
-                    "description": null
+                    "description": "A fact represents a factual data or event recorded in the system for analysis and reporting"
                 },
                 "personStateCreatedBies": {
                     "label": "Status of persons",
@@ -1238,19 +1238,19 @@
                 },
                 "personToPersonTypeCreatedBies": {
                     "label": "Types of relationship between people",
-                    "description": null
+                    "description": "A type of relationship between people defines the different types of links that can exist between people"
                 },
                 "personToPersonTypeUpdatedBies": {
                     "label": "Types of relationship between people",
-                    "description": null
+                    "description": "A type of relationship between people defines the different types of links that can exist between people"
                 },
                 "personToPersonCreatedBies": {
                     "label": "Person-to-person relationships",
-                    "description": null
+                    "description": "A person to person relationship allows you to define the hierarchical or organizational links between people"
                 },
                 "personToPersonUpdatedBies": {
                     "label": "Person-to-person relationships",
-                    "description": null
+                    "description": "A person to person relationship allows you to define the hierarchical or organizational links between people"
                 },
                 "roomAffectationCreatedBies": {
                     "label": "Space assignments",
@@ -1286,11 +1286,11 @@
                 },
                 "itemCreatedBies": {
                     "label": "Objects",
-                    "description": null
+                    "description": "An object represents a physical or material element present in workspaces"
                 },
                 "itemUpdatedBies": {
                     "label": "Objects",
-                    "description": null
+                    "description": "An object represents a physical or material element present in workspaces"
                 },
                 "workplaceAffectationCreatedBies": {
                     "label": "Workstation assignments",
@@ -1301,36 +1301,36 @@
                     "description": "Allows a fixed workstation to be assigned to a person"
                 },
                 "organizationFloorCreatedBies": {
-                    "label": "Floor organization",
-                    "description": null
+                    "label": "Associations organization on the floors",
+                    "description": "An organizational association on floors allows you to define the organizations responsible for each floor"
                 },
                 "organizationFloorUpdatedBies": {
-                    "label": "Floor organization",
-                    "description": null
+                    "label": "Associations organization on the floors",
+                    "description": "An organizational association on floors allows you to define the organizations responsible for each floor"
                 },
                 "organizationBuildingCreatedBies": {
-                    "label": "Building organizations",
-                    "description": null
+                    "label": "Associations organization to buildings",
+                    "description": "An organization-building association allows you to define the organizations responsible for each building"
                 },
                 "organizationBuildingUpdatedBies": {
-                    "label": "Building organizations",
-                    "description": null
+                    "label": "Associations organization to buildings",
+                    "description": "An organization-building association allows you to define the organizations responsible for each building"
                 },
                 "roomTypeFloorCreatedBies": {
-                    "label": "Floor space typologies",
-                    "description": null
+                    "label": "Associations of space typology on the floors",
+                    "description": "A space typology association with floors makes it possible to define the types of spaces available on each floor"
                 },
                 "roomTypeFloorUpdatedBies": {
-                    "label": "Floor space typologies",
-                    "description": null
+                    "label": "Associations of space typology on the floors",
+                    "description": "A space typology association with floors makes it possible to define the types of spaces available on each floor"
                 },
                 "roomTypeBuildingCreatedBies": {
-                    "label": "Building space typologies",
-                    "description": null
+                    "label": "Associations of space typology with buildings",
+                    "description": "A space typology association with buildings makes it possible to define the types of spaces available in each building"
                 },
                 "roomTypeBuildingUpdatedBies": {
-                    "label": "Building space typologies",
-                    "description": null
+                    "label": "Associations of space typology with buildings",
+                    "description": "A space typology association with buildings makes it possible to define the types of spaces available in each building"
                 },
                 "itemToPersonCreatedBies": {
                     "label": "Object-to-person associations",
@@ -1453,16 +1453,16 @@
                     "description": "A content role defines access permissions to different platform data for users"
                 },
                 "jupUserCompanyToJupRoles": {
-                    "label": "Company user roles",
-                    "description": null
+                    "label": "Company user associations to the role",
+                    "description": "An enterprise user role association allows you to define feature access permissions for a specific enterprise user"
                 },
                 "jupUserCompanyToJupRoleCreatedBies": {
-                    "label": "Company user roles",
-                    "description": null
+                    "label": "Company user associations to the role",
+                    "description": "An enterprise user role association allows you to define feature access permissions for a specific enterprise user"
                 },
                 "jupUserCompanyToJupRoleUpdatedBies": {
-                    "label": "Company user roles",
-                    "description": null
+                    "label": "Company user associations to the role",
+                    "description": "An enterprise user role association allows you to define feature access permissions for a specific enterprise user"
                 },
                 "contentRoleToBuildingCreatedBies": {
                     "label": "Role associations of content to buildings",
@@ -1473,16 +1473,16 @@
                     "description": "A content role to building association allows you to define building-specific access permissions for a given role"
                 },
                 "contentRoleToUserCompanies": {
-                    "label": "Company User Content Roles",
-                    "description": null
+                    "label": "Associations content role to enterprise user",
+                    "description": "A content role to enterprise user association allows you to define specific access permissions for enterprise users for a given role"
                 },
                 "contentRoleToUserCompanyCreatedBies": {
-                    "label": "Company User Content Roles",
-                    "description": null
+                    "label": "Associations content role to enterprise user",
+                    "description": "A content role to enterprise user association allows you to define specific access permissions for enterprise users for a given role"
                 },
                 "contentRoleToUserCompanyUpdatedBies": {
-                    "label": "Company User Content Roles",
-                    "description": null
+                    "label": "Associations content role to enterprise user",
+                    "description": "A content role to enterprise user association allows you to define specific access permissions for enterprise users for a given role"
                 },
                 "contentRoleToFloorCreatedBies": {
                     "label": "Role associations of content to floors",
@@ -1494,11 +1494,11 @@
                 },
                 "partnerApiCredentialCreatedBies": {
                     "label": "Partner API keys",
-                    "description": null
+                    "description": "A Partner API Key is used to authenticate and authorize access to APIs for external partners"
                 },
                 "partnerApiCredentialUpdatedBies": {
                     "label": "Partner API keys",
-                    "description": null
+                    "description": "A Partner API Key is used to authenticate and authorize access to APIs for external partners"
                 },
                 "apiUserCreatedBies": {
                     "label": "API users",
@@ -1526,11 +1526,11 @@
                 },
                 "jupUiTenantOperationCreatedBies": {
                     "label": "Interface operations for a business",
-                    "description": null
+                    "description": "An interface operation for a business defines the specific actions and features available to a business in the user interface"
                 },
                 "jupUiTenantOperationUpdatedBies": {
                     "label": "Interface operations for a business",
-                    "description": null
+                    "description": "An interface operation for a business defines the specific actions and features available to a business in the user interface"
                 },
                 "contentRoleToJupUiTenantOperationCreatedBies": {
                     "label": "Associating content role to interface operations for an enterprise",
@@ -1598,19 +1598,19 @@
                 },
                 "itemFactCreatedBies": {
                     "label": "Object movements",
-                    "description": null
+                    "description": "An object movement records the movements or changes in status of an object in the system"
                 },
                 "itemFactUpdatedBies": {
                     "label": "Object movements",
-                    "description": null
+                    "description": "An object movement records the movements or changes in status of an object in the system"
                 },
                 "featureFamilyCreatedBies": {
-                    "label": " Feature Families",
-                    "description": null
+                    "label": "Feature Families",
+                    "description": "A feature family allows you to group related features according to their domain or use."
                 },
                 "featureFamilyUpdatedBies": {
-                    "label": " Feature Families",
-                    "description": null
+                    "label": "Feature Families",
+                    "description": "A feature family allows you to group related features according to their domain or use."
                 },
                 "featureGroupCreatedBies": {
                     "label": " Feature Groups",
@@ -1621,17 +1621,17 @@
                     "description": null
                 },
                 "featureCreatedBies": {
-                    "label": " Features",
-                    "description": null
+                    "label": "Features",
+                    "description": "A feature represents a specific characteristic or capability available in the system"
                 },
                 "featureUpdatedBies": {
-                    "label": " Features",
-                    "description": null
+                    "label": "Features",
+                    "description": "A feature represents a specific characteristic or capability available in the system"
                 }
             },
             "personGender": {
                 "id": {
-                    "label": "Id",
+                    "label": "Person 's gender identifier",
                     "description": null
                 },
                 "name": {
@@ -1657,7 +1657,7 @@
             },
             "personCompany": {
                 "id": {
-                    "label": "Id",
+                    "label": "Service provider company identifier",
                     "description": null
                 },
                 "name": {
@@ -1731,7 +1731,7 @@
             },
             "jupUiLayout": {
                 "id": {
-                    "label": "Id",
+                    "label": "Plan Vision Identifier",
                     "description": null
                 },
                 "name": {
@@ -1755,8 +1755,8 @@
                     "description": "The building is used to group the floors"
                 },
                 "jupRoleToJupUiLayouts": {
-                    "label": " Jup Role To Jup Ui Layouts",
-                    "description": null
+                    "label": "Role associations to interface layouts",
+                    "description": "A role association to interface layouts allows you to define access permissions to different interface layouts for a role"
                 }
             },
             "buildingType": {
@@ -1887,12 +1887,12 @@
                     "description": null
                 },
                 "organizationFloors": {
-                    "label": "Floor organization",
-                    "description": null
+                    "label": "Associations organization on the floors",
+                    "description": "An organizational association on floors allows you to define the organizations responsible for each floor"
                 },
                 "organizationBuildings": {
-                    "label": "Building organizations",
-                    "description": null
+                    "label": "Associations organization to buildings",
+                    "description": "An organization-building association allows you to define the organizations responsible for each building"
                 },
                 "companyId": {
                     "label": "Company ID",
@@ -1905,7 +1905,7 @@
             },
             "itemTypeFamily": {
                 "id": {
-                    "label": "Identifier of the object's type family",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -1946,7 +1946,7 @@
                 },
                 "itemTypes": {
                     "label": "Object types",
-                    "description": null
+                    "description": "An object type allows you to categorize and define the characteristics of physical objects present in workspaces"
                 },
                 "companyId": {
                     "label": "Company ID",
@@ -1959,7 +1959,7 @@
             },
             "manufacturer": {
                 "id": {
-                    "label": "Id",
+                    "label": "Manufacturer ID",
                     "description": null
                 },
                 "name": {
@@ -2000,7 +2000,7 @@
                 },
                 "itemTypes": {
                     "label": "Object types",
-                    "description": null
+                    "description": "An object type allows you to categorize and define the characteristics of physical objects present in workspaces"
                 },
                 "companyId": {
                     "label": "Company ID",
@@ -2013,7 +2013,7 @@
             },
             "object3dModel": {
                 "id": {
-                    "label": "Id",
+                    "label": "3D model identifier",
                     "description": null
                 },
                 "name": {
@@ -2050,13 +2050,13 @@
                 },
                 "itemTypes": {
                     "label": "Object types",
-                    "description": null
+                    "description": "An object type allows you to categorize and define the characteristics of physical objects present in workspaces"
                 }
             },
             "itemType": {
                 "id": {
-                    "label": "Identifier of the type of the object",
-                    "description": "Identifier of the type of the object"
+                    "label": "Id",
+                    "description": null
                 },
                 "name": {
                     "label": "Object type name",
@@ -2064,7 +2064,7 @@
                 },
                 "picture": {
                     "label": "Photo",
-                    "description": "Allows you to load the photo of the type of object, which will be visible in the inventory in PDF and on the sheet of the object selected on the plan"
+                    "description": "Allows you to upload the photo of the object type, which will be visible in the inventory in pdf and on the sheet of the object selected on the plan"
                 },
                 "displayItemReferenceInMap": {
                     "label": "Show plan information",
@@ -2072,11 +2072,11 @@
                 },
                 "code": {
                     "label": "Code",
-                    "description": "Allows you to quickly access the object type by typing the code in the search during object creation"
+                    "description": "Allows quick access to the object type by typing the code in the search when creating the object"
                 },
                 "icon": {
                     "label": "Icon",
-                    "description": "Gives you access to three types of icon: 1) “Fontawsome” Icons, visible by checking “show all” or by searching by keyword in English in the search box; 2) “SURFY” Icons intended for illustrations added to plans in strategic locations (Toilets, Stairs, Elevators, Copy Points, etc.) but which can also be used as classic icons; 3) The “SURFY 2” Icons listing the regulatory icons of the ISO 7010 Safety standard; Their shape can be round, square or triangular"
+                    "description": "Gives you access to three types of icons: 1) The &quot;Fontawsome&quot; Icons, visible by checking &quot;show all&quot; or by searching by keyword in English in the search box; 2) The &quot; SURFY &quot; Icons intended for illustrations added to plans in strategic locations (Toilets, Stairs, Elevators, Copy Points, etc.) but which can also be used as classic icons; 3) The &quot; SURFY 2&quot; Icons listing the regulatory icons of the ISO 7010 Safety standard; Their shape can be round, square or triangular"
                 },
                 "color": {
                     "label": "Color",
@@ -2139,7 +2139,7 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "itemTypeFamilyId": {
-                    "label": "Identifier of the object's type family",
+                    "label": "Id (family of object types)",
                     "description": "Allows you to display objects by Family on the plans and in the pdf inventory"
                 },
                 "itemTypeFamily": {
@@ -2147,15 +2147,15 @@
                     "description": "Allows you to display objects by Family on the plans and in the pdf inventory"
                 },
                 "manufacturerId": {
-                    "label": "Id (Object type manufacturer)",
-                    "description": null
+                    "label": "Manufacturer ID",
+                    "description": "A manufacturer represents a company or brand that produces objects or equipment"
                 },
                 "manufacturer": {
                     "label": "Object type manufacturer",
-                    "description": "Allows you to identify the manufacturer of the object type"
+                    "description": "A manufacturer represents a company or brand that produces objects or equipment"
                 },
                 "object3dModelId": {
-                    "label": "Id (3d model)",
+                    "label": "3D model identifier",
                     "description": "The 3D Model allows a realistic 3D representation of objects placed on the plan; In the absence of a 3D model, the objects are represented in full form in the 3D view"
                 },
                 "object3dModel": {
@@ -2180,7 +2180,7 @@
                 },
                 "itemTypePoints": {
                     "label": "Points of object types",
-                    "description": null
+                    "description": "An object types point allows you to define specific positions for object types on the plans"
                 },
                 "workplaceTypeItemTypes": {
                     "label": "Object types in workstation type",
@@ -2188,7 +2188,7 @@
                 },
                 "items": {
                     "label": "Objects",
-                    "description": null
+                    "description": "An object represents a physical or material element present in workspaces"
                 },
                 "personCompanyToItemTypes": {
                     "label": "Provider object types",
@@ -2401,12 +2401,12 @@
                     "description": "Enterprise users have access to their company's Surfy platform"
                 },
                 "userCompanyOwner": {
-                    "label": "Building owner user",
-                    "description": "The user who owns the building always sees the building even in the presence of a content role, in the event of a scenario creation, the user who created the scenario becomes the owner, the owner can be changed later"
+                    "label": "User who owns the building",
+                    "description": "The user who owns the building always sees the building even if there is a content role, in case of scenario creation, the user who created the scenario becomes the owner, the owner can be changed later"
                 },
                 "jupUiLayoutId": {
-                    "label": "Id (View of the plan)",
-                    "description": null
+                    "label": "Plan Vision Identifier",
+                    "description": "An interface layout defines the arrangement and organization of elements in the user interface"
                 },
                 "jupUiLayout": {
                     "label": "Vision of the default plan",
@@ -2453,28 +2453,28 @@
                     "description": "Floors represent a work platform or a level of a building."
                 },
                 "roomTypeGroupBuildings": {
-                    "label": "Groups of building space typologies",
-                    "description": null
+                    "label": "Associations of space typology group to buildings",
+                    "description": "A space typology group association with buildings allows you to define the groups of space types available in each building"
                 },
                 "costCenterBuildings": {
-                    "label": "Building cost centers",
-                    "description": null
+                    "label": "Cost center associations to buildings",
+                    "description": "A cost center association with buildings allows you to define specific cost centers for each building"
                 },
                 "dimensionBuildings": {
-                    "label": "Analysis layers by building",
-                    "description": null
+                    "label": "Analysis layer associations to buildings",
+                    "description": "An analysis layer association with buildings allows you to define specific analysis layers for each building"
                 },
                 "facts": {
                     "label": "Facts",
-                    "description": null
+                    "description": "A fact represents a factual data or event recorded in the system for analysis and reporting"
                 },
                 "organizationBuildings": {
-                    "label": "Building organizations",
-                    "description": null
+                    "label": "Associations organization to buildings",
+                    "description": "An organization-building association allows you to define the organizations responsible for each building"
                 },
                 "roomTypeBuildings": {
-                    "label": "Building space typologies",
-                    "description": null
+                    "label": "Associations of space typology with buildings",
+                    "description": "A space typology association with buildings makes it possible to define the types of spaces available in each building"
                 },
                 "personToBuildings": {
                     "label": "Building assignments",
@@ -2491,7 +2491,7 @@
             },
             "mapScale": {
                 "id": {
-                    "label": "Scale identifier",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -2581,7 +2581,7 @@
             },
             "structure": {
                 "id": {
-                    "label": "Id",
+                    "label": "Structure identifier",
                     "description": null
                 },
                 "name": {
@@ -2667,12 +2667,12 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "structureId": {
-                    "label": "Id (structure)",
-                    "description": null
+                    "label": "Structure identifier",
+                    "description": "A structure defines a geometric shape that can be used to calibrate and position features on maps"
                 },
                 "structure": {
                     "label": "Structure",
-                    "description": null
+                    "description": "A structure defines a geometric shape that can be used to calibrate and position features on maps"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -2701,7 +2701,7 @@
             },
             "floor": {
                 "id": {
-                    "label": "Identifier of the floor",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -2726,19 +2726,19 @@
                 },
                 "roomsCount": {
                     "label": "Number of spaces",
-                    "description": "The number of spaces present in this floor"
+                    "description": "The total number of spaces"
                 },
                 "workplacesCount": {
                     "label": "Number of workstations",
-                    "description": "The number of workstations in the floor is calculated automatically"
+                    "description": "The total number of workstations in the spaces"
                 },
                 "workplacesRatio": {
                     "label": "Workstation ratio",
-                    "description": "The workstation ratio is the number of square meters in the floor divided by the number of workstations, this value is calculated automatically"
+                    "description": "The workstation ratio is the number of square meters divided by the number of workstations"
                 },
                 "peopleCount": {
                     "label": "Number of assignments",
-                    "description": "The number of people assigned to the floor, either directly assigned to spaces, or through a workstation"
+                    "description": null
                 },
                 "seatsCount": {
                     "label": "Number of seats",
@@ -2746,7 +2746,7 @@
                 },
                 "peopleRatio": {
                     "label": "Occupancy ratio",
-                    "description": "The occupancy ratio is the number of square meters on the floor divided by the number of people assigned either directly to the spaces or via a workstation, this value is calculated"
+                    "description": "The occupancy ratio is the number of square meters divided by the number of people assigned either directly to the spaces or via a workstation"
                 },
                 "occupancyRate": {
                     "label": "Occupancy rate",
@@ -2758,19 +2758,19 @@
                 },
                 "freeWorkplacesCount": {
                     "label": "Number of vacancies",
-                    "description": "Number of free extensions on the floor"
+                    "description": "Total number of vacancies"
                 },
                 "flexWorkplacesCount": {
                     "label": "Number of flex positions",
-                    "description": "Number of flex posts in the floor"
+                    "description": "Total number of flex positions"
                 },
                 "sharedWorkplacesCount": {
                     "label": "Number of shared workstations",
-                    "description": "Number of workstations shared on the floor by at least 2 people"
+                    "description": "Total number of workstations shared by at least 2 people"
                 },
                 "sharedWorkplacesRatio": {
                     "label": "Rate of shared workstations",
-                    "description": "Rate of workstations shared by at least 2 people compared to all the workstations on the floor"
+                    "description": "Percentage of workstations shared by at least 2 people compared to all workstations"
                 },
                 "transitWorkplacesCount": {
                     "label": "Number of transit workstations",
@@ -2785,8 +2785,8 @@
                     "description": "The number of seats per person affected"
                 },
                 "totalPeopleCount": {
-                    "label": "Number of total assignments",
-                    "description": "The number of people assigned to the floor, either directly assigned to spaces, or through a workstation"
+                    "label": "Total number of assignments",
+                    "description": "The total number of people assigned, either directly assigned to spaces or through a workstation"
                 },
                 "carbonFootprint": {
                     "label": "Carbon footprint",
@@ -2833,20 +2833,20 @@
                     "description": "The building is used to group the floors"
                 },
                 "mapScaleId": {
-                    "label": "Scale identifier",
-                    "description": null
+                    "label": "Id (plane scale)",
+                    "description": "A map scale allows you to define the display and scale parameters for maps"
                 },
                 "mapScale": {
                     "label": "Plan scale",
                     "description": "The scale allows us to calculate in proportion the actual areas and sizes of objects"
                 },
                 "structureId": {
-                    "label": "Id (structure)",
-                    "description": null
+                    "label": "Structure identifier",
+                    "description": "A structure defines a geometric shape that can be used to calibrate and position features on maps"
                 },
                 "structure": {
                     "label": "Structure",
-                    "description": null
+                    "description": "A structure defines a geometric shape that can be used to calibrate and position features on maps"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -2865,12 +2865,12 @@
                     "description": "Updated by this user in Surfy, allows to know the history of the modification in Surfy"
                 },
                 "roomTypeGroupFloors": {
-                    "label": "Floor space typology groups",
-                    "description": null
+                    "label": "Associations group of space typology on the floors",
+                    "description": "A space typology group association on floors allows you to define the groups of space types available on each floor"
                 },
                 "costCenterFloors": {
-                    "label": "Floor cost centers",
-                    "description": null
+                    "label": "Cost center associations on floors",
+                    "description": "A cost center to floor association allows you to define specific cost centers for each floor"
                 },
                 "rooms": {
                     "label": "Spaces",
@@ -2878,19 +2878,19 @@
                 },
                 "roomPoints": {
                     "label": "Points of spaces",
-                    "description": null
+                    "description": "A point in spaces defines the geometric coordinates for drawing the outline of a space"
                 },
                 "dimensionFloors": {
-                    "label": "Analysis layers per floor",
-                    "description": null
+                    "label": "Analysis layer associations to floors",
+                    "description": "An analysis layer to floor association allows you to define specific analysis layers for each floor"
                 },
                 "organizationFloors": {
-                    "label": "Floor organization",
-                    "description": null
+                    "label": "Associations organization on the floors",
+                    "description": "An organizational association on floors allows you to define the organizations responsible for each floor"
                 },
                 "roomTypeFloors": {
-                    "label": "Floor space typologies",
-                    "description": null
+                    "label": "Associations of space typology on the floors",
+                    "description": "A space typology association with floors makes it possible to define the types of spaces available on each floor"
                 },
                 "contentRoleToFloors": {
                     "label": "Role associations of content to floors",
@@ -2911,7 +2911,7 @@
             },
             "distributionCostType": {
                 "id": {
-                    "label": "Id",
+                    "label": "Cost distribution type identifier",
                     "description": null
                 },
                 "name": {
@@ -2969,7 +2969,7 @@
             },
             "roomTypeGroup": {
                 "id": {
-                    "label": "Space typology group identifier",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -3001,21 +3001,21 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "roomTypeGroupToRoomTypes": {
-                    "label": "Associations groups of space typologies to space typologies",
-                    "description": null
+                    "label": "Space typology group associations to space typology",
+                    "description": "A space typology group to space typology association allows you to define which space types belong to which groups"
                 },
                 "roomTypeGroupFloors": {
-                    "label": "Floor space typology groups",
-                    "description": null
+                    "label": "Associations group of space typology on the floors",
+                    "description": "A space typology group association on floors allows you to define the groups of space types available on each floor"
                 },
                 "roomTypeGroupBuildings": {
-                    "label": "Groups of building space typologies",
-                    "description": null
+                    "label": "Associations of space typology group to buildings",
+                    "description": "A space typology group association with buildings allows you to define the groups of space types available in each building"
                 }
             },
             "roomType": {
                 "id": {
-                    "label": "Space typology identifier",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -3063,12 +3063,12 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "distributionCostTypeId": {
-                    "label": "Id (type of cost distribution)",
-                    "description": null
+                    "label": "Cost distribution type identifier",
+                    "description": "A cost distribution type allows you to define the methods for distributing costs between different cost centers"
                 },
                 "distributionCostType": {
                     "label": "Type of cost distribution",
-                    "description": null
+                    "description": "A cost distribution type allows you to define the methods for distributing costs between different cost centers"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -3087,20 +3087,20 @@
                     "description": "Updated by this user in Surfy, allows to know the history of the modification in Surfy"
                 },
                 "roomTypeGroupToRoomTypes": {
-                    "label": "Associations groups of space typologies to space typologies",
-                    "description": null
+                    "label": "Space typology group associations to space typology",
+                    "description": "A space typology group to space typology association allows you to define which space types belong to which groups"
                 },
                 "rooms": {
                     "label": "Spaces",
                     "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "roomTypeFloors": {
-                    "label": "Floor space typologies",
-                    "description": null
+                    "label": "Associations of space typology on the floors",
+                    "description": "A space typology association with floors makes it possible to define the types of spaces available on each floor"
                 },
                 "roomTypeBuildings": {
-                    "label": "Building space typologies",
-                    "description": null
+                    "label": "Associations of space typology with buildings",
+                    "description": "A space typology association with buildings makes it possible to define the types of spaces available in each building"
                 },
                 "personCompanyToRoomTypes": {
                     "label": "Types of provider spaces",
@@ -3121,7 +3121,7 @@
             },
             "roomTypeGroupToRoomType": {
                 "id": {
-                    "label": "Id",
+                    "label": "Space typology group association identifier to space typology",
                     "description": null
                 },
                 "createdAt": {
@@ -3137,15 +3137,15 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "roomTypeGroupId": {
-                    "label": "Space typology group identifier",
-                    "description": null
+                    "label": "Id (space typology group)",
+                    "description": "A space typology group allows you to group several types of spaces to facilitate their management and display."
                 },
                 "roomTypeGroup": {
                     "label": "Space typology group",
-                    "description": null
+                    "description": "A space typology group allows you to group several types of spaces to facilitate their management and display."
                 },
                 "roomTypeId": {
-                    "label": "Space typology identifier",
+                    "label": "Id (space typology)",
                     "description": null
                 },
                 "roomType": {
@@ -3179,7 +3179,7 @@
             },
             "roomTypeGroupFloor": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifier of the association group of space typology on the floors",
                     "description": null
                 },
                 "roomsArea": {
@@ -3275,15 +3275,15 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "roomTypeGroupId": {
-                    "label": "Space typology group identifier",
-                    "description": null
+                    "label": "Id (space typology group)",
+                    "description": "A space typology group allows you to group several types of spaces to facilitate their management and display."
                 },
                 "roomTypeGroup": {
                     "label": "Space typology group",
-                    "description": null
+                    "description": "A space typology group allows you to group several types of spaces to facilitate their management and display."
                 },
                 "floorId": {
-                    "label": "Identifier of the floor",
+                    "label": "Id (floor)",
                     "description": "Floors represent a work platform or a level of a building."
                 },
                 "floor": {
@@ -3317,7 +3317,7 @@
             },
             "roomTypeGroupBuilding": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifier of the building space typology group association",
                     "description": null
                 },
                 "roomsArea": {
@@ -3413,12 +3413,12 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "roomTypeGroupId": {
-                    "label": "Space typology group identifier",
-                    "description": null
+                    "label": "Id (space typology group)",
+                    "description": "A space typology group allows you to group several types of spaces to facilitate their management and display."
                 },
                 "roomTypeGroup": {
                     "label": "Space typology group",
-                    "description": null
+                    "description": "A space typology group allows you to group several types of spaces to facilitate their management and display."
                 },
                 "buildingId": {
                     "label": "Building identifier",
@@ -3511,12 +3511,12 @@
                     "description": "Updated by this user in Surfy, allows to know the history of the modification in Surfy"
                 },
                 "costCenterBuildings": {
-                    "label": "Building cost centers",
-                    "description": null
+                    "label": "Cost center associations to buildings",
+                    "description": "A cost center association with buildings allows you to define specific cost centers for each building"
                 },
                 "costCenterFloors": {
-                    "label": "Floor cost centers",
-                    "description": null
+                    "label": "Cost center associations on floors",
+                    "description": "A cost center to floor association allows you to define specific cost centers for each floor"
                 },
                 "rooms": {
                     "label": "Spaces",
@@ -3541,7 +3541,7 @@
             },
             "costCenterBuilding": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifier of the cost center association with buildings",
                     "description": null
                 },
                 "roomsArea": {
@@ -3679,7 +3679,7 @@
             },
             "costCenterFloor": {
                 "id": {
-                    "label": "Id",
+                    "label": "Cost center association identifier for floors",
                     "description": null
                 },
                 "roomsArea": {
@@ -3783,7 +3783,7 @@
                     "description": "The cost center allows spaces to be distributed dynamically for re-invoicing"
                 },
                 "floorId": {
-                    "label": "Identifier of the floor",
+                    "label": "Id (floor)",
                     "description": "Floors represent a work platform or a level of a building."
                 },
                 "floor": {
@@ -3817,7 +3817,7 @@
             },
             "room": {
                 "id": {
-                    "label": "Space ID",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -3846,15 +3846,15 @@
                 },
                 "workplacesCount": {
                     "label": "Number of workstations",
-                    "description": "The number of workstations in the space is calculated automatically"
+                    "description": "The total number of workstations in the spaces"
                 },
                 "workplacesRatio": {
-                    "label": "Ratio per workstation",
-                    "description": "The ratio per workstation is the number of square meters of space divided by the number of workstations, this value is calculated automatically"
+                    "label": "Workstation ratio",
+                    "description": "The workstation ratio is the number of square meters divided by the number of workstations"
                 },
                 "peopleCount": {
                     "label": "Number of assignments",
-                    "description": "The number of people assigned to the space, either directly or through a workstation"
+                    "description": null
                 },
                 "seatsCount": {
                     "label": "Number of seats",
@@ -3862,7 +3862,7 @@
                 },
                 "peopleRatio": {
                     "label": "Occupancy ratio",
-                    "description": "The occupancy ratio is the number of square meters of the space divided by the number of people assigned to the spaces, either directly or via a workstation, this value is calculated"
+                    "description": "The occupancy ratio is the number of square meters divided by the number of people assigned either directly to the spaces or via a workstation"
                 },
                 "occupancyRate": {
                     "label": "Occupancy rate",
@@ -3874,19 +3874,19 @@
                 },
                 "freeWorkplacesCount": {
                     "label": "Number of vacancies",
-                    "description": "Number of free positions in the space"
+                    "description": "Total number of vacancies"
                 },
                 "flexWorkplacesCount": {
                     "label": "Number of flex positions",
-                    "description": "Number of flex positions in the space"
+                    "description": "Total number of flex positions"
                 },
                 "sharedWorkplacesCount": {
                     "label": "Number of shared workstations",
-                    "description": "Number of workstations shared by at least 2 people"
+                    "description": "Total number of workstations shared by at least 2 people"
                 },
                 "sharedWorkplacesRatio": {
                     "label": "Rate of shared workstations",
-                    "description": "Rate of workstations shared by at least 2 people compared to all workstations in the space"
+                    "description": "Percentage of workstations shared by at least 2 people compared to all workstations"
                 },
                 "transitWorkplacesCount": {
                     "label": "Number of transit workstations",
@@ -3953,7 +3953,7 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "floorId": {
-                    "label": "Identifier of the floor",
+                    "label": "Id (floor)",
                     "description": "Floors represent a work platform or a level of a building."
                 },
                 "floor": {
@@ -3961,7 +3961,7 @@
                     "description": "Floors represent a work platform or a level of a building."
                 },
                 "occupancyStatusId": {
-                    "label": "Occupancy status identifier",
+                    "label": "Id (occupancy status)",
                     "description": "The occupancy status makes it possible to identify the real-time status of a space or workstation, for example if it is free, occupied or squatted, the occupancy status is updated. day by connected objects present in space"
                 },
                 "occupancyStatus": {
@@ -3969,7 +3969,7 @@
                     "description": "The occupancy status makes it possible to identify the real-time status of a space or workstation, for example if it is free, occupied or squatted, the occupancy status is updated. day by connected objects present in space"
                 },
                 "roomTypeId": {
-                    "label": "Space typology identifier",
+                    "label": "Id (space typology)",
                     "description": null
                 },
                 "roomType": {
@@ -3993,15 +3993,15 @@
                     "description": "Allows you to know which cost center to associate the space with when it comes to managing re-invoicing to the cost center by space"
                 },
                 "distributionCostTypeId": {
-                    "label": "Id (type of cost distribution)",
-                    "description": null
+                    "label": "Cost distribution type identifier",
+                    "description": "A cost distribution type allows you to define the methods for distributing costs between different cost centers"
                 },
                 "distributionCostType": {
                     "label": "Type of cost distribution",
                     "description": "Allows you to determine the method of calculating the cost distribution key"
                 },
                 "roomConnectorId": {
-                    "label": "Space Connector ID",
+                    "label": "Id (Space connector)",
                     "description": "Space connectors allow you to create a link between several spaces on different floors"
                 },
                 "roomConnector": {
@@ -4029,8 +4029,8 @@
                     "description": "The association between a point and a space makes it possible to preserve the order of the points in a space in order to constitute a polyon"
                 },
                 "dimensionRooms": {
-                    "label": "Space analysis layers",
-                    "description": null
+                    "label": "Analysis layer associations to spaces",
+                    "description": "An analysis layer association to spaces allows you to define specific analysis layers for each space"
                 },
                 "roomAffectations": {
                     "label": "Space assignments",
@@ -4042,7 +4042,7 @@
                 },
                 "items": {
                     "label": "Objects",
-                    "description": null
+                    "description": "An object represents a physical or material element present in workspaces"
                 },
                 "personToRoomBookings": {
                     "label": "Reservations for the people area",
@@ -4059,15 +4059,15 @@
             },
             "roomPoint": {
                 "id": {
-                    "label": "Identifier of the point of spaces",
+                    "label": "Id",
                     "description": null
                 },
                 "x": {
-                    "label": "x",
+                    "label": "X coordinate",
                     "description": "Coordinate on the X axis"
                 },
                 "y": {
-                    "label": "there",
+                    "label": "Y coordinate",
                     "description": "Y axis coordinate"
                 },
                 "createdAt": {
@@ -4083,7 +4083,7 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "floorId": {
-                    "label": "Identifier of the floor",
+                    "label": "Id (floor)",
                     "description": "Floors represent a work platform or a level of a building."
                 },
                 "floor": {
@@ -4112,11 +4112,11 @@
                 },
                 "roomPointSegmentStarts": {
                     "label": "Segment qualifications",
-                    "description": null
+                    "description": "A segment qualification allows you to define the display and orientation properties of a segment between two space points"
                 },
                 "roomPointSegmentEnds": {
                     "label": "Segment qualifications",
-                    "description": null
+                    "description": "A segment qualification allows you to define the display and orientation properties of a segment between two space points"
                 },
                 "companyId": {
                     "label": "Company ID",
@@ -4129,12 +4129,12 @@
             },
             "roomPointRoom": {
                 "id": {
-                    "label": "Identifier of the association between a point and a space",
-                    "description": "???"
+                    "label": "Id",
+                    "description": null
                 },
                 "sortIndex": {
                     "label": "Sort index",
-                    "description": "???"
+                    "description": "The order of the point in the sequence to form the polygon of space"
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -4149,7 +4149,7 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "roomId": {
-                    "label": "Space ID",
+                    "label": "Id (space)",
                     "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "room": {
@@ -4157,12 +4157,12 @@
                     "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "roomPointId": {
-                    "label": "Point identifier",
-                    "description": null
+                    "label": "Id (point of spaces)",
+                    "description": "A point in spaces defines the geometric coordinates for drawing the outline of a space"
                 },
                 "roomPoint": {
                     "label": "Point of spaces",
-                    "description": null
+                    "description": "A point in spaces defines the geometric coordinates for drawing the outline of a space"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -4191,7 +4191,7 @@
             },
             "roomPointSegmentType": {
                 "id": {
-                    "label": "Id",
+                    "label": "Segment type identifier",
                     "description": null
                 },
                 "name": {
@@ -4216,12 +4216,12 @@
                 },
                 "roomPointSegments": {
                     "label": "Segment qualifications",
-                    "description": null
+                    "description": "A segment qualification allows you to define the display and orientation properties of a segment between two space points"
                 }
             },
             "roomPointSegment": {
                 "id": {
-                    "label": "Id",
+                    "label": "Segment Qualification Identifier",
                     "description": null
                 },
                 "reversePoints": {
@@ -4245,28 +4245,28 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "roomPointSegmentTypeId": {
-                    "label": "Id (Segment type)",
-                    "description": null
+                    "label": "Segment type identifier",
+                    "description": "A segment type defines the different types of segments that can exist between space points"
                 },
                 "roomPointSegmentType": {
                     "label": "Segment type",
-                    "description": null
+                    "description": "A segment type defines the different types of segments that can exist between space points"
                 },
                 "roomPointStartId": {
                     "label": "Id (point of spaces)",
-                    "description": null
+                    "description": "A point in spaces defines the geometric coordinates for drawing the outline of a space"
                 },
                 "roomPointStart": {
                     "label": " Room Point Start",
-                    "description": null
+                    "description": "A point in spaces defines the geometric coordinates for drawing the outline of a space"
                 },
                 "roomPointEndId": {
                     "label": "Id (point of spaces)",
-                    "description": null
+                    "description": "A point in spaces defines the geometric coordinates for drawing the outline of a space"
                 },
                 "roomPointEnd": {
                     "label": " Room Point End",
-                    "description": null
+                    "description": "A point in spaces defines the geometric coordinates for drawing the outline of a space"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -4295,20 +4295,20 @@
             },
             "itemTypePoint": {
                 "id": {
-                    "label": "login",
-                    "description": "???"
+                    "label": "Id",
+                    "description": null
                 },
                 "x": {
-                    "label": "x",
-                    "description": "???"
+                    "label": "X coordinate",
+                    "description": "Horizontal position of the point on the plane"
                 },
                 "y": {
-                    "label": "there",
-                    "description": "???"
+                    "label": "Y coordinate",
+                    "description": "Vertical position of the point on the plane"
                 },
                 "sortIndex": {
                     "label": "Sort index",
-                    "description": "???"
+                    "description": "Point display order"
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -4323,12 +4323,12 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "itemTypeId": {
-                    "label": "Object type identifier",
-                    "description": "Identifier of the type of the object"
+                    "label": "Id (object type)",
+                    "description": "An object type allows you to categorize and define the characteristics of physical objects present in workspaces"
                 },
                 "itemType": {
-                    "label": "Type of object",
-                    "description": "???"
+                    "label": "Object type",
+                    "description": "An object type allows you to categorize and define the characteristics of physical objects present in workspaces"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -4357,7 +4357,7 @@
             },
             "dimensionType": {
                 "id": {
-                    "label": "Identifier of the type of dimension",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -4406,19 +4406,19 @@
                 },
                 "dimensions": {
                     "label": "Analysis layers",
-                    "description": null
+                    "description": "An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses."
                 },
                 "dimensionRooms": {
-                    "label": "Space analysis layers",
-                    "description": null
+                    "label": "Analysis layer associations to spaces",
+                    "description": "An analysis layer association to spaces allows you to define specific analysis layers for each space"
                 },
                 "dimensionFloors": {
-                    "label": "Analysis layers per floor",
-                    "description": null
+                    "label": "Analysis layer associations to floors",
+                    "description": "An analysis layer to floor association allows you to define specific analysis layers for each floor"
                 },
                 "dimensionBuildings": {
-                    "label": "Analysis layers by building",
-                    "description": null
+                    "label": "Analysis layer associations to buildings",
+                    "description": "An analysis layer association with buildings allows you to define specific analysis layers for each building"
                 },
                 "dimensionTypeToBuildings": {
                     "label": "Types of building assignment layers",
@@ -4435,8 +4435,8 @@
             },
             "dimension": {
                 "id": {
-                    "label": "Analysis layer identifier",
-                    "description": "Surfy internal identifier"
+                    "label": "Id",
+                    "description": null
                 },
                 "name": {
                     "label": "Name of the analysis layer",
@@ -4451,16 +4451,16 @@
                     "description": "The value can be used to associate the layer with a numerical value in order to be able to carry out analytical statistics"
                 },
                 "peopleCount": {
-                    "label": "Number of direct assignments",
-                    "description": "The number of people who are directly assigned to this assignment layer in the building"
+                    "label": "Number of assignments",
+                    "description": null
                 },
                 "totalPeopleCount": {
-                    "label": "Total number of direct assignments",
-                    "description": "The total number of people who are assigned directly to this assignment layer in the building, the addition of the actual people assigned and the number of people assigned manually"
+                    "label": "Total number of assignments",
+                    "description": "The total number of people assigned, either directly assigned to spaces or through a workstation"
                 },
                 "manualPeopleCount": {
-                    "label": "Number of direct manual assignments",
-                    "description": "The number of people who are assigned directly to this assignment layer without considering assignments with real people"
+                    "label": "Manual People Count",
+                    "description": null
                 },
                 "carbonFootprintPerMeter": {
                     "label": "Carbon footprint per square meter",
@@ -4483,12 +4483,12 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "dimensionTypeId": {
-                    "label": "Identifier of the type of dimension",
-                    "description": null
+                    "label": "Id (Layer type)",
+                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
                 },
                 "dimensionType": {
                     "label": "Layer type",
-                    "description": null
+                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -4507,16 +4507,16 @@
                     "description": "Updated by this user in Surfy, allows to know the history of the modification in Surfy"
                 },
                 "dimensionRooms": {
-                    "label": "Space analysis layers",
-                    "description": null
+                    "label": "Analysis layer associations to spaces",
+                    "description": "An analysis layer association to spaces allows you to define specific analysis layers for each space"
                 },
                 "dimensionFloors": {
-                    "label": "Analysis layers per floor",
-                    "description": null
+                    "label": "Analysis layer associations to floors",
+                    "description": "An analysis layer to floor association allows you to define specific analysis layers for each floor"
                 },
                 "dimensionBuildings": {
-                    "label": "Analysis layers by building",
-                    "description": null
+                    "label": "Analysis layer associations to buildings",
+                    "description": "An analysis layer association with buildings allows you to define specific analysis layers for each building"
                 },
                 "dimensionToPeople": {
                     "label": "Assignments to Assignment Layers",
@@ -4537,7 +4537,7 @@
             },
             "dimensionRoom": {
                 "id": {
-                    "label": "Identifier of the space analysis layer",
+                    "label": "Identifier of the analysis layer association to spaces",
                     "description": null
                 },
                 "createdAt": {
@@ -4553,15 +4553,15 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "dimensionId": {
-                    "label": "Analysis layer identifier",
-                    "description": "Surfy internal identifier"
+                    "label": "Id (Analysis layer)",
+                    "description": "An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses."
                 },
                 "dimension": {
                     "label": "Analysis layer",
-                    "description": null
+                    "description": "An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses."
                 },
                 "roomId": {
-                    "label": "Space ID",
+                    "label": "Id (space)",
                     "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "room": {
@@ -4569,12 +4569,12 @@
                     "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "dimensionTypeId": {
-                    "label": "Identifier of the type of dimension",
-                    "description": null
+                    "label": "Id (Layer type)",
+                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
                 },
                 "dimensionType": {
                     "label": "Layer type",
-                    "description": null
+                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -4603,7 +4603,7 @@
             },
             "dimensionFloor": {
                 "id": {
-                    "label": "Analysis layer identifier by floor",
+                    "label": "Identifier of the analysis layer association to the floors",
                     "description": null
                 },
                 "roomsArea": {
@@ -4699,23 +4699,23 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "dimensionId": {
-                    "label": "Analysis layer identifier",
-                    "description": "Surfy internal identifier"
+                    "label": "Id (Analysis layer)",
+                    "description": "An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses."
                 },
                 "dimension": {
                     "label": "Analysis layer",
-                    "description": null
+                    "description": "An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses."
                 },
                 "dimensionTypeId": {
-                    "label": "Identifier of the type of dimension",
-                    "description": null
+                    "label": "Id (Layer type)",
+                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
                 },
                 "dimensionType": {
                     "label": "Layer type",
-                    "description": null
+                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
                 },
                 "floorId": {
-                    "label": "Identifier of the floor",
+                    "label": "Id (floor)",
                     "description": "Floors represent a work platform or a level of a building."
                 },
                 "floor": {
@@ -4749,7 +4749,7 @@
             },
             "dimensionBuilding": {
                 "id": {
-                    "label": "Analysis layer identifier by building",
+                    "label": "Identifier of the analysis layer association to buildings",
                     "description": null
                 },
                 "dimensionPeopleCount": {
@@ -4822,7 +4822,7 @@
                 },
                 "totalPeopleCount": {
                     "label": "Total number of assignments",
-                    "description": "The total number of people assigned, either directly assigned to spaces, or through a workstation, or via an assignment layer"
+                    "description": "The total number of people assigned, either directly assigned to spaces or through a workstation"
                 },
                 "carbonFootprint": {
                     "label": "Carbon footprint",
@@ -4849,20 +4849,20 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "dimensionId": {
-                    "label": "Analysis layer identifier",
-                    "description": "Surfy internal identifier"
+                    "label": "Id (Analysis layer)",
+                    "description": "An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses."
                 },
                 "dimension": {
                     "label": "Analysis layer",
-                    "description": null
+                    "description": "An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses."
                 },
                 "dimensionTypeId": {
-                    "label": "Identifier of the type of dimension",
-                    "description": null
+                    "label": "Id (Layer type)",
+                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
                 },
                 "dimensionType": {
                     "label": "Layer type",
-                    "description": null
+                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
                 },
                 "buildingId": {
                     "label": "Building identifier",
@@ -4899,7 +4899,7 @@
             },
             "factType": {
                 "id": {
-                    "label": "Id",
+                    "label": "Fact type identifier",
                     "description": null
                 },
                 "name": {
@@ -4940,7 +4940,7 @@
                 },
                 "facts": {
                     "label": "Facts",
-                    "description": null
+                    "description": "A fact represents a factual data or event recorded in the system for analysis and reporting"
                 },
                 "companyId": {
                     "label": "Company ID",
@@ -4953,7 +4953,7 @@
             },
             "fact": {
                 "id": {
-                    "label": "Id",
+                    "label": "Fact ID",
                     "description": null
                 },
                 "value": {
@@ -4977,12 +4977,12 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "factTypeId": {
-                    "label": "Id (Type of Fact)",
-                    "description": null
+                    "label": "Fact type identifier",
+                    "description": "A fact type is used to categorize the different types of factual data or events recorded in the system"
                 },
                 "factType": {
                     "label": "Type of Fact",
-                    "description": null
+                    "description": "A fact type is used to categorize the different types of factual data or events recorded in the system"
                 },
                 "buildingId": {
                     "label": "Building identifier",
@@ -5019,7 +5019,7 @@
             },
             "personState": {
                 "id": {
-                    "label": "Person status identifier",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -5069,7 +5069,7 @@
             },
             "personSecurityProfile": {
                 "id": {
-                    "label": "Personal security profile identifier",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -5235,7 +5235,7 @@
                     "description": "The person's attachment service"
                 },
                 "personStateId": {
-                    "label": "Person status identifier",
+                    "label": "Id (status of persons)",
                     "description": "Allows you to define all types of contracts between people and the company"
                 },
                 "personState": {
@@ -5243,7 +5243,7 @@
                     "description": "Allows you to indicate the type of contract the person has with the company"
                 },
                 "personSecurityProfileId": {
-                    "label": "Personal security profile identifier",
+                    "label": "Id (personal safety profile)",
                     "description": "Allows you to define the different security profiles that can be associated with people"
                 },
                 "personSecurityProfile": {
@@ -5259,7 +5259,7 @@
                     "description": "The cost center allows spaces to be distributed dynamically for re-invoicing"
                 },
                 "personCompanyId": {
-                    "label": "Id (service provider company)",
+                    "label": "Service provider company identifier",
                     "description": "The service provider company allows you to manage service provider personnel by company to which they belong"
                 },
                 "personCompany": {
@@ -5267,7 +5267,7 @@
                     "description": "The service provider company allows you to manage service provider personnel by company to which they belong"
                 },
                 "personGenderId": {
-                    "label": "Id (gender of the person)",
+                    "label": "Person 's gender identifier",
                     "description": "Allows you to count each gender, for example for managing toilets"
                 },
                 "personGender": {
@@ -5345,7 +5345,7 @@
             },
             "personToPersonType": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifier of the type of relationship between people",
                     "description": null
                 },
                 "labelForward": {
@@ -5390,7 +5390,7 @@
                 },
                 "personToPeople": {
                     "label": "Person-to-person relationships",
-                    "description": null
+                    "description": "A person to person relationship allows you to define the hierarchical or organizational links between people"
                 },
                 "companyId": {
                     "label": "Company ID",
@@ -5403,7 +5403,7 @@
             },
             "personToPerson": {
                 "id": {
-                    "label": "Id",
+                    "label": "Person to person relationship identifier",
                     "description": null
                 },
                 "createdAt": {
@@ -5419,12 +5419,12 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "personToPersonTypeId": {
-                    "label": "Id (Type of relationship between people)",
-                    "description": null
+                    "label": "Identifier of the type of relationship between people",
+                    "description": "A type of relationship between people defines the different types of links that can exist between people"
                 },
                 "personToPersonType": {
                     "label": "Type of relationship between people",
-                    "description": null
+                    "description": "A type of relationship between people defines the different types of links that can exist between people"
                 },
                 "personSourceId": {
                     "label": "Id (person)",
@@ -5469,7 +5469,7 @@
             },
             "roomAffectation": {
                 "id": {
-                    "label": "Id",
+                    "label": "Space assignment identifier",
                     "description": null
                 },
                 "createdAt": {
@@ -5493,7 +5493,7 @@
                     "description": "These are the people entered into Surfy's database"
                 },
                 "roomId": {
-                    "label": "Space ID",
+                    "label": "Id (space)",
                     "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "room": {
@@ -5641,12 +5641,12 @@
                     "description": null
                 },
                 "itemTypeId": {
-                    "label": "Identifier of the type of the object",
-                    "description": "Identifier of the type of the object"
+                    "label": "Id (object type)",
+                    "description": "An object type allows you to categorize and define the characteristics of physical objects present in workspaces"
                 },
                 "itemType": {
                     "label": "Object type",
-                    "description": null
+                    "description": "An object type allows you to categorize and define the characteristics of physical objects present in workspaces"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -5743,7 +5743,7 @@
                     "description": null
                 },
                 "roomId": {
-                    "label": "Space ID",
+                    "label": "Id (space)",
                     "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "room": {
@@ -5784,7 +5784,7 @@
                 },
                 "items": {
                     "label": "Objects",
-                    "description": null
+                    "description": "An object represents a physical or material element present in workspaces"
                 },
                 "workplaceAffectations": {
                     "label": "Workstation assignments",
@@ -5805,7 +5805,7 @@
             },
             "item": {
                 "id": {
-                    "label": "Identifier of the object",
+                    "label": "Id",
                     "description": null
                 },
                 "code": {
@@ -5853,19 +5853,19 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "itemTypeId": {
-                    "label": "Identifier of the type of the object",
-                    "description": "Identifier of the type of the object"
+                    "label": "Id (object type)",
+                    "description": "An object type allows you to categorize and define the characteristics of physical objects present in workspaces"
                 },
                 "itemType": {
                     "label": "Object type",
-                    "description": null
+                    "description": "An object type allows you to categorize and define the characteristics of physical objects present in workspaces"
                 },
                 "roomId": {
-                    "label": "Space ID",
+                    "label": "Id (space)",
                     "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "room": {
-                    "label": "Object space",
+                    "label": "Space",
                     "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "workplaceId": {
@@ -5902,7 +5902,7 @@
                 },
                 "itemFacts": {
                     "label": "Object movements",
-                    "description": null
+                    "description": "An object movement records the movements or changes in status of an object in the system"
                 },
                 "companyId": {
                     "label": "Company ID",
@@ -6009,7 +6009,7 @@
             },
             "organizationFloor": {
                 "id": {
-                    "label": "Id",
+                    "label": "Organization association identifier on the floors",
                     "description": null
                 },
                 "roomsArea": {
@@ -6113,7 +6113,7 @@
                     "description": "Organizations have two hierarchical levels: departments and services, and help define the organizational structure of the company."
                 },
                 "floorId": {
-                    "label": "Identifier of the floor",
+                    "label": "Id (floor)",
                     "description": "Floors represent a work platform or a level of a building."
                 },
                 "floor": {
@@ -6147,7 +6147,7 @@
             },
             "organizationBuilding": {
                 "id": {
-                    "label": "Id",
+                    "label": "Building organization association identifier",
                     "description": null
                 },
                 "roomsArea": {
@@ -6285,7 +6285,7 @@
             },
             "roomTypeFloor": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifier of the space typology association on the floors",
                     "description": null
                 },
                 "roomsArea": {
@@ -6381,7 +6381,7 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "roomTypeId": {
-                    "label": "Space typology identifier",
+                    "label": "Id (space typology)",
                     "description": null
                 },
                 "roomType": {
@@ -6389,7 +6389,7 @@
                     "description": null
                 },
                 "floorId": {
-                    "label": "Identifier of the floor",
+                    "label": "Id (floor)",
                     "description": "Floors represent a work platform or a level of a building."
                 },
                 "floor": {
@@ -6423,7 +6423,7 @@
             },
             "roomTypeBuilding": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifier of the space typology association with buildings",
                     "description": null
                 },
                 "roomsArea": {
@@ -6519,7 +6519,7 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "roomTypeId": {
-                    "label": "Space typology identifier",
+                    "label": "Id (space typology)",
                     "description": null
                 },
                 "roomType": {
@@ -6561,7 +6561,7 @@
             },
             "itemToPerson": {
                 "id": {
-                    "label": "Id",
+                    "label": "Object-to- person association identifier",
                     "description": null
                 },
                 "createdAt": {
@@ -6585,12 +6585,12 @@
                     "description": "These are the people entered into Surfy's database"
                 },
                 "itemId": {
-                    "label": "Identifier of the object",
-                    "description": null
+                    "label": "Id (object)",
+                    "description": "An object represents a physical or material element present in workspaces"
                 },
                 "item": {
                     "label": "Object",
-                    "description": null
+                    "description": "An object represents a physical or material element present in workspaces"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -6619,7 +6619,7 @@
             },
             "personToBuilding": {
                 "id": {
-                    "label": "Id",
+                    "label": "Building assignment identifier",
                     "description": null
                 },
                 "addToPeopleCount": {
@@ -6681,7 +6681,7 @@
             },
             "dimensionToPerson": {
                 "id": {
-                    "label": "Id",
+                    "label": "Assignment layer assignment identifier",
                     "description": null
                 },
                 "priority": {
@@ -6701,12 +6701,12 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "dimensionId": {
-                    "label": "Analysis layer identifier",
-                    "description": "Surfy internal identifier"
+                    "label": "Id (Analysis layer)",
+                    "description": "An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses."
                 },
                 "dimension": {
                     "label": "Analysis layer",
-                    "description": null
+                    "description": "An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses."
                 },
                 "personId": {
                     "label": "Surfy ID",
@@ -6743,7 +6743,7 @@
             },
             "dimensionTypeToBuilding": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifier of the layer type association to buildings",
                     "description": null
                 },
                 "createdAt": {
@@ -6759,12 +6759,12 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "dimensionTypeId": {
-                    "label": "Identifier of the type of dimension",
-                    "description": null
+                    "label": "Id (Layer type)",
+                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
                 },
                 "dimensionType": {
                     "label": "Layer type",
-                    "description": null
+                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
                 },
                 "buildingId": {
                     "label": "Building identifier",
@@ -6835,7 +6835,7 @@
             },
             "personWorkingLocation": {
                 "id": {
-                    "label": "Id",
+                    "label": "People's work location identifier",
                     "description": null
                 },
                 "date": {
@@ -6913,7 +6913,7 @@
             },
             "personToWorkplaceBooking": {
                 "id": {
-                    "label": "Id",
+                    "label": "Workstation reservation ID for people",
                     "description": null
                 },
                 "startDatetime": {
@@ -6953,7 +6953,7 @@
                     "description": null
                 },
                 "personWorkingLocationId": {
-                    "label": "Id (People's work location)",
+                    "label": "People's work location identifier",
                     "description": "A workplace of people defines the workplace of people"
                 },
                 "personWorkingLocation": {
@@ -6987,7 +6987,7 @@
             },
             "personToRoomBooking": {
                 "id": {
-                    "label": "Id",
+                    "label": "Reservation ID for the people area",
                     "description": null
                 },
                 "startDatetime": {
@@ -7019,7 +7019,7 @@
                     "description": "These are the people entered into Surfy's database"
                 },
                 "roomId": {
-                    "label": "Space ID",
+                    "label": "Id (space)",
                     "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "room": {
@@ -7027,7 +7027,7 @@
                     "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "personWorkingLocationId": {
-                    "label": "Id (People's work location)",
+                    "label": "People's work location identifier",
                     "description": "A workplace of people defines the workplace of people"
                 },
                 "personWorkingLocation": {
@@ -7061,7 +7061,7 @@
             },
             "personToDimensionBooking": {
                 "id": {
-                    "label": "Id",
+                    "label": "Reservation ID in the people assignment layer",
                     "description": null
                 },
                 "startDatetime": {
@@ -7093,15 +7093,15 @@
                     "description": "These are the people entered into Surfy's database"
                 },
                 "dimensionId": {
-                    "label": "Analysis layer identifier",
-                    "description": "Surfy internal identifier"
+                    "label": "Id (Analysis layer)",
+                    "description": "An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses."
                 },
                 "dimension": {
                     "label": "Analysis layer",
-                    "description": null
+                    "description": "An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses."
                 },
                 "personWorkingLocationId": {
-                    "label": "Id (People's work location)",
+                    "label": "People's work location identifier",
                     "description": "A workplace of people defines the workplace of people"
                 },
                 "personWorkingLocation": {
@@ -7135,7 +7135,7 @@
             },
             "personCompanyMission": {
                 "id": {
-                    "label": "Id",
+                    "label": "Service provider mission identifier",
                     "description": null
                 },
                 "name": {
@@ -7165,7 +7165,7 @@
             },
             "personCompanyToItemType": {
                 "id": {
-                    "label": "Id",
+                    "label": "Provider object type identifier",
                     "description": null
                 },
                 "createdAt": {
@@ -7181,7 +7181,7 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "personCompanyId": {
-                    "label": "Id (service provider company)",
+                    "label": "Service provider company identifier",
                     "description": "The service provider company allows you to manage service provider personnel by company to which they belong"
                 },
                 "personCompany": {
@@ -7189,15 +7189,15 @@
                     "description": "The service provider company allows you to manage service provider personnel by company to which they belong"
                 },
                 "itemTypeId": {
-                    "label": "Identifier of the type of the object",
-                    "description": "Identifier of the type of the object"
+                    "label": "Id (object type)",
+                    "description": "An object type allows you to categorize and define the characteristics of physical objects present in workspaces"
                 },
                 "itemType": {
                     "label": "Object type",
-                    "description": null
+                    "description": "An object type allows you to categorize and define the characteristics of physical objects present in workspaces"
                 },
                 "personCompanyMissionId": {
-                    "label": "Id (mission of the service provider)",
+                    "label": "Service provider mission identifier",
                     "description": "The missions of the service providers make it possible to know the area of ​​intervention of the service providers"
                 },
                 "personCompanyMission": {
@@ -7231,7 +7231,7 @@
             },
             "personCompanyToRoomType": {
                 "id": {
-                    "label": "Id",
+                    "label": "Provider space type identifier",
                     "description": null
                 },
                 "createdAt": {
@@ -7247,7 +7247,7 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "personCompanyId": {
-                    "label": "Id (service provider company)",
+                    "label": "Service provider company identifier",
                     "description": "The service provider company allows you to manage service provider personnel by company to which they belong"
                 },
                 "personCompany": {
@@ -7255,7 +7255,7 @@
                     "description": "The service provider company allows you to manage service provider personnel by company to which they belong"
                 },
                 "roomTypeId": {
-                    "label": "Space typology identifier",
+                    "label": "Id (space typology)",
                     "description": null
                 },
                 "roomType": {
@@ -7263,7 +7263,7 @@
                     "description": null
                 },
                 "personCompanyMissionId": {
-                    "label": "Id (mission of the service provider)",
+                    "label": "Service provider mission identifier",
                     "description": "The missions of the service providers make it possible to know the area of ​​intervention of the service providers"
                 },
                 "personCompanyMission": {
@@ -7297,7 +7297,7 @@
             },
             "personCompanyToItem": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifier of the intervention on an object",
                     "description": null
                 },
                 "datetime": {
@@ -7321,7 +7321,7 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "personCompanyId": {
-                    "label": "Id (service provider company)",
+                    "label": "Service provider company identifier",
                     "description": "The service provider company allows you to manage service provider personnel by company to which they belong"
                 },
                 "personCompany": {
@@ -7329,12 +7329,12 @@
                     "description": "The service provider company allows you to manage service provider personnel by company to which they belong"
                 },
                 "itemId": {
-                    "label": "Identifier of the object",
-                    "description": null
+                    "label": "Id (object)",
+                    "description": "An object represents a physical or material element present in workspaces"
                 },
                 "item": {
                     "label": "Object",
-                    "description": null
+                    "description": "An object represents a physical or material element present in workspaces"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -7363,7 +7363,7 @@
             },
             "legend": {
                 "id": {
-                    "label": "Id",
+                    "label": "Legend ID",
                     "description": null
                 },
                 "name": {
@@ -7413,7 +7413,7 @@
             },
             "openerPostMessageHost": {
                 "id": {
-                    "label": "Id",
+                    "label": "Message host ID for pop-up window",
                     "description": null
                 },
                 "host": {
@@ -7513,7 +7513,7 @@
             },
             "jupObjectType": {
                 "id": {
-                    "label": "Id",
+                    "label": "Entity type identifier",
                     "description": null
                 },
                 "name": {
@@ -7534,16 +7534,16 @@
                 },
                 "jupUiViews": {
                     "label": "Interface views",
-                    "description": null
+                    "description": "An interface view defines the different perspectives and displays available in the user interface"
                 },
                 "jupRoleToJupObjectTypes": {
                     "label": "Role to object type associations",
-                    "description": null
+                    "description": "A role to object type association allows you to define specific CRUD permissions for a role on an entity type"
                 }
             },
             "jupUiView": {
                 "id": {
-                    "label": "Id",
+                    "label": "Interface view identifier",
                     "description": null
                 },
                 "name": {
@@ -7567,21 +7567,21 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "jupObjectTypeId": {
-                    "label": "Id (Entity type)",
-                    "description": null
+                    "label": "Entity type identifier",
+                    "description": "An entity type defines the different types of objects available in the user interface"
                 },
                 "jupObjectType": {
                     "label": "Entity type",
-                    "description": null
+                    "description": "An entity type defines the different types of objects available in the user interface"
                 },
                 "jupRoleToJupUiViews": {
                     "label": "Role associations with interface views",
-                    "description": null
+                    "description": "A role to interface view association allows you to define access permissions to the different interface views for a role"
                 }
             },
             "jupRole": {
                 "id": {
-                    "label": "Id",
+                    "label": "Role ID",
                     "description": null
                 },
                 "code": {
@@ -7605,24 +7605,24 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "jupUserCompanyToJupRoles": {
-                    "label": "Company user roles",
-                    "description": null
+                    "label": "Company user associations to the role",
+                    "description": "An enterprise user role association allows you to define feature access permissions for a specific enterprise user"
                 },
                 "jupRoleToJupUiViews": {
                     "label": "Role associations with interface views",
-                    "description": null
+                    "description": "A role to interface view association allows you to define access permissions to the different interface views for a role"
                 },
                 "jupRoleToJupObjectTypes": {
                     "label": "Role to object type associations",
-                    "description": null
+                    "description": "A role to object type association allows you to define specific CRUD permissions for a role on an entity type"
                 },
                 "jupRoleToJupUiOptions": {
-                    "label": "Role associations to plan visions",
-                    "description": null
+                    "label": "Role associations with interface options",
+                    "description": "A role association with interface options allows you to define access permissions to the different interface options for a role"
                 },
                 "jupRoleToJupUiOperations": {
-                    "label": "Role association with interface operations",
-                    "description": null
+                    "label": "Role associations to interface operations",
+                    "description": "A role association to interface operations allows you to define access permissions to the different interface operations for a role"
                 },
                 "apiUserToJupRoles": {
                     "label": "API user associations to role",
@@ -7633,13 +7633,13 @@
                     "description": null
                 },
                 "jupRoleToJupUiLayouts": {
-                    "label": " Jup Role To Jup Ui Layouts",
-                    "description": null
+                    "label": "Role associations to interface layouts",
+                    "description": "A role association to interface layouts allows you to define access permissions to different interface layouts for a role"
                 }
             },
             "jupUiOption": {
                 "id": {
-                    "label": "Id",
+                    "label": "Interface Option Identifier",
                     "description": null
                 },
                 "name": {
@@ -7663,13 +7663,13 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "jupRoleToJupUiOptions": {
-                    "label": "Role associations to plan visions",
-                    "description": null
+                    "label": "Role associations with interface options",
+                    "description": "A role association with interface options allows you to define access permissions to the different interface options for a role"
                 }
             },
             "jupUiOperation": {
                 "id": {
-                    "label": "Id",
+                    "label": "Interface operation identifier",
                     "description": null
                 },
                 "name": {
@@ -7689,8 +7689,8 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "jupRoleToJupUiOperations": {
-                    "label": "Role association with interface operations",
-                    "description": null
+                    "label": "Role associations to interface operations",
+                    "description": "A role association to interface operations allows you to define access permissions to the different interface operations for a role"
                 }
             },
             "contentRole": {
@@ -7735,8 +7735,8 @@
                     "description": "A content role to building association allows you to define building-specific access permissions for a given role"
                 },
                 "contentRoleToUserCompanies": {
-                    "label": "Company User Content Roles",
-                    "description": null
+                    "label": "Associations content role to enterprise user",
+                    "description": "A content role to enterprise user association allows you to define specific access permissions for enterprise users for a given role"
                 },
                 "contentRoleToFloors": {
                     "label": "Role associations of content to floors",
@@ -7765,7 +7765,7 @@
             },
             "jupUserCompanyToJupRole": {
                 "id": {
-                    "label": "Id",
+                    "label": "User association identifier of the company to the role",
                     "description": null
                 },
                 "createdAt": {
@@ -7789,12 +7789,12 @@
                     "description": "Enterprise users have access to their company's Surfy platform"
                 },
                 "jupRoleId": {
-                    "label": "Id (Role)",
-                    "description": null
+                    "label": "Role ID",
+                    "description": "A role defines access permissions to features in the user interface"
                 },
                 "jupRole": {
                     "label": "Role",
-                    "description": null
+                    "description": "A role defines access permissions to features in the user interface"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -7823,12 +7823,12 @@
             },
             "jupRoleToJupUiView": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifier of the role association to interface views",
                     "description": null
                 },
                 "canSee": {
                     "label": "Can see the view",
-                    "description": "Allow the view to be seen by the role"
+                    "description": "Allows the view to be seen by the role"
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -7843,25 +7843,25 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "jupUiViewId": {
-                    "label": "Id (Interface view)",
-                    "description": null
+                    "label": "Interface view identifier",
+                    "description": "An interface view defines the different perspectives and displays available in the user interface"
                 },
                 "jupUiView": {
                     "label": "Interface view",
-                    "description": null
+                    "description": "An interface view defines the different perspectives and displays available in the user interface"
                 },
                 "jupRoleId": {
-                    "label": "Id (Role)",
-                    "description": null
+                    "label": "Role ID",
+                    "description": "A role defines access permissions to features in the user interface"
                 },
                 "jupRole": {
                     "label": "Role",
-                    "description": null
+                    "description": "A role defines access permissions to features in the user interface"
                 }
             },
             "jupRoleToJupObjectType": {
                 "id": {
-                    "label": "Id",
+                    "label": "Role to object type association identifier",
                     "description": null
                 },
                 "arCreate": {
@@ -7893,30 +7893,30 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "jupObjectTypeId": {
-                    "label": "Id (Entity type)",
-                    "description": null
+                    "label": "Entity type identifier",
+                    "description": "An entity type defines the different types of objects available in the user interface"
                 },
                 "jupObjectType": {
                     "label": "Entity type",
-                    "description": null
+                    "description": "An entity type defines the different types of objects available in the user interface"
                 },
                 "jupRoleId": {
-                    "label": "Id (Role)",
-                    "description": null
+                    "label": "Role ID",
+                    "description": "A role defines access permissions to features in the user interface"
                 },
                 "jupRole": {
                     "label": "Role",
-                    "description": null
+                    "description": "A role defines access permissions to features in the user interface"
                 }
             },
             "jupRoleToJupUiOption": {
                 "id": {
-                    "label": "Id",
+                    "label": "Role association identifier for interface options",
                     "description": null
                 },
                 "canSee": {
                     "label": "Can see option",
-                    "description": "Allow the option to be seen by the role"
+                    "description": "Allows the option to be seen by the role"
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -7931,25 +7931,25 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "jupUiOptionId": {
-                    "label": "Id (Interface option)",
-                    "description": null
+                    "label": "Interface Option Identifier",
+                    "description": "An interface option defines the settings and configurations available in the user interface"
                 },
                 "jupUiOption": {
                     "label": "Interface option",
-                    "description": null
+                    "description": "An interface option defines the settings and configurations available in the user interface"
                 },
                 "jupRoleId": {
-                    "label": "Id (Role)",
-                    "description": null
+                    "label": "Role ID",
+                    "description": "A role defines access permissions to features in the user interface"
                 },
                 "jupRole": {
                     "label": "Role",
-                    "description": null
+                    "description": "A role defines access permissions to features in the user interface"
                 }
             },
             "jupRoleToJupUiOperation": {
                 "id": {
-                    "label": "Id",
+                    "label": "Role association identifier for interface operations",
                     "description": null
                 },
                 "canSee": {
@@ -7969,20 +7969,20 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "jupUiOperationId": {
-                    "label": "Id (Interface operation)",
-                    "description": null
+                    "label": "Interface operation identifier",
+                    "description": "An interface operation defines the actions and functionality available in the user interface"
                 },
                 "jupUiOperation": {
                     "label": "Interface operation",
-                    "description": null
+                    "description": "An interface operation defines the actions and functionality available in the user interface"
                 },
                 "jupRoleId": {
-                    "label": "Id (Role)",
-                    "description": null
+                    "label": "Role ID",
+                    "description": "A role defines access permissions to features in the user interface"
                 },
                 "jupRole": {
                     "label": "Role",
-                    "description": null
+                    "description": "A role defines access permissions to features in the user interface"
                 }
             },
             "contentRoleToBuilding": {
@@ -8045,7 +8045,7 @@
             },
             "contentRoleToUserCompany": {
                 "id": {
-                    "label": "Id",
+                    "label": "User ID of the content role association to the company user",
                     "description": null
                 },
                 "createdAt": {
@@ -8127,7 +8127,7 @@
                     "description": "A content role defines access permissions to different platform data for users"
                 },
                 "floorId": {
-                    "label": "Identifier of the floor",
+                    "label": "Id (floor)",
                     "description": "Floors represent a work platform or a level of a building."
                 },
                 "floor": {
@@ -8161,7 +8161,7 @@
             },
             "partnerApiCredential": {
                 "id": {
-                    "label": "Id",
+                    "label": "Partner API Key ID",
                     "description": null
                 },
                 "label": {
@@ -8309,12 +8309,12 @@
                     "description": null
                 },
                 "jupRoleId": {
-                    "label": "Id (Role)",
-                    "description": null
+                    "label": "Role ID",
+                    "description": "A role defines access permissions to features in the user interface"
                 },
                 "jupRole": {
                     "label": "Role",
-                    "description": null
+                    "description": "A role defines access permissions to features in the user interface"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -8401,7 +8401,7 @@
             },
             "jupUiTenantOperation": {
                 "id": {
-                    "label": "Id",
+                    "label": "Interface operation identifier for a company",
                     "description": null
                 },
                 "name": {
@@ -8471,12 +8471,12 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "jupUiTenantOperationId": {
-                    "label": "Id (Interface operation for a company)",
-                    "description": null
+                    "label": "Interface operation identifier for a company",
+                    "description": "An interface operation for a business defines the specific actions and features available to a business in the user interface"
                 },
                 "jupUiTenantOperation": {
                     "label": "Interface operation for a company",
-                    "description": null
+                    "description": "An interface operation for a business defines the specific actions and features available to a business in the user interface"
                 },
                 "contentRoleId": {
                     "label": "Content role identifier",
@@ -8633,12 +8633,12 @@
                     "description": null
                 },
                 "jupRoleId": {
-                    "label": "Id (Role)",
-                    "description": null
+                    "label": "Role ID",
+                    "description": "A role defines access permissions to features in the user interface"
                 },
                 "jupRole": {
                     "label": "Role",
-                    "description": null
+                    "description": "A role defines access permissions to features in the user interface"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -8865,7 +8865,7 @@
                     "description": null
                 },
                 "roomTypeId": {
-                    "label": "Space typology identifier",
+                    "label": "Id (space typology)",
                     "description": null
                 },
                 "roomType": {
@@ -8923,7 +8923,7 @@
                     "description": null
                 },
                 "floorId": {
-                    "label": "Identifier of the floor",
+                    "label": "Id (floor)",
                     "description": "Floors represent a work platform or a level of a building."
                 },
                 "floor": {
@@ -8957,12 +8957,12 @@
             },
             "jupRoleToJupUiLayout": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifier of the role association to interface layouts",
                     "description": null
                 },
                 "canSee": {
-                    "label": "Can See",
-                    "description": null
+                    "label": "Can see option",
+                    "description": "Allows the option' to be seen by the role"
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -8977,25 +8977,25 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "jupUiLayoutId": {
-                    "label": "Id (View of the plan)",
-                    "description": null
+                    "label": "Plan Vision Identifier",
+                    "description": "An interface layout defines the arrangement and organization of elements in the user interface"
                 },
                 "jupUiLayout": {
                     "label": "View of the plan",
-                    "description": null
+                    "description": "An interface layout defines the arrangement and organization of elements in the user interface"
                 },
                 "jupRoleId": {
-                    "label": "Id (Role)",
-                    "description": null
+                    "label": "Role ID",
+                    "description": "A role defines access permissions to features in the user interface"
                 },
                 "jupRole": {
                     "label": "Role",
-                    "description": null
+                    "description": "A role defines access permissions to features in the user interface"
                 }
             },
             "itemFact": {
                 "id": {
-                    "label": "Id",
+                    "label": "Object Movement ID",
                     "description": null
                 },
                 "measure": {
@@ -9027,12 +9027,12 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "itemId": {
-                    "label": "Identifier of the object",
-                    "description": null
+                    "label": "Id (object)",
+                    "description": "An object represents a physical or material element present in workspaces"
                 },
                 "item": {
                     "label": "Object",
-                    "description": null
+                    "description": "An object represents a physical or material element present in workspaces"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -9065,8 +9065,8 @@
                     "description": null
                 },
                 "name": {
-                    "label": "Name",
-                    "description": null
+                    "label": "Last name",
+                    "description": "Feature Family Name"
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -9135,12 +9135,12 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "featureFamilyId": {
-                    "label": "Id ( Feature Family)",
-                    "description": null
+                    "label": "Id (Family of features)",
+                    "description": "A feature family allows you to group related features according to their domain or use."
                 },
                 "featureFamily": {
-                    "label": " Feature Family",
-                    "description": null
+                    "label": "Family of features",
+                    "description": "A feature family allows you to group related features according to their domain or use."
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -9159,8 +9159,8 @@
                     "description": "Updated by this user in Surfy, allows to know the history of the modification in Surfy"
                 },
                 "features": {
-                    "label": " Features",
-                    "description": null
+                    "label": "Features",
+                    "description": "A feature represents a specific characteristic or capability available in the system"
                 },
                 "companyId": {
                     "label": "Company ID",
@@ -9177,8 +9177,8 @@
                     "description": null
                 },
                 "name": {
-                    "label": "Name",
-                    "description": null
+                    "label": "Last name",
+                    "description": "Feature Name"
                 },
                 "createdAt": {
                     "label": "Creation date",

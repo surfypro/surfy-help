@@ -12,7 +12,7 @@ The association between a point and a space makes it possible to preserve the or
     
 ### Sort index {#sort-index}
 
-???
+The order of the point in the sequence to form the polygon of space
 
 *Technical name:* ```sortIndex```
 <PH code="roomPointRoom:sortIndex"/>
@@ -25,7 +25,7 @@ The association between a point and a space makes it possible to preserve the or
 
 ### Point of spaces {#room-point}
 
-
+A point in spaces defines the geometric coordinates for drawing the outline of a space
 
 *Technical name:* ```roomPoint```
 <PH code="roomPointRoom:roomPoint"/>
