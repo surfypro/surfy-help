@@ -3,6 +3,7 @@
 ## 4 Août 2025 - v3.4.96
 
 - Amélioration de l'affichage des propriétés des types d'objets dans la documentation
+- L'icône de rotation des objets et des postes de travail est maintenant positionnée au-dessus des autres formes
 
 
 ## 2 Juillet 2025 - v3.4.94
