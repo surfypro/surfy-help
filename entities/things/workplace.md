@@ -136,7 +136,7 @@ Permet d'attribuer un poste de travail fixe à une personne
 
 ### Objets {#items}
 
-
+Un objet représente un élément physique ou matériel présent dans les espaces de travail
 
 *Nom technique:* ```items```
 <PH code="workplace:items"/>

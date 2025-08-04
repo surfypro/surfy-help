@@ -15,11 +15,11 @@
             },
             "companyType": {
                 "label": "Type of company",
-                "description": null
+                "description": "A business type allows businesses to be categorized according to their use"
             },
             "company": {
                 "label": "Business",
-                "description": null
+                "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
             },
             "campus": {
                 "label": "Campus",
@@ -51,7 +51,7 @@
             },
             "buildingType": {
                 "label": "Type of building",
-                "description": null
+                "description": "A building type allows buildings to be categorized according to their use"
             },
             "organization": {
                 "label": "Organization",
@@ -327,7 +327,7 @@
             },
             "contentRole": {
                 "label": "Content role",
-                "description": null
+                "description": "A content role defines access permissions to different platform data for users"
             },
             "jupUserCompanyToJupRole": {
                 "label": "Role of the business user",
@@ -351,7 +351,7 @@
             },
             "contentRoleToBuilding": {
                 "label": "Role association of content with buildings",
-                "description": null
+                "description": "A content role to building association allows you to define building-specific access permissions for a given role"
             },
             "contentRoleToUserCompany": {
                 "label": "Company user content role",
@@ -359,7 +359,7 @@
             },
             "contentRoleToFloor": {
                 "label": "Association role of content to floors",
-                "description": null
+                "description": "A content role to floor association allows you to define floor-specific access permissions for a given role"
             },
             "partnerApiCredential": {
                 "label": "Partner API key",
@@ -371,7 +371,7 @@
             },
             "apiUserToJupRole": {
                 "label": "Association of API user to role",
-                "description": null
+                "description": "An API user role association allows you to define access permissions to API features for a specific user"
             },
             "apiUserToContentRole": {
                 "label": "Associating API user with the content role",
@@ -387,7 +387,7 @@
             },
             "authentificationConnection": {
                 "label": "Authentication login",
-                "description": null
+                "description": "An authentication connection allows you to configure the authentication methods for accessing the platform (SSO, LDAP, etc.)"
             },
             "userRegistrationTenantRule": {
                 "label": "Authentication rule",
@@ -547,16 +547,16 @@
             },
             "companyType": {
                 "id": {
-                    "label": "Id",
+                    "label": "Business Type Identifier",
                     "description": null
                 },
                 "name": {
                     "label": "Business type name",
-                    "description": null
+                    "description": "Business type name"
                 },
                 "billable": {
                     "label": "Billable",
-                    "description": null
+                    "description": "Indicates whether this type of business is billable"
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -572,7 +572,7 @@
                 },
                 "companies": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "company": {
@@ -582,31 +582,31 @@
                 },
                 "name": {
                     "label": "Company Name",
-                    "description": null
+                    "description": "Company Name"
                 },
                 "logoPath": {
                     "label": "Logo",
                     "description": "The path of your company's logo"
                 },
                 "iconPath": {
-                    "label": "icon",
+                    "label": "Icon",
                     "description": "The company logo in square"
                 },
                 "proxyImages": {
-                    "label": "Proxy Images",
-                    "description": null
+                    "label": "Proxy images",
+                    "description": "Enable proxy for images"
                 },
                 "workingDaysCount": {
                     "label": "Number of working days per week",
                     "description": "The number of working days per week can be 5 for working days, 6 including Saturday and 7 including Sunday"
                 },
                 "enablePathfinding": {
-                    "label": "Enable Pathfinding",
-                    "description": null
+                    "label": "Enable pathfinding",
+                    "description": "Enable path finding functionality"
                 },
                 "planningNumberOfDays": {
-                    "label": "Planning Number Of Days",
-                    "description": null
+                    "label": "Number of planning days",
+                    "description": "Number of days for planning"
                 },
                 "enableCrowdedDimensionForBooking": {
                     "label": "Enable dimension override for booking",
@@ -625,12 +625,12 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "companyTypeId": {
-                    "label": "Id (type of company)",
-                    "description": null
+                    "label": "Business Type Identifier",
+                    "description": "A business type allows businesses to be categorized according to their use"
                 },
                 "companyType": {
                     "label": "Type of company",
-                    "description": null
+                    "description": "A business type allows businesses to be categorized according to their use"
                 },
                 "userCompanies": {
                     "label": "Business users",
@@ -638,7 +638,7 @@
                 },
                 "buildingTypes": {
                     "label": "Types of buildings",
-                    "description": null
+                    "description": "A building type allows buildings to be categorized according to their use"
                 },
                 "buildings": {
                     "label": "Buildings",
@@ -660,11 +660,11 @@
                 },
                 "color": {
                     "label": "Color",
-                    "description": "Campus Color"
+                    "description": "Campus color to differentiate on maps"
                 },
                 "address": {
                     "label": "Address",
-                    "description": null
+                    "description": "Campus address"
                 },
                 "roomsArea": {
                     "label": "Qualified surface",
@@ -780,11 +780,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "roomConnectorType": {
@@ -872,11 +872,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "userCompany": {
@@ -922,11 +922,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "personId": {
                     "label": "Surfy ID",
@@ -970,11 +970,11 @@
                 },
                 "buildingTypeCreatedBies": {
                     "label": "Types of buildings",
-                    "description": null
+                    "description": "A building type allows buildings to be categorized according to their use"
                 },
                 "buildingTypeUpdatedBies": {
                     "label": "Types of buildings",
-                    "description": null
+                    "description": "A building type allows buildings to be categorized according to their use"
                 },
                 "organizationCreatedBies": {
                     "label": "Organizations",
@@ -1446,11 +1446,11 @@
                 },
                 "contentRoleCreatedBies": {
                     "label": "Content roles",
-                    "description": null
+                    "description": "A content role defines access permissions to different platform data for users"
                 },
                 "contentRoleUpdatedBies": {
                     "label": "Content roles",
-                    "description": null
+                    "description": "A content role defines access permissions to different platform data for users"
                 },
                 "jupUserCompanyToJupRoles": {
                     "label": "Company user roles",
@@ -1466,11 +1466,11 @@
                 },
                 "contentRoleToBuildingCreatedBies": {
                     "label": "Role associations of content to buildings",
-                    "description": null
+                    "description": "A content role to building association allows you to define building-specific access permissions for a given role"
                 },
                 "contentRoleToBuildingUpdatedBies": {
                     "label": "Role associations of content to buildings",
-                    "description": null
+                    "description": "A content role to building association allows you to define building-specific access permissions for a given role"
                 },
                 "contentRoleToUserCompanies": {
                     "label": "Company User Content Roles",
@@ -1486,11 +1486,11 @@
                 },
                 "contentRoleToFloorCreatedBies": {
                     "label": "Role associations of content to floors",
-                    "description": null
+                    "description": "A content role to floor association allows you to define floor-specific access permissions for a given role"
                 },
                 "contentRoleToFloorUpdatedBies": {
                     "label": "Role associations of content to floors",
-                    "description": null
+                    "description": "A content role to floor association allows you to define floor-specific access permissions for a given role"
                 },
                 "partnerApiCredentialCreatedBies": {
                     "label": "Partner API keys",
@@ -1510,11 +1510,11 @@
                 },
                 "apiUserToJupRoleCreatedBies": {
                     "label": "API user associations to role",
-                    "description": null
+                    "description": "An API user role association allows you to define access permissions to API features for a specific user"
                 },
                 "apiUserToJupRoleUpdatedBies": {
                     "label": "API user associations to role",
-                    "description": null
+                    "description": "An API user role association allows you to define access permissions to API features for a specific user"
                 },
                 "apiUserToContentRoleCreatedBies": {
                     "label": "API user associations to content role",
@@ -1722,11 +1722,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "jupUiLayout": {
@@ -1770,11 +1770,11 @@
                 },
                 "code": {
                     "label": "Code",
-                    "description": "???"
+                    "description": "Building type reference code"
                 },
                 "color": {
                     "label": "Color",
-                    "description": null
+                    "description": "Color to differentiate the type of building on the plans"
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -1790,11 +1790,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -1832,7 +1832,7 @@
                 },
                 "color": {
                     "label": "Color",
-                    "description": null
+                    "description": "The organization color helps differentiate organizations on maps and in the interface"
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -1896,11 +1896,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "itemTypeFamily": {
@@ -1950,11 +1950,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "manufacturer": {
@@ -2004,11 +2004,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "object3dModel": {
@@ -2196,11 +2196,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "building": {
@@ -2382,19 +2382,19 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "buildingTypeId": {
                     "label": "Identifier of the type of building",
-                    "description": null
+                    "description": "A building type allows buildings to be categorized according to their use"
                 },
                 "buildingType": {
                     "label": "Type of building",
-                    "description": null
+                    "description": "A building type allows buildings to be categorized according to their use"
                 },
                 "userCompanyOwnerId": {
                     "label": "Id (business user)",
@@ -2486,7 +2486,7 @@
                 },
                 "contentRoleToBuildings": {
                     "label": "Role associations of content to buildings",
-                    "description": null
+                    "description": "A content role to building association allows you to define building-specific access permissions for a given role"
                 }
             },
             "mapScale": {
@@ -2572,11 +2572,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "structure": {
@@ -2630,11 +2630,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "structurePoint": {
@@ -2692,11 +2692,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "floor": {
@@ -2894,7 +2894,7 @@
                 },
                 "contentRoleToFloors": {
                     "label": "Role associations of content to floors",
-                    "description": null
+                    "description": "A content role to floor association allows you to define floor-specific access permissions for a given role"
                 },
                 "partnerExportMappingConfigurationToFloors": {
                     "label": "Floors included in the configuration of the transformation of partner exports",
@@ -2902,11 +2902,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "distributionCostType": {
@@ -2960,11 +2960,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "roomTypeGroup": {
@@ -3112,11 +3112,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "roomTypeGroupToRoomType": {
@@ -3170,11 +3170,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "roomTypeGroupFloor": {
@@ -3308,11 +3308,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "roomTypeGroupBuilding": {
@@ -3446,11 +3446,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "costCenter": {
@@ -3532,11 +3532,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "costCenterBuilding": {
@@ -3670,11 +3670,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "costCenterFloor": {
@@ -3808,11 +3808,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "room": {
@@ -4050,11 +4050,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "roomPoint": {
@@ -4120,11 +4120,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "roomPointRoom": {
@@ -4182,11 +4182,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "roomPointSegmentType": {
@@ -4286,11 +4286,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "itemTypePoint": {
@@ -4348,11 +4348,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "dimensionType": {
@@ -4426,11 +4426,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "dimension": {
@@ -4528,11 +4528,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "dimensionRoom": {
@@ -4594,11 +4594,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "dimensionFloor": {
@@ -4740,11 +4740,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "dimensionBuilding": {
@@ -4890,11 +4890,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "factType": {
@@ -4944,11 +4944,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "fact": {
@@ -5010,11 +5010,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "personState": {
@@ -5060,11 +5060,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "personSecurityProfile": {
@@ -5118,11 +5118,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "person": {
@@ -5336,11 +5336,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "personToPersonType": {
@@ -5394,11 +5394,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "personToPerson": {
@@ -5460,11 +5460,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "roomAffectation": {
@@ -5518,11 +5518,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "workplaceType": {
@@ -5588,11 +5588,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "workplaceTypeItemType": {
@@ -5666,11 +5666,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "workplace": {
@@ -5796,11 +5796,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "item": {
@@ -5906,11 +5906,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "workplaceAffectation": {
@@ -6000,11 +6000,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "organizationFloor": {
@@ -6138,11 +6138,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "organizationBuilding": {
@@ -6276,11 +6276,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "roomTypeFloor": {
@@ -6414,11 +6414,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "roomTypeBuilding": {
@@ -6552,11 +6552,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "itemToPerson": {
@@ -6610,11 +6610,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "personToBuilding": {
@@ -6672,11 +6672,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "dimensionToPerson": {
@@ -6734,11 +6734,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "dimensionTypeToBuilding": {
@@ -6792,11 +6792,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "workingLocation": {
@@ -6904,11 +6904,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "personToWorkplaceBooking": {
@@ -6978,11 +6978,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "personToRoomBooking": {
@@ -7052,11 +7052,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "personToDimensionBooking": {
@@ -7126,11 +7126,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "personCompanyMission": {
@@ -7222,11 +7222,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "personCompanyToRoomType": {
@@ -7288,11 +7288,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "personCompanyToItem": {
@@ -7354,11 +7354,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "legend": {
@@ -7404,11 +7404,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "openerPostMessageHost": {
@@ -7454,16 +7454,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "companyWorkingLocation": {
                 "id": {
-                    "label": "Id",
+                    "label": "Company work location identifier",
                     "description": null
                 },
                 "createdAt": {
@@ -7480,11 +7480,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "workingLocationId": {
                     "label": "Id (Work location)",
@@ -7626,7 +7626,7 @@
                 },
                 "apiUserToJupRoles": {
                     "label": "API user associations to role",
-                    "description": null
+                    "description": "An API user role association allows you to define access permissions to API features for a specific user"
                 },
                 "userRegistrationTenantRuleToJupRoles": {
                     "label": "Authentication rule-to-role associations",
@@ -7695,12 +7695,12 @@
             },
             "contentRole": {
                 "id": {
-                    "label": "Id",
+                    "label": "Content role identifier",
                     "description": null
                 },
                 "name": {
-                    "label": "Name",
-                    "description": null
+                    "label": "Last name",
+                    "description": "Content role name"
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -7732,7 +7732,7 @@
                 },
                 "contentRoleToBuildings": {
                     "label": "Role associations of content to buildings",
-                    "description": null
+                    "description": "A content role to building association allows you to define building-specific access permissions for a given role"
                 },
                 "contentRoleToUserCompanies": {
                     "label": "Company User Content Roles",
@@ -7740,7 +7740,7 @@
                 },
                 "contentRoleToFloors": {
                     "label": "Role associations of content to floors",
-                    "description": null
+                    "description": "A content role to floor association allows you to define floor-specific access permissions for a given role"
                 },
                 "apiUserToContentRoles": {
                     "label": "API user associations to content role",
@@ -7756,11 +7756,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "jupUserCompanyToJupRole": {
@@ -7814,11 +7814,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "jupRoleToJupUiView": {
@@ -7987,7 +7987,7 @@
             },
             "contentRoleToBuilding": {
                 "id": {
-                    "label": "Id",
+                    "label": "Building Content Role Association ID",
                     "description": null
                 },
                 "createdAt": {
@@ -8003,12 +8003,12 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "contentRoleId": {
-                    "label": "Id (Content role)",
-                    "description": null
+                    "label": "Content role identifier",
+                    "description": "A content role defines access permissions to different platform data for users"
                 },
                 "contentRole": {
                     "label": "Content role",
-                    "description": null
+                    "description": "A content role defines access permissions to different platform data for users"
                 },
                 "buildingId": {
                     "label": "Building identifier",
@@ -8036,11 +8036,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "contentRoleToUserCompany": {
@@ -8069,12 +8069,12 @@
                     "description": "Enterprise users have access to their company's Surfy platform"
                 },
                 "contentRoleId": {
-                    "label": "Id (Content role)",
-                    "description": null
+                    "label": "Content role identifier",
+                    "description": "A content role defines access permissions to different platform data for users"
                 },
                 "contentRole": {
                     "label": "Content role",
-                    "description": null
+                    "description": "A content role defines access permissions to different platform data for users"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -8094,16 +8094,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "contentRoleToFloor": {
                 "id": {
-                    "label": "Id",
+                    "label": "Content role association identifier on floors",
                     "description": null
                 },
                 "createdAt": {
@@ -8119,12 +8119,12 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "contentRoleId": {
-                    "label": "Id (Content role)",
-                    "description": null
+                    "label": "Content role identifier",
+                    "description": "A content role defines access permissions to different platform data for users"
                 },
                 "contentRole": {
                     "label": "Content role",
-                    "description": null
+                    "description": "A content role defines access permissions to different platform data for users"
                 },
                 "floorId": {
                     "label": "Identifier of the floor",
@@ -8152,11 +8152,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "partnerApiCredential": {
@@ -8218,11 +8218,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "apiUser": {
@@ -8235,8 +8235,8 @@
                     "description": "the secret password for your API account can be generated and should never be disclosed"
                 },
                 "name": {
-                    "label": "Name",
-                    "description": null
+                    "label": "Last name",
+                    "description": "API user name to identify them"
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -8268,7 +8268,7 @@
                 },
                 "apiUserToJupRoles": {
                     "label": "API user associations to role",
-                    "description": null
+                    "description": "An API user role association allows you to define access permissions to API features for a specific user"
                 },
                 "apiUserToContentRoles": {
                     "label": "API user associations to content role",
@@ -8276,16 +8276,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "apiUserToJupRole": {
                 "id": {
-                    "label": "Id",
+                    "label": "API user role association identifier",
                     "description": null
                 },
                 "createdAt": {
@@ -8334,11 +8334,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "apiUserToContentRole": {
@@ -8367,12 +8367,12 @@
                     "description": null
                 },
                 "contentRoleId": {
-                    "label": "Id (Content role)",
-                    "description": null
+                    "label": "Content role identifier",
+                    "description": "A content role defines access permissions to different platform data for users"
                 },
                 "contentRole": {
                     "label": "Content role",
-                    "description": null
+                    "description": "A content role defines access permissions to different platform data for users"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -8392,11 +8392,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "jupUiTenantOperation": {
@@ -8442,21 +8442,21 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "contentRoleToJupUiTenantOperation": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifier of the association of content role to interface operations for a company",
                     "description": null
                 },
                 "canSee": {
-                    "label": "Can See",
-                    "description": null
+                    "label": "Can see",
+                    "description": "Indicates whether the content role can see this interface operation"
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -8479,12 +8479,12 @@
                     "description": null
                 },
                 "contentRoleId": {
-                    "label": "Id (Content role)",
-                    "description": null
+                    "label": "Content role identifier",
+                    "description": "A content role defines access permissions to different platform data for users"
                 },
                 "contentRole": {
                     "label": "Content role",
-                    "description": null
+                    "description": "A content role defines access permissions to different platform data for users"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -8504,21 +8504,21 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "authentificationConnection": {
                 "id": {
-                    "label": "Id",
+                    "label": "Authentication connection identifier",
                     "description": null
                 },
                 "name": {
-                    "label": "Name",
-                    "description": null
+                    "label": "Last name",
+                    "description": "Authentication connection name"
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -8567,12 +8567,12 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "authentificationConnectionId": {
-                    "label": "Id (Authentication login)",
-                    "description": null
+                    "label": "Authentication connection identifier",
+                    "description": "An authentication connection allows you to configure the authentication methods for accessing the platform (SSO, LDAP, etc.)"
                 },
                 "authentificationConnection": {
                     "label": "Authentication login",
-                    "description": null
+                    "description": "An authentication connection allows you to configure the authentication methods for accessing the platform (SSO, LDAP, etc.)"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -8600,11 +8600,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "userRegistrationTenantRuleToJupRole": {
@@ -8658,11 +8658,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "userRegistrationTenantRuleToContentRole": {
@@ -8691,12 +8691,12 @@
                     "description": null
                 },
                 "contentRoleId": {
-                    "label": "Id (Content role)",
-                    "description": null
+                    "label": "Content role identifier",
+                    "description": "A content role defines access permissions to different platform data for users"
                 },
                 "contentRole": {
                     "label": "Content role",
-                    "description": null
+                    "description": "A content role defines access permissions to different platform data for users"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -8716,11 +8716,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "partnerExportMappingConfiguration": {
@@ -8770,11 +8770,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "partnerExportMapping": {
@@ -8832,11 +8832,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "partnerExportMappingToRoomType": {
@@ -8890,11 +8890,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "partnerExportMappingConfigurationToFloor": {
@@ -8948,11 +8948,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "jupRoleToJupUiLayout": {
@@ -9052,11 +9052,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "featureFamily": {
@@ -9102,11 +9102,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "featureGroup": {
@@ -9164,11 +9164,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
             "feature": {
@@ -9218,11 +9218,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 },
                 "company": {
                     "label": "Business",
-                    "description": null
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             }
         }

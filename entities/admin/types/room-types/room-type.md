@@ -77,7 +77,7 @@ L'icône pour le type d'espace permet d'afficher pour ce type d'espace une icôn
 
 ### Type de distribution des coûts {#distribution-cost-type}
 
-
+Un type de distribution des coûts permet de définir les méthodes de répartition des coûts entre les différents centres de coût
 
 *Nom technique:* ```distributionCostType```
 <PH code="roomType:distributionCostType"/>

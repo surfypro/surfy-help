@@ -1,7 +1,7 @@
 # Fabricant du type d'objet
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Un fabricant représente une entreprise ou une marque qui produit des objets ou équipements
 
 <OH code="manufacturer"/>
 
@@ -37,7 +37,7 @@ L'adresse du site internet du fabricant
 
 ### Types d'objet {#item-types}
 
-
+Un type d'objet permet de catégoriser et définir les caractéristiques des objets physiques présents dans les espaces de travail
 
 *Nom technique:* ```itemTypes```
 <PH code="manufacturer:itemTypes"/>

@@ -322,7 +322,7 @@ The original or reference building is used in the creation of scenarios, it allo
 
 ### Type of building {#building-type}
 
-
+A building type allows buildings to be categorized according to their use
 
 *Technical name:* ```buildingType```
 <PH code="building:buildingType"/>
@@ -402,7 +402,7 @@ Floors represent a work platform or a level of a building.
 
 ### Role associations of content to buildings {#content-role-to-buildings}
 
-
+A content role to building association allows you to define building-specific access permissions for a given role
 
 *Technical name:* ```contentRoleToBuildings```
 <PH code="building:contentRoleToBuildings"/>

@@ -63,16 +63,16 @@ Répartir au prorata l'espace utilisé par ce centre de coût sur l'étage sur l
 
 ## Entités associées (liste) {#properties-has-many}
 
-### Centres de coût des bâtiments {#cost-center-buildings}
+### Associations centre de coût aux bâtiments {#cost-center-buildings}
 
-
+Une association centre de coût aux bâtiments permet de définir les centres de coût spécifiques pour chaque bâtiment
 
 *Nom technique:* ```costCenterBuildings```
 <PH code="costCenter:costCenterBuildings"/>
 
-### Centres de coût des étages {#cost-center-floors}
+### Associations centre de coût aux étages {#cost-center-floors}
 
-
+Une association centre de coût aux étages permet de définir les centres de coût spécifiques pour chaque étage
 
 *Nom technique:* ```costCenterFloors```
 <PH code="costCenter:costCenterFloors"/>

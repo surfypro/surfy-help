@@ -283,7 +283,7 @@ The scale allows us to calculate in proportion the actual areas and sizes of obj
 
 ### Role associations of content to floors {#content-role-to-floors}
 
-
+A content role to floor association allows you to define floor-specific access permissions for a given role
 
 *Technical name:* ```contentRoleToFloors```
 <PH code="floor:contentRoleToFloors"/>

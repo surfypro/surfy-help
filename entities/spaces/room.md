@@ -285,6 +285,13 @@ Permet d'affecter une personne à un espace simple
 *Nom technique:* ```roomAffectations```
 <PH code="room:roomAffectations"/>
 
+### Associations calque d'analyse aux espaces {#dimension-rooms}
+
+Une association calque d'analyse aux espaces permet de définir les calques d'analyse spécifiques pour chaque espace
+
+*Nom technique:* ```dimensionRooms```
+<PH code="room:dimensionRooms"/>
+
 ### Associations entre un point et un espace {#room-point-rooms}
 
 L'association entre un point et un espace permet de conserver l'ordre des points dans un espace afin de constituer un polyon
@@ -292,16 +299,9 @@ L'association entre un point et un espace permet de conserver l'ordre des points
 *Nom technique:* ```roomPointRooms```
 <PH code="room:roomPointRooms"/>
 
-### Calques d'analyse des espaces {#dimension-rooms}
-
-
-
-*Nom technique:* ```dimensionRooms```
-<PH code="room:dimensionRooms"/>
-
 ### Objets {#items}
 
-
+Un objet représente un élément physique ou matériel présent dans les espaces de travail
 
 *Nom technique:* ```items```
 <PH code="room:items"/>

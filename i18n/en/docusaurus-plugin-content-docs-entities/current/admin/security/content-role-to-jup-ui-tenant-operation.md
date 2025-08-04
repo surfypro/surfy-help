@@ -12,9 +12,9 @@
 
 ## Basic properties {#properties-base}
     
-### Can See {#can-see}
+### Can see {#can-see}
 
-
+Indicates whether the content role can see this interface operation
 
 *Technical name:* ```canSee```
 <PH code="contentRoleToJupUiTenantOperation:canSee"/>
@@ -25,7 +25,7 @@
 
 ### Content role {#content-role}
 
-
+A content role defines access permissions to different platform data for users
 
 *Technical name:* ```contentRole```
 <PH code="contentRoleToJupUiTenantOperation:contentRole"/>

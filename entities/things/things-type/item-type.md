@@ -1,7 +1,7 @@
 # Type d'objet
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Un type d'objet permet de catégoriser et définir les caractéristiques des objets physiques présents dans les espaces de travail
 
 <OH code="itemType"/>
 
@@ -31,14 +31,14 @@ Permet d'identifier rapidement le type d'objet avec un nom complet, logique et d
     
 ### Afficher les informations sur le plan {#display-item-reference-in-map}
 
-Permet d’afficher le champ « Référence » de chaque objet sur le plan
+Permet d'afficher le champ « Référence » de chaque objet sur le plan
 
 *Nom technique:* ```displayItemReferenceInMap```
 <PH code="itemType:displayItemReferenceInMap"/>
 
 ### Code {#code}
 
-Permet d'avoir accès rapidement au type d’objet en tapant le code dans la recherche lors de la création d’objet
+Permet d'avoir accès rapidement au type d'objet en tapant le code dans la recherche lors de la création d'objet
 
 *Nom technique:* ```code```
 <PH code="itemType:code"/>
@@ -108,7 +108,7 @@ Permet de donner la hauteur en centimètres du type d'objet dans la vision en 3d
 
 ### Icône {#icon}
 
-Vous donne accès à trois types d’icône: 1) Les Icones de « Fontawsome », visibles en cochant « tout afficher » ou en recherchant par mot clé en anglais dans la case de recherche; 2) Les Icones « SURFY » destinées aux illustrations ajoutées sur les plans aux endroits stratégiques (Toilettes, Escaliers, Ascenseurs, Points Copie, etc) mais qui peuvent également être utilisées comme des icones classiques; 3) Les Icones « SURFY 2 » listant les icones réglementaires de la norme de Sécurité ISO 7010; Leur forme peut être ronde, carrée ou triangulaire
+Vous donne accès à trois types d'icône: 1) Les Icones de « Fontawsome », visibles en cochant « tout afficher » ou en recherchant par mot clé en anglais dans la case de recherche; 2) Les Icones « SURFY » destinées aux illustrations ajoutées sur les plans aux endroits stratégiques (Toilettes, Escaliers, Ascenseurs, Points Copie, etc) mais qui peuvent également être utilisées comme des icones classiques; 3) Les Icones « SURFY 2 » listant les icones réglementaires de la norme de Sécurité ISO 7010; Leur forme peut être ronde, carrée ou triangulaire
 
 *Nom technique:* ```icon```
 <PH code="itemType:icon"/>
@@ -122,7 +122,7 @@ Le nombre de places assises de ce type d'objet (fauteuil, siège, canapé, etc) 
 
 ### Photo {#picture}
 
-Permet de charger la photo du type d’objet, qui sera visible dans l’inventaire en pdf et sur la fiche de l’objet sélectionné sur le plan
+Permet de charger la photo du type d'objet, qui sera visible dans l'inventaire en pdf et sur la fiche de l'objet sélectionné sur le plan
 
 *Nom technique:* ```picture```
 <PH code="itemType:picture"/>
@@ -140,7 +140,7 @@ Le prix d'achat du type d'objet
 
 ### Fabricant du type d'objet {#manufacturer}
 
-Permet d'identifier le fabricant du type d'objet
+Un fabricant représente une entreprise ou une marque qui produit des objets ou équipements
 
 *Nom technique:* ```manufacturer```
 <PH code="itemType:manufacturer"/>
@@ -164,14 +164,14 @@ Le Modèle 3D permet une représentation 3D réaliste des objets placés sur le 
 
 ### Objets {#items}
 
-
+Un objet représente un élément physique ou matériel présent dans les espaces de travail
 
 *Nom technique:* ```items```
 <PH code="itemType:items"/>
 
 ### Points des types d'objet {#item-type-points}
 
-
+Un point des types d'objet permet de définir des positions spécifiques pour les types d'objets sur les plans
 
 *Nom technique:* ```itemTypePoints```
 <PH code="itemType:itemTypePoints"/>

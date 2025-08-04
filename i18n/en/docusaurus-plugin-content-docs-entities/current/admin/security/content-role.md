@@ -1,7 +1,7 @@
 # Content role
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+A content role defines access permissions to different platform data for users
 
 <OH code="contentRole"/>
 
@@ -12,9 +12,9 @@
 
 ## Basic properties {#properties-base}
     
-### Name {#name}
+### Last name {#name}
 
-
+Content role name
 
 *Technical name:* ```name```
 <PH code="contentRole:name"/>
@@ -55,14 +55,14 @@
 
 ### Role associations of content to buildings {#content-role-to-buildings}
 
-
+A content role to building association allows you to define building-specific access permissions for a given role
 
 *Technical name:* ```contentRoleToBuildings```
 <PH code="contentRole:contentRoleToBuildings"/>
 
 ### Role associations of content to floors {#content-role-to-floors}
 
-
+A content role to floor association allows you to define floor-specific access permissions for a given role
 
 *Technical name:* ```contentRoleToFloors```
 <PH code="contentRole:contentRoleToFloors"/>

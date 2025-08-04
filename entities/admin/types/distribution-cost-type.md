@@ -1,7 +1,7 @@
 # Type de distribution des coûts
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Un type de distribution des coûts permet de définir les méthodes de répartition des coûts entre les différents centres de coût
 
 <OH code="distributionCostType"/>
 

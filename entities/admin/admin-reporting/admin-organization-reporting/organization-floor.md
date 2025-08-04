@@ -1,7 +1,7 @@
-# Organisation des étages
+# Association organisation aux étages
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Une association organisation aux étages permet de définir les organisations responsables de chaque étage
 
 <OH code="organizationFloor"/>
 

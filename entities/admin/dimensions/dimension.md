@@ -1,7 +1,7 @@
 # Calque d'analyse
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Un calque d'analyse permet de catégoriser et analyser les espaces selon différents critères pour des analyses statistiques et de reporting
 
 <OH code="dimension"/>
 
@@ -36,23 +36,23 @@ L'empreinte carbone par mètre carré permet de calculer l'empreinte carbone en 
 *Nom technique:* ```carbonFootprintPerMeter```
 <PH code="dimension:carbonFootprintPerMeter"/>
 
-### Nombre d'affectations directes {#people-count}
+### Manual People Count {#manual-people-count}
 
-Le nombre de personnes qui sont affectées directement à ce calque d'affectation dans le bâtiment
 
-*Nom technique:* ```peopleCount```
-<PH code="dimension:peopleCount"/>
-
-### Nombre d'affectations directes manuelle {#manual-people-count}
-
-Le nombre de personnes qui sont affectées directement à ce calque d'affectation sans tenir compte des affectations avec des personnes réelles
 
 *Nom technique:* ```manualPeopleCount```
 <PH code="dimension:manualPeopleCount"/>
 
-### Nombre total d'affectations directes {#total-people-count}
+### Nombre d'affectations {#people-count}
 
-Le nombre de personnes total qui sont affectées directement à ce calque d'affectation dans le bâtiment, l'addition des personnes réelles affectés et du nombre de personnes affectés manuellement
+
+
+*Nom technique:* ```peopleCount```
+<PH code="dimension:peopleCount"/>
+
+### Nombre total d'affectations {#total-people-count}
+
+Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail
 
 *Nom technique:* ```totalPeopleCount```
 <PH code="dimension:totalPeopleCount"/>
@@ -77,7 +77,7 @@ La valeur peut être utilisé pour associé le calque à une valeur numérique a
 
 ### Type de calque {#dimension-type}
 
-
+Un type de calque permet de catégoriser les calques d'analyse selon leur usage ou leur domaine d'application
 
 *Nom technique:* ```dimensionType```
 <PH code="dimension:dimensionType"/>
@@ -92,23 +92,23 @@ Permet d'affecter une personne à un quartier, territoire ou village
 *Nom technique:* ```dimensionToPeople```
 <PH code="dimension:dimensionToPeople"/>
 
-### Calques d'analyse des espaces {#dimension-rooms}
+### Associations calque d'analyse aux bâtiments {#dimension-buildings}
 
-
-
-*Nom technique:* ```dimensionRooms```
-<PH code="dimension:dimensionRooms"/>
-
-### Calques d'analyse par bâtiment {#dimension-buildings}
-
-
+Une association calque d'analyse aux bâtiments permet de définir les calques d'analyse spécifiques pour chaque bâtiment
 
 *Nom technique:* ```dimensionBuildings```
 <PH code="dimension:dimensionBuildings"/>
 
-### Calques d'analyse par étage {#dimension-floors}
+### Associations calque d'analyse aux espaces {#dimension-rooms}
 
+Une association calque d'analyse aux espaces permet de définir les calques d'analyse spécifiques pour chaque espace
 
+*Nom technique:* ```dimensionRooms```
+<PH code="dimension:dimensionRooms"/>
+
+### Associations calque d'analyse aux étages {#dimension-floors}
+
+Une association calque d'analyse aux étages permet de définir les calques d'analyse spécifiques pour chaque étage
 
 *Nom technique:* ```dimensionFloors```
 <PH code="dimension:dimensionFloors"/>

@@ -1,7 +1,7 @@
 # Opération d'interface pour une entreprise
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Une opération d'interface pour une entreprise définit les actions et fonctionnalités spécifiques disponibles pour une entreprise dans l'interface utilisateur
 
 <OH code="jupUiTenantOperation"/>
 

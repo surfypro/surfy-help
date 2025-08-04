@@ -55,7 +55,7 @@ Utiliser X si l'objet est orienté à droite ou Y si l'objet est orienté vers l
 
 ### Types d'objet {#item-types}
 
-
+Un type d'objet permet de catégoriser et définir les caractéristiques des objets physiques présents dans les espaces de travail
 
 *Nom technique:* ```itemTypes```
 <PH code="object3dModel:itemTypes"/>

@@ -22,9 +22,9 @@ le mot de passe secret de votre compte API peut être généré et ne devrait ja
 
 ## Propriétés de base {#properties-base}
     
-### Name {#name}
+### Nom {#name}
 
-
+Nom de l'utilisateur d'API pour l'identifier
 
 *Nom technique:* ```name```
 <PH code="apiUser:name"/>
@@ -37,7 +37,7 @@ le mot de passe secret de votre compte API peut être généré et ne devrait ja
 
 ### Associations d'utilisateur d'api au rôle {#api-user-to-jup-roles}
 
-
+Une association d'utilisateur d'API au rôle permet de définir les permissions d'accès aux fonctionnalités de l'API pour un utilisateur spécifique
 
 *Nom technique:* ```apiUserToJupRoles```
 <PH code="apiUser:apiUserToJupRoles"/>

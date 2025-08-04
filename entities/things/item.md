@@ -1,7 +1,7 @@
 # Objet
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Un objet représente un élément physique ou matériel présent dans les espaces de travail
 
 <OH code="item"/>
 
@@ -75,7 +75,7 @@ La référence de l'objet est utilisé pour le retrouver et pour differencier ce
 
 ## Entités associées (unique) {#properties-belongs-to}
 
-### Espace de l'objet {#room}
+### Espace {#room}
 
 Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces
 
@@ -91,7 +91,7 @@ Les espaces sont des lieux de travail ou des zones afin de découper un étage e
 
 ### Type d'objet {#item-type}
 
-
+Un type d'objet permet de catégoriser et définir les caractéristiques des objets physiques présents dans les espaces de travail
 
 *Nom technique:* ```itemType```
 <PH code="item:itemType"/>
@@ -115,7 +115,7 @@ Les interventions des prestataires sur des objets permettent de définir par exe
 
 ### Mouvements d'objet {#item-facts}
 
-
+Un mouvement d'objet enregistre les déplacements ou changements de statut d'un objet dans le système
 
 *Nom technique:* ```itemFacts```
 <PH code="item:itemFacts"/>

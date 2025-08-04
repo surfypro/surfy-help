@@ -144,14 +144,14 @@ These are the people entered into Surfy's database
 
 ### API user associations to role {#api-user-to-jup-role-created-bies}
 
-
+An API user role association allows you to define access permissions to API features for a specific user
 
 *Technical name:* ```apiUserToJupRoleCreatedBies```
 <PH code="userCompany:apiUserToJupRoleCreatedBies"/>
 
 ### API user associations to role {#api-user-to-jup-role-updated-bies}
 
-
+An API user role association allows you to define access permissions to API features for a specific user
 
 *Technical name:* ```apiUserToJupRoleUpdatedBies```
 <PH code="userCompany:apiUserToJupRoleUpdatedBies"/>
@@ -424,14 +424,14 @@ A company work location allows a company to customize people's work locations fo
 
 ### Content roles {#content-role-created-bies}
 
-
+A content role defines access permissions to different platform data for users
 
 *Technical name:* ```contentRoleCreatedBies```
 <PH code="userCompany:contentRoleCreatedBies"/>
 
 ### Content roles {#content-role-updated-bies}
 
-
+A content role defines access permissions to different platform data for users
 
 *Technical name:* ```contentRoleUpdatedBies```
 <PH code="userCompany:contentRoleUpdatedBies"/>
@@ -963,28 +963,28 @@ Reservations to people assignment layers are recorded and available with reserva
 
 ### Role associations of content to buildings {#content-role-to-building-created-bies}
 
-
+A content role to building association allows you to define building-specific access permissions for a given role
 
 *Technical name:* ```contentRoleToBuildingCreatedBies```
 <PH code="userCompany:contentRoleToBuildingCreatedBies"/>
 
 ### Role associations of content to buildings {#content-role-to-building-updated-bies}
 
-
+A content role to building association allows you to define building-specific access permissions for a given role
 
 *Technical name:* ```contentRoleToBuildingUpdatedBies```
 <PH code="userCompany:contentRoleToBuildingUpdatedBies"/>
 
 ### Role associations of content to floors {#content-role-to-floor-created-bies}
 
-
+A content role to floor association allows you to define floor-specific access permissions for a given role
 
 *Technical name:* ```contentRoleToFloorCreatedBies```
 <PH code="userCompany:contentRoleToFloorCreatedBies"/>
 
 ### Role associations of content to floors {#content-role-to-floor-updated-bies}
 
-
+A content role to floor association allows you to define floor-specific access permissions for a given role
 
 *Technical name:* ```contentRoleToFloorUpdatedBies```
 <PH code="userCompany:contentRoleToFloorUpdatedBies"/>
@@ -1145,14 +1145,14 @@ Building assignment layer types are used to define the different types of buildi
 
 ### Types of buildings {#building-type-created-bies}
 
-
+A building type allows buildings to be categorized according to their use
 
 *Technical name:* ```buildingTypeCreatedBies```
 <PH code="userCompany:buildingTypeCreatedBies"/>
 
 ### Types of buildings {#building-type-updated-bies}
 
-
+A building type allows buildings to be categorized according to their use
 
 *Technical name:* ```buildingTypeUpdatedBies```
 <PH code="userCompany:buildingTypeUpdatedBies"/>

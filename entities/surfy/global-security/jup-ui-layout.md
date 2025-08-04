@@ -1,7 +1,7 @@
 # Vision du plan
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Un layout d'interface définit la disposition et l'organisation des éléments dans l'interface utilisateur
 
 <OH code="jupUiLayout"/>
 
@@ -25,9 +25,9 @@
 
 ## Entités associées (liste) {#properties-has-many}
 
-###  Jup Role To Jup Ui Layouts {#jup-role-to-jup-ui-layouts}
+### Associations rôle aux layouts d'interface {#jup-role-to-jup-ui-layouts}
 
-
+Une association rôle aux layouts d'interface permet de définir les permissions d'accès aux différentes dispositions d'interface pour un rôle
 
 *Nom technique:* ```jupRoleToJupUiLayouts```
 <PH code="jupUiLayout:jupRoleToJupUiLayouts"/>

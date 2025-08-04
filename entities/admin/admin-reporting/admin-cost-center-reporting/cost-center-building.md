@@ -1,7 +1,7 @@
-# Centre de coût des bâtiments
+# Association centre de coût aux bâtiments
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Une association centre de coût aux bâtiments permet de définir les centres de coût spécifiques pour chaque bâtiment
 
 <OH code="costCenterBuilding"/>
 

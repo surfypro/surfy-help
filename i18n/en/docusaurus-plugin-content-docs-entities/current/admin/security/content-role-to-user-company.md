@@ -22,7 +22,7 @@ Enterprise users have access to their company's Surfy platform
 
 ### Content role {#content-role}
 
-
+A content role defines access permissions to different platform data for users
 
 *Technical name:* ```contentRole```
 <PH code="contentRoleToUserCompany:contentRole"/>

@@ -44,7 +44,7 @@
 
 ### API user associations to role {#api-user-to-jup-roles}
 
-
+An API user role association allows you to define access permissions to API features for a specific user
 
 *Technical name:* ```apiUserToJupRoles```
 <PH code="jupRole:apiUserToJupRoles"/>

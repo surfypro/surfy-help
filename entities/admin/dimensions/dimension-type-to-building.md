@@ -22,7 +22,7 @@ Le bâtiment est utilisé pour regrouper les étages
 
 ### Type de calque {#dimension-type}
 
-
+Un type de calque permet de catégoriser les calques d'analyse selon leur usage ou leur domaine d'application
 
 *Nom technique:* ```dimensionType```
 <PH code="dimensionTypeToBuilding:dimensionType"/>

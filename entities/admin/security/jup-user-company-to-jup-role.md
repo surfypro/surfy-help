@@ -1,7 +1,7 @@
-# Rôle de l'utilisateur de l'entreprise
+# Association utilisateur de l'entreprise au rôle
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Une association utilisateur de l'entreprise au rôle permet de définir les permissions d'accès aux fonctionnalités pour un utilisateur spécifique de l'entreprise
 
 <OH code="jupUserCompanyToJupRole"/>
 
@@ -15,7 +15,7 @@
 
 ### Rôle {#jup-role}
 
-
+Un rôle définit les permissions d'accès aux fonctionnalités dans l'interface utilisateur
 
 *Nom technique:* ```jupRole```
 <PH code="jupUserCompanyToJupRole:jupRole"/>

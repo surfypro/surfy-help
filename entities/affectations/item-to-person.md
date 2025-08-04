@@ -15,7 +15,7 @@ Permet d'associer un objet à une personne (siège ergonomique, casier)
 
 ### Objet {#item}
 
-
+Un objet représente un élément physique ou matériel présent dans les espaces de travail
 
 *Nom technique:* ```item```
 <PH code="itemToPerson:item"/>

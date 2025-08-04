@@ -22,7 +22,7 @@
 
 ### Content role {#content-role}
 
-
+A content role defines access permissions to different platform data for users
 
 *Technical name:* ```contentRole```
 <PH code="apiUserToContentRole:contentRole"/>

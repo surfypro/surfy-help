@@ -1,7 +1,7 @@
-# Calque d'analyse par bâtiment
+# Association calque d'analyse aux bâtiments
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Une association calque d'analyse aux bâtiments permet de définir les calques d'analyse spécifiques pour chaque bâtiment
 
 <OH code="dimensionBuilding"/>
 
@@ -89,7 +89,7 @@ Nombre total de postes libres
 
 ### Nombre total d'affectations {#total-people-count}
 
-Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail, soit via un calque d'affectation
+Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail
 
 *Nom technique:* ```totalPeopleCount```
 <PH code="dimensionBuilding:totalPeopleCount"/>
@@ -172,14 +172,14 @@ Le bâtiment est utilisé pour regrouper les étages
 
 ### Calque d'analyse {#dimension}
 
-
+Un calque d'analyse permet de catégoriser et analyser les espaces selon différents critères pour des analyses statistiques et de reporting
 
 *Nom technique:* ```dimension```
 <PH code="dimensionBuilding:dimension"/>
 
 ### Type de calque {#dimension-type}
 
-
+Un type de calque permet de catégoriser les calques d'analyse selon leur usage ou leur domaine d'application
 
 *Nom technique:* ```dimensionType```
 <PH code="dimensionBuilding:dimensionType"/>

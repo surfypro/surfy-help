@@ -22,7 +22,7 @@
 
 ### Rôle {#jup-role}
 
-
+Un rôle définit les permissions d'accès aux fonctionnalités dans l'interface utilisateur
 
 *Nom technique:* ```jupRole```
 <PH code="userRegistrationTenantRuleToJupRole:jupRole"/>

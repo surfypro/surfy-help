@@ -39,7 +39,7 @@ Séparer les domaines avec des espaces et inclure l'arobase
 
 ### Connection d'authentification {#authentification-connection}
 
-
+Une connexion d'authentification permet de configurer les méthodes d'authentification pour accéder à la plateforme (SSO, LDAP, etc.)
 
 *Nom technique:* ```authentificationConnection```
 <PH code="userRegistrationTenantRule:authentificationConnection"/>

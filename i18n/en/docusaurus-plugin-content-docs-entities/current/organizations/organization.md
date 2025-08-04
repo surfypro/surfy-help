@@ -31,7 +31,7 @@ This code can be used to contain the organization coding or the key for identifi
 
 ### Color {#color}
 
-
+The organization color helps differentiate organizations on maps and in the interface
 
 *Technical name:* ```color```
 <PH code="organization:color"/>

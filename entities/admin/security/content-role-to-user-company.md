@@ -1,7 +1,7 @@
-# Rôle de contenu de l'utilisateur de l'entreprise
+# Association rôle de contenu à l'utilisateur de l'entreprise
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Une association rôle de contenu à l'utilisateur de l'entreprise permet de définir les permissions d'accès spécifiques aux utilisateurs de l'entreprise pour un rôle donné
 
 <OH code="contentRoleToUserCompany"/>
 
@@ -15,7 +15,7 @@
 
 ### Rôle de contenu {#content-role}
 
-
+Un rôle de contenu définit les permissions d'accès aux différentes données de la plateforme pour les utilisateurs
 
 *Nom technique:* ```contentRole```
 <PH code="contentRoleToUserCompany:contentRole"/>
