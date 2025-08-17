@@ -1,7 +1,7 @@
-# Cost center association with buildings
+# Building cost center
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-A cost center association with buildings allows you to define specific cost centers for each building
+
 
 <OH code="costCenterBuilding"/>
 

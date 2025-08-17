@@ -53,7 +53,7 @@ An entity type defines the different types of objects available in the user inte
 
 ### Role {#jup-role}
 
-A role defines access permissions to features in the user interface
+
 
 *Technical name:* ```jupRole```
 <PH code="jupRoleToJupObjectType:jupRole"/>

@@ -1,7 +1,7 @@
 # Interface view
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-An interface view defines the different perspectives and displays available in the user interface
+An interface view defines the different perspectives and displays available in the user interface 
 
 <OH code="jupUiView"/>
 

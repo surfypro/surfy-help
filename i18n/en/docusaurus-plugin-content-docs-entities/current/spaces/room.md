@@ -278,13 +278,6 @@ Allows you to determine the method of calculating the cost distribution key
 
 ## Associated entities (list) {#properties-has-many}
 
-### Analysis layer associations to spaces {#dimension-rooms}
-
-An analysis layer association to spaces allows you to define specific analysis layers for each space
-
-*Technical name:* ```dimensionRooms```
-<PH code="room:dimensionRooms"/>
-
 ### Associations between a point and a space {#room-point-rooms}
 
 The association between a point and a space makes it possible to preserve the order of the points in a space in order to constitute a polyon
@@ -312,6 +305,13 @@ Reservations for people's spaces are recorded and available with the reservation
 
 *Technical name:* ```personToRoomBookings```
 <PH code="room:personToRoomBookings"/>
+
+### Space analysis layers {#dimension-rooms}
+
+
+
+*Technical name:* ```dimensionRooms```
+<PH code="room:dimensionRooms"/>
 
 ### Space assignments {#room-affectations}
 

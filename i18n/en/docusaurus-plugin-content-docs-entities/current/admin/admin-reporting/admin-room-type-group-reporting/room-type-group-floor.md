@@ -1,7 +1,7 @@
-# Association of space typology groups on floors
+# Floor space typology group
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-A space typology group association on floors allows you to define the groups of space types available on each floor
+
 
 <OH code="roomTypeGroupFloor"/>
 

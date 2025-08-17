@@ -25,14 +25,14 @@ Allows the view to be seen by the role
 
 ### Interface view {#jup-ui-view}
 
-An interface view defines the different perspectives and displays available in the user interface
+An interface view defines the different perspectives and displays available in the user interface 
 
 *Technical name:* ```jupUiView```
 <PH code="jupRoleToJupUiView:jupUiView"/>
 
 ### Role {#jup-role}
 
-A role defines access permissions to features in the user interface
+
 
 *Technical name:* ```jupRole```
 <PH code="jupRoleToJupUiView:jupRole"/>

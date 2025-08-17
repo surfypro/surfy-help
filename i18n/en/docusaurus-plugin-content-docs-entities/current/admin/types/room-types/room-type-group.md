@@ -49,26 +49,26 @@ Exclude space typologies from this group
 
 ## Associated entities (list) {#properties-has-many}
 
-### Associations group of space typology on the floors {#room-type-group-floors}
+### Associations groups of space typologies to space typologies {#room-type-group-to-room-types}
 
-A space typology group association on floors allows you to define the groups of space types available on each floor
+
+
+*Technical name:* ```roomTypeGroupToRoomTypes```
+<PH code="roomTypeGroup:roomTypeGroupToRoomTypes"/>
+
+### Floor space typology groups {#room-type-group-floors}
+
+
 
 *Technical name:* ```roomTypeGroupFloors```
 <PH code="roomTypeGroup:roomTypeGroupFloors"/>
 
-### Associations of space typology group to buildings {#room-type-group-buildings}
+### Groups of building space typologies {#room-type-group-buildings}
 
-A space typology group association with buildings allows you to define the groups of space types available in each building
+
 
 *Technical name:* ```roomTypeGroupBuildings```
 <PH code="roomTypeGroup:roomTypeGroupBuildings"/>
-
-### Space typology group associations to space typology {#room-type-group-to-room-types}
-
-A space typology group to space typology association allows you to define which space types belong to which groups
-
-*Technical name:* ```roomTypeGroupToRoomTypes```
-<PH code="roomTypeGroup:roomTypeGroupToRoomTypes"/>
 
 
 

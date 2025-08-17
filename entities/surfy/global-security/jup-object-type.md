@@ -34,7 +34,7 @@ Une association rôle à type d'objet permet de définir les permissions CRUD sp
 
 ### Vues d'interface {#jup-ui-views}
 
-Une vue d'interface définit les différentes perspectives et affichages disponibles dans l'interface utilisateur
+Une vue d'interface définit les différentes perspectives et affichages disponibles dans l'interface utilisateur 
 
 *Nom technique:* ```jupUiViews```
 <PH code="jupObjectType:jupUiViews"/>

@@ -224,7 +224,7 @@ The scale allows us to calculate in proportion the actual areas and sizes of obj
 
 ### Structure {#structure}
 
-A structure defines a geometric shape that can be used to calibrate and position features on maps
+
 
 *Technical name:* ```structure```
 <PH code="floor:structure"/>
@@ -232,40 +232,40 @@ A structure defines a geometric shape that can be used to calibrate and position
 
 ## Associated entities (list) {#properties-has-many}
 
-### Analysis layer associations to floors {#dimension-floors}
+### Analysis layers per floor {#dimension-floors}
 
-An analysis layer to floor association allows you to define specific analysis layers for each floor
+
 
 *Technical name:* ```dimensionFloors```
 <PH code="floor:dimensionFloors"/>
 
-### Associations group of space typology on the floors {#room-type-group-floors}
+### Floor cost centers {#cost-center-floors}
 
-A space typology group association on floors allows you to define the groups of space types available on each floor
 
-*Technical name:* ```roomTypeGroupFloors```
-<PH code="floor:roomTypeGroupFloors"/>
 
-### Associations of space typology on the floors {#room-type-floors}
+*Technical name:* ```costCenterFloors```
+<PH code="floor:costCenterFloors"/>
 
-A space typology association with floors makes it possible to define the types of spaces available on each floor
+### Floor organization {#organization-floors}
 
-*Technical name:* ```roomTypeFloors```
-<PH code="floor:roomTypeFloors"/>
 
-### Associations organization on the floors {#organization-floors}
-
-An organizational association on floors allows you to define the organizations responsible for each floor
 
 *Technical name:* ```organizationFloors```
 <PH code="floor:organizationFloors"/>
 
-### Cost center associations on floors {#cost-center-floors}
+### Floor space typologies {#room-type-floors}
 
-A cost center to floor association allows you to define specific cost centers for each floor
 
-*Technical name:* ```costCenterFloors```
-<PH code="floor:costCenterFloors"/>
+
+*Technical name:* ```roomTypeFloors```
+<PH code="floor:roomTypeFloors"/>
+
+### Floor space typology groups {#room-type-group-floors}
+
+
+
+*Technical name:* ```roomTypeGroupFloors```
+<PH code="floor:roomTypeGroupFloors"/>
 
 ### Floors included in the configuration of the transformation of partner exports {#partner-export-mapping-configuration-to-floors}
 
@@ -283,7 +283,7 @@ A point in spaces defines the geometric coordinates for drawing the outline of a
 
 ### Role associations of content to floors {#content-role-to-floors}
 
-A content role to floor association allows you to define floor-specific access permissions for a given role
+
 
 *Technical name:* ```contentRoleToFloors```
 <PH code="floor:contentRoleToFloors"/>

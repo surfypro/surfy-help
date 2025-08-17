@@ -1,7 +1,7 @@
-# Associating content role to business user
+# Company user content role
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-A content role to enterprise user association allows you to define specific access permissions for enterprise users for a given role
+
 
 <OH code="contentRoleToUserCompany"/>
 
@@ -22,7 +22,7 @@ Enterprise users have access to their company's Surfy platform
 
 ### Content role {#content-role}
 
-A content role defines access permissions to different platform data for users
+
 
 *Technical name:* ```contentRole```
 <PH code="contentRoleToUserCompany:contentRole"/>

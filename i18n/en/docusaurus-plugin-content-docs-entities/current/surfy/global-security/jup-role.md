@@ -1,7 +1,7 @@
 # Role
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-A role defines access permissions to features in the user interface
+
 
 <OH code="jupRole"/>
 
@@ -37,7 +37,7 @@ A role defines access permissions to features in the user interface
 
 ### API user associations to role {#api-user-to-jup-roles}
 
-An API user role association allows you to define access permissions to API features for a specific user
+
 
 *Technical name:* ```apiUserToJupRoles```
 <PH code="jupRole:apiUserToJupRoles"/>
@@ -49,9 +49,9 @@ An API user role association allows you to define access permissions to API feat
 *Technical name:* ```userRegistrationTenantRuleToJupRoles```
 <PH code="jupRole:userRegistrationTenantRuleToJupRoles"/>
 
-### Company user associations to the role {#jup-user-company-to-jup-roles}
+### Company user roles {#jup-user-company-to-jup-roles}
 
-An enterprise user role association allows you to define feature access permissions for a specific enterprise user
+
 
 *Technical name:* ```jupUserCompanyToJupRoles```
 <PH code="jupRole:jupUserCompanyToJupRoles"/>

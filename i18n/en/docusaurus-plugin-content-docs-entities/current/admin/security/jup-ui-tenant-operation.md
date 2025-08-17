@@ -1,7 +1,7 @@
-# Interface operation for a company
+#  Jup Ui Tenant Operation
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-An interface operation for a business defines the specific actions and features available to a business in the user interface
+
 
 <OH code="jupUiTenantOperation"/>
 

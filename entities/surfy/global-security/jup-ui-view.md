@@ -1,7 +1,7 @@
 # Vue d'interface
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-Une vue d'interface définit les différentes perspectives et affichages disponibles dans l'interface utilisateur
+Une vue d'interface définit les différentes perspectives et affichages disponibles dans l'interface utilisateur 
 
 <OH code="jupUiView"/>
 

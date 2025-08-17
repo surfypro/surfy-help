@@ -27,7 +27,7 @@ An entity type defines the different types of objects available in the user inte
 
 ### Interface views {#jup-ui-views}
 
-An interface view defines the different perspectives and displays available in the user interface
+An interface view defines the different perspectives and displays available in the user interface 
 
 *Technical name:* ```jupUiViews```
 <PH code="jupObjectType:jupUiViews"/>

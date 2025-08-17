@@ -1,7 +1,7 @@
-# Company user association to role
+# Role of the business user
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-An enterprise user role association allows you to define feature access permissions for a specific enterprise user
+
 
 <OH code="jupUserCompanyToJupRole"/>
 
@@ -22,7 +22,7 @@ Enterprise users have access to their company's Surfy platform
 
 ### Role {#jup-role}
 
-A role defines access permissions to features in the user interface
+
 
 *Technical name:* ```jupRole```
 <PH code="jupUserCompanyToJupRole:jupRole"/>

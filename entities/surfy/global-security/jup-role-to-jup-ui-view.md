@@ -32,7 +32,7 @@ Un rôle définit les permissions d'accès aux fonctionnalités dans l'interface
 
 ### Vue d'interface {#jup-ui-view}
 
-Une vue d'interface définit les différentes perspectives et affichages disponibles dans l'interface utilisateur
+Une vue d'interface définit les différentes perspectives et affichages disponibles dans l'interface utilisateur 
 
 *Nom technique:* ```jupUiView```
 <PH code="jupRoleToJupUiView:jupUiView"/>

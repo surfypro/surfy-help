@@ -1,7 +1,7 @@
-# Association organization on the floors
+# Organization of floors
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-An organizational association on floors allows you to define the organizations responsible for each floor
+
 
 <OH code="organizationFloor"/>
 

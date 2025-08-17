@@ -299,6 +299,13 @@ Year of construction of the building allowing its obsolescence to be measured
 
 ## Associated entities (unique) {#properties-belongs-to}
 
+### Building owner user {#user-company-owner}
+
+The user who owns the building always sees the building even in the presence of a content role, in the event of a scenario creation, the user who created the scenario becomes the owner, the owner can be changed later
+
+*Technical name:* ```userCompanyOwner```
+<PH code="building:userCompanyOwner"/>
+
 ### Campus {#campus}
 
 The campus is used to group buildings that are in the same location.
@@ -315,17 +322,10 @@ The original or reference building is used in the creation of scenarios, it allo
 
 ### Type of building {#building-type}
 
-A building type allows buildings to be categorized according to their use
+
 
 *Technical name:* ```buildingType```
 <PH code="building:buildingType"/>
-
-### User who owns the building {#user-company-owner}
-
-The user who owns the building always sees the building even if there is a content role, in case of scenario creation, the user who created the scenario becomes the owner, the owner can be changed later
-
-*Technical name:* ```userCompanyOwner```
-<PH code="building:userCompanyOwner"/>
 
 ### Vision of the default plan {#jup-ui-layout}
 
@@ -337,33 +337,12 @@ When a plan of this building is first opened, the default vision will be selecte
 
 ## Associated entities (list) {#properties-has-many}
 
-### Analysis layer associations to buildings {#dimension-buildings}
+### Analysis layers by building {#dimension-buildings}
 
-An analysis layer association with buildings allows you to define specific analysis layers for each building
+
 
 *Technical name:* ```dimensionBuildings```
 <PH code="building:dimensionBuildings"/>
-
-### Associations of space typology group to buildings {#room-type-group-buildings}
-
-A space typology group association with buildings allows you to define the groups of space types available in each building
-
-*Technical name:* ```roomTypeGroupBuildings```
-<PH code="building:roomTypeGroupBuildings"/>
-
-### Associations of space typology with buildings {#room-type-buildings}
-
-A space typology association with buildings makes it possible to define the types of spaces available in each building
-
-*Technical name:* ```roomTypeBuildings```
-<PH code="building:roomTypeBuildings"/>
-
-### Associations organization to buildings {#organization-buildings}
-
-An organization-building association allows you to define the organizations responsible for each building
-
-*Technical name:* ```organizationBuildings```
-<PH code="building:organizationBuildings"/>
 
 ### Building assignments {#person-to-buildings}
 
@@ -372,19 +351,33 @@ Allows you to assign a person to a building, without additional information. The
 *Technical name:* ```personToBuildings```
 <PH code="building:personToBuildings"/>
 
+### Building cost centers {#cost-center-buildings}
+
+
+
+*Technical name:* ```costCenterBuildings```
+<PH code="building:costCenterBuildings"/>
+
+### Building organizations {#organization-buildings}
+
+
+
+*Technical name:* ```organizationBuildings```
+<PH code="building:organizationBuildings"/>
+
+### Building space typologies {#room-type-buildings}
+
+
+
+*Technical name:* ```roomTypeBuildings```
+<PH code="building:roomTypeBuildings"/>
+
 ### Buildings scenarios {#buildings}
 
 Scenarios generated from this building
 
 *Technical name:* ```buildings```
 <PH code="building:buildings"/>
-
-### Cost center associations to buildings {#cost-center-buildings}
-
-A cost center association with buildings allows you to define specific cost centers for each building
-
-*Technical name:* ```costCenterBuildings```
-<PH code="building:costCenterBuildings"/>
 
 ### Facts {#facts}
 
@@ -400,9 +393,16 @@ Floors represent a work platform or a level of a building.
 *Technical name:* ```floors```
 <PH code="building:floors"/>
 
+### Groups of building space typologies {#room-type-group-buildings}
+
+
+
+*Technical name:* ```roomTypeGroupBuildings```
+<PH code="building:roomTypeGroupBuildings"/>
+
 ### Role associations of content to buildings {#content-role-to-buildings}
 
-A content role to building association allows you to define building-specific access permissions for a given role
+
 
 *Technical name:* ```contentRoleToBuildings```
 <PH code="building:contentRoleToBuildings"/>

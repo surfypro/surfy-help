@@ -50,19 +50,19 @@ Organizations have two hierarchical levels: departments and services, and help d
 
 ## Associated entities (list) {#properties-has-many}
 
-### Associations organization on the floors {#organization-floors}
+### Building organizations {#organization-buildings}
 
-An organizational association on floors allows you to define the organizations responsible for each floor
 
-*Technical name:* ```organizationFloors```
-<PH code="organization:organizationFloors"/>
-
-### Associations organization to buildings {#organization-buildings}
-
-An organization-building association allows you to define the organizations responsible for each building
 
 *Technical name:* ```organizationBuildings```
 <PH code="organization:organizationBuildings"/>
+
+### Floor organization {#organization-floors}
+
+
+
+*Technical name:* ```organizationFloors```
+<PH code="organization:organizationFloors"/>
 
 ### People {#people}
 

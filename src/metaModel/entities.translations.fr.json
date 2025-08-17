@@ -311,7 +311,7 @@
             },
             "jupUiView": {
                 "label": "Vue d'interface",
-                "description": "Une vue d'interface définit les différentes perspectives et affichages disponibles dans l'interface utilisateur"
+                "description": "Une vue d'interface définit les différentes perspectives et affichages disponibles dans l'interface utilisateur "
             },
             "jupRole": {
                 "label": "Rôle",
@@ -7534,7 +7534,7 @@
                 },
                 "jupUiViews": {
                     "label": "Vues d'interface",
-                    "description": "Une vue d'interface définit les différentes perspectives et affichages disponibles dans l'interface utilisateur"
+                    "description": "Une vue d'interface définit les différentes perspectives et affichages disponibles dans l'interface utilisateur "
                 },
                 "jupRoleToJupObjectTypes": {
                     "label": "Associations rôle à type d'objet",
@@ -7844,11 +7844,11 @@
                 },
                 "jupUiViewId": {
                     "label": "Identifiant de la vue d'interface",
-                    "description": "Une vue d'interface définit les différentes perspectives et affichages disponibles dans l'interface utilisateur"
+                    "description": "Une vue d'interface définit les différentes perspectives et affichages disponibles dans l'interface utilisateur "
                 },
                 "jupUiView": {
                     "label": "Vue d'interface",
-                    "description": "Une vue d'interface définit les différentes perspectives et affichages disponibles dans l'interface utilisateur"
+                    "description": "Une vue d'interface définit les différentes perspectives et affichages disponibles dans l'interface utilisateur "
                 },
                 "jupRoleId": {
                     "label": "Identifiant du rôle",

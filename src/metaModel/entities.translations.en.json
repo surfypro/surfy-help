@@ -15,11 +15,11 @@
             },
             "companyType": {
                 "label": "Type of company",
-                "description": "A business type allows businesses to be categorized according to their use"
+                "description": null
             },
             "company": {
                 "label": "Business",
-                "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                "description": null
             },
             "campus": {
                 "label": "Campus",
@@ -51,7 +51,7 @@
             },
             "buildingType": {
                 "label": "Type of building",
-                "description": "A building type allows buildings to be categorized according to their use"
+                "description": null
             },
             "organization": {
                 "label": "Organization",
@@ -83,7 +83,7 @@
             },
             "structure": {
                 "label": "Structure",
-                "description": "A structure defines a geometric shape that can be used to calibrate and position features on maps"
+                "description": null
             },
             "structurePoint": {
                 "label": " Structure Point",
@@ -106,28 +106,28 @@
                 "description": null
             },
             "roomTypeGroupToRoomType": {
-                "label": "Space typology group association to space typology",
-                "description": "A space typology group to space typology association allows you to define which space types belong to which groups"
+                "label": "Association of space typology group with space typology",
+                "description": null
             },
             "roomTypeGroupFloor": {
-                "label": "Association of space typology groups on floors",
-                "description": "A space typology group association on floors allows you to define the groups of space types available on each floor"
+                "label": "Floor space typology group",
+                "description": null
             },
             "roomTypeGroupBuilding": {
-                "label": "Association of building space typology groups",
-                "description": "A space typology group association with buildings allows you to define the groups of space types available in each building"
+                "label": "Building space typology group",
+                "description": null
             },
             "costCenter": {
                 "label": "Cost center",
                 "description": "The cost center allows spaces to be distributed dynamically for re-invoicing"
             },
             "costCenterBuilding": {
-                "label": "Cost center association with buildings",
-                "description": "A cost center association with buildings allows you to define specific cost centers for each building"
+                "label": "Building cost center",
+                "description": null
             },
             "costCenterFloor": {
-                "label": "Cost center association on floors",
-                "description": "A cost center to floor association allows you to define specific cost centers for each floor"
+                "label": "Floor cost center",
+                "description": null
             },
             "room": {
                 "label": "Space",
@@ -155,23 +155,23 @@
             },
             "dimensionType": {
                 "label": "Layer type",
-                "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
+                "description": null
             },
             "dimension": {
                 "label": "Analysis layer",
                 "description": "An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses."
             },
             "dimensionRoom": {
-                "label": "Association of analysis layer to spaces",
-                "description": "An analysis layer association to spaces allows you to define specific analysis layers for each space"
+                "label": "Space analysis layer",
+                "description": null
             },
             "dimensionFloor": {
-                "label": "Association of analysis layer to floors",
-                "description": "An analysis layer to floor association allows you to define specific analysis layers for each floor"
+                "label": "Analysis layer per floor",
+                "description": null
             },
             "dimensionBuilding": {
-                "label": "Association of analysis layer to buildings",
-                "description": "An analysis layer association with buildings allows you to define specific analysis layers for each building"
+                "label": "Analysis layer by building",
+                "description": null
             },
             "factType": {
                 "label": "Type of Fact",
@@ -226,20 +226,20 @@
                 "description": "Allows a fixed workstation to be assigned to a person"
             },
             "organizationFloor": {
-                "label": "Association organization on the floors",
-                "description": "An organizational association on floors allows you to define the organizations responsible for each floor"
+                "label": "Organization of floors",
+                "description": null
             },
             "organizationBuilding": {
-                "label": "Association organization to buildings",
-                "description": "An organization-building association allows you to define the organizations responsible for each building"
+                "label": "Organization of buildings",
+                "description": null
             },
             "roomTypeFloor": {
-                "label": "Association of space typology on floors",
-                "description": "A space typology association with floors makes it possible to define the types of spaces available on each floor"
+                "label": "Floor space typology",
+                "description": null
             },
             "roomTypeBuilding": {
-                "label": "Association of space typology with buildings",
-                "description": "A space typology association with buildings makes it possible to define the types of spaces available in each building"
+                "label": "Building space typology",
+                "description": null
             },
             "itemToPerson": {
                 "label": "Object-to-person association",
@@ -311,11 +311,11 @@
             },
             "jupUiView": {
                 "label": "Interface view",
-                "description": "An interface view defines the different perspectives and displays available in the user interface"
+                "description": "An interface view defines the different perspectives and displays available in the user interface "
             },
             "jupRole": {
                 "label": "Role",
-                "description": "A role defines access permissions to features in the user interface"
+                "description": null
             },
             "jupUiOption": {
                 "label": "Interface option",
@@ -327,11 +327,11 @@
             },
             "contentRole": {
                 "label": "Content role",
-                "description": "A content role defines access permissions to different platform data for users"
+                "description": null
             },
             "jupUserCompanyToJupRole": {
-                "label": "Company user association to role",
-                "description": "An enterprise user role association allows you to define feature access permissions for a specific enterprise user"
+                "label": "Role of the business user",
+                "description": null
             },
             "jupRoleToJupUiView": {
                 "label": "Role association with interface views",
@@ -351,19 +351,19 @@
             },
             "contentRoleToBuilding": {
                 "label": "Role association of content with buildings",
-                "description": "A content role to building association allows you to define building-specific access permissions for a given role"
+                "description": null
             },
             "contentRoleToUserCompany": {
-                "label": "Associating content role to business user",
-                "description": "A content role to enterprise user association allows you to define specific access permissions for enterprise users for a given role"
+                "label": "Company user content role",
+                "description": null
             },
             "contentRoleToFloor": {
                 "label": "Association role of content to floors",
-                "description": "A content role to floor association allows you to define floor-specific access permissions for a given role"
+                "description": null
             },
             "partnerApiCredential": {
                 "label": "Partner API key",
-                "description": "A Partner API Key is used to authenticate and authorize access to APIs for external partners"
+                "description": null
             },
             "apiUser": {
                 "label": "API user",
@@ -371,15 +371,15 @@
             },
             "apiUserToJupRole": {
                 "label": "Association of API user to role",
-                "description": "An API user role association allows you to define access permissions to API features for a specific user"
+                "description": null
             },
             "apiUserToContentRole": {
                 "label": "Associating API user with the content role",
                 "description": null
             },
             "jupUiTenantOperation": {
-                "label": "Interface operation for a company",
-                "description": "An interface operation for a business defines the specific actions and features available to a business in the user interface"
+                "label": " Jup Ui Tenant Operation",
+                "description": null
             },
             "contentRoleToJupUiTenantOperation": {
                 "label": "Associating content role to interface operations for an enterprise",
@@ -387,7 +387,7 @@
             },
             "authentificationConnection": {
                 "label": "Authentication login",
-                "description": "An authentication connection allows you to configure the authentication methods for accessing the platform (SSO, LDAP, etc.)"
+                "description": null
             },
             "userRegistrationTenantRule": {
                 "label": "Authentication rule",
@@ -441,7 +441,7 @@
         "propertyTypeTranslations": {
             "occupancyStatus": {
                 "id": {
-                    "label": "Id",
+                    "label": "Occupancy status identifier",
                     "description": null
                 },
                 "name": {
@@ -547,16 +547,16 @@
             },
             "companyType": {
                 "id": {
-                    "label": "Business Type Identifier",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
                     "label": "Business type name",
-                    "description": "Business type name"
+                    "description": null
                 },
                 "billable": {
                     "label": "Billable",
-                    "description": "Indicates whether this type of business is billable"
+                    "description": null
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -572,7 +572,7 @@
                 },
                 "companies": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "company": {
@@ -582,31 +582,31 @@
                 },
                 "name": {
                     "label": "Company Name",
-                    "description": "Company Name"
+                    "description": null
                 },
                 "logoPath": {
                     "label": "Logo",
                     "description": "The path of your company's logo"
                 },
                 "iconPath": {
-                    "label": "Icon",
+                    "label": "icon",
                     "description": "The company logo in square"
                 },
                 "proxyImages": {
-                    "label": "Proxy images",
-                    "description": "Enable proxy for images"
+                    "label": "Proxy Images",
+                    "description": null
                 },
                 "workingDaysCount": {
                     "label": "Number of working days per week",
                     "description": "The number of working days per week can be 5 for working days, 6 including Saturday and 7 including Sunday"
                 },
                 "enablePathfinding": {
-                    "label": "Enable pathfinding",
-                    "description": "Enable path finding functionality"
+                    "label": "Enable Pathfinding",
+                    "description": null
                 },
                 "planningNumberOfDays": {
-                    "label": "Number of planning days",
-                    "description": "Number of days for planning"
+                    "label": "Planning Number Of Days",
+                    "description": null
                 },
                 "enableCrowdedDimensionForBooking": {
                     "label": "Enable dimension override for booking",
@@ -625,12 +625,12 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "companyTypeId": {
-                    "label": "Business Type Identifier",
-                    "description": "A business type allows businesses to be categorized according to their use"
+                    "label": "Id (type of company)",
+                    "description": null
                 },
                 "companyType": {
                     "label": "Type of company",
-                    "description": "A business type allows businesses to be categorized according to their use"
+                    "description": null
                 },
                 "userCompanies": {
                     "label": "Business users",
@@ -638,7 +638,7 @@
                 },
                 "buildingTypes": {
                     "label": "Types of buildings",
-                    "description": "A building type allows buildings to be categorized according to their use"
+                    "description": null
                 },
                 "buildings": {
                     "label": "Buildings",
@@ -651,7 +651,7 @@
             },
             "campus": {
                 "id": {
-                    "label": "Campus ID",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -660,11 +660,11 @@
                 },
                 "color": {
                     "label": "Color",
-                    "description": "Campus color to differentiate on maps"
+                    "description": "Campus Color"
                 },
                 "address": {
                     "label": "Address",
-                    "description": "Campus address"
+                    "description": null
                 },
                 "roomsArea": {
                     "label": "Qualified surface",
@@ -780,11 +780,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "roomConnectorType": {
@@ -872,11 +872,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "userCompany": {
@@ -922,11 +922,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "personId": {
                     "label": "Surfy ID",
@@ -970,11 +970,11 @@
                 },
                 "buildingTypeCreatedBies": {
                     "label": "Types of buildings",
-                    "description": "A building type allows buildings to be categorized according to their use"
+                    "description": null
                 },
                 "buildingTypeUpdatedBies": {
                     "label": "Types of buildings",
-                    "description": "A building type allows buildings to be categorized according to their use"
+                    "description": null
                 },
                 "organizationCreatedBies": {
                     "label": "Organizations",
@@ -1030,11 +1030,11 @@
                 },
                 "structureCreatedBies": {
                     "label": "Structures",
-                    "description": "A structure defines a geometric shape that can be used to calibrate and position features on maps"
+                    "description": null
                 },
                 "structureUpdatedBies": {
                     "label": "Structures",
-                    "description": "A structure defines a geometric shape that can be used to calibrate and position features on maps"
+                    "description": null
                 },
                 "structurePointCreatedBies": {
                     "label": " Structure Points",
@@ -1069,28 +1069,28 @@
                     "description": null
                 },
                 "roomTypeGroupToRoomTypeCreatedBies": {
-                    "label": "Space typology group associations to space typology",
-                    "description": "A space typology group to space typology association allows you to define which space types belong to which groups"
+                    "label": "Associations groups of space typologies to space typologies",
+                    "description": null
                 },
                 "roomTypeGroupToRoomTypeUpdatedBies": {
-                    "label": "Space typology group associations to space typology",
-                    "description": "A space typology group to space typology association allows you to define which space types belong to which groups"
+                    "label": "Associations groups of space typologies to space typologies",
+                    "description": null
                 },
                 "roomTypeGroupFloorCreatedBies": {
-                    "label": "Associations group of space typology on the floors",
-                    "description": "A space typology group association on floors allows you to define the groups of space types available on each floor"
+                    "label": "Floor space typology groups",
+                    "description": null
                 },
                 "roomTypeGroupFloorUpdatedBies": {
-                    "label": "Associations group of space typology on the floors",
-                    "description": "A space typology group association on floors allows you to define the groups of space types available on each floor"
+                    "label": "Floor space typology groups",
+                    "description": null
                 },
                 "roomTypeGroupBuildingCreatedBies": {
-                    "label": "Associations of space typology group to buildings",
-                    "description": "A space typology group association with buildings allows you to define the groups of space types available in each building"
+                    "label": "Groups of building space typologies",
+                    "description": null
                 },
                 "roomTypeGroupBuildingUpdatedBies": {
-                    "label": "Associations of space typology group to buildings",
-                    "description": "A space typology group association with buildings allows you to define the groups of space types available in each building"
+                    "label": "Groups of building space typologies",
+                    "description": null
                 },
                 "costCenterCreatedBies": {
                     "label": "Cost centers",
@@ -1101,20 +1101,20 @@
                     "description": "The cost center allows spaces to be distributed dynamically for re-invoicing"
                 },
                 "costCenterBuildingCreatedBies": {
-                    "label": "Cost center associations to buildings",
-                    "description": "A cost center association with buildings allows you to define specific cost centers for each building"
+                    "label": "Building cost centers",
+                    "description": null
                 },
                 "costCenterBuildingUpdatedBies": {
-                    "label": "Cost center associations to buildings",
-                    "description": "A cost center association with buildings allows you to define specific cost centers for each building"
+                    "label": "Building cost centers",
+                    "description": null
                 },
                 "costCenterFloorCreatedBies": {
-                    "label": "Cost center associations on floors",
-                    "description": "A cost center to floor association allows you to define specific cost centers for each floor"
+                    "label": "Floor cost centers",
+                    "description": null
                 },
                 "costCenterFloorUpdatedBies": {
-                    "label": "Cost center associations on floors",
-                    "description": "A cost center to floor association allows you to define specific cost centers for each floor"
+                    "label": "Floor cost centers",
+                    "description": null
                 },
                 "roomCreatedBies": {
                     "label": "Spaces",
@@ -1158,11 +1158,11 @@
                 },
                 "dimensionTypeCreatedBies": {
                     "label": "Layer Types",
-                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
+                    "description": null
                 },
                 "dimensionTypeUpdatedBies": {
                     "label": "Layer Types",
-                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
+                    "description": null
                 },
                 "dimensionCreatedBies": {
                     "label": "Analysis layers",
@@ -1173,28 +1173,28 @@
                     "description": "An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses."
                 },
                 "dimensionRoomCreatedBies": {
-                    "label": "Analysis layer associations to spaces",
-                    "description": "An analysis layer association to spaces allows you to define specific analysis layers for each space"
+                    "label": "Space analysis layers",
+                    "description": null
                 },
                 "dimensionRoomUpdatedBies": {
-                    "label": "Analysis layer associations to spaces",
-                    "description": "An analysis layer association to spaces allows you to define specific analysis layers for each space"
+                    "label": "Space analysis layers",
+                    "description": null
                 },
                 "dimensionFloorCreatedBies": {
-                    "label": "Analysis layer associations to floors",
-                    "description": "An analysis layer to floor association allows you to define specific analysis layers for each floor"
+                    "label": "Analysis layers per floor",
+                    "description": null
                 },
                 "dimensionFloorUpdatedBies": {
-                    "label": "Analysis layer associations to floors",
-                    "description": "An analysis layer to floor association allows you to define specific analysis layers for each floor"
+                    "label": "Analysis layers per floor",
+                    "description": null
                 },
                 "dimensionBuildingCreatedBies": {
-                    "label": "Analysis layer associations to buildings",
-                    "description": "An analysis layer association with buildings allows you to define specific analysis layers for each building"
+                    "label": "Analysis layers by building",
+                    "description": null
                 },
                 "dimensionBuildingUpdatedBies": {
-                    "label": "Analysis layer associations to buildings",
-                    "description": "An analysis layer association with buildings allows you to define specific analysis layers for each building"
+                    "label": "Analysis layers by building",
+                    "description": null
                 },
                 "factTypeCreatedBies": {
                     "label": "Types of Fact",
@@ -1301,36 +1301,36 @@
                     "description": "Allows a fixed workstation to be assigned to a person"
                 },
                 "organizationFloorCreatedBies": {
-                    "label": "Associations organization on the floors",
-                    "description": "An organizational association on floors allows you to define the organizations responsible for each floor"
+                    "label": "Floor organization",
+                    "description": null
                 },
                 "organizationFloorUpdatedBies": {
-                    "label": "Associations organization on the floors",
-                    "description": "An organizational association on floors allows you to define the organizations responsible for each floor"
+                    "label": "Floor organization",
+                    "description": null
                 },
                 "organizationBuildingCreatedBies": {
-                    "label": "Associations organization to buildings",
-                    "description": "An organization-building association allows you to define the organizations responsible for each building"
+                    "label": "Building organizations",
+                    "description": null
                 },
                 "organizationBuildingUpdatedBies": {
-                    "label": "Associations organization to buildings",
-                    "description": "An organization-building association allows you to define the organizations responsible for each building"
+                    "label": "Building organizations",
+                    "description": null
                 },
                 "roomTypeFloorCreatedBies": {
-                    "label": "Associations of space typology on the floors",
-                    "description": "A space typology association with floors makes it possible to define the types of spaces available on each floor"
+                    "label": "Floor space typologies",
+                    "description": null
                 },
                 "roomTypeFloorUpdatedBies": {
-                    "label": "Associations of space typology on the floors",
-                    "description": "A space typology association with floors makes it possible to define the types of spaces available on each floor"
+                    "label": "Floor space typologies",
+                    "description": null
                 },
                 "roomTypeBuildingCreatedBies": {
-                    "label": "Associations of space typology with buildings",
-                    "description": "A space typology association with buildings makes it possible to define the types of spaces available in each building"
+                    "label": "Building space typologies",
+                    "description": null
                 },
                 "roomTypeBuildingUpdatedBies": {
-                    "label": "Associations of space typology with buildings",
-                    "description": "A space typology association with buildings makes it possible to define the types of spaces available in each building"
+                    "label": "Building space typologies",
+                    "description": null
                 },
                 "itemToPersonCreatedBies": {
                     "label": "Object-to-person associations",
@@ -1446,59 +1446,59 @@
                 },
                 "contentRoleCreatedBies": {
                     "label": "Content roles",
-                    "description": "A content role defines access permissions to different platform data for users"
+                    "description": null
                 },
                 "contentRoleUpdatedBies": {
                     "label": "Content roles",
-                    "description": "A content role defines access permissions to different platform data for users"
+                    "description": null
                 },
                 "jupUserCompanyToJupRoles": {
-                    "label": "Company user associations to the role",
-                    "description": "An enterprise user role association allows you to define feature access permissions for a specific enterprise user"
+                    "label": "Company user roles",
+                    "description": null
                 },
                 "jupUserCompanyToJupRoleCreatedBies": {
-                    "label": "Company user associations to the role",
-                    "description": "An enterprise user role association allows you to define feature access permissions for a specific enterprise user"
+                    "label": "Company user roles",
+                    "description": null
                 },
                 "jupUserCompanyToJupRoleUpdatedBies": {
-                    "label": "Company user associations to the role",
-                    "description": "An enterprise user role association allows you to define feature access permissions for a specific enterprise user"
+                    "label": "Company user roles",
+                    "description": null
                 },
                 "contentRoleToBuildingCreatedBies": {
                     "label": "Role associations of content to buildings",
-                    "description": "A content role to building association allows you to define building-specific access permissions for a given role"
+                    "description": null
                 },
                 "contentRoleToBuildingUpdatedBies": {
                     "label": "Role associations of content to buildings",
-                    "description": "A content role to building association allows you to define building-specific access permissions for a given role"
+                    "description": null
                 },
                 "contentRoleToUserCompanies": {
-                    "label": "Associations content role to enterprise user",
-                    "description": "A content role to enterprise user association allows you to define specific access permissions for enterprise users for a given role"
+                    "label": "Company User Content Roles",
+                    "description": null
                 },
                 "contentRoleToUserCompanyCreatedBies": {
-                    "label": "Associations content role to enterprise user",
-                    "description": "A content role to enterprise user association allows you to define specific access permissions for enterprise users for a given role"
+                    "label": "Company User Content Roles",
+                    "description": null
                 },
                 "contentRoleToUserCompanyUpdatedBies": {
-                    "label": "Associations content role to enterprise user",
-                    "description": "A content role to enterprise user association allows you to define specific access permissions for enterprise users for a given role"
+                    "label": "Company User Content Roles",
+                    "description": null
                 },
                 "contentRoleToFloorCreatedBies": {
                     "label": "Role associations of content to floors",
-                    "description": "A content role to floor association allows you to define floor-specific access permissions for a given role"
+                    "description": null
                 },
                 "contentRoleToFloorUpdatedBies": {
                     "label": "Role associations of content to floors",
-                    "description": "A content role to floor association allows you to define floor-specific access permissions for a given role"
+                    "description": null
                 },
                 "partnerApiCredentialCreatedBies": {
                     "label": "Partner API keys",
-                    "description": "A Partner API Key is used to authenticate and authorize access to APIs for external partners"
+                    "description": null
                 },
                 "partnerApiCredentialUpdatedBies": {
                     "label": "Partner API keys",
-                    "description": "A Partner API Key is used to authenticate and authorize access to APIs for external partners"
+                    "description": null
                 },
                 "apiUserCreatedBies": {
                     "label": "API users",
@@ -1510,11 +1510,11 @@
                 },
                 "apiUserToJupRoleCreatedBies": {
                     "label": "API user associations to role",
-                    "description": "An API user role association allows you to define access permissions to API features for a specific user"
+                    "description": null
                 },
                 "apiUserToJupRoleUpdatedBies": {
                     "label": "API user associations to role",
-                    "description": "An API user role association allows you to define access permissions to API features for a specific user"
+                    "description": null
                 },
                 "apiUserToContentRoleCreatedBies": {
                     "label": "API user associations to content role",
@@ -1525,12 +1525,12 @@
                     "description": null
                 },
                 "jupUiTenantOperationCreatedBies": {
-                    "label": "Interface operations for a business",
-                    "description": "An interface operation for a business defines the specific actions and features available to a business in the user interface"
+                    "label": " Jup Ui Tenant Operations",
+                    "description": null
                 },
                 "jupUiTenantOperationUpdatedBies": {
-                    "label": "Interface operations for a business",
-                    "description": "An interface operation for a business defines the specific actions and features available to a business in the user interface"
+                    "label": " Jup Ui Tenant Operations",
+                    "description": null
                 },
                 "contentRoleToJupUiTenantOperationCreatedBies": {
                     "label": "Associating content role to interface operations for an enterprise",
@@ -1631,7 +1631,7 @@
             },
             "personGender": {
                 "id": {
-                    "label": "Person 's gender identifier",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -1722,11 +1722,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "jupUiLayout": {
@@ -1770,11 +1770,11 @@
                 },
                 "code": {
                     "label": "Code",
-                    "description": "Building type reference code"
+                    "description": "???"
                 },
                 "color": {
                     "label": "Color",
-                    "description": "Color to differentiate the type of building on the plans"
+                    "description": null
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -1790,11 +1790,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -1887,20 +1887,20 @@
                     "description": null
                 },
                 "organizationFloors": {
-                    "label": "Associations organization on the floors",
-                    "description": "An organizational association on floors allows you to define the organizations responsible for each floor"
+                    "label": "Floor organization",
+                    "description": null
                 },
                 "organizationBuildings": {
-                    "label": "Associations organization to buildings",
-                    "description": "An organization-building association allows you to define the organizations responsible for each building"
+                    "label": "Building organizations",
+                    "description": null
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "itemTypeFamily": {
@@ -1950,11 +1950,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "manufacturer": {
@@ -2004,16 +2004,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "object3dModel": {
                 "id": {
-                    "label": "3D model identifier",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -2155,7 +2155,7 @@
                     "description": "A manufacturer represents a company or brand that produces objects or equipment"
                 },
                 "object3dModelId": {
-                    "label": "3D model identifier",
+                    "label": "Id (3d model)",
                     "description": "The 3D Model allows a realistic 3D representation of objects placed on the plan; In the absence of a 3D model, the objects are represented in full form in the 3D view"
                 },
                 "object3dModel": {
@@ -2196,11 +2196,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "building": {
@@ -2382,27 +2382,27 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "buildingTypeId": {
                     "label": "Identifier of the type of building",
-                    "description": "A building type allows buildings to be categorized according to their use"
+                    "description": null
                 },
                 "buildingType": {
                     "label": "Type of building",
-                    "description": "A building type allows buildings to be categorized according to their use"
+                    "description": null
                 },
                 "userCompanyOwnerId": {
                     "label": "Id (business user)",
                     "description": "Enterprise users have access to their company's Surfy platform"
                 },
                 "userCompanyOwner": {
-                    "label": "User who owns the building",
-                    "description": "The user who owns the building always sees the building even if there is a content role, in case of scenario creation, the user who created the scenario becomes the owner, the owner can be changed later"
+                    "label": "Building owner user",
+                    "description": "The user who owns the building always sees the building even in the presence of a content role, in the event of a scenario creation, the user who created the scenario becomes the owner, the owner can be changed later"
                 },
                 "jupUiLayoutId": {
                     "label": "Plan Vision Identifier",
@@ -2413,7 +2413,7 @@
                     "description": "When a plan of this building is first opened, the default vision will be selected, following the first opening, it will be the current vision which will be applied"
                 },
                 "campusId": {
-                    "label": "Campus ID",
+                    "label": "Id (campus)",
                     "description": "The campus is used to group buildings that are in the same location."
                 },
                 "campus": {
@@ -2453,28 +2453,28 @@
                     "description": "Floors represent a work platform or a level of a building."
                 },
                 "roomTypeGroupBuildings": {
-                    "label": "Associations of space typology group to buildings",
-                    "description": "A space typology group association with buildings allows you to define the groups of space types available in each building"
+                    "label": "Groups of building space typologies",
+                    "description": null
                 },
                 "costCenterBuildings": {
-                    "label": "Cost center associations to buildings",
-                    "description": "A cost center association with buildings allows you to define specific cost centers for each building"
+                    "label": "Building cost centers",
+                    "description": null
                 },
                 "dimensionBuildings": {
-                    "label": "Analysis layer associations to buildings",
-                    "description": "An analysis layer association with buildings allows you to define specific analysis layers for each building"
+                    "label": "Analysis layers by building",
+                    "description": null
                 },
                 "facts": {
                     "label": "Facts",
                     "description": "A fact represents a factual data or event recorded in the system for analysis and reporting"
                 },
                 "organizationBuildings": {
-                    "label": "Associations organization to buildings",
-                    "description": "An organization-building association allows you to define the organizations responsible for each building"
+                    "label": "Building organizations",
+                    "description": null
                 },
                 "roomTypeBuildings": {
-                    "label": "Associations of space typology with buildings",
-                    "description": "A space typology association with buildings makes it possible to define the types of spaces available in each building"
+                    "label": "Building space typologies",
+                    "description": null
                 },
                 "personToBuildings": {
                     "label": "Building assignments",
@@ -2486,7 +2486,7 @@
                 },
                 "contentRoleToBuildings": {
                     "label": "Role associations of content to buildings",
-                    "description": "A content role to building association allows you to define building-specific access permissions for a given role"
+                    "description": null
                 }
             },
             "mapScale": {
@@ -2572,16 +2572,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "structure": {
                 "id": {
-                    "label": "Structure identifier",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -2630,11 +2630,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "structurePoint": {
@@ -2667,12 +2667,12 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "structureId": {
-                    "label": "Structure identifier",
-                    "description": "A structure defines a geometric shape that can be used to calibrate and position features on maps"
+                    "label": "Id (structure)",
+                    "description": null
                 },
                 "structure": {
                     "label": "Structure",
-                    "description": "A structure defines a geometric shape that can be used to calibrate and position features on maps"
+                    "description": null
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -2692,11 +2692,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "floor": {
@@ -2841,12 +2841,12 @@
                     "description": "The scale allows us to calculate in proportion the actual areas and sizes of objects"
                 },
                 "structureId": {
-                    "label": "Structure identifier",
-                    "description": "A structure defines a geometric shape that can be used to calibrate and position features on maps"
+                    "label": "Id (structure)",
+                    "description": null
                 },
                 "structure": {
                     "label": "Structure",
-                    "description": "A structure defines a geometric shape that can be used to calibrate and position features on maps"
+                    "description": null
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -2865,12 +2865,12 @@
                     "description": "Updated by this user in Surfy, allows to know the history of the modification in Surfy"
                 },
                 "roomTypeGroupFloors": {
-                    "label": "Associations group of space typology on the floors",
-                    "description": "A space typology group association on floors allows you to define the groups of space types available on each floor"
+                    "label": "Floor space typology groups",
+                    "description": null
                 },
                 "costCenterFloors": {
-                    "label": "Cost center associations on floors",
-                    "description": "A cost center to floor association allows you to define specific cost centers for each floor"
+                    "label": "Floor cost centers",
+                    "description": null
                 },
                 "rooms": {
                     "label": "Spaces",
@@ -2881,20 +2881,20 @@
                     "description": "A point in spaces defines the geometric coordinates for drawing the outline of a space"
                 },
                 "dimensionFloors": {
-                    "label": "Analysis layer associations to floors",
-                    "description": "An analysis layer to floor association allows you to define specific analysis layers for each floor"
+                    "label": "Analysis layers per floor",
+                    "description": null
                 },
                 "organizationFloors": {
-                    "label": "Associations organization on the floors",
-                    "description": "An organizational association on floors allows you to define the organizations responsible for each floor"
+                    "label": "Floor organization",
+                    "description": null
                 },
                 "roomTypeFloors": {
-                    "label": "Associations of space typology on the floors",
-                    "description": "A space typology association with floors makes it possible to define the types of spaces available on each floor"
+                    "label": "Floor space typologies",
+                    "description": null
                 },
                 "contentRoleToFloors": {
                     "label": "Role associations of content to floors",
-                    "description": "A content role to floor association allows you to define floor-specific access permissions for a given role"
+                    "description": null
                 },
                 "partnerExportMappingConfigurationToFloors": {
                     "label": "Floors included in the configuration of the transformation of partner exports",
@@ -2902,11 +2902,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "distributionCostType": {
@@ -2960,11 +2960,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "roomTypeGroup": {
@@ -3001,16 +3001,16 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "roomTypeGroupToRoomTypes": {
-                    "label": "Space typology group associations to space typology",
-                    "description": "A space typology group to space typology association allows you to define which space types belong to which groups"
+                    "label": "Associations groups of space typologies to space typologies",
+                    "description": null
                 },
                 "roomTypeGroupFloors": {
-                    "label": "Associations group of space typology on the floors",
-                    "description": "A space typology group association on floors allows you to define the groups of space types available on each floor"
+                    "label": "Floor space typology groups",
+                    "description": null
                 },
                 "roomTypeGroupBuildings": {
-                    "label": "Associations of space typology group to buildings",
-                    "description": "A space typology group association with buildings allows you to define the groups of space types available in each building"
+                    "label": "Groups of building space typologies",
+                    "description": null
                 }
             },
             "roomType": {
@@ -3087,20 +3087,20 @@
                     "description": "Updated by this user in Surfy, allows to know the history of the modification in Surfy"
                 },
                 "roomTypeGroupToRoomTypes": {
-                    "label": "Space typology group associations to space typology",
-                    "description": "A space typology group to space typology association allows you to define which space types belong to which groups"
+                    "label": "Associations groups of space typologies to space typologies",
+                    "description": null
                 },
                 "rooms": {
                     "label": "Spaces",
                     "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "roomTypeFloors": {
-                    "label": "Associations of space typology on the floors",
-                    "description": "A space typology association with floors makes it possible to define the types of spaces available on each floor"
+                    "label": "Floor space typologies",
+                    "description": null
                 },
                 "roomTypeBuildings": {
-                    "label": "Associations of space typology with buildings",
-                    "description": "A space typology association with buildings makes it possible to define the types of spaces available in each building"
+                    "label": "Building space typologies",
+                    "description": null
                 },
                 "personCompanyToRoomTypes": {
                     "label": "Types of provider spaces",
@@ -3112,16 +3112,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "roomTypeGroupToRoomType": {
                 "id": {
-                    "label": "Space typology group association identifier to space typology",
+                    "label": "Id",
                     "description": null
                 },
                 "createdAt": {
@@ -3170,16 +3170,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "roomTypeGroupFloor": {
                 "id": {
-                    "label": "Identifier of the association group of space typology on the floors",
+                    "label": "Id",
                     "description": null
                 },
                 "roomsArea": {
@@ -3308,16 +3308,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "roomTypeGroupBuilding": {
                 "id": {
-                    "label": "Identifier of the building space typology group association",
+                    "label": "Id",
                     "description": null
                 },
                 "roomsArea": {
@@ -3446,11 +3446,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "costCenter": {
@@ -3511,12 +3511,12 @@
                     "description": "Updated by this user in Surfy, allows to know the history of the modification in Surfy"
                 },
                 "costCenterBuildings": {
-                    "label": "Cost center associations to buildings",
-                    "description": "A cost center association with buildings allows you to define specific cost centers for each building"
+                    "label": "Building cost centers",
+                    "description": null
                 },
                 "costCenterFloors": {
-                    "label": "Cost center associations on floors",
-                    "description": "A cost center to floor association allows you to define specific cost centers for each floor"
+                    "label": "Floor cost centers",
+                    "description": null
                 },
                 "rooms": {
                     "label": "Spaces",
@@ -3532,16 +3532,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "costCenterBuilding": {
                 "id": {
-                    "label": "Identifier of the cost center association with buildings",
+                    "label": "Id",
                     "description": null
                 },
                 "roomsArea": {
@@ -3670,16 +3670,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "costCenterFloor": {
                 "id": {
-                    "label": "Cost center association identifier for floors",
+                    "label": "Id",
                     "description": null
                 },
                 "roomsArea": {
@@ -3808,11 +3808,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "room": {
@@ -3961,7 +3961,7 @@
                     "description": "Floors represent a work platform or a level of a building."
                 },
                 "occupancyStatusId": {
-                    "label": "Id (occupancy status)",
+                    "label": "Occupancy status identifier",
                     "description": "The occupancy status makes it possible to identify the real-time status of a space or workstation, for example if it is free, occupied or squatted, the occupancy status is updated. day by connected objects present in space"
                 },
                 "occupancyStatus": {
@@ -4029,8 +4029,8 @@
                     "description": "The association between a point and a space makes it possible to preserve the order of the points in a space in order to constitute a polyon"
                 },
                 "dimensionRooms": {
-                    "label": "Analysis layer associations to spaces",
-                    "description": "An analysis layer association to spaces allows you to define specific analysis layers for each space"
+                    "label": "Space analysis layers",
+                    "description": null
                 },
                 "roomAffectations": {
                     "label": "Space assignments",
@@ -4050,11 +4050,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "roomPoint": {
@@ -4120,11 +4120,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "roomPointRoom": {
@@ -4182,11 +4182,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "roomPointSegmentType": {
@@ -4286,11 +4286,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "itemTypePoint": {
@@ -4348,16 +4348,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "dimensionType": {
                 "id": {
-                    "label": "Id",
+                    "label": "Identifier of the type of dimension",
                     "description": null
                 },
                 "name": {
@@ -4409,16 +4409,16 @@
                     "description": "An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses."
                 },
                 "dimensionRooms": {
-                    "label": "Analysis layer associations to spaces",
-                    "description": "An analysis layer association to spaces allows you to define specific analysis layers for each space"
+                    "label": "Space analysis layers",
+                    "description": null
                 },
                 "dimensionFloors": {
-                    "label": "Analysis layer associations to floors",
-                    "description": "An analysis layer to floor association allows you to define specific analysis layers for each floor"
+                    "label": "Analysis layers per floor",
+                    "description": null
                 },
                 "dimensionBuildings": {
-                    "label": "Analysis layer associations to buildings",
-                    "description": "An analysis layer association with buildings allows you to define specific analysis layers for each building"
+                    "label": "Analysis layers by building",
+                    "description": null
                 },
                 "dimensionTypeToBuildings": {
                     "label": "Types of building assignment layers",
@@ -4426,11 +4426,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "dimension": {
@@ -4483,12 +4483,12 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "dimensionTypeId": {
-                    "label": "Id (Layer type)",
-                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
+                    "label": "Identifier of the type of dimension",
+                    "description": null
                 },
                 "dimensionType": {
                     "label": "Layer type",
-                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
+                    "description": null
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -4507,16 +4507,16 @@
                     "description": "Updated by this user in Surfy, allows to know the history of the modification in Surfy"
                 },
                 "dimensionRooms": {
-                    "label": "Analysis layer associations to spaces",
-                    "description": "An analysis layer association to spaces allows you to define specific analysis layers for each space"
+                    "label": "Space analysis layers",
+                    "description": null
                 },
                 "dimensionFloors": {
-                    "label": "Analysis layer associations to floors",
-                    "description": "An analysis layer to floor association allows you to define specific analysis layers for each floor"
+                    "label": "Analysis layers per floor",
+                    "description": null
                 },
                 "dimensionBuildings": {
-                    "label": "Analysis layer associations to buildings",
-                    "description": "An analysis layer association with buildings allows you to define specific analysis layers for each building"
+                    "label": "Analysis layers by building",
+                    "description": null
                 },
                 "dimensionToPeople": {
                     "label": "Assignments to Assignment Layers",
@@ -4528,16 +4528,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "dimensionRoom": {
                 "id": {
-                    "label": "Identifier of the analysis layer association to spaces",
+                    "label": "Identifier of the space analysis layer",
                     "description": null
                 },
                 "createdAt": {
@@ -4569,12 +4569,12 @@
                     "description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces."
                 },
                 "dimensionTypeId": {
-                    "label": "Id (Layer type)",
-                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
+                    "label": "Identifier of the type of dimension",
+                    "description": null
                 },
                 "dimensionType": {
                     "label": "Layer type",
-                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
+                    "description": null
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -4594,16 +4594,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "dimensionFloor": {
                 "id": {
-                    "label": "Identifier of the analysis layer association to the floors",
+                    "label": "Analysis layer identifier by floor",
                     "description": null
                 },
                 "roomsArea": {
@@ -4707,12 +4707,12 @@
                     "description": "An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses."
                 },
                 "dimensionTypeId": {
-                    "label": "Id (Layer type)",
-                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
+                    "label": "Identifier of the type of dimension",
+                    "description": null
                 },
                 "dimensionType": {
                     "label": "Layer type",
-                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
+                    "description": null
                 },
                 "floorId": {
                     "label": "Id (floor)",
@@ -4740,16 +4740,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "dimensionBuilding": {
                 "id": {
-                    "label": "Identifier of the analysis layer association to buildings",
+                    "label": "Analysis layer identifier by building",
                     "description": null
                 },
                 "dimensionPeopleCount": {
@@ -4822,7 +4822,7 @@
                 },
                 "totalPeopleCount": {
                     "label": "Total number of assignments",
-                    "description": "The total number of people assigned, either directly assigned to spaces or through a workstation"
+                    "description": "The total number of people assigned, either directly assigned to spaces, or through a workstation, or via an assignment layer"
                 },
                 "carbonFootprint": {
                     "label": "Carbon footprint",
@@ -4857,12 +4857,12 @@
                     "description": "An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses."
                 },
                 "dimensionTypeId": {
-                    "label": "Id (Layer type)",
-                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
+                    "label": "Identifier of the type of dimension",
+                    "description": null
                 },
                 "dimensionType": {
                     "label": "Layer type",
-                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
+                    "description": null
                 },
                 "buildingId": {
                     "label": "Building identifier",
@@ -4890,16 +4890,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "factType": {
                 "id": {
-                    "label": "Fact type identifier",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -4944,11 +4944,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "fact": {
@@ -4977,7 +4977,7 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "factTypeId": {
-                    "label": "Fact type identifier",
+                    "label": "Id (Type of Fact)",
                     "description": "A fact type is used to categorize the different types of factual data or events recorded in the system"
                 },
                 "factType": {
@@ -5010,11 +5010,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "personState": {
@@ -5060,16 +5060,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "personSecurityProfile": {
                 "id": {
-                    "label": "Id",
+                    "label": "Personal security profile identifier",
                     "description": null
                 },
                 "name": {
@@ -5118,11 +5118,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "person": {
@@ -5243,7 +5243,7 @@
                     "description": "Allows you to indicate the type of contract the person has with the company"
                 },
                 "personSecurityProfileId": {
-                    "label": "Id (personal safety profile)",
+                    "label": "Personal security profile identifier",
                     "description": "Allows you to define the different security profiles that can be associated with people"
                 },
                 "personSecurityProfile": {
@@ -5267,7 +5267,7 @@
                     "description": "The service provider company allows you to manage service provider personnel by company to which they belong"
                 },
                 "personGenderId": {
-                    "label": "Person 's gender identifier",
+                    "label": "Id (gender of the person)",
                     "description": "Allows you to count each gender, for example for managing toilets"
                 },
                 "personGender": {
@@ -5336,11 +5336,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "personToPersonType": {
@@ -5394,11 +5394,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "personToPerson": {
@@ -5460,11 +5460,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "roomAffectation": {
@@ -5518,11 +5518,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "workplaceType": {
@@ -5588,11 +5588,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "workplaceTypeItemType": {
@@ -5666,11 +5666,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "workplace": {
@@ -5796,11 +5796,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "item": {
@@ -5906,11 +5906,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "workplaceAffectation": {
@@ -6000,16 +6000,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "organizationFloor": {
                 "id": {
-                    "label": "Organization association identifier on the floors",
+                    "label": "Id",
                     "description": null
                 },
                 "roomsArea": {
@@ -6138,16 +6138,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "organizationBuilding": {
                 "id": {
-                    "label": "Building organization association identifier",
+                    "label": "Id",
                     "description": null
                 },
                 "roomsArea": {
@@ -6276,16 +6276,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "roomTypeFloor": {
                 "id": {
-                    "label": "Identifier of the space typology association on the floors",
+                    "label": "Id",
                     "description": null
                 },
                 "roomsArea": {
@@ -6414,16 +6414,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "roomTypeBuilding": {
                 "id": {
-                    "label": "Identifier of the space typology association with buildings",
+                    "label": "Id",
                     "description": null
                 },
                 "roomsArea": {
@@ -6552,16 +6552,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "itemToPerson": {
                 "id": {
-                    "label": "Object-to- person association identifier",
+                    "label": "Id",
                     "description": null
                 },
                 "createdAt": {
@@ -6610,11 +6610,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "personToBuilding": {
@@ -6672,11 +6672,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "dimensionToPerson": {
@@ -6734,11 +6734,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "dimensionTypeToBuilding": {
@@ -6759,12 +6759,12 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "dimensionTypeId": {
-                    "label": "Id (Layer type)",
-                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
+                    "label": "Identifier of the type of dimension",
+                    "description": null
                 },
                 "dimensionType": {
                     "label": "Layer type",
-                    "description": "A layer type allows you to categorize analysis layers according to their use or area of application."
+                    "description": null
                 },
                 "buildingId": {
                     "label": "Building identifier",
@@ -6792,11 +6792,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "workingLocation": {
@@ -6904,11 +6904,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "personToWorkplaceBooking": {
@@ -6978,11 +6978,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "personToRoomBooking": {
@@ -7052,11 +7052,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "personToDimensionBooking": {
@@ -7126,11 +7126,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "personCompanyMission": {
@@ -7165,7 +7165,7 @@
             },
             "personCompanyToItemType": {
                 "id": {
-                    "label": "Provider object type identifier",
+                    "label": "Id",
                     "description": null
                 },
                 "createdAt": {
@@ -7222,16 +7222,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "personCompanyToRoomType": {
                 "id": {
-                    "label": "Provider space type identifier",
+                    "label": "Id",
                     "description": null
                 },
                 "createdAt": {
@@ -7288,16 +7288,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "personCompanyToItem": {
                 "id": {
-                    "label": "Identifier of the intervention on an object",
+                    "label": "Id",
                     "description": null
                 },
                 "datetime": {
@@ -7354,16 +7354,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "legend": {
                 "id": {
-                    "label": "Legend ID",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -7404,16 +7404,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "openerPostMessageHost": {
                 "id": {
-                    "label": "Message host ID for pop-up window",
+                    "label": "Id",
                     "description": null
                 },
                 "host": {
@@ -7454,16 +7454,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "companyWorkingLocation": {
                 "id": {
-                    "label": "Company work location identifier",
+                    "label": "Id",
                     "description": null
                 },
                 "createdAt": {
@@ -7480,11 +7480,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "workingLocationId": {
                     "label": "Id (Work location)",
@@ -7534,7 +7534,7 @@
                 },
                 "jupUiViews": {
                     "label": "Interface views",
-                    "description": "An interface view defines the different perspectives and displays available in the user interface"
+                    "description": "An interface view defines the different perspectives and displays available in the user interface "
                 },
                 "jupRoleToJupObjectTypes": {
                     "label": "Role to object type associations",
@@ -7581,7 +7581,7 @@
             },
             "jupRole": {
                 "id": {
-                    "label": "Role ID",
+                    "label": "Id",
                     "description": null
                 },
                 "code": {
@@ -7605,8 +7605,8 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "jupUserCompanyToJupRoles": {
-                    "label": "Company user associations to the role",
-                    "description": "An enterprise user role association allows you to define feature access permissions for a specific enterprise user"
+                    "label": "Company user roles",
+                    "description": null
                 },
                 "jupRoleToJupUiViews": {
                     "label": "Role associations with interface views",
@@ -7626,7 +7626,7 @@
                 },
                 "apiUserToJupRoles": {
                     "label": "API user associations to role",
-                    "description": "An API user role association allows you to define access permissions to API features for a specific user"
+                    "description": null
                 },
                 "userRegistrationTenantRuleToJupRoles": {
                     "label": "Authentication rule-to-role associations",
@@ -7669,7 +7669,7 @@
             },
             "jupUiOperation": {
                 "id": {
-                    "label": "Interface operation identifier",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -7695,12 +7695,12 @@
             },
             "contentRole": {
                 "id": {
-                    "label": "Content role identifier",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
-                    "label": "Last name",
-                    "description": "Content role name"
+                    "label": "Name",
+                    "description": null
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -7732,15 +7732,15 @@
                 },
                 "contentRoleToBuildings": {
                     "label": "Role associations of content to buildings",
-                    "description": "A content role to building association allows you to define building-specific access permissions for a given role"
+                    "description": null
                 },
                 "contentRoleToUserCompanies": {
-                    "label": "Associations content role to enterprise user",
-                    "description": "A content role to enterprise user association allows you to define specific access permissions for enterprise users for a given role"
+                    "label": "Company User Content Roles",
+                    "description": null
                 },
                 "contentRoleToFloors": {
                     "label": "Role associations of content to floors",
-                    "description": "A content role to floor association allows you to define floor-specific access permissions for a given role"
+                    "description": null
                 },
                 "apiUserToContentRoles": {
                     "label": "API user associations to content role",
@@ -7756,16 +7756,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "jupUserCompanyToJupRole": {
                 "id": {
-                    "label": "User association identifier of the company to the role",
+                    "label": "Id",
                     "description": null
                 },
                 "createdAt": {
@@ -7789,12 +7789,12 @@
                     "description": "Enterprise users have access to their company's Surfy platform"
                 },
                 "jupRoleId": {
-                    "label": "Role ID",
-                    "description": "A role defines access permissions to features in the user interface"
+                    "label": "Id (Role)",
+                    "description": null
                 },
                 "jupRole": {
                     "label": "Role",
-                    "description": "A role defines access permissions to features in the user interface"
+                    "description": null
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -7814,11 +7814,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "jupRoleToJupUiView": {
@@ -7844,19 +7844,19 @@
                 },
                 "jupUiViewId": {
                     "label": "Interface view identifier",
-                    "description": "An interface view defines the different perspectives and displays available in the user interface"
+                    "description": "An interface view defines the different perspectives and displays available in the user interface "
                 },
                 "jupUiView": {
                     "label": "Interface view",
-                    "description": "An interface view defines the different perspectives and displays available in the user interface"
+                    "description": "An interface view defines the different perspectives and displays available in the user interface "
                 },
                 "jupRoleId": {
-                    "label": "Role ID",
-                    "description": "A role defines access permissions to features in the user interface"
+                    "label": "Id (Role)",
+                    "description": null
                 },
                 "jupRole": {
                     "label": "Role",
-                    "description": "A role defines access permissions to features in the user interface"
+                    "description": null
                 }
             },
             "jupRoleToJupObjectType": {
@@ -7901,12 +7901,12 @@
                     "description": "An entity type defines the different types of objects available in the user interface"
                 },
                 "jupRoleId": {
-                    "label": "Role ID",
-                    "description": "A role defines access permissions to features in the user interface"
+                    "label": "Id (Role)",
+                    "description": null
                 },
                 "jupRole": {
                     "label": "Role",
-                    "description": "A role defines access permissions to features in the user interface"
+                    "description": null
                 }
             },
             "jupRoleToJupUiOption": {
@@ -7939,17 +7939,17 @@
                     "description": "An interface option defines the settings and configurations available in the user interface"
                 },
                 "jupRoleId": {
-                    "label": "Role ID",
-                    "description": "A role defines access permissions to features in the user interface"
+                    "label": "Id (Role)",
+                    "description": null
                 },
                 "jupRole": {
                     "label": "Role",
-                    "description": "A role defines access permissions to features in the user interface"
+                    "description": null
                 }
             },
             "jupRoleToJupUiOperation": {
                 "id": {
-                    "label": "Role association identifier for interface operations",
+                    "label": "Id",
                     "description": null
                 },
                 "canSee": {
@@ -7969,7 +7969,7 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "jupUiOperationId": {
-                    "label": "Interface operation identifier",
+                    "label": "Id (Interface operation)",
                     "description": "An interface operation defines the actions and functionality available in the user interface"
                 },
                 "jupUiOperation": {
@@ -7977,17 +7977,17 @@
                     "description": "An interface operation defines the actions and functionality available in the user interface"
                 },
                 "jupRoleId": {
-                    "label": "Role ID",
-                    "description": "A role defines access permissions to features in the user interface"
+                    "label": "Id (Role)",
+                    "description": null
                 },
                 "jupRole": {
                     "label": "Role",
-                    "description": "A role defines access permissions to features in the user interface"
+                    "description": null
                 }
             },
             "contentRoleToBuilding": {
                 "id": {
-                    "label": "Building Content Role Association ID",
+                    "label": "Id",
                     "description": null
                 },
                 "createdAt": {
@@ -8003,12 +8003,12 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "contentRoleId": {
-                    "label": "Content role identifier",
-                    "description": "A content role defines access permissions to different platform data for users"
+                    "label": "Id (Content role)",
+                    "description": null
                 },
                 "contentRole": {
                     "label": "Content role",
-                    "description": "A content role defines access permissions to different platform data for users"
+                    "description": null
                 },
                 "buildingId": {
                     "label": "Building identifier",
@@ -8036,16 +8036,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "contentRoleToUserCompany": {
                 "id": {
-                    "label": "User ID of the content role association to the company user",
+                    "label": "Id",
                     "description": null
                 },
                 "createdAt": {
@@ -8069,12 +8069,12 @@
                     "description": "Enterprise users have access to their company's Surfy platform"
                 },
                 "contentRoleId": {
-                    "label": "Content role identifier",
-                    "description": "A content role defines access permissions to different platform data for users"
+                    "label": "Id (Content role)",
+                    "description": null
                 },
                 "contentRole": {
                     "label": "Content role",
-                    "description": "A content role defines access permissions to different platform data for users"
+                    "description": null
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -8094,16 +8094,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "contentRoleToFloor": {
                 "id": {
-                    "label": "Content role association identifier on floors",
+                    "label": "Id",
                     "description": null
                 },
                 "createdAt": {
@@ -8119,12 +8119,12 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "contentRoleId": {
-                    "label": "Content role identifier",
-                    "description": "A content role defines access permissions to different platform data for users"
+                    "label": "Id (Content role)",
+                    "description": null
                 },
                 "contentRole": {
                     "label": "Content role",
-                    "description": "A content role defines access permissions to different platform data for users"
+                    "description": null
                 },
                 "floorId": {
                     "label": "Id (floor)",
@@ -8152,16 +8152,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "partnerApiCredential": {
                 "id": {
-                    "label": "Partner API Key ID",
+                    "label": "Id",
                     "description": null
                 },
                 "label": {
@@ -8218,11 +8218,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "apiUser": {
@@ -8268,7 +8268,7 @@
                 },
                 "apiUserToJupRoles": {
                     "label": "API user associations to role",
-                    "description": "An API user role association allows you to define access permissions to API features for a specific user"
+                    "description": null
                 },
                 "apiUserToContentRoles": {
                     "label": "API user associations to content role",
@@ -8276,16 +8276,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "apiUserToJupRole": {
                 "id": {
-                    "label": "API user role association identifier",
+                    "label": "Id",
                     "description": null
                 },
                 "createdAt": {
@@ -8309,12 +8309,12 @@
                     "description": null
                 },
                 "jupRoleId": {
-                    "label": "Role ID",
-                    "description": "A role defines access permissions to features in the user interface"
+                    "label": "Id (Role)",
+                    "description": null
                 },
                 "jupRole": {
                     "label": "Role",
-                    "description": "A role defines access permissions to features in the user interface"
+                    "description": null
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -8334,11 +8334,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "apiUserToContentRole": {
@@ -8367,12 +8367,12 @@
                     "description": null
                 },
                 "contentRoleId": {
-                    "label": "Content role identifier",
-                    "description": "A content role defines access permissions to different platform data for users"
+                    "label": "Id (Content role)",
+                    "description": null
                 },
                 "contentRole": {
                     "label": "Content role",
-                    "description": "A content role defines access permissions to different platform data for users"
+                    "description": null
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -8392,16 +8392,16 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "jupUiTenantOperation": {
                 "id": {
-                    "label": "Interface operation identifier for a company",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
@@ -8442,21 +8442,21 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "contentRoleToJupUiTenantOperation": {
                 "id": {
-                    "label": "Identifier of the association of content role to interface operations for a company",
+                    "label": "Id",
                     "description": null
                 },
                 "canSee": {
-                    "label": "Can see",
-                    "description": "Indicates whether the content role can see this interface operation"
+                    "label": "Can See",
+                    "description": null
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -8471,20 +8471,20 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "jupUiTenantOperationId": {
-                    "label": "Interface operation identifier for a company",
-                    "description": "An interface operation for a business defines the specific actions and features available to a business in the user interface"
+                    "label": "Id ( Jup Ui Tenant Operation)",
+                    "description": null
                 },
                 "jupUiTenantOperation": {
-                    "label": "Interface operation for a company",
-                    "description": "An interface operation for a business defines the specific actions and features available to a business in the user interface"
+                    "label": " Jup Ui Tenant Operation",
+                    "description": null
                 },
                 "contentRoleId": {
-                    "label": "Content role identifier",
-                    "description": "A content role defines access permissions to different platform data for users"
+                    "label": "Id (Content role)",
+                    "description": null
                 },
                 "contentRole": {
                     "label": "Content role",
-                    "description": "A content role defines access permissions to different platform data for users"
+                    "description": null
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -8504,21 +8504,21 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "authentificationConnection": {
                 "id": {
-                    "label": "Authentication connection identifier",
+                    "label": "Id",
                     "description": null
                 },
                 "name": {
-                    "label": "Last name",
-                    "description": "Authentication connection name"
+                    "label": "Name",
+                    "description": null
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -8567,12 +8567,12 @@
                     "description": "This field can be used to remember the correspondence key in another software"
                 },
                 "authentificationConnectionId": {
-                    "label": "Authentication connection identifier",
-                    "description": "An authentication connection allows you to configure the authentication methods for accessing the platform (SSO, LDAP, etc.)"
+                    "label": "Id (Authentication login)",
+                    "description": null
                 },
                 "authentificationConnection": {
                     "label": "Authentication login",
-                    "description": "An authentication connection allows you to configure the authentication methods for accessing the platform (SSO, LDAP, etc.)"
+                    "description": null
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -8600,11 +8600,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "userRegistrationTenantRuleToJupRole": {
@@ -8633,12 +8633,12 @@
                     "description": null
                 },
                 "jupRoleId": {
-                    "label": "Role ID",
-                    "description": "A role defines access permissions to features in the user interface"
+                    "label": "Id (Role)",
+                    "description": null
                 },
                 "jupRole": {
                     "label": "Role",
-                    "description": "A role defines access permissions to features in the user interface"
+                    "description": null
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -8658,11 +8658,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "userRegistrationTenantRuleToContentRole": {
@@ -8691,12 +8691,12 @@
                     "description": null
                 },
                 "contentRoleId": {
-                    "label": "Content role identifier",
-                    "description": "A content role defines access permissions to different platform data for users"
+                    "label": "Id (Content role)",
+                    "description": null
                 },
                 "contentRole": {
                     "label": "Content role",
-                    "description": "A content role defines access permissions to different platform data for users"
+                    "description": null
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -8716,11 +8716,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "partnerExportMappingConfiguration": {
@@ -8770,11 +8770,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "partnerExportMapping": {
@@ -8832,11 +8832,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "partnerExportMappingToRoomType": {
@@ -8890,11 +8890,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "partnerExportMappingConfigurationToFloor": {
@@ -8948,11 +8948,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "jupRoleToJupUiLayout": {
@@ -8985,17 +8985,17 @@
                     "description": "An interface layout defines the arrangement and organization of elements in the user interface"
                 },
                 "jupRoleId": {
-                    "label": "Role ID",
-                    "description": "A role defines access permissions to features in the user interface"
+                    "label": "Id (Role)",
+                    "description": null
                 },
                 "jupRole": {
                     "label": "Role",
-                    "description": "A role defines access permissions to features in the user interface"
+                    "description": null
                 }
             },
             "itemFact": {
                 "id": {
-                    "label": "Object Movement ID",
+                    "label": "Id",
                     "description": null
                 },
                 "measure": {
@@ -9052,11 +9052,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "featureFamily": {
@@ -9102,11 +9102,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "featureGroup": {
@@ -9164,11 +9164,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             },
             "feature": {
@@ -9218,11 +9218,11 @@
                 },
                 "companyId": {
                     "label": "Company ID",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 },
                 "company": {
                     "label": "Business",
-                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                    "description": null
                 }
             }
         }

@@ -19,7 +19,7 @@ Campus Name
 
 ### Color {#color}
 
-Campus color to differentiate on maps
+Campus Color
 
 *Technical name:* ```color```
 <PH code="campus:color"/>
@@ -31,7 +31,7 @@ Campus color to differentiate on maps
     
 ### Address {#address}
 
-Campus address
+
 
 *Technical name:* ```address```
 <PH code="campus:address"/>

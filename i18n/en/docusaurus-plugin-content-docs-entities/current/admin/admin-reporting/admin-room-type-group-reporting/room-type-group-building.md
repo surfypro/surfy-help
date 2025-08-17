@@ -1,7 +1,7 @@
-# Association of building space typology groups
+# Building space typology group
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-A space typology group association with buildings allows you to define the groups of space types available in each building
+
 
 <OH code="roomTypeGroupBuilding"/>
 

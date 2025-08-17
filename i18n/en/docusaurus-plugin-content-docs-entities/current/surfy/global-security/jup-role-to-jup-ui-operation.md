@@ -32,7 +32,7 @@ An interface operation defines the actions and functionality available in the us
 
 ### Role {#jup-role}
 
-A role defines access permissions to features in the user interface
+
 
 *Technical name:* ```jupRole```
 <PH code="jupRoleToJupUiOperation:jupRole"/>

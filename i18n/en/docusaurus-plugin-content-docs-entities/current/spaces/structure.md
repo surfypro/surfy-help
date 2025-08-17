@@ -1,7 +1,7 @@
 # Structure
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-A structure defines a geometric shape that can be used to calibrate and position features on maps
+
 
 <OH code="structure"/>
 

@@ -63,19 +63,19 @@ Prorate the space used by this cost center on the floor to other cost centers on
 
 ## Associated entities (list) {#properties-has-many}
 
-### Cost center associations on floors {#cost-center-floors}
+### Building cost centers {#cost-center-buildings}
 
-A cost center to floor association allows you to define specific cost centers for each floor
 
-*Technical name:* ```costCenterFloors```
-<PH code="costCenter:costCenterFloors"/>
-
-### Cost center associations to buildings {#cost-center-buildings}
-
-A cost center association with buildings allows you to define specific cost centers for each building
 
 *Technical name:* ```costCenterBuildings```
 <PH code="costCenter:costCenterBuildings"/>
+
+### Floor cost centers {#cost-center-floors}
+
+
+
+*Technical name:* ```costCenterFloors```
+<PH code="costCenter:costCenterFloors"/>
 
 ### People {#people}
 
