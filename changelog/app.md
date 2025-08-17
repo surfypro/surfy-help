@@ -1,6 +1,6 @@
 # Nouveautés
 
-<!-- ## 4 Août 2025 - v3.4.96
+## 17 Août 2025 - v3.4.97
 
 - Amélioration de l'affichage des propriétés des types d'objets dans la documentation.
 - L'icône de rotation des objets et des postes de travail est désormais positionnée au-dessus des autres formes.
@@ -9,7 +9,7 @@
 - Dans la recherche de personnes, seules les affectations aux quartiers avec les plus petites priorités sont affichées.
 - Les types pourcentages sont désormais importables depuis Excel.
 - Les bâtiments dans "Voir toutes les réservations sur un plan" sont maintenant uniquement ceux avec des calques d'affectation ; il y a aussi désormais une photo et la liste des étages pour faire la sélection.
--->
+
 
 ## 2 Juillet 2025 - v3.4.94
 - Ajout d'une fonctionnalité de défilement infini dans la page d'affichage des salles de réunion pour permettre de voir toutes les salles du bâtiment.
