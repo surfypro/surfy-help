@@ -1,7 +1,7 @@
 # Role association of content with buildings
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+A content role to building association allows you to define building-specific access permissions for a given role
 
 <OH code="contentRoleToBuilding"/>
 
@@ -22,7 +22,7 @@ The building is used to group the floors
 
 ### Content role {#content-role}
 
-
+A content role defines access permissions to different platform data for users
 
 *Technical name:* ```contentRole```
 <PH code="contentRoleToBuilding:contentRole"/>

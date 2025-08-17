@@ -22,7 +22,7 @@ The building is used to group the floors
 
 ### Layer type {#dimension-type}
 
-
+A layer type allows you to categorize analysis layers according to their use or area of application.
 
 *Technical name:* ```dimensionType```
 <PH code="dimensionTypeToBuilding:dimensionType"/>

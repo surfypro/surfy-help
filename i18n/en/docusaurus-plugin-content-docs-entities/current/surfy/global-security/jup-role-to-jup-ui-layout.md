@@ -25,7 +25,7 @@ Allows the option' to be seen by the role
 
 ### Role {#jup-role}
 
-
+A role defines access permissions to features in the user interface
 
 *Technical name:* ```jupRole```
 <PH code="jupRoleToJupUiLayout:jupRole"/>

@@ -1,7 +1,7 @@
-# Space analysis layer
+# Association of analysis layer to spaces
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+An analysis layer association to spaces allows you to define specific analysis layers for each space
 
 <OH code="dimensionRoom"/>
 
@@ -22,7 +22,7 @@ An analysis layer allows spaces to be categorized and analyzed according to diff
 
 ### Layer type {#dimension-type}
 
-
+A layer type allows you to categorize analysis layers according to their use or area of application.
 
 *Technical name:* ```dimensionType```
 <PH code="dimensionRoom:dimensionType"/>

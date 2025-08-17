@@ -1,7 +1,7 @@
-# Floor space typology
+# Association of space typology on floors
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+A space typology association with floors makes it possible to define the types of spaces available on each floor
 
 <OH code="roomTypeFloor"/>
 

@@ -85,26 +85,19 @@ A cost distribution type allows you to define the methods for distributing costs
 
 ## Associated entities (list) {#properties-has-many}
 
-### Associations groups of space typologies to space typologies {#room-type-group-to-room-types}
+### Associations of space typology on the floors {#room-type-floors}
 
-
-
-*Technical name:* ```roomTypeGroupToRoomTypes```
-<PH code="roomType:roomTypeGroupToRoomTypes"/>
-
-### Building space typologies {#room-type-buildings}
-
-
-
-*Technical name:* ```roomTypeBuildings```
-<PH code="roomType:roomTypeBuildings"/>
-
-### Floor space typologies {#room-type-floors}
-
-
+A space typology association with floors makes it possible to define the types of spaces available on each floor
 
 *Technical name:* ```roomTypeFloors```
 <PH code="roomType:roomTypeFloors"/>
+
+### Associations of space typology with buildings {#room-type-buildings}
+
+A space typology association with buildings makes it possible to define the types of spaces available in each building
+
+*Technical name:* ```roomTypeBuildings```
+<PH code="roomType:roomTypeBuildings"/>
 
 ### Partner export transformations for space types {#partner-export-mapping-to-room-types}
 
@@ -112,6 +105,13 @@ A cost distribution type allows you to define the methods for distributing costs
 
 *Technical name:* ```partnerExportMappingToRoomTypes```
 <PH code="roomType:partnerExportMappingToRoomTypes"/>
+
+### Space typology group associations to space typology {#room-type-group-to-room-types}
+
+A space typology group to space typology association allows you to define which space types belong to which groups
+
+*Technical name:* ```roomTypeGroupToRoomTypes```
+<PH code="roomType:roomTypeGroupToRoomTypes"/>
 
 ### Spaces {#rooms}
 

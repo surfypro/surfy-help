@@ -1,7 +1,7 @@
-# Association of space typology group with space typology
+# Space typology group association to space typology
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+A space typology group to space typology association allows you to define which space types belong to which groups
 
 <OH code="roomTypeGroupToRoomType"/>
 
