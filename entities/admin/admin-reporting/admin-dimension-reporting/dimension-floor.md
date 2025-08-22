@@ -1,7 +1,7 @@
-# Calque d'analyse par étage
+# Association calque d'analyse aux étages
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Une association calque d'analyse aux étages permet de définir les calques d'analyse spécifiques pour chaque étage
 
 <OH code="dimensionFloor"/>
 
@@ -158,7 +158,7 @@ Taux de postes de travail partagés par au moins 2 personnes par rapport à l'en
 
 ### Calque d'analyse {#dimension}
 
-
+Un calque d'analyse permet de catégoriser et analyser les espaces selon différents critères pour des analyses statistiques et de reporting
 
 *Nom technique:* ```dimension```
 <PH code="dimensionFloor:dimension"/>
@@ -172,7 +172,7 @@ Les étages represent un plateau de travail ou un niveau d'un bâtiment
 
 ### Type de calque {#dimension-type}
 
-
+Un type de calque permet de catégoriser les calques d'analyse selon leur usage ou leur domaine d'application
 
 *Nom technique:* ```dimensionType```
 <PH code="dimensionFloor:dimensionType"/>

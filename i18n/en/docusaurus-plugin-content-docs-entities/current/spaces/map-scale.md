@@ -1,7 +1,7 @@
 # Plane scale
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+A map scale allows you to define the display and scale parameters for maps
 
 <OH code="mapScale"/>
 

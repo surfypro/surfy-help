@@ -1,7 +1,7 @@
 # Connection d'authentification
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Une connexion d'authentification permet de configurer les méthodes d'authentification pour accéder à la plateforme (SSO, LDAP, etc.)
 
 <OH code="authentificationConnection"/>
 
@@ -10,9 +10,9 @@
 
 ## Propriétés obligatoires {#properties-mandatory}
     
-### Name {#name}
+### Nom {#name}
 
-
+Nom de la connexion d'authentification
 
 *Nom technique:* ```name```
 <PH code="authentificationConnection:name"/>

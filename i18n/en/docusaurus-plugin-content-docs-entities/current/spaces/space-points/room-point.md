@@ -1,7 +1,7 @@
 # Point of spaces
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+A point in spaces defines the geometric coordinates for drawing the outline of a space
 
 <OH code="roomPoint"/>
 
@@ -10,19 +10,19 @@
 
 ## Required Properties {#properties-mandatory}
     
-### there {#y}
-
-Y axis coordinate
-
-*Technical name:* ```y```
-<PH code="roomPoint:y"/>
-
-### x {#x}
+### X coordinate {#x}
 
 Coordinate on the X axis
 
 *Technical name:* ```x```
 <PH code="roomPoint:x"/>
+
+### Y coordinate {#y}
+
+Y axis coordinate
+
+*Technical name:* ```y```
+<PH code="roomPoint:y"/>
 
     
 
@@ -49,14 +49,14 @@ The association between a point and a space makes it possible to preserve the or
 
 ### Segment qualifications {#room-point-segment-starts}
 
-
+A segment qualification allows you to define the display and orientation properties of a segment between two space points
 
 *Technical name:* ```roomPointSegmentStarts```
 <PH code="roomPoint:roomPointSegmentStarts"/>
 
 ### Segment qualifications {#room-point-segment-ends}
 
-
+A segment qualification allows you to define the display and orientation properties of a segment between two space points
 
 *Technical name:* ```roomPointSegmentEnds```
 <PH code="roomPoint:roomPointSegmentEnds"/>

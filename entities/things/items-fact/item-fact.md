@@ -1,7 +1,7 @@
 # Mouvement d'objet
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Un mouvement d'objet enregistre les déplacements ou changements de statut d'un objet dans le système
 
 <OH code="itemFact"/>
 
@@ -49,7 +49,7 @@
 
 ### Objet {#item}
 
-
+Un objet représente un élément physique ou matériel présent dans les espaces de travail
 
 *Nom technique:* ```item```
 <PH code="itemFact:item"/>

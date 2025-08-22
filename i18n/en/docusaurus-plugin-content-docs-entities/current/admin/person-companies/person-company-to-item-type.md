@@ -22,7 +22,7 @@ The missions of the service providers make it possible to know the area of â€‹â€
 
 ### Object type {#item-type}
 
-
+An object type allows you to categorize and define the characteristics of physical objects present in workspaces
 
 *Technical name:* ```itemType```
 <PH code="personCompanyToItemType:itemType"/>

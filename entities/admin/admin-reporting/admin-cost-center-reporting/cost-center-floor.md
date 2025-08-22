@@ -1,7 +1,7 @@
-# Centre de coût des étages
+# Association centre de coût aux étages
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Une association centre de coût aux étages permet de définir les centres de coût spécifiques pour chaque étage
 
 <OH code="costCenterFloor"/>
 

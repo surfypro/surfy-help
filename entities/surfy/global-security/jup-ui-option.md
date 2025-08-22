@@ -1,7 +1,7 @@
 # Option d'interface
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Une option d'interface définit les paramètres et configurations disponibles dans l'interface utilisateur
 
 <OH code="jupUiOption"/>
 
@@ -35,9 +35,9 @@
 
 ## Entités associées (liste) {#properties-has-many}
 
-### Associations rôle aux visions du plan {#jup-role-to-jup-ui-options}
+### Associations rôle aux options d'interface {#jup-role-to-jup-ui-options}
 
-
+Une association rôle aux options d'interface permet de définir les permissions d'accès aux différentes options de l'interface pour un rôle
 
 *Nom technique:* ```jupRoleToJupUiOptions```
 <PH code="jupUiOption:jupRoleToJupUiOptions"/>

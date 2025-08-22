@@ -39,7 +39,7 @@
 
 ### Structure {#structure}
 
-
+Une structure définit une forme géométrique qui peut être utilisée pour calibrer et positionner des éléments sur des cartes
 
 *Nom technique:* ```structure```
 <PH code="structurePoint:structure"/>

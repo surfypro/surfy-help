@@ -37,7 +37,7 @@ Le nom de la famille permet de l'identifier, ce nom est utilisé pour regrouper 
 
 ### Types d'objet {#item-types}
 
-
+Un type d'objet permet de catégoriser et définir les caractéristiques des objets physiques présents dans les espaces de travail
 
 *Nom technique:* ```itemTypes```
 <PH code="itemTypeFamily:itemTypes"/>

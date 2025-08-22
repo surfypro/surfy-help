@@ -12,7 +12,7 @@ Le campus est utilisé pour regrouper des bâtiments qui sont au même endroit.
     
 ### Couleur {#color}
 
-Couleur du campus
+Couleur du campus pour différencier sur les plans
 
 *Nom technique:* ```color```
 <PH code="campus:color"/>
@@ -29,9 +29,9 @@ Nom du campus
 
 ## Propriétés de base {#properties-base}
     
-### Address {#address}
+### Adresse {#address}
 
-
+Adresse du campus
 
 *Nom technique:* ```address```
 <PH code="campus:address"/>

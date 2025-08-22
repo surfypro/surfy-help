@@ -73,21 +73,14 @@ La hauteur sous plafond de l'étage
 
 ### Nombre d'affectations {#people-count}
 
-Le nombre de personnes affectées dans la l'étage, soit directement affécté aux espaces, soit à travers un poste de travail
+
 
 *Nom technique:* ```peopleCount```
 <PH code="floor:peopleCount"/>
 
-### Nombre d'affectations totale {#total-people-count}
-
-Le nombre de personnes affectées dans la l'étage, soit directement affécté aux espaces, soit à travers un poste de travail
-
-*Nom technique:* ```totalPeopleCount```
-<PH code="floor:totalPeopleCount"/>
-
 ### Nombre d'espaces {#rooms-count}
 
-Le nombre d'espaces présent dans cet étage
+Le nombre total d'espaces
 
 *Nom technique:* ```roomsCount```
 <PH code="floor:roomsCount"/>
@@ -101,7 +94,7 @@ Le nombre total de places assises
 
 ### Nombre de postes de travail {#workplaces-count}
 
-Le nombre de postes de travail dans l'étage est calculé automatiquement
+Le nombre total de postes de travail dans les espaces
 
 *Nom technique:* ```workplacesCount```
 <PH code="floor:workplacesCount"/>
@@ -115,24 +108,31 @@ Nombre de postes de travail de passage, ces postes ne sont pas comptabilisés da
 
 ### Nombre de postes de travail partagés {#shared-workplaces-count}
 
-Nombre de postes de travail partagés dans l'étage par au moins 2 personnes
+Nombre total de postes de travail partagés par au moins 2 personnes
 
 *Nom technique:* ```sharedWorkplacesCount```
 <PH code="floor:sharedWorkplacesCount"/>
 
 ### Nombre de postes flex {#flex-workplaces-count}
 
-Nombre de postes flex dans l'étage
+Nombre total de postes flex
 
 *Nom technique:* ```flexWorkplacesCount```
 <PH code="floor:flexWorkplacesCount"/>
 
 ### Nombre de postes libres {#free-workplaces-count}
 
-Nombre de postes libres dans l'étage
+Nombre total de postes libres
 
 *Nom technique:* ```freeWorkplacesCount```
 <PH code="floor:freeWorkplacesCount"/>
+
+### Nombre total d'affectations {#total-people-count}
+
+Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail
+
+*Nom technique:* ```totalPeopleCount```
+<PH code="floor:totalPeopleCount"/>
 
 ### Opacité du fond de plan {#background-layout-opacity}
 
@@ -143,14 +143,14 @@ L'opacité permet de voir plus ou moins le fond de plan
 
 ### Ratio d'occupation {#people-ratio}
 
-Le ratio d'occupation est le nombre de métres carrés dans l'étage divisé par le nombre de personnes affectées soit directement dans les espaces, soit via un poste de travail, cette valeur est calculée
+Le ratio d'occupation est le nombre de métres carrés divisé par le nombre de personnes affectées soit directement dans les espaces, soit via un poste de travail
 
 *Nom technique:* ```peopleRatio```
 <PH code="floor:peopleRatio"/>
 
 ### Ratio postes de travail {#workplaces-ratio}
 
-Le ratio postes de travail est le nombre de métres carrés dans l'étage divisé par le nombre de postes de travail, cette valeur est calculé automatiquement
+Le ratio postes de travail est le nombre de métres carrés divisé par le nombre de postes de travail
 
 *Nom technique:* ```workplacesRatio```
 <PH code="floor:workplacesRatio"/>
@@ -199,7 +199,7 @@ Le taux de poste de travail en flex est calculé en divisant le nombre de postes
 
 ### Taux de postes de travail partagés {#shared-workplaces-ratio}
 
-Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail de l'étage
+Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail
 
 *Nom technique:* ```sharedWorkplacesRatio```
 <PH code="floor:sharedWorkplacesRatio"/>
@@ -224,7 +224,7 @@ L'échelle permet de calculer en proportion les surfaces réelles et la taille d
 
 ### Structure {#structure}
 
-
+Une structure définit une forme géométrique qui peut être utilisée pour calibrer et positionner des éléments sur des cartes
 
 *Nom technique:* ```structure```
 <PH code="floor:structure"/>
@@ -232,26 +232,47 @@ L'échelle permet de calculer en proportion les surfaces réelles et la taille d
 
 ## Entités associées (liste) {#properties-has-many}
 
-### Associations rôle de contenu aux étages {#content-role-to-floors}
+### Associations calque d'analyse aux étages {#dimension-floors}
 
-
-
-*Nom technique:* ```contentRoleToFloors```
-<PH code="floor:contentRoleToFloors"/>
-
-### Calques d'analyse par étage {#dimension-floors}
-
-
+Une association calque d'analyse aux étages permet de définir les calques d'analyse spécifiques pour chaque étage
 
 *Nom technique:* ```dimensionFloors```
 <PH code="floor:dimensionFloors"/>
 
-### Centres de coût des étages {#cost-center-floors}
+### Associations centre de coût aux étages {#cost-center-floors}
 
-
+Une association centre de coût aux étages permet de définir les centres de coût spécifiques pour chaque étage
 
 *Nom technique:* ```costCenterFloors```
 <PH code="floor:costCenterFloors"/>
+
+### Associations groupe de typologie d'espace aux étages {#room-type-group-floors}
+
+Une association groupe de typologie d'espace aux étages permet de définir les groupes de types d'espaces disponibles dans chaque étage
+
+*Nom technique:* ```roomTypeGroupFloors```
+<PH code="floor:roomTypeGroupFloors"/>
+
+### Associations organisation aux étages {#organization-floors}
+
+Une association organisation aux étages permet de définir les organisations responsables de chaque étage
+
+*Nom technique:* ```organizationFloors```
+<PH code="floor:organizationFloors"/>
+
+### Associations rôle de contenu aux étages {#content-role-to-floors}
+
+Une association rôle de contenu aux étages permet de définir les permissions d'accès spécifiques aux étages pour un rôle donné
+
+*Nom technique:* ```contentRoleToFloors```
+<PH code="floor:contentRoleToFloors"/>
+
+### Associations typologie d'espace aux étages {#room-type-floors}
+
+Une association typologie d'espace aux étages permet de définir les types d'espaces disponibles dans chaque étage
+
+*Nom technique:* ```roomTypeFloors```
+<PH code="floor:roomTypeFloors"/>
 
 ### Espaces {#rooms}
 
@@ -267,33 +288,12 @@ Les espaces sont des lieux de travail ou des zones afin de découper un étage e
 *Nom technique:* ```partnerExportMappingConfigurationToFloors```
 <PH code="floor:partnerExportMappingConfigurationToFloors"/>
 
-### Groupes de typologies d'espace des étages {#room-type-group-floors}
-
-
-
-*Nom technique:* ```roomTypeGroupFloors```
-<PH code="floor:roomTypeGroupFloors"/>
-
-### Organisations des étages {#organization-floors}
-
-
-
-*Nom technique:* ```organizationFloors```
-<PH code="floor:organizationFloors"/>
-
 ### Points des espaces {#room-points}
 
-
+Un point des espaces définit les coordonnées géométriques pour dessiner le contour d'un espace
 
 *Nom technique:* ```roomPoints```
 <PH code="floor:roomPoints"/>
-
-### Typologies d'espace des étages {#room-type-floors}
-
-
-
-*Nom technique:* ```roomTypeFloors```
-<PH code="floor:roomTypeFloors"/>
 
 
 

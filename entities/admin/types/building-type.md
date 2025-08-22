@@ -1,7 +1,7 @@
 # Type de bâtiment
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Un type de bâtiment permet de catégoriser les bâtiments selon leur usage
 
 <OH code="buildingType"/>
 
@@ -24,14 +24,14 @@ Nom du type de bâtiment
     
 ### Code {#code}
 
-
+Code de référence du type de bâtiment
 
 *Nom technique:* ```code```
 <PH code="buildingType:code"/>
 
-### Color {#color}
+### Couleur {#color}
 
-
+Couleur pour différencier le type de bâtiment sur les plans
 
 *Nom technique:* ```color```
 <PH code="buildingType:color"/>

@@ -25,7 +25,7 @@ Définit la priorité de l'affectation de la personne à la dimension. Une valeu
 
 ### Calque d'analyse {#dimension}
 
-
+Un calque d'analyse permet de catégoriser et analyser les espaces selon différents critères pour des analyses statistiques et de reporting
 
 *Nom technique:* ```dimension```
 <PH code="dimensionToPerson:dimension"/>

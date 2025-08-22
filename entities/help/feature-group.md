@@ -30,9 +30,9 @@
 
 ## Entités associées (unique) {#properties-belongs-to}
 
-###  Feature Family {#feature-family}
+### Famille de fonctionnalités {#feature-family}
 
-
+Une famille de fonctionnalités permet de regrouper des fonctionnalités liées selon leur domaine ou leur usage
 
 *Nom technique:* ```featureFamily```
 <PH code="featureGroup:featureFamily"/>
@@ -40,9 +40,9 @@
 
 ## Entités associées (liste) {#properties-has-many}
 
-###  Features {#features}
+### Fonctionnalités {#features}
 
-
+Une fonctionnalité représente une caractéristique ou une capacité spécifique disponible dans le système
 
 *Nom technique:* ```features```
 <PH code="featureGroup:features"/>

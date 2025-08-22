@@ -15,7 +15,7 @@ Allows you to associate an object with a person (ergonomic seat, locker)
 
 ### Object {#item}
 
-
+An object represents a physical or material element present in workspaces
 
 *Technical name:* ```item```
 <PH code="itemToPerson:item"/>

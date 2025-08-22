@@ -31,7 +31,7 @@ This code can be used to contain the organization coding or the key for identifi
 
 ### Color {#color}
 
-
+The organization color helps differentiate organizations on maps and in the interface
 
 *Technical name:* ```color```
 <PH code="organization:color"/>
@@ -50,19 +50,19 @@ Organizations have two hierarchical levels: departments and services, and help d
 
 ## Associated entities (list) {#properties-has-many}
 
-### Building organizations {#organization-buildings}
+### Associations organization on the floors {#organization-floors}
 
-
-
-*Technical name:* ```organizationBuildings```
-<PH code="organization:organizationBuildings"/>
-
-### Floor organization {#organization-floors}
-
-
+An organizational association on floors allows you to define the organizations responsible for each floor
 
 *Technical name:* ```organizationFloors```
 <PH code="organization:organizationFloors"/>
+
+### Associations organization to buildings {#organization-buildings}
+
+An organization-building association allows you to define the organizations responsible for each building
+
+*Technical name:* ```organizationBuildings```
+<PH code="organization:organizationBuildings"/>
 
 ### People {#people}
 

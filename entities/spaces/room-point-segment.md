@@ -1,7 +1,7 @@
 # Qualification de segment
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Une qualification de segment permet de définir les propriétés d'affichage et d'orientation d'un segment entre deux points d'espace
 
 <OH code="roomPointSegment"/>
 
@@ -32,21 +32,21 @@ Inverser les points du segment afin d'avoir l'affichage par exemple des portes d
 
 ###  Room Point End {#room-point-end}
 
-
+Un point des espaces définit les coordonnées géométriques pour dessiner le contour d'un espace
 
 *Nom technique:* ```roomPointEnd```
 <PH code="roomPointSegment:roomPointEnd"/>
 
 ###  Room Point Start {#room-point-start}
 
-
+Un point des espaces définit les coordonnées géométriques pour dessiner le contour d'un espace
 
 *Nom technique:* ```roomPointStart```
 <PH code="roomPointSegment:roomPointStart"/>
 
 ### Type de segment {#room-point-segment-type}
 
-
+Un type de segment définit les différents types de segments qui peuvent exister entre les points d'espaces
 
 *Nom technique:* ```roomPointSegmentType```
 <PH code="roomPointSegment:roomPointSegmentType"/>

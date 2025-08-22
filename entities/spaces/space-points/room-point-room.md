@@ -12,7 +12,7 @@ L'association entre un point et un espace permet de conserver l'ordre des points
     
 ### Index de tri {#sort-index}
 
-
+L'ordre du point dans la séquence pour former le polygone de l'espace
 
 *Nom technique:* ```sortIndex```
 <PH code="roomPointRoom:sortIndex"/>
@@ -32,7 +32,7 @@ Les espaces sont des lieux de travail ou des zones afin de découper un étage e
 
 ### Point des espaces {#room-point}
 
-
+Un point des espaces définit les coordonnées géométriques pour dessiner le contour d'un espace
 
 *Nom technique:* ```roomPoint```
 <PH code="roomPointRoom:roomPoint"/>

@@ -56,7 +56,7 @@ Permet de définir le nombre de places assises disponibles dans le type de poste
 
 ### Type d'objet {#item-type}
 
-
+Un type d'objet permet de catégoriser et définir les caractéristiques des objets physiques présents dans les espaces de travail
 
 *Nom technique:* ```itemType```
 <PH code="workplaceTypeItemType:itemType"/>

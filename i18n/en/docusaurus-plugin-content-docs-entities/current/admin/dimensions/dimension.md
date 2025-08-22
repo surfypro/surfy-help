@@ -1,7 +1,7 @@
 # Analysis layer
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses.
 
 <OH code="dimension"/>
 
@@ -43,19 +43,19 @@ The analysis layer color allows you to differentiate spaces on the plan
 *Technical name:* ```color```
 <PH code="dimension:color"/>
 
-### Number of direct assignments {#people-count}
+### Manual People Count {#manual-people-count}
 
-The number of people who are directly assigned to this assignment layer in the building
 
-*Technical name:* ```peopleCount```
-<PH code="dimension:peopleCount"/>
-
-### Number of direct manual assignments {#manual-people-count}
-
-The number of people who are assigned directly to this assignment layer without considering assignments with real people
 
 *Technical name:* ```manualPeopleCount```
 <PH code="dimension:manualPeopleCount"/>
+
+### Number of assignments {#people-count}
+
+
+
+*Technical name:* ```peopleCount```
+<PH code="dimension:peopleCount"/>
 
 ### Numerical value {#value}
 
@@ -64,9 +64,9 @@ The value can be used to associate the layer with a numerical value in order to 
 *Technical name:* ```value```
 <PH code="dimension:value"/>
 
-### Total number of direct assignments {#total-people-count}
+### Total number of assignments {#total-people-count}
 
-The total number of people who are assigned directly to this assignment layer in the building, the addition of the actual people assigned and the number of people assigned manually
+The total number of people assigned, either directly assigned to spaces or through a workstation
 
 *Technical name:* ```totalPeopleCount```
 <PH code="dimension:totalPeopleCount"/>
@@ -77,7 +77,7 @@ The total number of people who are assigned directly to this assignment layer in
 
 ### Layer type {#dimension-type}
 
-
+A layer type allows you to categorize analysis layers according to their use or area of application.
 
 *Technical name:* ```dimensionType```
 <PH code="dimension:dimensionType"/>
@@ -85,19 +85,26 @@ The total number of people who are assigned directly to this assignment layer in
 
 ## Associated entities (list) {#properties-has-many}
 
-### Analysis layers by building {#dimension-buildings}
+### Analysis layer associations to buildings {#dimension-buildings}
 
-
+An analysis layer association with buildings allows you to define specific analysis layers for each building
 
 *Technical name:* ```dimensionBuildings```
 <PH code="dimension:dimensionBuildings"/>
 
-### Analysis layers per floor {#dimension-floors}
+### Analysis layer associations to floors {#dimension-floors}
 
-
+An analysis layer to floor association allows you to define specific analysis layers for each floor
 
 *Technical name:* ```dimensionFloors```
 <PH code="dimension:dimensionFloors"/>
+
+### Analysis layer associations to spaces {#dimension-rooms}
+
+An analysis layer association to spaces allows you to define specific analysis layers for each space
+
+*Technical name:* ```dimensionRooms```
+<PH code="dimension:dimensionRooms"/>
 
 ### Assignments to Assignment Layers {#dimension-to-people}
 
@@ -112,13 +119,6 @@ Reservations to people assignment layers are recorded and available with reserva
 
 *Technical name:* ```personToDimensionBookings```
 <PH code="dimension:personToDimensionBookings"/>
-
-### Space analysis layers {#dimension-rooms}
-
-
-
-*Technical name:* ```dimensionRooms```
-<PH code="dimension:dimensionRooms"/>
 
 
 

@@ -1,7 +1,7 @@
 # Object type manufacturer
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+A manufacturer represents a company or brand that produces objects or equipment
 
 <OH code="manufacturer"/>
 
@@ -37,7 +37,7 @@ Manufacturer's website address
 
 ### Object types {#item-types}
 
-
+An object type allows you to categorize and define the characteristics of physical objects present in workspaces
 
 *Technical name:* ```itemTypes```
 <PH code="manufacturer:itemTypes"/>

@@ -33,7 +33,7 @@ declare type CampusPropertyNames = 'id' | 'name' | 'color' | 'address' | 'roomsA
 
 declare type CampusPropertyTypeRecord = Record<CampusPropertyNames, IPropertyTypeDefinition>;
 
-declare type CompanyPropertyNames = 'id' | 'name' | 'logoPath' | 'iconPath' | 'proxyImages' | 'workingDaysCount' | 'enablePathfinding' | 'planningNumberOfDays' | 'createdAt' | 'updatedAt' | 'externalId' | 'companyTypeId' | 'companyType' | 'userCompanies' | 'buildingTypes' | 'buildings' | 'companyWorkingLocations';
+declare type CompanyPropertyNames = 'id' | 'name' | 'logoPath' | 'iconPath' | 'proxyImages' | 'workingDaysCount' | 'enablePathfinding' | 'planningNumberOfDays' | 'enableCrowdedDimensionForBooking' | 'createdAt' | 'updatedAt' | 'externalId' | 'companyTypeId' | 'companyType' | 'userCompanies' | 'buildingTypes' | 'buildings' | 'companyWorkingLocations';
 
 declare type CompanyPropertyTypeRecord = Record<CompanyPropertyNames, IPropertyTypeDefinition>;
 
@@ -87,7 +87,7 @@ declare type DimensionFloorPropertyNames = 'id' | 'roomsArea' | 'roomsCount' | '
 
 declare type DimensionFloorPropertyTypeRecord = Record<DimensionFloorPropertyNames, IPropertyTypeDefinition>;
 
-declare type DimensionPropertyNames = 'id' | 'name' | 'color' | 'value' | 'peopleCount' | 'totalPeopleCount' | 'manualPeopleCount' | 'carbonFootprintPerMeter' | 'createdAt' | 'updatedAt' | 'externalId' | 'dimensionTypeId' | 'dimensionType' | 'userCompanyCreatedById' | 'userCompanyCreatedBy' | 'userCompanyUpdatedById' | 'userCompanyUpdatedBy' | 'dimensionRooms' | 'dimensionFloors' | 'dimensionBuildings' | 'dimensionToPeople' | 'personToDimensionBookings' | 'companyId' | 'company';
+declare type DimensionPropertyNames = 'id' | 'name' | 'color' | 'value' | 'peopleCount' | 'totalPeopleCount' | 'manualPeopleCount' | 'carbonFootprintPerMeter' | 'crowdedForBookingRate' | 'createdAt' | 'updatedAt' | 'externalId' | 'dimensionTypeId' | 'dimensionType' | 'userCompanyCreatedById' | 'userCompanyCreatedBy' | 'userCompanyUpdatedById' | 'userCompanyUpdatedBy' | 'dimensionRooms' | 'dimensionFloors' | 'dimensionBuildings' | 'dimensionToPeople' | 'personToDimensionBookings' | 'companyId' | 'company';
 
 declare type DimensionPropertyTypeRecord = Record<DimensionPropertyNames, IPropertyTypeDefinition>;
 
@@ -95,7 +95,7 @@ declare type DimensionRoomPropertyNames = 'id' | 'createdAt' | 'updatedAt' | 'ex
 
 declare type DimensionRoomPropertyTypeRecord = Record<DimensionRoomPropertyNames, IPropertyTypeDefinition>;
 
-declare type DimensionToPersonPropertyNames = 'id' | 'createdAt' | 'updatedAt' | 'externalId' | 'dimensionId' | 'dimension' | 'personId' | 'person' | 'userCompanyCreatedById' | 'userCompanyCreatedBy' | 'userCompanyUpdatedById' | 'userCompanyUpdatedBy' | 'companyId' | 'company';
+declare type DimensionToPersonPropertyNames = 'id' | 'priority' | 'createdAt' | 'updatedAt' | 'externalId' | 'dimensionId' | 'dimension' | 'personId' | 'person' | 'userCompanyCreatedById' | 'userCompanyCreatedBy' | 'userCompanyUpdatedById' | 'userCompanyUpdatedBy' | 'companyId' | 'company';
 
 declare type DimensionToPersonPropertyTypeRecord = Record<DimensionToPersonPropertyNames, IPropertyTypeDefinition>;
 
@@ -455,6 +455,10 @@ export declare function ObjectTypeIndexViewHelp(props: {
     view: IViewCore;
 }): default_2.JSX.Element;
 
+export declare function ObjectTypeSingularCapitalizedLabel(props: {
+    objectTypeName: Surfy.CamelizedObjectTypes;
+}): default_2.JSX.Element;
+
 declare type OccupancyStatusPropertyNames = 'id' | 'name' | 'code' | 'color' | 'createdAt' | 'updatedAt' | 'externalId' | 'rooms';
 
 declare type OccupancyStatusPropertyTypeRecord = Record<OccupancyStatusPropertyNames, IPropertyTypeDefinition>;
@@ -560,6 +564,10 @@ declare type PersonWorkingLocationPropertyNames = 'id' | 'date' | 'daySlotType' 
 declare type PersonWorkingLocationPropertyTypeRecord = Record<PersonWorkingLocationPropertyNames, IPropertyTypeDefinition>;
 
 export declare type PropertyTypeCodes = "occupancyStatus:id" | "occupancyStatus:name" | "occupancyStatus:code" | "occupancyStatus:color" | "occupancyStatus:createdAt";
+
+export declare function PropertyTypeDescription(props: {
+    propertyType: IPropertyTypeDefinition;
+}): string | default_2.JSX.Element | null;
 
 declare type PropertyTypeJupDistanceUnits = 'centimeter' | 'meter';
 
@@ -700,6 +708,7 @@ declare namespace Surfy {
         workingDaysCount?: number;
         enablePathfinding?: boolean;
         planningNumberOfDays?: number;
+        enableCrowdedDimensionForBooking?: boolean;
         createdAt?: string;
         updatedAt?: string;
         externalId?: string;
@@ -1716,6 +1725,7 @@ declare namespace Surfy {
         totalPeopleCount?: number;
         manualPeopleCount?: number;
         carbonFootprintPerMeter?: number;
+        crowdedForBookingRate?: number;
         createdAt?: string;
         updatedAt?: string;
         externalId?: string;
@@ -2304,6 +2314,7 @@ declare namespace Surfy {
     }
     interface DimensionToPerson extends IEntity {
         id: number;
+        priority?: number;
         createdAt?: string;
         updatedAt?: string;
         externalId?: string;

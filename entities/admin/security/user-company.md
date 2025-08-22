@@ -30,20 +30,6 @@ Ce sont les personnes entrées dans la base de données de Surfy
 
 ## Entités associées (liste) {#properties-has-many}
 
-###  Feature Families {#feature-family-created-bies}
-
-
-
-*Nom technique:* ```featureFamilyCreatedBies```
-<PH code="userCompany:featureFamilyCreatedBies"/>
-
-###  Feature Families {#feature-family-updated-bies}
-
-
-
-*Nom technique:* ```featureFamilyUpdatedBies```
-<PH code="userCompany:featureFamilyUpdatedBies"/>
-
 ###  Feature Groups {#feature-group-created-bies}
 
 
@@ -57,20 +43,6 @@ Ce sont les personnes entrées dans la base de données de Surfy
 
 *Nom technique:* ```featureGroupUpdatedBies```
 <PH code="userCompany:featureGroupUpdatedBies"/>
-
-###  Features {#feature-created-bies}
-
-
-
-*Nom technique:* ```featureCreatedBies```
-<PH code="userCompany:featureCreatedBies"/>
-
-###  Features {#feature-updated-bies}
-
-
-
-*Nom technique:* ```featureUpdatedBies```
-<PH code="userCompany:featureUpdatedBies"/>
 
 ###  Structure Points {#structure-point-created-bies}
 
@@ -156,6 +128,76 @@ Permet d'affecter une personne à un espace simple
 *Nom technique:* ```contentRoleToJupUiTenantOperationUpdatedBies```
 <PH code="userCompany:contentRoleToJupUiTenantOperationUpdatedBies"/>
 
+### Associations calque d'analyse aux bâtiments {#dimension-building-created-bies}
+
+Une association calque d'analyse aux bâtiments permet de définir les calques d'analyse spécifiques pour chaque bâtiment
+
+*Nom technique:* ```dimensionBuildingCreatedBies```
+<PH code="userCompany:dimensionBuildingCreatedBies"/>
+
+### Associations calque d'analyse aux bâtiments {#dimension-building-updated-bies}
+
+Une association calque d'analyse aux bâtiments permet de définir les calques d'analyse spécifiques pour chaque bâtiment
+
+*Nom technique:* ```dimensionBuildingUpdatedBies```
+<PH code="userCompany:dimensionBuildingUpdatedBies"/>
+
+### Associations calque d'analyse aux espaces {#dimension-room-created-bies}
+
+Une association calque d'analyse aux espaces permet de définir les calques d'analyse spécifiques pour chaque espace
+
+*Nom technique:* ```dimensionRoomCreatedBies```
+<PH code="userCompany:dimensionRoomCreatedBies"/>
+
+### Associations calque d'analyse aux espaces {#dimension-room-updated-bies}
+
+Une association calque d'analyse aux espaces permet de définir les calques d'analyse spécifiques pour chaque espace
+
+*Nom technique:* ```dimensionRoomUpdatedBies```
+<PH code="userCompany:dimensionRoomUpdatedBies"/>
+
+### Associations calque d'analyse aux étages {#dimension-floor-created-bies}
+
+Une association calque d'analyse aux étages permet de définir les calques d'analyse spécifiques pour chaque étage
+
+*Nom technique:* ```dimensionFloorCreatedBies```
+<PH code="userCompany:dimensionFloorCreatedBies"/>
+
+### Associations calque d'analyse aux étages {#dimension-floor-updated-bies}
+
+Une association calque d'analyse aux étages permet de définir les calques d'analyse spécifiques pour chaque étage
+
+*Nom technique:* ```dimensionFloorUpdatedBies```
+<PH code="userCompany:dimensionFloorUpdatedBies"/>
+
+### Associations centre de coût aux bâtiments {#cost-center-building-created-bies}
+
+Une association centre de coût aux bâtiments permet de définir les centres de coût spécifiques pour chaque bâtiment
+
+*Nom technique:* ```costCenterBuildingCreatedBies```
+<PH code="userCompany:costCenterBuildingCreatedBies"/>
+
+### Associations centre de coût aux bâtiments {#cost-center-building-updated-bies}
+
+Une association centre de coût aux bâtiments permet de définir les centres de coût spécifiques pour chaque bâtiment
+
+*Nom technique:* ```costCenterBuildingUpdatedBies```
+<PH code="userCompany:costCenterBuildingUpdatedBies"/>
+
+### Associations centre de coût aux étages {#cost-center-floor-created-bies}
+
+Une association centre de coût aux étages permet de définir les centres de coût spécifiques pour chaque étage
+
+*Nom technique:* ```costCenterFloorCreatedBies```
+<PH code="userCompany:costCenterFloorCreatedBies"/>
+
+### Associations centre de coût aux étages {#cost-center-floor-updated-bies}
+
+Une association centre de coût aux étages permet de définir les centres de coût spécifiques pour chaque étage
+
+*Nom technique:* ```costCenterFloorUpdatedBies```
+<PH code="userCompany:costCenterFloorUpdatedBies"/>
+
 ### Associations d'objet à personne {#item-to-person-created-bies}
 
 Permet d'associer un objet à une personne (siège ergonomique, casier)
@@ -172,14 +214,14 @@ Permet d'associer un objet à une personne (siège ergonomique, casier)
 
 ### Associations d'utilisateur d'api au rôle {#api-user-to-jup-role-created-bies}
 
-
+Une association d'utilisateur d'API au rôle permet de définir les permissions d'accès aux fonctionnalités de l'API pour un utilisateur spécifique
 
 *Nom technique:* ```apiUserToJupRoleCreatedBies```
 <PH code="userCompany:apiUserToJupRoleCreatedBies"/>
 
 ### Associations d'utilisateur d'api au rôle {#api-user-to-jup-role-updated-bies}
 
-
+Une association d'utilisateur d'API au rôle permet de définir les permissions d'accès aux fonctionnalités de l'API pour un utilisateur spécifique
 
 *Nom technique:* ```apiUserToJupRoleUpdatedBies```
 <PH code="userCompany:apiUserToJupRoleUpdatedBies"/>
@@ -240,47 +282,173 @@ L'association entre un point et un espace permet de conserver l'ordre des points
 *Nom technique:* ```roomPointRoomUpdatedBies```
 <PH code="userCompany:roomPointRoomUpdatedBies"/>
 
-### Associations groupes de typologies d'espace à typologies d'espace {#room-type-group-to-room-type-created-bies}
+### Associations groupe de typologie d'espace à typologie d'espace {#room-type-group-to-room-type-created-bies}
 
-
+Une association groupe de typologie d'espace à typologie d'espace permet de définir quels types d'espaces appartiennent à quels groupes
 
 *Nom technique:* ```roomTypeGroupToRoomTypeCreatedBies```
 <PH code="userCompany:roomTypeGroupToRoomTypeCreatedBies"/>
 
-### Associations groupes de typologies d'espace à typologies d'espace {#room-type-group-to-room-type-updated-bies}
+### Associations groupe de typologie d'espace à typologie d'espace {#room-type-group-to-room-type-updated-bies}
 
-
+Une association groupe de typologie d'espace à typologie d'espace permet de définir quels types d'espaces appartiennent à quels groupes
 
 *Nom technique:* ```roomTypeGroupToRoomTypeUpdatedBies```
 <PH code="userCompany:roomTypeGroupToRoomTypeUpdatedBies"/>
 
+### Associations groupe de typologie d'espace aux bâtiments {#room-type-group-building-created-bies}
+
+Une association groupe de typologie d'espace aux bâtiments permet de définir les groupes de types d'espaces disponibles dans chaque bâtiment
+
+*Nom technique:* ```roomTypeGroupBuildingCreatedBies```
+<PH code="userCompany:roomTypeGroupBuildingCreatedBies"/>
+
+### Associations groupe de typologie d'espace aux bâtiments {#room-type-group-building-updated-bies}
+
+Une association groupe de typologie d'espace aux bâtiments permet de définir les groupes de types d'espaces disponibles dans chaque bâtiment
+
+*Nom technique:* ```roomTypeGroupBuildingUpdatedBies```
+<PH code="userCompany:roomTypeGroupBuildingUpdatedBies"/>
+
+### Associations groupe de typologie d'espace aux étages {#room-type-group-floor-created-bies}
+
+Une association groupe de typologie d'espace aux étages permet de définir les groupes de types d'espaces disponibles dans chaque étage
+
+*Nom technique:* ```roomTypeGroupFloorCreatedBies```
+<PH code="userCompany:roomTypeGroupFloorCreatedBies"/>
+
+### Associations groupe de typologie d'espace aux étages {#room-type-group-floor-updated-bies}
+
+Une association groupe de typologie d'espace aux étages permet de définir les groupes de types d'espaces disponibles dans chaque étage
+
+*Nom technique:* ```roomTypeGroupFloorUpdatedBies```
+<PH code="userCompany:roomTypeGroupFloorUpdatedBies"/>
+
+### Associations organisation aux bâtiments {#organization-building-created-bies}
+
+Une association organisation aux bâtiments permet de définir les organisations responsables de chaque bâtiment
+
+*Nom technique:* ```organizationBuildingCreatedBies```
+<PH code="userCompany:organizationBuildingCreatedBies"/>
+
+### Associations organisation aux bâtiments {#organization-building-updated-bies}
+
+Une association organisation aux bâtiments permet de définir les organisations responsables de chaque bâtiment
+
+*Nom technique:* ```organizationBuildingUpdatedBies```
+<PH code="userCompany:organizationBuildingUpdatedBies"/>
+
+### Associations organisation aux étages {#organization-floor-created-bies}
+
+Une association organisation aux étages permet de définir les organisations responsables de chaque étage
+
+*Nom technique:* ```organizationFloorCreatedBies```
+<PH code="userCompany:organizationFloorCreatedBies"/>
+
+### Associations organisation aux étages {#organization-floor-updated-bies}
+
+Une association organisation aux étages permet de définir les organisations responsables de chaque étage
+
+*Nom technique:* ```organizationFloorUpdatedBies```
+<PH code="userCompany:organizationFloorUpdatedBies"/>
+
+### Associations rôle de contenu à l'utilisateur de l'entreprise {#content-role-to-user-companies}
+
+Une association rôle de contenu à l'utilisateur de l'entreprise permet de définir les permissions d'accès spécifiques aux utilisateurs de l'entreprise pour un rôle donné
+
+*Nom technique:* ```contentRoleToUserCompanies```
+<PH code="userCompany:contentRoleToUserCompanies"/>
+
+### Associations rôle de contenu à l'utilisateur de l'entreprise {#content-role-to-user-company-created-bies}
+
+Une association rôle de contenu à l'utilisateur de l'entreprise permet de définir les permissions d'accès spécifiques aux utilisateurs de l'entreprise pour un rôle donné
+
+*Nom technique:* ```contentRoleToUserCompanyCreatedBies```
+<PH code="userCompany:contentRoleToUserCompanyCreatedBies"/>
+
+### Associations rôle de contenu à l'utilisateur de l'entreprise {#content-role-to-user-company-updated-bies}
+
+Une association rôle de contenu à l'utilisateur de l'entreprise permet de définir les permissions d'accès spécifiques aux utilisateurs de l'entreprise pour un rôle donné
+
+*Nom technique:* ```contentRoleToUserCompanyUpdatedBies```
+<PH code="userCompany:contentRoleToUserCompanyUpdatedBies"/>
+
 ### Associations rôle de contenu aux bâtiments {#content-role-to-building-created-bies}
 
-
+Une association rôle de contenu aux bâtiments permet de définir les permissions d'accès spécifiques aux bâtiments pour un rôle donné
 
 *Nom technique:* ```contentRoleToBuildingCreatedBies```
 <PH code="userCompany:contentRoleToBuildingCreatedBies"/>
 
 ### Associations rôle de contenu aux bâtiments {#content-role-to-building-updated-bies}
 
-
+Une association rôle de contenu aux bâtiments permet de définir les permissions d'accès spécifiques aux bâtiments pour un rôle donné
 
 *Nom technique:* ```contentRoleToBuildingUpdatedBies```
 <PH code="userCompany:contentRoleToBuildingUpdatedBies"/>
 
 ### Associations rôle de contenu aux étages {#content-role-to-floor-created-bies}
 
-
+Une association rôle de contenu aux étages permet de définir les permissions d'accès spécifiques aux étages pour un rôle donné
 
 *Nom technique:* ```contentRoleToFloorCreatedBies```
 <PH code="userCompany:contentRoleToFloorCreatedBies"/>
 
 ### Associations rôle de contenu aux étages {#content-role-to-floor-updated-bies}
 
-
+Une association rôle de contenu aux étages permet de définir les permissions d'accès spécifiques aux étages pour un rôle donné
 
 *Nom technique:* ```contentRoleToFloorUpdatedBies```
 <PH code="userCompany:contentRoleToFloorUpdatedBies"/>
+
+### Associations typologie d'espace aux bâtiments {#room-type-building-created-bies}
+
+Une association typologie d'espace aux bâtiments permet de définir les types d'espaces disponibles dans chaque bâtiment
+
+*Nom technique:* ```roomTypeBuildingCreatedBies```
+<PH code="userCompany:roomTypeBuildingCreatedBies"/>
+
+### Associations typologie d'espace aux bâtiments {#room-type-building-updated-bies}
+
+Une association typologie d'espace aux bâtiments permet de définir les types d'espaces disponibles dans chaque bâtiment
+
+*Nom technique:* ```roomTypeBuildingUpdatedBies```
+<PH code="userCompany:roomTypeBuildingUpdatedBies"/>
+
+### Associations typologie d'espace aux étages {#room-type-floor-created-bies}
+
+Une association typologie d'espace aux étages permet de définir les types d'espaces disponibles dans chaque étage
+
+*Nom technique:* ```roomTypeFloorCreatedBies```
+<PH code="userCompany:roomTypeFloorCreatedBies"/>
+
+### Associations typologie d'espace aux étages {#room-type-floor-updated-bies}
+
+Une association typologie d'espace aux étages permet de définir les types d'espaces disponibles dans chaque étage
+
+*Nom technique:* ```roomTypeFloorUpdatedBies```
+<PH code="userCompany:roomTypeFloorUpdatedBies"/>
+
+### Associations utilisateur de l'entreprise au rôle {#jup-user-company-to-jup-roles}
+
+Une association utilisateur de l'entreprise au rôle permet de définir les permissions d'accès aux fonctionnalités pour un utilisateur spécifique de l'entreprise
+
+*Nom technique:* ```jupUserCompanyToJupRoles```
+<PH code="userCompany:jupUserCompanyToJupRoles"/>
+
+### Associations utilisateur de l'entreprise au rôle {#jup-user-company-to-jup-role-created-bies}
+
+Une association utilisateur de l'entreprise au rôle permet de définir les permissions d'accès aux fonctionnalités pour un utilisateur spécifique de l'entreprise
+
+*Nom technique:* ```jupUserCompanyToJupRoleCreatedBies```
+<PH code="userCompany:jupUserCompanyToJupRoleCreatedBies"/>
+
+### Associations utilisateur de l'entreprise au rôle {#jup-user-company-to-jup-role-updated-bies}
+
+Une association utilisateur de l'entreprise au rôle permet de définir les permissions d'accès aux fonctionnalités pour un utilisateur spécifique de l'entreprise
+
+*Nom technique:* ```jupUserCompanyToJupRoleUpdatedBies```
+<PH code="userCompany:jupUserCompanyToJupRoleUpdatedBies"/>
 
 ### Bâtiments {#building-created-bies}
 
@@ -305,59 +473,17 @@ Bâtiments dont l'utilisateur est le propriétaire
 
 ### Calques d'analyse {#dimension-created-bies}
 
-
+Un calque d'analyse permet de catégoriser et analyser les espaces selon différents critères pour des analyses statistiques et de reporting
 
 *Nom technique:* ```dimensionCreatedBies```
 <PH code="userCompany:dimensionCreatedBies"/>
 
 ### Calques d'analyse {#dimension-updated-bies}
 
-
+Un calque d'analyse permet de catégoriser et analyser les espaces selon différents critères pour des analyses statistiques et de reporting
 
 *Nom technique:* ```dimensionUpdatedBies```
 <PH code="userCompany:dimensionUpdatedBies"/>
-
-### Calques d'analyse des espaces {#dimension-room-created-bies}
-
-
-
-*Nom technique:* ```dimensionRoomCreatedBies```
-<PH code="userCompany:dimensionRoomCreatedBies"/>
-
-### Calques d'analyse des espaces {#dimension-room-updated-bies}
-
-
-
-*Nom technique:* ```dimensionRoomUpdatedBies```
-<PH code="userCompany:dimensionRoomUpdatedBies"/>
-
-### Calques d'analyse par bâtiment {#dimension-building-created-bies}
-
-
-
-*Nom technique:* ```dimensionBuildingCreatedBies```
-<PH code="userCompany:dimensionBuildingCreatedBies"/>
-
-### Calques d'analyse par bâtiment {#dimension-building-updated-bies}
-
-
-
-*Nom technique:* ```dimensionBuildingUpdatedBies```
-<PH code="userCompany:dimensionBuildingUpdatedBies"/>
-
-### Calques d'analyse par étage {#dimension-floor-created-bies}
-
-
-
-*Nom technique:* ```dimensionFloorCreatedBies```
-<PH code="userCompany:dimensionFloorCreatedBies"/>
-
-### Calques d'analyse par étage {#dimension-floor-updated-bies}
-
-
-
-*Nom technique:* ```dimensionFloorUpdatedBies```
-<PH code="userCompany:dimensionFloorUpdatedBies"/>
 
 ### Campus {#campus-created-bies}
 
@@ -387,44 +513,16 @@ Le centre de coût permet de répartir les espaces dynamiquement pour la refactu
 *Nom technique:* ```costCenterUpdatedBies```
 <PH code="userCompany:costCenterUpdatedBies"/>
 
-### Centres de coût des bâtiments {#cost-center-building-created-bies}
-
-
-
-*Nom technique:* ```costCenterBuildingCreatedBies```
-<PH code="userCompany:costCenterBuildingCreatedBies"/>
-
-### Centres de coût des bâtiments {#cost-center-building-updated-bies}
-
-
-
-*Nom technique:* ```costCenterBuildingUpdatedBies```
-<PH code="userCompany:costCenterBuildingUpdatedBies"/>
-
-### Centres de coût des étages {#cost-center-floor-created-bies}
-
-
-
-*Nom technique:* ```costCenterFloorCreatedBies```
-<PH code="userCompany:costCenterFloorCreatedBies"/>
-
-### Centres de coût des étages {#cost-center-floor-updated-bies}
-
-
-
-*Nom technique:* ```costCenterFloorUpdatedBies```
-<PH code="userCompany:costCenterFloorUpdatedBies"/>
-
 ### Clés d'api partenaire {#partner-api-credential-created-bies}
 
-
+Une clé d'API partenaire permet d'authentifier et d'autoriser l'accès aux API pour les partenaires externes
 
 *Nom technique:* ```partnerApiCredentialCreatedBies```
 <PH code="userCompany:partnerApiCredentialCreatedBies"/>
 
 ### Clés d'api partenaire {#partner-api-credential-updated-bies}
 
-
+Une clé d'API partenaire permet d'authentifier et d'autoriser l'accès aux API pour les partenaires externes
 
 *Nom technique:* ```partnerApiCredentialUpdatedBies```
 <PH code="userCompany:partnerApiCredentialUpdatedBies"/>
@@ -459,14 +557,14 @@ Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces d
 
 ### Échelles plan {#map-scale-created-bies}
 
-
+Une échelle de plan permet de définir les paramètres d'affichage et de mise à l'échelle pour les plans
 
 *Nom technique:* ```mapScaleCreatedBies```
 <PH code="userCompany:mapScaleCreatedBies"/>
 
 ### Échelles plan {#map-scale-updated-bies}
 
-
+Une échelle de plan permet de définir les paramètres d'affichage et de mise à l'échelle pour les plans
 
 *Nom technique:* ```mapScaleUpdatedBies```
 <PH code="userCompany:mapScaleUpdatedBies"/>
@@ -557,31 +655,45 @@ Les étages represent un plateau de travail ou un niveau d'un bâtiment
 
 ### Fabricants du type d'objet {#manufacturer-created-bies}
 
-
+Un fabricant représente une entreprise ou une marque qui produit des objets ou équipements
 
 *Nom technique:* ```manufacturerCreatedBies```
 <PH code="userCompany:manufacturerCreatedBies"/>
 
 ### Fabricants du type d'objet {#manufacturer-updated-bies}
 
-
+Un fabricant représente une entreprise ou une marque qui produit des objets ou équipements
 
 *Nom technique:* ```manufacturerUpdatedBies```
 <PH code="userCompany:manufacturerUpdatedBies"/>
 
 ### Faits {#fact-created-bies}
 
-
+Un fait représente une donnée factuelle ou un événement enregistré dans le système pour des analyses et des rapports
 
 *Nom technique:* ```factCreatedBies```
 <PH code="userCompany:factCreatedBies"/>
 
 ### Faits {#fact-updated-bies}
 
-
+Un fait représente une donnée factuelle ou un événement enregistré dans le système pour des analyses et des rapports
 
 *Nom technique:* ```factUpdatedBies```
 <PH code="userCompany:factUpdatedBies"/>
+
+### Familles de fonctionnalités {#feature-family-created-bies}
+
+Une famille de fonctionnalités permet de regrouper des fonctionnalités liées selon leur domaine ou leur usage
+
+*Nom technique:* ```featureFamilyCreatedBies```
+<PH code="userCompany:featureFamilyCreatedBies"/>
+
+### Familles de fonctionnalités {#feature-family-updated-bies}
+
+Une famille de fonctionnalités permet de regrouper des fonctionnalités liées selon leur domaine ou leur usage
+
+*Nom technique:* ```featureFamilyUpdatedBies```
+<PH code="userCompany:featureFamilyUpdatedBies"/>
 
 ### Familles de types d'objet {#item-type-family-created-bies}
 
@@ -597,33 +709,19 @@ Permet d’afficher les objets par Famille sur les plans et dans l’inventaire 
 *Nom technique:* ```itemTypeFamilyUpdatedBies```
 <PH code="userCompany:itemTypeFamilyUpdatedBies"/>
 
-### Groupes de typologies d'espace des bâtiments {#room-type-group-building-created-bies}
+### Fonctionnalités {#feature-created-bies}
 
+Une fonctionnalité représente une caractéristique ou une capacité spécifique disponible dans le système
 
+*Nom technique:* ```featureCreatedBies```
+<PH code="userCompany:featureCreatedBies"/>
 
-*Nom technique:* ```roomTypeGroupBuildingCreatedBies```
-<PH code="userCompany:roomTypeGroupBuildingCreatedBies"/>
+### Fonctionnalités {#feature-updated-bies}
 
-### Groupes de typologies d'espace des bâtiments {#room-type-group-building-updated-bies}
+Une fonctionnalité représente une caractéristique ou une capacité spécifique disponible dans le système
 
-
-
-*Nom technique:* ```roomTypeGroupBuildingUpdatedBies```
-<PH code="userCompany:roomTypeGroupBuildingUpdatedBies"/>
-
-### Groupes de typologies d'espace des étages {#room-type-group-floor-created-bies}
-
-
-
-*Nom technique:* ```roomTypeGroupFloorCreatedBies```
-<PH code="userCompany:roomTypeGroupFloorCreatedBies"/>
-
-### Groupes de typologies d'espace des étages {#room-type-group-floor-updated-bies}
-
-
-
-*Nom technique:* ```roomTypeGroupFloorUpdatedBies```
-<PH code="userCompany:roomTypeGroupFloorUpdatedBies"/>
+*Nom technique:* ```featureUpdatedBies```
+<PH code="userCompany:featureUpdatedBies"/>
 
 ### Hôtes de messages pour fenêtre contextuelle {#opener-post-message-host-created-bies}
 
@@ -669,42 +767,42 @@ La légende permet de configurer les propriété visible quand le plan est sauve
 
 ### Mouvements d'objet {#item-fact-created-bies}
 
-
+Un mouvement d'objet enregistre les déplacements ou changements de statut d'un objet dans le système
 
 *Nom technique:* ```itemFactCreatedBies```
 <PH code="userCompany:itemFactCreatedBies"/>
 
 ### Mouvements d'objet {#item-fact-updated-bies}
 
-
+Un mouvement d'objet enregistre les déplacements ou changements de statut d'un objet dans le système
 
 *Nom technique:* ```itemFactUpdatedBies```
 <PH code="userCompany:itemFactUpdatedBies"/>
 
 ### Objets {#item-created-bies}
 
-
+Un objet représente un élément physique ou matériel présent dans les espaces de travail
 
 *Nom technique:* ```itemCreatedBies```
 <PH code="userCompany:itemCreatedBies"/>
 
 ### Objets {#item-updated-bies}
 
-
+Un objet représente un élément physique ou matériel présent dans les espaces de travail
 
 *Nom technique:* ```itemUpdatedBies```
 <PH code="userCompany:itemUpdatedBies"/>
 
 ### Opérations d'interface pour une entreprise {#jup-ui-tenant-operation-created-bies}
 
-
+Une opération d'interface pour une entreprise définit les actions et fonctionnalités spécifiques disponibles pour une entreprise dans l'interface utilisateur
 
 *Nom technique:* ```jupUiTenantOperationCreatedBies```
 <PH code="userCompany:jupUiTenantOperationCreatedBies"/>
 
 ### Opérations d'interface pour une entreprise {#jup-ui-tenant-operation-updated-bies}
 
-
+Une opération d'interface pour une entreprise définit les actions et fonctionnalités spécifiques disponibles pour une entreprise dans l'interface utilisateur
 
 *Nom technique:* ```jupUiTenantOperationUpdatedBies```
 <PH code="userCompany:jupUiTenantOperationUpdatedBies"/>
@@ -723,34 +821,6 @@ Les organisations ont deux niveaux hiérarchiques : les directions et les servic
 *Nom technique:* ```organizationUpdatedBies```
 <PH code="userCompany:organizationUpdatedBies"/>
 
-### Organisations des bâtiments {#organization-building-created-bies}
-
-
-
-*Nom technique:* ```organizationBuildingCreatedBies```
-<PH code="userCompany:organizationBuildingCreatedBies"/>
-
-### Organisations des bâtiments {#organization-building-updated-bies}
-
-
-
-*Nom technique:* ```organizationBuildingUpdatedBies```
-<PH code="userCompany:organizationBuildingUpdatedBies"/>
-
-### Organisations des étages {#organization-floor-created-bies}
-
-
-
-*Nom technique:* ```organizationFloorCreatedBies```
-<PH code="userCompany:organizationFloorCreatedBies"/>
-
-### Organisations des étages {#organization-floor-updated-bies}
-
-
-
-*Nom technique:* ```organizationFloorUpdatedBies```
-<PH code="userCompany:organizationFloorUpdatedBies"/>
-
 ### Personnes {#person-created-bies}
 
 Ce sont les personnes entrées dans la base de données de Surfy
@@ -767,28 +837,28 @@ Ce sont les personnes entrées dans la base de données de Surfy
 
 ### Points des espaces {#room-point-created-bies}
 
-
+Un point des espaces définit les coordonnées géométriques pour dessiner le contour d'un espace
 
 *Nom technique:* ```roomPointCreatedBies```
 <PH code="userCompany:roomPointCreatedBies"/>
 
 ### Points des espaces {#room-point-updated-bies}
 
-
+Un point des espaces définit les coordonnées géométriques pour dessiner le contour d'un espace
 
 *Nom technique:* ```roomPointUpdatedBies```
 <PH code="userCompany:roomPointUpdatedBies"/>
 
 ### Points des types d'objet {#item-type-point-created-bies}
 
-
+Un point des types d'objet permet de définir des positions spécifiques pour les types d'objets sur les plans
 
 *Nom technique:* ```itemTypePointCreatedBies```
 <PH code="userCompany:itemTypePointCreatedBies"/>
 
 ### Points des types d'objet {#item-type-point-updated-bies}
 
-
+Un point des types d'objet permet de définir des positions spécifiques pour les types d'objets sur les plans
 
 *Nom technique:* ```itemTypePointUpdatedBies```
 <PH code="userCompany:itemTypePointUpdatedBies"/>
@@ -823,14 +893,14 @@ Permet de définir les différents profils sécurité associables à des personn
 
 ### Qualifications de segments {#room-point-segment-created-bies}
 
-
+Une qualification de segment permet de définir les propriétés d'affichage et d'orientation d'un segment entre deux points d'espace
 
 *Nom technique:* ```roomPointSegmentCreatedBies```
 <PH code="userCompany:roomPointSegmentCreatedBies"/>
 
 ### Qualifications de segments {#room-point-segment-updated-bies}
 
-
+Une qualification de segment permet de définir les propriétés d'affichage et d'orientation d'un segment entre deux points d'espace
 
 *Nom technique:* ```roomPointSegmentUpdatedBies```
 <PH code="userCompany:roomPointSegmentUpdatedBies"/>
@@ -851,14 +921,14 @@ Permet de définir les différents profils sécurité associables à des personn
 
 ### Relations personne à personne {#person-to-person-created-bies}
 
-
+Une relation personne à personne permet de définir les liens hiérarchiques ou organisationnels entre les personnes
 
 *Nom technique:* ```personToPersonCreatedBies```
 <PH code="userCompany:personToPersonCreatedBies"/>
 
 ### Relations personne à personne {#person-to-person-updated-bies}
 
-
+Une relation personne à personne permet de définir les liens hiérarchiques ou organisationnels entre les personnes
 
 *Nom technique:* ```personToPersonUpdatedBies```
 <PH code="userCompany:personToPersonUpdatedBies"/>
@@ -907,59 +977,17 @@ Les réservations des postes de travail des personnes sont enregistrées et disp
 
 ### Rôles de contenu {#content-role-created-bies}
 
-
+Un rôle de contenu définit les permissions d'accès aux différentes données de la plateforme pour les utilisateurs
 
 *Nom technique:* ```contentRoleCreatedBies```
 <PH code="userCompany:contentRoleCreatedBies"/>
 
 ### Rôles de contenu {#content-role-updated-bies}
 
-
+Un rôle de contenu définit les permissions d'accès aux différentes données de la plateforme pour les utilisateurs
 
 *Nom technique:* ```contentRoleUpdatedBies```
 <PH code="userCompany:contentRoleUpdatedBies"/>
-
-### Rôles de contenu de l'utilisateur de l'entreprise {#content-role-to-user-companies}
-
-
-
-*Nom technique:* ```contentRoleToUserCompanies```
-<PH code="userCompany:contentRoleToUserCompanies"/>
-
-### Rôles de contenu de l'utilisateur de l'entreprise {#content-role-to-user-company-created-bies}
-
-
-
-*Nom technique:* ```contentRoleToUserCompanyCreatedBies```
-<PH code="userCompany:contentRoleToUserCompanyCreatedBies"/>
-
-### Rôles de contenu de l'utilisateur de l'entreprise {#content-role-to-user-company-updated-bies}
-
-
-
-*Nom technique:* ```contentRoleToUserCompanyUpdatedBies```
-<PH code="userCompany:contentRoleToUserCompanyUpdatedBies"/>
-
-### Rôles de l'utilisateur de l'entreprise {#jup-user-company-to-jup-roles}
-
-
-
-*Nom technique:* ```jupUserCompanyToJupRoles```
-<PH code="userCompany:jupUserCompanyToJupRoles"/>
-
-### Rôles de l'utilisateur de l'entreprise {#jup-user-company-to-jup-role-created-bies}
-
-
-
-*Nom technique:* ```jupUserCompanyToJupRoleCreatedBies```
-<PH code="userCompany:jupUserCompanyToJupRoleCreatedBies"/>
-
-### Rôles de l'utilisateur de l'entreprise {#jup-user-company-to-jup-role-updated-bies}
-
-
-
-*Nom technique:* ```jupUserCompanyToJupRoleUpdatedBies```
-<PH code="userCompany:jupUserCompanyToJupRoleUpdatedBies"/>
 
 ### Statut des personnes {#person-state-created-bies}
 
@@ -977,14 +1005,14 @@ Permet de définir tous les types de contrat des personnes vis à vis de l'entre
 
 ### Structures {#structure-created-bies}
 
-
+Une structure définit une forme géométrique qui peut être utilisée pour calibrer et positionner des éléments sur des cartes
 
 *Nom technique:* ```structureCreatedBies```
 <PH code="userCompany:structureCreatedBies"/>
 
 ### Structures {#structure-updated-bies}
 
-
+Une structure définit une forme géométrique qui peut être utilisée pour calibrer et positionner des éléments sur des cartes
 
 *Nom technique:* ```structureUpdatedBies```
 <PH code="userCompany:structureUpdatedBies"/>
@@ -1033,14 +1061,14 @@ Les types d'espaces des prestataires permettent de définir une relation entre u
 
 ### Types d'objet {#item-type-created-bies}
 
-
+Un type d'objet permet de catégoriser et définir les caractéristiques des objets physiques présents dans les espaces de travail
 
 *Nom technique:* ```itemTypeCreatedBies```
 <PH code="userCompany:itemTypeCreatedBies"/>
 
 ### Types d'objet {#item-type-updated-bies}
 
-
+Un type d'objet permet de catégoriser et définir les caractéristiques des objets physiques présents dans les espaces de travail
 
 *Nom technique:* ```itemTypeUpdatedBies```
 <PH code="userCompany:itemTypeUpdatedBies"/>
@@ -1075,28 +1103,28 @@ Les types d'objets des prestataires permettent de définir une relation entre le
 
 ### Types de bâtiments {#building-type-created-bies}
 
-
+Un type de bâtiment permet de catégoriser les bâtiments selon leur usage
 
 *Nom technique:* ```buildingTypeCreatedBies```
 <PH code="userCompany:buildingTypeCreatedBies"/>
 
 ### Types de bâtiments {#building-type-updated-bies}
 
-
+Un type de bâtiment permet de catégoriser les bâtiments selon leur usage
 
 *Nom technique:* ```buildingTypeUpdatedBies```
 <PH code="userCompany:buildingTypeUpdatedBies"/>
 
 ### Types de calque {#dimension-type-created-bies}
 
-
+Un type de calque permet de catégoriser les calques d'analyse selon leur usage ou leur domaine d'application
 
 *Nom technique:* ```dimensionTypeCreatedBies```
 <PH code="userCompany:dimensionTypeCreatedBies"/>
 
 ### Types de calque {#dimension-type-updated-bies}
 
-
+Un type de calque permet de catégoriser les calques d'analyse selon leur usage ou leur domaine d'application
 
 *Nom technique:* ```dimensionTypeUpdatedBies```
 <PH code="userCompany:dimensionTypeUpdatedBies"/>
@@ -1117,28 +1145,28 @@ Les types de calques d'affectation du bâtiment permettent de définir les diff�
 
 ### Types de distribution des coûts {#distribution-cost-type-created-bies}
 
-
+Un type de distribution des coûts permet de définir les méthodes de répartition des coûts entre les différents centres de coût
 
 *Nom technique:* ```distributionCostTypeCreatedBies```
 <PH code="userCompany:distributionCostTypeCreatedBies"/>
 
 ### Types de distribution des coûts {#distribution-cost-type-updated-bies}
 
-
+Un type de distribution des coûts permet de définir les méthodes de répartition des coûts entre les différents centres de coût
 
 *Nom technique:* ```distributionCostTypeUpdatedBies```
 <PH code="userCompany:distributionCostTypeUpdatedBies"/>
 
 ### Types de Fait {#fact-type-created-bies}
 
-
+Un type de fait permet de catégoriser les différents types de données factuelles ou d'événements enregistrés dans le système
 
 *Nom technique:* ```factTypeCreatedBies```
 <PH code="userCompany:factTypeCreatedBies"/>
 
 ### Types de Fait {#fact-type-updated-bies}
 
-
+Un type de fait permet de catégoriser les différents types de données factuelles ou d'événements enregistrés dans le système
 
 *Nom technique:* ```factTypeUpdatedBies```
 <PH code="userCompany:factTypeUpdatedBies"/>
@@ -1159,14 +1187,14 @@ Les types de calques d'affectation du bâtiment permettent de définir les diff�
 
 ### Types de relation entre personnes {#person-to-person-type-created-bies}
 
-
+Un type de relation entre personnes définit les différents types de liens qui peuvent exister entre les personnes
 
 *Nom technique:* ```personToPersonTypeCreatedBies```
 <PH code="userCompany:personToPersonTypeCreatedBies"/>
 
 ### Types de relation entre personnes {#person-to-person-type-updated-bies}
 
-
+Un type de relation entre personnes définit les différents types de liens qui peuvent exister entre les personnes
 
 *Nom technique:* ```personToPersonTypeUpdatedBies```
 <PH code="userCompany:personToPersonTypeUpdatedBies"/>
@@ -1184,34 +1212,6 @@ Les types de calques d'affectation du bâtiment permettent de définir les diff�
 
 *Nom technique:* ```roomTypeUpdatedBies```
 <PH code="userCompany:roomTypeUpdatedBies"/>
-
-### Typologies d'espace des bâtiments {#room-type-building-created-bies}
-
-
-
-*Nom technique:* ```roomTypeBuildingCreatedBies```
-<PH code="userCompany:roomTypeBuildingCreatedBies"/>
-
-### Typologies d'espace des bâtiments {#room-type-building-updated-bies}
-
-
-
-*Nom technique:* ```roomTypeBuildingUpdatedBies```
-<PH code="userCompany:roomTypeBuildingUpdatedBies"/>
-
-### Typologies d'espace des étages {#room-type-floor-created-bies}
-
-
-
-*Nom technique:* ```roomTypeFloorCreatedBies```
-<PH code="userCompany:roomTypeFloorCreatedBies"/>
-
-### Typologies d'espace des étages {#room-type-floor-updated-bies}
-
-
-
-*Nom technique:* ```roomTypeFloorUpdatedBies```
-<PH code="userCompany:roomTypeFloorUpdatedBies"/>
 
 ### Utilisateurs d'api {#api-user-created-bies}
 

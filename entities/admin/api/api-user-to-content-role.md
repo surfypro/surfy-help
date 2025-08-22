@@ -15,7 +15,7 @@
 
 ### Rôle de contenu {#content-role}
 
-
+Un rôle de contenu définit les permissions d'accès aux différentes données de la plateforme pour les utilisateurs
 
 *Nom technique:* ```contentRole```
 <PH code="apiUserToContentRole:contentRole"/>

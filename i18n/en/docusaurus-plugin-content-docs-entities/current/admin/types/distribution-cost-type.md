@@ -1,7 +1,7 @@
 # Type of cost distribution
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+A cost distribution type allows you to define the methods for distributing costs between different cost centers
 
 <OH code="distributionCostType"/>
 

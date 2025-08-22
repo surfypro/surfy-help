@@ -1,7 +1,7 @@
-# Analysis layer by building
+# Association of analysis layer to buildings
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+An analysis layer association with buildings allows you to define specific analysis layers for each building
 
 <OH code="dimensionBuilding"/>
 
@@ -145,7 +145,7 @@ The total seat capacity is the sum of the number of seats and the non-seated cap
 
 ### Total number of assignments {#total-people-count}
 
-The total number of people assigned, either directly assigned to spaces, or through a workstation, or via an assignment layer
+The total number of people assigned, either directly assigned to spaces or through a workstation
 
 *Technical name:* ```totalPeopleCount```
 <PH code="dimensionBuilding:totalPeopleCount"/>
@@ -165,7 +165,7 @@ The workstation ratio is the number of square meters divided by the number of wo
 
 ### Analysis layer {#dimension}
 
-
+An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses.
 
 *Technical name:* ```dimension```
 <PH code="dimensionBuilding:dimension"/>
@@ -179,7 +179,7 @@ The building is used to group the floors
 
 ### Layer type {#dimension-type}
 
-
+A layer type allows you to categorize analysis layers according to their use or area of application.
 
 *Technical name:* ```dimensionType```
 <PH code="dimensionBuilding:dimensionType"/>

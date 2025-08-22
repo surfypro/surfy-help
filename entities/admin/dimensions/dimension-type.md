@@ -1,7 +1,7 @@
 # Type de calque
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Un type de calque permet de catégoriser les calques d'analyse selon leur usage ou leur domaine d'application
 
 <OH code="dimensionType"/>
 
@@ -49,33 +49,33 @@ Permet de trier les types de calque pour les afficher
 
 ## Entités associées (liste) {#properties-has-many}
 
-### Calques d'analyse {#dimensions}
+### Associations calque d'analyse aux bâtiments {#dimension-buildings}
 
-
-
-*Nom technique:* ```dimensions```
-<PH code="dimensionType:dimensions"/>
-
-### Calques d'analyse des espaces {#dimension-rooms}
-
-
-
-*Nom technique:* ```dimensionRooms```
-<PH code="dimensionType:dimensionRooms"/>
-
-### Calques d'analyse par bâtiment {#dimension-buildings}
-
-
+Une association calque d'analyse aux bâtiments permet de définir les calques d'analyse spécifiques pour chaque bâtiment
 
 *Nom technique:* ```dimensionBuildings```
 <PH code="dimensionType:dimensionBuildings"/>
 
-### Calques d'analyse par étage {#dimension-floors}
+### Associations calque d'analyse aux espaces {#dimension-rooms}
 
+Une association calque d'analyse aux espaces permet de définir les calques d'analyse spécifiques pour chaque espace
 
+*Nom technique:* ```dimensionRooms```
+<PH code="dimensionType:dimensionRooms"/>
+
+### Associations calque d'analyse aux étages {#dimension-floors}
+
+Une association calque d'analyse aux étages permet de définir les calques d'analyse spécifiques pour chaque étage
 
 *Nom technique:* ```dimensionFloors```
 <PH code="dimensionType:dimensionFloors"/>
+
+### Calques d'analyse {#dimensions}
+
+Un calque d'analyse permet de catégoriser et analyser les espaces selon différents critères pour des analyses statistiques et de reporting
+
+*Nom technique:* ```dimensions```
+<PH code="dimensionType:dimensions"/>
 
 ### Types de calques d'affectation du bâtiment {#dimension-type-to-buildings}
 

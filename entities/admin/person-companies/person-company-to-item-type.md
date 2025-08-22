@@ -29,7 +29,7 @@ Les missions des prestataires permettent de connaitre le domaine d'intervention 
 
 ### Type d'objet {#item-type}
 
-
+Un type d'objet permet de catégoriser et définir les caractéristiques des objets physiques présents dans les espaces de travail
 
 *Nom technique:* ```itemType```
 <PH code="personCompanyToItemType:itemType"/>

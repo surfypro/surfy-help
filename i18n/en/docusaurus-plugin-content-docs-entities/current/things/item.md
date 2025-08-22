@@ -1,7 +1,7 @@
 # Object
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+An object represents a physical or material element present in workspaces
 
 <OH code="item"/>
 
@@ -75,19 +75,19 @@ The purchase price of the item if it is different from the price of the item typ
 
 ## Associated entities (unique) {#properties-belongs-to}
 
-### Object space {#room}
+### Object type {#item-type}
+
+An object type allows you to categorize and define the characteristics of physical objects present in workspaces
+
+*Technical name:* ```itemType```
+<PH code="item:itemType"/>
+
+### Space {#room}
 
 Spaces are workplaces or areas in order to divide a floor into sub-spaces.
 
 *Technical name:* ```room```
 <PH code="item:room"/>
-
-### Object type {#item-type}
-
-
-
-*Technical name:* ```itemType```
-<PH code="item:itemType"/>
 
 ### Workplace {#workplace}
 
@@ -108,7 +108,7 @@ The interventions of service providers on objects make it possible to define, fo
 
 ### Object movements {#item-facts}
 
-
+An object movement records the movements or changes in status of an object in the system
 
 *Technical name:* ```itemFacts```
 <PH code="item:itemFacts"/>

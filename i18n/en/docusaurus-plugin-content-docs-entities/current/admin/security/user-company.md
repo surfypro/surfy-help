@@ -30,20 +30,6 @@ These are the people entered into Surfy's database
 
 ## Associated entities (list) {#properties-has-many}
 
-###  Feature Families {#feature-family-created-bies}
-
-
-
-*Technical name:* ```featureFamilyCreatedBies```
-<PH code="userCompany:featureFamilyCreatedBies"/>
-
-###  Feature Families {#feature-family-updated-bies}
-
-
-
-*Technical name:* ```featureFamilyUpdatedBies```
-<PH code="userCompany:featureFamilyUpdatedBies"/>
-
 ###  Feature Groups {#feature-group-created-bies}
 
 
@@ -57,20 +43,6 @@ These are the people entered into Surfy's database
 
 *Technical name:* ```featureGroupUpdatedBies```
 <PH code="userCompany:featureGroupUpdatedBies"/>
-
-###  Features {#feature-created-bies}
-
-
-
-*Technical name:* ```featureCreatedBies```
-<PH code="userCompany:featureCreatedBies"/>
-
-###  Features {#feature-updated-bies}
-
-
-
-*Technical name:* ```featureUpdatedBies```
-<PH code="userCompany:featureUpdatedBies"/>
 
 ###  Structure Points {#structure-point-created-bies}
 
@@ -86,47 +58,61 @@ These are the people entered into Surfy's database
 *Technical name:* ```structurePointUpdatedBies```
 <PH code="userCompany:structurePointUpdatedBies"/>
 
+### Analysis layer associations to buildings {#dimension-building-created-bies}
+
+An analysis layer association with buildings allows you to define specific analysis layers for each building
+
+*Technical name:* ```dimensionBuildingCreatedBies```
+<PH code="userCompany:dimensionBuildingCreatedBies"/>
+
+### Analysis layer associations to buildings {#dimension-building-updated-bies}
+
+An analysis layer association with buildings allows you to define specific analysis layers for each building
+
+*Technical name:* ```dimensionBuildingUpdatedBies```
+<PH code="userCompany:dimensionBuildingUpdatedBies"/>
+
+### Analysis layer associations to floors {#dimension-floor-created-bies}
+
+An analysis layer to floor association allows you to define specific analysis layers for each floor
+
+*Technical name:* ```dimensionFloorCreatedBies```
+<PH code="userCompany:dimensionFloorCreatedBies"/>
+
+### Analysis layer associations to floors {#dimension-floor-updated-bies}
+
+An analysis layer to floor association allows you to define specific analysis layers for each floor
+
+*Technical name:* ```dimensionFloorUpdatedBies```
+<PH code="userCompany:dimensionFloorUpdatedBies"/>
+
+### Analysis layer associations to spaces {#dimension-room-created-bies}
+
+An analysis layer association to spaces allows you to define specific analysis layers for each space
+
+*Technical name:* ```dimensionRoomCreatedBies```
+<PH code="userCompany:dimensionRoomCreatedBies"/>
+
+### Analysis layer associations to spaces {#dimension-room-updated-bies}
+
+An analysis layer association to spaces allows you to define specific analysis layers for each space
+
+*Technical name:* ```dimensionRoomUpdatedBies```
+<PH code="userCompany:dimensionRoomUpdatedBies"/>
+
 ### Analysis layers {#dimension-created-bies}
 
-
+An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses.
 
 *Technical name:* ```dimensionCreatedBies```
 <PH code="userCompany:dimensionCreatedBies"/>
 
 ### Analysis layers {#dimension-updated-bies}
 
-
+An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses.
 
 *Technical name:* ```dimensionUpdatedBies```
 <PH code="userCompany:dimensionUpdatedBies"/>
-
-### Analysis layers by building {#dimension-building-created-bies}
-
-
-
-*Technical name:* ```dimensionBuildingCreatedBies```
-<PH code="userCompany:dimensionBuildingCreatedBies"/>
-
-### Analysis layers by building {#dimension-building-updated-bies}
-
-
-
-*Technical name:* ```dimensionBuildingUpdatedBies```
-<PH code="userCompany:dimensionBuildingUpdatedBies"/>
-
-### Analysis layers per floor {#dimension-floor-created-bies}
-
-
-
-*Technical name:* ```dimensionFloorCreatedBies```
-<PH code="userCompany:dimensionFloorCreatedBies"/>
-
-### Analysis layers per floor {#dimension-floor-updated-bies}
-
-
-
-*Technical name:* ```dimensionFloorUpdatedBies```
-<PH code="userCompany:dimensionFloorUpdatedBies"/>
 
 ### API user associations to content role {#api-user-to-content-role-created-bies}
 
@@ -144,14 +130,14 @@ These are the people entered into Surfy's database
 
 ### API user associations to role {#api-user-to-jup-role-created-bies}
 
-
+An API user role association allows you to define access permissions to API features for a specific user
 
 *Technical name:* ```apiUserToJupRoleCreatedBies```
 <PH code="userCompany:apiUserToJupRoleCreatedBies"/>
 
 ### API user associations to role {#api-user-to-jup-role-updated-bies}
 
-
+An API user role association allows you to define access permissions to API features for a specific user
 
 *Technical name:* ```apiUserToJupRoleUpdatedBies```
 <PH code="userCompany:apiUserToJupRoleUpdatedBies"/>
@@ -212,19 +198,110 @@ The association between a point and a space makes it possible to preserve the or
 *Technical name:* ```roomPointRoomUpdatedBies```
 <PH code="userCompany:roomPointRoomUpdatedBies"/>
 
-### Associations groups of space typologies to space typologies {#room-type-group-to-room-type-created-bies}
+### Associations content role to enterprise user {#content-role-to-user-companies}
 
+A content role to enterprise user association allows you to define specific access permissions for enterprise users for a given role
 
+*Technical name:* ```contentRoleToUserCompanies```
+<PH code="userCompany:contentRoleToUserCompanies"/>
 
-*Technical name:* ```roomTypeGroupToRoomTypeCreatedBies```
-<PH code="userCompany:roomTypeGroupToRoomTypeCreatedBies"/>
+### Associations content role to enterprise user {#content-role-to-user-company-created-bies}
 
-### Associations groups of space typologies to space typologies {#room-type-group-to-room-type-updated-bies}
+A content role to enterprise user association allows you to define specific access permissions for enterprise users for a given role
 
+*Technical name:* ```contentRoleToUserCompanyCreatedBies```
+<PH code="userCompany:contentRoleToUserCompanyCreatedBies"/>
 
+### Associations content role to enterprise user {#content-role-to-user-company-updated-bies}
 
-*Technical name:* ```roomTypeGroupToRoomTypeUpdatedBies```
-<PH code="userCompany:roomTypeGroupToRoomTypeUpdatedBies"/>
+A content role to enterprise user association allows you to define specific access permissions for enterprise users for a given role
+
+*Technical name:* ```contentRoleToUserCompanyUpdatedBies```
+<PH code="userCompany:contentRoleToUserCompanyUpdatedBies"/>
+
+### Associations group of space typology on the floors {#room-type-group-floor-created-bies}
+
+A space typology group association on floors allows you to define the groups of space types available on each floor
+
+*Technical name:* ```roomTypeGroupFloorCreatedBies```
+<PH code="userCompany:roomTypeGroupFloorCreatedBies"/>
+
+### Associations group of space typology on the floors {#room-type-group-floor-updated-bies}
+
+A space typology group association on floors allows you to define the groups of space types available on each floor
+
+*Technical name:* ```roomTypeGroupFloorUpdatedBies```
+<PH code="userCompany:roomTypeGroupFloorUpdatedBies"/>
+
+### Associations of space typology group to buildings {#room-type-group-building-created-bies}
+
+A space typology group association with buildings allows you to define the groups of space types available in each building
+
+*Technical name:* ```roomTypeGroupBuildingCreatedBies```
+<PH code="userCompany:roomTypeGroupBuildingCreatedBies"/>
+
+### Associations of space typology group to buildings {#room-type-group-building-updated-bies}
+
+A space typology group association with buildings allows you to define the groups of space types available in each building
+
+*Technical name:* ```roomTypeGroupBuildingUpdatedBies```
+<PH code="userCompany:roomTypeGroupBuildingUpdatedBies"/>
+
+### Associations of space typology on the floors {#room-type-floor-created-bies}
+
+A space typology association with floors makes it possible to define the types of spaces available on each floor
+
+*Technical name:* ```roomTypeFloorCreatedBies```
+<PH code="userCompany:roomTypeFloorCreatedBies"/>
+
+### Associations of space typology on the floors {#room-type-floor-updated-bies}
+
+A space typology association with floors makes it possible to define the types of spaces available on each floor
+
+*Technical name:* ```roomTypeFloorUpdatedBies```
+<PH code="userCompany:roomTypeFloorUpdatedBies"/>
+
+### Associations of space typology with buildings {#room-type-building-created-bies}
+
+A space typology association with buildings makes it possible to define the types of spaces available in each building
+
+*Technical name:* ```roomTypeBuildingCreatedBies```
+<PH code="userCompany:roomTypeBuildingCreatedBies"/>
+
+### Associations of space typology with buildings {#room-type-building-updated-bies}
+
+A space typology association with buildings makes it possible to define the types of spaces available in each building
+
+*Technical name:* ```roomTypeBuildingUpdatedBies```
+<PH code="userCompany:roomTypeBuildingUpdatedBies"/>
+
+### Associations organization on the floors {#organization-floor-created-bies}
+
+An organizational association on floors allows you to define the organizations responsible for each floor
+
+*Technical name:* ```organizationFloorCreatedBies```
+<PH code="userCompany:organizationFloorCreatedBies"/>
+
+### Associations organization on the floors {#organization-floor-updated-bies}
+
+An organizational association on floors allows you to define the organizations responsible for each floor
+
+*Technical name:* ```organizationFloorUpdatedBies```
+<PH code="userCompany:organizationFloorUpdatedBies"/>
+
+### Associations organization to buildings {#organization-building-created-bies}
+
+An organization-building association allows you to define the organizations responsible for each building
+
+*Technical name:* ```organizationBuildingCreatedBies```
+<PH code="userCompany:organizationBuildingCreatedBies"/>
+
+### Associations organization to buildings {#organization-building-updated-bies}
+
+An organization-building association allows you to define the organizations responsible for each building
+
+*Technical name:* ```organizationBuildingUpdatedBies```
+<PH code="userCompany:organizationBuildingUpdatedBies"/>
 
 ### Authentication rule to content role associations {#user-registration-tenant-rule-to-content-role-created-bies}
 
@@ -282,48 +359,6 @@ Allows you to assign a person to a building, without additional information. The
 *Technical name:* ```personToBuildingUpdatedBies```
 <PH code="userCompany:personToBuildingUpdatedBies"/>
 
-### Building cost centers {#cost-center-building-created-bies}
-
-
-
-*Technical name:* ```costCenterBuildingCreatedBies```
-<PH code="userCompany:costCenterBuildingCreatedBies"/>
-
-### Building cost centers {#cost-center-building-updated-bies}
-
-
-
-*Technical name:* ```costCenterBuildingUpdatedBies```
-<PH code="userCompany:costCenterBuildingUpdatedBies"/>
-
-### Building organizations {#organization-building-created-bies}
-
-
-
-*Technical name:* ```organizationBuildingCreatedBies```
-<PH code="userCompany:organizationBuildingCreatedBies"/>
-
-### Building organizations {#organization-building-updated-bies}
-
-
-
-*Technical name:* ```organizationBuildingUpdatedBies```
-<PH code="userCompany:organizationBuildingUpdatedBies"/>
-
-### Building space typologies {#room-type-building-created-bies}
-
-
-
-*Technical name:* ```roomTypeBuildingCreatedBies```
-<PH code="userCompany:roomTypeBuildingCreatedBies"/>
-
-### Building space typologies {#room-type-building-updated-bies}
-
-
-
-*Technical name:* ```roomTypeBuildingUpdatedBies```
-<PH code="userCompany:roomTypeBuildingUpdatedBies"/>
-
 ### Buildings {#building-created-bies}
 
 The building is used to group the floors
@@ -366,44 +401,23 @@ The campus is used to group buildings that are in the same location.
 *Technical name:* ```campusUpdatedBies```
 <PH code="userCompany:campusUpdatedBies"/>
 
-### Company User Content Roles {#content-role-to-user-companies}
+### Company user associations to the role {#jup-user-company-to-jup-roles}
 
-
-
-*Technical name:* ```contentRoleToUserCompanies```
-<PH code="userCompany:contentRoleToUserCompanies"/>
-
-### Company User Content Roles {#content-role-to-user-company-created-bies}
-
-
-
-*Technical name:* ```contentRoleToUserCompanyCreatedBies```
-<PH code="userCompany:contentRoleToUserCompanyCreatedBies"/>
-
-### Company User Content Roles {#content-role-to-user-company-updated-bies}
-
-
-
-*Technical name:* ```contentRoleToUserCompanyUpdatedBies```
-<PH code="userCompany:contentRoleToUserCompanyUpdatedBies"/>
-
-### Company user roles {#jup-user-company-to-jup-roles}
-
-
+An enterprise user role association allows you to define feature access permissions for a specific enterprise user
 
 *Technical name:* ```jupUserCompanyToJupRoles```
 <PH code="userCompany:jupUserCompanyToJupRoles"/>
 
-### Company user roles {#jup-user-company-to-jup-role-created-bies}
+### Company user associations to the role {#jup-user-company-to-jup-role-created-bies}
 
-
+An enterprise user role association allows you to define feature access permissions for a specific enterprise user
 
 *Technical name:* ```jupUserCompanyToJupRoleCreatedBies```
 <PH code="userCompany:jupUserCompanyToJupRoleCreatedBies"/>
 
-### Company user roles {#jup-user-company-to-jup-role-updated-bies}
+### Company user associations to the role {#jup-user-company-to-jup-role-updated-bies}
 
-
+An enterprise user role association allows you to define feature access permissions for a specific enterprise user
 
 *Technical name:* ```jupUserCompanyToJupRoleUpdatedBies```
 <PH code="userCompany:jupUserCompanyToJupRoleUpdatedBies"/>
@@ -424,17 +438,45 @@ A company work location allows a company to customize people's work locations fo
 
 ### Content roles {#content-role-created-bies}
 
-
+A content role defines access permissions to different platform data for users
 
 *Technical name:* ```contentRoleCreatedBies```
 <PH code="userCompany:contentRoleCreatedBies"/>
 
 ### Content roles {#content-role-updated-bies}
 
-
+A content role defines access permissions to different platform data for users
 
 *Technical name:* ```contentRoleUpdatedBies```
 <PH code="userCompany:contentRoleUpdatedBies"/>
+
+### Cost center associations on floors {#cost-center-floor-created-bies}
+
+A cost center to floor association allows you to define specific cost centers for each floor
+
+*Technical name:* ```costCenterFloorCreatedBies```
+<PH code="userCompany:costCenterFloorCreatedBies"/>
+
+### Cost center associations on floors {#cost-center-floor-updated-bies}
+
+A cost center to floor association allows you to define specific cost centers for each floor
+
+*Technical name:* ```costCenterFloorUpdatedBies```
+<PH code="userCompany:costCenterFloorUpdatedBies"/>
+
+### Cost center associations to buildings {#cost-center-building-created-bies}
+
+A cost center association with buildings allows you to define specific cost centers for each building
+
+*Technical name:* ```costCenterBuildingCreatedBies```
+<PH code="userCompany:costCenterBuildingCreatedBies"/>
+
+### Cost center associations to buildings {#cost-center-building-updated-bies}
+
+A cost center association with buildings allows you to define specific cost centers for each building
+
+*Technical name:* ```costCenterBuildingUpdatedBies```
+<PH code="userCompany:costCenterBuildingUpdatedBies"/>
 
 ### Cost centers {#cost-center-created-bies}
 
@@ -452,14 +494,14 @@ The cost center allows spaces to be distributed dynamically for re-invoicing
 
 ### Facts {#fact-created-bies}
 
-
+A fact represents a factual data or event recorded in the system for analysis and reporting
 
 *Technical name:* ```factCreatedBies```
 <PH code="userCompany:factCreatedBies"/>
 
 ### Facts {#fact-updated-bies}
 
-
+A fact represents a factual data or event recorded in the system for analysis and reporting
 
 *Technical name:* ```factUpdatedBies```
 <PH code="userCompany:factUpdatedBies"/>
@@ -478,75 +520,47 @@ Allows you to display objects by Family on the plans and in the pdf inventory
 *Technical name:* ```itemTypeFamilyUpdatedBies```
 <PH code="userCompany:itemTypeFamilyUpdatedBies"/>
 
+### Feature Families {#feature-family-created-bies}
+
+A feature family allows you to group related features according to their domain or use.
+
+*Technical name:* ```featureFamilyCreatedBies```
+<PH code="userCompany:featureFamilyCreatedBies"/>
+
+### Feature Families {#feature-family-updated-bies}
+
+A feature family allows you to group related features according to their domain or use.
+
+*Technical name:* ```featureFamilyUpdatedBies```
+<PH code="userCompany:featureFamilyUpdatedBies"/>
+
+### Features {#feature-created-bies}
+
+A feature represents a specific characteristic or capability available in the system
+
+*Technical name:* ```featureCreatedBies```
+<PH code="userCompany:featureCreatedBies"/>
+
+### Features {#feature-updated-bies}
+
+A feature represents a specific characteristic or capability available in the system
+
+*Technical name:* ```featureUpdatedBies```
+<PH code="userCompany:featureUpdatedBies"/>
+
 ### Flat scales {#map-scale-created-bies}
 
-
+A map scale allows you to define the display and scale parameters for maps
 
 *Technical name:* ```mapScaleCreatedBies```
 <PH code="userCompany:mapScaleCreatedBies"/>
 
 ### Flat scales {#map-scale-updated-bies}
 
-
+A map scale allows you to define the display and scale parameters for maps
 
 *Technical name:* ```mapScaleUpdatedBies```
 <PH code="userCompany:mapScaleUpdatedBies"/>
-
-### Floor cost centers {#cost-center-floor-created-bies}
-
-
-
-*Technical name:* ```costCenterFloorCreatedBies```
-<PH code="userCompany:costCenterFloorCreatedBies"/>
-
-### Floor cost centers {#cost-center-floor-updated-bies}
-
-
-
-*Technical name:* ```costCenterFloorUpdatedBies```
-<PH code="userCompany:costCenterFloorUpdatedBies"/>
-
-### Floor organization {#organization-floor-created-bies}
-
-
-
-*Technical name:* ```organizationFloorCreatedBies```
-<PH code="userCompany:organizationFloorCreatedBies"/>
-
-### Floor organization {#organization-floor-updated-bies}
-
-
-
-*Technical name:* ```organizationFloorUpdatedBies```
-<PH code="userCompany:organizationFloorUpdatedBies"/>
-
-### Floor space typologies {#room-type-floor-created-bies}
-
-
-
-*Technical name:* ```roomTypeFloorCreatedBies```
-<PH code="userCompany:roomTypeFloorCreatedBies"/>
-
-### Floor space typologies {#room-type-floor-updated-bies}
-
-
-
-*Technical name:* ```roomTypeFloorUpdatedBies```
-<PH code="userCompany:roomTypeFloorUpdatedBies"/>
-
-### Floor space typology groups {#room-type-group-floor-created-bies}
-
-
-
-*Technical name:* ```roomTypeGroupFloorCreatedBies```
-<PH code="userCompany:roomTypeGroupFloorCreatedBies"/>
-
-### Floor space typology groups {#room-type-group-floor-updated-bies}
-
-
-
-*Technical name:* ```roomTypeGroupFloorUpdatedBies```
-<PH code="userCompany:roomTypeGroupFloorUpdatedBies"/>
 
 ### Floors {#floor-created-bies}
 
@@ -576,30 +590,16 @@ Floors represent a work platform or a level of a building.
 *Technical name:* ```partnerExportMappingConfigurationToFloorUpdatedBies```
 <PH code="userCompany:partnerExportMappingConfigurationToFloorUpdatedBies"/>
 
-### Groups of building space typologies {#room-type-group-building-created-bies}
-
-
-
-*Technical name:* ```roomTypeGroupBuildingCreatedBies```
-<PH code="userCompany:roomTypeGroupBuildingCreatedBies"/>
-
-### Groups of building space typologies {#room-type-group-building-updated-bies}
-
-
-
-*Technical name:* ```roomTypeGroupBuildingUpdatedBies```
-<PH code="userCompany:roomTypeGroupBuildingUpdatedBies"/>
-
 ### Interface operations for a business {#jup-ui-tenant-operation-created-bies}
 
-
+An interface operation for a business defines the specific actions and features available to a business in the user interface
 
 *Technical name:* ```jupUiTenantOperationCreatedBies```
 <PH code="userCompany:jupUiTenantOperationCreatedBies"/>
 
 ### Interface operations for a business {#jup-ui-tenant-operation-updated-bies}
 
-
+An interface operation for a business defines the specific actions and features available to a business in the user interface
 
 *Technical name:* ```jupUiTenantOperationUpdatedBies```
 <PH code="userCompany:jupUiTenantOperationUpdatedBies"/>
@@ -620,14 +620,14 @@ The interventions of service providers on objects make it possible to define, fo
 
 ### Layer Types {#dimension-type-created-bies}
 
-
+A layer type allows you to categorize analysis layers according to their use or area of application.
 
 *Technical name:* ```dimensionTypeCreatedBies```
 <PH code="userCompany:dimensionTypeCreatedBies"/>
 
 ### Layer Types {#dimension-type-updated-bies}
 
-
+A layer type allows you to categorize analysis layers according to their use or area of application.
 
 *Technical name:* ```dimensionTypeUpdatedBies```
 <PH code="userCompany:dimensionTypeUpdatedBies"/>
@@ -662,42 +662,42 @@ A pop-up message host is an element that allows you to communicate with a pop-up
 
 ### Object movements {#item-fact-created-bies}
 
-
+An object movement records the movements or changes in status of an object in the system
 
 *Technical name:* ```itemFactCreatedBies```
 <PH code="userCompany:itemFactCreatedBies"/>
 
 ### Object movements {#item-fact-updated-bies}
 
-
+An object movement records the movements or changes in status of an object in the system
 
 *Technical name:* ```itemFactUpdatedBies```
 <PH code="userCompany:itemFactUpdatedBies"/>
 
 ### Object type manufacturers {#manufacturer-created-bies}
 
-
+A manufacturer represents a company or brand that produces objects or equipment
 
 *Technical name:* ```manufacturerCreatedBies```
 <PH code="userCompany:manufacturerCreatedBies"/>
 
 ### Object type manufacturers {#manufacturer-updated-bies}
 
-
+A manufacturer represents a company or brand that produces objects or equipment
 
 *Technical name:* ```manufacturerUpdatedBies```
 <PH code="userCompany:manufacturerUpdatedBies"/>
 
 ### Object types {#item-type-created-bies}
 
-
+An object type allows you to categorize and define the characteristics of physical objects present in workspaces
 
 *Technical name:* ```itemTypeCreatedBies```
 <PH code="userCompany:itemTypeCreatedBies"/>
 
 ### Object types {#item-type-updated-bies}
 
-
+An object type allows you to categorize and define the characteristics of physical objects present in workspaces
 
 *Technical name:* ```itemTypeUpdatedBies```
 <PH code="userCompany:itemTypeUpdatedBies"/>
@@ -732,14 +732,14 @@ Allows you to associate an object with a person (ergonomic seat, locker)
 
 ### Objects {#item-created-bies}
 
-
+An object represents a physical or material element present in workspaces
 
 *Technical name:* ```itemCreatedBies```
 <PH code="userCompany:itemCreatedBies"/>
 
 ### Objects {#item-updated-bies}
 
-
+An object represents a physical or material element present in workspaces
 
 *Technical name:* ```itemUpdatedBies```
 <PH code="userCompany:itemUpdatedBies"/>
@@ -760,14 +760,14 @@ Organizations have two hierarchical levels: departments and services, and help d
 
 ### Partner API keys {#partner-api-credential-created-bies}
 
-
+A Partner API Key is used to authenticate and authorize access to APIs for external partners.
 
 *Technical name:* ```partnerApiCredentialCreatedBies```
 <PH code="userCompany:partnerApiCredentialCreatedBies"/>
 
 ### Partner API keys {#partner-api-credential-updated-bies}
 
-
+A Partner API Key is used to authenticate and authorize access to APIs for external partners.
 
 *Technical name:* ```partnerApiCredentialUpdatedBies```
 <PH code="userCompany:partnerApiCredentialUpdatedBies"/>
@@ -830,14 +830,14 @@ A workplace of people defines the workplace of people
 
 ### Person-to-person relationships {#person-to-person-created-bies}
 
-
+A person to person relationship allows you to define the hierarchical or organizational links between people
 
 *Technical name:* ```personToPersonCreatedBies```
 <PH code="userCompany:personToPersonCreatedBies"/>
 
 ### Person-to-person relationships {#person-to-person-updated-bies}
 
-
+A person to person relationship allows you to define the hierarchical or organizational links between people
 
 *Technical name:* ```personToPersonUpdatedBies```
 <PH code="userCompany:personToPersonUpdatedBies"/>
@@ -872,28 +872,28 @@ Allows you to define the different security profiles that can be associated with
 
 ### Points of object types {#item-type-point-created-bies}
 
-
+An object types point allows you to define specific positions for object types on the plans
 
 *Technical name:* ```itemTypePointCreatedBies```
 <PH code="userCompany:itemTypePointCreatedBies"/>
 
 ### Points of object types {#item-type-point-updated-bies}
 
-
+An object types point allows you to define specific positions for object types on the plans
 
 *Technical name:* ```itemTypePointUpdatedBies```
 <PH code="userCompany:itemTypePointUpdatedBies"/>
 
 ### Points of spaces {#room-point-created-bies}
 
-
+A point in spaces defines the geometric coordinates for drawing the outline of a space
 
 *Technical name:* ```roomPointCreatedBies```
 <PH code="userCompany:roomPointCreatedBies"/>
 
 ### Points of spaces {#room-point-updated-bies}
 
-
+A point in spaces defines the geometric coordinates for drawing the outline of a space
 
 *Technical name:* ```roomPointUpdatedBies```
 <PH code="userCompany:roomPointUpdatedBies"/>
@@ -963,42 +963,42 @@ Reservations to people assignment layers are recorded and available with reserva
 
 ### Role associations of content to buildings {#content-role-to-building-created-bies}
 
-
+A content role to building association allows you to define building-specific access permissions for a given role
 
 *Technical name:* ```contentRoleToBuildingCreatedBies```
 <PH code="userCompany:contentRoleToBuildingCreatedBies"/>
 
 ### Role associations of content to buildings {#content-role-to-building-updated-bies}
 
-
+A content role to building association allows you to define building-specific access permissions for a given role
 
 *Technical name:* ```contentRoleToBuildingUpdatedBies```
 <PH code="userCompany:contentRoleToBuildingUpdatedBies"/>
 
 ### Role associations of content to floors {#content-role-to-floor-created-bies}
 
-
+A content role to floor association allows you to define floor-specific access permissions for a given role
 
 *Technical name:* ```contentRoleToFloorCreatedBies```
 <PH code="userCompany:contentRoleToFloorCreatedBies"/>
 
 ### Role associations of content to floors {#content-role-to-floor-updated-bies}
 
-
+A content role to floor association allows you to define floor-specific access permissions for a given role
 
 *Technical name:* ```contentRoleToFloorUpdatedBies```
 <PH code="userCompany:contentRoleToFloorUpdatedBies"/>
 
 ### Segment qualifications {#room-point-segment-created-bies}
 
-
+A segment qualification allows you to define the display and orientation properties of a segment between two space points
 
 *Technical name:* ```roomPointSegmentCreatedBies```
 <PH code="userCompany:roomPointSegmentCreatedBies"/>
 
 ### Segment qualifications {#room-point-segment-updated-bies}
 
-
+A segment qualification allows you to define the display and orientation properties of a segment between two space points
 
 *Technical name:* ```roomPointSegmentUpdatedBies```
 <PH code="userCompany:roomPointSegmentUpdatedBies"/>
@@ -1016,20 +1016,6 @@ The service provider company allows you to manage service provider personnel by 
 
 *Technical name:* ```personCompanyUpdatedBies```
 <PH code="userCompany:personCompanyUpdatedBies"/>
-
-### Space analysis layers {#dimension-room-created-bies}
-
-
-
-*Technical name:* ```dimensionRoomCreatedBies```
-<PH code="userCompany:dimensionRoomCreatedBies"/>
-
-### Space analysis layers {#dimension-room-updated-bies}
-
-
-
-*Technical name:* ```dimensionRoomUpdatedBies```
-<PH code="userCompany:dimensionRoomUpdatedBies"/>
 
 ### Space assignments {#room-affectation-created-bies}
 
@@ -1073,6 +1059,20 @@ Space connectors allow you to create a link between several spaces on different 
 *Technical name:* ```roomTypeUpdatedBies```
 <PH code="userCompany:roomTypeUpdatedBies"/>
 
+### Space typology group associations to space typology {#room-type-group-to-room-type-created-bies}
+
+A space typology group to space typology association allows you to define which space types belong to which groups
+
+*Technical name:* ```roomTypeGroupToRoomTypeCreatedBies```
+<PH code="userCompany:roomTypeGroupToRoomTypeCreatedBies"/>
+
+### Space typology group associations to space typology {#room-type-group-to-room-type-updated-bies}
+
+A space typology group to space typology association allows you to define which space types belong to which groups
+
+*Technical name:* ```roomTypeGroupToRoomTypeUpdatedBies```
+<PH code="userCompany:roomTypeGroupToRoomTypeUpdatedBies"/>
+
 ### Spaces {#room-created-bies}
 
 Spaces are workplaces or areas in order to divide a floor into sub-spaces.
@@ -1103,14 +1103,14 @@ Allows you to define all types of contracts between people and the company
 
 ### Structures {#structure-created-bies}
 
-
+A structure defines a geometric shape that can be used to calibrate and position features on maps
 
 *Technical name:* ```structureCreatedBies```
 <PH code="userCompany:structureCreatedBies"/>
 
 ### Structures {#structure-updated-bies}
 
-
+A structure defines a geometric shape that can be used to calibrate and position features on maps
 
 *Technical name:* ```structureUpdatedBies```
 <PH code="userCompany:structureUpdatedBies"/>
@@ -1145,42 +1145,42 @@ Building assignment layer types are used to define the different types of buildi
 
 ### Types of buildings {#building-type-created-bies}
 
-
+A building type allows buildings to be categorized according to their use
 
 *Technical name:* ```buildingTypeCreatedBies```
 <PH code="userCompany:buildingTypeCreatedBies"/>
 
 ### Types of buildings {#building-type-updated-bies}
 
-
+A building type allows buildings to be categorized according to their use
 
 *Technical name:* ```buildingTypeUpdatedBies```
 <PH code="userCompany:buildingTypeUpdatedBies"/>
 
 ### Types of cost distribution {#distribution-cost-type-created-bies}
 
-
+A cost distribution type allows you to define the methods for distributing costs between different cost centers
 
 *Technical name:* ```distributionCostTypeCreatedBies```
 <PH code="userCompany:distributionCostTypeCreatedBies"/>
 
 ### Types of cost distribution {#distribution-cost-type-updated-bies}
 
-
+A cost distribution type allows you to define the methods for distributing costs between different cost centers
 
 *Technical name:* ```distributionCostTypeUpdatedBies```
 <PH code="userCompany:distributionCostTypeUpdatedBies"/>
 
 ### Types of Fact {#fact-type-created-bies}
 
-
+A fact type is used to categorize the different types of factual data or events recorded in the system
 
 *Technical name:* ```factTypeCreatedBies```
 <PH code="userCompany:factTypeCreatedBies"/>
 
 ### Types of Fact {#fact-type-updated-bies}
 
-
+A fact type is used to categorize the different types of factual data or events recorded in the system
 
 *Technical name:* ```factTypeUpdatedBies```
 <PH code="userCompany:factTypeUpdatedBies"/>
@@ -1201,14 +1201,14 @@ The types of spaces of the service providers make it possible to define a relati
 
 ### Types of relationship between people {#person-to-person-type-created-bies}
 
-
+A type of relationship between people defines the different types of links that can exist between people
 
 *Technical name:* ```personToPersonTypeCreatedBies```
 <PH code="userCompany:personToPersonTypeCreatedBies"/>
 
 ### Types of relationship between people {#person-to-person-type-updated-bies}
 
-
+A type of relationship between people defines the different types of links that can exist between people
 
 *Technical name:* ```personToPersonTypeUpdatedBies```
 <PH code="userCompany:personToPersonTypeUpdatedBies"/>

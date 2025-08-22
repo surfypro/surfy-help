@@ -55,7 +55,7 @@ Use X if the object is facing right or Y if the object is facing down
 
 ### Object types {#item-types}
 
-
+An object type allows you to categorize and define the characteristics of physical objects present in workspaces
 
 *Technical name:* ```itemTypes```
 <PH code="object3dModel:itemTypes"/>

@@ -1,7 +1,7 @@
-# Floor cost center
+# Cost center association on floors
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+A cost center to floor association allows you to define specific cost centers for each floor
 
 <OH code="costCenterFloor"/>
 

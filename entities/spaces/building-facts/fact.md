@@ -1,7 +1,7 @@
 # Fait
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Un fait représente une donnée factuelle ou un événement enregistré dans le système pour des analyses et des rapports
 
 <OH code="fact"/>
 
@@ -39,7 +39,7 @@ Le bâtiment est utilisé pour regrouper les étages
 
 ### Type de Fait {#fact-type}
 
-
+Un type de fait permet de catégoriser les différents types de données factuelles ou d'événements enregistrés dans le système
 
 *Nom technique:* ```factType```
 <PH code="fact:factType"/>

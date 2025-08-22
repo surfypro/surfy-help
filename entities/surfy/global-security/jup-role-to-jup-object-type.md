@@ -1,7 +1,7 @@
 # Association rôle à type d'objet
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Une association rôle à type d'objet permet de définir les permissions CRUD spécifiques pour un rôle sur un type d'entité
 
 <OH code="jupRoleToJupObjectType"/>
 
@@ -46,14 +46,14 @@ Autorise la suppression d'entités
 
 ### Rôle {#jup-role}
 
-
+Un rôle définit les permissions d'accès aux fonctionnalités dans l'interface utilisateur
 
 *Nom technique:* ```jupRole```
 <PH code="jupRoleToJupObjectType:jupRole"/>
 
 ### Type d'entité {#jup-object-type}
 
-
+Un type d'entité définit les différents types d'objets disponibles dans l'interface utilisateur
 
 *Nom technique:* ```jupObjectType```
 <PH code="jupRoleToJupObjectType:jupObjectType"/>

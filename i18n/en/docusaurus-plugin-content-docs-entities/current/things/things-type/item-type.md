@@ -1,7 +1,7 @@
 # Object type
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+An object type allows you to categorize and define the characteristics of physical objects present in workspaces
 
 <OH code="itemType"/>
 
@@ -38,7 +38,7 @@ The carbon footprint is the weight in Kilograms of CO2 emitted by each object fr
 
 ### Code {#code}
 
-Allows you to quickly access the object type by typing the code in the search during object creation
+Allows quick access to the object type by typing the code in the search when creating the object
 
 *Technical name:* ```code```
 <PH code="itemType:code"/>
@@ -73,7 +73,7 @@ Allows you to give the height in centimeters of the type of object in 3d vision
 
 ### Icon {#icon}
 
-Gives you access to three types of icon: 1) “Fontawsome” Icons, visible by checking “show all” or by searching by keyword in English in the search box; 2) “SURFY” Icons intended for illustrations added to plans in strategic locations (Toilets, Stairs, Elevators, Copy Points, etc.) but which can also be used as classic icons; 3) The “SURFY 2” Icons listing the regulatory icons of the ISO 7010 Safety standard; Their shape can be round, square or triangular
+Gives you access to three types of icons: 1) The &quot;Fontawsome&quot; Icons, visible by checking &quot;show all&quot; or by searching by keyword in English in the search box; 2) The &quot; SURFY &quot; Icons intended for illustrations added to plans in strategic locations (Toilets, Stairs, Elevators, Copy Points, etc.) but which can also be used as classic icons; 3) The &quot; SURFY 2&quot; Icons listing the regulatory icons of the ISO 7010 Safety standard; Their shape can be round, square or triangular
 
 *Technical name:* ```icon```
 <PH code="itemType:icon"/>
@@ -115,7 +115,7 @@ The number of seats for this type of object (armchair, seat, sofa, etc.) is accu
 
 ### Photo {#picture}
 
-Allows you to load the photo of the type of object, which will be visible in the inventory in PDF and on the sheet of the object selected on the plan
+Allows you to upload the photo of the object type, which will be visible in the inventory in pdf and on the sheet of the object selected on the plan
 
 *Technical name:* ```picture```
 <PH code="itemType:picture"/>
@@ -154,7 +154,7 @@ Allows you to display objects by Family on the plans and in the pdf inventory
 
 ### Object type manufacturer {#manufacturer}
 
-Allows you to identify the manufacturer of the object type
+A manufacturer represents a company or brand that produces objects or equipment
 
 *Technical name:* ```manufacturer```
 <PH code="itemType:manufacturer"/>
@@ -171,14 +171,14 @@ Allows you to identify the manufacturer of the object type
 
 ### Objects {#items}
 
-
+An object represents a physical or material element present in workspaces
 
 *Technical name:* ```items```
 <PH code="itemType:items"/>
 
 ### Points of object types {#item-type-points}
 
-
+An object types point allows you to define specific positions for object types on the plans
 
 *Technical name:* ```itemTypePoints```
 <PH code="itemType:itemTypePoints"/>

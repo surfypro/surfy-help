@@ -1,7 +1,7 @@
 # Entreprise
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Une entreprise représente une organisation ou une société qui utilise la plateforme Surfy pour gérer ses espaces de travail et ses ressources
 
 <OH code="company"/>
 
@@ -12,7 +12,7 @@
     
 ### Nom de l'entreprise {#name}
 
-
+Nom de l'entreprise
 
 *Nom technique:* ```name```
 <PH code="company:name"/>
@@ -29,19 +29,26 @@ Permet d'activer la fonctionnalité de surcharge des dimensions pour les réserv
 *Nom technique:* ```enableCrowdedDimensionForBooking```
 <PH code="company:enableCrowdedDimensionForBooking"/>
 
-### Enable Pathfinding {#enable-pathfinding}
+### Activer le pathfinding {#enable-pathfinding}
 
-
+Activer la fonctionnalité de recherche de chemin
 
 *Nom technique:* ```enablePathfinding```
 <PH code="company:enablePathfinding"/>
 
-### Icon {#icon-path}
+### Icône {#icon-path}
 
 Le logo de l'entreprise en carré
 
 *Nom technique:* ```iconPath```
 <PH code="company:iconPath"/>
+
+### Images proxy {#proxy-images}
+
+Activer le proxy pour les images
+
+*Nom technique:* ```proxyImages```
+<PH code="company:proxyImages"/>
 
 ### Logo {#logo-path}
 
@@ -50,6 +57,13 @@ Le chemin du logo de votre entreprise
 *Nom technique:* ```logoPath```
 <PH code="company:logoPath"/>
 
+### Nombre de jours de planification {#planning-number-of-days}
+
+Nombre de jours pour la planification
+
+*Nom technique:* ```planningNumberOfDays```
+<PH code="company:planningNumberOfDays"/>
+
 ### Nombre de jours de travail par semaine {#working-days-count}
 
 Le nombre de jours de travail par semaine peut être 5 pour les jours ouvrés, 6 incluant le samedi et 7 incluant le dimanche
@@ -57,27 +71,13 @@ Le nombre de jours de travail par semaine peut être 5 pour les jours ouvrés, 6
 *Nom technique:* ```workingDaysCount```
 <PH code="company:workingDaysCount"/>
 
-### Planning Number Of Days {#planning-number-of-days}
-
-
-
-*Nom technique:* ```planningNumberOfDays```
-<PH code="company:planningNumberOfDays"/>
-
-### Proxy Images {#proxy-images}
-
-
-
-*Nom technique:* ```proxyImages```
-<PH code="company:proxyImages"/>
-
     
 
 ## Entités associées (unique) {#properties-belongs-to}
 
 ### Type d'entreprise {#company-type}
 
-
+Un type d'entreprise permet de catégoriser les entreprises selon leur usage
 
 *Nom technique:* ```companyType```
 <PH code="company:companyType"/>
@@ -101,7 +101,7 @@ Un emplacement de travail de l'entreprise permet de personnaliser pour une entre
 
 ### Types de bâtiments {#building-types}
 
-
+Un type de bâtiment permet de catégoriser les bâtiments selon leur usage
 
 *Nom technique:* ```buildingTypes```
 <PH code="company:buildingTypes"/>

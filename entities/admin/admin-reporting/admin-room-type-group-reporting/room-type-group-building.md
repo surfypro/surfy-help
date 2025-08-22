@@ -1,7 +1,7 @@
-# Groupe de typologie d'espace des bâtiments
+# Association groupe de typologie d'espace aux bâtiments
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Une association groupe de typologie d'espace aux bâtiments permet de définir les groupes de types d'espaces disponibles dans chaque bâtiment
 
 <OH code="roomTypeGroupBuilding"/>
 
@@ -165,7 +165,7 @@ Le bâtiment est utilisé pour regrouper les étages
 
 ### Groupe de typologie d'espace {#room-type-group}
 
-
+Un groupe de typologie d'espace permet de regrouper plusieurs types d'espaces pour faciliter leur gestion et leur affichage
 
 *Nom technique:* ```roomTypeGroup```
 <PH code="roomTypeGroupBuilding:roomTypeGroup"/>

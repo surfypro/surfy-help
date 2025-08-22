@@ -1,7 +1,7 @@
 # Clé d'api partenaire
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Une clé d'API partenaire permet d'authentifier et d'autoriser l'accès aux API pour les partenaires externes
 
 <OH code="partnerApiCredential"/>
 

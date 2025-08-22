@@ -39,7 +39,7 @@ Automatically associate roles and content roles with users who meet this rule
 
 ### Authentication login {#authentification-connection}
 
-
+An authentication connection allows you to configure the authentication methods for accessing the platform (SSO, LDAP, etc.)
 
 *Technical name:* ```authentificationConnection```
 <PH code="userRegistrationTenantRule:authentificationConnection"/>

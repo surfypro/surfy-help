@@ -1,7 +1,7 @@
 # Object movement
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+An object movement records the movements or changes in status of an object in the system
 
 <OH code="itemFact"/>
 
@@ -49,7 +49,7 @@
 
 ### Object {#item}
 
-
+An object represents a physical or material element present in workspaces
 
 *Technical name:* ```item```
 <PH code="itemFact:item"/>

@@ -22,9 +22,9 @@ the secret password for your API account can be generated and should never be di
 
 ## Basic properties {#properties-base}
     
-### Name {#name}
+### Last name {#name}
 
-
+API user name to identify them
 
 *Technical name:* ```name```
 <PH code="apiUser:name"/>
@@ -44,7 +44,7 @@ the secret password for your API account can be generated and should never be di
 
 ### API user associations to role {#api-user-to-jup-roles}
 
-
+An API user role association allows you to define access permissions to API features for a specific user
 
 *Technical name:* ```apiUserToJupRoles```
 <PH code="apiUser:apiUserToJupRoles"/>

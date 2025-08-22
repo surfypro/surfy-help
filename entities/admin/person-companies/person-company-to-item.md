@@ -39,7 +39,7 @@ L'entreprise prestataire permet de gérer le personnel prestataire par entrepris
 
 ### Objet {#item}
 
-
+Un objet représente un élément physique ou matériel présent dans les espaces de travail
 
 *Nom technique:* ```item```
 <PH code="personCompanyToItem:item"/>

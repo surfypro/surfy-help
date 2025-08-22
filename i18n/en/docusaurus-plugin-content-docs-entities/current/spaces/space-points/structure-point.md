@@ -39,7 +39,7 @@
 
 ### Structure {#structure}
 
-
+A structure defines a geometric shape that can be used to calibrate and position features on maps
 
 *Technical name:* ```structure```
 <PH code="structurePoint:structure"/>

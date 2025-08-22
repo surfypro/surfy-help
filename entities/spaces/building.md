@@ -315,14 +315,14 @@ Le campus est utilisé pour regrouper des bâtiments qui sont au même endroit.
 
 ### Type de bâtiment {#building-type}
 
-
+Un type de bâtiment permet de catégoriser les bâtiments selon leur usage
 
 *Nom technique:* ```buildingType```
 <PH code="building:buildingType"/>
 
-### Utilisateur propriétaire du bâitment {#user-company-owner}
+### Utilisateur propriétaire du bâtiment {#user-company-owner}
 
-L'utilisateur propriétaire du bâtiment voit toujours le bâtiment même en présence de rôle de contenu, en cas de création de scénario, l'utilisateur qui a crée le scénario devient le propriétaire, le propriétaire peut être changé par la suite
+L'utilisateur propriétaire du bâtiment voit toujours le bâtiment même en présence de rôle de contenu, en cas de création de scénario, l'utilisateur qui a créé le scénario devient le propriétaire, le propriétaire peut être changé par la suite
 
 *Nom technique:* ```userCompanyOwner```
 <PH code="building:userCompanyOwner"/>
@@ -344,12 +344,47 @@ Permet d'attribuer une personne à un bâtiment, sans information supplémentair
 *Nom technique:* ```personToBuildings```
 <PH code="building:personToBuildings"/>
 
+### Associations calque d'analyse aux bâtiments {#dimension-buildings}
+
+Une association calque d'analyse aux bâtiments permet de définir les calques d'analyse spécifiques pour chaque bâtiment
+
+*Nom technique:* ```dimensionBuildings```
+<PH code="building:dimensionBuildings"/>
+
+### Associations centre de coût aux bâtiments {#cost-center-buildings}
+
+Une association centre de coût aux bâtiments permet de définir les centres de coût spécifiques pour chaque bâtiment
+
+*Nom technique:* ```costCenterBuildings```
+<PH code="building:costCenterBuildings"/>
+
+### Associations groupe de typologie d'espace aux bâtiments {#room-type-group-buildings}
+
+Une association groupe de typologie d'espace aux bâtiments permet de définir les groupes de types d'espaces disponibles dans chaque bâtiment
+
+*Nom technique:* ```roomTypeGroupBuildings```
+<PH code="building:roomTypeGroupBuildings"/>
+
+### Associations organisation aux bâtiments {#organization-buildings}
+
+Une association organisation aux bâtiments permet de définir les organisations responsables de chaque bâtiment
+
+*Nom technique:* ```organizationBuildings```
+<PH code="building:organizationBuildings"/>
+
 ### Associations rôle de contenu aux bâtiments {#content-role-to-buildings}
 
-
+Une association rôle de contenu aux bâtiments permet de définir les permissions d'accès spécifiques aux bâtiments pour un rôle donné
 
 *Nom technique:* ```contentRoleToBuildings```
 <PH code="building:contentRoleToBuildings"/>
+
+### Associations typologie d'espace aux bâtiments {#room-type-buildings}
+
+Une association typologie d'espace aux bâtiments permet de définir les types d'espaces disponibles dans chaque bâtiment
+
+*Nom technique:* ```roomTypeBuildings```
+<PH code="building:roomTypeBuildings"/>
 
 ### Bâtiments scénarios {#buildings}
 
@@ -357,20 +392,6 @@ Scénarios générés à partir de ce bâtiment
 
 *Nom technique:* ```buildings```
 <PH code="building:buildings"/>
-
-### Calques d'analyse par bâtiment {#dimension-buildings}
-
-
-
-*Nom technique:* ```dimensionBuildings```
-<PH code="building:dimensionBuildings"/>
-
-### Centres de coût des bâtiments {#cost-center-buildings}
-
-
-
-*Nom technique:* ```costCenterBuildings```
-<PH code="building:costCenterBuildings"/>
 
 ### Étages {#floors}
 
@@ -381,24 +402,10 @@ Les étages represent un plateau de travail ou un niveau d'un bâtiment
 
 ### Faits {#facts}
 
-
+Un fait représente une donnée factuelle ou un événement enregistré dans le système pour des analyses et des rapports
 
 *Nom technique:* ```facts```
 <PH code="building:facts"/>
-
-### Groupes de typologies d'espace des bâtiments {#room-type-group-buildings}
-
-
-
-*Nom technique:* ```roomTypeGroupBuildings```
-<PH code="building:roomTypeGroupBuildings"/>
-
-### Organisations des bâtiments {#organization-buildings}
-
-
-
-*Nom technique:* ```organizationBuildings```
-<PH code="building:organizationBuildings"/>
 
 ### Types de calques d'affectation du bâtiment {#dimension-type-to-buildings}
 
@@ -406,13 +413,6 @@ Les types de calques d'affectation du bâtiment permettent de définir les diff�
 
 *Nom technique:* ```dimensionTypeToBuildings```
 <PH code="building:dimensionTypeToBuildings"/>
-
-### Typologies d'espace des bâtiments {#room-type-buildings}
-
-
-
-*Nom technique:* ```roomTypeBuildings```
-<PH code="building:roomTypeBuildings"/>
 
 
 
