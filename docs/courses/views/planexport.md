@@ -75,7 +75,7 @@ On peut exporter les plans de plusieurs étages simultanément,
 Le fichier compressé est disponible dans les téléchargements.
 
 :::tip Bon à savoir
-Tous les plans des étages reprennent la configuration du plan à partir duquel l'export est fait : pas besoin de charger le bon calque ni de choisir la bonne taille de police pour chaque étage, une fois suffit !
+Tous les plans des étages reprennent la configuration du plan à partir duquel l'export est fait : pas besoin de charger le bon calque, la bonne légende ni de choisir la bonne taille de police pour chaque étage, une fois suffit !
 :::
 
 ## Exporter les plans 3D en Image
