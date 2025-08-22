@@ -33,6 +33,38 @@ Pour plus d'informations sur la configuration d'affichage des plans, voir le cha
 
 Le fichier PNG est disponible dans les téléchargements.
 
+### Configurer la légende du plan 2D à exporter
+
+Lors de la sortie en image du plan d'un étage avec légende, la "légende par défaut" est composée :
+
+-   du logo de l'entreprise
+-   du nom du bâtiment et de son adresse (si renseignée)
+-   du nom de l'étage
+-   des informations de l'étage, identiques aux informations de la fiche de l'étage à gauche du plan
+-   de la légende du calque affiché, avec le cumul des informations par calque.
+
+On peut personnaliser la légende affichée sur la sortie en image en créant des légendes adaptées aux informations à afficher.
+
+Pour cela, depuis le menu de gauche,
+
+-   cliquer sur "Administration" puis "Légende" pour "Créer une légende"
+-   donner un nom à la légende à créer
+-   dans "Configuration", "Sélection des propriétés", cocher les propriétés et informations à afficher pour les "bâtiments" et les "étages"
+-   dans "Typologies d'espace", cocher les informations à afficher (nombre d'espaces, capacité totale) pour chaque typologie d'espace présente sur la plateforme
+-   dans "groupes de typologies d'espace", cocher les informations à afficher (nombre d'espaces, capacité totale) pour chaque groupe de typologies d'espace présent sur la plateforme.
+-   "valider la création" de la légende
+
+Lors de la sortie en image du plan d'un étage avec légende, "sélectionner la légende" à droite de l'écran permet de retrouver les différentes légendes enregistrées afin d'afficher la légende sélectionnée.
+
+L'aperçu de la légende est visualisable en cliquant sur l'icône "Prévisualiser la légende" en bas de la fiche "sauvegarder en image" à droite de l'écran.
+
+:::tip BON A SAVOIR
+Un groupe de typologies d'espace permet de regrouper plusieurs typologies d'espace pour faciliter leur gestion et leur affichage.
+On peut créer par exemple un groupe de typologies d'espace "Espaces de réunion" regroupant les typologies d'espace "Salle de réunion", "Bulle" et "Box de réunion" afin de les afficher ou de cumuler les informations de l'ensemble des typologies inclues dans le groupe.
+
+Pour configurer un groupe de typologies d'espace, voir le chapitre sur [Les groupes de typologies d'espace](/docs/tutorials/surfaces/room/roomtype/#les-groupes-de-typologies-despace)
+:::
+
 ### Exporter les plans 2D de plusieurs étages
 
 On peut exporter les plans de plusieurs étages simultanément,
