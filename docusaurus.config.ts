@@ -195,6 +195,26 @@ const config: Config = {
       indexName: 'help-surfy',
       contextualSearch: true,
       searchPagePath: 'search',
+      // Configuration avancée pour le ranking
+      searchParameters: {
+        // Réduire la priorité des pages avec peu de trafic
+        ranking: [
+          'typo',
+          'geo',
+          'words',
+          'filters',
+          'proximity',
+          'attribute',
+          'exact',
+          'custom'
+        ],
+        // Attributs personnalisés pour le ranking
+        customRanking: [
+          'desc(search_rank)',
+          'desc(popularity)',
+          'desc(date)'
+        ]
+      },
     },
     footer: {
       style: 'dark',
