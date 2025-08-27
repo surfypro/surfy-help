@@ -3,6 +3,7 @@
 ## 27 Août 2025 - v3.4.99
 
 - Les plans de réservation des postes de travail affichent désormais le nom de l'espace fusionné.
+- Les noms des espaces s'affichent maintenant au dessus des postes de travail dans les plans de réservation des postes de travail.
 
 ## 17 Août 2025 - v3.4.97
 
