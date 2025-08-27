@@ -1,3 +1,6 @@
+---
+search_rank: 0.5
+---    
 # Association between a point and a space
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 

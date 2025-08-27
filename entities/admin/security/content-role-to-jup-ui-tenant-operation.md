@@ -1,3 +1,6 @@
+---
+search_rank: 0.5
+---    
 # Association rôle de contenu aux opérations d'interface pour une entreprise
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
