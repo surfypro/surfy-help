@@ -207,12 +207,6 @@ const config: Config = {
           'attribute',
           'exact',
           'custom'
-        ],
-        // Attributs personnalisés pour le ranking
-        customRanking: [
-          'desc(search_rank)',
-          'desc(popularity)',
-          'desc(date)'
         ]
       },
     },
