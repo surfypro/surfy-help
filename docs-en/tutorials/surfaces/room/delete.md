@@ -1,0 +1,11 @@
+---
+sidebar_position: 4
+---
+
+# Delete a Space
+
+:::danger Warning:
+Space deletion involves deleting all associated furniture and all person assignments to this space or to the space's workstations. This action is irreversible.
+:::
+
+To delete a space, click on the space, then click on the "trash" icon at the bottom right of the space's record (to the left of the plan). A double deletion confirmation is requested.
