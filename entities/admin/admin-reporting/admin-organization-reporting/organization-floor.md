@@ -1,3 +1,6 @@
+---
+search_rank: 0.5
+---    
 # Association organisation aux étages
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 

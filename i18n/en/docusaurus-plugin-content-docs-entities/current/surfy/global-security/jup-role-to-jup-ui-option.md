@@ -1,3 +1,6 @@
+---
+search_rank: 0.5
+---    
 # Role association with interface options
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 

@@ -1,3 +1,6 @@
+---
+search_rank: 0.5
+---    
 # Role association of content with buildings
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 

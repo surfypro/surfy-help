@@ -1,5 +1,9 @@
 # Nouveautés
 
+## 27 Août 2025 - v3.4.99
+
+- Les plans de réservation des postes de travail affichent désormais le nom de l'espace fusionné.
+
 ## 17 Août 2025 - v3.4.97
 
 - Amélioration de l'affichage des propriétés des types d'objets dans la documentation.

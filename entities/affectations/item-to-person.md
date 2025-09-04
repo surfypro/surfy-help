@@ -1,3 +1,6 @@
+---
+search_rank: 0.5
+---    
 # Association d'objet à personne
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 

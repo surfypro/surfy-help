@@ -1,3 +1,6 @@
+---
+search_rank: 0.5
+---    
 # Emplacement de travail des personnes
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
