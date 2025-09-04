@@ -10,7 +10,7 @@ Pour supprimer un objet,
 -   confirmer la suppression
 
 :::warning Attention
-La suppression de l'objet entraine la suppression des informations de référence, code d'immobilisation et association à personne de l'objet.
+La suppression de l'objet entraine la suppression des informations de <P code="item:reference" />, <P code="item:code" /> et association à personne de l'objet.
 :::
 
 ## Supprimer un groupe d'objet

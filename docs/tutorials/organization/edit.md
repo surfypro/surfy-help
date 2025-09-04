@@ -9,11 +9,11 @@ Pour modifier les informations des organisations dans Surfy, depuis le menu de g
 
 -   cliquer sur "Organisations", "Organisations" puis "Voir la hiérarchie des organisations".
 -   les Directions sont en tête des blocs obtenus, les Services sont listés à la suite.
--   cliquer sur l'icône en bout de ligne " voir plus d'options pour l'organisation XXX" puis "modifier l'organisation XXX" permet de modifier le nom ou la couleur de l'organisation concernée. Modifier ces informations ne modifie pas les rattachements aux entités.
--   dans le cas d'un Service, on peut modifier sa Direction en cliquant sur l'icône "crayon" de sa "Direction". Cela ne modifie pas les rattachements des entités à ce Service.
+-   cliquer sur l'icône en bout de ligne " voir plus d'options pour l'organisation XXX" puis "modifier l'organisation XXX" permet de modifier le <P code="organization:name" /> ou la <P code="organization:color" /> de l'organisation concernée. Modifier ces informations ne modifie pas les rattachements aux entités.
+-   dans le cas d'un Service, on peut modifier sa <P code="organization:organization" /> en cliquant sur l'icône "crayon" de sa "Direction". Cela ne modifie pas les rattachements des entités à ce Service.
 
 :::warning Important
-Retirer la "Direction" d'un Service changera ce Service en Direction.
+Retirer la <P code="organization:organization" /> d'un Service changera ce Service en Direction.
 Les entités seront toujours rattachées à cette organisation mais celle ci ne sera plus accessible dans le choix des Services tant qu'une nouvelle "Direction" ne lui sera pas rattachée.
 :::
 

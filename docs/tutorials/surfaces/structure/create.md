@@ -13,7 +13,7 @@ Pour créer la structure d'un étage,
 depuis le menu de gauche,
 
 -   cliquer sur "Espaces", "Structures" puis "créer une structure"
--   nommer la structure et valider la création
+-   nommer la <P code="structure:name" /> et valider la création
 -   choisir le fond de plan de l'étage en cliquant sur l'icône "Choisir un plan de référence..."
 -   cliquer sur l'icône "Plus" pour "Créer la forme de la structure"
 -   dessiner la structure autour de l'étage puis sauvegarder la structure

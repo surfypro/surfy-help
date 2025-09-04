@@ -54,7 +54,7 @@ Pour cela :
 -	Sortir le fichier Excel « rapport des postes de travail » pour obtenir l’identifiant des postes de travail
 -	Sortir la « liste des personnes » en Excel pour obtenir leur identifiant
 -	Sortir le gabarit d’affectation des personnes à un postes de travail pour obtenir les en-têtes corrects pour la réimportation du fichier Excel
--	Remplir les colonnes «Identifiant Surfy (workplaceAffectation:person) » avec l’identifiant de la personne, et « Identifiant du poste de travail (workplaceAffectation:workplace) » avec l’identifiant du poste de travail.
+-	Remplir les colonnes «Identifiant Surfy (<P code="workplaceAffectation:person" />) » avec l’identifiant de la personne, et « Identifiant du poste de travail (<P code="workplaceAffectation:workplace" />) » avec l’identifiant du poste de travail.
 -	Importer ces deux colonnes uniquement, dans « importer des affectations au poste de travail ».
 
 

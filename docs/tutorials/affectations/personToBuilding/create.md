@@ -12,8 +12,8 @@ L'affectation au bâtiment peut être comptabilisée dans le nombre d'affectatio
 Pour affecter une personne à un bâtiment, depuis la page d'accueil,
 
 -   cliquer sur "Affectations", "Affectations au bâtiment", puis "Créer une affectation au bâtiment".
--   rechercher la personne à affecter en cliquant sur le "crayon" de la "Personne"
--   rechercher le bâtiment d'affectation en cliquant sur le "crayon" du "Bâtiment"
+-   rechercher la <P code="personToBuilding:person" /> à affecter en cliquant sur le "crayon" de la "Personne"
+-   rechercher le <P code="personToBuilding:building" /> d'affectation en cliquant sur le "crayon" du "Bâtiment"
 -   comptabiliser l'affectation en cochant la case correspondante
 -   valider la création
 
@@ -28,10 +28,10 @@ Depuis la page d'accueil et pour une mise à jour des informations des bâtiment
 Si la personne à affecter au bâtiment n'est pas encore créée dans la base de données de Surfy, on peut la créer et l'affecter en un seul mouvement :
 
 -   cliquer sur "Affectations", "Affectations au bâtiment", puis "Créer une affectation au bâtiment".
--   rechercher la personne à affecter en cliquant sur le "crayon" de la "Personne"
+-   rechercher la <P code="personToBuilding:person" /> à affecter en cliquant sur le "crayon" de la "Personne"
 -   si la personne n'existe pas dans Surfy, cliquer sur "créer et associer un personne"
 -   remplir les informations de création de personne et "valider la création" de la personne
--   rechercher le bâtiment d'affectation en cliquant sur le "crayon" du "Bâtiment"
+-   rechercher le <P code="personToBuilding:building" /> d'affectation en cliquant sur le "crayon" du "Bâtiment"
 -   comptabiliser l'affectation en cochant la case correspondante
 -   valider la création
 

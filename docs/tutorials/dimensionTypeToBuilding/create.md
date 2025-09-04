@@ -21,7 +21,7 @@ Pour créer un calque d'affectation, il faut que son type de calque existe.
 Pour créer un type de calque, depuis la page d'accueil :
 
 -   cliquer sur "Administration", "Calques d'analyse", "Types de calque" puis "Créer un type de calque".
--   Nommer le type de calque dans "Nom du type de dimension" (ex: "Quartiers Bât A")
+-   Nommer le type de calque dans <P code="dimensionType:name" /> (ex: "Quartiers Bât A")
 -   "valider la création" du type de calque.
 
 Pour associer le type de calque à des bâtiments, en vue de créer des calques d'affectation :
@@ -42,9 +42,9 @@ Il faut dans ce cas retirer l'association de ce bâtiment au calque d'affectatio
 Une fois que le type de calque est créé et associé à un ou des bâtiments, on peut créer et lui associer un calque d'affectation:
 
 -   cliquer sur "Administration", "Calques d'analyse", "Calques d'analyse", puis "Créer un calque d'analyse".
--   renseigner le "Nom du calque d'analyse" (ex: "Quartier A1")
+-   renseigner le <P code="dimension:name" /> (ex: "Quartier A1")
 -   choisir le <P code="dimensionTypeToBuilding:dimensionType" /> associé à un ou des bâtiments dans la liste des types de calque en cliquant sur le "crayon" (ex: "Quartiers Bât A"). Le calque d'analyse devient calque d'affectation.
--   choisir une couleur pour représenter les espaces qualifiés par ce calque d'affectation
+-   choisir une <P code="dimension:color" /> pour représenter les espaces qualifiés par ce calque d'affectation
 -   "valider la création" du calque d'affectation.
 
 :::tip Bon à savoir

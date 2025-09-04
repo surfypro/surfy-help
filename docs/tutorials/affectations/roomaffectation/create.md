@@ -41,8 +41,8 @@ Si la personne à affecter n'est pas encore créée dans la base de données de 
 
 On peut affecter des personnes en masse en important le fichier Excel correspondant.
 Ce fichier doit être composé au minimum :
--   de l'identifiant de la personne à affecter
--   de l'identifiant de l'espace de l'affectation
+-   de l'identifiant de la <P code="roomAffectation:person" /> à affecter
+-   de l'identifiant de l'<P code="roomAffectation:room" /> de l'affectation
 -   des bons en-têtes sur les colonnes à importer.
 
 

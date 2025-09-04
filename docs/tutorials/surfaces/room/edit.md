@@ -23,7 +23,7 @@ Pour modifier la surface d'un espace dans Surfy,
 
 Une fois l'espace créé, on peut modifier ou compléter ses informations :
 
--   cliquer sur la touche "Modifier" sur la fiche de l'espace, à gauche du plan, pour lui donner un nom, une capacité éventuelle, une organisation, une typologie de l'espace, un centre de coût.
+-   cliquer sur la touche "Modifier" sur la fiche de l'espace, à gauche du plan, pour lui donner un <P code="room:name" />, une <P code="room:capacity" /> éventuelle, une <P code="room:organization" />, une <P code="room:roomType" /> de l'espace, un <P code="room:costCenter" />.
 -   cliquer sur le crayon de la ligne à modifier pour choisir la bonne qualification dans le cas de choix multiples (typologie, organisation, centre de coût, ...)
 -   "sauvegarder" les informations. 
 -   Les calques d'analyse peuvent aussi être renseignés, la sauvegarde des calques est automatique et permet de qualifier rapidement d'un espace à un autre.

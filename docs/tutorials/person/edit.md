@@ -27,10 +27,10 @@ Pour modifier les informations d'une personne,
 -   cliquer sur le résultat recherché
 -   dans le menu contextuel (etiquette grise sous la loupe de recherche), cliquer sur "modifier la personne XXX". 
 -   modifier les informations éventuelles : 
-        -   email, photo, titre de la personne, référence écran, ordinateur, téléphone fixe, téléphone portable, matricule, date d'entrée, date de sortie, commentaire
-        -   la propriété "non affectable"permet de qualifier les personnes ne pouvant être affectées, personnes en congé maternité ou en congé longue durée
-        -   indiquer l'organisation de la personne à partir de la liste des organisations déjà créées
-        -   renseigner le statut, le profil sécurité, le centre de coût, l'entreprise de la personne
+        -   <P code="person:email" />, <P code="person:picture" />, <P code="person:title" /> de la personne, <P code="person:monitorReference" />, <P code="person:computerReference" />, <P code="person:telephone" />, <P code="person:cellphone" />, <P code="person:code" />, <P code="person:startDate" />, <P code="person:endDate" />, <P code="person:info" />
+        -   la propriété <P code="person:notAffectable" /> permet de qualifier les personnes ne pouvant être affectées, personnes en congé maternité ou en congé longue durée
+        -   indiquer l'<P code="person:organization" /> de la personne à partir de la liste des organisations déjà créées
+        -   renseigner le <P code="person:personState" />, le <P code="person:personSecurityProfile" />, le <P code="person:costCenter" />, l'<P code="person:company" /> de la personne
         -   valider les modifications.
 
 
@@ -42,8 +42,8 @@ Pour mettre à jour les informations des personnes dans Surfy, une clé d'identi
 
 Différentes clés sont possibles :
 
--   le matricule de la personne est la première clé fiable à utiliser.
--   l'email est aussi un champ unique et peut être utilisée comme clé d'identification de la personne
+-   le <P code="person:code" /> de la personne est la première clé fiable à utiliser.
+-   l'<P code="person:email" /> est aussi un champ unique et peut être utilisée comme clé d'identification de la personne
 -   le "nom complet" peut toutefois être utilisé dans le cas d'une nomenclature maitrisée (orthographe et casse)
 -   l'identifiant Surfy unique délivré par Surfy, disponible depuis un export des personnes.
 

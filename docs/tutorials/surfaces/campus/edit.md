@@ -7,7 +7,7 @@ Pour modifier les informations d'un campus, depuis le menu de gauche :
 
 -   cliquer sur "Espaces" puis "Campus" puis "Lister les campus"
 -   cliquer sur l'icône "Voir plus d'option pour le campus XXX" en bout de ligne du campus à modifier, puis sur "modifier le campus XXX"
--   modifier le nom, la couleur ou l'adresse du campus
+-   modifier le <P code="campus:name" />, la <P code="campus:color" /> ou l'<P code="campus:address" /> du campus
 
 ## Retirer un bâtiment d'un campus
 

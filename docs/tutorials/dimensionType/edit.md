@@ -15,7 +15,7 @@ Pour modifier un type de calque, depuis la page d'accueil :
 
 On peut alors :
 
--   modifier le nom, la description du type de calque
+-   modifier le <P code="dimensionType:name" />, la description du type de calque
 -   ajouter ou supprimer un calque au type de calque concerné
 -   modifier les calques associés au type de calque en cliquant sur l'icône en début de ligne du calque puis "Modifier le calque d'analyse XXX"
 -   associer des bâtiments au type de calque afin d'y créer des calques d'affectation
@@ -28,7 +28,7 @@ On peut modifier directement un calque d'analyse, depuis la page d'accueil :
 -   cliquer sur "Administration", "Calques d'analyse", "Calques d'analyse", puis "Lister les calques d'analyse".
 -   rechercher dans la liste le calque d'analyse à modifier
 -   au début de la ligne du calque concerné, cliquer sur l'icône puis sur "Modifier le calque d'analyse XXX"
--   modifier le "Nom du calque d'analyse", sa couleur ou son "type de calque" associé
+-   modifier le <P code="dimension:name" /> du calque d'analyse, sa <P code="dimension:color" /> ou son <P code="dimension:dimensionType" /> associé
 -   "sauvegarder" les modifications du calque d'analyse.
 
 Aprsè rafraichissement (F5), le calque d'analyse prend en compte les modifications effectuées.

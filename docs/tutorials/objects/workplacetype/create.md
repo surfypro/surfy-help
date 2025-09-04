@@ -9,7 +9,7 @@ sidebar_position: 1
 Pour créer un type de poste de travail dans Surfy, depuis le menu de gauche, 
 
 -   cliquer sur "Mobiliers", "Typologies", "Types de poste de travail" puis "créer un type de poste de travail".
--   renseigner le nom du type de poste de travail (par exemple: PdT 180x80C) et la couleur (blanc par défaut)
+-   renseigner le <P code="workplaceType:name" /> du type de poste de travail (par exemple: PdT 180x80C) et la <P code="workplaceType:color" /> (blanc par défaut)
 -   valider la création du type de poste de travail
 
 ## Composer le type de poste de travail
@@ -34,7 +34,7 @@ Pour composer un type de poste de travail, les types d'objet composant le type d
 Depuis la page de composition du type de poste de travail,
 
 -   cliquer sur l'icône "Lister les types d'objet" pour afficher à droite la liste des types d'objet utilisés
--   cocher la case "inventaire physique" d'un type d'objet utilisé dans la composition du poste de travail permet de définir les objets à déclarer "physiques", permettant l'attribution d'une référence, d'un code d'immobilisation et d'une date d'achat sur l'objet correspondant. Cela permet de créer un inventaire d'objets uniques.
+-   cocher la case "inventaire physique" d'un type d'objet utilisé dans la composition du poste de travail permet de définir les objets à déclarer "physiques", permettant l'attribution d'une <P code="item:reference" />, d'un <P code="item:code" /> et d'une <P code="item:purchaseDate" /> sur l'objet correspondant. Cela permet de créer un inventaire d'objets uniques.
 
 Par défaut, les objets utilisés dans la composition d'un type de poste de travail ne peuvent être référencés et font l'objet d'un simple comptage.
 
@@ -60,4 +60,4 @@ Depuis le plan,
 -   cliquer sur un poste de travail concerné, la fiche du poste de travail apparait
 -   dans l'"inventaire physique du poste de travail", cliquer sur l'icône "crayon" face à l'objet "physique" à renseigner
 
-Les informations de l'objet (Référence, Code d'immobilisation et Date) sont accessibles à droite de l'écran et peuvent être renseignés ou modifiés.
+Les informations de l'objet (<P code="item:reference" />, <P code="item:code" /> et <P code="item:purchaseDate" />) sont accessibles à droite de l'écran et peuvent être renseignés ou modifiés.

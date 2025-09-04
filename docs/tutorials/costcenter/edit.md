@@ -10,7 +10,7 @@ Pour modifier les informations des centres de coût dans Surfy, depuis le menu d
 
  -  cliquer sur "Administration", "Typologies", "centres de coût" puis "Lister les centres de coût"
  -  cliquer sur l'icône en début de ligne du centre de coût à modifier pour "voir plus d'options pour le centre de coût XXX", puis "Modifier le centre de coût XXX"
- -  modifier le "nom du centre de coût" ou sa couleur de représentation sur les plans
+ -  modifier le <P code="costCenter:name" /> du centre de coût ou sa <P code="costCenter:color" /> de représentation sur les plans
  -  pour les centres de coût à ventiler (par exemple les parties communes), indiquer si la ventilation est distribuée par étage ou par bâtiment
  -  sauvegarder les modifications
 

@@ -8,7 +8,7 @@ sidebar_position: 2
 
 -   cliquer sur le poste de travail
 -   dans la fiche du poste de travail à gauche du plan, cliquer sur "Modifier"
--   modifier le nom du poste de travail, son organisation, son centre de coût, sa qualification flex ou de passage
+-   modifier le <P code="workplace:name" /> du poste de travail, son <P code="workplace:organization" />, son <P code="workplace:costCenter" />, sa qualification flex ou de passage
 -   sauvegarder les modifications
 
 ## Modifier le type de poste de travail d'un poste de travail
@@ -20,7 +20,7 @@ Pour changer le type de poste de travail d'un poste de travail sur le plan,
 -   "Sauvegarder" les modifications
 
 :::tip Bon à savoir
-le poste de travail modifié aura la forme et les caractéristiques du nouveau type de poste de travail, mais gardera toutes les informations (nom, organisation, centre de cout, affectations, qualifications) de son ancien type. L'orientation et le placement du poste de travail est également conservé.
+le poste de travail modifié aura la forme et les caractéristiques du nouveau type de poste de travail, mais gardera toutes les informations (<P code="workplace:name" />, <P code="workplace:organization" />, <P code="workplace:costCenter" />, affectations, qualifications) de son ancien type. L'orientation et le placement du poste de travail est également conservé.
 :::
 
 ### Déplacer un poste de travail

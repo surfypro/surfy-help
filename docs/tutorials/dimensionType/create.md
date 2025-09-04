@@ -16,7 +16,7 @@ Pour créer un calque d'analyse, il faut que son type de calque existe.
 Pour créer un type de calque, depuis la page d'accueil :
 
 -   cliquer sur "Administration", "Calques d'analyse", "Types de calque" puis "Créer un type de calque".
--   Nommer le type de calque dans "Nom du type de dimension" (ex: "Nature des sols")
+-   Nommer le type de calque dans <P code="dimensionType:name" /> (ex: "Nature des sols")
 -   "valider la création" du type de calque.
 
 Le type de calque étant créé, on peut associer des calques d'analyse à ce type de calque
@@ -26,9 +26,9 @@ Le type de calque étant créé, on peut associer des calques d'analyse à ce ty
 Une fois que le type de calque est créé ou s'il est déjà existant, on peut créer et lui associer un calque d'analyse:
 
 -   cliquer sur "Administration", "Calques d'analyse", "Calques d'analyse", puis "Créer un calque d'analyse".
--   renseigner le "Nom du calque d'analyse" (ex: "Moquette")
--   choisir le "type de calque" dans la liste des types de calque en cliquant sur le "crayon" (ex: "Nature des sols")
--   choisir une couleur pour représenter les espaces qualifiés par ce calque d'analyse
+-   renseigner le <P code="dimension:name" /> (ex: "Moquette")
+-   choisir le <P code="dimension:dimensionType" /> dans la liste des types de calque en cliquant sur le "crayon" (ex: "Nature des sols")
+-   choisir une <P code="dimension:color" /> pour représenter les espaces qualifiés par ce calque d'analyse
 -   "valider la création" du calque d'analyse.
 
 :::tip Bon à savoir

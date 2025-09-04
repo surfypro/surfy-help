@@ -8,7 +8,7 @@ En modifiant un type d'objet, tous les objets associés à ce type d'objet seron
 ## Modifier les informations du type d'objet Icône
 
 On peut modifier l'icône et les informations d'un type d'objet Icône en modifiant la fiche du type d'objet :
-On peut aussi lui ajouter une photo, changer son nom, sa couleur, renseigner son fabricant, ajouter un modèle 3D,...
+On peut aussi lui ajouter une photo, changer son <P code="itemType:name" />, sa <P code="itemType:color" />, renseigner son fabricant, ajouter un modèle 3D,...
 
 Pour accéder à cette fiche, depuis le menu de gauche,
 
@@ -33,7 +33,7 @@ Pour modifier la famille du type d'objet, depuis le menu de gauche,
 -   rechercher le type d'objet à modifier en cliquant sur l'icone "Filtrer les types d'objet" en haut à droite de l'écran
 -   renseigner le type d'objet à rechercher pour l'isoler dans la liste
 -   au début de la ligne du type d'objet, cliquer sur l'icone "Voir plus d'options pour le type d'objet XXX" puis sur "Modifier le type d'objet XXX"
--   modifier la "famille du type d'objet" en cliquant sur le crayon et choisir la nouvelle famille pour le type d'objet concerné
+-   modifier la <P code="itemType:itemTypeFamily" /> en cliquant sur le crayon et choisir la nouvelle famille pour le type d'objet concerné
 -   sauvegarder les modifications
 
 

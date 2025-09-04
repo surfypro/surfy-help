@@ -7,14 +7,14 @@ En modifiant un type de poste de travail, tous les postes de travail associés �
 
 ## Modifier les informations du type de poste de travail
 
-On peut modifier le nom et la couleur d'un type de poste de travail en modifiant la fiche du type de poste de travail.
+On peut modifier le <P code="workplaceType:name" /> et la <P code="workplaceType:color" /> d'un type de poste de travail en modifiant la fiche du type de poste de travail.
 
 
 Pour accéder à la fiche du poste de travail, depuis le menu de gauche,
 
 -   cliquer sur "Mobiliers", "Typologies" puis "types de poste de travail" et "Lister les types de poste de travail"
 -   au début de la ligne du type de poste de travail, cliquer sur l'icone "Voir plus d'options pour le type de poste de travail XXX" puis sur "Modifier le type de poste de travail XXX"
--   modifier le nom ou la couleur du type de poste de travail à modifier
+-   modifier le <P code="workplaceType:name" /> ou la <P code="workplaceType:color" /> du type de poste de travail à modifier
 -   "Sauvegarder" les modifications
 
 ## Modifier la composition du type de poste de travail
@@ -34,7 +34,7 @@ Pour modifier la composition d'un type de poste de travail, depuis le menu de ga
 -   cliquer sur l'icône "Déplacer le type d'objet" permet de déplacer les types d'objet les uns par rapport aux autres.
 -   cliquer sur "Lister les types d'objet" ouvre une fenêtre à droite de l'écran afin de qualifier les types d'objet:
         -       en définissant le nombre de places assises pour chaque type d'objet dans le papillon en bout de ligne
-        -       en cochant la case "Inventaire physique" du type d'objet, permettant l'attribution d'une référence et code d'immobilisation pour le type d'objet concerné afin de générer des objets physiques d'inventaire.
+        -       en cochant la case "Inventaire physique" du type d'objet, permettant l'attribution d'une <P code="item:reference" /> et <P code="item:code" /> pour le type d'objet concerné afin de générer des objets physiques d'inventaire.
         -       en cliquant sur le signe "=" et glisser pour monter ou descendre un objet dans la liste afin de positionner un objet au dessus d'un autre
 
 :::tip Bon à savoir
@@ -50,7 +50,7 @@ Modifier la composition d'un type de poste de travail peut modifier sa position 
 Depuis la page de composition du type de poste de travail,
 
 -   cliquer sur l'icône "Lister les types d'objet" pour afficher à droite la liste des types d'objet utilisés
--   cocher la case "inventaire physique" d'un type d'objet utilisé dans la composition du poste de travail permet de définir les objets à déclarer "physiques", permettant l'attribution d'une référence, d'un code d'immobilisation et d'une date d'achat sur l'objet correspondant. Cela permet de créer un inventaire d'objets uniques.
+-   cocher la case "inventaire physique" d'un type d'objet utilisé dans la composition du poste de travail permet de définir les objets à déclarer "physiques", permettant l'attribution d'une <P code="item:reference" />, d'un <P code="item:code" /> et d'une <P code="item:purchaseDate" /> sur l'objet correspondant. Cela permet de créer un inventaire d'objets uniques.
 
 Par défaut, les objets utilisés dans la composition d'un type de poste de travail ne peuvent être référencés et font l'objet d'un simple comptage.
 

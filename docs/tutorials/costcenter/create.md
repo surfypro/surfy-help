@@ -13,7 +13,7 @@ Pour plus d'informations sur le calcul de la refacturation dans Surfy, voir le c
  Pour créer un centre de coût, depuis le menu de gauche,
 
  -  cliquer sur "Administration", "Typologies", "centres de coût" puis "Créer un centre de coût"
- -  renseigner le "nom du centre de coût" et sa couleur de représentation sur les plans
+ -  renseigner le <P code="costCenter:name" /> du centre de coût et sa <P code="costCenter:color" /> de représentation sur les plans
  -  pour les centres de coût à ventiler (par exemple les parties communes), indiquer si la ventilation est distribuée par étage ou par bâtiment
  -  valider la création
 

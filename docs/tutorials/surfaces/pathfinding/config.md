@@ -38,7 +38,7 @@ Un connecteur d'espace est associé à un type de connecteur d'espace : Ascenseu
 Pour créer un type de connecteur d'espace supplémentaire (ex: Navette,...) depuis le menu de gauche,
 
 -   cliquer sur "Administration", "Connecteurs" puis "Room Connector Types" et "Créer RoomConnectorType"
--   renseigner le nom du type de connecteur (ex: Navette)
+-   renseigner le <P code="roomConnectorType:name" /> du type de connecteur (ex: Navette)
 -   valider la création
 
 ### Configurer le connecteur d'espace
@@ -49,8 +49,8 @@ La durée du transfert par le connecteur d'espace est prise en compte dans le ca
 Pour créer un connecteur d'espace, depuis le menu de gauche,
 
 -   cliquer sur "Administration", "Connecteurs" puis "Connecteurs d'espace" et "Créer un connecteur d'espace"
--   renseigner le nom (ex: Escalier C) et le type de connecteur d'espace (Escalier)
--   renseigner le temps d'attente moyen et le temps de transfert entre chaque étage
+-   renseigner le <P code="roomConnector:name" /> (ex: Escalier C) et le <P code="roomConnector:roomConnectorType" /> (Escalier)
+-   renseigner le <P code="roomConnector:waitingTime" /> et le <P code="roomConnector:transferTime" /> entre chaque étage
 -   valider la création
 
 Pour associer le connecteur d'espace aux espaces depuis la fiche du connecteur,

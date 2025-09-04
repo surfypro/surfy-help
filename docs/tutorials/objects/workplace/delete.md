@@ -10,7 +10,7 @@ Pour supprimer un poste de travail,
 -   confirmer la suppression
 
 :::warning Attention
-La suppression d'un poste de travail entraine la suppression de l'affectation, du centre de coût, de l'organisation, du type de poste de travail et des informations relatives au poste de travail.
+La suppression d'un poste de travail entraine la suppression de l'affectation, du <P code="workplace:costCenter" />, de l'<P code="workplace:organization" />, du type de poste de travail et des informations relatives au poste de travail.
 :::
 
 ## Supprimer un groupe de postes de travail

@@ -30,8 +30,8 @@ Pour créer un nouveau scénario, depuis la page d'accueil,
 -   cliquer sur l'icône en bas à droite de la fiche du bâtiment pour obtenir "les scénarios et projets du bâtiment XXX"
 -   les fiches des scénarios existants apparaissent
 -   cliquer sur "créer un nouveau scénario"
--   renseigner le nom du scénario à créer (exemple : projet 1, proposition réaménagement Compta, ...)
--   donner une couleur différente de celle du bâtiment d'origine afin d'éviter des erreurs de bâtiment lors des modifications
+-   renseigner le <P code="building:name" /> du scénario à créer (exemple : projet 1, proposition réaménagement Compta, ...)
+-   donner une <P code="building:color" /> différente de celle du bâtiment d'origine afin d'éviter des erreurs de bâtiment lors des modifications
 -   on peut dupliquer ou non :
         -   les postes de travail
         -   les affectations

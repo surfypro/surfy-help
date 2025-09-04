@@ -17,8 +17,8 @@ Pour donner une référence (ou un code d'immobilisation, ou une date d'achat) �
 
 -   cliquer sur l'objet
 -   cliquer sur "Modifier" dans la fiche de l'objet à gauche
--   taper la référence (ou le code d'immobilisation) dans la case concernée
--   indiquer éventuellement la date d'achat de l'objet
+-   taper la <P code="item:reference" /> (ou le <P code="item:code" />) dans la case concernée
+-   indiquer éventuellement la <P code="item:purchaseDate" /> de l'objet
 -   "Sauvegarder" les modifications
 
 :::tip Bon à savoir

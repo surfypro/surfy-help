@@ -17,8 +17,8 @@ Pour créer l'échelle d'un étage dont le fond de plan est déjà entré dans S
 -   cliquer sur le début du segment de l'échelle, un trait rouge apparaît.
 -   cliquer sur la deuxième extrémité du segment de l'échelle
 -   le segment de l'échelle est défini
--   nommer éventuellement l'échelle pour une utilisation sur d'autres étages.
--   renseigner la distance correspondante en mètres dans la case "Distance"
+-   nommer éventuellement l'<P code="mapScale:name" /> pour une utilisation sur d'autres étages.
+-   renseigner la <P code="mapScale:distance" /> correspondante en mètres dans la case "Distance"
 -   valider la valeur entrée en cliquant sur la coche verte.
 
 

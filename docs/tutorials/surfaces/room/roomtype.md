@@ -18,10 +18,10 @@ Avant de créer une nouvelle typologie, comme dans tout choix multiple il est im
 Pour créer une typologie d'espace depuis la page d'accueil :
 
 -   cliquer sur "Administration", "Typologies", "Typologies d'espaces", "Typologies d'espace" puis "Créer une typologie d'espace".
--   nommer la typologie dans "Nom de la typologie d'espace" (ex: "Point Repro").
--   donner une couleur à la typologie pour la vue 2D.
--   on peut donner une couleur  différente pour la vue 3D. A défaut, c'est la couleur 2D qui est utilisée en 3D.
--   on peut définir une icône qui sera affichée sur les espaces de la typologie en vue 3D, et en vue 2D en cliquant sur l'icône "Activer l'affichage des icônes sur le plan en 2D" au dessus du plan en 2D. Cela permet de mettre en avant des points stratégiques (Toilettes, Repro, ascenseurs, ...) sur les plans fournis.
+-   nommer la typologie dans le <P code="roomType:name" /> (ex: "Point Repro").
+-   donner une <P code="roomType:color" /> à la typologie pour la vue 2D.
+-   on peut donner une <P code="roomType:color3d" /> différente pour la vue 3D. A défaut, c'est la couleur 2D qui est utilisée en 3D.
+-   on peut définir une <P code="roomType:icon" /> qui sera affichée sur les espaces de la typologie en vue 3D, et en vue 2D en cliquant sur l'icône "Activer l'affichage des icônes sur le plan en 2D" au dessus du plan en 2D. Cela permet de mettre en avant des points stratégiques (Toilettes, Repro, ascenseurs, ...) sur les plans fournis.
 
 Pour plus d'informations sur les champs à compléter, voir les [propriétés de base de la Typologie d'espace](/entities/admin/types/room-types/room-type).
 

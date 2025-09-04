@@ -77,7 +77,7 @@ Pour digitaliser efficacement les espaces, on peut créer chacun des espaces ind
 
 ## Qualifier un espace
 
--   une fois l'espace créé, on doit le "modifier" sur sa fiche à gauche du plan pour lui donner un nom, une capacité éventuelle, une organisation, une typologie de l'espace, un centre de coût.
+-   une fois l'espace créé, on doit le "modifier" sur sa fiche à gauche du plan pour lui donner un <P code="room:name" />, une <P code="room:capacity" /> éventuelle, une <P code="room:organization" />, une <P code="room:roomType" /> de l'espace, un <P code="room:costCenter" />.
 -   "sauvegarder" les informations.
 -   compléter éventuellement les qualifications dans les différents calques d'analyse. La sauvegarde de ces informations est automatique.
 

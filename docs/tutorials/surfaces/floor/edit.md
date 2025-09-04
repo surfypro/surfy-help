@@ -16,7 +16,7 @@ Pour modifier les informations de l'étage et importer le fond de plan,
 
 Les informations peuvent être renseignées ou modifiées :
 
--   modifier le "nom" de l'étage et son "niveau" par rapport aux autres étages
+-   modifier le <P code="floor:name" /> de l'étage et son <P code="floor:level" /> par rapport aux autres étages
 -   renseigner une "hauteur sous plafond" utile pour la vue 3D de l'étage
 -   renseigner la "capacité réglementaire" éventuelle en fonction de critères imposés (nombre de sanitaires, ...). Les capacités réglementaires seront cumulées sur l'ensemble du bâtiment pour donner une capacité réglementaire globale sur le bâtiment.
 -   donner une opacité du fond de plan permettant d'obtenir un fond de plan plus ou moins apparent

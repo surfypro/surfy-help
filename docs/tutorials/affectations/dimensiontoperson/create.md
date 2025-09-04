@@ -19,7 +19,7 @@ Pour affecter une personne à un quartier,
 
 -   cliquer dans le quartier pour le sélectionner sur le plan
 -   cliquer sur l'icône "Affecter une personne à XXX" en haut à gauche de la fiche du quartier
--   Rechercher et sélectionner dans la liste la personne à affecter
+-   Rechercher et sélectionner dans la liste la <P code="dimensionToPerson:person" /> à affecter
 
 La personne est affectée au quartier.
 

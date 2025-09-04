@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 ---
-# Créer un type d’objet à l’échelle
+# Créer un type d'objet à l'échelle
 
 ## Créer la fiche du type d'objet
 
@@ -9,25 +9,25 @@ sidebar_position: 1
 
 Pour créer un type d'objet à l'échelle, depuis le menu de gauche,
 
--	cliquer sur « Mobiliers », « Typologies », « Types d’objet », puis « Créer un type d’objet ».
--	renseigner le « nom » du type d’objet à créer
--	par défaut, l’« indice de hauteur » est à 0. Il peut être négatif. En cas de chevauchement entre deux types d’objet, celui avec l’indice le plus haut sera systématiquement placé au-dessus de l’autre.
--	la « Famille de types d’objet » permet d’afficher les objets par Famille sur les plans et dans l’inventaire en pdf.
+-	cliquer sur « Mobiliers », « Typologies », « Types d'objet », puis « Créer un type d'objet ».
+-	renseigner le <P code="itemType:name" /> du type d'objet à créer
+-	par défaut, l'<P code="itemType:zIndex" /> est à 0. Il peut être négatif. En cas de chevauchement entre deux types d'objet, celui avec l'indice le plus haut sera systématiquement placé au-dessus de l'autre.
+-	la <P code="itemType:itemTypeFamily" /> permet d'afficher les objets par Famille sur les plans et dans l'inventaire en pdf.
 
 Ces trois premiers champs (Nom, Indice de hauteur, Famille) sont obligatoires.
 
--	le champ « Photo » permet de charger la photo du type d’objet, qui sera visible dans l’inventaire en pdf et sur la fiche de l’objet sélectionné sur le plan.
--	cocher « Afficher les informations sur le plan » permet d’afficher le champ « Référence » de chaque objet sur le plan.
--	un « Code » particulier vous donnera accès directement au type d’objet en le tapant dans la recherche lors de la création d’objet.
--	le choix « Icône » ne doit pas être renseigné dans le cas de création de type d’objet à l’échelle.
--	la « couleur » peut être choisie parmi une sélection, ou par code Hexa ou RGB pour respecter votre charte graphique.
--	la « Hauteur » donnera dans ce cas la hauteur du modèle 3D associé, s’il existe.
--	« Description » et « Prix » peuvent être renseignés.
--	« Nombre de places assises » (uniquement pour les assises, sièges, canapés, etc…) et « Empreinte Carbone » (donnée éventuellement par le fabricant, par objet) peuvent être renseignés et sont cumulés dans Surfy par pièce, étage ou bâtiment.
--	les champs « Forme de l’icône », « Couleur de fond » et « couleur de bordure » sont réservés aux créations d’icônes et ne sont pas à renseigner en création de types d’objet à l’échelle.
--	le « Fabricant » peut être renseigné. Si le fabricant n'est pas dans la liste, on peut "créer et associer un fabricant de type d'objet" directement depuis la liste.
--	le « Modèle 3D » permet une visualisation 3D des Objets issus du type d’objet et placés sur le plan.
--	la « Clé externe » permet d’identifier le type d’objet avec une utilisation extérieure à Surfy (interopérabilité avec des applications tiers)
+-	le champ <P code="itemType:picture" /> permet de charger la photo du type d'objet, qui sera visible dans l'inventaire en pdf et sur la fiche de l'objet sélectionné sur le plan.
+-	cocher <P code="itemType:displayItemReferenceInMap" /> permet d'afficher le champ « Référence » de chaque objet sur le plan.
+-	un <P code="itemType:code" /> particulier vous donnera accès directement au type d'objet en le tapant dans la recherche lors de la création d'objet.
+-	le choix « Icône » ne doit pas être renseigné dans le cas de création de type d'objet à l'échelle.
+-	la <P code="itemType:color" /> peut être choisie parmi une sélection, ou par code Hexa ou RGB pour respecter votre charte graphique.
+-	la <P code="itemType:height" /> donnera dans ce cas la hauteur du modèle 3D associé, s'il existe.
+-	<P code="itemType:description" /> et <P code="itemType:price" /> peuvent être renseignés.
+-	<P code="itemType:seatsCount" /> (uniquement pour les assises, sièges, canapés, etc…) et <P code="itemType:carbonFootprint" /> (donnée éventuellement par le fabricant, par objet) peuvent être renseignés et sont cumulés dans Surfy par pièce, étage ou bâtiment.
+-	les champs « Forme de l'icône », « Couleur de fond » et « couleur de bordure » sont réservés aux créations d'icônes et ne sont pas à renseigner en création de types d'objet à l'échelle.
+-	le <P code="itemType:manufacturer" /> peut être renseigné. Si le fabricant n'est pas dans la liste, on peut "créer et associer un fabricant de type d'objet" directement depuis la liste.
+-	le <P code="itemType:object3dModel" /> permet une visualisation 3D des Objets issus du type d'objet et placés sur le plan.
+-	la « Clé externe » permet d'identifier le type d'objet avec une utilisation extérieure à Surfy (interopérabilité avec des applications tiers)
 -	« Valider la création ».
 
 Il reste maintenant à créer la forme pour le type d'objet à l'échelle.

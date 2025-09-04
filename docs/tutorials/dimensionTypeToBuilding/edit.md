@@ -13,7 +13,7 @@ On peut modifier directement un calque d'affectation, depuis la page d'accueil :
 -   cliquer sur "Administration", "Calques d'analyse", "Calques d'analyse", puis "Lister les calques d'analyse".
 -   rechercher dans la liste le calque d'affectation à modifier
 -   au début de la ligne du calque concerné, cliquer sur l'icône puis sur "Modifier le calque d'analyse XXX"
--   modifier le "Nom du calque d'analyse" ou sa couleur
+-   modifier le <P code="dimension:name" /> du calque d'analyse ou sa <P code="dimension:color" />
 -   "sauvegarder" les modifications du calque d'affectation.
 
 Aprsè rafraichissement (F5), le calque d'affectation prend en compte les modifications effectuées.
@@ -30,7 +30,7 @@ Pour modifier un type de calque, depuis la page d'accueil :
 
 On peut alors :
 
--   modifier le "nom du type de dimension", la description du type de calque
+-   modifier le <P code="dimensionType:name" /> du type de dimension, la description du type de calque
 -   ajouter un calque au type de calque concerné en cliquant sur "Créer un calque d'analyse"
 -   modifier les calques associés au type de calque en cliquant sur l'icône en début de ligne puis "Modifier le calque d'analyse XXX"
 -   supprimer un calque d'analyse associé au type de calque en cochant la case en début de ligne puis "supprimer" par la "Poubelle" en haut de page
