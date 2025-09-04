@@ -1,0 +1,9 @@
+{
+    "label": "Cost Management",
+    "position": 5,
+    "link": {
+        "slug": "rebillcourse",
+        "type": "generated-index",
+        "description": "Steps to manage costs"
+    }
+}

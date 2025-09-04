@@ -1,0 +1,9 @@
+{
+    "label": "Building Occupation",
+    "position": 4,
+    "link": {
+        "slug": "occupation",
+        "type": "generated-index",
+        "description": "Steps to manage building occupation"
+    }
+}
