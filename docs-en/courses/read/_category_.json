@@ -1,0 +1,9 @@
+{
+  "label": "Reader Mode",
+  "position": 1,
+  "link": {
+    "slug": "reader",
+    "type": "generated-index",
+    "description": "Reader mode features"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "label": "Everything about Plans",
+  "position": 0,
+  "link": {
+    "slug": "views",
+    "type": "generated-index",
+    "description": "Everything about visualizing 2D and 3D plans"
+  }
+}

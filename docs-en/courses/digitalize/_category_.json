@@ -1,0 +1,9 @@
+{
+    "label": "Digitize Spaces",
+    "position": 3,
+    "link": {
+        "slug": "digitalize",
+        "type": "generated-index",
+        "description": "Everything about digitizing a building"
+    }
+}

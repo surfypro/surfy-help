@@ -1,0 +1,9 @@
+{
+  "label": "Courses",
+  "position": 4,
+  "link": {
+    "slug": "courses",
+    "type": "generated-index",
+    "description": "Our courses are composed of tutorial sequences"
+  }
+}

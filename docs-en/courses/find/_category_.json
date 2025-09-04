@@ -1,0 +1,9 @@
+{
+  "label": "Search in Surfy",
+  "position": 2,
+  "link": {
+    "slug": "find",
+    "type": "generated-index",
+    "description": "Everything about searching for elements in Surfy"
+  }
+}
