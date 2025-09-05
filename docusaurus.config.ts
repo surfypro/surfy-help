@@ -97,7 +97,7 @@ const config: Config = {
           },
           {
             from: '/en',
-            to: '/docs/tutorials/intro'
+            to: '/en/docs/tutorials/intro'
           }
         ]
       }

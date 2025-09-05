@@ -12,11 +12,11 @@
     "description": "The generated-index page description for category Se connecter in sidebar s1"
   },
   "sidebar.s1.category.Les Tutoriels": {
-    "message": "Les Tutoriels",
+    "message": "Tutorials",
     "description": "The label for category Les Tutoriels in sidebar s1"
   },
   "sidebar.s1.category.Les Tutoriels.link.generated-index.description": {
-    "message": "Les tutoriels accompagnent l'utilisateur dans l'apprentissage d'une fonctionnalité.",
+    "message": "Tutorials guide users through learning a feature.",
     "description": "The generated-index page description for category Les Tutoriels in sidebar s1"
   },
   "sidebar.s1.category.Les Surfaces": {
