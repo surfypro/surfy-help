@@ -33,6 +33,7 @@ const config: Config = {
       en: {
         label: 'English',
         path: '/en',
+        htmlLang: 'en-US',
       },
     },
   },
@@ -88,11 +89,17 @@ const config: Config = {
     [
       '@docusaurus/plugin-client-redirects',
       {
-        redirects: [{
-          from: '/docs/changelog',
-          to: '/changelog/app'
-          // to: '/docs/intro'
-        }]
+        redirects: [
+          {
+            from: '/docs/changelog',
+            to: '/changelog/app'
+            // to: '/docs/intro'
+          },
+          {
+            from: '/en',
+            to: '/docs/tutorials/intro'
+          }
+        ]
       }
     ],
     [
