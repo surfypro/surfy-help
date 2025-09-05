@@ -23,7 +23,7 @@ To create a space typology from the home page:
 -   you can give a different <P code="roomType:color3d" /> for the 3D view. By default, the 2D color is used in 3D.
 -   you can define an <P code="roomType:icon" /> which will be displayed on spaces of the typology in 3D view, and in 2D view by clicking on the "Activate icon display on 2D plan" icon above the 2D plan. This allows you to highlight strategic points (Toilets, Repro, elevators, ...) on the provided plans.
 
-For more information on the fields to complete, see the [basic properties of Space Typology](/entities/admin/types/room-types/room-type).
+For more information on the fields to complete, see the [basic properties of Space Typology](/en/entities/admin/types/room-types/room-type).
 
 -   "validate the creation" of the typology.
 
@@ -84,7 +84,7 @@ To edit a space typology, for example its name or color, from the home page:
 -   modify the information,
 -   "Save" the modifications.
 
-For more information on the fields to complete, see the [basic properties of Space Typology](/entities/admin/types/room-types/room-type).
+For more information on the fields to complete, see the [basic properties of Space Typology](/en/entities/admin/types/room-types/room-type).
 
 :::tip GOOD TO KNOW
 You can also modify a typology from a space qualified by this typology, by clicking in the space then on the icon to the right of the "Space Typology" line of the space's record. This "See more options for typology XXX" icon allows you to "Edit space typology XXX" and access typology modification directly.

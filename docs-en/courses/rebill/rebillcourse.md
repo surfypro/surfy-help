@@ -19,6 +19,6 @@ See the tutorials chapter [Recharge Spaces by Cost Center](/docs/tutorials/cost-
 ## Estimate a Cleaning Service
 
     -   [Define cleaning frequencies](/docs/tutorials/dimensionType/create.md#create-and-associate-an-analysis-layer-to-a-layer-type)
-    -   Define [cleaning cadences](/entities/admin/types/room-types/room-type#cadence) of space typologies or Define the <P code="roomType:cadence"/>
+    -   Define [cleaning cadences](/en/entities/admin/types/room-types/room-type#cadence) of space typologies or Define the <P code="roomType:cadence"/>
     -   [Qualify spaces by cleaning frequency](/docs/tutorials/surfaces/room/edit#qualify-a-space-or-edit-space-information)
     -   [Obtain the monthly hours needed for the cleaning service](/docs/tutorials/BuildingData/Buildingdashboard/Buildingreporting#building-cleaning-services-report)
