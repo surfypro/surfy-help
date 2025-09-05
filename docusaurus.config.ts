@@ -94,10 +94,6 @@ const config: Config = {
             from: '/docs/changelog',
             to: '/changelog/app'
             // to: '/docs/intro'
-          },
-          {
-            from: '/en',
-            to: '/en/docs/tutorials/intro'
           }
         ]
       }
@@ -109,7 +105,7 @@ const config: Config = {
         path: 'entities',
         routeBasePath: 'entities',
         sidebarPath: './sidebars.ts',
-        // ... other options
+        editUrl: 'https://github.com/surfypro/surfy-help/tree/main/',
       },
     ],
     // [
