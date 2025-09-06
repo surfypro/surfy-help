@@ -1,9 +1,0 @@
-{
-  "label": "L'inventaire du mobilier",
-  "position": 5,
-  "link": {
-    "slug": "inventory",
-    "type": "generated-index",
-    "description": "Tout savoir sur l'inventaire du mobilier"
-  }
-}

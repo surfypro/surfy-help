@@ -1,9 +1,0 @@
-{
-  "label": "Les Profils Sécurité",
-  "position": 4,
-  "link": {
-    "slug": "securityprofiles",
-    "type": "generated-index",
-    "description": "Les profils Sécurité dans Surfy"
-  }
-}
