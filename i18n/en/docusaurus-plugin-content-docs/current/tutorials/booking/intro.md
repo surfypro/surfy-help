@@ -2,111 +2,111 @@
 sidebar_position: 1
 ---
 
-# Getting Started Guide
+# Guide de démarrage
 
-## Prerequisites for Using Booking with Surfy
+## Prérequis pour l'utilisation de la réservation avec Surfy
 
-Surfy offers to digitize building plans to globally facilitate workplace environment management.<br />
-To use Surfy's booking features, the company must have a Surfy platform.<br />
+Surfy propose de digitaliser les plans des bâtiments pour faciliter globalement la gestion de l'environnement de travail.<br />
+Pour utiliser les fonctionnalités de réservation de Surfy, l'entreprise doit avoir une plateforme Surfy.<br />
 
-If the company is not yet using Surfy, it is necessary to contact our teams via our [contact page](https://www.surfy.pro/contact).<br />
-A dedicated platform will be assigned to you, a building must be digitized and people created.<br />
+Si l'entreprise n'utilise pas encore Surfy, il est nécessaire de prendre contact avec nos équipes via notre [page de contact](https://www.surfy.pro/contact).<br />
+Une plateforme dédiée vous sera attribuée, un bâtiment doit être digitalisé et les personnes créées.<br />
 
-If the company's plans are already digitized in Surfy, booking features are available immediately, after the company accepts the booking license with Surfy ([Contact us](https://www.surfy.pro/contact)), and after [configuring assignment neighborhoods](/docs/tutorials/dimensionTypeToBuilding/create) and [assigning collaborators to assignment neighborhoods](/docs/tutorials/affectations/dimensiontoperson/create).
+Si les plans de l'entreprise sont déjà digitalisés dans Surfy, les fonctionnalités de réservation sont disponibles dès maintenant, après acceptation par l'entreprise de la licence de réservation auprès de Surfy ([Nous contacter](https://www.surfy.pro/contact)), et après [configuration des quartiers d'affectation](/en/docs/tutorials/dimensionTypeToBuilding/create) et [affectation des collaborateurs aux quartiers d'affectation](/en/docs/tutorials/affectations/dimensiontoperson/create).
 
 
 
-## Available Booking Features
+## Fonctionnalités de réservation disponibles
 
-Booking features are only available in French.<br />
-Each authorized collaborator can use Surfy's booking features to:
+Les fonctionnalités de réservation sont disponibles uniquement en Français.<br />
+Chaque collaborateur autorisé peut utiliser les fonctionnalités de réservation de Surfy pour :
 
--   book a workstation
--   indicate that you are teleworking
--   see which colleagues have booked a workstation in your neighborhood
--   search for a colleague and get their bookings for the upcoming booking period
--   visualize all bookings on a floor for a given day
+-   réserver un poste de travail
+-   indiquer que vous êtes en télétravail
+-   voir quels collègues ont réservé un poste de travail dans votre quartier
+-   rechercher un collègue et obtenir ses réservations sur la période de réservation à venir
+-   visualiser toutes les réservations sur un étage un jour donné
 
-## Configure Booking Settings
+## Configuration des paramètres de la réservation
 
-Booking configuration settings are accessible by the Surfy administrator.<br />
+Les paramètres de configuration de la réservation sont accessibles par l'administrateur Surfy.<br />
 
-### Configure the Booking Window
+### Configuration de la fenêtre de réservation
 
-To configure the booking window, from the left menu,
+Pour configurer la fenêtre de réservation, depuis le menu de gauche,
 
--   click on "Administration" then "Companies" then "Company view in tiles"
--   click on the "pencil" icon at the bottom of the company's record to "edit company XXX"
--   defining the "number of planning days" allows you to establish the number of days for the sliding booking window
+-   cliquer sur "Administration" puis "Entreprises" puis "Vue des entreprises en tuiles"
+-   cliquer sur l'icône "crayon" en bas de la fiche de l'entreprise pour "modifier l'entreprise XXX"
+-   définir le "nombre de jours du planning" permet d'établir le nombre de jours de la fenêtre glissante de réservation
 
-:::tip AT THIS STAGE
-Checking the "Activate dimension overload for booking" box allows you to activate priority management on booking neighborhoods.
-If a collaborator's booking neighborhood is saturated, Surfy can propose to the collaborator to book on another neighborhood whose priority is lower.
+:::tip A CE STADE
+Cocher la case "Activer la surcharge des dimensions pour la réservation" permet d'activer la gestion de priorités sur les quartiers de réservation.
+Si le quartier de réservation d'un collaborateur est saturé, Surfy peut proposer au collaborateur de réserver sur un autre quartier dont la priorité est inférieure.
 :::
 
--   save the modification
--   click on the company logo at the top left of the screen, and refresh (F5).
+-   sauvegarder la modification
+-   cliquer sur le logo de l'entreprise en haut à gauche de l'écran, et rafraichir (F5).
 
-### Manage Booking Neighborhood Priorities
+### Gérer les priorités des quartiers de réservation
 
-To activate priority management on assignment neighborhoods, it is necessary to check the "Activate dimension overload for booking" box in the company's record (See above).
+Pour activer la gestion des priorités sur les quartiers d'affectation, il est nécessaire de cocher la case "Activer la surcharge des dimensions pour la réservation" dans la fiche de l'entreprise (Voir ci-dessus).
 
-Each booking neighborhood has an "overload rate for booking" indicating the fill rate from which it is considered saturated. By default, this rate is set to 85% (0.85).
+Chaque quartier de réservation dispose d'un "taux de surcharge pour la réservation" indiquant le taux de remplissage à partir duquel il est considéré comme saturé. Par défaut, ce taux est fixé à 85% (0,85).
 
-To modify a booking neighborhood's overload rate, from the left menu,
+Pour modifier le taux de surcharge d'un quartier de réservation, depuis le menu de gauche,
 
--   click on "Administration", "Analysis Layers", "Analysis Layers" then "List analysis layers"
--   click on the icon at the beginning of the line of the layer to modify for "Edit analysis layer XXX".
--   modify the value of "Overload rate for booking" (1=100%)
--   save the modifications.
+-   cliquer sur "Administration", "Calques d'analyse", "Calques d'analyse" puis "Lister les calques d'analyse"
+-   cliquer sur l'icône en début de ligne du calque à modifier pour "Modifier le calque d'analyse XXX".
+-   modifier la valeur du "Taux de surcharge pour la réservation" (1=100%)
+-   sauvegarder les modifications.
 
-Each collaborator assignment to a neighborhood has a priority number.<br />
-By default, the priority number is "0" and corresponds to maximum priority.<br />
-The higher the priority number, the lower the neighborhood priority will be.
+Chaque affectation de collaborateur à un quartier dispose d'un numéro de priorité.<br />
+Par défaut, le numéro de priorité est "0" et correspond à la priorité maximale.<br />
+Plus le numéro de priorité est grand, plus la priorité au quartier sera basse.
 
-To modify a neighborhood assignment's priority, from the left menu,
+Pour modifier la priorité d'une affectation à un quartier, depuis le menu de gauche,
 
--   click on "Assignments", "Assignments to assignment layers" then "List assignments to assignment layers"
--   click on the icon at the beginning of the line of the assignment to modify for "Edit assignment to assignment layer XXX"
--   modify the "Priority" value
--   save the modifications.
+-   cliquer sur "Affectations", "Affectations aux calques d'affectation" puis "Lister les affectations aux calques d'affectation"
+-   cliquer sur l'icône en début de ligne de l'affectation à modifier pour "Modifier l'affectation au calque d'affectation XXX"
+-   modifier la valeur de la "Priorité"
+-   sauvegarder les modifications.
 
-If a collaborator's assignment to a neighborhood has a priority of "0", the corresponding neighborhood will systematically be proposed to the collaborator for booking.
+Si l'affectation d'un collaborateur à un quartier a une priorité à "0", le quartier correspondant sera systématiquement proposé au collaborateur pour la réservation.
 
-If a neighborhood's overload rate for booking is reached and a collaborator assigned to this neighborhood is also assigned to a lower priority neighborhood on the same building, the lower priority neighborhood is proposed to them for booking.
+Si le taux de surcharge pour la réservation d'un quartier est atteint et qu'un collaborateur affecté à ce quartier est également affecté à un quartier de priorité plus basse sur le même bâtiment, le quartier de priorité plus basse lui est proposé à la réservation.
 
-Several collaborator assignments to neighborhoods can have an identical priority number. The corresponding neighborhoods will then follow an identical priority rule.<br />
+Plusieurs affectations d'un collaborateur aux quartiers peuvent avoir un numéro de priorité identique. Les quartiers correspondants suivront alors une règle de priorité identique.<br />
 
-:::tip GOOD TO KNOW
-A saturated neighborhood can indicate an occupancy of more than 100%. Indeed, if bookings have been made in half-day, the number of bookings can then exceed the number of bookable workstations.
+:::tip BON A SAVOIR
+Un quartier saturé peut indiquer une occupation à plus de 100%. En effet, si des réservations ont été effectuées en demi-journée, le nombre de réservation peut alors dépasser le nombre de postes réservables.
 :::
 
 
-## Access to Booking Features
+## Accès aux fonctionnalités de réservation
 
-Booking in Surfy is accessible to collaborators in the application via a browser, or from Teams by adding the "Surfy" application.
+La réservation dans Surfy est accessible aux collaborateurs dans l'application via un navigateur, ou depuis Teams en ajoutant l'application "Surfy".
 
-To access Surfy via a browser, go to [app.surfy.pro](https://app.surfy.pro/login) from Chrome, Edge, Firefox, Safari,...
-then the collaborator uses their account to access the features they are authorized to use.
+Pour accéder à Surfy par un navigateur, se rendre sur [app.surfy.pro](https://app.surfy.pro/login) depuis Chrome, Egde, Firefox, Safari,...
+puis le collaborateur utilise son compte pour accéder aux fonctionnalités qui lui sont autorisées.
 
-To add the Surfy application in Teams, the collaborator clicks on "Applications" and searches for "Surfy" to add it to their Teams applications.
-Once added in Teams, the application allows the collaborator to access the features they are authorized to use.
+Pour ajouter l'application Surfy dans Teams, le collaborateur clique sur "Applications" et recherche "Surfy" pour l'ajouter à ses applications Teams.
+Une fois ajoutée dans Teams, l'application permet au collaborateur d'accéder aux fonctionnalités qui lui sont autorisées.
 
-Both accesses lead to the same features.<br />
-Using Teams offers a more direct experience and better adapted to using booking features on smartphone.
+Les deux accès mènent aux mêmes fonctionnalités.<br />
+L'utilisation de Teams offre une expérience plus directe et plus adaptée à une utilisation des fonctionnalités de réservation sur smartphone.
 
-More information on [booking features via the Surfy application](/docs/tutorials/booking/workplace) and for [using Teams for booking features](/docs/tutorials/booking/teams).
+Plus d'informations sur [les fonctionnalités de réservation via l'application Surfy](/en/docs/tutorials/booking/workplace) et pour [utiliser Teams pour les fonctionnalités de réservation](/en/docs/tutorials/booking/teams).
 
-# Application Security & Compliance for IT Administrators
+# Sécurité de l'application & conformité pour les administrateurs IT
 
-The application is hosted at Microsoft Azure France. It complies with GDPR regulations.
+L'application est hébérgée chez Microsoft Azure France. Elle est conforme aux réglementations RGPD.
 
-Find all our commitments on [security](https://www.surfy.pro/security)
+Retrouvez tous nos engagements sur la [sécurité](https://www.surfy.pro/security)
 
-# Deployment & Adoption for IT Administrators
+# Déploiement & adoption pour les administrateurs IT
 
-In order to be able to load user images, the company administrator must give their consent.
-The requested consents are as follows:
+Afin de pouvoir charger les images des utilisateurs, l'administrateur de l'entreprise doit donner son consentement.
+Les consentements demandés sont les suivants :
 
 - profile
 - email
@@ -114,6 +114,6 @@ The requested consents are as follows:
 - offline_access
 - User.Read
 
-# How to Get Support?
+# Comment obtenir du support ?
 
-Our team remains available to support you, please refer to our [contact page](https://www.surfy.pro/contact) to get help.
+Notre équipe reste disponible pour vous accompagner, merci de vous reporter à notre [page de contact](https://www.surfy.pro/contact) pour obtenir de l'aide.

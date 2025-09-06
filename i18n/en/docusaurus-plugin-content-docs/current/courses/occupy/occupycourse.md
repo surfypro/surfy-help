@@ -2,52 +2,54 @@
 sidebar_position: 1
 ---
 
-# Assignments and Reservations
+# Affectations et réservations
 
-## People Assignment
+## Affectation des personnes
 
-### Assign People to Workstations, Spaces, Buildings
+### Affecter les personnes aux postes de travail, aux espaces, aux bâtiments
 
-[Create a Person](/docs/tutorials/person/create.md)
+[Créer une personne](/en/docs/tutorials/person/create.md)
 
-[Create and Assign a Person](/docs/tutorials/affectations/workplaceaffectation/create.md#create-and-assign-a-person-to-a-workstation)
+[Créer et affecter une personne](/en/docs/tutorials/affectations/workplaceaffectation/create.md#cr%C3%A9er-et-affecter-une-personne-%C3%A0-un-poste-de-travail)
 
-[Import a List of People](/docs/tutorials/person/create.md#import-people)
-
-
-[Assign a Person in Surfy](/docs/tutorials/affectations/intro.md)
-
-Assign people in bulk [to workstations](/docs/tutorials/affectations/workplaceaffectation/create.md#assign-people-to-workstations-by-excel-import), [to spaces](/docs/tutorials/affectations/roomaffectation/create.md#assign-people-to-spaces-by-excel-import) or [to buildings](/docs/tutorials/affectations/personToBuilding/create.md#assign-people-to-building-by-excel-import)
+[Importer une liste de personnes](/en/docs/tutorials/person/create.md#importer-des-personnes)
 
 
+[Affecter une personne dans Surfy](/en/docs/tutorials/affectations/intro.md)
 
-
-### Set Up Neighborhood Assignment
-
-[Create Neighborhood Assignment Layers](/docs/tutorials/dimensionTypeToBuilding/create.md)
-
-[Qualify Spaces by Neighborhood Assignment Layers](/docs/tutorials/dimensionTypeToBuilding/create.md#qualify-a-space-by-an-assignment-layer)
-
-[Visualize Neighborhood Assignment Layers](/docs/tutorials/dimensionTypeToBuilding/create.md#visualize-assignment-layers)
-
-[Assign People to Neighborhoods](/docs/tutorials/affectations/dimensiontoperson/create.md)
-
-[List Neighborhood Assignments](/docs/courses/find/listfindcourse.md)
-
-[Export Neighborhood Assignment People Report](/docs/tutorials/dimensionTypeToBuilding/create.md#assignment-layer-data-report)
-
-## Workstation and Space Reservations
-
-### Set Up Workstation Reservations
+Affecter des personnes en masse [aux postes de travail](/en/docs/tutorials/affectations/workplaceaffectation/create.md#affecter-des-personnes-aux-postes-de-travail-par-import-excel), [aux espaces](/en/docs/tutorials/affectations/roomaffectation/create.md#affecter-des-personnes-aux-espaces-par-import-excel) ou [aux bâtiments](/en/docs/tutorials/affectations/personToBuilding/create.md#affecter-des-personnes-au-bâtiment-par-import-excel)
 
 
 
-[Reserve in Surfy](/docs/tutorials/booking/workplace.md)
 
-[Use Teams for Surfy Reservations](/docs/tutorials/booking/teams.md)
+### Mettre en place l'affectation aux quartiers
+
+[Créer les calques d'affectation aux quartiers](/en/docs/tutorials/dimensionTypeToBuilding/create.md)
+
+[Qualifier les espaces par calques d'affectation aux quartiers](/en/docs/tutorials/dimensionTypeToBuilding/create.md#qualifier-un-espace-par-un-calque-daffectation)
+
+[Visualiser les calques d'affectation aux quartiers](/en/docs/tutorials/dimensionTypeToBuilding/create.md#visualiser-les-calques-daffectation)
+
+[Affecter les personnes aux quartiers](/en/docs/tutorials/affectations/dimensiontoperson/create.md)
+
+[Lister les affectations aux quartiers](/en/docs/courses/find/listfindcourse.md)
+
+[Exporter le rapport des personnes affectées par quartier](/en/docs/tutorials/dimensionTypeToBuilding/create.md#rapport-des-donn%C3%A9es-des-calques-daffectation)
+
+## Réservation des postes de travail et des espaces
+
+### Mettre en place la réservation des postes de travail
 
 
-### Set Up Space Reservations
 
-Space reservations (Meeting rooms, parking spaces, ...) are not yet operational in Surfy.
-Please contact the Surfy team for rapid implementation of this functionality.
+[Réserver dans Surfy](/en/docs/tutorials/booking/workplace.md)
+
+[Utiliser Teams pour la réservation dans Surfy](/en/docs/tutorials/booking/teams.md)
+
+
+### Mettre en place la réservation d'espace
+
+La réservation d'espace (Salle de réunion, place de parking,...) n'est pas encore opérationnelle dans Surfy.
+Merci de vous rapprocher de l'équipe Surfy pour une mise en oeuvre rapide de cette fonctionnalité.
+
+

@@ -1,88 +1,96 @@
 ---
 sidebar_position: 2
 ---
-# Edit a Person
+# Modifier une Personne
 
-## Search for a person
 
-You can access the person's file in several ways:
+## Rechercher une personne
 
--       through the magnifying glass by performing a search then clicking on the searched person
--       through the [filtered list](/docs/courses/find/listfindcourse) of people ("collaborators", "People", "List people" then "filter people")
--       through the person's assignment by clicking in the space or on the person's workstation then on the "see more options for the person" icon next to the assigned person's name in the space or workstation file
--       through the file of the object associated with the person, by clicking on the object then on the "see more options for the person" icon
--       through the file of people in relationship with this person (manager, managed person)
+On peut accéder à la fiche de la personne de plusieurs façons :
 
-:::tip Good to know
-From the "See more options for the person" icon, you can also "See the person's information in the sidebar" to display the person's information on the right side of the screen
+-       par la loupe en effectuant une recherche puis en cliquant sur la personne recherchée
+-       par la [liste filtrée](/en/docs/courses/find/listfindcourse) des personnes ("collaborateurs", "Personnes", "Lister les personnes" puis "filtrer les personnes")
+-       par l'affectation de la personne en cliquant dans l'espace ou sur le poste de travail de la personne affectée puis sur l'icône "voir plus d'option pour la personne" en face du nom de la personne affectée dans la fiche de l'espace ou du poste de travail
+-       par la fiche de l'objet associé à la personne, en cliquant sur l'objet puis sur l'icône "voir plus d'option pour la personne"
+-       par la fiche des personnes en relation avec cette personne (manager, personne managée)
+
+
+:::tip Bon à savoir
+Depuis l'icône "Voir plus d'option pour la personne", on peut également "Voir les informations pour la personne dans la barre latérale" pour afficher les informations de la personne à droite de l'écran
 :::
 
-## Edit a person's information
+## Modifier les informations d'une personne
 
-To edit a person's information,
+Pour modifier les informations d'une personne,
 
--   search for the person with the magnifying glass, by name, first name or employee number
--   click on the searched result
--   in the context menu (gray label under the search magnifying glass), click on "edit person XXX". 
--   modify the optional information: 
-        -   <P code="person:email" />, <P code="person:picture" />, <P code="person:title" /> of the person, <P code="person:monitorReference" />, <P code="person:computerReference" />, <P code="person:telephone" />, <P code="person:cellphone" />, <P code="person:code" />, <P code="person:startDate" />, <P code="person:endDate" />, <P code="person:info" />
-        -   the <P code="person:notAffectable" /> property allows qualifying people who cannot be assigned, people on maternity leave or long-term leave
-        -   indicate the person's <P code="person:organization" /> from the list of already created organizations
-        -   fill in the <P code="person:personState" />, the <P code="person:personSecurityProfile" />, the <P code="person:costCenter" />, the person's <P code="person:company" />
-        -   validate the modifications.
+-   rechercher la personne avec la loupe, par nom, prénom ou matricule
+-   cliquer sur le résultat recherché
+-   dans le menu contextuel (etiquette grise sous la loupe de recherche), cliquer sur "modifier la personne XXX". 
+-   modifier les informations éventuelles : 
+        -   <P code="person:email" />, <P code="person:picture" />, <P code="person:title" /> de la personne, <P code="person:monitorReference" />, <P code="person:computerReference" />, <P code="person:telephone" />, <P code="person:cellphone" />, <P code="person:code" />, <P code="person:startDate" />, <P code="person:endDate" />, <P code="person:info" />
+        -   la propriété <P code="person:notAffectable" /> permet de qualifier les personnes ne pouvant être affectées, personnes en congé maternité ou en congé longue durée
+        -   indiquer l'<P code="person:organization" /> de la personne à partir de la liste des organisations déjà créées
+        -   renseigner le <P code="person:personState" />, le <P code="person:personSecurityProfile" />, le <P code="person:costCenter" />, l'<P code="person:company" /> de la personne
+        -   valider les modifications.
 
-## Identification key
 
-To update people's information in Surfy, an identification key is necessary to find people while avoiding using their first name and last name, which are prone to errors.
 
-Different keys are possible:
 
--   the person's <P code="person:code" /> is the first reliable key to use.
--   the <P code="person:email" /> is also a unique field and can be used as the person's identification key
--   the "full name" can however be used in the case of a mastered nomenclature (spelling and case)
--   the unique Surfy identifier delivered by Surfy, available from a people export.
+## Clé d'identification
 
-The Surfy identifier is the identification key of each entity in Surfy. It is assigned by Surfy and is unique.
-Each person has a unique identifier that allows identifying the person during an export then reimport of data.
+Pour mettre à jour les informations des personnes dans Surfy, une clé d'identification est nécessaire afin de retrouver les personnes en évitant d'utiliser leur prénom et nom, sujets à erreurs.
 
-When importing modifications on people in Surfy and to correctly identify the concerned people, the column with the key must necessarily be joined to the columns containing the information to import.
+Différentes clés sont possibles :
 
-## Resolve People duplicates
+-   le <P code="person:code" /> de la personne est la première clé fiable à utiliser.
+-   l'<P code="person:email" /> est aussi un champ unique et peut être utilisée comme clé d'identification de la personne
+-   le "nom complet" peut toutefois être utilisé dans le cas d'une nomenclature maitrisée (orthographe et casse)
+-   l'identifiant Surfy unique délivré par Surfy, disponible depuis un export des personnes.
 
-Resolving people duplicates is done in three steps: Duplicate detection, information merging and deletion of the unnecessary duplicate.
+L'identifiant Surfy est la clé d'identification de chaque entité dans Surfy. Il est attribué par Surfy et est unique.
+Chaque personne a un identifiant unique qui permet d'identifier la personne lors d'un export puis d'un réimport de données.
+
+A l'importation de modifications sur les personnes dans Surfy et afin d'identifier correctement les personnes concernées, la colonne avec la clé est à joindre nécessairement aux colonnes comportant les informations à importer.
+
+## Résorber les doublons de Personnes
+
+Résorber les doublons de personnes s'effectue en trois étapes : Détection des doublons, fusion des informations et suppression du doublon inutile.
 
 <Youtube code="tm65Pwrhogo"/>
 
-Surfy's database may contain people duplicates: Incorrectly spelled names or first names, hyphens or accents present or not, incorrect Email address or employee number. Detected duplicates are isolated in Surfy thanks to the presence of a common key.
-Once duplicates are isolated, you can choose and merge information then delete the duplicate person.
+La base de données de Surfy peut comporter des doublons de personnes : Nom ou prénom mal orthographiés, traits d'union ou accents présents ou pas, adresse Email ou matricule erronés. Les doublons détectés sont isolés dans Surfy grace à la présence d'une clé commune.
+Une fois les doublons isolés, on peut choisir et fusionner les informations puis supprimer la personne en doublon.
 
-To list duplicates, in the left menu of the screen,
+Pour lister les doublons, dans le menu à gauche de l'écran,
 
--       click on "Collaborators", "People" then "Reports and actions for people data quality"
--       request "Duplicate people"
+-       cliquer sur "Collaborateurs", "Personnes" puis "Les rapports et les actions pour la qualité de données pour les personnes"
+-       demander les "Personnes en doublon"
 
-Duplicates are listed in three categories according to the detected common key: Email, Employee number or Full name.
-The number of duplicates is indicated in each category.
+Les doublons sont listés en trois catégories suivant la clé commune détectée: Email, Matricule ou Nom complet.
+Le nombre de doublons est indiqué dans chaque catégorie.
 
-To resolve duplicates,
+Pour résorber les doublons,
 
--       click in the category containing duplicates
--       click on the duplicate to resolve
--       choose one of the duplicates as a starting base by checking the corresponding "Merge" box (columns 1 or 2)
--       the "merge result" displays the information of the chosen duplicate (column 3)
--       click on the information of the non-chosen duplicate to retrieve its information in the merge
--       the information selected for the merge is in gray in the duplicate columns and displayed in the "merge result"
--       "Merge" duplicates at the bottom of the page gathers the grayed information in the chosen duplicate, the non-chosen duplicate is deleted.
+-       cliquer dans la catégorie comportant des doublons
+-       cliquer sur le doublon à résorber
+-       choisir un des doublons comme base de départ en cochant la case "Merge" correspondante (colonnes 1 ou 2)
+-       le "résultat de la fusion" affiche les informations du doublon choisi (colonne 3)
+-       cliquer sur les informations du doublon non choisi afin de récupérer ses informations dans la fusion
+-       les informations sélectionnées pour la fusion sont en gris dans les colonnes des doublons et affichées dans le "résultat de la fusion"
+-       "Fusionner" les doublons en bas de page rassemble les informations grisées dans le doublon choisi, le doublon non choisi est supprimé.
 
-## Edit people by Excel file
 
--   export to Excel the list of people to modify through the people report or the [filtered list](/docs/courses/find/listfindcourse) of people
--   complete the information to import in the columns with their headers
--   select the column containing the identification key
--   also select the columns that have been filled in
--   copy/paste into a new sheet of the Excel file. The columns used must be adjacent.
- -  select all with "ctrl A", copy with "ctrl C"
- -  in the people import window in Surfy, paste the information with "ctrl V"
- -  "compare" the file information with Surfy's database to detect modifications made on people.
- -  update all people's information in Surfy by clicking on "Update".
- -  people modifications are imported into Surfy's database.
+## Modifier des personnes par fichier Excel
+
+-   exporter en Excel la liste des personnes à modifier par le rapport des personnes ou la [liste filtrée](/en/docs/courses/find/listfindcourse) des personnes
+-   compléter les informations à importer dans les colonnes avec leurs en-têtes
+-   sélectionner la colonne comportant la clé d'identification
+-   sélectionner également les colonnes qui ont été remplies
+-   copier/coller dans une nouvelle feuille du fichier Excel. Les colonnes utilisées doivent être adjacentes.
+ -  sélectionner l'ensemble avec "ctrl A", copier avec "ctrl C"
+ -  dans la fenêtre d'import des personnes dans Surfy, coller les informations avec "ctrl V"
+ -  "comparer" les informations du fichier avec la base de Surfy permet de détecter les modifications apportées sur les personnes.
+ -  mettre à jour l'ensemble des informations des personnes dans Surfy, en cliquant sur "Mettre à jour".
+ -  les modifications des personnes sont importées dans la base de données de Surfy.
+
+

@@ -2,19 +2,20 @@
 sidebar_position: 4
 ---
 
-# CSR and Security
+# RSE et Sécurité
 
-## Establish an Evacuation Plan
+## Etablir un plan d'évacuation
 
-    -   Create an adapted scenario
-    -   Create ISO 7010 security icons
-    -   Copy and place security objects on the plan
-    -   Qualify spaces as evacuation zones
+    -   Créer un scénario adapté
+    -   Créer les icônes de sécurité ISO 7010
+    -   Copier et placer les objets de sécurité sur le plan
+    -   Qualifier les espaces en zones d'évacuation
 
-[Export the Plan as Image](/docs/courses/views/planexport.md#export-2d-plans-as-images)
+[Exporter le plan en Image](/en/docs/courses/views/planexport.md#exporter-les-plans-2d-en-image)
 
-## Control Carbon Footprint
+## Contrôler l'empreinte carbone
 
-    -   Define floor covering carbon footprint
-    -   Define furniture carbon footprint
-    -   Obtain cumulative carbon footprint by space, floor, building
+    -   Définir l'empreint carbone des revêtements de sol
+    -   Définir l'empreint carbone du mobilier
+    -   Obtenir l'empreint carbone cumulée par espace, étage, bâtiment
+

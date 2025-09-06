@@ -2,61 +2,61 @@
 sidebar_position: 2
 ---
 
-# Information Records
+# Les fiches d'informations
 
-Each building, floor or space has a summary record of the considered entity's information.
+Chaque bâtiment, étage ou espace comporte une fiche récapitulative des informations de l'entité considérée.
 
-## The Building Information Record
+## La fiche d'informations du bâtiment
 
-By default, "Reader" roles don't have access to building information records, but to records representing the building's possible photo, its address (if filled in) and access to floors.<br />
-To visualize information, the "Reader" role must be completed by the "Display info" role.<br />
-To add this role to a user, see the chapter [Edit a User's Role](/docs/access/intro#modifier-le-rôle-dun-utilisateur)
+Par défaut, les rôles "Lecteur" n'ont pas accès aux fiches d'informations des bâtiments, mais à des fiches représentant la photo éventuelle du bâtiment, son adresse (si renseignée) et l'accès aux étages.<br />
+Pour visualiser les informations, le rôle "Lecteur" doit être complété par le rôle "Affichage des infos".<br />
+Pour ajouter ce rôle à un utilisateur, voir le chapitre [Modifier le rôle d'un utilisateur](/en/docs/access/intro#modifier-le-rôle-dun-utilisateur)
 
-For people with an "Administrator" role (or the complementary "Display info" role) the main buildings' information records are directly consultable by clicking on the company logo at the top left of the screen.<br />
+Pour les personnes disposant d'un rôle "Administrateur" (ou du rôle complémentaire "Affichage des infos") les fiches d'informations des bâtiments principaux sont directement consultables en cliquant sur le logo de l'entreprise en haut à gauche de l'écran.<br />
 
-By clicking on the "Building XXX scenarios and project" icon at the bottom right of a building's information record, you obtain the information records of the considered building's possible scenarios.
+En cliquant sur l'icône "Les scénarios et projet du bâtiment XXX" en bas à droite de la fiche d'informations d'un bâtiment, on obtient les fiches d'informations des scénarios éventuels du bâtiment considéré.
 
-The building information record is composed of the following information:
+La fiche d'informations du bâtiment est composée des informations suivantes :
 
--   Building name
--   Qualified surface
--   Number of workstations
--   Workstation ratio
--   Total number of assignments
--   Occupation ratio
--   Occupation rate
--   Expansion rate
--   Number of free workstations
--   Number of flex workstations
--   Flex workstation rate
--   Number of shared workstations
--   Shared workstation rate
--   Number of passing workstations
--   Number of seats
--   Seats per assignment rate
--   Carbon footprint
+-   Nom du bâtiment
+-   Surface qualifiée
+-   Nombre de postes de travail
+-   Ratio postes de travail
+-   Nombre total d'affectations
+-   Ratio d'occupation
+-   Taux d'occupation
+-   Taux de foisonnement
+-   Nombre de postes libres
+-   Nombre de postes flex
+-   Taux de postes de travail en flex
+-   Nombre de postes de travail partagés
+-   Taux de postes de travail partagés
+-   Nombre de postes de travail de passage
+-   Nombre de places assises
+-   Taux de places assises par affectations
+-   Empreinte carbone
 
-By hovering over each line, you obtain the description of the information in the tooltip.<br />
-This information is automatically calculated by Surfy. It may be necessary to recalculate the data to obtain up-to-date information in case of plan modifications. For this, click on the "reload data" icon at the top right of the screen then refresh (F5).<br />
-Non-effective information is not present in the building record (example: no workstation = no corresponding line)
+En passant la souris sur chaque ligne, on obtient le descriptif de l'information dans l'info bulle.<br />
+Ces informations sont calculées automatiquement par Surfy. Il peut être nécessaire de recalculer les données afin d'obtenir des informations à jour en cas de modification des plans. Pour cela, cliquer sur l'icone "recharger les données" en haut à droite de l'écran puis rafraichir (F5).<br />
+Les informations non effectives ne sont pas présentes dans la fiche du bâtiment (exemple : pas de poste de travail = pas de ligne correspondante)
 
-You can also access building information by visualizing the [building in 3D](/docs/courses/views/3Dviews#afficher-le-plan-3d-dun-bâtiment) then clicking on the vertical "View building information" icon.<br />
-To the listed information is added here the number of digitized spaces across the entire building.
+On peut également accéder aux informations du bâtiment en visualisant le [bâtiment en 3D ](/en/docs/courses/views/3Dviews#afficher-le-plan-3d-dun-bâtiment) puis en cliquant sur l'icône verticale "Voir les informations du bâtiment".<br />
+Aux informations listées s'ajoute ici le nombre d'espaces digitalisés sur l'ensemble du bâtiment.
 
-## The Floor Information Record
+## La fiche d'informations de l'étage
 
-The floor information record is visible by accessing the floor, then clicking on the vertical "View floor information" icon.<br />
-The displayed information is of the same type as for the building, but brought back to the floor.<br />
-To the listed information is added the number of digitized spaces across the entire floor.<br />
+La fiche d'informations de l'étage est visible en accédant à l'étage, puis en cliquant sur l'icône verticale "Voir les informations de l'étage".<br />
+Les informations affichées sont du même type que pour le bâtiment, mais ramenées à l'étage.<br />
+Aux informations listées s'ajoute le nombre d'espaces digitalisés sur l'ensemble de l'étage.<br />
 
-## The Space Information Record
+## La fiche d'informations de l'espace
 
-By clicking in a space on the plan, you obtain the space's information.<br />
-The displayed information is of the same type as for the building, but brought back to the space.<br />
-To the listed information is added the space's perimeter.<br />
+En cliquant dans un espace sur le plan, on obtient les informations de l'espace.<br />
+Les informations affichées sont du même type que pour le bâtiment, mais ramenées à l'espace.<br />
+Aux informations listées s'ajoute le périmètre de l'espace.<br />
 
-:::tip GOOD TO KNOW
-From the space information record, you can access the space's assignments and inventory: Clicking on the ASSIGNMENTS tab will list the space's workstations, their qualification (flex, passing) and assignments to the space or the space's workstations. Clicking on the INVENTORY tab will list the furniture inventory belonging to the space. Clicking on the space name tab will give again the space information record.
+:::tip BON A SAVOIR
+Depuis la fiche d'informations de l'espace, on peut accéder aux affectations et à l'inventaire de l'espace : Cliquer sur l'onglet AFFECTATIONS listera les postes de travail de l'espace, leur qualification (flex, de passage) et les affectations à l'espace ou aux postes de travail de l'espace. Cliquer sur l'onglet INVENTAIRE listera l'inventaire du mobilier appartenant à l'espace. Cliquer sur l'onglet du nom de l'espace donnera de nouveau la fiche d'informations de l'espace.
 :::
 
-To return to floor information, click on the vertical "View floor information" icon.<br />
+Pour revenir aux informations de l'étage, cliquer sur l'icône verticale "Voir les informations de l'étage".<br />

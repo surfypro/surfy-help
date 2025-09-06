@@ -3,96 +3,95 @@ sidebar_position: 2
 ---
 
 
-# Create a Space
+# Créer un espace
 
 
 <Youtube code="9A0XQaxj6hA"/>
 
-To create a space (or room) on a floor that already has its background plan and scale:
+Pour créer un espace (ou pièce) sur un étage qui a déjà son fond de plan et son échelle :
 
--   from the floor plan, click on the plan to make the icons appear in the area above the plan
--   choose to "activate plan editing mode" by clicking on the "pencil" icon.
--   clicking on the "Add a space" icon allows you to have a cross indicating horizontality and verticality to facilitate the correct placement of the vertices of the space to create.
+-   depuis le plan de l'étage, cliquer sur le plan pour faire apparaître les icônes dans la zone située au dessus du plan
+-   choisir d' "activer le mode édition du plan" en cliquant sur l'icône "crayon".
+-   cliquer sur l'icône "Ajouter un espace" permet d'avoir une croix indiquant l'horizontalité et la verticalité afin de faciliter le placement correct des sommets de l'espace à créer.
 
 :::warning Attention
-The "Add a space" icon only appears if no space or object is selected (for this, click on a non-digitized area of the plan), and the "Activate plan editing mode" icon is activated.
+L'icône "Ajouter un espace" n'apparait que si aucun espace ni aucun objet n'est sélectionné (pour cela, cliquer sur une zone non digitalisée du plan), et que l'icône "Activer le mode édition du plan" est activée.
 :::
 
 
--   click to create the first vertex of the space. The possibility of having a horizontal, 45-degree or vertical line is canceled by pressing the "Shift" key, allowing complete freedom in placing the next vertex.
--   by zooming in and out, place the mouse at the desired location and click to create the second vertex.
--   similarly, click to create the third vertex. Surfy suggests closing the space or continuing to create vertices.
--   to close the space, click to create the last vertex then on the "disk" icon above the plan to "save the current space".
--   the space is created and the space's record indicates its surface area and perimeter.
+-   cliquer pour créer le premier sommet de l'espace. La possibilité d'avoir un trait horizontal, à 45 degrés ou vertical est annulée en appuyant sur la touche "Shift", permettant de libérer complètement l'emplacement de création du sommet suivant.
+-   en zoomant et dézoomant, placer la souris à l'endroit désiré et cliquer pour créer le deuxième sommet.
+-   de même, cliquer pour créer le troisième sommet. Surfy propose de clore l'espace ou de continuer à créer des sommets.
+-   pour clore l'espace, cliquer pour créer le dernier sommet puis sur l'icone "disquette" au dessus du plan pour "sauvegarder l'espace en cours".
+-   l'espace est créé et la fiche de l'espace indique sa surface et son périmètre.
 
-## Create Contiguous Spaces
+## Créer des espaces contigus
 
-Creating a floor plan implies a certain continuity between spaces. For example between a closed office and circulation, or between an open space and circulation.<br />
-To ensure this continuity and create a "spider web" rather than a series of independent spaces, it is necessary to create segments common to contiguous spaces.
+Créer le plan d'un étage implique une certaine continuité entre les espaces. Par exemple entre un bureau fermé et la circulation, ou entre un espace ouvert et la circulation.<br />
+Pour assurer cette continuité et créer une "toile d'araignée" plutôt qu'une suite d'espaces indépendants, il est nécessaire de créer des segments communs aux espaces contigus.
 
-To create a segment common to two spaces, you must merge a vertex of space A with a vertex of space B, on each side of the segment to make common. Once the vertices on each side of the segment are common, the segment is common and colors in red.<br />
-You can then qualify the common segment as "Door" or "without partition".
+Pour créer un segment commun à deux espaces, il faut fusionner un sommet de l'espace A avec un sommet de l'espace B, de chaque coté du segment à rendre commun. Une fois que les sommets de part et d'autre du segment sont communs, le segment est commun et se colorie en rouge.<br />
+On peut alors qualifier le segment commun en "Porte" ou "sans cloison".
 
-Doors are materialized on the 2D view of plans, with their opening direction and swing. Passages are represented by dotted lines.
-Doors and passages are also visualized in the 3D view of the floor or building.
+Les portes sont matérialisées sur la vue 2D des plans, avec leur sens d'ouverture et débattement. Les passages sont représentés en pointillés.
+Les portes et passages sont également visualisés dans la vue 3D de l'étage ou du bâtiment.
 
-More information on [creating a segment common to two spaces](/docs/tutorials/surfaces/doors/create#création-dun-segment-commun-à-deux-espaces)
-and on [creating doors and passages](/docs/tutorials/surfaces/doors/create#qualification-dun-segment-commun-en-porte-ou-passage).
+Plus d'informations sur la [création d'un segment commun à deux espaces](/en/docs/tutorials/surfaces/doors/create#création-dun-segment-commun-à-deux-espaces)
+et sur la [création de portes et passages](/en/docs/tutorials/surfaces/doors/create#qualification-dun-segment-commun-en-porte-ou-passage).
 
-Once the common segments are created and qualified as doors or passages, the route can be used to trace movement on the plan and obtain the time and distance to travel between the starting point and the arrival point.<br />
-More information on [creating a route](/docs/tutorials/surfaces/pathfinding/create)
+Une fois les segments communs créés et qualifiés en portes ou passages, l'itinéraire peut être utilisé pour tracer le déplacement sur le plan et obtenir le temps et la distance à parcourir entre le point de départ et le point d'arrivée.<br />
+Plus d'informations sur la [création d'un itinéraire](/en/docs/tutorials/surfaces/pathfinding/create)
 
 
 
-### Create Spaces Connected by Common Segments
+### Créer des espaces reliés par des segments communs
 
-To create spaces connected by common segments,
+Pour créer des espaces reliés par des segments communs,
 
--   from the floor plan, click on the plan to make the icons appear in the area above the plan
--   "activate plan editing mode" by clicking on the "pencil" icon.
--   create the first space by being careful to create vertices at the junction points with the second space. In case of oversight, these vertices can be created subsequently.
--   create the second space. At the junction between the two spaces, hold down the "alt" key.
--   click on the first junction vertex of the first space, lit in green. The created vertex is common with the first space's vertex.
--   hold down the "alt" key and click on the second junction vertex between the two spaces. The second common vertex is created, the segment between the two common vertices is now common.
--   release the "alt" key when creating simple vertices.
+-   depuis le plan de l'étage, cliquer sur le plan pour faire apparaître les icônes dans la zone située au dessus du plan
+-   "activer le mode édition du plan" en cliquant sur l'icône "crayon".
+-   créer le premier espace en ayant soin de créer des sommets aux endroits de jonction avec le deuxième espace. En cas d'oubli, ces sommets peuvent être créés postérieurement.
+-   créer le deuxième espace. A la jonction entre les deux espaces, maintenir la touche "alt" enfoncée.
+-   cliquer sur le premier sommet de jonction du premier espace, allumé en vert. Le sommet créé est commun avec le sommet du premier espace.
+-   maintenir la touche "alt" enfoncée et cliquer sur le deuxième sommet de jonction entre les deux espaces. Le deuxième sommet commun est créé, le segment entre les deux sommets communs est maintenant commun.
+-   relacher la touche "alt" lors de la création de sommets simples.
 
-In case of absence or oversight, once the space is created and to create an additional vertex to merge it:
+En cas d'absence ou d'oubli, une fois l'espace créé et pour créer un sommet supplémentaire afin de le fusionner :
 
--   click on a vertex then on the dark gray "+" icon above the plan to "add a vertex on a segment"
--   move the mouse over the segment on which the vertex is to be created
--   when the segment is red, click to add the vertex at the desired location
--   you can move the vertex after its creation by dragging it
--   select (with "shift" pressed) the two vertices to merge then on the "merge vertices" icon above the plan
--   click on a vertex then on the dark gray "+" icon to "stop adding a vertex on a segment".
+-   cliquer sur un sommet puis sur l'icône "+" gris foncé au dessus du plan pour "ajouter un sommet sur un segment"
+-   passer la souris sur le segment sur lequel le sommet est à créer
+-   quand le segment est de couleur rouge, cliquer pour ajouter le sommet à l'endroit voulu
+-   on peut déplacer le sommet après sa création en le glissant-déplaçant
+-   sélectionner (avec "shift" enfoncé) les deux sommets à fusionner puis sur l'icône "fusionner les sommets" au dessus du plan
+-   cliquer sur un sommet puis sur l'icône "+" gris foncé pour "arrêter l'ajout d'un sommet sur un segment".
 
-In "Plan Editing" mode, common segments are wider and colored red, making them easy to spot to assign them a door or passage.
+En mode "Edition du plan", les segments communs sont plus larges et coloriés en rouge, permettant de les repérer facilement afin de leur attribuer une porte ou passage.
 
 :::warning ATTENTION
-A segment will be common if no additional vertex exists between the two common vertices. If an untimely vertex exists, delete it by clicking on it then on the "Trash" icon to "delete selected vertices" and make the segment common.
+Un segment sera commun si aucun sommet supplémentaire n'existe entre les deux sommets communs. Si un sommet intempestif existe, le supprimer en cliquant dessus puis sur l'icône "Poubelle" pour "supprimer les sommets sélectionnés" et rendre le segment commun.
 :::
 
-:::tip GOOD TO KNOW
-To efficiently digitize spaces, you can create each of the independent spaces first (closed offices, meeting rooms, ...), then create the circulation afterwards, using the "alt" key to gradually merge the vertices of independent spaces with the circulation vertices during their creation.
+:::tip BON A SAVOIR
+Pour digitaliser efficacement les espaces, on peut créer chacun des espaces indépendants dans un premier temps (bureaux fermés, salles de réunion, ...), puis créer la circulation ensuite, en utilisant la touche "alt" pour fusionner au fur et à mesure les sommets des espaces indépendants avec les sommets de la circulation lors de leur création.
 :::
 
-## Qualify a Space
+## Qualifier un espace
 
--   once the space is created, you must "modify" it on its record to the left of the plan to give it a <P code="room:name" />, a possible <P code="room:capacity" />, a <P code="room:organization" />, a <P code="room:roomType" /> of the space, a <P code="room:costCenter" />.
--   "save" the information.
--   optionally complete the qualifications in the different analysis layers. Saving this information is automatic.
+-   une fois l'espace créé, on doit le "modifier" sur sa fiche à gauche du plan pour lui donner un <P code="room:name" />, une <P code="room:capacity" /> éventuelle, une <P code="room:organization" />, une <P code="room:roomType" /> de l'espace, un <P code="room:costCenter" />.
+-   "sauvegarder" les informations.
+-   compléter éventuellement les qualifications dans les différents calques d'analyse. La sauvegarde de ces informations est automatique.
 
-It is important to fill in at least one space qualification like "typology", to give a color to the spaces on plans. 
-After refreshing, the space displays the color of the chosen typology. This allows you to know which spaces are created and filled in.
+Il est important de renseigner au moins une qualification d'espace comme la "typologie", afin de donner une couleur aux espaces des plans. 
+Après rafraîchissement, l'espace affiche la couleur de la typologie choisie. Cela permet de savoir quels espaces sont créés et  renseignés.
 
-:::tip Good to know
-The "drop" icon above the plan allows you to "activate color transparency" and see the different elements present on the background plan through Surfy's layer colors.
+:::tip Bon à savoir
+L'icône "goutte" au dessus du plan permet d'"activer la transparence des couleurs" et de voir les différents éléments présents sur le fond de plan à travers les couleurs des calques de Surfy.
 :::
 
-## Search for a Space
+## Rechercher un espace
 
-You can geolocate and access a space's record in several ways:
+On peut géolocaliser et accéder à la fiche d'un espace de plusieurs façons :
 
--   through the magnifying glass by performing a search then clicking on the searched space
--   through the [filtered list](/docs/courses/find/listfindcourse.md) of spaces ("Spaces", "Spaces", "List spaces" then "filter spaces")
--   through the person's assignment by clicking in the assigned person's space
-
+-   par la loupe en effectuant une recherche puis en cliquant sur l'espace recherché
+-   par la [liste filtrée](/en/docs/courses/find/listfindcourse.md) des espaces ("Espaces", "Espaces", "Lister les espaces" puis "filtrer les espaces")
+-   par l'affectation de la personne en cliquant dans l'espace de la personne affectée

@@ -1,24 +1,24 @@
 ---
 sidebar_position: 1
 ---
-# Different Object Types
+# Les différents types d'objet
 
-Besides workstations which have particular properties (see [Workstation Types](/docs/workplacetype)), there are 2 categories of object types: Icons and Scaled Objects.
+Outre les postes de travail qui possèdent des propriétés particulières (voir [Les types de poste de travail](/en/docs/workplacetype)), il existe 2 catégories de types d’objet : Icônes et Objets à l’échelle.
 
-### Icon Object Type
+### Type d'objet sous forme d'icône
 
-An Icon object type allows you to define a name, an Icon, a color, a manufacturer, a price, a possible model for the 3D view as well as associated information, in order to create icon objects having all these characteristics. This is the "Matrix" allowing the creation of multiple identical objects.
+Un type d’objet sous forme d'Icône permet de définir un nom, une Icône, une couleur, un fabricant, un prix, un modèle éventuel pour la vue 3D ainsi que des informations associées, afin de créer des objets sous forme d'icône ayant toutes ces caractéristiques. C’est la « Matrice » permettant la création de multiples objets identiques.
 
-:::tip Good to know
-The size of icons on plans will depend on the value selected in "Manage scale" then "object type icon size". The icon size is applied only for the floor. All icons have the same size.
+:::tip Bon à savoir
+La taille des icônes sur les plans dépendra de la valeur sélectionnée dans "Gérer l'échelle" puis "taille des icônes des types d'objet". La taille des icônes est appliquée seulement pour l'étage. Toutes les icônes ont la même taille.
 :::
 
-### Scaled Object Type
+### Type d'objet à l'échelle
 
-A scaled object type allows you to define a name, a shape and height, a color, a manufacturer, a price, a model for the 3D view as well as associated information, in order to create scaled objects having all these characteristics. This is the "Matrix" allowing the creation of multiple identical objects.
+Un type d’objet à l'échelle permet de définir un nom, une forme et une hauteur, une couleur, un fabricant, un prix, un modèle pour la vue 3D ainsi que des informations associées, afin de créer des objets à l’échelle ayant toutes ces caractéristiques. C’est la « Matrice » permettant la création de multiples objets identiques.
 
-:::tip Good to know
-The dimensions of generated objects will conform to the scale of the floor where they will be placed.
+:::tip Bon à savoir
+Les dimensions des objets générés seront conformes à l'échelle de l'étage où ils seront placés.
 :::
 
-Objects from each object type can be personalized (purchase date, reference, asset code, association with a person, ...)
+Les objets issus de chaque type d’objet peuvent être personnalisés (date d’achat, référence, code d’immobilisation, association à une personne, …)

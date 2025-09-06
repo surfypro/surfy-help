@@ -1,0 +1,9 @@
+{
+  "label": "Affectations aux bâtiments",
+  "position": 5,
+  "link": { 
+    "slug": "persontobuilding",
+    "type": "generated-index",
+    "description": "Les affectations aux bâtiments"
+  }
+}

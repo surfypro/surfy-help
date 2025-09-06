@@ -2,23 +2,28 @@
 sidebar_position: 3
 ---
 
-# Recharge and Estimate
+# Refacturer et estimer
 
-## Recharge Spaces by Cost Center
+## Refacturer les espaces par centre de coût
 
-See the tutorials chapter [Recharge Spaces by Cost Center](/docs/tutorials/cost-distribution-by-cost-center/create.md)
+Voir le chapitre des tutoriels [Refacturer les espaces par centre de coût](/en/docs/tutorials/cost-distribution-by-cost-center/create.md)
 
-    -   Define [cost centers](/docs/tutorials/costcenter/create.md)
-    -   [Qualify spaces](/docs/tutorials/surfaces/room/edit#qualify-a-space-or-edit-space-information) and [workstations](/docs/tutorials/objects/workplace/edit.md#edit-workstation-information) by cost center
-    -   Qualify spaces by [Cost Distribution Type](/docs/tutorials/costcenter/create.md#cost-distribution-type): space or workstations
-    -   Obtain [distribution keys and cumulative surfaces](/docs/tutorials/cost-distribution-by-cost-center/create.md#distribution-keys-and-surfaces-qualified-by-cost-center) to invoice
-    -   [Distribute common areas](/docs/tutorials/cost-distribution-by-cost-center/create.md#distribute-common-areas)
-    -   Do not invoice spaces: Spaces and workstations without [cost distribution type](/docs/tutorials/costcenter/create.md#cost-distribution-type) do not appear anywhere and their surface is not counted anywhere.
+    -   Définir les [centres de coût](/en/docs/tutorials/costcenter/create.md)
+    -   [Qualifier les espaces](/en/docs/tutorials/surfaces/room/edit#qualifier-un-espace-ou-modifier-les-informations-dun-espace) et les [postes de travail](/en/docs/tutorials/objects/workplace/edit.md#modifier-les-informations-du-poste-de-travail) par centre de coût
+    -   Qualifier les espace par [Type de distribution des coûts](/en/docs/tutorials/costcenter/create.md#type-de-distribution-des-coûts) : espace ou postes de travail
+    -   Obtenir les [clés de répartition et cumuls des surfaces](/en/docs/tutorials/cost-distribution-by-cost-center/create.md#clés-de-répartition-et-surfaces-qualifiées-par-centre-de-coût) à facturer
+    -   [Ventiler les parties communes](/en/docs/tutorials/cost-distribution-by-cost-center/create.md#ventiler-les-parties-communes)
+    -   Ne pas facturer des espaces : Les espaces et postes de travail sans [type de distribution des coûts](/en/docs/tutorials/costcenter/create.md#type-de-distribution-des-coûts) n’apparaissent nulle part et leur surface n’est comptabilisée nulle part.
       
 
-## Estimate a Cleaning Service
+## Estimer une prestation de nettoyage
 
-    -   [Define cleaning frequencies](/docs/tutorials/dimensionType/create.md#create-and-associate-an-analysis-layer-to-a-layer-type)
-    -   Define [cleaning cadences](/en/entities/admin/types/room-types/room-type#cadence) of space typologies or Define the <P code="roomType:cadence"/>
-    -   [Qualify spaces by cleaning frequency](/docs/tutorials/surfaces/room/edit#qualify-a-space-or-edit-space-information)
-    -   [Obtain the monthly hours needed for the cleaning service](/docs/tutorials/BuildingData/Buildingdashboard/Buildingreporting#building-cleaning-services-report)
+    -   [Définir les fréquences de nettoyage](/en/docs/tutorials/dimensionType/create.md#créer-et-associer-un-calque-danalyse-à-un-type-de-calque)
+    -   Définir les [cadences de nettoyage](/entities/admin/types/room-types/room-type#cadence) des typologies d'espace ou Définir la <P code="roomType:cadence"/>
+    -   [Qualifier les espaces par fréquence de nettoyage](/en/docs/tutorials/surfaces/room/edit#qualifier-un-espace-ou-modifier-les-informations-dun-espace)
+    -   [Obtenir le nombre d'heures mensuel nécessaire pour la prestation de nettoyage](/en/docs/tutorials/BuildingData/Buildingdashboard/Buildingreporting#rapport-des-prestations-de-nettoyage-du-bâtiment)
+    
+
+
+
+

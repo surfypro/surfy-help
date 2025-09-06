@@ -2,93 +2,101 @@
 sidebar_position: 1
 ---
 
-# Plan Views
+# Les Visions du plan
 
-Plan views are pre-programmings of display and features to choose according to the user's field of action. These are "shortcuts" to the requested features.
+Les visions du plan sont des pré-programmations de l'affichage et des fonctionnalités à choisir en fonction du domaine d'action de l'utilisateur. Ce sont des "raccourcis" vers les fonctionnalités demandées.
 
 <Youtube code="C-0l8So1Uto"/>
 
-## Choose a Plan View
+## Choisir une vision du plan
 
-You can choose a particular view of plans depending on the task to accomplish or information to obtain, from a floor plan, by clicking on the vertical "change plan view" icon.
-Changing view resets the plan configuration by displaying information corresponding to the requested view.
+On peut choisir une vision particulière des plans en fonction de la tâche à accomplir ou des informations à obtenir, à partir du plan d'un étage, en cliquant sur l'icône verticale "changer la vision du plan".
+Changer de vision réinitialise la configuration des plans en affichant les informations correspondants à la vision demandée.
 
-The default view is recognizable by the small flag at the end of the view line. The default view is programmable for each user by modifying each person's role (Make the request to the platform administrator)
 
-The selected view is valid for the user, across the entire platform. It will remain the same until it is changed and until "logout".
-To log out of the platform, click at the bottom of the left menu on the user's first name or initials, then on "log out".
 
-Upon reconnection, the default view -with the small flag- will be effective.
+La vision par défaut est reconnaissable par le petit drapeau au bout de la ligne de la vision. La vision par défaut est programmable pour chaque utilisateur en modifiant le rôle de chacun (Faire la demande auprès de l'administrateur de la plateforme)
 
-## "Space Typologies" View
+La vision sélectionnée est valable pour l'utilisateur, sur toute la plateforme. Elle restera la même tant qu'elle n'est pas changée et jusqu'à la "déconnexion".
+Pour se déconnecter de la plateforme, cliquer en bas du menu de gauche sur le prénom ou les initiales de l'utilisateur, puis sur "se déconnecter".
 
-This is Surfy's "standard" pre-programming, displayed by default.
-It allows you to color spaces by typology, that is by their usage destination: office, sanitary facilities, staircase,...
-Typologies must be filled in at minimum in Surfy to obtain first colored plans.
-This view displays space names and workstations.
+A la reconnexion, la vision par défaut -avec le petit drapeau- sera effective.
 
-See the chapter [Create a Space Typology](/docs/tutorials/surfaces/room/roomtype.md#create-a-space-typology)
+## Vision "Typologies des espaces"
 
-You can obtain cumulative data by Typology by clicking on the vertical "Color spaces on the plan according to space typologies" icon then on the butterfly "Open all details and indicators".
+C'est la pré-programmation "standard" de Surfy, affichée par défaut.
+Elle permet de colorier les espaces par typologie, c'est à dire par leur destination d'utilisation : bureau, sanitaires, escalier,...
+Les typologies doivent être renseignées au minimum dans Surfy afin d'obtenir des premiers plans en couleur.
+Cette vision affiche le nom des espaces et des postes de travail.
 
-This view is adapted to the [Workplace Environment Management](https://www.surfy.pro/ug/environnement-de-travail) which maintains the digitized building's life up to date in Surfy, particularly by [arranging spaces](/docs/courses/digitalize/digicourse.md).
+Voir le chapitre [Créer une typologie d'espace](/en/docs/tutorials/surfaces/room/roomtype.md#créer-une-typologie-despace)
 
-## "Recharging" View
+On peut obtenir les données cumulées par Typologie en cliquant sur l'icône verticale "Colorier les espaces sur le plan en fonction des typologies d'espace" puis sur le papillon "Ouvrir tous les détails et indicateurs".
 
-The "Recharging" view colors spaces and workstations by cost center and displays the surface and cost center name of each space.
+Cette vision est adaptée à la [Direction de l'environnement de travail](https://www.surfy.pro/ug/environnement-de-travail) qui maintient à jour la vie du bâtiment digitalisé dans Surfy, notamment en [aménageant les espaces](/en/docs/courses/digitalize/digicourse.md).
 
-You can obtain cumulative data by cost center by clicking on the vertical "Color spaces and workstations according to cost centers" icon then on the "Spaces" tab then on the butterfly "Open all details and indicators".
-The "Workstations" tab allows counting workstations per cost center.
+## Vision "Refacturation"
 
-This view particularly corresponds to [Finance functions](https://www.surfy.pro/ug/fonction-finances) or [Real Estate Directors](https://www.surfy.pro/ug/direction-immobiliere) to manage [space recharging by cost center](/docs/tutorials/cost-distribution-by-cost-center/create.md).
+La vision "Refacturation" colorie les espaces et les postes de travail par centre de coût et affiche la surface et le nom du centre de coût de chaque espace.
 
-## "Departments" View
+On peut obtenir les données cumulées par centre de coût en cliquant sur l'icône verticale "Colorier les espaces et postes de travail par rapport aux centres de coût" puis sur l'onglet "Espaces" puis sur le papillon "Ouvrir tous les détails et indicateurs".
+L'onglet "Postes de travail" permet un comptage des postes par centre de coût.
 
-The "Departments" view colors spaces by Department, and displays the surface and name of the linking Department for each space.
-This view allows organizing or visualizing the good distribution of spaces according to the linking organization.
+Cette vision correspond particulièrement aux [fonctions Finances](https://www.surfy.pro/ug/fonction-finances) ou [Directeurs Immobilier](https://www.surfy.pro/ug/direction-immobiliere) afin de gérer la [refacturation des surfaces par centre de coût](/en/docs/tutorials/cost-distribution-by-cost-center/create.md).
 
-You can obtain cumulative data by Department or by Service by clicking on the vertical "Color spaces on the plan according to Organizations" icon then on the butterfly "Open all details and indicators".
 
-This view is adapted to [Department assistants](https://www.surfy.pro/ff/affecter-les-collaborateurs) wanting to master their Service or Department perimeter.
+## Vision "Directions"
 
-## "Occupations" View
+La vision "Directions" colorie les espaces par Direction, et affiche la surface et le nom de la Direction de rattachement pour chaque espace.
+Cette vision permet d'organiser ou de visualiser la bonne distribution des espaces en fonction de l'organisation de rattachement.
 
-The "Occupations" view colors free workstations (in green), Flex workstations (in pink), shared workstations (in orange) and passing workstations (in blue) to allow rapid visualization of assignment capacities on the floor.
-The name of each space and workstation is displayed.
-No analysis layer is displayed, spaces remain without color.
+On peut obtenir les données cumulées par Direction ou par Service en cliquant sur l'icône verticale "Colorier les espaces sur le plan selon les Organisations" puis sur le papillon "Ouvrir tous les détails et indicateurs".
 
-You can select the [display of this information](/docs/courses/views/2Dviews.md#display-workstation-status-on-the-plan) by clicking on the vertical "Color workstations according to their status" icon.
+Cette vision est adaptée aux [assistant(e)s de Direction](https://www.surfy.pro/ff/affecter-les-collaborateurs) désirant maîtriser le périmètre de leur Service ou Direction 
+<!-- et [gérer l'affectation des collaborateurs](/en/docs/tutorials/category/affectations-aux-postes-de-travail.md) sur ce périmètre. -->
 
-This view is intended to quickly access occupation information and allows you to quickly return to the previous view.
-The number of workstations of each qualification is permanently indicated in the building, floor or space record considered.
+## Vision "Occupations"
 
-## "Flex" View
+La vision "Occupations" colorie les postes de travail libres (en vert), les postes Flex (en rose), les postes partagés (en orange) et les postes de passage (en bleu) pour permettre une visualisation rapide des capacités d'affectation sur l'étage.
+Le nom de chaque espace et poste de travail est affiché.
+Aucun calque d'analyse n'est affiché, les espaces restent sans couleur.
 
-The "Flex" view colors workstations qualified as Flex (in pink) and allows rapid localization of these workstations.
-No analysis layer is displayed, spaces remain without color.
+On peut sélectionner l'[affichage de ces informations](/en/docs/courses/views/2Dviews.md#afficher-l%C3%A9tat-des-postes-de-travail-sur-le-plan) en cliquant sur l'icône verticale "Colorier les postes de travail par rapport à leur état".
 
-You can access the [display of this information](/docs/courses/views/2Dviews.md#display-workstation-status-on-the-plan) by clicking on the vertical "Color workstations according to their status" icon.
-"Bookable" workstations can be colored (in sky blue) to locate them on the plan.
+Cette vision est destinée à accéder rapidement aux informations d'occupation et permet de revenir aussi rapidement à la vision précédente.
+Le nombre de postes de travail de chaque qualification est indiqué en permanence dans la fiche du bâtiment, de l'étage ou de l'espace considéré.
 
-This view is intended to quickly access information and allows you to quickly return to the previous view.
-The number of workstations of each qualification is permanently indicated in the building, floor or space record considered.
+## Vision "Flex"
 
-## "Security Compliance" View
+La vision "Flex" colorie les postes de travail qualifiés en Flex (en rose) et permet une localisation rapide de ces postes de travail.
+Aucun calque d'analyse n'est affiché, les espaces restent sans couleur.
 
-The "Security Compliance" view displays the name and quality of Security team members (File Guide, File Closer, First Aider, Firefighter, ...) on their workstation and colors their assignment workstation in a defined color.
-No analysis layer is displayed, spaces remain without color.
+On peut accéder à l'[affichage de ces informations](/en/docs/courses/views/2Dviews.md#afficher-l%C3%A9tat-des-postes-de-travail-sur-le-plan) en cliquant sur l'icône verticale "Colorier les postes de travail par rapport à leur état".
+Les postes "réservables" peuvent être coloriés (en bleu ciel) afin de les repérer sur le plan.
 
-This view is intended to quickly access information and allows you to quickly return to the previous view.
-It is intended for [Security managers](https://www.surfy.pro/ug/sante-et-securite) wanting to [manage Security team members](/docs/tutorials/person/personSecurityProfile/list.md#visualize-security-profiles-on-plans) with complete peace of mind.
+Cette vision est destinée à accéder rapidement à l'information et permet de revenir aussi rapidement à la vision précédente.
+Le nombre de postes de travail de chaque qualification est indiqué en permanence dans la fiche du bâtiment, de l'étage ou de l'espace considéré.
 
-## "Neighborhoods" View
+## Vision "Conformité de la sécurité"
 
-The "Neighborhoods" view colors spaces by assignment layers, groups spaces into neighborhoods following these layers and allows direct assignment of people to these neighborhoods.
+La vision "Conformité de la sécurité" affiche le nom et la qualité des équipiers de Sécurité (Guide File, Serre File, Secouriste, Pompier, ...) sur leur poste de travail et colorie leur poste d'affectation dans une couleur définie.
+Aucun calque d'analyse n'est affiché, les espaces restent sans couleur.
 
-This is the ideal view for the [assignment manager](https://www.surfy.pro/ff/affecter-les-collaborateurs), allowing them to [manage neighborhood assignment](/docs/tutorials/affectations/dimensiontoperson/create.md) but also [fixed assignments to workstations](/docs/tutorials/affectations/workplaceaffectation/create.md).
-You can indeed mix in the same space workstations declared as Flex (bookable or not) and workstations with fixed assignment.
+Cette vision est destinée à accéder rapidement à l'information et permet de revenir aussi rapidement à la vision précédente.
+Elle est destinée aux [responsables de la Sécurité](https://www.surfy.pro/ug/sante-et-securite) désirant [gérer les équipiers de Sécurité](/en/docs/tutorials/person/personSecurityProfile/list.md#visualiser-les-profils-s%C3%A9curit%C3%A9-sur-les-plans) en toute sérénité.
 
-## "Partitions" View
 
-In the "Partitions" view, no information or layer is displayed on the plan to visualize only the plan background.
-This view allows [space planners](https://www.surfy.pro/ff/amenager-et-optimiser-les-espaces) to verify compliance and [modify the plan background](/docs/tutorials/surfaces/background/edit.md) if necessary.
+## Vision "Quartiers"
+
+La vision "Quartiers" colorie les espaces par les calques d'affectation, regroupe les espaces en quartiers suivant ces calques et permet d'affecter directement les personnes à ces quartiers.
+
+C'est la vision idéale pour le [gestionnaire des affectations](https://www.surfy.pro/ff/affecter-les-collaborateurs), lui permettant de [gérer l'affectation aux quartiers](/en/docs/tutorials/affectations/dimensiontoperson/create.md) mais aussi les [affectations fixes aux postes de travail](/en/docs/tutorials/affectations/workplaceaffectation/create.md).
+On peut en effet mélanger dans un même espace des postes de travail déclarés en Flex (réservable ou non) et des postes à affectation fixe.
+
+
+## Vision "Cloisons"
+
+Dans la vision "Cloisons", aucune information ni aucun calque ne sont affichés sur le plan afin de visualiser uniquement le fond de plan.
+Cette vision permet aux [aménageurs](https://www.surfy.pro/ff/amenager-et-optimiser-les-espaces) de vérifier la conformité et de [modifier le fond de plan](/en/docs/tutorials/surfaces/background/edit.md) si nécessaire.
+
+

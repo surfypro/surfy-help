@@ -2,102 +2,103 @@
 sidebar_position: 1
 ---
 
-# Recharge Spaces by Cost Center
+# Refacturer les espaces par centre de coût
 
-Surfy offers automatic calculation of distribution keys and cumulative surfaces per cost center on one or several buildings to distribute and recharge building charges proportionally to occupation surfaces or people assigned to these spaces.
-
-
-To recharge spaces by cost centers in Surfy, all spaces to be charged must be filled in on their cost center and cost distribution type.
-
-To recharge a space entirely to its cost center, the space's cost distribution type must be "cost center by space".
-
-To recharge surface ratios by workstations of a space to their cost center, all workstations to be charged must be filled in on their cost center and the cost distribution type of their belonging space must be "cost center by workstation".
+Surfy propose un calcul automatique des clés de répartition et surfaces cumulées par centre de coût sur un ou plusieurs bâtiments afin de répartir et refacturer les charges du ou des bâtiments au prorata des surfaces d'occupation ou des personnes affectées à ces espaces.
 
 
-You can choose the cost distribution type for each space, and thus mix spaces recharged by space and space ratios charged by workstation.
+Pour refacturer les espaces par centres de coût dans Surfy, tous les espaces à facturer doivent être renseignés sur leur centre de coût et leur type de distribution des coûts.
 
-## Visualize Cost Centers on the Plan
+Pour refacturer un espace entièrement à son centre de coût, le type de distribution des coûts de l'espace doit être "centre de coût par espace".
 
-You can visualize the cost centers of each space and each workstation on the plan by clicking on the vertical "Euro" icon then selecting the cost centers to display on the "SPACES" and "WORKSTATIONS" tabs.
-Cumulative data per cost center is available by clicking on the butterfly at the end of the cost center line or on the global opening butterfly.
-
-
-For more information on cost distribution types, see the chapter [Cost Distribution Type](/docs/tutorials/costcenter/create.md#cost-distribution-type).
+Pour refacturer les ratios de surface par postes de travail d'un espace à leur centre de coût, tous les postes de travail à facturer doivent être renseignés sur leur centre de coût et le type de distribution des coûts de leur espace d'appartenance doit être "centre de coût par poste de travail".
 
 
-## Distribution Keys and Qualified Surfaces by Cost Center
+On peut choisir le type de distribution des coûts pour chaque espace, et panacher ainsi des espaces refacturés par espace et des ratios d'espace facturés par poste de travail.
 
-Once this information is entered, from the home page, click on the icon at the end of the building's color line to request the "Distribution Keys and Qualified Surfaces by Cost Center for building XXX" 
+## Visualiser les centres de coût sur le plan
 
-You obtain, per Cost Center, the cumulative surfaces and financial distribution keys. 
+On peut visualiser les centres de coût de chaque espace et de chaque poste de travail sur le plan en cliquant sur l'icône verticale "Euro" puis en sélectionnant les centres de coût à afficher sur les onglets "ESPACES" et "POSTES DE TRAVAIL".
+Les données cumulées par centre de coût sont disponibles en cliquant sur le papillon en bout de ligne du centre de coût ou sur le papillon d'ouverture globale.
 
-Cost centers to be distributed are not distributed in this table. They are present in the list like any other cost center. 
 
-By opening the butterfly to the left of each cost center, you obtain the detailed list of each space and the workstations of each space, linked to the cost center, with the surface to recharge and the internal distribution key to the cost center for the space or the space's workstations. 
+Pour plus d'information sur les types de distribution des coûts, voir le chapitre [Type de distribution des coûts](/en/docs/tutorials/costcenter/create.md#type-de-distribution-des-co%C3%BBts).
 
-The cost center named "-" lists errors on spaces and workstations that have a "cost distribution type" but no "cost center". You can easily complete the cost center by clicking on the name of each space or workstation listed in this tab until everything is filled in and removed from the list. 
 
-Spaces and workstations without "cost distribution type" don't appear anywhere and their surface is not counted anywhere. 
+## Clés de répartition et surfaces qualifiées par centre de coût
 
-:::tip Good to know
-Clicking on any space name to the left of the lists returns to the concerned space's environment, on the plans. You can then modify the information directly, then after refresh (F5) return to the updated distribution keys.
+Une fois ces informations entrées, à partir de la page d’accueil, cliquer sur l’icône au bout de la ligne de couleur du bâtiment pour demander les « Clés de répartition et surfaces qualifiées par Centre de Coût pour le bâtiment XXX » 
+
+On obtient, par Centre de Coût, les surfaces cumulées et les clés de répartition financières. 
+
+Les centres de coût à ventiler ne sont pas ventilés dans ce tableau. Ils sont présents dans la liste comme tout autre centre de coût. 
+
+En ouvrant le papillon à gauche de chaque centre de coût, on obtient la liste détaillée de chaque espace et des postes de travail de chaque espace, rattachés au centre de coût, avec la surface à refacturer et la clé de répartition interne au centre de coût pour l'espace ou les postes de travail de l'espace. 
+
+Le centre de coût nommé "-" liste les erreurs sur les espaces et les postes de travail qui ont un "type de distribution des coûts" mais pas de "centre de coût". On peut facilement compléter le centre de coût en cliquant sur le nom de chacun des espaces ou postes de travail listés dans cet onglet jusqu’à tout renseigner et retirer de la liste. 
+
+Les espaces et postes de travail sans "type de distribution des coûts" n’apparaissent nulle part et leur surface n’est comptabilisée nulle part. 
+
+:::tip Bon à savoir
+Cliquer sur n'importe quel nom d'espace à la gauche des listes renvoit dans l'environnement de l'espace concerné, sur les plans. On peut alors modifier directement l'information, puis après rafraichissement(F5) revenir sur les clés de répartitions mises à jour.
 :::
 
 
-## Distribute Common Areas
+## Ventiler les parties communes
 
-Example of distributing the "common areas" cost center between two other cost centers:
+Exemple de ventilation du centre de coût des "parties communes" entre deux autres centres de coût :
 
 <Youtube code="hc4hrITcg4o"/>
 
 
-## Excel File Exports 
+## Exports en Fichier Excel 
 
-The data is available in Excel files, with or without distribution, by floor or for the entire building:
-
-
-
-### The Excel file, by Floor with distribution
-
--   column A: Floor name  
--   column B: Cost center (Cost Center name)
--   column C: Space surfaces including floor distributions (Surface to recharge, by floor and CC)
--   column D: Space surfaces before distribution (Surface assigned to each CC, by floor)
--   column E: Floor distribution keys with distribution (the sum of keys per floor gives 1)
--   column F: Space surfaces to distribute on the floor (surface distribution ratio on the CC)
--   column G: Total floor surface including surfaces to distribute (Sum of all surfaces having a CC)
--   column H: Total surface to distribute on the floor (Sum of all surfaces to distribute on the floor)
--   column I: Floor surface to distribute on the building (Sum of surfaces to distribute on the building)
+Les données sont disponibles en fichiers Excel, avec ou sans ventilation, par étage ou pour l’ensemble du bâtiment :
 
 
- ### The Excel file, by Building with distribution
 
--   column A: Cost center (Cost Center name) 
--   column B: Space surfaces including distributions (Surface to recharge, by CC) 
--   column C: Building distribution keys with distribution (The sum of keys on the building gives 1) 
--   column D: Space surfaces to distribute (surface distribution ratio on the CC) 
--   column E: Space surfaces before distribution (Surface assigned to each CC) 
--   column F: Total surface to distribute in the building (Sum of all surfaces to distribute on the building) 
--   column G: Total building surface not distributed (Sum of all non-distributed surfaces on the building) 
--   column H: Total building surface including surfaces to distribute (Sum of all surfaces having a CC) 
+### Le fichier Excel, par Etage avec ventilation
 
-
-### The Excel file, without distribution
-
--   column A: Cost center (Cost Center name) 
--   column B: Surface (Surface to recharge, by CC) 
--   column C: Distribution keys (the sum of keys on the building gives 1) 
+-   colonne A : Nom de l'étage  
+-   colonne B : Centre de coût (Nom du Centre de Coût)
+-   colonne C : Surface des espaces incluant les ventilations de l'étage (Surface à refacturer, par étage et CdC)
+-   colonne D : Surface des espaces avant ventilation (Surface attribuée à chaque CdC, par étage)
+-   colonne E : Clés de répartition de l'étage avec ventilation (la somme des clés par étage donne 1)
+-   colonne F : Surface des espaces à ventiler sur l'étage (prorata de surface ventilée sur le CdC)
+-   colonne G : Surface totale de l'étage incluant les surfaces à ventiler (Somme de toutes les surfaces ayant un CdC)
+-   colonne H : Surface totale à ventiler sur l'étage (Somme de toutes les surfaces à ventiler sur l’étage)
+-   colonne I : Surface de l'étage à ventiler sur le bâtiment (Somme des surfaces à ventiler sur le bâtiment)
 
 
-### The Excel file, details without distribution
+ ### Le fichier Excel, par Bâtiment avec ventilation
 
--   column A: Cost center (Cost Center name) 
--   column B: Type (entity to recharge, space or workstation) 
--   column C: Space (concerned space) 
--   column D: Floor (concerned floor) 
--   column E: Building (concerned building) 
--   column F: Surface (Surface to recharge) 
--   column G: Distribution key for the building (The sum of keys on the building gives 1) 
--   column H: Number of workstations (number of workstations of the CC) 
--   column I: Total number of workstations (total number of workstations of the space) 
--   column J: Distribution key for the cost center (The sum of keys on the CC gives 1)
+-   colonne A : Centre de coût (Nom du Centre de Coût) 
+-   colonne B : Surface des espaces incluant les ventilations (Surface à refacturer, par CdC) 
+-   colonne C : Clés de répartition du bâtiment avec ventilation (La somme des clés sur le bâtiment donne 1) 
+-   colonne D : Surface des espaces à ventiler (prorata de surface ventilée sur le CdC) 
+-   colonne E : Surface des espaces avant ventilation (Surface attribuée à chaque CdC) 
+-   colonne F : Surface totale à ventiler dans le bâtiment (Somme de toutes les surfaces à ventiler sur le bâtiment) 
+-   colonne G : Surface totale du bâtiment non ventilée (Somme de toutes les surfaces non ventilées sur le bâtiment) 
+-   colonne H : Surface totale du bâtiment incluant les surfaces à ventiler (Somme de toutes les surfaces ayant un CdC) 
+
+
+### Le fichier Excel, sans ventilation
+
+-   colonne A : Centre de coût (Nom du Centre de Coût) 
+-   colonne B : Surface (Surface à refacturer, par CdC) 
+-   colonne C : Clés de répartition (la somme des clés sur le bâtiment donne 1) 
+
+
+### Le fichier Excel, détails sans ventilation
+
+-   colonne A : Centre de coût (Nom du Centre de Coût) 
+-   colonne B : Type (entité à refacturer, espace ou poste de travail) 
+-   colonne C : Espace (espace concernée) 
+-   colonne D : Étage (Etage concerné) 
+-   colonne E : Bâtiment (Bâtiment concerné) 
+-   colonne F : Surface (Surface à refacturer) 
+-   colonne G : Clé de répartition pour le bâtiment (La somme des clés sur le bâtiment donne 1) 
+-   colonne H : Nombre de postes de travail (nombre de postes de travail du CdC) 
+-   colonne I : Nombre total des postes de travail (nombre de postes de travail total de l’espace) 
+-   colonne J : Clé de répartition pour le centre de coût (La somme des clés sur le CdC donne 1) 
+

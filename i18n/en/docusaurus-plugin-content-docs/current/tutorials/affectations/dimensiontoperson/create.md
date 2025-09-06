@@ -1,61 +1,62 @@
 ---
 sidebar_position: 1
 ---
-# Create a Neighborhood Assignment
+# Créer une Affectation à un quartier
 
-To assign people to neighborhoods, you must first create assignment layers then define neighborhoods by qualifying spaces. Consult the [Assignment Layers](/docs/tutorials/dimensionTypeToBuilding/create.md) section to learn everything about creating, modifying or deleting an assignment layer.
+Pour affecter des personnes à des quartiers, il faut tout d'abord créer des calques d'affectation puis définir les quartiers en qualifiant les espaces. Consulter la rubrique [Calques d'affectation](/en/docs/tutorials/dimensionTypeToBuilding/create.md) pour tout savoir sur la création, modification ou suppression d'un calque d'affectation.
 
-Once neighborhoods are created on plans,
+Une fois les quartiers créés sur les plans,
 
--   click on the vertical "Grid" icon to "Color spaces on the plan according to assignment layers" and visualize information totals by assignment layer.
--   "select the layer type for navigation" to activate selection by entire neighborhoods, by clicking on the icon at the end of the layer name line
--   the neighborhood's information, its assignments and inventory are accessible in the same way as for a classic space, by clicking in the neighborhood to display this information on the left side of the screen.
+-   cliquer sur l'icone verticale "Grille" pour "Colorier les espaces sur le plan en fonction des calques d'affectation" et visualiser les cumuls d'informations par calque d'affectation.
+-   "sélectionner le type de calque pour la navigation" afin d'activer la sélection par quartiers entiers, en cliquant sur l'icone en bout de ligne du nom du calque
+-   les informations du quartier, ses affectations et son inventaire sont accessibles de la même manière que pour un espace classique, en cliquant dans le quartier pour afficher ces informations à gauche de l'écran.
 
-:::tip Plan View
-Clicking on the vertical "Change plan view" icon and selecting "Neighborhoods" allows you to configure Surfy in neighborhood assignment mode in 2 clicks: Assignment layers are displayed on the plan and the layer type is selected for navigation. As long as the view is not changed, it remains effective even after refresh (F5). You must therefore remember to return to the default view "Space Typologies" for standard use. See [neighborhood view](/docs/courses/views/planviews.md#vision-quartiers).
+:::tip Vision du plan
+Cliquer sur l'icône verticale "Changer la vision du plan" et sélectionner "Quartiers" permet en 2 clics de configurer Surfy en mode affectation par quartier : Les calques d'affectation s'affichent sur le plan et le type de calque est sélectionné pour la navigation. Tant que la vision n'est pas changée, elle reste effective même après rafraichissement (F5). Il faut donc penser à revenir dans la vision par défaut "Typologies des espaces" pour une utilisation standard. Voir [la vision par quartiers](/en/docs/courses/views/planviews.md#vision-quartiers).
 :::
 
-To assign a person to a neighborhood, 
+Pour affecter une personne à un quartier, 
 
--   click in the neighborhood to select it on the plan
--   click on the "Assign a person to XXX" icon at the top left of the neighborhood's record
--   Search and select in the list the <P code="dimensionToPerson:person" /> to assign
+-   cliquer dans le quartier pour le sélectionner sur le plan
+-   cliquer sur l'icône "Affecter une personne à XXX" en haut à gauche de la fiche du quartier
+-   Rechercher et sélectionner dans la liste la <P code="dimensionToPerson:person" /> à affecter
 
-The person is assigned to the neighborhood.
+La personne est affectée au quartier.
 
-If the person is not yet created in Surfy's database, you can "Create and associate" this person to the assignment layer:
+Si la personne n'est pas encore créée dans la base de données de Surfy, on peut "Créer et associer" cette personne au calque d'affectation :
 
--   click on "Create and associate"
--   fill in the person's record
--   "validate the creation" of the person
+-   cliquer sur "Créer et associer"
+-   remplir la fiche de la personne
+-   "valider la création" de la personne
 
-The person is created and assigned to the corresponding neighborhood.
+La personne est créée et affectée au quartier correspondant.
 
-## View Neighborhood Assignments
+## Visualiser les affectations à un quartier
 
-To visualize neighborhood assignments in Surfy:
--   click on the neighborhood to select it
--   in the neighborhood's record, click on the "Assignments" tab
+Pour visualiser dans Surfy les affectations à un quartier :
+-   cliquer sur le quartier pour le sélectionner
+-   dans la fiche du quartier, cliquer sur l'onglet "Affectations"
 
-You then see the list of all people assigned to the neighborhood, in alphabetical order.
+On visualise alors la liste de l'ensemble des personnes affectées au quartier, par ordre alphabétique.
 
-## Neighborhood Assignment Data Report
+## Rapport de données des affectations aux quartiers
 
-You can export the list of people assigned to neighborhoods of a building in Excel file.
+On peut exporter la liste des personnes affectées aux quartiers d'un bâtiment en fichier Excel.
 
-From the home page,
+Depuis la page d'accueil,
 
--   click on the icon at the end of the concerned building's color band
--   request the "Dashboard for building XXX", the list of "Excel reports" appears
--   click on the icon at the end of the line of "Report of people assigned in building XXX"
--   open the corresponding Excel file, present in downloads.
--   open the "AffecAuxCalquDAffec" tab
+-   cliquer sur l'icône au bout de la bande de couleur du bâtiment concerné
+-   demander le "Tableau de bord pour le bâtiment XXX", la liste des "rapports Excel" apparait
+-   cliquer sur l'icône en bout de ligne du "Rapport des personnes affectées dans le bâtiment XXX"
+-   ouvrir le fichier Excel correspondant, présent dans les téléchargements.
+-   ouvrir l'onglet "AffecAuxCalquDAffec"
 
-You obtain the list of assignments to the building's assignment layers, as well as all information related to people assigned to these layers.
+On obtient la liste des affectations aux calques d'affectation du bâtiment, ainsi que toutes les informations relatives aux personnes affectées à ces calques.
 
 
-:::tip Good to know
-From the home page, "List buildings" in the context menu allows you to select several buildings and obtain dashboard reports on all selected buildings by clicking on the appropriate icon at the top of the page.
+:::tip Bon à savoir
+Depuis la page d'accueil, "Lister les bâtiments" dans le menu contextuel permet de sélectionner plusieurs bâtiments et d'obtenir les rapports du tableau de bord sur l'ensemble des bâtiments sélectionnés en cliquant sur l'icône appropriée en haut de page.
 :::
 
-## Assign People to Neighborhoods by Excel Import
+## Affecter des personnes aux quartiers par import Excel
+

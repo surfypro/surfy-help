@@ -2,136 +2,138 @@
 sidebar_position: 4
 ---
 
-# Save Plans as Images
+# Sauvegarde des plans en Image
 
-You can export different types of plans as PNG files from Surfy:
--   2D floor plans
--   2D building floor plans, partial or complete
--   3D floor plans
--   3D building plans, partial or complete
+On peut exporter différents types de plans en fichiers PNG depuis Surfy :
+-   les plans 2D de l'étage
+-   les plans 2D des étages du bâtiment, partiel ou complet
+-   les plans 3D de l'étage
+-   les plans 3D du bâtiment, partiel ou complet
 
-All plans are exported in PNG format.
+Tous les plans sont exportés au format PNG.
 
-## Export 2D Plans as Images
+## Exporter les plans 2D en Image
 
-### Export a Floor's 2D Plan
+### Exporter le plan 2D d'un étage
 
-To export a floor's plan as an Image,
+Pour exporter le plan d'un étage en Image,
 
--   go to the concerned floor
--   display on the plan the layer and information necessary for Image output: furniture, text display, font sizes, icon sizes, ...
+-   aller sur l'étage concerné
+-   afficher sur le plan le calque et les informations nécessaires à la sortie en Image : mobilier, affichage des textes, taille des polices, taille des icones, ...
 
-For more information on plan display configuration, see the chapter [Display 2D Plans](/docs/courses/views/2Dviews.md).
+Pour plus d'informations sur la configuration d'affichage des plans, voir le chapitre [Affichage des plans en 2D](/en/docs/courses/views/2Dviews.md).
 
--   once the plan is configured, click on the "cloud" icon above the plan to "save as Image" the floor's plan.
+-   une fois le plan configuré, cliquer sur l'icône "nuage" au dessus du plan afin de "sauvegarder en Image" le plan de l'étage.
 
--   choose the download option by clicking on:
+-   choisir l'option de téléchargement en cliquant sur :
 
-    -   Entire plan with legend: to obtain the entire floor plan as it is in Surfy, with layer legends and cumulative information by layer
-    -   Entire plan without legend: to obtain the entire floor plan as it is in Surfy, without legends
-    -   Screenshot without legend: to obtain the part of the plan displayed on the screen, without legends
+    -   Tout le plan avec légende : pour obtenir l'ensemble du plan de l'étage tel qu'il est dans Surfy, avec les légendes des calques et le cumul des informations par calque
+    -   Tout le plan sans légende : pour obtenir l'ensemble du plan de l'étage tel qu'il est dans Surfy, sans les légendes
+    -   Copie d'écran sans légende : pour obtenir la partie du plan affichée sur l'écran, sans les légendes
 
-The PNG file is available in downloads.
+Le fichier PNG est disponible dans les téléchargements.
 
-### Configure the 2D Plan Legend to Export
+### Configurer la légende du plan 2D à exporter
 
-When outputting a floor's plan as an image with legend, the "default legend" is composed of:
+Lors de la sortie en image du plan d'un étage avec légende, la "légende par défaut" est composée :
 
--   the company logo
--   the building name and address (if filled in)
--   the floor name
--   floor information, identical to the floor record information to the left of the plan
--   the displayed layer legend, with cumulative information by layer.
+-   du logo de l'entreprise
+-   du nom du bâtiment et de son adresse (si renseignée)
+-   du nom de l'étage
+-   des informations de l'étage, identiques aux informations de la fiche de l'étage à gauche du plan
+-   de la légende du calque affiché, avec le cumul des informations par calque.
 
-You can customize the legend displayed on the image output by creating legends adapted to the information to display.
+On peut personnaliser la légende affichée sur la sortie en image en créant des légendes adaptées aux informations à afficher.
 
-For this, from the left menu,
+Pour cela, depuis le menu de gauche,
 
--   click on "Administration" then "Legend" to "Create a legend"
--   give a name to the legend to create
--   in "Configuration", "Property selection", check the properties and information to display for "buildings" and "floors"
--   in "Space typologies", check the information to display (number of spaces, total capacity) for each space typology present on the platform
--   in "space typology groups", check the information to display (number of spaces, total capacity) for each space typology group present on the platform.
--   "validate the creation" of the legend
+-   cliquer sur "Administration" puis "Légende" pour "Créer une légende"
+-   donner un nom à la légende à créer
+-   dans "Configuration", "Sélection des propriétés", cocher les propriétés et informations à afficher pour les "bâtiments" et les "étages"
+-   dans "Typologies d'espace", cocher les informations à afficher (nombre d'espaces, capacité totale) pour chaque typologie d'espace présente sur la plateforme
+-   dans "groupes de typologies d'espace", cocher les informations à afficher (nombre d'espaces, capacité totale) pour chaque groupe de typologies d'espace présent sur la plateforme.
+-   "valider la création" de la légende
 
-When outputting a floor's plan as an image with legend, "select the legend" to the right of the screen allows you to find the different saved legends to display the selected legend.
+Lors de la sortie en image du plan d'un étage avec légende, "sélectionner la légende" à droite de l'écran permet de retrouver les différentes légendes enregistrées afin d'afficher la légende sélectionnée.
 
-The legend preview is viewable by clicking on the "Preview legend" icon at the bottom of the "save as image" record to the right of the screen.
+L'aperçu de la légende est visualisable en cliquant sur l'icône "Prévisualiser la légende" en bas de la fiche "sauvegarder en image" à droite de l'écran.
 
-:::tip GOOD TO KNOW
-A space typology group allows you to group several space typologies to facilitate their management and display.
-You can create for example a "Meeting Spaces" space typology group grouping the "Meeting Room", "Bubble" and "Meeting Box" space typologies to display them or cumulate information from all typologies included in the group.
+:::tip BON A SAVOIR
+Un groupe de typologies d'espace permet de regrouper plusieurs typologies d'espace pour faciliter leur gestion et leur affichage.
+On peut créer par exemple un groupe de typologies d'espace "Espaces de réunion" regroupant les typologies d'espace "Salle de réunion", "Bulle" et "Box de réunion" afin de les afficher ou de cumuler les informations de l'ensemble des typologies inclues dans le groupe.
 
-To configure a space typology group, see the chapter on [Space Typology Groups](/docs/tutorials/surfaces/room/roomtype/#space-typology-groups)
+Pour configurer un groupe de typologies d'espace, voir le chapitre sur [Les groupes de typologies d'espace](/en/docs/tutorials/surfaces/room/roomtype/#les-groupes-de-typologies-despace)
 :::
 
-### Export 2D Plans of Several Floors
+### Exporter les plans 2D de plusieurs étages
 
-You can export plans of several floors simultaneously,
--   click on "Export images of entire building"
--   select floors to export
--   click on "download ZIP"
+On peut exporter les plans de plusieurs étages simultanément,
+-   cliquer sur "Exporter les images de tout le bâtiment"
+-   sélectionner les étages à exporter
+-   cliquer sur "télécharger le ZIP"
 
-The compressed file is available in downloads.
+Le fichier compressé est disponible dans les téléchargements.
 
-:::tip Good to know
-All floor plans take up the plan configuration from which the export is made: no need to load the right layer, the right legend or choose the right font size for each floor, once is enough!
+:::tip Bon à savoir
+Tous les plans des étages reprennent la configuration du plan à partir duquel l'export est fait : pas besoin de charger le bon calque, la bonne légende ni de choisir la bonne taille de police pour chaque étage, une fois suffit !
 :::
 
-## Export 3D Plans as Images
+## Exporter les plans 3D en Image
 
-3D plans are available for the floor or for the building.
-They are dynamic and interactive.
+Les plans en 3D sont disponibles pour l'étage ou pour le bâtiment.
+Ils sont dynamiques et interactifs.
 
-Each modification on the 2D plan is immediately reported on the 3D plan.
+Chaque modification sur le plan 2D est reportée immédiatement sur le plan 3D.
 
-### Export a Building's 3D Plan
+### Exporter le plan 3D d'un bâtiment
 
-To obtain a building's 3D plan, from the home page,
+Pour obtenir le plan en 3D d'un bâtiment, depuis la page d'accueil,
 
--   click on the icon at the end of the concerned building's color line
--   select "building XXX's interactive 3D plan"
--   click on the vertical "gear" icon to "see plan options"
--   select floors to display in the building
--   choose the partition representation type (with partitions, without partitions or half-height partitions)
--   the "Cuby" representation replaces each space with a cube taking up the space's layer color
+-   cliquer sur l'icône en bout de ligne de couleur du bâtiment concerné
+-   sélectionner "le plan en 3D interactif du bâtiment XXX"
+-   cliquer sur l'icône verticale "engrenage" afin de "voir les options du plan"
+-   sélectionner les étages à afficher dans le bâtiment
+-   choisir le type de représentation des cloisons (avec cloisons, sans cloison ou cloisons à mi-hauteur)
+-   la représentation "Cuby" remplace chaque espace par un cube reprenant la couleur du calque de l'espace
 
-You can adjust the "space between each floor" by operating the slider to the left of the 3D plan.
+On peut régler l'"espace entre chaque étage" en actionnant le curseur à gauche du plan 3D.
 
-The mouse wheel allows you to adjust the 3D plan size.
-Left mouse click allows you to tilt and orient the plan in space
-Right mouse click allows you to move the 3D plan in the screen window.
+La molette de la souris permet d'ajuster la taille du plan 3D.
+Le clic1 de la souris permet d'incliner et d'orienter le plan dans l'espace
+Le clic2 de la souris permet le déplacement du plan 3D dans la fenêtre de l'écran.
 
-You can tilt the 3D plan with a constant angle, by clicking on "Center plan in Isometric view"
+On peut incliner le plan 3D avec un angle constant, en cliquant sur "Centre le plan en vue Isometric"
 
-Once the 3D plan is correctly configured,
+Une fois le plan 3D correctement configuré,
 
--   click on the vertical "gear" icon to "see plan options" (if not already the case)
--   click on "Download image"
+-   cliquer sur l'icône verticale "engrenage" afin de "voir les options du plan" (si ce n'est pas déjà le cas)
+-   cliquer sur "Télécharger l'image"
 
-The export gives the 3D building image as it is on the screen.
-The building's 3D plan is available in downloads.
+L'export donne l'image du bâtiment 3D tel qu'il est sur l'écran.
+Le plan 3D du bâtiment est disponible dans les téléchargements.
 
-### Export a Floor's 3D Plan
 
-To obtain a floor's 3D plan, from the floor plan,
+### Exporter le plan 3D d'un étage
 
--   click in the context menu (gray box below the search magnifying glass)
--   choose "Floor XXX's 3D plan"
+Pour obtenir le plan en 3D d'un étage, à partir du plan de l'étage,
 
-The floor plan appears in 3D in zenith view
+-   cliquer dans le menu contextuel (case grise en dessous de la loupe de recherche)
+-   choisir "Le plan de l'étage XXX en 3D"
 
--   click on the vertical "gear" icon to "see plan options"
--   choose the partition representation type (with partitions, without partitions or half-height partitions)
--   the "Cuby" representation replaces each space with a cube taking up the space's layer color
+Le plan de l'étage apparait en 3D en vue zénithale
 
-The mouse wheel allows you to adjust the 3D plan size.
-Left mouse click allows you to move the 3D plan in the screen window
-Right mouse click allows you to tilt and orient the plan in space.
+-   cliquer sur l'icône verticale "engrenage" afin de "voir les options du plan"
+-   choisir le type de représentation des cloisons (avec cloisons, sans cloison ou cloisons à mi-hauteur)
+-   la représentation "Cuby" remplace chaque espace par un cube reprenant la couleur du calque de l'espace
 
-:::tip Good to know
-Clicking on "Center plan in Zenith view" or "Center plan in Isometric view" allows you to display an image with calibrated dimensions in zenith or isometric view, and therefore interchangeable in third-party solution updates.
+La molette de la souris permet d'ajuster la taille du plan 3D.
+Le clic1 de la souris permet le déplacement du plan 3D dans la fenêtre de l'écran
+Le clic2 de la souris permet d'incliner et d'orienter le plan dans l'espace.
+
+:::tip Bon à savoir
+Cliquer sur "Centre le plan en vue Zénithale" ou "Centre le plan en vue Isometric" permet d'afficher une image aux dimensions calibrées en vue zénithale ou Isométric, et donc interchangeable dans la mise à jour de solution tierce.
 :::
 
-Clicking on "Download image" generates the PNG file in downloads.
-The floor's 3D image is as it is on the screen.
+
+Cliquer sur "Télécharger l'image" génère le fichier PNG dans les téléchargements.
+L'image de l'étage en 3D est tel qu'il est sur l'écran.

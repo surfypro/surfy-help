@@ -1,133 +1,137 @@
 ---
 sidebar_position: 2
 ---
-# Display 2D Plans
+# Affichage des plans en 2D
 
-## Visualize a 2D Plan
+## Visualiser un plan en 2D
 
-To visualize a 2D plan from the home page, click on the floor name of the concerned building.
-If the plan to display concerns a scenario, click on the "building XXX scenarios and projects" icon at the bottom right of its original building's record then click on the desired floor.
+Pour visualiser un plan en 2D depuis la page d'accueil, cliquer sur le nom de l'étage du bâtiment concerné.
+Si le plan à afficher concerne un scénario, cliquer sur l'icône "les scénarios et projets du bâtiment XXX" en bas à droite de la fiche de son bâtiment d'origine puis cliquer sur l'étage voulu.
 
-You can display the 2D plan from the left menu, by clicking on "Buildings" then on the concerned building.
-Then click on the floor to display, or on the "building XXX scenarios and projects" icon then on the desired floor.
+On peut afficher le plan 2D depuis le menu de gauche, en cliquant sur "Bâtiments" puis sur le bâtiment concerné.
+Cliquer alors sur l'étage à afficher, ou sur l'icône "les scénarios et projets du bâtiment XXX" puis sur l'étage voulu.
 
-The floor plan is visualized according to the [View](/docs/courses/views/planviews.md) used.
+Le plan de l'étage est visualisé suivant la [Vision](/en/docs/courses/views/planviews.md) utilisée.
 
-Information and data linked to the plan are displayed on the left part of the screen and can be reduced by clicking on the vertical "Close plan menu" icon.
-The left menu of the screen (Lists Menu) can also be reduced by clicking on the three horizontal lines "Reduce menu" under the company logo at the top left of the screen.
+Les informations et données liées au plan sont affichées sur la partie gauche de l'écran et peuvent être réduites en cliquant sur l'icône verticale "Fermer le menu du plan".
+Le menu à gauche de l'écran (Menu Listes) peut également être réduit en cliquant sur les trois traits horizontaux "Réduire le menu" sous le logo de l'entreprise en haut à gauche de l'écran.
 
-## Manage Space Display Text
+## Gérer le texte d'affichage des espaces
 
-To display space information on the plan, from the floor plan,
+Pour afficher les informations des espaces sur le plan, depuis le plan de l'étage,
 
--   click on the "Manage space display text" icon above the plan
--   a record appears on the right of the screen, with "PLAN" and "TOOLTIP" tabs.
+-   cliquer sur l'icône "Gérer le texte d'affichage des espaces" au dessus du plan
+-   une fiche apparait à droite de l'écran, comportant les onglets "PLAN" et "INFOBULLE".
 
-The "PLAN" tab allows the choice of displaying information:
-    -   of "SPACES" by checking the space information to display on the plan
-    -   of "PEOPLE" whose assignment type is selected in the "SPACES" tab, with or without their security profile.
+L'onglet "PLAN" permet le choix d'affichage des informations : 
+    -   des "ESPACES" en cochant les informations des espaces à afficher sur le plan
+    -   des "PERSONNES" dont le type d'affectation est sélectionné dans l'onglet "ESPACES", avec ou sans leur profil sécurité.
 
-The "TOOLTIP" tab allows the choice of displaying information in the tooltip displayed when hovering over the plan.
+L'onglet "INFOBULLE" permet le choix d'affichage des informations de l'infobulle affichée au passage de la souris sur le plan.
 
- You can change the display order of information by dragging and dropping the "=" sign from bottom to top.
+ On peut changer l'ordre d'affichage des informations en glissant-déplaçant le signe "=" de bas en haut.
 
-## Manage Workstation Display Text
+## Gérer le texte d'affichage des postes de travail
 
-To display workstation information on the plan, from the floor plan,
+Pour afficher les informations des postes de travail sur le plan, depuis le plan de l'étage,
 
--   click on the "Manage workstation display text" icon above the plan
--   a record appears on the right of the screen, with "WORKSTATIONS" and "PEOPLE" tabs.
+-   cliquer sur l'icône "Gérer le texte d'affichage des postes de travail" au dessus du plan
+-   une fiche apparait à droite de l'écran, comportant les onglets "POSTES DE TRAVAIL" et "PERSONNES".
 
-The "WORKSTATIONS" tab allows the choice of displaying workstation information, as well as people assigned to workstations and their information selected in the adjacent "PEOPLE" tab.
+L'onglet "POSTES DE TRAVAIL" permet le choix d'affichage des informations des postes de travail, ainsi que des personnes affectées aux postes de travail et leurs informations sélectionnées dans l'onglet adjacent "PERSONNES".
 
-The "PEOPLE" tab allows the choice of displaying information of people assigned to workstations. These people are only displayed if the "Display people" option is validated in the "WORKSTATIONS" tab.
+L'onglet "PERSONNES" permet le choix d'affichage des informations des personnes affectées aux postes de travail. Ces personnes ne sont affichées que si l'option "Afficher les personnes" est validée dans l'onglet "POSTES DE TRAVAIL".
 
- You can change the display order of information by dragging and dropping the "=" sign from bottom to top.
+ On peut changer l'ordre d'affichage des informations en glissant-déplaçant le signe "=" de bas en haut.
 
-## Manage Display Font Sizes
 
-To change the display font sizes of spaces or objects, from the floor plan,
+## Gérer la taille des polices d'affichage
 
--   click on the "Manage scale" icon above the plan then:
-    -   modify the "Space text size"
-    -   modify the "Text size on objects"
+Pour changer la taille des polices d'affichage des espaces ou des objets, depuis le plan de l'étage,
 
-In all size choices,
+-   cliquer sur l'icône "Gérer l'échelle" au dessus du plan puis :
+    -   modifier la "Taille du texte des espaces"
+    -   modifier la "Taille du texte sur les objets"
 
-        -   clicking on the green checkmark allows you to validate the display font size until the next change.
-        -   clicking on the red cross cancels the display font size change.
-        -   checking nothing allows you to keep the modified font size until the next refresh (F5). The size then returns to the last value validated with the green checkmark.
+Dans tous les choix de taille,
 
-## Modify Icon Sizes on the Plan
+        -   cliquer sur la coche verte permet de valider la taille de la police d'affichage jusqu'au prochain changement.
+        -   cliquer sur la croix rouge annule le changement de taille de police d'affichage.
+        -   ne rien cocher permet de garder la taille modifiée de la police jusqu'au prochain rafraichissement (F5). La taille revient alors à la dernière valeur validée avec la coche verte.
 
-To change icon sizes on the plan, from the floor plan,
+## Modifier la taille des icônes sur le plan
 
--   click on the "Manage scale" icon above the plan then on "modify Object type icon sizes".
--   adjust icon sizes. All icons are displayed at the same size.
+Pour changer la taille des icônes sur le plan, depuis le plan de l'étage,
 
-As in all size choices,
-        -   clicking on the green checkmark allows you to validate icon sizes until the next change.
-        -   clicking on the red cross cancels the icon size change.
-        -   checking nothing allows you to keep the modified icon sizes until the next refresh (F5). Icon sizes then return to the last value validated with the green checkmark.
+-   cliquer sur l'icône "Gérer l'échelle" au dessus du plan puis sur "modifier la Taille des icônes des types d'objet".
+-   ajuster la taille des icônes. Toutes les icônes sont affichées à la même taille.
 
-## Move Display Text
+Comme dans tous les choix de taille,
+        -   cliquer sur la coche verte permet de valider la taille des icônes jusqu'au prochain changement.
+        -   cliquer sur la croix rouge annule le changement de taille des icônes.
+        -   ne rien cocher permet de garder la taille modifiée des icônes jusqu'au prochain rafraichissement (F5). La taille des icônes revient alors à la dernière valeur validée avec la coche verte.
 
-You can move the display text of spaces, workstations or objects,
 
--   click on the "Pencil" icon above the plan to "Activate plan edit mode"
--   click in the space, on the workstation or on the concerned object
--   click on the "Define display text location" icon (oblique "A" icon above the plan)
+## Déplacer le texte d'affichage
 
-A red circle appears behind the space, workstation or object text, and a record opens on the right of the screen to "define display text location".
+On peut déplacer le texte d'affichage des espaces, des postes de travail ou des objets,
 
--   click-drag the circle to move the entity display
--   on the right record, "activate anchor display" allows you to draw a line between the text and the space, workstation or object the text belongs to in order to indicate this belonging
--   on the right record, "reset text position" allows you to replace the text at its original position at the barycenter of the space, workstation or object.
+-   cliquer sur l'icône "Crayon" au dessus du plan pour "Activer le mode édition du plan"
+-   cliquer dans l'espace, sur le poste de travail ou sur l'objet concerné
+-   cliquer sur l'icône "Définir l'emplacement du texte d'affichage" (icône "A" oblique au dessus du plan)
 
-Once texts are moved,
--   click on the oblique "A" icon to "stop managing display text"
--   click on the "pencil" icon above the plan to "deactivate plan edit mode".
+Un cercle rouge s'affiche derrière le texte de l'espace, du poste de travail ou de l'objet sélectionné, et une fiche s'ouvre à droite de l'écran pour "définir l'emplacement du texte d'affichage".
 
-The text is moved, and possibly anchored to its entity.
-Text movements are individual. Resetting their location is also.
+-   cliquer-déplacer le cercle pour déplacer l'affichage de l'entité
+-   sur la fiche à droite,"activer l'affichage de l'ancre" permet de tirer une ligne entre le texte et l'espace, le poste de travail ou l'objet d'appartenance du texte afin d'indiquer cette appartenance
+-   sur la fiche de droite, "réinitialiser la position du texte" permet de replacer le texte à sa position d'origine au barycentre de l'espace, du poste de travail ou de l'objet.
 
-## Display Layers on the Plan
+Une fois les textes déplacés,
+-   cliquer sur l'icône "A" oblique pour "arrêter la gestion du texte d'affichage"
+-   cliquer sur l'icône "crayon" au dessus du plan pour "désactiver le mode édition du plan".
 
-Displaying layers on the plan allows you to color spaces according to various qualifications.
-Grouped spaces have their cumulative information by layer by clicking on the corresponding vertical icon:
+Le texte est déplacé, et éventuellement ancré à son entité.
+Les déplacements de texte sont individuels. La réinitialisation de leur emplacement également.
 
--   "color spaces on the plan according to space typologies" displays and gives totals by space typology
--   "color spaces on the plan according to analysis layers" displays and gives totals by analysis layer
--   "color spaces on the plan according to assignment layers" displays and gives totals by assignment layer
--   "color spaces on the plan according to organizations" displays and gives totals by Service and by Department
--   "color spaces and workstations according to cost centers" displays and gives totals by cost center, for spaces, workstations and people.
 
-:::tip GOOD TO KNOW
-You can visualize the totals of different layers for the entire building by [visualizing the building in 3D](/docs/courses/views/3Dviews.md#display-3d-plan-of-a-building)
+## Afficher les calques sur le plan
+
+Afficher les calques sur le plan permet de colorier les espaces en fonction de diverses qualifications.
+Les espaces regroupés ont leur informations cumulées par calque en cliquant sur l'icône verticale correspondante :
+
+-   "colorier les espaces sur le plan en fonction des typologies d'espace" affiche et donne les cumuls par typologie d'espace
+-   "colorier les espaces sur le plan en fonction des calques d'analyse" affiche et donne les cumuls par calque d'analyse
+-   "colorier les espaces sur le plan en fonction des calques d'affectation" affiche et donne les cumuls par calque d'affectation
+-   "colorier les espaces sur le plan selon les organisations" affiche et donne les cumuls par Service et par Direction
+-   "colorier les espaces et les postes de travail par rapport aux centres de coût" affiche et donne les cumuls par centre de coût, pour les espaces, les postes de travail et les personnes.
+
+:::tip BON A SAVOIR
+On peut visualiser les cumuls des différents calques pour l'ensemble du bâtiment en [visualisant le bâtiment en 3D](/en/docs/courses/views/3Dviews.md#afficher-le-plan-3d-dun-bâtiment)
 :::
 
-## Display Workstation Status on the Plan
+## Afficher l'état des postes de travail sur le plan
 
-Clicking on the vertical "color workstations according to their status" icon allows you to color workstations:
--   in green for assignable but free workstations. This qualification is automatic
--   in pink for workstations declared as "Flex"
--   in orange for workstations shared by several people. This qualification is automatic
--   in dark blue for workstations declared "passing"
--   in sky blue for workstations declared "bookable"
+Cliquer sur l'icône verticale "colorier les postes de travail par rapport à leur état" permet de colorier les postes de travail :
+-   en vert pour les postes affectables mais libres. Cette qualification est automatique
+-   en rose pour les postes déclarés en "Flex"
+-   en orange pour les postes partagés à plusieurs. Cette qualification est automatique
+-   en bleu foncé pour les postes déclarés "de passage"
+-   en bleu ciel pour les postes déclarés "réservables"
 
-Workstations not concerned by these qualifications remain in their original color (white).
-Workstations declared "as Flex" or "passing" cannot be assigned to a person.
+Les postes de travail non concernés par ces qualifications restent dans leur couleur d'origine (blanc).
+Les postes de travail déclarés "en Flex" ou "de passage" ne peuvent pas être affectés à une personne.
 
-## Display Security Profiles on the Plan
+## Afficher les profils Sécurité sur le plan
 
-Clicking on the vertical "color workstations according to people" icon allows you to color workstations of assigned people according to their security profile.
-Two or even three assignments of different security profiles on the same workstation will stripe the workstation with the security profile colors of assigned people.
-For more information on Security profiles, see the chapter [Visualize Security Profiles on Plans](/docs/tutorials/person/personSecurityProfile/list.md#visualize-security-profiles-on-plans).
+Cliquer sur l'icône verticale "colorier les postes de travail par rapport aux personnes" permet de colorier les postes de travail des personnes affectées suivant leur profil sécurité.
+Deux voire trois affectations de profils de sécurité différents sur le même poste de travail, striera le poste de travail avec les couleurs des profils sécurité des personnes affectées.
+Pour plus d'information sur les profils Sécurité, voir le chapitre [Visualiser les profils Sécurité sur les plans](/en/docs/tutorials/person/personSecurityProfile/list.md#visualiser-les-profils-s%C3%A9curit%C3%A9-sur-les-plans).
 
-## Display Objects on the Plan
 
-Clicking on the vertical "Display objects on the plan by family and object type" icon allows you to display or not objects according to their family and object type.
+## Afficher les objets sur le plan
 
-## Display Workstations on the Plan
+Cliquer sur l'icône verticale "Afficher sur le plan les objets par famille et type d'objet" permet d'afficher ou non les objets en fonction de leur famille et de leur type d'objets.
 
-Clicking on the vertical "Display workstations on the plan by workstation type" icon allows you to display or not workstations according to their workstation type.
+## Afficher les postes de travail sur le plan
+
+Cliquer sur l'icône verticale "Afficher sur le plan les postes de travail par type de poste de travail" permet d'afficher ou non les postes de travail en fonction de leur type de poste de travail.

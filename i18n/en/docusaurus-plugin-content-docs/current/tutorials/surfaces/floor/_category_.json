@@ -1,0 +1,9 @@
+{
+  "label": "Les Etages",
+  "position": 3,
+  "link": {
+    "slug": "floors",
+    "type": "generated-index",
+    "description": "Tout comprendre sur les étages"
+  }
+}

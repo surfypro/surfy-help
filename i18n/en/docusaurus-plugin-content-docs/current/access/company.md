@@ -1,18 +1,26 @@
 ---
-sidebar_position: 9
+sidebar_position: 4
 ---
-# Access via secure Business account  
+# Accès par compte sécurisé d'Entreprise
 
-## Creating a Business account
+## L'accès ENTREPRISE
 
-1. Visit [https://app.surfy.pro](https://app.surfy.pro):  
+Sur [demande](https://www.surfy.pro/contact), un accès "ENTREPRISE" peut être mis en place permettant aux utilisateurs de se connecter directement à la plateforme de l'entreprise en utilisant leur adresse mail professionnelle via un accès à définir (Okta, ...).
+Le rôle des utilisateurs (en général le rôle Lecteur) est configuré ainsi que le contenu visible (Batiments X et Z, étage Y,...) pour l'ensemble des collaborateurs accédant à la plateforme. Ces rôles peuvent ensuite être modifiés individuellement pour les cas particuliers.
 
-![SurfyLogoutPage](https://res.cloudinary.com/dngnxxqr4/image/upload/v1733308454/General_access_likbjv.png)  
+Si l'entreprise a configuré un accès spécifique "ENTREPRISE" avec Surfy, vous pouvez suivre la procédure ci dessous.<br />
+Si ce n'est pas le cas mais que votre entreprise est utilisatrice de Surfy, utiliser les accès établis par votre entreprise ([OFFICE365](/en/docs/access/office365), [GOOGLE](/en/docs/access/google) ou [Compte SURFY](/en/docs/access/surfy))<br />
 
-2. Click on the "BUSINESS" option.  
+## Création du compte d'entreprise
 
-3. Enter your professional email address associated with your company and confirm.  
+1. Rendez-vous sur https://app.surfy.pro :
 
-You now have access to your company’s Surfy platform based on the default role assigned to you.  
+![pagedeconnexionSurfy](https://res.cloudinary.com/dngnxxqr4/image/upload/v1725529169/tutoriels/access/acc%C3%A8s%20Surfy.png)
 
-To change a user's role, please contact your Surfy administrator.  
+2. Cliquez sur la case "ENTREPRISE"
+
+3. Tapez votre mail professionnel lié à l'entreprise et validez
+
+Vous avez accès à la plateforme Surfy de l'entreprise, suivant le rôle attribué par défaut.
+
+Pour modifier le rôle d'un utilisateur, contactez votre administrateur Surfy.

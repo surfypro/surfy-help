@@ -2,55 +2,56 @@
 sidebar_position: 2
 ---
 
-# Manage Security Profiles
+# Gérer les profils Sécurité
 
 <Youtube code="NxKeIipAJfs"/>
 
-## Assign a Security Profile to a person
+## Attribuer un profil Sécurité à une personne
 
-To assign a Security Profile to a person, it must already be created to be present in the choice list.
+Pour attribuer un profil Sécurité à une personne, celui ci doit être déjà créé afin d'être présent dans la liste de choix.
 
-To create a Security Profile, see the chapter [Create a Security Profile](/docs/tutorials/person/personSecurityProfile/create.md)
+Pour créer un profil Sécurité, voir le chapitre [Créer un profil Sécurité](/en/docs/tutorials/person/personSecurityProfile/create.md)
 
 
-To assign a security profile to a person,
+Pour attribuer un profil sécurité à une personne,
 
--   access the person's record
--   edit the record by clicking in the context menu (gray box under the search magnifying glass) then "edit person XXX" 
--   click on the "pencil" icon in the "Security Profile" row
--   select the desired security profile for the person
--   save the changes
+-   accéder à la fiche de la personne
+-   modifier la fiche en cliquant dans le menu contextuel (case grise sous la loupe de recherche) puis "modifier la personne XXX" 
+-   cliquer sur l'icône "crayon" de la ligne "Profil de sécurité"
+-   sélectionner le profil sécurité voulu pour la personne
+-   sauvegarder les modifications
 
-:::tip Good to know
-If the Security Profile to assign to a person is not in the choice list, it means it hasn't been created yet.
-Above this list, you can "create and associate" a new security profile: the creation will then directly assign the new Security Profile to the person.
+:::tip Bon à savoir
+Si le profil Sécurité à attribuer à une personne n'est pas dans la liste de choix, c'est qu'il n'est pas encore créé.
+Au-dessus de cette liste, on peut "créer et associer" un nouveau profil sécurité : la création entrainera alors directement l'attribution du nouveau profil Sécurité à la personne.
 :::
 
 
-## View Security Profiles on plans
+## Visualiser les profils Sécurité sur les plans
 
-### "Security Compliance" view
+### Vision "Conformité de la sécurité"
 
-To view Security Profiles on a plan, you can select the "Security Compliance" view:
+Pour visualiser les profils Sécurité sur un plan, on peut sélectionner la vision "Conformité de la sécurité" :
 
--   go to the concerned floor
--   click on the vertical "plan views" icon
--   select the "Security Compliance" view
+-   aller sur l'étage concerné
+-   cliquer sur l'icone verticale "visions du plan"
+-   sélectionner la vision "Conformité de la sécurité"
 
-Security team members' workstations are displayed in the color of the person's Security Profile.
-No layer is selected, plans are "white" and other workstations as well.
+Les postes de travail des équipiers de sécurité s'affichent dans la couleur du profil Sécurité de la personne.
+Aucun calque n'est sélectionné, les plans sont "blancs" et les autres postes de travail également.
 
 :::warning
-After a temporary view change, it's better to return to the "Space Typologies" view or the default view to avoid being in the wrong configuration for the next use.
+Après un changement de vision ponctuel, il est préférable de revenir à la vision "Typologies des espaces" ou à la vision par défaut afin de ne pas être dans la mauvaise configuration à l'utilisation suivante.
 :::
 
-### Display Security Profiles by the vertical "Person" icon
+### Affichage des profils Sécurité par l'icône verticale "Bonhomme"
 
-You can also permanently view Security Profiles on plans by clicking on the vertical "person" icon to "color workstations according to people". The active layer is not modified.
-Security team members' workstations are displayed in the color of the person's Security Profile.
+On peut également visualiser en permanence les profils Sécurité sur les plans en cliquant sur l'icône verticale "bonhomme" pour "colorier les postes de travail par rapport aux personnes". Le calque actif n'est pas modifié.
+Les postes de travail des équipiers de sécurité s'affichent dans la couleur du profil Sécurité de la personne.
 
--   The "BY ASSIGNMENTS" tab displays the number of people (and induced workstations) assigned on the plan by Security Profile and the display validation of each.
+-   L'onglet "PAR AFFECTATIONS" affiche le nombre de personnes (et de postes de travail induits) affectées sur le plan par profil Sécurité et la validation d'affichage de chacun.
 
--   The "BY SECURITY PROFILES" tab displays the number of people assigned on the plan by Security Profile. By clicking on the "butterfly" at the end of the Security Profile row, you get the names of security team members and their assignment position.
+-   L'onglet "PAR PROFILS DE SECURITE" affiche le nombre de personnes affectées sur le plan par profil de Sécurité. En cliquant sur le "papillon" en bout de ligne du profil Sécurité, on obtient le nom des équipiers de sécurité et leur poste d'affectation.
 
-When a workstation is shared by two different security profiles, the assignment position is striped in both colors. You can have up to three different Security Profiles on the same workstation.
+Quand un poste de travail est partagé par deux profils sécurité différents, le poste d'affectation est strié dans les deux couleurs. On peut avoir jusqu'à trois profils Sécurité différents sur un même poste de travail.
+

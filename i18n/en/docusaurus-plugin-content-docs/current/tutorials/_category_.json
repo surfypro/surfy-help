@@ -1,9 +1,9 @@
 {
-    "label": "Tutorials",
-    "position": 3,
-    "link": {
-        "slug": "tutorials",
-        "type": "generated-index",
-        "description": "Tutorials guide you through learning Surfy's features."
-    }
+  "label": "Les Tutoriels",
+  "position": 3,
+  "link": {
+    "slug": "tutorials",
+    "type": "generated-index", 
+    "description": "Les tutoriels accompagnent l'utilisateur dans l'apprentissage d'une fonctionnalité."
+  }
 }

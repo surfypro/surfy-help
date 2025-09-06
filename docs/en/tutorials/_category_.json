@@ -1,0 +1,9 @@
+{
+  "label": "Tutorials",
+  "position": 3,
+  "link": {
+    "slug": "tutorials",
+    "type": "generated-index", 
+    "description": "Tutorials guide users through learning a feature."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "label": "Les Personnes",
+  "position": 3,
+  "link": {
+    "slug": "people",
+    "type": "generated-index",
+    "description": "Les personnes dans Surfy"
+  }
+}

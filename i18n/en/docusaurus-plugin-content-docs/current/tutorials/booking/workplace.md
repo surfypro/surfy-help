@@ -2,61 +2,61 @@
 sidebar_position: 2
 ---
 
-# Booking in Surfy
+# La réservation dans Surfy
 
 <Youtube code="gC2BWSNqv54"/>
 
-## Book from the Surfy Application
+## Réserver depuis l'application Surfy
 
-To book a workstation in Surfy, the collaborator must have [access to Surfy](/docs/access/intro) validating the booking, and be assigned to a building, floor or neighborhood to be able to book in this building, floor or neighborhood.
+Pour réserver un poste de travail dans Surfy, le collaborateur doit avoir un [accès à Surfy](/en/docs/access/intro) validant la réservation, et être affecté à un bâtiment, un étage ou un quartier pour pouvoir réserver dans ce bâtiment, étage ou quartier.
 
-You can book a workstation (or declare telework) for half-day or full day.
+On peut réserver un poste de travail (ou déclarer un télétravail) à la demi-journée ou à la journée.
 
-For this, if the collaborator has access to other Surfy features (Reader mode for example):
+Pour cela, si le collaborateur a accès à d'autres fonctionnalités de Surfy (mode Lecteur par exemple) :
 
--   click on the "Manage my planning for the coming weeks" icon at the top left of the screen, just above the search magnifying glass, or in the left menu click on "Planning", then "People's work location", then "Manage my planning for the coming weeks".
+-   cliquer sur l'icone "Gérer mon planning des prochaines semaines" en haut à gauche de l'écran, juste au dessus de la loupe de recherche, ou bien dans le menu de gauche cliquer sur "Planning", puis "Emplacement de travail des personnes", puis "Gérer mon planning des prochaines semaines".
 
-If the collaborator only has access to booking features, they arrive directly on the "Manage my planning for the coming weeks" page.
+Si le collaborateur n'a accès qu'aux fonctionnalités de réservation, il arrive directement sur la page "Gérer mon planning des prochaines semaines".
 
-The rest of the user experience is identical to that of using via Teams:
+La suite de l'expérience utilisateur est identique à celle d'une utilisation via Teams :
 
-The dates of the next X days (X being configurable in the company's record) are displayed and allow booking in the authorized neighborhood.
+Les dates des X prochains jours (X étant configurable dans la fiche de l'entreprise) s'affichent et permettent la réservation dans le quartier autorisé.
 
--   click on the icon opposite the desired date, to book for full day or half-day
--   to declare telework, click on "TELEWORK" on the desired date.
--   to book a workstation, click on "DESK"
--   click on the desired booking neighborhood
+-   cliquer sur l'icone en face de la date désirée, pour réserver en journée ou demi-journée
+-   pour déclarer un télétravail, cliquer sur "TELETRAVAIL" à la date voulue.
+-   pour réserver un poste de travail, cliquer sur "BUREAU"
+-   cliquer sur le quartier de réservation désiré
 
-The neighborhood authorized for booking is displayed.
+Le quartier autorisé à la réservation s'affiche.
 
--   click on the chosen workstation for booking
+-   cliquer sur le poste de travail choisi pour la réservation
 
-The workstation's information is displayed under the reserved day.
-Clicking on the booking line gives access to the workstation's position on the plan and displays the name and photo of the person on the reserved workstation.
+Les informations du poste de travail s'affichent sous le jour réservé.
+Cliquer sur la ligne de réservation donne accès à la position du poste de travail sur le plan et à l'affichage du nom et de la photo de la personne sur le poste réservé.
 
-Colleagues who have already booked in a neighborhood on this day are listed under the neighborhood box. To locate a colleague's booking location on the plan, click on their booking line.<br />
-The neighborhood plan appears, workstations available for booking are colored in green.<br />
-Already booked workstations are colored in orange on the plan, with the name and possible photo of the colleague who booked.
+Les collègues ayant déjà réservé dans un quartier ce jour sont listés sous la case du quartier. Pour localiser l'emplacement de réservation d'un collègue sur le plan, cliquer sur sa ligne de réservation.<br />
+Le plan du quartier apparait, les postes disponibles à la réservation sont coloriés en vert.<br />
+Les postes de travail déjà réservés sont coloriés en orange sur le plan, avec le nom et la photo éventuelle du collègue ayant réservé.
 
--   clicking on an available workstation on the plan establishes the booking at this workstation which colors in orange.
--   clicking on an already made booking shows the reserved workstation's position, colored in blue with name and possible photo.
--   clicking on the trash can deletes this booking.
+-   cliquer sur un poste disponible sur le plan établit la réservation à ce poste qui se colore en orange.
+-   cliquer sur une réservation déjà effectuée montre la position du poste réservé, colorié en bleu avec nom et photo éventuelle.
+-   cliquer sur la poubelle supprime cette réservation.
 
-:::tip GOOD TO KNOW
-Clicking on the "Share the day in morning/afternoon" icon deletes the day's bookings and modifies the "full day" or "morning/afternoon" choice
+:::tip BON A SAVOIR
+Cliquer sur l'icône "Partager la journée en matin/après-midi" supprime les réservations du jour et modifie le choix "journée" ou "matin / après-midi"
 :::
 
-From the booking page, it is also possible to:
+Depuis la page de réservation, il est également possible de :
 
--   "see all bookings on a plan" for a given date, on a given building and floor.<br />
-The floor plan is displayed, with all bookings made on the requested date.<br />
+-   "voir toutes les réservations sur un plan" à une date donnée, sur un bâtiment et étage donné.<br />
+Le plan de l'étage s'affiche, avec l'ensemble des réservations effectuées à la date demandée.<br />
 
--   "find a colleague or consult their planning" by entering the colleague's name in the designated field.<br />
-The colleague's bookings for the coming period are displayed.<br />
-By clicking on the reserved workstation's title, you access its geolocation on the plan.<br />
+-   "retrouver un collègue ou consulter son planning" en saisissant le nom du collègue dans le champ imparti.<br />
+Les réservations du collègue sur la période à venir s'affichent.<br />
+En cliquant sur l'intitulé du poste réservé, on accède à sa géolocalisation sur le plan.<br />
 
 
-## Book from Teams
+## Réserver depuis Teams
 
-Using Teams offers a more direct experience and better adapted to using booking features on smartphone.<br />
-To book with Teams in Surfy, see the chapter [Book with Teams in Surfy](/docs/tutorials/booking/teams)
+L'utilisation de Teams offre une expérience plus directe et plus adaptée à une utilisation des fonctionnalités de réservation sur smartphone.<br />
+Pour réserver avec Teams dans Surfy, voir le chapitre [Réserver avec Teams dans Surfy](/en/docs/tutorials/booking/teams)

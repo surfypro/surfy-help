@@ -1,0 +1,10 @@
+{
+    "label": "Les Certifications",
+    "position": 5,
+    "link": {
+      "slug": "certification",
+      "type": "generated-index",
+      "description": "Le programme des certifications à Surfy"
+    }
+  }
+  

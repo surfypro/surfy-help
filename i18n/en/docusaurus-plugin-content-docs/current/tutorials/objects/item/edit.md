@@ -1,54 +1,54 @@
 ---
 sidebar_position: 2
 ---
-# Edit an Object
+# Modifier un objet
 
-## Edit Object Information
+## Modifier les informations d'un objet
 
--   click on the object
--   in the object's record to the left of the plan, click on "Edit"
--   modify the <P code="item:reference" />, the <P code="item:code" /> or the <P code="item:purchaseDate" />
--   save the modifications
+-   cliquer sur l'objet
+-   dans la fiche de l'objet à gauche du plan, cliquer sur "Modifier"
+-   modifier la <P code="item:reference" />, le <P code="item:code" /> ou la <P code="item:purchaseDate" />
+-   sauvegarder les modifications
 
-## Move an Object
+## Déplacer un objet
 
--   "Activate plan editing mode" by clicking on the "pencil" icon above the plan
--   click on the object to move
--   drag and drop the object by holding down the mouse during the move
--   rotate the object with the red arrow by 45° steps. To free the angle, press the "shift" key at the same time
--   click on the blue box to replace the object in its initial position.
+-   "Activer le mode édition du plan" en cliquant sur l'icône "crayon" au dessus du plan
+-   cliquer sur l'objet à déplacer
+-   glisser-déplacer l'objet en maintenant la souris enfoncée lors du déplacement
+-   faire pivoter l'objet avec la flèche rouge par pas de 45°. Pour libérer l'angle, appuyer en même temps sur la touche "shift"
+-   cliquer sur la case bleue pour replacer l'objet dans sa position initiale.
 
-## Search for an Object
+## Rechercher un objet
 
-You can geolocate and access an object's record in several ways:
+On peut géolocaliser et accéder à la fiche d'un objet de plusieurs façons :
 
--   by clicking on the object on the plan
--   through the magnifying glass by searching for the object's reference or asset code    
--   through the magnifying glass by searching by object type then clicking on the searched object
--   through the [filtered list](/docs/courses/find/listfindcourse) of objects ("Furniture", "Objects", "List objects" then "filter objects")
--   through the association to the person by searching for a person and clicking on the object associated with the searched person
--   through space search then the "INVENTORY" tab of the space
+-   en cliquant sur l'objet sur le plan
+-   par la loupe en effectuant une recherche de la référence ou du code d'immobilisation de l'objet    
+-   par la loupe en effectuant une recherche par type d'objet puis en cliquant sur l'objet recherché
+-   par la [liste filtrée](/en/docs/courses/find/listfindcourse) des objets ("Mobiliers", "Objets", "Lister les objets" puis "filtrer les objets")
+-   par l'association à la personne en recherchant une personne et en cliquant sur l'objet associé à la personne recherchée
+-   par la recherche d'espace puis l'onglet "INVENTAIRE" de l'espace
 
-## Move a Group of Objects
+## Déplacer un groupe d'objets
 
--   "Activate plan editing mode" by clicking on the "pencil" icon above the plan
--   click on one of the objects to move then on the others while holding down the "shift" key
--   a selection area encompassing the objects to move is delimited, the objects to move are selected.
--   move the group of objects by clicking on the "move group" icon of the selection area
--   click on the plan to deselect the objects in the group
+-   "Activer le mode édition du plan" en cliquant sur l'icône "crayon" au dessus du plan
+-   cliquer sur un des objets à déplacer puis sur les autres en maintenant la touche "shift" enfoncée
+-   une zone de sélection englobant les objets à déplacer est délimitée, les objets à déplacer sont sélectionnés.
+-   déplacer le groupe d'objets en cliquant sur l'icône "déplacer le groupe" de la zone de sélection
+-   cliquer sur le plan pour déselectionner les objets du groupe
 
-:::tip Good to know
-You can mix objects and workstations in object groups, for moving or copying
+:::tip Bon à savoir
+On peut panacher des objets et des postes de travail dans les groupes d'objets, en déplacement ou en copie
 :::
 
-## Modify an Object's Object Type
+## Modifier le type d'objet d'un objet
 
-To change an object's object type on the plan,
+Pour changer le type d'objet d'un objet sur le plan,
 
--   click on the object then on "Edit" in the object's record, to the left of the plan.
--   click on the pencil "Change object type" and choose the new object type to apply to the object
--   "Save" the modifications
+-   cliquer sur l'objet puis sur "Modifier" dans la fiche de l'objet, à gauche du plan.
+-   cliquer sur le crayon "Changer le type d'objet" et choisir le nouveau type d'objet à appliquer à l'objet
+-   "Sauvegarder" les modifications
 
-:::tip Good to know
-The modified object will have the shape and characteristics of the new object type, but will keep all the information (reference, asset code and person association), the orientation and placement of the replaced object.
+:::tip Bon à savoir
+L'objet modifié aura la forme et les caractéristiques du nouveau type d'objet, mais gardera toutes les informations (référence, code immo et association à personne), l'orientation et le placement de l'objet remplacé.
 :::
