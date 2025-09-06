@@ -1,167 +1,167 @@
 ---
 sidebar_position: 1
 ---
-# Créer une Organisation
+# Create an Organization
 
-Les organisations dans Surfy ont deux niveaux hiérarchiques : Les Directions et les Services.
+Organizations in Surfy have two hierarchical levels: Departments and Services.
 
 :::warning Important
-On ne peut rattacher un espace, une personne ou un poste de travail qu'à un Service.
+You can only attach a space, person or workstation to a Service.
 :::
 
-Utiliser les organisations permet de rattacher les espaces à des Services rapportant eux-mêmes à des Directions.
-On peut alors visualiser la qualification des espaces en couleurs sur les plans et obtenir les [données cumulées, par Service ou par Direction](/en/docs/tutorials/organization/edit.md#visualiser-les-organisations-sur-les-plans).
+Using organizations allows you to attach spaces to Services that report to Departments.
+You can then visualize space qualification in colors on plans and get [cumulative data, by Service or by Department](/en/docs/tutorials/organization/edit.md#visualize-organizations-on-plans).
 
-Les personnes et les postes de travail peuvent également être rattachés à des Services.
-On peut ensuite lister les personnes ou les postes de travail par organisation dans les listes filtrées ou dans les rapports de données, ou savoir à quelle organisation une personne est  en recherchant sa fiche avec la loupe.
+People and workstations can also be attached to Services.
+You can then list people or workstations by organization in filtered lists or in data reports, or know which organization a person belongs to by searching their card with the magnifying glass.
 
 
 <Youtube code="bvOEaYs1prg"/>
 
 
 
-## Hiérarchie des organisations
+## Organization Hierarchy
 
--   Un Service est toujours rattaché à une Direction.
--   Une organisation qui n'a pas de Direction est, de fait, elle même une Direction.
--   Une Direction ne doit jamais être rattachée à une Direction.
--   Seuls les Services sont proposés au rattachement des espaces, personnes ou postes de travail.
-
-
-### Hiérarchiser les organisations dans Surfy :
-
-Un "Service" a une Direction mais pas de Service rattaché                                  
-Une "Direction" peut avoir des Services rattachés mais pas de Direction
+-   A Service is always attached to a Department.
+-   An organization that has no Department is, in fact, itself a Department.
+-   A Department should never be attached to a Department.
+-   Only Services are offered for attachment of spaces, people or workstations.
 
 
-:::warning Important
-Une organisation ne peut pas avoir une "Direction" ET un ou des "Services".                                        
-En effet, dans ce cas l'organisation n'est ni une Direction, parce qu'elle a elle-même une Direction, ni un Service parce qu'elle a elle-même des Services. L'organisation n'étant pas clairement définie, cela fausse la base de données dans Surfy ainsi que l'affichage sur les plans.
-:::
+### Hierarchize Organizations in Surfy:
 
-Pour visualiser la hiérarchie des organisations dans Surfy, depuis le menu de gauche,
-
--   cliquer sur "organisations", "organisations" puis "voir la hiérarchie des organisations".
--   les Directions sont en tête des blocs obtenus, les Services sont listés dans chaque bloc.
--   cliquer sur l'icône en bout de ligne " voir plus d'options pour l'organisation XXX" puis "voir l'organisation XXX" permet de visualiser les informations de l'organisation concernée.
-
-## Créer une Direction
-
-Une Direction n'a PAS de "Direction" et peut avoir des "Services".
-
-Pour créer une Direction, depuis le menu de gauche,
-
--   cliquer sur "organisations", "organisations" puis "créer une organisation" (ou cliquer sur le menu contextuel puis "créer une organisation" si déjà sur la page des organisations)
--   renseigner le nom de la Direction et sa <P code="organization:color"/>
--   ne pas renseigner de "Direction", laisser le champ vide.
--   valider la création
-
-L'organisation créée est considérée comme étant une Direction
-En affichant la "Hiérarchie des Organisations", cette Direction apparait en tête de bloc et sera suivi des Services rattachés à cette Direction. Si aucun Service n'est encore associé à cette Direction, le bloc n'est pas créé et seule la Direction est affichée.
-
-## Créer un Service
-
-Un Service a obligatoirement une "Direction" et n'a PAS de "Service".
-
-Pour créer un Service, sa Direction doit d'abord avoir été créée dans Surfy. 
-
-Une fois la Direction créée, pour créer un Service, depuis le menu de gauche,
-
--   cliquer sur "organisations", "organisations" puis "créer une organisation" (ou cliquer sur le menu contextuel puis "créer une organisation" si déjà sur la page des organisations)
--   renseigner le nom du Service et sa <P code="organization:color"/>
--   renseigner la Direction du Service en cliquant sur le crayon de la"<P code="organization:organization" />" et en séléctionnant une Direction
--   valider la création
-
-L'organisation créée est considérée comme étant un Service (Direction présente)
-En affichant la "Hiérarchie des Organisations", ce Service apparait dans le bloc de sa Direction de rattachement.
-
-
-## Lister les Organisations
-
-Lister les organisations permet notamment de vérifier qu'aucune organisation n'est rattachée en même temps à une "Direction et à une ou plusieurs "Services".
-La liste permet également de modifier chaque organisation en cliquant sur l'icône en début de ligne de l'organisation concernée.
-
-Pour lister les organisations, depuis le menu de gauche,
-
--   cliquer sur "organisations", "organisations" puis "lister les organisations" (ou cliquer sur le menu contextuel puis "lister les organisations" si déjà sur la page des organisations)
--   la liste donne la Direction ou les Services pour chaque organisation
-
-
-## Rattacher une organisation à une entité
-
-Un espace, un poste de travail ou une personne peuvent être rattachés à un Service qui lui-même se rattache à sa Direction.
-La Direction du Service est indiquée entre parenthèses derrière le nom du Service. Cela permet de donner le même nom à deux Services de Directions différentes : Exemple: Service "Comptabilité" à la Direction "Logistique" et Service "Comptabilité" à la Direction "Achats".
+A "Service" has a Department but no attached Service                                  
+A "Department" can have attached Services but no Department
 
 
 :::warning Important
-Si une organisation n'apparait pas dans la liste des Services à rattacher, c'est qu'aucune Direction n'est rattachée à cette organisation. Elle est donc considérée elle même comme une Direction. La deuxième cause possible est que cette organisation n'est pas encore créée.
+An organization cannot have a "Department" AND one or more "Services".                                        
+Indeed, in this case the organization is neither a Department, because it has itself a Department, nor a Service because it has itself Services. The organization not being clearly defined, this corrupts the database in Surfy as well as the display on plans.
 :::
 
-### Rattacher un Service à un espace
+To visualize the organization hierarchy in Surfy, from the left menu,
 
-Pour rattacher un Service à un espace, depuis le plan de l'étage,
+-   click on "organizations", "organizations" then "view organization hierarchy".
+-   Departments are at the head of the obtained blocks, Services are listed in each block.
+-   clicking on the icon at the end of the line "see more options for organization XXX" then "view organization XXX" allows you to visualize the information of the concerned organization.
 
--   cliquer dans l'espace à rattacher
--   dans la fiche de l'espace à gauche du plan, cliquer sur "modifier" l'espace
--   cliquer sur l'icône "crayon" de la ligne "Organisation" pour "changer l'organisation"
--   choisir le Service de rattachement de l'espace. Sa Direction est indiquée entre parenthèses.
--   "sauvegarder" la modification
+## Create a Department
 
-L'espace est rattaché au Service concerné.
+A Department has NO "Department" and can have "Services".
 
-Une fois les espaces rattachés, il est nécessaire de "recharger les données du plan" en cliquant sur l'icône en haut à droite de l'écran, puis de rafraichir (F5).
-Depuis le plan de l'étage ou du bâtiment, cliquer sur l'icône verticale "Colorier les espaces sur le plan selon les organisations" pour visualiser les organisations en couleur sur les plans.
+To create a Department, from the left menu,
 
-Trois onglets sont proposés:
--   SERVICES : affiche les Services en couleur et les informations cumulées des Services
--   DIRECTIONS : affiche les Directions en couleur et les informations cumulées des Directions
--   HIERARCHIE : affiche les Services en couleur et les informations cumulées des Services par Direction
+-   click on "organizations", "organizations" then "create an organization" (or click on the context menu then "create an organization" if already on the organizations page)
+-   fill in the Department name and its <P code="organization:color"/>
+-   do not fill in a "Department", leave the field empty.
+-   validate the creation
 
-En ouvrant le "papillon" en bout de ligne de chaque organisation, on obtient les informations cumulées pour l'organisation, pour l'étage ou le bâtiment visualisé.
+The created organization is considered to be a Department
+When displaying the "Organization Hierarchy", this Department appears at the head of the block and will be followed by Services attached to this Department. If no Service is yet associated with this Department, the block is not created and only the Department is displayed.
 
-### Rattacher un Service à un quartier
+## Create a Service
 
-Rattacher un service à un quartier implique de rattacher tous les espaces du quartier à ce service.
+A Service must have a "Department" and has NO "Service".
 
-Il faut donc tout d'abord sortir de la navigation par quartier afin de pouvoir accéder à chaque espace du quartier :
+To create a Service, its Department must first have been created in Surfy. 
 
--   en cliquant sur l'icône triangulaire au bout du bandeau bleu d'information "Vous êtes en navigation par Quartiers, les espaces seront regroupés ensemble lors de la sélection"
--   ou en cliquant sur l'icône verticale "Changer la vision du plan" puis sur la vision "Typologies des espaces".
+Once the Department is created, to create a Service, from the left menu,
+
+-   click on "organizations", "organizations" then "create an organization" (or click on the context menu then "create an organization" if already on the organizations page)
+-   fill in the Service name and its <P code="organization:color"/>
+-   fill in the Service's Department by clicking on the pencil of the "<P code="organization:organization" />" and selecting a Department
+-   validate the creation
+
+The created organization is considered to be a Service (Department present)
+When displaying the "Organization Hierarchy", this Service appears in the block of its attachment Department.
 
 
-On peut ensuite "Modifier" chaque espace pour lui rattacher son Service (voir [Rattacher un Service à un espace](/en/docs/tutorials/organization/create.md#rattacher-un-service-%C3%A0-un-espace)) et ainsi à tous les espaces du quartier concerné.
+## List Organizations
 
-Pour revenir ensuite à la navigation par quartier,
+Listing organizations allows you to verify that no organization is attached at the same time to a "Department and to one or more "Services".
+The list also allows you to modify each organization by clicking on the icon at the beginning of the line of the concerned organization.
 
--   cliquer sur l'icône "Changer la vision du plan"
--   sélectionner la vision "Quartiers"
+To list organizations, from the left menu,
 
-La navigation par quartier est sélectionnée et les espaces du quartier sont rattachés au Service choisi.
+-   click on "organizations", "organizations" then "list organizations" (or click on the context menu then "list organizations" if already on the organizations page)
+-   the list gives the Department or Services for each organization
 
-:::tip Bon à savoir
-La répartition des Services sur les espaces est indépendante du regroupement des espaces par quartier, même si les deux entités "Service" et "Quartier" englobent souvent des périmètres identiques.
+
+## Attach an Organization to an Entity
+
+A space, workstation or person can be attached to a Service which itself is attached to its Department.
+The Service's Department is indicated in parentheses behind the Service name. This allows you to give the same name to two Services from different Departments: Example: "Accounting" Service in the "Logistics" Department and "Accounting" Service in the "Purchasing" Department.
+
+
+:::warning Important
+If an organization does not appear in the list of Services to attach, it means no Department is attached to this organization. It is therefore considered itself as a Department. The second possible cause is that this organization is not yet created.
+:::
+
+### Attach a Service to a Space
+
+To attach a Service to a space, from the floor plan,
+
+-   click in the space to attach
+-   in the space card on the left of the plan, click on "modify" the space
+-   click on the "pencil" icon of the "Organization" line to "change organization"
+-   choose the space's attachment Service. Its Department is indicated in parentheses.
+-   "save" the modification
+
+The space is attached to the concerned Service.
+
+Once spaces are attached, it is necessary to "reload plan data" by clicking on the icon at the top right of the screen, then refresh (F5).
+From the floor or building plan, click on the vertical icon "Color spaces on the plan according to organizations" to visualize organizations in color on plans.
+
+Three tabs are offered:
+-   SERVICES: displays Services in color and cumulative information of Services
+-   DEPARTMENTS: displays Departments in color and cumulative information of Departments
+-   HIERARCHY: displays Services in color and cumulative information of Services by Department
+
+By opening the "butterfly" at the end of each organization's line, you get cumulative information for the organization, for the floor or building visualized.
+
+### Attach a Service to a District
+
+Attaching a service to a district involves attaching all spaces in the district to this service.
+
+You must therefore first exit district navigation to be able to access each space in the district:
+
+-   by clicking on the triangular icon at the end of the blue information banner "You are in District navigation, spaces will be grouped together during selection"
+-   or by clicking on the vertical icon "Change plan view" then on the "Space Typologies" view.
+
+
+You can then "Modify" each space to attach its Service (see [Attach a Service to a Space](/en/docs/tutorials/organization/create.md#attach-a-service-to-a-space)) and thus to all spaces in the concerned district.
+
+To return to district navigation,
+
+-   click on the "Change plan view" icon
+-   select the "Districts" view
+
+District navigation is selected and district spaces are attached to the chosen Service.
+
+:::tip Good to Know
+The distribution of Services on spaces is independent of the grouping of spaces by district, even if the two entities "Service" and "District" often encompass identical perimeters.
 :::
 
 
-### Rattacher un Service à une personne
+### Attach a Service to a Person
 
-Pour rattacher un Service à une personne,
+To attach a Service to a person,
 
--   rechercher la personne avec la loupe, sous le logo de l'entreprise en haut à gauche de l'écran
--   cliquer sur le nom de la personne
--   cliquer sur le menu contextuel (case grise sous la loupe) puis sur "Modifier la personne XXX"
--   cliquer sur l'icône "crayon" de "L'organisation de la personne"
--   choisir le Service correspondant à la personne
--   "Sauvegarder" les modifications
+-   search for the person with the magnifying glass, under the company logo at the top left of the screen
+-   click on the person's name
+-   click on the context menu (gray box under the magnifying glass) then on "Modify person XXX"
+-   click on the "pencil" icon of "Person's Organization"
+-   choose the Service corresponding to the person
+-   "Save" the modifications
 
 
-### Rattacher un Service à un poste de travail
+### Attach a Service to a Workstation
 
-Pour rattacher un Service à un poste de travail,
+To attach a Service to a workstation,
 
--   cliquer sur le poste de travail sur le plan
--   sur la fiche du poste de travail à gauche, cliquer sur "Modifier"
--   cliquer sur l'icône "crayon" de la ligne "Organisation"
--   choisir le Service correspondant au poste de travail
--   "Sauvegarder" les modifications
+-   click on the workstation on the plan
+-   on the workstation card on the left, click on "Modify"
+-   click on the "pencil" icon of the "Organization" line
+-   choose the Service corresponding to the workstation
+-   "Save" the modifications
 

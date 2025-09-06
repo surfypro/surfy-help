@@ -1,16 +1,16 @@
 ---
 sidebar_position: 3
 ---
-# Supprimer une Organisation
+# Delete an Organization
 
-Pour supprimer une organisation dans Surfy, depuis le menu de gauche :
+To delete an organization in Surfy, from the left menu:
 
--   cliquer sur "Organisations", "Organisations" puis "Lister les organisations".
--   cocher la case en début de ligne de l'organisation à supprimer
--   cliquer sur l'icône "Poubelle" pour "supprimer les organisations sélectionnées" en haut de page
+-   click on "Organizations", "Organizations" then "List organizations".
+-   check the box at the beginning of the line of the organization to delete
+-   click on the "Trash" icon to "delete selected organizations" at the top of the page
 
 :::warning Important
-Supprimer une Direction transformera tous ses "Services" en "Directions" puisque leur Direction n'existera plus.
-Les entités seront toujours rattachées à ces organisations mais celles ci ne seront plus accessibles dans les choix de Services.
-Supprimer un Service supprimera tous les rattachements des entités à ce Service.
+Deleting a Department will transform all its "Services" into "Departments" since their Department will no longer exist.
+Entities will still be attached to these organizations but they will no longer be accessible in Service choices.
+Deleting a Service will delete all entity attachments to this Service.
 :::

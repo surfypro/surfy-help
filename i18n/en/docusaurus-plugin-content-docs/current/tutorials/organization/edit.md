@@ -1,30 +1,30 @@
 ---
 sidebar_position: 2
 ---
-# Modifier une Organisation
+# Modify an Organization
 
-## Modifier les informations d'une Organisation
+## Modify Organization Information
 
-Pour modifier les informations des organisations dans Surfy, depuis le menu de gauche,
+To modify organization information in Surfy, from the left menu,
 
--   cliquer sur "Organisations", "Organisations" puis "Voir la hiérarchie des organisations".
--   les Directions sont en tête des blocs obtenus, les Services sont listés à la suite.
--   cliquer sur l'icône en bout de ligne " voir plus d'options pour l'organisation XXX" puis "modifier l'organisation XXX" permet de modifier le <P code="organization:name" /> ou la <P code="organization:color" /> de l'organisation concernée. Modifier ces informations ne modifie pas les rattachements aux entités.
--   dans le cas d'un Service, on peut modifier sa <P code="organization:organization" /> en cliquant sur l'icône "crayon" de sa "Direction". Cela ne modifie pas les rattachements des entités à ce Service.
+-   click on "Organizations", "Organizations" then "View organization hierarchy".
+-   Departments are at the head of the obtained blocks, Services are listed afterwards.
+-   clicking on the icon at the end of the line "see more options for organization XXX" then "modify organization XXX" allows you to modify the <P code="organization:name" /> or <P code="organization:color" /> of the concerned organization. Modifying this information does not modify entity attachments.
+-   in the case of a Service, you can modify its <P code="organization:organization" /> by clicking on the "pencil" icon of its "Department". This does not modify entity attachments to this Service.
 
 :::warning Important
-Retirer la <P code="organization:organization" /> d'un Service changera ce Service en Direction.
-Les entités seront toujours rattachées à cette organisation mais celle ci ne sera plus accessible dans le choix des Services tant qu'une nouvelle "Direction" ne lui sera pas rattachée.
+Removing the <P code="organization:organization" /> from a Service will change this Service to a Department.
+Entities will still be attached to this organization but it will no longer be accessible in Service choices until a new "Department" is attached to it.
 :::
 
-## Visualiser les Organisations sur les plans
+## Visualize Organizations on Plans
 
-Une fois le rattachement des espaces modifié, il est nécessaire de "recharger les données du plan" en cliquant sur l'icône en haut à droite de l'écran, puis de rafraichir (F5).
-Depuis le plan de l'étage ou du bâtiment, cliquer sur l'icône verticale "Colorier les espaces sur le plan selon les organisations" pour visualiser les organisations en couleur sur les plans.
+Once space attachments are modified, it is necessary to "reload plan data" by clicking on the icon at the top right of the screen, then refresh (F5).
+From the floor or building plan, click on the vertical icon "Color spaces on the plan according to organizations" to visualize organizations in color on plans.
 
-Trois onglets sont proposés:
--   SERVICES : affiche les Services en couleur et les informations cumulées des Services
--   DIRECTIONS : affiche les Directions en couleur et les informations cumulées des Directions
--   HIERARCHIE : affiche les Services en couleur et les informations cumulées des Services par Direction
+Three tabs are offered:
+-   SERVICES: displays Services in color and cumulative information of Services
+-   DEPARTMENTS: displays Departments in color and cumulative information of Departments
+-   HIERARCHY: displays Services in color and cumulative information of Services by Department
 
-En ouvrant le "papillon" en bout de ligne de chaque organisation, on obtient les informations cumulées pour l'organisation, pour l'étage ou le bâtiment visualisé.
+By opening the "butterfly" at the end of each organization's line, you get cumulative information for the organization, for the floor or building visualized.

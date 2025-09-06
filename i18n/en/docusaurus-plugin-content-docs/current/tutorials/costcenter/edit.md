@@ -1,58 +1,58 @@
 ---
 sidebar_position: 2
 ---
-# Modifier un Centre de coût
+# Modify a Cost Center
 
 
-## Modifier les informations d'un centre de coût
+## Modify Cost Center Information
 
-Pour modifier les informations des centres de coût dans Surfy, depuis le menu de gauche :
+To modify cost center information in Surfy, from the left menu:
 
- -  cliquer sur "Administration", "Typologies", "centres de coût" puis "Lister les centres de coût"
- -  cliquer sur l'icône en début de ligne du centre de coût à modifier pour "voir plus d'options pour le centre de coût XXX", puis "Modifier le centre de coût XXX"
- -  modifier le <P code="costCenter:name" /> du centre de coût ou sa <P code="costCenter:color" /> de représentation sur les plans
- -  pour les centres de coût à ventiler (par exemple les parties communes), indiquer si la ventilation est distribuée par étage ou par bâtiment
- -  sauvegarder les modifications
+ -  click on "Administration", "Typologies", "cost centers" then "List cost centers"
+ -  click on the icon at the beginning of the line of the cost center to modify to "see more options for cost center XXX", then "Modify cost center XXX"
+ -  modify the cost center's <P code="costCenter:name" /> or its <P code="costCenter:color" /> for representation on plans
+ -  for cost centers to be distributed (for example common areas), indicate if distribution is by floor or by building
+ -  save the modifications
 
-## Visualiser les centres de coût sur les plans
+## Visualize Cost Centers on Plans
 
-Pour visualiser les centres de coût sur les plans, cliquer sur l'icône verticale "€" des centres de coût.
+To visualize cost centers on plans, click on the vertical "€" icon of cost centers.
 
-Trois onglets sont proposés:
+Three tabs are offered:
 
--   l'onglet ESPACES permet d'afficher les centres de coût des espaces en couleurs.Les informations cumulées de espaces pour chaque centre de coût sont disponibles en cliquant sur le papillon en bout de ligne du centre de coût.
--   l'onglet POSTES DE TRAVAIL permet d'afficher les centres de coût des postes de travail en couleurs. Le nombre de poste de travail par centre de coût est indiqué en bout de ligne du centre de coût.
--   l'onglet PERSONNES permet d'afficher le centre de coût des personnes sur le poste de travail sur lequel ils sont affectés. Le nombre de personnes et de postes de travail par centre de coût est indiqué en bout de ligne du centre de coût. 
+-   the SPACES tab allows you to display space cost centers in colors. Cumulative space information for each cost center is available by clicking on the butterfly at the end of the cost center line.
+-   the WORKSTATIONS tab allows you to display workstation cost centers in colors. The number of workstations per cost center is indicated at the end of the cost center line.
+-   the PEOPLE tab allows you to display people's cost center on the workstation they are assigned to. The number of people and workstations per cost center is indicated at the end of the cost center line. 
 
-## Modifier le centre de coût ou le type de distribution des coûts d'un espace
+## Modify the Cost Center or Cost Distribution Type of a Space
 
--   cliquer dans l'espace concerné
--   cliquer sur "modifier" pour modifier les informations de l'espace
--   cliquer sur l'icône "crayon" du "centre de coût" de l'espace
--   sélectionner le nouveau centre de coût de l'espace
--   cliquer sur l'icône "crayon" du "type de distribution des coûts"
--   sélectionner le nouveau type de distribution des coûts de l'espace
--   sauvegarder les modifications
+-   click in the concerned space
+-   click on "modify" to modify the space information
+-   click on the "pencil" icon of the space's "cost center"
+-   select the space's new cost center
+-   click on the "pencil" icon of the "cost distribution type"
+-   select the space's new cost distribution type
+-   save the modifications
 
-Une fois les espaces modifiés, il est nécessaire de "recharger les données du plan" en cliquant sur l'icône en haut à droite de l'écran, puis de rafraichir (F5). Les données cumulées sont alors mises à jour.
+Once spaces are modified, it is necessary to "reload plan data" by clicking on the icon at the top right of the screen, then refresh (F5). Cumulative data is then updated.
 
-On peut importer en masse les centres de coût et les types de distribution des coûts à partir d'un fichier Excel. 
+You can import cost centers and cost distribution types in bulk from an Excel file. 
 
-## Modifier le centre de coût d'une personne
+## Modify a Person's Cost Center
 
-Pour Modifier le centre de coût d'une personne, il faut "modifier la personne":
+To modify a person's cost center, you must "modify the person":
 
--   rechercher la personne par la loupe de recherche, sous le logo de l'entreprise en haut à gauche de l'écran
--   cliquer sur le résultat de la recherche pour afficher la fiche de la personne
--   cliquer sur le menu contextuel (case grise sous la recherche) puis sur "Modifier la personne XXX"
--   cliquer sur l'icône "crayon" du "Centre de coût et sélectionner le nouveau centre de coût dans la liste
--   "sauvegarder" les modifications
+-   search for the person with the search magnifying glass, under the company logo at the top left of the screen
+-   click on the search result to display the person's card
+-   click on the context menu (gray box under the search) then on "Modify person XXX"
+-   click on the "pencil" icon of the "Cost Center" and select the new cost center from the list
+-   "save" the modifications
 
-## Modifier le centre de coût d'un poste de travail
+## Modify a Workstation's Cost Center
 
-Pour Modifier le centre de coût d'un poste de travail depuis le plan,
+To modify a workstation's cost center from the plan,
 
--   cliquer sur le poste de travail à modifier
--   dans la fiche du poste de travail à gauche du plan, cliquer sur "Modifier"
--   cliquer sur l'icône "crayon" du "Centre de coût" et sélectionner le nouveau centre de coût dans la liste
--   "sauvegarder" les modifications
+-   click on the workstation to modify
+-   in the workstation card on the left of the plan, click on "Modify"
+-   click on the "pencil" icon of the "Cost Center" and select the new cost center from the list
+-   "save" the modifications

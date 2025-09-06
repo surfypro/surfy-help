@@ -1,14 +1,14 @@
 ---
 sidebar_position: 3
 ---
-# Supprimer un centre de coût
+# Delete a Cost Center
 
-Pour supprimer un centre de coût dans Surfy, depuis le menu de gauche :
+To delete a cost center in Surfy, from the left menu:
 
--   cliquer sur "Administration", "Typologies", "Centres de coût" puis "Lister les centres de coût".
--   cocher la case en début de ligne du centre de coût à supprimer
--   cliquer sur l'icône "Poubelle" pour "supprimer les centres de coût sélectionnés" en haut de page
+-   click on "Administration", "Typologies", "Cost Centers" then "List cost centers".
+-   check the box at the beginning of the line of the cost center to delete
+-   click on the "Trash" icon to "delete selected cost centers" at the top of the page
 
 :::warning Important
-Supprimer un centre de coût supprime tous les rattachements des espaces à ce centre de coût.
+Deleting a cost center deletes all space attachments to this cost center.
 :::
