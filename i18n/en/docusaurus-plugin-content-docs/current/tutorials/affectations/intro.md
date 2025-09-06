@@ -2,50 +2,50 @@
 sidebar_position: 1
 ---
 
-# Les affectations dans Surfy
+# Assignments in Surfy
 
-On peut affecter une personne de différentes manières dans Surfy en fonction du mode d'occupation des locaux.
-Ces modes d'affectation peuvent être utilisés simultanément dans Surfy :
+You can assign a person in different ways in Surfy depending on the mode of occupancy of the premises.
+These assignment modes can be used simultaneously in Surfy:
 
-- Affectation à un poste de travail
-- Affectation à un espace
-- Affectation à un quartier
-- Affectation à un bâtiment
+- Assignment to a workstation
+- Assignment to a space
+- Assignment to a district
+- Assignment to a building
 
-## Affectation à un poste de travail
+## Assignment to a Workstation
 
-L'affectation au poste de travail permet d'attribuer un poste de travail fixe à une personne.
+Workstation assignment allows you to assign a fixed workstation to a person.
 
-## Affectation à un espace
+## Assignment to a Space
 
-L'affectation à un espace permet d'attribuer un espace unique à une ou plusieurs personnes, sans définir exactement les postes de travail utilisés par ces personnes.
+Space assignment allows you to assign a unique space to one or more people, without defining exactly which workstations are used by these people.
 
-## Affectation à un quartier
+## Assignment to a District
 
-L'affectation à un quartier permet de délimiter une large surface composite dans laquelle les personnes affectées peuvent réserver ou travailler.
+District assignment allows you to delimit a large composite area in which assigned people can book or work.
 
-Pour affecter des personnes à un quartier, il est nécessaire de créer un type de calque d'affectation et des calques d'affectation associés.
+To assign people to a district, it is necessary to create an assignment layer type and associated assignment layers.
 
-### Calque d'affectation
+### Assignment Layer
 
-Un calque d'affectation est un calque d'analyse dont le type de calque est rattaché à un ou plusieurs bâtiments.
-Le calque d'affectation n'est disponible que sur les espaces du ou des bâtiments concernés.
+An assignment layer is an analysis layer whose layer type is attached to one or more buildings.
+The assignment layer is only available on the spaces of the concerned building(s).
 
-Un calque d'affectation permet de regrouper et représenter les espaces sur le plan afin de délimiter les quartiers dans lesquels les personnes pourront être affectées. Il permet également le cumul des données concernant le quartier délimité.
+An assignment layer allows you to group and represent spaces on the plan to delimit districts in which people can be assigned. It also allows the accumulation of data concerning the delimited district.
 
-Tout comme les calques d'analyse, les calques d'affectation sont regroupés dans un type de calque.
-Par exemple, le type de calque d'affectation "Quartiers Bâtiment A" regroupe les calques d'affectation "Quartier A1", "Quartier A2" ou "Quartier A3".
+Just like analysis layers, assignment layers are grouped in a layer type.
+For example, the assignment layer type "Building A Districts" groups the assignment layers "District A1", "District A2" or "District A3".
 
-## Affectation à un bâtiment
+## Assignment to a Building
 
-L'affectation au bâtiment permet de préselectionner les personnes en leur attribuant un bâtiment d'appartenance avant de leur attribuer une affectation plus précise, dans le cas d'une gestion multi sites par exemple.
+Building assignment allows you to preselect people by assigning them a building of belonging before assigning them a more precise assignment, in the case of multi-site management for example.
 
-## Rechercher une affectation
+## Search for an Assignment
 
-On peut accéder à l'affectation d'une personne de plusieurs façons :
+You can access a person's assignment in several ways:
 
--   par la loupe en effectuant une recherche sur la personne puis en cliquant sur l'affectation de la personne recherchée
--   par la loupe en effectuant une recherche sur l'espace ou le quartier puis en cliquant sur l'onglet "AFFECTATIONS" de la fiche de l'espace ou du quartier
--   par la loupe en effectuant une recherche sur le nom du poste de travail puis en cliquant sur le poste concerné
--   par la [liste filtrée](/en/docs/courses/find/listfindcourse) des affectations en choisissant le type d'affectation puis en listant et filtrant la liste
+-   by the magnifying glass by searching for the person then clicking on the assignment of the searched person
+-   by the magnifying glass by searching for the space or district then clicking on the "ASSIGNMENTS" tab of the space or district card
+-   by the magnifying glass by searching for the workstation name then clicking on the concerned workstation
+-   by the [filtered list](/en/docs/courses/find/listfindcourse) of assignments by choosing the assignment type then listing and filtering the list
 

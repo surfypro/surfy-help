@@ -2,17 +2,17 @@
 sidebar_position: 1
 ---
 
-# Les fonctionnalités du mode Lecteur
+# Reader Mode Features
 
 <Youtube code="T9C7k2dElBE"/>
 
 
 
-Les liens ci dessous permettent d'accéder aux tutoriels correspondants :
+The links below allow access to the corresponding tutorials:
 
-[Choisir la Vision adaptée](/en/docs/courses/views/planviews.md)
+[Choose the Appropriate View](/en/docs/courses/views/planviews.md)
 
-[Rechercher avec la loupe](/en/docs/courses/find/wenfindcourse.md)
+[Search with Magnifying Glass](/en/docs/courses/find/wenfindcourse.md)
 
 [Afficher les plans en 2D](/en/docs/courses/views/2Dviews.md)
 

@@ -2,71 +2,71 @@
 sidebar_position: 3
 ---
 
-# Supprimer une Affectation à un poste de travail
+# Delete a Workstation Assignment
 
 
-## Suppression d'affectation manuelle dans Surfy
+## Manual Assignment Deletion in Surfy
 
-Pour supprimer dans Surfy l'affectation à un poste de travail,
+To delete a workstation assignment in Surfy,
 
--   cliquer sur le poste de travail, la fiche du poste de travail s'affiche à gauche du plan
--   cliquer sur l'icône "Poubelle" en face du nom de la personne XXX à désaffecter : "Supprimer l'affectation au poste de travail XXX"
--   confirmer la suppression
-L'affectation de la personne est supprimée
+-   click on the workstation, the workstation card appears on the left of the plan
+-   click on the "Trash" icon next to the name of person XXX to unassign: "Delete assignment to workstation XXX"
+-   confirm the deletion
+The person's assignment is deleted
 
-:::tip Bon à savoir
-Supprimer l'affectation d'une personne ne supprime pas la personne. En revanche, supprimer une personne supprime toutes ses affectations !
+:::tip Good to Know
+Deleting a person's assignment does not delete the person. However, deleting a person deletes all their assignments!
 :::
 
-## Suppression par la liste filtrée des affectations
+## Deletion by Filtered Assignment List
 
-Dans le menu Liste à gauche de l'écran,
+In the List menu on the left of the screen,
 
--   cliquer sur "Affectations", "Affectations au poste de travail" puis "Lister les affectations au poste de travail"
--   filtrer la liste en fonction des critères voulus: bâtiment, étage, espace, ... par les deux premières icônes en haut à droite de l'écran
--   Une fois la liste filtrée, on peut cocher chaque affectation à supprimer au début de chaque ligne, puis "supprimer les affectations au poste de travail sélectionnées" par l'icône "poubelle" en haut de page.
-
-
-## Suppression d'affectation en masse par fichier Excel (fonctionnalité non disponible)
+-   click on "Assignments", "Workstation Assignments" then "List Workstation Assignments"
+-   filter the list according to desired criteria: building, floor, space, ... by the two first icons at the top right of the screen
+-   Once the list is filtered, you can check each assignment to delete at the beginning of each line, then "delete selected workstation assignments" using the "trash" icon at the top of the page.
 
 
-### Création du fichier Excel
-
-On peut créer le fichier Excel comportant les affectations à supprimer de différentes manières :
-
--   En générant le fichier "Rapport des personnes affectées dans le bâtiment XXX" : 
-    -   depuis la page d'accueil, cliquer sur l'icône au bout de la bande de couleur du bâtiment XXX
-    -   cliquer sur "Tableau de bord pour le bâtiment XXX"
-    -   cliquer sur l'icône de la ligne "Rapport des personnes affectées dans le bâtiment XXX" 
-    -   le fichier est téléchargé, l'onglet "Affectations aux postes de travail" contient les informations à modifier
-
--   En générant la liste filtrée des affectations à supprimer :
-
-    -   dans le menu Liste à gauche de l'écran, cliquer sur "Affectations", "Affectations au poste de travail" puis "Lister les affectations au poste de travail"
-    -   filtrer la liste en fonction des critères voulus: bâtiment, étage, espace, ... par les deux premières icônes en haut à droite de l'écran
-    -   générer le fichier Excel de la liste obtenue, en cliquant sur l'icône "Télécharger en Excel les affectations au poste de travail" en haut à droite de l'écran
-    -   le fichier est téléchargé
+## Bulk Assignment Deletion by Excel File (feature not available)
 
 
-### Traitement des informations dans le fichier Excel
+### Excel File Creation
 
-Pour supprimer une affectation, il faut :
+You can create the Excel file containing assignments to delete in different ways:
 
--   effacer les cases "Identifiant Surfy", "Prénom" et "Nom de famille" (colonnes B, C, D) de la ligne de l'affectation à supprimer.
--   La colonnes A (identifiant de l'affectation) doit rester inchangée.
--   les colonnes à importer sont A,B,C,D et doivent rester contigües
--   copier ces colonnes contigües par "ctrl C".
+-   By generating the "Report of people assigned in building XXX" file: 
+    -   from the home page, click on the icon at the end of the color band of building XXX
+    -   click on "Dashboard for building XXX"
+    -   click on the icon of the line "Report of people assigned in building XXX" 
+    -   the file is downloaded, the "Workstation Assignments" tab contains the information to modify
+
+-   By generating the filtered list of assignments to delete:
+
+    -   in the List menu on the left of the screen, click on "Assignments", "Workstation Assignments" then "List Workstation Assignments"
+    -   filter the list according to desired criteria: building, floor, space, ... by the two first icons at the top right of the screen
+    -   generate the Excel file of the obtained list, by clicking on the "Download Workstation Assignments in Excel" icon at the top right of the screen
+    -   the file is downloaded
 
 
-### Importation du fichier Excel modifié
+### Processing Information in the Excel File
 
-Dans le menu Liste à gauche de l'écran,
+To delete an assignment, you must:
 
--   cliquer sur "Affectation", "Affectations au poste de travail" puis "importer des affectations au poste de travail"
--   coller les colonnes contigües dans la case centrale
--   cliquer sur "Comparer", Surfy propose les modifications à apporter
--   cliquer sur "Créer tout", ou cocher les cases désirées et cliquer sur "Créer"
--   les affectations cochées sont supprimées
+-   clear the "Surfy Identifier", "First Name" and "Last Name" cells (columns B, C, D) of the assignment line to delete.
+-   Column A (assignment identifier) must remain unchanged.
+-   the columns to import are A,B,C,D and must remain contiguous
+-   copy these contiguous columns with "ctrl C".
+
+
+### Importing the Modified Excel File
+
+In the List menu on the left of the screen,
+
+-   click on "Assignment", "Workstation Assignments" then "import workstation assignments"
+-   paste the contiguous columns in the center box
+-   click on "Compare", Surfy proposes the modifications to be made
+-   click on "Create All", or check the desired boxes and click on "Create"
+-   checked assignments are deleted
 
 
  

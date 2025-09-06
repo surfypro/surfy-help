@@ -2,213 +2,213 @@
 sidebar_position: 0
 ---
 
-# L'accès à Surfy
+# Access to Surfy
 
-## Le mode SaaS
+## SaaS Mode
 
-Un SaaS, ou Software as a Service, est un modèle de licence et de distribution utilisé pour fournir des applications logicielles sur Internet, comme un service. Les utilisateurs accèdent aux applications par un abonnement.
+SaaS, or Software as a Service, is a licensing and distribution model used to provide software applications over the Internet as a service. Users access applications through a subscription.
 
-L'accès à Surfy se fait en mode SaaS. L'application et les données sont hébergées en France sur les serveurs de Microsoft Azure.
+Access to Surfy is done in SaaS mode. The application and data are hosted in France on Microsoft Azure servers.
 
-## La sécurité des données
+## Data Security
 
-[Pourquoi la sécurité des données est notre priorité](https://www.surfy.pro/security)
+[Why data security is our priority](https://www.surfy.pro/security)
 
-## Qui peut accéder à Surfy ?
+## Who can access Surfy?
 
-Le futur utilisateur accède à la plateforme Surfy de son entreprise en créant un compte sécurisé validé par l'entreprise.
-Les fonctionnalités accessibles sont déterminées par l'entreprise, en fonction des droits réservés à l'utilisateur.
-Le contenu visible est également déterminé par l'entreprise en fonction de l'utilisateur.
+The future user accesses their company's Surfy platform by creating a secure account validated by the company.
+Accessible features are determined by the company, based on the rights reserved for the user.
+Visible content is also determined by the company based on the user.
 
-## Créer un utilisateur
+## Create a User
 
-### Demande de création de compte
+### Account Creation Request
 
-Pour accéder à Surfy, l'entreprise doit être abonnée à la solution.<br />
-Le futur utilisateur peut alors créer un compte [Surfy](/en/docs/access/surfy), un compte Microsoft [Office 365](/en/docs/access/office365) ou un compte [Google](/en/docs/access/google) et demander la connexion à la plateforme de l'entreprise concernée.<br />
-Si l'entreprise utilise l'accès sécurisé par un compte [ENTREPRISE](/en/docs/access/company), le futur utilisateur peut directement accéder à la plateforme concernée en cliquant sur cette case.
+To access Surfy, the company must be subscribed to the solution.<br />
+The future user can then create a [Surfy](/en/docs/access/surfy) account, a Microsoft [Office 365](/en/docs/access/office365) account, or a [Google](/en/docs/access/google) account and request connection to the relevant company platform.<br />
+If the company uses secure access via an [ENTERPRISE](/en/docs/access/company) account, the future user can directly access the relevant platform by clicking on this box.
 
-### Utilisateur de l'entreprise
+### Company User
 
-L'administrateur Surfy de l'entreprise reçoit la demande de connexion du futur utilisateur.
+The company's Surfy administrator receives the connection request from the future user.
 
-Pour accepter le futur utilisateur, l'administrateur doit :
+To accept the future user, the administrator must:
 
--   dans le menu de gauche, cliquer sur "Administration" puis "Sécurité" et "Utilisateurs de l'entreprise" pour "Créer un utilisateur de l'entreprise". 
--   cliquer sur l'icône "crayon" face à "Utilisateur"
--   taper l'adresse mail complète du futur utilisateur
--   cliquer sur l'adresse mail du futur utilisateur pour la sélectionner
--   valider la création.
+-   in the left menu, click on "Administration" then "Security" and "Company Users" to "Create a Company User". 
+-   click on the "pencil" icon next to "User"
+-   type the complete email address of the future user
+-   click on the future user's email address to select it
+-   validate the creation.
 
-:::tip BON A SAVOIR
-Si aucune adresse mail n'apparait en tapant l'adresse complète et exacte du futur utilisateur, la demande de création de compte est incomplète ou doit être réitérée.
+:::tip GOOD TO KNOW
+If no email address appears when typing the complete and exact address of the future user, the account creation request is incomplete or must be repeated.
 :::
 
-L'utilisateur de l'entreprise est créé, il reste à lui attribuer un rôle d'utilisateur, et éventuellement un rôle de contenu.<br />
-Une fois ces rôles donnés, l'utilisateur peut accéder librement à la plateforme suivant les rôles attribués.
+The company user is created, it remains to assign them a user role, and possibly a content role.<br />
+Once these roles are given, the user can freely access the platform according to the assigned roles.
 
 
-## Le rôle d'utilisateur
+## User Role
 
-Les rôles d'utilisateur sont pré-programmés dans Surfy.<br />
-Ils ne sont pas modifiables par l'administrateur Surfy de l'entreprise.<br />
-Chaque rôle d'utilisateur est créé pour un ensemble de fonctionnalités précises.
-L'administrateur Surfy de l'entreprise peut attribuer des fonctionnalités en cumulant des rôles aux différents utilisateurs depuis une liste exhaustive de rôles.
+User roles are pre-programmed in Surfy.<br />
+They cannot be modified by the company's Surfy administrator.<br />
+Each user role is created for a specific set of features.
+The company's Surfy administrator can assign features by combining roles to different users from an exhaustive list of roles.
 
 
-### Attribuer un rôle d'utilisateur
+### Assign a User Role
 
-Pour attribuer un rôle d'utilisateur à un utilisateur, depuis le menu de gauche,
+To assign a user role to a user, from the left menu,
 
--   cliquer sur "Administration" puis "Sécurité" et "Utilisateurs de l'entreprise" pour "Lister les utilisateurs de l'entreprise".
--   cliquer sur l'icone "point rouge" en début de ligne de l'utilisateur concerné pour "modifier l'utilisateur de l'entreprise xxxx@xx"
--   cliquer sur "Rôle de l'utilisateur de l'entreprise" puis sur "CREER UN ROLE DE L'UTILISATEUR DE L'ENTREPRISE"
--   cliquer sur l'icône "Crayon" du "Rôle".
+-   click on "Administration" then "Security" and "Company Users" to "List Company Users".
+-   click on the "red dot" icon at the beginning of the line of the concerned user to "modify company user xxxx@xx"
+-   click on "Company User Role" then on "CREATE A COMPANY USER ROLE"
+-   click on the "Pencil" icon of the "Role".
 
-La liste des rôles disponibles apparait
+The list of available roles appears
 
--   choisir le rôle à attribuer puis "Valider la création"
+-   choose the role to assign then "Validate Creation"
 
-Le rôle s'ajoute à la liste en bas de case. On peut cumuler plusieurs rôles pour un même utilisateur.
+The role is added to the list at the bottom of the box. Multiple roles can be combined for the same user.
 
--   cliquer sur "Administration" puis "Sécurité" et "Utilisateurs de l'entreprise" pour "Lister les utilisateurs de l'entreprise" afin de vérifier les rôles attribués à chacun.
+-   click on "Administration" then "Security" and "Company Users" to "List Company Users" to verify the roles assigned to each.
 
-:::tip ASTUCE
-Pour vérifier le bon paramétrage des accès d'un utilisateur, on peut utiliser un compte tiers, le configurer avec le paramétrage voulu puis accéder à la plateforme.
-Pour accéder aux deux comptes simultanément (admin et tiers), il est nécessaire d'utiliser deux navigateurs différents ou d'être en navigation privée.
+:::tip TIP
+To verify the correct access configuration of a user, you can use a third-party account, configure it with the desired settings and then access the platform.
+To access both accounts simultaneously (admin and third-party), it is necessary to use two different browsers or be in private browsing.
 :::
 
 
-### Modifier le rôle d'un utilisateur
+### Modify a User's Role
 
-Pour modifier le rôle d'un utilisateur de l'entreprise, on peut retirer un rôle puis attribuer un autre rôle plus adapté à son utilisation de Surfy.
+To modify a company user's role, you can remove a role and then assign another role more suitable for their use of Surfy.
 
-Pour retirer un rôle à un utilisateur de l'entreprise,
+To remove a role from a company user,
 
--   cliquer sur "Administration" puis "Sécurité" et "Utilisateurs de l'entreprise" pour "Lister les utilisateurs de l'entreprise".
--   cliquer sur l'icone "point rouge" en début de ligne de l'utilisateur concerné pour "modifier l'utilisateur de l'entreprise xxxx@xx"
--   cliquer sur "Rôle de l'utilisateur de l'entreprise"
--   cocher la case en début de ligne du rôle à retirer
--   cliquer sur la corbeille qui apparait
--   confirmer la suppression
+-   click on "Administration" then "Security" and "Company Users" to "List Company Users".
+-   click on the "red dot" icon at the beginning of the line of the concerned user to "modify company user xxxx@xx"
+-   click on "Company User Role"
+-   check the box at the beginning of the line of the role to remove
+-   click on the trash can that appears
+-   confirm the deletion
 
-## Le rôle de contenu
+## Content Role
 
-### Attribuer un rôle de contenu à l'utilisateur de l'entreprise
+### Assign a Content Role to a Company User
 
-Le rôle de contenu permet de choisir les étages ou bâtiments qui seront visibles par l'utilisateur concerné.
+The content role allows you to choose the floors or buildings that will be visible to the concerned user.
 
-Pour attribuer un rôle de contenu à un utilisateur de l'entreprise, dans le menu de gauche,
+To assign a content role to a company user, in the left menu,
 
--   cliquer sur "Administration" puis "Sécurité" et "Utilisateurs de l'entreprise" pour "Lister les utilisateurs de l'entreprise".
--   cliquer sur l'icone "point rouge" en début de ligne de l'utilisateur concerné pour "modifier l'utilisateur de l'entreprise xxxx@xx"
--   cliquer sur "Rôle de contenu de l'utilisateur de l'entreprise" puis sur "CREER UN ROLE DE CONTENU DE L'UTILISATEUR DE L'ENTREPRISE"
+-   click on "Administration" then "Security" and "Company Users" to "List Company Users".
+-   click on the "red dot" icon at the beginning of the line of the concerned user to "modify company user xxxx@xx"
+-   click on "Company User Content Role" then on "CREATE A COMPANY USER CONTENT ROLE"
 
-La liste des rôles de contenu disponibles apparait. Si le rôle de contenu désiré n'apparait pas, il faut [créer un rôle de contenu](docs/access/intro.md#créer-un-rôle-de-contenu) afin de pouvoir l'attribuer à l'utilisateur.
+The list of available content roles appears. If the desired content role does not appear, you must [create a content role](docs/access/intro.md#create-a-content-role) in order to assign it to the user.
 
--   choisir le rôle de contenu à attribuer à l'utilisateur puis "Valider la création".
+-   choose the content role to assign to the user then "Validate Creation".
 
-Le rôle de contenu s'ajoute à la liste en bas de case. On peut cumuler plusieurs rôles de contenu pour un même utilisateur.
+The content role is added to the list at the bottom of the box. Multiple content roles can be combined for the same user.
 
--   cliquer sur "Administration" puis "Sécurité" et "Utilisateurs de l'entreprise" pour "Lister les utilisateurs de l'entreprise" afin de vérifier les rôles attribués à chacun.
+-   click on "Administration" then "Security" and "Company Users" to "List Company Users" to verify the roles assigned to each.
 
-:::tip ASTUCE
-Pour vérifier le bon paramétrage des accès d'un utilisateur, on peut utiliser un compte tiers, le configurer avec le paramétrage voulu puis accéder à la plateforme.
-Pour accéder aux deux comptes simultanément (admin et tiers), il est nécessaire d'utiliser deux navigateurs différents ou d'être en navigation privée.
+:::tip TIP
+To verify the correct access configuration of a user, you can use a third-party account, configure it with the desired settings and then access the platform.
+To access both accounts simultaneously (admin and third-party), it is necessary to use two different browsers or be in private browsing.
 :::
 
-### Modifier le rôle de contenu d'un utilisateur de l'entreprise
+### Modify a Company User's Content Role
 
-Pour modifier le rôle de contenu d'un utilisateur de l'entreprise, on peut retirer un rôle de contenu et/ou attribuer un autre rôle de contenu plus adapté à son utilisation de Surfy.
+To modify a company user's content role, you can remove a content role and/or assign another content role more suitable for their use of Surfy.
 
-Pour retirer un rôle de contenu à un utilisateur de l'entreprise,
+To remove a content role from a company user,
 
-   cliquer sur "Administration" puis "Sécurité" et "Utilisateurs de l'entreprise" pour "Lister les utilisateurs de l'entreprise".
--   cliquer sur l'icone "point rouge" en début de ligne de l'utilisateur concerné pour "modifier l'utilisateur de l'entreprise xxxx@xx"
--   cliquer sur "Rôle de contenu de l'utilisateur de l'entreprise"
--   cocher la case en début de ligne du rôle de contenu à retirer
--   cliquer sur la corbeille qui apparait
--   confirmer la suppression
+-   click on "Administration" then "Security" and "Company Users" to "List Company Users".
+-   click on the "red dot" icon at the beginning of the line of the concerned user to "modify company user xxxx@xx"
+-   click on "Company User Content Role"
+-   check the box at the beginning of the line of the content role to remove
+-   click on the trash can that appears
+-   confirm the deletion
 
 
-## Créer un rôle de contenu
+## Create a Content Role
 
-On peut créer des rôles de contenu composés d'étages ou de bâtiments.
+You can create content roles composed of floors or buildings.
 
 :::warning ATTENTION
-Si on n'utilise que des rôles de contenu composés de bâtiments entiers, la création de rôle de contenu à l'étage n'est pas nécessaire.
-En revanche, si un rôle de contenu contient un ou plusieurs étages d'un bâtiment, les rôles de contenu contenant le bâtiment entier doivent inclure tous les étages du bâtiment et non le bâtiment entier.
+If you only use content roles composed of entire buildings, creating floor-level content roles is not necessary.
+However, if a content role contains one or more floors of a building, content roles containing the entire building must include all floors of the building and not the entire building.
 :::
 
-### Rôle de contenu au bâtiment
+### Building Content Role
 
-Pour créer un rôle de contenu attibuable aux utilisateurs, dans le menu de gauche,
+To create a content role assignable to users, in the left menu,
 
--   cliquer sur "Administration" puis "Sécurité" puis "Rôle de contenu" pour "créer un rôle de contenu".
--   nommer le rôle de contenu à créer (exemple : BATIMENT A seul) et valider la création
--   cliquer sur "Association rôle de contenu aux bâtiments" puis sur "CREER UNE ASSOCIATION DU ROLE DE CONTENU AUX BATIMENTS"
--   cliquer sur l'icône "Crayon" face à la ligne "Bâtiment" pour sélectionner un bâtiment entrant dans le rôle de contenu, et valider la création
--   ajouter tous les bâtiments accessibles dans le rôle de contenu
+-   click on "Administration" then "Security" then "Content Role" to "create a content role".
+-   name the content role to create (example: BUILDING A only) and validate the creation
+-   click on "Content Role Association to Buildings" then on "CREATE A CONTENT ROLE ASSOCIATION TO BUILDINGS"
+-   click on the "Pencil" icon next to the "Building" line to select a building entering the content role, and validate the creation
+-   add all accessible buildings to the content role
 
-Les bâtiments sélectionnés s'ajoutent aux éventuels bâtiments déjà associés au rôle de contenu, listés en bas de case.
+The selected buildings are added to any buildings already associated with the content role, listed at the bottom of the box.
 
 
-### Rôle de contenu à l'étage
+### Floor Content Role
 
-Pour définir un rôle de contenu par étage, chaque étage concerné doit être inclus dans un rôle de contenu.<br />
+To define a content role by floor, each concerned floor must be included in a content role.<br />
 
--   cliquer sur "Administration" puis "Sécurité" puis "Rôle de contenu" pour "créer un rôle de contenu".
--   nommer le rôle de contenu à créer (exemple : R+1 BATIMENT A seul) et valider la création
--   cliquer sur "Association rôle de contenu aux étages" puis sur "CREER UNE ASSOCIATION DU ROLE DE CONTENU AUX ETAGES"
--   cliquer sur l'icône "Crayon" face à la ligne "Etage" pour sélectionner un étage entrant dans le rôle de contenu, et valider la création
--   ajouter tous les étages accessibles dans le rôle de contenu
+-   click on "Administration" then "Security" then "Content Role" to "create a content role".
+-   name the content role to create (example: R+1 BUILDING A only) and validate the creation
+-   click on "Content Role Association to Floors" then on "CREATE A CONTENT ROLE ASSOCIATION TO FLOORS"
+-   click on the "Pencil" icon next to the "Floor" line to select a floor entering the content role, and validate the creation
+-   add all accessible floors to the content role
 
-Si on utilise un rôle de contenu à l'étage pour un bâtiment, pour visualiser le bâtiment complet il faut intégrer tous les étages du bâtiment dans un rôle de contenu spécifique au bâtiment et l'attribuer à l'utilisateur, ou ajouter les rôles de contenu de chaque étage à l'utilisateur concerné.
+If you use a floor content role for a building, to view the complete building you must integrate all floors of the building into a building-specific content role and assign it to the user, or add the content roles of each floor to the concerned user.
 
-## Retirer un utilisateur de l'entreprise
+## Remove a Company User
 
-Pour retirer un utilisateur de l'entreprise, dans le menu de gauche,
+To remove a company user, in the left menu,
 
--   cliquer sur "Administration" puis "Sécurité" et "Utilisateurs de l'entreprise" pour "Lister les utilisateurs de l'entreprise".
--   cocher la case en début de ligne de l'utilisateur à retirer
--   cliquer sur la corbeille en haut de page
--   confirmer la suppression
+-   click on "Administration" then "Security" and "Company Users" to "List Company Users".
+-   check the box at the beginning of the line of the user to remove
+-   click on the trash can at the top of the page
+-   confirm the deletion
 
-Dès qu'il est retiré, l'utilisateur n'a plus accès à la plateforme Surfy de l'entreprise.
+As soon as they are removed, the user no longer has access to the company's Surfy platform.
 
-:::tip BON A SAVOIR
-L'utilisateur retiré de son entreprise est toujours potentiellement réattribuable à la plateforme. Il suffit de suivre la même procédure de création d'utilisateur de l'entreprise, sans que l'utilisateur n'ait à redemander l'accès.
+:::tip GOOD TO KNOW
+The user removed from their company is still potentially reassignable to the platform. Simply follow the same company user creation procedure, without the user having to request access again.
 :::
 
-## L'authentification automatique
+## Automatic Authentication
 
-L'authentification automatique permet d'accorder automatiquement l'accès à une plateforme aux futurs utilisateurs, si ceux-ci remplissent les conditions nécessaires :
+Automatic authentication allows automatically granting access to a platform to future users, if they meet the necessary conditions:
 
--   Email avec un nom de domaine précisé dans l'authentification automatique
--   Type de connexion conforme au choix indiqué dans l'authentification automatique
+-   Email with a domain name specified in automatic authentication
+-   Connection type compliant with the choice indicated in automatic authentication
 
-L'utilisateur a alors directement accès à la plateforme, suivant les droits précisés dans l'authentification automatique.
+The user then has direct access to the platform, following the rights specified in automatic authentication.
 
-### Créer une règle d'authentification automatique
+### Create an Automatic Authentication Rule
 
-Pour créer une règle d'authentification, depuis le menu de gauche,
+To create an authentication rule, from the left menu,
 
--   cliquer sur "Administration" puis "Authentification" et "Créer une règle d'authentification".
--   cliquer sur l'icône "Crayon" de la "connection d'authentification" afin de choisir le type de connexion :
+-   click on "Administration" then "Authentication" and "Create an Authentication Rule".
+-   click on the "Pencil" icon of the "authentication connection" to choose the connection type:
 
-        -   par OFFICE365 : choisir "AzureADv2"
-        -   par GOOGLE : choisir "google-oauth2"
-        -   par COMPTE SURFY : choisir "auth0"
+        -   by OFFICE365: choose "AzureADv2"
+        -   by GOOGLE: choose "google-oauth2"
+        -   by SURFY ACCOUNT: choose "auth0"
 
--   dans la case "Nom", donner un nom à l'authentification
--   dans la case "Domaines", indiquer le ou les noms de domaine acceptés par l'authentification (@XXX.com). Si plusieurs nom de domaine sont acceptés, séparer les noms de domaine par un espace
--   cocher la case "Associer automatiquement les rôles" afin de donner un rôle commun aux utilisateurs acceptés par l'authentification automatique
--   valider la création
+-   in the "Name" box, give a name to the authentication
+-   in the "Domains" box, indicate the domain name(s) accepted by the authentication (@XXX.com). If multiple domain names are accepted, separate the domain names with a space
+-   check the "Automatically associate roles" box to give a common role to users accepted by automatic authentication
+-   validate the creation
 
-On peut alors associer un rôle d'utilisateur et un rôle de contenu éventuel pour les utilisateurs acceptés par l'authentification automatique :
+You can then associate a user role and possibly a content role for users accepted by automatic authentication:
 
--   cliquer sur "Associations de règle d'authentification à rôle" puis "CREER UNE ASSOCIATION DE REGLE D'AUTHENTIFICATION A ROLE" pour choisir le rôle d'utilisateur aux collaborateurs acceptés.
--    cliquer sur "Associations de règle d'authentification à contenu" puis "CREER UNE ASSOCIATION DE REGLE D'AUTHENTIFICATION A CONTENU" pour choisir le rôle de contenu visible aux collaborateurs acceptés.
+-   click on "Authentication Rule Associations to Role" then "CREATE AN AUTHENTICATION RULE ASSOCIATION TO ROLE" to choose the user role for accepted collaborators.
+-    click on "Authentication Rule Associations to Content" then "CREATE AN AUTHENTICATION RULE ASSOCIATION TO CONTENT" to choose the content role visible to accepted collaborators.
 
-Si aucun rôle de contenu n'est associé, les utilisateurs acceptés auront accès à tous les bâtiments de la plateforme.<br />
-Si aucun rôle d'utilisateur n'est associé, ou si la case "Associer automatiquement les rôles" n'est pas cochée, l'utilisateur est accepté sur la plateforme mais ne peut pas accéder à celle-ci tant que l'administrateur ne lui a pas donné de rôle d'utilisateur.
+If no content role is associated, accepted users will have access to all buildings on the platform.<br />
+If no user role is associated, or if the "Automatically associate roles" box is not checked, the user is accepted on the platform but cannot access it until the administrator has given them a user role.

@@ -2,13 +2,13 @@
 sidebar_position: 1
 ---
 
-# Surfy pour la réservation
+# Surfy for Booking
 
-On peut réserver un poste de travail directement dans Surfy ou via l'application Teams, à la journée ou demi-journée.<br />
-Pour accéder à un quartier de réservation (ou bâtiment), il est nécessaire d'être affecté au préalable à ce quartier (ou bâtiment).<br />
-On peut alors réserver un poste de travail (ou déclarer un télétravail) à la demi-journée ou à la journée.<br />
+You can book a workstation directly in Surfy or via the Teams application, for a day or half-day.<br />
+To access a booking district (or building), you must be previously assigned to this district (or building).<br />
+You can then book a workstation (or declare remote work) for half-day or full-day.<br />
 
-[Configurer Surfy pour la réservation](/en/docs/courses/occupy/occupycourse)<br />
-[Comment réserver un poste de travail](/en/docs/tutorials/booking/create)<br />
-[Configurer Surfy pour la réservation par Teams](/en/docs/tutorials/booking/create#réserver-depuis-teams)<br />
-[Guide utilisateur de la réservation par Teams](/en/docs/tutorials/teams/users)<br />
+[Configure Surfy for Booking](/en/docs/courses/occupy/occupycourse)<br />
+[How to Book a Workstation](/en/docs/tutorials/booking/create)<br />
+[Configure Surfy for Teams Booking](/en/docs/tutorials/booking/create#book-from-teams)<br />
+[Teams Booking User Guide](/en/docs/tutorials/teams/users)<br />

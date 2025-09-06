@@ -1,8 +1,8 @@
 ---
 sidebar_position: 5
 ---
-# Certification "Administrateur"
+# "Administrator" Certification
 
-Durée de l'évaluation : 4 heures
+Evaluation duration: 4 hours
 
-La certification "Administrateur" implique l'obtention des certifications "Intégrateur", "Gestionnaire des personnes" et "Gestionnaire de la réservation, ainsi que la maîtrise de l'ensemble des fonctionnalités décrites dans la Surfy Academy.
+The "Administrator" certification involves obtaining the "Integrator", "People Manager" and "Booking Manager" certifications, as well as mastery of all features described in the Surfy Academy.

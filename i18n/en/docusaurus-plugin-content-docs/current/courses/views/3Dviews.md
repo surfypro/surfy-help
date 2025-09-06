@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Affichage des plans en 3D
+# Display Plans in 3D
 
 ## Afficher le plan 3D d'un étage
 

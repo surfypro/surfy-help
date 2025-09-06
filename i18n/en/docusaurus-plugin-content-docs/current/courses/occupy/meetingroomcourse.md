@@ -2,29 +2,29 @@
 sidebar_position: 2
 ---
 
-# Les espaces de réunion
+# Meeting Spaces
 
-## Configurer la gestion des espaces de réunion
+## Configure Meeting Space Management
 
-Voir le tutoriel [Configurer la gestion des espaces de réunion](/en/docs/tutorials/surfaces/meetingroom/config)
+See the tutorial [Configure Meeting Space Management](/en/docs/tutorials/surfaces/meetingroom/config)
 
-Pour plus d'informations :
+For more information:
 
-[Créer](/en/docs/tutorials/surfaces/room/roomtype.md#créer-une-typologie-despace) ou [modifier](/en/docs/tutorials/surfaces/room/roomtype.md#modifier-une-typologie-despace) les typologies d'espace concernées : salle de réunion, box, bulle de réunion, ... afin de les inclure dans les espaces de réunion (renseigner le Code : MEETING)
+[Create](/en/docs/tutorials/surfaces/room/roomtype.md#create-a-space-typology) or [modify](/en/docs/tutorials/surfaces/room/roomtype.md#modify-a-space-typology) the relevant space typologies: meeting room, box, meeting bubble, ... in order to include them in meeting spaces (enter the Code: MEETING)
 
-[Ajouter du mobilier ou des équipements dans un espace](/en/docs/tutorials/objects/item/create.md#ajouter-un-objet-à-lespace) pour compléter l'aménagement des espaces de réunion
+[Add furniture or equipment to a space](/en/docs/tutorials/objects/item/create.md#add-an-object-to-the-space) to complete the layout of meeting spaces
 
-[Créer](/en/docs/tutorials/objects/family/create) ou [modifier](/en/docs/tutorials/objects/family/edit) une famille de type d'objet pour lister les équipements des espaces de réunion (renseigner le Code : SERVICES)
+[Create](/en/docs/tutorials/objects/family/create) or [modify](/en/docs/tutorials/objects/family/edit) an object type family to list meeting space equipment (enter the Code: SERVICES)
 
 
-## Visualiser les espaces de réunion
+## View Meeting Spaces
 
-Voir le tutoriel [visualiser les espaces de réunion](/en/docs/tutorials/surfaces/meetingroom/read.md)
+See the tutorial [view meeting spaces](/en/docs/tutorials/surfaces/meetingroom/read.md)
 
-## Partager les informations des espaces de réunion
+## Share Meeting Space Information
 
-Les informations des espaces de réunion peuvent être délivrées à des applications tiers (réservation, ticketing) via nos API.
-Pour plus d'informations, Merci de [contacter Surfy](https://www.surfy.pro/contact)
+Meeting space information can be delivered to third-party applications (booking, ticketing) via our APIs.
+For more information, please [contact Surfy](https://www.surfy.pro/contact)
 
 
 

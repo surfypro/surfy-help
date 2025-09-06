@@ -2,54 +2,54 @@
 sidebar_position: 1
 ---
 
-# Affectations et réservations
+# Assignments and Bookings
 
-## Affectation des personnes
+## People Assignment
 
-### Affecter les personnes aux postes de travail, aux espaces, aux bâtiments
+### Assign People to Workstations, Spaces, Buildings
 
-[Créer une personne](/en/docs/tutorials/person/create.md)
+[Create a Person](/en/docs/tutorials/person/create.md)
 
-[Créer et affecter une personne](/en/docs/tutorials/affectations/workplaceaffectation/create.md#cr%C3%A9er-et-affecter-une-personne-%C3%A0-un-poste-de-travail)
+[Create and Assign a Person](/en/docs/tutorials/affectations/workplaceaffectation/create.md#create-and-assign-a-person-to-a-workstation)
 
-[Importer une liste de personnes](/en/docs/tutorials/person/create.md#importer-des-personnes)
-
-
-[Affecter une personne dans Surfy](/en/docs/tutorials/affectations/intro.md)
-
-Affecter des personnes en masse [aux postes de travail](/en/docs/tutorials/affectations/workplaceaffectation/create.md#affecter-des-personnes-aux-postes-de-travail-par-import-excel), [aux espaces](/en/docs/tutorials/affectations/roomaffectation/create.md#affecter-des-personnes-aux-espaces-par-import-excel) ou [aux bâtiments](/en/docs/tutorials/affectations/personToBuilding/create.md#affecter-des-personnes-au-bâtiment-par-import-excel)
+[Import a List of People](/en/docs/tutorials/person/create.md#import-people)
 
 
+[Assign a Person in Surfy](/en/docs/tutorials/affectations/intro.md)
 
-
-### Mettre en place l'affectation aux quartiers
-
-[Créer les calques d'affectation aux quartiers](/en/docs/tutorials/dimensionTypeToBuilding/create.md)
-
-[Qualifier les espaces par calques d'affectation aux quartiers](/en/docs/tutorials/dimensionTypeToBuilding/create.md#qualifier-un-espace-par-un-calque-daffectation)
-
-[Visualiser les calques d'affectation aux quartiers](/en/docs/tutorials/dimensionTypeToBuilding/create.md#visualiser-les-calques-daffectation)
-
-[Affecter les personnes aux quartiers](/en/docs/tutorials/affectations/dimensiontoperson/create.md)
-
-[Lister les affectations aux quartiers](/en/docs/courses/find/listfindcourse.md)
-
-[Exporter le rapport des personnes affectées par quartier](/en/docs/tutorials/dimensionTypeToBuilding/create.md#rapport-des-donn%C3%A9es-des-calques-daffectation)
-
-## Réservation des postes de travail et des espaces
-
-### Mettre en place la réservation des postes de travail
+Assign people in bulk [to workstations](/en/docs/tutorials/affectations/workplaceaffectation/create.md#assign-people-to-workstations-by-excel-import), [to spaces](/en/docs/tutorials/affectations/roomaffectation/create.md#assign-people-to-spaces-by-excel-import) or [to buildings](/en/docs/tutorials/affectations/personToBuilding/create.md#assign-people-to-building-by-excel-import)
 
 
 
-[Réserver dans Surfy](/en/docs/tutorials/booking/workplace.md)
 
-[Utiliser Teams pour la réservation dans Surfy](/en/docs/tutorials/booking/teams.md)
+### Set Up District Assignment
+
+[Create District Assignment Layers](/en/docs/tutorials/dimensionTypeToBuilding/create.md)
+
+[Qualify Spaces by District Assignment Layers](/en/docs/tutorials/dimensionTypeToBuilding/create.md#qualify-a-space-by-an-assignment-layer)
+
+[View District Assignment Layers](/en/docs/tutorials/dimensionTypeToBuilding/create.md#view-assignment-layers)
+
+[Assign People to Districts](/en/docs/tutorials/affectations/dimensiontoperson/create.md)
+
+[List District Assignments](/en/docs/courses/find/listfindcourse.md)
+
+[Export Report of People Assigned by District](/en/docs/tutorials/dimensionTypeToBuilding/create.md#assignment-layer-data-report)
+
+## Workstation and Space Booking
+
+### Set Up Workstation Booking
 
 
-### Mettre en place la réservation d'espace
 
-La réservation d'espace (Salle de réunion, place de parking,...) n'est pas encore opérationnelle dans Surfy.
-Merci de vous rapprocher de l'équipe Surfy pour une mise en oeuvre rapide de cette fonctionnalité.
+[Book in Surfy](/en/docs/tutorials/booking/workplace.md)
+
+[Use Teams for Booking in Surfy](/en/docs/tutorials/booking/teams.md)
+
+
+### Set Up Space Booking
+
+Space booking (Meeting room, parking space,...) is not yet operational in Surfy.
+Please contact the Surfy team for rapid implementation of this feature.
 
 

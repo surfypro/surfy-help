@@ -2,29 +2,29 @@
 sidebar_position: 2
 ---
 
-# Certification "Intégrateur"
+# "Integrator" Certification
 
-La certification "Intégrateur" implique la maîtrise de l'ensemble des fonctionnalités relatives à la digitalisation des plans dans Surfy. Elle se compose de deux chapitres, "Digitalisation des espaces" et "Gestion du mobilier".
+The "Integrator" certification involves mastery of all features related to plan digitization in Surfy. It consists of two chapters, "Space Digitization" and "Furniture Management".
 
-## Digitalisation des espaces
+## Space Digitization
 
-Durée de l'évaluation : 2 heures
+Evaluation duration: 2 hours
 
-La validation "Digitalisation des espaces" implique la maîtrise de la création et de la maintenance des plans, de la création d'un bâtiment aux modifications de cloisons et de passages, des qualifications des espaces par import en masse.
+The "Space Digitization" validation involves mastery of plan creation and maintenance, from building creation to partition and passage modifications, space qualifications by bulk import.
 
-Le candidat digitalise le plan png fourni par Surfy et le complète par les informations demandées (nomenclature, typologie des espaces, calques d'analyse, organisations, centres de coût), dans le temps imparti.
+The candidate digitizes the png plan provided by Surfy and completes it with the requested information (nomenclature, space typology, analysis layers, organizations, cost centers), within the allotted time.
 
-Voir le [cours sur la digitalisation des espaces](/en/docs/courses/digitalize/digicourse#digitaliser-un-bâtiment).
+See the [space digitization course](/en/docs/courses/digitalize/digicourse#digitize-a-building).
 
 
-## Gestion du mobilier
+## Furniture Management
 
-Durée d'évaluation : 2 heures
+Evaluation duration: 2 hours
 
-La validation "Gestion du mobilier" implique la maîtrise de la création de types d'objet à l'échelle et sous forme d'icône, ainsi que la création de types de poste de travail. Elle concerne également le placement des objets et postes de travail sur le plan ainsi que leur référencement et leur qualification, la gestion de l'inventaire par familles de type d'objet, l'association d'objet à personne et l'import/export en masse de ces données.
+The "Furniture Management" validation involves mastery of creating object types to scale and in icon form, as well as creating workstation types. It also concerns the placement of objects and workstations on the plan as well as their referencing and qualification, inventory management by object type families, object-to-person association and bulk import/export of this data.
 
-Le candidat crée les types d'objet et les types de poste de travail demandés et place les objets sur le plan suivant l'implantation fournie, dans le temps imparti.
+The candidate creates the requested object types and workstation types and places the objects on the plan according to the provided layout, within the allotted time.
 
-Voir le [cours sur l'aménagement des espaces](/en/docs/courses/digitalize/digicourse#aménager-les-espaces)
+See the [space layout course](/en/docs/courses/digitalize/digicourse#layout-spaces)
 
 

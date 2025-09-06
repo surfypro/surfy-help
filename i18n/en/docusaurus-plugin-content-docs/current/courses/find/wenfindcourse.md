@@ -1,55 +1,55 @@
 ---
 sidebar_position: 1
 ---
-# Rechercher avec la loupe
+# Search with Magnifying Glass
 
-La loupe de recherche se situe en dessous du logo de l'entreprise, en haut à gauche de l'écran.
-Elle permet de multiples recherches.
-Les [scénarios](docs/tutorials/surfaces/building/create.md#déplacer-le-scénario) peuvent être exclus de la recherche en décochant la case "inclure les scénarios dans la recherche".
+The search magnifying glass is located below the company logo, at the top left of the screen.
+It allows multiple searches.
+[Scenarios](docs/tutorials/surfaces/building/create.md#move-the-scenario) can be excluded from the search by unchecking the "include scenarios in search" box.
 
-## Recherche de personne
+## Person Search
 
-La recherche sur les personnes peut utiliser plusieurs critères :
+Person search can use several criteria:
 
--   Recherche par nom ou prénom
--   Recherche par matricule
--   Recherche par affectation
--   Recherche par objet associé
--   Recherche par relation entre personnes
--   Recherche par identifiant
-
-
-[Rechercher une personne par un de ces critères](/en/docs/tutorials/person/edit.md#rechercher-une-personne)
+-   Search by name or first name
+-   Search by employee number
+-   Search by assignment
+-   Search by associated object
+-   Search by relationship between people
+-   Search by identifier
 
 
-## Recherche d'espace
-
-La recherche sur les espaces peut utiliser plusieurs critères :
-
--   Recherche par nom de l'espace
--   Recherche par nom du quartier
--   Recherche par l'affectation d'une personne
--   Recherche par objet
--   Recherche par identifiant
-
-[Rechercher un espace par un de ces critères](/en/docs/tutorials/surfaces/room/edit.md#rechercher-un-espace)
-
-## Recherche d'objet
-
--   Recherche par référence
--   Recherche par code d'immobilisation
--   Recherche par nom de poste de travail
--   Recherche par type d'objet
--   Recherche par association à personne
--   Recherche par identifiant
-
-[Rechercher un objet par un de ces critères](/en/docs/tutorials/objects/item/edit.md#rechercher-un-objet)
-
-## Recherche d'affectation
-
--   Recherche par nom ou prénom
--   Recherche par nom du poste de travail ou de l'espace d'affectation
--   Recherche par quartier d'affectation
+[Search for a person by one of these criteria](/en/docs/tutorials/person/edit.md#search-for-a-person)
 
 
-[Rechercher une affectation par un de ces critères](/en/docs/tutorials/affectations/intro.md#rechercher-une-affectation)
+## Space Search
+
+Space search can use several criteria:
+
+-   Search by space name
+-   Search by district name
+-   Search by person assignment
+-   Search by object
+-   Search by identifier
+
+[Search for a space by one of these criteria](/en/docs/tutorials/surfaces/room/edit.md#search-for-a-space)
+
+## Object Search
+
+-   Search by reference
+-   Search by asset code
+-   Search by workstation name
+-   Search by object type
+-   Search by association to person
+-   Search by identifier
+
+[Search for an object by one of these criteria](/en/docs/tutorials/objects/item/edit.md#search-for-an-object)
+
+## Assignment Search
+
+-   Search by name or first name
+-   Search by workstation name or assignment space
+-   Search by assignment district
+
+
+[Search for an assignment by one of these criteria](/en/docs/tutorials/affectations/intro.md#search-for-an-assignment)

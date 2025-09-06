@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 ---
-# Affichage des plans en 2D
+# Display Plans in 2D
 
 ## Visualiser un plan en 2D
 

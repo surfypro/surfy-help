@@ -2,15 +2,15 @@
 sidebar_position: 3
 ---
 
-# Certification "Gestionnaire des personnes"
+# "People Manager" Certification
 
-Durée de l'évaluation : 2 heures.
+Evaluation duration: 2 hours.
 
-La certification "Gestionnaire des personnes" implique la maîtrise de la création, qualification, modification, affectation (à un poste de travail, un espace, un quartier ou un bâtiment) des personnes, association (à un objet) des personnes manuellement ou par importation en masse, gestion de la hiérarchie entre personnes.
+The "People Manager" certification involves mastery of creation, qualification, modification, assignment (to a workstation, space, district or building) of people, association (to an object) of people manually or by bulk import, management of hierarchy between people.
 
-Elle inclut la gestion d'un fichier d'import pré-formaté ou la gestion de l'interconnexion au SIRH suivant les cas.
+It includes management of a pre-formatted import file or management of SIRH interconnection depending on the case.
 
-Le candidat crée et importe une liste de personnes avec les informations jointes, affecte les personnes et visualise les personnes affectées suivant leurs caractéristiques (profils sécurité, objets associés, hiérarchie,...) dans le temps imparti.
-Il attribue une organisation et un centre de coût à la personne après avoir entré la liste des organisations et des centres de coût utilisés.
+The candidate creates and imports a list of people with the attached information, assigns people and visualizes assigned people according to their characteristics (security profiles, associated objects, hierarchy,...) within the allotted time.
+They assign an organization and cost center to the person after entering the list of organizations and cost centers used.
 
-Le cours associé à la [gestion des personnes](/en/docs/courses/occupy/occupycourse#affectation-des-personnes)
+The course associated with [people management](/en/docs/courses/occupy/occupycourse#people-assignment)

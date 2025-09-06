@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
 ---
-# Certification "Expert"
+# "Expert" Certification
 
-La certification Expert comprend l'administration générale de la plateforme (Certification Administrateur), ainsi que les notions de configuration des comptes et accès, le recalibrage des plans et autres notions d'expertises. Merci de [nous contacter](https://www.surfy.pro/contact) pour accéder à la certification Expert.
+The Expert certification includes general platform administration (Administrator Certification), as well as account and access configuration concepts, plan recalibration and other expertise concepts. Please [contact us](https://www.surfy.pro/contact) to access the Expert certification.

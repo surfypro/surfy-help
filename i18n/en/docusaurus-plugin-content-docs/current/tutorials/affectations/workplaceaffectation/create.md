@@ -1,65 +1,65 @@
 ---
 sidebar_position: 1
 ---
-# Créer une Affectation à un poste de travail
+# Create a Workstation Assignment
 
-Les affectations aux postes de travail correspondent à des affectations fixes. On peut retrouver l'emplacement du poste de travail ou connaitre la personne affectée à un poste de travail choisi en faisant une recherche sur la personne ou sur le poste de travail ou l'espace.
+Workstation assignments correspond to fixed assignments. You can find the workstation location or know the person assigned to a chosen workstation by searching for the person or the workstation or space.
 
-L'affectation à un poste de travail se fait toujours à partir du poste de travail, auquel on peut affecter une ou plusieurs personnes.
+Workstation assignment is always done from the workstation, to which you can assign one or more people.
 
-## Affecter une personne à un poste de travail
+## Assign a Person to a Workstation
 
-Pour affecter une personne à un poste de travail,
+To assign a person to a workstation,
 
--   cliquer sur le poste de travail à affecter
--   dans la fiche du poste de travail à gauche, cliquer sur "Affecter une personne"
--   cliquer sur la personne dans la liste proposée
--   la personne est affectée au poste de travail.
--   Si la personne est déjà affectée par ailleurs, une fenêtre permet de choisir les affectations à supprimer.
+-   click on the workstation to assign
+-   in the workstation card on the left, click on "Assign a Person"
+-   click on the person in the proposed list
+-   the person is assigned to the workstation.
+-   If the person is already assigned elsewhere, a window allows you to choose which assignments to delete.
 
-Le nom de la personne affectée apparait sur la fiche du poste de travail et sur le plan en passant la souris sur le poste de travail. La liste des personnes affectées à un espace ou aux postes de travail de cet espace est disponible en cliquant dans l'espace concerné puis dans l'onglet "Affectations" de la fiche de l'espace.
+The assigned person's name appears on the workstation card and on the plan when hovering over the workstation. The list of people assigned to a space or to the workstations of that space is available by clicking in the concerned space then in the "Assignments" tab of the space card.
 
 
-:::tip Bon à savoir
-On peut afficher le nom des personnes affectées aux postes de travail en cliquant sur l'icone "Gérer les textes d'affichage des postes de travail" au dessus du plan et en sélectionnant les informations à afficher.
+:::tip Good to Know
+You can display the names of people assigned to workstations by clicking on the "Manage workstation display texts" icon above the plan and selecting the information to display.
 :::
 
 
-## Créer et affecter une personne à un poste de travail
+## Create and Assign a Person to a Workstation
 
-Si la personne à affecter n'est pas encore créée dans la base de données de Surfy, on peut la créer et l'affecter en un seul mouvement.
+If the person to assign is not yet created in the Surfy database, you can create and assign them in one move.
 
 <Youtube code="gqpkHBE_0Lw"/>
 
-Pour "créer et associer" une nouvelle personne,
+To "create and associate" a new person,
 
--   cliquer sur le poste de travail à affecter
--   dans la fiche du poste de travail à gauche, cliquer sur "Affecter une personne"
--   rechercher la personne
--   si la personne n'existe pas dans Surfy, cliquer sur "créer et associer une personne"
--   compléter la fiche de la personne
--   valider la création de la personne
--   la personne est créée et affectée au poste de travail.
+-   click on the workstation to assign
+-   in the workstation card on the left, click on "Assign a Person"
+-   search for the person
+-   if the person does not exist in Surfy, click on "create and associate a person"
+-   complete the person's card
+-   validate the person's creation
+-   the person is created and assigned to the workstation.
 
 
-## Affecter des personnes aux postes de travail par import Excel
+## Assign People to Workstations by Excel Import
 
-On peut affecter des personnes en masse en important le fichier Excel correspondant.
-Ce fichier doit être composé au minimum :
--   de l'identifiant de la personne à affecter
--   de l'identifiant du poste de travail de l'affectation
--   des bons en-têtes sur les colonnes à importer.
+You can assign people in bulk by importing the corresponding Excel file.
+This file must be composed at minimum of:
+-   the identifier of the person to assign
+-   the identifier of the assignment workstation
+-   the correct headers on the columns to import.
 
-Pour cela :
--	Sortir le fichier Excel « rapport des postes de travail » pour obtenir l’identifiant des postes de travail
--	Sortir la « liste des personnes » en Excel pour obtenir leur identifiant
--	Sortir le gabarit d’affectation des personnes à un postes de travail pour obtenir les en-têtes corrects pour la réimportation du fichier Excel
--	Remplir les colonnes «Identifiant Surfy (<P code="workplaceAffectation:person" />) » avec l’identifiant de la personne, et « Identifiant du poste de travail (<P code="workplaceAffectation:workplace" />) » avec l’identifiant du poste de travail.
--	Importer ces deux colonnes uniquement, dans « importer des affectations au poste de travail ».
+To do this:
+-	Export the Excel file "workstation report" to get workstation identifiers
+-	Export the "person list" in Excel to get their identifier
+-	Export the person to workstation assignment template to get the correct headers for Excel file re-import
+-	Fill the columns "Surfy Identifier (<P code="workplaceAffectation:person" />)" with the person's identifier, and "Workstation Identifier (<P code="workplaceAffectation:workplace" />)" with the workstation identifier.
+-	Import these two columns only, in "import workstation assignments".
 
 
 :::warning Attention
-Les nouvelles affectations créées par importation viennent s'ajouter aux affectations déjà présentes, sans proposition de suppression de ces affectations.
-Il faut donc veiller à supprimer toutes les affectations  obsolètes avant d'importer le fichier.
-Les affectations à conserver nécessitent de renseigner dans l'import l'"Identifiant de l'affectation" afin de ne pas créer un doublon d'affectation
+New assignments created by import are added to existing assignments, without proposing to delete these assignments.
+You must therefore ensure to delete all obsolete assignments before importing the file.
+Assignments to keep require filling in the "Assignment Identifier" in the import to avoid creating a duplicate assignment
  :::

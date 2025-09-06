@@ -2,85 +2,85 @@
 sidebar_position: 1
 ---
 
-# Certifications Surfy
+# Surfy Certifications
 
-Les Certifications Surfy permettent d'évaluer les utilisateurs dans leur maîtrise des fonctionnalités afin que Surfy valide officiellement leurs connaissances de l'outil.
+Surfy Certifications allow users to be evaluated in their mastery of features so that Surfy officially validates their knowledge of the tool.
 
-Merci de nous contacter pour une [demande de certification](https://www.surfy.pro/contact)
+Please contact us for a [certification request](https://www.surfy.pro/contact)
 
-Plusieurs niveaux de certification sont possibles:
+Several certification levels are possible:
 
-## Certification Intégrateur
+## Integrator Certification
 
-•	<strong>Objectif :</strong> Maîtriser la digitalisation des plans et la gestion du mobilier dans Surfy. 
+•	<strong>Objective:</strong> Master plan digitization and furniture management in Surfy. 
 
-•	<strong>Tutoriels recommandés :</strong>
+•	<strong>Recommended tutorials:</strong>
 
-    o	Digitalisation des espaces :
-
-
-        	Création et maintenance des plans.<br />
-        	Création et modification de cloisons et de passages.<br />
-        	Ajout d'informations telles que nomenclature, typologie des espaces, calques d'analyse, organisations, centres de coût.<br />
-        	Qualification des espaces par import en masse.<br />
-
-    o	Gestion du mobilier :
-
-        	Création de types d'objet à l'échelle et sous forme d'icône.<br />
-        	Création de types de poste de travail.<br />
-        	Placement et référencement des objets et postes de travail sur le plan.<br />
-        	Gestion de l'inventaire par familles de type d'objet.<br />
-        	Association d'objets à des personnes.<br />
-        	Import/export en masse des données liées au mobilier.<br />
+    o	Space digitization:
 
 
+        	Creation and maintenance of plans.<br />
+        	Creation and modification of partitions and passages.<br />
+        	Adding information such as nomenclature, space typology, analysis layers, organizations, cost centers.<br />
+        	Space qualification by bulk import.<br />
 
-## Certification Gestionnaire des personnes
+    o	Furniture management:
 
-•	<strong>Objectif :</strong> Gérer efficacement les données relatives aux personnes dans Surfy.
-
-•	<strong>Tutoriels recommandés :</strong>
-
-    	Création, qualification, modification et affectation des personnes à un poste de travail, espace, quartier ou bâtiment.<br />
-    	Association des personnes à des objets.<br />
-       Gestion de la hiérachie entre personnes.<br />
-    	Importation en masse des données relatives aux personnes.<br />
-    	Exploitation des données générées via des fichiers Excel.<br />
-
-
-## Certification Gestionnaire de la réservation
-
-•	<strong>Objectif :</strong> Maîtriser les fonctionnalités de réservation dans Surfy. 
-
-•	<strong>Tutoriels recommandés :</strong>
-
-    	Gestion des calques d'affectation (quartiers).<br />
-    	Qualification des postes de travail (flex, réservable).<br />
-    	Affectation des personnes à leur quartier ou bâtiment de réservation.<br />
-    	L'administrateur de planning.<br /> 
+        	Creation of object types to scale and in icon form.<br />
+        	Creation of workstation types.<br />
+        	Placement and referencing of objects and workstations on the plan.<br />
+        	Inventory management by object type families.<br />
+        	Association of objects to people.<br />
+        	Bulk import/export of furniture-related data.<br />
 
 
-## Certification Administrateur
 
-•	<strong>Objectif :</strong> Superviser l'ensemble des fonctionnalités de Surfy.
+## People Manager Certification
 
-•	<strong>Pré-requis :</strong> Obtention des certifications "Intégrateur", "Gestionnaire des personnes" et "Gestionnaire de la réservation". 
+•	<strong>Objective:</strong> Effectively manage data related to people in Surfy.
 
-•	<strong>Tutoriels recommandés :</strong>
+•	<strong>Recommended tutorials:</strong>
 
-    	Maîtrise de toutes les fonctionnalités décrites dans la Surfy Academy.
+    	Creation, qualification, modification and assignment of people to a workstation, space, district or building.<br />
+    	Association of people to objects.<br />
+       Management of hierarchy between people.<br />
+    	Bulk import of data related to people.<br />
+    	Exploitation of generated data via Excel files.<br />
 
 
-## Certification Expert
+## Booking Manager Certification
 
-•	<strong>Objectif :</strong> Approfondir les connaissances pour une utilisation avancée de Surfy.
+•	<strong>Objective:</strong> Master booking features in Surfy. 
 
-•	<strong>Pré-requis :</strong> Obtention de la certification "Administrateur".
+•	<strong>Recommended tutorials:</strong>
 
-•	<strong>Tutoriels recommandés :</strong>
+    	Management of assignment layers (districts).<br />
+    	Workstation qualification (flex, bookable).<br />
+    	Assignment of people to their booking district or building.<br />
+    	Planning administrator.<br /> 
 
-    	Configuration des comptes et des accès.<br />
-    	Recalibrage des plans.<br />
-    	Autres notions d'expertise avancée.<br />
+
+## Administrator Certification
+
+•	<strong>Objective:</strong> Supervise all Surfy features.
+
+•	<strong>Prerequisites:</strong> Obtaining "Integrator", "People Manager" and "Booking Manager" certifications. 
+
+•	<strong>Recommended tutorials:</strong>
+
+    	Mastery of all features described in the Surfy Academy.
+
+
+## Expert Certification
+
+•	<strong>Objective:</strong> Deepen knowledge for advanced use of Surfy.
+
+•	<strong>Prerequisites:</strong> Obtaining the "Administrator" certification.
+
+•	<strong>Recommended tutorials:</strong>
+
+    	Account and access configuration.<br />
+    	Plan recalibration.<br />
+    	Other advanced expertise concepts.<br />
 
 

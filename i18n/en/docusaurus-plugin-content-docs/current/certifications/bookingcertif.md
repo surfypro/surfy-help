@@ -2,8 +2,8 @@
 sidebar_position: 4
 ---
 
-# Certification "Gestionnaire de la réservation"
+# "Booking Manager" Certification
 
-La certification "Gestionnaire de la réservation" implique la maîtrise des calques d'affectation (quartiers), de la qualification des postes de travail (En flex, réservable), de l'affectation des personnes à leur quartier de réservation ou bâtiment ainsi que de la gestion des données et graphiques de réservation.
+The "Booking Manager" certification involves mastery of assignment layers (districts), workstation qualification (In flex, bookable), assignment of people to their booking district or building as well as management of booking data and charts.
 
-Le cours associé à la [réservation des postes de travail et des espaces](/en/docs/courses/occupy/occupycourse#mettre-en-place-laffectation-aux-quartiers)
+The course associated with [workstation and space booking](/en/docs/courses/occupy/occupycourse#setting-up-district-assignment)

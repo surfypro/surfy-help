@@ -2,38 +2,38 @@
 sidebar_position: 2
 ---
 
-# Rechercher dans les listes
+# Search in Lists
 
-Les listes constituent la base de données de Surfy et comprennent tous les éléments créés dans Surfy : Bâtiments, étages, espaces, typologies, calques et types de calque, centres de coût, types de distribution des coûts, objets et types d'objet, postes de travail et types de poste de travail, personnes, statuts, profils sécurité, relations, organisations, etc...
+Lists constitute Surfy's database and include all elements created in Surfy: Buildings, floors, spaces, typologies, layers and layer types, cost centers, cost distribution types, objects and object types, workstations and workstation types, people, statuses, security profiles, relationships, organizations, etc...
 
-Ces listes sont indépendantes des bâtiments et étages. Elles contiennent tous les éléments créés, mais ceux-ci ne sont pas forcément utilisés.
-Les listes sont accessibles depuis le menu à gauche de l'écran.
+These lists are independent of buildings and floors. They contain all created elements, but these are not necessarily used.
+Lists are accessible from the left menu of the screen.
 
-## Lister les données
+## List Data
 
-Pour lister les données à rechercher, depuis le menu de gauche,
--   afficher la liste correspondant à l'élément à rechercher (exemple: "Collaborateurs", "Personnes" puis "Lister les personnes")
+To list the data to search for, from the left menu,
+-   display the list corresponding to the element to search for (example: "Collaborators", "People" then "List People")
 
-## Sélectionner les propriétés à lister
+## Select Properties to List
 
-Une fois les éléments listés,
--   en haut à droite de l'écran, cliquer sur l'icône "Selectionner les propriétés que vous souhaitez afficher dans le tableau"
--   choisir les propriétés à ajouter en colonne dans la liste (exemple: email, portable, ...)
+Once elements are listed,
+-   at the top right of the screen, click on the "Select properties you want to display in the table" icon
+-   choose the properties to add as columns in the list (example: email, mobile, ...)
 
-## Filtrer les informations par critère sélectionné
+## Filter Information by Selected Criteria
 
-Une fois les colonnes de la liste sélectionnées,
--   en haut à droite de l'écran, cliquer sur l'icône "Filtrer les XXX" (exemple: Filtrer les personnes)
--   choisir la valeur à filtrer dans la case de la propriété correspondante
+Once list columns are selected,
+-   at the top right of the screen, click on the "Filter XXX" icon (example: Filter People)
+-   choose the value to filter in the corresponding property box
 
 :::warning ATTENTION
-Afin d'éviter des erreurs, il est important d' "Effacer tous les filtres" après un filtre de liste, afin de récupérer la liste entière pour une consultation ultérieure complète
+To avoid errors, it is important to "Clear all filters" after a list filter, in order to retrieve the entire list for complete future consultation
 :::
 
 
-## Exporter les données filtrées
+## Export Filtered Data
 
--   en haut à droite de l'écran, cliquer sur "Télécharger en Excel les XXX" (exemple: télécharger en Excel les personnes)
-La liste des éléments sélectionnés avec les propriétés listées est disponible en fichier Excel dans les téléchargements.
+-   at the top right of the screen, click on "Download XXX in Excel" (example: download people in Excel)
+The list of selected elements with the listed properties is available as an Excel file in downloads.
 
 

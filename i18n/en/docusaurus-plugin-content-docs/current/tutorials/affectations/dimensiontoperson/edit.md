@@ -1,54 +1,54 @@
 ---
 sidebar_position: 2
 ---
-# Modifier une Affectation à un quartier
+# Modify a District Assignment
 
-## Modification de l'affectation à un quartier d'une personne
+## Modifying a Person's District Assignment
 
-La manière la plus simple de modifier l'affectation à un quartier d'une personne dans Surfy est de supprimer son affectation au quartier puis de créer une nouvelle affectation, qu'elle soit à un quartier ou non.
-Pour déplacer une personne d'un quartier à un autre, voir les chapitres [Supprimer une affectation à un quartier](/en/docs/tutorials/affectations/dimensiontoperson/delete.md) et [Créer une affectation à un quartier](/en/docs/tutorials/affectations/dimensiontoperson/create.md).
-
-
-## Modification d'affectation à un quartier en masse par fichier Excel
-
-On peut modifier en masse des affectations à un quartier en changeant les personnes affectées dans un fichier Excel pour les remplacer par d'autres personnes à affecter au quartier. Cela revient à garder l'identifiant de l'affectation, mais à changer l'identifiant de la personne affectée :
-
-### Création du fichier Excel des affectations à un quartier
-
-On peut créer le fichier Excel comportant les affectations à modifier de différentes manières :
-
--   En générant le fichier "Rapport des personnes affectées dans le bâtiment XXX" : 
-
-    -   depuis la page d'accueil, cliquer sur l'icône au bout de la bande de couleur du bâtiment XXX
-    -   cliquer sur "Tableau de bord pour le bâtiment XXX"
-    -   cliquer sur l'icône de la ligne "Rapport des personnes affectées dans le bâtiment XXX" 
-    -   le fichier est téléchargé, l'onglet "AffecAuxCalquDAffec" contient les affectations aux calques d'affectation à modifier
-
--   En générant la liste filtrée des affectations à modifier :
-
-    -   dans le menu Liste à gauche de l'écran, cliquer sur "Affectations", "Affectations aux calques d'affectation" puis "Lister les affectations aux calques d'affectation"
-    -  filtrer la liste en fonction des calques et types de calque à l'aide de l'icône "Filtrer les affectations aux calques d'affectation", en haut à droite de l'écran
-    -  générer le fichier Excel de la liste obtenue, en cliquant sur l'icône "Télécharger en Excel les affectations aux calques d'affectation" en haut à droite de l'écran
-    -   le fichier est téléchargé et contient les affectations aux calques d'affectation de la liste filtrée.
+The simplest way to modify a person's district assignment in Surfy is to delete their assignment to the district then create a new assignment, whether to a district or not.
+To move a person from one district to another, see the chapters [Delete a District Assignment](/en/docs/tutorials/affectations/dimensiontoperson/delete.md) and [Create a District Assignment](/en/docs/tutorials/affectations/dimensiontoperson/create.md).
 
 
-### Modification des informations dans le fichier Excel
+## Bulk District Assignment Modification by Excel File
 
--   ouvrir le fichier Excel des affectations à modifier
--   remplacer le nom, prénom et identifiant des personnes affectées par le nom, le prénom et l'identifiant des personnes à affecter.
+You can modify district assignments in bulk by changing assigned people in an Excel file to replace them with other people to assign to the district. This amounts to keeping the assignment identifier, but changing the assigned person's identifier:
+
+### Creating the Excel File of District Assignments
+
+You can create the Excel file containing assignments to modify in different ways:
+
+-   By generating the "Report of people assigned in building XXX" file: 
+
+    -   from the home page, click on the icon at the end of the color band of building XXX
+    -   click on "Dashboard for building XXX"
+    -   click on the icon of the line "Report of people assigned in building XXX" 
+    -   the file is downloaded, the "AffecAuxCalquDAffec" tab contains the assignment layer assignments to modify
+
+-   By generating the filtered list of assignments to modify:
+
+    -   in the List menu on the left of the screen, click on "Assignments", "Assignment Layer Assignments" then "List Assignment Layer Assignments"
+    -  filter the list according to layers and layer types using the "Filter Assignment Layer Assignments" icon, at the top right of the screen
+    -  generate the Excel file of the obtained list, by clicking on the "Download Assignment Layer Assignments in Excel" icon at the top right of the screen
+    -   the file is downloaded and contains the assignment layer assignments from the filtered list.
 
 
-### Import du fichier Excel modifié
+### Modifying Information in the Excel File
 
-Préparation de l'importation,
+-   open the Excel file of assignments to modify
+-   replace the name, first name and identifier of assigned people with the name, first name and identifier of people to assign.
 
--   sélectionner les colonnes de l'identifiant de l'affectation et de l'identifiant de la personne
--   copier les deux colonnes avec leur en-tête
--   coller les deux colonnes dans une nouvelle feuille du fichier Excel afin d'avoir deux colonnes contigües
 
--   cliquer sur "Affectations", "Affectations aux calques d'affectation" puis "importer des affectations aux calques d'affectation"
--   coller les colonnes contigües dans la case centrale
--   cliquer sur "Comparer", Surfy propose les modifications à apporter
--   cliquer sur "Créer tout", ou cocher les cases désirées et cliquer sur "Créer"
--   les affectations ont été modifiées
+### Import of Modified Excel File
+
+Import preparation,
+
+-   select the columns of the assignment identifier and the person identifier
+-   copy the two columns with their header
+-   paste the two columns in a new sheet of the Excel file to have two contiguous columns
+
+-   click on "Assignments", "Assignment Layer Assignments" then "import assignment layer assignments"
+-   paste the contiguous columns in the center box
+-   click on "Compare", Surfy proposes the modifications to be made
+-   click on "Create All", or check the desired boxes and click on "Create"
+-   assignments have been modified
 
