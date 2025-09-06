@@ -2,75 +2,75 @@
 sidebar_position: 1
 ---
 
-# Créer un bâtiment
+# Create a Building
 
 <Youtube code="M26SIN2q0Mk"/>
 
-Pour créer un nouveau bâtiment à partir de la page d'accueil de Surfy,
+To create a new building from the Surfy home page,
 
--   cliquer sur le menu contextuel, puis sur "Créer un bâtiment".
--   indiquer les propriétés <P code="building:name" /> et <P code="building:color" /> pour son environnement. Ces deux propriétés sont obligatoires.
--   cliquer sur "valider la création" ou compléter les informations puis "valider la création".
--   ajouter la propriété <P code="building:address" /> du bâtiment permet de placer les bâtiments sur une carte pour une gestion multisite optimisée.
--   le "bâtiment de référence" est le bâtiment derrière lequel le nouveau bâtiment sera caché. Celui-ci sera considéré comme un scénario de son bâtiment de référence. Sans bâtiment de référence, le bâtiment sera en première page (page d'accueil) et sera considéré comme "bâtiment principal".
--   à la création d'un scénario, le "bâtiment de référence" par défaut est le bâtiment à partir duquel le scénario a été créé.
+-   click on the context menu, then on "Create a building".
+-   indicate the <P code="building:name" /> and <P code="building:color" /> properties for its environment. These two properties are mandatory.
+-   click on "validate creation" or complete the information then "validate creation".
+-   adding the building's <P code="building:address" /> property allows you to place buildings on a map for optimized multi-site management.
+-   the "reference building" is the building behind which the new building will be hidden. It will be considered as a scenario of its reference building. Without a reference building, the building will be on the first page (home page) and will be considered as "main building".
+-   when creating a scenario, the default "reference building" is the building from which the scenario was created.
 
-:::tip Le bâtiment de référence
-Le bâtiment de référence peut aussi être un bâtiment quelconque derrière lequel on positionne le bâtiment en question. Cela permet d'établir un classement sur plusieurs niveaux des différents projets. Les bâtiments visibles sur la page d'accueil sont les "bâtiments principaux" et les recherches peuvent en option sous la loupe ne s'exercer que sur ces seuls bâtiments.
+:::tip Reference Building
+The reference building can also be any building behind which you position the building in question. This allows you to establish a multi-level ranking of different projects. Buildings visible on the home page are "main buildings" and searches can optionally under the magnifying glass only be exercised on these buildings only.
 :::
 
-## Créer un scénario {#create-scenario} ##
+## Create a Scenario {#create-scenario} ##
 
-Créer un scénario dans Surfy c'est faire une copie partielle ou totale d'un bâtiment en vue d'un réaménagement, ou simplement pour effectuer une copie de sauvegarde.
+Creating a scenario in Surfy is making a partial or total copy of a building for a redevelopment, or simply to make a backup copy.
 
 <Youtube code="6o7F-9XlyqM"/>
 
-Pour créer un nouveau scénario, depuis la page d'accueil,
+To create a new scenario, from the home page,
 
--   cliquer sur l'icône en bas à droite de la fiche du bâtiment pour obtenir "les scénarios et projets du bâtiment XXX"
--   les fiches des scénarios existants apparaissent
--   cliquer sur "créer un nouveau scénario"
--   renseigner le <P code="building:name" /> du scénario à créer (exemple : projet 1, proposition réaménagement Compta, ...)
--   donner une <P code="building:color" /> différente de celle du bâtiment d'origine afin d'éviter des erreurs de bâtiment lors des modifications
--   on peut dupliquer ou non :
-        -   les postes de travail
-        -   les affectations
-        -   les objets
-        -   les organisations des espaces
-        -   les calques  d'analyse des espaces
--   sélectionner les étages à dupliquer
--   cliquer sur "Créer un scénario"
-
-
-Après copie du bâtiment, le nouveau scénario apparait sur la page des scénarios de son bâtiment d'origine.
-L'icône en bas à droite du bâtiment d'origine s'incrémente d'un scénario supplémentaire.
+-   click on the icon at the bottom right of the building card to get "scenarios and projects of building XXX"
+-   existing scenario cards appear
+-   click on "create a new scenario"
+-   fill in the <P code="building:name" /> of the scenario to create (example: project 1, accounting redevelopment proposal, ...)
+-   give a <P code="building:color" /> different from that of the original building to avoid building errors during modifications
+-   you can duplicate or not:
+        -   workstations
+        -   assignments
+        -   objects
+        -   space organizations
+        -   space analysis layers
+-   select the floors to duplicate
+-   click on "Create a scenario"
 
 
+After copying the building, the new scenario appears on the scenarios page of its original building.
+The icon at the bottom right of the original building increments by one additional scenario.
 
-## Déplacer le scénario
 
-On peut remonter le scénario sur la page d'accueil,
 
--   cliquer sur l'icône "crayon" en bas de la fiche du bâtiment pour "modifier le bâtiment XXX"
--   sur la ligne "Bâtiment d'origine", cliquer sur la croix pour "retirer le bâtiment"
--   sauvegarder la modification
+## Move the Scenario
 
-Le bâtiment scénario n'ayant plus de bâtiment d'origine, il se retrouve sur la page d'accueil, en "Bâtiment principal".
+You can move the scenario back to the home page,
 
-On peut placer n'importe quel bâtiment A derrière n'importe quel autre bâtiment B, depuis la fiche du bâtiment A,
+-   click on the "pencil" icon at the bottom of the building card to "modify building XXX"
+-   on the "Original Building" line, click on the cross to "remove the building"
+-   save the modification
 
--   cliquer sur l'icône "crayon" en bas de la fiche du bâtiment A pour "modifier le bâtiment A"
--   sur la ligne "Bâtiment d'origine", cliquer sur l'icône "crayon"  pour "changer le bâtiment"
--   choisir le "Bâtiment B"
--   sauvegarder la modification
+The scenario building no longer having an original building, it ends up on the home page, as "Main Building".
 
-Le bâtiment A est maintenant placé "derrière" le bâtiment B.
-Le bâtiment B incrémente le nombre de ses scénarios sur l'icône "les scénarios et projets du bâtiment B" en bas à droite de sa fiche.
+You can place any building A behind any other building B, from building A's card,
 
-On peut donc créer une arborescence des bâtiments en organisant ces bâtiments sur plusieurs niveaux.
+-   click on the "pencil" icon at the bottom of building A's card to "modify building A"
+-   on the "Original Building" line, click on the "pencil" icon to "change the building"
+-   choose "Building B"
+-   save the modification
 
-:::tip BON A SAVOIR
-Si le scénario a été créé depuis un bâtiment possédant un calque d'affectation, ce scénario n'intervient pas dans la possibilité de réserver un poste de travail tant qu'il reste en scénario derrière un bâtiment principal. Seuls les "bâtiments principaux" peuvent être accessibles à la réservation de poste de travail via un calque d'affectation.
-A l'inverse, déplacer sur la page d'accueil un scénario contenant un calque d'affectation issu de son bâtiment d'origine donne la possibilité de réserver sur les quartiers de ce bâtiment et risque de créer des confusions.
-Il faut dans ce cas retirer l'association de ce bâtiment au calque d'affectation correspondant afin qu'il n'intervienne pas dans la réservation sur le bâtiment principal.
+Building A is now placed "behind" building B.
+Building B increments the number of its scenarios on the "scenarios and projects of building B" icon at the bottom right of its card.
+
+You can therefore create a building tree by organizing these buildings on multiple levels.
+
+:::tip GOOD TO KNOW
+If the scenario was created from a building with an assignment layer, this scenario does not intervene in the possibility of booking a workstation as long as it remains as a scenario behind a main building. Only "main buildings" can be accessible for workstation booking via an assignment layer.
+Conversely, moving to the home page a scenario containing an assignment layer from its original building gives the possibility to book on the districts of this building and risks creating confusion.
+In this case, you must remove the association of this building to the corresponding assignment layer so that it does not intervene in booking on the main building.
 :::

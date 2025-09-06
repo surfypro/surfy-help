@@ -2,41 +2,41 @@
 sidebar_position: 2
 ---
 
-# Modifier un bâtiment
+# Modify a Building
 
-Les informations d'un bâtiment peuvent être modifiées en cliquant sur le crayon en bas de la fiche du bâtiment, ou sur l'icone en bout de ligne de couleur du bâtiment puis sur "modifier le bâtiment XXX". Les informations suivantes peuvent alors être complétées:
+Building information can be modified by clicking on the pencil at the bottom of the building card, or on the icon at the end of the building's color line then on "modify building XXX". The following information can then be completed:
 
--   <P code="building:name" /> du bâtiment : modifier le nom permet d'organiser ses bâtiments et scénarios
--   <P code="building:color" /> : la couleur du bâtiment permet de personnaliser son environnement et d'éviter de se tromper de bâtiment
+-   building's <P code="building:name" />: modifying the name allows you to organize your buildings and scenarios
+-   <P code="building:color" />: the building color allows you to personalize its environment and avoid mistaking buildings
 
-Les informations suivantes sont déclaratives et optionnelles :
--   Surface : renseigne la surface "officielle" occupée
--   Date du début du bail 
--   Date de fin du bail
--   Date d'achat du bâtiment
--   Documents associés : permet d'enregistrer des liens vers les documents associés
--   Photo du bâtiment : On peut ajouter une photo du bâtiment pour une vue simplifiée en mode Lecteur par exemple.
--   Nombre de places de parking
--   Année de construction de l'immeuble
--   Charges annuelles
+The following information is declarative and optional:
+-   Surface: indicates the "official" occupied surface
+-   Lease start date 
+-   Lease end date
+-   Building purchase date
+-   Associated documents: allows you to record links to associated documents
+-   Building photo: You can add a building photo for a simplified view in Reader mode for example.
+-   Number of parking spaces
+-   Building construction year
+-   Annual charges
 -   Loyer annuel
--   Loyer annuel des parkings
--   Montant des taxes annuelles
--   Charges d'exploitation annuelles
--   Indice de référence des loyers
--   Dépôt de garantie
+-   Annual parking rent
+-   Annual tax amount
+-   Annual operating charges
+-   Rent reference index
+-   Security deposit
 
 
--   <P code="building:address" /> : permet de visualiser les bâtiments sur une carte et d'y accéder directement via cette carte.
--   Type de bâtiment : locataire ou propriétaire, les informations à renseigner seront différentes.
--   Utilisateur propriétaire du bâtiment : par défaut, permet de connaitre la personne ayant créé le bâtiment.
--   Vision du plan par défaut : on peut choisir une vision pré programmée par défaut pour l'accès aux plans.
--   Campus : permet d'associer ou de retirer l'association d'un bâtiment à un campus.
--   Bâtiment d'origine : permet d'organiser les scénarios, en les "cachant" derrière leur "bâtiment d'origine". En l'absence de "bâtiment d'origine", le bâtiment concerné est présent sur la page d'accueil et devient un "Bâtiment principal". Les scénarios sont accessibles en cliquant sur l'icône en bas à droite de la fiche du bâtiment d'origine.
--   Cliquer sur "sauvegarder" pour enregistrer les modifications du bâtiment.
+-   <P code="building:address" />: allows you to visualize buildings on a map and access them directly via this map.
+-   Building type: tenant or owner, the information to fill in will be different.
+-   Building owner user: by default, allows you to know the person who created the building.
+-   Default plan view: you can choose a pre-programmed default view for plan access.
+-   Campus: allows you to associate or remove the association of a building to a campus.
+-   Original Building: allows you to organize scenarios, by "hiding" them behind their "original building". In the absence of an "original building", the concerned building is present on the home page and becomes a "Main Building". Scenarios are accessible by clicking on the icon at the bottom right of the original building's card.
+-   Click on "save" to record the building modifications.
 
-:::tip Bon à savoir
-On peut créer plusieurs niveaux de scénarios en organisant des "scénarios de scénarios de scénarios etc...", et créer ainsi une arborescence des projets.
+:::tip Good to Know
+You can create multiple levels of scenarios by organizing "scenarios of scenarios of scenarios etc...", and thus create a project tree.
 :::
 
 

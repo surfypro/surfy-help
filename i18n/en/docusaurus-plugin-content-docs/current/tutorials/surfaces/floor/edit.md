@@ -2,24 +2,24 @@
 sidebar_position: 2
 ---
 
-# Modifier un étage
+# Modify a Floor
 
 <Youtube code="yw4XtiZNnu8"/>
 
-Pour modifier les informations de l'étage et importer le fond de plan,
+To modify floor information and import the plan background,
 
 
-## Modifier les informations de l'étage
+## Modify Floor Information
 
--   accéder à l'étage concerné
--   dans le menu contextuel, cliquer sur "modifier l'étage XXX"
+-   access the concerned floor
+-   in the context menu, click on "modify floor XXX"
 
-Les informations peuvent être renseignées ou modifiées :
+Information can be filled in or modified:
 
--   modifier le <P code="floor:name" /> de l'étage et son <P code="floor:level" /> par rapport aux autres étages
--   renseigner une "hauteur sous plafond" utile pour la vue 3D de l'étage
--   renseigner la "capacité réglementaire" éventuelle en fonction de critères imposés (nombre de sanitaires, ...). Les capacités réglementaires seront cumulées sur l'ensemble du bâtiment pour donner une capacité réglementaire globale sur le bâtiment.
--   donner une opacité du fond de plan permettant d'obtenir un fond de plan plus ou moins apparent
+-   modify the floor's <P code="floor:name" /> and its <P code="floor:level" /> relative to other floors
+-   fill in a "ceiling height" useful for the floor's 3D view
+-   fill in the possible "regulatory capacity" according to imposed criteria (number of restrooms, ...). Regulatory capacities will be cumulated on the entire building to give a global regulatory capacity on the building.
+-   give a plan background opacity allowing you to get a more or less apparent plan background
 -   choisir le bâtiment d'appartenance de l'étage en cliquant sur le crayon de la ligne "Bâtiment"
 -   choisir une échelle déjà créée sur un autre étage, dans le cas où les échelles sont identiques
 -   donner une "structure" au bâtiment afin de délimiter correctement les espaces en vue 3D.
@@ -44,8 +44,8 @@ On peut permuter deux étages entre deux bâtiments, et garder ainsi son ancien 
 
 ## Importer le fond de plan
 
--   accéder à l'étage concerné
--   dans le menu contextuel, cliquer sur "modifier l'étage XXX"
+-   access the concerned floor
+-   in the context menu, click on "modify floor XXX"
 -   cliquer sur "changer l'image" afin d'importer le fichier PNG du fond de plan de l'étage.
 -   charger l'image du fond de plan et cliquer sur "skip" pour éviter le recadrage de l'image.
 -   "sauvegarder" les modifications de l'étage.

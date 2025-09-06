@@ -2,11 +2,11 @@
 sidebar_position: 3
 ---
 
- # Supprimer un bâtiment
+ # Delete a Building
 
 :::danger Attention: 
-La suppression de bâtiment implique la suppression de tous les étages, espaces, mobilier et de toutes les affectations de personnes dans le bâtiment. Il n'y a pas de retour en arrière (Undo) possible dans Surfy et ces informations seront perdues.
+Building deletion involves the deletion of all floors, spaces, furniture and all person assignments in the building. There is no undo possible in Surfy and this information will be lost.
 :::
-Pour supprimer un bâtiment, depuis la page d'accueil cliquer sur l'icone en bout de ligne de couleur du bâtiment, puis cliquer sur "supprimer le bâtiment XXX". Une double confirmation de suppression est demandée.
+To delete a building, from the home page click on the icon at the end of the building's color line, then click on "delete building XXX". A double deletion confirmation is requested.
 
-La suppression de bâtiment conserve les scénarios, qui remontent d'un niveau hiérarchique.
+Building deletion preserves scenarios, which move up one hierarchical level.
