@@ -3,44 +3,44 @@ sidebar_position: 2
 ---
 
 
-# Créer un espace
+# Create a Space
 
 
 <Youtube code="9A0XQaxj6hA"/>
 
-Pour créer un espace (ou pièce) sur un étage qui a déjà son fond de plan et son échelle :
+To create a space (or room) on a floor that already has its plan background and scale:
 
--   depuis le plan de l'étage, cliquer sur le plan pour faire apparaître les icônes dans la zone située au dessus du plan
--   choisir d' "activer le mode édition du plan" en cliquant sur l'icône "crayon".
--   cliquer sur l'icône "Ajouter un espace" permet d'avoir une croix indiquant l'horizontalité et la verticalité afin de faciliter le placement correct des sommets de l'espace à créer.
+-   from the floor plan, click on the plan to make icons appear in the area above the plan
+-   choose to "activate plan editing mode" by clicking on the "pencil" icon.
+-   clicking on the "Add a space" icon allows you to have a cross indicating horizontality and verticality to facilitate correct placement of the vertices of the space to create.
 
 :::warning Attention
-L'icône "Ajouter un espace" n'apparait que si aucun espace ni aucun objet n'est sélectionné (pour cela, cliquer sur une zone non digitalisée du plan), et que l'icône "Activer le mode édition du plan" est activée.
+The "Add a space" icon only appears if no space or object is selected (for this, click on a non-digitized area of the plan), and the "Activate plan editing mode" icon is activated.
 :::
 
 
--   cliquer pour créer le premier sommet de l'espace. La possibilité d'avoir un trait horizontal, à 45 degrés ou vertical est annulée en appuyant sur la touche "Shift", permettant de libérer complètement l'emplacement de création du sommet suivant.
--   en zoomant et dézoomant, placer la souris à l'endroit désiré et cliquer pour créer le deuxième sommet.
--   de même, cliquer pour créer le troisième sommet. Surfy propose de clore l'espace ou de continuer à créer des sommets.
--   pour clore l'espace, cliquer pour créer le dernier sommet puis sur l'icone "disquette" au dessus du plan pour "sauvegarder l'espace en cours".
--   l'espace est créé et la fiche de l'espace indique sa surface et son périmètre.
+-   click to create the first vertex of the space. The possibility of having a horizontal, 45-degree or vertical line is canceled by pressing the "Shift" key, allowing you to completely free the creation location of the next vertex.
+-   by zooming in and out, place the mouse at the desired location and click to create the second vertex.
+-   similarly, click to create the third vertex. Surfy offers to close the space or continue creating vertices.
+-   to close the space, click to create the last vertex then on the "disk" icon above the plan to "save the current space".
+-   the space is created and the space card indicates its surface and perimeter.
 
-## Créer des espaces contigus
+## Create Contiguous Spaces
 
-Créer le plan d'un étage implique une certaine continuité entre les espaces. Par exemple entre un bureau fermé et la circulation, ou entre un espace ouvert et la circulation.<br />
-Pour assurer cette continuité et créer une "toile d'araignée" plutôt qu'une suite d'espaces indépendants, il est nécessaire de créer des segments communs aux espaces contigus.
+Creating a floor plan involves some continuity between spaces. For example between a closed office and circulation, or between an open space and circulation.<br />
+To ensure this continuity and create a "spider web" rather than a series of independent spaces, it is necessary to create common segments for contiguous spaces.
 
-Pour créer un segment commun à deux espaces, il faut fusionner un sommet de l'espace A avec un sommet de l'espace B, de chaque coté du segment à rendre commun. Une fois que les sommets de part et d'autre du segment sont communs, le segment est commun et se colorie en rouge.<br />
-On peut alors qualifier le segment commun en "Porte" ou "sans cloison".
+To create a common segment between two spaces, you must merge a vertex of space A with a vertex of space B, on each side of the segment to be made common. Once the vertices on either side of the segment are common, the segment is common and turns red.<br />
+You can then qualify the common segment as "Door" or "without partition".
 
-Les portes sont matérialisées sur la vue 2D des plans, avec leur sens d'ouverture et débattement. Les passages sont représentés en pointillés.
-Les portes et passages sont également visualisés dans la vue 3D de l'étage ou du bâtiment.
+Doors are materialized on the 2D view of plans, with their opening direction and swing. Passages are represented by dotted lines.
+Doors and passages are also visualized in the 3D view of the floor or building.
 
-Plus d'informations sur la [création d'un segment commun à deux espaces](/en/docs/tutorials/surfaces/doors/create#création-dun-segment-commun-à-deux-espaces)
-et sur la [création de portes et passages](/en/docs/tutorials/surfaces/doors/create#qualification-dun-segment-commun-en-porte-ou-passage).
+More information on [creating a common segment between two spaces](/en/docs/tutorials/surfaces/doors/create#creating-a-common-segment-between-two-spaces)
+and on [creating doors and passages](/en/docs/tutorials/surfaces/doors/create#qualifying-a-common-segment-as-door-or-passage).
 
-Une fois les segments communs créés et qualifiés en portes ou passages, l'itinéraire peut être utilisé pour tracer le déplacement sur le plan et obtenir le temps et la distance à parcourir entre le point de départ et le point d'arrivée.<br />
-Plus d'informations sur la [création d'un itinéraire](/en/docs/tutorials/surfaces/pathfinding/create)
+Once common segments are created and qualified as doors or passages, the route can be used to trace movement on the plan and get the time and distance to travel between the starting point and the arrival point.<br />
+More information on [creating a route](/en/docs/tutorials/surfaces/pathfinding/create)
 
 
 
@@ -48,7 +48,7 @@ Plus d'informations sur la [création d'un itinéraire](/en/docs/tutorials/surfa
 
 Pour créer des espaces reliés par des segments communs,
 
--   depuis le plan de l'étage, cliquer sur le plan pour faire apparaître les icônes dans la zone située au dessus du plan
+-   from the floor plan, click on the plan to make icons appear in the area above the plan
 -   "activer le mode édition du plan" en cliquant sur l'icône "crayon".
 -   créer le premier espace en ayant soin de créer des sommets aux endroits de jonction avec le deuxième espace. En cas d'oubli, ces sommets peuvent être créés postérieurement.
 -   créer le deuxième espace. A la jonction entre les deux espaces, maintenir la touche "alt" enfoncée.

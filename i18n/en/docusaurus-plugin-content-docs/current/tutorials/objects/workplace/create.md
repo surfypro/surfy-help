@@ -1,93 +1,93 @@
 ---
 sidebar_position: 1
 ---
-# Créer un Poste de travail
+# Create a Workstation
 
-## Qu'est ce qu'un poste de travail ?
+## What is a Workstation?
 
-Un poste de travail est un groupe d'objets à qui on peut attribuer des qualifications particulières :
+A workstation is a group of objects to which particular qualifications can be assigned:
 
--   déclaration en poste Flex, de passage, réservable en fonction de la destination du poste de travail
--   [affectation d'un collaborateur](/en/docs/tutorials/affectations/workplaceaffectation/create.md#affecter-une-personne-à-un-poste-de-travail) si le poste n'est pas déclaré en Flex ou de passage
--   [rattachement à un Service](/en/docs/tutorials/organization/create.md#rattacher-un-service-à-un-poste-de-travail)
--   [rattachement à un centre de coût](/en/docs/tutorials/costcenter/create.md#attribuer-un-centre-de-coût-à-un-poste-de-travail)
--   colorisation des postes en fonction de leur [état d'utilisation](/en/docs/courses/views/2Dviews.md#afficher-létat-des-postes-de-travail-sur-le-plan)
--   colorisation des postes en fonction du [profil sécurité](/en/docs/courses/views/2Dviews.md#afficher-les-profils-sécurité-sur-le-plan) de la personne affectée au poste
--   colorisation en fonction de leur [centre de coût](/en/docs/tutorials/cost-distribution-by-cost-center/create.md#visualiser-les-centres-de-coût-sur-le-plan)
+-   declaration as Flex workstation, passing, bookable according to the workstation destination
+-   [assignment of a collaborator](/en/docs/tutorials/affectations/workplaceaffectation/create.md#assign-a-person-to-a-workstation) if the workstation is not declared as Flex or passing
+-   [attachment to a Service](/en/docs/tutorials/organization/create.md#attach-a-service-to-a-workstation)
+-   [attachment to a cost center](/en/docs/tutorials/costcenter/create.md#assign-a-cost-center-to-a-workstation)
+-   coloring of workstations according to their [usage state](/en/docs/courses/views/2Dviews.md#display-workstation-status-on-plan)
+-   coloring of workstations according to the [security profile](/en/docs/courses/views/2Dviews.md#display-security-profiles-on-plans) of the person assigned to the workstation
+-   coloring according to their [cost center](/en/docs/tutorials/cost-distribution-by-cost-center/create.md#visualize-cost-centers-on-plan)
 
-Sur la fiche du bâtiment, de l'étage, de l'espace ou de tout regroupement d'espaces, les postes de travail sont comptabilisés suivant leur état.
-Les postes de travail peuvent être comptabilisés en places assises lors de la [composition du type de poste de travail](/en/docs/tutorials/objects/workplacetype/create.md#composer-le-type-de-poste-de-travail)
+On the building, floor, space or any space grouping card, workstations are counted according to their state.
+Workstations can be counted as seats during [workstation type composition](/en/docs/tutorials/objects/workplacetype/create.md#compose-workstation-type)
 
-Le nombre de postes de travail permet notamment de calculer les ratios et les taux d'occupation sur tout regroupement d'espaces.
+The number of workstations allows you to calculate ratios and occupancy rates on any space grouping.
 
-Dans le [rapport de l'inventaire en fichier Excel](/en/docs/tutorials/BuildingData/Buildingdashboard/Buildingreporting.md#rapport-de-linventaire-du-bâtiment), les objets composant le poste de travail sont comptabilisés dans les onglets "Postes de travail" et "Fusion".
+In the [inventory report in Excel file](/en/docs/tutorials/BuildingData/Buildingdashboard/Buildingreporting.md#building-inventory-report), objects composing the workstation are counted in the "Workstations" and "Merge" tabs.
 
 
 <Youtube code="tho373GPmY8"/>
  
 
- ## Ajouter un poste de travail à l'espace
+ ## Add a Workstation to the Space
 
 
-Pour ajouter un poste de travail dans un espace, il faut que le type de poste de travail correspondant ait été créé.
+To add a workstation in a space, the corresponding workstation type must have been created.
 
-Pour cela, voir le chapitre [création de type de poste de travail](/en/docs/tutorials/objects/workplacetype/create.md)
+For this, see the chapter [workstation type creation](/en/docs/tutorials/objects/workplacetype/create.md)
 
-Si le type de poste de travail existe,
+If the workstation type exists,
 
--   cliquer dans l'espace concerné par l'ajout du poste de travail.
--   cliquer sur l'icône "ajouter un poste de travail" à droite de la touche "Modifier"
--   rechercher le type du poste de travail à ajouter
--   Cliquer sur le type de poste de travail choisi
--   le poste de travail créé est disponible au bout de la souris et prêt à être déposé en cliquant sur le plan.
+-   click in the space concerned by adding the workstation.
+-   click on the "add a workstation" icon to the right of the "Modify" button
+-   search for the workstation type to add
+-   Click on the chosen workstation type
+-   the created workstation is available at the end of the mouse and ready to be dropped by clicking on the plan.
 
-Le poste de travail créé est "libre" par défaut, il peut être nommé, qualifié et affecté.
+The created workstation is "free" by default, it can be named, qualified and assigned.
 
-:::tip Bon à savoir
-Le poste de travail appartient à l'espace depuis lequel il a été demandé. S'il n'est pas déposé dans l'espace où il a été demandé, une fenêtre de "validation du choix des espaces" permet de réattribuer le poste de travail à l'espace où il a été déposé en cliquant sur "Appliquer le changement d'espace".
+:::tip Good to Know
+The workstation belongs to the space from which it was requested. If it is not dropped in the space where it was requested, a "space choice validation" window allows you to reassign the workstation to the space where it was dropped by clicking on "Apply space change".
 :::
 
-Pour déplacer le poste de travail ou lui faire faire une rotation,
+To move the workstation or make it rotate,
 
--   passer en mode "édition du plan" en cliquant sur l'icone "crayon" au dessus du plan
--   en cliquant sur le poste de travail, une roue apparait qui permet de tourner le poste de travail par pas de 45°, ou de manière plus lisse en appuyant sur SHIFT.
--   La touche carrée bleue permet de repositionner le poste de travail dans sa position originale
+-   switch to "plan editing mode" by clicking on the "pencil" icon above the plan
+-   by clicking on the workstation, a wheel appears that allows you to rotate the workstation by 45° steps, or more smoothly by pressing SHIFT.
+-   The blue square button allows you to reposition the workstation in its original position
 
-:::tip Bon à savoir
-cliquer sur l'icone "activer la transparence des couleurs de fond des espaces" au dessus du plan permet de voir le fond de plan en transparence afin de pouvoir placer dans Surfy le mobilier présent sur le fond de plan.
+:::tip Good to Know
+clicking on the "activate transparency of space background colors" icon above the plan allows you to see the plan background in transparency to be able to place in Surfy the furniture present on the plan background.
 :::
 
-## Dupliquer un poste de travail ou un groupe de postes de travail
+## Duplicate a Workstation or a Group of Workstations
 
 <Youtube code="zUIgR14paWY"/>
 
-On peut dupliquer facilement et rapidement un poste de travail ou un groupe de postes de travail dans Surfy.
+You can easily and quickly duplicate a workstation or a group of workstations in Surfy.
 
-### Dupliquer un poste de travail
+### Duplicate a Workstation
 
--   "Activer le mode édition du plan" en cliquant sur l'icône "crayon" au dessus du plan
--   cliquer sur le poste de travail à dupliquer et appuyer simultanément sur la touche "shift" (majuscule) et la touche "C" 
--   le poste de travail dupliqué est au bout de la souris. Il conserve l'orientation du poste de travail initial
--   cliquer sur le plan à l'endroit de dépot de le poste de travail dupliqué
+-   "Activate plan editing mode" by clicking on the "pencil" icon above the plan
+-   click on the workstation to duplicate and simultaneously press the "shift" (uppercase) key and the "C" key 
+-   the duplicated workstation is at the end of the mouse. It retains the orientation of the initial workstation
+-   click on the plan at the drop location of the duplicated workstation
 
 
-:::tip Bon à savoir: le "shift + C"
-Cette fonctionnalité permet, en pointant la souris directement à la position des postes de travail à créer, de les dupliquer avec un simple raccourci clavier ("shift" enfoncé, taper "C") et de les déposer en cliquant. Le nouveau poste de travail ou groupe de postes de travail est maintenant sélectionné, et prêt pour une nouvelle duplication par "shift+C".
+:::tip Good to Know: "shift + C"
+This feature allows, by pointing the mouse directly at the position of workstations to create, to duplicate them with a simple keyboard shortcut ("shift" pressed, type "C") and drop them by clicking. The new workstation or group of workstations is now selected, and ready for a new duplication by "shift+C".
 :::
 
-### Dupliquer un groupe de postes de travail
+### Duplicate a Group of Workstations
 
--   "Activer le mode édition du plan" en cliquant sur l'icône "crayon" au dessus du plan
--   cliquer sur un des postes de travail à dupliquer puis sur les autres en maintenant la touche "shift" enfoncée
--   une zone de sélection englobant les postes de travail à dupliquer est délimitée, les postes de travail à dupliquer sont sélectionnés.
+-   "Activate plan editing mode" by clicking on the "pencil" icon above the plan
+-   click on one of the workstations to duplicate then on the others while holding the "shift" key
+-   a selection area encompassing the workstations to duplicate is delimited, the workstations to duplicate are selected.
 
-Pour "copier" les postes de travail, plusieurs options sont possibles:
+To "copy" workstations, several options are possible:
 
--   en cliquant sur l'icône "copier" de la zone de sélection
--   en cliquant sur l'icône "Dupliquer les formes" au dessus du plan
--   en appuyant simultanément sur la touche "shift" (majuscule) et la touche "C"
+-   by clicking on the "copy" icon of the selection area
+-   by clicking on the "Duplicate shapes" icon above the plan
+-   by simultaneously pressing the "shift" (uppercase) key and the "C" key
 
-Les postes de travail dupliqués sont au bout de la souris, prêts à être déposés en cliquant sur le plan.
+The duplicated workstations are at the end of the mouse, ready to be dropped by clicking on the plan.
 
-Les postes de travail dupliqués conservent l'orientation et le positionnement relatif du groupe de postes de travail initial.
+The duplicated workstations retain the orientation and relative positioning of the initial workstation group.
 

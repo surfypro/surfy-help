@@ -2,14 +2,14 @@
 sidebar_position: 3
 ---
 
-# Supprimer un étage
+# Delete a Floor
 
 :::danger Attention 
-La suppression de l'étage implique la suppression de tous les espaces, mobilier et de toutes les affectations de personnes dans l'étage. Il n'y a pas de retour en arrière (Undo) possible dans Surfy et ces informations seront perdues.
+Floor deletion involves the deletion of all spaces, furniture and all person assignments in the floor. There is no undo possible in Surfy and this information will be lost.
 :::
-Pour supprimer un étage, 
--   accéder à l'étage
--   dans le menu contextuel, cliquer sur "modifier l'étage XXX"
--   cliquer sur l'icone "poubelle" en haut à droite de l'écran : "supprimer l'étage XXX".
+To delete a floor, 
+-   access the floor
+-   in the context menu, click on "modify floor XXX"
+-   click on the "trash" icon at the top right of the screen: "delete floor XXX".
 
- Une double confirmation de suppression est demandée. La suppression est définitive.
+ A double deletion confirmation is requested. The deletion is final.
