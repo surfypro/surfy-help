@@ -1,80 +1,80 @@
 ---
 sidebar_position: 1
 ---
-# Créer une Personne
+# Create a Person
 
 
-## Créer une personne
+## Create a Person
 
 <Youtube code="eBXD7Atx9Dg"/>
 
-Pour créer une personne dans Surfy à partir de la page d'accueil,
--   cliquer sur "collaborateurs", "personnes" puis sur "créer une personne". 
--   renseigner <P code="person:lastname" /> et <P code="person:firstname" />, ces deux propriétés sont obligatoires.
--   "valider" la création, ou compléter les informations éventuelles : 
+To create a person in Surfy from the home page,
+-   click on "collaborators", "people" then on "create a person". 
+-   fill in <P code="person:lastname" /> and <P code="person:firstname" />, these two properties are mandatory.
+-   "validate" the creation, or complete the optional information: 
         -   <P code="person:email" />, <P code="person:picture" />, <P code="person:title" />, <P code="person:monitorReference" />, <P code="person:computerReference" />, <P code="person:telephone" />, <P code="person:cellphone" />, <P code="person:code" />, <P code="person:startDate" />, <P code="person:endDate" />, <P code="person:info" />
-        -   la propriété <P code="person:notAffectable" /> permet de qualifier les personnes ne pouvant être affectées, personnes en congé maternité ou en congé longue durée
-        -   indiquer <P code="person:organization" /> à partir de la liste des organisations déjà créées
-        -   renseigner <P code="person:personState" />, <P code="person:personSecurityProfile" />, <P code="person:costCenter" />, et éventuellement l'Entreprise de la personne pour les prestataires.
-        -   valider la création.
+        -   the <P code="person:notAffectable" /> property allows you to qualify people who cannot be assigned, people on maternity leave or long-term leave
+        -   indicate <P code="person:organization" /> from the list of already created organizations
+        -   fill in <P code="person:personState" />, <P code="person:personSecurityProfile" />, <P code="person:costCenter" />, and optionally the person's Company for service providers.
+        -   validate the creation.
 
-:::tip Bon à savoir
- Dans le menu contextuel, "lister les personnes" permet d'obtenir la liste des personnes déjà entrées dans la base de données. La première personne de la liste est la dernière personne entrée dans la base.
+:::tip Good to Know
+ In the context menu, "list people" allows you to get the list of people already entered in the database. The first person in the list is the last person entered in the database.
  :::
 
 
-## Clé d'identification
+## Identification Key
 
-Afin de créer correctement les personnes dans Surfy et d'éviter les doublons, une clé d'identification est nécessaire. Elle permet de retrouver les personnes en évitant d'utiliser leur prénom et nom, sujets à erreurs.
+In order to correctly create people in Surfy and avoid duplicates, an identification key is necessary. It allows you to find people without using their first and last names, which are prone to errors.
 
-Différentes clés sont possibles :
+Different keys are possible:
 
--   le matricule de la personne est la première clé fiable à utiliser.
--   l'email est aussi un champ unique et peut être utilisée comme clé d'identification de la personne
--   le "nom complet" peut toutefois être utilisé dans le cas d'une nomenclature maitrisée (orthographe et casse)
--   l'identifiant Surfy unique délivré par Surfy, disponible depuis un export des personnes une fois les personnes créées dans Surfy.
+-   the person's employee number is the first reliable key to use.
+-   email is also a unique field and can be used as the person's identification key
+-   the "full name" can however be used in the case of a controlled nomenclature (spelling and case)
+-   the unique Surfy identifier delivered by Surfy, available from a people export once people are created in Surfy.
 
-L'identifiant Surfy est la clé d'identification de chaque entité dans Surfy. Il est attribué par Surfy et est unique.
-Chaque personne a un identifiant unique qui permet d'identifier la personne lors d'un export puis d'un réimport de données.
+The Surfy identifier is the identification key of each entity in Surfy. It is assigned by Surfy and is unique.
+Each person has a unique identifier that allows you to identify the person during an export then a data re-import.
 
 
-## Importer des personnes 
+## Import People 
 
 <Youtube code="J-SiqS2Wq8I"/>
 
-On peut importer des personnes en masse dans Surfy via Excel.
+You can import people in bulk into Surfy via Excel.
 
--   à partir de la page d'accueil, cliquer sur "collaborateurs", "personnes", "importer des personnes".
--   l'"aide sur l'import des données pour les personnes", en haut à droite de l'écran permet de "télécharger le gabarit d'import"
--   le fichier téléchargé comprend toutes les colonnes nécessaires à l'import dans Surfy : le prénom, le nom de famille, l'email, le titre, la référence écran, référence ordinateur, téléphone fixe, portable, matricule, et toutes informations possibles à importer.
+-   from the home page, click on "collaborators", "people", "import people".
+-   the "help on data import for people", at the top right of the screen allows you to "download the import template"
+-   the downloaded file includes all columns necessary for import in Surfy: first name, last name, email, title, screen reference, computer reference, landline, mobile, employee number, and all possible information to import.
 
-:::tip Bon à savoir
-La colonne A "Identifiant Surfy" n'est pas à renseigner. L'identifiant est attribué par Surfy, il est unique, non modifiable et devient la véritable identité de la personne dans la base de données de Surfy.
+:::tip Good to Know
+Column A "Surfy Identifier" is not to be filled in. The identifier is assigned by Surfy, it is unique, non-modifiable and becomes the true identity of the person in the Surfy database.
 :::
 
--   sélectionner uniquement les colonnes qui ont été remplies et les copier/coller dans une nouvelle feuille du fichier Excel. Les colonnes utilisées doivent être adjacentes.
- -  sélectionner l'ensemble avec "ctrl A", copier avec "ctrl C"
- -  dans la fenêtre d'import des personnes dans Surfy, coller les informations avec "ctrl V"
- -  "comparer" les informations du fichier avec la base de Surfy permet de détecter les personnes qui seront créées.
- -  créer l'ensemble des personnes dans Surfy, en cliquant sur "Tout créer".
- -  les personnes sont importées dans la base de données de Surfy.
+-   select only the columns that have been filled and copy/paste them into a new sheet of the Excel file. The columns used must be adjacent.
+ -  select all with "ctrl A", copy with "ctrl C"
+ -  in the people import window in Surfy, paste the information with "ctrl V"
+ -  "compare" the file information with the Surfy database to detect people who will be created.
+ -  create all people in Surfy, by clicking on "Create All".
+ -  people are imported into the Surfy database.
 
 
-L'"aide à l'import des données pour les personnes" permet aussi de choisir les propriétés à importer grace à l'icône "copier" en face de chaque propriété :
+The "help on data import for people" also allows you to choose properties to import thanks to the "copy" icon next to each property:
  
--   copier chaque propriété désirée pour l'importation
--   coller chaque propriété en têtes de colonne d'un fichier Excel vierge
--   remplir les lignes avec les informations à importer.
--   sélectionner uniquement les colonnes qui ont été remplies et les copier/coller dans une nouvelle feuille du fichier Excel afin que les colonnes utilisées soient adjacentes.
- -  sélectionner l'ensemble avec "ctrl A", copier avec "ctrl C"
- -  dans la fenêtre d'import des personnes dans Surfy, coller les informations avec "ctrl V"
- -  "comparer" les informations du fichier avec la base de Surfy permet de détecter les personnes qui seront créées.
- -  créer l'ensemble des personnes dans Surfy, en cliquant sur "Tout créer".
- -  les personnes sont importées dans la base de données de Surfy.
+-   copy each desired property for import
+-   paste each property as column headers in a blank Excel file
+-   fill in the rows with the information to import.
+-   select only the columns that have been filled and copy/paste them into a new sheet of the Excel file so that the columns used are adjacent.
+ -  select all with "ctrl A", copy with "ctrl C"
+ -  in the people import window in Surfy, paste the information with "ctrl V"
+ -  "compare" the file information with the Surfy database to detect people who will be created.
+ -  create all people in Surfy, by clicking on "Create All".
+ -  people are imported into the Surfy database.
 
 
 
 
-:::tip Bon à savoir
-Depuis l'icône "Voir plus d'option pour la personne", on peut également "Voir les informations pour la personne dans la barre latérale" pour afficher les informations de la personne à droite de l'écran
+:::tip Good to Know
+From the "See more options for person" icon, you can also "View person information in the sidebar" to display person information on the right side of the screen
 :::

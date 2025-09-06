@@ -14,21 +14,21 @@ On the right side of the screen, keyword search and active page chapters<br />
 
 To use Surfy I need static 2D plans that will serve as background plans for each floor for building my spaces.<br />
 In Surfy I create a building then a floor with its background plan and scale so I can draw and qualify spaces.
-J'obtiens alors les informations surfaciques par typologie d'espace ou par tout autre calque personnalisé: Organisations, natures de sol, zones d'évacuation, centres de coût, etc...<br />
-Je peux également dupliquer un bâtiment ou un étage existant pour proposer un nouvel aménagement de mes espaces et décider en toute connaissance de mes données.<br />
-Suite au réaménagement, je peux gommer les éléments obsolètes dans Paint3D pour mettre à jour mon fond de plan, et redéfinir mes espaces suivant la nouvelle implantation.<br />
+I then get surface information by space typology or by any other custom layer: Organizations, floor types, evacuation zones, cost centers, etc...<br />
+I can also duplicate an existing building or floor to propose a new layout of my spaces and decide with full knowledge of my data.<br />
+Following the redevelopment, I can erase obsolete elements in Paint3D to update my background plan, and redefine my spaces according to the new layout.<br />
 
 ## People in Surfy
 
 The list of occupants with additional information can be integrated into Surfy from an Excel file or manually as collaborators arrive.<br />
-Trouver facilement le poste ou le quartier d'un collaborateur, visualiser automatiquement sur les plans les postes de travail des équipiers locaux de sécurité, structurer et répertorier les équipes, attribuer un siège ergo ou un caisson,... autant de fonctionnalités qui vous sont expliquées ici.<br />
-Le déménagement des équipes est géré facilement dans Surfy à partir d'une matrice de transfert simple et efficace.<br />
+Easily find a collaborator's workstation or district, automatically visualize on plans the workstations of local security team members, structure and list teams, assign an ergo seat or a cabinet,... so many features explained here.<br />
+Team moves are easily managed in Surfy using a simple and effective transfer matrix.<br />
 
 ## Furniture in Surfy
 
 Create and duplicate Furniture in Surfy, to scale or as icons, from the object library or by creating your own object types or Workstation types.<br />
-Référencer et localiser ses équipements sur les plans, connaitre son inventaire en toutes circonstances,<br />
-Evaluer sa capacité à recevoir en situant les postes de travail libres et le nombre de places assises disponibles dans le bâtiment.<br />
+Reference and locate your equipment on plans, know your inventory in all circumstances,<br />
+Evaluate your capacity to receive by locating free workstations and the number of available seats in the building.<br />
 
 ## Surfy Plus +
 

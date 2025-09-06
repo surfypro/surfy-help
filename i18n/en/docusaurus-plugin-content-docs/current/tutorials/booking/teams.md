@@ -2,58 +2,58 @@
 sidebar_position: 3
 ---
 
-# Réserver avec Teams dans Surfy
+# Book with Teams in Surfy
 
-Dans Teams, on peut ajouter l'application Surfy en cliquant sur "Application" et en recherchant "Surfy".<br />
-Une fois sélectionnée, l'application est ajoutée à Teams et permet directement au collaborateur autorisé d'utiliser les fonctionnalités de réservation de Surfy via Teams.<br />
-L'utilisation du compte Office365 professionnel du collaborateur lui permet l'accès direct à Surfy via l'authentification automatique.<br />
-Le collaborateur doit être affecté à un bâtiment, un étage ou un quartier pour pouvoir réserver dans ce bâtiment, étage ou quartier.
+In Teams, you can add the Surfy application by clicking on "Application" and searching for "Surfy".<br />
+Once selected, the application is added to Teams and allows the authorized collaborator to directly use Surfy's booking features via Teams.<br />
+Using the collaborator's professional Office365 account allows them direct access to Surfy via automatic authentication.<br />
+The collaborator must be assigned to a building, floor or district to be able to book in that building, floor or district.
 
 
-Pour plus d'informations, merci de [nous contacter](https://www.surfy.pro/contact) pour configurer Surfy et vous permettre d'utiliser l'application Teams pour la réservation dans Surfy.
+For more information, please [contact us](https://www.surfy.pro/contact) to configure Surfy and allow you to use the Teams application for booking in Surfy.
 
-## Comment ça marche
+## How It Works
 
 
 <Youtube code="56m9pJCDRps"/>
 
 <br />
 <br />
-Pour réserver un poste de travail (ou déclarer un télétravail) dans le quartier accessible à une date donnée :
+To book a workstation (or declare remote work) in the accessible district on a given date:
 
--   cliquer si besoin sur "Gérer mon planning des prochaines semaines".
+-   click if needed on "Manage my planning for the coming weeks".
 
-Les dates des X prochains jours (X étant configurable dans la fiche de l'entreprise) s'affichent et permettent la réservation dans le quartier autorisé.
+The dates of the next X days (X being configurable in the company card) are displayed and allow booking in the authorized district.
 
--   cliquer sur l'icone en face de la date désirée, pour réserver en journée ou demi-journée
--   pour déclarer un télétravail, cliquer sur "TELETRAVAIL" à la date voulue.
--   pour réserver un poste de travail, cliquer sur "BUREAU"
--   cliquer sur le quartier de réservation désiré
+-   click on the icon next to the desired date, to book for a full day or half day
+-   to declare remote work, click on "REMOTE WORK" on the desired date.
+-   to book a workstation, click on "OFFICE"
+-   click on the desired booking district
 
-Le quartier autorisé à la réservation s'affiche.
+The district authorized for booking is displayed.
 
--   cliquer sur le poste de travail choisi pour la réservation
+-   click on the chosen workstation for booking
 
-Les informations du poste de travail s'affichent sous le jour réservé.
-Cliquer sur la ligne de réservation donne accès à la position du poste de travail sur le plan et à l'affichage du nom et de la photo de la personne sur le poste réservé.
+Workstation information is displayed under the reserved day.
+Clicking on the booking line gives access to the workstation position on the plan and displays the name and photo of the person on the reserved workstation.
 
-Les collègues ayant déjà réservé dans un quartier ce jour sont listés sous la case du quartier. Pour localiser l'emplacement de réservation d'un collègue sur le plan, cliquer sur sa ligne de réservation.<br />
-Le plan du quartier apparait, les postes disponibles à la réservation sont coloriés en vert.<br />
-Les postes de travail déjà réservés sont coloriés en orange sur le plan, avec le nom et la photo éventuelle du collègue ayant réservé.
+Colleagues who have already booked in a district that day are listed under the district box. To locate a colleague's booking location on the plan, click on their booking line.<br />
+The district plan appears, workstations available for booking are colored in green.<br />
+Already reserved workstations are colored in orange on the plan, with the name and possible photo of the colleague who booked.
 
--   cliquer sur un poste disponible sur le plan établit la réservation à ce poste qui se colore en orange.
--   cliquer sur une réservation déjà effectuée montre la position du poste réservé, colorié en bleu avec nom et photo éventuelle.
--   cliquer sur la poubelle supprime cette réservation.
+-   clicking on an available workstation on the plan establishes the booking at that workstation which turns orange.
+-   clicking on an already made booking shows the position of the reserved workstation, colored in blue with name and possible photo.
+-   clicking on the trash deletes this booking.
 
-:::tip BON A SAVOIR
-Cliquer sur l'icône "Partager la journée en matin/après-midi" supprime les réservations du jour et modifie le choix "journée" ou "matin / après-midi"
+:::tip GOOD TO KNOW
+Clicking on the "Share the day in morning/afternoon" icon deletes the day's bookings and modifies the choice "full day" or "morning / afternoon"
 :::
 
-Depuis la page de réservation, il est également possible de :
+From the booking page, it is also possible to:
 
--   "voir toutes les réservations sur un plan" à une date donnée, sur un bâtiment et étage donné.<br />
-Le plan de l'étage s'affiche, avec l'ensemble des réservations effectuées à la date demandée.<br />
+-   "see all bookings on a plan" on a given date, on a given building and floor.<br />
+The floor plan is displayed, with all bookings made on the requested date.<br />
 
--   "retrouver un collègue ou consulter son planning" en saisissant le nom du collègue dans le champ imparti.<br />
-Les réservations du collègue sur la période à venir s'affichent.<br />
-En cliquant sur l'intitulé du poste réservé, on accède à sa géolocalisation sur le plan.<br />
+-   "find a colleague or consult their planning" by entering the colleague's name in the designated field.<br />
+The colleague's bookings for the upcoming period are displayed.<br />
+By clicking on the reserved workstation title, you access its geolocation on the plan.<br />

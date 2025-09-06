@@ -2,51 +2,51 @@
 sidebar_position: 4
 ---
 
-# L'Administrateur de planning
+# Planning Administrator
 
-Depuis l'application Surfy, le rôle "Administrateur de planning" permet de :
+From the Surfy application, the "Planning Administrator" role allows you to:
 
--   lister et filtrer les réservations passées ou à venir sur l'ensemble des quartiers réservables
+-   list and filter past or upcoming bookings across all bookable districts
 
-et sous forme de graphiques, connaitre :
--   le nombre de réservations des postes de travail par date
--   le nombre de réservations des postes de travail par jour de la semaine
--   le nombre de personnes ayant réservé par date
--   le nombre de personnes ayant réservé par date et par quartier
--   le nombre de réservations des postes de travail par date et par quartier
+and in chart form, know:
+-   the number of workstation bookings by date
+-   the number of workstation bookings by day of the week
+-   the number of people who booked by date
+-   the number of people who booked by date and by district
+-   the number of workstation bookings by date and by district
 
-Pour accéder à ces informations, le rôle "Administrateur de planning" doit être attribué à l'utilisateur concerné.<br />
-Il a alors accès à ces listes et graphiques.
+To access this information, the "Planning Administrator" role must be assigned to the concerned user.<br />
+They then have access to these lists and charts.
 
-## Lister les réservations
+## List Bookings
 
-Pour lister les réservations effectuées par les collaborateurs, depuis le menu de gauche,
+To list bookings made by collaborators, from the left menu,
 
--   cliquer sur "Plannings" puis "Réservations", "Réservations au poste de travail des personnes" puis "Lister les réservations au poste de travail des personnes".
+-   click on "Plannings" then "Bookings", "People's Workstation Bookings" then "List People's Workstation Bookings".
 
-La liste obtenue peut être filtrée en cliquant sur l'icône en haut à droite de l'écran : "Filtrer les réservations au poste de travail des personnes".
-On peut alors rechercher par personne, poste de travail ou date de réservation, et exporter cette liste en Excel en cliquant en haut à droite de l'écran sur l'icône "Télécharger en Excel les réservations au poste de travail des personnes".
+The obtained list can be filtered by clicking on the icon at the top right of the screen: "Filter People's Workstation Bookings".
+You can then search by person, workstation or booking date, and export this list to Excel by clicking at the top right of the screen on the icon "Download People's Workstation Bookings in Excel".
 
-Le fichier est disponible dans les "Téléchargements".
-
-
-## Le tableau de bord des réservations
-
-Le tableau de bord des réservations au poste de travail des personnes permet d'obtenir, dans une fourchette de dates et sous forme de graphiques en couleurs, les informations suivantes :
+The file is available in "Downloads".
 
 
--   le nombre de réservations par jour, semaine, mois, année : permet de suivre la fréquentation globale de la réservation sur la période choisie
--   le nombre de réservations par jour de la semaine : permet d'obtenir des statistiques sur les jours de la semaine les plus fréquentés.
--   le nombre de personnes ayant réservé par jour, semaine, mois, année : permet de connaitre le nombre global de personnes ayant réservé sur la période choisie
--   le nombre de personnes ayant réservé par quartier par jour, semaine, mois, année : permet de connaitre le nombre de personnes par quartier ayant réservé sur la période choisie
--   le nombre de réservations par quartier par jour, semaine, mois, année: permet de suivre la fréquentation par quartier de la réservation sur la période choisie
+## Booking Dashboard
+
+The people's workstation booking dashboard allows you to obtain, within a date range and in color chart form, the following information:
 
 
-Pour visualiser les graphiques de réservation, depuis le menu de gauche,
+-   the number of bookings per day, week, month, year: allows you to track overall booking attendance for the chosen period
+-   the number of bookings per day of the week: allows you to get statistics on the most frequented days of the week.
+-   the number of people who booked per day, week, month, year: allows you to know the overall number of people who booked for the chosen period
+-   the number of people who booked per district per day, week, month, year: allows you to know the number of people per district who booked for the chosen period
+-   the number of bookings per district per day, week, month, year: allows you to track district booking attendance for the chosen period
 
--   cliquer sur "Plannings" puis "Réservations", "Réservations au poste de travail des personnes" puis "Tableau de bord des réservations au poste de travail des personnes".
--   choisir la date de début et de fin de la période à observer
 
-Les graphiques apparaissent sous la fenêtre de choix de la période.
-Glisser la souris sur les graphiques  permet de connaitre le détail du nombre de réservation ou de personnes par date ou quartier.
+To view booking charts, from the left menu,
+
+-   click on "Plannings" then "Bookings", "People's Workstation Bookings" then "People's Workstation Booking Dashboard".
+-   choose the start and end date of the period to observe
+
+Charts appear below the period selection window.
+Hovering over the charts allows you to know the detail of the number of bookings or people by date or district.
 

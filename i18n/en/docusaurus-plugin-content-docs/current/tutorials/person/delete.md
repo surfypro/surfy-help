@@ -2,38 +2,38 @@
 sidebar_position: 3
 ---
 
-# Supprimer une Personne
+# Delete a Person
 
 :::danger Attention
-Supprimer une personne supprime toutes les informations relatives à cette personne ainsi que ses affectations.
-Cette action est irréversible. 
+Deleting a person deletes all information related to that person as well as their assignments.
+This action is irreversible. 
 :::
 
-## A partir de la fiche de la personne:
+## From the Person's Card:
 
--   rechercher la personne avec la loupe
--   cliquer sur le nom de la personne afin de faire apparaitre sa fiche
--   cliquer sur le menu contextuel puis sur "modifier la personne"
--   en haut à droite de l'écran, cliquer sur la corbeille "supprimer la personne"
--   confirmer la suppression.
-
-
-## A partir de la liste des personnes:
-
--   cliquer sur "Collaborateurs" puis "Personnes" et "Lister les personnes"
--   filtrer les personnes afin d'afficher les personnes à supprimer
--   cocher la case en début de ligne de la personne à supprimer
--   cliquer sur l'icône "supprimer les personnes sélectionnées"
--   confirmer la suppression.
+-   search for the person with the magnifying glass
+-   click on the person's name to make their card appear
+-   click on the context menu then on "modify person"
+-   at the top right of the screen, click on the trash "delete person"
+-   confirm the deletion.
 
 
-## A partir d'un export de Surfy
+## From the People List:
 
--   dans le fichier Excel, remplacer le prénom ou le nom de chaque personne à supprimer par le mot "delete" (ou tout autre mot)
--   réimporter la liste des personnes avec leur identifiant Surfy ou clé (matricule ou email) et rafraichir par F5
--   chaque personne à supprimer a maintenant pour nom ou prénom "delete". 
--   cliquer sur "Collaborateurs" puis "personnes" et "lister les personnes"
--   filtrer les noms ou prénoms avec le mot "delete" (ou tout autre mot)
--   sélectionner toutes les lignes de la liste
--   cliquer sur l'icône "supprimer les personnes sélectionnées"
--   confirmer la suppression.
+-   click on "Collaborators" then "People" and "List People"
+-   filter people to display people to delete
+-   check the box at the beginning of the line of the person to delete
+-   click on the "delete selected people" icon
+-   confirm the deletion.
+
+
+## From a Surfy Export
+
+-   in the Excel file, replace the first name or name of each person to delete with the word "delete" (or any other word)
+-   re-import the people list with their Surfy identifier or key (employee number or email) and refresh with F5
+-   each person to delete now has "delete" as their name or first name. 
+-   click on "Collaborators" then "people" and "list people"
+-   filter names or first names with the word "delete" (or any other word)
+-   select all lines in the list
+-   click on the "delete selected people" icon
+-   confirm the deletion.
