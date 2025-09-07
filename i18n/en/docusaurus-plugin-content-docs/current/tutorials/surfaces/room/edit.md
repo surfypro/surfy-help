@@ -2,93 +2,93 @@
 sidebar_position: 3
 ---
 
-# Modifier un espace
+# Modify a Space
 
 <Youtube code="_B7Jb3eAn4I"/>
 
-Pour modifier la surface d'un espace dans Surfy,
+To modify a space's surface in Surfy,
 
--   activer le "mode édition du plan" en cliquant sur l'icône "crayon" au dessus du plan.
--   cliquer dans l'espace pour faire apparaître ses sommets.
--   en cliquant sur un sommet, le sommet passe en rouge et peut être glissé-déplacé. La valeur de la surface change instantanément dans la fenêtre d'information de l'espace.
--   en appuyant sur "Shift" lors de la sélection de plusieurs sommets on peut déplacer l'ensemble de ces sommets en même temps.
--   On peut supprimer un ou plusieurs sommets en les sélectionnant avec le "shift" puis en cliquant sur l'icône "corbeille" pour "supprimer les sommets sélectionnés".
--   On peut recréer d'autres sommets d'un espace en sélectionnant le sommet précédant les sommets à ajouter, puis en cliquant sur l'icône "+" gris clair afin d' "ajouter un sommet". En appuyant sur "ctrl", la liberté de mouvement nous permet de recréer un ou plusieurs sommets consécutifs à partir du sommet sélectionné en rouge afin de compléter la conception de l'espace. Une fois les sommets ajoutés, cliquer sur "arrêter l'ajout d'un sommet".
--   On peut ajouter un sommet sur un segment en cliquant sur un sommet puis sur l'icône "+" gris foncé pour "ajouter un sommet sur un segment". En passant la souris sur le segment désiré, le segment s'allume en rouge et un cercle rouge apparaît. En cliquant, on crée un sommet. Une fois les sommets créés, cliquer sur "arrêter l'ajout de sommets sur un segment".
--   pour séparer un espace en deux à partir de deux sommets, sélectionner les deux sommets avec le "Shift" et cliquer sur "séparer l'espace". Les deux espaces créés sont séparés par un segment commun.
--   On peut séparer complètement les deux espaces en cliquant sur l'icône "séparer le sommet" en deux afin d'avoir un sommet sur l'espace de gauche et un sommet sur l'espace de droite.
--   pour regrouper plusieurs sommets en un seul, sélectionner les sommets avec "shift" et cliquer sur l'icône "fusionner les sommets".
+-   activate "plan editing mode" by clicking on the "pencil" icon above the plan.
+-   click in the space to make its vertices appear.
+-   by clicking on a vertex, the vertex turns red and can be dragged. The surface value changes instantly in the space information window.
+-   by pressing "Shift" when selecting multiple vertices you can move all these vertices at the same time.
+-   You can delete one or more vertices by selecting them with "shift" then clicking on the "trash" icon to "delete selected vertices".
+-   You can recreate other vertices of a space by selecting the vertex preceding the vertices to add, then clicking on the light gray "+" icon to "add a vertex". By pressing "ctrl", the freedom of movement allows us to recreate one or more consecutive vertices from the vertex selected in red to complete the space design. Once the vertices are added, click on "stop adding a vertex".
+-   You can add a vertex on a segment by clicking on a vertex then on the dark gray "+" icon to "add a vertex on a segment". By passing the mouse over the desired segment, the segment lights up in red and a red circle appears. By clicking, you create a vertex. Once the vertices are created, click on "stop adding vertices on a segment".
+-   to separate a space in two from two vertices, select the two vertices with "Shift" and click on "separate space". The two created spaces are separated by a common segment.
+-   You can completely separate the two spaces by clicking on the "separate vertex" icon in two to have a vertex on the left space and a vertex on the right space.
+-   to group several vertices into one, select the vertices with "shift" and click on the "merge vertices" icon.
 
-## Qualifier un espace ou modifier les informations d'un espace
+## Qualify a Space or Modify Space Information
 
-Une fois l'espace créé, on peut modifier ou compléter ses informations :
+Once the space is created, you can modify or complete its information:
 
--   cliquer sur la touche "Modifier" sur la fiche de l'espace, à gauche du plan, pour lui donner un <P code="room:name" />, une <P code="room:capacity" /> éventuelle, une <P code="room:organization" />, une <P code="room:roomType" /> de l'espace, un <P code="room:costCenter" />.
--   cliquer sur le crayon de la ligne à modifier pour choisir la bonne qualification dans le cas de choix multiples (typologie, organisation, centre de coût, ...)
--   "sauvegarder" les informations. 
--   Les calques d'analyse peuvent aussi être renseignés, la sauvegarde des calques est automatique et permet de qualifier rapidement d'un espace à un autre.
+-   click on the "Modify" button on the space card, on the left of the plan, to give it a <P code="room:name" />, an optional <P code="room:capacity" />, a <P code="room:organization" />, a <P code="room:roomType" /> of the space, a <P code="room:costCenter" />.
+-   click on the pencil of the line to modify to choose the right qualification in case of multiple choices (typology, organization, cost center, ...)
+-   "save" the information. 
+-   Analysis layers can also be filled in, layer saving is automatic and allows you to quickly qualify from one space to another.
 
-Il est important de renseigner au moins une qualification d'espace comme la "typologie", afin de donner une couleur aux espaces des plans. 
-Après rafraîchissement, l'espace affiche la couleur de la typologie choisie. Cela permet de savoir quels espaces sont créés et  renseignés.
+It is important to fill in at least one space qualification such as "typology", in order to give a color to the spaces on the plans. 
+After refresh, the space displays the color of the chosen typology. This allows you to know which spaces are created and filled in.
 
-:::tip Bon à savoir
-L'icône "goutte" au dessus du plan permet d'"activer la transparence des couleurs" et de voir les différents éléments présents sur le fond de plan à travers les couleurs des calques de Surfy.
+:::tip Good to Know
+The "drop" icon above the plan allows you to "activate color transparency" and see the different elements present on the plan background through the colors of Surfy's layers.
 :::
 
-## Importer en masse des informations aux espaces
+## Bulk Import Information to Spaces
 
-On peut importer un fichier excel comportant les informations à compléter aux espaces.<br />
-Il est nécessaire d'importer la colonne comportant l'identifiant Surfy de l'espace, ainsi que la colonne comportant les informations à compléter en utilisant les bons en-têtes pour chaque colonne. Ces colonnes doivent être contiguës pour être importées dans Surfy.<br />
-Pour plus de détail sur l'import en masse, merci de [nous contacter](https://www.surfy.pro/contact)
+You can import an Excel file containing the information to complete for spaces.<br />
+It is necessary to import the column containing the Surfy identifier of the space, as well as the column containing the information to complete using the correct headers for each column. These columns must be contiguous to be imported into Surfy.<br />
+For more details on bulk import, please [contact us](https://www.surfy.pro/contact)
 
-## Rechercher un espace
+## Search for a Space
 
-On peut géolocaliser et accéder à la fiche d'un espace de plusieurs façons :
+You can geolocate and access a space's card in several ways:
 
--   par la loupe en effectuant une recherche puis en cliquant sur l'espace recherché
--   par la [liste filtrée](/en/docs/courses/find/listfindcourse.md) des espaces ("Espaces", "Espaces", "Lister les espaces" puis "filtrer les espaces")
--   par l'affectation de la personne en cliquant dans l'espace de la personne affectée
-
-
-## Séparer un espace en deux
+-   by the magnifying glass by performing a search then clicking on the searched space
+-   by the [filtered list](/en/docs/courses/find/listfindcourse.md) of spaces ("Spaces", "Spaces", "List spaces" then "filter spaces")
+-   by the person's assignment by clicking in the assigned person's space
 
 
-On peut séparer une espace dans Surfy pour créer deux espaces différents.
-Pour cela, on sélectionne deux sommets de l'espace pour séparer l'espace en deux entre ces deux sommets.
-Ces sommets doivent être positionnés sur les segments de l'espace.
+## Separate a Space in Two
+
+
+You can separate a space in Surfy to create two different spaces.
+To do this, you select two vertices of the space to separate the space in two between these two vertices.
+These vertices must be positioned on the space segments.
 
 
 <Youtube code="OH0KcuzeSgU"/>
 
 
-### Créer les sommets pour la séparation
+### Create Vertices for Separation
 
--   accéder à l'étage de l'espace à séparer
--   "activer le mode édition du plan" en cliquant sur l'icône "crayon" au dessus du plan de l'étage
--   cliquer dans l'espace à séparer
--   cliquer sur l'icône "+" noire au dessus du plan afin d'"ajouter un sommet sur un segment".
+-   access the floor of the space to separate
+-   "activate plan editing mode" by clicking on the "pencil" icon above the floor plan
+-   click in the space to separate
+-   click on the black "+" icon above the plan to "add a vertex on a segment".
 
-Un segment est une ligne droite entre deux sommets du périmètre de l'espace.
-Il se colorie en rouge lors du passage de la souris et permet alors d'ajouter le sommet sur ce segment:
+A segment is a straight line between two vertices of the space perimeter.
+It turns red when the mouse passes over it and then allows you to add the vertex on this segment:
 
--   zoomer sur le segment
--   au passage de la souris sur le segment celui ci passe en rouge et affiche un cercle rouge pour créer un sommet. 
--   cliquer dans le cercle pour créer le sommet.
--   renouveller l'opération pour créer le deuxième sommet sur l'autre segment à séparer
--   cliquer sur l'icône "arrêter l'ajout d'un sommet sur un segment" au dessus du plan
+-   zoom on the segment
+-   when the mouse passes over the segment it turns red and displays a red circle to create a vertex. 
+-   click in the circle to create the vertex.
+-   repeat the operation to create the second vertex on the other segment to separate
+-   click on the "stop adding a vertex on a segment" icon above the plan
 
-### Séparer l'espace
+### Separate the Space
 
-Les deux sommets servant à la séparation étant créés,
+The two vertices used for separation being created,
 
--   sélectionner un des deux sommets qui passe en rouge
--   en maintenant la touche "shift" enfoncée, sélectionner le deuxième sommet qui passe également en rouge
--   cliquer sur l'icône "séparer l'espace" afin de couper l'espace en deux depuis les deux sommets sélectionnés
+-   select one of the two vertices that turns red
+-   while holding the "shift" key, select the second vertex that also turns red
+-   click on the "separate space" icon to cut the space in two from the two selected vertices
 
-L'espace "XXX" est séparé en deux espaces : "XXX" et "XXX(2)"
+The space "XXX" is separated into two spaces: "XXX" and "XXX(2)"
 
-Surfy propose d'attribuer au nouvel espace "XXX(2)" tout le mobilier et les affectations aux postes de travail qui correspondent à cet espace en cliquant sur "appliquer le changement d'espace". En cliquant sur "Fermer", le mobilier et les affectations aux postes de travail restent propriété de l'espace d'origine "XXX".
-Dans tous les cas, les affectations à l'espace restent affectées à l'espace "XXX".
+Surfy proposes to assign to the new space "XXX(2)" all the furniture and workstation assignments that correspond to this space by clicking on "apply space change". By clicking on "Close", the furniture and workstation assignments remain property of the original space "XXX".
+In all cases, space assignments remain assigned to space "XXX".
 
-Le nouvel espace créé peut être renseigné sur son nom, sa typologie et tous les calques et informations nécessaires.
+The new created space can be filled in with its name, typology and all necessary layers and information.
 

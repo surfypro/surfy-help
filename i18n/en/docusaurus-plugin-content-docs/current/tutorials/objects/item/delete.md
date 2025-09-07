@@ -1,16 +1,16 @@
 ---
 sidebar_position: 3
 ---
-# Supprimer un objet
+# Delete an Object
 
-Pour supprimer un objet,
+To delete an object,
 
--   cliquer sur l'objet à supprimer
--   cliquer sur la poubelle en bas à droite de la fiche de l'objet
--   confirmer la suppression
+-   click on the object to delete
+-   click on the trash at the bottom right of the object card
+-   confirm the deletion
 
 :::warning Attention
-La suppression de l'objet entraine la suppression des informations de <P code="item:reference" />, <P code="item:code" /> et association à personne de l'objet.
+Deleting the object results in the deletion of the <P code="item:reference" />, <P code="item:code" /> and person association information of the object.
 :::
 
 ## Supprimer un groupe d'objet

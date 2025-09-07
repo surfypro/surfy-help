@@ -44,54 +44,54 @@ More information on [creating a route](/en/docs/tutorials/surfaces/pathfinding/c
 
 
 
-### Créer des espaces reliés par des segments communs
+### Create Spaces Connected by Common Segments
 
-Pour créer des espaces reliés par des segments communs,
+To create spaces connected by common segments,
 
 -   from the floor plan, click on the plan to make icons appear in the area above the plan
--   "activer le mode édition du plan" en cliquant sur l'icône "crayon".
--   créer le premier espace en ayant soin de créer des sommets aux endroits de jonction avec le deuxième espace. En cas d'oubli, ces sommets peuvent être créés postérieurement.
--   créer le deuxième espace. A la jonction entre les deux espaces, maintenir la touche "alt" enfoncée.
--   cliquer sur le premier sommet de jonction du premier espace, allumé en vert. Le sommet créé est commun avec le sommet du premier espace.
--   maintenir la touche "alt" enfoncée et cliquer sur le deuxième sommet de jonction entre les deux espaces. Le deuxième sommet commun est créé, le segment entre les deux sommets communs est maintenant commun.
--   relacher la touche "alt" lors de la création de sommets simples.
+-   "activate plan editing mode" by clicking on the "pencil" icon.
+-   create the first space by taking care to create vertices at the junction points with the second space. In case of oversight, these vertices can be created later.
+-   create the second space. At the junction between the two spaces, hold the "alt" key.
+-   click on the first junction vertex of the first space, lit in green. The created vertex is common with the vertex of the first space.
+-   hold the "alt" key and click on the second junction vertex between the two spaces. The second common vertex is created, the segment between the two common vertices is now common.
+-   release the "alt" key when creating simple vertices.
 
-En cas d'absence ou d'oubli, une fois l'espace créé et pour créer un sommet supplémentaire afin de le fusionner :
+In case of absence or oversight, once the space is created and to create an additional vertex to merge it:
 
--   cliquer sur un sommet puis sur l'icône "+" gris foncé au dessus du plan pour "ajouter un sommet sur un segment"
--   passer la souris sur le segment sur lequel le sommet est à créer
--   quand le segment est de couleur rouge, cliquer pour ajouter le sommet à l'endroit voulu
--   on peut déplacer le sommet après sa création en le glissant-déplaçant
--   sélectionner (avec "shift" enfoncé) les deux sommets à fusionner puis sur l'icône "fusionner les sommets" au dessus du plan
--   cliquer sur un sommet puis sur l'icône "+" gris foncé pour "arrêter l'ajout d'un sommet sur un segment".
+-   click on a vertex then on the dark gray "+" icon above the plan to "add a vertex on a segment"
+-   pass the mouse over the segment on which the vertex is to be created
+-   when the segment is red, click to add the vertex at the desired location
+-   you can move the vertex after its creation by dragging it
+-   select (with "shift" pressed) the two vertices to merge then on the "merge vertices" icon above the plan
+-   click on a vertex then on the dark gray "+" icon to "stop adding a vertex on a segment".
 
-En mode "Edition du plan", les segments communs sont plus larges et coloriés en rouge, permettant de les repérer facilement afin de leur attribuer une porte ou passage.
+In "Plan editing" mode, common segments are wider and colored in red, making them easy to identify in order to assign them a door or passage.
 
 :::warning ATTENTION
-Un segment sera commun si aucun sommet supplémentaire n'existe entre les deux sommets communs. Si un sommet intempestif existe, le supprimer en cliquant dessus puis sur l'icône "Poubelle" pour "supprimer les sommets sélectionnés" et rendre le segment commun.
+A segment will be common if no additional vertex exists between the two common vertices. If an untimely vertex exists, delete it by clicking on it then on the "Trash" icon to "delete selected vertices" and make the segment common.
 :::
 
-:::tip BON A SAVOIR
-Pour digitaliser efficacement les espaces, on peut créer chacun des espaces indépendants dans un premier temps (bureaux fermés, salles de réunion, ...), puis créer la circulation ensuite, en utilisant la touche "alt" pour fusionner au fur et à mesure les sommets des espaces indépendants avec les sommets de la circulation lors de leur création.
+:::tip GOOD TO KNOW
+To efficiently digitize spaces, you can first create each of the independent spaces (closed offices, meeting rooms, ...), then create the circulation afterwards, using the "alt" key to gradually merge the vertices of the independent spaces with the circulation vertices during their creation.
 :::
 
-## Qualifier un espace
+## Qualify a Space
 
--   une fois l'espace créé, on doit le "modifier" sur sa fiche à gauche du plan pour lui donner un <P code="room:name" />, une <P code="room:capacity" /> éventuelle, une <P code="room:organization" />, une <P code="room:roomType" /> de l'espace, un <P code="room:costCenter" />.
--   "sauvegarder" les informations.
--   compléter éventuellement les qualifications dans les différents calques d'analyse. La sauvegarde de ces informations est automatique.
+-   once the space is created, you must "modify" it on its card on the left of the plan to give it a <P code="room:name" />, an optional <P code="room:capacity" />, a <P code="room:organization" />, a <P code="room:roomType" /> of the space, a <P code="room:costCenter" />.
+-   "save" the information.
+-   optionally complete the qualifications in the different analysis layers. Saving this information is automatic.
 
-Il est important de renseigner au moins une qualification d'espace comme la "typologie", afin de donner une couleur aux espaces des plans. 
-Après rafraîchissement, l'espace affiche la couleur de la typologie choisie. Cela permet de savoir quels espaces sont créés et  renseignés.
+It is important to fill in at least one space qualification such as "typology", in order to give a color to the spaces on the plans. 
+After refresh, the space displays the color of the chosen typology. This allows you to know which spaces are created and filled in.
 
-:::tip Bon à savoir
-L'icône "goutte" au dessus du plan permet d'"activer la transparence des couleurs" et de voir les différents éléments présents sur le fond de plan à travers les couleurs des calques de Surfy.
+:::tip Good to Know
+The "drop" icon above the plan allows you to "activate color transparency" and see the different elements present on the plan background through the colors of Surfy's layers.
 :::
 
-## Rechercher un espace
+## Search for a Space
 
-On peut géolocaliser et accéder à la fiche d'un espace de plusieurs façons :
+You can geolocate and access a space's card in several ways:
 
--   par la loupe en effectuant une recherche puis en cliquant sur l'espace recherché
--   par la [liste filtrée](/en/docs/courses/find/listfindcourse.md) des espaces ("Espaces", "Espaces", "Lister les espaces" puis "filtrer les espaces")
--   par l'affectation de la personne en cliquant dans l'espace de la personne affectée
+-   by the magnifying glass by performing a search then clicking on the searched space
+-   by the [filtered list](/en/docs/courses/find/listfindcourse.md) of spaces ("Spaces", "Spaces", "List spaces" then "filter spaces")
+-   by the person's assignment by clicking in the assigned person's space

@@ -2,19 +2,19 @@
 sidebar_position: 3
 ---
 
-# Supprimer un type d'objet Icône
+# Delete an Icon Object Type
 
 :::danger Attention
-Supprimer un type d'objet Icône supprime toutes les icônes issues de ce type d'objet sur l'ensemble des bâtiments.
+Deleting an Icon object type deletes all icons from this object type across all buildings.
 :::
 
-Pour supprimer un type d'objet, depuis le menu de gauche,
+To delete an object type, from the left menu,
 
--   cliquer sur "Mobiliers", "Typologies", "types d'objet" puis "Lister les types d'objet"
--   rechercher le type d'objet en cliquant sur l'icone "Filtrer les types d'objet" en haut à droite de l'écran
--   renseigner le type d'objet à rechercher pour l'isoler dans la liste
--   au début de la ligne du type d'objet, cocher la case puis cliquer sur l'icône "poubelle" en haut de la page : "Supprimer les types d'objet sélectionnés"
--   confirmer la suppression
+-   click on "Furniture", "Typologies", "object types" then "List object types"
+-   search for the object type by clicking on the "Filter object types" icon at the top right of the screen
+-   fill in the object type to search for to isolate it in the list
+-   at the beginning of the object type line, check the box then click on the "trash" icon at the top of the page: "Delete selected object types"
+-   confirm the deletion
 
-Le type d'objet a été supprimé, ainsi que tous les objets créés à partir de ce type d'objet.
+The object type has been deleted, as well as all objects created from this object type.
 

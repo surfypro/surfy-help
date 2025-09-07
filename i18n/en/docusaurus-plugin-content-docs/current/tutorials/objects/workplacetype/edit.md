@@ -1,9 +1,9 @@
 ---
 sidebar_position: 2
 ---
-# Modifier un type de poste de travail
+# Modify a Workstation Type
 
-En modifiant un type de poste de travail, tous les postes de travail associés à ce type de poste de travail seront modifiés.
+By modifying a workstation type, all workstations associated with this workstation type will be modified.
 
 ## Modifier les informations du type de poste de travail
 

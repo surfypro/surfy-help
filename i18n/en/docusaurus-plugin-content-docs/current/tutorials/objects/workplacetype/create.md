@@ -12,22 +12,22 @@ Pour créer un type de poste de travail dans Surfy, depuis le menu de gauche,
 -   renseigner le <P code="workplaceType:name" /> du type de poste de travail (par exemple: PdT 180x80C) et la <P code="workplaceType:color" /> (blanc par défaut)
 -   valider la création du type de poste de travail
 
-## Composer le type de poste de travail
+## Compose the Workstation Type
  
-:::tip Bon à savoir
-Pour composer un type de poste de travail, les types d'objet composant le type de poste de travail doivent être créés au préalable.
+:::tip Good to Know
+To compose a workstation type, the object types composing the workstation type must be created beforehand.
 :::
 
- -  cliquer sur la page blanche pour afficher les icônes de commande, ou cliquer sur l'icône en haut à gauche de la page "Commencer la manipulation de l'espace de travail".
- -  cliquer sur l'icône "Ajouter un type d'objet"
- -  choisir le premier objet composant le type de poste de travail (exemple: Bureau 180x80) et le déposer sur la feuille blanche
- -  ajouter les objets nécessaires à la composition du type de poste de travail (exemple: fauteuil et Caisson)
--   déplacer et tourner les objets en cliquant sur "déplaçer le type d'objet" pour composer le type de poste de travail
--   cliquer sur "Lister les types d'objet" pour afficher la liste des types d'objet utilisés
--   placer les éléments de la liste les uns sur/sous les autres en glissant déplaçant le signe "=" du type d'objet du haut vers le bas
- -  cliquer sur le "papillon" à droite du nom des types d'objet afin de définir le nombre de places assises pour chacun d'entre eux (exemple: 1 place assise pour le fauteuil Bureau)
- -  quitter la page permet la sauvegarde de la composition
- -  le type de poste de travail créé est disponible à l'ajoût d'un poste de travail dans les espaces.
+ -  click on the white page to display the command icons, or click on the icon at the top left of the page "Start workspace manipulation".
+ -  click on the "Add an object type" icon
+ -  choose the first object composing the workstation type (example: Desk 180x80) and drop it on the white sheet
+ -  add the objects necessary for the workstation type composition (example: chair and Cabinet)
+-   move and rotate the objects by clicking on "move the object type" to compose the workstation type
+-   click on "List object types" to display the list of used object types
+-   place the list elements on top of/below each other by dragging the "=" sign of the object type from top to bottom
+ -  click on the "butterfly" to the right of the object type names to define the number of seats for each of them (example: 1 seat for the Desk chair)
+ -  leaving the page saves the composition
+ -  the created workstation type is available for adding a workstation in spaces.
  
  ## Composer un poste de travail avec des objets "physiques"
 

@@ -1,45 +1,45 @@
 ---
 sidebar_position: 1
 ---
-# Les Typologies d'espace
+# Space Typologies
 
-Pour gérer la typologie des espaces, il est conseillé d'utiliser la vision "Typologie des espaces".
-En savoir plus sur [les visions du plan](/en/docs/courses/views/planviews.md#vision-typologies-des-espaces).
+To manage space typology, it is recommended to use the "Space Typology" view.
+Learn more about [plan views](/en/docs/courses/views/planviews.md#space-typology-view).
 
-La typologie d'un espace est la première qualification qu'on peut donner à un espace, étant souvent déductible des informations du fond de plan.
-Elle permet de colorier les plans au fur et à mesure de la digitalisation et d'obtenir les informations cumulées par typologie.
+A space's typology is the first qualification you can give to a space, often deducible from the plan background information.
+It allows you to color the plans as digitization progresses and obtain cumulative information by typology.
 
 :::warning IMPORTANT
-Avant de créer une nouvelle typologie, comme dans tout choix multiple il est important de vérifier que la typologie n'existe pas déjà dans la base de données. Un doublon fausserait les cumuls en fractionnant les données sur plusieurs typologies identiques.
+Before creating a new typology, as in any multiple choice it is important to check that the typology does not already exist in the database. A duplicate would distort the cumulations by splitting the data across several identical typologies.
 :::
 
-## Créer une typologie d'espace
+## Create a Space Typology
 
-Pour créer une typologie d'espace depuis la page d'accueil :
+To create a space typology from the home page:
 
--   cliquer sur "Administration", "Typologies", "Typologies d'espaces", "Typologies d'espace" puis "Créer une typologie d'espace".
--   nommer la typologie dans le <P code="roomType:name" /> (ex: "Point Repro").
--   donner une <P code="roomType:color" /> à la typologie pour la vue 2D.
--   on peut donner une <P code="roomType:color3d" /> différente pour la vue 3D. A défaut, c'est la couleur 2D qui est utilisée en 3D.
--   on peut définir une <P code="roomType:icon" /> qui sera affichée sur les espaces de la typologie en vue 3D, et en vue 2D en cliquant sur l'icône "Activer l'affichage des icônes sur le plan en 2D" au dessus du plan en 2D. Cela permet de mettre en avant des points stratégiques (Toilettes, Repro, ascenseurs, ...) sur les plans fournis.
+-   click on "Administration", "Typologies", "Space Typologies", "Space Typology" then "Create a space typology".
+-   name the typology in the <P code="roomType:name" /> (ex: "Repro Point").
+-   give a <P code="roomType:color" /> to the typology for the 2D view.
+-   you can give a different <P code="roomType:color3d" /> for the 3D view. By default, it's the 2D color that is used in 3D.
+-   you can define a <P code="roomType:icon" /> that will be displayed on the typology spaces in 3D view, and in 2D view by clicking on the "Activate icon display on 2D plan" icon above the 2D plan. This allows you to highlight strategic points (Toilets, Repro, elevators, ...) on the provided plans.
 
-Pour plus d'informations sur les champs à compléter, voir les [propriétés de base de la Typologie d'espace](/entities/admin/types/room-types/room-type).
+For more information on the fields to complete, see the [basic properties of Space Typology](/entities/admin/types/room-types/room-type).
 
--   "valider la création" de la typologie.
+-   "validate the creation" of the typology.
 
-La typologie est créée.
+The typology is created.
 
-## Associer une typologie à un espace
+## Associate a Typology to a Space
 
-Pour qualifier un espace par une typologie existante :
+To qualify a space by an existing typology:
 
--   cliquer dans l'espace concerné
--   "Modifier" l'espace, en haut à gauche de la fiche de l'espace
--   cliquer sur l'icône "crayon" de la ligne "Typologie d'espace"
--   choisir la typologie adéquate avec la recherche
--   "Sauvegarder" les modifications
+-   click in the concerned space
+-   "Modify" the space, at the top left of the space card
+-   click on the "pencil" icon of the "Space Typology" line
+-   choose the appropriate typology with the search
+-   "Save" the modifications
 
-L'espace est qualifié par sa typologie.
+The space is qualified by its typology.
 
 ## Créer et associer une typologie à un espace
 

@@ -2,10 +2,10 @@
 sidebar_position: 4
 ---
 
-# Supprimer un espace
+# Delete a Space
 
 :::danger Attention:
-La suppression d'espace implique la suppression de tout le mobilier associé et de toutes les affectations de personnes à cet espace ou aux postes de travail de l'espace. Cette action est irréversible.
+Deleting a space involves deleting all associated furniture and all person assignments to this space or to the space's workstations. This action is irreversible.
 :::
 
-Pour supprimer un espace, cliquer sur l'espace, puis cliquer sur l'icone "poubelle" en bas à droite de la fiche de l'espace (à gauche du plan). Une double confirmation de suppression est demandée.
+To delete a space, click on the space, then click on the "trash" icon at the bottom right of the space card (on the left of the plan). A double deletion confirmation is requested.

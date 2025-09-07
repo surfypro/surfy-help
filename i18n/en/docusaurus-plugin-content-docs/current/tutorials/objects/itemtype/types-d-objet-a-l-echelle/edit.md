@@ -1,9 +1,9 @@
 ---
 sidebar_position: 2
 ---
-# Modifier un type d'objet à l'échelle
+# Modify a Scale Object Type
 
-En modifiant un type d'objet, tous les objets associés à ce type d'objet seront modifiés.
+By modifying an object type, all objects associated with this object type will be modified.
 
 ## Modifier les informations du type d'objet
 

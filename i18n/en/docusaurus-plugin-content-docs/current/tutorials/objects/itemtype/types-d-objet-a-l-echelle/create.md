@@ -1,74 +1,74 @@
 ---
 sidebar_position: 1
 ---
-# Créer un type d'objet à l'échelle
+# Create a Scale Object Type
 
-## Créer la fiche du type d'objet
+## Create the Object Type Card
 
 <Youtube code="89my-CVLjOo"/>
 
-Pour créer un type d'objet à l'échelle, depuis le menu de gauche,
+To create a scale object type, from the left menu,
 
--	cliquer sur « Mobiliers », « Typologies », « Types d'objet », puis « Créer un type d'objet ».
--	renseigner le <P code="itemType:name" /> du type d'objet à créer
--	par défaut, l'<P code="itemType:zIndex" /> est à 0. Il peut être négatif. En cas de chevauchement entre deux types d'objet, celui avec l'indice le plus haut sera systématiquement placé au-dessus de l'autre.
--	la <P code="itemType:itemTypeFamily" /> permet d'afficher les objets par Famille sur les plans et dans l'inventaire en pdf.
+-	click on "Furniture", "Typologies", "Object Types", then "Create an object type".
+-	fill in the <P code="itemType:name" /> of the object type to create
+-	by default, the <P code="itemType:zIndex" /> is at 0. It can be negative. In case of overlap between two object types, the one with the highest index will systematically be placed above the other.
+-	the <P code="itemType:itemTypeFamily" /> allows you to display objects by Family on plans and in the pdf inventory.
 
-Ces trois premiers champs (Nom, Indice de hauteur, Famille) sont obligatoires.
+These three first fields (Name, Height index, Family) are mandatory.
 
--	le champ <P code="itemType:picture" /> permet de charger la photo du type d'objet, qui sera visible dans l'inventaire en pdf et sur la fiche de l'objet sélectionné sur le plan.
--	cocher <P code="itemType:displayItemReferenceInMap" /> permet d'afficher le champ « Référence » de chaque objet sur le plan.
--	un <P code="itemType:code" /> particulier vous donnera accès directement au type d'objet en le tapant dans la recherche lors de la création d'objet.
--	le choix « Icône » ne doit pas être renseigné dans le cas de création de type d'objet à l'échelle.
--	la <P code="itemType:color" /> peut être choisie parmi une sélection, ou par code Hexa ou RGB pour respecter votre charte graphique.
--	la <P code="itemType:height" /> donnera dans ce cas la hauteur du modèle 3D associé, s'il existe.
--	<P code="itemType:description" /> et <P code="itemType:price" /> peuvent être renseignés.
--	<P code="itemType:seatsCount" /> (uniquement pour les assises, sièges, canapés, etc…) et <P code="itemType:carbonFootprint" /> (donnée éventuellement par le fabricant, par objet) peuvent être renseignés et sont cumulés dans Surfy par pièce, étage ou bâtiment.
--	les champs « Forme de l'icône », « Couleur de fond » et « couleur de bordure » sont réservés aux créations d'icônes et ne sont pas à renseigner en création de types d'objet à l'échelle.
--	le <P code="itemType:manufacturer" /> peut être renseigné. Si le fabricant n'est pas dans la liste, on peut "créer et associer un fabricant de type d'objet" directement depuis la liste.
--	le <P code="itemType:object3dModel" /> permet une visualisation 3D des Objets issus du type d'objet et placés sur le plan.
--	la « Clé externe » permet d'identifier le type d'objet avec une utilisation extérieure à Surfy (interopérabilité avec des applications tiers)
--	« Valider la création ».
+-	the <P code="itemType:picture" /> field allows you to load the object type photo, which will be visible in the pdf inventory and on the selected object card on the plan.
+-	checking <P code="itemType:displayItemReferenceInMap" /> allows you to display the "Reference" field of each object on the plan.
+-	a particular <P code="itemType:code" /> will give you direct access to the object type by typing it in the search when creating an object.
+-	the "Icon" choice should not be filled in when creating a scale object type.
+-	the <P code="itemType:color" /> can be chosen from a selection, or by Hexa or RGB code to respect your graphic charter.
+-	the <P code="itemType:height" /> will in this case give the height of the associated 3D model, if it exists.
+-	<P code="itemType:description" /> and <P code="itemType:price" /> can be filled in.
+-	<P code="itemType:seatsCount" /> (only for seats, chairs, sofas, etc...) and <P code="itemType:carbonFootprint" /> (possibly provided by the manufacturer, per object) can be filled in and are accumulated in Surfy by room, floor or building.
+-	the "Icon shape", "Background color" and "border color" fields are reserved for icon creations and should not be filled in when creating scale object types.
+-	the <P code="itemType:manufacturer" /> can be filled in. If the manufacturer is not in the list, you can "create and associate an object type manufacturer" directly from the list.
+-	the <P code="itemType:object3dModel" /> allows 3D visualization of Objects from the object type and placed on the plan.
+-	the "External key" allows you to identify the object type with external use to Surfy (interoperability with third-party applications)
+-	"Validate the creation".
 
-Il reste maintenant à créer la forme pour le type d'objet à l'échelle.
+It now remains to create the shape for the scale object type.
 
-## Créer la forme du type d’objet à l'échelle
+## Create the Scale Object Type Shape
 
-### Les modèles 3D
-Surfy dispose d'un ensemble de modèles 3D représentant le mobilier courant: tables, assises, bureaux, armoires, etc... pouvant être associés aux types d'objet pour les représenter en vision 3D du bâtiment ou de l'étage.
-Ces modèles sont orientés dans l'espace. La composition de la forme en 2D d'un type d'objet nécessite de se conformer à l'orientation du modèle 3D que l'on veut associer à ce type d'objet. 
+### 3D Models
+Surfy has a set of 3D models representing common furniture: tables, seats, desks, cabinets, etc... that can be associated with object types to represent them in 3D view of the building or floor.
+These models are oriented in space. The composition of the 2D shape of an object type requires conforming to the orientation of the 3D model that you want to associate with this object type. 
 
-L'orientation de la forme 2D à dessiner est définie ci-dessous :
+The orientation of the 2D shape to draw is defined below:
 
-### Orientation des formes en association aux modèles 3D
+### Shape Orientation in Association with 3D Models
 
-Afin que les formes dessinées en 2D soient compatibles avec les modèles 3D, l'orientation suivante est nécessaire lors du dessin de la forme 2D :
--   Armoires: ouverture en bas
--   Tables: longueur horizontale, largeur verticale
--   Bureaux: longueur horizontale, largeur verticale
--   Assises: dossier en haut, assise en bas
--   Bulles : ouverture en bas
+In order for 2D drawn shapes to be compatible with 3D models, the following orientation is necessary when drawing the 2D shape:
+-   Cabinets: opening at the bottom
+-   Tables: horizontal length, vertical width
+-   Desks: horizontal length, vertical width
+-   Seats: backrest at the top, seat at the bottom
+-   Bubbles: opening at the bottom
 
-### Créer la forme en 2D
+### Create the 2D Shape
 
-Depuis la fiche du type d'objet, cliquer sur le menu contextuel (case grise sous la loupe de recherche), puis :
+From the object type card, click on the context menu (gray box under the search magnifying glass), then:
 
--	cliquer sur « Editer la forme du type d'objet XXX » pour dessiner la forme du type d’objet.
--   cliquer sur la page blanche afin de faire apparaitre les icônes de création.
--	on peut afficher le fond de plan d’un étage avec l’icône « choisir un plan de référence pour créer la forme » afin de décalquer la forme voulue.
--   cliquer sur l'icône "+" afin d' "ajouter une forme".
--   chaque clic dépose un sommet. Le dessin d'une forme suit la logique du fil unique. On peut s'affranchir de l'aide à la verticalité en maintenant la touche "Shift" enfoncée. Respecter la compatibilité avec les modèles 3D permet d'associer une représentation bien orientée de l'objet dans les vues 3D de l'étage ou du bâtiment. Voir [Orientation des formes en association aux modèles 3D](/en/docs/tutorials/objects/itemtype/types-d-objet-a-l-echelle/create#orientation-des-formes-en-association-aux-modèles-3d)
+-	click on "Edit the shape of object type XXX" to draw the object type shape.
+-   click on the white page to make the creation icons appear.
+-	you can display the floor plan background with the "choose a reference plan to create the shape" icon to trace the desired shape.
+-   click on the "+" icon to "add a shape".
+-   each click places a vertex. Drawing a shape follows the single thread logic. You can get rid of the verticality help by holding the "Shift" key. Respecting compatibility with 3D models allows you to associate a well-oriented representation of the object in the 3D views of the floor or building. See [Shape Orientation in Association with 3D Models](/en/docs/tutorials/objects/itemtype/types-d-objet-a-l-echelle/create#shape-orientation-in-association-with-3d-models)
 
-Il est conseillé de matérialiser la poignée d'ouverture en bas de la forme des armoires afin que celles-ci soient bien orientées lors du placement sur le plan en 2D et également en vue 3D.
+It is recommended to materialize the opening handle at the bottom of the cabinet shapes so that they are well oriented when placed on the 2D plan and also in 3D view.
 
-:::tip BON A SAVOIR
-Pour créer une forme aux dimensions exactes, après avoir cliqué le premier point, entrer la valeur du segment à dessiner (en mètres) puis en maintenant la souris dans la direction du segment à créer, appuyer sur "Enter". Le segment à la bonne longueur est créé.
+:::tip GOOD TO KNOW
+To create a shape with exact dimensions, after clicking the first point, enter the value of the segment to draw (in meters) then while keeping the mouse in the direction of the segment to create, press "Enter". The segment with the correct length is created.
 :::
 
--	une fois la forme à l'échelle dessinée, cliquer sur l'icône verte pour valider la création de la forme.
--	pour supprimer un sommet de la forme, cliquer sur le sommet puis sur « Supprimer le sommet ».
--	pour ajouter un sommet entre deux sommets existants, cliquer sur un des sommets puis sur « ajouter un sommet ». Appuyer sur la touche « shift » pour libérer l'horizontalité du placement de sommet. Le sommet à ajouter est situé entre les deux sommets. Si le sommet à ajouter n'est pas bien situé, cliquer sur le sommet adjacent puis sur « ajouter un sommet » pour créer le nouveau sommet au bon endroit.
--	pour supprimer la forme de l'objet, cliquer en dehors de la forme puis sur « Supprimer la forme ».
--	une fois votre forme validée, vous pouvez cliquer en dehors de la forme puis quitter la page, votre forme est sauvegardée.
+-	once the scale shape is drawn, click on the green icon to validate the shape creation.
+-	to delete a vertex from the shape, click on the vertex then on "Delete vertex".
+-	to add a vertex between two existing vertices, click on one of the vertices then on "add a vertex". Press the "shift" key to free the horizontality of vertex placement. The vertex to add is located between the two vertices. If the vertex to add is not well positioned, click on the adjacent vertex then on "add a vertex" to create the new vertex in the right place.
+-	to delete the object shape, click outside the shape then on "Delete shape".
+-	once your shape is validated, you can click outside the shape then leave the page, your shape is saved.
 
-Chaque objet créé à partir du type d'objet aura la forme, la couleur et les caractéristiques du type d'objet créé.
+Each object created from the object type will have the shape, color and characteristics of the created object type.

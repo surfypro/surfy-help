@@ -2,28 +2,28 @@
 sidebar_position: 1
 ---
 
-# Gérer l'inventaire
+# Manage Inventory
 
-## L'inventaire des objets
+## Object Inventory
 
-Chaque objet peut être inventorié dans Surfy grâce à sa référence ou à son code d'immobilisation.<br />
-Il devient ainsi un objet unique, géolocalisable sur les plans par la loupe de recherche.<br />
-Chaque objet dispose également d'une date d'achat.<br />
-Les autres informations (prix, description, fabricant) sont accessibles et modifiables dans le type d'objet de l'objet et concernent tous les objets du même type.
+Each object can be inventoried in Surfy thanks to its reference or asset code.<br />
+It thus becomes a unique object, geolocatable on plans by the search magnifying glass.<br />
+Each object also has a purchase date.<br />
+Other information (price, description, manufacturer) is accessible and modifiable in the object's object type and concerns all objects of the same type.
 
-## Référencer un objet
+## Reference an Object
 
-Pour donner une référence (ou un code d'immobilisation, ou une date d'achat) à un objet, depuis le plan d'un étage,
+To give a reference (or an asset code, or a purchase date) to an object, from a floor plan,
 
--   cliquer sur l'objet
--   cliquer sur "Modifier" dans la fiche de l'objet à gauche
--   taper la <P code="item:reference" /> (ou le <P code="item:code" />) dans la case concernée
--   indiquer éventuellement la <P code="item:purchaseDate" /> de l'objet
--   "Sauvegarder" les modifications
+-   click on the object
+-   click on "Modify" in the object card on the left
+-   type the <P code="item:reference" /> (or the <P code="item:code" />) in the concerned box
+-   optionally indicate the object's <P code="item:purchaseDate" />
+-   "Save" the modifications
 
-:::tip Bon à savoir
-La "Référence" de l'objet peut être affichée sur tous les objets du même type en cochant la case "Afficher les informations sur le plan" dans la [fiche du type d'objet](/en/docs/tutorials/objects/itemtype/types-d-objet-a-l-echelle/edit#modifier-les-informations-du-type-dobjet). La référence peut être recherchée avec la loupe afin de géolocaliser l'objet sur le plan, et est visible en passant la souris sur l'objet.<br />
-Le "Code d'immobilisation" peut être recherché avec la loupe afin de géolocaliser l'objet sur le plan. Il est visible en passant la souris sur l'objet mais n'est pas affichable sur l'objet.<br />
+:::tip Good to Know
+The object's "Reference" can be displayed on all objects of the same type by checking the "Display information on plan" box in the [object type card](/en/docs/tutorials/objects/itemtype/types-d-objet-a-l-echelle/edit#modify-object-type-information). The reference can be searched with the magnifying glass to geolocate the object on the plan, and is visible by passing the mouse over the object.<br />
+The "Asset code" can be searched with the magnifying glass to geolocate the object on the plan. It is visible by passing the mouse over the object but is not displayable on the object.<br />
 :::
 
 ## Référencer les objets d'un type de poste de travail

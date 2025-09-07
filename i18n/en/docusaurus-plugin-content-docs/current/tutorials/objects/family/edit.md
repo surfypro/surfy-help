@@ -2,20 +2,20 @@
 sidebar_position: 2
 ---
 
-# Modifier une Famille de types d'objet
+# Modify an Object Type Family
 
-## Modifier le nom d'une famille de types d'objet
+## Modify the Name of an Object Type Family
 
-On peut modifier le nom d'une famille de types d'objet afin d'organiser au mieux le classement des objets mobilier.
+You can modify the name of an object type family to best organize the classification of furniture objects.
 
-Pour modifier une famille de types d'objet,
+To modify an object type family,
 
--   dans le menu de gauche, cliquer sur "Mobiliers", "Typologies", puis "Familles de types d'objet" et "Lister les familles de types d'objet".
--   cliquer sur l'icône "Voir plus d'options pour la famille de types d'objet XXX" au début de la ligne de la famille à modifier, puis sur "Modifier la famille de types d'objet XXX".
--   modifier le <P code="itemTypeFamily:name" /> de la famille concernée
--   sauvegarder la modification.
+-   in the left menu, click on "Furniture", "Typologies", then "Object Type Families" and "List object type families".
+-   click on the "See more options for object type family XXX" icon at the beginning of the family line to modify, then on "Modify object type family XXX".
+-   modify the <P code="itemTypeFamily:name" /> of the concerned family
+-   save the modification.
 
-:::tip Bon à savoir
-Les types d'objet appartenant à la famille concernée sont listés en bas de la page, ou en cliquant sur "Voir la famille de types d'objet XXX"
+:::tip Good to Know
+Object types belonging to the concerned family are listed at the bottom of the page, or by clicking on "See object type family XXX"
 :::
 

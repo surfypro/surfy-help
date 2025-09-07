@@ -1,14 +1,14 @@
 ---
 sidebar_position: 2
 ---
-# Modifier un objet
+# Modify an Object
 
-## Modifier les informations d'un objet
+## Modify Object Information
 
--   cliquer sur l'objet
--   dans la fiche de l'objet à gauche du plan, cliquer sur "Modifier"
--   modifier la <P code="item:reference" />, le <P code="item:code" /> ou la <P code="item:purchaseDate" />
--   sauvegarder les modifications
+-   click on the object
+-   in the object card on the left of the plan, click on "Modify"
+-   modify the <P code="item:reference" />, the <P code="item:code" /> or the <P code="item:purchaseDate" />
+-   save the modifications
 
 ## Déplacer un objet
 

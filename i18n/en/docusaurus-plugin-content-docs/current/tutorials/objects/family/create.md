@@ -2,21 +2,21 @@
 sidebar_position: 1
 ---
 
-# Créer une Famille de types d'objet
+# Create an Object Type Family
 
 
-La famille de types d'objet permet de regrouper des types d'objet dans une entité commune suivant leur destination ou leur utilisation.
-Elle permet le classement de l'inventaire par familles. La famille permet également d'afficher plus facilement les objets sur les plans. 
+The object type family allows you to group object types in a common entity according to their destination or use.
+It allows inventory classification by families. The family also allows you to display objects more easily on plans. 
 
 
-Pour créer une famille de types d'objet,
+To create an object type family,
 
--   dans le menu de gauche, cliquer sur "Mobiliers", "Typologies", puis "Familles de types d'objet" et "Créer une famille de types d'objet".
--   renseigner <P code="itemTypeFamily:name" /> pour la famille à créer
--   valider la création
+-   in the left menu, click on "Furniture", "Typologies", then "Object Type Families" and "Create an object type family".
+-   fill in <P code="itemTypeFamily:name" /> for the family to create
+-   validate the creation
 
-Après rafraichissement (F5), la nouvelle famille de types d'objet est proposée dans le choix "Famille de types d'objet" à la création/modification des types d'objet, et regroupera tous les objets issus des types d'objet de la famille concernée.
+After refresh (F5), the new object type family is proposed in the "Object Type Family" choice when creating/modifying object types, and will group all objects from the object types of the concerned family.
 
-:::tip Bon à savoir
-L'information "Famille du type d'objet" est obligatoire à la création de chaque type d'objet
+:::tip Good to Know
+The "Object Type Family" information is mandatory when creating each object type
 :::

@@ -2,16 +2,16 @@
 sidebar_position: 3
 ---
 
-# Supprimer un type de poste de travail
+# Delete a Workstation Type
 
 :::danger Attention
-Supprimer un type de poste de travail supprime tous les postes de travail issus de ce type de poste de travail.
+Deleting a workstation type deletes all workstations from this workstation type.
 :::
 
-Pour supprimer un type de poste de travail, depuis le menu de gauche,
+To delete a workstation type, from the left menu,
 
--   cliquer sur "Mobiliers", "Typologies" puis "types de poste de travail" et "Lister les types de poste de travail"
--   au début de la ligne du type de poste de travail, cocher la case puis cliquer sur la poubelle en haut de la page : "Supprimer les types de poste de travail sélectionnés"
--   confirmer la suppression
+-   click on "Furniture", "Typologies" then "workstation types" and "List workstation types"
+-   at the beginning of the workstation type line, check the box then click on the trash at the top of the page: "Delete selected workstation types"
+-   confirm the deletion
 
-Le type de poste de travail a été supprimé, ainsi que tous les postes de travail créés à partir de ce type de poste de travail.
+The workstation type has been deleted, as well as all workstations created from this workstation type.

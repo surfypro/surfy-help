@@ -3,34 +3,34 @@ sidebar_position: 1
 ---
 
 
-# Créer un type d'objet Icône
+# Create an Icon Object Type
 
 <Youtube code="89my-CVLjOo"/>
 
-Pour créer un type d'objet sous forme d'icône, depuis le menu de gauche,
+To create an icon object type, from the left menu,
 
--	cliquer sur « Mobiliers », « Typologies », « Types d'objet », puis « Créer un type d'objet ».
--	renseigner le <P code="itemType:name" /> du type d'icône à créer
--	placer l'<P code="itemType:zIndex" /> à « 9 » afin que les icônes soient systématiquement au-dessus des autres objets, donc visibles. (Par défaut, l'indice de hauteur est à 0. Il peut être négatif)
--	la <P code="itemType:itemTypeFamily" /> permet d'afficher les objets par Famille sur les plans et dans l'inventaire en pdf.
+-	click on "Furniture", "Typologies", "Object Types", then "Create an object type".
+-	fill in the <P code="itemType:name" /> of the icon type to create
+-	set the <P code="itemType:zIndex" /> to "9" so that icons are systematically above other objects, therefore visible. (By default, the height index is at 0. It can be negative)
+-	the <P code="itemType:itemTypeFamily" /> allows you to display objects by Family on plans and in the pdf inventory.
 
-Ces trois premiers champs (Nom, Indice de hauteur, Famille) sont obligatoires.
+These three first fields (Name, Height index, Family) are mandatory.
 
--	le champ <P code="itemType:picture" /> permet de charger la photo du type d'objet, qui sera visible dans l'inventaire en pdf et sur la fiche de l'objet sélectionné sur le plan.
--	cocher <P code="itemType:displayItemReferenceInMap" /> permet d'afficher le champ « Référence » de chaque objet sur le plan.
--	un <P code="itemType:code" /> particulier vous donnera accès directement au type d'objet en le tapant dans la recherche lors de la création d'objet.
--	dans le champ <P code="itemType:icon" />, le « Crayon » vous donne accès à trois types d'icône :
-    -   les Icônes de « Fontawsome », visibles en cochant « tout afficher » ou en recherchant par mot clé en anglais dans la case de recherche.
-    -   les Icônes « SURFY » destinées aux illustrations ajoutées sur les plans aux endroits stratégiques (Toilettes, Escaliers, Ascenseurs, Points Copie, …) mais qui peuvent également être utilisées comme des icônes classiques.
-    -   les Icônes « SURFY 2 » représentant les icônes réglementaires de la norme de Sécurité ISO 7010. Leur forme originale peut être carrée ou triangulaire. Les couleurs et formes des icônes "SURFY 2" sont automatiquement renseignées dans Surfy et peuvent être modifiées.
+-	the <P code="itemType:picture" /> field allows you to load the object type photo, which will be visible in the pdf inventory and on the selected object card on the plan.
+-	checking <P code="itemType:displayItemReferenceInMap" /> allows you to display the "Reference" field of each object on the plan.
+-	a particular <P code="itemType:code" /> will give you direct access to the object type by typing it in the search when creating an object.
+-	in the <P code="itemType:icon" /> field, the "Pencil" gives you access to three types of icons:
+    -   "Fontawesome" Icons, visible by checking "show all" or by searching by keyword in English in the search box.
+    -   "SURFY" Icons intended for illustrations added to plans at strategic locations (Toilets, Stairs, Elevators, Copy Points, ...) but which can also be used as classic icons.
+    -   "SURFY 2" Icons representing regulatory icons of the ISO 7010 Safety standard. Their original shape can be square or triangular. The colors and shapes of "SURFY 2" icons are automatically filled in Surfy and can be modified.
 
--	la <P code="itemType:color" /> peut être choisie parmi une sélection, ou par code Hexa ou RGB pour respecter votre charte graphique.
--	la <P code="itemType:height" /> donnera dans ce cas la hauteur du modèle 3D associé, s'il existe.
--	<P code="itemType:description" /> et <P code="itemType:price" /> peuvent être renseignés.
--	<P code="itemType:seatsCount" /> (uniquement pour les assises, sièges, canapés, etc…) et <P code="itemType:carbonFootprint" /> (donnée éventuellement par le fabricant, par objet) peuvent être renseignés et sont cumulés dans Surfy par pièce, étage ou bâtiment.
--	la <P code="itemType:iconShape" /> permet de définir un type d'icône carré, rond ou triangulaire. Les <P code="itemType:iconBackgroundColor" /> et <P code="itemType:iconBorderColor" /> permettent de configurer correctement les icônes multi-couleurs, notamment triangulaires.
--	le <P code="itemType:manufacturer" /> du mobilier peut être renseigné
--	le <P code="itemType:object3dModel" /> permet une visualisation 3D des Icônes issues du type d'icône et placées sur le plan (copieurs, extincteurs, fontaines à eau, portes manteaux). L'orientation de l'icone se fait en mode "édition du plan". Pour plus de lisibilité, la sortie de ce mode remet l'icone en position d'origine mais le modèle 3D sera orienté suivant l'orientation de l'icone en mode "édition du plan".
--	la « Clé externe » permet d'identifier le type d'objet avec une utilisation extérieure à Surfy (interopérabilité avec des applications tiers)
+-	the <P code="itemType:color" /> can be chosen from a selection, or by Hexa or RGB code to respect your graphic charter.
+-	the <P code="itemType:height" /> will in this case give the height of the associated 3D model, if it exists.
+-	<P code="itemType:description" /> and <P code="itemType:price" /> can be filled in.
+-	<P code="itemType:seatsCount" /> (only for seats, chairs, sofas, etc...) and <P code="itemType:carbonFootprint" /> (possibly provided by the manufacturer, per object) can be filled in and are accumulated in Surfy by room, floor or building.
+-	the <P code="itemType:iconShape" /> allows you to define a square, round or triangular icon type. The <P code="itemType:iconBackgroundColor" /> and <P code="itemType:iconBorderColor" /> allow you to properly configure multi-color icons, especially triangular ones.
+-	the furniture <P code="itemType:manufacturer" /> can be filled in
+-	the <P code="itemType:object3dModel" /> allows 3D visualization of Icons from the icon type and placed on the plan (copiers, fire extinguishers, water fountains, coat racks). Icon orientation is done in "plan editing" mode. For better readability, exiting this mode puts the icon back in its original position but the 3D model will be oriented according to the icon orientation in "plan editing" mode.
+-	the "External key" allows you to identify the object type with external use to Surfy (interoperability with third-party applications)
 
-Après validation de la création de type d'objet, le type d'objet correspondant est disponible pour la création d'objets.
+After validating the object type creation, the corresponding object type is available for object creation.
