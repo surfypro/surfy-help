@@ -1,9 +1,9 @@
 {
-  "label": "Affectations aux quartiers",
+  "label": "District Assignments",
   "position": 4,
-  "link": { 
+  "link": {
     "slug": "dimensiontoperson",
     "type": "generated-index",
-    "description": "Les affectations aux quartiers"
+    "description": "District assignments"
   }
 }
