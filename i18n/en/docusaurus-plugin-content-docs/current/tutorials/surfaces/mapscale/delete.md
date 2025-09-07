@@ -2,15 +2,15 @@
 sidebar_position: 3
 ---
 
-# Supprimer l'échelle d'un étage
+# Delete Floor Scale
 
-Pour supprimer l'échelle d'un étage,
+To delete a floor scale,
 
--   cliquer sur l'étage
--   cliquer sur le fond de plan pour faire apparaître les icônes au-dessus du plan
--   cliquer sur l'icône "Gérer l'échelle"
--   cliquer sur "Supprimer l'échelle".
+-   click on the floor
+-   click on the plan background to make the icons appear above the plan
+-   click on the "Manage scale" icon
+-   click on "Delete scale".
 
-:::tip Bon à savoir
-Si l'échelle n'est attribuée qu'à l'étage concerné, celle ci sera détruite et n'apparaitra plus dans les choix d'échelle. Une échelle commune à plusieurs étages ne pourra pas être supprimée, mais sera dissociée de l'étage en cliquant sur "Dissocier l'échelle". L'étage concerné n'aura plus d'échelle mais celle ci sera toujours valide sur les autres étages qui l'utilisent.
+:::tip Good to Know
+If the scale is only assigned to the concerned floor, it will be destroyed and will no longer appear in the scale choices. A scale common to several floors cannot be deleted, but will be dissociated from the floor by clicking on "Dissociate scale". The concerned floor will no longer have a scale but it will still be valid on the other floors that use it.
 :::

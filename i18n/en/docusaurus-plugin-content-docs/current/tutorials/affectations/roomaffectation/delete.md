@@ -2,20 +2,20 @@
 sidebar_position: 3
 ---
 
-# Supprimer une Affectation à un espace
+# Delete a Space Assignment
 
-## Suppression d'affectation individuelle
+## Individual Assignment Deletion
 
-Pour supprimer l'affectation d'une personne à un espace,
+To delete a person's assignment to a space,
 
--   cliquer sur l'espace, la fiche de l'espace s'affiche à gauche du plan
--   cliquer sur l'onglet "Affectations" afin d'afficher les affectations présentes dans l'espace
--   cliquer sur l'icône "Poubelle" en face du nom de la personne XXX à désaffecter : "Supprimer l'affectation au espace XXX"
--   confirmer la suppression
-L'affectation de la personne est supprimée
+-   click on the space, the space card is displayed on the left of the plan
+-   click on the "Assignments" tab to display the assignments present in the space
+-   click on the "Trash" icon in front of the name of person XXX to unassign: "Delete assignment to space XXX"
+-   confirm the deletion
+The person's assignment is deleted
 
-:::tip Bon à savoir
-Supprimer l'affectation d'une personne ne supprime pas la personne. En revanche, supprimer une personne supprime toutes ses affectations !
+:::tip Good to Know
+Deleting a person's assignment does not delete the person. However, deleting a person deletes all their assignments!
 :::
 
 ## Suppression par la liste filtrée des affectations :

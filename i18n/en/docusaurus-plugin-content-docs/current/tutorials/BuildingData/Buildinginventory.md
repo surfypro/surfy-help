@@ -1,19 +1,19 @@
 ---
 sidebar_position: 1
 ---
-# L'inventaire du bâtiment en PDF
+# Building Inventory in PDF
 
-L'inventaire du bâtiment permet de lister le mobilier dans Surfy avec les informations suivantes si elles existent :
+The building inventory allows you to list furniture in Surfy with the following information if they exist:
 
-Par famille d'objet,
+By object family,
 
--   le nom, la description, le prix, le fabricant, la représentation dans Surfy, la photo du type d'objet
--   le nombre d'objet du même type, par étage et au total sur le bâtiment.
+-   the name, description, price, manufacturer, representation in Surfy, the object type photo
+-   the number of objects of the same type, by floor and total on the building.
 
-Pour obtenir l'"inventaire du bâtiment en pdf", depuis la page d'accueil,
+To obtain the "building inventory in pdf", from the home page,
 
--   cliquer sur l'icône au bout de la ligne de couleur du bâtiment concerné
--   choisir "l'inventaire du bâtiment XXX"
+-   click on the icon at the end of the concerned building color line
+-   choose "building inventory XXX"
 
-L'inventaire du bâtiment affiche les informations disponibles.
-Cliquer sur "Télécharger la version PDF" pour exporter l'inventaire en fichier PDF.
+The building inventory displays the available information.
+Click on "Download PDF version" to export the inventory as a PDF file.

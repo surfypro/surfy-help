@@ -2,23 +2,23 @@
 sidebar_position: 2
 ---
 
-# Les graphiques du bâtiment
+# Building Charts
 
-Les graphiques disponibles pour le bâtiment permettent de représenter les informations du "tableau de bord des surfaces" et du "tableau de bord des postes de travail.
+The charts available for the building allow you to represent information from the "surface dashboard" and the "workstation dashboard".
 
-## Le tableau de bord des surfaces
+## Surface Dashboard
 
-Le tableau de bord des surfaces donne les graphiques suivants :
+The surface dashboard provides the following charts:
 
--   Les Surfaces qualifiées par direction réparties par étages 
--   Les Surfaces qualifiées par direction
--   Les Surfaces qualifiées par typologie d'espace
+-   Qualified Surfaces by direction distributed by floors 
+-   Qualified Surfaces by direction
+-   Qualified Surfaces by space typology
 
 
-## Le tableau de bord des postes de travail
+## Workstation Dashboard
 
-Le tableau de bord des postes de travail donne les graphiques suivants :
+The workstation dashboard provides the following charts:
 
--   Le nombre de Postes de travail par direction et par qualification
--   Le nombre de Postes de travail par étage et par qualification
+-   Number of Workstations by direction and by qualification
+-   Number of Workstations by floor and by qualification
 

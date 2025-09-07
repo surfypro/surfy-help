@@ -1,14 +1,14 @@
 ---
 sidebar_position: 3
 ---
-# Supprimer un Campus
+# Delete a Campus
 
-Pour supprimer un campus, depuis le menu de gauche,
+To delete a campus, from the left menu,
 
--   cliquer sur "Espaces" puis "Campus" puis "Lister les campus"
--   cocher la case du campus à supprimer
--   cliquer sur l'icône "Poubelle" en haut de page pour "Supprimer les campus sélectionnés"
+-   click on "Spaces" then "Campus" then "List campuses"
+-   check the box of the campus to delete
+-   click on the "Trash" icon at the top of the page to "Delete selected campuses"
 
-:::tip BON A SAVOIR
-Supprimer un campus ne supprime pas les bâtiments associés au campus. Ces bâtiments ne sont alors plus associés à un campus.
+:::tip GOOD TO KNOW
+Deleting a campus does not delete the buildings associated with the campus. These buildings are then no longer associated with a campus.
 :::

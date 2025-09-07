@@ -1,17 +1,17 @@
 ---
 sidebar_position: 2
 ---
-# Modifier une Affectation à un espace
+# Modify a Space Assignment
 
-## Déplacer l'affectation d'une personne
+## Move a Person's Assignment
 
-Si une personne est déjà affectée à un poste de travail ou à un espace :
+If a person is already assigned to a workstation or to a space:
 
-L'affecter à un autre poste de travail ou espace ouvre une fenêtre listant toutes les affectations de la personne.
-Par défaut, seules les affectations sur le même bâtiment sont cochées pour la suppression.
-En cliquant sur "Supprimer les affectations sélectionnées", les affectations pré existantes sur le même bâtiment seront supprimées.
-Elles seront conservées en cliquant sur "Fermer".
-Les affectations non cochées restent inchangées mais peuvent être cochées pour être supprimées.
+Assigning them to another workstation or space opens a window listing all the person's assignments.
+By default, only assignments on the same building are checked for deletion.
+By clicking on "Delete selected assignments", pre-existing assignments on the same building will be deleted.
+They will be preserved by clicking on "Close".
+Unchecked assignments remain unchanged but can be checked to be deleted.
 
 
 

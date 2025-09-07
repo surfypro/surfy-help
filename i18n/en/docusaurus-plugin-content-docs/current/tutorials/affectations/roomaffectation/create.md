@@ -1,22 +1,22 @@
 ---
 sidebar_position: 1
 ---
-# Créer une Affectation à un espace
-Les affectations aux espaces correspondent à des affectations libres dans un espace défini. On peut retrouver l'emplacement de l'espace occupé par la personne ou connaitre la personne affectée à l'espace choisi en faisant une recherche sur la personne ou sur l'espace.
+# Create a Space Assignment
+Space assignments correspond to free assignments in a defined space. You can find the location of the space occupied by the person or know the person assigned to the chosen space by searching for the person or the space.
 
-L'affectation à un espace se fait toujours à partir de l'espace, auquel on peut affecter une ou plusieurs personnes.
+Assignment to a space is always done from the space, to which you can assign one or more people.
 
-## Affecter une personne à un espace
+## Assign a Person to a Space
 
-Pour affecter une personne à un espace,
+To assign a person to a space,
 
--   cliquer sur l'espace à affecter
--   dans la fiche de l'espace à gauche, cliquer sur "Affecter une personne"
--   cliquer sur la personne dans la liste proposée
--   la personne est affectée à l'espace.
--   Si la personne est déjà affectée par ailleurs, une fenêtre permet de choisir les affectations à supprimer.
+-   click on the space to assign
+-   in the space card on the left, click on "Assign a person"
+-   click on the person in the proposed list
+-   the person is assigned to the space.
+-   If the person is already assigned elsewhere, a window allows you to choose which assignments to delete.
 
-La liste des personnes affectées à un espace ou aux postes de travail de cet espace est disponible en cliquant dans l'espace concerné puis dans l'onglet "Affectations" de la fiche de l'espace.
+The list of people assigned to a space or to the workstations in that space is available by clicking in the concerned space then in the "Assignments" tab of the space card.
 
 
 :::tip Bon à savoir

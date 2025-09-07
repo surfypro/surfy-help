@@ -1,17 +1,17 @@
 ---
 sidebar_position: 3
 ---
-# Supprimer une structure
+# Delete a Structure
 
-## Retirer la structure d'un étage
+## Remove Floor Structure
 
-Pour retirer la structure d'un étage, depuis le plan de l'étage,
+To remove a floor structure, from the floor plan,
 
--   dans le menu contextuel, cliquer sur "modifier l'étage XXX"
--   dans la ligne "Structure", cliquer sur la croix pour retirer la structure de l'étage.
--   sauvegarder les modifications
+-   in the context menu, click on "modify floor XXX"
+-   in the "Structure" line, click on the cross to remove the structure from the floor.
+-   save the modifications
 
-L'étage n'a plus de structure.
+The floor no longer has a structure.
 
 ## Supprimer la structure d'un étage
 

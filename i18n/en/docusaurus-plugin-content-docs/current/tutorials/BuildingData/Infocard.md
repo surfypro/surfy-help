@@ -2,32 +2,32 @@
 sidebar_position: 2
 ---
 
-# Les fiches d'informations
+# Information Cards
 
-Chaque bâtiment, étage ou espace comporte une fiche récapitulative des informations de l'entité considérée.
+Each building, floor or space has a summary card of the information of the considered entity.
 
-## La fiche d'informations du bâtiment
+## Building Information Card
 
-Par défaut, les rôles "Lecteur" n'ont pas accès aux fiches d'informations des bâtiments, mais à des fiches représentant la photo éventuelle du bâtiment, son adresse (si renseignée) et l'accès aux étages.<br />
-Pour visualiser les informations, le rôle "Lecteur" doit être complété par le rôle "Affichage des infos".<br />
-Pour ajouter ce rôle à un utilisateur, voir le chapitre [Modifier le rôle d'un utilisateur](/en/docs/access/intro#modifier-le-rôle-dun-utilisateur)
+By default, "Reader" roles do not have access to building information cards, but to cards representing the possible building photo, its address (if filled in) and access to floors.<br />
+To view the information, the "Reader" role must be supplemented by the "Info Display" role.<br />
+To add this role to a user, see the chapter [Modify User Role](/en/docs/access/intro#modify-user-role)
 
-Pour les personnes disposant d'un rôle "Administrateur" (ou du rôle complémentaire "Affichage des infos") les fiches d'informations des bâtiments principaux sont directement consultables en cliquant sur le logo de l'entreprise en haut à gauche de l'écran.<br />
+For people with an "Administrator" role (or the complementary "Info Display" role) the information cards of main buildings are directly consultable by clicking on the company logo at the top left of the screen.<br />
 
-En cliquant sur l'icône "Les scénarios et projet du bâtiment XXX" en bas à droite de la fiche d'informations d'un bâtiment, on obtient les fiches d'informations des scénarios éventuels du bâtiment considéré.
+By clicking on the "Building XXX scenarios and project" icon at the bottom right of a building's information card, you get the information cards of the possible scenarios of the considered building.
 
-La fiche d'informations du bâtiment est composée des informations suivantes :
+The building information card is composed of the following information:
 
--   Nom du bâtiment
--   Surface qualifiée
--   Nombre de postes de travail
--   Ratio postes de travail
--   Nombre total d'affectations
--   Ratio d'occupation
--   Taux d'occupation
--   Taux de foisonnement
--   Nombre de postes libres
--   Nombre de postes flex
+-   Building name
+-   Qualified surface
+-   Number of workstations
+-   Workstation ratio
+-   Total number of assignments
+-   Occupation ratio
+-   Occupation rate
+-   Foisonnement rate
+-   Number of free workstations
+-   Number of flex workstations
 -   Taux de postes de travail en flex
 -   Nombre de postes de travail partagés
 -   Taux de postes de travail partagés

@@ -1,17 +1,17 @@
 ---
 sidebar_position: 2
 ---
-# Modifier une structure
+# Modify a Structure
 
-## Changer la structure d'un étage
+## Change Floor Structure
 
-Pour changer la structure d'un étage, depuis le plan de l'étage,
+To change a floor structure, from the floor plan,
 
--   dans le menu contextuel, cliquer sur "modifier l'étage XXX"
--   dans la ligne "Structure", cliquer sur le crayon pour sélectionner la structure voulue pour l'étage.
--   sauvegarder les modifications
+-   in the context menu, click on "modify floor XXX"
+-   in the "Structure" line, click on the pencil to select the desired structure for the floor.
+-   save the modifications
 
-La structure de l'étage a été changée.
+The floor structure has been changed.
 
 ## Modifier la forme d'une structure
 

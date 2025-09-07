@@ -2,18 +2,18 @@
 sidebar_position: 1
 ---
 
-# Créer un campus
+# Create a Campus
 
-Un campus est un ensemble de bâtiments regroupés dans une entité "Campus" permettant d'accéder de manière logique à un bâtiment ou groupe de bâtiments suivant sa situation géographique.
+A campus is a set of buildings grouped in a "Campus" entity allowing logical access to a building or group of buildings according to its geographical situation.
 
-Pour créer un campus depuis la page d'accueil, dans le menu de gauche,
+To create a campus from the home page, in the left menu,
 
--   cliquer sur "Espaces" puis "Campus" puis "Créer un Campus"
--   indiquer le <P code="campus:name" /> du campus, et sa <P code="campus:color" /> de représentation
--   renseigner éventuellement l'<P code="campus:address" /> du campus, permettant sa géolocalisation sur une carte
--   valider la création
+-   click on "Spaces" then "Campus" then "Create a Campus"
+-   indicate the campus <P code="campus:name" />, and its <P code="campus:color" /> of representation
+-   optionally fill in the campus <P code="campus:address" />, allowing its geolocation on a map
+-   validate the creation
 
-Le campus est créé, il reste à lui associer des bâtiments.
+The campus is created, it remains to associate buildings with it.
 
 ## Associer un bâtiment à un campus
 

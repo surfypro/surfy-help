@@ -1,20 +1,20 @@
 ---
 sidebar_position: 2
 ---
-# Créer un calque d'affectation
+# Create an Assignment Layer
 
 
-Un calque d'affectation est un calque d'analyse dont le type de calque est associé à un ou plusieurs bâtiments.<br />
-Il permet l'affectation de personnes à des "Quartiers" composés de un ou plusieurs espaces des bâtiments concernés.<br />
+An assignment layer is an analysis layer whose layer type is associated with one or more buildings.<br />
+It allows the assignment of people to "Districts" composed of one or more spaces of the concerned buildings.<br />
 
-Pour plus d'information sur la création d'un calque d'analyse, voir le chapitre [Créer un calque d'analyse](/en/docs/tutorials/dimensionType/create.md)
+For more information on creating an analysis layer, see the chapter [Create an Analysis Layer](/en/docs/tutorials/dimensionType/create.md)
 
-Un calque d'affectation permet de regrouper, qualifier et représenter les espaces par Quartiers sur le plan, afin d'obtenir le cumul des informations, la localisation des espaces regroupés et l'ensemble des affectations des personnes aux Quartiers des bâtiments.
+An assignment layer allows you to group, qualify and represent spaces by Districts on the plan, in order to obtain the accumulation of information, the location of grouped spaces and all person assignments to building Districts.
 
-Les "calques d'affectation" de même nature sont regroupés dans un "type de calque" commun.
-Par exemple, le type de calque "Quartiers Bât A" regroupe les calques d'affectation "Quartier A1", "Quartier A2", "Quartier A3".
+"Assignment layers" of the same nature are grouped in a common "layer type".
+For example, the "Building A Districts" layer type groups the "District A1", "District A2", "District A3" assignment layers.
 
-Pour créer un calque d'affectation, il faut que son type de calque existe.
+To create an assignment layer, its layer type must exist.
 
 ## Créer un type de calque
 

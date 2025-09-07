@@ -2,26 +2,26 @@
 sidebar_position: 3
 ---
 
-# Supprimer un calque d'analyse
+# Delete an Analysis Layer
 
 
-On peut supprimer un calque d'analyse ou un type de calque qui n'est plus utile.
+You can delete an analysis layer or a layer type that is no longer useful.
 
-## Supprimer un type de calque
+## Delete a Layer Type
 
 :::danger Attention
-Supprimer un type de calque supprimera tous les calques associés au type de calque supprimé. Les espaces qualifiés par ces calques perdront l'information du type de calque supprimé et des calques associés.
+Deleting a layer type will delete all layers associated with the deleted layer type. Spaces qualified by these layers will lose the information of the deleted layer type and associated layers.
 :::
 
 
-Pour supprimer un type de calque, depuis la page d'accueil :
+To delete a layer type, from the home page:
 
--   cliquer sur "Administration", "Calques d'analyse", "Types de calque" puis "Lister les types de calque"
--   rechercher dans la liste le type de calque à supprimer
--   cocher la case en début de ligne du type de calque à supprimer
--   cliquer sur l'icône "Poubelle" en haut de page et confirmer
+-   click on "Administration", "Analysis Layers", "Layer Types" then "List layer types"
+-   search in the list for the layer type to delete
+-   check the box at the beginning of the line of the layer type to delete
+-   click on the "Trash" icon at the top of the page and confirm
 
-Après rafraichissement (F5), le type de calque n'apparait plus dans l'icône verticale "Palette".
+After refresh (F5), the layer type no longer appears in the vertical "Palette" icon.
 
 ## Supprimer directement un calque d'analyse
 

@@ -1,22 +1,22 @@
 ---
 sidebar_position: 1
 ---
-# Créer une structure
+# Create a Structure
 
-La structure d'un étage permet de consolider les informations à afficher en 3D en délimitant les contours de l'étage.
-Elle permet également de marquer "l'empreinte" du bâtiment au sol et de géolocaliser précisément le bâtiment en 3D sur une carte type "Maps".
+A floor's structure allows you to consolidate information to display in 3D by delimiting the floor contours.
+It also allows you to mark the building's "footprint" on the ground and precisely geolocate the building in 3D on a "Maps" type map.
 
-Une structure peut être utilisée sur plusieurs étages.
+A structure can be used on several floors.
 
-Pour créer la structure d'un étage,
+To create a floor structure,
 
-depuis le menu de gauche,
+from the left menu,
 
--   cliquer sur "Espaces", "Structures" puis "créer une structure"
--   nommer la <P code="structure:name" /> et valider la création
--   choisir le fond de plan de l'étage en cliquant sur l'icône "Choisir un plan de référence..."
--   cliquer sur l'icône "Plus" pour "Créer la forme de la structure"
--   dessiner la structure autour de l'étage puis sauvegarder la structure
+-   click on "Spaces", "Structures" then "create a structure"
+-   name the <P code="structure:name" /> and validate the creation
+-   choose the floor plan background by clicking on the "Choose a reference plan..." icon
+-   click on the "Plus" icon to "Create the structure shape"
+-   draw the structure around the floor then save the structure
 
 ## Associer la structure à un étage
 

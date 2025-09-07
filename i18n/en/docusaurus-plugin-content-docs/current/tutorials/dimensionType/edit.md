@@ -1,25 +1,25 @@
 ---
 sidebar_position: 2
 ---
-# Modifier un calque d'analyse
+# Modify an Analysis Layer
 
-On peut facilement modifier le nom, la couleur ou le type de calque d'un calque déjà créé dans Surfy.
+You can easily modify the name, color or layer type of a layer already created in Surfy.
 
-## Modifier un type de calque
+## Modify a Layer Type
 
-Pour modifier un type de calque, depuis la page d'accueil :
+To modify a layer type, from the home page:
 
--   cliquer sur "Administration", "Calques d'analyse", "Types de calque" puis "Lister les types de calque"
--   rechercher dans la liste le type de calque à modifier
--   au début de la ligne cliquer sur l'icône et sur "Modifier le type de calque XXX"
+-   click on "Administration", "Analysis Layers", "Layer Types" then "List layer types"
+-   search in the list for the layer type to modify
+-   at the beginning of the line click on the icon and on "Modify layer type XXX"
 
-On peut alors :
+You can then:
 
--   modifier le <P code="dimensionType:name" />, la description du type de calque
--   ajouter ou supprimer un calque au type de calque concerné
--   modifier les calques associés au type de calque en cliquant sur l'icône en début de ligne du calque puis "Modifier le calque d'analyse XXX"
--   associer des bâtiments au type de calque afin d'y créer des calques d'affectation
--   "sauvegarder" les modifications du type de calque.
+-   modify the <P code="dimensionType:name" />, the layer type description
+-   add or remove a layer to the concerned layer type
+-   modify the layers associated with the layer type by clicking on the icon at the beginning of the layer line then "Modify analysis layer XXX"
+-   associate buildings with the layer type to create assignment layers
+-   "save" the layer type modifications.
 
 ## Modifier directement un calque d'analyse
 
