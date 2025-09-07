@@ -2,16 +2,16 @@
 sidebar_position: 2
 ---
 
-# Modifier l'échelle d'un étage 
- 
-## Changer l'échelle d'un étage
+# Modify Floor Scale 
 
-Pour changer l'échelle d'un étage par une autre échelle déjà existante,
+## Change Floor Scale
 
--   accéder à l'étage concerné
--   dans le menu contextuel, cliquer sur "modifier l'étage XXX"
--   sur la ligne "Echelle plan", cliquer sur le crayon et choisir l'échelle correcte.
--   sauvegarder les modifications.
+To change a floor scale by another already existing scale,
+
+-   access the concerned floor
+-   in the context menu, click on "modify floor XXX"
+-   on the "Plan Scale" line, click on the pencil and choose the correct scale.
+-   save the modifications.
 
 
 ## Modifier la valeur de l'échelle d'un étage

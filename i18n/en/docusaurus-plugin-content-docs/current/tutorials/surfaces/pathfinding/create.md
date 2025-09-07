@@ -2,17 +2,17 @@
 sidebar_position: 2
 ---
 
-# Créer un itinéraire
+# Create a Route
 
-Un itinéraire point à point permet d'obtenir le cheminement d'un point d'origine vers un point d'arrivée dans Surfy.
+A point-to-point route allows you to obtain the path from an origin point to a destination point in Surfy.
 
-Le point d'origine est un espace.
-Le point d'arrivée peut être un espace ou un objet. On peut ainsi guider le déplacement de l'utilisateur vers un objet (défibrillateur, extincteur, objet quelconque) ou un espace à atteindre (espace d'affectation d'une personne, espace quelconque).
+The origin point is a space.
+The destination point can be a space or an object. You can thus guide the user's movement towards an object (defibrillator, fire extinguisher, any object) or a space to reach (a person's assignment space, any space).
 
-L'itinéraire est traçé sur les plans Surfy.
-Les informations de distance, temps en marchant, temps en footing sont affichées dans l'info bulle.
-L'itinéraire emprunte les portes et passages existants en évitant les objets trouvés sur sa route.
-Il utilise les connecteurs d'espace pour changer d'étage ou de bâtiment et assurer une continuité de l'itinéraire en intégrant l'utilisation d'escaliers, ascenseurs ou tout autre moyen de déplacement d'un site à un autre (navette, taxi, téléphérique,...)
+The route is traced on Surfy plans.
+Distance information, walking time, running time are displayed in the info bubble.
+The route uses existing doors and passages while avoiding objects found on its path.
+It uses space connectors to change floors or buildings and ensure route continuity by integrating the use of stairs, elevators or any other means of transportation from one site to another (shuttle, taxi, cable car,...)
 
 Pour créer un itinéraire point à point, il faut :
 

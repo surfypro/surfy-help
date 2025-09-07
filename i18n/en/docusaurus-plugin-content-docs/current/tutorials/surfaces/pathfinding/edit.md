@@ -2,14 +2,14 @@
 sidebar_position: 3
 ---
 
-# Modifier un itinéraire
+# Modify a Route
 
-Pour modifier le point d'origine d'un itinéraire,
+To modify the origin point of a route,
 
--   cliquer sur le nouvel espace d'origine
--   cliquer sur l'icône "serpentin" pour "trouver son chemin dans les espaces"
--   cliquer sur "Sélectionner l'espace d'origine"
+-   click on the new origin space
+-   click on the "serpentine" icon to "find your way in spaces"
+-   click on "Select origin space"
 
-Le point d'origine de l'itinéraire est modifié.
+The origin point of the route is modified.
 
-Pour modifier le point d'arrivée d'un itinéraire, pointer la souris sur le nouveau point d'arrivée.
+To modify the destination point of a route, point the mouse at the new destination point.

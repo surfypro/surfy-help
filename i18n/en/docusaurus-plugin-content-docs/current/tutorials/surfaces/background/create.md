@@ -2,10 +2,10 @@
 sidebar_position: 1
 ---
 
-# Créer le fond de plan
+# Create Plan Background
 
-Le fond de plan d'un étage est la référence graphique de l'étage dans Surfy et permet de définir a minima les contours du bâtiment à cet étage, ainsi que l'ensemble des murs porteurs et de la structure. Il peut comporter des cloisons ou un aménagement sur lesquels s'appuyer pour la digitalisation des espaces et du mobilier.
-Le fond de plan doit comporter une échelle qui sera reproduite dans Surfy.
+A floor's plan background is the graphic reference of the floor in Surfy and allows you to define at minimum the building contours at this floor, as well as all load-bearing walls and structure. It can include partitions or layout on which to rely for digitizing spaces and furniture.
+The plan background must include a scale that will be reproduced in Surfy.
 
 ## Créer le fichier png
 

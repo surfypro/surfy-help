@@ -2,9 +2,9 @@
 sidebar_position: 2
 ---
 
-# Modifier une porte ou un passage
+# Modify a Door or Passage
 
-## Modifier la qualification d'un segment
+## Modify Segment Qualification
 
 
 

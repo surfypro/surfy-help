@@ -2,9 +2,9 @@
 sidebar_position: 3
 ---
 
-# Supprimer une porte ou un passage
+# Delete a Door or Passage
 
-## Supprimer la qualification d'un segment
+## Delete Segment Qualification
 
 
 

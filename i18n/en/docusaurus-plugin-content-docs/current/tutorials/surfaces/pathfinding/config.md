@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# Configurer la recherche d'itinéraire
+# Configure Route Search
 
-Un itinéraire point à point permet d'obtenir le cheminement d'un point d'origine vers un point d'arrivée dans Surfy.
+A point-to-point route allows you to obtain the path from an origin point to a destination point in Surfy.
 
 ## La fonctionnalité Pathfinding
 

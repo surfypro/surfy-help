@@ -2,9 +2,9 @@
 sidebar_position: 4
 ---
 
-# Supprimer un itinéraire
+# Delete a Route
 
-Pour supprimer un itinéraire,
--   cliquer sur l'icône verticale "serpentin" pour "trouver son chemin dans les espaces"
--   décocher la case "Activer le tracé du chemin depuis l'espace source"
--   cliquer sur le logo de l'entreprise pour revenir à la page d'accueil
+To delete a route,
+-   click on the vertical "serpentine" icon to "find your way in spaces"
+-   uncheck the "Activate path tracing from source space" box
+-   click on the company logo to return to the home page

@@ -2,12 +2,12 @@
 sidebar_position: 1
 ---
 
-# Créer une porte ou un passage
+# Create a Door or Passage
 
-Créer une porte ou un passage dans Surfy permet de marquer les passages possibles d'un espace à un autre afin de guider l'utilisateur dans son déplacement d'un endroit à un autre par un itinéraire point à point.
+Creating a door or passage in Surfy allows you to mark possible passages from one space to another in order to guide the user in their movement from one place to another by a point-to-point route.
 
-Pour créer un passage entre deux espaces différents, il faut tout d'abord créer un segment commun entre les deux espaces.
-Ce segment commun sera ensuite qualifié avec ou sans porte afin de refléter la réalité.
+To create a passage between two different spaces, you must first create a common segment between the two spaces.
+This common segment will then be qualified with or without a door to reflect reality.
 
 
 ## Création d'un segment commun à deux espaces

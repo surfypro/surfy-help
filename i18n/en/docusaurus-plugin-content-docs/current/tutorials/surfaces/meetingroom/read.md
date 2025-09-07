@@ -2,21 +2,21 @@
 sidebar_position: 2
 ---
 
-# Consulter les espaces de réunion
+# Consult Meeting Rooms
 
-Pour consulter les espaces de réunion, depuis le menu de gauche,
+To consult meeting rooms, from the left menu,
 
--   cliquer sur "Espaces", "Espaces", puis "Voir et naviguer dans les salles de réunion"
+-   click on "Spaces", "Spaces", then "View and navigate in meeting rooms"
 
-Les espaces de réunion sont regroupés et affichés suivant leur représentation sur le plan, accompagnés des informations suivantes:
+Meeting rooms are grouped and displayed according to their representation on the plan, accompanied by the following information:
 
--   le nom de l'espace
--   sa typologie
--   sa capacité
--   son étage et bâtiment d'appartenance
+-   the space name
+-   its typology
+-   its capacity
+-   its floor and building belonging
 
-Le mobilier présent dans l'espace est représenté à l'identique des plans. Passer la souris sur le mobilier permet d'afficher le type d'objet de chaque mobilier dans l'infobulle.
+The furniture present in the space is represented identically to the plans. Passing the mouse over the furniture allows you to display the object type of each furniture in the info bubble.
 
-Les équipements (exemple : "Equipements de service") sont listés sous la représentation de chaque espace de réunion.
+Equipment (example: "Service equipment") is listed under the representation of each meeting room.
 
-Cliquer sur l'icône "carte routière" permet de "localiser l'espace sur le plan" et affiche l'espace dans son contexte sur le plan général de l'étage.
+Clicking on the "road map" icon allows you to "locate the space on the plan" and displays the space in its context on the general floor plan.

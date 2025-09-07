@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# Configurer la gestion des espaces de réunion
+# Configure Meeting Room Management
 
-Pour qu'un espace soit visualisé et accessible depuis la page "Voir et naviquer dans les salles de réunion", il faut que sa typologie d'espace (bulle, box, salle de réunion, ...) soit associée au groupe de typologie d'espace "Espaces de réunion", ou à tout autre groupe de typologie dont le code est "MEETING".
+For a space to be visualized and accessible from the "View and navigate in meeting rooms" page, its space typology (bubble, box, meeting room, ...) must be associated with the "Meeting Spaces" space typology group, or any other typology group whose code is "MEETING".
 
 
 ## Choisir les typologies d'espace à afficher
