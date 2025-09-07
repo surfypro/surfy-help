@@ -1,9 +1,9 @@
 {
-  "label": "Les fonctionnalités de Réservation",
+  "label": "Booking Features",
   "position": 12,
   "link": {
     "slug": "booking",
     "type": "generated-index",
-    "description": "Tout savoir sur le planning de réservation de Surfy"
+    "description": "Everything about Surfy's booking planning"
   }
 }

@@ -1,9 +1,9 @@
 {
-  "label": "Les Types de poste de travail",
+  "label": "Workplace Types",
   "position": 2,
   "link": {
     "slug": "workplacetype",
     "type": "generated-index",
-    "description": "Tout savoir sur le Type de poste de travail"
+    "description": "Everything about workplace types"
   }
 }

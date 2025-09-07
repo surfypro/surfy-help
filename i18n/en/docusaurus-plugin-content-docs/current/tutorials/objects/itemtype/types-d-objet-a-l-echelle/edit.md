@@ -5,84 +5,84 @@ sidebar_position: 2
 
 By modifying an object type, all objects associated with this object type will be modified.
 
-## Modifier les informations du type d'objet
+## Modify Object Type Information
 
-On peut modifier les informations d'un type d'objet en modifiant la fiche du type d'objet :
-On peut lui ajouter sa photo, changer son <P code="itemType:name" />, sa <P code="itemType:color" />, sa hauteur en 3D, renseigner son fabricant, ajouter un modèle 3D, définir des places assises,... Tous les objets créés sur les plans à partir de ce type d'objet seront modifiés.
+You can modify the information of an object type by modifying the object type card:
+You can add its photo, change its <P code="itemType:name" />, its <P code="itemType:color" />, its 3D height, fill in its manufacturer, add a 3D model, define seats,... All objects created on plans from this object type will be modified.
 
-Pour accéder à cette fiche, depuis le menu de gauche,
+To access this card, from the left menu,
 
--   cliquer sur "Mobiliers", "Typologies", "types d'objet" puis "Lister les types d'objet"
--   rechercher le type d'objet en cliquant sur l'icone "Filtrer les types d'objet" en haut à droite de l'écran
--   renseigner le type d'objet à rechercher pour l'isoler dans la liste
--   au début de la ligne du type d'objet, cliquer sur l'icone "Voir plus d'options pour le type d'objet XXX" puis sur "Modifier le type d'objet XXX"
--   modifier les informations du type d'objet à modifier
--   "Sauvegarder" les modifications
+-   click on "Furniture", "Typologies", "Object Types" then "List Object Types"
+-   search for the object type by clicking on the "Filter Object Types" icon at the top right of the screen
+-   fill in the object type to search for to isolate it in the list
+-   at the beginning of the object type line, click on the "See more options for object type XXX" icon then on "Modify object type XXX"
+-   modify the information of the object type to modify
+-   "Save" the modifications
 
-### Modifier la famille du type d'objet
+### Modify Object Type Family
 
-Pour modifier la famille du type d'objet, depuis le menu de gauche,
+To modify the object type family, from the left menu,
 
--   cliquer sur "Mobiliers", "Typologies" puis "Types d'objet" et "Lister les types d'objet"
--   rechercher le type d'objet à modifier en cliquant sur l'icone "Filtrer les types d'objet" en haut à droite de l'écran
--   renseigner le type d'objet à rechercher pour l'isoler dans la liste
--   au début de la ligne du type d'objet, cliquer sur l'icone "Voir plus d'options pour le type d'objet XXX" puis sur "Modifier le type d'objet XXX"
--   modifier la <P code="itemType:itemTypeFamily" /> en cliquant sur le crayon et choisir la nouvelle famille pour le type d'objet concerné
--   sauvegarder les modifications
+-   click on "Furniture", "Typologies" then "Object Types" and "List Object Types"
+-   search for the object type to modify by clicking on the "Filter Object Types" icon at the top right of the screen
+-   fill in the object type to search for to isolate it in the list
+-   at the beginning of the object type line, click on the "See more options for object type XXX" icon then on "Modify object type XXX"
+-   modify the <P code="itemType:itemTypeFamily" /> by clicking on the pencil and choose the new family for the concerned object type
+-   save the modifications
 
 
-## Modifier la forme du type d'objet
+## Modify Object Type Shape
 
-On peut modifier la forme d'un type d'objet, depuis le menu de gauche,
+You can modify the shape of an object type, from the left menu,
 
--   cliquer sur "Mobiliers", "Typologies" puis "types d'objet" et "Lister les types d'objet"
--   rechercher le type d'objet en cliquant sur l'icone "Filtrer les types d'objet" en haut à droite de l'écran
--   renseigner le type d'objet à rechercher pour l'isoler dans la liste
--   au début de la ligne du type d'objet, cliquer sur l'icone "Voir plus d'options pour le type d'objet XXX" puis sur "Editer la forme du type d'objet XXX"
--   la forme actuelle apparait sur le plan.
+-   click on "Furniture", "Typologies" then "Object Types" and "List Object Types"
+-   search for the object type by clicking on the "Filter Object Types" icon at the top right of the screen
+-   fill in the object type to search for to isolate it in the list
+-   at the beginning of the object type line, click on the "See more options for object type XXX" icon then on "Edit object type XXX shape"
+-   the current shape appears on the plan.
 
-En cliquant sur la page, une série d'icônes apparait:
+By clicking on the page, a series of icons appears:
 
--   cliquer sur "Centrer le plan pour tout voir" permet de centrer la forme du type d'objet pour modifications.
--   cliquer sur un sommet de la forme permet de déplacer ce sommet, ou de créer d'autres sommets en cliquant sur "ajouter un sommet".
+-   clicking on "Center the plan to see everything" allows you to center the object type shape for modifications.
+-   clicking on a vertex of the shape allows you to move this vertex, or to create other vertices by clicking on "add a vertex".
 
-### Ajouter un sommet
+### Add a Vertex
 
-Depuis la forme du type d'objet,
+From the object type shape,
 
--   cliquer sur le sommet après lequel rajouter un nouveau sommet
--   cliquer sur l'icône "+" grisée pour "Ajouter un sommet"
--   un sommet supplémentaire est proposé entre deux sommets existants. La touche "Shift" enfoncée permet de libérer le placement du sommet. Les nouveaux sommets créés partiront du sommet sélectionné en rouge pour rejoindre ensuite le sommet en bleu.
--   si le sommet à créer n'est pas entre les deux sommets voulus, choisir le sommet précédent ou suivant afin de créer le sommet au bon endroit de la forme.
--   cliquer sur l'endroit où créer le sommet, le nouveau sommet apparait entre le sommet rouge et le sommet bleu.
--   cliquer sur l'icône "+" grisée afin d' "arrêter l'ajout d'un sommet".
--   une fois la forme modifiée, cliquer en dehors de la forme. Quitter la page sauvegarde la forme.
+-   click on the vertex after which to add a new vertex
+-   click on the grayed "+" icon to "Add a vertex"
+-   an additional vertex is proposed between two existing vertices. The "Shift" key pressed allows you to free the vertex placement. The new vertices created will start from the vertex selected in red to then join the vertex in blue.
+-   if the vertex to create is not between the two desired vertices, choose the previous or next vertex to create the vertex at the right place of the shape.
+-   click on the place where to create the vertex, the new vertex appears between the red vertex and the blue vertex.
+-   click on the grayed "+" icon to "stop adding a vertex".
+-   once the shape is modified, click outside the shape. Leaving the page saves the shape.
 
-### Suprimer un sommet
+### Delete a Vertex
 
--   cliquer sur le sommet à supprimer
--   pour supprimer plusieurs sommets, les sélectionner avec la touche "shift" enfoncée. Les sommets sélectionnés en rouge seront supprimés
--   cliquer sur l'icône "Poubelle" pour "supprimer les sommets sélectionnés".
+-   click on the vertex to delete
+-   to delete several vertices, select them with the "shift" key pressed. The vertices selected in red will be deleted
+-   click on the "Trash" icon to "delete selected vertices".
 
-:::tip Bon à savoir
-On peut accéder directement aux informations ou à la forme d'un type d'objet si celui ci est présent sur le plan: En cliquant sur un des objets du type d'objet, l'icône "Voir plus d'options pour le type d'objet XXX" sur la fiche de l'objet à gauche en début de la ligne "type d'objet" permet d'accéder directement à la fiche ou à la forme du type d'objet.
+:::tip Good to Know
+You can directly access the information or shape of an object type if it is present on the plan: By clicking on one of the objects of the object type, the "See more options for object type XXX" icon on the object card on the left at the beginning of the "object type" line allows you to directly access the card or shape of the object type.
 :::
 
 :::warning Attention
-Modifier la forme d'un type d'objet peut modifier sa position sur les plans, calculée à partir du point central (barycentre) de la forme du type d'objet
+Modifying the shape of an object type can modify its position on plans, calculated from the central point (barycenter) of the object type shape
 :::
 
 
-## Changer le type d'objet d'objets déjà créés
+## Change Object Type of Already Created Objects
 
-Si des objets ont déjà été créés et placés sur les plans, on peut changer le type d'objet de ces objets.
+If objects have already been created and placed on plans, you can change the object type of these objects.
 
-Pour cela:
+For this:
 
--   cliquer sur l'objet dont le type d'objet est à changer
--   dans la fiche de l'objet à gauche, cliquer sur "Modifier" afin de modifier l'objet
--   sur la ligne "type d'objet", cliquer sur l'icône crayon "changer le type de'objet"
--   choisir le nouveau type d'objet
--   sauvegarder les informations et rafraichir (F5)
+-   click on the object whose object type is to be changed
+-   in the object card on the left, click on "Modify" to modify the object
+-   on the "object type" line, click on the pencil icon "change object type"
+-   choose the new object type
+-   save the information and refresh (F5)
 
-L'objet concerné à changé de type d'objet. Il faut éventuellement replacer correctement le nouvel objet si son orientation ou sa forme n'est pas compatible avec le précédent.
+The concerned object has changed object type. You may need to correctly reposition the new object if its orientation or shape is not compatible with the previous one.

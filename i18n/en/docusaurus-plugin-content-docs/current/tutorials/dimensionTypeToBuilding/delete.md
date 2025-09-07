@@ -2,35 +2,35 @@
 sidebar_position: 4
 ---
 
-# Supprimer un calque d'affectation
+# Delete an Assignment Layer
 
-On peut supprimer un calque d'affectation ou un type de calque.
-Ces suppressions entraineront la suppression des affectations aux calques supprimés
+You can delete an assignment layer or a layer type.
+These deletions will result in the deletion of assignments to deleted layers
 
-## Supprimer directement un calque d'affectation
+## Delete an Assignment Layer Directly
 
-On peut supprimer directement un calque d'affectation, depuis la page d'accueil :
+You can delete an assignment layer directly, from the home page:
 
--   cliquer sur "Administration", "Calques d'analyse", "Calques d'analyse", puis "Lister les calques d'analyse".
--   rechercher dans la liste le calque d'affectation à supprimer
--   cocher la case en début de ligne du calque à supprimer
--   cliquer sur l'icône "Poubelle" en haut de page et confirmer
+-   click on "Administration", "Analysis Layers", "Analysis Layers", then "List analysis layers".
+-   search in the list for the assignment layer to delete
+-   check the box at the beginning of the line of the layer to delete
+-   click on the "Trash" icon at the top of the page and confirm
 
-Aprsè rafraichissement (F5), le calque d'affectation est supprimé et n'apparait plus dans les choix de calque pour le type de calque concerné.
+After refresh (F5), the assignment layer is deleted and no longer appears in the layer choices for the concerned layer type.
 
-## Supprimer un type de calque
+## Delete a Layer Type
 
 :::danger Attention
-Supprimer un type de calque supprimera tous les calques associés au type de calque supprimé ainsi que toutes les affectations à ce calque. Les espaces qualifiés par ces calques perdront l'information du type de calque supprimé et des calques associés.
+Deleting a layer type will delete all layers associated with the deleted layer type as well as all assignments to this layer. Spaces qualified by these layers will lose the information of the deleted layer type and associated layers.
 :::
 
 
-Pour supprimer un type de calque, depuis la page d'accueil :
+To delete a layer type, from the home page:
 
--   cliquer sur "Administration", "Calques d'analyse", "Types de calque" puis "Lister les types de calque"
--   rechercher dans la liste le type de calque à supprimer
--   cocher la case en début de ligne du type de calque à supprimer
--   cliquer sur l'icône "Poubelle" en haut de page et confirmer
+-   click on "Administration", "Analysis Layers", "Layer Types" then "List layer types"
+-   search in the list for the layer type to delete
+-   check the box at the beginning of the line of the layer type to delete
+-   click on the "Trash" icon at the top of the page and confirm
 
-Après rafraichissement (F5), le type de calque n'apparait plus dans l'icône verticale "Grille".
+After refresh (F5), the layer type no longer appears in the vertical "Grid" icon.
 

@@ -1,10 +1,9 @@
 {
-  "label": "L'environnement et la sécurité",
+  "label": "Environment and Security",
   "position": 6,
   "link": {
     "slug": "responsability",
     "type": "generated-index",
-    "description": "Gérer la responsabilité sociale et environnementale de l'entreprise"
+    "description": "Manage corporate social and environmental responsibility"
   }
 }
-

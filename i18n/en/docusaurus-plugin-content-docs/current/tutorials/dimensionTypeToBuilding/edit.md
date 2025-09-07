@@ -1,41 +1,41 @@
 ---
 sidebar_position: 3
 ---
-# Modifier un calque d'affectation
+# Modify an Assignment Layer
 
-Un calque d'affectation est un calque d'analyse dont le type de calque est associé à un ou plusieurs bâtiments.
-On peut facilement modifier le nom ou la couleur d'un calque d'affectation déjà créé dans Surfy.
+An assignment layer is an analysis layer whose layer type is associated with one or more buildings.
+You can easily modify the name or color of an assignment layer already created in Surfy.
 
-## Modifier directement un calque d'affectation
+## Modify an Assignment Layer Directly
 
-On peut modifier directement un calque d'affectation, depuis la page d'accueil :
+You can modify an assignment layer directly, from the home page:
 
--   cliquer sur "Administration", "Calques d'analyse", "Calques d'analyse", puis "Lister les calques d'analyse".
--   rechercher dans la liste le calque d'affectation à modifier
--   au début de la ligne du calque concerné, cliquer sur l'icône puis sur "Modifier le calque d'analyse XXX"
--   modifier le <P code="dimension:name" /> du calque d'analyse ou sa <P code="dimension:color" />
--   "sauvegarder" les modifications du calque d'affectation.
+-   click on "Administration", "Analysis Layers", "Analysis Layers", then "List analysis layers".
+-   search in the list for the assignment layer to modify
+-   at the beginning of the concerned layer line, click on the icon then on "Modify analysis layer XXX"
+-   modify the <P code="dimension:name" /> of the analysis layer or its <P code="dimension:color" />
+-   "save" the assignment layer modifications.
 
-Aprsè rafraichissement (F5), le calque d'affectation prend en compte les modifications effectuées.
+After refresh (F5), the assignment layer takes into account the modifications made.
 
-On peut également modifier un calque en modifiant son type de calque :
+You can also modify a layer by modifying its layer type:
 
-## Modifier un type de calque
+## Modify a Layer Type
 
-Pour modifier un type de calque, depuis la page d'accueil :
+To modify a layer type, from the home page:
 
--   cliquer sur "Administration", "Calques d'analyse", "Types de calque" puis "Lister les types de calque"
--   rechercher dans la liste le type de calque à modifier
--   au début de la ligne cliquer sur l'icône et sur "Modifier le type de calque XXX"
+-   click on "Administration", "Analysis Layers", "Layer Types" then "List layer types"
+-   search in the list for the layer type to modify
+-   at the beginning of the line click on the icon and on "Modify layer type XXX"
 
-On peut alors :
+You can then:
 
--   modifier le <P code="dimensionType:name" /> du type de dimension, la description du type de calque
--   ajouter un calque au type de calque concerné en cliquant sur "Créer un calque d'analyse"
--   modifier les calques associés au type de calque en cliquant sur l'icône en début de ligne puis "Modifier le calque d'analyse XXX"
--   supprimer un calque d'analyse associé au type de calque en cochant la case en début de ligne puis "supprimer" par la "Poubelle" en haut de page
--   associer ou retirer un ou plusieurs bâtiments afin de créer un type de calque dédié à l'affectation sur le bon bâtiment en cliquant sur "Créer  un calque d'affectation du bâtiment"
--   "sauvegarder" les modifications du type de calque.
+-   modify the <P code="dimensionType:name" /> of the dimension type, the layer type description
+-   add a layer to the concerned layer type by clicking on "Create an analysis layer"
+-   modify the layers associated with the layer type by clicking on the icon at the beginning of the line then "Modify analysis layer XXX"
+-   delete an analysis layer associated with the layer type by checking the box at the beginning of the line then "delete" by the "Trash" at the top of the page
+-   associate or remove one or more buildings to create a layer type dedicated to assignment on the right building by clicking on "Create a building assignment layer"
+-   "save" the layer type modifications.
 
-Après rechargement des données (icône en haut à droite de l'écran) et rafraichissement (F5), les modifications sont visibles sur les plans et les données des calques.
+After data reload (icon at the top right of the screen) and refresh (F5), the modifications are visible on plans and layer data.
 

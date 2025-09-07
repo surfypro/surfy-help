@@ -1,9 +1,9 @@
 {
-  "label": "L'Itinéraire point à point",
+  "label": "Point-to-Point Routing",
   "position": 10,
   "link": {
     "slug": "pathfinding",
     "type": "generated-index",
-    "description": "Tout comprendre sur l'itinéraire point à point"
+    "description": "Everything about point-to-point routing"
   }
 }

@@ -1,9 +1,9 @@
 {
-  "label": "Les Données du bâtiment",
+  "label": "Building Data",
   "position": 12,
   "link": {
     "slug": "buildingdatas",
     "type": "generated-index",
-    "description": "Les données du bâtiment dans Surfy"
+    "description": "Building data in Surfy"
   }
 }

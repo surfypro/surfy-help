@@ -1,9 +1,9 @@
 {
-  "label": "Le Fond de plan",
+  "label": "Plan Background",
   "position": 5,
   "link": {
     "slug": "background",
     "type": "generated-index",
-    "description": "Tout savoir sur le fond de plan"
+    "description": "Everything about plan background"
   }
 }

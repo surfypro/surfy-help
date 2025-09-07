@@ -1,9 +1,9 @@
 {
-  "label": "Les Types d'objet",
+  "label": "Object Types",
   "position": 1,
   "link": {
     "slug": "itemtype",
     "type": "generated-index",
-    "description": "Tout savoir sur les types d'objet"
+    "description": "Everything about object types"
   }
 }

@@ -23,13 +23,13 @@ To delete a layer type, from the home page:
 
 After refresh (F5), the layer type no longer appears in the vertical "Palette" icon.
 
-## Supprimer directement un calque d'analyse
+## Delete an Analysis Layer Directly
 
-On peut supprimer directement un calque d'analyse, depuis la page d'accueil :
+You can delete an analysis layer directly, from the home page:
 
--   cliquer sur "Administration", "Calques d'analyse", "Calques d'analyse", puis "Lister les calques d'analyse".
--   rechercher dans la liste le calque d'analyse à supprimer
--   cocher la case en début de ligne du calque à supprimer
--   cliquer sur l'icône "Poubelle" en haut de page et confirmer
+-   click on "Administration", "Analysis Layers", "Analysis Layers", then "List analysis layers".
+-   search in the list for the analysis layer to delete
+-   check the box at the beginning of the line of the layer to delete
+-   click on the "Trash" icon at the top of the page and confirm
 
-Aprsè rafraichissement (F5), le calque d'analyse est supprimé et n'apparait plus dans les choix de calque pour le type de calque concerné.
+After refresh (F5), the analysis layer is deleted and no longer appears in the layer choices for the concerned layer type.

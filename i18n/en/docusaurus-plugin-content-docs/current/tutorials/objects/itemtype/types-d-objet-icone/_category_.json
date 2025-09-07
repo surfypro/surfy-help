@@ -1,9 +1,9 @@
 {
-  "label": "Les Types d'objet Icône",
+  "label": "Icon Object Types",
   "position": 4,
   "link": {
     "slug": "iconitemtype",
     "type": "generated-index",
-    "description": "Tout savoir sur le type d'objet Icône"
+    "description": "Everything about icon object types"
   }
 }

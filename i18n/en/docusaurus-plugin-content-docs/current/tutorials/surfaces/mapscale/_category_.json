@@ -1,9 +1,9 @@
 {
-  "label": "L'Echelle",
+  "label": "Scale",
   "position": 6,
   "link": {
     "slug": "mapscale",
     "type": "generated-index",
-    "description": "Tout comprendre sur l'échelle des plans"
+    "description": "Everything about plan scale"
   }
 }

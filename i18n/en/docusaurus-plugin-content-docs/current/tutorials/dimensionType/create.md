@@ -19,53 +19,53 @@ Pour créer un type de calque, depuis la page d'accueil :
 -   Nommer le type de calque dans <P code="dimensionType:name" /> (ex: "Nature des sols")
 -   "valider la création" du type de calque.
 
-Le type de calque étant créé, on peut associer des calques d'analyse à ce type de calque
+The layer type being created, you can associate analysis layers with this layer type
 
-## Créer et associer un calque d'analyse à un type de calque
+## Create and Associate an Analysis Layer with a Layer Type
 
-Une fois que le type de calque est créé ou s'il est déjà existant, on peut créer et lui associer un calque d'analyse:
+Once the layer type is created or if it already exists, you can create and associate an analysis layer with it:
 
--   cliquer sur "Administration", "Calques d'analyse", "Calques d'analyse", puis "Créer un calque d'analyse".
--   renseigner le <P code="dimension:name" /> (ex: "Moquette")
--   choisir le <P code="dimension:dimensionType" /> dans la liste des types de calque en cliquant sur le "crayon" (ex: "Nature des sols")
--   choisir une <P code="dimension:color" /> pour représenter les espaces qualifiés par ce calque d'analyse
--   "valider la création" du calque d'analyse.
+-   click on "Administration", "Analysis Layers", "Analysis Layers", then "Create an analysis layer".
+-   fill in the <P code="dimension:name" /> (ex: "Carpet")
+-   choose the <P code="dimension:dimensionType" /> in the layer type list by clicking on the "pencil" (ex: "Floor Nature")
+-   choose a <P code="dimension:color" /> to represent spaces qualified by this analysis layer
+-   "validate the creation" of the analysis layer.
 
-:::tip Bon à savoir
-On peut également créer des calques d'analyse en modifiant le type de calque afin de lui associer directement les calques à créer : Pour cela, il faut "Modifier le type de calque XXX" puis "Créer un calque d'analyse" et lui donner son nom et sa couleur. Le calque créé aura par défaut le type de calque XXX en modification.
+:::tip Good to Know
+You can also create analysis layers by modifying the layer type to directly associate the layers to create: For this, you need to "Modify layer type XXX" then "Create an analysis layer" and give it its name and color. The created layer will have the layer type XXX in modification by default.
 :::
 
-Après rafraichissement (F5), le calque est disponible pour la qualification des espaces.
+After refresh (F5), the layer is available for space qualification.
 
-## Qualifier un espace par un calque d'analyse
+## Qualify a Space by an Analysis Layer
 
-Pour qualifier un espace par un calque d'analyse,
+To qualify a space by an analysis layer,
 
--   sélectionner l'espace à qualifier
--   cliquer sur "Modifier" dans la fiche de la pièce, à gauche du plan
--   dans le type de calque voulu, choisir le calque adapté pour l'espace sélectionné
--   L'espace sélectionné est qualifié par le calque choisi, la sauvegarde est automatique.
+-   select the space to qualify
+-   click on "Modify" in the room card, to the left of the plan
+-   in the desired layer type, choose the appropriate layer for the selected space
+-   The selected space is qualified by the chosen layer, saving is automatic.
 
-:::tip Bon à savoir
-La sauvegarde automatique des calques permet une qualification rapide des espaces en cliquant et qualifiant directement l'espace suivant, et ainsi de suite sans avoir à "modifier" et "sauvegarder" chaque espace
+:::tip Good to Know
+Automatic layer saving allows rapid space qualification by clicking and qualifying the next space directly, and so on without having to "modify" and "save" each space
 :::
 
-## Visualiser les calques d'analyse
+## Visualize Analysis Layers
 
-L'icône verticale "Palette" permet de visualiser sur le plan tous les calques d'analyse présents sur l'étage.
-Après recalcul des données (icône en haut à droite de l'écran "Recharger les données du plan") et rafraichissement (F5), les données cumulées pour chaque calque sont disponibles en ouvrant le papillon en face de chaque calque, ou en ouvrant le papillon global pour l'ensemble des calques présents.
+The vertical "Palette" icon allows you to visualize on the plan all analysis layers present on the floor.
+After data recalculation (icon at the top right of the screen "Reload plan data") and refresh (F5), the accumulated data for each layer is available by opening the butterfly in front of each layer, or by opening the global butterfly for all present layers.
 
-## Rapport des données des calques d'analyse
+## Analysis Layer Data Report
 
-Le rapport des données des calques d'analyse est disponible pour chaque bâtiment :
--   depuis la page d'accueil, cliquer sur l'icône en bout de ligne de couleur du bâtiment concerné
--   cliquer sur "Tableau de bord pour le bâtiment XXX"
--   cliquer sur "Rapport des calques d'analyse des espaces du bâtiment XXX"
+The analysis layer data report is available for each building:
+-   from the home page, click on the icon at the end of the concerned building color line
+-   click on "Dashboard for building XXX"
+-   click on "Building XXX space analysis layers report"
 
-Le fichier Excel obtenu contient toutes les données des espaces liés aux calques d'analyse du bâtiment.
+The obtained Excel file contains all the data of spaces linked to the building's analysis layers.
 
 
-:::tip Bon à savoir
-Depuis la page d'accueil, "Lister les bâtiments" dans le menu contextuel permet de sélectionner plusieurs bâtiments et d'obtenir les rapports du tableau de bord sur l'ensemble des bâtiments sélectionnés.
+:::tip Good to Know
+From the home page, "List buildings" in the context menu allows you to select multiple buildings and obtain dashboard reports on all selected buildings.
 :::
 

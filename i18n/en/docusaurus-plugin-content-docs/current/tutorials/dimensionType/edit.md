@@ -21,14 +21,14 @@ You can then:
 -   associate buildings with the layer type to create assignment layers
 -   "save" the layer type modifications.
 
-## Modifier directement un calque d'analyse
+## Modify an Analysis Layer Directly
 
-On peut modifier directement un calque d'analyse, depuis la page d'accueil :
+You can modify an analysis layer directly, from the home page:
 
--   cliquer sur "Administration", "Calques d'analyse", "Calques d'analyse", puis "Lister les calques d'analyse".
--   rechercher dans la liste le calque d'analyse à modifier
--   au début de la ligne du calque concerné, cliquer sur l'icône puis sur "Modifier le calque d'analyse XXX"
--   modifier le <P code="dimension:name" /> du calque d'analyse, sa <P code="dimension:color" /> ou son <P code="dimension:dimensionType" /> associé
--   "sauvegarder" les modifications du calque d'analyse.
+-   click on "Administration", "Analysis Layers", "Analysis Layers", then "List analysis layers".
+-   search in the list for the analysis layer to modify
+-   at the beginning of the concerned layer line, click on the icon then on "Modify analysis layer XXX"
+-   modify the <P code="dimension:name" /> of the analysis layer, its <P code="dimension:color" /> or its associated <P code="dimension:dimensionType" />
+-   "save" the analysis layer modifications.
 
-Aprsè rafraichissement (F5), le calque d'analyse prend en compte les modifications effectuées.
+After refresh (F5), the analysis layer takes into account the modifications made.
