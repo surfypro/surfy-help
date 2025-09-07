@@ -1,23 +1,23 @@
 ---
 sidebar_position: 1
 ---
-# Créer un calque d'analyse
+# Create an Analysis Layer
 
-Un calque d'analyse permet de regrouper, qualifier et représenter les espaces sur le plan afin d'obtenir le cumul des informations et la localisation des espaces regroupés.
-Les "calques d'analyse" de même nature sont regroupés dans un "type de calque" commun.
-Par exemple, le type de calque "Nature des sols" regroupe les calques d'analyse "Moquette", "Carrelage" ou "Lino".
+An analysis layer allows you to group, qualify and represent spaces on the plan in order to obtain the accumulation of information and the location of grouped spaces.
+"Analysis layers" of the same nature are grouped in a common "layer type".
+For example, the "Floor Nature" layer type groups the "Carpet", "Tiles" or "Linoleum" analysis layers.
 
-Pour créer un calque d'analyse, il faut que son type de calque existe.
+To create an analysis layer, its layer type must exist.
 
 <Youtube code="G3d1bubX8FU"/>
 
-## Créer un type de calque
+## Create a Layer Type
 
-Pour créer un type de calque, depuis la page d'accueil :
+To create a layer type, from the home page:
 
--   cliquer sur "Administration", "Calques d'analyse", "Types de calque" puis "Créer un type de calque".
--   Nommer le type de calque dans <P code="dimensionType:name" /> (ex: "Nature des sols")
--   "valider la création" du type de calque.
+-   click on "Administration", "Analysis Layers", "Layer Types" then "Create a layer type".
+-   Name the layer type in <P code="dimensionType:name" /> (ex: "Floor Nature")
+-   "validate the creation" of the layer type.
 
 The layer type being created, you can associate analysis layers with this layer type
 

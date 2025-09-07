@@ -1,9 +1,9 @@
 {
-  "label": "Les Centres de coût",
+  "label": "Cost Centers",
   "position": 8,
   "link": {
     "slug": "costcenters",
     "type": "generated-index",
-    "description": "Les centres de coût dans Surfy"
+    "description": "Cost centers in Surfy"
   }
 }
