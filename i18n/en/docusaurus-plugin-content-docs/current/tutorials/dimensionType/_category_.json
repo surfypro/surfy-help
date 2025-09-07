@@ -1,9 +1,9 @@
 {
-  "label": "Les Calques d'analyse",
+  "label": "Analysis Layers",
   "position": 6,
   "link": {
     "slug": "dimensiontypes",
     "type": "generated-index",
-    "description": "Tout savoir sur les calques d'analyse"
+    "description": "Everything about analysis layers"
   }
 }

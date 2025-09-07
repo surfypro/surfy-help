@@ -15,24 +15,24 @@ Unchecked assignments remain unchanged but can be checked to be deleted.
 
 
 
-## Utiliser la Matrice de transfert
+## Use the Transfer Matrix
 
 <Youtube code="GN9jhWo29x4"/>
 
-La matrice de transfert permet de déménager une équipe d'un espace vers un autre espace, ou de postes de travail vers d'autres postes de travail sur l'ensemble des bâtiments digitalisés dans Surfy.
+The transfer matrix allows you to move a team from one space to another space, or from workstations to other workstations across all digitized buildings in Surfy.
 
 
-### Créer la matrice de transfert
+### Create the Transfer Matrix
 
--   sélectionner les espaces dans lesquelles sont actuellement les équipes à déménager
--   la touche "shift" permet de sélectionner plusieurs espaces.
--   les espaces sont cumulés à gauche de l'écran.
--   sélectionner l'ensemble des espaces concernés,
+-   select the spaces where the teams to move are currently located
+-   the "shift" key allows you to select multiple spaces.
+-   spaces are accumulated on the left of the screen.
+-   select all concerned spaces,
 -   cliquer sur l'icône "créer une matrice de transfert dans Excel permettant de réaliser facilement les déplacements de mes collaborateurs". 
 -   Ouvrir le fichier Excel téléchargé.
 
 
-### Compléter la matrice de transfert
+### Complete the Transfer Matrix
 
 Le fichier Excel comporte 2 onglets:
 
