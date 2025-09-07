@@ -372,43 +372,43 @@
     "description": "The generated-index page description for category L'environnement et la sécurité in sidebar s1"
   },
   "sidebar.help-sidebar.category.Se connecter": {
-    "message": "Se connecter",
+    "message": "Connect",
     "description": "The label for category Se connecter in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Se connecter.link.generated-index.description": {
-    "message": "Comment se connecter à Surfy avec Google, Microsoft ou Surfy",
+    "message": "How to connect to Surfy with Google, Microsoft or Surfy",
     "description": "The generated-index page description for category Se connecter in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Les Tutoriels": {
-    "message": "Les Tutoriels",
+    "message": "Tutorials",
     "description": "The label for category Les Tutoriels in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Les Tutoriels.link.generated-index.description": {
-    "message": "Les tutoriels accompagnent l'utilisateur dans l'apprentissage d'une fonctionnalité.",
+    "message": "Tutorials guide users through learning a feature.",
     "description": "The generated-index page description for category Les Tutoriels in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Les Surfaces": {
-    "message": "Les Surfaces",
+    "message": "Surfaces",
     "description": "The label for category Les Surfaces in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Les Surfaces.link.generated-index.description": {
-    "message": "Les Surfaces dans Surfy",
+    "message": "Surfaces in Surfy",
     "description": "The generated-index page description for category Les Surfaces in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Les Campus": {
-    "message": "Les Campus",
+    "message": "Campuses",
     "description": "The label for category Les Campus in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Les Campus.link.generated-index.description": {
-    "message": "5 minutes pour comprendre les Campus",
+    "message": "5 minutes to understand Campuses",
     "description": "The generated-index page description for category Les Campus in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Les Bâtiments": {
-    "message": "Les Bâtiments",
+    "message": "Buildings",
     "description": "The label for category Les Bâtiments in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Les Bâtiments.link.generated-index.description": {
-    "message": "5 minutes pour comprendre les bâtiments",
+    "message": "5 minutes to understand buildings",
     "description": "The generated-index page description for category Les Bâtiments in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Les Etages": {
@@ -428,19 +428,19 @@
     "description": "The generated-index page description for category Les Espaces in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Le Fond de plan": {
-    "message": "Le Fond de plan",
+    "message": "Plan Background",
     "description": "The label for category Le Fond de plan in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Le Fond de plan.link.generated-index.description": {
-    "message": "Tout savoir sur le fond de plan",
+    "message": "Everything about plan background",
     "description": "The generated-index page description for category Le Fond de plan in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.L'Echelle": {
-    "message": "L'Echelle",
+    "message": "Scale",
     "description": "The label for category L'Echelle in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.L'Echelle.link.generated-index.description": {
-    "message": "Tout comprendre sur l'échelle des plans",
+    "message": "Everything about plan scale",
     "description": "The generated-index page description for category L'Echelle in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Les Structures": {
@@ -468,7 +468,7 @@
     "description": "The generated-index page description for category Les Espaces de réunion in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.L'Itinéraire point à point": {
-    "message": "L'Itinéraire point à point",
+    "message": "Point-to-Point Routing",
     "description": "The label for category L'Itinéraire point à point in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.L'Itinéraire point à point.link.generated-index.description": {
@@ -476,11 +476,11 @@
     "description": "The generated-index page description for category L'Itinéraire point à point in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Le Mobilier": {
-    "message": "Le Mobilier",
+    "message": "Furniture",
     "description": "The label for category Le Mobilier in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Le Mobilier.link.generated-index.description": {
-    "message": "Tout savoir sur le mobilier",
+    "message": "Everything about furniture",
     "description": "The generated-index page description for category Le Mobilier in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Les Familles de mobilier": {
@@ -568,7 +568,7 @@
     "description": "The label for category Les Organisations in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Les Organisations.link.generated-index.description": {
-    "message": "Les organisations dans Surfy",
+    "message": "Organizations in Surfy",
     "description": "The generated-index page description for category Les Organisations in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Les Affectations": {
