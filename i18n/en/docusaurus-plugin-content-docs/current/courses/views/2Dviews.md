@@ -3,61 +3,61 @@ sidebar_position: 2
 ---
 # Display Plans in 2D
 
-## Visualiser un plan en 2D
+## View a Plan in 2D
 
-Pour visualiser un plan en 2D depuis la page d'accueil, cliquer sur le nom de l'étage du bâtiment concerné.
-Si le plan à afficher concerne un scénario, cliquer sur l'icône "les scénarios et projets du bâtiment XXX" en bas à droite de la fiche de son bâtiment d'origine puis cliquer sur l'étage voulu.
+To view a plan in 2D from the home page, click on the floor name of the concerned building.
+If the plan to display concerns a scenario, click on the "building XXX scenarios and projects" icon at the bottom right of its original building card then click on the desired floor.
 
-On peut afficher le plan 2D depuis le menu de gauche, en cliquant sur "Bâtiments" puis sur le bâtiment concerné.
-Cliquer alors sur l'étage à afficher, ou sur l'icône "les scénarios et projets du bâtiment XXX" puis sur l'étage voulu.
+You can display the 2D plan from the left menu, by clicking on "Buildings" then on the concerned building.
+Then click on the floor to display, or on the "building XXX scenarios and projects" icon then on the desired floor.
 
-Le plan de l'étage est visualisé suivant la [Vision](/en/docs/courses/views/planviews.md) utilisée.
+The floor plan is visualized according to the [Vision](/en/docs/courses/views/planviews.md) used.
 
-Les informations et données liées au plan sont affichées sur la partie gauche de l'écran et peuvent être réduites en cliquant sur l'icône verticale "Fermer le menu du plan".
-Le menu à gauche de l'écran (Menu Listes) peut également être réduit en cliquant sur les trois traits horizontaux "Réduire le menu" sous le logo de l'entreprise en haut à gauche de l'écran.
+Information and data related to the plan are displayed on the left part of the screen and can be reduced by clicking on the vertical "Close plan menu" icon.
+The left menu of the screen (List Menu) can also be reduced by clicking on the three horizontal lines "Reduce menu" under the company logo at the top left of the screen.
 
-## Gérer le texte d'affichage des espaces
+## Manage Space Display Text
 
-Pour afficher les informations des espaces sur le plan, depuis le plan de l'étage,
+To display space information on the plan, from the floor plan,
 
--   cliquer sur l'icône "Gérer le texte d'affichage des espaces" au dessus du plan
--   une fiche apparait à droite de l'écran, comportant les onglets "PLAN" et "INFOBULLE".
+-   click on the "Manage space display text" icon above the plan
+-   a card appears on the right of the screen, with "PLAN" and "TOOLTIP" tabs.
 
-L'onglet "PLAN" permet le choix d'affichage des informations : 
-    -   des "ESPACES" en cochant les informations des espaces à afficher sur le plan
-    -   des "PERSONNES" dont le type d'affectation est sélectionné dans l'onglet "ESPACES", avec ou sans leur profil sécurité.
+The "PLAN" tab allows the choice of information display: 
+    -   "SPACES" by checking the space information to display on the plan
+    -   "PEOPLE" whose assignment type is selected in the "SPACES" tab, with or without their security profile.
 
-L'onglet "INFOBULLE" permet le choix d'affichage des informations de l'infobulle affichée au passage de la souris sur le plan.
+The "TOOLTIP" tab allows the choice of tooltip information display when hovering over the plan.
 
- On peut changer l'ordre d'affichage des informations en glissant-déplaçant le signe "=" de bas en haut.
+ You can change the display order of information by drag-moving the "=" sign from bottom to top.
 
-## Gérer le texte d'affichage des postes de travail
+## Manage Workstation Display Text
 
-Pour afficher les informations des postes de travail sur le plan, depuis le plan de l'étage,
+To display workstation information on the plan, from the floor plan,
 
--   cliquer sur l'icône "Gérer le texte d'affichage des postes de travail" au dessus du plan
--   une fiche apparait à droite de l'écran, comportant les onglets "POSTES DE TRAVAIL" et "PERSONNES".
+-   click on the "Manage workstation display text" icon above the plan
+-   a card appears on the right of the screen, with "WORKSTATIONS" and "PEOPLE" tabs.
 
-L'onglet "POSTES DE TRAVAIL" permet le choix d'affichage des informations des postes de travail, ainsi que des personnes affectées aux postes de travail et leurs informations sélectionnées dans l'onglet adjacent "PERSONNES".
+The "WORKSTATIONS" tab allows the choice of workstation information display, as well as people assigned to workstations and their information selected in the adjacent "PEOPLE" tab.
 
-L'onglet "PERSONNES" permet le choix d'affichage des informations des personnes affectées aux postes de travail. Ces personnes ne sont affichées que si l'option "Afficher les personnes" est validée dans l'onglet "POSTES DE TRAVAIL".
+The "PEOPLE" tab allows the choice of information display for people assigned to workstations. These people are only displayed if the "Display people" option is validated in the "WORKSTATIONS" tab.
 
- On peut changer l'ordre d'affichage des informations en glissant-déplaçant le signe "=" de bas en haut.
+ You can change the display order of information by drag-moving the "=" sign from bottom to top.
 
 
-## Gérer la taille des polices d'affichage
+## Manage Display Font Size
 
-Pour changer la taille des polices d'affichage des espaces ou des objets, depuis le plan de l'étage,
+To change the display font size of spaces or objects, from the floor plan,
 
--   cliquer sur l'icône "Gérer l'échelle" au dessus du plan puis :
-    -   modifier la "Taille du texte des espaces"
-    -   modifier la "Taille du texte sur les objets"
+-   click on the "Manage scale" icon above the plan then:
+    -   modify the "Space text size"
+    -   modify the "Object text size"
 
-Dans tous les choix de taille,
+In all size choices,
 
-        -   cliquer sur la coche verte permet de valider la taille de la police d'affichage jusqu'au prochain changement.
-        -   cliquer sur la croix rouge annule le changement de taille de police d'affichage.
-        -   ne rien cocher permet de garder la taille modifiée de la police jusqu'au prochain rafraichissement (F5). La taille revient alors à la dernière valeur validée avec la coche verte.
+        -   clicking on the green checkmark allows you to validate the display font size until the next change.
+        -   clicking on the red cross cancels the display font size change.
+        -   checking nothing allows you to keep the modified font size until the next refresh (F5). The size then returns to the last value validated with the green checkmark.
 
 ## Modifier la taille des icônes sur le plan
 

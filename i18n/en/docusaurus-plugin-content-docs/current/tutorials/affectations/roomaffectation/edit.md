@@ -28,48 +28,48 @@ The transfer matrix allows you to move a team from one space to another space, o
 -   the "shift" key allows you to select multiple spaces.
 -   spaces are accumulated on the left of the screen.
 -   select all concerned spaces,
--   cliquer sur l'icône "créer une matrice de transfert dans Excel permettant de réaliser facilement les déplacements de mes collaborateurs". 
--   Ouvrir le fichier Excel téléchargé.
+-   click on the icon "create a transfer matrix in Excel to easily carry out my collaborators' moves". 
+-   Open the downloaded Excel file.
 
 
 ### Complete the Transfer Matrix
 
-Le fichier Excel comporte 2 onglets:
+The Excel file has 2 tabs:
 
--   L'onglet "affectations aux postes de travail" liste les personnes avec leur affectation actuelle : poste de travail, espace, étage et bâtiment, ainsi que les quatre colonnes vides de l'affectation d'arrivée : poste de travail, espace, étage et bâtiment.
--   compléter les informations d'affectation au poste de travail d'arrivée
--   enregistrer le fichier.
+-   The "workstation assignments" tab lists people with their current assignment: workstation, space, floor and building, as well as the four empty columns of the destination assignment: workstation, space, floor and building.
+-   complete the destination workstation assignment information
+-   save the file.
 
--   L'onglet "affectations d'espace" liste les personnes avec leur affectation à l'espace actuelle : espace, étage et bâtiment, ainsi que les trois colonnes vides de l'affectation d'arrivée : espace, étage et bâtiment. 
--   compléter les informations d'affectation à l'espace d'arrivée
--   enregistrer le fichier.
+-   The "space assignments" tab lists people with their current space assignment: space, floor and building, as well as the three empty columns of the destination assignment: space, floor and building. 
+-   complete the destination space assignment information
+-   save the file.
 
-La matrice ne transfère pas d'affectation au poste de travail vers une affectation à l'espace et vice versa.
+The matrix does not transfer workstation assignments to space assignments and vice versa.
 
 :::warning Important
-Les colonnes "Identifiant" ou "Id" ne doivent pas être modifiées ni supprimées. Elles sont déterminantes pour le bon déroulement du transfert.
-Les informations des personnes ne peuvent pas être modifiées dans cette matrice.
-Les seules informations à renseigner sont les colonnes de l'affectation d'arrivée.
+The "Identifier" or "Id" columns must not be modified or deleted. They are crucial for the proper execution of the transfer.
+Person information cannot be modified in this matrix.
+The only information to fill in are the destination assignment columns.
 :::
 
 
-### Importer la matrice de transfert
+### Import the Transfer Matrix
 
-Une fois complété, le fichier est importé suivant l'onglet qui est utilisé.
-Si les deux onglets ont été utilisés, les deux imports sont nécessaires.
+Once completed, the file is imported according to the tab that is used.
+If both tabs have been used, both imports are necessary.
 
-Si l'onglet "Affectations aux postes de travail" a été utilisé,
+If the "Workstation Assignments" tab has been used,
 
--   dans le menu de gauche, cliquer sur "affectations", "affectations aux postes de travail", puis "importer les Matrices de transfert des postes de travail".
--   déplacer et glisser le fichier Excel dans la zone prévue.
--   Surfy indique les modifications détectées à appliquer
--   cocher tout ou partie des lignes proposées et mettre à jour.
--   Les personnes ont été déplacées aux postes de travail correspondants.
+-   in the left menu, click on "assignments", "workstation assignments", then "import workstation transfer matrices".
+-   move and drag the Excel file into the designated area.
+-   Surfy indicates the detected modifications to apply
+-   check all or part of the proposed lines and update.
+-   People have been moved to the corresponding workstations.
 
-Si l'onglet "Affectations d'espace" a été utilisé,
+If the "Space Assignments" tab has been used,
 
--   dans le menu de gauche, cliquer sur "affectations", "affectations d'espace", puis "importer les Matrices de transfert des espaces".
--   déplacer et glisser le fichier Excel dans la zone prévue.
--   Surfy indique les modifications détectées à appliquer
--   cocher tout ou partie des lignes proposées et mettre à jour.
--   Les personnes ont été déplacées aux espaces correspondants.
+-   in the left menu, click on "assignments", "space assignments", then "import space transfer matrices".
+-   move and drag the Excel file into the designated area.
+-   Surfy indicates the detected modifications to apply
+-   check all or part of the proposed lines and update.
+-   People have been moved to the corresponding spaces.

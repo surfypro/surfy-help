@@ -4,33 +4,33 @@ sidebar_position: 1
 
 
 
-# Créer l'échelle d'un étage
+# Create a Floor Scale
 
 <Youtube code="NEuqxKqpIJM"/>
 
-Pour créer l'échelle d'un étage dont le fond de plan est déjà entré dans Surfy,
+To create the scale of a floor whose plan background is already entered in Surfy,
 
--   cliquer sur l'étage
--   cliquer sur le fond de plan pour faire apparaître les icônes au-dessus du plan
--   cliquer sur l'icône "Gérer l'échelle"
--   zommer sur le segment de l'échelle en référence sur le fond de plan
--   cliquer sur le début du segment de l'échelle, un trait rouge apparaît.
--   cliquer sur la deuxième extrémité du segment de l'échelle
--   le segment de l'échelle est défini
--   nommer éventuellement l'<P code="mapScale:name" /> pour une utilisation sur d'autres étages.
--   renseigner la <P code="mapScale:distance" /> correspondante en mètres dans la case "Distance"
--   valider la valeur entrée en cliquant sur la coche verte.
+-   click on the floor
+-   click on the plan background to make the icons above the plan appear
+-   click on the "Manage scale" icon
+-   zoom on the scale segment in reference on the plan background
+-   click on the beginning of the scale segment, a red line appears.
+-   click on the second end of the scale segment
+-   the scale segment is defined
+-   optionally name the <P code="mapScale:name" /> for use on other floors.
+-   fill in the corresponding <P code="mapScale:distance" /> in meters in the "Distance" box
+-   validate the entered value by clicking on the green checkmark.
 
 
-Une fois votre échelle validée vous pouvez commencer à digitaliser vos espaces.
-Tous les espaces ou le mobilier dessinés dans l'étage se baseront sur cette échelle.
+Once your scale is validated you can start digitizing your spaces.
+All spaces or furniture drawn on the floor will be based on this scale.
 
-:::tip Bon à savoir
-S'il n'existe pas de segment d'échelle dessiné sur le fond de plan, on peut utiliser la longueur d'un mur porteur mesuré sur place ou toute autre dimension fiable pour placer le segment et reporter la longueur dans la case "Distance".
+:::tip Good to Know
+If there is no scale segment drawn on the plan background, you can use the length of a load-bearing wall measured on site or any other reliable dimension to place the segment and report the length in the "Distance" box.
 :::
 
-:::tip Astuce
-Si on a digitalisé des espaces ou du mobilier avant d'avoir créé l'échelle, on peut créer celle ci a posteriori. Après rafraichissement, les données s'ajusteront à la nouvelle échelle.
+:::tip Tip
+If you have digitized spaces or furniture before creating the scale, you can create it afterwards. After refresh, the data will adjust to the new scale.
 :::
 
 

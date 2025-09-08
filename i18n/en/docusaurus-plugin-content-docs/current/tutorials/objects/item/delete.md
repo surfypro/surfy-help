@@ -13,14 +13,14 @@ To delete an object,
 Deleting the object results in the deletion of the <P code="item:reference" />, <P code="item:code" /> and person association information of the object.
 :::
 
-## Supprimer un groupe d'objet
+## Delete a Group of Objects
 
-Pour supprimer un groupe d'objet sur un plan,
+To delete a group of objects on a plan,
 
--   cliquer sur le premier objet à supprimer
--   enfoncer la touche "shift" et cliquer sur les autres objets à supprimer
--   la liste des objets sélectionnés s'affiche à gauche de l'écran
--   cocher tous les objets à supprimer
--   cliquer sur l'icone "supprimer les objets sélectionnés" au dessus de la liste, et confirmer
+-   click on the first object to delete
+-   press the "shift" key and click on the other objects to delete
+-   the list of selected objects is displayed on the left of the screen
+-   check all objects to delete
+-   click on the "delete selected objects" icon above the list, and confirm
 
 

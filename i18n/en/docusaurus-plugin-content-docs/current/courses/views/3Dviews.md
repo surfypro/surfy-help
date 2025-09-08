@@ -4,70 +4,70 @@ sidebar_position: 3
 
 # Display Plans in 3D
 
-## Afficher le plan 3D d'un étage
+## Display a Floor Plan in 3D
 
-Par défaut, les plans d'étage sont affichés en 2D dans Surfy.
-Cliquer pour [Visualiser un plan d'étage en 2D](/en/docs/courses/views/2Dviews.md#visualiser-un-plan-en-2d)
+By default, floor plans are displayed in 2D in Surfy.
+Click to [View a floor plan in 2D](/en/docs/courses/views/2Dviews.md#visualiser-un-plan-en-2d)
 
-Pour obtenir le plan en 3D d'un étage, à partir du plan 2D de l'étage,
+To get the 3D plan of a floor, from the 2D plan of the floor,
 
--   cliquer dans le menu contextuel (case grise en dessous de la loupe de recherche)
--   choisir "Le plan de l'étage XXX en 3D"
+-   click in the context menu (gray box below the search magnifying glass)
+-   choose "Floor XXX plan in 3D"
 
-Le plan de l'étage apparait en 3D en vue zénithale
+The floor plan appears in 3D in zenith view
 
--   cliquer sur l'icône verticale "engrenage" afin de "voir les options du plan"
--   choisir le type de représentation des cloisons (avec cloisons, sans cloison ou cloisons à mi-hauteur)
--   la représentation "Cuby" remplace chaque espace par un cube reprenant la couleur du calque de l'espace
+-   click on the vertical "gear" icon to "view plan options"
+-   choose the type of partition representation (with partitions, without partition or half-height partitions)
+-   the "Cuby" representation replaces each space with a cube taking the color of the space layer
 
-La molette de la souris permet d'ajuster la taille du plan 3D.
-Le clic1 de la souris permet le déplacement du plan 3D dans la fenêtre de l'écran
-Le clic2 de la souris permet d'incliner et d'orienter le plan dans l'espace.
+The mouse wheel allows you to adjust the size of the 3D plan.
+Mouse click1 allows you to move the 3D plan in the screen window
+Mouse click2 allows you to tilt and orient the plan in space.
 
-:::tip Bon à savoir
-Cliquer sur "Centre le plan en vue Zénithale" ou "Centre le plan en vue Isometric" permet d'afficher une image aux dimensions calibrées en vue zénithale ou Isométric, et donc interchangeable dans la mise à jour de solution tierce.
+:::tip Good to Know
+Clicking on "Center the plan in Zenith view" or "Center the plan in Isometric view" allows you to display an image with calibrated dimensions in zenith or Isometric view, and therefore interchangeable in third-party solution updates.
 :::
 
-Les plans en 3D sont disponibles pour l'étage ou pour le bâtiment.
-Ils sont dynamiques et interactifs.
-On peut afficher les calques et couleurs des postes de travail sur la vue 3D, comme sur la vue 2D
+3D plans are available for the floor or for the building.
+They are dynamic and interactive.
+You can display layers and workstation colors on the 3D view, as on the 2D view
 
-Chaque modification sur le plan 2D est reportée immédiatement sur le plan 3D.
+Each modification on the 2D plan is immediately reported on the 3D plan.
 
-## Afficher le plan 3D d'un Bâtiment
+## Display a Building's 3D Plan
 
-Outre la visualisation du bâtiment complet en 3D, cette fonctionnalité permet d'accéder au cumul des informations des différents calques pour l'ensemble du bâtiment.
+In addition to the complete building visualization in 3D, this functionality allows access to the accumulation of information from different layers for the entire building.
 
-Pour obtenir le plan en 3D d'un bâtiment, depuis la page d'accueil,
+To get the 3D plan of a building, from the home page,
 
--   cliquer sur l'icône en bout de ligne de couleur du bâtiment concerné
--   sélectionner "le plan en 3D interactif du bâtiment XXX"
+-   click on the icon at the end of the color line of the concerned building
+-   select "the interactive 3D plan of building XXX"
 
-Le plan 3D du bâtiment est affiché, et le cumul des informations des calques pour l'ensemble du bâtiment est accessible par les icônes verticales, de la même façon [que pour un étage](/en/docs/courses/views/2Dviews.md#afficher-les-calques-sur-le-plan).
+The building's 3D plan is displayed, and the accumulation of layer information for the entire building is accessible by vertical icons, in the same way [as for a floor](/en/docs/courses/views/2Dviews.md#afficher-les-calques-sur-le-plan).
 
--   cliquer sur l'icône verticale "engrenage" afin de "voir les options du plan"
--   sélectionner les étages à afficher dans le bâtiment
--   choisir le type de représentation des cloisons (avec cloisons, sans cloison ou cloisons à mi-hauteur)
--   la représentation "Cuby" remplace chaque espace par un cube reprenant la couleur du calque de l'espace
+-   click on the vertical "gear" icon to "view plan options"
+-   select the floors to display in the building
+-   choose the type of partition representation (with partitions, without partition or half-height partitions)
+-   the "Cuby" representation replaces each space with a cube taking the color of the space layer
 
-On peut régler l'"espace entre chaque étage" en actionnant le curseur à gauche du plan 3D.
+You can adjust the "space between each floor" by operating the slider to the left of the 3D plan.
 
-La molette de la souris permet d'ajuster la taille du plan 3D.
-Le clic1 de la souris permet d'incliner et d'orienter le plan dans l'espace
-Le clic2 de la souris permet le déplacement du plan 3D dans la fenêtre de l'écran.
+The mouse wheel allows you to adjust the size of the 3D plan.
+Mouse click1 allows you to tilt and orient the plan in space
+Mouse click2 allows you to move the 3D plan in the screen window.
 
-On peut incliner le plan 3D avec un angle constant, en cliquant sur "Centre le plan en vue Isometric"
+You can tilt the 3D plan with a constant angle, by clicking on "Center the plan in Isometric view"
 
-## Afficher un bâtiment en 3D sur une carte
+## Display a Building in 3D on a Map
 
-On peut représenter un bâtiment en 3D, positionné et orienté correctement sur une carte de type "Maps".
+You can represent a building in 3D, positioned and oriented correctly on a "Maps" type map.
 
-Pour afficher le bâtiment géolocalisé sur une carte,
+To display the geolocated building on a map,
 
--   renseigner l'adresse du bâtiment en cliquant sur l'icône Crayon "Modifier le bâtiment" sur la fiche du bâtiment
--   créer et calibrer la structure du RDC (ou de l'étage le plus bas hors sous sols). Voir [Créer la structure d'un étage](/en/docs/tutorials/surfaces/structure/create.md).
+-   fill in the building address by clicking on the Pencil icon "Modify building" on the building card
+-   create and calibrate the ground floor structure (or the lowest floor excluding basements). See [Create a floor structure](/en/docs/tutorials/surfaces/structure/create.md).
 
 
-Pour visualiser le bâtiment géolocalisé sur un plan, cliquer sur l'icône en bout de ligne de couleur du bâtiment concerné puis sur "Voir le bâtiment en 3D sur un plan".
-Le bâtiment apparait en 3D dynamique dans son environnement.
-En passant la souris sur les espaces et le mobilier, on peut lire les informations de l'espace ou du mobilier et les affectations aux postes de travail. On peut afficher les calques et obtenir les données cumulées par calques, ...
+To visualize the geolocated building on a plan, click on the icon at the end of the color line of the concerned building then on "View the building in 3D on a plan".
+The building appears in dynamic 3D in its environment.
+By hovering over spaces and furniture, you can read space or furniture information and workstation assignments. You can display layers and get cumulative data by layers, ...

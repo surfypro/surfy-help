@@ -13,16 +13,16 @@ To change a floor structure, from the floor plan,
 
 The floor structure has been changed.
 
-## Modifier la forme d'une structure
+## Modify the Shape of a Structure
 
-Pour modifier une structure créée dans Surfy, depuis la page d'accueil,
+To modify a structure created in Surfy, from the home page,
 
--   dans le menu de gauche, cliquer sur "Espaces", "Structures" puis "lister les structures"
--   cliquer sur l'icône en début de ligne de la structure à modifier et "modifier la forme de la structure"
--   choisir le fond de plan de référence afin de modifier ou redessiner la structure
--   supprimer la forme existante en cliquant sur l'icône "Poubelle"
--   cliquer sur l'icône "Plus" pour "Créer la forme de la structure"
--   dessiner la structure autour de l'étage puis sauvegarder la structure
+-   in the left menu, click on "Spaces", "Structures" then "list structures"
+-   click on the icon at the beginning of the line of the structure to modify and "modify the structure shape"
+-   choose the reference plan background to modify or redraw the structure
+-   delete the existing shape by clicking on the "Trash" icon
+-   click on the "Plus" icon to "Create the structure shape"
+-   draw the structure around the floor then save the structure
 
-La forme de la structure a été modifiée
+The structure shape has been modified
 

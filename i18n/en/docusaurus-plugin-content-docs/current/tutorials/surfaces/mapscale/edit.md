@@ -14,18 +14,18 @@ To change a floor scale by another already existing scale,
 -   save the modifications.
 
 
-## Modifier la valeur de l'échelle d'un étage
+## Modify Floor Scale Value
 
-Pour modifier la valeur de l'échelle d'un étage ,
+To modify the scale value of a floor,
 
--   accéder à l'étage
--   cliquer sur le fond de plan pour faire apparaître les icônes au-dessus du plan
--   cliquer sur l'icône "Gérer l'échelle"
--   modifier la valeur <P code="mapScale:distance" /> en mètres
--   cliquer sur la coche verte pour valider la nouvelle valeur entrée
--   nommer éventuellement l'<P code="mapScale:name" /> pour une utilisation sur d'autres étages.
+-   access the floor
+-   click on the plan background to make the icons above the plan appear
+-   click on the "Manage scale" icon
+-   modify the <P code="mapScale:distance" /> value in meters
+-   click on the green checkmark to validate the new entered value
+-   optionally name the <P code="mapScale:name" /> for use on other floors.
 
 
-:::tip Astuce
-On peut ajuster très précisément l'échelle  en modifiant la valeur de la distance ou en l'affinant même plusieurs chiffres après la virgule. On peut également "zoomer sur l'échelle" et modifier la longueur du segment de l'échelle pour l'ajuster à une nouvelle échelle en référence sur le fond de plan.
+:::tip Tip
+You can adjust the scale very precisely by modifying the distance value or refining it even several digits after the decimal point. You can also "zoom on the scale" and modify the length of the scale segment to adjust it to a new scale in reference on the plan background.
 :::

@@ -15,36 +15,36 @@ To create a campus from the home page, in the left menu,
 
 The campus is created, it remains to associate buildings with it.
 
-## Associer un bâtiment à un campus
+## Associate a Building with a Campus
 
-Une fois le campus créé, depuis le menu contextuel,
--   cliquer sur "Modifier le campus XXX"
--   cliquer sur "Associer un bâtiment"
--   choisir un bâtiment à associer au campus, il s'ajoute en bas de page à la liste des bâtiments du campus.
--   pour ajouter un autre bâtiment au campus, cliquer de nouveau sur "Associer un bâtiment"
+Once the campus is created, from the context menu,
+-   click on "Modify campus XXX"
+-   click on "Associate a building"
+-   choose a building to associate with the campus, it is added at the bottom of the page to the campus buildings list.
+-   to add another building to the campus, click again on "Associate a building"
 
-Les bâtiments sont associés à leur campus.
+Buildings are associated with their campus.
 
-:::tip BON A SAVOIR
-Un bâtiment ne peut faire partie que d'un seul campus.
-Si on associe un bâtiment à un campus, son ancienne association avec un autre campus éventuel est supprimée.
+:::tip GOOD TO KNOW
+A building can only be part of one campus.
+If you associate a building with a campus, its previous association with another potential campus is deleted.
 :::
 
 
-## Visualiser les bâtiments par campus
+## Visualize Buildings by Campus
 
-Pour visualiser les bâtiments regroupés par campus,
+To visualize buildings grouped by campus,
 
--   cliquer sur l'icône "Vue groupée des bâtiments" en haut à gauche de l'écran, sous le logo de l'entreprise.
+-   click on the "Grouped building view" icon at the top left of the screen, under the company logo.
 
-Les bâtiments apparaissent par campus, avec possibilité d'accès direct à l'étage d'un bâtiment quelconque du campus.
+Buildings appear by campus, with direct access to any building floor in the campus.
 
-Les bâtiments non associés à un campus ont leurs accès directs aux étages.
+Buildings not associated with a campus have their direct access to floors.
 
-Les informations suivantes sont disponibles :
--   Les mesures et indicateurs dans les bâtiments simples
--   Le nombre de bâtiments regroupés dans le campus, avec accès direct aux étages de chaque bâtiment
+The following information is available:
+-   Measures and indicators in simple buildings
+-   The number of buildings grouped in the campus, with direct access to each building's floors
 
-:::tip BON A SAVOIR
-Les scénarios ne sont pas accessibles dans la "vue groupée des bâtiments". Pour accéder aux scénarios ou à la vue par bâtiments, cliquer sur le logo de l'entreprise.
+:::tip GOOD TO KNOW
+Scenarios are not accessible in the "grouped building view". To access scenarios or the building view, click on the company logo.
 :::

@@ -18,37 +18,37 @@ from the left menu,
 -   click on the "Plus" icon to "Create the structure shape"
 -   draw the structure around the floor then save the structure
 
-## Associer la structure à un étage
+## Associate the Structure with a Floor
 
-Une fois la structure dessinée, on associe cette structure à un ou plusieurs étages d'un bâtiment en fonction de sa forme.
+Once the structure is drawn, this structure is associated with one or more floors of a building according to its shape.
 
-Pour associer une structure à un étage,
+To associate a structure with a floor,
 
--   afficher l'étage concerné
--   dans le menu contextuel, cliquer sur "modifier l'étage XXX"
--   dans le champ "Structure", choisir la structure adequat
--   "sauvegarder" les modifications
+-   display the concerned floor
+-   in the context menu, click on "modify floor XXX"
+-   in the "Structure" field, choose the appropriate structure
+-   "save" the modifications
 
-## Calibrer la structure
+## Calibrate the Structure
 
-Pour calibrer la structure de l'étage d'un bâtiment, l'adresse du bâtiment concerné doit être renseignée, en cliquant sur l'icône Crayon "Modifier le bâtiment" sur la fiche du bâtiment.
+To calibrate the structure of a building floor, the address of the concerned building must be filled in, by clicking on the Pencil icon "Modify building" on the building card.
 
-Puis, depuis le menu de gauche,
+Then, from the left menu,
 
--   cliquer sur "Espaces", "Structures" puis "Lister les structures"
--   cliquer sur l'icône en début de ligne de la structure concernée afin de "Calibrer la structure sur une carte afin d'associer des coordonnées géographiques".
--   choisir l'étage sur lequel la calibration doit s'appliquer
+-   click on "Spaces", "Structures" then "List structures"
+-   click on the icon at the beginning of the line of the concerned structure to "Calibrate the structure on a map to associate geographical coordinates".
+-   choose the floor on which the calibration should apply
 
 
 :::tip Important
-La structure à prendre en compte pour la calibration d'un bâtiment est celle de l'étage le plus près du sol en positif, en général le Rez de chaussée.
+The structure to consider for building calibration is that of the floor closest to the ground in positive, generally the Ground floor.
 :::
 
-La structure de l'étage apparait sur une carte à l'adresse du bâtiment et à l'échelle.
+The floor structure appears on a map at the building address and to scale.
 
-La "Transformation" permet de modifier la position X, la position Y ainsi que la rotation de la structure afin de positionner précisément la structure sur la carte.
-Valider les modifications en cochant la coche verte.
+The "Transformation" allows you to modify the X position, Y position as well as the structure rotation to precisely position the structure on the map.
+Validate the modifications by checking the green checkmark.
 
-La structure étant calibrée, le bâtiment peut être géolocalisé sur la carte. Voir [Afficher un bâtiment en 3D sur une carte](/en/docs/courses/views/3Dviews.md#afficher-un-bâtiment-en-3d-sur-une-carte)
+Once the structure is calibrated, the building can be geolocated on the map. See [Display a building in 3D on a map](/en/docs/courses/views/3Dviews.md#afficher-un-bâtiment-en-3d-sur-une-carte)
 
 

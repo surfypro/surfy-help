@@ -13,19 +13,19 @@ To remove a floor structure, from the floor plan,
 
 The floor no longer has a structure.
 
-## Supprimer la structure d'un étage
+## Delete a Structure
 
-Pour supprimer une structure créée dans Surfy, depuis la page d'accueil,
+To delete a structure created in Surfy, from the home page,
 
--   dans le menu de gauche, cliquer sur "Espaces", "Structures" puis "lister les structures"
--   cliquer sur l'icône en début de ligne de la structure à supprimer et "supprimer la structure XXX"
--   confirmer la suppression.
+-   in the left menu, click on "Spaces", "Structures" then "list structures"
+-   click on the icon at the beginning of the line of the structure to delete and "delete structure XXX"
+-   confirm the deletion.
 
-La structure est supprimée.
-On peut supprimer plusieurs structures en les sélectionnant en début de ligne et en cliquant sur la corbeille en haut de page.
+The structure is deleted.
+You can delete several structures by selecting them at the beginning of the line and clicking on the trash at the top of the page.
 
 
 
 :::warning ATTENTION
-Une structure peut être utilisée sur plusieurs étages, supprimer une structure retire la structure à tous les étages concernés
+A structure can be used on several floors, deleting a structure removes the structure from all concerned floors
 :::

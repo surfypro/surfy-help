@@ -18,61 +18,61 @@ The person's assignment is deleted
 Deleting a person's assignment does not delete the person. However, deleting a person deletes all their assignments!
 :::
 
-## Suppression par la liste filtrée des affectations :
+## Deletion by Filtered Assignment List:
 
-Dans le menu Liste à gauche de l'écran,
+In the List menu on the left of the screen,
 
--   cliquer sur "Affectations", "Affectations d'espace" puis "Lister les affectations d'espace"
--   filtrer la liste en fonction des critères voulus: bâtiment, étage, espace, ... par les deux premières icônes en haut à droite de l'écran : Sélectionner les propriétés" et "Filtrer les affectations"
--   Une fois la liste filtrée, on peut cocher chaque affectation à supprimer au début de chaque ligne, puis "supprimer les affectations d'espace sélectionnées" par l'icône "poubelle" en haut de page.
-
-
-## Suppression d'affectation en masse par fichier Excel
-
-On peut supprimer en masse des affectations en changeant les personnes affectées pour les remplacer par une personne créée pour être ensuite supprimée :
--   créer une personne dont le nom et le prénom sont "SUPPRIMER"
--   sortir le fichier Excel des affectations à supprimer
--   remplacer le nom, prénom et identifiant des personnes affectées par le nom, le prénom et l'identifiant de la personne "SUPPRIMER"
--   importer le fichier des affectations
--   supprimer la personne "SUPPRIMER"
-
-La personne étant supprimée, toutes ses affectations sont supprimées.
-
-### Création du fichier Excel
-
-On peut créer le fichier Excel comportant les affectations à supprimer de différentes manières :
-
--   En générant le fichier "Rapport des personnes affectées dans le bâtiment XXX" : 
-
-    -   depuis la page d'accueil, cliquer sur l'icône au bout de la bande de couleur du bâtiment XXX
-    -   cliquer sur "Tableau de bord pour le bâtiment XXX"
-    -   cliquer sur l'icône de la ligne "Rapport des personnes affectées dans le bâtiment XXX" 
-    -   le fichier est téléchargé, l'onglet "Affectations d'espace" contient les informations à modifier
-
--   En générant la liste filtrée des affectations à supprimer :
-
-    -   dans le menu Liste à gauche de l'écran, cliquer sur "Affectations", "Affectations d'espace" puis "Lister les affectations d'espace"
-    -   filtrer la liste en fonction des critères voulus: bâtiment, étage, espace, ... par les deux premières icônes en haut à droite de l'écran
-    -   générer le fichier Excel de la liste obtenue, en cliquant sur l'icône "Télécharger en Excel les affectations d'espace" en haut à droite de l'écran
-    -   le fichier est téléchargé et contient les affectations aux espaces de la liste filtrée.
+-   click on "Assignments", "Space Assignments" then "List Space Assignments"
+-   filter the list according to desired criteria: building, floor, space, ... by the first two icons at the top right of the screen: "Select Properties" and "Filter Assignments"
+-   Once the list is filtered, you can check each assignment to delete at the beginning of each line, then "delete selected space assignments" by the "trash" icon at the top of the page.
 
 
-### Traitement des informations dans le fichier Excel
+## Bulk Assignment Deletion by Excel File
 
-Dans le fichier Excel, à chaque ligne d'affectation à supprimer, remplacer le nom prénom et identifiant des personnes affectées par le nom prénom et identifiant de la personne "SUPPRIMER"
+You can delete assignments in bulk by changing the assigned people to replace them with a person created to be subsequently deleted:
+-   create a person whose last name and first name are "DELETE"
+-   export the Excel file of assignments to delete
+-   replace the name, first name and identifier of assigned people with the name, first name and identifier of the "DELETE" person
+-   import the assignments file
+-   delete the "DELETE" person
 
-Une fois le fichier modifié, il reste à l'importer dans Surfy puis à supprimer la personne "SUPPRIMER"
+Since the person is deleted, all their assignments are deleted.
 
-### Importation du fichier Excel modifié
+### Excel File Creation
 
-Sélectionner les colonnes de l'identifiant de l'affectation et de l'identifiant de la personne "SUPPRIMER" en deux colonnes contigües.
-Un copier-coller dans un nouvel onglet peut être nécessaire afin d'avoir des colonnes contigües.
+You can create the Excel file containing the assignments to delete in different ways:
 
-Dans le menu Liste à gauche de l'écran,
+-   By generating the "Report of people assigned in building XXX" file: 
 
--   cliquer sur "Affectations", "Affectations d'espace" puis "importer des affectations d'espace"
--   coller les colonnes contigües dans la case centrale
--   cliquer sur "Comparer", Surfy propose les modifications à apporter
--   cliquer sur "Créer tout", ou cocher les cases désirées et cliquer sur "Créer"
--   les affectations à supprimer ont pour personne affectée "SUPPRIMER"
--   supprimer la personne "SUPPRIMER" pour supprimer toutes ses affectations.
+    -   from the home page, click on the icon at the end of building XXX's color band
+    -   click on "Dashboard for building XXX"
+    -   click on the icon of the line "Report of people assigned in building XXX" 
+    -   the file is downloaded, the "Space Assignments" tab contains the information to modify
+
+-   By generating the filtered list of assignments to delete:
+
+    -   in the List menu on the left of the screen, click on "Assignments", "Space Assignments" then "List Space Assignments"
+    -   filter the list according to desired criteria: building, floor, space, ... by the first two icons at the top right of the screen
+    -   generate the Excel file of the obtained list, by clicking on the "Download space assignments to Excel" icon at the top right of the screen
+    -   the file is downloaded and contains the space assignments of the filtered list.
+
+
+### Processing Information in the Excel File
+
+In the Excel file, for each assignment line to delete, replace the name, first name and identifier of assigned people with the name, first name and identifier of the "DELETE" person
+
+Once the file is modified, it remains to import it into Surfy then delete the "DELETE" person
+
+### Importing the Modified Excel File
+
+Select the columns of the assignment identifier and the "DELETE" person identifier in two contiguous columns.
+A copy-paste in a new tab may be necessary to have contiguous columns.
+
+In the List menu on the left of the screen,
+
+-   click on "Assignments", "Space Assignments" then "import space assignments"
+-   paste the contiguous columns in the central box
+-   click on "Compare", Surfy proposes the modifications to make
+-   click on "Create All", or check the desired boxes and click on "Create"
+-   assignments to delete have "DELETE" as assigned person
+-   delete the "DELETE" person to delete all their assignments.

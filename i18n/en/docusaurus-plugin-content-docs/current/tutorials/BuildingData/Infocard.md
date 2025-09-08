@@ -37,26 +37,26 @@ The building information card is composed of the following information:
 -   Empreinte carbone
 
 En passant la souris sur chaque ligne, on obtient le descriptif de l'information dans l'info bulle.<br />
-Ces informations sont calculées automatiquement par Surfy. Il peut être nécessaire de recalculer les données afin d'obtenir des informations à jour en cas de modification des plans. Pour cela, cliquer sur l'icone "recharger les données" en haut à droite de l'écran puis rafraichir (F5).<br />
-Les informations non effectives ne sont pas présentes dans la fiche du bâtiment (exemple : pas de poste de travail = pas de ligne correspondante)
+This information is calculated automatically by Surfy. It may be necessary to recalculate the data to get up-to-date information in case of plan modifications. To do this, click on the "reload data" icon at the top right of the screen then refresh (F5).<br />
+Non-effective information is not present in the building card (example: no workstation = no corresponding line)
 
-On peut également accéder aux informations du bâtiment en visualisant le [bâtiment en 3D ](/en/docs/courses/views/3Dviews#afficher-le-plan-3d-dun-bâtiment) puis en cliquant sur l'icône verticale "Voir les informations du bâtiment".<br />
-Aux informations listées s'ajoute ici le nombre d'espaces digitalisés sur l'ensemble du bâtiment.
+You can also access building information by viewing the [3D building](/en/docs/courses/views/3Dviews#afficher-le-plan-3d-dun-bâtiment) then clicking on the vertical icon "View building information".<br />
+To the listed information is added here the number of digitized spaces in the entire building.
 
-## La fiche d'informations de l'étage
+## Floor Information Card
 
-La fiche d'informations de l'étage est visible en accédant à l'étage, puis en cliquant sur l'icône verticale "Voir les informations de l'étage".<br />
-Les informations affichées sont du même type que pour le bâtiment, mais ramenées à l'étage.<br />
-Aux informations listées s'ajoute le nombre d'espaces digitalisés sur l'ensemble de l'étage.<br />
+The floor information card is visible by accessing the floor, then clicking on the vertical icon "View floor information".<br />
+The displayed information is of the same type as for the building, but brought back to the floor.<br />
+To the listed information is added the number of digitized spaces on the entire floor.<br />
 
-## La fiche d'informations de l'espace
+## Space Information Card
 
-En cliquant dans un espace sur le plan, on obtient les informations de l'espace.<br />
-Les informations affichées sont du même type que pour le bâtiment, mais ramenées à l'espace.<br />
-Aux informations listées s'ajoute le périmètre de l'espace.<br />
+By clicking in a space on the plan, you get the space information.<br />
+The displayed information is of the same type as for the building, but brought back to the space.<br />
+To the listed information is added the perimeter of the space.<br />
 
-:::tip BON A SAVOIR
-Depuis la fiche d'informations de l'espace, on peut accéder aux affectations et à l'inventaire de l'espace : Cliquer sur l'onglet AFFECTATIONS listera les postes de travail de l'espace, leur qualification (flex, de passage) et les affectations à l'espace ou aux postes de travail de l'espace. Cliquer sur l'onglet INVENTAIRE listera l'inventaire du mobilier appartenant à l'espace. Cliquer sur l'onglet du nom de l'espace donnera de nouveau la fiche d'informations de l'espace.
+:::tip GOOD TO KNOW
+From the space information card, you can access space assignments and inventory: Clicking on the ASSIGNMENTS tab will list the space's workstations, their qualification (flex, passing) and assignments to the space or to the space's workstations. Clicking on the INVENTORY tab will list the furniture inventory belonging to the space. Clicking on the space name tab will give the space information card again.
 :::
 
-Pour revenir aux informations de l'étage, cliquer sur l'icône verticale "Voir les informations de l'étage".<br />
+To return to floor information, click on the vertical icon "View floor information".<br />

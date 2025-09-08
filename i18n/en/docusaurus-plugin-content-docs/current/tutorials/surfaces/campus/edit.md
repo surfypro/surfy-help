@@ -9,10 +9,10 @@ To modify campus information, from the left menu:
 -   click on the "See more options for campus XXX" icon at the end of the campus line to modify, then on "modify campus XXX"
 -   modify the campus <P code="campus:name" />, <P code="campus:color" /> or <P code="campus:address" />
 
-## Retirer un bâtiment d'un campus
+## Remove a Building from a Campus
 
-Depuis la fiche du campus, on peut retirer un bâtiment d'un campus :
+From the campus card, you can remove a building from a campus:
 
-Les bâtiments associés au campus sont listés en bas de page
--   cliquer sur l'icône "Voir plus d'option pour le bâtiment XXX" du bâtiment à retirer puis "Modifier le bâtiment XXX"
--   supprimer l'association au campus en cliquant sur la "croix" face à la ligne "Campus" (ou en choisissant un autre campus dans la liste, avec l'icône "crayon"), puis sauvegarder les modifications.
+Buildings associated with the campus are listed at the bottom of the page
+-   click on the "See more options for building XXX" icon of the building to remove then "Modify building XXX"
+-   delete the campus association by clicking on the "cross" facing the "Campus" line (or by choosing another campus in the list, with the "pencil" icon), then save the modifications.
