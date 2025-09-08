@@ -1,6 +1,7 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+
 vite: {
   server: {
     watch: {
@@ -8,6 +9,7 @@ vite: {
     },
   },
 },
+
 const config: Config = {
   title: 'Surfy Academy',
   tagline: 'Bienvenue sur le site de formation des utilisateurs Surfy !',
