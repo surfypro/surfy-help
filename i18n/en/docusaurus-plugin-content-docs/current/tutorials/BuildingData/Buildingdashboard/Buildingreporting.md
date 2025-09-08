@@ -2,104 +2,146 @@
 sidebar_position: 1
 ---
 
-# Les rapports de données du bâtiment
+# Building Data Reports
 
 <Youtube code="r53dlxQAioU"/>
 
-Les rapports de données d'un bâtiment s'obtiennent à partir de la page d'accueil,
+Building data reports are obtained from the home page,
 
--   cliquer sur l'icône en bout de ligne de couleur du bâtiment
--   choisir "Tableau de bord pour le bâtiment XXX".
--   cliquer sur l'icône du rapport voulu
+-   click on the icon at the end of the building's color line
+-   choose "Dashboard for building XXX".
+-   click on the desired report icon
 
-Le rapport en fichier Excel est disponible dans les téléchargements.
+The Excel file report is available in downloads.
 
-## Rapports de données sur plusieurs bâtiments
+## Data Reports on Multiple Buildings
 
-Pour obtenir les rapports de données sur plusieurs bâtiments :
+To get data reports on multiple buildings:
 
-depuis la page d'accueil,
+from the home page,
 
--   cliquer sur le menu contextuel (case grise sous la loupe de recherche)
--   cliquer sur "Lister les bâtiments"
--   sélectionner les bâtiments à analyser
--   cliquer sur le rapport de données voulu en haut de page
+-   click on the context menu (gray box under the search magnifying glass)
+-   click on "List buildings"
+-   select buildings to analyze
+-   click on the desired data report at the top of the page
 
-Le rapport en fichier Excel est disponible dans les téléchargements.
+The Excel file report is available in downloads.
 
-## Rapport des personnes affectées dans le bâtiment
+## Report of People Assigned in the Building
 
-Le "rapport des personnes affectées dans le bâtiment XXX" liste les personnes affectées dans le bâtiment en fichier Excel.
+The "People assigned in building" report lists all people assigned to spaces in the building, with their assignment information.
 
-Il est composé de 3 onglets :
+### Report Content
 
--   affectations aux espaces
--   affectations aux postes de travail
--   affectations aux quartiers
+-   **Person information**: Name, first name, email, phone, company, department, function
+-   **Assignment information**: Space, floor, building, assignment type, assignment date
+-   **Space information**: Space name, space typology, space surface, space capacity
 
-Chaque ligne représente une affectation dans le bâtiment et comporte toutes les informations de la personne ainsi que le bâtiment, l'étage, le quartier, l'espace, le poste de travail d'affectation de la personne.
-Une personne affectée deux fois verra son nom apparaitre sur deux lignes différentes.
+### Use Cases
 
-## Rapport des postes de travail du bâtiment
+-   **HR Management**: Track employee assignments and space occupancy
+-   **Space Planning**: Analyze space utilization and plan reorganizations
+-   **Compliance**: Ensure compliance with space allocation policies
+-   **Reporting**: Generate reports for management and stakeholders
 
-Le "Rapport des postes de travail du bâtiment" liste tous les postes de travail du bâtiment avec les informations liées à chaque poste : nom, type de poste de travail, qualifications (flex, de passage,...), organisation, bâtiment, étage, espace d'appartenance.
+## Building Inventory Report
 
-Il permet la modification en masse des informations liées au "mobilier" Poste de travail : ajouter ou vérifier les noms des postes de travail, leur qualification en Flex ou de passage, les affecter à des organisations, àdes centres de coût, etc...
-Chaque ligne correspond à un poste de travail du bâtiment. Il n'y a pas de doublon de ligne.
+The "Building inventory" report lists all objects in the building with their inventory information.
 
-## Rapport des affectations aux postes de travail du bâtiment
+### Report Content
 
-Le "Rapport des affectations aux postes de travail du bâtiment" liste les affectations aux postes de travail affectés, avec le nom du poste de travail, l'espace, étage, bâtiment d'appartenance ainsi que toutes les informations liées à la personne affectée au poste de travail.
-Un poste de travail affecté deux fois verra son nom apparaitre sur deux lignes différentes.
-Tout poste non affecté n'est pas listé dans ce fichier.
+-   **Object information**: Object type, reference, asset code, purchase date
+-   **Location information**: Space, floor, building, object position
+-   **Object details**: Manufacturer, model, description, price
 
-## Rapport de tous les postes de travail du bâtiment incluant les affectations
+### Use Cases
 
-Le "Rapport de tous les postes de travail du bâtiment incluant les affectations" liste l'ensemble des postes de travail avec le nom du poste de travail, la qualification, l'espace, étage, bâtiment d'appartenance ainsi que toutes les informations liées à la personne affectée au poste de travail si elle existe.
-Les postes de travail non affectés sont présents dans la liste, sans information sur la personne.
-Un poste de travail affecté deux fois verra son nom apparaitre sur deux lignes différentes.
+-   **Asset Management**: Track and manage building assets
+-   **Maintenance**: Plan maintenance schedules and track equipment
+-   **Compliance**: Ensure compliance with asset management policies
+-   **Reporting**: Generate reports for asset management and accounting
 
-## Rapport de l'inventaire du bâtiment
+## Building Space Report
 
-Le "Rapport de l'inventaire du bâtiment" liste tous les objets présents sur le bâtiment avec leur type d'objet, famille, empreinte carbone, nombre de places assises et leur bâtiment, étage, quartier, espace d'appartenance ainsi que les calques des espaces d'appartenance des objets.
+The "Building spaces" report lists all spaces in the building with their characteristics.
 
-Ce rapport permet d'obtenir l'ensemble du mobilier et de le trier en fonction de chaque calque d'analyse ou d'affectation.
+### Report Content
 
-Il est composé de 3 onglets :
+-   **Space information**: Space name, typology, surface, capacity
+-   **Location information**: Floor, building, space position
+-   **Space details**: Equipment, furniture, accessibility
 
--   Objets : liste tous les objets exceptés les objets composant les postes de travail
--   Postes de travail : liste les objets composant les postes de travail
--   Fusion : liste tous les objets y compris ceux composant les postes de travail
+### Use Cases
 
-## Rapport des espaces du bâtiment
+-   **Space Planning**: Analyze space utilization and plan reorganizations
+-   **Facility Management**: Track space characteristics and equipment
+-   **Compliance**: Ensure compliance with space management policies
+-   **Reporting**: Generate reports for facility management and planning
 
-Le "Rapport des espaces du bâtiment" liste l'ensemble des espaces du bâtiment avec leur surface, périmètre, ratios, typologie, centre de coût, empreinte carbone, organisation et toutes les informations relatives aux espaces du bâtiment.
+## Building Workstation Report
 
-Chaque ligne correspond à un espace du bâtiment. Il n'y a pas de doublon de ligne.
+The "Building workstations" report lists all workstations in the building with their characteristics.
 
-## Rapport des prestations de nettoyage du bâtiment
+### Report Content
 
-<Youtube code="WCpIDzAikgk"/>
+-   **Workstation information**: Workstation type, number of seats, surface
+-   **Location information**: Space, floor, building, workstation position
+-   **Workstation details**: Equipment, furniture, accessibility
 
-Le "Rapport des prestations de nettoyage du bâtiment" permet d'établir le nombre d'heures mensuel nécessaire pour la réalisation de la prestation de nettoyage, en fonction de 2 critères :
+### Use Cases
 
--   la cadence de nettoyage : définie dans la typologie des espaces, elle précise le nombre de m² qu'on peut nettoyer en une heure dans ce type d'espace.
--   la fréquence de nettoyage : définie dans le calque d'analyse "Fréquence" de chaque espace, elle précise la fréquence à laquelle l'espace doit être nettoyé.
+-   **Workplace Planning**: Analyze workstation utilization and plan reorganizations
+-   **Facility Management**: Track workstation characteristics and equipment
+-   **Compliance**: Ensure compliance with workplace management policies
+-   **Reporting**: Generate reports for workplace management and planning
 
-Une fois les typologies d'espace renseignés sur leur cadence et tous les espaces à nettoyer renseignés sur leur fréquence, on peut demander le "Rapport des prestations de nettoyage du bâtiment".
-Le fichier apparait dans les téléchargements.
+## Building Cost Center Report
 
-Après activation des modifications, chaque ligne du fichier Excel affiche son "Nombre d'heure mensuel".
-Un calcul de somme en fin de colonne permet d'obtenir le nombre d'heure mensuel total pour le nettoyage des parties digitalisées dans Surfy.
+The "Building cost centers" report lists all cost centers in the building with their distribution information.
 
-Chaque ligne correspond à un espace du bâtiment. Il n'y a pas de doublon de ligne.
+### Report Content
 
-## Rapport des calques d'analyse des espaces du bâtiment
+-   **Cost center information**: Cost center name, distribution type, distribution key
+-   **Space information**: Space name, space surface, space cost center
+-   **Workstation information**: Workstation type, workstation cost center
 
-Le "Rapport des calques d'analyse des espaces du bâtiment" liste l'ensemble des espaces du bâtiment avec leur surface, périmètre, ratios, typologie, centre de coût, empreinte carbone, organisation et toutes les informations relatives aux espaces du bâtiment, ainsi que toutes les qualifications des espaces aux calques d'analyse ou d'affectation.
+### Use Cases
 
-Chaque ligne correspond à un espace du bâtiment. Il n'y a pas de doublon de ligne.
+-   **Cost Management**: Track and manage building costs
+-   **Budget Planning**: Plan budgets and track expenses
+-   **Compliance**: Ensure compliance with cost management policies
+-   **Reporting**: Generate reports for cost management and accounting
 
-## Télécharger en excel le bâtiment à plat
+## Building Security Report
 
-"Télécharger en excel le bâtiment à plat" permet de lister les identifiants et les noms des bâtiments, étages, espaces et postes de travail et permet de créer des tableaux de concordance afin de retrouver les identifiants dans les imports Excel.
+The "Building security" report lists all security profiles in the building with their assignment information.
+
+### Report Content
+
+-   **Security profile information**: Profile name, profile type, profile icon
+-   **Person information**: Person name, person assignment, person security profile
+-   **Space information**: Space name, space security level
+
+### Use Cases
+
+-   **Security Management**: Track and manage building security
+-   **Compliance**: Ensure compliance with security policies
+-   **Reporting**: Generate reports for security management and compliance
+
+## Building Export Options
+
+"Download building flat in Excel" allows listing identifiers and names of buildings, floors, spaces and workstations and allows creating concordance tables to find identifiers in Excel imports.
+
+### Export Content
+
+-   **Building information**: Building name, building address, building type
+-   **Floor information**: Floor name, floor level, floor surface
+-   **Space information**: Space name, space typology, space surface
+-   **Workstation information**: Workstation type, workstation seats, workstation surface
+
+### Use Cases
+
+-   **Data Migration**: Prepare data for migration to other systems
+-   **Integration**: Integrate with external systems and tools
+-   **Analysis**: Perform advanced analysis with external tools
+-   **Reporting**: Generate custom reports and dashboards

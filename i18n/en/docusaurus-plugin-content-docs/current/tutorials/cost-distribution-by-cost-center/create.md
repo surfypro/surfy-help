@@ -27,7 +27,7 @@ For more information on cost distribution types, see the chapter [Cost Distribut
 
 ## Distribution Keys and Qualified Surfaces by Cost Center
 
-Une fois ces informations entrées, à partir de la page d’accueil, cliquer sur l’icône au bout de la ligne de couleur du bâtiment pour demander les « Clés de répartition et surfaces qualifiées par Centre de Coût pour le bâtiment XXX » 
+Once this information is entered, from the home page, click on the icon at the end of the building's color line to request "Distribution Keys and surfaces qualified by Cost Center for building XXX"
 
 You get, by Cost Center, cumulative surfaces and financial distribution keys. 
 
@@ -35,7 +35,7 @@ Cost centers to be distributed are not distributed in this table. They are prese
 
 By opening the butterfly to the left of each cost center, you get the detailed list of each space and workstations of each space, attached to the cost center, with the surface to recharge and the internal distribution key to the cost center for the space or workstations of the space. 
 
-Le centre de coût nommé "-" liste les erreurs sur les espaces et les postes de travail qui ont un "type de distribution des coûts" mais pas de "centre de coût". On peut facilement compléter le centre de coût en cliquant sur le nom de chacun des espaces ou postes de travail listés dans cet onglet jusqu’à tout renseigner et retirer de la liste. 
+The cost center named "-" lists errors on spaces and workstations that have a "cost distribution type" but no "cost center". You can easily complete the cost center by clicking on the name of each space or workstation listed in this tab until everything is filled in and removed from the list. 
 
 Spaces and workstations without "cost distribution type" appear nowhere and their surface is counted nowhere. 
 
@@ -101,4 +101,3 @@ Data is available in Excel files, with or without distribution, by floor or for 
 -   column H: Number of workstations (number of workstations of the CC) 
 -   column I: Total number of workstations (total number of workstations in the space) 
 -   column J: Distribution key for the cost center (The sum of keys on the CC gives 1) 
-

@@ -5,66 +5,53 @@ sidebar_position: 2
 
 By modifying a workstation type, all workstations associated with this workstation type will be modified.
 
-## Modifier les informations du type de poste de travail
+## Modify Workstation Type Information
 
-On peut modifier le <P code="workplaceType:name" /> et la <P code="workplaceType:color" /> d'un type de poste de travail en modifiant la fiche du type de poste de travail.
-
-
-Pour accéder à la fiche du poste de travail, depuis le menu de gauche,
-
--   cliquer sur "Mobiliers", "Typologies" puis "types de poste de travail" et "Lister les types de poste de travail"
--   au début de la ligne du type de poste de travail, cliquer sur l'icone "Voir plus d'options pour le type de poste de travail XXX" puis sur "Modifier le type de poste de travail XXX"
--   modifier le <P code="workplaceType:name" /> ou la <P code="workplaceType:color" /> du type de poste de travail à modifier
--   "Sauvegarder" les modifications
-
-## Modifier la composition du type de poste de travail
-
-Un type de poste de travail est composé de un ou plusieurs types d'objet placés les uns par rapport aux autres et regroupé en une seule entité.
-On peut ajouter, déplacer ou supprimer un type d'objet dans la composition d'un type de poste de travail afin de le modifier.
+You can modify the <P code="workplaceType:name" /> and <P code="workplaceType:color" /> of a workstation type by modifying the workstation type card.
 
 
-Pour modifier la composition d'un type de poste de travail, depuis le menu de gauche,
+To access the workstation card, from the left menu,
 
--   cliquer sur "Mobiliers", "Typologies" puis "types de poste de travail" et "Lister les types de poste de travail"
--   au début de la ligne du type de poste de travail à modifier, cliquer sur l'icone "Voir plus d'options pour le type de poste de travail XXX" puis sur "Editer les formes et l'emplacement des types d'objet pour le type de poste de travail XXX"
--   la composition actuelle apparait sur le plan.
--   cliquer sur l'icône "Commencer la manipulation de l'espace de travail" en haut à gauche de la page, afin de faire apparaitre les icônes de modification de la composition
+-   click on "Furniture", "Typologies" then "workstation types" and "List workstation types"
+-   at the beginning of the workstation type line, click on the "See more options for workstation type XXX" icon then on "Modify workstation type XXX"
+-   modify the <P code="workplaceType:name" /> or <P code="workplaceType:color" /> of the workstation type to modify
+-   "Save" modifications
 
--   cliquer sur l'icône "+" "Ajouter un type d'objet" permet d'ajouter un type d'objet dans la composition du type de poste de travail
--   cliquer sur l'icône "Déplacer le type d'objet" permet de déplacer les types d'objet les uns par rapport aux autres.
--   cliquer sur "Lister les types d'objet" ouvre une fenêtre à droite de l'écran afin de qualifier les types d'objet:
-        -       en définissant le nombre de places assises pour chaque type d'objet dans le papillon en bout de ligne
-        -       en cochant la case "Inventaire physique" du type d'objet, permettant l'attribution d'une <P code="item:reference" /> et <P code="item:code" /> pour le type d'objet concerné afin de générer des objets physiques d'inventaire.
-        -       en cliquant sur le signe "=" et glisser pour monter ou descendre un objet dans la liste afin de positionner un objet au dessus d'un autre
+## Modify Workstation Type Composition
 
-:::tip Bon à savoir
-On peut accéder directement aux informations ou à la composition d'un type de poste de travail si celui ci est présent sur le plan: En cliquant sur un des postes de travail, l'icône "Voir plus d'options pour le type de poste de travail XXX" sur la fiche du poste de travail à gauche en début de la ligne "type de poste de travail", permet d'accéder directement à la fiche ou à la composition du type de poste de travail.
+A workstation type is composed of one or more object types placed relative to each other and grouped into a single entity.
+You can add, move or delete an object type in a workstation type composition to modify it.
+
+
+To modify a workstation type composition, from the left menu,
+
+-   click on "Furniture", "Typologies" then "workstation types" and "List workstation types"
+-   at the beginning of the workstation type line to modify, click on the "See more options for workstation type XXX" icon then on "Edit shapes and location of object types for workstation type XXX"
+-   the current composition appears on the plan.
+
+To add an object type to the composition:
+
+-   click on the "Add an object type" icon
+-   choose the object type to add and drop it on the plan
+-   move and rotate the object by clicking on "move the object type"
+-   click on "List object types" to display the list of used object types
+-   place list elements on top of/below each other by dragging the "=" sign of the object type from top to bottom
+-   click on the "butterfly" to the right of the object type names to define the number of seats for each of them
+-   leaving the page saves the composition
+
+To move an object type in the composition:
+
+-   click on "move the object type"
+-   click on the object to move and drag it to the desired location
+-   leaving the page saves the composition
+
+To delete an object type from the composition:
+
+-   click on the object to delete
+-   click on the "trash can" icon
+-   confirm deletion
+-   leaving the page saves the composition
+
+:::tip Good to know
+The workstation type composition is saved automatically when leaving the page.
 :::
-
-:::danger Attention
-Modifier la composition d'un type de poste de travail peut modifier sa position sur les plans, calculée à partir du point central (barycentre) de la composition du type de poste de travail
-:::
-
- ## Modifier un poste de travail avec des objets "physiques"
-
-Depuis la page de composition du type de poste de travail,
-
--   cliquer sur l'icône "Lister les types d'objet" pour afficher à droite la liste des types d'objet utilisés
--   cocher la case "inventaire physique" d'un type d'objet utilisé dans la composition du poste de travail permet de définir les objets à déclarer "physiques", permettant l'attribution d'une <P code="item:reference" />, d'un <P code="item:code" /> et d'une <P code="item:purchaseDate" /> sur l'objet correspondant. Cela permet de créer un inventaire d'objets uniques.
-
-Par défaut, les objets utilisés dans la composition d'un type de poste de travail ne peuvent être référencés et font l'objet d'un simple comptage.
-
-### Création des objets physiques
-
-Une fois la case "Inventaire physique" cochée, il est nécessaire de créer les objets physiques associés.
-
-Pour cela, depuis le menu de gauche,
-
--   cliquer sur "Administration" puis "Entreprises" puis "Les rapports et actions pour la qualité de données pour les entreprises" puis "cohérence de l'inventaire"
--   la liste des objets physiques à créer apparait, classés par type de poste de travail.
--   cliquer sur la case "CREATE" afin de créer les objets physiques du type de poste de travail correspondant.
-
-### Suppression des objets physiques
-
-Si un type de poste de travail est composé d'objets auparavant "physique" mais qui ont été décochés dans la composition du type de poste de travail, les postes de travail correspondants seront proposés à la suppression.<br />
-Cliquer sur "DELETE" supprimera uniquement les objets "Physiques" mais ne supprimera pas les postes de travail correspondants, qui resteront présents mais non référençables.

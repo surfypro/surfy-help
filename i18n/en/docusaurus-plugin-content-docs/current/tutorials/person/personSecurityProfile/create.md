@@ -3,21 +3,20 @@ sidebar_position: 1
 ---
 
 
-# Créer un profil Sécurité
+# Create a Security Profile
 
-Un <OT code="personSecurityProfile" /> est attribué à un équipier de sécurité pour le localiser facilement sur les plans ou dans les informations des personnes.
+A <OT code="personSecurityProfile" /> is assigned to a security team member to easily locate them on plans or in person information.
 
 <Youtube code="NxKeIipAJfs"/>
 
-Pour créer un profil Sécurité, depuis le menu de gauche :
+To create a Security profile, from the left menu:
 
--   cliquer sur "Collaborateurs", "Typologies", "Profils de Sécurité des personnes", puis "Créer un profil de sécurité des personnes".
--   Renseigner le nom (exemple : guide file, serre file, pompier, infirmier, ...) et les informations du <OT code="personSecurityProfile" />
--   valider la création
+-   click on "Collaborators", "Typologies", "Person Security Profiles", then "Create a person security profile".
+-   Fill in the name (example: file guide, file closer, firefighter, nurse, ...) and information of the <OT code="personSecurityProfile" />
+-   validate creation
 
-:::tip Bon à savoir
-En cliquant sur l'icône "crayon" de la ligne "Icon", on peut choisir les icônes de Fontawsome avec une recherche en anglais, ou les icônes de Surfy, notamment les icônes de l'onglet "Surfy 2" conformes à la norme ISO 7010.
+:::tip Good to know
+By clicking on the "pencil" icon of the "Icon" line, you can choose Fontawesome icons with English search, or Surfy icons, notably the icons from the "Surfy 2" tab compliant with ISO 7010 standard.
 :::
-
 
 

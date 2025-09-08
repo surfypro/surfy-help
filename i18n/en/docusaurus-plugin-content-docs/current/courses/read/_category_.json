@@ -1,10 +1,9 @@
 {
-  "label": "Le mode Lecteur",
+  "label": "Reader mode",
   "position": 1,
   "link": {
     "slug": "reader",
     "type": "generated-index",
-    "description": "Les fonctionnalités du mode Lecteur"
+    "description": "Reader mode features"
   }
 }
-

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 ---
+
 # Space Typologies
 
 To manage space typology, it is recommended to use the "Space Typology" view.
@@ -41,89 +42,89 @@ To qualify a space by an existing typology:
 
 The space is qualified by its typology.
 
-## Créer et associer une typologie à un espace
+## Create and Associate a Typology to a Space
 
-On peut créer une nouvelle typologie si celle ci n'est pas présente dans la liste de choix au moment de la qualification d'un espace.
-Cette nouvelle typologie sera directement associée à l'espace après avoir été créée :
+You can create a new typology if it is not present in the choice list when qualifying a space.
+This new typology will be directly associated with the space after being created:
 
--   cliquer dans l'espace concerné
--   "Modifier" l'espace, en haut à gauche de la fiche de l'espace
--   cliquer sur l'icône "crayon" de la ligne "Typologie d'espace"
+-   click in the concerned space
+-   "Modify" the space, at the top left of the space card
+-   click on the "pencil" icon of the "Space Typology" line
 
-La typologie désirée n'apparait pas.
+The desired typology does not appear.
 
--   cliquer sur "Créer et associer une typologie d'espace" en haut de l'écran, la page de création de typologie apparait.
--   nommer et renseigner les informations de la typologie, voir [Créer une typologie d'espace](/en/docs/tutorials/surfaces/room/roomtype.md#cr%C3%A9er-une-typologie-despace)
--   "Valider la création"
+-   click on "Create and associate a space typology" at the top of the screen, the typology creation page appears.
+-   name and fill in the typology information, see [Create a Space Typology](/en/docs/tutorials/surfaces/room/roomtype.md#create-a-space-typology)
+-   "Validate creation"
 
-La nouvelle typologie est créée et associée à l'espace sélectionné.
-Pour visualiser le plan colorié avec la nouvelle typologie, il est nécessaire de rafraichir la page (F5).
+The new typology is created and associated with the selected space.
+To visualize the plan colored with the new typology, it is necessary to refresh the page (F5).
 
-Les espaces suivants pourront être qualifiés par cette nouvelle typologie qui apparaitra dans la liste de choix.
+Subsequent spaces can be qualified by this new typology which will appear in the choice list.
 
 
-## Visualiser la typologie des espaces
+## Visualize Space Typologies
 
-Pour afficher les plans et les cumuls de données par typologie, cliquer sur l'icône verticale "Colorier les espaces sur le plan en fonction des typologies"
+To display plans and data cumulations by typology, click on the vertical icon "Color spaces on plan according to typologies"
 
-Le plan apparait avec les couleurs des typologies.
-A gauche du plan sont regroupés les légendes (noms des typologies présentes avec leur couleur).
-Le cumul d'informations pour chaque typologie est affiché en cliquant sur le "papillon" en bout de ligne de la typologie, ou sur le "papillon" général en haut à droite des légendes, "Ouvrir tous les détails et indicateurs".
+The plan appears with typology colors.
+To the left of the plan are grouped the legends (names of present typologies with their color).
+Information cumulation for each typology is displayed by clicking on the "butterfly" at the end of the typology line, or on the general "butterfly" at the top right of the legends, "Open all details and indicators".
 
-:::tip BON A SAVOIR
-Si la typologie choisie est utilisée pour la première fois sur l'étage, il est nécessaire de rafraichir la page (F5) pour obtenir la couleur de la typologie sur les plans.
+:::tip GOOD TO KNOW
+If the chosen typology is used for the first time on the floor, it is necessary to refresh the page (F5) to get the typology color on plans.
 :::
 
-## Modifier une typologie d'espace
+## Modify a Space Typology
 
-Pour modifier une typologie d'espace, par exemple sont nom ou sa couleur, depuis la page d'accueil :
+To modify a space typology, for example its name or color, from the home page:
 
--   cliquer sur "Administration", "Typologies", "Typologies d'espaces", "Typologies d'espace" puis "Lister les typologies d'espace".
--   rechercher la typologie à modifier, un filtre est disponible en haut à droite de l'écran " Filtrer les typologies d'espace".
--   cliquer sur l'icône en début de ligne de la typologie pour "modifier la typologie d'espace XXX".
--   modifier les informations,
--   "Sauvegarder" les modifications.
+-   click on "Administration", "Typologies", "Space Typologies", "Space Typology" then "List space typologies".
+-   search for the typology to modify, a filter is available at the top right of the screen "Filter space typologies".
+-   click on the icon at the beginning of the typology line to "modify space typology XXX".
+-   modify the information,
+-   "Save" modifications.
 
-Pour plus d'informations sur les champs à compléter, voir les [propriétés de base de la Typologie d'espace](/entities/admin/types/room-types/room-type).
+For more information on the fields to complete, see the [basic properties of Space Typology](/entities/admin/types/room-types/room-type).
 
-:::tip BON A SAVOIR
-On peut aussi modifier une typologie depuis un espace qualifié par cette typologie, en cliquant dans l'espace puis sur l'icône à droite de la ligne "Typologie d'espace" de la fiche de l'espace. Cette icône "Voir plus d'option pour la typologie XXX" permet de "Modifier la typologie d'espace XXX" et d'accéder directement à la modification de la typologie.
+:::tip GOOD TO KNOW
+You can also modify a typology from a space qualified by this typology, by clicking in the space then on the icon to the right of the "Space Typology" line of the space card. This "See more options for typology XXX" icon allows to "Modify space typology XXX" and directly access typology modification.
 :::
 
 
-## Supprimer une typologie d'espace
+## Delete a Space Typology
 
-Supprimer une typologie supprime toutes les qualifications des espaces et les cumuls d'informations liés à cette typologie.
+Deleting a typology deletes all space qualifications and information cumulations related to this typology.
 
-Pour supprimer une typologie d'espace, depuis la page d'accueil :
+To delete a space typology, from the home page:
 
--   cliquer sur "Administration", "Typologies", "Typologies d'espaces", "Typologies d'espace" puis "Lister les typologies d'espace".
--   rechercher la typologie à supprimer, un filtre est disponible en haut à droite de l'écran " Filtrer les typologies d'espace".
--   cocher la case en début de ligne de la typologie à supprimer.
--   cliquer sur l'icône Poubelle en haut de la page, "Supprimer les typologies d'espace sélectionnées"
--   confirmer la suppression
+-   click on "Administration", "Typologies", "Space Typologies", "Space Typology" then "List space typologies".
+-   search for the typology to delete, a filter is available at the top right of the screen "Filter space typologies".
+-   check the box at the beginning of the typology line to delete.
+-   click on the Trash icon at the top of the page, "Delete selected space typologies"
+-   confirm deletion
 
-La typologie d'espace est supprimée.
+The space typology is deleted.
 
-## Les groupes de typologies d'espace
+## Space Typology Groups
 
-On peut regrouper plusieurs typologies dans un groupe de typologies, permettant le regroupement de plusieurs espaces de typologies différentes (exemple: tous les espaces de réunion, bulles box et salles comprises), ou l'exclusion de certaines typologies (exemple: sous-sols hors parkings)
+You can group several typologies in a typology group, allowing grouping of several spaces of different typologies (example: all meeting spaces, including bubbles, boxes and rooms), or exclusion of certain typologies (example: basements excluding parking)
 
-Des groupes de typologies sont proposés à l'utilisation. Depuis le menu de gauche,
+Typology groups are proposed for use. From the left menu,
 
--   cliquer sur "Administration", "Typologies", "Typologies d'espace" puis "Lister les typologies d'espace"
--   cliquer sur l'icône en début de la typologie d'espace choisi (exemple: "Salle de réunion") pour "Modifier la typologie d'espace XXX"
--   cliquer sur "Association groupe de typologie d'espace à typologie d'espace" puis "Créer une association groupe de typologie d'espace à typologie d'espace"
--   cliquer sur l'icône "crayon" pour donner le groupe de typologie d'espace "Espaces de réunion" à la typologie d'espace
--   valider la création
+-   click on "Administration", "Typologies", "Space Typology" then "List space typologies"
+-   click on the icon at the beginning of the chosen space typology (example: "Meeting room") to "Modify space typology XXX"
+-   click on "Space typology group to space typology association" then "Create a space typology group to space typology association"
+-   click on the "pencil" icon to give the space typology group "Meeting spaces" to the space typology
+-   validate creation
 
-Le groupe de typologie d'espace est donné à la typologie, et s'ajoute à la liste des groupes de typologie de la typologie, en dessous de la sélection.
+The space typology group is given to the typology, and is added to the typology's typology group list, below the selection.
 
-### Visualiser les groupes de typologies :
+### Visualize Typology Groups:
 
-Pour obtenir les informations des groupes, depuis le plan de l'étage,
+To get group information, from the floor plan,
 
--   cliquer sur l'icône verticale "Voir les indicateurs des espaces sur le plan en fonction des groupes de typologies d'espace"
+-   click on the vertical icon "View space indicators on plan according to space typology groups"
 
-Les informations cumulées pour chaque groupe de typologies d'espace sont affichées en ouvrant le "papillon" en fin de ligne.
-La liste des typologies groupée s'obtient en passant la souris sur l'icône "?".
+Cumulative information for each space typology group is displayed by opening the "butterfly" at the end of the line.
+The grouped typology list is obtained by passing the mouse over the "?" icon.

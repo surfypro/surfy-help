@@ -7,35 +7,41 @@ sidebar_position: 1
 For a space to be visualized and accessible from the "View and navigate in meeting rooms" page, its space typology (bubble, box, meeting room, ...) must be associated with the "Meeting Spaces" space typology group, or any other typology group whose code is "MEETING".
 
 
-## Choisir les typologies d'espace à afficher
+## Choose Space Typologies to Display
 
-En modification de la typologie d'espace,
+When modifying the space typology,
 
--   cliquer sur "Créer une association groupe de typologie d'espace à typologie d'espace"
--   cliquer sur l'icône "crayon" pour ajouter le groupe de typologies d'espace "Espaces de réunion" à la typologie
--   valider la création
+-   click on "Create a space typology group to space typology association"
+-   click on the "pencil" icon to add the "Meeting Spaces" space typology group to the typology
+-   validate creation
 
-Le groupe de typologies d'espace est associée à la typologie, et s'ajoute à la liste des "groupes de typologies d'espace" de la typologie, en dessous de la sélection.
-Tous les espaces ayant une des typologies contenues dans le groupe de typologie d'espaces "Espaces de réunion" seront affichés dans la page "Voir et naviquer dans les salles de réunion".
+The space typology group is associated with the typology, and is added to the list of "space typology groups" of the typology, below the selection.
+All spaces having one of the typologies contained in the "Meeting Spaces" space typology group will be displayed in the "View and navigate in meeting rooms" page.
 
-Pour retirer une typologie du groupe de typologies, il faut [modifier la typologie elle même](/en/docs/tutorials/surfaces/room/roomtype.md#modifier-une-typologie-despace) puis cocher et supprimer l'association au groupe concerné.
+To remove a typology from the typology group, you must [modify the typology itself](/en/docs/tutorials/surfaces/room/roomtype.md#modify-a-space-typology) then check and delete the association to the relevant group.
 
-## Choisir les équipements à afficher
+## Choose Equipment to Display
 
-En plus du mobilier présent dans l'espace de réunion, on peut afficher la liste des types d'objet de services proposés dans l'espace de réunion (écran TV, projecteur, micro, écritoire, ...)
+In addition to the furniture present in the meeting space, you can display the list of service object types offered in the meeting space (TV screen, projector, microphone, writing desk, ...)
 
-Pour cela, il faut ajouter le code "SERVICES" à la famille de types d'objet concernée (exemple: Equipements de service").
+To do this, you must add the "SERVICES" code to the relevant object type family (example: "Service equipment").
 
-Depuis le menu de gauche,
+From the left menu,
 
--   cliquer sur "Mobiliers", "Typologies", puis "Famille de types d'objet" pour "Lister les familles de types d'objet"
--   cliquer sur l'icône en début de ligne de la famille de types d'objet à afficher, pour "Modifier la famille de type d'objet XXX".
--   taper "SERVICES" dans la case "Code"
--   "sauvegarder" pour enregistrer les modifications
--   rafraichir la page (icone circulaire au dessus du logo de l'entreprise, ou Fn+F5)
+-   click on "Spaces", "Object types", "Object type families" then "list object type families"
+-   click on the "pencil" icon of the relevant object type family
+-   in the "Code" line, enter "SERVICES"
+-   validate the modification
 
-Les équipements de la famille de types d'objet correspondante seront listés sous la représentation de chaque espace de réunion, avec le nom de l'espace, sa typologie, sa capacité, son bâtiment et son étage d'appartenance.
-Cliquer sur l'icône "carte routière" permet de "localiser l'espace sur le plan" et affiche l'espace sur le plan général de l'étage.
+All object types belonging to this family will be displayed in the meeting space information.
 
+## Configure Meeting Room Access
 
+To configure meeting room access, from the left menu,
 
+-   click on "Administration", "Security", "Content roles" then "list content roles"
+-   click on the "pencil" icon of the relevant content role
+-   in "Content role associations to floors", check the floors containing meeting spaces
+-   validate the modification
+
+Users with this content role will have access to meeting spaces on the selected floors.

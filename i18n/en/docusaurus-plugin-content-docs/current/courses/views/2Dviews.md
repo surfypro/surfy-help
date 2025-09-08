@@ -59,79 +59,79 @@ In all size choices,
         -   clicking on the red cross cancels the display font size change.
         -   checking nothing allows you to keep the modified font size until the next refresh (F5). The size then returns to the last value validated with the green checkmark.
 
-## Modifier la taille des icônes sur le plan
+## Modify Icon Size on Plan
 
-Pour changer la taille des icônes sur le plan, depuis le plan de l'étage,
+To change icon size on the plan, from the floor plan,
 
--   cliquer sur l'icône "Gérer l'échelle" au dessus du plan puis sur "modifier la Taille des icônes des types d'objet".
--   ajuster la taille des icônes. Toutes les icônes sont affichées à la même taille.
+-   click on the "Manage scale" icon above the plan then on "modify Object type icon size".
+-   adjust icon size. All icons are displayed at the same size.
 
-Comme dans tous les choix de taille,
-        -   cliquer sur la coche verte permet de valider la taille des icônes jusqu'au prochain changement.
-        -   cliquer sur la croix rouge annule le changement de taille des icônes.
-        -   ne rien cocher permet de garder la taille modifiée des icônes jusqu'au prochain rafraichissement (F5). La taille des icônes revient alors à la dernière valeur validée avec la coche verte.
-
-
-## Déplacer le texte d'affichage
-
-On peut déplacer le texte d'affichage des espaces, des postes de travail ou des objets,
-
--   cliquer sur l'icône "Crayon" au dessus du plan pour "Activer le mode édition du plan"
--   cliquer dans l'espace, sur le poste de travail ou sur l'objet concerné
--   cliquer sur l'icône "Définir l'emplacement du texte d'affichage" (icône "A" oblique au dessus du plan)
-
-Un cercle rouge s'affiche derrière le texte de l'espace, du poste de travail ou de l'objet sélectionné, et une fiche s'ouvre à droite de l'écran pour "définir l'emplacement du texte d'affichage".
-
--   cliquer-déplacer le cercle pour déplacer l'affichage de l'entité
--   sur la fiche à droite,"activer l'affichage de l'ancre" permet de tirer une ligne entre le texte et l'espace, le poste de travail ou l'objet d'appartenance du texte afin d'indiquer cette appartenance
--   sur la fiche de droite, "réinitialiser la position du texte" permet de replacer le texte à sa position d'origine au barycentre de l'espace, du poste de travail ou de l'objet.
-
-Une fois les textes déplacés,
--   cliquer sur l'icône "A" oblique pour "arrêter la gestion du texte d'affichage"
--   cliquer sur l'icône "crayon" au dessus du plan pour "désactiver le mode édition du plan".
-
-Le texte est déplacé, et éventuellement ancré à son entité.
-Les déplacements de texte sont individuels. La réinitialisation de leur emplacement également.
+As in all size choices,
+        -   clicking on the green checkmark allows you to validate icon size until the next change.
+        -   clicking on the red cross cancels icon size change.
+        -   checking nothing allows you to keep the modified icon size until the next refresh (F5). Icon size then returns to the last value validated with the green checkmark.
 
 
-## Afficher les calques sur le plan
+## Move Display Text
 
-Afficher les calques sur le plan permet de colorier les espaces en fonction de diverses qualifications.
-Les espaces regroupés ont leur informations cumulées par calque en cliquant sur l'icône verticale correspondante :
+You can move display text for spaces, workstations or objects,
 
--   "colorier les espaces sur le plan en fonction des typologies d'espace" affiche et donne les cumuls par typologie d'espace
--   "colorier les espaces sur le plan en fonction des calques d'analyse" affiche et donne les cumuls par calque d'analyse
--   "colorier les espaces sur le plan en fonction des calques d'affectation" affiche et donne les cumuls par calque d'affectation
--   "colorier les espaces sur le plan selon les organisations" affiche et donne les cumuls par Service et par Direction
--   "colorier les espaces et les postes de travail par rapport aux centres de coût" affiche et donne les cumuls par centre de coût, pour les espaces, les postes de travail et les personnes.
+-   click on the "Pencil" icon above the plan to "Activate plan edit mode"
+-   click in the space, on the workstation or on the relevant object
+-   click on the "Define display text location" icon (oblique "A" icon above the plan)
 
-:::tip BON A SAVOIR
-On peut visualiser les cumuls des différents calques pour l'ensemble du bâtiment en [visualisant le bâtiment en 3D](/en/docs/courses/views/3Dviews.md#afficher-le-plan-3d-dun-bâtiment)
+A red circle appears behind the text of the space, workstation or selected object, and a card opens to the right of the screen to "define display text location".
+
+-   click-drag the circle to move the entity display
+-   on the card to the right, "activate anchor display" allows drawing a line between the text and the space, workstation or object belonging to the text to indicate this belonging
+-   on the right card, "reset text position" allows placing the text back to its original position at the barycenter of the space, workstation or object.
+
+Once texts are moved,
+-   click on the oblique "A" icon to "stop display text management"
+-   click on the "pencil" icon above the plan to "deactivate plan edit mode".
+
+The text is moved, and possibly anchored to its entity.
+Text movements are individual. Resetting their location is also individual.
+
+
+## Display Layers on Plan
+
+Displaying layers on the plan allows coloring spaces according to various qualifications.
+Grouped spaces have their information cumulated by layer by clicking on the corresponding vertical icon:
+
+-   "color spaces on plan by space typologies" displays and gives cumulations by space typology
+-   "color spaces on plan by analysis layers" displays and gives cumulations by analysis layer
+-   "color spaces on plan by assignment layers" displays and gives cumulations by assignment layer
+-   "color spaces on plan by organizations" displays and gives cumulations by Service and by Direction
+-   "color spaces and workstations by cost centers" displays and gives cumulations by cost center, for spaces, workstations and people.
+
+:::tip GOOD TO KNOW
+You can visualize cumulations of different layers for the entire building by [visualizing the building in 3D](/en/docs/courses/views/3Dviews.md#display-a-buildings-3d-plan)
 :::
 
-## Afficher l'état des postes de travail sur le plan
+## Display Workstation Status on Plan
 
-Cliquer sur l'icône verticale "colorier les postes de travail par rapport à leur état" permet de colorier les postes de travail :
--   en vert pour les postes affectables mais libres. Cette qualification est automatique
--   en rose pour les postes déclarés en "Flex"
--   en orange pour les postes partagés à plusieurs. Cette qualification est automatique
--   en bleu foncé pour les postes déclarés "de passage"
--   en bleu ciel pour les postes déclarés "réservables"
+Clicking on the vertical "color workstations by their status" icon allows coloring workstations:
+-   in green for assignable but free workstations. This qualification is automatic
+-   in pink for workstations declared as "Flex"
+-   in orange for workstations shared by several people. This qualification is automatic
+-   in dark blue for workstations declared as "passage"
+-   in light blue for workstations declared as "bookable"
 
-Les postes de travail non concernés par ces qualifications restent dans leur couleur d'origine (blanc).
-Les postes de travail déclarés "en Flex" ou "de passage" ne peuvent pas être affectés à une personne.
+Workstations not concerned by these qualifications remain in their original color (white).
+Workstations declared as "Flex" or "passage" cannot be assigned to a person.
 
-## Afficher les profils Sécurité sur le plan
+## Display Security Profiles on Plan
 
-Cliquer sur l'icône verticale "colorier les postes de travail par rapport aux personnes" permet de colorier les postes de travail des personnes affectées suivant leur profil sécurité.
-Deux voire trois affectations de profils de sécurité différents sur le même poste de travail, striera le poste de travail avec les couleurs des profils sécurité des personnes affectées.
-Pour plus d'information sur les profils Sécurité, voir le chapitre [Visualiser les profils Sécurité sur les plans](/en/docs/tutorials/person/personSecurityProfile/list.md#visualiser-les-profils-s%C3%A9curit%C3%A9-sur-les-plans).
+Clicking on the vertical "color workstations by people" icon allows coloring workstations of assigned people according to their security profile.
+Two or even three assignments of different security profiles on the same workstation will stripe the workstation with the colors of the security profiles of assigned people.
+For more information on Security profiles, see the chapter [Visualize Security Profiles on Plans](/en/docs/tutorials/person/personSecurityProfile/list.md#visualize-security-profiles-on-plans).
 
 
-## Afficher les objets sur le plan
+## Display Objects on Plan
 
-Cliquer sur l'icône verticale "Afficher sur le plan les objets par famille et type d'objet" permet d'afficher ou non les objets en fonction de leur famille et de leur type d'objets.
+Clicking on the vertical "Display objects on plan by family and object type" icon allows displaying or not objects according to their family and object type.
 
-## Afficher les postes de travail sur le plan
+## Display Workstations on Plan
 
-Cliquer sur l'icône verticale "Afficher sur le plan les postes de travail par type de poste de travail" permet d'afficher ou non les postes de travail en fonction de leur type de poste de travail.
+Clicking on the vertical "Display workstations on plan by workstation type" icon allows displaying or not workstations according to their workstation type.

@@ -5,48 +5,48 @@ sidebar_position: 2
 
 By modifying an object type, all objects associated with this object type will be modified.
 
-## Modifier les informations du type d'objet Icône
+## Modify Icon Object Type Information
 
-On peut modifier l'icône et les informations d'un type d'objet Icône en modifiant la fiche du type d'objet :
-On peut aussi lui ajouter une photo, changer son <P code="itemType:name" />, sa <P code="itemType:color" />, renseigner son fabricant, ajouter un modèle 3D,...
+You can modify the icon and information of an Icon object type by modifying the object type card:
+You can also add a photo, change its <P code="itemType:name" />, its <P code="itemType:color" />, fill in its manufacturer, add a 3D model,...
 
-Pour accéder à cette fiche, depuis le menu de gauche,
+To access this card, from the left menu,
 
--   cliquer sur "Mobiliers", "Typologies", "Types d'objet" puis "Lister les types d'objet"
--   rechercher le type d'objet en cliquant sur l'icone "Filtrer les types d'objet" en haut à droite de l'écran
--   renseigner le type d'objet à rechercher pour l'isoler dans la liste
--   au début de la ligne du type d'objet, cliquer sur l'icone "Voir plus d'options pour le type d'objet XXX" puis sur "Modifier le type d'objet XXX"
--   modifier les informations du type d'objet à modifier
--   changer l'icone du type d'objet en choisissant dans les onglets "Fontawsome" (catalogue d'icônes avec recherche en anglais), "SURFY" (icônes associées aux espaces pour les plans d'orientation) ou "SURFY 2" (icones de sécurité ISO 7010)
--   "Sauvegarder" les modifications
+-   click on "Furniture", "Typologies", "Object types" then "List object types"
+-   search for the object type by clicking on the "Filter object types" icon at the top right of the screen
+-   fill in the object type to search for to isolate it in the list
+-   at the beginning of the object type line, click on the "See more options for object type XXX" icon then on "Modify object type XXX"
+-   modify the information of the object type to modify
+-   change the object type icon by choosing from the "Fontawesome" tabs (icon catalog with English search), "SURFY" (icons associated with spaces for orientation plans) or "SURFY 2" (ISO 7010 security icons)
+-   "Save" modifications
 
 
-:::tip Bon à savoir
-On peut accéder directement aux informations ou à la forme d'un type d'objet si celui ci est présent sur le plan: En cliquant sur un des objets du type d'objet, l'icône "Voir plus d'options pour le type d'objet XXX" sur la fiche de l'objet à gauche en début de la ligne "type d'objet", permet d'accéder directement à la fiche ou à la forme du type d'objet.
+:::tip Good to know
+You can directly access information or the shape of an object type if it is present on the plan: By clicking on one of the objects of the object type, the "See more options for object type XXX" icon on the object card to the left at the beginning of the "object type" line, allows direct access to the card or shape of the object type.
 :::
 
-### Modifier la famille du type d'objet
+### Modify Object Type Family
 
-Pour modifier la famille du type d'objet, depuis le menu de gauche,
+To modify the object type family, from the left menu,
 
--   cliquer sur "Mobiliers", "Typologies" puis "types d'objet" et "Lister les types d'objet"
--   rechercher le type d'objet à modifier en cliquant sur l'icone "Filtrer les types d'objet" en haut à droite de l'écran
--   renseigner le type d'objet à rechercher pour l'isoler dans la liste
--   au début de la ligne du type d'objet, cliquer sur l'icone "Voir plus d'options pour le type d'objet XXX" puis sur "Modifier le type d'objet XXX"
--   modifier la <P code="itemType:itemTypeFamily" /> en cliquant sur le crayon et choisir la nouvelle famille pour le type d'objet concerné
--   sauvegarder les modifications
+-   click on "Furniture", "Typologies" then "object types" and "List object types"
+-   search for the object type to modify by clicking on the "Filter object types" icon at the top right of the screen
+-   fill in the object type to search for to isolate it in the list
+-   at the beginning of the object type line, click on the "See more options for object type XXX" icon then on "Modify object type XXX"
+-   modify the <P code="itemType:itemTypeFamily" /> by clicking on the pencil and choose the new family for the relevant object type
+-   save modifications
 
 
-## Changer le type d'objet d'icônes déjà créées
+## Change Object Type of Already Created Icons
 
-Si des icônes ont déjà été créées et placées sur les plans, on peut changer le type d'objet de ces objets.
+If icons have already been created and placed on plans, you can change the object type of these objects.
 
-Pour cela,
+To do this,
 
--   cliquer sur l'icône dont le type d'objet est à changer
--   dans la fiche de l'icône à gauche, cliquer sur "Modifier" afin de modifier l'icône
--   sur la ligne "type d'objet", cliquer sur l'icône crayon "changer le type de'objet"
--   choisir le nouveau type d'objet ou icône
--   sauvegarder les informations et rafraichir (F5)
+-   click on the icon whose object type is to be changed
+-   in the icon card to the left, click on "Modify" to modify the icon
+-   on the "object type" line, click on the pencil icon "change object type"
+-   choose the new object type or icon
+-   save information and refresh (F5)
 
-L'icône concernée à changé de type d'objet.
+The relevant icon has changed object type.

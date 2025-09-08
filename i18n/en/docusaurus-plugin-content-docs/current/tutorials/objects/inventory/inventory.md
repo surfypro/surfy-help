@@ -26,69 +26,69 @@ The object's "Reference" can be displayed on all objects of the same type by che
 The "Asset code" can be searched with the magnifying glass to geolocate the object on the plan. It is visible by passing the mouse over the object but is not displayable on the object.<br />
 :::
 
-## Référencer les objets d'un type de poste de travail
+## Reference Objects of a Workstation Type
 
-Un poste de travail est composé d'un ou plusieurs objets "virtuels" regroupés.<br />
-Par défaut, ces objets "virtuels" ne peuvent pas être référencés individuellement.<br />
+A workstation is composed of one or more grouped "virtual" objects.<br />
+By default, these "virtual" objects cannot be referenced individually.<br />
 
-Pour attribuer à chaque objet du poste de travail des informations propres, il est nécessaire de rendre ces objets "physiques".
+To assign specific information to each workstation object, it is necessary to make these objects "physical".
 
-### Configurer les objets physiques pour un type de poste de travail
+### Configure Physical Objects for a Workstation Type
 
-Pour rendre "physiques" les objets d'un type de poste de travail, depuis le plan d'un étage,
+To make objects of a workstation type "physical", from a floor plan,
 
--   cliquer sur un des postes de travail concerné
--   dans la fiche du poste de travail, à gauche, cliquer sur l'icône en début de ligne du "type de poste de travail" pour "voir plus d'option pour le type de poste de travail XXX"
--   choisir d' "éditer les formes et l'emplacement des types d'objet pour le type de poste de travail XXX"
+-   click on one of the relevant workstations
+-   in the workstation card, to the left, click on the icon at the beginning of the "workstation type" line to "see more options for workstation type XXX"
+-   choose to "edit shapes and location of object types for workstation type XXX"
 
-La composition du poste de travail est affichée sur l'écran.
+The workstation composition is displayed on the screen.
 
--   ouvrir l'icône en haut à gauche de la page pour "commencer la manipulation de l'espace de travail"
--   cliquer sur la dernière icône de la ligne pour "lister les types d'objet"
+-   open the icon at the top left of the page to "start workspace manipulation"
+-   click on the last icon of the line to "list object types"
 
-La liste des objets composant le type de poste de travail apparait à droite.
+The list of objects composing the workstation type appears on the right.
 
--   cocher la case "inventaire physique" des objets à rendre "physiques"
+-   check the "physical inventory" box for objects to make "physical"
 
-:::tip Bon à savoir
-A ce stade, cliquer sur le "papillon" à droite de l'objet permet de définir le nombre de places assises représentées par l'objet
+:::tip Good to know
+At this stage, clicking on the "butterfly" to the right of the object allows defining the number of seats represented by the object
 :::
 
-Une fois cette opération effectuée, il faut créer les postes de travail "Physiques".
+Once this operation is completed, you need to create "Physical" workstations.
 
-### Créer les postes de travail physiques
+### Create Physical Workstations
 
-Une fois que les objets composant le poste de travail ont été cochés, il est nécessaire de créer les postes de travail "physiques".
+Once the objects composing the workstation have been checked, it is necessary to create "physical" workstations.
 
-Pour cela, depuis le menu de gauche,
+To do this, from the left menu,
 
--   cliquer sur "Administration, "Entreprises" puis "Les rapports et les actions pour la qualité de données pour les entreprises" puis "Cohérence de l'inventaire"
+-   click on "Administration", "Companies" then "Reports and actions for data quality for companies" then "Inventory consistency"
 
-Les postes de travail correspondant au type de poste de travail à créer en "physique" s'affichent.
+Workstations corresponding to the workstation type to create as "physical" are displayed.
 
--   cliquer sur "CREATE" pour créer les objets physiques concernés.
+-   click on "CREATE" to create the relevant physical objects.
 
-:::warning BON A SAVOIR
-Si des postes de travail "physiques" ont été créés et que la case "objet physique" a été ensuite décochée sur les objets composant le type de poste de travail, ces postes de travail anciennement "physiques" sont proposés à la suppression. Cliquer sur "DELETE" ne supprimera que leur représentation "physique" et ne supprimera pas les postes de travail sur les plans, ceux-ci étant virtuels.<br />
-Cependant, si certains objets anciennement "physiques" ont gardé une information de référencement propre, ils ne pourront pas être supprimés et s'afficheront en erreur dans cette page.
+:::warning GOOD TO KNOW
+If "physical" workstations have been created and the "physical object" box has been subsequently unchecked on the objects composing the workstation type, these formerly "physical" workstations are proposed for deletion. Clicking on "DELETE" will only delete their "physical" representation and will not delete workstations on plans, these being virtual.<br />
+However, if some formerly "physical" objects have kept their own referencing information, they cannot be deleted and will display as errors on this page.
 :::
 
-Les postes de travail physiques sont créés.<br />
-La page de création/suppression indique "All is fine".<br />
-Sur le plan, on peut maintenant référencer chaque objet physique des postes de travail.
+Physical workstations are created.<br />
+The creation/deletion page indicates "All is fine".<br />
+On the plan, you can now reference each physical object of the workstations.
 
-### Référencer les objets des postes de travail
+### Reference Workstation Objects
 
-Pour référencer un objet composant un poste de travail, celui ci doit être déclaré "physique".<br />
-En cliquant sur un poste de travail sur le plan, la liste des objets le composant s'affiche en bas de la fiche du poste de travail.
+To reference an object composing a workstation, it must be declared "physical".<br />
+By clicking on a workstation on the plan, the list of objects composing it is displayed at the bottom of the workstation card.
 
--   Cliquer sur l'icône "crayon" pour "modifier l'objet" en bout de ligne de l'objet à référencer permet d'accéder à la référence, au code d'immobilisation et à la date d'achat de l'objet à droite de l'écran.
+-   Click on the "pencil" icon to "modify the object" at the end of the line of the object to reference allows access to the reference, asset code and purchase date of the object to the right of the screen.
 
-Si l'icône "crayon" n'apparait pas, c'est que l'objet n'a pas été déclaré "physique". Voir dans ce cas comment [configurer les objets physiques pour un type de poste de travail](/en/docs/tutorials/objects/inventory/#configurer-les-objets-physiques-pour-un-type-de-poste-de-travail)
--   compléter les informations et "sauvegarder".
+If the "pencil" icon does not appear, it means the object has not been declared "physical". In this case, see how to [configure physical objects for a workstation type](/en/docs/tutorials/objects/inventory/#configure-physical-objects-for-a-workstation-type)
+-   complete the information and "save".
 
-L'objet composant le poste de travail est référencé.
+The object composing the workstation is referenced.
 
-Les champs "Référence", "Code d'immobilisation" et "Date d'achat" apparaissent dans le fichier Excel du ["rapport de l'inventaire"](/en/docs/tutorials/BuildingData/Buildingdashboard/Buildingreporting#rapport-de-linventaire-du-bâtiment) depuis le [Tableau de bord du bâtiment](/en/docs/tutorials/BuildingData/Buildingdashboard/Buildingreporting).
+The "Reference", "Asset Code" and "Purchase Date" fields appear in the Excel file of the ["inventory report"](/en/docs/tutorials/BuildingData/Buildingdashboard/Buildingreporting#building-inventory-report) from the [Building Dashboard](/en/docs/tutorials/BuildingData/Buildingdashboard/Buildingreporting).
 
 

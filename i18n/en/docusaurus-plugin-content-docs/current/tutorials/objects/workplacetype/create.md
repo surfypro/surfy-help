@@ -1,16 +1,16 @@
 ---
 sidebar_position: 1
 ---
-# Créer un type de poste de travail
+# Create a Workstation Type
 
 <Youtube code="EV6UUY1utws"/>
 
 
-Pour créer un type de poste de travail dans Surfy, depuis le menu de gauche, 
+To create a workstation type in Surfy, from the left menu, 
 
--   cliquer sur "Mobiliers", "Typologies", "Types de poste de travail" puis "créer un type de poste de travail".
--   renseigner le <P code="workplaceType:name" /> du type de poste de travail (par exemple: PdT 180x80C) et la <P code="workplaceType:color" /> (blanc par défaut)
--   valider la création du type de poste de travail
+-   click on "Furniture", "Typologies", "Workstation types" then "create a workstation type".
+-   fill in the <P code="workplaceType:name" /> of the workstation type (for example: WST 180x80C) and the <P code="workplaceType:color" /> (white by default)
+-   validate workstation type creation
 
 ## Compose the Workstation Type
  
@@ -28,36 +28,38 @@ To compose a workstation type, the object types composing the workstation type m
  -  click on the "butterfly" to the right of the object type names to define the number of seats for each of them (example: 1 seat for the Desk chair)
  -  leaving the page saves the composition
  -  the created workstation type is available for adding a workstation in spaces.
- 
- ## Composer un poste de travail avec des objets "physiques"
 
-Depuis la page de composition du type de poste de travail,
-
--   cliquer sur l'icône "Lister les types d'objet" pour afficher à droite la liste des types d'objet utilisés
--   cocher la case "inventaire physique" d'un type d'objet utilisé dans la composition du poste de travail permet de définir les objets à déclarer "physiques", permettant l'attribution d'une <P code="item:reference" />, d'un <P code="item:code" /> et d'une <P code="item:purchaseDate" /> sur l'objet correspondant. Cela permet de créer un inventaire d'objets uniques.
-
-Par défaut, les objets utilisés dans la composition d'un type de poste de travail ne peuvent être référencés et font l'objet d'un simple comptage.
-
-### Création des objets physiques
-
-Une fois la case "Inventaire physique" cochée, il est nécessaire de créer les objets physiques associés.
-
-Pour cela, depuis le menu de gauche,
-
--   cliquer sur "Administration" puis "Entreprises" puis "Les rapports et actions pour la qualité de données pour les entreprises" puis "cohérence de l'inventaire"
--   la liste des objets physiques à créer apparait, classés par type de poste de travail.
--   cliquer sur la case "CREATE" afin de créer les objets physiques du type de poste de travail correspondant.
-
-:::tip A CE STADE
-Si un type de poste de travail est composé d'objets auparavant "physique" mais qui ont été décochés dans la composition du type de poste de travail, les postes de travail correspondants seront proposés à la suppression.<br />
-Cliquer sur "DELETE" supprimera uniquement les objets "Physiques" mais ne supprimera pas les postes de travail correspondants, qui resteront présents mais non référençables.
+:::tip Good to know
+The workstation type composition is saved automatically when leaving the page.
 :::
 
-### Renseigner les informations des objets "physiques" créés
+## Workstation Type Properties
 
-Depuis le plan, 
+A workstation type has the following properties:
 
--   cliquer sur un poste de travail concerné, la fiche du poste de travail apparait
--   dans l'"inventaire physique du poste de travail", cliquer sur l'icône "crayon" face à l'objet "physique" à renseigner
+-   <P code="workplaceType:name" />: name of the workstation type
+-   <P code="workplaceType:color" />: color of the workstation type on plans
+-   <P code="workplaceType:seats" />: number of seats of the workstation type (calculated automatically from the composition)
+-   <P code="workplaceType:surface" />: surface of the workstation type (calculated automatically from the composition)
 
-Les informations de l'objet (<P code="item:reference" />, <P code="item:code" /> et <P code="item:purchaseDate" />) sont accessibles à droite de l'écran et peuvent être renseignés ou modifiés.
+## Workstation Type Composition
+
+A workstation type is composed of one or more object types placed relative to each other and grouped into a single entity.
+
+The composition allows you to:
+
+-   define the layout of objects in the workstation
+-   define the number of seats for each object type
+-   define the relative position of objects
+-   define the rotation of objects
+
+## Workstation Type Usage
+
+Once created, a workstation type can be used to:
+
+-   add workstations in spaces
+-   duplicate workstations
+-   modify workstation properties
+-   delete workstations
+
+The workstation type composition is automatically applied to all workstations of this type.

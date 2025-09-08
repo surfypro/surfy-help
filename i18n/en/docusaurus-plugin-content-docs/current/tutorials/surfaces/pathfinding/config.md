@@ -6,77 +6,77 @@ sidebar_position: 1
 
 A point-to-point route allows you to obtain the path from an origin point to a destination point in Surfy.
 
-## La fonctionnalité Pathfinding
+## Pathfinding Feature
 
-Pour obtenir un itinéraire point à point dans Surfy, la fonctionnalité "Pathfinding" doit être validée.
-Une fois cette fonctionnalité validée, une icône verticale "serpentin" permettant de "Trouver son chemin dans les espaces" est disponible en fin de liste des icônes verticales.
+To get a point-to-point route in Surfy, the "Pathfinding" feature must be validated.
+Once this feature is validated, a vertical "serpentine" icon allowing to "Find your way in spaces" is available at the end of the vertical icons list.
 
-Pour valider la fonctionnalité "Pathfinding", depuis le menu de gauche,
+To validate the "Pathfinding" feature, from the left menu,
 
--   cliquer sur "Administration" puis "Entreprises" et "Vue des entreprises en tuile"
--   cliquer sur l'icône en bout de ligne de l'entreprise pour "Voir plus d'option pour l'entreprise XXX"
--   cliquer sur "Modifier l'entreprise XXX"
--   dans la fiche de l'entreprise, cocher la case "Enable Pathfinding"
--   sauvegarder les modifications.
+-   click on "Administration" then "Companies" and "Tile view of companies"
+-   click on the icon at the end of the company line to "See more options for company XXX"
+-   click on "Modify company XXX"
+-   in the company card, check the "Enable Pathfinding" box
+-   save modifications.
 
-Cliquer sur le logo de l'entreprise pour revenir sur la page d'accueil.
-Après rafraichissement, l'icône verticale "serpentin" apparait, permettant de "Trouver son chemin dans les espaces".
+Click on the company logo to return to the home page.
+After refresh, the vertical "serpentine" icon appears, allowing to "Find your way in spaces".
 
-La fonctionnalité "Pathfinding" est opérationnelle.
+The "Pathfinding" feature is operational.
 
-## Les portes et passages
+## Doors and Passages
 
-Pour utiliser l'itinéraire point à point, il est nécessaire de [créer les portes et passages](/en/docs/tutorials/surfaces/doors/create.md) entre les différents espaces.
+To use point-to-point routing, it is necessary to [create doors and passages](/en/docs/tutorials/surfaces/doors/create.md) between different spaces.
 
-## Le connecteur d'espace
+## Space Connector
 
-Le connecteur d'espace permet à deux espaces non contigüs de communiquer virtuellement, par exemple entre deux niveaux via les ascenseurs ou les escaliers. Cette donnée est utilisée dans l'itinéraire point à point pour changer de niveau ou de bâtiment.
+The space connector allows two non-contiguous spaces to communicate virtually, for example between two levels via elevators or stairs. This data is used in point-to-point routing to change level or building.
 
-### Le type de connecteur d'espace 
+### Space Connector Type
 
-Un connecteur d'espace est associé à un type de connecteur d'espace : Ascenseur ou Escalier.
-Pour créer un type de connecteur d'espace supplémentaire (ex: Navette,...) depuis le menu de gauche,
+A space connector is associated with a space connector type: Elevator or Stairs.
+To create an additional space connector type (ex: Shuttle,...) from the left menu,
 
--   cliquer sur "Administration", "Connecteurs" puis "Room Connector Types" et "Créer RoomConnectorType"
--   renseigner le <P code="roomConnectorType:name" /> du type de connecteur (ex: Navette)
--   valider la création
+-   click on "Administration", "Connectors" then "Room Connector Types" and "Create RoomConnectorType"
+-   fill in the <P code="roomConnectorType:name" /> of the connector type (ex: Shuttle)
+-   validate creation
 
-### Configurer le connecteur d'espace
+### Configure Space Connector
 
-On définit un connecteur d'espace pour un escalier ou un ascenseur desservant plusieurs niveaux, mais également pour un trajet non identifié dans Surfy : Taxi, navette, téléphérique, ...
-La durée du transfert par le connecteur d'espace est prise en compte dans le calcul total de la durée de l'itinéraire.
+A space connector is defined for stairs or an elevator serving several levels, but also for an unidentified route in Surfy: Taxi, shuttle, cable car, ...
+The transfer duration by the space connector is taken into account in the total duration calculation of the route.
 
-Pour créer un connecteur d'espace, depuis le menu de gauche,
+To create a space connector, from the left menu,
 
--   cliquer sur "Administration", "Connecteurs" puis "Connecteurs d'espace" et "Créer un connecteur d'espace"
--   renseigner le <P code="roomConnector:name" /> (ex: Escalier C) et le <P code="roomConnector:roomConnectorType" /> (Escalier)
--   renseigner le <P code="roomConnector:waitingTime" /> et le <P code="roomConnector:transferTime" /> entre chaque étage
--   valider la création
+-   click on "Administration", "Connectors" then "Space connectors" and "Create a space connector"
+-   fill in the <P code="roomConnector:name" /> (ex: Stairs C) and the <P code="roomConnector:roomConnectorType" /> (Stairs)
+-   fill in the <P code="roomConnector:waitingTime" /> and the <P code="roomConnector:transferTime" /> between each floor
+-   validate creation
 
-Pour associer le connecteur d'espace aux espaces depuis la fiche du connecteur,
+To associate the space connector with spaces from the connector card,
 
--   cliquer sur le menu contextuel (case grise dans le menu de gauche, sous la recherche), puis sur "Modifier le connecteur d'espace XXX"
--   cliquer sur l'onglet "Associer un espace"
--   rechercher et sélectionner les espaces à connecter en validant chacun d'eux
+-   click on the context menu (gray box in the left menu, under search), then on "Modify space connector XXX"
+-   click on the "Associate a space" tab
+-   search and select spaces to connect by validating each one
 
-La liste des espaces connectés par le connecteur d'espace s'affiche en bas de page.
+The list of spaces connected by the space connector is displayed at the bottom of the page.
 
 :::warning ATTENTION
-Cocher et supprimer la ligne d'un espace sur cette page supprime l'espace et tout son contenu !
-Pour retirer un connecteur à un espace, il faut modifier l'espace en retirant le connecteur depuis la fiche de l'espace.
+Checking and deleting a space line on this page deletes the space and all its content!
+To remove a connector from a space, you must modify the space by removing the connector from the space card.
 :::
 
-### Associer les connecteurs d'espace aux espaces depuis le plan
+### Associate Space Connectors with Spaces from Plan
 
-Pour associer un connecteur d'espace à un espace depuis le plan de l'étage,
+To associate a space connector with a space from the floor plan,
 
--   cliquer dans l'espace à associer
--   dans la fiche de l'espace, cliquer sur "Modifier" afin de modifier les informations de l'espace
--   cliquer sur l'icône "crayon" face à "Connecteur d'espace"
--   choisir le connecteur appropriée à l'espace. Le type de connecteur d'espace est indiqué entre crochets
--   sauvegarder les modifications
+-   click in the space to associate
+-   in the space card, click on "Modify" to modify space information
+-   click on the "pencil" icon next to "Space connector"
+-   choose the appropriate connector for the space. The space connector type is indicated in brackets
+-   save modifications
 
-L'espace associé est connecté aux autres espaces ayant le même connecteur associé.
+The associated space is connected to other spaces having the same associated connector.
 
 
-Le changement de niveau au cours d'un itinéraire est en cours de développement.
+Level change during a route is under development.

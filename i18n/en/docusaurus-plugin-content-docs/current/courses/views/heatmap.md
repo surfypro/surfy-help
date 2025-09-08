@@ -3,18 +3,18 @@ sidebar_position: 5
 ---
 # Display Heat Maps
 
-Les cartes de chaleur permettent d'afficher la densité des données sur les plans en 2D.
-Les cartes de chaleur ne sont pas exportables en Image pour le moment, une capture d'écran est toujours possible.
+Heat maps allow displaying data density on 2D plans.
+Heat maps are not exportable as images for the moment, a screenshot is always possible.
 
-Pour afficher les cartes de chaleur, depuis le plan 2D de l'étage,
+To display heat maps, from the 2D floor plan,
 
--   cliquer sur l'icône verticale "flamme" afin de "colorier avec des cartes de chaleur"
--   choisir la carte de chaleur
--   les densité sont affichées en vert, jaune ou rouge sur le plan, suivant le degré de densité de la donnée. 
+-   click on the vertical "flame" icon to "color with heat maps"
+-   choose the heat map
+-   densities are displayed in green, yellow or red on the plan, according to the degree of data density. 
 
-Les cartes de chaleur disponibles sont:
+Available heat maps are:
 
--   la densité de places assises
--   la densité des postes de travail
--   la densité des affectations aux postes de travail
--   la densité d'empreinte carbone du mobilier
+-   seating density
+-   workstation density
+-   workstation assignment density
+-   furniture carbon footprint density

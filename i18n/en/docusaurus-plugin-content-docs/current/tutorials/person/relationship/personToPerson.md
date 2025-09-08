@@ -2,70 +2,66 @@
 sidebar_position: 1
 ---
 
-# Relation de personne à personne
+# Person to Person Relationship
 
-Une relation de personne à personne permet de créer une "relation naturelle" de la personne "source" vers la personne "destination".
-La "relation inverse" s'exerce de la personne "destination" vers la personne "source".
+A person to person relationship allows creating a "natural relationship" from the "source" person to the "destination" person.
+The "inverse relationship" is exercised from the "destination" person to the "source" person.
 
 
 
 <Youtube code="ZUjvpIYY-kg"/>
 
-## Type de relation
+## Relationship Type
 
-Le "type de relation" définit la "relation naturelle" entre deux personnes : par exemple, "est manager de".
-On définit également la "relation inverse" entre ces personnes : dans ce cas, "est managé(e) par".
+The "relationship type" defines the "natural relationship" between two people: for example, "is manager of".
+We also define the "inverse relationship" between these people: in this case, "is managed by".
 
-Ce type de relation est ensuite utilisé pour définir le lien relationnel entre les personnes. Dans l'exemple, on obtient la liste des équipes, leur manager, mais aussi le manager du manager, etc...
+This relationship type is then used to define the relational link between people. In the example, we get the list of teams, their manager, but also the manager's manager, etc...
 
-Pour créer le type de relation, depuis le menu de gauche,
+To create the relationship type, from the left menu,
 
--   cliquer sur "Collaborateurs", "Relations", "Types de relation entre personnes", puis "Créer un type de relation entre personnes".
--   renseigner la "relation naturelle" (exemple :"est manager de") et la "relation inverse" (exemple :"est managé par")
--   valider la création.
--   le type de relation est créé.
+-   click on "Collaborators", "Relationships", "Person to person relationship types", then "Create a person to person relationship type".
+-   fill in the "natural relationship" (example: "is manager of") and the "inverse relationship" (example: "is managed by")
+-   validate creation.
+-   the relationship type is created.
 
 
-## Créer une relation de personne à personne
+## Create a Person to Person Relationship
 
-Pour créer une relation entre deux personnes, le type de relation doit déjà être créé.
+To create a relationship between two people, from the left menu,
 
-Depuis le menu de gauche,
+-   click on "Collaborators", "People" then "List people"
+-   at the beginning of the source person's line, click on the "See more options for person XXX" icon then on "Modify person XXX"
+-   click on "Person to person relationships" then on "CREATE A PERSON TO PERSON RELATIONSHIP"
+-   click on the "pencil" icon next to "Person"
+-   search and select the destination person
+-   click on the "pencil" icon next to "Relationship type"
+-   choose the relationship type
+-   validate creation
 
--   cliquer sur "Collaborateurs", "Relations", "Relations personne à personne" puis "créer une relation de personne à personne"
+The relationship is created from the source person to the destination person.
 
--   cliquer sur l'icône "crayon" pour sélectionner la "personne Source" (dans l'exemple : le manager)
--   cliquer sur l'icône "crayon" pour sélectionner la "personne Destination" (dans l'exemple : la personne managée)
--   cliquer sur l'icône "crayon" pour sélectionner le type de relation (exemple:"est manager de")
--   valider la création
--   La relation est créée
+## View Person to Person Relationships
 
-On peut lister les relations :
+To view relationships from a person, from the left menu,
 
--   cliquer sur "Collaborateurs", "Relations", "Relations personne à personne" puis "lister les relations de personne à personne".
+-   click on "Collaborators", "People" then "List people"
+-   at the beginning of the person's line, click on the "See more options for person XXX" icon then on "Modify person XXX"
+-   in "Person to person relationships", view the list of relationships where the person is the source
+-   in "Inverse person to person relationships", view the list of relationships where the person is the destination
 
-Dans la fiche d'une personne, la liste des personnes partageant avec elle la relation (naturelle ou inverse) est affichée.
-On peut afficher la fiche de n'importe quelle personne de la liste en cliquant sur son nom dans la liste.
+## Delete a Person to Person Relationship
 
-La liste des relations peut être importée en fichier Excel.
+To delete a relationship between two people, from the left menu,
 
-## Modifier une relation de personne à personne
+-   click on "Collaborators", "People" then "List people"
+-   at the beginning of the source person's line, click on the "See more options for person XXX" icon then on "Modify person XXX"
+-   in "Person to person relationships", check the box at the beginning of the relationship line to delete
+-   click on the trash can that appears
+-   confirm deletion
 
-Depuis le menu de gauche,
+The relationship is deleted.
 
--   cliquer sur "Collaborateurs", "Relations", "Relations personne à personne" puis "lister les relations de personne à personne"
--   rechercher dans la liste la ligne correspondant à la relation à modifier
--   cliquer sur l'icône en début de ligne pour "voir plus d'options pour la relation de personne à personne" pour "modifier la relation de personne à personne"
--   cliquer sur l'icône "crayon" pour sélectionner la nouvelle "personne Source" (dans l'exemple : le manager) ou la nouvelle "personne Destination" (dans l'exemple : la personne managée)
--   cliquer sur l'icône "crayon" pour modifier le type de relation des personnes source et destination.
--   sauvegarder les modifications
--   La relation est modifiée
-
-## Supprimer une relation de personne à personne
-
-Depuis le menu de gauche,
-
--   cliquer sur "Collaborateurs", "Relations", "Relations personne à personne" puis "lister les relations de personne à personne"
--   rechercher dans la liste la ligne correspondant à la relation à supprimer
--   cocher la case en début de ligne puis sur l'icône "poubelle" en haut de page, pour "Supprimer les relations de personne à personne sélectionnées"
--   la relation est supprimée.
+:::tip Good to know
+When you delete a relationship, only the relationship from the source person to the destination person is deleted. The inverse relationship is automatically deleted.
+:::

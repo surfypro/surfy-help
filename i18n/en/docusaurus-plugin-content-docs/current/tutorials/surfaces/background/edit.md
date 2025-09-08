@@ -1,44 +1,44 @@
 ---
 sidebar_position: 2
 ---
-# Modifier le fond de plan
+# Modify Plan Background
 
 
 <Youtube code="c_q-iUf1Is4"/>
 
 
-Suite un réaménagement dans Surfy, on peut être amené à modifier le fond de plan d'un étage pour supprimer des images parasites qui correspondraient à un ancien aménagement.
-Pour cela, on extrait l'image du fond de plan existant pour la modifier sous "Paint 3D" et la réintroduire en fond de plan dans Surfy.
+Following a redevelopment in Surfy, you may need to modify a floor's plan background to remove parasitic images that would correspond to an old layout.
+To do this, you extract the existing plan background image to modify it under "Paint 3D" and reintroduce it as a plan background in Surfy.
 
-## Extraire le fond de plan
+## Extract Plan Background
 
--   accéder à l'étage
--   dans le menu contextuel, cliquer sur "modifier l'étage XXX"
--   sous la touche "changer l'image", au bout de la ligne, cliquer sur "copier l'URL" du fond de plan
--   coller l'url dans un nouvel onglet du navigateur et cliquer sur "enter".  
--   l'image est affichée aux bonnes dimensions, cliquer droit pour "enregistrer sous"
--   nommer l'image et enregistrer.
+-   access the floor
+-   in the context menu, click on "modify floor XXX"
+-   under the "change image" button, at the end of the line, click on "copy URL" of the plan background
+-   paste the url in a new browser tab and click "enter".  
+-   the image is displayed at the correct dimensions, right-click to "save as"
+-   name the image and save.
 
-## Modifier le fond de plan avec Paint3D
+## Modify Plan Background with Paint3D
 
--   cliquer droit sur le fichier enregistré et "Ouvrir avec" Paint3D (ou tout autre logiciel de dessin respectant les dimensions du fichier)
--   passer directement en "zone de dessin" dans Paint3D.
--   à gauche de l'écran, la largeur et la hauteur en pixels doivent être conservées afin de garder la bonne taille de l'image et de rester compatible avec le dessin des espaces dans Surfy.
--   modifier le plan en sélectionnant la zone à supprimer + Backspace, ou en copiant/collant les éléments composant le plan.
--   ajouter une version sur le cartouche du plan pour un bon archivage.
--   "enregistrer sous" le fichier en ayant soin de garder la version non modifiée pour archivage.
+-   right-click on the saved file and "Open with" Paint3D (or any other drawing software respecting the file dimensions)
+-   go directly to "drawing area" in Paint3D.
+-   to the left of the screen, the width and height in pixels must be preserved to maintain the correct image size and remain compatible with space drawing in Surfy.
+-   modify the plan by selecting the area to delete + Backspace, or by copying/pasting the elements composing the plan.
+-   add a version on the plan cartouche for good archiving.
+-   "save as" the file while keeping the unmodified version for archiving.
 
-:::tip Bon à savoir
-On peut modifier l'image sous Paint3D au pixel près, donc supprimer ou ajouter très exactement les éléments voulus
+:::tip Good to know
+You can modify the image under Paint3D pixel by pixel, so delete or add exactly the desired elements
 :::
 
-## Réimporter le fond de plan dans Surfy
+## Re-import Plan Background in Surfy
 
 
--   accéder à l'étage du fond de plan à charger
--   dans le menu contextuel, cliquer sur "modifier l'étage XXX"
--   cliquer sur "changer l'image"
--   charger l'image modifiée du fond de plan et cliquer sur "skip" pour éviter le recadrage de l'image.
--   "sauvegarder" les modifications de l'étage.
--   à partir du menu contextuel, cliquer sur "plan de l'étage en 2D"
--   le nouveau fond de plan est affiché sur l'étage.
+-   access the floor of the plan background to load
+-   in the context menu, click on "modify floor XXX"
+-   click on "change image"
+-   load the modified plan background image and click "skip" to avoid image cropping.
+-   "save" floor modifications.
+-   from the context menu, click on "floor plan in 2D"
+-   the new plan background is displayed on the floor.

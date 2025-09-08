@@ -40,7 +40,7 @@ En passant la souris sur chaque ligne, on obtient le descriptif de l'information
 This information is calculated automatically by Surfy. It may be necessary to recalculate the data to get up-to-date information in case of plan modifications. To do this, click on the "reload data" icon at the top right of the screen then refresh (F5).<br />
 Non-effective information is not present in the building card (example: no workstation = no corresponding line)
 
-You can also access building information by viewing the [3D building](/en/docs/courses/views/3Dviews#afficher-le-plan-3d-dun-bâtiment) then clicking on the vertical icon "View building information".<br />
+You can also access building information by viewing the [3D building](/en/docs/courses/views/3Dviews#display-a-buildings-3d-plan) then clicking on the vertical icon "View building information".<br />
 To the listed information is added here the number of digitized spaces in the entire building.
 
 ## Floor Information Card

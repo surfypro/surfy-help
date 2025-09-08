@@ -49,6 +49,6 @@ The floor structure appears on a map at the building address and to scale.
 The "Transformation" allows you to modify the X position, Y position as well as the structure rotation to precisely position the structure on the map.
 Validate the modifications by checking the green checkmark.
 
-Once the structure is calibrated, the building can be geolocated on the map. See [Display a building in 3D on a map](/en/docs/courses/views/3Dviews.md#afficher-un-bâtiment-en-3d-sur-une-carte)
+Once the structure is calibrated, the building can be geolocated on the map. See [Display a building in 3D on a map](/en/docs/courses/views/3Dviews.md#display-a-building-in-3d-on-a-map)
 
 

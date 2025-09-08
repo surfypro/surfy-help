@@ -1,10 +1,9 @@
 {
-  "label": "L'occupation des locaux",
+  "label": "Space occupancy",
   "position": 4,
   "link": {
     "slug": "occupation",
     "type": "generated-index",
-    "description": "Les étapes pour gérer l'occupation d'un bâtiment"
+    "description": "Steps to manage building occupancy"
   }
 }
-

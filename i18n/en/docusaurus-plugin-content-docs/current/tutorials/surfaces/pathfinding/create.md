@@ -14,31 +14,31 @@ Distance information, walking time, running time are displayed in the info bubbl
 The route uses existing doors and passages while avoiding objects found on its path.
 It uses space connectors to change floors or buildings and ensure route continuity by integrating the use of stairs, elevators or any other means of transportation from one site to another (shuttle, taxi, cable car,...)
 
-Pour créer un itinéraire point à point, il faut :
+To create a point-to-point route, you need to:
 
--   définir l'espace d'origine
--   générer le graph d'orientation, si celui ci n'est plus correct depuis la dernière génération de graph (déplacement de mobilier, modifications de cloisons ou de portes)
--   "Activer le tracé du chemin depuis l'espace source" afin de faire apparaitre le traçé depuis le point d'origine vers le positionnement de la souris (point d'arrivée de l'étage). Si le point d'arrivée comporte un connecteur d'espace, l'itinéraire peut l'emprunter pour changer de niveau ou de lieu.
+-   define the origin space
+-   generate the orientation graph, if it is no longer correct since the last graph generation (furniture movement, partition or door modifications)
+-   "Activate path tracing from source space" to make the trace appear from the origin point to the mouse position (destination point of the floor). If the destination point has a space connector, the route can use it to change level or location.
 
 
 
-### Définir le point d'origine de l'itinéraire
+### Define the Route Origin Point
 
-Cliquer sur l'icône verticale "serpentin" ouvre la fenêtre d'itinéraire.
+Clicking on the vertical "serpentine" icon opens the route window.
 
-On peut d'abord sélectionner l'espace d'origine en cliquant dans l'espace concerné, puis sur l'icône verticale "serpentin" pour "trouver son chemin dans les espaces". Cliquer ensuite sur "Sélectionner l'espace d'origine" sélectionne l'espace concerné en espace d'origine.
+You can first select the origin space by clicking in the relevant space, then on the vertical "serpentine" icon to "find your way in spaces". Then clicking on "Select origin space" selects the relevant space as origin space.
 
-On peut également choisir son espace d'origine en cliquant dans la case pour choisir l'espace d'origine dans la liste des espaces de l'étage.
+You can also choose your origin space by clicking in the box to choose the origin space from the list of floor spaces.
 
-### Générer le graph d'orientation
+### Generate Orientation Graph
 
-Afin d'obtenir un itinéraire cohérent, il peut être nécessaire de "générer le graph d'orientation".
-Cliquer sur cette case permet de générer une toile d'araignée et un ensemble de noeuds utilisables par l'itinéraire, en évitant les objets présents et en empruntant les portes et passages.
+To get a coherent route, it may be necessary to "generate the orientation graph".
+Clicking on this box allows generating a spider web and a set of nodes usable by the route, avoiding present objects and using doors and passages.
 
-## Trouver son itinéraire vers le point d'arrivée
+## Find Your Route to the Destination Point
 
-Une fois le graph généré, déplacer la souris sur le plan permet d'afficher l'itinéraire depuis le point d'origine vers l'emplacement de la souris (point d'arrivée). La distance et le temps nécessaire sont indiqués dans l'info bulle.
+Once the graph is generated, moving the mouse on the plan allows displaying the route from the origin point to the mouse location (destination point). Distance and necessary time are indicated in the info bubble.
 
-## Changer de niveau dans l'itinéraire point à point
+## Change Level in Point-to-Point Route
 
-Le changement de niveau au cours d'un itinéraire est en cours de développement.
+Level change during a route is under development.

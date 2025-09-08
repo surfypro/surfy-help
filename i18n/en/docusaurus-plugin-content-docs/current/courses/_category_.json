@@ -1,9 +1,9 @@
 {
-  "label": "Les Cours",
+  "label": "Courses",
   "position": 4,
   "link": {
     "slug": "courses",
     "type": "generated-index",
-    "description": "Nos cours sont composés de suites de tutoriels"
+    "description": "Our courses are composed of tutorial sequences"
   }
 }

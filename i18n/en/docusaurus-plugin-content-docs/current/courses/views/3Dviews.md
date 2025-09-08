@@ -7,7 +7,7 @@ sidebar_position: 3
 ## Display a Floor Plan in 3D
 
 By default, floor plans are displayed in 2D in Surfy.
-Click to [View a floor plan in 2D](/en/docs/courses/views/2Dviews.md#visualiser-un-plan-en-2d)
+Click to [View a floor plan in 2D](/en/docs/courses/views/2Dviews.md#view-a-plan-in-2d)
 
 To get the 3D plan of a floor, from the 2D plan of the floor,
 
@@ -43,7 +43,7 @@ To get the 3D plan of a building, from the home page,
 -   click on the icon at the end of the color line of the concerned building
 -   select "the interactive 3D plan of building XXX"
 
-The building's 3D plan is displayed, and the accumulation of layer information for the entire building is accessible by vertical icons, in the same way [as for a floor](/en/docs/courses/views/2Dviews.md#afficher-les-calques-sur-le-plan).
+The building's 3D plan is displayed, and the accumulation of layer information for the entire building is accessible by vertical icons, in the same way [as for a floor](/en/docs/courses/views/2Dviews.md#display-layers-on-plan).
 
 -   click on the vertical "gear" icon to "view plan options"
 -   select the floors to display in the building
