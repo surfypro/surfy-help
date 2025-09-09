@@ -1,0 +1,9 @@
+{
+  "label": "Affectations aux postes de travail",
+  "position": 2,
+  "link": {
+    "slug": "workplaceaffectations",
+    "type": "generated-index",
+    "description": "Les affectations aux postes de travail"
+  }
+}

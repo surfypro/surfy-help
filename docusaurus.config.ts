@@ -3,8 +3,8 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Surfy Academy',
-  tagline: 'Bienvenue sur le site de formation des utilisateurs Surfy !',
+  title: 'Surfy Academy', // This will be overridden by translations
+  tagline: 'Bienvenue sur le site de formation des utilisateurs Surfy !', // This will be overridden by translations
   favicon: 'img/surfy-square.png',
 
   // Set the production url of your site here
@@ -24,7 +24,7 @@ const config: Config = {
   // Internationalization configuration
   i18n: {
     defaultLocale: 'fr',
-    locales: ['fr', 'en'],
+    locales: ['fr', 'en', 'es'],
     localeConfigs: {
       fr: {
         label: 'Français',
@@ -34,6 +34,11 @@ const config: Config = {
         label: 'English',
         path: '/en',
         htmlLang: 'en-US',
+      },
+      es: {
+        label: 'Español',
+        path: '/es',
+        htmlLang: 'es-ES',
       },
     },
   },

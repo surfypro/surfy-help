@@ -1,0 +1,42 @@
+{
+  "title": {
+    "message": "Surfy Academy",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Surfy Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Tutoriels": {
+    "message": "Tutorials",
+    "description": "Navbar item with label Tutoriels"
+  },
+  "item.label.Documentation": {
+    "message": "Documentation",
+    "description": "Navbar item with label Documentation"
+  },
+  "item.label.Surfy pour tous": {
+    "message": "Surfy for everyone",
+    "description": "Navbar item with label Surfy pour tous"
+  },
+  "item.label.Cours": {
+    "message": "Courses",
+    "description": "Navbar item with label Cours"
+  },
+  "item.label.Certifications": {
+    "message": "Certifications",
+    "description": "Navbar item with label Certifications"
+  },
+  "item.label.Nouveautés": {
+    "message": "What's new",
+    "description": "Navbar item with label Nouveautés"
+  },
+  "item.label.Nous contacter": {
+    "message": "Contact us",
+    "description": "Navbar item with label Nous contacter"
+  },
+  "item.label.Developpeurs": {
+    "message": "Developers",
+    "description": "Navbar item with label Developpeurs"
+  }
+}
