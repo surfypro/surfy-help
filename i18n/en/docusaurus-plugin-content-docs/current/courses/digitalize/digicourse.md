@@ -6,7 +6,7 @@ sidebar_position: 2
 
  ## Digitize a Building
 
-    -   [Create a Building](/en/docs/tutorials/surfaces/building/create.md)
+    -   [Create a Building](/en/docs/tutorials/surfaces/building/create)
     -   [Create a Floor](/en/docs/tutorials/surfaces/floor/create.md)
     -   [Create the Plan Background](/en/docs/tutorials/surfaces/background/create.md)
     -   [Create the Plan Scale](/en/docs/tutorials/surfaces/mapscale/create.md)
