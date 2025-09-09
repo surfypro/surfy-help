@@ -1,0 +1,82 @@
+{
+    "title": {
+        "message": "Surfy Academy",
+        "description": "The title of the site"
+    },
+    "tagline": {
+        "message": "Welcome to the Surfy user training site!",
+        "description": "The tagline of the site"
+    },
+    "navbar.title": {
+        "message": "Surfy Academy",
+        "description": "The title in the navbar"
+    },
+    "navbar.item.label.Surfy pour tous": {
+        "message": "Surfy for Everyone",
+        "description": "Navbar item with label Surfy pour tous"
+    },
+    "navbar.item.label.Tutoriels": {
+        "message": "Tutorials",
+        "description": "Navbar item with label Tutoriels"
+    },
+    "navbar.item.label.Cours": {
+        "message": "Courses",
+        "description": "Navbar item with label Cours"
+    },
+    "navbar.item.label.Certifications": {
+        "message": "Certifications",
+        "description": "Navbar item with label Certifications"
+    },
+    "navbar.item.label.Nouveautés": {
+        "message": "What's New",
+        "description": "Navbar item with label Nouveautés"
+    },
+    "navbar.item.label.Nous contacter": {
+        "message": "Contact Us",
+        "description": "Navbar item with label Nous contacter"
+    },
+    "navbar.item.label.Developpeurs": {
+        "message": "Developers",
+        "description": "Navbar item with label Developpeurs"
+    },
+    "footer.link.title.Documentation": {
+        "message": "Documentation",
+        "description": "The title of the footer links column with title=Documentation in the footer"
+    },
+    "footer.link.title.Communautés": {
+        "message": "Communities",
+        "description": "The title of the footer links column with title=Communautés in the footer"
+    },
+    "footer.link.title.Plus": {
+        "message": "More",
+        "description": "The title of the footer links column with title=Plus in the footer"
+    },
+    "footer.link.item.label.Tutoriels": {
+        "message": "Tutorials",
+        "description": "The label of footer link with label=Tutoriels linking to /docs/tutorials/intro"
+    },
+    "footer.link.item.label.Cours": {
+        "message": "Courses",
+        "description": "The label of footer link with label=Cours linking to /docs/courses/intro"
+    },
+    "footer.link.item.label.Youtube": {
+        "message": "Youtube",
+        "description": "The label of footer link with label=Youtube linking to https://www.youtube.com/@surfyfr"
+    },
+    "footer.link.item.label.Linkedin": {
+        "message": "Linkedin",
+        "description": "The label of footer link with label=Linkedin linking to https://www.linkedin.com/company/surfypro/"
+    },
+    "footer.link.item.label.App": {
+        "message": "App",
+        "description": "The label of footer link with label=App linking to https://app.surfy.pro"
+    },
+    "footer.link.item.label.API": {
+        "message": "API",
+        "description": "The label of footer link with label=API linking to https://help.surfy.pro/apidocs/"
+    },
+    "footer.link.item.label.GitHub": {
+        "message": "GitHub",
+        "description": "The label of footer link with label=GitHub linking to https://github.com/surfypro/surfy-help"
+    }
+}

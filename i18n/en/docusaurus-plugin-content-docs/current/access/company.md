@@ -1,21 +1,21 @@
 ---
 sidebar_position: 4
 ---
-# Access via secure Company account
+# Access via secure Business account
 
 ## BUSINESS access
 
-On [request](https://www.surfy.pro/en-gb/contact), a "BUSINESS" access can be set up allowing users to connect directly to the company platform using their professional email address via an access to be defined (Okta, ...).
+On [request](https://www.surfy.pro/en-gb/contact), a "BUSINESS" access can be set up allowing users to connect directly to the company platform using their professional email address via an access to be defined (Okta, OpenId, ...).
 User roles (generally the Reader role) are configured as well as visible content (Buildings X and Z, floor Y,...) for all collaborators accessing the platform. These roles can then be modified individually for special cases.
 
 If the company has configured a specific "BUSINESS" access with Surfy, you can follow the procedure below.<br />
-If this is not the case but your company uses Surfy, use the access established by your company ([OFFICE365](/en/docs/access/office365), [GOOGLE](/en/docs/access/google) or [Surfy Account](/en/docs/access/surfy))<br />
+If this is not the case but your company uses Surfy, use the access established by your company ([OFFICE365](/en/docs/access/office365), [GOOGLE](/en/docs/access/google) or [SURFY](/en/docs/access/surfy)) account<br />
 
-## Company account creation
+## BUSINESS account creation
 
 1. Go to https://app.surfy.pro :
 
-![pagedeconnexionSurfy](https://res.cloudinary.com/dngnxxqr4/image/upload/v1725529169/tutoriels/access/acc%C3%A8s%20Surfy.png)
+![pagedeconnexionSurfy](https://res.cloudinary.com/dngnxxqr4/image/upload/v1733308454/General_access_likbjv.png)
 
 2. Click on the "BUSINESS" box
 

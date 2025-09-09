@@ -28,11 +28,11 @@
     "description": "Navbar item with label Certifications"
   },
   "item.label.Nouveautés": {
-    "message": "What's new",
+    "message": "What's New",
     "description": "Navbar item with label Nouveautés"
   },
   "item.label.Nous contacter": {
-    "message": "Contact us",
+    "message": "Contact Us",
     "description": "Navbar item with label Nous contacter"
   },
   "item.label.Developpeurs": {

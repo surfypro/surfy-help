@@ -25,8 +25,8 @@ Visible content is also determined by the company based on the user.
 ### Account Creation Request
 
 To access Surfy, the company must be subscribed to the solution.<br />
-The future user can then create a [Surfy](/en/docs/access/surfy) account, a Microsoft [Office 365](/en/docs/access/office365) account, or a [Google](/en/docs/access/google) account and request connection to the relevant company platform.<br />
-If the company uses secure access via an [ENTERPRISE](/en/docs/access/company) account, the future user can directly access the relevant platform by clicking on this box.
+The future user can then create a [SURFY](/en/docs/access/surfy) account, a Microsoft [OFFICE 365](/en/docs/access/office365) account, or a [GOOGLE](/en/docs/access/google) account and request connection to the relevant company platform.<br />
+If the company uses secure access via a [BUSINESS](/en/docs/access/company) account, the future user can directly access the relevant platform by clicking on this box.
 
 ### Company User
 

@@ -5,7 +5,7 @@ sidebar_position: 4
 
 ## L'accès ENTREPRISE
 
-Sur [demande](https://www.surfy.pro/contact), un accès "ENTREPRISE" peut être mis en place permettant aux utilisateurs de se connecter directement à la plateforme de l'entreprise en utilisant leur adresse mail professionnelle via un accès à définir (Okta, ...).
+Sur [demande](https://www.surfy.pro/contact), un accès "ENTREPRISE" peut être mis en place permettant aux utilisateurs de se connecter directement à la plateforme de l'entreprise en utilisant leur adresse mail professionnelle via un accès à définir (Okta, OpenId, ...).
 Le rôle des utilisateurs (en général le rôle Lecteur) est configuré ainsi que le contenu visible (Batiments X et Z, étage Y,...) pour l'ensemble des collaborateurs accédant à la plateforme. Ces rôles peuvent ensuite être modifiés individuellement pour les cas particuliers.
 
 Si l'entreprise a configuré un accès spécifique "ENTREPRISE" avec Surfy, vous pouvez suivre la procédure ci dessous.<br />

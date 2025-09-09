@@ -2,13 +2,13 @@
 sidebar_position: 1
 ---
 
-# Access via Secure Office365 Account
+# Access via secure Office365 account
 
 ## Office365 Account Creation
 
 1. Go to https://app.surfy.pro :
 
-![accueil](https://res.cloudinary.com/dngnxxqr4/image/upload/v1725529169/tutoriels/access/acc%C3%A8s%20Surfy.png)
+![accueil](https://res.cloudinary.com/dngnxxqr4/image/upload/v1733308454/General_access_likbjv.png)
 
 2. Access Surfy by clicking on "OFFICE 365" and choose the Microsoft account to use:
 
@@ -25,10 +25,10 @@ If Microsoft informs you of a "required authorization", you must ask your IT adm
  :::
 
 If your company does not use automatic authentication, you get the following page:
-![pagesuivante](https://res.cloudinary.com/dngnxxqr4/image/upload/v1725527994/tutoriels/access/google/wu9g3mdfxk4omjgtdopl.png)
+![pagesuivante](https://res.cloudinary.com/dngnxxqr4/image/upload/v1733309721/no_access_rrkazx.png)
 
  
-4. Click on ![boutoncliquable](https://res.cloudinary.com/dngnxxqr4/image/upload/v1725529998/tutoriels/access/google/tezrai39oldhxxdmmqlo.png)
+4. Click on ![boutoncliquable](https://res.cloudinary.com/dngnxxqr4/image/upload/v1733309721/join_ruz7yb.png)
 
 5. Fill out the form and click "Send":
 ![formulaire](https://res.cloudinary.com/dngnxxqr4/image/upload/v1725527994/tutoriels/access/google/fs1qudetrbekkl0inbsg.png)
@@ -41,7 +41,7 @@ If your company does not use automatic authentication, you get the following pag
 
 6. Once your access is validated, go to https://app.surfy.pro :
 
-![accueil](https://res.cloudinary.com/dngnxxqr4/image/upload/v1725529169/tutoriels/access/acc%C3%A8s%20Surfy.png)
+![accueil](https://res.cloudinary.com/dngnxxqr4/image/upload/v1733308454/General_access_likbjv.png)
 
 7. Access Surfy by clicking on "OFFICE 365" and choose the Microsoft account to use:
 

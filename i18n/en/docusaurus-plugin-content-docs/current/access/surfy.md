@@ -2,13 +2,13 @@
 sidebar_position: 3
 ---
 
-# Access via Secure Surfy Account
+# Access via secure Surfy account
 
 ## Surfy Account Creation
 
 1) Go to https://app.surfy.pro 
 
-![accueil](https://res.cloudinary.com/dngnxxqr4/image/upload/v1725529169/tutoriels/access/acc%C3%A8s%20Surfy.png)
+![accueil](https://res.cloudinary.com/dngnxxqr4/image/upload/v1733308454/General_access_likbjv.png)
 
 2) Click on "SURFY ACCOUNT" then on "Don't have an account? SIGN UP" or on "REGISTRATION" to create your Surfy account.
 
@@ -20,7 +20,7 @@ sidebar_position: 3
 
 4) You get the following message:
 
-![message](https://res.cloudinary.com/dngnxxqr4/image/upload/v1725617033/tutoriels/access/surfy%20securis%C3%A9/validation%20mail.png)
+![message](https://res.cloudinary.com/dngnxxqr4/image/upload/v1757433055/validation_mail_en_ek9t20.png)
 
 5) Validate your email address by responding to the message received in your mailbox (or in your spam).
 
@@ -32,9 +32,9 @@ If your company uses automatic authentication and you meet the conditions, you h
 
 7) Your company does not use automatic authentication, you get the following page:
 
-![pagesuivante](https://res.cloudinary.com/dngnxxqr4/image/upload/v1725527994/tutoriels/access/google/wu9g3mdfxk4omjgtdopl.png)
+![pagesuivante](https://res.cloudinary.com/dngnxxqr4/image/upload/v1733309721/no_access_rrkazx.png)
 
-8) If your company uses Surfy, click on ![boutoncliquable](https://res.cloudinary.com/dngnxxqr4/image/upload/v1725529998/tutoriels/access/google/tezrai39oldhxxdmmqlo.png)
+8) If your company uses Surfy, click on ![boutoncliquable](https://res.cloudinary.com/dngnxxqr4/image/upload/v1733309721/join_ruz7yb.png)
 
 9) Fill out the form and click "Send":
 ![formulaire](https://res.cloudinary.com/dngnxxqr4/image/upload/v1725527994/tutoriels/access/google/fs1qudetrbekkl0inbsg.png)
