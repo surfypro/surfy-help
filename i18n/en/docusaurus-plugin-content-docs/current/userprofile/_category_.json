@@ -1,9 +1,9 @@
 {
-  "label": "Surfy pour tous",
+  "label": "Surfy for Everyone",
   "position": 1,
   "link": {
     "slug": "profile",
     "type": "generated-index",
-    "description": "Comment utiliser Surfy selon votre profil"
+    "description": "How to use Surfy according to your profile"
   }
 }

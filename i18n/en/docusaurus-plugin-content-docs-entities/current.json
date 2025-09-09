@@ -59,6 +59,62 @@
     "message": "Booking Features",
     "description": "The label for category booking in sidebar help-sidebar"
   },
+  "sidebar.help-sidebar.category.profile": {
+    "message": "Surfy for Everyone",
+    "description": "The label for category profile in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.userprofile": {
+    "message": "Surfy for Everyone",
+    "description": "The label for category userprofile in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Surfy pour tous": {
+    "message": "Surfy for Everyone",
+    "description": "The label for category Surfy pour tous in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.certifications": {
+    "message": "Certifications",
+    "description": "The label for category certifications in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Les certifications": {
+    "message": "Certifications",
+    "description": "The label for category Les certifications in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Les Certifications": {
+    "message": "Certifications",
+    "description": "The label for category Les Certifications in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Les fonctionnalités de Réservation": {
+    "message": "Booking Features",
+    "description": "The label for category Les fonctionnalités de Réservation in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.profile.link.generated-index.description": {
+    "message": "How to use Surfy according to your profile",
+    "description": "The generated-index page description for category profile in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.userprofile.link.generated-index.description": {
+    "message": "How to use Surfy according to your profile",
+    "description": "The generated-index page description for category userprofile in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Surfy pour tous.link.generated-index.description": {
+    "message": "How to use Surfy according to your profile",
+    "description": "The generated-index page description for category Surfy pour tous in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.certifications.link.generated-index.description": {
+    "message": "Official validation of your Surfy skills",
+    "description": "The generated-index page description for category certifications in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Les certifications.link.generated-index.description": {
+    "message": "Official validation of your Surfy skills",
+    "description": "The generated-index page description for category Les certifications in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Les Certifications.link.generated-index.description": {
+    "message": "Official validation of your Surfy skills",
+    "description": "The generated-index page description for category Les Certifications in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Les fonctionnalités de Réservation.link.generated-index.description": {
+    "message": "Everything about Surfy's booking planning",
+    "description": "The generated-index page description for category Les fonctionnalités de Réservation in sidebar help-sidebar"
+  },
   "sidebar.help-sidebar.category.admin": {
     "message": "Administration",
     "description": "The label for category admin in sidebar help-sidebar"

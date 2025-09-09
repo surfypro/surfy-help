@@ -60,11 +60,11 @@
     "description": "The generated-index page description for category Les Espaces in sidebar s1"
   },
   "sidebar.s1.category.Le Fond de plan": {
-    "message": "Le Fond de plan",
+    "message": "Plan Background",
     "description": "The label for category Le Fond de plan in sidebar s1"
   },
   "sidebar.s1.category.Le Fond de plan.link.generated-index.description": {
-    "message": "Tout savoir sur le fond de plan",
+    "message": "Everything about plan backgrounds",
     "description": "The generated-index page description for category Le Fond de plan in sidebar s1"
   },
   "sidebar.s1.category.L'Echelle": {
@@ -72,7 +72,7 @@
     "description": "The label for category L'Echelle in sidebar s1"
   },
   "sidebar.s1.category.L'Echelle.link.generated-index.description": {
-    "message": "Tout comprendre sur l'échelle des plans",
+    "message": "Everything about plan scales",
     "description": "The generated-index page description for category L'Echelle in sidebar s1"
   },
   "sidebar.s1.category.Les Structures": {
@@ -100,7 +100,7 @@
     "description": "The generated-index page description for category Les Espaces de réunion in sidebar s1"
   },
   "sidebar.s1.category.L'Itinéraire point à point": {
-    "message": "L'Itinéraire point à point",
+    "message": "Point-to-point routing",
     "description": "The label for category L'Itinéraire point à point in sidebar s1"
   },
   "sidebar.s1.category.L'Itinéraire point à point.link.generated-index.description": {
@@ -108,11 +108,11 @@
     "description": "The generated-index page description for category L'Itinéraire point à point in sidebar s1"
   },
   "sidebar.s1.category.Le Mobilier": {
-    "message": "Le Mobilier",
+    "message": "Furniture",
     "description": "The label for category Le Mobilier in sidebar s1"
   },
   "sidebar.s1.category.Le Mobilier.link.generated-index.description": {
-    "message": "Tout savoir sur le mobilier",
+    "message": "Everything about furniture",
     "description": "The generated-index page description for category Le Mobilier in sidebar s1"
   },
   "sidebar.s1.category.Les Familles de mobilier": {
@@ -200,7 +200,7 @@
     "description": "The label for category Les Organisations in sidebar s1"
   },
   "sidebar.s1.category.Les Organisations.link.generated-index.description": {
-    "message": "Les organisations dans Surfy",
+    "message": "Organizations in Surfy",
     "description": "The generated-index page description for category Les Organisations in sidebar s1"
   },
   "sidebar.s1.category.Les Affectations": {
@@ -666,6 +666,62 @@
   "sidebar.help-sidebar.category.booking": {
     "message": "Booking Features",
     "description": "The label for category booking in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.profile": {
+    "message": "Surfy for Everyone",
+    "description": "The label for category profile in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.userprofile": {
+    "message": "Surfy for Everyone",
+    "description": "The label for category userprofile in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Surfy pour tous": {
+    "message": "Surfy for Everyone",
+    "description": "The label for category Surfy pour tous in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.certifications": {
+    "message": "Certifications",
+    "description": "The label for category certifications in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Les certifications": {
+    "message": "Certifications",
+    "description": "The label for category Les certifications in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Les Certifications": {
+    "message": "Certifications",
+    "description": "The label for category Les Certifications in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Les fonctionnalités de Réservation": {
+    "message": "Booking Features",
+    "description": "The label for category Les fonctionnalités de Réservation in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.profile.link.generated-index.description": {
+    "message": "How to use Surfy according to your profile",
+    "description": "The generated-index page description for category profile in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.userprofile.link.generated-index.description": {
+    "message": "How to use Surfy according to your profile",
+    "description": "The generated-index page description for category userprofile in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Surfy pour tous.link.generated-index.description": {
+    "message": "How to use Surfy according to your profile",
+    "description": "The generated-index page description for category Surfy pour tous in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.certifications.link.generated-index.description": {
+    "message": "Official validation of your Surfy skills",
+    "description": "The generated-index page description for category certifications in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Les certifications.link.generated-index.description": {
+    "message": "Official validation of your Surfy skills",
+    "description": "The generated-index page description for category Les certifications in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Les Certifications.link.generated-index.description": {
+    "message": "Official validation of your Surfy skills",
+    "description": "The generated-index page description for category Les Certifications in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Les fonctionnalités de Réservation.link.generated-index.description": {
+    "message": "Everything about Surfy's booking planning",
+    "description": "The generated-index page description for category Les fonctionnalités de Réservation in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.La Réservation.link.generated-index.description": {
     "message": "Everything about Surfy booking planning",
