@@ -798,5 +798,13 @@
   "sidebar.help-sidebar.category.L'environnement et la sécurité.link.generated-index.description": {
     "message": "Manage corporate social and environmental responsibility",
     "description": "The generated-index page description for category L'environnement et la sécurité in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.L'inventaire du mobilier": {
+    "message": "L'inventaire du mobilier",
+    "description": "The label for category L'inventaire du mobilier in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.L'inventaire du mobilier.link.generated-index.description": {
+    "message": "Tout savoir sur l'inventaire du mobilier",
+    "description": "The generated-index page description for category L'inventaire du mobilier in sidebar help-sidebar"
   }
 }
