@@ -1,0 +1,10 @@
+{
+    "label": "Se connecter",
+    "position": 2,
+    "link": {
+      "slug": "access",
+      "type": "generated-index",
+      "description": "Comment se connecter à Surfy avec Google, Microsoft ou Surfy"
+    }
+  }
+  

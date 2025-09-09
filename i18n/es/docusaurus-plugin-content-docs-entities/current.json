@@ -1,0 +1,142 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.help-sidebar.category.human": {
+    "message": "People",
+    "description": "The label for category human in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.person-type": {
+    "message": "types",
+    "description": "The label for category person-type in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.person-relations": {
+    "message": "Relationships",
+    "description": "The label for category person-relations in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.things": {
+    "message": "Furniture",
+    "description": "The label for category things in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.things-type": {
+    "message": "types",
+    "description": "The label for category things-type in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.items-fact": {
+    "message": "Time-stamped object data",
+    "description": "The label for category items-fact in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.affectations": {
+    "message": "assignments",
+    "description": "The label for category affectations in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.spaces": {
+    "message": "Spaces",
+    "description": "The label for category spaces in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.space-points": {
+    "message": "Points",
+    "description": "The label for category space-points in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.building-facts": {
+    "message": "Time-stamped building data",
+    "description": "The label for category building-facts in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.organizations": {
+    "message": "Organizations",
+    "description": "The label for category organizations in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.planning": {
+    "message": "Schedules",
+    "description": "The label for category planning in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.bookings": {
+    "message": "Reservations",
+    "description": "The label for category bookings in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.admin": {
+    "message": "Administration",
+    "description": "The label for category admin in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.types": {
+    "message": "types",
+    "description": "The label for category types in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.room-types": {
+    "message": "Space typologies",
+    "description": "The label for category room-types in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.dimensions": {
+    "message": "Analysis layers",
+    "description": "The label for category dimensions in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.security": {
+    "message": "security",
+    "description": "The label for category security in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.person-companies": {
+    "message": "Providers",
+    "description": "The label for category person-companies in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.api": {
+    "message": "API",
+    "description": "The label for category api in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.authentification": {
+    "message": "Authentication",
+    "description": "The label for category authentification in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.partner-export-mapping": {
+    "message": "Partners",
+    "description": "The label for category partner-export-mapping in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.admin-reporting": {
+    "message": "Reporting",
+    "description": "The label for category admin-reporting in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.admin-dimension-reporting": {
+    "message": "Dimensions",
+    "description": "The label for category admin-dimension-reporting in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.admin-cost-center-reporting": {
+    "message": "Cost center",
+    "description": "The label for category admin-cost-center-reporting in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.admin-room-type-reporting": {
+    "message": "Type of spaces",
+    "description": "The label for category admin-room-type-reporting in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.admin-organization-reporting": {
+    "message": "Organizations",
+    "description": "The label for category admin-organization-reporting in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.admin-room-type-group-reporting": {
+    "message": "Space typology groups",
+    "description": "The label for category admin-room-type-group-reporting in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.connectors": {
+    "message": "Connectors",
+    "description": "The label for category connectors in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.surfy": {
+    "message": "Surfy",
+    "description": "The label for category surfy in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.global-security": {
+    "message": "Global security",
+    "description": "The label for category global-security in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.global-admin": {
+    "message": "Global administration",
+    "description": "The label for category global-admin in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.help": {
+    "message": "Assistance",
+    "description": "The label for category help in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.planning-admin": {
+    "message": " Schedule administration",
+    "description": "no-description"
+  }
+}

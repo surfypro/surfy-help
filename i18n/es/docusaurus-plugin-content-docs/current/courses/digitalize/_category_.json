@@ -1,0 +1,10 @@
+{
+  "label": "Digitaliser les espaces",
+  "position": 3,
+  "link": {
+    "slug": "digitalize",
+    "type": "generated-index",
+    "description": "Tout savoir sur la digitalisation d'un bâtiment"
+  }
+}
+
