@@ -7,7 +7,7 @@ sidebar_position: 3
 ## Display a Floor Plan in 3D
 
 By default, floor plans are displayed in 2D in Surfy.
-Click to [View a floor plan in 2D](/en/docs/courses/views/2Dviews.md#view-a-plan-in-2d)
+Click to [View a floor plan in 2D](/en/docs/courses/views/2Dviews#view-a-plan-in-2d)
 
 To get the 3D plan of a floor, from the 2D plan of the floor,
 
@@ -43,7 +43,7 @@ To get the 3D plan of a building, from the home page,
 -   click on the icon at the end of the color line of the concerned building
 -   select "the interactive 3D plan of building XXX"
 
-The building's 3D plan is displayed, and the accumulation of layer information for the entire building is accessible by vertical icons, in the same way [as for a floor](/en/docs/courses/views/2Dviews.md#display-layers-on-plan).
+The building's 3D plan is displayed, and the accumulation of layer information for the entire building is accessible by vertical icons, in the same way [as for a floor](/en/docs/courses/views/2Dviews#display-layers-on-plan).
 
 -   click on the vertical "gear" icon to "view plan options"
 -   select the floors to display in the building
@@ -65,7 +65,7 @@ You can represent a building in 3D, positioned and oriented correctly on a "Maps
 To display the geolocated building on a map,
 
 -   fill in the building address by clicking on the Pencil icon "Modify building" on the building card
--   create and calibrate the ground floor structure (or the lowest floor excluding basements). See [Create a floor structure](/en/docs/tutorials/surfaces/structure/create.md).
+-   create and calibrate the ground floor structure (or the lowest floor excluding basements). See [Create a floor structure](/en/docs/tutorials/surfaces/structure/create).
 
 
 To visualize the geolocated building on a plan, click on the icon at the end of the color line of the concerned building then on "View the building in 3D on a plan".

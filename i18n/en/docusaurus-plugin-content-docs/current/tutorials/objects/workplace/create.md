@@ -8,19 +8,19 @@ sidebar_position: 1
 A workstation is a group of objects to which particular qualifications can be assigned:
 
 -   declaration as Flex workstation, passing, bookable according to the workstation destination
--   [assignment of a collaborator](/en/docs/tutorials/affectations/workplaceaffectation/create.md#assign-a-person-to-a-workstation) if the workstation is not declared as Flex or passing
--   [attachment to a Service](/en/docs/tutorials/organization/create.md#attach-a-service-to-a-workstation)
--   [attachment to a cost center](/en/docs/tutorials/costcenter/create.md#assign-a-cost-center-to-a-workstation)
--   coloring of workstations according to their [usage state](/en/docs/courses/views/2Dviews.md#display-workstation-status-on-plan)
--   coloring of workstations according to the [security profile](/en/docs/courses/views/2Dviews.md#display-security-profiles-on-plans) of the person assigned to the workstation
--   coloring according to their [cost center](/en/docs/tutorials/cost-distribution-by-cost-center/create.md#visualize-cost-centers-on-plan)
+-   [assignment of a collaborator](/en/docs/tutorials/affectations/workplaceaffectation/create#assign-a-person-to-a-workstation) if the workstation is not declared as Flex or passing
+-   [attachment to a Service](/en/docs/tutorials/organization/create#attach-a-service-to-a-workstation)
+-   [attachment to a cost center](/en/docs/tutorials/costcenter/create#assign-a-cost-center-to-a-workstation)
+-   coloring of workstations according to their [usage state](/en/docs/courses/views/2Dviews#display-workstation-status-on-plan)
+-   coloring of workstations according to the [security profile](/en/docs/courses/views/2Dviews#display-security-profiles-on-plans) of the person assigned to the workstation
+-   coloring according to their [cost center](/en/docs/tutorials/cost-distribution-by-cost-center/create#visualize-cost-centers-on-plan)
 
 On the building, floor, space or any space grouping card, workstations are counted according to their state.
-Workstations can be counted as seats during [workstation type composition](/en/docs/tutorials/objects/workplacetype/create.md#compose-workstation-type)
+Workstations can be counted as seats during [workstation type composition](/en/docs/tutorials/objects/workplacetype/create#compose-workstation-type)
 
 The number of workstations allows you to calculate ratios and occupancy rates on any space grouping.
 
-In the [inventory report in Excel file](/en/docs/tutorials/BuildingData/Buildingdashboard/Buildingreporting.md#building-inventory-report), objects composing the workstation are counted in the "Workstations" and "Merge" tabs.
+In the [inventory report in Excel file](/en/docs/tutorials/BuildingData/Buildingdashboard/Buildingreporting#building-inventory-report), objects composing the workstation are counted in the "Workstations" and "Merge" tabs.
 
 
 <Youtube code="tho373GPmY8"/>
@@ -31,7 +31,7 @@ In the [inventory report in Excel file](/en/docs/tutorials/BuildingData/Building
 
 To add a workstation in a space, the corresponding workstation type must have been created.
 
-For this, see the chapter [workstation type creation](/en/docs/tutorials/objects/workplacetype/create.md)
+For this, see the chapter [workstation type creation](/en/docs/tutorials/objects/workplacetype/create)
 
 If the workstation type exists,
 

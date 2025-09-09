@@ -5,7 +5,7 @@ sidebar_position: 1
 # Space Typologies
 
 To manage space typology, it is recommended to use the "Space Typology" view.
-Learn more about [plan views](/en/docs/courses/views/planviews.md#space-typology-view).
+Learn more about [plan views](/en/docs/courses/views/planviews#space-typology-view).
 
 A space's typology is the first qualification you can give to a space, often deducible from the plan background information.
 It allows you to color the plans as digitization progresses and obtain cumulative information by typology.
@@ -54,7 +54,7 @@ This new typology will be directly associated with the space after being created
 The desired typology does not appear.
 
 -   click on "Create and associate a space typology" at the top of the screen, the typology creation page appears.
--   name and fill in the typology information, see [Create a Space Typology](/en/docs/tutorials/surfaces/room/roomtype.md#create-a-space-typology)
+-   name and fill in the typology information, see [Create a Space Typology](/en/docs/tutorials/surfaces/room/roomtype#create-a-space-typology)
 -   "Validate creation"
 
 The new typology is created and associated with the selected space.

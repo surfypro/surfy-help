@@ -11,7 +11,7 @@ sidebar_position: 4
     -   Copy and place security objects on the plan
     -   Qualify spaces as evacuation zones
 
-[Export the Plan as Image](/en/docs/courses/views/planexport.md#export-2d-plans-as-image)
+[Export the Plan as Image](/en/docs/courses/views/planexport#export-2d-plans-as-image)
 
 ## Control Carbon Footprint
 

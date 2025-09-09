@@ -93,5 +93,5 @@ The "drop" icon above the plan allows you to "activate color transparency" and s
 You can geolocate and access a space's card in several ways:
 
 -   by the magnifying glass by performing a search then clicking on the searched space
--   by the [filtered list](/en/docs/courses/find/listfindcourse.md) of spaces ("Spaces", "Spaces", "List spaces" then "filter spaces")
+-   by the [filtered list](/en/docs/courses/find/listfindcourse) of spaces ("Spaces", "Spaces", "List spaces" then "filter spaces")
 -   by the person's assignment by clicking in the assigned person's space

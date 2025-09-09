@@ -10,7 +10,7 @@ sidebar_position: 2
 
 To assign a Security profile to a person, it must already be created to be present in the choice list.
 
-To create a Security profile, see the chapter [Create a Security Profile](/en/docs/tutorials/person/personSecurityProfile/create.md)
+To create a Security profile, see the chapter [Create a Security Profile](/en/docs/tutorials/person/personSecurityProfile/create)
 
 
 To assign a security profile to a person,
@@ -35,7 +35,7 @@ To visualize security profiles on plans, from a floor plan,
 -   workstations of people with security profiles are colored according to their security profile
 -   two or even three assignments of different security profiles on the same workstation will stripe the workstation with the colors of the security profiles of assigned people
 
-For more information on Security profiles, see the chapter [Visualize Security Profiles on Plans](/en/docs/courses/views/2Dviews.md#display-security-profiles-on-plan)
+For more information on Security profiles, see the chapter [Visualize Security Profiles on Plans](/en/docs/courses/views/2Dviews#display-security-profiles-on-plan)
 
 ## List People by Security Profile
 

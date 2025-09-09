@@ -52,8 +52,12 @@
     "description": "The label for category planning in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.bookings": {
-    "message": "Reservations",
+    "message": "Booking Features",
     "description": "The label for category bookings in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.booking": {
+    "message": "Booking Features",
+    "description": "The label for category booking in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.admin": {
     "message": "Administration",

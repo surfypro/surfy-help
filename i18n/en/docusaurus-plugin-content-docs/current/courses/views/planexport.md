@@ -21,7 +21,7 @@ To export a floor plan as an Image,
 -   go to the relevant floor
 -   display on the plan the layer and information necessary for image output: furniture, text display, font size, icon size, ...
 
-For more information on plan display configuration, see the chapter [Display Plans in 2D](/en/docs/courses/views/2Dviews.md).
+For more information on plan display configuration, see the chapter [Display Plans in 2D](/en/docs/courses/views/2Dviews).
 
 -   once the plan is configured, click on the "cloud" icon above the plan to "save as Image" the floor plan.
 

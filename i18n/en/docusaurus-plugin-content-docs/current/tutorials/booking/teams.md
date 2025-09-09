@@ -10,7 +10,7 @@ Using the collaborator's professional Office365 account allows them direct acces
 The collaborator must be assigned to a building, floor or district to be able to book in that building, floor or district.
 
 
-For more information, please [contact us](https://www.surfy.pro/contact) to configure Surfy and allow you to use the Teams application for booking in Surfy.
+For more information, please [contact us](https://www.surfy.pro/en-gb/contact) to configure Surfy and allow you to use the Teams application for booking in Surfy.
 
 ## How It Works
 

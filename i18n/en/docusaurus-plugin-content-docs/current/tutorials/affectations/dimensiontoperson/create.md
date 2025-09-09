@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 # Create a District Assignment
 
-To assign people to districts, you must first create assignment layers then define districts by qualifying spaces. See the [Assignment Layers](/en/docs/tutorials/dimensionTypeToBuilding/create.md) section to learn everything about creating, modifying or deleting an assignment layer.
+To assign people to districts, you must first create assignment layers then define districts by qualifying spaces. See the [Assignment Layers](/en/docs/tutorials/dimensionTypeToBuilding/create) section to learn everything about creating, modifying or deleting an assignment layer.
 
 Once districts are created on the plans,
 
@@ -12,7 +12,7 @@ Once districts are created on the plans,
 -   district information, its assignments and inventory are accessible in the same way as for a classic space, by clicking in the district to display this information on the left side of the screen.
 
 :::tip Plan View
-Clicking on the vertical "Change plan view" icon and selecting "Districts" allows you to configure Surfy in district assignment mode in 2 clicks: Assignment layers are displayed on the plan and the layer type is selected for navigation. As long as the view is not changed, it remains effective even after refresh (F5). You must therefore remember to return to the default view "Space Typologies" for standard use. See [district view](/en/docs/courses/views/planviews.md#district-view).
+Clicking on the vertical "Change plan view" icon and selecting "Districts" allows you to configure Surfy in district assignment mode in 2 clicks: Assignment layers are displayed on the plan and the layer type is selected for navigation. As long as the view is not changed, it remains effective even after refresh (F5). You must therefore remember to return to the default view "Space Typologies" for standard use. See [district view](/en/docs/courses/views/planviews#district-view).
 :::
 
 To assign a person to a district, 

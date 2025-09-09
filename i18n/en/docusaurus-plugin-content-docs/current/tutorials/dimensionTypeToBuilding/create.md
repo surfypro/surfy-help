@@ -7,7 +7,7 @@ sidebar_position: 2
 An assignment layer is an analysis layer whose layer type is associated with one or more buildings.<br />
 It allows the assignment of people to "Districts" composed of one or more spaces of the concerned buildings.<br />
 
-For more information on creating an analysis layer, see the chapter [Create an Analysis Layer](/en/docs/tutorials/dimensionType/create.md)
+For more information on creating an analysis layer, see the chapter [Create an Analysis Layer](/en/docs/tutorials/dimensionType/create)
 
 An assignment layer allows you to group, qualify and represent spaces by Districts on the plan, in order to obtain the accumulation of information, the location of grouped spaces and all person assignments to building Districts.
 

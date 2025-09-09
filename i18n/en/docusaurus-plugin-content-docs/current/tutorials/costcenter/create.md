@@ -6,7 +6,7 @@ sidebar_position: 1
 Cost centers allow the recharging of spaces, people and surface ratios per workstation to different entities.
 Surfy offers automatic calculation of distribution keys and cumulative surfaces by cost center on one or more buildings to distribute and recharge building charges in proportion to occupancy surfaces or people assigned to these spaces.
 
-For more information on recharging calculation in Surfy, see the chapter [Recharge Spaces in Surfy](/en/docs/tutorials/cost-distribution-by-cost-center/create.md).
+For more information on recharging calculation in Surfy, see the chapter [Recharge Spaces in Surfy](/en/docs/tutorials/cost-distribution-by-cost-center/create).
 
 ## Create a Cost Center
 

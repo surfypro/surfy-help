@@ -8,33 +8,33 @@ sidebar_position: 1
 
 ### Assign People to Workstations, Spaces, Buildings
 
-[Create a Person](/en/docs/tutorials/person/create.md)
+[Create a Person](/en/docs/tutorials/person/create)
 
-[Create and Assign a Person](/en/docs/tutorials/affectations/workplaceaffectation/create.md#create-and-assign-a-person-to-a-workstation)
+[Create and Assign a Person](/en/docs/tutorials/affectations/workplaceaffectation/create#create-and-assign-a-person-to-a-workstation)
 
-[Import a List of People](/en/docs/tutorials/person/create.md#import-people)
+[Import a List of People](/en/docs/tutorials/person/create#import-people)
 
 
-[Assign a Person in Surfy](/en/docs/tutorials/affectations/intro.md)
+[Assign a Person in Surfy](/en/docs/tutorials/affectations/intro)
 
-Assign people in bulk [to workstations](/en/docs/tutorials/affectations/workplaceaffectation/create.md#assign-people-to-workstations-by-excel-import), [to spaces](/en/docs/tutorials/affectations/roomaffectation/create.md#assign-people-to-spaces-by-excel-import) or [to buildings](/en/docs/tutorials/affectations/personToBuilding/create.md#assign-people-to-building-by-excel-import)
+Assign people in bulk [to workstations](/en/docs/tutorials/affectations/workplaceaffectation/create#assign-people-to-workstations-by-excel-import), [to spaces](/en/docs/tutorials/affectations/roomaffectation/create#assign-people-to-spaces-by-excel-import) or [to buildings](/en/docs/tutorials/affectations/personToBuilding/create#assign-people-to-building-by-excel-import)
 
 
 
 
 ### Set Up District Assignment
 
-[Create District Assignment Layers](/en/docs/tutorials/dimensionTypeToBuilding/create.md)
+[Create District Assignment Layers](/en/docs/tutorials/dimensionTypeToBuilding/create)
 
-[Qualify Spaces by District Assignment Layers](/en/docs/tutorials/dimensionTypeToBuilding/create.md#qualify-a-space-by-an-assignment-layer)
+[Qualify Spaces by District Assignment Layers](/en/docs/tutorials/dimensionTypeToBuilding/create#qualify-a-space-by-an-assignment-layer)
 
-[View District Assignment Layers](/en/docs/tutorials/dimensionTypeToBuilding/create.md#view-assignment-layers)
+[View District Assignment Layers](/en/docs/tutorials/dimensionTypeToBuilding/create#view-assignment-layers)
 
-[Assign People to Districts](/en/docs/tutorials/affectations/dimensiontoperson/create.md)
+[Assign People to Districts](/en/docs/tutorials/affectations/dimensiontoperson/create)
 
-[List District Assignments](/en/docs/courses/find/listfindcourse.md)
+[List District Assignments](/en/docs/courses/find/listfindcourse)
 
-[Export Report of People Assigned by District](/en/docs/tutorials/dimensionTypeToBuilding/create.md#assignment-layer-data-report)
+[Export Report of People Assigned by District](/en/docs/tutorials/dimensionTypeToBuilding/create#assignment-layer-data-report)
 
 ## Workstation and Space Booking
 
@@ -42,9 +42,9 @@ Assign people in bulk [to workstations](/en/docs/tutorials/affectations/workplac
 
 
 
-[Book in Surfy](/en/docs/tutorials/booking/workplace.md)
+[Book in Surfy](/en/docs/tutorials/booking/workplace)
 
-[Use Teams for Booking in Surfy](/en/docs/tutorials/booking/teams.md)
+[Use Teams for Booking in Surfy](/en/docs/tutorials/booking/teams)
 
 
 ### Set Up Space Booking

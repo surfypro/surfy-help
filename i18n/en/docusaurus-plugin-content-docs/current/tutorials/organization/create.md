@@ -10,7 +10,7 @@ You can only attach a space, person or workstation to a Service.
 :::
 
 Using organizations allows you to attach spaces to Services that report to Departments.
-You can then visualize space qualification in colors on plans and get [cumulative data, by Service or by Department](/en/docs/tutorials/organization/edit.md#visualize-organizations-on-plans).
+You can then visualize space qualification in colors on plans and get [cumulative data, by Service or by Department](/en/docs/tutorials/organization/edit#visualize-organizations-on-plans).
 
 People and workstations can also be attached to Services.
 You can then list people or workstations by organization in filtered lists or in data reports, or know which organization a person belongs to by searching their card with the magnifying glass.
@@ -129,7 +129,7 @@ You must therefore first exit district navigation to be able to access each spac
 -   or by clicking on the vertical icon "Change plan view" then on the "Space Typologies" view.
 
 
-You can then "Modify" each space to attach its Service (see [Attach a Service to a Space](/en/docs/tutorials/organization/create.md#attach-a-service-to-a-space)) and thus to all spaces in the concerned district.
+You can then "Modify" each space to attach its Service (see [Attach a Service to a Space](/en/docs/tutorials/organization/create#attach-a-service-to-a-space)) and thus to all spaces in the concerned district.
 
 To return to district navigation,
 

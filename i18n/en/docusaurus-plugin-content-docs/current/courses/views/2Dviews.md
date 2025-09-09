@@ -11,7 +11,7 @@ If the plan to display concerns a scenario, click on the "building XXX scenarios
 You can display the 2D plan from the left menu, by clicking on "Buildings" then on the concerned building.
 Then click on the floor to display, or on the "building XXX scenarios and projects" icon then on the desired floor.
 
-The floor plan is visualized according to the [Vision](/en/docs/courses/views/planviews.md) used.
+The floor plan is visualized according to the [Vision](/en/docs/courses/views/planviews) used.
 
 Information and data related to the plan are displayed on the left part of the screen and can be reduced by clicking on the vertical "Close plan menu" icon.
 The left menu of the screen (List Menu) can also be reduced by clicking on the three horizontal lines "Reduce menu" under the company logo at the top left of the screen.
@@ -106,7 +106,7 @@ Grouped spaces have their information cumulated by layer by clicking on the corr
 -   "color spaces and workstations by cost centers" displays and gives cumulations by cost center, for spaces, workstations and people.
 
 :::tip GOOD TO KNOW
-You can visualize cumulations of different layers for the entire building by [visualizing the building in 3D](/en/docs/courses/views/3Dviews.md#display-a-buildings-3d-plan)
+You can visualize cumulations of different layers for the entire building by [visualizing the building in 3D](/en/docs/courses/views/3Dviews#display-a-buildings-3d-plan)
 :::
 
 ## Display Workstation Status on Plan
@@ -125,7 +125,7 @@ Workstations declared as "Flex" or "passage" cannot be assigned to a person.
 
 Clicking on the vertical "color workstations by people" icon allows coloring workstations of assigned people according to their security profile.
 Two or even three assignments of different security profiles on the same workstation will stripe the workstation with the colors of the security profiles of assigned people.
-For more information on Security profiles, see the chapter [Visualize Security Profiles on Plans](/en/docs/tutorials/person/personSecurityProfile/list.md#visualize-security-profiles-on-plans).
+For more information on Security profiles, see the chapter [Visualize Security Profiles on Plans](/en/docs/tutorials/person/personSecurityProfile/list#visualize-security-profiles-on-plans).
 
 
 ## Display Objects on Plan

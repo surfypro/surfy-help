@@ -18,7 +18,7 @@ When modifying the space typology,
 The space typology group is associated with the typology, and is added to the list of "space typology groups" of the typology, below the selection.
 All spaces having one of the typologies contained in the "Meeting Spaces" space typology group will be displayed in the "View and navigate in meeting rooms" page.
 
-To remove a typology from the typology group, you must [modify the typology itself](/en/docs/tutorials/surfaces/room/roomtype.md#modify-a-space-typology) then check and delete the association to the relevant group.
+To remove a typology from the typology group, you must [modify the typology itself](/en/docs/tutorials/surfaces/room/roomtype#modify-a-space-typology) then check and delete the association to the relevant group.
 
 ## Choose Equipment to Display
 

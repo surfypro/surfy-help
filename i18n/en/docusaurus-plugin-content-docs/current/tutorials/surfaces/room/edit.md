@@ -39,14 +39,14 @@ The "drop" icon above the plan allows you to "activate color transparency" and s
 
 You can import an Excel file containing the information to complete for spaces.<br />
 It is necessary to import the column containing the Surfy identifier of the space, as well as the column containing the information to complete using the correct headers for each column. These columns must be contiguous to be imported into Surfy.<br />
-For more details on bulk import, please [contact us](https://www.surfy.pro/contact)
+For more details on bulk import, please [contact us](https://www.surfy.pro/en-gb/contact)
 
 ## Search for a Space
 
 You can geolocate and access a space's card in several ways:
 
 -   by the magnifying glass by performing a search then clicking on the searched space
--   by the [filtered list](/en/docs/courses/find/listfindcourse.md) of spaces ("Spaces", "Spaces", "List spaces" then "filter spaces")
+-   by the [filtered list](/en/docs/courses/find/listfindcourse) of spaces ("Spaces", "Spaces", "List spaces" then "filter spaces")
 -   by the person's assignment by clicking in the assigned person's space
 
 

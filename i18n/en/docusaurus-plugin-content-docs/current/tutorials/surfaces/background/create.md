@@ -26,7 +26,7 @@ Points to respect are:
 -   correct pixel count in PNG output (2000 to 5000 pixels X 3000 to 7000 pixels, depending on plan size)
 
 Surfy offers PNG plan background creation for users who do not have an Autocad license.
-Please contact us for [training or dwg to png conversion](https://www.surfy.pro/contact)
+Please contact us for [training or dwg to png conversion](https://www.surfy.pro/en-gb/contact)
 
 ### From an Image
 

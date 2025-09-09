@@ -12,7 +12,7 @@ Access to Surfy is done in SaaS mode. The application and data are hosted in Fra
 
 ## Data Security
 
-[Why data security is our priority](https://www.surfy.pro/security)
+[Why data security is our priority](https://www.surfy.pro/en-gb/security)
 
 ## Who can access Surfy?
 
@@ -104,7 +104,7 @@ To assign a content role to a company user, in the left menu,
 -   click on the "red dot" icon at the beginning of the line of the concerned user to "modify company user xxxx@xx"
 -   click on "Company User Content Role" then on "CREATE A COMPANY USER CONTENT ROLE"
 
-The list of available content roles appears. If the desired content role does not appear, you must [create a content role](docs/access/intro.md#create-a-content-role) in order to assign it to the user.
+The list of available content roles appears. If the desired content role does not appear, you must [create a content role](docs/access/intro#create-a-content-role) in order to assign it to the user.
 
 -   choose the content role to assign to the user then "Validate Creation".
 

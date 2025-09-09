@@ -22,7 +22,7 @@ You can visualize the cost center of each space and each workstation on the plan
 Cumulative data by cost center is available by clicking on the butterfly at the end of the cost center line or on the global opening butterfly.
 
 
-For more information on cost distribution types, see the chapter [Cost Distribution Type](/en/docs/tutorials/costcenter/create.md#cost-distribution-type).
+For more information on cost distribution types, see the chapter [Cost Distribution Type](/en/docs/tutorials/costcenter/create#cost-distribution-type).
 
 
 ## Distribution Keys and Qualified Surfaces by Cost Center

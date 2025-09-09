@@ -16,7 +16,7 @@ To switch to "district" or "assignment layer" navigation,
 
 
 :::tip Plan View
-Clicking on the vertical "Change plan view" icon and selecting the "Districts" view allows you to configure Surfy in district assignment mode in 2 clicks: Assignment layers are displayed on the plan and the layer type is selected for navigation. As long as the view is not changed, it remains effective even after refresh (F5). You must therefore remember to return to the default view "Space Typologies" for standard use. See [district view](/en/docs/courses/views/planviews.md#district-view).
+Clicking on the vertical "Change plan view" icon and selecting the "Districts" view allows you to configure Surfy in district assignment mode in 2 clicks: Assignment layers are displayed on the plan and the layer type is selected for navigation. As long as the view is not changed, it remains effective even after refresh (F5). You must therefore remember to return to the default view "Space Typologies" for standard use. See [district view](/en/docs/courses/views/planviews#district-view).
 :::
 
 

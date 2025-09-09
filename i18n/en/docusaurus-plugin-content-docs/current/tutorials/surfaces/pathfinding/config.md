@@ -26,7 +26,7 @@ The "Pathfinding" feature is operational.
 
 ## Doors and Passages
 
-To use point-to-point routing, it is necessary to [create doors and passages](/en/docs/tutorials/surfaces/doors/create.md) between different spaces.
+To use point-to-point routing, it is necessary to [create doors and passages](/en/docs/tutorials/surfaces/doors/create) between different spaces.
 
 ## Space Connector
 

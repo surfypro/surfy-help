@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Surfy Certifications allow users to be evaluated in their mastery of features so that Surfy officially validates their knowledge of the tool.
 
-Please contact us for a [certification request](https://www.surfy.pro/contact)
+Please contact us for a [certification request](https://www.surfy.pro/en-gb/contact)
 
 Several certification levels are possible:
 

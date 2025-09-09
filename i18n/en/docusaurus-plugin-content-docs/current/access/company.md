@@ -5,7 +5,7 @@ sidebar_position: 4
 
 ## BUSINESS access
 
-On [request](https://www.surfy.pro/contact), a "BUSINESS" access can be set up allowing users to connect directly to the company platform using their professional email address via an access to be defined (Okta, ...).
+On [request](https://www.surfy.pro/en-gb/contact), a "BUSINESS" access can be set up allowing users to connect directly to the company platform using their professional email address via an access to be defined (Okta, ...).
 User roles (generally the Reader role) are configured as well as visible content (Buildings X and Z, floor Y,...) for all collaborators accessing the platform. These roles can then be modified individually for special cases.
 
 If the company has configured a specific "BUSINESS" access with Surfy, you can follow the procedure below.<br />

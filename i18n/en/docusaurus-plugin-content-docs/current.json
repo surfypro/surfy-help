@@ -292,7 +292,7 @@
     "description": "The generated-index page description for category Le tableau de bord du bâtiment in sidebar s1"
   },
   "sidebar.s1.category.La Réservation": {
-    "message": "Booking",
+    "message": "Booking Features",
     "description": "The label for category La Réservation in sidebar s1"
   },
   "sidebar.s1.category.La Réservation.link.generated-index.description": {
@@ -660,8 +660,12 @@
     "description": "The generated-index page description for category Le tableau de bord du bâtiment in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.La Réservation": {
-    "message": "Booking",
+    "message": "Booking Features",
     "description": "The label for category La Réservation in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.booking": {
+    "message": "Booking Features",
+    "description": "The label for category booking in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.La Réservation.link.generated-index.description": {
     "message": "Everything about Surfy booking planning",
