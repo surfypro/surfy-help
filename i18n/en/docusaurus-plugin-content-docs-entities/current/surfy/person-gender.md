@@ -1,6 +1,3 @@
----
-search_rank: 0.5
----    
 # Gender of the person
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 

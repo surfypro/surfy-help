@@ -1,6 +1,3 @@
----
-search_rank: 0.5
----    
 # Space typology group association to space typology
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 

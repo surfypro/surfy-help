@@ -1,6 +1,3 @@
----
-search_rank: 0.5
----    
 # Associating content role to business user
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 

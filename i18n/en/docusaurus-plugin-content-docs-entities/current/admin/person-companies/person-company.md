@@ -1,6 +1,3 @@
----
-search_rank: 0.5
----    
 # Service provider company
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 

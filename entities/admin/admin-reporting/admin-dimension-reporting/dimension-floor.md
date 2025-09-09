@@ -1,6 +1,3 @@
----
-search_rank: 0.5
----    
 # Association calque d'analyse aux étages
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 

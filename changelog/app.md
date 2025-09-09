@@ -1,5 +1,9 @@
 # Nouveautés
 
+<!-- ## 27 Août 2025 - v3.4.100
+
+- Ajout d'une vue sur l'entreprise permettant d'avoir la liste de tous les rapports de qualité des données. -->
+
 ## 27 Août 2025 - v3.4.99
 
 - Les plans de réservation des postes de travail affichent désormais le nom de l'espace fusionné.

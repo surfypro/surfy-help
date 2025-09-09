@@ -1,6 +1,3 @@
----
-search_rank: 0.5
----    
 # Hôte de message pour fenêtre contextuelle
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 

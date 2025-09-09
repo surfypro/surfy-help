@@ -1,6 +1,3 @@
----
-search_rank: 0.5
----    
 # Modèle 3d
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 

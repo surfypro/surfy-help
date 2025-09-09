@@ -1,6 +1,3 @@
----
-search_rank: 0.5
----    
 # Type de bâtiment
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 

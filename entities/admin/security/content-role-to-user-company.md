@@ -1,6 +1,3 @@
----
-search_rank: 0.5
----    
 # Association rôle de contenu à l'utilisateur de l'entreprise
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
