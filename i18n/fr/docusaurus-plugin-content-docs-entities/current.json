@@ -1,0 +1,138 @@
+{
+  "sidebar.help-sidebar.category.human": {
+    "message": "Collaborateurs",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.person-type": {
+    "message": "Typologies",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.person-relations": {
+    "message": "Relations",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.things": {
+    "message": "Mobiliers",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.things-type": {
+    "message": "Typologies",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.items-fact": {
+    "message": "Données horodatées des objets",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.affectations": {
+    "message": "Affectations",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.spaces": {
+    "message": "Espaces",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.space-points": {
+    "message": "Points",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.building-facts": {
+    "message": "Données horodatées des bâtiments",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.organizations": {
+    "message": "Organisations",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.planning": {
+    "message": "Plannings",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.bookings": {
+    "message": "Réservations",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.planning-admin": {
+    "message": " Administration des plannings",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.admin": {
+    "message": "Administration",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.types": {
+    "message": "Typologies",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.room-types": {
+    "message": "Typologies d'espaces",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.dimensions": {
+    "message": "Calques d'analyse",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.security": {
+    "message": "Sécurité",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.person-companies": {
+    "message": "Prestataires",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.api": {
+    "message": "API",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.authentification": {
+    "message": "Authentification",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.partner-export-mapping": {
+    "message": "Partenaires",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.admin-reporting": {
+    "message": "Reporting",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.admin-dimension-reporting": {
+    "message": "Dimensions",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.admin-cost-center-reporting": {
+    "message": "Centre de coûts",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.admin-room-type-reporting": {
+    "message": "Type d'espaces",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.admin-organization-reporting": {
+    "message": "Organisations",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.admin-room-type-group-reporting": {
+    "message": "Groupes de typologies d'espaces",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.connectors": {
+    "message": "Connecteurs",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.surfy": {
+    "message": "Surfy",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.global-security": {
+    "message": "Sécurité globale",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.global-admin": {
+    "message": "Administration globale",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.help": {
+    "message": "Aide",
+    "description": "no-description"
+  }
+}
