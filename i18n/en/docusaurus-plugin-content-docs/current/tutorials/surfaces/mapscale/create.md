@@ -18,7 +18,7 @@ To create the scale of a floor whose plan background is already entered in Surfy
 -   click on the second end of the scale segment
 -   the scale segment is defined
 -   optionally name the <P code="mapScale:name" /> for use on other floors.
--   fill in the corresponding <P code="mapScale:distance" /> in meters in the "Distance" box
+-   fill in the corresponding <P code="mapScale:length" /> in meters in the "Distance" box
 -   validate the entered value by clicking on the green checkmark.
 
 

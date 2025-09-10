@@ -21,7 +21,7 @@ Pour modifier la valeur de l'échelle d'un étage ,
 -   accéder à l'étage
 -   cliquer sur le fond de plan pour faire apparaître les icônes au-dessus du plan
 -   cliquer sur l'icône "Gérer l'échelle"
--   modifier la valeur <P code="mapScale:distance" /> en mètres
+-   modifier la valeur <P code="mapScale:length" /> en mètres
 -   cliquer sur la coche verte pour valider la nouvelle valeur entrée
 -   nommer éventuellement l'<P code="mapScale:name" /> pour une utilisation sur d'autres étages.
 

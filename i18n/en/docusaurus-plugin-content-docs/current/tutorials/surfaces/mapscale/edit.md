@@ -21,7 +21,7 @@ To modify the scale value of a floor,
 -   access the floor
 -   click on the plan background to make the icons above the plan appear
 -   click on the "Manage scale" icon
--   modify the <P code="mapScale:distance" /> value in meters
+-   modify the <P code="mapScale:length" /> value in meters
 -   click on the green checkmark to validate the new entered value
 -   optionally name the <P code="mapScale:name" /> for use on other floors.
 
