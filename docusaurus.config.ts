@@ -24,7 +24,7 @@ const config: Config = {
   // Internationalization configuration
   i18n: {
     defaultLocale: 'fr',
-    locales: ['fr', 'en', 'es'],
+    locales: ['fr', 'en'],
     localeConfigs: {
       fr: {
         label: 'Français',
@@ -34,12 +34,12 @@ const config: Config = {
         label: 'English',
         // path: '/en',
         htmlLang: 'en-US',
-      },
-      es: {
-        label: 'Español',
-        // path: '/es',
-        htmlLang: 'es-ES',
-      },
+      }
+      // es: {
+      //   label: 'Español',
+      //   // path: '/es',
+      //   htmlLang: 'es-ES',
+      // },
     },
   },
 
