@@ -50,7 +50,7 @@ Pour créer un connecteur d'espace, depuis le menu de gauche,
 
 -   cliquer sur "Administration", "Connecteurs" puis "Connecteurs d'espace" et "Créer un connecteur d'espace"
 -   renseigner le <P code="roomConnector:name" /> (ex: Escalier C) et le <P code="roomConnector:roomConnectorType" /> (Escalier)
--   renseigner le <P code="roomConnector:waitingTime" /> et le <P code="roomConnector:transferTime" /> entre chaque étage
+-   renseigner le <P code="roomConnector:waitTime" /> et le <P code="roomConnector:timePerFloor" /> entre chaque étage
 -   valider la création
 
 Pour associer le connecteur d'espace aux espaces depuis la fiche du connecteur,

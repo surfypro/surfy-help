@@ -50,7 +50,7 @@ To create a space connector, from the left menu,
 
 -   click on "Administration", "Connectors" then "Space connectors" and "Create a space connector"
 -   fill in the <P code="roomConnector:name" /> (ex: Stairs C) and the <P code="roomConnector:roomConnectorType" /> (Stairs)
--   fill in the <P code="roomConnector:waitingTime" /> and the <P code="roomConnector:transferTime" /> between each floor
+-   fill in the <P code="roomConnector:waitTime" /> and the <P code="roomConnector:timePerFloor" /> between each floor
 -   validate creation
 
 To associate the space connector with spaces from the connector card,
