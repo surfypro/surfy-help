@@ -6,7 +6,7 @@ sidebar_position: 1
 
 # Create a Floor Scale
 
-<Youtube code="NEuqxKqpIJM"/>
+<Youtube code="LarL_Da1UPw"/>
 
 To create the scale of a floor whose plan background is already entered in Surfy,
 

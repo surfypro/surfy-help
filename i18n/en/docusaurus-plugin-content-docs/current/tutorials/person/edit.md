@@ -56,7 +56,7 @@ When importing modifications on people in Surfy and in order to correctly identi
 
 Resolving person duplicates is done in three steps: Duplicate detection, information merging and deletion of the unnecessary duplicate.
 
-<Youtube code="tm65Pwrhogo"/>
+<Youtube code="4RsDvSPQyZ8"/>
 
 The Surfy database can contain person duplicates: Misspelled names or first names, hyphens or accents present or not, incorrect Email address or employee number. Detected duplicates are isolated in Surfy thanks to the presence of a common key.
 Once duplicates are isolated, you can choose and merge information then delete the duplicate person.

@@ -84,13 +84,18 @@ const config: Config = {
     ],
   ],
   plugins: [
-    [
-      '@docusaurus/plugin-google-gtag',
-      {
-        trackingID: 'G-27L76PKED0',
-        anonymizeIP: false,
-      },
-    ],
+    // Load Google gtag only in production to avoid window.gtag errors in dev
+    ...(process.env.NODE_ENV === 'production'
+      ? ([
+        [
+          '@docusaurus/plugin-google-gtag',
+          {
+            trackingID: 'G-27L76PKED0',
+            anonymizeIP: false,
+          },
+        ],
+      ] as any)
+      : []),
     [
       '@docusaurus/plugin-client-redirects',
       {

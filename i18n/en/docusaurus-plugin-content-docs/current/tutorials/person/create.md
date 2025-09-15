@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Create a Person
 
-<Youtube code="eBXD7Atx9Dg"/>
+<Youtube code="-kPHKbOjwI8"/>
 
 To create a person in Surfy from the home page,
 -   click on "collaborators", "people" then on "create a person". 
@@ -40,7 +40,7 @@ Each person has a unique identifier that allows you to identify the person durin
 
 ## Import People 
 
-<Youtube code="J-SiqS2Wq8I"/>
+<Youtube code="SHWytpRbpOQ"/>
 
 You can import people in bulk into Surfy via Excel.
 

@@ -16,7 +16,7 @@ People and workstations can also be attached to Services.
 You can then list people or workstations by organization in filtered lists or in data reports, or know which organization a person belongs to by searching their card with the magnifying glass.
 
 
-<Youtube code="bvOEaYs1prg"/>
+<Youtube code="abpTpTG-4-k"/>
 
 
 

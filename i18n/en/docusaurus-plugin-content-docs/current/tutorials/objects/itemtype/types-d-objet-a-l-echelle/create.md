@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## Create the Object Type Card
 
-<Youtube code="89my-CVLjOo"/>
+<Youtube code="lA3Lex8lm1k"/>
 
 To create a scale object type, from the left menu,
 

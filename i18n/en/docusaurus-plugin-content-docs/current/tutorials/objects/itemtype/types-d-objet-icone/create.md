@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Create an Icon Object Type
 
-<Youtube code="89my-CVLjOo"/>
+<Youtube code="lA3Lex8lm1k"/>
 
 To create an icon object type, from the left menu,
 

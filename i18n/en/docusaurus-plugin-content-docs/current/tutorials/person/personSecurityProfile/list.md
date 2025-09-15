@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Manage Security Profiles
 
-<Youtube code="NxKeIipAJfs"/>
+<Youtube code="clzkvRFd6U0"/>
 
 ## Assign a Security Profile to a Person
 

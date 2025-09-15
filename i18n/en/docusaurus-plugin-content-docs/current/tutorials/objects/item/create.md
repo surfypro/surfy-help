@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 # Create an Object
 
-<Youtube code="tho373GPmY8"/>
+<Youtube code="ZlIw7BwzeUI"/>
 
 ## Add an Object to the Space
 
@@ -34,7 +34,7 @@ clicking on the "activate transparency of space background colors" icon above th
 
 ## Duplicate an Object or Group of Objects
 
-<Youtube code="zUIgR14paWY"/>
+<Youtube code="Qm1WGOtkZyk"/>
 
 You can easily and quickly duplicate an object or group of objects in Surfy.
 

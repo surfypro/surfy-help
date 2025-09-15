@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Create a Building
 
-<Youtube code="M26SIN2q0Mk"/>
+<Youtube code="FCVdmvrzzak"/>
 
 To create a new building from the Surfy home page,
 
@@ -23,7 +23,7 @@ The reference building can also be any building behind which you position the bu
 
 Creating a scenario in Surfy is making a partial or total copy of a building for a redevelopment, or simply to make a backup copy.
 
-<Youtube code="6o7F-9XlyqM"/>
+<Youtube code="1SLaDO3lsQk"/>
 
 To create a new scenario, from the home page,
 

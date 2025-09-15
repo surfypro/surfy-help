@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Create a Floor
 
-<Youtube code="6wnzskeAskg"/>
+<Youtube code="h9Q8LqaAeVo"/>
 
 To create a floor from an already existing building:
 -   click on the pencil at the bottom of the building card to "modify building XXX"

@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Plan views are pre-programmed displays and features to choose from based on the user's field of action. They are "shortcuts" to the requested features.
 
-<Youtube code="C-0l8So1Uto"/>
+<Youtube code="1ZiLEj8NEVM"/>
 
 ## Choose a Plan View
 

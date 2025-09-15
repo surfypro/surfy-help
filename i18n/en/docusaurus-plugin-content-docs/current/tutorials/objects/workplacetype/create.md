@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 # Create a Workstation Type
 
-<Youtube code="EV6UUY1utws"/>
+<Youtube code="LnfxN4AeOYo"/>
 
 
 To create a workstation type in Surfy, from the left menu, 
@@ -39,8 +39,8 @@ A workstation type has the following properties:
 
 -   <P code="workplaceType:name" />: name of the workstation type
 -   <P code="workplaceType:color" />: color of the workstation type on plans
--   <P code="workplaceType:seats" />: number of seats of the workstation type (calculated automatically from the composition)
--   <P code="workplaceType:surface" />: surface of the workstation type (calculated automatically from the composition)
+-   <P code="workplaceType:workplaceTypeItemTypes" />: object types composing the workstation type
+-   <P code="workplaceType:size" />: surface of the workstation type (calculated automatically from the composition)
 
 ## Workstation Type Composition
 

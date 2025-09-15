@@ -7,7 +7,7 @@ sidebar_position: 1
 
 A <OT code="personSecurityProfile" /> is assigned to a security team member to easily locate them on plans or in person information.
 
-<Youtube code="NxKeIipAJfs"/>
+<Youtube code="clzkvRFd6U0"/>
 
 To create a Security profile, from the left menu:
 

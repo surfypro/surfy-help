@@ -6,7 +6,7 @@ sidebar_position: 2
 # Create a Space
 
 
-<Youtube code="9A0XQaxj6hA"/>
+<Youtube code="wGCPVpyd1C0"/>
 
 To create a space (or room) on a floor that already has its plan background and scale:
 

@@ -23,7 +23,7 @@ The number of workstations allows you to calculate ratios and occupancy rates on
 In the [inventory report in Excel file](/en/docs/tutorials/BuildingData/Buildingdashboard/Buildingreporting#building-inventory-report), objects composing the workstation are counted in the "Workstations" and "Merge" tabs.
 
 
-<Youtube code="tho373GPmY8"/>
+<Youtube code="ZlIw7BwzeUI"/>
  
 
  ## Add a Workstation to the Space
@@ -59,7 +59,7 @@ clicking on the "activate transparency of space background colors" icon above th
 
 ## Duplicate a Workstation or a Group of Workstations
 
-<Youtube code="zUIgR14paWY"/>
+<Youtube code="Qm1WGOtkZyk"/>
 
 You can easily and quickly duplicate a workstation or a group of workstations in Surfy.
 

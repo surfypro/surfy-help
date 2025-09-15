@@ -15,7 +15,7 @@ This common segment will then be qualified with or without a door to reflect rea
 A segment is a part of a space's perimeter, delimited by two vertices.
 A common segment is a segment delimited by two vertices common to two spaces.
 
-<Youtube code="iior39hytfk"/>
+<Youtube code="z58IBzsk3xU"/>
 
 
 To create a common segment between two independent spaces, you must "merge vertices" of the two spaces, on each side of the segment to make common.

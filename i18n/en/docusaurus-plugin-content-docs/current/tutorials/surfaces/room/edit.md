@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Modify a Space
 
-<Youtube code="_B7Jb3eAn4I"/>
+<Youtube code="SRYnQ8o03os"/>
 
 To modify a space's surface in Surfy,
 
@@ -58,7 +58,7 @@ To do this, you select two vertices of the space to separate the space in two be
 These vertices must be positioned on the space segments.
 
 
-<Youtube code="OH0KcuzeSgU"/>
+<Youtube code="bnWY43N5W7A"/>
 
 
 ### Create Vertices for Separation

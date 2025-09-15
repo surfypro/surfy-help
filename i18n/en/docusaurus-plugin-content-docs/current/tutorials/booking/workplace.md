@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Booking in Surfy
 
-<Youtube code="gC2BWSNqv54"/>
+<Youtube code="ZhQJEefpCbE"/>
 
 ## Book from the Surfy Application
 

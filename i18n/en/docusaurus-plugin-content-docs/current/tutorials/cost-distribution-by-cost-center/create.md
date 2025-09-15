@@ -48,7 +48,7 @@ Clicking on any space name to the left of the lists returns to the concerned spa
 
 Example of distributing the "common areas" cost center between two other cost centers:
 
-<Youtube code="hc4hrITcg4o"/>
+<Youtube code="FUzULkVESXY"/>
 
 
 ## Excel File Exports 

@@ -29,7 +29,7 @@ You can display the names of people assigned to workstations by clicking on the 
 
 If the person to assign is not yet created in the Surfy database, you can create and assign them in one move.
 
-<Youtube code="gqpkHBE_0Lw"/>
+<Youtube code="hC_S-rq3r8c"/>
 
 To "create and associate" a new person,
 

@@ -9,7 +9,7 @@ For example, the "Floor Nature" layer type groups the "Carpet", "Tiles" or "Lino
 
 To create an analysis layer, its layer type must exist.
 
-<Youtube code="G3d1bubX8FU"/>
+<Youtube code="VLsTcHnafyw"/>
 
 ## Create a Layer Type
 

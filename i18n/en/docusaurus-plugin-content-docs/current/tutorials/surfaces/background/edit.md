@@ -4,7 +4,7 @@ sidebar_position: 2
 # Modify Plan Background
 
 
-<Youtube code="c_q-iUf1Is4"/>
+<Youtube code="51r_1z50Otg"/>
 
 
 Following a redevelopment in Surfy, you may need to modify a floor's plan background to remove parasitic images that would correspond to an old layout.
