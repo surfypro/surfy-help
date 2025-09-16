@@ -96,7 +96,8 @@ Pour retirer un rôle à un utilisateur de l'entreprise,
 
 ### Attribuer un rôle de contenu à l'utilisateur de l'entreprise
 
-Le rôle de contenu permet de choisir les étages ou bâtiments qui seront visibles par l'utilisateur concerné.
+Le rôle de contenu permet de choisir les étages ou bâtiments qui seront visibles par l'utilisateur concerné.<br />
+Si aucun rôle de contenu n'est donné à un utilisateur, celui-çi verra tous les bâtiments de la plateforme.
 
 Pour attribuer un rôle de contenu à un utilisateur de l'entreprise, dans le menu de gauche,
 

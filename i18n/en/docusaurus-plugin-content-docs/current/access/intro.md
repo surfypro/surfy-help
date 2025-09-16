@@ -96,7 +96,8 @@ To remove a role from a company user,
 
 ### Assign a Content Role to a Company User
 
-The content role allows you to choose the floors or buildings that will be visible to the concerned user.
+The content role allows you to choose the floors or buildings that will be visible to the concerned user.<br />
+If a user is not assigned a content role, they will see all buildings on the platform.
 
 To assign a content role to a company user, in the left menu,
 
