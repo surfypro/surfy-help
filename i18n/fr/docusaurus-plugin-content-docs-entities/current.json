@@ -144,7 +144,7 @@
     "description": "The label for version current"
   },
   "sidebar.help-sidebar.category.booking": {
-    "message": "booking",
+    "message": "Réservations",
     "description": "The label for category booking in sidebar help-sidebar"
   }
 }
