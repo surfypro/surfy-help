@@ -57,6 +57,13 @@ The analysis layer color allows you to differentiate spaces on the plan
 *Technical name:* ```peopleCount```
 <PH code="dimension:peopleCount"/>
 
+### Number of reservable workstations {#bookable-workplaces-count}
+
+The total number of bookable workstations in this analysis layer
+
+*Technical name:* ```bookableWorkplacesCount```
+<PH code="dimension:bookableWorkplacesCount"/>
+
 ### Numerical value {#value}
 
 The value can be used to associate the layer with a numerical value in order to be able to carry out analytical statistics

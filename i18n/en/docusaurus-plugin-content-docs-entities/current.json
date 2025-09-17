@@ -200,7 +200,7 @@
     "description": "The label for category planning-admin in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.user-guide": {
-    "message": "user-guide",
+    "message": "Feature guides",
     "description": "The label for category user-guide in sidebar help-sidebar"
   }
 }
