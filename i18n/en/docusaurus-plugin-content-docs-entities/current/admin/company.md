@@ -22,6 +22,13 @@ Company Name
 
 ## Basic properties {#properties-base}
     
+### Enable booking by building when all dimensions are overloaded {#enable-building-booking-when-all-dimensions-are-crowded}
+
+Enables direct booking by building and floor when all dimensions are overloaded, providing an alternative booking option when no areas are available
+
+*Technical name:* ```enableBuildingBookingWhenAllDimensionsAreCrowded```
+<PH code="company:enableBuildingBookingWhenAllDimensionsAreCrowded"/>
+
 ### Enable dimension override for booking {#enable-crowded-dimension-for-booking}
 
 Enables the dimension overload feature for reservations, allowing occupancy thresholds to be set beyond which a space is considered overloaded and enables priority over territories assignments

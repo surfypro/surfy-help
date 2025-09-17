@@ -1,8 +1,3 @@
----
-draft: true
-
----
-
 # Fonctionnalité de surcharge des dimensions pour la réservation
 
 ## À quoi sert cette fonctionnalité ?
@@ -59,39 +54,15 @@ Et ces taux d'occupation actuels :
 
 La Zone Commercial ne sera pas affichée car le système s'arrête après la première zone non surchargée.
 
-## Avantages pour votre entreprise
-
-### Optimisation de l'espace
-- **Meilleure utilisation** : Les zones existantes sont utilisées au maximum
-- **Réduction des coûts** : Moins besoin d'espaces supplémentaires
-- **Cohésion d'équipe** : Les équipes se concentrent dans les mêmes zones
-
-### Flexibilité maintenue
-- **Priorités respectées** : Chaque collaborateur garde ses zones préférées
-- **Choix préservé** : Le collaborateur peut toujours choisir parmi les zones proposées
-- **Adaptation automatique** : Le système s'adapte à l'occupation en temps réel
-
-## Quand utiliser cette fonctionnalité ?
-
-### À éviter si vous préférez :
-- Laisser le choix total aux collaborateurs
-- Éviter toute contrainte sur les réservations
-- Maintenir une flexibilité maximale
 
 ## Configuration
 
 Cette fonctionnalité se configure au niveau de l'entreprise dans les paramètres de configuration. Une fois activée, elle s'applique automatiquement à tous les collaborateurs lors de leurs réservations.
 
-## Impact sur l'expérience utilisateur
+## Relation avec les autres fonctionnalités
 
-- **Transparent** : Le collaborateur ne voit que les zones qui lui sont proposées
-- **Intuitif** : L'ordre d'affichage suit ses priorités personnalisées
-- **Efficace** : Moins de zones à parcourir pour faire son choix
-- **Optimisé** : Les réservations contribuent à une meilleure utilisation de l'espace
+Cette fonctionnalité fonctionne en complément de :
 
-## Terminologie officielle
-
-Selon les traductions françaises de l'application :
-
-- **Label** : "Activer la surcharge des dimensions pour la réservation"
-- **Description** : "Permet d'activer la fonctionnalité de surcharge des dimensions pour les réservations, permettant de définir des seuils d'occupation au-delà desquels un espace est considéré comme surchargé et active la priorité sur les affectations des quartiers" 
+1. **"Activer la réservation par bâtiment quand toutes les dimensions sont surchargées"** : Offre une solution de secours quand toutes les zones sont surchargées
+2. **Système de priorités** : Respecte les zones prioritaires des collaborateurs
+3. **Réservation par étage** : Utilise le système existant de réservation par bâtiment et étage 

@@ -612,6 +612,10 @@
                     "label": "Activer la surcharge des dimensions pour la réservation",
                     "description": "Permet d'activer la fonctionnalité de surcharge des dimensions pour les réservations, permettant de définir des seuils d'occupation au-delà desquels un espace est considéré comme surchargé et active la priorité sur les affectations des quartiers"
                 },
+                "enableBuildingBookingWhenAllDimensionsAreCrowded": {
+                    "label": "Activer la réservation par bâtiment quand toutes les dimensions sont surchargées",
+                    "description": "Permet d'activer la réservation directe par bâtiment et étage lorsque toutes les dimensions sont surchargées, offrant une alternative de réservation quand aucune zone n'est disponible"
+                },
                 "createdAt": {
                     "label": "Date de création",
                     "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
