@@ -1,25 +1,31 @@
 import Box from '@mui/material/Box';
 import Fade from '@mui/material/Fade';
 import Paper from '@mui/material/Paper';
-import { useTranslations } from "../Translations/translations";
+import { useTranslations, useCurrentLocale } from "../Translations/translations";
 import { HelpTooltipStyled } from "./HelpTooltipStyled";
 import { toDocumentationLinkString } from "@site/src/utils/documentionStyle";
 import { getPropertyTypeByCode, ObjectTypeSingularCapitalizedLabel, PropertyTypeCodes, PropertyTypeDescription, PropertyTypeLabel, PropertyTypeMandatoryLabel } from "@site/surfy";
-import { objectTypePathMapping } from "@site/src/metaModel/metamodel.json.helper";
+import { objectTypePathMapping, objectTypePathMappingEn } from "@site/src/metaModel/metamodel.json.helper";
 
 export function PropertyType(props: { code: PropertyTypeCodes }) {
     const entitiesTranslations = useTranslations();
+    const currentLocale = useCurrentLocale();
     const { code } = props;
 
     const propertyType = getPropertyTypeByCode(code);
 
     const { objectTypeName, name } = propertyType;
-    const directoryPath = objectTypePathMapping[objectTypeName];
+
+    // Use the appropriate mapping based on locale
+    const pathMapping = currentLocale === 'fr' ? objectTypePathMapping : objectTypePathMappingEn;
+    const directoryPath = pathMapping[objectTypeName];
     if (!directoryPath) {
         throw new Error(`object type ${objectTypeName} not found in entities`);
     }
 
-    const href = `${directoryPath}/${toDocumentationLinkString(objectTypeName)}#${toDocumentationLinkString(name)}`;
+    // Add locale prefix for non-default locales
+    const localePrefix = currentLocale === 'fr' ? '' : `/${currentLocale}`;
+    const href = `${localePrefix}${directoryPath}/${toDocumentationLinkString(objectTypeName)}#${toDocumentationLinkString(name)}`;
 
     const Title = <Paper sx={{ p: 2 }}>
         <Box style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>

@@ -19,7 +19,7 @@ See the tutorial chapter [Bill Spaces by Cost Center](/en/docs/tutorials/cost-di
 ## Estimate a Cleaning Service
 
     -   [Define cleaning frequencies](/en/docs/tutorials/dimensionType/create#create-and-associate-an-analysis-layer-to-a-layer-type)
-    -   Define [cleaning rates](/entities/admin/types/room-types/room-type#cadence) of space typologies or Define the <P code="roomType:cadence"/>
+    -   Define [cleaning rates](/en/entities/admin/types/room-types/room-type#cadence) of space typologies or Define the <P code="roomType:cadence"/>
     -   [Qualify spaces by cleaning frequency](/en/docs/tutorials/surfaces/room/edit#qualify-a-space-or-modify-space-information)
     -   [Get the monthly hours needed for the cleaning service](/en/docs/tutorials/BuildingData/Buildingdashboard/Buildingreporting#building-cleaning-service-report)
     
