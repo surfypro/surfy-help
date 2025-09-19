@@ -612,6 +612,10 @@
                     "label": "Activer la surcharge des dimensions pour la réservation",
                     "description": "Permet d'activer la fonctionnalité de surcharge des dimensions pour les réservations, permettant de définir des seuils d'occupation au-delà desquels un espace est considéré comme surchargé et active la priorité sur les affectations des quartiers"
                 },
+                "enableBuildingBookingWhenAllDimensionsAreCrowded": {
+                    "label": "Activer la réservation par bâtiment quand toutes les dimensions sont surchargées",
+                    "description": "Permet d'activer la réservation directe par bâtiment et étage lorsque toutes les dimensions sont surchargées, offrant une alternative de réservation quand aucune zone n'est disponible"
+                },
                 "createdAt": {
                     "label": "Date de création",
                     "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
@@ -4469,6 +4473,10 @@
                 "crowdedForBookingRate": {
                     "label": "Taux de surcharge pour la réservation",
                     "description": "Le taux de surcharge pour la réservation permet de définir le pourcentage d'occupation au-delà duquel un espace est considéré comme surchargé pour les réservations"
+                },
+                "bookableWorkplacesCount": {
+                    "label": "Nombre de postes de travail réservables",
+                    "description": "Le nombre total de postes de travail réservables dans ce calque d'analyse"
                 },
                 "createdAt": {
                     "label": "Date de création",

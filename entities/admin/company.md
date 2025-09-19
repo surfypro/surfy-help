@@ -22,6 +22,13 @@ Nom de l'entreprise
 
 ## Propriétés de base {#properties-base}
     
+### Activer la réservation par bâtiment quand toutes les dimensions sont surchargées {#enable-building-booking-when-all-dimensions-are-crowded}
+
+Permet d'activer la réservation directe par bâtiment et étage lorsque toutes les dimensions sont surchargées, offrant une alternative de réservation quand aucune zone n'est disponible
+
+*Nom technique:* ```enableBuildingBookingWhenAllDimensionsAreCrowded```
+<PH code="company:enableBuildingBookingWhenAllDimensionsAreCrowded"/>
+
 ### Activer la surcharge des dimensions pour la réservation {#enable-crowded-dimension-for-booking}
 
 Permet d'activer la fonctionnalité de surcharge des dimensions pour les réservations, permettant de définir des seuils d'occupation au-delà desquels un espace est considéré comme surchargé et active la priorité sur les affectations des quartiers

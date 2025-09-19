@@ -50,6 +50,13 @@ L'empreinte carbone par mètre carré permet de calculer l'empreinte carbone en 
 *Nom technique:* ```peopleCount```
 <PH code="dimension:peopleCount"/>
 
+### Nombre de postes de travail réservables {#bookable-workplaces-count}
+
+Le nombre total de postes de travail réservables dans ce calque d'analyse
+
+*Nom technique:* ```bookableWorkplacesCount```
+<PH code="dimension:bookableWorkplacesCount"/>
+
 ### Nombre total d'affectations {#total-people-count}
 
 Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail

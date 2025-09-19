@@ -1,138 +1,150 @@
 {
   "sidebar.help-sidebar.category.human": {
     "message": "Collaborateurs",
-    "description": "no-description"
+    "description": "The label for category human in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.person-type": {
     "message": "Typologies",
-    "description": "no-description"
+    "description": "The label for category person-type in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.person-relations": {
     "message": "Relations",
-    "description": "no-description"
+    "description": "The label for category person-relations in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.things": {
     "message": "Mobiliers",
-    "description": "no-description"
+    "description": "The label for category things in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.things-type": {
     "message": "Typologies",
-    "description": "no-description"
+    "description": "The label for category things-type in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.items-fact": {
     "message": "Données horodatées des objets",
-    "description": "no-description"
+    "description": "The label for category items-fact in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.affectations": {
     "message": "Affectations",
-    "description": "no-description"
+    "description": "The label for category affectations in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.spaces": {
     "message": "Espaces",
-    "description": "no-description"
+    "description": "The label for category spaces in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.space-points": {
     "message": "Points",
-    "description": "no-description"
+    "description": "The label for category space-points in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.building-facts": {
     "message": "Données horodatées des bâtiments",
-    "description": "no-description"
+    "description": "The label for category building-facts in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.organizations": {
     "message": "Organisations",
-    "description": "no-description"
+    "description": "The label for category organizations in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.planning": {
     "message": "Plannings",
-    "description": "no-description"
+    "description": "The label for category planning in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.bookings": {
     "message": "Réservations",
-    "description": "no-description"
+    "description": "The label for category bookings in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.planning-admin": {
     "message": " Administration des plannings",
-    "description": "no-description"
+    "description": "The label for category planning-admin in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.admin": {
     "message": "Administration",
-    "description": "no-description"
+    "description": "The label for category admin in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.types": {
     "message": "Typologies",
-    "description": "no-description"
+    "description": "The label for category types in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.room-types": {
     "message": "Typologies d'espaces",
-    "description": "no-description"
+    "description": "The label for category room-types in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.dimensions": {
     "message": "Calques d'analyse",
-    "description": "no-description"
+    "description": "The label for category dimensions in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.security": {
     "message": "Sécurité",
-    "description": "no-description"
+    "description": "The label for category security in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.person-companies": {
     "message": "Prestataires",
-    "description": "no-description"
+    "description": "The label for category person-companies in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.api": {
     "message": "API",
-    "description": "no-description"
+    "description": "The label for category api in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.authentification": {
     "message": "Authentification",
-    "description": "no-description"
+    "description": "The label for category authentification in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.partner-export-mapping": {
     "message": "Partenaires",
-    "description": "no-description"
+    "description": "The label for category partner-export-mapping in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.admin-reporting": {
     "message": "Reporting",
-    "description": "no-description"
+    "description": "The label for category admin-reporting in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.admin-dimension-reporting": {
     "message": "Dimensions",
-    "description": "no-description"
+    "description": "The label for category admin-dimension-reporting in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.admin-cost-center-reporting": {
     "message": "Centre de coûts",
-    "description": "no-description"
+    "description": "The label for category admin-cost-center-reporting in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.admin-room-type-reporting": {
     "message": "Type d'espaces",
-    "description": "no-description"
+    "description": "The label for category admin-room-type-reporting in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.admin-organization-reporting": {
     "message": "Organisations",
-    "description": "no-description"
+    "description": "The label for category admin-organization-reporting in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.admin-room-type-group-reporting": {
     "message": "Groupes de typologies d'espaces",
-    "description": "no-description"
+    "description": "The label for category admin-room-type-group-reporting in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.connectors": {
     "message": "Connecteurs",
-    "description": "no-description"
+    "description": "The label for category connectors in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.surfy": {
     "message": "Surfy",
-    "description": "no-description"
+    "description": "The label for category surfy in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.global-security": {
     "message": "Sécurité globale",
-    "description": "no-description"
+    "description": "The label for category global-security in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.global-admin": {
     "message": "Administration globale",
-    "description": "no-description"
+    "description": "The label for category global-admin in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.help": {
     "message": "Aide",
-    "description": "no-description"
+    "description": "The label for category help in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.user-guide": {
+    "message": "Guide des fonctionnalités",
+    "description": "The label for category user-guide in sidebar help-sidebar"
+  },
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.help-sidebar.category.booking": {
+    "message": "Réservations",
+    "description": "The label for category booking in sidebar help-sidebar"
   }
 }
