@@ -1,6 +1,6 @@
 # Nouveautés
 
-<!-- ## 21 Septembre 2025 - v3.4.103
+## 21 Septembre 2025 - v3.4.103
 
 - Ajout d'une vue sur l'entreprise permettant d'afficher la liste de tous les rapports de qualité des données.
 - Création d'un rapport de qualité des données sur les postes de travail qui affiche les postes de passage avec des affectations.
@@ -8,7 +8,7 @@
 - Il est désormais possible d'ajouter des types d'objets avec un vide central dans les types de postes de travail.
 - Mise en place d'une option au niveau de l'entreprise permettant d'activer la réservation par bâtiment si tous les quartiers sont surchargés. [Voir la documentation.](/entities/user-guide/booking/enable-building-booking-when-all-dimensions-are-crowded)
 - Le nombre de postes de travail réservables est désormais calculé par calque d'affectation et par bâtiment, puis affiché dans la fiche du calque d'affectation. Il est nécessaire de recalculer les données du bâtiment pour voir le résultat après modification.
- -->
+
 
 ## 27 Août 2025 - v3.4.99
 

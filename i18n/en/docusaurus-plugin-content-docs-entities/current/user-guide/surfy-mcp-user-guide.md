@@ -4,8 +4,8 @@ Connect your Surfy workspace to Cursor IDE with our Model Context Protocol (MCP)
 
 ## 🚀 Add to Cursor
 
-<div style="text-align: center; margin: 2rem 0;">
-  <a href="cursor://mcp/surfy" style="display: inline-block; background: #007acc; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 16px;">
+<div >
+  <a href="cursor://anysphere.cursor-deeplink/mcp/install?name=surfy&config=eyJ1cmwiOiJodHRwczovL2FwcC5zdXJmeS5wcm8vYXBpL3YxL21jcCJ9" >
     + Add Surfy MCP to Cursor
   </a>
 </div>
