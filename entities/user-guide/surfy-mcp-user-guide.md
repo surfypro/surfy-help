@@ -5,7 +5,7 @@ Connectez votre espace de travail Surfy à Cursor IDE avec notre serveur Model C
 ## 🚀 Ajouter à Cursor
 
 <div >
-  <a href="cursor://anysphere.cursor-deeplink/mcp/install?name=surfy&config=eyJ1cmwiOiJodHRwczovL2FwcC5zdXJmeS5wcm8vYXBpL3YxL21jcCJ9" >
+  <a href="cursor://anysphere.cursor-deeplink/mcp/install?name=surfy&config=eyJ1cmwiOiJodHRwczovL2FwcC5zdXJmeS5wcm8vYXBpL3YxL3N1cmZ5LW1jcC9tY3AifQ%3D%3D" >
     + Ajouter Surfy MCP à Cursor
   </a>
 </div>
