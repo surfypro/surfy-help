@@ -4474,10 +4474,6 @@
                     "label": "Taux de surcharge pour la réservation",
                     "description": "Le taux de surcharge pour la réservation permet de définir le pourcentage d'occupation au-delà duquel un espace est considéré comme surchargé pour les réservations"
                 },
-                "bookableWorkplacesCount": {
-                    "label": "Nombre de postes de travail réservables",
-                    "description": "Le nombre total de postes de travail réservables dans ce calque d'analyse"
-                },
                 "createdAt": {
                     "label": "Date de création",
                     "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
@@ -4763,6 +4759,10 @@
                 "dimensionPeopleCount": {
                     "label": "Nombre d'affectations directement à ce calque d'affectation",
                     "description": "Le nombre de personnes qui sont affectées à ce calque d'affectation pour l'ensemble du bâtiment"
+                },
+                "bookableWorkplacesCount": {
+                    "label": "Nombre de postes de travail réservables",
+                    "description": "Le nombre total de postes de travail réservables dans ce calque d'analyse pour ce bâtiment"
                 },
                 "roomsArea": {
                     "label": "Surface qualifiée",

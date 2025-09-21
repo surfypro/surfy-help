@@ -1,3 +1,6 @@
+---
+search_rank: 0.5
+---    
 # Affection to the building
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
