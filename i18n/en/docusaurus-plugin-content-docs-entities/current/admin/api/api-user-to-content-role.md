@@ -1,3 +1,6 @@
+---
+search_rank: 0.5
+---    
 # Associating API user with the content role
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 

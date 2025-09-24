@@ -1,3 +1,6 @@
+---
+search_rank: 0.5
+---    
 # Association of analysis layer to buildings
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
@@ -160,6 +163,16 @@ The workstation ratio is the number of square meters divided by the number of wo
     
 
 
+## Basic properties {#properties-base}
+    
+### Number of reservable workstations {#bookable-workplaces-count}
+
+The total number of bookable workstations in this analysis layer for this building
+
+*Technical name:* ```bookableWorkplacesCount```
+<PH code="dimensionBuilding:bookableWorkplacesCount"/>
+
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

@@ -1,3 +1,6 @@
+---
+search_rank: 0.5
+---    
 # Cost center association on floors
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 

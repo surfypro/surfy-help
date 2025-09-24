@@ -1,3 +1,6 @@
+---
+search_rank: 0.5
+---    
 # Réservation à l'espace des personnes
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 

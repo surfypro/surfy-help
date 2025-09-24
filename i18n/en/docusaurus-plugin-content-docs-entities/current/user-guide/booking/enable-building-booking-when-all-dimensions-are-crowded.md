@@ -30,11 +30,6 @@ When all dimensions are overloaded, the system:
 
 ## Behavior According to Activation
 
-### Without Activation (Standard Behavior)
-- If all dimensions are overloaded, the collaborator sees no reservation options
-- No alternative is proposed
-- The collaborator must wait for a zone to become available
-
 ### With Activation
 - If all dimensions are overloaded, the system automatically proposes building booking
 - The collaborator can choose a floor and a specific workplace

@@ -1,3 +1,6 @@
+---
+search_rank: 0.5
+---    
 # Association calque d'analyse aux espaces
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 

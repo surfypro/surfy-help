@@ -1,3 +1,6 @@
+---
+search_rank: 0.5
+---    
 # Associating content role to interface operations for an enterprise
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 

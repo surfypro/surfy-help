@@ -1,3 +1,6 @@
+---
+search_rank: 0.5
+---    
 # Transformation des exports partenaires
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 

@@ -31,7 +31,7 @@ Lorsque toutes les dimensions sont surchargées, le système :
 ## Comportement selon l'activation
 
 ### Sans activation (comportement standard)
-- Si toutes les dimensions sont surchargées, le collaborateur ne voit aucune option de réservation
+- Si toutes les dimensions sont surchargées, Le collaborateur ne peut pas réserver en dehors de ses zones surchargées
 - Aucune alternative n'est proposée
 - Le collaborateur doit attendre qu'une zone se libère
 

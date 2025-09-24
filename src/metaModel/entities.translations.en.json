@@ -4474,10 +4474,6 @@
                     "label": "Booking surcharge rate",
                     "description": "The reservation overload rate allows you to define the occupancy percentage beyond which a space is considered overloaded for reservations."
                 },
-                "bookableWorkplacesCount": {
-                    "label": "Number of reservable workstations",
-                    "description": "The total number of bookable workstations in this analysis layer"
-                },
                 "createdAt": {
                     "label": "Creation date",
                     "description": "Date of creation in Surfy, allows you to know the history of creation in Surfy"
@@ -4763,6 +4759,10 @@
                 "dimensionPeopleCount": {
                     "label": "Number of assignments directly to this assignment layer",
                     "description": "The number of people who are assigned to this assignment layer for the entire building"
+                },
+                "bookableWorkplacesCount": {
+                    "label": "Number of reservable workstations",
+                    "description": "The total number of bookable workstations in this analysis layer for this building"
                 },
                 "roomsArea": {
                     "label": "Qualified surface",

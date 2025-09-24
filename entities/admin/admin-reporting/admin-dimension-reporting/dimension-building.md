@@ -1,3 +1,6 @@
+---
+search_rank: 0.5
+---    
 # Association calque d'analyse aux bâtiments
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
@@ -160,6 +163,16 @@ Taux de postes de travail partagés par au moins 2 personnes par rapport à l'en
     
 
 
+## Propriétés de base {#properties-base}
+    
+### Nombre de postes de travail réservables {#bookable-workplaces-count}
+
+Le nombre total de postes de travail réservables dans ce calque d'analyse pour ce bâtiment
+
+*Nom technique:* ```bookableWorkplacesCount```
+<PH code="dimensionBuilding:bookableWorkplacesCount"/>
+
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 
