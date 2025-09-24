@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+pagination_label: "Delete a Workstation Type"
+title: "Delete a Workstation Type"
 ---
 
 # Delete a Workstation Type

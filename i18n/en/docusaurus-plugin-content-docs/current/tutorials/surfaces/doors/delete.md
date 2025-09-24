@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+pagination_label: "Delete a door or passage"
+title: "Delete a door or passage"
 ---
 
 # Delete a door or passage

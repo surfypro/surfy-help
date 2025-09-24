@@ -1,4 +1,52 @@
 {
+  "theme.docs.paginator.previous": {
+    "message": "Previous",
+    "description": "The label for the previous page in the paginator"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Next",
+    "description": "The label for the next page in the paginator"
+  },
+  "sidebar.help-sidebar.category.Les Relations": {
+    "message": "Relationships",
+    "description": "The label for category Les Relations in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Les Portes et Passages": {
+    "message": "Doors and Passages",
+    "description": "The label for category Les Portes et Passages in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Les Structures": {
+    "message": "Structures",
+    "description": "The label for category Les Structures in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Les Espaces": {
+    "message": "Spaces",
+    "description": "The label for category Les Espaces in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Les Etages": {
+    "message": "Floors",
+    "description": "The label for category Les Etages in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Les Campus": {
+    "message": "Campuses",
+    "description": "The label for category Les Campus in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Les Postes de travail": {
+    "message": "Workstations",
+    "description": "The label for category Les Postes de travail in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Les Objets": {
+    "message": "Objects",
+    "description": "The label for category Les Objets in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Les Familles de mobilier": {
+    "message": "Furniture Families",
+    "description": "The label for category Les Familles de mobilier in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Les Types de poste de travail": {
+    "message": "Workstation Types",
+    "description": "The label for category Les Types de poste de travail in sidebar help-sidebar"
+  },
   "version.label": {
     "message": "Next",
     "description": "The label for version current"
@@ -395,10 +443,6 @@
     "message": "Surfaces in Surfy",
     "description": "The generated-index page description for category Les Surfaces in sidebar help-sidebar"
   },
-  "sidebar.help-sidebar.category.Les Campus": {
-    "message": "Campuses",
-    "description": "The label for category Les Campus in sidebar help-sidebar"
-  },
   "sidebar.help-sidebar.category.Les Campus.link.generated-index.description": {
     "message": "5 minutes to understand Campuses",
     "description": "The generated-index page description for category Les Campus in sidebar help-sidebar"
@@ -411,17 +455,9 @@
     "message": "5 minutes to understand buildings",
     "description": "The generated-index page description for category Les Bâtiments in sidebar help-sidebar"
   },
-  "sidebar.help-sidebar.category.Les Etages": {
-    "message": "Floors",
-    "description": "The label for category Les Etages in sidebar help-sidebar"
-  },
   "sidebar.help-sidebar.category.Les Etages.link.generated-index.description": {
     "message": "Everything about floors",
     "description": "The generated-index page description for category Les Etages in sidebar help-sidebar"
-  },
-  "sidebar.help-sidebar.category.Les Espaces": {
-    "message": "Spaces",
-    "description": "The label for category Les Espaces in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Les Espaces.link.generated-index.description": {
     "message": "Everything about spaces in Surfy",
@@ -443,17 +479,9 @@
     "message": "Everything about plan scale",
     "description": "The generated-index page description for category L'Echelle in sidebar help-sidebar"
   },
-  "sidebar.help-sidebar.category.Les Structures": {
-    "message": "Structures",
-    "description": "The label for category Les Structures in sidebar help-sidebar"
-  },
   "sidebar.help-sidebar.category.Les Structures.link.generated-index.description": {
     "message": "Everything about floor structure",
     "description": "The generated-index page description for category Les Structures in sidebar help-sidebar"
-  },
-  "sidebar.help-sidebar.category.Les Portes et Passages": {
-    "message": "Doors and Passages",
-    "description": "The label for category Les Portes et Passages in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Les Portes et Passages.link.generated-index.description": {
     "message": "Everything about doors and passages in Surfy",
@@ -483,10 +511,6 @@
     "message": "Everything about furniture",
     "description": "The generated-index page description for category Le Mobilier in sidebar help-sidebar"
   },
-  "sidebar.help-sidebar.category.Les Familles de mobilier": {
-    "message": "Furniture Families",
-    "description": "The label for category Les Familles de mobilier in sidebar help-sidebar"
-  },
   "sidebar.help-sidebar.category.Les Familles de mobilier.link.generated-index.description": {
     "message": "Everything about object type families",
     "description": "The generated-index page description for category Les Familles de mobilier in sidebar help-sidebar"
@@ -515,25 +539,13 @@
     "message": "Everything about icon object types",
     "description": "The generated-index page description for category Les Types d'objet Icône in sidebar help-sidebar"
   },
-  "sidebar.help-sidebar.category.Les Types de poste de travail": {
-    "message": "Workstation Types",
-    "description": "The label for category Les Types de poste de travail in sidebar help-sidebar"
-  },
   "sidebar.help-sidebar.category.Les Types de poste de travail.link.generated-index.description": {
     "message": "Everything about workstation types",
     "description": "The generated-index page description for category Les Types de poste de travail in sidebar help-sidebar"
   },
-  "sidebar.help-sidebar.category.Les Objets": {
-    "message": "Objects",
-    "description": "The label for category Les Objets in sidebar help-sidebar"
-  },
   "sidebar.help-sidebar.category.Les Objets.link.generated-index.description": {
     "message": "Everything about object management",
     "description": "The generated-index page description for category Les Objets in sidebar help-sidebar"
-  },
-  "sidebar.help-sidebar.category.Les Postes de travail": {
-    "message": "Workstations",
-    "description": "The label for category Les Postes de travail in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Les Postes de travail.link.generated-index.description": {
     "message": "Everything about workstation management",
@@ -546,10 +558,6 @@
   "sidebar.help-sidebar.category.Les Personnes.link.generated-index.description": {
     "message": "People in Surfy",
     "description": "The generated-index page description for category Les Personnes in sidebar help-sidebar"
-  },
-  "sidebar.help-sidebar.category.Les Relations": {
-    "message": "Relationships",
-    "description": "The label for category Les Relations in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Les Relations.link.generated-index.description": {
     "message": "Relationships with people in Surfy",

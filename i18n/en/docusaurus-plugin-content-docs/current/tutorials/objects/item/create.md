@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+pagination_label: "Create an Object"
+title: "Create an Object"
 ---
 # Create an Object
 

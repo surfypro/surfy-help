@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+pagination_label: "Getting Started Guide"
+title: "Getting Started Guide"
 ---
 
 # Getting Started Guide
