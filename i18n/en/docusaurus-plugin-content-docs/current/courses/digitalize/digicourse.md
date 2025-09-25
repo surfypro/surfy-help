@@ -11,11 +11,11 @@ sidebar_position: 2
     -   [Create the Plan Background](/en/docs/tutorials/surfaces/background/create)
     -   [Create the Plan Scale](/en/docs/tutorials/surfaces/mapscale/create)
     -   [Create a Space](/en/docs/tutorials/surfaces/room/create)
-    -   [Manage Doors and Passages](/en/docs/doors)
+    -   [Manage Doors and Passages](/en/docs/tutorials/surfaces/doors)
     -   [Qualify a Space](/en/docs/tutorials/surfaces/room/create#qualify-a-space)
     -   [Modify a Space](/en/docs/tutorials/surfaces/room/edit)
-    -   [Manage Space Analysis Layers](/en/docs/dimensiontypes)
-    -   [Manage Space Assignment Layers (Districts)](/en/docs/dimensiontypetobuilding)
+    -   [Manage Space Analysis Layers](/en/docs/tutorials/dimensionType)
+    -   [Manage Space Assignment Layers (Districts)](/en/docs/tutorials/dimensionTypeToBuilding)
 
 ## Layout Spaces
 
