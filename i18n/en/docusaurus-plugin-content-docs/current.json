@@ -7,6 +7,14 @@
     "message": "Next",
     "description": "The label for the next page in the paginator"
   },
+  "docs.iconitemtype.title": {
+    "message": "Icon Object Types",
+    "description": "The title for the iconitemtype page"
+  },
+  "docs.persontobuilding.title": {
+    "message": "Building Assignments",
+    "description": "The title for the persontobuilding page"
+  },
   "sidebar.help-sidebar.category.Les Relations": {
     "message": "Relationships",
     "description": "The label for category Les Relations in sidebar help-sidebar"

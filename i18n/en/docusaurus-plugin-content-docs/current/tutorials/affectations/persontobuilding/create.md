@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+pagination_label: "Create a Building Assignment"
+title: "Create a Building Assignment"
 ---
 # Create a Building Assignment
 

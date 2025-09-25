@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+pagination_label: "Delete a Building Assignment"
+title: "Delete a Building Assignment"
 ---
 
 # Delete a Building Assignment

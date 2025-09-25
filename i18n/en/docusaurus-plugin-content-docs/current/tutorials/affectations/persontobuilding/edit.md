@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+pagination_label: "Modify a Building Assignment"
+title: "Modify a Building Assignment"
 ---
 # Modify a Building Assignment
 
