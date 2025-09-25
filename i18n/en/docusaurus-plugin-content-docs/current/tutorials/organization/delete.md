@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+pagination_label: "Delete an Organization"
+title: "Delete an Organization"
 ---
 # Delete an Organization
 

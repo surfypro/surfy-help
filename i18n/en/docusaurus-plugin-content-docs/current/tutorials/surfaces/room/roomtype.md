@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+pagination_label: "Space Typologies"
+title: "Space Typologies"
 ---
 
 # Space Typologies

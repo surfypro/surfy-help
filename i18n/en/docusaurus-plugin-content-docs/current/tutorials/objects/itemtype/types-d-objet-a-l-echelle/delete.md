@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+pagination_label: "Delete a Scale Object Type"
+title: "Delete a Scale Object Type"
 ---
 
 # Delete a Scale Object Type

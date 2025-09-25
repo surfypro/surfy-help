@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+pagination_label: "Edit a Furniture Family"
+title: "Edit a Furniture Family"
 ---
 
 # Modify an Object Type Family

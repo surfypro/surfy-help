@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+pagination_label: "Create a Scale Object Type"
+title: "Create a Scale Object Type"
 ---
 # Create a Scale Object Type
 

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+pagination_label: "Delete a Space Assignment"
+title: "Delete a Space Assignment"
 ---
 
 # Delete a Space Assignment

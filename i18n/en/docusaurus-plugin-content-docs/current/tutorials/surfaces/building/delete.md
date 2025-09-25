@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+pagination_label: "Delete a Building"
+title: "Delete a Building"
 ---
 
  # Delete a Building
