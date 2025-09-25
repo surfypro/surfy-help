@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+pagination_label: "Edit a Space"
+title: "Edit a Space"
 ---
 
 # Modify a Space

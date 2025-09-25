@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+pagination_label: "Create a Door or Passage"
+title: "Create a Door or Passage"
 ---
 
 # Create a Door or Passage

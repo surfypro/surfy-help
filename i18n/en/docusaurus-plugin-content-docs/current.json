@@ -531,10 +531,6 @@
     "message": "Everything about scale object types",
     "description": "The generated-index page description for category Les Types d'objet à l'échelle in sidebar help-sidebar"
   },
-  "sidebar.help-sidebar.category.Les Types d'objet Icône": {
-    "message": "Icon Object Types",
-    "description": "The label for category Les Types d'objet Icône in sidebar help-sidebar"
-  },
   "sidebar.help-sidebar.category.Les Types d'objet Icône.link.generated-index.description": {
     "message": "Everything about icon object types",
     "description": "The generated-index page description for category Les Types d'objet Icône in sidebar help-sidebar"
@@ -814,5 +810,17 @@
   "sidebar.help-sidebar.category.L'inventaire du mobilier.link.generated-index.description": {
     "message": "Everything about furniture inventory",
     "description": "The generated-index page description for category L'inventaire du mobilier in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Les Types d'objet Icône": {
+    "message": "Les Types d'objet Icône",
+    "description": "The label for category Les Types d'objet Icône in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Workstation Types": {
+    "message": "Workstation Types",
+    "description": "The label for category Workstation Types in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.Workstation Types.link.generated-index.description": {
+    "message": "Tout savoir sur le Type de poste de travail",
+    "description": "The generated-index page description for category Workstation Types in sidebar help-sidebar"
   }
 }

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+pagination_label: "Edit Plan Background"
+title: "Edit Plan Background"
 ---
 # Modify Plan Background
 
