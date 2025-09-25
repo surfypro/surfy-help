@@ -14,7 +14,7 @@ From the home page,
 
 -   click on "Assignments", "Building Assignments", then "List Building Assignments".
 -   search for the building assignment to delete
--   check the box at the beginning of the line then click on the icon "Delete Selected Building Assignments" at the top of the page
+-   check the box at the beginning of the line then click on the icon "Delete Selected Building Assignments" at the top of the page.
 
 The building assignment is deleted.
 
