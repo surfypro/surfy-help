@@ -90,7 +90,7 @@ It is intended for [Security Managers](https://www.surfy.pro/en-gb/ug/sante-et-s
 
 The "Districts" view colors spaces by assignment layers, groups spaces into districts following these layers and allows directly assigning people to these districts.
 
-This is the ideal view for the [assignment manager](https://www.surfy.pro/en-gb/ff/affecter-les-collaborateurs), allowing them to [manage district assignment](/en/docs/tutorials/affectations/dimensiontoperson/create) but also [fixed workstation assignments](/en/docs/tutorials/affectations/workplaceaffectation/create).
+This is the ideal view for the [assignment manager](https://www.surfy.pro/en-gb/ff/affecter-les-collaborateurs), allowing them to [manage district assignment](/en/docs/tutorials/affectations/dimensionToPerson/create) but also [fixed workstation assignments](/en/docs/tutorials/affectations/workplaceaffectation/create).
 You can indeed mix in the same space workstations declared as Flex (bookable or not) and fixed assignment workstations.
 
 

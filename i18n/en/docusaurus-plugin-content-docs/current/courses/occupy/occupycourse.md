@@ -30,7 +30,7 @@ Assign people in bulk [to workstations](/en/docs/tutorials/affectations/workplac
 
 [View District Assignment Layers](/en/docs/tutorials/dimensionTypeToBuilding/create#view-assignment-layers)
 
-[Assign People to Districts](/en/docs/tutorials/affectations/dimensiontoperson/create)
+[Assign People to Districts](/en/docs/tutorials/affectations/dimensionToPerson/create)
 
 [List District Assignments](/en/docs/courses/find/listfindcourse)
 

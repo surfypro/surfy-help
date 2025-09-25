@@ -6,7 +6,7 @@ sidebar_position: 2
 ## Modifying a Person's District Assignment
 
 The simplest way to modify a person's district assignment in Surfy is to delete their assignment to the district then create a new assignment, whether to a district or not.
-To move a person from one district to another, see the chapters [Delete a District Assignment](/en/docs/tutorials/affectations/dimensiontoperson/delete) and [Create a District Assignment](/en/docs/tutorials/affectations/dimensiontoperson/create).
+To move a person from one district to another, see the chapters [Delete a District Assignment](/en/docs/tutorials/affectations/dimensionToPerson/delete) and [Create a District Assignment](/en/docs/tutorials/affectations/dimensionToPerson/create).
 
 
 ## Bulk District Assignment Modification by Excel File

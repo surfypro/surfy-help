@@ -190,9 +190,9 @@ const sidebars = {
           type: 'category',
           label: 'Dimension to Person',
           items: [
-            'affectations/dimensiontoperson/create',
-            'affectations/dimensiontoperson/edit',
-            'affectations/dimensiontoperson/delete',
+            'affectations/dimensionToPerson/create',
+            'affectations/dimensionToPerson/edit',
+            'affectations/dimensionToPerson/delete',
           ],
         },
         {

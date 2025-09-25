@@ -14,7 +14,7 @@ To use Surfy's booking features, the company must have a Surfy platform.<br />
 If the company is not yet using Surfy, it is necessary to contact our teams via our [contact page](https://www.surfy.pro/en-gb/contact).<br />
 A dedicated platform will be assigned to you, a building must be digitized and people created.<br />
 
-If the company's plans are already digitized in Surfy, booking features are available immediately, after the company accepts the booking license with Surfy ([Contact us](https://www.surfy.pro/en-gb/contact)), and after [configuring assignment districts](/en/docs/tutorials/dimensionTypeToBuilding/create) and [assigning collaborators to assignment districts](/en/docs/tutorials/affectations/dimensiontoperson/create).
+If the company's plans are already digitized in Surfy, booking features are available immediately, after the company accepts the booking license with Surfy ([Contact us](https://www.surfy.pro/en-gb/contact)), and after [configuring assignment districts](/en/docs/tutorials/dimensionTypeToBuilding/create) and [assigning collaborators to assignment districts](/en/docs/tutorials/affectations/dimensionToPerson/create).
 
 
 

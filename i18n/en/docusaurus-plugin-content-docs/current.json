@@ -11,9 +11,9 @@
     "message": "Icon Object Types",
     "description": "The title for the iconitemtype page"
   },
-  "docs.persontobuilding.title": {
+  "docs.personToBuilding.title": {
     "message": "Building Assignments",
-    "description": "The title for the persontobuilding page"
+    "description": "The title for the personToBuilding page"
   },
   "sidebar.help-sidebar.category.Les Relations": {
     "message": "Relationships",
