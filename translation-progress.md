@@ -77,9 +77,9 @@ Créer une version anglaise complète du site help.surfy.pro en traduisant tous 
 - [ ] `affectations/roomaffectation/create.md` → `docs-en/tutorials/affectations/roomaffectation/create.md`
 - [ ] `affectations/roomaffectation/edit.md` → `docs-en/tutorials/affectations/roomaffectation/edit.md`
 - [ ] `affectations/roomaffectation/delete.md` → `docs-en/tutorials/affectations/roomaffectation/delete.md`
-- [ ] `affectations/dimensiontoperson/create.md` → `docs-en/tutorials/affectations/dimensiontoperson/create.md`
-- [ ] `affectations/dimensiontoperson/edit.md` → `docs-en/tutorials/affectations/dimensiontoperson/edit.md`
-- [ ] `affectations/dimensiontoperson/delete.md` → `docs-en/tutorials/affectations/dimensiontoperson/delete.md`
+- [ ] `affectations/dimensionToPerson/create.md` → `docs-en/tutorials/affectations/dimensionToPerson/create.md`
+- [ ] `affectations/dimensionToPerson/edit.md` → `docs-en/tutorials/affectations/dimensionToPerson/edit.md`
+- [ ] `affectations/dimensionToPerson/delete.md` → `docs-en/tutorials/affectations/dimensionToPerson/delete.md`
 - [ ] `affectations/personToBuilding/create.md` → `docs-en/tutorials/affectations/personToBuilding/create.md`
 - [ ] `affectations/personToBuilding/edit.md` → `docs-en/tutorials/affectations/personToBuilding/edit.md`
 - [ ] `affectations/personToBuilding/delete.md` → `docs-en/tutorials/affectations/personToBuilding/delete.md`
