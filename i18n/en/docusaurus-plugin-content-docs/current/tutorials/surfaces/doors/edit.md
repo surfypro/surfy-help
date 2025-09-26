@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+pagination_label: "Edit a door or passage"
+title: "Edit a door or passage"
 ---
 
 # Edit a door or passage

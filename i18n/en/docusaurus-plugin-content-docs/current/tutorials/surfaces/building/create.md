@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+pagination_label: "Create a Building"
+title: "Create a Building"
 ---
 
 # Create a Building

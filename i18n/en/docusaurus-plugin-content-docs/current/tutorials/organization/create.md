@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+pagination_label: "Create an Organization"
+title: "Create an Organization"
 ---
 # Create an Organization
 

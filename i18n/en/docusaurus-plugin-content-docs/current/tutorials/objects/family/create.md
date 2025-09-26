@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+pagination_label: "Create a Furniture Family"
+title: "Create a Furniture Family"
 ---
 
 # Create an Object Type Family

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+pagination_label: "Edit an Icon Object Type"
+title: "Edit an Icon Object Type"
 ---
 # Modify an Icon Object Type
 

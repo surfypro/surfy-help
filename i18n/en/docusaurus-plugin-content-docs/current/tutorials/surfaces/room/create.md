@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+pagination_label: "Create a Space"
+title: "Create a Space"
 ---
 
 

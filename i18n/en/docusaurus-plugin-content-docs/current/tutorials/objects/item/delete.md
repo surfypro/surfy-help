@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+pagination_label: "Delete an Object"
+title: "Delete an Object"
 ---
 # Delete an Object
 

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+pagination_label: "Delete a Floor"
+title: "Delete a Floor"
 ---
 
 # Delete a Floor

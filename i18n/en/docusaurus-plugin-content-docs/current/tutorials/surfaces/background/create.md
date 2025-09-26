@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+pagination_label: "Create Plan Background"
+title: "Create Plan Background"
 ---
 
 # Create Plan Background

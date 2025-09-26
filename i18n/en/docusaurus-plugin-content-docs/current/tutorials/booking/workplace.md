@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+pagination_label: "Booking in Surfy"
+title: "Booking in Surfy"
 ---
 
 # Booking in Surfy

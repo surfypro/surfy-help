@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+pagination_label: "Delete a Space"
+title: "Delete a Space"
 ---
 
 # Delete a Space

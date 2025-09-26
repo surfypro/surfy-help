@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+pagination_label: "Edit a Workstation"
+title: "Edit a Workstation"
 ---
 # Modify a Workstation
 

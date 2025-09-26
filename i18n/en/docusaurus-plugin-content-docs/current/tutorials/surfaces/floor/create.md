@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+pagination_label: "Create a Floor"
+title: "Create a Floor"
 ---
 
 # Create a Floor

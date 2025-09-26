@@ -1,9 +1,9 @@
 {
-  "label": "Les Structures",
+  "label": "Structures",
   "position": 7,
   "link": {
     "slug": "structures",
     "type": "generated-index",
-    "description": "Tout savoir sur la structure de l'étage"
+    "description": "Everything about floor structure"
   }
 }

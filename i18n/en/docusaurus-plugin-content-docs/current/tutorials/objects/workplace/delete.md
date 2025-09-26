@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+pagination_label: "Delete a Workstation"
+title: "Delete a Workstation"
 ---
 # Delete a Workstation
 

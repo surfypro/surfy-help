@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+pagination_label: "Delete a District Assignment"
+title: "Delete a District Assignment"
 ---
 
 # Delete a District Assignment

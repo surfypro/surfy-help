@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+pagination_label: "Create a Floor Scale"
+title: "Create a Floor Scale"
 ---
 
 

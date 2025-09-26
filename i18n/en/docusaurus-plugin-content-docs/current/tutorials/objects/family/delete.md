@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+pagination_label: "Delete a Furniture Family"
+title: "Delete a Furniture Family"
 ---
 
 # Delete an Object Type Family

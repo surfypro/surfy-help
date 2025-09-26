@@ -30,7 +30,7 @@ Affecter des personnes en masse [aux postes de travail](/docs/tutorials/affectat
 
 [Visualiser les calques d'affectation aux quartiers](/docs/tutorials/dimensionTypeToBuilding/create.md#visualiser-les-calques-daffectation)
 
-[Affecter les personnes aux quartiers](/docs/tutorials/affectations/dimensiontoperson/create.md)
+[Affecter les personnes aux quartiers](/docs/tutorials/affectations/dimensionToPerson/create.md)
 
 [Lister les affectations aux quartiers](/docs/courses/find/listfindcourse.md)
 

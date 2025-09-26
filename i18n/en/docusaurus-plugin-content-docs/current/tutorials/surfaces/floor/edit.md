@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+pagination_label: "Edit a Floor"
+title: "Edit a Floor"
 ---
 
 # Modify a Floor

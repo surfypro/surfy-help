@@ -1,9 +1,9 @@
 {
-  "label": "Les Relations",
+  "label": "Relationships",
   "position": 3,
   "link": {
     "slug": "relationship",
     "type": "generated-index",
-    "description": "Les relations aux personnes dans Surfy"
+    "description": "Relationships with people in Surfy"
   }
 }

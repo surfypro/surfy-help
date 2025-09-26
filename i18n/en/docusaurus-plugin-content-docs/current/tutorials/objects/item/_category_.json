@@ -1,9 +1,9 @@
 {
-  "label": "Les Objets",
+  "label": "Objects",
   "position": 3,
   "link": {
     "slug": "item",
     "type": "generated-index",
-    "description": "Tout savoir sur la gestion des objets"
+    "description": "Everything about object management"
   }
 }

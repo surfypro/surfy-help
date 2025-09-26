@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+pagination_label: "Create a Workstation Type"
+title: "Create a Workstation Type"
 ---
 # Create a Workstation Type
 
@@ -29,37 +31,36 @@ To compose a workstation type, the object types composing the workstation type m
  -  leaving the page saves the composition
  -  the created workstation type is available for adding a workstation in spaces.
 
-:::tip Good to know
-The workstation type composition is saved automatically when leaving the page.
+
+## Compose a Workstation with "Physical" Objects
+
+From the workstation type composition page,
+
+-   click on the "List object types" icon to display on the right the list of used object types
+-   checking the "physical inventory" box of an object type used in the workstation composition allows you to define objects to be declared "physical", allowing the attribution of a <P code="item:reference" />, a <P code="item:code" /> and a <P code="item:purchaseDate" /> on the corresponding object. This allows creating an inventory of unique objects.
+
+By default, objects used in the composition of a workstation type cannot be referenced and are subject to simple counting.
+
+### Creating Physical Objects
+
+Once the "Physical inventory" box is checked, it is necessary to create the associated physical objects.
+
+For this, from the left menu,
+
+-   click on "Administration" then "Companies" then "Reports and actions for data quality for companies" then "inventory consistency"
+-   the list of physical objects to create appears, classified by workstation type.
+-   click on the "CREATE" box to create the physical objects of the corresponding workstation type.
+
+:::tip AT THIS STAGE
+If a workstation type is composed of objects that were previously "physical" but have been unchecked in the workstation type composition, the corresponding workstations will be proposed for deletion.<br />
+Clicking on "DELETE" will only delete the "Physical" objects but will not delete the corresponding workstations, which will remain present but not referenceable.
 :::
 
-## Workstation Type Properties
+### Fill in Information for Created "Physical" Objects
 
-A workstation type has the following properties:
+From the plan, 
 
--   <P code="workplaceType:name" />: name of the workstation type
--   <P code="workplaceType:color" />: color of the workstation type on plans
--   <P code="workplaceType:workplaceTypeItemTypes" />: object types composing the workstation type
--   <P code="workplaceType:size" />: surface of the workstation type (calculated automatically from the composition)
+-   click on a concerned workstation, the workstation sheet appears
+-   in the "physical inventory of the workstation", click on the "pencil" icon opposite the "physical" object to be filled in
 
-## Workstation Type Composition
-
-A workstation type is composed of one or more object types placed relative to each other and grouped into a single entity.
-
-The composition allows you to:
-
--   define the layout of objects in the workstation
--   define the number of seats for each object type
--   define the relative position of objects
--   define the rotation of objects
-
-## Workstation Type Usage
-
-Once created, a workstation type can be used to:
-
--   add workstations in spaces
--   duplicate workstations
--   modify workstation properties
--   delete workstations
-
-The workstation type composition is automatically applied to all workstations of this type.
+The object information (<P code="item:reference" />, <P code="item:code" /> and <P code="item:purchaseDate" />) is accessible on the right side of the screen and can be filled in or modified.

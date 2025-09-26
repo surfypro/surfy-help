@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+pagination_label: "Edit an Organization"
+title: "Edit an Organization"
 ---
 # Modify an Organization
 

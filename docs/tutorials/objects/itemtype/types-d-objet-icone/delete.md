@@ -1,8 +1,10 @@
 ---
 sidebar_position: 3
+pagination_label: "Delete an Icon Object Type"
+title: "Delete an Icon Object Type"
 ---
 
-# Supprimer un type d'objet Icône
+# Delete an Icon Object Type
 
 :::danger Attention
 Supprimer un type d'objet Icône supprime toutes les icônes issues de ce type d'objet sur l'ensemble des bâtiments.

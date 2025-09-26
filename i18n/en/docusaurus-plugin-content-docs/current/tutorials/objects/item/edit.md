@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+pagination_label: "Edit an Object"
+title: "Edit an Object"
 ---
 # Modify an Object
 

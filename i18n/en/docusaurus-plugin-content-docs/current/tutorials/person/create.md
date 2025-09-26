@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+pagination_label: "Create a Person"
+title: "Create a Person"
 ---
 # Create a Person
 

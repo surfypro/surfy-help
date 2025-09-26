@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+pagination_label: "Delete a Workstation Assignment"
+title: "Delete a Workstation Assignment"
 ---
 
 # Delete a Workstation Assignment

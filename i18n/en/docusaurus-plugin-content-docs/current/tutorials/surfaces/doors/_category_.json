@@ -1,9 +1,9 @@
 {
-  "label": "Les Portes et Passages",
+  "label": "Doors and Passages",
   "position": 8,
   "link": {
     "slug": "doors",
     "type": "generated-index",
-    "description": "Tout comprendre sur les portes et les passages dans Surfy"
+    "description": "Everything about doors and passages in Surfy"
   }
 }

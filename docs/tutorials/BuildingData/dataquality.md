@@ -166,4 +166,3 @@ Cocher tout ou partie des cases permet d'extraire la liste en Excel ou de suppri
 Pour modifier un calque ou un type de calque d'analyse, voir le chapitre [Modifier un calque d'analyse](/docs/tutorials/dimensionType/edit).
 
 Pour modifier l'association d'un calque d'analyse à un espace, cliquer dans l'espace sur le plan et "modifier" l'espace.
-

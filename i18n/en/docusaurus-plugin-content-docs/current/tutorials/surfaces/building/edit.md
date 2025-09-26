@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+pagination_label: "Edit a Building"
+title: "Edit a Building"
 ---
 
 # Modify a Building

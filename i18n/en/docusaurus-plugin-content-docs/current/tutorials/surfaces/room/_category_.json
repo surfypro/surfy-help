@@ -1,9 +1,9 @@
 {
-  "label": "Les Espaces",
+  "label": "Spaces",
   "position": 4,
   "link": {
     "slug": "rooms",
     "type": "generated-index",
-    "description": "Tout comprendre sur les espaces dans Surfy"
+    "description": "Everything about spaces in Surfy"
   }
 }

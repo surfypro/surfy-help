@@ -1,9 +1,9 @@
 {
-  "label": "Les Campus",
+  "label": "Campuses",
   "position": 1,
   "link": {
     "slug": "campuses",
     "type": "generated-index",
-    "description": "5 minutes pour comprendre les Campus"
+    "description": "5 minutes to understand Campuses"
   }
 }
