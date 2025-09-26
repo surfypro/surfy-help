@@ -43,7 +43,7 @@ Checking all or part of the boxes allows you to extract the list in Excel or del
 
 This report lists duplicates on last name + first name, employee number or email address of people present in the database.
 
-For more information on handling duplicates, see [Resolve Person Duplicates](/docs/tutorials/person/edit/#resolve-person-duplicates)
+For more information on handling duplicates, see [Resolve Person Duplicates](/docs/tutorials/person/edit/#resolve-person-duplicates).
 
 ### Non-Assignable People with Expired End Date
 
