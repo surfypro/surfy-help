@@ -1,6 +1,6 @@
 # Nouveautés
 
-## 26 Septembre 2025 - v3.4.107
+## 26 Septembre 2025 - v3.4.108
 
 - Le dédoublonnage des personnes fusionne maintenant les réservations des postes de travail et les emplacements de travail.
 
