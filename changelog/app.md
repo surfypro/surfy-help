@@ -1,5 +1,9 @@
 # Nouveautés
 
+## 26 Septembre 2025 - v3.4.107
+
+- Le dédoublonnage des personnes fusionne maintenant les réservations des postes de travail et les emplacements de travail.
+
 ## 21 Septembre 2025 - v3.4.103
 
 - Ajout d'une vue sur l'entreprise permettant d'afficher la liste de tous les rapports de qualité des données.
