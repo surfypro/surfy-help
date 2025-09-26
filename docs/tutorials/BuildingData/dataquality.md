@@ -115,6 +115,38 @@ Ce rapport permet de pointer les incohérences dans les capacités des espaces o
 
 Cocher tout ou partie des cases permet d'extraire la liste en Excel ou de supprimer les espaces cochés. Pour modifier la capacité de l'espace, rechercher et cliquer dans l'espace sur le plan puis modifier l'espace.
 
+### Les échelles non utilisées
+
+Ce rapport liste les échelles qui ne sont pas utilisées sur les étages et qui peuvent être supprimées.
+
+Cocher tout ou partie des cases permet d'extraire la liste en Excel ou de supprimer les échelles cochées.
+
+### Proposition de noms pour les échelles
+
+Ce rapport propose des noms uniques pour les échelles, incluant les étages et bâtiments où elles sont utilisées.
+
+Ceci permet d'avoir un nom d'échelle personnalisé notamment sur les scénarios.
+
+Cocher tout ou partie des cases permet d'extraire la liste en Excel, de supprimer les échelles cochées ou de mettre à jour les échelles avec leur nouveau nom.
+
+### Qualification de segments : Segments des points non uniques
+
+Ce rapport permet de vérifier qu'il n'y a pas de doublon exact de segment sur les mêmes points
+
+### Qualification de segments : Les points des segments sont sur deux étages différents
+
+Ce rapport permet de vérifier que les points des segments sont sur le même étage.
+
+### Point des espaces : Position unique des points
+
+Ce rapport permet de vérifier qu'il n'y a pas de doublon exact de position sur les points.
+
+### Points des espaces : Points non utilisés
+
+Ce rapport permet de voir les points qui ne sont pas utilisés dans les espaces.
+
+Cocher tout ou partie des cases permet d'extraire la liste en Excel ou de supprimer les points cochés
+
 ## Qualité de données des organisations
 
 ### Erreurs sur les organisations des espaces
