@@ -1,6 +1,9 @@
 ---
 sidebar_position: 1
+pagination_label: "Create a Building Assignment"
+title: "Create a Building Assignment"
 ---
+
 # Create a Building Assignment
 
 Building assignment allows you to preselect people by assigning them a building of belonging before assigning them a more precise assignment, in the case of multi-site management for example.

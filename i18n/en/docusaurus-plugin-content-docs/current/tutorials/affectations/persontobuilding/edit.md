@@ -1,6 +1,9 @@
 ---
 sidebar_position: 2
+pagination_label: "Modify a Building Assignment"
+title: "Modify a Building Assignment"
 ---
+
 # Modify a Building Assignment
 
 
@@ -10,11 +13,11 @@ From the home page,
 
 -   click on "Assignments", "Building Assignments", then "List Building Assignments".
 -   search for the building assignment to modify
--   click on the icon at the beginning of the line "see more options for building assignment" then on "Modify Building Assignment"
+-   click on the icon at the beginning of the line "see more options for building assignment" then on "Modify building assignment"
 -   change the person to assign by clicking on the "pencil" of the "Person"
--   change the assignment building by clicking on the "pencil" of the "Building"
+-   change the building assignment by clicking on the "pencil" of the "Building"
 -   count the assignment by checking the corresponding box
--   "Save" to record the modification.
+-   "Save" to save the modification.
 
 The building assignment is modified.
 
