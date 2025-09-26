@@ -199,9 +199,9 @@ const sidebars = {
           type: 'category',
           label: 'Person to Building',
           items: [
-            'affectations/personToBuilding/create',
-            'affectations/personToBuilding/edit',
-            'affectations/personToBuilding/delete',
+            'affectations/persontobuilding/create',
+            'affectations/persontobuilding/edit',
+            'affectations/persontobuilding/delete',
           ],
         },
       ],

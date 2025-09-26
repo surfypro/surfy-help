@@ -17,7 +17,7 @@ sidebar_position: 1
 
 [Assign a Person in Surfy](/en/docs/tutorials/affectations/intro)
 
-Assign people in bulk [to workstations](/en/docs/tutorials/affectations/workplaceaffectation/create#assign-people-to-workstations-by-excel-import), [to spaces](/en/docs/tutorials/affectations/roomaffectation/create#assign-people-to-spaces-by-excel-import) or [to buildings](/en/docs/tutorials/affectations/personToBuilding/create#assign-people-to-building-by-excel-import)
+Assign people in bulk [to workstations](/en/docs/tutorials/affectations/workplaceaffectation/create#assign-people-to-workstations-by-excel-import), [to spaces](/en/docs/tutorials/affectations/roomaffectation/create#assign-people-to-spaces-by-excel-import) or [to buildings](/en/docs/tutorials/affectations/persontobuilding/create#assign-people-to-building-by-excel-import)
 
 
 
