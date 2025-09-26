@@ -90,7 +90,7 @@ Elle est destinée aux [responsables de la Sécurité](https://www.surfy.pro/ug/
 
 La vision "Quartiers" colorie les espaces par les calques d'affectation, regroupe les espaces en quartiers suivant ces calques et permet d'affecter directement les personnes à ces quartiers.
 
-C'est la vision idéale pour le [gestionnaire des affectations](https://www.surfy.pro/ff/affecter-les-collaborateurs), lui permettant de [gérer l'affectation aux quartiers](/docs/tutorials/affectations/dimensionToPerson/create.md) mais aussi les [affectations fixes aux postes de travail](/docs/tutorials/affectations/workplaceaffectation/create.md).
+C'est la vision idéale pour le [gestionnaire des affectations](https://www.surfy.pro/ff/affecter-les-collaborateurs), lui permettant de [gérer l'affectation aux quartiers](/docs/tutorials/affectations/dimensiontoperson/create.md) mais aussi les [affectations fixes aux postes de travail](/docs/tutorials/affectations/workplaceaffectation/create.md).
 On peut en effet mélanger dans un même espace des postes de travail déclarés en Flex (réservable ou non) et des postes à affectation fixe.
 
 
