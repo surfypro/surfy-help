@@ -12,7 +12,7 @@ Pour utiliser les fonctionnalités de réservation de Surfy, l'entreprise doit a
 Si l'entreprise n'utilise pas encore Surfy, il est nécessaire de prendre contact avec nos équipes via notre [page de contact](https://www.surfy.pro/contact).<br />
 Une plateforme dédiée vous sera attribuée, un bâtiment doit être digitalisé et les personnes créées.<br />
 
-Si les plans de l'entreprise sont déjà digitalisés dans Surfy, les fonctionnalités de réservation sont disponibles dès maintenant, après acceptation par l'entreprise de la licence de réservation auprès de Surfy ([Nous contacter](https://www.surfy.pro/contact)), et après [configuration des quartiers d'affectation](/docs/tutorials/dimensionTypeToBuilding/create) et [affectation des collaborateurs aux quartiers d'affectation](/docs/tutorials/affectations/dimensionToPerson/create).
+Si les plans de l'entreprise sont déjà digitalisés dans Surfy, les fonctionnalités de réservation sont disponibles dès maintenant, après acceptation par l'entreprise de la licence de réservation auprès de Surfy ([Nous contacter](https://www.surfy.pro/contact)), et après [configuration des quartiers d'affectation](/docs/tutorials/dimensiontypetobuilding/create) et [affectation des collaborateurs aux quartiers d'affectation](/docs/tutorials/affectations/dimensiontoperson/create).
 
 
 

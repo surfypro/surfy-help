@@ -2,7 +2,7 @@
   "label": "District Assignments",
   "position": 4,
   "link": {
-    "slug": "dimensionToPerson",
+    "slug": "dimensiontoperson",
     "type": "generated-index",
     "description": "District assignments"
   }

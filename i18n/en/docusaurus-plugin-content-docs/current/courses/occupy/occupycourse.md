@@ -24,17 +24,17 @@ Assign people in bulk [to workstations](/en/docs/tutorials/affectations/workplac
 
 ### Set Up District Assignment
 
-[Create District Assignment Layers](/en/docs/tutorials/dimensionTypeToBuilding/create)
+[Create District Assignment Layers](/en/docs/tutorials/dimensiontypetobuilding/create)
 
-[Qualify Spaces by District Assignment Layers](/en/docs/tutorials/dimensionTypeToBuilding/create#qualify-a-space-by-an-assignment-layer)
+[Qualify Spaces by District Assignment Layers](/en/docs/tutorials/dimensiontypetobuilding/create#qualify-a-space-by-an-assignment-layer)
 
-[View District Assignment Layers](/en/docs/tutorials/dimensionTypeToBuilding/create#view-assignment-layers)
+[View District Assignment Layers](/en/docs/tutorials/dimensiontypetobuilding/create#view-assignment-layers)
 
-[Assign People to Districts](/en/docs/tutorials/affectations/dimensionToPerson/create)
+[Assign People to Districts](/en/docs/tutorials/affectations/dimensiontoperson/create)
 
 [List District Assignments](/en/docs/courses/find/listfindcourse)
 
-[Export Report of People Assigned by District](/en/docs/tutorials/dimensionTypeToBuilding/create#assignment-layer-data-report)
+[Export Report of People Assigned by District](/en/docs/tutorials/dimensiontypetobuilding/create#assignment-layer-data-report)
 
 ## Workstation and Space Booking
 

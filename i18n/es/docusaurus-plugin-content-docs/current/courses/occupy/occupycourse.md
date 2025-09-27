@@ -24,17 +24,17 @@ Affecter des personnes en masse [aux postes de travail](/docs/tutorials/affectat
 
 ### Mettre en place l'affectation aux quartiers
 
-[Créer les calques d'affectation aux quartiers](/docs/tutorials/dimensionTypeToBuilding/create.md)
+[Créer les calques d'affectation aux quartiers](/docs/tutorials/dimensiontypetobuilding/create.md)
 
-[Qualifier les espaces par calques d'affectation aux quartiers](/docs/tutorials/dimensionTypeToBuilding/create.md#qualifier-un-espace-par-un-calque-daffectation)
+[Qualifier les espaces par calques d'affectation aux quartiers](/docs/tutorials/dimensiontypetobuilding/create.md#qualifier-un-espace-par-un-calque-daffectation)
 
-[Visualiser les calques d'affectation aux quartiers](/docs/tutorials/dimensionTypeToBuilding/create.md#visualiser-les-calques-daffectation)
+[Visualiser les calques d'affectation aux quartiers](/docs/tutorials/dimensiontypetobuilding/create.md#visualiser-les-calques-daffectation)
 
-[Affecter les personnes aux quartiers](/docs/tutorials/affectations/dimensionToPerson/create.md)
+[Affecter les personnes aux quartiers](/docs/tutorials/affectations/dimensiontoperson/create.md)
 
 [Lister les affectations aux quartiers](/docs/courses/find/listfindcourse.md)
 
-[Exporter le rapport des personnes affectées par quartier](/docs/tutorials/dimensionTypeToBuilding/create.md#rapport-des-donn%C3%A9es-des-calques-daffectation)
+[Exporter le rapport des personnes affectées par quartier](/docs/tutorials/dimensiontypetobuilding/create.md#rapport-des-donn%C3%A9es-des-calques-daffectation)
 
 ## Réservation des postes de travail et des espaces
 

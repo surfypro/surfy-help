@@ -15,7 +15,7 @@ sidebar_position: 2
     -   [Qualify a Space](/en/docs/tutorials/surfaces/room/create#qualify-a-space)
     -   [Modify a Space](/en/docs/tutorials/surfaces/room/edit)
     -   [Manage Space Analysis Layers](/en/docs/tutorials/dimensionType)
-    -   [Manage Space Assignment Layers (Districts)](/en/docs/tutorials/dimensionTypeToBuilding)
+    -   [Manage Space Assignment Layers (Districts)](/en/docs/tutorials/dimensiontypetobuilding)
 
 ## Layout Spaces
 
