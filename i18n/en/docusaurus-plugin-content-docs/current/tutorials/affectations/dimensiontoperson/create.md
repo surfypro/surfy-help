@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 # Create a District Assignment
 
-To assign people to districts, you must first create assignment layers then define districts by qualifying spaces. See the [Assignment Layers](/en/docs/tutorials/dimensionTypeToBuilding/create) section to learn everything about creating, modifying or deleting an assignment layer.
+To assign people to districts, you must first create assignment layers then define districts by qualifying spaces. See the [Assignment Layers](/en/docs/tutorials/dimensiontypetobuilding/create) section to learn everything about creating, modifying or deleting an assignment layer.
 
 Once districts are created on the plans,
 
