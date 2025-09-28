@@ -19,7 +19,7 @@ Building assignment can be counted in the building's assignment count, or not.
 Building assignments are particularly useful for:
 
 - **Multi-site management** - Assign people to their primary building
-- **Reporting** - Count people per building for occupancy reports
+- **Reporting** - Count people per building for occupancy reports  
 - **Workflow** - Pre-filter people by building before more specific assignments
 
 ## Related Topics
