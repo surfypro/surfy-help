@@ -66,8 +66,8 @@
 ### 🔗 Affectations (4 tutoriels)
 - **Affectation poste de travail** : `<P code="workplaceAffectation:person" />`, `<P code="workplaceAffectation:workplace" />`
 - **Affectation espace** : `<P code="roomAffectation:person" />`, `<P code="roomAffectation:room" />`
-- **Affectation dimension à personne** : `<P code="dimensionToPerson:person" />`
-- **Affectation personne à bâtiment** : `<P code="personToBuilding:person" />`, `<P code="personToBuilding:building" />`
+- **Affectation dimension à personne** : `<P code="dimensiontoperson:person" />`
+- **Affectation personne à bâtiment** : `<P code="persontobuilding:person" />`, `<P code="persontobuilding:building" />`
 
 ### 📅 Réservation (1 tutoriel)
 - **Poste de travail** : Aucune propriété à baliser
@@ -144,10 +144,10 @@
 ### roomAffectation (Affectation espace)
 - **Propriétés de base** : person, room
 
-### dimensionToPerson (Affectation dimension à personne)
+### dimensiontoperson (Affectation dimension à personne)
 - **Propriétés de base** : person
 
-### personToBuilding (Affectation personne à bâtiment)
+### persontobuilding (Affectation personne à bâtiment)
 - **Propriétés de base** : person, building
 
 ---

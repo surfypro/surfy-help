@@ -76,12 +76,12 @@ Traduire tous les tutoriels de la documentation Surfy du français vers l'anglai
 - [ ] `affectations/roomaffectation/create.md` → `affectations/roomaffectation/create.en.md`
 - [ ] `affectations/roomaffectation/edit.md` → `affectations/roomaffectation/edit.en.md`
 - [ ] `affectations/roomaffectation/delete.md` → `affectations/roomaffectation/delete.en.md`
-- [ ] `affectations/dimensionToPerson/create.md` → `affectations/dimensionToPerson/create.en.md`
-- [ ] `affectations/dimensionToPerson/edit.md` → `affectations/dimensionToPerson/edit.en.md`
-- [ ] `affectations/dimensionToPerson/delete.md` → `affectations/dimensionToPerson/delete.en.md`
-- [ ] `affectations/personToBuilding/create.md` → `affectations/personToBuilding/create.en.md`
-- [ ] `affectations/personToBuilding/edit.md` → `affectations/personToBuilding/edit.en.md`
-- [ ] `affectations/personToBuilding/delete.md` → `affectations/personToBuilding/delete.en.md`
+- [ ] `affectations/dimensiontoperson/create.md` → `affectations/dimensiontoperson/create.en.md`
+- [ ] `affectations/dimensiontoperson/edit.md` → `affectations/dimensiontoperson/edit.en.md`
+- [ ] `affectations/dimensiontoperson/delete.md` → `affectations/dimensiontoperson/delete.en.md`
+- [ ] `affectations/persontobuilding/create.md` → `affectations/persontobuilding/create.en.md`
+- [ ] `affectations/persontobuilding/edit.md` → `affectations/persontobuilding/edit.en.md`
+- [ ] `affectations/persontobuilding/delete.md` → `affectations/persontobuilding/delete.en.md`
 
 #### 📅 Réservation (Booking)
 - [ ] `booking/workplace.md` → `booking/workplace.en.md`
