@@ -1,23 +1,21 @@
 ---
 sidebar_position: 3
-pagination_label: "Delete a Building Assignment"
-title: "Delete a Building Assignment"
 ---
 
-# Delete a Building Assignment
+# Supprimer une Affectation à un bâtiment
 
-A person's assignment to a building can be deleted when reassigning the person: existing assignments on the same building are proposed for deletion by default, just "delete selected assignments" to keep only the new assignment.
+L'affectation d'un personne à un bâtiment peut être supprimée lors de la nouvelle affectation de la personne: les affectations existantes sur le même bâtiment sont proposées par défaut à la suppression, il suffit de "supprimer les affectations sélectionnées" pour ne garder que la nouvelle affectation.
 
-## Delete a Person's Assignment to a Building
+## Supprimer l'affectation d'une personne à un bâtiment
 
-From the home page,
+Depuis la page d'accueil,
 
--   click on "Assignments", "Building Assignments", then "List Building Assignments".
--   search for the building assignment to delete
--   check the box at the beginning of the line then click on the icon "Delete Selected Building Assignments" at the top of the page.
+-   cliquer sur "Affectations", "Affectations au bâtiment", puis "Lister les affectations au bâtiment".
+-   rechercher l'affectation au bâtiment à supprimer
+-   cocher la case en début de ligne puis cliquer sur l'icone "Supprimer les affectations au bâtiment sélectionnées" en haut de page
 
-The building assignment is deleted.
+L'affectation au bâtiment est supprimée.
 
-:::tip Good to Know
-From the home page and for updating building information, it is necessary to "reload visible data" by clicking on the icon at the top right of the screen. Once the data is recalculated, refresh with the rotating arrow at the top left of the screen, or with F5 to get the correct information on the building card.
+:::tip Bon à savoir
+Depuis la page d'accueil et pour une mise à jour des informations des bâtiments, il est nécessaire de "recharger les données visibles" en cliquant sur l'icone en haut à droite de l'écran. Une fois les données recalculées, rafraichir par la flèche tournante en haut à gauche de l'écran, ou par F5 afin d'obtenir les bonnes informations sur la fiche du bâtiment.
 :::
