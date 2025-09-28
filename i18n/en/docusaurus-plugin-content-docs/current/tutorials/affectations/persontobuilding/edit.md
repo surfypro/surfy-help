@@ -6,7 +6,6 @@ title: "Modify a Building Assignment"
 
 # Modify a Building Assignment
 
-
 ## Modify a Person's Assignment to a Building
 
 From the home page,
