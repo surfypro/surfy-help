@@ -1,48 +1,48 @@
 ---
 sidebar_position: 1
 ---
-# Créer une Affectation à un bâtiment
+# Create a Building Assignment
 
-L'affectation au bâtiment permet de préselectionner les personnes en leur attribuant un bâtiment d'appartenance avant de leur attribuer une affectation plus précise, dans le cas d'une gestion multi sites par exemple.
-L'affectation au bâtiment peut être comptabilisée dans le nombre d'affectations du bâtiment, ou non.
+Building assignment allows you to pre-select people by assigning them a building before giving them a more specific assignment, for example in the case of multi-site management.
+The building assignment can be counted in the building's assignment count, or not.
 
 
-## Affecter une personne à un bâtiment
+## Assign a person to a building
 
-Pour affecter une personne à un bâtiment, depuis la page d'accueil,
+To assign a person to a building, from the home page,
 
--   cliquer sur "Affectations", "Affectations au bâtiment", puis "Créer une affectation au bâtiment".
--   rechercher la <P code="personToBuilding:person" /> à affecter en cliquant sur le "crayon" de la "Personne"
--   rechercher le <P code="personToBuilding:building" /> d'affectation en cliquant sur le "crayon" du "Bâtiment"
--   comptabiliser l'affectation en cochant la case correspondante
--   valider la création
+-   click on "Assignments", "Building Assignments", then "Create a building assignment".
+-   search for the <P code="personToBuilding:person" /> to assign by clicking on the "pencil" of the "Person"
+-   search for the <P code="personToBuilding:building" /> assignment by clicking on the "pencil" of the "Building"
+-   count the assignment by checking the corresponding box
+-   validate the creation
 
-La personne est affectée au bâtiment.
+The person is assigned to the building.
 
-:::tip Bon à savoir
-Depuis la page d'accueil et pour une mise à jour des informations des bâtiments, il est nécessaire de "recharger les données visibles" en cliquant sur l'icone en haut à droite de l'écran. Une fois les données recalculées, rafraichir par la flèche tournante en haut à gauche de l'écran, ou par F5 afin d'obtenir les bonnes informations sur la fiche du bâtiment.
+:::tip Good to know
+From the home page and for updating building information, it is necessary to "reload visible data" by clicking on the icon at the top right of the screen. Once the data is recalculated, refresh with the rotating arrow at the top left of the screen, or by F5 to get the correct information on the building sheet.
 :::
 
-## Créer et affecter une personne au bâtiment
+## Create and assign a person to the building
 
-Si la personne à affecter au bâtiment n'est pas encore créée dans la base de données de Surfy, on peut la créer et l'affecter en un seul mouvement :
+If the person to be assigned to the building is not yet created in the Surfy database, they can be created and assigned in one move:
 
--   cliquer sur "Affectations", "Affectations au bâtiment", puis "Créer une affectation au bâtiment".
--   rechercher la <P code="personToBuilding:person" /> à affecter en cliquant sur le "crayon" de la "Personne"
--   si la personne n'existe pas dans Surfy, cliquer sur "créer et associer un personne"
--   remplir les informations de création de personne et "valider la création" de la personne
--   rechercher le <P code="personToBuilding:building" /> d'affectation en cliquant sur le "crayon" du "Bâtiment"
--   comptabiliser l'affectation en cochant la case correspondante
--   valider la création
+-   click on "Assignments", "Building Assignments", then "Create a building assignment".
+-   search for the <P code="personToBuilding:person" /> to assign by clicking on the "pencil" of the "Person"
+-   if the person does not exist in Surfy, click on "create and associate a person"
+-   fill in the person creation information and "validate the creation" of the person
+-   search for the <P code="personToBuilding:building" /> assignment by clicking on the "pencil" of the "Building"
+-   count the assignment by checking the corresponding box
+-   validate the creation
 
-La personne est créée et affectée au bâtiment.
+The person is created and assigned to the building.
 
-## Affecter des personnes au bâtiment par import Excel
+## Assign people to the building by Excel import
 
--   cliquer sur "Affectations", "Affectations au bâtiment", puis "Importer des affectations au bâtiment".
--   composer le gabarit d'import en cliquant sur l'icone " Voir l'aide sur l'import de données pour les affectations au bâtiment" en haut à droite de l'écran
--   remplir le fichier Excel d'import : identification personne, identification bâtiment.
--   importer les colonnes nécessaires en copiant collant dans la case prévue à cet effet
--   "Comparer" puis "Créer" les affectations au bâtiment listées.
+-   click on "Assignments", "Building Assignments", then "Import building assignments".
+-   compose the import template by clicking on the "View help on data import for building assignments" icon at the top right of the screen
+-   fill in the Excel import file: person identification, building identification.
+-   import the necessary columns by copying and pasting into the box provided for this purpose
+-   "Compare" then "Create" the listed building assignments.
 
-Les affectations au bâtiment sont créées.
+The building assignments are created.
