@@ -28,11 +28,11 @@ const config: Config = {
     localeConfigs: {
       fr: {
         label: 'Français',
-        // path: '/',
+        path: '/',
       },
       en: {
         label: 'English',
-        // path: '/en',
+        path: '/en',
         htmlLang: 'en-US',
       }
       // es: {
