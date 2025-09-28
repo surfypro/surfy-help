@@ -80,9 +80,9 @@ Créer une version anglaise complète du site help.surfy.pro en traduisant tous 
 - [ ] `affectations/dimensionToPerson/create.md` → `docs-en/tutorials/affectations/dimensionToPerson/create.md`
 - [ ] `affectations/dimensionToPerson/edit.md` → `docs-en/tutorials/affectations/dimensionToPerson/edit.md`
 - [ ] `affectations/dimensionToPerson/delete.md` → `docs-en/tutorials/affectations/dimensionToPerson/delete.md`
-- [ ] `affectations/personToBuilding/create.md` → `docs-en/tutorials/affectations/personToBuilding/create.md`
-- [ ] `affectations/personToBuilding/edit.md` → `docs-en/tutorials/affectations/personToBuilding/edit.md`
-- [ ] `affectations/personToBuilding/delete.md` → `docs-en/tutorials/affectations/personToBuilding/delete.md`
+- [ ] `affectations/persontobuilding/create.md` → `docs-en/tutorials/affectations/persontobuilding/create.md`
+- [ ] `affectations/persontobuilding/edit.md` → `docs-en/tutorials/affectations/persontobuilding/edit.md`
+- [ ] `affectations/persontobuilding/delete.md` → `docs-en/tutorials/affectations/persontobuilding/delete.md`
 
 #### 📅 Booking (2 tutoriels)
 - [ ] `booking/workplace.md` → `docs-en/tutorials/booking/workplace.md`
@@ -105,9 +105,9 @@ Créer une version anglaise complète du site help.surfy.pro en traduisant tous 
 - [ ] `dimensionType/create.md` → `docs-en/tutorials/dimensionType/create.md`
 - [ ] `dimensionType/edit.md` → `docs-en/tutorials/dimensionType/edit.md`
 - [ ] `dimensionType/delete.md` → `docs-en/tutorials/dimensionType/delete.md`
-- [ ] `dimensionTypeToBuilding/create.md` → `docs-en/tutorials/dimensionTypeToBuilding/create.md`
-- [ ] `dimensionTypeToBuilding/edit.md` → `docs-en/tutorials/dimensionTypeToBuilding/edit.md`
-- [ ] `dimensionTypeToBuilding/delete.md` → `docs-en/tutorials/dimensionTypeToBuilding/delete.md`
+- [ ] `dimensionTypetobuilding/create.md` → `docs-en/tutorials/dimensionTypetobuilding/create.md`
+- [ ] `dimensionTypetobuilding/edit.md` → `docs-en/tutorials/dimensionTypetobuilding/edit.md`
+- [ ] `dimensionTypetobuilding/delete.md` → `docs-en/tutorials/dimensionTypetobuilding/delete.md`
 
 ## 🏗️ Site anglais créé
 
