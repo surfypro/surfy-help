@@ -17,7 +17,7 @@ sidebar_position: 1
 
 [Affecter une personne dans Surfy](/docs/tutorials/affectations/intro.md)
 
-Affecter des personnes en masse [aux postes de travail](/docs/tutorials/affectations/workplaceaffectation/create.md#affecter-des-personnes-aux-postes-de-travail-par-import-excel), [aux espaces](/docs/tutorials/affectations/roomaffectation/create.md#affecter-des-personnes-aux-espaces-par-import-excel) ou [aux bâtiments](/docs/tutorials/affectations/personToBuilding/create.md#affecter-des-personnes-au-bâtiment-par-import-excel)
+Affecter des personnes en masse [aux postes de travail](/docs/tutorials/affectations/workplaceaffectation/create.md#affecter-des-personnes-aux-postes-de-travail-par-import-excel), [aux espaces](/docs/tutorials/affectations/roomaffectation/create.md#affecter-des-personnes-aux-espaces-par-import-excel) ou [aux bâtiments](/docs/tutorials/affectations/persontobuilding/create.md#affecter-des-personnes-au-bâtiment-par-import-excel)
 
 
 
