@@ -1,9 +1,0 @@
-{
-  "label": "Asignaciones de edificios",
-  "position": 5,
-  "link": {
-    "slug": "persontobuilding",
-    "type": "generated-index",
-    "description": "Las asignaciones de edificios"
-  }
-}
