@@ -1,6 +1,6 @@
 # Nouveautés
 
-## 6 Octobre 2025 - v3.4.109
+## 6 Octobre 2025 - v3.4.110
 
 - Les options du plan pour zoomer et dézoomer avec les boutons en haut du plan effectuent désormais le zoom par rapport au centre du plan visible par l'utilisateur.
 - Toutes les visions affichent désormais les noms d'affichage des espaces en plus des noms techniques des espaces (nom fusionné).
