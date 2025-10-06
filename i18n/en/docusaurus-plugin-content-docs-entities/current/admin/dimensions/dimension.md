@@ -1,10 +1,10 @@
 ---
 search_rank: 0.5
 ---    
-# Analysis layer
+# Analysis Layer
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses.
+An analysis layer allows categorizing and analyzing spaces according to different criteria for statistical analysis and reporting
 
 <OH code="dimension"/>
 
@@ -13,9 +13,9 @@ An analysis layer allows spaces to be categorized and analyzed according to diff
 
 ## Required Properties {#properties-mandatory}
     
-### Name of the analysis layer {#name}
+### Analysis Layer Name {#name}
 
-Useful to differentiate the layer among others
+Useful for differentiating the layer among others
 
 *Technical name:* ```name```
 <PH code="dimension:name"/>
@@ -25,26 +25,26 @@ Useful to differentiate the layer among others
 
 ## Basic properties {#properties-base}
     
-### Booking surcharge rate {#crowded-for-booking-rate}
+### Carbon Footprint per Square Meter {#carbon-footprint-per-meter}
 
-The reservation overload rate allows you to define the occupancy percentage beyond which a space is considered overloaded for reservations.
-
-*Technical name:* ```crowdedForBookingRate```
-<PH code="dimension:crowdedForBookingRate"/>
-
-### Carbon footprint per square meter {#carbon-footprint-per-meter}
-
-The carbon footprint per square meter calculates the carbon footprint in kilograms of CO2 of an analysis layer per square meters
+The carbon footprint per square meter allows calculating the carbon footprint in kilograms of CO2 of an analysis layer per square meters
 
 *Technical name:* ```carbonFootprintPerMeter```
 <PH code="dimension:carbonFootprintPerMeter"/>
 
 ### Color {#color}
 
-The analysis layer color allows you to differentiate spaces on the plan
+The analysis layer color allows differentiating spaces on the plan
 
 *Technical name:* ```color```
 <PH code="dimension:color"/>
+
+### Crowding Rate for Booking {#crowded-for-booking-rate}
+
+The crowding rate for booking allows defining the occupancy percentage beyond which a space is considered crowded for bookings
+
+*Technical name:* ```crowdedForBookingRate```
+<PH code="dimension:crowdedForBookingRate"/>
 
 ### Manual People Count {#manual-people-count}
 
@@ -60,9 +60,9 @@ The analysis layer color allows you to differentiate spaces on the plan
 *Technical name:* ```peopleCount```
 <PH code="dimension:peopleCount"/>
 
-### Numerical value {#value}
+### Numeric Value {#value}
 
-The value can be used to associate the layer with a numerical value in order to be able to carry out analytical statistics
+The value can be used to associate the layer with a numeric value to perform analytical statistics
 
 *Technical name:* ```value```
 <PH code="dimension:value"/>
@@ -73,6 +73,13 @@ The total number of people assigned, either directly assigned to spaces or throu
 
 *Technical name:* ```totalPeopleCount```
 <PH code="dimension:totalPeopleCount"/>
+
+### Workplaces Bookable Only Via Dimension {#workplaces-bookable-only-via-dimension}
+
+When enabled, workplaces in this dimension can only be booked via direct assignment to the dimension, and are excluded from floor-based bookings
+
+*Technical name:* ```workplacesBookableOnlyViaDimension```
+<PH code="dimension:workplacesBookableOnlyViaDimension"/>
 
     
 

@@ -103,16 +103,16 @@ An analysis layer association to spaces allows you to define specific analysis l
 *Technical name:* ```dimensionRoomUpdatedBies```
 <PH code="userCompany:dimensionRoomUpdatedBies"/>
 
-### Analysis layers {#dimension-created-bies}
+### Analysis Layers {#dimension-created-bies}
 
-An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses.
+An analysis layer allows categorizing and analyzing spaces according to different criteria for statistical analysis and reporting
 
 *Technical name:* ```dimensionCreatedBies```
 <PH code="userCompany:dimensionCreatedBies"/>
 
-### Analysis layers {#dimension-updated-bies}
+### Analysis Layers {#dimension-updated-bies}
 
-An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses.
+An analysis layer allows categorizing and analyzing spaces according to different criteria for statistical analysis and reporting
 
 *Technical name:* ```dimensionUpdatedBies```
 <PH code="userCompany:dimensionUpdatedBies"/>

@@ -176,9 +176,9 @@ The total number of bookable workstations in this analysis layer for this buildi
 
 ## Associated entities (unique) {#properties-belongs-to}
 
-### Analysis layer {#dimension}
+### Analysis Layer {#dimension}
 
-An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses.
+An analysis layer allows categorizing and analyzing spaces according to different criteria for statistical analysis and reporting
 
 *Technical name:* ```dimension```
 <PH code="dimensionBuilding:dimension"/>

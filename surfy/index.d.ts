@@ -15,7 +15,7 @@ declare type ApiUserToJupRolePropertyTypeRecord = Record<ApiUserToJupRolePropert
 
 export declare const appVersion: string;
 
-declare type AuthentificationConnectionPropertyNames = 'id' | 'name' | 'createdAt' | 'updatedAt' | 'externalId' | 'userRegistrationTenantRules';
+declare type AuthentificationConnectionPropertyNames = 'id' | 'name' | 'publicIdpCertificate' | 'createdAt' | 'updatedAt' | 'externalId' | 'userRegistrationTenantRules';
 
 declare type AuthentificationConnectionPropertyTypeRecord = Record<AuthentificationConnectionPropertyNames, IPropertyTypeDefinition>;
 
@@ -33,7 +33,7 @@ declare type CampusPropertyNames = 'id' | 'name' | 'color' | 'address' | 'roomsA
 
 declare type CampusPropertyTypeRecord = Record<CampusPropertyNames, IPropertyTypeDefinition>;
 
-declare type CompanyPropertyNames = 'id' | 'name' | 'logoPath' | 'iconPath' | 'proxyImages' | 'workingDaysCount' | 'enablePathfinding' | 'planningNumberOfDays' | 'enableCrowdedDimensionForBooking' | 'createdAt' | 'updatedAt' | 'externalId' | 'companyTypeId' | 'companyType' | 'userCompanies' | 'buildingTypes' | 'buildings' | 'companyWorkingLocations';
+declare type CompanyPropertyNames = 'id' | 'name' | 'logoPath' | 'iconPath' | 'proxyImages' | 'workingDaysCount' | 'enablePathfinding' | 'planningNumberOfDays' | 'enableCrowdedDimensionForBooking' | 'enableBuildingBookingWhenAllDimensionsAreCrowded' | 'createdAt' | 'updatedAt' | 'externalId' | 'companyTypeId' | 'companyType' | 'userCompanies' | 'buildingTypes' | 'buildings' | 'companyWorkingLocations';
 
 declare type CompanyPropertyTypeRecord = Record<CompanyPropertyNames, IPropertyTypeDefinition>;
 
@@ -79,7 +79,7 @@ declare type CostCenterPropertyTypeRecord = Record<CostCenterPropertyNames, IPro
 
 declare type DaySlotType = 'am' | 'pm' | 'all' | 'custom';
 
-declare type DimensionBuildingPropertyNames = 'id' | 'dimensionPeopleCount' | 'roomsArea' | 'roomsCount' | 'workplacesCount' | 'workplacesRatio' | 'peopleCount' | 'seatsCount' | 'peopleRatio' | 'occupancyRate' | 'expansionRatio' | 'freeWorkplacesCount' | 'flexWorkplacesCount' | 'sharedWorkplacesCount' | 'sharedWorkplacesRatio' | 'transitWorkplacesCount' | 'flexRatio' | 'seatsPeopleRatio' | 'totalPeopleCount' | 'carbonFootprint' | 'totalCapacityCount' | 'totalCapacityWorkplaceCountRatio' | 'createdAt' | 'updatedAt' | 'externalId' | 'dimensionId' | 'dimension' | 'dimensionTypeId' | 'dimensionType' | 'buildingId' | 'building' | 'userCompanyCreatedById' | 'userCompanyCreatedBy' | 'userCompanyUpdatedById' | 'userCompanyUpdatedBy' | 'companyId' | 'company';
+declare type DimensionBuildingPropertyNames = 'id' | 'dimensionPeopleCount' | 'bookableWorkplacesCount' | 'roomsArea' | 'roomsCount' | 'workplacesCount' | 'workplacesRatio' | 'peopleCount' | 'seatsCount' | 'peopleRatio' | 'occupancyRate' | 'expansionRatio' | 'freeWorkplacesCount' | 'flexWorkplacesCount' | 'sharedWorkplacesCount' | 'sharedWorkplacesRatio' | 'transitWorkplacesCount' | 'flexRatio' | 'seatsPeopleRatio' | 'totalPeopleCount' | 'carbonFootprint' | 'totalCapacityCount' | 'totalCapacityWorkplaceCountRatio' | 'createdAt' | 'updatedAt' | 'externalId' | 'dimensionId' | 'dimension' | 'dimensionTypeId' | 'dimensionType' | 'buildingId' | 'building' | 'userCompanyCreatedById' | 'userCompanyCreatedBy' | 'userCompanyUpdatedById' | 'userCompanyUpdatedBy' | 'companyId' | 'company';
 
 declare type DimensionBuildingPropertyTypeRecord = Record<DimensionBuildingPropertyNames, IPropertyTypeDefinition>;
 
@@ -87,7 +87,7 @@ declare type DimensionFloorPropertyNames = 'id' | 'roomsArea' | 'roomsCount' | '
 
 declare type DimensionFloorPropertyTypeRecord = Record<DimensionFloorPropertyNames, IPropertyTypeDefinition>;
 
-declare type DimensionPropertyNames = 'id' | 'name' | 'color' | 'value' | 'peopleCount' | 'totalPeopleCount' | 'manualPeopleCount' | 'carbonFootprintPerMeter' | 'crowdedForBookingRate' | 'createdAt' | 'updatedAt' | 'externalId' | 'dimensionTypeId' | 'dimensionType' | 'userCompanyCreatedById' | 'userCompanyCreatedBy' | 'userCompanyUpdatedById' | 'userCompanyUpdatedBy' | 'dimensionRooms' | 'dimensionFloors' | 'dimensionBuildings' | 'dimensionToPeople' | 'personToDimensionBookings' | 'companyId' | 'company';
+declare type DimensionPropertyNames = 'id' | 'name' | 'color' | 'value' | 'peopleCount' | 'totalPeopleCount' | 'manualPeopleCount' | 'carbonFootprintPerMeter' | 'crowdedForBookingRate' | 'workplacesBookableOnlyViaDimension' | 'createdAt' | 'updatedAt' | 'externalId' | 'dimensionTypeId' | 'dimensionType' | 'userCompanyCreatedById' | 'userCompanyCreatedBy' | 'userCompanyUpdatedById' | 'userCompanyUpdatedBy' | 'dimensionRooms' | 'dimensionFloors' | 'dimensionBuildings' | 'dimensionToPeople' | 'personToDimensionBookings' | 'companyId' | 'company';
 
 declare type DimensionPropertyTypeRecord = Record<DimensionPropertyNames, IPropertyTypeDefinition>;
 
@@ -709,6 +709,7 @@ declare namespace Surfy {
         enablePathfinding?: boolean;
         planningNumberOfDays?: number;
         enableCrowdedDimensionForBooking?: boolean;
+        enableBuildingBookingWhenAllDimensionsAreCrowded?: boolean;
         createdAt?: string;
         updatedAt?: string;
         externalId?: string;
@@ -1726,6 +1727,7 @@ declare namespace Surfy {
         manualPeopleCount?: number;
         carbonFootprintPerMeter?: number;
         crowdedForBookingRate?: number;
+        workplacesBookableOnlyViaDimension?: boolean;
         createdAt?: string;
         updatedAt?: string;
         externalId?: string;
@@ -1802,6 +1804,7 @@ declare namespace Surfy {
     interface DimensionBuilding extends IEntity {
         id: number;
         dimensionPeopleCount: number;
+        bookableWorkplacesCount?: number;
         roomsArea: number;
         roomsCount: number;
         workplacesCount: number;
@@ -2824,6 +2827,7 @@ declare namespace Surfy {
     interface AuthentificationConnection extends IEntity {
         id: number;
         name: string;
+        publicIdpCertificate?: string;
         createdAt?: string;
         updatedAt?: string;
         externalId?: string;

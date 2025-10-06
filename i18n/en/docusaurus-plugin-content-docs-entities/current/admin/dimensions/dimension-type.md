@@ -73,9 +73,9 @@ An analysis layer association to spaces allows you to define specific analysis l
 *Technical name:* ```dimensionRooms```
 <PH code="dimensionType:dimensionRooms"/>
 
-### Analysis layers {#dimensions}
+### Analysis Layers {#dimensions}
 
-An analysis layer allows spaces to be categorized and analyzed according to different criteria for statistical and reporting analyses.
+An analysis layer allows categorizing and analyzing spaces according to different criteria for statistical analysis and reporting
 
 *Technical name:* ```dimensions```
 <PH code="dimensionType:dimensions"/>

@@ -60,6 +60,13 @@ Le nombre total de personnes affectées, soit directement affécté aux espaces,
 *Nom technique:* ```totalPeopleCount```
 <PH code="dimension:totalPeopleCount"/>
 
+### Postes réservables uniquement via la dimension {#workplaces-bookable-only-via-dimension}
+
+Lorsque activé, les postes de travail de cette dimension ne peuvent être réservés que via une assignation directe à la dimension, et sont exclus des réservations par étage
+
+*Nom technique:* ```workplacesBookableOnlyViaDimension```
+<PH code="dimension:workplacesBookableOnlyViaDimension"/>
+
 ### Taux de surcharge pour la réservation {#crowded-for-booking-rate}
 
 Le taux de surcharge pour la réservation permet de définir le pourcentage d'occupation au-delà duquel un espace est considéré comme surchargé pour les réservations

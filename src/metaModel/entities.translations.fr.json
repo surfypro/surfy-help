@@ -4474,6 +4474,10 @@
                     "label": "Taux de surcharge pour la réservation",
                     "description": "Le taux de surcharge pour la réservation permet de définir le pourcentage d'occupation au-delà duquel un espace est considéré comme surchargé pour les réservations"
                 },
+                "workplacesBookableOnlyViaDimension": {
+                    "label": "Postes réservables uniquement via la dimension",
+                    "description": "Lorsque activé, les postes de travail de cette dimension ne peuvent être réservés que via une assignation directe à la dimension, et sont exclus des réservations par étage"
+                },
                 "createdAt": {
                     "label": "Date de création",
                     "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
