@@ -8532,6 +8532,10 @@
                     "label": "Last name",
                     "description": "Authentication connection name"
                 },
+                "publicIdpCertificate": {
+                    "label": "IDP Public Certificate",
+                    "description": "Identity Provider (IDP) public certificate used for SAML signature validation"
+                },
                 "createdAt": {
                     "label": "Creation date",
                     "description": "Date of creation in Surfy, allows you to know the history of creation in Surfy"

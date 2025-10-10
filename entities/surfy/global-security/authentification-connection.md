@@ -23,6 +23,16 @@ Nom de la connexion d'authentification
     
 
 
+## Propriétés de base {#properties-base}
+    
+### Certificat public IDP {#public-idp-certificate}
+
+Certificat public du fournisseur d'identité (IDP) utilisé pour la validation des signatures SAML
+
+*Nom technique:* ```publicIdpCertificate```
+<PH code="authentificationConnection:publicIdpCertificate"/>
+
+    
 
 
 

@@ -23,6 +23,16 @@ Authentication connection name
     
 
 
+## Basic properties {#properties-base}
+    
+### IDP Public Certificate {#public-idp-certificate}
+
+Identity Provider (IDP) public certificate used for SAML signature validation
+
+*Technical name:* ```publicIdpCertificate```
+<PH code="authentificationConnection:publicIdpCertificate"/>
+
+    
 
 
 
