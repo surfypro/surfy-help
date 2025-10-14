@@ -47,7 +47,7 @@ Imaginons un collaborateur avec ces zones prioritaires :
 - **Zone Développement** (priorité 2) - 90% d'occupation (surchargée)  
 - **Zone Commercial** (priorité 3) - 88% d'occupation (surchargée)
 
-**Sans activation** : Le collaborateur ne peut pas réserver car toutes les zones sont surchargées.
+**Sans activation** : Le collaborateur ne peut pas réserver en dehors de ces quartiers où toutes les zones sont surchargées.
 
 **Avec activation** : Le système affiche :
 1. **Message informatif** : "Toutes les zones sont surchargées. Vous pouvez réserver directement dans le bâtiment en choisissant un étage."
