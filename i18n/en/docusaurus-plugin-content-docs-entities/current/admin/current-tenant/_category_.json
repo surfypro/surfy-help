@@ -1,0 +1,8 @@
+{
+  "label": "current-tenant",
+  "position": 11,
+  "link": {
+    "slug": "current-tenant",
+    "type": "generated-index"
+  }
+}

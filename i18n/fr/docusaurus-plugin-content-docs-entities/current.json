@@ -146,5 +146,9 @@
   "sidebar.help-sidebar.category.booking": {
     "message": "Réservations",
     "description": "The label for category booking in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.current-tenant": {
+    "message": "menuLeft currentTenant",
+    "description": "no-description"
   }
 }

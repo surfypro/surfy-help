@@ -12,6 +12,7 @@
     - La suppression de l’échelle nécessite désormais une confirmation.
 - Les calques d’affectation sur plusieurs étages du même bâtiment sont maintenant réservables.
 - Le menu d’administration possède maintenant un sous-menu permettant d’accéder directement à l’entreprise de la plateforme.
+- Lors de la création ou de la modification d'une entreprise, le format du nom est désormais imposé : il doit contenir uniquement des lettres minuscules, des chiffres et des tirets.
  -->
 
 
