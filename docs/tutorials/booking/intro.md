@@ -42,7 +42,7 @@ Pour configurer la fenêtre de réservation, depuis le menu de gauche,
 :::tip A CE STADE
 Cocher la case "Activer la surcharge des dimensions pour la réservation" permet d'activer la gestion de priorités sur les quartiers de réservation.
 Si le quartier de réservation d'un collaborateur est saturé, Surfy peut proposer au collaborateur de réserver sur un autre quartier dont la priorité est inférieure.<br />
-Cocher la case "Activer la réservation par bâtiment quand toutes les dimensions sont surchargées" permet d'activer la réservation sur l'ensemble du bâtiment si les quartiers de réservation d'un collaborateur sont tous saturés. Dans ce cas, seuls les quartiers cochés "Postes réservables uniquement via la dimension" ne seront pas accessibles à la réservation. 
+Cocher la case "Activer la réservation par bâtiment quand toutes les dimensions sont surchargées" permet d'activer la réservation sur l'ensemble du bâtiment si les quartiers de réservation d'un collaborateur sont tous saturés. Dans ce cas, seuls les quartiers cochés "Postes réservables uniquement via la dimension" ne seront pas accessibles à la réservation. Voir le chapitre [Fonctionnalité de réservation par bâtiment quand toutes les dimensions sont surchargées](/entities/user-guide/booking/enable-building-booking-when-all-dimensions-are-crowded).
 :::
 
 -   sauvegarder la modification

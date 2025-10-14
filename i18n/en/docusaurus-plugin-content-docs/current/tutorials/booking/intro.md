@@ -44,7 +44,7 @@ To configure the booking window, from the left menu,
 :::tip AT THIS STAGE
 Checking the "Enable dimension overload for booking" box allows you to activate priority management on booking districts.
 If a collaborator's booking district is saturated, Surfy can offer the collaborator to book on another district with lower priority.<br />
-Checking the "Enable booking by building when all dimensions are overloaded" box allows you to enable booking for the entire building if a collaborator's booking areas are all full. In this case, only areas checked with "Positions bookable only via dimension" will be inaccessible for booking.
+Checking the "Enable booking by building when all dimensions are overloaded" box allows you to enable booking for the entire building if a collaborator's booking areas are all full. In this case, only areas checked with "Positions bookable only via dimension" will be inaccessible for booking. See chapter [Enable Building Booking When All Dimensions Are Crowded Feature](/en/entities/user-guide/booking/enable-building-booking-when-all-dimensions-are-crowded/)
 :::
 
 -   save the modification
