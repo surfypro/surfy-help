@@ -64,7 +64,7 @@ To modify the overload rate of a booking district, from the left menu,
 -   save the modifications.
 
 :::tip GOOD TO KNOW
-Checking the "Workplaces bookable only via dimension" box for a layer excludes access to reservations for collaborators not directly assigned to this layer, who will not be able to book in this district if their original district is overloaded. Collaborators assigned to the layer retain all options if the district is saturated. This option prevents a district from being saturated in the case of opening to the entire building following saturation
+Checking the "Workplaces bookable only via dimension" box for a layer excludes access to reservations for collaborators not directly assigned to this layer, who will not be able to book in this district if their original district is overloaded. Collaborators assigned to the layer retain all options if the district is saturated. This option prevents a district from being saturated in the case of opening to the entire building following saturation.
 :::
 
 Each collaborator assignment to a district has a priority number.<br />

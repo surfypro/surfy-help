@@ -62,7 +62,7 @@ Pour modifier le taux de surcharge d'un quartier de réservation, depuis le menu
 -   sauvegarder les modifications.
 
 :::tip BON A SAVOIR
-Cocher la case "Postes réservables uniquement via la dimension" d'un calque exclut l'accès à la réservation aux collaborateurs non affectés directement à ce calque, qui ne pourront pas réserver dans ce quartier en cas de surcharge de leur quartier d'origine. Les collaborateurs affectés au calque gardent toutes les options en cas de saturation du quartier. Cette option permet de ne pas saturer un quartier dans le cas de l'ouverture à l'ensemble du bâtiment suite à saturation
+Cocher la case "Postes réservables uniquement via la dimension" d'un calque exclut l'accès à la réservation aux collaborateurs non affectés directement à ce calque, qui ne pourront pas réserver dans ce quartier en cas de surcharge de leur quartier d'origine. Les collaborateurs affectés au calque gardent toutes les options en cas de saturation du quartier. Cette option permet de ne pas saturer un quartier dans le cas de l'ouverture à l'ensemble du bâtiment suite à saturation.
 :::
 
 
