@@ -41,7 +41,8 @@ Pour configurer la fenêtre de réservation, depuis le menu de gauche,
 
 :::tip A CE STADE
 Cocher la case "Activer la surcharge des dimensions pour la réservation" permet d'activer la gestion de priorités sur les quartiers de réservation.
-Si le quartier de réservation d'un collaborateur est saturé, Surfy peut proposer au collaborateur de réserver sur un autre quartier dont la priorité est inférieure.
+Si le quartier de réservation d'un collaborateur est saturé, Surfy peut proposer au collaborateur de réserver sur un autre quartier dont la priorité est inférieure.<br />
+Cocher la case "Activer la réservation par bâtiment quand toutes les dimensions sont surchargées" permet d'activer la réservation sur l'ensemble du bâtiment si les quartiers de réservation d'un collaborateur sont tous saturés. Dans ce cas, seuls les quartiers cochés "Postes réservables uniquement via la dimension" ne seront pas accessibles à la réservation. 
 :::
 
 -   sauvegarder la modification
@@ -59,6 +60,11 @@ Pour modifier le taux de surcharge d'un quartier de réservation, depuis le menu
 -   cliquer sur l'icône en début de ligne du calque à modifier pour "Modifier le calque d'analyse XXX".
 -   modifier la valeur du "Taux de surcharge pour la réservation" (1=100%)
 -   sauvegarder les modifications.
+
+:::tip BON A SAVOIR
+Cocher la case "Postes réservables uniquement via la dimension" d'un calque exclut l'accès à la réservation aux collaborateurs non affectés directement à ce calque, qui ne pourront pas réserver dans ce quartier en cas de surcharge de leur quartier d'origine. Les collaborateurs affectés au calque gardent toutes les options en cas de saturation du quartier. Cette option permet de ne pas saturer un quartier dans le cas de l'ouverture à l'ensemble du bâtiment suite à saturation
+:::
+
 
 Chaque affectation de collaborateur à un quartier dispose d'un numéro de priorité.<br />
 Par défaut, le numéro de priorité est "0" et correspond à la priorité maximale.<br />

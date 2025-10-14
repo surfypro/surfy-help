@@ -43,7 +43,8 @@ To configure the booking window, from the left menu,
 
 :::tip AT THIS STAGE
 Checking the "Enable dimension overload for booking" box allows you to activate priority management on booking districts.
-If a collaborator's booking district is saturated, Surfy can offer the collaborator to book on another district with lower priority.
+If a collaborator's booking district is saturated, Surfy can offer the collaborator to book on another district with lower priority.<br />
+Checking the "Enable booking by building when all dimensions are overloaded" box allows you to enable booking for the entire building if a collaborator's booking areas are all full. In this case, only areas checked with "Positions bookable only via dimension" will be inaccessible for booking.
 :::
 
 -   save the modification
@@ -61,6 +62,10 @@ To modify the overload rate of a booking district, from the left menu,
 -   click on the icon at the beginning of the line of the layer to modify to "Modify Analysis Layer XXX".
 -   modify the value of the "Overload Rate for Booking" (1=100%)
 -   save the modifications.
+
+:::tip GOOD TO KNOW
+Checking the "Workplaces bookable only via dimension" box for a layer excludes access to reservations for collaborators not directly assigned to this layer, who will not be able to book in this district if their original district is overloaded. Collaborators assigned to the layer retain all options if the district is saturated. This option prevents a district from being saturated in the case of opening to the entire building following saturation
+:::
 
 Each collaborator assignment to a district has a priority number.<br />
 By default, the priority number is "0" and corresponds to maximum priority.<br />
