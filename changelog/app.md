@@ -1,11 +1,27 @@
 # Nouveautés
 
+<!-- ## 14 octobre 2025 - v3.4.121
+
+- La page des plateformes possède désormais un moteur de recherche permettant de retrouver les plateformes par nom.
+- Mise en place de la connexion à Surfy respectant le protocole SAML v2.0.
+- Mise à jour des API Google Maps permettant de sélectionner les adresses d’un bâtiment ou d’un campus sur un plan Google.
+- Le badge indiquant une nouvelle version est désormais aussi affiché dans le menu du profil utilisateur.
+- Le calibrage des structures sur le plan Google Maps permet de mettre à jour l'emplacement de la structure en temps réel en fonction du calibrage. Le calibrage peut aussi être réalisé à l'aide de la souris, en effectuant des opérations de translation et de rotation.
+- Dans la gestion des jours de réservation des postes de travail, le calcul du nombre de jours réservables par personne prend en compte uniquement les jours de la semaine et exclut les week-ends.
+- Dans l'option gérer l'échelle dans les options du plan, il y a maintenant une "Zone d'actions sensibles" qui regroupe les options pour dissocier et supprimer l'échelle, ainsi que modifier la distance et le nom de l'échelle.
+    - La suppression de l’échelle nécessite désormais une confirmation.
+- Les calques d’affectation sur plusieurs étages du même bâtiment sont maintenant réservables.
+- Le menu d’administration possède maintenant un sous-menu permettant d’accéder directement à l’entreprise de la plateforme.
+ -->
+
+
 ## 6 Octobre 2025 - v3.4.110
+
 
 - Les options du plan pour zoomer et dézoomer avec les boutons en haut du plan effectuent désormais le zoom par rapport au centre du plan visible par l'utilisateur.
 - Toutes les visions affichent désormais les noms d'affichage des espaces en plus des noms techniques des espaces (nom fusionné).
 - Les calques d'affectation possèdent désormais une propriété <P code="dimension:workplacesBookableOnlyViaDimension" /> permettant de rendre les postes de travail réservables uniquement via l'affectation au quartier et non par l'étage.
-- Dans la vue "Voir toutes les réservations sur un plan", les postes de travail non réservés sont désormais affichés en transparence.
+- Dans la vue "Voir toutes les réservations sur un plan" ou les autres vues de consultation sans réservation, les postes de travail non réservés sont désormais affichés en transparence.
 
 ## 26 Septembre 2025 - v3.4.108
 
