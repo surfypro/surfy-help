@@ -10,7 +10,7 @@ title: "Create a Building"
 
 To create a new building from the Surfy home page,
 
--   click on the context menu, then on "Create a building".
+-   click on the context menu (gray box under the search magnifying glass), then on "Create a building".
 -   indicate the <P code="building:name" /> and <P code="building:color" /> properties for its environment. These two properties are mandatory.
 -   click on "validate creation" or complete the information then "validate creation".
 -   adding the building's <P code="building:address" /> property allows you to place buildings on a map for optimized multi-site management.

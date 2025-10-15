@@ -20,8 +20,8 @@ Before creating a new typology, as in any multiple choice it is important to che
 
 To create a space typology from the home page:
 
--   click on "Administration", "Typologies", "Space Typologies", "Space Typology" then "Create a space typology".
--   name the typology in the <P code="roomType:name" /> (ex: "Repro Point").
+-   click on "Administration", "Types", "Space typologies", "Space typologies" then "Create a typology of space".
+-   name the typology in the <P code="roomType:name" /> (ex: "Repro Room").
 -   give a <P code="roomType:color" /> to the typology for the 2D view.
 -   you can give a different <P code="roomType:color3d" /> for the 3D view. By default, it's the 2D color that is used in 3D.
 -   you can define a <P code="roomType:icon" /> that will be displayed on the typology spaces in 3D view, and in 2D view by clicking on the "Activate icon display on 2D plan" icon above the 2D plan. This allows you to highlight strategic points (Toilets, Repro, elevators, ...) on the provided plans.

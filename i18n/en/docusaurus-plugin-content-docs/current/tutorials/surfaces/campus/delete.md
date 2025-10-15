@@ -5,7 +5,7 @@ sidebar_position: 3
 
 To delete a campus, from the left menu,
 
--   click on "Spaces" then "Campus" then "List campuses"
+-   click on "Spaces" then "Campus" then "List the campuses"
 -   check the box of the campus to delete
 -   click on the "Trash" icon at the top of the page to "Delete selected campuses"
 

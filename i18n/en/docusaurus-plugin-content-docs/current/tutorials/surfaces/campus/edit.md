@@ -5,7 +5,7 @@ sidebar_position: 2
 
 To modify campus information, from the left menu:
 
--   click on "Spaces" then "Campus" then "List campuses"
+-   click on "Spaces" then "Campus" then "List the campuses"
 -   click on the "See more options for campus XXX" icon at the end of the campus line to modify, then on "modify campus XXX"
 -   modify the campus <P code="campus:name" />, <P code="campus:color" /> or <P code="campus:address" />
 
