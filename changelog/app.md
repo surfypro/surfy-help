@@ -1,6 +1,6 @@
 # Nouveautés
 
-<!-- ## 14 octobre 2025 - v3.4.121
+## 15 octobre 2025 - v3.4.122
 
 - La page des plateformes possède désormais un moteur de recherche permettant de retrouver les plateformes par nom.
 - Mise en place de la connexion à Surfy respectant le protocole SAML v2.0.
@@ -13,7 +13,7 @@
 - Les calques d’affectation sur plusieurs étages du même bâtiment sont maintenant réservables.
 - Le menu d’administration possède maintenant un sous-menu permettant d’accéder directement à l’entreprise de la plateforme.
 - Lors de la création ou de la modification d'une entreprise, le format du nom est désormais imposé : il doit contenir uniquement des lettres minuscules, des chiffres et des tirets.
- -->
+
 
 
 ## 6 Octobre 2025 - v3.4.110
