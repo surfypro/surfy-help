@@ -156,6 +156,13 @@ declare type IconShapeType = 'circle' | 'rectangle' | 'triangle';
 
 declare type IconStyle = 'solid' | 'regular' | 'light' | 'thin' | 'duotone' | 'brands';
 
+declare interface IContentSecurityStore {
+    buildingIds: number[];
+    floorIds: number[];
+    roomIds: number[];
+    jupTenantOperationNames: string[];
+}
+
 declare interface ICustomIcon extends ICustomIconProperties {
     name: string;
     unicode: string;
@@ -329,6 +336,22 @@ declare interface IProps {
     I18nContext: default_2.FunctionComponent<I18NContextProps>;
 }
 
+declare interface ISecurityObjectTypeCrud {
+    create: boolean;
+    update: boolean;
+    read: boolean;
+    delete: boolean;
+}
+
+declare interface ISecurityStore {
+    views: SecurityStoreViews;
+    objectTypes: SecurityStoreObjectTypes;
+    layouts: Record<string, boolean>;
+    options: Record<string, boolean>;
+    operations: Record<string, boolean>;
+    content: IContentSecurityStore;
+}
+
 declare interface ISize {
     width: number;
     height: number;
@@ -366,9 +389,16 @@ declare interface ITextAnchor {
     displayLine: boolean;
 }
 
+/**
+ * Core interface for view metadata
+ * Contains minimal information about a view (name, default status, visibility)
+ */
 declare interface IViewCore {
     name: string;
     isDefaultView?: boolean;
+    isStandalone?: boolean;
+    hidden?: boolean;
+    shouldDisplay?: (securityStore: ISecurityStore, objectTypeName: Surfy.CamelizedObjectTypes, view: IViewCore) => boolean;
 }
 
 declare type JupIconSet = 'fontawesome' | 'material-ui' | 'surfy' | 'icomoon';
@@ -649,6 +679,10 @@ declare type RoomTypeGroupToRoomTypePropertyTypeRecord = Record<RoomTypeGroupToR
 declare type RoomTypePropertyNames = 'id' | 'name' | 'color' | 'icon' | 'color3d' | 'code' | 'displayWallsOn3d' | 'cadence' | 'isBookable' | 'createdAt' | 'updatedAt' | 'externalId' | 'distributionCostTypeId' | 'distributionCostType' | 'userCompanyCreatedById' | 'userCompanyCreatedBy' | 'userCompanyUpdatedById' | 'userCompanyUpdatedBy' | 'roomTypeGroupToRoomTypes' | 'rooms' | 'roomTypeFloors' | 'roomTypeBuildings' | 'personCompanyToRoomTypes' | 'partnerExportMappingToRoomTypes' | 'companyId' | 'company';
 
 declare type RoomTypePropertyTypeRecord = Record<RoomTypePropertyNames, IPropertyTypeDefinition>;
+
+declare type SecurityStoreObjectTypes = Record<Surfy.CamelizedObjectTypes, ISecurityObjectTypeCrud>;
+
+declare type SecurityStoreViews = Record<Surfy.CamelizedObjectTypes, Record<string, boolean>>;
 
 export declare function SetupRecoilContext(props: IProps): default_2.JSX.Element;
 
@@ -3030,6 +3064,10 @@ declare namespace Surfy {
     type CamelizedObjectTypes = "occupancyStatus" | "user" | "userRefreshToken" | "companyType" | "company" | "campus" | "roomConnectorType" | "roomConnector" | "userCompany" | "personGender" | "personCompany" | "jupUiLayout" | "buildingType" | "organization" | "itemTypeFamily" | "manufacturer" | "object3dModel" | "itemType" | "building" | "mapScale" | "structure" | "structurePoint" | "floor" | "distributionCostType" | "roomTypeGroup" | "roomType" | "roomTypeGroupToRoomType" | "roomTypeGroupFloor" | "roomTypeGroupBuilding" | "costCenter" | "costCenterBuilding" | "costCenterFloor" | "room" | "roomPoint" | "roomPointRoom" | "roomPointSegmentType" | "roomPointSegment" | "itemTypePoint" | "dimensionType" | "dimension" | "dimensionRoom" | "dimensionFloor" | "dimensionBuilding" | "factType" | "fact" | "personState" | "personSecurityProfile" | "person" | "personToPersonType" | "personToPerson" | "roomAffectation" | "workplaceType" | "workplaceTypeItemType" | "workplace" | "item" | "workplaceAffectation" | "organizationFloor" | "organizationBuilding" | "roomTypeFloor" | "roomTypeBuilding" | "itemToPerson" | "personToBuilding" | "dimensionToPerson" | "dimensionTypeToBuilding" | "workingLocation" | "personWorkingLocation" | "personToWorkplaceBooking" | "personToRoomBooking" | "personToDimensionBooking" | "personCompanyMission" | "personCompanyToItemType" | "personCompanyToRoomType" | "personCompanyToItem" | "legend" | "openerPostMessageHost" | "companyWorkingLocation" | "jupObjectType" | "jupUiView" | "jupRole" | "jupUiOption" | "jupUiOperation" | "contentRole" | "jupUserCompanyToJupRole" | "jupRoleToJupUiView" | "jupRoleToJupObjectType" | "jupRoleToJupUiOption" | "jupRoleToJupUiOperation" | "contentRoleToBuilding" | "contentRoleToUserCompany" | "contentRoleToFloor" | "partnerApiCredential" | "apiUser" | "apiUserToJupRole" | "apiUserToContentRole" | "jupUiTenantOperation" | "contentRoleToJupUiTenantOperation" | "authentificationConnection" | "userRegistrationTenantRule" | "userRegistrationTenantRuleToJupRole" | "userRegistrationTenantRuleToContentRole" | "partnerExportMappingConfiguration" | "partnerExportMapping" | "partnerExportMappingToRoomType" | "partnerExportMappingConfigurationToFloor" | "jupRoleToJupUiLayout" | "itemFact" | "featureFamily" | "featureGroup" | "feature";
     type Types = Surfy.OccupancyStatus | Surfy.User | Surfy.UserRefreshToken | Surfy.CompanyType | Surfy.Company | Surfy.Campus | Surfy.RoomConnectorType | Surfy.RoomConnector | Surfy.UserCompany | Surfy.PersonGender | Surfy.PersonCompany | Surfy.JupUiLayout | Surfy.BuildingType | Surfy.Organization | Surfy.ItemTypeFamily | Surfy.Manufacturer | Surfy.Object3dModel | Surfy.ItemType | Surfy.Building | Surfy.MapScale | Surfy.Structure | Surfy.StructurePoint | Surfy.Floor | Surfy.DistributionCostType | Surfy.RoomTypeGroup | Surfy.RoomType | Surfy.RoomTypeGroupToRoomType | Surfy.RoomTypeGroupFloor | Surfy.RoomTypeGroupBuilding | Surfy.CostCenter | Surfy.CostCenterBuilding | Surfy.CostCenterFloor | Surfy.Room | Surfy.RoomPoint | Surfy.RoomPointRoom | Surfy.RoomPointSegmentType | Surfy.RoomPointSegment | Surfy.ItemTypePoint | Surfy.DimensionType | Surfy.Dimension | Surfy.DimensionRoom | Surfy.DimensionFloor | Surfy.DimensionBuilding | Surfy.FactType | Surfy.Fact | Surfy.PersonState | Surfy.PersonSecurityProfile | Surfy.Person | Surfy.PersonToPersonType | Surfy.PersonToPerson | Surfy.RoomAffectation | Surfy.WorkplaceType | Surfy.WorkplaceTypeItemType | Surfy.Workplace | Surfy.Item | Surfy.WorkplaceAffectation | Surfy.OrganizationFloor | Surfy.OrganizationBuilding | Surfy.RoomTypeFloor | Surfy.RoomTypeBuilding | Surfy.ItemToPerson | Surfy.PersonToBuilding | Surfy.DimensionToPerson | Surfy.DimensionTypeToBuilding | Surfy.WorkingLocation | Surfy.PersonWorkingLocation | Surfy.PersonToWorkplaceBooking | Surfy.PersonToRoomBooking | Surfy.PersonToDimensionBooking | Surfy.PersonCompanyMission | Surfy.PersonCompanyToItemType | Surfy.PersonCompanyToRoomType | Surfy.PersonCompanyToItem | Surfy.Legend | Surfy.OpenerPostMessageHost | Surfy.CompanyWorkingLocation | Surfy.JupObjectType | Surfy.JupUiView | Surfy.JupRole | Surfy.JupUiOption | Surfy.JupUiOperation | Surfy.ContentRole | Surfy.JupUserCompanyToJupRole | Surfy.JupRoleToJupUiView | Surfy.JupRoleToJupObjectType | Surfy.JupRoleToJupUiOption | Surfy.JupRoleToJupUiOperation | Surfy.ContentRoleToBuilding | Surfy.ContentRoleToUserCompany | Surfy.ContentRoleToFloor | Surfy.PartnerApiCredential | Surfy.ApiUser | Surfy.ApiUserToJupRole | Surfy.ApiUserToContentRole | Surfy.JupUiTenantOperation | Surfy.ContentRoleToJupUiTenantOperation | Surfy.AuthentificationConnection | Surfy.UserRegistrationTenantRule | Surfy.UserRegistrationTenantRuleToJupRole | Surfy.UserRegistrationTenantRuleToContentRole | Surfy.PartnerExportMappingConfiguration | Surfy.PartnerExportMapping | Surfy.PartnerExportMappingToRoomType | Surfy.PartnerExportMappingConfigurationToFloor | Surfy.JupRoleToJupUiLayout | Surfy.ItemFact | Surfy.FeatureFamily | Surfy.FeatureGroup | Surfy.Feature;
 }
+
+export declare function SurfyHelpLinkToIndexView(props: {
+    code: ObjectTypeIndexViewCodes;
+}): default_2.JSX.Element;
 
 declare type TranslationMethodDataType = Record<string, string | undefined | null | number | ReactNode>;
 

@@ -3,14 +3,8 @@ var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { en
 var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
 import * as React from "react";
 import React__default, { forwardRef, useContext, useEffect } from "react";
-import { RecoilRoot, atom, useRecoilValue_TRANSITION_SUPPORT_UNSTABLE, useRecoilState, atomFamily } from "recoil";
-import { Typography } from "@mui/material";
-function sortOnLevel(a, b) {
-  return a.level - b.level;
-}
-function sortOnName(a, b) {
-  return a.name.localeCompare(b.name);
-}
+import { RecoilRoot, atom, useRecoilValue_TRANSITION_SUPPORT_UNSTABLE, useRecoilState, DefaultValue, atomFamily } from "recoil";
+import { Typography, Paper, styled as styled$2, Tooltip, tooltipClasses, Fade } from "@mui/material";
 const occupancyStatusObjectTypeDefintion = {
   "name": "occupancyStatus",
   "type": "table",
@@ -36687,9 +36681,6 @@ var JupSchema;
 function getObjectTypeDefinitionByName(objetTypeName) {
   return JupSchema[objetTypeName];
 }
-function getAllObjectTypeDefinitions() {
-  return JupSchema.objectTypes;
-}
 function getObjectTypeDefintionFromCamelizedName(objectTypeName) {
   const otDef = getObjectTypeDefinitionByName(objectTypeName);
   if (!otDef) {
@@ -36705,9 +36696,6 @@ function getPropertyTypeByName(objectTypeName, propertyTypeName) {
   }
   throw new Error(`property type name not found (${propertyTypeName}) for object type (${objectTypeDefinition.camelized.singular})`);
 }
-function getObjectTypePropertyTypesWithFilter(objectTypeName, filters2) {
-  return Object.values(getObjectTypeDefinitionByName(objectTypeName).propertiesByName).filter((p) => filters2.filter((f) => f(p)).length > 0);
-}
 function getPropertyTypeByCode(code) {
   const [objectTypeName, propertyName] = code.split(":");
   const otDef = getObjectTypeDefintionFromCamelizedName(objectTypeName);
@@ -36717,9 +36705,9 @@ function getPropertyTypeByCode(code) {
 function getDefaultExportFromCjs(x) {
   return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, "default") ? x["default"] : x;
 }
-function getAugmentedNamespace(n2) {
-  if (n2.__esModule) return n2;
-  var f = n2.default;
+function getAugmentedNamespace(n) {
+  if (n.__esModule) return n;
+  var f = n.default;
   if (typeof f == "function") {
     var a = function a2() {
       if (this instanceof a2) {
@@ -36730,12 +36718,12 @@ function getAugmentedNamespace(n2) {
     a.prototype = f.prototype;
   } else a = {};
   Object.defineProperty(a, "__esModule", { value: true });
-  Object.keys(n2).forEach(function(k) {
-    var d = Object.getOwnPropertyDescriptor(n2, k);
+  Object.keys(n).forEach(function(k) {
+    var d = Object.getOwnPropertyDescriptor(n, k);
     Object.defineProperty(a, k, d.get ? d : {
       enumerable: true,
       get: function() {
-        return n2[k];
+        return n[k];
       }
     });
   });
@@ -36756,7 +36744,7 @@ var hasRequiredReactJsxRuntime_production_min;
 function requireReactJsxRuntime_production_min() {
   if (hasRequiredReactJsxRuntime_production_min) return reactJsxRuntime_production_min;
   hasRequiredReactJsxRuntime_production_min = 1;
-  var f = React__default, k = Symbol.for("react.element"), l2 = Symbol.for("react.fragment"), m = Object.prototype.hasOwnProperty, n2 = f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, p = { key: true, ref: true, __self: true, __source: true };
+  var f = React__default, k = Symbol.for("react.element"), l = Symbol.for("react.fragment"), m = Object.prototype.hasOwnProperty, n = f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, p = { key: true, ref: true, __self: true, __source: true };
   function q(c, a, g) {
     var b, d = {}, e = null, h = null;
     void 0 !== g && (e = "" + g);
@@ -36764,9 +36752,9 @@ function requireReactJsxRuntime_production_min() {
     void 0 !== a.ref && (h = a.ref);
     for (b in a) m.call(a, b) && !p.hasOwnProperty(b) && (d[b] = a[b]);
     if (c && c.defaultProps) for (b in a = c.defaultProps, a) void 0 === d[b] && (d[b] = a[b]);
-    return { $$typeof: k, type: c, key: e, ref: h, props: d, _owner: n2.current };
+    return { $$typeof: k, type: c, key: e, ref: h, props: d, _owner: n.current };
   }
-  reactJsxRuntime_production_min.Fragment = l2;
+  reactJsxRuntime_production_min.Fragment = l;
   reactJsxRuntime_production_min.jsx = q;
   reactJsxRuntime_production_min.jsxs = q;
   return reactJsxRuntime_production_min;
@@ -36832,8 +36820,8 @@ function requireReactJsxRuntime_development() {
             format += "%s";
             args = args.concat([stack]);
           }
-          var argsWithFormat = args.map(function(item2) {
-            return String(item2);
+          var argsWithFormat = args.map(function(item) {
+            return String(item);
           });
           argsWithFormat.unshift("Warning: " + format);
           Function.prototype.apply.call(console[level], console, argsWithFormat);
@@ -37093,19 +37081,19 @@ function requireReactJsxRuntime_development() {
           if (sample && control && typeof sample.stack === "string") {
             var sampleLines = sample.stack.split("\n");
             var controlLines = control.stack.split("\n");
-            var s2 = sampleLines.length - 1;
+            var s = sampleLines.length - 1;
             var c = controlLines.length - 1;
-            while (s2 >= 1 && c >= 0 && sampleLines[s2] !== controlLines[c]) {
+            while (s >= 1 && c >= 0 && sampleLines[s] !== controlLines[c]) {
               c--;
             }
-            for (; s2 >= 1 && c >= 0; s2--, c--) {
-              if (sampleLines[s2] !== controlLines[c]) {
-                if (s2 !== 1 || c !== 1) {
+            for (; s >= 1 && c >= 0; s--, c--) {
+              if (sampleLines[s] !== controlLines[c]) {
+                if (s !== 1 || c !== 1) {
                   do {
-                    s2--;
+                    s--;
                     c--;
-                    if (c < 0 || sampleLines[s2] !== controlLines[c]) {
-                      var _frame = "\n" + sampleLines[s2].replace(" at new ", " at ");
+                    if (c < 0 || sampleLines[s] !== controlLines[c]) {
+                      var _frame = "\n" + sampleLines[s].replace(" at new ", " at ");
                       if (fn.displayName && _frame.includes("<anonymous>")) {
                         _frame = _frame.replace("<anonymous>", fn.displayName);
                       }
@@ -37116,7 +37104,7 @@ function requireReactJsxRuntime_development() {
                       }
                       return _frame;
                     }
-                  } while (s2 >= 1 && c >= 0);
+                  } while (s >= 1 && c >= 0);
                 }
                 break;
               }
@@ -37185,7 +37173,7 @@ function requireReactJsxRuntime_development() {
         }
         return "";
       }
-      var hasOwnProperty2 = Object.prototype.hasOwnProperty;
+      var hasOwnProperty = Object.prototype.hasOwnProperty;
       var loggedTypeFailures = {};
       var ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
       function setCurrentlyValidatingElement(element) {
@@ -37201,7 +37189,7 @@ function requireReactJsxRuntime_development() {
       }
       function checkPropTypes(typeSpecs, values2, location, componentName, element) {
         {
-          var has2 = Function.call.bind(hasOwnProperty2);
+          var has2 = Function.call.bind(hasOwnProperty);
           for (var typeSpecName in typeSpecs) {
             if (has2(typeSpecs, typeSpecName)) {
               var error$1 = void 0;
@@ -37277,7 +37265,7 @@ function requireReactJsxRuntime_development() {
       }
       function hasValidRef(config) {
         {
-          if (hasOwnProperty2.call(config, "ref")) {
+          if (hasOwnProperty.call(config, "ref")) {
             var getter = Object.getOwnPropertyDescriptor(config, "ref").get;
             if (getter && getter.isReactWarning) {
               return false;
@@ -37288,7 +37276,7 @@ function requireReactJsxRuntime_development() {
       }
       function hasValidKey(config) {
         {
-          if (hasOwnProperty2.call(config, "key")) {
+          if (hasOwnProperty.call(config, "key")) {
             var getter = Object.getOwnPropertyDescriptor(config, "key").get;
             if (getter && getter.isReactWarning) {
               return false;
@@ -37400,15 +37388,15 @@ function requireReactJsxRuntime_development() {
             warnIfStringRefCannotBeAutoConverted(config, self2);
           }
           for (propName in config) {
-            if (hasOwnProperty2.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {
+            if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {
               props[propName] = config[propName];
             }
           }
           if (type2 && type2.defaultProps) {
-            var defaultProps = type2.defaultProps;
-            for (propName in defaultProps) {
+            var defaultProps2 = type2.defaultProps;
+            for (propName in defaultProps2) {
               if (props[propName] === void 0) {
-                props[propName] = defaultProps[propName];
+                props[propName] = defaultProps2[propName];
               }
             }
           }
@@ -37608,26 +37596,26 @@ function requireReactJsxRuntime_development() {
             return element;
           }
           if (validType) {
-            var children2 = props.children;
-            if (children2 !== void 0) {
+            var children = props.children;
+            if (children !== void 0) {
               if (isStaticChildren) {
-                if (isArray(children2)) {
-                  for (var i = 0; i < children2.length; i++) {
-                    validateChildKeys(children2[i], type2);
+                if (isArray(children)) {
+                  for (var i = 0; i < children.length; i++) {
+                    validateChildKeys(children[i], type2);
                   }
                   if (Object.freeze) {
-                    Object.freeze(children2);
+                    Object.freeze(children);
                   }
                 } else {
                   error("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
                 }
               } else {
-                validateChildKeys(children2, type2);
+                validateChildKeys(children, type2);
               }
             }
           }
           {
-            if (hasOwnProperty2.call(props, "key")) {
+            if (hasOwnProperty.call(props, "key")) {
               var componentName = getComponentNameFromType(type2);
               var keys = Object.keys(props).filter(function(k) {
                 return k !== "key";
@@ -37898,12 +37886,12 @@ function requireReactIs$1() {
   return reactIs$1.exports;
 }
 var reactIsExports = /* @__PURE__ */ requireReactIs$1();
-function isPlainObject(item2) {
-  if (typeof item2 !== "object" || item2 === null) {
+function isPlainObject(item) {
+  if (typeof item !== "object" || item === null) {
     return false;
   }
-  const prototype = Object.getPrototypeOf(item2);
-  return (prototype === null || prototype === Object.prototype || Object.getPrototypeOf(prototype) === null) && !(Symbol.toStringTag in item2) && !(Symbol.iterator in item2);
+  const prototype = Object.getPrototypeOf(item);
+  return (prototype === null || prototype === Object.prototype || Object.getPrototypeOf(prototype) === null) && !(Symbol.toStringTag in item) && !(Symbol.iterator in item);
 }
 function deepClone(source) {
   if (/* @__PURE__ */ React.isValidElement(source) || reactIsExports.isValidElementType(source) || !isPlainObject(source)) {
@@ -37952,14 +37940,14 @@ var hasRequiredReactIs_production_min;
 function requireReactIs_production_min() {
   if (hasRequiredReactIs_production_min) return reactIs_production_min;
   hasRequiredReactIs_production_min = 1;
-  var b = "function" === typeof Symbol && Symbol.for, c = b ? Symbol.for("react.element") : 60103, d = b ? Symbol.for("react.portal") : 60106, e = b ? Symbol.for("react.fragment") : 60107, f = b ? Symbol.for("react.strict_mode") : 60108, g = b ? Symbol.for("react.profiler") : 60114, h = b ? Symbol.for("react.provider") : 60109, k = b ? Symbol.for("react.context") : 60110, l2 = b ? Symbol.for("react.async_mode") : 60111, m = b ? Symbol.for("react.concurrent_mode") : 60111, n2 = b ? Symbol.for("react.forward_ref") : 60112, p = b ? Symbol.for("react.suspense") : 60113, q = b ? Symbol.for("react.suspense_list") : 60120, r2 = b ? Symbol.for("react.memo") : 60115, t = b ? Symbol.for("react.lazy") : 60116, v = b ? Symbol.for("react.block") : 60121, w = b ? Symbol.for("react.fundamental") : 60117, x = b ? Symbol.for("react.responder") : 60118, y = b ? Symbol.for("react.scope") : 60119;
+  var b = "function" === typeof Symbol && Symbol.for, c = b ? Symbol.for("react.element") : 60103, d = b ? Symbol.for("react.portal") : 60106, e = b ? Symbol.for("react.fragment") : 60107, f = b ? Symbol.for("react.strict_mode") : 60108, g = b ? Symbol.for("react.profiler") : 60114, h = b ? Symbol.for("react.provider") : 60109, k = b ? Symbol.for("react.context") : 60110, l = b ? Symbol.for("react.async_mode") : 60111, m = b ? Symbol.for("react.concurrent_mode") : 60111, n = b ? Symbol.for("react.forward_ref") : 60112, p = b ? Symbol.for("react.suspense") : 60113, q = b ? Symbol.for("react.suspense_list") : 60120, r2 = b ? Symbol.for("react.memo") : 60115, t = b ? Symbol.for("react.lazy") : 60116, v = b ? Symbol.for("react.block") : 60121, w = b ? Symbol.for("react.fundamental") : 60117, x = b ? Symbol.for("react.responder") : 60118, y = b ? Symbol.for("react.scope") : 60119;
   function z(a) {
     if ("object" === typeof a && null !== a) {
       var u = a.$$typeof;
       switch (u) {
         case c:
           switch (a = a.type, a) {
-            case l2:
+            case l:
             case m:
             case e:
             case g:
@@ -37969,7 +37957,7 @@ function requireReactIs_production_min() {
             default:
               switch (a = a && a.$$typeof, a) {
                 case k:
-                case n2:
+                case n:
                 case t:
                 case r2:
                 case h:
@@ -37986,12 +37974,12 @@ function requireReactIs_production_min() {
   function A(a) {
     return z(a) === m;
   }
-  reactIs_production_min.AsyncMode = l2;
+  reactIs_production_min.AsyncMode = l;
   reactIs_production_min.ConcurrentMode = m;
   reactIs_production_min.ContextConsumer = k;
   reactIs_production_min.ContextProvider = h;
   reactIs_production_min.Element = c;
-  reactIs_production_min.ForwardRef = n2;
+  reactIs_production_min.ForwardRef = n;
   reactIs_production_min.Fragment = e;
   reactIs_production_min.Lazy = t;
   reactIs_production_min.Memo = r2;
@@ -38000,7 +37988,7 @@ function requireReactIs_production_min() {
   reactIs_production_min.StrictMode = f;
   reactIs_production_min.Suspense = p;
   reactIs_production_min.isAsyncMode = function(a) {
-    return A(a) || z(a) === l2;
+    return A(a) || z(a) === l;
   };
   reactIs_production_min.isConcurrentMode = A;
   reactIs_production_min.isContextConsumer = function(a) {
@@ -38013,7 +38001,7 @@ function requireReactIs_production_min() {
     return "object" === typeof a && null !== a && a.$$typeof === c;
   };
   reactIs_production_min.isForwardRef = function(a) {
-    return z(a) === n2;
+    return z(a) === n;
   };
   reactIs_production_min.isFragment = function(a) {
     return z(a) === e;
@@ -38037,7 +38025,7 @@ function requireReactIs_production_min() {
     return z(a) === p;
   };
   reactIs_production_min.isValidElementType = function(a) {
-    return "string" === typeof a || "function" === typeof a || a === e || a === m || a === g || a === f || a === p || a === q || "object" === typeof a && null !== a && (a.$$typeof === t || a.$$typeof === r2 || a.$$typeof === h || a.$$typeof === k || a.$$typeof === n2 || a.$$typeof === w || a.$$typeof === x || a.$$typeof === y || a.$$typeof === v);
+    return "string" === typeof a || "function" === typeof a || a === e || a === m || a === g || a === f || a === p || a === q || "object" === typeof a && null !== a && (a.$$typeof === t || a.$$typeof === r2 || a.$$typeof === h || a.$$typeof === k || a.$$typeof === n || a.$$typeof === w || a.$$typeof === x || a.$$typeof === y || a.$$typeof === v);
   };
   reactIs_production_min.typeOf = z;
   return reactIs_production_min;
@@ -38117,7 +38105,7 @@ function requireReactIs_development() {
       var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
       var ContextConsumer = REACT_CONTEXT_TYPE;
       var ContextProvider = REACT_PROVIDER_TYPE;
-      var Element2 = REACT_ELEMENT_TYPE;
+      var Element = REACT_ELEMENT_TYPE;
       var ForwardRef = REACT_FORWARD_REF_TYPE;
       var Fragment = REACT_FRAGMENT_TYPE;
       var Lazy = REACT_LAZY_TYPE;
@@ -38176,7 +38164,7 @@ function requireReactIs_development() {
       reactIs_development.ConcurrentMode = ConcurrentMode;
       reactIs_development.ContextConsumer = ContextConsumer;
       reactIs_development.ContextProvider = ContextProvider;
-      reactIs_development.Element = Element2;
+      reactIs_development.Element = Element;
       reactIs_development.ForwardRef = ForwardRef;
       reactIs_development.Fragment = Fragment;
       reactIs_development.Lazy = Lazy;
@@ -38226,13 +38214,13 @@ function requireObjectAssign() {
   if (hasRequiredObjectAssign) return objectAssign;
   hasRequiredObjectAssign = 1;
   var getOwnPropertySymbols = Object.getOwnPropertySymbols;
-  var hasOwnProperty2 = Object.prototype.hasOwnProperty;
+  var hasOwnProperty = Object.prototype.hasOwnProperty;
   var propIsEnumerable = Object.prototype.propertyIsEnumerable;
-  function toObject(val2) {
-    if (val2 === null || val2 === void 0) {
+  function toObject(val) {
+    if (val === null || val === void 0) {
       throw new TypeError("Object.assign cannot be called with null or undefined");
     }
-    return Object(val2);
+    return Object(val);
   }
   function shouldUseNative() {
     try {
@@ -38248,8 +38236,8 @@ function requireObjectAssign() {
       for (var i = 0; i < 10; i++) {
         test2["_" + String.fromCharCode(i)] = i;
       }
-      var order2 = Object.getOwnPropertyNames(test2).map(function(n2) {
-        return test2[n2];
+      var order2 = Object.getOwnPropertyNames(test2).map(function(n) {
+        return test2[n];
       });
       if (order2.join("") !== "0123456789") {
         return false;
@@ -38270,10 +38258,10 @@ function requireObjectAssign() {
     var from2;
     var to = toObject(target);
     var symbols;
-    for (var s2 = 1; s2 < arguments.length; s2++) {
-      from2 = Object(arguments[s2]);
+    for (var s = 1; s < arguments.length; s++) {
+      from2 = Object(arguments[s]);
       for (var key in from2) {
-        if (hasOwnProperty2.call(from2, key)) {
+        if (hasOwnProperty.call(from2, key)) {
           to[key] = from2[key];
         }
       }
@@ -38318,8 +38306,8 @@ function requireCheckPropTypes() {
     var ReactPropTypesSecret = /* @__PURE__ */ requireReactPropTypesSecret();
     var loggedTypeFailures = {};
     var has2 = /* @__PURE__ */ requireHas();
-    printWarning = function(text2) {
-      var message = "Warning: " + text2;
+    printWarning = function(text) {
+      var message = "Warning: " + text;
       if (typeof console !== "undefined") {
         console.error(message);
       }
@@ -38383,8 +38371,8 @@ function requireFactoryWithTypeCheckers() {
   var printWarning = function() {
   };
   if (process.env.NODE_ENV !== "production") {
-    printWarning = function(text2) {
-      var message = "Warning: " + text2;
+    printWarning = function(text) {
+      var message = "Warning: " + text;
       if (typeof console !== "undefined") {
         console.error(message);
       }
@@ -38428,16 +38416,16 @@ function requireFactoryWithTypeCheckers() {
       shape: createShapeTypeChecker,
       exact: createStrictShapeTypeChecker
     };
-    function is2(x, y) {
+    function is(x, y) {
       if (x === y) {
         return x !== 0 || 1 / x === 1 / y;
       } else {
         return x !== x && y !== y;
       }
     }
-    function PropTypeError(message, data2) {
+    function PropTypeError(message, data) {
       this.message = message;
-      this.data = data2 && typeof data2 === "object" ? data2 : {};
+      this.data = data && typeof data === "object" ? data : {};
       this.stack = "";
     }
     PropTypeError.prototype = Error.prototype;
@@ -38571,7 +38559,7 @@ function requireFactoryWithTypeCheckers() {
       function validate(props, propName, componentName, location, propFullName) {
         var propValue = props[propName];
         for (var i = 0; i < expectedValues.length; i++) {
-          if (is2(propValue, expectedValues[i])) {
+          if (is(propValue, expectedValues[i])) {
             return null;
           }
         }
@@ -38922,20 +38910,20 @@ function capitalize(string) {
   }
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
-function resolveProps(defaultProps, props) {
+function resolveProps(defaultProps2, props) {
   const output = {
     ...props
   };
-  for (const key in defaultProps) {
-    if (Object.prototype.hasOwnProperty.call(defaultProps, key)) {
+  for (const key in defaultProps2) {
+    if (Object.prototype.hasOwnProperty.call(defaultProps2, key)) {
       const propName = key;
       if (propName === "components" || propName === "slots") {
         output[propName] = {
-          ...defaultProps[propName],
+          ...defaultProps2[propName],
           ...output[propName]
         };
       } else if (propName === "componentsProps" || propName === "slotProps") {
-        const defaultSlotProps = defaultProps[propName];
+        const defaultSlotProps = defaultProps2[propName];
         const slotProps = props[propName];
         if (!slotProps) {
           output[propName] = defaultSlotProps || {};
@@ -38953,7 +38941,7 @@ function resolveProps(defaultProps, props) {
           }
         }
       } else if (output[propName] === void 0) {
-        output[propName] = defaultProps[propName];
+        output[propName] = defaultProps2[propName];
       }
     }
   }
@@ -39020,51 +39008,51 @@ function generateUtilityClasses(componentName, slots, globalStatePrefix = "Mui")
   });
   return result;
 }
-function clamp(val2, min2 = Number.MIN_SAFE_INTEGER, max2 = Number.MAX_SAFE_INTEGER) {
-  return Math.max(min2, Math.min(val2, max2));
+function clamp(val, min2 = Number.MIN_SAFE_INTEGER, max2 = Number.MAX_SAFE_INTEGER) {
+  return Math.max(min2, Math.min(val, max2));
 }
 function r(e) {
-  var t, f, n2 = "";
-  if ("string" == typeof e || "number" == typeof e) n2 += e;
+  var t, f, n = "";
+  if ("string" == typeof e || "number" == typeof e) n += e;
   else if ("object" == typeof e) if (Array.isArray(e)) {
     var o = e.length;
-    for (t = 0; t < o; t++) e[t] && (f = r(e[t])) && (n2 && (n2 += " "), n2 += f);
-  } else for (f in e) e[f] && (n2 && (n2 += " "), n2 += f);
-  return n2;
+    for (t = 0; t < o; t++) e[t] && (f = r(e[t])) && (n && (n += " "), n += f);
+  } else for (f in e) e[f] && (n && (n += " "), n += f);
+  return n;
 }
 function clsx() {
-  for (var e, t, f = 0, n2 = "", o = arguments.length; f < o; f++) (e = arguments[f]) && (t = r(e)) && (n2 && (n2 += " "), n2 += t);
-  return n2;
+  for (var e, t, f = 0, n = "", o = arguments.length; f < o; f++) (e = arguments[f]) && (t = r(e)) && (n && (n += " "), n += t);
+  return n;
 }
-function merge$1(acc, item2) {
-  if (!item2) {
+function merge$1(acc, item) {
+  if (!item) {
     return acc;
   }
-  return deepmerge(acc, item2, {
+  return deepmerge(acc, item, {
     clone: false
     // No need to clone deep, it's way faster.
   });
 }
 const responsivePropType = process.env.NODE_ENV !== "production" ? PropTypes.oneOfType([PropTypes.number, PropTypes.string, PropTypes.object, PropTypes.array]) : {};
-function sortContainerQueries(theme, css2) {
+function sortContainerQueries(theme, css) {
   if (!theme.containerQueries) {
-    return css2;
+    return css;
   }
-  const sorted = Object.keys(css2).filter((key) => key.startsWith("@container")).sort((a, b) => {
+  const sorted = Object.keys(css).filter((key) => key.startsWith("@container")).sort((a, b) => {
     var _a, _b;
     const regex = /min-width:\s*([0-9.]+)/;
     return +(((_a = a.match(regex)) == null ? void 0 : _a[1]) || 0) - +(((_b = b.match(regex)) == null ? void 0 : _b[1]) || 0);
   });
   if (!sorted.length) {
-    return css2;
+    return css;
   }
   return sorted.reduce((acc, key) => {
-    const value = css2[key];
+    const value = css[key];
     delete acc[key];
     acc[key] = value;
     return acc;
   }, {
-    ...css2
+    ...css
   });
 }
 function isCqShorthand(breakpointKeys, value) {
@@ -39142,8 +39130,8 @@ function handleBreakpoints(props, propValue, styleFromPropValue) {
   const theme = props.theme || {};
   if (Array.isArray(propValue)) {
     const themeBreakpoints = theme.breakpoints || defaultBreakpoints;
-    return propValue.reduce((acc, item2, index2) => {
-      acc[themeBreakpoints.up(themeBreakpoints.keys[index2])] = styleFromPropValue(propValue[index2]);
+    return propValue.reduce((acc, item, index) => {
+      acc[themeBreakpoints.up(themeBreakpoints.keys[index])] = styleFromPropValue(propValue[index]);
       return acc;
     }, {});
   }
@@ -39192,14 +39180,14 @@ function getPath(obj, path, checkVars = true) {
     return null;
   }
   if (obj && obj.vars && checkVars) {
-    const val2 = `vars.${path}`.split(".").reduce((acc, item2) => acc && acc[item2] ? acc[item2] : null, obj);
-    if (val2 != null) {
-      return val2;
+    const val = `vars.${path}`.split(".").reduce((acc, item) => acc && acc[item] ? acc[item] : null, obj);
+    if (val != null) {
+      return val;
     }
   }
-  return path.split(".").reduce((acc, item2) => {
-    if (acc && acc[item2] != null) {
-      return acc[item2];
+  return path.split(".").reduce((acc, item) => {
+    if (acc && acc[item] != null) {
+      return acc[item];
     }
     return null;
   }, obj);
@@ -39220,22 +39208,22 @@ function getStyleValue(themeMapping, transform, propValueFinal, userValue = prop
 }
 function style$1(options) {
   const {
-    prop: prop2,
+    prop,
     cssProperty = options.prop,
     themeKey,
     transform
   } = options;
   const fn = (props) => {
-    if (props[prop2] == null) {
+    if (props[prop] == null) {
       return null;
     }
-    const propValue = props[prop2];
+    const propValue = props[prop];
     const theme = props.theme;
     const themeMapping = getPath(theme, themeKey) || {};
     const styleFromPropValue = (propValueFinal) => {
       let value = getStyleValue(themeMapping, transform, propValueFinal);
       if (propValueFinal === value && typeof propValueFinal === "string") {
-        value = getStyleValue(themeMapping, transform, `${prop2}${propValueFinal === "default" ? "" : capitalize(propValueFinal)}`, propValueFinal);
+        value = getStyleValue(themeMapping, transform, `${prop}${propValueFinal === "default" ? "" : capitalize(propValueFinal)}`, propValueFinal);
       }
       if (cssProperty === false) {
         return value;
@@ -39247,9 +39235,9 @@ function style$1(options) {
     return handleBreakpoints(props, propValue, styleFromPropValue);
   };
   fn.propTypes = process.env.NODE_ENV !== "production" ? {
-    [prop2]: responsivePropType
+    [prop]: responsivePropType
   } : {};
-  fn.filterProps = [prop2];
+  fn.filterProps = [prop];
   return fn;
 }
 function memoize$1(fn) {
@@ -39273,21 +39261,21 @@ const directions = {
   x: ["Left", "Right"],
   y: ["Top", "Bottom"]
 };
-const aliases$1 = {
+const aliases = {
   marginX: "mx",
   marginY: "my",
   paddingX: "px",
   paddingY: "py"
 };
-const getCssProperties = memoize$1((prop2) => {
-  if (prop2.length > 2) {
-    if (aliases$1[prop2]) {
-      prop2 = aliases$1[prop2];
+const getCssProperties = memoize$1((prop) => {
+  if (prop.length > 2) {
+    if (aliases[prop]) {
+      prop = aliases[prop];
     } else {
-      return [prop2];
+      return [prop];
     }
   }
-  const [a, b] = prop2.split("");
+  const [a, b] = prop.split("");
   const property = properties[a];
   const direction = directions[b] || "";
   return Array.isArray(direction) ? direction.map((dir) => property + dir) : [property + direction];
@@ -39298,27 +39286,27 @@ const spacingKeys = [...marginKeys, ...paddingKeys];
 function createUnaryUnit(theme, themeKey, defaultValue, propName) {
   const themeSpacing = getPath(theme, themeKey, true) ?? defaultValue;
   if (typeof themeSpacing === "number" || typeof themeSpacing === "string") {
-    return (val2) => {
-      if (typeof val2 === "string") {
-        return val2;
+    return (val) => {
+      if (typeof val === "string") {
+        return val;
       }
       if (process.env.NODE_ENV !== "production") {
-        if (typeof val2 !== "number") {
-          console.error(`MUI: Expected ${propName} argument to be a number or a string, got ${val2}.`);
+        if (typeof val !== "number") {
+          console.error(`MUI: Expected ${propName} argument to be a number or a string, got ${val}.`);
         }
       }
       if (typeof themeSpacing === "string") {
-        return `calc(${val2} * ${themeSpacing})`;
+        return `calc(${val} * ${themeSpacing})`;
       }
-      return themeSpacing * val2;
+      return themeSpacing * val;
     };
   }
   if (Array.isArray(themeSpacing)) {
-    return (val2) => {
-      if (typeof val2 === "string") {
-        return val2;
+    return (val) => {
+      if (typeof val === "string") {
+        return val;
       }
-      const abs2 = Math.abs(val2);
+      const abs2 = Math.abs(val);
       if (process.env.NODE_ENV !== "production") {
         if (!Number.isInteger(abs2)) {
           console.error([`MUI: The \`theme.${themeKey}\` array type cannot be combined with non integer values.You should either use an integer value that can be used as index, or define the \`theme.${themeKey}\` as a number.`].join("\n"));
@@ -39327,7 +39315,7 @@ function createUnaryUnit(theme, themeKey, defaultValue, propName) {
         }
       }
       const transformed = themeSpacing[abs2];
-      if (val2 >= 0) {
+      if (val >= 0) {
         return transformed;
       }
       if (typeof transformed === "number") {
@@ -39359,18 +39347,18 @@ function getStyleFromPropValue(cssProperties, transformer) {
     return acc;
   }, {});
 }
-function resolveCssProperty(props, keys, prop2, transformer) {
-  if (!keys.includes(prop2)) {
+function resolveCssProperty(props, keys, prop, transformer) {
+  if (!keys.includes(prop)) {
     return null;
   }
-  const cssProperties = getCssProperties(prop2);
+  const cssProperties = getCssProperties(prop);
   const styleFromPropValue = getStyleFromPropValue(cssProperties, transformer);
-  const propValue = props[prop2];
+  const propValue = props[prop];
   return handleBreakpoints(props, propValue, styleFromPropValue);
 }
 function style(props, keys) {
   const transformer = createUnarySpacing(props.theme);
-  return Object.keys(props).map((prop2) => resolveCssProperty(props, keys, prop2, transformer)).reduce(merge$1, {});
+  return Object.keys(props).map((prop) => resolveCssProperty(props, keys, prop, transformer)).reduce(merge$1, {});
 }
 function margin(props) {
   return style(props, marginKeys);
@@ -39394,15 +39382,15 @@ process.env.NODE_ENV !== "production" ? spacingKeys.reduce((obj, key) => {
 }, {}) : {};
 function compose(...styles) {
   const handlers = styles.reduce((acc, style2) => {
-    style2.filterProps.forEach((prop2) => {
-      acc[prop2] = style2;
+    style2.filterProps.forEach((prop) => {
+      acc[prop] = style2;
     });
     return acc;
   }, {});
   const fn = (props) => {
-    return Object.keys(props).reduce((acc, prop2) => {
-      if (handlers[prop2]) {
-        return merge$1(acc, handlers[prop2](props));
+    return Object.keys(props).reduce((acc, prop) => {
+      if (handlers[prop]) {
+        return merge$1(acc, handlers[prop](props));
       }
       return acc;
     }, {});
@@ -39417,9 +39405,9 @@ function borderTransform(value) {
   }
   return `${value}px solid`;
 }
-function createBorderStyle(prop2, transform) {
+function createBorderStyle(prop, transform) {
   return style$1({
-    prop: prop2,
+    prop,
     themeKey: "borders",
     transform
   });
@@ -39902,29 +39890,29 @@ function callIfFn(maybeFn, arg2) {
   return typeof maybeFn === "function" ? maybeFn(arg2) : maybeFn;
 }
 function unstable_createStyleFunctionSx() {
-  function getThemeValue(prop2, val2, theme, config) {
+  function getThemeValue(prop, val, theme, config) {
     const props = {
-      [prop2]: val2,
+      [prop]: val,
       theme
     };
-    const options = config[prop2];
+    const options = config[prop];
     if (!options) {
       return {
-        [prop2]: val2
+        [prop]: val
       };
     }
     const {
-      cssProperty = prop2,
+      cssProperty = prop,
       themeKey,
       transform,
       style: style2
     } = options;
-    if (val2 == null) {
+    if (val == null) {
       return null;
     }
-    if (themeKey === "typography" && val2 === "inherit") {
+    if (themeKey === "typography" && val === "inherit") {
       return {
-        [prop2]: val2
+        [prop]: val
       };
     }
     const themeMapping = getPath(theme, themeKey) || {};
@@ -39934,7 +39922,7 @@ function unstable_createStyleFunctionSx() {
     const styleFromPropValue = (propValueFinal) => {
       let value = getStyleValue(themeMapping, transform, propValueFinal);
       if (propValueFinal === value && typeof propValueFinal === "string") {
-        value = getStyleValue(themeMapping, transform, `${prop2}${propValueFinal === "default" ? "" : capitalize(propValueFinal)}`, propValueFinal);
+        value = getStyleValue(themeMapping, transform, `${prop}${propValueFinal === "default" ? "" : capitalize(propValueFinal)}`, propValueFinal);
       }
       if (cssProperty === false) {
         return value;
@@ -39943,7 +39931,7 @@ function unstable_createStyleFunctionSx() {
         [cssProperty]: value
       };
     };
-    return handleBreakpoints(props, val2, styleFromPropValue);
+    return handleBreakpoints(props, val, styleFromPropValue);
   }
   function styleFunctionSx2(props) {
     const {
@@ -39966,13 +39954,13 @@ function unstable_createStyleFunctionSx() {
       }
       const emptyBreakpoints = createEmptyBreakpointObject(theme.breakpoints);
       const breakpointsKeys = Object.keys(emptyBreakpoints);
-      let css2 = emptyBreakpoints;
+      let css = emptyBreakpoints;
       Object.keys(sxObject).forEach((styleKey) => {
         const value = callIfFn(sxObject[styleKey], theme);
         if (value !== null && value !== void 0) {
           if (typeof value === "object") {
             if (config[styleKey]) {
-              css2 = merge$1(css2, getThemeValue(styleKey, value, theme, config));
+              css = merge$1(css, getThemeValue(styleKey, value, theme, config));
             } else {
               const breakpointsValues = handleBreakpoints({
                 theme
@@ -39980,20 +39968,20 @@ function unstable_createStyleFunctionSx() {
                 [styleKey]: x
               }));
               if (objectsHaveSameKeys(breakpointsValues, value)) {
-                css2[styleKey] = styleFunctionSx2({
+                css[styleKey] = styleFunctionSx2({
                   sx: value,
                   theme
                 });
               } else {
-                css2 = merge$1(css2, breakpointsValues);
+                css = merge$1(css, breakpointsValues);
               }
             }
           } else {
-            css2 = merge$1(css2, getThemeValue(styleKey, value, theme, config));
+            css = merge$1(css, getThemeValue(styleKey, value, theme, config));
           }
         }
       });
-      return sortContainerQueries(theme, removeUnusedBreakpoints(breakpointsKeys, css2));
+      return sortContainerQueries(theme, removeUnusedBreakpoints(breakpointsKeys, css));
     }
     return Array.isArray(sx) ? sx.map(traverse) : traverse(sx);
   }
@@ -40002,12 +39990,12 @@ function unstable_createStyleFunctionSx() {
 const styleFunctionSx = unstable_createStyleFunctionSx();
 styleFunctionSx.filterProps = ["sx"];
 function _extends() {
-  return _extends = Object.assign ? Object.assign.bind() : function(n2) {
+  return _extends = Object.assign ? Object.assign.bind() : function(n) {
     for (var e = 1; e < arguments.length; e++) {
       var t = arguments[e];
-      for (var r2 in t) ({}).hasOwnProperty.call(t, r2) && (n2[r2] = t[r2]);
+      for (var r2 in t) ({}).hasOwnProperty.call(t, r2) && (n[r2] = t[r2]);
     }
-    return n2;
+    return n;
   }, _extends.apply(null, arguments);
 }
 var isDevelopment$2 = false;
@@ -40036,19 +40024,19 @@ var StyleSheet = /* @__PURE__ */ function() {
   function StyleSheet2(options) {
     var _this = this;
     this._insertTag = function(tag) {
-      var before2;
+      var before;
       if (_this.tags.length === 0) {
         if (_this.insertionPoint) {
-          before2 = _this.insertionPoint.nextSibling;
+          before = _this.insertionPoint.nextSibling;
         } else if (_this.prepend) {
-          before2 = _this.container.firstChild;
+          before = _this.container.firstChild;
         } else {
-          before2 = _this.before;
+          before = _this.before;
         }
       } else {
-        before2 = _this.tags[_this.tags.length - 1].nextSibling;
+        before = _this.tags[_this.tags.length - 1].nextSibling;
       }
-      _this.container.insertBefore(tag, before2);
+      _this.container.insertBefore(tag, before);
       _this.tags.push(tag);
     };
     this.isSpeedy = options.speedy === void 0 ? !isDevelopment$2 : options.speedy;
@@ -40106,10 +40094,10 @@ var assign$1 = Object.assign;
 function hash(value, length2) {
   return charat(value, 0) ^ 45 ? (((length2 << 2 ^ charat(value, 0)) << 2 ^ charat(value, 1)) << 2 ^ charat(value, 2)) << 2 ^ charat(value, 3) : 0;
 }
-function trim(value) {
+function trim$1(value) {
   return value.trim();
 }
-function match$1(value, pattern) {
+function match(value, pattern) {
   return (value = pattern.exec(value)) ? value[0] : value;
 }
 function replace(value, pattern, replacement) {
@@ -40118,11 +40106,11 @@ function replace(value, pattern, replacement) {
 function indexof(value, search) {
   return value.indexOf(search);
 }
-function charat(value, index2) {
-  return value.charCodeAt(index2) | 0;
+function charat(value, index) {
+  return value.charCodeAt(index) | 0;
 }
-function substr(value, begin, end2) {
-  return value.slice(begin, end2);
+function substr(value, begin, end) {
+  return value.slice(begin, end);
 }
 function strlen(value) {
   return value.length;
@@ -40130,7 +40118,7 @@ function strlen(value) {
 function sizeof(value) {
   return value.length;
 }
-function append$2(value, array) {
+function append(value, array) {
   return array.push(value), value;
 }
 function combine(array, callback) {
@@ -40142,8 +40130,8 @@ var length = 0;
 var position = 0;
 var character = 0;
 var characters = "";
-function node(value, root, parent2, type2, props, children2, length2) {
-  return { value, root, parent: parent2, type: type2, props, children: children2, line, column, length: length2, return: "" };
+function node(value, root, parent, type2, props, children, length2) {
+  return { value, root, parent, type: type2, props, children, line, column, length: length2, return: "" };
 }
 function copy(root, props) {
   return assign$1(node("", null, null, "", null, null, 0), root, { length: -root.length }, props);
@@ -40151,13 +40139,13 @@ function copy(root, props) {
 function char() {
   return character;
 }
-function prev$1() {
+function prev() {
   character = position > 0 ? charat(characters, --position) : 0;
   if (column--, character === 10)
     column = 1, line--;
   return character;
 }
-function next$1() {
+function next() {
   character = position < length ? charat(characters, position++) : 0;
   if (column++, character === 10)
     column = 1, line++;
@@ -40169,8 +40157,8 @@ function peek() {
 function caret() {
   return position;
 }
-function slice$1(begin, end2) {
-  return substr(characters, begin, end2);
+function slice(begin, end) {
+  return substr(characters, begin, end);
 }
 function token(type2) {
   switch (type2) {
@@ -40217,24 +40205,24 @@ function dealloc(value) {
   return characters = "", value;
 }
 function delimit(type2) {
-  return trim(slice$1(position - 1, delimiter(type2 === 91 ? type2 + 2 : type2 === 40 ? type2 + 1 : type2)));
+  return trim$1(slice(position - 1, delimiter(type2 === 91 ? type2 + 2 : type2 === 40 ? type2 + 1 : type2)));
 }
-function whitespace$1(type2) {
+function whitespace(type2) {
   while (character = peek())
     if (character < 33)
-      next$1();
+      next();
     else
       break;
   return token(type2) > 2 || token(character) > 3 ? "" : " ";
 }
-function escaping(index2, count) {
-  while (--count && next$1())
+function escaping(index, count) {
+  while (--count && next())
     if (character < 48 || character > 102 || character > 57 && character < 65 || character > 70 && character < 97)
       break;
-  return slice$1(index2, caret() + (count < 6 && peek() == 32 && next$1() == 32));
+  return slice(index, caret() + (count < 6 && peek() == 32 && next() == 32));
 }
 function delimiter(type2) {
-  while (next$1())
+  while (next())
     switch (character) {
       // ] ) " '
       case type2:
@@ -40252,30 +40240,30 @@ function delimiter(type2) {
         break;
       // \
       case 92:
-        next$1();
+        next();
         break;
     }
   return position;
 }
-function commenter(type2, index2) {
-  while (next$1())
+function commenter(type2, index) {
+  while (next())
     if (type2 + character === 47 + 10)
       break;
     else if (type2 + character === 42 + 42 && peek() === 47)
       break;
-  return "/*" + slice$1(index2, position - 1) + "*" + from(type2 === 47 ? type2 : next$1());
+  return "/*" + slice(index, position - 1) + "*" + from(type2 === 47 ? type2 : next());
 }
-function identifier(index2) {
+function identifier(index) {
   while (!token(peek()))
-    next$1();
-  return slice$1(index2, position);
+    next();
+  return slice(index, position);
 }
-function compile$1(value) {
-  return dealloc(parse$4("", null, null, null, [""], value = alloc(value), 0, [0], value));
+function compile(value) {
+  return dealloc(parse("", null, null, null, [""], value = alloc(value), 0, [0], value));
 }
-function parse$4(value, root, parent2, rule, rules, rulesets, pseudo, points, declarations) {
-  var index2 = 0;
-  var offset2 = 0;
+function parse(value, root, parent, rule, rules, rulesets, pseudo, points, declarations) {
+  var index = 0;
+  var offset = 0;
   var length2 = pseudo;
   var atrule = 0;
   var property = 0;
@@ -40286,11 +40274,11 @@ function parse$4(value, root, parent2, rule, rules, rulesets, pseudo, points, de
   var character2 = 0;
   var type2 = "";
   var props = rules;
-  var children2 = rulesets;
+  var children = rulesets;
   var reference = rule;
   var characters2 = type2;
   while (scanning)
-    switch (previous = character2, character2 = next$1()) {
+    switch (previous = character2, character2 = next()) {
       // (
       case 40:
         if (previous != 108 && charat(characters2, length2 - 1) == 58) {
@@ -40309,7 +40297,7 @@ function parse$4(value, root, parent2, rule, rules, rulesets, pseudo, points, de
       case 10:
       case 13:
       case 32:
-        characters2 += whitespace$1(previous);
+        characters2 += whitespace(previous);
         break;
       // \
       case 92:
@@ -40320,7 +40308,7 @@ function parse$4(value, root, parent2, rule, rules, rulesets, pseudo, points, de
         switch (peek()) {
           case 42:
           case 47:
-            append$2(comment(commenter(next$1(), caret()), root, parent2), declarations);
+            append(comment(commenter(next(), caret()), root, parent), declarations);
             break;
           default:
             characters2 += "/";
@@ -40328,7 +40316,7 @@ function parse$4(value, root, parent2, rule, rules, rulesets, pseudo, points, de
         break;
       // {
       case 123 * variable:
-        points[index2++] = strlen(characters2) * ampersand;
+        points[index++] = strlen(characters2) * ampersand;
       // } ; \0
       case 125 * variable:
       case 59:
@@ -40339,20 +40327,20 @@ function parse$4(value, root, parent2, rule, rules, rulesets, pseudo, points, de
           case 125:
             scanning = 0;
           // ;
-          case 59 + offset2:
+          case 59 + offset:
             if (ampersand == -1) characters2 = replace(characters2, /\f/g, "");
             if (property > 0 && strlen(characters2) - length2)
-              append$2(property > 32 ? declaration(characters2 + ";", rule, parent2, length2 - 1) : declaration(replace(characters2, " ", "") + ";", rule, parent2, length2 - 2), declarations);
+              append(property > 32 ? declaration(characters2 + ";", rule, parent, length2 - 1) : declaration(replace(characters2, " ", "") + ";", rule, parent, length2 - 2), declarations);
             break;
           // @ ;
           case 59:
             characters2 += ";";
           // { rule/at-rule
           default:
-            append$2(reference = ruleset(characters2, root, parent2, index2, offset2, rules, points, type2, props = [], children2 = [], length2), rulesets);
+            append(reference = ruleset(characters2, root, parent, index, offset, rules, points, type2, props = [], children = [], length2), rulesets);
             if (character2 === 123)
-              if (offset2 === 0)
-                parse$4(characters2, root, reference, reference, props, rulesets, length2, points, children2);
+              if (offset === 0)
+                parse(characters2, root, reference, reference, props, rulesets, length2, points, children);
               else
                 switch (atrule === 99 && charat(characters2, 3) === 110 ? 100 : atrule) {
                   // d l m s
@@ -40360,13 +40348,13 @@ function parse$4(value, root, parent2, rule, rules, rulesets, pseudo, points, de
                   case 108:
                   case 109:
                   case 115:
-                    parse$4(value, reference, reference, rule && append$2(ruleset(value, reference, reference, 0, 0, rules, points, type2, rules, props = [], length2), children2), rules, children2, length2, points, rule ? props : children2);
+                    parse(value, reference, reference, rule && append(ruleset(value, reference, reference, 0, 0, rules, points, type2, rules, props = [], length2), children), rules, children, length2, points, rule ? props : children);
                     break;
                   default:
-                    parse$4(characters2, reference, reference, reference, [""], children2, 0, points, children2);
+                    parse(characters2, reference, reference, reference, [""], children, 0, points, children);
                 }
         }
-        index2 = offset2 = property = 0, variable = ampersand = 1, type2 = characters2 = "", length2 = pseudo;
+        index = offset = property = 0, variable = ampersand = 1, type2 = characters2 = "", length2 = pseudo;
         break;
       // :
       case 58:
@@ -40375,23 +40363,23 @@ function parse$4(value, root, parent2, rule, rules, rulesets, pseudo, points, de
         if (variable < 1) {
           if (character2 == 123)
             --variable;
-          else if (character2 == 125 && variable++ == 0 && prev$1() == 125)
+          else if (character2 == 125 && variable++ == 0 && prev() == 125)
             continue;
         }
         switch (characters2 += from(character2), character2 * variable) {
           // &
           case 38:
-            ampersand = offset2 > 0 ? 1 : (characters2 += "\f", -1);
+            ampersand = offset > 0 ? 1 : (characters2 += "\f", -1);
             break;
           // ,
           case 44:
-            points[index2++] = (strlen(characters2) - 1) * ampersand, ampersand = 1;
+            points[index++] = (strlen(characters2) - 1) * ampersand, ampersand = 1;
             break;
           // @
           case 64:
             if (peek() === 45)
-              characters2 += delimit(next$1());
-            atrule = peek(), offset2 = length2 = strlen(type2 = characters2 += identifier(caret())), character2++;
+              characters2 += delimit(next());
+            atrule = peek(), offset = length2 = strlen(type2 = characters2 += identifier(caret())), character2++;
             break;
           // -
           case 45:
@@ -40401,30 +40389,30 @@ function parse$4(value, root, parent2, rule, rules, rulesets, pseudo, points, de
     }
   return rulesets;
 }
-function ruleset(value, root, parent2, index2, offset2, rules, points, type2, props, children2, length2) {
-  var post = offset2 - 1;
-  var rule = offset2 === 0 ? rules : [""];
+function ruleset(value, root, parent, index, offset, rules, points, type2, props, children, length2) {
+  var post = offset - 1;
+  var rule = offset === 0 ? rules : [""];
   var size = sizeof(rule);
-  for (var i = 0, j = 0, k = 0; i < index2; ++i)
+  for (var i = 0, j = 0, k = 0; i < index; ++i)
     for (var x = 0, y = substr(value, post + 1, post = abs$1(j = points[i])), z = value; x < size; ++x)
-      if (z = trim(j > 0 ? rule[x] + " " + y : replace(y, /&\f/g, rule[x])))
+      if (z = trim$1(j > 0 ? rule[x] + " " + y : replace(y, /&\f/g, rule[x])))
         props[k++] = z;
-  return node(value, root, parent2, offset2 === 0 ? RULESET : type2, props, children2, length2);
+  return node(value, root, parent, offset === 0 ? RULESET : type2, props, children, length2);
 }
-function comment(value, root, parent2) {
-  return node(value, root, parent2, COMMENT, from(char()), substr(value, 2, -2), 0);
+function comment(value, root, parent) {
+  return node(value, root, parent, COMMENT, from(char()), substr(value, 2, -2), 0);
 }
-function declaration(value, root, parent2, length2) {
-  return node(value, root, parent2, DECLARATION, substr(value, 0, length2), substr(value, length2 + 1, -1), length2);
+function declaration(value, root, parent, length2) {
+  return node(value, root, parent, DECLARATION, substr(value, 0, length2), substr(value, length2 + 1, -1), length2);
 }
-function serialize$1(children2, callback) {
+function serialize(children, callback) {
   var output = "";
-  var length2 = sizeof(children2);
+  var length2 = sizeof(children);
   for (var i = 0; i < length2; i++)
-    output += callback(children2[i], i, children2, callback) || "";
+    output += callback(children[i], i, children, callback) || "";
   return output;
 }
-function stringify$1(element, index2, children2, callback) {
+function stringify(element, index, children, callback) {
   switch (element.type) {
     case LAYER:
       if (element.children.length) break;
@@ -40434,18 +40422,18 @@ function stringify$1(element, index2, children2, callback) {
     case COMMENT:
       return "";
     case KEYFRAMES:
-      return element.return = element.value + "{" + serialize$1(element.children, callback) + "}";
+      return element.return = element.value + "{" + serialize(element.children, callback) + "}";
     case RULESET:
       element.value = element.props.join(",");
   }
-  return strlen(children2 = serialize$1(element.children, callback)) ? element.return = element.value + "{" + children2 + "}" : "";
+  return strlen(children = serialize(element.children, callback)) ? element.return = element.value + "{" + children + "}" : "";
 }
 function middleware(collection) {
   var length2 = sizeof(collection);
-  return function(element, index2, children2, callback) {
+  return function(element, index, children, callback) {
     var output = "";
     for (var i = 0; i < length2; i++)
-      output += collection[i](element, index2, children2, callback) || "";
+      output += collection[i](element, index, children, callback) || "";
     return output;
   };
 }
@@ -40464,47 +40452,47 @@ function memoize(fn) {
     return cache[arg2];
   };
 }
-var identifierWithPointTracking = function identifierWithPointTracking2(begin, points, index2) {
+var identifierWithPointTracking = function identifierWithPointTracking2(begin, points, index) {
   var previous = 0;
   var character2 = 0;
   while (true) {
     previous = character2;
     character2 = peek();
     if (previous === 38 && character2 === 12) {
-      points[index2] = 1;
+      points[index] = 1;
     }
     if (token(character2)) {
       break;
     }
-    next$1();
+    next();
   }
-  return slice$1(begin, position);
+  return slice(begin, position);
 };
 var toRules = function toRules2(parsed, points) {
-  var index2 = -1;
+  var index = -1;
   var character2 = 44;
   do {
     switch (token(character2)) {
       case 0:
         if (character2 === 38 && peek() === 12) {
-          points[index2] = 1;
+          points[index] = 1;
         }
-        parsed[index2] += identifierWithPointTracking(position - 1, points, index2);
+        parsed[index] += identifierWithPointTracking(position - 1, points, index);
         break;
       case 2:
-        parsed[index2] += delimit(character2);
+        parsed[index] += delimit(character2);
         break;
       case 4:
         if (character2 === 44) {
-          parsed[++index2] = peek() === 58 ? "&\f" : "";
-          points[index2] = parsed[index2].length;
+          parsed[++index] = peek() === 58 ? "&\f" : "";
+          points[index] = parsed[index].length;
           break;
         }
       // fallthrough
       default:
-        parsed[index2] += from(character2);
+        parsed[index] += from(character2);
     }
-  } while (character2 = next$1());
+  } while (character2 = next());
   return parsed;
 };
 var getRules = function getRules2(value, points) {
@@ -40518,13 +40506,13 @@ var compat = function compat2(element) {
     return;
   }
   var value = element.value;
-  var parent2 = element.parent;
-  var isImplicitRule = element.column === parent2.column && element.line === parent2.line;
-  while (parent2.type !== "rule") {
-    parent2 = parent2.parent;
-    if (!parent2) return;
+  var parent = element.parent;
+  var isImplicitRule = element.column === parent.column && element.line === parent.line;
+  while (parent.type !== "rule") {
+    parent = parent.parent;
+    if (!parent) return;
   }
-  if (element.props.length === 1 && value.charCodeAt(0) !== 58 && !fixedElements.get(parent2)) {
+  if (element.props.length === 1 && value.charCodeAt(0) !== 58 && !fixedElements.get(parent)) {
     return;
   }
   if (isImplicitRule) {
@@ -40533,7 +40521,7 @@ var compat = function compat2(element) {
   fixedElements.set(element, true);
   var points = [];
   var rules = getRules(value, points);
-  var parentRules = parent2.props;
+  var parentRules = parent.props;
   for (var i = 0, k = 0; i < rules.length; i++) {
     for (var j = 0; j < parentRules.length; j++, k++) {
       element.props[k] = points[i] ? rules[i].replace(/&\f/g, parentRules[j]) : parentRules[j] + " " + rules[i];
@@ -40695,28 +40683,28 @@ function prefix$1(value, length2) {
   }
   return value;
 }
-var prefixer = function prefixer2(element, index2, children2, callback) {
+var prefixer = function prefixer2(element, index, children, callback) {
   if (element.length > -1) {
     if (!element["return"]) switch (element.type) {
       case DECLARATION:
         element["return"] = prefix$1(element.value, element.length);
         break;
       case KEYFRAMES:
-        return serialize$1([copy(element, {
+        return serialize([copy(element, {
           value: replace(element.value, "@", "@" + WEBKIT)
         })], callback);
       case RULESET:
         if (element.length) return combine(element.props, function(value) {
-          switch (match$1(value, /(::plac\w+|:read-\w+)/)) {
+          switch (match(value, /(::plac\w+|:read-\w+)/)) {
             // :read-(only|write)
             case ":read-only":
             case ":read-write":
-              return serialize$1([copy(element, {
+              return serialize([copy(element, {
                 props: [replace(value, /:(read-\w+)/, ":" + MOZ + "$1")]
               })], callback);
             // :placeholder
             case "::placeholder":
-              return serialize$1([copy(element, {
+              return serialize([copy(element, {
                 props: [replace(value, /:(plac\w+)/, ":" + WEBKIT + "input-$1")]
               }), copy(element, {
                 props: [replace(value, /:(plac\w+)/, ":" + MOZ + "$1")]
@@ -40762,18 +40750,18 @@ var createCache = function createCache2(options) {
       }
     );
   }
-  var _insert2;
+  var _insert;
   var omnipresentPlugins = [compat, removeLabel];
   {
     var currentSheet;
-    var finalizingPlugins = [stringify$1, rulesheet(function(rule) {
+    var finalizingPlugins = [stringify, rulesheet(function(rule) {
       currentSheet.insert(rule);
     })];
     var serializer = middleware(omnipresentPlugins.concat(stylisPlugins, finalizingPlugins));
     var stylis = function stylis2(styles) {
-      return serialize$1(compile$1(styles), serializer);
+      return serialize(compile(styles), serializer);
     };
-    _insert2 = function insert(selector, serialized, sheet, shouldCache) {
+    _insert = function insert(selector, serialized, sheet, shouldCache) {
       currentSheet = sheet;
       stylis(selector ? selector + "{" + serialized.styles + "}" : serialized.styles);
       if (shouldCache) {
@@ -40794,7 +40782,7 @@ var createCache = function createCache2(options) {
     nonce: options.nonce,
     inserted,
     registered: {},
-    insert: _insert2
+    insert: _insert
   };
   cache.sheet.hydrate(nodesToHydrate);
   return cache;
@@ -41115,8 +41103,8 @@ var withEmotionCache = function withEmotionCache2(func) {
 var ThemeContext = /* @__PURE__ */ React.createContext({});
 var reactPropsRegex = /^((children|dangerouslySetInnerHTML|key|ref|autoFocus|defaultValue|defaultChecked|innerHTML|suppressContentEditableWarning|suppressHydrationWarning|valueLink|abbr|accept|acceptCharset|accessKey|action|allow|allowUserMedia|allowPaymentRequest|allowFullScreen|allowTransparency|alt|async|autoComplete|autoPlay|capture|cellPadding|cellSpacing|challenge|charSet|checked|cite|classID|className|cols|colSpan|content|contentEditable|contextMenu|controls|controlsList|coords|crossOrigin|data|dateTime|decoding|default|defer|dir|disabled|disablePictureInPicture|disableRemotePlayback|download|draggable|encType|enterKeyHint|fetchpriority|fetchPriority|form|formAction|formEncType|formMethod|formNoValidate|formTarget|frameBorder|headers|height|hidden|high|href|hrefLang|htmlFor|httpEquiv|id|inputMode|integrity|is|keyParams|keyType|kind|label|lang|list|loading|loop|low|marginHeight|marginWidth|max|maxLength|media|mediaGroup|method|min|minLength|multiple|muted|name|nonce|noValidate|open|optimum|pattern|placeholder|playsInline|popover|popoverTarget|popoverTargetAction|poster|preload|profile|radioGroup|readOnly|referrerPolicy|rel|required|reversed|role|rows|rowSpan|sandbox|scope|scoped|scrolling|seamless|selected|shape|size|sizes|slot|span|spellCheck|src|srcDoc|srcLang|srcSet|start|step|style|summary|tabIndex|target|title|translate|type|useMap|value|width|wmode|wrap|about|datatype|inlist|prefix|property|resource|typeof|vocab|autoCapitalize|autoCorrect|autoSave|color|incremental|fallback|inert|itemProp|itemScope|itemType|itemID|itemRef|on|option|results|security|unselectable|accentHeight|accumulate|additive|alignmentBaseline|allowReorder|alphabetic|amplitude|arabicForm|ascent|attributeName|attributeType|autoReverse|azimuth|baseFrequency|baselineShift|baseProfile|bbox|begin|bias|by|calcMode|capHeight|clip|clipPathUnits|clipPath|clipRule|colorInterpolation|colorInterpolationFilters|colorProfile|colorRendering|contentScriptType|contentStyleType|cursor|cx|cy|d|decelerate|descent|diffuseConstant|direction|display|divisor|dominantBaseline|dur|dx|dy|edgeMode|elevation|enableBackground|end|exponent|externalResourcesRequired|fill|fillOpacity|fillRule|filter|filterRes|filterUnits|floodColor|floodOpacity|focusable|fontFamily|fontSize|fontSizeAdjust|fontStretch|fontStyle|fontVariant|fontWeight|format|from|fr|fx|fy|g1|g2|glyphName|glyphOrientationHorizontal|glyphOrientationVertical|glyphRef|gradientTransform|gradientUnits|hanging|horizAdvX|horizOriginX|ideographic|imageRendering|in|in2|intercept|k|k1|k2|k3|k4|kernelMatrix|kernelUnitLength|kerning|keyPoints|keySplines|keyTimes|lengthAdjust|letterSpacing|lightingColor|limitingConeAngle|local|markerEnd|markerMid|markerStart|markerHeight|markerUnits|markerWidth|mask|maskContentUnits|maskUnits|mathematical|mode|numOctaves|offset|opacity|operator|order|orient|orientation|origin|overflow|overlinePosition|overlineThickness|panose1|paintOrder|pathLength|patternContentUnits|patternTransform|patternUnits|pointerEvents|points|pointsAtX|pointsAtY|pointsAtZ|preserveAlpha|preserveAspectRatio|primitiveUnits|r|radius|refX|refY|renderingIntent|repeatCount|repeatDur|requiredExtensions|requiredFeatures|restart|result|rotate|rx|ry|scale|seed|shapeRendering|slope|spacing|specularConstant|specularExponent|speed|spreadMethod|startOffset|stdDeviation|stemh|stemv|stitchTiles|stopColor|stopOpacity|strikethroughPosition|strikethroughThickness|string|stroke|strokeDasharray|strokeDashoffset|strokeLinecap|strokeLinejoin|strokeMiterlimit|strokeOpacity|strokeWidth|surfaceScale|systemLanguage|tableValues|targetX|targetY|textAnchor|textDecoration|textRendering|textLength|to|transform|u1|u2|underlinePosition|underlineThickness|unicode|unicodeBidi|unicodeRange|unitsPerEm|vAlphabetic|vHanging|vIdeographic|vMathematical|values|vectorEffect|version|vertAdvY|vertOriginX|vertOriginY|viewBox|viewTarget|visibility|widths|wordSpacing|writingMode|x|xHeight|x1|x2|xChannelSelector|xlinkActuate|xlinkArcrole|xlinkHref|xlinkRole|xlinkShow|xlinkTitle|xlinkType|xmlBase|xmlns|xmlnsXlink|xmlLang|xmlSpace|y|y1|y2|yChannelSelector|z|zoomAndPan|for|class|autofocus)|(([Dd][Aa][Tt][Aa]|[Aa][Rr][Ii][Aa]|x)-.*))$/;
 var isPropValid = /* @__PURE__ */ memoize(
-  function(prop2) {
-    return reactPropsRegex.test(prop2) || prop2.charCodeAt(0) === 111 && prop2.charCodeAt(1) === 110 && prop2.charCodeAt(2) < 91;
+  function(prop) {
+    return reactPropsRegex.test(prop) || prop.charCodeAt(0) === 111 && prop.charCodeAt(1) === 110 && prop.charCodeAt(2) < 91;
   }
   /* Z+1 */
 );
@@ -41460,9 +41448,9 @@ function createBreakpoints(breakpoints) {
     const value = typeof values2[key] === "number" ? values2[key] : key;
     return `@media (max-width:${value - step / 100}${unit})`;
   }
-  function between(start, end2) {
-    const endIndex = keys.indexOf(end2);
-    return `@media (min-width:${typeof values2[start] === "number" ? values2[start] : start}${unit}) and (max-width:${(endIndex !== -1 && typeof values2[keys[endIndex]] === "number" ? values2[keys[endIndex]] : end2) - step / 100}${unit})`;
+  function between(start, end) {
+    const endIndex = keys.indexOf(end);
+    return `@media (min-width:${typeof values2[start] === "number" ? values2[start] : start}${unit}) and (max-width:${(endIndex !== -1 && typeof values2[keys[endIndex]] === "number" ? values2[keys[endIndex]] : end) - step / 100}${unit})`;
   }
   function only(key) {
     if (keys.indexOf(key) + 1 < keys.length) {
@@ -41470,7 +41458,7 @@ function createBreakpoints(breakpoints) {
     }
     return up(key);
   }
-  function not2(key) {
+  function not(key) {
     const keyIndex = keys.indexOf(key);
     if (keyIndex === 0) {
       return up(keys[1]);
@@ -41487,7 +41475,7 @@ function createBreakpoints(breakpoints) {
     down,
     between,
     only,
-    not: not2,
+    not,
     unit,
     ...other
   };
@@ -41602,8 +41590,8 @@ function preprocessStyles(input) {
   return result;
 }
 const systemDefaultTheme = createTheme$1();
-function shouldForwardProp(prop2) {
-  return prop2 !== "ownerState" && prop2 !== "theme" && prop2 !== "sx" && prop2 !== "as";
+function shouldForwardProp(prop) {
+  return prop !== "ownerState" && prop !== "theme" && prop !== "sx" && prop !== "as";
 }
 function defaultOverridesResolver(slot) {
   if (!slot) {
@@ -41837,15 +41825,15 @@ function hexToRgb(color2) {
   const re = new RegExp(`.{1,${color2.length >= 6 ? 2 : 1}}`, "g");
   let colors = color2.match(re);
   if (colors && colors[0].length === 1) {
-    colors = colors.map((n2) => n2 + n2);
+    colors = colors.map((n) => n + n);
   }
   if (process.env.NODE_ENV !== "production") {
     if (color2.length !== color2.trim().length) {
       console.error(`MUI: The color: "${color2}" is invalid. Make sure the color input doesn't contain leading/trailing space.`);
     }
   }
-  return colors ? `rgb${colors.length === 4 ? "a" : ""}(${colors.map((n2, index2) => {
-    return index2 < 3 ? parseInt(n2, 16) : Math.round(parseInt(n2, 16) / 255 * 1e3) / 1e3;
+  return colors ? `rgb${colors.length === 4 ? "a" : ""}(${colors.map((n, index) => {
+    return index < 3 ? parseInt(n, 16) : Math.round(parseInt(n, 16) / 255 * 1e3) / 1e3;
   }).join(", ")})` : "";
 }
 function decomposeColor(color2) {
@@ -41885,7 +41873,7 @@ The following color spaces are supported: srgb, display-p3, a98-rgb, prophoto-rg
 }
 const colorChannel = (color2) => {
   const decomposedColor = decomposeColor(color2);
-  return decomposedColor.values.slice(0, 3).map((val2, idx) => decomposedColor.type.includes("hsl") && idx !== 0 ? `${val2}%` : val2).join(" ");
+  return decomposedColor.values.slice(0, 3).map((val, idx) => decomposedColor.type.includes("hsl") && idx !== 0 ? `${val}%` : val).join(" ");
 };
 const private_safeColorChannel = (color2, warning) => {
   try {
@@ -41906,7 +41894,7 @@ function recomposeColor(color2) {
     values: values2
   } = color2;
   if (type2.includes("rgb")) {
-    values2 = values2.map((n2, i) => i < 3 ? parseInt(n2, 10) : n2);
+    values2 = values2.map((n, i) => i < 3 ? parseInt(n, 10) : n);
   } else if (type2.includes("hsl")) {
     values2[1] = `${values2[1]}%`;
     values2[2] = `${values2[2]}%`;
@@ -41924,10 +41912,10 @@ function hslToRgb(color2) {
     values: values2
   } = color2;
   const h = values2[0];
-  const s2 = values2[1] / 100;
-  const l2 = values2[2] / 100;
-  const a = s2 * Math.min(l2, 1 - l2);
-  const f = (n2, k = (n2 + h / 30) % 12) => l2 - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
+  const s = values2[1] / 100;
+  const l = values2[2] / 100;
+  const a = s * Math.min(l, 1 - l);
+  const f = (n, k = (n + h / 30) % 12) => l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
   let type2 = "rgb";
   const rgb = [Math.round(f(0) * 255), Math.round(f(8) * 255), Math.round(f(4) * 255)];
   if (color2.type === "hsla") {
@@ -41942,11 +41930,11 @@ function hslToRgb(color2) {
 function getLuminance(color2) {
   color2 = decomposeColor(color2);
   let rgb = color2.type === "hsl" || color2.type === "hsla" ? decomposeColor(hslToRgb(color2)).values : color2.values;
-  rgb = rgb.map((val2) => {
+  rgb = rgb.map((val) => {
     if (color2.type !== "color") {
-      val2 /= 255;
+      val /= 255;
     }
-    return val2 <= 0.03928 ? val2 / 12.92 : ((val2 + 0.055) / 1.055) ** 2.4;
+    return val <= 0.03928 ? val / 12.92 : ((val + 0.055) / 1.055) ** 2.4;
   });
   return Number((0.2126 * rgb[0] + 0.7152 * rgb[1] + 0.0722 * rgb[2]).toFixed(3));
 }
@@ -42108,8 +42096,8 @@ function createGetCssVar$1(prefix2 = "") {
 }
 const assignNestedKeys = (obj, keys, value, arrayKeys = []) => {
   let temp = obj;
-  keys.forEach((k, index2) => {
-    if (index2 === keys.length - 1) {
+  keys.forEach((k, index) => {
+    if (index === keys.length - 1) {
       if (Array.isArray(temp)) {
         temp[Number(k)] = value;
       } else if (temp && typeof temp === "object") {
@@ -42141,7 +42129,7 @@ const walkObjectDeep = (obj, callback, shouldSkipPaths) => {
 };
 const getCssValue = (keys, value) => {
   if (typeof value === "number") {
-    if (["lineHeight", "fontWeight", "opacity", "zIndex"].some((prop2) => keys.includes(prop2))) {
+    if (["lineHeight", "fontWeight", "opacity", "zIndex"].some((prop) => keys.includes(prop))) {
       return value;
     }
     const lastKey = keys[keys.length - 1];
@@ -42157,7 +42145,7 @@ function cssVarsParser(theme, options) {
     prefix: prefix2,
     shouldSkipGeneratingVar: shouldSkipGeneratingVar2
   } = options || {};
-  const css2 = {};
+  const css = {};
   const vars = {};
   const varsWithDefaults = {};
   walkObjectDeep(
@@ -42167,7 +42155,7 @@ function cssVarsParser(theme, options) {
         if (!shouldSkipGeneratingVar2 || !shouldSkipGeneratingVar2(keys, value)) {
           const cssVar = `--${prefix2 ? `${prefix2}-` : ""}${keys.join("-")}`;
           const resolvedValue = getCssValue(keys, value);
-          Object.assign(css2, {
+          Object.assign(css, {
             [cssVar]: resolvedValue
           });
           assignNestedKeys(vars, keys, `var(${cssVar})`, arrayKeys);
@@ -42179,7 +42167,7 @@ function cssVarsParser(theme, options) {
     // skip 'vars/*' paths
   );
   return {
-    css: css2,
+    css,
     vars,
     varsWithDefaults
   };
@@ -42210,24 +42198,24 @@ function prepareCssVars(theme, parserConfig = {}) {
   Object.entries(otherColorSchemes || {}).forEach(([key, scheme]) => {
     const {
       vars,
-      css: css2,
+      css,
       varsWithDefaults
     } = cssVarsParser(scheme, parserConfig);
     themeVars = deepmerge(themeVars, varsWithDefaults);
     colorSchemesMap[key] = {
-      css: css2,
+      css,
       vars
     };
   });
   if (defaultScheme) {
     const {
-      css: css2,
+      css,
       vars,
       varsWithDefaults
     } = cssVarsParser(defaultScheme, parserConfig);
     themeVars = deepmerge(themeVars, varsWithDefaults);
     colorSchemesMap[defaultColorScheme] = {
-      css: css2,
+      css,
       vars
     };
   }
@@ -42279,11 +42267,11 @@ function prepareCssVars(theme, parserConfig = {}) {
     var _a, _b;
     const stylesheets = [];
     const colorScheme = theme.defaultColorScheme || "light";
-    function insertStyleSheet(key, css2) {
-      if (Object.keys(css2).length) {
+    function insertStyleSheet(key, css) {
+      if (Object.keys(css).length) {
         stylesheets.push(typeof key === "string" ? {
           [key]: {
-            ...css2
+            ...css
           }
         } : key);
       }
@@ -42297,29 +42285,29 @@ function prepareCssVars(theme, parserConfig = {}) {
     } = colorSchemesMap;
     if (defaultSchemeVal) {
       const {
-        css: css2
+        css
       } = defaultSchemeVal;
       const cssColorSheme = (_b = (_a = colorSchemes[colorScheme]) == null ? void 0 : _a.palette) == null ? void 0 : _b.mode;
       const finalCss = !disableCssColorScheme && cssColorSheme ? {
         colorScheme: cssColorSheme,
-        ...css2
+        ...css
       } : {
-        ...css2
+        ...css
       };
       insertStyleSheet(getSelector(colorScheme, {
         ...finalCss
       }), finalCss);
     }
     Object.entries(other).forEach(([key, {
-      css: css2
+      css
     }]) => {
       var _a2, _b2;
       const cssColorSheme = (_b2 = (_a2 = colorSchemes[key]) == null ? void 0 : _a2.palette) == null ? void 0 : _b2.mode;
       const finalCss = !disableCssColorScheme && cssColorSheme ? {
         colorScheme: cssColorSheme,
-        ...css2
+        ...css
       } : {
-        ...css2
+        ...css
       };
       insertStyleSheet(getSelector(key, {
         ...finalCss
@@ -42458,7 +42446,7 @@ const lightBlue = {
   A400: "#00b0ff",
   A700: "#0091ea"
 };
-const green$1 = {
+const green = {
   50: "#e8f5e9",
   100: "#c8e6c9",
   200: "#a5d6a7",
@@ -42616,15 +42604,15 @@ function getDefaultInfo(mode = "light") {
 function getDefaultSuccess(mode = "light") {
   if (mode === "dark") {
     return {
-      main: green$1[400],
-      light: green$1[300],
-      dark: green$1[700]
+      main: green[400],
+      light: green[300],
+      dark: green[700]
     };
   }
   return {
-    main: green$1[800],
-    light: green$1[500],
-    dark: green$1[900]
+    main: green[800],
+    light: green[500],
+    dark: green[900]
   };
 }
 function getDefaultWarning(mode = "light") {
@@ -42948,17 +42936,17 @@ function createTransitions(inputTransitions) {
     } = options;
     if (process.env.NODE_ENV !== "production") {
       const isString2 = (value) => typeof value === "string";
-      const isNumber2 = (value) => !Number.isNaN(parseFloat(value));
+      const isNumber = (value) => !Number.isNaN(parseFloat(value));
       if (!isString2(props) && !Array.isArray(props)) {
         console.error('MUI: Argument "props" must be a string or Array.');
       }
-      if (!isNumber2(durationOption) && !isString2(durationOption)) {
+      if (!isNumber(durationOption) && !isString2(durationOption)) {
         console.error(`MUI: Argument "duration" must be a number or a string but found ${durationOption}.`);
       }
       if (!isString2(easingOption)) {
         console.error('MUI: Argument "easing" must be a string.');
       }
-      if (!isNumber2(delay) && !isString2(delay)) {
+      if (!isNumber(delay) && !isString2(delay)) {
         console.error('MUI: Argument "delay" must be a number or a string.');
       }
       if (typeof options !== "object") {
@@ -42988,8 +42976,8 @@ const zIndex = {
   snackbar: 1400,
   tooltip: 1500
 };
-function isSerializable(val2) {
-  return isPlainObject(val2) || typeof val2 === "undefined" || typeof val2 === "string" || typeof val2 === "boolean" || typeof val2 === "number" || Array.isArray(val2);
+function isSerializable(val) {
+  return isPlainObject(val) || typeof val === "undefined" || typeof val === "string" || typeof val === "boolean" || typeof val === "number" || Array.isArray(val);
 }
 function stringifyTheme(baseTheme = {}) {
   const serializableTheme = {
@@ -42997,8 +42985,8 @@ function stringifyTheme(baseTheme = {}) {
   };
   function serializeTheme(object) {
     const array = Object.entries(object);
-    for (let index2 = 0; index2 < array.length; index2++) {
-      const [key, value] = array[index2];
+    for (let index = 0; index < array.length; index++) {
+      const [key, value] = array[index];
       if (!isSerializable(value) || key.startsWith("unstable_")) {
         delete object[key];
       } else if (isPlainObject(value)) {
@@ -43096,11 +43084,11 @@ function getOverlayAlpha(elevation) {
   }
   return Math.round(alphaValue * 10) / 1e3;
 }
-const defaultDarkOverlays = [...Array(25)].map((_, index2) => {
-  if (index2 === 0) {
+const defaultDarkOverlays = [...Array(25)].map((_, index) => {
+  if (index === 0) {
     return "none";
   }
-  const overlay = getOverlayAlpha(index2);
+  const overlay = getOverlayAlpha(index);
   return `linear-gradient(rgba(255 255 255 / ${overlay}), rgba(255 255 255 / ${overlay}))`;
 });
 function getOpacity(mode) {
@@ -43140,8 +43128,8 @@ function shouldSkipGeneratingVar(keys) {
   return !!keys[0].match(/(cssVarPrefix|colorSchemeSelector|rootSelector|typography|mixins|breakpoints|direction|transitions)/) || !!keys[0].match(/sxConfig$/) || // ends with sxConfig
   keys[0] === "palette" && !!((_a = keys[1]) == null ? void 0 : _a.match(/(mode|contrastThreshold|tonalOffset)/));
 }
-const excludeVariablesFromRoot = (cssVarPrefix) => [...[...Array(25)].map((_, index2) => `--${cssVarPrefix ? `${cssVarPrefix}-` : ""}overlays-${index2}`), `--${cssVarPrefix ? `${cssVarPrefix}-` : ""}palette-AppBar-darkBg`, `--${cssVarPrefix ? `${cssVarPrefix}-` : ""}palette-AppBar-darkColor`];
-const defaultGetSelector = (theme) => (colorScheme, css2) => {
+const excludeVariablesFromRoot = (cssVarPrefix) => [...[...Array(25)].map((_, index) => `--${cssVarPrefix ? `${cssVarPrefix}-` : ""}overlays-${index}`), `--${cssVarPrefix ? `${cssVarPrefix}-` : ""}palette-AppBar-darkBg`, `--${cssVarPrefix ? `${cssVarPrefix}-` : ""}palette-AppBar-darkColor`];
+const defaultGetSelector = (theme) => (colorScheme, css) => {
   const root = theme.rootSelector || ":root";
   const selector = theme.colorSchemeSelector;
   let rule = selector;
@@ -43158,12 +43146,12 @@ const defaultGetSelector = (theme) => (colorScheme, css2) => {
     if (colorScheme === "dark") {
       const excludedVariables = {};
       excludeVariablesFromRoot(theme.cssVarPrefix).forEach((cssVar) => {
-        excludedVariables[cssVar] = css2[cssVar];
-        delete css2[cssVar];
+        excludedVariables[cssVar] = css[cssVar];
+        delete css[cssVar];
       });
       if (rule === "media") {
         return {
-          [root]: css2,
+          [root]: css,
           [`@media (prefers-color-scheme: dark)`]: {
             [root]: excludedVariables
           }
@@ -43172,12 +43160,12 @@ const defaultGetSelector = (theme) => (colorScheme, css2) => {
       if (rule) {
         return {
           [rule.replace("%s", colorScheme)]: excludedVariables,
-          [`${root}, ${rule.replace("%s", colorScheme)}`]: css2
+          [`${root}, ${rule.replace("%s", colorScheme)}`]: css
         };
       }
       return {
         [root]: {
-          ...css2,
+          ...css,
           ...excludedVariables
         }
       };
@@ -43189,7 +43177,7 @@ const defaultGetSelector = (theme) => (colorScheme, css2) => {
     if (rule === "media") {
       return {
         [`@media (prefers-color-scheme: ${String(colorScheme)})`]: {
-          [root]: css2
+          [root]: css
         }
       };
     }
@@ -43629,10 +43617,10 @@ function createTheme(options = {}, ...args) {
 }
 const defaultTheme = createTheme();
 const THEME_ID = "$$material";
-function slotShouldForwardProp(prop2) {
-  return prop2 !== "ownerState" && prop2 !== "theme" && prop2 !== "sx" && prop2 !== "as";
+function slotShouldForwardProp(prop) {
+  return prop !== "ownerState" && prop !== "theme" && prop !== "sx" && prop !== "as";
 }
-const rootShouldForwardProp = (prop2) => slotShouldForwardProp(prop2) && prop2 !== "classes";
+const rootShouldForwardProp = (prop) => slotShouldForwardProp(prop) && prop !== "classes";
 const styled = createStyled2({
   themeId: THEME_ID,
   defaultTheme,
@@ -43779,7 +43767,7 @@ const SvgIcon = /* @__PURE__ */ React.forwardRef(function SvgIcon2(inProps, ref2
     name: "MuiSvgIcon"
   });
   const {
-    children: children2,
+    children,
     className,
     color: color2 = "inherit",
     component = "svg",
@@ -43790,7 +43778,7 @@ const SvgIcon = /* @__PURE__ */ React.forwardRef(function SvgIcon2(inProps, ref2
     viewBox = "0 0 24 24",
     ...other
   } = props;
-  const hasSvgAsChild = /* @__PURE__ */ React.isValidElement(children2) && children2.type === "svg";
+  const hasSvgAsChild = /* @__PURE__ */ React.isValidElement(children) && children.type === "svg";
   const ownerState = {
     ...props,
     color: color2,
@@ -43816,9 +43804,9 @@ const SvgIcon = /* @__PURE__ */ React.forwardRef(function SvgIcon2(inProps, ref2
     ref: ref2,
     ...more,
     ...other,
-    ...hasSvgAsChild && children2.props,
+    ...hasSvgAsChild && children.props,
     ownerState,
-    children: [hasSvgAsChild ? children2.props.children : children2, titleAccess ? /* @__PURE__ */ jsxRuntimeExports.jsx("title", {
+    children: [hasSvgAsChild ? children.props.children : children, titleAccess ? /* @__PURE__ */ jsxRuntimeExports.jsx("title", {
       children: titleAccess
     }) : null]
   });
@@ -43973,15 +43961,15 @@ function requirePluralize() {
         return token2.toLowerCase();
       }
       function interpolate(str, args) {
-        return str.replace(/\$(\d{1,2})/g, function(match2, index2) {
-          return args[index2] || "";
+        return str.replace(/\$(\d{1,2})/g, function(match2, index) {
+          return args[index] || "";
         });
       }
       function replace2(word, rule) {
-        return word.replace(rule[0], function(match2, index2) {
+        return word.replace(rule[0], function(match2, index) {
           var result = interpolate(rule[1], arguments);
           if (match2 === "") {
-            return restoreCase(word[index2 - 1], result);
+            return restoreCase(word[index - 1], result);
           }
           return restoreCase(match2, result);
         });
@@ -44293,14 +44281,14 @@ var pluralizeExports = requirePluralize();
 const toUnderscore = (input) => {
   return input.replace(/([A-Z])/g, ($1) => "_" + $1.toLowerCase());
 };
-const toPlural = (s2) => {
-  return pluralizeExports.plural(s2);
+const toPlural = (s) => {
+  return pluralizeExports.plural(s);
 };
-const singularize = (s2) => {
-  return pluralizeExports.singular(s2);
+const singularize = (s) => {
+  return pluralizeExports.singular(s);
 };
-function capitalizeFirstLetter(s2) {
-  return s2.charAt(0).toUpperCase() + s2.slice(1);
+function capitalizeFirstLetter(s) {
+  return s.charAt(0).toUpperCase() + s.slice(1);
 }
 const jupKeyIdSuffix = "Id";
 function getTargetObjectTypeCapitalizedName(propertyType) {
@@ -44322,17 +44310,6 @@ const tenantInfo = {
 };
 function includeJupType(list, type2) {
   return list.includes(type2);
-}
-function isPropertyTypeScalar(propertyType) {
-  const { type: type2 } = propertyType;
-  return !includeJupType(["belongs-to", "has-many-paginated", "has-many"], type2);
-}
-function isPropertyTypeId(propertyType) {
-  const { type: type2 } = propertyType;
-  if (includeJupType(["primary-key", "foreign-key"], type2)) {
-    return true;
-  }
-  return false;
 }
 function isPropertyTypeBelongsTo(propertyType) {
   const { type: type2 } = propertyType;
@@ -44825,14 +44802,14 @@ function requireDefineProperties() {
       defineDataProperty2(object, name, value);
     }
   };
-  var defineProperties = function(object, map2) {
+  var defineProperties = function(object, map) {
     var predicates = arguments.length > 2 ? arguments[2] : {};
-    var props = keys(map2);
+    var props = keys(map);
     if (hasSymbols2) {
-      props = concat.call(props, Object.getOwnPropertySymbols(map2));
+      props = concat.call(props, Object.getOwnPropertySymbols(map));
     }
     for (var i = 0; i < props.length; i += 1) {
-      defineProperty(object, props[i], map2[props[i]], predicates[props[i]]);
+      defineProperty(object, props[i], map[props[i]], predicates[props[i]]);
     }
   };
   defineProperties.supportsDescriptors = !!supportsDescriptors;
@@ -44896,13 +44873,13 @@ function requireAbs() {
   abs = Math.abs;
   return abs;
 }
-var floor$1;
+var floor;
 var hasRequiredFloor;
 function requireFloor() {
-  if (hasRequiredFloor) return floor$1;
+  if (hasRequiredFloor) return floor;
   hasRequiredFloor = 1;
-  floor$1 = Math.floor;
-  return floor$1;
+  floor = Math.floor;
+  return floor;
 }
 var max;
 var hasRequiredMax;
@@ -45075,9 +45052,9 @@ function requireImplementation$1() {
     }
     return arr;
   };
-  var slicy = function slicy2(arrLike, offset2) {
+  var slicy = function slicy2(arrLike, offset) {
     var arr = [];
-    for (var i = offset2, j = 0; i < arrLike.length; i += 1, j += 1) {
+    for (var i = offset, j = 0; i < arrLike.length; i += 1, j += 1) {
       arr[j] = arrLike[i];
     }
     return arr;
@@ -45194,10 +45171,10 @@ function requireCallBindApplyHelpers() {
   };
   return callBindApplyHelpers;
 }
-var get$1;
+var get;
 var hasRequiredGet$1;
 function requireGet$1() {
-  if (hasRequiredGet$1) return get$1;
+  if (hasRequiredGet$1) return get;
   hasRequiredGet$1 = 1;
   var callBind2 = requireCallBindApplyHelpers();
   var gOPD2 = /* @__PURE__ */ requireGopd();
@@ -45217,13 +45194,13 @@ function requireGet$1() {
   );
   var $Object = Object;
   var $getPrototypeOf = $Object.getPrototypeOf;
-  get$1 = desc && typeof desc.get === "function" ? callBind2([desc.get]) : typeof $getPrototypeOf === "function" ? (
+  get = desc && typeof desc.get === "function" ? callBind2([desc.get]) : typeof $getPrototypeOf === "function" ? (
     /** @type {import('./get')} */
     function getDunder(value) {
       return $getPrototypeOf(value == null ? value : $Object(value));
     }
   ) : false;
-  return get$1;
+  return get;
 }
 var getProto;
 var hasRequiredGetProto;
@@ -45478,7 +45455,7 @@ function requireGetIntrinsic() {
     "%WeakSetPrototype%": ["WeakSet", "prototype"]
   };
   var bind = requireFunctionBind();
-  var hasOwn2 = /* @__PURE__ */ requireHasown();
+  var hasOwn = /* @__PURE__ */ requireHasown();
   var $concat = bind.call($call, Array.prototype.concat);
   var $spliceApply = bind.call($apply, Array.prototype.splice);
   var $replace = bind.call($call, String.prototype.replace);
@@ -45487,11 +45464,11 @@ function requireGetIntrinsic() {
   var rePropName = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g;
   var reEscapeChar = /\\(\\)?/g;
   var stringToPath = function stringToPath2(string) {
-    var first2 = $strSlice(string, 0, 1);
-    var last2 = $strSlice(string, -1);
-    if (first2 === "%" && last2 !== "%") {
+    var first = $strSlice(string, 0, 1);
+    var last = $strSlice(string, -1);
+    if (first === "%" && last !== "%") {
       throw new $SyntaxError("invalid intrinsic syntax, expected closing `%`");
-    } else if (last2 === "%" && first2 !== "%") {
+    } else if (last === "%" && first !== "%") {
       throw new $SyntaxError("invalid intrinsic syntax, expected opening `%`");
     }
     var result = [];
@@ -45503,11 +45480,11 @@ function requireGetIntrinsic() {
   var getBaseIntrinsic = function getBaseIntrinsic2(name, allowMissing) {
     var intrinsicName = name;
     var alias;
-    if (hasOwn2(LEGACY_ALIASES, intrinsicName)) {
+    if (hasOwn(LEGACY_ALIASES, intrinsicName)) {
       alias = LEGACY_ALIASES[intrinsicName];
       intrinsicName = "%" + alias[0] + "%";
     }
-    if (hasOwn2(INTRINSICS, intrinsicName)) {
+    if (hasOwn(INTRINSICS, intrinsicName)) {
       var value = INTRINSICS[intrinsicName];
       if (value === needsEval) {
         value = doEval(intrinsicName);
@@ -45546,9 +45523,9 @@ function requireGetIntrinsic() {
     }
     for (var i = 1, isOwn = true; i < parts.length; i += 1) {
       var part = parts[i];
-      var first2 = $strSlice(part, 0, 1);
-      var last2 = $strSlice(part, -1);
-      if ((first2 === '"' || first2 === "'" || first2 === "`" || (last2 === '"' || last2 === "'" || last2 === "`")) && first2 !== last2) {
+      var first = $strSlice(part, 0, 1);
+      var last = $strSlice(part, -1);
+      if ((first === '"' || first === "'" || first === "`" || (last === '"' || last === "'" || last === "`")) && first !== last) {
         throw new $SyntaxError("property names with quotes must have matching quotes");
       }
       if (part === "constructor" || !isOwn) {
@@ -45556,7 +45533,7 @@ function requireGetIntrinsic() {
       }
       intrinsicBaseName += "." + part;
       intrinsicRealName = "%" + intrinsicBaseName + "%";
-      if (hasOwn2(INTRINSICS, intrinsicRealName)) {
+      if (hasOwn(INTRINSICS, intrinsicRealName)) {
         value = INTRINSICS[intrinsicRealName];
       } else if (value != null) {
         if (!(part in value)) {
@@ -45574,7 +45551,7 @@ function requireGetIntrinsic() {
             value = value[part];
           }
         } else {
-          isOwn = hasOwn2(value, part);
+          isOwn = hasOwn(value, part);
           value = value[part];
         }
         if (isOwn && !skipFurtherCaching) {
@@ -45844,13 +45821,13 @@ function requireNodePolyglot() {
   var defaultReplace = String.prototype.replace;
   var split = String.prototype.split;
   var delimiter2 = "||||";
-  var russianPluralGroups = function(n2) {
-    var lastTwo = n2 % 100;
-    var end2 = lastTwo % 10;
-    if (lastTwo !== 11 && end2 === 1) {
+  var russianPluralGroups = function(n) {
+    var lastTwo = n % 100;
+    var end = lastTwo % 10;
+    if (lastTwo !== 11 && end === 1) {
       return 0;
     }
-    if (2 <= end2 && end2 <= 4 && !(lastTwo >= 12 && lastTwo <= 14)) {
+    if (2 <= end && end <= 4 && !(lastTwo >= 12 && lastTwo <= 14)) {
       return 1;
     }
     return 2;
@@ -45858,11 +45835,11 @@ function requireNodePolyglot() {
   var defaultPluralRules = {
     // Mapping from pluralization group plural logic.
     pluralTypes: {
-      arabic: function(n2) {
-        if (n2 < 3) {
-          return n2;
+      arabic: function(n) {
+        if (n < 3) {
+          return n;
         }
-        var lastTwo = n2 % 100;
+        var lastTwo = n % 100;
         if (lastTwo >= 3 && lastTwo <= 10) return 3;
         return lastTwo >= 11 ? 4 : 5;
       },
@@ -45871,37 +45848,37 @@ function requireNodePolyglot() {
         return 0;
       },
       croatian: russianPluralGroups,
-      french: function(n2) {
-        return n2 >= 2 ? 1 : 0;
+      french: function(n) {
+        return n >= 2 ? 1 : 0;
       },
-      german: function(n2) {
-        return n2 !== 1 ? 1 : 0;
+      german: function(n) {
+        return n !== 1 ? 1 : 0;
       },
       russian: russianPluralGroups,
-      lithuanian: function(n2) {
-        if (n2 % 10 === 1 && n2 % 100 !== 11) {
+      lithuanian: function(n) {
+        if (n % 10 === 1 && n % 100 !== 11) {
           return 0;
         }
-        return n2 % 10 >= 2 && n2 % 10 <= 9 && (n2 % 100 < 11 || n2 % 100 > 19) ? 1 : 2;
+        return n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19) ? 1 : 2;
       },
-      czech: function(n2) {
-        if (n2 === 1) {
+      czech: function(n) {
+        if (n === 1) {
           return 0;
         }
-        return n2 >= 2 && n2 <= 4 ? 1 : 2;
+        return n >= 2 && n <= 4 ? 1 : 2;
       },
-      polish: function(n2) {
-        if (n2 === 1) {
+      polish: function(n) {
+        if (n === 1) {
           return 0;
         }
-        var end2 = n2 % 10;
-        return 2 <= end2 && end2 <= 4 && (n2 % 100 < 10 || n2 % 100 >= 20) ? 1 : 2;
+        var end = n % 10;
+        return 2 <= end && end <= 4 && (n % 100 < 10 || n % 100 >= 20) ? 1 : 2;
       },
-      icelandic: function(n2) {
-        return n2 % 10 !== 1 || n2 % 100 === 11 ? 1 : 0;
+      icelandic: function(n) {
+        return n % 10 !== 1 || n % 100 === 11 ? 1 : 0;
       },
-      slovenian: function(n2) {
-        var lastTwo = n2 % 100;
+      slovenian: function(n) {
+        var lastTwo = n % 100;
         if (lastTwo === 1) {
           return 0;
         }
@@ -45913,12 +45890,12 @@ function requireNodePolyglot() {
         }
         return 3;
       },
-      romanian: function(n2) {
-        if (n2 === 1) {
+      romanian: function(n) {
+        if (n === 1) {
           return 0;
         }
-        var lastTwo = n2 % 100;
-        if (n2 === 0 || lastTwo >= 2 && lastTwo <= 19) {
+        var lastTwo = n % 100;
+        if (n === 0 || lastTwo >= 2 && lastTwo <= 19) {
           return 1;
         }
         return 2;
@@ -47098,6361 +47075,6 @@ const nlNLPickers = {
   empty: "Leeg"
 };
 const nlNL = getPickersLocalization(nlNLPickers);
-class LuxonError extends Error {
-}
-class InvalidDateTimeError extends LuxonError {
-  constructor(reason) {
-    super(`Invalid DateTime: ${reason.toMessage()}`);
-  }
-}
-class InvalidIntervalError extends LuxonError {
-  constructor(reason) {
-    super(`Invalid Interval: ${reason.toMessage()}`);
-  }
-}
-class InvalidDurationError extends LuxonError {
-  constructor(reason) {
-    super(`Invalid Duration: ${reason.toMessage()}`);
-  }
-}
-class ConflictingSpecificationError extends LuxonError {
-}
-class InvalidUnitError extends LuxonError {
-  constructor(unit) {
-    super(`Invalid unit ${unit}`);
-  }
-}
-class InvalidArgumentError extends LuxonError {
-}
-class ZoneIsAbstractError extends LuxonError {
-  constructor() {
-    super("Zone is an abstract class");
-  }
-}
-const n = "numeric", s = "short", l = "long";
-const DATE_SHORT = {
-  year: n,
-  month: n,
-  day: n
-};
-const DATE_MED = {
-  year: n,
-  month: s,
-  day: n
-};
-const DATE_MED_WITH_WEEKDAY = {
-  year: n,
-  month: s,
-  day: n,
-  weekday: s
-};
-const DATE_FULL = {
-  year: n,
-  month: l,
-  day: n
-};
-const DATE_HUGE = {
-  year: n,
-  month: l,
-  day: n,
-  weekday: l
-};
-const TIME_SIMPLE = {
-  hour: n,
-  minute: n
-};
-const TIME_WITH_SECONDS = {
-  hour: n,
-  minute: n,
-  second: n
-};
-const TIME_WITH_SHORT_OFFSET = {
-  hour: n,
-  minute: n,
-  second: n,
-  timeZoneName: s
-};
-const TIME_WITH_LONG_OFFSET = {
-  hour: n,
-  minute: n,
-  second: n,
-  timeZoneName: l
-};
-const TIME_24_SIMPLE = {
-  hour: n,
-  minute: n,
-  hourCycle: "h23"
-};
-const TIME_24_WITH_SECONDS = {
-  hour: n,
-  minute: n,
-  second: n,
-  hourCycle: "h23"
-};
-const TIME_24_WITH_SHORT_OFFSET = {
-  hour: n,
-  minute: n,
-  second: n,
-  hourCycle: "h23",
-  timeZoneName: s
-};
-const TIME_24_WITH_LONG_OFFSET = {
-  hour: n,
-  minute: n,
-  second: n,
-  hourCycle: "h23",
-  timeZoneName: l
-};
-const DATETIME_SHORT = {
-  year: n,
-  month: n,
-  day: n,
-  hour: n,
-  minute: n
-};
-const DATETIME_SHORT_WITH_SECONDS = {
-  year: n,
-  month: n,
-  day: n,
-  hour: n,
-  minute: n,
-  second: n
-};
-const DATETIME_MED = {
-  year: n,
-  month: s,
-  day: n,
-  hour: n,
-  minute: n
-};
-const DATETIME_MED_WITH_SECONDS = {
-  year: n,
-  month: s,
-  day: n,
-  hour: n,
-  minute: n,
-  second: n
-};
-const DATETIME_MED_WITH_WEEKDAY = {
-  year: n,
-  month: s,
-  day: n,
-  weekday: s,
-  hour: n,
-  minute: n
-};
-const DATETIME_FULL = {
-  year: n,
-  month: l,
-  day: n,
-  hour: n,
-  minute: n,
-  timeZoneName: s
-};
-const DATETIME_FULL_WITH_SECONDS = {
-  year: n,
-  month: l,
-  day: n,
-  hour: n,
-  minute: n,
-  second: n,
-  timeZoneName: s
-};
-const DATETIME_HUGE = {
-  year: n,
-  month: l,
-  day: n,
-  weekday: l,
-  hour: n,
-  minute: n,
-  timeZoneName: l
-};
-const DATETIME_HUGE_WITH_SECONDS = {
-  year: n,
-  month: l,
-  day: n,
-  weekday: l,
-  hour: n,
-  minute: n,
-  second: n,
-  timeZoneName: l
-};
-class Zone {
-  /**
-   * The type of zone
-   * @abstract
-   * @type {string}
-   */
-  get type() {
-    throw new ZoneIsAbstractError();
-  }
-  /**
-   * The name of this zone.
-   * @abstract
-   * @type {string}
-   */
-  get name() {
-    throw new ZoneIsAbstractError();
-  }
-  /**
-   * The IANA name of this zone.
-   * Defaults to `name` if not overwritten by a subclass.
-   * @abstract
-   * @type {string}
-   */
-  get ianaName() {
-    return this.name;
-  }
-  /**
-   * Returns whether the offset is known to be fixed for the whole year.
-   * @abstract
-   * @type {boolean}
-   */
-  get isUniversal() {
-    throw new ZoneIsAbstractError();
-  }
-  /**
-   * Returns the offset's common name (such as EST) at the specified timestamp
-   * @abstract
-   * @param {number} ts - Epoch milliseconds for which to get the name
-   * @param {Object} opts - Options to affect the format
-   * @param {string} opts.format - What style of offset to return. Accepts 'long' or 'short'.
-   * @param {string} opts.locale - What locale to return the offset name in.
-   * @return {string}
-   */
-  offsetName(ts, opts) {
-    throw new ZoneIsAbstractError();
-  }
-  /**
-   * Returns the offset's value as a string
-   * @abstract
-   * @param {number} ts - Epoch milliseconds for which to get the offset
-   * @param {string} format - What style of offset to return.
-   *                          Accepts 'narrow', 'short', or 'techie'. Returning '+6', '+06:00', or '+0600' respectively
-   * @return {string}
-   */
-  formatOffset(ts, format) {
-    throw new ZoneIsAbstractError();
-  }
-  /**
-   * Return the offset in minutes for this zone at the specified timestamp.
-   * @abstract
-   * @param {number} ts - Epoch milliseconds for which to compute the offset
-   * @return {number}
-   */
-  offset(ts) {
-    throw new ZoneIsAbstractError();
-  }
-  /**
-   * Return whether this Zone is equal to another zone
-   * @abstract
-   * @param {Zone} otherZone - the zone to compare
-   * @return {boolean}
-   */
-  equals(otherZone) {
-    throw new ZoneIsAbstractError();
-  }
-  /**
-   * Return whether this Zone is valid.
-   * @abstract
-   * @type {boolean}
-   */
-  get isValid() {
-    throw new ZoneIsAbstractError();
-  }
-}
-let singleton$1 = null;
-class SystemZone extends Zone {
-  /**
-   * Get a singleton instance of the local zone
-   * @return {SystemZone}
-   */
-  static get instance() {
-    if (singleton$1 === null) {
-      singleton$1 = new SystemZone();
-    }
-    return singleton$1;
-  }
-  /** @override **/
-  get type() {
-    return "system";
-  }
-  /** @override **/
-  get name() {
-    return new Intl.DateTimeFormat().resolvedOptions().timeZone;
-  }
-  /** @override **/
-  get isUniversal() {
-    return false;
-  }
-  /** @override **/
-  offsetName(ts, { format, locale }) {
-    return parseZoneInfo(ts, format, locale);
-  }
-  /** @override **/
-  formatOffset(ts, format) {
-    return formatOffset(this.offset(ts), format);
-  }
-  /** @override **/
-  offset(ts) {
-    return -new Date(ts).getTimezoneOffset();
-  }
-  /** @override **/
-  equals(otherZone) {
-    return otherZone.type === "system";
-  }
-  /** @override **/
-  get isValid() {
-    return true;
-  }
-}
-let dtfCache = {};
-function makeDTF(zone) {
-  if (!dtfCache[zone]) {
-    dtfCache[zone] = new Intl.DateTimeFormat("en-US", {
-      hour12: false,
-      timeZone: zone,
-      year: "numeric",
-      month: "2-digit",
-      day: "2-digit",
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-      era: "short"
-    });
-  }
-  return dtfCache[zone];
-}
-const typeToPos = {
-  year: 0,
-  month: 1,
-  day: 2,
-  era: 3,
-  hour: 4,
-  minute: 5,
-  second: 6
-};
-function hackyOffset(dtf, date) {
-  const formatted = dtf.format(date).replace(/\u200E/g, ""), parsed = /(\d+)\/(\d+)\/(\d+) (AD|BC),? (\d+):(\d+):(\d+)/.exec(formatted), [, fMonth, fDay, fYear, fadOrBc, fHour, fMinute, fSecond] = parsed;
-  return [fYear, fMonth, fDay, fadOrBc, fHour, fMinute, fSecond];
-}
-function partsOffset(dtf, date) {
-  const formatted = dtf.formatToParts(date);
-  const filled = [];
-  for (let i = 0; i < formatted.length; i++) {
-    const { type: type2, value } = formatted[i];
-    const pos = typeToPos[type2];
-    if (type2 === "era") {
-      filled[pos] = value;
-    } else if (!isUndefined(pos)) {
-      filled[pos] = parseInt(value, 10);
-    }
-  }
-  return filled;
-}
-let ianaZoneCache = {};
-class IANAZone extends Zone {
-  /**
-   * @param {string} name - Zone name
-   * @return {IANAZone}
-   */
-  static create(name) {
-    if (!ianaZoneCache[name]) {
-      ianaZoneCache[name] = new IANAZone(name);
-    }
-    return ianaZoneCache[name];
-  }
-  /**
-   * Reset local caches. Should only be necessary in testing scenarios.
-   * @return {void}
-   */
-  static resetCache() {
-    ianaZoneCache = {};
-    dtfCache = {};
-  }
-  /**
-   * Returns whether the provided string is a valid specifier. This only checks the string's format, not that the specifier identifies a known zone; see isValidZone for that.
-   * @param {string} s - The string to check validity on
-   * @example IANAZone.isValidSpecifier("America/New_York") //=> true
-   * @example IANAZone.isValidSpecifier("Sport~~blorp") //=> false
-   * @deprecated For backward compatibility, this forwards to isValidZone, better use `isValidZone()` directly instead.
-   * @return {boolean}
-   */
-  static isValidSpecifier(s2) {
-    return this.isValidZone(s2);
-  }
-  /**
-   * Returns whether the provided string identifies a real zone
-   * @param {string} zone - The string to check
-   * @example IANAZone.isValidZone("America/New_York") //=> true
-   * @example IANAZone.isValidZone("Fantasia/Castle") //=> false
-   * @example IANAZone.isValidZone("Sport~~blorp") //=> false
-   * @return {boolean}
-   */
-  static isValidZone(zone) {
-    if (!zone) {
-      return false;
-    }
-    try {
-      new Intl.DateTimeFormat("en-US", { timeZone: zone }).format();
-      return true;
-    } catch (e) {
-      return false;
-    }
-  }
-  constructor(name) {
-    super();
-    this.zoneName = name;
-    this.valid = IANAZone.isValidZone(name);
-  }
-  /**
-   * The type of zone. `iana` for all instances of `IANAZone`.
-   * @override
-   * @type {string}
-   */
-  get type() {
-    return "iana";
-  }
-  /**
-   * The name of this zone (i.e. the IANA zone name).
-   * @override
-   * @type {string}
-   */
-  get name() {
-    return this.zoneName;
-  }
-  /**
-   * Returns whether the offset is known to be fixed for the whole year:
-   * Always returns false for all IANA zones.
-   * @override
-   * @type {boolean}
-   */
-  get isUniversal() {
-    return false;
-  }
-  /**
-   * Returns the offset's common name (such as EST) at the specified timestamp
-   * @override
-   * @param {number} ts - Epoch milliseconds for which to get the name
-   * @param {Object} opts - Options to affect the format
-   * @param {string} opts.format - What style of offset to return. Accepts 'long' or 'short'.
-   * @param {string} opts.locale - What locale to return the offset name in.
-   * @return {string}
-   */
-  offsetName(ts, { format, locale }) {
-    return parseZoneInfo(ts, format, locale, this.name);
-  }
-  /**
-   * Returns the offset's value as a string
-   * @override
-   * @param {number} ts - Epoch milliseconds for which to get the offset
-   * @param {string} format - What style of offset to return.
-   *                          Accepts 'narrow', 'short', or 'techie'. Returning '+6', '+06:00', or '+0600' respectively
-   * @return {string}
-   */
-  formatOffset(ts, format) {
-    return formatOffset(this.offset(ts), format);
-  }
-  /**
-   * Return the offset in minutes for this zone at the specified timestamp.
-   * @override
-   * @param {number} ts - Epoch milliseconds for which to compute the offset
-   * @return {number}
-   */
-  offset(ts) {
-    const date = new Date(ts);
-    if (isNaN(date)) return NaN;
-    const dtf = makeDTF(this.name);
-    let [year, month, day, adOrBc, hour, minute, second] = dtf.formatToParts ? partsOffset(dtf, date) : hackyOffset(dtf, date);
-    if (adOrBc === "BC") {
-      year = -Math.abs(year) + 1;
-    }
-    const adjustedHour = hour === 24 ? 0 : hour;
-    const asUTC = objToLocalTS({
-      year,
-      month,
-      day,
-      hour: adjustedHour,
-      minute,
-      second,
-      millisecond: 0
-    });
-    let asTS = +date;
-    const over = asTS % 1e3;
-    asTS -= over >= 0 ? over : 1e3 + over;
-    return (asUTC - asTS) / (60 * 1e3);
-  }
-  /**
-   * Return whether this Zone is equal to another zone
-   * @override
-   * @param {Zone} otherZone - the zone to compare
-   * @return {boolean}
-   */
-  equals(otherZone) {
-    return otherZone.type === "iana" && otherZone.name === this.name;
-  }
-  /**
-   * Return whether this Zone is valid.
-   * @override
-   * @type {boolean}
-   */
-  get isValid() {
-    return this.valid;
-  }
-}
-let intlLFCache = {};
-function getCachedLF(locString, opts = {}) {
-  const key = JSON.stringify([locString, opts]);
-  let dtf = intlLFCache[key];
-  if (!dtf) {
-    dtf = new Intl.ListFormat(locString, opts);
-    intlLFCache[key] = dtf;
-  }
-  return dtf;
-}
-let intlDTCache = {};
-function getCachedDTF(locString, opts = {}) {
-  const key = JSON.stringify([locString, opts]);
-  let dtf = intlDTCache[key];
-  if (!dtf) {
-    dtf = new Intl.DateTimeFormat(locString, opts);
-    intlDTCache[key] = dtf;
-  }
-  return dtf;
-}
-let intlNumCache = {};
-function getCachedINF(locString, opts = {}) {
-  const key = JSON.stringify([locString, opts]);
-  let inf = intlNumCache[key];
-  if (!inf) {
-    inf = new Intl.NumberFormat(locString, opts);
-    intlNumCache[key] = inf;
-  }
-  return inf;
-}
-let intlRelCache = {};
-function getCachedRTF(locString, opts = {}) {
-  const { base: base2, ...cacheKeyOpts } = opts;
-  const key = JSON.stringify([locString, cacheKeyOpts]);
-  let inf = intlRelCache[key];
-  if (!inf) {
-    inf = new Intl.RelativeTimeFormat(locString, opts);
-    intlRelCache[key] = inf;
-  }
-  return inf;
-}
-let sysLocaleCache = null;
-function systemLocale() {
-  if (sysLocaleCache) {
-    return sysLocaleCache;
-  } else {
-    sysLocaleCache = new Intl.DateTimeFormat().resolvedOptions().locale;
-    return sysLocaleCache;
-  }
-}
-let weekInfoCache = {};
-function getCachedWeekInfo(locString) {
-  let data2 = weekInfoCache[locString];
-  if (!data2) {
-    const locale = new Intl.Locale(locString);
-    data2 = "getWeekInfo" in locale ? locale.getWeekInfo() : locale.weekInfo;
-    weekInfoCache[locString] = data2;
-  }
-  return data2;
-}
-function parseLocaleString(localeStr) {
-  const xIndex = localeStr.indexOf("-x-");
-  if (xIndex !== -1) {
-    localeStr = localeStr.substring(0, xIndex);
-  }
-  const uIndex = localeStr.indexOf("-u-");
-  if (uIndex === -1) {
-    return [localeStr];
-  } else {
-    let options;
-    let selectedStr;
-    try {
-      options = getCachedDTF(localeStr).resolvedOptions();
-      selectedStr = localeStr;
-    } catch (e) {
-      const smaller = localeStr.substring(0, uIndex);
-      options = getCachedDTF(smaller).resolvedOptions();
-      selectedStr = smaller;
-    }
-    const { numberingSystem, calendar } = options;
-    return [selectedStr, numberingSystem, calendar];
-  }
-}
-function intlConfigString(localeStr, numberingSystem, outputCalendar) {
-  if (outputCalendar || numberingSystem) {
-    if (!localeStr.includes("-u-")) {
-      localeStr += "-u";
-    }
-    if (outputCalendar) {
-      localeStr += `-ca-${outputCalendar}`;
-    }
-    if (numberingSystem) {
-      localeStr += `-nu-${numberingSystem}`;
-    }
-    return localeStr;
-  } else {
-    return localeStr;
-  }
-}
-function mapMonths(f) {
-  const ms = [];
-  for (let i = 1; i <= 12; i++) {
-    const dt = DateTime.utc(2009, i, 1);
-    ms.push(f(dt));
-  }
-  return ms;
-}
-function mapWeekdays(f) {
-  const ms = [];
-  for (let i = 1; i <= 7; i++) {
-    const dt = DateTime.utc(2016, 11, 13 + i);
-    ms.push(f(dt));
-  }
-  return ms;
-}
-function listStuff(loc, length2, englishFn, intlFn) {
-  const mode = loc.listingMode();
-  if (mode === "error") {
-    return null;
-  } else if (mode === "en") {
-    return englishFn(length2);
-  } else {
-    return intlFn(length2);
-  }
-}
-function supportsFastNumbers(loc) {
-  if (loc.numberingSystem && loc.numberingSystem !== "latn") {
-    return false;
-  } else {
-    return loc.numberingSystem === "latn" || !loc.locale || loc.locale.startsWith("en") || new Intl.DateTimeFormat(loc.intl).resolvedOptions().numberingSystem === "latn";
-  }
-}
-class PolyNumberFormatter {
-  constructor(intl, forceSimple, opts) {
-    this.padTo = opts.padTo || 0;
-    this.floor = opts.floor || false;
-    const { padTo, floor: floor2, ...otherOpts } = opts;
-    if (!forceSimple || Object.keys(otherOpts).length > 0) {
-      const intlOpts = { useGrouping: false, ...opts };
-      if (opts.padTo > 0) intlOpts.minimumIntegerDigits = opts.padTo;
-      this.inf = getCachedINF(intl, intlOpts);
-    }
-  }
-  format(i) {
-    if (this.inf) {
-      const fixed = this.floor ? Math.floor(i) : i;
-      return this.inf.format(fixed);
-    } else {
-      const fixed = this.floor ? Math.floor(i) : roundTo(i, 3);
-      return padStart(fixed, this.padTo);
-    }
-  }
-}
-class PolyDateFormatter {
-  constructor(dt, intl, opts) {
-    this.opts = opts;
-    this.originalZone = void 0;
-    let z = void 0;
-    if (this.opts.timeZone) {
-      this.dt = dt;
-    } else if (dt.zone.type === "fixed") {
-      const gmtOffset = -1 * (dt.offset / 60);
-      const offsetZ = gmtOffset >= 0 ? `Etc/GMT+${gmtOffset}` : `Etc/GMT${gmtOffset}`;
-      if (dt.offset !== 0 && IANAZone.create(offsetZ).valid) {
-        z = offsetZ;
-        this.dt = dt;
-      } else {
-        z = "UTC";
-        this.dt = dt.offset === 0 ? dt : dt.setZone("UTC").plus({ minutes: dt.offset });
-        this.originalZone = dt.zone;
-      }
-    } else if (dt.zone.type === "system") {
-      this.dt = dt;
-    } else if (dt.zone.type === "iana") {
-      this.dt = dt;
-      z = dt.zone.name;
-    } else {
-      z = "UTC";
-      this.dt = dt.setZone("UTC").plus({ minutes: dt.offset });
-      this.originalZone = dt.zone;
-    }
-    const intlOpts = { ...this.opts };
-    intlOpts.timeZone = intlOpts.timeZone || z;
-    this.dtf = getCachedDTF(intl, intlOpts);
-  }
-  format() {
-    if (this.originalZone) {
-      return this.formatToParts().map(({ value }) => value).join("");
-    }
-    return this.dtf.format(this.dt.toJSDate());
-  }
-  formatToParts() {
-    const parts = this.dtf.formatToParts(this.dt.toJSDate());
-    if (this.originalZone) {
-      return parts.map((part) => {
-        if (part.type === "timeZoneName") {
-          const offsetName = this.originalZone.offsetName(this.dt.ts, {
-            locale: this.dt.locale,
-            format: this.opts.timeZoneName
-          });
-          return {
-            ...part,
-            value: offsetName
-          };
-        } else {
-          return part;
-        }
-      });
-    }
-    return parts;
-  }
-  resolvedOptions() {
-    return this.dtf.resolvedOptions();
-  }
-}
-class PolyRelFormatter {
-  constructor(intl, isEnglish, opts) {
-    this.opts = { style: "long", ...opts };
-    if (!isEnglish && hasRelative()) {
-      this.rtf = getCachedRTF(intl, opts);
-    }
-  }
-  format(count, unit) {
-    if (this.rtf) {
-      return this.rtf.format(count, unit);
-    } else {
-      return formatRelativeTime(unit, count, this.opts.numeric, this.opts.style !== "long");
-    }
-  }
-  formatToParts(count, unit) {
-    if (this.rtf) {
-      return this.rtf.formatToParts(count, unit);
-    } else {
-      return [];
-    }
-  }
-}
-const fallbackWeekSettings = {
-  firstDay: 1,
-  minimalDays: 4,
-  weekend: [6, 7]
-};
-class Locale {
-  static fromOpts(opts) {
-    return Locale.create(
-      opts.locale,
-      opts.numberingSystem,
-      opts.outputCalendar,
-      opts.weekSettings,
-      opts.defaultToEN
-    );
-  }
-  static create(locale, numberingSystem, outputCalendar, weekSettings, defaultToEN = false) {
-    const specifiedLocale = locale || Settings.defaultLocale;
-    const localeR = specifiedLocale || (defaultToEN ? "en-US" : systemLocale());
-    const numberingSystemR = numberingSystem || Settings.defaultNumberingSystem;
-    const outputCalendarR = outputCalendar || Settings.defaultOutputCalendar;
-    const weekSettingsR = validateWeekSettings(weekSettings) || Settings.defaultWeekSettings;
-    return new Locale(localeR, numberingSystemR, outputCalendarR, weekSettingsR, specifiedLocale);
-  }
-  static resetCache() {
-    sysLocaleCache = null;
-    intlDTCache = {};
-    intlNumCache = {};
-    intlRelCache = {};
-  }
-  static fromObject({ locale, numberingSystem, outputCalendar, weekSettings } = {}) {
-    return Locale.create(locale, numberingSystem, outputCalendar, weekSettings);
-  }
-  constructor(locale, numbering, outputCalendar, weekSettings, specifiedLocale) {
-    const [parsedLocale, parsedNumberingSystem, parsedOutputCalendar] = parseLocaleString(locale);
-    this.locale = parsedLocale;
-    this.numberingSystem = numbering || parsedNumberingSystem || null;
-    this.outputCalendar = outputCalendar || parsedOutputCalendar || null;
-    this.weekSettings = weekSettings;
-    this.intl = intlConfigString(this.locale, this.numberingSystem, this.outputCalendar);
-    this.weekdaysCache = { format: {}, standalone: {} };
-    this.monthsCache = { format: {}, standalone: {} };
-    this.meridiemCache = null;
-    this.eraCache = {};
-    this.specifiedLocale = specifiedLocale;
-    this.fastNumbersCached = null;
-  }
-  get fastNumbers() {
-    if (this.fastNumbersCached == null) {
-      this.fastNumbersCached = supportsFastNumbers(this);
-    }
-    return this.fastNumbersCached;
-  }
-  listingMode() {
-    const isActuallyEn = this.isEnglish();
-    const hasNoWeirdness = (this.numberingSystem === null || this.numberingSystem === "latn") && (this.outputCalendar === null || this.outputCalendar === "gregory");
-    return isActuallyEn && hasNoWeirdness ? "en" : "intl";
-  }
-  clone(alts) {
-    if (!alts || Object.getOwnPropertyNames(alts).length === 0) {
-      return this;
-    } else {
-      return Locale.create(
-        alts.locale || this.specifiedLocale,
-        alts.numberingSystem || this.numberingSystem,
-        alts.outputCalendar || this.outputCalendar,
-        validateWeekSettings(alts.weekSettings) || this.weekSettings,
-        alts.defaultToEN || false
-      );
-    }
-  }
-  redefaultToEN(alts = {}) {
-    return this.clone({ ...alts, defaultToEN: true });
-  }
-  redefaultToSystem(alts = {}) {
-    return this.clone({ ...alts, defaultToEN: false });
-  }
-  months(length2, format = false) {
-    return listStuff(this, length2, months, () => {
-      const intl = format ? { month: length2, day: "numeric" } : { month: length2 }, formatStr = format ? "format" : "standalone";
-      if (!this.monthsCache[formatStr][length2]) {
-        this.monthsCache[formatStr][length2] = mapMonths((dt) => this.extract(dt, intl, "month"));
-      }
-      return this.monthsCache[formatStr][length2];
-    });
-  }
-  weekdays(length2, format = false) {
-    return listStuff(this, length2, weekdays, () => {
-      const intl = format ? { weekday: length2, year: "numeric", month: "long", day: "numeric" } : { weekday: length2 }, formatStr = format ? "format" : "standalone";
-      if (!this.weekdaysCache[formatStr][length2]) {
-        this.weekdaysCache[formatStr][length2] = mapWeekdays(
-          (dt) => this.extract(dt, intl, "weekday")
-        );
-      }
-      return this.weekdaysCache[formatStr][length2];
-    });
-  }
-  meridiems() {
-    return listStuff(
-      this,
-      void 0,
-      () => meridiems,
-      () => {
-        if (!this.meridiemCache) {
-          const intl = { hour: "numeric", hourCycle: "h12" };
-          this.meridiemCache = [DateTime.utc(2016, 11, 13, 9), DateTime.utc(2016, 11, 13, 19)].map(
-            (dt) => this.extract(dt, intl, "dayperiod")
-          );
-        }
-        return this.meridiemCache;
-      }
-    );
-  }
-  eras(length2) {
-    return listStuff(this, length2, eras, () => {
-      const intl = { era: length2 };
-      if (!this.eraCache[length2]) {
-        this.eraCache[length2] = [DateTime.utc(-40, 1, 1), DateTime.utc(2017, 1, 1)].map(
-          (dt) => this.extract(dt, intl, "era")
-        );
-      }
-      return this.eraCache[length2];
-    });
-  }
-  extract(dt, intlOpts, field) {
-    const df = this.dtFormatter(dt, intlOpts), results = df.formatToParts(), matching = results.find((m) => m.type.toLowerCase() === field);
-    return matching ? matching.value : null;
-  }
-  numberFormatter(opts = {}) {
-    return new PolyNumberFormatter(this.intl, opts.forceSimple || this.fastNumbers, opts);
-  }
-  dtFormatter(dt, intlOpts = {}) {
-    return new PolyDateFormatter(dt, this.intl, intlOpts);
-  }
-  relFormatter(opts = {}) {
-    return new PolyRelFormatter(this.intl, this.isEnglish(), opts);
-  }
-  listFormatter(opts = {}) {
-    return getCachedLF(this.intl, opts);
-  }
-  isEnglish() {
-    return this.locale === "en" || this.locale.toLowerCase() === "en-us" || new Intl.DateTimeFormat(this.intl).resolvedOptions().locale.startsWith("en-us");
-  }
-  getWeekSettings() {
-    if (this.weekSettings) {
-      return this.weekSettings;
-    } else if (!hasLocaleWeekInfo()) {
-      return fallbackWeekSettings;
-    } else {
-      return getCachedWeekInfo(this.locale);
-    }
-  }
-  getStartOfWeek() {
-    return this.getWeekSettings().firstDay;
-  }
-  getMinDaysInFirstWeek() {
-    return this.getWeekSettings().minimalDays;
-  }
-  getWeekendDays() {
-    return this.getWeekSettings().weekend;
-  }
-  equals(other) {
-    return this.locale === other.locale && this.numberingSystem === other.numberingSystem && this.outputCalendar === other.outputCalendar;
-  }
-  toString() {
-    return `Locale(${this.locale}, ${this.numberingSystem}, ${this.outputCalendar})`;
-  }
-}
-let singleton = null;
-class FixedOffsetZone extends Zone {
-  /**
-   * Get a singleton instance of UTC
-   * @return {FixedOffsetZone}
-   */
-  static get utcInstance() {
-    if (singleton === null) {
-      singleton = new FixedOffsetZone(0);
-    }
-    return singleton;
-  }
-  /**
-   * Get an instance with a specified offset
-   * @param {number} offset - The offset in minutes
-   * @return {FixedOffsetZone}
-   */
-  static instance(offset2) {
-    return offset2 === 0 ? FixedOffsetZone.utcInstance : new FixedOffsetZone(offset2);
-  }
-  /**
-   * Get an instance of FixedOffsetZone from a UTC offset string, like "UTC+6"
-   * @param {string} s - The offset string to parse
-   * @example FixedOffsetZone.parseSpecifier("UTC+6")
-   * @example FixedOffsetZone.parseSpecifier("UTC+06")
-   * @example FixedOffsetZone.parseSpecifier("UTC-6:00")
-   * @return {FixedOffsetZone}
-   */
-  static parseSpecifier(s2) {
-    if (s2) {
-      const r2 = s2.match(/^utc(?:([+-]\d{1,2})(?::(\d{2}))?)?$/i);
-      if (r2) {
-        return new FixedOffsetZone(signedOffset(r2[1], r2[2]));
-      }
-    }
-    return null;
-  }
-  constructor(offset2) {
-    super();
-    this.fixed = offset2;
-  }
-  /**
-   * The type of zone. `fixed` for all instances of `FixedOffsetZone`.
-   * @override
-   * @type {string}
-   */
-  get type() {
-    return "fixed";
-  }
-  /**
-   * The name of this zone.
-   * All fixed zones' names always start with "UTC" (plus optional offset)
-   * @override
-   * @type {string}
-   */
-  get name() {
-    return this.fixed === 0 ? "UTC" : `UTC${formatOffset(this.fixed, "narrow")}`;
-  }
-  /**
-   * The IANA name of this zone, i.e. `Etc/UTC` or `Etc/GMT+/-nn`
-   *
-   * @override
-   * @type {string}
-   */
-  get ianaName() {
-    if (this.fixed === 0) {
-      return "Etc/UTC";
-    } else {
-      return `Etc/GMT${formatOffset(-this.fixed, "narrow")}`;
-    }
-  }
-  /**
-   * Returns the offset's common name at the specified timestamp.
-   *
-   * For fixed offset zones this equals to the zone name.
-   * @override
-   */
-  offsetName() {
-    return this.name;
-  }
-  /**
-   * Returns the offset's value as a string
-   * @override
-   * @param {number} ts - Epoch milliseconds for which to get the offset
-   * @param {string} format - What style of offset to return.
-   *                          Accepts 'narrow', 'short', or 'techie'. Returning '+6', '+06:00', or '+0600' respectively
-   * @return {string}
-   */
-  formatOffset(ts, format) {
-    return formatOffset(this.fixed, format);
-  }
-  /**
-   * Returns whether the offset is known to be fixed for the whole year:
-   * Always returns true for all fixed offset zones.
-   * @override
-   * @type {boolean}
-   */
-  get isUniversal() {
-    return true;
-  }
-  /**
-   * Return the offset in minutes for this zone at the specified timestamp.
-   *
-   * For fixed offset zones, this is constant and does not depend on a timestamp.
-   * @override
-   * @return {number}
-   */
-  offset() {
-    return this.fixed;
-  }
-  /**
-   * Return whether this Zone is equal to another zone (i.e. also fixed and same offset)
-   * @override
-   * @param {Zone} otherZone - the zone to compare
-   * @return {boolean}
-   */
-  equals(otherZone) {
-    return otherZone.type === "fixed" && otherZone.fixed === this.fixed;
-  }
-  /**
-   * Return whether this Zone is valid:
-   * All fixed offset zones are valid.
-   * @override
-   * @type {boolean}
-   */
-  get isValid() {
-    return true;
-  }
-}
-class InvalidZone extends Zone {
-  constructor(zoneName) {
-    super();
-    this.zoneName = zoneName;
-  }
-  /** @override **/
-  get type() {
-    return "invalid";
-  }
-  /** @override **/
-  get name() {
-    return this.zoneName;
-  }
-  /** @override **/
-  get isUniversal() {
-    return false;
-  }
-  /** @override **/
-  offsetName() {
-    return null;
-  }
-  /** @override **/
-  formatOffset() {
-    return "";
-  }
-  /** @override **/
-  offset() {
-    return NaN;
-  }
-  /** @override **/
-  equals() {
-    return false;
-  }
-  /** @override **/
-  get isValid() {
-    return false;
-  }
-}
-function normalizeZone(input, defaultZone2) {
-  if (isUndefined(input) || input === null) {
-    return defaultZone2;
-  } else if (input instanceof Zone) {
-    return input;
-  } else if (isString(input)) {
-    const lowered = input.toLowerCase();
-    if (lowered === "default") return defaultZone2;
-    else if (lowered === "local" || lowered === "system") return SystemZone.instance;
-    else if (lowered === "utc" || lowered === "gmt") return FixedOffsetZone.utcInstance;
-    else return FixedOffsetZone.parseSpecifier(lowered) || IANAZone.create(input);
-  } else if (isNumber(input)) {
-    return FixedOffsetZone.instance(input);
-  } else if (typeof input === "object" && "offset" in input && typeof input.offset === "function") {
-    return input;
-  } else {
-    return new InvalidZone(input);
-  }
-}
-const numberingSystems = {
-  arab: "[٠-٩]",
-  arabext: "[۰-۹]",
-  bali: "[᭐-᭙]",
-  beng: "[০-৯]",
-  deva: "[०-९]",
-  fullwide: "[０-９]",
-  gujr: "[૦-૯]",
-  hanidec: "[〇|一|二|三|四|五|六|七|八|九]",
-  khmr: "[០-៩]",
-  knda: "[೦-೯]",
-  laoo: "[໐-໙]",
-  limb: "[᥆-᥏]",
-  mlym: "[൦-൯]",
-  mong: "[᠐-᠙]",
-  mymr: "[၀-၉]",
-  orya: "[୦-୯]",
-  tamldec: "[௦-௯]",
-  telu: "[౦-౯]",
-  thai: "[๐-๙]",
-  tibt: "[༠-༩]",
-  latn: "\\d"
-};
-const numberingSystemsUTF16 = {
-  arab: [1632, 1641],
-  arabext: [1776, 1785],
-  bali: [6992, 7001],
-  beng: [2534, 2543],
-  deva: [2406, 2415],
-  fullwide: [65296, 65303],
-  gujr: [2790, 2799],
-  khmr: [6112, 6121],
-  knda: [3302, 3311],
-  laoo: [3792, 3801],
-  limb: [6470, 6479],
-  mlym: [3430, 3439],
-  mong: [6160, 6169],
-  mymr: [4160, 4169],
-  orya: [2918, 2927],
-  tamldec: [3046, 3055],
-  telu: [3174, 3183],
-  thai: [3664, 3673],
-  tibt: [3872, 3881]
-};
-const hanidecChars = numberingSystems.hanidec.replace(/[\[|\]]/g, "").split("");
-function parseDigits(str) {
-  let value = parseInt(str, 10);
-  if (isNaN(value)) {
-    value = "";
-    for (let i = 0; i < str.length; i++) {
-      const code = str.charCodeAt(i);
-      if (str[i].search(numberingSystems.hanidec) !== -1) {
-        value += hanidecChars.indexOf(str[i]);
-      } else {
-        for (const key in numberingSystemsUTF16) {
-          const [min2, max2] = numberingSystemsUTF16[key];
-          if (code >= min2 && code <= max2) {
-            value += code - min2;
-          }
-        }
-      }
-    }
-    return parseInt(value, 10);
-  } else {
-    return value;
-  }
-}
-let digitRegexCache = {};
-function resetDigitRegexCache() {
-  digitRegexCache = {};
-}
-function digitRegex({ numberingSystem }, append2 = "") {
-  const ns = numberingSystem || "latn";
-  if (!digitRegexCache[ns]) {
-    digitRegexCache[ns] = {};
-  }
-  if (!digitRegexCache[ns][append2]) {
-    digitRegexCache[ns][append2] = new RegExp(`${numberingSystems[ns]}${append2}`);
-  }
-  return digitRegexCache[ns][append2];
-}
-let now = () => Date.now(), defaultZone = "system", defaultLocale = null, defaultNumberingSystem = null, defaultOutputCalendar = null, twoDigitCutoffYear = 60, throwOnInvalid, defaultWeekSettings = null;
-class Settings {
-  /**
-   * Get the callback for returning the current timestamp.
-   * @type {function}
-   */
-  static get now() {
-    return now;
-  }
-  /**
-   * Set the callback for returning the current timestamp.
-   * The function should return a number, which will be interpreted as an Epoch millisecond count
-   * @type {function}
-   * @example Settings.now = () => Date.now() + 3000 // pretend it is 3 seconds in the future
-   * @example Settings.now = () => 0 // always pretend it's Jan 1, 1970 at midnight in UTC time
-   */
-  static set now(n2) {
-    now = n2;
-  }
-  /**
-   * Set the default time zone to create DateTimes in. Does not affect existing instances.
-   * Use the value "system" to reset this value to the system's time zone.
-   * @type {string}
-   */
-  static set defaultZone(zone) {
-    defaultZone = zone;
-  }
-  /**
-   * Get the default time zone object currently used to create DateTimes. Does not affect existing instances.
-   * The default value is the system's time zone (the one set on the machine that runs this code).
-   * @type {Zone}
-   */
-  static get defaultZone() {
-    return normalizeZone(defaultZone, SystemZone.instance);
-  }
-  /**
-   * Get the default locale to create DateTimes with. Does not affect existing instances.
-   * @type {string}
-   */
-  static get defaultLocale() {
-    return defaultLocale;
-  }
-  /**
-   * Set the default locale to create DateTimes with. Does not affect existing instances.
-   * @type {string}
-   */
-  static set defaultLocale(locale) {
-    defaultLocale = locale;
-  }
-  /**
-   * Get the default numbering system to create DateTimes with. Does not affect existing instances.
-   * @type {string}
-   */
-  static get defaultNumberingSystem() {
-    return defaultNumberingSystem;
-  }
-  /**
-   * Set the default numbering system to create DateTimes with. Does not affect existing instances.
-   * @type {string}
-   */
-  static set defaultNumberingSystem(numberingSystem) {
-    defaultNumberingSystem = numberingSystem;
-  }
-  /**
-   * Get the default output calendar to create DateTimes with. Does not affect existing instances.
-   * @type {string}
-   */
-  static get defaultOutputCalendar() {
-    return defaultOutputCalendar;
-  }
-  /**
-   * Set the default output calendar to create DateTimes with. Does not affect existing instances.
-   * @type {string}
-   */
-  static set defaultOutputCalendar(outputCalendar) {
-    defaultOutputCalendar = outputCalendar;
-  }
-  /**
-   * @typedef {Object} WeekSettings
-   * @property {number} firstDay
-   * @property {number} minimalDays
-   * @property {number[]} weekend
-   */
-  /**
-   * @return {WeekSettings|null}
-   */
-  static get defaultWeekSettings() {
-    return defaultWeekSettings;
-  }
-  /**
-   * Allows overriding the default locale week settings, i.e. the start of the week, the weekend and
-   * how many days are required in the first week of a year.
-   * Does not affect existing instances.
-   *
-   * @param {WeekSettings|null} weekSettings
-   */
-  static set defaultWeekSettings(weekSettings) {
-    defaultWeekSettings = validateWeekSettings(weekSettings);
-  }
-  /**
-   * Get the cutoff year for whether a 2-digit year string is interpreted in the current or previous century. Numbers higher than the cutoff will be considered to mean 19xx and numbers lower or equal to the cutoff will be considered 20xx.
-   * @type {number}
-   */
-  static get twoDigitCutoffYear() {
-    return twoDigitCutoffYear;
-  }
-  /**
-   * Set the cutoff year for whether a 2-digit year string is interpreted in the current or previous century. Numbers higher than the cutoff will be considered to mean 19xx and numbers lower or equal to the cutoff will be considered 20xx.
-   * @type {number}
-   * @example Settings.twoDigitCutoffYear = 0 // all 'yy' are interpreted as 20th century
-   * @example Settings.twoDigitCutoffYear = 99 // all 'yy' are interpreted as 21st century
-   * @example Settings.twoDigitCutoffYear = 50 // '49' -> 2049; '50' -> 1950
-   * @example Settings.twoDigitCutoffYear = 1950 // interpreted as 50
-   * @example Settings.twoDigitCutoffYear = 2050 // ALSO interpreted as 50
-   */
-  static set twoDigitCutoffYear(cutoffYear) {
-    twoDigitCutoffYear = cutoffYear % 100;
-  }
-  /**
-   * Get whether Luxon will throw when it encounters invalid DateTimes, Durations, or Intervals
-   * @type {boolean}
-   */
-  static get throwOnInvalid() {
-    return throwOnInvalid;
-  }
-  /**
-   * Set whether Luxon will throw when it encounters invalid DateTimes, Durations, or Intervals
-   * @type {boolean}
-   */
-  static set throwOnInvalid(t) {
-    throwOnInvalid = t;
-  }
-  /**
-   * Reset Luxon's global caches. Should only be necessary in testing scenarios.
-   * @return {void}
-   */
-  static resetCaches() {
-    Locale.resetCache();
-    IANAZone.resetCache();
-    DateTime.resetCache();
-    resetDigitRegexCache();
-  }
-}
-class Invalid {
-  constructor(reason, explanation) {
-    this.reason = reason;
-    this.explanation = explanation;
-  }
-  toMessage() {
-    if (this.explanation) {
-      return `${this.reason}: ${this.explanation}`;
-    } else {
-      return this.reason;
-    }
-  }
-}
-const nonLeapLadder = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334], leapLadder = [0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335];
-function unitOutOfRange(unit, value) {
-  return new Invalid(
-    "unit out of range",
-    `you specified ${value} (of type ${typeof value}) as a ${unit}, which is invalid`
-  );
-}
-function dayOfWeek(year, month, day) {
-  const d = new Date(Date.UTC(year, month - 1, day));
-  if (year < 100 && year >= 0) {
-    d.setUTCFullYear(d.getUTCFullYear() - 1900);
-  }
-  const js = d.getUTCDay();
-  return js === 0 ? 7 : js;
-}
-function computeOrdinal(year, month, day) {
-  return day + (isLeapYear(year) ? leapLadder : nonLeapLadder)[month - 1];
-}
-function uncomputeOrdinal(year, ordinal) {
-  const table = isLeapYear(year) ? leapLadder : nonLeapLadder, month0 = table.findIndex((i) => i < ordinal), day = ordinal - table[month0];
-  return { month: month0 + 1, day };
-}
-function isoWeekdayToLocal(isoWeekday, startOfWeek) {
-  return (isoWeekday - startOfWeek + 7) % 7 + 1;
-}
-function gregorianToWeek(gregObj, minDaysInFirstWeek = 4, startOfWeek = 1) {
-  const { year, month, day } = gregObj, ordinal = computeOrdinal(year, month, day), weekday = isoWeekdayToLocal(dayOfWeek(year, month, day), startOfWeek);
-  let weekNumber = Math.floor((ordinal - weekday + 14 - minDaysInFirstWeek) / 7), weekYear;
-  if (weekNumber < 1) {
-    weekYear = year - 1;
-    weekNumber = weeksInWeekYear(weekYear, minDaysInFirstWeek, startOfWeek);
-  } else if (weekNumber > weeksInWeekYear(year, minDaysInFirstWeek, startOfWeek)) {
-    weekYear = year + 1;
-    weekNumber = 1;
-  } else {
-    weekYear = year;
-  }
-  return { weekYear, weekNumber, weekday, ...timeObject(gregObj) };
-}
-function weekToGregorian(weekData, minDaysInFirstWeek = 4, startOfWeek = 1) {
-  const { weekYear, weekNumber, weekday } = weekData, weekdayOfJan4 = isoWeekdayToLocal(dayOfWeek(weekYear, 1, minDaysInFirstWeek), startOfWeek), yearInDays = daysInYear(weekYear);
-  let ordinal = weekNumber * 7 + weekday - weekdayOfJan4 - 7 + minDaysInFirstWeek, year;
-  if (ordinal < 1) {
-    year = weekYear - 1;
-    ordinal += daysInYear(year);
-  } else if (ordinal > yearInDays) {
-    year = weekYear + 1;
-    ordinal -= daysInYear(weekYear);
-  } else {
-    year = weekYear;
-  }
-  const { month, day } = uncomputeOrdinal(year, ordinal);
-  return { year, month, day, ...timeObject(weekData) };
-}
-function gregorianToOrdinal(gregData) {
-  const { year, month, day } = gregData;
-  const ordinal = computeOrdinal(year, month, day);
-  return { year, ordinal, ...timeObject(gregData) };
-}
-function ordinalToGregorian(ordinalData) {
-  const { year, ordinal } = ordinalData;
-  const { month, day } = uncomputeOrdinal(year, ordinal);
-  return { year, month, day, ...timeObject(ordinalData) };
-}
-function usesLocalWeekValues(obj, loc) {
-  const hasLocaleWeekData = !isUndefined(obj.localWeekday) || !isUndefined(obj.localWeekNumber) || !isUndefined(obj.localWeekYear);
-  if (hasLocaleWeekData) {
-    const hasIsoWeekData = !isUndefined(obj.weekday) || !isUndefined(obj.weekNumber) || !isUndefined(obj.weekYear);
-    if (hasIsoWeekData) {
-      throw new ConflictingSpecificationError(
-        "Cannot mix locale-based week fields with ISO-based week fields"
-      );
-    }
-    if (!isUndefined(obj.localWeekday)) obj.weekday = obj.localWeekday;
-    if (!isUndefined(obj.localWeekNumber)) obj.weekNumber = obj.localWeekNumber;
-    if (!isUndefined(obj.localWeekYear)) obj.weekYear = obj.localWeekYear;
-    delete obj.localWeekday;
-    delete obj.localWeekNumber;
-    delete obj.localWeekYear;
-    return {
-      minDaysInFirstWeek: loc.getMinDaysInFirstWeek(),
-      startOfWeek: loc.getStartOfWeek()
-    };
-  } else {
-    return { minDaysInFirstWeek: 4, startOfWeek: 1 };
-  }
-}
-function hasInvalidWeekData(obj, minDaysInFirstWeek = 4, startOfWeek = 1) {
-  const validYear = isInteger(obj.weekYear), validWeek = integerBetween(
-    obj.weekNumber,
-    1,
-    weeksInWeekYear(obj.weekYear, minDaysInFirstWeek, startOfWeek)
-  ), validWeekday = integerBetween(obj.weekday, 1, 7);
-  if (!validYear) {
-    return unitOutOfRange("weekYear", obj.weekYear);
-  } else if (!validWeek) {
-    return unitOutOfRange("week", obj.weekNumber);
-  } else if (!validWeekday) {
-    return unitOutOfRange("weekday", obj.weekday);
-  } else return false;
-}
-function hasInvalidOrdinalData(obj) {
-  const validYear = isInteger(obj.year), validOrdinal = integerBetween(obj.ordinal, 1, daysInYear(obj.year));
-  if (!validYear) {
-    return unitOutOfRange("year", obj.year);
-  } else if (!validOrdinal) {
-    return unitOutOfRange("ordinal", obj.ordinal);
-  } else return false;
-}
-function hasInvalidGregorianData(obj) {
-  const validYear = isInteger(obj.year), validMonth = integerBetween(obj.month, 1, 12), validDay = integerBetween(obj.day, 1, daysInMonth(obj.year, obj.month));
-  if (!validYear) {
-    return unitOutOfRange("year", obj.year);
-  } else if (!validMonth) {
-    return unitOutOfRange("month", obj.month);
-  } else if (!validDay) {
-    return unitOutOfRange("day", obj.day);
-  } else return false;
-}
-function hasInvalidTimeData(obj) {
-  const { hour, minute, second, millisecond } = obj;
-  const validHour = integerBetween(hour, 0, 23) || hour === 24 && minute === 0 && second === 0 && millisecond === 0, validMinute = integerBetween(minute, 0, 59), validSecond = integerBetween(second, 0, 59), validMillisecond = integerBetween(millisecond, 0, 999);
-  if (!validHour) {
-    return unitOutOfRange("hour", hour);
-  } else if (!validMinute) {
-    return unitOutOfRange("minute", minute);
-  } else if (!validSecond) {
-    return unitOutOfRange("second", second);
-  } else if (!validMillisecond) {
-    return unitOutOfRange("millisecond", millisecond);
-  } else return false;
-}
-function isUndefined(o) {
-  return typeof o === "undefined";
-}
-function isNumber(o) {
-  return typeof o === "number";
-}
-function isInteger(o) {
-  return typeof o === "number" && o % 1 === 0;
-}
-function isString(o) {
-  return typeof o === "string";
-}
-function isDate(o) {
-  return Object.prototype.toString.call(o) === "[object Date]";
-}
-function hasRelative() {
-  try {
-    return typeof Intl !== "undefined" && !!Intl.RelativeTimeFormat;
-  } catch (e) {
-    return false;
-  }
-}
-function hasLocaleWeekInfo() {
-  try {
-    return typeof Intl !== "undefined" && !!Intl.Locale && ("weekInfo" in Intl.Locale.prototype || "getWeekInfo" in Intl.Locale.prototype);
-  } catch (e) {
-    return false;
-  }
-}
-function maybeArray(thing) {
-  return Array.isArray(thing) ? thing : [thing];
-}
-function bestBy(arr, by, compare) {
-  if (arr.length === 0) {
-    return void 0;
-  }
-  return arr.reduce((best, next2) => {
-    const pair = [by(next2), next2];
-    if (!best) {
-      return pair;
-    } else if (compare(best[0], pair[0]) === best[0]) {
-      return best;
-    } else {
-      return pair;
-    }
-  }, null)[1];
-}
-function pick(obj, keys) {
-  return keys.reduce((a, k) => {
-    a[k] = obj[k];
-    return a;
-  }, {});
-}
-function hasOwnProperty(obj, prop2) {
-  return Object.prototype.hasOwnProperty.call(obj, prop2);
-}
-function validateWeekSettings(settings) {
-  if (settings == null) {
-    return null;
-  } else if (typeof settings !== "object") {
-    throw new InvalidArgumentError("Week settings must be an object");
-  } else {
-    if (!integerBetween(settings.firstDay, 1, 7) || !integerBetween(settings.minimalDays, 1, 7) || !Array.isArray(settings.weekend) || settings.weekend.some((v) => !integerBetween(v, 1, 7))) {
-      throw new InvalidArgumentError("Invalid week settings");
-    }
-    return {
-      firstDay: settings.firstDay,
-      minimalDays: settings.minimalDays,
-      weekend: Array.from(settings.weekend)
-    };
-  }
-}
-function integerBetween(thing, bottom, top) {
-  return isInteger(thing) && thing >= bottom && thing <= top;
-}
-function floorMod(x, n2) {
-  return x - n2 * Math.floor(x / n2);
-}
-function padStart(input, n2 = 2) {
-  const isNeg = input < 0;
-  let padded;
-  if (isNeg) {
-    padded = "-" + ("" + -input).padStart(n2, "0");
-  } else {
-    padded = ("" + input).padStart(n2, "0");
-  }
-  return padded;
-}
-function parseInteger(string) {
-  if (isUndefined(string) || string === null || string === "") {
-    return void 0;
-  } else {
-    return parseInt(string, 10);
-  }
-}
-function parseFloating(string) {
-  if (isUndefined(string) || string === null || string === "") {
-    return void 0;
-  } else {
-    return parseFloat(string);
-  }
-}
-function parseMillis(fraction) {
-  if (isUndefined(fraction) || fraction === null || fraction === "") {
-    return void 0;
-  } else {
-    const f = parseFloat("0." + fraction) * 1e3;
-    return Math.floor(f);
-  }
-}
-function roundTo(number, digits, towardZero = false) {
-  const factor = 10 ** digits, rounder = towardZero ? Math.trunc : Math.round;
-  return rounder(number * factor) / factor;
-}
-function isLeapYear(year) {
-  return year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
-}
-function daysInYear(year) {
-  return isLeapYear(year) ? 366 : 365;
-}
-function daysInMonth(year, month) {
-  const modMonth = floorMod(month - 1, 12) + 1, modYear = year + (month - modMonth) / 12;
-  if (modMonth === 2) {
-    return isLeapYear(modYear) ? 29 : 28;
-  } else {
-    return [31, null, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][modMonth - 1];
-  }
-}
-function objToLocalTS(obj) {
-  let d = Date.UTC(
-    obj.year,
-    obj.month - 1,
-    obj.day,
-    obj.hour,
-    obj.minute,
-    obj.second,
-    obj.millisecond
-  );
-  if (obj.year < 100 && obj.year >= 0) {
-    d = new Date(d);
-    d.setUTCFullYear(obj.year, obj.month - 1, obj.day);
-  }
-  return +d;
-}
-function firstWeekOffset(year, minDaysInFirstWeek, startOfWeek) {
-  const fwdlw = isoWeekdayToLocal(dayOfWeek(year, 1, minDaysInFirstWeek), startOfWeek);
-  return -fwdlw + minDaysInFirstWeek - 1;
-}
-function weeksInWeekYear(weekYear, minDaysInFirstWeek = 4, startOfWeek = 1) {
-  const weekOffset = firstWeekOffset(weekYear, minDaysInFirstWeek, startOfWeek);
-  const weekOffsetNext = firstWeekOffset(weekYear + 1, minDaysInFirstWeek, startOfWeek);
-  return (daysInYear(weekYear) - weekOffset + weekOffsetNext) / 7;
-}
-function untruncateYear(year) {
-  if (year > 99) {
-    return year;
-  } else return year > Settings.twoDigitCutoffYear ? 1900 + year : 2e3 + year;
-}
-function parseZoneInfo(ts, offsetFormat, locale, timeZone = null) {
-  const date = new Date(ts), intlOpts = {
-    hourCycle: "h23",
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-    hour: "2-digit",
-    minute: "2-digit"
-  };
-  if (timeZone) {
-    intlOpts.timeZone = timeZone;
-  }
-  const modified = { timeZoneName: offsetFormat, ...intlOpts };
-  const parsed = new Intl.DateTimeFormat(locale, modified).formatToParts(date).find((m) => m.type.toLowerCase() === "timezonename");
-  return parsed ? parsed.value : null;
-}
-function signedOffset(offHourStr, offMinuteStr) {
-  let offHour = parseInt(offHourStr, 10);
-  if (Number.isNaN(offHour)) {
-    offHour = 0;
-  }
-  const offMin = parseInt(offMinuteStr, 10) || 0, offMinSigned = offHour < 0 || Object.is(offHour, -0) ? -offMin : offMin;
-  return offHour * 60 + offMinSigned;
-}
-function asNumber(value) {
-  const numericValue = Number(value);
-  if (typeof value === "boolean" || value === "" || Number.isNaN(numericValue))
-    throw new InvalidArgumentError(`Invalid unit value ${value}`);
-  return numericValue;
-}
-function normalizeObject(obj, normalizer) {
-  const normalized = {};
-  for (const u in obj) {
-    if (hasOwnProperty(obj, u)) {
-      const v = obj[u];
-      if (v === void 0 || v === null) continue;
-      normalized[normalizer(u)] = asNumber(v);
-    }
-  }
-  return normalized;
-}
-function formatOffset(offset2, format) {
-  const hours = Math.trunc(Math.abs(offset2 / 60)), minutes = Math.trunc(Math.abs(offset2 % 60)), sign2 = offset2 >= 0 ? "+" : "-";
-  switch (format) {
-    case "short":
-      return `${sign2}${padStart(hours, 2)}:${padStart(minutes, 2)}`;
-    case "narrow":
-      return `${sign2}${hours}${minutes > 0 ? `:${minutes}` : ""}`;
-    case "techie":
-      return `${sign2}${padStart(hours, 2)}${padStart(minutes, 2)}`;
-    default:
-      throw new RangeError(`Value format ${format} is out of range for property format`);
-  }
-}
-function timeObject(obj) {
-  return pick(obj, ["hour", "minute", "second", "millisecond"]);
-}
-const monthsLong = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December"
-];
-const monthsShort = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec"
-];
-const monthsNarrow = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"];
-function months(length2) {
-  switch (length2) {
-    case "narrow":
-      return [...monthsNarrow];
-    case "short":
-      return [...monthsShort];
-    case "long":
-      return [...monthsLong];
-    case "numeric":
-      return ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
-    case "2-digit":
-      return ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
-    default:
-      return null;
-  }
-}
-const weekdaysLong = [
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-  "Sunday"
-];
-const weekdaysShort = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-const weekdaysNarrow = ["M", "T", "W", "T", "F", "S", "S"];
-function weekdays(length2) {
-  switch (length2) {
-    case "narrow":
-      return [...weekdaysNarrow];
-    case "short":
-      return [...weekdaysShort];
-    case "long":
-      return [...weekdaysLong];
-    case "numeric":
-      return ["1", "2", "3", "4", "5", "6", "7"];
-    default:
-      return null;
-  }
-}
-const meridiems = ["AM", "PM"];
-const erasLong = ["Before Christ", "Anno Domini"];
-const erasShort = ["BC", "AD"];
-const erasNarrow = ["B", "A"];
-function eras(length2) {
-  switch (length2) {
-    case "narrow":
-      return [...erasNarrow];
-    case "short":
-      return [...erasShort];
-    case "long":
-      return [...erasLong];
-    default:
-      return null;
-  }
-}
-function meridiemForDateTime(dt) {
-  return meridiems[dt.hour < 12 ? 0 : 1];
-}
-function weekdayForDateTime(dt, length2) {
-  return weekdays(length2)[dt.weekday - 1];
-}
-function monthForDateTime(dt, length2) {
-  return months(length2)[dt.month - 1];
-}
-function eraForDateTime(dt, length2) {
-  return eras(length2)[dt.year < 0 ? 0 : 1];
-}
-function formatRelativeTime(unit, count, numeric = "always", narrow = false) {
-  const units = {
-    years: ["year", "yr."],
-    quarters: ["quarter", "qtr."],
-    months: ["month", "mo."],
-    weeks: ["week", "wk."],
-    days: ["day", "day", "days"],
-    hours: ["hour", "hr."],
-    minutes: ["minute", "min."],
-    seconds: ["second", "sec."]
-  };
-  const lastable = ["hours", "minutes", "seconds"].indexOf(unit) === -1;
-  if (numeric === "auto" && lastable) {
-    const isDay = unit === "days";
-    switch (count) {
-      case 1:
-        return isDay ? "tomorrow" : `next ${units[unit][0]}`;
-      case -1:
-        return isDay ? "yesterday" : `last ${units[unit][0]}`;
-      case 0:
-        return isDay ? "today" : `this ${units[unit][0]}`;
-    }
-  }
-  const isInPast = Object.is(count, -0) || count < 0, fmtValue = Math.abs(count), singular = fmtValue === 1, lilUnits = units[unit], fmtUnit = narrow ? singular ? lilUnits[1] : lilUnits[2] || lilUnits[1] : singular ? units[unit][0] : unit;
-  return isInPast ? `${fmtValue} ${fmtUnit} ago` : `in ${fmtValue} ${fmtUnit}`;
-}
-function stringifyTokens(splits, tokenToString) {
-  let s2 = "";
-  for (const token2 of splits) {
-    if (token2.literal) {
-      s2 += token2.val;
-    } else {
-      s2 += tokenToString(token2.val);
-    }
-  }
-  return s2;
-}
-const macroTokenToFormatOpts = {
-  D: DATE_SHORT,
-  DD: DATE_MED,
-  DDD: DATE_FULL,
-  DDDD: DATE_HUGE,
-  t: TIME_SIMPLE,
-  tt: TIME_WITH_SECONDS,
-  ttt: TIME_WITH_SHORT_OFFSET,
-  tttt: TIME_WITH_LONG_OFFSET,
-  T: TIME_24_SIMPLE,
-  TT: TIME_24_WITH_SECONDS,
-  TTT: TIME_24_WITH_SHORT_OFFSET,
-  TTTT: TIME_24_WITH_LONG_OFFSET,
-  f: DATETIME_SHORT,
-  ff: DATETIME_MED,
-  fff: DATETIME_FULL,
-  ffff: DATETIME_HUGE,
-  F: DATETIME_SHORT_WITH_SECONDS,
-  FF: DATETIME_MED_WITH_SECONDS,
-  FFF: DATETIME_FULL_WITH_SECONDS,
-  FFFF: DATETIME_HUGE_WITH_SECONDS
-};
-class Formatter {
-  static create(locale, opts = {}) {
-    return new Formatter(locale, opts);
-  }
-  static parseFormat(fmt) {
-    let current = null, currentFull = "", bracketed = false;
-    const splits = [];
-    for (let i = 0; i < fmt.length; i++) {
-      const c = fmt.charAt(i);
-      if (c === "'") {
-        if (currentFull.length > 0) {
-          splits.push({ literal: bracketed || /^\s+$/.test(currentFull), val: currentFull });
-        }
-        current = null;
-        currentFull = "";
-        bracketed = !bracketed;
-      } else if (bracketed) {
-        currentFull += c;
-      } else if (c === current) {
-        currentFull += c;
-      } else {
-        if (currentFull.length > 0) {
-          splits.push({ literal: /^\s+$/.test(currentFull), val: currentFull });
-        }
-        currentFull = c;
-        current = c;
-      }
-    }
-    if (currentFull.length > 0) {
-      splits.push({ literal: bracketed || /^\s+$/.test(currentFull), val: currentFull });
-    }
-    return splits;
-  }
-  static macroTokenToFormatOpts(token2) {
-    return macroTokenToFormatOpts[token2];
-  }
-  constructor(locale, formatOpts) {
-    this.opts = formatOpts;
-    this.loc = locale;
-    this.systemLoc = null;
-  }
-  formatWithSystemDefault(dt, opts) {
-    if (this.systemLoc === null) {
-      this.systemLoc = this.loc.redefaultToSystem();
-    }
-    const df = this.systemLoc.dtFormatter(dt, { ...this.opts, ...opts });
-    return df.format();
-  }
-  dtFormatter(dt, opts = {}) {
-    return this.loc.dtFormatter(dt, { ...this.opts, ...opts });
-  }
-  formatDateTime(dt, opts) {
-    return this.dtFormatter(dt, opts).format();
-  }
-  formatDateTimeParts(dt, opts) {
-    return this.dtFormatter(dt, opts).formatToParts();
-  }
-  formatInterval(interval, opts) {
-    const df = this.dtFormatter(interval.start, opts);
-    return df.dtf.formatRange(interval.start.toJSDate(), interval.end.toJSDate());
-  }
-  resolvedOptions(dt, opts) {
-    return this.dtFormatter(dt, opts).resolvedOptions();
-  }
-  num(n2, p = 0) {
-    if (this.opts.forceSimple) {
-      return padStart(n2, p);
-    }
-    const opts = { ...this.opts };
-    if (p > 0) {
-      opts.padTo = p;
-    }
-    return this.loc.numberFormatter(opts).format(n2);
-  }
-  formatDateTimeFromString(dt, fmt) {
-    const knownEnglish = this.loc.listingMode() === "en", useDateTimeFormatter = this.loc.outputCalendar && this.loc.outputCalendar !== "gregory", string = (opts, extract2) => this.loc.extract(dt, opts, extract2), formatOffset2 = (opts) => {
-      if (dt.isOffsetFixed && dt.offset === 0 && opts.allowZ) {
-        return "Z";
-      }
-      return dt.isValid ? dt.zone.formatOffset(dt.ts, opts.format) : "";
-    }, meridiem = () => knownEnglish ? meridiemForDateTime(dt) : string({ hour: "numeric", hourCycle: "h12" }, "dayperiod"), month = (length2, standalone) => knownEnglish ? monthForDateTime(dt, length2) : string(standalone ? { month: length2 } : { month: length2, day: "numeric" }, "month"), weekday = (length2, standalone) => knownEnglish ? weekdayForDateTime(dt, length2) : string(
-      standalone ? { weekday: length2 } : { weekday: length2, month: "long", day: "numeric" },
-      "weekday"
-    ), maybeMacro = (token2) => {
-      const formatOpts = Formatter.macroTokenToFormatOpts(token2);
-      if (formatOpts) {
-        return this.formatWithSystemDefault(dt, formatOpts);
-      } else {
-        return token2;
-      }
-    }, era = (length2) => knownEnglish ? eraForDateTime(dt, length2) : string({ era: length2 }, "era"), tokenToString = (token2) => {
-      switch (token2) {
-        // ms
-        case "S":
-          return this.num(dt.millisecond);
-        case "u":
-        // falls through
-        case "SSS":
-          return this.num(dt.millisecond, 3);
-        // seconds
-        case "s":
-          return this.num(dt.second);
-        case "ss":
-          return this.num(dt.second, 2);
-        // fractional seconds
-        case "uu":
-          return this.num(Math.floor(dt.millisecond / 10), 2);
-        case "uuu":
-          return this.num(Math.floor(dt.millisecond / 100));
-        // minutes
-        case "m":
-          return this.num(dt.minute);
-        case "mm":
-          return this.num(dt.minute, 2);
-        // hours
-        case "h":
-          return this.num(dt.hour % 12 === 0 ? 12 : dt.hour % 12);
-        case "hh":
-          return this.num(dt.hour % 12 === 0 ? 12 : dt.hour % 12, 2);
-        case "H":
-          return this.num(dt.hour);
-        case "HH":
-          return this.num(dt.hour, 2);
-        // offset
-        case "Z":
-          return formatOffset2({ format: "narrow", allowZ: this.opts.allowZ });
-        case "ZZ":
-          return formatOffset2({ format: "short", allowZ: this.opts.allowZ });
-        case "ZZZ":
-          return formatOffset2({ format: "techie", allowZ: this.opts.allowZ });
-        case "ZZZZ":
-          return dt.zone.offsetName(dt.ts, { format: "short", locale: this.loc.locale });
-        case "ZZZZZ":
-          return dt.zone.offsetName(dt.ts, { format: "long", locale: this.loc.locale });
-        // zone
-        case "z":
-          return dt.zoneName;
-        // meridiems
-        case "a":
-          return meridiem();
-        // dates
-        case "d":
-          return useDateTimeFormatter ? string({ day: "numeric" }, "day") : this.num(dt.day);
-        case "dd":
-          return useDateTimeFormatter ? string({ day: "2-digit" }, "day") : this.num(dt.day, 2);
-        // weekdays - standalone
-        case "c":
-          return this.num(dt.weekday);
-        case "ccc":
-          return weekday("short", true);
-        case "cccc":
-          return weekday("long", true);
-        case "ccccc":
-          return weekday("narrow", true);
-        // weekdays - format
-        case "E":
-          return this.num(dt.weekday);
-        case "EEE":
-          return weekday("short", false);
-        case "EEEE":
-          return weekday("long", false);
-        case "EEEEE":
-          return weekday("narrow", false);
-        // months - standalone
-        case "L":
-          return useDateTimeFormatter ? string({ month: "numeric", day: "numeric" }, "month") : this.num(dt.month);
-        case "LL":
-          return useDateTimeFormatter ? string({ month: "2-digit", day: "numeric" }, "month") : this.num(dt.month, 2);
-        case "LLL":
-          return month("short", true);
-        case "LLLL":
-          return month("long", true);
-        case "LLLLL":
-          return month("narrow", true);
-        // months - format
-        case "M":
-          return useDateTimeFormatter ? string({ month: "numeric" }, "month") : this.num(dt.month);
-        case "MM":
-          return useDateTimeFormatter ? string({ month: "2-digit" }, "month") : this.num(dt.month, 2);
-        case "MMM":
-          return month("short", false);
-        case "MMMM":
-          return month("long", false);
-        case "MMMMM":
-          return month("narrow", false);
-        // years
-        case "y":
-          return useDateTimeFormatter ? string({ year: "numeric" }, "year") : this.num(dt.year);
-        case "yy":
-          return useDateTimeFormatter ? string({ year: "2-digit" }, "year") : this.num(dt.year.toString().slice(-2), 2);
-        case "yyyy":
-          return useDateTimeFormatter ? string({ year: "numeric" }, "year") : this.num(dt.year, 4);
-        case "yyyyyy":
-          return useDateTimeFormatter ? string({ year: "numeric" }, "year") : this.num(dt.year, 6);
-        // eras
-        case "G":
-          return era("short");
-        case "GG":
-          return era("long");
-        case "GGGGG":
-          return era("narrow");
-        case "kk":
-          return this.num(dt.weekYear.toString().slice(-2), 2);
-        case "kkkk":
-          return this.num(dt.weekYear, 4);
-        case "W":
-          return this.num(dt.weekNumber);
-        case "WW":
-          return this.num(dt.weekNumber, 2);
-        case "n":
-          return this.num(dt.localWeekNumber);
-        case "nn":
-          return this.num(dt.localWeekNumber, 2);
-        case "ii":
-          return this.num(dt.localWeekYear.toString().slice(-2), 2);
-        case "iiii":
-          return this.num(dt.localWeekYear, 4);
-        case "o":
-          return this.num(dt.ordinal);
-        case "ooo":
-          return this.num(dt.ordinal, 3);
-        case "q":
-          return this.num(dt.quarter);
-        case "qq":
-          return this.num(dt.quarter, 2);
-        case "X":
-          return this.num(Math.floor(dt.ts / 1e3));
-        case "x":
-          return this.num(dt.ts);
-        default:
-          return maybeMacro(token2);
-      }
-    };
-    return stringifyTokens(Formatter.parseFormat(fmt), tokenToString);
-  }
-  formatDurationFromString(dur, fmt) {
-    const tokenToField = (token2) => {
-      switch (token2[0]) {
-        case "S":
-          return "millisecond";
-        case "s":
-          return "second";
-        case "m":
-          return "minute";
-        case "h":
-          return "hour";
-        case "d":
-          return "day";
-        case "w":
-          return "week";
-        case "M":
-          return "month";
-        case "y":
-          return "year";
-        default:
-          return null;
-      }
-    }, tokenToString = (lildur) => (token2) => {
-      const mapped = tokenToField(token2);
-      if (mapped) {
-        return this.num(lildur.get(mapped), token2.length);
-      } else {
-        return token2;
-      }
-    }, tokens = Formatter.parseFormat(fmt), realTokens = tokens.reduce(
-      (found, { literal, val: val2 }) => literal ? found : found.concat(val2),
-      []
-    ), collapsed = dur.shiftTo(...realTokens.map(tokenToField).filter((t) => t));
-    return stringifyTokens(tokens, tokenToString(collapsed));
-  }
-}
-const ianaRegex = /[A-Za-z_+-]{1,256}(?::?\/[A-Za-z0-9_+-]{1,256}(?:\/[A-Za-z0-9_+-]{1,256})?)?/;
-function combineRegexes(...regexes) {
-  const full = regexes.reduce((f, r2) => f + r2.source, "");
-  return RegExp(`^${full}$`);
-}
-function combineExtractors(...extractors) {
-  return (m) => extractors.reduce(
-    ([mergedVals, mergedZone, cursor2], ex) => {
-      const [val2, zone, next2] = ex(m, cursor2);
-      return [{ ...mergedVals, ...val2 }, zone || mergedZone, next2];
-    },
-    [{}, null, 1]
-  ).slice(0, 2);
-}
-function parse$3(s2, ...patterns) {
-  if (s2 == null) {
-    return [null, null];
-  }
-  for (const [regex, extractor] of patterns) {
-    const m = regex.exec(s2);
-    if (m) {
-      return extractor(m);
-    }
-  }
-  return [null, null];
-}
-function simpleParse(...keys) {
-  return (match2, cursor2) => {
-    const ret = {};
-    let i;
-    for (i = 0; i < keys.length; i++) {
-      ret[keys[i]] = parseInteger(match2[cursor2 + i]);
-    }
-    return [ret, null, cursor2 + i];
-  };
-}
-const offsetRegex = /(?:(Z)|([+-]\d\d)(?::?(\d\d))?)/;
-const isoExtendedZone = `(?:${offsetRegex.source}?(?:\\[(${ianaRegex.source})\\])?)?`;
-const isoTimeBaseRegex = /(\d\d)(?::?(\d\d)(?::?(\d\d)(?:[.,](\d{1,30}))?)?)?/;
-const isoTimeRegex = RegExp(`${isoTimeBaseRegex.source}${isoExtendedZone}`);
-const isoTimeExtensionRegex = RegExp(`(?:T${isoTimeRegex.source})?`);
-const isoYmdRegex = /([+-]\d{6}|\d{4})(?:-?(\d\d)(?:-?(\d\d))?)?/;
-const isoWeekRegex = /(\d{4})-?W(\d\d)(?:-?(\d))?/;
-const isoOrdinalRegex = /(\d{4})-?(\d{3})/;
-const extractISOWeekData = simpleParse("weekYear", "weekNumber", "weekDay");
-const extractISOOrdinalData = simpleParse("year", "ordinal");
-const sqlYmdRegex = /(\d{4})-(\d\d)-(\d\d)/;
-const sqlTimeRegex = RegExp(
-  `${isoTimeBaseRegex.source} ?(?:${offsetRegex.source}|(${ianaRegex.source}))?`
-);
-const sqlTimeExtensionRegex = RegExp(`(?: ${sqlTimeRegex.source})?`);
-function int(match2, pos, fallback) {
-  const m = match2[pos];
-  return isUndefined(m) ? fallback : parseInteger(m);
-}
-function extractISOYmd(match2, cursor2) {
-  const item2 = {
-    year: int(match2, cursor2),
-    month: int(match2, cursor2 + 1, 1),
-    day: int(match2, cursor2 + 2, 1)
-  };
-  return [item2, null, cursor2 + 3];
-}
-function extractISOTime(match2, cursor2) {
-  const item2 = {
-    hours: int(match2, cursor2, 0),
-    minutes: int(match2, cursor2 + 1, 0),
-    seconds: int(match2, cursor2 + 2, 0),
-    milliseconds: parseMillis(match2[cursor2 + 3])
-  };
-  return [item2, null, cursor2 + 4];
-}
-function extractISOOffset(match2, cursor2) {
-  const local = !match2[cursor2] && !match2[cursor2 + 1], fullOffset = signedOffset(match2[cursor2 + 1], match2[cursor2 + 2]), zone = local ? null : FixedOffsetZone.instance(fullOffset);
-  return [{}, zone, cursor2 + 3];
-}
-function extractIANAZone(match2, cursor2) {
-  const zone = match2[cursor2] ? IANAZone.create(match2[cursor2]) : null;
-  return [{}, zone, cursor2 + 1];
-}
-const isoTimeOnly = RegExp(`^T?${isoTimeBaseRegex.source}$`);
-const isoDuration = /^-?P(?:(?:(-?\d{1,20}(?:\.\d{1,20})?)Y)?(?:(-?\d{1,20}(?:\.\d{1,20})?)M)?(?:(-?\d{1,20}(?:\.\d{1,20})?)W)?(?:(-?\d{1,20}(?:\.\d{1,20})?)D)?(?:T(?:(-?\d{1,20}(?:\.\d{1,20})?)H)?(?:(-?\d{1,20}(?:\.\d{1,20})?)M)?(?:(-?\d{1,20})(?:[.,](-?\d{1,20}))?S)?)?)$/;
-function extractISODuration(match2) {
-  const [s2, yearStr, monthStr, weekStr, dayStr, hourStr, minuteStr, secondStr, millisecondsStr] = match2;
-  const hasNegativePrefix = s2[0] === "-";
-  const negativeSeconds = secondStr && secondStr[0] === "-";
-  const maybeNegate = (num, force = false) => num !== void 0 && (force || num && hasNegativePrefix) ? -num : num;
-  return [
-    {
-      years: maybeNegate(parseFloating(yearStr)),
-      months: maybeNegate(parseFloating(monthStr)),
-      weeks: maybeNegate(parseFloating(weekStr)),
-      days: maybeNegate(parseFloating(dayStr)),
-      hours: maybeNegate(parseFloating(hourStr)),
-      minutes: maybeNegate(parseFloating(minuteStr)),
-      seconds: maybeNegate(parseFloating(secondStr), secondStr === "-0"),
-      milliseconds: maybeNegate(parseMillis(millisecondsStr), negativeSeconds)
-    }
-  ];
-}
-const obsOffsets = {
-  GMT: 0,
-  EDT: -4 * 60,
-  EST: -5 * 60,
-  CDT: -5 * 60,
-  CST: -6 * 60,
-  MDT: -6 * 60,
-  MST: -7 * 60,
-  PDT: -7 * 60,
-  PST: -8 * 60
-};
-function fromStrings(weekdayStr, yearStr, monthStr, dayStr, hourStr, minuteStr, secondStr) {
-  const result = {
-    year: yearStr.length === 2 ? untruncateYear(parseInteger(yearStr)) : parseInteger(yearStr),
-    month: monthsShort.indexOf(monthStr) + 1,
-    day: parseInteger(dayStr),
-    hour: parseInteger(hourStr),
-    minute: parseInteger(minuteStr)
-  };
-  if (secondStr) result.second = parseInteger(secondStr);
-  if (weekdayStr) {
-    result.weekday = weekdayStr.length > 3 ? weekdaysLong.indexOf(weekdayStr) + 1 : weekdaysShort.indexOf(weekdayStr) + 1;
-  }
-  return result;
-}
-const rfc2822 = /^(?:(Mon|Tue|Wed|Thu|Fri|Sat|Sun),\s)?(\d{1,2})\s(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s(\d{2,4})\s(\d\d):(\d\d)(?::(\d\d))?\s(?:(UT|GMT|[ECMP][SD]T)|([Zz])|(?:([+-]\d\d)(\d\d)))$/;
-function extractRFC2822(match2) {
-  const [
-    ,
-    weekdayStr,
-    dayStr,
-    monthStr,
-    yearStr,
-    hourStr,
-    minuteStr,
-    secondStr,
-    obsOffset,
-    milOffset,
-    offHourStr,
-    offMinuteStr
-  ] = match2, result = fromStrings(weekdayStr, yearStr, monthStr, dayStr, hourStr, minuteStr, secondStr);
-  let offset2;
-  if (obsOffset) {
-    offset2 = obsOffsets[obsOffset];
-  } else if (milOffset) {
-    offset2 = 0;
-  } else {
-    offset2 = signedOffset(offHourStr, offMinuteStr);
-  }
-  return [result, new FixedOffsetZone(offset2)];
-}
-function preprocessRFC2822(s2) {
-  return s2.replace(/\([^()]*\)|[\n\t]/g, " ").replace(/(\s\s+)/g, " ").trim();
-}
-const rfc1123 = /^(Mon|Tue|Wed|Thu|Fri|Sat|Sun), (\d\d) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d{4}) (\d\d):(\d\d):(\d\d) GMT$/, rfc850 = /^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), (\d\d)-(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)-(\d\d) (\d\d):(\d\d):(\d\d) GMT$/, ascii = /^(Mon|Tue|Wed|Thu|Fri|Sat|Sun) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) ( \d|\d\d) (\d\d):(\d\d):(\d\d) (\d{4})$/;
-function extractRFC1123Or850(match2) {
-  const [, weekdayStr, dayStr, monthStr, yearStr, hourStr, minuteStr, secondStr] = match2, result = fromStrings(weekdayStr, yearStr, monthStr, dayStr, hourStr, minuteStr, secondStr);
-  return [result, FixedOffsetZone.utcInstance];
-}
-function extractASCII(match2) {
-  const [, weekdayStr, monthStr, dayStr, hourStr, minuteStr, secondStr, yearStr] = match2, result = fromStrings(weekdayStr, yearStr, monthStr, dayStr, hourStr, minuteStr, secondStr);
-  return [result, FixedOffsetZone.utcInstance];
-}
-const isoYmdWithTimeExtensionRegex = combineRegexes(isoYmdRegex, isoTimeExtensionRegex);
-const isoWeekWithTimeExtensionRegex = combineRegexes(isoWeekRegex, isoTimeExtensionRegex);
-const isoOrdinalWithTimeExtensionRegex = combineRegexes(isoOrdinalRegex, isoTimeExtensionRegex);
-const isoTimeCombinedRegex = combineRegexes(isoTimeRegex);
-const extractISOYmdTimeAndOffset = combineExtractors(
-  extractISOYmd,
-  extractISOTime,
-  extractISOOffset,
-  extractIANAZone
-);
-const extractISOWeekTimeAndOffset = combineExtractors(
-  extractISOWeekData,
-  extractISOTime,
-  extractISOOffset,
-  extractIANAZone
-);
-const extractISOOrdinalDateAndTime = combineExtractors(
-  extractISOOrdinalData,
-  extractISOTime,
-  extractISOOffset,
-  extractIANAZone
-);
-const extractISOTimeAndOffset = combineExtractors(
-  extractISOTime,
-  extractISOOffset,
-  extractIANAZone
-);
-function parseISODate(s2) {
-  return parse$3(
-    s2,
-    [isoYmdWithTimeExtensionRegex, extractISOYmdTimeAndOffset],
-    [isoWeekWithTimeExtensionRegex, extractISOWeekTimeAndOffset],
-    [isoOrdinalWithTimeExtensionRegex, extractISOOrdinalDateAndTime],
-    [isoTimeCombinedRegex, extractISOTimeAndOffset]
-  );
-}
-function parseRFC2822Date(s2) {
-  return parse$3(preprocessRFC2822(s2), [rfc2822, extractRFC2822]);
-}
-function parseHTTPDate(s2) {
-  return parse$3(
-    s2,
-    [rfc1123, extractRFC1123Or850],
-    [rfc850, extractRFC1123Or850],
-    [ascii, extractASCII]
-  );
-}
-function parseISODuration(s2) {
-  return parse$3(s2, [isoDuration, extractISODuration]);
-}
-const extractISOTimeOnly = combineExtractors(extractISOTime);
-function parseISOTimeOnly(s2) {
-  return parse$3(s2, [isoTimeOnly, extractISOTimeOnly]);
-}
-const sqlYmdWithTimeExtensionRegex = combineRegexes(sqlYmdRegex, sqlTimeExtensionRegex);
-const sqlTimeCombinedRegex = combineRegexes(sqlTimeRegex);
-const extractISOTimeOffsetAndIANAZone = combineExtractors(
-  extractISOTime,
-  extractISOOffset,
-  extractIANAZone
-);
-function parseSQL(s2) {
-  return parse$3(
-    s2,
-    [sqlYmdWithTimeExtensionRegex, extractISOYmdTimeAndOffset],
-    [sqlTimeCombinedRegex, extractISOTimeOffsetAndIANAZone]
-  );
-}
-const INVALID$2 = "Invalid Duration";
-const lowOrderMatrix = {
-  weeks: {
-    days: 7,
-    hours: 7 * 24,
-    minutes: 7 * 24 * 60,
-    seconds: 7 * 24 * 60 * 60,
-    milliseconds: 7 * 24 * 60 * 60 * 1e3
-  },
-  days: {
-    hours: 24,
-    minutes: 24 * 60,
-    seconds: 24 * 60 * 60,
-    milliseconds: 24 * 60 * 60 * 1e3
-  },
-  hours: { minutes: 60, seconds: 60 * 60, milliseconds: 60 * 60 * 1e3 },
-  minutes: { seconds: 60, milliseconds: 60 * 1e3 },
-  seconds: { milliseconds: 1e3 }
-}, casualMatrix = {
-  years: {
-    quarters: 4,
-    months: 12,
-    weeks: 52,
-    days: 365,
-    hours: 365 * 24,
-    minutes: 365 * 24 * 60,
-    seconds: 365 * 24 * 60 * 60,
-    milliseconds: 365 * 24 * 60 * 60 * 1e3
-  },
-  quarters: {
-    months: 3,
-    weeks: 13,
-    days: 91,
-    hours: 91 * 24,
-    minutes: 91 * 24 * 60,
-    seconds: 91 * 24 * 60 * 60,
-    milliseconds: 91 * 24 * 60 * 60 * 1e3
-  },
-  months: {
-    weeks: 4,
-    days: 30,
-    hours: 30 * 24,
-    minutes: 30 * 24 * 60,
-    seconds: 30 * 24 * 60 * 60,
-    milliseconds: 30 * 24 * 60 * 60 * 1e3
-  },
-  ...lowOrderMatrix
-}, daysInYearAccurate = 146097 / 400, daysInMonthAccurate = 146097 / 4800, accurateMatrix = {
-  years: {
-    quarters: 4,
-    months: 12,
-    weeks: daysInYearAccurate / 7,
-    days: daysInYearAccurate,
-    hours: daysInYearAccurate * 24,
-    minutes: daysInYearAccurate * 24 * 60,
-    seconds: daysInYearAccurate * 24 * 60 * 60,
-    milliseconds: daysInYearAccurate * 24 * 60 * 60 * 1e3
-  },
-  quarters: {
-    months: 3,
-    weeks: daysInYearAccurate / 28,
-    days: daysInYearAccurate / 4,
-    hours: daysInYearAccurate * 24 / 4,
-    minutes: daysInYearAccurate * 24 * 60 / 4,
-    seconds: daysInYearAccurate * 24 * 60 * 60 / 4,
-    milliseconds: daysInYearAccurate * 24 * 60 * 60 * 1e3 / 4
-  },
-  months: {
-    weeks: daysInMonthAccurate / 7,
-    days: daysInMonthAccurate,
-    hours: daysInMonthAccurate * 24,
-    minutes: daysInMonthAccurate * 24 * 60,
-    seconds: daysInMonthAccurate * 24 * 60 * 60,
-    milliseconds: daysInMonthAccurate * 24 * 60 * 60 * 1e3
-  },
-  ...lowOrderMatrix
-};
-const orderedUnits$1 = [
-  "years",
-  "quarters",
-  "months",
-  "weeks",
-  "days",
-  "hours",
-  "minutes",
-  "seconds",
-  "milliseconds"
-];
-const reverseUnits = orderedUnits$1.slice(0).reverse();
-function clone$2(dur, alts, clear = false) {
-  const conf = {
-    values: clear ? alts.values : { ...dur.values, ...alts.values || {} },
-    loc: dur.loc.clone(alts.loc),
-    conversionAccuracy: alts.conversionAccuracy || dur.conversionAccuracy,
-    matrix: alts.matrix || dur.matrix
-  };
-  return new Duration(conf);
-}
-function durationToMillis(matrix, vals) {
-  let sum = vals.milliseconds ?? 0;
-  for (const unit of reverseUnits.slice(1)) {
-    if (vals[unit]) {
-      sum += vals[unit] * matrix[unit]["milliseconds"];
-    }
-  }
-  return sum;
-}
-function normalizeValues(matrix, vals) {
-  const factor = durationToMillis(matrix, vals) < 0 ? -1 : 1;
-  orderedUnits$1.reduceRight((previous, current) => {
-    if (!isUndefined(vals[current])) {
-      if (previous) {
-        const previousVal = vals[previous] * factor;
-        const conv = matrix[current][previous];
-        const rollUp = Math.floor(previousVal / conv);
-        vals[current] += rollUp * factor;
-        vals[previous] -= rollUp * conv * factor;
-      }
-      return current;
-    } else {
-      return previous;
-    }
-  }, null);
-  orderedUnits$1.reduce((previous, current) => {
-    if (!isUndefined(vals[current])) {
-      if (previous) {
-        const fraction = vals[previous] % 1;
-        vals[previous] -= fraction;
-        vals[current] += fraction * matrix[previous][current];
-      }
-      return current;
-    } else {
-      return previous;
-    }
-  }, null);
-}
-function removeZeroes(vals) {
-  const newVals = {};
-  for (const [key, value] of Object.entries(vals)) {
-    if (value !== 0) {
-      newVals[key] = value;
-    }
-  }
-  return newVals;
-}
-class Duration {
-  /**
-   * @private
-   */
-  constructor(config) {
-    const accurate = config.conversionAccuracy === "longterm" || false;
-    let matrix = accurate ? accurateMatrix : casualMatrix;
-    if (config.matrix) {
-      matrix = config.matrix;
-    }
-    this.values = config.values;
-    this.loc = config.loc || Locale.create();
-    this.conversionAccuracy = accurate ? "longterm" : "casual";
-    this.invalid = config.invalid || null;
-    this.matrix = matrix;
-    this.isLuxonDuration = true;
-  }
-  /**
-   * Create Duration from a number of milliseconds.
-   * @param {number} count of milliseconds
-   * @param {Object} opts - options for parsing
-   * @param {string} [opts.locale='en-US'] - the locale to use
-   * @param {string} opts.numberingSystem - the numbering system to use
-   * @param {string} [opts.conversionAccuracy='casual'] - the conversion system to use
-   * @return {Duration}
-   */
-  static fromMillis(count, opts) {
-    return Duration.fromObject({ milliseconds: count }, opts);
-  }
-  /**
-   * Create a Duration from a JavaScript object with keys like 'years' and 'hours'.
-   * If this object is empty then a zero milliseconds duration is returned.
-   * @param {Object} obj - the object to create the DateTime from
-   * @param {number} obj.years
-   * @param {number} obj.quarters
-   * @param {number} obj.months
-   * @param {number} obj.weeks
-   * @param {number} obj.days
-   * @param {number} obj.hours
-   * @param {number} obj.minutes
-   * @param {number} obj.seconds
-   * @param {number} obj.milliseconds
-   * @param {Object} [opts=[]] - options for creating this Duration
-   * @param {string} [opts.locale='en-US'] - the locale to use
-   * @param {string} opts.numberingSystem - the numbering system to use
-   * @param {string} [opts.conversionAccuracy='casual'] - the preset conversion system to use
-   * @param {string} [opts.matrix=Object] - the custom conversion system to use
-   * @return {Duration}
-   */
-  static fromObject(obj, opts = {}) {
-    if (obj == null || typeof obj !== "object") {
-      throw new InvalidArgumentError(
-        `Duration.fromObject: argument expected to be an object, got ${obj === null ? "null" : typeof obj}`
-      );
-    }
-    return new Duration({
-      values: normalizeObject(obj, Duration.normalizeUnit),
-      loc: Locale.fromObject(opts),
-      conversionAccuracy: opts.conversionAccuracy,
-      matrix: opts.matrix
-    });
-  }
-  /**
-   * Create a Duration from DurationLike.
-   *
-   * @param {Object | number | Duration} durationLike
-   * One of:
-   * - object with keys like 'years' and 'hours'.
-   * - number representing milliseconds
-   * - Duration instance
-   * @return {Duration}
-   */
-  static fromDurationLike(durationLike) {
-    if (isNumber(durationLike)) {
-      return Duration.fromMillis(durationLike);
-    } else if (Duration.isDuration(durationLike)) {
-      return durationLike;
-    } else if (typeof durationLike === "object") {
-      return Duration.fromObject(durationLike);
-    } else {
-      throw new InvalidArgumentError(
-        `Unknown duration argument ${durationLike} of type ${typeof durationLike}`
-      );
-    }
-  }
-  /**
-   * Create a Duration from an ISO 8601 duration string.
-   * @param {string} text - text to parse
-   * @param {Object} opts - options for parsing
-   * @param {string} [opts.locale='en-US'] - the locale to use
-   * @param {string} opts.numberingSystem - the numbering system to use
-   * @param {string} [opts.conversionAccuracy='casual'] - the preset conversion system to use
-   * @param {string} [opts.matrix=Object] - the preset conversion system to use
-   * @see https://en.wikipedia.org/wiki/ISO_8601#Durations
-   * @example Duration.fromISO('P3Y6M1W4DT12H30M5S').toObject() //=> { years: 3, months: 6, weeks: 1, days: 4, hours: 12, minutes: 30, seconds: 5 }
-   * @example Duration.fromISO('PT23H').toObject() //=> { hours: 23 }
-   * @example Duration.fromISO('P5Y3M').toObject() //=> { years: 5, months: 3 }
-   * @return {Duration}
-   */
-  static fromISO(text2, opts) {
-    const [parsed] = parseISODuration(text2);
-    if (parsed) {
-      return Duration.fromObject(parsed, opts);
-    } else {
-      return Duration.invalid("unparsable", `the input "${text2}" can't be parsed as ISO 8601`);
-    }
-  }
-  /**
-   * Create a Duration from an ISO 8601 time string.
-   * @param {string} text - text to parse
-   * @param {Object} opts - options for parsing
-   * @param {string} [opts.locale='en-US'] - the locale to use
-   * @param {string} opts.numberingSystem - the numbering system to use
-   * @param {string} [opts.conversionAccuracy='casual'] - the preset conversion system to use
-   * @param {string} [opts.matrix=Object] - the conversion system to use
-   * @see https://en.wikipedia.org/wiki/ISO_8601#Times
-   * @example Duration.fromISOTime('11:22:33.444').toObject() //=> { hours: 11, minutes: 22, seconds: 33, milliseconds: 444 }
-   * @example Duration.fromISOTime('11:00').toObject() //=> { hours: 11, minutes: 0, seconds: 0 }
-   * @example Duration.fromISOTime('T11:00').toObject() //=> { hours: 11, minutes: 0, seconds: 0 }
-   * @example Duration.fromISOTime('1100').toObject() //=> { hours: 11, minutes: 0, seconds: 0 }
-   * @example Duration.fromISOTime('T1100').toObject() //=> { hours: 11, minutes: 0, seconds: 0 }
-   * @return {Duration}
-   */
-  static fromISOTime(text2, opts) {
-    const [parsed] = parseISOTimeOnly(text2);
-    if (parsed) {
-      return Duration.fromObject(parsed, opts);
-    } else {
-      return Duration.invalid("unparsable", `the input "${text2}" can't be parsed as ISO 8601`);
-    }
-  }
-  /**
-   * Create an invalid Duration.
-   * @param {string} reason - simple string of why this datetime is invalid. Should not contain parameters or anything else data-dependent
-   * @param {string} [explanation=null] - longer explanation, may include parameters and other useful debugging information
-   * @return {Duration}
-   */
-  static invalid(reason, explanation = null) {
-    if (!reason) {
-      throw new InvalidArgumentError("need to specify a reason the Duration is invalid");
-    }
-    const invalid = reason instanceof Invalid ? reason : new Invalid(reason, explanation);
-    if (Settings.throwOnInvalid) {
-      throw new InvalidDurationError(invalid);
-    } else {
-      return new Duration({ invalid });
-    }
-  }
-  /**
-   * @private
-   */
-  static normalizeUnit(unit) {
-    const normalized = {
-      year: "years",
-      years: "years",
-      quarter: "quarters",
-      quarters: "quarters",
-      month: "months",
-      months: "months",
-      week: "weeks",
-      weeks: "weeks",
-      day: "days",
-      days: "days",
-      hour: "hours",
-      hours: "hours",
-      minute: "minutes",
-      minutes: "minutes",
-      second: "seconds",
-      seconds: "seconds",
-      millisecond: "milliseconds",
-      milliseconds: "milliseconds"
-    }[unit ? unit.toLowerCase() : unit];
-    if (!normalized) throw new InvalidUnitError(unit);
-    return normalized;
-  }
-  /**
-   * Check if an object is a Duration. Works across context boundaries
-   * @param {object} o
-   * @return {boolean}
-   */
-  static isDuration(o) {
-    return o && o.isLuxonDuration || false;
-  }
-  /**
-   * Get  the locale of a Duration, such 'en-GB'
-   * @type {string}
-   */
-  get locale() {
-    return this.isValid ? this.loc.locale : null;
-  }
-  /**
-   * Get the numbering system of a Duration, such 'beng'. The numbering system is used when formatting the Duration
-   *
-   * @type {string}
-   */
-  get numberingSystem() {
-    return this.isValid ? this.loc.numberingSystem : null;
-  }
-  /**
-   * Returns a string representation of this Duration formatted according to the specified format string. You may use these tokens:
-   * * `S` for milliseconds
-   * * `s` for seconds
-   * * `m` for minutes
-   * * `h` for hours
-   * * `d` for days
-   * * `w` for weeks
-   * * `M` for months
-   * * `y` for years
-   * Notes:
-   * * Add padding by repeating the token, e.g. "yy" pads the years to two digits, "hhhh" pads the hours out to four digits
-   * * Tokens can be escaped by wrapping with single quotes.
-   * * The duration will be converted to the set of units in the format string using {@link Duration#shiftTo} and the Durations's conversion accuracy setting.
-   * @param {string} fmt - the format string
-   * @param {Object} opts - options
-   * @param {boolean} [opts.floor=true] - floor numerical values
-   * @example Duration.fromObject({ years: 1, days: 6, seconds: 2 }).toFormat("y d s") //=> "1 6 2"
-   * @example Duration.fromObject({ years: 1, days: 6, seconds: 2 }).toFormat("yy dd sss") //=> "01 06 002"
-   * @example Duration.fromObject({ years: 1, days: 6, seconds: 2 }).toFormat("M S") //=> "12 518402000"
-   * @return {string}
-   */
-  toFormat(fmt, opts = {}) {
-    const fmtOpts = {
-      ...opts,
-      floor: opts.round !== false && opts.floor !== false
-    };
-    return this.isValid ? Formatter.create(this.loc, fmtOpts).formatDurationFromString(this, fmt) : INVALID$2;
-  }
-  /**
-   * Returns a string representation of a Duration with all units included.
-   * To modify its behavior, use `listStyle` and any Intl.NumberFormat option, though `unitDisplay` is especially relevant.
-   * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat#options
-   * @param {Object} opts - Formatting options. Accepts the same keys as the options parameter of the native `Intl.NumberFormat` constructor, as well as `listStyle`.
-   * @param {string} [opts.listStyle='narrow'] - How to format the merged list. Corresponds to the `style` property of the options parameter of the native `Intl.ListFormat` constructor.
-   * @example
-   * ```js
-   * var dur = Duration.fromObject({ days: 1, hours: 5, minutes: 6 })
-   * dur.toHuman() //=> '1 day, 5 hours, 6 minutes'
-   * dur.toHuman({ listStyle: "long" }) //=> '1 day, 5 hours, and 6 minutes'
-   * dur.toHuman({ unitDisplay: "short" }) //=> '1 day, 5 hr, 6 min'
-   * ```
-   */
-  toHuman(opts = {}) {
-    if (!this.isValid) return INVALID$2;
-    const l2 = orderedUnits$1.map((unit) => {
-      const val2 = this.values[unit];
-      if (isUndefined(val2)) {
-        return null;
-      }
-      return this.loc.numberFormatter({ style: "unit", unitDisplay: "long", ...opts, unit: unit.slice(0, -1) }).format(val2);
-    }).filter((n2) => n2);
-    return this.loc.listFormatter({ type: "conjunction", style: opts.listStyle || "narrow", ...opts }).format(l2);
-  }
-  /**
-   * Returns a JavaScript object with this Duration's values.
-   * @example Duration.fromObject({ years: 1, days: 6, seconds: 2 }).toObject() //=> { years: 1, days: 6, seconds: 2 }
-   * @return {Object}
-   */
-  toObject() {
-    if (!this.isValid) return {};
-    return { ...this.values };
-  }
-  /**
-   * Returns an ISO 8601-compliant string representation of this Duration.
-   * @see https://en.wikipedia.org/wiki/ISO_8601#Durations
-   * @example Duration.fromObject({ years: 3, seconds: 45 }).toISO() //=> 'P3YT45S'
-   * @example Duration.fromObject({ months: 4, seconds: 45 }).toISO() //=> 'P4MT45S'
-   * @example Duration.fromObject({ months: 5 }).toISO() //=> 'P5M'
-   * @example Duration.fromObject({ minutes: 5 }).toISO() //=> 'PT5M'
-   * @example Duration.fromObject({ milliseconds: 6 }).toISO() //=> 'PT0.006S'
-   * @return {string}
-   */
-  toISO() {
-    if (!this.isValid) return null;
-    let s2 = "P";
-    if (this.years !== 0) s2 += this.years + "Y";
-    if (this.months !== 0 || this.quarters !== 0) s2 += this.months + this.quarters * 3 + "M";
-    if (this.weeks !== 0) s2 += this.weeks + "W";
-    if (this.days !== 0) s2 += this.days + "D";
-    if (this.hours !== 0 || this.minutes !== 0 || this.seconds !== 0 || this.milliseconds !== 0)
-      s2 += "T";
-    if (this.hours !== 0) s2 += this.hours + "H";
-    if (this.minutes !== 0) s2 += this.minutes + "M";
-    if (this.seconds !== 0 || this.milliseconds !== 0)
-      s2 += roundTo(this.seconds + this.milliseconds / 1e3, 3) + "S";
-    if (s2 === "P") s2 += "T0S";
-    return s2;
-  }
-  /**
-   * Returns an ISO 8601-compliant string representation of this Duration, formatted as a time of day.
-   * Note that this will return null if the duration is invalid, negative, or equal to or greater than 24 hours.
-   * @see https://en.wikipedia.org/wiki/ISO_8601#Times
-   * @param {Object} opts - options
-   * @param {boolean} [opts.suppressMilliseconds=false] - exclude milliseconds from the format if they're 0
-   * @param {boolean} [opts.suppressSeconds=false] - exclude seconds from the format if they're 0
-   * @param {boolean} [opts.includePrefix=false] - include the `T` prefix
-   * @param {string} [opts.format='extended'] - choose between the basic and extended format
-   * @example Duration.fromObject({ hours: 11 }).toISOTime() //=> '11:00:00.000'
-   * @example Duration.fromObject({ hours: 11 }).toISOTime({ suppressMilliseconds: true }) //=> '11:00:00'
-   * @example Duration.fromObject({ hours: 11 }).toISOTime({ suppressSeconds: true }) //=> '11:00'
-   * @example Duration.fromObject({ hours: 11 }).toISOTime({ includePrefix: true }) //=> 'T11:00:00.000'
-   * @example Duration.fromObject({ hours: 11 }).toISOTime({ format: 'basic' }) //=> '110000.000'
-   * @return {string}
-   */
-  toISOTime(opts = {}) {
-    if (!this.isValid) return null;
-    const millis = this.toMillis();
-    if (millis < 0 || millis >= 864e5) return null;
-    opts = {
-      suppressMilliseconds: false,
-      suppressSeconds: false,
-      includePrefix: false,
-      format: "extended",
-      ...opts,
-      includeOffset: false
-    };
-    const dateTime = DateTime.fromMillis(millis, { zone: "UTC" });
-    return dateTime.toISOTime(opts);
-  }
-  /**
-   * Returns an ISO 8601 representation of this Duration appropriate for use in JSON.
-   * @return {string}
-   */
-  toJSON() {
-    return this.toISO();
-  }
-  /**
-   * Returns an ISO 8601 representation of this Duration appropriate for use in debugging.
-   * @return {string}
-   */
-  toString() {
-    return this.toISO();
-  }
-  /**
-   * Returns a string representation of this Duration appropriate for the REPL.
-   * @return {string}
-   */
-  [Symbol.for("nodejs.util.inspect.custom")]() {
-    if (this.isValid) {
-      return `Duration { values: ${JSON.stringify(this.values)} }`;
-    } else {
-      return `Duration { Invalid, reason: ${this.invalidReason} }`;
-    }
-  }
-  /**
-   * Returns an milliseconds value of this Duration.
-   * @return {number}
-   */
-  toMillis() {
-    if (!this.isValid) return NaN;
-    return durationToMillis(this.matrix, this.values);
-  }
-  /**
-   * Returns an milliseconds value of this Duration. Alias of {@link toMillis}
-   * @return {number}
-   */
-  valueOf() {
-    return this.toMillis();
-  }
-  /**
-   * Make this Duration longer by the specified amount. Return a newly-constructed Duration.
-   * @param {Duration|Object|number} duration - The amount to add. Either a Luxon Duration, a number of milliseconds, the object argument to Duration.fromObject()
-   * @return {Duration}
-   */
-  plus(duration2) {
-    if (!this.isValid) return this;
-    const dur = Duration.fromDurationLike(duration2), result = {};
-    for (const k of orderedUnits$1) {
-      if (hasOwnProperty(dur.values, k) || hasOwnProperty(this.values, k)) {
-        result[k] = dur.get(k) + this.get(k);
-      }
-    }
-    return clone$2(this, { values: result }, true);
-  }
-  /**
-   * Make this Duration shorter by the specified amount. Return a newly-constructed Duration.
-   * @param {Duration|Object|number} duration - The amount to subtract. Either a Luxon Duration, a number of milliseconds, the object argument to Duration.fromObject()
-   * @return {Duration}
-   */
-  minus(duration2) {
-    if (!this.isValid) return this;
-    const dur = Duration.fromDurationLike(duration2);
-    return this.plus(dur.negate());
-  }
-  /**
-   * Scale this Duration by the specified amount. Return a newly-constructed Duration.
-   * @param {function} fn - The function to apply to each unit. Arity is 1 or 2: the value of the unit and, optionally, the unit name. Must return a number.
-   * @example Duration.fromObject({ hours: 1, minutes: 30 }).mapUnits(x => x * 2) //=> { hours: 2, minutes: 60 }
-   * @example Duration.fromObject({ hours: 1, minutes: 30 }).mapUnits((x, u) => u === "hours" ? x * 2 : x) //=> { hours: 2, minutes: 30 }
-   * @return {Duration}
-   */
-  mapUnits(fn) {
-    if (!this.isValid) return this;
-    const result = {};
-    for (const k of Object.keys(this.values)) {
-      result[k] = asNumber(fn(this.values[k], k));
-    }
-    return clone$2(this, { values: result }, true);
-  }
-  /**
-   * Get the value of unit.
-   * @param {string} unit - a unit such as 'minute' or 'day'
-   * @example Duration.fromObject({years: 2, days: 3}).get('years') //=> 2
-   * @example Duration.fromObject({years: 2, days: 3}).get('months') //=> 0
-   * @example Duration.fromObject({years: 2, days: 3}).get('days') //=> 3
-   * @return {number}
-   */
-  get(unit) {
-    return this[Duration.normalizeUnit(unit)];
-  }
-  /**
-   * "Set" the values of specified units. Return a newly-constructed Duration.
-   * @param {Object} values - a mapping of units to numbers
-   * @example dur.set({ years: 2017 })
-   * @example dur.set({ hours: 8, minutes: 30 })
-   * @return {Duration}
-   */
-  set(values2) {
-    if (!this.isValid) return this;
-    const mixed = { ...this.values, ...normalizeObject(values2, Duration.normalizeUnit) };
-    return clone$2(this, { values: mixed });
-  }
-  /**
-   * "Set" the locale and/or numberingSystem.  Returns a newly-constructed Duration.
-   * @example dur.reconfigure({ locale: 'en-GB' })
-   * @return {Duration}
-   */
-  reconfigure({ locale, numberingSystem, conversionAccuracy, matrix } = {}) {
-    const loc = this.loc.clone({ locale, numberingSystem });
-    const opts = { loc, matrix, conversionAccuracy };
-    return clone$2(this, opts);
-  }
-  /**
-   * Return the length of the duration in the specified unit.
-   * @param {string} unit - a unit such as 'minutes' or 'days'
-   * @example Duration.fromObject({years: 1}).as('days') //=> 365
-   * @example Duration.fromObject({years: 1}).as('months') //=> 12
-   * @example Duration.fromObject({hours: 60}).as('days') //=> 2.5
-   * @return {number}
-   */
-  as(unit) {
-    return this.isValid ? this.shiftTo(unit).get(unit) : NaN;
-  }
-  /**
-   * Reduce this Duration to its canonical representation in its current units.
-   * Assuming the overall value of the Duration is positive, this means:
-   * - excessive values for lower-order units are converted to higher-order units (if possible, see first and second example)
-   * - negative lower-order units are converted to higher order units (there must be such a higher order unit, otherwise
-   *   the overall value would be negative, see third example)
-   * - fractional values for higher-order units are converted to lower-order units (if possible, see fourth example)
-   *
-   * If the overall value is negative, the result of this method is equivalent to `this.negate().normalize().negate()`.
-   * @example Duration.fromObject({ years: 2, days: 5000 }).normalize().toObject() //=> { years: 15, days: 255 }
-   * @example Duration.fromObject({ days: 5000 }).normalize().toObject() //=> { days: 5000 }
-   * @example Duration.fromObject({ hours: 12, minutes: -45 }).normalize().toObject() //=> { hours: 11, minutes: 15 }
-   * @example Duration.fromObject({ years: 2.5, days: 0, hours: 0 }).normalize().toObject() //=> { years: 2, days: 182, hours: 12 }
-   * @return {Duration}
-   */
-  normalize() {
-    if (!this.isValid) return this;
-    const vals = this.toObject();
-    normalizeValues(this.matrix, vals);
-    return clone$2(this, { values: vals }, true);
-  }
-  /**
-   * Rescale units to its largest representation
-   * @example Duration.fromObject({ milliseconds: 90000 }).rescale().toObject() //=> { minutes: 1, seconds: 30 }
-   * @return {Duration}
-   */
-  rescale() {
-    if (!this.isValid) return this;
-    const vals = removeZeroes(this.normalize().shiftToAll().toObject());
-    return clone$2(this, { values: vals }, true);
-  }
-  /**
-   * Convert this Duration into its representation in a different set of units.
-   * @example Duration.fromObject({ hours: 1, seconds: 30 }).shiftTo('minutes', 'milliseconds').toObject() //=> { minutes: 60, milliseconds: 30000 }
-   * @return {Duration}
-   */
-  shiftTo(...units) {
-    if (!this.isValid) return this;
-    if (units.length === 0) {
-      return this;
-    }
-    units = units.map((u) => Duration.normalizeUnit(u));
-    const built = {}, accumulated = {}, vals = this.toObject();
-    let lastUnit;
-    for (const k of orderedUnits$1) {
-      if (units.indexOf(k) >= 0) {
-        lastUnit = k;
-        let own = 0;
-        for (const ak in accumulated) {
-          own += this.matrix[ak][k] * accumulated[ak];
-          accumulated[ak] = 0;
-        }
-        if (isNumber(vals[k])) {
-          own += vals[k];
-        }
-        const i = Math.trunc(own);
-        built[k] = i;
-        accumulated[k] = (own * 1e3 - i * 1e3) / 1e3;
-      } else if (isNumber(vals[k])) {
-        accumulated[k] = vals[k];
-      }
-    }
-    for (const key in accumulated) {
-      if (accumulated[key] !== 0) {
-        built[lastUnit] += key === lastUnit ? accumulated[key] : accumulated[key] / this.matrix[lastUnit][key];
-      }
-    }
-    normalizeValues(this.matrix, built);
-    return clone$2(this, { values: built }, true);
-  }
-  /**
-   * Shift this Duration to all available units.
-   * Same as shiftTo("years", "months", "weeks", "days", "hours", "minutes", "seconds", "milliseconds")
-   * @return {Duration}
-   */
-  shiftToAll() {
-    if (!this.isValid) return this;
-    return this.shiftTo(
-      "years",
-      "months",
-      "weeks",
-      "days",
-      "hours",
-      "minutes",
-      "seconds",
-      "milliseconds"
-    );
-  }
-  /**
-   * Return the negative of this Duration.
-   * @example Duration.fromObject({ hours: 1, seconds: 30 }).negate().toObject() //=> { hours: -1, seconds: -30 }
-   * @return {Duration}
-   */
-  negate() {
-    if (!this.isValid) return this;
-    const negated = {};
-    for (const k of Object.keys(this.values)) {
-      negated[k] = this.values[k] === 0 ? 0 : -this.values[k];
-    }
-    return clone$2(this, { values: negated }, true);
-  }
-  /**
-   * Get the years.
-   * @type {number}
-   */
-  get years() {
-    return this.isValid ? this.values.years || 0 : NaN;
-  }
-  /**
-   * Get the quarters.
-   * @type {number}
-   */
-  get quarters() {
-    return this.isValid ? this.values.quarters || 0 : NaN;
-  }
-  /**
-   * Get the months.
-   * @type {number}
-   */
-  get months() {
-    return this.isValid ? this.values.months || 0 : NaN;
-  }
-  /**
-   * Get the weeks
-   * @type {number}
-   */
-  get weeks() {
-    return this.isValid ? this.values.weeks || 0 : NaN;
-  }
-  /**
-   * Get the days.
-   * @type {number}
-   */
-  get days() {
-    return this.isValid ? this.values.days || 0 : NaN;
-  }
-  /**
-   * Get the hours.
-   * @type {number}
-   */
-  get hours() {
-    return this.isValid ? this.values.hours || 0 : NaN;
-  }
-  /**
-   * Get the minutes.
-   * @type {number}
-   */
-  get minutes() {
-    return this.isValid ? this.values.minutes || 0 : NaN;
-  }
-  /**
-   * Get the seconds.
-   * @return {number}
-   */
-  get seconds() {
-    return this.isValid ? this.values.seconds || 0 : NaN;
-  }
-  /**
-   * Get the milliseconds.
-   * @return {number}
-   */
-  get milliseconds() {
-    return this.isValid ? this.values.milliseconds || 0 : NaN;
-  }
-  /**
-   * Returns whether the Duration is invalid. Invalid durations are returned by diff operations
-   * on invalid DateTimes or Intervals.
-   * @return {boolean}
-   */
-  get isValid() {
-    return this.invalid === null;
-  }
-  /**
-   * Returns an error code if this Duration became invalid, or null if the Duration is valid
-   * @return {string}
-   */
-  get invalidReason() {
-    return this.invalid ? this.invalid.reason : null;
-  }
-  /**
-   * Returns an explanation of why this Duration became invalid, or null if the Duration is valid
-   * @type {string}
-   */
-  get invalidExplanation() {
-    return this.invalid ? this.invalid.explanation : null;
-  }
-  /**
-   * Equality check
-   * Two Durations are equal iff they have the same units and the same values for each unit.
-   * @param {Duration} other
-   * @return {boolean}
-   */
-  equals(other) {
-    if (!this.isValid || !other.isValid) {
-      return false;
-    }
-    if (!this.loc.equals(other.loc)) {
-      return false;
-    }
-    function eq2(v1, v2) {
-      if (v1 === void 0 || v1 === 0) return v2 === void 0 || v2 === 0;
-      return v1 === v2;
-    }
-    for (const u of orderedUnits$1) {
-      if (!eq2(this.values[u], other.values[u])) {
-        return false;
-      }
-    }
-    return true;
-  }
-}
-const INVALID$1 = "Invalid Interval";
-function validateStartEnd(start, end2) {
-  if (!start || !start.isValid) {
-    return Interval.invalid("missing or invalid start");
-  } else if (!end2 || !end2.isValid) {
-    return Interval.invalid("missing or invalid end");
-  } else if (end2 < start) {
-    return Interval.invalid(
-      "end before start",
-      `The end of an interval must be after its start, but you had start=${start.toISO()} and end=${end2.toISO()}`
-    );
-  } else {
-    return null;
-  }
-}
-class Interval {
-  /**
-   * @private
-   */
-  constructor(config) {
-    this.s = config.start;
-    this.e = config.end;
-    this.invalid = config.invalid || null;
-    this.isLuxonInterval = true;
-  }
-  /**
-   * Create an invalid Interval.
-   * @param {string} reason - simple string of why this Interval is invalid. Should not contain parameters or anything else data-dependent
-   * @param {string} [explanation=null] - longer explanation, may include parameters and other useful debugging information
-   * @return {Interval}
-   */
-  static invalid(reason, explanation = null) {
-    if (!reason) {
-      throw new InvalidArgumentError("need to specify a reason the Interval is invalid");
-    }
-    const invalid = reason instanceof Invalid ? reason : new Invalid(reason, explanation);
-    if (Settings.throwOnInvalid) {
-      throw new InvalidIntervalError(invalid);
-    } else {
-      return new Interval({ invalid });
-    }
-  }
-  /**
-   * Create an Interval from a start DateTime and an end DateTime. Inclusive of the start but not the end.
-   * @param {DateTime|Date|Object} start
-   * @param {DateTime|Date|Object} end
-   * @return {Interval}
-   */
-  static fromDateTimes(start, end2) {
-    const builtStart = friendlyDateTime(start), builtEnd = friendlyDateTime(end2);
-    const validateError = validateStartEnd(builtStart, builtEnd);
-    if (validateError == null) {
-      return new Interval({
-        start: builtStart,
-        end: builtEnd
-      });
-    } else {
-      return validateError;
-    }
-  }
-  /**
-   * Create an Interval from a start DateTime and a Duration to extend to.
-   * @param {DateTime|Date|Object} start
-   * @param {Duration|Object|number} duration - the length of the Interval.
-   * @return {Interval}
-   */
-  static after(start, duration2) {
-    const dur = Duration.fromDurationLike(duration2), dt = friendlyDateTime(start);
-    return Interval.fromDateTimes(dt, dt.plus(dur));
-  }
-  /**
-   * Create an Interval from an end DateTime and a Duration to extend backwards to.
-   * @param {DateTime|Date|Object} end
-   * @param {Duration|Object|number} duration - the length of the Interval.
-   * @return {Interval}
-   */
-  static before(end2, duration2) {
-    const dur = Duration.fromDurationLike(duration2), dt = friendlyDateTime(end2);
-    return Interval.fromDateTimes(dt.minus(dur), dt);
-  }
-  /**
-   * Create an Interval from an ISO 8601 string.
-   * Accepts `<start>/<end>`, `<start>/<duration>`, and `<duration>/<end>` formats.
-   * @param {string} text - the ISO string to parse
-   * @param {Object} [opts] - options to pass {@link DateTime#fromISO} and optionally {@link Duration#fromISO}
-   * @see https://en.wikipedia.org/wiki/ISO_8601#Time_intervals
-   * @return {Interval}
-   */
-  static fromISO(text2, opts) {
-    const [s2, e] = (text2 || "").split("/", 2);
-    if (s2 && e) {
-      let start, startIsValid;
-      try {
-        start = DateTime.fromISO(s2, opts);
-        startIsValid = start.isValid;
-      } catch (e2) {
-        startIsValid = false;
-      }
-      let end2, endIsValid;
-      try {
-        end2 = DateTime.fromISO(e, opts);
-        endIsValid = end2.isValid;
-      } catch (e2) {
-        endIsValid = false;
-      }
-      if (startIsValid && endIsValid) {
-        return Interval.fromDateTimes(start, end2);
-      }
-      if (startIsValid) {
-        const dur = Duration.fromISO(e, opts);
-        if (dur.isValid) {
-          return Interval.after(start, dur);
-        }
-      } else if (endIsValid) {
-        const dur = Duration.fromISO(s2, opts);
-        if (dur.isValid) {
-          return Interval.before(end2, dur);
-        }
-      }
-    }
-    return Interval.invalid("unparsable", `the input "${text2}" can't be parsed as ISO 8601`);
-  }
-  /**
-   * Check if an object is an Interval. Works across context boundaries
-   * @param {object} o
-   * @return {boolean}
-   */
-  static isInterval(o) {
-    return o && o.isLuxonInterval || false;
-  }
-  /**
-   * Returns the start of the Interval
-   * @type {DateTime}
-   */
-  get start() {
-    return this.isValid ? this.s : null;
-  }
-  /**
-   * Returns the end of the Interval
-   * @type {DateTime}
-   */
-  get end() {
-    return this.isValid ? this.e : null;
-  }
-  /**
-   * Returns whether this Interval's end is at least its start, meaning that the Interval isn't 'backwards'.
-   * @type {boolean}
-   */
-  get isValid() {
-    return this.invalidReason === null;
-  }
-  /**
-   * Returns an error code if this Interval is invalid, or null if the Interval is valid
-   * @type {string}
-   */
-  get invalidReason() {
-    return this.invalid ? this.invalid.reason : null;
-  }
-  /**
-   * Returns an explanation of why this Interval became invalid, or null if the Interval is valid
-   * @type {string}
-   */
-  get invalidExplanation() {
-    return this.invalid ? this.invalid.explanation : null;
-  }
-  /**
-   * Returns the length of the Interval in the specified unit.
-   * @param {string} unit - the unit (such as 'hours' or 'days') to return the length in.
-   * @return {number}
-   */
-  length(unit = "milliseconds") {
-    return this.isValid ? this.toDuration(...[unit]).get(unit) : NaN;
-  }
-  /**
-   * Returns the count of minutes, hours, days, months, or years included in the Interval, even in part.
-   * Unlike {@link Interval#length} this counts sections of the calendar, not periods of time, e.g. specifying 'day'
-   * asks 'what dates are included in this interval?', not 'how many days long is this interval?'
-   * @param {string} [unit='milliseconds'] - the unit of time to count.
-   * @param {Object} opts - options
-   * @param {boolean} [opts.useLocaleWeeks=false] - If true, use weeks based on the locale, i.e. use the locale-dependent start of the week; this operation will always use the locale of the start DateTime
-   * @return {number}
-   */
-  count(unit = "milliseconds", opts) {
-    if (!this.isValid) return NaN;
-    const start = this.start.startOf(unit, opts);
-    let end2;
-    if (opts == null ? void 0 : opts.useLocaleWeeks) {
-      end2 = this.end.reconfigure({ locale: start.locale });
-    } else {
-      end2 = this.end;
-    }
-    end2 = end2.startOf(unit, opts);
-    return Math.floor(end2.diff(start, unit).get(unit)) + (end2.valueOf() !== this.end.valueOf());
-  }
-  /**
-   * Returns whether this Interval's start and end are both in the same unit of time
-   * @param {string} unit - the unit of time to check sameness on
-   * @return {boolean}
-   */
-  hasSame(unit) {
-    return this.isValid ? this.isEmpty() || this.e.minus(1).hasSame(this.s, unit) : false;
-  }
-  /**
-   * Return whether this Interval has the same start and end DateTimes.
-   * @return {boolean}
-   */
-  isEmpty() {
-    return this.s.valueOf() === this.e.valueOf();
-  }
-  /**
-   * Return whether this Interval's start is after the specified DateTime.
-   * @param {DateTime} dateTime
-   * @return {boolean}
-   */
-  isAfter(dateTime) {
-    if (!this.isValid) return false;
-    return this.s > dateTime;
-  }
-  /**
-   * Return whether this Interval's end is before the specified DateTime.
-   * @param {DateTime} dateTime
-   * @return {boolean}
-   */
-  isBefore(dateTime) {
-    if (!this.isValid) return false;
-    return this.e <= dateTime;
-  }
-  /**
-   * Return whether this Interval contains the specified DateTime.
-   * @param {DateTime} dateTime
-   * @return {boolean}
-   */
-  contains(dateTime) {
-    if (!this.isValid) return false;
-    return this.s <= dateTime && this.e > dateTime;
-  }
-  /**
-   * "Sets" the start and/or end dates. Returns a newly-constructed Interval.
-   * @param {Object} values - the values to set
-   * @param {DateTime} values.start - the starting DateTime
-   * @param {DateTime} values.end - the ending DateTime
-   * @return {Interval}
-   */
-  set({ start, end: end2 } = {}) {
-    if (!this.isValid) return this;
-    return Interval.fromDateTimes(start || this.s, end2 || this.e);
-  }
-  /**
-   * Split this Interval at each of the specified DateTimes
-   * @param {...DateTime} dateTimes - the unit of time to count.
-   * @return {Array}
-   */
-  splitAt(...dateTimes) {
-    if (!this.isValid) return [];
-    const sorted = dateTimes.map(friendlyDateTime).filter((d) => this.contains(d)).sort((a, b) => a.toMillis() - b.toMillis()), results = [];
-    let { s: s2 } = this, i = 0;
-    while (s2 < this.e) {
-      const added = sorted[i] || this.e, next2 = +added > +this.e ? this.e : added;
-      results.push(Interval.fromDateTimes(s2, next2));
-      s2 = next2;
-      i += 1;
-    }
-    return results;
-  }
-  /**
-   * Split this Interval into smaller Intervals, each of the specified length.
-   * Left over time is grouped into a smaller interval
-   * @param {Duration|Object|number} duration - The length of each resulting interval.
-   * @return {Array}
-   */
-  splitBy(duration2) {
-    const dur = Duration.fromDurationLike(duration2);
-    if (!this.isValid || !dur.isValid || dur.as("milliseconds") === 0) {
-      return [];
-    }
-    let { s: s2 } = this, idx = 1, next2;
-    const results = [];
-    while (s2 < this.e) {
-      const added = this.start.plus(dur.mapUnits((x) => x * idx));
-      next2 = +added > +this.e ? this.e : added;
-      results.push(Interval.fromDateTimes(s2, next2));
-      s2 = next2;
-      idx += 1;
-    }
-    return results;
-  }
-  /**
-   * Split this Interval into the specified number of smaller intervals.
-   * @param {number} numberOfParts - The number of Intervals to divide the Interval into.
-   * @return {Array}
-   */
-  divideEqually(numberOfParts) {
-    if (!this.isValid) return [];
-    return this.splitBy(this.length() / numberOfParts).slice(0, numberOfParts);
-  }
-  /**
-   * Return whether this Interval overlaps with the specified Interval
-   * @param {Interval} other
-   * @return {boolean}
-   */
-  overlaps(other) {
-    return this.e > other.s && this.s < other.e;
-  }
-  /**
-   * Return whether this Interval's end is adjacent to the specified Interval's start.
-   * @param {Interval} other
-   * @return {boolean}
-   */
-  abutsStart(other) {
-    if (!this.isValid) return false;
-    return +this.e === +other.s;
-  }
-  /**
-   * Return whether this Interval's start is adjacent to the specified Interval's end.
-   * @param {Interval} other
-   * @return {boolean}
-   */
-  abutsEnd(other) {
-    if (!this.isValid) return false;
-    return +other.e === +this.s;
-  }
-  /**
-   * Returns true if this Interval fully contains the specified Interval, specifically if the intersect (of this Interval and the other Interval) is equal to the other Interval; false otherwise.
-   * @param {Interval} other
-   * @return {boolean}
-   */
-  engulfs(other) {
-    if (!this.isValid) return false;
-    return this.s <= other.s && this.e >= other.e;
-  }
-  /**
-   * Return whether this Interval has the same start and end as the specified Interval.
-   * @param {Interval} other
-   * @return {boolean}
-   */
-  equals(other) {
-    if (!this.isValid || !other.isValid) {
-      return false;
-    }
-    return this.s.equals(other.s) && this.e.equals(other.e);
-  }
-  /**
-   * Return an Interval representing the intersection of this Interval and the specified Interval.
-   * Specifically, the resulting Interval has the maximum start time and the minimum end time of the two Intervals.
-   * Returns null if the intersection is empty, meaning, the intervals don't intersect.
-   * @param {Interval} other
-   * @return {Interval}
-   */
-  intersection(other) {
-    if (!this.isValid) return this;
-    const s2 = this.s > other.s ? this.s : other.s, e = this.e < other.e ? this.e : other.e;
-    if (s2 >= e) {
-      return null;
-    } else {
-      return Interval.fromDateTimes(s2, e);
-    }
-  }
-  /**
-   * Return an Interval representing the union of this Interval and the specified Interval.
-   * Specifically, the resulting Interval has the minimum start time and the maximum end time of the two Intervals.
-   * @param {Interval} other
-   * @return {Interval}
-   */
-  union(other) {
-    if (!this.isValid) return this;
-    const s2 = this.s < other.s ? this.s : other.s, e = this.e > other.e ? this.e : other.e;
-    return Interval.fromDateTimes(s2, e);
-  }
-  /**
-   * Merge an array of Intervals into a equivalent minimal set of Intervals.
-   * Combines overlapping and adjacent Intervals.
-   * @param {Array} intervals
-   * @return {Array}
-   */
-  static merge(intervals) {
-    const [found, final] = intervals.sort((a, b) => a.s - b.s).reduce(
-      ([sofar, current], item2) => {
-        if (!current) {
-          return [sofar, item2];
-        } else if (current.overlaps(item2) || current.abutsStart(item2)) {
-          return [sofar, current.union(item2)];
-        } else {
-          return [sofar.concat([current]), item2];
-        }
-      },
-      [[], null]
-    );
-    if (final) {
-      found.push(final);
-    }
-    return found;
-  }
-  /**
-   * Return an array of Intervals representing the spans of time that only appear in one of the specified Intervals.
-   * @param {Array} intervals
-   * @return {Array}
-   */
-  static xor(intervals) {
-    let start = null, currentCount = 0;
-    const results = [], ends = intervals.map((i) => [
-      { time: i.s, type: "s" },
-      { time: i.e, type: "e" }
-    ]), flattened = Array.prototype.concat(...ends), arr = flattened.sort((a, b) => a.time - b.time);
-    for (const i of arr) {
-      currentCount += i.type === "s" ? 1 : -1;
-      if (currentCount === 1) {
-        start = i.time;
-      } else {
-        if (start && +start !== +i.time) {
-          results.push(Interval.fromDateTimes(start, i.time));
-        }
-        start = null;
-      }
-    }
-    return Interval.merge(results);
-  }
-  /**
-   * Return an Interval representing the span of time in this Interval that doesn't overlap with any of the specified Intervals.
-   * @param {...Interval} intervals
-   * @return {Array}
-   */
-  difference(...intervals) {
-    return Interval.xor([this].concat(intervals)).map((i) => this.intersection(i)).filter((i) => i && !i.isEmpty());
-  }
-  /**
-   * Returns a string representation of this Interval appropriate for debugging.
-   * @return {string}
-   */
-  toString() {
-    if (!this.isValid) return INVALID$1;
-    return `[${this.s.toISO()} – ${this.e.toISO()})`;
-  }
-  /**
-   * Returns a string representation of this Interval appropriate for the REPL.
-   * @return {string}
-   */
-  [Symbol.for("nodejs.util.inspect.custom")]() {
-    if (this.isValid) {
-      return `Interval { start: ${this.s.toISO()}, end: ${this.e.toISO()} }`;
-    } else {
-      return `Interval { Invalid, reason: ${this.invalidReason} }`;
-    }
-  }
-  /**
-   * Returns a localized string representing this Interval. Accepts the same options as the
-   * Intl.DateTimeFormat constructor and any presets defined by Luxon, such as
-   * {@link DateTime.DATE_FULL} or {@link DateTime.TIME_SIMPLE}. The exact behavior of this method
-   * is browser-specific, but in general it will return an appropriate representation of the
-   * Interval in the assigned locale. Defaults to the system's locale if no locale has been
-   * specified.
-   * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat
-   * @param {Object} [formatOpts=DateTime.DATE_SHORT] - Either a DateTime preset or
-   * Intl.DateTimeFormat constructor options.
-   * @param {Object} opts - Options to override the configuration of the start DateTime.
-   * @example Interval.fromISO('2022-11-07T09:00Z/2022-11-08T09:00Z').toLocaleString(); //=> 11/7/2022 – 11/8/2022
-   * @example Interval.fromISO('2022-11-07T09:00Z/2022-11-08T09:00Z').toLocaleString(DateTime.DATE_FULL); //=> November 7 – 8, 2022
-   * @example Interval.fromISO('2022-11-07T09:00Z/2022-11-08T09:00Z').toLocaleString(DateTime.DATE_FULL, { locale: 'fr-FR' }); //=> 7–8 novembre 2022
-   * @example Interval.fromISO('2022-11-07T17:00Z/2022-11-07T19:00Z').toLocaleString(DateTime.TIME_SIMPLE); //=> 6:00 – 8:00 PM
-   * @example Interval.fromISO('2022-11-07T17:00Z/2022-11-07T19:00Z').toLocaleString({ weekday: 'short', month: 'short', day: '2-digit', hour: '2-digit', minute: '2-digit' }); //=> Mon, Nov 07, 6:00 – 8:00 p
-   * @return {string}
-   */
-  toLocaleString(formatOpts = DATE_SHORT, opts = {}) {
-    return this.isValid ? Formatter.create(this.s.loc.clone(opts), formatOpts).formatInterval(this) : INVALID$1;
-  }
-  /**
-   * Returns an ISO 8601-compliant string representation of this Interval.
-   * @see https://en.wikipedia.org/wiki/ISO_8601#Time_intervals
-   * @param {Object} opts - The same options as {@link DateTime#toISO}
-   * @return {string}
-   */
-  toISO(opts) {
-    if (!this.isValid) return INVALID$1;
-    return `${this.s.toISO(opts)}/${this.e.toISO(opts)}`;
-  }
-  /**
-   * Returns an ISO 8601-compliant string representation of date of this Interval.
-   * The time components are ignored.
-   * @see https://en.wikipedia.org/wiki/ISO_8601#Time_intervals
-   * @return {string}
-   */
-  toISODate() {
-    if (!this.isValid) return INVALID$1;
-    return `${this.s.toISODate()}/${this.e.toISODate()}`;
-  }
-  /**
-   * Returns an ISO 8601-compliant string representation of time of this Interval.
-   * The date components are ignored.
-   * @see https://en.wikipedia.org/wiki/ISO_8601#Time_intervals
-   * @param {Object} opts - The same options as {@link DateTime#toISO}
-   * @return {string}
-   */
-  toISOTime(opts) {
-    if (!this.isValid) return INVALID$1;
-    return `${this.s.toISOTime(opts)}/${this.e.toISOTime(opts)}`;
-  }
-  /**
-   * Returns a string representation of this Interval formatted according to the specified format
-   * string. **You may not want this.** See {@link Interval#toLocaleString} for a more flexible
-   * formatting tool.
-   * @param {string} dateFormat - The format string. This string formats the start and end time.
-   * See {@link DateTime#toFormat} for details.
-   * @param {Object} opts - Options.
-   * @param {string} [opts.separator =  ' – '] - A separator to place between the start and end
-   * representations.
-   * @return {string}
-   */
-  toFormat(dateFormat, { separator = " – " } = {}) {
-    if (!this.isValid) return INVALID$1;
-    return `${this.s.toFormat(dateFormat)}${separator}${this.e.toFormat(dateFormat)}`;
-  }
-  /**
-   * Return a Duration representing the time spanned by this interval.
-   * @param {string|string[]} [unit=['milliseconds']] - the unit or units (such as 'hours' or 'days') to include in the duration.
-   * @param {Object} opts - options that affect the creation of the Duration
-   * @param {string} [opts.conversionAccuracy='casual'] - the conversion system to use
-   * @example Interval.fromDateTimes(dt1, dt2).toDuration().toObject() //=> { milliseconds: 88489257 }
-   * @example Interval.fromDateTimes(dt1, dt2).toDuration('days').toObject() //=> { days: 1.0241812152777778 }
-   * @example Interval.fromDateTimes(dt1, dt2).toDuration(['hours', 'minutes']).toObject() //=> { hours: 24, minutes: 34.82095 }
-   * @example Interval.fromDateTimes(dt1, dt2).toDuration(['hours', 'minutes', 'seconds']).toObject() //=> { hours: 24, minutes: 34, seconds: 49.257 }
-   * @example Interval.fromDateTimes(dt1, dt2).toDuration('seconds').toObject() //=> { seconds: 88489.257 }
-   * @return {Duration}
-   */
-  toDuration(unit, opts) {
-    if (!this.isValid) {
-      return Duration.invalid(this.invalidReason);
-    }
-    return this.e.diff(this.s, unit, opts);
-  }
-  /**
-   * Run mapFn on the interval start and end, returning a new Interval from the resulting DateTimes
-   * @param {function} mapFn
-   * @return {Interval}
-   * @example Interval.fromDateTimes(dt1, dt2).mapEndpoints(endpoint => endpoint.toUTC())
-   * @example Interval.fromDateTimes(dt1, dt2).mapEndpoints(endpoint => endpoint.plus({ hours: 2 }))
-   */
-  mapEndpoints(mapFn) {
-    return Interval.fromDateTimes(mapFn(this.s), mapFn(this.e));
-  }
-}
-class Info {
-  /**
-   * Return whether the specified zone contains a DST.
-   * @param {string|Zone} [zone='local'] - Zone to check. Defaults to the environment's local zone.
-   * @return {boolean}
-   */
-  static hasDST(zone = Settings.defaultZone) {
-    const proto = DateTime.now().setZone(zone).set({ month: 12 });
-    return !zone.isUniversal && proto.offset !== proto.set({ month: 6 }).offset;
-  }
-  /**
-   * Return whether the specified zone is a valid IANA specifier.
-   * @param {string} zone - Zone to check
-   * @return {boolean}
-   */
-  static isValidIANAZone(zone) {
-    return IANAZone.isValidZone(zone);
-  }
-  /**
-   * Converts the input into a {@link Zone} instance.
-   *
-   * * If `input` is already a Zone instance, it is returned unchanged.
-   * * If `input` is a string containing a valid time zone name, a Zone instance
-   *   with that name is returned.
-   * * If `input` is a string that doesn't refer to a known time zone, a Zone
-   *   instance with {@link Zone#isValid} == false is returned.
-   * * If `input is a number, a Zone instance with the specified fixed offset
-   *   in minutes is returned.
-   * * If `input` is `null` or `undefined`, the default zone is returned.
-   * @param {string|Zone|number} [input] - the value to be converted
-   * @return {Zone}
-   */
-  static normalizeZone(input) {
-    return normalizeZone(input, Settings.defaultZone);
-  }
-  /**
-   * Get the weekday on which the week starts according to the given locale.
-   * @param {Object} opts - options
-   * @param {string} [opts.locale] - the locale code
-   * @param {string} [opts.locObj=null] - an existing locale object to use
-   * @returns {number} the start of the week, 1 for Monday through 7 for Sunday
-   */
-  static getStartOfWeek({ locale = null, locObj = null } = {}) {
-    return (locObj || Locale.create(locale)).getStartOfWeek();
-  }
-  /**
-   * Get the minimum number of days necessary in a week before it is considered part of the next year according
-   * to the given locale.
-   * @param {Object} opts - options
-   * @param {string} [opts.locale] - the locale code
-   * @param {string} [opts.locObj=null] - an existing locale object to use
-   * @returns {number}
-   */
-  static getMinimumDaysInFirstWeek({ locale = null, locObj = null } = {}) {
-    return (locObj || Locale.create(locale)).getMinDaysInFirstWeek();
-  }
-  /**
-   * Get the weekdays, which are considered the weekend according to the given locale
-   * @param {Object} opts - options
-   * @param {string} [opts.locale] - the locale code
-   * @param {string} [opts.locObj=null] - an existing locale object to use
-   * @returns {number[]} an array of weekdays, 1 for Monday through 7 for Sunday
-   */
-  static getWeekendWeekdays({ locale = null, locObj = null } = {}) {
-    return (locObj || Locale.create(locale)).getWeekendDays().slice();
-  }
-  /**
-   * Return an array of standalone month names.
-   * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat
-   * @param {string} [length='long'] - the length of the month representation, such as "numeric", "2-digit", "narrow", "short", "long"
-   * @param {Object} opts - options
-   * @param {string} [opts.locale] - the locale code
-   * @param {string} [opts.numberingSystem=null] - the numbering system
-   * @param {string} [opts.locObj=null] - an existing locale object to use
-   * @param {string} [opts.outputCalendar='gregory'] - the calendar
-   * @example Info.months()[0] //=> 'January'
-   * @example Info.months('short')[0] //=> 'Jan'
-   * @example Info.months('numeric')[0] //=> '1'
-   * @example Info.months('short', { locale: 'fr-CA' } )[0] //=> 'janv.'
-   * @example Info.months('numeric', { locale: 'ar' })[0] //=> '١'
-   * @example Info.months('long', { outputCalendar: 'islamic' })[0] //=> 'Rabiʻ I'
-   * @return {Array}
-   */
-  static months(length2 = "long", { locale = null, numberingSystem = null, locObj = null, outputCalendar = "gregory" } = {}) {
-    return (locObj || Locale.create(locale, numberingSystem, outputCalendar)).months(length2);
-  }
-  /**
-   * Return an array of format month names.
-   * Format months differ from standalone months in that they're meant to appear next to the day of the month. In some languages, that
-   * changes the string.
-   * See {@link Info#months}
-   * @param {string} [length='long'] - the length of the month representation, such as "numeric", "2-digit", "narrow", "short", "long"
-   * @param {Object} opts - options
-   * @param {string} [opts.locale] - the locale code
-   * @param {string} [opts.numberingSystem=null] - the numbering system
-   * @param {string} [opts.locObj=null] - an existing locale object to use
-   * @param {string} [opts.outputCalendar='gregory'] - the calendar
-   * @return {Array}
-   */
-  static monthsFormat(length2 = "long", { locale = null, numberingSystem = null, locObj = null, outputCalendar = "gregory" } = {}) {
-    return (locObj || Locale.create(locale, numberingSystem, outputCalendar)).months(length2, true);
-  }
-  /**
-   * Return an array of standalone week names.
-   * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat
-   * @param {string} [length='long'] - the length of the weekday representation, such as "narrow", "short", "long".
-   * @param {Object} opts - options
-   * @param {string} [opts.locale] - the locale code
-   * @param {string} [opts.numberingSystem=null] - the numbering system
-   * @param {string} [opts.locObj=null] - an existing locale object to use
-   * @example Info.weekdays()[0] //=> 'Monday'
-   * @example Info.weekdays('short')[0] //=> 'Mon'
-   * @example Info.weekdays('short', { locale: 'fr-CA' })[0] //=> 'lun.'
-   * @example Info.weekdays('short', { locale: 'ar' })[0] //=> 'الاثنين'
-   * @return {Array}
-   */
-  static weekdays(length2 = "long", { locale = null, numberingSystem = null, locObj = null } = {}) {
-    return (locObj || Locale.create(locale, numberingSystem, null)).weekdays(length2);
-  }
-  /**
-   * Return an array of format week names.
-   * Format weekdays differ from standalone weekdays in that they're meant to appear next to more date information. In some languages, that
-   * changes the string.
-   * See {@link Info#weekdays}
-   * @param {string} [length='long'] - the length of the month representation, such as "narrow", "short", "long".
-   * @param {Object} opts - options
-   * @param {string} [opts.locale=null] - the locale code
-   * @param {string} [opts.numberingSystem=null] - the numbering system
-   * @param {string} [opts.locObj=null] - an existing locale object to use
-   * @return {Array}
-   */
-  static weekdaysFormat(length2 = "long", { locale = null, numberingSystem = null, locObj = null } = {}) {
-    return (locObj || Locale.create(locale, numberingSystem, null)).weekdays(length2, true);
-  }
-  /**
-   * Return an array of meridiems.
-   * @param {Object} opts - options
-   * @param {string} [opts.locale] - the locale code
-   * @example Info.meridiems() //=> [ 'AM', 'PM' ]
-   * @example Info.meridiems({ locale: 'my' }) //=> [ 'နံနက်', 'ညနေ' ]
-   * @return {Array}
-   */
-  static meridiems({ locale = null } = {}) {
-    return Locale.create(locale).meridiems();
-  }
-  /**
-   * Return an array of eras, such as ['BC', 'AD']. The locale can be specified, but the calendar system is always Gregorian.
-   * @param {string} [length='short'] - the length of the era representation, such as "short" or "long".
-   * @param {Object} opts - options
-   * @param {string} [opts.locale] - the locale code
-   * @example Info.eras() //=> [ 'BC', 'AD' ]
-   * @example Info.eras('long') //=> [ 'Before Christ', 'Anno Domini' ]
-   * @example Info.eras('long', { locale: 'fr' }) //=> [ 'avant Jésus-Christ', 'après Jésus-Christ' ]
-   * @return {Array}
-   */
-  static eras(length2 = "short", { locale = null } = {}) {
-    return Locale.create(locale, null, "gregory").eras(length2);
-  }
-  /**
-   * Return the set of available features in this environment.
-   * Some features of Luxon are not available in all environments. For example, on older browsers, relative time formatting support is not available. Use this function to figure out if that's the case.
-   * Keys:
-   * * `relative`: whether this environment supports relative time formatting
-   * * `localeWeek`: whether this environment supports different weekdays for the start of the week based on the locale
-   * @example Info.features() //=> { relative: false, localeWeek: true }
-   * @return {Object}
-   */
-  static features() {
-    return { relative: hasRelative(), localeWeek: hasLocaleWeekInfo() };
-  }
-}
-function dayDiff(earlier, later) {
-  const utcDayStart = (dt) => dt.toUTC(0, { keepLocalTime: true }).startOf("day").valueOf(), ms = utcDayStart(later) - utcDayStart(earlier);
-  return Math.floor(Duration.fromMillis(ms).as("days"));
-}
-function highOrderDiffs(cursor2, later, units) {
-  const differs = [
-    ["years", (a, b) => b.year - a.year],
-    ["quarters", (a, b) => b.quarter - a.quarter + (b.year - a.year) * 4],
-    ["months", (a, b) => b.month - a.month + (b.year - a.year) * 12],
-    [
-      "weeks",
-      (a, b) => {
-        const days = dayDiff(a, b);
-        return (days - days % 7) / 7;
-      }
-    ],
-    ["days", dayDiff]
-  ];
-  const results = {};
-  const earlier = cursor2;
-  let lowestOrder, highWater;
-  for (const [unit, differ] of differs) {
-    if (units.indexOf(unit) >= 0) {
-      lowestOrder = unit;
-      results[unit] = differ(cursor2, later);
-      highWater = earlier.plus(results);
-      if (highWater > later) {
-        results[unit]--;
-        cursor2 = earlier.plus(results);
-        if (cursor2 > later) {
-          highWater = cursor2;
-          results[unit]--;
-          cursor2 = earlier.plus(results);
-        }
-      } else {
-        cursor2 = highWater;
-      }
-    }
-  }
-  return [cursor2, results, highWater, lowestOrder];
-}
-function diff(earlier, later, units, opts) {
-  let [cursor2, results, highWater, lowestOrder] = highOrderDiffs(earlier, later, units);
-  const remainingMillis = later - cursor2;
-  const lowerOrderUnits = units.filter(
-    (u) => ["hours", "minutes", "seconds", "milliseconds"].indexOf(u) >= 0
-  );
-  if (lowerOrderUnits.length === 0) {
-    if (highWater < later) {
-      highWater = cursor2.plus({ [lowestOrder]: 1 });
-    }
-    if (highWater !== cursor2) {
-      results[lowestOrder] = (results[lowestOrder] || 0) + remainingMillis / (highWater - cursor2);
-    }
-  }
-  const duration2 = Duration.fromObject(results, opts);
-  if (lowerOrderUnits.length > 0) {
-    return Duration.fromMillis(remainingMillis, opts).shiftTo(...lowerOrderUnits).plus(duration2);
-  } else {
-    return duration2;
-  }
-}
-const MISSING_FTP = "missing Intl.DateTimeFormat.formatToParts support";
-function intUnit(regex, post = (i) => i) {
-  return { regex, deser: ([s2]) => post(parseDigits(s2)) };
-}
-const NBSP = String.fromCharCode(160);
-const spaceOrNBSP = `[ ${NBSP}]`;
-const spaceOrNBSPRegExp = new RegExp(spaceOrNBSP, "g");
-function fixListRegex(s2) {
-  return s2.replace(/\./g, "\\.?").replace(spaceOrNBSPRegExp, spaceOrNBSP);
-}
-function stripInsensitivities(s2) {
-  return s2.replace(/\./g, "").replace(spaceOrNBSPRegExp, " ").toLowerCase();
-}
-function oneOf(strings, startIndex) {
-  if (strings === null) {
-    return null;
-  } else {
-    return {
-      regex: RegExp(strings.map(fixListRegex).join("|")),
-      deser: ([s2]) => strings.findIndex((i) => stripInsensitivities(s2) === stripInsensitivities(i)) + startIndex
-    };
-  }
-}
-function offset(regex, groups) {
-  return { regex, deser: ([, h, m]) => signedOffset(h, m), groups };
-}
-function simple(regex) {
-  return { regex, deser: ([s2]) => s2 };
-}
-function escapeToken(value) {
-  return value.replace(/[\-\[\]{}()*+?.,\\\^$|#\s]/g, "\\$&");
-}
-function unitForToken(token2, loc) {
-  const one = digitRegex(loc), two = digitRegex(loc, "{2}"), three = digitRegex(loc, "{3}"), four = digitRegex(loc, "{4}"), six = digitRegex(loc, "{6}"), oneOrTwo = digitRegex(loc, "{1,2}"), oneToThree = digitRegex(loc, "{1,3}"), oneToSix = digitRegex(loc, "{1,6}"), oneToNine = digitRegex(loc, "{1,9}"), twoToFour = digitRegex(loc, "{2,4}"), fourToSix = digitRegex(loc, "{4,6}"), literal = (t) => ({ regex: RegExp(escapeToken(t.val)), deser: ([s2]) => s2, literal: true }), unitate = (t) => {
-    if (token2.literal) {
-      return literal(t);
-    }
-    switch (t.val) {
-      // era
-      case "G":
-        return oneOf(loc.eras("short"), 0);
-      case "GG":
-        return oneOf(loc.eras("long"), 0);
-      // years
-      case "y":
-        return intUnit(oneToSix);
-      case "yy":
-        return intUnit(twoToFour, untruncateYear);
-      case "yyyy":
-        return intUnit(four);
-      case "yyyyy":
-        return intUnit(fourToSix);
-      case "yyyyyy":
-        return intUnit(six);
-      // months
-      case "M":
-        return intUnit(oneOrTwo);
-      case "MM":
-        return intUnit(two);
-      case "MMM":
-        return oneOf(loc.months("short", true), 1);
-      case "MMMM":
-        return oneOf(loc.months("long", true), 1);
-      case "L":
-        return intUnit(oneOrTwo);
-      case "LL":
-        return intUnit(two);
-      case "LLL":
-        return oneOf(loc.months("short", false), 1);
-      case "LLLL":
-        return oneOf(loc.months("long", false), 1);
-      // dates
-      case "d":
-        return intUnit(oneOrTwo);
-      case "dd":
-        return intUnit(two);
-      // ordinals
-      case "o":
-        return intUnit(oneToThree);
-      case "ooo":
-        return intUnit(three);
-      // time
-      case "HH":
-        return intUnit(two);
-      case "H":
-        return intUnit(oneOrTwo);
-      case "hh":
-        return intUnit(two);
-      case "h":
-        return intUnit(oneOrTwo);
-      case "mm":
-        return intUnit(two);
-      case "m":
-        return intUnit(oneOrTwo);
-      case "q":
-        return intUnit(oneOrTwo);
-      case "qq":
-        return intUnit(two);
-      case "s":
-        return intUnit(oneOrTwo);
-      case "ss":
-        return intUnit(two);
-      case "S":
-        return intUnit(oneToThree);
-      case "SSS":
-        return intUnit(three);
-      case "u":
-        return simple(oneToNine);
-      case "uu":
-        return simple(oneOrTwo);
-      case "uuu":
-        return intUnit(one);
-      // meridiem
-      case "a":
-        return oneOf(loc.meridiems(), 0);
-      // weekYear (k)
-      case "kkkk":
-        return intUnit(four);
-      case "kk":
-        return intUnit(twoToFour, untruncateYear);
-      // weekNumber (W)
-      case "W":
-        return intUnit(oneOrTwo);
-      case "WW":
-        return intUnit(two);
-      // weekdays
-      case "E":
-      case "c":
-        return intUnit(one);
-      case "EEE":
-        return oneOf(loc.weekdays("short", false), 1);
-      case "EEEE":
-        return oneOf(loc.weekdays("long", false), 1);
-      case "ccc":
-        return oneOf(loc.weekdays("short", true), 1);
-      case "cccc":
-        return oneOf(loc.weekdays("long", true), 1);
-      // offset/zone
-      case "Z":
-      case "ZZ":
-        return offset(new RegExp(`([+-]${oneOrTwo.source})(?::(${two.source}))?`), 2);
-      case "ZZZ":
-        return offset(new RegExp(`([+-]${oneOrTwo.source})(${two.source})?`), 2);
-      // we don't support ZZZZ (PST) or ZZZZZ (Pacific Standard Time) in parsing
-      // because we don't have any way to figure out what they are
-      case "z":
-        return simple(/[a-z_+-/]{1,256}?/i);
-      // this special-case "token" represents a place where a macro-token expanded into a white-space literal
-      // in this case we accept any non-newline white-space
-      case " ":
-        return simple(/[^\S\n\r]/);
-      default:
-        return literal(t);
-    }
-  };
-  const unit = unitate(token2) || {
-    invalidReason: MISSING_FTP
-  };
-  unit.token = token2;
-  return unit;
-}
-const partTypeStyleToTokenVal = {
-  year: {
-    "2-digit": "yy",
-    numeric: "yyyyy"
-  },
-  month: {
-    numeric: "M",
-    "2-digit": "MM",
-    short: "MMM",
-    long: "MMMM"
-  },
-  day: {
-    numeric: "d",
-    "2-digit": "dd"
-  },
-  weekday: {
-    short: "EEE",
-    long: "EEEE"
-  },
-  dayperiod: "a",
-  dayPeriod: "a",
-  hour12: {
-    numeric: "h",
-    "2-digit": "hh"
-  },
-  hour24: {
-    numeric: "H",
-    "2-digit": "HH"
-  },
-  minute: {
-    numeric: "m",
-    "2-digit": "mm"
-  },
-  second: {
-    numeric: "s",
-    "2-digit": "ss"
-  },
-  timeZoneName: {
-    long: "ZZZZZ",
-    short: "ZZZ"
-  }
-};
-function tokenForPart(part, formatOpts, resolvedOpts) {
-  const { type: type2, value } = part;
-  if (type2 === "literal") {
-    const isSpace = /^\s+$/.test(value);
-    return {
-      literal: !isSpace,
-      val: isSpace ? " " : value
-    };
-  }
-  const style2 = formatOpts[type2];
-  let actualType = type2;
-  if (type2 === "hour") {
-    if (formatOpts.hour12 != null) {
-      actualType = formatOpts.hour12 ? "hour12" : "hour24";
-    } else if (formatOpts.hourCycle != null) {
-      if (formatOpts.hourCycle === "h11" || formatOpts.hourCycle === "h12") {
-        actualType = "hour12";
-      } else {
-        actualType = "hour24";
-      }
-    } else {
-      actualType = resolvedOpts.hour12 ? "hour12" : "hour24";
-    }
-  }
-  let val2 = partTypeStyleToTokenVal[actualType];
-  if (typeof val2 === "object") {
-    val2 = val2[style2];
-  }
-  if (val2) {
-    return {
-      literal: false,
-      val: val2
-    };
-  }
-  return void 0;
-}
-function buildRegex(units) {
-  const re = units.map((u) => u.regex).reduce((f, r2) => `${f}(${r2.source})`, "");
-  return [`^${re}$`, units];
-}
-function match(input, regex, handlers) {
-  const matches = input.match(regex);
-  if (matches) {
-    const all = {};
-    let matchIndex = 1;
-    for (const i in handlers) {
-      if (hasOwnProperty(handlers, i)) {
-        const h = handlers[i], groups = h.groups ? h.groups + 1 : 1;
-        if (!h.literal && h.token) {
-          all[h.token.val[0]] = h.deser(matches.slice(matchIndex, matchIndex + groups));
-        }
-        matchIndex += groups;
-      }
-    }
-    return [matches, all];
-  } else {
-    return [matches, {}];
-  }
-}
-function dateTimeFromMatches(matches) {
-  const toField = (token2) => {
-    switch (token2) {
-      case "S":
-        return "millisecond";
-      case "s":
-        return "second";
-      case "m":
-        return "minute";
-      case "h":
-      case "H":
-        return "hour";
-      case "d":
-        return "day";
-      case "o":
-        return "ordinal";
-      case "L":
-      case "M":
-        return "month";
-      case "y":
-        return "year";
-      case "E":
-      case "c":
-        return "weekday";
-      case "W":
-        return "weekNumber";
-      case "k":
-        return "weekYear";
-      case "q":
-        return "quarter";
-      default:
-        return null;
-    }
-  };
-  let zone = null;
-  let specificOffset;
-  if (!isUndefined(matches.z)) {
-    zone = IANAZone.create(matches.z);
-  }
-  if (!isUndefined(matches.Z)) {
-    if (!zone) {
-      zone = new FixedOffsetZone(matches.Z);
-    }
-    specificOffset = matches.Z;
-  }
-  if (!isUndefined(matches.q)) {
-    matches.M = (matches.q - 1) * 3 + 1;
-  }
-  if (!isUndefined(matches.h)) {
-    if (matches.h < 12 && matches.a === 1) {
-      matches.h += 12;
-    } else if (matches.h === 12 && matches.a === 0) {
-      matches.h = 0;
-    }
-  }
-  if (matches.G === 0 && matches.y) {
-    matches.y = -matches.y;
-  }
-  if (!isUndefined(matches.u)) {
-    matches.S = parseMillis(matches.u);
-  }
-  const vals = Object.keys(matches).reduce((r2, k) => {
-    const f = toField(k);
-    if (f) {
-      r2[f] = matches[k];
-    }
-    return r2;
-  }, {});
-  return [vals, zone, specificOffset];
-}
-let dummyDateTimeCache = null;
-function getDummyDateTime() {
-  if (!dummyDateTimeCache) {
-    dummyDateTimeCache = DateTime.fromMillis(1555555555555);
-  }
-  return dummyDateTimeCache;
-}
-function maybeExpandMacroToken(token2, locale) {
-  if (token2.literal) {
-    return token2;
-  }
-  const formatOpts = Formatter.macroTokenToFormatOpts(token2.val);
-  const tokens = formatOptsToTokens(formatOpts, locale);
-  if (tokens == null || tokens.includes(void 0)) {
-    return token2;
-  }
-  return tokens;
-}
-function expandMacroTokens(tokens, locale) {
-  return Array.prototype.concat(...tokens.map((t) => maybeExpandMacroToken(t, locale)));
-}
-class TokenParser {
-  constructor(locale, format) {
-    this.locale = locale;
-    this.format = format;
-    this.tokens = expandMacroTokens(Formatter.parseFormat(format), locale);
-    this.units = this.tokens.map((t) => unitForToken(t, locale));
-    this.disqualifyingUnit = this.units.find((t) => t.invalidReason);
-    if (!this.disqualifyingUnit) {
-      const [regexString, handlers] = buildRegex(this.units);
-      this.regex = RegExp(regexString, "i");
-      this.handlers = handlers;
-    }
-  }
-  explainFromTokens(input) {
-    if (!this.isValid) {
-      return { input, tokens: this.tokens, invalidReason: this.invalidReason };
-    } else {
-      const [rawMatches, matches] = match(input, this.regex, this.handlers), [result, zone, specificOffset] = matches ? dateTimeFromMatches(matches) : [null, null, void 0];
-      if (hasOwnProperty(matches, "a") && hasOwnProperty(matches, "H")) {
-        throw new ConflictingSpecificationError(
-          "Can't include meridiem when specifying 24-hour format"
-        );
-      }
-      return {
-        input,
-        tokens: this.tokens,
-        regex: this.regex,
-        rawMatches,
-        matches,
-        result,
-        zone,
-        specificOffset
-      };
-    }
-  }
-  get isValid() {
-    return !this.disqualifyingUnit;
-  }
-  get invalidReason() {
-    return this.disqualifyingUnit ? this.disqualifyingUnit.invalidReason : null;
-  }
-}
-function explainFromTokens(locale, input, format) {
-  const parser = new TokenParser(locale, format);
-  return parser.explainFromTokens(input);
-}
-function parseFromTokens(locale, input, format) {
-  const { result, zone, specificOffset, invalidReason } = explainFromTokens(locale, input, format);
-  return [result, zone, specificOffset, invalidReason];
-}
-function formatOptsToTokens(formatOpts, locale) {
-  if (!formatOpts) {
-    return null;
-  }
-  const formatter = Formatter.create(locale, formatOpts);
-  const df = formatter.dtFormatter(getDummyDateTime());
-  const parts = df.formatToParts();
-  const resolvedOpts = df.resolvedOptions();
-  return parts.map((p) => tokenForPart(p, formatOpts, resolvedOpts));
-}
-const INVALID = "Invalid DateTime";
-const MAX_DATE = 864e13;
-function unsupportedZone(zone) {
-  return new Invalid("unsupported zone", `the zone "${zone.name}" is not supported`);
-}
-function possiblyCachedWeekData(dt) {
-  if (dt.weekData === null) {
-    dt.weekData = gregorianToWeek(dt.c);
-  }
-  return dt.weekData;
-}
-function possiblyCachedLocalWeekData(dt) {
-  if (dt.localWeekData === null) {
-    dt.localWeekData = gregorianToWeek(
-      dt.c,
-      dt.loc.getMinDaysInFirstWeek(),
-      dt.loc.getStartOfWeek()
-    );
-  }
-  return dt.localWeekData;
-}
-function clone$1(inst, alts) {
-  const current = {
-    ts: inst.ts,
-    zone: inst.zone,
-    c: inst.c,
-    o: inst.o,
-    loc: inst.loc,
-    invalid: inst.invalid
-  };
-  return new DateTime({ ...current, ...alts, old: current });
-}
-function fixOffset(localTS, o, tz) {
-  let utcGuess = localTS - o * 60 * 1e3;
-  const o2 = tz.offset(utcGuess);
-  if (o === o2) {
-    return [utcGuess, o];
-  }
-  utcGuess -= (o2 - o) * 60 * 1e3;
-  const o3 = tz.offset(utcGuess);
-  if (o2 === o3) {
-    return [utcGuess, o2];
-  }
-  return [localTS - Math.min(o2, o3) * 60 * 1e3, Math.max(o2, o3)];
-}
-function tsToObj(ts, offset2) {
-  ts += offset2 * 60 * 1e3;
-  const d = new Date(ts);
-  return {
-    year: d.getUTCFullYear(),
-    month: d.getUTCMonth() + 1,
-    day: d.getUTCDate(),
-    hour: d.getUTCHours(),
-    minute: d.getUTCMinutes(),
-    second: d.getUTCSeconds(),
-    millisecond: d.getUTCMilliseconds()
-  };
-}
-function objToTS(obj, offset2, zone) {
-  return fixOffset(objToLocalTS(obj), offset2, zone);
-}
-function adjustTime(inst, dur) {
-  const oPre = inst.o, year = inst.c.year + Math.trunc(dur.years), month = inst.c.month + Math.trunc(dur.months) + Math.trunc(dur.quarters) * 3, c = {
-    ...inst.c,
-    year,
-    month,
-    day: Math.min(inst.c.day, daysInMonth(year, month)) + Math.trunc(dur.days) + Math.trunc(dur.weeks) * 7
-  }, millisToAdd = Duration.fromObject({
-    years: dur.years - Math.trunc(dur.years),
-    quarters: dur.quarters - Math.trunc(dur.quarters),
-    months: dur.months - Math.trunc(dur.months),
-    weeks: dur.weeks - Math.trunc(dur.weeks),
-    days: dur.days - Math.trunc(dur.days),
-    hours: dur.hours,
-    minutes: dur.minutes,
-    seconds: dur.seconds,
-    milliseconds: dur.milliseconds
-  }).as("milliseconds"), localTS = objToLocalTS(c);
-  let [ts, o] = fixOffset(localTS, oPre, inst.zone);
-  if (millisToAdd !== 0) {
-    ts += millisToAdd;
-    o = inst.zone.offset(ts);
-  }
-  return { ts, o };
-}
-function parseDataToDateTime(parsed, parsedZone, opts, format, text2, specificOffset) {
-  const { setZone, zone } = opts;
-  if (parsed && Object.keys(parsed).length !== 0 || parsedZone) {
-    const interpretationZone = parsedZone || zone, inst = DateTime.fromObject(parsed, {
-      ...opts,
-      zone: interpretationZone,
-      specificOffset
-    });
-    return setZone ? inst : inst.setZone(zone);
-  } else {
-    return DateTime.invalid(
-      new Invalid("unparsable", `the input "${text2}" can't be parsed as ${format}`)
-    );
-  }
-}
-function toTechFormat(dt, format, allowZ = true) {
-  return dt.isValid ? Formatter.create(Locale.create("en-US"), {
-    allowZ,
-    forceSimple: true
-  }).formatDateTimeFromString(dt, format) : null;
-}
-function toISODate(o, extended) {
-  const longFormat = o.c.year > 9999 || o.c.year < 0;
-  let c = "";
-  if (longFormat && o.c.year >= 0) c += "+";
-  c += padStart(o.c.year, longFormat ? 6 : 4);
-  if (extended) {
-    c += "-";
-    c += padStart(o.c.month);
-    c += "-";
-    c += padStart(o.c.day);
-  } else {
-    c += padStart(o.c.month);
-    c += padStart(o.c.day);
-  }
-  return c;
-}
-function toISOTime(o, extended, suppressSeconds, suppressMilliseconds, includeOffset, extendedZone) {
-  let c = padStart(o.c.hour);
-  if (extended) {
-    c += ":";
-    c += padStart(o.c.minute);
-    if (o.c.millisecond !== 0 || o.c.second !== 0 || !suppressSeconds) {
-      c += ":";
-    }
-  } else {
-    c += padStart(o.c.minute);
-  }
-  if (o.c.millisecond !== 0 || o.c.second !== 0 || !suppressSeconds) {
-    c += padStart(o.c.second);
-    if (o.c.millisecond !== 0 || !suppressMilliseconds) {
-      c += ".";
-      c += padStart(o.c.millisecond, 3);
-    }
-  }
-  if (includeOffset) {
-    if (o.isOffsetFixed && o.offset === 0 && !extendedZone) {
-      c += "Z";
-    } else if (o.o < 0) {
-      c += "-";
-      c += padStart(Math.trunc(-o.o / 60));
-      c += ":";
-      c += padStart(Math.trunc(-o.o % 60));
-    } else {
-      c += "+";
-      c += padStart(Math.trunc(o.o / 60));
-      c += ":";
-      c += padStart(Math.trunc(o.o % 60));
-    }
-  }
-  if (extendedZone) {
-    c += "[" + o.zone.ianaName + "]";
-  }
-  return c;
-}
-const defaultUnitValues = {
-  month: 1,
-  day: 1,
-  hour: 0,
-  minute: 0,
-  second: 0,
-  millisecond: 0
-}, defaultWeekUnitValues = {
-  weekNumber: 1,
-  weekday: 1,
-  hour: 0,
-  minute: 0,
-  second: 0,
-  millisecond: 0
-}, defaultOrdinalUnitValues = {
-  ordinal: 1,
-  hour: 0,
-  minute: 0,
-  second: 0,
-  millisecond: 0
-};
-const orderedUnits = ["year", "month", "day", "hour", "minute", "second", "millisecond"], orderedWeekUnits = [
-  "weekYear",
-  "weekNumber",
-  "weekday",
-  "hour",
-  "minute",
-  "second",
-  "millisecond"
-], orderedOrdinalUnits = ["year", "ordinal", "hour", "minute", "second", "millisecond"];
-function normalizeUnit(unit) {
-  const normalized = {
-    year: "year",
-    years: "year",
-    month: "month",
-    months: "month",
-    day: "day",
-    days: "day",
-    hour: "hour",
-    hours: "hour",
-    minute: "minute",
-    minutes: "minute",
-    quarter: "quarter",
-    quarters: "quarter",
-    second: "second",
-    seconds: "second",
-    millisecond: "millisecond",
-    milliseconds: "millisecond",
-    weekday: "weekday",
-    weekdays: "weekday",
-    weeknumber: "weekNumber",
-    weeksnumber: "weekNumber",
-    weeknumbers: "weekNumber",
-    weekyear: "weekYear",
-    weekyears: "weekYear",
-    ordinal: "ordinal"
-  }[unit.toLowerCase()];
-  if (!normalized) throw new InvalidUnitError(unit);
-  return normalized;
-}
-function normalizeUnitWithLocalWeeks(unit) {
-  switch (unit.toLowerCase()) {
-    case "localweekday":
-    case "localweekdays":
-      return "localWeekday";
-    case "localweeknumber":
-    case "localweeknumbers":
-      return "localWeekNumber";
-    case "localweekyear":
-    case "localweekyears":
-      return "localWeekYear";
-    default:
-      return normalizeUnit(unit);
-  }
-}
-function guessOffsetForZone(zone) {
-  if (!zoneOffsetGuessCache[zone]) {
-    if (zoneOffsetTs === void 0) {
-      zoneOffsetTs = Settings.now();
-    }
-    zoneOffsetGuessCache[zone] = zone.offset(zoneOffsetTs);
-  }
-  return zoneOffsetGuessCache[zone];
-}
-function quickDT(obj, opts) {
-  const zone = normalizeZone(opts.zone, Settings.defaultZone);
-  if (!zone.isValid) {
-    return DateTime.invalid(unsupportedZone(zone));
-  }
-  const loc = Locale.fromObject(opts);
-  let ts, o;
-  if (!isUndefined(obj.year)) {
-    for (const u of orderedUnits) {
-      if (isUndefined(obj[u])) {
-        obj[u] = defaultUnitValues[u];
-      }
-    }
-    const invalid = hasInvalidGregorianData(obj) || hasInvalidTimeData(obj);
-    if (invalid) {
-      return DateTime.invalid(invalid);
-    }
-    const offsetProvis = guessOffsetForZone(zone);
-    [ts, o] = objToTS(obj, offsetProvis, zone);
-  } else {
-    ts = Settings.now();
-  }
-  return new DateTime({ ts, zone, loc, o });
-}
-function diffRelative(start, end2, opts) {
-  const round2 = isUndefined(opts.round) ? true : opts.round, format = (c, unit) => {
-    c = roundTo(c, round2 || opts.calendary ? 0 : 2, true);
-    const formatter = end2.loc.clone(opts).relFormatter(opts);
-    return formatter.format(c, unit);
-  }, differ = (unit) => {
-    if (opts.calendary) {
-      if (!end2.hasSame(start, unit)) {
-        return end2.startOf(unit).diff(start.startOf(unit), unit).get(unit);
-      } else return 0;
-    } else {
-      return end2.diff(start, unit).get(unit);
-    }
-  };
-  if (opts.unit) {
-    return format(differ(opts.unit), opts.unit);
-  }
-  for (const unit of opts.units) {
-    const count = differ(unit);
-    if (Math.abs(count) >= 1) {
-      return format(count, unit);
-    }
-  }
-  return format(start > end2 ? -0 : 0, opts.units[opts.units.length - 1]);
-}
-function lastOpts(argList) {
-  let opts = {}, args;
-  if (argList.length > 0 && typeof argList[argList.length - 1] === "object") {
-    opts = argList[argList.length - 1];
-    args = Array.from(argList).slice(0, argList.length - 1);
-  } else {
-    args = Array.from(argList);
-  }
-  return [opts, args];
-}
-let zoneOffsetTs;
-let zoneOffsetGuessCache = {};
-class DateTime {
-  /**
-   * @access private
-   */
-  constructor(config) {
-    const zone = config.zone || Settings.defaultZone;
-    let invalid = config.invalid || (Number.isNaN(config.ts) ? new Invalid("invalid input") : null) || (!zone.isValid ? unsupportedZone(zone) : null);
-    this.ts = isUndefined(config.ts) ? Settings.now() : config.ts;
-    let c = null, o = null;
-    if (!invalid) {
-      const unchanged = config.old && config.old.ts === this.ts && config.old.zone.equals(zone);
-      if (unchanged) {
-        [c, o] = [config.old.c, config.old.o];
-      } else {
-        const ot = isNumber(config.o) && !config.old ? config.o : zone.offset(this.ts);
-        c = tsToObj(this.ts, ot);
-        invalid = Number.isNaN(c.year) ? new Invalid("invalid input") : null;
-        c = invalid ? null : c;
-        o = invalid ? null : ot;
-      }
-    }
-    this._zone = zone;
-    this.loc = config.loc || Locale.create();
-    this.invalid = invalid;
-    this.weekData = null;
-    this.localWeekData = null;
-    this.c = c;
-    this.o = o;
-    this.isLuxonDateTime = true;
-  }
-  // CONSTRUCT
-  /**
-   * Create a DateTime for the current instant, in the system's time zone.
-   *
-   * Use Settings to override these default values if needed.
-   * @example DateTime.now().toISO() //~> now in the ISO format
-   * @return {DateTime}
-   */
-  static now() {
-    return new DateTime({});
-  }
-  /**
-   * Create a local DateTime
-   * @param {number} [year] - The calendar year. If omitted (as in, call `local()` with no arguments), the current time will be used
-   * @param {number} [month=1] - The month, 1-indexed
-   * @param {number} [day=1] - The day of the month, 1-indexed
-   * @param {number} [hour=0] - The hour of the day, in 24-hour time
-   * @param {number} [minute=0] - The minute of the hour, meaning a number between 0 and 59
-   * @param {number} [second=0] - The second of the minute, meaning a number between 0 and 59
-   * @param {number} [millisecond=0] - The millisecond of the second, meaning a number between 0 and 999
-   * @example DateTime.local()                                  //~> now
-   * @example DateTime.local({ zone: "America/New_York" })      //~> now, in US east coast time
-   * @example DateTime.local(2017)                              //~> 2017-01-01T00:00:00
-   * @example DateTime.local(2017, 3)                           //~> 2017-03-01T00:00:00
-   * @example DateTime.local(2017, 3, 12, { locale: "fr" })     //~> 2017-03-12T00:00:00, with a French locale
-   * @example DateTime.local(2017, 3, 12, 5)                    //~> 2017-03-12T05:00:00
-   * @example DateTime.local(2017, 3, 12, 5, { zone: "utc" })   //~> 2017-03-12T05:00:00, in UTC
-   * @example DateTime.local(2017, 3, 12, 5, 45)                //~> 2017-03-12T05:45:00
-   * @example DateTime.local(2017, 3, 12, 5, 45, 10)            //~> 2017-03-12T05:45:10
-   * @example DateTime.local(2017, 3, 12, 5, 45, 10, 765)       //~> 2017-03-12T05:45:10.765
-   * @return {DateTime}
-   */
-  static local() {
-    const [opts, args] = lastOpts(arguments), [year, month, day, hour, minute, second, millisecond] = args;
-    return quickDT({ year, month, day, hour, minute, second, millisecond }, opts);
-  }
-  /**
-   * Create a DateTime in UTC
-   * @param {number} [year] - The calendar year. If omitted (as in, call `utc()` with no arguments), the current time will be used
-   * @param {number} [month=1] - The month, 1-indexed
-   * @param {number} [day=1] - The day of the month
-   * @param {number} [hour=0] - The hour of the day, in 24-hour time
-   * @param {number} [minute=0] - The minute of the hour, meaning a number between 0 and 59
-   * @param {number} [second=0] - The second of the minute, meaning a number between 0 and 59
-   * @param {number} [millisecond=0] - The millisecond of the second, meaning a number between 0 and 999
-   * @param {Object} options - configuration options for the DateTime
-   * @param {string} [options.locale] - a locale to set on the resulting DateTime instance
-   * @param {string} [options.outputCalendar] - the output calendar to set on the resulting DateTime instance
-   * @param {string} [options.numberingSystem] - the numbering system to set on the resulting DateTime instance
-   * @param {string} [options.weekSettings] - the week settings to set on the resulting DateTime instance
-   * @example DateTime.utc()                                              //~> now
-   * @example DateTime.utc(2017)                                          //~> 2017-01-01T00:00:00Z
-   * @example DateTime.utc(2017, 3)                                       //~> 2017-03-01T00:00:00Z
-   * @example DateTime.utc(2017, 3, 12)                                   //~> 2017-03-12T00:00:00Z
-   * @example DateTime.utc(2017, 3, 12, 5)                                //~> 2017-03-12T05:00:00Z
-   * @example DateTime.utc(2017, 3, 12, 5, 45)                            //~> 2017-03-12T05:45:00Z
-   * @example DateTime.utc(2017, 3, 12, 5, 45, { locale: "fr" })          //~> 2017-03-12T05:45:00Z with a French locale
-   * @example DateTime.utc(2017, 3, 12, 5, 45, 10)                        //~> 2017-03-12T05:45:10Z
-   * @example DateTime.utc(2017, 3, 12, 5, 45, 10, 765, { locale: "fr" }) //~> 2017-03-12T05:45:10.765Z with a French locale
-   * @return {DateTime}
-   */
-  static utc() {
-    const [opts, args] = lastOpts(arguments), [year, month, day, hour, minute, second, millisecond] = args;
-    opts.zone = FixedOffsetZone.utcInstance;
-    return quickDT({ year, month, day, hour, minute, second, millisecond }, opts);
-  }
-  /**
-   * Create a DateTime from a JavaScript Date object. Uses the default zone.
-   * @param {Date} date - a JavaScript Date object
-   * @param {Object} options - configuration options for the DateTime
-   * @param {string|Zone} [options.zone='local'] - the zone to place the DateTime into
-   * @return {DateTime}
-   */
-  static fromJSDate(date, options = {}) {
-    const ts = isDate(date) ? date.valueOf() : NaN;
-    if (Number.isNaN(ts)) {
-      return DateTime.invalid("invalid input");
-    }
-    const zoneToUse = normalizeZone(options.zone, Settings.defaultZone);
-    if (!zoneToUse.isValid) {
-      return DateTime.invalid(unsupportedZone(zoneToUse));
-    }
-    return new DateTime({
-      ts,
-      zone: zoneToUse,
-      loc: Locale.fromObject(options)
-    });
-  }
-  /**
-   * Create a DateTime from a number of milliseconds since the epoch (meaning since 1 January 1970 00:00:00 UTC). Uses the default zone.
-   * @param {number} milliseconds - a number of milliseconds since 1970 UTC
-   * @param {Object} options - configuration options for the DateTime
-   * @param {string|Zone} [options.zone='local'] - the zone to place the DateTime into
-   * @param {string} [options.locale] - a locale to set on the resulting DateTime instance
-   * @param {string} options.outputCalendar - the output calendar to set on the resulting DateTime instance
-   * @param {string} options.numberingSystem - the numbering system to set on the resulting DateTime instance
-   * @param {string} options.weekSettings - the week settings to set on the resulting DateTime instance
-   * @return {DateTime}
-   */
-  static fromMillis(milliseconds, options = {}) {
-    if (!isNumber(milliseconds)) {
-      throw new InvalidArgumentError(
-        `fromMillis requires a numerical input, but received a ${typeof milliseconds} with value ${milliseconds}`
-      );
-    } else if (milliseconds < -MAX_DATE || milliseconds > MAX_DATE) {
-      return DateTime.invalid("Timestamp out of range");
-    } else {
-      return new DateTime({
-        ts: milliseconds,
-        zone: normalizeZone(options.zone, Settings.defaultZone),
-        loc: Locale.fromObject(options)
-      });
-    }
-  }
-  /**
-   * Create a DateTime from a number of seconds since the epoch (meaning since 1 January 1970 00:00:00 UTC). Uses the default zone.
-   * @param {number} seconds - a number of seconds since 1970 UTC
-   * @param {Object} options - configuration options for the DateTime
-   * @param {string|Zone} [options.zone='local'] - the zone to place the DateTime into
-   * @param {string} [options.locale] - a locale to set on the resulting DateTime instance
-   * @param {string} options.outputCalendar - the output calendar to set on the resulting DateTime instance
-   * @param {string} options.numberingSystem - the numbering system to set on the resulting DateTime instance
-   * @param {string} options.weekSettings - the week settings to set on the resulting DateTime instance
-   * @return {DateTime}
-   */
-  static fromSeconds(seconds, options = {}) {
-    if (!isNumber(seconds)) {
-      throw new InvalidArgumentError("fromSeconds requires a numerical input");
-    } else {
-      return new DateTime({
-        ts: seconds * 1e3,
-        zone: normalizeZone(options.zone, Settings.defaultZone),
-        loc: Locale.fromObject(options)
-      });
-    }
-  }
-  /**
-   * Create a DateTime from a JavaScript object with keys like 'year' and 'hour' with reasonable defaults.
-   * @param {Object} obj - the object to create the DateTime from
-   * @param {number} obj.year - a year, such as 1987
-   * @param {number} obj.month - a month, 1-12
-   * @param {number} obj.day - a day of the month, 1-31, depending on the month
-   * @param {number} obj.ordinal - day of the year, 1-365 or 366
-   * @param {number} obj.weekYear - an ISO week year
-   * @param {number} obj.weekNumber - an ISO week number, between 1 and 52 or 53, depending on the year
-   * @param {number} obj.weekday - an ISO weekday, 1-7, where 1 is Monday and 7 is Sunday
-   * @param {number} obj.localWeekYear - a week year, according to the locale
-   * @param {number} obj.localWeekNumber - a week number, between 1 and 52 or 53, depending on the year, according to the locale
-   * @param {number} obj.localWeekday - a weekday, 1-7, where 1 is the first and 7 is the last day of the week, according to the locale
-   * @param {number} obj.hour - hour of the day, 0-23
-   * @param {number} obj.minute - minute of the hour, 0-59
-   * @param {number} obj.second - second of the minute, 0-59
-   * @param {number} obj.millisecond - millisecond of the second, 0-999
-   * @param {Object} opts - options for creating this DateTime
-   * @param {string|Zone} [opts.zone='local'] - interpret the numbers in the context of a particular zone. Can take any value taken as the first argument to setZone()
-   * @param {string} [opts.locale='system\'s locale'] - a locale to set on the resulting DateTime instance
-   * @param {string} opts.outputCalendar - the output calendar to set on the resulting DateTime instance
-   * @param {string} opts.numberingSystem - the numbering system to set on the resulting DateTime instance
-   * @param {string} opts.weekSettings - the week settings to set on the resulting DateTime instance
-   * @example DateTime.fromObject({ year: 1982, month: 5, day: 25}).toISODate() //=> '1982-05-25'
-   * @example DateTime.fromObject({ year: 1982 }).toISODate() //=> '1982-01-01'
-   * @example DateTime.fromObject({ hour: 10, minute: 26, second: 6 }) //~> today at 10:26:06
-   * @example DateTime.fromObject({ hour: 10, minute: 26, second: 6 }, { zone: 'utc' }),
-   * @example DateTime.fromObject({ hour: 10, minute: 26, second: 6 }, { zone: 'local' })
-   * @example DateTime.fromObject({ hour: 10, minute: 26, second: 6 }, { zone: 'America/New_York' })
-   * @example DateTime.fromObject({ weekYear: 2016, weekNumber: 2, weekday: 3 }).toISODate() //=> '2016-01-13'
-   * @example DateTime.fromObject({ localWeekYear: 2022, localWeekNumber: 1, localWeekday: 1 }, { locale: "en-US" }).toISODate() //=> '2021-12-26'
-   * @return {DateTime}
-   */
-  static fromObject(obj, opts = {}) {
-    obj = obj || {};
-    const zoneToUse = normalizeZone(opts.zone, Settings.defaultZone);
-    if (!zoneToUse.isValid) {
-      return DateTime.invalid(unsupportedZone(zoneToUse));
-    }
-    const loc = Locale.fromObject(opts);
-    const normalized = normalizeObject(obj, normalizeUnitWithLocalWeeks);
-    const { minDaysInFirstWeek, startOfWeek } = usesLocalWeekValues(normalized, loc);
-    const tsNow = Settings.now(), offsetProvis = !isUndefined(opts.specificOffset) ? opts.specificOffset : zoneToUse.offset(tsNow), containsOrdinal = !isUndefined(normalized.ordinal), containsGregorYear = !isUndefined(normalized.year), containsGregorMD = !isUndefined(normalized.month) || !isUndefined(normalized.day), containsGregor = containsGregorYear || containsGregorMD, definiteWeekDef = normalized.weekYear || normalized.weekNumber;
-    if ((containsGregor || containsOrdinal) && definiteWeekDef) {
-      throw new ConflictingSpecificationError(
-        "Can't mix weekYear/weekNumber units with year/month/day or ordinals"
-      );
-    }
-    if (containsGregorMD && containsOrdinal) {
-      throw new ConflictingSpecificationError("Can't mix ordinal dates with month/day");
-    }
-    const useWeekData = definiteWeekDef || normalized.weekday && !containsGregor;
-    let units, defaultValues, objNow = tsToObj(tsNow, offsetProvis);
-    if (useWeekData) {
-      units = orderedWeekUnits;
-      defaultValues = defaultWeekUnitValues;
-      objNow = gregorianToWeek(objNow, minDaysInFirstWeek, startOfWeek);
-    } else if (containsOrdinal) {
-      units = orderedOrdinalUnits;
-      defaultValues = defaultOrdinalUnitValues;
-      objNow = gregorianToOrdinal(objNow);
-    } else {
-      units = orderedUnits;
-      defaultValues = defaultUnitValues;
-    }
-    let foundFirst = false;
-    for (const u of units) {
-      const v = normalized[u];
-      if (!isUndefined(v)) {
-        foundFirst = true;
-      } else if (foundFirst) {
-        normalized[u] = defaultValues[u];
-      } else {
-        normalized[u] = objNow[u];
-      }
-    }
-    const higherOrderInvalid = useWeekData ? hasInvalidWeekData(normalized, minDaysInFirstWeek, startOfWeek) : containsOrdinal ? hasInvalidOrdinalData(normalized) : hasInvalidGregorianData(normalized), invalid = higherOrderInvalid || hasInvalidTimeData(normalized);
-    if (invalid) {
-      return DateTime.invalid(invalid);
-    }
-    const gregorian = useWeekData ? weekToGregorian(normalized, minDaysInFirstWeek, startOfWeek) : containsOrdinal ? ordinalToGregorian(normalized) : normalized, [tsFinal, offsetFinal] = objToTS(gregorian, offsetProvis, zoneToUse), inst = new DateTime({
-      ts: tsFinal,
-      zone: zoneToUse,
-      o: offsetFinal,
-      loc
-    });
-    if (normalized.weekday && containsGregor && obj.weekday !== inst.weekday) {
-      return DateTime.invalid(
-        "mismatched weekday",
-        `you can't specify both a weekday of ${normalized.weekday} and a date of ${inst.toISO()}`
-      );
-    }
-    if (!inst.isValid) {
-      return DateTime.invalid(inst.invalid);
-    }
-    return inst;
-  }
-  /**
-   * Create a DateTime from an ISO 8601 string
-   * @param {string} text - the ISO string
-   * @param {Object} opts - options to affect the creation
-   * @param {string|Zone} [opts.zone='local'] - use this zone if no offset is specified in the input string itself. Will also convert the time to this zone
-   * @param {boolean} [opts.setZone=false] - override the zone with a fixed-offset zone specified in the string itself, if it specifies one
-   * @param {string} [opts.locale='system's locale'] - a locale to set on the resulting DateTime instance
-   * @param {string} [opts.outputCalendar] - the output calendar to set on the resulting DateTime instance
-   * @param {string} [opts.numberingSystem] - the numbering system to set on the resulting DateTime instance
-   * @param {string} [opts.weekSettings] - the week settings to set on the resulting DateTime instance
-   * @example DateTime.fromISO('2016-05-25T09:08:34.123')
-   * @example DateTime.fromISO('2016-05-25T09:08:34.123+06:00')
-   * @example DateTime.fromISO('2016-05-25T09:08:34.123+06:00', {setZone: true})
-   * @example DateTime.fromISO('2016-05-25T09:08:34.123', {zone: 'utc'})
-   * @example DateTime.fromISO('2016-W05-4')
-   * @return {DateTime}
-   */
-  static fromISO(text2, opts = {}) {
-    const [vals, parsedZone] = parseISODate(text2);
-    return parseDataToDateTime(vals, parsedZone, opts, "ISO 8601", text2);
-  }
-  /**
-   * Create a DateTime from an RFC 2822 string
-   * @param {string} text - the RFC 2822 string
-   * @param {Object} opts - options to affect the creation
-   * @param {string|Zone} [opts.zone='local'] - convert the time to this zone. Since the offset is always specified in the string itself, this has no effect on the interpretation of string, merely the zone the resulting DateTime is expressed in.
-   * @param {boolean} [opts.setZone=false] - override the zone with a fixed-offset zone specified in the string itself, if it specifies one
-   * @param {string} [opts.locale='system's locale'] - a locale to set on the resulting DateTime instance
-   * @param {string} opts.outputCalendar - the output calendar to set on the resulting DateTime instance
-   * @param {string} opts.numberingSystem - the numbering system to set on the resulting DateTime instance
-   * @param {string} opts.weekSettings - the week settings to set on the resulting DateTime instance
-   * @example DateTime.fromRFC2822('25 Nov 2016 13:23:12 GMT')
-   * @example DateTime.fromRFC2822('Fri, 25 Nov 2016 13:23:12 +0600')
-   * @example DateTime.fromRFC2822('25 Nov 2016 13:23 Z')
-   * @return {DateTime}
-   */
-  static fromRFC2822(text2, opts = {}) {
-    const [vals, parsedZone] = parseRFC2822Date(text2);
-    return parseDataToDateTime(vals, parsedZone, opts, "RFC 2822", text2);
-  }
-  /**
-   * Create a DateTime from an HTTP header date
-   * @see https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.3.1
-   * @param {string} text - the HTTP header date
-   * @param {Object} opts - options to affect the creation
-   * @param {string|Zone} [opts.zone='local'] - convert the time to this zone. Since HTTP dates are always in UTC, this has no effect on the interpretation of string, merely the zone the resulting DateTime is expressed in.
-   * @param {boolean} [opts.setZone=false] - override the zone with the fixed-offset zone specified in the string. For HTTP dates, this is always UTC, so this option is equivalent to setting the `zone` option to 'utc', but this option is included for consistency with similar methods.
-   * @param {string} [opts.locale='system's locale'] - a locale to set on the resulting DateTime instance
-   * @param {string} opts.outputCalendar - the output calendar to set on the resulting DateTime instance
-   * @param {string} opts.numberingSystem - the numbering system to set on the resulting DateTime instance
-   * @param {string} opts.weekSettings - the week settings to set on the resulting DateTime instance
-   * @example DateTime.fromHTTP('Sun, 06 Nov 1994 08:49:37 GMT')
-   * @example DateTime.fromHTTP('Sunday, 06-Nov-94 08:49:37 GMT')
-   * @example DateTime.fromHTTP('Sun Nov  6 08:49:37 1994')
-   * @return {DateTime}
-   */
-  static fromHTTP(text2, opts = {}) {
-    const [vals, parsedZone] = parseHTTPDate(text2);
-    return parseDataToDateTime(vals, parsedZone, opts, "HTTP", opts);
-  }
-  /**
-   * Create a DateTime from an input string and format string.
-   * Defaults to en-US if no locale has been specified, regardless of the system's locale. For a table of tokens and their interpretations, see [here](https://moment.github.io/luxon/#/parsing?id=table-of-tokens).
-   * @param {string} text - the string to parse
-   * @param {string} fmt - the format the string is expected to be in (see the link below for the formats)
-   * @param {Object} opts - options to affect the creation
-   * @param {string|Zone} [opts.zone='local'] - use this zone if no offset is specified in the input string itself. Will also convert the DateTime to this zone
-   * @param {boolean} [opts.setZone=false] - override the zone with a zone specified in the string itself, if it specifies one
-   * @param {string} [opts.locale='en-US'] - a locale string to use when parsing. Will also set the DateTime to this locale
-   * @param {string} opts.numberingSystem - the numbering system to use when parsing. Will also set the resulting DateTime to this numbering system
-   * @param {string} opts.weekSettings - the week settings to set on the resulting DateTime instance
-   * @param {string} opts.outputCalendar - the output calendar to set on the resulting DateTime instance
-   * @return {DateTime}
-   */
-  static fromFormat(text2, fmt, opts = {}) {
-    if (isUndefined(text2) || isUndefined(fmt)) {
-      throw new InvalidArgumentError("fromFormat requires an input string and a format");
-    }
-    const { locale = null, numberingSystem = null } = opts, localeToUse = Locale.fromOpts({
-      locale,
-      numberingSystem,
-      defaultToEN: true
-    }), [vals, parsedZone, specificOffset, invalid] = parseFromTokens(localeToUse, text2, fmt);
-    if (invalid) {
-      return DateTime.invalid(invalid);
-    } else {
-      return parseDataToDateTime(vals, parsedZone, opts, `format ${fmt}`, text2, specificOffset);
-    }
-  }
-  /**
-   * @deprecated use fromFormat instead
-   */
-  static fromString(text2, fmt, opts = {}) {
-    return DateTime.fromFormat(text2, fmt, opts);
-  }
-  /**
-   * Create a DateTime from a SQL date, time, or datetime
-   * Defaults to en-US if no locale has been specified, regardless of the system's locale
-   * @param {string} text - the string to parse
-   * @param {Object} opts - options to affect the creation
-   * @param {string|Zone} [opts.zone='local'] - use this zone if no offset is specified in the input string itself. Will also convert the DateTime to this zone
-   * @param {boolean} [opts.setZone=false] - override the zone with a zone specified in the string itself, if it specifies one
-   * @param {string} [opts.locale='en-US'] - a locale string to use when parsing. Will also set the DateTime to this locale
-   * @param {string} opts.numberingSystem - the numbering system to use when parsing. Will also set the resulting DateTime to this numbering system
-   * @param {string} opts.weekSettings - the week settings to set on the resulting DateTime instance
-   * @param {string} opts.outputCalendar - the output calendar to set on the resulting DateTime instance
-   * @example DateTime.fromSQL('2017-05-15')
-   * @example DateTime.fromSQL('2017-05-15 09:12:34')
-   * @example DateTime.fromSQL('2017-05-15 09:12:34.342')
-   * @example DateTime.fromSQL('2017-05-15 09:12:34.342+06:00')
-   * @example DateTime.fromSQL('2017-05-15 09:12:34.342 America/Los_Angeles')
-   * @example DateTime.fromSQL('2017-05-15 09:12:34.342 America/Los_Angeles', { setZone: true })
-   * @example DateTime.fromSQL('2017-05-15 09:12:34.342', { zone: 'America/Los_Angeles' })
-   * @example DateTime.fromSQL('09:12:34.342')
-   * @return {DateTime}
-   */
-  static fromSQL(text2, opts = {}) {
-    const [vals, parsedZone] = parseSQL(text2);
-    return parseDataToDateTime(vals, parsedZone, opts, "SQL", text2);
-  }
-  /**
-   * Create an invalid DateTime.
-   * @param {string} reason - simple string of why this DateTime is invalid. Should not contain parameters or anything else data-dependent.
-   * @param {string} [explanation=null] - longer explanation, may include parameters and other useful debugging information
-   * @return {DateTime}
-   */
-  static invalid(reason, explanation = null) {
-    if (!reason) {
-      throw new InvalidArgumentError("need to specify a reason the DateTime is invalid");
-    }
-    const invalid = reason instanceof Invalid ? reason : new Invalid(reason, explanation);
-    if (Settings.throwOnInvalid) {
-      throw new InvalidDateTimeError(invalid);
-    } else {
-      return new DateTime({ invalid });
-    }
-  }
-  /**
-   * Check if an object is an instance of DateTime. Works across context boundaries
-   * @param {object} o
-   * @return {boolean}
-   */
-  static isDateTime(o) {
-    return o && o.isLuxonDateTime || false;
-  }
-  /**
-   * Produce the format string for a set of options
-   * @param formatOpts
-   * @param localeOpts
-   * @returns {string}
-   */
-  static parseFormatForOpts(formatOpts, localeOpts = {}) {
-    const tokenList = formatOptsToTokens(formatOpts, Locale.fromObject(localeOpts));
-    return !tokenList ? null : tokenList.map((t) => t ? t.val : null).join("");
-  }
-  /**
-   * Produce the the fully expanded format token for the locale
-   * Does NOT quote characters, so quoted tokens will not round trip correctly
-   * @param fmt
-   * @param localeOpts
-   * @returns {string}
-   */
-  static expandFormat(fmt, localeOpts = {}) {
-    const expanded = expandMacroTokens(Formatter.parseFormat(fmt), Locale.fromObject(localeOpts));
-    return expanded.map((t) => t.val).join("");
-  }
-  static resetCache() {
-    zoneOffsetTs = void 0;
-    zoneOffsetGuessCache = {};
-  }
-  // INFO
-  /**
-   * Get the value of unit.
-   * @param {string} unit - a unit such as 'minute' or 'day'
-   * @example DateTime.local(2017, 7, 4).get('month'); //=> 7
-   * @example DateTime.local(2017, 7, 4).get('day'); //=> 4
-   * @return {number}
-   */
-  get(unit) {
-    return this[unit];
-  }
-  /**
-   * Returns whether the DateTime is valid. Invalid DateTimes occur when:
-   * * The DateTime was created from invalid calendar information, such as the 13th month or February 30
-   * * The DateTime was created by an operation on another invalid date
-   * @type {boolean}
-   */
-  get isValid() {
-    return this.invalid === null;
-  }
-  /**
-   * Returns an error code if this DateTime is invalid, or null if the DateTime is valid
-   * @type {string}
-   */
-  get invalidReason() {
-    return this.invalid ? this.invalid.reason : null;
-  }
-  /**
-   * Returns an explanation of why this DateTime became invalid, or null if the DateTime is valid
-   * @type {string}
-   */
-  get invalidExplanation() {
-    return this.invalid ? this.invalid.explanation : null;
-  }
-  /**
-   * Get the locale of a DateTime, such 'en-GB'. The locale is used when formatting the DateTime
-   *
-   * @type {string}
-   */
-  get locale() {
-    return this.isValid ? this.loc.locale : null;
-  }
-  /**
-   * Get the numbering system of a DateTime, such 'beng'. The numbering system is used when formatting the DateTime
-   *
-   * @type {string}
-   */
-  get numberingSystem() {
-    return this.isValid ? this.loc.numberingSystem : null;
-  }
-  /**
-   * Get the output calendar of a DateTime, such 'islamic'. The output calendar is used when formatting the DateTime
-   *
-   * @type {string}
-   */
-  get outputCalendar() {
-    return this.isValid ? this.loc.outputCalendar : null;
-  }
-  /**
-   * Get the time zone associated with this DateTime.
-   * @type {Zone}
-   */
-  get zone() {
-    return this._zone;
-  }
-  /**
-   * Get the name of the time zone.
-   * @type {string}
-   */
-  get zoneName() {
-    return this.isValid ? this.zone.name : null;
-  }
-  /**
-   * Get the year
-   * @example DateTime.local(2017, 5, 25).year //=> 2017
-   * @type {number}
-   */
-  get year() {
-    return this.isValid ? this.c.year : NaN;
-  }
-  /**
-   * Get the quarter
-   * @example DateTime.local(2017, 5, 25).quarter //=> 2
-   * @type {number}
-   */
-  get quarter() {
-    return this.isValid ? Math.ceil(this.c.month / 3) : NaN;
-  }
-  /**
-   * Get the month (1-12).
-   * @example DateTime.local(2017, 5, 25).month //=> 5
-   * @type {number}
-   */
-  get month() {
-    return this.isValid ? this.c.month : NaN;
-  }
-  /**
-   * Get the day of the month (1-30ish).
-   * @example DateTime.local(2017, 5, 25).day //=> 25
-   * @type {number}
-   */
-  get day() {
-    return this.isValid ? this.c.day : NaN;
-  }
-  /**
-   * Get the hour of the day (0-23).
-   * @example DateTime.local(2017, 5, 25, 9).hour //=> 9
-   * @type {number}
-   */
-  get hour() {
-    return this.isValid ? this.c.hour : NaN;
-  }
-  /**
-   * Get the minute of the hour (0-59).
-   * @example DateTime.local(2017, 5, 25, 9, 30).minute //=> 30
-   * @type {number}
-   */
-  get minute() {
-    return this.isValid ? this.c.minute : NaN;
-  }
-  /**
-   * Get the second of the minute (0-59).
-   * @example DateTime.local(2017, 5, 25, 9, 30, 52).second //=> 52
-   * @type {number}
-   */
-  get second() {
-    return this.isValid ? this.c.second : NaN;
-  }
-  /**
-   * Get the millisecond of the second (0-999).
-   * @example DateTime.local(2017, 5, 25, 9, 30, 52, 654).millisecond //=> 654
-   * @type {number}
-   */
-  get millisecond() {
-    return this.isValid ? this.c.millisecond : NaN;
-  }
-  /**
-   * Get the week year
-   * @see https://en.wikipedia.org/wiki/ISO_week_date
-   * @example DateTime.local(2014, 12, 31).weekYear //=> 2015
-   * @type {number}
-   */
-  get weekYear() {
-    return this.isValid ? possiblyCachedWeekData(this).weekYear : NaN;
-  }
-  /**
-   * Get the week number of the week year (1-52ish).
-   * @see https://en.wikipedia.org/wiki/ISO_week_date
-   * @example DateTime.local(2017, 5, 25).weekNumber //=> 21
-   * @type {number}
-   */
-  get weekNumber() {
-    return this.isValid ? possiblyCachedWeekData(this).weekNumber : NaN;
-  }
-  /**
-   * Get the day of the week.
-   * 1 is Monday and 7 is Sunday
-   * @see https://en.wikipedia.org/wiki/ISO_week_date
-   * @example DateTime.local(2014, 11, 31).weekday //=> 4
-   * @type {number}
-   */
-  get weekday() {
-    return this.isValid ? possiblyCachedWeekData(this).weekday : NaN;
-  }
-  /**
-   * Returns true if this date is on a weekend according to the locale, false otherwise
-   * @returns {boolean}
-   */
-  get isWeekend() {
-    return this.isValid && this.loc.getWeekendDays().includes(this.weekday);
-  }
-  /**
-   * Get the day of the week according to the locale.
-   * 1 is the first day of the week and 7 is the last day of the week.
-   * If the locale assigns Sunday as the first day of the week, then a date which is a Sunday will return 1,
-   * @returns {number}
-   */
-  get localWeekday() {
-    return this.isValid ? possiblyCachedLocalWeekData(this).weekday : NaN;
-  }
-  /**
-   * Get the week number of the week year according to the locale. Different locales assign week numbers differently,
-   * because the week can start on different days of the week (see localWeekday) and because a different number of days
-   * is required for a week to count as the first week of a year.
-   * @returns {number}
-   */
-  get localWeekNumber() {
-    return this.isValid ? possiblyCachedLocalWeekData(this).weekNumber : NaN;
-  }
-  /**
-   * Get the week year according to the locale. Different locales assign week numbers (and therefor week years)
-   * differently, see localWeekNumber.
-   * @returns {number}
-   */
-  get localWeekYear() {
-    return this.isValid ? possiblyCachedLocalWeekData(this).weekYear : NaN;
-  }
-  /**
-   * Get the ordinal (meaning the day of the year)
-   * @example DateTime.local(2017, 5, 25).ordinal //=> 145
-   * @type {number|DateTime}
-   */
-  get ordinal() {
-    return this.isValid ? gregorianToOrdinal(this.c).ordinal : NaN;
-  }
-  /**
-   * Get the human readable short month name, such as 'Oct'.
-   * Defaults to the system's locale if no locale has been specified
-   * @example DateTime.local(2017, 10, 30).monthShort //=> Oct
-   * @type {string}
-   */
-  get monthShort() {
-    return this.isValid ? Info.months("short", { locObj: this.loc })[this.month - 1] : null;
-  }
-  /**
-   * Get the human readable long month name, such as 'October'.
-   * Defaults to the system's locale if no locale has been specified
-   * @example DateTime.local(2017, 10, 30).monthLong //=> October
-   * @type {string}
-   */
-  get monthLong() {
-    return this.isValid ? Info.months("long", { locObj: this.loc })[this.month - 1] : null;
-  }
-  /**
-   * Get the human readable short weekday, such as 'Mon'.
-   * Defaults to the system's locale if no locale has been specified
-   * @example DateTime.local(2017, 10, 30).weekdayShort //=> Mon
-   * @type {string}
-   */
-  get weekdayShort() {
-    return this.isValid ? Info.weekdays("short", { locObj: this.loc })[this.weekday - 1] : null;
-  }
-  /**
-   * Get the human readable long weekday, such as 'Monday'.
-   * Defaults to the system's locale if no locale has been specified
-   * @example DateTime.local(2017, 10, 30).weekdayLong //=> Monday
-   * @type {string}
-   */
-  get weekdayLong() {
-    return this.isValid ? Info.weekdays("long", { locObj: this.loc })[this.weekday - 1] : null;
-  }
-  /**
-   * Get the UTC offset of this DateTime in minutes
-   * @example DateTime.now().offset //=> -240
-   * @example DateTime.utc().offset //=> 0
-   * @type {number}
-   */
-  get offset() {
-    return this.isValid ? +this.o : NaN;
-  }
-  /**
-   * Get the short human name for the zone's current offset, for example "EST" or "EDT".
-   * Defaults to the system's locale if no locale has been specified
-   * @type {string}
-   */
-  get offsetNameShort() {
-    if (this.isValid) {
-      return this.zone.offsetName(this.ts, {
-        format: "short",
-        locale: this.locale
-      });
-    } else {
-      return null;
-    }
-  }
-  /**
-   * Get the long human name for the zone's current offset, for example "Eastern Standard Time" or "Eastern Daylight Time".
-   * Defaults to the system's locale if no locale has been specified
-   * @type {string}
-   */
-  get offsetNameLong() {
-    if (this.isValid) {
-      return this.zone.offsetName(this.ts, {
-        format: "long",
-        locale: this.locale
-      });
-    } else {
-      return null;
-    }
-  }
-  /**
-   * Get whether this zone's offset ever changes, as in a DST.
-   * @type {boolean}
-   */
-  get isOffsetFixed() {
-    return this.isValid ? this.zone.isUniversal : null;
-  }
-  /**
-   * Get whether the DateTime is in a DST.
-   * @type {boolean}
-   */
-  get isInDST() {
-    if (this.isOffsetFixed) {
-      return false;
-    } else {
-      return this.offset > this.set({ month: 1, day: 1 }).offset || this.offset > this.set({ month: 5 }).offset;
-    }
-  }
-  /**
-   * Get those DateTimes which have the same local time as this DateTime, but a different offset from UTC
-   * in this DateTime's zone. During DST changes local time can be ambiguous, for example
-   * `2023-10-29T02:30:00` in `Europe/Berlin` can have offset `+01:00` or `+02:00`.
-   * This method will return both possible DateTimes if this DateTime's local time is ambiguous.
-   * @returns {DateTime[]}
-   */
-  getPossibleOffsets() {
-    if (!this.isValid || this.isOffsetFixed) {
-      return [this];
-    }
-    const dayMs = 864e5;
-    const minuteMs = 6e4;
-    const localTS = objToLocalTS(this.c);
-    const oEarlier = this.zone.offset(localTS - dayMs);
-    const oLater = this.zone.offset(localTS + dayMs);
-    const o1 = this.zone.offset(localTS - oEarlier * minuteMs);
-    const o2 = this.zone.offset(localTS - oLater * minuteMs);
-    if (o1 === o2) {
-      return [this];
-    }
-    const ts1 = localTS - o1 * minuteMs;
-    const ts2 = localTS - o2 * minuteMs;
-    const c1 = tsToObj(ts1, o1);
-    const c2 = tsToObj(ts2, o2);
-    if (c1.hour === c2.hour && c1.minute === c2.minute && c1.second === c2.second && c1.millisecond === c2.millisecond) {
-      return [clone$1(this, { ts: ts1 }), clone$1(this, { ts: ts2 })];
-    }
-    return [this];
-  }
-  /**
-   * Returns true if this DateTime is in a leap year, false otherwise
-   * @example DateTime.local(2016).isInLeapYear //=> true
-   * @example DateTime.local(2013).isInLeapYear //=> false
-   * @type {boolean}
-   */
-  get isInLeapYear() {
-    return isLeapYear(this.year);
-  }
-  /**
-   * Returns the number of days in this DateTime's month
-   * @example DateTime.local(2016, 2).daysInMonth //=> 29
-   * @example DateTime.local(2016, 3).daysInMonth //=> 31
-   * @type {number}
-   */
-  get daysInMonth() {
-    return daysInMonth(this.year, this.month);
-  }
-  /**
-   * Returns the number of days in this DateTime's year
-   * @example DateTime.local(2016).daysInYear //=> 366
-   * @example DateTime.local(2013).daysInYear //=> 365
-   * @type {number}
-   */
-  get daysInYear() {
-    return this.isValid ? daysInYear(this.year) : NaN;
-  }
-  /**
-   * Returns the number of weeks in this DateTime's year
-   * @see https://en.wikipedia.org/wiki/ISO_week_date
-   * @example DateTime.local(2004).weeksInWeekYear //=> 53
-   * @example DateTime.local(2013).weeksInWeekYear //=> 52
-   * @type {number}
-   */
-  get weeksInWeekYear() {
-    return this.isValid ? weeksInWeekYear(this.weekYear) : NaN;
-  }
-  /**
-   * Returns the number of weeks in this DateTime's local week year
-   * @example DateTime.local(2020, 6, {locale: 'en-US'}).weeksInLocalWeekYear //=> 52
-   * @example DateTime.local(2020, 6, {locale: 'de-DE'}).weeksInLocalWeekYear //=> 53
-   * @type {number}
-   */
-  get weeksInLocalWeekYear() {
-    return this.isValid ? weeksInWeekYear(
-      this.localWeekYear,
-      this.loc.getMinDaysInFirstWeek(),
-      this.loc.getStartOfWeek()
-    ) : NaN;
-  }
-  /**
-   * Returns the resolved Intl options for this DateTime.
-   * This is useful in understanding the behavior of formatting methods
-   * @param {Object} opts - the same options as toLocaleString
-   * @return {Object}
-   */
-  resolvedLocaleOptions(opts = {}) {
-    const { locale, numberingSystem, calendar } = Formatter.create(
-      this.loc.clone(opts),
-      opts
-    ).resolvedOptions(this);
-    return { locale, numberingSystem, outputCalendar: calendar };
-  }
-  // TRANSFORM
-  /**
-   * "Set" the DateTime's zone to UTC. Returns a newly-constructed DateTime.
-   *
-   * Equivalent to {@link DateTime#setZone}('utc')
-   * @param {number} [offset=0] - optionally, an offset from UTC in minutes
-   * @param {Object} [opts={}] - options to pass to `setZone()`
-   * @return {DateTime}
-   */
-  toUTC(offset2 = 0, opts = {}) {
-    return this.setZone(FixedOffsetZone.instance(offset2), opts);
-  }
-  /**
-   * "Set" the DateTime's zone to the host's local zone. Returns a newly-constructed DateTime.
-   *
-   * Equivalent to `setZone('local')`
-   * @return {DateTime}
-   */
-  toLocal() {
-    return this.setZone(Settings.defaultZone);
-  }
-  /**
-   * "Set" the DateTime's zone to specified zone. Returns a newly-constructed DateTime.
-   *
-   * By default, the setter keeps the underlying time the same (as in, the same timestamp), but the new instance will report different local times and consider DSTs when making computations, as with {@link DateTime#plus}. You may wish to use {@link DateTime#toLocal} and {@link DateTime#toUTC} which provide simple convenience wrappers for commonly used zones.
-   * @param {string|Zone} [zone='local'] - a zone identifier. As a string, that can be any IANA zone supported by the host environment, or a fixed-offset name of the form 'UTC+3', or the strings 'local' or 'utc'. You may also supply an instance of a {@link DateTime#Zone} class.
-   * @param {Object} opts - options
-   * @param {boolean} [opts.keepLocalTime=false] - If true, adjust the underlying time so that the local time stays the same, but in the target zone. You should rarely need this.
-   * @return {DateTime}
-   */
-  setZone(zone, { keepLocalTime = false, keepCalendarTime = false } = {}) {
-    zone = normalizeZone(zone, Settings.defaultZone);
-    if (zone.equals(this.zone)) {
-      return this;
-    } else if (!zone.isValid) {
-      return DateTime.invalid(unsupportedZone(zone));
-    } else {
-      let newTS = this.ts;
-      if (keepLocalTime || keepCalendarTime) {
-        const offsetGuess = zone.offset(this.ts);
-        const asObj = this.toObject();
-        [newTS] = objToTS(asObj, offsetGuess, zone);
-      }
-      return clone$1(this, { ts: newTS, zone });
-    }
-  }
-  /**
-   * "Set" the locale, numberingSystem, or outputCalendar. Returns a newly-constructed DateTime.
-   * @param {Object} properties - the properties to set
-   * @example DateTime.local(2017, 5, 25).reconfigure({ locale: 'en-GB' })
-   * @return {DateTime}
-   */
-  reconfigure({ locale, numberingSystem, outputCalendar } = {}) {
-    const loc = this.loc.clone({ locale, numberingSystem, outputCalendar });
-    return clone$1(this, { loc });
-  }
-  /**
-   * "Set" the locale. Returns a newly-constructed DateTime.
-   * Just a convenient alias for reconfigure({ locale })
-   * @example DateTime.local(2017, 5, 25).setLocale('en-GB')
-   * @return {DateTime}
-   */
-  setLocale(locale) {
-    return this.reconfigure({ locale });
-  }
-  /**
-   * "Set" the values of specified units. Returns a newly-constructed DateTime.
-   * You can only set units with this method; for "setting" metadata, see {@link DateTime#reconfigure} and {@link DateTime#setZone}.
-   *
-   * This method also supports setting locale-based week units, i.e. `localWeekday`, `localWeekNumber` and `localWeekYear`.
-   * They cannot be mixed with ISO-week units like `weekday`.
-   * @param {Object} values - a mapping of units to numbers
-   * @example dt.set({ year: 2017 })
-   * @example dt.set({ hour: 8, minute: 30 })
-   * @example dt.set({ weekday: 5 })
-   * @example dt.set({ year: 2005, ordinal: 234 })
-   * @return {DateTime}
-   */
-  set(values2) {
-    if (!this.isValid) return this;
-    const normalized = normalizeObject(values2, normalizeUnitWithLocalWeeks);
-    const { minDaysInFirstWeek, startOfWeek } = usesLocalWeekValues(normalized, this.loc);
-    const settingWeekStuff = !isUndefined(normalized.weekYear) || !isUndefined(normalized.weekNumber) || !isUndefined(normalized.weekday), containsOrdinal = !isUndefined(normalized.ordinal), containsGregorYear = !isUndefined(normalized.year), containsGregorMD = !isUndefined(normalized.month) || !isUndefined(normalized.day), containsGregor = containsGregorYear || containsGregorMD, definiteWeekDef = normalized.weekYear || normalized.weekNumber;
-    if ((containsGregor || containsOrdinal) && definiteWeekDef) {
-      throw new ConflictingSpecificationError(
-        "Can't mix weekYear/weekNumber units with year/month/day or ordinals"
-      );
-    }
-    if (containsGregorMD && containsOrdinal) {
-      throw new ConflictingSpecificationError("Can't mix ordinal dates with month/day");
-    }
-    let mixed;
-    if (settingWeekStuff) {
-      mixed = weekToGregorian(
-        { ...gregorianToWeek(this.c, minDaysInFirstWeek, startOfWeek), ...normalized },
-        minDaysInFirstWeek,
-        startOfWeek
-      );
-    } else if (!isUndefined(normalized.ordinal)) {
-      mixed = ordinalToGregorian({ ...gregorianToOrdinal(this.c), ...normalized });
-    } else {
-      mixed = { ...this.toObject(), ...normalized };
-      if (isUndefined(normalized.day)) {
-        mixed.day = Math.min(daysInMonth(mixed.year, mixed.month), mixed.day);
-      }
-    }
-    const [ts, o] = objToTS(mixed, this.o, this.zone);
-    return clone$1(this, { ts, o });
-  }
-  /**
-   * Add a period of time to this DateTime and return the resulting DateTime
-   *
-   * Adding hours, minutes, seconds, or milliseconds increases the timestamp by the right number of milliseconds. Adding days, months, or years shifts the calendar, accounting for DSTs and leap years along the way. Thus, `dt.plus({ hours: 24 })` may result in a different time than `dt.plus({ days: 1 })` if there's a DST shift in between.
-   * @param {Duration|Object|number} duration - The amount to add. Either a Luxon Duration, a number of milliseconds, the object argument to Duration.fromObject()
-   * @example DateTime.now().plus(123) //~> in 123 milliseconds
-   * @example DateTime.now().plus({ minutes: 15 }) //~> in 15 minutes
-   * @example DateTime.now().plus({ days: 1 }) //~> this time tomorrow
-   * @example DateTime.now().plus({ days: -1 }) //~> this time yesterday
-   * @example DateTime.now().plus({ hours: 3, minutes: 13 }) //~> in 3 hr, 13 min
-   * @example DateTime.now().plus(Duration.fromObject({ hours: 3, minutes: 13 })) //~> in 3 hr, 13 min
-   * @return {DateTime}
-   */
-  plus(duration2) {
-    if (!this.isValid) return this;
-    const dur = Duration.fromDurationLike(duration2);
-    return clone$1(this, adjustTime(this, dur));
-  }
-  /**
-   * Subtract a period of time to this DateTime and return the resulting DateTime
-   * See {@link DateTime#plus}
-   * @param {Duration|Object|number} duration - The amount to subtract. Either a Luxon Duration, a number of milliseconds, the object argument to Duration.fromObject()
-   @return {DateTime}
-   */
-  minus(duration2) {
-    if (!this.isValid) return this;
-    const dur = Duration.fromDurationLike(duration2).negate();
-    return clone$1(this, adjustTime(this, dur));
-  }
-  /**
-   * "Set" this DateTime to the beginning of a unit of time.
-   * @param {string} unit - The unit to go to the beginning of. Can be 'year', 'quarter', 'month', 'week', 'day', 'hour', 'minute', 'second', or 'millisecond'.
-   * @param {Object} opts - options
-   * @param {boolean} [opts.useLocaleWeeks=false] - If true, use weeks based on the locale, i.e. use the locale-dependent start of the week
-   * @example DateTime.local(2014, 3, 3).startOf('month').toISODate(); //=> '2014-03-01'
-   * @example DateTime.local(2014, 3, 3).startOf('year').toISODate(); //=> '2014-01-01'
-   * @example DateTime.local(2014, 3, 3).startOf('week').toISODate(); //=> '2014-03-03', weeks always start on Mondays
-   * @example DateTime.local(2014, 3, 3, 5, 30).startOf('day').toISOTime(); //=> '00:00.000-05:00'
-   * @example DateTime.local(2014, 3, 3, 5, 30).startOf('hour').toISOTime(); //=> '05:00:00.000-05:00'
-   * @return {DateTime}
-   */
-  startOf(unit, { useLocaleWeeks = false } = {}) {
-    if (!this.isValid) return this;
-    const o = {}, normalizedUnit = Duration.normalizeUnit(unit);
-    switch (normalizedUnit) {
-      case "years":
-        o.month = 1;
-      // falls through
-      case "quarters":
-      case "months":
-        o.day = 1;
-      // falls through
-      case "weeks":
-      case "days":
-        o.hour = 0;
-      // falls through
-      case "hours":
-        o.minute = 0;
-      // falls through
-      case "minutes":
-        o.second = 0;
-      // falls through
-      case "seconds":
-        o.millisecond = 0;
-        break;
-    }
-    if (normalizedUnit === "weeks") {
-      if (useLocaleWeeks) {
-        const startOfWeek = this.loc.getStartOfWeek();
-        const { weekday } = this;
-        if (weekday < startOfWeek) {
-          o.weekNumber = this.weekNumber - 1;
-        }
-        o.weekday = startOfWeek;
-      } else {
-        o.weekday = 1;
-      }
-    }
-    if (normalizedUnit === "quarters") {
-      const q = Math.ceil(this.month / 3);
-      o.month = (q - 1) * 3 + 1;
-    }
-    return this.set(o);
-  }
-  /**
-   * "Set" this DateTime to the end (meaning the last millisecond) of a unit of time
-   * @param {string} unit - The unit to go to the end of. Can be 'year', 'quarter', 'month', 'week', 'day', 'hour', 'minute', 'second', or 'millisecond'.
-   * @param {Object} opts - options
-   * @param {boolean} [opts.useLocaleWeeks=false] - If true, use weeks based on the locale, i.e. use the locale-dependent start of the week
-   * @example DateTime.local(2014, 3, 3).endOf('month').toISO(); //=> '2014-03-31T23:59:59.999-05:00'
-   * @example DateTime.local(2014, 3, 3).endOf('year').toISO(); //=> '2014-12-31T23:59:59.999-05:00'
-   * @example DateTime.local(2014, 3, 3).endOf('week').toISO(); // => '2014-03-09T23:59:59.999-05:00', weeks start on Mondays
-   * @example DateTime.local(2014, 3, 3, 5, 30).endOf('day').toISO(); //=> '2014-03-03T23:59:59.999-05:00'
-   * @example DateTime.local(2014, 3, 3, 5, 30).endOf('hour').toISO(); //=> '2014-03-03T05:59:59.999-05:00'
-   * @return {DateTime}
-   */
-  endOf(unit, opts) {
-    return this.isValid ? this.plus({ [unit]: 1 }).startOf(unit, opts).minus(1) : this;
-  }
-  // OUTPUT
-  /**
-   * Returns a string representation of this DateTime formatted according to the specified format string.
-   * **You may not want this.** See {@link DateTime#toLocaleString} for a more flexible formatting tool. For a table of tokens and their interpretations, see [here](https://moment.github.io/luxon/#/formatting?id=table-of-tokens).
-   * Defaults to en-US if no locale has been specified, regardless of the system's locale.
-   * @param {string} fmt - the format string
-   * @param {Object} opts - opts to override the configuration options on this DateTime
-   * @example DateTime.now().toFormat('yyyy LLL dd') //=> '2017 Apr 22'
-   * @example DateTime.now().setLocale('fr').toFormat('yyyy LLL dd') //=> '2017 avr. 22'
-   * @example DateTime.now().toFormat('yyyy LLL dd', { locale: "fr" }) //=> '2017 avr. 22'
-   * @example DateTime.now().toFormat("HH 'hours and' mm 'minutes'") //=> '20 hours and 55 minutes'
-   * @return {string}
-   */
-  toFormat(fmt, opts = {}) {
-    return this.isValid ? Formatter.create(this.loc.redefaultToEN(opts)).formatDateTimeFromString(this, fmt) : INVALID;
-  }
-  /**
-   * Returns a localized string representing this date. Accepts the same options as the Intl.DateTimeFormat constructor and any presets defined by Luxon, such as `DateTime.DATE_FULL` or `DateTime.TIME_SIMPLE`.
-   * The exact behavior of this method is browser-specific, but in general it will return an appropriate representation
-   * of the DateTime in the assigned locale.
-   * Defaults to the system's locale if no locale has been specified
-   * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat
-   * @param formatOpts {Object} - Intl.DateTimeFormat constructor options and configuration options
-   * @param {Object} opts - opts to override the configuration options on this DateTime
-   * @example DateTime.now().toLocaleString(); //=> 4/20/2017
-   * @example DateTime.now().setLocale('en-gb').toLocaleString(); //=> '20/04/2017'
-   * @example DateTime.now().toLocaleString(DateTime.DATE_FULL); //=> 'April 20, 2017'
-   * @example DateTime.now().toLocaleString(DateTime.DATE_FULL, { locale: 'fr' }); //=> '28 août 2022'
-   * @example DateTime.now().toLocaleString(DateTime.TIME_SIMPLE); //=> '11:32 AM'
-   * @example DateTime.now().toLocaleString(DateTime.DATETIME_SHORT); //=> '4/20/2017, 11:32 AM'
-   * @example DateTime.now().toLocaleString({ weekday: 'long', month: 'long', day: '2-digit' }); //=> 'Thursday, April 20'
-   * @example DateTime.now().toLocaleString({ weekday: 'short', month: 'short', day: '2-digit', hour: '2-digit', minute: '2-digit' }); //=> 'Thu, Apr 20, 11:27 AM'
-   * @example DateTime.now().toLocaleString({ hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }); //=> '11:32'
-   * @return {string}
-   */
-  toLocaleString(formatOpts = DATE_SHORT, opts = {}) {
-    return this.isValid ? Formatter.create(this.loc.clone(opts), formatOpts).formatDateTime(this) : INVALID;
-  }
-  /**
-   * Returns an array of format "parts", meaning individual tokens along with metadata. This is allows callers to post-process individual sections of the formatted output.
-   * Defaults to the system's locale if no locale has been specified
-   * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat/formatToParts
-   * @param opts {Object} - Intl.DateTimeFormat constructor options, same as `toLocaleString`.
-   * @example DateTime.now().toLocaleParts(); //=> [
-   *                                   //=>   { type: 'day', value: '25' },
-   *                                   //=>   { type: 'literal', value: '/' },
-   *                                   //=>   { type: 'month', value: '05' },
-   *                                   //=>   { type: 'literal', value: '/' },
-   *                                   //=>   { type: 'year', value: '1982' }
-   *                                   //=> ]
-   */
-  toLocaleParts(opts = {}) {
-    return this.isValid ? Formatter.create(this.loc.clone(opts), opts).formatDateTimeParts(this) : [];
-  }
-  /**
-   * Returns an ISO 8601-compliant string representation of this DateTime
-   * @param {Object} opts - options
-   * @param {boolean} [opts.suppressMilliseconds=false] - exclude milliseconds from the format if they're 0
-   * @param {boolean} [opts.suppressSeconds=false] - exclude seconds from the format if they're 0
-   * @param {boolean} [opts.includeOffset=true] - include the offset, such as 'Z' or '-04:00'
-   * @param {boolean} [opts.extendedZone=false] - add the time zone format extension
-   * @param {string} [opts.format='extended'] - choose between the basic and extended format
-   * @example DateTime.utc(1983, 5, 25).toISO() //=> '1982-05-25T00:00:00.000Z'
-   * @example DateTime.now().toISO() //=> '2017-04-22T20:47:05.335-04:00'
-   * @example DateTime.now().toISO({ includeOffset: false }) //=> '2017-04-22T20:47:05.335'
-   * @example DateTime.now().toISO({ format: 'basic' }) //=> '20170422T204705.335-0400'
-   * @return {string}
-   */
-  toISO({
-    format = "extended",
-    suppressSeconds = false,
-    suppressMilliseconds = false,
-    includeOffset = true,
-    extendedZone = false
-  } = {}) {
-    if (!this.isValid) {
-      return null;
-    }
-    const ext = format === "extended";
-    let c = toISODate(this, ext);
-    c += "T";
-    c += toISOTime(this, ext, suppressSeconds, suppressMilliseconds, includeOffset, extendedZone);
-    return c;
-  }
-  /**
-   * Returns an ISO 8601-compliant string representation of this DateTime's date component
-   * @param {Object} opts - options
-   * @param {string} [opts.format='extended'] - choose between the basic and extended format
-   * @example DateTime.utc(1982, 5, 25).toISODate() //=> '1982-05-25'
-   * @example DateTime.utc(1982, 5, 25).toISODate({ format: 'basic' }) //=> '19820525'
-   * @return {string}
-   */
-  toISODate({ format = "extended" } = {}) {
-    if (!this.isValid) {
-      return null;
-    }
-    return toISODate(this, format === "extended");
-  }
-  /**
-   * Returns an ISO 8601-compliant string representation of this DateTime's week date
-   * @example DateTime.utc(1982, 5, 25).toISOWeekDate() //=> '1982-W21-2'
-   * @return {string}
-   */
-  toISOWeekDate() {
-    return toTechFormat(this, "kkkk-'W'WW-c");
-  }
-  /**
-   * Returns an ISO 8601-compliant string representation of this DateTime's time component
-   * @param {Object} opts - options
-   * @param {boolean} [opts.suppressMilliseconds=false] - exclude milliseconds from the format if they're 0
-   * @param {boolean} [opts.suppressSeconds=false] - exclude seconds from the format if they're 0
-   * @param {boolean} [opts.includeOffset=true] - include the offset, such as 'Z' or '-04:00'
-   * @param {boolean} [opts.extendedZone=true] - add the time zone format extension
-   * @param {boolean} [opts.includePrefix=false] - include the `T` prefix
-   * @param {string} [opts.format='extended'] - choose between the basic and extended format
-   * @example DateTime.utc().set({ hour: 7, minute: 34 }).toISOTime() //=> '07:34:19.361Z'
-   * @example DateTime.utc().set({ hour: 7, minute: 34, seconds: 0, milliseconds: 0 }).toISOTime({ suppressSeconds: true }) //=> '07:34Z'
-   * @example DateTime.utc().set({ hour: 7, minute: 34 }).toISOTime({ format: 'basic' }) //=> '073419.361Z'
-   * @example DateTime.utc().set({ hour: 7, minute: 34 }).toISOTime({ includePrefix: true }) //=> 'T07:34:19.361Z'
-   * @return {string}
-   */
-  toISOTime({
-    suppressMilliseconds = false,
-    suppressSeconds = false,
-    includeOffset = true,
-    includePrefix = false,
-    extendedZone = false,
-    format = "extended"
-  } = {}) {
-    if (!this.isValid) {
-      return null;
-    }
-    let c = includePrefix ? "T" : "";
-    return c + toISOTime(
-      this,
-      format === "extended",
-      suppressSeconds,
-      suppressMilliseconds,
-      includeOffset,
-      extendedZone
-    );
-  }
-  /**
-   * Returns an RFC 2822-compatible string representation of this DateTime
-   * @example DateTime.utc(2014, 7, 13).toRFC2822() //=> 'Sun, 13 Jul 2014 00:00:00 +0000'
-   * @example DateTime.local(2014, 7, 13).toRFC2822() //=> 'Sun, 13 Jul 2014 00:00:00 -0400'
-   * @return {string}
-   */
-  toRFC2822() {
-    return toTechFormat(this, "EEE, dd LLL yyyy HH:mm:ss ZZZ", false);
-  }
-  /**
-   * Returns a string representation of this DateTime appropriate for use in HTTP headers. The output is always expressed in GMT.
-   * Specifically, the string conforms to RFC 1123.
-   * @see https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.3.1
-   * @example DateTime.utc(2014, 7, 13).toHTTP() //=> 'Sun, 13 Jul 2014 00:00:00 GMT'
-   * @example DateTime.utc(2014, 7, 13, 19).toHTTP() //=> 'Sun, 13 Jul 2014 19:00:00 GMT'
-   * @return {string}
-   */
-  toHTTP() {
-    return toTechFormat(this.toUTC(), "EEE, dd LLL yyyy HH:mm:ss 'GMT'");
-  }
-  /**
-   * Returns a string representation of this DateTime appropriate for use in SQL Date
-   * @example DateTime.utc(2014, 7, 13).toSQLDate() //=> '2014-07-13'
-   * @return {string}
-   */
-  toSQLDate() {
-    if (!this.isValid) {
-      return null;
-    }
-    return toISODate(this, true);
-  }
-  /**
-   * Returns a string representation of this DateTime appropriate for use in SQL Time
-   * @param {Object} opts - options
-   * @param {boolean} [opts.includeZone=false] - include the zone, such as 'America/New_York'. Overrides includeOffset.
-   * @param {boolean} [opts.includeOffset=true] - include the offset, such as 'Z' or '-04:00'
-   * @param {boolean} [opts.includeOffsetSpace=true] - include the space between the time and the offset, such as '05:15:16.345 -04:00'
-   * @example DateTime.utc().toSQL() //=> '05:15:16.345'
-   * @example DateTime.now().toSQL() //=> '05:15:16.345 -04:00'
-   * @example DateTime.now().toSQL({ includeOffset: false }) //=> '05:15:16.345'
-   * @example DateTime.now().toSQL({ includeZone: false }) //=> '05:15:16.345 America/New_York'
-   * @return {string}
-   */
-  toSQLTime({ includeOffset = true, includeZone = false, includeOffsetSpace = true } = {}) {
-    let fmt = "HH:mm:ss.SSS";
-    if (includeZone || includeOffset) {
-      if (includeOffsetSpace) {
-        fmt += " ";
-      }
-      if (includeZone) {
-        fmt += "z";
-      } else if (includeOffset) {
-        fmt += "ZZ";
-      }
-    }
-    return toTechFormat(this, fmt, true);
-  }
-  /**
-   * Returns a string representation of this DateTime appropriate for use in SQL DateTime
-   * @param {Object} opts - options
-   * @param {boolean} [opts.includeZone=false] - include the zone, such as 'America/New_York'. Overrides includeOffset.
-   * @param {boolean} [opts.includeOffset=true] - include the offset, such as 'Z' or '-04:00'
-   * @param {boolean} [opts.includeOffsetSpace=true] - include the space between the time and the offset, such as '05:15:16.345 -04:00'
-   * @example DateTime.utc(2014, 7, 13).toSQL() //=> '2014-07-13 00:00:00.000 Z'
-   * @example DateTime.local(2014, 7, 13).toSQL() //=> '2014-07-13 00:00:00.000 -04:00'
-   * @example DateTime.local(2014, 7, 13).toSQL({ includeOffset: false }) //=> '2014-07-13 00:00:00.000'
-   * @example DateTime.local(2014, 7, 13).toSQL({ includeZone: true }) //=> '2014-07-13 00:00:00.000 America/New_York'
-   * @return {string}
-   */
-  toSQL(opts = {}) {
-    if (!this.isValid) {
-      return null;
-    }
-    return `${this.toSQLDate()} ${this.toSQLTime(opts)}`;
-  }
-  /**
-   * Returns a string representation of this DateTime appropriate for debugging
-   * @return {string}
-   */
-  toString() {
-    return this.isValid ? this.toISO() : INVALID;
-  }
-  /**
-   * Returns a string representation of this DateTime appropriate for the REPL.
-   * @return {string}
-   */
-  [Symbol.for("nodejs.util.inspect.custom")]() {
-    if (this.isValid) {
-      return `DateTime { ts: ${this.toISO()}, zone: ${this.zone.name}, locale: ${this.locale} }`;
-    } else {
-      return `DateTime { Invalid, reason: ${this.invalidReason} }`;
-    }
-  }
-  /**
-   * Returns the epoch milliseconds of this DateTime. Alias of {@link DateTime#toMillis}
-   * @return {number}
-   */
-  valueOf() {
-    return this.toMillis();
-  }
-  /**
-   * Returns the epoch milliseconds of this DateTime.
-   * @return {number}
-   */
-  toMillis() {
-    return this.isValid ? this.ts : NaN;
-  }
-  /**
-   * Returns the epoch seconds of this DateTime.
-   * @return {number}
-   */
-  toSeconds() {
-    return this.isValid ? this.ts / 1e3 : NaN;
-  }
-  /**
-   * Returns the epoch seconds (as a whole number) of this DateTime.
-   * @return {number}
-   */
-  toUnixInteger() {
-    return this.isValid ? Math.floor(this.ts / 1e3) : NaN;
-  }
-  /**
-   * Returns an ISO 8601 representation of this DateTime appropriate for use in JSON.
-   * @return {string}
-   */
-  toJSON() {
-    return this.toISO();
-  }
-  /**
-   * Returns a BSON serializable equivalent to this DateTime.
-   * @return {Date}
-   */
-  toBSON() {
-    return this.toJSDate();
-  }
-  /**
-   * Returns a JavaScript object with this DateTime's year, month, day, and so on.
-   * @param opts - options for generating the object
-   * @param {boolean} [opts.includeConfig=false] - include configuration attributes in the output
-   * @example DateTime.now().toObject() //=> { year: 2017, month: 4, day: 22, hour: 20, minute: 49, second: 42, millisecond: 268 }
-   * @return {Object}
-   */
-  toObject(opts = {}) {
-    if (!this.isValid) return {};
-    const base2 = { ...this.c };
-    if (opts.includeConfig) {
-      base2.outputCalendar = this.outputCalendar;
-      base2.numberingSystem = this.loc.numberingSystem;
-      base2.locale = this.loc.locale;
-    }
-    return base2;
-  }
-  /**
-   * Returns a JavaScript Date equivalent to this DateTime.
-   * @return {Date}
-   */
-  toJSDate() {
-    return new Date(this.isValid ? this.ts : NaN);
-  }
-  // COMPARE
-  /**
-   * Return the difference between two DateTimes as a Duration.
-   * @param {DateTime} otherDateTime - the DateTime to compare this one to
-   * @param {string|string[]} [unit=['milliseconds']] - the unit or array of units (such as 'hours' or 'days') to include in the duration.
-   * @param {Object} opts - options that affect the creation of the Duration
-   * @param {string} [opts.conversionAccuracy='casual'] - the conversion system to use
-   * @example
-   * var i1 = DateTime.fromISO('1982-05-25T09:45'),
-   *     i2 = DateTime.fromISO('1983-10-14T10:30');
-   * i2.diff(i1).toObject() //=> { milliseconds: 43807500000 }
-   * i2.diff(i1, 'hours').toObject() //=> { hours: 12168.75 }
-   * i2.diff(i1, ['months', 'days']).toObject() //=> { months: 16, days: 19.03125 }
-   * i2.diff(i1, ['months', 'days', 'hours']).toObject() //=> { months: 16, days: 19, hours: 0.75 }
-   * @return {Duration}
-   */
-  diff(otherDateTime, unit = "milliseconds", opts = {}) {
-    if (!this.isValid || !otherDateTime.isValid) {
-      return Duration.invalid("created by diffing an invalid DateTime");
-    }
-    const durOpts = { locale: this.locale, numberingSystem: this.numberingSystem, ...opts };
-    const units = maybeArray(unit).map(Duration.normalizeUnit), otherIsLater = otherDateTime.valueOf() > this.valueOf(), earlier = otherIsLater ? this : otherDateTime, later = otherIsLater ? otherDateTime : this, diffed = diff(earlier, later, units, durOpts);
-    return otherIsLater ? diffed.negate() : diffed;
-  }
-  /**
-   * Return the difference between this DateTime and right now.
-   * See {@link DateTime#diff}
-   * @param {string|string[]} [unit=['milliseconds']] - the unit or units units (such as 'hours' or 'days') to include in the duration
-   * @param {Object} opts - options that affect the creation of the Duration
-   * @param {string} [opts.conversionAccuracy='casual'] - the conversion system to use
-   * @return {Duration}
-   */
-  diffNow(unit = "milliseconds", opts = {}) {
-    return this.diff(DateTime.now(), unit, opts);
-  }
-  /**
-   * Return an Interval spanning between this DateTime and another DateTime
-   * @param {DateTime} otherDateTime - the other end point of the Interval
-   * @return {Interval}
-   */
-  until(otherDateTime) {
-    return this.isValid ? Interval.fromDateTimes(this, otherDateTime) : this;
-  }
-  /**
-   * Return whether this DateTime is in the same unit of time as another DateTime.
-   * Higher-order units must also be identical for this function to return `true`.
-   * Note that time zones are **ignored** in this comparison, which compares the **local** calendar time. Use {@link DateTime#setZone} to convert one of the dates if needed.
-   * @param {DateTime} otherDateTime - the other DateTime
-   * @param {string} unit - the unit of time to check sameness on
-   * @param {Object} opts - options
-   * @param {boolean} [opts.useLocaleWeeks=false] - If true, use weeks based on the locale, i.e. use the locale-dependent start of the week; only the locale of this DateTime is used
-   * @example DateTime.now().hasSame(otherDT, 'day'); //~> true if otherDT is in the same current calendar day
-   * @return {boolean}
-   */
-  hasSame(otherDateTime, unit, opts) {
-    if (!this.isValid) return false;
-    const inputMs = otherDateTime.valueOf();
-    const adjustedToZone = this.setZone(otherDateTime.zone, { keepLocalTime: true });
-    return adjustedToZone.startOf(unit, opts) <= inputMs && inputMs <= adjustedToZone.endOf(unit, opts);
-  }
-  /**
-   * Equality check
-   * Two DateTimes are equal if and only if they represent the same millisecond, have the same zone and location, and are both valid.
-   * To compare just the millisecond values, use `+dt1 === +dt2`.
-   * @param {DateTime} other - the other DateTime
-   * @return {boolean}
-   */
-  equals(other) {
-    return this.isValid && other.isValid && this.valueOf() === other.valueOf() && this.zone.equals(other.zone) && this.loc.equals(other.loc);
-  }
-  /**
-   * Returns a string representation of a this time relative to now, such as "in two days". Can only internationalize if your
-   * platform supports Intl.RelativeTimeFormat. Rounds down by default.
-   * @param {Object} options - options that affect the output
-   * @param {DateTime} [options.base=DateTime.now()] - the DateTime to use as the basis to which this time is compared. Defaults to now.
-   * @param {string} [options.style="long"] - the style of units, must be "long", "short", or "narrow"
-   * @param {string|string[]} options.unit - use a specific unit or array of units; if omitted, or an array, the method will pick the best unit. Use an array or one of "years", "quarters", "months", "weeks", "days", "hours", "minutes", or "seconds"
-   * @param {boolean} [options.round=true] - whether to round the numbers in the output.
-   * @param {number} [options.padding=0] - padding in milliseconds. This allows you to round up the result if it fits inside the threshold. Don't use in combination with {round: false} because the decimal output will include the padding.
-   * @param {string} options.locale - override the locale of this DateTime
-   * @param {string} options.numberingSystem - override the numberingSystem of this DateTime. The Intl system may choose not to honor this
-   * @example DateTime.now().plus({ days: 1 }).toRelative() //=> "in 1 day"
-   * @example DateTime.now().setLocale("es").toRelative({ days: 1 }) //=> "dentro de 1 día"
-   * @example DateTime.now().plus({ days: 1 }).toRelative({ locale: "fr" }) //=> "dans 23 heures"
-   * @example DateTime.now().minus({ days: 2 }).toRelative() //=> "2 days ago"
-   * @example DateTime.now().minus({ days: 2 }).toRelative({ unit: "hours" }) //=> "48 hours ago"
-   * @example DateTime.now().minus({ hours: 36 }).toRelative({ round: false }) //=> "1.5 days ago"
-   */
-  toRelative(options = {}) {
-    if (!this.isValid) return null;
-    const base2 = options.base || DateTime.fromObject({}, { zone: this.zone }), padding2 = options.padding ? this < base2 ? -options.padding : options.padding : 0;
-    let units = ["years", "months", "days", "hours", "minutes", "seconds"];
-    let unit = options.unit;
-    if (Array.isArray(options.unit)) {
-      units = options.unit;
-      unit = void 0;
-    }
-    return diffRelative(base2, this.plus(padding2), {
-      ...options,
-      numeric: "always",
-      units,
-      unit
-    });
-  }
-  /**
-   * Returns a string representation of this date relative to today, such as "yesterday" or "next month".
-   * Only internationalizes on platforms that supports Intl.RelativeTimeFormat.
-   * @param {Object} options - options that affect the output
-   * @param {DateTime} [options.base=DateTime.now()] - the DateTime to use as the basis to which this time is compared. Defaults to now.
-   * @param {string} options.locale - override the locale of this DateTime
-   * @param {string} options.unit - use a specific unit; if omitted, the method will pick the unit. Use one of "years", "quarters", "months", "weeks", or "days"
-   * @param {string} options.numberingSystem - override the numberingSystem of this DateTime. The Intl system may choose not to honor this
-   * @example DateTime.now().plus({ days: 1 }).toRelativeCalendar() //=> "tomorrow"
-   * @example DateTime.now().setLocale("es").plus({ days: 1 }).toRelative() //=> ""mañana"
-   * @example DateTime.now().plus({ days: 1 }).toRelativeCalendar({ locale: "fr" }) //=> "demain"
-   * @example DateTime.now().minus({ days: 2 }).toRelativeCalendar() //=> "2 days ago"
-   */
-  toRelativeCalendar(options = {}) {
-    if (!this.isValid) return null;
-    return diffRelative(options.base || DateTime.fromObject({}, { zone: this.zone }), this, {
-      ...options,
-      numeric: "auto",
-      units: ["years", "months", "days"],
-      calendary: true
-    });
-  }
-  /**
-   * Return the min of several date times
-   * @param {...DateTime} dateTimes - the DateTimes from which to choose the minimum
-   * @return {DateTime} the min DateTime, or undefined if called with no argument
-   */
-  static min(...dateTimes) {
-    if (!dateTimes.every(DateTime.isDateTime)) {
-      throw new InvalidArgumentError("min requires all arguments be DateTimes");
-    }
-    return bestBy(dateTimes, (i) => i.valueOf(), Math.min);
-  }
-  /**
-   * Return the max of several date times
-   * @param {...DateTime} dateTimes - the DateTimes from which to choose the maximum
-   * @return {DateTime} the max DateTime, or undefined if called with no argument
-   */
-  static max(...dateTimes) {
-    if (!dateTimes.every(DateTime.isDateTime)) {
-      throw new InvalidArgumentError("max requires all arguments be DateTimes");
-    }
-    return bestBy(dateTimes, (i) => i.valueOf(), Math.max);
-  }
-  // MISC
-  /**
-   * Explain how a string would be parsed by fromFormat()
-   * @param {string} text - the string to parse
-   * @param {string} fmt - the format the string is expected to be in (see description)
-   * @param {Object} options - options taken by fromFormat()
-   * @return {Object}
-   */
-  static fromFormatExplain(text2, fmt, options = {}) {
-    const { locale = null, numberingSystem = null } = options, localeToUse = Locale.fromOpts({
-      locale,
-      numberingSystem,
-      defaultToEN: true
-    });
-    return explainFromTokens(localeToUse, text2, fmt);
-  }
-  /**
-   * @deprecated use fromFormatExplain instead
-   */
-  static fromStringExplain(text2, fmt, options = {}) {
-    return DateTime.fromFormatExplain(text2, fmt, options);
-  }
-  /**
-   * Build a parser for `fmt` using the given locale. This parser can be passed
-   * to {@link DateTime.fromFormatParser} to a parse a date in this format. This
-   * can be used to optimize cases where many dates need to be parsed in a
-   * specific format.
-   *
-   * @param {String} fmt - the format the string is expected to be in (see
-   * description)
-   * @param {Object} options - options used to set locale and numberingSystem
-   * for parser
-   * @returns {TokenParser} - opaque object to be used
-   */
-  static buildFormatParser(fmt, options = {}) {
-    const { locale = null, numberingSystem = null } = options, localeToUse = Locale.fromOpts({
-      locale,
-      numberingSystem,
-      defaultToEN: true
-    });
-    return new TokenParser(localeToUse, fmt);
-  }
-  /**
-   * Create a DateTime from an input string and format parser.
-   *
-   * The format parser must have been created with the same locale as this call.
-   *
-   * @param {String} text - the string to parse
-   * @param {TokenParser} formatParser - parser from {@link DateTime.buildFormatParser}
-   * @param {Object} opts - options taken by fromFormat()
-   * @returns {DateTime}
-   */
-  static fromFormatParser(text2, formatParser, opts = {}) {
-    if (isUndefined(text2) || isUndefined(formatParser)) {
-      throw new InvalidArgumentError(
-        "fromFormatParser requires an input string and a format parser"
-      );
-    }
-    const { locale = null, numberingSystem = null } = opts, localeToUse = Locale.fromOpts({
-      locale,
-      numberingSystem,
-      defaultToEN: true
-    });
-    if (!localeToUse.equals(formatParser.locale)) {
-      throw new InvalidArgumentError(
-        `fromFormatParser called with a locale of ${localeToUse}, but the format parser was created for ${formatParser.locale}`
-      );
-    }
-    const { result, zone, specificOffset, invalidReason } = formatParser.explainFromTokens(text2);
-    if (invalidReason) {
-      return DateTime.invalid(invalidReason);
-    } else {
-      return parseDataToDateTime(
-        result,
-        zone,
-        opts,
-        `format ${formatParser.format}`,
-        text2,
-        specificOffset
-      );
-    }
-  }
-  // FORMAT PRESETS
-  /**
-   * {@link DateTime#toLocaleString} format like 10/14/1983
-   * @type {Object}
-   */
-  static get DATE_SHORT() {
-    return DATE_SHORT;
-  }
-  /**
-   * {@link DateTime#toLocaleString} format like 'Oct 14, 1983'
-   * @type {Object}
-   */
-  static get DATE_MED() {
-    return DATE_MED;
-  }
-  /**
-   * {@link DateTime#toLocaleString} format like 'Fri, Oct 14, 1983'
-   * @type {Object}
-   */
-  static get DATE_MED_WITH_WEEKDAY() {
-    return DATE_MED_WITH_WEEKDAY;
-  }
-  /**
-   * {@link DateTime#toLocaleString} format like 'October 14, 1983'
-   * @type {Object}
-   */
-  static get DATE_FULL() {
-    return DATE_FULL;
-  }
-  /**
-   * {@link DateTime#toLocaleString} format like 'Tuesday, October 14, 1983'
-   * @type {Object}
-   */
-  static get DATE_HUGE() {
-    return DATE_HUGE;
-  }
-  /**
-   * {@link DateTime#toLocaleString} format like '09:30 AM'. Only 12-hour if the locale is.
-   * @type {Object}
-   */
-  static get TIME_SIMPLE() {
-    return TIME_SIMPLE;
-  }
-  /**
-   * {@link DateTime#toLocaleString} format like '09:30:23 AM'. Only 12-hour if the locale is.
-   * @type {Object}
-   */
-  static get TIME_WITH_SECONDS() {
-    return TIME_WITH_SECONDS;
-  }
-  /**
-   * {@link DateTime#toLocaleString} format like '09:30:23 AM EDT'. Only 12-hour if the locale is.
-   * @type {Object}
-   */
-  static get TIME_WITH_SHORT_OFFSET() {
-    return TIME_WITH_SHORT_OFFSET;
-  }
-  /**
-   * {@link DateTime#toLocaleString} format like '09:30:23 AM Eastern Daylight Time'. Only 12-hour if the locale is.
-   * @type {Object}
-   */
-  static get TIME_WITH_LONG_OFFSET() {
-    return TIME_WITH_LONG_OFFSET;
-  }
-  /**
-   * {@link DateTime#toLocaleString} format like '09:30', always 24-hour.
-   * @type {Object}
-   */
-  static get TIME_24_SIMPLE() {
-    return TIME_24_SIMPLE;
-  }
-  /**
-   * {@link DateTime#toLocaleString} format like '09:30:23', always 24-hour.
-   * @type {Object}
-   */
-  static get TIME_24_WITH_SECONDS() {
-    return TIME_24_WITH_SECONDS;
-  }
-  /**
-   * {@link DateTime#toLocaleString} format like '09:30:23 EDT', always 24-hour.
-   * @type {Object}
-   */
-  static get TIME_24_WITH_SHORT_OFFSET() {
-    return TIME_24_WITH_SHORT_OFFSET;
-  }
-  /**
-   * {@link DateTime#toLocaleString} format like '09:30:23 Eastern Daylight Time', always 24-hour.
-   * @type {Object}
-   */
-  static get TIME_24_WITH_LONG_OFFSET() {
-    return TIME_24_WITH_LONG_OFFSET;
-  }
-  /**
-   * {@link DateTime#toLocaleString} format like '10/14/1983, 9:30 AM'. Only 12-hour if the locale is.
-   * @type {Object}
-   */
-  static get DATETIME_SHORT() {
-    return DATETIME_SHORT;
-  }
-  /**
-   * {@link DateTime#toLocaleString} format like '10/14/1983, 9:30:33 AM'. Only 12-hour if the locale is.
-   * @type {Object}
-   */
-  static get DATETIME_SHORT_WITH_SECONDS() {
-    return DATETIME_SHORT_WITH_SECONDS;
-  }
-  /**
-   * {@link DateTime#toLocaleString} format like 'Oct 14, 1983, 9:30 AM'. Only 12-hour if the locale is.
-   * @type {Object}
-   */
-  static get DATETIME_MED() {
-    return DATETIME_MED;
-  }
-  /**
-   * {@link DateTime#toLocaleString} format like 'Oct 14, 1983, 9:30:33 AM'. Only 12-hour if the locale is.
-   * @type {Object}
-   */
-  static get DATETIME_MED_WITH_SECONDS() {
-    return DATETIME_MED_WITH_SECONDS;
-  }
-  /**
-   * {@link DateTime#toLocaleString} format like 'Fri, 14 Oct 1983, 9:30 AM'. Only 12-hour if the locale is.
-   * @type {Object}
-   */
-  static get DATETIME_MED_WITH_WEEKDAY() {
-    return DATETIME_MED_WITH_WEEKDAY;
-  }
-  /**
-   * {@link DateTime#toLocaleString} format like 'October 14, 1983, 9:30 AM EDT'. Only 12-hour if the locale is.
-   * @type {Object}
-   */
-  static get DATETIME_FULL() {
-    return DATETIME_FULL;
-  }
-  /**
-   * {@link DateTime#toLocaleString} format like 'October 14, 1983, 9:30:33 AM EDT'. Only 12-hour if the locale is.
-   * @type {Object}
-   */
-  static get DATETIME_FULL_WITH_SECONDS() {
-    return DATETIME_FULL_WITH_SECONDS;
-  }
-  /**
-   * {@link DateTime#toLocaleString} format like 'Friday, October 14, 1983, 9:30 AM Eastern Daylight Time'. Only 12-hour if the locale is.
-   * @type {Object}
-   */
-  static get DATETIME_HUGE() {
-    return DATETIME_HUGE;
-  }
-  /**
-   * {@link DateTime#toLocaleString} format like 'Friday, October 14, 1983, 9:30:33 AM Eastern Daylight Time'. Only 12-hour if the locale is.
-   * @type {Object}
-   */
-  static get DATETIME_HUGE_WITH_SECONDS() {
-    return DATETIME_HUGE_WITH_SECONDS;
-  }
-}
-function friendlyDateTime(dateTimeish) {
-  if (DateTime.isDateTime(dateTimeish)) {
-    return dateTimeish;
-  } else if (dateTimeish && dateTimeish.valueOf && isNumber(dateTimeish.valueOf())) {
-    return DateTime.fromJSDate(dateTimeish);
-  } else if (dateTimeish && typeof dateTimeish === "object") {
-    return DateTime.fromObject(dateTimeish);
-  } else {
-    throw new InvalidArgumentError(
-      `Unknown datetime argument: ${dateTimeish}, of type ${typeof dateTimeish}`
-    );
-  }
-}
 const origins$2 = ["https://localhost", "http://127.0.0.1:8080/"];
 const endpoints$2 = { "backend": "https://localhost" };
 const mcp$2 = { "projectName": "user-surfy-dev" };
@@ -53532,11 +47154,11 @@ function require_getRawTag() {
   hasRequired_getRawTag = 1;
   var Symbol2 = require_Symbol();
   var objectProto = Object.prototype;
-  var hasOwnProperty2 = objectProto.hasOwnProperty;
+  var hasOwnProperty = objectProto.hasOwnProperty;
   var nativeObjectToString = objectProto.toString;
   var symToStringTag = Symbol2 ? Symbol2.toStringTag : void 0;
   function getRawTag(value) {
-    var isOwn = hasOwnProperty2.call(value, symToStringTag), tag = value[symToStringTag];
+    var isOwn = hasOwnProperty.call(value, symToStringTag), tag = value[symToStringTag];
     try {
       value[symToStringTag] = void 0;
       var unmasked = true;
@@ -53673,9 +47295,9 @@ function require_baseIsNative() {
   var reIsHostCtor = /^\[object .+?Constructor\]$/;
   var funcProto = Function.prototype, objectProto = Object.prototype;
   var funcToString = funcProto.toString;
-  var hasOwnProperty2 = objectProto.hasOwnProperty;
+  var hasOwnProperty = objectProto.hasOwnProperty;
   var reIsNative = RegExp(
-    "^" + funcToString.call(hasOwnProperty2).replace(reRegExpChar, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$"
+    "^" + funcToString.call(hasOwnProperty).replace(reRegExpChar, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$"
   );
   function baseIsNative(value) {
     if (!isObject(value) || isMasked(value)) {
@@ -53755,14 +47377,14 @@ function require_hashGet() {
   var nativeCreate = require_nativeCreate();
   var HASH_UNDEFINED = "__lodash_hash_undefined__";
   var objectProto = Object.prototype;
-  var hasOwnProperty2 = objectProto.hasOwnProperty;
+  var hasOwnProperty = objectProto.hasOwnProperty;
   function hashGet(key) {
-    var data2 = this.__data__;
+    var data = this.__data__;
     if (nativeCreate) {
-      var result = data2[key];
+      var result = data[key];
       return result === HASH_UNDEFINED ? void 0 : result;
     }
-    return hasOwnProperty2.call(data2, key) ? data2[key] : void 0;
+    return hasOwnProperty.call(data, key) ? data[key] : void 0;
   }
   _hashGet = hashGet;
   return _hashGet;
@@ -53774,10 +47396,10 @@ function require_hashHas() {
   hasRequired_hashHas = 1;
   var nativeCreate = require_nativeCreate();
   var objectProto = Object.prototype;
-  var hasOwnProperty2 = objectProto.hasOwnProperty;
+  var hasOwnProperty = objectProto.hasOwnProperty;
   function hashHas(key) {
-    var data2 = this.__data__;
-    return nativeCreate ? data2[key] !== void 0 : hasOwnProperty2.call(data2, key);
+    var data = this.__data__;
+    return nativeCreate ? data[key] !== void 0 : hasOwnProperty.call(data, key);
   }
   _hashHas = hashHas;
   return _hashHas;
@@ -53790,9 +47412,9 @@ function require_hashSet() {
   var nativeCreate = require_nativeCreate();
   var HASH_UNDEFINED = "__lodash_hash_undefined__";
   function hashSet(key, value) {
-    var data2 = this.__data__;
+    var data = this.__data__;
     this.size += this.has(key) ? 0 : 1;
-    data2[key] = nativeCreate && value === void 0 ? HASH_UNDEFINED : value;
+    data[key] = nativeCreate && value === void 0 ? HASH_UNDEFINED : value;
     return this;
   }
   _hashSet = hashSet;
@@ -53805,10 +47427,10 @@ function require_Hash() {
   hasRequired_Hash = 1;
   var hashClear = require_hashClear(), hashDelete = require_hashDelete(), hashGet = require_hashGet(), hashHas = require_hashHas(), hashSet = require_hashSet();
   function Hash(entries) {
-    var index2 = -1, length2 = entries == null ? 0 : entries.length;
+    var index = -1, length2 = entries == null ? 0 : entries.length;
     this.clear();
-    while (++index2 < length2) {
-      var entry = entries[index2];
+    while (++index < length2) {
+      var entry = entries[index];
       this.set(entry[0], entry[1]);
     }
   }
@@ -53837,10 +47459,10 @@ var hasRequiredEq;
 function requireEq() {
   if (hasRequiredEq) return eq_1;
   hasRequiredEq = 1;
-  function eq2(value, other) {
+  function eq(value, other) {
     return value === other || value !== value && other !== other;
   }
-  eq_1 = eq2;
+  eq_1 = eq;
   return eq_1;
 }
 var _assocIndexOf;
@@ -53848,11 +47470,11 @@ var hasRequired_assocIndexOf;
 function require_assocIndexOf() {
   if (hasRequired_assocIndexOf) return _assocIndexOf;
   hasRequired_assocIndexOf = 1;
-  var eq2 = requireEq();
+  var eq = requireEq();
   function assocIndexOf(array, key) {
     var length2 = array.length;
     while (length2--) {
-      if (eq2(array[length2][0], key)) {
+      if (eq(array[length2][0], key)) {
         return length2;
       }
     }
@@ -53870,15 +47492,15 @@ function require_listCacheDelete() {
   var arrayProto = Array.prototype;
   var splice = arrayProto.splice;
   function listCacheDelete(key) {
-    var data2 = this.__data__, index2 = assocIndexOf(data2, key);
-    if (index2 < 0) {
+    var data = this.__data__, index = assocIndexOf(data, key);
+    if (index < 0) {
       return false;
     }
-    var lastIndex = data2.length - 1;
-    if (index2 == lastIndex) {
-      data2.pop();
+    var lastIndex = data.length - 1;
+    if (index == lastIndex) {
+      data.pop();
     } else {
-      splice.call(data2, index2, 1);
+      splice.call(data, index, 1);
     }
     --this.size;
     return true;
@@ -53893,8 +47515,8 @@ function require_listCacheGet() {
   hasRequired_listCacheGet = 1;
   var assocIndexOf = require_assocIndexOf();
   function listCacheGet(key) {
-    var data2 = this.__data__, index2 = assocIndexOf(data2, key);
-    return index2 < 0 ? void 0 : data2[index2][1];
+    var data = this.__data__, index = assocIndexOf(data, key);
+    return index < 0 ? void 0 : data[index][1];
   }
   _listCacheGet = listCacheGet;
   return _listCacheGet;
@@ -53918,12 +47540,12 @@ function require_listCacheSet() {
   hasRequired_listCacheSet = 1;
   var assocIndexOf = require_assocIndexOf();
   function listCacheSet(key, value) {
-    var data2 = this.__data__, index2 = assocIndexOf(data2, key);
-    if (index2 < 0) {
+    var data = this.__data__, index = assocIndexOf(data, key);
+    if (index < 0) {
       ++this.size;
-      data2.push([key, value]);
+      data.push([key, value]);
     } else {
-      data2[index2][1] = value;
+      data[index][1] = value;
     }
     return this;
   }
@@ -53937,10 +47559,10 @@ function require_ListCache() {
   hasRequired_ListCache = 1;
   var listCacheClear = require_listCacheClear(), listCacheDelete = require_listCacheDelete(), listCacheGet = require_listCacheGet(), listCacheHas = require_listCacheHas(), listCacheSet = require_listCacheSet();
   function ListCache(entries) {
-    var index2 = -1, length2 = entries == null ? 0 : entries.length;
+    var index = -1, length2 = entries == null ? 0 : entries.length;
     this.clear();
-    while (++index2 < length2) {
-      var entry = entries[index2];
+    while (++index < length2) {
+      var entry = entries[index];
       this.set(entry[0], entry[1]);
     }
   }
@@ -53997,9 +47619,9 @@ function require_getMapData() {
   if (hasRequired_getMapData) return _getMapData;
   hasRequired_getMapData = 1;
   var isKeyable = require_isKeyable();
-  function getMapData(map2, key) {
-    var data2 = map2.__data__;
-    return isKeyable(key) ? data2[typeof key == "string" ? "string" : "hash"] : data2.map;
+  function getMapData(map, key) {
+    var data = map.__data__;
+    return isKeyable(key) ? data[typeof key == "string" ? "string" : "hash"] : data.map;
   }
   _getMapData = getMapData;
   return _getMapData;
@@ -54049,9 +47671,9 @@ function require_mapCacheSet() {
   hasRequired_mapCacheSet = 1;
   var getMapData = require_getMapData();
   function mapCacheSet(key, value) {
-    var data2 = getMapData(this, key), size = data2.size;
-    data2.set(key, value);
-    this.size += data2.size == size ? 0 : 1;
+    var data = getMapData(this, key), size = data.size;
+    data.set(key, value);
+    this.size += data.size == size ? 0 : 1;
     return this;
   }
   _mapCacheSet = mapCacheSet;
@@ -54064,10 +47686,10 @@ function require_MapCache() {
   hasRequired_MapCache = 1;
   var mapCacheClear = require_mapCacheClear(), mapCacheDelete = require_mapCacheDelete(), mapCacheGet = require_mapCacheGet(), mapCacheHas = require_mapCacheHas(), mapCacheSet = require_mapCacheSet();
   function MapCache(entries) {
-    var index2 = -1, length2 = entries == null ? 0 : entries.length;
+    var index = -1, length2 = entries == null ? 0 : entries.length;
     this.clear();
-    while (++index2 < length2) {
-      var entry = entries[index2];
+    while (++index < length2) {
+      var entry = entries[index];
       this.set(entry[0], entry[1]);
     }
   }
@@ -54110,10 +47732,10 @@ function require_SetCache() {
   hasRequired_SetCache = 1;
   var MapCache = require_MapCache(), setCacheAdd = require_setCacheAdd(), setCacheHas = require_setCacheHas();
   function SetCache(values2) {
-    var index2 = -1, length2 = values2 == null ? 0 : values2.length;
+    var index = -1, length2 = values2 == null ? 0 : values2.length;
     this.__data__ = new MapCache();
-    while (++index2 < length2) {
-      this.add(values2[index2]);
+    while (++index < length2) {
+      this.add(values2[index]);
     }
   }
   SetCache.prototype.add = SetCache.prototype.push = setCacheAdd;
@@ -54127,10 +47749,10 @@ function require_baseFindIndex() {
   if (hasRequired_baseFindIndex) return _baseFindIndex;
   hasRequired_baseFindIndex = 1;
   function baseFindIndex(array, predicate, fromIndex, fromRight) {
-    var length2 = array.length, index2 = fromIndex + (fromRight ? 1 : -1);
-    while (fromRight ? index2-- : ++index2 < length2) {
-      if (predicate(array[index2], index2, array)) {
-        return index2;
+    var length2 = array.length, index = fromIndex + (fromRight ? 1 : -1);
+    while (fromRight ? index-- : ++index < length2) {
+      if (predicate(array[index], index, array)) {
+        return index;
       }
     }
     return -1;
@@ -54155,10 +47777,10 @@ function require_strictIndexOf() {
   if (hasRequired_strictIndexOf) return _strictIndexOf;
   hasRequired_strictIndexOf = 1;
   function strictIndexOf(array, value, fromIndex) {
-    var index2 = fromIndex - 1, length2 = array.length;
-    while (++index2 < length2) {
-      if (array[index2] === value) {
-        return index2;
+    var index = fromIndex - 1, length2 = array.length;
+    while (++index < length2) {
+      if (array[index] === value) {
+        return index;
       }
     }
     return -1;
@@ -54197,9 +47819,9 @@ function require_arrayIncludesWith() {
   if (hasRequired_arrayIncludesWith) return _arrayIncludesWith;
   hasRequired_arrayIncludesWith = 1;
   function arrayIncludesWith(array, value, comparator) {
-    var index2 = -1, length2 = array == null ? 0 : array.length;
-    while (++index2 < length2) {
-      if (comparator(value, array[index2])) {
+    var index = -1, length2 = array == null ? 0 : array.length;
+    while (++index < length2) {
+      if (comparator(value, array[index])) {
         return true;
       }
     }
@@ -54245,9 +47867,9 @@ function require_setToArray() {
   if (hasRequired_setToArray) return _setToArray;
   hasRequired_setToArray = 1;
   function setToArray(set) {
-    var index2 = -1, result = Array(set.size);
+    var index = -1, result = Array(set.size);
     set.forEach(function(value) {
-      result[++index2] = value;
+      result[++index] = value;
     });
     return result;
   }
@@ -54275,7 +47897,7 @@ function require_baseUniq() {
   var SetCache = require_SetCache(), arrayIncludes = require_arrayIncludes(), arrayIncludesWith = require_arrayIncludesWith(), cacheHas = require_cacheHas(), createSet = require_createSet(), setToArray = require_setToArray();
   var LARGE_ARRAY_SIZE = 200;
   function baseUniq(array, iteratee, comparator) {
-    var index2 = -1, includes = arrayIncludes, length2 = array.length, isCommon = true, result = [], seen = result;
+    var index = -1, includes = arrayIncludes, length2 = array.length, isCommon = true, result = [], seen = result;
     if (comparator) {
       isCommon = false;
       includes = arrayIncludesWith;
@@ -54291,8 +47913,8 @@ function require_baseUniq() {
       seen = iteratee ? [] : result;
     }
     outer:
-      while (++index2 < length2) {
-        var value = array[index2], computed = iteratee ? iteratee(value) : value;
+      while (++index < length2) {
+        var value = array[index], computed = iteratee ? iteratee(value) : value;
         value = comparator || value !== 0 ? value : 0;
         if (isCommon && computed === computed) {
           var seenIndex = seen.length;
@@ -54323,14 +47945,13 @@ function requireUniq() {
   if (hasRequiredUniq) return uniq_1;
   hasRequiredUniq = 1;
   var baseUniq = require_baseUniq();
-  function uniq2(array) {
+  function uniq(array) {
     return array && array.length ? baseUniq(array) : [];
   }
-  uniq_1 = uniq2;
+  uniq_1 = uniq;
   return uniq_1;
 }
-var uniqExports = requireUniq();
-const uniq = /* @__PURE__ */ getDefaultExportFromCjs(uniqExports);
+requireUniq();
 var _stackClear;
 var hasRequired_stackClear;
 function require_stackClear() {
@@ -54350,8 +47971,8 @@ function require_stackDelete() {
   if (hasRequired_stackDelete) return _stackDelete;
   hasRequired_stackDelete = 1;
   function stackDelete(key) {
-    var data2 = this.__data__, result = data2["delete"](key);
-    this.size = data2.size;
+    var data = this.__data__, result = data["delete"](key);
+    this.size = data.size;
     return result;
   }
   _stackDelete = stackDelete;
@@ -54387,18 +48008,18 @@ function require_stackSet() {
   var ListCache = require_ListCache(), Map2 = require_Map(), MapCache = require_MapCache();
   var LARGE_ARRAY_SIZE = 200;
   function stackSet(key, value) {
-    var data2 = this.__data__;
-    if (data2 instanceof ListCache) {
-      var pairs = data2.__data__;
+    var data = this.__data__;
+    if (data instanceof ListCache) {
+      var pairs = data.__data__;
       if (!Map2 || pairs.length < LARGE_ARRAY_SIZE - 1) {
         pairs.push([key, value]);
-        this.size = ++data2.size;
+        this.size = ++data.size;
         return this;
       }
-      data2 = this.__data__ = new MapCache(pairs);
+      data = this.__data__ = new MapCache(pairs);
     }
-    data2.set(key, value);
-    this.size = data2.size;
+    data.set(key, value);
+    this.size = data.size;
     return this;
   }
   _stackSet = stackSet;
@@ -54411,8 +48032,8 @@ function require_Stack() {
   hasRequired_Stack = 1;
   var ListCache = require_ListCache(), stackClear = require_stackClear(), stackDelete = require_stackDelete(), stackGet = require_stackGet(), stackHas = require_stackHas(), stackSet = require_stackSet();
   function Stack(entries) {
-    var data2 = this.__data__ = new ListCache(entries);
-    this.size = data2.size;
+    var data = this.__data__ = new ListCache(entries);
+    this.size = data.size;
   }
   Stack.prototype.clear = stackClear;
   Stack.prototype["delete"] = stackDelete;
@@ -54428,9 +48049,9 @@ function require_arraySome() {
   if (hasRequired_arraySome) return _arraySome;
   hasRequired_arraySome = 1;
   function arraySome(array, predicate) {
-    var index2 = -1, length2 = array == null ? 0 : array.length;
-    while (++index2 < length2) {
-      if (predicate(array[index2], index2, array)) {
+    var index = -1, length2 = array == null ? 0 : array.length;
+    while (++index < length2) {
+      if (predicate(array[index], index, array)) {
         return true;
       }
     }
@@ -54456,13 +48077,13 @@ function require_equalArrays() {
     if (arrStacked && othStacked) {
       return arrStacked == other && othStacked == array;
     }
-    var index2 = -1, result = true, seen = bitmask & COMPARE_UNORDERED_FLAG ? new SetCache() : void 0;
+    var index = -1, result = true, seen = bitmask & COMPARE_UNORDERED_FLAG ? new SetCache() : void 0;
     stack.set(array, other);
     stack.set(other, array);
-    while (++index2 < arrLength) {
-      var arrValue = array[index2], othValue = other[index2];
+    while (++index < arrLength) {
+      var arrValue = array[index], othValue = other[index];
       if (customizer) {
-        var compared = isPartial ? customizer(othValue, arrValue, index2, other, array, stack) : customizer(arrValue, othValue, index2, array, other, stack);
+        var compared = isPartial ? customizer(othValue, arrValue, index, other, array, stack) : customizer(arrValue, othValue, index, array, other, stack);
       }
       if (compared !== void 0) {
         if (compared) {
@@ -54507,10 +48128,10 @@ var hasRequired_mapToArray;
 function require_mapToArray() {
   if (hasRequired_mapToArray) return _mapToArray;
   hasRequired_mapToArray = 1;
-  function mapToArray(map2) {
-    var index2 = -1, result = Array(map2.size);
-    map2.forEach(function(value, key) {
-      result[++index2] = [key, value];
+  function mapToArray(map) {
+    var index = -1, result = Array(map.size);
+    map.forEach(function(value, key) {
+      result[++index] = [key, value];
     });
     return result;
   }
@@ -54522,7 +48143,7 @@ var hasRequired_equalByTag;
 function require_equalByTag() {
   if (hasRequired_equalByTag) return _equalByTag;
   hasRequired_equalByTag = 1;
-  var Symbol2 = require_Symbol(), Uint8Array2 = require_Uint8Array(), eq2 = requireEq(), equalArrays = require_equalArrays(), mapToArray = require_mapToArray(), setToArray = require_setToArray();
+  var Symbol2 = require_Symbol(), Uint8Array2 = require_Uint8Array(), eq = requireEq(), equalArrays = require_equalArrays(), mapToArray = require_mapToArray(), setToArray = require_setToArray();
   var COMPARE_PARTIAL_FLAG = 1, COMPARE_UNORDERED_FLAG = 2;
   var boolTag = "[object Boolean]", dateTag = "[object Date]", errorTag = "[object Error]", mapTag = "[object Map]", numberTag = "[object Number]", regexpTag = "[object RegExp]", setTag = "[object Set]", stringTag = "[object String]", symbolTag = "[object Symbol]";
   var arrayBufferTag = "[object ArrayBuffer]", dataViewTag = "[object DataView]";
@@ -54543,7 +48164,7 @@ function require_equalByTag() {
       case boolTag:
       case dateTag:
       case numberTag:
-        return eq2(+object, +other);
+        return eq(+object, +other);
       case errorTag:
         return object.name == other.name && object.message == other.message;
       case regexpTag:
@@ -54582,9 +48203,9 @@ function require_arrayPush() {
   if (hasRequired_arrayPush) return _arrayPush;
   hasRequired_arrayPush = 1;
   function arrayPush(array, values2) {
-    var index2 = -1, length2 = values2.length, offset2 = array.length;
-    while (++index2 < length2) {
-      array[offset2 + index2] = values2[index2];
+    var index = -1, length2 = values2.length, offset = array.length;
+    while (++index < length2) {
+      array[offset + index] = values2[index];
     }
     return array;
   }
@@ -54619,10 +48240,10 @@ function require_arrayFilter() {
   if (hasRequired_arrayFilter) return _arrayFilter;
   hasRequired_arrayFilter = 1;
   function arrayFilter(array, predicate) {
-    var index2 = -1, length2 = array == null ? 0 : array.length, resIndex = 0, result = [];
-    while (++index2 < length2) {
-      var value = array[index2];
-      if (predicate(value, index2, array)) {
+    var index = -1, length2 = array == null ? 0 : array.length, resIndex = 0, result = [];
+    while (++index < length2) {
+      var value = array[index];
+      if (predicate(value, index, array)) {
         result[resIndex++] = value;
       }
     }
@@ -54668,10 +48289,10 @@ var hasRequired_baseTimes;
 function require_baseTimes() {
   if (hasRequired_baseTimes) return _baseTimes;
   hasRequired_baseTimes = 1;
-  function baseTimes(n2, iteratee) {
-    var index2 = -1, result = Array(n2);
-    while (++index2 < n2) {
-      result[index2] = iteratee(index2);
+  function baseTimes(n, iteratee) {
+    var index = -1, result = Array(n);
+    while (++index < n) {
+      result[index] = iteratee(index);
     }
     return result;
   }
@@ -54709,12 +48330,12 @@ function requireIsArguments() {
   hasRequiredIsArguments = 1;
   var baseIsArguments = require_baseIsArguments(), isObjectLike = requireIsObjectLike();
   var objectProto = Object.prototype;
-  var hasOwnProperty2 = objectProto.hasOwnProperty;
+  var hasOwnProperty = objectProto.hasOwnProperty;
   var propertyIsEnumerable = objectProto.propertyIsEnumerable;
   var isArguments2 = baseIsArguments(/* @__PURE__ */ function() {
     return arguments;
   }()) ? baseIsArguments : function(value) {
-    return isObjectLike(value) && hasOwnProperty2.call(value, "callee") && !propertyIsEnumerable.call(value, "callee");
+    return isObjectLike(value) && hasOwnProperty.call(value, "callee") && !propertyIsEnumerable.call(value, "callee");
   };
   isArguments_1 = isArguments2;
   return isArguments_1;
@@ -54849,11 +48470,11 @@ function require_arrayLikeKeys() {
   hasRequired_arrayLikeKeys = 1;
   var baseTimes = require_baseTimes(), isArguments2 = requireIsArguments(), isArray = requireIsArray(), isBuffer2 = requireIsBuffer(), isIndex = require_isIndex(), isTypedArray = requireIsTypedArray();
   var objectProto = Object.prototype;
-  var hasOwnProperty2 = objectProto.hasOwnProperty;
+  var hasOwnProperty = objectProto.hasOwnProperty;
   function arrayLikeKeys(value, inherited) {
     var isArr = isArray(value), isArg = !isArr && isArguments2(value), isBuff = !isArr && !isArg && isBuffer2(value), isType = !isArr && !isArg && !isBuff && isTypedArray(value), skipIndexes = isArr || isArg || isBuff || isType, result = skipIndexes ? baseTimes(value.length, String) : [], length2 = result.length;
     for (var key in value) {
-      if ((inherited || hasOwnProperty2.call(value, key)) && !(skipIndexes && // Safari 9 has enumerable `arguments.length` in strict mode.
+      if ((inherited || hasOwnProperty.call(value, key)) && !(skipIndexes && // Safari 9 has enumerable `arguments.length` in strict mode.
       (key == "length" || // Node.js 0.10 has enumerable non-index properties on buffers.
       isBuff && (key == "offset" || key == "parent") || // PhantomJS 2 has enumerable non-index properties on typed arrays.
       isType && (key == "buffer" || key == "byteLength" || key == "byteOffset") || // Skip index properties.
@@ -54909,14 +48530,14 @@ function require_baseKeys() {
   hasRequired_baseKeys = 1;
   var isPrototype = require_isPrototype(), nativeKeys = require_nativeKeys();
   var objectProto = Object.prototype;
-  var hasOwnProperty2 = objectProto.hasOwnProperty;
+  var hasOwnProperty = objectProto.hasOwnProperty;
   function baseKeys(object) {
     if (!isPrototype(object)) {
       return nativeKeys(object);
     }
     var result = [];
     for (var key in Object(object)) {
-      if (hasOwnProperty2.call(object, key) && key != "constructor") {
+      if (hasOwnProperty.call(object, key) && key != "constructor") {
         result.push(key);
       }
     }
@@ -54969,16 +48590,16 @@ function require_equalObjects() {
   var getAllKeys = require_getAllKeys();
   var COMPARE_PARTIAL_FLAG = 1;
   var objectProto = Object.prototype;
-  var hasOwnProperty2 = objectProto.hasOwnProperty;
+  var hasOwnProperty = objectProto.hasOwnProperty;
   function equalObjects(object, other, bitmask, customizer, equalFunc, stack) {
     var isPartial = bitmask & COMPARE_PARTIAL_FLAG, objProps = getAllKeys(object), objLength = objProps.length, othProps = getAllKeys(other), othLength = othProps.length;
     if (objLength != othLength && !isPartial) {
       return false;
     }
-    var index2 = objLength;
-    while (index2--) {
-      var key = objProps[index2];
-      if (!(isPartial ? key in other : hasOwnProperty2.call(other, key))) {
+    var index = objLength;
+    while (index--) {
+      var key = objProps[index];
+      if (!(isPartial ? key in other : hasOwnProperty.call(other, key))) {
         return false;
       }
     }
@@ -54991,8 +48612,8 @@ function require_equalObjects() {
     stack.set(object, other);
     stack.set(other, object);
     var skipCtor = isPartial;
-    while (++index2 < objLength) {
-      key = objProps[index2];
+    while (++index < objLength) {
+      key = objProps[index];
       var objValue = object[key], othValue = other[key];
       if (customizer) {
         var compared = isPartial ? customizer(othValue, objValue, key, other, object, stack) : customizer(objValue, othValue, key, object, other, stack);
@@ -55088,7 +48709,7 @@ function require_baseIsEqualDeep() {
   var COMPARE_PARTIAL_FLAG = 1;
   var argsTag = "[object Arguments]", arrayTag = "[object Array]", objectTag = "[object Object]";
   var objectProto = Object.prototype;
-  var hasOwnProperty2 = objectProto.hasOwnProperty;
+  var hasOwnProperty = objectProto.hasOwnProperty;
   function baseIsEqualDeep(object, other, bitmask, customizer, equalFunc, stack) {
     var objIsArr = isArray(object), othIsArr = isArray(other), objTag = objIsArr ? arrayTag : getTag(object), othTag = othIsArr ? arrayTag : getTag(other);
     objTag = objTag == argsTag ? objectTag : objTag;
@@ -55106,7 +48727,7 @@ function require_baseIsEqualDeep() {
       return objIsArr || isTypedArray(object) ? equalArrays(object, other, bitmask, customizer, equalFunc, stack) : equalByTag(object, other, objTag, bitmask, customizer, equalFunc, stack);
     }
     if (!(bitmask & COMPARE_PARTIAL_FLAG)) {
-      var objIsWrapped = objIsObj && hasOwnProperty2.call(object, "__wrapped__"), othIsWrapped = othIsObj && hasOwnProperty2.call(other, "__wrapped__");
+      var objIsWrapped = objIsObj && hasOwnProperty.call(object, "__wrapped__"), othIsWrapped = othIsObj && hasOwnProperty.call(other, "__wrapped__");
       if (objIsWrapped || othIsWrapped) {
         var objUnwrapped = objIsWrapped ? object.value() : object, othUnwrapped = othIsWrapped ? other.value() : other;
         stack || (stack = new Stack());
@@ -55148,21 +48769,21 @@ function require_baseIsMatch() {
   var Stack = require_Stack(), baseIsEqual = require_baseIsEqual();
   var COMPARE_PARTIAL_FLAG = 1, COMPARE_UNORDERED_FLAG = 2;
   function baseIsMatch(object, source, matchData, customizer) {
-    var index2 = matchData.length, length2 = index2, noCustomizer = !customizer;
+    var index = matchData.length, length2 = index, noCustomizer = !customizer;
     if (object == null) {
       return !length2;
     }
     object = Object(object);
-    while (index2--) {
-      var data2 = matchData[index2];
-      if (noCustomizer && data2[2] ? data2[1] !== object[data2[0]] : !(data2[0] in object)) {
+    while (index--) {
+      var data = matchData[index];
+      if (noCustomizer && data[2] ? data[1] !== object[data[0]] : !(data[0] in object)) {
         return false;
       }
     }
-    while (++index2 < length2) {
-      data2 = matchData[index2];
-      var key = data2[0], objValue = object[key], srcValue = data2[1];
-      if (noCustomizer && data2[2]) {
+    while (++index < length2) {
+      data = matchData[index];
+      var key = data[0], objValue = object[key], srcValue = data[1];
+      if (noCustomizer && data[2]) {
         if (objValue === void 0 && !(key in object)) {
           return false;
         }
@@ -55351,9 +48972,9 @@ function require_arrayMap() {
   if (hasRequired_arrayMap) return _arrayMap;
   hasRequired_arrayMap = 1;
   function arrayMap(array, iteratee) {
-    var index2 = -1, length2 = array == null ? 0 : array.length, result = Array(length2);
-    while (++index2 < length2) {
-      result[index2] = iteratee(array[index2], index2, array);
+    var index = -1, length2 = array == null ? 0 : array.length, result = Array(length2);
+    while (++index < length2) {
+      result[index] = iteratee(array[index], index, array);
     }
     return result;
   }
@@ -55390,10 +49011,10 @@ function requireToString() {
   if (hasRequiredToString) return toString_1;
   hasRequiredToString = 1;
   var baseToString = require_baseToString();
-  function toString2(value) {
+  function toString(value) {
     return value == null ? "" : baseToString(value);
   }
-  toString_1 = toString2;
+  toString_1 = toString;
   return toString_1;
 }
 var _castPath;
@@ -55401,12 +49022,12 @@ var hasRequired_castPath;
 function require_castPath() {
   if (hasRequired_castPath) return _castPath;
   hasRequired_castPath = 1;
-  var isArray = requireIsArray(), isKey = require_isKey(), stringToPath = require_stringToPath(), toString2 = requireToString();
+  var isArray = requireIsArray(), isKey = require_isKey(), stringToPath = require_stringToPath(), toString = requireToString();
   function castPath(value, object) {
     if (isArray(value)) {
       return value;
     }
-    return isKey(value, object) ? [value] : stringToPath(toString2(value));
+    return isKey(value, object) ? [value] : stringToPath(toString(value));
   }
   _castPath = castPath;
   return _castPath;
@@ -55436,11 +49057,11 @@ function require_baseGet() {
   var castPath = require_castPath(), toKey = require_toKey();
   function baseGet(object, path) {
     path = castPath(path, object);
-    var index2 = 0, length2 = path.length;
-    while (object != null && index2 < length2) {
-      object = object[toKey(path[index2++])];
+    var index = 0, length2 = path.length;
+    while (object != null && index < length2) {
+      object = object[toKey(path[index++])];
     }
-    return index2 && index2 == length2 ? object : void 0;
+    return index && index == length2 ? object : void 0;
   }
   _baseGet = baseGet;
   return _baseGet;
@@ -55477,15 +49098,15 @@ function require_hasPath() {
   var castPath = require_castPath(), isArguments2 = requireIsArguments(), isArray = requireIsArray(), isIndex = require_isIndex(), isLength = requireIsLength(), toKey = require_toKey();
   function hasPath(object, path, hasFunc) {
     path = castPath(path, object);
-    var index2 = -1, length2 = path.length, result = false;
-    while (++index2 < length2) {
-      var key = toKey(path[index2]);
+    var index = -1, length2 = path.length, result = false;
+    while (++index < length2) {
+      var key = toKey(path[index]);
       if (!(result = object != null && hasFunc(object, key))) {
         break;
       }
       object = object[key];
     }
-    if (result || ++index2 != length2) {
+    if (result || ++index != length2) {
       return result;
     }
     length2 = object == null ? 0 : object.length;
@@ -55617,7 +49238,7 @@ function require_baseDifference() {
   var SetCache = require_SetCache(), arrayIncludes = require_arrayIncludes(), arrayIncludesWith = require_arrayIncludesWith(), arrayMap = require_arrayMap(), baseUnary = require_baseUnary(), cacheHas = require_cacheHas();
   var LARGE_ARRAY_SIZE = 200;
   function baseDifference(array, values2, iteratee, comparator) {
-    var index2 = -1, includes = arrayIncludes, isCommon = true, length2 = array.length, result = [], valuesLength = values2.length;
+    var index = -1, includes = arrayIncludes, isCommon = true, length2 = array.length, result = [], valuesLength = values2.length;
     if (!length2) {
       return result;
     }
@@ -55633,8 +49254,8 @@ function require_baseDifference() {
       values2 = new SetCache(values2);
     }
     outer:
-      while (++index2 < length2) {
-        var value = array[index2], computed = iteratee == null ? value : iteratee(value);
+      while (++index < length2) {
+        var value = array[index], computed = iteratee == null ? value : iteratee(value);
         value = comparator || value !== 0 ? value : 0;
         if (isCommon && computed === computed) {
           var valuesIndex = valuesLength;
@@ -55673,11 +49294,11 @@ function require_baseFlatten() {
   hasRequired_baseFlatten = 1;
   var arrayPush = require_arrayPush(), isFlattenable = require_isFlattenable();
   function baseFlatten(array, depth, predicate, isStrict, result) {
-    var index2 = -1, length2 = array.length;
+    var index = -1, length2 = array.length;
     predicate || (predicate = isFlattenable);
     result || (result = []);
-    while (++index2 < length2) {
-      var value = array[index2];
+    while (++index < length2) {
+      var value = array[index];
       if (depth > 0 && predicate(value)) {
         if (depth > 1) {
           baseFlatten(value, depth - 1, predicate, isStrict, result);
@@ -55724,14 +49345,14 @@ function require_overRest() {
   function overRest(func, start, transform) {
     start = nativeMax(start === void 0 ? func.length - 1 : start, 0);
     return function() {
-      var args = arguments, index2 = -1, length2 = nativeMax(args.length - start, 0), array = Array(length2);
-      while (++index2 < length2) {
-        array[index2] = args[start + index2];
+      var args = arguments, index = -1, length2 = nativeMax(args.length - start, 0), array = Array(length2);
+      while (++index < length2) {
+        array[index] = args[start + index];
       }
-      index2 = -1;
+      index = -1;
       var otherArgs = Array(start + 1);
-      while (++index2 < start) {
-        otherArgs[index2] = args[index2];
+      while (++index < start) {
+        otherArgs[index] = args[index];
       }
       otherArgs[start] = transform(array);
       return apply(func, this, otherArgs);
@@ -55851,11 +49472,11 @@ var hasRequiredLast;
 function requireLast() {
   if (hasRequiredLast) return last_1;
   hasRequiredLast = 1;
-  function last2(array) {
+  function last(array) {
     var length2 = array == null ? 0 : array.length;
     return length2 ? array[length2 - 1] : void 0;
   }
-  last_1 = last2;
+  last_1 = last;
   return last_1;
 }
 var differenceWith_1;
@@ -55863,19 +49484,18 @@ var hasRequiredDifferenceWith;
 function requireDifferenceWith() {
   if (hasRequiredDifferenceWith) return differenceWith_1;
   hasRequiredDifferenceWith = 1;
-  var baseDifference = require_baseDifference(), baseFlatten = require_baseFlatten(), baseRest = require_baseRest(), isArrayLikeObject = requireIsArrayLikeObject(), last2 = requireLast();
-  var differenceWith2 = baseRest(function(array, values2) {
-    var comparator = last2(values2);
+  var baseDifference = require_baseDifference(), baseFlatten = require_baseFlatten(), baseRest = require_baseRest(), isArrayLikeObject = requireIsArrayLikeObject(), last = requireLast();
+  var differenceWith = baseRest(function(array, values2) {
+    var comparator = last(values2);
     if (isArrayLikeObject(comparator)) {
       comparator = void 0;
     }
     return isArrayLikeObject(array) ? baseDifference(array, baseFlatten(values2, 1, isArrayLikeObject, true), void 0, comparator) : [];
   });
-  differenceWith_1 = differenceWith2;
+  differenceWith_1 = differenceWith;
   return differenceWith_1;
 }
-var differenceWithExports = requireDifferenceWith();
-const differenceWith = /* @__PURE__ */ getDefaultExportFromCjs(differenceWithExports);
+requireDifferenceWith();
 var _baseAssignValue;
 var hasRequired_baseAssignValue;
 function require_baseAssignValue() {
@@ -55902,9 +49522,9 @@ var hasRequired_assignMergeValue;
 function require_assignMergeValue() {
   if (hasRequired_assignMergeValue) return _assignMergeValue;
   hasRequired_assignMergeValue = 1;
-  var baseAssignValue = require_baseAssignValue(), eq2 = requireEq();
+  var baseAssignValue = require_baseAssignValue(), eq = requireEq();
   function assignMergeValue(object, key, value) {
-    if (value !== void 0 && !eq2(object[key], value) || value === void 0 && !(key in object)) {
+    if (value !== void 0 && !eq(object[key], value) || value === void 0 && !(key in object)) {
       baseAssignValue(object, key, value);
     }
   }
@@ -55918,9 +49538,9 @@ function require_createBaseFor() {
   hasRequired_createBaseFor = 1;
   function createBaseFor(fromRight) {
     return function(object, iteratee, keysFunc) {
-      var index2 = -1, iterable = Object(object), props = keysFunc(object), length2 = props.length;
+      var index = -1, iterable = Object(object), props = keysFunc(object), length2 = props.length;
       while (length2--) {
-        var key = props[fromRight ? length2 : ++index2];
+        var key = props[fromRight ? length2 : ++index];
         if (iteratee(iterable[key], key, iterable) === false) {
           break;
         }
@@ -55998,10 +49618,10 @@ function require_copyArray() {
   if (hasRequired_copyArray) return _copyArray;
   hasRequired_copyArray = 1;
   function copyArray(source, array) {
-    var index2 = -1, length2 = source.length;
+    var index = -1, length2 = source.length;
     array || (array = Array(length2));
-    while (++index2 < length2) {
-      array[index2] = source[index2];
+    while (++index < length2) {
+      array[index] = source[index];
     }
     return array;
   }
@@ -56065,7 +49685,7 @@ function requireIsPlainObject() {
   var objectTag = "[object Object]";
   var funcProto = Function.prototype, objectProto = Object.prototype;
   var funcToString = funcProto.toString;
-  var hasOwnProperty2 = objectProto.hasOwnProperty;
+  var hasOwnProperty = objectProto.hasOwnProperty;
   var objectCtorString = funcToString.call(Object);
   function isPlainObject2(value) {
     if (!isObjectLike(value) || baseGetTag(value) != objectTag) {
@@ -56075,7 +49695,7 @@ function requireIsPlainObject() {
     if (proto === null) {
       return true;
     }
-    var Ctor = hasOwnProperty2.call(proto, "constructor") && proto.constructor;
+    var Ctor = hasOwnProperty.call(proto, "constructor") && proto.constructor;
     return typeof Ctor == "function" && Ctor instanceof Ctor && funcToString.call(Ctor) == objectCtorString;
   }
   isPlainObject_1 = isPlainObject2;
@@ -56103,12 +49723,12 @@ var hasRequired_assignValue;
 function require_assignValue() {
   if (hasRequired_assignValue) return _assignValue;
   hasRequired_assignValue = 1;
-  var baseAssignValue = require_baseAssignValue(), eq2 = requireEq();
+  var baseAssignValue = require_baseAssignValue(), eq = requireEq();
   var objectProto = Object.prototype;
-  var hasOwnProperty2 = objectProto.hasOwnProperty;
+  var hasOwnProperty = objectProto.hasOwnProperty;
   function assignValue(object, key, value) {
     var objValue = object[key];
-    if (!(hasOwnProperty2.call(object, key) && eq2(objValue, value)) || value === void 0 && !(key in object)) {
+    if (!(hasOwnProperty.call(object, key) && eq(objValue, value)) || value === void 0 && !(key in object)) {
       baseAssignValue(object, key, value);
     }
   }
@@ -56124,9 +49744,9 @@ function require_copyObject() {
   function copyObject(source, props, object, customizer) {
     var isNew = !object;
     object || (object = {});
-    var index2 = -1, length2 = props.length;
-    while (++index2 < length2) {
-      var key = props[index2];
+    var index = -1, length2 = props.length;
+    while (++index < length2) {
+      var key = props[index];
       var newValue = customizer ? customizer(object[key], source[key], key, object, source) : void 0;
       if (newValue === void 0) {
         newValue = source[key];
@@ -56166,14 +49786,14 @@ function require_baseKeysIn() {
   hasRequired_baseKeysIn = 1;
   var isObject = requireIsObject(), isPrototype = require_isPrototype(), nativeKeysIn = require_nativeKeysIn();
   var objectProto = Object.prototype;
-  var hasOwnProperty2 = objectProto.hasOwnProperty;
+  var hasOwnProperty = objectProto.hasOwnProperty;
   function baseKeysIn(object) {
     if (!isObject(object)) {
       return nativeKeysIn(object);
     }
     var isProto = isPrototype(object), result = [];
     for (var key in object) {
-      if (!(key == "constructor" && (isProto || !hasOwnProperty2.call(object, key)))) {
+      if (!(key == "constructor" && (isProto || !hasOwnProperty.call(object, key)))) {
         result.push(key);
       }
     }
@@ -56289,14 +49909,14 @@ var hasRequired_isIterateeCall;
 function require_isIterateeCall() {
   if (hasRequired_isIterateeCall) return _isIterateeCall;
   hasRequired_isIterateeCall = 1;
-  var eq2 = requireEq(), isArrayLike = requireIsArrayLike(), isIndex = require_isIndex(), isObject = requireIsObject();
-  function isIterateeCall(value, index2, object) {
+  var eq = requireEq(), isArrayLike = requireIsArrayLike(), isIndex = require_isIndex(), isObject = requireIsObject();
+  function isIterateeCall(value, index, object) {
     if (!isObject(object)) {
       return false;
     }
-    var type2 = typeof index2;
-    if (type2 == "number" ? isArrayLike(object) && isIndex(index2, object.length) : type2 == "string" && index2 in object) {
-      return eq2(object[index2], value);
+    var type2 = typeof index;
+    if (type2 == "number" ? isArrayLike(object) && isIndex(index, object.length) : type2 == "string" && index in object) {
+      return eq(object[index], value);
     }
     return false;
   }
@@ -56311,17 +49931,17 @@ function require_createAssigner() {
   var baseRest = require_baseRest(), isIterateeCall = require_isIterateeCall();
   function createAssigner(assigner) {
     return baseRest(function(object, sources) {
-      var index2 = -1, length2 = sources.length, customizer = length2 > 1 ? sources[length2 - 1] : void 0, guard = length2 > 2 ? sources[2] : void 0;
+      var index = -1, length2 = sources.length, customizer = length2 > 1 ? sources[length2 - 1] : void 0, guard = length2 > 2 ? sources[2] : void 0;
       customizer = assigner.length > 3 && typeof customizer == "function" ? (length2--, customizer) : void 0;
       if (guard && isIterateeCall(sources[0], sources[1], guard)) {
         customizer = length2 < 3 ? void 0 : customizer;
         length2 = 1;
       }
       object = Object(object);
-      while (++index2 < length2) {
-        var source = sources[index2];
+      while (++index < length2) {
+        var source = sources[index];
         if (source) {
-          assigner(object, source, index2, customizer);
+          assigner(object, source, index, customizer);
         }
       }
       return object;
@@ -56349,20 +49969,20 @@ var hasRequired_baseSlice;
 function require_baseSlice() {
   if (hasRequired_baseSlice) return _baseSlice;
   hasRequired_baseSlice = 1;
-  function baseSlice(array, start, end2) {
-    var index2 = -1, length2 = array.length;
+  function baseSlice(array, start, end) {
+    var index = -1, length2 = array.length;
     if (start < 0) {
       start = -start > length2 ? 0 : length2 + start;
     }
-    end2 = end2 > length2 ? length2 : end2;
-    if (end2 < 0) {
-      end2 += length2;
+    end = end > length2 ? length2 : end;
+    if (end < 0) {
+      end += length2;
     }
-    length2 = start > end2 ? 0 : end2 - start >>> 0;
+    length2 = start > end ? 0 : end - start >>> 0;
     start >>>= 0;
     var result = Array(length2);
-    while (++index2 < length2) {
-      result[index2] = array[index2 + start];
+    while (++index < length2) {
+      result[index] = array[index + start];
     }
     return result;
   }
@@ -56375,10 +49995,10 @@ function require_parent() {
   if (hasRequired_parent) return _parent;
   hasRequired_parent = 1;
   var baseGet = require_baseGet(), baseSlice = require_baseSlice();
-  function parent2(object, path) {
+  function parent(object, path) {
     return path.length < 2 ? object : baseGet(object, baseSlice(path, 0, -1));
   }
-  _parent = parent2;
+  _parent = parent;
   return _parent;
 }
 var _baseUnset;
@@ -56386,11 +50006,11 @@ var hasRequired_baseUnset;
 function require_baseUnset() {
   if (hasRequired_baseUnset) return _baseUnset;
   hasRequired_baseUnset = 1;
-  var castPath = require_castPath(), last2 = requireLast(), parent2 = require_parent(), toKey = require_toKey();
+  var castPath = require_castPath(), last = requireLast(), parent = require_parent(), toKey = require_toKey();
   function baseUnset(object, path) {
     path = castPath(path, object);
-    object = parent2(object, path);
-    return object == null || delete object[toKey(last2(path))];
+    object = parent(object, path);
+    return object == null || delete object[toKey(last(path))];
   }
   _baseUnset = baseUnset;
   return _baseUnset;
@@ -56406,13 +50026,13 @@ function require_basePullAt() {
   function basePullAt(array, indexes) {
     var length2 = array ? indexes.length : 0, lastIndex = length2 - 1;
     while (length2--) {
-      var index2 = indexes[length2];
-      if (length2 == lastIndex || index2 !== previous) {
-        var previous = index2;
-        if (isIndex(index2)) {
-          splice.call(array, index2, 1);
+      var index = indexes[length2];
+      if (length2 == lastIndex || index !== previous) {
+        var previous = index;
+        if (isIndex(index)) {
+          splice.call(array, index, 1);
         } else {
-          baseUnset(array, index2);
+          baseUnset(array, index);
         }
       }
     }
@@ -56427,24 +50047,24 @@ function requireRemove() {
   if (hasRequiredRemove) return remove_1;
   hasRequiredRemove = 1;
   var baseIteratee = require_baseIteratee(), basePullAt = require_basePullAt();
-  function remove2(array, predicate) {
+  function remove(array, predicate) {
     var result = [];
     if (!(array && array.length)) {
       return result;
     }
-    var index2 = -1, indexes = [], length2 = array.length;
+    var index = -1, indexes = [], length2 = array.length;
     predicate = baseIteratee(predicate, 3);
-    while (++index2 < length2) {
-      var value = array[index2];
-      if (predicate(value, index2, array)) {
+    while (++index < length2) {
+      var value = array[index];
+      if (predicate(value, index, array)) {
         result.push(value);
-        indexes.push(index2);
+        indexes.push(index);
       }
     }
     basePullAt(array, indexes);
     return result;
   }
-  remove_1 = remove2;
+  remove_1 = remove;
   return remove_1;
 }
 requireRemove();
@@ -56454,9 +50074,9 @@ function require_baseSum() {
   if (hasRequired_baseSum) return _baseSum;
   hasRequired_baseSum = 1;
   function baseSum(array, iteratee) {
-    var result, index2 = -1, length2 = array.length;
-    while (++index2 < length2) {
-      var current = iteratee(array[index2]);
+    var result, index = -1, length2 = array.length;
+    while (++index < length2) {
+      var current = iteratee(array[index]);
       if (current !== void 0) {
         result = result === void 0 ? current : result + current;
       }
@@ -56486,10 +50106,10 @@ function require_trimmedEndIndex() {
   hasRequired_trimmedEndIndex = 1;
   var reWhitespace = /\s/;
   function trimmedEndIndex(string) {
-    var index2 = string.length;
-    while (index2-- && reWhitespace.test(string.charAt(index2))) {
+    var index = string.length;
+    while (index-- && reWhitespace.test(string.charAt(index))) {
     }
-    return index2;
+    return index;
   }
   _trimmedEndIndex = trimmedEndIndex;
   return _trimmedEndIndex;
@@ -56590,9 +50210,9 @@ function requireChunk() {
     if (!length2 || size < 1) {
       return [];
     }
-    var index2 = 0, resIndex = 0, result = Array(nativeCeil(length2 / size));
-    while (index2 < length2) {
-      result[resIndex++] = baseSlice(array, index2, index2 += size);
+    var index = 0, resIndex = 0, result = Array(nativeCeil(length2 / size));
+    while (index < length2) {
+      result[resIndex++] = baseSlice(array, index, index += size);
     }
     return result;
   }
@@ -56608,7 +50228,7 @@ function requireIsEmpty() {
   var baseKeys = require_baseKeys(), getTag = require_getTag(), isArguments2 = requireIsArguments(), isArray = requireIsArray(), isArrayLike = requireIsArrayLike(), isBuffer2 = requireIsBuffer(), isPrototype = require_isPrototype(), isTypedArray = requireIsTypedArray();
   var mapTag = "[object Map]", setTag = "[object Set]";
   var objectProto = Object.prototype;
-  var hasOwnProperty2 = objectProto.hasOwnProperty;
+  var hasOwnProperty = objectProto.hasOwnProperty;
   function isEmpty(value) {
     if (value == null) {
       return true;
@@ -56624,7 +50244,7 @@ function requireIsEmpty() {
       return !baseKeys(value).length;
     }
     for (var key in value) {
-      if (hasOwnProperty2.call(value, key)) {
+      if (hasOwnProperty.call(value, key)) {
         return false;
       }
     }
@@ -56656,10 +50276,10 @@ function requireIsNumber() {
   hasRequiredIsNumber = 1;
   var baseGetTag = require_baseGetTag(), isObjectLike = requireIsObjectLike();
   var numberTag = "[object Number]";
-  function isNumber2(value) {
+  function isNumber(value) {
     return typeof value == "number" || isObjectLike(value) && baseGetTag(value) == numberTag;
   }
-  isNumber_1 = isNumber2;
+  isNumber_1 = isNumber;
   return isNumber_1;
 }
 requireIsNumber();
@@ -56669,10 +50289,10 @@ function require_castSlice() {
   if (hasRequired_castSlice) return _castSlice;
   hasRequired_castSlice = 1;
   var baseSlice = require_baseSlice();
-  function castSlice(array, start, end2) {
+  function castSlice(array, start, end) {
     var length2 = array.length;
-    end2 = end2 === void 0 ? length2 : end2;
-    return !start && end2 >= length2 ? array : baseSlice(array, start, end2);
+    end = end === void 0 ? length2 : end;
+    return !start && end >= length2 ? array : baseSlice(array, start, end);
   }
   _castSlice = castSlice;
   return _castSlice;
@@ -56684,10 +50304,10 @@ function require_charsEndIndex() {
   hasRequired_charsEndIndex = 1;
   var baseIndexOf = require_baseIndexOf();
   function charsEndIndex(strSymbols, chrSymbols) {
-    var index2 = strSymbols.length;
-    while (index2-- && baseIndexOf(chrSymbols, strSymbols[index2], 0) > -1) {
+    var index = strSymbols.length;
+    while (index-- && baseIndexOf(chrSymbols, strSymbols[index], 0) > -1) {
     }
-    return index2;
+    return index;
   }
   _charsEndIndex = charsEndIndex;
   return _charsEndIndex;
@@ -56699,10 +50319,10 @@ function require_charsStartIndex() {
   hasRequired_charsStartIndex = 1;
   var baseIndexOf = require_baseIndexOf();
   function charsStartIndex(strSymbols, chrSymbols) {
-    var index2 = -1, length2 = strSymbols.length;
-    while (++index2 < length2 && baseIndexOf(chrSymbols, strSymbols[index2], 0) > -1) {
+    var index = -1, length2 = strSymbols.length;
+    while (++index < length2 && baseIndexOf(chrSymbols, strSymbols[index], 0) > -1) {
     }
-    return index2;
+    return index;
   }
   _charsStartIndex = charsStartIndex;
   return _charsStartIndex;
@@ -56764,17 +50384,17 @@ var hasRequiredTrim;
 function requireTrim() {
   if (hasRequiredTrim) return trim_1;
   hasRequiredTrim = 1;
-  var baseToString = require_baseToString(), baseTrim = require_baseTrim(), castSlice = require_castSlice(), charsEndIndex = require_charsEndIndex(), charsStartIndex = require_charsStartIndex(), stringToArray = require_stringToArray(), toString2 = requireToString();
+  var baseToString = require_baseToString(), baseTrim = require_baseTrim(), castSlice = require_castSlice(), charsEndIndex = require_charsEndIndex(), charsStartIndex = require_charsStartIndex(), stringToArray = require_stringToArray(), toString = requireToString();
   function trim2(string, chars, guard) {
-    string = toString2(string);
+    string = toString(string);
     if (string && (guard || chars === void 0)) {
       return baseTrim(string);
     }
     if (!string || !(chars = baseToString(chars))) {
       return string;
     }
-    var strSymbols = stringToArray(string), chrSymbols = stringToArray(chars), start = charsStartIndex(strSymbols, chrSymbols), end2 = charsEndIndex(strSymbols, chrSymbols) + 1;
-    return castSlice(strSymbols, start, end2).join("");
+    var strSymbols = stringToArray(string), chrSymbols = stringToArray(chars), start = charsStartIndex(strSymbols, chrSymbols), end = charsEndIndex(strSymbols, chrSymbols) + 1;
+    return castSlice(strSymbols, start, end).join("");
   }
   trim_1 = trim2;
   return trim_1;
@@ -56800,8 +50420,8 @@ function requireIsDate() {
   hasRequiredIsDate = 1;
   var baseIsDate = require_baseIsDate(), baseUnary = require_baseUnary(), nodeUtil = require_nodeUtil();
   var nodeIsDate = nodeUtil && nodeUtil.isDate;
-  var isDate2 = nodeIsDate ? baseUnary(nodeIsDate) : baseIsDate;
-  isDate_1 = isDate2;
+  var isDate = nodeIsDate ? baseUnary(nodeIsDate) : baseIsDate;
+  isDate_1 = isDate;
   return isDate_1;
 }
 requireIsDate();
@@ -56821,8 +50441,8 @@ function require_createFind() {
           return iteratee(iterable[key], key, iterable);
         };
       }
-      var index2 = findIndexFunc(collection, predicate, fromIndex);
-      return index2 > -1 ? iterable[iteratee ? collection[index2] : index2] : void 0;
+      var index = findIndexFunc(collection, predicate, fromIndex);
+      return index > -1 ? iterable[iteratee ? collection[index] : index] : void 0;
     };
   }
   _createFind = createFind;
@@ -56840,11 +50460,11 @@ function requireFindIndex() {
     if (!length2) {
       return -1;
     }
-    var index2 = fromIndex == null ? 0 : toInteger(fromIndex);
-    if (index2 < 0) {
-      index2 = nativeMax(length2 + index2, 0);
+    var index = fromIndex == null ? 0 : toInteger(fromIndex);
+    if (index < 0) {
+      index = nativeMax(length2 + index, 0);
     }
-    return baseFindIndex(array, baseIteratee(predicate, 3), index2);
+    return baseFindIndex(array, baseIteratee(predicate, 3), index);
   }
   findIndex_1 = findIndex;
   return findIndex_1;
@@ -56855,8 +50475,8 @@ function requireFind() {
   if (hasRequiredFind) return find_1;
   hasRequiredFind = 1;
   var createFind = require_createFind(), findIndex = requireFindIndex();
-  var find2 = createFind(findIndex);
-  find_1 = find2;
+  var find = createFind(findIndex);
+  find_1 = find;
   return find_1;
 }
 requireFind();
@@ -56872,18 +50492,16 @@ function requireIndexOf() {
     if (!length2) {
       return -1;
     }
-    var index2 = fromIndex == null ? 0 : toInteger(fromIndex);
-    if (index2 < 0) {
-      index2 = nativeMax(length2 + index2, 0);
+    var index = fromIndex == null ? 0 : toInteger(fromIndex);
+    if (index < 0) {
+      index = nativeMax(length2 + index, 0);
     }
-    return baseIndexOf(array, value, index2);
+    return baseIndexOf(array, value, index);
   }
   indexOf_1 = indexOf;
   return indexOf_1;
 }
 requireIndexOf();
-const jupUniq = uniq;
-const jupDifferenceWith = differenceWith;
 const jupMerge = merge;
 function getPublicConfiguration(jupEnv) {
   switch (jupEnv) {
@@ -56947,28 +50565,28 @@ var defaultConverter = {
   }
 };
 function init(converter, defaultAttributes) {
-  function set(name, value, attributes2) {
+  function set(name, value, attributes) {
     if (typeof document === "undefined") {
       return;
     }
-    attributes2 = assign({}, defaultAttributes, attributes2);
-    if (typeof attributes2.expires === "number") {
-      attributes2.expires = new Date(Date.now() + attributes2.expires * 864e5);
+    attributes = assign({}, defaultAttributes, attributes);
+    if (typeof attributes.expires === "number") {
+      attributes.expires = new Date(Date.now() + attributes.expires * 864e5);
     }
-    if (attributes2.expires) {
-      attributes2.expires = attributes2.expires.toUTCString();
+    if (attributes.expires) {
+      attributes.expires = attributes.expires.toUTCString();
     }
     name = encodeURIComponent(name).replace(/%(2[346B]|5E|60|7C)/g, decodeURIComponent).replace(/[()]/g, escape);
     var stringifiedAttributes = "";
-    for (var attributeName in attributes2) {
-      if (!attributes2[attributeName]) {
+    for (var attributeName in attributes) {
+      if (!attributes[attributeName]) {
         continue;
       }
       stringifiedAttributes += "; " + attributeName;
-      if (attributes2[attributeName] === true) {
+      if (attributes[attributeName] === true) {
         continue;
       }
-      stringifiedAttributes += "=" + attributes2[attributeName].split(";")[0];
+      stringifiedAttributes += "=" + attributes[attributeName].split(";")[0];
     }
     return document.cookie = name + "=" + converter.write(value, name) + stringifiedAttributes;
   }
@@ -56996,17 +50614,17 @@ function init(converter, defaultAttributes) {
     {
       set,
       get: get2,
-      remove: function(name, attributes2) {
+      remove: function(name, attributes) {
         set(
           name,
           "",
-          assign({}, attributes2, {
+          assign({}, attributes, {
             expires: -1
           })
         );
       },
-      withAttributes: function(attributes2) {
-        return init(this.converter, assign({}, this.attributes, attributes2));
+      withAttributes: function(attributes) {
+        return init(this.converter, assign({}, this.attributes, attributes));
       },
       withConverter: function(converter2) {
         return init(assign({}, this.converter, converter2), this.attributes);
@@ -57065,9 +50683,9 @@ function useTranslation(componentKey) {
   useGlobalTranslationCode();
   const i18nApi = useI18nApi();
   if (componentKey) {
-    return (key, data2) => i18nApi.translate(`${componentKey}.${key}`, data2);
+    return (key, data) => i18nApi.translate(`${componentKey}.${key}`, data);
   }
-  return (key, data2) => i18nApi.translate(key, data2);
+  return (key, data) => i18nApi.translate(key, data);
 }
 function fetchLanguageJson(language) {
   const version2 = getPublicAppVersion();
@@ -57082,9 +50700,9 @@ async function getNewPolyglotFromFrontConfig(locale) {
   return new Polyglot({ locale, phrases, allowMissing: true });
 }
 function updateGlobalLanguageSettings(locale) {
-  const language = supportedLanguages.find((l2) => l2.code === locale);
+  const language = supportedLanguages.find((l) => l.code === locale);
   if (language) {
-    Settings.defaultLocale = language.momentCode;
+    language.momentCode;
     gqlbMemory.language = language.code;
   }
 }
@@ -57093,16 +50711,16 @@ function cleanUpGuess(word) {
 }
 function guessI18nMissingKey(key) {
   const words = key.split(".").slice(-2);
-  const first2 = words[0];
-  const last2 = words[1];
-  if (["label", "singular"].indexOf(last2) !== -1) {
-    return cleanUpGuess(first2);
+  const first = words[0];
+  const last = words[1];
+  if (["label", "singular"].indexOf(last) !== -1) {
+    return cleanUpGuess(first);
   }
-  if (["views"].indexOf(first2) !== -1) {
-    return cleanUpGuess(last2);
+  if (["views"].indexOf(first) !== -1) {
+    return cleanUpGuess(last);
   }
-  if (last2.endsWith("plural")) {
-    return cleanUpGuess(toPlural(first2));
+  if (last.endsWith("plural")) {
+    return cleanUpGuess(toPlural(first));
   }
   return words.join(" ");
 }
@@ -57121,11 +50739,11 @@ function getBrowserLocal() {
 let polyglot = void 0;
 class PolyglotApi {
   constructor() {
-    __publicField(this, "translate", (m, data2) => {
+    __publicField(this, "translate", (m, data) => {
       if (!polyglot) {
         throw new Error("Polyglot not initialized");
       }
-      const res = polyglot.t(m, data2);
+      const res = polyglot.t(m, data);
       if (this.isKey(m, res)) {
         const guess = guessI18nMissingKey(res);
         return `${guess}`;
@@ -70991,6579 +64609,6 @@ function I18NHelpContext(props) {
 function isTenantObjectType(objecTypeName) {
   return objecTypeName === tenantInfo.objectType;
 }
-function entityToString(modelName, e) {
-  if (!e) {
-    return `${modelName}|?`;
-  }
-  const eWithName = e;
-  if (eWithName.name) {
-    return eWithName.name;
-  }
-  return `${modelName}|${e.id}`;
-}
-function getObjectType(singular) {
-  return {
-    definition: getObjectTypeDefinitionByName(singular),
-    entityToString: (i18n, e) => entityToString(singular, e),
-    entityToStringWithContext: (i18n, masterData, e) => entityToString(singular, e),
-    key: (e) => `${singular}-${e.id}`,
-    appBarBackgroundColor: () => void 0,
-    pathToBuilding: [],
-    reports: []
-  };
-}
-const generatedObjectTypes = [
-  getObjectType("occupancyStatus"),
-  getObjectType("user"),
-  getObjectType("userRefreshToken"),
-  getObjectType("companyType"),
-  getObjectType("company"),
-  getObjectType("campus"),
-  getObjectType("roomConnectorType"),
-  getObjectType("roomConnector"),
-  getObjectType("userCompany"),
-  getObjectType("personGender"),
-  getObjectType("personCompany"),
-  getObjectType("jupUiLayout"),
-  getObjectType("buildingType"),
-  getObjectType("organization"),
-  getObjectType("itemTypeFamily"),
-  getObjectType("manufacturer"),
-  getObjectType("object3dModel"),
-  getObjectType("itemType"),
-  getObjectType("building"),
-  getObjectType("mapScale"),
-  getObjectType("structure"),
-  getObjectType("structurePoint"),
-  getObjectType("floor"),
-  getObjectType("distributionCostType"),
-  getObjectType("roomTypeGroup"),
-  getObjectType("roomType"),
-  getObjectType("roomTypeGroupToRoomType"),
-  getObjectType("roomTypeGroupFloor"),
-  getObjectType("roomTypeGroupBuilding"),
-  getObjectType("costCenter"),
-  getObjectType("costCenterBuilding"),
-  getObjectType("costCenterFloor"),
-  getObjectType("room"),
-  getObjectType("roomPoint"),
-  getObjectType("roomPointRoom"),
-  getObjectType("roomPointSegmentType"),
-  getObjectType("roomPointSegment"),
-  getObjectType("itemTypePoint"),
-  getObjectType("dimensionType"),
-  getObjectType("dimension"),
-  getObjectType("dimensionRoom"),
-  getObjectType("dimensionFloor"),
-  getObjectType("dimensionBuilding"),
-  getObjectType("factType"),
-  getObjectType("fact"),
-  getObjectType("personState"),
-  getObjectType("personSecurityProfile"),
-  getObjectType("person"),
-  getObjectType("personToPersonType"),
-  getObjectType("personToPerson"),
-  getObjectType("roomAffectation"),
-  getObjectType("workplaceType"),
-  getObjectType("workplaceTypeItemType"),
-  getObjectType("workplace"),
-  getObjectType("item"),
-  getObjectType("workplaceAffectation"),
-  getObjectType("organizationFloor"),
-  getObjectType("organizationBuilding"),
-  getObjectType("roomTypeFloor"),
-  getObjectType("roomTypeBuilding"),
-  getObjectType("itemToPerson"),
-  getObjectType("personToBuilding"),
-  getObjectType("dimensionToPerson"),
-  getObjectType("dimensionTypeToBuilding"),
-  getObjectType("workingLocation"),
-  getObjectType("personWorkingLocation"),
-  getObjectType("personToWorkplaceBooking"),
-  getObjectType("personToRoomBooking"),
-  getObjectType("personToDimensionBooking"),
-  getObjectType("personCompanyMission"),
-  getObjectType("personCompanyToItemType"),
-  getObjectType("personCompanyToRoomType"),
-  getObjectType("personCompanyToItem"),
-  getObjectType("legend"),
-  getObjectType("openerPostMessageHost"),
-  getObjectType("companyWorkingLocation"),
-  getObjectType("jupObjectType"),
-  getObjectType("jupUiView"),
-  getObjectType("jupRole"),
-  getObjectType("jupUiOption"),
-  getObjectType("jupUiOperation"),
-  getObjectType("contentRole"),
-  getObjectType("jupUserCompanyToJupRole"),
-  getObjectType("jupRoleToJupUiView"),
-  getObjectType("jupRoleToJupObjectType"),
-  getObjectType("jupRoleToJupUiOption"),
-  getObjectType("jupRoleToJupUiOperation"),
-  getObjectType("contentRoleToBuilding"),
-  getObjectType("contentRoleToUserCompany"),
-  getObjectType("contentRoleToFloor"),
-  getObjectType("partnerApiCredential"),
-  getObjectType("apiUser"),
-  getObjectType("apiUserToJupRole"),
-  getObjectType("apiUserToContentRole"),
-  getObjectType("jupUiTenantOperation"),
-  getObjectType("contentRoleToJupUiTenantOperation"),
-  getObjectType("authentificationConnection"),
-  getObjectType("userRegistrationTenantRule"),
-  getObjectType("userRegistrationTenantRuleToJupRole"),
-  getObjectType("userRegistrationTenantRuleToContentRole"),
-  getObjectType("partnerExportMappingConfiguration"),
-  getObjectType("partnerExportMapping"),
-  getObjectType("partnerExportMappingToRoomType"),
-  getObjectType("partnerExportMappingConfigurationToFloor"),
-  getObjectType("jupRoleToJupUiLayout"),
-  getObjectType("itemFact"),
-  getObjectType("featureFamily"),
-  getObjectType("featureGroup"),
-  getObjectType("feature")
-];
-function createFilter(operator, column2, value) {
-  return { operator, column: column2, value };
-}
-function getAllExportableProperties(objectTypeName) {
-  const otDef = getObjectTypeDefinitionByName(objectTypeName);
-  const properties2 = Object.values(otDef.propertiesByName).filter((p) => {
-    if (isPropertyTypeId(p) || isPropertyTypeBelongsTo(p) || isPropertyTypeHasMany(p)) {
-      return false;
-    }
-    return true;
-  });
-  return properties2;
-}
-function getAllPropertyNamesExportWithoutTechnicals(objectTypeName) {
-  const properties2 = getAllExportableProperties(objectTypeName);
-  return properties2.filter((p) => !p.options.technical).map((p) => p.name);
-}
-const exludeFromWorkplaces = ["position", "textAnchor", "rotation", "externalId"];
-const workplaceAllProperties = jupDifferenceWith(getAllPropertyNamesExportWithoutTechnicals("workplace"), exludeFromWorkplaces);
-const workplacesExportQueryNode = (translation, buildingIds) => [{
-  exportType: "hasManyCount",
-  objectTypeName: "building",
-  queryNode: {
-    name: "workplace",
-    required: true,
-    _: [
-      "id",
-      ...jupUniq(["name", ...workplaceAllProperties]),
-      roomToBuildingQueryNode(buildingIds, true),
-      { name: "costCenter", _: ["name"] },
-      { name: "organization", _: ["name", { name: "organization", _: ["name"] }] },
-      { name: "workplaceAffectations", _: ["id"] },
-      { name: "workplaceType", _: ["name"] }
-    ]
-  }
-}];
-function roomToBuildingQueryNode(buildingIds, required, roomProperties) {
-  return {
-    name: "room",
-    required,
-    _: [
-      "name",
-      {
-        name: "floor",
-        required,
-        _: ["name", {
-          name: "building",
-          required,
-          _: ["name"],
-          filters: [createFilter("in", "id", buildingIds)]
-        }]
-      },
-      ...roomProperties || []
-    ]
-  };
-}
-const personAllProperties = getAllPropertyNamesExportWithoutTechnicals("person");
-const personWorkplace = (personProperties2) => ({
-  name: "person",
-  _: [
-    ...jupUniq(["firstname", "lastname", "code", ...personProperties2]),
-    { name: "organization", _: ["name", { name: "organization", _: ["name"] }] },
-    { name: "costCenter", _: ["name"] },
-    { name: "personSecurityProfile", _: ["name"] },
-    { name: "personState", _: ["name"] }
-  ]
-});
-const allWorkplacesQueryNode = (translation, buildingIds) => [{
-  exportType: "hasManyRec",
-  objectTypeName: "building",
-  queryNode: {
-    name: "workplace",
-    _: [
-      ...jupUniq(["id", "name", ...workplaceAllProperties]),
-      roomToBuildingQueryNode(buildingIds, true),
-      { name: "organization", _: ["name", { name: "organization", _: ["name"] }] },
-      { name: "costCenter", _: ["name"] },
-      { name: "workplaceType", _: ["name"] },
-      { name: "workplaceAffectations", _: ["id", personWorkplace(jupDifferenceWith(personAllProperties, ["picture"]))] }
-    ]
-  }
-}];
-const workplacesAffectationsQueryNode = (translation, buildingIds) => [{
-  exportType: "hasManyCount",
-  objectTypeName: "building",
-  queryNode: {
-    name: "workplaceAffectation",
-    _: [
-      "id",
-      {
-        name: "workplace",
-        required: true,
-        _: ["id", "name", roomToBuildingQueryNode(buildingIds, true)]
-      },
-      {
-        name: "person",
-        _: [
-          ...jupUniq(["firstname", "lastname", "email", ...personAllProperties]),
-          { name: "organization", _: ["name", { name: "organization", _: ["name"] }] },
-          { name: "costCenter", _: ["name"] },
-          { name: "personSecurityProfile", _: ["name"] },
-          { name: "personState", _: ["name"] }
-        ]
-      }
-    ]
-  }
-}];
-const exludeFromRooms = ["textAnchor", "externalId"];
-const roomAllProperties = jupDifferenceWith(getAllPropertyNamesExportWithoutTechnicals("room"), exludeFromRooms);
-const roomStarEntities = [
-  { name: "costCenter", _: ["name"] },
-  { name: "organization", _: ["name", { name: "organization", _: ["name"] }] },
-  { name: "distributionCostType", _: ["name"] },
-  { name: "roomType", _: ["name"] }
-];
-const roomAreaReportProperties = [
-  "id",
-  ...roomAllProperties,
-  ...roomStarEntities
-];
-const buildingAreaExportQueryNode = (translation, buildingIds) => [{
-  exportType: "hasManyCount",
-  objectTypeName: "building",
-  queryNode: {
-    name: "room",
-    required: true,
-    _: [
-      ...roomAreaReportProperties,
-      {
-        name: "floor",
-        required: true,
-        _: ["name", {
-          name: "building",
-          required: true,
-          _: ["name"],
-          filters: [createFilter("in", "id", buildingIds)]
-        }]
-      }
-    ]
-  }
-}];
-const buildingAreaReport = { name: "area", iconObjectTypeName: "room", exportQueryNodes: buildingAreaExportQueryNode };
-const buildingCleaningReportName = "buildingCleaning";
-const buildingCleaningQueryNode = (translation, buildingIds) => [{
-  exportType: "hasManyRec",
-  objectTypeName: "building",
-  queryNode: roomToBuildingQueryNode(buildingIds, true, [
-    "id",
-    "area",
-    "info",
-    {
-      name: "roomType",
-      _: ["name", "cadence"]
-    }
-  ])
-}];
-const buildingCleaningReport = { name: buildingCleaningReportName, iconObjectTypeName: "room", exportQueryNodes: buildingCleaningQueryNode };
-const buildingDimensionsReportName = "buildingDimensions";
-const buildingDimensionsQueryNode = (translation, buildingIds) => [{
-  exportType: "hasManyRec",
-  objectTypeName: "building",
-  queryNode: {
-    name: "room",
-    _: [
-      ...roomAreaReportProperties,
-      {
-        name: "floor",
-        required: true,
-        _: ["name", {
-          name: "building",
-          required: true,
-          _: ["name"],
-          filters: [createFilter("in", "id", buildingIds)]
-        }]
-      }
-    ]
-  }
-}];
-const buildingDimensionsReport = { name: buildingDimensionsReportName, iconObjectTypeName: "room", exportQueryNodes: buildingDimensionsQueryNode };
-const buildingItemsReportName = "buildingItems";
-const exludeFromItems = ["position", "textAnchor", "rotation", "externalId"];
-const itemsAllProperties = jupDifferenceWith(getAllPropertyNamesExportWithoutTechnicals("item"), exludeFromItems);
-const itemsExportQueryNode = (translation, buildingIds) => {
-  const items = {
-    exportType: "hasManyCount",
-    objectTypeName: "building",
-    queryNode: {
-      name: "item",
-      required: true,
-      _: [
-        "id",
-        roomToBuildingQueryNode(buildingIds, true, ["id"]),
-        { name: "itemType", _: ["name", "seatsCount", "carbonFootprint", { name: "itemTypeFamily", _: ["name"] }] },
-        ...itemsAllProperties
-      ]
-    }
-  };
-  return [items];
-};
-const buildingItemReport = { name: buildingItemsReportName, iconObjectTypeName: "item", exportQueryNodes: itemsExportQueryNode };
-const roomBelongsToProperties = [
-  { name: "organization", _: ["name", { name: "organization", _: ["name"] }] },
-  { name: "costCenter", _: ["name"] }
-];
-function personProperties$1(extraProperties) {
-  const exclude = ["createdAt", "updatedAt"];
-  const personProperties2 = jupDifferenceWith(getAllPropertyNamesExportWithoutTechnicals("person"), exclude);
-  return [
-    "id",
-    ...personProperties2,
-    ...[],
-    {
-      name: "organization",
-      _: ["name", { name: "organization", _: ["name"] }]
-    },
-    { name: "costCenter", _: ["name"] },
-    { name: "personSecurityProfile", _: ["name"] },
-    { name: "personState", _: ["name"] },
-    { name: "personGender", _: ["name"] }
-  ];
-}
-function peopleDimensionAffectations(translation, buildingIds) {
-  return {
-    exportType: "hasManyRec",
-    objectTypeName: "building",
-    worksheetName: objectTypeCapitalizedPluralLabel(translation, "dimensionToPerson"),
-    queryNode: {
-      name: "person",
-      required: true,
-      _: [...personProperties$1(), {
-        name: "dimensionToPeople",
-        required: true,
-        _: ["id", "priority", {
-          name: "dimension",
-          required: true,
-          _: ["name", {
-            name: "dimensionType",
-            required: true,
-            _: ["name", {
-              name: "dimensionTypeToBuildings",
-              _: [],
-              required: true,
-              filters: [createFilter("in", "buildingId", buildingIds)]
-            }]
-          }]
-        }]
-      }]
-    }
-  };
-}
-function peopleRoomAffectations(translation, buildingIds) {
-  return {
-    exportType: "hasManyRec",
-    objectTypeName: "building",
-    worksheetName: objectTypeCapitalizedPluralLabel(translation, "roomAffectation"),
-    queryNode: {
-      name: "person",
-      required: true,
-      _: [...personProperties$1(), {
-        name: "roomAffectations",
-        required: true,
-        _: ["id", roomToBuildingQueryNode(buildingIds, true, ["id", ...roomBelongsToProperties])]
-      }]
-    }
-  };
-}
-function peopleWorkplaceAffectations(translation, buildingIds) {
-  return {
-    exportType: "hasManyRec",
-    objectTypeName: "building",
-    worksheetName: objectTypeCapitalizedPluralLabel(translation, "workplaceAffectation"),
-    queryNode: {
-      name: "person",
-      required: true,
-      _: [...personProperties$1(), {
-        name: "workplaceAffectations",
-        required: true,
-        _: [{
-          name: "workplace",
-          required: true,
-          _: [
-            "name",
-            roomToBuildingQueryNode(buildingIds, true, ["id", ...roomBelongsToProperties]),
-            { name: "costCenter", _: ["name"] }
-          ]
-        }, "id"]
-      }]
-    }
-  };
-}
-const peopleBuildingsExportQueryNodes = (translation, buildingIds) => [
-  peopleRoomAffectations(translation, buildingIds),
-  peopleWorkplaceAffectations(translation, buildingIds),
-  peopleDimensionAffectations(translation, buildingIds)
-];
-const buildingPeopleReportName = "buildingPeople";
-const buildingPeopleReport = { name: buildingPeopleReportName, iconObjectTypeName: "person", exportQueryNodes: peopleBuildingsExportQueryNodes };
-function sortOnNameOptional(a, b) {
-  return a.name && b.name ? a.name.localeCompare(b.name) : 0;
-}
-atomFamily({
-  key: "workingLocationStore",
-  default: void 0
-});
-const currentCompanyAtom = atom({
-  key: "currentCompany",
-  default: null
-});
-function useCurrentCompanyOptional() {
-  return useRecoilValue_TRANSITION_SUPPORT_UNSTABLE(currentCompanyAtom);
-}
-function useCurrentCompany() {
-  const company2 = useCurrentCompanyOptional();
-  if (!company2) {
-    throw new Error("current company is not set");
-  }
-  return company2;
-}
-const buildingStoreAtom = atomFamily({
-  key: "buildingStore",
-  default: void 0
-});
-const atom_$8 = buildingStoreAtom;
-function useBuildings() {
-  const currentCompany = useCurrentCompany();
-  const store = useRecoilValue_TRANSITION_SUPPORT_UNSTABLE(atom_$8(currentCompany.name));
-  if (!store) {
-    throw new Error("BuildingStore is not loaded");
-  }
-  return store;
-}
-function useBuilding(buildingId) {
-  const e = useBuildingOptional(buildingId);
-  if (!e) {
-    throw new Error(`building is missing in store for id : ${buildingId}`);
-  }
-  return e;
-}
-function useBuildingOptional(buildingId) {
-  const store = useBuildings();
-  if (buildingId) {
-    const e = store.get(buildingId);
-    return e;
-  }
-}
-const buildingBreadcrumb = {
-  queryNode: {
-    _: [
-      "id",
-      "name",
-      "color",
-      {
-        name: "company",
-        _: ["name", "id"]
-      },
-      { name: "floors", _: ["level"] }
-    ],
-    name: "building"
-  },
-  path: ["company"],
-  useData: (id) => {
-    const building2 = useBuilding(id);
-    const company2 = useCurrentCompany();
-    return { ...building2, company: company2 };
-  }
-};
-const building = {
-  breadcrumb: buildingBreadcrumb,
-  appBarBackgroundColor: (masterData, e) => e.color,
-  reports: [
-    buildingPeopleReport,
-    { name: "workplaces", iconObjectTypeName: "workplace", exportQueryNodes: workplacesExportQueryNode },
-    { name: "workplaceAffectations", iconObjectTypeName: "workplaceAffectation", exportQueryNodes: workplacesAffectationsQueryNode },
-    { name: "allWorkplaces", iconObjectTypeName: "workplace", exportQueryNodes: allWorkplacesQueryNode },
-    buildingItemReport,
-    // buildingOrganizationReport,
-    buildingAreaReport,
-    buildingCleaningReport,
-    buildingDimensionsReport
-  ],
-  defaultSortOrder: () => sortOnNameOptional,
-  entityToString: buildingToEntityString,
-  entityToStringWithContext: (i18n, masterData, e) => buildingToEntityString(i18n, e)
-};
-function buildingToEntityString(i18n, e) {
-  if (!e) {
-    return entityToString("building", e);
-  }
-  return e.name;
-}
-function getPersonFullName(person2) {
-  var _a, _b;
-  if (person2 == null ? void 0 : person2.fullname) {
-    return person2.fullname;
-  }
-  return person2 ? `${(_a = person2.firstname) == null ? void 0 : _a.trim()} ${(_b = person2.lastname) == null ? void 0 : _b.trim()}` : entityToString("person", person2);
-}
-const breadcrumb$a = {
-  queryNode: {
-    _: [
-      "id",
-      "firstname",
-      "lastname"
-    ],
-    name: "person"
-  },
-  path: []
-};
-const personEntityToString = (i18n, e) => {
-  return getPersonFullName(e);
-};
-const person = {
-  breadcrumb: breadcrumb$a,
-  entityToString: personEntityToString
-};
-function userDisplayName(u, addEmail) {
-  const i = [];
-  if (u.firstname) {
-    i.push(u.firstname);
-  }
-  if (u.lastname) {
-    i.push(u.lastname);
-  }
-  if (u.email) {
-    if (i.length === 0) {
-      i.push(u.email);
-    } else {
-      i.push(`(${u.email})`);
-    }
-  }
-  return i.join(" ");
-}
-const userCompanyBreadcrumbQueryNode = {
-  _: [
-    "id",
-    {
-      name: "user",
-      _: ["firstname", "lastname", "id", "picture", "sub"]
-    },
-    { name: "company", _: ["name"] }
-  ],
-  name: "userCompany"
-};
-const userCompanyBreadcrumb = {
-  queryNode: userCompanyBreadcrumbQueryNode,
-  path: ["user"]
-};
-function userCompanyEntityToString(i18n, r2) {
-  var _a;
-  if (!r2) {
-    return entityToString("userCompany", r2);
-  }
-  const { user: user2, company: company2 } = r2;
-  if (user2 && company2) {
-    return `${userDisplayName(user2)} - ${company2.name}`;
-  }
-  if (user2) {
-    return userDisplayName(user2);
-  }
-  return (_a = r2.id) == null ? void 0 : _a.toString();
-}
-function userCompanyEntityToStringWithContext(i18n, masterData, r2) {
-  return userCompanyEntityToString(i18n, r2);
-}
-const userCompany = {
-  breadcrumb: userCompanyBreadcrumb,
-  entityToStringWithContext: userCompanyEntityToStringWithContext,
-  entityToString: userCompanyEntityToString
-};
-const roomAffectation = {
-  entityToString: (i18n, ra) => {
-    if (ra) {
-      const { person: person2, room: room2 } = ra;
-      if (person2 && room2) {
-        return `${personEntityToString(i18n, person2)} - ${entityToString("room", room2)}`;
-      }
-    }
-    return entityToString("roomAffectation", ra);
-  },
-  pathToBuilding: ["room", "floor", "building"]
-};
-var thenBy_module;
-var hasRequiredThenBy_module;
-function requireThenBy_module() {
-  if (hasRequiredThenBy_module) return thenBy_module;
-  hasRequiredThenBy_module = 1;
-  thenBy_module = function() {
-    function identity(v) {
-      return v;
-    }
-    function ignoreCase(v) {
-      return typeof v === "string" ? v.toLowerCase() : v;
-    }
-    function makeCompareFunction(f, opt) {
-      opt = typeof opt === "object" ? opt : { direction: opt };
-      if (typeof f != "function") {
-        var prop2 = f;
-        f = function(v1) {
-          return !!v1[prop2] ? v1[prop2] : "";
-        };
-      }
-      if (f.length === 1) {
-        var uf = f;
-        var preprocess = opt.ignoreCase ? ignoreCase : identity;
-        var cmp = opt.cmp || function(v1, v2) {
-          return v1 < v2 ? -1 : v1 > v2 ? 1 : 0;
-        };
-        f = function(v1, v2) {
-          return cmp(preprocess(uf(v1)), preprocess(uf(v2)));
-        };
-      }
-      const descTokens = { "-1": "", desc: "" };
-      if (opt.direction in descTokens) return function(v1, v2) {
-        return -f(v1, v2);
-      };
-      return f;
-    }
-    function tb(func, opt) {
-      var x = typeof this == "function" && !this.firstBy ? this : false;
-      var y = makeCompareFunction(func, opt);
-      var f = x ? function(a, b) {
-        return x(a, b) || y(a, b);
-      } : y;
-      f.thenBy = tb;
-      return f;
-    }
-    tb.firstBy = tb;
-    return tb;
-  }();
-  return thenBy_module;
-}
-var thenBy_moduleExports = requireThenBy_module();
-function sortFloorWithMasterData(masterData) {
-  return thenBy_moduleExports.firstBy((fA, fB) => {
-    const bA = masterData.buildings.get((fA == null ? void 0 : fA.buildingId) || 0);
-    const bB = masterData.buildings.get((fB == null ? void 0 : fB.buildingId) || 0);
-    return bA && bB ? sortOnName(bA, bB) : 0;
-  }).thenBy((fA, fB) => {
-    return fA && fB ? sortOnLevel(fA, fB) : 0;
-  });
-}
-const floorStoreAtom = atomFamily({
-  key: "floorStore",
-  default: void 0
-});
-const atom_$7 = floorStoreAtom;
-function useFloors() {
-  const currentCompany = useCurrentCompany();
-  const store = useRecoilValue_TRANSITION_SUPPORT_UNSTABLE(atom_$7(currentCompany.name));
-  if (!store) {
-    throw new Error("FloorStore is not loaded");
-  }
-  return store;
-}
-function useFloor(floorId) {
-  const e = useFloorOptional(floorId);
-  if (!e) {
-    throw new Error(`floor is missing in store for id : ${floorId}`);
-  }
-  return e;
-}
-function useFloorOptional(floorId) {
-  const store = useFloors();
-  if (floorId) {
-    const e = store.get(floorId);
-    return e;
-  }
-}
-const breadcrumb$9 = {
-  queryNode: {
-    _: [
-      "id",
-      "name",
-      {
-        name: "building",
-        _: ["name", "id", "color"]
-      }
-    ],
-    name: "floor"
-  },
-  path: ["building"],
-  useData: useFloorBreadcrumbData
-};
-function appBarBackgroundColor(masterData, e) {
-  var _a;
-  return (_a = e.building) == null ? void 0 : _a.color;
-}
-function useFloorBreadcrumbData(floorId) {
-  const floor2 = useFloor(floorId);
-  const building2 = useBuilding(floor2.buildingId);
-  return { ...floor2, building: building2 };
-}
-function floorEntityToStringWithContext(i18n, masterData, floor2) {
-  var _a;
-  if (!floor2) {
-    return entityToString("floor", floor2);
-  }
-  const floorMd = masterData.floors.get(floor2.id) ?? floor2;
-  const { buildingId } = floorMd;
-  const building2 = masterData.buildings.get(buildingId);
-  if (building2) {
-    return `${floorMd.name ?? floorMd.id} < ${building2.name ?? building2.id}`;
-  }
-  return floorMd.name || ((_a = floorMd.id) == null ? void 0 : _a.toString()) || "floor?";
-}
-const floor = {
-  breadcrumb: breadcrumb$9,
-  appBarBackgroundColor,
-  entityToStringWithContext: floorEntityToStringWithContext,
-  pathToBuilding: ["building"],
-  defaultSortOrder: sortFloorWithMasterData
-};
-const itemBreadcrumbQueryNode = {
-  _: [
-    "id",
-    "reference",
-    "code",
-    "itemTypeId"
-  ],
-  name: "item"
-};
-const itemBreadcrumb = {
-  queryNode: itemBreadcrumbQueryNode,
-  path: ["itemType"]
-};
-const item = {
-  breadcrumb: itemBreadcrumb,
-  entityToString: itemEntityToString,
-  pathToBuilding: ["room", "floor", "building"]
-};
-function itemEntityToString(i18n, e) {
-  if (e) {
-    const { itemType: itemType2 } = e;
-    if (itemType2) {
-      return `${itemType2.name} (${e.reference || e.id})`;
-    } else if (e.reference) {
-      return e.reference;
-    }
-  }
-  return e ? `item|${e.id}` : "?";
-}
-const itemTypeStoreAtom = atomFamily({
-  key: "itemTypeStore",
-  default: void 0
-});
-const atom_$6 = itemTypeStoreAtom;
-function useItemTypes() {
-  const currentCompany = useCurrentCompany();
-  const store = useRecoilValue_TRANSITION_SUPPORT_UNSTABLE(atom_$6(currentCompany.name));
-  if (!store) {
-    throw new Error("ItemTypeStore is not loaded");
-  }
-  return store;
-}
-function useItemType(itemTypeId) {
-  const e = useItemTypeOptional(itemTypeId);
-  if (!e) {
-    throw new Error(`itemType is missing in store for id : ${itemTypeId}`);
-  }
-  return e;
-}
-function useItemTypeOptional(itemTypeId) {
-  const store = useItemTypes();
-  if (itemTypeId) {
-    const e = store.get(itemTypeId);
-    return e;
-  }
-}
-const breadcrumb$8 = {
-  queryNode: {
-    _: [
-      "id",
-      "name"
-    ],
-    name: "itemType"
-  },
-  path: [],
-  useData: (id) => useItemType(id)
-};
-const itemType = {
-  breadcrumb: breadcrumb$8,
-  entityToString: (i18n, e) => `${e == null ? void 0 : e.name}` || entityToString("itemType", e)
-};
-function keepStartOfStrings(tokens, maxLength) {
-  return tokens.map((t) => t.substring(0, maxLength));
-}
-function cleanExcelWorksheetName(title) {
-  const removedQuotes = title.replace(/'/g, " ");
-  if (removedQuotes.length > 31) {
-    return keepStartOfStrings(removedQuotes.split(" "), 5).map((t) => capitalizeFirstLetter(t)).join("").substring(0, 31);
-  }
-  return removedQuotes;
-}
-const green = { argb: "0080FABC" };
-const personProperties = [
-  "id",
-  "firstname",
-  "lastname",
-  "code",
-  {
-    name: "organization",
-    _: ["name", { name: "organization", _: ["name"] }]
-  }
-];
-function roomAffectationsByRooms(translation, roomIds) {
-  return {
-    objectTypeName: "room",
-    exportType: "hasManyRec",
-    columnNameMappings: {
-      "G": { label: "Espace (Départ)" },
-      "H": { label: "Étage (Départ)" },
-      "I": { label: "Bâtiment (Départ)" },
-      "K": { label: "Nom de l espace (workplaceAffectation:workplace:room)", fgColor: green },
-      "L": { label: "Nom de l étage (workplaceAffectation:workplace:room:floor)", fgColor: green },
-      "M": { label: "Nom du bâtiment (workplaceAffectation:workplace:room:floor:building)", fgColor: green }
-    },
-    worksheetName: cleanExcelWorksheetName(objectTypeCapitalizedPluralLabel(translation, "roomAffectation")),
-    queryNode: {
-      name: "roomAffectation",
-      required: true,
-      _: [
-        { name: "person", _: personProperties },
-        roomToBuildingWithRoomFilterQueryNode(roomIds, true),
-        "id"
-      ]
-    }
-  };
-}
-function workplaceAffectationsByRooms(translation, roomIds) {
-  return {
-    objectTypeName: "room",
-    exportType: "hasManyRec",
-    columnNameMappings: {
-      "G": { label: "Poste de travail (Départ)" },
-      "H": { label: "Espace (Départ)" },
-      "I": { label: "Étage (Départ)" },
-      "J": { label: "Bâtiment (Départ)" },
-      "L": { label: "Nom du poste de travail (workplaceAffectation:workplace)", fgColor: green },
-      "M": { label: "Nom de l espace (workplaceAffectation:workplace:room)", fgColor: green },
-      "N": { label: "Nom de l étage (workplaceAffectation:workplace:room:floor)", fgColor: green },
-      "O": { label: "Nom du bâtiment (workplaceAffectation:workplace:room:floor:building)", fgColor: green }
-    },
-    worksheetName: cleanExcelWorksheetName(objectTypeCapitalizedPluralLabel(translation, "workplaceAffectation")),
-    queryNode: {
-      name: "workplaceAffectation",
-      required: true,
-      _: [
-        { name: "person", _: personProperties },
-        {
-          name: "workplace",
-          required: true,
-          _: [
-            "name",
-            roomToBuildingWithRoomFilterQueryNode(roomIds, true)
-          ]
-        },
-        "id"
-      ]
-    }
-  };
-}
-const mouvementMatrixExportQueryNodes = (translation, roomIds) => [
-  workplaceAffectationsByRooms(translation, roomIds),
-  roomAffectationsByRooms(translation, roomIds)
-];
-const mouvementMatrixReport = { name: "mouvementMatrix", iconObjectTypeName: "workplaceAffectation", exportQueryNodes: mouvementMatrixExportQueryNodes };
-function roomToBuildingWithRoomFilterQueryNode(roomIds, required) {
-  return {
-    name: "room",
-    required,
-    filters: [createFilter("in", "id", roomIds)],
-    _: ["name", {
-      name: "floor",
-      required,
-      _: ["name", {
-        name: "building",
-        required,
-        _: ["name"]
-      }]
-    }]
-  };
-}
-thenBy_moduleExports.firstBy((a, b) => {
-  return a.floor && b.floor ? a.floor.buildingId - b.floor.buildingId : 0;
-}).thenBy((a, b) => {
-  return a.floorId - b.floorId;
-}).thenBy((a, b) => {
-  return a.name && b.name ? a.name.localeCompare(b.name) : 0;
-});
-const sortRoomWithMasterData = (masterData) => {
-  return thenBy_moduleExports.firstBy((a, b) => {
-    var _a, _b;
-    const fA = masterData.floors.get(a.floorId || ((_a = a.floor) == null ? void 0 : _a.id) || 0);
-    const fB = masterData.floors.get(b.floorId || ((_b = b.floor) == null ? void 0 : _b.id) || 0);
-    const bA = masterData.buildings.get((fA == null ? void 0 : fA.buildingId) || 0);
-    const bB = masterData.buildings.get((fB == null ? void 0 : fB.buildingId) || 0);
-    return bA && bB ? sortOnName(bA, bB) : 0;
-  }).thenBy((a, b) => {
-    var _a, _b;
-    const fA = masterData.floors.get(a.floorId || ((_a = a.floor) == null ? void 0 : _a.id) || 0);
-    const fB = masterData.floors.get(b.floorId || ((_b = b.floor) == null ? void 0 : _b.id) || 0);
-    return fA && fB ? sortOnLevel(fA, fB) : 0;
-  }).thenBy((a, b) => {
-    return a.name && b.name ? sortOnNameOptional(a, b) : 0;
-  });
-};
-const roomBreadcrumb = {
-  queryNode: {
-    _: [
-      "id",
-      "name",
-      "floorId"
-    ],
-    name: "room"
-  },
-  path: ["floor", "building"]
-};
-function roomEntityToStringWithContext(i18n, masterData, r2) {
-  var _a;
-  if (!r2) {
-    return entityToString("room", r2);
-  }
-  const { floor: floor2 } = r2;
-  if (floor2) {
-    return `${floorEntityToStringWithContext(i18n, masterData, floor2)} > ${r2.name || r2.id}`;
-  }
-  return `${r2.name}` || ((_a = r2.id) == null ? void 0 : _a.toString()) || "room?";
-}
-const room = {
-  breadcrumb: roomBreadcrumb,
-  entityToStringWithContext: roomEntityToStringWithContext,
-  appBarBackgroundColor: (masterData, e) => {
-    const floor2 = masterData.floors.get(e.floorId);
-    const building2 = masterData.buildings.get((floor2 == null ? void 0 : floor2.buildingId) ?? 0);
-    return building2 == null ? void 0 : building2.color;
-  },
-  reports: [mouvementMatrixReport],
-  defaultSortOrder: sortRoomWithMasterData,
-  pathToBuilding: ["floor", "building"]
-};
-const workplaceBreadcrumbQueryNode = {
-  _: ["id", "name", {
-    name: "room",
-    _: ["id", "name", "floorId"]
-  }],
-  name: "workplace"
-};
-const workplaceBreadcrumb = {
-  queryNode: workplaceBreadcrumbQueryNode,
-  path: ["room", "floor", "building"]
-};
-function workplaceEntityToStringWithContext(i18n, masterData, w) {
-  var _a;
-  if (!w) {
-    return entityToString("workplace", w);
-  }
-  const { room: room2 } = w;
-  if (room2) {
-    return `${roomEntityToStringWithContext(i18n, masterData, room2)} > ${w.name || w.id}`;
-  }
-  return w.name || ((_a = w.id) == null ? void 0 : _a.toString());
-}
-const workplace = {
-  breadcrumb: workplaceBreadcrumb,
-  entityToStringWithContext: workplaceEntityToStringWithContext,
-  appBarBackgroundColor: (masterData, e) => {
-    var _a;
-    const floor2 = masterData.floors.get(((_a = e.room) == null ? void 0 : _a.floorId) ?? 0);
-    const building2 = masterData.buildings.get((floor2 == null ? void 0 : floor2.buildingId) ?? 0);
-    return building2 == null ? void 0 : building2.color;
-  },
-  pathToBuilding: ["room", "floor", "building"]
-};
-const organizationStoreAtom = atomFamily({
-  key: "organizationStore",
-  default: void 0
-});
-const atom_$5 = organizationStoreAtom;
-function useOrganizations() {
-  const currentCompany = useCurrentCompany();
-  const store = useRecoilValue_TRANSITION_SUPPORT_UNSTABLE(atom_$5(currentCompany.name));
-  if (!store) {
-    throw new Error("OrganizationStore is not loaded");
-  }
-  return store;
-}
-function useOrganization(organizationId) {
-  const e = useOrganizationOptional(organizationId);
-  if (!e) {
-    throw new Error(`organization is missing in store for id : ${organizationId}`);
-  }
-  return e;
-}
-function useOrganizationOptional(organizationId) {
-  const store = useOrganizations();
-  if (organizationId) {
-    const e = store.get(organizationId);
-    return e;
-  }
-}
-const breadcrumb$7 = {
-  queryNode: {
-    _: [
-      "id",
-      "name",
-      "organizationId"
-    ],
-    name: "organization"
-  },
-  path: ["organization"],
-  useData: (id) => useOrganization(id)
-};
-const organization = {
-  entityToString: (i18n, o) => {
-    if ((o == null ? void 0 : o.name) && (o == null ? void 0 : o.organization)) {
-      return `${o.name} (${o.organization.name})`;
-    }
-    return (o == null ? void 0 : o.name) || entityToString("organization", o);
-  },
-  breadcrumb: breadcrumb$7
-};
-const workplaceTypeStoreAtom = atomFamily({
-  key: "workplaceTypeStore",
-  default: void 0
-});
-const atom_$4 = workplaceTypeStoreAtom;
-function useWorkplaceTypes() {
-  const currentCompany = useCurrentCompany();
-  const store = useRecoilValue_TRANSITION_SUPPORT_UNSTABLE(atom_$4(currentCompany.name));
-  if (!store) {
-    throw new Error("WorkplaceTypeStore is not loaded");
-  }
-  return store;
-}
-function useWorkplaceType(workplaceTypeId) {
-  const e = useWorkplaceTypeOptional(workplaceTypeId);
-  if (!e) {
-    throw new Error(`workplaceType is missing in store for id : ${workplaceTypeId}`);
-  }
-  return e;
-}
-function useWorkplaceTypeOptional(workplaceTypeId) {
-  const store = useWorkplaceTypes();
-  if (workplaceTypeId) {
-    const e = store.get(workplaceTypeId);
-    return e;
-  }
-}
-const workplaceTypeBreadcrumb = {
-  queryNode: {
-    _: ["id", "name"],
-    name: "workplaceType"
-  },
-  path: [],
-  useData: (id) => {
-    return useWorkplaceType(id);
-  }
-};
-const workplaceType = {
-  entityToString: (i18n, e) => {
-    if (e) {
-      return e.name;
-    }
-    return "workplaceType|?";
-  },
-  breadcrumb: workplaceTypeBreadcrumb
-};
-const breadcrumb$6 = {
-  queryNode: {
-    _: ["id", workplaceBreadcrumbQueryNode],
-    name: "workplaceAffectation"
-  },
-  path: ["workplace", "room", "floor", "building"]
-};
-function workplaceAffectationEntityToString(i18n, wa) {
-  if (wa) {
-    const { person: person2, workplace: workplace2 } = wa;
-    if (person2 && workplace2) {
-      return `${personEntityToString(i18n, person2)} - ${entityToString("workplace", workplace2)}`;
-    }
-  }
-  return entityToString("workplaceAffectation", wa);
-}
-const workplaceAffectation = {
-  breadcrumb: breadcrumb$6,
-  entityToString: workplaceAffectationEntityToString,
-  pathToBuilding: ["workplace", "room", "floor", "building"]
-};
-function isExportQueytNode(r2) {
-  return !!r2;
-}
-const companyExportAllQueryNodes = (translation, companyIds) => {
-  const privateObjectTypes = getAllObjectTypeDefinitions().filter((otDef) => otDef.scope === "private");
-  const excludeProperties = [];
-  const companyObjectTypeDefinition = getObjectTypeDefinitionByName("company");
-  return [companyObjectTypeDefinition, ...privateObjectTypes].map((otDef) => {
-    const properties2 = getObjectTypePropertyTypesWithFilter(otDef.name, [isPropertyTypeScalar, isPropertyTypeId]);
-    const propertyNames = properties2.map(({ name }) => name);
-    const filters2 = propertyNames.includes("companyId") ? [createFilter("in", "companyId", companyIds)] : void 0;
-    const _ = jupDifferenceWith(propertyNames, excludeProperties);
-    const r2 = {
-      exportType: "hasManyCount",
-      objectTypeName: otDef.name,
-      includeForeignKeys: true,
-      queryNode: {
-        name: otDef.name,
-        filters: filters2,
-        _
-      }
-    };
-    return r2;
-  }).filter(isExportQueytNode);
-};
-const companyExportAllReport = { name: "export-all", iconObjectTypeName: "company", exportQueryNodes: companyExportAllQueryNodes };
-const breadcrumb$5 = {
-  queryNode: {
-    _: [
-      "id",
-      "name"
-    ],
-    name: "company"
-  },
-  path: []
-};
-const company = {
-  breadcrumb: breadcrumb$5,
-  reports: [
-    companyExportAllReport
-    // companyExportAllDuplicateReport
-  ]
-};
-const queryNode$1 = { name: "buildingType", _: ["id", "name"] };
-const buildingType = {
-  breadcrumb: { queryNode: queryNode$1, path: [] },
-  entityToString: (i18n, e) => (e == null ? void 0 : e.name) || entityToString("buildingType", e)
-};
-const personSecurityProfileStoreAtom = atomFamily({
-  key: "personSecurityProfileStore",
-  default: void 0
-});
-const atom_$3 = personSecurityProfileStoreAtom;
-function usePersonSecurityProfiles() {
-  const currentCompany = useCurrentCompany();
-  const store = useRecoilValue_TRANSITION_SUPPORT_UNSTABLE(atom_$3(currentCompany.name));
-  if (!store) {
-    throw new Error("PersonSecurityProfileStore is not loaded");
-  }
-  return store;
-}
-function usePersonSecurityProfile(personSecurityProfileId) {
-  const e = usePersonSecurityProfileOptional(personSecurityProfileId);
-  if (!e) {
-    throw new Error(`personSecurityProfile is missing in store for id : ${personSecurityProfileId}`);
-  }
-  return e;
-}
-function usePersonSecurityProfileOptional(personSecurityProfileId) {
-  const store = usePersonSecurityProfiles();
-  if (personSecurityProfileId) {
-    const e = store.get(personSecurityProfileId);
-    return e;
-  }
-}
-const breadcrumb$4 = {
-  queryNode: {
-    _: [
-      "id",
-      "name"
-    ],
-    name: "personSecurityProfile"
-  },
-  path: [],
-  useData: (id) => usePersonSecurityProfile(id)
-};
-const personSecurityProfile = {
-  breadcrumb: breadcrumb$4,
-  entityToString: (i18n, e) => e ? e.name : "?"
-};
-const personStateStoreAtom = atomFamily({
-  key: "personStateStore",
-  default: void 0
-});
-const atom_$2 = personStateStoreAtom;
-function usePersonStates() {
-  const currentCompany = useCurrentCompany();
-  const store = useRecoilValue_TRANSITION_SUPPORT_UNSTABLE(atom_$2(currentCompany.name));
-  if (!store) {
-    throw new Error("PersonStateStore is not loaded");
-  }
-  return store;
-}
-function usePersonState(personStateId) {
-  const e = usePersonStateOptional(personStateId);
-  if (!e) {
-    throw new Error(`personState is missing in store for id : ${personStateId}`);
-  }
-  return e;
-}
-function usePersonStateOptional(personStateId) {
-  const store = usePersonStates();
-  if (personStateId) {
-    const e = store.get(personStateId);
-    return e;
-  }
-}
-const breadcrumb$3 = {
-  queryNode: {
-    _: [
-      "id",
-      "name"
-    ],
-    name: "personState"
-  },
-  path: [],
-  useData: (id) => usePersonState(id)
-};
-const personState = {
-  breadcrumb: breadcrumb$3,
-  entityToString: (i18n, e) => e ? e.name : "?"
-};
-const costCenterStoreAtom = atomFamily({
-  key: "costCenterStore",
-  default: void 0
-});
-const atom_$1 = costCenterStoreAtom;
-function useCostCenters() {
-  const currentCompany = useCurrentCompany();
-  const store = useRecoilValue_TRANSITION_SUPPORT_UNSTABLE(atom_$1(currentCompany.name));
-  if (!store) {
-    throw new Error("CostCenterStore is not loaded");
-  }
-  return store;
-}
-function useCostCenter(costCenterId) {
-  const e = useCostCenterOptional(costCenterId);
-  if (!e) {
-    throw new Error(`costCenter is missing in store for id : ${costCenterId}`);
-  }
-  return e;
-}
-function useCostCenterOptional(costCenterId) {
-  const store = useCostCenters();
-  if (costCenterId) {
-    const e = store.get(costCenterId);
-    return e;
-  }
-}
-const costCenterBreadcrumb = {
-  path: [],
-  useData: (id) => useCostCenter(id)
-};
-const costCenter = {
-  breadcrumb: costCenterBreadcrumb,
-  entityToString: (i18n, e) => e ? e.name : "?"
-};
-const queryNode = { name: "roomType", _: ["id", "name"] };
-const roomType = {
-  breadcrumb: { queryNode, path: [] },
-  entityToString: (i18n, e) => (e == null ? void 0 : e.name) || entityToString("roomType", e)
-};
-const userBreadcrumb = {
-  queryNode: {
-    name: "user",
-    _: ["id", "firstname", "lastname", "sub", "picture"]
-  },
-  path: []
-};
-function userEntityToString(i18n, r2) {
-  var _a;
-  if (!r2) {
-    return entityToString("user", r2);
-  }
-  return userDisplayName(r2) || ((_a = r2.id) == null ? void 0 : _a.toString());
-}
-const user = {
-  breadcrumb: userBreadcrumb,
-  entityToString: userEntityToString
-};
-const jupRoleBreadcrumb = {
-  queryNode: {
-    _: ["id", "name", "code"],
-    name: "jupRole"
-  },
-  path: []
-};
-function jupRoleEntityToString(i18n, r2) {
-  var _a;
-  if (!r2) {
-    return entityToString("jupRole", r2);
-  }
-  return r2.name && r2.code ? `${r2.name} (${r2.code})` : r2.name || ((_a = r2.id) == null ? void 0 : _a.toString());
-}
-const jupRole = {
-  breadcrumb: jupRoleBreadcrumb,
-  entityToString: jupRoleEntityToString
-};
-const luxonPlanningDayCardFormat = "cccc d LLLL";
-const luxonPlanningDateRangeDayFormat = "cccc d LLLL";
-const luxonPlanningDateRangeHourFormat = "HH:mm";
-function formatPersonToWorkplaceBooking(booking) {
-  const { person: person2, workplace: workplace2, startDatetime, endDatetime } = booking;
-  let personString = "";
-  if (person2) {
-    personString = entityToString("person", person2);
-  }
-  let workplaceString = "";
-  if (workplace2) {
-    workplaceString = entityToString("workplace", workplace2);
-  }
-  let timeString = "";
-  if (startDatetime && endDatetime) {
-    const startDate = DateTime.fromISO(startDatetime);
-    const endDate = DateTime.fromISO(endDatetime);
-    if (startDate.isValid && endDate.isValid) {
-      const dayS = startDate.toFormat(luxonPlanningDateRangeDayFormat);
-      const dayE = endDate.toFormat(luxonPlanningDateRangeDayFormat);
-      if (dayS === dayE) {
-        timeString = `${dayS} ${startDate.toFormat(luxonPlanningDateRangeHourFormat)} - ${endDate.toFormat(luxonPlanningDateRangeHourFormat)}`;
-      } else {
-        const startFormatted = startDate.toFormat(`${luxonPlanningDateRangeDayFormat} ${luxonPlanningDateRangeHourFormat}`);
-        const endFormatted = endDate.toFormat(`${luxonPlanningDateRangeDayFormat} ${luxonPlanningDateRangeHourFormat}`);
-        timeString = `${startFormatted} - ${endFormatted}`;
-      }
-    } else {
-      timeString = `${startDatetime} - ${endDatetime}`;
-    }
-  }
-  const parts = [personString, workplaceString, timeString].filter(Boolean);
-  return parts.join(" - ");
-}
-function personToWorkplaceBookingEntityToString(i18n, booking) {
-  if (booking) {
-    return formatPersonToWorkplaceBooking(booking);
-  }
-  return entityToString("personToWorkplaceBooking", booking);
-}
-const personToWorkplaceBooking = {
-  entityToString: personToWorkplaceBookingEntityToString
-};
-function formatPersonWorkingLocation(pwl, translation) {
-  const { date, daySlotType, workingLocation } = pwl;
-  let dateString = "";
-  if (date) {
-    const luxonDate = DateTime.fromISO(date);
-    if (luxonDate.isValid) {
-      dateString = luxonDate.toFormat(luxonPlanningDayCardFormat);
-    } else {
-      dateString = date;
-    }
-  }
-  let slotString = "";
-  if (daySlotType) {
-    {
-      switch (daySlotType) {
-        case "am":
-          slotString = "AM";
-          break;
-        case "pm":
-          slotString = "PM";
-          break;
-        case "all":
-          slotString = "All Day";
-          break;
-        case "custom":
-          slotString = "Custom";
-          break;
-        default:
-          slotString = daySlotType;
-      }
-    }
-  }
-  let locationString = "";
-  if (workingLocation) {
-    locationString = entityToString("workingLocation", workingLocation);
-  }
-  const parts = [dateString, slotString, locationString].filter(Boolean);
-  return parts.join(" - ");
-}
-function personWorkingLocationEntityToString(i18n, pwl) {
-  if (pwl) {
-    return formatPersonWorkingLocation(pwl);
-  }
-  return entityToString("personWorkingLocation", pwl);
-}
-const personWorkingLocation = {
-  entityToString: personWorkingLocationEntityToString
-};
-const breadcrumb$2 = {
-  queryNode: {
-    _: [
-      "id",
-      "labelBackward",
-      "labelForward"
-    ],
-    name: "personToPersonType"
-  },
-  path: []
-};
-const personToPersonTypeEntityToString = (i18n, e) => {
-  return e ? `${e.labelForward} (${e.labelBackward})` : "?";
-};
-const personToPersonType = {
-  breadcrumb: breadcrumb$2,
-  entityToString: personToPersonTypeEntityToString
-};
-const jupUserCompanyToJupRoleBreadcrumb = {
-  queryNode: {
-    _: [
-      "id",
-      { name: "jupRole", _: ["name", "id"] },
-      userCompanyBreadcrumbQueryNode
-    ],
-    name: "jupUserCompanyToJupRole"
-  },
-  path: ["userCompany", "user"]
-};
-function jupUserCompanyToJupRoleEntityToString(i18n, masterData, r2) {
-  var _a, _b, _c;
-  if (!r2) {
-    return entityToString("jupUserCompanyToJupRole", r2);
-  }
-  const { userCompany: userCompany2 } = r2;
-  if (userCompany2 == null ? void 0 : userCompany2.user) {
-    return `${userDisplayName(userCompany2 == null ? void 0 : userCompany2.user)} | ${(_a = r2.jupRole) == null ? void 0 : _a.name}`;
-  }
-  return ((_b = r2.jupRole) == null ? void 0 : _b.name) || ((_c = r2.id) == null ? void 0 : _c.toString());
-}
-const jupUserCompanyToJupRole = {
-  breadcrumb: jupUserCompanyToJupRoleBreadcrumb,
-  entityToStringWithContext: jupUserCompanyToJupRoleEntityToString
-};
-const jupRoleToJupObjectTypeBreadcrumb = {
-  queryNode: {
-    _: [
-      "id",
-      "arCreate",
-      "arDelete",
-      "arRead",
-      "arUpdate",
-      { name: "jupRole", _: ["name", "id"] },
-      { name: "jupObjectType", _: ["name", "id"] }
-    ],
-    name: "jupRoleToJupObjectType"
-  },
-  path: []
-};
-function jupRoleToJupObjectTypeEntityToString(i18n, r2) {
-  var _a, _b, _c, _d, _e;
-  if (!r2) {
-    return entityToString("jupRoleToJupObjectType", r2);
-  }
-  const ar = [];
-  if (r2.arCreate) ar.push("C");
-  if (r2.arRead) ar.push("R");
-  if (r2.arUpdate) ar.push("U");
-  if (r2.arDelete) ar.push("D");
-  if (((_a = r2.jupRole) == null ? void 0 : _a.name) && ((_b = r2.jupObjectType) == null ? void 0 : _b.name) && ar.length > 0) {
-    return `${(_c = r2.jupRole) == null ? void 0 : _c.name} - ${(_d = r2.jupObjectType) == null ? void 0 : _d.name} (${ar.join("")})`;
-  }
-  return (_e = r2.id) == null ? void 0 : _e.toString();
-}
-const jupRoleToJupObjectType = {
-  breadcrumb: jupRoleToJupObjectTypeBreadcrumb,
-  entityToString: jupRoleToJupObjectTypeEntityToString
-};
-const jupObjectTypeBreadcrumb = {
-  queryNode: {
-    _: ["id", "name"],
-    name: "jupObjectType"
-  },
-  path: []
-};
-function jupObjectTypeEntityToString(i18n, r2) {
-  if (!r2) {
-    return entityToString("jupObjectType", r2);
-  }
-  if (!r2.name) {
-    return entityToString("jupObjectType", r2);
-  }
-  return getObjectTypeCapitalizedSingularLabel(i18n.translate, r2.name);
-}
-const jupObjectType = {
-  breadcrumb: jupObjectTypeBreadcrumb,
-  entityToString: jupObjectTypeEntityToString
-};
-const jupUiOptionBreadcrumb = {
-  queryNode: {
-    _: ["id", "name"],
-    name: "jupUiOption"
-  },
-  path: []
-};
-const jupUiOption = {
-  breadcrumb: jupUiOptionBreadcrumb
-};
-const breadcrumb$1 = {
-  queryNode: {
-    _: ["id", itemBreadcrumbQueryNode],
-    name: "itemToPerson"
-  },
-  path: ["item", "room", "floor", "building"]
-};
-function itemToPersonEntityToString(i18n, wa) {
-  if (wa) {
-    const { person: person2, item: item2 } = wa;
-    if (person2 && item2) {
-      return `${personEntityToString(i18n, person2)} - ${itemEntityToString(i18n, item2)}`;
-    }
-  }
-  return entityToString("itemToPerson", wa);
-}
-const itemToPerson = {
-  breadcrumb: breadcrumb$1,
-  entityToString: itemToPersonEntityToString,
-  pathToBuilding: ["item", "room", "floor", "building"]
-};
-function dimensionTypeLabel(i18nApi, dt) {
-  const key = `dimensionTypes.${dt.name}.one`;
-  if (i18nApi.keyExists(key)) {
-    return i18nApi.translate(key);
-  }
-  return dt.name;
-}
-const dimensionTypeStoreAtom = atomFamily({
-  key: "dimensionTypeStore",
-  default: void 0
-});
-const atom_ = dimensionTypeStoreAtom;
-function useDimensionTypes() {
-  const currentCompany = useCurrentCompany();
-  const store = useRecoilValue_TRANSITION_SUPPORT_UNSTABLE(atom_(currentCompany.name));
-  if (!store) {
-    throw new Error("DimensionTypeStore is not loaded");
-  }
-  return store;
-}
-function useDimensionType(dimensionTypeId) {
-  const e = useDimensionTypeOptional(dimensionTypeId);
-  if (!e) {
-    throw new Error(`dimensionType is missing in store for id : ${dimensionTypeId}`);
-  }
-  return e;
-}
-function useDimensionTypeOptional(dimensionTypeId) {
-  const store = useDimensionTypes();
-  if (dimensionTypeId) {
-    const e = store.get(dimensionTypeId);
-    return e;
-  }
-}
-const dtBreadcrumb = {
-  queryNode: {
-    _: [
-      "id",
-      "name"
-    ],
-    name: "dimensionType"
-  },
-  path: [],
-  useData: (id) => useDimensionType(id)
-};
-const dimensionType = {
-  entityToString: (i18n, e) => e ? dimensionTypeLabel(i18n, e) : "?",
-  breadcrumb: dtBreadcrumb
-};
-function dimensionEntityToString(i18n, e) {
-  return e ? e.name : entityToString("dimension", e);
-}
-const dimension = {
-  entityToString: dimensionEntityToString,
-  breadcrumb: {
-    queryNode: {
-      _: ["id", "name", "dimensionTypeId", { name: "dimensionType", _: ["id", "name"] }],
-      name: "dimension"
-    },
-    path: ["dimensionType"]
-  }
-};
-const dimensionToPerson = {
-  entityToString: (i18n, e) => {
-    if (!e) {
-      return entityToString("dimensionToPerson", e);
-    }
-    const r2 = [
-      dimensionEntityToString(i18n, e.dimension),
-      personEntityToString(i18n, e.person)
-    ];
-    return r2.join(" - ");
-  },
-  pathToBuilding: ["dimension", "dimensionType"]
-};
-const contentRoleToUserCompany = {
-  entityToString: (i18n, e) => {
-    var _a, _b;
-    if ((_a = e == null ? void 0 : e.contentRole) == null ? void 0 : _a.name) {
-      return (_b = e.contentRole) == null ? void 0 : _b.name;
-    }
-    return entityToString("contentRoleToUserCompany", e);
-  }
-};
-const breadcrumb = {
-  queryNode: {
-    _: [
-      "id",
-      "name"
-    ],
-    name: "object3dModel"
-  },
-  path: []
-};
-const object3dModel = {
-  breadcrumb,
-  entityToString: (i18n, e) => `${e == null ? void 0 : e.name}` || entityToString("object3dModel", e)
-};
-function getJupUiLayoutLabel(translation, jupUiLayout2) {
-  return translation(`layoutViewSets.${jupUiLayout2.name}.label`);
-}
-const jupUiLayout = {
-  entityToString: (i18n, e) => e ? getJupUiLayoutLabel(i18n.translate, e) : entityToString("jupUiLayout", e)
-};
-const customizedObjectTypes = {
-  person,
-  item,
-  company,
-  itemType,
-  object3dModel,
-  personSecurityProfile,
-  personState,
-  organization,
-  buildingType,
-  roomAffectation,
-  dimensionToPerson,
-  building,
-  floor,
-  dimensionType,
-  dimension,
-  room,
-  workplace,
-  workplaceAffectation,
-  workplaceType,
-  costCenter,
-  roomType,
-  userCompany,
-  user,
-  itemToPerson,
-  jupUserCompanyToJupRole,
-  jupRoleToJupObjectType,
-  jupRole,
-  jupObjectType,
-  jupUiOption,
-  personToPersonType,
-  personWorkingLocation,
-  personToWorkplaceBooking,
-  contentRoleToUserCompany,
-  jupUiLayout,
-  dimensionFloor: {
-    pathToBuilding: ["floor", "building"]
-  },
-  organizationFloor: {
-    pathToBuilding: ["floor", "building"]
-  },
-  personCompany: {
-    breadcrumb: {
-      queryNode: { name: "personCompany", _: ["id", "name"] },
-      path: []
-    }
-  },
-  dimensionRoom: {
-    pathToBuilding: ["room", "floor", "building"]
-  },
-  contentRoleToFloor: {
-    pathToBuilding: ["floor", "building"]
-  }
-};
-var ElementType;
-(function(ElementType2) {
-  ElementType2["Root"] = "root";
-  ElementType2["Text"] = "text";
-  ElementType2["Directive"] = "directive";
-  ElementType2["Comment"] = "comment";
-  ElementType2["Script"] = "script";
-  ElementType2["Style"] = "style";
-  ElementType2["Tag"] = "tag";
-  ElementType2["CDATA"] = "cdata";
-  ElementType2["Doctype"] = "doctype";
-})(ElementType || (ElementType = {}));
-function isTag$1(elem) {
-  return elem.type === ElementType.Tag || elem.type === ElementType.Script || elem.type === ElementType.Style;
-}
-const Root = ElementType.Root;
-const Text$1 = ElementType.Text;
-const Directive = ElementType.Directive;
-const Comment$1 = ElementType.Comment;
-const Script = ElementType.Script;
-const Style = ElementType.Style;
-const Tag = ElementType.Tag;
-const CDATA$1 = ElementType.CDATA;
-const Doctype = ElementType.Doctype;
-class Node {
-  constructor() {
-    this.parent = null;
-    this.prev = null;
-    this.next = null;
-    this.startIndex = null;
-    this.endIndex = null;
-  }
-  // Read-write aliases for properties
-  /**
-   * Same as {@link parent}.
-   * [DOM spec](https://dom.spec.whatwg.org)-compatible alias.
-   */
-  get parentNode() {
-    return this.parent;
-  }
-  set parentNode(parent2) {
-    this.parent = parent2;
-  }
-  /**
-   * Same as {@link prev}.
-   * [DOM spec](https://dom.spec.whatwg.org)-compatible alias.
-   */
-  get previousSibling() {
-    return this.prev;
-  }
-  set previousSibling(prev2) {
-    this.prev = prev2;
-  }
-  /**
-   * Same as {@link next}.
-   * [DOM spec](https://dom.spec.whatwg.org)-compatible alias.
-   */
-  get nextSibling() {
-    return this.next;
-  }
-  set nextSibling(next2) {
-    this.next = next2;
-  }
-  /**
-   * Clone this node, and optionally its children.
-   *
-   * @param recursive Clone child nodes as well.
-   * @returns A clone of the node.
-   */
-  cloneNode(recursive = false) {
-    return cloneNode(this, recursive);
-  }
-}
-class DataNode extends Node {
-  /**
-   * @param data The content of the data node
-   */
-  constructor(data2) {
-    super();
-    this.data = data2;
-  }
-  /**
-   * Same as {@link data}.
-   * [DOM spec](https://dom.spec.whatwg.org)-compatible alias.
-   */
-  get nodeValue() {
-    return this.data;
-  }
-  set nodeValue(data2) {
-    this.data = data2;
-  }
-}
-class Text extends DataNode {
-  constructor() {
-    super(...arguments);
-    this.type = ElementType.Text;
-  }
-  get nodeType() {
-    return 3;
-  }
-}
-class Comment extends DataNode {
-  constructor() {
-    super(...arguments);
-    this.type = ElementType.Comment;
-  }
-  get nodeType() {
-    return 8;
-  }
-}
-class ProcessingInstruction extends DataNode {
-  constructor(name, data2) {
-    super(data2);
-    this.name = name;
-    this.type = ElementType.Directive;
-  }
-  get nodeType() {
-    return 1;
-  }
-}
-class NodeWithChildren extends Node {
-  /**
-   * @param children Children of the node. Only certain node types can have children.
-   */
-  constructor(children2) {
-    super();
-    this.children = children2;
-  }
-  // Aliases
-  /** First child of the node. */
-  get firstChild() {
-    var _a;
-    return (_a = this.children[0]) !== null && _a !== void 0 ? _a : null;
-  }
-  /** Last child of the node. */
-  get lastChild() {
-    return this.children.length > 0 ? this.children[this.children.length - 1] : null;
-  }
-  /**
-   * Same as {@link children}.
-   * [DOM spec](https://dom.spec.whatwg.org)-compatible alias.
-   */
-  get childNodes() {
-    return this.children;
-  }
-  set childNodes(children2) {
-    this.children = children2;
-  }
-}
-class CDATA extends NodeWithChildren {
-  constructor() {
-    super(...arguments);
-    this.type = ElementType.CDATA;
-  }
-  get nodeType() {
-    return 4;
-  }
-}
-class Document extends NodeWithChildren {
-  constructor() {
-    super(...arguments);
-    this.type = ElementType.Root;
-  }
-  get nodeType() {
-    return 9;
-  }
-}
-class Element extends NodeWithChildren {
-  /**
-   * @param name Name of the tag, eg. `div`, `span`.
-   * @param attribs Object mapping attribute names to attribute values.
-   * @param children Children of the node.
-   */
-  constructor(name, attribs, children2 = [], type2 = name === "script" ? ElementType.Script : name === "style" ? ElementType.Style : ElementType.Tag) {
-    super(children2);
-    this.name = name;
-    this.attribs = attribs;
-    this.type = type2;
-  }
-  get nodeType() {
-    return 1;
-  }
-  // DOM Level 1 aliases
-  /**
-   * Same as {@link name}.
-   * [DOM spec](https://dom.spec.whatwg.org)-compatible alias.
-   */
-  get tagName() {
-    return this.name;
-  }
-  set tagName(name) {
-    this.name = name;
-  }
-  get attributes() {
-    return Object.keys(this.attribs).map((name) => {
-      var _a, _b;
-      return {
-        name,
-        value: this.attribs[name],
-        namespace: (_a = this["x-attribsNamespace"]) === null || _a === void 0 ? void 0 : _a[name],
-        prefix: (_b = this["x-attribsPrefix"]) === null || _b === void 0 ? void 0 : _b[name]
-      };
-    });
-  }
-}
-function isTag(node2) {
-  return isTag$1(node2);
-}
-function isCDATA(node2) {
-  return node2.type === ElementType.CDATA;
-}
-function isText(node2) {
-  return node2.type === ElementType.Text;
-}
-function isComment(node2) {
-  return node2.type === ElementType.Comment;
-}
-function isDirective(node2) {
-  return node2.type === ElementType.Directive;
-}
-function isDocument(node2) {
-  return node2.type === ElementType.Root;
-}
-function hasChildren(node2) {
-  return Object.prototype.hasOwnProperty.call(node2, "children");
-}
-function cloneNode(node2, recursive = false) {
-  let result;
-  if (isText(node2)) {
-    result = new Text(node2.data);
-  } else if (isComment(node2)) {
-    result = new Comment(node2.data);
-  } else if (isTag(node2)) {
-    const children2 = recursive ? cloneChildren(node2.children) : [];
-    const clone2 = new Element(node2.name, { ...node2.attribs }, children2);
-    children2.forEach((child) => child.parent = clone2);
-    if (node2.namespace != null) {
-      clone2.namespace = node2.namespace;
-    }
-    if (node2["x-attribsNamespace"]) {
-      clone2["x-attribsNamespace"] = { ...node2["x-attribsNamespace"] };
-    }
-    if (node2["x-attribsPrefix"]) {
-      clone2["x-attribsPrefix"] = { ...node2["x-attribsPrefix"] };
-    }
-    result = clone2;
-  } else if (isCDATA(node2)) {
-    const children2 = recursive ? cloneChildren(node2.children) : [];
-    const clone2 = new CDATA(children2);
-    children2.forEach((child) => child.parent = clone2);
-    result = clone2;
-  } else if (isDocument(node2)) {
-    const children2 = recursive ? cloneChildren(node2.children) : [];
-    const clone2 = new Document(children2);
-    children2.forEach((child) => child.parent = clone2);
-    if (node2["x-mode"]) {
-      clone2["x-mode"] = node2["x-mode"];
-    }
-    result = clone2;
-  } else if (isDirective(node2)) {
-    const instruction = new ProcessingInstruction(node2.name, node2.data);
-    if (node2["x-name"] != null) {
-      instruction["x-name"] = node2["x-name"];
-      instruction["x-publicId"] = node2["x-publicId"];
-      instruction["x-systemId"] = node2["x-systemId"];
-    }
-    result = instruction;
-  } else {
-    throw new Error(`Not implemented yet: ${node2.type}`);
-  }
-  result.startIndex = node2.startIndex;
-  result.endIndex = node2.endIndex;
-  if (node2.sourceCodeLocation != null) {
-    result.sourceCodeLocation = node2.sourceCodeLocation;
-  }
-  return result;
-}
-function cloneChildren(childs) {
-  const children2 = childs.map((child) => cloneNode(child, true));
-  for (let i = 1; i < children2.length; i++) {
-    children2[i].prev = children2[i - 1];
-    children2[i - 1].next = children2[i];
-  }
-  return children2;
-}
-const xmlReplacer = /["&'<>$\x80-\uFFFF]/g;
-const xmlCodeMap = /* @__PURE__ */ new Map([
-  [34, "&quot;"],
-  [38, "&amp;"],
-  [39, "&apos;"],
-  [60, "&lt;"],
-  [62, "&gt;"]
-]);
-const getCodePoint = (
-  // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
-  String.prototype.codePointAt != null ? (str, index2) => str.codePointAt(index2) : (
-    // http://mathiasbynens.be/notes/javascript-encoding#surrogate-formulae
-    (c, index2) => (c.charCodeAt(index2) & 64512) === 55296 ? (c.charCodeAt(index2) - 55296) * 1024 + c.charCodeAt(index2 + 1) - 56320 + 65536 : c.charCodeAt(index2)
-  )
-);
-function encodeXML(str) {
-  let ret = "";
-  let lastIdx = 0;
-  let match2;
-  while ((match2 = xmlReplacer.exec(str)) !== null) {
-    const i = match2.index;
-    const char2 = str.charCodeAt(i);
-    const next2 = xmlCodeMap.get(char2);
-    if (next2 !== void 0) {
-      ret += str.substring(lastIdx, i) + next2;
-      lastIdx = i + 1;
-    } else {
-      ret += `${str.substring(lastIdx, i)}&#x${getCodePoint(str, i).toString(16)};`;
-      lastIdx = xmlReplacer.lastIndex += Number((char2 & 64512) === 55296);
-    }
-  }
-  return ret + str.substr(lastIdx);
-}
-function getEscaper(regex, map2) {
-  return function escape2(data2) {
-    let match2;
-    let lastIdx = 0;
-    let result = "";
-    while (match2 = regex.exec(data2)) {
-      if (lastIdx !== match2.index) {
-        result += data2.substring(lastIdx, match2.index);
-      }
-      result += map2.get(match2[0].charCodeAt(0));
-      lastIdx = match2.index + 1;
-    }
-    return result + data2.substring(lastIdx);
-  };
-}
-const escapeAttribute = getEscaper(/["&\u00A0]/g, /* @__PURE__ */ new Map([
-  [34, "&quot;"],
-  [38, "&amp;"],
-  [160, "&nbsp;"]
-]));
-const escapeText = getEscaper(/[&<>\u00A0]/g, /* @__PURE__ */ new Map([
-  [38, "&amp;"],
-  [60, "&lt;"],
-  [62, "&gt;"],
-  [160, "&nbsp;"]
-]));
-const elementNames = new Map([
-  "altGlyph",
-  "altGlyphDef",
-  "altGlyphItem",
-  "animateColor",
-  "animateMotion",
-  "animateTransform",
-  "clipPath",
-  "feBlend",
-  "feColorMatrix",
-  "feComponentTransfer",
-  "feComposite",
-  "feConvolveMatrix",
-  "feDiffuseLighting",
-  "feDisplacementMap",
-  "feDistantLight",
-  "feDropShadow",
-  "feFlood",
-  "feFuncA",
-  "feFuncB",
-  "feFuncG",
-  "feFuncR",
-  "feGaussianBlur",
-  "feImage",
-  "feMerge",
-  "feMergeNode",
-  "feMorphology",
-  "feOffset",
-  "fePointLight",
-  "feSpecularLighting",
-  "feSpotLight",
-  "feTile",
-  "feTurbulence",
-  "foreignObject",
-  "glyphRef",
-  "linearGradient",
-  "radialGradient",
-  "textPath"
-].map((val2) => [val2.toLowerCase(), val2]));
-const attributeNames = new Map([
-  "definitionURL",
-  "attributeName",
-  "attributeType",
-  "baseFrequency",
-  "baseProfile",
-  "calcMode",
-  "clipPathUnits",
-  "diffuseConstant",
-  "edgeMode",
-  "filterUnits",
-  "glyphRef",
-  "gradientTransform",
-  "gradientUnits",
-  "kernelMatrix",
-  "kernelUnitLength",
-  "keyPoints",
-  "keySplines",
-  "keyTimes",
-  "lengthAdjust",
-  "limitingConeAngle",
-  "markerHeight",
-  "markerUnits",
-  "markerWidth",
-  "maskContentUnits",
-  "maskUnits",
-  "numOctaves",
-  "pathLength",
-  "patternContentUnits",
-  "patternTransform",
-  "patternUnits",
-  "pointsAtX",
-  "pointsAtY",
-  "pointsAtZ",
-  "preserveAlpha",
-  "preserveAspectRatio",
-  "primitiveUnits",
-  "refX",
-  "refY",
-  "repeatCount",
-  "repeatDur",
-  "requiredExtensions",
-  "requiredFeatures",
-  "specularConstant",
-  "specularExponent",
-  "spreadMethod",
-  "startOffset",
-  "stdDeviation",
-  "stitchTiles",
-  "surfaceScale",
-  "systemLanguage",
-  "tableValues",
-  "targetX",
-  "targetY",
-  "textLength",
-  "viewBox",
-  "viewTarget",
-  "xChannelSelector",
-  "yChannelSelector",
-  "zoomAndPan"
-].map((val2) => [val2.toLowerCase(), val2]));
-const unencodedElements = /* @__PURE__ */ new Set([
-  "style",
-  "script",
-  "xmp",
-  "iframe",
-  "noembed",
-  "noframes",
-  "plaintext",
-  "noscript"
-]);
-function replaceQuotes(value) {
-  return value.replace(/"/g, "&quot;");
-}
-function formatAttributes(attributes2, opts) {
-  var _a;
-  if (!attributes2)
-    return;
-  const encode = ((_a = opts.encodeEntities) !== null && _a !== void 0 ? _a : opts.decodeEntities) === false ? replaceQuotes : opts.xmlMode || opts.encodeEntities !== "utf8" ? encodeXML : escapeAttribute;
-  return Object.keys(attributes2).map((key) => {
-    var _a2, _b;
-    const value = (_a2 = attributes2[key]) !== null && _a2 !== void 0 ? _a2 : "";
-    if (opts.xmlMode === "foreign") {
-      key = (_b = attributeNames.get(key)) !== null && _b !== void 0 ? _b : key;
-    }
-    if (!opts.emptyAttrs && !opts.xmlMode && value === "") {
-      return key;
-    }
-    return `${key}="${encode(value)}"`;
-  }).join(" ");
-}
-const singleTag = /* @__PURE__ */ new Set([
-  "area",
-  "base",
-  "basefont",
-  "br",
-  "col",
-  "command",
-  "embed",
-  "frame",
-  "hr",
-  "img",
-  "input",
-  "isindex",
-  "keygen",
-  "link",
-  "meta",
-  "param",
-  "source",
-  "track",
-  "wbr"
-]);
-function render(node2, options = {}) {
-  const nodes = "length" in node2 ? node2 : [node2];
-  let output = "";
-  for (let i = 0; i < nodes.length; i++) {
-    output += renderNode(nodes[i], options);
-  }
-  return output;
-}
-function renderNode(node2, options) {
-  switch (node2.type) {
-    case Root:
-      return render(node2.children, options);
-    // @ts-expect-error We don't use `Doctype` yet
-    case Doctype:
-    case Directive:
-      return renderDirective(node2);
-    case Comment$1:
-      return renderComment(node2);
-    case CDATA$1:
-      return renderCdata(node2);
-    case Script:
-    case Style:
-    case Tag:
-      return renderTag(node2, options);
-    case Text$1:
-      return renderText(node2, options);
-  }
-}
-const foreignModeIntegrationPoints = /* @__PURE__ */ new Set([
-  "mi",
-  "mo",
-  "mn",
-  "ms",
-  "mtext",
-  "annotation-xml",
-  "foreignObject",
-  "desc",
-  "title"
-]);
-const foreignElements = /* @__PURE__ */ new Set(["svg", "math"]);
-function renderTag(elem, opts) {
-  var _a;
-  if (opts.xmlMode === "foreign") {
-    elem.name = (_a = elementNames.get(elem.name)) !== null && _a !== void 0 ? _a : elem.name;
-    if (elem.parent && foreignModeIntegrationPoints.has(elem.parent.name)) {
-      opts = { ...opts, xmlMode: false };
-    }
-  }
-  if (!opts.xmlMode && foreignElements.has(elem.name)) {
-    opts = { ...opts, xmlMode: "foreign" };
-  }
-  let tag = `<${elem.name}`;
-  const attribs = formatAttributes(elem.attribs, opts);
-  if (attribs) {
-    tag += ` ${attribs}`;
-  }
-  if (elem.children.length === 0 && (opts.xmlMode ? (
-    // In XML mode or foreign mode, and user hasn't explicitly turned off self-closing tags
-    opts.selfClosingTags !== false
-  ) : (
-    // User explicitly asked for self-closing tags, even in HTML mode
-    opts.selfClosingTags && singleTag.has(elem.name)
-  ))) {
-    if (!opts.xmlMode)
-      tag += " ";
-    tag += "/>";
-  } else {
-    tag += ">";
-    if (elem.children.length > 0) {
-      tag += render(elem.children, opts);
-    }
-    if (opts.xmlMode || !singleTag.has(elem.name)) {
-      tag += `</${elem.name}>`;
-    }
-  }
-  return tag;
-}
-function renderDirective(elem) {
-  return `<${elem.data}>`;
-}
-function renderText(elem, opts) {
-  var _a;
-  let data2 = elem.data || "";
-  if (((_a = opts.encodeEntities) !== null && _a !== void 0 ? _a : opts.decodeEntities) !== false && !(!opts.xmlMode && elem.parent && unencodedElements.has(elem.parent.name))) {
-    data2 = opts.xmlMode || opts.encodeEntities !== "utf8" ? encodeXML(data2) : escapeText(data2);
-  }
-  return data2;
-}
-function renderCdata(elem) {
-  return `<![CDATA[${elem.children[0].data}]]>`;
-}
-function renderComment(elem) {
-  return `<!--${elem.data}-->`;
-}
-function getOuterHTML(node2, options) {
-  return render(node2, options);
-}
-function getInnerHTML(node2, options) {
-  return hasChildren(node2) ? node2.children.map((node3) => getOuterHTML(node3, options)).join("") : "";
-}
-function getText(node2) {
-  if (Array.isArray(node2))
-    return node2.map(getText).join("");
-  if (isTag(node2))
-    return node2.name === "br" ? "\n" : getText(node2.children);
-  if (isCDATA(node2))
-    return getText(node2.children);
-  if (isText(node2))
-    return node2.data;
-  return "";
-}
-function textContent(node2) {
-  if (Array.isArray(node2))
-    return node2.map(textContent).join("");
-  if (hasChildren(node2) && !isComment(node2)) {
-    return textContent(node2.children);
-  }
-  if (isText(node2))
-    return node2.data;
-  return "";
-}
-function innerText(node2) {
-  if (Array.isArray(node2))
-    return node2.map(innerText).join("");
-  if (hasChildren(node2) && (node2.type === ElementType.Tag || isCDATA(node2))) {
-    return innerText(node2.children);
-  }
-  if (isText(node2))
-    return node2.data;
-  return "";
-}
-function getChildren(elem) {
-  return hasChildren(elem) ? elem.children : [];
-}
-function getParent(elem) {
-  return elem.parent || null;
-}
-function getSiblings(elem) {
-  const parent2 = getParent(elem);
-  if (parent2 != null)
-    return getChildren(parent2);
-  const siblings2 = [elem];
-  let { prev: prev2, next: next2 } = elem;
-  while (prev2 != null) {
-    siblings2.unshift(prev2);
-    ({ prev: prev2 } = prev2);
-  }
-  while (next2 != null) {
-    siblings2.push(next2);
-    ({ next: next2 } = next2);
-  }
-  return siblings2;
-}
-function getAttributeValue(elem, name) {
-  var _a;
-  return (_a = elem.attribs) === null || _a === void 0 ? void 0 : _a[name];
-}
-function hasAttrib(elem, name) {
-  return elem.attribs != null && Object.prototype.hasOwnProperty.call(elem.attribs, name) && elem.attribs[name] != null;
-}
-function getName(elem) {
-  return elem.name;
-}
-function nextElementSibling(elem) {
-  let { next: next2 } = elem;
-  while (next2 !== null && !isTag(next2))
-    ({ next: next2 } = next2);
-  return next2;
-}
-function prevElementSibling(elem) {
-  let { prev: prev2 } = elem;
-  while (prev2 !== null && !isTag(prev2))
-    ({ prev: prev2 } = prev2);
-  return prev2;
-}
-function removeElement(elem) {
-  if (elem.prev)
-    elem.prev.next = elem.next;
-  if (elem.next)
-    elem.next.prev = elem.prev;
-  if (elem.parent) {
-    const childs = elem.parent.children;
-    const childsIndex = childs.lastIndexOf(elem);
-    if (childsIndex >= 0) {
-      childs.splice(childsIndex, 1);
-    }
-  }
-  elem.next = null;
-  elem.prev = null;
-  elem.parent = null;
-}
-function replaceElement(elem, replacement) {
-  const prev2 = replacement.prev = elem.prev;
-  if (prev2) {
-    prev2.next = replacement;
-  }
-  const next2 = replacement.next = elem.next;
-  if (next2) {
-    next2.prev = replacement;
-  }
-  const parent2 = replacement.parent = elem.parent;
-  if (parent2) {
-    const childs = parent2.children;
-    childs[childs.lastIndexOf(elem)] = replacement;
-    elem.parent = null;
-  }
-}
-function appendChild(parent2, child) {
-  removeElement(child);
-  child.next = null;
-  child.parent = parent2;
-  if (parent2.children.push(child) > 1) {
-    const sibling = parent2.children[parent2.children.length - 2];
-    sibling.next = child;
-    child.prev = sibling;
-  } else {
-    child.prev = null;
-  }
-}
-function append$1(elem, next2) {
-  removeElement(next2);
-  const { parent: parent2 } = elem;
-  const currNext = elem.next;
-  next2.next = currNext;
-  next2.prev = elem;
-  elem.next = next2;
-  next2.parent = parent2;
-  if (currNext) {
-    currNext.prev = next2;
-    if (parent2) {
-      const childs = parent2.children;
-      childs.splice(childs.lastIndexOf(currNext), 0, next2);
-    }
-  } else if (parent2) {
-    parent2.children.push(next2);
-  }
-}
-function prependChild(parent2, child) {
-  removeElement(child);
-  child.parent = parent2;
-  child.prev = null;
-  if (parent2.children.unshift(child) !== 1) {
-    const sibling = parent2.children[1];
-    sibling.prev = child;
-    child.next = sibling;
-  } else {
-    child.next = null;
-  }
-}
-function prepend$1(elem, prev2) {
-  removeElement(prev2);
-  const { parent: parent2 } = elem;
-  if (parent2) {
-    const childs = parent2.children;
-    childs.splice(childs.indexOf(elem), 0, prev2);
-  }
-  if (elem.prev) {
-    elem.prev.next = prev2;
-  }
-  prev2.parent = parent2;
-  prev2.prev = elem.prev;
-  prev2.next = elem;
-  elem.prev = prev2;
-}
-function filter$2(test, node2, recurse = true, limit = Infinity) {
-  return find$2(test, Array.isArray(node2) ? node2 : [node2], recurse, limit);
-}
-function find$2(test, nodes, recurse, limit) {
-  const result = [];
-  const nodeStack = [Array.isArray(nodes) ? nodes : [nodes]];
-  const indexStack = [0];
-  for (; ; ) {
-    if (indexStack[0] >= nodeStack[0].length) {
-      if (indexStack.length === 1) {
-        return result;
-      }
-      nodeStack.shift();
-      indexStack.shift();
-      continue;
-    }
-    const elem = nodeStack[0][indexStack[0]++];
-    if (test(elem)) {
-      result.push(elem);
-      if (--limit <= 0)
-        return result;
-    }
-    if (recurse && hasChildren(elem) && elem.children.length > 0) {
-      indexStack.unshift(0);
-      nodeStack.unshift(elem.children);
-    }
-  }
-}
-function findOneChild(test, nodes) {
-  return nodes.find(test);
-}
-function findOne(test, nodes, recurse = true) {
-  const searchedNodes = Array.isArray(nodes) ? nodes : [nodes];
-  for (let i = 0; i < searchedNodes.length; i++) {
-    const node2 = searchedNodes[i];
-    if (isTag(node2) && test(node2)) {
-      return node2;
-    }
-    if (recurse && hasChildren(node2) && node2.children.length > 0) {
-      const found = findOne(test, node2.children, true);
-      if (found)
-        return found;
-    }
-  }
-  return null;
-}
-function existsOne(test, nodes) {
-  return (Array.isArray(nodes) ? nodes : [nodes]).some((node2) => isTag(node2) && test(node2) || hasChildren(node2) && existsOne(test, node2.children));
-}
-function findAll(test, nodes) {
-  const result = [];
-  const nodeStack = [Array.isArray(nodes) ? nodes : [nodes]];
-  const indexStack = [0];
-  for (; ; ) {
-    if (indexStack[0] >= nodeStack[0].length) {
-      if (nodeStack.length === 1) {
-        return result;
-      }
-      nodeStack.shift();
-      indexStack.shift();
-      continue;
-    }
-    const elem = nodeStack[0][indexStack[0]++];
-    if (isTag(elem) && test(elem))
-      result.push(elem);
-    if (hasChildren(elem) && elem.children.length > 0) {
-      indexStack.unshift(0);
-      nodeStack.unshift(elem.children);
-    }
-  }
-}
-const Checks = {
-  tag_name(name) {
-    if (typeof name === "function") {
-      return (elem) => isTag(elem) && name(elem.name);
-    } else if (name === "*") {
-      return isTag;
-    }
-    return (elem) => isTag(elem) && elem.name === name;
-  },
-  tag_type(type2) {
-    if (typeof type2 === "function") {
-      return (elem) => type2(elem.type);
-    }
-    return (elem) => elem.type === type2;
-  },
-  tag_contains(data2) {
-    if (typeof data2 === "function") {
-      return (elem) => isText(elem) && data2(elem.data);
-    }
-    return (elem) => isText(elem) && elem.data === data2;
-  }
-};
-function getAttribCheck(attrib, value) {
-  if (typeof value === "function") {
-    return (elem) => isTag(elem) && value(elem.attribs[attrib]);
-  }
-  return (elem) => isTag(elem) && elem.attribs[attrib] === value;
-}
-function combineFuncs(a, b) {
-  return (elem) => a(elem) || b(elem);
-}
-function compileTest(options) {
-  const funcs = Object.keys(options).map((key) => {
-    const value = options[key];
-    return Object.prototype.hasOwnProperty.call(Checks, key) ? Checks[key](value) : getAttribCheck(key, value);
-  });
-  return funcs.length === 0 ? null : funcs.reduce(combineFuncs);
-}
-function testElement(options, node2) {
-  const test = compileTest(options);
-  return test ? test(node2) : true;
-}
-function getElements(options, nodes, recurse, limit = Infinity) {
-  const test = compileTest(options);
-  return test ? filter$2(test, nodes, recurse, limit) : [];
-}
-function getElementById(id, nodes, recurse = true) {
-  if (!Array.isArray(nodes))
-    nodes = [nodes];
-  return findOne(getAttribCheck("id", id), nodes, recurse);
-}
-function getElementsByTagName(tagName, nodes, recurse = true, limit = Infinity) {
-  return filter$2(Checks["tag_name"](tagName), nodes, recurse, limit);
-}
-function getElementsByClassName(className, nodes, recurse = true, limit = Infinity) {
-  return filter$2(getAttribCheck("class", className), nodes, recurse, limit);
-}
-function getElementsByTagType(type2, nodes, recurse = true, limit = Infinity) {
-  return filter$2(Checks["tag_type"](type2), nodes, recurse, limit);
-}
-function removeSubsets(nodes) {
-  let idx = nodes.length;
-  while (--idx >= 0) {
-    const node2 = nodes[idx];
-    if (idx > 0 && nodes.lastIndexOf(node2, idx - 1) >= 0) {
-      nodes.splice(idx, 1);
-      continue;
-    }
-    for (let ancestor = node2.parent; ancestor; ancestor = ancestor.parent) {
-      if (nodes.includes(ancestor)) {
-        nodes.splice(idx, 1);
-        break;
-      }
-    }
-  }
-  return nodes;
-}
-var DocumentPosition;
-(function(DocumentPosition2) {
-  DocumentPosition2[DocumentPosition2["DISCONNECTED"] = 1] = "DISCONNECTED";
-  DocumentPosition2[DocumentPosition2["PRECEDING"] = 2] = "PRECEDING";
-  DocumentPosition2[DocumentPosition2["FOLLOWING"] = 4] = "FOLLOWING";
-  DocumentPosition2[DocumentPosition2["CONTAINS"] = 8] = "CONTAINS";
-  DocumentPosition2[DocumentPosition2["CONTAINED_BY"] = 16] = "CONTAINED_BY";
-})(DocumentPosition || (DocumentPosition = {}));
-function compareDocumentPosition(nodeA, nodeB) {
-  const aParents = [];
-  const bParents = [];
-  if (nodeA === nodeB) {
-    return 0;
-  }
-  let current = hasChildren(nodeA) ? nodeA : nodeA.parent;
-  while (current) {
-    aParents.unshift(current);
-    current = current.parent;
-  }
-  current = hasChildren(nodeB) ? nodeB : nodeB.parent;
-  while (current) {
-    bParents.unshift(current);
-    current = current.parent;
-  }
-  const maxIdx = Math.min(aParents.length, bParents.length);
-  let idx = 0;
-  while (idx < maxIdx && aParents[idx] === bParents[idx]) {
-    idx++;
-  }
-  if (idx === 0) {
-    return DocumentPosition.DISCONNECTED;
-  }
-  const sharedParent = aParents[idx - 1];
-  const siblings2 = sharedParent.children;
-  const aSibling = aParents[idx];
-  const bSibling = bParents[idx];
-  if (siblings2.indexOf(aSibling) > siblings2.indexOf(bSibling)) {
-    if (sharedParent === nodeB) {
-      return DocumentPosition.FOLLOWING | DocumentPosition.CONTAINED_BY;
-    }
-    return DocumentPosition.FOLLOWING;
-  }
-  if (sharedParent === nodeA) {
-    return DocumentPosition.PRECEDING | DocumentPosition.CONTAINS;
-  }
-  return DocumentPosition.PRECEDING;
-}
-function uniqueSort(nodes) {
-  nodes = nodes.filter((node2, i, arr) => !arr.includes(node2, i + 1));
-  nodes.sort((a, b) => {
-    const relative = compareDocumentPosition(a, b);
-    if (relative & DocumentPosition.PRECEDING) {
-      return -1;
-    } else if (relative & DocumentPosition.FOLLOWING) {
-      return 1;
-    }
-    return 0;
-  });
-  return nodes;
-}
-function getFeed(doc) {
-  const feedRoot = getOneElement(isValidFeed, doc);
-  return !feedRoot ? null : feedRoot.name === "feed" ? getAtomFeed(feedRoot) : getRssFeed(feedRoot);
-}
-function getAtomFeed(feedRoot) {
-  var _a;
-  const childs = feedRoot.children;
-  const feed = {
-    type: "atom",
-    items: getElementsByTagName("entry", childs).map((item2) => {
-      var _a2;
-      const { children: children2 } = item2;
-      const entry = { media: getMediaElements(children2) };
-      addConditionally(entry, "id", "id", children2);
-      addConditionally(entry, "title", "title", children2);
-      const href2 = (_a2 = getOneElement("link", children2)) === null || _a2 === void 0 ? void 0 : _a2.attribs["href"];
-      if (href2) {
-        entry.link = href2;
-      }
-      const description = fetch$1("summary", children2) || fetch$1("content", children2);
-      if (description) {
-        entry.description = description;
-      }
-      const pubDate = fetch$1("updated", children2);
-      if (pubDate) {
-        entry.pubDate = new Date(pubDate);
-      }
-      return entry;
-    })
-  };
-  addConditionally(feed, "id", "id", childs);
-  addConditionally(feed, "title", "title", childs);
-  const href = (_a = getOneElement("link", childs)) === null || _a === void 0 ? void 0 : _a.attribs["href"];
-  if (href) {
-    feed.link = href;
-  }
-  addConditionally(feed, "description", "subtitle", childs);
-  const updated = fetch$1("updated", childs);
-  if (updated) {
-    feed.updated = new Date(updated);
-  }
-  addConditionally(feed, "author", "email", childs, true);
-  return feed;
-}
-function getRssFeed(feedRoot) {
-  var _a, _b;
-  const childs = (_b = (_a = getOneElement("channel", feedRoot.children)) === null || _a === void 0 ? void 0 : _a.children) !== null && _b !== void 0 ? _b : [];
-  const feed = {
-    type: feedRoot.name.substr(0, 3),
-    id: "",
-    items: getElementsByTagName("item", feedRoot.children).map((item2) => {
-      const { children: children2 } = item2;
-      const entry = { media: getMediaElements(children2) };
-      addConditionally(entry, "id", "guid", children2);
-      addConditionally(entry, "title", "title", children2);
-      addConditionally(entry, "link", "link", children2);
-      addConditionally(entry, "description", "description", children2);
-      const pubDate = fetch$1("pubDate", children2) || fetch$1("dc:date", children2);
-      if (pubDate)
-        entry.pubDate = new Date(pubDate);
-      return entry;
-    })
-  };
-  addConditionally(feed, "title", "title", childs);
-  addConditionally(feed, "link", "link", childs);
-  addConditionally(feed, "description", "description", childs);
-  const updated = fetch$1("lastBuildDate", childs);
-  if (updated) {
-    feed.updated = new Date(updated);
-  }
-  addConditionally(feed, "author", "managingEditor", childs, true);
-  return feed;
-}
-const MEDIA_KEYS_STRING = ["url", "type", "lang"];
-const MEDIA_KEYS_INT = [
-  "fileSize",
-  "bitrate",
-  "framerate",
-  "samplingrate",
-  "channels",
-  "duration",
-  "height",
-  "width"
-];
-function getMediaElements(where) {
-  return getElementsByTagName("media:content", where).map((elem) => {
-    const { attribs } = elem;
-    const media = {
-      medium: attribs["medium"],
-      isDefault: !!attribs["isDefault"]
-    };
-    for (const attrib of MEDIA_KEYS_STRING) {
-      if (attribs[attrib]) {
-        media[attrib] = attribs[attrib];
-      }
-    }
-    for (const attrib of MEDIA_KEYS_INT) {
-      if (attribs[attrib]) {
-        media[attrib] = parseInt(attribs[attrib], 10);
-      }
-    }
-    if (attribs["expression"]) {
-      media.expression = attribs["expression"];
-    }
-    return media;
-  });
-}
-function getOneElement(tagName, node2) {
-  return getElementsByTagName(tagName, node2, true, 1)[0];
-}
-function fetch$1(tagName, where, recurse = false) {
-  return textContent(getElementsByTagName(tagName, where, recurse, 1)).trim();
-}
-function addConditionally(obj, prop2, tagName, where, recurse = false) {
-  const val2 = fetch$1(tagName, where, recurse);
-  if (val2)
-    obj[prop2] = val2;
-}
-function isValidFeed(value) {
-  return value === "rss" || value === "feed" || value === "rdf:RDF";
-}
-const DomUtils = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  get DocumentPosition() {
-    return DocumentPosition;
-  },
-  append: append$1,
-  appendChild,
-  compareDocumentPosition,
-  existsOne,
-  filter: filter$2,
-  find: find$2,
-  findAll,
-  findOne,
-  findOneChild,
-  getAttributeValue,
-  getChildren,
-  getElementById,
-  getElements,
-  getElementsByClassName,
-  getElementsByTagName,
-  getElementsByTagType,
-  getFeed,
-  getInnerHTML,
-  getName,
-  getOuterHTML,
-  getParent,
-  getSiblings,
-  getText,
-  hasAttrib,
-  hasChildren,
-  innerText,
-  isCDATA,
-  isComment,
-  isDocument,
-  isTag,
-  isText,
-  nextElementSibling,
-  prepend: prepend$1,
-  prependChild,
-  prevElementSibling,
-  removeElement,
-  removeSubsets,
-  replaceElement,
-  testElement,
-  textContent,
-  uniqueSort
-}, Symbol.toStringTag, { value: "Module" }));
-function text$1(elements) {
-  const elems = elements !== null && elements !== void 0 ? elements : this ? this.root() : [];
-  let ret = "";
-  for (let i = 0; i < elems.length; i++) {
-    ret += textContent(elems[i]);
-  }
-  return ret;
-}
-function contains(container, contained) {
-  if (contained === container) {
-    return false;
-  }
-  let next2 = contained;
-  while (next2 && next2 !== next2.parent) {
-    next2 = next2.parent;
-    if (next2 === container) {
-      return true;
-    }
-  }
-  return false;
-}
-function isCheerio(maybeCheerio) {
-  return maybeCheerio.cheerio != null;
-}
-function camelCase(str) {
-  return str.replace(/[._-](\w|$)/g, (_, x) => x.toUpperCase());
-}
-function cssCase(str) {
-  return str.replace(/[A-Z]/g, "-$&").toLowerCase();
-}
-function domEach(array, fn) {
-  const len = array.length;
-  for (let i = 0; i < len; i++)
-    fn(array[i], i);
-  return array;
-}
-var CharacterCodes;
-(function(CharacterCodes2) {
-  CharacterCodes2[CharacterCodes2["LowerA"] = 97] = "LowerA";
-  CharacterCodes2[CharacterCodes2["LowerZ"] = 122] = "LowerZ";
-  CharacterCodes2[CharacterCodes2["UpperA"] = 65] = "UpperA";
-  CharacterCodes2[CharacterCodes2["UpperZ"] = 90] = "UpperZ";
-  CharacterCodes2[CharacterCodes2["Exclamation"] = 33] = "Exclamation";
-})(CharacterCodes || (CharacterCodes = {}));
-function isHtml(str) {
-  const tagStart = str.indexOf("<");
-  if (tagStart < 0 || tagStart > str.length - 3)
-    return false;
-  const tagChar = str.charCodeAt(tagStart + 1);
-  return (tagChar >= CharacterCodes.LowerA && tagChar <= CharacterCodes.LowerZ || tagChar >= CharacterCodes.UpperA && tagChar <= CharacterCodes.UpperZ || tagChar === CharacterCodes.Exclamation) && str.includes(">", tagStart + 2);
-}
-const hasOwn = Object.prototype.hasOwnProperty;
-const rspace = /\s+/;
-const dataAttrPrefix = "data-";
-const rboolean = /^(?:autofocus|autoplay|async|checked|controls|defer|disabled|hidden|loop|multiple|open|readonly|required|scoped|selected)$/i;
-const rbrace = /^{[^]*}$|^\[[^]*]$/;
-function getAttr(elem, name, xmlMode) {
-  var _a;
-  if (!elem || !isTag(elem))
-    return void 0;
-  (_a = elem.attribs) !== null && _a !== void 0 ? _a : elem.attribs = {};
-  if (!name) {
-    return elem.attribs;
-  }
-  if (hasOwn.call(elem.attribs, name)) {
-    return !xmlMode && rboolean.test(name) ? name : elem.attribs[name];
-  }
-  if (elem.name === "option" && name === "value") {
-    return text$1(elem.children);
-  }
-  if (elem.name === "input" && (elem.attribs["type"] === "radio" || elem.attribs["type"] === "checkbox") && name === "value") {
-    return "on";
-  }
-  return void 0;
-}
-function setAttr(el, name, value) {
-  if (value === null) {
-    removeAttribute(el, name);
-  } else {
-    el.attribs[name] = `${value}`;
-  }
-}
-function attr(name, value) {
-  if (typeof name === "object" || value !== void 0) {
-    if (typeof value === "function") {
-      if (typeof name !== "string") {
-        {
-          throw new Error("Bad combination of arguments.");
-        }
-      }
-      return domEach(this, (el, i) => {
-        if (isTag(el))
-          setAttr(el, name, value.call(el, i, el.attribs[name]));
-      });
-    }
-    return domEach(this, (el) => {
-      if (!isTag(el))
-        return;
-      if (typeof name === "object") {
-        for (const objName of Object.keys(name)) {
-          const objValue = name[objName];
-          setAttr(el, objName, objValue);
-        }
-      } else {
-        setAttr(el, name, value);
-      }
-    });
-  }
-  return arguments.length > 1 ? this : getAttr(this[0], name, this.options.xmlMode);
-}
-function getProp(el, name, xmlMode) {
-  return name in el ? (
-    // @ts-expect-error TS doesn't like us accessing the value directly here.
-    el[name]
-  ) : !xmlMode && rboolean.test(name) ? getAttr(el, name, false) !== void 0 : getAttr(el, name, xmlMode);
-}
-function setProp(el, name, value, xmlMode) {
-  if (name in el) {
-    el[name] = value;
-  } else {
-    setAttr(el, name, !xmlMode && rboolean.test(name) ? value ? "" : null : `${value}`);
-  }
-}
-function prop(name, value) {
-  var _a;
-  if (typeof name === "string" && value === void 0) {
-    const el = this[0];
-    if (!el || !isTag(el))
-      return void 0;
-    switch (name) {
-      case "style": {
-        const property = this.css();
-        const keys = Object.keys(property);
-        for (let i = 0; i < keys.length; i++) {
-          property[i] = keys[i];
-        }
-        property.length = keys.length;
-        return property;
-      }
-      case "tagName":
-      case "nodeName": {
-        return el.name.toUpperCase();
-      }
-      case "href":
-      case "src": {
-        const prop2 = (_a = el.attribs) === null || _a === void 0 ? void 0 : _a[name];
-        if (typeof URL !== "undefined" && (name === "href" && (el.tagName === "a" || el.tagName === "link") || name === "src" && (el.tagName === "img" || el.tagName === "iframe" || el.tagName === "audio" || el.tagName === "video" || el.tagName === "source")) && prop2 !== void 0 && this.options.baseURI) {
-          return new URL(prop2, this.options.baseURI).href;
-        }
-        return prop2;
-      }
-      case "innerText": {
-        return innerText(el);
-      }
-      case "textContent": {
-        return textContent(el);
-      }
-      case "outerHTML": {
-        return this.clone().wrap("<container />").parent().html();
-      }
-      case "innerHTML": {
-        return this.html();
-      }
-      default: {
-        return getProp(el, name, this.options.xmlMode);
-      }
-    }
-  }
-  if (typeof name === "object" || value !== void 0) {
-    if (typeof value === "function") {
-      if (typeof name === "object") {
-        throw new TypeError("Bad combination of arguments.");
-      }
-      return domEach(this, (el, i) => {
-        if (isTag(el)) {
-          setProp(el, name, value.call(el, i, getProp(el, name, this.options.xmlMode)), this.options.xmlMode);
-        }
-      });
-    }
-    return domEach(this, (el) => {
-      if (!isTag(el))
-        return;
-      if (typeof name === "object") {
-        for (const key of Object.keys(name)) {
-          const val2 = name[key];
-          setProp(el, key, val2, this.options.xmlMode);
-        }
-      } else {
-        setProp(el, name, value, this.options.xmlMode);
-      }
-    });
-  }
-  return void 0;
-}
-function setData(elem, name, value) {
-  var _a;
-  (_a = elem.data) !== null && _a !== void 0 ? _a : elem.data = {};
-  if (typeof name === "object")
-    Object.assign(elem.data, name);
-  else if (typeof name === "string" && value !== void 0) {
-    elem.data[name] = value;
-  }
-}
-function readAllData(el) {
-  for (const domName of Object.keys(el.attribs)) {
-    if (!domName.startsWith(dataAttrPrefix)) {
-      continue;
-    }
-    const jsName = camelCase(domName.slice(dataAttrPrefix.length));
-    if (!hasOwn.call(el.data, jsName)) {
-      el.data[jsName] = parseDataValue(el.attribs[domName]);
-    }
-  }
-  return el.data;
-}
-function readData(el, name) {
-  const domName = dataAttrPrefix + cssCase(name);
-  const data2 = el.data;
-  if (hasOwn.call(data2, name)) {
-    return data2[name];
-  }
-  if (hasOwn.call(el.attribs, domName)) {
-    return data2[name] = parseDataValue(el.attribs[domName]);
-  }
-  return void 0;
-}
-function parseDataValue(value) {
-  if (value === "null")
-    return null;
-  if (value === "true")
-    return true;
-  if (value === "false")
-    return false;
-  const num = Number(value);
-  if (value === String(num))
-    return num;
-  if (rbrace.test(value)) {
-    try {
-      return JSON.parse(value);
-    } catch {
-    }
-  }
-  return value;
-}
-function data(name, value) {
-  var _a;
-  const elem = this[0];
-  if (!elem || !isTag(elem))
-    return;
-  const dataEl = elem;
-  (_a = dataEl.data) !== null && _a !== void 0 ? _a : dataEl.data = {};
-  if (name == null) {
-    return readAllData(dataEl);
-  }
-  if (typeof name === "object" || value !== void 0) {
-    domEach(this, (el) => {
-      if (isTag(el)) {
-        if (typeof name === "object")
-          setData(el, name);
-        else
-          setData(el, name, value);
-      }
-    });
-    return this;
-  }
-  return readData(dataEl, name);
-}
-function val(value) {
-  const querying = arguments.length === 0;
-  const element = this[0];
-  if (!element || !isTag(element))
-    return querying ? void 0 : this;
-  switch (element.name) {
-    case "textarea": {
-      return this.text(value);
-    }
-    case "select": {
-      const option = this.find("option:selected");
-      if (!querying) {
-        if (this.attr("multiple") == null && typeof value === "object") {
-          return this;
-        }
-        this.find("option").removeAttr("selected");
-        const values2 = typeof value === "object" ? value : [value];
-        for (const val2 of values2) {
-          this.find(`option[value="${val2}"]`).attr("selected", "");
-        }
-        return this;
-      }
-      return this.attr("multiple") ? option.toArray().map((el) => text$1(el.children)) : option.attr("value");
-    }
-    case "input":
-    case "option": {
-      return querying ? this.attr("value") : this.attr("value", value);
-    }
-  }
-  return void 0;
-}
-function removeAttribute(elem, name) {
-  if (!elem.attribs || !hasOwn.call(elem.attribs, name))
-    return;
-  delete elem.attribs[name];
-}
-function splitNames(names) {
-  return names ? names.trim().split(rspace) : [];
-}
-function removeAttr(name) {
-  const attrNames = splitNames(name);
-  for (const attrName of attrNames) {
-    domEach(this, (elem) => {
-      if (isTag(elem))
-        removeAttribute(elem, attrName);
-    });
-  }
-  return this;
-}
-function hasClass(className) {
-  return this.toArray().some((elem) => {
-    const clazz = isTag(elem) && elem.attribs["class"];
-    let idx = -1;
-    if (clazz && className.length > 0) {
-      while ((idx = clazz.indexOf(className, idx + 1)) > -1) {
-        const end2 = idx + className.length;
-        if ((idx === 0 || rspace.test(clazz[idx - 1])) && (end2 === clazz.length || rspace.test(clazz[end2]))) {
-          return true;
-        }
-      }
-    }
-    return false;
-  });
-}
-function addClass(value) {
-  if (typeof value === "function") {
-    return domEach(this, (el, i) => {
-      if (isTag(el)) {
-        const className = el.attribs["class"] || "";
-        addClass.call([el], value.call(el, i, className));
-      }
-    });
-  }
-  if (!value || typeof value !== "string")
-    return this;
-  const classNames = value.split(rspace);
-  const numElements = this.length;
-  for (let i = 0; i < numElements; i++) {
-    const el = this[i];
-    if (!isTag(el))
-      continue;
-    const className = getAttr(el, "class", false);
-    if (className) {
-      let setClass = ` ${className} `;
-      for (const cn of classNames) {
-        const appendClass = `${cn} `;
-        if (!setClass.includes(` ${appendClass}`))
-          setClass += appendClass;
-      }
-      setAttr(el, "class", setClass.trim());
-    } else {
-      setAttr(el, "class", classNames.join(" ").trim());
-    }
-  }
-  return this;
-}
-function removeClass(name) {
-  if (typeof name === "function") {
-    return domEach(this, (el, i) => {
-      if (isTag(el)) {
-        removeClass.call([el], name.call(el, i, el.attribs["class"] || ""));
-      }
-    });
-  }
-  const classes = splitNames(name);
-  const numClasses = classes.length;
-  const removeAll = arguments.length === 0;
-  return domEach(this, (el) => {
-    if (!isTag(el))
-      return;
-    if (removeAll) {
-      el.attribs["class"] = "";
-    } else {
-      const elClasses = splitNames(el.attribs["class"]);
-      let changed = false;
-      for (let j = 0; j < numClasses; j++) {
-        const index2 = elClasses.indexOf(classes[j]);
-        if (index2 >= 0) {
-          elClasses.splice(index2, 1);
-          changed = true;
-          j--;
-        }
-      }
-      if (changed) {
-        el.attribs["class"] = elClasses.join(" ");
-      }
-    }
-  });
-}
-function toggleClass(value, stateVal) {
-  if (typeof value === "function") {
-    return domEach(this, (el, i) => {
-      if (isTag(el)) {
-        toggleClass.call([el], value.call(el, i, el.attribs["class"] || "", stateVal), stateVal);
-      }
-    });
-  }
-  if (!value || typeof value !== "string")
-    return this;
-  const classNames = value.split(rspace);
-  const numClasses = classNames.length;
-  const state = typeof stateVal === "boolean" ? stateVal ? 1 : -1 : 0;
-  const numElements = this.length;
-  for (let i = 0; i < numElements; i++) {
-    const el = this[i];
-    if (!isTag(el))
-      continue;
-    const elementClasses = splitNames(el.attribs["class"]);
-    for (let j = 0; j < numClasses; j++) {
-      const index2 = elementClasses.indexOf(classNames[j]);
-      if (state >= 0 && index2 < 0) {
-        elementClasses.push(classNames[j]);
-      } else if (state <= 0 && index2 >= 0) {
-        elementClasses.splice(index2, 1);
-      }
-    }
-    el.attribs["class"] = elementClasses.join(" ");
-  }
-  return this;
-}
-const Attributes = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  addClass,
-  attr,
-  data,
-  hasClass,
-  prop,
-  removeAttr,
-  removeClass,
-  toggleClass,
-  val
-}, Symbol.toStringTag, { value: "Module" }));
-var SelectorType;
-(function(SelectorType2) {
-  SelectorType2["Attribute"] = "attribute";
-  SelectorType2["Pseudo"] = "pseudo";
-  SelectorType2["PseudoElement"] = "pseudo-element";
-  SelectorType2["Tag"] = "tag";
-  SelectorType2["Universal"] = "universal";
-  SelectorType2["Adjacent"] = "adjacent";
-  SelectorType2["Child"] = "child";
-  SelectorType2["Descendant"] = "descendant";
-  SelectorType2["Parent"] = "parent";
-  SelectorType2["Sibling"] = "sibling";
-  SelectorType2["ColumnCombinator"] = "column-combinator";
-})(SelectorType || (SelectorType = {}));
-var AttributeAction;
-(function(AttributeAction2) {
-  AttributeAction2["Any"] = "any";
-  AttributeAction2["Element"] = "element";
-  AttributeAction2["End"] = "end";
-  AttributeAction2["Equals"] = "equals";
-  AttributeAction2["Exists"] = "exists";
-  AttributeAction2["Hyphen"] = "hyphen";
-  AttributeAction2["Not"] = "not";
-  AttributeAction2["Start"] = "start";
-})(AttributeAction || (AttributeAction = {}));
-const reName = /^[^\\#]?(?:\\(?:[\da-f]{1,6}\s?|.)|[\w\-\u00b0-\uFFFF])+/;
-const reEscape = /\\([\da-f]{1,6}\s?|(\s)|.)/gi;
-const actionTypes = /* @__PURE__ */ new Map([
-  [126, AttributeAction.Element],
-  [94, AttributeAction.Start],
-  [36, AttributeAction.End],
-  [42, AttributeAction.Any],
-  [33, AttributeAction.Not],
-  [124, AttributeAction.Hyphen]
-]);
-const unpackPseudos = /* @__PURE__ */ new Set([
-  "has",
-  "not",
-  "matches",
-  "is",
-  "where",
-  "host",
-  "host-context"
-]);
-function isTraversal$1(selector) {
-  switch (selector.type) {
-    case SelectorType.Adjacent:
-    case SelectorType.Child:
-    case SelectorType.Descendant:
-    case SelectorType.Parent:
-    case SelectorType.Sibling:
-    case SelectorType.ColumnCombinator:
-      return true;
-    default:
-      return false;
-  }
-}
-const stripQuotesFromPseudos = /* @__PURE__ */ new Set(["contains", "icontains"]);
-function funescape(_, escaped, escapedWhitespace) {
-  const high = parseInt(escaped, 16) - 65536;
-  return high !== high || escapedWhitespace ? escaped : high < 0 ? (
-    // BMP codepoint
-    String.fromCharCode(high + 65536)
-  ) : (
-    // Supplemental Plane codepoint (surrogate pair)
-    String.fromCharCode(high >> 10 | 55296, high & 1023 | 56320)
-  );
-}
-function unescapeCSS(str) {
-  return str.replace(reEscape, funescape);
-}
-function isQuote(c) {
-  return c === 39 || c === 34;
-}
-function isWhitespace(c) {
-  return c === 32 || c === 9 || c === 10 || c === 12 || c === 13;
-}
-function parse$2(selector) {
-  const subselects2 = [];
-  const endIndex = parseSelector(subselects2, `${selector}`, 0);
-  if (endIndex < selector.length) {
-    throw new Error(`Unmatched selector: ${selector.slice(endIndex)}`);
-  }
-  return subselects2;
-}
-function parseSelector(subselects2, selector, selectorIndex) {
-  let tokens = [];
-  function getName2(offset2) {
-    const match2 = selector.slice(selectorIndex + offset2).match(reName);
-    if (!match2) {
-      throw new Error(`Expected name, found ${selector.slice(selectorIndex)}`);
-    }
-    const [name] = match2;
-    selectorIndex += offset2 + name.length;
-    return unescapeCSS(name);
-  }
-  function stripWhitespace(offset2) {
-    selectorIndex += offset2;
-    while (selectorIndex < selector.length && isWhitespace(selector.charCodeAt(selectorIndex))) {
-      selectorIndex++;
-    }
-  }
-  function readValueWithParenthesis() {
-    selectorIndex += 1;
-    const start = selectorIndex;
-    let counter = 1;
-    for (; counter > 0 && selectorIndex < selector.length; selectorIndex++) {
-      if (selector.charCodeAt(selectorIndex) === 40 && !isEscaped(selectorIndex)) {
-        counter++;
-      } else if (selector.charCodeAt(selectorIndex) === 41 && !isEscaped(selectorIndex)) {
-        counter--;
-      }
-    }
-    if (counter) {
-      throw new Error("Parenthesis not matched");
-    }
-    return unescapeCSS(selector.slice(start, selectorIndex - 1));
-  }
-  function isEscaped(pos) {
-    let slashCount = 0;
-    while (selector.charCodeAt(--pos) === 92)
-      slashCount++;
-    return (slashCount & 1) === 1;
-  }
-  function ensureNotTraversal() {
-    if (tokens.length > 0 && isTraversal$1(tokens[tokens.length - 1])) {
-      throw new Error("Did not expect successive traversals.");
-    }
-  }
-  function addTraversal(type2) {
-    if (tokens.length > 0 && tokens[tokens.length - 1].type === SelectorType.Descendant) {
-      tokens[tokens.length - 1].type = type2;
-      return;
-    }
-    ensureNotTraversal();
-    tokens.push({ type: type2 });
-  }
-  function addSpecialAttribute(name, action) {
-    tokens.push({
-      type: SelectorType.Attribute,
-      name,
-      action,
-      value: getName2(1),
-      namespace: null,
-      ignoreCase: "quirks"
-    });
-  }
-  function finalizeSubselector() {
-    if (tokens.length && tokens[tokens.length - 1].type === SelectorType.Descendant) {
-      tokens.pop();
-    }
-    if (tokens.length === 0) {
-      throw new Error("Empty sub-selector");
-    }
-    subselects2.push(tokens);
-  }
-  stripWhitespace(0);
-  if (selector.length === selectorIndex) {
-    return selectorIndex;
-  }
-  loop: while (selectorIndex < selector.length) {
-    const firstChar = selector.charCodeAt(selectorIndex);
-    switch (firstChar) {
-      // Whitespace
-      case 32:
-      case 9:
-      case 10:
-      case 12:
-      case 13: {
-        if (tokens.length === 0 || tokens[0].type !== SelectorType.Descendant) {
-          ensureNotTraversal();
-          tokens.push({ type: SelectorType.Descendant });
-        }
-        stripWhitespace(1);
-        break;
-      }
-      // Traversals
-      case 62: {
-        addTraversal(SelectorType.Child);
-        stripWhitespace(1);
-        break;
-      }
-      case 60: {
-        addTraversal(SelectorType.Parent);
-        stripWhitespace(1);
-        break;
-      }
-      case 126: {
-        addTraversal(SelectorType.Sibling);
-        stripWhitespace(1);
-        break;
-      }
-      case 43: {
-        addTraversal(SelectorType.Adjacent);
-        stripWhitespace(1);
-        break;
-      }
-      // Special attribute selectors: .class, #id
-      case 46: {
-        addSpecialAttribute("class", AttributeAction.Element);
-        break;
-      }
-      case 35: {
-        addSpecialAttribute("id", AttributeAction.Equals);
-        break;
-      }
-      case 91: {
-        stripWhitespace(1);
-        let name;
-        let namespace = null;
-        if (selector.charCodeAt(selectorIndex) === 124) {
-          name = getName2(1);
-        } else if (selector.startsWith("*|", selectorIndex)) {
-          namespace = "*";
-          name = getName2(2);
-        } else {
-          name = getName2(0);
-          if (selector.charCodeAt(selectorIndex) === 124 && selector.charCodeAt(selectorIndex + 1) !== 61) {
-            namespace = name;
-            name = getName2(1);
-          }
-        }
-        stripWhitespace(0);
-        let action = AttributeAction.Exists;
-        const possibleAction = actionTypes.get(selector.charCodeAt(selectorIndex));
-        if (possibleAction) {
-          action = possibleAction;
-          if (selector.charCodeAt(selectorIndex + 1) !== 61) {
-            throw new Error("Expected `=`");
-          }
-          stripWhitespace(2);
-        } else if (selector.charCodeAt(selectorIndex) === 61) {
-          action = AttributeAction.Equals;
-          stripWhitespace(1);
-        }
-        let value = "";
-        let ignoreCase = null;
-        if (action !== "exists") {
-          if (isQuote(selector.charCodeAt(selectorIndex))) {
-            const quote = selector.charCodeAt(selectorIndex);
-            let sectionEnd = selectorIndex + 1;
-            while (sectionEnd < selector.length && (selector.charCodeAt(sectionEnd) !== quote || isEscaped(sectionEnd))) {
-              sectionEnd += 1;
-            }
-            if (selector.charCodeAt(sectionEnd) !== quote) {
-              throw new Error("Attribute value didn't end");
-            }
-            value = unescapeCSS(selector.slice(selectorIndex + 1, sectionEnd));
-            selectorIndex = sectionEnd + 1;
-          } else {
-            const valueStart = selectorIndex;
-            while (selectorIndex < selector.length && (!isWhitespace(selector.charCodeAt(selectorIndex)) && selector.charCodeAt(selectorIndex) !== 93 || isEscaped(selectorIndex))) {
-              selectorIndex += 1;
-            }
-            value = unescapeCSS(selector.slice(valueStart, selectorIndex));
-          }
-          stripWhitespace(0);
-          const forceIgnore = selector.charCodeAt(selectorIndex) | 32;
-          if (forceIgnore === 115) {
-            ignoreCase = false;
-            stripWhitespace(1);
-          } else if (forceIgnore === 105) {
-            ignoreCase = true;
-            stripWhitespace(1);
-          }
-        }
-        if (selector.charCodeAt(selectorIndex) !== 93) {
-          throw new Error("Attribute selector didn't terminate");
-        }
-        selectorIndex += 1;
-        const attributeSelector = {
-          type: SelectorType.Attribute,
-          name,
-          action,
-          value,
-          namespace,
-          ignoreCase
-        };
-        tokens.push(attributeSelector);
-        break;
-      }
-      case 58: {
-        if (selector.charCodeAt(selectorIndex + 1) === 58) {
-          tokens.push({
-            type: SelectorType.PseudoElement,
-            name: getName2(2).toLowerCase(),
-            data: selector.charCodeAt(selectorIndex) === 40 ? readValueWithParenthesis() : null
-          });
-          continue;
-        }
-        const name = getName2(1).toLowerCase();
-        let data2 = null;
-        if (selector.charCodeAt(selectorIndex) === 40) {
-          if (unpackPseudos.has(name)) {
-            if (isQuote(selector.charCodeAt(selectorIndex + 1))) {
-              throw new Error(`Pseudo-selector ${name} cannot be quoted`);
-            }
-            data2 = [];
-            selectorIndex = parseSelector(data2, selector, selectorIndex + 1);
-            if (selector.charCodeAt(selectorIndex) !== 41) {
-              throw new Error(`Missing closing parenthesis in :${name} (${selector})`);
-            }
-            selectorIndex += 1;
-          } else {
-            data2 = readValueWithParenthesis();
-            if (stripQuotesFromPseudos.has(name)) {
-              const quot = data2.charCodeAt(0);
-              if (quot === data2.charCodeAt(data2.length - 1) && isQuote(quot)) {
-                data2 = data2.slice(1, -1);
-              }
-            }
-            data2 = unescapeCSS(data2);
-          }
-        }
-        tokens.push({ type: SelectorType.Pseudo, name, data: data2 });
-        break;
-      }
-      case 44: {
-        finalizeSubselector();
-        tokens = [];
-        stripWhitespace(1);
-        break;
-      }
-      default: {
-        if (selector.startsWith("/*", selectorIndex)) {
-          const endIndex = selector.indexOf("*/", selectorIndex + 2);
-          if (endIndex < 0) {
-            throw new Error("Comment was not terminated");
-          }
-          selectorIndex = endIndex + 2;
-          if (tokens.length === 0) {
-            stripWhitespace(0);
-          }
-          break;
-        }
-        let namespace = null;
-        let name;
-        if (firstChar === 42) {
-          selectorIndex += 1;
-          name = "*";
-        } else if (firstChar === 124) {
-          name = "";
-          if (selector.charCodeAt(selectorIndex + 1) === 124) {
-            addTraversal(SelectorType.ColumnCombinator);
-            stripWhitespace(2);
-            break;
-          }
-        } else if (reName.test(selector.slice(selectorIndex))) {
-          name = getName2(0);
-        } else {
-          break loop;
-        }
-        if (selector.charCodeAt(selectorIndex) === 124 && selector.charCodeAt(selectorIndex + 1) !== 124) {
-          namespace = name;
-          if (selector.charCodeAt(selectorIndex + 1) === 42) {
-            name = "*";
-            selectorIndex += 2;
-          } else {
-            name = getName2(1);
-          }
-        }
-        tokens.push(name === "*" ? { type: SelectorType.Universal, namespace } : { type: SelectorType.Tag, name, namespace });
-      }
-    }
-  }
-  finalizeSubselector();
-  return selectorIndex;
-}
-var boolbase$1;
-var hasRequiredBoolbase;
-function requireBoolbase() {
-  if (hasRequiredBoolbase) return boolbase$1;
-  hasRequiredBoolbase = 1;
-  boolbase$1 = {
-    trueFunc: function trueFunc() {
-      return true;
-    },
-    falseFunc: function falseFunc() {
-      return false;
-    }
-  };
-  return boolbase$1;
-}
-var boolbaseExports = requireBoolbase();
-const boolbase = /* @__PURE__ */ getDefaultExportFromCjs(boolbaseExports);
-const procedure = /* @__PURE__ */ new Map([
-  [SelectorType.Universal, 50],
-  [SelectorType.Tag, 30],
-  [SelectorType.Attribute, 1],
-  [SelectorType.Pseudo, 0]
-]);
-function isTraversal(token2) {
-  return !procedure.has(token2.type);
-}
-const attributes = /* @__PURE__ */ new Map([
-  [AttributeAction.Exists, 10],
-  [AttributeAction.Equals, 8],
-  [AttributeAction.Not, 7],
-  [AttributeAction.Start, 6],
-  [AttributeAction.End, 6],
-  [AttributeAction.Any, 5]
-]);
-function sortByProcedure(arr) {
-  const procs = arr.map(getProcedure);
-  for (let i = 1; i < arr.length; i++) {
-    const procNew = procs[i];
-    if (procNew < 0)
-      continue;
-    for (let j = i - 1; j >= 0 && procNew < procs[j]; j--) {
-      const token2 = arr[j + 1];
-      arr[j + 1] = arr[j];
-      arr[j] = token2;
-      procs[j + 1] = procs[j];
-      procs[j] = procNew;
-    }
-  }
-}
-function getProcedure(token2) {
-  var _a, _b;
-  let proc = (_a = procedure.get(token2.type)) !== null && _a !== void 0 ? _a : -1;
-  if (token2.type === SelectorType.Attribute) {
-    proc = (_b = attributes.get(token2.action)) !== null && _b !== void 0 ? _b : 4;
-    if (token2.action === AttributeAction.Equals && token2.name === "id") {
-      proc = 9;
-    }
-    if (token2.ignoreCase) {
-      proc >>= 1;
-    }
-  } else if (token2.type === SelectorType.Pseudo) {
-    if (!token2.data) {
-      proc = 3;
-    } else if (token2.name === "has" || token2.name === "contains") {
-      proc = 0;
-    } else if (Array.isArray(token2.data)) {
-      proc = Math.min(...token2.data.map((d) => Math.min(...d.map(getProcedure))));
-      if (proc < 0) {
-        proc = 0;
-      }
-    } else {
-      proc = 2;
-    }
-  }
-  return proc;
-}
-const reChars = /[-[\]{}()*+?.,\\^$|#\s]/g;
-function escapeRegex(value) {
-  return value.replace(reChars, "\\$&");
-}
-const caseInsensitiveAttributes = /* @__PURE__ */ new Set([
-  "accept",
-  "accept-charset",
-  "align",
-  "alink",
-  "axis",
-  "bgcolor",
-  "charset",
-  "checked",
-  "clear",
-  "codetype",
-  "color",
-  "compact",
-  "declare",
-  "defer",
-  "dir",
-  "direction",
-  "disabled",
-  "enctype",
-  "face",
-  "frame",
-  "hreflang",
-  "http-equiv",
-  "lang",
-  "language",
-  "link",
-  "media",
-  "method",
-  "multiple",
-  "nohref",
-  "noresize",
-  "noshade",
-  "nowrap",
-  "readonly",
-  "rel",
-  "rev",
-  "rules",
-  "scope",
-  "scrolling",
-  "selected",
-  "shape",
-  "target",
-  "text",
-  "type",
-  "valign",
-  "valuetype",
-  "vlink"
-]);
-function shouldIgnoreCase(selector, options) {
-  return typeof selector.ignoreCase === "boolean" ? selector.ignoreCase : selector.ignoreCase === "quirks" ? !!options.quirksMode : !options.xmlMode && caseInsensitiveAttributes.has(selector.name);
-}
-const attributeRules = {
-  equals(next2, data2, options) {
-    const { adapter } = options;
-    const { name } = data2;
-    let { value } = data2;
-    if (shouldIgnoreCase(data2, options)) {
-      value = value.toLowerCase();
-      return (elem) => {
-        const attr2 = adapter.getAttributeValue(elem, name);
-        return attr2 != null && attr2.length === value.length && attr2.toLowerCase() === value && next2(elem);
-      };
-    }
-    return (elem) => adapter.getAttributeValue(elem, name) === value && next2(elem);
-  },
-  hyphen(next2, data2, options) {
-    const { adapter } = options;
-    const { name } = data2;
-    let { value } = data2;
-    const len = value.length;
-    if (shouldIgnoreCase(data2, options)) {
-      value = value.toLowerCase();
-      return function hyphenIC(elem) {
-        const attr2 = adapter.getAttributeValue(elem, name);
-        return attr2 != null && (attr2.length === len || attr2.charAt(len) === "-") && attr2.substr(0, len).toLowerCase() === value && next2(elem);
-      };
-    }
-    return function hyphen(elem) {
-      const attr2 = adapter.getAttributeValue(elem, name);
-      return attr2 != null && (attr2.length === len || attr2.charAt(len) === "-") && attr2.substr(0, len) === value && next2(elem);
-    };
-  },
-  element(next2, data2, options) {
-    const { adapter } = options;
-    const { name, value } = data2;
-    if (/\s/.test(value)) {
-      return boolbase.falseFunc;
-    }
-    const regex = new RegExp(`(?:^|\\s)${escapeRegex(value)}(?:$|\\s)`, shouldIgnoreCase(data2, options) ? "i" : "");
-    return function element(elem) {
-      const attr2 = adapter.getAttributeValue(elem, name);
-      return attr2 != null && attr2.length >= value.length && regex.test(attr2) && next2(elem);
-    };
-  },
-  exists(next2, { name }, { adapter }) {
-    return (elem) => adapter.hasAttrib(elem, name) && next2(elem);
-  },
-  start(next2, data2, options) {
-    const { adapter } = options;
-    const { name } = data2;
-    let { value } = data2;
-    const len = value.length;
-    if (len === 0) {
-      return boolbase.falseFunc;
-    }
-    if (shouldIgnoreCase(data2, options)) {
-      value = value.toLowerCase();
-      return (elem) => {
-        const attr2 = adapter.getAttributeValue(elem, name);
-        return attr2 != null && attr2.length >= len && attr2.substr(0, len).toLowerCase() === value && next2(elem);
-      };
-    }
-    return (elem) => {
-      var _a;
-      return !!((_a = adapter.getAttributeValue(elem, name)) === null || _a === void 0 ? void 0 : _a.startsWith(value)) && next2(elem);
-    };
-  },
-  end(next2, data2, options) {
-    const { adapter } = options;
-    const { name } = data2;
-    let { value } = data2;
-    const len = -value.length;
-    if (len === 0) {
-      return boolbase.falseFunc;
-    }
-    if (shouldIgnoreCase(data2, options)) {
-      value = value.toLowerCase();
-      return (elem) => {
-        var _a;
-        return ((_a = adapter.getAttributeValue(elem, name)) === null || _a === void 0 ? void 0 : _a.substr(len).toLowerCase()) === value && next2(elem);
-      };
-    }
-    return (elem) => {
-      var _a;
-      return !!((_a = adapter.getAttributeValue(elem, name)) === null || _a === void 0 ? void 0 : _a.endsWith(value)) && next2(elem);
-    };
-  },
-  any(next2, data2, options) {
-    const { adapter } = options;
-    const { name, value } = data2;
-    if (value === "") {
-      return boolbase.falseFunc;
-    }
-    if (shouldIgnoreCase(data2, options)) {
-      const regex = new RegExp(escapeRegex(value), "i");
-      return function anyIC(elem) {
-        const attr2 = adapter.getAttributeValue(elem, name);
-        return attr2 != null && attr2.length >= value.length && regex.test(attr2) && next2(elem);
-      };
-    }
-    return (elem) => {
-      var _a;
-      return !!((_a = adapter.getAttributeValue(elem, name)) === null || _a === void 0 ? void 0 : _a.includes(value)) && next2(elem);
-    };
-  },
-  not(next2, data2, options) {
-    const { adapter } = options;
-    const { name } = data2;
-    let { value } = data2;
-    if (value === "") {
-      return (elem) => !!adapter.getAttributeValue(elem, name) && next2(elem);
-    } else if (shouldIgnoreCase(data2, options)) {
-      value = value.toLowerCase();
-      return (elem) => {
-        const attr2 = adapter.getAttributeValue(elem, name);
-        return (attr2 == null || attr2.length !== value.length || attr2.toLowerCase() !== value) && next2(elem);
-      };
-    }
-    return (elem) => adapter.getAttributeValue(elem, name) !== value && next2(elem);
-  }
-};
-const whitespace = /* @__PURE__ */ new Set([9, 10, 12, 13, 32]);
-const ZERO = "0".charCodeAt(0);
-const NINE = "9".charCodeAt(0);
-function parse$1(formula) {
-  formula = formula.trim().toLowerCase();
-  if (formula === "even") {
-    return [2, 0];
-  } else if (formula === "odd") {
-    return [2, 1];
-  }
-  let idx = 0;
-  let a = 0;
-  let sign2 = readSign();
-  let number = readNumber();
-  if (idx < formula.length && formula.charAt(idx) === "n") {
-    idx++;
-    a = sign2 * (number !== null && number !== void 0 ? number : 1);
-    skipWhitespace();
-    if (idx < formula.length) {
-      sign2 = readSign();
-      skipWhitespace();
-      number = readNumber();
-    } else {
-      sign2 = number = 0;
-    }
-  }
-  if (number === null || idx < formula.length) {
-    throw new Error(`n-th rule couldn't be parsed ('${formula}')`);
-  }
-  return [a, sign2 * number];
-  function readSign() {
-    if (formula.charAt(idx) === "-") {
-      idx++;
-      return -1;
-    }
-    if (formula.charAt(idx) === "+") {
-      idx++;
-    }
-    return 1;
-  }
-  function readNumber() {
-    const start = idx;
-    let value = 0;
-    while (idx < formula.length && formula.charCodeAt(idx) >= ZERO && formula.charCodeAt(idx) <= NINE) {
-      value = value * 10 + (formula.charCodeAt(idx) - ZERO);
-      idx++;
-    }
-    return idx === start ? null : value;
-  }
-  function skipWhitespace() {
-    while (idx < formula.length && whitespace.has(formula.charCodeAt(idx))) {
-      idx++;
-    }
-  }
-}
-function compile(parsed) {
-  const a = parsed[0];
-  const b = parsed[1] - 1;
-  if (b < 0 && a <= 0)
-    return boolbase.falseFunc;
-  if (a === -1)
-    return (index2) => index2 <= b;
-  if (a === 0)
-    return (index2) => index2 === b;
-  if (a === 1)
-    return b < 0 ? boolbase.trueFunc : (index2) => index2 >= b;
-  const absA = Math.abs(a);
-  const bMod = (b % absA + absA) % absA;
-  return a > 1 ? (index2) => index2 >= b && index2 % absA === bMod : (index2) => index2 <= b && index2 % absA === bMod;
-}
-function nthCheck(formula) {
-  return compile(parse$1(formula));
-}
-function getChildFunc(next2, adapter) {
-  return (elem) => {
-    const parent2 = adapter.getParent(elem);
-    return parent2 != null && adapter.isTag(parent2) && next2(elem);
-  };
-}
-const filters = {
-  contains(next2, text2, { adapter }) {
-    return function contains2(elem) {
-      return next2(elem) && adapter.getText(elem).includes(text2);
-    };
-  },
-  icontains(next2, text2, { adapter }) {
-    const itext = text2.toLowerCase();
-    return function icontains(elem) {
-      return next2(elem) && adapter.getText(elem).toLowerCase().includes(itext);
-    };
-  },
-  // Location specific methods
-  "nth-child"(next2, rule, { adapter, equals }) {
-    const func = nthCheck(rule);
-    if (func === boolbase.falseFunc)
-      return boolbase.falseFunc;
-    if (func === boolbase.trueFunc)
-      return getChildFunc(next2, adapter);
-    return function nthChild(elem) {
-      const siblings2 = adapter.getSiblings(elem);
-      let pos = 0;
-      for (let i = 0; i < siblings2.length; i++) {
-        if (equals(elem, siblings2[i]))
-          break;
-        if (adapter.isTag(siblings2[i])) {
-          pos++;
-        }
-      }
-      return func(pos) && next2(elem);
-    };
-  },
-  "nth-last-child"(next2, rule, { adapter, equals }) {
-    const func = nthCheck(rule);
-    if (func === boolbase.falseFunc)
-      return boolbase.falseFunc;
-    if (func === boolbase.trueFunc)
-      return getChildFunc(next2, adapter);
-    return function nthLastChild(elem) {
-      const siblings2 = adapter.getSiblings(elem);
-      let pos = 0;
-      for (let i = siblings2.length - 1; i >= 0; i--) {
-        if (equals(elem, siblings2[i]))
-          break;
-        if (adapter.isTag(siblings2[i])) {
-          pos++;
-        }
-      }
-      return func(pos) && next2(elem);
-    };
-  },
-  "nth-of-type"(next2, rule, { adapter, equals }) {
-    const func = nthCheck(rule);
-    if (func === boolbase.falseFunc)
-      return boolbase.falseFunc;
-    if (func === boolbase.trueFunc)
-      return getChildFunc(next2, adapter);
-    return function nthOfType(elem) {
-      const siblings2 = adapter.getSiblings(elem);
-      let pos = 0;
-      for (let i = 0; i < siblings2.length; i++) {
-        const currentSibling = siblings2[i];
-        if (equals(elem, currentSibling))
-          break;
-        if (adapter.isTag(currentSibling) && adapter.getName(currentSibling) === adapter.getName(elem)) {
-          pos++;
-        }
-      }
-      return func(pos) && next2(elem);
-    };
-  },
-  "nth-last-of-type"(next2, rule, { adapter, equals }) {
-    const func = nthCheck(rule);
-    if (func === boolbase.falseFunc)
-      return boolbase.falseFunc;
-    if (func === boolbase.trueFunc)
-      return getChildFunc(next2, adapter);
-    return function nthLastOfType(elem) {
-      const siblings2 = adapter.getSiblings(elem);
-      let pos = 0;
-      for (let i = siblings2.length - 1; i >= 0; i--) {
-        const currentSibling = siblings2[i];
-        if (equals(elem, currentSibling))
-          break;
-        if (adapter.isTag(currentSibling) && adapter.getName(currentSibling) === adapter.getName(elem)) {
-          pos++;
-        }
-      }
-      return func(pos) && next2(elem);
-    };
-  },
-  // TODO determine the actual root element
-  root(next2, _rule, { adapter }) {
-    return (elem) => {
-      const parent2 = adapter.getParent(elem);
-      return (parent2 == null || !adapter.isTag(parent2)) && next2(elem);
-    };
-  },
-  scope(next2, rule, options, context) {
-    const { equals } = options;
-    if (!context || context.length === 0) {
-      return filters["root"](next2, rule, options);
-    }
-    if (context.length === 1) {
-      return (elem) => equals(context[0], elem) && next2(elem);
-    }
-    return (elem) => context.includes(elem) && next2(elem);
-  },
-  hover: dynamicStatePseudo("isHovered"),
-  visited: dynamicStatePseudo("isVisited"),
-  active: dynamicStatePseudo("isActive")
-};
-function dynamicStatePseudo(name) {
-  return function dynamicPseudo(next2, _rule, { adapter }) {
-    const func = adapter[name];
-    if (typeof func !== "function") {
-      return boolbase.falseFunc;
-    }
-    return function active(elem) {
-      return func(elem) && next2(elem);
-    };
-  };
-}
-const pseudos = {
-  empty(elem, { adapter }) {
-    return !adapter.getChildren(elem).some((elem2) => (
-      // FIXME: `getText` call is potentially expensive.
-      adapter.isTag(elem2) || adapter.getText(elem2) !== ""
-    ));
-  },
-  "first-child"(elem, { adapter, equals }) {
-    if (adapter.prevElementSibling) {
-      return adapter.prevElementSibling(elem) == null;
-    }
-    const firstChild = adapter.getSiblings(elem).find((elem2) => adapter.isTag(elem2));
-    return firstChild != null && equals(elem, firstChild);
-  },
-  "last-child"(elem, { adapter, equals }) {
-    const siblings2 = adapter.getSiblings(elem);
-    for (let i = siblings2.length - 1; i >= 0; i--) {
-      if (equals(elem, siblings2[i]))
-        return true;
-      if (adapter.isTag(siblings2[i]))
-        break;
-    }
-    return false;
-  },
-  "first-of-type"(elem, { adapter, equals }) {
-    const siblings2 = adapter.getSiblings(elem);
-    const elemName = adapter.getName(elem);
-    for (let i = 0; i < siblings2.length; i++) {
-      const currentSibling = siblings2[i];
-      if (equals(elem, currentSibling))
-        return true;
-      if (adapter.isTag(currentSibling) && adapter.getName(currentSibling) === elemName) {
-        break;
-      }
-    }
-    return false;
-  },
-  "last-of-type"(elem, { adapter, equals }) {
-    const siblings2 = adapter.getSiblings(elem);
-    const elemName = adapter.getName(elem);
-    for (let i = siblings2.length - 1; i >= 0; i--) {
-      const currentSibling = siblings2[i];
-      if (equals(elem, currentSibling))
-        return true;
-      if (adapter.isTag(currentSibling) && adapter.getName(currentSibling) === elemName) {
-        break;
-      }
-    }
-    return false;
-  },
-  "only-of-type"(elem, { adapter, equals }) {
-    const elemName = adapter.getName(elem);
-    return adapter.getSiblings(elem).every((sibling) => equals(elem, sibling) || !adapter.isTag(sibling) || adapter.getName(sibling) !== elemName);
-  },
-  "only-child"(elem, { adapter, equals }) {
-    return adapter.getSiblings(elem).every((sibling) => equals(elem, sibling) || !adapter.isTag(sibling));
-  }
-};
-function verifyPseudoArgs(func, name, subselect, argIndex) {
-  if (subselect === null) {
-    if (func.length > argIndex) {
-      throw new Error(`Pseudo-class :${name} requires an argument`);
-    }
-  } else if (func.length === argIndex) {
-    throw new Error(`Pseudo-class :${name} doesn't have any arguments`);
-  }
-}
-const aliases = {
-  // Links
-  "any-link": ":is(a, area, link)[href]",
-  link: ":any-link:not(:visited)",
-  // Forms
-  // https://html.spec.whatwg.org/multipage/scripting.html#disabled-elements
-  disabled: `:is(
-        :is(button, input, select, textarea, optgroup, option)[disabled],
-        optgroup[disabled] > option,
-        fieldset[disabled]:not(fieldset[disabled] legend:first-of-type *)
-    )`,
-  enabled: ":not(:disabled)",
-  checked: ":is(:is(input[type=radio], input[type=checkbox])[checked], option:selected)",
-  required: ":is(input, select, textarea)[required]",
-  optional: ":is(input, select, textarea):not([required])",
-  // JQuery extensions
-  // https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness
-  selected: "option:is([selected], select:not([multiple]):not(:has(> option[selected])) > :first-of-type)",
-  checkbox: "[type=checkbox]",
-  file: "[type=file]",
-  password: "[type=password]",
-  radio: "[type=radio]",
-  reset: "[type=reset]",
-  image: "[type=image]",
-  submit: "[type=submit]",
-  parent: ":not(:empty)",
-  header: ":is(h1, h2, h3, h4, h5, h6)",
-  button: ":is(button, input[type=button])",
-  input: ":is(input, textarea, select, button)",
-  text: "input:is(:not([type!='']), [type=text])"
-};
-const PLACEHOLDER_ELEMENT = {};
-function ensureIsTag(next2, adapter) {
-  if (next2 === boolbase.falseFunc)
-    return boolbase.falseFunc;
-  return (elem) => adapter.isTag(elem) && next2(elem);
-}
-function getNextSiblings(elem, adapter) {
-  const siblings2 = adapter.getSiblings(elem);
-  if (siblings2.length <= 1)
-    return [];
-  const elemIndex = siblings2.indexOf(elem);
-  if (elemIndex < 0 || elemIndex === siblings2.length - 1)
-    return [];
-  return siblings2.slice(elemIndex + 1).filter(adapter.isTag);
-}
-function copyOptions(options) {
-  return {
-    xmlMode: !!options.xmlMode,
-    lowerCaseAttributeNames: !!options.lowerCaseAttributeNames,
-    lowerCaseTags: !!options.lowerCaseTags,
-    quirksMode: !!options.quirksMode,
-    cacheResults: !!options.cacheResults,
-    pseudos: options.pseudos,
-    adapter: options.adapter,
-    equals: options.equals
-  };
-}
-const is$2 = (next2, token2, options, context, compileToken2) => {
-  const func = compileToken2(token2, copyOptions(options), context);
-  return func === boolbase.trueFunc ? next2 : func === boolbase.falseFunc ? boolbase.falseFunc : (elem) => func(elem) && next2(elem);
-};
-const subselects = {
-  is: is$2,
-  /**
-   * `:matches` and `:where` are aliases for `:is`.
-   */
-  matches: is$2,
-  where: is$2,
-  not(next2, token2, options, context, compileToken2) {
-    const func = compileToken2(token2, copyOptions(options), context);
-    return func === boolbase.falseFunc ? next2 : func === boolbase.trueFunc ? boolbase.falseFunc : (elem) => !func(elem) && next2(elem);
-  },
-  has(next2, subselect, options, _context, compileToken2) {
-    const { adapter } = options;
-    const opts = copyOptions(options);
-    opts.relativeSelector = true;
-    const context = subselect.some((s2) => s2.some(isTraversal)) ? (
-      // Used as a placeholder. Will be replaced with the actual element.
-      [PLACEHOLDER_ELEMENT]
-    ) : void 0;
-    const compiled = compileToken2(subselect, opts, context);
-    if (compiled === boolbase.falseFunc)
-      return boolbase.falseFunc;
-    const hasElement = ensureIsTag(compiled, adapter);
-    if (context && compiled !== boolbase.trueFunc) {
-      const { shouldTestNextSiblings = false } = compiled;
-      return (elem) => {
-        if (!next2(elem))
-          return false;
-        context[0] = elem;
-        const childs = adapter.getChildren(elem);
-        const nextElements = shouldTestNextSiblings ? [...childs, ...getNextSiblings(elem, adapter)] : childs;
-        return adapter.existsOne(hasElement, nextElements);
-      };
-    }
-    return (elem) => next2(elem) && adapter.existsOne(hasElement, adapter.getChildren(elem));
-  }
-};
-function compilePseudoSelector(next2, selector, options, context, compileToken2) {
-  var _a;
-  const { name, data: data2 } = selector;
-  if (Array.isArray(data2)) {
-    if (!(name in subselects)) {
-      throw new Error(`Unknown pseudo-class :${name}(${data2})`);
-    }
-    return subselects[name](next2, data2, options, context, compileToken2);
-  }
-  const userPseudo = (_a = options.pseudos) === null || _a === void 0 ? void 0 : _a[name];
-  const stringPseudo = typeof userPseudo === "string" ? userPseudo : aliases[name];
-  if (typeof stringPseudo === "string") {
-    if (data2 != null) {
-      throw new Error(`Pseudo ${name} doesn't have any arguments`);
-    }
-    const alias = parse$2(stringPseudo);
-    return subselects["is"](next2, alias, options, context, compileToken2);
-  }
-  if (typeof userPseudo === "function") {
-    verifyPseudoArgs(userPseudo, name, data2, 1);
-    return (elem) => userPseudo(elem, data2) && next2(elem);
-  }
-  if (name in filters) {
-    return filters[name](next2, data2, options, context);
-  }
-  if (name in pseudos) {
-    const pseudo = pseudos[name];
-    verifyPseudoArgs(pseudo, name, data2, 2);
-    return (elem) => pseudo(elem, options, data2) && next2(elem);
-  }
-  throw new Error(`Unknown pseudo-class :${name}`);
-}
-function getElementParent(node2, adapter) {
-  const parent2 = adapter.getParent(node2);
-  if (parent2 && adapter.isTag(parent2)) {
-    return parent2;
-  }
-  return null;
-}
-function compileGeneralSelector(next2, selector, options, context, compileToken2) {
-  const { adapter, equals } = options;
-  switch (selector.type) {
-    case SelectorType.PseudoElement: {
-      throw new Error("Pseudo-elements are not supported by css-select");
-    }
-    case SelectorType.ColumnCombinator: {
-      throw new Error("Column combinators are not yet supported by css-select");
-    }
-    case SelectorType.Attribute: {
-      if (selector.namespace != null) {
-        throw new Error("Namespaced attributes are not yet supported by css-select");
-      }
-      if (!options.xmlMode || options.lowerCaseAttributeNames) {
-        selector.name = selector.name.toLowerCase();
-      }
-      return attributeRules[selector.action](next2, selector, options);
-    }
-    case SelectorType.Pseudo: {
-      return compilePseudoSelector(next2, selector, options, context, compileToken2);
-    }
-    // Tags
-    case SelectorType.Tag: {
-      if (selector.namespace != null) {
-        throw new Error("Namespaced tag names are not yet supported by css-select");
-      }
-      let { name } = selector;
-      if (!options.xmlMode || options.lowerCaseTags) {
-        name = name.toLowerCase();
-      }
-      return function tag(elem) {
-        return adapter.getName(elem) === name && next2(elem);
-      };
-    }
-    // Traversal
-    case SelectorType.Descendant: {
-      if (options.cacheResults === false || typeof WeakSet === "undefined") {
-        return function descendant(elem) {
-          let current = elem;
-          while (current = getElementParent(current, adapter)) {
-            if (next2(current)) {
-              return true;
-            }
-          }
-          return false;
-        };
-      }
-      const isFalseCache = /* @__PURE__ */ new WeakSet();
-      return function cachedDescendant(elem) {
-        let current = elem;
-        while (current = getElementParent(current, adapter)) {
-          if (!isFalseCache.has(current)) {
-            if (adapter.isTag(current) && next2(current)) {
-              return true;
-            }
-            isFalseCache.add(current);
-          }
-        }
-        return false;
-      };
-    }
-    case "_flexibleDescendant": {
-      return function flexibleDescendant(elem) {
-        let current = elem;
-        do {
-          if (next2(current))
-            return true;
-        } while (current = getElementParent(current, adapter));
-        return false;
-      };
-    }
-    case SelectorType.Parent: {
-      return function parent2(elem) {
-        return adapter.getChildren(elem).some((elem2) => adapter.isTag(elem2) && next2(elem2));
-      };
-    }
-    case SelectorType.Child: {
-      return function child(elem) {
-        const parent2 = adapter.getParent(elem);
-        return parent2 != null && adapter.isTag(parent2) && next2(parent2);
-      };
-    }
-    case SelectorType.Sibling: {
-      return function sibling(elem) {
-        const siblings2 = adapter.getSiblings(elem);
-        for (let i = 0; i < siblings2.length; i++) {
-          const currentSibling = siblings2[i];
-          if (equals(elem, currentSibling))
-            break;
-          if (adapter.isTag(currentSibling) && next2(currentSibling)) {
-            return true;
-          }
-        }
-        return false;
-      };
-    }
-    case SelectorType.Adjacent: {
-      if (adapter.prevElementSibling) {
-        return function adjacent(elem) {
-          const previous = adapter.prevElementSibling(elem);
-          return previous != null && next2(previous);
-        };
-      }
-      return function adjacent(elem) {
-        const siblings2 = adapter.getSiblings(elem);
-        let lastElement;
-        for (let i = 0; i < siblings2.length; i++) {
-          const currentSibling = siblings2[i];
-          if (equals(elem, currentSibling))
-            break;
-          if (adapter.isTag(currentSibling)) {
-            lastElement = currentSibling;
-          }
-        }
-        return !!lastElement && next2(lastElement);
-      };
-    }
-    case SelectorType.Universal: {
-      if (selector.namespace != null && selector.namespace !== "*") {
-        throw new Error("Namespaced universal selectors are not yet supported by css-select");
-      }
-      return next2;
-    }
-  }
-}
-function includesScopePseudo(t) {
-  return t.type === SelectorType.Pseudo && (t.name === "scope" || Array.isArray(t.data) && t.data.some((data2) => data2.some(includesScopePseudo)));
-}
-const DESCENDANT_TOKEN = { type: SelectorType.Descendant };
-const FLEXIBLE_DESCENDANT_TOKEN = {
-  type: "_flexibleDescendant"
-};
-const SCOPE_TOKEN = {
-  type: SelectorType.Pseudo,
-  name: "scope",
-  data: null
-};
-function absolutize(token2, { adapter }, context) {
-  const hasContext = !!(context === null || context === void 0 ? void 0 : context.every((e) => {
-    const parent2 = adapter.isTag(e) && adapter.getParent(e);
-    return e === PLACEHOLDER_ELEMENT || parent2 && adapter.isTag(parent2);
-  }));
-  for (const t of token2) {
-    if (t.length > 0 && isTraversal(t[0]) && t[0].type !== SelectorType.Descendant) ;
-    else if (hasContext && !t.some(includesScopePseudo)) {
-      t.unshift(DESCENDANT_TOKEN);
-    } else {
-      continue;
-    }
-    t.unshift(SCOPE_TOKEN);
-  }
-}
-function compileToken(token2, options, context) {
-  var _a;
-  token2.forEach(sortByProcedure);
-  context = (_a = options.context) !== null && _a !== void 0 ? _a : context;
-  const isArrayContext = Array.isArray(context);
-  const finalContext = context && (Array.isArray(context) ? context : [context]);
-  if (options.relativeSelector !== false) {
-    absolutize(token2, options, finalContext);
-  } else if (token2.some((t) => t.length > 0 && isTraversal(t[0]))) {
-    throw new Error("Relative selectors are not allowed when the `relativeSelector` option is disabled");
-  }
-  let shouldTestNextSiblings = false;
-  const query = token2.map((rules) => {
-    if (rules.length >= 2) {
-      const [first2, second] = rules;
-      if (first2.type !== SelectorType.Pseudo || first2.name !== "scope") ;
-      else if (isArrayContext && second.type === SelectorType.Descendant) {
-        rules[1] = FLEXIBLE_DESCENDANT_TOKEN;
-      } else if (second.type === SelectorType.Adjacent || second.type === SelectorType.Sibling) {
-        shouldTestNextSiblings = true;
-      }
-    }
-    return compileRules(rules, options, finalContext);
-  }).reduce(reduceRules, boolbase.falseFunc);
-  query.shouldTestNextSiblings = shouldTestNextSiblings;
-  return query;
-}
-function compileRules(rules, options, context) {
-  var _a;
-  return rules.reduce((previous, rule) => previous === boolbase.falseFunc ? boolbase.falseFunc : compileGeneralSelector(previous, rule, options, context, compileToken), (_a = options.rootFunc) !== null && _a !== void 0 ? _a : boolbase.trueFunc);
-}
-function reduceRules(a, b) {
-  if (b === boolbase.falseFunc || a === boolbase.trueFunc) {
-    return a;
-  }
-  if (a === boolbase.falseFunc || b === boolbase.trueFunc) {
-    return b;
-  }
-  return function combine2(elem) {
-    return a(elem) || b(elem);
-  };
-}
-const defaultEquals = (a, b) => a === b;
-const defaultOptions = {
-  adapter: DomUtils,
-  equals: defaultEquals
-};
-function convertOptionFormats(options) {
-  var _a, _b, _c, _d;
-  const opts = options !== null && options !== void 0 ? options : defaultOptions;
-  (_a = opts.adapter) !== null && _a !== void 0 ? _a : opts.adapter = DomUtils;
-  (_b = opts.equals) !== null && _b !== void 0 ? _b : opts.equals = (_d = (_c = opts.adapter) === null || _c === void 0 ? void 0 : _c.equals) !== null && _d !== void 0 ? _d : defaultEquals;
-  return opts;
-}
-function wrapCompile(func) {
-  return function addAdapter(selector, options, context) {
-    const opts = convertOptionFormats(options);
-    return func(selector, opts, context);
-  };
-}
-const _compileToken = wrapCompile(compileToken);
-function prepareContext(elems, adapter, shouldTestNextSiblings = false) {
-  if (shouldTestNextSiblings) {
-    elems = appendNextSiblings(elems, adapter);
-  }
-  return Array.isArray(elems) ? adapter.removeSubsets(elems) : adapter.getChildren(elems);
-}
-function appendNextSiblings(elem, adapter) {
-  const elems = Array.isArray(elem) ? elem.slice(0) : [elem];
-  const elemsLength = elems.length;
-  for (let i = 0; i < elemsLength; i++) {
-    const nextSiblings = getNextSiblings(elems[i], adapter);
-    elems.push(...nextSiblings);
-  }
-  return elems;
-}
-const filterNames = /* @__PURE__ */ new Set([
-  "first",
-  "last",
-  "eq",
-  "gt",
-  "nth",
-  "lt",
-  "even",
-  "odd"
-]);
-function isFilter(s2) {
-  if (s2.type !== "pseudo")
-    return false;
-  if (filterNames.has(s2.name))
-    return true;
-  if (s2.name === "not" && Array.isArray(s2.data)) {
-    return s2.data.some((s3) => s3.some(isFilter));
-  }
-  return false;
-}
-function getLimit(filter2, data2, partLimit) {
-  const num = data2 != null ? parseInt(data2, 10) : NaN;
-  switch (filter2) {
-    case "first":
-      return 1;
-    case "nth":
-    case "eq":
-      return isFinite(num) ? num >= 0 ? num + 1 : Infinity : 0;
-    case "lt":
-      return isFinite(num) ? num >= 0 ? Math.min(num, partLimit) : Infinity : 0;
-    case "gt":
-      return isFinite(num) ? Infinity : 0;
-    case "odd":
-      return 2 * partLimit;
-    case "even":
-      return 2 * partLimit - 1;
-    case "last":
-    case "not":
-      return Infinity;
-  }
-}
-function getDocumentRoot(node2) {
-  while (node2.parent)
-    node2 = node2.parent;
-  return node2;
-}
-function groupSelectors(selectors) {
-  const filteredSelectors = [];
-  const plainSelectors = [];
-  for (const selector of selectors) {
-    if (selector.some(isFilter)) {
-      filteredSelectors.push(selector);
-    } else {
-      plainSelectors.push(selector);
-    }
-  }
-  return [plainSelectors, filteredSelectors];
-}
-const UNIVERSAL_SELECTOR = {
-  type: SelectorType.Universal,
-  namespace: null
-};
-const SCOPE_PSEUDO = {
-  type: SelectorType.Pseudo,
-  name: "scope",
-  data: null
-};
-function is$1(element, selector, options = {}) {
-  return some([element], selector, options);
-}
-function some(elements, selector, options = {}) {
-  if (typeof selector === "function")
-    return elements.some(selector);
-  const [plain, filtered] = groupSelectors(parse$2(selector));
-  return plain.length > 0 && elements.some(_compileToken(plain, options)) || filtered.some((sel) => filterBySelector(sel, elements, options).length > 0);
-}
-function filterByPosition(filter2, elems, data2, options) {
-  const num = typeof data2 === "string" ? parseInt(data2, 10) : NaN;
-  switch (filter2) {
-    case "first":
-    case "lt":
-      return elems;
-    case "last":
-      return elems.length > 0 ? [elems[elems.length - 1]] : elems;
-    case "nth":
-    case "eq":
-      return isFinite(num) && Math.abs(num) < elems.length ? [num < 0 ? elems[elems.length + num] : elems[num]] : [];
-    case "gt":
-      return isFinite(num) ? elems.slice(num + 1) : [];
-    case "even":
-      return elems.filter((_, i) => i % 2 === 0);
-    case "odd":
-      return elems.filter((_, i) => i % 2 === 1);
-    case "not": {
-      const filtered = new Set(filterParsed(data2, elems, options));
-      return elems.filter((e) => !filtered.has(e));
-    }
-  }
-}
-function filter$1(selector, elements, options = {}) {
-  return filterParsed(parse$2(selector), elements, options);
-}
-function filterParsed(selector, elements, options) {
-  if (elements.length === 0)
-    return [];
-  const [plainSelectors, filteredSelectors] = groupSelectors(selector);
-  let found;
-  if (plainSelectors.length) {
-    const filtered = filterElements(elements, plainSelectors, options);
-    if (filteredSelectors.length === 0) {
-      return filtered;
-    }
-    if (filtered.length) {
-      found = new Set(filtered);
-    }
-  }
-  for (let i = 0; i < filteredSelectors.length && (found === null || found === void 0 ? void 0 : found.size) !== elements.length; i++) {
-    const filteredSelector = filteredSelectors[i];
-    const missing = found ? elements.filter((e) => isTag(e) && !found.has(e)) : elements;
-    if (missing.length === 0)
-      break;
-    const filtered = filterBySelector(filteredSelector, elements, options);
-    if (filtered.length) {
-      if (!found) {
-        if (i === filteredSelectors.length - 1) {
-          return filtered;
-        }
-        found = new Set(filtered);
-      } else {
-        filtered.forEach((el) => found.add(el));
-      }
-    }
-  }
-  return typeof found !== "undefined" ? found.size === elements.length ? elements : (
-    // Filter elements to preserve order
-    elements.filter((el) => found.has(el))
-  ) : [];
-}
-function filterBySelector(selector, elements, options) {
-  var _a;
-  if (selector.some(isTraversal$1)) {
-    const root = (_a = options.root) !== null && _a !== void 0 ? _a : getDocumentRoot(elements[0]);
-    const opts = { ...options, context: elements, relativeSelector: false };
-    selector.push(SCOPE_PSEUDO);
-    return findFilterElements(root, selector, opts, true, elements.length);
-  }
-  return findFilterElements(elements, selector, options, false, elements.length);
-}
-function select(selector, root, options = {}, limit = Infinity) {
-  if (typeof selector === "function") {
-    return find$1(root, selector);
-  }
-  const [plain, filtered] = groupSelectors(parse$2(selector));
-  const results = filtered.map((sel) => findFilterElements(root, sel, options, true, limit));
-  if (plain.length) {
-    results.push(findElements(root, plain, options, limit));
-  }
-  if (results.length === 0) {
-    return [];
-  }
-  if (results.length === 1) {
-    return results[0];
-  }
-  return uniqueSort(results.reduce((a, b) => [...a, ...b]));
-}
-function findFilterElements(root, selector, options, queryForSelector, totalLimit) {
-  const filterIndex = selector.findIndex(isFilter);
-  const sub = selector.slice(0, filterIndex);
-  const filter2 = selector[filterIndex];
-  const partLimit = selector.length - 1 === filterIndex ? totalLimit : Infinity;
-  const limit = getLimit(filter2.name, filter2.data, partLimit);
-  if (limit === 0)
-    return [];
-  const elemsNoLimit = sub.length === 0 && !Array.isArray(root) ? getChildren(root).filter(isTag) : sub.length === 0 ? (Array.isArray(root) ? root : [root]).filter(isTag) : queryForSelector || sub.some(isTraversal$1) ? findElements(root, [sub], options, limit) : filterElements(root, [sub], options);
-  const elems = elemsNoLimit.slice(0, limit);
-  let result = filterByPosition(filter2.name, elems, filter2.data, options);
-  if (result.length === 0 || selector.length === filterIndex + 1) {
-    return result;
-  }
-  const remainingSelector = selector.slice(filterIndex + 1);
-  const remainingHasTraversal = remainingSelector.some(isTraversal$1);
-  if (remainingHasTraversal) {
-    if (isTraversal$1(remainingSelector[0])) {
-      const { type: type2 } = remainingSelector[0];
-      if (type2 === SelectorType.Sibling || type2 === SelectorType.Adjacent) {
-        result = prepareContext(result, DomUtils, true);
-      }
-      remainingSelector.unshift(UNIVERSAL_SELECTOR);
-    }
-    options = {
-      ...options,
-      // Avoid absolutizing the selector
-      relativeSelector: false,
-      /*
-       * Add a custom root func, to make sure traversals don't match elements
-       * that aren't a part of the considered tree.
-       */
-      rootFunc: (el) => result.includes(el)
-    };
-  } else if (options.rootFunc && options.rootFunc !== boolbaseExports.trueFunc) {
-    options = { ...options, rootFunc: boolbaseExports.trueFunc };
-  }
-  return remainingSelector.some(isFilter) ? findFilterElements(result, remainingSelector, options, false, totalLimit) : remainingHasTraversal ? (
-    // Query existing elements to resolve traversal.
-    findElements(result, [remainingSelector], options, totalLimit)
-  ) : (
-    // If we don't have any more traversals, simply filter elements.
-    filterElements(result, [remainingSelector], options)
-  );
-}
-function findElements(root, sel, options, limit) {
-  const query = _compileToken(sel, options, root);
-  return find$1(root, query, limit);
-}
-function find$1(root, query, limit = Infinity) {
-  const elems = prepareContext(root, DomUtils, query.shouldTestNextSiblings);
-  return find$2((node2) => isTag(node2) && query(node2), elems, true, limit);
-}
-function filterElements(elements, sel, options) {
-  const els = (Array.isArray(elements) ? elements : [elements]).filter(isTag);
-  if (els.length === 0)
-    return els;
-  const query = _compileToken(sel, options);
-  return query === boolbaseExports.trueFunc ? els : els.filter(query);
-}
-const reSiblingSelector = /^\s*[+~]/;
-function find(selectorOrHaystack) {
-  if (!selectorOrHaystack) {
-    return this._make([]);
-  }
-  if (typeof selectorOrHaystack !== "string") {
-    const haystack = isCheerio(selectorOrHaystack) ? selectorOrHaystack.toArray() : [selectorOrHaystack];
-    const context = this.toArray();
-    return this._make(haystack.filter((elem) => context.some((node2) => contains(node2, elem))));
-  }
-  return this._findBySelector(selectorOrHaystack, Number.POSITIVE_INFINITY);
-}
-function _findBySelector(selector, limit) {
-  var _a;
-  const context = this.toArray();
-  const elems = reSiblingSelector.test(selector) ? context : this.children().toArray();
-  const options = {
-    context,
-    root: (_a = this._root) === null || _a === void 0 ? void 0 : _a[0],
-    // Pass options that are recognized by `cheerio-select`
-    xmlMode: this.options.xmlMode,
-    lowerCaseTags: this.options.lowerCaseTags,
-    lowerCaseAttributeNames: this.options.lowerCaseAttributeNames,
-    pseudos: this.options.pseudos,
-    quirksMode: this.options.quirksMode
-  };
-  return this._make(select(selector, elems, options, limit));
-}
-function _getMatcher(matchMap) {
-  return function(fn, ...postFns) {
-    return function(selector) {
-      var _a;
-      let matched = matchMap(fn, this);
-      if (selector) {
-        matched = filterArray(matched, selector, this.options.xmlMode, (_a = this._root) === null || _a === void 0 ? void 0 : _a[0]);
-      }
-      return this._make(
-        // Post processing is only necessary if there is more than one element.
-        this.length > 1 && matched.length > 1 ? postFns.reduce((elems, fn2) => fn2(elems), matched) : matched
-      );
-    };
-  };
-}
-const _matcher = _getMatcher((fn, elems) => {
-  let ret = [];
-  for (let i = 0; i < elems.length; i++) {
-    const value = fn(elems[i]);
-    if (value.length > 0)
-      ret = ret.concat(value);
-  }
-  return ret;
-});
-const _singleMatcher = _getMatcher((fn, elems) => {
-  const ret = [];
-  for (let i = 0; i < elems.length; i++) {
-    const value = fn(elems[i]);
-    if (value !== null) {
-      ret.push(value);
-    }
-  }
-  return ret;
-});
-function _matchUntil(nextElem, ...postFns) {
-  let matches = null;
-  const innerMatcher = _getMatcher((nextElem2, elems) => {
-    const matched = [];
-    domEach(elems, (elem) => {
-      for (let next2; next2 = nextElem2(elem); elem = next2) {
-        if (matches === null || matches === void 0 ? void 0 : matches(next2, matched.length))
-          break;
-        matched.push(next2);
-      }
-    });
-    return matched;
-  })(nextElem, ...postFns);
-  return function(selector, filterSelector) {
-    matches = typeof selector === "string" ? (elem) => is$1(elem, selector, this.options) : selector ? getFilterFn(selector) : null;
-    const ret = innerMatcher.call(this, filterSelector);
-    matches = null;
-    return ret;
-  };
-}
-function _removeDuplicates(elems) {
-  return elems.length > 1 ? Array.from(new Set(elems)) : elems;
-}
-const parent = _singleMatcher(({ parent: parent2 }) => parent2 && !isDocument(parent2) ? parent2 : null, _removeDuplicates);
-const parents = _matcher((elem) => {
-  const matched = [];
-  while (elem.parent && !isDocument(elem.parent)) {
-    matched.push(elem.parent);
-    elem = elem.parent;
-  }
-  return matched;
-}, uniqueSort, (elems) => elems.reverse());
-const parentsUntil = _matchUntil(({ parent: parent2 }) => parent2 && !isDocument(parent2) ? parent2 : null, uniqueSort, (elems) => elems.reverse());
-function closest(selector) {
-  var _a;
-  const set = [];
-  if (!selector) {
-    return this._make(set);
-  }
-  const selectOpts = {
-    xmlMode: this.options.xmlMode,
-    root: (_a = this._root) === null || _a === void 0 ? void 0 : _a[0]
-  };
-  const selectFn = typeof selector === "string" ? (elem) => is$1(elem, selector, selectOpts) : getFilterFn(selector);
-  domEach(this, (elem) => {
-    if (elem && !isDocument(elem) && !isTag(elem)) {
-      elem = elem.parent;
-    }
-    while (elem && isTag(elem)) {
-      if (selectFn(elem, 0)) {
-        if (!set.includes(elem)) {
-          set.push(elem);
-        }
-        break;
-      }
-      elem = elem.parent;
-    }
-  });
-  return this._make(set);
-}
-const next = _singleMatcher((elem) => nextElementSibling(elem));
-const nextAll = _matcher((elem) => {
-  const matched = [];
-  while (elem.next) {
-    elem = elem.next;
-    if (isTag(elem))
-      matched.push(elem);
-  }
-  return matched;
-}, _removeDuplicates);
-const nextUntil = _matchUntil((el) => nextElementSibling(el), _removeDuplicates);
-const prev = _singleMatcher((elem) => prevElementSibling(elem));
-const prevAll = _matcher((elem) => {
-  const matched = [];
-  while (elem.prev) {
-    elem = elem.prev;
-    if (isTag(elem))
-      matched.push(elem);
-  }
-  return matched;
-}, _removeDuplicates);
-const prevUntil = _matchUntil((el) => prevElementSibling(el), _removeDuplicates);
-const siblings = _matcher((elem) => getSiblings(elem).filter((el) => isTag(el) && el !== elem), uniqueSort);
-const children = _matcher((elem) => getChildren(elem).filter(isTag), _removeDuplicates);
-function contents() {
-  const elems = this.toArray().reduce((newElems, elem) => hasChildren(elem) ? newElems.concat(elem.children) : newElems, []);
-  return this._make(elems);
-}
-function each(fn) {
-  let i = 0;
-  const len = this.length;
-  while (i < len && fn.call(this[i], i, this[i]) !== false)
-    ++i;
-  return this;
-}
-function map(fn) {
-  let elems = [];
-  for (let i = 0; i < this.length; i++) {
-    const el = this[i];
-    const val2 = fn.call(el, i, el);
-    if (val2 != null) {
-      elems = elems.concat(val2);
-    }
-  }
-  return this._make(elems);
-}
-function getFilterFn(match2) {
-  if (typeof match2 === "function") {
-    return (el, i) => match2.call(el, i, el);
-  }
-  if (isCheerio(match2)) {
-    return (el) => Array.prototype.includes.call(match2, el);
-  }
-  return function(el) {
-    return match2 === el;
-  };
-}
-function filter(match2) {
-  var _a;
-  return this._make(filterArray(this.toArray(), match2, this.options.xmlMode, (_a = this._root) === null || _a === void 0 ? void 0 : _a[0]));
-}
-function filterArray(nodes, match2, xmlMode, root) {
-  return typeof match2 === "string" ? filter$1(match2, nodes, { xmlMode, root }) : nodes.filter(getFilterFn(match2));
-}
-function is(selector) {
-  const nodes = this.toArray();
-  return typeof selector === "string" ? some(nodes.filter(isTag), selector, this.options) : selector ? nodes.some(getFilterFn(selector)) : false;
-}
-function not(match2) {
-  let nodes = this.toArray();
-  if (typeof match2 === "string") {
-    const matches = new Set(filter$1(match2, nodes, this.options));
-    nodes = nodes.filter((el) => !matches.has(el));
-  } else {
-    const filterFn = getFilterFn(match2);
-    nodes = nodes.filter((el, i) => !filterFn(el, i));
-  }
-  return this._make(nodes);
-}
-function has(selectorOrHaystack) {
-  return this.filter(typeof selectorOrHaystack === "string" ? (
-    // Using the `:has` selector here short-circuits searches.
-    `:has(${selectorOrHaystack})`
-  ) : (_, el) => this._make(el).find(selectorOrHaystack).length > 0);
-}
-function first() {
-  return this.length > 1 ? this._make(this[0]) : this;
-}
-function last() {
-  return this.length > 0 ? this._make(this[this.length - 1]) : this;
-}
-function eq(i) {
-  var _a;
-  i = +i;
-  if (i === 0 && this.length <= 1)
-    return this;
-  if (i < 0)
-    i = this.length + i;
-  return this._make((_a = this[i]) !== null && _a !== void 0 ? _a : []);
-}
-function get(i) {
-  if (i == null) {
-    return this.toArray();
-  }
-  return this[i < 0 ? this.length + i : i];
-}
-function toArray() {
-  return Array.prototype.slice.call(this);
-}
-function index(selectorOrNeedle) {
-  let $haystack;
-  let needle;
-  if (selectorOrNeedle == null) {
-    $haystack = this.parent().children();
-    needle = this[0];
-  } else if (typeof selectorOrNeedle === "string") {
-    $haystack = this._make(selectorOrNeedle);
-    needle = this[0];
-  } else {
-    $haystack = this;
-    needle = isCheerio(selectorOrNeedle) ? selectorOrNeedle[0] : selectorOrNeedle;
-  }
-  return Array.prototype.indexOf.call($haystack, needle);
-}
-function slice(start, end2) {
-  return this._make(Array.prototype.slice.call(this, start, end2));
-}
-function end() {
-  var _a;
-  return (_a = this.prevObject) !== null && _a !== void 0 ? _a : this._make([]);
-}
-function add(other, context) {
-  const selection = this._make(other, context);
-  const contents2 = uniqueSort([...this.get(), ...selection.get()]);
-  return this._make(contents2);
-}
-function addBack(selector) {
-  return this.prevObject ? this.add(selector ? this.prevObject.filter(selector) : this.prevObject) : this;
-}
-const Traversing = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  _findBySelector,
-  add,
-  addBack,
-  children,
-  closest,
-  contents,
-  each,
-  end,
-  eq,
-  filter,
-  filterArray,
-  find,
-  first,
-  get,
-  has,
-  index,
-  is,
-  last,
-  map,
-  next,
-  nextAll,
-  nextUntil,
-  not,
-  parent,
-  parents,
-  parentsUntil,
-  prev,
-  prevAll,
-  prevUntil,
-  siblings,
-  slice,
-  toArray
-}, Symbol.toStringTag, { value: "Module" }));
-function update(newChilds, parent2) {
-  const arr = Array.isArray(newChilds) ? newChilds : [newChilds];
-  if (parent2) {
-    parent2.children = arr;
-  } else {
-    parent2 = null;
-  }
-  for (let i = 0; i < arr.length; i++) {
-    const node2 = arr[i];
-    if (node2.parent && node2.parent.children !== arr) {
-      removeElement(node2);
-    }
-    if (parent2) {
-      node2.prev = arr[i - 1] || null;
-      node2.next = arr[i + 1] || null;
-    } else {
-      node2.prev = node2.next = null;
-    }
-    node2.parent = parent2;
-  }
-  return parent2;
-}
-function _makeDomArray(elem, clone2) {
-  if (elem == null) {
-    return [];
-  }
-  if (typeof elem === "string") {
-    return this._parse(elem, this.options, false, null).children.slice(0);
-  }
-  if ("length" in elem) {
-    if (elem.length === 1) {
-      return this._makeDomArray(elem[0], clone2);
-    }
-    const result = [];
-    for (let i = 0; i < elem.length; i++) {
-      const el = elem[i];
-      if (typeof el === "object") {
-        if (el == null) {
-          continue;
-        }
-        if (!("length" in el)) {
-          result.push(clone2 ? cloneNode(el, true) : el);
-          continue;
-        }
-      }
-      result.push(...this._makeDomArray(el, clone2));
-    }
-    return result;
-  }
-  return [clone2 ? cloneNode(elem, true) : elem];
-}
-function _insert(concatenator) {
-  return function(...elems) {
-    const lastIdx = this.length - 1;
-    return domEach(this, (el, i) => {
-      if (!hasChildren(el))
-        return;
-      const domSrc = typeof elems[0] === "function" ? elems[0].call(el, i, this._render(el.children)) : elems;
-      const dom = this._makeDomArray(domSrc, i < lastIdx);
-      concatenator(dom, el.children, el);
-    });
-  };
-}
-function uniqueSplice(array, spliceIdx, spliceCount, newElems, parent2) {
-  var _a, _b;
-  const spliceArgs = [
-    spliceIdx,
-    spliceCount,
-    ...newElems
-  ];
-  const prev2 = spliceIdx === 0 ? null : array[spliceIdx - 1];
-  const next2 = spliceIdx + spliceCount >= array.length ? null : array[spliceIdx + spliceCount];
-  for (let idx = 0; idx < newElems.length; ++idx) {
-    const node2 = newElems[idx];
-    const oldParent = node2.parent;
-    if (oldParent) {
-      const oldSiblings = oldParent.children;
-      const prevIdx = oldSiblings.indexOf(node2);
-      if (prevIdx > -1) {
-        oldParent.children.splice(prevIdx, 1);
-        if (parent2 === oldParent && spliceIdx > prevIdx) {
-          spliceArgs[0]--;
-        }
-      }
-    }
-    node2.parent = parent2;
-    if (node2.prev) {
-      node2.prev.next = (_a = node2.next) !== null && _a !== void 0 ? _a : null;
-    }
-    if (node2.next) {
-      node2.next.prev = (_b = node2.prev) !== null && _b !== void 0 ? _b : null;
-    }
-    node2.prev = idx === 0 ? prev2 : newElems[idx - 1];
-    node2.next = idx === newElems.length - 1 ? next2 : newElems[idx + 1];
-  }
-  if (prev2) {
-    prev2.next = newElems[0];
-  }
-  if (next2) {
-    next2.prev = newElems[newElems.length - 1];
-  }
-  return array.splice(...spliceArgs);
-}
-function appendTo(target) {
-  const appendTarget = isCheerio(target) ? target : this._make(target);
-  appendTarget.append(this);
-  return this;
-}
-function prependTo(target) {
-  const prependTarget = isCheerio(target) ? target : this._make(target);
-  prependTarget.prepend(this);
-  return this;
-}
-const append = _insert((dom, children2, parent2) => {
-  uniqueSplice(children2, children2.length, 0, dom, parent2);
-});
-const prepend = _insert((dom, children2, parent2) => {
-  uniqueSplice(children2, 0, 0, dom, parent2);
-});
-function _wrap(insert) {
-  return function(wrapper2) {
-    const lastIdx = this.length - 1;
-    const lastParent = this.parents().last();
-    for (let i = 0; i < this.length; i++) {
-      const el = this[i];
-      const wrap2 = typeof wrapper2 === "function" ? wrapper2.call(el, i, el) : typeof wrapper2 === "string" && !isHtml(wrapper2) ? lastParent.find(wrapper2).clone() : wrapper2;
-      const [wrapperDom] = this._makeDomArray(wrap2, i < lastIdx);
-      if (!wrapperDom || !hasChildren(wrapperDom))
-        continue;
-      let elInsertLocation = wrapperDom;
-      let j = 0;
-      while (j < elInsertLocation.children.length) {
-        const child = elInsertLocation.children[j];
-        if (isTag(child)) {
-          elInsertLocation = child;
-          j = 0;
-        } else {
-          j++;
-        }
-      }
-      insert(el, elInsertLocation, [wrapperDom]);
-    }
-    return this;
-  };
-}
-const wrap = _wrap((el, elInsertLocation, wrapperDom) => {
-  const { parent: parent2 } = el;
-  if (!parent2)
-    return;
-  const siblings2 = parent2.children;
-  const index2 = siblings2.indexOf(el);
-  update([el], elInsertLocation);
-  uniqueSplice(siblings2, index2, 0, wrapperDom, parent2);
-});
-const wrapInner = _wrap((el, elInsertLocation, wrapperDom) => {
-  if (!hasChildren(el))
-    return;
-  update(el.children, elInsertLocation);
-  update(wrapperDom, el);
-});
-function unwrap(selector) {
-  this.parent(selector).not("body").each((_, el) => {
-    this._make(el).replaceWith(el.children);
-  });
-  return this;
-}
-function wrapAll(wrapper2) {
-  const el = this[0];
-  if (el) {
-    const wrap2 = this._make(typeof wrapper2 === "function" ? wrapper2.call(el, 0, el) : wrapper2).insertBefore(el);
-    let elInsertLocation;
-    for (let i = 0; i < wrap2.length; i++) {
-      if (wrap2[i].type === "tag")
-        elInsertLocation = wrap2[i];
-    }
-    let j = 0;
-    while (elInsertLocation && j < elInsertLocation.children.length) {
-      const child = elInsertLocation.children[j];
-      if (child.type === "tag") {
-        elInsertLocation = child;
-        j = 0;
-      } else {
-        j++;
-      }
-    }
-    if (elInsertLocation)
-      this._make(elInsertLocation).append(this);
-  }
-  return this;
-}
-function after(...elems) {
-  const lastIdx = this.length - 1;
-  return domEach(this, (el, i) => {
-    if (!hasChildren(el) || !el.parent) {
-      return;
-    }
-    const siblings2 = el.parent.children;
-    const index2 = siblings2.indexOf(el);
-    if (index2 < 0)
-      return;
-    const domSrc = typeof elems[0] === "function" ? elems[0].call(el, i, this._render(el.children)) : elems;
-    const dom = this._makeDomArray(domSrc, i < lastIdx);
-    uniqueSplice(siblings2, index2 + 1, 0, dom, el.parent);
-  });
-}
-function insertAfter(target) {
-  if (typeof target === "string") {
-    target = this._make(target);
-  }
-  this.remove();
-  const clones = [];
-  for (const el of this._makeDomArray(target)) {
-    const clonedSelf = this.clone().toArray();
-    const { parent: parent2 } = el;
-    if (!parent2) {
-      continue;
-    }
-    const siblings2 = parent2.children;
-    const index2 = siblings2.indexOf(el);
-    if (index2 < 0)
-      continue;
-    uniqueSplice(siblings2, index2 + 1, 0, clonedSelf, parent2);
-    clones.push(...clonedSelf);
-  }
-  return this._make(clones);
-}
-function before(...elems) {
-  const lastIdx = this.length - 1;
-  return domEach(this, (el, i) => {
-    if (!hasChildren(el) || !el.parent) {
-      return;
-    }
-    const siblings2 = el.parent.children;
-    const index2 = siblings2.indexOf(el);
-    if (index2 < 0)
-      return;
-    const domSrc = typeof elems[0] === "function" ? elems[0].call(el, i, this._render(el.children)) : elems;
-    const dom = this._makeDomArray(domSrc, i < lastIdx);
-    uniqueSplice(siblings2, index2, 0, dom, el.parent);
-  });
-}
-function insertBefore(target) {
-  const targetArr = this._make(target);
-  this.remove();
-  const clones = [];
-  domEach(targetArr, (el) => {
-    const clonedSelf = this.clone().toArray();
-    const { parent: parent2 } = el;
-    if (!parent2) {
-      return;
-    }
-    const siblings2 = parent2.children;
-    const index2 = siblings2.indexOf(el);
-    if (index2 < 0)
-      return;
-    uniqueSplice(siblings2, index2, 0, clonedSelf, parent2);
-    clones.push(...clonedSelf);
-  });
-  return this._make(clones);
-}
-function remove(selector) {
-  const elems = selector ? this.filter(selector) : this;
-  domEach(elems, (el) => {
-    removeElement(el);
-    el.prev = el.next = el.parent = null;
-  });
-  return this;
-}
-function replaceWith(content) {
-  return domEach(this, (el, i) => {
-    const { parent: parent2 } = el;
-    if (!parent2) {
-      return;
-    }
-    const siblings2 = parent2.children;
-    const cont = typeof content === "function" ? content.call(el, i, el) : content;
-    const dom = this._makeDomArray(cont);
-    update(dom, null);
-    const index2 = siblings2.indexOf(el);
-    uniqueSplice(siblings2, index2, 1, dom, parent2);
-    if (!dom.includes(el)) {
-      el.parent = el.prev = el.next = null;
-    }
-  });
-}
-function empty() {
-  return domEach(this, (el) => {
-    if (!hasChildren(el))
-      return;
-    for (const child of el.children) {
-      child.next = child.prev = child.parent = null;
-    }
-    el.children.length = 0;
-  });
-}
-function html(str) {
-  if (str === void 0) {
-    const el = this[0];
-    if (!el || !hasChildren(el))
-      return null;
-    return this._render(el.children);
-  }
-  return domEach(this, (el) => {
-    if (!hasChildren(el))
-      return;
-    for (const child of el.children) {
-      child.next = child.prev = child.parent = null;
-    }
-    const content = isCheerio(str) ? str.toArray() : this._parse(`${str}`, this.options, false, el).children;
-    update(content, el);
-  });
-}
-function toString() {
-  return this._render(this);
-}
-function text(str) {
-  if (str === void 0) {
-    return text$1(this);
-  }
-  if (typeof str === "function") {
-    return domEach(this, (el, i) => this._make(el).text(str.call(el, i, text$1([el]))));
-  }
-  return domEach(this, (el) => {
-    if (!hasChildren(el))
-      return;
-    for (const child of el.children) {
-      child.next = child.prev = child.parent = null;
-    }
-    const textNode = new Text(`${str}`);
-    update(textNode, el);
-  });
-}
-function clone() {
-  const clone2 = Array.prototype.map.call(this.get(), (el) => cloneNode(el, true));
-  const root = new Document(clone2);
-  for (const node2 of clone2) {
-    node2.parent = root;
-  }
-  return this._make(clone2);
-}
-const Manipulation = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  _makeDomArray,
-  after,
-  append,
-  appendTo,
-  before,
-  clone,
-  empty,
-  html,
-  insertAfter,
-  insertBefore,
-  prepend,
-  prependTo,
-  remove,
-  replaceWith,
-  text,
-  toString,
-  unwrap,
-  wrap,
-  wrapAll,
-  wrapInner
-}, Symbol.toStringTag, { value: "Module" }));
-function css(prop2, val2) {
-  if (prop2 != null && val2 != null || // When `prop` is a "plain" object
-  typeof prop2 === "object" && !Array.isArray(prop2)) {
-    return domEach(this, (el, i) => {
-      if (isTag(el)) {
-        setCss(el, prop2, val2, i);
-      }
-    });
-  }
-  if (this.length === 0) {
-    return void 0;
-  }
-  return getCss(this[0], prop2);
-}
-function setCss(el, prop2, value, idx) {
-  if (typeof prop2 === "string") {
-    const styles = getCss(el);
-    const val2 = typeof value === "function" ? value.call(el, idx, styles[prop2]) : value;
-    if (val2 === "") {
-      delete styles[prop2];
-    } else if (val2 != null) {
-      styles[prop2] = val2;
-    }
-    el.attribs["style"] = stringify(styles);
-  } else if (typeof prop2 === "object") {
-    const keys = Object.keys(prop2);
-    for (let i = 0; i < keys.length; i++) {
-      const k = keys[i];
-      setCss(el, k, prop2[k], i);
-    }
-  }
-}
-function getCss(el, prop2) {
-  if (!el || !isTag(el))
-    return;
-  const styles = parse(el.attribs["style"]);
-  if (typeof prop2 === "string") {
-    return styles[prop2];
-  }
-  if (Array.isArray(prop2)) {
-    const newStyles = {};
-    for (const item2 of prop2) {
-      if (styles[item2] != null) {
-        newStyles[item2] = styles[item2];
-      }
-    }
-    return newStyles;
-  }
-  return styles;
-}
-function stringify(obj) {
-  return Object.keys(obj).reduce((str, prop2) => `${str}${str ? " " : ""}${prop2}: ${obj[prop2]};`, "");
-}
-function parse(styles) {
-  styles = (styles || "").trim();
-  if (!styles)
-    return {};
-  const obj = {};
-  let key;
-  for (const str of styles.split(";")) {
-    const n2 = str.indexOf(":");
-    if (n2 < 1 || n2 === str.length - 1) {
-      const trimmed = str.trimEnd();
-      if (trimmed.length > 0 && key !== void 0) {
-        obj[key] += `;${trimmed}`;
-      }
-    } else {
-      key = str.slice(0, n2).trim();
-      obj[key] = str.slice(n2 + 1).trim();
-    }
-  }
-  return obj;
-}
-const Css = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  css
-}, Symbol.toStringTag, { value: "Module" }));
-const submittableSelector = "input,select,textarea,keygen";
-const r20 = /%20/g;
-const rCRLF = /\r?\n/g;
-function serialize() {
-  const arr = this.serializeArray();
-  const retArr = arr.map((data2) => `${encodeURIComponent(data2.name)}=${encodeURIComponent(data2.value)}`);
-  return retArr.join("&").replace(r20, "+");
-}
-function serializeArray() {
-  return this.map((_, elem) => {
-    const $elem = this._make(elem);
-    if (isTag(elem) && elem.name === "form") {
-      return $elem.find(submittableSelector).toArray();
-    }
-    return $elem.filter(submittableSelector).toArray();
-  }).filter(
-    // Verify elements have a name (`attr.name`) and are not disabled (`:enabled`)
-    '[name!=""]:enabled:not(:submit, :button, :image, :reset, :file):matches([checked], :not(:checkbox, :radio))'
-  ).map((_, elem) => {
-    var _a;
-    const $elem = this._make(elem);
-    const name = $elem.attr("name");
-    const value = (_a = $elem.val()) !== null && _a !== void 0 ? _a : "";
-    if (Array.isArray(value)) {
-      return value.map((val2) => (
-        /*
-         * We trim replace any line endings (e.g. `\r` or `\r\n` with `\r\n`) to guarantee consistency across platforms
-         * These can occur inside of `<textarea>'s`
-         */
-        { name, value: val2.replace(rCRLF, "\r\n") }
-      ));
-    }
-    return { name, value: value.replace(rCRLF, "\r\n") };
-  }).toArray();
-}
-const Forms = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  serialize,
-  serializeArray
-}, Symbol.toStringTag, { value: "Module" }));
-function getExtractDescr(descr) {
-  var _a;
-  if (typeof descr === "string") {
-    return { selector: descr, value: "textContent" };
-  }
-  return {
-    selector: descr.selector,
-    value: (_a = descr.value) !== null && _a !== void 0 ? _a : "textContent"
-  };
-}
-function extract(map2) {
-  const ret = {};
-  for (const key in map2) {
-    const descr = map2[key];
-    const isArray = Array.isArray(descr);
-    const { selector, value } = getExtractDescr(isArray ? descr[0] : descr);
-    const fn = typeof value === "function" ? value : typeof value === "string" ? (el) => this._make(el).prop(value) : (el) => this._make(el).extract(value);
-    if (isArray) {
-      ret[key] = this._findBySelector(selector, Number.POSITIVE_INFINITY).map((_, el) => fn(el, key, ret)).get();
-    } else {
-      const $2 = this._findBySelector(selector, 1);
-      ret[key] = $2.length > 0 ? fn($2[0], key, ret) : void 0;
-    }
-  }
-  return ret;
-}
-const Extract = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  extract
-}, Symbol.toStringTag, { value: "Module" }));
-class Cheerio {
-  /**
-   * Instance of cheerio. Methods are specified in the modules. Usage of this
-   * constructor is not recommended. Please use `$.load` instead.
-   *
-   * @private
-   * @param elements - The new selection.
-   * @param root - Sets the root node.
-   * @param options - Options for the instance.
-   */
-  constructor(elements, root, options) {
-    this.length = 0;
-    this.options = options;
-    this._root = root;
-    if (elements) {
-      for (let idx = 0; idx < elements.length; idx++) {
-        this[idx] = elements[idx];
-      }
-      this.length = elements.length;
-    }
-  }
-}
-Cheerio.prototype.cheerio = "[cheerio object]";
-Cheerio.prototype.splice = Array.prototype.splice;
-Cheerio.prototype[Symbol.iterator] = Array.prototype[Symbol.iterator];
-Object.assign(Cheerio.prototype, Attributes, Traversing, Manipulation, Css, Forms, Extract);
-var CODE_POINTS;
-(function(CODE_POINTS2) {
-  CODE_POINTS2[CODE_POINTS2["EOF"] = -1] = "EOF";
-  CODE_POINTS2[CODE_POINTS2["NULL"] = 0] = "NULL";
-  CODE_POINTS2[CODE_POINTS2["TABULATION"] = 9] = "TABULATION";
-  CODE_POINTS2[CODE_POINTS2["CARRIAGE_RETURN"] = 13] = "CARRIAGE_RETURN";
-  CODE_POINTS2[CODE_POINTS2["LINE_FEED"] = 10] = "LINE_FEED";
-  CODE_POINTS2[CODE_POINTS2["FORM_FEED"] = 12] = "FORM_FEED";
-  CODE_POINTS2[CODE_POINTS2["SPACE"] = 32] = "SPACE";
-  CODE_POINTS2[CODE_POINTS2["EXCLAMATION_MARK"] = 33] = "EXCLAMATION_MARK";
-  CODE_POINTS2[CODE_POINTS2["QUOTATION_MARK"] = 34] = "QUOTATION_MARK";
-  CODE_POINTS2[CODE_POINTS2["AMPERSAND"] = 38] = "AMPERSAND";
-  CODE_POINTS2[CODE_POINTS2["APOSTROPHE"] = 39] = "APOSTROPHE";
-  CODE_POINTS2[CODE_POINTS2["HYPHEN_MINUS"] = 45] = "HYPHEN_MINUS";
-  CODE_POINTS2[CODE_POINTS2["SOLIDUS"] = 47] = "SOLIDUS";
-  CODE_POINTS2[CODE_POINTS2["DIGIT_0"] = 48] = "DIGIT_0";
-  CODE_POINTS2[CODE_POINTS2["DIGIT_9"] = 57] = "DIGIT_9";
-  CODE_POINTS2[CODE_POINTS2["SEMICOLON"] = 59] = "SEMICOLON";
-  CODE_POINTS2[CODE_POINTS2["LESS_THAN_SIGN"] = 60] = "LESS_THAN_SIGN";
-  CODE_POINTS2[CODE_POINTS2["EQUALS_SIGN"] = 61] = "EQUALS_SIGN";
-  CODE_POINTS2[CODE_POINTS2["GREATER_THAN_SIGN"] = 62] = "GREATER_THAN_SIGN";
-  CODE_POINTS2[CODE_POINTS2["QUESTION_MARK"] = 63] = "QUESTION_MARK";
-  CODE_POINTS2[CODE_POINTS2["LATIN_CAPITAL_A"] = 65] = "LATIN_CAPITAL_A";
-  CODE_POINTS2[CODE_POINTS2["LATIN_CAPITAL_Z"] = 90] = "LATIN_CAPITAL_Z";
-  CODE_POINTS2[CODE_POINTS2["RIGHT_SQUARE_BRACKET"] = 93] = "RIGHT_SQUARE_BRACKET";
-  CODE_POINTS2[CODE_POINTS2["GRAVE_ACCENT"] = 96] = "GRAVE_ACCENT";
-  CODE_POINTS2[CODE_POINTS2["LATIN_SMALL_A"] = 97] = "LATIN_SMALL_A";
-  CODE_POINTS2[CODE_POINTS2["LATIN_SMALL_Z"] = 122] = "LATIN_SMALL_Z";
-})(CODE_POINTS || (CODE_POINTS = {}));
-var ERR;
-(function(ERR2) {
-  ERR2["controlCharacterInInputStream"] = "control-character-in-input-stream";
-  ERR2["noncharacterInInputStream"] = "noncharacter-in-input-stream";
-  ERR2["surrogateInInputStream"] = "surrogate-in-input-stream";
-  ERR2["nonVoidHtmlElementStartTagWithTrailingSolidus"] = "non-void-html-element-start-tag-with-trailing-solidus";
-  ERR2["endTagWithAttributes"] = "end-tag-with-attributes";
-  ERR2["endTagWithTrailingSolidus"] = "end-tag-with-trailing-solidus";
-  ERR2["unexpectedSolidusInTag"] = "unexpected-solidus-in-tag";
-  ERR2["unexpectedNullCharacter"] = "unexpected-null-character";
-  ERR2["unexpectedQuestionMarkInsteadOfTagName"] = "unexpected-question-mark-instead-of-tag-name";
-  ERR2["invalidFirstCharacterOfTagName"] = "invalid-first-character-of-tag-name";
-  ERR2["unexpectedEqualsSignBeforeAttributeName"] = "unexpected-equals-sign-before-attribute-name";
-  ERR2["missingEndTagName"] = "missing-end-tag-name";
-  ERR2["unexpectedCharacterInAttributeName"] = "unexpected-character-in-attribute-name";
-  ERR2["unknownNamedCharacterReference"] = "unknown-named-character-reference";
-  ERR2["missingSemicolonAfterCharacterReference"] = "missing-semicolon-after-character-reference";
-  ERR2["unexpectedCharacterAfterDoctypeSystemIdentifier"] = "unexpected-character-after-doctype-system-identifier";
-  ERR2["unexpectedCharacterInUnquotedAttributeValue"] = "unexpected-character-in-unquoted-attribute-value";
-  ERR2["eofBeforeTagName"] = "eof-before-tag-name";
-  ERR2["eofInTag"] = "eof-in-tag";
-  ERR2["missingAttributeValue"] = "missing-attribute-value";
-  ERR2["missingWhitespaceBetweenAttributes"] = "missing-whitespace-between-attributes";
-  ERR2["missingWhitespaceAfterDoctypePublicKeyword"] = "missing-whitespace-after-doctype-public-keyword";
-  ERR2["missingWhitespaceBetweenDoctypePublicAndSystemIdentifiers"] = "missing-whitespace-between-doctype-public-and-system-identifiers";
-  ERR2["missingWhitespaceAfterDoctypeSystemKeyword"] = "missing-whitespace-after-doctype-system-keyword";
-  ERR2["missingQuoteBeforeDoctypePublicIdentifier"] = "missing-quote-before-doctype-public-identifier";
-  ERR2["missingQuoteBeforeDoctypeSystemIdentifier"] = "missing-quote-before-doctype-system-identifier";
-  ERR2["missingDoctypePublicIdentifier"] = "missing-doctype-public-identifier";
-  ERR2["missingDoctypeSystemIdentifier"] = "missing-doctype-system-identifier";
-  ERR2["abruptDoctypePublicIdentifier"] = "abrupt-doctype-public-identifier";
-  ERR2["abruptDoctypeSystemIdentifier"] = "abrupt-doctype-system-identifier";
-  ERR2["cdataInHtmlContent"] = "cdata-in-html-content";
-  ERR2["incorrectlyOpenedComment"] = "incorrectly-opened-comment";
-  ERR2["eofInScriptHtmlCommentLikeText"] = "eof-in-script-html-comment-like-text";
-  ERR2["eofInDoctype"] = "eof-in-doctype";
-  ERR2["nestedComment"] = "nested-comment";
-  ERR2["abruptClosingOfEmptyComment"] = "abrupt-closing-of-empty-comment";
-  ERR2["eofInComment"] = "eof-in-comment";
-  ERR2["incorrectlyClosedComment"] = "incorrectly-closed-comment";
-  ERR2["eofInCdata"] = "eof-in-cdata";
-  ERR2["absenceOfDigitsInNumericCharacterReference"] = "absence-of-digits-in-numeric-character-reference";
-  ERR2["nullCharacterReference"] = "null-character-reference";
-  ERR2["surrogateCharacterReference"] = "surrogate-character-reference";
-  ERR2["characterReferenceOutsideUnicodeRange"] = "character-reference-outside-unicode-range";
-  ERR2["controlCharacterReference"] = "control-character-reference";
-  ERR2["noncharacterCharacterReference"] = "noncharacter-character-reference";
-  ERR2["missingWhitespaceBeforeDoctypeName"] = "missing-whitespace-before-doctype-name";
-  ERR2["missingDoctypeName"] = "missing-doctype-name";
-  ERR2["invalidCharacterSequenceAfterDoctypeName"] = "invalid-character-sequence-after-doctype-name";
-  ERR2["duplicateAttribute"] = "duplicate-attribute";
-  ERR2["nonConformingDoctype"] = "non-conforming-doctype";
-  ERR2["missingDoctype"] = "missing-doctype";
-  ERR2["misplacedDoctype"] = "misplaced-doctype";
-  ERR2["endTagWithoutMatchingOpenElement"] = "end-tag-without-matching-open-element";
-  ERR2["closingOfElementWithOpenChildElements"] = "closing-of-element-with-open-child-elements";
-  ERR2["disallowedContentInNoscriptInHead"] = "disallowed-content-in-noscript-in-head";
-  ERR2["openElementsLeftAfterEof"] = "open-elements-left-after-eof";
-  ERR2["abandonedHeadElementChild"] = "abandoned-head-element-child";
-  ERR2["misplacedStartTagForHeadElement"] = "misplaced-start-tag-for-head-element";
-  ERR2["nestedNoscriptInHead"] = "nested-noscript-in-head";
-  ERR2["eofInElementThatCanContainOnlyText"] = "eof-in-element-that-can-contain-only-text";
-})(ERR || (ERR = {}));
-var TokenType;
-(function(TokenType2) {
-  TokenType2[TokenType2["CHARACTER"] = 0] = "CHARACTER";
-  TokenType2[TokenType2["NULL_CHARACTER"] = 1] = "NULL_CHARACTER";
-  TokenType2[TokenType2["WHITESPACE_CHARACTER"] = 2] = "WHITESPACE_CHARACTER";
-  TokenType2[TokenType2["START_TAG"] = 3] = "START_TAG";
-  TokenType2[TokenType2["END_TAG"] = 4] = "END_TAG";
-  TokenType2[TokenType2["COMMENT"] = 5] = "COMMENT";
-  TokenType2[TokenType2["DOCTYPE"] = 6] = "DOCTYPE";
-  TokenType2[TokenType2["EOF"] = 7] = "EOF";
-  TokenType2[TokenType2["HIBERNATION"] = 8] = "HIBERNATION";
-})(TokenType || (TokenType = {}));
-var NS;
-(function(NS2) {
-  NS2["HTML"] = "http://www.w3.org/1999/xhtml";
-  NS2["MATHML"] = "http://www.w3.org/1998/Math/MathML";
-  NS2["SVG"] = "http://www.w3.org/2000/svg";
-  NS2["XLINK"] = "http://www.w3.org/1999/xlink";
-  NS2["XML"] = "http://www.w3.org/XML/1998/namespace";
-  NS2["XMLNS"] = "http://www.w3.org/2000/xmlns/";
-})(NS || (NS = {}));
-var ATTRS;
-(function(ATTRS2) {
-  ATTRS2["TYPE"] = "type";
-  ATTRS2["ACTION"] = "action";
-  ATTRS2["ENCODING"] = "encoding";
-  ATTRS2["PROMPT"] = "prompt";
-  ATTRS2["NAME"] = "name";
-  ATTRS2["COLOR"] = "color";
-  ATTRS2["FACE"] = "face";
-  ATTRS2["SIZE"] = "size";
-})(ATTRS || (ATTRS = {}));
-var DOCUMENT_MODE;
-(function(DOCUMENT_MODE2) {
-  DOCUMENT_MODE2["NO_QUIRKS"] = "no-quirks";
-  DOCUMENT_MODE2["QUIRKS"] = "quirks";
-  DOCUMENT_MODE2["LIMITED_QUIRKS"] = "limited-quirks";
-})(DOCUMENT_MODE || (DOCUMENT_MODE = {}));
-var TAG_NAMES;
-(function(TAG_NAMES2) {
-  TAG_NAMES2["A"] = "a";
-  TAG_NAMES2["ADDRESS"] = "address";
-  TAG_NAMES2["ANNOTATION_XML"] = "annotation-xml";
-  TAG_NAMES2["APPLET"] = "applet";
-  TAG_NAMES2["AREA"] = "area";
-  TAG_NAMES2["ARTICLE"] = "article";
-  TAG_NAMES2["ASIDE"] = "aside";
-  TAG_NAMES2["B"] = "b";
-  TAG_NAMES2["BASE"] = "base";
-  TAG_NAMES2["BASEFONT"] = "basefont";
-  TAG_NAMES2["BGSOUND"] = "bgsound";
-  TAG_NAMES2["BIG"] = "big";
-  TAG_NAMES2["BLOCKQUOTE"] = "blockquote";
-  TAG_NAMES2["BODY"] = "body";
-  TAG_NAMES2["BR"] = "br";
-  TAG_NAMES2["BUTTON"] = "button";
-  TAG_NAMES2["CAPTION"] = "caption";
-  TAG_NAMES2["CENTER"] = "center";
-  TAG_NAMES2["CODE"] = "code";
-  TAG_NAMES2["COL"] = "col";
-  TAG_NAMES2["COLGROUP"] = "colgroup";
-  TAG_NAMES2["DD"] = "dd";
-  TAG_NAMES2["DESC"] = "desc";
-  TAG_NAMES2["DETAILS"] = "details";
-  TAG_NAMES2["DIALOG"] = "dialog";
-  TAG_NAMES2["DIR"] = "dir";
-  TAG_NAMES2["DIV"] = "div";
-  TAG_NAMES2["DL"] = "dl";
-  TAG_NAMES2["DT"] = "dt";
-  TAG_NAMES2["EM"] = "em";
-  TAG_NAMES2["EMBED"] = "embed";
-  TAG_NAMES2["FIELDSET"] = "fieldset";
-  TAG_NAMES2["FIGCAPTION"] = "figcaption";
-  TAG_NAMES2["FIGURE"] = "figure";
-  TAG_NAMES2["FONT"] = "font";
-  TAG_NAMES2["FOOTER"] = "footer";
-  TAG_NAMES2["FOREIGN_OBJECT"] = "foreignObject";
-  TAG_NAMES2["FORM"] = "form";
-  TAG_NAMES2["FRAME"] = "frame";
-  TAG_NAMES2["FRAMESET"] = "frameset";
-  TAG_NAMES2["H1"] = "h1";
-  TAG_NAMES2["H2"] = "h2";
-  TAG_NAMES2["H3"] = "h3";
-  TAG_NAMES2["H4"] = "h4";
-  TAG_NAMES2["H5"] = "h5";
-  TAG_NAMES2["H6"] = "h6";
-  TAG_NAMES2["HEAD"] = "head";
-  TAG_NAMES2["HEADER"] = "header";
-  TAG_NAMES2["HGROUP"] = "hgroup";
-  TAG_NAMES2["HR"] = "hr";
-  TAG_NAMES2["HTML"] = "html";
-  TAG_NAMES2["I"] = "i";
-  TAG_NAMES2["IMG"] = "img";
-  TAG_NAMES2["IMAGE"] = "image";
-  TAG_NAMES2["INPUT"] = "input";
-  TAG_NAMES2["IFRAME"] = "iframe";
-  TAG_NAMES2["KEYGEN"] = "keygen";
-  TAG_NAMES2["LABEL"] = "label";
-  TAG_NAMES2["LI"] = "li";
-  TAG_NAMES2["LINK"] = "link";
-  TAG_NAMES2["LISTING"] = "listing";
-  TAG_NAMES2["MAIN"] = "main";
-  TAG_NAMES2["MALIGNMARK"] = "malignmark";
-  TAG_NAMES2["MARQUEE"] = "marquee";
-  TAG_NAMES2["MATH"] = "math";
-  TAG_NAMES2["MENU"] = "menu";
-  TAG_NAMES2["META"] = "meta";
-  TAG_NAMES2["MGLYPH"] = "mglyph";
-  TAG_NAMES2["MI"] = "mi";
-  TAG_NAMES2["MO"] = "mo";
-  TAG_NAMES2["MN"] = "mn";
-  TAG_NAMES2["MS"] = "ms";
-  TAG_NAMES2["MTEXT"] = "mtext";
-  TAG_NAMES2["NAV"] = "nav";
-  TAG_NAMES2["NOBR"] = "nobr";
-  TAG_NAMES2["NOFRAMES"] = "noframes";
-  TAG_NAMES2["NOEMBED"] = "noembed";
-  TAG_NAMES2["NOSCRIPT"] = "noscript";
-  TAG_NAMES2["OBJECT"] = "object";
-  TAG_NAMES2["OL"] = "ol";
-  TAG_NAMES2["OPTGROUP"] = "optgroup";
-  TAG_NAMES2["OPTION"] = "option";
-  TAG_NAMES2["P"] = "p";
-  TAG_NAMES2["PARAM"] = "param";
-  TAG_NAMES2["PLAINTEXT"] = "plaintext";
-  TAG_NAMES2["PRE"] = "pre";
-  TAG_NAMES2["RB"] = "rb";
-  TAG_NAMES2["RP"] = "rp";
-  TAG_NAMES2["RT"] = "rt";
-  TAG_NAMES2["RTC"] = "rtc";
-  TAG_NAMES2["RUBY"] = "ruby";
-  TAG_NAMES2["S"] = "s";
-  TAG_NAMES2["SCRIPT"] = "script";
-  TAG_NAMES2["SEARCH"] = "search";
-  TAG_NAMES2["SECTION"] = "section";
-  TAG_NAMES2["SELECT"] = "select";
-  TAG_NAMES2["SOURCE"] = "source";
-  TAG_NAMES2["SMALL"] = "small";
-  TAG_NAMES2["SPAN"] = "span";
-  TAG_NAMES2["STRIKE"] = "strike";
-  TAG_NAMES2["STRONG"] = "strong";
-  TAG_NAMES2["STYLE"] = "style";
-  TAG_NAMES2["SUB"] = "sub";
-  TAG_NAMES2["SUMMARY"] = "summary";
-  TAG_NAMES2["SUP"] = "sup";
-  TAG_NAMES2["TABLE"] = "table";
-  TAG_NAMES2["TBODY"] = "tbody";
-  TAG_NAMES2["TEMPLATE"] = "template";
-  TAG_NAMES2["TEXTAREA"] = "textarea";
-  TAG_NAMES2["TFOOT"] = "tfoot";
-  TAG_NAMES2["TD"] = "td";
-  TAG_NAMES2["TH"] = "th";
-  TAG_NAMES2["THEAD"] = "thead";
-  TAG_NAMES2["TITLE"] = "title";
-  TAG_NAMES2["TR"] = "tr";
-  TAG_NAMES2["TRACK"] = "track";
-  TAG_NAMES2["TT"] = "tt";
-  TAG_NAMES2["U"] = "u";
-  TAG_NAMES2["UL"] = "ul";
-  TAG_NAMES2["SVG"] = "svg";
-  TAG_NAMES2["VAR"] = "var";
-  TAG_NAMES2["WBR"] = "wbr";
-  TAG_NAMES2["XMP"] = "xmp";
-})(TAG_NAMES || (TAG_NAMES = {}));
-var TAG_ID;
-(function(TAG_ID2) {
-  TAG_ID2[TAG_ID2["UNKNOWN"] = 0] = "UNKNOWN";
-  TAG_ID2[TAG_ID2["A"] = 1] = "A";
-  TAG_ID2[TAG_ID2["ADDRESS"] = 2] = "ADDRESS";
-  TAG_ID2[TAG_ID2["ANNOTATION_XML"] = 3] = "ANNOTATION_XML";
-  TAG_ID2[TAG_ID2["APPLET"] = 4] = "APPLET";
-  TAG_ID2[TAG_ID2["AREA"] = 5] = "AREA";
-  TAG_ID2[TAG_ID2["ARTICLE"] = 6] = "ARTICLE";
-  TAG_ID2[TAG_ID2["ASIDE"] = 7] = "ASIDE";
-  TAG_ID2[TAG_ID2["B"] = 8] = "B";
-  TAG_ID2[TAG_ID2["BASE"] = 9] = "BASE";
-  TAG_ID2[TAG_ID2["BASEFONT"] = 10] = "BASEFONT";
-  TAG_ID2[TAG_ID2["BGSOUND"] = 11] = "BGSOUND";
-  TAG_ID2[TAG_ID2["BIG"] = 12] = "BIG";
-  TAG_ID2[TAG_ID2["BLOCKQUOTE"] = 13] = "BLOCKQUOTE";
-  TAG_ID2[TAG_ID2["BODY"] = 14] = "BODY";
-  TAG_ID2[TAG_ID2["BR"] = 15] = "BR";
-  TAG_ID2[TAG_ID2["BUTTON"] = 16] = "BUTTON";
-  TAG_ID2[TAG_ID2["CAPTION"] = 17] = "CAPTION";
-  TAG_ID2[TAG_ID2["CENTER"] = 18] = "CENTER";
-  TAG_ID2[TAG_ID2["CODE"] = 19] = "CODE";
-  TAG_ID2[TAG_ID2["COL"] = 20] = "COL";
-  TAG_ID2[TAG_ID2["COLGROUP"] = 21] = "COLGROUP";
-  TAG_ID2[TAG_ID2["DD"] = 22] = "DD";
-  TAG_ID2[TAG_ID2["DESC"] = 23] = "DESC";
-  TAG_ID2[TAG_ID2["DETAILS"] = 24] = "DETAILS";
-  TAG_ID2[TAG_ID2["DIALOG"] = 25] = "DIALOG";
-  TAG_ID2[TAG_ID2["DIR"] = 26] = "DIR";
-  TAG_ID2[TAG_ID2["DIV"] = 27] = "DIV";
-  TAG_ID2[TAG_ID2["DL"] = 28] = "DL";
-  TAG_ID2[TAG_ID2["DT"] = 29] = "DT";
-  TAG_ID2[TAG_ID2["EM"] = 30] = "EM";
-  TAG_ID2[TAG_ID2["EMBED"] = 31] = "EMBED";
-  TAG_ID2[TAG_ID2["FIELDSET"] = 32] = "FIELDSET";
-  TAG_ID2[TAG_ID2["FIGCAPTION"] = 33] = "FIGCAPTION";
-  TAG_ID2[TAG_ID2["FIGURE"] = 34] = "FIGURE";
-  TAG_ID2[TAG_ID2["FONT"] = 35] = "FONT";
-  TAG_ID2[TAG_ID2["FOOTER"] = 36] = "FOOTER";
-  TAG_ID2[TAG_ID2["FOREIGN_OBJECT"] = 37] = "FOREIGN_OBJECT";
-  TAG_ID2[TAG_ID2["FORM"] = 38] = "FORM";
-  TAG_ID2[TAG_ID2["FRAME"] = 39] = "FRAME";
-  TAG_ID2[TAG_ID2["FRAMESET"] = 40] = "FRAMESET";
-  TAG_ID2[TAG_ID2["H1"] = 41] = "H1";
-  TAG_ID2[TAG_ID2["H2"] = 42] = "H2";
-  TAG_ID2[TAG_ID2["H3"] = 43] = "H3";
-  TAG_ID2[TAG_ID2["H4"] = 44] = "H4";
-  TAG_ID2[TAG_ID2["H5"] = 45] = "H5";
-  TAG_ID2[TAG_ID2["H6"] = 46] = "H6";
-  TAG_ID2[TAG_ID2["HEAD"] = 47] = "HEAD";
-  TAG_ID2[TAG_ID2["HEADER"] = 48] = "HEADER";
-  TAG_ID2[TAG_ID2["HGROUP"] = 49] = "HGROUP";
-  TAG_ID2[TAG_ID2["HR"] = 50] = "HR";
-  TAG_ID2[TAG_ID2["HTML"] = 51] = "HTML";
-  TAG_ID2[TAG_ID2["I"] = 52] = "I";
-  TAG_ID2[TAG_ID2["IMG"] = 53] = "IMG";
-  TAG_ID2[TAG_ID2["IMAGE"] = 54] = "IMAGE";
-  TAG_ID2[TAG_ID2["INPUT"] = 55] = "INPUT";
-  TAG_ID2[TAG_ID2["IFRAME"] = 56] = "IFRAME";
-  TAG_ID2[TAG_ID2["KEYGEN"] = 57] = "KEYGEN";
-  TAG_ID2[TAG_ID2["LABEL"] = 58] = "LABEL";
-  TAG_ID2[TAG_ID2["LI"] = 59] = "LI";
-  TAG_ID2[TAG_ID2["LINK"] = 60] = "LINK";
-  TAG_ID2[TAG_ID2["LISTING"] = 61] = "LISTING";
-  TAG_ID2[TAG_ID2["MAIN"] = 62] = "MAIN";
-  TAG_ID2[TAG_ID2["MALIGNMARK"] = 63] = "MALIGNMARK";
-  TAG_ID2[TAG_ID2["MARQUEE"] = 64] = "MARQUEE";
-  TAG_ID2[TAG_ID2["MATH"] = 65] = "MATH";
-  TAG_ID2[TAG_ID2["MENU"] = 66] = "MENU";
-  TAG_ID2[TAG_ID2["META"] = 67] = "META";
-  TAG_ID2[TAG_ID2["MGLYPH"] = 68] = "MGLYPH";
-  TAG_ID2[TAG_ID2["MI"] = 69] = "MI";
-  TAG_ID2[TAG_ID2["MO"] = 70] = "MO";
-  TAG_ID2[TAG_ID2["MN"] = 71] = "MN";
-  TAG_ID2[TAG_ID2["MS"] = 72] = "MS";
-  TAG_ID2[TAG_ID2["MTEXT"] = 73] = "MTEXT";
-  TAG_ID2[TAG_ID2["NAV"] = 74] = "NAV";
-  TAG_ID2[TAG_ID2["NOBR"] = 75] = "NOBR";
-  TAG_ID2[TAG_ID2["NOFRAMES"] = 76] = "NOFRAMES";
-  TAG_ID2[TAG_ID2["NOEMBED"] = 77] = "NOEMBED";
-  TAG_ID2[TAG_ID2["NOSCRIPT"] = 78] = "NOSCRIPT";
-  TAG_ID2[TAG_ID2["OBJECT"] = 79] = "OBJECT";
-  TAG_ID2[TAG_ID2["OL"] = 80] = "OL";
-  TAG_ID2[TAG_ID2["OPTGROUP"] = 81] = "OPTGROUP";
-  TAG_ID2[TAG_ID2["OPTION"] = 82] = "OPTION";
-  TAG_ID2[TAG_ID2["P"] = 83] = "P";
-  TAG_ID2[TAG_ID2["PARAM"] = 84] = "PARAM";
-  TAG_ID2[TAG_ID2["PLAINTEXT"] = 85] = "PLAINTEXT";
-  TAG_ID2[TAG_ID2["PRE"] = 86] = "PRE";
-  TAG_ID2[TAG_ID2["RB"] = 87] = "RB";
-  TAG_ID2[TAG_ID2["RP"] = 88] = "RP";
-  TAG_ID2[TAG_ID2["RT"] = 89] = "RT";
-  TAG_ID2[TAG_ID2["RTC"] = 90] = "RTC";
-  TAG_ID2[TAG_ID2["RUBY"] = 91] = "RUBY";
-  TAG_ID2[TAG_ID2["S"] = 92] = "S";
-  TAG_ID2[TAG_ID2["SCRIPT"] = 93] = "SCRIPT";
-  TAG_ID2[TAG_ID2["SEARCH"] = 94] = "SEARCH";
-  TAG_ID2[TAG_ID2["SECTION"] = 95] = "SECTION";
-  TAG_ID2[TAG_ID2["SELECT"] = 96] = "SELECT";
-  TAG_ID2[TAG_ID2["SOURCE"] = 97] = "SOURCE";
-  TAG_ID2[TAG_ID2["SMALL"] = 98] = "SMALL";
-  TAG_ID2[TAG_ID2["SPAN"] = 99] = "SPAN";
-  TAG_ID2[TAG_ID2["STRIKE"] = 100] = "STRIKE";
-  TAG_ID2[TAG_ID2["STRONG"] = 101] = "STRONG";
-  TAG_ID2[TAG_ID2["STYLE"] = 102] = "STYLE";
-  TAG_ID2[TAG_ID2["SUB"] = 103] = "SUB";
-  TAG_ID2[TAG_ID2["SUMMARY"] = 104] = "SUMMARY";
-  TAG_ID2[TAG_ID2["SUP"] = 105] = "SUP";
-  TAG_ID2[TAG_ID2["TABLE"] = 106] = "TABLE";
-  TAG_ID2[TAG_ID2["TBODY"] = 107] = "TBODY";
-  TAG_ID2[TAG_ID2["TEMPLATE"] = 108] = "TEMPLATE";
-  TAG_ID2[TAG_ID2["TEXTAREA"] = 109] = "TEXTAREA";
-  TAG_ID2[TAG_ID2["TFOOT"] = 110] = "TFOOT";
-  TAG_ID2[TAG_ID2["TD"] = 111] = "TD";
-  TAG_ID2[TAG_ID2["TH"] = 112] = "TH";
-  TAG_ID2[TAG_ID2["THEAD"] = 113] = "THEAD";
-  TAG_ID2[TAG_ID2["TITLE"] = 114] = "TITLE";
-  TAG_ID2[TAG_ID2["TR"] = 115] = "TR";
-  TAG_ID2[TAG_ID2["TRACK"] = 116] = "TRACK";
-  TAG_ID2[TAG_ID2["TT"] = 117] = "TT";
-  TAG_ID2[TAG_ID2["U"] = 118] = "U";
-  TAG_ID2[TAG_ID2["UL"] = 119] = "UL";
-  TAG_ID2[TAG_ID2["SVG"] = 120] = "SVG";
-  TAG_ID2[TAG_ID2["VAR"] = 121] = "VAR";
-  TAG_ID2[TAG_ID2["WBR"] = 122] = "WBR";
-  TAG_ID2[TAG_ID2["XMP"] = 123] = "XMP";
-})(TAG_ID || (TAG_ID = {}));
-/* @__PURE__ */ new Map([
-  [TAG_NAMES.A, TAG_ID.A],
-  [TAG_NAMES.ADDRESS, TAG_ID.ADDRESS],
-  [TAG_NAMES.ANNOTATION_XML, TAG_ID.ANNOTATION_XML],
-  [TAG_NAMES.APPLET, TAG_ID.APPLET],
-  [TAG_NAMES.AREA, TAG_ID.AREA],
-  [TAG_NAMES.ARTICLE, TAG_ID.ARTICLE],
-  [TAG_NAMES.ASIDE, TAG_ID.ASIDE],
-  [TAG_NAMES.B, TAG_ID.B],
-  [TAG_NAMES.BASE, TAG_ID.BASE],
-  [TAG_NAMES.BASEFONT, TAG_ID.BASEFONT],
-  [TAG_NAMES.BGSOUND, TAG_ID.BGSOUND],
-  [TAG_NAMES.BIG, TAG_ID.BIG],
-  [TAG_NAMES.BLOCKQUOTE, TAG_ID.BLOCKQUOTE],
-  [TAG_NAMES.BODY, TAG_ID.BODY],
-  [TAG_NAMES.BR, TAG_ID.BR],
-  [TAG_NAMES.BUTTON, TAG_ID.BUTTON],
-  [TAG_NAMES.CAPTION, TAG_ID.CAPTION],
-  [TAG_NAMES.CENTER, TAG_ID.CENTER],
-  [TAG_NAMES.CODE, TAG_ID.CODE],
-  [TAG_NAMES.COL, TAG_ID.COL],
-  [TAG_NAMES.COLGROUP, TAG_ID.COLGROUP],
-  [TAG_NAMES.DD, TAG_ID.DD],
-  [TAG_NAMES.DESC, TAG_ID.DESC],
-  [TAG_NAMES.DETAILS, TAG_ID.DETAILS],
-  [TAG_NAMES.DIALOG, TAG_ID.DIALOG],
-  [TAG_NAMES.DIR, TAG_ID.DIR],
-  [TAG_NAMES.DIV, TAG_ID.DIV],
-  [TAG_NAMES.DL, TAG_ID.DL],
-  [TAG_NAMES.DT, TAG_ID.DT],
-  [TAG_NAMES.EM, TAG_ID.EM],
-  [TAG_NAMES.EMBED, TAG_ID.EMBED],
-  [TAG_NAMES.FIELDSET, TAG_ID.FIELDSET],
-  [TAG_NAMES.FIGCAPTION, TAG_ID.FIGCAPTION],
-  [TAG_NAMES.FIGURE, TAG_ID.FIGURE],
-  [TAG_NAMES.FONT, TAG_ID.FONT],
-  [TAG_NAMES.FOOTER, TAG_ID.FOOTER],
-  [TAG_NAMES.FOREIGN_OBJECT, TAG_ID.FOREIGN_OBJECT],
-  [TAG_NAMES.FORM, TAG_ID.FORM],
-  [TAG_NAMES.FRAME, TAG_ID.FRAME],
-  [TAG_NAMES.FRAMESET, TAG_ID.FRAMESET],
-  [TAG_NAMES.H1, TAG_ID.H1],
-  [TAG_NAMES.H2, TAG_ID.H2],
-  [TAG_NAMES.H3, TAG_ID.H3],
-  [TAG_NAMES.H4, TAG_ID.H4],
-  [TAG_NAMES.H5, TAG_ID.H5],
-  [TAG_NAMES.H6, TAG_ID.H6],
-  [TAG_NAMES.HEAD, TAG_ID.HEAD],
-  [TAG_NAMES.HEADER, TAG_ID.HEADER],
-  [TAG_NAMES.HGROUP, TAG_ID.HGROUP],
-  [TAG_NAMES.HR, TAG_ID.HR],
-  [TAG_NAMES.HTML, TAG_ID.HTML],
-  [TAG_NAMES.I, TAG_ID.I],
-  [TAG_NAMES.IMG, TAG_ID.IMG],
-  [TAG_NAMES.IMAGE, TAG_ID.IMAGE],
-  [TAG_NAMES.INPUT, TAG_ID.INPUT],
-  [TAG_NAMES.IFRAME, TAG_ID.IFRAME],
-  [TAG_NAMES.KEYGEN, TAG_ID.KEYGEN],
-  [TAG_NAMES.LABEL, TAG_ID.LABEL],
-  [TAG_NAMES.LI, TAG_ID.LI],
-  [TAG_NAMES.LINK, TAG_ID.LINK],
-  [TAG_NAMES.LISTING, TAG_ID.LISTING],
-  [TAG_NAMES.MAIN, TAG_ID.MAIN],
-  [TAG_NAMES.MALIGNMARK, TAG_ID.MALIGNMARK],
-  [TAG_NAMES.MARQUEE, TAG_ID.MARQUEE],
-  [TAG_NAMES.MATH, TAG_ID.MATH],
-  [TAG_NAMES.MENU, TAG_ID.MENU],
-  [TAG_NAMES.META, TAG_ID.META],
-  [TAG_NAMES.MGLYPH, TAG_ID.MGLYPH],
-  [TAG_NAMES.MI, TAG_ID.MI],
-  [TAG_NAMES.MO, TAG_ID.MO],
-  [TAG_NAMES.MN, TAG_ID.MN],
-  [TAG_NAMES.MS, TAG_ID.MS],
-  [TAG_NAMES.MTEXT, TAG_ID.MTEXT],
-  [TAG_NAMES.NAV, TAG_ID.NAV],
-  [TAG_NAMES.NOBR, TAG_ID.NOBR],
-  [TAG_NAMES.NOFRAMES, TAG_ID.NOFRAMES],
-  [TAG_NAMES.NOEMBED, TAG_ID.NOEMBED],
-  [TAG_NAMES.NOSCRIPT, TAG_ID.NOSCRIPT],
-  [TAG_NAMES.OBJECT, TAG_ID.OBJECT],
-  [TAG_NAMES.OL, TAG_ID.OL],
-  [TAG_NAMES.OPTGROUP, TAG_ID.OPTGROUP],
-  [TAG_NAMES.OPTION, TAG_ID.OPTION],
-  [TAG_NAMES.P, TAG_ID.P],
-  [TAG_NAMES.PARAM, TAG_ID.PARAM],
-  [TAG_NAMES.PLAINTEXT, TAG_ID.PLAINTEXT],
-  [TAG_NAMES.PRE, TAG_ID.PRE],
-  [TAG_NAMES.RB, TAG_ID.RB],
-  [TAG_NAMES.RP, TAG_ID.RP],
-  [TAG_NAMES.RT, TAG_ID.RT],
-  [TAG_NAMES.RTC, TAG_ID.RTC],
-  [TAG_NAMES.RUBY, TAG_ID.RUBY],
-  [TAG_NAMES.S, TAG_ID.S],
-  [TAG_NAMES.SCRIPT, TAG_ID.SCRIPT],
-  [TAG_NAMES.SEARCH, TAG_ID.SEARCH],
-  [TAG_NAMES.SECTION, TAG_ID.SECTION],
-  [TAG_NAMES.SELECT, TAG_ID.SELECT],
-  [TAG_NAMES.SOURCE, TAG_ID.SOURCE],
-  [TAG_NAMES.SMALL, TAG_ID.SMALL],
-  [TAG_NAMES.SPAN, TAG_ID.SPAN],
-  [TAG_NAMES.STRIKE, TAG_ID.STRIKE],
-  [TAG_NAMES.STRONG, TAG_ID.STRONG],
-  [TAG_NAMES.STYLE, TAG_ID.STYLE],
-  [TAG_NAMES.SUB, TAG_ID.SUB],
-  [TAG_NAMES.SUMMARY, TAG_ID.SUMMARY],
-  [TAG_NAMES.SUP, TAG_ID.SUP],
-  [TAG_NAMES.TABLE, TAG_ID.TABLE],
-  [TAG_NAMES.TBODY, TAG_ID.TBODY],
-  [TAG_NAMES.TEMPLATE, TAG_ID.TEMPLATE],
-  [TAG_NAMES.TEXTAREA, TAG_ID.TEXTAREA],
-  [TAG_NAMES.TFOOT, TAG_ID.TFOOT],
-  [TAG_NAMES.TD, TAG_ID.TD],
-  [TAG_NAMES.TH, TAG_ID.TH],
-  [TAG_NAMES.THEAD, TAG_ID.THEAD],
-  [TAG_NAMES.TITLE, TAG_ID.TITLE],
-  [TAG_NAMES.TR, TAG_ID.TR],
-  [TAG_NAMES.TRACK, TAG_ID.TRACK],
-  [TAG_NAMES.TT, TAG_ID.TT],
-  [TAG_NAMES.U, TAG_ID.U],
-  [TAG_NAMES.UL, TAG_ID.UL],
-  [TAG_NAMES.SVG, TAG_ID.SVG],
-  [TAG_NAMES.VAR, TAG_ID.VAR],
-  [TAG_NAMES.WBR, TAG_ID.WBR],
-  [TAG_NAMES.XMP, TAG_ID.XMP]
-]);
-const $ = TAG_ID;
-({
-  [NS.HTML]: /* @__PURE__ */ new Set([
-    $.ADDRESS,
-    $.APPLET,
-    $.AREA,
-    $.ARTICLE,
-    $.ASIDE,
-    $.BASE,
-    $.BASEFONT,
-    $.BGSOUND,
-    $.BLOCKQUOTE,
-    $.BODY,
-    $.BR,
-    $.BUTTON,
-    $.CAPTION,
-    $.CENTER,
-    $.COL,
-    $.COLGROUP,
-    $.DD,
-    $.DETAILS,
-    $.DIR,
-    $.DIV,
-    $.DL,
-    $.DT,
-    $.EMBED,
-    $.FIELDSET,
-    $.FIGCAPTION,
-    $.FIGURE,
-    $.FOOTER,
-    $.FORM,
-    $.FRAME,
-    $.FRAMESET,
-    $.H1,
-    $.H2,
-    $.H3,
-    $.H4,
-    $.H5,
-    $.H6,
-    $.HEAD,
-    $.HEADER,
-    $.HGROUP,
-    $.HR,
-    $.HTML,
-    $.IFRAME,
-    $.IMG,
-    $.INPUT,
-    $.LI,
-    $.LINK,
-    $.LISTING,
-    $.MAIN,
-    $.MARQUEE,
-    $.MENU,
-    $.META,
-    $.NAV,
-    $.NOEMBED,
-    $.NOFRAMES,
-    $.NOSCRIPT,
-    $.OBJECT,
-    $.OL,
-    $.P,
-    $.PARAM,
-    $.PLAINTEXT,
-    $.PRE,
-    $.SCRIPT,
-    $.SECTION,
-    $.SELECT,
-    $.SOURCE,
-    $.STYLE,
-    $.SUMMARY,
-    $.TABLE,
-    $.TBODY,
-    $.TD,
-    $.TEMPLATE,
-    $.TEXTAREA,
-    $.TFOOT,
-    $.TH,
-    $.THEAD,
-    $.TITLE,
-    $.TR,
-    $.TRACK,
-    $.UL,
-    $.WBR,
-    $.XMP
-  ]),
-  [NS.MATHML]: /* @__PURE__ */ new Set([$.MI, $.MO, $.MN, $.MS, $.MTEXT, $.ANNOTATION_XML]),
-  [NS.SVG]: /* @__PURE__ */ new Set([$.TITLE, $.FOREIGN_OBJECT, $.DESC]),
-  [NS.XLINK]: /* @__PURE__ */ new Set(),
-  [NS.XML]: /* @__PURE__ */ new Set(),
-  [NS.XMLNS]: /* @__PURE__ */ new Set()
-});
-/* @__PURE__ */ new Set([$.H1, $.H2, $.H3, $.H4, $.H5, $.H6]);
-/* @__PURE__ */ new Set([
-  TAG_NAMES.STYLE,
-  TAG_NAMES.SCRIPT,
-  TAG_NAMES.XMP,
-  TAG_NAMES.IFRAME,
-  TAG_NAMES.NOEMBED,
-  TAG_NAMES.NOFRAMES,
-  TAG_NAMES.PLAINTEXT
-]);
-var State;
-(function(State2) {
-  State2[State2["DATA"] = 0] = "DATA";
-  State2[State2["RCDATA"] = 1] = "RCDATA";
-  State2[State2["RAWTEXT"] = 2] = "RAWTEXT";
-  State2[State2["SCRIPT_DATA"] = 3] = "SCRIPT_DATA";
-  State2[State2["PLAINTEXT"] = 4] = "PLAINTEXT";
-  State2[State2["TAG_OPEN"] = 5] = "TAG_OPEN";
-  State2[State2["END_TAG_OPEN"] = 6] = "END_TAG_OPEN";
-  State2[State2["TAG_NAME"] = 7] = "TAG_NAME";
-  State2[State2["RCDATA_LESS_THAN_SIGN"] = 8] = "RCDATA_LESS_THAN_SIGN";
-  State2[State2["RCDATA_END_TAG_OPEN"] = 9] = "RCDATA_END_TAG_OPEN";
-  State2[State2["RCDATA_END_TAG_NAME"] = 10] = "RCDATA_END_TAG_NAME";
-  State2[State2["RAWTEXT_LESS_THAN_SIGN"] = 11] = "RAWTEXT_LESS_THAN_SIGN";
-  State2[State2["RAWTEXT_END_TAG_OPEN"] = 12] = "RAWTEXT_END_TAG_OPEN";
-  State2[State2["RAWTEXT_END_TAG_NAME"] = 13] = "RAWTEXT_END_TAG_NAME";
-  State2[State2["SCRIPT_DATA_LESS_THAN_SIGN"] = 14] = "SCRIPT_DATA_LESS_THAN_SIGN";
-  State2[State2["SCRIPT_DATA_END_TAG_OPEN"] = 15] = "SCRIPT_DATA_END_TAG_OPEN";
-  State2[State2["SCRIPT_DATA_END_TAG_NAME"] = 16] = "SCRIPT_DATA_END_TAG_NAME";
-  State2[State2["SCRIPT_DATA_ESCAPE_START"] = 17] = "SCRIPT_DATA_ESCAPE_START";
-  State2[State2["SCRIPT_DATA_ESCAPE_START_DASH"] = 18] = "SCRIPT_DATA_ESCAPE_START_DASH";
-  State2[State2["SCRIPT_DATA_ESCAPED"] = 19] = "SCRIPT_DATA_ESCAPED";
-  State2[State2["SCRIPT_DATA_ESCAPED_DASH"] = 20] = "SCRIPT_DATA_ESCAPED_DASH";
-  State2[State2["SCRIPT_DATA_ESCAPED_DASH_DASH"] = 21] = "SCRIPT_DATA_ESCAPED_DASH_DASH";
-  State2[State2["SCRIPT_DATA_ESCAPED_LESS_THAN_SIGN"] = 22] = "SCRIPT_DATA_ESCAPED_LESS_THAN_SIGN";
-  State2[State2["SCRIPT_DATA_ESCAPED_END_TAG_OPEN"] = 23] = "SCRIPT_DATA_ESCAPED_END_TAG_OPEN";
-  State2[State2["SCRIPT_DATA_ESCAPED_END_TAG_NAME"] = 24] = "SCRIPT_DATA_ESCAPED_END_TAG_NAME";
-  State2[State2["SCRIPT_DATA_DOUBLE_ESCAPE_START"] = 25] = "SCRIPT_DATA_DOUBLE_ESCAPE_START";
-  State2[State2["SCRIPT_DATA_DOUBLE_ESCAPED"] = 26] = "SCRIPT_DATA_DOUBLE_ESCAPED";
-  State2[State2["SCRIPT_DATA_DOUBLE_ESCAPED_DASH"] = 27] = "SCRIPT_DATA_DOUBLE_ESCAPED_DASH";
-  State2[State2["SCRIPT_DATA_DOUBLE_ESCAPED_DASH_DASH"] = 28] = "SCRIPT_DATA_DOUBLE_ESCAPED_DASH_DASH";
-  State2[State2["SCRIPT_DATA_DOUBLE_ESCAPED_LESS_THAN_SIGN"] = 29] = "SCRIPT_DATA_DOUBLE_ESCAPED_LESS_THAN_SIGN";
-  State2[State2["SCRIPT_DATA_DOUBLE_ESCAPE_END"] = 30] = "SCRIPT_DATA_DOUBLE_ESCAPE_END";
-  State2[State2["BEFORE_ATTRIBUTE_NAME"] = 31] = "BEFORE_ATTRIBUTE_NAME";
-  State2[State2["ATTRIBUTE_NAME"] = 32] = "ATTRIBUTE_NAME";
-  State2[State2["AFTER_ATTRIBUTE_NAME"] = 33] = "AFTER_ATTRIBUTE_NAME";
-  State2[State2["BEFORE_ATTRIBUTE_VALUE"] = 34] = "BEFORE_ATTRIBUTE_VALUE";
-  State2[State2["ATTRIBUTE_VALUE_DOUBLE_QUOTED"] = 35] = "ATTRIBUTE_VALUE_DOUBLE_QUOTED";
-  State2[State2["ATTRIBUTE_VALUE_SINGLE_QUOTED"] = 36] = "ATTRIBUTE_VALUE_SINGLE_QUOTED";
-  State2[State2["ATTRIBUTE_VALUE_UNQUOTED"] = 37] = "ATTRIBUTE_VALUE_UNQUOTED";
-  State2[State2["AFTER_ATTRIBUTE_VALUE_QUOTED"] = 38] = "AFTER_ATTRIBUTE_VALUE_QUOTED";
-  State2[State2["SELF_CLOSING_START_TAG"] = 39] = "SELF_CLOSING_START_TAG";
-  State2[State2["BOGUS_COMMENT"] = 40] = "BOGUS_COMMENT";
-  State2[State2["MARKUP_DECLARATION_OPEN"] = 41] = "MARKUP_DECLARATION_OPEN";
-  State2[State2["COMMENT_START"] = 42] = "COMMENT_START";
-  State2[State2["COMMENT_START_DASH"] = 43] = "COMMENT_START_DASH";
-  State2[State2["COMMENT"] = 44] = "COMMENT";
-  State2[State2["COMMENT_LESS_THAN_SIGN"] = 45] = "COMMENT_LESS_THAN_SIGN";
-  State2[State2["COMMENT_LESS_THAN_SIGN_BANG"] = 46] = "COMMENT_LESS_THAN_SIGN_BANG";
-  State2[State2["COMMENT_LESS_THAN_SIGN_BANG_DASH"] = 47] = "COMMENT_LESS_THAN_SIGN_BANG_DASH";
-  State2[State2["COMMENT_LESS_THAN_SIGN_BANG_DASH_DASH"] = 48] = "COMMENT_LESS_THAN_SIGN_BANG_DASH_DASH";
-  State2[State2["COMMENT_END_DASH"] = 49] = "COMMENT_END_DASH";
-  State2[State2["COMMENT_END"] = 50] = "COMMENT_END";
-  State2[State2["COMMENT_END_BANG"] = 51] = "COMMENT_END_BANG";
-  State2[State2["DOCTYPE"] = 52] = "DOCTYPE";
-  State2[State2["BEFORE_DOCTYPE_NAME"] = 53] = "BEFORE_DOCTYPE_NAME";
-  State2[State2["DOCTYPE_NAME"] = 54] = "DOCTYPE_NAME";
-  State2[State2["AFTER_DOCTYPE_NAME"] = 55] = "AFTER_DOCTYPE_NAME";
-  State2[State2["AFTER_DOCTYPE_PUBLIC_KEYWORD"] = 56] = "AFTER_DOCTYPE_PUBLIC_KEYWORD";
-  State2[State2["BEFORE_DOCTYPE_PUBLIC_IDENTIFIER"] = 57] = "BEFORE_DOCTYPE_PUBLIC_IDENTIFIER";
-  State2[State2["DOCTYPE_PUBLIC_IDENTIFIER_DOUBLE_QUOTED"] = 58] = "DOCTYPE_PUBLIC_IDENTIFIER_DOUBLE_QUOTED";
-  State2[State2["DOCTYPE_PUBLIC_IDENTIFIER_SINGLE_QUOTED"] = 59] = "DOCTYPE_PUBLIC_IDENTIFIER_SINGLE_QUOTED";
-  State2[State2["AFTER_DOCTYPE_PUBLIC_IDENTIFIER"] = 60] = "AFTER_DOCTYPE_PUBLIC_IDENTIFIER";
-  State2[State2["BETWEEN_DOCTYPE_PUBLIC_AND_SYSTEM_IDENTIFIERS"] = 61] = "BETWEEN_DOCTYPE_PUBLIC_AND_SYSTEM_IDENTIFIERS";
-  State2[State2["AFTER_DOCTYPE_SYSTEM_KEYWORD"] = 62] = "AFTER_DOCTYPE_SYSTEM_KEYWORD";
-  State2[State2["BEFORE_DOCTYPE_SYSTEM_IDENTIFIER"] = 63] = "BEFORE_DOCTYPE_SYSTEM_IDENTIFIER";
-  State2[State2["DOCTYPE_SYSTEM_IDENTIFIER_DOUBLE_QUOTED"] = 64] = "DOCTYPE_SYSTEM_IDENTIFIER_DOUBLE_QUOTED";
-  State2[State2["DOCTYPE_SYSTEM_IDENTIFIER_SINGLE_QUOTED"] = 65] = "DOCTYPE_SYSTEM_IDENTIFIER_SINGLE_QUOTED";
-  State2[State2["AFTER_DOCTYPE_SYSTEM_IDENTIFIER"] = 66] = "AFTER_DOCTYPE_SYSTEM_IDENTIFIER";
-  State2[State2["BOGUS_DOCTYPE"] = 67] = "BOGUS_DOCTYPE";
-  State2[State2["CDATA_SECTION"] = 68] = "CDATA_SECTION";
-  State2[State2["CDATA_SECTION_BRACKET"] = 69] = "CDATA_SECTION_BRACKET";
-  State2[State2["CDATA_SECTION_END"] = 70] = "CDATA_SECTION_END";
-  State2[State2["CHARACTER_REFERENCE"] = 71] = "CHARACTER_REFERENCE";
-  State2[State2["AMBIGUOUS_AMPERSAND"] = 72] = "AMBIGUOUS_AMPERSAND";
-})(State || (State = {}));
-({
-  DATA: State.DATA,
-  RCDATA: State.RCDATA,
-  RAWTEXT: State.RAWTEXT,
-  SCRIPT_DATA: State.SCRIPT_DATA,
-  PLAINTEXT: State.PLAINTEXT,
-  CDATA_SECTION: State.CDATA_SECTION
-});
-const IMPLICIT_END_TAG_REQUIRED = /* @__PURE__ */ new Set([TAG_ID.DD, TAG_ID.DT, TAG_ID.LI, TAG_ID.OPTGROUP, TAG_ID.OPTION, TAG_ID.P, TAG_ID.RB, TAG_ID.RP, TAG_ID.RT, TAG_ID.RTC]);
-/* @__PURE__ */ new Set([
-  ...IMPLICIT_END_TAG_REQUIRED,
-  TAG_ID.CAPTION,
-  TAG_ID.COLGROUP,
-  TAG_ID.TBODY,
-  TAG_ID.TD,
-  TAG_ID.TFOOT,
-  TAG_ID.TH,
-  TAG_ID.THEAD,
-  TAG_ID.TR
-]);
-const SCOPING_ELEMENTS_HTML = /* @__PURE__ */ new Set([
-  TAG_ID.APPLET,
-  TAG_ID.CAPTION,
-  TAG_ID.HTML,
-  TAG_ID.MARQUEE,
-  TAG_ID.OBJECT,
-  TAG_ID.TABLE,
-  TAG_ID.TD,
-  TAG_ID.TEMPLATE,
-  TAG_ID.TH
-]);
-/* @__PURE__ */ new Set([...SCOPING_ELEMENTS_HTML, TAG_ID.OL, TAG_ID.UL]);
-/* @__PURE__ */ new Set([...SCOPING_ELEMENTS_HTML, TAG_ID.BUTTON]);
-/* @__PURE__ */ new Set([TAG_ID.ANNOTATION_XML, TAG_ID.MI, TAG_ID.MN, TAG_ID.MO, TAG_ID.MS, TAG_ID.MTEXT]);
-/* @__PURE__ */ new Set([TAG_ID.DESC, TAG_ID.FOREIGN_OBJECT, TAG_ID.TITLE]);
-/* @__PURE__ */ new Set([TAG_ID.TR, TAG_ID.TEMPLATE, TAG_ID.HTML]);
-/* @__PURE__ */ new Set([TAG_ID.TBODY, TAG_ID.TFOOT, TAG_ID.THEAD, TAG_ID.TEMPLATE, TAG_ID.HTML]);
-/* @__PURE__ */ new Set([TAG_ID.TABLE, TAG_ID.TEMPLATE, TAG_ID.HTML]);
-/* @__PURE__ */ new Set([TAG_ID.TD, TAG_ID.TH]);
-var EntryType;
-(function(EntryType2) {
-  EntryType2[EntryType2["Marker"] = 0] = "Marker";
-  EntryType2[EntryType2["Element"] = 1] = "Element";
-})(EntryType || (EntryType = {}));
-({ type: EntryType.Marker });
-new Map([
-  "attributeName",
-  "attributeType",
-  "baseFrequency",
-  "baseProfile",
-  "calcMode",
-  "clipPathUnits",
-  "diffuseConstant",
-  "edgeMode",
-  "filterUnits",
-  "glyphRef",
-  "gradientTransform",
-  "gradientUnits",
-  "kernelMatrix",
-  "kernelUnitLength",
-  "keyPoints",
-  "keySplines",
-  "keyTimes",
-  "lengthAdjust",
-  "limitingConeAngle",
-  "markerHeight",
-  "markerUnits",
-  "markerWidth",
-  "maskContentUnits",
-  "maskUnits",
-  "numOctaves",
-  "pathLength",
-  "patternContentUnits",
-  "patternTransform",
-  "patternUnits",
-  "pointsAtX",
-  "pointsAtY",
-  "pointsAtZ",
-  "preserveAlpha",
-  "preserveAspectRatio",
-  "primitiveUnits",
-  "refX",
-  "refY",
-  "repeatCount",
-  "repeatDur",
-  "requiredExtensions",
-  "requiredFeatures",
-  "specularConstant",
-  "specularExponent",
-  "spreadMethod",
-  "startOffset",
-  "stdDeviation",
-  "stitchTiles",
-  "surfaceScale",
-  "systemLanguage",
-  "tableValues",
-  "targetX",
-  "targetY",
-  "textLength",
-  "viewBox",
-  "viewTarget",
-  "xChannelSelector",
-  "yChannelSelector",
-  "zoomAndPan"
-].map((attr2) => [attr2.toLowerCase(), attr2]));
-/* @__PURE__ */ new Map([
-  ["xlink:actuate", { prefix: "xlink", name: "actuate", namespace: NS.XLINK }],
-  ["xlink:arcrole", { prefix: "xlink", name: "arcrole", namespace: NS.XLINK }],
-  ["xlink:href", { prefix: "xlink", name: "href", namespace: NS.XLINK }],
-  ["xlink:role", { prefix: "xlink", name: "role", namespace: NS.XLINK }],
-  ["xlink:show", { prefix: "xlink", name: "show", namespace: NS.XLINK }],
-  ["xlink:title", { prefix: "xlink", name: "title", namespace: NS.XLINK }],
-  ["xlink:type", { prefix: "xlink", name: "type", namespace: NS.XLINK }],
-  ["xml:lang", { prefix: "xml", name: "lang", namespace: NS.XML }],
-  ["xml:space", { prefix: "xml", name: "space", namespace: NS.XML }],
-  ["xmlns", { prefix: "", name: "xmlns", namespace: NS.XMLNS }],
-  ["xmlns:xlink", { prefix: "xmlns", name: "xlink", namespace: NS.XMLNS }]
-]);
-new Map([
-  "altGlyph",
-  "altGlyphDef",
-  "altGlyphItem",
-  "animateColor",
-  "animateMotion",
-  "animateTransform",
-  "clipPath",
-  "feBlend",
-  "feColorMatrix",
-  "feComponentTransfer",
-  "feComposite",
-  "feConvolveMatrix",
-  "feDiffuseLighting",
-  "feDisplacementMap",
-  "feDistantLight",
-  "feFlood",
-  "feFuncA",
-  "feFuncB",
-  "feFuncG",
-  "feFuncR",
-  "feGaussianBlur",
-  "feImage",
-  "feMerge",
-  "feMergeNode",
-  "feMorphology",
-  "feOffset",
-  "fePointLight",
-  "feSpecularLighting",
-  "feSpotLight",
-  "feTile",
-  "feTurbulence",
-  "foreignObject",
-  "glyphRef",
-  "linearGradient",
-  "radialGradient",
-  "textPath"
-].map((tn) => [tn.toLowerCase(), tn]));
-/* @__PURE__ */ new Set([
-  TAG_ID.B,
-  TAG_ID.BIG,
-  TAG_ID.BLOCKQUOTE,
-  TAG_ID.BODY,
-  TAG_ID.BR,
-  TAG_ID.CENTER,
-  TAG_ID.CODE,
-  TAG_ID.DD,
-  TAG_ID.DIV,
-  TAG_ID.DL,
-  TAG_ID.DT,
-  TAG_ID.EM,
-  TAG_ID.EMBED,
-  TAG_ID.H1,
-  TAG_ID.H2,
-  TAG_ID.H3,
-  TAG_ID.H4,
-  TAG_ID.H5,
-  TAG_ID.H6,
-  TAG_ID.HEAD,
-  TAG_ID.HR,
-  TAG_ID.I,
-  TAG_ID.IMG,
-  TAG_ID.LI,
-  TAG_ID.LISTING,
-  TAG_ID.MENU,
-  TAG_ID.META,
-  TAG_ID.NOBR,
-  TAG_ID.OL,
-  TAG_ID.P,
-  TAG_ID.PRE,
-  TAG_ID.RUBY,
-  TAG_ID.S,
-  TAG_ID.SMALL,
-  TAG_ID.SPAN,
-  TAG_ID.STRONG,
-  TAG_ID.STRIKE,
-  TAG_ID.SUB,
-  TAG_ID.SUP,
-  TAG_ID.TABLE,
-  TAG_ID.TT,
-  TAG_ID.U,
-  TAG_ID.UL,
-  TAG_ID.VAR
-]);
-var InsertionMode;
-(function(InsertionMode2) {
-  InsertionMode2[InsertionMode2["INITIAL"] = 0] = "INITIAL";
-  InsertionMode2[InsertionMode2["BEFORE_HTML"] = 1] = "BEFORE_HTML";
-  InsertionMode2[InsertionMode2["BEFORE_HEAD"] = 2] = "BEFORE_HEAD";
-  InsertionMode2[InsertionMode2["IN_HEAD"] = 3] = "IN_HEAD";
-  InsertionMode2[InsertionMode2["IN_HEAD_NO_SCRIPT"] = 4] = "IN_HEAD_NO_SCRIPT";
-  InsertionMode2[InsertionMode2["AFTER_HEAD"] = 5] = "AFTER_HEAD";
-  InsertionMode2[InsertionMode2["IN_BODY"] = 6] = "IN_BODY";
-  InsertionMode2[InsertionMode2["TEXT"] = 7] = "TEXT";
-  InsertionMode2[InsertionMode2["IN_TABLE"] = 8] = "IN_TABLE";
-  InsertionMode2[InsertionMode2["IN_TABLE_TEXT"] = 9] = "IN_TABLE_TEXT";
-  InsertionMode2[InsertionMode2["IN_CAPTION"] = 10] = "IN_CAPTION";
-  InsertionMode2[InsertionMode2["IN_COLUMN_GROUP"] = 11] = "IN_COLUMN_GROUP";
-  InsertionMode2[InsertionMode2["IN_TABLE_BODY"] = 12] = "IN_TABLE_BODY";
-  InsertionMode2[InsertionMode2["IN_ROW"] = 13] = "IN_ROW";
-  InsertionMode2[InsertionMode2["IN_CELL"] = 14] = "IN_CELL";
-  InsertionMode2[InsertionMode2["IN_SELECT"] = 15] = "IN_SELECT";
-  InsertionMode2[InsertionMode2["IN_SELECT_IN_TABLE"] = 16] = "IN_SELECT_IN_TABLE";
-  InsertionMode2[InsertionMode2["IN_TEMPLATE"] = 17] = "IN_TEMPLATE";
-  InsertionMode2[InsertionMode2["AFTER_BODY"] = 18] = "AFTER_BODY";
-  InsertionMode2[InsertionMode2["IN_FRAMESET"] = 19] = "IN_FRAMESET";
-  InsertionMode2[InsertionMode2["AFTER_FRAMESET"] = 20] = "AFTER_FRAMESET";
-  InsertionMode2[InsertionMode2["AFTER_AFTER_BODY"] = 21] = "AFTER_AFTER_BODY";
-  InsertionMode2[InsertionMode2["AFTER_AFTER_FRAMESET"] = 22] = "AFTER_AFTER_FRAMESET";
-})(InsertionMode || (InsertionMode = {}));
-/* @__PURE__ */ new Set([TAG_ID.TABLE, TAG_ID.TBODY, TAG_ID.TFOOT, TAG_ID.THEAD, TAG_ID.TR]);
-/* @__PURE__ */ new Set([TAG_ID.CAPTION, TAG_ID.COL, TAG_ID.COLGROUP, TAG_ID.TBODY, TAG_ID.TD, TAG_ID.TFOOT, TAG_ID.TH, TAG_ID.THEAD, TAG_ID.TR]);
-/* @__PURE__ */ new Set([
-  TAG_NAMES.AREA,
-  TAG_NAMES.BASE,
-  TAG_NAMES.BASEFONT,
-  TAG_NAMES.BGSOUND,
-  TAG_NAMES.BR,
-  TAG_NAMES.COL,
-  TAG_NAMES.EMBED,
-  TAG_NAMES.FRAME,
-  TAG_NAMES.HR,
-  TAG_NAMES.IMG,
-  TAG_NAMES.INPUT,
-  TAG_NAMES.KEYGEN,
-  TAG_NAMES.LINK,
-  TAG_NAMES.META,
-  TAG_NAMES.PARAM,
-  TAG_NAMES.SOURCE,
-  TAG_NAMES.TRACK,
-  TAG_NAMES.WBR
-]);
-atom({
-  key: "raisedSnackbars",
-  default: []
-});
-atom({
-  key: "raisedErrors",
-  default: []
-});
-function createCustomizedObjetType(objectType) {
-  const customObjectType = customizedObjectTypes[objectType.definition.name];
-  if (customObjectType) {
-    const { reports, entityToString: entityToString2, entityToStringWithContext, breadcrumb: breadcrumb2, appBarBackgroundColor: useAppBarBackgroundColor, pathToBuilding } = customObjectType;
-    if (entityToString2) {
-      objectType.entityToString = entityToString2;
-    }
-    if (entityToStringWithContext) {
-      objectType.entityToStringWithContext = entityToStringWithContext;
-    }
-    if (breadcrumb2) {
-      objectType.breadcrumb = breadcrumb2;
-    }
-    if (useAppBarBackgroundColor) {
-      objectType.appBarBackgroundColor = useAppBarBackgroundColor;
-    }
-    if (reports) {
-      objectType.reports = reports;
-    }
-    if (pathToBuilding && pathToBuilding.length > 0) {
-      objectType.pathToBuilding = pathToBuilding;
-    }
-    if (customObjectType.defaultSortOrder) {
-      objectType.defaultSortOrder = customObjectType.defaultSortOrder;
-    }
-  }
-  return objectType;
-}
-function getObjectTypes() {
-  return generatedObjectTypes.map(createCustomizedObjetType);
-}
-function getObjectTypesStore() {
-  return getObjectTypes().reduce((acc, v) => {
-    acc[v.definition.camelized.singular] = v;
-    return acc;
-  }, {});
-}
-getObjectTypesStore();
-getObjectTypesStore();
 function getDeterminantByType(polyglotApi, singular, alternative, type2) {
   const definedKey = `models.${singular}.${type2}.defined`;
   const defined = polyglotApi.keyExists(definedKey) ? polyglotApi.translate(definedKey) : alternative;
@@ -77661,6 +64706,5405 @@ function ObjectTypeSingularCapitalizedLabel(props) {
   const translation = useTranslation();
   return /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: getObjectTypeCapitalizedSingularLabel(translation, props.objectTypeName) });
 }
+function getListViewPath(objectTypeName, path) {
+  const objectTypeDefinition = getObjectTypeDefinitionByName(objectTypeName);
+  return `/views/i/${objectTypeDefinition.name}/${path}`;
+}
+function getIndexTabViewPath(objectTypeName, view) {
+  return getListViewPath(objectTypeName, view.name);
+}
+function PaperFrame(props) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Paper, { ...props, sx: { m: 2, p: 2, ...props.sx }, children: props.children });
+}
+const localStorageEffect = () => ({ setSelf, onSet, node: node2 }) => {
+  const ls = getLocalStorage();
+  if (ls) {
+    const key = node2.key;
+    const savedValue = ls.getItem(key);
+    if (savedValue != null && savedValue !== void 0) {
+      setSelf(JSON.parse(savedValue));
+    }
+    onSet((newValue) => {
+      if (newValue instanceof DefaultValue) {
+        ls.removeItem(key);
+      } else {
+        if (newValue === void 0) {
+          ls.removeItem(key);
+        } else {
+          ls.setItem(key, JSON.stringify(newValue));
+        }
+      }
+    });
+  }
+};
+atomFamily({
+  key: "workingLocationStore",
+  default: void 0
+});
+atom({
+  key: "currentCompany",
+  default: null
+});
+atomFamily({
+  key: "roomPathFindingResultAtomFamily",
+  default: void 0
+});
+atomFamily({
+  key: "pathfindingFurniturePolygonsAtomFamily",
+  default: void 0
+});
+atomFamily({
+  key: "gridPathFindingResultAtomFamily",
+  default: void 0
+});
+atomFamily({
+  key: "floorGridGraphAtomFamily",
+  default: void 0
+});
+atomFamily({
+  key: "displayCenterPathAtomFamily",
+  default: false,
+  effects: [localStorageEffect()]
+});
+atomFamily({
+  key: "displayGridNodeFurnituresBboxAtomFamily",
+  default: false,
+  effects: [localStorageEffect()]
+});
+atomFamily({
+  key: "enableHoverPathfindingAtomFamily",
+  default: false,
+  effects: [localStorageEffect()]
+});
+function consoleLog(...args) {
+  if (console.log) {
+    console.log.apply(console.log, args);
+  }
+}
+var LIBVERSION = "2.0.0", EMPTY = "", UNKNOWN = "?", FUNC_TYPE = "function", UNDEF_TYPE = "undefined", OBJ_TYPE = "object", STR_TYPE = "string", MAJOR = "major", MODEL = "model", NAME = "name", TYPE = "type", VENDOR = "vendor", VERSION = "version", ARCHITECTURE = "architecture", CONSOLE = "console", MOBILE = "mobile", TABLET = "tablet", SMARTTV = "smarttv", WEARABLE = "wearable", XR = "xr", EMBEDDED = "embedded", INAPP = "inapp", USER_AGENT = "user-agent", UA_MAX_LENGTH = 500, BRANDS = "brands", FORMFACTORS = "formFactors", FULLVERLIST = "fullVersionList", PLATFORM = "platform", PLATFORMVER = "platformVersion", BITNESS = "bitness", CH_HEADER = "sec-ch-ua", CH_HEADER_FULL_VER_LIST = CH_HEADER + "-full-version-list", CH_HEADER_ARCH = CH_HEADER + "-arch", CH_HEADER_BITNESS = CH_HEADER + "-" + BITNESS, CH_HEADER_FORM_FACTORS = CH_HEADER + "-form-factors", CH_HEADER_MOBILE = CH_HEADER + "-" + MOBILE, CH_HEADER_MODEL = CH_HEADER + "-" + MODEL, CH_HEADER_PLATFORM = CH_HEADER + "-" + PLATFORM, CH_HEADER_PLATFORM_VER = CH_HEADER_PLATFORM + "-version", CH_ALL_VALUES = [BRANDS, FULLVERLIST, MOBILE, MODEL, PLATFORM, PLATFORMVER, ARCHITECTURE, FORMFACTORS, BITNESS], UA_BROWSER = "browser", UA_CPU = "cpu", UA_DEVICE = "device", UA_ENGINE = "engine", UA_OS = "os", UA_RESULT = "result", AMAZON = "Amazon", APPLE = "Apple", ASUS = "ASUS", BLACKBERRY = "BlackBerry", GOOGLE = "Google", HUAWEI = "Huawei", LENOVO = "Lenovo", HONOR = "Honor", LG = "LG", MICROSOFT = "Microsoft", MOTOROLA = "Motorola", SAMSUNG = "Samsung", SHARP = "Sharp", SONY = "Sony", XIAOMI = "Xiaomi", ZEBRA = "Zebra", PREFIX_MOBILE = "Mobile ", SUFFIX_BROWSER = " Browser", CHROME = "Chrome", CHROMECAST = "Chromecast", EDGE = "Edge", FIREFOX = "Firefox", OPERA = "Opera", FACEBOOK = "Facebook", SOGOU = "Sogou", WINDOWS = "Windows";
+var isWindow = typeof window !== UNDEF_TYPE, NAVIGATOR = isWindow && window.navigator ? window.navigator : void 0, NAVIGATOR_UADATA = NAVIGATOR && NAVIGATOR.userAgentData ? NAVIGATOR.userAgentData : void 0;
+var extend = function(defaultRgx, extensions) {
+  var mergedRgx = {};
+  var extraRgx = extensions;
+  if (!isExtensions(extensions)) {
+    extraRgx = {};
+    for (var i in extensions) {
+      for (var j in extensions[i]) {
+        extraRgx[j] = extensions[i][j].concat(extraRgx[j] ? extraRgx[j] : []);
+      }
+    }
+  }
+  for (var k in defaultRgx) {
+    mergedRgx[k] = extraRgx[k] && extraRgx[k].length % 2 === 0 ? extraRgx[k].concat(defaultRgx[k]) : defaultRgx[k];
+  }
+  return mergedRgx;
+}, enumerize = function(arr) {
+  var enums = {};
+  for (var i = 0; i < arr.length; i++) {
+    enums[arr[i].toUpperCase()] = arr[i];
+  }
+  return enums;
+}, has = function(str1, str2) {
+  if (typeof str1 === OBJ_TYPE && str1.length > 0) {
+    for (var i in str1) {
+      if (lowerize(str1[i]) == lowerize(str2)) return true;
+    }
+    return false;
+  }
+  return isString(str1) ? lowerize(str2).indexOf(lowerize(str1)) !== -1 : false;
+}, isExtensions = function(obj, deep) {
+  for (var prop in obj) {
+    return /^(browser|cpu|device|engine|os)$/.test(prop) || (deep ? isExtensions(obj[prop]) : false);
+  }
+}, isString = function(val) {
+  return typeof val === STR_TYPE;
+}, itemListToArray = function(header) {
+  if (!header) return void 0;
+  var arr = [];
+  var tokens = strip(/\\?\"/g, header).split(",");
+  for (var i = 0; i < tokens.length; i++) {
+    if (tokens[i].indexOf(";") > -1) {
+      var token2 = trim(tokens[i]).split(";v=");
+      arr[i] = { brand: token2[0], version: token2[1] };
+    } else {
+      arr[i] = trim(tokens[i]);
+    }
+  }
+  return arr;
+}, lowerize = function(str) {
+  return isString(str) ? str.toLowerCase() : str;
+}, majorize = function(version2) {
+  return isString(version2) ? strip(/[^\d\.]/g, version2).split(".")[0] : void 0;
+}, setProps = function(arr) {
+  for (var i in arr) {
+    var propName = arr[i];
+    if (typeof propName == OBJ_TYPE && propName.length == 2) {
+      this[propName[0]] = propName[1];
+    } else {
+      this[propName] = void 0;
+    }
+  }
+  return this;
+}, strip = function(pattern, str) {
+  return isString(str) ? str.replace(pattern, EMPTY) : str;
+}, stripQuotes = function(str) {
+  return strip(/\\?\"/g, str);
+}, trim = function(str, len) {
+  if (isString(str)) {
+    str = strip(/^\s\s*/, str);
+    return typeof len === UNDEF_TYPE ? str : str.substring(0, UA_MAX_LENGTH);
+  }
+};
+var rgxMapper = function(ua, arrays) {
+  if (!ua || !arrays) return;
+  var i = 0, j, k, p, q, matches, match2;
+  while (i < arrays.length && !matches) {
+    var regex = arrays[i], props = arrays[i + 1];
+    j = k = 0;
+    while (j < regex.length && !matches) {
+      if (!regex[j]) {
+        break;
+      }
+      matches = regex[j++].exec(ua);
+      if (!!matches) {
+        for (p = 0; p < props.length; p++) {
+          match2 = matches[++k];
+          q = props[p];
+          if (typeof q === OBJ_TYPE && q.length > 0) {
+            if (q.length === 2) {
+              if (typeof q[1] == FUNC_TYPE) {
+                this[q[0]] = q[1].call(this, match2);
+              } else {
+                this[q[0]] = q[1];
+              }
+            } else if (q.length === 3) {
+              if (typeof q[1] === FUNC_TYPE && !(q[1].exec && q[1].test)) {
+                this[q[0]] = match2 ? q[1].call(this, match2, q[2]) : void 0;
+              } else {
+                this[q[0]] = match2 ? match2.replace(q[1], q[2]) : void 0;
+              }
+            } else if (q.length === 4) {
+              this[q[0]] = match2 ? q[3].call(this, match2.replace(q[1], q[2])) : void 0;
+            }
+          } else {
+            this[q] = match2 ? match2 : void 0;
+          }
+        }
+      }
+    }
+    i += 2;
+  }
+}, strMapper = function(str, map) {
+  for (var i in map) {
+    if (typeof map[i] === OBJ_TYPE && map[i].length > 0) {
+      for (var j = 0; j < map[i].length; j++) {
+        if (has(map[i][j], str)) {
+          return i === UNKNOWN ? void 0 : i;
+        }
+      }
+    } else if (has(map[i], str)) {
+      return i === UNKNOWN ? void 0 : i;
+    }
+  }
+  return map.hasOwnProperty("*") ? map["*"] : str;
+};
+var windowsVersionMap = {
+  "ME": "4.90",
+  "NT 3.11": "NT3.51",
+  "NT 4.0": "NT4.0",
+  "2000": "NT 5.0",
+  "XP": ["NT 5.1", "NT 5.2"],
+  "Vista": "NT 6.0",
+  "7": "NT 6.1",
+  "8": "NT 6.2",
+  "8.1": "NT 6.3",
+  "10": ["NT 6.4", "NT 10.0"],
+  "RT": "ARM"
+}, formFactorsMap = {
+  "embedded": "Automotive",
+  "mobile": "Mobile",
+  "tablet": ["Tablet", "EInk"],
+  "smarttv": "TV",
+  "wearable": "Watch",
+  "xr": ["VR", "XR"],
+  "?": ["Desktop", "Unknown"],
+  "*": void 0
+};
+var defaultRegexes = {
+  browser: [
+    [
+      // Most common regardless engine
+      /\b(?:crmo|crios)\/([\w\.]+)/i
+      // Chrome for Android/iOS
+    ],
+    [VERSION, [NAME, PREFIX_MOBILE + "Chrome"]],
+    [
+      /edg(?:e|ios|a)?\/([\w\.]+)/i
+      // Microsoft Edge
+    ],
+    [VERSION, [NAME, "Edge"]],
+    [
+      // Presto based
+      /(opera mini)\/([-\w\.]+)/i,
+      // Opera Mini
+      /(opera [mobiletab]{3,6})\b.+version\/([-\w\.]+)/i,
+      // Opera Mobi/Tablet
+      /(opera)(?:.+version\/|[\/ ]+)([\w\.]+)/i
+      // Opera
+    ],
+    [NAME, VERSION],
+    [
+      /opios[\/ ]+([\w\.]+)/i
+      // Opera mini on iphone >= 8.0
+    ],
+    [VERSION, [NAME, OPERA + " Mini"]],
+    [
+      /\bop(?:rg)?x\/([\w\.]+)/i
+      // Opera GX
+    ],
+    [VERSION, [NAME, OPERA + " GX"]],
+    [
+      /\bopr\/([\w\.]+)/i
+      // Opera Webkit
+    ],
+    [VERSION, [NAME, OPERA]],
+    [
+      // Mixed
+      /\bb[ai]*d(?:uhd|[ub]*[aekoprswx]{5,6})[\/ ]?([\w\.]+)/i
+      // Baidu
+    ],
+    [VERSION, [NAME, "Baidu"]],
+    [
+      /\b(?:mxbrowser|mxios|myie2)\/?([-\w\.]*)\b/i
+      // Maxthon
+    ],
+    [VERSION, [NAME, "Maxthon"]],
+    [
+      /(kindle)\/([\w\.]+)/i,
+      // Kindle
+      /(lunascape|maxthon|netfront|jasmine|blazer|sleipnir)[\/ ]?([\w\.]*)/i,
+      // Lunascape/Maxthon/Netfront/Jasmine/Blazer/Sleipnir
+      // Trident based
+      /(avant|iemobile|slim(?:browser|boat|jet))[\/ ]?([\d\.]*)/i,
+      // Avant/IEMobile/SlimBrowser/SlimBoat/Slimjet
+      /(?:ms|\()(ie) ([\w\.]+)/i,
+      // Internet Explorer
+      // Blink/Webkit/KHTML based                                         // Flock/RockMelt/Midori/Epiphany/Silk/Skyfire/Bolt/Iron/Iridium/PhantomJS/Bowser/QupZilla/Falkon
+      /(flock|rockmelt|midori|epiphany|silk|skyfire|ovibrowser|bolt|iron|vivaldi|iridium|phantomjs|bowser|qupzilla|falkon|rekonq|puffin|brave|whale(?!.+naver)|qqbrowserlite|duckduckgo|klar|helio|(?=comodo_)?dragon)\/([-\w\.]+)/i,
+      // Rekonq/Puffin/Brave/Whale/QQBrowserLite/QQ//Vivaldi/DuckDuckGo/Klar/Helio/Dragon
+      /(heytap|ovi|115)browser\/([\d\.]+)/i,
+      // HeyTap/Ovi/115
+      /(weibo)__([\d\.]+)/i
+      // Weibo
+    ],
+    [NAME, VERSION],
+    [
+      /quark(?:pc)?\/([-\w\.]+)/i
+      // Quark
+    ],
+    [VERSION, [NAME, "Quark"]],
+    [
+      /\bddg\/([\w\.]+)/i
+      // DuckDuckGo
+    ],
+    [VERSION, [NAME, "DuckDuckGo"]],
+    [
+      /(?:\buc? ?browser|(?:juc.+)ucweb)[\/ ]?([\w\.]+)/i
+      // UCBrowser
+    ],
+    [VERSION, [NAME, "UCBrowser"]],
+    [
+      /microm.+\bqbcore\/([\w\.]+)/i,
+      // WeChat Desktop for Windows Built-in Browser
+      /\bqbcore\/([\w\.]+).+microm/i,
+      /micromessenger\/([\w\.]+)/i
+      // WeChat
+    ],
+    [VERSION, [NAME, "WeChat"]],
+    [
+      /konqueror\/([\w\.]+)/i
+      // Konqueror
+    ],
+    [VERSION, [NAME, "Konqueror"]],
+    [
+      /trident.+rv[: ]([\w\.]{1,9})\b.+like gecko/i
+      // IE11
+    ],
+    [VERSION, [NAME, "IE"]],
+    [
+      /ya(?:search)?browser\/([\w\.]+)/i
+      // Yandex
+    ],
+    [VERSION, [NAME, "Yandex"]],
+    [
+      /slbrowser\/([\w\.]+)/i
+      // Smart Lenovo Browser
+    ],
+    [VERSION, [NAME, "Smart " + LENOVO + SUFFIX_BROWSER]],
+    [
+      /(avast|avg)\/([\w\.]+)/i
+      // Avast/AVG Secure Browser
+    ],
+    [[NAME, /(.+)/, "$1 Secure" + SUFFIX_BROWSER], VERSION],
+    [
+      /\bfocus\/([\w\.]+)/i
+      // Firefox Focus
+    ],
+    [VERSION, [NAME, FIREFOX + " Focus"]],
+    [
+      /\bopt\/([\w\.]+)/i
+      // Opera Touch
+    ],
+    [VERSION, [NAME, OPERA + " Touch"]],
+    [
+      /coc_coc\w+\/([\w\.]+)/i
+      // Coc Coc Browser
+    ],
+    [VERSION, [NAME, "Coc Coc"]],
+    [
+      /dolfin\/([\w\.]+)/i
+      // Dolphin
+    ],
+    [VERSION, [NAME, "Dolphin"]],
+    [
+      /coast\/([\w\.]+)/i
+      // Opera Coast
+    ],
+    [VERSION, [NAME, OPERA + " Coast"]],
+    [
+      /miuibrowser\/([\w\.]+)/i
+      // MIUI Browser
+    ],
+    [VERSION, [NAME, "MIUI" + SUFFIX_BROWSER]],
+    [
+      /fxios\/([\w\.-]+)/i
+      // Firefox for iOS
+    ],
+    [VERSION, [NAME, PREFIX_MOBILE + FIREFOX]],
+    [
+      /\bqihoobrowser\/?([\w\.]*)/i
+      // 360
+    ],
+    [VERSION, [NAME, "360"]],
+    [
+      /\b(qq)\/([\w\.]+)/i
+      // QQ
+    ],
+    [[NAME, /(.+)/, "$1Browser"], VERSION],
+    [
+      /(oculus|sailfish|huawei|vivo|pico)browser\/([\w\.]+)/i
+    ],
+    [[NAME, /(.+)/, "$1" + SUFFIX_BROWSER], VERSION],
+    [
+      // Oculus/Sailfish/HuaweiBrowser/VivoBrowser/PicoBrowser
+      /samsungbrowser\/([\w\.]+)/i
+      // Samsung Internet
+    ],
+    [VERSION, [NAME, SAMSUNG + " Internet"]],
+    [
+      /metasr[\/ ]?([\d\.]+)/i
+      // Sogou Explorer
+    ],
+    [VERSION, [NAME, SOGOU + " Explorer"]],
+    [
+      /(sogou)mo\w+\/([\d\.]+)/i
+      // Sogou Mobile
+    ],
+    [[NAME, SOGOU + " Mobile"], VERSION],
+    [
+      /(electron)\/([\w\.]+) safari/i,
+      // Electron-based App
+      /(tesla)(?: qtcarbrowser|\/(20\d\d\.[-\w\.]+))/i,
+      // Tesla
+      /m?(qqbrowser|2345(?=browser|chrome|explorer))\w*[\/ ]?v?([\w\.]+)/i
+      // QQ/2345
+    ],
+    [NAME, VERSION],
+    [
+      /(lbbrowser|rekonq)/i
+      // LieBao Browser/Rekonq
+    ],
+    [NAME],
+    [
+      /ome\/([\w\.]+) \w* ?(iron) saf/i,
+      // Iron
+      /ome\/([\w\.]+).+qihu (360)[es]e/i
+      // 360
+    ],
+    [VERSION, NAME],
+    [
+      // WebView
+      /((?:fban\/fbios|fb_iab\/fb4a)(?!.+fbav)|;fbav\/([\w\.]+);)/i
+      // Facebook App for iOS & Android
+    ],
+    [[NAME, FACEBOOK], VERSION, [TYPE, INAPP]],
+    [
+      /(Klarna)\/([\w\.]+)/i,
+      // Klarna Shopping Browser for iOS & Android
+      /(kakao(?:talk|story))[\/ ]([\w\.]+)/i,
+      // Kakao App
+      /(naver)\(.*?(\d+\.[\w\.]+).*\)/i,
+      // Naver InApp
+      /safari (line)\/([\w\.]+)/i,
+      // Line App for iOS
+      /\b(line)\/([\w\.]+)\/iab/i,
+      // Line App for Android
+      /(alipay)client\/([\w\.]+)/i,
+      // Alipay
+      /(twitter)(?:and| f.+e\/([\w\.]+))/i,
+      // Twitter
+      /(instagram|snapchat)[\/ ]([-\w\.]+)/i
+      // Instagram/Snapchat
+    ],
+    [NAME, VERSION, [TYPE, INAPP]],
+    [
+      /\bgsa\/([\w\.]+) .*safari\//i
+      // Google Search Appliance on iOS
+    ],
+    [VERSION, [NAME, "GSA"], [TYPE, INAPP]],
+    [
+      /musical_ly(?:.+app_?version\/|_)([\w\.]+)/i
+      // TikTok
+    ],
+    [VERSION, [NAME, "TikTok"], [TYPE, INAPP]],
+    [
+      /\[(linkedin)app\]/i
+      // LinkedIn App for iOS & Android
+    ],
+    [NAME, [TYPE, INAPP]],
+    [
+      /(chromium)[\/ ]([-\w\.]+)/i
+      // Chromium
+    ],
+    [NAME, VERSION],
+    [
+      /headlesschrome(?:\/([\w\.]+)| )/i
+      // Chrome Headless
+    ],
+    [VERSION, [NAME, CHROME + " Headless"]],
+    [
+      / wv\).+(chrome)\/([\w\.]+)/i
+      // Chrome WebView
+    ],
+    [[NAME, CHROME + " WebView"], VERSION],
+    [
+      /droid.+ version\/([\w\.]+)\b.+(?:mobile safari|safari)/i
+      // Android Browser
+    ],
+    [VERSION, [NAME, "Android" + SUFFIX_BROWSER]],
+    [
+      /chrome\/([\w\.]+) mobile/i
+      // Chrome Mobile
+    ],
+    [VERSION, [NAME, PREFIX_MOBILE + "Chrome"]],
+    [
+      /(chrome|omniweb|arora|[tizenoka]{5} ?browser)\/v?([\w\.]+)/i
+      // Chrome/OmniWeb/Arora/Tizen/Nokia
+    ],
+    [NAME, VERSION],
+    [
+      /version\/([\w\.\,]+) .*mobile(?:\/\w+ | ?)safari/i
+      // Safari Mobile
+    ],
+    [VERSION, [NAME, PREFIX_MOBILE + "Safari"]],
+    [
+      /iphone .*mobile(?:\/\w+ | ?)safari/i
+    ],
+    [[NAME, PREFIX_MOBILE + "Safari"]],
+    [
+      /version\/([\w\.\,]+) .*(safari)/i
+      // Safari
+    ],
+    [VERSION, NAME],
+    [
+      /webkit.+?(mobile ?safari|safari)(\/[\w\.]+)/i
+      // Safari < 3.0
+    ],
+    [NAME, [VERSION, "1"]],
+    [
+      /(webkit|khtml)\/([\w\.]+)/i
+    ],
+    [NAME, VERSION],
+    [
+      // Gecko based
+      /(?:mobile|tablet);.*(firefox)\/([\w\.-]+)/i
+      // Firefox Mobile
+    ],
+    [[NAME, PREFIX_MOBILE + FIREFOX], VERSION],
+    [
+      /(navigator|netscape\d?)\/([-\w\.]+)/i
+      // Netscape
+    ],
+    [[NAME, "Netscape"], VERSION],
+    [
+      /(wolvic|librewolf)\/([\w\.]+)/i
+      // Wolvic/LibreWolf
+    ],
+    [NAME, VERSION],
+    [
+      /mobile vr; rv:([\w\.]+)\).+firefox/i
+      // Firefox Reality
+    ],
+    [VERSION, [NAME, FIREFOX + " Reality"]],
+    [
+      /ekiohf.+(flow)\/([\w\.]+)/i,
+      // Flow
+      /(swiftfox)/i,
+      // Swiftfox
+      /(icedragon|iceweasel|camino|chimera|fennec|maemo browser|minimo|conkeror)[\/ ]?([\w\.\+]+)/i,
+      // IceDragon/Iceweasel/Camino/Chimera/Fennec/Maemo/Minimo/Conkeror
+      /(seamonkey|k-meleon|icecat|iceape|firebird|phoenix|palemoon|basilisk|waterfox)\/([-\w\.]+)$/i,
+      // Firefox/SeaMonkey/K-Meleon/IceCat/IceApe/Firebird/Phoenix
+      /(firefox)\/([\w\.]+)/i,
+      // Other Firefox-based
+      /(mozilla)\/([\w\.]+) .+rv\:.+gecko\/\d+/i,
+      // Mozilla
+      // Other
+      /(polaris|lynx|dillo|icab|doris|amaya|w3m|netsurf|obigo|mosaic|(?:go|ice|up)[\. ]?browser)[-\/ ]?v?([\w\.]+)/i,
+      // Polaris/Lynx/Dillo/iCab/Doris/Amaya/w3m/NetSurf/Obigo/Mosaic/Go/ICE/UP.Browser
+      /\b(links) \(([\w\.]+)/i
+      // Links
+    ],
+    [NAME, [VERSION, /_/g, "."]],
+    [
+      /(cobalt)\/([\w\.]+)/i
+      // Cobalt
+    ],
+    [NAME, [VERSION, /[^\d\.]+./, EMPTY]]
+  ],
+  cpu: [
+    [
+      /\b(?:(amd|x|x86[-_]?|wow|win)64)\b/i
+      // AMD64 (x64)
+    ],
+    [[ARCHITECTURE, "amd64"]],
+    [
+      /(ia32(?=;))/i,
+      // IA32 (quicktime)
+      /((?:i[346]|x)86)[;\)]/i
+      // IA32 (x86)
+    ],
+    [[ARCHITECTURE, "ia32"]],
+    [
+      /\b(aarch64|arm(v?8e?l?|_?64))\b/i
+      // ARM64
+    ],
+    [[ARCHITECTURE, "arm64"]],
+    [
+      /\b(arm(?:v[67])?ht?n?[fl]p?)\b/i
+      // ARMHF
+    ],
+    [[ARCHITECTURE, "armhf"]],
+    [
+      // PocketPC mistakenly identified as PowerPC
+      /windows (ce|mobile); ppc;/i
+    ],
+    [[ARCHITECTURE, "arm"]],
+    [
+      /((?:ppc|powerpc)(?:64)?)(?: mac|;|\))/i
+      // PowerPC
+    ],
+    [[ARCHITECTURE, /ower/, EMPTY, lowerize]],
+    [
+      /(sun4\w)[;\)]/i
+      // SPARC
+    ],
+    [[ARCHITECTURE, "sparc"]],
+    [
+      /((?:avr32|ia64(?=;))|68k(?=\))|\barm(?=v(?:[1-7]|[5-7]1)l?|;|eabi)|(?=atmel )avr|(?:irix|mips|sparc)(?:64)?\b|pa-risc)/i
+      // IA64, 68K, ARM/64, AVR/32, IRIX/64, MIPS/64, SPARC/64, PA-RISC
+    ],
+    [[ARCHITECTURE, lowerize]]
+  ],
+  device: [
+    [
+      //////////////////////////
+      // MOBILES & TABLETS
+      /////////////////////////
+      // Samsung
+      /\b(sch-i[89]0\d|shw-m380s|sm-[ptx]\w{2,4}|gt-[pn]\d{2,4}|sgh-t8[56]9|nexus 10)/i
+    ],
+    [MODEL, [VENDOR, SAMSUNG], [TYPE, TABLET]],
+    [
+      /\b((?:s[cgp]h|gt|sm)-(?![lr])\w+|sc[g-]?[\d]+a?|galaxy nexus)/i,
+      /samsung[- ]((?!sm-[lr])[-\w]+)/i,
+      /sec-(sgh\w+)/i
+    ],
+    [MODEL, [VENDOR, SAMSUNG], [TYPE, MOBILE]],
+    [
+      // Apple
+      /(?:\/|\()(ip(?:hone|od)[\w, ]*)(?:\/|;)/i
+      // iPod/iPhone
+    ],
+    [MODEL, [VENDOR, APPLE], [TYPE, MOBILE]],
+    [
+      /\((ipad);[-\w\),; ]+apple/i,
+      // iPad
+      /applecoremedia\/[\w\.]+ \((ipad)/i,
+      /\b(ipad)\d\d?,\d\d?[;\]].+ios/i
+    ],
+    [MODEL, [VENDOR, APPLE], [TYPE, TABLET]],
+    [
+      /(macintosh);/i
+    ],
+    [MODEL, [VENDOR, APPLE]],
+    [
+      // Sharp
+      /\b(sh-?[altvz]?\d\d[a-ekm]?)/i
+    ],
+    [MODEL, [VENDOR, SHARP], [TYPE, MOBILE]],
+    [
+      // Honor
+      /(?:honor)([-\w ]+)[;\)]/i
+    ],
+    [MODEL, [VENDOR, HONOR], [TYPE, MOBILE]],
+    [
+      // Huawei
+      /\b((?:ag[rs][23]?|bah2?|sht?|btv)-a?[lw]\d{2})\b(?!.+d\/s)/i
+    ],
+    [MODEL, [VENDOR, HUAWEI], [TYPE, TABLET]],
+    [
+      /(?:huawei)([-\w ]+)[;\)]/i,
+      /\b(nexus 6p|\w{2,4}e?-[atu]?[ln][\dx][012359c][adn]?)\b(?!.+d\/s)/i
+    ],
+    [MODEL, [VENDOR, HUAWEI], [TYPE, MOBILE]],
+    [
+      // Xiaomi
+      /\b(poco[\w ]+|m2\d{3}j\d\d[a-z]{2})(?: bui|\))/i,
+      // Xiaomi POCO
+      /\b; (\w+) build\/hm\1/i,
+      // Xiaomi Hongmi 'numeric' models
+      /\b(hm[-_ ]?note?[_ ]?(?:\d\w)?) bui/i,
+      // Xiaomi Hongmi
+      /\b(redmi[\-_ ]?(?:note|k)?[\w_ ]+)(?: bui|\))/i,
+      // Xiaomi Redmi
+      /oid[^\)]+; (m?[12][0-389][01]\w{3,6}[c-y])( bui|; wv|\))/i,
+      // Xiaomi Redmi 'numeric' models
+      /\b(mi[-_ ]?(?:a\d|one|one[_ ]plus|note lte|max|cc)?[_ ]?(?:\d?\w?)[_ ]?(?:plus|se|lite|pro)?)(?: bui|\))/i
+      // Xiaomi Mi
+    ],
+    [[MODEL, /_/g, " "], [VENDOR, XIAOMI], [TYPE, MOBILE]],
+    [
+      /oid[^\)]+; (2\d{4}(283|rpbf)[cgl])( bui|\))/i,
+      // Redmi Pad
+      /\b(mi[-_ ]?(?:pad)(?:[\w_ ]+))(?: bui|\))/i
+      // Mi Pad tablets
+    ],
+    [[MODEL, /_/g, " "], [VENDOR, XIAOMI], [TYPE, TABLET]],
+    [
+      // OPPO
+      /; (\w+) bui.+ oppo/i,
+      /\b(cph[12]\d{3}|p(?:af|c[al]|d\w|e[ar])[mt]\d0|x9007|a101op)\b/i
+    ],
+    [MODEL, [VENDOR, "OPPO"], [TYPE, MOBILE]],
+    [
+      /\b(opd2\d{3}a?) bui/i
+    ],
+    [MODEL, [VENDOR, "OPPO"], [TYPE, TABLET]],
+    [
+      // Vivo
+      /vivo (\w+)(?: bui|\))/i,
+      /\b(v[12]\d{3}\w?[at])(?: bui|;)/i
+    ],
+    [MODEL, [VENDOR, "Vivo"], [TYPE, MOBILE]],
+    [
+      // Realme
+      /\b(rmx[1-3]\d{3})(?: bui|;|\))/i
+    ],
+    [MODEL, [VENDOR, "Realme"], [TYPE, MOBILE]],
+    [
+      // Motorola
+      /\b(milestone|droid(?:[2-4x]| (?:bionic|x2|pro|razr))?:?( 4g)?)\b[\w ]+build\//i,
+      /\bmot(?:orola)?[- ](\w*)/i,
+      /((?:moto[\w\(\) ]+|xt\d{3,4}|nexus 6)(?= bui|\)))/i
+    ],
+    [MODEL, [VENDOR, MOTOROLA], [TYPE, MOBILE]],
+    [
+      /\b(mz60\d|xoom[2 ]{0,2}) build\//i
+    ],
+    [MODEL, [VENDOR, MOTOROLA], [TYPE, TABLET]],
+    [
+      // LG
+      /((?=lg)?[vl]k\-?\d{3}) bui| 3\.[-\w; ]{10}lg?-([06cv9]{3,4})/i
+    ],
+    [MODEL, [VENDOR, LG], [TYPE, TABLET]],
+    [
+      /(lm(?:-?f100[nv]?|-[\w\.]+)(?= bui|\))|nexus [45])/i,
+      /\blg[-e;\/ ]+((?!browser|netcast|android tv)\w+)/i,
+      /\blg-?([\d\w]+) bui/i
+    ],
+    [MODEL, [VENDOR, LG], [TYPE, MOBILE]],
+    [
+      // Lenovo
+      /(ideatab[-\w ]+)/i,
+      /lenovo ?(s[56]000[-\w]+|tab(?:[\w ]+)|yt[-\d\w]{6}|tb[-\d\w]{6})/i
+    ],
+    [MODEL, [VENDOR, LENOVO], [TYPE, TABLET]],
+    [
+      // Nokia
+      /(?:maemo|nokia).*(n900|lumia \d+)/i,
+      /nokia[-_ ]?([-\w\.]*)/i
+    ],
+    [[MODEL, /_/g, " "], [VENDOR, "Nokia"], [TYPE, MOBILE]],
+    [
+      // Google
+      /(pixel c)\b/i
+      // Google Pixel C
+    ],
+    [MODEL, [VENDOR, GOOGLE], [TYPE, TABLET]],
+    [
+      /droid.+; (pixel[\daxl ]{0,6})(?: bui|\))/i
+      // Google Pixel
+    ],
+    [MODEL, [VENDOR, GOOGLE], [TYPE, MOBILE]],
+    [
+      // Sony
+      /droid.+; (a?\d[0-2]{2}so|[c-g]\d{4}|so[-gl]\w+|xq-a\w[4-7][12])(?= bui|\).+chrome\/(?![1-6]{0,1}\d\.))/i
+    ],
+    [MODEL, [VENDOR, SONY], [TYPE, MOBILE]],
+    [
+      /sony tablet [ps]/i,
+      /\b(?:sony)?sgp\w+(?: bui|\))/i
+    ],
+    [[MODEL, "Xperia Tablet"], [VENDOR, SONY], [TYPE, TABLET]],
+    [
+      // OnePlus
+      / (kb2005|in20[12]5|be20[12][59])\b/i,
+      /(?:one)?(?:plus)? (a\d0\d\d)(?: b|\))/i
+    ],
+    [MODEL, [VENDOR, "OnePlus"], [TYPE, MOBILE]],
+    [
+      // Amazon
+      /(alexa)webm/i,
+      /(kf[a-z]{2}wi|aeo(?!bc)\w\w)( bui|\))/i,
+      // Kindle Fire without Silk / Echo Show
+      /(kf[a-z]+)( bui|\)).+silk\//i
+      // Kindle Fire HD
+    ],
+    [MODEL, [VENDOR, AMAZON], [TYPE, TABLET]],
+    [
+      /((?:sd|kf)[0349hijorstuw]+)( bui|\)).+silk\//i
+      // Fire Phone
+    ],
+    [[MODEL, /(.+)/g, "Fire Phone $1"], [VENDOR, AMAZON], [TYPE, MOBILE]],
+    [
+      // BlackBerry
+      /(playbook);[-\w\),; ]+(rim)/i
+      // BlackBerry PlayBook
+    ],
+    [MODEL, VENDOR, [TYPE, TABLET]],
+    [
+      /\b((?:bb[a-f]|st[hv])100-\d)/i,
+      /\(bb10; (\w+)/i
+      // BlackBerry 10
+    ],
+    [MODEL, [VENDOR, BLACKBERRY], [TYPE, MOBILE]],
+    [
+      // Asus
+      /(?:\b|asus_)(transfo[prime ]{4,10} \w+|eeepc|slider \w+|nexus 7|padfone|p00[cj])/i
+    ],
+    [MODEL, [VENDOR, ASUS], [TYPE, TABLET]],
+    [
+      / (z[bes]6[027][012][km][ls]|zenfone \d\w?)\b/i
+    ],
+    [MODEL, [VENDOR, ASUS], [TYPE, MOBILE]],
+    [
+      // HTC
+      /(nexus 9)/i
+      // HTC Nexus 9
+    ],
+    [MODEL, [VENDOR, "HTC"], [TYPE, TABLET]],
+    [
+      /(htc)[-;_ ]{1,2}([\w ]+(?=\)| bui)|\w+)/i,
+      // HTC
+      // ZTE
+      /(zte)[- ]([\w ]+?)(?: bui|\/|\))/i,
+      /(alcatel|geeksphone|nexian|panasonic(?!(?:;|\.))|sony(?!-bra))[-_ ]?([-\w]*)/i
+      // Alcatel/GeeksPhone/Nexian/Panasonic/Sony
+    ],
+    [VENDOR, [MODEL, /_/g, " "], [TYPE, MOBILE]],
+    [
+      // TCL
+      /tcl (xess p17aa)/i,
+      /droid [\w\.]+; ((?:8[14]9[16]|9(?:0(?:48|60|8[01])|1(?:3[27]|66)|2(?:6[69]|9[56])|466))[gqswx])(_\w(\w|\w\w))?(\)| bui)/i
+    ],
+    [MODEL, [VENDOR, "TCL"], [TYPE, TABLET]],
+    [
+      /droid [\w\.]+; (418(?:7d|8v)|5087z|5102l|61(?:02[dh]|25[adfh]|27[ai]|56[dh]|59k|65[ah])|a509dl|t(?:43(?:0w|1[adepqu])|50(?:6d|7[adju])|6(?:09dl|10k|12b|71[efho]|76[hjk])|7(?:66[ahju]|67[hw]|7[045][bh]|71[hk]|73o|76[ho]|79w|81[hks]?|82h|90[bhsy]|99b)|810[hs]))(_\w(\w|\w\w))?(\)| bui)/i
+    ],
+    [MODEL, [VENDOR, "TCL"], [TYPE, MOBILE]],
+    [
+      // itel
+      /(itel) ((\w+))/i
+    ],
+    [[VENDOR, lowerize], MODEL, [TYPE, strMapper, { "tablet": ["p10001l", "w7001"], "*": "mobile" }]],
+    [
+      // Acer
+      /droid.+; ([ab][1-7]-?[0178a]\d\d?)/i
+    ],
+    [MODEL, [VENDOR, "Acer"], [TYPE, TABLET]],
+    [
+      // Meizu
+      /droid.+; (m[1-5] note) bui/i,
+      /\bmz-([-\w]{2,})/i
+    ],
+    [MODEL, [VENDOR, "Meizu"], [TYPE, MOBILE]],
+    [
+      // Ulefone
+      /; ((?:power )?armor(?:[\w ]{0,8}))(?: bui|\))/i
+    ],
+    [MODEL, [VENDOR, "Ulefone"], [TYPE, MOBILE]],
+    [
+      // Energizer
+      /; (energy ?\w+)(?: bui|\))/i,
+      /; energizer ([\w ]+)(?: bui|\))/i
+    ],
+    [MODEL, [VENDOR, "Energizer"], [TYPE, MOBILE]],
+    [
+      // Cat
+      /; cat (b35);/i,
+      /; (b15q?|s22 flip|s48c|s62 pro)(?: bui|\))/i
+    ],
+    [MODEL, [VENDOR, "Cat"], [TYPE, MOBILE]],
+    [
+      // Smartfren
+      /((?:new )?andromax[\w- ]+)(?: bui|\))/i
+    ],
+    [MODEL, [VENDOR, "Smartfren"], [TYPE, MOBILE]],
+    [
+      // Nothing
+      /droid.+; (a(?:015|06[35]|142p?))/i
+    ],
+    [MODEL, [VENDOR, "Nothing"], [TYPE, MOBILE]],
+    [
+      // MIXED
+      /(blackberry|benq|palm(?=\-)|sonyericsson|acer|asus|dell|meizu|motorola|polytron|infinix|tecno|micromax|advan)[-_ ]?([-\w]*)/i,
+      // BlackBerry/BenQ/Palm/Sony-Ericsson/Acer/Asus/Dell/Meizu/Motorola/Polytron/Infinix/Tecno/Micromax/Advan
+      /; (imo) ((?!tab)[\w ]+?)(?: bui|\))/i,
+      // IMO
+      /(hp) ([\w ]+\w)/i,
+      // HP iPAQ
+      /(asus)-?(\w+)/i,
+      // Asus
+      /(microsoft); (lumia[\w ]+)/i,
+      // Microsoft Lumia
+      /(lenovo)[-_ ]?([-\w]+)/i,
+      // Lenovo
+      /(jolla)/i,
+      // Jolla
+      /(oppo) ?([\w ]+) bui/i
+      // OPPO
+    ],
+    [VENDOR, MODEL, [TYPE, MOBILE]],
+    [
+      /(imo) (tab \w+)/i,
+      // IMO
+      /(kobo)\s(ereader|touch)/i,
+      // Kobo
+      /(archos) (gamepad2?)/i,
+      // Archos
+      /(hp).+(touchpad(?!.+tablet)|tablet)/i,
+      // HP TouchPad
+      /(kindle)\/([\w\.]+)/i
+      // Kindle
+    ],
+    [VENDOR, MODEL, [TYPE, TABLET]],
+    [
+      /(surface duo)/i
+      // Surface Duo
+    ],
+    [MODEL, [VENDOR, MICROSOFT], [TYPE, TABLET]],
+    [
+      /droid [\d\.]+; (fp\du?)(?: b|\))/i
+      // Fairphone
+    ],
+    [MODEL, [VENDOR, "Fairphone"], [TYPE, MOBILE]],
+    [
+      /(shield[\w ]+) b/i
+      // Nvidia Shield Tablets
+    ],
+    [MODEL, [VENDOR, "Nvidia"], [TYPE, TABLET]],
+    [
+      /(sprint) (\w+)/i
+      // Sprint Phones
+    ],
+    [VENDOR, MODEL, [TYPE, MOBILE]],
+    [
+      /(kin\.[onetw]{3})/i
+      // Microsoft Kin
+    ],
+    [[MODEL, /\./g, " "], [VENDOR, MICROSOFT], [TYPE, MOBILE]],
+    [
+      /droid.+; ([c6]+|et5[16]|mc[239][23]x?|vc8[03]x?)\)/i
+      // Zebra
+    ],
+    [MODEL, [VENDOR, ZEBRA], [TYPE, TABLET]],
+    [
+      /droid.+; (ec30|ps20|tc[2-8]\d[kx])\)/i
+    ],
+    [MODEL, [VENDOR, ZEBRA], [TYPE, MOBILE]],
+    [
+      ///////////////////
+      // SMARTTVS
+      ///////////////////
+      /smart-tv.+(samsung)/i
+      // Samsung
+    ],
+    [VENDOR, [TYPE, SMARTTV]],
+    [
+      /hbbtv.+maple;(\d+)/i
+    ],
+    [[MODEL, /^/, "SmartTV"], [VENDOR, SAMSUNG], [TYPE, SMARTTV]],
+    [
+      /(nux; netcast.+smarttv|lg (netcast\.tv-201\d|android tv))/i
+      // LG SmartTV
+    ],
+    [[VENDOR, LG], [TYPE, SMARTTV]],
+    [
+      /(apple) ?tv/i
+      // Apple TV
+    ],
+    [VENDOR, [MODEL, APPLE + " TV"], [TYPE, SMARTTV]],
+    [
+      /crkey.*devicetype\/chromecast/i
+      // Google Chromecast Third Generation
+    ],
+    [[MODEL, CHROMECAST + " Third Generation"], [VENDOR, GOOGLE], [TYPE, SMARTTV]],
+    [
+      /crkey.*devicetype\/([^/]*)/i
+      // Google Chromecast with specific device type
+    ],
+    [[MODEL, /^/, "Chromecast "], [VENDOR, GOOGLE], [TYPE, SMARTTV]],
+    [
+      /fuchsia.*crkey/i
+      // Google Chromecast Nest Hub
+    ],
+    [[MODEL, CHROMECAST + " Nest Hub"], [VENDOR, GOOGLE], [TYPE, SMARTTV]],
+    [
+      /crkey/i
+      // Google Chromecast, Linux-based or unknown
+    ],
+    [[MODEL, CHROMECAST], [VENDOR, GOOGLE], [TYPE, SMARTTV]],
+    [
+      /droid.+aft(\w+)( bui|\))/i
+      // Fire TV
+    ],
+    [MODEL, [VENDOR, AMAZON], [TYPE, SMARTTV]],
+    [
+      /\(dtv[\);].+(aquos)/i,
+      /(aquos-tv[\w ]+)\)/i
+      // Sharp
+    ],
+    [MODEL, [VENDOR, SHARP], [TYPE, SMARTTV]],
+    [
+      /(bravia[\w ]+)( bui|\))/i
+      // Sony
+    ],
+    [MODEL, [VENDOR, SONY], [TYPE, SMARTTV]],
+    [
+      /(mitv-\w{5}) bui/i
+      // Xiaomi
+    ],
+    [MODEL, [VENDOR, XIAOMI], [TYPE, SMARTTV]],
+    [
+      /Hbbtv.*(technisat) (.*);/i
+      // TechniSAT
+    ],
+    [VENDOR, MODEL, [TYPE, SMARTTV]],
+    [
+      /\b(roku)[\dx]*[\)\/]((?:dvp-)?[\d\.]*)/i,
+      // Roku
+      /hbbtv\/\d+\.\d+\.\d+ +\([\w\+ ]*; *([\w\d][^;]*);([^;]*)/i
+      // HbbTV devices
+    ],
+    [[VENDOR, trim], [MODEL, trim], [TYPE, SMARTTV]],
+    [
+      /\b(android tv|smart[- ]?tv|opera tv|tv; rv:)\b/i
+      // SmartTV from Unidentified Vendors
+    ],
+    [[TYPE, SMARTTV]],
+    [
+      ///////////////////
+      // CONSOLES
+      ///////////////////
+      /(ouya)/i,
+      // Ouya
+      /(nintendo) (\w+)/i
+      // Nintendo
+    ],
+    [VENDOR, MODEL, [TYPE, CONSOLE]],
+    [
+      /droid.+; (shield) bui/i
+      // Nvidia
+    ],
+    [MODEL, [VENDOR, "Nvidia"], [TYPE, CONSOLE]],
+    [
+      /(playstation \w+)/i
+      // Playstation
+    ],
+    [MODEL, [VENDOR, SONY], [TYPE, CONSOLE]],
+    [
+      /\b(xbox(?: one)?(?!; xbox))[\); ]/i
+      // Microsoft Xbox
+    ],
+    [MODEL, [VENDOR, MICROSOFT], [TYPE, CONSOLE]],
+    [
+      ///////////////////
+      // WEARABLES
+      ///////////////////
+      /\b(sm-[lr]\d\d[05][fnuw]?s?)\b/i
+      // Samsung Galaxy Watch
+    ],
+    [MODEL, [VENDOR, SAMSUNG], [TYPE, WEARABLE]],
+    [
+      /((pebble))app/i
+      // Pebble
+    ],
+    [VENDOR, MODEL, [TYPE, WEARABLE]],
+    [
+      /(watch)(?: ?os[,\/]|\d,\d\/)[\d\.]+/i
+      // Apple Watch
+    ],
+    [MODEL, [VENDOR, APPLE], [TYPE, WEARABLE]],
+    [
+      /droid.+; (wt63?0{2,3})\)/i
+    ],
+    [MODEL, [VENDOR, ZEBRA], [TYPE, WEARABLE]],
+    [
+      ///////////////////
+      // XR
+      ///////////////////
+      /droid.+; (glass) \d/i
+      // Google Glass
+    ],
+    [MODEL, [VENDOR, GOOGLE], [TYPE, XR]],
+    [
+      /(pico) (4|neo3(?: link|pro)?)/i
+      // Pico
+    ],
+    [VENDOR, MODEL, [TYPE, XR]],
+    [
+      /; (quest( \d| pro)?)/i
+      // Oculus Quest
+    ],
+    [MODEL, [VENDOR, FACEBOOK], [TYPE, XR]],
+    [
+      ///////////////////
+      // EMBEDDED
+      ///////////////////
+      /(tesla)(?: qtcarbrowser|\/[-\w\.]+)/i
+      // Tesla
+    ],
+    [VENDOR, [TYPE, EMBEDDED]],
+    [
+      /(aeobc)\b/i
+      // Echo Dot
+    ],
+    [MODEL, [VENDOR, AMAZON], [TYPE, EMBEDDED]],
+    [
+      ////////////////////
+      // MIXED (GENERIC)
+      ///////////////////
+      /droid .+?; ([^;]+?)(?: bui|; wv\)|\) applew).+? mobile safari/i
+      // Android Phones from Unidentified Vendors
+    ],
+    [MODEL, [TYPE, MOBILE]],
+    [
+      /droid .+?; ([^;]+?)(?: bui|\) applew).+?(?! mobile) safari/i
+      // Android Tablets from Unidentified Vendors
+    ],
+    [MODEL, [TYPE, TABLET]],
+    [
+      /\b((tablet|tab)[;\/]|focus\/\d(?!.+mobile))/i
+      // Unidentifiable Tablet
+    ],
+    [[TYPE, TABLET]],
+    [
+      /(phone|mobile(?:[;\/]| [ \w\/\.]*safari)|pda(?=.+windows ce))/i
+      // Unidentifiable Mobile
+    ],
+    [[TYPE, MOBILE]],
+    [
+      /(android[-\w\. ]{0,9});.+buil/i
+      // Generic Android Device
+    ],
+    [MODEL, [VENDOR, "Generic"]]
+  ],
+  engine: [
+    [
+      /windows.+ edge\/([\w\.]+)/i
+      // EdgeHTML
+    ],
+    [VERSION, [NAME, EDGE + "HTML"]],
+    [
+      /(arkweb)\/([\w\.]+)/i
+      // ArkWeb
+    ],
+    [NAME, VERSION],
+    [
+      /webkit\/537\.36.+chrome\/(?!27)([\w\.]+)/i
+      // Blink
+    ],
+    [VERSION, [NAME, "Blink"]],
+    [
+      /(presto)\/([\w\.]+)/i,
+      // Presto
+      /(webkit|trident|netfront|netsurf|amaya|lynx|w3m|goanna|servo)\/([\w\.]+)/i,
+      // WebKit/Trident/NetFront/NetSurf/Amaya/Lynx/w3m/Goanna/Servo
+      /ekioh(flow)\/([\w\.]+)/i,
+      // Flow
+      /(khtml|tasman|links)[\/ ]\(?([\w\.]+)/i,
+      // KHTML/Tasman/Links
+      /(icab)[\/ ]([23]\.[\d\.]+)/i,
+      // iCab
+      /\b(libweb)/i
+    ],
+    [NAME, VERSION],
+    [
+      /rv\:([\w\.]{1,9})\b.+(gecko)/i
+      // Gecko
+    ],
+    [VERSION, NAME]
+  ],
+  os: [
+    [
+      // Windows
+      /microsoft (windows) (vista|xp)/i
+      // Windows (iTunes)
+    ],
+    [NAME, VERSION],
+    [
+      /(windows (?:phone(?: os)?|mobile))[\/ ]?([\d\.\w ]*)/i
+      // Windows Phone
+    ],
+    [NAME, [VERSION, strMapper, windowsVersionMap]],
+    [
+      /windows nt 6\.2; (arm)/i,
+      // Windows RT
+      /windows[\/ ]?([ntce\d\. ]+\w)(?!.+xbox)/i,
+      /(?:win(?=3|9|n)|win 9x )([nt\d\.]+)/i
+    ],
+    [[VERSION, strMapper, windowsVersionMap], [NAME, WINDOWS]],
+    [
+      // iOS/macOS
+      /ip[honead]{2,4}\b(?:.*os ([\w]+) like mac|; opera)/i,
+      // iOS
+      /(?:ios;fbsv\/|iphone.+ios[\/ ])([\d\.]+)/i,
+      /cfnetwork\/.+darwin/i
+    ],
+    [[VERSION, /_/g, "."], [NAME, "iOS"]],
+    [
+      /(mac os x) ?([\w\. ]*)/i,
+      /(macintosh|mac_powerpc\b)(?!.+haiku)/i
+      // Mac OS
+    ],
+    [[NAME, "macOS"], [VERSION, /_/g, "."]],
+    [
+      // Google Chromecast
+      /android ([\d\.]+).*crkey/i
+      // Google Chromecast, Android-based
+    ],
+    [VERSION, [NAME, CHROMECAST + " Android"]],
+    [
+      /fuchsia.*crkey\/([\d\.]+)/i
+      // Google Chromecast, Fuchsia-based
+    ],
+    [VERSION, [NAME, CHROMECAST + " Fuchsia"]],
+    [
+      /crkey\/([\d\.]+).*devicetype\/smartspeaker/i
+      // Google Chromecast, Linux-based Smart Speaker
+    ],
+    [VERSION, [NAME, CHROMECAST + " SmartSpeaker"]],
+    [
+      /linux.*crkey\/([\d\.]+)/i
+      // Google Chromecast, Legacy Linux-based
+    ],
+    [VERSION, [NAME, CHROMECAST + " Linux"]],
+    [
+      /crkey\/([\d\.]+)/i
+      // Google Chromecast, unknown
+    ],
+    [VERSION, [NAME, CHROMECAST]],
+    [
+      // Mobile OSes
+      /droid ([\w\.]+)\b.+(android[- ]x86|harmonyos)/i
+      // Android-x86/HarmonyOS
+    ],
+    [VERSION, NAME],
+    [
+      // Android/WebOS/QNX/Bada/RIM/Maemo/MeeGo/Sailfish OS/OpenHarmony
+      /(android|webos|qnx|bada|rim tablet os|maemo|meego|sailfish|openharmony)[-\/ ]?([\w\.]*)/i,
+      /(blackberry)\w*\/([\w\.]*)/i,
+      // Blackberry
+      /(tizen|kaios)[\/ ]([\w\.]+)/i,
+      // Tizen/KaiOS
+      /\((series40);/i
+      // Series 40
+    ],
+    [NAME, VERSION],
+    [
+      /\(bb(10);/i
+      // BlackBerry 10
+    ],
+    [VERSION, [NAME, BLACKBERRY]],
+    [
+      /(?:symbian ?os|symbos|s60(?=;)|series60)[-\/ ]?([\w\.]*)/i
+      // Symbian
+    ],
+    [VERSION, [NAME, "Symbian"]],
+    [
+      /mozilla\/[\d\.]+ \((?:mobile|tablet|tv|mobile; [\w ]+); rv:.+ gecko\/([\w\.]+)/i
+      // Firefox OS
+    ],
+    [VERSION, [NAME, FIREFOX + " OS"]],
+    [
+      /web0s;.+rt(tv)/i,
+      /\b(?:hp)?wos(?:browser)?\/([\w\.]+)/i
+      // WebOS
+    ],
+    [VERSION, [NAME, "webOS"]],
+    [
+      /watch(?: ?os[,\/]|\d,\d\/)([\d\.]+)/i
+      // watchOS
+    ],
+    [VERSION, [NAME, "watchOS"]],
+    [
+      // Google ChromeOS
+      /(cros) [\w]+(?:\)| ([\w\.]+)\b)/i
+      // Chromium OS
+    ],
+    [[NAME, "Chrome OS"], VERSION],
+    [
+      // Smart TVs
+      /panasonic;(viera)/i,
+      // Panasonic Viera
+      /(netrange)mmh/i,
+      // Netrange
+      /(nettv)\/(\d+\.[\w\.]+)/i,
+      // NetTV
+      // Console
+      /(nintendo|playstation) (\w+)/i,
+      // Nintendo/Playstation
+      /(xbox); +xbox ([^\);]+)/i,
+      // Microsoft Xbox (360, One, X, S, Series X, Series S)
+      /(pico) .+os([\w\.]+)/i,
+      // Pico
+      // Other
+      /\b(joli|palm)\b ?(?:os)?\/?([\w\.]*)/i,
+      // Joli/Palm
+      /(mint)[\/\(\) ]?(\w*)/i,
+      // Mint
+      /(mageia|vectorlinux)[; ]/i,
+      // Mageia/VectorLinux
+      /([kxln]?ubuntu|debian|suse|opensuse|gentoo|arch(?= linux)|slackware|fedora|mandriva|centos|pclinuxos|red ?hat|zenwalk|linpus|raspbian|plan 9|minix|risc os|contiki|deepin|manjaro|elementary os|sabayon|linspire)(?: gnu\/linux)?(?: enterprise)?(?:[- ]linux)?(?:-gnu)?[-\/ ]?(?!chrom|package)([-\w\.]*)/i,
+      // Ubuntu/Debian/SUSE/Gentoo/Arch/Slackware/Fedora/Mandriva/CentOS/PCLinuxOS/RedHat/Zenwalk/Linpus/Raspbian/Plan9/Minix/RISCOS/Contiki/Deepin/Manjaro/elementary/Sabayon/Linspire
+      /(hurd|linux) ?([\w\.]*)/i,
+      // Hurd/Linux
+      /(gnu) ?([\w\.]*)/i,
+      // GNU
+      /\b([-frentopcghs]{0,5}bsd|dragonfly)[\/ ]?(?!amd|[ix346]{1,2}86)([\w\.]*)/i,
+      // FreeBSD/NetBSD/OpenBSD/PC-BSD/GhostBSD/DragonFly
+      /(haiku) (\w+)/i
+      // Haiku
+    ],
+    [NAME, VERSION],
+    [
+      /(sunos) ?([\w\.\d]*)/i
+      // Solaris
+    ],
+    [[NAME, "Solaris"], VERSION],
+    [
+      /((?:open)?solaris)[-\/ ]?([\w\.]*)/i,
+      // Solaris
+      /(aix) ((\d)(?=\.|\)| )[\w\.])*/i,
+      // AIX
+      /\b(beos|os\/2|amigaos|morphos|openvms|fuchsia|hp-ux|serenityos)/i,
+      // BeOS/OS2/AmigaOS/MorphOS/OpenVMS/Fuchsia/HP-UX/SerenityOS
+      /(unix) ?([\w\.]*)/i
+      // UNIX
+    ],
+    [NAME, VERSION]
+  ]
+};
+var defaultProps = function() {
+  var props = { init: {}, isIgnore: {}, isIgnoreRgx: {}, toString: {} };
+  setProps.call(props.init, [
+    [UA_BROWSER, [NAME, VERSION, MAJOR, TYPE]],
+    [UA_CPU, [ARCHITECTURE]],
+    [UA_DEVICE, [TYPE, MODEL, VENDOR]],
+    [UA_ENGINE, [NAME, VERSION]],
+    [UA_OS, [NAME, VERSION]]
+  ]);
+  setProps.call(props.isIgnore, [
+    [UA_BROWSER, [VERSION, MAJOR]],
+    [UA_ENGINE, [VERSION]],
+    [UA_OS, [VERSION]]
+  ]);
+  setProps.call(props.isIgnoreRgx, [
+    [UA_BROWSER, / ?browser$/i],
+    [UA_OS, / ?os$/i]
+  ]);
+  setProps.call(props.toString, [
+    [UA_BROWSER, [NAME, VERSION]],
+    [UA_CPU, [ARCHITECTURE]],
+    [UA_DEVICE, [VENDOR, MODEL]],
+    [UA_ENGINE, [NAME, VERSION]],
+    [UA_OS, [NAME, VERSION]]
+  ]);
+  return props;
+}();
+var createIData = function(item, itemType) {
+  var init_props = defaultProps.init[itemType], is_ignoreProps = defaultProps.isIgnore[itemType] || 0, is_ignoreRgx = defaultProps.isIgnoreRgx[itemType] || 0, toString_props = defaultProps.toString[itemType] || 0;
+  function IData() {
+    setProps.call(this, init_props);
+  }
+  IData.prototype.getItem = function() {
+    return item;
+  };
+  IData.prototype.withClientHints = function() {
+    if (!NAVIGATOR_UADATA) {
+      return item.parseCH().get();
+    }
+    return NAVIGATOR_UADATA.getHighEntropyValues(CH_ALL_VALUES).then(function(res) {
+      return item.setCH(new UACHData(res, false)).parseCH().get();
+    });
+  };
+  IData.prototype.withFeatureCheck = function() {
+    return item.detectFeature().get();
+  };
+  if (itemType != UA_RESULT) {
+    IData.prototype.is = function(strToCheck) {
+      var is = false;
+      for (var i in this) {
+        if (this.hasOwnProperty(i) && !has(is_ignoreProps, i) && lowerize(is_ignoreRgx ? strip(is_ignoreRgx, this[i]) : this[i]) == lowerize(is_ignoreRgx ? strip(is_ignoreRgx, strToCheck) : strToCheck)) {
+          is = true;
+          if (strToCheck != UNDEF_TYPE) break;
+        } else if (strToCheck == UNDEF_TYPE && is) {
+          is = !is;
+          break;
+        }
+      }
+      return is;
+    };
+    IData.prototype.toString = function() {
+      var str = EMPTY;
+      for (var i in toString_props) {
+        if (typeof this[toString_props[i]] !== UNDEF_TYPE) {
+          str += (str ? " " : EMPTY) + this[toString_props[i]];
+        }
+      }
+      return str || UNDEF_TYPE;
+    };
+  }
+  if (!NAVIGATOR_UADATA) {
+    IData.prototype.then = function(cb) {
+      var that = this;
+      var IDataResolve = function() {
+        for (var prop in that) {
+          if (that.hasOwnProperty(prop)) {
+            this[prop] = that[prop];
+          }
+        }
+      };
+      IDataResolve.prototype = {
+        is: IData.prototype.is,
+        toString: IData.prototype.toString
+      };
+      var resolveData = new IDataResolve();
+      cb(resolveData);
+      return resolveData;
+    };
+  }
+  return new IData();
+};
+function UACHData(uach, isHttpUACH) {
+  uach = uach || {};
+  setProps.call(this, CH_ALL_VALUES);
+  if (isHttpUACH) {
+    setProps.call(this, [
+      [BRANDS, itemListToArray(uach[CH_HEADER])],
+      [FULLVERLIST, itemListToArray(uach[CH_HEADER_FULL_VER_LIST])],
+      [MOBILE, /\?1/.test(uach[CH_HEADER_MOBILE])],
+      [MODEL, stripQuotes(uach[CH_HEADER_MODEL])],
+      [PLATFORM, stripQuotes(uach[CH_HEADER_PLATFORM])],
+      [PLATFORMVER, stripQuotes(uach[CH_HEADER_PLATFORM_VER])],
+      [ARCHITECTURE, stripQuotes(uach[CH_HEADER_ARCH])],
+      [FORMFACTORS, itemListToArray(uach[CH_HEADER_FORM_FACTORS])],
+      [BITNESS, stripQuotes(uach[CH_HEADER_BITNESS])]
+    ]);
+  } else {
+    for (var prop in uach) {
+      if (this.hasOwnProperty(prop) && typeof uach[prop] !== UNDEF_TYPE) this[prop] = uach[prop];
+    }
+  }
+}
+function UAItem(itemType, ua, rgxMap, uaCH) {
+  this.get = function(prop) {
+    if (!prop) return this.data;
+    return this.data.hasOwnProperty(prop) ? this.data[prop] : void 0;
+  };
+  this.set = function(prop, val) {
+    this.data[prop] = val;
+    return this;
+  };
+  this.setCH = function(ch) {
+    this.uaCH = ch;
+    return this;
+  };
+  this.detectFeature = function() {
+    if (NAVIGATOR && NAVIGATOR.userAgent == this.ua) {
+      switch (this.itemType) {
+        case UA_BROWSER:
+          if (NAVIGATOR.brave && typeof NAVIGATOR.brave.isBrave == FUNC_TYPE) {
+            this.set(NAME, "Brave");
+          }
+          break;
+        case UA_DEVICE:
+          if (!this.get(TYPE) && NAVIGATOR_UADATA && NAVIGATOR_UADATA[MOBILE]) {
+            this.set(TYPE, MOBILE);
+          }
+          if (this.get(MODEL) == "Macintosh" && NAVIGATOR && typeof NAVIGATOR.standalone !== UNDEF_TYPE && NAVIGATOR.maxTouchPoints && NAVIGATOR.maxTouchPoints > 2) {
+            this.set(MODEL, "iPad").set(TYPE, TABLET);
+          }
+          break;
+        case UA_OS:
+          if (!this.get(NAME) && NAVIGATOR_UADATA && NAVIGATOR_UADATA[PLATFORM]) {
+            this.set(NAME, NAVIGATOR_UADATA[PLATFORM]);
+          }
+          break;
+        case UA_RESULT:
+          var data = this.data;
+          var detect = function(itemType2) {
+            return data[itemType2].getItem().detectFeature().get();
+          };
+          this.set(UA_BROWSER, detect(UA_BROWSER)).set(UA_CPU, detect(UA_CPU)).set(UA_DEVICE, detect(UA_DEVICE)).set(UA_ENGINE, detect(UA_ENGINE)).set(UA_OS, detect(UA_OS));
+      }
+    }
+    return this;
+  };
+  this.parseUA = function() {
+    if (this.itemType != UA_RESULT) {
+      rgxMapper.call(this.data, this.ua, this.rgxMap);
+    }
+    if (this.itemType == UA_BROWSER) {
+      this.set(MAJOR, majorize(this.get(VERSION)));
+    }
+    return this;
+  };
+  this.parseCH = function() {
+    var uaCH2 = this.uaCH, rgxMap2 = this.rgxMap;
+    switch (this.itemType) {
+      case UA_BROWSER:
+        var brands = uaCH2[FULLVERLIST] || uaCH2[BRANDS], prevName;
+        if (brands) {
+          for (var i in brands) {
+            var brandName = strip(/(Google|Microsoft) /, brands[i].brand || brands[i]), brandVersion = brands[i].version;
+            if (!/not.a.brand/i.test(brandName) && (!prevName || /chrom/i.test(prevName) && !/chromi/i.test(brandName))) {
+              this.set(NAME, brandName).set(VERSION, brandVersion).set(MAJOR, majorize(brandVersion));
+              prevName = brandName;
+            }
+          }
+        }
+        break;
+      case UA_CPU:
+        var archName = uaCH2[ARCHITECTURE];
+        if (archName) {
+          if (archName && uaCH2[BITNESS] == "64") archName += "64";
+          rgxMapper.call(this.data, archName + ";", rgxMap2);
+        }
+        break;
+      case UA_DEVICE:
+        if (uaCH2[MOBILE]) {
+          this.set(TYPE, MOBILE);
+        }
+        if (uaCH2[MODEL]) {
+          this.set(MODEL, uaCH2[MODEL]);
+        }
+        if (uaCH2[MODEL] == "Xbox") {
+          this.set(TYPE, CONSOLE).set(VENDOR, MICROSOFT);
+        }
+        if (uaCH2[FORMFACTORS]) {
+          var ff;
+          if (typeof uaCH2[FORMFACTORS] !== "string") {
+            var idx = 0;
+            while (!ff && idx < uaCH2[FORMFACTORS].length) {
+              ff = strMapper(uaCH2[FORMFACTORS][idx++], formFactorsMap);
+            }
+          } else {
+            ff = strMapper(uaCH2[FORMFACTORS], formFactorsMap);
+          }
+          this.set(TYPE, ff);
+        }
+        break;
+      case UA_OS:
+        var osName = uaCH2[PLATFORM];
+        if (osName) {
+          var osVersion = uaCH2[PLATFORMVER];
+          if (osName == WINDOWS) osVersion = parseInt(majorize(osVersion), 10) >= 13 ? "11" : "10";
+          this.set(NAME, osName).set(VERSION, osVersion);
+        }
+        if (this.get(NAME) == WINDOWS && uaCH2[MODEL] == "Xbox") {
+          this.set(NAME, "Xbox").set(VERSION, void 0);
+        }
+        break;
+      case UA_RESULT:
+        var data = this.data;
+        var parse2 = function(itemType2) {
+          return data[itemType2].getItem().setCH(uaCH2).parseCH().get();
+        };
+        this.set(UA_BROWSER, parse2(UA_BROWSER)).set(UA_CPU, parse2(UA_CPU)).set(UA_DEVICE, parse2(UA_DEVICE)).set(UA_ENGINE, parse2(UA_ENGINE)).set(UA_OS, parse2(UA_OS));
+    }
+    return this;
+  };
+  setProps.call(this, [
+    ["itemType", itemType],
+    ["ua", ua],
+    ["uaCH", uaCH],
+    ["rgxMap", rgxMap],
+    ["data", createIData(this, itemType)]
+  ]);
+  return this;
+}
+function UAParser(ua, extensions, headers) {
+  if (typeof ua === OBJ_TYPE) {
+    if (isExtensions(ua, true)) {
+      if (typeof extensions === OBJ_TYPE) {
+        headers = extensions;
+      }
+      extensions = ua;
+    } else {
+      headers = ua;
+      extensions = void 0;
+    }
+    ua = void 0;
+  } else if (typeof ua === STR_TYPE && !isExtensions(extensions, true)) {
+    headers = extensions;
+    extensions = void 0;
+  }
+  if (headers && typeof headers.append === FUNC_TYPE) {
+    var kv = {};
+    headers.forEach(function(v, k) {
+      kv[k] = v;
+    });
+    headers = kv;
+  }
+  if (!(this instanceof UAParser)) {
+    return new UAParser(ua, extensions, headers).getResult();
+  }
+  var userAgent = typeof ua === STR_TYPE ? ua : (
+    // Passed user-agent string
+    headers && headers[USER_AGENT] ? headers[USER_AGENT] : (
+      // User-Agent from passed headers
+      NAVIGATOR && NAVIGATOR.userAgent ? NAVIGATOR.userAgent : (
+        // navigator.userAgent
+        EMPTY
+      )
+    )
+  ), httpUACH = new UACHData(headers, true), regexMap = extensions ? extend(defaultRegexes, extensions) : defaultRegexes, createItemFunc = function(itemType) {
+    if (itemType == UA_RESULT) {
+      return function() {
+        return new UAItem(itemType, userAgent, regexMap, httpUACH).set("ua", userAgent).set(UA_BROWSER, this.getBrowser()).set(UA_CPU, this.getCPU()).set(UA_DEVICE, this.getDevice()).set(UA_ENGINE, this.getEngine()).set(UA_OS, this.getOS()).get();
+      };
+    } else {
+      return function() {
+        return new UAItem(itemType, userAgent, regexMap[itemType], httpUACH).parseUA().get();
+      };
+    }
+  };
+  setProps.call(this, [
+    ["getBrowser", createItemFunc(UA_BROWSER)],
+    ["getCPU", createItemFunc(UA_CPU)],
+    ["getDevice", createItemFunc(UA_DEVICE)],
+    ["getEngine", createItemFunc(UA_ENGINE)],
+    ["getOS", createItemFunc(UA_OS)],
+    ["getResult", createItemFunc(UA_RESULT)],
+    ["getUA", function() {
+      return userAgent;
+    }],
+    ["setUA", function(ua2) {
+      if (isString(ua2))
+        userAgent = ua2.length > UA_MAX_LENGTH ? trim(ua2, UA_MAX_LENGTH) : ua2;
+      return this;
+    }]
+  ]).setUA(userAgent);
+  return this;
+}
+UAParser.VERSION = LIBVERSION;
+UAParser.BROWSER = enumerize([NAME, VERSION, MAJOR, TYPE]);
+UAParser.CPU = enumerize([ARCHITECTURE]);
+UAParser.DEVICE = enumerize([MODEL, VENDOR, TYPE, CONSOLE, MOBILE, SMARTTV, TABLET, WEARABLE, EMBEDDED]);
+UAParser.ENGINE = UAParser.OS = enumerize([NAME, VERSION]);
+const parser = UAParser();
+consoleLog("device", parser.device, "istouch?", isTouchDevice());
+function isTouchDevice() {
+  const w = getWindow();
+  const n = getNavigator();
+  if (parser.device.type) {
+    return true;
+  }
+  const hasTouch = w && "ontouchstart" in w || ((n == null ? void 0 : n.maxTouchPoints) ?? 0) > 0;
+  if (parser.device.vendor === "Apple" && hasTouch) {
+    return true;
+  }
+  return false;
+}
+const defaultHelpTooltipStyle = {
+  backgroundColor: "transparent",
+  padding: 0,
+  maxWidth: 540,
+  fontSize: 14
+};
+const HelpTooltipStyled = styled$2(({ className, ...props }) => /* @__PURE__ */ jsxRuntimeExports.jsx(Tooltip, { ...props, classes: { popper: className } }))(() => ({
+  [`& .${tooltipClasses.tooltip}`]: defaultHelpTooltipStyle
+}));
+function HelpTooltip(props) {
+  const { title, children } = props;
+  if (!title) {
+    return children;
+  }
+  const content = /* @__PURE__ */ jsxRuntimeExports.jsx(PaperFrame, { children: title });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    HelpTooltipStyled,
+    {
+      slots: { transition: Fade },
+      disableInteractive: true,
+      ...props,
+      title: content,
+      children
+    }
+  );
+}
+function objectTypeViewLabel(translation, objectTypeName, viewName, isDefaultView) {
+  const otDef = getObjectTypeDefinitionByName(objectTypeName);
+  if (!otDef) {
+    return `${objectTypeName}|${viewName}`;
+  }
+  const { singular } = otDef.capitalized;
+  const actionKey = isDefaultView === true ? `entity.views.${viewName}.label` : `models.${singular}.views.${viewName}.label`;
+  return translation(actionKey);
+}
+function ObjectTypeViewLabel(props) {
+  const { objectTypeName, viewName, isDefaultView } = props;
+  const translation = useTranslation();
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: objectTypeViewLabel(translation, objectTypeName, viewName, isDefaultView) });
+}
+const OccupancyStatusViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const UserViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const CompanyTypeViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const CompanyViews = {
+  "indexes": {
+    "cards": {
+      "name": "cards"
+    },
+    "people-info": {
+      "name": "people-info"
+    },
+    "usage": {
+      "name": "usage"
+    },
+    "dataquality-index": {
+      "name": "dataquality-index"
+    },
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "dashboard": {
+      "name": "dashboard",
+      "isDefaultView": true
+    },
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {
+    "dq-fix-inventory": {
+      "name": "dq-fix-inventory"
+    },
+    "dq-shapes-position": {
+      "name": "dq-shapes-position"
+    }
+  }
+};
+const CampusViews = {
+  "indexes": {
+    "cards": {
+      "name": "cards"
+    },
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const RoomConnectorTypeViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const RoomConnectorViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const UserCompanyViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const PersonGenderViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const PersonCompanyViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const JupUiLayoutViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const BuildingTypeViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const OrganizationViews = {
+  "indexes": {
+    "hierarchy": {
+      "name": "hierarchy"
+    },
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {
+    "dq-organization-to-room": {
+      "name": "dq-organization-to-room"
+    },
+    "dq-organization-hierarchy": {
+      "name": "dq-organization-hierarchy"
+    }
+  }
+};
+const ItemTypeFamilyViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const ManufacturerViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const Object3dModelViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const ItemTypeViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "shape-editor": {
+      "name": "shape-editor"
+    },
+    "avatar": {
+      "name": "avatar"
+    },
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {
+    "dq-not-used": {
+      "name": "dq-not-used"
+    }
+  }
+};
+const BuildingViews = {
+  "indexes": {
+    "cards": {
+      "name": "cards"
+    },
+    "pictures": {
+      "name": "pictures"
+    },
+    "3d-cards": {
+      "name": "3d-cards"
+    },
+    "gmap": {
+      "name": "gmap"
+    },
+    "assets": {
+      "name": "assets"
+    },
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "cuby": {
+      "name": "cuby"
+    },
+    "dashboard": {
+      "name": "dashboard",
+      "isDefaultView": true
+    },
+    "inventory": {
+      "name": "inventory"
+    },
+    "cost-distribution-by-cost-center": {
+      "name": "cost-distribution-by-cost-center"
+    },
+    "clone": {
+      "name": "clone"
+    },
+    "building-3d-gmap": {
+      "name": "building-3d-gmap"
+    },
+    "building-ifc": {
+      "name": "building-ifc"
+    },
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const MapScaleViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {
+    "dq-not-used": {
+      "name": "dq-not-used"
+    },
+    "dq-uniq-name": {
+      "name": "dq-uniq-name"
+    }
+  }
+};
+const StructureViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "editor": {
+      "name": "editor"
+    },
+    "gmap-calibrate": {
+      "name": "gmap-calibrate"
+    },
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const StructurePointViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const FloorViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "map": {
+      "name": "map"
+    },
+    "cuby": {
+      "name": "cuby"
+    },
+    "geojson": {
+      "name": "geojson"
+    },
+    "standalone-2d-map": {
+      "name": "standalone-2d-map",
+      "hidden": true,
+      "isStandalone": true
+    },
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const DistributionCostTypeViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const RoomTypeGroupViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const RoomTypeViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const RoomTypeGroupToRoomTypeViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const RoomTypeGroupFloorViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const RoomTypeGroupBuildingViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const CostCenterViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const CostCenterBuildingViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const CostCenterFloorViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const RoomViews = {
+  "indexes": {
+    "meeting-rooms": {
+      "name": "meeting-rooms"
+    },
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {
+    "dq-uniq-name": {
+      "name": "dq-uniq-name"
+    },
+    "dq-no-point": {
+      "name": "dq-no-point"
+    },
+    "dq-capacity-equals-seats-count": {
+      "name": "dq-capacity-equals-seats-count"
+    },
+    "dq-capacity-gt-0": {
+      "name": "dq-capacity-gt-0"
+    }
+  }
+};
+const RoomPointViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {
+    "dq-uniq-position": {
+      "name": "dq-uniq-position"
+    },
+    "dq-not-used": {
+      "name": "dq-not-used"
+    }
+  }
+};
+const RoomPointRoomViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const RoomPointSegmentTypeViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const RoomPointSegmentViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {
+    "dq-not-uniq": {
+      "name": "dq-not-uniq"
+    },
+    "dq-point-not-on-same-floor": {
+      "name": "dq-point-not-on-same-floor"
+    }
+  }
+};
+const ItemTypePointViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const DimensionTypeViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const DimensionViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const DimensionRoomViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {
+    "dq-wrong-dimension-type": {
+      "name": "dq-wrong-dimension-type"
+    }
+  }
+};
+const DimensionFloorViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const DimensionBuildingViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const FactTypeViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const FactViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const PersonStateViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const PersonSecurityProfileViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const PersonViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "home": {
+      "name": "home"
+    },
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {
+    "dq-only-associated-to-building": {
+      "name": "dq-only-associated-to-building"
+    },
+    "dq-near-end-date": {
+      "name": "dq-near-end-date"
+    },
+    "dq-no-affectations": {
+      "name": "dq-no-affectations"
+    },
+    "dq-person-duplicate": {
+      "name": "dq-person-duplicate"
+    },
+    "dq-not-affectable-end-date-expired": {
+      "name": "dq-not-affectable-end-date-expired"
+    }
+  }
+};
+const PersonToPersonTypeViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const PersonToPersonViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const RoomAffectationViews = {
+  "indexes": {
+    "room-mouvement-matrix-import": {
+      "name": "room-mouvement-matrix-import"
+    },
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const WorkplaceTypeViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "editor": {
+      "name": "editor"
+    },
+    "avatar": {
+      "name": "avatar"
+    },
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {
+    "dq-not-used": {
+      "name": "dq-not-used"
+    }
+  }
+};
+const WorkplaceTypeItemTypeViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const WorkplaceViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "assign-current-user": {
+      "name": "assign-current-user",
+      "isStandalone": true
+    },
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {
+    "dq-workplace-transit-with-affectations": {
+      "name": "dq-workplace-transit-with-affectations"
+    }
+  }
+};
+const ItemViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {
+    "dq-item-not-in-workplace-room": {
+      "name": "dq-item-not-in-workplace-room"
+    }
+  }
+};
+const WorkplaceAffectationViews = {
+  "indexes": {
+    "workplace-mouvement-matrix-import": {
+      "name": "workplace-mouvement-matrix-import"
+    },
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {
+    "dq-workplace-affectation-latest": {
+      "name": "dq-workplace-affectation-latest"
+    }
+  }
+};
+const OrganizationFloorViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const OrganizationBuildingViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const RoomTypeFloorViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const RoomTypeBuildingViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const ItemToPersonViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const PersonToBuildingViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const DimensionToPersonViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {
+    "dq-dimension-to-person-latest": {
+      "name": "dq-dimension-to-person-latest"
+    }
+  }
+};
+const DimensionTypeToBuildingViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const WorkingLocationViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const PersonWorkingLocationViews = {
+  "indexes": {
+    "my-planning": {
+      "name": "my-planning",
+      "isStandalone": false
+    },
+    "booking-maps": {
+      "name": "booking-maps"
+    },
+    "pwl-dimension": {
+      "name": "pwl-dimension"
+    },
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const PersonToWorkplaceBookingViews = {
+  "indexes": {
+    "dashboard-index": {
+      "name": "dashboard-index",
+      "isStandalone": false
+    },
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const PersonToRoomBookingViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const PersonToDimensionBookingViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const PersonCompanyMissionViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const PersonCompanyToItemTypeViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const PersonCompanyToRoomTypeViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const PersonCompanyToItemViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const LegendViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const OpenerPostMessageHostViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const CompanyWorkingLocationViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const JupObjectTypeViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const JupUiViewViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const JupRoleViews = {
+  "indexes": {
+    "help": {
+      "name": "help"
+    },
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "matrix": {
+      "name": "matrix"
+    },
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const JupUiOptionViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const JupUiOperationViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const ContentRoleViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const JupUserCompanyToJupRoleViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const JupRoleToJupUiViewViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const JupRoleToJupObjectTypeViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const JupRoleToJupUiOptionViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const JupRoleToJupUiOperationViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const ContentRoleToBuildingViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const ContentRoleToUserCompanyViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const ContentRoleToFloorViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const PartnerApiCredentialViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const ApiUserViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const ApiUserToJupRoleViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const ApiUserToContentRoleViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const JupUiTenantOperationViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const ContentRoleToJupUiTenantOperationViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const AuthentificationConnectionViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const UserRegistrationTenantRuleViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const UserRegistrationTenantRuleToJupRoleViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const UserRegistrationTenantRuleToContentRoleViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const PartnerExportMappingConfigurationViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const PartnerExportMappingViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const PartnerExportMappingToRoomTypeViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const PartnerExportMappingConfigurationToFloorViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const JupRoleToJupUiLayoutViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const ItemFactViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const FeatureFamilyViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const FeatureGroupViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const FeatureViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const ViewCoreSchema = {
+  occupancyStatus: OccupancyStatusViews,
+  user: UserViews,
+  companyType: CompanyTypeViews,
+  company: CompanyViews,
+  campus: CampusViews,
+  roomConnectorType: RoomConnectorTypeViews,
+  roomConnector: RoomConnectorViews,
+  userCompany: UserCompanyViews,
+  personGender: PersonGenderViews,
+  personCompany: PersonCompanyViews,
+  jupUiLayout: JupUiLayoutViews,
+  buildingType: BuildingTypeViews,
+  organization: OrganizationViews,
+  itemTypeFamily: ItemTypeFamilyViews,
+  manufacturer: ManufacturerViews,
+  object3dModel: Object3dModelViews,
+  itemType: ItemTypeViews,
+  building: BuildingViews,
+  mapScale: MapScaleViews,
+  structure: StructureViews,
+  structurePoint: StructurePointViews,
+  floor: FloorViews,
+  distributionCostType: DistributionCostTypeViews,
+  roomTypeGroup: RoomTypeGroupViews,
+  roomType: RoomTypeViews,
+  roomTypeGroupToRoomType: RoomTypeGroupToRoomTypeViews,
+  roomTypeGroupFloor: RoomTypeGroupFloorViews,
+  roomTypeGroupBuilding: RoomTypeGroupBuildingViews,
+  costCenter: CostCenterViews,
+  costCenterBuilding: CostCenterBuildingViews,
+  costCenterFloor: CostCenterFloorViews,
+  room: RoomViews,
+  roomPoint: RoomPointViews,
+  roomPointRoom: RoomPointRoomViews,
+  roomPointSegmentType: RoomPointSegmentTypeViews,
+  roomPointSegment: RoomPointSegmentViews,
+  itemTypePoint: ItemTypePointViews,
+  dimensionType: DimensionTypeViews,
+  dimension: DimensionViews,
+  dimensionRoom: DimensionRoomViews,
+  dimensionFloor: DimensionFloorViews,
+  dimensionBuilding: DimensionBuildingViews,
+  factType: FactTypeViews,
+  fact: FactViews,
+  personState: PersonStateViews,
+  personSecurityProfile: PersonSecurityProfileViews,
+  person: PersonViews,
+  personToPersonType: PersonToPersonTypeViews,
+  personToPerson: PersonToPersonViews,
+  roomAffectation: RoomAffectationViews,
+  workplaceType: WorkplaceTypeViews,
+  workplaceTypeItemType: WorkplaceTypeItemTypeViews,
+  workplace: WorkplaceViews,
+  item: ItemViews,
+  workplaceAffectation: WorkplaceAffectationViews,
+  organizationFloor: OrganizationFloorViews,
+  organizationBuilding: OrganizationBuildingViews,
+  roomTypeFloor: RoomTypeFloorViews,
+  roomTypeBuilding: RoomTypeBuildingViews,
+  itemToPerson: ItemToPersonViews,
+  personToBuilding: PersonToBuildingViews,
+  dimensionToPerson: DimensionToPersonViews,
+  dimensionTypeToBuilding: DimensionTypeToBuildingViews,
+  workingLocation: WorkingLocationViews,
+  personWorkingLocation: PersonWorkingLocationViews,
+  personToWorkplaceBooking: PersonToWorkplaceBookingViews,
+  personToRoomBooking: PersonToRoomBookingViews,
+  personToDimensionBooking: PersonToDimensionBookingViews,
+  personCompanyMission: PersonCompanyMissionViews,
+  personCompanyToItemType: PersonCompanyToItemTypeViews,
+  personCompanyToRoomType: PersonCompanyToRoomTypeViews,
+  personCompanyToItem: PersonCompanyToItemViews,
+  legend: LegendViews,
+  openerPostMessageHost: OpenerPostMessageHostViews,
+  companyWorkingLocation: CompanyWorkingLocationViews,
+  jupObjectType: JupObjectTypeViews,
+  jupUiView: JupUiViewViews,
+  jupRole: JupRoleViews,
+  jupUiOption: JupUiOptionViews,
+  jupUiOperation: JupUiOperationViews,
+  contentRole: ContentRoleViews,
+  jupUserCompanyToJupRole: JupUserCompanyToJupRoleViews,
+  jupRoleToJupUiView: JupRoleToJupUiViewViews,
+  jupRoleToJupObjectType: JupRoleToJupObjectTypeViews,
+  jupRoleToJupUiOption: JupRoleToJupUiOptionViews,
+  jupRoleToJupUiOperation: JupRoleToJupUiOperationViews,
+  contentRoleToBuilding: ContentRoleToBuildingViews,
+  contentRoleToUserCompany: ContentRoleToUserCompanyViews,
+  contentRoleToFloor: ContentRoleToFloorViews,
+  partnerApiCredential: PartnerApiCredentialViews,
+  apiUser: ApiUserViews,
+  apiUserToJupRole: ApiUserToJupRoleViews,
+  apiUserToContentRole: ApiUserToContentRoleViews,
+  jupUiTenantOperation: JupUiTenantOperationViews,
+  contentRoleToJupUiTenantOperation: ContentRoleToJupUiTenantOperationViews,
+  authentificationConnection: AuthentificationConnectionViews,
+  userRegistrationTenantRule: UserRegistrationTenantRuleViews,
+  userRegistrationTenantRuleToJupRole: UserRegistrationTenantRuleToJupRoleViews,
+  userRegistrationTenantRuleToContentRole: UserRegistrationTenantRuleToContentRoleViews,
+  partnerExportMappingConfiguration: PartnerExportMappingConfigurationViews,
+  partnerExportMapping: PartnerExportMappingViews,
+  partnerExportMappingToRoomType: PartnerExportMappingToRoomTypeViews,
+  partnerExportMappingConfigurationToFloor: PartnerExportMappingConfigurationToFloorViews,
+  jupRoleToJupUiLayout: JupRoleToJupUiLayoutViews,
+  itemFact: ItemFactViews,
+  featureFamily: FeatureFamilyViews,
+  featureGroup: FeatureGroupViews,
+  feature: FeatureViews,
+  userRefreshToken: { indexes: {}, singles: {}, dataQualities: {} }
+};
+function getObjectTypeViewCoreByNameMandatory(objectTypeName, viewName) {
+  const viewCore = getObjectTypeViewCoreByName(objectTypeName, viewName);
+  if (!viewCore) {
+    throw new Error(`View ${viewName} not found for object type ${objectTypeName}`);
+  }
+  return viewCore;
+}
+function getObjectTypeViewCoreByName(objectTypeName, viewName) {
+  var _a;
+  const views2 = ViewCoreSchema[objectTypeName];
+  if (!views2) {
+    return void 0;
+  }
+  const viewCore = views2.indexes[viewName] || views2.singles[viewName] || ((_a = views2.dataQualities) == null ? void 0 : _a[viewName]);
+  return viewCore;
+}
+function ErrorMessage(props) {
+  const { message } = props;
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { style: { color: "red", fontWeight: "bold" }, children: [
+    "[",
+    message,
+    "]"
+  ] });
+}
+function SurfyHelpLinkToIndexView(props) {
+  const { code } = props;
+  const [objectTypeName, viewName] = code.split(":");
+  const objectTypeDefinition = getObjectTypeDefinitionByName(objectTypeName);
+  if (!objectTypeDefinition) {
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(ErrorMessage, { message: `Object type not found ${objectTypeName}` });
+  }
+  const view = getObjectTypeViewCoreByNameMandatory(objectTypeName, viewName);
+  if (!view) {
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(ErrorMessage, { message: `View not found ${objectTypeName} ${viewName}` });
+  }
+  const viewUrl = getIndexTabViewPath(objectTypeName, view);
+  const url = `https://app.surfy.pro/?redirectToView=${encodeURIComponent(viewUrl)}`;
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(HelpTooltip, { title: /* @__PURE__ */ jsxRuntimeExports.jsx(ObjectTypeIndexViewHelp, { objectTypeName, view }), children: /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: url, target: "_blank", rel: "noopener noreferrer", children: /* @__PURE__ */ jsxRuntimeExports.jsx(ObjectTypeViewLabel, { objectTypeName, viewName, isDefaultView: view.isDefaultView }) }) });
+}
 export {
   I18NHelpContext,
   ObjectTypeIndexViewHelp,
@@ -77669,6 +70113,7 @@ export {
   PropertyTypeLabel,
   PropertyTypeMandatoryLabel,
   SetupRecoilContext,
+  SurfyHelpLinkToIndexView,
   appVersion,
   getObjectTypeDefinitionByName,
   getPropertyTypeByCode,

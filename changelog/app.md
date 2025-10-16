@@ -15,14 +15,13 @@
 - Lors de la création ou de la modification d'une entreprise, le format du nom est désormais imposé : il doit contenir uniquement des lettres minuscules, des chiffres et des tirets.
 
 
-
 ## 6 Octobre 2025 - v3.4.110
 
 
 - Les options du plan pour zoomer et dézoomer avec les boutons en haut du plan effectuent désormais le zoom par rapport au centre du plan visible par l'utilisateur.
 - Toutes les visions affichent désormais les noms d'affichage des espaces en plus des noms techniques des espaces (nom fusionné).
 - Les calques d'affectation possèdent désormais une propriété <P code="dimension:workplacesBookableOnlyViaDimension" /> permettant de rendre les postes de travail réservables uniquement via l'affectation au quartier et non par l'étage.
-- Dans la vue "Voir toutes les réservations sur un plan" ou les autres vues de consultation sans réservation, les postes de travail non réservés sont désormais affichés en transparence.
+- Dans la vue <LIV code="personWorkingLocation:booking-maps" /> ou les autres vues de consultation sans réservation, les postes de travail non réservés sont désormais affichés en transparence.
 
 ## 26 Septembre 2025 - v3.4.108
 
