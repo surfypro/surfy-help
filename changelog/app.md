@@ -1,5 +1,13 @@
 # Nouveautés
 
+<!-- ## 23 octobre 2025 - v3.4.125
+
+- Surfy permet désormais de réserver les salles de réunion avec une intégration native à Microsoft Outlook, Microsoft Teams et Microsoft Places.
+    - Mise en place d'une opération de synchronisation des salles de réunion avec Microsoft Places.
+    - Mise en place d'une option permettant de voir les réservations d'une salle depuis la page des salles de réunion <LIV code="room:meeting-rooms" /> et depuis le plan de l'étage en 2D ou 3D sur la fiche de la salle de réunion.    
+ -->
+
+
 ## 15 octobre 2025 - v3.4.122
 
 - La page des plateformes possède désormais un moteur de recherche permettant de retrouver les plateformes par nom.
