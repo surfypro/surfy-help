@@ -65,8 +65,8 @@ export function isStringInteger(s: string) {
     return !isNaN(Number(s));
 }
 
-const kebabize = str => {
-    return str.split('').map((letter, idx) => {
+const kebabize = (str: string) => {
+    return str.split('').map((letter: string, idx: number) => {
         return letter.toUpperCase() === letter
             ? `${idx !== 0 ? '-' : ''}${letter.toLowerCase()}`
             : letter;

@@ -1,6 +1,6 @@
 # Nouveautés
 
-<!-- ## 14 octobre 2025 - v3.4.121
+## 15 octobre 2025 - v3.4.122
 
 - La page des plateformes possède désormais un moteur de recherche permettant de retrouver les plateformes par nom.
 - Mise en place de la connexion à Surfy respectant le protocole SAML v2.0.
@@ -13,7 +13,6 @@
 - Les calques d’affectation sur plusieurs étages du même bâtiment sont maintenant réservables.
 - Le menu d’administration possède maintenant un sous-menu permettant d’accéder directement à l’entreprise de la plateforme.
 - Lors de la création ou de la modification d'une entreprise, le format du nom est désormais imposé : il doit contenir uniquement des lettres minuscules, des chiffres et des tirets.
- -->
 
 
 ## 6 Octobre 2025 - v3.4.110
@@ -22,7 +21,7 @@
 - Les options du plan pour zoomer et dézoomer avec les boutons en haut du plan effectuent désormais le zoom par rapport au centre du plan visible par l'utilisateur.
 - Toutes les visions affichent désormais les noms d'affichage des espaces en plus des noms techniques des espaces (nom fusionné).
 - Les calques d'affectation possèdent désormais une propriété <P code="dimension:workplacesBookableOnlyViaDimension" /> permettant de rendre les postes de travail réservables uniquement via l'affectation au quartier et non par l'étage.
-- Dans la vue "Voir toutes les réservations sur un plan" ou les autres vues de consultation sans réservation, les postes de travail non réservés sont désormais affichés en transparence.
+- Dans la vue <LIV code="personWorkingLocation:booking-maps" /> ou les autres vues de consultation sans réservation, les postes de travail non réservés sont désormais affichés en transparence.
 
 ## 26 Septembre 2025 - v3.4.108
 

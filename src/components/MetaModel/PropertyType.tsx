@@ -1,6 +1,4 @@
-import Box from '@mui/material/Box';
-import Fade from '@mui/material/Fade';
-import Paper from '@mui/material/Paper';
+import { Box, Fade, Paper } from '@mui/material';
 import { useTranslations, useCurrentLocale } from "../Translations/translations";
 import { HelpTooltipStyled } from "./HelpTooltipStyled";
 import { toDocumentationLinkString } from "@site/src/utils/documentionStyle";
@@ -8,7 +6,6 @@ import { getPropertyTypeByCode, ObjectTypeSingularCapitalizedLabel, PropertyType
 import { objectTypePathMapping, objectTypePathMappingEn } from "@site/src/metaModel/metamodel.json.helper";
 
 export function PropertyType(props: { code: PropertyTypeCodes }) {
-    const entitiesTranslations = useTranslations();
     const currentLocale = useCurrentLocale();
     const { code } = props;
 
