@@ -14,6 +14,7 @@ Un poste de travail est un groupe d'objets à qui on peut attribuer des qualific
 -   colorisation des postes en fonction de leur [état d'utilisation](/docs/courses/views/2Dviews.md#afficher-létat-des-postes-de-travail-sur-le-plan)
 -   colorisation des postes en fonction du [profil sécurité](/docs/courses/views/2Dviews.md#afficher-les-profils-sécurité-sur-le-plan) de la personne affectée au poste
 -   colorisation en fonction de leur [centre de coût](/docs/tutorials/cost-distribution-by-cost-center/create.md#visualiser-les-centres-de-coût-sur-le-plan)
+-   colorisation en fonction de leur [type d'usage](/docs/tutorials/objects/workplace/edit.md#type-dusage-des-postes-de-travail)
 
 Sur la fiche du bâtiment, de l'étage, de l'espace ou de tout regroupement d'espaces, les postes de travail sont comptabilisés suivant leur état.
 Les postes de travail peuvent être comptabilisés en places assises lors de la [composition du type de poste de travail](/docs/tutorials/objects/workplacetype/create.md#composer-le-type-de-poste-de-travail)

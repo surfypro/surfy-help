@@ -121,6 +121,8 @@ Clicking on the vertical "color workstations by their status" icon allows colori
 Workstations not concerned by these qualifications remain in their original color (white).
 Workstations declared as "Flex" or "passage" cannot be assigned to a person.
 
+You can also color workstations according to their [usage type](/en/docs/tutorials/objects/workplace/edit#workstation-usage-type) in order to locate and count workstations according to their usage type.
+
 ## Display Security Profiles on Plan
 
 Clicking on the vertical "color workstations by people" icon allows coloring workstations of assigned people according to their security profile.

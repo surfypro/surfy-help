@@ -112,7 +112,7 @@ On peut visualiser les cumuls des différents calques pour l'ensemble du bâtime
 ## Afficher l'état des postes de travail sur le plan
 
 Cliquer sur l'icône verticale "colorier les postes de travail par rapport à leur état" permet de colorier les postes de travail :
--   en vert pour les postes affectables mais libres. Cette qualification est automatique
+-   en vert pour les postes affectables mais libres. Cette qualification par défaut est automatique
 -   en rose pour les postes déclarés en "Flex"
 -   en orange pour les postes partagés à plusieurs. Cette qualification est automatique
 -   en bleu foncé pour les postes déclarés "de passage"
@@ -120,6 +120,8 @@ Cliquer sur l'icône verticale "colorier les postes de travail par rapport à le
 
 Les postes de travail non concernés par ces qualifications restent dans leur couleur d'origine (blanc).
 Les postes de travail déclarés "en Flex" ou "de passage" ne peuvent pas être affectés à une personne.
+
+On peut également colorier les postes de travail en fonction de leur [type d'usage](/docs/tutorials/objects/workplace/edit#type-dusage-des-postes-de-travail) afin de localiser et compter les postes de travail suivant leur type d'usage.
 
 ## Afficher les profils Sécurité sur le plan
 

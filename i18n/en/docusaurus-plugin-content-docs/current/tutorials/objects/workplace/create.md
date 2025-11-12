@@ -14,6 +14,7 @@ A workstation is a group of objects to which particular qualifications can be as
 -   coloring of workstations according to their [usage state](/en/docs/courses/views/2Dviews#display-workstation-status-on-plan)
 -   coloring of workstations according to the [security profile](/en/docs/courses/views/2Dviews#display-security-profiles-on-plans) of the person assigned to the workstation
 -   coloring according to their [cost center](/en/docs/tutorials/cost-distribution-by-cost-center/create#visualize-cost-centers-on-plan)
+-   coloring according to their [usage type](/en/docs/tutorials/objects/workplace/edit#workstation-usage-type)
 
 On the building, floor, space or any space grouping card, workstations are counted according to their state.
 Workstations can be counted as seats during [workstation type composition](/en/docs/tutorials/objects/workplacetype/create#compose-workstation-type)
