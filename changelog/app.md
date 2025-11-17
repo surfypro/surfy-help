@@ -1,6 +1,6 @@
 # Nouveautés
 
-## 3 novembre 2025 - v3.4.125
+<!-- ## 3 novembre 2025 - v3.4.125
 
 - Surfy permet désormais de réserver les salles de réunion grâce à une intégration native avec Microsoft Outlook, Microsoft Teams et Microsoft Places.
     - Mise en place d'une opération de synchronisation des salles de réunion avec Microsoft Places.
@@ -18,7 +18,7 @@
 - Dans les info-bulles des espaces, notamment pour les organisations, les centres de coûts et les autres entités avec des couleurs, la couleur est affichée dans l’info-bulle, ce qui permet à l'utilisateur de mieux associer l'entité à sa couleur sur le plan.
 - La vision "Direction" sur le plan est maintenant simplifiée et n'affiche désormais plus le nom de la direction et du service sur le plan.
 - Il est maintenant possible de changer la langue de l'application depuis la page de login.
-- Dans le plan 3D, il est maintenant possible d'afficher le nom des espaces et le nom de l'étage sur le plan.
+- Dans le plan 3D, il est maintenant possible d'afficher le nom des espaces et le nom de l'étage sur le plan. -->
 
 ## 15 octobre 2025 - v3.4.122
 
