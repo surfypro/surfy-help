@@ -1104,6 +1104,20 @@ Les types d'objets des prestataires permettent de définir une relation entre le
 *Nom technique:* ```personCompanyToItemTypeUpdatedBies```
 <PH code="userCompany:personCompanyToItemTypeUpdatedBies"/>
 
+### Types d'usage de poste de travail {#workplace-usage-type-created-bies}
+
+Le type d'usage de poste de travail permet de catégoriser les postes de travail selon leur utilisation avec les termes de l'entreprise et de les visualiser avec des couleurs différentes sur les plans
+
+*Nom technique:* ```workplaceUsageTypeCreatedBies```
+<PH code="userCompany:workplaceUsageTypeCreatedBies"/>
+
+### Types d'usage de poste de travail {#workplace-usage-type-updated-bies}
+
+Le type d'usage de poste de travail permet de catégoriser les postes de travail selon leur utilisation avec les termes de l'entreprise et de les visualiser avec des couleurs différentes sur les plans
+
+*Nom technique:* ```workplaceUsageTypeUpdatedBies```
+<PH code="userCompany:workplaceUsageTypeUpdatedBies"/>
+
 ### Types de bâtiments {#building-type-created-bies}
 
 Un type de bâtiment permet de catégoriser les bâtiments selon leur usage

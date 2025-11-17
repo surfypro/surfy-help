@@ -1216,6 +1216,20 @@ A type of relationship between people defines the different types of links that 
 *Technical name:* ```personToPersonTypeUpdatedBies```
 <PH code="userCompany:personToPersonTypeUpdatedBies"/>
 
+### Types of workstation use {#workplace-usage-type-created-bies}
+
+The workstation usage type allows workstations to be categorized according to their use, using company terminology, and visualized with different colors on the plans.
+
+*Technical name:* ```workplaceUsageTypeCreatedBies```
+<PH code="userCompany:workplaceUsageTypeCreatedBies"/>
+
+### Types of workstation use {#workplace-usage-type-updated-bies}
+
+The workstation usage type allows workstations to be categorized according to their use, using company terminology, and visualized with different colors on the plans.
+
+*Technical name:* ```workplaceUsageTypeUpdatedBies```
+<PH code="userCompany:workplaceUsageTypeUpdatedBies"/>
+
 ### Types of workstations {#workplace-type-created-bies}
 
 

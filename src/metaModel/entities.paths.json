@@ -13,6 +13,7 @@
         "itemTypePoint": "/entities/things/things-type",
         "manufacturer": "/entities/things/things-type",
         "workplaceTypeItemType": "/entities/things/things-type",
+        "workplaceUsageType": "/entities/things/things-type",
         "itemFact": "/entities/things/items-fact",
         "workplaceAffectation": "/entities/affectations",
         "roomAffectation": "/entities/affectations",

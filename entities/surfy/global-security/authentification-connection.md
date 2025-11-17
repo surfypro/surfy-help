@@ -32,6 +32,13 @@ Certificat public du fournisseur d'identité (IDP) utilisé pour la validation d
 *Nom technique:* ```publicIdpCertificate```
 <PH code="authentificationConnection:publicIdpCertificate"/>
 
+### Domaines autorisés {#domaines}
+
+Domaines de messagerie autorisés pour cette connexion d'authentification
+
+*Nom technique:* ```domaines```
+<PH code="authentificationConnection:domaines"/>
+
     
 
 

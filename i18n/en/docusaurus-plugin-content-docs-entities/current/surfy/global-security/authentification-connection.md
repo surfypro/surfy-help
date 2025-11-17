@@ -25,6 +25,13 @@ Authentication connection name
 
 ## Basic properties {#properties-base}
     
+### Authorized domains {#domaines}
+
+Email domains allowed for this authentication connection
+
+*Technical name:* ```domaines```
+<PH code="authentificationConnection:domaines"/>
+
 ### IDP Public Certificate {#public-idp-certificate}
 
 Identity Provider (IDP) public certificate used for SAML signature validation

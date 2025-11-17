@@ -209,6 +209,10 @@
                 "label": "Type de poste de travail",
                 "description": null
             },
+            "workplaceUsageType": {
+                "label": "Type d'usage de poste de travail",
+                "description": "Le type d'usage de poste de travail permet de catégoriser les postes de travail selon leur utilisation avec les termes de l'entreprise et de les visualiser avec des couleurs différentes sur les plans"
+            },
             "workplaceTypeItemType": {
                 "label": "Type d'objet dans type de poste de travail",
                 "description": null
@@ -1271,6 +1275,14 @@
                 "workplaceTypeUpdatedBies": {
                     "label": "Types de poste de travail",
                     "description": null
+                },
+                "workplaceUsageTypeCreatedBies": {
+                    "label": "Types d'usage de poste de travail",
+                    "description": "Le type d'usage de poste de travail permet de catégoriser les postes de travail selon leur utilisation avec les termes de l'entreprise et de les visualiser avec des couleurs différentes sur les plans"
+                },
+                "workplaceUsageTypeUpdatedBies": {
+                    "label": "Types d'usage de poste de travail",
+                    "description": "Le type d'usage de poste de travail permet de catégoriser les postes de travail selon leur utilisation avec les termes de l'entreprise et de les visualiser avec des couleurs différentes sur les plans"
                 },
                 "workplaceTypeItemTypeCreatedBies": {
                     "label": "Types d'objet dans type de poste de travail",
@@ -5607,6 +5619,64 @@
                     "description": "Une entreprise représente une organisation ou une société qui utilise la plateforme Surfy pour gérer ses espaces de travail et ses ressources"
                 }
             },
+            "workplaceUsageType": {
+                "id": {
+                    "label": "Identifiant du type d'usage de poste de travail",
+                    "description": "Identifiant unique du type d'usage"
+                },
+                "name": {
+                    "label": "Nom",
+                    "description": "Nom du type d'usage qui permet de l'identifier"
+                },
+                "color": {
+                    "label": "Couleur",
+                    "description": "Couleur utilisée pour différencier les postes de travail de ce type sur les plans et la cartographie"
+                },
+                "description": {
+                    "label": "Description",
+                    "description": "Description détaillée expliquant l'utilisation et la finalité de ce type d'usage"
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "workplaces": {
+                    "label": "Postes de travail",
+                    "description": null
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": "Une entreprise représente une organisation ou une société qui utilise la plateforme Surfy pour gérer ses espaces de travail et ses ressources"
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": "Une entreprise représente une organisation ou une société qui utilise la plateforme Surfy pour gérer ses espaces de travail et ses ressources"
+                }
+            },
             "workplaceTypeItemType": {
                 "id": {
                     "label": "Identifiant du type d'objet dans le type de poste de travail",
@@ -5777,6 +5847,14 @@
                 "costCenter": {
                     "label": "Centre de coût",
                     "description": "Le centre de coût permet de répartir les espaces dynamiquement pour la refacturation"
+                },
+                "workplaceUsageTypeId": {
+                    "label": "Identifiant du type d'usage de poste de travail",
+                    "description": "Identifiant unique du type d'usage"
+                },
+                "workplaceUsageType": {
+                    "label": "Type d'usage de poste de travail",
+                    "description": "Le type d'usage de poste de travail permet de catégoriser les postes de travail selon leur utilisation avec les termes de l'entreprise et de les visualiser avec des couleurs différentes sur les plans"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -8535,6 +8613,10 @@
                 "publicIdpCertificate": {
                     "label": "Certificat public IDP",
                     "description": "Certificat public du fournisseur d'identité (IDP) utilisé pour la validation des signatures SAML"
+                },
+                "domaines": {
+                    "label": "Domaines autorisés",
+                    "description": "Domaines de messagerie autorisés pour cette connexion d'authentification"
                 },
                 "createdAt": {
                     "label": "Date de création",

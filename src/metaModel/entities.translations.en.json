@@ -209,6 +209,10 @@
                 "label": "Type of workstation",
                 "description": null
             },
+            "workplaceUsageType": {
+                "label": "Type of workstation use",
+                "description": "The workstation usage type allows workstations to be categorized according to their use, using company terminology, and visualized with different colors on the plans."
+            },
             "workplaceTypeItemType": {
                 "label": "Object type in workstation type",
                 "description": null
@@ -1271,6 +1275,14 @@
                 "workplaceTypeUpdatedBies": {
                     "label": "Types of workstations",
                     "description": null
+                },
+                "workplaceUsageTypeCreatedBies": {
+                    "label": "Types of workstation use",
+                    "description": "The workstation usage type allows workstations to be categorized according to their use, using company terminology, and visualized with different colors on the plans."
+                },
+                "workplaceUsageTypeUpdatedBies": {
+                    "label": "Types of workstation use",
+                    "description": "The workstation usage type allows workstations to be categorized according to their use, using company terminology, and visualized with different colors on the plans."
                 },
                 "workplaceTypeItemTypeCreatedBies": {
                     "label": "Object types in workstation type",
@@ -5607,6 +5619,64 @@
                     "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
+            "workplaceUsageType": {
+                "id": {
+                    "label": "Workstation usage type identifier",
+                    "description": "Unique identifier for the type of use"
+                },
+                "name": {
+                    "label": "Last name",
+                    "description": "Name of the type of use that allows it to be identified"
+                },
+                "color": {
+                    "label": "Color",
+                    "description": "Color used to differentiate workstations of this type on plans and maps"
+                },
+                "description": {
+                    "label": "Description",
+                    "description": "Detailed description explaining the use and purpose of this type of use"
+                },
+                "createdAt": {
+                    "label": "Creation date",
+                    "description": "Date of creation in Surfy, allows you to know the history of creation in Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date of update",
+                    "description": "Update date in Surfy, allows you to know the history of modifications"
+                },
+                "externalId": {
+                    "label": "External key",
+                    "description": "This field can be used to remember the correspondence key in another software"
+                },
+                "userCompanyCreatedById": {
+                    "label": "ID of the user who created",
+                    "description": "Create by the identifier of this user in Surfy, allows you to know the history of the creation in Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Created by user",
+                    "description": "Create by this user in Surfy, allows you to know the history of the creation in Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "ID of the user who modified",
+                    "description": "Updated by the identifier of this user in Surfy, allows you to know the history of the creation in Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Updated by user",
+                    "description": "Updated by this user in Surfy, allows to know the history of the modification in Surfy"
+                },
+                "workplaces": {
+                    "label": "Personal work places",
+                    "description": null
+                },
+                "companyId": {
+                    "label": "Company ID",
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                },
+                "company": {
+                    "label": "Business",
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                }
+            },
             "workplaceTypeItemType": {
                 "id": {
                     "label": "Object type identifier in the workstation type",
@@ -5777,6 +5847,14 @@
                 "costCenter": {
                     "label": "Cost center",
                     "description": "The cost center allows spaces to be distributed dynamically for re-invoicing"
+                },
+                "workplaceUsageTypeId": {
+                    "label": "Workstation usage type identifier",
+                    "description": "Unique identifier for the type of use"
+                },
+                "workplaceUsageType": {
+                    "label": "Type of workstation use",
+                    "description": "The workstation usage type allows workstations to be categorized according to their use, using company terminology, and visualized with different colors on the plans."
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -8535,6 +8613,10 @@
                 "publicIdpCertificate": {
                     "label": "IDP Public Certificate",
                     "description": "Identity Provider (IDP) public certificate used for SAML signature validation"
+                },
+                "domaines": {
+                    "label": "Authorized domains",
+                    "description": "Email domains allowed for this authentication connection"
                 },
                 "createdAt": {
                     "label": "Creation date",

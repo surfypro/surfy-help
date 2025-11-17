@@ -120,6 +120,13 @@ Les organisations ont deux niveaux hiérarchiques : les directions et les servic
 *Nom technique:* ```organization```
 <PH code="workplace:organization"/>
 
+### Type d'usage de poste de travail {#workplace-usage-type}
+
+Le type d'usage de poste de travail permet de catégoriser les postes de travail selon leur utilisation avec les termes de l'entreprise et de les visualiser avec des couleurs différentes sur les plans
+
+*Nom technique:* ```workplaceUsageType```
+<PH code="workplace:workplaceUsageType"/>
+
 ### Type de poste de travail {#workplace-type}
 
 

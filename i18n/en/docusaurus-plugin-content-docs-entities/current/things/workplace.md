@@ -120,6 +120,13 @@ Organizations have two hierarchical levels: departments and services, and help d
 *Technical name:* ```workplaceType```
 <PH code="workplace:workplaceType"/>
 
+### Type of workstation use {#workplace-usage-type}
+
+The workstation usage type allows workstations to be categorized according to their use, using company terminology, and visualized with different colors on the plans.
+
+*Technical name:* ```workplaceUsageType```
+<PH code="workplace:workplaceUsageType"/>
+
 ### Workstation space {#room}
 
 Spaces are workplaces or areas in order to divide a floor into sub-spaces.
