@@ -1,12 +1,8 @@
 # Nouveautés
 
-<!-- ## 18 novembre 2025 - v3.4.125
+## 19 novembre 2025 - v3.4.128
 
-- Surfy permet désormais de réserver les salles de réunion grâce à une intégration native avec Microsoft Outlook, Microsoft Teams et Microsoft Places.
-    - Mise en place d'une opération de synchronisation des salles de réunion avec Microsoft Places.
-    - Ajout d'une option permettant de consulter les réservations d'une salle depuis la page des salles de réunion <LIV code="room:meeting-rooms" /> et depuis le plan de l’étage en 2D ou 3D sur la fiche de la salle de réunion. 
-- Surfy permet désormais la synchronisation des utilisateurs depuis l’annuaire Microsoft Azure, ce qui permet de créer automatiquement les utilisateurs dans Surfy dès leur arrivée dans l’entreprise.
-- Sous le logo en haut à gauche, les icônes sont à présent affichées sur deux lignes : la première pour les utilisateurs finaux, la seconde pour les fonctions support.
+- Sous le logo en haut à gauche, les icônes sont à présent affichées sur deux lignes : la première pour les utilisateurs finaux, la seconde pour les contributeurs.
 - Le filtre sur les groupes de types d'espaces permet désormais de colorer les espaces sur le plan. Une option permet de colorer les espaces par type d'espace ou par groupe de types d'espaces.
 - Mise en place d'une nouvelle entité <OT code="workplaceUsageType"/> permettant de gérer les différents usages d’un poste de travail selon les termes de l’entreprise et de les visualiser avec des couleurs différentes sur les plans.
     - Ajout d’un onglet de filtre sur le plan pour les postes de travail par type d’usage de poste de travail.
@@ -16,9 +12,14 @@
 - Le rapport de qualité des données "Erreurs sur les organisations des espaces" a été déplacé des rapports d'organisation vers les rapports de qualité des données des espaces.
 - Le rechargement des données vérifie désormais les rapports de qualité des données et affiche un message d'erreur si des erreurs sont détectées. Il n'est donc plus possible d'effectuer un rechargement des données sans corriger au préalable les erreurs présentes dans les rapports de qualité des données associés au rechargement. Par exemple, les erreurs sur l'organisation des espaces bloquent le rechargement des données des étages et donc des bâtiments.
 - Dans les info-bulles des espaces, en fonction de la vision choisie notamment les organisations, la refacturation et les autres entités avec des couleurs, la couleur est affichée dans l’info-bulle, ce qui permet à l'utilisateur de mieux associer l'entité à sa couleur sur le plan.
-- La vision "Direction" sur le plan est maintenant simplifiée et n'affiche désormais plus le nom de la direction et du service sur le plan.
+- La vision "Direction" sur le plan est maintenant simplifiée et n'affiche désormais plus le nom de la direction et du service dans les espaces sur le plan et inclut les personnes affectées aux postes de travail.
 - Il est maintenant possible de changer la langue de l'application depuis la page de login.
-- Dans le plan 3D, il est maintenant possible d'afficher le nom des espaces et le nom de l'étage sur le plan. -->
+- Dans le plan 3D, il est maintenant possible d'afficher le nom des espaces et le nom de l'étage sur le plan. 
+- Surfy permet désormais de réserver les salles de réunion grâce à une intégration native avec Microsoft Outlook, Microsoft Teams et Microsoft Places.
+    - Mise en place d'une opération de synchronisation des salles de réunion avec Microsoft Places.
+    - Ajout d'une option permettant de consulter les réservations d'une salle depuis la page des salles de réunion <LIV code="room:meeting-rooms" /> et depuis le plan de l’étage en 2D ou 3D sur la fiche de la salle de réunion. 
+- Surfy permet désormais la synchronisation des utilisateurs depuis l’annuaire Microsoft Azure Entra ID, ce qui permet de créer automatiquement les utilisateurs dans Surfy dès leur arrivée dans l’entreprise.
+
 
 ## 15 octobre 2025 - v3.4.122
 
