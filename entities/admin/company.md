@@ -81,6 +81,13 @@ Le nombre de jours de travail par semaine peut être 5 pour les jours ouvrés, 6
 *Nom technique:* ```workingDaysCount```
 <PH code="company:workingDaysCount"/>
 
+### Plage de confirmation de réservation de poste de travail {#workplace-booking-confirmation-range}
+
+Plage horaire pendant laquelle les utilisateurs peuvent confirmer leurs réservations de postes de travail. Format: HH:MM-HH:MM (ex: 06:00-10:30). Ne rien mettre dans ce champ pour ne pas activer la confirmation de réservation de poste de travail
+
+*Nom technique:* ```workplaceBookingConfirmationRange```
+<PH code="company:workplaceBookingConfirmationRange"/>
+
     
 
 ## Entités associées (unique) {#properties-belongs-to}

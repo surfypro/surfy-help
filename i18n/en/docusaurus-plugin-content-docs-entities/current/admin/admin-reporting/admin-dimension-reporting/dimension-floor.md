@@ -156,6 +156,16 @@ The workstation ratio is the number of square meters divided by the number of wo
     
 
 
+## Basic properties {#properties-base}
+    
+### Number of bookable workstations on the floor {#bookable-workplaces-count}
+
+The number of reservable workstations for this floor
+
+*Technical name:* ```bookableWorkplacesCount```
+<PH code="dimensionFloor:bookableWorkplacesCount"/>
+
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

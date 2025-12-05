@@ -46,16 +46,16 @@ L'empreinte carbone par mètre carré permet de calculer l'empreinte carbone en 
 *Nom technique:* ```manualPeopleCount```
 <PH code="dimension:manualPeopleCount"/>
 
-### Nombre d'affectations {#people-count}
+### Nombre d'affectations directe au calque {#people-count}
 
-
+Le nombre d'affectations au calque directement
 
 *Nom technique:* ```peopleCount```
 <PH code="dimension:peopleCount"/>
 
-### Nombre total d'affectations {#total-people-count}
+### Nombre total d'affectations au calque {#total-people-count}
 
-Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail
+Le nombre total d'affectations au calque directement, soit via un poste de travail, soit via un espace
 
 *Nom technique:* ```totalPeopleCount```
 <PH code="dimension:totalPeopleCount"/>

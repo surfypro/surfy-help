@@ -53,9 +53,9 @@ The crowding rate for booking allows defining the occupancy percentage beyond wh
 *Technical name:* ```manualPeopleCount```
 <PH code="dimension:manualPeopleCount"/>
 
-### Number of assignments {#people-count}
+### Number of direct assignments to the layer {#people-count}
 
-
+The number of assignments directly to the layer
 
 *Technical name:* ```peopleCount```
 <PH code="dimension:peopleCount"/>
@@ -67,9 +67,9 @@ The value can be used to associate the layer with a numeric value to perform ana
 *Technical name:* ```value```
 <PH code="dimension:value"/>
 
-### Total number of assignments {#total-people-count}
+### Total number of assignments to the layer {#total-people-count}
 
-The total number of people assigned, either directly assigned to spaces or through a workstation
+The total number of assignments to the layer directly, either via a workstation or via a workspace
 
 *Technical name:* ```totalPeopleCount```
 <PH code="dimension:totalPeopleCount"/>

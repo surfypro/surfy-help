@@ -156,6 +156,16 @@ Taux de postes de travail partagés par au moins 2 personnes par rapport à l'en
     
 
 
+## Propriétés de base {#properties-base}
+    
+### Nombre de postes de travail réservables dans l'étage {#bookable-workplaces-count}
+
+Le nombre de postes de travail réservables pour cet étage
+
+*Nom technique:* ```bookableWorkplacesCount```
+<PH code="dimensionFloor:bookableWorkplacesCount"/>
+
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 

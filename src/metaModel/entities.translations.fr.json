@@ -620,6 +620,10 @@
                     "label": "Activer la réservation par bâtiment quand toutes les dimensions sont surchargées",
                     "description": "Permet d'activer la réservation directe par bâtiment et étage lorsque toutes les dimensions sont surchargées, offrant une alternative de réservation quand aucune zone n'est disponible"
                 },
+                "workplaceBookingConfirmationRange": {
+                    "label": "Plage de confirmation de réservation de poste de travail",
+                    "description": "Plage horaire pendant laquelle les utilisateurs peuvent confirmer leurs réservations de postes de travail. Format: HH:MM-HH:MM (ex: 06:00-10:30). Ne rien mettre dans ce champ pour ne pas activer la confirmation de réservation de poste de travail"
+                },
                 "createdAt": {
                     "label": "Date de création",
                     "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
@@ -4467,12 +4471,12 @@
                     "description": "La valeur peut être utilisé pour associé le calque à une valeur numérique afin de pouvoir réaliser des statisques analytiques"
                 },
                 "peopleCount": {
-                    "label": "Nombre d'affectations",
-                    "description": null
+                    "label": "Nombre d'affectations directe au calque",
+                    "description": "Le nombre d'affectations au calque directement"
                 },
                 "totalPeopleCount": {
-                    "label": "Nombre total d'affectations",
-                    "description": "Le nombre total de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail"
+                    "label": "Nombre total d'affectations au calque",
+                    "description": "Le nombre total d'affectations au calque directement, soit via un poste de travail, soit via un espace"
                 },
                 "manualPeopleCount": {
                     "label": "Manual People Count",
@@ -4625,6 +4629,10 @@
                 "id": {
                     "label": "Identifiant de l'association calque d'analyse aux étages",
                     "description": null
+                },
+                "bookableWorkplacesCount": {
+                    "label": "Nombre de postes de travail réservables dans l'étage",
+                    "description": "Le nombre de postes de travail réservables pour cet étage"
                 },
                 "roomsArea": {
                     "label": "Surface qualifiée",
@@ -7013,6 +7021,10 @@
                 "endDatetime": {
                     "label": "Fin de la réservation",
                     "description": "La date et l'heure de fin de la réservation"
+                },
+                "workspaceHasBeenConfirmed": {
+                    "label": "Workspace Has Been Confirmed",
+                    "description": null
                 },
                 "createdAt": {
                     "label": "Date de création",

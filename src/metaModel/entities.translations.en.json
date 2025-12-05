@@ -620,6 +620,10 @@
                     "label": "Enable booking by building when all dimensions are overloaded",
                     "description": "Enables direct booking by building and floor when all dimensions are overloaded, providing an alternative booking option when no areas are available"
                 },
+                "workplaceBookingConfirmationRange": {
+                    "label": "Workstation booking confirmation window",
+                    "description": "Time range during which users can confirm their workstation reservations. Format: HH:MM-HH:MM (e.g., 06:00-10:30). Leave this field blank to disable workstation reservation confirmation."
+                },
                 "createdAt": {
                     "label": "Creation date",
                     "description": "Date of creation in Surfy, allows you to know the history of creation in Surfy"
@@ -4467,12 +4471,12 @@
                     "description": "The value can be used to associate the layer with a numeric value to perform analytical statistics"
                 },
                 "peopleCount": {
-                    "label": "Number of assignments",
-                    "description": null
+                    "label": "Number of direct assignments to the layer",
+                    "description": "The number of assignments directly to the layer"
                 },
                 "totalPeopleCount": {
-                    "label": "Total number of assignments",
-                    "description": "The total number of people assigned, either directly assigned to spaces or through a workstation"
+                    "label": "Total number of assignments to the layer",
+                    "description": "The total number of assignments to the layer directly, either via a workstation or via a workspace"
                 },
                 "manualPeopleCount": {
                     "label": "Manual People Count",
@@ -4625,6 +4629,10 @@
                 "id": {
                     "label": "Identifier of the analysis layer association to the floors",
                     "description": null
+                },
+                "bookableWorkplacesCount": {
+                    "label": "Number of bookable workstations on the floor",
+                    "description": "The number of reservable workstations for this floor"
                 },
                 "roomsArea": {
                     "label": "Qualified surface",
@@ -7013,6 +7021,10 @@
                 "endDatetime": {
                     "label": "End of reservation",
                     "description": "The date and time the reservation ends"
+                },
+                "workspaceHasBeenConfirmed": {
+                    "label": "Workspace Has Been Confirmed",
+                    "description": null
                 },
                 "createdAt": {
                     "label": "Creation date",

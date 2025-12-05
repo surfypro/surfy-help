@@ -81,6 +81,13 @@ Enable proxy for images
 *Technical name:* ```proxyImages```
 <PH code="company:proxyImages"/>
 
+### Workstation booking confirmation window {#workplace-booking-confirmation-range}
+
+Time range during which users can confirm their workstation reservations. Format: HH:MM-HH:MM (e.g., 06:00-10:30). Leave this field blank to disable workstation reservation confirmation.
+
+*Technical name:* ```workplaceBookingConfirmationRange```
+<PH code="company:workplaceBookingConfirmationRange"/>
+
     
 
 ## Associated entities (unique) {#properties-belongs-to}
