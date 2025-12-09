@@ -7022,8 +7022,8 @@
                     "label": "Fin de la réservation",
                     "description": "La date et l'heure de fin de la réservation"
                 },
-                "workspaceHasBeenConfirmed": {
-                    "label": "Workspace Has Been Confirmed",
+                "workspaceHasBeenConfirmedAt": {
+                    "label": "Workspace Has Been Confirmed At",
                     "description": null
                 },
                 "createdAt": {

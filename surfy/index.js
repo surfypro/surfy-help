@@ -1,6 +1,3 @@
-var __defProp = Object.defineProperty;
-var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
 import * as React from "react";
 import React__default, { forwardRef, useContext, useEffect } from "react";
 import { RecoilRoot, atom, useRecoilValue_TRANSITION_SUPPORT_UNSTABLE, useRecoilState, DefaultValue, atomFamily } from "recoil";
@@ -631,6 +628,19 @@ const companyObjectTypeDefintion = {
         "calculated": false,
         "technical": false,
         "defaultValue": false
+      }
+    },
+    "workplaceBookingConfirmationRange": {
+      "name": "workplaceBookingConfirmationRange",
+      "objectTypeName": "company",
+      "type": "string",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false,
+        "defaultValue": null,
+        "regex": "^([0-1][0-9]|2[0-3]):[0-5][0-9]-([0-1][0-9]|2[0-3]):[0-5][0-9]$"
       }
     },
     "createdAt": {
@@ -3488,6 +3498,44 @@ const userCompanyObjectTypeDefintion = {
         }
       }
     },
+    "workplaceUsageTypeCreatedBies": {
+      "name": "workplaceUsageTypeCreatedBies",
+      "objectTypeName": "userCompany",
+      "type": "has-many-paginated",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      },
+      "association": {
+        "foreignKey": "userCompanyCreatedById",
+        "targetModelName": "workplaceUsageType",
+        "propertyTypeName": "workplaceUsageTypeCreatedBies",
+        "options": {
+          "readOnly": true
+        }
+      }
+    },
+    "workplaceUsageTypeUpdatedBies": {
+      "name": "workplaceUsageTypeUpdatedBies",
+      "objectTypeName": "userCompany",
+      "type": "has-many-paginated",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      },
+      "association": {
+        "foreignKey": "userCompanyUpdatedById",
+        "targetModelName": "workplaceUsageType",
+        "propertyTypeName": "workplaceUsageTypeUpdatedBies",
+        "options": {
+          "readOnly": true
+        }
+      }
+    },
     "workplaceTypeItemTypeCreatedBies": {
       "name": "workplaceTypeItemTypeCreatedBies",
       "objectTypeName": "userCompany",
@@ -5254,6 +5302,7 @@ const userCompanyObjectTypeDefintion = {
       "personToPerson",
       "roomAffectation",
       "workplaceType",
+      "workplaceUsageType",
       "workplaceTypeItemType",
       "workplace",
       "item",
@@ -17165,6 +17214,18 @@ const dimensionFloorObjectTypeDefintion = {
         "technical": true
       }
     },
+    "bookableWorkplacesCount": {
+      "name": "bookableWorkplacesCount",
+      "objectTypeName": "dimensionFloor",
+      "type": "integer",
+      "options": {
+        "mandatory": false,
+        "readOnly": true,
+        "calculated": true,
+        "technical": false,
+        "defaultValue": 0
+      }
+    },
     "roomsArea": {
       "name": "roomsArea",
       "objectTypeName": "dimensionFloor",
@@ -21190,6 +21251,246 @@ const workplaceTypeObjectTypeDefintion = {
     ]
   }
 };
+const workplaceUsageTypeObjectTypeDefintion = {
+  "name": "workplaceUsageType",
+  "type": "table",
+  "scope": "private",
+  "isMasterData": true,
+  "isReportingData": false,
+  "isSecurityData": false,
+  "propertiesByName": {
+    "id": {
+      "name": "id",
+      "objectTypeName": "workplaceUsageType",
+      "type": "primary-key",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "name": {
+      "name": "name",
+      "objectTypeName": "workplaceUsageType",
+      "type": "string",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      }
+    },
+    "color": {
+      "name": "color",
+      "objectTypeName": "workplaceUsageType",
+      "type": "color",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      }
+    },
+    "description": {
+      "name": "description",
+      "objectTypeName": "workplaceUsageType",
+      "type": "text",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      }
+    },
+    "createdAt": {
+      "name": "createdAt",
+      "objectTypeName": "workplaceUsageType",
+      "type": "timestamp",
+      "options": {
+        "mandatory": false,
+        "readOnly": true,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "updatedAt": {
+      "name": "updatedAt",
+      "objectTypeName": "workplaceUsageType",
+      "type": "timestamp",
+      "options": {
+        "mandatory": false,
+        "readOnly": true,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "externalId": {
+      "name": "externalId",
+      "objectTypeName": "workplaceUsageType",
+      "type": "string",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "userCompanyCreatedById": {
+      "name": "userCompanyCreatedById",
+      "objectTypeName": "workplaceUsageType",
+      "type": "foreign-key",
+      "options": {
+        "mandatory": false,
+        "readOnly": true,
+        "calculated": false,
+        "technical": true
+      },
+      "association": {
+        "foreignKey": "userCompanyCreatedById",
+        "targetModelName": "userCompany",
+        "propertyTypeName": "userCompanyCreatedBy",
+        "options": {
+          "readOnly": true
+        }
+      }
+    },
+    "userCompanyCreatedBy": {
+      "name": "userCompanyCreatedBy",
+      "objectTypeName": "workplaceUsageType",
+      "type": "belongs-to",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      },
+      "association": {
+        "foreignKey": "userCompanyCreatedById",
+        "targetModelName": "userCompany",
+        "propertyTypeName": "userCompanyCreatedBy",
+        "options": {
+          "readOnly": true
+        }
+      }
+    },
+    "userCompanyUpdatedById": {
+      "name": "userCompanyUpdatedById",
+      "objectTypeName": "workplaceUsageType",
+      "type": "foreign-key",
+      "options": {
+        "mandatory": false,
+        "readOnly": true,
+        "calculated": false,
+        "technical": true
+      },
+      "association": {
+        "foreignKey": "userCompanyUpdatedById",
+        "targetModelName": "userCompany",
+        "propertyTypeName": "userCompanyUpdatedBy",
+        "options": {
+          "readOnly": true
+        }
+      }
+    },
+    "userCompanyUpdatedBy": {
+      "name": "userCompanyUpdatedBy",
+      "objectTypeName": "workplaceUsageType",
+      "type": "belongs-to",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      },
+      "association": {
+        "foreignKey": "userCompanyUpdatedById",
+        "targetModelName": "userCompany",
+        "propertyTypeName": "userCompanyUpdatedBy",
+        "options": {
+          "readOnly": true
+        }
+      }
+    },
+    "workplaces": {
+      "name": "workplaces",
+      "objectTypeName": "workplaceUsageType",
+      "type": "has-many-paginated",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      },
+      "association": {
+        "foreignKey": "workplaceUsageTypeId",
+        "targetModelName": "workplace",
+        "propertyTypeName": "workplaces",
+        "options": {
+          "readOnly": false
+        }
+      }
+    },
+    "companyId": {
+      "name": "companyId",
+      "objectTypeName": "workplaceUsageType",
+      "type": "foreign-key",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      },
+      "association": {
+        "foreignKey": "companyId",
+        "targetModelName": "company",
+        "propertyTypeName": "company",
+        "options": {
+          "readOnly": true
+        }
+      }
+    },
+    "company": {
+      "name": "company",
+      "objectTypeName": "workplaceUsageType",
+      "type": "belongs-to",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      },
+      "association": {
+        "foreignKey": "companyId",
+        "targetModelName": "company",
+        "propertyTypeName": "company",
+        "options": {
+          "readOnly": true
+        }
+      }
+    }
+  },
+  "plural": "workplaceUsageTypes",
+  "camelized": {
+    "singular": "workplaceUsageType",
+    "plural": "workplaceUsageTypes",
+    "id": "workplaceUsageTypeId"
+  },
+  "capitalized": {
+    "singular": "WorkplaceUsageType",
+    "plural": "WorkplaceUsageTypes",
+    "id": "WorkplaceUsageTypeId"
+  },
+  "hidden": false,
+  "context": {
+    "hasMany": [
+      "workplace"
+    ],
+    "belongsTo": [
+      "company"
+    ]
+  }
+};
 const workplaceTypeItemTypeObjectTypeDefintion = {
   "name": "workplaceTypeItemType",
   "type": "many-to-many",
@@ -21841,6 +22142,44 @@ const workplaceObjectTypeDefintion = {
         "foreignKey": "costCenterId",
         "targetModelName": "costCenter",
         "propertyTypeName": "costCenter",
+        "options": {
+          "readOnly": false
+        }
+      }
+    },
+    "workplaceUsageTypeId": {
+      "name": "workplaceUsageTypeId",
+      "objectTypeName": "workplace",
+      "type": "foreign-key",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      },
+      "association": {
+        "foreignKey": "workplaceUsageTypeId",
+        "targetModelName": "workplaceUsageType",
+        "propertyTypeName": "workplaceUsageType",
+        "options": {
+          "readOnly": false
+        }
+      }
+    },
+    "workplaceUsageType": {
+      "name": "workplaceUsageType",
+      "objectTypeName": "workplace",
+      "type": "belongs-to",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      },
+      "association": {
+        "foreignKey": "workplaceUsageTypeId",
+        "targetModelName": "workplaceUsageType",
+        "propertyTypeName": "workplaceUsageType",
         "options": {
           "readOnly": false
         }
@@ -26473,6 +26812,17 @@ const personToWorkplaceBookingObjectTypeDefintion = {
       "type": "datetime",
       "options": {
         "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      }
+    },
+    "workspaceHasBeenConfirmedAt": {
+      "name": "workspaceHasBeenConfirmedAt",
+      "objectTypeName": "personToWorkplaceBooking",
+      "type": "timestamp",
+      "options": {
+        "mandatory": false,
         "readOnly": false,
         "calculated": false,
         "technical": false
@@ -33384,6 +33734,17 @@ const authentificationConnectionObjectTypeDefintion = {
         "technical": false
       }
     },
+    "domaines": {
+      "name": "domaines",
+      "objectTypeName": "authentificationConnection",
+      "type": "string",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      }
+    },
     "createdAt": {
       "name": "createdAt",
       "objectTypeName": "authentificationConnection",
@@ -36508,6 +36869,7 @@ var JupSchema;
   JupSchema2.personToPerson = personToPersonObjectTypeDefintion;
   JupSchema2.roomAffectation = roomAffectationObjectTypeDefintion;
   JupSchema2.workplaceType = workplaceTypeObjectTypeDefintion;
+  JupSchema2.workplaceUsageType = workplaceUsageTypeObjectTypeDefintion;
   JupSchema2.workplaceTypeItemType = workplaceTypeItemTypeObjectTypeDefintion;
   JupSchema2.workplace = workplaceObjectTypeDefintion;
   JupSchema2.item = itemObjectTypeDefintion;
@@ -36565,7 +36927,7 @@ var JupSchema;
   JupSchema2.featureFamily = featureFamilyObjectTypeDefintion;
   JupSchema2.featureGroup = featureGroupObjectTypeDefintion;
   JupSchema2.feature = featureObjectTypeDefintion;
-  JupSchema2.objectTypes = [JupSchema2.occupancyStatus, JupSchema2.user, JupSchema2.userRefreshToken, JupSchema2.companyType, JupSchema2.company, JupSchema2.campus, JupSchema2.roomConnectorType, JupSchema2.roomConnector, JupSchema2.userCompany, JupSchema2.personGender, JupSchema2.personCompany, JupSchema2.jupUiLayout, JupSchema2.buildingType, JupSchema2.organization, JupSchema2.itemTypeFamily, JupSchema2.manufacturer, JupSchema2.object3dModel, JupSchema2.itemType, JupSchema2.building, JupSchema2.mapScale, JupSchema2.structure, JupSchema2.structurePoint, JupSchema2.floor, JupSchema2.distributionCostType, JupSchema2.roomTypeGroup, JupSchema2.roomType, JupSchema2.roomTypeGroupToRoomType, JupSchema2.roomTypeGroupFloor, JupSchema2.roomTypeGroupBuilding, JupSchema2.costCenter, JupSchema2.costCenterBuilding, JupSchema2.costCenterFloor, JupSchema2.room, JupSchema2.roomPoint, JupSchema2.roomPointRoom, JupSchema2.roomPointSegmentType, JupSchema2.roomPointSegment, JupSchema2.itemTypePoint, JupSchema2.dimensionType, JupSchema2.dimension, JupSchema2.dimensionRoom, JupSchema2.dimensionFloor, JupSchema2.dimensionBuilding, JupSchema2.factType, JupSchema2.fact, JupSchema2.personState, JupSchema2.personSecurityProfile, JupSchema2.person, JupSchema2.personToPersonType, JupSchema2.personToPerson, JupSchema2.roomAffectation, JupSchema2.workplaceType, JupSchema2.workplaceTypeItemType, JupSchema2.workplace, JupSchema2.item, JupSchema2.workplaceAffectation, JupSchema2.organizationFloor, JupSchema2.organizationBuilding, JupSchema2.roomTypeFloor, JupSchema2.roomTypeBuilding, JupSchema2.itemToPerson, JupSchema2.personToBuilding, JupSchema2.dimensionToPerson, JupSchema2.dimensionTypeToBuilding, JupSchema2.workingLocation, JupSchema2.personWorkingLocation, JupSchema2.personToWorkplaceBooking, JupSchema2.personToRoomBooking, JupSchema2.personToDimensionBooking, JupSchema2.personCompanyMission, JupSchema2.personCompanyToItemType, JupSchema2.personCompanyToRoomType, JupSchema2.personCompanyToItem, JupSchema2.legend, JupSchema2.openerPostMessageHost, JupSchema2.companyWorkingLocation, JupSchema2.jupObjectType, JupSchema2.jupUiView, JupSchema2.jupRole, JupSchema2.jupUiOption, JupSchema2.jupUiOperation, JupSchema2.contentRole, JupSchema2.jupUserCompanyToJupRole, JupSchema2.jupRoleToJupUiView, JupSchema2.jupRoleToJupObjectType, JupSchema2.jupRoleToJupUiOption, JupSchema2.jupRoleToJupUiOperation, JupSchema2.contentRoleToBuilding, JupSchema2.contentRoleToUserCompany, JupSchema2.contentRoleToFloor, JupSchema2.partnerApiCredential, JupSchema2.apiUser, JupSchema2.apiUserToJupRole, JupSchema2.apiUserToContentRole, JupSchema2.jupUiTenantOperation, JupSchema2.contentRoleToJupUiTenantOperation, JupSchema2.authentificationConnection, JupSchema2.userRegistrationTenantRule, JupSchema2.userRegistrationTenantRuleToJupRole, JupSchema2.userRegistrationTenantRuleToContentRole, JupSchema2.partnerExportMappingConfiguration, JupSchema2.partnerExportMapping, JupSchema2.partnerExportMappingToRoomType, JupSchema2.partnerExportMappingConfigurationToFloor, JupSchema2.jupRoleToJupUiLayout, JupSchema2.itemFact, JupSchema2.featureFamily, JupSchema2.featureGroup, JupSchema2.feature];
+  JupSchema2.objectTypes = [JupSchema2.occupancyStatus, JupSchema2.user, JupSchema2.userRefreshToken, JupSchema2.companyType, JupSchema2.company, JupSchema2.campus, JupSchema2.roomConnectorType, JupSchema2.roomConnector, JupSchema2.userCompany, JupSchema2.personGender, JupSchema2.personCompany, JupSchema2.jupUiLayout, JupSchema2.buildingType, JupSchema2.organization, JupSchema2.itemTypeFamily, JupSchema2.manufacturer, JupSchema2.object3dModel, JupSchema2.itemType, JupSchema2.building, JupSchema2.mapScale, JupSchema2.structure, JupSchema2.structurePoint, JupSchema2.floor, JupSchema2.distributionCostType, JupSchema2.roomTypeGroup, JupSchema2.roomType, JupSchema2.roomTypeGroupToRoomType, JupSchema2.roomTypeGroupFloor, JupSchema2.roomTypeGroupBuilding, JupSchema2.costCenter, JupSchema2.costCenterBuilding, JupSchema2.costCenterFloor, JupSchema2.room, JupSchema2.roomPoint, JupSchema2.roomPointRoom, JupSchema2.roomPointSegmentType, JupSchema2.roomPointSegment, JupSchema2.itemTypePoint, JupSchema2.dimensionType, JupSchema2.dimension, JupSchema2.dimensionRoom, JupSchema2.dimensionFloor, JupSchema2.dimensionBuilding, JupSchema2.factType, JupSchema2.fact, JupSchema2.personState, JupSchema2.personSecurityProfile, JupSchema2.person, JupSchema2.personToPersonType, JupSchema2.personToPerson, JupSchema2.roomAffectation, JupSchema2.workplaceType, JupSchema2.workplaceUsageType, JupSchema2.workplaceTypeItemType, JupSchema2.workplace, JupSchema2.item, JupSchema2.workplaceAffectation, JupSchema2.organizationFloor, JupSchema2.organizationBuilding, JupSchema2.roomTypeFloor, JupSchema2.roomTypeBuilding, JupSchema2.itemToPerson, JupSchema2.personToBuilding, JupSchema2.dimensionToPerson, JupSchema2.dimensionTypeToBuilding, JupSchema2.workingLocation, JupSchema2.personWorkingLocation, JupSchema2.personToWorkplaceBooking, JupSchema2.personToRoomBooking, JupSchema2.personToDimensionBooking, JupSchema2.personCompanyMission, JupSchema2.personCompanyToItemType, JupSchema2.personCompanyToRoomType, JupSchema2.personCompanyToItem, JupSchema2.legend, JupSchema2.openerPostMessageHost, JupSchema2.companyWorkingLocation, JupSchema2.jupObjectType, JupSchema2.jupUiView, JupSchema2.jupRole, JupSchema2.jupUiOption, JupSchema2.jupUiOperation, JupSchema2.contentRole, JupSchema2.jupUserCompanyToJupRole, JupSchema2.jupRoleToJupUiView, JupSchema2.jupRoleToJupObjectType, JupSchema2.jupRoleToJupUiOption, JupSchema2.jupRoleToJupUiOperation, JupSchema2.contentRoleToBuilding, JupSchema2.contentRoleToUserCompany, JupSchema2.contentRoleToFloor, JupSchema2.partnerApiCredential, JupSchema2.apiUser, JupSchema2.apiUserToJupRole, JupSchema2.apiUserToContentRole, JupSchema2.jupUiTenantOperation, JupSchema2.contentRoleToJupUiTenantOperation, JupSchema2.authentificationConnection, JupSchema2.userRegistrationTenantRule, JupSchema2.userRegistrationTenantRuleToJupRole, JupSchema2.userRegistrationTenantRuleToContentRole, JupSchema2.partnerExportMappingConfiguration, JupSchema2.partnerExportMapping, JupSchema2.partnerExportMappingToRoomType, JupSchema2.partnerExportMappingConfigurationToFloor, JupSchema2.jupRoleToJupUiLayout, JupSchema2.itemFact, JupSchema2.featureFamily, JupSchema2.featureGroup, JupSchema2.feature];
   JupSchema2.objectTypesBySingular = {
     occupancyStatus: JupSchema2.occupancyStatus,
     user: JupSchema2.user,
@@ -36619,6 +36981,7 @@ var JupSchema;
     personToPerson: JupSchema2.personToPerson,
     roomAffectation: JupSchema2.roomAffectation,
     workplaceType: JupSchema2.workplaceType,
+    workplaceUsageType: JupSchema2.workplaceUsageType,
     workplaceTypeItemType: JupSchema2.workplaceTypeItemType,
     workplace: JupSchema2.workplace,
     item: JupSchema2.item,
@@ -36706,11 +37069,16 @@ function getDefaultExportFromCjs(x) {
   return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, "default") ? x["default"] : x;
 }
 function getAugmentedNamespace(n) {
-  if (n.__esModule) return n;
+  if (Object.prototype.hasOwnProperty.call(n, "__esModule")) return n;
   var f = n.default;
   if (typeof f == "function") {
     var a = function a2() {
-      if (this instanceof a2) {
+      var isInstance = false;
+      try {
+        isInstance = this instanceof a2;
+      } catch {
+      }
+      if (isInstance) {
         return Reflect.construct(f, arguments, this.constructor);
       }
       return f.apply(this, arguments);
@@ -36731,15 +37099,6 @@ function getAugmentedNamespace(n) {
 }
 var jsxRuntime = { exports: {} };
 var reactJsxRuntime_production_min = {};
-/**
- * @license React
- * react-jsx-runtime.production.min.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
 var hasRequiredReactJsxRuntime_production_min;
 function requireReactJsxRuntime_production_min() {
   if (hasRequiredReactJsxRuntime_production_min) return reactJsxRuntime_production_min;
@@ -36760,15 +37119,6 @@ function requireReactJsxRuntime_production_min() {
   return reactJsxRuntime_production_min;
 }
 var reactJsxRuntime_development = {};
-/**
- * @license React
- * react-jsx-runtime.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
 var hasRequiredReactJsxRuntime_development;
 function requireReactJsxRuntime_development() {
   if (hasRequiredReactJsxRuntime_development) return reactJsxRuntime_development;
@@ -37259,10 +37609,6 @@ function requireReactJsxRuntime_development() {
       };
       var specialPropKeyWarningShown;
       var specialPropRefWarningShown;
-      var didWarnAboutStringRefs;
-      {
-        didWarnAboutStringRefs = {};
-      }
       function hasValidRef(config) {
         {
           if (hasOwnProperty.call(config, "ref")) {
@@ -37287,13 +37633,7 @@ function requireReactJsxRuntime_development() {
       }
       function warnIfStringRefCannotBeAutoConverted(config, self2) {
         {
-          if (typeof config.ref === "string" && ReactCurrentOwner.current && self2 && ReactCurrentOwner.current.stateNode !== self2) {
-            var componentName = getComponentNameFromType(ReactCurrentOwner.current.type);
-            if (!didWarnAboutStringRefs[componentName]) {
-              error('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', getComponentNameFromType(ReactCurrentOwner.current.type), config.ref);
-              didWarnAboutStringRefs[componentName] = true;
-            }
-          }
+          if (typeof config.ref === "string" && ReactCurrentOwner.current && self2) ;
         }
       }
       function defineKeyPropWarningGetter(props, displayName) {
@@ -37671,271 +38011,36 @@ function SetupRecoilContext(props) {
   const { defaultLanguage, I18nContext } = props;
   return /* @__PURE__ */ jsxRuntimeExports.jsx(RecoilRoot, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(I18nContext, { defaultLanguage, children: props.children }) });
 }
-var reactIs$1 = { exports: {} };
-var reactIs_production = {};
-/**
- * @license React
- * react-is.production.js
- *
- * Copyright (c) Meta Platforms, Inc. and affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-var hasRequiredReactIs_production;
-function requireReactIs_production() {
-  if (hasRequiredReactIs_production) return reactIs_production;
-  hasRequiredReactIs_production = 1;
-  var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_VIEW_TRANSITION_TYPE = Symbol.for("react.view_transition"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference");
-  function typeOf(object) {
-    if ("object" === typeof object && null !== object) {
-      var $$typeof = object.$$typeof;
-      switch ($$typeof) {
-        case REACT_ELEMENT_TYPE:
-          switch (object = object.type, object) {
-            case REACT_FRAGMENT_TYPE:
-            case REACT_PROFILER_TYPE:
-            case REACT_STRICT_MODE_TYPE:
-            case REACT_SUSPENSE_TYPE:
-            case REACT_SUSPENSE_LIST_TYPE:
-            case REACT_VIEW_TRANSITION_TYPE:
-              return object;
-            default:
-              switch (object = object && object.$$typeof, object) {
-                case REACT_CONTEXT_TYPE:
-                case REACT_FORWARD_REF_TYPE:
-                case REACT_LAZY_TYPE:
-                case REACT_MEMO_TYPE:
-                  return object;
-                case REACT_CONSUMER_TYPE:
-                  return object;
-                default:
-                  return $$typeof;
-              }
-          }
-        case REACT_PORTAL_TYPE:
-          return $$typeof;
-      }
+const defaultGenerator = (componentName) => componentName;
+const createClassNameGenerator = () => {
+  let generate = defaultGenerator;
+  return {
+    configure(generator) {
+      generate = generator;
+    },
+    generate(componentName) {
+      return generate(componentName);
+    },
+    reset() {
+      generate = defaultGenerator;
     }
-  }
-  reactIs_production.ContextConsumer = REACT_CONSUMER_TYPE;
-  reactIs_production.ContextProvider = REACT_CONTEXT_TYPE;
-  reactIs_production.Element = REACT_ELEMENT_TYPE;
-  reactIs_production.ForwardRef = REACT_FORWARD_REF_TYPE;
-  reactIs_production.Fragment = REACT_FRAGMENT_TYPE;
-  reactIs_production.Lazy = REACT_LAZY_TYPE;
-  reactIs_production.Memo = REACT_MEMO_TYPE;
-  reactIs_production.Portal = REACT_PORTAL_TYPE;
-  reactIs_production.Profiler = REACT_PROFILER_TYPE;
-  reactIs_production.StrictMode = REACT_STRICT_MODE_TYPE;
-  reactIs_production.Suspense = REACT_SUSPENSE_TYPE;
-  reactIs_production.SuspenseList = REACT_SUSPENSE_LIST_TYPE;
-  reactIs_production.isContextConsumer = function(object) {
-    return typeOf(object) === REACT_CONSUMER_TYPE;
   };
-  reactIs_production.isContextProvider = function(object) {
-    return typeOf(object) === REACT_CONTEXT_TYPE;
-  };
-  reactIs_production.isElement = function(object) {
-    return "object" === typeof object && null !== object && object.$$typeof === REACT_ELEMENT_TYPE;
-  };
-  reactIs_production.isForwardRef = function(object) {
-    return typeOf(object) === REACT_FORWARD_REF_TYPE;
-  };
-  reactIs_production.isFragment = function(object) {
-    return typeOf(object) === REACT_FRAGMENT_TYPE;
-  };
-  reactIs_production.isLazy = function(object) {
-    return typeOf(object) === REACT_LAZY_TYPE;
-  };
-  reactIs_production.isMemo = function(object) {
-    return typeOf(object) === REACT_MEMO_TYPE;
-  };
-  reactIs_production.isPortal = function(object) {
-    return typeOf(object) === REACT_PORTAL_TYPE;
-  };
-  reactIs_production.isProfiler = function(object) {
-    return typeOf(object) === REACT_PROFILER_TYPE;
-  };
-  reactIs_production.isStrictMode = function(object) {
-    return typeOf(object) === REACT_STRICT_MODE_TYPE;
-  };
-  reactIs_production.isSuspense = function(object) {
-    return typeOf(object) === REACT_SUSPENSE_TYPE;
-  };
-  reactIs_production.isSuspenseList = function(object) {
-    return typeOf(object) === REACT_SUSPENSE_LIST_TYPE;
-  };
-  reactIs_production.isValidElementType = function(type2) {
-    return "string" === typeof type2 || "function" === typeof type2 || type2 === REACT_FRAGMENT_TYPE || type2 === REACT_PROFILER_TYPE || type2 === REACT_STRICT_MODE_TYPE || type2 === REACT_SUSPENSE_TYPE || type2 === REACT_SUSPENSE_LIST_TYPE || "object" === typeof type2 && null !== type2 && (type2.$$typeof === REACT_LAZY_TYPE || type2.$$typeof === REACT_MEMO_TYPE || type2.$$typeof === REACT_CONTEXT_TYPE || type2.$$typeof === REACT_CONSUMER_TYPE || type2.$$typeof === REACT_FORWARD_REF_TYPE || type2.$$typeof === REACT_CLIENT_REFERENCE || void 0 !== type2.getModuleId) ? true : false;
-  };
-  reactIs_production.typeOf = typeOf;
-  return reactIs_production;
+};
+const ClassNameGenerator = createClassNameGenerator();
+function formatMuiErrorMessage(code, ...args) {
+  const url = new URL(`https://mui.com/production-error/?code=${code}`);
+  args.forEach((arg2) => url.searchParams.append("args[]", arg2));
+  return `Minified MUI error #${code}; visit ${url} for the full message.`;
 }
-var reactIs_development$1 = {};
-/**
- * @license React
- * react-is.development.js
- *
- * Copyright (c) Meta Platforms, Inc. and affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-var hasRequiredReactIs_development$1;
-function requireReactIs_development$1() {
-  if (hasRequiredReactIs_development$1) return reactIs_development$1;
-  hasRequiredReactIs_development$1 = 1;
-  "production" !== process.env.NODE_ENV && function() {
-    function typeOf(object) {
-      if ("object" === typeof object && null !== object) {
-        var $$typeof = object.$$typeof;
-        switch ($$typeof) {
-          case REACT_ELEMENT_TYPE:
-            switch (object = object.type, object) {
-              case REACT_FRAGMENT_TYPE:
-              case REACT_PROFILER_TYPE:
-              case REACT_STRICT_MODE_TYPE:
-              case REACT_SUSPENSE_TYPE:
-              case REACT_SUSPENSE_LIST_TYPE:
-              case REACT_VIEW_TRANSITION_TYPE:
-                return object;
-              default:
-                switch (object = object && object.$$typeof, object) {
-                  case REACT_CONTEXT_TYPE:
-                  case REACT_FORWARD_REF_TYPE:
-                  case REACT_LAZY_TYPE:
-                  case REACT_MEMO_TYPE:
-                    return object;
-                  case REACT_CONSUMER_TYPE:
-                    return object;
-                  default:
-                    return $$typeof;
-                }
-            }
-          case REACT_PORTAL_TYPE:
-            return $$typeof;
-        }
-      }
-    }
-    var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_VIEW_TRANSITION_TYPE = Symbol.for("react.view_transition"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference");
-    reactIs_development$1.ContextConsumer = REACT_CONSUMER_TYPE;
-    reactIs_development$1.ContextProvider = REACT_CONTEXT_TYPE;
-    reactIs_development$1.Element = REACT_ELEMENT_TYPE;
-    reactIs_development$1.ForwardRef = REACT_FORWARD_REF_TYPE;
-    reactIs_development$1.Fragment = REACT_FRAGMENT_TYPE;
-    reactIs_development$1.Lazy = REACT_LAZY_TYPE;
-    reactIs_development$1.Memo = REACT_MEMO_TYPE;
-    reactIs_development$1.Portal = REACT_PORTAL_TYPE;
-    reactIs_development$1.Profiler = REACT_PROFILER_TYPE;
-    reactIs_development$1.StrictMode = REACT_STRICT_MODE_TYPE;
-    reactIs_development$1.Suspense = REACT_SUSPENSE_TYPE;
-    reactIs_development$1.SuspenseList = REACT_SUSPENSE_LIST_TYPE;
-    reactIs_development$1.isContextConsumer = function(object) {
-      return typeOf(object) === REACT_CONSUMER_TYPE;
-    };
-    reactIs_development$1.isContextProvider = function(object) {
-      return typeOf(object) === REACT_CONTEXT_TYPE;
-    };
-    reactIs_development$1.isElement = function(object) {
-      return "object" === typeof object && null !== object && object.$$typeof === REACT_ELEMENT_TYPE;
-    };
-    reactIs_development$1.isForwardRef = function(object) {
-      return typeOf(object) === REACT_FORWARD_REF_TYPE;
-    };
-    reactIs_development$1.isFragment = function(object) {
-      return typeOf(object) === REACT_FRAGMENT_TYPE;
-    };
-    reactIs_development$1.isLazy = function(object) {
-      return typeOf(object) === REACT_LAZY_TYPE;
-    };
-    reactIs_development$1.isMemo = function(object) {
-      return typeOf(object) === REACT_MEMO_TYPE;
-    };
-    reactIs_development$1.isPortal = function(object) {
-      return typeOf(object) === REACT_PORTAL_TYPE;
-    };
-    reactIs_development$1.isProfiler = function(object) {
-      return typeOf(object) === REACT_PROFILER_TYPE;
-    };
-    reactIs_development$1.isStrictMode = function(object) {
-      return typeOf(object) === REACT_STRICT_MODE_TYPE;
-    };
-    reactIs_development$1.isSuspense = function(object) {
-      return typeOf(object) === REACT_SUSPENSE_TYPE;
-    };
-    reactIs_development$1.isSuspenseList = function(object) {
-      return typeOf(object) === REACT_SUSPENSE_LIST_TYPE;
-    };
-    reactIs_development$1.isValidElementType = function(type2) {
-      return "string" === typeof type2 || "function" === typeof type2 || type2 === REACT_FRAGMENT_TYPE || type2 === REACT_PROFILER_TYPE || type2 === REACT_STRICT_MODE_TYPE || type2 === REACT_SUSPENSE_TYPE || type2 === REACT_SUSPENSE_LIST_TYPE || "object" === typeof type2 && null !== type2 && (type2.$$typeof === REACT_LAZY_TYPE || type2.$$typeof === REACT_MEMO_TYPE || type2.$$typeof === REACT_CONTEXT_TYPE || type2.$$typeof === REACT_CONSUMER_TYPE || type2.$$typeof === REACT_FORWARD_REF_TYPE || type2.$$typeof === REACT_CLIENT_REFERENCE || void 0 !== type2.getModuleId) ? true : false;
-    };
-    reactIs_development$1.typeOf = typeOf;
-  }();
-  return reactIs_development$1;
-}
-var hasRequiredReactIs$1;
-function requireReactIs$1() {
-  if (hasRequiredReactIs$1) return reactIs$1.exports;
-  hasRequiredReactIs$1 = 1;
-  if (process.env.NODE_ENV === "production") {
-    reactIs$1.exports = /* @__PURE__ */ requireReactIs_production();
-  } else {
-    reactIs$1.exports = /* @__PURE__ */ requireReactIs_development$1();
+function capitalize(string) {
+  if (typeof string !== "string") {
+    throw new Error(process.env.NODE_ENV !== "production" ? "MUI: `capitalize(string)` expects a string argument." : formatMuiErrorMessage(7));
   }
-  return reactIs$1.exports;
-}
-var reactIsExports = /* @__PURE__ */ requireReactIs$1();
-function isPlainObject(item) {
-  if (typeof item !== "object" || item === null) {
-    return false;
-  }
-  const prototype = Object.getPrototypeOf(item);
-  return (prototype === null || prototype === Object.prototype || Object.getPrototypeOf(prototype) === null) && !(Symbol.toStringTag in item) && !(Symbol.iterator in item);
-}
-function deepClone(source) {
-  if (/* @__PURE__ */ React.isValidElement(source) || reactIsExports.isValidElementType(source) || !isPlainObject(source)) {
-    return source;
-  }
-  const output = {};
-  Object.keys(source).forEach((key) => {
-    output[key] = deepClone(source[key]);
-  });
-  return output;
-}
-function deepmerge(target, source, options = {
-  clone: true
-}) {
-  const output = options.clone ? {
-    ...target
-  } : target;
-  if (isPlainObject(target) && isPlainObject(source)) {
-    Object.keys(source).forEach((key) => {
-      if (/* @__PURE__ */ React.isValidElement(source[key]) || reactIsExports.isValidElementType(source[key])) {
-        output[key] = source[key];
-      } else if (isPlainObject(source[key]) && // Avoid prototype pollution
-      Object.prototype.hasOwnProperty.call(target, key) && isPlainObject(target[key])) {
-        output[key] = deepmerge(target[key], source[key], options);
-      } else if (options.clone) {
-        output[key] = isPlainObject(source[key]) ? deepClone(source[key]) : source[key];
-      } else {
-        output[key] = source[key];
-      }
-    });
-  }
-  return output;
+  return string.charAt(0).toUpperCase() + string.slice(1);
 }
 var propTypes = { exports: {} };
-var reactIs = { exports: {} };
+var reactIs$1 = { exports: {} };
 var reactIs_production_min = {};
-/** @license React v16.13.1
- * react-is.production.min.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
 var hasRequiredReactIs_production_min;
 function requireReactIs_production_min() {
   if (hasRequiredReactIs_production_min) return reactIs_production_min;
@@ -38030,19 +38135,11 @@ function requireReactIs_production_min() {
   reactIs_production_min.typeOf = z;
   return reactIs_production_min;
 }
-var reactIs_development = {};
-/** @license React v16.13.1
- * react-is.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-var hasRequiredReactIs_development;
-function requireReactIs_development() {
-  if (hasRequiredReactIs_development) return reactIs_development;
-  hasRequiredReactIs_development = 1;
+var reactIs_development$1 = {};
+var hasRequiredReactIs_development$1;
+function requireReactIs_development$1() {
+  if (hasRequiredReactIs_development$1) return reactIs_development$1;
+  hasRequiredReactIs_development$1 = 1;
   if (process.env.NODE_ENV !== "production") {
     (function() {
       var hasSymbol = typeof Symbol === "function" && Symbol.for;
@@ -38160,54 +38257,49 @@ function requireReactIs_development() {
       function isSuspense(object) {
         return typeOf(object) === REACT_SUSPENSE_TYPE;
       }
-      reactIs_development.AsyncMode = AsyncMode;
-      reactIs_development.ConcurrentMode = ConcurrentMode;
-      reactIs_development.ContextConsumer = ContextConsumer;
-      reactIs_development.ContextProvider = ContextProvider;
-      reactIs_development.Element = Element;
-      reactIs_development.ForwardRef = ForwardRef;
-      reactIs_development.Fragment = Fragment;
-      reactIs_development.Lazy = Lazy;
-      reactIs_development.Memo = Memo;
-      reactIs_development.Portal = Portal;
-      reactIs_development.Profiler = Profiler;
-      reactIs_development.StrictMode = StrictMode;
-      reactIs_development.Suspense = Suspense;
-      reactIs_development.isAsyncMode = isAsyncMode;
-      reactIs_development.isConcurrentMode = isConcurrentMode;
-      reactIs_development.isContextConsumer = isContextConsumer;
-      reactIs_development.isContextProvider = isContextProvider;
-      reactIs_development.isElement = isElement;
-      reactIs_development.isForwardRef = isForwardRef;
-      reactIs_development.isFragment = isFragment;
-      reactIs_development.isLazy = isLazy;
-      reactIs_development.isMemo = isMemo;
-      reactIs_development.isPortal = isPortal;
-      reactIs_development.isProfiler = isProfiler;
-      reactIs_development.isStrictMode = isStrictMode;
-      reactIs_development.isSuspense = isSuspense;
-      reactIs_development.isValidElementType = isValidElementType;
-      reactIs_development.typeOf = typeOf;
+      reactIs_development$1.AsyncMode = AsyncMode;
+      reactIs_development$1.ConcurrentMode = ConcurrentMode;
+      reactIs_development$1.ContextConsumer = ContextConsumer;
+      reactIs_development$1.ContextProvider = ContextProvider;
+      reactIs_development$1.Element = Element;
+      reactIs_development$1.ForwardRef = ForwardRef;
+      reactIs_development$1.Fragment = Fragment;
+      reactIs_development$1.Lazy = Lazy;
+      reactIs_development$1.Memo = Memo;
+      reactIs_development$1.Portal = Portal;
+      reactIs_development$1.Profiler = Profiler;
+      reactIs_development$1.StrictMode = StrictMode;
+      reactIs_development$1.Suspense = Suspense;
+      reactIs_development$1.isAsyncMode = isAsyncMode;
+      reactIs_development$1.isConcurrentMode = isConcurrentMode;
+      reactIs_development$1.isContextConsumer = isContextConsumer;
+      reactIs_development$1.isContextProvider = isContextProvider;
+      reactIs_development$1.isElement = isElement;
+      reactIs_development$1.isForwardRef = isForwardRef;
+      reactIs_development$1.isFragment = isFragment;
+      reactIs_development$1.isLazy = isLazy;
+      reactIs_development$1.isMemo = isMemo;
+      reactIs_development$1.isPortal = isPortal;
+      reactIs_development$1.isProfiler = isProfiler;
+      reactIs_development$1.isStrictMode = isStrictMode;
+      reactIs_development$1.isSuspense = isSuspense;
+      reactIs_development$1.isValidElementType = isValidElementType;
+      reactIs_development$1.typeOf = typeOf;
     })();
   }
-  return reactIs_development;
+  return reactIs_development$1;
 }
-var hasRequiredReactIs;
-function requireReactIs() {
-  if (hasRequiredReactIs) return reactIs.exports;
-  hasRequiredReactIs = 1;
+var hasRequiredReactIs$1;
+function requireReactIs$1() {
+  if (hasRequiredReactIs$1) return reactIs$1.exports;
+  hasRequiredReactIs$1 = 1;
   if (process.env.NODE_ENV === "production") {
-    reactIs.exports = requireReactIs_production_min();
+    reactIs$1.exports = requireReactIs_production_min();
   } else {
-    reactIs.exports = requireReactIs_development();
+    reactIs$1.exports = requireReactIs_development$1();
   }
-  return reactIs.exports;
+  return reactIs$1.exports;
 }
-/*
-object-assign
-(c) Sindre Sorhus
-@license MIT
-*/
 var objectAssign;
 var hasRequiredObjectAssign;
 function requireObjectAssign() {
@@ -38363,7 +38455,7 @@ var hasRequiredFactoryWithTypeCheckers;
 function requireFactoryWithTypeCheckers() {
   if (hasRequiredFactoryWithTypeCheckers) return factoryWithTypeCheckers;
   hasRequiredFactoryWithTypeCheckers = 1;
-  var ReactIs = requireReactIs();
+  var ReactIs = requireReactIs$1();
   var assign2 = requireObjectAssign();
   var ReactPropTypesSecret = /* @__PURE__ */ requireReactPropTypesSecret();
   var has2 = /* @__PURE__ */ requireHas();
@@ -38860,7 +38952,7 @@ function requirePropTypes() {
   if (hasRequiredPropTypes) return propTypes.exports;
   hasRequiredPropTypes = 1;
   if (process.env.NODE_ENV !== "production") {
-    var ReactIs = requireReactIs();
+    var ReactIs = requireReactIs$1();
     var throwOnDirectAccess = true;
     propTypes.exports = /* @__PURE__ */ requireFactoryWithTypeCheckers()(ReactIs.isElement, throwOnDirectAccess);
   } else {
@@ -38870,82 +38962,18 @@ function requirePropTypes() {
 }
 var propTypesExports = /* @__PURE__ */ requirePropTypes();
 const PropTypes = /* @__PURE__ */ getDefaultExportFromCjs(propTypesExports);
-function formatMuiErrorMessage(code, ...args) {
-  const url = new URL(`https://mui.com/production-error/?code=${code}`);
-  args.forEach((arg2) => url.searchParams.append("args[]", arg2));
-  return `Minified MUI error #${code}; visit ${url} for the full message.`;
+function r(e) {
+  var t, f, n = "";
+  if ("string" == typeof e || "number" == typeof e) n += e;
+  else if ("object" == typeof e) if (Array.isArray(e)) {
+    var o = e.length;
+    for (t = 0; t < o; t++) e[t] && (f = r(e[t])) && (n && (n += " "), n += f);
+  } else for (f in e) e[f] && (n && (n += " "), n += f);
+  return n;
 }
-function getFunctionComponentName(Component, fallback = "") {
-  return Component.displayName || Component.name || fallback;
-}
-function getWrappedName(outerType, innerType, wrapperName) {
-  const functionName = getFunctionComponentName(innerType);
-  return outerType.displayName || (functionName !== "" ? `${wrapperName}(${functionName})` : wrapperName);
-}
-function getDisplayName(Component) {
-  if (Component == null) {
-    return void 0;
-  }
-  if (typeof Component === "string") {
-    return Component;
-  }
-  if (typeof Component === "function") {
-    return getFunctionComponentName(Component, "Component");
-  }
-  if (typeof Component === "object") {
-    switch (Component.$$typeof) {
-      case reactIsExports.ForwardRef:
-        return getWrappedName(Component, Component.render, "ForwardRef");
-      case reactIsExports.Memo:
-        return getWrappedName(Component, Component.type, "memo");
-      default:
-        return void 0;
-    }
-  }
-  return void 0;
-}
-function capitalize(string) {
-  if (typeof string !== "string") {
-    throw new Error(process.env.NODE_ENV !== "production" ? "MUI: `capitalize(string)` expects a string argument." : formatMuiErrorMessage(7));
-  }
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
-function resolveProps(defaultProps2, props) {
-  const output = {
-    ...props
-  };
-  for (const key in defaultProps2) {
-    if (Object.prototype.hasOwnProperty.call(defaultProps2, key)) {
-      const propName = key;
-      if (propName === "components" || propName === "slots") {
-        output[propName] = {
-          ...defaultProps2[propName],
-          ...output[propName]
-        };
-      } else if (propName === "componentsProps" || propName === "slotProps") {
-        const defaultSlotProps = defaultProps2[propName];
-        const slotProps = props[propName];
-        if (!slotProps) {
-          output[propName] = defaultSlotProps || {};
-        } else if (!defaultSlotProps) {
-          output[propName] = slotProps;
-        } else {
-          output[propName] = {
-            ...slotProps
-          };
-          for (const slotKey in defaultSlotProps) {
-            if (Object.prototype.hasOwnProperty.call(defaultSlotProps, slotKey)) {
-              const slotPropName = slotKey;
-              output[propName][slotPropName] = resolveProps(defaultSlotProps[slotPropName], slotProps[slotPropName]);
-            }
-          }
-        }
-      } else if (output[propName] === void 0) {
-        output[propName] = defaultProps2[propName];
-      }
-    }
-  }
-  return output;
+function clsx() {
+  for (var e, t, f = 0, n = "", o = arguments.length; f < o; f++) (e = arguments[f]) && (t = r(e)) && (n && (n += " "), n += t);
+  return n;
 }
 function composeClasses(slots, getUtilityClass, classes = void 0) {
   const output = {};
@@ -38967,62 +38995,241 @@ function composeClasses(slots, getUtilityClass, classes = void 0) {
   }
   return output;
 }
-const defaultGenerator = (componentName) => componentName;
-const createClassNameGenerator = () => {
-  let generate = defaultGenerator;
-  return {
-    configure(generator) {
-      generate = generator;
-    },
-    generate(componentName) {
-      return generate(componentName);
-    },
-    reset() {
-      generate = defaultGenerator;
+var reactIs = { exports: {} };
+var reactIs_production = {};
+var hasRequiredReactIs_production;
+function requireReactIs_production() {
+  if (hasRequiredReactIs_production) return reactIs_production;
+  hasRequiredReactIs_production = 1;
+  var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_VIEW_TRANSITION_TYPE = Symbol.for("react.view_transition"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference");
+  function typeOf(object) {
+    if ("object" === typeof object && null !== object) {
+      var $$typeof = object.$$typeof;
+      switch ($$typeof) {
+        case REACT_ELEMENT_TYPE:
+          switch (object = object.type, object) {
+            case REACT_FRAGMENT_TYPE:
+            case REACT_PROFILER_TYPE:
+            case REACT_STRICT_MODE_TYPE:
+            case REACT_SUSPENSE_TYPE:
+            case REACT_SUSPENSE_LIST_TYPE:
+            case REACT_VIEW_TRANSITION_TYPE:
+              return object;
+            default:
+              switch (object = object && object.$$typeof, object) {
+                case REACT_CONTEXT_TYPE:
+                case REACT_FORWARD_REF_TYPE:
+                case REACT_LAZY_TYPE:
+                case REACT_MEMO_TYPE:
+                  return object;
+                case REACT_CONSUMER_TYPE:
+                  return object;
+                default:
+                  return $$typeof;
+              }
+          }
+        case REACT_PORTAL_TYPE:
+          return $$typeof;
+      }
     }
+  }
+  reactIs_production.ContextConsumer = REACT_CONSUMER_TYPE;
+  reactIs_production.ContextProvider = REACT_CONTEXT_TYPE;
+  reactIs_production.Element = REACT_ELEMENT_TYPE;
+  reactIs_production.ForwardRef = REACT_FORWARD_REF_TYPE;
+  reactIs_production.Fragment = REACT_FRAGMENT_TYPE;
+  reactIs_production.Lazy = REACT_LAZY_TYPE;
+  reactIs_production.Memo = REACT_MEMO_TYPE;
+  reactIs_production.Portal = REACT_PORTAL_TYPE;
+  reactIs_production.Profiler = REACT_PROFILER_TYPE;
+  reactIs_production.StrictMode = REACT_STRICT_MODE_TYPE;
+  reactIs_production.Suspense = REACT_SUSPENSE_TYPE;
+  reactIs_production.SuspenseList = REACT_SUSPENSE_LIST_TYPE;
+  reactIs_production.isContextConsumer = function(object) {
+    return typeOf(object) === REACT_CONSUMER_TYPE;
   };
-};
-const ClassNameGenerator = createClassNameGenerator();
-const globalStateClasses = {
-  active: "active",
-  checked: "checked",
-  completed: "completed",
-  disabled: "disabled",
-  error: "error",
-  expanded: "expanded",
-  focused: "focused",
-  focusVisible: "focusVisible",
-  open: "open",
-  readOnly: "readOnly",
-  required: "required",
-  selected: "selected"
-};
-function generateUtilityClass(componentName, slot, globalStatePrefix = "Mui") {
-  const globalStateClass = globalStateClasses[slot];
-  return globalStateClass ? `${globalStatePrefix}-${globalStateClass}` : `${ClassNameGenerator.generate(componentName)}-${slot}`;
+  reactIs_production.isContextProvider = function(object) {
+    return typeOf(object) === REACT_CONTEXT_TYPE;
+  };
+  reactIs_production.isElement = function(object) {
+    return "object" === typeof object && null !== object && object.$$typeof === REACT_ELEMENT_TYPE;
+  };
+  reactIs_production.isForwardRef = function(object) {
+    return typeOf(object) === REACT_FORWARD_REF_TYPE;
+  };
+  reactIs_production.isFragment = function(object) {
+    return typeOf(object) === REACT_FRAGMENT_TYPE;
+  };
+  reactIs_production.isLazy = function(object) {
+    return typeOf(object) === REACT_LAZY_TYPE;
+  };
+  reactIs_production.isMemo = function(object) {
+    return typeOf(object) === REACT_MEMO_TYPE;
+  };
+  reactIs_production.isPortal = function(object) {
+    return typeOf(object) === REACT_PORTAL_TYPE;
+  };
+  reactIs_production.isProfiler = function(object) {
+    return typeOf(object) === REACT_PROFILER_TYPE;
+  };
+  reactIs_production.isStrictMode = function(object) {
+    return typeOf(object) === REACT_STRICT_MODE_TYPE;
+  };
+  reactIs_production.isSuspense = function(object) {
+    return typeOf(object) === REACT_SUSPENSE_TYPE;
+  };
+  reactIs_production.isSuspenseList = function(object) {
+    return typeOf(object) === REACT_SUSPENSE_LIST_TYPE;
+  };
+  reactIs_production.isValidElementType = function(type2) {
+    return "string" === typeof type2 || "function" === typeof type2 || type2 === REACT_FRAGMENT_TYPE || type2 === REACT_PROFILER_TYPE || type2 === REACT_STRICT_MODE_TYPE || type2 === REACT_SUSPENSE_TYPE || type2 === REACT_SUSPENSE_LIST_TYPE || "object" === typeof type2 && null !== type2 && (type2.$$typeof === REACT_LAZY_TYPE || type2.$$typeof === REACT_MEMO_TYPE || type2.$$typeof === REACT_CONTEXT_TYPE || type2.$$typeof === REACT_CONSUMER_TYPE || type2.$$typeof === REACT_FORWARD_REF_TYPE || type2.$$typeof === REACT_CLIENT_REFERENCE || void 0 !== type2.getModuleId) ? true : false;
+  };
+  reactIs_production.typeOf = typeOf;
+  return reactIs_production;
 }
-function generateUtilityClasses(componentName, slots, globalStatePrefix = "Mui") {
-  const result = {};
-  slots.forEach((slot) => {
-    result[slot] = generateUtilityClass(componentName, slot, globalStatePrefix);
+var reactIs_development = {};
+var hasRequiredReactIs_development;
+function requireReactIs_development() {
+  if (hasRequiredReactIs_development) return reactIs_development;
+  hasRequiredReactIs_development = 1;
+  "production" !== process.env.NODE_ENV && (function() {
+    function typeOf(object) {
+      if ("object" === typeof object && null !== object) {
+        var $$typeof = object.$$typeof;
+        switch ($$typeof) {
+          case REACT_ELEMENT_TYPE:
+            switch (object = object.type, object) {
+              case REACT_FRAGMENT_TYPE:
+              case REACT_PROFILER_TYPE:
+              case REACT_STRICT_MODE_TYPE:
+              case REACT_SUSPENSE_TYPE:
+              case REACT_SUSPENSE_LIST_TYPE:
+              case REACT_VIEW_TRANSITION_TYPE:
+                return object;
+              default:
+                switch (object = object && object.$$typeof, object) {
+                  case REACT_CONTEXT_TYPE:
+                  case REACT_FORWARD_REF_TYPE:
+                  case REACT_LAZY_TYPE:
+                  case REACT_MEMO_TYPE:
+                    return object;
+                  case REACT_CONSUMER_TYPE:
+                    return object;
+                  default:
+                    return $$typeof;
+                }
+            }
+          case REACT_PORTAL_TYPE:
+            return $$typeof;
+        }
+      }
+    }
+    var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_VIEW_TRANSITION_TYPE = Symbol.for("react.view_transition"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference");
+    reactIs_development.ContextConsumer = REACT_CONSUMER_TYPE;
+    reactIs_development.ContextProvider = REACT_CONTEXT_TYPE;
+    reactIs_development.Element = REACT_ELEMENT_TYPE;
+    reactIs_development.ForwardRef = REACT_FORWARD_REF_TYPE;
+    reactIs_development.Fragment = REACT_FRAGMENT_TYPE;
+    reactIs_development.Lazy = REACT_LAZY_TYPE;
+    reactIs_development.Memo = REACT_MEMO_TYPE;
+    reactIs_development.Portal = REACT_PORTAL_TYPE;
+    reactIs_development.Profiler = REACT_PROFILER_TYPE;
+    reactIs_development.StrictMode = REACT_STRICT_MODE_TYPE;
+    reactIs_development.Suspense = REACT_SUSPENSE_TYPE;
+    reactIs_development.SuspenseList = REACT_SUSPENSE_LIST_TYPE;
+    reactIs_development.isContextConsumer = function(object) {
+      return typeOf(object) === REACT_CONSUMER_TYPE;
+    };
+    reactIs_development.isContextProvider = function(object) {
+      return typeOf(object) === REACT_CONTEXT_TYPE;
+    };
+    reactIs_development.isElement = function(object) {
+      return "object" === typeof object && null !== object && object.$$typeof === REACT_ELEMENT_TYPE;
+    };
+    reactIs_development.isForwardRef = function(object) {
+      return typeOf(object) === REACT_FORWARD_REF_TYPE;
+    };
+    reactIs_development.isFragment = function(object) {
+      return typeOf(object) === REACT_FRAGMENT_TYPE;
+    };
+    reactIs_development.isLazy = function(object) {
+      return typeOf(object) === REACT_LAZY_TYPE;
+    };
+    reactIs_development.isMemo = function(object) {
+      return typeOf(object) === REACT_MEMO_TYPE;
+    };
+    reactIs_development.isPortal = function(object) {
+      return typeOf(object) === REACT_PORTAL_TYPE;
+    };
+    reactIs_development.isProfiler = function(object) {
+      return typeOf(object) === REACT_PROFILER_TYPE;
+    };
+    reactIs_development.isStrictMode = function(object) {
+      return typeOf(object) === REACT_STRICT_MODE_TYPE;
+    };
+    reactIs_development.isSuspense = function(object) {
+      return typeOf(object) === REACT_SUSPENSE_TYPE;
+    };
+    reactIs_development.isSuspenseList = function(object) {
+      return typeOf(object) === REACT_SUSPENSE_LIST_TYPE;
+    };
+    reactIs_development.isValidElementType = function(type2) {
+      return "string" === typeof type2 || "function" === typeof type2 || type2 === REACT_FRAGMENT_TYPE || type2 === REACT_PROFILER_TYPE || type2 === REACT_STRICT_MODE_TYPE || type2 === REACT_SUSPENSE_TYPE || type2 === REACT_SUSPENSE_LIST_TYPE || "object" === typeof type2 && null !== type2 && (type2.$$typeof === REACT_LAZY_TYPE || type2.$$typeof === REACT_MEMO_TYPE || type2.$$typeof === REACT_CONTEXT_TYPE || type2.$$typeof === REACT_CONSUMER_TYPE || type2.$$typeof === REACT_FORWARD_REF_TYPE || type2.$$typeof === REACT_CLIENT_REFERENCE || void 0 !== type2.getModuleId) ? true : false;
+    };
+    reactIs_development.typeOf = typeOf;
+  })();
+  return reactIs_development;
+}
+var hasRequiredReactIs;
+function requireReactIs() {
+  if (hasRequiredReactIs) return reactIs.exports;
+  hasRequiredReactIs = 1;
+  if (process.env.NODE_ENV === "production") {
+    reactIs.exports = /* @__PURE__ */ requireReactIs_production();
+  } else {
+    reactIs.exports = /* @__PURE__ */ requireReactIs_development();
+  }
+  return reactIs.exports;
+}
+var reactIsExports = /* @__PURE__ */ requireReactIs();
+function isPlainObject(item) {
+  if (typeof item !== "object" || item === null) {
+    return false;
+  }
+  const prototype = Object.getPrototypeOf(item);
+  return (prototype === null || prototype === Object.prototype || Object.getPrototypeOf(prototype) === null) && !(Symbol.toStringTag in item) && !(Symbol.iterator in item);
+}
+function deepClone(source) {
+  if (/* @__PURE__ */ React.isValidElement(source) || reactIsExports.isValidElementType(source) || !isPlainObject(source)) {
+    return source;
+  }
+  const output = {};
+  Object.keys(source).forEach((key) => {
+    output[key] = deepClone(source[key]);
   });
-  return result;
+  return output;
 }
-function clamp(val, min2 = Number.MIN_SAFE_INTEGER, max2 = Number.MAX_SAFE_INTEGER) {
-  return Math.max(min2, Math.min(val, max2));
-}
-function r(e) {
-  var t, f, n = "";
-  if ("string" == typeof e || "number" == typeof e) n += e;
-  else if ("object" == typeof e) if (Array.isArray(e)) {
-    var o = e.length;
-    for (t = 0; t < o; t++) e[t] && (f = r(e[t])) && (n && (n += " "), n += f);
-  } else for (f in e) e[f] && (n && (n += " "), n += f);
-  return n;
-}
-function clsx() {
-  for (var e, t, f = 0, n = "", o = arguments.length; f < o; f++) (e = arguments[f]) && (t = r(e)) && (n && (n += " "), n += t);
-  return n;
+function deepmerge(target, source, options = {
+  clone: true
+}) {
+  const output = options.clone ? {
+    ...target
+  } : target;
+  if (isPlainObject(target) && isPlainObject(source)) {
+    Object.keys(source).forEach((key) => {
+      if (/* @__PURE__ */ React.isValidElement(source[key]) || reactIsExports.isValidElementType(source[key])) {
+        output[key] = source[key];
+      } else if (isPlainObject(source[key]) && // Avoid prototype pollution
+      Object.prototype.hasOwnProperty.call(target, key) && isPlainObject(target[key])) {
+        output[key] = deepmerge(target[key], source[key], options);
+      } else if (options.clone) {
+        output[key] = isPlainObject(source[key]) ? deepClone(source[key]) : source[key];
+      } else {
+        output[key] = source[key];
+      }
+    });
+  }
+  return output;
 }
 function merge$1(acc, item) {
   if (!item) {
@@ -39039,9 +39246,8 @@ function sortContainerQueries(theme, css) {
     return css;
   }
   const sorted = Object.keys(css).filter((key) => key.startsWith("@container")).sort((a, b) => {
-    var _a, _b;
     const regex = /min-width:\s*([0-9.]+)/;
-    return +(((_a = a.match(regex)) == null ? void 0 : _a[1]) || 0) - +(((_b = b.match(regex)) == null ? void 0 : _b[1]) || 0);
+    return +(a.match(regex)?.[1] || 0) - +(b.match(regex)?.[1] || 0);
   });
   if (!sorted.length) {
     return css;
@@ -39157,8 +39363,7 @@ function handleBreakpoints(props, propValue, styleFromPropValue) {
   return output;
 }
 function createEmptyBreakpointObject(breakpointsInput = {}) {
-  var _a;
-  const breakpointsInOrder = (_a = breakpointsInput.keys) == null ? void 0 : _a.reduce((acc, key) => {
+  const breakpointsInOrder = breakpointsInput.keys?.reduce((acc, key) => {
     const breakpointStyleKey = breakpointsInput.up(key);
     acc[breakpointStyleKey] = {};
     return acc;
@@ -39296,6 +39501,12 @@ function createUnaryUnit(theme, themeKey, defaultValue, propName) {
         }
       }
       if (typeof themeSpacing === "string") {
+        if (themeSpacing.startsWith("var(") && val === 0) {
+          return 0;
+        }
+        if (themeSpacing.startsWith("var(") && val === 1) {
+          return themeSpacing;
+        }
         return `calc(${val} * ${themeSpacing})`;
       }
       return themeSpacing * val;
@@ -39320,6 +39531,9 @@ function createUnaryUnit(theme, themeKey, defaultValue, propName) {
       }
       if (typeof transformed === "number") {
         return -transformed;
+      }
+      if (typeof transformed === "string" && transformed.startsWith("var(")) {
+        return `calc(-1 * ${transformed})`;
       }
       return `-${transformed}`;
     };
@@ -39542,14 +39756,13 @@ const width = style$1({
 const maxWidth = (props) => {
   if (props.maxWidth !== void 0 && props.maxWidth !== null) {
     const styleFromPropValue = (propValue) => {
-      var _a, _b, _c, _d, _e;
-      const breakpoint = ((_c = (_b = (_a = props.theme) == null ? void 0 : _a.breakpoints) == null ? void 0 : _b.values) == null ? void 0 : _c[propValue]) || values[propValue];
+      const breakpoint = props.theme?.breakpoints?.values?.[propValue] || values[propValue];
       if (!breakpoint) {
         return {
           maxWidth: sizingTransform(propValue)
         };
       }
-      if (((_e = (_d = props.theme) == null ? void 0 : _d.breakpoints) == null ? void 0 : _e.unit) !== "px") {
+      if (props.theme?.breakpoints?.unit !== "px") {
         return {
           maxWidth: `${breakpoint}${props.theme.breakpoints.unit}`
         };
@@ -39936,7 +40149,8 @@ function unstable_createStyleFunctionSx() {
   function styleFunctionSx2(props) {
     const {
       sx,
-      theme = {}
+      theme = {},
+      nested
     } = props || {};
     if (!sx) {
       return null;
@@ -39970,7 +40184,8 @@ function unstable_createStyleFunctionSx() {
               if (objectsHaveSameKeys(breakpointsValues, value)) {
                 css[styleKey] = styleFunctionSx2({
                   sx: value,
-                  theme
+                  theme,
+                  nested: true
                 });
               } else {
                 css = merge$1(css, breakpointsValues);
@@ -39981,6 +40196,11 @@ function unstable_createStyleFunctionSx() {
           }
         }
       });
+      if (!nested && theme.modularCssLayers) {
+        return {
+          "@layer sx": sortContainerQueries(theme, removeUnusedBreakpoints(breakpointsKeys, css))
+        };
+      }
       return sortContainerQueries(theme, removeUnusedBreakpoints(breakpointsKeys, css));
     }
     return Array.isArray(sx) ? sx.map(traverse) : traverse(sx);
@@ -39998,7 +40218,6 @@ function _extends() {
     return n;
   }, _extends.apply(null, arguments);
 }
-var isDevelopment$2 = false;
 function sheetForTag(tag) {
   if (tag.sheet) {
     return tag.sheet;
@@ -40020,7 +40239,7 @@ function createStyleElement(options) {
   tag.setAttribute("data-s", "");
   return tag;
 }
-var StyleSheet = /* @__PURE__ */ function() {
+var StyleSheet = /* @__PURE__ */ (function() {
   function StyleSheet2(options) {
     var _this = this;
     this._insertTag = function(tag) {
@@ -40039,7 +40258,7 @@ var StyleSheet = /* @__PURE__ */ function() {
       _this.container.insertBefore(tag, before);
       _this.tags.push(tag);
     };
-    this.isSpeedy = options.speedy === void 0 ? !isDevelopment$2 : options.speedy;
+    this.isSpeedy = options.speedy === void 0 ? true : options.speedy;
     this.tags = [];
     this.ctr = 0;
     this.nonce = options.nonce;
@@ -40078,7 +40297,7 @@ var StyleSheet = /* @__PURE__ */ function() {
     this.ctr = 0;
   };
   return StyleSheet2;
-}();
+})();
 var MS = "-ms-";
 var MOZ = "-moz-";
 var WEBKIT = "-webkit-";
@@ -40905,7 +41124,6 @@ var unitlessKeys = {
   strokeOpacity: 1,
   strokeWidth: 1
 };
-var isDevelopment$1 = false;
 var hyphenateRegex = /[A-Z]|^ms/g;
 var animationRegex = /_EMO_([^_]+?)_([^]*?)_EMO_/g;
 var isCustomProperty = function isCustomProperty2(property) {
@@ -40938,7 +41156,6 @@ var processStyleValue = function processStyleValue2(key, value) {
   }
   return value;
 };
-var noComponentSelectorMessage = "Component selectors can only be used in conjunction with @emotion/babel-plugin, the swc Emotion plugin, or another Emotion-aware compiler transform.";
 function handleInterpolation(mergedProps, registered, interpolation) {
   if (interpolation == null) {
     return "";
@@ -41013,9 +41230,6 @@ function createStringFromObject(mergedProps, registered, obj) {
           string += processStyleName(key) + ":" + processStyleValue(key, asString) + ";";
         }
       } else {
-        if (key === "NO_COMPONENT_SELECTOR" && isDevelopment$1) {
-          throw new Error(noComponentSelectorMessage);
-        }
         if (Array.isArray(value) && typeof value[0] === "string" && (registered == null || registered[value[0]] === void 0)) {
           for (var _i = 0; _i < value.length; _i++) {
             if (isProcessableValue(value[_i])) {
@@ -41108,7 +41322,6 @@ var isPropValid = /* @__PURE__ */ memoize(
   }
   /* Z+1 */
 );
-var isDevelopment = false;
 var testOmitPropsOnStringTag = isPropValid;
 var testOmitPropsOnComponent = function testOmitPropsOnComponent2(key) {
   return key !== "theme";
@@ -41217,9 +41430,6 @@ var createStyled$1 = function createStyled(tag, options) {
     Styled.__emotion_forwardProp = shouldForwardProp2;
     Object.defineProperty(Styled, "toString", {
       value: function value() {
-        if (targetClassName === void 0 && isDevelopment) {
-          return "NO_COMPONENT_SELECTOR";
-        }
         return "." + targetClassName;
       }
     });
@@ -41373,13 +41583,6 @@ var newStyled = createStyled$1.bind(null);
 tags.forEach(function(tagName) {
   newStyled[tagName] = newStyled(tagName);
 });
-/**
- * @mui/styled-engine v6.5.0
- *
- * @license MIT
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
 function styled$1(tag, options) {
   const stylesFactory = newStyled(tag, options);
   if (process.env.NODE_ENV !== "production") {
@@ -41505,10 +41708,9 @@ function createSpacing(spacingInput = 8, transform = createUnarySpacing({
   return spacing;
 }
 function applyStyles(key, styles) {
-  var _a;
   const theme = this;
   if (theme.vars) {
-    if (!((_a = theme.colorSchemes) == null ? void 0 : _a[key]) || typeof theme.getColorSchemeSelector !== "function") {
+    if (!theme.colorSchemes?.[key] || typeof theme.getColorSchemeSelector !== "function") {
       return {};
     }
     let selector = theme.getColorSchemeSelector(key);
@@ -41557,7 +41759,7 @@ function createTheme$1(options = {}, ...args) {
   muiTheme = args.reduce((acc, argument) => deepmerge(acc, argument), muiTheme);
   muiTheme.unstable_sxConfig = {
     ...defaultSxConfig,
-    ...other == null ? void 0 : other.unstable_sxConfig
+    ...other?.unstable_sxConfig
   };
   muiTheme.unstable_sx = function sx(props) {
     return styleFunctionSx({
@@ -41566,6 +41768,60 @@ function createTheme$1(options = {}, ...args) {
     });
   };
   return muiTheme;
+}
+const globalStateClasses = {
+  active: "active",
+  checked: "checked",
+  completed: "completed",
+  disabled: "disabled",
+  error: "error",
+  expanded: "expanded",
+  focused: "focused",
+  focusVisible: "focusVisible",
+  open: "open",
+  readOnly: "readOnly",
+  required: "required",
+  selected: "selected"
+};
+function generateUtilityClass(componentName, slot, globalStatePrefix = "Mui") {
+  const globalStateClass = globalStateClasses[slot];
+  return globalStateClass ? `${globalStatePrefix}-${globalStateClass}` : `${ClassNameGenerator.generate(componentName)}-${slot}`;
+}
+function generateUtilityClasses(componentName, slots, globalStatePrefix = "Mui") {
+  const result = {};
+  slots.forEach((slot) => {
+    result[slot] = generateUtilityClass(componentName, slot, globalStatePrefix);
+  });
+  return result;
+}
+function getFunctionComponentName(Component, fallback = "") {
+  return Component.displayName || Component.name || fallback;
+}
+function getWrappedName(outerType, innerType, wrapperName) {
+  const functionName = getFunctionComponentName(innerType);
+  return outerType.displayName || (functionName !== "" ? `${wrapperName}(${functionName})` : wrapperName);
+}
+function getDisplayName(Component) {
+  if (Component == null) {
+    return void 0;
+  }
+  if (typeof Component === "string") {
+    return Component;
+  }
+  if (typeof Component === "function") {
+    return getFunctionComponentName(Component, "Component");
+  }
+  if (typeof Component === "object") {
+    switch (Component.$$typeof) {
+      case reactIsExports.ForwardRef:
+        return getWrappedName(Component, Component.render, "ForwardRef");
+      case reactIsExports.Memo:
+        return getWrappedName(Component, Component.type, "memo");
+      default:
+        return void 0;
+    }
+  }
+  return void 0;
 }
 function preprocessStyles(input) {
   const {
@@ -41593,6 +41849,12 @@ const systemDefaultTheme = createTheme$1();
 function shouldForwardProp(prop) {
   return prop !== "ownerState" && prop !== "theme" && prop !== "sx" && prop !== "as";
 }
+function shallowLayer(serialized, layerName) {
+  if (layerName && serialized && typeof serialized === "object" && serialized.styles && !serialized.styles.startsWith("@layer")) {
+    serialized.styles = `@layer ${layerName}{${String(serialized.styles)}}`;
+  }
+  return serialized;
+}
 function defaultOverridesResolver(slot) {
   if (!slot) {
     return null;
@@ -41602,59 +41864,58 @@ function defaultOverridesResolver(slot) {
 function attachTheme(props, themeId, defaultTheme2) {
   props.theme = isObjectEmpty(props.theme) ? defaultTheme2 : props.theme[themeId] || props.theme;
 }
-function processStyle(props, style2) {
+function processStyle(props, style2, layerName) {
   const resolvedStyle = typeof style2 === "function" ? style2(props) : style2;
   if (Array.isArray(resolvedStyle)) {
-    return resolvedStyle.flatMap((subStyle) => processStyle(props, subStyle));
+    return resolvedStyle.flatMap((subStyle) => processStyle(props, subStyle, layerName));
   }
-  if (Array.isArray(resolvedStyle == null ? void 0 : resolvedStyle.variants)) {
+  if (Array.isArray(resolvedStyle?.variants)) {
     let rootStyle;
     if (resolvedStyle.isProcessed) {
-      rootStyle = resolvedStyle.style;
+      rootStyle = layerName ? shallowLayer(resolvedStyle.style, layerName) : resolvedStyle.style;
     } else {
       const {
         variants,
         ...otherStyles
       } = resolvedStyle;
-      rootStyle = otherStyles;
+      rootStyle = layerName ? shallowLayer(internal_serializeStyles(otherStyles), layerName) : otherStyles;
     }
-    return processStyleVariants(props, resolvedStyle.variants, [rootStyle]);
+    return processStyleVariants(props, resolvedStyle.variants, [rootStyle], layerName);
   }
-  if (resolvedStyle == null ? void 0 : resolvedStyle.isProcessed) {
-    return resolvedStyle.style;
+  if (resolvedStyle?.isProcessed) {
+    return layerName ? shallowLayer(internal_serializeStyles(resolvedStyle.style), layerName) : resolvedStyle.style;
   }
-  return resolvedStyle;
+  return layerName ? shallowLayer(internal_serializeStyles(resolvedStyle), layerName) : resolvedStyle;
 }
-function processStyleVariants(props, variants, results = []) {
-  var _a;
+function processStyleVariants(props, variants, results = [], layerName = void 0) {
   let mergedState;
   variantLoop: for (let i = 0; i < variants.length; i += 1) {
     const variant = variants[i];
     if (typeof variant.props === "function") {
-      mergedState ?? (mergedState = {
+      mergedState ??= {
         ...props,
         ...props.ownerState,
         ownerState: props.ownerState
-      });
+      };
       if (!variant.props(mergedState)) {
         continue;
       }
     } else {
       for (const key in variant.props) {
-        if (props[key] !== variant.props[key] && ((_a = props.ownerState) == null ? void 0 : _a[key]) !== variant.props[key]) {
+        if (props[key] !== variant.props[key] && props.ownerState?.[key] !== variant.props[key]) {
           continue variantLoop;
         }
       }
     }
     if (typeof variant.style === "function") {
-      mergedState ?? (mergedState = {
+      mergedState ??= {
         ...props,
         ...props.ownerState,
         ownerState: props.ownerState
-      });
-      results.push(variant.style(mergedState));
+      };
+      results.push(layerName ? shallowLayer(internal_serializeStyles(variant.style(mergedState)), layerName) : variant.style(mergedState));
     } else {
-      results.push(variant.style);
+      results.push(layerName ? shallowLayer(internal_serializeStyles(variant.style), layerName) : variant.style);
     }
   }
   return results;
@@ -41681,6 +41942,7 @@ function createStyled2(input = {}) {
       overridesResolver = defaultOverridesResolver(lowercaseFirstLetter(componentSlot)),
       ...options
     } = inputOptions;
+    const layerName = componentName && componentName.startsWith("Mui") || !!componentSlot ? "components" : "custom";
     const skipVariantsResolver = inputSkipVariantsResolver !== void 0 ? inputSkipVariantsResolver : (
       // TODO v6: remove `Root` in the next major release
       // For more details: https://github.com/mui/material-ui/pull/37908
@@ -41701,18 +41963,21 @@ function createStyled2(input = {}) {
       ...options
     });
     const transformStyle = (style2) => {
-      if (typeof style2 === "function" && style2.__emotion_real !== style2) {
+      if (style2.__emotion_real === style2) {
+        return style2;
+      }
+      if (typeof style2 === "function") {
         return function styleFunctionProcessor(props) {
-          return processStyle(props, style2);
+          return processStyle(props, style2, props.theme.modularCssLayers ? layerName : void 0);
         };
       }
       if (isPlainObject(style2)) {
         const serialized = preprocessStyles(style2);
-        if (!serialized.variants) {
-          return serialized.style;
-        }
         return function styleObjectProcessor(props) {
-          return processStyle(props, serialized);
+          if (!serialized.variants) {
+            return props.theme.modularCssLayers ? shallowLayer(serialized.style, layerName) : serialized.style;
+          }
+          return processStyle(props, serialized, props.theme.modularCssLayers ? layerName : void 0);
         };
       }
       return style2;
@@ -41724,28 +41989,26 @@ function createStyled2(input = {}) {
       expressionsHead.push(styleAttachTheme);
       if (componentName && overridesResolver) {
         expressionsTail.push(function styleThemeOverrides(props) {
-          var _a, _b;
           const theme = props.theme;
-          const styleOverrides = (_b = (_a = theme.components) == null ? void 0 : _a[componentName]) == null ? void 0 : _b.styleOverrides;
+          const styleOverrides = theme.components?.[componentName]?.styleOverrides;
           if (!styleOverrides) {
             return null;
           }
           const resolvedStyleOverrides = {};
           for (const slotKey in styleOverrides) {
-            resolvedStyleOverrides[slotKey] = processStyle(props, styleOverrides[slotKey]);
+            resolvedStyleOverrides[slotKey] = processStyle(props, styleOverrides[slotKey], props.theme.modularCssLayers ? "theme" : void 0);
           }
           return overridesResolver(props, resolvedStyleOverrides);
         });
       }
       if (componentName && !skipVariantsResolver) {
         expressionsTail.push(function styleThemeVariants(props) {
-          var _a, _b;
           const theme = props.theme;
-          const themeVariants = (_b = (_a = theme == null ? void 0 : theme.components) == null ? void 0 : _a[componentName]) == null ? void 0 : _b.variants;
+          const themeVariants = theme?.components?.[componentName]?.variants;
           if (!themeVariants) {
             return null;
           }
-          return processStyleVariants(props, themeVariants);
+          return processStyleVariants(props, themeVariants, [], props.theme.modularCssLayers ? "theme" : void 0);
         });
       }
       if (!skipSx) {
@@ -41811,6 +42074,53 @@ function lowercaseFirstLetter(string) {
     return string;
   }
   return string.charAt(0).toLowerCase() + string.slice(1);
+}
+function resolveProps(defaultProps2, props, mergeClassNameAndStyle = false) {
+  const output = {
+    ...props
+  };
+  for (const key in defaultProps2) {
+    if (Object.prototype.hasOwnProperty.call(defaultProps2, key)) {
+      const propName = key;
+      if (propName === "components" || propName === "slots") {
+        output[propName] = {
+          ...defaultProps2[propName],
+          ...output[propName]
+        };
+      } else if (propName === "componentsProps" || propName === "slotProps") {
+        const defaultSlotProps = defaultProps2[propName];
+        const slotProps = props[propName];
+        if (!slotProps) {
+          output[propName] = defaultSlotProps || {};
+        } else if (!defaultSlotProps) {
+          output[propName] = slotProps;
+        } else {
+          output[propName] = {
+            ...slotProps
+          };
+          for (const slotKey in defaultSlotProps) {
+            if (Object.prototype.hasOwnProperty.call(defaultSlotProps, slotKey)) {
+              const slotPropName = slotKey;
+              output[propName][slotPropName] = resolveProps(defaultSlotProps[slotPropName], slotProps[slotPropName], mergeClassNameAndStyle);
+            }
+          }
+        }
+      } else if (propName === "className" && mergeClassNameAndStyle && props.className) {
+        output.className = clsx(defaultProps2?.className, props?.className);
+      } else if (propName === "style" && mergeClassNameAndStyle && props.style) {
+        output.style = {
+          ...defaultProps2?.style,
+          ...props?.style
+        };
+      } else if (output[propName] === void 0) {
+        output[propName] = defaultProps2[propName];
+      }
+    }
+  }
+  return output;
+}
+function clamp(val, min2 = Number.MIN_SAFE_INTEGER, max2 = Number.MAX_SAFE_INTEGER) {
+  return Math.max(min2, Math.min(val, max2));
 }
 function clampWrapper(value, min2 = 0, max2 = 1) {
   if (process.env.NODE_ENV !== "production") {
@@ -41960,6 +42270,9 @@ function private_safeAlpha(color2, value, warning) {
   try {
     return alpha$1(color2, value);
   } catch (error) {
+    if (warning && process.env.NODE_ENV !== "production") {
+      console.warn(warning);
+    }
     return color2;
   }
 }
@@ -41979,6 +42292,9 @@ function private_safeDarken(color2, coefficient, warning) {
   try {
     return darken(color2, coefficient);
   } catch (error) {
+    if (warning && process.env.NODE_ENV !== "production") {
+      console.warn(warning);
+    }
     return color2;
   }
 }
@@ -42002,6 +42318,9 @@ function private_safeLighten(color2, coefficient, warning) {
   try {
     return lighten(color2, coefficient);
   } catch (error) {
+    if (warning && process.env.NODE_ENV !== "production") {
+      console.warn(warning);
+    }
     return color2;
   }
 }
@@ -42041,10 +42360,10 @@ function getThemeProps(params) {
   }
   const config = theme.components[name];
   if (config.defaultProps) {
-    return resolveProps(config.defaultProps, props);
+    return resolveProps(config.defaultProps, props, theme.components.mergeClassNameAndStyle);
   }
   if (!config.styleOverrides && !config.variants) {
-    return resolveProps(config, props);
+    return resolveProps(config, props, theme.components.mergeClassNameAndStyle);
   }
   return props;
 }
@@ -42176,7 +42495,8 @@ function prepareCssVars(theme, parserConfig = {}) {
   const {
     getSelector = defaultGetSelector2,
     disableCssColorScheme,
-    colorSchemeSelector: selector
+    colorSchemeSelector: selector,
+    enableContrastVars
   } = parserConfig;
   const {
     colorSchemes = {},
@@ -42220,7 +42540,6 @@ function prepareCssVars(theme, parserConfig = {}) {
     };
   }
   function defaultGetSelector2(colorScheme, cssObject) {
-    var _a, _b;
     let rule = selector;
     if (selector === "class") {
       rule = ".%s";
@@ -42228,7 +42547,7 @@ function prepareCssVars(theme, parserConfig = {}) {
     if (selector === "data") {
       rule = "[data-%s]";
     }
-    if ((selector == null ? void 0 : selector.startsWith("data-")) && !selector.includes("%s")) {
+    if (selector?.startsWith("data-") && !selector.includes("%s")) {
       rule = `[${selector}="%s"]`;
     }
     if (colorScheme) {
@@ -42236,7 +42555,7 @@ function prepareCssVars(theme, parserConfig = {}) {
         if (theme.defaultColorScheme === colorScheme) {
           return ":root";
         }
-        const mode = ((_b = (_a = colorSchemes[colorScheme]) == null ? void 0 : _a.palette) == null ? void 0 : _b.mode) || colorScheme;
+        const mode = colorSchemes[colorScheme]?.palette?.mode || colorScheme;
         return {
           [`@media (prefers-color-scheme: ${mode})`]: {
             ":root": cssObject
@@ -42264,7 +42583,6 @@ function prepareCssVars(theme, parserConfig = {}) {
     return vars;
   };
   const generateStyleSheets = () => {
-    var _a, _b;
     const stylesheets = [];
     const colorScheme = theme.defaultColorScheme || "light";
     function insertStyleSheet(key, css) {
@@ -42287,7 +42605,7 @@ function prepareCssVars(theme, parserConfig = {}) {
       const {
         css
       } = defaultSchemeVal;
-      const cssColorSheme = (_b = (_a = colorSchemes[colorScheme]) == null ? void 0 : _a.palette) == null ? void 0 : _b.mode;
+      const cssColorSheme = colorSchemes[colorScheme]?.palette?.mode;
       const finalCss = !disableCssColorScheme && cssColorSheme ? {
         colorScheme: cssColorSheme,
         ...css
@@ -42301,8 +42619,7 @@ function prepareCssVars(theme, parserConfig = {}) {
     Object.entries(other).forEach(([key, {
       css
     }]) => {
-      var _a2, _b2;
-      const cssColorSheme = (_b2 = (_a2 = colorSchemes[key]) == null ? void 0 : _a2.palette) == null ? void 0 : _b2.mode;
+      const cssColorSheme = colorSchemes[key]?.palette?.mode;
       const finalCss = !disableCssColorScheme && cssColorSheme ? {
         colorScheme: cssColorSheme,
         ...css
@@ -42313,6 +42630,17 @@ function prepareCssVars(theme, parserConfig = {}) {
         ...finalCss
       }), finalCss);
     });
+    if (enableContrastVars) {
+      stylesheets.push({
+        ":root": {
+          // use double underscore to indicate that these are private variables
+          "--__l-threshold": "0.7",
+          "--__l": "clamp(0, (l / var(--__l-threshold) - 1) * -infinity, 1)",
+          "--__a": "clamp(0.87, (l / var(--__l-threshold) - 1) * -infinity, 1)"
+          // 0.87 is the default alpha value for black text.
+        }
+      });
+    }
     return stylesheets;
   };
   return {
@@ -42368,99 +42696,47 @@ const grey = {
 };
 const purple = {
   50: "#f3e5f5",
-  100: "#e1bee7",
   200: "#ce93d8",
   300: "#ba68c8",
   400: "#ab47bc",
   500: "#9c27b0",
-  600: "#8e24aa",
-  700: "#7b1fa2",
-  800: "#6a1b9a",
-  900: "#4a148c",
-  A100: "#ea80fc",
-  A200: "#e040fb",
-  A400: "#d500f9",
-  A700: "#aa00ff"
+  700: "#7b1fa2"
 };
 const red = {
-  50: "#ffebee",
-  100: "#ffcdd2",
-  200: "#ef9a9a",
   300: "#e57373",
   400: "#ef5350",
   500: "#f44336",
-  600: "#e53935",
   700: "#d32f2f",
-  800: "#c62828",
-  900: "#b71c1c",
-  A100: "#ff8a80",
-  A200: "#ff5252",
-  A400: "#ff1744",
-  A700: "#d50000"
+  800: "#c62828"
 };
 const orange = {
-  50: "#fff3e0",
-  100: "#ffe0b2",
-  200: "#ffcc80",
   300: "#ffb74d",
   400: "#ffa726",
   500: "#ff9800",
-  600: "#fb8c00",
   700: "#f57c00",
-  800: "#ef6c00",
-  900: "#e65100",
-  A100: "#ffd180",
-  A200: "#ffab40",
-  A400: "#ff9100",
-  A700: "#ff6d00"
+  900: "#e65100"
 };
 const blue = {
   50: "#e3f2fd",
-  100: "#bbdefb",
   200: "#90caf9",
-  300: "#64b5f6",
   400: "#42a5f5",
-  500: "#2196f3",
-  600: "#1e88e5",
   700: "#1976d2",
-  800: "#1565c0",
-  900: "#0d47a1",
-  A100: "#82b1ff",
-  A200: "#448aff",
-  A400: "#2979ff",
-  A700: "#2962ff"
+  800: "#1565c0"
 };
 const lightBlue = {
-  50: "#e1f5fe",
-  100: "#b3e5fc",
-  200: "#81d4fa",
   300: "#4fc3f7",
   400: "#29b6f6",
   500: "#03a9f4",
-  600: "#039be5",
   700: "#0288d1",
-  800: "#0277bd",
-  900: "#01579b",
-  A100: "#80d8ff",
-  A200: "#40c4ff",
-  A400: "#00b0ff",
-  A700: "#0091ea"
+  900: "#01579b"
 };
 const green = {
-  50: "#e8f5e9",
-  100: "#c8e6c9",
-  200: "#a5d6a7",
   300: "#81c784",
   400: "#66bb6a",
   500: "#4caf50",
-  600: "#43a047",
   700: "#388e3c",
   800: "#2e7d32",
-  900: "#1b5e20",
-  A100: "#b9f6ca",
-  A200: "#69f0ae",
-  A400: "#00e676",
-  A700: "#00c853"
+  900: "#1b5e20"
 };
 function getLight() {
   return {
@@ -42542,6 +42818,19 @@ function addLightOrDark(intent, direction, shade, tonalOffset) {
       intent.light = lighten(intent.main, tonalOffsetLight);
     } else if (direction === "dark") {
       intent.dark = darken(intent.main, tonalOffsetDark);
+    }
+  }
+}
+function mixLightOrDark(colorSpace, intent, direction, shade, tonalOffset) {
+  const tonalOffsetLight = tonalOffset.light || tonalOffset;
+  const tonalOffsetDark = tonalOffset.dark || tonalOffset * 1.5;
+  if (!intent[direction]) {
+    if (intent.hasOwnProperty(shade)) {
+      intent[direction] = intent[shade];
+    } else if (direction === "light") {
+      intent.light = `color-mix(in ${colorSpace}, ${intent.main}, #fff ${(tonalOffsetLight * 100).toFixed(0)}%)`;
+    } else if (direction === "dark") {
+      intent.dark = `color-mix(in ${colorSpace}, ${intent.main}, #000 ${(tonalOffsetDark * 100).toFixed(0)}%)`;
     }
   }
 }
@@ -42630,11 +42919,15 @@ function getDefaultWarning(mode = "light") {
     dark: orange[900]
   };
 }
+function contrastColor(background) {
+  return `oklch(from ${background} var(--__l) 0 h / var(--__a))`;
+}
 function createPalette(palette) {
   const {
     mode = "light",
     contrastThreshold = 3,
     tonalOffset = 0.2,
+    colorSpace,
     ...other
   } = palette;
   const primary = palette.primary || getDefaultPrimary(mode);
@@ -42644,6 +42937,9 @@ function createPalette(palette) {
   const success = palette.success || getDefaultSuccess(mode);
   const warning = palette.warning || getDefaultWarning(mode);
   function getContrastText(background) {
+    if (colorSpace) {
+      return contrastColor(background);
+    }
     const contrastText = getContrastRatio(background, dark.text.primary) >= contrastThreshold ? dark.text.primary : light.text.primary;
     if (process.env.NODE_ENV !== "production") {
       const contrast = getContrastRatio(background, contrastText);
@@ -42686,8 +42982,13 @@ const theme2 = createTheme({ palette: {
   primary: { main: green[500] },
 } });` : formatMuiErrorMessage(12, name ? ` (${name})` : "", JSON.stringify(color2.main)));
     }
-    addLightOrDark(color2, "light", lightShade, tonalOffset);
-    addLightOrDark(color2, "dark", darkShade, tonalOffset);
+    if (colorSpace) {
+      mixLightOrDark(colorSpace, color2, "light", lightShade, tonalOffset);
+      mixLightOrDark(colorSpace, color2, "dark", darkShade, tonalOffset);
+    } else {
+      addLightOrDark(color2, "light", lightShade, tonalOffset);
+      addLightOrDark(color2, "dark", darkShade, tonalOffset);
+    }
     if (!color2.contrastText) {
       color2.contrastText = getContrastText(color2.main);
     }
@@ -43007,6 +43308,54 @@ theme.transitions = createTransitions(theme.transitions || {});
 
 export default theme;`;
 }
+function coefficientToPercentage(coefficient) {
+  if (typeof coefficient === "number") {
+    return `${(coefficient * 100).toFixed(0)}%`;
+  }
+  return `calc((${coefficient}) * 100%)`;
+}
+const parseAddition = (str) => {
+  if (!Number.isNaN(+str)) {
+    return +str;
+  }
+  const numbers = str.match(/\d*\.?\d+/g);
+  if (!numbers) {
+    return 0;
+  }
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i += 1) {
+    sum += +numbers[i];
+  }
+  return sum;
+};
+function attachColorManipulators(theme) {
+  Object.assign(theme, {
+    alpha(color2, coefficient) {
+      const obj = this || theme;
+      if (obj.colorSpace) {
+        return `oklch(from ${color2} l c h / ${typeof coefficient === "string" ? `calc(${coefficient})` : coefficient})`;
+      }
+      if (obj.vars) {
+        return `rgba(${color2.replace(/var\(--([^,\s)]+)(?:,[^)]+)?\)+/g, "var(--$1Channel)")} / ${typeof coefficient === "string" ? `calc(${coefficient})` : coefficient})`;
+      }
+      return alpha$1(color2, parseAddition(coefficient));
+    },
+    lighten(color2, coefficient) {
+      const obj = this || theme;
+      if (obj.colorSpace) {
+        return `color-mix(in ${obj.colorSpace}, ${color2}, #fff ${coefficientToPercentage(coefficient)})`;
+      }
+      return lighten(color2, coefficient);
+    },
+    darken(color2, coefficient) {
+      const obj = this || theme;
+      if (obj.colorSpace) {
+        return `color-mix(in ${obj.colorSpace}, ${color2}, #000 ${coefficientToPercentage(coefficient)})`;
+      }
+      return darken(color2, coefficient);
+    }
+  });
+}
 function createThemeNoVars(options = {}, ...args) {
   const {
     breakpoints: breakpointsInput,
@@ -43016,12 +43365,18 @@ function createThemeNoVars(options = {}, ...args) {
     transitions: transitionsInput = {},
     typography: typographyInput = {},
     shape: shapeInput,
+    colorSpace,
     ...other
   } = options;
-  if (options.vars) {
-    throw new Error(process.env.NODE_ENV !== "production" ? "MUI: `vars` is a private field used for CSS variables support.\nPlease use another name." : formatMuiErrorMessage(20));
+  if (options.vars && // The error should throw only for the root theme creation because user is not allowed to use a custom node `vars`.
+  // `generateThemeVars` is the closest identifier for checking that the `options` is a result of `createTheme` with CSS variables so that user can create new theme for nested ThemeProvider.
+  options.generateThemeVars === void 0) {
+    throw new Error(process.env.NODE_ENV !== "production" ? "MUI: `vars` is a private field used for CSS variables support.\nPlease use another name or follow the [docs](https://mui.com/material-ui/customization/css-theme-variables/usage/) to enable the feature." : formatMuiErrorMessage(20));
   }
-  const palette = createPalette(paletteInput);
+  const palette = createPalette({
+    ...paletteInput,
+    colorSpace
+  });
   const systemTheme = createTheme$1(options);
   let muiTheme = deepmerge(systemTheme, {
     mixins: createMixins(systemTheme.breakpoints, mixinsInput),
@@ -43064,7 +43419,7 @@ function createThemeNoVars(options = {}, ...args) {
   }
   muiTheme.unstable_sxConfig = {
     ...defaultSxConfig,
-    ...other == null ? void 0 : other.unstable_sxConfig
+    ...other?.unstable_sxConfig
   };
   muiTheme.unstable_sx = function sx(props) {
     return styleFunctionSx({
@@ -43073,6 +43428,7 @@ function createThemeNoVars(options = {}, ...args) {
     });
   };
   muiTheme.toRuntimeSource = stringifyTheme;
+  attachColorManipulators(muiTheme);
   return muiTheme;
 }
 function getOverlayAlpha(elevation) {
@@ -43110,9 +43466,13 @@ function createColorScheme(options) {
     // need to cast to avoid module augmentation test
     opacity,
     overlays,
-    ...rest
+    colorSpace,
+    ...other
   } = options;
-  const palette = createPalette(paletteInput);
+  const palette = createPalette({
+    ...paletteInput,
+    colorSpace
+  });
   return {
     palette,
     opacity: {
@@ -43120,13 +43480,12 @@ function createColorScheme(options) {
       ...opacity
     },
     overlays: overlays || getOverlays(palette.mode),
-    ...rest
+    ...other
   };
 }
 function shouldSkipGeneratingVar(keys) {
-  var _a;
-  return !!keys[0].match(/(cssVarPrefix|colorSchemeSelector|rootSelector|typography|mixins|breakpoints|direction|transitions)/) || !!keys[0].match(/sxConfig$/) || // ends with sxConfig
-  keys[0] === "palette" && !!((_a = keys[1]) == null ? void 0 : _a.match(/(mode|contrastThreshold|tonalOffset)/));
+  return !!keys[0].match(/(cssVarPrefix|colorSchemeSelector|modularCssLayers|rootSelector|typography|mixins|breakpoints|direction|transitions)/) || !!keys[0].match(/sxConfig$/) || // ends with sxConfig
+  keys[0] === "palette" && !!keys[1]?.match(/(mode|contrastThreshold|tonalOffset)/);
 }
 const excludeVariablesFromRoot = (cssVarPrefix) => [...[...Array(25)].map((_, index) => `--${cssVarPrefix ? `${cssVarPrefix}-` : ""}overlays-${index}`), `--${cssVarPrefix ? `${cssVarPrefix}-` : ""}palette-AppBar-darkBg`, `--${cssVarPrefix ? `${cssVarPrefix}-` : ""}palette-AppBar-darkColor`];
 const defaultGetSelector = (theme) => (colorScheme, css) => {
@@ -43139,7 +43498,7 @@ const defaultGetSelector = (theme) => (colorScheme, css) => {
   if (selector === "data") {
     rule = "[data-%s]";
   }
-  if ((selector == null ? void 0 : selector.startsWith("data-")) && !selector.includes("%s")) {
+  if (selector?.startsWith("data-") && !selector.includes("%s")) {
     rule = `[${selector}="%s"]`;
   }
   if (theme.defaultColorScheme === colorScheme) {
@@ -43228,7 +43587,7 @@ const silent = (fn) => {
   return void 0;
 };
 const createGetCssVar = (cssVarPrefix = "mui") => createGetCssVar$1(cssVarPrefix);
-function attachColorScheme$1(colorSchemes, scheme, restTheme, colorScheme) {
+function attachColorScheme$1(colorSpace, colorSchemes, scheme, restTheme, colorScheme) {
   if (!scheme) {
     return void 0;
   }
@@ -43239,8 +43598,9 @@ function attachColorScheme$1(colorSchemes, scheme, restTheme, colorScheme) {
       ...scheme,
       palette: {
         mode,
-        ...scheme == null ? void 0 : scheme.palette
-      }
+        ...scheme?.palette
+      },
+      colorSpace
     });
     return void 0;
   }
@@ -43251,17 +43611,18 @@ function attachColorScheme$1(colorSchemes, scheme, restTheme, colorScheme) {
     ...restTheme,
     palette: {
       mode,
-      ...scheme == null ? void 0 : scheme.palette
-    }
+      ...scheme?.palette
+    },
+    colorSpace
   });
   colorSchemes[colorScheme] = {
     ...scheme,
     palette,
     opacity: {
       ...getOpacity(mode),
-      ...scheme == null ? void 0 : scheme.opacity
+      ...scheme?.opacity
     },
-    overlays: (scheme == null ? void 0 : scheme.overlays) || getOverlays(mode)
+    overlays: scheme?.overlays || getOverlays(mode)
   };
   return muiTheme;
 }
@@ -43273,6 +43634,7 @@ function createThemeWithVars(options = {}, ...args) {
     defaultColorScheme: defaultColorSchemeInput,
     disableCssColorScheme = false,
     cssVarPrefix = "mui",
+    nativeColor = false,
     shouldSkipGeneratingVar: shouldSkipGeneratingVar$1 = shouldSkipGeneratingVar,
     colorSchemeSelector: selector = colorSchemesInput.light && colorSchemesInput.dark ? "media" : void 0,
     rootSelector = ":root",
@@ -43297,12 +43659,16 @@ function createThemeWithVars(options = {}, ...args) {
   if (!defaultScheme) {
     throw new Error(process.env.NODE_ENV !== "production" ? `MUI: The \`colorSchemes.${defaultColorScheme}\` option is either missing or invalid.` : formatMuiErrorMessage(21, defaultColorScheme));
   }
-  const muiTheme = attachColorScheme$1(colorSchemes, defaultScheme, input, defaultColorScheme);
+  let colorSpace;
+  if (nativeColor) {
+    colorSpace = "oklch";
+  }
+  const muiTheme = attachColorScheme$1(colorSpace, colorSchemes, defaultScheme, input, defaultColorScheme);
   if (builtInLight && !colorSchemes.light) {
-    attachColorScheme$1(colorSchemes, builtInLight, void 0, "light");
+    attachColorScheme$1(colorSpace, colorSchemes, builtInLight, void 0, "light");
   }
   if (builtInDark && !colorSchemes.dark) {
-    attachColorScheme$1(colorSchemes, builtInDark, void 0, "dark");
+    attachColorScheme$1(colorSpace, colorSchemes, builtInDark, void 0, "dark");
   }
   let theme = {
     defaultColorScheme,
@@ -43334,12 +43700,28 @@ function createThemeWithVars(options = {}, ...args) {
       setColor(palette.common, "background", "#000");
       setColor(palette.common, "onBackground", "#fff");
     }
+    function colorMix(method, color2, coefficient) {
+      if (colorSpace) {
+        let mixer;
+        if (method === private_safeAlpha) {
+          mixer = `transparent ${((1 - coefficient) * 100).toFixed(0)}%`;
+        }
+        if (method === private_safeDarken) {
+          mixer = `#000 ${(coefficient * 100).toFixed(0)}%`;
+        }
+        if (method === private_safeLighten) {
+          mixer = `#fff ${(coefficient * 100).toFixed(0)}%`;
+        }
+        return `color-mix(in ${colorSpace}, ${color2}, ${mixer})`;
+      }
+      return method(color2, coefficient);
+    }
     assignNode(palette, ["Alert", "AppBar", "Avatar", "Button", "Chip", "FilledInput", "LinearProgress", "Skeleton", "Slider", "SnackbarContent", "SpeedDialAction", "StepConnector", "StepContent", "Switch", "TableCell", "Tooltip"]);
     if (palette.mode === "light") {
-      setColor(palette.Alert, "errorColor", private_safeDarken(palette.error.light, 0.6));
-      setColor(palette.Alert, "infoColor", private_safeDarken(palette.info.light, 0.6));
-      setColor(palette.Alert, "successColor", private_safeDarken(palette.success.light, 0.6));
-      setColor(palette.Alert, "warningColor", private_safeDarken(palette.warning.light, 0.6));
+      setColor(palette.Alert, "errorColor", colorMix(private_safeDarken, palette.error.light, 0.6));
+      setColor(palette.Alert, "infoColor", colorMix(private_safeDarken, palette.info.light, 0.6));
+      setColor(palette.Alert, "successColor", colorMix(private_safeDarken, palette.success.light, 0.6));
+      setColor(palette.Alert, "warningColor", colorMix(private_safeDarken, palette.warning.light, 0.6));
       setColor(palette.Alert, "errorFilledBg", setCssVarColor("palette-error-main"));
       setColor(palette.Alert, "infoFilledBg", setCssVarColor("palette-info-main"));
       setColor(palette.Alert, "successFilledBg", setCssVarColor("palette-success-main"));
@@ -43348,10 +43730,10 @@ function createThemeWithVars(options = {}, ...args) {
       setColor(palette.Alert, "infoFilledColor", silent(() => palette.getContrastText(palette.info.main)));
       setColor(palette.Alert, "successFilledColor", silent(() => palette.getContrastText(palette.success.main)));
       setColor(palette.Alert, "warningFilledColor", silent(() => palette.getContrastText(palette.warning.main)));
-      setColor(palette.Alert, "errorStandardBg", private_safeLighten(palette.error.light, 0.9));
-      setColor(palette.Alert, "infoStandardBg", private_safeLighten(palette.info.light, 0.9));
-      setColor(palette.Alert, "successStandardBg", private_safeLighten(palette.success.light, 0.9));
-      setColor(palette.Alert, "warningStandardBg", private_safeLighten(palette.warning.light, 0.9));
+      setColor(palette.Alert, "errorStandardBg", colorMix(private_safeLighten, palette.error.light, 0.9));
+      setColor(palette.Alert, "infoStandardBg", colorMix(private_safeLighten, palette.info.light, 0.9));
+      setColor(palette.Alert, "successStandardBg", colorMix(private_safeLighten, palette.success.light, 0.9));
+      setColor(palette.Alert, "warningStandardBg", colorMix(private_safeLighten, palette.warning.light, 0.9));
       setColor(palette.Alert, "errorIconColor", setCssVarColor("palette-error-main"));
       setColor(palette.Alert, "infoIconColor", setCssVarColor("palette-info-main"));
       setColor(palette.Alert, "successIconColor", setCssVarColor("palette-success-main"));
@@ -43366,41 +43748,41 @@ function createThemeWithVars(options = {}, ...args) {
       setColor(palette.FilledInput, "bg", "rgba(0, 0, 0, 0.06)");
       setColor(palette.FilledInput, "hoverBg", "rgba(0, 0, 0, 0.09)");
       setColor(palette.FilledInput, "disabledBg", "rgba(0, 0, 0, 0.12)");
-      setColor(palette.LinearProgress, "primaryBg", private_safeLighten(palette.primary.main, 0.62));
-      setColor(palette.LinearProgress, "secondaryBg", private_safeLighten(palette.secondary.main, 0.62));
-      setColor(palette.LinearProgress, "errorBg", private_safeLighten(palette.error.main, 0.62));
-      setColor(palette.LinearProgress, "infoBg", private_safeLighten(palette.info.main, 0.62));
-      setColor(palette.LinearProgress, "successBg", private_safeLighten(palette.success.main, 0.62));
-      setColor(palette.LinearProgress, "warningBg", private_safeLighten(palette.warning.main, 0.62));
-      setColor(palette.Skeleton, "bg", `rgba(${setCssVarColor("palette-text-primaryChannel")} / 0.11)`);
-      setColor(palette.Slider, "primaryTrack", private_safeLighten(palette.primary.main, 0.62));
-      setColor(palette.Slider, "secondaryTrack", private_safeLighten(palette.secondary.main, 0.62));
-      setColor(palette.Slider, "errorTrack", private_safeLighten(palette.error.main, 0.62));
-      setColor(palette.Slider, "infoTrack", private_safeLighten(palette.info.main, 0.62));
-      setColor(palette.Slider, "successTrack", private_safeLighten(palette.success.main, 0.62));
-      setColor(palette.Slider, "warningTrack", private_safeLighten(palette.warning.main, 0.62));
-      const snackbarContentBackground = private_safeEmphasize(palette.background.default, 0.8);
+      setColor(palette.LinearProgress, "primaryBg", colorMix(private_safeLighten, palette.primary.main, 0.62));
+      setColor(palette.LinearProgress, "secondaryBg", colorMix(private_safeLighten, palette.secondary.main, 0.62));
+      setColor(palette.LinearProgress, "errorBg", colorMix(private_safeLighten, palette.error.main, 0.62));
+      setColor(palette.LinearProgress, "infoBg", colorMix(private_safeLighten, palette.info.main, 0.62));
+      setColor(palette.LinearProgress, "successBg", colorMix(private_safeLighten, palette.success.main, 0.62));
+      setColor(palette.LinearProgress, "warningBg", colorMix(private_safeLighten, palette.warning.main, 0.62));
+      setColor(palette.Skeleton, "bg", colorSpace ? colorMix(private_safeAlpha, palette.text.primary, 0.11) : `rgba(${setCssVarColor("palette-text-primaryChannel")} / 0.11)`);
+      setColor(palette.Slider, "primaryTrack", colorMix(private_safeLighten, palette.primary.main, 0.62));
+      setColor(palette.Slider, "secondaryTrack", colorMix(private_safeLighten, palette.secondary.main, 0.62));
+      setColor(palette.Slider, "errorTrack", colorMix(private_safeLighten, palette.error.main, 0.62));
+      setColor(palette.Slider, "infoTrack", colorMix(private_safeLighten, palette.info.main, 0.62));
+      setColor(palette.Slider, "successTrack", colorMix(private_safeLighten, palette.success.main, 0.62));
+      setColor(palette.Slider, "warningTrack", colorMix(private_safeLighten, palette.warning.main, 0.62));
+      const snackbarContentBackground = colorSpace ? colorMix(private_safeDarken, palette.background.default, 0.6825) : private_safeEmphasize(palette.background.default, 0.8);
       setColor(palette.SnackbarContent, "bg", snackbarContentBackground);
-      setColor(palette.SnackbarContent, "color", silent(() => palette.getContrastText(snackbarContentBackground)));
+      setColor(palette.SnackbarContent, "color", silent(() => colorSpace ? dark.text.primary : palette.getContrastText(snackbarContentBackground)));
       setColor(palette.SpeedDialAction, "fabHoverBg", private_safeEmphasize(palette.background.paper, 0.15));
       setColor(palette.StepConnector, "border", setCssVarColor("palette-grey-400"));
       setColor(palette.StepContent, "border", setCssVarColor("palette-grey-400"));
       setColor(palette.Switch, "defaultColor", setCssVarColor("palette-common-white"));
       setColor(palette.Switch, "defaultDisabledColor", setCssVarColor("palette-grey-100"));
-      setColor(palette.Switch, "primaryDisabledColor", private_safeLighten(palette.primary.main, 0.62));
-      setColor(palette.Switch, "secondaryDisabledColor", private_safeLighten(palette.secondary.main, 0.62));
-      setColor(palette.Switch, "errorDisabledColor", private_safeLighten(palette.error.main, 0.62));
-      setColor(palette.Switch, "infoDisabledColor", private_safeLighten(palette.info.main, 0.62));
-      setColor(palette.Switch, "successDisabledColor", private_safeLighten(palette.success.main, 0.62));
-      setColor(palette.Switch, "warningDisabledColor", private_safeLighten(palette.warning.main, 0.62));
-      setColor(palette.TableCell, "border", private_safeLighten(private_safeAlpha(palette.divider, 1), 0.88));
-      setColor(palette.Tooltip, "bg", private_safeAlpha(palette.grey[700], 0.92));
+      setColor(palette.Switch, "primaryDisabledColor", colorMix(private_safeLighten, palette.primary.main, 0.62));
+      setColor(palette.Switch, "secondaryDisabledColor", colorMix(private_safeLighten, palette.secondary.main, 0.62));
+      setColor(palette.Switch, "errorDisabledColor", colorMix(private_safeLighten, palette.error.main, 0.62));
+      setColor(palette.Switch, "infoDisabledColor", colorMix(private_safeLighten, palette.info.main, 0.62));
+      setColor(palette.Switch, "successDisabledColor", colorMix(private_safeLighten, palette.success.main, 0.62));
+      setColor(palette.Switch, "warningDisabledColor", colorMix(private_safeLighten, palette.warning.main, 0.62));
+      setColor(palette.TableCell, "border", colorMix(private_safeLighten, colorMix(private_safeAlpha, palette.divider, 1), 0.88));
+      setColor(palette.Tooltip, "bg", colorMix(private_safeAlpha, palette.grey[700], 0.92));
     }
     if (palette.mode === "dark") {
-      setColor(palette.Alert, "errorColor", private_safeLighten(palette.error.light, 0.6));
-      setColor(palette.Alert, "infoColor", private_safeLighten(palette.info.light, 0.6));
-      setColor(palette.Alert, "successColor", private_safeLighten(palette.success.light, 0.6));
-      setColor(palette.Alert, "warningColor", private_safeLighten(palette.warning.light, 0.6));
+      setColor(palette.Alert, "errorColor", colorMix(private_safeLighten, palette.error.light, 0.6));
+      setColor(palette.Alert, "infoColor", colorMix(private_safeLighten, palette.info.light, 0.6));
+      setColor(palette.Alert, "successColor", colorMix(private_safeLighten, palette.success.light, 0.6));
+      setColor(palette.Alert, "warningColor", colorMix(private_safeLighten, palette.warning.light, 0.6));
       setColor(palette.Alert, "errorFilledBg", setCssVarColor("palette-error-dark"));
       setColor(palette.Alert, "infoFilledBg", setCssVarColor("palette-info-dark"));
       setColor(palette.Alert, "successFilledBg", setCssVarColor("palette-success-dark"));
@@ -43409,10 +43791,10 @@ function createThemeWithVars(options = {}, ...args) {
       setColor(palette.Alert, "infoFilledColor", silent(() => palette.getContrastText(palette.info.dark)));
       setColor(palette.Alert, "successFilledColor", silent(() => palette.getContrastText(palette.success.dark)));
       setColor(palette.Alert, "warningFilledColor", silent(() => palette.getContrastText(palette.warning.dark)));
-      setColor(palette.Alert, "errorStandardBg", private_safeDarken(palette.error.light, 0.9));
-      setColor(palette.Alert, "infoStandardBg", private_safeDarken(palette.info.light, 0.9));
-      setColor(palette.Alert, "successStandardBg", private_safeDarken(palette.success.light, 0.9));
-      setColor(palette.Alert, "warningStandardBg", private_safeDarken(palette.warning.light, 0.9));
+      setColor(palette.Alert, "errorStandardBg", colorMix(private_safeDarken, palette.error.light, 0.9));
+      setColor(palette.Alert, "infoStandardBg", colorMix(private_safeDarken, palette.info.light, 0.9));
+      setColor(palette.Alert, "successStandardBg", colorMix(private_safeDarken, palette.success.light, 0.9));
+      setColor(palette.Alert, "warningStandardBg", colorMix(private_safeDarken, palette.warning.light, 0.9));
       setColor(palette.Alert, "errorIconColor", setCssVarColor("palette-error-main"));
       setColor(palette.Alert, "infoIconColor", setCssVarColor("palette-info-main"));
       setColor(palette.Alert, "successIconColor", setCssVarColor("palette-success-main"));
@@ -43429,35 +43811,35 @@ function createThemeWithVars(options = {}, ...args) {
       setColor(palette.FilledInput, "bg", "rgba(255, 255, 255, 0.09)");
       setColor(palette.FilledInput, "hoverBg", "rgba(255, 255, 255, 0.13)");
       setColor(palette.FilledInput, "disabledBg", "rgba(255, 255, 255, 0.12)");
-      setColor(palette.LinearProgress, "primaryBg", private_safeDarken(palette.primary.main, 0.5));
-      setColor(palette.LinearProgress, "secondaryBg", private_safeDarken(palette.secondary.main, 0.5));
-      setColor(palette.LinearProgress, "errorBg", private_safeDarken(palette.error.main, 0.5));
-      setColor(palette.LinearProgress, "infoBg", private_safeDarken(palette.info.main, 0.5));
-      setColor(palette.LinearProgress, "successBg", private_safeDarken(palette.success.main, 0.5));
-      setColor(palette.LinearProgress, "warningBg", private_safeDarken(palette.warning.main, 0.5));
-      setColor(palette.Skeleton, "bg", `rgba(${setCssVarColor("palette-text-primaryChannel")} / 0.13)`);
-      setColor(palette.Slider, "primaryTrack", private_safeDarken(palette.primary.main, 0.5));
-      setColor(palette.Slider, "secondaryTrack", private_safeDarken(palette.secondary.main, 0.5));
-      setColor(palette.Slider, "errorTrack", private_safeDarken(palette.error.main, 0.5));
-      setColor(palette.Slider, "infoTrack", private_safeDarken(palette.info.main, 0.5));
-      setColor(palette.Slider, "successTrack", private_safeDarken(palette.success.main, 0.5));
-      setColor(palette.Slider, "warningTrack", private_safeDarken(palette.warning.main, 0.5));
-      const snackbarContentBackground = private_safeEmphasize(palette.background.default, 0.98);
+      setColor(palette.LinearProgress, "primaryBg", colorMix(private_safeDarken, palette.primary.main, 0.5));
+      setColor(palette.LinearProgress, "secondaryBg", colorMix(private_safeDarken, palette.secondary.main, 0.5));
+      setColor(palette.LinearProgress, "errorBg", colorMix(private_safeDarken, palette.error.main, 0.5));
+      setColor(palette.LinearProgress, "infoBg", colorMix(private_safeDarken, palette.info.main, 0.5));
+      setColor(palette.LinearProgress, "successBg", colorMix(private_safeDarken, palette.success.main, 0.5));
+      setColor(palette.LinearProgress, "warningBg", colorMix(private_safeDarken, palette.warning.main, 0.5));
+      setColor(palette.Skeleton, "bg", colorSpace ? colorMix(private_safeAlpha, palette.text.primary, 0.13) : `rgba(${setCssVarColor("palette-text-primaryChannel")} / 0.13)`);
+      setColor(palette.Slider, "primaryTrack", colorMix(private_safeDarken, palette.primary.main, 0.5));
+      setColor(palette.Slider, "secondaryTrack", colorMix(private_safeDarken, palette.secondary.main, 0.5));
+      setColor(palette.Slider, "errorTrack", colorMix(private_safeDarken, palette.error.main, 0.5));
+      setColor(palette.Slider, "infoTrack", colorMix(private_safeDarken, palette.info.main, 0.5));
+      setColor(palette.Slider, "successTrack", colorMix(private_safeDarken, palette.success.main, 0.5));
+      setColor(palette.Slider, "warningTrack", colorMix(private_safeDarken, palette.warning.main, 0.5));
+      const snackbarContentBackground = colorSpace ? colorMix(private_safeLighten, palette.background.default, 0.985) : private_safeEmphasize(palette.background.default, 0.98);
       setColor(palette.SnackbarContent, "bg", snackbarContentBackground);
-      setColor(palette.SnackbarContent, "color", silent(() => palette.getContrastText(snackbarContentBackground)));
+      setColor(palette.SnackbarContent, "color", silent(() => colorSpace ? light.text.primary : palette.getContrastText(snackbarContentBackground)));
       setColor(palette.SpeedDialAction, "fabHoverBg", private_safeEmphasize(palette.background.paper, 0.15));
       setColor(palette.StepConnector, "border", setCssVarColor("palette-grey-600"));
       setColor(palette.StepContent, "border", setCssVarColor("palette-grey-600"));
       setColor(palette.Switch, "defaultColor", setCssVarColor("palette-grey-300"));
       setColor(palette.Switch, "defaultDisabledColor", setCssVarColor("palette-grey-600"));
-      setColor(palette.Switch, "primaryDisabledColor", private_safeDarken(palette.primary.main, 0.55));
-      setColor(palette.Switch, "secondaryDisabledColor", private_safeDarken(palette.secondary.main, 0.55));
-      setColor(palette.Switch, "errorDisabledColor", private_safeDarken(palette.error.main, 0.55));
-      setColor(palette.Switch, "infoDisabledColor", private_safeDarken(palette.info.main, 0.55));
-      setColor(palette.Switch, "successDisabledColor", private_safeDarken(palette.success.main, 0.55));
-      setColor(palette.Switch, "warningDisabledColor", private_safeDarken(palette.warning.main, 0.55));
-      setColor(palette.TableCell, "border", private_safeDarken(private_safeAlpha(palette.divider, 1), 0.68));
-      setColor(palette.Tooltip, "bg", private_safeAlpha(palette.grey[700], 0.92));
+      setColor(palette.Switch, "primaryDisabledColor", colorMix(private_safeDarken, palette.primary.main, 0.55));
+      setColor(palette.Switch, "secondaryDisabledColor", colorMix(private_safeDarken, palette.secondary.main, 0.55));
+      setColor(palette.Switch, "errorDisabledColor", colorMix(private_safeDarken, palette.error.main, 0.55));
+      setColor(palette.Switch, "infoDisabledColor", colorMix(private_safeDarken, palette.info.main, 0.55));
+      setColor(palette.Switch, "successDisabledColor", colorMix(private_safeDarken, palette.success.main, 0.55));
+      setColor(palette.Switch, "warningDisabledColor", colorMix(private_safeDarken, palette.warning.main, 0.55));
+      setColor(palette.TableCell, "border", colorMix(private_safeDarken, colorMix(private_safeAlpha, palette.divider, 1), 0.68));
+      setColor(palette.Tooltip, "bg", colorMix(private_safeAlpha, palette.grey[700], 0.92));
     }
     setColorChannel(palette.background, "default");
     setColorChannel(palette.background, "paper");
@@ -43499,7 +43881,8 @@ function createThemeWithVars(options = {}, ...args) {
     prefix: cssVarPrefix,
     disableCssColorScheme,
     shouldSkipGeneratingVar: shouldSkipGeneratingVar$1,
-    getSelector: defaultGetSelector(theme)
+    getSelector: defaultGetSelector(theme),
+    enableContrastVars: nativeColor
   };
   const {
     vars,
@@ -43520,7 +43903,7 @@ function createThemeWithVars(options = {}, ...args) {
   theme.shouldSkipGeneratingVar = shouldSkipGeneratingVar$1;
   theme.unstable_sxConfig = {
     ...defaultSxConfig,
-    ...input == null ? void 0 : input.unstable_sxConfig
+    ...input?.unstable_sxConfig
   };
   theme.unstable_sx = function sx(props) {
     return styleFunctionSx({
@@ -43553,11 +43936,11 @@ function createTheme(options = {}, ...args) {
     colorSchemes: initialColorSchemes = !palette ? {
       light: true
     } : void 0,
-    defaultColorScheme: initialDefaultColorScheme = palette == null ? void 0 : palette.mode,
-    ...rest
+    defaultColorScheme: initialDefaultColorScheme = palette?.mode,
+    ...other
   } = options;
   const defaultColorSchemeInput = initialDefaultColorScheme || "light";
-  const defaultScheme = initialColorSchemes == null ? void 0 : initialColorSchemes[defaultColorSchemeInput];
+  const defaultScheme = initialColorSchemes?.[defaultColorSchemeInput];
   const colorSchemesInput = {
     ...initialColorSchemes,
     ...palette ? {
@@ -43609,7 +43992,7 @@ function createTheme(options = {}, ...args) {
     colorSchemesInput.light = true;
   }
   return createThemeWithVars({
-    ...rest,
+    ...other,
     colorSchemes: colorSchemesInput,
     defaultColorScheme: defaultColorSchemeInput,
     ...typeof cssVariables !== "boolean" && cssVariables
@@ -43670,97 +44053,91 @@ const SvgIconRoot = styled("svg", {
   }
 })(memoTheme(({
   theme
-}) => {
-  var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n;
-  return {
-    userSelect: "none",
-    width: "1em",
-    height: "1em",
-    display: "inline-block",
-    flexShrink: 0,
-    transition: (_d = (_a = theme.transitions) == null ? void 0 : _a.create) == null ? void 0 : _d.call(_a, "fill", {
-      duration: (_c = (_b = (theme.vars ?? theme).transitions) == null ? void 0 : _b.duration) == null ? void 0 : _c.shorter
-    }),
-    variants: [
-      {
-        props: (props) => !props.hasSvgAsChild,
-        style: {
-          // the <svg> will define the property that has `currentColor`
-          // for example heroicons uses fill="none" and stroke="currentColor"
-          fill: "currentColor"
-        }
-      },
-      {
-        props: {
-          fontSize: "inherit"
-        },
-        style: {
-          fontSize: "inherit"
-        }
-      },
-      {
-        props: {
-          fontSize: "small"
-        },
-        style: {
-          fontSize: ((_f = (_e = theme.typography) == null ? void 0 : _e.pxToRem) == null ? void 0 : _f.call(_e, 20)) || "1.25rem"
-        }
-      },
-      {
-        props: {
-          fontSize: "medium"
-        },
-        style: {
-          fontSize: ((_h = (_g = theme.typography) == null ? void 0 : _g.pxToRem) == null ? void 0 : _h.call(_g, 24)) || "1.5rem"
-        }
-      },
-      {
-        props: {
-          fontSize: "large"
-        },
-        style: {
-          fontSize: ((_j = (_i = theme.typography) == null ? void 0 : _i.pxToRem) == null ? void 0 : _j.call(_i, 35)) || "2.1875rem"
-        }
-      },
-      // TODO v5 deprecate color prop, v6 remove for sx
-      ...Object.entries((theme.vars ?? theme).palette).filter(([, value]) => value && value.main).map(([color2]) => {
-        var _a2, _b2;
-        return {
-          props: {
-            color: color2
-          },
-          style: {
-            color: (_b2 = (_a2 = (theme.vars ?? theme).palette) == null ? void 0 : _a2[color2]) == null ? void 0 : _b2.main
-          }
-        };
-      }),
-      {
-        props: {
-          color: "action"
-        },
-        style: {
-          color: (_l = (_k = (theme.vars ?? theme).palette) == null ? void 0 : _k.action) == null ? void 0 : _l.active
-        }
-      },
-      {
-        props: {
-          color: "disabled"
-        },
-        style: {
-          color: (_n = (_m = (theme.vars ?? theme).palette) == null ? void 0 : _m.action) == null ? void 0 : _n.disabled
-        }
-      },
-      {
-        props: {
-          color: "inherit"
-        },
-        style: {
-          color: void 0
-        }
+}) => ({
+  userSelect: "none",
+  width: "1em",
+  height: "1em",
+  display: "inline-block",
+  flexShrink: 0,
+  transition: theme.transitions?.create?.("fill", {
+    duration: (theme.vars ?? theme).transitions?.duration?.shorter
+  }),
+  variants: [
+    {
+      props: (props) => !props.hasSvgAsChild,
+      style: {
+        // the <svg> will define the property that has `currentColor`
+        // for example heroicons uses fill="none" and stroke="currentColor"
+        fill: "currentColor"
       }
-    ]
-  };
-}));
+    },
+    {
+      props: {
+        fontSize: "inherit"
+      },
+      style: {
+        fontSize: "inherit"
+      }
+    },
+    {
+      props: {
+        fontSize: "small"
+      },
+      style: {
+        fontSize: theme.typography?.pxToRem?.(20) || "1.25rem"
+      }
+    },
+    {
+      props: {
+        fontSize: "medium"
+      },
+      style: {
+        fontSize: theme.typography?.pxToRem?.(24) || "1.5rem"
+      }
+    },
+    {
+      props: {
+        fontSize: "large"
+      },
+      style: {
+        fontSize: theme.typography?.pxToRem?.(35) || "2.1875rem"
+      }
+    },
+    // TODO v5 deprecate color prop, v6 remove for sx
+    ...Object.entries((theme.vars ?? theme).palette).filter(([, value]) => value && value.main).map(([color2]) => ({
+      props: {
+        color: color2
+      },
+      style: {
+        color: (theme.vars ?? theme).palette?.[color2]?.main
+      }
+    })),
+    {
+      props: {
+        color: "action"
+      },
+      style: {
+        color: (theme.vars ?? theme).palette?.action?.active
+      }
+    },
+    {
+      props: {
+        color: "disabled"
+      },
+      style: {
+        color: (theme.vars ?? theme).palette?.action?.disabled
+      }
+    },
+    {
+      props: {
+        color: "inherit"
+      },
+      style: {
+        color: void 0
+      }
+    }
+  ]
+})));
 const SvgIcon = /* @__PURE__ */ React.forwardRef(function SvgIcon2(inProps, ref2) {
   const props = useDefaultProps({
     props: inProps,
@@ -43860,7 +44237,7 @@ process.env.NODE_ENV !== "production" ? SvgIcon.propTypes = {
   inheritViewBox: PropTypes.bool,
   /**
    * The shape-rendering attribute. The behavior of the different options is described on the
-   * [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/shape-rendering).
+   * [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute/shape-rendering).
    * If you are having issues with blurry icons you should investigate this prop.
    */
   shapeRendering: PropTypes.string,
@@ -43883,13 +44260,11 @@ process.env.NODE_ENV !== "production" ? SvgIcon.propTypes = {
    */
   viewBox: PropTypes.string
 } : void 0;
-if (SvgIcon) {
-  SvgIcon.muiName = "SvgIcon";
-}
+SvgIcon.muiName = "SvgIcon";
 function createSvgIcon(path, displayName) {
   function Component(props, ref2) {
     return /* @__PURE__ */ jsxRuntimeExports.jsx(SvgIcon, {
-      "data-testid": `${displayName}Icon`,
+      "data-testid": process.env.NODE_ENV !== "production" ? `${displayName}Icon` : void 0,
       ref: ref2,
       ...props,
       children: path
@@ -43909,572 +44284,999 @@ const polyglotApiAtom = atom({
   key: "polyglotApiAtom",
   default: void 0
 });
-function useI18nApiOptional() {
-  return useRecoilValue_TRANSITION_SUPPORT_UNSTABLE(polyglotApiAtom);
-}
-function useI18nApi() {
-  const i18n = useI18nApiOptional();
-  if (!i18n) {
-    throw new Error("i18n not initialized in state");
+const prefix = "gqlb";
+class LocalMemory {
+  memoryKey;
+  props;
+  defaultValue;
+  constructor(props, key, defaultValue) {
+    this.memoryKey = key !== void 0 ? `${prefix}-${key}` : prefix;
+    this.props = props;
+    this.defaultValue = defaultValue;
   }
-  return i18n;
-}
-function useGlobalTranslationCode() {
-  const i18n = useI18nApi();
-  return i18n.locale;
-}
-function commonjsRequire(path) {
-  throw new Error('Could not dynamically require "' + path + '". Please configure the dynamicRequireTargets or/and ignoreDynamicRequires option of @rollup/plugin-commonjs appropriately for this require call to work.');
-}
-var pluralize$1 = { exports: {} };
-var pluralize = pluralize$1.exports;
-var hasRequiredPluralize;
-function requirePluralize() {
-  if (hasRequiredPluralize) return pluralize$1.exports;
-  hasRequiredPluralize = 1;
-  (function(module, exports) {
-    (function(root, pluralize2) {
-      if (typeof commonjsRequire === "function" && true && true) {
-        module.exports = pluralize2();
+  getKey(k) {
+    return `${this.memoryKey}-${k}`;
+  }
+  get memory() {
+    const { localStorage } = this.props;
+    if (localStorage) {
+      const memory = localStorage.getItem(this.memoryKey);
+      if (memory === null) {
+        return this.defaultValue;
+      }
+      const m = JSON.parse(memory);
+      return m;
+    }
+  }
+  set(m) {
+    const memory = { ...this.memory, ...m };
+    const { localStorage } = this.props;
+    return localStorage && localStorage.setItem(this.memoryKey, JSON.stringify(memory));
+  }
+  seta(key, o) {
+    const { localStorage } = this.props;
+    if (localStorage) {
+      if (o === void 0) {
+        localStorage.removeItem(this.getKey(`${key}`));
       } else {
-        root.pluralize = pluralize2();
+        localStorage.setItem(this.getKey(`${key}`), JSON.stringify(o));
       }
-    })(pluralize, function() {
-      var pluralRules = [];
-      var singularRules = [];
-      var uncountables = {};
-      var irregularPlurals = {};
-      var irregularSingles = {};
-      function sanitizeRule(rule) {
-        if (typeof rule === "string") {
-          return new RegExp("^" + rule + "$", "i");
-        }
-        return rule;
-      }
-      function restoreCase(word, token2) {
-        if (word === token2) return token2;
-        if (word === word.toLowerCase()) return token2.toLowerCase();
-        if (word === word.toUpperCase()) return token2.toUpperCase();
-        if (word[0] === word[0].toUpperCase()) {
-          return token2.charAt(0).toUpperCase() + token2.substr(1).toLowerCase();
-        }
-        return token2.toLowerCase();
-      }
-      function interpolate(str, args) {
-        return str.replace(/\$(\d{1,2})/g, function(match2, index) {
-          return args[index] || "";
-        });
-      }
-      function replace2(word, rule) {
-        return word.replace(rule[0], function(match2, index) {
-          var result = interpolate(rule[1], arguments);
-          if (match2 === "") {
-            return restoreCase(word[index - 1], result);
-          }
-          return restoreCase(match2, result);
-        });
-      }
-      function sanitizeWord(token2, word, rules) {
-        if (!token2.length || uncountables.hasOwnProperty(token2)) {
-          return word;
-        }
-        var len = rules.length;
-        while (len--) {
-          var rule = rules[len];
-          if (rule[0].test(word)) return replace2(word, rule);
-        }
-        return word;
-      }
-      function replaceWord(replaceMap, keepMap, rules) {
-        return function(word) {
-          var token2 = word.toLowerCase();
-          if (keepMap.hasOwnProperty(token2)) {
-            return restoreCase(word, token2);
-          }
-          if (replaceMap.hasOwnProperty(token2)) {
-            return restoreCase(word, replaceMap[token2]);
-          }
-          return sanitizeWord(token2, word, rules);
-        };
-      }
-      function checkWord(replaceMap, keepMap, rules, bool) {
-        return function(word) {
-          var token2 = word.toLowerCase();
-          if (keepMap.hasOwnProperty(token2)) return true;
-          if (replaceMap.hasOwnProperty(token2)) return false;
-          return sanitizeWord(token2, token2, rules) === token2;
-        };
-      }
-      function pluralize2(word, count, inclusive) {
-        var pluralized = count === 1 ? pluralize2.singular(word) : pluralize2.plural(word);
-        return (inclusive ? count + " " : "") + pluralized;
-      }
-      pluralize2.plural = replaceWord(
-        irregularSingles,
-        irregularPlurals,
-        pluralRules
-      );
-      pluralize2.isPlural = checkWord(
-        irregularSingles,
-        irregularPlurals,
-        pluralRules
-      );
-      pluralize2.singular = replaceWord(
-        irregularPlurals,
-        irregularSingles,
-        singularRules
-      );
-      pluralize2.isSingular = checkWord(
-        irregularPlurals,
-        irregularSingles,
-        singularRules
-      );
-      pluralize2.addPluralRule = function(rule, replacement) {
-        pluralRules.push([sanitizeRule(rule), replacement]);
-      };
-      pluralize2.addSingularRule = function(rule, replacement) {
-        singularRules.push([sanitizeRule(rule), replacement]);
-      };
-      pluralize2.addUncountableRule = function(word) {
-        if (typeof word === "string") {
-          uncountables[word.toLowerCase()] = true;
-          return;
-        }
-        pluralize2.addPluralRule(word, "$0");
-        pluralize2.addSingularRule(word, "$0");
-      };
-      pluralize2.addIrregularRule = function(single, plural) {
-        plural = plural.toLowerCase();
-        single = single.toLowerCase();
-        irregularSingles[single] = plural;
-        irregularPlurals[plural] = single;
-      };
-      [
-        // Pronouns.
-        ["I", "we"],
-        ["me", "us"],
-        ["he", "they"],
-        ["she", "they"],
-        ["them", "them"],
-        ["myself", "ourselves"],
-        ["yourself", "yourselves"],
-        ["itself", "themselves"],
-        ["herself", "themselves"],
-        ["himself", "themselves"],
-        ["themself", "themselves"],
-        ["is", "are"],
-        ["was", "were"],
-        ["has", "have"],
-        ["this", "these"],
-        ["that", "those"],
-        // Words ending in with a consonant and `o`.
-        ["echo", "echoes"],
-        ["dingo", "dingoes"],
-        ["volcano", "volcanoes"],
-        ["tornado", "tornadoes"],
-        ["torpedo", "torpedoes"],
-        // Ends with `us`.
-        ["genus", "genera"],
-        ["viscus", "viscera"],
-        // Ends with `ma`.
-        ["stigma", "stigmata"],
-        ["stoma", "stomata"],
-        ["dogma", "dogmata"],
-        ["lemma", "lemmata"],
-        ["schema", "schemata"],
-        ["anathema", "anathemata"],
-        // Other irregular rules.
-        ["ox", "oxen"],
-        ["axe", "axes"],
-        ["die", "dice"],
-        ["yes", "yeses"],
-        ["foot", "feet"],
-        ["eave", "eaves"],
-        ["goose", "geese"],
-        ["tooth", "teeth"],
-        ["quiz", "quizzes"],
-        ["human", "humans"],
-        ["proof", "proofs"],
-        ["carve", "carves"],
-        ["valve", "valves"],
-        ["looey", "looies"],
-        ["thief", "thieves"],
-        ["groove", "grooves"],
-        ["pickaxe", "pickaxes"],
-        ["passerby", "passersby"]
-      ].forEach(function(rule) {
-        return pluralize2.addIrregularRule(rule[0], rule[1]);
-      });
-      [
-        [/s?$/i, "s"],
-        [/[^\u0000-\u007F]$/i, "$0"],
-        [/([^aeiou]ese)$/i, "$1"],
-        [/(ax|test)is$/i, "$1es"],
-        [/(alias|[^aou]us|t[lm]as|gas|ris)$/i, "$1es"],
-        [/(e[mn]u)s?$/i, "$1s"],
-        [/([^l]ias|[aeiou]las|[ejzr]as|[iu]am)$/i, "$1"],
-        [/(alumn|syllab|vir|radi|nucle|fung|cact|stimul|termin|bacill|foc|uter|loc|strat)(?:us|i)$/i, "$1i"],
-        [/(alumn|alg|vertebr)(?:a|ae)$/i, "$1ae"],
-        [/(seraph|cherub)(?:im)?$/i, "$1im"],
-        [/(her|at|gr)o$/i, "$1oes"],
-        [/(agend|addend|millenni|dat|extrem|bacteri|desiderat|strat|candelabr|errat|ov|symposi|curricul|automat|quor)(?:a|um)$/i, "$1a"],
-        [/(apheli|hyperbat|periheli|asyndet|noumen|phenomen|criteri|organ|prolegomen|hedr|automat)(?:a|on)$/i, "$1a"],
-        [/sis$/i, "ses"],
-        [/(?:(kni|wi|li)fe|(ar|l|ea|eo|oa|hoo)f)$/i, "$1$2ves"],
-        [/([^aeiouy]|qu)y$/i, "$1ies"],
-        [/([^ch][ieo][ln])ey$/i, "$1ies"],
-        [/(x|ch|ss|sh|zz)$/i, "$1es"],
-        [/(matr|cod|mur|sil|vert|ind|append)(?:ix|ex)$/i, "$1ices"],
-        [/\b((?:tit)?m|l)(?:ice|ouse)$/i, "$1ice"],
-        [/(pe)(?:rson|ople)$/i, "$1ople"],
-        [/(child)(?:ren)?$/i, "$1ren"],
-        [/eaux$/i, "$0"],
-        [/m[ae]n$/i, "men"],
-        ["thou", "you"]
-      ].forEach(function(rule) {
-        return pluralize2.addPluralRule(rule[0], rule[1]);
-      });
-      [
-        [/s$/i, ""],
-        [/(ss)$/i, "$1"],
-        [/(wi|kni|(?:after|half|high|low|mid|non|night|[^\w]|^)li)ves$/i, "$1fe"],
-        [/(ar|(?:wo|[ae])l|[eo][ao])ves$/i, "$1f"],
-        [/ies$/i, "y"],
-        [/\b([pl]|zomb|(?:neck|cross)?t|coll|faer|food|gen|goon|group|lass|talk|goal|cut)ies$/i, "$1ie"],
-        [/\b(mon|smil)ies$/i, "$1ey"],
-        [/\b((?:tit)?m|l)ice$/i, "$1ouse"],
-        [/(seraph|cherub)im$/i, "$1"],
-        [/(x|ch|ss|sh|zz|tto|go|cho|alias|[^aou]us|t[lm]as|gas|(?:her|at|gr)o|[aeiou]ris)(?:es)?$/i, "$1"],
-        [/(analy|diagno|parenthe|progno|synop|the|empha|cri|ne)(?:sis|ses)$/i, "$1sis"],
-        [/(movie|twelve|abuse|e[mn]u)s$/i, "$1"],
-        [/(test)(?:is|es)$/i, "$1is"],
-        [/(alumn|syllab|vir|radi|nucle|fung|cact|stimul|termin|bacill|foc|uter|loc|strat)(?:us|i)$/i, "$1us"],
-        [/(agend|addend|millenni|dat|extrem|bacteri|desiderat|strat|candelabr|errat|ov|symposi|curricul|quor)a$/i, "$1um"],
-        [/(apheli|hyperbat|periheli|asyndet|noumen|phenomen|criteri|organ|prolegomen|hedr|automat)a$/i, "$1on"],
-        [/(alumn|alg|vertebr)ae$/i, "$1a"],
-        [/(cod|mur|sil|vert|ind)ices$/i, "$1ex"],
-        [/(matr|append)ices$/i, "$1ix"],
-        [/(pe)(rson|ople)$/i, "$1rson"],
-        [/(child)ren$/i, "$1"],
-        [/(eau)x?$/i, "$1"],
-        [/men$/i, "man"]
-      ].forEach(function(rule) {
-        return pluralize2.addSingularRule(rule[0], rule[1]);
-      });
-      [
-        // Singular words with no plurals.
-        "adulthood",
-        "advice",
-        "agenda",
-        "aid",
-        "aircraft",
-        "alcohol",
-        "ammo",
-        "analytics",
-        "anime",
-        "athletics",
-        "audio",
-        "bison",
-        "blood",
-        "bream",
-        "buffalo",
-        "butter",
-        "carp",
-        "cash",
-        "chassis",
-        "chess",
-        "clothing",
-        "cod",
-        "commerce",
-        "cooperation",
-        "corps",
-        "debris",
-        "diabetes",
-        "digestion",
-        "elk",
-        "energy",
-        "equipment",
-        "excretion",
-        "expertise",
-        "firmware",
-        "flounder",
-        "fun",
-        "gallows",
-        "garbage",
-        "graffiti",
-        "hardware",
-        "headquarters",
-        "health",
-        "herpes",
-        "highjinks",
-        "homework",
-        "housework",
-        "information",
-        "jeans",
-        "justice",
-        "kudos",
-        "labour",
-        "literature",
-        "machinery",
-        "mackerel",
-        "mail",
-        "media",
-        "mews",
-        "moose",
-        "music",
-        "mud",
-        "manga",
-        "news",
-        "only",
-        "personnel",
-        "pike",
-        "plankton",
-        "pliers",
-        "police",
-        "pollution",
-        "premises",
-        "rain",
-        "research",
-        "rice",
-        "salmon",
-        "scissors",
-        "series",
-        "sewage",
-        "shambles",
-        "shrimp",
-        "software",
-        "species",
-        "staff",
-        "swine",
-        "tennis",
-        "traffic",
-        "transportation",
-        "trout",
-        "tuna",
-        "wealth",
-        "welfare",
-        "whiting",
-        "wildebeest",
-        "wildlife",
-        "you",
-        /pok[eé]mon$/i,
-        // Regexes.
-        /[^aeiou]ese$/i,
-        // "chinese", "japanese"
-        /deer$/i,
-        // "deer", "reindeer"
-        /fish$/i,
-        // "fish", "blowfish", "angelfish"
-        /measles$/i,
-        /o[iu]s$/i,
-        // "carnivorous"
-        /pox$/i,
-        // "chickpox", "smallpox"
-        /sheep$/i
-      ].forEach(pluralize2.addUncountableRule);
-      return pluralize2;
-    });
-  })(pluralize$1);
-  return pluralize$1.exports;
-}
-var pluralizeExports = requirePluralize();
-const toUnderscore = (input) => {
-  return input.replace(/([A-Z])/g, ($1) => "_" + $1.toLowerCase());
-};
-const toPlural = (s) => {
-  return pluralizeExports.plural(s);
-};
-const singularize = (s) => {
-  return pluralizeExports.singular(s);
-};
-function capitalizeFirstLetter(s) {
-  return s.charAt(0).toUpperCase() + s.slice(1);
-}
-const jupKeyIdSuffix = "Id";
-function getTargetObjectTypeCapitalizedName(propertyType) {
-  const { type: type2, name } = propertyType;
-  if (["belongs-to"].includes(type2)) {
-    return capitalizeFirstLetter(name);
-  }
-  if (["has-many-paginated", "has-many"].includes(type2)) {
-    return singularize(capitalizeFirstLetter(name));
-  }
-  if (["foreign-key"].includes(type2)) {
-    const regexp = new RegExp(`${jupKeyIdSuffix}$`, "gi");
-    return capitalizeFirstLetter(name.replace(regexp, ""));
-  }
-}
-const tenantInfo = {
-  objectType: "company",
-  idProperty: "companyId"
-};
-function includeJupType(list, type2) {
-  return list.includes(type2);
-}
-function isPropertyTypeBelongsTo(propertyType) {
-  const { type: type2 } = propertyType;
-  return includeJupType(["belongs-to"], type2);
-}
-function isPropertyTypeHasMany(propertyType) {
-  const { type: type2 } = propertyType;
-  return includeJupType(["has-many", "has-many-paginated"], type2);
-}
-function getTargetObjectTypeDefinition(propertyType) {
-  const { association } = propertyType;
-  if (association) {
-    return getObjectTypeDefinitionByName(association.targetModelName);
-  }
-  throw new Error(`missing target property type for property <${propertyType.name}> on ${propertyType.objectTypeName}`);
-}
-function objectTypePluralLabel(translation, objectTypeName) {
-  const otDef = getObjectTypeDefinitionByName(objectTypeName);
-  if (!otDef) {
-    return toPlural(objectTypeName);
-  }
-  return translation(`models.${otDef.capitalized.singular}.plural`);
-}
-function objectTypeCapitalizedPluralLabel(translation, objectTypeName) {
-  return capitalizeFirstLetter(objectTypePluralLabel(translation, objectTypeName));
-}
-const technicalPropertyTypeNames = {
-  externalId: "externalId",
-  createdAt: "createdAt",
-  updatedAt: "updatedAt",
-  userCompanyCreatedBy: "userCompanyCreatedBy",
-  userCompanyCreatedById: "userCompanyCreatedById",
-  userCompanyUpdatedBy: "userCompanyUpdatedBy",
-  userCompanyUpdatedById: "userCompanyUpdatedById"
-};
-const technicalPropertyTypes = [
-  technicalPropertyTypeNames.externalId,
-  technicalPropertyTypeNames.createdAt,
-  technicalPropertyTypeNames.updatedAt,
-  technicalPropertyTypeNames.userCompanyCreatedBy,
-  technicalPropertyTypeNames.userCompanyCreatedById,
-  technicalPropertyTypeNames.userCompanyUpdatedBy,
-  technicalPropertyTypeNames.userCompanyUpdatedById
-];
-const calculatedSpacesPropertyNames = [
-  "workplacesCount",
-  "workplacesRatio",
-  "freeWorkplacesCount",
-  "flexWorkplacesCount",
-  "flexRatio",
-  "sharedWorkplacesCount",
-  "sharedWorkplacesRatio",
-  "transitWorkplacesCount",
-  "seatsCount",
-  "totalCapacityCount",
-  "totalCapacityWorkplaceCountRatio",
-  "carbonFootprint"
-];
-const calculatedPeoplePropertyNames = [
-  "totalPeopleCount",
-  "peopleRatio",
-  "expansionRatio",
-  "seatsPeopleRatio",
-  "occupancyRate"
-];
-const calculatedInfoPropertyNames = [
-  ...calculatedPeoplePropertyNames,
-  ...calculatedSpacesPropertyNames
-];
-const roomPropertyNames = [
-  "roomsCount",
-  "roomsArea"
-];
-const calculatedGlobalPropertyNames = [
-  ...roomPropertyNames,
-  ...calculatedInfoPropertyNames
-];
-const allCalculatedPropertiesForTranslations = [
-  ...calculatedGlobalPropertyNames,
-  "peopleCount"
-];
-function getObjectTypeSingularLabel(translation, objectTypeName) {
-  const otDef = getObjectTypeDefinitionByName(objectTypeName);
-  if (!otDef) {
-    return objectTypeName;
-  }
-  return translation(`models.${otDef.capitalized.singular}.singular`);
-}
-function getObjectTypeCapitalizedSingularLabel(translation, objectTypeName) {
-  return capitalizeFirstLetter(getObjectTypeSingularLabel(translation, objectTypeName));
-}
-function getPropertyTypeLabelWithTranslation(i18n, propertyType) {
-  var _a, _b;
-  const { objectTypeName, type: type2, name } = propertyType;
-  const objectTypeDefinition = getObjectTypeDefinitionByName(objectTypeName);
-  if (technicalPropertyTypes.includes(name)) {
-    return i18n.translate(`entity.properties.${name}.label`);
-  }
-  const defaultKey = `models.${objectTypeDefinition.capitalized.singular}.properties.${name}.label`;
-  const d = i18n.translate(defaultKey);
-  if (i18n.has(defaultKey)) {
-    return d;
-  }
-  if (allCalculatedPropertiesForTranslations.includes(name)) {
-    const key = `calculatedProperties.properties.${name}.label`;
-    if (i18n.has(key)) {
-      return i18n.translate(key);
     }
   }
-  const belongsToCapitalizedObjectTypeName = getTargetObjectTypeCapitalizedName(propertyType);
-  if (isPropertyTypeBelongsTo(propertyType)) {
-    return capitalizeFirstLetter(i18n.translate(`models.${belongsToCapitalizedObjectTypeName}.singular`));
-  }
-  if (type2 === "foreign-key") {
-    const fkKey = `models.${belongsToCapitalizedObjectTypeName}.properties.id.label`;
-    if (i18n.has(fkKey)) {
-      return i18n.translate(fkKey);
-    } else if ((_a = propertyType.association) == null ? void 0 : _a.targetModelName) {
-      return `Id (${getObjectTypeSingularLabel(i18n.translate, (_b = propertyType.association) == null ? void 0 : _b.targetModelName)})`;
-    } else {
-      return "Id (?)";
+  geta(key) {
+    const { localStorage } = this.props;
+    if (localStorage) {
+      const memory = localStorage.getItem(this.getKey(`${key}`));
+      return memory ? JSON.parse(memory) : void 0;
     }
   }
-  if (isPropertyTypeHasMany(propertyType)) {
-    const targetObjectType = getTargetObjectTypeDefinition(propertyType);
-    return objectTypeCapitalizedPluralLabel(i18n.translate, targetObjectType.name);
+}
+var window_1;
+var hasRequiredWindow;
+function requireWindow() {
+  if (hasRequiredWindow) return window_1;
+  hasRequiredWindow = 1;
+  var win;
+  if (typeof window !== "undefined") {
+    win = window;
+  } else if (typeof window !== "undefined") {
+    win = window;
+  } else if (typeof self !== "undefined") {
+    win = self;
+  } else {
+    win = {};
   }
-  return d || `<${name}>`;
+  window_1 = win;
+  return window_1;
 }
-function PropertyTypeMandatoryText(props) {
-  const { propertyType } = props;
-  const i18n = useI18nApi();
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: getPropertyTypeMandatoryText(i18n, propertyType) });
+var windowExports = requireWindow();
+const window$1 = /* @__PURE__ */ getDefaultExportFromCjs(windowExports);
+const __viteBrowserExternal = {};
+const __viteBrowserExternal$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  default: __viteBrowserExternal
+}, Symbol.toStringTag, { value: "Module" }));
+const require$$0 = /* @__PURE__ */ getAugmentedNamespace(__viteBrowserExternal$1);
+var document_1;
+var hasRequiredDocument;
+function requireDocument() {
+  if (hasRequiredDocument) return document_1;
+  hasRequiredDocument = 1;
+  var topLevel = typeof window !== "undefined" ? window : typeof window !== "undefined" ? window : {};
+  var minDoc = require$$0;
+  var doccy;
+  if (typeof document !== "undefined") {
+    doccy = document;
+  } else {
+    doccy = topLevel["__GLOBAL_DOCUMENT_CACHE@4"];
+    if (!doccy) {
+      doccy = topLevel["__GLOBAL_DOCUMENT_CACHE@4"] = minDoc;
+    }
+  }
+  document_1 = doccy;
+  return document_1;
 }
-function getPropertyTypeMandatoryText(i18nApi, propertyType) {
-  return i18nApi.translate("entity.properties.mandatory", { name: getPropertyTypeLabelWithTranslation(i18nApi, propertyType) });
-}
-function PropertyTypeMandatoryLabel(props) {
-  const { propertyType } = props;
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(Typography, { variant: "caption", style: { display: "flex", alignItems: "center" }, children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx(PropertyTypeMandatoryIcon, { sx: { marginRight: 1 } }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(PropertyTypeMandatoryText, { propertyType })
-  ] });
-}
-function getTranslatedUnit(translation, unit) {
-  if (unit) {
-    return translation(`${unit.type}.${unit.value}`);
+var documentExports = requireDocument();
+const document$1 = /* @__PURE__ */ getDefaultExportFromCjs(documentExports);
+function getNavigator() {
+  if (typeof navigator !== "undefined") {
+    return navigator;
   }
 }
-const PropertyTypeLabel = React__default.forwardRef((props, ref2) => {
-  const { propertyType, displayUnit, style: style2, ...otherProps } = props;
-  const i18n = useI18nApi();
-  const unit = displayUnit && propertyType.options.unit && ` (${getTranslatedUnit(i18n.translate, propertyType.options.unit)})`;
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { ref: ref2, style: style2, ...otherProps, children: [
-    getPropertyTypeLabelWithTranslation(i18n, props.propertyType),
-    unit
-  ] });
-});
-const versionCookieKeyName = "x-version";
-const version = { "major": 3, "minor": 4, "build": 122 };
-function getAppVersion() {
-  const { major, minor, build } = version;
-  return `${major}.${minor}.${build}`;
+function getLocalStorage() {
+  const window2 = getWindow();
+  if (window2?.localStorage) {
+    return window2.localStorage;
+  }
 }
-const appVersion = getAppVersion();
+function getWindow() {
+  return window$1;
+}
+function getDocument() {
+  return document$1;
+}
+function getDocumentLocation() {
+  return getDocument()?.location;
+}
+class GQLBMemory extends LocalMemory {
+  set language(ln) {
+    this.seta("language", ln);
+  }
+  get language() {
+    return this.geta("language");
+  }
+}
+const gqlbMemory = new GQLBMemory({ localStorage: getLocalStorage() }, "gqlb", {});
+const deDE$1 = {
+  components: {
+    MuiBreadcrumbs: {
+      defaultProps: {
+        expandText: "Pfad anzeigen"
+      }
+    },
+    MuiTablePagination: {
+      defaultProps: {
+        getItemAriaLabel: (type2) => {
+          if (type2 === "first") {
+            return "Zur ersten Seite";
+          }
+          if (type2 === "last") {
+            return "Zur letzten Seite";
+          }
+          if (type2 === "next") {
+            return "Zur nächsten Seite";
+          }
+          return "Zur vorherigen Seite";
+        },
+        labelRowsPerPage: "Zeilen pro Seite:",
+        labelDisplayedRows: ({
+          from: from2,
+          to,
+          count
+        }) => `${from2}–${to} von ${count !== -1 ? count : `mehr als ${to}`}`
+      }
+    },
+    MuiRating: {
+      defaultProps: {
+        getLabelText: (value) => `${value} ${value !== 1 ? "Sterne" : "Stern"}`,
+        emptyLabelText: "Keine Wertung"
+      }
+    },
+    MuiAutocomplete: {
+      defaultProps: {
+        clearText: "Leeren",
+        closeText: "Schließen",
+        loadingText: "Wird geladen…",
+        noOptionsText: "Keine Optionen",
+        openText: "Öffnen"
+      }
+    },
+    MuiAlert: {
+      defaultProps: {
+        closeText: "Schließen"
+      }
+    },
+    MuiPagination: {
+      defaultProps: {
+        "aria-label": "Navigation via Seitennummerierung",
+        getItemAriaLabel: (type2, page, selected) => {
+          if (type2 === "page") {
+            return `${selected ? "" : "Gehe zu "}Seite ${page}`;
+          }
+          if (type2 === "first") {
+            return "Zur ersten Seite";
+          }
+          if (type2 === "last") {
+            return "Zur letzten Seite";
+          }
+          if (type2 === "next") {
+            return "Zur nächsten Seite";
+          }
+          return "Zur vorherigen Seite";
+        }
+      }
+    }
+  }
+};
+const enUS$1 = {
+  /*
+  components: {
+    MuiBreadcrumbs: { defaultProps: {
+      expandText: 'Show path',
+    }},
+    MuiTablePagination: { defaultProps: {
+      getItemAriaLabel: (type) => {
+        if (type === 'first') {
+          return 'Go to first page';
+        }
+        if (type === 'last') {
+          return 'Go to last page';
+        }
+        if (type === 'next') {
+          return 'Go to next page';
+        }
+        // if (type === 'previous') {
+        return 'Go to previous page';
+      },
+      labelRowsPerPage: 'Rows per page:',
+      labelDisplayedRows: ({ from, to, count }) =>
+  `${from}–${to} of ${count !== -1 ? count : `more than ${to}`}`,
+    }},
+    MuiRating: { defaultProps: {
+      getLabelText: value => `${value} Star${value !== 1 ? 's' : ''}`,
+      emptyLabelText: 'Empty',
+    }},
+    MuiAutocomplete: { defaultProps: {
+      clearText: 'Clear',
+      closeText: 'Close',
+      loadingText: 'Loading…',
+      noOptionsText: 'No options',
+      openText: 'Open',
+    }},
+    MuiAlert: { defaultProps: {
+      closeText: 'Close',
+    }},
+    MuiPagination: {  defaultProps: {
+      'aria-label': 'Pagination navigation',
+      getItemAriaLabel: (type, page, selected) => {
+        if (type === 'page') {
+          return `${selected ? '' : 'Go to '}page ${page}`;
+        }
+        if (type === 'first') {
+          return 'Go to first page';
+        }
+        if (type === 'last') {
+          return 'Go to last page';
+        }
+        if (type === 'next') {
+          return 'Go to next page';
+        }
+        // if (type === 'previous') {
+        return 'Go to previous page';
+      },
+    }},
+  },
+  */
+};
+const esES$1 = {
+  components: {
+    MuiBreadcrumbs: {
+      defaultProps: {
+        expandText: "Mostrar ruta"
+      }
+    },
+    MuiTablePagination: {
+      defaultProps: {
+        getItemAriaLabel: (type2) => {
+          if (type2 === "first") {
+            return "Ir a la primera página";
+          }
+          if (type2 === "last") {
+            return "Ir a la última página";
+          }
+          if (type2 === "next") {
+            return "Ir a la página siguiente";
+          }
+          return "Ir a la página anterior";
+        },
+        labelRowsPerPage: "Filas por página:",
+        labelDisplayedRows: ({
+          from: from2,
+          to,
+          count
+        }) => `${from2}–${to} de ${count !== -1 ? count : `más de ${to}`}`
+      }
+    },
+    MuiRating: {
+      defaultProps: {
+        getLabelText: (value) => `${value} Estrella${value !== 1 ? "s" : ""}`,
+        emptyLabelText: "Vacío"
+      }
+    },
+    MuiAutocomplete: {
+      defaultProps: {
+        clearText: "Limpiar",
+        closeText: "Cerrar",
+        loadingText: "Cargando…",
+        noOptionsText: "Sin opciones",
+        openText: "Abierto"
+      }
+    },
+    MuiAlert: {
+      defaultProps: {
+        closeText: "Cerrar"
+      }
+    },
+    MuiPagination: {
+      defaultProps: {
+        "aria-label": "Paginador",
+        getItemAriaLabel: (type2, page, selected) => {
+          if (type2 === "page") {
+            return `${selected ? "" : "Ir a la "}página ${page}`;
+          }
+          if (type2 === "first") {
+            return "Ir a la primera página";
+          }
+          if (type2 === "last") {
+            return "Ir a la última página";
+          }
+          if (type2 === "next") {
+            return "Ir a la página siguiente";
+          }
+          return "Ir a la página anterior";
+        }
+      }
+    }
+  }
+};
+const frFR$1 = {
+  components: {
+    MuiBreadcrumbs: {
+      defaultProps: {
+        expandText: "Montrer le chemin"
+      }
+    },
+    MuiTablePagination: {
+      defaultProps: {
+        getItemAriaLabel: (type2) => {
+          if (type2 === "first") {
+            return "Aller à la première page";
+          }
+          if (type2 === "last") {
+            return "Aller à la dernière page";
+          }
+          if (type2 === "next") {
+            return "Aller à la page suivante";
+          }
+          return "Aller à la page précédente";
+        },
+        labelRowsPerPage: "Lignes par page :",
+        labelDisplayedRows: ({
+          from: from2,
+          to,
+          count
+        }) => `${from2}–${to} sur ${count !== -1 ? count : `plus que ${to}`}`
+      }
+    },
+    MuiRating: {
+      defaultProps: {
+        getLabelText: (value) => `${value} Etoile${value !== 1 ? "s" : ""}`,
+        emptyLabelText: "Vide"
+      }
+    },
+    MuiAutocomplete: {
+      defaultProps: {
+        clearText: "Vider",
+        closeText: "Fermer",
+        loadingText: "Chargement…",
+        noOptionsText: "Pas de résultats",
+        openText: "Ouvrir"
+      }
+    },
+    MuiAlert: {
+      defaultProps: {
+        closeText: "Fermer"
+      }
+    },
+    MuiPagination: {
+      defaultProps: {
+        "aria-label": "navigation de pagination",
+        getItemAriaLabel: (type2, page, selected) => {
+          if (type2 === "page") {
+            return `${selected ? "" : "Aller à la "}page ${page}`;
+          }
+          if (type2 === "first") {
+            return "Aller à la première page";
+          }
+          if (type2 === "last") {
+            return "Aller à la dernière page";
+          }
+          if (type2 === "next") {
+            return "Aller à la page suivante";
+          }
+          return "Aller à la page précédente";
+        }
+      }
+    }
+  }
+};
+const itIT$1 = {
+  components: {
+    MuiBreadcrumbs: {
+      defaultProps: {
+        expandText: "Visualizza percorso"
+      }
+    },
+    MuiTablePagination: {
+      defaultProps: {
+        getItemAriaLabel: (type2) => {
+          if (type2 === "first") {
+            return "Vai alla prima pagina";
+          }
+          if (type2 === "last") {
+            return "Vai all'ultima pagina";
+          }
+          if (type2 === "next") {
+            return "Vai alla pagina successiva";
+          }
+          return "Vai alla pagina precedente";
+        },
+        labelRowsPerPage: "Righe per pagina:",
+        labelDisplayedRows: ({
+          from: from2,
+          to,
+          count
+        }) => `${from2}–${to} di ${count !== -1 ? count : `più di ${to}`}`
+      }
+    },
+    MuiRating: {
+      defaultProps: {
+        getLabelText: (value) => `${value} Stell${value !== 1 ? "e" : "a"}`,
+        emptyLabelText: "Vuoto"
+      }
+    },
+    MuiAutocomplete: {
+      defaultProps: {
+        clearText: "Svuota",
+        closeText: "Chiudi",
+        loadingText: "Caricamento in corso…",
+        noOptionsText: "Nessuna opzione",
+        openText: "Apri"
+      }
+    },
+    MuiAlert: {
+      defaultProps: {
+        closeText: "Chiudi"
+      }
+    },
+    MuiPagination: {
+      defaultProps: {
+        "aria-label": "Navigazione impaginata",
+        getItemAriaLabel: (type2, page, selected) => {
+          if (type2 === "page") {
+            return `${selected ? "" : "Vai alla "}pagina ${page}`;
+          }
+          if (type2 === "first") {
+            return "Vai alla prima pagina";
+          }
+          if (type2 === "last") {
+            return "Vai all'ultima pagina";
+          }
+          if (type2 === "next") {
+            return "Vai alla pagina successiva";
+          }
+          return "Vai alla pagina precedente";
+        }
+      }
+    }
+  }
+};
+const nlNL$1 = {
+  components: {
+    MuiBreadcrumbs: {
+      defaultProps: {
+        expandText: "Pad tonen"
+      }
+    },
+    MuiTablePagination: {
+      defaultProps: {
+        getItemAriaLabel: (type2) => {
+          if (type2 === "first") {
+            return "Ga naar eerste pagina";
+          }
+          if (type2 === "last") {
+            return "Ga naar laatste pagina";
+          }
+          if (type2 === "next") {
+            return "Ga naar volgende pagina";
+          }
+          return "Ga naar vorige pagina";
+        },
+        labelRowsPerPage: "Regels per pagina:",
+        labelDisplayedRows: ({
+          from: from2,
+          to,
+          count
+        }) => `${from2}–${to} van ${count !== -1 ? count : `meer dan ${to}`}`
+      }
+    },
+    MuiRating: {
+      defaultProps: {
+        getLabelText: (value) => `${value} Ster${value !== 1 ? "ren" : ""}`,
+        emptyLabelText: "Leeg"
+      }
+    },
+    MuiAutocomplete: {
+      defaultProps: {
+        clearText: "Wissen",
+        closeText: "Sluiten",
+        loadingText: "Laden…",
+        noOptionsText: "Geen opties",
+        openText: "Openen"
+      }
+    },
+    MuiAlert: {
+      defaultProps: {
+        closeText: "Sluiten"
+      }
+    },
+    MuiPagination: {
+      defaultProps: {
+        "aria-label": "Navigatie via paginering",
+        getItemAriaLabel: (type2, page, selected) => {
+          if (type2 === "page") {
+            return `${selected ? "" : "Ga naar "}pagina ${page}`;
+          }
+          if (type2 === "first") {
+            return "Ga naar eerste pagina";
+          }
+          if (type2 === "last") {
+            return "Ga naar laatste pagina";
+          }
+          if (type2 === "next") {
+            return "Ga naar volgende pagina";
+          }
+          return "Ga naar vorige pagina";
+        }
+      }
+    }
+  }
+};
+const getPickersLocalization = (pickersTranslations) => {
+  return {
+    components: {
+      MuiLocalizationProvider: {
+        defaultProps: {
+          localeText: _extends({}, pickersTranslations)
+        }
+      }
+    }
+  };
+};
+const timeViews$1 = {
+  hours: "Stunden",
+  minutes: "Minuten",
+  seconds: "Sekunden",
+  meridiem: "Meridiem"
+};
+const deDEPickers = {
+  // Calendar navigation
+  previousMonth: "Letzter Monat",
+  nextMonth: "Nächster Monat",
+  // View navigation
+  openPreviousView: "Letzte Ansicht öffnen",
+  openNextView: "Nächste Ansicht öffnen",
+  calendarViewSwitchingButtonAriaLabel: (view) => view === "year" ? "Jahresansicht ist geöffnet, zur Kalenderansicht wechseln" : "Kalenderansicht ist geöffnet, zur Jahresansicht wechseln",
+  // DateRange labels
+  start: "Beginn",
+  end: "Ende",
+  startDate: "Startdatum",
+  startTime: "Startzeit",
+  endDate: "Enddatum",
+  endTime: "Endzeit",
+  // Action bar
+  cancelButtonLabel: "Abbrechen",
+  clearButtonLabel: "Löschen",
+  okButtonLabel: "OK",
+  todayButtonLabel: "Heute",
+  nextStepButtonLabel: "Nächster",
+  // Toolbar titles
+  datePickerToolbarTitle: "Datum auswählen",
+  dateTimePickerToolbarTitle: "Datum & Uhrzeit auswählen",
+  timePickerToolbarTitle: "Uhrzeit auswählen",
+  dateRangePickerToolbarTitle: "Datumsbereich auswählen",
+  timeRangePickerToolbarTitle: "Zeitspanne auswählen",
+  // Clock labels
+  clockLabelText: (view, formattedTime) => `${timeViews$1[view] ?? view} auswählen. ${!formattedTime ? "Keine Uhrzeit ausgewählt" : `Gewählte Uhrzeit ist ${formattedTime}`}`,
+  hoursClockNumberText: (hours) => `${hours} ${timeViews$1.hours}`,
+  minutesClockNumberText: (minutes) => `${minutes} ${timeViews$1.minutes}`,
+  secondsClockNumberText: (seconds) => `${seconds}  ${timeViews$1.seconds}`,
+  // Digital clock labels
+  selectViewText: (view) => `${timeViews$1[view]} auswählen`,
+  // Calendar labels
+  calendarWeekNumberHeaderLabel: "Kalenderwoche",
+  calendarWeekNumberHeaderText: "#",
+  calendarWeekNumberAriaLabelText: (weekNumber) => `Woche ${weekNumber}`,
+  calendarWeekNumberText: (weekNumber) => `${weekNumber}`,
+  // Open Picker labels
+  openDatePickerDialogue: (formattedDate) => formattedDate ? `Datum auswählen, gewähltes Datum ist ${formattedDate}` : "Datum auswählen",
+  openTimePickerDialogue: (formattedTime) => formattedTime ? `Uhrzeit auswählen, gewählte Uhrzeit ist ${formattedTime}` : "Uhrzeit auswählen",
+  openRangePickerDialogue: (formattedRange) => formattedRange ? `Zeitspanne auswählen, die aktuell ausgewählte Zeitspanne ist ${formattedRange}` : "Zeitspanne auswählen",
+  fieldClearLabel: "Wert leeren",
+  // Table labels
+  timeTableLabel: "Uhrzeit auswählen",
+  dateTableLabel: "Datum auswählen",
+  // Field section placeholders
+  fieldYearPlaceholder: (params) => "J".repeat(params.digitAmount),
+  fieldMonthPlaceholder: (params) => params.contentType === "letter" ? "MMMM" : "MM",
+  fieldDayPlaceholder: () => "TT",
+  fieldWeekDayPlaceholder: (params) => params.contentType === "letter" ? "EEEE" : "EE",
+  fieldHoursPlaceholder: () => "hh",
+  fieldMinutesPlaceholder: () => "mm",
+  fieldSecondsPlaceholder: () => "ss",
+  fieldMeridiemPlaceholder: () => "aa",
+  // View names
+  year: "Jahr",
+  month: "Monat",
+  day: "Tag",
+  weekDay: "Wochentag",
+  hours: "Stunden",
+  minutes: "Minuten",
+  seconds: "Sekunden",
+  meridiem: "Tageszeit",
+  // Common
+  empty: "Leer"
+};
+const deDE = getPickersLocalization(deDEPickers);
+const enUSPickers = {
+  // Calendar navigation
+  previousMonth: "Previous month",
+  nextMonth: "Next month",
+  // View navigation
+  openPreviousView: "Open previous view",
+  openNextView: "Open next view",
+  calendarViewSwitchingButtonAriaLabel: (view) => view === "year" ? "year view is open, switch to calendar view" : "calendar view is open, switch to year view",
+  // DateRange labels
+  start: "Start",
+  end: "End",
+  startDate: "Start date",
+  startTime: "Start time",
+  endDate: "End date",
+  endTime: "End time",
+  // Action bar
+  cancelButtonLabel: "Cancel",
+  clearButtonLabel: "Clear",
+  okButtonLabel: "OK",
+  todayButtonLabel: "Today",
+  nextStepButtonLabel: "Next",
+  // Toolbar titles
+  datePickerToolbarTitle: "Select date",
+  dateTimePickerToolbarTitle: "Select date & time",
+  timePickerToolbarTitle: "Select time",
+  dateRangePickerToolbarTitle: "Select date range",
+  timeRangePickerToolbarTitle: "Select time range",
+  // Clock labels
+  clockLabelText: (view, formattedTime) => `Select ${view}. ${!formattedTime ? "No time selected" : `Selected time is ${formattedTime}`}`,
+  hoursClockNumberText: (hours) => `${hours} hours`,
+  minutesClockNumberText: (minutes) => `${minutes} minutes`,
+  secondsClockNumberText: (seconds) => `${seconds} seconds`,
+  // Digital clock labels
+  selectViewText: (view) => `Select ${view}`,
+  // Calendar labels
+  calendarWeekNumberHeaderLabel: "Week number",
+  calendarWeekNumberHeaderText: "#",
+  calendarWeekNumberAriaLabelText: (weekNumber) => `Week ${weekNumber}`,
+  calendarWeekNumberText: (weekNumber) => `${weekNumber}`,
+  // Open Picker labels
+  openDatePickerDialogue: (formattedDate) => formattedDate ? `Choose date, selected date is ${formattedDate}` : "Choose date",
+  openTimePickerDialogue: (formattedTime) => formattedTime ? `Choose time, selected time is ${formattedTime}` : "Choose time",
+  openRangePickerDialogue: (formattedRange) => formattedRange ? `Choose range, selected range is ${formattedRange}` : "Choose range",
+  fieldClearLabel: "Clear",
+  // Table labels
+  timeTableLabel: "pick time",
+  dateTableLabel: "pick date",
+  // Field section placeholders
+  fieldYearPlaceholder: (params) => "Y".repeat(params.digitAmount),
+  fieldMonthPlaceholder: (params) => params.contentType === "letter" ? "MMMM" : "MM",
+  fieldDayPlaceholder: () => "DD",
+  fieldWeekDayPlaceholder: (params) => params.contentType === "letter" ? "EEEE" : "EE",
+  fieldHoursPlaceholder: () => "hh",
+  fieldMinutesPlaceholder: () => "mm",
+  fieldSecondsPlaceholder: () => "ss",
+  fieldMeridiemPlaceholder: () => "aa",
+  // View names
+  year: "Year",
+  month: "Month",
+  day: "Day",
+  weekDay: "Week day",
+  hours: "Hours",
+  minutes: "Minutes",
+  seconds: "Seconds",
+  meridiem: "Meridiem",
+  // Common
+  empty: "Empty"
+};
+const enUS = getPickersLocalization(enUSPickers);
+const views$2 = {
+  hours: "Horas",
+  minutes: "Minutos",
+  seconds: "Segundos",
+  meridiem: "Meridiano"
+};
+const esESPickers = {
+  // Calendar navigation
+  previousMonth: "Mes anterior",
+  nextMonth: "Mes siguiente",
+  // View navigation
+  openPreviousView: "Abrir la última vista",
+  openNextView: "Abrir la siguiente vista",
+  calendarViewSwitchingButtonAriaLabel: (view) => view === "year" ? "la vista anual está abierta, cambie a la vista de calendario" : "la vista de calendario está abierta, cambie a la vista anual",
+  // DateRange labels
+  start: "Empezar",
+  end: "Terminar",
+  startDate: "Fecha inicio",
+  startTime: "Hora inicio",
+  endDate: "Fecha final",
+  endTime: "Hora final",
+  // Action bar
+  cancelButtonLabel: "Cancelar",
+  clearButtonLabel: "Limpiar",
+  okButtonLabel: "OK",
+  todayButtonLabel: "Hoy",
+  nextStepButtonLabel: "Siguiente",
+  // Toolbar titles
+  datePickerToolbarTitle: "Seleccionar fecha",
+  dateTimePickerToolbarTitle: "Seleccionar fecha y hora",
+  timePickerToolbarTitle: "Seleccionar hora",
+  dateRangePickerToolbarTitle: "Seleccionar rango de fecha",
+  // timeRangePickerToolbarTitle: 'Select time range',
+  // Clock labels
+  clockLabelText: (view, formattedTime) => `Seleccione ${views$2[view]}. ${!formattedTime ? "No hay hora seleccionada" : `La hora seleccionada es ${formattedTime}`}`,
+  hoursClockNumberText: (hours) => `${hours} horas`,
+  minutesClockNumberText: (minutes) => `${minutes} minutos`,
+  secondsClockNumberText: (seconds) => `${seconds} segundos`,
+  // Digital clock labels
+  selectViewText: (view) => `Seleccionar ${views$2[view]}`,
+  // Calendar labels
+  calendarWeekNumberHeaderLabel: "Número de semana",
+  calendarWeekNumberHeaderText: "#",
+  calendarWeekNumberAriaLabelText: (weekNumber) => `Semana ${weekNumber}`,
+  calendarWeekNumberText: (weekNumber) => `${weekNumber}`,
+  // Open Picker labels
+  openDatePickerDialogue: (formattedDate) => formattedDate ? `Elige fecha, la fecha elegida es ${formattedDate}` : "Elige fecha",
+  openTimePickerDialogue: (formattedTime) => formattedTime ? `Elige hora, la hora elegida es ${formattedTime}` : "Elige hora",
+  // openRangePickerDialogue: formattedRange => formattedRange ? `Choose range, selected range is ${formattedRange}` : 'Choose range',
+  fieldClearLabel: "Limpiar valor",
+  // Table labels
+  timeTableLabel: "elige hora",
+  dateTableLabel: "elige fecha",
+  // Field section placeholders
+  fieldYearPlaceholder: (params) => "A".repeat(params.digitAmount),
+  fieldMonthPlaceholder: (params) => params.contentType === "letter" ? "MMMM" : "MM",
+  fieldDayPlaceholder: () => "DD",
+  fieldWeekDayPlaceholder: (params) => params.contentType === "letter" ? "EEEE" : "EE",
+  fieldHoursPlaceholder: () => "hh",
+  fieldMinutesPlaceholder: () => "mm",
+  fieldSecondsPlaceholder: () => "ss",
+  fieldMeridiemPlaceholder: () => "aa",
+  // View names
+  year: "Año",
+  month: "Mes",
+  day: "Dia",
+  weekDay: "Dia de la semana",
+  hours: "Horas",
+  minutes: "Minutos",
+  seconds: "Segundos",
+  meridiem: "Meridiano",
+  // Common
+  empty: "Vacío"
+};
+const esES = getPickersLocalization(esESPickers);
+const views$1 = {
+  hours: "heures",
+  minutes: "minutes",
+  seconds: "secondes",
+  meridiem: "méridien"
+};
+const frFRPickers = {
+  // Calendar navigation
+  previousMonth: "Mois précédent",
+  nextMonth: "Mois suivant",
+  // View navigation
+  openPreviousView: "Ouvrir la vue précédente",
+  openNextView: "Ouvrir la vue suivante",
+  calendarViewSwitchingButtonAriaLabel: (view) => view === "year" ? "La vue année est ouverte, ouvrir la vue calendrier" : "La vue calendrier est ouverte, ouvrir la vue année",
+  // DateRange labels
+  start: "Début",
+  end: "Fin",
+  startDate: "Date de début",
+  startTime: "Heure de début",
+  endDate: "Date de fin",
+  endTime: "Heure de fin",
+  // Action bar
+  cancelButtonLabel: "Annuler",
+  clearButtonLabel: "Vider",
+  okButtonLabel: "OK",
+  todayButtonLabel: "Aujourd'hui",
+  nextStepButtonLabel: "Suivant",
+  // Toolbar titles
+  datePickerToolbarTitle: "Choisir une date",
+  dateTimePickerToolbarTitle: "Choisir la date et l'heure",
+  timePickerToolbarTitle: "Choisir l'heure",
+  dateRangePickerToolbarTitle: "Choisir la plage de dates",
+  // timeRangePickerToolbarTitle: 'Select time range',
+  // Clock labels
+  clockLabelText: (view, formattedTime) => `Choix des ${views$1[view]}. ${!formattedTime ? "Aucune heure choisie" : `L'heure choisie est ${formattedTime}`}`,
+  hoursClockNumberText: (hours) => `${hours} heures`,
+  minutesClockNumberText: (minutes) => `${minutes} minutes`,
+  secondsClockNumberText: (seconds) => `${seconds} secondes`,
+  // Digital clock labels
+  selectViewText: (view) => `Choisir ${views$1[view]}`,
+  // Calendar labels
+  calendarWeekNumberHeaderLabel: "Semaine",
+  calendarWeekNumberHeaderText: "#",
+  calendarWeekNumberAriaLabelText: (weekNumber) => `Semaine ${weekNumber}`,
+  calendarWeekNumberText: (weekNumber) => `${weekNumber}`,
+  // Open Picker labels
+  openDatePickerDialogue: (formattedDate) => formattedDate ? `Choisir la date, la date sélectionnée est ${formattedDate}` : "Choisir la date",
+  openTimePickerDialogue: (formattedTime) => formattedTime ? `Choisir l'heure, l'heure sélectionnée est ${formattedTime}` : "Choisir l'heure",
+  // openRangePickerDialogue: formattedRange => formattedRange ? `Choose range, selected range is ${formattedRange}` : 'Choose range',
+  fieldClearLabel: "Effacer la valeur",
+  // Table labels
+  timeTableLabel: "choix de l'heure",
+  dateTableLabel: "choix de la date",
+  // Field section placeholders
+  fieldYearPlaceholder: (params) => "A".repeat(params.digitAmount),
+  fieldMonthPlaceholder: (params) => params.contentType === "letter" ? "MMMM" : "MM",
+  fieldDayPlaceholder: () => "JJ",
+  fieldWeekDayPlaceholder: (params) => params.contentType === "letter" ? "EEEE" : "EE",
+  fieldHoursPlaceholder: () => "hh",
+  fieldMinutesPlaceholder: () => "mm",
+  fieldSecondsPlaceholder: () => "ss",
+  fieldMeridiemPlaceholder: () => "aa",
+  // View names
+  year: "Année",
+  month: "Mois",
+  day: "Jour",
+  weekDay: "Jour de la semaine",
+  hours: "Heures",
+  minutes: "Minutes",
+  seconds: "Secondes",
+  meridiem: "Méridien",
+  // Common
+  empty: "Vider"
+};
+const frFR = getPickersLocalization(frFRPickers);
+const views = {
+  hours: "le ore",
+  minutes: "i minuti",
+  seconds: "i secondi",
+  meridiem: "il meridiano"
+};
+const itITPickers = {
+  // Calendar navigation
+  previousMonth: "Mese precedente",
+  nextMonth: "Mese successivo",
+  // View navigation
+  openPreviousView: "Apri la vista precedente",
+  openNextView: "Apri la vista successiva",
+  calendarViewSwitchingButtonAriaLabel: (view) => view === "year" ? "la vista dell'anno è aperta, passare alla vista del calendario" : "la vista dell'calendario è aperta, passare alla vista dell'anno",
+  // DateRange labels
+  start: "Inizio",
+  end: "Fine",
+  startDate: "Data di inizio",
+  startTime: "Ora di inizio",
+  endDate: "Data di fine",
+  endTime: "Ora di fine",
+  // Action bar
+  cancelButtonLabel: "Annulla",
+  clearButtonLabel: "Pulisci",
+  okButtonLabel: "OK",
+  todayButtonLabel: "Oggi",
+  nextStepButtonLabel: "Successivo",
+  // Toolbar titles
+  datePickerToolbarTitle: "Seleziona data",
+  dateTimePickerToolbarTitle: "Seleziona data e orario",
+  timePickerToolbarTitle: "Seleziona orario",
+  dateRangePickerToolbarTitle: "Seleziona intervallo di date",
+  // timeRangePickerToolbarTitle: 'Select time range',
+  // Clock labels
+  clockLabelText: (view, formattedTime) => `Seleziona ${views[view]}. ${!formattedTime ? "Nessun orario selezionato" : `L'ora selezionata è ${formattedTime}`}`,
+  hoursClockNumberText: (hours) => `${hours} ore`,
+  minutesClockNumberText: (minutes) => `${minutes} minuti`,
+  secondsClockNumberText: (seconds) => `${seconds} secondi`,
+  // Digital clock labels
+  selectViewText: (view) => `Seleziona ${views[view]}`,
+  // Calendar labels
+  calendarWeekNumberHeaderLabel: "Numero settimana",
+  calendarWeekNumberHeaderText: "#",
+  calendarWeekNumberAriaLabelText: (weekNumber) => `Settimana ${weekNumber}`,
+  calendarWeekNumberText: (weekNumber) => `${weekNumber}`,
+  // Open Picker labels
+  openDatePickerDialogue: (formattedDate) => formattedDate ? `Scegli la data, la data selezionata è ${formattedDate}` : "Scegli la data",
+  openTimePickerDialogue: (formattedTime) => formattedTime ? `Scegli l'ora, l'ora selezionata è ${formattedTime}` : "Scegli l'ora",
+  // openRangePickerDialogue: formattedRange => formattedRange ? `Choose range, selected range is ${formattedRange}` : 'Choose range',
+  fieldClearLabel: "Cancella valore",
+  // Table labels
+  timeTableLabel: "scegli un'ora",
+  dateTableLabel: "scegli una data",
+  // Field section placeholders
+  fieldYearPlaceholder: (params) => "A".repeat(params.digitAmount),
+  fieldMonthPlaceholder: (params) => params.contentType === "letter" ? "MMMM" : "MM",
+  fieldDayPlaceholder: () => "GG",
+  fieldWeekDayPlaceholder: (params) => params.contentType === "letter" ? "GGGG" : "GG",
+  fieldHoursPlaceholder: () => "hh",
+  fieldMinutesPlaceholder: () => "mm",
+  fieldSecondsPlaceholder: () => "ss",
+  fieldMeridiemPlaceholder: () => "aa",
+  // View names
+  year: "Anno",
+  month: "Mese",
+  day: "Giorno",
+  weekDay: "Giorno della settimana",
+  hours: "Ore",
+  minutes: "Minuti",
+  seconds: "Secondi",
+  meridiem: "Meridiano",
+  // Common
+  empty: "Vuoto"
+};
+const itIT = getPickersLocalization(itITPickers);
+const timeViews = {
+  hours: "uren",
+  minutes: "minuten",
+  seconds: "seconden",
+  meridiem: "meridium"
+};
+const nlNLPickers = {
+  // Calendar navigation
+  previousMonth: "Vorige maand",
+  nextMonth: "Volgende maand",
+  // View navigation
+  openPreviousView: "Open vorige view",
+  openNextView: "Open volgende view",
+  calendarViewSwitchingButtonAriaLabel: (view) => view === "year" ? "jaarweergave is geopend, schakel over naar kalenderweergave" : "kalenderweergave is geopend, switch naar jaarweergave",
+  // DateRange labels
+  start: "Start",
+  end: "Einde",
+  startDate: "Startdatum",
+  startTime: "Starttijd",
+  endDate: "Einddatum",
+  endTime: "Eindtijd",
+  // Action bar
+  cancelButtonLabel: "Annuleren",
+  clearButtonLabel: "Resetten",
+  okButtonLabel: "OK",
+  todayButtonLabel: "Vandaag",
+  nextStepButtonLabel: "Volgende",
+  // Toolbar titles
+  datePickerToolbarTitle: "Selecteer datum",
+  dateTimePickerToolbarTitle: "Selecteer datum & tijd",
+  timePickerToolbarTitle: "Selecteer tijd",
+  dateRangePickerToolbarTitle: "Selecteer datumbereik",
+  // timeRangePickerToolbarTitle: 'Select time range',
+  // Clock labels
+  clockLabelText: (view, formattedTime) => `Selecteer ${timeViews[view]}. ${!formattedTime ? "Geen tijd geselecteerd" : `Geselecteerde tijd is ${formattedTime}`}`,
+  hoursClockNumberText: (hours) => `${hours} uren`,
+  minutesClockNumberText: (minutes) => `${minutes} minuten`,
+  secondsClockNumberText: (seconds) => `${seconds} seconden`,
+  // Digital clock labels
+  selectViewText: (view) => `Selecteer ${timeViews[view]}`,
+  // Calendar labels
+  calendarWeekNumberHeaderLabel: "Weeknummer",
+  calendarWeekNumberHeaderText: "#",
+  calendarWeekNumberAriaLabelText: (weekNumber) => `Week ${weekNumber}`,
+  calendarWeekNumberText: (weekNumber) => `${weekNumber}`,
+  // Open Picker labels
+  openDatePickerDialogue: (formattedDate) => formattedDate ? `Kies datum, geselecteerde datum is ${formattedDate}` : "Kies datum",
+  openTimePickerDialogue: (formattedTime) => formattedTime ? `Kies tijd, geselecteerde tijd is ${formattedTime}` : "Kies tijd",
+  // openRangePickerDialogue: formattedRange => formattedRange ? `Choose range, selected range is ${formattedRange}` : 'Choose range',
+  fieldClearLabel: "Wissen",
+  // Table labels
+  timeTableLabel: "kies tijd",
+  dateTableLabel: "kies datum",
+  // Field section placeholders
+  fieldYearPlaceholder: (params) => "J".repeat(params.digitAmount),
+  fieldMonthPlaceholder: (params) => params.contentType === "letter" ? "MMMM" : "MM",
+  fieldDayPlaceholder: () => "DD",
+  fieldWeekDayPlaceholder: (params) => params.contentType === "letter" ? "EEEE" : "EE",
+  fieldHoursPlaceholder: () => "uu",
+  fieldMinutesPlaceholder: () => "mm",
+  fieldSecondsPlaceholder: () => "ss",
+  fieldMeridiemPlaceholder: () => "aa",
+  // View names
+  year: "Jaar",
+  month: "Maand",
+  day: "Dag",
+  weekDay: "Weekdag",
+  hours: "Uren",
+  minutes: "Minuten",
+  seconds: "Seconden",
+  meridiem: "Middag",
+  // Common
+  empty: "Leeg"
+};
+const nlNL = getPickersLocalization(nlNLPickers);
 var isArguments;
 var hasRequiredIsArguments$1;
 function requireIsArguments$1() {
@@ -44543,7 +45345,7 @@ function requireImplementation$2() {
       $webkitStorageInfo: true,
       $window: true
     };
-    var hasAutomationEqualityBug = function() {
+    var hasAutomationEqualityBug = (function() {
       if (typeof window === "undefined") {
         return false;
       }
@@ -44561,7 +45363,7 @@ function requireImplementation$2() {
         }
       }
       return false;
-    }();
+    })();
     var equalsConstructorPrototypeIfNotBuggy = function(o) {
       if (typeof window === "undefined" || !hasAutomationEqualityBug) {
         return equalsConstructorPrototype(o);
@@ -44626,10 +45428,10 @@ function requireObjectKeys() {
   var originalKeys = Object.keys;
   keysShim.shim = function shimObjectKeys() {
     if (Object.keys) {
-      var keysWorksWithArguments = function() {
+      var keysWorksWithArguments = (function() {
         var args = Object.keys(arguments);
         return args && args.length === arguments.length;
-      }(1, 2);
+      })(1, 2);
       if (!keysWorksWithArguments) {
         Object.keys = function keys(object) {
           if (isArgs(object)) {
@@ -45266,7 +46068,7 @@ function requireGetIntrinsic() {
   var throwTypeError = function() {
     throw new $TypeError();
   };
-  var ThrowTypeError = $gOPD ? function() {
+  var ThrowTypeError = $gOPD ? (function() {
     try {
       arguments.callee;
       return throwTypeError;
@@ -45277,7 +46079,7 @@ function requireGetIntrinsic() {
         return throwTypeError;
       }
     }
-  }() : throwTypeError;
+  })() : throwTypeError;
   var hasSymbols2 = requireHasSymbols()();
   var getProto2 = requireGetProto();
   var $ObjectGPO = requireObject_getPrototypeOf();
@@ -45540,7 +46342,7 @@ function requireGetIntrinsic() {
           if (!allowMissing) {
             throw new $TypeError("base intrinsic for " + name + " exists, but the property is not available.");
           }
-          return void 0;
+          return void undefined$1;
         }
         if ($gOPD && i + 1 >= parts.length) {
           var desc = $gOPD(value, part);
@@ -46099,986 +46901,10 @@ function requireNodePolyglot() {
 }
 var nodePolyglotExports = requireNodePolyglot();
 const Polyglot = /* @__PURE__ */ getDefaultExportFromCjs(nodePolyglotExports);
-const prefix = "gqlb";
-class LocalMemory {
-  constructor(props, key, defaultValue) {
-    __publicField(this, "memoryKey");
-    __publicField(this, "props");
-    __publicField(this, "defaultValue");
-    this.memoryKey = key !== void 0 ? `${prefix}-${key}` : prefix;
-    this.props = props;
-    this.defaultValue = defaultValue;
-  }
-  getKey(k) {
-    return `${this.memoryKey}-${k}`;
-  }
-  get memory() {
-    const { localStorage } = this.props;
-    if (localStorage) {
-      const memory = localStorage.getItem(this.memoryKey);
-      if (memory === null) {
-        return this.defaultValue;
-      }
-      const m = JSON.parse(memory);
-      return m;
-    }
-  }
-  set(m) {
-    const memory = { ...this.memory, ...m };
-    const { localStorage } = this.props;
-    return localStorage && localStorage.setItem(this.memoryKey, JSON.stringify(memory));
-  }
-  seta(key, o) {
-    const { localStorage } = this.props;
-    if (localStorage) {
-      if (o === void 0) {
-        localStorage.removeItem(this.getKey(`${key}`));
-      } else {
-        localStorage.setItem(this.getKey(`${key}`), JSON.stringify(o));
-      }
-    }
-  }
-  geta(key) {
-    const { localStorage } = this.props;
-    if (localStorage) {
-      const memory = localStorage.getItem(this.getKey(`${key}`));
-      return memory ? JSON.parse(memory) : void 0;
-    }
-  }
-}
-var window_1;
-var hasRequiredWindow;
-function requireWindow() {
-  if (hasRequiredWindow) return window_1;
-  hasRequiredWindow = 1;
-  var win;
-  if (typeof window !== "undefined") {
-    win = window;
-  } else if (typeof window !== "undefined") {
-    win = window;
-  } else if (typeof self !== "undefined") {
-    win = self;
-  } else {
-    win = {};
-  }
-  window_1 = win;
-  return window_1;
-}
-var windowExports = requireWindow();
-const window$1 = /* @__PURE__ */ getDefaultExportFromCjs(windowExports);
-const __viteBrowserExternal = {};
-const __viteBrowserExternal$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  default: __viteBrowserExternal
-}, Symbol.toStringTag, { value: "Module" }));
-const require$$0 = /* @__PURE__ */ getAugmentedNamespace(__viteBrowserExternal$1);
-var document_1;
-var hasRequiredDocument;
-function requireDocument() {
-  if (hasRequiredDocument) return document_1;
-  hasRequiredDocument = 1;
-  var topLevel = typeof window !== "undefined" ? window : typeof window !== "undefined" ? window : {};
-  var minDoc = require$$0;
-  var doccy;
-  if (typeof document !== "undefined") {
-    doccy = document;
-  } else {
-    doccy = topLevel["__GLOBAL_DOCUMENT_CACHE@4"];
-    if (!doccy) {
-      doccy = topLevel["__GLOBAL_DOCUMENT_CACHE@4"] = minDoc;
-    }
-  }
-  document_1 = doccy;
-  return document_1;
-}
-var documentExports = requireDocument();
-const document$1 = /* @__PURE__ */ getDefaultExportFromCjs(documentExports);
-function getNavigator() {
-  if (typeof navigator !== "undefined") {
-    return navigator;
-  }
-}
-function getLocalStorage() {
-  const window2 = getWindow();
-  if (window2 == null ? void 0 : window2.localStorage) {
-    return window2.localStorage;
-  }
-}
-function getWindow() {
-  return window$1;
-}
-function getDocument() {
-  return document$1;
-}
-function getDocumentLocation() {
-  var _a;
-  return (_a = getDocument()) == null ? void 0 : _a.location;
-}
-class GQLBMemory extends LocalMemory {
-  set language(ln) {
-    this.seta("language", ln);
-  }
-  get language() {
-    return this.geta("language");
-  }
-}
-const gqlbMemory = new GQLBMemory({ localStorage: getLocalStorage() }, "gqlb", {});
-const deDE$1 = {
-  components: {
-    MuiBreadcrumbs: {
-      defaultProps: {
-        expandText: "Pfad anzeigen"
-      }
-    },
-    MuiTablePagination: {
-      defaultProps: {
-        getItemAriaLabel: (type2) => {
-          if (type2 === "first") {
-            return "Zur ersten Seite";
-          }
-          if (type2 === "last") {
-            return "Zur letzten Seite";
-          }
-          if (type2 === "next") {
-            return "Zur nächsten Seite";
-          }
-          return "Zur vorherigen Seite";
-        },
-        labelRowsPerPage: "Zeilen pro Seite:",
-        labelDisplayedRows: ({
-          from: from2,
-          to,
-          count
-        }) => `${from2}–${to} von ${count !== -1 ? count : `mehr als ${to}`}`
-      }
-    },
-    MuiRating: {
-      defaultProps: {
-        getLabelText: (value) => `${value} ${value !== 1 ? "Sterne" : "Stern"}`,
-        emptyLabelText: "Keine Wertung"
-      }
-    },
-    MuiAutocomplete: {
-      defaultProps: {
-        clearText: "Leeren",
-        closeText: "Schließen",
-        loadingText: "Wird geladen…",
-        noOptionsText: "Keine Optionen",
-        openText: "Öffnen"
-      }
-    },
-    MuiAlert: {
-      defaultProps: {
-        closeText: "Schließen"
-      }
-    },
-    MuiPagination: {
-      defaultProps: {
-        "aria-label": "Navigation via Seitennummerierung",
-        getItemAriaLabel: (type2, page, selected) => {
-          if (type2 === "page") {
-            return `${selected ? "" : "Gehe zu "}Seite ${page}`;
-          }
-          if (type2 === "first") {
-            return "Zur ersten Seite";
-          }
-          if (type2 === "last") {
-            return "Zur letzten Seite";
-          }
-          if (type2 === "next") {
-            return "Zur nächsten Seite";
-          }
-          return "Zur vorherigen Seite";
-        }
-      }
-    }
-  }
-};
-const enUS$1 = {
-  /*
-  components: {
-    MuiBreadcrumbs: { defaultProps: {
-      expandText: 'Show path',
-    }},
-    MuiTablePagination: { defaultProps: {
-      getItemAriaLabel: (type) => {
-        if (type === 'first') {
-          return 'Go to first page';
-        }
-        if (type === 'last') {
-          return 'Go to last page';
-        }
-        if (type === 'next') {
-          return 'Go to next page';
-        }
-        // if (type === 'previous') {
-        return 'Go to previous page';
-      },
-      labelRowsPerPage: 'Rows per page:',
-      labelDisplayedRows: ({ from, to, count }) =>
-  `${from}–${to} of ${count !== -1 ? count : `more than ${to}`}`, 
-    }},
-    MuiRating: { defaultProps: {
-      getLabelText: value => `${value} Star${value !== 1 ? 's' : ''}`,
-      emptyLabelText: 'Empty',
-    }},
-    MuiAutocomplete: { defaultProps: {
-      clearText: 'Clear',
-      closeText: 'Close',
-      loadingText: 'Loading…',
-      noOptionsText: 'No options',
-      openText: 'Open',
-    }},
-    MuiAlert: { defaultProps: {
-      closeText: 'Close',
-    }},
-    MuiPagination: {  defaultProps: {
-      'aria-label': 'Pagination navigation',
-      getItemAriaLabel: (type, page, selected) => {
-        if (type === 'page') {
-          return `${selected ? '' : 'Go to '}page ${page}`;
-        }
-        if (type === 'first') {
-          return 'Go to first page';
-        }
-        if (type === 'last') {
-          return 'Go to last page';
-        }
-        if (type === 'next') {
-          return 'Go to next page';
-        }
-        // if (type === 'previous') {
-        return 'Go to previous page';
-      },
-    }},
-  },
-  */
-};
-const esES$1 = {
-  components: {
-    MuiBreadcrumbs: {
-      defaultProps: {
-        expandText: "Mostrar ruta"
-      }
-    },
-    MuiTablePagination: {
-      defaultProps: {
-        getItemAriaLabel: (type2) => {
-          if (type2 === "first") {
-            return "Ir a la primera página";
-          }
-          if (type2 === "last") {
-            return "Ir a la última página";
-          }
-          if (type2 === "next") {
-            return "Ir a la página siguiente";
-          }
-          return "Ir a la página anterior";
-        },
-        labelRowsPerPage: "Filas por página:",
-        labelDisplayedRows: ({
-          from: from2,
-          to,
-          count
-        }) => `${from2}–${to} de ${count !== -1 ? count : `más de ${to}`}`
-      }
-    },
-    MuiRating: {
-      defaultProps: {
-        getLabelText: (value) => `${value} Estrella${value !== 1 ? "s" : ""}`,
-        emptyLabelText: "Vacío"
-      }
-    },
-    MuiAutocomplete: {
-      defaultProps: {
-        clearText: "Limpiar",
-        closeText: "Cerrar",
-        loadingText: "Cargando…",
-        noOptionsText: "Sin opciones",
-        openText: "Abierto"
-      }
-    },
-    MuiAlert: {
-      defaultProps: {
-        closeText: "Cerrar"
-      }
-    },
-    MuiPagination: {
-      defaultProps: {
-        "aria-label": "Paginador",
-        getItemAriaLabel: (type2, page, selected) => {
-          if (type2 === "page") {
-            return `${selected ? "" : "Ir a la "}página ${page}`;
-          }
-          if (type2 === "first") {
-            return "Ir a la primera página";
-          }
-          if (type2 === "last") {
-            return "Ir a la última página";
-          }
-          if (type2 === "next") {
-            return "Ir a la página siguiente";
-          }
-          return "Ir a la página anterior";
-        }
-      }
-    }
-  }
-};
-const frFR$1 = {
-  components: {
-    MuiBreadcrumbs: {
-      defaultProps: {
-        expandText: "Montrer le chemin"
-      }
-    },
-    MuiTablePagination: {
-      defaultProps: {
-        getItemAriaLabel: (type2) => {
-          if (type2 === "first") {
-            return "Aller à la première page";
-          }
-          if (type2 === "last") {
-            return "Aller à la dernière page";
-          }
-          if (type2 === "next") {
-            return "Aller à la page suivante";
-          }
-          return "Aller à la page précédente";
-        },
-        labelRowsPerPage: "Lignes par page :",
-        labelDisplayedRows: ({
-          from: from2,
-          to,
-          count
-        }) => `${from2}–${to} sur ${count !== -1 ? count : `plus que ${to}`}`
-      }
-    },
-    MuiRating: {
-      defaultProps: {
-        getLabelText: (value) => `${value} Etoile${value !== 1 ? "s" : ""}`,
-        emptyLabelText: "Vide"
-      }
-    },
-    MuiAutocomplete: {
-      defaultProps: {
-        clearText: "Vider",
-        closeText: "Fermer",
-        loadingText: "Chargement…",
-        noOptionsText: "Pas de résultats",
-        openText: "Ouvrir"
-      }
-    },
-    MuiAlert: {
-      defaultProps: {
-        closeText: "Fermer"
-      }
-    },
-    MuiPagination: {
-      defaultProps: {
-        "aria-label": "navigation de pagination",
-        getItemAriaLabel: (type2, page, selected) => {
-          if (type2 === "page") {
-            return `${selected ? "" : "Aller à la "}page ${page}`;
-          }
-          if (type2 === "first") {
-            return "Aller à la première page";
-          }
-          if (type2 === "last") {
-            return "Aller à la dernière page";
-          }
-          if (type2 === "next") {
-            return "Aller à la page suivante";
-          }
-          return "Aller à la page précédente";
-        }
-      }
-    }
-  }
-};
-const itIT$1 = {
-  components: {
-    MuiBreadcrumbs: {
-      defaultProps: {
-        expandText: "Visualizza percorso"
-      }
-    },
-    MuiTablePagination: {
-      defaultProps: {
-        getItemAriaLabel: (type2) => {
-          if (type2 === "first") {
-            return "Vai alla prima pagina";
-          }
-          if (type2 === "last") {
-            return "Vai all'ultima pagina";
-          }
-          if (type2 === "next") {
-            return "Vai alla pagina successiva";
-          }
-          return "Vai alla pagina precedente";
-        },
-        labelRowsPerPage: "Righe per pagina:",
-        labelDisplayedRows: ({
-          from: from2,
-          to,
-          count
-        }) => `${from2}–${to} di ${count !== -1 ? count : `più di ${to}`}`
-      }
-    },
-    MuiRating: {
-      defaultProps: {
-        getLabelText: (value) => `${value} Stell${value !== 1 ? "e" : "a"}`,
-        emptyLabelText: "Vuoto"
-      }
-    },
-    MuiAutocomplete: {
-      defaultProps: {
-        clearText: "Svuota",
-        closeText: "Chiudi",
-        loadingText: "Caricamento in corso…",
-        noOptionsText: "Nessuna opzione",
-        openText: "Apri"
-      }
-    },
-    MuiAlert: {
-      defaultProps: {
-        closeText: "Chiudi"
-      }
-    },
-    MuiPagination: {
-      defaultProps: {
-        "aria-label": "Navigazione impaginata",
-        getItemAriaLabel: (type2, page, selected) => {
-          if (type2 === "page") {
-            return `${selected ? "" : "Vai alla "}pagina ${page}`;
-          }
-          if (type2 === "first") {
-            return "Vai alla prima pagina";
-          }
-          if (type2 === "last") {
-            return "Vai all'ultima pagina";
-          }
-          if (type2 === "next") {
-            return "Vai alla pagina successiva";
-          }
-          return "Vai alla pagina precedente";
-        }
-      }
-    }
-  }
-};
-const nlNL$1 = {
-  components: {
-    MuiBreadcrumbs: {
-      defaultProps: {
-        expandText: "Pad tonen"
-      }
-    },
-    MuiTablePagination: {
-      defaultProps: {
-        getItemAriaLabel: (type2) => {
-          if (type2 === "first") {
-            return "Ga naar eerste pagina";
-          }
-          if (type2 === "last") {
-            return "Ga naar laatste pagina";
-          }
-          if (type2 === "next") {
-            return "Ga naar volgende pagina";
-          }
-          return "Ga naar vorige pagina";
-        },
-        labelRowsPerPage: "Regels per pagina:",
-        labelDisplayedRows: ({
-          from: from2,
-          to,
-          count
-        }) => `${from2}–${to} van ${count !== -1 ? count : `meer dan ${to}`}`
-      }
-    },
-    MuiRating: {
-      defaultProps: {
-        getLabelText: (value) => `${value} Ster${value !== 1 ? "ren" : ""}`,
-        emptyLabelText: "Leeg"
-      }
-    },
-    MuiAutocomplete: {
-      defaultProps: {
-        clearText: "Wissen",
-        closeText: "Sluiten",
-        loadingText: "Laden…",
-        noOptionsText: "Geen opties",
-        openText: "Openen"
-      }
-    },
-    MuiAlert: {
-      defaultProps: {
-        closeText: "Sluiten"
-      }
-    },
-    MuiPagination: {
-      defaultProps: {
-        "aria-label": "Navigatie via paginering",
-        getItemAriaLabel: (type2, page, selected) => {
-          if (type2 === "page") {
-            return `${selected ? "" : "Ga naar "}pagina ${page}`;
-          }
-          if (type2 === "first") {
-            return "Ga naar eerste pagina";
-          }
-          if (type2 === "last") {
-            return "Ga naar laatste pagina";
-          }
-          if (type2 === "next") {
-            return "Ga naar volgende pagina";
-          }
-          return "Ga naar vorige pagina";
-        }
-      }
-    }
-  }
-};
-const getPickersLocalization = (pickersTranslations) => {
-  return {
-    components: {
-      MuiLocalizationProvider: {
-        defaultProps: {
-          localeText: _extends({}, pickersTranslations)
-        }
-      }
-    }
-  };
-};
-const timeViews$1 = {
-  hours: "Stunden",
-  minutes: "Minuten",
-  seconds: "Sekunden",
-  meridiem: "Meridiem"
-};
-const deDEPickers = {
-  // Calendar navigation
-  previousMonth: "Letzter Monat",
-  nextMonth: "Nächster Monat",
-  // View navigation
-  openPreviousView: "Letzte Ansicht öffnen",
-  openNextView: "Nächste Ansicht öffnen",
-  calendarViewSwitchingButtonAriaLabel: (view) => view === "year" ? "Jahresansicht ist geöffnet, zur Kalenderansicht wechseln" : "Kalenderansicht ist geöffnet, zur Jahresansicht wechseln",
-  // DateRange labels
-  start: "Beginn",
-  end: "Ende",
-  startDate: "Startdatum",
-  startTime: "Startzeit",
-  endDate: "Enddatum",
-  endTime: "Endzeit",
-  // Action bar
-  cancelButtonLabel: "Abbrechen",
-  clearButtonLabel: "Löschen",
-  okButtonLabel: "OK",
-  todayButtonLabel: "Heute",
-  // Toolbar titles
-  datePickerToolbarTitle: "Datum auswählen",
-  dateTimePickerToolbarTitle: "Datum & Uhrzeit auswählen",
-  timePickerToolbarTitle: "Uhrzeit auswählen",
-  dateRangePickerToolbarTitle: "Datumsbereich auswählen",
-  // Clock labels
-  clockLabelText: (view, time, utils, formattedTime) => `${timeViews$1[view] ?? view} auswählen. ${!formattedTime && (time === null || !utils.isValid(time)) ? "Keine Uhrzeit ausgewählt" : `Gewählte Uhrzeit ist ${formattedTime ?? utils.format(time, "fullTime")}`}`,
-  hoursClockNumberText: (hours) => `${hours} ${timeViews$1.hours}`,
-  minutesClockNumberText: (minutes) => `${minutes} ${timeViews$1.minutes}`,
-  secondsClockNumberText: (seconds) => `${seconds}  ${timeViews$1.seconds}`,
-  // Digital clock labels
-  selectViewText: (view) => `${timeViews$1[view]} auswählen`,
-  // Calendar labels
-  calendarWeekNumberHeaderLabel: "Kalenderwoche",
-  calendarWeekNumberHeaderText: "#",
-  calendarWeekNumberAriaLabelText: (weekNumber) => `Woche ${weekNumber}`,
-  calendarWeekNumberText: (weekNumber) => `${weekNumber}`,
-  // Open picker labels
-  openDatePickerDialogue: (value, utils, formattedDate) => formattedDate || value !== null && utils.isValid(value) ? `Datum auswählen, gewähltes Datum ist ${formattedDate ?? utils.format(value, "fullDate")}` : "Datum auswählen",
-  openTimePickerDialogue: (value, utils, formattedTime) => formattedTime || value !== null && utils.isValid(value) ? `Uhrzeit auswählen, gewählte Uhrzeit ist ${formattedTime ?? utils.format(value, "fullTime")}` : "Uhrzeit auswählen",
-  fieldClearLabel: "Wert leeren",
-  // Table labels
-  timeTableLabel: "Uhrzeit auswählen",
-  dateTableLabel: "Datum auswählen",
-  // Field section placeholders
-  fieldYearPlaceholder: (params) => "J".repeat(params.digitAmount),
-  fieldMonthPlaceholder: (params) => params.contentType === "letter" ? "MMMM" : "MM",
-  fieldDayPlaceholder: () => "TT",
-  fieldWeekDayPlaceholder: (params) => params.contentType === "letter" ? "EEEE" : "EE",
-  fieldHoursPlaceholder: () => "hh",
-  fieldMinutesPlaceholder: () => "mm",
-  fieldSecondsPlaceholder: () => "ss",
-  fieldMeridiemPlaceholder: () => "aa",
-  // View names
-  year: "Jahr",
-  month: "Monat",
-  day: "Tag",
-  weekDay: "Wochentag",
-  hours: "Stunden",
-  minutes: "Minuten",
-  seconds: "Sekunden",
-  meridiem: "Tageszeit",
-  // Common
-  empty: "Leer"
-};
-const deDE = getPickersLocalization(deDEPickers);
-const enUSPickers = {
-  // Calendar navigation
-  previousMonth: "Previous month",
-  nextMonth: "Next month",
-  // View navigation
-  openPreviousView: "Open previous view",
-  openNextView: "Open next view",
-  calendarViewSwitchingButtonAriaLabel: (view) => view === "year" ? "year view is open, switch to calendar view" : "calendar view is open, switch to year view",
-  // DateRange labels
-  start: "Start",
-  end: "End",
-  startDate: "Start date",
-  startTime: "Start time",
-  endDate: "End date",
-  endTime: "End time",
-  // Action bar
-  cancelButtonLabel: "Cancel",
-  clearButtonLabel: "Clear",
-  okButtonLabel: "OK",
-  todayButtonLabel: "Today",
-  // Toolbar titles
-  datePickerToolbarTitle: "Select date",
-  dateTimePickerToolbarTitle: "Select date & time",
-  timePickerToolbarTitle: "Select time",
-  dateRangePickerToolbarTitle: "Select date range",
-  // Clock labels
-  clockLabelText: (view, time, utils, formattedTime) => `Select ${view}. ${!formattedTime && (time === null || !utils.isValid(time)) ? "No time selected" : `Selected time is ${formattedTime ?? utils.format(time, "fullTime")}`}`,
-  hoursClockNumberText: (hours) => `${hours} hours`,
-  minutesClockNumberText: (minutes) => `${minutes} minutes`,
-  secondsClockNumberText: (seconds) => `${seconds} seconds`,
-  // Digital clock labels
-  selectViewText: (view) => `Select ${view}`,
-  // Calendar labels
-  calendarWeekNumberHeaderLabel: "Week number",
-  calendarWeekNumberHeaderText: "#",
-  calendarWeekNumberAriaLabelText: (weekNumber) => `Week ${weekNumber}`,
-  calendarWeekNumberText: (weekNumber) => `${weekNumber}`,
-  // Open picker labels
-  openDatePickerDialogue: (value, utils, formattedDate) => formattedDate || value !== null && utils.isValid(value) ? `Choose date, selected date is ${formattedDate ?? utils.format(value, "fullDate")}` : "Choose date",
-  openTimePickerDialogue: (value, utils, formattedTime) => formattedTime || value !== null && utils.isValid(value) ? `Choose time, selected time is ${formattedTime ?? utils.format(value, "fullTime")}` : "Choose time",
-  fieldClearLabel: "Clear",
-  // Table labels
-  timeTableLabel: "pick time",
-  dateTableLabel: "pick date",
-  // Field section placeholders
-  fieldYearPlaceholder: (params) => "Y".repeat(params.digitAmount),
-  fieldMonthPlaceholder: (params) => params.contentType === "letter" ? "MMMM" : "MM",
-  fieldDayPlaceholder: () => "DD",
-  fieldWeekDayPlaceholder: (params) => params.contentType === "letter" ? "EEEE" : "EE",
-  fieldHoursPlaceholder: () => "hh",
-  fieldMinutesPlaceholder: () => "mm",
-  fieldSecondsPlaceholder: () => "ss",
-  fieldMeridiemPlaceholder: () => "aa",
-  // View names
-  year: "Year",
-  month: "Month",
-  day: "Day",
-  weekDay: "Week day",
-  hours: "Hours",
-  minutes: "Minutes",
-  seconds: "Seconds",
-  meridiem: "Meridiem",
-  // Common
-  empty: "Empty"
-};
-const enUS = getPickersLocalization(enUSPickers);
-const views$2 = {
-  hours: "Horas",
-  minutes: "Minutos",
-  seconds: "Segundos",
-  meridiem: "Meridiano"
-};
-const esESPickers = {
-  // Calendar navigation
-  previousMonth: "Mes anterior",
-  nextMonth: "Mes siguiente",
-  // View navigation
-  openPreviousView: "Abrir la última vista",
-  openNextView: "Abrir la siguiente vista",
-  calendarViewSwitchingButtonAriaLabel: (view) => view === "year" ? "la vista anual está abierta, cambie a la vista de calendario" : "la vista de calendario está abierta, cambie a la vista anual",
-  // DateRange labels
-  start: "Empezar",
-  end: "Terminar",
-  startDate: "Fecha inicio",
-  startTime: "Hora inicio",
-  endDate: "Fecha final",
-  endTime: "Hora final",
-  // Action bar
-  cancelButtonLabel: "Cancelar",
-  clearButtonLabel: "Limpiar",
-  okButtonLabel: "OK",
-  todayButtonLabel: "Hoy",
-  // Toolbar titles
-  datePickerToolbarTitle: "Seleccionar fecha",
-  dateTimePickerToolbarTitle: "Seleccionar fecha y hora",
-  timePickerToolbarTitle: "Seleccionar hora",
-  dateRangePickerToolbarTitle: "Seleccionar rango de fecha",
-  // Clock labels
-  clockLabelText: (view, time, utils, formattedTime) => `Seleccione ${views$2[view]}. ${!formattedTime && (time === null || !utils.isValid(time)) ? "No hay hora seleccionada" : `La hora seleccionada es ${formattedTime ?? utils.format(time, "fullTime")}`}`,
-  hoursClockNumberText: (hours) => `${hours} horas`,
-  minutesClockNumberText: (minutes) => `${minutes} minutos`,
-  secondsClockNumberText: (seconds) => `${seconds} segundos`,
-  // Digital clock labels
-  selectViewText: (view) => `Seleccionar ${views$2[view]}`,
-  // Calendar labels
-  calendarWeekNumberHeaderLabel: "Número de semana",
-  calendarWeekNumberHeaderText: "#",
-  calendarWeekNumberAriaLabelText: (weekNumber) => `Semana ${weekNumber}`,
-  calendarWeekNumberText: (weekNumber) => `${weekNumber}`,
-  // Open picker labels
-  openDatePickerDialogue: (value, utils, formattedDate) => formattedDate || value !== null && utils.isValid(value) ? `Elige fecha, la fecha elegida es ${formattedDate ?? utils.format(value, "fullDate")}` : "Elige fecha",
-  openTimePickerDialogue: (value, utils, formattedTime) => formattedTime || value !== null && utils.isValid(value) ? `Elige hora, la hora elegida es ${formattedTime ?? utils.format(value, "fullTime")}` : "Elige hora",
-  fieldClearLabel: "Limpiar valor",
-  // Table labels
-  timeTableLabel: "elige hora",
-  dateTableLabel: "elige fecha",
-  // Field section placeholders
-  fieldYearPlaceholder: (params) => "A".repeat(params.digitAmount),
-  fieldMonthPlaceholder: (params) => params.contentType === "letter" ? "MMMM" : "MM",
-  fieldDayPlaceholder: () => "DD",
-  fieldWeekDayPlaceholder: (params) => params.contentType === "letter" ? "EEEE" : "EE",
-  fieldHoursPlaceholder: () => "hh",
-  fieldMinutesPlaceholder: () => "mm",
-  fieldSecondsPlaceholder: () => "ss",
-  fieldMeridiemPlaceholder: () => "aa",
-  // View names
-  year: "Año",
-  month: "Mes",
-  day: "Dia",
-  weekDay: "Dia de la semana",
-  hours: "Horas",
-  minutes: "Minutos",
-  seconds: "Segundos",
-  meridiem: "Meridiano",
-  // Common
-  empty: "Vacío"
-};
-const esES = getPickersLocalization(esESPickers);
-const views$1 = {
-  hours: "heures",
-  minutes: "minutes",
-  seconds: "secondes",
-  meridiem: "méridien"
-};
-const frFRPickers = {
-  // Calendar navigation
-  previousMonth: "Mois précédent",
-  nextMonth: "Mois suivant",
-  // View navigation
-  openPreviousView: "Ouvrir la vue précédente",
-  openNextView: "Ouvrir la vue suivante",
-  calendarViewSwitchingButtonAriaLabel: (view) => view === "year" ? "La vue année est ouverte, ouvrir la vue calendrier" : "La vue calendrier est ouverte, ouvrir la vue année",
-  // DateRange labels
-  start: "Début",
-  end: "Fin",
-  startDate: "Date de début",
-  startTime: "Heure de début",
-  endDate: "Date de fin",
-  endTime: "Heure de fin",
-  // Action bar
-  cancelButtonLabel: "Annuler",
-  clearButtonLabel: "Vider",
-  okButtonLabel: "OK",
-  todayButtonLabel: "Aujourd'hui",
-  // Toolbar titles
-  datePickerToolbarTitle: "Choisir une date",
-  dateTimePickerToolbarTitle: "Choisir la date et l'heure",
-  timePickerToolbarTitle: "Choisir l'heure",
-  dateRangePickerToolbarTitle: "Choisir la plage de dates",
-  // Clock labels
-  clockLabelText: (view, time, utils, formattedTime) => `Choix des ${views$1[view]}. ${!formattedTime && (time === null || !utils.isValid(time)) ? "Aucune heure choisie" : `L'heure choisie est ${formattedTime ?? utils.format(time, "fullTime")}`}`,
-  hoursClockNumberText: (hours) => `${hours} heures`,
-  minutesClockNumberText: (minutes) => `${minutes} minutes`,
-  secondsClockNumberText: (seconds) => `${seconds} secondes`,
-  // Digital clock labels
-  selectViewText: (view) => `Choisir ${views$1[view]}`,
-  // Calendar labels
-  calendarWeekNumberHeaderLabel: "Semaine",
-  calendarWeekNumberHeaderText: "#",
-  calendarWeekNumberAriaLabelText: (weekNumber) => `Semaine ${weekNumber}`,
-  calendarWeekNumberText: (weekNumber) => `${weekNumber}`,
-  // Open picker labels
-  openDatePickerDialogue: (value, utils, formattedDate) => formattedDate || value !== null && utils.isValid(value) ? `Choisir la date, la date sélectionnée est ${formattedDate ?? utils.format(value, "fullDate")}` : "Choisir la date",
-  openTimePickerDialogue: (value, utils, formattedTime) => formattedTime ? `Choisir l'heure, l'heure sélectionnée est ${formattedTime ?? utils.format(value, "fullTime")}` : "Choisir l'heure",
-  fieldClearLabel: "Effacer la valeur",
-  // Table labels
-  timeTableLabel: "choix de l'heure",
-  dateTableLabel: "choix de la date",
-  // Field section placeholders
-  fieldYearPlaceholder: (params) => "A".repeat(params.digitAmount),
-  fieldMonthPlaceholder: (params) => params.contentType === "letter" ? "MMMM" : "MM",
-  fieldDayPlaceholder: () => "JJ",
-  fieldWeekDayPlaceholder: (params) => params.contentType === "letter" ? "EEEE" : "EE",
-  fieldHoursPlaceholder: () => "hh",
-  fieldMinutesPlaceholder: () => "mm",
-  fieldSecondsPlaceholder: () => "ss",
-  fieldMeridiemPlaceholder: () => "aa",
-  // View names
-  year: "Année",
-  month: "Mois",
-  day: "Jour",
-  weekDay: "Jour de la semaine",
-  hours: "Heures",
-  minutes: "Minutes",
-  seconds: "Secondes",
-  meridiem: "Méridien",
-  // Common
-  empty: "Vider"
-};
-const frFR = getPickersLocalization(frFRPickers);
-const views = {
-  hours: "le ore",
-  minutes: "i minuti",
-  seconds: "i secondi",
-  meridiem: "il meridiano"
-};
-const itITPickers = {
-  // Calendar navigation
-  previousMonth: "Mese precedente",
-  nextMonth: "Mese successivo",
-  // View navigation
-  openPreviousView: "Apri la vista precedente",
-  openNextView: "Apri la vista successiva",
-  calendarViewSwitchingButtonAriaLabel: (view) => view === "year" ? "la vista dell'anno è aperta, passare alla vista del calendario" : "la vista dell'calendario è aperta, passare alla vista dell'anno",
-  // DateRange labels
-  start: "Inizio",
-  end: "Fine",
-  startDate: "Data di inizio",
-  startTime: "Ora di inizio",
-  endDate: "Data di fine",
-  endTime: "Ora di fine",
-  // Action bar
-  cancelButtonLabel: "Cancellare",
-  clearButtonLabel: "Sgomberare",
-  okButtonLabel: "OK",
-  todayButtonLabel: "Oggi",
-  // Toolbar titles
-  datePickerToolbarTitle: "Seleziona data",
-  dateTimePickerToolbarTitle: "Seleziona data e orario",
-  timePickerToolbarTitle: "Seleziona orario",
-  dateRangePickerToolbarTitle: "Seleziona intervallo di date",
-  // Clock labels
-  clockLabelText: (view, time, utils, formattedTime) => `Seleziona ${views[view]}. ${!formattedTime && (time === null || !utils.isValid(time)) ? "Nessun orario selezionato" : `L'ora selezionata è ${formattedTime ?? utils.format(time, "fullTime")}`}`,
-  hoursClockNumberText: (hours) => `${hours} ore`,
-  minutesClockNumberText: (minutes) => `${minutes} minuti`,
-  secondsClockNumberText: (seconds) => `${seconds} secondi`,
-  // Digital clock labels
-  selectViewText: (view) => `Seleziona ${views[view]}`,
-  // Calendar labels
-  calendarWeekNumberHeaderLabel: "Numero settimana",
-  calendarWeekNumberHeaderText: "#",
-  calendarWeekNumberAriaLabelText: (weekNumber) => `Settimana ${weekNumber}`,
-  calendarWeekNumberText: (weekNumber) => `${weekNumber}`,
-  // Open picker labels
-  openDatePickerDialogue: (value, utils, formattedDate) => formattedDate || value !== null && utils.isValid(value) ? `Scegli la data, la data selezionata è ${formattedDate ?? utils.format(value, "fullDate")}` : "Scegli la data",
-  openTimePickerDialogue: (value, utils, formattedTime) => formattedTime || value !== null && utils.isValid(value) ? `Scegli l'ora, l'ora selezionata è ${formattedTime ?? utils.format(value, "fullTime")}` : "Scegli l'ora",
-  fieldClearLabel: "Cancella valore",
-  // Table labels
-  timeTableLabel: "scegli un'ora",
-  dateTableLabel: "scegli una data",
-  // Field section placeholders
-  fieldYearPlaceholder: (params) => "A".repeat(params.digitAmount),
-  fieldMonthPlaceholder: (params) => params.contentType === "letter" ? "MMMM" : "MM",
-  fieldDayPlaceholder: () => "GG",
-  fieldWeekDayPlaceholder: (params) => params.contentType === "letter" ? "GGGG" : "GG",
-  fieldHoursPlaceholder: () => "hh",
-  fieldMinutesPlaceholder: () => "mm",
-  fieldSecondsPlaceholder: () => "ss",
-  fieldMeridiemPlaceholder: () => "aa",
-  // View names
-  year: "Anno",
-  month: "Mese",
-  day: "Giorno",
-  weekDay: "Giorno della settimana",
-  hours: "Ore",
-  minutes: "Minuti",
-  seconds: "Secondi",
-  meridiem: "Meridiano",
-  // Common
-  empty: "Vuoto"
-};
-const itIT = getPickersLocalization(itITPickers);
-const timeViews = {
-  hours: "uren",
-  minutes: "minuten",
-  seconds: "seconden",
-  meridiem: "meridium"
-};
-const nlNLPickers = {
-  // Calendar navigation
-  previousMonth: "Vorige maand",
-  nextMonth: "Volgende maand",
-  // View navigation
-  openPreviousView: "Open vorige view",
-  openNextView: "Open volgende view",
-  calendarViewSwitchingButtonAriaLabel: (view) => view === "year" ? "jaarweergave is geopend, schakel over naar kalenderweergave" : "kalenderweergave is geopend, switch naar jaarweergave",
-  // DateRange labels
-  start: "Start",
-  end: "Einde",
-  startDate: "Startdatum",
-  startTime: "Starttijd",
-  endDate: "Einddatum",
-  endTime: "Eindtijd",
-  // Action bar
-  cancelButtonLabel: "Annuleren",
-  clearButtonLabel: "Resetten",
-  okButtonLabel: "OK",
-  todayButtonLabel: "Vandaag",
-  // Toolbar titles
-  datePickerToolbarTitle: "Selecteer datum",
-  dateTimePickerToolbarTitle: "Selecteer datum & tijd",
-  timePickerToolbarTitle: "Selecteer tijd",
-  dateRangePickerToolbarTitle: "Selecteer datumbereik",
-  // Clock labels
-  clockLabelText: (view, time, utils, formattedTime) => `Selecteer ${timeViews[view]}. ${!formattedTime && (time === null || !utils.isValid(time)) ? "Geen tijd geselecteerd" : `Geselecteerde tijd is ${formattedTime ?? utils.format(time, "fullTime")}`}`,
-  hoursClockNumberText: (hours) => `${hours} uren`,
-  minutesClockNumberText: (minutes) => `${minutes} minuten`,
-  secondsClockNumberText: (seconds) => `${seconds} seconden`,
-  // Digital clock labels
-  selectViewText: (view) => `Selecteer ${timeViews[view]}`,
-  // Calendar labels
-  calendarWeekNumberHeaderLabel: "Weeknummer",
-  calendarWeekNumberHeaderText: "#",
-  calendarWeekNumberAriaLabelText: (weekNumber) => `Week ${weekNumber}`,
-  calendarWeekNumberText: (weekNumber) => `${weekNumber}`,
-  // Open picker labels
-  openDatePickerDialogue: (value, utils, formattedDate) => formattedDate || value !== null && utils.isValid(value) ? `Kies datum, geselecteerde datum is ${formattedDate ?? utils.format(value, "fullDate")}` : "Kies datum",
-  openTimePickerDialogue: (value, utils, formattedTime) => formattedTime || value !== null && utils.isValid(value) ? `Kies tijd, geselecteerde tijd is ${formattedTime ?? utils.format(value, "fullTime")}` : "Kies tijd",
-  fieldClearLabel: "Wissen",
-  // Table labels
-  timeTableLabel: "kies tijd",
-  dateTableLabel: "kies datum",
-  // Field section placeholders
-  fieldYearPlaceholder: (params) => "J".repeat(params.digitAmount),
-  fieldMonthPlaceholder: (params) => params.contentType === "letter" ? "MMMM" : "MM",
-  fieldDayPlaceholder: () => "DD",
-  fieldWeekDayPlaceholder: (params) => params.contentType === "letter" ? "EEEE" : "EE",
-  fieldHoursPlaceholder: () => "uu",
-  fieldMinutesPlaceholder: () => "mm",
-  fieldSecondsPlaceholder: () => "ss",
-  fieldMeridiemPlaceholder: () => "aa",
-  // View names
-  year: "Jaar",
-  month: "Maand",
-  day: "Dag",
-  weekDay: "Weekdag",
-  hours: "Uren",
-  minutes: "Minuten",
-  seconds: "Seconden",
-  meridiem: "Middag",
-  // Common
-  empty: "Leeg"
-};
-const nlNL = getPickersLocalization(nlNLPickers);
 const origins$2 = ["https://localhost", "http://127.0.0.1:8080/"];
 const endpoints$2 = { "backend": "https://localhost" };
 const mcp$2 = { "projectName": "user-surfy-dev" };
-const authentication$3 = { "google": { "clientId": "562537270489-apu3gn8jqr0aa2tj2mp80g2pi5clge7u.apps.googleusercontent.com" }, "auth0": { "clientId": "KnVZnc63CCohWDHsRLSdVp1uZz3lD9Lq" }, "msal": { "clientId": "a7f08378-a689-494c-b77c-c49fa1aa19cb" }, "okta-sephora": { "clientId": "0oa3pgmpbk6xfNYjc0x7" }, "te-digital-pass": { "clientId": "app-surfy-prod" }, "azure-vca": { "clientId": "0271aec8-d6fa-4328-82d5-93463001184a" }, "azure-te": { "clientId": "5792f57f-cf0d-4cf3-965c-7adcfa883fa3" }, "azure-suez": { "clientId": "d0fe91a2-aadb-4df1-b32f-d567648da309" }, "azure-surfy": { "clientId": "" } };
+const authentication$3 = { "google": { "clientId": "562537270489-apu3gn8jqr0aa2tj2mp80g2pi5clge7u.apps.googleusercontent.com" }, "auth0": { "clientId": "KnVZnc63CCohWDHsRLSdVp1uZz3lD9Lq" }, "msal": { "clientId": "a7f08378-a689-494c-b77c-c49fa1aa19cb" }, "okta-sephora": { "clientId": "0oa3pgmpbk6xfNYjc0x7" }, "te-digital-pass": { "clientId": "app-surfy-prod" }, "azure-vca": { "clientId": "0271aec8-d6fa-4328-82d5-93463001184a" }, "azure-te": { "clientId": "5792f57f-cf0d-4cf3-965c-7adcfa883fa3" }, "azure-suez": { "clientId": "d0fe91a2-aadb-4df1-b32f-d567648da309" }, "azure-surfy": { "clientId": "a7f08378-a689-494c-b77c-c49fa1aa19cb" } };
 const dev = {
   origins: origins$2,
   endpoints: endpoints$2,
@@ -47087,7 +46913,7 @@ const dev = {
 };
 const logRocket$1 = { "appId": "surfy/surfy-alpha" };
 const mcp$1 = { "projectName": "user-surfy-alpha" };
-const origins$1 = ["https://alpha86.surfy.pro", "https://app-alpha.surfy.pro"];
+const origins$1 = ["https://alpha86.surfy.pro", "https://app-alpha.surfy.pro", "https://app-alpha.surfy.fr"];
 const endpoints$1 = { "backend": "https://app-alpha.surfy.pro" };
 const authentication$2 = { "auth0": { "clientId": "gxqMWyQ1p4YAyi0sG7TS4VETVhHOPYjI" }, "msal": { "clientId": "d37902ef-290e-4b1f-b97d-c456e3a3f424" }, "google": { "clientId": "66899640159-4o5e9mbti0sap7md07vfaoplppbr9h3p.apps.googleusercontent.com" }, "okta-sephora": { "clientId": "0oa3pgmpbk6xfNYjc0x7" }, "te-digital-pass": { "clientId": "app-surfy-prod" }, "azure-vca": { "clientId": "0271aec8-d6fa-4328-82d5-93463001184a" }, "azure-te": { "clientId": "5792f57f-cf0d-4cf3-965c-7adcfa883fa3" }, "azure-suez": { "clientId": "d0fe91a2-aadb-4df1-b32f-d567648da309" }, "azure-surfy": { "clientId": "" } };
 const alpha = {
@@ -47099,9 +46925,9 @@ const alpha = {
 };
 const logRocket = { "appId": "surfy/surfy-production-9rwgq" };
 const mcp = { "projectName": "user-surfy" };
-const origins = ["https://app.surfy.pro", "https://help.surfy.pro"];
+const origins = ["https://app.surfy.pro", "https://help.surfy.pro", "https://app.surfy.fr"];
 const endpoints = { "backend": "https://app.surfy.pro" };
-const authentication$1 = { "auth0": { "clientId": "pqF4xIJxyikS5FD7t11QUT6VH51JtXDS" }, "msal": { "clientId": "194145f8-c6dd-4fff-9162-4069cbd0c0b1" }, "google": { "clientId": "905042472880-rv5v9r3a45c02dp3nht2klqhdrqmlo6b.apps.googleusercontent.com" }, "okta-sephora": { "clientId": "0oa7exckjf7mnoM7c0i7" }, "te-digital-pass": { "clientId": "app-surfy-prod" }, "azure-vca": { "clientId": "0271aec8-d6fa-4328-82d5-93463001184a" }, "azure-te": { "clientId": "52c5380a-833f-422a-ad56-3d4a98842353" }, "azure-suez": { "clientId": "d0fe91a2-aadb-4df1-b32f-d567648da309" }, "azure-surfy": { "clientId": "" } };
+const authentication$1 = { "auth0": { "clientId": "pqF4xIJxyikS5FD7t11QUT6VH51JtXDS" }, "msal": { "clientId": "194145f8-c6dd-4fff-9162-4069cbd0c0b1" }, "google": { "clientId": "905042472880-rv5v9r3a45c02dp3nht2klqhdrqmlo6b.apps.googleusercontent.com" }, "okta-sephora": { "clientId": "0oa7exckjf7mnoM7c0i7" }, "te-digital-pass": { "clientId": "app-surfy-prod" }, "azure-vca": { "clientId": "0271aec8-d6fa-4328-82d5-93463001184a" }, "azure-te": { "clientId": "52c5380a-833f-422a-ad56-3d4a98842353" }, "azure-suez": { "clientId": "e8bebb2d-4c46-4130-b7c7-5e98cbea5f33" }, "azure-surfy": { "clientId": "" } };
 const p2 = {
   logRocket,
   mcp,
@@ -47109,7 +46935,7 @@ const p2 = {
   endpoints,
   authentication: authentication$1
 };
-const cloudinary = { "name": "app-surfy-pro", "presets": { "signed": "signed-upload", "unsigned": "by79qv6c" } };
+const cloudinary = { "name": "app-surfy-pro" };
 const profile = { "logo": { "square": "https://res.cloudinary.com/app-surfy-pro/image/upload/v1515245191/app/surfy/logo-surfy-square.png", "normal": "https://res.cloudinary.com/app-surfy-pro/image/upload/v1660809543/app/surfy/logo-surfy.png" } };
 const authentication = {};
 const base = {
@@ -47252,10 +47078,10 @@ function require_isMasked() {
   if (hasRequired_isMasked) return _isMasked;
   hasRequired_isMasked = 1;
   var coreJsData = require_coreJsData();
-  var maskSrcKey = function() {
+  var maskSrcKey = (function() {
     var uid = /[^.]+$/.exec(coreJsData && coreJsData.keys && coreJsData.keys.IE_PROTO || "");
     return uid ? "Symbol(src)_1." + uid : "";
-  }();
+  })();
   function isMasked(func) {
     return !!maskSrcKey && maskSrcKey in func;
   }
@@ -48332,9 +48158,9 @@ function requireIsArguments() {
   var objectProto = Object.prototype;
   var hasOwnProperty = objectProto.hasOwnProperty;
   var propertyIsEnumerable = objectProto.propertyIsEnumerable;
-  var isArguments2 = baseIsArguments(/* @__PURE__ */ function() {
+  var isArguments2 = baseIsArguments(/* @__PURE__ */ (function() {
     return arguments;
-  }()) ? baseIsArguments : function(value) {
+  })()) ? baseIsArguments : function(value) {
     return isObjectLike(value) && hasOwnProperty.call(value, "callee") && !propertyIsEnumerable.call(value, "callee");
   };
   isArguments_1 = isArguments2;
@@ -48357,13 +48183,13 @@ var hasRequiredIsBuffer;
 function requireIsBuffer() {
   if (hasRequiredIsBuffer) return isBuffer.exports;
   hasRequiredIsBuffer = 1;
-  (function(module, exports) {
+  (function(module, exports$1) {
     var root = require_root(), stubFalse = requireStubFalse();
-    var freeExports = exports && !exports.nodeType && exports;
+    var freeExports = exports$1 && !exports$1.nodeType && exports$1;
     var freeModule = freeExports && true && module && !module.nodeType && module;
     var moduleExports = freeModule && freeModule.exports === freeExports;
-    var Buffer2 = moduleExports ? root.Buffer : void 0;
-    var nativeIsBuffer = Buffer2 ? Buffer2.isBuffer : void 0;
+    var Buffer = moduleExports ? root.Buffer : void 0;
+    var nativeIsBuffer = Buffer ? Buffer.isBuffer : void 0;
     var isBuffer2 = nativeIsBuffer || stubFalse;
     module.exports = isBuffer2;
   })(isBuffer, isBuffer.exports);
@@ -48432,13 +48258,13 @@ var hasRequired_nodeUtil;
 function require_nodeUtil() {
   if (hasRequired_nodeUtil) return _nodeUtil.exports;
   hasRequired_nodeUtil = 1;
-  (function(module, exports) {
+  (function(module, exports$1) {
     var freeGlobal = require_freeGlobal();
-    var freeExports = exports && !exports.nodeType && exports;
+    var freeExports = exports$1 && !exports$1.nodeType && exports$1;
     var freeModule = freeExports && true && module && !module.nodeType && module;
     var moduleExports = freeModule && freeModule.exports === freeExports;
     var freeProcess = moduleExports && freeGlobal.process;
-    var nodeUtil = function() {
+    var nodeUtil = (function() {
       try {
         var types = freeModule && freeModule.require && freeModule.require("util").types;
         if (types) {
@@ -48447,7 +48273,7 @@ function require_nodeUtil() {
         return freeProcess && freeProcess.binding && freeProcess.binding("util");
       } catch (e) {
       }
-    }();
+    })();
     module.exports = nodeUtil;
   })(_nodeUtil, _nodeUtil.exports);
   return _nodeUtil.exports;
@@ -48987,7 +48813,6 @@ function require_baseToString() {
   if (hasRequired_baseToString) return _baseToString;
   hasRequired_baseToString = 1;
   var Symbol2 = require_Symbol(), arrayMap = require_arrayMap(), isArray = requireIsArray(), isSymbol = requireIsSymbol();
-  var INFINITY = 1 / 0;
   var symbolProto = Symbol2 ? Symbol2.prototype : void 0, symbolToString = symbolProto ? symbolProto.toString : void 0;
   function baseToString(value) {
     if (typeof value == "string") {
@@ -49000,7 +48825,7 @@ function require_baseToString() {
       return symbolToString ? symbolToString.call(value) : "";
     }
     var result = value + "";
-    return result == "0" && 1 / value == -INFINITY ? "-0" : result;
+    return result == "0" && 1 / value == -Infinity ? "-0" : result;
   }
   _baseToString = baseToString;
   return _baseToString;
@@ -49038,13 +48863,12 @@ function require_toKey() {
   if (hasRequired_toKey) return _toKey;
   hasRequired_toKey = 1;
   var isSymbol = requireIsSymbol();
-  var INFINITY = 1 / 0;
   function toKey(value) {
     if (typeof value == "string" || isSymbol(value)) {
       return value;
     }
     var result = value + "";
-    return result == "0" && 1 / value == -INFINITY ? "-0" : result;
+    return result == "0" && 1 / value == -Infinity ? "-0" : result;
   }
   _toKey = toKey;
   return _toKey;
@@ -49380,14 +49204,14 @@ function require_defineProperty() {
   if (hasRequired_defineProperty) return _defineProperty;
   hasRequired_defineProperty = 1;
   var getNative = require_getNative();
-  var defineProperty = function() {
+  var defineProperty = (function() {
     try {
       var func = getNative(Object, "defineProperty");
       func({}, "", {});
       return func;
     } catch (e) {
     }
-  }();
+  })();
   _defineProperty = defineProperty;
   return _defineProperty;
 }
@@ -49567,12 +49391,12 @@ var hasRequired_cloneBuffer;
 function require_cloneBuffer() {
   if (hasRequired_cloneBuffer) return _cloneBuffer.exports;
   hasRequired_cloneBuffer = 1;
-  (function(module, exports) {
+  (function(module, exports$1) {
     var root = require_root();
-    var freeExports = exports && !exports.nodeType && exports;
+    var freeExports = exports$1 && !exports$1.nodeType && exports$1;
     var freeModule = freeExports && true && module && !module.nodeType && module;
     var moduleExports = freeModule && freeModule.exports === freeExports;
-    var Buffer2 = moduleExports ? root.Buffer : void 0, allocUnsafe = Buffer2 ? Buffer2.allocUnsafe : void 0;
+    var Buffer = moduleExports ? root.Buffer : void 0, allocUnsafe = Buffer ? Buffer.allocUnsafe : void 0;
     function cloneBuffer(buffer, isDeep) {
       if (isDeep) {
         return buffer.slice();
@@ -49635,7 +49459,7 @@ function require_baseCreate() {
   hasRequired_baseCreate = 1;
   var isObject = requireIsObject();
   var objectCreate = Object.create;
-  var baseCreate = /* @__PURE__ */ function() {
+  var baseCreate = /* @__PURE__ */ (function() {
     function object() {
     }
     return function(proto) {
@@ -49650,7 +49474,7 @@ function require_baseCreate() {
       object.prototype = void 0;
       return result;
     };
-  }();
+  })();
   _baseCreate = baseCreate;
   return _baseCreate;
 }
@@ -50540,7 +50364,6 @@ function getJupEnvFront() {
   }
   return "not-set";
 }
-/*! js-cookie v3.0.5 | MIT */
 function assign(target) {
   for (var i = 1; i < arguments.length; i++) {
     var source = arguments[i];
@@ -50637,12 +50460,13 @@ function init(converter, defaultAttributes) {
   );
 }
 var api = init(defaultConverter, { path: "/" });
+const versionCookieKeyName = "x-version";
 const noVersion = "0.0.0";
 function getPublicAppVersion() {
   const v = api.get(versionCookieKeyName) ?? noVersion;
   if (v === noVersion) {
     const w = getWindow();
-    return (w == null ? void 0 : w.gSurfyCache) ?? v;
+    return w?.gSurfyCache ?? v;
   }
   return v;
 }
@@ -50706,6 +50530,373 @@ function updateGlobalLanguageSettings(locale) {
     gqlbMemory.language = language.code;
   }
 }
+function commonjsRequire(path) {
+  throw new Error('Could not dynamically require "' + path + '". Please configure the dynamicRequireTargets or/and ignoreDynamicRequires option of @rollup/plugin-commonjs appropriately for this require call to work.');
+}
+var pluralize$1 = { exports: {} };
+var pluralize = pluralize$1.exports;
+var hasRequiredPluralize;
+function requirePluralize() {
+  if (hasRequiredPluralize) return pluralize$1.exports;
+  hasRequiredPluralize = 1;
+  (function(module, exports$1) {
+    (function(root, pluralize2) {
+      if (typeof commonjsRequire === "function" && true && true) {
+        module.exports = pluralize2();
+      } else {
+        root.pluralize = pluralize2();
+      }
+    })(pluralize, function() {
+      var pluralRules = [];
+      var singularRules = [];
+      var uncountables = {};
+      var irregularPlurals = {};
+      var irregularSingles = {};
+      function sanitizeRule(rule) {
+        if (typeof rule === "string") {
+          return new RegExp("^" + rule + "$", "i");
+        }
+        return rule;
+      }
+      function restoreCase(word, token2) {
+        if (word === token2) return token2;
+        if (word === word.toLowerCase()) return token2.toLowerCase();
+        if (word === word.toUpperCase()) return token2.toUpperCase();
+        if (word[0] === word[0].toUpperCase()) {
+          return token2.charAt(0).toUpperCase() + token2.substr(1).toLowerCase();
+        }
+        return token2.toLowerCase();
+      }
+      function interpolate(str, args) {
+        return str.replace(/\$(\d{1,2})/g, function(match2, index) {
+          return args[index] || "";
+        });
+      }
+      function replace2(word, rule) {
+        return word.replace(rule[0], function(match2, index) {
+          var result = interpolate(rule[1], arguments);
+          if (match2 === "") {
+            return restoreCase(word[index - 1], result);
+          }
+          return restoreCase(match2, result);
+        });
+      }
+      function sanitizeWord(token2, word, rules) {
+        if (!token2.length || uncountables.hasOwnProperty(token2)) {
+          return word;
+        }
+        var len = rules.length;
+        while (len--) {
+          var rule = rules[len];
+          if (rule[0].test(word)) return replace2(word, rule);
+        }
+        return word;
+      }
+      function replaceWord(replaceMap, keepMap, rules) {
+        return function(word) {
+          var token2 = word.toLowerCase();
+          if (keepMap.hasOwnProperty(token2)) {
+            return restoreCase(word, token2);
+          }
+          if (replaceMap.hasOwnProperty(token2)) {
+            return restoreCase(word, replaceMap[token2]);
+          }
+          return sanitizeWord(token2, word, rules);
+        };
+      }
+      function checkWord(replaceMap, keepMap, rules, bool) {
+        return function(word) {
+          var token2 = word.toLowerCase();
+          if (keepMap.hasOwnProperty(token2)) return true;
+          if (replaceMap.hasOwnProperty(token2)) return false;
+          return sanitizeWord(token2, token2, rules) === token2;
+        };
+      }
+      function pluralize2(word, count, inclusive) {
+        var pluralized = count === 1 ? pluralize2.singular(word) : pluralize2.plural(word);
+        return (inclusive ? count + " " : "") + pluralized;
+      }
+      pluralize2.plural = replaceWord(
+        irregularSingles,
+        irregularPlurals,
+        pluralRules
+      );
+      pluralize2.isPlural = checkWord(
+        irregularSingles,
+        irregularPlurals,
+        pluralRules
+      );
+      pluralize2.singular = replaceWord(
+        irregularPlurals,
+        irregularSingles,
+        singularRules
+      );
+      pluralize2.isSingular = checkWord(
+        irregularPlurals,
+        irregularSingles,
+        singularRules
+      );
+      pluralize2.addPluralRule = function(rule, replacement) {
+        pluralRules.push([sanitizeRule(rule), replacement]);
+      };
+      pluralize2.addSingularRule = function(rule, replacement) {
+        singularRules.push([sanitizeRule(rule), replacement]);
+      };
+      pluralize2.addUncountableRule = function(word) {
+        if (typeof word === "string") {
+          uncountables[word.toLowerCase()] = true;
+          return;
+        }
+        pluralize2.addPluralRule(word, "$0");
+        pluralize2.addSingularRule(word, "$0");
+      };
+      pluralize2.addIrregularRule = function(single, plural) {
+        plural = plural.toLowerCase();
+        single = single.toLowerCase();
+        irregularSingles[single] = plural;
+        irregularPlurals[plural] = single;
+      };
+      [
+        // Pronouns.
+        ["I", "we"],
+        ["me", "us"],
+        ["he", "they"],
+        ["she", "they"],
+        ["them", "them"],
+        ["myself", "ourselves"],
+        ["yourself", "yourselves"],
+        ["itself", "themselves"],
+        ["herself", "themselves"],
+        ["himself", "themselves"],
+        ["themself", "themselves"],
+        ["is", "are"],
+        ["was", "were"],
+        ["has", "have"],
+        ["this", "these"],
+        ["that", "those"],
+        // Words ending in with a consonant and `o`.
+        ["echo", "echoes"],
+        ["dingo", "dingoes"],
+        ["volcano", "volcanoes"],
+        ["tornado", "tornadoes"],
+        ["torpedo", "torpedoes"],
+        // Ends with `us`.
+        ["genus", "genera"],
+        ["viscus", "viscera"],
+        // Ends with `ma`.
+        ["stigma", "stigmata"],
+        ["stoma", "stomata"],
+        ["dogma", "dogmata"],
+        ["lemma", "lemmata"],
+        ["schema", "schemata"],
+        ["anathema", "anathemata"],
+        // Other irregular rules.
+        ["ox", "oxen"],
+        ["axe", "axes"],
+        ["die", "dice"],
+        ["yes", "yeses"],
+        ["foot", "feet"],
+        ["eave", "eaves"],
+        ["goose", "geese"],
+        ["tooth", "teeth"],
+        ["quiz", "quizzes"],
+        ["human", "humans"],
+        ["proof", "proofs"],
+        ["carve", "carves"],
+        ["valve", "valves"],
+        ["looey", "looies"],
+        ["thief", "thieves"],
+        ["groove", "grooves"],
+        ["pickaxe", "pickaxes"],
+        ["passerby", "passersby"]
+      ].forEach(function(rule) {
+        return pluralize2.addIrregularRule(rule[0], rule[1]);
+      });
+      [
+        [/s?$/i, "s"],
+        [/[^\u0000-\u007F]$/i, "$0"],
+        [/([^aeiou]ese)$/i, "$1"],
+        [/(ax|test)is$/i, "$1es"],
+        [/(alias|[^aou]us|t[lm]as|gas|ris)$/i, "$1es"],
+        [/(e[mn]u)s?$/i, "$1s"],
+        [/([^l]ias|[aeiou]las|[ejzr]as|[iu]am)$/i, "$1"],
+        [/(alumn|syllab|vir|radi|nucle|fung|cact|stimul|termin|bacill|foc|uter|loc|strat)(?:us|i)$/i, "$1i"],
+        [/(alumn|alg|vertebr)(?:a|ae)$/i, "$1ae"],
+        [/(seraph|cherub)(?:im)?$/i, "$1im"],
+        [/(her|at|gr)o$/i, "$1oes"],
+        [/(agend|addend|millenni|dat|extrem|bacteri|desiderat|strat|candelabr|errat|ov|symposi|curricul|automat|quor)(?:a|um)$/i, "$1a"],
+        [/(apheli|hyperbat|periheli|asyndet|noumen|phenomen|criteri|organ|prolegomen|hedr|automat)(?:a|on)$/i, "$1a"],
+        [/sis$/i, "ses"],
+        [/(?:(kni|wi|li)fe|(ar|l|ea|eo|oa|hoo)f)$/i, "$1$2ves"],
+        [/([^aeiouy]|qu)y$/i, "$1ies"],
+        [/([^ch][ieo][ln])ey$/i, "$1ies"],
+        [/(x|ch|ss|sh|zz)$/i, "$1es"],
+        [/(matr|cod|mur|sil|vert|ind|append)(?:ix|ex)$/i, "$1ices"],
+        [/\b((?:tit)?m|l)(?:ice|ouse)$/i, "$1ice"],
+        [/(pe)(?:rson|ople)$/i, "$1ople"],
+        [/(child)(?:ren)?$/i, "$1ren"],
+        [/eaux$/i, "$0"],
+        [/m[ae]n$/i, "men"],
+        ["thou", "you"]
+      ].forEach(function(rule) {
+        return pluralize2.addPluralRule(rule[0], rule[1]);
+      });
+      [
+        [/s$/i, ""],
+        [/(ss)$/i, "$1"],
+        [/(wi|kni|(?:after|half|high|low|mid|non|night|[^\w]|^)li)ves$/i, "$1fe"],
+        [/(ar|(?:wo|[ae])l|[eo][ao])ves$/i, "$1f"],
+        [/ies$/i, "y"],
+        [/\b([pl]|zomb|(?:neck|cross)?t|coll|faer|food|gen|goon|group|lass|talk|goal|cut)ies$/i, "$1ie"],
+        [/\b(mon|smil)ies$/i, "$1ey"],
+        [/\b((?:tit)?m|l)ice$/i, "$1ouse"],
+        [/(seraph|cherub)im$/i, "$1"],
+        [/(x|ch|ss|sh|zz|tto|go|cho|alias|[^aou]us|t[lm]as|gas|(?:her|at|gr)o|[aeiou]ris)(?:es)?$/i, "$1"],
+        [/(analy|diagno|parenthe|progno|synop|the|empha|cri|ne)(?:sis|ses)$/i, "$1sis"],
+        [/(movie|twelve|abuse|e[mn]u)s$/i, "$1"],
+        [/(test)(?:is|es)$/i, "$1is"],
+        [/(alumn|syllab|vir|radi|nucle|fung|cact|stimul|termin|bacill|foc|uter|loc|strat)(?:us|i)$/i, "$1us"],
+        [/(agend|addend|millenni|dat|extrem|bacteri|desiderat|strat|candelabr|errat|ov|symposi|curricul|quor)a$/i, "$1um"],
+        [/(apheli|hyperbat|periheli|asyndet|noumen|phenomen|criteri|organ|prolegomen|hedr|automat)a$/i, "$1on"],
+        [/(alumn|alg|vertebr)ae$/i, "$1a"],
+        [/(cod|mur|sil|vert|ind)ices$/i, "$1ex"],
+        [/(matr|append)ices$/i, "$1ix"],
+        [/(pe)(rson|ople)$/i, "$1rson"],
+        [/(child)ren$/i, "$1"],
+        [/(eau)x?$/i, "$1"],
+        [/men$/i, "man"]
+      ].forEach(function(rule) {
+        return pluralize2.addSingularRule(rule[0], rule[1]);
+      });
+      [
+        // Singular words with no plurals.
+        "adulthood",
+        "advice",
+        "agenda",
+        "aid",
+        "aircraft",
+        "alcohol",
+        "ammo",
+        "analytics",
+        "anime",
+        "athletics",
+        "audio",
+        "bison",
+        "blood",
+        "bream",
+        "buffalo",
+        "butter",
+        "carp",
+        "cash",
+        "chassis",
+        "chess",
+        "clothing",
+        "cod",
+        "commerce",
+        "cooperation",
+        "corps",
+        "debris",
+        "diabetes",
+        "digestion",
+        "elk",
+        "energy",
+        "equipment",
+        "excretion",
+        "expertise",
+        "firmware",
+        "flounder",
+        "fun",
+        "gallows",
+        "garbage",
+        "graffiti",
+        "hardware",
+        "headquarters",
+        "health",
+        "herpes",
+        "highjinks",
+        "homework",
+        "housework",
+        "information",
+        "jeans",
+        "justice",
+        "kudos",
+        "labour",
+        "literature",
+        "machinery",
+        "mackerel",
+        "mail",
+        "media",
+        "mews",
+        "moose",
+        "music",
+        "mud",
+        "manga",
+        "news",
+        "only",
+        "personnel",
+        "pike",
+        "plankton",
+        "pliers",
+        "police",
+        "pollution",
+        "premises",
+        "rain",
+        "research",
+        "rice",
+        "salmon",
+        "scissors",
+        "series",
+        "sewage",
+        "shambles",
+        "shrimp",
+        "software",
+        "species",
+        "staff",
+        "swine",
+        "tennis",
+        "traffic",
+        "transportation",
+        "trout",
+        "tuna",
+        "wealth",
+        "welfare",
+        "whiting",
+        "wildebeest",
+        "wildlife",
+        "you",
+        /pok[eé]mon$/i,
+        // Regexes.
+        /[^aeiou]ese$/i,
+        // "chinese", "japanese"
+        /deer$/i,
+        // "deer", "reindeer"
+        /fish$/i,
+        // "fish", "blowfish", "angelfish"
+        /measles$/i,
+        /o[iu]s$/i,
+        // "carnivorous"
+        /pox$/i,
+        // "chickpox", "smallpox"
+        /sheep$/i
+      ].forEach(pluralize2.addUncountableRule);
+      return pluralize2;
+    });
+  })(pluralize$1);
+  return pluralize$1.exports;
+}
+var pluralizeExports = requirePluralize();
+const toUnderscore = (input) => {
+  return input.replace(/([A-Z])/g, ($1) => "_" + $1.toLowerCase());
+};
+const toPlural = (s) => {
+  return pluralizeExports.plural(s);
+};
+const singularize = (s) => {
+  return pluralizeExports.singular(s);
+};
+function capitalizeFirstLetter(s) {
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
 function cleanUpGuess(word) {
   return toUnderscore(word).split("_").map(capitalizeFirstLetter).join(" ");
 }
@@ -50738,19 +50929,6 @@ function getBrowserLocal() {
 }
 let polyglot = void 0;
 class PolyglotApi {
-  constructor() {
-    __publicField(this, "translate", (m, data) => {
-      if (!polyglot) {
-        throw new Error("Polyglot not initialized");
-      }
-      const res = polyglot.t(m, data);
-      if (this.isKey(m, res)) {
-        const guess = guessI18nMissingKey(res);
-        return `${guess}`;
-      }
-      return res;
-    });
-  }
   get locale() {
     if (!polyglot) {
       return "fr";
@@ -50774,7 +50952,7 @@ class PolyglotApi {
     return !this.isKey(key, res);
   }
   has(key) {
-    return (polyglot == null ? void 0 : polyglot.has(key)) ?? false;
+    return polyglot?.has(key) ?? false;
   }
   setPolyglot(polyglot_) {
     polyglot = polyglot_;
@@ -50784,7 +50962,214 @@ class PolyglotApi {
     this.setPolyglot(polyglot_);
     updateGlobalLanguageSettings(polyglot_.locale());
   }
+  translate = (m, data) => {
+    if (!polyglot) {
+      throw new Error("Polyglot not initialized");
+    }
+    const res = polyglot.t(m, data);
+    if (this.isKey(m, res)) {
+      const guess = guessI18nMissingKey(res);
+      return `${guess}`;
+    }
+    return res;
+  };
 }
+function useI18nApiOptional() {
+  return useRecoilValue_TRANSITION_SUPPORT_UNSTABLE(polyglotApiAtom);
+}
+function useI18nApi() {
+  const i18n = useI18nApiOptional();
+  if (!i18n) {
+    throw new Error("i18n not initialized in state");
+  }
+  return i18n;
+}
+function useGlobalTranslationCode() {
+  const i18n = useI18nApi();
+  return i18n.locale;
+}
+const jupKeyIdSuffix = "Id";
+function getTargetObjectTypeCapitalizedName(propertyType) {
+  const { type: type2, name } = propertyType;
+  if (["belongs-to"].includes(type2)) {
+    return capitalizeFirstLetter(name);
+  }
+  if (["has-many-paginated", "has-many"].includes(type2)) {
+    return singularize(capitalizeFirstLetter(name));
+  }
+  if (["foreign-key"].includes(type2)) {
+    const regexp = new RegExp(`${jupKeyIdSuffix}$`, "gi");
+    return capitalizeFirstLetter(name.replace(regexp, ""));
+  }
+}
+const tenantInfo = {
+  objectType: "company"
+};
+function includeJupType(list, type2) {
+  return list.includes(type2);
+}
+function isPropertyTypeBelongsTo(propertyType) {
+  const { type: type2 } = propertyType;
+  return includeJupType(["belongs-to"], type2);
+}
+function isPropertyTypeHasMany(propertyType) {
+  const { type: type2 } = propertyType;
+  return includeJupType(["has-many", "has-many-paginated"], type2);
+}
+function getTargetObjectTypeDefinition(propertyType) {
+  const { association } = propertyType;
+  if (association) {
+    return getObjectTypeDefinitionByName(association.targetModelName);
+  }
+  throw new Error(`missing target property type for property <${propertyType.name}> on ${propertyType.objectTypeName}`);
+}
+function objectTypePluralLabel(translation, objectTypeName) {
+  const otDef = getObjectTypeDefinitionByName(objectTypeName);
+  if (!otDef) {
+    return toPlural(objectTypeName);
+  }
+  return translation(`models.${otDef.capitalized.singular}.plural`);
+}
+function objectTypeCapitalizedPluralLabel(translation, objectTypeName) {
+  return capitalizeFirstLetter(objectTypePluralLabel(translation, objectTypeName));
+}
+const technicalPropertyTypeNames = {
+  externalId: "externalId",
+  createdAt: "createdAt",
+  updatedAt: "updatedAt",
+  userCompanyCreatedBy: "userCompanyCreatedBy",
+  userCompanyCreatedById: "userCompanyCreatedById",
+  userCompanyUpdatedBy: "userCompanyUpdatedBy",
+  userCompanyUpdatedById: "userCompanyUpdatedById"
+};
+const technicalPropertyTypes = [
+  technicalPropertyTypeNames.externalId,
+  technicalPropertyTypeNames.createdAt,
+  technicalPropertyTypeNames.updatedAt,
+  technicalPropertyTypeNames.userCompanyCreatedBy,
+  technicalPropertyTypeNames.userCompanyCreatedById,
+  technicalPropertyTypeNames.userCompanyUpdatedBy,
+  technicalPropertyTypeNames.userCompanyUpdatedById
+];
+const calculatedSpacesPropertyNames = [
+  "workplacesCount",
+  "workplacesRatio",
+  "freeWorkplacesCount",
+  "flexWorkplacesCount",
+  "flexRatio",
+  "sharedWorkplacesCount",
+  "sharedWorkplacesRatio",
+  "transitWorkplacesCount",
+  "seatsCount",
+  "totalCapacityCount",
+  "totalCapacityWorkplaceCountRatio",
+  "carbonFootprint"
+];
+const calculatedPeoplePropertyNames = [
+  "totalPeopleCount",
+  "peopleRatio",
+  "expansionRatio",
+  "seatsPeopleRatio",
+  "occupancyRate"
+];
+const calculatedInfoPropertyNames = [
+  ...calculatedPeoplePropertyNames,
+  ...calculatedSpacesPropertyNames
+];
+const roomPropertyNames = [
+  "roomsCount",
+  "roomsArea"
+];
+const calculatedGlobalPropertyNames = [
+  ...roomPropertyNames,
+  ...calculatedInfoPropertyNames
+];
+const allCalculatedPropertiesForTranslations = [
+  ...calculatedGlobalPropertyNames,
+  "peopleCount"
+];
+function getObjectTypeSingularLabel(translation, objectTypeName) {
+  const otDef = getObjectTypeDefinitionByName(objectTypeName);
+  if (!otDef) {
+    return objectTypeName;
+  }
+  return translation(`models.${otDef.capitalized.singular}.singular`);
+}
+function getObjectTypeCapitalizedSingularLabel(translation, objectTypeName) {
+  return capitalizeFirstLetter(getObjectTypeSingularLabel(translation, objectTypeName));
+}
+function getPropertyTypeLabelWithTranslation(i18n, propertyType) {
+  const { objectTypeName, type: type2, name } = propertyType;
+  const objectTypeDefinition = getObjectTypeDefinitionByName(objectTypeName);
+  if (technicalPropertyTypes.includes(name)) {
+    return i18n.translate(`entity.properties.${name}.label`);
+  }
+  const defaultKey = `models.${objectTypeDefinition.capitalized.singular}.properties.${name}.label`;
+  const d = i18n.translate(defaultKey);
+  if (i18n.has(defaultKey)) {
+    return d;
+  }
+  if (allCalculatedPropertiesForTranslations.includes(name)) {
+    const key = `calculatedProperties.properties.${name}.label`;
+    if (i18n.has(key)) {
+      return i18n.translate(key);
+    }
+  }
+  const belongsToCapitalizedObjectTypeName = getTargetObjectTypeCapitalizedName(propertyType);
+  if (isPropertyTypeBelongsTo(propertyType)) {
+    return capitalizeFirstLetter(i18n.translate(`models.${belongsToCapitalizedObjectTypeName}.singular`));
+  }
+  if (type2 === "foreign-key") {
+    const fkKey = `models.${belongsToCapitalizedObjectTypeName}.properties.id.label`;
+    if (i18n.has(fkKey)) {
+      return i18n.translate(fkKey);
+    } else if (propertyType.association?.targetModelName) {
+      return `Id (${getObjectTypeSingularLabel(i18n.translate, propertyType.association?.targetModelName)})`;
+    } else {
+      return "Id (?)";
+    }
+  }
+  if (isPropertyTypeHasMany(propertyType)) {
+    const targetObjectType = getTargetObjectTypeDefinition(propertyType);
+    return objectTypeCapitalizedPluralLabel(i18n.translate, targetObjectType.name);
+  }
+  return d || `<${name}>`;
+}
+function PropertyTypeMandatoryText(props) {
+  const { propertyType } = props;
+  const i18n = useI18nApi();
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: getPropertyTypeMandatoryText(i18n, propertyType) });
+}
+function getPropertyTypeMandatoryText(i18nApi, propertyType) {
+  return i18nApi.translate("entity.properties.mandatory", { name: getPropertyTypeLabelWithTranslation(i18nApi, propertyType) });
+}
+function PropertyTypeMandatoryLabel(props) {
+  const { propertyType } = props;
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(Typography, { variant: "caption", style: { display: "flex", alignItems: "center" }, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(PropertyTypeMandatoryIcon, { sx: { marginRight: 1 } }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(PropertyTypeMandatoryText, { propertyType })
+  ] });
+}
+function getTranslatedUnit(translation, unit) {
+  if (unit) {
+    return translation(`${unit.type}.${unit.value}`);
+  }
+}
+const PropertyTypeLabel = React__default.forwardRef((props, ref2) => {
+  const { propertyType, displayUnit, style: style2, ...otherProps } = props;
+  const i18n = useI18nApi();
+  const unit = displayUnit && propertyType.options.unit && ` (${getTranslatedUnit(i18n.translate, propertyType.options.unit)})`;
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { ref: ref2, style: style2, ...otherProps, children: [
+    getPropertyTypeLabelWithTranslation(i18n, props.propertyType),
+    unit
+  ] });
+});
+const version = { "major": 3, "minor": 4, "build": 138 };
+function getAppVersion() {
+  const { major, minor, build } = version;
+  return `${major}.${minor}.${build}`;
+}
+const appVersion = getAppVersion();
 const fr = {
   "AccordionSearchParamFilterDates.title": "Dates",
   "AddPersonToDimension.help": "Affecter une personne à %{name}",
@@ -50815,6 +51200,7 @@ const fr = {
   "AuthenticationButton.connections.auth0.label": "Compte Surfy",
   "AuthenticationButton.connections.google-oauth2.help": "Se connecter avec votre compte Google",
   "AuthenticationButton.connections.google-oauth2.label": "Google",
+  "AuthentificationConnectionNotFoundForEmail.message": "Aucune connexion d'authentification n'a été trouvée pour le domaine %{domain}",
   "AutocompleteAddress.autocomplete.placeholder": "Rechercher votre adresse ici",
   "AvatarPersonDrawer.help": "Voir plus d'informations sur %{name}",
   "BelongsToImportHelp.title": "Les type d'objets associés à %{objectTypeLabel} triés par les clés d'importation disponible",
@@ -50836,6 +51222,20 @@ const fr = {
   "BookedBuildingWorkplaceList.noWorkplaceBooked": "Aucun poste de travail réservé",
   "BookedBuildingWorkplaceList.viewBookedWorkplaceOnMap": "Voir le poste de travail %{workplaceName} qui est reservé sur le plan",
   "BookedBuildingWorkplaceList.workplaceIsBooked": "Votre poste de travail est reservé",
+  "BookingDialog.attendeesHelper": "Sélectionnez des collaborateurs ou appuyez sur Entrée pour ajouter un email.",
+  "BookingDialog.attendeesInvalidEmail": "Saisissez une adresse email valide pour l'ajouter à la réunion.",
+  "BookingDialog.attendeesLabel": "Inviter des participants",
+  "BookingDialog.attendeesNoOptions": "Aucun collaborateur trouvé. Appuyez sur Entrée pour ajouter l'email.",
+  "BookingDialog.attendeesPlaceholder": "Saisir un nom ou un email...",
+  "BookingDialog.attendeesTypeToSearch": "Saisissez au moins 2 caractères pour rechercher des collaborateurs.",
+  "BookingDialog.book": "Réserver",
+  "BookingDialog.bookRoomTitle": "Réserver une salle de réunion",
+  "BookingDialog.cancel": "Annuler",
+  "BookingDialog.description": "Description (optionnelle)",
+  "BookingDialog.enableTeamsMeeting": "Ajouter un lien Teams à la réunion",
+  "BookingDialog.endTime": "Heure de fin",
+  "BookingDialog.startTime": "Heure de début",
+  "BookingDialog.subject": "Objet de la réunion",
   "BookingMap.errors.noBuildingInFilter": "Merci de choisir un bâtiment et un étage dans le filtre pour voir les réservations",
   "BookingMap.errors.noDateInFilter": "Merci de choisir une date dans le filtre pour voir les réservations",
   "BookingMap.errors.noFloorInFilter": "Merci de choisir un étage dans le filtre pour voir les réservations",
@@ -50913,11 +51313,21 @@ const fr = {
   "BuildingInventory.title": "L'inventaire du bâtiment %{building.name}",
   "BuildingLabel.scenario": "Ce bâtiment est un scenario du bâtiment %{name}",
   "BuildingMenuItem.menu.scenario": "Scenarios (%{count})",
+  "BuildingMissingStructuredAddress.message": "L'adresse du bâtiment '%{buildingName}' manque de composants structurés (rue, ville, etc.)",
+  "BuildingMissingStructuredAddressAction.message": "L'adresse du bâtiment '%{buildingName}' manque de composants structurés (rue, ville, etc.)",
   "BuildingReports.items.sheets.merged": "Fusion",
   "BuildingReports.items.sheets.physicals": "Objets Physiques",
   "BuildingReports.items.sheets.virtuals": "Objets Virtuels",
+  "BuildingSelect.options.all": "Tous les bâtiments",
+  "BuildingSelectionView.selectBuildingToViewMap": "Choisissez un bâtiment pour afficher le plan",
   "CalculatedPropertiesAccordions.kpi": "Indicateurs",
   "CalculatedPropertiesAccordions.mesures": "Mesures",
+  "CalendarHeader.bookingTitle": "Réserver cette salle de réunion",
+  "CalendarHeader.refreshTooltip": "Actualiser le calendrier",
+  "CalendarScopeConsentButton.alertMessage": "Pour réserver des salles de réunion, vous devez autoriser Surfy à accéder à votre calendrier Microsoft. Cliquez sur le bouton ci-dessous pour accorder les autorisations nécessaires",
+  "CalendarScopeConsentButton.alertTitle": "Autorisation requise pour réserver des salles",
+  "CalendarScopeConsentButton.buttonHelp": "Vous serez redirigé vers Microsoft pour accorder les permissions",
+  "CalendarScopeConsentButton.buttonLabel": "Autoriser l'accès au calendrier",
   "CalibrateLayoutDrawer.options.inputs.scale.label": "Facteur d'échelle",
   "CalibrateLayoutDrawer.options.inputs.step.label": "Valeur de translation",
   "CalibrateLayoutDrawer.options.inputs.translate.x.label": "L'axe X",
@@ -50943,16 +51353,18 @@ const fr = {
   "CheckAllDefaultViews.shortcuts.title": "Raccourcis de configuration",
   "CheckAllDefaultViews.shortcuts.views.buttonsHelp": "Cocher cette vue pour tous les types d'entités",
   "CheckAllDefaultViews.shortcuts.views.title": "Raccourcis pour les vues d'interface par defaut",
+  "CloneEntitiesFailed.cloneFailed": "Impossible de cloner",
   "CollapseSwitchButton.help.false": "Voir le détail",
   "CollapseSwitchButton.help.true": "Masquer le détail",
   "CollapseWorkplaceAffectationList.title": "Affecter cette personne pour les jours suivants uniquement",
   "CollapseWorkplaceAffectationList.updateAffectationDay.false": "Retier l'affectation de cette personne %{day}",
   "CollapseWorkplaceAffectationList.updateAffectationDay.true": "Affecter cette personne %{day}",
   "ColorBox.NoColorHelp": "Sélectionner une couleur via la palette",
+  "ColorizeRoomTypeOption.useRoomTypeColor": "Utiliser la couleur du type d'espace",
   "CompanyDashboard.dashboards.area": "Tableau de bord des surfaces",
   "CompanyDashboard.dashboards.workplace": "Tableau de bord des postes de travail",
   "CompanyDuplicateDownload.deleteReporting.help": "Supprimer les données de reporting calculées, il faut recalculer les données de reporting pour les avoir de nouveau, cette option permet un nettoyage des données de reporting",
-  "CompanyDuplicateDownload.deleteReporting.progress": "Suppression des données de reporting de {{objectType}} : {{current}}/{{total}}",
+  "CompanyDuplicateDownload.deleteReporting.progress": "Suppression des données de reporting de %{objectType} : %{current}/%{total}",
   "CompanyDuplicateDownload.deleteReporting.title": "Supprimer les données calculées des entités de reporting",
   "CompanyDuplicateDownload.downloadJson.help": "Ce fichier JSON permet de dupliquer la plateforme si toutes les règles de qualité des données sont respectées",
   "CompanyDuplicateDownload.downloadJson.title": "Télécharger le fichier JSON des données de l'entreprise",
@@ -50991,8 +51403,10 @@ const fr = {
   "CubySaveAsImageButton.label": "Enregistrer l'image",
   "CubyWallModeSelect.label": "Affichage des cloisons",
   "CubyWallModeSelect.options.cuby": "Cuby",
+  "CubyWallModeSelect.options.cubyRealitySelected": "Cuby avec sélection en réalité",
   "CubyWallModeSelect.options.half": "Demi-cloisons",
   "CubyWallModeSelect.options.no": "Aucun",
+  "CubyWallModeSelect.options.noWallSelected": "Sans cloisons avec sélection",
   "CubyWallModeSelect.options.reality": "Réalité",
   "CustomEntityBreadcrumbWorkCanvasLayoutViewLabel.help": "Vous pouvez changer la vision via les menus du plan",
   "CustomEntityBreadcrumbWorkCanvasLayoutViewLabel.viewSet": "Vision",
@@ -51014,12 +51428,19 @@ const fr = {
   "DataQualityIndex.generalInfo.title": "Informations générales",
   "DataQualityIndex.subtitle": "Lister tous les rapports de qualité des données par entité",
   "DataQualityIndex.title": "Liste des rapports de qualité des données",
+  "DataQualityIssueRow.elementCountPlural": "éléments",
+  "DataQualityIssueRow.elementCountSingular": "élément",
+  "DataQualityIssueRow.viewButton": "Voir",
+  "DataQualityIssuesHeader.summary": "%{totalIssues} problème%{totalIssuesPlural} de qualité de données trouvé%{totalIssuesPlural} sur %{viewsCount} vérification%{viewsCountPlural}. Veuillez résoudre les problèmes suivants avant de continuer :",
+  "DataQualityIssuesHeader.title": "Problèmes de qualité des données détectés",
   "DataQualityTable.numberOfLines": "Nombre de lignes",
+  "DateDimensionFilter.excludeWeekends": "Exclure les week-ends",
   "DateDimensionSelect.options.day": "Jour",
   "DateDimensionSelect.options.month": "Mois",
   "DateDimensionSelect.options.quarter": "Trimestre",
   "DateDimensionSelect.options.week": "Semaine",
   "DateDimensionSelect.options.year": "Année",
+  "DayHeaders.time": "Heure",
   "DeleteDialog.cancel.help": "Annuler la suppression",
   "DeleteDialog.cancel.label": "Annuler",
   "DeleteDialog.content": "Vous êtes sur le point de supprimer <b>%{determinant.undefined}</b>, cette action n'est pas réversible et peut avoir des impacts, êtes-vous sûr de vouloir réaliser cette action ?",
@@ -51034,6 +51455,8 @@ const fr = {
   "DeleteMultipleDialog.title": "Supprimer %{determinants.undefined}",
   "DeleteMultipleEntities.help": "Supprimer %{determinants.defined} sélectionné(e)s",
   "DeleteWorkplace.help": "Supprimer le poste de travail : [ %{name} ], les affectations seront aussi supprimées",
+  "DeskBookingConfirmationButton.bookingConfirmed": "La réservation a été confirmée",
+  "DeskBookingConfirmationButton.confirm": "Confirmer votre présence",
   "DimensionBuildingPlanningLabel.youAreAssigned": "Vous êtes affecté sur %{dimensionTypeName} %{dimensionName}",
   "DimensionInfo.carbonFootprint.help": "L'empreinte carbone est de %{value} de CO2 emis pour %{dimensionType} %{dimension}",
   "DimensionInfo.dimensionPeopleCount.help": "Il y a %{value} personne(s) affectées dans %{dimensionType} %{dimension}",
@@ -51168,6 +51591,8 @@ const fr = {
   "DisplayWorkplaceTexts.workplaceOrganizationLevel0.label": "Direction",
   "DisplayWorkplaceTexts.workplaceOrganizationLevel1.help": "Afficher ou non les services des postes de travail sur le plan",
   "DisplayWorkplaceTexts.workplaceOrganizationLevel1.label": "Service",
+  "DisplayWorkplaceTexts.workplaceUsageType.help": "Afficher ou non le type d'usage du poste de travail sur le plan",
+  "DisplayWorkplaceTexts.workplaceUsageType.label": "Type d'usage",
   "DownloadBuildingImagesAccordion.accordion.title": "Exporter les images de tout le bâtiment",
   "DownloadBuildingImagesAccordion.buttons.download.help": "Télécharger tous les plans de tous les étages du bâtiment au format png dans un zip, le temps d'attente de cette extraction peut être long",
   "DownloadBuildingImagesAccordion.buttons.download.label": "Télécharger le ZIP",
@@ -51214,12 +51639,15 @@ const fr = {
   "EntityHasManyProperties.associations.reporting": "Les associations de reporting pour %{determinant.defined}",
   "EntityHasManyProperties.associations.security": "Les associations de sécurité pour %{determinant.defined}",
   "EntityPropertyTypesMandatoryNotRespected.title": "Les propriétés suivantes sont obligatoire",
+  "EntityPropertyTypesRegexValidationNotRespected.title": "Les propriétés suivantes ne respectent pas la validation regex",
   "ErrorImpossibleToFindTheEntities.text": "Il est impossible de trouver %{determinants.defined} recherché",
   "ErrorImpossibleToFindTheEntity.text": "Il est impossible de trouver %{determinant.defined} recherchés",
   "ErrorTextZone.reload": "Recommencer l'opération",
+  "Errors.AUTHENTIFICATION_CONNECTION_NOT_FOUND_FOR_EMAIL": "Aucune connexion d'authentification n'a été trouvée pour le domaine %{domain}",
   "Errors.networkError": "Des problèmes de connexion ou de réseau ont été détectés, merci de patienter et de réessayer dans quelques secondes",
   "ExportQueryNodeToFileButton.help.list": "Télécharger en excel %{determinants.defined}",
   "FieldTypeAddress.edit": "Modifier l'adresse",
+  "FieldTypeAddress.geocode": "Géocoder l'adresse pour extraire les composants structurés (rue, ville, code postal, pays)",
   "FieldTypeAddress.remove": "Supprimer l'adresse",
   "FieldTypeColor.NoColorHelp": "Sélectionner une couleur",
   "FieldTypeColor.NotHexMatchError": "Le champs ne respecte pas le format hexadécimal d'une couleur",
@@ -51239,6 +51667,16 @@ const fr = {
   "FieldTypePassword.icons.copy": "Copier le contenu du mot de passe dans le presse-papier",
   "FieldTypePassword.icons.generate": "Générer un mot de passe unique",
   "FileDropZone.dropZone": "Deplacer et glisser le fichier d'import dans cette zone ou cliquer dans la zone pour sélectionner votre fichier",
+  "FixAddressButton.button.fix": "Corriger l'adresse",
+  "FixAddressButton.button.help": "Corriger automatiquement l'adresse de '%{buildingName}' en utilisant le géocodage Google Maps",
+  "FixAddressButton.error.message": "❌ Échec de la correction : %{error}",
+  "FixAddressButton.errors.noStructuredAddress": "Impossible d'extraire une adresse structurée depuis le géocodage",
+  "FixAddressButton.errors.unknown": "Erreur inconnue",
+  "FixAddressButton.errors.updateFailed": "Échec de la mise à jour dans Surfy",
+  "FixAddressButton.progress.geocoding": "Récupération de l'adresse structurée via Google Maps...",
+  "FixAddressButton.progress.refreshing": "Rafraîchissement de la vue...",
+  "FixAddressButton.progress.updating": "Mise à jour du bâtiment dans Surfy...",
+  "FixAddressButton.success.message": "✅ L'adresse de '%{buildingName}' a été corrigée avec succès",
   "FloorMap.tabs.all": "Voir toutes les formes sélectionnées en liste",
   "FloorMap.tabs.analyticsDimensionTypes": "Colorier les espaces sur le plan en fonction des <b>calques d'analyse</b>",
   "FloorMap.tabs.building": "Voir les informations du bâtiment",
@@ -51259,6 +51697,7 @@ const fr = {
   "FloorMap.tabs.users": "Colorier les postes de travail par rapport aux personnes",
   "FloorMap.tabs.workplaceTypes": "Afficher sur le plan les <b>postes de travail</b> par types de postes de travail",
   "FloorMap.tabs.workplaceUsage": "Colorier les postes de travail par rapport à leur <b>état</b>",
+  "FloorMap.tabs.workplaceUsageTypes": "Colorier les postes de travail par rapport à leur <b>type d'usage</b>",
   "FloorMap.tabs.workplaces": "Détails des <b>postes de travail</b> sélectionné",
   "FloorSelector.focus": "Sélectionner uniquement cet étage",
   "FloorSelector.selectAll.false": "Sélectionner tous les étages",
@@ -51283,6 +51722,8 @@ const fr = {
   "GlobalSearch.Start": "Vous pouvez rechercher par exemple des personnes, des espaces, des postes de travail, des objets ou d'autres entités, la recherche commencera à partir du 2eme caractère",
   "GlobalSearch.close.help": "Effacer la recherche",
   "GlobalSearchIncludeScenarios.label": "Inclure les scénarios dans la recherche",
+  "GoogleApiWrapper.configurationNotFound": "La clé API Google Maps n'est pas configurée",
+  "GoogleApiWrapper.loadingFailed": "Échec du chargement de l'API Google Maps",
   "HalfDayWorkingLocationToggle.all.help": "Les horaires de la journée sont de 8h00 à 19h00",
   "HalfDayWorkingLocationToggle.all.label": "Toute la journée",
   "HalfDayWorkingLocationToggle.am.help": "Les horaires de la matinée sont de 8h00 à 13h30",
@@ -51339,7 +51780,8 @@ const fr = {
   "ImportUpdateOption.help": "Effectuer la mise à jour des objets sélectionnés",
   "ImportUpdateOption.label": "Mettre à jour",
   "IndexContextMenuItem.navigation": "Navigation",
-  "InfiniteScrollLoader.loader.completed": "Tous les %{count} éléments ont été chargés",
+  "InfiniteScrollLoader.loader.completed_plural": "Tous les %{count} éléments ont été chargés",
+  "InfiniteScrollLoader.loader.completed_singular": "1 élément a été chargé",
   "InfiniteScrollLoader.loader.loadMore": "Charger plus (%{displayed}/%{total})",
   "InfiniteScrollLoader.loader.loading": "Chargement...",
   "InfiniteScrollLoader.loader.scrollForMore": "Faites défiler pour voir plus...",
@@ -51373,11 +51815,22 @@ const fr = {
   "LayoutFiltersTabOpenToggleIcon.open.true": "Fermer le menu du plan pour optimiser l'espace de l'affichage du plan",
   "LayoutFiltersTabZone.collapse.help": "Le menu est fermé, vous pouvez l'ouvrir en cliquant sur le premier icône afin de l'ouvrir et voir le détail des éléments du plan",
   "LayoutViewSwitch.title": "Changer la vision du plan",
+  "Legend.available": "Disponible",
+  "Legend.booked": "Réservé",
+  "Legend.past": "Passé",
   "LegendSelector.labels.default": "Légende par défaut",
   "LegendSelector.title": "Sélectionner la legende",
   "Level1OrganizationFilter.Empty": "Il n'y a aucune organization associée aux espaces, vous pouvez en ajouter en modifiant un espace et en l'associant à une organiation, puis vous pourrez contrôler leur affichage depuis cette séction",
   "ListRefetchButton.refetch": "Recharger les données des objets visibles",
   "LoadingSvgCircle.pleaseWait": "Veuillez patienter pendant la synchronisation",
+  "LoginLanguageSelector.ariaLabel": "Changer la langue pour %{language}",
+  "LoginLanguageSelector.languageNameDe": "Allemand",
+  "LoginLanguageSelector.languageNameEn": "Anglais",
+  "LoginLanguageSelector.languageNameEs": "Espagnol",
+  "LoginLanguageSelector.languageNameFr": "Français",
+  "LoginLanguageSelector.languageNameIt": "Italien",
+  "LoginLanguageSelector.languageNameNl": "Néerlandais",
+  "LoginLanguageSelector.tooltip": "Changer la langue en %{language}",
   "LoginView.connections.AzureADv2.help": "Se connecter avec votre compte professionel Microsoft via Office 365",
   "LoginView.connections.AzureADv2.label": "Office 365",
   "LoginView.connections.Username-Password-Authentication.help": "Se connecter avec votre compte Surfy",
@@ -51391,6 +51844,53 @@ const fr = {
   "LoginView.texts.description": "Accéder à Surfy",
   "LoginView.texts.title": "Connexion",
   "LogoutMenuLink.logout": "Se déconnecter",
+  "LuccaSynchronizationOperationLabel.title": "Syncronisation Lucca",
+  "MSGraphConsentPrompt.buttonHelp": "Vous devez être administrateur Microsoft 365 pour valider ce consentement.",
+  "MSGraphConsentPrompt.buttonLabel": "Accorder l'autorisation Microsoft requise",
+  "MSGraphConsentPrompt.title": "Autorisation Microsoft supplémentaire requise",
+  "MSPlacesBuildingsSync.restart.button": "Redémarrer la synchronisation des bâtiments",
+  "MSPlacesConsentButton.alert.message": "La synchronisation Microsoft Places nécessite des permissions supplémentaires. Cliquez sur le bouton ci-dessous pour autoriser l'accès en lecture et écriture aux données Places.",
+  "MSPlacesConsentButton.alert.title": "Permissions supplémentaires requises",
+  "MSPlacesConsentButton.button.help": "Accorder la permission de créer et modifier des bâtiments dans Microsoft Places",
+  "MSPlacesConsentButton.button.label": "Autoriser l'accès Microsoft Places",
+  "MSPlacesFloorsSync.restart.button": "Redémarrer la synchronisation des étages",
+  "MSPlacesRoomsBasicSync.headers.capacity": "Capacité",
+  "MSPlacesRoomsBasicSync.headers.displayName": "Nom d'affichage",
+  "MSPlacesRoomsBasicSync.headers.email": "Email",
+  "MSPlacesRoomsBasicSync.headers.floorNumber": "Numéro d'étage",
+  "MSPlacesRoomsBasicSync.restart.button": "Redémarrer la synchronisation des salles",
+  "MSPlacesRoomsDisplayNameSyncTab.alertDescription": "Cette opération compare les noms d'affichage des salles Microsoft Places avec leurs équivalents Surfy.",
+  "MSPlacesRoomsDisplayNameSyncTab.alertMatchingDescription": "Les salles sont appariées via leur adresse e-mail de réservation.",
+  "MSPlacesRoomsDisplayNameSyncTab.alertMatchingTitle": "Logique d'appariement :",
+  "MSPlacesRoomsDisplayNameSyncTab.alertNoteDescription": "Seul le nom d'affichage est mis à jour dans Microsoft 365 lorsqu'une différence est détectée, Ce sont les API users de Graph qui sont utilisées pour mettre à jour le nom d'affichage.",
+  "MSPlacesRoomsDisplayNameSyncTab.alertNoteTitle": "Important :",
+  "MSPlacesRoomsDisplayNameSyncTab.alertTitle": "Synchroniser les noms d'affichage Microsoft",
+  "MSPlacesRoomsDisplayNameSyncTab.consentButtonHelp": "Vous devez être administrateur Microsoft 365 pour valider ce consentement.",
+  "MSPlacesRoomsDisplayNameSyncTab.consentButtonLabel": "Accorder l'autorisation Microsoft requise",
+  "MSPlacesRoomsDisplayNameSyncTab.consentMessage": "La synchronisation des noms d'affichage des salles MS Places nécessite ces autorisations pour continuer : %{scopes}.",
+  "MSPlacesRoomsDisplayNameSyncTab.consentTitle": "Autorisation Microsoft supplémentaire requise",
+  "MSPlacesRoomsDisplayNameSyncTab.restartButton": "Relancer la synchronisation",
+  "MSPlacesRoomsEmailSyncTab.alert.description1": "Cette opération synchronise les adresses email des salles Microsoft Places vers la propriété bookingEmail des salles Surfy. La synchronisation est unidirectionnelle : MS Places → Surfy.",
+  "MSPlacesRoomsEmailSyncTab.alert.matchingDescription": "Les salles sont associées par displayName et étage (parentId). Les salles doivent déjà être liées ou avoir des noms correspondants pour être synchronisées.",
+  "MSPlacesRoomsEmailSyncTab.alert.matchingTitle": "Correspondance :",
+  "MSPlacesRoomsEmailSyncTab.alert.noteDescription": "Seules les salles avec des emails différents seront affichées pour mise à jour. Les salles avec des emails correspondants sont affichées dans « Aucun changement ».",
+  "MSPlacesRoomsEmailSyncTab.alert.noteTitle": "Remarque :",
+  "MSPlacesRoomsEmailSyncTab.alert.title": "Synchroniser les emails MS Places vers Surfy",
+  "MSPlacesRoomsEmailSyncTab.restart.button": "Redémarrer la synchronisation des emails",
+  "MSPlacesRoomsSync.displayNameSyncTabLabel": "Synchroniser les noms d'affichage",
+  "MSPlacesRoomsSync.doneChipLabel": "Terminé",
+  "MSPlacesRoomsSync.emailSyncTabLabel": "Synchroniser les e-mails",
+  "MSPlacesRoomsSync.syncTabLabel": "Synchroniser les salles",
+  "MSPlacesSync.restart.button": "Redémarrer toute la synchronisation",
+  "MSPlacesSync.steps.rooms.suffix": "(Salles de réunion uniquement)",
+  "MSPlacesSyncOperationLabel.title": "Synchronisation Microsoft Places",
+  "MSUsersConsentButton.alertMessage": "Pour proposer la synchronisation des utilisateurs, Surfy doit pouvoir lire les utilisateurs Microsoft 365. Cliquez sur le bouton ci-dessous pour accorder l'autorisation requise.",
+  "MSUsersConsentButton.alertTitle": "Autoriser l'accès aux utilisateurs Microsoft Graph",
+  "MSUsersConsentButton.buttonHelp": "Vous serez redirigé vers Microsoft pour accorder l'accès à l'annuaire",
+  "MSUsersConsentButton.buttonLabel": "Autoriser la synchronisation des utilisateurs Microsoft",
+  "MSUsersSync.description": "Synchronisez les utilisateurs Microsoft 365 avec les collaborateurs Surfy. Les collaborateurs manquants sont créés automatiquement à partir de leur adresse e-mail.",
+  "MSUsersSync.refresh": "Synchroniser les utilisateurs Microsoft",
+  "MSUsersSync.title": "Synchronisation des utilisateurs Microsoft",
   "MapFilterNodeIsAllSelected.help": "Toute la sélection ci dessous sera chargé, même si des nouveaux objets sont crées",
   "MapFilterNodeToggleAll.action.false": "Tout désélectionner",
   "MapFilterNodeToggleAll.action.true": "Tout sélectionner",
@@ -51408,10 +51908,64 @@ const fr = {
   "MapLegendWorkplace.title": "Poste de travail",
   "MapLegendWorkplace.workplaces.flex": "Les postes de travail sont en flex",
   "MapLegendWorkplace.workplaces.free": "Les postes de travail sont libres",
+  "MeetingRoomBookAction.bookRoom": "Réserver via le calendrier",
+  "MeetingRoomCard.availability.available": "Disponible sur ce créneau",
+  "MeetingRoomCard.availability.searching": "Recherche des disponibilités...",
+  "MeetingRoomCard.bookingEmailAvailable": "Adresse de réservation disponible : %{email}",
+  "MeetingRoomCard.calendarFor": "Agenda pour",
   "MeetingRoomCard.locateSpace": "Localiser l'espace sur le plan",
+  "MeetingRoomCard.noRoomName": "Nom d'espace non défini",
+  "MeetingRoomCard.roomCalendar": "Calendrier de l'espace",
   "MeetingRoomCard.seats.1": "%{count} place assise",
   "MeetingRoomCard.seats.n": "%{count} places assises",
+  "MeetingRoomCard.table.actions": "Actions",
+  "MeetingRoomCard.table.building": "Bâtiment",
+  "MeetingRoomCard.table.capacity": "Capacité",
+  "MeetingRoomCard.table.floor": "Étage",
+  "MeetingRoomCard.table.name": "Nom",
+  "MeetingRoomCard.table.type": "Type",
+  "MeetingRoomCard.tabs.buildingMap": "Vue plan",
+  "MeetingRoomCard.tabs.cards": "Vue fiches",
+  "MeetingRoomCard.tabs.table": "Vue tableau",
+  "MeetingRoomCard.viewCalendar": "Voir le calendrier des réservations",
   "MeetingRoomCard.viewPicture": "Voir la photo de l'espace",
+  "MeetingRoomCardSeats.seatsMultiple": "%{count} places assises",
+  "MeetingRoomCardSeats.seatsSingle": "%{count} place assise",
+  "MeetingRoomDirectBookAction.bookingInProgressHelp": "Réservation en cours...",
+  "MeetingRoomDirectBookAction.bookingSuccess": "Réservation confirmée pour %{roomName} (%{timeRange})",
+  "MeetingRoomDirectBookAction.directBook": "Réservation rapide",
+  "MeetingRoomDirectBookAction.missingSelection": "Sélectionnez d'abord un jour et une plage horaire",
+  "MeetingRoomDirectBookAction.noRoomName": "Nom d'espace non défini",
+  "MeetingRoomDirectBookAction.roomUnavailable": "La salle est indisponible sur cette plage horaire",
+  "MeetingRoomDirectBookAction.schedulesLoading": "Disponibilités en cours de chargement",
+  "MeetingRooms.clearFilters": "Effacer les filtres",
+  "MeetingRooms.loadingAvailabilityTooltip": "Chargement des disponibilités de réservation...",
+  "MeetingRooms.noMeetingRoomsConfigured": "Vous n'avez pas de salles de réunions configurées via des groupes de typologies d'espaces",
+  "MeetingRooms.noRoomsFound": "Aucune salle ne correspond à votre recherche, vous pouvez effacer vos filtres de recherches",
+  "MeetingRooms.selectionCount": "%{count} espaces dans la sélection",
+  "MeetingRoomsBuildingCuby.noRoomsFound": "Aucune salle ne correspond à votre recherche, vous pouvez effacer vos filtres de recherches",
+  "MeetingRoomsBuildingMapFloorSpaceAction.ariaLabel": "Ouvrir le curseur des surfaces",
+  "MeetingRoomsBuildingMapFloorSpaceAction.tooltip": "Ajuster l'échelle des surfaces",
+  "MeetingRoomsBuildingMapResetViewAction.ariaLabel": "Réinitialiser la caméra sur la vue zénithale initiale",
+  "MeetingRoomsBuildingMapResetViewAction.tooltip": "Revenir à la vue zénithale initiale",
+  "MeetingRoomsBuildingMapWallModeToggle.ariaLabel": "Basculer le mode d'affichage des murs",
+  "MeetingRoomsBuildingMapWallModeToggle.tooltip.noWallSelected": "Masquer les murs pour une vue dégagée",
+  "MeetingRoomsBuildingMapWallModeToggle.tooltip.reality": "Afficher les murs en mode réalité",
+  "MeetingRoomsDayFilters.dayTooltip": "Filtrer les salles disponibles pour le %{day}",
+  "MeetingRoomsDayFilters.nextTooltip": "Jours suivants",
+  "MeetingRoomsDayFilters.previousTooltip": "Jours précédents",
+  "MeetingRoomsDayFilters.title": "Jours",
+  "MeetingRoomsFilterOption.multiSelectTooltip": "Ajouter ou retirer cette option de la sélection",
+  "MeetingRoomsFilterOption.singleSelectAriaLabel": "Sélectionner uniquement cette option",
+  "MeetingRoomsFilterOption.singleSelectTooltip": "Afficher uniquement cette option",
+  "MeetingRoomsHourRangeSelector.rangeEndValueLabel": "Fin : %{time}",
+  "MeetingRoomsHourRangeSelector.rangeSelectionTooltip": "Faites glisser les poignées pour définir la plage horaire utilisée pour rechercher des réservations.",
+  "MeetingRoomsHourRangeSelector.rangeStartValueLabel": "Début : %{time}",
+  "MeetingRoomsRefreshSelectionButton.refreshSelection": "Rafraîchir la sélection",
+  "MeetingRoomsSearchFilter.searchLabel": "Recherche",
+  "MeetingRoomsSearchFilter.searchPlaceholder": "Rechercher une salle...",
+  "MicrosoftUsersSyncTitle.title": "Synchronisation des utilisateurs Microsoft",
+  "MoffiSyncOperationLabel.title": "Syncronisation Moffi",
   "MouvementMatrixImport.errors.noSheet": "Impossible de trouver la feuille excel avec le nom %{name} [%{objectTypeName}]",
   "MovePersonFromWorkplaceToRoomListButtonItem.help": "Cette option nécessite de rafraichir la page pour voir le resultat, il est possible d'enchainer plusieurs mouvements sans rafraichir",
   "MovePersonFromWorkplaceToRoomListButtonItem.label": "Déplacer cette personne de son poste de travail à l'espace du poste de travail",
@@ -51434,12 +51988,13 @@ const fr = {
   "NumberOfPeoplePerRowField.label": "Nombre de personnes par ligne pour les affectations aux espaces",
   "ObjectTypeImportKeys.title": "Les clés disponibles pour réconcilier %{determinants.undefined} dans l'ordre du choix, si vous souhaitez modifier une des propriétés clé vous devez utilisez l'identifiant comme clé",
   "ObjectTypeImportScalarProperties.help": "Copier dans le presse-papier",
-  "Operations.exportZbre.label": "Export Z#bre",
-  "Operations.lucca-sync.label": "Syncronisation Lucca",
-  "Operations.moffi-sync.label": "Syncronisation Moffi",
-  "Operations.sharingcloud-sync.label": "Syncronisation Sharingcloud",
-  "Operations.talentsoft-import.label": "Import Talentsoft",
-  "Operations.zbre-sync.label": "Syncronisation Z#bre",
+  "OperationHelpMarkdown.help.documentation": "Documentation",
+  "OrganizationDataQualityHierarchy.headerChildOrganizations": "Organisations filles",
+  "OrganizationDataQualityHierarchy.headerOrganization": "Organisation",
+  "OrganizationDataQualityHierarchy.headerParentOrganization": "Organisation mère",
+  "OrganizationDataQualityHierarchy.headerPlatform": "Plateforme",
+  "OrganizationDataQualityHierarchy.headerReason": "Raison ?",
+  "OrganizationDataQualityHierarchy.reasonHasParentAndChildren": "L'organisation a des enfants et aussi une mère",
   "OrganizationFloorMapFilter.TooltipTitle.notSelected": "Sélectionner %{organization} pour colorier les espaces sur le plan",
   "OrganizationFloorMapFilter.TooltipTitle.selected": "Désélectionner %{organization} va retirer les couleurs du plan",
   "OrganizationFloorMapFilter.tooltip.false": "Désélectionner tous organizations ci-dessous",
@@ -51453,6 +52008,21 @@ const fr = {
   "ParkingBookIcon.parking.booked": "Votre parking est réservé",
   "ParkingBookIcon.parking.release.help": "Libérer la réservation du parking",
   "ParkingBookIcon.parking.viewOnMap": "Voir sur le plan le parking réservé",
+  "PartnerEntityCreateTab.button.help": "Créer dans %{partnerName}",
+  "PartnerEntityCreateTab.button.label": "Créer dans %{partnerName}",
+  "PartnerEntityCreateTab.progress.syncing": "Synchronisation %{label}...",
+  "PartnerEntityDeleteTab.button.help": "Supprimer dans %{partnerName}",
+  "PartnerEntityDeleteTab.button.label": "Supprimer dans %{partnerName}",
+  "PartnerEntityDeleteTab.progress.syncing": "Synchronisation %{label}...",
+  "PartnerEntitySync.errors.title": "Erreurs de synchronisation (%{count})",
+  "PartnerEntitySync.tabs.create": "Créer",
+  "PartnerEntitySync.tabs.delete": "Supprimer",
+  "PartnerEntitySync.tabs.noChange": "Aucun changement",
+  "PartnerEntitySync.tabs.update": "Mettre à jour",
+  "PartnerEntityUpdateTab.button.help": "Mettre à jour dans %{partnerName}",
+  "PartnerEntityUpdateTab.button.label": "Mettre à jour dans %{partnerName}",
+  "PartnerEntityUpdateTab.headers.type": "Type",
+  "PartnerEntityUpdateTab.progress.syncing": "Synchronisation %{label}...",
   "PersonAffectationsPanel.description": "Les affectations de la personne",
   "PersonAffectationsPanel.title": "Affectations",
   "PersonBadgePanel.description": "Informations diverses sur la personne",
@@ -51504,6 +52074,7 @@ const fr = {
   "PropertSelectorDrawer.options.reset.label": "Réinitialiser la sélection",
   "PropertSelectorDrawer.tabLabel": "Propriétés",
   "PropertyTypeErrors.title": "Les valeurs suivantes n'existent pas pour la propriété <b>%{propertyTypeLabel}</b> dans <b>%{objectTypeLabel}</b>",
+  "RedirectCountdownTimer.redirectMessage": "Cette page redirigera automatiquement vers %{redirectTarget} dans %{secondsRemaining}s",
   "ReduceMenuSwitch.open.false": "Reduire le menu pour profiter de l'espace de travail",
   "ReduceMenuSwitch.open.true": "Déplier le menu",
   "RefetchEntitiesButton.refetch": "Recharger les données des objets visibles",
@@ -51554,12 +52125,58 @@ const fr = {
   "RoomAffectationsList.EmptyList": "Il n'y a personne d'affectée à cet espace",
   "RoomAffectationsList.title": "Personnes affectées aux espaces",
   "RoomAffectationsOnlyList.title": "Personnes affectées aux espaces",
+  "RoomBookingCalendar.available": "Disponible",
+  "RoomBookingCalendar.book": "Réserver",
+  "RoomBookingCalendar.bookRoomTitle": "Réserver une salle de réunion",
+  "RoomBookingCalendar.booked": "Réservé",
+  "RoomBookingCalendar.bookingTitle": "Réserver cette salle de réunion",
+  "RoomBookingCalendar.cancel": "Annuler",
+  "RoomBookingCalendar.clickToBook": "Cliquer pour réserver le %{day} à %{time}",
+  "RoomBookingCalendar.dateTime": "Date et heure",
+  "RoomBookingCalendar.description": "Description (optionnelle)",
+  "RoomBookingCalendar.endTime": "Heure de fin",
+  "RoomBookingCalendar.past": "Passé",
+  "RoomBookingCalendar.pastDay": "Impossible de réserver : %{day} est déjà passé",
+  "RoomBookingCalendar.pastTime": "Impossible de réserver : l'heure %{time} est déjà passée",
+  "RoomBookingCalendar.refreshTooltip": "Actualiser le calendrier",
+  "RoomBookingCalendar.slotBooked": "Ce créneau est déjà réservé",
+  "RoomBookingCalendar.startTime": "Heure de début",
+  "RoomBookingCalendar.subject": "Objet de la réunion",
+  "RoomBookingCalendar.thisWeek": "Cette semaine",
+  "RoomBookingCalendar.time": "Heure",
+  "RoomBookingCalendar.unavailable": "Indisponible ou passé",
+  "RoomCalendarDrawer.calendarTitle": "Calendrier des réservations",
+  "RoomCalendarDrawer.cancelled": "Annulé",
+  "RoomCalendarDrawer.errorFetchingEvents": "Erreur lors du chargement des réservations",
+  "RoomCalendarDrawer.noUpcomingEvents": "Aucune réservation à venir",
+  "RoomCalendarDrawer.ongoing": "En cours",
+  "RoomCalendarDrawer.refreshTooltip": "Actualiser le calendrier",
+  "RoomCalendarDrawer.today": "Aujourd'hui",
+  "RoomCalendarDrawer.tomorrow": "Demain",
+  "RoomCalendarDrawer.tooltipDate": "Date",
+  "RoomCalendarDrawer.tooltipLocation": "Lieu",
+  "RoomCalendarDrawer.tooltipOrganizedBy": "Organisé par",
+  "RoomCalendarDrawer.tooltipTime": "Horaire",
+  "RoomCalendarDrawer.upcomingEventsSummary": "%{count} réservation(s) à venir",
   "RoomCard.buttons.edit.false": "Modifier les propriétés de l'espace",
   "RoomCard.buttons.edit.true": "Arrêter la modification",
+  "RoomCard.tabs.calendar": "Calendrier",
+  "RoomCard.tabs.calendar.help": "Afficher le calendrier des réservations de l'espace",
+  "RoomCard.tabs.info.help": "Afficher les informations détaillées de l'espace",
   "RoomCard.tabs.inventory": "Inventaire",
+  "RoomCard.tabs.inventory.help": "Afficher l'inventaire et les équipements de l'espace",
   "RoomCard.tabs.people": "Affectations",
+  "RoomCard.tabs.people.help": "Afficher les personnes affectées à cet espace",
   "RoomCard.tabs.room": "Espace",
   "RoomCardSelectDimensions.needSave": "Merci de sauvegarder ou d'annuler vos changements avant de pouvoir modifier les calques d'analyses de cet espace",
+  "RoomDataQualityOrganizationToRoom.headerBuilding": "Bâtiment",
+  "RoomDataQualityOrganizationToRoom.headerDirection": "Direction",
+  "RoomDataQualityOrganizationToRoom.headerFloor": "Étage",
+  "RoomDataQualityOrganizationToRoom.headerReason": "Raison ?",
+  "RoomDataQualityOrganizationToRoom.headerService": "Service",
+  "RoomDataQualityOrganizationToRoom.headerSpace": "Espace",
+  "RoomDataQualityOrganizationToRoom.reasonDirectionHasParent": "L'organisation %{organizationName} est utilisée comme direction mais possède une mère",
+  "RoomDataQualityOrganizationToRoom.reasonNoDirection": "L'organisation %{organizationName} n'a pas de direction et est associée à un espace",
   "RoomFullName.noName": "Espace sans nom",
   "RoomGraphHandler.buttons.generateGraph.description": "Générer le graphe d'orientation permet de calculer les nœuds par lesquels la recherche de chemin peut trouver les espaces et le mobilier. Si l'espace d'origine peut être sélectionné, le graphe a déjà été généré.",
   "RoomGraphHandler.buttons.generateGraph.label": "Générer le graphe d'orientation",
@@ -51569,6 +52186,7 @@ const fr = {
   "RoomGraphHandler.icons.displayNodes.description": "Afficher les chemins dans les pièces",
   "RoomGraphHandler.icons.enablePathfinding.description": "Activer le tracé du chemin depuis l'espace source avec la forme sous la souris",
   "RoomGraphHandler.rooms.origin": "Espace d'origine",
+  "RoomLabels.capacity.suffix": "p.",
   "RoomMapFilter.Empty": "Il n'y a aucun type d'espace associé aux espaces, vous pouvez en ajouter en modifiant un espace et en y ajoutant associant un type, puis vous pourrez contrôler leur affichage depuis cette séction",
   "RoomSegmentRoomsList.title": "Les espaces attachés à ce segment",
   "RoomTooltip.roomWorkplaceAffectations": "Affectations des postes de travail",
@@ -51577,6 +52195,7 @@ const fr = {
   "RoomTypeGroupLabel.exclude.tooltip": "Le groupe de typologie d'espace exclue les types d'espaces associés",
   "RoomTypeGroupMapFilter.Empty": "Il n'y a aucun groupe de type d'espace associé aux espaces via les type d'espaces, vous pouvez en ajouter en modifiant un groupe de type d'espace et en y ajoutant associant un type d'espace, puis vous pourrez contrôler leur affichage depuis cette section",
   "RoomTypeGroupToRoomTypeLabel.exclude.tooltip": "La typologie d'espace est exclue",
+  "RoomTypeGroupsMapFilterZone.tabs_options": "Options",
   "RoomWorkplaceList.EmptyList": "Il n'y a aucun poste de travail dans cet espace",
   "SearchFieldString.searchEmpty.help.false": "Rechercher des éléments vide ou sans valeur",
   "SearchFieldString.searchEmpty.help.true": "Réactiver la recherche standard",
@@ -51592,6 +52211,7 @@ const fr = {
   "SelectDimensionTypeNavigationLayoutIcon.select": "Sélectionner ce type de calque pour la navigation",
   "SelectDimensionTypeNavigationLayoutIcon.unselect": "Retirer la navigation par calque d'analyse et revenir à la navigation par espaces",
   "ShapeTextAnchorDrawer.empty": "Merci de sélectionner une forme compatible afin de déplacer le texte d'affichage",
+  "SharingcloudSyncOperationLabel.title": "Syncronisation Sharingcloud",
   "ShowEntityDrawer.title.listItem": "Voir les informations pour %{determinant.defined} dans la barre latérale",
   "ShowEntityDrawer.title.show": "Voir %{determinant.defined}",
   "SingleNodeQuery.refetch": "Recharger les données",
@@ -51616,9 +52236,12 @@ const fr = {
   "TableSelectionAllCheckbox.checked.true": "Tout déselectionner",
   "TableSelectionAllCheckbox.help": "Sélectionner ou déselectionner toutes les lignes (incluant celles qui ne sont pas visibles dans la liste paginée)",
   "TableView.options": "Options",
+  "TalentsoftImportLabel.title": "Import Talentsoft",
   "TenantOperations.agpm-import-hr-file.label": "Import du fichier RH (STILOG)",
   "TenantOperations.egis-import-hr-file.label": "Import Fichier RH",
   "TenantOperations.essilor-import-hr-file.label": "Import Fichier RH",
+  "TenantOperations.ms-user-sync-thea.description": "Synchronise les utilisateurs depuis Microsoft",
+  "TenantOperations.ms-user-sync-thea.label": "Synchronisation des utilisateurs Microsoft",
   "TenantOperations.sephora-sync-sap-success-factors.label": "Synchronisation MSC",
   "TenantOperations.st-grenoble-import-hr-file.label": "Import du fichier RH",
   "TenantSearchBar.input.ariaLabel": "Rechercher des entreprises",
@@ -51627,23 +52250,37 @@ const fr = {
   "TextAreaImporter.errors.title": "Les erreurs rencontrés pendant l'import",
   "TextAreaImporter.help": "Utilisez la tabulation entre chaque colonne en incluant le nom de chaque colonne dans la première ligne ou coller directement depuis excel",
   "TextAreaImporter.textarea.placeholder": "Copier et coller vos colonnes depuis excel avec le titre pour permettre de retrouver les propriétés à mettre à jour",
+  "TheaMSUserSyncOperation.description": "Synchronisez les utilisateurs Microsoft 365 avec les collaborateurs Surfy. Les collaborateurs manquants sont créés automatiquement à partir de leur adresse e-mail.",
+  "TheaMSUserSyncOperation.refresh": "Synchroniser les utilisateurs Microsoft",
+  "TheaMSUserSyncOperation.title": "Synchronisation des utilisateurs Microsoft",
   "ThemeModeSwitchMenuItem.dark.help": "Utiliser le mode lumineux permet de travailler avec un fond blanc",
   "ThemeModeSwitchMenuItem.dark.label": "Passer en mode lumineux",
   "ThemeModeSwitchMenuItem.light.help": "Utiliser le mode sombre permet de travailler avec des couleurs sombre en fond pour moins se fatiguer les yeux",
   "ThemeModeSwitchMenuItem.light.label": "Passer en mode sombre",
+  "TimeSlot.clickToBook": "Cliquer pour réserver le %{day} à %{time}",
+  "TimeSlot.pastDay": "Impossible de réserver : %{day} est déjà passé",
+  "TimeSlot.pastTime": "Impossible de réserver : l'heure %{time} est déjà passée",
+  "TimeSlot.slotBooked": "Ce créneau est déjà réservé",
   "ToggleAllOpenInfoState.false": "Ouvrir tous les détails et indicateurs",
   "ToggleAllOpenInfoState.true": "Fermer tous les détails et indicateurs",
   "ToggleCopilotEnable.help.false": "Activer Surfy Copilot pour permettre la reconnaissance automatique des portes",
   "ToggleCopilotEnable.help.true": "Désactiver Surfy Copilot et revenir en modélisation manuelle",
   "ToggleCopilotEnable.label.false": "Activer Surfy Copilot",
   "ToggleCopilotEnable.label.true": "Désactiver Surfy Copilot",
+  "ToggleEnableFloorLabels.help": "Afficher le nom de l'étage sur le côté de la structure dans la vue 3D",
+  "ToggleEnableFloorLabels.label": "Afficher les étiquettes des étages",
   "ToggleEnableMissingFloors.help": "Afficher les étages fantômes pour les étages manquantes entre l'étage de niveau 0 et l'étage la plus haute en fonction des niveaux des vraies étages",
   "ToggleEnableMissingFloors.label": "Afficher les étages fantômes",
+  "ToggleEnableRoomLabels.help": "Afficher les noms des espaces sous forme d'étiquettes sur la vue 3D",
+  "ToggleEnableRoomLabels.label": "Afficher les étiquettes des espaces",
   "ToggleWorkplaceFreeConditionTypeIconButton.and": "Voir les postes de travail libre pour au moins un des jours demandés",
   "ToggleWorkplaceFreeConditionTypeIconButton.or": "Voir les postes de travail libre pour tous les jours demandés",
   "ToggleZbreSyncCheckbox.help": "La synchronisation permet de colorier les espaces et les postes de travail en fonction des capteurs placés dans Z#bre",
   "ToggleZbreSyncCheckbox.label": "Synchroniser avec les occupations temps réel dans Z#bre",
   "TopLevelOrganizationFilter.Empty": "Il n'y a aucune organization de associés aux espaces, vous pouvez en ajouter en modifiant un espace et en l'associant à une organiation, puis vous pourrez contrôler leur affichage depuis cette séction",
+  "UserNotPartOfCompanyAdminCanCreate.createButton": "Créer l'association",
+  "UserNotPartOfCompanyAdminCanCreate.message": "Vous n'êtes pas associé à l'entreprise %{companyId}.",
+  "WeekNavigation.thisWeek": "Cette semaine",
   "WorkCanvas.Options.AddItemTypePointOption.help.disable": "Arrêter la création de sommets",
   "WorkCanvas.Options.AddItemTypePointOption.help.enable": "Ajouter un sommet permet de retravailler avec plus de precisions une forme",
   "WorkCanvas.Options.AddItemTypePointOption.label.disable": "Arrêter l'ajout d'un sommet",
@@ -51855,6 +52492,7 @@ const fr = {
   "WorkCanvasToggleOptionHelp.shortcut": "Raccourci clavier : <b>%{shortcut}</b>",
   "WorkingLocationToggle.locations.OFFICE": "Bureau",
   "WorkingLocationToggle.locations.REMOTE": "Télétravail",
+  "WorkpaceBookingAverageByWeekDay.excludeWeekends": "Exclure les week-ends",
   "WorkpaceBookingAverageByWeekDay.labels.bar": "Nombre de réservations",
   "WorkpaceBookingAverageByWeekDay.labels.line": "Moyenne par semaine",
   "WorkpaceBookingAverageByWeekDay.title": "Réservation des postes de travail par jour de la semaine",
@@ -51862,7 +52500,8 @@ const fr = {
   "WorkpaceBookingCountByDate.title": "Réservations des postes de travail par date",
   "WorkpaceBookingCountByDimensionAndDate.labels.line": "Nombre de personnes",
   "WorkpaceBookingCountByDimensionAndDate.title": "Nombre de réservations par date et par quartier",
-  "WorkpaceBookingPeopleCountByDate.labels.line": "Nombre de personnes",
+  "WorkpaceBookingPeopleCountByBuildingByDate.title": "Nombre de personnes ayant réservé par bâtiment et par date",
+  "WorkpaceBookingPeopleCountByDate.labelsLine": "Nombre de personnes",
   "WorkpaceBookingPeopleCountByDate.title": "Nombre de personnes ayant réservé par date",
   "WorkpaceBookingPeopleCountByDimensionAndDate.labels.line": "Nombre de personnes",
   "WorkpaceBookingPeopleCountByDimensionAndDate.title": "Nombre de personnes ayant réservé par date et par quartier",
@@ -51891,6 +52530,11 @@ const fr = {
   "WorkplaceList.workplace.transit": "Ce poste de travail est partagé",
   "WorkplaceList.zoomOnWorkplace": "Zoomer sur le poste de travail sur le plan",
   "WorkplaceNestedList.title": "Personnes affectées aux postes de travail",
+  "WorkplaceOccupancyRateByDimension.labels.occupancyRate": "Taux d'occupation (%)",
+  "WorkplaceOccupancyRateByDimension.title": "Taux d'occupation par quartier",
+  "WorkplaceOccupancyRateByDimension.tooltip.bookedWorkplaces": "Postes réservés: %{count}",
+  "WorkplaceOccupancyRateByDimension.tooltip.occupancyRate": "Taux d'occupation: %{rate}",
+  "WorkplaceOccupancyRateByDimension.tooltip.totalBookableWorkplaces": "Total postes réservables: %{count}",
   "WorkplacePhysicalInventory.title": "Inventaire physique du poste de travail",
   "WorkplaceTransitWithAffectations.headers.affectedPeople": "Personnes affectées",
   "WorkplaceTypeCarbonFootprintCount.help": "L'empreinte carbone est la quantité de gaz à effet de serre émise par les objets du mobilier de ce type de poste de travail",
@@ -51916,6 +52560,7 @@ const fr = {
   "WrongRoomsTable.table.headers.newRoom": "Nouvel espace",
   "WrongRoomsTable.table.headers.objectType": "Nature",
   "WrongRoomsTable.table.headers.type": "Type",
+  "ZbreSyncOperationLabel.title": "Syncronisation Z#bre",
   "booking.snackbar.delete.room": "La réservation à l'espace %{roomName} a été annulée pour la période %{slot}",
   "booking.snackbar.delete.workplace": "La réservation au poste de travail %{workplaceName} a été annulée pour la période %{slot}",
   "calculatedProperties.properties.carbonFootprint.description": "L'empreinte carbone est le nombre de CO2 émis",
@@ -52040,6 +52685,8 @@ const fr = {
   "layoutViewSets.costCenter.label": "Refacturation",
   "layoutViewSets.flex.description": "L'occupation flex des espaces",
   "layoutViewSets.flex.label": "Flex",
+  "layoutViewSets.meetingRooms.description": "Analyser les groupes de types d'espaces pour les salles de réunion",
+  "layoutViewSets.meetingRooms.label": "Salles de réunion",
   "layoutViewSets.organizationLevel0.description": "L'occupation par direction",
   "layoutViewSets.organizationLevel0.label": "Directions",
   "layoutViewSets.organizationLevel1.description": "L'occupation par services",
@@ -52129,6 +52776,8 @@ const fr = {
   "models.AuthentificationConnection.determinants.defined": "les connections d'authentification",
   "models.AuthentificationConnection.determinants.undefined": "des connections d'authentification",
   "models.AuthentificationConnection.plural": "Connections d'authentification",
+  "models.AuthentificationConnection.properties.domaines.description": "Domaines de messagerie autorisés pour cette connexion d'authentification",
+  "models.AuthentificationConnection.properties.domaines.label": "Domaines autorisés",
   "models.AuthentificationConnection.properties.id.label": "Identifiant de la connection d'authentification",
   "models.AuthentificationConnection.properties.name.description": "Nom de la connexion d'authentification",
   "models.AuthentificationConnection.properties.name.label": "Nom",
@@ -52226,6 +52875,8 @@ const fr = {
   "models.Building.reports.buildingItems.help": "Rapport de l'inventaire du bâtiment",
   "models.Building.reports.buildingPeople.fileName": "Personnes",
   "models.Building.reports.buildingPeople.help": "Rapport des personnes affectées dans le bâtiment",
+  "models.Building.reports.dimensionTypes.fileName": "Types de dimension",
+  "models.Building.reports.dimensionTypes.help": "Rapport des types de dimension avec les données de reporting du bâtiment",
   "models.Building.reports.organizations.fileName": "Organisations",
   "models.Building.reports.organizations.help": "Rapport des organisations du bâtiment",
   "models.Building.reports.workplaceAffectations.fileName": "Affectations de poste de travail",
@@ -52316,6 +52967,8 @@ const fr = {
   "models.Company.properties.proxyImages.label": "Images proxy",
   "models.Company.properties.workingDaysCount.description": "Le nombre de jours de travail par semaine peut être 5 pour les jours ouvrés, 6 incluant le samedi et 7 incluant le dimanche",
   "models.Company.properties.workingDaysCount.label": "Nombre de jours de travail par semaine",
+  "models.Company.properties.workplaceBookingConfirmationRange.description": "Plage horaire pendant laquelle les utilisateurs peuvent confirmer leurs réservations de postes de travail. Format: HH:MM-HH:MM (ex: 06:00-10:30). Ne rien mettre dans ce champ pour ne pas activer la confirmation de réservation de poste de travail",
+  "models.Company.properties.workplaceBookingConfirmationRange.label": "Plage de confirmation de réservation de poste de travail",
   "models.Company.reports.export-all-duplicate.fileName": "duplication",
   "models.Company.reports.export-all-duplicate.help": "Sauvegarder les données de l'entreprise pour faire une copie de la plateforme",
   "models.Company.reports.export-all.fileName": "sauvegarde",
@@ -52440,6 +53093,10 @@ const fr = {
   "models.Dimension.properties.crowdedForBookingRate.label": "Taux de surcharge pour la réservation",
   "models.Dimension.properties.name.description": "Utile pour différencier le calque parmis d'autres",
   "models.Dimension.properties.name.label": "Nom du calque d'analyse",
+  "models.Dimension.properties.peopleCount.description": "Le nombre d'affectations au calque directement",
+  "models.Dimension.properties.peopleCount.label": "Nombre d'affectations directe au calque",
+  "models.Dimension.properties.totalPeopleCount.description": "Le nombre total d'affectations au calque directement, soit via un poste de travail, soit via un espace",
+  "models.Dimension.properties.totalPeopleCount.label": "Nombre total d'affectations au calque",
   "models.Dimension.properties.value.description": "La valeur peut être utilisé pour associé le calque à une valeur numérique afin de pouvoir réaliser des statisques analytiques",
   "models.Dimension.properties.value.label": "Valeur numérique",
   "models.Dimension.properties.workplacesBookableOnlyViaDimension.description": "Lorsque activé, les postes de travail de cette dimension ne peuvent être réservés que via une assignation directe à la dimension, et sont exclus des réservations par étage",
@@ -52463,6 +53120,8 @@ const fr = {
   "models.DimensionFloor.determinants.defined": "les associations du calque d'analyse aux étages",
   "models.DimensionFloor.determinants.undefined": "des associations du calque d'analyse aux étages",
   "models.DimensionFloor.plural": "Associations calque d'analyse aux étages",
+  "models.DimensionFloor.properties.bookableWorkplacesCount.description": "Le nombre de postes de travail réservables pour cet étage",
+  "models.DimensionFloor.properties.bookableWorkplacesCount.label": "Nombre de postes de travail réservables dans l'étage",
   "models.DimensionFloor.properties.id.label": "Identifiant de l'association calque d'analyse aux étages",
   "models.DimensionFloor.properties.peopleCount.description": "Le nombre de personnes affectées, soit directement affécté aux espaces, soit à travers un poste de travail pour cet étage",
   "models.DimensionFloor.properties.peopleCount.label": "Nombre d'affectations",
@@ -52916,8 +53575,6 @@ const fr = {
   "models.Organization.singular": "organisation",
   "models.Organization.views.dq-organization-hierarchy.help": "Détecter les organisations qui ne sont pas dans la bonne hiérarchie",
   "models.Organization.views.dq-organization-hierarchy.label": "Erreurs sur la hiérarchie des organisations",
-  "models.Organization.views.dq-organization-to-room.help": "Détecter les associations d'espaces avec les organisations qui ne sont pas valides",
-  "models.Organization.views.dq-organization-to-room.label": "Erreurs sur les organisations des espaces",
   "models.Organization.views.hierarchy.help": "Voir la hiérarchie des organisations",
   "models.Organization.views.hierarchy.label": "Hiérarchie",
   "models.OrganizationBuilding.description": "Une association organisation aux bâtiments permet de définir les organisations responsables de chaque bâtiment",
@@ -53248,6 +53905,8 @@ const fr = {
   "models.Room.views.dq-capacity-gt-0.label": "Les espaces qui ont une capacité hors assises différent de 0",
   "models.Room.views.dq-no-point.help": "Les espaces qui ont 0, 1 ou 2 points et qui devraient donc avoir une superficie nulle",
   "models.Room.views.dq-no-point.label": "Les espaces sans assez de points",
+  "models.Room.views.dq-organization-to-room.help": "Détecter les associations d'espaces avec les organisations qui ne sont pas valides",
+  "models.Room.views.dq-organization-to-room.label": "Erreurs sur les organisations des espaces",
   "models.Room.views.dq-uniq-name.help": "Propose des noms pour les espaces qui n'ont pas de nom ou le nom n'est pas unique dans un même étage",
   "models.Room.views.dq-uniq-name.label": "Proposition de noms pour les espaces",
   "models.Room.views.map.help": "Voir le plan de l'espace %{name}",
@@ -53539,11 +54198,31 @@ const fr = {
   "models.WorkplaceTypeItemType.properties.zIndex.description": "L'indice de hauteur permet de définir l'ordre d'affichage des types d'objets, plus l'indice est grand plus l'objet sera au dessus des autres",
   "models.WorkplaceTypeItemType.properties.zIndex.label": "Indice de hauteur",
   "models.WorkplaceTypeItemType.singular": "type d'objet dans type de poste de travail",
+  "models.WorkplaceUsageType.description": "Le type d'usage de poste de travail permet de catégoriser les postes de travail selon leur utilisation avec les termes de l'entreprise et de les visualiser avec des couleurs différentes sur les plans",
+  "models.WorkplaceUsageType.determinant.defined": "le type d'usage de poste de travail",
+  "models.WorkplaceUsageType.determinant.undefined": "un type d'usage de poste de travail",
+  "models.WorkplaceUsageType.determinants.defined": "les types d'usage de poste de travail",
+  "models.WorkplaceUsageType.determinants.undefined": "des types d'usage de poste de travail",
+  "models.WorkplaceUsageType.plural": "types d'usage de poste de travail",
+  "models.WorkplaceUsageType.properties.color.description": "Couleur utilisée pour différencier les postes de travail de ce type sur les plans et la cartographie",
+  "models.WorkplaceUsageType.properties.color.label": "Couleur",
+  "models.WorkplaceUsageType.properties.description.description": "Description détaillée expliquant l'utilisation et la finalité de ce type d'usage",
+  "models.WorkplaceUsageType.properties.description.label": "Description",
+  "models.WorkplaceUsageType.properties.id.description": "Identifiant unique du type d'usage",
+  "models.WorkplaceUsageType.properties.id.label": "Identifiant du type d'usage de poste de travail",
+  "models.WorkplaceUsageType.properties.name.description": "Nom du type d'usage qui permet de l'identifier",
+  "models.WorkplaceUsageType.properties.name.label": "Nom",
+  "models.WorkplaceUsageType.singular": "type d'usage de poste de travail",
+  "useOpenMeetingRoomBookingDrawer.bookRoom": "Réserver",
+  "useOpenMeetingRoomBookingDrawer.noRoomName": "Nom d'espace non défini",
+  "useOpenMeetingRoomBookingDrawer.roomBooking": "Réservation d'espace",
   "validation.regex.company.name": "Le nom de l'entreprise doit être en minuscules, contenir uniquement des lettres, des chiffres et des tirets",
+  "validation.regex.company.workplaceBookingConfirmationRange": "La plage de confirmation de réservation doit être au format HH:MM-HH:MM (ex: 06:00-10:30)",
   "validation.regex.default": "La valeur doit correspondre au format : %{pattern}",
   "weight.gram": "Gramme",
   "weight.kilogram": "Kilogramme",
-  "workplaceTypeLayoutFilter.Empty": "Il n'y a aucun poste de travail pour le moment dans les espaces, vous pouvez en ajouter en modifiant un espace et en y ajoutant des postes de travail, puis vous pourrez contrôler leur affichage depuis cette séction"
+  "workplaceTypeLayoutFilter.Empty": "Il n'y a aucun poste de travail pour le moment dans les espaces, vous pouvez en ajouter en modifiant un espace et en y ajoutant des postes de travail, puis vous pourrez contrôler leur affichage depuis cette séction",
+  "workplaceUsageTypeLayoutFilter.Empty": "Il n'y a aucun type d'usage de poste de travail attribué pour le moment. Vous pouvez en attribuer en modifiant les postes de travail, puis vous pourrez contrôler leur affichage depuis cette section"
 };
 const en = {
   "AccordionSearchParamFilterDates.title": "Dates",
@@ -53575,6 +54254,7 @@ const en = {
   "AuthenticationButton.connections.auth0.label": "Surfy Account",
   "AuthenticationButton.connections.google-oauth2.help": "Log in with your Google account",
   "AuthenticationButton.connections.google-oauth2.label": "Google",
+  "AuthentificationConnectionNotFoundForEmail.message": "No authentication connection was found for the domain %{domain}",
   "AutocompleteAddress.autocomplete.placeholder": "Find your address here",
   "AvatarPersonDrawer.help": "See more information about %{name}",
   "BelongsToImportHelp.title": "Object types associated with %{objectTypeLabel} sorted by available import keys",
@@ -53596,6 +54276,20 @@ const en = {
   "BookedBuildingWorkplaceList.noWorkplaceBooked": "No reserved workstations",
   "BookedBuildingWorkplaceList.viewBookedWorkplaceOnMap": "View the workstation %{workplaceName} which is reserved on the plan",
   "BookedBuildingWorkplaceList.workplaceIsBooked": "Your workstation is reserved",
+  "BookingDialog.attendeesHelper": "Select collaborators or press Enter to add an email address.",
+  "BookingDialog.attendeesInvalidEmail": "Enter a valid email address to add it to the meeting.",
+  "BookingDialog.attendeesLabel": "Invite attendees",
+  "BookingDialog.attendeesNoOptions": "No collaborators found. Press Enter to add the email.",
+  "BookingDialog.attendeesPlaceholder": "Type a name or email...",
+  "BookingDialog.attendeesTypeToSearch": "Type at least 2 characters to search collaborators.",
+  "BookingDialog.book": "Book",
+  "BookingDialog.bookRoomTitle": "Book Meeting Room",
+  "BookingDialog.cancel": "Cancel",
+  "BookingDialog.description": "Description (optional)",
+  "BookingDialog.enableTeamsMeeting": "Add a Teams meeting link",
+  "BookingDialog.endTime": "End Time",
+  "BookingDialog.startTime": "Start Time",
+  "BookingDialog.subject": "Meeting Subject",
   "BookingMap.errors.noBuildingInFilter": "Please select a building and floor in the filter to view reservations",
   "BookingMap.errors.noDateInFilter": "Please choose a date in the filter to see reservations",
   "BookingMap.errors.noFloorInFilter": "Please select a floor in the filter to see reservations",
@@ -53673,11 +54367,21 @@ const en = {
   "BuildingInventory.title": "Building inventory %{building.name}",
   "BuildingLabel.scenario": "This building is a scenario of the building %{name}",
   "BuildingMenuItem.menu.scenario": "Scenarios ( %{count} )",
+  "BuildingMissingStructuredAddress.message": "The address for building '%{buildingName}' is missing structured components (street, city, etc.)",
+  "BuildingMissingStructuredAddressAction.message": "The address for building '%{buildingName}' is missing structured components (street, city, etc.)",
   "BuildingReports.items.sheets.merged": "Merger",
   "BuildingReports.items.sheets.physicals": "Physical Objects",
   "BuildingReports.items.sheets.virtuals": "Virtual Objects",
+  "BuildingSelect.options.all": "All Buildings",
+  "BuildingSelectionView.selectBuildingToViewMap": "Choose a building to view the map layout",
   "CalculatedPropertiesAccordions.kpi": "Indicators",
   "CalculatedPropertiesAccordions.mesures": "Measures",
+  "CalendarHeader.bookingTitle": "Book this meeting room",
+  "CalendarHeader.refreshTooltip": "Refresh calendar",
+  "CalendarScopeConsentButton.alertMessage": "To book meeting rooms, you need to authorize Surfy to access your Microsoft Calendar. Click the button below to grant the necessary permissions",
+  "CalendarScopeConsentButton.alertTitle": "Authorization Required to Book Rooms",
+  "CalendarScopeConsentButton.buttonHelp": "You will be redirected to Microsoft to grant permissions",
+  "CalendarScopeConsentButton.buttonLabel": "Authorize Calendar Access",
   "CalibrateLayoutDrawer.options.inputs.scale.label": "Scale factor",
   "CalibrateLayoutDrawer.options.inputs.step.label": "Translation value",
   "CalibrateLayoutDrawer.options.inputs.translate.x.label": "The X axis",
@@ -53703,16 +54407,18 @@ const en = {
   "CheckAllDefaultViews.shortcuts.title": "Configuration shortcuts",
   "CheckAllDefaultViews.shortcuts.views.buttonsHelp": "Check this view for all types of entities",
   "CheckAllDefaultViews.shortcuts.views.title": "Shortcuts for default interface views",
+  "CloneEntitiesFailed.cloneFailed": "Failed to clone",
   "CollapseSwitchButton.help.false": "See the detail",
   "CollapseSwitchButton.help.true": "Hide the detail",
   "CollapseWorkplaceAffectationList.title": "Assign this person for the following days only",
   "CollapseWorkplaceAffectationList.updateAffectationDay.false": "Remove this person's assignment %{day}",
   "CollapseWorkplaceAffectationList.updateAffectationDay.true": "Affect this person %{day}",
   "ColorBox.NoColorHelp": "Select a color via the palette",
+  "ColorizeRoomTypeOption.useRoomTypeColor": "Use room type color",
   "CompanyDashboard.dashboards.area": "Surfaces Dashboard",
   "CompanyDashboard.dashboards.workplace": "Desktop Dashboard",
   "CompanyDuplicateDownload.deleteReporting.help": "Delete calculated reporting data, you have to recalculate the reporting data to have it again, this option allows cleaning of the reporting data",
-  "CompanyDuplicateDownload.deleteReporting.progress": "Deleting reporting data from {{objectType}}: {{current}}/{{total}}",
+  "CompanyDuplicateDownload.deleteReporting.progress": "Deleting reporting data from %{objectType} : %{current} / %{total}",
   "CompanyDuplicateDownload.deleteReporting.title": "Delete calculated data from reporting entities",
   "CompanyDuplicateDownload.downloadJson.help": "This JSON file allows the platform to be duplicated if all data quality rules are respected",
   "CompanyDuplicateDownload.downloadJson.title": "Download the company data JSON file",
@@ -53751,8 +54457,10 @@ const en = {
   "CubySaveAsImageButton.label": "Save Image",
   "CubyWallModeSelect.label": "Partition display",
   "CubyWallModeSelect.options.cuby": "Cuby",
+  "CubyWallModeSelect.options.cubyRealitySelected": "Cuby with selection in reality",
   "CubyWallModeSelect.options.half": "Half partitions",
   "CubyWallModeSelect.options.no": "None",
+  "CubyWallModeSelect.options.noWallSelected": "Without partitions, with selection",
   "CubyWallModeSelect.options.reality": "Reality",
   "CustomEntityBreadcrumbWorkCanvasLayoutViewLabel.help": "You can change the view via the plan menus",
   "CustomEntityBreadcrumbWorkCanvasLayoutViewLabel.viewSet": "Vision",
@@ -53774,12 +54482,19 @@ const en = {
   "DataQualityIndex.generalInfo.title": "General Information",
   "DataQualityIndex.subtitle": "List all data quality reports organized by entity",
   "DataQualityIndex.title": "Data Quality Reports List",
+  "DataQualityIssueRow.elementCountPlural": "elements",
+  "DataQualityIssueRow.elementCountSingular": "element",
+  "DataQualityIssueRow.viewButton": "View",
+  "DataQualityIssuesHeader.summary": "%{totalIssues} data quality issue%{totalIssuesPlural} found across %{viewsCount} check%{viewsCountPlural}. Please resolve the following issues before continuing:",
+  "DataQualityIssuesHeader.title": "Data quality issues detected",
   "DataQualityTable.numberOfLines": "Number of lines",
+  "DateDimensionFilter.excludeWeekends": "Exclude weekends",
   "DateDimensionSelect.options.day": "Day",
   "DateDimensionSelect.options.month": "Month",
   "DateDimensionSelect.options.quarter": "Quarter",
   "DateDimensionSelect.options.week": "Week",
   "DateDimensionSelect.options.year": "Year",
+  "DayHeaders.time": "Time",
   "DeleteDialog.cancel.help": "Undelete",
   "DeleteDialog.cancel.label": "Cancel",
   "DeleteDialog.content": "You are about to delete <b>%{determinant.undefined}</b> , this action is not reversible and may have impacts, are you sure you want to perform this action?",
@@ -53794,6 +54509,8 @@ const en = {
   "DeleteMultipleDialog.title": "Remove %{determinants.undefined}",
   "DeleteMultipleEntities.help": "Delete selected %{determinants.defined}",
   "DeleteWorkplace.help": "Delete workstation: [ %{name} ], assignments will also be deleted",
+  "DeskBookingConfirmationButton.bookingConfirmed": "The booking has been confirmed",
+  "DeskBookingConfirmationButton.confirm": "Confirm",
   "DimensionBuildingPlanningLabel.youAreAssigned": "You are assigned to %{dimensionTypeName} %{dimensionName}",
   "DimensionInfo.carbonFootprint.help": "The carbon footprint is %{value} of CO2 emitted for %{dimensionType} %{dimension}",
   "DimensionInfo.dimensionPeopleCount.help": "There are %{value} affected person(s) in %{dimensionType} %{dimension}",
@@ -53928,6 +54645,8 @@ const en = {
   "DisplayWorkplaceTexts.workplaceOrganizationLevel0.label": "Direction",
   "DisplayWorkplaceTexts.workplaceOrganizationLevel1.help": "Display or not the services of the workstations on the plan",
   "DisplayWorkplaceTexts.workplaceOrganizationLevel1.label": "Service",
+  "DisplayWorkplaceTexts.workplaceUsageType.help": "Display or hide the type of workstation use on the plan",
+  "DisplayWorkplaceTexts.workplaceUsageType.label": "Type of use",
   "DownloadBuildingImagesAccordion.accordion.title": "Export images of the whole building",
   "DownloadBuildingImagesAccordion.buttons.download.help": "Download all the plans of all the floors of the building in png format in a zip, the waiting time for this extraction can be long",
   "DownloadBuildingImagesAccordion.buttons.download.label": "Download ZIP",
@@ -53974,12 +54693,15 @@ const en = {
   "EntityHasManyProperties.associations.reporting": "Reporting associations for %{determinant.defined}",
   "EntityHasManyProperties.associations.security": "Security associations for %{determinant.defined}",
   "EntityPropertyTypesMandatoryNotRespected.title": "The following properties are required",
+  "EntityPropertyTypesRegexValidationNotRespected.title": "The following properties do not respect regex validation",
   "ErrorImpossibleToFindTheEntities.text": "Cannot find the %{determinants.defined}",
   "ErrorImpossibleToFindTheEntity.text": "It is not possible to find %{determinant.defined} wanted",
   "ErrorTextZone.reload": "Redo the operation",
+  "Errors.AUTHENTIFICATION_CONNECTION_NOT_FOUND_FOR_EMAIL": "No authentication connection was found for the domain %{domain}",
   "Errors.networkError": "Connection or network issues have been detected, please wait and try again in a few seconds",
   "ExportQueryNodeToFileButton.help.list": "Download in excel %{determinants.defined}",
   "FieldTypeAddress.edit": "Change address",
+  "FieldTypeAddress.geocode": "Geocode the address to extract the structured components (street, city, postal code, country)",
   "FieldTypeAddress.remove": "Delete address",
   "FieldTypeColor.NoColorHelp": "Select a color",
   "FieldTypeColor.NotHexMatchError": "The field does not respect the hexadecimal format of a color",
@@ -53999,6 +54721,16 @@ const en = {
   "FieldTypePassword.icons.copy": "Copy the contents of the password to the clipboard",
   "FieldTypePassword.icons.generate": "Generate a unique password",
   "FileDropZone.dropZone": "Move and drag the import file into this area or click in the area to select your file",
+  "FixAddressButton.button.fix": "Correct the address",
+  "FixAddressButton.button.help": "Automatically correct the address of ' %{buildingName} ' using Google Maps geocoding",
+  "FixAddressButton.error.message": "❌ Fix failed: %{error}",
+  "FixAddressButton.errors.noStructuredAddress": "Unable to extract structured address from geocoding",
+  "FixAddressButton.errors.unknown": "Unknown error",
+  "FixAddressButton.errors.updateFailed": "Update failed in Surfy",
+  "FixAddressButton.progress.geocoding": "Retrieving the structured address via Google Maps...",
+  "FixAddressButton.progress.refreshing": "Refreshing view...",
+  "FixAddressButton.progress.updating": "Building update in Surfy...",
+  "FixAddressButton.success.message": "✅ The address of ' %{buildingName} ' has been successfully corrected",
   "FloorMap.tabs.all": "See all selected shapes in list",
   "FloorMap.tabs.analyticsDimensionTypes": "Color the spaces on the plan according to the <b>analysis layers</b>",
   "FloorMap.tabs.building": "View building information",
@@ -54019,6 +54751,7 @@ const en = {
   "FloorMap.tabs.users": "Color workstations versus people",
   "FloorMap.tabs.workplaceTypes": "Display on the map the <b> workstations </b> by type of workstation",
   "FloorMap.tabs.workplaceUsage": "Color the workstations according to their <b>state</b>",
+  "FloorMap.tabs.workplaceUsageTypes": "Color the workstations according to their <b>type of use</b>",
   "FloorMap.tabs.workplaces": "Details of the <b> workstations </b> selected",
   "FloorSelector.focus": "Select only this floor",
   "FloorSelector.selectAll.false": "Select all floors",
@@ -54043,6 +54776,8 @@ const en = {
   "GlobalSearch.Start": "You can search for example people, spaces, workstations, objects or other entities, the search will start from the 2nd character",
   "GlobalSearch.close.help": "Clear search",
   "GlobalSearchIncludeScenarios.label": "Include scenarios in search",
+  "GoogleApiWrapper.configurationNotFound": "Google Maps API key is not configured",
+  "GoogleApiWrapper.loadingFailed": "Failed to load Google Maps API",
   "HalfDayWorkingLocationToggle.all.help": "The hours of the day are from 8:00 a.m. to 7:00 p.m.",
   "HalfDayWorkingLocationToggle.all.label": "All day",
   "HalfDayWorkingLocationToggle.am.help": "Morning hours are from 8:00 a.m. to 1:30 p.m.",
@@ -54099,7 +54834,8 @@ const en = {
   "ImportUpdateOption.help": "Update selected objects",
   "ImportUpdateOption.label": "Update",
   "IndexContextMenuItem.navigation": "Navigation",
-  "InfiniteScrollLoader.loader.completed": "All %{count} items have been loaded",
+  "InfiniteScrollLoader.loader.completed_plural": "All %{count} items have been loaded",
+  "InfiniteScrollLoader.loader.completed_singular": "1 item has been loaded",
   "InfiniteScrollLoader.loader.loadMore": "Load more ( %{displayed} / %{total} )",
   "InfiniteScrollLoader.loader.loading": "Loading...",
   "InfiniteScrollLoader.loader.scrollForMore": "Scroll down to see more...",
@@ -54133,11 +54869,22 @@ const en = {
   "LayoutFiltersTabOpenToggleIcon.open.true": "Close the map menu to optimize the space of the map display",
   "LayoutFiltersTabZone.collapse.help": "The menu is closed, you can open it by clicking on the first icon to open it and see the details of the elements of the plan",
   "LayoutViewSwitch.title": "Changing the vision of the plan",
+  "Legend.available": "Available",
+  "Legend.booked": "Booked",
+  "Legend.past": "Past",
   "LegendSelector.labels.default": "Default caption",
   "LegendSelector.title": "Select legend",
   "Level1OrganizationFilter.Empty": "There is no organization associated with spaces, you can add more by modifying a space and associating it with an organization, then you can control their display from this section",
   "ListRefetchButton.refetch": "Reload visible object data",
   "LoadingSvgCircle.pleaseWait": "Please wait while syncing",
+  "LoginLanguageSelector.ariaLabel": "Change the language to %{language}",
+  "LoginLanguageSelector.languageNameDe": "German",
+  "LoginLanguageSelector.languageNameEn": "English",
+  "LoginLanguageSelector.languageNameEs": "Spanish",
+  "LoginLanguageSelector.languageNameFr": "French",
+  "LoginLanguageSelector.languageNameIt": "Italian",
+  "LoginLanguageSelector.languageNameNl": "Dutch",
+  "LoginLanguageSelector.tooltip": "Change the language to %{language}",
   "LoginView.connections.AzureADv2.help": "Connect with your Microsoft professional account via Office 365",
   "LoginView.connections.AzureADv2.label": "Office 365",
   "LoginView.connections.Username-Password-Authentication.help": "Log in with your Surfy account",
@@ -54151,6 +54898,53 @@ const en = {
   "LoginView.texts.description": "Access Surfy",
   "LoginView.texts.title": "Log in",
   "LogoutMenuLink.logout": "Sign out",
+  "LuccaSynchronizationOperationLabel.title": "Lucca Synchronization",
+  "MSGraphConsentPrompt.buttonHelp": "You must be a Microsoft 365 administrator to approve this consent.",
+  "MSGraphConsentPrompt.buttonLabel": "Grant required Microsoft scope",
+  "MSGraphConsentPrompt.title": "Additional Microsoft permission required",
+  "MSPlacesBuildingsSync.restart.button": "Restart building synchronization",
+  "MSPlacesConsentButton.alert.message": "Microsoft Places sync requires additional permissions. Click the button below to allow read and write access to Places data.",
+  "MSPlacesConsentButton.alert.title": "Additional permissions required",
+  "MSPlacesConsentButton.button.help": "Grant permission to create and edit buildings in Microsoft Places",
+  "MSPlacesConsentButton.button.label": "Allow Microsoft Places access",
+  "MSPlacesFloorsSync.restart.button": "Restart floor synchronization",
+  "MSPlacesRoomsBasicSync.headers.capacity": "Capacity",
+  "MSPlacesRoomsBasicSync.headers.displayName": "Display name",
+  "MSPlacesRoomsBasicSync.headers.email": "E-mail",
+  "MSPlacesRoomsBasicSync.headers.floorNumber": "Floor number",
+  "MSPlacesRoomsBasicSync.restart.button": "Restart room synchronization",
+  "MSPlacesRoomsDisplayNameSyncTab.alertDescription": "This operation compares the display names of Microsoft Places rooms with their Surfy counterparts.",
+  "MSPlacesRoomsDisplayNameSyncTab.alertMatchingDescription": "Rooms are matched by their booking email address.",
+  "MSPlacesRoomsDisplayNameSyncTab.alertMatchingTitle": "Matching logic:",
+  "MSPlacesRoomsDisplayNameSyncTab.alertNoteDescription": "Only the display name is updated in Microsoft 365 when a difference is detected.",
+  "MSPlacesRoomsDisplayNameSyncTab.alertNoteTitle": "Important:",
+  "MSPlacesRoomsDisplayNameSyncTab.alertTitle": "Synchronize Microsoft display names",
+  "MSPlacesRoomsDisplayNameSyncTab.consentButtonHelp": "You must be a Microsoft 365 administrator to approve this consent.",
+  "MSPlacesRoomsDisplayNameSyncTab.consentButtonLabel": "Grant required Microsoft scope",
+  "MSPlacesRoomsDisplayNameSyncTab.consentMessage": "MS Places room display name synchronization needs these scopes to continue: %{scopes}.",
+  "MSPlacesRoomsDisplayNameSyncTab.consentTitle": "Additional Microsoft permission required",
+  "MSPlacesRoomsDisplayNameSyncTab.restartButton": "Restart synchronization",
+  "MSPlacesRoomsEmailSyncTab.alert.description1": "This operation synchronizes the email addresses of Microsoft Places rooms to the bookingEmail property of Surfy rooms. The synchronization is one-way: MS Places → Surfy.",
+  "MSPlacesRoomsEmailSyncTab.alert.matchingDescription": "Rooms are associated by displayName and floor (parentId). Rooms must already be linked or have matching names to be synced.",
+  "MSPlacesRoomsEmailSyncTab.alert.matchingTitle": "Correspondence:",
+  "MSPlacesRoomsEmailSyncTab.alert.noteDescription": "Only rooms with different emails will be displayed for updates. Rooms with matching emails are displayed in &quot;No changes.&quot;",
+  "MSPlacesRoomsEmailSyncTab.alert.noteTitle": "Noticed :",
+  "MSPlacesRoomsEmailSyncTab.alert.title": "Synchronize MS Places emails to Surfy",
+  "MSPlacesRoomsEmailSyncTab.restart.button": "Restart email synchronization",
+  "MSPlacesRoomsSync.displayNameSyncTabLabel": "Sync display names",
+  "MSPlacesRoomsSync.doneChipLabel": "Done",
+  "MSPlacesRoomsSync.emailSyncTabLabel": "Sync emails",
+  "MSPlacesRoomsSync.syncTabLabel": "Sync rooms",
+  "MSPlacesSync.restart.button": "Restart all sync",
+  "MSPlacesSync.steps.rooms.suffix": "(Meeting rooms only)",
+  "MSPlacesSyncOperationLabel.title": "Microsoft Places sync",
+  "MSUsersConsentButton.alertMessage": "To propose user synchronization, Surfy needs permission to read Microsoft 365 users. Click the button below to grant the required scope.",
+  "MSUsersConsentButton.alertTitle": "Authorize Microsoft Graph users access",
+  "MSUsersConsentButton.buttonHelp": "You will be redirected to Microsoft to grant directory access",
+  "MSUsersConsentButton.buttonLabel": "Authorize Microsoft users sync",
+  "MSUsersSync.description": "Synchronize Microsoft 365 users with Surfy collaborators. Missing collaborators are created automatically based on their email address.",
+  "MSUsersSync.refresh": "Sync Microsoft users",
+  "MSUsersSync.title": "Microsoft users synchronization",
   "MapFilterNodeIsAllSelected.help": "All the selection below will be loaded, even if new objects are created",
   "MapFilterNodeToggleAll.action.false": "unselect all",
   "MapFilterNodeToggleAll.action.true": "Select all",
@@ -54168,10 +54962,64 @@ const en = {
   "MapLegendWorkplace.title": "Workplace",
   "MapLegendWorkplace.workplaces.flex": "The workstations are in flex",
   "MapLegendWorkplace.workplaces.free": "Workstations are free",
-  "MeetingRoomCard.locateSpace": "Locate the space on the plan",
+  "MeetingRoomBookAction.bookRoom": "Book",
+  "MeetingRoomCard.availability.available": "Available in this slot",
+  "MeetingRoomCard.availability.searching": "Searching for availabilities...",
+  "MeetingRoomCard.bookingEmailAvailable": "Booking address available: %{email}",
+  "MeetingRoomCard.calendarFor": "Calendar for",
+  "MeetingRoomCard.locateSpace": "Locate space on map",
+  "MeetingRoomCard.noRoomName": "Undefined space name",
+  "MeetingRoomCard.roomCalendar": "Space calendar",
   "MeetingRoomCard.seats.1": "%{count} seat",
   "MeetingRoomCard.seats.n": "%{count} seats",
-  "MeetingRoomCard.viewPicture": "See the photo from space",
+  "MeetingRoomCard.table.actions": "Actions",
+  "MeetingRoomCard.table.building": "Building",
+  "MeetingRoomCard.table.capacity": "Capacity",
+  "MeetingRoomCard.table.floor": "Floor",
+  "MeetingRoomCard.table.name": "Name",
+  "MeetingRoomCard.table.type": "Type",
+  "MeetingRoomCard.tabs.buildingMap": "Building on map",
+  "MeetingRoomCard.tabs.cards": "Cards view",
+  "MeetingRoomCard.tabs.table": "Table view",
+  "MeetingRoomCard.viewCalendar": "View booking calendar",
+  "MeetingRoomCard.viewPicture": "View space photo",
+  "MeetingRoomCardSeats.seatsMultiple": "%{count} seats",
+  "MeetingRoomCardSeats.seatsSingle": "%{count} seat",
+  "MeetingRoomDirectBookAction.bookingInProgressHelp": "Booking in progress...",
+  "MeetingRoomDirectBookAction.bookingSuccess": "Booking confirmed for %{roomName} (%{timeRange})",
+  "MeetingRoomDirectBookAction.directBook": "Quick booking",
+  "MeetingRoomDirectBookAction.missingSelection": "Select a day and time range first",
+  "MeetingRoomDirectBookAction.noRoomName": "Undefined space name",
+  "MeetingRoomDirectBookAction.roomUnavailable": "The room is not available for this time range",
+  "MeetingRoomDirectBookAction.schedulesLoading": "Checking availability…",
+  "MeetingRooms.clearFilters": "Clear filters",
+  "MeetingRooms.loadingAvailabilityTooltip": "Loading booking availabilities...",
+  "MeetingRooms.noMeetingRoomsConfigured": "You don't have meeting rooms configured via space typology groups",
+  "MeetingRooms.noRoomsFound": "No room matches your search, you can clear your search filters",
+  "MeetingRooms.selectionCount": "%{count} rooms in selection",
+  "MeetingRoomsBuildingCuby.noRoomsFound": "No room matches your search, you can clear your search filters",
+  "MeetingRoomsBuildingMapFloorSpaceAction.ariaLabel": "Open the floor space slider",
+  "MeetingRoomsBuildingMapFloorSpaceAction.tooltip": "Adjust the floor space scale",
+  "MeetingRoomsBuildingMapResetViewAction.ariaLabel": "Reset the camera to the initial zenith view",
+  "MeetingRoomsBuildingMapResetViewAction.tooltip": "Reset to the initial zenith view",
+  "MeetingRoomsBuildingMapWallModeToggle.ariaLabel": "Toggle the wall display mode",
+  "MeetingRoomsBuildingMapWallModeToggle.tooltip.noWallSelected": "Hide walls for a clear floor view",
+  "MeetingRoomsBuildingMapWallModeToggle.tooltip.reality": "Show walls in reality mode",
+  "MeetingRoomsDayFilters.dayTooltip": "Filter to available meeting rooms on %{day}",
+  "MeetingRoomsDayFilters.nextTooltip": "Next days",
+  "MeetingRoomsDayFilters.previousTooltip": "Previous days",
+  "MeetingRoomsDayFilters.title": "Days",
+  "MeetingRoomsFilterOption.multiSelectTooltip": "Add or remove this option from the selection",
+  "MeetingRoomsFilterOption.singleSelectAriaLabel": "Select only this option",
+  "MeetingRoomsFilterOption.singleSelectTooltip": "Show only this option",
+  "MeetingRoomsHourRangeSelector.rangeEndValueLabel": "End: %{time}",
+  "MeetingRoomsHourRangeSelector.rangeSelectionTooltip": "Drag the handles to set the time range used to search for bookings.",
+  "MeetingRoomsHourRangeSelector.rangeStartValueLabel": "Start: %{time}",
+  "MeetingRoomsRefreshSelectionButton.refreshSelection": "Refresh selection",
+  "MeetingRoomsSearchFilter.searchLabel": "Search",
+  "MeetingRoomsSearchFilter.searchPlaceholder": "Search for a room...",
+  "MicrosoftUsersSyncTitle.title": "Microsoft users sync",
+  "MoffiSyncOperationLabel.title": "Moffi synchronization",
   "MouvementMatrixImport.errors.noSheet": "Could not find excel sheet with name %{name} [ %{objectTypeName} ]",
   "MovePersonFromWorkplaceToRoomListButtonItem.help": "This option requires refreshing the page to see the result, it is possible to chain several movements without refreshing",
   "MovePersonFromWorkplaceToRoomListButtonItem.label": "Move this person from their workstation to the workstation space",
@@ -54194,12 +55042,13 @@ const en = {
   "NumberOfPeoplePerRowField.label": "Number of people per line for space assignments",
   "ObjectTypeImportKeys.title": "The keys available to reconcile %{determinants.undefined} in the order of your choice, if you wish to modify one of the key properties you must use the identifier as key",
   "ObjectTypeImportScalarProperties.help": "Copy to clipboard",
-  "Operations.exportZbre.label": "Export Z # bre",
-  "Operations.lucca-sync.label": "Lucca Synchronization",
-  "Operations.moffi-sync.label": "Moffi synchronization",
-  "Operations.sharingcloud-sync.label": "Sharingcloud synchronization",
-  "Operations.talentsoft-import.label": "Talentsoft import",
-  "Operations.zbre-sync.label": "Z#ber synchronization",
+  "OperationHelpMarkdown.help.documentation": "Documentation",
+  "OrganizationDataQualityHierarchy.headerChildOrganizations": "Daughter organizations",
+  "OrganizationDataQualityHierarchy.headerOrganization": "Organization",
+  "OrganizationDataQualityHierarchy.headerParentOrganization": "parent organization",
+  "OrganizationDataQualityHierarchy.headerPlatform": "Platform",
+  "OrganizationDataQualityHierarchy.headerReason": "Reason ?",
+  "OrganizationDataQualityHierarchy.reasonHasParentAndChildren": "The organization has children and also a mother",
   "OrganizationFloorMapFilter.TooltipTitle.notSelected": "Select %{organization} to color the spaces on the plan",
   "OrganizationFloorMapFilter.TooltipTitle.selected": "Deselecting %{organization} will remove colors from the plan",
   "OrganizationFloorMapFilter.tooltip.false": "Deselect all organizations below",
@@ -54213,6 +55062,21 @@ const en = {
   "ParkingBookIcon.parking.booked": "Your parking is reserved",
   "ParkingBookIcon.parking.release.help": "Release parking reservation",
   "ParkingBookIcon.parking.viewOnMap": "See the reserved parking on the map",
+  "PartnerEntityCreateTab.button.help": "Create in %{partnerName}",
+  "PartnerEntityCreateTab.button.label": "Create in %{partnerName}",
+  "PartnerEntityCreateTab.progress.syncing": "Synchronizing %{label} ...",
+  "PartnerEntityDeleteTab.button.help": "Delete in %{partnerName}",
+  "PartnerEntityDeleteTab.button.label": "Delete in %{partnerName}",
+  "PartnerEntityDeleteTab.progress.syncing": "Synchronizing %{label} ...",
+  "PartnerEntitySync.errors.title": "Synchronization errors ( %{count} )",
+  "PartnerEntitySync.tabs.create": "Create",
+  "PartnerEntitySync.tabs.delete": "Remove",
+  "PartnerEntitySync.tabs.noChange": "No change",
+  "PartnerEntitySync.tabs.update": "Update",
+  "PartnerEntityUpdateTab.button.help": "Update in %{partnerName}",
+  "PartnerEntityUpdateTab.button.label": "Update in %{partnerName}",
+  "PartnerEntityUpdateTab.headers.type": "Type",
+  "PartnerEntityUpdateTab.progress.syncing": "Synchronizing %{label} ...",
   "PersonAffectationsPanel.description": "The person's assignments",
   "PersonAffectationsPanel.title": "assignments",
   "PersonBadgePanel.description": "Miscellaneous information about the person",
@@ -54264,6 +55128,7 @@ const en = {
   "PropertSelectorDrawer.options.reset.label": "Reset selection",
   "PropertSelectorDrawer.tabLabel": "Properties",
   "PropertyTypeErrors.title": "The following values do not exist for property <b>%{propertyTypeLabel}</b> in <b>%{objectTypeLabel}</b>",
+  "RedirectCountdownTimer.redirectMessage": "This page will automatically redirect to %{redirectTarget} in %{secondsRemaining}s",
   "ReduceMenuSwitch.open.false": "Collapse the menu to take advantage of the workspace",
   "ReduceMenuSwitch.open.true": "Expand menu",
   "RefetchEntitiesButton.refetch": "Reload visible object data",
@@ -54314,12 +55179,58 @@ const en = {
   "RoomAffectationsList.EmptyList": "There is no one assigned to this space",
   "RoomAffectationsList.title": "People assigned to spaces",
   "RoomAffectationsOnlyList.title": "People assigned to spaces",
+  "RoomBookingCalendar.available": "Available",
+  "RoomBookingCalendar.book": "Book",
+  "RoomBookingCalendar.bookRoomTitle": "Book Meeting Room",
+  "RoomBookingCalendar.booked": "Booked",
+  "RoomBookingCalendar.bookingTitle": "Book this meeting room",
+  "RoomBookingCalendar.cancel": "Cancel",
+  "RoomBookingCalendar.clickToBook": "Click to book on %{day} at %{time}",
+  "RoomBookingCalendar.dateTime": "Date & Time",
+  "RoomBookingCalendar.description": "Description (optional)",
+  "RoomBookingCalendar.endTime": "End Time",
+  "RoomBookingCalendar.past": "Past",
+  "RoomBookingCalendar.pastDay": "Cannot book: %{day} has already passed",
+  "RoomBookingCalendar.pastTime": "Cannot book: %{time} has already passed",
+  "RoomBookingCalendar.refreshTooltip": "Refresh calendar",
+  "RoomBookingCalendar.slotBooked": "This time slot is already booked",
+  "RoomBookingCalendar.startTime": "Start Time",
+  "RoomBookingCalendar.subject": "Meeting Subject",
+  "RoomBookingCalendar.thisWeek": "This Week",
+  "RoomBookingCalendar.time": "Time",
+  "RoomBookingCalendar.unavailable": "Unavailable or Past",
+  "RoomCalendarDrawer.calendarTitle": "Booking calendar",
+  "RoomCalendarDrawer.cancelled": "Cancelled",
+  "RoomCalendarDrawer.errorFetchingEvents": "Error loading bookings",
+  "RoomCalendarDrawer.noUpcomingEvents": "No upcoming bookings",
+  "RoomCalendarDrawer.ongoing": "Ongoing",
+  "RoomCalendarDrawer.refreshTooltip": "Refresh calendar",
+  "RoomCalendarDrawer.today": "Today",
+  "RoomCalendarDrawer.tomorrow": "Tomorrow",
+  "RoomCalendarDrawer.tooltipDate": "Date",
+  "RoomCalendarDrawer.tooltipLocation": "Location",
+  "RoomCalendarDrawer.tooltipOrganizedBy": "Organized by",
+  "RoomCalendarDrawer.tooltipTime": "Time",
+  "RoomCalendarDrawer.upcomingEventsSummary": "%{count} upcoming booking(s)",
   "RoomCard.buttons.edit.false": "Edit space properties",
   "RoomCard.buttons.edit.true": "Stop editing",
+  "RoomCard.tabs.calendar": "Calendar",
+  "RoomCard.tabs.calendar.help": "View the space reservation calendar",
+  "RoomCard.tabs.info.help": "Show detailed space information",
   "RoomCard.tabs.inventory": "Inventory",
+  "RoomCard.tabs.inventory.help": "View space inventory and equipment",
   "RoomCard.tabs.people": "assignments",
+  "RoomCard.tabs.people.help": "Show people assigned to this space",
   "RoomCard.tabs.room": "Space",
   "RoomCardSelectDimensions.needSave": "Please save or cancel your changes before you can modify the analysis layers of this space",
+  "RoomDataQualityOrganizationToRoom.headerBuilding": "Building",
+  "RoomDataQualityOrganizationToRoom.headerDirection": "Direction",
+  "RoomDataQualityOrganizationToRoom.headerFloor": "Floor",
+  "RoomDataQualityOrganizationToRoom.headerReason": "Reason ?",
+  "RoomDataQualityOrganizationToRoom.headerService": "Service",
+  "RoomDataQualityOrganizationToRoom.headerSpace": "Space",
+  "RoomDataQualityOrganizationToRoom.reasonDirectionHasParent": "The organization %{organizationName} is used as a department but has a parent organization.",
+  "RoomDataQualityOrganizationToRoom.reasonNoDirection": "The organization %{organizationName} has no direction and is associated with a space",
   "RoomFullName.noName": "unnamed space",
   "RoomGraphHandler.buttons.generateGraph.description": "Generating the orientation graph calculates the nodes through which the path search can find spaces and furniture. If the original space can be selected, the graph has already been generated.",
   "RoomGraphHandler.buttons.generateGraph.label": "Generate the orientation graph",
@@ -54329,6 +55240,7 @@ const en = {
   "RoomGraphHandler.icons.displayNodes.description": "Show paths in rooms",
   "RoomGraphHandler.icons.enablePathfinding.description": "Enable path tracing from source space with shape under mouse",
   "RoomGraphHandler.rooms.origin": "Original space",
+  "RoomLabels.capacity.suffix": "p.",
   "RoomMapFilter.Empty": "There is no space type associated with spaces, you can add more by modifying a space and adding an associated type to it, then you can control their display from this section",
   "RoomSegmentRoomsList.title": "The spaces attached to this segment",
   "RoomTooltip.roomWorkplaceAffectations": "Workstation assignments",
@@ -54337,6 +55249,7 @@ const en = {
   "RoomTypeGroupLabel.exclude.tooltip": "The space typology group excludes associated space types",
   "RoomTypeGroupMapFilter.Empty": "There is no space type group associated with spaces via space types, you can add more by editing a space type group and adding associating a space type to it, then you can control their display from this section",
   "RoomTypeGroupToRoomTypeLabel.exclude.tooltip": "The space typology is excluded",
+  "RoomTypeGroupsMapFilterZone.tabs_options": "Options",
   "RoomWorkplaceList.EmptyList": "There are no workstations in this space",
   "SearchFieldString.searchEmpty.help.false": "Search for empty or worthless elements",
   "SearchFieldString.searchEmpty.help.true": "Re-enable standard search",
@@ -54352,6 +55265,7 @@ const en = {
   "SelectDimensionTypeNavigationLayoutIcon.select": "Select this layer type for navigation",
   "SelectDimensionTypeNavigationLayoutIcon.unselect": "Remove navigation by analysis layer and return to navigation by spaces",
   "ShapeTextAnchorDrawer.empty": "Please select a compatible shape to move the display text",
+  "SharingcloudSyncOperationLabel.title": "Sharingcloud synchronization",
   "ShowEntityDrawer.title.listItem": "See information for %{determinant.defined} in the sidebar",
   "ShowEntityDrawer.title.show": "See %{determinant.defined}",
   "SingleNodeQuery.refetch": "Reload data",
@@ -54376,9 +55290,12 @@ const en = {
   "TableSelectionAllCheckbox.checked.true": "Unselect all",
   "TableSelectionAllCheckbox.help": "Select or deselect all rows (including those not visible in the paginated list)",
   "TableView.options": "options",
+  "TalentsoftImportLabel.title": "Talentsoft import",
   "TenantOperations.agpm-import-hr-file.label": "Import of the HR file (STILOG)",
   "TenantOperations.egis-import-hr-file.label": "Import HR File",
   "TenantOperations.essilor-import-hr-file.label": "Import HR File",
+  "TenantOperations.ms-user-sync-thea.description": "Synchronizes users from Microsoft",
+  "TenantOperations.ms-user-sync-thea.label": "Microsoft User Synchronization",
   "TenantOperations.sephora-sync-sap-success-factors.label": "MSC synchronization",
   "TenantOperations.st-grenoble-import-hr-file.label": "Importing the HR file",
   "TenantSearchBar.input.ariaLabel": "Search for companies",
@@ -54387,23 +55304,37 @@ const en = {
   "TextAreaImporter.errors.title": "Errors encountered during import",
   "TextAreaImporter.help": "Use tab between each column by including the name of each column in the first row or paste directly from excel",
   "TextAreaImporter.textarea.placeholder": "Copy and paste your columns from Excel with the title to find the properties to update",
+  "TheaMSUserSyncOperation.description": "Synchronize Microsoft 365 users with Surfy collaborators. Missing collaborators are created automatically based on their email address.",
+  "TheaMSUserSyncOperation.refresh": "Sync Microsoft users",
+  "TheaMSUserSyncOperation.title": "Microsoft users synchronization",
   "ThemeModeSwitchMenuItem.dark.help": "Using the bright mode allows you to work with a white background",
   "ThemeModeSwitchMenuItem.dark.label": "Switch to light mode",
   "ThemeModeSwitchMenuItem.light.help": "Using dark mode allows you to work with dark colors in the background for less eye strain",
   "ThemeModeSwitchMenuItem.light.label": "Switch to dark mode",
+  "TimeSlot.clickToBook": "Click to book on %{day} at %{time}",
+  "TimeSlot.pastDay": "Cannot book: %{day} has already passed",
+  "TimeSlot.pastTime": "Cannot book: %{time} has already passed",
+  "TimeSlot.slotBooked": "This time slot is already booked",
   "ToggleAllOpenInfoState.false": "Open all details and indicators",
   "ToggleAllOpenInfoState.true": "Close all details and indicators",
   "ToggleCopilotEnable.help.false": "Enable Surfy Copilot to enable automatic door recognition",
   "ToggleCopilotEnable.help.true": "Disable Surfy Copilot and return to manual modeling",
   "ToggleCopilotEnable.label.false": "Activate Surfy Copilot",
   "ToggleCopilotEnable.label.true": "Disable Surfy Copilot",
+  "ToggleEnableFloorLabels.help": "Display the floor name on the side of the structure in the 3D view",
+  "ToggleEnableFloorLabels.label": "Show floor labels",
   "ToggleEnableMissingFloors.help": "Show ghost floors for missing floors between level 0 floor and highest floor based on real floor levels",
   "ToggleEnableMissingFloors.label": "Show ghost floors",
+  "ToggleEnableRoomLabels.help": "Display the names of the spaces as labels on the 3D view",
+  "ToggleEnableRoomLabels.label": "Show space labels",
   "ToggleWorkplaceFreeConditionTypeIconButton.and": "See free workstations for at least one of the requested days",
   "ToggleWorkplaceFreeConditionTypeIconButton.or": "See free workstations for all requested days",
   "ToggleZbreSyncCheckbox.help": "Synchronization allows spaces and workstations to be colored according to the sensors placed in Z#ber",
   "ToggleZbreSyncCheckbox.label": "Synchronize with real-time occupations in Z#ber",
   "TopLevelOrganizationFilter.Empty": "There is no organization associated with spaces, you can add more by modifying a space and associating it with an organization, then you can control their display from this section",
+  "UserNotPartOfCompanyAdminCanCreate.createButton": "Create the association",
+  "UserNotPartOfCompanyAdminCanCreate.message": "You are not associated with the company %{companyId}.",
+  "WeekNavigation.thisWeek": "This Week",
   "WorkCanvas.Options.AddItemTypePointOption.help.disable": "Stop creating summits",
   "WorkCanvas.Options.AddItemTypePointOption.help.enable": "Adding a vertex makes it possible to rework with more precision a form",
   "WorkCanvas.Options.AddItemTypePointOption.label.disable": "Stop adding a vertex",
@@ -54615,17 +55546,19 @@ const en = {
   "WorkCanvasToggleOptionHelp.shortcut": "Keyboard shortcut: <b>%{shortcut}</b>",
   "WorkingLocationToggle.locations.OFFICE": "Office",
   "WorkingLocationToggle.locations.REMOTE": "Remote",
-  "WorkpaceBookingAverageByWeekDay.labels.bar": "Number of reservations",
+  "WorkpaceBookingAverageByWeekDay.excludeWeekends": "Exclude weekends",
+  "WorkpaceBookingAverageByWeekDay.labels.bar": "Number of bookings",
   "WorkpaceBookingAverageByWeekDay.labels.line": "Average per week",
-  "WorkpaceBookingAverageByWeekDay.title": "Reservation of workstations by day of the week",
-  "WorkpaceBookingCountByDate.labels.line": "Number of reservations",
-  "WorkpaceBookingCountByDate.title": "Workstation reservations by date",
+  "WorkpaceBookingAverageByWeekDay.title": "Workplace Bookings by Day of the Week",
+  "WorkpaceBookingCountByDate.labels.line": "Number of bookings",
+  "WorkpaceBookingCountByDate.title": "Workplace Bookings by Date",
   "WorkpaceBookingCountByDimensionAndDate.labels.line": "Number of people",
-  "WorkpaceBookingCountByDimensionAndDate.title": "Number of reservations by date and by territory",
-  "WorkpaceBookingPeopleCountByDate.labels.line": "Number of people",
-  "WorkpaceBookingPeopleCountByDate.title": "Number of people who booked by date",
+  "WorkpaceBookingCountByDimensionAndDate.title": "Number of Bookings by Date and District",
+  "WorkpaceBookingPeopleCountByBuildingByDate.title": "Number of People Who Booked by Building and Date",
+  "WorkpaceBookingPeopleCountByDate.labelsLine": "Number of people",
+  "WorkpaceBookingPeopleCountByDate.title": "Number of People Who Booked by Date",
   "WorkpaceBookingPeopleCountByDimensionAndDate.labels.line": "Number of people",
-  "WorkpaceBookingPeopleCountByDimensionAndDate.title": "Number of people who booked by date and by territory",
+  "WorkpaceBookingPeopleCountByDimensionAndDate.title": "Number of People Who Booked by Date and District",
   "WorkplaceAffectationDailyTitle.all": "This person is affected every day",
   "WorkplaceAffectationDailyTitle.calculatedRate": "The average assignment rate is %{calculatedRate}",
   "WorkplaceAffectationDailyTitle.person.affected": "This person is assigned %{daysText}",
@@ -54651,6 +55584,11 @@ const en = {
   "WorkplaceList.workplace.transit": "This workstation is shared",
   "WorkplaceList.zoomOnWorkplace": "Zoom to the workstation on the plan",
   "WorkplaceNestedList.title": "People assigned to workstations",
+  "WorkplaceOccupancyRateByDimension.labels.occupancyRate": "Occupancy Rate (%)",
+  "WorkplaceOccupancyRateByDimension.title": "Occupancy Rate by Dimension",
+  "WorkplaceOccupancyRateByDimension.tooltip.bookedWorkplaces": "Booked Workplaces: %{count}",
+  "WorkplaceOccupancyRateByDimension.tooltip.occupancyRate": "Occupancy Rate: %{rate}",
+  "WorkplaceOccupancyRateByDimension.tooltip.totalBookableWorkplaces": "Total Bookable Workplaces: %{count}",
   "WorkplacePhysicalInventory.title": "Physical inventory of the workstation",
   "WorkplaceTransitWithAffectations.headers.affectedPeople": "Affected People",
   "WorkplaceTypeCarbonFootprintCount.help": "The carbon footprint is the amount of greenhouse gases emitted by the furniture objects of this type of workstation",
@@ -54676,6 +55614,7 @@ const en = {
   "WrongRoomsTable.table.headers.newRoom": "new space",
   "WrongRoomsTable.table.headers.objectType": "Nature",
   "WrongRoomsTable.table.headers.type": "Type",
+  "ZbreSyncOperationLabel.title": "Z#ber synchronization",
   "booking.snackbar.delete.room": "The reservation at space %{roomName} has been cancelled for the period %{slot}",
   "booking.snackbar.delete.workplace": "The reservation at workstation %{workplaceName} has been cancelled for the period %{slot}",
   "calculatedProperties.properties.carbonFootprint.description": "The carbon footprint is the number of CO2 emitted",
@@ -54800,6 +55739,8 @@ const en = {
   "layoutViewSets.costCenter.label": "Re-invoicing",
   "layoutViewSets.flex.description": "Flexible occupancy of spaces",
   "layoutViewSets.flex.label": "Flex",
+  "layoutViewSets.meetingRooms.description": "Analyze space type groups for meeting rooms",
+  "layoutViewSets.meetingRooms.label": "Meeting rooms",
   "layoutViewSets.organizationLevel0.description": "Occupation by direction",
   "layoutViewSets.organizationLevel0.label": "Directions",
   "layoutViewSets.organizationLevel1.description": "Occupancy by services",
@@ -54889,6 +55830,8 @@ const en = {
   "models.AuthentificationConnection.determinants.defined": "authentication connections",
   "models.AuthentificationConnection.determinants.undefined": "authentication connections",
   "models.AuthentificationConnection.plural": "Authentication connections",
+  "models.AuthentificationConnection.properties.domaines.description": "Email domains allowed for this authentication connection",
+  "models.AuthentificationConnection.properties.domaines.label": "Authorized domains",
   "models.AuthentificationConnection.properties.id.label": "Authentication connection identifier",
   "models.AuthentificationConnection.properties.name.description": "Authentication connection name",
   "models.AuthentificationConnection.properties.name.label": "Last name",
@@ -54986,6 +55929,8 @@ const en = {
   "models.Building.reports.buildingItems.help": "Building inventory report",
   "models.Building.reports.buildingPeople.fileName": "People",
   "models.Building.reports.buildingPeople.help": "Report of persons affected in the building",
+  "models.Building.reports.dimensionTypes.fileName": "Dimension types",
+  "models.Building.reports.dimensionTypes.help": "Relationship between dimension types and building reporting data",
   "models.Building.reports.organizations.fileName": "Organizations",
   "models.Building.reports.organizations.help": "Building organizations report",
   "models.Building.reports.workplaceAffectations.fileName": "Workstation assignments",
@@ -55076,6 +56021,8 @@ const en = {
   "models.Company.properties.proxyImages.label": "Proxy images",
   "models.Company.properties.workingDaysCount.description": "The number of working days per week can be 5 for working days, 6 including Saturday and 7 including Sunday",
   "models.Company.properties.workingDaysCount.label": "Number of working days per week",
+  "models.Company.properties.workplaceBookingConfirmationRange.description": "Time range during which users can confirm their workstation reservations. Format: HH:MM-HH:MM (e.g., 06:00-10:30). Leave this field blank to disable workstation reservation confirmation.",
+  "models.Company.properties.workplaceBookingConfirmationRange.label": "Workstation booking confirmation window",
   "models.Company.reports.export-all-duplicate.fileName": "duplication",
   "models.Company.reports.export-all-duplicate.help": "Backup company data to make a copy of the platform",
   "models.Company.reports.export-all.fileName": "backup",
@@ -55200,6 +56147,10 @@ const en = {
   "models.Dimension.properties.crowdedForBookingRate.label": "Crowding Rate for Booking",
   "models.Dimension.properties.name.description": "Useful for differentiating the layer among others",
   "models.Dimension.properties.name.label": "Analysis Layer Name",
+  "models.Dimension.properties.peopleCount.description": "The number of assignments directly to the layer",
+  "models.Dimension.properties.peopleCount.label": "Number of direct assignments to the layer",
+  "models.Dimension.properties.totalPeopleCount.description": "The total number of assignments to the layer directly, either via a workstation or via a workspace",
+  "models.Dimension.properties.totalPeopleCount.label": "Total number of assignments to the layer",
   "models.Dimension.properties.value.description": "The value can be used to associate the layer with a numeric value to perform analytical statistics",
   "models.Dimension.properties.value.label": "Numeric Value",
   "models.Dimension.properties.workplacesBookableOnlyViaDimension.description": "When enabled, workplaces in this dimension can only be booked via direct assignment to the dimension, and are excluded from floor-based bookings",
@@ -55223,6 +56174,8 @@ const en = {
   "models.DimensionFloor.determinants.defined": "the associations of the analysis layer to the floors",
   "models.DimensionFloor.determinants.undefined": "associations of the analysis layer to the floors",
   "models.DimensionFloor.plural": "Analysis layer associations to floors",
+  "models.DimensionFloor.properties.bookableWorkplacesCount.description": "The number of reservable workstations for this floor",
+  "models.DimensionFloor.properties.bookableWorkplacesCount.label": "Number of bookable workstations on the floor",
   "models.DimensionFloor.properties.id.label": "Identifier of the analysis layer association to the floors",
   "models.DimensionFloor.properties.peopleCount.description": "The number of people assigned, either directly assigned to spaces, or through a workstation for this floor",
   "models.DimensionFloor.properties.peopleCount.label": "Number of assignments",
@@ -55676,8 +56629,6 @@ const en = {
   "models.Organization.singular": "organization",
   "models.Organization.views.dq-organization-hierarchy.help": "Detect organizations that are not in the correct hierarchy",
   "models.Organization.views.dq-organization-hierarchy.label": "Organization Hierarchy Errors",
-  "models.Organization.views.dq-organization-to-room.help": "Detect space associations with organizations that are not valid",
-  "models.Organization.views.dq-organization-to-room.label": "Errors in the organization of spaces",
   "models.Organization.views.hierarchy.help": "View Organization Hierarchy",
   "models.Organization.views.hierarchy.label": "Hierarchy",
   "models.OrganizationBuilding.description": "An organization-building association allows you to define the organizations responsible for each building",
@@ -56008,6 +56959,8 @@ const en = {
   "models.Room.views.dq-capacity-gt-0.label": "Spaces which have a capacity excluding seats different from 0",
   "models.Room.views.dq-no-point.help": "Spaces that have 0, 1, or 2 points and therefore should have zero area",
   "models.Room.views.dq-no-point.label": "Spaces without enough points",
+  "models.Room.views.dq-organization-to-room.help": "Detect space associations with organizations that are not valid",
+  "models.Room.views.dq-organization-to-room.label": "Errors in the organization of spaces",
   "models.Room.views.dq-uniq-name.help": "Suggests names for spaces that do not have a name or the name is not unique on the same floor",
   "models.Room.views.dq-uniq-name.label": "Proposed names for spaces",
   "models.Room.views.map.help": "View space plan %{name}",
@@ -56299,11 +57252,31 @@ const en = {
   "models.WorkplaceTypeItemType.properties.zIndex.description": "The height index allows you to define the order of display of object types, the larger the index, the more the object will be above the others",
   "models.WorkplaceTypeItemType.properties.zIndex.label": "Height index",
   "models.WorkplaceTypeItemType.singular": "object type in workstation type",
+  "models.WorkplaceUsageType.description": "The workstation usage type allows workstations to be categorized according to their use, using company terminology, and visualized with different colors on the plans.",
+  "models.WorkplaceUsageType.determinant.defined": "the type of workstation use",
+  "models.WorkplaceUsageType.determinant.undefined": "a type of workstation use",
+  "models.WorkplaceUsageType.determinants.defined": "types of workstation use",
+  "models.WorkplaceUsageType.determinants.undefined": "types of workstation use",
+  "models.WorkplaceUsageType.plural": "types of workstation use",
+  "models.WorkplaceUsageType.properties.color.description": "Color used to differentiate workstations of this type on plans and maps",
+  "models.WorkplaceUsageType.properties.color.label": "Color",
+  "models.WorkplaceUsageType.properties.description.description": "Detailed description explaining the use and purpose of this type of use",
+  "models.WorkplaceUsageType.properties.description.label": "Description",
+  "models.WorkplaceUsageType.properties.id.description": "Unique identifier for the type of use",
+  "models.WorkplaceUsageType.properties.id.label": "Workstation usage type identifier",
+  "models.WorkplaceUsageType.properties.name.description": "Name of the type of use that allows it to be identified",
+  "models.WorkplaceUsageType.properties.name.label": "Last name",
+  "models.WorkplaceUsageType.singular": "type of workstation use",
+  "useOpenMeetingRoomBookingDrawer.bookRoom": "Book",
+  "useOpenMeetingRoomBookingDrawer.noRoomName": "Undefined space name",
+  "useOpenMeetingRoomBookingDrawer.roomBooking": "Space booking",
   "validation.regex.company.name": "The company name must be in lowercase, contain only letters, numbers and hyphens",
+  "validation.regex.company.workplaceBookingConfirmationRange": "The booking confirmation window must be in HH:MM-HH:MM format (e.g., 06:00-10:30)",
   "validation.regex.default": "The value must match the format: %{pattern}",
   "weight.gram": "Gram",
   "weight.kilogram": "Kilogram",
-  "workplaceTypeLayoutFilter.Empty": "There are no workstations at the moment in spaces, you can add more by modifying a space and adding workstations to it, then you can control their display from this section"
+  "workplaceTypeLayoutFilter.Empty": "There are no workstations at the moment in spaces, you can add more by modifying a space and adding workstations to it, then you can control their display from this section",
+  "workplaceUsageTypeLayoutFilter.Empty": "No workstation usage types are currently assigned. You can assign them by editing the workstations, and then you can control their display from this section."
 };
 const es = {
   "AccordionSearchParamFilterDates.title": "Fechas",
@@ -56335,6 +57308,7 @@ const es = {
   "AuthenticationButton.connections.auth0.label": "Cuenta Surfy",
   "AuthenticationButton.connections.google-oauth2.help": "Inicia sesión con tu cuenta de Google",
   "AuthenticationButton.connections.google-oauth2.label": "google",
+  "AuthentificationConnectionNotFoundForEmail.message": "No se encontró ninguna conexión de autenticación para el dominio %{domain}",
   "AutocompleteAddress.autocomplete.placeholder": "Encuentra tu dirección aquí",
   "AvatarPersonDrawer.help": "Ver más información sobre %{name}",
   "BelongsToImportHelp.title": "Tipos de objetos asociados con %{objectTypeLabel} ordenados por claves de importación disponibles",
@@ -56356,6 +57330,20 @@ const es = {
   "BookedBuildingWorkplaceList.noWorkplaceBooked": "Sin estación de trabajo reservada",
   "BookedBuildingWorkplaceList.viewBookedWorkplaceOnMap": "Ver la estación de trabajo %{workplaceName} que está reservada en el plan",
   "BookedBuildingWorkplaceList.workplaceIsBooked": "Tu puesto de trabajo está reservado",
+  "BookingDialog.attendeesHelper": "Seleccione colaboradores o pulse Intro para añadir un correo electrónico.",
+  "BookingDialog.attendeesInvalidEmail": "Introduce una dirección de correo electrónico válida para añadirlos a la reunión.",
+  "BookingDialog.attendeesLabel": "Invitar a los participantes",
+  "BookingDialog.attendeesNoOptions": "No se encontraron colaboradores. Pulsa Intro para añadir el correo electrónico.",
+  "BookingDialog.attendeesPlaceholder": "Introduzca un nombre o una dirección de correo electrónico...",
+  "BookingDialog.attendeesTypeToSearch": "Introduce al menos 2 caracteres para buscar colaboradores.",
+  "BookingDialog.book": "Para reservar",
+  "BookingDialog.bookRoomTitle": "Reservar una sala de reuniones",
+  "BookingDialog.cancel": "anular",
+  "BookingDialog.description": "Descripción (opcional)",
+  "BookingDialog.enableTeamsMeeting": "Agrega un enlace de Teams a la reunión",
+  "BookingDialog.endTime": "Fin del tiempo",
+  "BookingDialog.startTime": "Hora de inicio",
+  "BookingDialog.subject": "Propósito de la reunión",
   "BookingMap.errors.noBuildingInFilter": "Por favor seleccione un edificio y piso en el filtro para ver las reservas",
   "BookingMap.errors.noDateInFilter": "Por favor seleccione una fecha en el filtro para ver las reservas",
   "BookingMap.errors.noFloorInFilter": "Por favor seleccione un piso en el filtro para ver las reservas",
@@ -56433,11 +57421,21 @@ const es = {
   "BuildingInventory.title": "Creación de inventario %{building.name}",
   "BuildingLabel.scenario": "Este edificio es un escenario del edificio %{name}",
   "BuildingMenuItem.menu.scenario": "Escenarios ( %{count} )",
+  "BuildingMissingStructuredAddress.message": "A la dirección del edificio ' %{buildingName} ' le faltan componentes estructurados (calle, ciudad, etc.)",
+  "BuildingMissingStructuredAddressAction.message": "A la dirección del edificio ' %{buildingName} ' le faltan componentes estructurados (calle, ciudad, etc.)",
   "BuildingReports.items.sheets.merged": "Fusión",
   "BuildingReports.items.sheets.physicals": "Objetos fisicos",
   "BuildingReports.items.sheets.virtuals": "Objetos virtuales",
+  "BuildingSelect.options.all": "Todos los edificios",
+  "BuildingSelectionView.selectBuildingToViewMap": "Seleccione un edificio para mostrar el plano del mismo",
   "CalculatedPropertiesAccordions.kpi": "Indicadores",
   "CalculatedPropertiesAccordions.mesures": "Medidas",
+  "CalendarHeader.bookingTitle": "Reserva esta sala de reuniones",
+  "CalendarHeader.refreshTooltip": "Actualizar el calendario",
+  "CalendarScopeConsentButton.alertMessage": "Para reservar salas de reuniones, debe autorizar a Surfy a acceder a su calendario de Microsoft. Haga clic en el botón de abajo para otorgar los permisos necesarios.",
+  "CalendarScopeConsentButton.alertTitle": "Se requiere permiso para reservar habitaciones.",
+  "CalendarScopeConsentButton.buttonHelp": "Serás redirigido a Microsoft para otorgar permisos.",
+  "CalendarScopeConsentButton.buttonLabel": "Permitir el acceso al calendario",
   "CalibrateLayoutDrawer.options.inputs.scale.label": "Factor de escala",
   "CalibrateLayoutDrawer.options.inputs.step.label": "Valor de traducción",
   "CalibrateLayoutDrawer.options.inputs.translate.x.label": "El eje X",
@@ -56463,16 +57461,18 @@ const es = {
   "CheckAllDefaultViews.shortcuts.title": "Atajos de configuración",
   "CheckAllDefaultViews.shortcuts.views.buttonsHelp": "Consulte esta vista para todo tipo de entidades",
   "CheckAllDefaultViews.shortcuts.views.title": "Accesos directos para vistas de interfaz predeterminadas",
+  "CloneEntitiesFailed.cloneFailed": "La clonación es imposible.",
   "CollapseSwitchButton.help.false": "Ver el detalle",
   "CollapseSwitchButton.help.true": "ocultar el detalle",
   "CollapseWorkplaceAffectationList.title": "Asignar a esta persona solo para los días siguientes",
   "CollapseWorkplaceAffectationList.updateAffectationDay.false": "Quitar la tarea de esta persona %{day}",
   "CollapseWorkplaceAffectationList.updateAffectationDay.true": "Afecta a esta persona %{day}",
   "ColorBox.NoColorHelp": "Seleccione un color a través de la paleta",
+  "ColorizeRoomTypeOption.useRoomTypeColor": "Utilice el color del tipo de espacio",
   "CompanyDashboard.dashboards.area": "Panel de superficies",
   "CompanyDashboard.dashboards.workplace": "Panel de escritorio",
   "CompanyDuplicateDownload.deleteReporting.help": "Eliminar datos de reporte calculados, hay que volver a calcular los datos de reporte para tenerlos nuevamente, esta opción permite limpiar los datos de reporte",
-  "CompanyDuplicateDownload.deleteReporting.progress": "Eliminando datos de informes de {{objectType}}: {{current}}/{{total}}",
+  "CompanyDuplicateDownload.deleteReporting.progress": "Eliminando datos de informes de %{objectType} : %{current} / %{total}",
   "CompanyDuplicateDownload.deleteReporting.title": "Eliminar datos calculados de las entidades de informes",
   "CompanyDuplicateDownload.downloadJson.help": "Este archivo JSON permite duplicar la plataforma si se respetan todas las reglas de calidad de datos",
   "CompanyDuplicateDownload.downloadJson.title": "Descargar el archivo JSON de datos de la empresa",
@@ -56511,8 +57511,10 @@ const es = {
   "CubySaveAsImageButton.label": "Salvar el imagen",
   "CubyWallModeSelect.label": "Pantalla de partición",
   "CubyWallModeSelect.options.cuby": "Cuby",
+  "CubyWallModeSelect.options.cubyRealitySelected": "Cuby con selección en la realidad",
   "CubyWallModeSelect.options.half": "Medias particiones",
   "CubyWallModeSelect.options.no": "Ninguno",
+  "CubyWallModeSelect.options.noWallSelected": "Sin particiones, con selección",
   "CubyWallModeSelect.options.reality": "Realidad",
   "CustomEntityBreadcrumbWorkCanvasLayoutViewLabel.help": "Puede cambiar la visión a través de los menús del plan.",
   "CustomEntityBreadcrumbWorkCanvasLayoutViewLabel.viewSet": "Visión",
@@ -56534,12 +57536,19 @@ const es = {
   "DataQualityIndex.generalInfo.title": "información general",
   "DataQualityIndex.subtitle": "Enumere todos los informes de calidad de datos por entidad",
   "DataQualityIndex.title": "Lista de informes de calidad de datos",
+  "DataQualityIssueRow.elementCountPlural": "elementos",
+  "DataQualityIssueRow.elementCountSingular": "elemento",
+  "DataQualityIssueRow.viewButton": "Ver",
+  "DataQualityIssuesHeader.summary": "Se detectó un problema de calidad de datos en %{totalIssues} %{totalIssuesPlural} 10% de % %{totalIssuesPlural} %{viewsCount} %{viewsCountPlural} . Por favor, resuelva los siguientes problemas antes de continuar:",
+  "DataQualityIssuesHeader.title": "Se detectaron problemas de calidad de los datos",
   "DataQualityTable.numberOfLines": "Número de líneas",
+  "DateDimensionFilter.excludeWeekends": "Excluir fines de semana",
   "DateDimensionSelect.options.day": "Día",
   "DateDimensionSelect.options.month": "Mes",
   "DateDimensionSelect.options.quarter": "Cuarto",
   "DateDimensionSelect.options.week": "Semana",
   "DateDimensionSelect.options.year": "Año",
+  "DayHeaders.time": "Hora",
   "DeleteDialog.cancel.help": "recuperar",
   "DeleteDialog.cancel.label": "anular",
   "DeleteDialog.content": "Está a punto de eliminar <b>%{determinant.undefined}</b> , esta acción no es reversible y puede tener impactos, ¿está seguro de que desea realizar esta acción?",
@@ -56554,6 +57563,8 @@ const es = {
   "DeleteMultipleDialog.title": "Eliminar %{determinants.undefined}",
   "DeleteMultipleEntities.help": "Eliminar %{determinants.defined} seleccionados",
   "DeleteWorkplace.help": "Eliminar estación de trabajo: [ %{name} ], las asignaciones también se eliminarán",
+  "DeskBookingConfirmationButton.bookingConfirmed": "La reserva ha sido confirmada.",
+  "DeskBookingConfirmationButton.confirm": "Confirma tu asistencia",
   "DimensionBuildingPlanningLabel.youAreAssigned": "Estás asignado a %{dimensionTypeName} %{dimensionName}",
   "DimensionInfo.carbonFootprint.help": "La huella de carbono es %{value} de CO2 emitido para %{dimensionType} %{dimension}",
   "DimensionInfo.dimensionPeopleCount.help": "Hay %{value} persona(s) afectada(s) en %{dimensionType} %{dimension}",
@@ -56688,6 +57699,8 @@ const es = {
   "DisplayWorkplaceTexts.workplaceOrganizationLevel0.label": "Dirección",
   "DisplayWorkplaceTexts.workplaceOrganizationLevel1.help": "Mostrar o no los servicios de las estaciones de trabajo en el plan",
   "DisplayWorkplaceTexts.workplaceOrganizationLevel1.label": "Servicio",
+  "DisplayWorkplaceTexts.workplaceUsageType.help": "Mostrar u ocultar el tipo de estación de trabajo utilizada en el plano",
+  "DisplayWorkplaceTexts.workplaceUsageType.label": "Tipo de uso",
   "DownloadBuildingImagesAccordion.accordion.title": "Exportar imágenes de todo el edificio",
   "DownloadBuildingImagesAccordion.buttons.download.help": "Descarga todos los planos de todas las plantas del edificio en formato png en un zip, el tiempo de espera para esta extracción puede ser largo",
   "DownloadBuildingImagesAccordion.buttons.download.label": "Descargar ZIP",
@@ -56734,12 +57747,15 @@ const es = {
   "EntityHasManyProperties.associations.reporting": "Asociaciones de informes para %{determinant.defined}",
   "EntityHasManyProperties.associations.security": "Asociaciones de seguridad para %{determinant.defined}",
   "EntityPropertyTypesMandatoryNotRespected.title": "Se requieren las siguientes propiedades",
+  "EntityPropertyTypesRegexValidationNotRespected.title": "Las siguientes propiedades no cumplen con la validación de expresiones regulares",
   "ErrorImpossibleToFindTheEntities.text": "No se puede encontrar el %{determinants.defined}",
   "ErrorImpossibleToFindTheEntity.text": "No es posible encontrar %{determinant.defined} deseado",
   "ErrorTextZone.reload": "Rehacer la operación",
+  "Errors.AUTHENTIFICATION_CONNECTION_NOT_FOUND_FOR_EMAIL": "No se encontró ninguna conexión de autenticación para el dominio %{domain}",
   "Errors.networkError": "Se han detectado problemas de conexión o de red. Espere y vuelva a intentarlo en unos segundos.",
   "ExportQueryNodeToFileButton.help.list": "Descargar en excel %{determinants.defined}",
   "FieldTypeAddress.edit": "Cambiar dirección",
+  "FieldTypeAddress.geocode": "Geocodificar la dirección para extraer los componentes estructurados (calle, ciudad, código postal, país)",
   "FieldTypeAddress.remove": "Eliminar dirección",
   "FieldTypeColor.NoColorHelp": "Selecciona un color",
   "FieldTypeColor.NotHexMatchError": "El campo no respeta el formato hexadecimal de un color.",
@@ -56759,6 +57775,16 @@ const es = {
   "FieldTypePassword.icons.copy": "Copie el contenido de la contraseña al portapapeles",
   "FieldTypePassword.icons.generate": "Genera una contraseña única",
   "FileDropZone.dropZone": "Mueva y arrastre el archivo de importación a esta área o haga clic en el área para seleccionar su archivo",
+  "FixAddressButton.button.fix": "Corrija la dirección",
+  "FixAddressButton.button.help": "Corrija automáticamente la dirección de ' %{buildingName} ' mediante la geocodificación de Google Maps",
+  "FixAddressButton.error.message": "❌ %{error}",
+  "FixAddressButton.errors.noStructuredAddress": "No se puede extraer la dirección estructurada de la geocodificación",
+  "FixAddressButton.errors.unknown": "Error desconocido",
+  "FixAddressButton.errors.updateFailed": "La actualización falló en Surfy",
+  "FixAddressButton.progress.geocoding": "Recuperando la dirección estructurada a través de Google Maps...",
+  "FixAddressButton.progress.refreshing": "Vista refrescante...",
+  "FixAddressButton.progress.updating": "Actualización de edificio en Surfy...",
+  "FixAddressButton.success.message": "✅ La dirección de ' %{buildingName} ' se ha corregido correctamente",
   "FloorMap.tabs.all": "Ver todas las formas seleccionadas en la lista",
   "FloorMap.tabs.analyticsDimensionTypes": "Colorea los espacios del plano según las <b>capas de análisis.</b>",
   "FloorMap.tabs.building": "Ver información del edificio",
@@ -56779,6 +57805,7 @@ const es = {
   "FloorMap.tabs.users": "Estaciones de trabajo en color versus personas",
   "FloorMap.tabs.workplaceTypes": "Mostrar en el mapa las <b> estaciones de trabajo </b> por tipo de estación de trabajo",
   "FloorMap.tabs.workplaceUsage": "Colorea las estaciones de trabajo según su <b>estado</b>",
+  "FloorMap.tabs.workplaceUsageTypes": "Colorea las estaciones de trabajo según su <b>tipo de uso.</b>",
   "FloorMap.tabs.workplaces": "Detalles de las <b> estaciones de trabajo </b> seleccionadas",
   "FloorSelector.focus": "Seleccione solo este piso",
   "FloorSelector.selectAll.false": "Seleccionar todos los pisos",
@@ -56803,6 +57830,8 @@ const es = {
   "GlobalSearch.Start": "Puede buscar, por ejemplo, personas, espacios, estaciones de trabajo, objetos u otras entidades, la búsqueda comenzará desde el segundo carácter",
   "GlobalSearch.close.help": "Borrar búsqueda",
   "GlobalSearchIncludeScenarios.label": "Incluir escenarios en la búsqueda",
+  "GoogleApiWrapper.configurationNotFound": "La clave API de Google Maps no está configurada",
+  "GoogleApiWrapper.loadingFailed": "No se pudo cargar la API de Google Maps",
   "HalfDayWorkingLocationToggle.all.help": "El horario del día es de 8:00 a.m. a 7:00 p.m.",
   "HalfDayWorkingLocationToggle.all.label": "Todo el día",
   "HalfDayWorkingLocationToggle.am.help": "El horario de mañana es de 8:00 a 13:30 horas.",
@@ -56859,7 +57888,8 @@ const es = {
   "ImportUpdateOption.help": "Actualizar objetos seleccionados",
   "ImportUpdateOption.label": "Poner al día",
   "IndexContextMenuItem.navigation": "Navegación",
-  "InfiniteScrollLoader.loader.completed": "Se han cargado todos %{count} elementos",
+  "InfiniteScrollLoader.loader.completed_plural": "Se han cargado todos %{count} elementos",
+  "InfiniteScrollLoader.loader.completed_singular": "Se ha cargado 1 artículo",
   "InfiniteScrollLoader.loader.loadMore": "Cargar más ( %{displayed} / %{total} )",
   "InfiniteScrollLoader.loader.loading": "Cargando...",
   "InfiniteScrollLoader.loader.scrollForMore": "Desplácese hacia abajo para ver más...",
@@ -56893,11 +57923,22 @@ const es = {
   "LayoutFiltersTabOpenToggleIcon.open.true": "Cierre el menú del mapa para optimizar el espacio de visualización del mapa.",
   "LayoutFiltersTabZone.collapse.help": "El menú está cerrado, puede abrirlo haciendo clic en el primer icono para abrirlo y ver los detalles de los elementos del plan",
   "LayoutViewSwitch.title": "Cambiando la visión del plan",
+  "Legend.available": "Disponible",
+  "Legend.booked": "Reservar",
+  "Legend.past": "Aprobar",
   "LegendSelector.labels.default": "Leyenda predeterminada",
   "LegendSelector.title": "Seleccionar leyenda",
   "Level1OrganizationFilter.Empty": "No hay ninguna organización asociada a los espacios, puedes agregar más modificando un espacio y asociándolo a una organización, luego puedes controlar su visualización desde esta sección",
   "ListRefetchButton.refetch": "Recargar datos de objetos visibles",
   "LoadingSvgCircle.pleaseWait": "Espere mientras se sincroniza",
+  "LoginLanguageSelector.ariaLabel": "Cambiar el idioma a %{language}",
+  "LoginLanguageSelector.languageNameDe": "Alemán",
+  "LoginLanguageSelector.languageNameEn": "Inglés",
+  "LoginLanguageSelector.languageNameEs": "Español",
+  "LoginLanguageSelector.languageNameFr": "Francés",
+  "LoginLanguageSelector.languageNameIt": "italiano",
+  "LoginLanguageSelector.languageNameNl": "Holandés",
+  "LoginLanguageSelector.tooltip": "Cambiar el idioma a %{language}",
   "LoginView.connections.AzureADv2.help": "Conéctese con su cuenta profesional de Microsoft a través de Office 365",
   "LoginView.connections.AzureADv2.label": "Office 365",
   "LoginView.connections.Username-Password-Authentication.help": "Inicie sesión con su cuenta de Surfy",
@@ -56911,6 +57952,53 @@ const es = {
   "LoginView.texts.description": "Acceder a Surfy",
   "LoginView.texts.title": "acceder",
   "LogoutMenuLink.logout": "Desconectarse",
+  "LuccaSynchronizationOperationLabel.title": "Sincronización de Lucca",
+  "MSGraphConsentPrompt.buttonHelp": "Debe ser administrador de Microsoft 365 para validar este consentimiento.",
+  "MSGraphConsentPrompt.buttonLabel": "Conceda el permiso de Microsoft necesario",
+  "MSGraphConsentPrompt.title": "Se requiere autorización adicional de Microsoft",
+  "MSPlacesBuildingsSync.restart.button": "Reiniciar la sincronización del edificio",
+  "MSPlacesConsentButton.alert.message": "La sincronización de Microsoft Places requiere permisos adicionales. Haga clic en el botón de abajo para permitir el acceso de lectura y escritura a los datos de Places.",
+  "MSPlacesConsentButton.alert.title": "Se requieren permisos adicionales",
+  "MSPlacesConsentButton.button.help": "Otorgar permiso para crear y editar edificios en Microsoft Places",
+  "MSPlacesConsentButton.button.label": "Permitir el acceso a Microsoft Places",
+  "MSPlacesFloorsSync.restart.button": "Reiniciar la sincronización del piso",
+  "MSPlacesRoomsBasicSync.headers.capacity": "Capacidad",
+  "MSPlacesRoomsBasicSync.headers.displayName": "Nombre para mostrar",
+  "MSPlacesRoomsBasicSync.headers.email": "e-mail",
+  "MSPlacesRoomsBasicSync.headers.floorNumber": "Número de piso",
+  "MSPlacesRoomsBasicSync.restart.button": "Reiniciar la sincronización de la sala",
+  "MSPlacesRoomsDisplayNameSyncTab.alertDescription": "Esta operación compara los nombres que se muestran en las salas de Microsoft Places con sus equivalentes en Surfy.",
+  "MSPlacesRoomsDisplayNameSyncTab.alertMatchingDescription": "Las habitaciones se asignan mediante la dirección de correo electrónico de reserva.",
+  "MSPlacesRoomsDisplayNameSyncTab.alertMatchingTitle": "Lógica de coincidencia:",
+  "MSPlacesRoomsDisplayNameSyncTab.alertNoteDescription": "En Microsoft 365, solo se actualiza el nombre para mostrar cuando se detecta una diferencia; las API de usuario de Graph se utilizan para actualizar el nombre para mostrar.",
+  "MSPlacesRoomsDisplayNameSyncTab.alertNoteTitle": "Importante :",
+  "MSPlacesRoomsDisplayNameSyncTab.alertTitle": "Sincronizar nombres para mostrar de Microsoft",
+  "MSPlacesRoomsDisplayNameSyncTab.consentButtonHelp": "Debe ser administrador de Microsoft 365 para validar este consentimiento.",
+  "MSPlacesRoomsDisplayNameSyncTab.consentButtonLabel": "Conceda el permiso de Microsoft necesario",
+  "MSPlacesRoomsDisplayNameSyncTab.consentMessage": "Para continuar sincronizando los nombres para mostrar de las salas de MS Places se requieren los siguientes permisos: %{scopes} .",
+  "MSPlacesRoomsDisplayNameSyncTab.consentTitle": "Se requiere autorización adicional de Microsoft",
+  "MSPlacesRoomsDisplayNameSyncTab.restartButton": "Reiniciar sincronización",
+  "MSPlacesRoomsEmailSyncTab.alert.description1": "Esta operación sincroniza las direcciones de correo electrónico de las salas de Microsoft Places con la propiedad bookingEmail de las salas de Surfy. La sincronización es unidireccional: MS Places → Surfy.",
+  "MSPlacesRoomsEmailSyncTab.alert.matchingDescription": "Las habitaciones se asocian por nombre para mostrar y piso (parentId). Para sincronizar, las habitaciones deben estar vinculadas o tener nombres coincidentes.",
+  "MSPlacesRoomsEmailSyncTab.alert.matchingTitle": "Correspondencia:",
+  "MSPlacesRoomsEmailSyncTab.alert.noteDescription": "Solo se mostrarán las salas con correos electrónicos diferentes para las actualizaciones. Las salas con correos electrónicos coincidentes se muestran en &quot;Sin cambios&quot;.",
+  "MSPlacesRoomsEmailSyncTab.alert.noteTitle": "Observó :",
+  "MSPlacesRoomsEmailSyncTab.alert.title": "Sincronizar correos electrónicos de MS Places con Surfy",
+  "MSPlacesRoomsEmailSyncTab.restart.button": "Reiniciar la sincronización del correo electrónico",
+  "MSPlacesRoomsSync.displayNameSyncTabLabel": "Sincronizar nombres para mostrar",
+  "MSPlacesRoomsSync.doneChipLabel": "Finalizado",
+  "MSPlacesRoomsSync.emailSyncTabLabel": "Sincronizar correos electrónicos",
+  "MSPlacesRoomsSync.syncTabLabel": "Sincronizar salas",
+  "MSPlacesSync.restart.button": "Reiniciar toda la sincronización",
+  "MSPlacesSync.steps.rooms.suffix": "(Solo salas de reuniones)",
+  "MSPlacesSyncOperationLabel.title": "Sincronización de Microsoft Places",
+  "MSUsersConsentButton.alertMessage": "Para ofrecer la sincronización de usuarios, Surfy necesita poder leer los usuarios de Microsoft 365. Haga clic en el botón a continuación para otorgar el permiso necesario.",
+  "MSUsersConsentButton.alertTitle": "Permitir el acceso a los usuarios de Microsoft Graph",
+  "MSUsersConsentButton.buttonHelp": "Se le redirigirá a Microsoft para conceder acceso al directorio.",
+  "MSUsersConsentButton.buttonLabel": "Permitir la sincronización de usuarios de Microsoft",
+  "MSUsersSync.description": "Sincroniza los usuarios de Microsoft 365 con los colaboradores de Surfy. Los colaboradores que falten se crearán automáticamente a partir de su dirección de correo electrónico.",
+  "MSUsersSync.refresh": "Sincronizar usuarios de Microsoft",
+  "MSUsersSync.title": "Sincronización de usuarios de Microsoft",
   "MapFilterNodeIsAllSelected.help": "Se cargará toda la selección a continuación, incluso si se crean nuevos objetos",
   "MapFilterNodeToggleAll.action.false": "Deseleccionar todo",
   "MapFilterNodeToggleAll.action.true": "Seleccionar todo",
@@ -56928,10 +58016,64 @@ const es = {
   "MapLegendWorkplace.title": "Puesto de trabajo",
   "MapLegendWorkplace.workplaces.flex": "Las estaciones de trabajo están en flex",
   "MapLegendWorkplace.workplaces.free": "Las estaciones de trabajo son gratuitas",
+  "MeetingRoomBookAction.bookRoom": "Reserva a través del calendario",
+  "MeetingRoomCard.availability.available": "Disponible en este horario",
+  "MeetingRoomCard.availability.searching": "Comprobando disponibilidad...",
+  "MeetingRoomCard.bookingEmailAvailable": "Dirección de reserva disponible: %{email}",
+  "MeetingRoomCard.calendarFor": "Agenda para",
   "MeetingRoomCard.locateSpace": "Localiza el espacio en el plano.",
+  "MeetingRoomCard.noRoomName": "Espacio de nombres indefinido",
+  "MeetingRoomCard.roomCalendar": "Calendario espacial",
   "MeetingRoomCard.seats.1": "%{count} asiento",
   "MeetingRoomCard.seats.n": "%{count} asientos",
+  "MeetingRoomCard.table.actions": "Comportamiento",
+  "MeetingRoomCard.table.building": "Edificio",
+  "MeetingRoomCard.table.capacity": "Capacidad",
+  "MeetingRoomCard.table.floor": "piso",
+  "MeetingRoomCard.table.name": "apellido",
+  "MeetingRoomCard.table.type": "Tipo",
+  "MeetingRoomCard.tabs.buildingMap": "Vista en planta",
+  "MeetingRoomCard.tabs.cards": "Ver hojas de datos",
+  "MeetingRoomCard.tabs.table": "Vista de tabla",
+  "MeetingRoomCard.viewCalendar": "Ver el calendario de reservas",
   "MeetingRoomCard.viewPicture": "Ver foto del espacio",
+  "MeetingRoomCardSeats.seatsMultiple": "%{count} asientos",
+  "MeetingRoomCardSeats.seatsSingle": "%{count} asiento",
+  "MeetingRoomDirectBookAction.bookingInProgressHelp": "Reserva en curso...",
+  "MeetingRoomDirectBookAction.bookingSuccess": "Reserva confirmada para %{roomName} ( %{timeRange} )",
+  "MeetingRoomDirectBookAction.directBook": "Reserva rápida",
+  "MeetingRoomDirectBookAction.missingSelection": "Primero, seleccione un día y una franja horaria.",
+  "MeetingRoomDirectBookAction.noRoomName": "Espacio de nombres indefinido",
+  "MeetingRoomDirectBookAction.roomUnavailable": "La sala no está disponible durante este horario.",
+  "MeetingRoomDirectBookAction.schedulesLoading": "Cargando disponibilidad",
+  "MeetingRooms.clearFilters": "Borrar filtros",
+  "MeetingRooms.loadingAvailabilityTooltip": "Cargando disponibilidad de reservas...",
+  "MeetingRooms.noMeetingRoomsConfigured": "No tienes salas de reuniones configuradas a través de grupos de tipología de espacios",
+  "MeetingRooms.noRoomsFound": "Ninguna habitación coincide con tu búsqueda, puedes borrar tus filtros de búsqueda",
+  "MeetingRooms.selectionCount": "%{count} espacios en la selección",
+  "MeetingRoomsBuildingCuby.noRoomsFound": "Ninguna habitación coincide con tu búsqueda, puedes borrar tus filtros de búsqueda",
+  "MeetingRoomsBuildingMapFloorSpaceAction.ariaLabel": "Abre el cursor de superficie",
+  "MeetingRoomsBuildingMapFloorSpaceAction.tooltip": "Ajusta la escala de las superficies",
+  "MeetingRoomsBuildingMapResetViewAction.ariaLabel": "Restablezca la cámara a la vista superior inicial",
+  "MeetingRoomsBuildingMapResetViewAction.tooltip": "Volver a la vista superior inicial",
+  "MeetingRoomsBuildingMapWallModeToggle.ariaLabel": "Alternar modo de visualización en la pared",
+  "MeetingRoomsBuildingMapWallModeToggle.tooltip.noWallSelected": "Ocultar las paredes para una vista sin obstáculos",
+  "MeetingRoomsBuildingMapWallModeToggle.tooltip.reality": "Paredes de visualización en modo real",
+  "MeetingRoomsDayFilters.dayTooltip": "Filtra las habitaciones disponibles para %{day}",
+  "MeetingRoomsDayFilters.nextTooltip": "días siguientes",
+  "MeetingRoomsDayFilters.previousTooltip": "días anteriores",
+  "MeetingRoomsDayFilters.title": "Días",
+  "MeetingRoomsFilterOption.multiSelectTooltip": "Añadir o eliminar esta opción de la selección",
+  "MeetingRoomsFilterOption.singleSelectAriaLabel": "Seleccione solo esta opción",
+  "MeetingRoomsFilterOption.singleSelectTooltip": "Mostrar solo esta opción",
+  "MeetingRoomsHourRangeSelector.rangeEndValueLabel": "Fin: %{time}",
+  "MeetingRoomsHourRangeSelector.rangeSelectionTooltip": "Arrastra los controladores para establecer el rango de tiempo utilizado para buscar reservas.",
+  "MeetingRoomsHourRangeSelector.rangeStartValueLabel": "Inicio: %{time}",
+  "MeetingRoomsRefreshSelectionButton.refreshSelection": "Actualizar la selección",
+  "MeetingRoomsSearchFilter.searchLabel": "Investigación",
+  "MeetingRoomsSearchFilter.searchPlaceholder": "Buscar una habitación...",
+  "MicrosoftUsersSyncTitle.title": "Sincronización de usuarios de Microsoft",
+  "MoffiSyncOperationLabel.title": "Sincronización Moffi",
   "MouvementMatrixImport.errors.noSheet": "No se pudo encontrar la hoja de Excel con el nombre %{name} [ %{objectTypeName} ]",
   "MovePersonFromWorkplaceToRoomListButtonItem.help": "Esta opción requiere refrescar la página para ver el resultado, es posible encadenar varios movimientos sin refrescar",
   "MovePersonFromWorkplaceToRoomListButtonItem.label": "Mover a esta persona desde su estación de trabajo al espacio de la estación de trabajo",
@@ -56954,12 +58096,13 @@ const es = {
   "NumberOfPeoplePerRowField.label": "Número de personas por línea para asignaciones de espacio",
   "ObjectTypeImportKeys.title": "Las claves disponibles para conciliar %{determinants.undefined} en el orden de su elección, si desea modificar una de las propiedades de la clave debe utilizar el identificador como clave",
   "ObjectTypeImportScalarProperties.help": "Copiar al portapapeles",
-  "Operations.exportZbre.label": "Exportar Z # bre",
-  "Operations.lucca-sync.label": "Sincronización de Lucca",
-  "Operations.moffi-sync.label": "Sincronización Moffi",
-  "Operations.sharingcloud-sync.label": "Sincronización de nube compartida",
-  "Operations.talentsoft-import.label": "Importación de Talentsoft",
-  "Operations.zbre-sync.label": "Sincronización Z#ber",
+  "OperationHelpMarkdown.help.documentation": "Documentación",
+  "OrganizationDataQualityHierarchy.headerChildOrganizations": "Organizaciones hijas",
+  "OrganizationDataQualityHierarchy.headerOrganization": "Organización",
+  "OrganizationDataQualityHierarchy.headerParentOrganization": "organización matriz",
+  "OrganizationDataQualityHierarchy.headerPlatform": "Plataforma",
+  "OrganizationDataQualityHierarchy.headerReason": "Razón ?",
+  "OrganizationDataQualityHierarchy.reasonHasParentAndChildren": "La organización tiene niños y también una madre.",
   "OrganizationFloorMapFilter.TooltipTitle.notSelected": "Seleccione %{organization} para colorear los espacios en el plano.",
   "OrganizationFloorMapFilter.TooltipTitle.selected": "Si anula la selección de %{organization} se eliminarán los colores del plan.",
   "OrganizationFloorMapFilter.tooltip.false": "Anule la selección de todas las organizaciones a continuación",
@@ -56973,6 +58116,21 @@ const es = {
   "ParkingBookIcon.parking.booked": "Tu parking está reservado",
   "ParkingBookIcon.parking.release.help": "Liberar reserva de estacionamiento",
   "ParkingBookIcon.parking.viewOnMap": "Ver parking reservado en el mapa",
+  "PartnerEntityCreateTab.button.help": "Crear en %{partnerName}",
+  "PartnerEntityCreateTab.button.label": "Crear en %{partnerName}",
+  "PartnerEntityCreateTab.progress.syncing": "Sincronizando %{label} ...",
+  "PartnerEntityDeleteTab.button.help": "Eliminar en %{partnerName}",
+  "PartnerEntityDeleteTab.button.label": "Eliminar en %{partnerName}",
+  "PartnerEntityDeleteTab.progress.syncing": "Sincronizando %{label} ...",
+  "PartnerEntitySync.errors.title": "Errores de sincronización ( %{count} )",
+  "PartnerEntitySync.tabs.create": "crear",
+  "PartnerEntitySync.tabs.delete": "eliminar",
+  "PartnerEntitySync.tabs.noChange": "Sin cambios",
+  "PartnerEntitySync.tabs.update": "Poner al día",
+  "PartnerEntityUpdateTab.button.help": "Actualización en %{partnerName}",
+  "PartnerEntityUpdateTab.button.label": "Actualización en %{partnerName}",
+  "PartnerEntityUpdateTab.headers.type": "Tipo",
+  "PartnerEntityUpdateTab.progress.syncing": "Sincronizando %{label} ...",
   "PersonAffectationsPanel.description": "Las tareas de la persona",
   "PersonAffectationsPanel.title": "asignaciones",
   "PersonBadgePanel.description": "Información diversa sobre la persona.",
@@ -57024,6 +58182,7 @@ const es = {
   "PropertSelectorDrawer.options.reset.label": "Restablecer selección",
   "PropertSelectorDrawer.tabLabel": "Propiedades",
   "PropertyTypeErrors.title": "Los siguientes valores no existen para la propiedad <b>%{propertyTypeLabel}</b> en <b>%{objectTypeLabel}</b>",
+  "RedirectCountdownTimer.redirectMessage": "Esta página se redirigirá automáticamente a %{redirectTarget} en %{secondsRemaining} segundos",
   "ReduceMenuSwitch.open.false": "Contraer el menú para aprovechar el espacio de trabajo",
   "ReduceMenuSwitch.open.true": "Expandir menú",
   "RefetchEntitiesButton.refetch": "Recargar datos de objetos visibles",
@@ -57074,12 +58233,58 @@ const es = {
   "RoomAffectationsList.EmptyList": "No hay nadie asignado a este espacio.",
   "RoomAffectationsList.title": "Personas asignadas a espacios",
   "RoomAffectationsOnlyList.title": "Personas asignadas a espacios",
+  "RoomBookingCalendar.available": "Disponible",
+  "RoomBookingCalendar.book": "Para reservar",
+  "RoomBookingCalendar.bookRoomTitle": "Reservar una sala de reuniones",
+  "RoomBookingCalendar.booked": "Reservar",
+  "RoomBookingCalendar.bookingTitle": "Reserva esta sala de reuniones",
+  "RoomBookingCalendar.cancel": "anular",
+  "RoomBookingCalendar.clickToBook": "Haga clic para reservar %{day} a %{time}",
+  "RoomBookingCalendar.dateTime": "Fecha y hora",
+  "RoomBookingCalendar.description": "Descripción (opcional)",
+  "RoomBookingCalendar.endTime": "Fin del tiempo",
+  "RoomBookingCalendar.past": "Aprobar",
+  "RoomBookingCalendar.pastDay": "No se puede reservar: ya ha pasado %{day}",
+  "RoomBookingCalendar.pastTime": "No se puede reservar: el tiempo %{time} ya ha pasado",
+  "RoomBookingCalendar.refreshTooltip": "Actualizar el calendario",
+  "RoomBookingCalendar.slotBooked": "Este espacio ya está reservado",
+  "RoomBookingCalendar.startTime": "Hora de inicio",
+  "RoomBookingCalendar.subject": "Propósito de la reunión",
+  "RoomBookingCalendar.thisWeek": "Esta semana",
+  "RoomBookingCalendar.time": "Hora",
+  "RoomBookingCalendar.unavailable": "No disponible o pasado",
+  "RoomCalendarDrawer.calendarTitle": "Calendario de reservas",
+  "RoomCalendarDrawer.cancelled": "Cancelado",
+  "RoomCalendarDrawer.errorFetchingEvents": "Error al cargar reservas",
+  "RoomCalendarDrawer.noUpcomingEvents": "No hay reservas próximas",
+  "RoomCalendarDrawer.ongoing": "En curso",
+  "RoomCalendarDrawer.refreshTooltip": "Actualizar el calendario",
+  "RoomCalendarDrawer.today": "Hoy",
+  "RoomCalendarDrawer.tomorrow": "Mañana",
+  "RoomCalendarDrawer.tooltipDate": "Fecha",
+  "RoomCalendarDrawer.tooltipLocation": "Lugar",
+  "RoomCalendarDrawer.tooltipOrganizedBy": "Organizado por",
+  "RoomCalendarDrawer.tooltipTime": "Cada hora",
+  "RoomCalendarDrawer.upcomingEventsSummary": "%{count} próximas reservas",
   "RoomCard.buttons.edit.false": "Editar propiedades del espacio",
   "RoomCard.buttons.edit.true": "Deja de editar",
+  "RoomCard.tabs.calendar": "Calendario",
+  "RoomCard.tabs.calendar.help": "Ver el calendario de reserva de espacios",
+  "RoomCard.tabs.info.help": "Mostrar información detallada del espacio",
   "RoomCard.tabs.inventory": "inventario",
+  "RoomCard.tabs.inventory.help": "Ver inventario de espacio y equipamiento",
   "RoomCard.tabs.people": "asignaciones",
+  "RoomCard.tabs.people.help": "Mostrar personas asignadas a este espacio",
   "RoomCard.tabs.room": "Espacio",
   "RoomCardSelectDimensions.needSave": "Guarde o cancele sus cambios antes de poder modificar las capas de análisis de este espacio",
+  "RoomDataQualityOrganizationToRoom.headerBuilding": "Edificio",
+  "RoomDataQualityOrganizationToRoom.headerDirection": "Dirección",
+  "RoomDataQualityOrganizationToRoom.headerFloor": "piso",
+  "RoomDataQualityOrganizationToRoom.headerReason": "Razón ?",
+  "RoomDataQualityOrganizationToRoom.headerService": "Servicio",
+  "RoomDataQualityOrganizationToRoom.headerSpace": "Espacio",
+  "RoomDataQualityOrganizationToRoom.reasonDirectionHasParent": "La organización %{organizationName} se utiliza como departamento pero tiene una organización matriz.",
+  "RoomDataQualityOrganizationToRoom.reasonNoDirection": "La organización %{organizationName} no tiene dirección y está asociada a un espacio.",
   "RoomFullName.noName": "espacio sin nombre",
   "RoomGraphHandler.buttons.generateGraph.description": "Al generar el gráfico de orientación se calculan los nodos a través de los cuales el buscador de ruta puede encontrar los espacios y muebles. Si se puede seleccionar el espacio original, el gráfico ya se ha generado.",
   "RoomGraphHandler.buttons.generateGraph.label": "Generar el gráfico de orientación.",
@@ -57089,6 +58294,7 @@ const es = {
   "RoomGraphHandler.icons.displayNodes.description": "Mostrar caminos en las habitaciones",
   "RoomGraphHandler.icons.enablePathfinding.description": "Activar el dibujo de ruta desde el espacio de origen con la forma debajo del mouse",
   "RoomGraphHandler.rooms.origin": "espacio original",
+  "RoomLabels.capacity.suffix": "pag.",
   "RoomMapFilter.Empty": "No hay ningún tipo de espacio asociado a los espacios, puede agregar más modificando un espacio y agregando un tipo asociado, luego puede controlar su visualización desde esta sección",
   "RoomSegmentRoomsList.title": "Los espacios adjuntos a este segmento.",
   "RoomTooltip.roomWorkplaceAffectations": "Asignaciones de estaciones de trabajo",
@@ -57097,6 +58303,7 @@ const es = {
   "RoomTypeGroupLabel.exclude.tooltip": "El grupo de tipología de espacio excluye los tipos de espacio asociados.",
   "RoomTypeGroupMapFilter.Empty": "No hay ningún grupo de tipo de espacio asociado con espacios a través de tipos de espacio, puede agregar más editando un grupo de tipo de espacio y agregándole un tipo de espacio asociado, luego puede controlar su visualización desde esta sección",
   "RoomTypeGroupToRoomTypeLabel.exclude.tooltip": "Se excluye la tipología del espacio.",
+  "RoomTypeGroupsMapFilterZone.tabs_options": "opciones",
   "RoomWorkplaceList.EmptyList": "No hay estaciones de trabajo en este espacio.",
   "SearchFieldString.searchEmpty.help.false": "Buscar elementos vacíos o sin valor",
   "SearchFieldString.searchEmpty.help.true": "Volver a habilitar la búsqueda estándar",
@@ -57112,6 +58319,7 @@ const es = {
   "SelectDimensionTypeNavigationLayoutIcon.select": "Seleccione este tipo de capa para la navegación",
   "SelectDimensionTypeNavigationLayoutIcon.unselect": "Eliminar navegación por capa de análisis y volver a navegación por espacios",
   "ShapeTextAnchorDrawer.empty": "Seleccione una forma compatible para mover el texto mostrado",
+  "SharingcloudSyncOperationLabel.title": "Sincronización de nube compartida",
   "ShowEntityDrawer.title.listItem": "Ver información para %{determinant.defined} en la barra lateral",
   "ShowEntityDrawer.title.show": "Ver %{determinant.defined}",
   "SingleNodeQuery.refetch": "Recargar datos",
@@ -57136,9 +58344,12 @@ const es = {
   "TableSelectionAllCheckbox.checked.true": "Deselecciona todo",
   "TableSelectionAllCheckbox.help": "Seleccionar o anular la selección de todas las filas (incluidas las que no son visibles en la lista paginada)",
   "TableView.options": "opciones",
+  "TalentsoftImportLabel.title": "Importación de Talentsoft",
   "TenantOperations.agpm-import-hr-file.label": "Importando el archivo HR (STILOG)",
   "TenantOperations.egis-import-hr-file.label": "Importar archivo HR",
   "TenantOperations.essilor-import-hr-file.label": "Importar archivo HR",
+  "TenantOperations.ms-user-sync-thea.description": "Sincroniza usuarios de Microsoft",
+  "TenantOperations.ms-user-sync-thea.label": "Sincronización de usuarios de Microsoft",
   "TenantOperations.sephora-sync-sap-success-factors.label": "sincronización MSC",
   "TenantOperations.st-grenoble-import-hr-file.label": "Importando el archivo HR",
   "TenantSearchBar.input.ariaLabel": "Búsqueda de empresas",
@@ -57147,23 +58358,37 @@ const es = {
   "TextAreaImporter.errors.title": "Errores encontrados durante la importación",
   "TextAreaImporter.help": "Utilice la tabulación entre cada columna incluyendo el nombre de cada columna en la primera fila o péguela directamente desde Excel",
   "TextAreaImporter.textarea.placeholder": "Copie y pegue sus columnas de Excel con el título para encontrar las propiedades para actualizar",
+  "TheaMSUserSyncOperation.description": "Sincroniza los usuarios de Microsoft 365 con los colaboradores de Surfy. Los colaboradores que falten se crearán automáticamente a partir de su dirección de correo electrónico.",
+  "TheaMSUserSyncOperation.refresh": "Sincronizar usuarios de Microsoft",
+  "TheaMSUserSyncOperation.title": "Sincronización de usuarios de Microsoft",
   "ThemeModeSwitchMenuItem.dark.help": "El uso del modo brillante le permite trabajar con un fondo blanco.",
   "ThemeModeSwitchMenuItem.dark.label": "Cambiar al modo de luz",
   "ThemeModeSwitchMenuItem.light.help": "El modo oscuro le permite trabajar con colores oscuros en el fondo para reducir la fatiga visual.",
   "ThemeModeSwitchMenuItem.light.label": "Cambiar al modo oscuro",
+  "TimeSlot.clickToBook": "Haga clic para reservar %{day} a %{time}",
+  "TimeSlot.pastDay": "No se puede reservar: ya ha pasado %{day}",
+  "TimeSlot.pastTime": "No se puede reservar: el tiempo %{time} ya ha pasado",
+  "TimeSlot.slotBooked": "Este espacio ya está reservado",
   "ToggleAllOpenInfoState.false": "Abrir todos los detalles e indicadores",
   "ToggleAllOpenInfoState.true": "Cerrar todos los detalles e indicadores",
   "ToggleCopilotEnable.help.false": "Activa Surfy Copilot para habilitar el reconocimiento automático de puertas",
   "ToggleCopilotEnable.help.true": "Desactiva Surfy Copilot y vuelve al modelado manual",
   "ToggleCopilotEnable.label.false": "Activar Surfy Copiloto",
   "ToggleCopilotEnable.label.true": "Desactivar Surfy Copilot",
+  "ToggleEnableFloorLabels.help": "Mostrar el nombre de la planta en el lateral de la estructura en la vista 3D",
+  "ToggleEnableFloorLabels.label": "Mostrar etiquetas de piso",
   "ToggleEnableMissingFloors.help": "Mostrar pisos fantasma para los pisos faltantes entre el nivel 0 y el piso más alto según los niveles de piso reales",
   "ToggleEnableMissingFloors.label": "Mostrar pisos fantasma",
+  "ToggleEnableRoomLabels.help": "Muestra los nombres de los espacios como etiquetas en la vista 3D.",
+  "ToggleEnableRoomLabels.label": "Mostrar etiquetas de espacio",
   "ToggleWorkplaceFreeConditionTypeIconButton.and": "Ver puestos de trabajo libres durante al menos uno de los días solicitados",
   "ToggleWorkplaceFreeConditionTypeIconButton.or": "Ver estaciones de trabajo gratuitas para todos los días solicitados",
   "ToggleZbreSyncCheckbox.help": "La sincronización permite colorear espacios y puestos de trabajo según los sensores colocados en Z#ber",
   "ToggleZbreSyncCheckbox.label": "Sincroniza con ocupaciones en tiempo real en Z#ber",
   "TopLevelOrganizationFilter.Empty": "No hay ninguna organización asociada a los espacios, puedes agregar más modificando un espacio y asociándolo a una organización, luego puedes controlar su visualización desde esta sección",
+  "UserNotPartOfCompanyAdminCanCreate.createButton": "Crea la asociación",
+  "UserNotPartOfCompanyAdminCanCreate.message": "No estás asociado con la empresa %{companyId} .",
+  "WeekNavigation.thisWeek": "Esta semana",
   "WorkCanvas.Options.AddItemTypePointOption.help.disable": "Deja de crear cumbres",
   "WorkCanvas.Options.AddItemTypePointOption.help.enable": "Agregar un vértice permite volver a trabajar con mayor precisión un formulario",
   "WorkCanvas.Options.AddItemTypePointOption.label.disable": "Deja de agregar un vértice",
@@ -57375,6 +58600,7 @@ const es = {
   "WorkCanvasToggleOptionHelp.shortcut": "Atajo de teclado: <b>%{shortcut}</b>",
   "WorkingLocationToggle.locations.OFFICE": "Escritorio",
   "WorkingLocationToggle.locations.REMOTE": "Teletrabajo",
+  "WorkpaceBookingAverageByWeekDay.excludeWeekends": "Excluir fines de semana",
   "WorkpaceBookingAverageByWeekDay.labels.bar": "Número de reservas",
   "WorkpaceBookingAverageByWeekDay.labels.line": "Promedio por semana",
   "WorkpaceBookingAverageByWeekDay.title": "Reserva de puestos de trabajo por día de la semana",
@@ -57382,7 +58608,8 @@ const es = {
   "WorkpaceBookingCountByDate.title": "Reservas de estaciones de trabajo por fecha",
   "WorkpaceBookingCountByDimensionAndDate.labels.line": "numero de personas",
   "WorkpaceBookingCountByDimensionAndDate.title": "Número de reservas por fecha y por distrito",
-  "WorkpaceBookingPeopleCountByDate.labels.line": "numero de personas",
+  "WorkpaceBookingPeopleCountByBuildingByDate.title": "Número de personas que reservaron por edificio y por fecha",
+  "WorkpaceBookingPeopleCountByDate.labelsLine": "numero de personas",
   "WorkpaceBookingPeopleCountByDate.title": "Número de personas reservadas por fecha",
   "WorkpaceBookingPeopleCountByDimensionAndDate.labels.line": "numero de personas",
   "WorkpaceBookingPeopleCountByDimensionAndDate.title": "Número de personas que han reservado por fecha y por distrito",
@@ -57411,6 +58638,11 @@ const es = {
   "WorkplaceList.workplace.transit": "Esta estación de trabajo es compartida.",
   "WorkplaceList.zoomOnWorkplace": "Zoom a la estación de trabajo en el plan",
   "WorkplaceNestedList.title": "Personas asignadas a estaciones de trabajo",
+  "WorkplaceOccupancyRateByDimension.labels.occupancyRate": "Tasa de ocupación (%)",
+  "WorkplaceOccupancyRateByDimension.title": "Tasa de ocupación por barrio",
+  "WorkplaceOccupancyRateByDimension.tooltip.bookedWorkplaces": "Posiciones reservadas: %{count}",
+  "WorkplaceOccupancyRateByDimension.tooltip.occupancyRate": "Tasa de ocupación: %{rate}",
+  "WorkplaceOccupancyRateByDimension.tooltip.totalBookableWorkplaces": "Total de posiciones reservables: %{count}",
   "WorkplacePhysicalInventory.title": "Inventario físico de la estación de trabajo",
   "WorkplaceTransitWithAffectations.headers.affectedPeople": "Personas afectadas",
   "WorkplaceTypeCarbonFootprintCount.help": "La huella de carbono es la cantidad de gases de efecto invernadero que emiten los objetos de mobiliario de este tipo de puestos de trabajo",
@@ -57436,6 +58668,7 @@ const es = {
   "WrongRoomsTable.table.headers.newRoom": "nuevo espacio",
   "WrongRoomsTable.table.headers.objectType": "Naturaleza",
   "WrongRoomsTable.table.headers.type": "Tipo",
+  "ZbreSyncOperationLabel.title": "Sincronización Z#ber",
   "booking.snackbar.delete.room": "La reserva en el espacio %{roomName} ha sido cancelada para el período %{slot}",
   "booking.snackbar.delete.workplace": "La reserva en la estación de trabajo %{workplaceName} ha sido cancelada para el período %{slot}",
   "calculatedProperties.properties.carbonFootprint.description": "La huella de carbono es la cantidad de CO2 emitido",
@@ -57560,6 +58793,8 @@ const es = {
   "layoutViewSets.costCenter.label": "Refacturación",
   "layoutViewSets.flex.description": "El uso flexible de espacios",
   "layoutViewSets.flex.label": "Flexionar",
+  "layoutViewSets.meetingRooms.description": "Analizar grupos de tipos de espacios para salas de reuniones",
+  "layoutViewSets.meetingRooms.label": "Salas de reuniones",
   "layoutViewSets.organizationLevel0.description": "Ocupación por dirección",
   "layoutViewSets.organizationLevel0.label": "Direcciones",
   "layoutViewSets.organizationLevel1.description": "Ocupación por servicios",
@@ -57649,6 +58884,8 @@ const es = {
   "models.AuthentificationConnection.determinants.defined": "conexiones de autenticación",
   "models.AuthentificationConnection.determinants.undefined": "conexiones de autenticación",
   "models.AuthentificationConnection.plural": "Conexiones de autenticación",
+  "models.AuthentificationConnection.properties.domaines.description": "Dominios de correo electrónico permitidos para esta conexión de autenticación",
+  "models.AuthentificationConnection.properties.domaines.label": "Dominios autorizados",
   "models.AuthentificationConnection.properties.id.label": "Identificador de conexión de autenticación",
   "models.AuthentificationConnection.properties.name.description": "Nombre de la conexión de autenticación",
   "models.AuthentificationConnection.properties.name.label": "apellido",
@@ -57746,6 +58983,8 @@ const es = {
   "models.Building.reports.buildingItems.help": "Informe de inventario de edificios",
   "models.Building.reports.buildingPeople.fileName": "Gente",
   "models.Building.reports.buildingPeople.help": "Informe de afectados en el edificio",
+  "models.Building.reports.dimensionTypes.fileName": "Tipos de dimensión",
+  "models.Building.reports.dimensionTypes.help": "Relación entre los tipos de dimensión y los datos de informes de construcción",
   "models.Building.reports.organizations.fileName": "Organizaciones",
   "models.Building.reports.organizations.help": "Informe de organizaciones de construcción",
   "models.Building.reports.workplaceAffectations.fileName": "Asignaciones de estaciones de trabajo",
@@ -57836,6 +59075,8 @@ const es = {
   "models.Company.properties.proxyImages.label": "Imágenes proxy",
   "models.Company.properties.workingDaysCount.description": "El número de días laborables a la semana puede ser de 5 para los días laborables, 6 incluido el sábado y 7 incluido el domingo",
   "models.Company.properties.workingDaysCount.label": "Número de días laborables por semana",
+  "models.Company.properties.workplaceBookingConfirmationRange.description": "Intervalo de tiempo durante el cual los usuarios pueden confirmar sus reservas de estaciones de trabajo. Formato: HH:MM-HH:MM (p. ej., 06:00-10:30). Deje este campo en blanco para desactivar la confirmación de reservas de estaciones de trabajo.",
+  "models.Company.properties.workplaceBookingConfirmationRange.label": "Ventana de confirmación de reserva de estación de trabajo",
   "models.Company.reports.export-all-duplicate.fileName": "duplicación",
   "models.Company.reports.export-all-duplicate.help": "Backup de datos de la empresa para hacer una copia de la plataforma",
   "models.Company.reports.export-all.fileName": "respaldo",
@@ -57960,6 +59201,10 @@ const es = {
   "models.Dimension.properties.crowdedForBookingRate.label": "Tasa de recargo por reserva",
   "models.Dimension.properties.name.description": "Útil para diferenciar la capa entre otras.",
   "models.Dimension.properties.name.label": "Nombre de la capa de análisis.",
+  "models.Dimension.properties.peopleCount.description": "El número de asignaciones directamente a la capa",
+  "models.Dimension.properties.peopleCount.label": "Número de asignaciones directas a la capa",
+  "models.Dimension.properties.totalPeopleCount.description": "El número total de asignaciones a la capa directamente, ya sea a través de una estación de trabajo o a través de un espacio de trabajo",
+  "models.Dimension.properties.totalPeopleCount.label": "Número total de asignaciones a la capa",
   "models.Dimension.properties.value.description": "El valor se puede usar para asociar la capa con un valor numérico para poder realizar estadísticas analíticas",
   "models.Dimension.properties.value.label": "Valor numérico",
   "models.Dimension.properties.workplacesBookableOnlyViaDimension.description": "Cuando está habilitado, las estaciones de trabajo en esta dimensión solo se pueden reservar mediante asignación directa a la dimensión y quedan excluidas de las reservas de pisos.",
@@ -57983,6 +59228,8 @@ const es = {
   "models.DimensionFloor.determinants.defined": "las asociaciones de la capa de análisis con los pisos",
   "models.DimensionFloor.determinants.undefined": "asociaciones de la capa de análisis a los pisos",
   "models.DimensionFloor.plural": "Asociaciones de capas de análisis a pisos",
+  "models.DimensionFloor.properties.bookableWorkplacesCount.description": "El número de estaciones de trabajo reservables para este piso",
+  "models.DimensionFloor.properties.bookableWorkplacesCount.label": "Número de puestos de trabajo reservables en la planta",
   "models.DimensionFloor.properties.id.label": "Identificador de la asociación de la capa de análisis a los pisos",
   "models.DimensionFloor.properties.peopleCount.description": "El número de personas asignadas, ya sea directamente asignadas a los espacios o a través de una estación de trabajo para este piso.",
   "models.DimensionFloor.properties.peopleCount.label": "Numero de asignaciones",
@@ -58436,8 +59683,6 @@ const es = {
   "models.Organization.singular": "organización",
   "models.Organization.views.dq-organization-hierarchy.help": "Detectar organizaciones que no están en la jerarquía correcta",
   "models.Organization.views.dq-organization-hierarchy.label": "Errores de jerarquía organizacional",
-  "models.Organization.views.dq-organization-to-room.help": "Detectar asociaciones espaciales con organizaciones que no son válidas",
-  "models.Organization.views.dq-organization-to-room.label": "Errores en la organización de los espacios",
   "models.Organization.views.hierarchy.help": "Ver la jerarquía de la organización",
   "models.Organization.views.hierarchy.label": "Jerarquía",
   "models.OrganizationBuilding.description": "Una asociación de edificios organizativos le permite definir las organizaciones responsables de cada edificio.",
@@ -58768,6 +60013,8 @@ const es = {
   "models.Room.views.dq-capacity-gt-0.label": "Espacios que tengan una capacidad excluyendo asientos distintos de 0",
   "models.Room.views.dq-no-point.help": "Espacios que tienen 0, 1 o 2 puntos y por lo tanto deberían tener área cero",
   "models.Room.views.dq-no-point.label": "Espacios sin puntos suficientes",
+  "models.Room.views.dq-organization-to-room.help": "Detectar asociaciones espaciales con organizaciones que no son válidas",
+  "models.Room.views.dq-organization-to-room.label": "Errores en la organización de los espacios",
   "models.Room.views.dq-uniq-name.help": "Sugiere nombres para espacios que no tienen nombre o el nombre no es único en el mismo piso",
   "models.Room.views.dq-uniq-name.label": "Nombres propuestos para espacios",
   "models.Room.views.map.help": "Ver plan de espacio %{name}",
@@ -59059,11 +60306,31 @@ const es = {
   "models.WorkplaceTypeItemType.properties.zIndex.description": "El índice de altura le permite definir el orden de visualización de los tipos de objetos, cuanto mayor sea el índice, más estará el objeto por encima de los demás.",
   "models.WorkplaceTypeItemType.properties.zIndex.label": "Índice de altura",
   "models.WorkplaceTypeItemType.singular": "tipo de objeto en tipo de estación de trabajo",
+  "models.WorkplaceUsageType.description": "El tipo de uso de la estación de trabajo permite categorizar las estaciones de trabajo según su uso, utilizando la terminología de la empresa, y visualizarlas con diferentes colores en los planos.",
+  "models.WorkplaceUsageType.determinant.defined": "el tipo de estación de trabajo utilizada",
+  "models.WorkplaceUsageType.determinant.undefined": "un tipo de uso de estación de trabajo",
+  "models.WorkplaceUsageType.determinants.defined": "tipos de uso de estaciones de trabajo",
+  "models.WorkplaceUsageType.determinants.undefined": "tipos de uso de estaciones de trabajo",
+  "models.WorkplaceUsageType.plural": "tipos de uso de estaciones de trabajo",
+  "models.WorkplaceUsageType.properties.color.description": "El color se utiliza para diferenciar las estaciones de trabajo de este tipo en planos y mapas.",
+  "models.WorkplaceUsageType.properties.color.label": "color",
+  "models.WorkplaceUsageType.properties.description.description": "Descripción detallada que explica el uso y la finalidad de este tipo de uso",
+  "models.WorkplaceUsageType.properties.description.label": "Descripción",
+  "models.WorkplaceUsageType.properties.id.description": "Identificador único para el tipo de uso",
+  "models.WorkplaceUsageType.properties.id.label": "identificador de tipo de uso de la estación de trabajo",
+  "models.WorkplaceUsageType.properties.name.description": "Nombre del tipo de uso que permite su identificación",
+  "models.WorkplaceUsageType.properties.name.label": "apellido",
+  "models.WorkplaceUsageType.singular": "tipo de uso de la estación de trabajo",
+  "useOpenMeetingRoomBookingDrawer.bookRoom": "Para reservar",
+  "useOpenMeetingRoomBookingDrawer.noRoomName": "Espacio de nombres indefinido",
+  "useOpenMeetingRoomBookingDrawer.roomBooking": "Reserva de espacio",
   "validation.regex.company.name": "El nombre de la empresa debe estar en minúsculas, contener solo letras, números y guiones.",
+  "validation.regex.company.workplaceBookingConfirmationRange": "La ventana de confirmación de la reserva debe tener el formato HH:MM-HH:MM (por ejemplo, 06:00-10:30)",
   "validation.regex.default": "El valor debe coincidir con el formato: %{pattern}",
   "weight.gram": "Gramo",
   "weight.kilogram": "Kilogramo",
-  "workplaceTypeLayoutFilter.Empty": "No hay estaciones de trabajo en este momento en los espacios, puedes agregar más modificando un espacio y agregando estaciones de trabajo, luego puedes controlar su visualización desde esta sección"
+  "workplaceTypeLayoutFilter.Empty": "No hay estaciones de trabajo en este momento en los espacios, puedes agregar más modificando un espacio y agregando estaciones de trabajo, luego puedes controlar su visualización desde esta sección",
+  "workplaceUsageTypeLayoutFilter.Empty": "Actualmente no se ha asignado ningún tipo de uso a la estación de trabajo. Puede asignarle uno editando las estaciones de trabajo y, a continuación, controlar su visualización desde esta sección."
 };
 const it = {
   "AccordionSearchParamFilterDates.title": "Date",
@@ -59095,6 +60362,7 @@ const it = {
   "AuthenticationButton.connections.auth0.label": "Conto da surf",
   "AuthenticationButton.connections.google-oauth2.help": "Accedi con il tuo account Google",
   "AuthenticationButton.connections.google-oauth2.label": "Google",
+  "AuthentificationConnectionNotFoundForEmail.message": "Nessuna connessione di autenticazione trovata per il dominio %{domain}",
   "AutocompleteAddress.autocomplete.placeholder": "Trova il tuo indirizzo qui",
   "AvatarPersonDrawer.help": "Visualizza ulteriori informazioni su %{name}",
   "BelongsToImportHelp.title": "Tipi di oggetto associati a %{objectTypeLabel} ordinati in base alle chiavi di importazione disponibili",
@@ -59116,6 +60384,20 @@ const it = {
   "BookedBuildingWorkplaceList.noWorkplaceBooked": "Nessuna postazione riservata",
   "BookedBuildingWorkplaceList.viewBookedWorkplaceOnMap": "Visualizza la workstation %{workplaceName} riservata nel piano",
   "BookedBuildingWorkplaceList.workplaceIsBooked": "La tua postazione di lavoro è riservata",
+  "BookingDialog.attendeesHelper": "Seleziona i collaboratori o premi Invio per aggiungere un indirizzo email.",
+  "BookingDialog.attendeesInvalidEmail": "Inserisci un indirizzo email valido per aggiungerli alla riunione.",
+  "BookingDialog.attendeesLabel": "Invita i partecipanti",
+  "BookingDialog.attendeesNoOptions": "Nessun collaboratore trovato. Premi Invio per aggiungere l'email.",
+  "BookingDialog.attendeesPlaceholder": "Inserisci un nome o un indirizzo email...",
+  "BookingDialog.attendeesTypeToSearch": "Inserisci almeno 2 caratteri per cercare i collaboratori.",
+  "BookingDialog.book": "Per prenotare",
+  "BookingDialog.bookRoomTitle": "Prenota una sala riunioni",
+  "BookingDialog.cancel": "per cancellare",
+  "BookingDialog.description": "Descrizione (facoltativa)",
+  "BookingDialog.enableTeamsMeeting": "Aggiungi un collegamento Teams alla riunione",
+  "BookingDialog.endTime": "Ora di fine",
+  "BookingDialog.startTime": "Ora di inizio",
+  "BookingDialog.subject": "Scopo della riunione",
   "BookingMap.errors.noBuildingInFilter": "Seleziona un edificio e un piano nel filtro per visualizzare le prenotazioni",
   "BookingMap.errors.noDateInFilter": "Seleziona una data nel filtro per vedere le prenotazioni",
   "BookingMap.errors.noFloorInFilter": "Seleziona un piano nel filtro per vedere le prenotazioni",
@@ -59193,11 +60475,21 @@ const it = {
   "BuildingInventory.title": "L'inventario dell'edificio %{building.name}",
   "BuildingLabel.scenario": "Questo edificio è uno scenario dell'edificio %{name}",
   "BuildingMenuItem.menu.scenario": "Scenari ( %{count} )",
+  "BuildingMissingStructuredAddress.message": "All'indirizzo dell'edificio ' %{buildingName} ' mancano componenti strutturati (via, città, ecc.)",
+  "BuildingMissingStructuredAddressAction.message": "All'indirizzo dell'edificio ' %{buildingName} ' mancano componenti strutturati (via, città, ecc.)",
   "BuildingReports.items.sheets.merged": "Fusione",
   "BuildingReports.items.sheets.physicals": "Oggetti fisici",
   "BuildingReports.items.sheets.virtuals": "Oggetti virtuali",
+  "BuildingSelect.options.all": "Tutti gli edifici",
+  "BuildingSelectionView.selectBuildingToViewMap": "Scegli un edificio per visualizzare la planimetria",
   "CalculatedPropertiesAccordions.kpi": "Indicatori",
   "CalculatedPropertiesAccordions.mesures": "Misure",
+  "CalendarHeader.bookingTitle": "Prenota questa sala riunioni",
+  "CalendarHeader.refreshTooltip": "Aggiorna il calendario",
+  "CalendarScopeConsentButton.alertMessage": "Per prenotare le sale riunioni, è necessario autorizzare Surfy ad accedere al calendario Microsoft. Fare clic sul pulsante qui sotto per concedere le autorizzazioni necessarie.",
+  "CalendarScopeConsentButton.alertTitle": "Per prenotare le camere è necessario il permesso",
+  "CalendarScopeConsentButton.buttonHelp": "Verrai reindirizzato a Microsoft per concedere le autorizzazioni",
+  "CalendarScopeConsentButton.buttonLabel": "Consenti l'accesso al calendario",
   "CalibrateLayoutDrawer.options.inputs.scale.label": "Fattore di scala",
   "CalibrateLayoutDrawer.options.inputs.step.label": "Valore di traduzione",
   "CalibrateLayoutDrawer.options.inputs.translate.x.label": "Asse X",
@@ -59223,16 +60515,18 @@ const it = {
   "CheckAllDefaultViews.shortcuts.title": "Collegamenti di installazione",
   "CheckAllDefaultViews.shortcuts.views.buttonsHelp": "Controlla questa vista per tutti i tipi di entità",
   "CheckAllDefaultViews.shortcuts.views.title": "Scorciatoie per le visualizzazioni dell'interfaccia predefinite",
+  "CloneEntitiesFailed.cloneFailed": "La clonazione è impossibile.",
   "CollapseSwitchButton.help.false": "Guarda il dettaglio",
   "CollapseSwitchButton.help.true": "Nascondi il dettaglio",
   "CollapseWorkplaceAffectationList.title": "Assegna questa persona solo per i giorni seguenti",
   "CollapseWorkplaceAffectationList.updateAffectationDay.false": "Rimuovi l'incarico di questa persona %{day}",
   "CollapseWorkplaceAffectationList.updateAffectationDay.true": "Colpisci questa persona %{day}",
   "ColorBox.NoColorHelp": "Seleziona un colore tramite la tavolozza",
+  "ColorizeRoomTypeOption.useRoomTypeColor": "Usa il colore del tipo di spazio",
   "CompanyDashboard.dashboards.area": "Dashboard delle superfici",
   "CompanyDashboard.dashboards.workplace": "Cruscotto del desktop",
   "CompanyDuplicateDownload.deleteReporting.help": "Elimina i dati di reporting calcolati, devi ricalcolare i dati di reporting per averli di nuovo, questa opzione consente la pulizia dei dati di reporting",
-  "CompanyDuplicateDownload.deleteReporting.progress": "Eliminazione dei dati di reporting da {{objectType}}: {{current}}/{{total}}",
+  "CompanyDuplicateDownload.deleteReporting.progress": "Eliminazione dei dati di reporting da %{objectType} : %{current} / %{total}",
   "CompanyDuplicateDownload.deleteReporting.title": "Elimina i dati calcolati dalle entità di segnalazione",
   "CompanyDuplicateDownload.downloadJson.help": "Questo file JSON consente la duplicazione della piattaforma se vengono rispettate tutte le regole sulla qualità dei dati",
   "CompanyDuplicateDownload.downloadJson.title": "Scarica il file JSON dei dati aziendali",
@@ -59271,8 +60565,10 @@ const it = {
   "CubySaveAsImageButton.label": "Salva immagine",
   "CubyWallModeSelect.label": "Visualizzazione delle partizioni",
   "CubyWallModeSelect.options.cuby": "Cubo",
+  "CubyWallModeSelect.options.cubyRealitySelected": "Cuby con selezione nella realtà",
   "CubyWallModeSelect.options.half": "Mezze partizioni",
   "CubyWallModeSelect.options.no": "Nessuno",
+  "CubyWallModeSelect.options.noWallSelected": "Senza partizioni, con selezione",
   "CubyWallModeSelect.options.reality": "La realtà",
   "CustomEntityBreadcrumbWorkCanvasLayoutViewLabel.help": "Puoi modificare la visione tramite i menu del piano",
   "CustomEntityBreadcrumbWorkCanvasLayoutViewLabel.viewSet": "Visione",
@@ -59294,12 +60590,19 @@ const it = {
   "DataQualityIndex.generalInfo.title": "informazioni generali",
   "DataQualityIndex.subtitle": "Elenca tutti i report sulla qualità dei dati per entità",
   "DataQualityIndex.title": "Elenco dei report sulla qualità dei dati",
+  "DataQualityIssueRow.elementCountPlural": "elementi",
+  "DataQualityIssueRow.elementCountSingular": "elemento",
+  "DataQualityIssueRow.viewButton": "Vedere",
+  "DataQualityIssuesHeader.summary": "È stato rilevato un problema di qualità dei dati in %{totalIssues} %{totalIssuesPlural} % %{totalIssuesPlural} %{viewsCount} %{viewsCountPlural} . Risolvi i seguenti problemi prima di continuare:",
+  "DataQualityIssuesHeader.title": "Rilevati problemi di qualità dei dati",
   "DataQualityTable.numberOfLines": "Numero di righe",
+  "DateDimensionFilter.excludeWeekends": "Escludere i fine settimana",
   "DateDimensionSelect.options.day": "Giorno",
   "DateDimensionSelect.options.month": "Mese",
   "DateDimensionSelect.options.quarter": "Trimestre",
   "DateDimensionSelect.options.week": "Settimana",
   "DateDimensionSelect.options.year": "Anno",
+  "DayHeaders.time": "Ora",
   "DeleteDialog.cancel.help": "Annulla eliminazione",
   "DeleteDialog.cancel.label": "per cancellare",
   "DeleteDialog.content": "Stai per eliminare <b>%{determinant.undefined}</b> , questa azione non è reversibile e potrebbe avere un impatto, sei sicuro di voler eseguire questa azione?",
@@ -59314,6 +60617,8 @@ const it = {
   "DeleteMultipleDialog.title": "Rimuovi %{determinants.undefined}",
   "DeleteMultipleEntities.help": "Elimina %{determinants.defined} selezionati",
   "DeleteWorkplace.help": "Elimina workstation: [ %{name} ], anche le assegnazioni verranno eliminate",
+  "DeskBookingConfirmationButton.bookingConfirmed": "La prenotazione è stata confermata.",
+  "DeskBookingConfirmationButton.confirm": "Conferma la tua presenza",
   "DimensionBuildingPlanningLabel.youAreAssigned": "Ti è stato assegnato %{dimensionTypeName} %{dimensionName}",
   "DimensionInfo.carbonFootprint.help": "L'impronta di carbonio è %{value} di CO2 emessa per %{dimensionType} %{dimension}",
   "DimensionInfo.dimensionPeopleCount.help": "Sono presenti %{value} persone interessate in %{dimensionType} %{dimension}",
@@ -59448,6 +60753,8 @@ const it = {
   "DisplayWorkplaceTexts.workplaceOrganizationLevel0.label": "Direzione",
   "DisplayWorkplaceTexts.workplaceOrganizationLevel1.help": "Visualizzare o meno i servizi delle postazioni in planimetria",
   "DisplayWorkplaceTexts.workplaceOrganizationLevel1.label": "Servizio",
+  "DisplayWorkplaceTexts.workplaceUsageType.help": "Visualizza o nascondi il tipo di utilizzo della postazione di lavoro nel piano",
+  "DisplayWorkplaceTexts.workplaceUsageType.label": "Tipo di utilizzo",
   "DownloadBuildingImagesAccordion.accordion.title": "Esporta le immagini dell'intero edificio",
   "DownloadBuildingImagesAccordion.buttons.download.help": "Scarica tutte le planimetrie di tutti i piani dell'edificio in formato png in un zip, i tempi di attesa per questa estrazione possono essere lunghi",
   "DownloadBuildingImagesAccordion.buttons.download.label": "Scarica ZIP",
@@ -59494,12 +60801,15 @@ const it = {
   "EntityHasManyProperties.associations.reporting": "Associazioni di reporting per %{determinant.defined}",
   "EntityHasManyProperties.associations.security": "Associazioni di sicurezza per %{determinant.defined}",
   "EntityPropertyTypesMandatoryNotRespected.title": "Le seguenti proprietà sono obbligatorie",
+  "EntityPropertyTypesRegexValidationNotRespected.title": "Le seguenti proprietà non sono conformi alla convalida delle espressioni regolari",
   "ErrorImpossibleToFindTheEntities.text": "Impossibile trovare %{determinants.defined} cercato",
   "ErrorImpossibleToFindTheEntity.text": "Impossibile trovare %{determinant.defined} ricercato",
   "ErrorTextZone.reload": "Ripeti l'operazione",
+  "Errors.AUTHENTIFICATION_CONNECTION_NOT_FOUND_FOR_EMAIL": "Nessuna connessione di autenticazione trovata per il dominio %{domain}",
   "Errors.networkError": "Sono stati rilevati problemi di connessione o di rete, attendi e riprova tra qualche secondo",
   "ExportQueryNodeToFileButton.help.list": "Scarica in excel %{determinants.defined}",
   "FieldTypeAddress.edit": "Cambia indirizzo",
+  "FieldTypeAddress.geocode": "Geocodifica l'indirizzo per estrarre i componenti strutturati (via, città, codice postale, paese)",
   "FieldTypeAddress.remove": "Elimina indirizzo",
   "FieldTypeColor.NoColorHelp": "Seleziona un colore",
   "FieldTypeColor.NotHexMatchError": "Il campo non rispetta il formato esadecimale di un colore",
@@ -59519,6 +60829,16 @@ const it = {
   "FieldTypePassword.icons.copy": "Copia il contenuto della password negli appunti",
   "FieldTypePassword.icons.generate": "Genera una password univoca",
   "FileDropZone.dropZone": "Sposta e trascina il file di importazione in quest'area o fai clic nell'area per selezionare il file",
+  "FixAddressButton.button.fix": "Correggi l'indirizzo",
+  "FixAddressButton.button.help": "Correggi automaticamente l'indirizzo di ' %{buildingName} ' utilizzando la geocodifica di Google Maps",
+  "FixAddressButton.error.message": "❌ Correzione non riuscita: %{error}",
+  "FixAddressButton.errors.noStructuredAddress": "Impossibile estrarre l'indirizzo strutturato dalla geocodifica",
+  "FixAddressButton.errors.unknown": "Errore sconosciuto",
+  "FixAddressButton.errors.updateFailed": "Aggiornamento fallito in Surfy",
+  "FixAddressButton.progress.geocoding": "Recupero dell'indirizzo strutturato tramite Google Maps...",
+  "FixAddressButton.progress.refreshing": "Una vista rinfrescante...",
+  "FixAddressButton.progress.updating": "Aggiornamento dell'edificio a Surfy...",
+  "FixAddressButton.success.message": "✅ L'indirizzo di ' %{buildingName} ' è stato corretto con successo",
   "FloorMap.tabs.all": "Visualizza tutte le forme selezionate nell'elenco",
   "FloorMap.tabs.analyticsDimensionTypes": "Colora gli spazi sulla pianta in base ai <b>livelli di analisi</b>",
   "FloorMap.tabs.building": "Vedi le informazioni sull'edificio",
@@ -59539,6 +60859,7 @@ const it = {
   "FloorMap.tabs.users": "Postazioni a colori contro persone",
   "FloorMap.tabs.workplaceTypes": "Visualizza le <b>postazioni</b> per tipo di postazione sul piano",
   "FloorMap.tabs.workplaceUsage": "Colora le postazioni di lavoro in base al loro <b>stato</b>",
+  "FloorMap.tabs.workplaceUsageTypes": "Colorare le postazioni di lavoro in base al <b>tipo di utilizzo</b>",
   "FloorMap.tabs.workplaces": "Dettagli delle <b>workstation</b> selezionate",
   "FloorSelector.focus": "Seleziona solo questo piano",
   "FloorSelector.selectAll.false": "Seleziona tutti i piani",
@@ -59563,6 +60884,8 @@ const it = {
   "GlobalSearch.Start": "Puoi cercare ad esempio persone, spazi, postazioni di lavoro, oggetti o altre entità, la ricerca partirà dal 2° carattere",
   "GlobalSearch.close.help": "Cancella ricerca",
   "GlobalSearchIncludeScenarios.label": "Includi scenari nella ricerca",
+  "GoogleApiWrapper.configurationNotFound": "La chiave API di Google Maps non è configurata",
+  "GoogleApiWrapper.loadingFailed": "Impossibile caricare l'API di Google Maps",
   "HalfDayWorkingLocationToggle.all.help": "Gli orari di apertura sono dalle 8:00 alle 19:00.",
   "HalfDayWorkingLocationToggle.all.label": "Tutto il giorno",
   "HalfDayWorkingLocationToggle.am.help": "L'orario mattutino è dalle 8:00 alle 13:30.",
@@ -59619,7 +60942,8 @@ const it = {
   "ImportUpdateOption.help": "Aggiorna gli oggetti selezionati",
   "ImportUpdateOption.label": "Aggiornare",
   "IndexContextMenuItem.navigation": "Navigazione",
-  "InfiniteScrollLoader.loader.completed": "Sono stati caricati tutti %{count} elementi",
+  "InfiniteScrollLoader.loader.completed_plural": "Sono stati caricati tutti gli elementi %{count}",
+  "InfiniteScrollLoader.loader.completed_singular": "1 elemento è stato caricato",
   "InfiniteScrollLoader.loader.loadMore": "Carica altro ( %{displayed} / %{total} )",
   "InfiniteScrollLoader.loader.loading": "Caricamento...",
   "InfiniteScrollLoader.loader.scrollForMore": "Scorri verso il basso per vedere di più...",
@@ -59653,11 +60977,22 @@ const it = {
   "LayoutFiltersTabOpenToggleIcon.open.true": "Chiudi il menu della mappa per ottimizzare lo spazio di visualizzazione della mappa",
   "LayoutFiltersTabZone.collapse.help": "Il menu è chiuso, puoi aprirlo cliccando sulla prima icona per aprirlo e vedere i dettagli degli elementi del piano",
   "LayoutViewSwitch.title": "Cambia la visione del piano",
+  "Legend.available": "Disponibile",
+  "Legend.booked": "Prenotare",
+  "Legend.past": "Passaggio",
   "LegendSelector.labels.default": "Legenda predefinita",
   "LegendSelector.title": "Seleziona legenda",
   "Level1OrganizationFilter.Empty": "Non esiste alcuna organizzazione associata agli spazi, puoi aggiungerne altre modificando uno spazio e associandolo a un'organizzazione, quindi puoi controllarne la visualizzazione da questa sezione",
   "ListRefetchButton.refetch": "Ricarica i dati dell'oggetto visibile",
   "LoadingSvgCircle.pleaseWait": "Attendi durante la sincronizzazione",
+  "LoginLanguageSelector.ariaLabel": "Cambia la lingua in %{language}",
+  "LoginLanguageSelector.languageNameDe": "tedesco",
+  "LoginLanguageSelector.languageNameEn": "Inglese",
+  "LoginLanguageSelector.languageNameEs": "spagnolo",
+  "LoginLanguageSelector.languageNameFr": "francese",
+  "LoginLanguageSelector.languageNameIt": "Italiano",
+  "LoginLanguageSelector.languageNameNl": "Olandese",
+  "LoginLanguageSelector.tooltip": "Cambia la lingua in %{language}",
   "LoginView.connections.AzureADv2.help": "Accedi con il tuo account aziendale Microsoft tramite Office 365",
   "LoginView.connections.AzureADv2.label": "Ufficio 365",
   "LoginView.connections.Username-Password-Authentication.help": "Accedi con il tuo account Surfy",
@@ -59671,6 +61006,53 @@ const it = {
   "LoginView.texts.description": "Accesso a Surfy",
   "LoginView.texts.title": "Login",
   "LogoutMenuLink.logout": "disconnessione",
+  "LuccaSynchronizationOperationLabel.title": "Sincronizzazione Lucca",
+  "MSGraphConsentPrompt.buttonHelp": "Per convalidare questo consenso devi essere un amministratore di Microsoft 365.",
+  "MSGraphConsentPrompt.buttonLabel": "Concedi l'autorizzazione Microsoft richiesta",
+  "MSGraphConsentPrompt.title": "È richiesta un'autorizzazione Microsoft aggiuntiva",
+  "MSPlacesBuildingsSync.restart.button": "Riavvia la sincronizzazione dell'edificio",
+  "MSPlacesConsentButton.alert.message": "La sincronizzazione con Microsoft Places richiede autorizzazioni aggiuntive. Fai clic sul pulsante qui sotto per consentire l'accesso in lettura e scrittura ai dati di Places.",
+  "MSPlacesConsentButton.alert.title": "Sono richieste autorizzazioni aggiuntive",
+  "MSPlacesConsentButton.button.help": "Concedi l'autorizzazione per creare e modificare edifici in Microsoft Places",
+  "MSPlacesConsentButton.button.label": "Consenti l'accesso a Microsoft Places",
+  "MSPlacesFloorsSync.restart.button": "Riavvia la sincronizzazione del piano",
+  "MSPlacesRoomsBasicSync.headers.capacity": "Capacità",
+  "MSPlacesRoomsBasicSync.headers.displayName": "Nome da visualizzare",
+  "MSPlacesRoomsBasicSync.headers.email": "E-mail",
+  "MSPlacesRoomsBasicSync.headers.floorNumber": "Numero del piano",
+  "MSPlacesRoomsBasicSync.restart.button": "Riavvia la sincronizzazione della stanza",
+  "MSPlacesRoomsDisplayNameSyncTab.alertDescription": "Questa operazione confronta i nomi visualizzati delle stanze di Microsoft Places con i loro equivalenti surfy.",
+  "MSPlacesRoomsDisplayNameSyncTab.alertMatchingDescription": "Le camere vengono abbinate tramite l'indirizzo email di prenotazione.",
+  "MSPlacesRoomsDisplayNameSyncTab.alertMatchingTitle": "Logica corrispondente:",
+  "MSPlacesRoomsDisplayNameSyncTab.alertNoteDescription": "Quando viene rilevata una differenza, in Microsoft 365 viene aggiornato solo il nome visualizzato; per aggiornare il nome visualizzato vengono utilizzate le API utente di Graph.",
+  "MSPlacesRoomsDisplayNameSyncTab.alertNoteTitle": "Importante:",
+  "MSPlacesRoomsDisplayNameSyncTab.alertTitle": "Sincronizza i nomi visualizzati di Microsoft",
+  "MSPlacesRoomsDisplayNameSyncTab.consentButtonHelp": "Per convalidare questo consenso devi essere un amministratore di Microsoft 365.",
+  "MSPlacesRoomsDisplayNameSyncTab.consentButtonLabel": "Concedi l'autorizzazione Microsoft richiesta",
+  "MSPlacesRoomsDisplayNameSyncTab.consentMessage": "Per continuare a sincronizzare i nomi visualizzati delle stanze di MS Places sono necessarie le seguenti autorizzazioni: %{scopes} .",
+  "MSPlacesRoomsDisplayNameSyncTab.consentTitle": "È richiesta un'autorizzazione Microsoft aggiuntiva",
+  "MSPlacesRoomsDisplayNameSyncTab.restartButton": "Riavvia la sincronizzazione",
+  "MSPlacesRoomsEmailSyncTab.alert.description1": "Questa operazione sincronizza gli indirizzi email delle stanze di Microsoft Places con la proprietà bookingEmail delle stanze di Surfy. La sincronizzazione è unidirezionale: MS Places → Surfy.",
+  "MSPlacesRoomsEmailSyncTab.alert.matchingDescription": "Le stanze sono associate tramite displayName e piano (parentId). Le stanze devono essere già collegate o avere nomi corrispondenti per essere sincronizzate.",
+  "MSPlacesRoomsEmailSyncTab.alert.matchingTitle": "Corrispondenza:",
+  "MSPlacesRoomsEmailSyncTab.alert.noteDescription": "Verranno visualizzate solo le stanze con indirizzi email diversi per gli aggiornamenti. Le stanze con indirizzi email corrispondenti vengono visualizzate con la dicitura &quot;Nessuna modifica&quot;.",
+  "MSPlacesRoomsEmailSyncTab.alert.noteTitle": "Notato:",
+  "MSPlacesRoomsEmailSyncTab.alert.title": "Sincronizza le email di MS Places con Surfy",
+  "MSPlacesRoomsEmailSyncTab.restart.button": "Riavvia la sincronizzazione della posta elettronica",
+  "MSPlacesRoomsSync.displayNameSyncTabLabel": "Sincronizza i nomi visualizzati",
+  "MSPlacesRoomsSync.doneChipLabel": "Finito",
+  "MSPlacesRoomsSync.emailSyncTabLabel": "Sincronizzare le email",
+  "MSPlacesRoomsSync.syncTabLabel": "Sincronizza le stanze",
+  "MSPlacesSync.restart.button": "Riavvia tutta la sincronizzazione",
+  "MSPlacesSync.steps.rooms.suffix": "(Solo sale riunioni)",
+  "MSPlacesSyncOperationLabel.title": "Sincronizzazione di Microsoft Places",
+  "MSUsersConsentButton.alertMessage": "Per offrire la sincronizzazione degli utenti, Surfy deve essere in grado di leggere gli utenti di Microsoft 365. Fai clic sul pulsante qui sotto per concedere l'autorizzazione richiesta.",
+  "MSUsersConsentButton.alertTitle": "Consenti l'accesso agli utenti di Microsoft Graph",
+  "MSUsersConsentButton.buttonHelp": "Verrai reindirizzato a Microsoft per concedere l'accesso alla directory.",
+  "MSUsersConsentButton.buttonLabel": "Consenti la sincronizzazione degli utenti Microsoft",
+  "MSUsersSync.description": "Sincronizza gli utenti di Microsoft 365 con i collaboratori surfy. I collaboratori mancanti vengono creati automaticamente a partire dal loro indirizzo email.",
+  "MSUsersSync.refresh": "Sincronizza gli utenti Microsoft",
+  "MSUsersSync.title": "Sincronizzazione utente Microsoft",
   "MapFilterNodeIsAllSelected.help": "Verrà caricata tutta la selezione sottostante, anche se vengono creati nuovi oggetti",
   "MapFilterNodeToggleAll.action.false": "Deseleziona tutto",
   "MapFilterNodeToggleAll.action.true": "Seleziona tutto",
@@ -59688,10 +61070,64 @@ const it = {
   "MapLegendWorkplace.title": "Posto di lavoro",
   "MapLegendWorkplace.workplaces.flex": "Le postazioni sono in flex",
   "MapLegendWorkplace.workplaces.free": "Le postazioni sono gratuite",
+  "MeetingRoomBookAction.bookRoom": "Prenota tramite il calendario",
+  "MeetingRoomCard.availability.available": "Disponibile in questa fascia oraria",
+  "MeetingRoomCard.availability.searching": "Verifica disponibilità...",
+  "MeetingRoomCard.bookingEmailAvailable": "Indirizzo di prenotazione disponibile: %{email}",
+  "MeetingRoomCard.calendarFor": "Ordine del giorno per",
   "MeetingRoomCard.locateSpace": "Individua lo spazio sulla planimetria",
+  "MeetingRoomCard.noRoomName": "Spazio dei nomi indefinito",
+  "MeetingRoomCard.roomCalendar": "Calendario spaziale",
   "MeetingRoomCard.seats.1": "%{count} posto",
   "MeetingRoomCard.seats.n": "%{count} posti",
+  "MeetingRoomCard.table.actions": "Azioni",
+  "MeetingRoomCard.table.building": "Edificio",
+  "MeetingRoomCard.table.capacity": "Capacità",
+  "MeetingRoomCard.table.floor": "Piano",
+  "MeetingRoomCard.table.name": "Nome",
+  "MeetingRoomCard.table.type": "Tipo",
+  "MeetingRoomCard.tabs.buildingMap": "Vista in pianta",
+  "MeetingRoomCard.tabs.cards": "Visualizza le schede tecniche",
+  "MeetingRoomCard.tabs.table": "Vista tabella",
+  "MeetingRoomCard.viewCalendar": "Consulta il calendario delle prenotazioni",
   "MeetingRoomCard.viewPicture": "Vedi la foto dello spazio",
+  "MeetingRoomCardSeats.seatsMultiple": "%{count} posti",
+  "MeetingRoomCardSeats.seatsSingle": "%{count} posto",
+  "MeetingRoomDirectBookAction.bookingInProgressHelp": "Prenotazione in corso...",
+  "MeetingRoomDirectBookAction.bookingSuccess": "Prenotazione confermata per %{roomName} ( %{timeRange} )",
+  "MeetingRoomDirectBookAction.directBook": "Prenotazione rapida",
+  "MeetingRoomDirectBookAction.missingSelection": "Per prima cosa, seleziona un giorno e una fascia oraria.",
+  "MeetingRoomDirectBookAction.noRoomName": "Spazio dei nomi indefinito",
+  "MeetingRoomDirectBookAction.roomUnavailable": "La sala non è disponibile in questa fascia oraria.",
+  "MeetingRoomDirectBookAction.schedulesLoading": "La disponibilità è in fase di caricamento",
+  "MeetingRooms.clearFilters": "Cancella filtri",
+  "MeetingRooms.loadingAvailabilityTooltip": "Caricamento disponibilità prenotazione...",
+  "MeetingRooms.noMeetingRoomsConfigured": "Non hai sale riunioni configurate tramite gruppi di tipologia di spazio",
+  "MeetingRooms.noRoomsFound": "Nessuna stanza corrisponde alla tua ricerca, puoi cancellare i filtri di ricerca",
+  "MeetingRooms.selectionCount": "%{count} spazi nella selezione",
+  "MeetingRoomsBuildingCuby.noRoomsFound": "Nessuna stanza corrisponde alla tua ricerca, puoi cancellare i filtri di ricerca",
+  "MeetingRoomsBuildingMapFloorSpaceAction.ariaLabel": "Apri il cursore di superficie",
+  "MeetingRoomsBuildingMapFloorSpaceAction.tooltip": "Regola la scala delle superfici",
+  "MeetingRoomsBuildingMapResetViewAction.ariaLabel": "Ripristinare la telecamera alla vista iniziale dall'alto",
+  "MeetingRoomsBuildingMapResetViewAction.tooltip": "Torna alla vista iniziale dall'alto",
+  "MeetingRoomsBuildingMapWallModeToggle.ariaLabel": "Attiva/disattiva la modalità di visualizzazione a parete",
+  "MeetingRoomsBuildingMapWallModeToggle.tooltip.noWallSelected": "Nascondi le pareti per una visuale libera",
+  "MeetingRoomsBuildingMapWallModeToggle.tooltip.reality": "Visualizza le pareti in modalità realtà",
+  "MeetingRoomsDayFilters.dayTooltip": "Filtra le stanze disponibili per %{day}",
+  "MeetingRoomsDayFilters.nextTooltip": "giorni seguenti",
+  "MeetingRoomsDayFilters.previousTooltip": "Giorni precedenti",
+  "MeetingRoomsDayFilters.title": "Giorni",
+  "MeetingRoomsFilterOption.multiSelectTooltip": "Aggiungi o rimuovi questa opzione dalla selezione",
+  "MeetingRoomsFilterOption.singleSelectAriaLabel": "Seleziona solo questa opzione",
+  "MeetingRoomsFilterOption.singleSelectTooltip": "Mostra solo questa opzione",
+  "MeetingRoomsHourRangeSelector.rangeEndValueLabel": "Fine: %{time}",
+  "MeetingRoomsHourRangeSelector.rangeSelectionTooltip": "Trascina le maniglie per impostare l'intervallo di tempo utilizzato per cercare le prenotazioni.",
+  "MeetingRoomsHourRangeSelector.rangeStartValueLabel": "Inizio: %{time}",
+  "MeetingRoomsRefreshSelectionButton.refreshSelection": "Aggiorna la selezione",
+  "MeetingRoomsSearchFilter.searchLabel": "Ricerca",
+  "MeetingRoomsSearchFilter.searchPlaceholder": "Cerca una stanza...",
+  "MicrosoftUsersSyncTitle.title": "Sincronizzazione utente Microsoft",
+  "MoffiSyncOperationLabel.title": "Sincronizzazione Moffi",
   "MouvementMatrixImport.errors.noSheet": "Impossibile trovare il foglio Excel con nome %{name} [ %{objectTypeName} ]",
   "MovePersonFromWorkplaceToRoomListButtonItem.help": "Questa opzione richiede l'aggiornamento della pagina per vedere il risultato, è possibile concatenare più movimenti senza aggiornare",
   "MovePersonFromWorkplaceToRoomListButtonItem.label": "Sposta questa persona dalla sua postazione di lavoro allo spazio della postazione di lavoro",
@@ -59714,12 +61150,13 @@ const it = {
   "NumberOfPeoplePerRowField.label": "Numero di persone per linea per assegnazioni di spazio",
   "ObjectTypeImportKeys.title": "Le chiavi disponibili per riconciliare %{determinants.undefined} nell'ordine che preferisci, se desideri modificare una delle proprietà della chiave devi utilizzare l'identificatore come chiave",
   "ObjectTypeImportScalarProperties.help": "Copia negli appunti",
-  "Operations.exportZbre.label": "Esporta Z#ber",
-  "Operations.lucca-sync.label": "Sincronizzazione Lucca",
-  "Operations.moffi-sync.label": "Sincronizzazione Moffi",
-  "Operations.sharingcloud-sync.label": "Sincronizzazione del cloud di condivisione",
-  "Operations.talentsoft-import.label": "Importa Talentsoft",
-  "Operations.zbre-sync.label": "Sincronizzazione Z#ber",
+  "OperationHelpMarkdown.help.documentation": "Documentazione",
+  "OrganizationDataQualityHierarchy.headerChildOrganizations": "Organizzazioni figlie",
+  "OrganizationDataQualityHierarchy.headerOrganization": "Organizzazione",
+  "OrganizationDataQualityHierarchy.headerParentOrganization": "organizzazione madre",
+  "OrganizationDataQualityHierarchy.headerPlatform": "Piattaforma",
+  "OrganizationDataQualityHierarchy.headerReason": "Motivo ?",
+  "OrganizationDataQualityHierarchy.reasonHasParentAndChildren": "L'organizzazione ha bambini e anche una madre",
   "OrganizationFloorMapFilter.TooltipTitle.notSelected": "Seleziona %{organization} per colorare gli spazi sulla planimetria",
   "OrganizationFloorMapFilter.TooltipTitle.selected": "Deselezionando %{organization} verranno rimossi i colori dalla mappa",
   "OrganizationFloorMapFilter.tooltip.false": "Deseleziona tutte le organizzazioni di seguito",
@@ -59733,6 +61170,21 @@ const it = {
   "ParkingBookIcon.parking.booked": "Il tuo parcheggio è riservato",
   "ParkingBookIcon.parking.release.help": "Rilascio prenotazione parcheggio",
   "ParkingBookIcon.parking.viewOnMap": "Vedi i parcheggi riservati sulla mappa",
+  "PartnerEntityCreateTab.button.help": "Crea in %{partnerName}",
+  "PartnerEntityCreateTab.button.label": "Crea in %{partnerName}",
+  "PartnerEntityCreateTab.progress.syncing": "Sincronizzazione di %{label} ...",
+  "PartnerEntityDeleteTab.button.help": "Elimina in %{partnerName}",
+  "PartnerEntityDeleteTab.button.label": "Elimina in %{partnerName}",
+  "PartnerEntityDeleteTab.progress.syncing": "Sincronizzazione di %{label} ...",
+  "PartnerEntitySync.errors.title": "Errori di sincronizzazione ( %{count} )",
+  "PartnerEntitySync.tabs.create": "Creare",
+  "PartnerEntitySync.tabs.delete": "Cancellare",
+  "PartnerEntitySync.tabs.noChange": "Nessun cambiamento",
+  "PartnerEntitySync.tabs.update": "Aggiornare",
+  "PartnerEntityUpdateTab.button.help": "Aggiorna in %{partnerName}",
+  "PartnerEntityUpdateTab.button.label": "Aggiorna in %{partnerName}",
+  "PartnerEntityUpdateTab.headers.type": "Tipo",
+  "PartnerEntityUpdateTab.progress.syncing": "Sincronizzazione di %{label} ...",
   "PersonAffectationsPanel.description": "I compiti della persona",
   "PersonAffectationsPanel.title": "Compiti",
   "PersonBadgePanel.description": "Informazioni varie sulla persona",
@@ -59784,6 +61236,7 @@ const it = {
   "PropertSelectorDrawer.options.reset.label": "Ripristina selezione",
   "PropertSelectorDrawer.tabLabel": "Proprietà",
   "PropertyTypeErrors.title": "I seguenti valori non esistono per la proprietà <b>%{propertyTypeLabel}</b> in <b>%{objectTypeLabel}</b>",
+  "RedirectCountdownTimer.redirectMessage": "Questa pagina verrà automaticamente reindirizzata a %{redirectTarget} tra %{secondsRemaining} s",
   "ReduceMenuSwitch.open.false": "Comprimi il menu per sfruttare lo spazio di lavoro",
   "ReduceMenuSwitch.open.true": "Espandi il menu",
   "RefetchEntitiesButton.refetch": "Ricarica i dati dell'oggetto visibile",
@@ -59834,12 +61287,58 @@ const it = {
   "RoomAffectationsList.EmptyList": "Non c'è nessuno assegnato a questo spazio",
   "RoomAffectationsList.title": "Persone assegnate agli spazi",
   "RoomAffectationsOnlyList.title": "Persone assegnate agli spazi",
+  "RoomBookingCalendar.available": "Disponibile",
+  "RoomBookingCalendar.book": "Per prenotare",
+  "RoomBookingCalendar.bookRoomTitle": "Prenota una sala riunioni",
+  "RoomBookingCalendar.booked": "Prenotare",
+  "RoomBookingCalendar.bookingTitle": "Prenota questa sala riunioni",
+  "RoomBookingCalendar.cancel": "per cancellare",
+  "RoomBookingCalendar.clickToBook": "Clicca per prenotare %{day} alle %{time}",
+  "RoomBookingCalendar.dateTime": "Data e ora",
+  "RoomBookingCalendar.description": "Descrizione (facoltativa)",
+  "RoomBookingCalendar.endTime": "Ora di fine",
+  "RoomBookingCalendar.past": "Passaggio",
+  "RoomBookingCalendar.pastDay": "Impossibile prenotare: %{day} è già trascorso",
+  "RoomBookingCalendar.pastTime": "Impossibile prenotare: il tempo %{time} è già trascorso",
+  "RoomBookingCalendar.refreshTooltip": "Aggiorna il calendario",
+  "RoomBookingCalendar.slotBooked": "Questo slot è già riservato",
+  "RoomBookingCalendar.startTime": "Ora di inizio",
+  "RoomBookingCalendar.subject": "Scopo della riunione",
+  "RoomBookingCalendar.thisWeek": "Questa settimana",
+  "RoomBookingCalendar.time": "Ora",
+  "RoomBookingCalendar.unavailable": "Non disponibile o passato",
+  "RoomCalendarDrawer.calendarTitle": "Calendario delle prenotazioni",
+  "RoomCalendarDrawer.cancelled": "Annullato",
+  "RoomCalendarDrawer.errorFetchingEvents": "Errore durante il caricamento delle prenotazioni",
+  "RoomCalendarDrawer.noUpcomingEvents": "Nessuna prenotazione imminente",
+  "RoomCalendarDrawer.ongoing": "In corso",
+  "RoomCalendarDrawer.refreshTooltip": "Aggiorna il calendario",
+  "RoomCalendarDrawer.today": "Oggi",
+  "RoomCalendarDrawer.tomorrow": "Domani",
+  "RoomCalendarDrawer.tooltipDate": "Data",
+  "RoomCalendarDrawer.tooltipLocation": "Posto",
+  "RoomCalendarDrawer.tooltipOrganizedBy": "Organizzato da",
+  "RoomCalendarDrawer.tooltipTime": "Ogni ora",
+  "RoomCalendarDrawer.upcomingEventsSummary": "%{count} prenotazione/i in arrivo",
   "RoomCard.buttons.edit.false": "Modifica le proprietà dello spazio",
   "RoomCard.buttons.edit.true": "Interrompi la modifica",
+  "RoomCard.tabs.calendar": "Calendario",
+  "RoomCard.tabs.calendar.help": "Visualizza il calendario delle prenotazioni degli spazi",
+  "RoomCard.tabs.info.help": "Mostra informazioni dettagliate sullo spazio",
   "RoomCard.tabs.inventory": "Inventario",
+  "RoomCard.tabs.inventory.help": "Visualizza l'inventario dello spazio e le attrezzature",
   "RoomCard.tabs.people": "Compiti",
+  "RoomCard.tabs.people.help": "Mostra le persone assegnate a questo spazio",
   "RoomCard.tabs.room": "Spazio",
   "RoomCardSelectDimensions.needSave": "Salva o annulla le modifiche prima di poter modificare i livelli di analisi di questo spazio",
+  "RoomDataQualityOrganizationToRoom.headerBuilding": "Edificio",
+  "RoomDataQualityOrganizationToRoom.headerDirection": "Direzione",
+  "RoomDataQualityOrganizationToRoom.headerFloor": "Piano",
+  "RoomDataQualityOrganizationToRoom.headerReason": "Motivo ?",
+  "RoomDataQualityOrganizationToRoom.headerService": "Servizio",
+  "RoomDataQualityOrganizationToRoom.headerSpace": "Spazio",
+  "RoomDataQualityOrganizationToRoom.reasonDirectionHasParent": "L'organizzazione %{organizationName} viene utilizzata come dipartimento ma ha un'organizzazione padre.",
+  "RoomDataQualityOrganizationToRoom.reasonNoDirection": "L'organizzazione %{organizationName} non ha direzione ed è associata a uno spazio",
   "RoomFullName.noName": "spazio senza nome",
   "RoomGraphHandler.buttons.generateGraph.description": "Generando il grafico di orientamento si calcolano i nodi attraverso i quali il pathfinder può trovare gli spazi e gli arredi. Se è possibile selezionare lo spazio originale, il grafico è già stato generato.",
   "RoomGraphHandler.buttons.generateGraph.label": "Generare il grafico di orientamento",
@@ -59849,6 +61348,7 @@ const it = {
   "RoomGraphHandler.icons.displayNodes.description": "Mostra i percorsi nelle stanze",
   "RoomGraphHandler.icons.enablePathfinding.description": "Attiva il disegno del percorso dallo spazio di origine con la forma sotto il mouse",
   "RoomGraphHandler.rooms.origin": "Spazio originale",
+  "RoomLabels.capacity.suffix": "P.",
   "RoomMapFilter.Empty": "Non esiste un tipo di spazio associato agli spazi, puoi aggiungerne altri modificando uno spazio e aggiungendovi un tipo associato, quindi puoi controllarne la visualizzazione da questa sezione",
   "RoomSegmentRoomsList.title": "Gli spazi allegati a questo segmento",
   "RoomTooltip.roomWorkplaceAffectations": "Compiti della postazione di lavoro",
@@ -59857,6 +61357,7 @@ const it = {
   "RoomTypeGroupLabel.exclude.tooltip": "Il gruppo di tipologie di spazio esclude i tipi di spazio associati",
   "RoomTypeGroupMapFilter.Empty": "Non esiste alcun gruppo di tipi di spazio associato agli spazi tramite i tipi di spazio, puoi aggiungerne altri modificando un gruppo di tipi di spazio e aggiungendovi associando un tipo di spazio, quindi puoi controllarne la visualizzazione da questa sezione",
   "RoomTypeGroupToRoomTypeLabel.exclude.tooltip": "La tipologia dello spazio è esclusa",
+  "RoomTypeGroupsMapFilterZone.tabs_options": "Opzioni",
   "RoomWorkplaceList.EmptyList": "Non sono presenti postazioni di lavoro in questo spazio",
   "SearchFieldString.searchEmpty.help.false": "Cerca elementi vuoti o senza valore",
   "SearchFieldString.searchEmpty.help.true": "Riattiva la ricerca standard",
@@ -59872,6 +61373,7 @@ const it = {
   "SelectDimensionTypeNavigationLayoutIcon.select": "Seleziona questo tipo di livello per la navigazione",
   "SelectDimensionTypeNavigationLayoutIcon.unselect": "Rimuovi la navigazione per livello di analisi e torna alla navigazione per spazi",
   "ShapeTextAnchorDrawer.empty": "Seleziona una forma compatibile per spostare il testo visualizzato",
+  "SharingcloudSyncOperationLabel.title": "Sincronizzazione del cloud di condivisione",
   "ShowEntityDrawer.title.listItem": "Vedi le informazioni per %{determinant.defined} nella barra laterale",
   "ShowEntityDrawer.title.show": "Vedi %{determinant.defined}",
   "SingleNodeQuery.refetch": "Ricarica dati",
@@ -59896,9 +61398,12 @@ const it = {
   "TableSelectionAllCheckbox.checked.true": "Deseleziona tutto",
   "TableSelectionAllCheckbox.help": "Seleziona o deseleziona tutte le righe (comprese quelle non visibili nell'elenco impaginato)",
   "TableView.options": "Opzioni",
+  "TalentsoftImportLabel.title": "Importa Talentsoft",
   "TenantOperations.agpm-import-hr-file.label": "Importazione del file HR (STILOG)",
   "TenantOperations.egis-import-hr-file.label": "Importazione file HR",
   "TenantOperations.essilor-import-hr-file.label": "Importazione file HR",
+  "TenantOperations.ms-user-sync-thea.description": "Sincronizza gli utenti di Microsoft",
+  "TenantOperations.ms-user-sync-thea.label": "Sincronizzazione utente Microsoft",
   "TenantOperations.sephora-sync-sap-success-factors.label": "Sincronizzazione MSC",
   "TenantOperations.st-grenoble-import-hr-file.label": "Importazione del file HR",
   "TenantSearchBar.input.ariaLabel": "Cerca aziende",
@@ -59907,23 +61412,37 @@ const it = {
   "TextAreaImporter.errors.title": "Errori riscontrati durante l'importazione",
   "TextAreaImporter.help": "Utilizza la scheda tra ogni colonna includendo il nome di ciascuna colonna nella prima riga o incollalo direttamente da Excel",
   "TextAreaImporter.textarea.placeholder": "Copia e incolla le tue colonne da excel con il titolo per trovare le proprietà da aggiornare",
+  "TheaMSUserSyncOperation.description": "Sincronizza gli utenti di Microsoft 365 con i collaboratori surfy. I collaboratori mancanti vengono creati automaticamente a partire dal loro indirizzo email.",
+  "TheaMSUserSyncOperation.refresh": "Sincronizza gli utenti Microsoft",
+  "TheaMSUserSyncOperation.title": "Sincronizzazione utente Microsoft",
   "ThemeModeSwitchMenuItem.dark.help": "L'uso della modalità luminosa consente di lavorare con uno sfondo bianco",
   "ThemeModeSwitchMenuItem.dark.label": "Passa alla modalità luminosa",
   "ThemeModeSwitchMenuItem.light.help": "L'uso della modalità scura consente di lavorare con i colori scuri sullo sfondo per ridurre l'affaticamento degli occhi",
   "ThemeModeSwitchMenuItem.light.label": "Passa alla modalità oscura",
+  "TimeSlot.clickToBook": "Clicca per prenotare %{day} alle %{time}",
+  "TimeSlot.pastDay": "Impossibile prenotare: %{day} è già trascorso",
+  "TimeSlot.pastTime": "Impossibile prenotare: il tempo %{time} è già trascorso",
+  "TimeSlot.slotBooked": "Questo slot è già riservato",
   "ToggleAllOpenInfoState.false": "Apri tutti i dettagli e gli indicatori",
   "ToggleAllOpenInfoState.true": "Chiudi tutti i dettagli e gli indicatori",
   "ToggleCopilotEnable.help.false": "Attiva Surfy Copilot per abilitare il riconoscimento automatico della porta",
   "ToggleCopilotEnable.help.true": "Disabilita Surfy Copilot e torna alla modellazione manuale",
   "ToggleCopilotEnable.label.false": "Attiva Surfy Copilot",
   "ToggleCopilotEnable.label.true": "Disabilita Surfy Copilot",
+  "ToggleEnableFloorLabels.help": "Visualizza il nome del piano sul lato della struttura nella vista 3D",
+  "ToggleEnableFloorLabels.label": "Mostra le etichette del pavimento",
   "ToggleEnableMissingFloors.help": "Mostra i piani fantasma per i piani mancanti tra il livello 0 e il piano più alto in base ai livelli reali",
   "ToggleEnableMissingFloors.label": "Mostra pavimenti fantasma",
+  "ToggleEnableRoomLabels.help": "Visualizza i nomi degli spazi come etichette nella vista 3D",
+  "ToggleEnableRoomLabels.label": "Mostra etichette spaziali",
   "ToggleWorkplaceFreeConditionTypeIconButton.and": "Vedi le postazioni libere per almeno uno dei giorni richiesti",
   "ToggleWorkplaceFreeConditionTypeIconButton.or": "Visualizza le postazioni libere per tutti i giorni richiesti",
   "ToggleZbreSyncCheckbox.help": "La sincronizzazione consente di colorare gli spazi e le postazioni di lavoro in base ai sensori posizionati in Z#ber",
   "ToggleZbreSyncCheckbox.label": "Sincronizza con le occupazioni in tempo reale in Z#ber",
   "TopLevelOrganizationFilter.Empty": "Non esiste alcuna organizzazione associata agli spazi, puoi aggiungerne altre modificando uno spazio e associandolo a un'organizzazione, quindi puoi controllarne la visualizzazione da questa sezione",
+  "UserNotPartOfCompanyAdminCanCreate.createButton": "Crea l'associazione",
+  "UserNotPartOfCompanyAdminCanCreate.message": "Non sei associato alla società %{companyId} .",
+  "WeekNavigation.thisWeek": "Questa settimana",
   "WorkCanvas.Options.AddItemTypePointOption.help.disable": "Smetti di creare vertici",
   "WorkCanvas.Options.AddItemTypePointOption.help.enable": "L'aggiunta di un vertice consente di rielaborare una forma con maggiore precisione",
   "WorkCanvas.Options.AddItemTypePointOption.label.disable": "Smetti di aggiungere un vertice",
@@ -60135,6 +61654,7 @@ const it = {
   "WorkCanvasToggleOptionHelp.shortcut": "Scorciatoia da tastiera: <b>%{shortcut}</b>",
   "WorkingLocationToggle.locations.OFFICE": "Scrivania",
   "WorkingLocationToggle.locations.REMOTE": "Telelavoro",
+  "WorkpaceBookingAverageByWeekDay.excludeWeekends": "Escludere i fine settimana",
   "WorkpaceBookingAverageByWeekDay.labels.bar": "Numero di prenotazioni",
   "WorkpaceBookingAverageByWeekDay.labels.line": "Media settimanale",
   "WorkpaceBookingAverageByWeekDay.title": "Prenotazione delle postazioni di lavoro per giorno della settimana",
@@ -60142,7 +61662,8 @@ const it = {
   "WorkpaceBookingCountByDate.title": "Prenotazioni postazioni per data",
   "WorkpaceBookingCountByDimensionAndDate.labels.line": "Numero di persone",
   "WorkpaceBookingCountByDimensionAndDate.title": "Numero di prenotazioni per data e per distretto",
-  "WorkpaceBookingPeopleCountByDate.labels.line": "Numero di persone",
+  "WorkpaceBookingPeopleCountByBuildingByDate.title": "Numero di persone che hanno prenotato per edificio e per data",
+  "WorkpaceBookingPeopleCountByDate.labelsLine": "Numero di persone",
   "WorkpaceBookingPeopleCountByDate.title": "Numero di persone prenotate per data",
   "WorkpaceBookingPeopleCountByDimensionAndDate.labels.line": "Numero di persone",
   "WorkpaceBookingPeopleCountByDimensionAndDate.title": "Numero di persone che hanno prenotato per data e per distretto",
@@ -60171,6 +61692,11 @@ const it = {
   "WorkplaceList.workplace.transit": "Questa workstation è condivisa",
   "WorkplaceList.zoomOnWorkplace": "Zoom sulla workstation sulla planimetria",
   "WorkplaceNestedList.title": "Persone assegnate alle postazioni di lavoro",
+  "WorkplaceOccupancyRateByDimension.labels.occupancyRate": "Tasso di occupazione (%)",
+  "WorkplaceOccupancyRateByDimension.title": "Tasso di occupazione per quartiere",
+  "WorkplaceOccupancyRateByDimension.tooltip.bookedWorkplaces": "Posizioni riservate: %{count}",
+  "WorkplaceOccupancyRateByDimension.tooltip.occupancyRate": "Tasso di occupazione: %{rate}",
+  "WorkplaceOccupancyRateByDimension.tooltip.totalBookableWorkplaces": "Totale posizioni prenotabili: %{count}",
   "WorkplacePhysicalInventory.title": "Inventario fisico della workstation",
   "WorkplaceTransitWithAffectations.headers.affectedPeople": "Persone colpite",
   "WorkplaceTypeCarbonFootprintCount.help": "L'impronta di carbonio è la quantità di gas serra emessi dagli oggetti d'arredo di questo tipo di postazione di lavoro",
@@ -60196,6 +61722,7 @@ const it = {
   "WrongRoomsTable.table.headers.newRoom": "nuovo spazio",
   "WrongRoomsTable.table.headers.objectType": "Natura",
   "WrongRoomsTable.table.headers.type": "Tipo",
+  "ZbreSyncOperationLabel.title": "Sincronizzazione Z#ber",
   "booking.snackbar.delete.room": "La prenotazione nello spazio %{roomName} è stata cancellata per il periodo %{slot}",
   "booking.snackbar.delete.workplace": "La prenotazione sulla postazione di lavoro %{workplaceName} è stata cancellata per il periodo %{slot}",
   "calculatedProperties.properties.carbonFootprint.description": "L'impronta di carbonio è il numero di CO2 emesse",
@@ -60320,6 +61847,8 @@ const it = {
   "layoutViewSets.costCenter.label": "Rimborso",
   "layoutViewSets.flex.description": "L'occupazione flessibile degli spazi",
   "layoutViewSets.flex.label": "Flettere",
+  "layoutViewSets.meetingRooms.description": "Analizza i gruppi di tipologie di spazio per le sale riunioni",
+  "layoutViewSets.meetingRooms.label": "Sale riunioni",
   "layoutViewSets.organizationLevel0.description": "Occupazione per direzione",
   "layoutViewSets.organizationLevel0.label": "Indicazioni",
   "layoutViewSets.organizationLevel1.description": "Occupazione per servizi",
@@ -60409,6 +61938,8 @@ const it = {
   "models.AuthentificationConnection.determinants.defined": "connessioni di autenticazione",
   "models.AuthentificationConnection.determinants.undefined": "connessioni di autenticazione",
   "models.AuthentificationConnection.plural": "Connessioni di autenticazione",
+  "models.AuthentificationConnection.properties.domaines.description": "Domini di posta elettronica consentiti per questa connessione di autenticazione",
+  "models.AuthentificationConnection.properties.domaines.label": "Domini autorizzati",
   "models.AuthentificationConnection.properties.id.label": "Identificatore di connessione di autenticazione",
   "models.AuthentificationConnection.properties.name.description": "Nome della connessione di autenticazione",
   "models.AuthentificationConnection.properties.name.label": "Nome",
@@ -60506,6 +62037,8 @@ const it = {
   "models.Building.reports.buildingItems.help": "Rapporto sull'inventario degli edifici",
   "models.Building.reports.buildingPeople.fileName": "Persone",
   "models.Building.reports.buildingPeople.help": "Segnalazione delle persone interessate nell'edificio",
+  "models.Building.reports.dimensionTypes.fileName": "Tipi di dimensione",
+  "models.Building.reports.dimensionTypes.help": "Relazione tra i tipi di dimensione e i dati di reporting dell'edificio",
   "models.Building.reports.organizations.fileName": "Organizzazioni",
   "models.Building.reports.organizations.help": "Rapporto delle organizzazioni edilizie",
   "models.Building.reports.workplaceAffectations.fileName": "Compiti della postazione di lavoro",
@@ -60596,6 +62129,8 @@ const it = {
   "models.Company.properties.proxyImages.label": "Immagini proxy",
   "models.Company.properties.workingDaysCount.description": "Il numero di giorni lavorativi settimanali può essere 5 per i giorni lavorativi, 6 compreso il sabato e 7 compresa la domenica",
   "models.Company.properties.workingDaysCount.label": "Numero di giorni lavorativi alla settimana",
+  "models.Company.properties.workplaceBookingConfirmationRange.description": "Intervallo di tempo durante il quale gli utenti possono confermare la prenotazione delle proprie postazioni di lavoro. Formato: HH:MM-HH:MM (ad esempio, 06:00-10:30). Lasciare vuoto questo campo per disabilitare la conferma della prenotazione delle postazioni di lavoro.",
+  "models.Company.properties.workplaceBookingConfirmationRange.label": "Finestra di conferma della prenotazione della postazione di lavoro",
   "models.Company.reports.export-all-duplicate.fileName": "duplicazione",
   "models.Company.reports.export-all-duplicate.help": "Eseguire il backup dei dati aziendali per creare una copia della piattaforma",
   "models.Company.reports.export-all.fileName": "backup",
@@ -60720,6 +62255,10 @@ const it = {
   "models.Dimension.properties.crowdedForBookingRate.label": "Supplemento di prenotazione",
   "models.Dimension.properties.name.description": "Utile per differenziare lo strato tra gli altri",
   "models.Dimension.properties.name.label": "Nome del livello di analisi",
+  "models.Dimension.properties.peopleCount.description": "Il numero di assegnazioni direttamente al livello",
+  "models.Dimension.properties.peopleCount.label": "Numero di assegnazioni dirette al livello",
+  "models.Dimension.properties.totalPeopleCount.description": "Il numero totale di assegnazioni al livello direttamente, tramite una workstation o tramite un'area di lavoro",
+  "models.Dimension.properties.totalPeopleCount.label": "Numero totale di assegnazioni al livello",
   "models.Dimension.properties.value.description": "Il valore può essere utilizzato per associare il layer ad un valore numerico in modo da poter eseguire statistiche analitiche",
   "models.Dimension.properties.value.label": "Valore numerico",
   "models.Dimension.properties.workplacesBookableOnlyViaDimension.description": "Se abilitato, le postazioni di lavoro in questa dimensione possono essere prenotate solo tramite assegnazione diretta alla dimensione e sono escluse dalle prenotazioni dei piani",
@@ -60743,6 +62282,8 @@ const it = {
   "models.DimensionFloor.determinants.defined": "le associazioni dello strato di analisi ai piani",
   "models.DimensionFloor.determinants.undefined": "associazioni dello strato di analisi ai piani",
   "models.DimensionFloor.plural": "Associazioni di livelli di analisi ai piani",
+  "models.DimensionFloor.properties.bookableWorkplacesCount.description": "Numero di postazioni di lavoro prenotabili per questo piano",
+  "models.DimensionFloor.properties.bookableWorkplacesCount.label": "Numero di postazioni di lavoro prenotabili al piano",
   "models.DimensionFloor.properties.id.label": "Identificatore dell'associazione dello strato di analisi ai piani",
   "models.DimensionFloor.properties.peopleCount.description": "Il numero di persone assegnate, assegnate direttamente agli spazi o tramite una postazione di lavoro per questo piano",
   "models.DimensionFloor.properties.peopleCount.label": "Numero di incarichi",
@@ -61196,8 +62737,6 @@ const it = {
   "models.Organization.singular": "organizzazione",
   "models.Organization.views.dq-organization-hierarchy.help": "Rileva le organizzazioni che non si trovano nella gerarchia corretta",
   "models.Organization.views.dq-organization-hierarchy.label": "Errori di gerarchia organizzativa",
-  "models.Organization.views.dq-organization-to-room.help": "Rileva associazioni spaziali con organizzazioni non valide",
-  "models.Organization.views.dq-organization-to-room.label": "Errori nell'organizzazione degli spazi",
   "models.Organization.views.hierarchy.help": "Visualizza la gerarchia organizzativa",
   "models.Organization.views.hierarchy.label": "Gerarchia",
   "models.OrganizationBuilding.description": "Un'associazione di costruzione dell'organizzazione consente di definire le organizzazioni responsabili di ogni edificio",
@@ -61528,6 +63067,8 @@ const it = {
   "models.Room.views.dq-capacity-gt-0.label": "Spazi che hanno una capienza posti esclusi diversa da 0",
   "models.Room.views.dq-no-point.help": "Spazi che hanno 0, 1 o 2 punti e quindi dovrebbero avere area zero",
   "models.Room.views.dq-no-point.label": "Spazi senza punti sufficienti",
+  "models.Room.views.dq-organization-to-room.help": "Rileva associazioni spaziali con organizzazioni non valide",
+  "models.Room.views.dq-organization-to-room.label": "Errori nell'organizzazione degli spazi",
   "models.Room.views.dq-uniq-name.help": "Suggerisce nomi per spazi che non hanno un nome o il nome non è univoco sullo stesso piano",
   "models.Room.views.dq-uniq-name.label": "Nomi proposti per gli spazi",
   "models.Room.views.map.help": "Visualizza planimetria %{name}",
@@ -61819,11 +63360,31 @@ const it = {
   "models.WorkplaceTypeItemType.properties.zIndex.description": "L'indice di altezza permette di definire l'ordine di visualizzazione delle tipologie di oggetto, più grande è l'indice più l'oggetto sarà sopra gli altri",
   "models.WorkplaceTypeItemType.properties.zIndex.label": "Indice di altezza",
   "models.WorkplaceTypeItemType.singular": "tipo di oggetto nel tipo di workstation",
+  "models.WorkplaceUsageType.description": "Il tipo di utilizzo della postazione di lavoro consente di categorizzare le postazioni di lavoro in base al loro utilizzo, utilizzando la terminologia aziendale, e di visualizzarle con colori diversi sulle planimetrie.",
+  "models.WorkplaceUsageType.determinant.defined": "il tipo di utilizzo della postazione di lavoro",
+  "models.WorkplaceUsageType.determinant.undefined": "un tipo di utilizzo della postazione di lavoro",
+  "models.WorkplaceUsageType.determinants.defined": "tipi di utilizzo della postazione di lavoro",
+  "models.WorkplaceUsageType.determinants.undefined": "tipi di utilizzo della postazione di lavoro",
+  "models.WorkplaceUsageType.plural": "tipi di utilizzo della postazione di lavoro",
+  "models.WorkplaceUsageType.properties.color.description": "Colore utilizzato per differenziare le postazioni di lavoro di questo tipo su planimetrie e mappe",
+  "models.WorkplaceUsageType.properties.color.label": "Colore",
+  "models.WorkplaceUsageType.properties.description.description": "Descrizione dettagliata che spiega l'uso e lo scopo di questo tipo di utilizzo",
+  "models.WorkplaceUsageType.properties.description.label": "Descrizione",
+  "models.WorkplaceUsageType.properties.id.description": "Identificatore univoco per il tipo di utilizzo",
+  "models.WorkplaceUsageType.properties.id.label": "Identificatore del tipo di utilizzo della postazione di lavoro",
+  "models.WorkplaceUsageType.properties.name.description": "Nome del tipo di utilizzo che ne consente l'identificazione",
+  "models.WorkplaceUsageType.properties.name.label": "Nome",
+  "models.WorkplaceUsageType.singular": "tipo di utilizzo della postazione di lavoro",
+  "useOpenMeetingRoomBookingDrawer.bookRoom": "Per prenotare",
+  "useOpenMeetingRoomBookingDrawer.noRoomName": "Spazio dei nomi indefinito",
+  "useOpenMeetingRoomBookingDrawer.roomBooking": "Prenotazione dello spazio",
   "validation.regex.company.name": "Il nome dell'azienda deve essere in minuscolo e contenere solo lettere, numeri e trattini",
+  "validation.regex.company.workplaceBookingConfirmationRange": "La finestra di conferma della prenotazione deve essere nel formato HH:MM-HH:MM (ad esempio, 06:00-10:30)",
   "validation.regex.default": "Il valore deve corrispondere al formato: %{pattern}",
   "weight.gram": "Grammo",
   "weight.kilogram": "Chilogrammo",
-  "workplaceTypeLayoutFilter.Empty": "Al momento non sono presenti postazioni di lavoro negli spazi, puoi aggiungerne altre modificando uno spazio e aggiungendovi postazioni di lavoro, quindi puoi controllarne la visualizzazione da questa sezione"
+  "workplaceTypeLayoutFilter.Empty": "Al momento non sono presenti postazioni di lavoro negli spazi, puoi aggiungerne altre modificando uno spazio e aggiungendovi postazioni di lavoro, quindi puoi controllarne la visualizzazione da questa sezione",
+  "workplaceUsageTypeLayoutFilter.Empty": "Al momento non è assegnato alcun tipo di utilizzo alle workstation. È possibile assegnarne uno modificando le workstation, per poi controllarne la visualizzazione da questa sezione."
 };
 const nl = {
   "AccordionSearchParamFilterDates.title": "Data",
@@ -61855,6 +63416,7 @@ const nl = {
   "AuthenticationButton.connections.auth0.label": "Surfy-account",
   "AuthenticationButton.connections.google-oauth2.help": "Log in met je Google account",
   "AuthenticationButton.connections.google-oauth2.label": "Googlen",
+  "AuthentificationConnectionNotFoundForEmail.message": "Er is geen authenticatieverbinding gevonden voor het domein %{domain}",
   "AutocompleteAddress.autocomplete.placeholder": "Vind hier uw adres",
   "AvatarPersonDrawer.help": "Bekijk meer informatie over %{name}",
   "BelongsToImportHelp.title": "Objecttypen geassocieerd met %{objectTypeLabel} gesorteerd op beschikbare importsleutels",
@@ -61876,6 +63438,20 @@ const nl = {
   "BookedBuildingWorkplaceList.noWorkplaceBooked": "Geen gereserveerde werkplek",
   "BookedBuildingWorkplaceList.viewBookedWorkplaceOnMap": "Bekijk het werkstation %{workplaceName} dat is gereserveerd in het abonnement",
   "BookedBuildingWorkplaceList.workplaceIsBooked": "Uw werkplek is gereserveerd",
+  "BookingDialog.attendeesHelper": "Selecteer medewerkers of druk op Enter om een ​​e-mailadres toe te voegen.",
+  "BookingDialog.attendeesInvalidEmail": "Voer een geldig e-mailadres in om ze aan de vergadering toe te voegen.",
+  "BookingDialog.attendeesLabel": "Deelnemers uitnodigen",
+  "BookingDialog.attendeesNoOptions": "Geen medewerkers gevonden. Druk op Enter om het e-mailadres toe te voegen.",
+  "BookingDialog.attendeesPlaceholder": "Voer een naam of e-mailadres in...",
+  "BookingDialog.attendeesTypeToSearch": "Voer minimaal 2 tekens in om naar medewerkers te zoeken.",
+  "BookingDialog.book": "Om te boeken",
+  "BookingDialog.bookRoomTitle": "Boek een vergaderruimte",
+  "BookingDialog.cancel": "Annuleren",
+  "BookingDialog.description": "Beschrijving (optioneel)",
+  "BookingDialog.enableTeamsMeeting": "Voeg een Teams-link toe aan de vergadering",
+  "BookingDialog.endTime": "Eindtijd",
+  "BookingDialog.startTime": "Starttijd",
+  "BookingDialog.subject": "Doel van de bijeenkomst",
   "BookingMap.errors.noBuildingInFilter": "Selecteer een gebouw en verdieping in het filter om reserveringen te bekijken",
   "BookingMap.errors.noDateInFilter": "Selecteer een datum in het filter om reserveringen te zien",
   "BookingMap.errors.noFloorInFilter": "Selecteer een verdieping in het filter om reserveringen te zien",
@@ -61953,11 +63529,21 @@ const nl = {
   "BuildingInventory.title": "De inventaris van het gebouw %{building.name}",
   "BuildingLabel.scenario": "Dit gebouw is een scenario van het gebouw %{name}",
   "BuildingMenuItem.menu.scenario": "Scenario's ( %{count} )",
+  "BuildingMissingStructuredAddress.message": "In het adres van gebouw ' %{buildingName} ' ontbreken gestructureerde componenten (straat, stad, enz.)",
+  "BuildingMissingStructuredAddressAction.message": "In het adres van gebouw ' %{buildingName} ' ontbreken gestructureerde componenten (straat, stad, enz.)",
   "BuildingReports.items.sheets.merged": "Fusie",
   "BuildingReports.items.sheets.physicals": "Fysieke objecten",
   "BuildingReports.items.sheets.virtuals": "Virtuele objecten",
+  "BuildingSelect.options.all": "Alle gebouwen",
+  "BuildingSelectionView.selectBuildingToViewMap": "Kies een gebouw om de plattegrond weer te geven",
   "CalculatedPropertiesAccordions.kpi": "Indicatoren",
   "CalculatedPropertiesAccordions.mesures": "Maatregelen",
+  "CalendarHeader.bookingTitle": "Boek deze vergaderruimte",
+  "CalendarHeader.refreshTooltip": "Vernieuw de kalender",
+  "CalendarScopeConsentButton.alertMessage": "Om vergaderruimtes te reserveren, moet u Surfy toegang verlenen tot uw Microsoft-agenda. Klik op de onderstaande knop om de benodigde rechten te verlenen.",
+  "CalendarScopeConsentButton.alertTitle": "Toestemming vereist om kamers te boeken",
+  "CalendarScopeConsentButton.buttonHelp": "U wordt doorgestuurd naar Microsoft om toestemmingen te verlenen",
+  "CalendarScopeConsentButton.buttonLabel": "Toegang tot de agenda toestaan",
   "CalibrateLayoutDrawer.options.inputs.scale.label": "Schaal factor",
   "CalibrateLayoutDrawer.options.inputs.step.label": "Vertaalwaarde",
   "CalibrateLayoutDrawer.options.inputs.translate.x.label": "X-as",
@@ -61983,16 +63569,18 @@ const nl = {
   "CheckAllDefaultViews.shortcuts.title": "Configuratiesnelkoppelingen",
   "CheckAllDefaultViews.shortcuts.views.buttonsHelp": "Controleer deze weergave voor alle entiteitstypen",
   "CheckAllDefaultViews.shortcuts.views.title": "Snelkoppelingen voor standaardinterfaceweergaven",
+  "CloneEntitiesFailed.cloneFailed": "Klonen is onmogelijk.",
   "CollapseSwitchButton.help.false": "Zie de details",
   "CollapseSwitchButton.help.true": "Details verbergen",
   "CollapseWorkplaceAffectationList.title": "Wijs deze persoon alleen toe voor de volgende dagen",
   "CollapseWorkplaceAffectationList.updateAffectationDay.false": "Verwijder de opdracht van deze persoon %{day}",
   "CollapseWorkplaceAffectationList.updateAffectationDay.true": "Wijs deze persoon toe %{day}",
   "ColorBox.NoColorHelp": "Selecteer een kleur via het palet",
+  "ColorizeRoomTypeOption.useRoomTypeColor": "Gebruik ruimtetypekleur",
   "CompanyDashboard.dashboards.area": "Dashboard voor oppervlakken",
   "CompanyDashboard.dashboards.workplace": "Werkstationdashboard",
   "CompanyDuplicateDownload.deleteReporting.help": "Verwijder berekende rapportagegegevens. U moet de rapportagegegevens opnieuw berekenen om ze opnieuw te kunnen gebruiken. Met deze optie kunt u de rapportagegegevens opschonen.",
-  "CompanyDuplicateDownload.deleteReporting.progress": "Rapportagegegevens verwijderen uit {{objectType}}: {{current}}/{{total}}",
+  "CompanyDuplicateDownload.deleteReporting.progress": "Rapportagegegevens verwijderen uit %{objectType} : %{current} / %{total}",
   "CompanyDuplicateDownload.deleteReporting.title": "Berekende gegevens uit rapporterende entiteiten verwijderen",
   "CompanyDuplicateDownload.downloadJson.help": "Met dit JSON-bestand kan het platform worden gedupliceerd als alle regels voor de gegevenskwaliteit worden gerespecteerd",
   "CompanyDuplicateDownload.downloadJson.title": "Download het JSON-bestand met bedrijfsgegevens",
@@ -62031,8 +63619,10 @@ const nl = {
   "CubySaveAsImageButton.label": "Afbeelding opslaan",
   "CubyWallModeSelect.label": "Weergave van partities",
   "CubyWallModeSelect.options.cuby": "Kubus",
+  "CubyWallModeSelect.options.cubyRealitySelected": "Cuby met selectie in de realiteit",
   "CubyWallModeSelect.options.half": "Halve scheidingswanden",
   "CubyWallModeSelect.options.no": "Geen",
+  "CubyWallModeSelect.options.noWallSelected": "Zonder partities, met selectie",
   "CubyWallModeSelect.options.reality": "Realiteit",
   "CustomEntityBreadcrumbWorkCanvasLayoutViewLabel.help": "Via de planmenu's kunt u de visie wijzigen",
   "CustomEntityBreadcrumbWorkCanvasLayoutViewLabel.viewSet": "Visie",
@@ -62054,12 +63644,19 @@ const nl = {
   "DataQualityIndex.generalInfo.title": "Algemene informatie",
   "DataQualityIndex.subtitle": "Geef een overzicht van alle gegevenskwaliteitsrapporten per entiteit",
   "DataQualityIndex.title": "Lijst met rapporten over de gegevenskwaliteit",
+  "DataQualityIssueRow.elementCountPlural": "elementen",
+  "DataQualityIssueRow.elementCountSingular": "element",
+  "DataQualityIssueRow.viewButton": "zien",
+  "DataQualityIssuesHeader.summary": "Er is een probleem met de gegevenskwaliteit gevonden in %{totalIssues} %{totalIssuesPlural} % %{totalIssuesPlural} %{viewsCount} %{viewsCountPlural} -controle. Los de volgende problemen op voordat u verdergaat:",
+  "DataQualityIssuesHeader.title": "Problemen met de gegevenskwaliteit gedetecteerd",
   "DataQualityTable.numberOfLines": "Aantal regels",
+  "DateDimensionFilter.excludeWeekends": "Weekenden uitsluiten",
   "DateDimensionSelect.options.day": "Dag",
   "DateDimensionSelect.options.month": "Maand",
   "DateDimensionSelect.options.quarter": "Kwartaal",
   "DateDimensionSelect.options.week": "Week",
   "DateDimensionSelect.options.year": "Jaar",
+  "DayHeaders.time": "Uur",
   "DeleteDialog.cancel.help": "Verwijdering ongedaan maken",
   "DeleteDialog.cancel.label": "Annuleren",
   "DeleteDialog.content": "U staat op het punt <b>%{determinant.undefined}</b> te verwijderen. Deze actie is niet ongedaan te maken en kan gevolgen hebben. Weet u zeker dat u deze actie wilt uitvoeren?",
@@ -62074,6 +63671,8 @@ const nl = {
   "DeleteMultipleDialog.title": "Verwijder %{determinants.undefined}",
   "DeleteMultipleEntities.help": "Verwijder geselecteerde %{determinants.defined}",
   "DeleteWorkplace.help": "Werkstation verwijderen: [ %{name} ], opdrachten worden ook verwijderd",
+  "DeskBookingConfirmationButton.bookingConfirmed": "De reservering is bevestigd.",
+  "DeskBookingConfirmationButton.confirm": "Bevestig uw aanwezigheid",
   "DimensionBuildingPlanningLabel.youAreAssigned": "U bent toegewezen aan %{dimensionTypeName} %{dimensionName}",
   "DimensionInfo.carbonFootprint.help": "De CO2-voetafdruk is %{value} van de CO2-uitstoot voor %{dimensionType} %{dimension}",
   "DimensionInfo.dimensionPeopleCount.help": "Er zijn %{value} persoon(en) toegewezen in %{dimensionType} %{dimension}",
@@ -62208,6 +63807,8 @@ const nl = {
   "DisplayWorkplaceTexts.workplaceOrganizationLevel0.label": "Richting",
   "DisplayWorkplaceTexts.workplaceOrganizationLevel1.help": "Werkstationservices wel of niet weergeven in het abonnement",
   "DisplayWorkplaceTexts.workplaceOrganizationLevel1.label": "Dienst",
+  "DisplayWorkplaceTexts.workplaceUsageType.help": "Het type werkstationgebruik op het plan weergeven of verbergen",
+  "DisplayWorkplaceTexts.workplaceUsageType.label": "Soort gebruik",
   "DownloadBuildingImagesAccordion.accordion.title": "Exporteer afbeeldingen van het hele gebouw",
   "DownloadBuildingImagesAccordion.buttons.download.help": "Download alle plattegronden van alle verdiepingen van het gebouw in png-formaat in een zip, de wachttijd voor deze uittreksel kan lang zijn",
   "DownloadBuildingImagesAccordion.buttons.download.label": "Download de ZIP",
@@ -62254,12 +63855,15 @@ const nl = {
   "EntityHasManyProperties.associations.reporting": "Rapportageassociaties voor %{determinant.defined}",
   "EntityHasManyProperties.associations.security": "Beveiligingsassociaties voor %{determinant.defined}",
   "EntityPropertyTypesMandatoryNotRespected.title": "De volgende eigenschappen zijn vereist",
+  "EntityPropertyTypesRegexValidationNotRespected.title": "De volgende eigenschappen voldoen niet aan de regex-validatie",
   "ErrorImpossibleToFindTheEntities.text": "Kon het gezochte %{determinants.defined} niet vinden",
   "ErrorImpossibleToFindTheEntity.text": "De gezochte %{determinant.defined} kan niet worden gevonden",
   "ErrorTextZone.reload": "Herhaal de handeling",
+  "Errors.AUTHENTIFICATION_CONNECTION_NOT_FOUND_FOR_EMAIL": "Er is geen authenticatieverbinding gevonden voor het domein %{domain}",
   "Errors.networkError": "Er zijn verbindings- of netwerkproblemen gedetecteerd. Wacht even en probeer het over een paar seconden opnieuw",
   "ExportQueryNodeToFileButton.help.list": "Downloaden in Excel %{determinants.defined}",
   "FieldTypeAddress.edit": "Adres wijzigen",
+  "FieldTypeAddress.geocode": "Geocodeer het adres om de gestructureerde componenten (straat, stad, postcode, land) te extraheren",
   "FieldTypeAddress.remove": "Adres verwijderen",
   "FieldTypeColor.NoColorHelp": "Selecteer een kleur",
   "FieldTypeColor.NotHexMatchError": "Het veld respecteert het hexadecimale formaat van een kleur niet",
@@ -62279,6 +63883,16 @@ const nl = {
   "FieldTypePassword.icons.copy": "Kopieer de inhoud van het wachtwoord naar het klembord",
   "FieldTypePassword.icons.generate": "Genereer een uniek wachtwoord",
   "FileDropZone.dropZone": "Verplaats en sleep het importbestand naar dit gebied of klik in het gebied om uw bestand te selecteren",
+  "FixAddressButton.button.fix": "Corrigeer het adres",
+  "FixAddressButton.button.help": "Corrigeer automatisch het adres van ' %{buildingName} ' met behulp van Google Maps-geocodering",
+  "FixAddressButton.error.message": "❌ Oplossing mislukt: %{error}",
+  "FixAddressButton.errors.noStructuredAddress": "Kan gestructureerd adres niet uit geocodering halen",
+  "FixAddressButton.errors.unknown": "Onbekende fout",
+  "FixAddressButton.errors.updateFailed": "Update mislukt in Surfy",
+  "FixAddressButton.progress.geocoding": "Het gestructureerde adres ophalen via Google Maps...",
+  "FixAddressButton.progress.refreshing": "Verfrissend uitzicht...",
+  "FixAddressButton.progress.updating": "Gebouwupdate in Surfy...",
+  "FixAddressButton.success.message": "✅ Het adres van ' %{buildingName} ' is succesvol gecorrigeerd",
   "FloorMap.tabs.all": "Bekijk alle geselecteerde vormen in de lijst",
   "FloorMap.tabs.analyticsDimensionTypes": "Kleur de ruimtes op het plan volgens de <b>analyselagen</b>",
   "FloorMap.tabs.building": "Bekijk gebouwinformatie",
@@ -62299,6 +63913,7 @@ const nl = {
   "FloorMap.tabs.users": "Kleurwerkplekken in relatie tot mensen",
   "FloorMap.tabs.workplaceTypes": "Geef <b>werkstations</b> per werkstationtype weer op de kaart",
   "FloorMap.tabs.workplaceUsage": "Kleur werkstations volgens hun <b>staat</b>",
+  "FloorMap.tabs.workplaceUsageTypes": "Kleur de werkplekken in volgens hun <b>gebruikstype</b>",
   "FloorMap.tabs.workplaces": "Details van geselecteerde <b>werkstations</b>",
   "FloorSelector.focus": "Selecteer alleen deze verdieping",
   "FloorSelector.selectAll.false": "Selecteer alle verdiepingen",
@@ -62323,6 +63938,8 @@ const nl = {
   "GlobalSearch.Start": "U kunt zoeken op bijvoorbeeld mensen, ruimtes, werkstations, objecten of andere entiteiten, de zoekopdracht begint vanaf het 2e teken",
   "GlobalSearch.close.help": "Duidelijke zoek",
   "GlobalSearchIncludeScenarios.label": "Scenario's opnemen in zoeken",
+  "GoogleApiWrapper.configurationNotFound": "Google Maps API-sleutel is niet geconfigureerd",
+  "GoogleApiWrapper.loadingFailed": "Het laden van de Google Maps API is mislukt",
   "HalfDayWorkingLocationToggle.all.help": "De openingstijden zijn van 08:00 tot 19:00 uur.",
   "HalfDayWorkingLocationToggle.all.label": "De hele dag",
   "HalfDayWorkingLocationToggle.am.help": "De ochtenduren zijn van 8.00 uur tot 13.30 uur.",
@@ -62379,7 +63996,8 @@ const nl = {
   "ImportUpdateOption.help": "Geselecteerde objecten bijwerken",
   "ImportUpdateOption.label": "Update",
   "IndexContextMenuItem.navigation": "Navigatie",
-  "InfiniteScrollLoader.loader.completed": "Alle %{count} items zijn geladen",
+  "InfiniteScrollLoader.loader.completed_plural": "Alle %{count} items zijn geladen",
+  "InfiniteScrollLoader.loader.completed_singular": "1 item is geladen",
   "InfiniteScrollLoader.loader.loadMore": "Meer laden ( %{displayed} / %{total} )",
   "InfiniteScrollLoader.loader.loading": "Bezig met laden...",
   "InfiniteScrollLoader.loader.scrollForMore": "Scroll naar beneden om meer te zien...",
@@ -62413,11 +64031,22 @@ const nl = {
   "LayoutFiltersTabOpenToggleIcon.open.true": "Sluit het kaartmenu om de ruimte van de kaartweergave te optimaliseren",
   "LayoutFiltersTabZone.collapse.help": "Het menu is gesloten, u kunt het openen door op het eerste pictogram te klikken om het te openen en de details van de planelementen te bekijken",
   "LayoutViewSwitch.title": "Verander de visie op het plan",
+  "Legend.available": "Beschikbaar",
+  "Legend.booked": "Reserveren",
+  "Legend.past": "Doorgang",
   "LegendSelector.labels.default": "Standaardlegenda",
   "LegendSelector.title": "Legenda selecteren",
   "Level1OrganizationFilter.Empty": "Er is geen organisatie gekoppeld aan ruimtes. U kunt er meer toevoegen door een ruimte te wijzigen en deze aan een organisatie te koppelen. Vervolgens kunt u de weergave ervan vanuit deze sectie beheren",
   "ListRefetchButton.refetch": "Herlaad zichtbare objectgegevens",
   "LoadingSvgCircle.pleaseWait": "Een ogenblik geduld tijdens het synchroniseren",
+  "LoginLanguageSelector.ariaLabel": "Verander de taal naar %{language}",
+  "LoginLanguageSelector.languageNameDe": "Duits",
+  "LoginLanguageSelector.languageNameEn": "Engels",
+  "LoginLanguageSelector.languageNameEs": "Spaans",
+  "LoginLanguageSelector.languageNameFr": "Frans",
+  "LoginLanguageSelector.languageNameIt": "Italiaans",
+  "LoginLanguageSelector.languageNameNl": "Nederlands",
+  "LoginLanguageSelector.tooltip": "Verander de taal naar %{language}",
   "LoginView.connections.AzureADv2.help": "Meld u aan met uw Microsoft Professional-account via Office 365",
   "LoginView.connections.AzureADv2.label": "Office 365",
   "LoginView.connections.Username-Password-Authentication.help": "Log in met je Surfy-account",
@@ -62431,6 +64060,53 @@ const nl = {
   "LoginView.texts.description": "Toegang tot Surfy",
   "LoginView.texts.title": "Verbinding",
   "LogoutMenuLink.logout": "Afmelden",
+  "LuccaSynchronizationOperationLabel.title": "Lucca synchronisatie",
+  "MSGraphConsentPrompt.buttonHelp": "U moet een Microsoft 365-beheerder zijn om deze toestemming te valideren.",
+  "MSGraphConsentPrompt.buttonLabel": "Verleen de vereiste Microsoft-machtiging",
+  "MSGraphConsentPrompt.title": "Aanvullende Microsoft-autorisatie vereist",
+  "MSPlacesBuildingsSync.restart.button": "Herstart gebouwsynchronisatie",
+  "MSPlacesConsentButton.alert.message": "Voor Microsoft Places-synchronisatie zijn aanvullende machtigingen vereist. Klik op de onderstaande knop om lees- en schrijftoegang tot Places-gegevens toe te staan.",
+  "MSPlacesConsentButton.alert.title": "Aanvullende machtigingen vereist",
+  "MSPlacesConsentButton.button.help": "Toestemming verlenen om gebouwen in Microsoft Places te maken en te bewerken",
+  "MSPlacesConsentButton.button.label": "Toegang tot Microsoft Places toestaan",
+  "MSPlacesFloorsSync.restart.button": "Vloersynchronisatie opnieuw starten",
+  "MSPlacesRoomsBasicSync.headers.capacity": "Vaardigheid",
+  "MSPlacesRoomsBasicSync.headers.displayName": "Weergavenaam",
+  "MSPlacesRoomsBasicSync.headers.email": "E-mail",
+  "MSPlacesRoomsBasicSync.headers.floorNumber": "Verdiepingnummer",
+  "MSPlacesRoomsBasicSync.restart.button": "Kamersynchronisatie opnieuw starten",
+  "MSPlacesRoomsDisplayNameSyncTab.alertDescription": "Met deze bewerking worden de weergegeven namen van Microsoft Places-ruimten vergeleken met hun Surfy equivalenten.",
+  "MSPlacesRoomsDisplayNameSyncTab.alertMatchingDescription": "De kamers worden aan elkaar gekoppeld via het e-mailadres waarmee ze geboekt hebben.",
+  "MSPlacesRoomsDisplayNameSyncTab.alertMatchingTitle": "Overeenkomende logica:",
+  "MSPlacesRoomsDisplayNameSyncTab.alertNoteDescription": "Alleen de weergavenaam wordt bijgewerkt in Microsoft 365 als er een verschil wordt gedetecteerd. De gebruikers-API's van Graph worden gebruikt om de weergavenaam bij te werken.",
+  "MSPlacesRoomsDisplayNameSyncTab.alertNoteTitle": "Belangrijk :",
+  "MSPlacesRoomsDisplayNameSyncTab.alertTitle": "Microsoft-weergavenamen synchroniseren",
+  "MSPlacesRoomsDisplayNameSyncTab.consentButtonHelp": "U moet een Microsoft 365-beheerder zijn om deze toestemming te valideren.",
+  "MSPlacesRoomsDisplayNameSyncTab.consentButtonLabel": "Verleen de vereiste Microsoft-machtiging",
+  "MSPlacesRoomsDisplayNameSyncTab.consentMessage": "Voor het synchroniseren van MS Places-ruimteweergavenamen zijn de volgende machtigingen vereist: %{scopes} .",
+  "MSPlacesRoomsDisplayNameSyncTab.consentTitle": "Aanvullende Microsoft-autorisatie vereist",
+  "MSPlacesRoomsDisplayNameSyncTab.restartButton": "Synchronisatie opnieuw starten",
+  "MSPlacesRoomsEmailSyncTab.alert.description1": "Met deze bewerking worden de e-mailadressen van Microsoft Places-kamers gesynchroniseerd met de bookingEmail-eigenschap van Surfy-kamers. De synchronisatie is eenrichtingsverkeer: MS Places → Surfy.",
+  "MSPlacesRoomsEmailSyncTab.alert.matchingDescription": "Kamers worden gekoppeld via de opgegeven naam en verdieping (parent-ID). Kamers moeten al gekoppeld zijn of overeenkomende namen hebben om gesynchroniseerd te worden.",
+  "MSPlacesRoomsEmailSyncTab.alert.matchingTitle": "Correspondentie:",
+  "MSPlacesRoomsEmailSyncTab.alert.noteDescription": "Alleen kamers met verschillende e-mailadressen worden weergegeven voor updates. Kamers met overeenkomende e-mailadressen worden weergegeven onder 'Geen wijzigingen'.",
+  "MSPlacesRoomsEmailSyncTab.alert.noteTitle": "Opgemerkt:",
+  "MSPlacesRoomsEmailSyncTab.alert.title": "Synchroniseer MS Places-e-mails met Surfy",
+  "MSPlacesRoomsEmailSyncTab.restart.button": "E-mailsynchronisatie opnieuw starten",
+  "MSPlacesRoomsSync.displayNameSyncTabLabel": "Weergavenamen synchroniseren",
+  "MSPlacesRoomsSync.doneChipLabel": "Afgerond",
+  "MSPlacesRoomsSync.emailSyncTabLabel": "E-mails synchroniseren",
+  "MSPlacesRoomsSync.syncTabLabel": "Kamers synchroniseren",
+  "MSPlacesSync.restart.button": "Alle synchronisatie opnieuw starten",
+  "MSPlacesSync.steps.rooms.suffix": "(Alleen vergaderruimtes)",
+  "MSPlacesSyncOperationLabel.title": "Microsoft Places-synchronisatie",
+  "MSUsersConsentButton.alertMessage": "Om gebruikerssynchronisatie te kunnen bieden, moet Surfy Microsoft 365-gebruikers kunnen lezen. Klik op de onderstaande knop om de vereiste machtiging te verlenen.",
+  "MSUsersConsentButton.alertTitle": "Toegang verlenen aan Microsoft Graph-gebruikers",
+  "MSUsersConsentButton.buttonHelp": "U wordt doorgestuurd naar Microsoft om toegang te verlenen tot de directory.",
+  "MSUsersConsentButton.buttonLabel": "Microsoft-gebruikerssynchronisatie toestaan",
+  "MSUsersSync.description": "Synchroniseer Microsoft 365-gebruikers met Surfy-medewerkers. Ontbrekende medewerkers worden automatisch aangemaakt op basis van hun e-mailadres.",
+  "MSUsersSync.refresh": "Microsoft-gebruikers synchroniseren",
+  "MSUsersSync.title": "Microsoft-gebruikerssynchronisatie",
   "MapFilterNodeIsAllSelected.help": "De gehele selectie hieronder wordt geladen, zelfs als er nieuwe objecten worden aangemaakt",
   "MapFilterNodeToggleAll.action.false": "deselecteer alles",
   "MapFilterNodeToggleAll.action.true": "Selecteer alles",
@@ -62448,10 +64124,64 @@ const nl = {
   "MapLegendWorkplace.title": "Werkplek",
   "MapLegendWorkplace.workplaces.flex": "De werkplekken zijn flex",
   "MapLegendWorkplace.workplaces.free": "Werkstations zijn gratis",
+  "MeetingRoomBookAction.bookRoom": "Boek via de kalender",
+  "MeetingRoomCard.availability.available": "Beschikbaar in dit tijdslot",
+  "MeetingRoomCard.availability.searching": "Beschikbaarheid controleren...",
+  "MeetingRoomCard.bookingEmailAvailable": "Beschikbaar boekingsadres: %{email}",
+  "MeetingRoomCard.calendarFor": "Agenda voor",
   "MeetingRoomCard.locateSpace": "Zoek de ruimte op het plan",
+  "MeetingRoomCard.noRoomName": "Ongedefinieerde naamruimte",
+  "MeetingRoomCard.roomCalendar": "Ruimtekalender",
   "MeetingRoomCard.seats.1": "%{count} stoel",
   "MeetingRoomCard.seats.n": "%{count}",
+  "MeetingRoomCard.table.actions": "Acties",
+  "MeetingRoomCard.table.building": "Gebouw",
+  "MeetingRoomCard.table.capacity": "Vaardigheid",
+  "MeetingRoomCard.table.floor": "Vloer",
+  "MeetingRoomCard.table.name": "Naam",
+  "MeetingRoomCard.table.type": "Vriendelijk",
+  "MeetingRoomCard.tabs.buildingMap": "Plattegrondweergave",
+  "MeetingRoomCard.tabs.cards": "Bekijk datasheets",
+  "MeetingRoomCard.tabs.table": "Tabelweergave",
+  "MeetingRoomCard.viewCalendar": "Bekijk de reserveringskalender",
   "MeetingRoomCard.viewPicture": "Zie ruimtefoto",
+  "MeetingRoomCardSeats.seatsMultiple": "%{count}",
+  "MeetingRoomCardSeats.seatsSingle": "%{count} stoel",
+  "MeetingRoomDirectBookAction.bookingInProgressHelp": "Reservering in behandeling...",
+  "MeetingRoomDirectBookAction.bookingSuccess": "Reservering bevestigd voor %{roomName} ( %{timeRange} )",
+  "MeetingRoomDirectBookAction.directBook": "Snelle boeking",
+  "MeetingRoomDirectBookAction.missingSelection": "Selecteer eerst een dag en tijdslot.",
+  "MeetingRoomDirectBookAction.noRoomName": "Ongedefinieerde naamruimte",
+  "MeetingRoomDirectBookAction.roomUnavailable": "De kamer is niet beschikbaar tijdens dit tijdslot.",
+  "MeetingRoomDirectBookAction.schedulesLoading": "Beschikbaarheid wordt geladen",
+  "MeetingRooms.clearFilters": "Filters wissen",
+  "MeetingRooms.loadingAvailabilityTooltip": "Beschikbaarheid voor boeking wordt geladen...",
+  "MeetingRooms.noMeetingRoomsConfigured": "U hebt geen vergaderruimtes geconfigureerd via ruimtetypologiegroepen",
+  "MeetingRooms.noRoomsFound": "Er is geen kamer die aan uw zoekopdracht voldoet, u kunt uw zoekfilters wissen",
+  "MeetingRooms.selectionCount": "%{count} spaties in de selectie",
+  "MeetingRoomsBuildingCuby.noRoomsFound": "Er is geen kamer die aan uw zoekopdracht voldoet, u kunt uw zoekfilters wissen",
+  "MeetingRoomsBuildingMapFloorSpaceAction.ariaLabel": "Open de oppervlaktecursor",
+  "MeetingRoomsBuildingMapFloorSpaceAction.tooltip": "Pas de schaal van de oppervlakken aan",
+  "MeetingRoomsBuildingMapResetViewAction.ariaLabel": "Zet de camera terug naar het oorspronkelijke bovenaanzicht",
+  "MeetingRoomsBuildingMapResetViewAction.tooltip": "Terug naar het oorspronkelijke bovenaanzicht",
+  "MeetingRoomsBuildingMapWallModeToggle.ariaLabel": "Schakel de muurweergavemodus in of uit",
+  "MeetingRoomsBuildingMapWallModeToggle.tooltip.noWallSelected": "Het verbergen van de muren voor een onbelemmerd uitzicht",
+  "MeetingRoomsBuildingMapWallModeToggle.tooltip.reality": "Weergavewanden in de realiteitsmodus",
+  "MeetingRoomsDayFilters.dayTooltip": "Filter de beschikbare kamers voor %{day}",
+  "MeetingRoomsDayFilters.nextTooltip": "volgende dagen",
+  "MeetingRoomsDayFilters.previousTooltip": "Vorige dagen",
+  "MeetingRoomsDayFilters.title": "Dagen",
+  "MeetingRoomsFilterOption.multiSelectTooltip": "Deze optie toevoegen aan of verwijderen uit de selectie",
+  "MeetingRoomsFilterOption.singleSelectAriaLabel": "Selecteer alleen deze optie",
+  "MeetingRoomsFilterOption.singleSelectTooltip": "Alleen deze optie weergeven",
+  "MeetingRoomsHourRangeSelector.rangeEndValueLabel": "Einde: %{time}",
+  "MeetingRoomsHourRangeSelector.rangeSelectionTooltip": "Versleep de handgrepen om het tijdsbestek in te stellen waarin naar boekingen wordt gezocht.",
+  "MeetingRoomsHourRangeSelector.rangeStartValueLabel": "Begin: %{time}",
+  "MeetingRoomsRefreshSelectionButton.refreshSelection": "Vernieuw de selectie",
+  "MeetingRoomsSearchFilter.searchLabel": "Onderzoek",
+  "MeetingRoomsSearchFilter.searchPlaceholder": "Zoek een kamer...",
+  "MicrosoftUsersSyncTitle.title": "Microsoft-gebruikerssynchronisatie",
+  "MoffiSyncOperationLabel.title": "Moffi-synchronisatie",
   "MouvementMatrixImport.errors.noSheet": "Kan Excel-blad met naam %{name} [ %{objectTypeName} ] niet vinden",
   "MovePersonFromWorkplaceToRoomListButtonItem.help": "Deze optie vereist het vernieuwen van de pagina om het resultaat te zien. Het is mogelijk om meerdere bewegingen aan elkaar te koppelen zonder te vernieuwen",
   "MovePersonFromWorkplaceToRoomListButtonItem.label": "Verplaats deze persoon van zijn/haar werkplek naar de werkplekruimte",
@@ -62474,12 +64204,13 @@ const nl = {
   "NumberOfPeoplePerRowField.label": "Aantal personen per lijn voor ruimtetoewijzingen",
   "ObjectTypeImportKeys.title": "De beschikbare sleutels voor het afstemmen van %{determinants.undefined} in de volgorde van uw keuze. Als u een van de sleuteleigenschappen wilt wijzigen, moet u de ID als sleutel gebruiken",
   "ObjectTypeImportScalarProperties.help": "Kopieer naar klembord",
-  "Operations.exportZbre.label": "Exporteer Z#bre",
-  "Operations.lucca-sync.label": "Lucca synchronisatie",
-  "Operations.moffi-sync.label": "Moffi-synchronisatie",
-  "Operations.sharingcloud-sync.label": "Sharingcloud-synchronisatie",
-  "Operations.talentsoft-import.label": "Talentsoft importeren",
-  "Operations.zbre-sync.label": "Z#bre-synchronisatie",
+  "OperationHelpMarkdown.help.documentation": "Documentatie",
+  "OrganizationDataQualityHierarchy.headerChildOrganizations": "Dochterorganisaties",
+  "OrganizationDataQualityHierarchy.headerOrganization": "Organisatie",
+  "OrganizationDataQualityHierarchy.headerParentOrganization": "Ouderorganisatie",
+  "OrganizationDataQualityHierarchy.headerPlatform": "Platform",
+  "OrganizationDataQualityHierarchy.headerReason": "Reden ?",
+  "OrganizationDataQualityHierarchy.reasonHasParentAndChildren": "De organisatie heeft kinderen en ook een moeder",
   "OrganizationFloorMapFilter.TooltipTitle.notSelected": "Selecteer %{organization} om de ruimtes op het plan te kleuren",
   "OrganizationFloorMapFilter.TooltipTitle.selected": "Als u %{organization} deselecteert, worden de kleuren uit het vlak verwijderd",
   "OrganizationFloorMapFilter.tooltip.false": "Deselecteer hieronder alle organisaties",
@@ -62493,6 +64224,21 @@ const nl = {
   "ParkingBookIcon.parking.booked": "Uw parkeerplaats is gereserveerd",
   "ParkingBookIcon.parking.release.help": "Parkeerreservering vrijgeven",
   "ParkingBookIcon.parking.viewOnMap": "Zie gereserveerde parkeerplaats op de kaart",
+  "PartnerEntityCreateTab.button.help": "Maken in %{partnerName}",
+  "PartnerEntityCreateTab.button.label": "Maken in %{partnerName}",
+  "PartnerEntityCreateTab.progress.syncing": "%{label} synchroniseren ...",
+  "PartnerEntityDeleteTab.button.help": "Verwijderen in %{partnerName}",
+  "PartnerEntityDeleteTab.button.label": "Verwijderen in %{partnerName}",
+  "PartnerEntityDeleteTab.progress.syncing": "%{label} synchroniseren ...",
+  "PartnerEntitySync.errors.title": "Synchronisatiefouten ( %{count} )",
+  "PartnerEntitySync.tabs.create": "scheppen",
+  "PartnerEntitySync.tabs.delete": "verwijderen",
+  "PartnerEntitySync.tabs.noChange": "Geen verandering",
+  "PartnerEntitySync.tabs.update": "Update",
+  "PartnerEntityUpdateTab.button.help": "Update in %{partnerName}",
+  "PartnerEntityUpdateTab.button.label": "Update in %{partnerName}",
+  "PartnerEntityUpdateTab.headers.type": "Vriendelijk",
+  "PartnerEntityUpdateTab.progress.syncing": "%{label} synchroniseren ...",
   "PersonAffectationsPanel.description": "De opdrachten van de persoon",
   "PersonAffectationsPanel.title": "Opdrachten",
   "PersonBadgePanel.description": "Diverse informatie over de persoon",
@@ -62544,6 +64290,7 @@ const nl = {
   "PropertSelectorDrawer.options.reset.label": "Selectie opnieuw instellen",
   "PropertSelectorDrawer.tabLabel": "Eigenschappen",
   "PropertyTypeErrors.title": "De volgende waarden bestaan ​​niet voor eigenschap <b>%{propertyTypeLabel}</b> in <b>%{objectTypeLabel}</b>",
+  "RedirectCountdownTimer.redirectMessage": "Deze pagina wordt automatisch doorgestuurd naar %{redirectTarget} over %{secondsRemaining} seconden.",
   "ReduceMenuSwitch.open.false": "Vouw het menu samen om te profiteren van de werkruimte",
   "ReduceMenuSwitch.open.true": "Vouw menu uit",
   "RefetchEntitiesButton.refetch": "Herlaad zichtbare objectgegevens",
@@ -62594,12 +64341,58 @@ const nl = {
   "RoomAffectationsList.EmptyList": "Er is niemand toegewezen aan deze ruimte",
   "RoomAffectationsList.title": "Mensen toegewezen aan ruimtes",
   "RoomAffectationsOnlyList.title": "Mensen toegewezen aan ruimtes",
+  "RoomBookingCalendar.available": "Beschikbaar",
+  "RoomBookingCalendar.book": "Om te boeken",
+  "RoomBookingCalendar.bookRoomTitle": "Boek een vergaderruimte",
+  "RoomBookingCalendar.booked": "Reserveren",
+  "RoomBookingCalendar.bookingTitle": "Boek deze vergaderruimte",
+  "RoomBookingCalendar.cancel": "Annuleren",
+  "RoomBookingCalendar.clickToBook": "Klik om %{day} om %{time} te boeken",
+  "RoomBookingCalendar.dateTime": "Datum en tijd",
+  "RoomBookingCalendar.description": "Beschrijving (optioneel)",
+  "RoomBookingCalendar.endTime": "Eindtijd",
+  "RoomBookingCalendar.past": "Doorgang",
+  "RoomBookingCalendar.pastDay": "Kan niet boeken: %{day} is al verstreken",
+  "RoomBookingCalendar.pastTime": "Kan niet boeken: tijd %{time} is al verstreken",
+  "RoomBookingCalendar.refreshTooltip": "Vernieuw de kalender",
+  "RoomBookingCalendar.slotBooked": "Deze plek is al gereserveerd",
+  "RoomBookingCalendar.startTime": "Starttijd",
+  "RoomBookingCalendar.subject": "Doel van de bijeenkomst",
+  "RoomBookingCalendar.thisWeek": "Deze week",
+  "RoomBookingCalendar.time": "Uur",
+  "RoomBookingCalendar.unavailable": "Niet beschikbaar of voorbij",
+  "RoomCalendarDrawer.calendarTitle": "Reserveringskalender",
+  "RoomCalendarDrawer.cancelled": "Geannuleerd",
+  "RoomCalendarDrawer.errorFetchingEvents": "Fout bij het laden van reserveringen",
+  "RoomCalendarDrawer.noUpcomingEvents": "Geen aankomende reserveringen",
+  "RoomCalendarDrawer.ongoing": "In uitvoering",
+  "RoomCalendarDrawer.refreshTooltip": "Vernieuw de kalender",
+  "RoomCalendarDrawer.today": "Vandaag",
+  "RoomCalendarDrawer.tomorrow": "Morgen",
+  "RoomCalendarDrawer.tooltipDate": "Datum",
+  "RoomCalendarDrawer.tooltipLocation": "Plaats",
+  "RoomCalendarDrawer.tooltipOrganizedBy": "Georganiseerd door",
+  "RoomCalendarDrawer.tooltipTime": "Per uur",
+  "RoomCalendarDrawer.upcomingEventsSummary": "%{count} aankomende reservering(en)",
   "RoomCard.buttons.edit.false": "Ruimte-eigenschappen bewerken",
   "RoomCard.buttons.edit.true": "Stop met bewerken",
+  "RoomCard.tabs.calendar": "Kalender",
+  "RoomCard.tabs.calendar.help": "Bekijk de ruimtereserveringskalender",
+  "RoomCard.tabs.info.help": "Gedetailleerde ruimte-informatie weergeven",
   "RoomCard.tabs.inventory": "Inventaris",
+  "RoomCard.tabs.inventory.help": "Bekijk de inventaris en uitrusting van de ruimte",
   "RoomCard.tabs.people": "Opdrachten",
+  "RoomCard.tabs.people.help": "Toon mensen die aan deze ruimte zijn toegewezen",
   "RoomCard.tabs.room": "Ruimte",
   "RoomCardSelectDimensions.needSave": "Bewaar of annuleer uw wijzigingen voordat u de analyselagen van deze ruimte kunt wijzigen",
+  "RoomDataQualityOrganizationToRoom.headerBuilding": "Gebouw",
+  "RoomDataQualityOrganizationToRoom.headerDirection": "Richting",
+  "RoomDataQualityOrganizationToRoom.headerFloor": "Vloer",
+  "RoomDataQualityOrganizationToRoom.headerReason": "Reden ?",
+  "RoomDataQualityOrganizationToRoom.headerService": "Dienst",
+  "RoomDataQualityOrganizationToRoom.headerSpace": "Ruimte",
+  "RoomDataQualityOrganizationToRoom.reasonDirectionHasParent": "De organisatie %{organizationName} wordt gebruikt als afdeling, maar heeft een bovenliggende organisatie.",
+  "RoomDataQualityOrganizationToRoom.reasonNoDirection": "De organisatie %{organizationName} heeft geen richting en is gekoppeld aan een ruimte",
   "RoomFullName.noName": "Naamloze ruimte",
   "RoomGraphHandler.buttons.generateGraph.description": "Door de oriëntatiegrafiek te genereren, worden de knooppunten berekend waarlangs de verkenner de ruimtes en meubels kan vinden. Als de oorspronkelijke ruimte kan worden geselecteerd, is de grafiek al gegenereerd.",
   "RoomGraphHandler.buttons.generateGraph.label": "Genereer de oriëntatiegrafiek",
@@ -62609,6 +64402,7 @@ const nl = {
   "RoomGraphHandler.icons.displayNodes.description": "Toon paden in kamers",
   "RoomGraphHandler.icons.enablePathfinding.description": "Activeer padtekening vanuit de bronruimte met vorm onder de muis",
   "RoomGraphHandler.rooms.origin": "Originele ruimte",
+  "RoomLabels.capacity.suffix": "P.",
   "RoomMapFilter.Empty": "Er is geen ruimtetype gekoppeld aan ruimtes. U kunt er meer toevoegen door een ruimte te wijzigen en er een bijbehorend type aan toe te voegen. Vervolgens kunt u de weergave ervan vanuit deze sectie beheren",
   "RoomSegmentRoomsList.title": "De ruimtes die aan dit segment zijn gekoppeld",
   "RoomTooltip.roomWorkplaceAffectations": "Werkstationopdrachten",
@@ -62617,6 +64411,7 @@ const nl = {
   "RoomTypeGroupLabel.exclude.tooltip": "De ruimtetypologiegroep sluit bijbehorende ruimtetypen uit",
   "RoomTypeGroupMapFilter.Empty": "Er is geen ruimtetypegroep gekoppeld aan ruimtes via ruimtetypen. U kunt er meer toevoegen door een ruimtetypegroep te bewerken en er een ruimtetype aan toe te voegen. Vervolgens kunt u de weergave ervan vanuit deze sectie beheren",
   "RoomTypeGroupToRoomTypeLabel.exclude.tooltip": "De ruimtetypologie is uitgesloten",
+  "RoomTypeGroupsMapFilterZone.tabs_options": "Opties",
   "RoomWorkplaceList.EmptyList": "In deze ruimte zijn geen werkplekken aanwezig",
   "SearchFieldString.searchEmpty.help.false": "Zoek naar lege of waardeloze elementen",
   "SearchFieldString.searchEmpty.help.true": "Schakel standaard zoeken opnieuw in",
@@ -62632,6 +64427,7 @@ const nl = {
   "SelectDimensionTypeNavigationLayoutIcon.select": "Selecteer dit laagtype voor navigatie",
   "SelectDimensionTypeNavigationLayoutIcon.unselect": "Verwijder navigatie per analyselaag en keer terug naar navigatie per spaties",
   "ShapeTextAnchorDrawer.empty": "Selecteer een compatibele vorm om de displaytekst te verplaatsen",
+  "SharingcloudSyncOperationLabel.title": "Sharingcloud-synchronisatie",
   "ShowEntityDrawer.title.listItem": "Zie informatie voor %{determinant.defined} in de zijbalk",
   "ShowEntityDrawer.title.show": "Zie %{determinant.defined}",
   "SingleNodeQuery.refetch": "Gegevens opnieuw laden",
@@ -62656,9 +64452,12 @@ const nl = {
   "TableSelectionAllCheckbox.checked.true": "Deselecteer alles",
   "TableSelectionAllCheckbox.help": "Selecteer of deselecteer alle rijen (inclusief de rijen die niet zichtbaar zijn in de gepagineerde lijst)",
   "TableView.options": "Opties",
+  "TalentsoftImportLabel.title": "Talentsoft importeren",
   "TenantOperations.agpm-import-hr-file.label": "Importeren van het HR-bestand (STILOG)",
   "TenantOperations.egis-import-hr-file.label": "HR-bestand importeren",
   "TenantOperations.essilor-import-hr-file.label": "HR-bestand importeren",
+  "TenantOperations.ms-user-sync-thea.description": "Synchroniseert gebruikers van Microsoft",
+  "TenantOperations.ms-user-sync-thea.label": "Microsoft-gebruikerssynchronisatie",
   "TenantOperations.sephora-sync-sap-success-factors.label": "MSC-synchronisatie",
   "TenantOperations.st-grenoble-import-hr-file.label": "Het RH-bestand importeren",
   "TenantSearchBar.input.ariaLabel": "Zoeken naar bedrijven",
@@ -62667,23 +64466,37 @@ const nl = {
   "TextAreaImporter.errors.title": "Er zijn fouten opgetreden tijdens het importeren",
   "TextAreaImporter.help": "Gebruik het tabblad tussen elke kolom door de naam van elke kolom in de eerste rij op te nemen of rechtstreeks vanuit Excel te plakken",
   "TextAreaImporter.textarea.placeholder": "Kopieer en plak uw kolommen vanuit Excel met de titel om de eigenschappen te vinden die u wilt bijwerken",
+  "TheaMSUserSyncOperation.description": "Synchroniseer Microsoft 365-gebruikers met Surfy-medewerkers. Ontbrekende medewerkers worden automatisch aangemaakt op basis van hun e-mailadres.",
+  "TheaMSUserSyncOperation.refresh": "Microsoft-gebruikers synchroniseren",
+  "TheaMSUserSyncOperation.title": "Microsoft-gebruikerssynchronisatie",
   "ThemeModeSwitchMenuItem.dark.help": "Door de heldere modus te gebruiken, kunt u met een witte achtergrond werken",
   "ThemeModeSwitchMenuItem.dark.label": "Schakel over naar de heldere modus",
   "ThemeModeSwitchMenuItem.light.help": "Door de donkere modus te gebruiken, kunt u met donkere kleuren op de achtergrond werken om vermoeide ogen te verminderen.",
   "ThemeModeSwitchMenuItem.light.label": "Schakel over naar de donkere modus",
+  "TimeSlot.clickToBook": "Klik om %{day} om %{time} te boeken",
+  "TimeSlot.pastDay": "Kan niet boeken: %{day} is al verstreken",
+  "TimeSlot.pastTime": "Kan niet boeken: tijd %{time} is al verstreken",
+  "TimeSlot.slotBooked": "Deze plek is al gereserveerd",
   "ToggleAllOpenInfoState.false": "Open alle details en indicatoren",
   "ToggleAllOpenInfoState.true": "Sluit alle details en indicatoren",
   "ToggleCopilotEnable.help.false": "Activeer Surfy Copilot om automatische deurherkenning in te schakelen",
   "ToggleCopilotEnable.help.true": "Schakel Surfy Copilot uit en ga terug naar handmatige modellering",
   "ToggleCopilotEnable.label.false": "Activeer Surfy Copilot",
   "ToggleCopilotEnable.label.true": "Schakel Surfy Copilot uit",
+  "ToggleEnableFloorLabels.help": "Geef de verdiepingsnaam weer aan de zijkant van de constructie in de 3D-weergave",
+  "ToggleEnableFloorLabels.label": "Toon vloerlabels",
   "ToggleEnableMissingFloors.help": "Toon spookvloeren voor ontbrekende verdiepingen tussen niveau 0 en de hoogste verdieping op basis van echte vloerniveaus",
   "ToggleEnableMissingFloors.label": "Laat spookvloeren zien",
+  "ToggleEnableRoomLabels.help": "Geef de namen van de ruimtes weer als labels in de 3D-weergave",
+  "ToggleEnableRoomLabels.label": "Ruimtelabels weergeven",
   "ToggleWorkplaceFreeConditionTypeIconButton.and": "Bekijk vrije werkplekken voor minimaal één van de aangevraagde dagen",
   "ToggleWorkplaceFreeConditionTypeIconButton.or": "Bekijk vrije werkplekken voor alle aangevraagde dagen",
   "ToggleZbreSyncCheckbox.help": "Door synchronisatie kunnen ruimtes en werkplekken worden gekleurd op basis van de in Z#bre geplaatste sensoren",
   "ToggleZbreSyncCheckbox.label": "Synchroniseer met realtime bezigheden in Z#bre",
   "TopLevelOrganizationFilter.Empty": "Er is geen organisatie gekoppeld aan ruimtes. U kunt meer toevoegen door een ruimte te wijzigen en deze aan een organisatie te koppelen. Vervolgens kunt u de weergave ervan vanuit deze sectie beheren",
+  "UserNotPartOfCompanyAdminCanCreate.createButton": "Maak de vereniging",
+  "UserNotPartOfCompanyAdminCanCreate.message": "U bent niet gekoppeld aan het bedrijf %{companyId} .",
+  "WeekNavigation.thisWeek": "Deze week",
   "WorkCanvas.Options.AddItemTypePointOption.help.disable": "Stop met het maken van hoekpunten",
   "WorkCanvas.Options.AddItemTypePointOption.help.enable": "Door een hoekpunt toe te voegen, kunt u een vorm nauwkeuriger bewerken",
   "WorkCanvas.Options.AddItemTypePointOption.label.disable": "Stop met het toevoegen van een hoekpunt",
@@ -62895,6 +64708,7 @@ const nl = {
   "WorkCanvasToggleOptionHelp.shortcut": "Sneltoets: <b>%{shortcut}</b>",
   "WorkingLocationToggle.locations.OFFICE": "Bureau",
   "WorkingLocationToggle.locations.REMOTE": "Telewerk",
+  "WorkpaceBookingAverageByWeekDay.excludeWeekends": "Weekenden uitsluiten",
   "WorkpaceBookingAverageByWeekDay.labels.bar": "Aantal reserveringen",
   "WorkpaceBookingAverageByWeekDay.labels.line": "Gemiddeld per week",
   "WorkpaceBookingAverageByWeekDay.title": "Reservering van werkplekken per dag van de week",
@@ -62902,7 +64716,8 @@ const nl = {
   "WorkpaceBookingCountByDate.title": "Werkplekreserveringen op datum",
   "WorkpaceBookingCountByDimensionAndDate.labels.line": "Aantal mensen",
   "WorkpaceBookingCountByDimensionAndDate.title": "Aantal reserveringen per datum en per district",
-  "WorkpaceBookingPeopleCountByDate.labels.line": "Aantal mensen",
+  "WorkpaceBookingPeopleCountByBuildingByDate.title": "Aantal personen dat per gebouw en per datum heeft geboekt",
+  "WorkpaceBookingPeopleCountByDate.labelsLine": "Aantal mensen",
   "WorkpaceBookingPeopleCountByDate.title": "Aantal geboekte personen op datum",
   "WorkpaceBookingPeopleCountByDimensionAndDate.labels.line": "Aantal mensen",
   "WorkpaceBookingPeopleCountByDimensionAndDate.title": "Aantal personen dat heeft geboekt per datum en per wijk",
@@ -62931,6 +64746,11 @@ const nl = {
   "WorkplaceList.workplace.transit": "Dit werkstation wordt gedeeld",
   "WorkplaceList.zoomOnWorkplace": "Zoom in op de werkplek op de plattegrond",
   "WorkplaceNestedList.title": "Mensen die aan werkstations zijn toegewezen",
+  "WorkplaceOccupancyRateByDimension.labels.occupancyRate": "Bezettingsgraad (%)",
+  "WorkplaceOccupancyRateByDimension.title": "Bezettingsgraad per buurt",
+  "WorkplaceOccupancyRateByDimension.tooltip.bookedWorkplaces": "Gereserveerde posities: %{count}",
+  "WorkplaceOccupancyRateByDimension.tooltip.occupancyRate": "Bezettingsgraad: %{rate}",
+  "WorkplaceOccupancyRateByDimension.tooltip.totalBookableWorkplaces": "Totaal aantal boekbare posities: %{count}",
   "WorkplacePhysicalInventory.title": "Fysieke inventaris van de werkplek",
   "WorkplaceTransitWithAffectations.headers.affectedPeople": "Getroffen mensen",
   "WorkplaceTypeCarbonFootprintCount.help": "De CO2-voetafdruk is de hoeveelheid broeikasgassen die worden uitgestoten door de meubelobjecten van dit type werkplek",
@@ -62956,6 +64776,7 @@ const nl = {
   "WrongRoomsTable.table.headers.newRoom": "Nieuwe ruimte",
   "WrongRoomsTable.table.headers.objectType": "Natuur",
   "WrongRoomsTable.table.headers.type": "Vriendelijk",
+  "ZbreSyncOperationLabel.title": "Z#bre-synchronisatie",
   "booking.snackbar.delete.room": "De reservering bij ruimte %{roomName} is geannuleerd voor de periode %{slot}",
   "booking.snackbar.delete.workplace": "De reservering op werkstation %{workplaceName} is geannuleerd voor de periode %{slot}",
   "calculatedProperties.properties.carbonFootprint.description": "De CO2-voetafdruk is de hoeveelheid CO2 die wordt uitgestoten",
@@ -63080,6 +64901,8 @@ const nl = {
   "layoutViewSets.costCenter.label": "Opnieuw factureren",
   "layoutViewSets.flex.description": "Flexbezetting van ruimtes",
   "layoutViewSets.flex.label": "Buigen",
+  "layoutViewSets.meetingRooms.description": "Ruimtetypegroepen voor vergaderruimten analyseren",
+  "layoutViewSets.meetingRooms.label": "Vergaderzalen",
   "layoutViewSets.organizationLevel0.description": "Bezetting per richting",
   "layoutViewSets.organizationLevel0.label": "Routebeschrijving",
   "layoutViewSets.organizationLevel1.description": "Bezetting door diensten",
@@ -63169,6 +64992,8 @@ const nl = {
   "models.AuthentificationConnection.determinants.defined": "authenticatie verbindingen",
   "models.AuthentificationConnection.determinants.undefined": "authenticatie verbindingen",
   "models.AuthentificationConnection.plural": "Authenticatieverbindingen",
+  "models.AuthentificationConnection.properties.domaines.description": "E-maildomeinen die voor deze authenticatieverbinding zijn toegestaan",
+  "models.AuthentificationConnection.properties.domaines.label": "Geautoriseerde domeinen",
   "models.AuthentificationConnection.properties.id.label": "Authenticatieverbindings-ID",
   "models.AuthentificationConnection.properties.name.description": "Naam van authenticatieverbinding",
   "models.AuthentificationConnection.properties.name.label": "Naam",
@@ -63266,6 +65091,8 @@ const nl = {
   "models.Building.reports.buildingItems.help": "Rapport van de bouwinventaris",
   "models.Building.reports.buildingPeople.fileName": "Mensen",
   "models.Building.reports.buildingPeople.help": "Melding van getroffen personen in het gebouw",
+  "models.Building.reports.dimensionTypes.fileName": "Dimensietypen",
+  "models.Building.reports.dimensionTypes.help": "Relatie tussen dimensietypen en rapportagegegevens voor het bouwen",
   "models.Building.reports.organizations.fileName": "Organisaties",
   "models.Building.reports.organizations.help": "Verslag van bouworganisaties",
   "models.Building.reports.workplaceAffectations.fileName": "Werkstationopdrachten",
@@ -63356,6 +65183,8 @@ const nl = {
   "models.Company.properties.proxyImages.label": "Proxy-afbeeldingen",
   "models.Company.properties.workingDaysCount.description": "Het aantal werkdagen per week kan voor werkdagen 5 bedragen, 6 inclusief zaterdag en 7 inclusief zondag",
   "models.Company.properties.workingDaysCount.label": "Aantal werkdagen per week",
+  "models.Company.properties.workplaceBookingConfirmationRange.description": "Tijdsbestek waarbinnen gebruikers hun werkplekreserveringen kunnen bevestigen. Formaat: UU:MM-UU:MM (bijv. 06:00-10:30). Laat dit veld leeg om de bevestiging van werkplekreserveringen uit te schakelen.",
+  "models.Company.properties.workplaceBookingConfirmationRange.label": "Bevestigingsvenster voor werkstationboeking",
   "models.Company.reports.export-all-duplicate.fileName": "duplicatie",
   "models.Company.reports.export-all-duplicate.help": "Maak een back-up van bedrijfsgegevens om een ​​kopie van het platform te maken",
   "models.Company.reports.export-all.fileName": "back-up",
@@ -63480,6 +65309,10 @@ const nl = {
   "models.Dimension.properties.crowdedForBookingRate.label": "Boekingstoeslagtarief",
   "models.Dimension.properties.name.description": "Handig om onder andere de laag te differentiëren",
   "models.Dimension.properties.name.label": "Naam van analyselaag",
+  "models.Dimension.properties.peopleCount.description": "Het aantal toewijzingen direct aan de laag",
+  "models.Dimension.properties.peopleCount.label": "Aantal directe toewijzingen aan de laag",
+  "models.Dimension.properties.totalPeopleCount.description": "Het totale aantal toewijzingen aan de laag rechtstreeks, via een werkstation of via een werkruimte",
+  "models.Dimension.properties.totalPeopleCount.label": "Totaal aantal toewijzingen aan de laag",
   "models.Dimension.properties.value.description": "De waarde kan worden gebruikt om de laag te associëren met een numerieke waarde om analytische statistieken te kunnen produceren",
   "models.Dimension.properties.value.label": "Numerieke waarde",
   "models.Dimension.properties.workplacesBookableOnlyViaDimension.description": "Wanneer ingeschakeld, kunnen werkstations in deze dimensie alleen worden gereserveerd via directe toewijzing aan de dimensie en zijn ze uitgesloten van vloerreserveringen",
@@ -63503,6 +65336,8 @@ const nl = {
   "models.DimensionFloor.determinants.defined": "de associaties van de analyselaag met de verdiepingen",
   "models.DimensionFloor.determinants.undefined": "associaties van de analyselaag met de verdiepingen",
   "models.DimensionFloor.plural": "Analyselaagassociaties met verdiepingen",
+  "models.DimensionFloor.properties.bookableWorkplacesCount.description": "Het aantal reserveerbare werkplekken voor deze verdieping",
+  "models.DimensionFloor.properties.bookableWorkplacesCount.label": "Aantal te reserveren werkplekken op de verdieping",
   "models.DimensionFloor.properties.id.label": "Identificatie van de analyselaagkoppeling met de verdiepingen",
   "models.DimensionFloor.properties.peopleCount.description": "Het aantal toegewezen personen, hetzij rechtstreeks toegewezen aan ruimtes, hetzij via een werkplek voor deze verdieping",
   "models.DimensionFloor.properties.peopleCount.label": "Aantal opdrachten",
@@ -63956,8 +65791,6 @@ const nl = {
   "models.Organization.singular": "organisatie",
   "models.Organization.views.dq-organization-hierarchy.help": "Detecteer organisaties die niet in de juiste hiërarchie staan",
   "models.Organization.views.dq-organization-hierarchy.label": "Fouten in de hiërarchie van organisaties",
-  "models.Organization.views.dq-organization-to-room.help": "Detecteer ruimteassociaties met organisaties die niet geldig zijn",
-  "models.Organization.views.dq-organization-to-room.label": "Fouten in de organisatie van ruimtes",
   "models.Organization.views.hierarchy.help": "Bekijk de organisatiehiërarchie",
   "models.Organization.views.hierarchy.label": "Hiërarchie",
   "models.OrganizationBuilding.description": "Met een organisatie-gebouw-associatie kunt u de organisaties definiëren die verantwoordelijk zijn voor elk gebouw",
@@ -64288,6 +66121,8 @@ const nl = {
   "models.Room.views.dq-capacity-gt-0.label": "Ruimtes met een capaciteit exclusief stoelen verschillend van 0",
   "models.Room.views.dq-no-point.help": "Ruimtes die 0, 1 of 2 punten hebben en daarom een ​​oppervlakte nul moeten hebben",
   "models.Room.views.dq-no-point.label": "Spaties zonder voldoende punten",
+  "models.Room.views.dq-organization-to-room.help": "Detecteer ruimteassociaties met organisaties die niet geldig zijn",
+  "models.Room.views.dq-organization-to-room.label": "Fouten in de organisatie van ruimtes",
   "models.Room.views.dq-uniq-name.help": "Stelt namen voor voor ruimtes die geen naam hebben of de naam is niet uniek op dezelfde verdieping",
   "models.Room.views.dq-uniq-name.label": "Voorgestelde namen voor spaties",
   "models.Room.views.map.help": "Bekijk het ruimteplan %{name}",
@@ -64579,11 +66414,31 @@ const nl = {
   "models.WorkplaceTypeItemType.properties.zIndex.description": "Met de hoogte-index kunt u de volgorde van weergave van objecttypen definiëren: hoe groter de index, hoe meer het object boven de andere zal staan",
   "models.WorkplaceTypeItemType.properties.zIndex.label": "Hoogte-index",
   "models.WorkplaceTypeItemType.singular": "objecttype in werkstationtype",
+  "models.WorkplaceUsageType.description": "Met het gebruikstype Werkstation kunnen werkstations worden gecategoriseerd op basis van hun gebruik, met behulp van de terminologie van het bedrijf. Ze kunnen ook met verschillende kleuren op de plattegronden worden weergegeven.",
+  "models.WorkplaceUsageType.determinant.defined": "het type werkplekgebruik",
+  "models.WorkplaceUsageType.determinant.undefined": "een soort werkplekgebruik",
+  "models.WorkplaceUsageType.determinants.defined": "soorten werkplekgebruik",
+  "models.WorkplaceUsageType.determinants.undefined": "soorten werkplekgebruik",
+  "models.WorkplaceUsageType.plural": "soorten werkplekgebruik",
+  "models.WorkplaceUsageType.properties.color.description": "Kleur die wordt gebruikt om werkplekken van dit type op plattegronden en kaarten te onderscheiden",
+  "models.WorkplaceUsageType.properties.color.label": "Kleur",
+  "models.WorkplaceUsageType.properties.description.description": "Gedetailleerde beschrijving waarin het gebruik en het doel van dit type gebruik wordt uitgelegd",
+  "models.WorkplaceUsageType.properties.description.label": "Beschrijving",
+  "models.WorkplaceUsageType.properties.id.description": "Unieke identificatie voor het type gebruik",
+  "models.WorkplaceUsageType.properties.id.label": "Identificatie van het werkstationgebruikstype",
+  "models.WorkplaceUsageType.properties.name.description": "Naam van het type gebruik dat identificatie mogelijk maakt",
+  "models.WorkplaceUsageType.properties.name.label": "Naam",
+  "models.WorkplaceUsageType.singular": "type werkplekgebruik",
+  "useOpenMeetingRoomBookingDrawer.bookRoom": "Om te boeken",
+  "useOpenMeetingRoomBookingDrawer.noRoomName": "Ongedefinieerde naamruimte",
+  "useOpenMeetingRoomBookingDrawer.roomBooking": "Ruimtereservering",
   "validation.regex.company.name": "De bedrijfsnaam moet in kleine letters zijn en mag alleen letters, cijfers en koppeltekens bevatten",
+  "validation.regex.company.workplaceBookingConfirmationRange": "Het boekingsbevestigingsvenster moet de notatie UU:MM-UU:MM hebben (bijv. 06:00-10:30)",
   "validation.regex.default": "De waarde moet overeenkomen met het formaat: %{pattern}",
   "weight.gram": "Gram",
   "weight.kilogram": "Kilogram",
-  "workplaceTypeLayoutFilter.Empty": "Er zijn momenteel geen werkstations in ruimtes. U kunt er meer toevoegen door een ruimte te wijzigen en er werkstations aan toe te voegen. Vervolgens kunt u de weergave ervan vanuit deze sectie beheren"
+  "workplaceTypeLayoutFilter.Empty": "Er zijn momenteel geen werkstations in ruimtes. U kunt er meer toevoegen door een ruimte te wijzigen en er werkstations aan toe te voegen. Vervolgens kunt u de weergave ervan vanuit deze sectie beheren",
+  "workplaceUsageTypeLayoutFilter.Empty": "Er is momenteel geen werkstationgebruikstype toegewezen. U kunt er een toewijzen door de werkstations te bewerken en vervolgens de weergave ervan vanuit deze sectie te beheren."
 };
 const jsonTranslationsFiles = { fr, en, es, it, nl };
 class PolyglotHelpApi extends PolyglotApi {
@@ -64660,7 +66515,6 @@ function getObjectTypeTranslatedDescription(i18nApi, objectTypeName) {
   return null;
 }
 function getPropertyTypeDescription(i18nApi, propertyType) {
-  var _a;
   const { objectTypeName, type: type2, name } = propertyType;
   const objectTypeDefinition = getObjectTypeDefinitionByName(objectTypeName);
   const belongsToCapitalizedObjectTypeName = getTargetObjectTypeCapitalizedName(propertyType);
@@ -64680,7 +66534,7 @@ function getPropertyTypeDescription(i18nApi, propertyType) {
       return i18nApi.translate(calculatedPropertyKey);
     }
   }
-  if ((_a = propertyType.association) == null ? void 0 : _a.targetModelName) {
+  if (propertyType.association?.targetModelName) {
     const targetOt = getTargetObjectTypeDefinition(propertyType);
     const targetDescription = getObjectTypeTranslatedDescription(i18nApi, targetOt.name);
     if (targetDescription) {
@@ -64690,15 +66544,14 @@ function getPropertyTypeDescription(i18nApi, propertyType) {
   return null;
 }
 function PropertyTypeDescription(props) {
-  var _a, _b;
   const { propertyType } = props;
   const i18n = useI18nApi();
   const description = getPropertyTypeDescription(i18n, propertyType);
   if (description) {
     return /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: description });
   }
-  if ((_a = propertyType.association) == null ? void 0 : _a.targetModelName) {
-    return getObjectTypeTranslatedDescription(i18n, (_b = propertyType.association) == null ? void 0 : _b.targetModelName);
+  if (propertyType.association?.targetModelName) {
+    return getObjectTypeTranslatedDescription(i18n, propertyType.association?.targetModelName);
   }
   return null;
 }
@@ -66026,7 +67879,7 @@ var defaultRegexes = {
     [NAME, VERSION]
   ]
 };
-var defaultProps = function() {
+var defaultProps = (function() {
   var props = { init: {}, isIgnore: {}, isIgnoreRgx: {}, toString: {} };
   setProps.call(props.init, [
     [UA_BROWSER, [NAME, VERSION, MAJOR, TYPE]],
@@ -66052,7 +67905,7 @@ var defaultProps = function() {
     [UA_OS, [NAME, VERSION]]
   ]);
   return props;
-}();
+})();
 var createIData = function(item, itemType) {
   var init_props = defaultProps.init[itemType], is_ignoreProps = defaultProps.isIgnore[itemType] || 0, is_ignoreRgx = defaultProps.isIgnoreRgx[itemType] || 0, toString_props = defaultProps.toString[itemType] || 0;
   function IData() {
@@ -66342,7 +68195,7 @@ function isTouchDevice() {
   if (parser.device.type) {
     return true;
   }
-  const hasTouch = w && "ontouchstart" in w || ((n == null ? void 0 : n.maxTouchPoints) ?? 0) > 0;
+  const hasTouch = w && "ontouchstart" in w || (n?.maxTouchPoints ?? 0) > 0;
   if (parser.device.vendor === "Apple" && hasTouch) {
     return true;
   }
@@ -66819,9 +68672,6 @@ const OrganizationViews = {
     }
   },
   "dataQualities": {
-    "dq-organization-to-room": {
-      "name": "dq-organization-to-room"
-    },
     "dq-organization-hierarchy": {
       "name": "dq-organization-hierarchy"
     }
@@ -67492,6 +69342,9 @@ const RoomViews = {
     }
   },
   "dataQualities": {
+    "dq-organization-to-room": {
+      "name": "dq-organization-to-room"
+    },
     "dq-uniq-name": {
       "name": "dq-uniq-name"
     },
@@ -68144,6 +69997,37 @@ const WorkplaceTypeViews = {
       "name": "dq-not-used"
     }
   }
+};
+const WorkplaceUsageTypeViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
 };
 const WorkplaceTypeItemTypeViews = {
   "indexes": {
@@ -70007,6 +71891,7 @@ const ViewCoreSchema = {
   personToPerson: PersonToPersonViews,
   roomAffectation: RoomAffectationViews,
   workplaceType: WorkplaceTypeViews,
+  workplaceUsageType: WorkplaceUsageTypeViews,
   workplaceTypeItemType: WorkplaceTypeItemTypeViews,
   workplace: WorkplaceViews,
   item: ItemViews,
@@ -70074,12 +71959,11 @@ function getObjectTypeViewCoreByNameMandatory(objectTypeName, viewName) {
   return viewCore;
 }
 function getObjectTypeViewCoreByName(objectTypeName, viewName) {
-  var _a;
   const views2 = ViewCoreSchema[objectTypeName];
   if (!views2) {
     return void 0;
   }
-  const viewCore = views2.indexes[viewName] || views2.singles[viewName] || ((_a = views2.dataQualities) == null ? void 0 : _a[viewName]);
+  const viewCore = views2.indexes[viewName] || views2.singles[viewName] || views2.dataQualities?.[viewName];
   return viewCore;
 }
 function ErrorMessage(props) {

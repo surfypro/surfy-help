@@ -32,12 +32,12 @@ The start date and time of the reservation
 
 ## Basic properties {#properties-base}
     
-### Workspace Has Been Confirmed {#workspace-has-been-confirmed}
+### Workspace Has Been Confirmed At {#workspace-has-been-confirmed-at}
 
 
 
-*Technical name:* ```workspaceHasBeenConfirmed```
-<PH code="personToWorkplaceBooking:workspaceHasBeenConfirmed"/>
+*Technical name:* ```workspaceHasBeenConfirmedAt```
+<PH code="personToWorkplaceBooking:workspaceHasBeenConfirmedAt"/>
 
     
 

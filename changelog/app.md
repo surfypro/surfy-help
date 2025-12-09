@@ -1,7 +1,6 @@
 # Nouveautés
 
-<!-- 
-## 3 Decembre 2025 - v3.4.131
+## 9 Decembre 2025 - v3.4.140
 
 - Mise en place d’un nouveau rapport des affectations de quartier par bâtiment, qui fournit toutes les informations sur les affectations de quartier par bâtiment dans un fichier Excel.
 - Dans <LIV code="personToWorkplaceBooking:dashboard-index" />, les rapports sont désormais proposés par bâtiment et il est possible de sélectionner plusieurs bâtiments.
@@ -9,8 +8,8 @@
     - Un nouveau rapport « Taux d’occupation par quartier » est disponible.
     - Les rapports comprenant des dates peuvent désormais exclure les week-ends.
 - Le nombre de postes de travail réservables est désormais aussi disponible par étage et par quartier.
-- Une nouvelle propriété <P code="company:workplaceBookingConfirmationRange" /> permet de définir la période de confirmation de la réservation des postes de travail. Si une période est définie dans cette option, le jour J, le poste de travail réservé doit être validé par l’utilisateur. Sinon, dans les 5 minutes suivantes, le poste de travail sera libéré automatiquement.
- -->
+- Une nouvelle propriété <P code="company:workplaceBookingConfirmationRange" /> permet de définir la période de confirmation de la réservation des postes de travail. Si une période est définie dans cette option, le jour J, le poste de travail réservé doit être validé par l’utilisateur. Sinon, dans les 5 minutes après la période de réservation, le poste de travail sera libéré automatiquement.
+- Améliorations diverses de la page de réservation des salles de réunion
 
 ## 19 novembre 2025 - v3.4.128
 
