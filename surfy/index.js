@@ -3422,6 +3422,82 @@ const userCompanyObjectTypeDefintion = {
         }
       }
     },
+    "vehicleCreatedBies": {
+      "name": "vehicleCreatedBies",
+      "objectTypeName": "userCompany",
+      "type": "has-many-paginated",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      },
+      "association": {
+        "foreignKey": "userCompanyCreatedById",
+        "targetModelName": "vehicle",
+        "propertyTypeName": "vehicleCreatedBies",
+        "options": {
+          "readOnly": true
+        }
+      }
+    },
+    "vehicleUpdatedBies": {
+      "name": "vehicleUpdatedBies",
+      "objectTypeName": "userCompany",
+      "type": "has-many-paginated",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      },
+      "association": {
+        "foreignKey": "userCompanyUpdatedById",
+        "targetModelName": "vehicle",
+        "propertyTypeName": "vehicleUpdatedBies",
+        "options": {
+          "readOnly": true
+        }
+      }
+    },
+    "personToVehicleCreatedBies": {
+      "name": "personToVehicleCreatedBies",
+      "objectTypeName": "userCompany",
+      "type": "has-many-paginated",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      },
+      "association": {
+        "foreignKey": "userCompanyCreatedById",
+        "targetModelName": "personToVehicle",
+        "propertyTypeName": "personToVehicleCreatedBies",
+        "options": {
+          "readOnly": true
+        }
+      }
+    },
+    "personToVehicleUpdatedBies": {
+      "name": "personToVehicleUpdatedBies",
+      "objectTypeName": "userCompany",
+      "type": "has-many-paginated",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      },
+      "association": {
+        "foreignKey": "userCompanyUpdatedById",
+        "targetModelName": "personToVehicle",
+        "propertyTypeName": "personToVehicleUpdatedBies",
+        "options": {
+          "readOnly": true
+        }
+      }
+    },
     "roomAffectationCreatedBies": {
       "name": "roomAffectationCreatedBies",
       "objectTypeName": "userCompany",
@@ -5300,6 +5376,8 @@ const userCompanyObjectTypeDefintion = {
       "person",
       "personToPersonType",
       "personToPerson",
+      "vehicle",
+      "personToVehicle",
       "roomAffectation",
       "workplaceType",
       "workplaceUsageType",
@@ -19924,6 +20002,25 @@ const personObjectTypeDefintion = {
         }
       }
     },
+    "personToVehicles": {
+      "name": "personToVehicles",
+      "objectTypeName": "person",
+      "type": "has-many-paginated",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      },
+      "association": {
+        "foreignKey": "personId",
+        "targetModelName": "personToVehicle",
+        "propertyTypeName": "personToVehicles",
+        "options": {
+          "readOnly": false
+        }
+      }
+    },
     "roomAffectations": {
       "name": "roomAffectations",
       "objectTypeName": "person",
@@ -20150,6 +20247,7 @@ const personObjectTypeDefintion = {
     "hasMany": [
       "userCompany",
       "personToPerson",
+      "personToVehicle",
       "roomAffectation",
       "workplaceAffectation",
       "itemToPerson",
@@ -20696,6 +20794,844 @@ const personToPersonObjectTypeDefintion = {
     "singular": "PersonToPerson",
     "plural": "PersonToPeople",
     "id": "PersonToPersonId"
+  },
+  "hidden": false,
+  "context": {
+    "hasMany": [],
+    "belongsTo": [
+      "company"
+    ]
+  }
+};
+const vehicleTypeObjectTypeDefintion = {
+  "name": "vehicleType",
+  "type": "table",
+  "scope": "public",
+  "isMasterData": true,
+  "isReportingData": false,
+  "isSecurityData": false,
+  "propertiesByName": {
+    "id": {
+      "name": "id",
+      "objectTypeName": "vehicleType",
+      "type": "primary-key",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "name": {
+      "name": "name",
+      "objectTypeName": "vehicleType",
+      "type": "string",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      }
+    },
+    "color": {
+      "name": "color",
+      "objectTypeName": "vehicleType",
+      "type": "color",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      }
+    },
+    "code": {
+      "name": "code",
+      "objectTypeName": "vehicleType",
+      "type": "string",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      }
+    },
+    "icon": {
+      "name": "icon",
+      "objectTypeName": "vehicleType",
+      "type": "icon",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      }
+    },
+    "createdAt": {
+      "name": "createdAt",
+      "objectTypeName": "vehicleType",
+      "type": "timestamp",
+      "options": {
+        "mandatory": false,
+        "readOnly": true,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "updatedAt": {
+      "name": "updatedAt",
+      "objectTypeName": "vehicleType",
+      "type": "timestamp",
+      "options": {
+        "mandatory": false,
+        "readOnly": true,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "externalId": {
+      "name": "externalId",
+      "objectTypeName": "vehicleType",
+      "type": "string",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "vehicles": {
+      "name": "vehicles",
+      "objectTypeName": "vehicleType",
+      "type": "has-many-paginated",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      },
+      "association": {
+        "foreignKey": "vehicleTypeId",
+        "targetModelName": "vehicle",
+        "propertyTypeName": "vehicles",
+        "options": {
+          "readOnly": false
+        }
+      }
+    }
+  },
+  "plural": "vehicleTypes",
+  "camelized": {
+    "singular": "vehicleType",
+    "plural": "vehicleTypes",
+    "id": "vehicleTypeId"
+  },
+  "capitalized": {
+    "singular": "VehicleType",
+    "plural": "VehicleTypes",
+    "id": "VehicleTypeId"
+  },
+  "hidden": false,
+  "context": {
+    "hasMany": [
+      "vehicle"
+    ],
+    "belongsTo": []
+  }
+};
+const vehiclePropulsionTypeObjectTypeDefintion = {
+  "name": "vehiclePropulsionType",
+  "type": "table",
+  "scope": "public",
+  "isMasterData": true,
+  "isReportingData": false,
+  "isSecurityData": false,
+  "propertiesByName": {
+    "id": {
+      "name": "id",
+      "objectTypeName": "vehiclePropulsionType",
+      "type": "primary-key",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "name": {
+      "name": "name",
+      "objectTypeName": "vehiclePropulsionType",
+      "type": "string",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      }
+    },
+    "color": {
+      "name": "color",
+      "objectTypeName": "vehiclePropulsionType",
+      "type": "color",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      }
+    },
+    "code": {
+      "name": "code",
+      "objectTypeName": "vehiclePropulsionType",
+      "type": "string",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      }
+    },
+    "icon": {
+      "name": "icon",
+      "objectTypeName": "vehiclePropulsionType",
+      "type": "icon",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      }
+    },
+    "createdAt": {
+      "name": "createdAt",
+      "objectTypeName": "vehiclePropulsionType",
+      "type": "timestamp",
+      "options": {
+        "mandatory": false,
+        "readOnly": true,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "updatedAt": {
+      "name": "updatedAt",
+      "objectTypeName": "vehiclePropulsionType",
+      "type": "timestamp",
+      "options": {
+        "mandatory": false,
+        "readOnly": true,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "externalId": {
+      "name": "externalId",
+      "objectTypeName": "vehiclePropulsionType",
+      "type": "string",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "vehicles": {
+      "name": "vehicles",
+      "objectTypeName": "vehiclePropulsionType",
+      "type": "has-many-paginated",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      },
+      "association": {
+        "foreignKey": "vehiclePropulsionTypeId",
+        "targetModelName": "vehicle",
+        "propertyTypeName": "vehicles",
+        "options": {
+          "readOnly": false
+        }
+      }
+    }
+  },
+  "plural": "vehiclePropulsionTypes",
+  "camelized": {
+    "singular": "vehiclePropulsionType",
+    "plural": "vehiclePropulsionTypes",
+    "id": "vehiclePropulsionTypeId"
+  },
+  "capitalized": {
+    "singular": "VehiclePropulsionType",
+    "plural": "VehiclePropulsionTypes",
+    "id": "VehiclePropulsionTypeId"
+  },
+  "hidden": false,
+  "context": {
+    "hasMany": [
+      "vehicle"
+    ],
+    "belongsTo": []
+  }
+};
+const vehicleObjectTypeDefintion = {
+  "name": "vehicle",
+  "type": "table",
+  "scope": "private",
+  "isMasterData": false,
+  "isReportingData": false,
+  "isSecurityData": false,
+  "propertiesByName": {
+    "id": {
+      "name": "id",
+      "objectTypeName": "vehicle",
+      "type": "primary-key",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "belongsToTheCompany": {
+      "name": "belongsToTheCompany",
+      "objectTypeName": "vehicle",
+      "type": "boolean",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false,
+        "defaultValue": false
+      }
+    },
+    "vehicleRegistration": {
+      "name": "vehicleRegistration",
+      "objectTypeName": "vehicle",
+      "type": "string",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      }
+    },
+    "createdAt": {
+      "name": "createdAt",
+      "objectTypeName": "vehicle",
+      "type": "timestamp",
+      "options": {
+        "mandatory": false,
+        "readOnly": true,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "updatedAt": {
+      "name": "updatedAt",
+      "objectTypeName": "vehicle",
+      "type": "timestamp",
+      "options": {
+        "mandatory": false,
+        "readOnly": true,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "externalId": {
+      "name": "externalId",
+      "objectTypeName": "vehicle",
+      "type": "string",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "vehicleTypeId": {
+      "name": "vehicleTypeId",
+      "objectTypeName": "vehicle",
+      "type": "foreign-key",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      },
+      "association": {
+        "foreignKey": "vehicleTypeId",
+        "targetModelName": "vehicleType",
+        "propertyTypeName": "vehicleType",
+        "options": {
+          "readOnly": false
+        }
+      }
+    },
+    "vehicleType": {
+      "name": "vehicleType",
+      "objectTypeName": "vehicle",
+      "type": "belongs-to",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      },
+      "association": {
+        "foreignKey": "vehicleTypeId",
+        "targetModelName": "vehicleType",
+        "propertyTypeName": "vehicleType",
+        "options": {
+          "readOnly": false
+        }
+      }
+    },
+    "vehiclePropulsionTypeId": {
+      "name": "vehiclePropulsionTypeId",
+      "objectTypeName": "vehicle",
+      "type": "foreign-key",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      },
+      "association": {
+        "foreignKey": "vehiclePropulsionTypeId",
+        "targetModelName": "vehiclePropulsionType",
+        "propertyTypeName": "vehiclePropulsionType",
+        "options": {
+          "readOnly": false
+        }
+      }
+    },
+    "vehiclePropulsionType": {
+      "name": "vehiclePropulsionType",
+      "objectTypeName": "vehicle",
+      "type": "belongs-to",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      },
+      "association": {
+        "foreignKey": "vehiclePropulsionTypeId",
+        "targetModelName": "vehiclePropulsionType",
+        "propertyTypeName": "vehiclePropulsionType",
+        "options": {
+          "readOnly": false
+        }
+      }
+    },
+    "userCompanyCreatedById": {
+      "name": "userCompanyCreatedById",
+      "objectTypeName": "vehicle",
+      "type": "foreign-key",
+      "options": {
+        "mandatory": false,
+        "readOnly": true,
+        "calculated": false,
+        "technical": true
+      },
+      "association": {
+        "foreignKey": "userCompanyCreatedById",
+        "targetModelName": "userCompany",
+        "propertyTypeName": "userCompanyCreatedBy",
+        "options": {
+          "readOnly": true
+        }
+      }
+    },
+    "userCompanyCreatedBy": {
+      "name": "userCompanyCreatedBy",
+      "objectTypeName": "vehicle",
+      "type": "belongs-to",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      },
+      "association": {
+        "foreignKey": "userCompanyCreatedById",
+        "targetModelName": "userCompany",
+        "propertyTypeName": "userCompanyCreatedBy",
+        "options": {
+          "readOnly": true
+        }
+      }
+    },
+    "userCompanyUpdatedById": {
+      "name": "userCompanyUpdatedById",
+      "objectTypeName": "vehicle",
+      "type": "foreign-key",
+      "options": {
+        "mandatory": false,
+        "readOnly": true,
+        "calculated": false,
+        "technical": true
+      },
+      "association": {
+        "foreignKey": "userCompanyUpdatedById",
+        "targetModelName": "userCompany",
+        "propertyTypeName": "userCompanyUpdatedBy",
+        "options": {
+          "readOnly": true
+        }
+      }
+    },
+    "userCompanyUpdatedBy": {
+      "name": "userCompanyUpdatedBy",
+      "objectTypeName": "vehicle",
+      "type": "belongs-to",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      },
+      "association": {
+        "foreignKey": "userCompanyUpdatedById",
+        "targetModelName": "userCompany",
+        "propertyTypeName": "userCompanyUpdatedBy",
+        "options": {
+          "readOnly": true
+        }
+      }
+    },
+    "personToVehicles": {
+      "name": "personToVehicles",
+      "objectTypeName": "vehicle",
+      "type": "has-many-paginated",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      },
+      "association": {
+        "foreignKey": "vehicleId",
+        "targetModelName": "personToVehicle",
+        "propertyTypeName": "personToVehicles",
+        "options": {
+          "readOnly": false
+        }
+      }
+    },
+    "companyId": {
+      "name": "companyId",
+      "objectTypeName": "vehicle",
+      "type": "foreign-key",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      },
+      "association": {
+        "foreignKey": "companyId",
+        "targetModelName": "company",
+        "propertyTypeName": "company",
+        "options": {
+          "readOnly": true
+        }
+      }
+    },
+    "company": {
+      "name": "company",
+      "objectTypeName": "vehicle",
+      "type": "belongs-to",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      },
+      "association": {
+        "foreignKey": "companyId",
+        "targetModelName": "company",
+        "propertyTypeName": "company",
+        "options": {
+          "readOnly": true
+        }
+      }
+    }
+  },
+  "plural": "vehicles",
+  "camelized": {
+    "singular": "vehicle",
+    "plural": "vehicles",
+    "id": "vehicleId"
+  },
+  "capitalized": {
+    "singular": "Vehicle",
+    "plural": "Vehicles",
+    "id": "VehicleId"
+  },
+  "hidden": false,
+  "context": {
+    "hasMany": [
+      "personToVehicle"
+    ],
+    "belongsTo": [
+      "company"
+    ]
+  }
+};
+const personToVehicleObjectTypeDefintion = {
+  "name": "personToVehicle",
+  "type": "many-to-many",
+  "scope": "private",
+  "isMasterData": false,
+  "isReportingData": false,
+  "isSecurityData": false,
+  "propertiesByName": {
+    "id": {
+      "name": "id",
+      "objectTypeName": "personToVehicle",
+      "type": "primary-key",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "createdAt": {
+      "name": "createdAt",
+      "objectTypeName": "personToVehicle",
+      "type": "timestamp",
+      "options": {
+        "mandatory": false,
+        "readOnly": true,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "updatedAt": {
+      "name": "updatedAt",
+      "objectTypeName": "personToVehicle",
+      "type": "timestamp",
+      "options": {
+        "mandatory": false,
+        "readOnly": true,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "externalId": {
+      "name": "externalId",
+      "objectTypeName": "personToVehicle",
+      "type": "string",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "personId": {
+      "name": "personId",
+      "objectTypeName": "personToVehicle",
+      "type": "foreign-key",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      },
+      "association": {
+        "foreignKey": "personId",
+        "targetModelName": "person",
+        "propertyTypeName": "person",
+        "options": {
+          "readOnly": false
+        }
+      }
+    },
+    "person": {
+      "name": "person",
+      "objectTypeName": "personToVehicle",
+      "type": "belongs-to",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      },
+      "association": {
+        "foreignKey": "personId",
+        "targetModelName": "person",
+        "propertyTypeName": "person",
+        "options": {
+          "readOnly": false
+        }
+      }
+    },
+    "vehicleId": {
+      "name": "vehicleId",
+      "objectTypeName": "personToVehicle",
+      "type": "foreign-key",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      },
+      "association": {
+        "foreignKey": "vehicleId",
+        "targetModelName": "vehicle",
+        "propertyTypeName": "vehicle",
+        "options": {
+          "readOnly": false
+        }
+      }
+    },
+    "vehicle": {
+      "name": "vehicle",
+      "objectTypeName": "personToVehicle",
+      "type": "belongs-to",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      },
+      "association": {
+        "foreignKey": "vehicleId",
+        "targetModelName": "vehicle",
+        "propertyTypeName": "vehicle",
+        "options": {
+          "readOnly": false
+        }
+      }
+    },
+    "userCompanyCreatedById": {
+      "name": "userCompanyCreatedById",
+      "objectTypeName": "personToVehicle",
+      "type": "foreign-key",
+      "options": {
+        "mandatory": false,
+        "readOnly": true,
+        "calculated": false,
+        "technical": true
+      },
+      "association": {
+        "foreignKey": "userCompanyCreatedById",
+        "targetModelName": "userCompany",
+        "propertyTypeName": "userCompanyCreatedBy",
+        "options": {
+          "readOnly": true
+        }
+      }
+    },
+    "userCompanyCreatedBy": {
+      "name": "userCompanyCreatedBy",
+      "objectTypeName": "personToVehicle",
+      "type": "belongs-to",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      },
+      "association": {
+        "foreignKey": "userCompanyCreatedById",
+        "targetModelName": "userCompany",
+        "propertyTypeName": "userCompanyCreatedBy",
+        "options": {
+          "readOnly": true
+        }
+      }
+    },
+    "userCompanyUpdatedById": {
+      "name": "userCompanyUpdatedById",
+      "objectTypeName": "personToVehicle",
+      "type": "foreign-key",
+      "options": {
+        "mandatory": false,
+        "readOnly": true,
+        "calculated": false,
+        "technical": true
+      },
+      "association": {
+        "foreignKey": "userCompanyUpdatedById",
+        "targetModelName": "userCompany",
+        "propertyTypeName": "userCompanyUpdatedBy",
+        "options": {
+          "readOnly": true
+        }
+      }
+    },
+    "userCompanyUpdatedBy": {
+      "name": "userCompanyUpdatedBy",
+      "objectTypeName": "personToVehicle",
+      "type": "belongs-to",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      },
+      "association": {
+        "foreignKey": "userCompanyUpdatedById",
+        "targetModelName": "userCompany",
+        "propertyTypeName": "userCompanyUpdatedBy",
+        "options": {
+          "readOnly": true
+        }
+      }
+    },
+    "companyId": {
+      "name": "companyId",
+      "objectTypeName": "personToVehicle",
+      "type": "foreign-key",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      },
+      "association": {
+        "foreignKey": "companyId",
+        "targetModelName": "company",
+        "propertyTypeName": "company",
+        "options": {
+          "readOnly": true
+        }
+      }
+    },
+    "company": {
+      "name": "company",
+      "objectTypeName": "personToVehicle",
+      "type": "belongs-to",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      },
+      "association": {
+        "foreignKey": "companyId",
+        "targetModelName": "company",
+        "propertyTypeName": "company",
+        "options": {
+          "readOnly": true
+        }
+      }
+    }
+  },
+  "plural": "personToVehicles",
+  "camelized": {
+    "singular": "personToVehicle",
+    "plural": "personToVehicles",
+    "id": "personToVehicleId"
+  },
+  "capitalized": {
+    "singular": "PersonToVehicle",
+    "plural": "PersonToVehicles",
+    "id": "PersonToVehicleId"
   },
   "hidden": false,
   "context": {
@@ -25518,6 +26454,30 @@ const personToBuildingObjectTypeDefintion = {
         "defaultValue": true
       }
     },
+    "allowWorkplaceBookingInTheBuilding": {
+      "name": "allowWorkplaceBookingInTheBuilding",
+      "objectTypeName": "personToBuilding",
+      "type": "boolean",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false,
+        "defaultValue": false
+      }
+    },
+    "allowParkingBookingInTheBuilding": {
+      "name": "allowParkingBookingInTheBuilding",
+      "objectTypeName": "personToBuilding",
+      "type": "boolean",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false,
+        "defaultValue": false
+      }
+    },
     "createdAt": {
       "name": "createdAt",
       "objectTypeName": "personToBuilding",
@@ -26820,12 +27780,13 @@ const personToWorkplaceBookingObjectTypeDefintion = {
     "workspaceHasBeenConfirmedAt": {
       "name": "workspaceHasBeenConfirmedAt",
       "objectTypeName": "personToWorkplaceBooking",
-      "type": "timestamp",
+      "type": "datetime",
       "options": {
         "mandatory": false,
         "readOnly": false,
         "calculated": false,
-        "technical": false
+        "technical": false,
+        "defaultValue": null
       }
     },
     "createdAt": {
@@ -36867,6 +37828,10 @@ var JupSchema;
   JupSchema2.person = personObjectTypeDefintion;
   JupSchema2.personToPersonType = personToPersonTypeObjectTypeDefintion;
   JupSchema2.personToPerson = personToPersonObjectTypeDefintion;
+  JupSchema2.vehicleType = vehicleTypeObjectTypeDefintion;
+  JupSchema2.vehiclePropulsionType = vehiclePropulsionTypeObjectTypeDefintion;
+  JupSchema2.vehicle = vehicleObjectTypeDefintion;
+  JupSchema2.personToVehicle = personToVehicleObjectTypeDefintion;
   JupSchema2.roomAffectation = roomAffectationObjectTypeDefintion;
   JupSchema2.workplaceType = workplaceTypeObjectTypeDefintion;
   JupSchema2.workplaceUsageType = workplaceUsageTypeObjectTypeDefintion;
@@ -36927,7 +37892,7 @@ var JupSchema;
   JupSchema2.featureFamily = featureFamilyObjectTypeDefintion;
   JupSchema2.featureGroup = featureGroupObjectTypeDefintion;
   JupSchema2.feature = featureObjectTypeDefintion;
-  JupSchema2.objectTypes = [JupSchema2.occupancyStatus, JupSchema2.user, JupSchema2.userRefreshToken, JupSchema2.companyType, JupSchema2.company, JupSchema2.campus, JupSchema2.roomConnectorType, JupSchema2.roomConnector, JupSchema2.userCompany, JupSchema2.personGender, JupSchema2.personCompany, JupSchema2.jupUiLayout, JupSchema2.buildingType, JupSchema2.organization, JupSchema2.itemTypeFamily, JupSchema2.manufacturer, JupSchema2.object3dModel, JupSchema2.itemType, JupSchema2.building, JupSchema2.mapScale, JupSchema2.structure, JupSchema2.structurePoint, JupSchema2.floor, JupSchema2.distributionCostType, JupSchema2.roomTypeGroup, JupSchema2.roomType, JupSchema2.roomTypeGroupToRoomType, JupSchema2.roomTypeGroupFloor, JupSchema2.roomTypeGroupBuilding, JupSchema2.costCenter, JupSchema2.costCenterBuilding, JupSchema2.costCenterFloor, JupSchema2.room, JupSchema2.roomPoint, JupSchema2.roomPointRoom, JupSchema2.roomPointSegmentType, JupSchema2.roomPointSegment, JupSchema2.itemTypePoint, JupSchema2.dimensionType, JupSchema2.dimension, JupSchema2.dimensionRoom, JupSchema2.dimensionFloor, JupSchema2.dimensionBuilding, JupSchema2.factType, JupSchema2.fact, JupSchema2.personState, JupSchema2.personSecurityProfile, JupSchema2.person, JupSchema2.personToPersonType, JupSchema2.personToPerson, JupSchema2.roomAffectation, JupSchema2.workplaceType, JupSchema2.workplaceUsageType, JupSchema2.workplaceTypeItemType, JupSchema2.workplace, JupSchema2.item, JupSchema2.workplaceAffectation, JupSchema2.organizationFloor, JupSchema2.organizationBuilding, JupSchema2.roomTypeFloor, JupSchema2.roomTypeBuilding, JupSchema2.itemToPerson, JupSchema2.personToBuilding, JupSchema2.dimensionToPerson, JupSchema2.dimensionTypeToBuilding, JupSchema2.workingLocation, JupSchema2.personWorkingLocation, JupSchema2.personToWorkplaceBooking, JupSchema2.personToRoomBooking, JupSchema2.personToDimensionBooking, JupSchema2.personCompanyMission, JupSchema2.personCompanyToItemType, JupSchema2.personCompanyToRoomType, JupSchema2.personCompanyToItem, JupSchema2.legend, JupSchema2.openerPostMessageHost, JupSchema2.companyWorkingLocation, JupSchema2.jupObjectType, JupSchema2.jupUiView, JupSchema2.jupRole, JupSchema2.jupUiOption, JupSchema2.jupUiOperation, JupSchema2.contentRole, JupSchema2.jupUserCompanyToJupRole, JupSchema2.jupRoleToJupUiView, JupSchema2.jupRoleToJupObjectType, JupSchema2.jupRoleToJupUiOption, JupSchema2.jupRoleToJupUiOperation, JupSchema2.contentRoleToBuilding, JupSchema2.contentRoleToUserCompany, JupSchema2.contentRoleToFloor, JupSchema2.partnerApiCredential, JupSchema2.apiUser, JupSchema2.apiUserToJupRole, JupSchema2.apiUserToContentRole, JupSchema2.jupUiTenantOperation, JupSchema2.contentRoleToJupUiTenantOperation, JupSchema2.authentificationConnection, JupSchema2.userRegistrationTenantRule, JupSchema2.userRegistrationTenantRuleToJupRole, JupSchema2.userRegistrationTenantRuleToContentRole, JupSchema2.partnerExportMappingConfiguration, JupSchema2.partnerExportMapping, JupSchema2.partnerExportMappingToRoomType, JupSchema2.partnerExportMappingConfigurationToFloor, JupSchema2.jupRoleToJupUiLayout, JupSchema2.itemFact, JupSchema2.featureFamily, JupSchema2.featureGroup, JupSchema2.feature];
+  JupSchema2.objectTypes = [JupSchema2.occupancyStatus, JupSchema2.user, JupSchema2.userRefreshToken, JupSchema2.companyType, JupSchema2.company, JupSchema2.campus, JupSchema2.roomConnectorType, JupSchema2.roomConnector, JupSchema2.userCompany, JupSchema2.personGender, JupSchema2.personCompany, JupSchema2.jupUiLayout, JupSchema2.buildingType, JupSchema2.organization, JupSchema2.itemTypeFamily, JupSchema2.manufacturer, JupSchema2.object3dModel, JupSchema2.itemType, JupSchema2.building, JupSchema2.mapScale, JupSchema2.structure, JupSchema2.structurePoint, JupSchema2.floor, JupSchema2.distributionCostType, JupSchema2.roomTypeGroup, JupSchema2.roomType, JupSchema2.roomTypeGroupToRoomType, JupSchema2.roomTypeGroupFloor, JupSchema2.roomTypeGroupBuilding, JupSchema2.costCenter, JupSchema2.costCenterBuilding, JupSchema2.costCenterFloor, JupSchema2.room, JupSchema2.roomPoint, JupSchema2.roomPointRoom, JupSchema2.roomPointSegmentType, JupSchema2.roomPointSegment, JupSchema2.itemTypePoint, JupSchema2.dimensionType, JupSchema2.dimension, JupSchema2.dimensionRoom, JupSchema2.dimensionFloor, JupSchema2.dimensionBuilding, JupSchema2.factType, JupSchema2.fact, JupSchema2.personState, JupSchema2.personSecurityProfile, JupSchema2.person, JupSchema2.personToPersonType, JupSchema2.personToPerson, JupSchema2.vehicleType, JupSchema2.vehiclePropulsionType, JupSchema2.vehicle, JupSchema2.personToVehicle, JupSchema2.roomAffectation, JupSchema2.workplaceType, JupSchema2.workplaceUsageType, JupSchema2.workplaceTypeItemType, JupSchema2.workplace, JupSchema2.item, JupSchema2.workplaceAffectation, JupSchema2.organizationFloor, JupSchema2.organizationBuilding, JupSchema2.roomTypeFloor, JupSchema2.roomTypeBuilding, JupSchema2.itemToPerson, JupSchema2.personToBuilding, JupSchema2.dimensionToPerson, JupSchema2.dimensionTypeToBuilding, JupSchema2.workingLocation, JupSchema2.personWorkingLocation, JupSchema2.personToWorkplaceBooking, JupSchema2.personToRoomBooking, JupSchema2.personToDimensionBooking, JupSchema2.personCompanyMission, JupSchema2.personCompanyToItemType, JupSchema2.personCompanyToRoomType, JupSchema2.personCompanyToItem, JupSchema2.legend, JupSchema2.openerPostMessageHost, JupSchema2.companyWorkingLocation, JupSchema2.jupObjectType, JupSchema2.jupUiView, JupSchema2.jupRole, JupSchema2.jupUiOption, JupSchema2.jupUiOperation, JupSchema2.contentRole, JupSchema2.jupUserCompanyToJupRole, JupSchema2.jupRoleToJupUiView, JupSchema2.jupRoleToJupObjectType, JupSchema2.jupRoleToJupUiOption, JupSchema2.jupRoleToJupUiOperation, JupSchema2.contentRoleToBuilding, JupSchema2.contentRoleToUserCompany, JupSchema2.contentRoleToFloor, JupSchema2.partnerApiCredential, JupSchema2.apiUser, JupSchema2.apiUserToJupRole, JupSchema2.apiUserToContentRole, JupSchema2.jupUiTenantOperation, JupSchema2.contentRoleToJupUiTenantOperation, JupSchema2.authentificationConnection, JupSchema2.userRegistrationTenantRule, JupSchema2.userRegistrationTenantRuleToJupRole, JupSchema2.userRegistrationTenantRuleToContentRole, JupSchema2.partnerExportMappingConfiguration, JupSchema2.partnerExportMapping, JupSchema2.partnerExportMappingToRoomType, JupSchema2.partnerExportMappingConfigurationToFloor, JupSchema2.jupRoleToJupUiLayout, JupSchema2.itemFact, JupSchema2.featureFamily, JupSchema2.featureGroup, JupSchema2.feature];
   JupSchema2.objectTypesBySingular = {
     occupancyStatus: JupSchema2.occupancyStatus,
     user: JupSchema2.user,
@@ -36979,6 +37944,10 @@ var JupSchema;
     person: JupSchema2.person,
     personToPersonType: JupSchema2.personToPersonType,
     personToPerson: JupSchema2.personToPerson,
+    vehicleType: JupSchema2.vehicleType,
+    vehiclePropulsionType: JupSchema2.vehiclePropulsionType,
+    vehicle: JupSchema2.vehicle,
+    personToVehicle: JupSchema2.personToVehicle,
     roomAffectation: JupSchema2.roomAffectation,
     workplaceType: JupSchema2.workplaceType,
     workplaceUsageType: JupSchema2.workplaceUsageType,
@@ -46911,7 +47880,7 @@ const dev = {
   mcp: mcp$2,
   authentication: authentication$3
 };
-const logRocket$1 = { "appId": "surfy/surfy-alpha" };
+const logRocket$1 = { "appId": "surfy-kln2r/surfy-alpha" };
 const mcp$1 = { "projectName": "user-surfy-alpha" };
 const origins$1 = ["https://alpha86.surfy.pro", "https://app-alpha.surfy.pro", "https://app-alpha.surfy.fr"];
 const endpoints$1 = { "backend": "https://app-alpha.surfy.pro" };
@@ -46923,7 +47892,7 @@ const alpha = {
   endpoints: endpoints$1,
   authentication: authentication$2
 };
-const logRocket = { "appId": "surfy/surfy-production-9rwgq" };
+const logRocket = { "appId": "surfy-kln2r/surfy-production-waokr" };
 const mcp = { "projectName": "user-surfy" };
 const origins = ["https://app.surfy.pro", "https://help.surfy.pro", "https://app.surfy.fr"];
 const endpoints = { "backend": "https://app.surfy.pro" };
@@ -51164,7 +52133,7 @@ const PropertyTypeLabel = React__default.forwardRef((props, ref2) => {
     unit
   ] });
 });
-const version = { "major": 3, "minor": 4, "build": 138 };
+const version = { "major": 3, "minor": 4, "build": 143 };
 function getAppVersion() {
   const { major, minor, build } = version;
   return `${major}.${minor}.${build}`;
@@ -51179,6 +52148,7 @@ const fr = {
   "AddPersonToWorkplace.help": "Ajouter une affectation à ce poste de travail, vous pouvez ajouter plusieurs affectations pour le même poste de travail",
   "AddPersonToWorkplace.text": "Affecter une personne",
   "AddressDialog.search": "Rechercher l'adresse",
+  "AddressDialog.selectedAddress": "Adresse sélectionnée",
   "AddressDialog.validate": "Valider",
   "AllTenantsDataQualityTable.enableAllTenants.label": "Inclure toutes les plateformes",
   "AssignPersonCheckListBuildingAffectations.title": "Cette personne est déjà directement affectée sur d'autres bâtiments, voulez-vous supprimer les affectations suivantes pour %{personFullname}",
@@ -51229,7 +52199,7 @@ const fr = {
   "BookingDialog.attendeesPlaceholder": "Saisir un nom ou un email...",
   "BookingDialog.attendeesTypeToSearch": "Saisissez au moins 2 caractères pour rechercher des collaborateurs.",
   "BookingDialog.book": "Réserver",
-  "BookingDialog.bookRoomTitle": "Réserver une salle de réunion",
+  "BookingDialog.bookRoomTitle": "Réserver la salle de réunion",
   "BookingDialog.cancel": "Annuler",
   "BookingDialog.description": "Description (optionnelle)",
   "BookingDialog.enableTeamsMeeting": "Ajouter un lien Teams à la réunion",
@@ -51322,8 +52292,11 @@ const fr = {
   "BuildingSelectionView.selectBuildingToViewMap": "Choisissez un bâtiment pour afficher le plan",
   "CalculatedPropertiesAccordions.kpi": "Indicateurs",
   "CalculatedPropertiesAccordions.mesures": "Mesures",
+  "CalendarEventItem.cancelled": "Annulé",
+  "CalendarEventItem.ongoing": "En cours",
+  "CalendarEventItem.organizedBy": "Organisé par",
   "CalendarHeader.bookingTitle": "Réserver cette salle de réunion",
-  "CalendarHeader.refreshTooltip": "Actualiser le calendrier",
+  "CalendarRefreshButton.refreshTooltip": "Actualiser le calendrier",
   "CalendarScopeConsentButton.alertMessage": "Pour réserver des salles de réunion, vous devez autoriser Surfy à accéder à votre calendrier Microsoft. Cliquez sur le bouton ci-dessous pour accorder les autorisations nécessaires",
   "CalendarScopeConsentButton.alertTitle": "Autorisation requise pour réserver des salles",
   "CalendarScopeConsentButton.buttonHelp": "Vous serez redirigé vers Microsoft pour accorder les permissions",
@@ -51422,6 +52395,7 @@ const fr = {
   "CustomUserRegisterForm.tabs.login": "Se connecter",
   "CustomUserRegisterForm.tabs.signup": "S'inscrire",
   "DashboardView.tabs.reports": "Rapports Excel",
+  "DashboardsLoader.noBuildingSelected": "Aucun bâtiment sélectionné",
   "DataQualityIndex.defaultDescription": "Vue de qualité des données pour {entityName}",
   "DataQualityIndex.generalInfo.description": "Cette section vous permet d'accéder aux différents rapports de qualité des données organisés par entité. Chaque rapport se concentre sur un aspect spécifique de la qualité des données et vous aide à identifier et résoudre les problèmes potentiels.",
   "DataQualityIndex.generalInfo.instruction": "Cliquez sur un rapport pour accéder aux détails et aux actions de correction disponibles.",
@@ -51457,6 +52431,8 @@ const fr = {
   "DeleteWorkplace.help": "Supprimer le poste de travail : [ %{name} ], les affectations seront aussi supprimées",
   "DeskBookingConfirmationButton.bookingConfirmed": "La réservation a été confirmée",
   "DeskBookingConfirmationButton.confirm": "Confirmer votre présence",
+  "DeskBookingConfirmationButton.confirmHelp": "Confirmez que vous êtes présent à votre poste de travail",
+  "DeskBookingsSection.noBookingsFound": "Aucune réservation à venir trouvée.",
   "DimensionBuildingPlanningLabel.youAreAssigned": "Vous êtes affecté sur %{dimensionTypeName} %{dimensionName}",
   "DimensionInfo.carbonFootprint.help": "L'empreinte carbone est de %{value} de CO2 emis pour %{dimensionType} %{dimension}",
   "DimensionInfo.dimensionPeopleCount.help": "Il y a %{value} personne(s) affectées dans %{dimensionType} %{dimension}",
@@ -51644,6 +52620,7 @@ const fr = {
   "ErrorImpossibleToFindTheEntity.text": "Il est impossible de trouver %{determinant.defined} recherchés",
   "ErrorTextZone.reload": "Recommencer l'opération",
   "Errors.AUTHENTIFICATION_CONNECTION_NOT_FOUND_FOR_EMAIL": "Aucune connexion d'authentification n'a été trouvée pour le domaine %{domain}",
+  "Errors.ROOM_BOOKING_CONFLICT": "La salle est déjà réservée pour ce créneau horaire. Veuillez choisir un autre horaire ou une autre salle.",
   "Errors.networkError": "Des problèmes de connexion ou de réseau ont été détectés, merci de patienter et de réessayer dans quelques secondes",
   "ExportQueryNodeToFileButton.help.list": "Télécharger en excel %{determinants.defined}",
   "FieldTypeAddress.edit": "Modifier l'adresse",
@@ -51911,6 +52888,7 @@ const fr = {
   "MeetingRoomBookAction.bookRoom": "Réserver via le calendrier",
   "MeetingRoomCard.availability.available": "Disponible sur ce créneau",
   "MeetingRoomCard.availability.searching": "Recherche des disponibilités...",
+  "MeetingRoomCard.bookable": "Cet espace est réservable",
   "MeetingRoomCard.bookingEmailAvailable": "Adresse de réservation disponible : %{email}",
   "MeetingRoomCard.calendarFor": "Agenda pour",
   "MeetingRoomCard.locateSpace": "Localiser l'espace sur le plan",
@@ -51971,6 +52949,7 @@ const fr = {
   "MovePersonFromWorkplaceToRoomListButtonItem.label": "Déplacer cette personne de son poste de travail à l'espace du poste de travail",
   "MoveShapestoNewRoomAsyncButton.help": "Changer les espaces des formes sélectionnées pour les mettre dans les espaces dans lesquelles elles sont sur le plan",
   "MoveShapestoNewRoomAsyncButton.label": "Appliquer le changement d'espace",
+  "MyBookingsMenuItemLabel.label": "Mon agenda",
   "NoCompanies.ContactUs.body": "Bonjour, pourriez vous me laisser accéder à l'application Surfy ? Merci.",
   "NoCompanies.ContactUs.subject": "Accéder à Surfy",
   "NoCompanies.ContactUs.text": "Vous connecter à la plateforme de votre entreprise",
@@ -51985,6 +52964,7 @@ const fr = {
   "NoCompanies.whatIsSurfyForTeams": "Surfy propose de digitaliser les plans des bâtiments pour faciliter la gestion de l'environnement de travail. Vous pouvez utiliser l'application Surfy pour <ul><li>gérer votre planning de présence</li><li>déclarer votre présence au bureau</li><li>réserver un espace de travail</li><li>indiquer que vous êtes en télétravail</li><li>voir quels collègues ont réservé un poste de travail sur le plan</li></ul>",
   "NoDataOnBuildingInfo.noData": "Merci de sélectionner tous les étages dans les options du plan pour avoir des données, il ne doit pas y avoir de données pour les étages que vous avez sélectionné",
   "NoRoleAssociated.noRole": "Aucun rôle ne semble être associé à votre utilisateur pour l'entreprise %{tenant}, merci de vous rapprocher de votre administrateur",
+  "NoTenant.noTenantsFound": 'Aucun locataire trouvé pour "%{query}"',
   "NumberOfPeoplePerRowField.label": "Nombre de personnes par ligne pour les affectations aux espaces",
   "ObjectTypeImportKeys.title": "Les clés disponibles pour réconcilier %{determinants.undefined} dans l'ordre du choix, si vous souhaitez modifier une des propriétés clé vous devez utilisez l'identifiant comme clé",
   "ObjectTypeImportScalarProperties.help": "Copier dans le presse-papier",
@@ -52031,6 +53011,10 @@ const fr = {
   "PersonBookingList.bookings.one": "Un collègue sera présent sur le même créneau",
   "PersonBookingList.noBooking": "Aucun collègue ne sera présent au bureau sur le même créneau pour le moment",
   "PersonBookingListItem.workplaceBookedOnFloor": "Voir le poste de travail %{workplaceName} sur le plan au %{floorName}",
+  "PersonBookings.deskBookingsTab": "Postes de travail",
+  "PersonBookings.equipmentsTab": "Equipements",
+  "PersonBookings.meetingsTab": "Réunions",
+  "PersonBookings.noEquipmentsMessage": "Vous n'avez pas d'équipements à réserver pour le moment",
   "PersonContactPanel.description": "Comment contacter cette personne ?",
   "PersonContactPanel.title": "Contact",
   "PersonContractPanel.description": "Informations relatives au contrat",
@@ -52260,7 +53244,12 @@ const fr = {
   "TimeSlot.clickToBook": "Cliquer pour réserver le %{day} à %{time}",
   "TimeSlot.pastDay": "Impossible de réserver : %{day} est déjà passé",
   "TimeSlot.pastTime": "Impossible de réserver : l'heure %{time} est déjà passée",
+  "TimeSlot.selectingRange": "Sélection : %{startTime} - %{endTime}",
   "TimeSlot.slotBooked": "Ce créneau est déjà réservé",
+  "TimeSlot.slotBookedBy": "Réservé par %{organizer}",
+  "TimeSlot.slotBookedWithTime": "%{startTime} - %{endTime} | Réservé par %{organizer}",
+  "TimeSlot.slotRefreshing": "Mise à jour en cours...",
+  "TimeSlot.slotRefreshingWithCountdown": "Mise à jour en cours... Veuillez patienter %{seconds}s avant la confirmation de la réservation par Office365",
   "ToggleAllOpenInfoState.false": "Ouvrir tous les détails et indicateurs",
   "ToggleAllOpenInfoState.true": "Fermer tous les détails et indicateurs",
   "ToggleCopilotEnable.help.false": "Activer Surfy Copilot pour permettre la reconnaissance automatique des portes",
@@ -52280,6 +53269,7 @@ const fr = {
   "TopLevelOrganizationFilter.Empty": "Il n'y a aucune organization de associés aux espaces, vous pouvez en ajouter en modifiant un espace et en l'associant à une organiation, puis vous pourrez contrôler leur affichage depuis cette séction",
   "UserNotPartOfCompanyAdminCanCreate.createButton": "Créer l'association",
   "UserNotPartOfCompanyAdminCanCreate.message": "Vous n'êtes pas associé à l'entreprise %{companyId}.",
+  "VehicleInfoDisplay.parkingAvailable": "Vous pouvez réserver un parking car vous avez un véhicule",
   "WeekNavigation.thisWeek": "Cette semaine",
   "WorkCanvas.Options.AddItemTypePointOption.help.disable": "Arrêter la création de sommets",
   "WorkCanvas.Options.AddItemTypePointOption.help.enable": "Ajouter un sommet permet de retravailler avec plus de precisions une forme",
@@ -52709,6 +53699,7 @@ const fr = {
   "menu.menuLeft.adminReporting": "Reporting",
   "menu.menuLeft.adminRoomTypeGroupReporting": "Groupes de typologies d'espaces",
   "menu.menuLeft.adminRoomTypeReporting": "Type d'espaces",
+  "menu.menuLeft.adminVehicles": "Véhicules",
   "menu.menuLeft.affectations": "Affectations",
   "menu.menuLeft.all": "Administration",
   "menu.menuLeft.api": "API",
@@ -52732,6 +53723,7 @@ const fr = {
   "menu.menuLeft.personCompanies": "Prestataires",
   "menu.menuLeft.personRelations": "Relations",
   "menu.menuLeft.personType": "Typologies",
+  "menu.menuLeft.personVehicles": "Véhicules",
   "menu.menuLeft.planning": "Plannings",
   "menu.menuLeft.planningAdmin": " Administration des plannings",
   "menu.menuLeft.roomTypes": "Typologies d'espaces",
@@ -53697,6 +54689,8 @@ const fr = {
   "models.Person.views.dq-person-duplicate.label": "Personnes en doublon",
   "models.Person.views.home.help": "Voir la fiche de la personne <b>%{name}</b> avec ses informations et affectations",
   "models.Person.views.home.label": "Fiche de la personne",
+  "models.Person.views.person-bookings.help": "Voir les réservations à venir de la personne <b>%{name}</b>",
+  "models.Person.views.person-bookings.label": "Réservations à venir",
   "models.Person.views.relationship-list.help": "Lister les relations entre personnes",
   "models.Person.views.relationship-list.label": "Liste des relations",
   "models.PersonCompany.description": "L'entreprise prestataire permet de gérer le personnel prestataire par entreprise d'appartenance",
@@ -53792,6 +54786,10 @@ const fr = {
   "models.PersonToBuilding.plural": "affectations au bâtiment",
   "models.PersonToBuilding.properties.addToPeopleCount.description": "Ajouter cette affectation au nombre total des personnes affectées au bâtiment",
   "models.PersonToBuilding.properties.addToPeopleCount.label": "Comptabiliser l'affectation",
+  "models.PersonToBuilding.properties.allowParkingBookingInTheBuilding.description": "Permet à la personne de réserver une place de parking dans ce bâtiment",
+  "models.PersonToBuilding.properties.allowParkingBookingInTheBuilding.label": "Autoriser la réservation de parking dans le bâtiment",
+  "models.PersonToBuilding.properties.allowWorkplaceBookingInTheBuilding.description": "Permet à la personne de réserver un poste de travail dans ce bâtiment en choisissant un étage. Cette option n'a pas besoin d'être activé si l'option de de réservation par bâtiment est activée en cas de surcharge des quartiers",
+  "models.PersonToBuilding.properties.allowWorkplaceBookingInTheBuilding.label": "Autoriser la réservation de poste dans le bâtiment via les étages",
   "models.PersonToBuilding.properties.id.label": "Identifiant de l'affectation au bâtiment",
   "models.PersonToBuilding.singular": "Affection au bâtiment",
   "models.PersonToDimensionBooking.description": "Les réservations aux calques d'affectation des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation",
@@ -53840,6 +54838,14 @@ const fr = {
   "models.PersonToRoomBooking.properties.startDatetime.description": "La date et l'heure de début de la réservation",
   "models.PersonToRoomBooking.properties.startDatetime.label": "Début de la réservation",
   "models.PersonToRoomBooking.singular": "Réservation à l'espace des personnes",
+  "models.PersonToVehicle.description": "Permet d'associer une personne à un ou plusieurs véhicules",
+  "models.PersonToVehicle.determinant.defined": "l'affectation véhicule",
+  "models.PersonToVehicle.determinant.undefined": "une affectation véhicule",
+  "models.PersonToVehicle.determinants.defined": "les affectations véhicules",
+  "models.PersonToVehicle.determinants.undefined": "des affectations véhicules",
+  "models.PersonToVehicle.plural": "affectations véhicules",
+  "models.PersonToVehicle.properties.id.label": "Identifiant de l'affectation véhicule",
+  "models.PersonToVehicle.singular": "affectation véhicule",
   "models.PersonToWorkplaceBooking.description": "Les réservations des postes de travail des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation",
   "models.PersonToWorkplaceBooking.determinant.defined": "la réservation au poste de travail des personnes",
   "models.PersonToWorkplaceBooking.determinant.undefined": "une réservation au poste de travail des personnes",
@@ -54116,6 +55122,48 @@ const fr = {
   "models.UserRegistrationTenantRuleToJupRole.determinants.undefined": "des associations de règle d'authentification à rôle",
   "models.UserRegistrationTenantRuleToJupRole.plural": "Associations de règle d'authentification à rôle",
   "models.UserRegistrationTenantRuleToJupRole.singular": "Association de règle d'authentification à rôle",
+  "models.Vehicle.description": "Un véhicule permet de gérer les informations relatives à un véhicule",
+  "models.Vehicle.determinant.defined": "le véhicule",
+  "models.Vehicle.determinant.undefined": "un véhicule",
+  "models.Vehicle.determinants.defined": "les véhicules",
+  "models.Vehicle.determinants.undefined": "des véhicules",
+  "models.Vehicle.plural": "véhicules",
+  "models.Vehicle.properties.belongsToTheCompany.description": "Indique si le véhicule appartient à l'entreprise",
+  "models.Vehicle.properties.belongsToTheCompany.label": "Appartient à l'entreprise",
+  "models.Vehicle.properties.id.label": "Identifiant du véhicule",
+  "models.Vehicle.properties.vehicleRegistration.description": "Le numéro d'immatriculation du véhicule",
+  "models.Vehicle.properties.vehicleRegistration.label": "Immatriculation",
+  "models.Vehicle.properties.vehicleType.description": "Le type de véhicule associé à ce véhicule",
+  "models.Vehicle.properties.vehicleType.label": "Type de véhicule",
+  "models.Vehicle.singular": "véhicule",
+  "models.VehiclePropulsionType.description": "Un type de propulsion de véhicule permet de catégoriser les véhicules selon leur mode de propulsion (électrique, essence, diesel, hybride, etc.)",
+  "models.VehiclePropulsionType.determinant.defined": "le type de propulsion de véhicule",
+  "models.VehiclePropulsionType.determinant.undefined": "un type de propulsion de véhicule",
+  "models.VehiclePropulsionType.determinants.defined": "les types de propulsion de véhicules",
+  "models.VehiclePropulsionType.determinants.undefined": "des types de propulsion de véhicules",
+  "models.VehiclePropulsionType.plural": "types de propulsion de véhicules",
+  "models.VehiclePropulsionType.properties.code.description": "Le code unique du type de propulsion de véhicule",
+  "models.VehiclePropulsionType.properties.code.label": "Code",
+  "models.VehiclePropulsionType.properties.color.description": "La couleur associée au type de propulsion de véhicule pour l'affichage",
+  "models.VehiclePropulsionType.properties.color.label": "Couleur",
+  "models.VehiclePropulsionType.properties.id.label": "Identifiant du type de propulsion de véhicule",
+  "models.VehiclePropulsionType.properties.name.description": "Le nom du type de propulsion de véhicule",
+  "models.VehiclePropulsionType.properties.name.label": "Nom",
+  "models.VehiclePropulsionType.singular": "type de propulsion de véhicule",
+  "models.VehicleType.description": "Un type de véhicule permet de catégoriser les véhicules selon leurs caractéristiques",
+  "models.VehicleType.determinant.defined": "le type de véhicule",
+  "models.VehicleType.determinant.undefined": "un type de véhicule",
+  "models.VehicleType.determinants.defined": "les types de véhicules",
+  "models.VehicleType.determinants.undefined": "des types de véhicules",
+  "models.VehicleType.plural": "types de véhicules",
+  "models.VehicleType.properties.code.description": "Le code unique du type de véhicule",
+  "models.VehicleType.properties.code.label": "Code",
+  "models.VehicleType.properties.color.description": "La couleur associée au type de véhicule pour l'affichage",
+  "models.VehicleType.properties.color.label": "Couleur",
+  "models.VehicleType.properties.id.label": "Identifiant du type de véhicule",
+  "models.VehicleType.properties.name.description": "Le nom du type de véhicule",
+  "models.VehicleType.properties.name.label": "Nom",
+  "models.VehicleType.singular": "type de véhicule",
   "models.WorkingLocation.description": "Un emplacement de travail définit le lieu de travail des personnes",
   "models.WorkingLocation.determinant.defined": "l'emplacement de travail",
   "models.WorkingLocation.determinant.undefined": "un emplacement de travail",
@@ -54233,6 +55281,7 @@ const en = {
   "AddPersonToWorkplace.help": "Add assignment to this workstation, you can add multiple assignments for the same workstation",
   "AddPersonToWorkplace.text": "Assign a person",
   "AddressDialog.search": "Find address",
+  "AddressDialog.selectedAddress": "Selected address",
   "AddressDialog.validate": "Validate",
   "AllTenantsDataQualityTable.enableAllTenants.label": "Include all platforms",
   "AssignPersonCheckListBuildingAffectations.title": "This person is already directly assigned on other buildings, do you want to remove the following assignments for %{personFullname}",
@@ -54376,8 +55425,11 @@ const en = {
   "BuildingSelectionView.selectBuildingToViewMap": "Choose a building to view the map layout",
   "CalculatedPropertiesAccordions.kpi": "Indicators",
   "CalculatedPropertiesAccordions.mesures": "Measures",
+  "CalendarEventItem.cancelled": "Cancelled",
+  "CalendarEventItem.ongoing": "Ongoing",
+  "CalendarEventItem.organizedBy": "Organized by",
   "CalendarHeader.bookingTitle": "Book this meeting room",
-  "CalendarHeader.refreshTooltip": "Refresh calendar",
+  "CalendarRefreshButton.refreshTooltip": "Refresh calendar",
   "CalendarScopeConsentButton.alertMessage": "To book meeting rooms, you need to authorize Surfy to access your Microsoft Calendar. Click the button below to grant the necessary permissions",
   "CalendarScopeConsentButton.alertTitle": "Authorization Required to Book Rooms",
   "CalendarScopeConsentButton.buttonHelp": "You will be redirected to Microsoft to grant permissions",
@@ -54476,6 +55528,7 @@ const en = {
   "CustomUserRegisterForm.tabs.login": "To log in",
   "CustomUserRegisterForm.tabs.signup": "Register",
   "DashboardView.tabs.reports": "Excel reports",
+  "DashboardsLoader.noBuildingSelected": "No buildings selected",
   "DataQualityIndex.defaultDescription": "Data quality view for {entityName}",
   "DataQualityIndex.generalInfo.description": "This section allows you to access different data quality reports organized by entity. Each report focuses on a specific aspect of data quality and helps you identify and resolve potential issues.",
   "DataQualityIndex.generalInfo.instruction": "Click on a report to access details and available correction actions.",
@@ -54511,6 +55564,8 @@ const en = {
   "DeleteWorkplace.help": "Delete workstation: [ %{name} ], assignments will also be deleted",
   "DeskBookingConfirmationButton.bookingConfirmed": "The booking has been confirmed",
   "DeskBookingConfirmationButton.confirm": "Confirm",
+  "DeskBookingConfirmationButton.confirmHelp": "Confirm that you are present at your workstation",
+  "DeskBookingsSection.noBookingsFound": "No upcoming bookings found.",
   "DimensionBuildingPlanningLabel.youAreAssigned": "You are assigned to %{dimensionTypeName} %{dimensionName}",
   "DimensionInfo.carbonFootprint.help": "The carbon footprint is %{value} of CO2 emitted for %{dimensionType} %{dimension}",
   "DimensionInfo.dimensionPeopleCount.help": "There are %{value} affected person(s) in %{dimensionType} %{dimension}",
@@ -54698,6 +55753,7 @@ const en = {
   "ErrorImpossibleToFindTheEntity.text": "It is not possible to find %{determinant.defined} wanted",
   "ErrorTextZone.reload": "Redo the operation",
   "Errors.AUTHENTIFICATION_CONNECTION_NOT_FOUND_FOR_EMAIL": "No authentication connection was found for the domain %{domain}",
+  "Errors.ROOM_BOOKING_CONFLICT": "The room is already booked for this time slot. Please choose another time or another room.",
   "Errors.networkError": "Connection or network issues have been detected, please wait and try again in a few seconds",
   "ExportQueryNodeToFileButton.help.list": "Download in excel %{determinants.defined}",
   "FieldTypeAddress.edit": "Change address",
@@ -54965,6 +56021,7 @@ const en = {
   "MeetingRoomBookAction.bookRoom": "Book",
   "MeetingRoomCard.availability.available": "Available in this slot",
   "MeetingRoomCard.availability.searching": "Searching for availabilities...",
+  "MeetingRoomCard.bookable": "This space is bookable",
   "MeetingRoomCard.bookingEmailAvailable": "Booking address available: %{email}",
   "MeetingRoomCard.calendarFor": "Calendar for",
   "MeetingRoomCard.locateSpace": "Locate space on map",
@@ -55025,6 +56082,7 @@ const en = {
   "MovePersonFromWorkplaceToRoomListButtonItem.label": "Move this person from their workstation to the workstation space",
   "MoveShapestoNewRoomAsyncButton.help": "Change the spaces of the selected shapes to put them in the spaces they are in on the plan",
   "MoveShapestoNewRoomAsyncButton.label": "Apply Space Change",
+  "MyBookingsMenuItemLabel.label": "My diary",
   "NoCompanies.ContactUs.body": "Hello, could you let me access the Surfy app? Thank you.",
   "NoCompanies.ContactUs.subject": "Access Surfy",
   "NoCompanies.ContactUs.text": "Log in to your company platform",
@@ -55039,6 +56097,7 @@ const en = {
   "NoCompanies.whatIsSurfyForTeams": "Surfy offers to digitize building plans to facilitate management of the work environment. You can use the Surfy app to<ul><li> manage your presence schedule</li><li> declare your presence at the office</li><li> reserve a workspace</li><li> indicate that you are teleworking</li><li> see which colleagues have reserved a workstation on the plan</li></ul>",
   "NoDataOnBuildingInfo.noData": "Please select all the floors in the plan options to have data, there must not be any data for the floors you have selected",
   "NoRoleAssociated.noRole": "No role seems to be associated with your user for the company %{tenant} , please contact your administrator",
+  "NoTenant.noTenantsFound": 'No tenants found for "%{query}"',
   "NumberOfPeoplePerRowField.label": "Number of people per line for space assignments",
   "ObjectTypeImportKeys.title": "The keys available to reconcile %{determinants.undefined} in the order of your choice, if you wish to modify one of the key properties you must use the identifier as key",
   "ObjectTypeImportScalarProperties.help": "Copy to clipboard",
@@ -55085,6 +56144,10 @@ const en = {
   "PersonBookingList.bookings.one": "A colleague will be present on the same slot",
   "PersonBookingList.noBooking": "No colleague will be present in the office on the same slot for the moment",
   "PersonBookingListItem.workplaceBookedOnFloor": "View the %{workplaceName} workstation on the floor plan at %{floorName}",
+  "PersonBookings.deskBookingsTab": "Desk Bookings",
+  "PersonBookings.equipmentsTab": "Equipment",
+  "PersonBookings.meetingsTab": "Meetings",
+  "PersonBookings.noEquipmentsMessage": "You don't have any equipment to reserve at the moment",
   "PersonContactPanel.description": "How to contact this person?",
   "PersonContactPanel.title": "Contact",
   "PersonContractPanel.description": "Contract information",
@@ -55314,7 +56377,12 @@ const en = {
   "TimeSlot.clickToBook": "Click to book on %{day} at %{time}",
   "TimeSlot.pastDay": "Cannot book: %{day} has already passed",
   "TimeSlot.pastTime": "Cannot book: %{time} has already passed",
+  "TimeSlot.selectingRange": "Selecting: %{startTime} - %{endTime}",
   "TimeSlot.slotBooked": "This time slot is already booked",
+  "TimeSlot.slotBookedBy": "Booked by %{organizer}",
+  "TimeSlot.slotBookedWithTime": "%{startTime} - %{endTime} | Booked by %{organizer}",
+  "TimeSlot.slotRefreshing": "Updating...",
+  "TimeSlot.slotRefreshingWithCountdown": "Updating... Please wait %{seconds}s before confirmation",
   "ToggleAllOpenInfoState.false": "Open all details and indicators",
   "ToggleAllOpenInfoState.true": "Close all details and indicators",
   "ToggleCopilotEnable.help.false": "Enable Surfy Copilot to enable automatic door recognition",
@@ -55334,6 +56402,7 @@ const en = {
   "TopLevelOrganizationFilter.Empty": "There is no organization associated with spaces, you can add more by modifying a space and associating it with an organization, then you can control their display from this section",
   "UserNotPartOfCompanyAdminCanCreate.createButton": "Create the association",
   "UserNotPartOfCompanyAdminCanCreate.message": "You are not associated with the company %{companyId}.",
+  "VehicleInfoDisplay.parkingAvailable": "You can book a parking space because you have a vehicle",
   "WeekNavigation.thisWeek": "This Week",
   "WorkCanvas.Options.AddItemTypePointOption.help.disable": "Stop creating summits",
   "WorkCanvas.Options.AddItemTypePointOption.help.enable": "Adding a vertex makes it possible to rework with more precision a form",
@@ -55763,6 +56832,7 @@ const en = {
   "menu.menuLeft.adminReporting": "Reporting",
   "menu.menuLeft.adminRoomTypeGroupReporting": "Space typology groups",
   "menu.menuLeft.adminRoomTypeReporting": "Type of spaces",
+  "menu.menuLeft.adminVehicles": "Vehicles",
   "menu.menuLeft.affectations": "assignments",
   "menu.menuLeft.all": "Administration",
   "menu.menuLeft.api": "API",
@@ -55786,6 +56856,7 @@ const en = {
   "menu.menuLeft.personCompanies": "Providers",
   "menu.menuLeft.personRelations": "Relationships",
   "menu.menuLeft.personType": "types",
+  "menu.menuLeft.personVehicles": "Vehicles",
   "menu.menuLeft.planning": "Schedules",
   "menu.menuLeft.planningAdmin": " Schedule administration",
   "menu.menuLeft.roomTypes": "Space typologies",
@@ -56751,6 +57822,8 @@ const en = {
   "models.Person.views.dq-person-duplicate.label": "Duplicate people",
   "models.Person.views.home.help": "See the file of the person <b>%{name}</b> with his information and assignments",
   "models.Person.views.home.label": "Person file",
+  "models.Person.views.person-bookings.help": "View upcoming bookings for person <b>%{name}</b>",
+  "models.Person.views.person-bookings.label": "Reservations coming soon",
   "models.Person.views.relationship-list.help": "List the relationships between people",
   "models.Person.views.relationship-list.label": "List of relationships",
   "models.PersonCompany.description": "The service provider company allows you to manage service provider personnel by company to which they belong",
@@ -56838,16 +57911,20 @@ const en = {
   "models.PersonState.plural": "status of persons",
   "models.PersonState.properties.name.label": "Person Status Name",
   "models.PersonState.singular": "status of persons",
-  "models.PersonToBuilding.description": "Allows you to assign a person to a building, without additional information. The assignment can be counted, or not.",
-  "models.PersonToBuilding.determinant.defined": "affection for the building",
-  "models.PersonToBuilding.determinant.undefined": "an affection for the building",
-  "models.PersonToBuilding.determinants.defined": "building affections",
-  "models.PersonToBuilding.determinants.undefined": "building ailments",
+  "models.PersonToBuilding.description": "Allows assigning a person to a building, without additional information. The assignment can be counted or not.",
+  "models.PersonToBuilding.determinant.defined": "the building assignment",
+  "models.PersonToBuilding.determinant.undefined": "a building assignment",
+  "models.PersonToBuilding.determinants.defined": "the building assignments",
+  "models.PersonToBuilding.determinants.undefined": "building assignments",
   "models.PersonToBuilding.plural": "building assignments",
   "models.PersonToBuilding.properties.addToPeopleCount.description": "Add this assignment to the total number of people assigned to the building",
-  "models.PersonToBuilding.properties.addToPeopleCount.label": "Count assignment",
+  "models.PersonToBuilding.properties.addToPeopleCount.label": "Count the assignment",
+  "models.PersonToBuilding.properties.allowParkingBookingInTheBuilding.description": "Allows the person to book a parking space in this building",
+  "models.PersonToBuilding.properties.allowParkingBookingInTheBuilding.label": "Allow parking booking in the building",
+  "models.PersonToBuilding.properties.allowWorkplaceBookingInTheBuilding.description": "Allows the person to book a workplace in this building",
+  "models.PersonToBuilding.properties.allowWorkplaceBookingInTheBuilding.label": "Allow workplace booking in the building",
   "models.PersonToBuilding.properties.id.label": "Building assignment identifier",
-  "models.PersonToBuilding.singular": "Affection to the building",
+  "models.PersonToBuilding.singular": "Building assignment",
   "models.PersonToDimensionBooking.description": "Reservations to people assignment layers are recorded and available with reservation start and end dates",
   "models.PersonToDimensionBooking.determinant.defined": "reservation at the people assignment layer",
   "models.PersonToDimensionBooking.determinant.undefined": "a reservation on the people assignment layer",
@@ -56894,6 +57971,14 @@ const en = {
   "models.PersonToRoomBooking.properties.startDatetime.description": "The start date and time of the reservation",
   "models.PersonToRoomBooking.properties.startDatetime.label": "Start of booking",
   "models.PersonToRoomBooking.singular": "Reservation for the people area",
+  "models.PersonToVehicle.description": "Allows you to associate a person with one or more vehicles",
+  "models.PersonToVehicle.determinant.defined": "vehicle assignment",
+  "models.PersonToVehicle.determinant.undefined": "a vehicle assignment",
+  "models.PersonToVehicle.determinants.defined": "vehicle assignments",
+  "models.PersonToVehicle.determinants.undefined": "vehicle assignments",
+  "models.PersonToVehicle.plural": "vehicle assignments",
+  "models.PersonToVehicle.properties.id.label": "Vehicle assignment identifier",
+  "models.PersonToVehicle.singular": "vehicle assignment",
   "models.PersonToWorkplaceBooking.description": "People's workstation reservations are recorded and available with reservation start and end dates",
   "models.PersonToWorkplaceBooking.determinant.defined": "reservation at people's workstation",
   "models.PersonToWorkplaceBooking.determinant.undefined": "a reservation at the people's workstation",
@@ -57170,6 +58255,48 @@ const en = {
   "models.UserRegistrationTenantRuleToJupRole.determinants.undefined": "role-to-role authentication rule associations",
   "models.UserRegistrationTenantRuleToJupRole.plural": "Authentication rule-to-role associations",
   "models.UserRegistrationTenantRuleToJupRole.singular": "Association of authentication rule to role",
+  "models.Vehicle.description": "A vehicle allows you to manage information related to a vehicle",
+  "models.Vehicle.determinant.defined": "the vehicle",
+  "models.Vehicle.determinant.undefined": "a vehicle",
+  "models.Vehicle.determinants.defined": "vehicles",
+  "models.Vehicle.determinants.undefined": "vehicles",
+  "models.Vehicle.plural": "vehicles",
+  "models.Vehicle.properties.belongsToTheCompany.description": "Indicates whether the vehicle belongs to the company",
+  "models.Vehicle.properties.belongsToTheCompany.label": "Belongs to the company",
+  "models.Vehicle.properties.id.label": "Vehicle ID",
+  "models.Vehicle.properties.vehicleRegistration.description": "The vehicle registration number",
+  "models.Vehicle.properties.vehicleRegistration.label": "Registration",
+  "models.Vehicle.properties.vehicleType.description": "The type of vehicle associated with this vehicle",
+  "models.Vehicle.properties.vehicleType.label": "Vehicle type",
+  "models.Vehicle.singular": "vehicle",
+  "models.VehiclePropulsionType.description": "A vehicle propulsion type allows us to categorize vehicles according to their propulsion method (electric, gasoline, diesel, hybrid, etc.)",
+  "models.VehiclePropulsionType.determinant.defined": "the type of vehicle propulsion",
+  "models.VehiclePropulsionType.determinant.undefined": "a type of vehicle propulsion",
+  "models.VehiclePropulsionType.determinants.defined": "vehicle propulsion types",
+  "models.VehiclePropulsionType.determinants.undefined": "vehicle propulsion types",
+  "models.VehiclePropulsionType.plural": "vehicle propulsion types",
+  "models.VehiclePropulsionType.properties.code.description": "The unique code for the vehicle propulsion type",
+  "models.VehiclePropulsionType.properties.code.label": "Code",
+  "models.VehiclePropulsionType.properties.color.description": "The color associated with the vehicle's propulsion type for display",
+  "models.VehiclePropulsionType.properties.color.label": "Color",
+  "models.VehiclePropulsionType.properties.id.label": "Vehicle propulsion type identifier",
+  "models.VehiclePropulsionType.properties.name.description": "The name of the vehicle propulsion type",
+  "models.VehiclePropulsionType.properties.name.label": "Last name",
+  "models.VehiclePropulsionType.singular": "vehicle propulsion type",
+  "models.VehicleType.description": "A vehicle type allows vehicles to be categorized according to their characteristics.",
+  "models.VehicleType.determinant.defined": "the type of vehicle",
+  "models.VehicleType.determinant.undefined": "a type of vehicle",
+  "models.VehicleType.determinants.defined": "vehicle types",
+  "models.VehicleType.determinants.undefined": "types of vehicles",
+  "models.VehicleType.plural": "types of vehicles",
+  "models.VehicleType.properties.code.description": "The unique vehicle type code",
+  "models.VehicleType.properties.code.label": "Code",
+  "models.VehicleType.properties.color.description": "The color associated with the vehicle type for display",
+  "models.VehicleType.properties.color.label": "Color",
+  "models.VehicleType.properties.id.label": "Vehicle type identifier",
+  "models.VehicleType.properties.name.description": "The name of the vehicle type",
+  "models.VehicleType.properties.name.label": "Last name",
+  "models.VehicleType.singular": "vehicle type",
   "models.WorkingLocation.description": "A workplace defines where people work",
   "models.WorkingLocation.determinant.defined": "the workplace",
   "models.WorkingLocation.determinant.undefined": "a workplace",
@@ -57287,6 +58414,7 @@ const es = {
   "AddPersonToWorkplace.help": "Agregar asignación a esta estación de trabajo, puede agregar múltiples asignaciones para la misma estación de trabajo",
   "AddPersonToWorkplace.text": "Asignar una persona",
   "AddressDialog.search": "Encuentra la dirección",
+  "AddressDialog.selectedAddress": "Dirección seleccionada",
   "AddressDialog.validate": "Validar",
   "AllTenantsDataQualityTable.enableAllTenants.label": "Incluir todas las plataformas",
   "AssignPersonCheckListBuildingAffectations.title": "Esta persona ya está directamente asignada en otros edificios, ¿desea eliminar las siguientes asignaciones para %{personFullname} ?",
@@ -57337,7 +58465,7 @@ const es = {
   "BookingDialog.attendeesPlaceholder": "Introduzca un nombre o una dirección de correo electrónico...",
   "BookingDialog.attendeesTypeToSearch": "Introduce al menos 2 caracteres para buscar colaboradores.",
   "BookingDialog.book": "Para reservar",
-  "BookingDialog.bookRoomTitle": "Reservar una sala de reuniones",
+  "BookingDialog.bookRoomTitle": "Reservar la sala de reuniones",
   "BookingDialog.cancel": "anular",
   "BookingDialog.description": "Descripción (opcional)",
   "BookingDialog.enableTeamsMeeting": "Agrega un enlace de Teams a la reunión",
@@ -57430,8 +58558,11 @@ const es = {
   "BuildingSelectionView.selectBuildingToViewMap": "Seleccione un edificio para mostrar el plano del mismo",
   "CalculatedPropertiesAccordions.kpi": "Indicadores",
   "CalculatedPropertiesAccordions.mesures": "Medidas",
+  "CalendarEventItem.cancelled": "Cancelado",
+  "CalendarEventItem.ongoing": "En curso",
+  "CalendarEventItem.organizedBy": "Organizado por",
   "CalendarHeader.bookingTitle": "Reserva esta sala de reuniones",
-  "CalendarHeader.refreshTooltip": "Actualizar el calendario",
+  "CalendarRefreshButton.refreshTooltip": "Actualizar el calendario",
   "CalendarScopeConsentButton.alertMessage": "Para reservar salas de reuniones, debe autorizar a Surfy a acceder a su calendario de Microsoft. Haga clic en el botón de abajo para otorgar los permisos necesarios.",
   "CalendarScopeConsentButton.alertTitle": "Se requiere permiso para reservar habitaciones.",
   "CalendarScopeConsentButton.buttonHelp": "Serás redirigido a Microsoft para otorgar permisos.",
@@ -57530,6 +58661,7 @@ const es = {
   "CustomUserRegisterForm.tabs.login": "Conectarse",
   "CustomUserRegisterForm.tabs.signup": "Inscribirse",
   "DashboardView.tabs.reports": "informes de excel",
+  "DashboardsLoader.noBuildingSelected": "No hay edificios seleccionados",
   "DataQualityIndex.defaultDescription": "Vista de calidad de datos para {entityName}",
   "DataQualityIndex.generalInfo.description": "Esta sección le permite acceder a los diversos informes de calidad de datos, organizados por entidad. Cada informe se centra en un aspecto específico de la calidad de los datos y le ayuda a identificar y resolver posibles problemas.",
   "DataQualityIndex.generalInfo.instruction": "Haga clic en un informe para acceder a los detalles y las acciones de corrección disponibles.",
@@ -57565,6 +58697,8 @@ const es = {
   "DeleteWorkplace.help": "Eliminar estación de trabajo: [ %{name} ], las asignaciones también se eliminarán",
   "DeskBookingConfirmationButton.bookingConfirmed": "La reserva ha sido confirmada.",
   "DeskBookingConfirmationButton.confirm": "Confirma tu asistencia",
+  "DeskBookingConfirmationButton.confirmHelp": "Confirme que está presente en su estación de trabajo",
+  "DeskBookingsSection.noBookingsFound": "No se encontraron reservas próximas.",
   "DimensionBuildingPlanningLabel.youAreAssigned": "Estás asignado a %{dimensionTypeName} %{dimensionName}",
   "DimensionInfo.carbonFootprint.help": "La huella de carbono es %{value} de CO2 emitido para %{dimensionType} %{dimension}",
   "DimensionInfo.dimensionPeopleCount.help": "Hay %{value} persona(s) afectada(s) en %{dimensionType} %{dimension}",
@@ -57752,6 +58886,7 @@ const es = {
   "ErrorImpossibleToFindTheEntity.text": "No es posible encontrar %{determinant.defined} deseado",
   "ErrorTextZone.reload": "Rehacer la operación",
   "Errors.AUTHENTIFICATION_CONNECTION_NOT_FOUND_FOR_EMAIL": "No se encontró ninguna conexión de autenticación para el dominio %{domain}",
+  "Errors.ROOM_BOOKING_CONFLICT": "La sala ya está reservada para esta franja horaria. Por favor, elija otra hora u otra sala.",
   "Errors.networkError": "Se han detectado problemas de conexión o de red. Espere y vuelva a intentarlo en unos segundos.",
   "ExportQueryNodeToFileButton.help.list": "Descargar en excel %{determinants.defined}",
   "FieldTypeAddress.edit": "Cambiar dirección",
@@ -58019,6 +59154,7 @@ const es = {
   "MeetingRoomBookAction.bookRoom": "Reserva a través del calendario",
   "MeetingRoomCard.availability.available": "Disponible en este horario",
   "MeetingRoomCard.availability.searching": "Comprobando disponibilidad...",
+  "MeetingRoomCard.bookable": "Este espacio se puede reservar.",
   "MeetingRoomCard.bookingEmailAvailable": "Dirección de reserva disponible: %{email}",
   "MeetingRoomCard.calendarFor": "Agenda para",
   "MeetingRoomCard.locateSpace": "Localiza el espacio en el plano.",
@@ -58079,6 +59215,7 @@ const es = {
   "MovePersonFromWorkplaceToRoomListButtonItem.label": "Mover a esta persona desde su estación de trabajo al espacio de la estación de trabajo",
   "MoveShapestoNewRoomAsyncButton.help": "Cambie los espacios de las formas seleccionadas para colocarlas en los espacios en los que se encuentran en el plano",
   "MoveShapestoNewRoomAsyncButton.label": "Aplicar cambio de espacio",
+  "MyBookingsMenuItemLabel.label": "Mi diario",
   "NoCompanies.ContactUs.body": "Hola, ¿podrías dejarme acceder a la aplicación Surfy? Gracias.",
   "NoCompanies.ContactUs.subject": "Acceder a Surfy",
   "NoCompanies.ContactUs.text": "Inicie sesión en la plataforma de su empresa",
@@ -58093,6 +59230,7 @@ const es = {
   "NoCompanies.whatIsSurfyForTeams": "Surfy ofrece digitalizar planos de edificación para facilitar la gestión del entorno laboral. Puedes usar la aplicación Surfy para<ul><li> gestiona tu agenda de presencia</li><li> declarar su presencia en la oficina</li><li> reservar un espacio de trabajo</li><li> indicar que estás teletrabajando</li><li> ver qué colegas han reservado una estación de trabajo en el plan</li></ul>",
   "NoDataOnBuildingInfo.noData": "Seleccione todos los pisos en las opciones del plan para tener datos, no debe haber ningún dato para los pisos que ha seleccionado",
   "NoRoleAssociated.noRole": "No parece haber ningún rol asociado con su usuario para la empresa %{tenant} , comuníquese con su administrador",
+  "NoTenant.noTenantsFound": "No se encontró ningún inquilino para &quot; %{query} &quot;",
   "NumberOfPeoplePerRowField.label": "Número de personas por línea para asignaciones de espacio",
   "ObjectTypeImportKeys.title": "Las claves disponibles para conciliar %{determinants.undefined} en el orden de su elección, si desea modificar una de las propiedades de la clave debe utilizar el identificador como clave",
   "ObjectTypeImportScalarProperties.help": "Copiar al portapapeles",
@@ -58139,6 +59277,10 @@ const es = {
   "PersonBookingList.bookings.one": "Un colega estará presente en el mismo espacio.",
   "PersonBookingList.noBooking": "Ningún colega estará presente en la oficina en el mismo horario por el momento.",
   "PersonBookingListItem.workplaceBookedOnFloor": "Vea la estación de trabajo %{workplaceName} en el plano de planta %{floorName}",
+  "PersonBookings.deskBookingsTab": "Estaciones de trabajo",
+  "PersonBookings.equipmentsTab": "Equipo",
+  "PersonBookings.meetingsTab": "Reuniones",
+  "PersonBookings.noEquipmentsMessage": "No tienes ningún equipo para reservar en este momento.",
   "PersonContactPanel.description": "¿Cómo me comunico con esta persona?",
   "PersonContactPanel.title": "Contactar",
   "PersonContractPanel.description": "Información del contrato",
@@ -58368,7 +59510,12 @@ const es = {
   "TimeSlot.clickToBook": "Haga clic para reservar %{day} a %{time}",
   "TimeSlot.pastDay": "No se puede reservar: ya ha pasado %{day}",
   "TimeSlot.pastTime": "No se puede reservar: el tiempo %{time} ya ha pasado",
+  "TimeSlot.selectingRange": "Selección: %{startTime} - %{endTime}",
   "TimeSlot.slotBooked": "Este espacio ya está reservado",
+  "TimeSlot.slotBookedBy": "Reservado por %{organizer}",
+  "TimeSlot.slotBookedWithTime": "%{startTime} - %{endTime} | Reservado por %{organizer}",
+  "TimeSlot.slotRefreshing": "Actualizando en progreso...",
+  "TimeSlot.slotRefreshingWithCountdown": "Actualizando... Espere %{seconds} s para que Office365 confirme su reserva.",
   "ToggleAllOpenInfoState.false": "Abrir todos los detalles e indicadores",
   "ToggleAllOpenInfoState.true": "Cerrar todos los detalles e indicadores",
   "ToggleCopilotEnable.help.false": "Activa Surfy Copilot para habilitar el reconocimiento automático de puertas",
@@ -58388,6 +59535,7 @@ const es = {
   "TopLevelOrganizationFilter.Empty": "No hay ninguna organización asociada a los espacios, puedes agregar más modificando un espacio y asociándolo a una organización, luego puedes controlar su visualización desde esta sección",
   "UserNotPartOfCompanyAdminCanCreate.createButton": "Crea la asociación",
   "UserNotPartOfCompanyAdminCanCreate.message": "No estás asociado con la empresa %{companyId} .",
+  "VehicleInfoDisplay.parkingAvailable": "Puedes reservar una plaza de parking porque tienes un vehículo.",
   "WeekNavigation.thisWeek": "Esta semana",
   "WorkCanvas.Options.AddItemTypePointOption.help.disable": "Deja de crear cumbres",
   "WorkCanvas.Options.AddItemTypePointOption.help.enable": "Agregar un vértice permite volver a trabajar con mayor precisión un formulario",
@@ -58817,6 +59965,7 @@ const es = {
   "menu.menuLeft.adminReporting": "Informes",
   "menu.menuLeft.adminRoomTypeGroupReporting": "Grupos de tipología espacial.",
   "menu.menuLeft.adminRoomTypeReporting": "tipo de espacios",
+  "menu.menuLeft.adminVehicles": "Vehículos",
   "menu.menuLeft.affectations": "asignaciones",
   "menu.menuLeft.all": "administración",
   "menu.menuLeft.api": "API",
@@ -58840,6 +59989,7 @@ const es = {
   "menu.menuLeft.personCompanies": "Proveedores",
   "menu.menuLeft.personRelations": "Relaciones",
   "menu.menuLeft.personType": "tipos",
+  "menu.menuLeft.personVehicles": "Vehículos",
   "menu.menuLeft.planning": "Horarios",
   "menu.menuLeft.planningAdmin": " Administración de horarios",
   "menu.menuLeft.roomTypes": "Tipologías espaciales",
@@ -59805,6 +60955,8 @@ const es = {
   "models.Person.views.dq-person-duplicate.label": "personas duplicadas",
   "models.Person.views.home.help": "Ver el archivo de la persona <b>%{name}</b> con su información y asignaciones",
   "models.Person.views.home.label": "archivo de persona",
+  "models.Person.views.person-bookings.help": "Ver próximas reservas para la persona <b>%{name}</b>",
+  "models.Person.views.person-bookings.label": "Reservas próximamente",
   "models.Person.views.relationship-list.help": "Enumere las relaciones entre las personas",
   "models.Person.views.relationship-list.label": "Lista de relaciones",
   "models.PersonCompany.description": "La empresa proveedora de servicios le permite administrar el personal del proveedor de servicios por empresa.",
@@ -59900,6 +61052,10 @@ const es = {
   "models.PersonToBuilding.plural": "tareas de construcción",
   "models.PersonToBuilding.properties.addToPeopleCount.description": "Agregue esta asignación al número total de personas asignadas al edificio.",
   "models.PersonToBuilding.properties.addToPeopleCount.label": "Asignación de conteo",
+  "models.PersonToBuilding.properties.allowParkingBookingInTheBuilding.description": "Permite a la persona reservar una plaza de aparcamiento en este edificio.",
+  "models.PersonToBuilding.properties.allowParkingBookingInTheBuilding.label": "Permitir reservas de estacionamiento en el edificio",
+  "models.PersonToBuilding.properties.allowWorkplaceBookingInTheBuilding.description": "Permite al usuario reservar una estación de trabajo en este edificio seleccionando una planta. No es necesario habilitar esta opción si la opción de reserva por edificio está activada en caso de congestión en el distrito.",
+  "models.PersonToBuilding.properties.allowWorkplaceBookingInTheBuilding.label": "Permitir reservas de estaciones de trabajo en el edificio a través de los pisos",
   "models.PersonToBuilding.properties.id.label": "Identificador de asignación de edificio",
   "models.PersonToBuilding.singular": "Afecto al edificio",
   "models.PersonToDimensionBooking.description": "Las reservas para capas de asignación de personas se guardan y están disponibles con las fechas de inicio y finalización de la reserva.",
@@ -59948,6 +61104,14 @@ const es = {
   "models.PersonToRoomBooking.properties.startDatetime.description": "La fecha y hora de inicio de la reserva.",
   "models.PersonToRoomBooking.properties.startDatetime.label": "Inicio de la reserva",
   "models.PersonToRoomBooking.singular": "Reserva para la zona de personas",
+  "models.PersonToVehicle.description": "Permite asociar una persona a uno o más vehículos",
+  "models.PersonToVehicle.determinant.defined": "asignación de vehículos",
+  "models.PersonToVehicle.determinant.undefined": "una asignación de vehículo",
+  "models.PersonToVehicle.determinants.defined": "asignaciones de vehículos",
+  "models.PersonToVehicle.determinants.undefined": "asignaciones de vehículos",
+  "models.PersonToVehicle.plural": "asignaciones de vehículos",
+  "models.PersonToVehicle.properties.id.label": "Identificador de asignación de vehículo",
+  "models.PersonToVehicle.singular": "asignación de vehículos",
   "models.PersonToWorkplaceBooking.description": "Las reservas de puestos de trabajo de las personas quedan registradas y disponibles con las fechas de inicio y finalización de la reserva.",
   "models.PersonToWorkplaceBooking.determinant.defined": "reserva en el puesto de trabajo de las personas",
   "models.PersonToWorkplaceBooking.determinant.undefined": "una reserva en el puesto de trabajo de la gente",
@@ -60224,6 +61388,48 @@ const es = {
   "models.UserRegistrationTenantRuleToJupRole.determinants.undefined": "asociaciones de reglas de autenticación de rol a rol",
   "models.UserRegistrationTenantRuleToJupRole.plural": "Asociaciones de regla a rol de autenticación",
   "models.UserRegistrationTenantRuleToJupRole.singular": "Asociación de regla de autenticación a rol",
+  "models.Vehicle.description": "Un vehículo le permite administrar información relacionada con un vehículo.",
+  "models.Vehicle.determinant.defined": "el vehículo",
+  "models.Vehicle.determinant.undefined": "un vehículo",
+  "models.Vehicle.determinants.defined": "vehículos",
+  "models.Vehicle.determinants.undefined": "vehículos",
+  "models.Vehicle.plural": "vehículos",
+  "models.Vehicle.properties.belongsToTheCompany.description": "Indica si el vehículo pertenece a la empresa",
+  "models.Vehicle.properties.belongsToTheCompany.label": "Pertenece a la empresa",
+  "models.Vehicle.properties.id.label": "Identificación del vehículo",
+  "models.Vehicle.properties.vehicleRegistration.description": "El número de matrícula del vehículo",
+  "models.Vehicle.properties.vehicleRegistration.label": "registro",
+  "models.Vehicle.properties.vehicleType.description": "El tipo de vehículo asociado a este vehículo",
+  "models.Vehicle.properties.vehicleType.label": "Tipo de vehículo",
+  "models.Vehicle.singular": "vehículo",
+  "models.VehiclePropulsionType.description": "El tipo de propulsión de un vehículo nos permite categorizar los vehículos según su método de propulsión (eléctrico, gasolina, diésel, híbrido, etc.)",
+  "models.VehiclePropulsionType.determinant.defined": "el tipo de propulsión del vehículo",
+  "models.VehiclePropulsionType.determinant.undefined": "un tipo de propulsión de vehículos",
+  "models.VehiclePropulsionType.determinants.defined": "tipos de propulsión de vehículos",
+  "models.VehiclePropulsionType.determinants.undefined": "tipos de propulsión de vehículos",
+  "models.VehiclePropulsionType.plural": "tipos de propulsión de vehículos",
+  "models.VehiclePropulsionType.properties.code.description": "El código único para el tipo de propulsión del vehículo",
+  "models.VehiclePropulsionType.properties.code.label": "código",
+  "models.VehiclePropulsionType.properties.color.description": "El color asociado con el tipo de propulsión del vehículo para su visualización.",
+  "models.VehiclePropulsionType.properties.color.label": "color",
+  "models.VehiclePropulsionType.properties.id.label": "Identificador del tipo de propulsión del vehículo",
+  "models.VehiclePropulsionType.properties.name.description": "El nombre del tipo de propulsión del vehículo",
+  "models.VehiclePropulsionType.properties.name.label": "apellido",
+  "models.VehiclePropulsionType.singular": "tipo de propulsión del vehículo",
+  "models.VehicleType.description": "Un tipo de vehículo permite categorizar los vehículos según sus características.",
+  "models.VehicleType.determinant.defined": "el tipo de vehículo",
+  "models.VehicleType.determinant.undefined": "un tipo de vehículo",
+  "models.VehicleType.determinants.defined": "tipos de vehículos",
+  "models.VehicleType.determinants.undefined": "tipos de vehículos",
+  "models.VehicleType.plural": "tipos de vehículos",
+  "models.VehicleType.properties.code.description": "El código único de tipo de vehículo",
+  "models.VehicleType.properties.code.label": "código",
+  "models.VehicleType.properties.color.description": "El color asociado al tipo de vehículo para visualización",
+  "models.VehicleType.properties.color.label": "color",
+  "models.VehicleType.properties.id.label": "Identificador del tipo de vehículo",
+  "models.VehicleType.properties.name.description": "El nombre del tipo de vehículo",
+  "models.VehicleType.properties.name.label": "apellido",
+  "models.VehicleType.singular": "tipo de vehículo",
   "models.WorkingLocation.description": "Un lugar de trabajo define dónde trabajan las personas.",
   "models.WorkingLocation.determinant.defined": "el lugar de trabajo",
   "models.WorkingLocation.determinant.undefined": "un lugar de trabajo",
@@ -60341,6 +61547,7 @@ const it = {
   "AddPersonToWorkplace.help": "Aggiungi un compito a questa workstation, puoi aggiungere più compiti per la stessa workstation",
   "AddPersonToWorkplace.text": "Assegna una persona",
   "AddressDialog.search": "Trova l'indirizzo",
+  "AddressDialog.selectedAddress": "Indirizzo selezionato",
   "AddressDialog.validate": "convalidare",
   "AllTenantsDataQualityTable.enableAllTenants.label": "Includi tutte le piattaforme",
   "AssignPersonCheckListBuildingAffectations.title": "Questa persona è già assegnata direttamente su altri edifici, vuoi rimuovere le seguenti assegnazioni per %{personFullname}",
@@ -60391,7 +61598,7 @@ const it = {
   "BookingDialog.attendeesPlaceholder": "Inserisci un nome o un indirizzo email...",
   "BookingDialog.attendeesTypeToSearch": "Inserisci almeno 2 caratteri per cercare i collaboratori.",
   "BookingDialog.book": "Per prenotare",
-  "BookingDialog.bookRoomTitle": "Prenota una sala riunioni",
+  "BookingDialog.bookRoomTitle": "Prenota la sala riunioni",
   "BookingDialog.cancel": "per cancellare",
   "BookingDialog.description": "Descrizione (facoltativa)",
   "BookingDialog.enableTeamsMeeting": "Aggiungi un collegamento Teams alla riunione",
@@ -60484,8 +61691,11 @@ const it = {
   "BuildingSelectionView.selectBuildingToViewMap": "Scegli un edificio per visualizzare la planimetria",
   "CalculatedPropertiesAccordions.kpi": "Indicatori",
   "CalculatedPropertiesAccordions.mesures": "Misure",
+  "CalendarEventItem.cancelled": "Annullato",
+  "CalendarEventItem.ongoing": "In corso",
+  "CalendarEventItem.organizedBy": "Organizzato da",
   "CalendarHeader.bookingTitle": "Prenota questa sala riunioni",
-  "CalendarHeader.refreshTooltip": "Aggiorna il calendario",
+  "CalendarRefreshButton.refreshTooltip": "Aggiorna il calendario",
   "CalendarScopeConsentButton.alertMessage": "Per prenotare le sale riunioni, è necessario autorizzare Surfy ad accedere al calendario Microsoft. Fare clic sul pulsante qui sotto per concedere le autorizzazioni necessarie.",
   "CalendarScopeConsentButton.alertTitle": "Per prenotare le camere è necessario il permesso",
   "CalendarScopeConsentButton.buttonHelp": "Verrai reindirizzato a Microsoft per concedere le autorizzazioni",
@@ -60584,6 +61794,7 @@ const it = {
   "CustomUserRegisterForm.tabs.login": "Per accedere",
   "CustomUserRegisterForm.tabs.signup": "Registrati",
   "DashboardView.tabs.reports": "Rapporti Excel",
+  "DashboardsLoader.noBuildingSelected": "Nessun edificio selezionato",
   "DataQualityIndex.defaultDescription": "Visualizzazione della qualità dei dati per {entityName}",
   "DataQualityIndex.generalInfo.description": "Questa sezione consente di accedere ai vari report sulla qualità dei dati organizzati per entità. Ogni report si concentra su un aspetto specifico della qualità dei dati e aiuta a identificare e risolvere potenziali problemi.",
   "DataQualityIndex.generalInfo.instruction": "Fare clic su un report per accedere ai dettagli e alle azioni correttive disponibili.",
@@ -60619,6 +61830,8 @@ const it = {
   "DeleteWorkplace.help": "Elimina workstation: [ %{name} ], anche le assegnazioni verranno eliminate",
   "DeskBookingConfirmationButton.bookingConfirmed": "La prenotazione è stata confermata.",
   "DeskBookingConfirmationButton.confirm": "Conferma la tua presenza",
+  "DeskBookingConfirmationButton.confirmHelp": "Conferma di essere presente alla tua postazione di lavoro",
+  "DeskBookingsSection.noBookingsFound": "Nessuna prenotazione imminente trovata.",
   "DimensionBuildingPlanningLabel.youAreAssigned": "Ti è stato assegnato %{dimensionTypeName} %{dimensionName}",
   "DimensionInfo.carbonFootprint.help": "L'impronta di carbonio è %{value} di CO2 emessa per %{dimensionType} %{dimension}",
   "DimensionInfo.dimensionPeopleCount.help": "Sono presenti %{value} persone interessate in %{dimensionType} %{dimension}",
@@ -60806,6 +62019,7 @@ const it = {
   "ErrorImpossibleToFindTheEntity.text": "Impossibile trovare %{determinant.defined} ricercato",
   "ErrorTextZone.reload": "Ripeti l'operazione",
   "Errors.AUTHENTIFICATION_CONNECTION_NOT_FOUND_FOR_EMAIL": "Nessuna connessione di autenticazione trovata per il dominio %{domain}",
+  "Errors.ROOM_BOOKING_CONFLICT": "La camera è già prenotata per questa fascia oraria. Si prega di scegliere un altro orario o un'altra camera.",
   "Errors.networkError": "Sono stati rilevati problemi di connessione o di rete, attendi e riprova tra qualche secondo",
   "ExportQueryNodeToFileButton.help.list": "Scarica in excel %{determinants.defined}",
   "FieldTypeAddress.edit": "Cambia indirizzo",
@@ -61073,6 +62287,7 @@ const it = {
   "MeetingRoomBookAction.bookRoom": "Prenota tramite il calendario",
   "MeetingRoomCard.availability.available": "Disponibile in questa fascia oraria",
   "MeetingRoomCard.availability.searching": "Verifica disponibilità...",
+  "MeetingRoomCard.bookable": "Questo spazio può essere prenotato.",
   "MeetingRoomCard.bookingEmailAvailable": "Indirizzo di prenotazione disponibile: %{email}",
   "MeetingRoomCard.calendarFor": "Ordine del giorno per",
   "MeetingRoomCard.locateSpace": "Individua lo spazio sulla planimetria",
@@ -61133,6 +62348,7 @@ const it = {
   "MovePersonFromWorkplaceToRoomListButtonItem.label": "Sposta questa persona dalla sua postazione di lavoro allo spazio della postazione di lavoro",
   "MoveShapestoNewRoomAsyncButton.help": "Cambia gli spazi delle forme selezionate per metterle negli spazi in cui si trovano sulla pianta",
   "MoveShapestoNewRoomAsyncButton.label": "Applicare il cambio di spazio",
+  "MyBookingsMenuItemLabel.label": "Il mio diario",
   "NoCompanies.ContactUs.body": "Ciao, potresti farmi accedere all'applicazione Surfy? Grazie.",
   "NoCompanies.ContactUs.subject": "Accesso a Surfy",
   "NoCompanies.ContactUs.text": "Accedi alla tua piattaforma aziendale",
@@ -61147,6 +62363,7 @@ const it = {
   "NoCompanies.whatIsSurfyForTeams": "Surfy propone la digitalizzazione delle planimetrie degli edifici per facilitare la gestione dell'ambiente di lavoro. Puoi utilizzare l'app Surfy per<ul><li> gestisci il tuo programma di presenza</li><li> dichiarare la propria presenza in ufficio</li><li> prenotare uno spazio di lavoro</li><li> indicare che stai telelavorando</li><li> vedere quali colleghi hanno prenotato una postazione di lavoro sul piano</li></ul>",
   "NoDataOnBuildingInfo.noData": "Seleziona tutti i piani nelle opzioni del piano per avere i dati, non ci devono essere dati per i piani che hai selezionato",
   "NoRoleAssociated.noRole": "Nessun ruolo sembra essere associato al tuo utente per l'azienda %{tenant} , contatta il tuo amministratore",
+  "NoTenant.noTenantsFound": "Nessun tenant trovato per &quot; %{query} &quot;",
   "NumberOfPeoplePerRowField.label": "Numero di persone per linea per assegnazioni di spazio",
   "ObjectTypeImportKeys.title": "Le chiavi disponibili per riconciliare %{determinants.undefined} nell'ordine che preferisci, se desideri modificare una delle proprietà della chiave devi utilizzare l'identificatore come chiave",
   "ObjectTypeImportScalarProperties.help": "Copia negli appunti",
@@ -61193,6 +62410,10 @@ const it = {
   "PersonBookingList.bookings.one": "Nello stesso slot sarà presente un collega",
   "PersonBookingList.noBooking": "Nessun collega sarà per il momento presente in ufficio nello stesso orario",
   "PersonBookingListItem.workplaceBookedOnFloor": "Vedi la workstation %{workplaceName} sulla planimetria %{floorName}",
+  "PersonBookings.deskBookingsTab": "Posti di lavoro personali",
+  "PersonBookings.equipmentsTab": "Attrezzatura",
+  "PersonBookings.meetingsTab": "Riunioni",
+  "PersonBookings.noEquipmentsMessage": "Al momento non hai attrezzature da prenotare.",
   "PersonContactPanel.description": "Come posso contattare questa persona?",
   "PersonContactPanel.title": "Contatto",
   "PersonContractPanel.description": "Informazioni sul contratto",
@@ -61422,7 +62643,12 @@ const it = {
   "TimeSlot.clickToBook": "Clicca per prenotare %{day} alle %{time}",
   "TimeSlot.pastDay": "Impossibile prenotare: %{day} è già trascorso",
   "TimeSlot.pastTime": "Impossibile prenotare: il tempo %{time} è già trascorso",
+  "TimeSlot.selectingRange": "Selezione: %{startTime} - %{endTime}",
   "TimeSlot.slotBooked": "Questo slot è già riservato",
+  "TimeSlot.slotBookedBy": "Riservato da %{organizer}",
+  "TimeSlot.slotBookedWithTime": "%{startTime} - %{endTime} | Riservato da %{organizer}",
+  "TimeSlot.slotRefreshing": "Aggiornamento in corso...",
+  "TimeSlot.slotRefreshingWithCountdown": "Aggiornamento in corso... Attendi %{seconds} s affinché Office365 confermi la prenotazione.",
   "ToggleAllOpenInfoState.false": "Apri tutti i dettagli e gli indicatori",
   "ToggleAllOpenInfoState.true": "Chiudi tutti i dettagli e gli indicatori",
   "ToggleCopilotEnable.help.false": "Attiva Surfy Copilot per abilitare il riconoscimento automatico della porta",
@@ -61442,6 +62668,7 @@ const it = {
   "TopLevelOrganizationFilter.Empty": "Non esiste alcuna organizzazione associata agli spazi, puoi aggiungerne altre modificando uno spazio e associandolo a un'organizzazione, quindi puoi controllarne la visualizzazione da questa sezione",
   "UserNotPartOfCompanyAdminCanCreate.createButton": "Crea l'associazione",
   "UserNotPartOfCompanyAdminCanCreate.message": "Non sei associato alla società %{companyId} .",
+  "VehicleInfoDisplay.parkingAvailable": "Puoi prenotare un posto auto perché hai un veicolo.",
   "WeekNavigation.thisWeek": "Questa settimana",
   "WorkCanvas.Options.AddItemTypePointOption.help.disable": "Smetti di creare vertici",
   "WorkCanvas.Options.AddItemTypePointOption.help.enable": "L'aggiunta di un vertice consente di rielaborare una forma con maggiore precisione",
@@ -61871,6 +63098,7 @@ const it = {
   "menu.menuLeft.adminReporting": "Segnalazione",
   "menu.menuLeft.adminRoomTypeGroupReporting": "Gruppi di tipologia spaziale",
   "menu.menuLeft.adminRoomTypeReporting": "Tipo di spazi",
+  "menu.menuLeft.adminVehicles": "Veicoli",
   "menu.menuLeft.affectations": "Compiti",
   "menu.menuLeft.all": "Amministrazione",
   "menu.menuLeft.api": "API",
@@ -61894,6 +63122,7 @@ const it = {
   "menu.menuLeft.personCompanies": "Fornitori",
   "menu.menuLeft.personRelations": "Relazioni",
   "menu.menuLeft.personType": "Tipi",
+  "menu.menuLeft.personVehicles": "Veicoli",
   "menu.menuLeft.planning": "Orari",
   "menu.menuLeft.planningAdmin": " Amministrazione del programma",
   "menu.menuLeft.roomTypes": "Tipologie di spazio",
@@ -62859,6 +64088,8 @@ const it = {
   "models.Person.views.dq-person-duplicate.label": "Persone duplicate",
   "models.Person.views.home.help": "Visualizza il file della persona <b>%{name}</b> con le sue informazioni e i suoi incarichi",
   "models.Person.views.home.label": "dossier personale",
+  "models.Person.views.person-bookings.help": "Visualizza le prossime prenotazioni per la persona <b>%{name}</b>",
+  "models.Person.views.person-bookings.label": "Prenotazioni in arrivo a breve",
   "models.Person.views.relationship-list.help": "Elenca le relazioni tra le persone",
   "models.Person.views.relationship-list.label": "Elenco delle relazioni",
   "models.PersonCompany.description": "L'azienda fornitrice di servizi consente di gestire il personale del fornitore di servizi per azienda.",
@@ -62954,6 +64185,10 @@ const it = {
   "models.PersonToBuilding.plural": "incarichi edilizi",
   "models.PersonToBuilding.properties.addToPeopleCount.description": "Aggiungi questa assegnazione al numero totale di persone assegnate all'edificio",
   "models.PersonToBuilding.properties.addToPeopleCount.label": "Conta assegnazione",
+  "models.PersonToBuilding.properties.allowParkingBookingInTheBuilding.description": "Consente alla persona di prenotare un posto auto in questo edificio",
+  "models.PersonToBuilding.properties.allowParkingBookingInTheBuilding.label": "Consentire la prenotazione del parcheggio nell'edificio",
+  "models.PersonToBuilding.properties.allowWorkplaceBookingInTheBuilding.description": "Consente all'utente di prenotare una postazione di lavoro in questo edificio selezionando un piano. Questa opzione non deve essere abilitata se è abilitata l'opzione di prenotazione basata sull'edificio in caso di sovraffollamento del quartiere.",
+  "models.PersonToBuilding.properties.allowWorkplaceBookingInTheBuilding.label": "Consentire la prenotazione delle postazioni di lavoro nell'edificio tramite i piani",
   "models.PersonToBuilding.properties.id.label": "Identificatore dell'assegnazione dell'edificio",
   "models.PersonToBuilding.singular": "Affetto per l'edificio",
   "models.PersonToDimensionBooking.description": "Le prenotazioni per i livelli di assegnazione delle persone vengono salvate e disponibili con le date di inizio e fine della prenotazione",
@@ -63002,6 +64237,14 @@ const it = {
   "models.PersonToRoomBooking.properties.startDatetime.description": "La data e l'ora di inizio della prenotazione",
   "models.PersonToRoomBooking.properties.startDatetime.label": "Inizio prenotazione",
   "models.PersonToRoomBooking.singular": "Prenotazione per l'area persone",
+  "models.PersonToVehicle.description": "Permette di associare una persona a uno o più veicoli",
+  "models.PersonToVehicle.determinant.defined": "assegnazione del veicolo",
+  "models.PersonToVehicle.determinant.undefined": "un incarico di veicolo",
+  "models.PersonToVehicle.determinants.defined": "assegnazioni di veicoli",
+  "models.PersonToVehicle.determinants.undefined": "assegnazioni di veicoli",
+  "models.PersonToVehicle.plural": "assegnazioni di veicoli",
+  "models.PersonToVehicle.properties.id.label": "Identificatore di assegnazione del veicolo",
+  "models.PersonToVehicle.singular": "assegnazione del veicolo",
   "models.PersonToWorkplaceBooking.description": "Le prenotazioni delle postazioni di lavoro delle persone vengono registrate e disponibili con le date di inizio e fine della prenotazione",
   "models.PersonToWorkplaceBooking.determinant.defined": "prenotazione presso la postazione di lavoro delle persone",
   "models.PersonToWorkplaceBooking.determinant.undefined": "una prenotazione presso la postazione di lavoro delle persone",
@@ -63278,6 +64521,48 @@ const it = {
   "models.UserRegistrationTenantRuleToJupRole.determinants.undefined": "associazioni da regola a ruolo di autenticazione",
   "models.UserRegistrationTenantRuleToJupRole.plural": "Associazioni di autenticazione da regola a ruolo",
   "models.UserRegistrationTenantRuleToJupRole.singular": "Associazione della regola di autenticazione al ruolo",
+  "models.Vehicle.description": "Un veicolo consente di gestire le informazioni relative a un veicolo",
+  "models.Vehicle.determinant.defined": "il veicolo",
+  "models.Vehicle.determinant.undefined": "un veicolo",
+  "models.Vehicle.determinants.defined": "veicoli",
+  "models.Vehicle.determinants.undefined": "veicoli",
+  "models.Vehicle.plural": "veicoli",
+  "models.Vehicle.properties.belongsToTheCompany.description": "Indica se il veicolo appartiene all'azienda",
+  "models.Vehicle.properties.belongsToTheCompany.label": "Appartiene alla società",
+  "models.Vehicle.properties.id.label": "ID del veicolo",
+  "models.Vehicle.properties.vehicleRegistration.description": "Il numero di targa del veicolo",
+  "models.Vehicle.properties.vehicleRegistration.label": "Registrazione",
+  "models.Vehicle.properties.vehicleType.description": "Il tipo di veicolo associato a questo veicolo",
+  "models.Vehicle.properties.vehicleType.label": "Tipo di veicolo",
+  "models.Vehicle.singular": "veicolo",
+  "models.VehiclePropulsionType.description": "Il tipo di propulsione del veicolo ci consente di classificare i veicoli in base al loro metodo di propulsione (elettrico, a benzina, diesel, ibrido, ecc.)",
+  "models.VehiclePropulsionType.determinant.defined": "il tipo di propulsione del veicolo",
+  "models.VehiclePropulsionType.determinant.undefined": "un tipo di propulsione del veicolo",
+  "models.VehiclePropulsionType.determinants.defined": "tipi di propulsione dei veicoli",
+  "models.VehiclePropulsionType.determinants.undefined": "tipi di propulsione dei veicoli",
+  "models.VehiclePropulsionType.plural": "tipi di propulsione dei veicoli",
+  "models.VehiclePropulsionType.properties.code.description": "Il codice univoco per il tipo di propulsione del veicolo",
+  "models.VehiclePropulsionType.properties.code.label": "codificato",
+  "models.VehiclePropulsionType.properties.color.description": "Il colore associato al tipo di propulsione del veicolo per la visualizzazione",
+  "models.VehiclePropulsionType.properties.color.label": "Colore",
+  "models.VehiclePropulsionType.properties.id.label": "Identificatore del tipo di propulsione del veicolo",
+  "models.VehiclePropulsionType.properties.name.description": "Il nome del tipo di propulsione del veicolo",
+  "models.VehiclePropulsionType.properties.name.label": "Nome",
+  "models.VehiclePropulsionType.singular": "tipo di propulsione del veicolo",
+  "models.VehicleType.description": "Una tipologia di veicolo consente di classificare i veicoli in base alle loro caratteristiche.",
+  "models.VehicleType.determinant.defined": "il tipo di veicolo",
+  "models.VehicleType.determinant.undefined": "un tipo di veicolo",
+  "models.VehicleType.determinants.defined": "tipi di veicoli",
+  "models.VehicleType.determinants.undefined": "tipi di veicoli",
+  "models.VehicleType.plural": "tipi di veicoli",
+  "models.VehicleType.properties.code.description": "Il codice univoco del tipo di veicolo",
+  "models.VehicleType.properties.code.label": "codificato",
+  "models.VehicleType.properties.color.description": "Il colore associato al tipo di veicolo da visualizzare",
+  "models.VehicleType.properties.color.label": "Colore",
+  "models.VehicleType.properties.id.label": "Identificatore del tipo di veicolo",
+  "models.VehicleType.properties.name.description": "Il nome del tipo di veicolo",
+  "models.VehicleType.properties.name.label": "Nome",
+  "models.VehicleType.singular": "tipo di veicolo",
   "models.WorkingLocation.description": "Un posto di lavoro definisce dove lavorano le persone",
   "models.WorkingLocation.determinant.defined": "il posto di lavoro",
   "models.WorkingLocation.determinant.undefined": "un posto di lavoro",
@@ -63395,6 +64680,7 @@ const nl = {
   "AddPersonToWorkplace.help": "Voeg een opdracht toe aan dit werkstation, je kunt meerdere opdrachten toevoegen voor hetzelfde werkstation",
   "AddPersonToWorkplace.text": "Wijs een persoon toe",
   "AddressDialog.search": "Vind adres",
+  "AddressDialog.selectedAddress": "Geselecteerd adres",
   "AddressDialog.validate": "bevestigen",
   "AllTenantsDataQualityTable.enableAllTenants.label": "Neem alle platforms op",
   "AssignPersonCheckListBuildingAffectations.title": "Deze persoon is al direct toegewezen aan andere gebouwen, wil je de volgende toewijzingen voor %{personFullname} verwijderen",
@@ -63445,7 +64731,7 @@ const nl = {
   "BookingDialog.attendeesPlaceholder": "Voer een naam of e-mailadres in...",
   "BookingDialog.attendeesTypeToSearch": "Voer minimaal 2 tekens in om naar medewerkers te zoeken.",
   "BookingDialog.book": "Om te boeken",
-  "BookingDialog.bookRoomTitle": "Boek een vergaderruimte",
+  "BookingDialog.bookRoomTitle": "Reserveer de vergaderruimte",
   "BookingDialog.cancel": "Annuleren",
   "BookingDialog.description": "Beschrijving (optioneel)",
   "BookingDialog.enableTeamsMeeting": "Voeg een Teams-link toe aan de vergadering",
@@ -63538,8 +64824,11 @@ const nl = {
   "BuildingSelectionView.selectBuildingToViewMap": "Kies een gebouw om de plattegrond weer te geven",
   "CalculatedPropertiesAccordions.kpi": "Indicatoren",
   "CalculatedPropertiesAccordions.mesures": "Maatregelen",
+  "CalendarEventItem.cancelled": "Geannuleerd",
+  "CalendarEventItem.ongoing": "In uitvoering",
+  "CalendarEventItem.organizedBy": "Georganiseerd door",
   "CalendarHeader.bookingTitle": "Boek deze vergaderruimte",
-  "CalendarHeader.refreshTooltip": "Vernieuw de kalender",
+  "CalendarRefreshButton.refreshTooltip": "Vernieuw de kalender",
   "CalendarScopeConsentButton.alertMessage": "Om vergaderruimtes te reserveren, moet u Surfy toegang verlenen tot uw Microsoft-agenda. Klik op de onderstaande knop om de benodigde rechten te verlenen.",
   "CalendarScopeConsentButton.alertTitle": "Toestemming vereist om kamers te boeken",
   "CalendarScopeConsentButton.buttonHelp": "U wordt doorgestuurd naar Microsoft om toestemmingen te verlenen",
@@ -63638,6 +64927,7 @@ const nl = {
   "CustomUserRegisterForm.tabs.login": "Inloggen",
   "CustomUserRegisterForm.tabs.signup": "Register",
   "DashboardView.tabs.reports": "Excel-rapporten",
+  "DashboardsLoader.noBuildingSelected": "Geen gebouwen geselecteerd",
   "DataQualityIndex.defaultDescription": "Gegevenskwaliteitsweergave voor {entityName}",
   "DataQualityIndex.generalInfo.description": "In deze sectie krijgt u toegang tot de verschillende rapporten over datakwaliteit, geordend per entiteit. Elk rapport richt zich op een specifiek aspect van datakwaliteit en helpt u potentiële problemen te identificeren en op te lossen.",
   "DataQualityIndex.generalInfo.instruction": "Klik op een rapport voor toegang tot details en beschikbare herstelmaatregelen.",
@@ -63673,6 +64963,8 @@ const nl = {
   "DeleteWorkplace.help": "Werkstation verwijderen: [ %{name} ], opdrachten worden ook verwijderd",
   "DeskBookingConfirmationButton.bookingConfirmed": "De reservering is bevestigd.",
   "DeskBookingConfirmationButton.confirm": "Bevestig uw aanwezigheid",
+  "DeskBookingConfirmationButton.confirmHelp": "Bevestig dat u aanwezig bent op uw werkplek",
+  "DeskBookingsSection.noBookingsFound": "Geen aankomende reserveringen gevonden.",
   "DimensionBuildingPlanningLabel.youAreAssigned": "U bent toegewezen aan %{dimensionTypeName} %{dimensionName}",
   "DimensionInfo.carbonFootprint.help": "De CO2-voetafdruk is %{value} van de CO2-uitstoot voor %{dimensionType} %{dimension}",
   "DimensionInfo.dimensionPeopleCount.help": "Er zijn %{value} persoon(en) toegewezen in %{dimensionType} %{dimension}",
@@ -63860,6 +65152,7 @@ const nl = {
   "ErrorImpossibleToFindTheEntity.text": "De gezochte %{determinant.defined} kan niet worden gevonden",
   "ErrorTextZone.reload": "Herhaal de handeling",
   "Errors.AUTHENTIFICATION_CONNECTION_NOT_FOUND_FOR_EMAIL": "Er is geen authenticatieverbinding gevonden voor het domein %{domain}",
+  "Errors.ROOM_BOOKING_CONFLICT": "De kamer is al geboekt voor dit tijdslot. Kies een ander tijdstip of een andere kamer.",
   "Errors.networkError": "Er zijn verbindings- of netwerkproblemen gedetecteerd. Wacht even en probeer het over een paar seconden opnieuw",
   "ExportQueryNodeToFileButton.help.list": "Downloaden in Excel %{determinants.defined}",
   "FieldTypeAddress.edit": "Adres wijzigen",
@@ -64127,6 +65420,7 @@ const nl = {
   "MeetingRoomBookAction.bookRoom": "Boek via de kalender",
   "MeetingRoomCard.availability.available": "Beschikbaar in dit tijdslot",
   "MeetingRoomCard.availability.searching": "Beschikbaarheid controleren...",
+  "MeetingRoomCard.bookable": "Deze ruimte kan worden gereserveerd.",
   "MeetingRoomCard.bookingEmailAvailable": "Beschikbaar boekingsadres: %{email}",
   "MeetingRoomCard.calendarFor": "Agenda voor",
   "MeetingRoomCard.locateSpace": "Zoek de ruimte op het plan",
@@ -64187,6 +65481,7 @@ const nl = {
   "MovePersonFromWorkplaceToRoomListButtonItem.label": "Verplaats deze persoon van zijn/haar werkplek naar de werkplekruimte",
   "MoveShapestoNewRoomAsyncButton.help": "Wijzig de ruimtes van de geselecteerde vormen om ze in de ruimtes te plaatsen waarin ze zich in het vlak bevinden",
   "MoveShapestoNewRoomAsyncButton.label": "Pas ruimteverandering toe",
+  "MyBookingsMenuItemLabel.label": "Mijn dagboek",
   "NoCompanies.ContactUs.body": "Hallo, kunt u mij toegang geven tot de Surfy-applicatie? Dankjewel.",
   "NoCompanies.ContactUs.subject": "Toegang tot Surfy",
   "NoCompanies.ContactUs.text": "Log in op uw bedrijfsplatform",
@@ -64201,6 +65496,7 @@ const nl = {
   "NoCompanies.whatIsSurfyForTeams": "Surfy biedt aan om bouwplannen te digitaliseren om het beheer van de werkomgeving te vergemakkelijken. Je kunt de Surfy-app gebruiken om<ul><li> beheer uw aanwezigheidsschema</li><li> meld uw aanwezigheid op kantoor</li><li> reserveer een werkplek</li><li> Geef aan dat u telewerkt</li><li> bekijk welke collega's een werkplek op het abonnement hebben gereserveerd</li></ul>",
   "NoDataOnBuildingInfo.noData": "Selecteer alle verdiepingen in de planopties om gegevens te hebben. Er mogen geen gegevens zijn voor de verdiepingen die u hebt geselecteerd",
   "NoRoleAssociated.noRole": "Er lijkt geen rol te zijn gekoppeld aan uw gebruiker voor het bedrijf %{tenant} . Neem contact op met uw beheerder",
+  "NoTenant.noTenantsFound": "Geen huurder gevonden voor &quot; %{query} &quot;",
   "NumberOfPeoplePerRowField.label": "Aantal personen per lijn voor ruimtetoewijzingen",
   "ObjectTypeImportKeys.title": "De beschikbare sleutels voor het afstemmen van %{determinants.undefined} in de volgorde van uw keuze. Als u een van de sleuteleigenschappen wilt wijzigen, moet u de ID als sleutel gebruiken",
   "ObjectTypeImportScalarProperties.help": "Kopieer naar klembord",
@@ -64247,6 +65543,10 @@ const nl = {
   "PersonBookingList.bookings.one": "Op hetzelfde slot zal een collega aanwezig zijn",
   "PersonBookingList.noBooking": "Er zal voorlopig geen collega op hetzelfde slot op kantoor aanwezig zijn",
   "PersonBookingListItem.workplaceBookedOnFloor": "Zie werkplek %{workplaceName} op de plattegrond %{floorName}",
+  "PersonBookings.deskBookingsTab": "Persoonlijke werkplekken",
+  "PersonBookings.equipmentsTab": "Apparatuur",
+  "PersonBookings.meetingsTab": "Vergaderingen",
+  "PersonBookings.noEquipmentsMessage": "Er is momenteel geen uitrusting beschikbaar om te reserveren.",
   "PersonContactPanel.description": "Hoe kunt u contact opnemen met deze persoon?",
   "PersonContactPanel.title": "Contact",
   "PersonContractPanel.description": "Contractinformatie",
@@ -64476,7 +65776,12 @@ const nl = {
   "TimeSlot.clickToBook": "Klik om %{day} om %{time} te boeken",
   "TimeSlot.pastDay": "Kan niet boeken: %{day} is al verstreken",
   "TimeSlot.pastTime": "Kan niet boeken: tijd %{time} is al verstreken",
+  "TimeSlot.selectingRange": "Selectie: %{startTime} - %{endTime}",
   "TimeSlot.slotBooked": "Deze plek is al gereserveerd",
+  "TimeSlot.slotBookedBy": "Gereserveerd door %{organizer}",
+  "TimeSlot.slotBookedWithTime": "%{startTime} - %{endTime} | Gereserveerd door %{organizer}",
+  "TimeSlot.slotRefreshing": "Bezig met updaten...",
+  "TimeSlot.slotRefreshingWithCountdown": "Bijwerken... Wacht %{seconds} s totdat Office365 uw reservering heeft bevestigd.",
   "ToggleAllOpenInfoState.false": "Open alle details en indicatoren",
   "ToggleAllOpenInfoState.true": "Sluit alle details en indicatoren",
   "ToggleCopilotEnable.help.false": "Activeer Surfy Copilot om automatische deurherkenning in te schakelen",
@@ -64496,6 +65801,7 @@ const nl = {
   "TopLevelOrganizationFilter.Empty": "Er is geen organisatie gekoppeld aan ruimtes. U kunt meer toevoegen door een ruimte te wijzigen en deze aan een organisatie te koppelen. Vervolgens kunt u de weergave ervan vanuit deze sectie beheren",
   "UserNotPartOfCompanyAdminCanCreate.createButton": "Maak de vereniging",
   "UserNotPartOfCompanyAdminCanCreate.message": "U bent niet gekoppeld aan het bedrijf %{companyId} .",
+  "VehicleInfoDisplay.parkingAvailable": "Je kunt een parkeerplaats reserveren omdat je een voertuig hebt.",
   "WeekNavigation.thisWeek": "Deze week",
   "WorkCanvas.Options.AddItemTypePointOption.help.disable": "Stop met het maken van hoekpunten",
   "WorkCanvas.Options.AddItemTypePointOption.help.enable": "Door een hoekpunt toe te voegen, kunt u een vorm nauwkeuriger bewerken",
@@ -64925,6 +66231,7 @@ const nl = {
   "menu.menuLeft.adminReporting": "Rapportage",
   "menu.menuLeft.adminRoomTypeGroupReporting": "Ruimtetypologiegroepen",
   "menu.menuLeft.adminRoomTypeReporting": "Soort ruimtes",
+  "menu.menuLeft.adminVehicles": "Voertuigen",
   "menu.menuLeft.affectations": "Opdrachten",
   "menu.menuLeft.all": "Administratie",
   "menu.menuLeft.api": "API",
@@ -64948,6 +66255,7 @@ const nl = {
   "menu.menuLeft.personCompanies": "Aanbieders",
   "menu.menuLeft.personRelations": "Relaties",
   "menu.menuLeft.personType": "Typologieën",
+  "menu.menuLeft.personVehicles": "Voertuigen",
   "menu.menuLeft.planning": "Schema's",
   "menu.menuLeft.planningAdmin": " Schemabeheer",
   "menu.menuLeft.roomTypes": "Ruimtetypologieën",
@@ -65913,6 +67221,8 @@ const nl = {
   "models.Person.views.dq-person-duplicate.label": "Dubbele mensen",
   "models.Person.views.home.help": "Bekijk het bestand van de persoon <b>%{name}</b> met zijn/haar informatie en opdrachten",
   "models.Person.views.home.label": "Persoonsbestand",
+  "models.Person.views.person-bookings.help": "Bekijk aankomende boekingen voor persoon <b>%{name}</b>",
+  "models.Person.views.person-bookings.label": "Reserveringen binnenkort beschikbaar",
   "models.Person.views.relationship-list.help": "Maak een lijst van relaties tussen mensen",
   "models.Person.views.relationship-list.label": "Lijst met relaties",
   "models.PersonCompany.description": "Met het dienstverlenerbedrijf kunt u het personeel van de dienstverlener per bedrijf beheren.",
@@ -66008,6 +67318,10 @@ const nl = {
   "models.PersonToBuilding.plural": "bouwopdrachten",
   "models.PersonToBuilding.properties.addToPeopleCount.description": "Voeg deze toewijzing toe aan het totaal aantal personen dat aan het gebouw is toegewezen",
   "models.PersonToBuilding.properties.addToPeopleCount.label": "Verantwoord de toewijzing",
+  "models.PersonToBuilding.properties.allowParkingBookingInTheBuilding.description": "Hiermee kan de persoon een parkeerplaats in dit gebouw reserveren.",
+  "models.PersonToBuilding.properties.allowParkingBookingInTheBuilding.label": "Sta het reserveren van parkeerplaatsen in het gebouw toe.",
+  "models.PersonToBuilding.properties.allowWorkplaceBookingInTheBuilding.description": "Hiermee kan de gebruiker een werkplek in dit gebouw reserveren door een verdieping te selecteren. Deze optie hoeft niet te worden ingeschakeld als de reserveringsoptie per gebouw is ingeschakeld in geval van overbevolking in het district.",
+  "models.PersonToBuilding.properties.allowWorkplaceBookingInTheBuilding.label": "Maak het mogelijk om via de verdiepingen werkplekken in het gebouw te reserveren.",
   "models.PersonToBuilding.properties.id.label": "Gebouwtoewijzings-ID",
   "models.PersonToBuilding.singular": "Opdracht aan het gebouw",
   "models.PersonToDimensionBooking.description": "Reserveringen voor toewijzingslagen voor mensen worden opgeslagen en zijn beschikbaar met begin- en einddatums voor reserveringen",
@@ -66056,6 +67370,14 @@ const nl = {
   "models.PersonToRoomBooking.properties.startDatetime.description": "De startdatum en -tijd van de reservering",
   "models.PersonToRoomBooking.properties.startDatetime.label": "Begin van de boeking",
   "models.PersonToRoomBooking.singular": "Reservering voor het mensengedeelte",
+  "models.PersonToVehicle.description": "Hiermee kunt u een persoon koppelen aan een of meer voertuigen.",
+  "models.PersonToVehicle.determinant.defined": "voertuigtoewijzing",
+  "models.PersonToVehicle.determinant.undefined": "een voertuigtoewijzing",
+  "models.PersonToVehicle.determinants.defined": "voertuigtoewijzingen",
+  "models.PersonToVehicle.determinants.undefined": "voertuigtoewijzingen",
+  "models.PersonToVehicle.plural": "voertuigtoewijzingen",
+  "models.PersonToVehicle.properties.id.label": "Voertuigtoewijzingsidentificatie",
+  "models.PersonToVehicle.singular": "voertuigtoewijzing",
   "models.PersonToWorkplaceBooking.description": "Werkplekreserveringen van mensen worden vastgelegd en zijn beschikbaar met de begin- en einddatum van de reservering",
   "models.PersonToWorkplaceBooking.determinant.defined": "reservering op de werkplek van mensen",
   "models.PersonToWorkplaceBooking.determinant.undefined": "een reservering op de mensenwerkplek",
@@ -66332,6 +67654,48 @@ const nl = {
   "models.UserRegistrationTenantRuleToJupRole.determinants.undefined": "authenticatieregelkoppelingen aan rollen",
   "models.UserRegistrationTenantRuleToJupRole.plural": "Op rollen gebaseerde authenticatieregelassociaties",
   "models.UserRegistrationTenantRuleToJupRole.singular": "Op rollen gebaseerde associatie van authenticatieregels",
+  "models.Vehicle.description": "Met een voertuig kunt u informatie beheren die betrekking heeft op een voertuig.",
+  "models.Vehicle.determinant.defined": "het voertuig",
+  "models.Vehicle.determinant.undefined": "een voertuig",
+  "models.Vehicle.determinants.defined": "voertuigen",
+  "models.Vehicle.determinants.undefined": "voertuigen",
+  "models.Vehicle.plural": "voertuigen",
+  "models.Vehicle.properties.belongsToTheCompany.description": "Geeft aan of het voertuig eigendom is van het bedrijf.",
+  "models.Vehicle.properties.belongsToTheCompany.label": "Behoort tot het bedrijf",
+  "models.Vehicle.properties.id.label": "Voertuig-ID",
+  "models.Vehicle.properties.vehicleRegistration.description": "Het kenteken van het voertuig",
+  "models.Vehicle.properties.vehicleRegistration.label": "Registratie",
+  "models.Vehicle.properties.vehicleType.description": "Het type voertuig dat bij dit voertuig hoort.",
+  "models.Vehicle.properties.vehicleType.label": "Voertuigtype",
+  "models.Vehicle.singular": "voertuig",
+  "models.VehiclePropulsionType.description": "Een voertuigaandrijvingstype stelt ons in staat voertuigen te categoriseren op basis van hun aandrijfmethode (elektrisch, benzine, diesel, hybride, enz.).",
+  "models.VehiclePropulsionType.determinant.defined": "het type voertuigaandrijving",
+  "models.VehiclePropulsionType.determinant.undefined": "een type voertuigaandrijving",
+  "models.VehiclePropulsionType.determinants.defined": "voertuigaandrijvingstypen",
+  "models.VehiclePropulsionType.determinants.undefined": "voertuigaandrijvingstypen",
+  "models.VehiclePropulsionType.plural": "voertuigaandrijvingstypen",
+  "models.VehiclePropulsionType.properties.code.description": "De unieke code voor het type voertuigaandrijving.",
+  "models.VehiclePropulsionType.properties.code.label": "Gecodeerd",
+  "models.VehiclePropulsionType.properties.color.description": "De kleur die hoort bij het type aandrijving van het voertuig, wordt weergegeven.",
+  "models.VehiclePropulsionType.properties.color.label": "Kleur",
+  "models.VehiclePropulsionType.properties.id.label": "identificatiecode voor het type voertuigaandrijving",
+  "models.VehiclePropulsionType.properties.name.description": "De naam van het type voertuigaandrijving",
+  "models.VehiclePropulsionType.properties.name.label": "Naam",
+  "models.VehiclePropulsionType.singular": "type voertuigaandrijving",
+  "models.VehicleType.description": "Een voertuigtype maakt het mogelijk om voertuigen te categoriseren op basis van hun kenmerken.",
+  "models.VehicleType.determinant.defined": "het type voertuig",
+  "models.VehicleType.determinant.undefined": "een type voertuig",
+  "models.VehicleType.determinants.defined": "voertuigtypen",
+  "models.VehicleType.determinants.undefined": "soorten voertuigen",
+  "models.VehicleType.plural": "soorten voertuigen",
+  "models.VehicleType.properties.code.description": "De unieke voertuigtypecode",
+  "models.VehicleType.properties.code.label": "Gecodeerd",
+  "models.VehicleType.properties.color.description": "De kleur die bij het voertuigtype hoort, wordt weergegeven.",
+  "models.VehicleType.properties.color.label": "Kleur",
+  "models.VehicleType.properties.id.label": "Voertuigtype-identificatie",
+  "models.VehicleType.properties.name.description": "De naam van het voertuigtype",
+  "models.VehicleType.properties.name.label": "Naam",
+  "models.VehicleType.singular": "voertuigtype",
   "models.WorkingLocation.description": "Een werkplek definieert waar mensen werken",
   "models.WorkingLocation.determinant.defined": "de werkplek",
   "models.WorkingLocation.determinant.undefined": "een werkplek",
@@ -69834,6 +71198,9 @@ const PersonViews = {
     "home": {
       "name": "home"
     },
+    "person-bookings": {
+      "name": "person-bookings"
+    },
     "details": {
       "name": "details",
       "isDefaultView": true
@@ -69893,6 +71260,130 @@ const PersonToPersonTypeViews = {
   "dataQualities": {}
 };
 const PersonToPersonViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const VehicleTypeViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const VehiclePropulsionTypeViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const VehicleViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const PersonToVehicleViews = {
   "indexes": {
     "list": {
       "name": "list",
@@ -71889,6 +73380,10 @@ const ViewCoreSchema = {
   person: PersonViews,
   personToPersonType: PersonToPersonTypeViews,
   personToPerson: PersonToPersonViews,
+  vehicleType: VehicleTypeViews,
+  vehiclePropulsionType: VehiclePropulsionTypeViews,
+  vehicle: VehicleViews,
+  personToVehicle: PersonToVehicleViews,
   roomAffectation: RoomAffectationViews,
   workplaceType: WorkplaceTypeViews,
   workplaceUsageType: WorkplaceUsageTypeViews,

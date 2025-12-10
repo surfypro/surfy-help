@@ -1,0 +1,8 @@
+{
+  "label": "admin-vehicles",
+  "position": 5,
+  "link": {
+    "slug": "admin-vehicles",
+    "type": "generated-index"
+  }
+}

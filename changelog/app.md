@@ -1,5 +1,17 @@
 # Nouveautés
 
+<!-- ## 10 Decembre 2025 - v3.4.142
+
+- Mise en place de quatre nouvelles entités pour la gestion des véhicules et des réservations de véhicules :
+    - <OT code="vehicle"/> pour la gestion des véhicules
+    - <OT code="vehicleType"/> pour la gestion des types de véhicules 
+    - <OT code="vehiclePropulsionType"/> pour la gestion des types de propulsion de véhicules
+    - <OT code="personToVehicle"/> pour la gestion des affectations de véhicules aux personnes
+- Mise en place de deux propriétés pour la configuration des réservations :
+    - <P code="personToBuilding:allowWorkplaceBookingInTheBuilding"/>
+    - <P code="personToBuilding:allowParkingBookingInTheBuilding"/>
+ -->
+
 ## 9 Decembre 2025 - v3.4.140
 
 - Mise en place d’un nouveau rapport des affectations de quartier par bâtiment, qui fournit toutes les informations sur les affectations de quartier par bâtiment dans un fichier Excel.

@@ -150,5 +150,17 @@
   "sidebar.help-sidebar.category.current-tenant": {
     "message": "menuLeft currentTenant",
     "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.person-cars": {
+    "message": "Véhicules",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.person-vehicles": {
+    "message": "Véhicules",
+    "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.admin-vehicles": {
+    "message": "Véhicules",
+    "description": "no-description"
   }
 }

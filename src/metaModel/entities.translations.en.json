@@ -201,6 +201,22 @@
                 "label": "Person-to-person relationship",
                 "description": "A person to person relationship allows you to define the hierarchical or organizational links between people"
             },
+            "vehicleType": {
+                "label": "Vehicle type",
+                "description": "A vehicle type allows vehicles to be categorized according to their characteristics."
+            },
+            "vehiclePropulsionType": {
+                "label": "Vehicle propulsion type",
+                "description": "A vehicle propulsion type allows us to categorize vehicles according to their propulsion method (electric, gasoline, diesel, hybrid, etc.)"
+            },
+            "vehicle": {
+                "label": "Vehicle",
+                "description": "A vehicle allows you to manage information related to a vehicle"
+            },
+            "personToVehicle": {
+                "label": "Vehicle assignment",
+                "description": "Allows you to associate a person with one or more vehicles"
+            },
             "roomAffectation": {
                 "label": "Space allocation",
                 "description": "Allows you to assign a person to a single space"
@@ -250,8 +266,8 @@
                 "description": "Allows you to associate an object with a person (ergonomic seat, locker)"
             },
             "personToBuilding": {
-                "label": "Affection to the building",
-                "description": "Allows you to assign a person to a building, without additional information. The assignment can be counted, or not."
+                "label": "Building assignment",
+                "description": "Allows assigning a person to a building, without additional information. The assignment can be counted or not."
             },
             "dimensionToPerson": {
                 "label": "Assignment to Assignment Layer",
@@ -1264,6 +1280,22 @@
                     "label": "Person-to-person relationships",
                     "description": "A person to person relationship allows you to define the hierarchical or organizational links between people"
                 },
+                "vehicleCreatedBies": {
+                    "label": "Vehicles",
+                    "description": "A vehicle allows you to manage information related to a vehicle"
+                },
+                "vehicleUpdatedBies": {
+                    "label": "Vehicles",
+                    "description": "A vehicle allows you to manage information related to a vehicle"
+                },
+                "personToVehicleCreatedBies": {
+                    "label": "Vehicle assignments",
+                    "description": "Allows you to associate a person with one or more vehicles"
+                },
+                "personToVehicleUpdatedBies": {
+                    "label": "Vehicle assignments",
+                    "description": "Allows you to associate a person with one or more vehicles"
+                },
                 "roomAffectationCreatedBies": {
                     "label": "Space assignments",
                     "description": "Allows you to assign a person to a single space"
@@ -1362,11 +1394,11 @@
                 },
                 "personToBuildingCreatedBies": {
                     "label": "Building assignments",
-                    "description": "Allows you to assign a person to a building, without additional information. The assignment can be counted, or not."
+                    "description": "Allows assigning a person to a building, without additional information. The assignment can be counted or not."
                 },
                 "personToBuildingUpdatedBies": {
                     "label": "Building assignments",
-                    "description": "Allows you to assign a person to a building, without additional information. The assignment can be counted, or not."
+                    "description": "Allows assigning a person to a building, without additional information. The assignment can be counted or not."
                 },
                 "dimensionToPersonCreatedBies": {
                     "label": "Assignments to Assignment Layers",
@@ -2498,7 +2530,7 @@
                 },
                 "personToBuildings": {
                     "label": "Building assignments",
-                    "description": "Allows you to assign a person to a building, without additional information. The assignment can be counted, or not."
+                    "description": "Allows assigning a person to a building, without additional information. The assignment can be counted or not."
                 },
                 "dimensionTypeToBuildings": {
                     "label": "Types of building assignment layers",
@@ -5330,6 +5362,10 @@
                     "label": "Relations with this person",
                     "description": "Allows you to know the ascending relationship between two people, for example the hierarchical relationship"
                 },
+                "personToVehicles": {
+                    "label": "Vehicle assignments",
+                    "description": "Allows you to associate a person with one or more vehicles"
+                },
                 "roomAffectations": {
                     "label": "Space assignments",
                     "description": "Allows you to assign a person to a single space"
@@ -5344,7 +5380,7 @@
                 },
                 "personToBuildings": {
                     "label": "Building assignments",
-                    "description": "Allows you to assign a person to a building, without additional information. The assignment can be counted, or not."
+                    "description": "Allows assigning a person to a building, without additional information. The assignment can be counted or not."
                 },
                 "dimensionToPeople": {
                     "label": "Assignments to Assignment Layers",
@@ -5473,6 +5509,210 @@
                 "personTarget": {
                     "label": "Destination person",
                     "description": "These are the people entered into Surfy's database"
+                },
+                "userCompanyCreatedById": {
+                    "label": "ID of the user who created",
+                    "description": "Create by the identifier of this user in Surfy, allows you to know the history of the creation in Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Created by user",
+                    "description": "Create by this user in Surfy, allows you to know the history of the creation in Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "ID of the user who modified",
+                    "description": "Updated by the identifier of this user in Surfy, allows you to know the history of the creation in Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Updated by user",
+                    "description": "Updated by this user in Surfy, allows to know the history of the modification in Surfy"
+                },
+                "companyId": {
+                    "label": "Company ID",
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                },
+                "company": {
+                    "label": "Business",
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                }
+            },
+            "vehicleType": {
+                "id": {
+                    "label": "Vehicle type identifier",
+                    "description": null
+                },
+                "name": {
+                    "label": "Last name",
+                    "description": "The name of the vehicle type"
+                },
+                "color": {
+                    "label": "Color",
+                    "description": "The color associated with the vehicle type for display"
+                },
+                "code": {
+                    "label": "Code",
+                    "description": "The unique vehicle type code"
+                },
+                "icon": {
+                    "label": "Icon",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Creation date",
+                    "description": "Date of creation in Surfy, allows you to know the history of creation in Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date of update",
+                    "description": "Update date in Surfy, allows you to know the history of modifications"
+                },
+                "externalId": {
+                    "label": "External key",
+                    "description": "This field can be used to remember the correspondence key in another software"
+                },
+                "vehicles": {
+                    "label": "Vehicles",
+                    "description": "A vehicle allows you to manage information related to a vehicle"
+                }
+            },
+            "vehiclePropulsionType": {
+                "id": {
+                    "label": "Vehicle propulsion type identifier",
+                    "description": null
+                },
+                "name": {
+                    "label": "Last name",
+                    "description": "The name of the vehicle propulsion type"
+                },
+                "color": {
+                    "label": "Color",
+                    "description": "The color associated with the vehicle's propulsion type for display"
+                },
+                "code": {
+                    "label": "Code",
+                    "description": "The unique code for the vehicle propulsion type"
+                },
+                "icon": {
+                    "label": "Icon",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Creation date",
+                    "description": "Date of creation in Surfy, allows you to know the history of creation in Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date of update",
+                    "description": "Update date in Surfy, allows you to know the history of modifications"
+                },
+                "externalId": {
+                    "label": "External key",
+                    "description": "This field can be used to remember the correspondence key in another software"
+                },
+                "vehicles": {
+                    "label": "Vehicles",
+                    "description": "A vehicle allows you to manage information related to a vehicle"
+                }
+            },
+            "vehicle": {
+                "id": {
+                    "label": "Vehicle ID",
+                    "description": null
+                },
+                "belongsToTheCompany": {
+                    "label": "Belongs to the company",
+                    "description": "Indicates whether the vehicle belongs to the company"
+                },
+                "vehicleRegistration": {
+                    "label": "Registration",
+                    "description": "The vehicle registration number"
+                },
+                "createdAt": {
+                    "label": "Creation date",
+                    "description": "Date of creation in Surfy, allows you to know the history of creation in Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date of update",
+                    "description": "Update date in Surfy, allows you to know the history of modifications"
+                },
+                "externalId": {
+                    "label": "External key",
+                    "description": "This field can be used to remember the correspondence key in another software"
+                },
+                "vehicleTypeId": {
+                    "label": "Vehicle type identifier",
+                    "description": "A vehicle type allows vehicles to be categorized according to their characteristics."
+                },
+                "vehicleType": {
+                    "label": "Vehicle type",
+                    "description": "The type of vehicle associated with this vehicle"
+                },
+                "vehiclePropulsionTypeId": {
+                    "label": "Vehicle propulsion type identifier",
+                    "description": "A vehicle propulsion type allows us to categorize vehicles according to their propulsion method (electric, gasoline, diesel, hybrid, etc.)"
+                },
+                "vehiclePropulsionType": {
+                    "label": "Vehicle propulsion type",
+                    "description": "A vehicle propulsion type allows us to categorize vehicles according to their propulsion method (electric, gasoline, diesel, hybrid, etc.)"
+                },
+                "userCompanyCreatedById": {
+                    "label": "ID of the user who created",
+                    "description": "Create by the identifier of this user in Surfy, allows you to know the history of the creation in Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Created by user",
+                    "description": "Create by this user in Surfy, allows you to know the history of the creation in Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "ID of the user who modified",
+                    "description": "Updated by the identifier of this user in Surfy, allows you to know the history of the creation in Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Updated by user",
+                    "description": "Updated by this user in Surfy, allows to know the history of the modification in Surfy"
+                },
+                "personToVehicles": {
+                    "label": "Vehicle assignments",
+                    "description": "Allows you to associate a person with one or more vehicles"
+                },
+                "companyId": {
+                    "label": "Company ID",
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                },
+                "company": {
+                    "label": "Business",
+                    "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
+                }
+            },
+            "personToVehicle": {
+                "id": {
+                    "label": "Vehicle assignment identifier",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Creation date",
+                    "description": "Date of creation in Surfy, allows you to know the history of creation in Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date of update",
+                    "description": "Update date in Surfy, allows you to know the history of modifications"
+                },
+                "externalId": {
+                    "label": "External key",
+                    "description": "This field can be used to remember the correspondence key in another software"
+                },
+                "personId": {
+                    "label": "Surfy ID",
+                    "description": "These are the people entered into Surfy's database"
+                },
+                "person": {
+                    "label": "Person",
+                    "description": "These are the people entered into Surfy's database"
+                },
+                "vehicleId": {
+                    "label": "Vehicle ID",
+                    "description": "A vehicle allows you to manage information related to a vehicle"
+                },
+                "vehicle": {
+                    "label": "Vehicle",
+                    "description": "A vehicle allows you to manage information related to a vehicle"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -6721,8 +6961,16 @@
                     "description": null
                 },
                 "addToPeopleCount": {
-                    "label": "Count assignment",
+                    "label": "Count the assignment",
                     "description": "Add this assignment to the total number of people assigned to the building"
+                },
+                "allowWorkplaceBookingInTheBuilding": {
+                    "label": "Allow workplace booking in the building",
+                    "description": "Allows the person to book a workplace in this building"
+                },
+                "allowParkingBookingInTheBuilding": {
+                    "label": "Allow parking booking in the building",
+                    "description": "Allows the person to book a parking space in this building"
                 },
                 "createdAt": {
                     "label": "Creation date",
