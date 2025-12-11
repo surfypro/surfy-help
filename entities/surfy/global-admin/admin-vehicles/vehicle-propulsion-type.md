@@ -4,7 +4,7 @@ search_rank: 0.5
 # Type de propulsion de véhicule
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-Un type de propulsion de véhicule permet de catégoriser les véhicules selon leur mode de propulsion (électrique, essence, diesel, hybride, etc.)
+Un type de propulsion de véhicule permet de catégoriser les véhicules selon leur mode de propulsion (électrique, thérmique, hybride, huile de coude, etc.)
 
 <OH code="vehiclePropulsionType"/>
 

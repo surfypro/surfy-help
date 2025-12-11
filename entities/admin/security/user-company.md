@@ -117,20 +117,6 @@ Permet d'affecter une personne à un espace simple
 *Nom technique:* ```roomAffectationUpdatedBies```
 <PH code="userCompany:roomAffectationUpdatedBies"/>
 
-### Affectations véhicules {#person-to-vehicle-created-bies}
-
-Permet d'associer une personne à un ou plusieurs véhicules
-
-*Nom technique:* ```personToVehicleCreatedBies```
-<PH code="userCompany:personToVehicleCreatedBies"/>
-
-### Affectations véhicules {#person-to-vehicle-updated-bies}
-
-Permet d'associer une personne à un ou plusieurs véhicules
-
-*Nom technique:* ```personToVehicleUpdatedBies```
-<PH code="userCompany:personToVehicleUpdatedBies"/>
-
 ### Association rôle de contenu aux opérations d'interface pour une entreprise {#content-role-to-jup-ui-tenant-operation-created-bies}
 
 
@@ -1271,20 +1257,6 @@ Les utilisateurs de l'entreprise ont accès à la plateforme Surfy de leur entre
 
 *Nom technique:* ```userCompanyUpdatedBies```
 <PH code="userCompany:userCompanyUpdatedBies"/>
-
-### Véhicules {#vehicle-created-bies}
-
-Un véhicule permet de gérer les informations relatives à un véhicule
-
-*Nom technique:* ```vehicleCreatedBies```
-<PH code="userCompany:vehicleCreatedBies"/>
-
-### Véhicules {#vehicle-updated-bies}
-
-Un véhicule permet de gérer les informations relatives à un véhicule
-
-*Nom technique:* ```vehicleUpdatedBies```
-<PH code="userCompany:vehicleUpdatedBies"/>
 
 
 

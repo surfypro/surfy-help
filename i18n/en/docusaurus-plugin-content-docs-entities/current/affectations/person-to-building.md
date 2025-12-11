@@ -1,10 +1,10 @@
 ---
 search_rank: 0.5
 ---    
-# Building assignment
+# Affection to the building
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-Allows assigning a person to a building, without additional information. The assignment can be counted or not.
+Allows you to assign a person to a building, without additional information. The assignment can be counted, or not.
 
 <OH code="personToBuilding"/>
 
@@ -15,21 +15,7 @@ Allows assigning a person to a building, without additional information. The ass
 
 ## Basic properties {#properties-base}
     
-### Allow parking booking in the building {#allow-parking-booking-in-the-building}
-
-Allows the person to book a parking space in this building
-
-*Technical name:* ```allowParkingBookingInTheBuilding```
-<PH code="personToBuilding:allowParkingBookingInTheBuilding"/>
-
-### Allow workplace booking in the building {#allow-workplace-booking-in-the-building}
-
-Allows the person to book a workplace in this building
-
-*Technical name:* ```allowWorkplaceBookingInTheBuilding```
-<PH code="personToBuilding:allowWorkplaceBookingInTheBuilding"/>
-
-### Count the assignment {#add-to-people-count}
+### Count assignment {#add-to-people-count}
 
 Add this assignment to the total number of people assigned to the building
 

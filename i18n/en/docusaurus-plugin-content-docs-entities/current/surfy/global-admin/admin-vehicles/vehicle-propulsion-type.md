@@ -4,7 +4,7 @@ search_rank: 0.5
 # Vehicle propulsion type
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-A vehicle propulsion type allows us to categorize vehicles according to their propulsion method (electric, gasoline, diesel, hybrid, etc.)
+A vehicle propulsion type allows us to categorize vehicles according to their propulsion method (electric, thermal, hybrid, manual, etc.)
 
 <OH code="vehiclePropulsionType"/>
 

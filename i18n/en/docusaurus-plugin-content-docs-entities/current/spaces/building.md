@@ -370,7 +370,7 @@ An organization-building association allows you to define the organizations resp
 
 ### Building assignments {#person-to-buildings}
 
-Allows assigning a person to a building, without additional information. The assignment can be counted or not.
+Allows you to assign a person to a building, without additional information. The assignment can be counted, or not.
 
 *Technical name:* ```personToBuildings```
 <PH code="building:personToBuildings"/>

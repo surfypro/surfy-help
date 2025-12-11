@@ -4,7 +4,7 @@ search_rank: 0.5
 # Vehicle type
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-A vehicle type allows vehicles to be categorized according to their characteristics.
+A vehicle type allows us to categorize vehicles such as cars, motorcycles, bicycles...
 
 <OH code="vehicleType"/>
 

@@ -35,7 +35,7 @@ The vehicle registration number
 
 ### Vehicle propulsion type {#vehicle-propulsion-type}
 
-A vehicle propulsion type allows us to categorize vehicles according to their propulsion method (electric, gasoline, diesel, hybrid, etc.)
+A vehicle propulsion type allows us to categorize vehicles according to their propulsion method (electric, thermal, hybrid, manual, etc.)
 
 *Technical name:* ```vehiclePropulsionType```
 <PH code="vehicle:vehiclePropulsionType"/>

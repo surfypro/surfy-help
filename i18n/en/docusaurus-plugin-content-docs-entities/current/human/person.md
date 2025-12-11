@@ -216,7 +216,7 @@ Allows you to assign a person to a district, territory or village
 
 ### Building assignments {#person-to-buildings}
 
-Allows assigning a person to a building, without additional information. The assignment can be counted or not.
+Allows you to assign a person to a building, without additional information. The assignment can be counted, or not.
 
 *Technical name:* ```personToBuildings```
 <PH code="person:personToBuildings"/>
@@ -283,13 +283,6 @@ Allows you to assign a person to a single space
 
 *Technical name:* ```roomAffectations```
 <PH code="person:roomAffectations"/>
-
-### Vehicle assignments {#person-to-vehicles}
-
-Allows you to associate a person with one or more vehicles
-
-*Technical name:* ```personToVehicles```
-<PH code="person:personToVehicles"/>
 
 ### Workstation assignments {#workplace-affectations}
 

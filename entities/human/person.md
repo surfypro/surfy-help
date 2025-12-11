@@ -235,13 +235,6 @@ Permet d'affecter une personne à un espace simple
 *Nom technique:* ```roomAffectations```
 <PH code="person:roomAffectations"/>
 
-### Affectations véhicules {#person-to-vehicles}
-
-Permet d'associer une personne à un ou plusieurs véhicules
-
-*Nom technique:* ```personToVehicles```
-<PH code="person:personToVehicles"/>
-
 ### Associations d'objet à personne {#item-to-people}
 
 Permet d'associer un objet à une personne (siège ergonomique, casier)

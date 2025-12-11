@@ -35,7 +35,7 @@ Le numéro d'immatriculation du véhicule
 
 ### Type de propulsion de véhicule {#vehicle-propulsion-type}
 
-Un type de propulsion de véhicule permet de catégoriser les véhicules selon leur mode de propulsion (électrique, essence, diesel, hybride, etc.)
+Un type de propulsion de véhicule permet de catégoriser les véhicules selon leur mode de propulsion (électrique, thérmique, hybride, huile de coude, etc.)
 
 *Nom technique:* ```vehiclePropulsionType```
 <PH code="vehicle:vehiclePropulsionType"/>

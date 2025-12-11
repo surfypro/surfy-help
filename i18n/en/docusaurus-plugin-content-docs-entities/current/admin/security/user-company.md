@@ -350,14 +350,14 @@ An organization-building association allows you to define the organizations resp
 
 ### Building assignments {#person-to-building-created-bies}
 
-Allows assigning a person to a building, without additional information. The assignment can be counted or not.
+Allows you to assign a person to a building, without additional information. The assignment can be counted, or not.
 
 *Technical name:* ```personToBuildingCreatedBies```
 <PH code="userCompany:personToBuildingCreatedBies"/>
 
 ### Building assignments {#person-to-building-updated-bies}
 
-Allows assigning a person to a building, without additional information. The assignment can be counted or not.
+Allows you to assign a person to a building, without additional information. The assignment can be counted, or not.
 
 *Technical name:* ```personToBuildingUpdatedBies```
 <PH code="userCompany:personToBuildingUpdatedBies"/>
@@ -1243,34 +1243,6 @@ The workstation usage type allows workstations to be categorized according to th
 
 *Technical name:* ```workplaceTypeUpdatedBies```
 <PH code="userCompany:workplaceTypeUpdatedBies"/>
-
-### Vehicle assignments {#person-to-vehicle-created-bies}
-
-Allows you to associate a person with one or more vehicles
-
-*Technical name:* ```personToVehicleCreatedBies```
-<PH code="userCompany:personToVehicleCreatedBies"/>
-
-### Vehicle assignments {#person-to-vehicle-updated-bies}
-
-Allows you to associate a person with one or more vehicles
-
-*Technical name:* ```personToVehicleUpdatedBies```
-<PH code="userCompany:personToVehicleUpdatedBies"/>
-
-### Vehicles {#vehicle-created-bies}
-
-A vehicle allows you to manage information related to a vehicle
-
-*Technical name:* ```vehicleCreatedBies```
-<PH code="userCompany:vehicleCreatedBies"/>
-
-### Vehicles {#vehicle-updated-bies}
-
-A vehicle allows you to manage information related to a vehicle
-
-*Technical name:* ```vehicleUpdatedBies```
-<PH code="userCompany:vehicleUpdatedBies"/>
 
 ### Workstation assignments {#workplace-affectation-created-bies}
 

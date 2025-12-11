@@ -201,22 +201,6 @@
                 "label": "Relation personne à personne",
                 "description": "Une relation personne à personne permet de définir les liens hiérarchiques ou organisationnels entre les personnes"
             },
-            "vehicleType": {
-                "label": "Type de véhicule",
-                "description": "Un type de véhicule permet de catégoriser les véhicules selon leurs caractéristiques"
-            },
-            "vehiclePropulsionType": {
-                "label": "Type de propulsion de véhicule",
-                "description": "Un type de propulsion de véhicule permet de catégoriser les véhicules selon leur mode de propulsion (électrique, essence, diesel, hybride, etc.)"
-            },
-            "vehicle": {
-                "label": "Véhicule",
-                "description": "Un véhicule permet de gérer les informations relatives à un véhicule"
-            },
-            "personToVehicle": {
-                "label": "Affectation véhicule",
-                "description": "Permet d'associer une personne à un ou plusieurs véhicules"
-            },
             "roomAffectation": {
                 "label": "Affectation d'espace",
                 "description": "Permet d'affecter une personne à un espace simple"
@@ -1279,22 +1263,6 @@
                 "personToPersonUpdatedBies": {
                     "label": "Relations personne à personne",
                     "description": "Une relation personne à personne permet de définir les liens hiérarchiques ou organisationnels entre les personnes"
-                },
-                "vehicleCreatedBies": {
-                    "label": "Véhicules",
-                    "description": "Un véhicule permet de gérer les informations relatives à un véhicule"
-                },
-                "vehicleUpdatedBies": {
-                    "label": "Véhicules",
-                    "description": "Un véhicule permet de gérer les informations relatives à un véhicule"
-                },
-                "personToVehicleCreatedBies": {
-                    "label": "Affectations véhicules",
-                    "description": "Permet d'associer une personne à un ou plusieurs véhicules"
-                },
-                "personToVehicleUpdatedBies": {
-                    "label": "Affectations véhicules",
-                    "description": "Permet d'associer une personne à un ou plusieurs véhicules"
                 },
                 "roomAffectationCreatedBies": {
                     "label": "Affectations d'espace",
@@ -5362,10 +5330,6 @@
                     "label": "Relations vers cette personne",
                     "description": "Permet de connaitre la relation ascendante entre deux personnes, par exemple la relation hiérarchique"
                 },
-                "personToVehicles": {
-                    "label": "Affectations véhicules",
-                    "description": "Permet d'associer une personne à un ou plusieurs véhicules"
-                },
                 "roomAffectations": {
                     "label": "Affectations d'espace",
                     "description": "Permet d'affecter une personne à un espace simple"
@@ -5509,210 +5473,6 @@
                 "personTarget": {
                     "label": "Personne destination",
                     "description": "Ce sont les personnes entrées dans la base de données de Surfy"
-                },
-                "userCompanyCreatedById": {
-                    "label": "Identifiant de l'utilisateur qui a créé",
-                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
-                },
-                "userCompanyCreatedBy": {
-                    "label": "Créé par l'utilisateur",
-                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
-                },
-                "userCompanyUpdatedById": {
-                    "label": "Identifiant de l'utilisateur qui a modifié",
-                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
-                },
-                "userCompanyUpdatedBy": {
-                    "label": "Mis à jour par l'utilisateur",
-                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
-                },
-                "companyId": {
-                    "label": "Identifiant de l'entreprise",
-                    "description": "Une entreprise représente une organisation ou une société qui utilise la plateforme Surfy pour gérer ses espaces de travail et ses ressources"
-                },
-                "company": {
-                    "label": "Entreprise",
-                    "description": "Une entreprise représente une organisation ou une société qui utilise la plateforme Surfy pour gérer ses espaces de travail et ses ressources"
-                }
-            },
-            "vehicleType": {
-                "id": {
-                    "label": "Identifiant du type de véhicule",
-                    "description": null
-                },
-                "name": {
-                    "label": "Nom",
-                    "description": "Le nom du type de véhicule"
-                },
-                "color": {
-                    "label": "Couleur",
-                    "description": "La couleur associée au type de véhicule pour l'affichage"
-                },
-                "code": {
-                    "label": "Code",
-                    "description": "Le code unique du type de véhicule"
-                },
-                "icon": {
-                    "label": "Icon",
-                    "description": null
-                },
-                "createdAt": {
-                    "label": "Date de création",
-                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
-                },
-                "updatedAt": {
-                    "label": "Date de mise à jour",
-                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
-                },
-                "externalId": {
-                    "label": "Clé externe",
-                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
-                },
-                "vehicles": {
-                    "label": "Véhicules",
-                    "description": "Un véhicule permet de gérer les informations relatives à un véhicule"
-                }
-            },
-            "vehiclePropulsionType": {
-                "id": {
-                    "label": "Identifiant du type de propulsion de véhicule",
-                    "description": null
-                },
-                "name": {
-                    "label": "Nom",
-                    "description": "Le nom du type de propulsion de véhicule"
-                },
-                "color": {
-                    "label": "Couleur",
-                    "description": "La couleur associée au type de propulsion de véhicule pour l'affichage"
-                },
-                "code": {
-                    "label": "Code",
-                    "description": "Le code unique du type de propulsion de véhicule"
-                },
-                "icon": {
-                    "label": "Icon",
-                    "description": null
-                },
-                "createdAt": {
-                    "label": "Date de création",
-                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
-                },
-                "updatedAt": {
-                    "label": "Date de mise à jour",
-                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
-                },
-                "externalId": {
-                    "label": "Clé externe",
-                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
-                },
-                "vehicles": {
-                    "label": "Véhicules",
-                    "description": "Un véhicule permet de gérer les informations relatives à un véhicule"
-                }
-            },
-            "vehicle": {
-                "id": {
-                    "label": "Identifiant du véhicule",
-                    "description": null
-                },
-                "belongsToTheCompany": {
-                    "label": "Appartient à l'entreprise",
-                    "description": "Indique si le véhicule appartient à l'entreprise"
-                },
-                "vehicleRegistration": {
-                    "label": "Immatriculation",
-                    "description": "Le numéro d'immatriculation du véhicule"
-                },
-                "createdAt": {
-                    "label": "Date de création",
-                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
-                },
-                "updatedAt": {
-                    "label": "Date de mise à jour",
-                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
-                },
-                "externalId": {
-                    "label": "Clé externe",
-                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
-                },
-                "vehicleTypeId": {
-                    "label": "Identifiant du type de véhicule",
-                    "description": "Un type de véhicule permet de catégoriser les véhicules selon leurs caractéristiques"
-                },
-                "vehicleType": {
-                    "label": "Type de véhicule",
-                    "description": "Le type de véhicule associé à ce véhicule"
-                },
-                "vehiclePropulsionTypeId": {
-                    "label": "Identifiant du type de propulsion de véhicule",
-                    "description": "Un type de propulsion de véhicule permet de catégoriser les véhicules selon leur mode de propulsion (électrique, essence, diesel, hybride, etc.)"
-                },
-                "vehiclePropulsionType": {
-                    "label": "Type de propulsion de véhicule",
-                    "description": "Un type de propulsion de véhicule permet de catégoriser les véhicules selon leur mode de propulsion (électrique, essence, diesel, hybride, etc.)"
-                },
-                "userCompanyCreatedById": {
-                    "label": "Identifiant de l'utilisateur qui a créé",
-                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
-                },
-                "userCompanyCreatedBy": {
-                    "label": "Créé par l'utilisateur",
-                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
-                },
-                "userCompanyUpdatedById": {
-                    "label": "Identifiant de l'utilisateur qui a modifié",
-                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
-                },
-                "userCompanyUpdatedBy": {
-                    "label": "Mis à jour par l'utilisateur",
-                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
-                },
-                "personToVehicles": {
-                    "label": "Affectations véhicules",
-                    "description": "Permet d'associer une personne à un ou plusieurs véhicules"
-                },
-                "companyId": {
-                    "label": "Identifiant de l'entreprise",
-                    "description": "Une entreprise représente une organisation ou une société qui utilise la plateforme Surfy pour gérer ses espaces de travail et ses ressources"
-                },
-                "company": {
-                    "label": "Entreprise",
-                    "description": "Une entreprise représente une organisation ou une société qui utilise la plateforme Surfy pour gérer ses espaces de travail et ses ressources"
-                }
-            },
-            "personToVehicle": {
-                "id": {
-                    "label": "Identifiant de l'affectation véhicule",
-                    "description": null
-                },
-                "createdAt": {
-                    "label": "Date de création",
-                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
-                },
-                "updatedAt": {
-                    "label": "Date de mise à jour",
-                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
-                },
-                "externalId": {
-                    "label": "Clé externe",
-                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
-                },
-                "personId": {
-                    "label": "Identifiant Surfy",
-                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
-                },
-                "person": {
-                    "label": "Personne",
-                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
-                },
-                "vehicleId": {
-                    "label": "Identifiant du véhicule",
-                    "description": "Un véhicule permet de gérer les informations relatives à un véhicule"
-                },
-                "vehicle": {
-                    "label": "Véhicule",
-                    "description": "Un véhicule permet de gérer les informations relatives à un véhicule"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -6963,14 +6723,6 @@
                 "addToPeopleCount": {
                     "label": "Comptabiliser l'affectation",
                     "description": "Ajouter cette affectation au nombre total des personnes affectées au bâtiment"
-                },
-                "allowWorkplaceBookingInTheBuilding": {
-                    "label": "Autoriser la réservation de poste dans le bâtiment",
-                    "description": "Permet à la personne de réserver un poste de travail dans ce bâtiment"
-                },
-                "allowParkingBookingInTheBuilding": {
-                    "label": "Autoriser la réservation de parking dans le bâtiment",
-                    "description": "Permet à la personne de réserver une place de parking dans ce bâtiment"
                 },
                 "createdAt": {
                     "label": "Date de création",
