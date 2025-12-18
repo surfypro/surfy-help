@@ -4,7 +4,7 @@
 
 - Mise en place de quatre nouvelles entités pour la gestion des véhicules et des réservations de véhicules :
     - <OT code="vehicle"/> pour la gestion des véhicules
-    - <OT code="vehicleType"/> pour la gestion des types de véhicules 
+    - <OT code="vehicleType"/> pour la gestion des types de véhicules.
     - <OT code="vehiclePropulsionType"/> pour la gestion des types de propulsion de véhicules
     - <OT code="personToVehicle"/> pour la gestion des affectations de véhicules aux personnes
 - Mise en place de deux propriétés pour la configuration des réservations :
