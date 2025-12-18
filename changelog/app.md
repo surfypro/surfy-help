@@ -10,6 +10,11 @@
 - Mise en place de deux propriétés pour la configuration des réservations :
     - <P code="personToBuilding:allowWorkplaceBookingInTheBuilding"/>
     - <P code="personToBuilding:allowParkingBookingInTheBuilding"/>
+- Dans les options d'affichage des espaces dans le plan, il est maintenant possible de choisir l'icone du type d'espace à afficher sur le plan.
+- Dans l'éditeur de type de poste de travail
+    - Il est maintenant possible de définir l'emplacement Z de la position du type d'objet dans le type de poste de travail
+    - Il y a une icône qui permet de prévisualiser la forme 3D du type de poste de travail directement depuis les options de l'éditeur
+
  -->
 
 ## 9 Decembre 2025 - v3.4.140

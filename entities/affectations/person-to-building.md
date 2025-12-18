@@ -15,6 +15,20 @@ Permet d'attribuer une personne à un bâtiment, sans information supplémentair
 
 ## Propriétés de base {#properties-base}
     
+### Autoriser la réservation de parking dans le bâtiment {#allow-parking-booking-in-the-building}
+
+Permet à la personne de réserver une place de parking dans ce bâtiment
+
+*Nom technique:* ```allowParkingBookingInTheBuilding```
+<PH code="personToBuilding:allowParkingBookingInTheBuilding"/>
+
+### Autoriser la réservation de poste de travail dans le bâtiment via les étages {#allow-workplace-booking-in-the-building}
+
+Permet à la personne de réserver un poste de travail dans ce bâtiment en choisissant un étage. Cette option n'a pas besoin d'être activée si l'option de réservation par bâtiment est activée en cas de surcharge des quartiers.
+
+*Nom technique:* ```allowWorkplaceBookingInTheBuilding```
+<PH code="personToBuilding:allowWorkplaceBookingInTheBuilding"/>
+
 ### Comptabiliser l'affectation {#add-to-people-count}
 
 Ajouter cette affectation au nombre total des personnes affectées au bâtiment
