@@ -74,11 +74,53 @@ Le système associe automatiquement les véhicules aux types de places de parkin
    - Correspond à : **PARKING-PRM**
    - Accessible selon les besoins spécifiques de l'utilisateur
 
+### Options avancées de correspondance
+
+Chaque correspondance véhicule-parking peut être configurée avec deux options avancées :
+
+#### 1. Types de créneaux horaires autorisés (`allowedDaySlotTypes`)
+
+Cette option contrôle quels créneaux horaires pendant la journée un type de véhicule peut réserver des places de parking :
+
+- **`am`** : Créneau matin (généralement 8h00 - 13h30)
+- **`pm`** : Créneau après-midi (généralement 14h00 - 19h00)
+- **`all`** : Créneau journée complète (généralement 8h00 - 19h00)
+
+**Fonctionnement :**
+- Lorsqu'un lieu de travail de l'utilisateur a un type de créneau horaire spécifique (par exemple, "journée complète"), le système vérifie si son type de véhicule est autorisé à réserver un parking pendant ce créneau
+- Si les créneaux horaires autorisés du véhicule n'incluent pas le créneau du lieu de travail de l'utilisateur, le système :
+  - Affiche un message indiquant quels créneaux horaires sont disponibles pour la réservation
+  - Empêche la réservation si aucun créneau compatible n'existe
+  - Affiche un avertissement si seulement certains types de parking sont compatibles
+
+**Exemple :**
+- Les voitures électriques peuvent être configurées pour n'autoriser la réservation que pendant les créneaux `am` ou `pm` (pas `all`)
+- Si un utilisateur avec une voiture électrique a un lieu de travail "journée complète", il verra un message comme : "Vous pouvez réserver un parking uniquement le matin ou l'après-midi"
+- Les voitures standard peuvent autoriser tous les types de créneaux : `['am', 'pm', 'all']`
+
+#### 2. Réservation unique par jour (`singleBookingPerDay`)
+
+Cette option limite un type de véhicule à une seule réservation de parking par jour :
+
+- **`true`** : L'utilisateur ne peut réserver qu'une seule place de parking par jour, quel que soit le créneau horaire
+- **`false`** : L'utilisateur peut réserver plusieurs places de parking par jour (par exemple, une le matin, une l'après-midi)
+
+**Fonctionnement :**
+- Lorsque `singleBookingPerDay` est `true` pour un type de véhicule, le système vérifie si l'utilisateur a déjà une réservation de parking pour ce jour
+- Si une réservation existe, le système empêche la création d'une autre réservation et affiche un message comme : "Vous avez déjà une réservation de parking pour ce jour. Avec votre type de véhicule, vous ne pouvez réserver qu'une seule place de parking par jour."
+- La vérification prend en compte les réservations sur tous les créneaux horaires (matin, après-midi et journée complète) pour la même date
+- Ceci est utile pour les types de véhicules qui nécessitent des places de parking spéciales (comme les voitures électriques avec bornes de recharge) où la disponibilité est limitée
+
+**Exemple :**
+- Les voitures électriques peuvent avoir `singleBookingPerDay: true` pour assurer une distribution équitable des bornes de recharge
+- Les voitures standard peuvent avoir `singleBookingPerDay: false` pour autoriser plusieurs réservations par jour sur des tranches horaires différentes
+
 ### Comportement du système
 
 - Si un utilisateur possède plusieurs véhicules, le système affiche toutes les places compatibles avec au moins un de ses véhicules
 - Si un utilisateur n'a aucun véhicule enregistré, il ne peut pas réserver de place de parking
 - Le système filtre automatiquement les places disponibles en fonction des véhicules de l'utilisateur
+- Le système applique les restrictions de créneaux horaires et de réservation unique par jour en fonction de la configuration du type de véhicule
 
 ## Processus de réservation
 
@@ -169,9 +211,51 @@ L'utilisateur pourra alors voir et réserver des places de parking dans ce bâti
 ### Note importante
 Cette configuration doit être effectuée pour chaque bâtiment où l'utilisateur doit pouvoir réserver des places de parking. Si un utilisateur travaille dans plusieurs bâtiments, l'option doit être activée séparément pour chaque bâtiment.
 
+## Exemples de configuration
+
+### Exemple 1 : Voiture électrique avec restrictions
+
+```typescript
+{
+    vehicleTypeCode: 'CAR',
+    vehiclePropulsionTypeCode: 'ELECTRIC',
+    parkingRoomTypeCodes: [{
+        code: 'PARKING-ELECTRIC-CAR',
+        allowedDaySlotTypes: ['am', 'pm'],  // Seulement matin ou après-midi
+        singleBookingPerDay: true            // Une seule réservation par jour
+    }]
+}
+```
+
+**Comportement :**
+- Les voitures électriques ne peuvent réserver que pendant les créneaux matin ou après-midi (pas journée complète)
+- Les utilisateurs avec des voitures électriques ne peuvent faire qu'une seule réservation de parking par jour
+- S'ils tentent de réserver un deuxième créneau horaire le même jour, ils verront un message d'erreur
+
+### Exemple 2 : Voiture standard avec flexibilité complète
+
+```typescript
+{
+    vehicleTypeCode: 'CAR',
+    vehiclePropulsionTypeCode: '*',  // Tout autre type de propulsion
+    parkingRoomTypeCodes: [{
+        code: 'PARKING-CAR',
+        allowedDaySlotTypes: ['am', 'pm', 'all'],  // Tous les créneaux autorisés
+        singleBookingPerDay: false                  // Plusieurs réservations par jour autorisées
+    }]
+}
+```
+
+**Comportement :**
+- Les voitures standard peuvent réserver pendant n'importe quel créneau horaire (matin, après-midi ou journée complète)
+- Les utilisateurs avec des voitures standard peuvent faire plusieurs réservations de parking par jour
+- Ils peuvent réserver une place le matin et une autre l'après-midi si nécessaire
+
 ## Notes importantes
 
 - Les places de parking sont réservées pour une période spécifique (généralement une journée)
 - Le système vérifie automatiquement la compatibilité entre les véhicules et les types de places
+- Le système applique les restrictions de créneaux horaires et les règles de réservation unique par jour en fonction de la configuration du type de véhicule
 - Les réservations peuvent être consultées dans la section "Mes réservations"
 - Les administrateurs peuvent configurer les types de véhicules et de places selon les besoins de l'entreprise
+- Les options avancées de correspondance (`allowedDaySlotTypes` et `singleBookingPerDay`) sont configurées dans le code du système et nécessitent un accès développeur pour être modifiées

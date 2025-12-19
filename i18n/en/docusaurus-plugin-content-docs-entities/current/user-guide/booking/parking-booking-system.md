@@ -74,11 +74,53 @@ The system automatically associates vehicles with appropriate parking space type
    - Maps to: **PARKING-PRM**
    - Accessible based on the user's specific needs
 
+### Advanced Mapping Options
+
+Each vehicle-to-parking mapping can be configured with two advanced options:
+
+#### 1. Allowed Day Slot Types (`allowedDaySlotTypes`)
+
+This option controls which time slots during the day a vehicle type can book parking spaces:
+
+- **`am`**: Morning slot (typically 8:00 AM - 1:30 PM)
+- **`pm`**: Afternoon slot (typically 2:00 PM - 7:00 PM)
+- **`all`**: Full day slot (typically 8:00 AM - 7:00 PM)
+
+**How it works:**
+- When a user's working location has a specific day slot type (e.g., "all day"), the system checks if their vehicle type is allowed to book parking during that slot
+- If the vehicle's allowed day slots don't include the user's working location slot, the system will:
+  - Display a message indicating which day slots are available for booking
+  - Prevent booking if no compatible slots exist
+  - Show a warning if only some parking types are compatible
+
+**Example:**
+- Electric cars might be configured to only allow booking during `am` or `pm` slots (not `all`)
+- If a user with an electric car has an "all day" working location, they'll see a message like: "You can only book parking in the morning or afternoon"
+- Standard cars might allow all slot types: `['am', 'pm', 'all']`
+
+#### 2. Single Booking Per Day (`singleBookingPerDay`)
+
+This option restricts a vehicle type to only one parking booking per day:
+
+- **`true`**: The user can only book one parking space per day, regardless of time slot
+- **`false`**: The user can book multiple parking spaces per day (e.g., one in the morning, one in the afternoon)
+
+**How it works:**
+- When `singleBookingPerDay` is `true` for a vehicle type, the system checks if the user already has a parking booking for that day
+- If a booking exists, the system prevents creating another booking and displays a message like: "You already have a parking booking for this day. With your vehicle type, you can only book one parking space per day."
+- The check considers bookings across all day slots (morning, afternoon, and full day) for the same date
+- This is useful for vehicle types that require special parking spaces (like electric cars with charging stations) where availability is limited
+
+**Example:**
+- Electric cars might have `singleBookingPerDay: true` to ensure fair distribution of charging stations
+- Standard cars might have `singleBookingPerDay: false` to allow multiple bookings per day
+
 ### System Behavior
 
 - If a user owns multiple vehicles, the system displays all spaces compatible with at least one of their vehicles
 - If a user has no registered vehicles, they cannot reserve parking spaces
 - The system automatically filters available spaces based on the user's vehicles
+- The system enforces day slot compatibility and single booking per day restrictions based on the vehicle type configuration
 
 ## Booking Process
 
@@ -169,9 +211,51 @@ The user will then be able to see and reserve parking spaces in this building. T
 ### Important Note
 This configuration must be performed for each building where the user should be able to reserve parking spaces. If a user works in multiple buildings, the option must be enabled separately for each building.
 
+## Configuration Examples
+
+### Example 1: Electric Car with Restrictions
+
+```typescript
+{
+    vehicleTypeCode: 'CAR',
+    vehiclePropulsionTypeCode: 'ELECTRIC',
+    parkingRoomTypeCodes: [{
+        code: 'PARKING-ELECTRIC-CAR',
+        allowedDaySlotTypes: ['am', 'pm'],  // Only morning or afternoon
+        singleBookingPerDay: true            // Only one booking per day
+    }]
+}
+```
+
+**Behavior:**
+- Electric cars can only book during morning or afternoon slots (not full day)
+- Users with electric cars can only make one parking booking per day
+- If they try to book a second time slot on the same day, they'll see an error message
+
+### Example 2: Standard Car with Full Flexibility
+
+```typescript
+{
+    vehicleTypeCode: 'CAR',
+    vehiclePropulsionTypeCode: '*',  // Any other propulsion type
+    parkingRoomTypeCodes: [{
+        code: 'PARKING-CAR',
+        allowedDaySlotTypes: ['am', 'pm', 'all'],  // All time slots allowed
+        singleBookingPerDay: false                  // Multiple bookings per day allowed
+    }]
+}
+```
+
+**Behavior:**
+- Standard cars can book during any time slot (morning, afternoon, or full day)
+- Users with standard cars can make multiple parking bookings per day
+- They can book one space in the morning and another in the afternoon if needed
+
 ## Important Notes
 
 - Parking spaces are reserved for a specific period (generally one day)
 - The system automatically checks compatibility between vehicles and space types
+- The system enforces day slot restrictions and single booking per day rules based on vehicle type configuration
 - Reservations can be viewed in the "My Reservations" section
 - Administrators can configure vehicle and space types according to the company's needs
+- Advanced mapping options (`allowedDaySlotTypes` and `singleBookingPerDay`) are configured in the system code and require developer access to modify
