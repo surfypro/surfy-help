@@ -1,6 +1,6 @@
 # Nouveautés
 
-## 10 Decembre 2025 - v3.4.142
+<!-- ## 10 Decembre 2025 - v3.4.142
 
 - Mise en place de quatre nouvelles entités pour la gestion des véhicules et des réservations de véhicules :
     - <OT code="vehicle"/> pour la gestion des véhicules
@@ -16,6 +16,7 @@
     - Il est maintenant possible de définir l'emplacement Z de la position du type d'objet dans le type de poste de travail
     - Il y a une icône qui permet de prévisualiser la forme 3D du type de poste de travail directement depuis les options de l'éditeur
 
+ -->
 
 ## 9 Decembre 2025 - v3.4.140
 
