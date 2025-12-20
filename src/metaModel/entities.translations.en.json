@@ -640,6 +640,10 @@
                     "label": "Workstation booking confirmation window",
                     "description": "Time range during which users can confirm their workstation reservations. Format: HH:MM-HH:MM (e.g., 06:00-10:30). Leave this field blank to disable workstation reservation confirmation."
                 },
+                "trackUserActivity": {
+                    "label": "Allow Surfy to track user activity to improve the user experience",
+                    "description": "Allow Surfy to track user activity to improve the user experience"
+                },
                 "createdAt": {
                     "label": "Creation date",
                     "description": "Date of creation in Surfy, allows you to know the history of creation in Surfy"

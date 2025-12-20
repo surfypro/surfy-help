@@ -640,6 +640,10 @@
                     "label": "Plage de confirmation de réservation de poste de travail",
                     "description": "Plage horaire pendant laquelle les utilisateurs peuvent confirmer leurs réservations de postes de travail. Format: HH:MM-HH:MM (ex: 06:00-10:30). Ne rien mettre dans ce champ pour ne pas activer la confirmation de réservation de poste de travail"
                 },
+                "trackUserActivity": {
+                    "label": "Autoriser Surfy à suivre l'activité des utilisateurs pour améliorer l'expérience utilisateur",
+                    "description": "Autoriser Surfy à suivre l'activité des utilisateurs pour améliorer l'expérience utilisateur"
+                },
                 "createdAt": {
                     "label": "Date de création",
                     "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
