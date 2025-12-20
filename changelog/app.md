@@ -22,7 +22,7 @@
 
 - Mise en place d’un nouveau rapport des affectations de quartier par bâtiment, qui fournit toutes les informations sur les affectations de quartier par bâtiment dans un fichier Excel.
 - Dans <LIV code="personToWorkplaceBooking:dashboard-index" />, les rapports sont désormais proposés par bâtiment et il est possible de sélectionner plusieurs bâtiments.
-    - Un nouveau rapport « Nombre de personnes ayant réservé par bâtiment et par date » est disponible.
+    - Un nouveau rapport « Nombre de personnes ayant réservé par bâtiment et par date» est disponible.
     - Un nouveau rapport « Taux d’occupation par quartier » est disponible.
     - Les rapports comprenant des dates peuvent désormais exclure les week-ends.
 - Le nombre de postes de travail réservables est désormais aussi disponible par étage et par quartier.
