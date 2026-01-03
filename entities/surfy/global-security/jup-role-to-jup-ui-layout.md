@@ -1,10 +1,10 @@
 ---
 search_rank: 0.5
 ---    
-# Association rôle aux layouts d'interface
+# Association rôle aux visions
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-Une association rôle aux layouts d'interface permet de définir les permissions d'accès aux différentes dispositions d'interface pour un rôle
+Une association rôle aux visions permet de définir les permissions d'accès aux différentes visions pour un rôle
 
 <OH code="jupRoleToJupUiLayout"/>
 
@@ -15,9 +15,9 @@ Une association rôle aux layouts d'interface permet de définir les permissions
 
 ## Propriétés de base {#properties-base}
     
-### Peut voir l'option {#can-see}
+### Peut voir la vision {#can-see}
 
-Autorise l'option' à être vu par le rôle
+Autorise la vision à être vue par le rôle
 
 *Nom technique:* ```canSee```
 <PH code="jupRoleToJupUiLayout:canSee"/>

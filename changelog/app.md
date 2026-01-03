@@ -1,5 +1,12 @@
 # Nouveautés
 
+<!-- ## 4 Janvier 2026 - v3.4.148
+
+- La matrice des rôles regroupe désormais les types d'objets en suivant l'organisation du menu.
+- Les onglets du plan peuvent désormais être configurés pour chaque rôle. Lorsqu'aucun onglet n'est disponible, la navigation du plan via les onglets est désactivée.
+
+-->
+
 ## 20 Decembre 2025 - v3.4.145
 
 - Mise en place de quatre nouvelles entités pour la gestion des véhicules et des réservations de véhicules :

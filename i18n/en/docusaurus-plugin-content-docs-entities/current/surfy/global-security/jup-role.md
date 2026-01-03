@@ -45,6 +45,13 @@ An API user role association allows you to define access permissions to API feat
 *Technical name:* ```apiUserToJupRoles```
 <PH code="jupRole:apiUserToJupRoles"/>
 
+### Associations play a role in visions {#jup-role-to-jup-ui-layouts}
+
+A role-to-visions association allows you to define access permissions to different visions for a role.
+
+*Technical name:* ```jupRoleToJupUiLayouts```
+<PH code="jupRole:jupRoleToJupUiLayouts"/>
+
 ### Authentication rule-to-role associations {#user-registration-tenant-rule-to-jup-roles}
 
 
@@ -59,19 +66,19 @@ An enterprise user role association allows you to define feature access permissi
 *Technical name:* ```jupUserCompanyToJupRoles```
 <PH code="jupRole:jupUserCompanyToJupRoles"/>
 
-### Role associations to interface layouts {#jup-role-to-jup-ui-layouts}
-
-A role association to interface layouts allows you to define access permissions to different interface layouts for a role
-
-*Technical name:* ```jupRoleToJupUiLayouts```
-<PH code="jupRole:jupRoleToJupUiLayouts"/>
-
 ### Role associations to interface operations {#jup-role-to-jup-ui-operations}
 
 A role association to interface operations allows you to define access permissions to the different interface operations for a role
 
 *Technical name:* ```jupRoleToJupUiOperations```
 <PH code="jupRole:jupRoleToJupUiOperations"/>
+
+### Role associations to plan tabs {#jup-role-to-jup-ui-layout-tabs}
+
+A role association with plan tabs allows you to define access permissions to the different plan tabs for a role.
+
+*Technical name:* ```jupRoleToJupUiLayoutTabs```
+<PH code="jupRole:jupRoleToJupUiLayoutTabs"/>
 
 ### Role associations with interface options {#jup-role-to-jup-ui-options}
 

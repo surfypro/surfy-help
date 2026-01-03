@@ -438,8 +438,16 @@
                 "description": null
             },
             "jupRoleToJupUiLayout": {
-                "label": "Associating roles with interface layouts",
-                "description": "A role association to interface layouts allows you to define access permissions to different interface layouts for a role"
+                "label": "Association role to visions",
+                "description": "A role-to-visions association allows you to define access permissions to different visions for a role."
+            },
+            "jupUiLayoutTab": {
+                "label": "Map tab",
+                "description": "A plan tab defines the different tabs available in the plan viewing interface."
+            },
+            "jupRoleToJupUiLayoutTab": {
+                "label": "Role association to plan tabs",
+                "description": "A role association with plan tabs allows you to define access permissions to the different plan tabs for a role."
             },
             "itemFact": {
                 "label": "Object movement",
@@ -1811,8 +1819,8 @@
                     "description": "The building is used to group the floors"
                 },
                 "jupRoleToJupUiLayouts": {
-                    "label": "Role associations to interface layouts",
-                    "description": "A role association to interface layouts allows you to define access permissions to different interface layouts for a role"
+                    "label": "Associations play a role in visions",
+                    "description": "A role-to-visions association allows you to define access permissions to different visions for a role."
                 }
             },
             "buildingType": {
@@ -7987,8 +7995,12 @@
                     "description": null
                 },
                 "jupRoleToJupUiLayouts": {
-                    "label": "Role associations to interface layouts",
-                    "description": "A role association to interface layouts allows you to define access permissions to different interface layouts for a role"
+                    "label": "Associations play a role in visions",
+                    "description": "A role-to-visions association allows you to define access permissions to different visions for a role."
+                },
+                "jupRoleToJupUiLayoutTabs": {
+                    "label": "Role associations to plan tabs",
+                    "description": "A role association with plan tabs allows you to define access permissions to the different plan tabs for a role."
                 }
             },
             "jupUiOption": {
@@ -9319,12 +9331,12 @@
             },
             "jupRoleToJupUiLayout": {
                 "id": {
-                    "label": "Identifier of the role association to interface layouts",
+                    "label": "Role-based association identifier for visions",
                     "description": null
                 },
                 "canSee": {
-                    "label": "Can see option",
-                    "description": "Allows the option' to be seen by the role"
+                    "label": "Can see the vision",
+                    "description": "Allows the vision to be seen by the role"
                 },
                 "createdAt": {
                     "label": "Creation date",
@@ -9345,6 +9357,70 @@
                 "jupUiLayout": {
                     "label": "View of the plan",
                     "description": "An interface layout defines the arrangement and organization of elements in the user interface"
+                },
+                "jupRoleId": {
+                    "label": "Role ID",
+                    "description": "A role defines access permissions to features in the user interface"
+                },
+                "jupRole": {
+                    "label": "Role",
+                    "description": "A role defines access permissions to features in the user interface"
+                }
+            },
+            "jupUiLayoutTab": {
+                "id": {
+                    "label": "Map tab ID",
+                    "description": null
+                },
+                "name": {
+                    "label": "Tab name",
+                    "description": "The name of the tab displayed in the interface"
+                },
+                "createdAt": {
+                    "label": "Creation date",
+                    "description": "Date of creation in Surfy, allows you to know the history of creation in Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date of update",
+                    "description": "Update date in Surfy, allows you to know the history of modifications"
+                },
+                "externalId": {
+                    "label": "External key",
+                    "description": "This field can be used to remember the correspondence key in another software"
+                },
+                "jupRoleToJupUiLayoutTabs": {
+                    "label": "Role associations to plan tabs",
+                    "description": "A role association with plan tabs allows you to define access permissions to the different plan tabs for a role."
+                }
+            },
+            "jupRoleToJupUiLayoutTab": {
+                "id": {
+                    "label": "Role association identifier for plan tabs",
+                    "description": null
+                },
+                "canSee": {
+                    "label": "Can see the tab",
+                    "description": "Allows the plan tab to be seen by the role"
+                },
+                "createdAt": {
+                    "label": "Creation date",
+                    "description": "Date of creation in Surfy, allows you to know the history of creation in Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date of update",
+                    "description": "Update date in Surfy, allows you to know the history of modifications"
+                },
+                "externalId": {
+                    "label": "External key",
+                    "description": "This field can be used to remember the correspondence key in another software"
+                },
+                "jupUiLayoutTabId": {
+                    "label": "Map tab ID",
+                    "description": "A plan tab defines the different tabs available in the plan viewing interface."
+                },
+                "jupUiLayoutTab": {
+                    "label": "Map tab",
+                    "description": "A plan tab defines the different tabs available in the plan viewing interface."
                 },
                 "jupRoleId": {
                     "label": "Role ID",

@@ -438,8 +438,16 @@
                 "description": null
             },
             "jupRoleToJupUiLayout": {
-                "label": "Association rôle aux layouts d'interface",
-                "description": "Une association rôle aux layouts d'interface permet de définir les permissions d'accès aux différentes dispositions d'interface pour un rôle"
+                "label": "Association rôle aux visions",
+                "description": "Une association rôle aux visions permet de définir les permissions d'accès aux différentes visions pour un rôle"
+            },
+            "jupUiLayoutTab": {
+                "label": "Onglet de plan",
+                "description": "Un onglet de plan définit les différents onglets disponibles dans l'interface de visualisation des plans"
+            },
+            "jupRoleToJupUiLayoutTab": {
+                "label": "Association rôle aux onglets de plan",
+                "description": "Une association rôle aux onglets de plan permet de définir les permissions d'accès aux différents onglets de plan pour un rôle"
             },
             "itemFact": {
                 "label": "Mouvement d'objet",
@@ -1811,8 +1819,8 @@
                     "description": "Le bâtiment est utilisé pour regrouper les étages"
                 },
                 "jupRoleToJupUiLayouts": {
-                    "label": "Associations rôle aux layouts d'interface",
-                    "description": "Une association rôle aux layouts d'interface permet de définir les permissions d'accès aux différentes dispositions d'interface pour un rôle"
+                    "label": "Associations rôle aux visions",
+                    "description": "Une association rôle aux visions permet de définir les permissions d'accès aux différentes visions pour un rôle"
                 }
             },
             "buildingType": {
@@ -7987,8 +7995,12 @@
                     "description": null
                 },
                 "jupRoleToJupUiLayouts": {
-                    "label": "Associations rôle aux layouts d'interface",
-                    "description": "Une association rôle aux layouts d'interface permet de définir les permissions d'accès aux différentes dispositions d'interface pour un rôle"
+                    "label": "Associations rôle aux visions",
+                    "description": "Une association rôle aux visions permet de définir les permissions d'accès aux différentes visions pour un rôle"
+                },
+                "jupRoleToJupUiLayoutTabs": {
+                    "label": "Associations rôle aux onglets de plan",
+                    "description": "Une association rôle aux onglets de plan permet de définir les permissions d'accès aux différents onglets de plan pour un rôle"
                 }
             },
             "jupUiOption": {
@@ -9319,12 +9331,12 @@
             },
             "jupRoleToJupUiLayout": {
                 "id": {
-                    "label": "Identifiant de l'association rôle aux layouts d'interface",
+                    "label": "Identifiant de l'association rôle aux visions",
                     "description": null
                 },
                 "canSee": {
-                    "label": "Peut voir l'option",
-                    "description": "Autorise l'option' à être vu par le rôle"
+                    "label": "Peut voir la vision",
+                    "description": "Autorise la vision à être vue par le rôle"
                 },
                 "createdAt": {
                     "label": "Date de création",
@@ -9345,6 +9357,70 @@
                 "jupUiLayout": {
                     "label": "Vision du plan",
                     "description": "Un layout d'interface définit la disposition et l'organisation des éléments dans l'interface utilisateur"
+                },
+                "jupRoleId": {
+                    "label": "Identifiant du rôle",
+                    "description": "Un rôle définit les permissions d'accès aux fonctionnalités dans l'interface utilisateur"
+                },
+                "jupRole": {
+                    "label": "Rôle",
+                    "description": "Un rôle définit les permissions d'accès aux fonctionnalités dans l'interface utilisateur"
+                }
+            },
+            "jupUiLayoutTab": {
+                "id": {
+                    "label": "Identifiant de l'onglet de plan",
+                    "description": null
+                },
+                "name": {
+                    "label": "Nom de l'onglet",
+                    "description": "Le nom de l'onglet affiché dans l'interface"
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "jupRoleToJupUiLayoutTabs": {
+                    "label": "Associations rôle aux onglets de plan",
+                    "description": "Une association rôle aux onglets de plan permet de définir les permissions d'accès aux différents onglets de plan pour un rôle"
+                }
+            },
+            "jupRoleToJupUiLayoutTab": {
+                "id": {
+                    "label": "Identifiant de l'association rôle aux onglets de plan",
+                    "description": null
+                },
+                "canSee": {
+                    "label": "Peut voir l'onglet",
+                    "description": "Autorise l'onglet de plan à être vu par le rôle"
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "jupUiLayoutTabId": {
+                    "label": "Identifiant de l'onglet de plan",
+                    "description": "Un onglet de plan définit les différents onglets disponibles dans l'interface de visualisation des plans"
+                },
+                "jupUiLayoutTab": {
+                    "label": "Onglet de plan",
+                    "description": "Un onglet de plan définit les différents onglets disponibles dans l'interface de visualisation des plans"
                 },
                 "jupRoleId": {
                     "label": "Identifiant du rôle",

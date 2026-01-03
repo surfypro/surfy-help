@@ -28,9 +28,9 @@ Un layout d'interface définit la disposition et l'organisation des éléments d
 
 ## Entités associées (liste) {#properties-has-many}
 
-### Associations rôle aux layouts d'interface {#jup-role-to-jup-ui-layouts}
+### Associations rôle aux visions {#jup-role-to-jup-ui-layouts}
 
-Une association rôle aux layouts d'interface permet de définir les permissions d'accès aux différentes dispositions d'interface pour un rôle
+Une association rôle aux visions permet de définir les permissions d'accès aux différentes visions pour un rôle
 
 *Nom technique:* ```jupRoleToJupUiLayouts```
 <PH code="jupUiLayout:jupRoleToJupUiLayouts"/>

@@ -102,6 +102,8 @@
         "jupRoleToJupObjectType": "/entities/surfy/global-security",
         "jupUiLayout": "/entities/surfy/global-security",
         "jupRoleToJupUiLayout": "/entities/surfy/global-security",
+        "jupUiLayoutTab": "/entities/surfy/global-security",
+        "jupRoleToJupUiLayoutTab": "/entities/surfy/global-security",
         "object3dModel": "/entities/surfy/global-admin",
         "companyType": "/entities/surfy/global-admin",
         "occupancyStatus": "/entities/surfy/global-admin",
