@@ -1,12 +1,11 @@
 # Nouveautés
 
-<!-- ## 4 Janvier 2026 - v3.4.148
+## 4 Janvier 2026 - v3.4.147
 
 - La matrice des rôles regroupe désormais les types d'objets en suivant l'organisation du menu.
 - Les onglets du plan peuvent désormais être configurés pour chaque rôle. Lorsqu'aucun onglet n'est disponible, la navigation du plan via les onglets est désactivée.
 - Toutes les options du plan, à l’exception des options de navigation (zoom et recadrage), sont désormais configurables pour chaque rôle.
 
--->
 
 ## 20 Decembre 2025 - v3.4.145
 
