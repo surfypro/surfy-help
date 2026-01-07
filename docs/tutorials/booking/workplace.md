@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # La réservation dans Surfy
 
-<Youtube code="gC2BWSNqv54"/>
+<Youtube code="keGoFRhjJXY"/>
 
 ## Réserver depuis l'application Surfy
 
