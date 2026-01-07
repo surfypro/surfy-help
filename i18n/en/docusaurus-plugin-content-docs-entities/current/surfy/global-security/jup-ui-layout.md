@@ -28,19 +28,19 @@ An interface layout defines the arrangement and organization of elements in the 
 
 ## Associated entities (list) {#properties-has-many}
 
+### Associations play a role in visions {#jup-role-to-jup-ui-layouts}
+
+A role-to-visions association allows you to define access permissions to different visions for a role.
+
+*Technical name:* ```jupRoleToJupUiLayouts```
+<PH code="jupUiLayout:jupRoleToJupUiLayouts"/>
+
 ### Buildings {#buildings}
 
 The building is used to group the floors
 
 *Technical name:* ```buildings```
 <PH code="jupUiLayout:buildings"/>
-
-### Role associations to interface layouts {#jup-role-to-jup-ui-layouts}
-
-A role association to interface layouts allows you to define access permissions to different interface layouts for a role
-
-*Technical name:* ```jupRoleToJupUiLayouts```
-<PH code="jupUiLayout:jupRoleToJupUiLayouts"/>
 
 
 

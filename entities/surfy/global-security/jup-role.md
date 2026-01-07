@@ -59,12 +59,12 @@ Une association rôle à type d'objet permet de définir les permissions CRUD sp
 *Nom technique:* ```jupRoleToJupObjectTypes```
 <PH code="jupRole:jupRoleToJupObjectTypes"/>
 
-### Associations rôle aux layouts d'interface {#jup-role-to-jup-ui-layouts}
+### Associations rôle aux onglets de plan {#jup-role-to-jup-ui-layout-tabs}
 
-Une association rôle aux layouts d'interface permet de définir les permissions d'accès aux différentes dispositions d'interface pour un rôle
+Une association rôle aux onglets de plan permet de définir les permissions d'accès aux différents onglets de plan pour un rôle
 
-*Nom technique:* ```jupRoleToJupUiLayouts```
-<PH code="jupRole:jupRoleToJupUiLayouts"/>
+*Nom technique:* ```jupRoleToJupUiLayoutTabs```
+<PH code="jupRole:jupRoleToJupUiLayoutTabs"/>
 
 ### Associations rôle aux opérations d'interface {#jup-role-to-jup-ui-operations}
 
@@ -79,6 +79,13 @@ Une association rôle aux options d'interface permet de définir les permissions
 
 *Nom technique:* ```jupRoleToJupUiOptions```
 <PH code="jupRole:jupRoleToJupUiOptions"/>
+
+### Associations rôle aux visions {#jup-role-to-jup-ui-layouts}
+
+Une association rôle aux visions permet de définir les permissions d'accès aux différentes visions pour un rôle
+
+*Nom technique:* ```jupRoleToJupUiLayouts```
+<PH code="jupRole:jupRoleToJupUiLayouts"/>
 
 ### Associations rôle aux vues d'interface {#jup-role-to-jup-ui-views}
 

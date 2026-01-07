@@ -25,6 +25,13 @@ Company Name
 
 ## Basic properties {#properties-base}
     
+### Allow Surfy to track user activity to improve the user experience {#track-user-activity}
+
+Allow Surfy to track user activity to improve the user experience
+
+*Technical name:* ```trackUserActivity```
+<PH code="company:trackUserActivity"/>
+
 ### Enable booking by building when all dimensions are overloaded {#enable-building-booking-when-all-dimensions-are-crowded}
 
 Enables direct booking by building and floor when all dimensions are overloaded, providing an alternative booking option when no areas are available

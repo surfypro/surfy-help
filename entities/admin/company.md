@@ -46,6 +46,13 @@ Activer la fonctionnalité de recherche de chemin
 *Nom technique:* ```enablePathfinding```
 <PH code="company:enablePathfinding"/>
 
+### Autoriser Surfy à suivre l'activité des utilisateurs pour améliorer l'expérience utilisateur {#track-user-activity}
+
+Autoriser Surfy à suivre l'activité des utilisateurs pour améliorer l'expérience utilisateur
+
+*Nom technique:* ```trackUserActivity```
+<PH code="company:trackUserActivity"/>
+
 ### Icône {#icon-path}
 
 Le logo de l'entreprise en carré

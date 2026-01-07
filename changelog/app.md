@@ -1,6 +1,13 @@
 # Nouveautés
 
-<!-- ## 10 Decembre 2025 - v3.4.142
+## 4 Janvier 2026 - v3.4.147
+
+- La matrice des rôles regroupe désormais les types d'objets en suivant l'organisation du menu.
+- Les onglets du plan peuvent désormais être configurés pour chaque rôle. Lorsqu'aucun onglet n'est disponible, la navigation du plan via les onglets est désactivée.
+- Toutes les options du plan, à l’exception des options de navigation (zoom et recadrage), sont désormais configurables pour chaque rôle.
+
+
+## 20 Decembre 2025 - v3.4.145
 
 - Mise en place de quatre nouvelles entités pour la gestion des véhicules et des réservations de véhicules :
     - <OT code="vehicle"/> pour la gestion des véhicules
@@ -16,7 +23,7 @@
     - Il est maintenant possible de définir l'emplacement Z de la position du type d'objet dans le type de poste de travail
     - Il y a une icône qui permet de prévisualiser la forme 3D du type de poste de travail directement depuis les options de l'éditeur
 
- -->
+
 
 ## 9 Decembre 2025 - v3.4.140
 
