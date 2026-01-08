@@ -1,8 +1,8 @@
 # Nouveautés
 
-## 7 Janvier 2026 - v3.4.149
+<!-- ## 7 Janvier 2026 - v3.4.149
 
-- Les utilisateurs qui n'ont pas access a un scenario ne voient pas l'option "Inclure les scénarios dans la recherche" dans la recherche globale.
+- Les utilisateurs qui n'ont pas access a un scenario ne voient pas l'option "Inclure les scénarios dans la recherche" dans la recherche globale. -->
 
 ## 4 Janvier 2026 - v3.4.147
 
