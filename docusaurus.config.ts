@@ -20,12 +20,13 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
 
-  onBrokenMarkdownLinks: 'warn',
+  // onBrokenMarkdownLinks: 'warn',
   // Markdown configuration
-  // markdown: {
-  //   hooks: {
-  //     onBrokenMarkdownLinks: 'warn',
-  //   },
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
   // },
 
   // Internationalization configuration
