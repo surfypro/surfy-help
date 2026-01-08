@@ -1,5 +1,99 @@
 # What's New
 
+## January 4, 2026 - v3.4.147
+
+- The role matrix now groups object types following the menu organization.
+- Plan tabs can now be configured for each role. When no tab is available, plan navigation via tabs is disabled.
+- All plan options, except navigation options (zoom and cropping), are now configurable for each role.
+
+
+## December 20, 2025 - v3.4.145
+
+- Implementation of four new entities for vehicle and vehicle booking management:
+    - <OT code="vehicle"/> for vehicle management
+    - <OT code="vehicleType"/> for vehicle type management.
+    - <OT code="vehiclePropulsionType"/> for vehicle propulsion type management
+    - <OT code="personToVehicle"/> for vehicle assignments to people
+- Implementation of two properties for booking configuration:
+    - <P code="personToBuilding:allowWorkplaceBookingInTheBuilding"/>
+    - <P code="personToBuilding:allowParkingBookingInTheBuilding"/>
+- In the person card, icons now indicate whether the person can book parking or workstations in the building to which they are assigned.
+- In space display options on the plan, it is now possible to choose the space type icon to display on the plan.
+- In the workstation type editor
+    - It is now possible to define the Z location of the object type position in the workstation type
+    - There is an icon that allows previewing the 3D shape of the workstation type directly from the editor options
+
+
+
+## December 9, 2025 - v3.4.140
+
+- Implementation of a new district assignment report by building, which provides all information on district assignments by building in an Excel file.
+- In <LIV code="personToWorkplaceBooking:dashboard-index" />, reports are now offered by building and it is possible to select multiple buildings.
+    - A new report "Number of people who booked by building and by date" is available.
+    - A new report "Occupancy rate by district" is available.
+    - Reports including dates can now exclude weekends.
+- The number of bookable workstations is now also available by floor and by district.
+- A new property <P code="company:workplaceBookingConfirmationRange" /> allows defining the workstation booking confirmation period. If a period is defined in this option, on day D, the reserved workstation must be validated by the user. Otherwise, within 5 minutes after the booking period, the workstation will be automatically released.
+- Various improvements to the meeting room booking page
+
+## November 19, 2025 - v3.4.128
+
+- Under the logo at the top left, icons are now displayed on two lines: the first for end users, the second for contributors.
+- The filter on space type groups now allows coloring spaces on the plan. An option allows coloring spaces by space type or by space type group.
+- Implementation of a new entity <OT code="workplaceUsageType"/> allowing to manage different workstation usages according to company terms and visualize them with different colors on plans.
+    - Added a filter tab on the plan for workstations by workstation usage type.
+    - Possibility to display the workstation usage type on the plan in workstation display options on plan
+- The filter on space types on the plan now takes into account, without needing to reload the page, space types that are associated with spaces, even if they have just been added and associated.
+- Search filters on entity list type pages now require a precise search of at least 2 characters to search in associated entities. This improves search filter performance and allows searching users in the company users page.
+- The data quality report "Errors on space organizations" has been moved from organization reports to space data quality reports.
+- Data reloading now checks data quality reports and displays an error message if errors are detected. It is therefore no longer possible to perform data reloading without first correcting errors present in data quality reports associated with reloading. For example, errors on space organization block reloading of floor data and therefore buildings.
+- In space tooltips, depending on the chosen view, particularly organizations, rebilling and other entities with colors, the color is displayed in the tooltip, which allows the user to better associate the entity with its color on the plan.
+- The "Direction" view on the plan is now simplified and no longer displays the direction and service name in spaces on the plan and includes people assigned to workstations.
+- It is now possible to change the application language from the login page.
+- In the 3D plan, it is now possible to display space names and floor name on the plan.
+- Surfy now allows booking meeting rooms thanks to native integration with Microsoft Outlook, Microsoft Teams and Microsoft Places.
+    - Implementation of a meeting room synchronization operation with Microsoft Places.
+    - Added an option to view room bookings from the meeting rooms page <LIV code="room:meeting-rooms" /> and from the floor plan in 2D or 3D on the meeting room card.
+- Surfy now allows user synchronization from Microsoft Azure Entra ID directory, which allows automatically creating users in Surfy as soon as they arrive in the company.
+
+
+## October 15, 2025 - v3.4.122
+
+- The platforms page now has a search engine to find platforms by name.
+- Implementation of connection to Surfy respecting SAML v2.0 protocol.
+- Update of Google Maps APIs allowing to select building or campus addresses on a Google plan.
+- The badge indicating a new version is now also displayed in the user profile menu.
+- Calibration of structures on the Google Maps plan allows updating the structure location in real time according to calibration. Calibration can also be performed using the mouse, by performing translation and rotation operations.
+- In workstation booking day management, the calculation of bookable days per person takes into account only weekdays and excludes weekends.
+- In the manage scale option in plan options, there is now a "Sensitive action zone" that groups options to dissociate and delete the scale, as well as modify the distance and name of the scale.
+    - Scale deletion now requires confirmation.
+- Assignment layers on multiple floors of the same building are now bookable.
+- The administration menu now has a submenu allowing direct access to the platform company.
+- When creating or modifying a company, the name format is now enforced: it must contain only lowercase letters, numbers and hyphens.
+
+
+## October 6, 2025 - v3.4.110
+
+
+- Plan options to zoom in and out with buttons at the top of the plan now perform zoom relative to the center of the plan visible to the user.
+- All views now display space display names in addition to technical space names (merged name).
+- Assignment layers now have a property <P code="dimension:workplacesBookableOnlyViaDimension" /> allowing to make workstations bookable only via district assignment and not by floor.
+- In the <LIV code="personWorkingLocation:booking-maps" /> view or other consultation views without booking, unreserved workstations are now displayed in transparency.
+
+## September 26, 2025 - v3.4.108
+
+- Person deduplication now merges workstation bookings and work locations.
+
+## September 21, 2025 - v3.4.103
+
+- Added a company view allowing to display the list of all data quality reports.
+- Creation of a data quality report on workstations that displays passage workstations with assignments.
+- Updated FontAwesome icons to version 7.0.1.
+- It is now possible to add object types with a central void in workstation types.
+- Implementation of a company-level option allowing to activate building booking if all districts are crowded. [See documentation.](/en/entities/user-guide/booking/enable-building-booking-when-all-dimensions-are-crowded)
+- The number of bookable workstations is now calculated by assignment layer and by building, then displayed in the assignment layer card. It is necessary to recalculate building data to see the result after modification.
+
+
 <!-- ## August 27, 2025 - v3.4.100
 
 - Added a company view allowing to have the list of all data quality reports. -->
