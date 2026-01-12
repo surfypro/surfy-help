@@ -3,7 +3,7 @@ import { useTranslations, useCurrentLocale } from "../Translations/translations"
 import { HelpTooltipStyled } from "./HelpTooltipStyled";
 import { toDocumentationLinkString } from "@site/src/utils/documentionStyle";
 import { getPropertyTypeByCode, ObjectTypeSingularCapitalizedLabel, PropertyTypeCodes, PropertyTypeDescription, PropertyTypeLabel, PropertyTypeMandatoryLabel } from "@site/surfy";
-import { objectTypePathMapping, objectTypePathMappingEn } from "@site/src/metaModel/metamodel.json.helper";
+import { objectTypePathMapping } from "@site/src/metaModel/metamodel.json.helper";
 
 export function PropertyType(props: { code: PropertyTypeCodes }) {
     const currentLocale = useCurrentLocale();
@@ -14,7 +14,7 @@ export function PropertyType(props: { code: PropertyTypeCodes }) {
     const { objectTypeName, name } = propertyType;
 
     // Use the appropriate mapping based on locale
-    const pathMapping = currentLocale === 'fr' ? objectTypePathMapping : objectTypePathMappingEn;
+    const pathMapping = objectTypePathMapping;
     const directoryPath = pathMapping[objectTypeName];
     if (!directoryPath) {
         throw new Error(`object type ${objectTypeName} not found in entities`);

@@ -1,5 +1,9 @@
 # Nouveautés
 
+<!-- ## 7 Janvier 2026 - v3.4.149
+
+- Les utilisateurs qui n'ont pas access a un scenario ne voient pas l'option "Inclure les scénarios dans la recherche" dans la recherche globale. -->
+
 ## 4 Janvier 2026 - v3.4.147
 
 - La matrice des rôles regroupe désormais les types d'objets en suivant l'organisation du menu.
