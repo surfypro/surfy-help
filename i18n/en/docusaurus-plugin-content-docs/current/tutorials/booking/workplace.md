@@ -6,7 +6,7 @@ title: "Booking in Surfy"
 
 # Booking in Surfy
 
-<Youtube code="79yDfrrwIVw"/>
+<Youtube code="5qnwa0ye4-g"/>
 
 ## Book from the Surfy Application
 
