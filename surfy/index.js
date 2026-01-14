@@ -1,7 +1,7 @@
 import * as React from "react";
 import React__default, { forwardRef, useContext, useEffect } from "react";
 import { RecoilRoot, atom, useRecoilValue_TRANSITION_SUPPORT_UNSTABLE, useRecoilState, DefaultValue, atomFamily } from "recoil";
-import { Typography, Paper, styled as styled$2, Tooltip, tooltipClasses, Fade } from "@mui/material";
+import { Typography, Paper, styled as styled$3, Tooltip, tooltipClasses, Fade } from "@mui/material";
 const occupancyStatusObjectTypeDefintion = {
   "name": "occupancyStatus",
   "type": "table",
@@ -641,6 +641,18 @@ const companyObjectTypeDefintion = {
         "technical": false,
         "defaultValue": null,
         "regex": "^([0-1][0-9]|2[0-3]):[0-5][0-9]-([0-1][0-9]|2[0-3]):[0-5][0-9]$"
+      }
+    },
+    "trackUserActivity": {
+      "name": "trackUserActivity",
+      "objectTypeName": "company",
+      "type": "boolean",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false,
+        "defaultValue": true
       }
     },
     "createdAt": {
@@ -30859,6 +30871,25 @@ const jupRoleObjectTypeDefintion = {
           "readOnly": false
         }
       }
+    },
+    "jupRoleToJupUiLayoutTabs": {
+      "name": "jupRoleToJupUiLayoutTabs",
+      "objectTypeName": "jupRole",
+      "type": "has-many-paginated",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      },
+      "association": {
+        "foreignKey": "jupRoleId",
+        "targetModelName": "jupRoleToJupUiLayoutTab",
+        "propertyTypeName": "jupRoleToJupUiLayoutTabs",
+        "options": {
+          "readOnly": false
+        }
+      }
     }
   },
   "plural": "jupRoles",
@@ -30882,7 +30913,8 @@ const jupRoleObjectTypeDefintion = {
       "jupRoleToJupUiOperation",
       "apiUserToJupRole",
       "userRegistrationTenantRuleToJupRole",
-      "jupRoleToJupUiLayout"
+      "jupRoleToJupUiLayout",
+      "jupRoleToJupUiLayoutTab"
     ],
     "belongsTo": []
   }
@@ -36788,6 +36820,266 @@ const jupRoleToJupUiLayoutObjectTypeDefintion = {
     "belongsTo": []
   }
 };
+const jupUiLayoutTabObjectTypeDefintion = {
+  "name": "jupUiLayoutTab",
+  "type": "table",
+  "scope": "public",
+  "isMasterData": false,
+  "isReportingData": false,
+  "isSecurityData": true,
+  "propertiesByName": {
+    "id": {
+      "name": "id",
+      "objectTypeName": "jupUiLayoutTab",
+      "type": "primary-key",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "name": {
+      "name": "name",
+      "objectTypeName": "jupUiLayoutTab",
+      "type": "string",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      }
+    },
+    "createdAt": {
+      "name": "createdAt",
+      "objectTypeName": "jupUiLayoutTab",
+      "type": "timestamp",
+      "options": {
+        "mandatory": false,
+        "readOnly": true,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "updatedAt": {
+      "name": "updatedAt",
+      "objectTypeName": "jupUiLayoutTab",
+      "type": "timestamp",
+      "options": {
+        "mandatory": false,
+        "readOnly": true,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "externalId": {
+      "name": "externalId",
+      "objectTypeName": "jupUiLayoutTab",
+      "type": "string",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "jupRoleToJupUiLayoutTabs": {
+      "name": "jupRoleToJupUiLayoutTabs",
+      "objectTypeName": "jupUiLayoutTab",
+      "type": "has-many-paginated",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      },
+      "association": {
+        "foreignKey": "jupUiLayoutTabId",
+        "targetModelName": "jupRoleToJupUiLayoutTab",
+        "propertyTypeName": "jupRoleToJupUiLayoutTabs",
+        "options": {
+          "readOnly": false
+        }
+      }
+    }
+  },
+  "plural": "jupUiLayoutTabs",
+  "camelized": {
+    "singular": "jupUiLayoutTab",
+    "plural": "jupUiLayoutTabs",
+    "id": "jupUiLayoutTabId"
+  },
+  "capitalized": {
+    "singular": "JupUiLayoutTab",
+    "plural": "JupUiLayoutTabs",
+    "id": "JupUiLayoutTabId"
+  },
+  "hidden": false,
+  "context": {
+    "hasMany": [
+      "jupRoleToJupUiLayoutTab"
+    ],
+    "belongsTo": []
+  }
+};
+const jupRoleToJupUiLayoutTabObjectTypeDefintion = {
+  "name": "jupRoleToJupUiLayoutTab",
+  "type": "many-to-many",
+  "scope": "public",
+  "isMasterData": false,
+  "isReportingData": false,
+  "isSecurityData": true,
+  "propertiesByName": {
+    "id": {
+      "name": "id",
+      "objectTypeName": "jupRoleToJupUiLayoutTab",
+      "type": "primary-key",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "canSee": {
+      "name": "canSee",
+      "objectTypeName": "jupRoleToJupUiLayoutTab",
+      "type": "boolean",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false,
+        "defaultValue": false
+      }
+    },
+    "createdAt": {
+      "name": "createdAt",
+      "objectTypeName": "jupRoleToJupUiLayoutTab",
+      "type": "timestamp",
+      "options": {
+        "mandatory": false,
+        "readOnly": true,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "updatedAt": {
+      "name": "updatedAt",
+      "objectTypeName": "jupRoleToJupUiLayoutTab",
+      "type": "timestamp",
+      "options": {
+        "mandatory": false,
+        "readOnly": true,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "externalId": {
+      "name": "externalId",
+      "objectTypeName": "jupRoleToJupUiLayoutTab",
+      "type": "string",
+      "options": {
+        "mandatory": false,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      }
+    },
+    "jupUiLayoutTabId": {
+      "name": "jupUiLayoutTabId",
+      "objectTypeName": "jupRoleToJupUiLayoutTab",
+      "type": "foreign-key",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      },
+      "association": {
+        "foreignKey": "jupUiLayoutTabId",
+        "targetModelName": "jupUiLayoutTab",
+        "propertyTypeName": "jupUiLayoutTab",
+        "options": {
+          "readOnly": false
+        }
+      }
+    },
+    "jupUiLayoutTab": {
+      "name": "jupUiLayoutTab",
+      "objectTypeName": "jupRoleToJupUiLayoutTab",
+      "type": "belongs-to",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      },
+      "association": {
+        "foreignKey": "jupUiLayoutTabId",
+        "targetModelName": "jupUiLayoutTab",
+        "propertyTypeName": "jupUiLayoutTab",
+        "options": {
+          "readOnly": false
+        }
+      }
+    },
+    "jupRoleId": {
+      "name": "jupRoleId",
+      "objectTypeName": "jupRoleToJupUiLayoutTab",
+      "type": "foreign-key",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": true
+      },
+      "association": {
+        "foreignKey": "jupRoleId",
+        "targetModelName": "jupRole",
+        "propertyTypeName": "jupRole",
+        "options": {
+          "readOnly": false
+        }
+      }
+    },
+    "jupRole": {
+      "name": "jupRole",
+      "objectTypeName": "jupRoleToJupUiLayoutTab",
+      "type": "belongs-to",
+      "options": {
+        "mandatory": true,
+        "readOnly": false,
+        "calculated": false,
+        "technical": false
+      },
+      "association": {
+        "foreignKey": "jupRoleId",
+        "targetModelName": "jupRole",
+        "propertyTypeName": "jupRole",
+        "options": {
+          "readOnly": false
+        }
+      }
+    }
+  },
+  "plural": "jupRoleToJupUiLayoutTabs",
+  "camelized": {
+    "singular": "jupRoleToJupUiLayoutTab",
+    "plural": "jupRoleToJupUiLayoutTabs",
+    "id": "jupRoleToJupUiLayoutTabId"
+  },
+  "capitalized": {
+    "singular": "JupRoleToJupUiLayoutTab",
+    "plural": "JupRoleToJupUiLayoutTabs",
+    "id": "JupRoleToJupUiLayoutTabId"
+  },
+  "hidden": false,
+  "context": {
+    "hasMany": [],
+    "belongsTo": []
+  }
+};
 const itemFactObjectTypeDefintion = {
   "name": "itemFact",
   "type": "table",
@@ -37888,11 +38180,13 @@ var JupSchema;
   JupSchema2.partnerExportMappingToRoomType = partnerExportMappingToRoomTypeObjectTypeDefintion;
   JupSchema2.partnerExportMappingConfigurationToFloor = partnerExportMappingConfigurationToFloorObjectTypeDefintion;
   JupSchema2.jupRoleToJupUiLayout = jupRoleToJupUiLayoutObjectTypeDefintion;
+  JupSchema2.jupUiLayoutTab = jupUiLayoutTabObjectTypeDefintion;
+  JupSchema2.jupRoleToJupUiLayoutTab = jupRoleToJupUiLayoutTabObjectTypeDefintion;
   JupSchema2.itemFact = itemFactObjectTypeDefintion;
   JupSchema2.featureFamily = featureFamilyObjectTypeDefintion;
   JupSchema2.featureGroup = featureGroupObjectTypeDefintion;
   JupSchema2.feature = featureObjectTypeDefintion;
-  JupSchema2.objectTypes = [JupSchema2.occupancyStatus, JupSchema2.user, JupSchema2.userRefreshToken, JupSchema2.companyType, JupSchema2.company, JupSchema2.campus, JupSchema2.roomConnectorType, JupSchema2.roomConnector, JupSchema2.userCompany, JupSchema2.personGender, JupSchema2.personCompany, JupSchema2.jupUiLayout, JupSchema2.buildingType, JupSchema2.organization, JupSchema2.itemTypeFamily, JupSchema2.manufacturer, JupSchema2.object3dModel, JupSchema2.itemType, JupSchema2.building, JupSchema2.mapScale, JupSchema2.structure, JupSchema2.structurePoint, JupSchema2.floor, JupSchema2.distributionCostType, JupSchema2.roomTypeGroup, JupSchema2.roomType, JupSchema2.roomTypeGroupToRoomType, JupSchema2.roomTypeGroupFloor, JupSchema2.roomTypeGroupBuilding, JupSchema2.costCenter, JupSchema2.costCenterBuilding, JupSchema2.costCenterFloor, JupSchema2.room, JupSchema2.roomPoint, JupSchema2.roomPointRoom, JupSchema2.roomPointSegmentType, JupSchema2.roomPointSegment, JupSchema2.itemTypePoint, JupSchema2.dimensionType, JupSchema2.dimension, JupSchema2.dimensionRoom, JupSchema2.dimensionFloor, JupSchema2.dimensionBuilding, JupSchema2.factType, JupSchema2.fact, JupSchema2.personState, JupSchema2.personSecurityProfile, JupSchema2.person, JupSchema2.personToPersonType, JupSchema2.personToPerson, JupSchema2.vehicleType, JupSchema2.vehiclePropulsionType, JupSchema2.vehicle, JupSchema2.personToVehicle, JupSchema2.roomAffectation, JupSchema2.workplaceType, JupSchema2.workplaceUsageType, JupSchema2.workplaceTypeItemType, JupSchema2.workplace, JupSchema2.item, JupSchema2.workplaceAffectation, JupSchema2.organizationFloor, JupSchema2.organizationBuilding, JupSchema2.roomTypeFloor, JupSchema2.roomTypeBuilding, JupSchema2.itemToPerson, JupSchema2.personToBuilding, JupSchema2.dimensionToPerson, JupSchema2.dimensionTypeToBuilding, JupSchema2.workingLocation, JupSchema2.personWorkingLocation, JupSchema2.personToWorkplaceBooking, JupSchema2.personToRoomBooking, JupSchema2.personToDimensionBooking, JupSchema2.personCompanyMission, JupSchema2.personCompanyToItemType, JupSchema2.personCompanyToRoomType, JupSchema2.personCompanyToItem, JupSchema2.legend, JupSchema2.openerPostMessageHost, JupSchema2.companyWorkingLocation, JupSchema2.jupObjectType, JupSchema2.jupUiView, JupSchema2.jupRole, JupSchema2.jupUiOption, JupSchema2.jupUiOperation, JupSchema2.contentRole, JupSchema2.jupUserCompanyToJupRole, JupSchema2.jupRoleToJupUiView, JupSchema2.jupRoleToJupObjectType, JupSchema2.jupRoleToJupUiOption, JupSchema2.jupRoleToJupUiOperation, JupSchema2.contentRoleToBuilding, JupSchema2.contentRoleToUserCompany, JupSchema2.contentRoleToFloor, JupSchema2.partnerApiCredential, JupSchema2.apiUser, JupSchema2.apiUserToJupRole, JupSchema2.apiUserToContentRole, JupSchema2.jupUiTenantOperation, JupSchema2.contentRoleToJupUiTenantOperation, JupSchema2.authentificationConnection, JupSchema2.userRegistrationTenantRule, JupSchema2.userRegistrationTenantRuleToJupRole, JupSchema2.userRegistrationTenantRuleToContentRole, JupSchema2.partnerExportMappingConfiguration, JupSchema2.partnerExportMapping, JupSchema2.partnerExportMappingToRoomType, JupSchema2.partnerExportMappingConfigurationToFloor, JupSchema2.jupRoleToJupUiLayout, JupSchema2.itemFact, JupSchema2.featureFamily, JupSchema2.featureGroup, JupSchema2.feature];
+  JupSchema2.objectTypes = [JupSchema2.occupancyStatus, JupSchema2.user, JupSchema2.userRefreshToken, JupSchema2.companyType, JupSchema2.company, JupSchema2.campus, JupSchema2.roomConnectorType, JupSchema2.roomConnector, JupSchema2.userCompany, JupSchema2.personGender, JupSchema2.personCompany, JupSchema2.jupUiLayout, JupSchema2.buildingType, JupSchema2.organization, JupSchema2.itemTypeFamily, JupSchema2.manufacturer, JupSchema2.object3dModel, JupSchema2.itemType, JupSchema2.building, JupSchema2.mapScale, JupSchema2.structure, JupSchema2.structurePoint, JupSchema2.floor, JupSchema2.distributionCostType, JupSchema2.roomTypeGroup, JupSchema2.roomType, JupSchema2.roomTypeGroupToRoomType, JupSchema2.roomTypeGroupFloor, JupSchema2.roomTypeGroupBuilding, JupSchema2.costCenter, JupSchema2.costCenterBuilding, JupSchema2.costCenterFloor, JupSchema2.room, JupSchema2.roomPoint, JupSchema2.roomPointRoom, JupSchema2.roomPointSegmentType, JupSchema2.roomPointSegment, JupSchema2.itemTypePoint, JupSchema2.dimensionType, JupSchema2.dimension, JupSchema2.dimensionRoom, JupSchema2.dimensionFloor, JupSchema2.dimensionBuilding, JupSchema2.factType, JupSchema2.fact, JupSchema2.personState, JupSchema2.personSecurityProfile, JupSchema2.person, JupSchema2.personToPersonType, JupSchema2.personToPerson, JupSchema2.vehicleType, JupSchema2.vehiclePropulsionType, JupSchema2.vehicle, JupSchema2.personToVehicle, JupSchema2.roomAffectation, JupSchema2.workplaceType, JupSchema2.workplaceUsageType, JupSchema2.workplaceTypeItemType, JupSchema2.workplace, JupSchema2.item, JupSchema2.workplaceAffectation, JupSchema2.organizationFloor, JupSchema2.organizationBuilding, JupSchema2.roomTypeFloor, JupSchema2.roomTypeBuilding, JupSchema2.itemToPerson, JupSchema2.personToBuilding, JupSchema2.dimensionToPerson, JupSchema2.dimensionTypeToBuilding, JupSchema2.workingLocation, JupSchema2.personWorkingLocation, JupSchema2.personToWorkplaceBooking, JupSchema2.personToRoomBooking, JupSchema2.personToDimensionBooking, JupSchema2.personCompanyMission, JupSchema2.personCompanyToItemType, JupSchema2.personCompanyToRoomType, JupSchema2.personCompanyToItem, JupSchema2.legend, JupSchema2.openerPostMessageHost, JupSchema2.companyWorkingLocation, JupSchema2.jupObjectType, JupSchema2.jupUiView, JupSchema2.jupRole, JupSchema2.jupUiOption, JupSchema2.jupUiOperation, JupSchema2.contentRole, JupSchema2.jupUserCompanyToJupRole, JupSchema2.jupRoleToJupUiView, JupSchema2.jupRoleToJupObjectType, JupSchema2.jupRoleToJupUiOption, JupSchema2.jupRoleToJupUiOperation, JupSchema2.contentRoleToBuilding, JupSchema2.contentRoleToUserCompany, JupSchema2.contentRoleToFloor, JupSchema2.partnerApiCredential, JupSchema2.apiUser, JupSchema2.apiUserToJupRole, JupSchema2.apiUserToContentRole, JupSchema2.jupUiTenantOperation, JupSchema2.contentRoleToJupUiTenantOperation, JupSchema2.authentificationConnection, JupSchema2.userRegistrationTenantRule, JupSchema2.userRegistrationTenantRuleToJupRole, JupSchema2.userRegistrationTenantRuleToContentRole, JupSchema2.partnerExportMappingConfiguration, JupSchema2.partnerExportMapping, JupSchema2.partnerExportMappingToRoomType, JupSchema2.partnerExportMappingConfigurationToFloor, JupSchema2.jupRoleToJupUiLayout, JupSchema2.jupUiLayoutTab, JupSchema2.jupRoleToJupUiLayoutTab, JupSchema2.itemFact, JupSchema2.featureFamily, JupSchema2.featureGroup, JupSchema2.feature];
   JupSchema2.objectTypesBySingular = {
     occupancyStatus: JupSchema2.occupancyStatus,
     user: JupSchema2.user,
@@ -38004,6 +38298,8 @@ var JupSchema;
     partnerExportMappingToRoomType: JupSchema2.partnerExportMappingToRoomType,
     partnerExportMappingConfigurationToFloor: JupSchema2.partnerExportMappingConfigurationToFloor,
     jupRoleToJupUiLayout: JupSchema2.jupRoleToJupUiLayout,
+    jupUiLayoutTab: JupSchema2.jupUiLayoutTab,
+    jupRoleToJupUiLayoutTab: JupSchema2.jupRoleToJupUiLayoutTab,
     itemFact: JupSchema2.itemFact,
     featureFamily: JupSchema2.featureFamily,
     featureGroup: JupSchema2.featureGroup,
@@ -38072,7 +38368,7 @@ var hasRequiredReactJsxRuntime_production_min;
 function requireReactJsxRuntime_production_min() {
   if (hasRequiredReactJsxRuntime_production_min) return reactJsxRuntime_production_min;
   hasRequiredReactJsxRuntime_production_min = 1;
-  var f = React__default, k = Symbol.for("react.element"), l = Symbol.for("react.fragment"), m = Object.prototype.hasOwnProperty, n = f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, p = { key: true, ref: true, __self: true, __source: true };
+  var f = React__default, k = /* @__PURE__ */ Symbol.for("react.element"), l = /* @__PURE__ */ Symbol.for("react.fragment"), m = Object.prototype.hasOwnProperty, n = f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, p = { key: true, ref: true, __self: true, __source: true };
   function q(c, a, g) {
     var b, d = {}, e = null, h = null;
     void 0 !== g && (e = "" + g);
@@ -38095,19 +38391,19 @@ function requireReactJsxRuntime_development() {
   if (process.env.NODE_ENV !== "production") {
     (function() {
       var React2 = React__default;
-      var REACT_ELEMENT_TYPE = Symbol.for("react.element");
-      var REACT_PORTAL_TYPE = Symbol.for("react.portal");
-      var REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
-      var REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode");
-      var REACT_PROFILER_TYPE = Symbol.for("react.profiler");
-      var REACT_PROVIDER_TYPE = Symbol.for("react.provider");
-      var REACT_CONTEXT_TYPE = Symbol.for("react.context");
-      var REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref");
-      var REACT_SUSPENSE_TYPE = Symbol.for("react.suspense");
-      var REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list");
-      var REACT_MEMO_TYPE = Symbol.for("react.memo");
-      var REACT_LAZY_TYPE = Symbol.for("react.lazy");
-      var REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen");
+      var REACT_ELEMENT_TYPE = /* @__PURE__ */ Symbol.for("react.element");
+      var REACT_PORTAL_TYPE = /* @__PURE__ */ Symbol.for("react.portal");
+      var REACT_FRAGMENT_TYPE = /* @__PURE__ */ Symbol.for("react.fragment");
+      var REACT_STRICT_MODE_TYPE = /* @__PURE__ */ Symbol.for("react.strict_mode");
+      var REACT_PROFILER_TYPE = /* @__PURE__ */ Symbol.for("react.profiler");
+      var REACT_PROVIDER_TYPE = /* @__PURE__ */ Symbol.for("react.provider");
+      var REACT_CONTEXT_TYPE = /* @__PURE__ */ Symbol.for("react.context");
+      var REACT_FORWARD_REF_TYPE = /* @__PURE__ */ Symbol.for("react.forward_ref");
+      var REACT_SUSPENSE_TYPE = /* @__PURE__ */ Symbol.for("react.suspense");
+      var REACT_SUSPENSE_LIST_TYPE = /* @__PURE__ */ Symbol.for("react.suspense_list");
+      var REACT_MEMO_TYPE = /* @__PURE__ */ Symbol.for("react.memo");
+      var REACT_LAZY_TYPE = /* @__PURE__ */ Symbol.for("react.lazy");
+      var REACT_OFFSCREEN_TYPE = /* @__PURE__ */ Symbol.for("react.offscreen");
       var MAYBE_ITERATOR_SYMBOL = Symbol.iterator;
       var FAUX_ITERATOR_SYMBOL = "@@iterator";
       function getIteratorFn(maybeIterable) {
@@ -38153,7 +38449,7 @@ function requireReactJsxRuntime_development() {
       var enableDebugTracing = false;
       var REACT_MODULE_REFERENCE;
       {
-        REACT_MODULE_REFERENCE = Symbol.for("react.module.reference");
+        REACT_MODULE_REFERENCE = /* @__PURE__ */ Symbol.for("react.module.reference");
       }
       function isValidElementType(type2) {
         if (typeof type2 === "string" || typeof type2 === "function") {
@@ -39014,7 +39310,7 @@ var hasRequiredReactIs_production_min;
 function requireReactIs_production_min() {
   if (hasRequiredReactIs_production_min) return reactIs_production_min;
   hasRequiredReactIs_production_min = 1;
-  var b = "function" === typeof Symbol && Symbol.for, c = b ? Symbol.for("react.element") : 60103, d = b ? Symbol.for("react.portal") : 60106, e = b ? Symbol.for("react.fragment") : 60107, f = b ? Symbol.for("react.strict_mode") : 60108, g = b ? Symbol.for("react.profiler") : 60114, h = b ? Symbol.for("react.provider") : 60109, k = b ? Symbol.for("react.context") : 60110, l = b ? Symbol.for("react.async_mode") : 60111, m = b ? Symbol.for("react.concurrent_mode") : 60111, n = b ? Symbol.for("react.forward_ref") : 60112, p = b ? Symbol.for("react.suspense") : 60113, q = b ? Symbol.for("react.suspense_list") : 60120, r2 = b ? Symbol.for("react.memo") : 60115, t = b ? Symbol.for("react.lazy") : 60116, v = b ? Symbol.for("react.block") : 60121, w = b ? Symbol.for("react.fundamental") : 60117, x = b ? Symbol.for("react.responder") : 60118, y = b ? Symbol.for("react.scope") : 60119;
+  var b = "function" === typeof Symbol && Symbol.for, c = b ? /* @__PURE__ */ Symbol.for("react.element") : 60103, d = b ? /* @__PURE__ */ Symbol.for("react.portal") : 60106, e = b ? /* @__PURE__ */ Symbol.for("react.fragment") : 60107, f = b ? /* @__PURE__ */ Symbol.for("react.strict_mode") : 60108, g = b ? /* @__PURE__ */ Symbol.for("react.profiler") : 60114, h = b ? /* @__PURE__ */ Symbol.for("react.provider") : 60109, k = b ? /* @__PURE__ */ Symbol.for("react.context") : 60110, l = b ? /* @__PURE__ */ Symbol.for("react.async_mode") : 60111, m = b ? /* @__PURE__ */ Symbol.for("react.concurrent_mode") : 60111, n = b ? /* @__PURE__ */ Symbol.for("react.forward_ref") : 60112, p = b ? /* @__PURE__ */ Symbol.for("react.suspense") : 60113, q = b ? /* @__PURE__ */ Symbol.for("react.suspense_list") : 60120, r2 = b ? /* @__PURE__ */ Symbol.for("react.memo") : 60115, t = b ? /* @__PURE__ */ Symbol.for("react.lazy") : 60116, v = b ? /* @__PURE__ */ Symbol.for("react.block") : 60121, w = b ? /* @__PURE__ */ Symbol.for("react.fundamental") : 60117, x = b ? /* @__PURE__ */ Symbol.for("react.responder") : 60118, y = b ? /* @__PURE__ */ Symbol.for("react.scope") : 60119;
   function z(a) {
     if ("object" === typeof a && null !== a) {
       var u = a.$$typeof;
@@ -39112,24 +39408,24 @@ function requireReactIs_development$1() {
   if (process.env.NODE_ENV !== "production") {
     (function() {
       var hasSymbol = typeof Symbol === "function" && Symbol.for;
-      var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for("react.element") : 60103;
-      var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for("react.portal") : 60106;
-      var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for("react.fragment") : 60107;
-      var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for("react.strict_mode") : 60108;
-      var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for("react.profiler") : 60114;
-      var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for("react.provider") : 60109;
-      var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for("react.context") : 60110;
-      var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for("react.async_mode") : 60111;
-      var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for("react.concurrent_mode") : 60111;
-      var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for("react.forward_ref") : 60112;
-      var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for("react.suspense") : 60113;
-      var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for("react.suspense_list") : 60120;
-      var REACT_MEMO_TYPE = hasSymbol ? Symbol.for("react.memo") : 60115;
-      var REACT_LAZY_TYPE = hasSymbol ? Symbol.for("react.lazy") : 60116;
-      var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for("react.block") : 60121;
-      var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for("react.fundamental") : 60117;
-      var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for("react.responder") : 60118;
-      var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for("react.scope") : 60119;
+      var REACT_ELEMENT_TYPE = hasSymbol ? /* @__PURE__ */ Symbol.for("react.element") : 60103;
+      var REACT_PORTAL_TYPE = hasSymbol ? /* @__PURE__ */ Symbol.for("react.portal") : 60106;
+      var REACT_FRAGMENT_TYPE = hasSymbol ? /* @__PURE__ */ Symbol.for("react.fragment") : 60107;
+      var REACT_STRICT_MODE_TYPE = hasSymbol ? /* @__PURE__ */ Symbol.for("react.strict_mode") : 60108;
+      var REACT_PROFILER_TYPE = hasSymbol ? /* @__PURE__ */ Symbol.for("react.profiler") : 60114;
+      var REACT_PROVIDER_TYPE = hasSymbol ? /* @__PURE__ */ Symbol.for("react.provider") : 60109;
+      var REACT_CONTEXT_TYPE = hasSymbol ? /* @__PURE__ */ Symbol.for("react.context") : 60110;
+      var REACT_ASYNC_MODE_TYPE = hasSymbol ? /* @__PURE__ */ Symbol.for("react.async_mode") : 60111;
+      var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? /* @__PURE__ */ Symbol.for("react.concurrent_mode") : 60111;
+      var REACT_FORWARD_REF_TYPE = hasSymbol ? /* @__PURE__ */ Symbol.for("react.forward_ref") : 60112;
+      var REACT_SUSPENSE_TYPE = hasSymbol ? /* @__PURE__ */ Symbol.for("react.suspense") : 60113;
+      var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? /* @__PURE__ */ Symbol.for("react.suspense_list") : 60120;
+      var REACT_MEMO_TYPE = hasSymbol ? /* @__PURE__ */ Symbol.for("react.memo") : 60115;
+      var REACT_LAZY_TYPE = hasSymbol ? /* @__PURE__ */ Symbol.for("react.lazy") : 60116;
+      var REACT_BLOCK_TYPE = hasSymbol ? /* @__PURE__ */ Symbol.for("react.block") : 60121;
+      var REACT_FUNDAMENTAL_TYPE = hasSymbol ? /* @__PURE__ */ Symbol.for("react.fundamental") : 60117;
+      var REACT_RESPONDER_TYPE = hasSymbol ? /* @__PURE__ */ Symbol.for("react.responder") : 60118;
+      var REACT_SCOPE_TYPE = hasSymbol ? /* @__PURE__ */ Symbol.for("react.scope") : 60119;
       function isValidElementType(type2) {
         return typeof type2 === "string" || typeof type2 === "function" || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
         type2 === REACT_FRAGMENT_TYPE || type2 === REACT_CONCURRENT_MODE_TYPE || type2 === REACT_PROFILER_TYPE || type2 === REACT_STRICT_MODE_TYPE || type2 === REACT_SUSPENSE_TYPE || type2 === REACT_SUSPENSE_LIST_TYPE || typeof type2 === "object" && type2 !== null && (type2.$$typeof === REACT_LAZY_TYPE || type2.$$typeof === REACT_MEMO_TYPE || type2.$$typeof === REACT_PROVIDER_TYPE || type2.$$typeof === REACT_CONTEXT_TYPE || type2.$$typeof === REACT_FORWARD_REF_TYPE || type2.$$typeof === REACT_FUNDAMENTAL_TYPE || type2.$$typeof === REACT_RESPONDER_TYPE || type2.$$typeof === REACT_SCOPE_TYPE || type2.$$typeof === REACT_BLOCK_TYPE);
@@ -39970,7 +40266,7 @@ var hasRequiredReactIs_production;
 function requireReactIs_production() {
   if (hasRequiredReactIs_production) return reactIs_production;
   hasRequiredReactIs_production = 1;
-  var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_VIEW_TRANSITION_TYPE = Symbol.for("react.view_transition"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference");
+  var REACT_ELEMENT_TYPE = /* @__PURE__ */ Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = /* @__PURE__ */ Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = /* @__PURE__ */ Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = /* @__PURE__ */ Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = /* @__PURE__ */ Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = /* @__PURE__ */ Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = /* @__PURE__ */ Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = /* @__PURE__ */ Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = /* @__PURE__ */ Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = /* @__PURE__ */ Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = /* @__PURE__ */ Symbol.for("react.memo"), REACT_LAZY_TYPE = /* @__PURE__ */ Symbol.for("react.lazy"), REACT_VIEW_TRANSITION_TYPE = /* @__PURE__ */ Symbol.for("react.view_transition"), REACT_CLIENT_REFERENCE = /* @__PURE__ */ Symbol.for("react.client.reference");
   function typeOf(object) {
     if ("object" === typeof object && null !== object) {
       var $$typeof = object.$$typeof;
@@ -40093,7 +40389,7 @@ function requireReactIs_development() {
         }
       }
     }
-    var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_VIEW_TRANSITION_TYPE = Symbol.for("react.view_transition"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference");
+    var REACT_ELEMENT_TYPE = /* @__PURE__ */ Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = /* @__PURE__ */ Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = /* @__PURE__ */ Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = /* @__PURE__ */ Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = /* @__PURE__ */ Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = /* @__PURE__ */ Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = /* @__PURE__ */ Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = /* @__PURE__ */ Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = /* @__PURE__ */ Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = /* @__PURE__ */ Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = /* @__PURE__ */ Symbol.for("react.memo"), REACT_LAZY_TYPE = /* @__PURE__ */ Symbol.for("react.lazy"), REACT_VIEW_TRANSITION_TYPE = /* @__PURE__ */ Symbol.for("react.view_transition"), REACT_CLIENT_REFERENCE = /* @__PURE__ */ Symbol.for("react.client.reference");
     reactIs_development.ContextConsumer = REACT_CONSUMER_TYPE;
     reactIs_development.ContextProvider = REACT_CONTEXT_TYPE;
     reactIs_development.Element = REACT_ELEMENT_TYPE;
@@ -42403,10 +42699,10 @@ var createStyled$1 = function createStyled(tag, options) {
       }
     });
     Styled.withComponent = function(nextTag, nextOptions) {
-      var newStyled2 = createStyled(nextTag, _extends({}, options, nextOptions, {
+      var newStyled = createStyled(nextTag, _extends({}, options, nextOptions, {
         shouldForwardProp: composeShouldForwardProps(Styled, nextOptions, true)
       }));
-      return newStyled2.apply(void 0, styles);
+      return newStyled.apply(void 0, styles);
     };
     return Styled;
   };
@@ -42548,12 +42844,12 @@ var tags = [
   "text",
   "tspan"
 ];
-var newStyled = createStyled$1.bind(null);
+var styled$2 = createStyled$1.bind(null);
 tags.forEach(function(tagName) {
-  newStyled[tagName] = newStyled(tagName);
+  styled$2[tagName] = styled$2(tagName);
 });
 function styled$1(tag, options) {
-  const stylesFactory = newStyled(tag, options);
+  const stylesFactory = styled$2(tag, options);
   if (process.env.NODE_ENV !== "production") {
     return (...styles) => {
       const component = typeof tag === "string" ? `"${tag}"` : "component";
@@ -46549,7 +46845,7 @@ function requireDefineProperties() {
   if (hasRequiredDefineProperties) return defineProperties_1;
   hasRequiredDefineProperties = 1;
   var keys = requireObjectKeys();
-  var hasSymbols2 = typeof Symbol === "function" && typeof Symbol("foo") === "symbol";
+  var hasSymbols2 = typeof Symbol === "function" && typeof /* @__PURE__ */ Symbol("foo") === "symbol";
   var toStr = Object.prototype.toString;
   var concat = Array.prototype.concat;
   var defineDataProperty2 = /* @__PURE__ */ requireDefineDataProperty();
@@ -46721,7 +47017,7 @@ function requireShams() {
       return true;
     }
     var obj = {};
-    var sym = Symbol("test");
+    var sym = /* @__PURE__ */ Symbol("test");
     var symObj = Object(sym);
     if (typeof sym === "string") {
       return false;
@@ -46780,7 +47076,7 @@ function requireHasSymbols() {
     if (typeof origSymbol("foo") !== "symbol") {
       return false;
     }
-    if (typeof Symbol("bar") !== "symbol") {
+    if (typeof /* @__PURE__ */ Symbol("bar") !== "symbol") {
       return false;
     }
     return hasSymbolSham();
@@ -47880,7 +48176,7 @@ const dev = {
   mcp: mcp$2,
   authentication: authentication$3
 };
-const logRocket$1 = { "appId": "surfy-kln2r/surfy-alpha" };
+const logRocket$1 = { "appId": "surfy/surfy-alpha" };
 const mcp$1 = { "projectName": "user-surfy-alpha" };
 const origins$1 = ["https://alpha86.surfy.pro", "https://app-alpha.surfy.pro", "https://app-alpha.surfy.fr"];
 const endpoints$1 = { "backend": "https://app-alpha.surfy.pro" };
@@ -47892,7 +48188,7 @@ const alpha = {
   endpoints: endpoints$1,
   authentication: authentication$2
 };
-const logRocket = { "appId": "surfy-kln2r/surfy-production-waokr" };
+const logRocket = { "appId": "surfy/surfy-production-9rwgq" };
 const mcp = { "projectName": "user-surfy" };
 const origins = ["https://app.surfy.pro", "https://help.surfy.pro", "https://app.surfy.fr"];
 const endpoints = { "backend": "https://app.surfy.pro" };
@@ -52133,7 +52429,7 @@ const PropertyTypeLabel = React__default.forwardRef((props, ref2) => {
     unit
   ] });
 });
-const version = { "major": 3, "minor": 4, "build": 144 };
+const version = { "major": 3, "minor": 4, "build": 148 };
 function getAppVersion() {
   const { major, minor, build } = version;
   return `${major}.${minor}.${build}`;
@@ -52181,11 +52477,14 @@ const fr = {
   "BookParkingFloorRoomsDrawer.noRoomsAvailable": "Aucune place de parking disponible sur cet étage",
   "BookParkingFloorRoomsDrawer.view": "Voir",
   "BookParkingFloorRoomsDrawer.viewOnMap": "Voir sur le plan",
-  "BookParkingInBuildingOption.availableParkingSpaces": "%{availableCount} place(s) disponible(s)",
-  "BookParkingInBuildingOption.bookParkingOnFloorHelp": "Réserver un parking au %{floorName} (%{availableCount} places disponibles)",
-  "BookParkingInBuildingOption.bookParkingOnFloorLabel": "Réserver un parking au %{floorName}",
-  "BookParkingInBuildingOption.drawerTitle": "Réserver un parking au %{floorName} pour la période %{slotString}",
+  "BookParkingInBuildingOption.daySlotAll": "toute la journée",
+  "BookParkingInBuildingOption.daySlotAmWithArticle": "le matin",
+  "BookParkingInBuildingOption.daySlotIncompatible": "Vous pouvez réserver un parking uniquement %{availableSlots}. Aucune place de parking n'est disponible pour votre type de véhicule%{vehicleInfo} pendant votre créneau horaire sélectionné.\n",
+  "BookParkingInBuildingOption.daySlotPartiallyIncompatible": "Certains types de parking (%{roomTypeNames}) ne sont pas disponibles pour votre créneau horaire sélectionné, mais vous pouvez toujours réserver d'autres places de parking compatibles.",
+  "BookParkingInBuildingOption.daySlotPmWithArticle": "l'après-midi",
   "BookParkingInBuildingOption.noParkingAvailable": "Il n'y a pas de parking disponible pour votre type de véhicule dans ce bâtiment, merci de contacter votre administrateur",
+  "BookParkingInBuildingOption.noVehicle": "Vous devez enregistrer un véhicule dans votre profil pour réserver des places de parking",
+  "BookParkingInBuildingOption.singleBookingPerDayIncompatible": "Vous avez déjà une réservation de parking pour ce jour. Avec votre type de véhicule, vous ne pouvez réserver qu'une seule place de parking par jour.",
   "BookPersonBuildingWorkplace.availableWorkplaces": "%{freeWorkplaces} places disponibles",
   "BookPersonBuildingWorkplace.bookWorkplaceOnFloor": "Réserver un poste de travail au %{floorName} pour la période %{slotString}",
   "BookPersonBuildingWorkplace.bookWorkplaceOnFloorButton.label": "Réserver un poste de travail au %{floorName}",
@@ -52225,10 +52524,9 @@ const fr = {
   "BookingMap.errors.noBuildingInFilter": "Merci de choisir un bâtiment et un étage dans le filtre pour voir les réservations",
   "BookingMap.errors.noDateInFilter": "Merci de choisir une date dans le filtre pour voir les réservations",
   "BookingMap.errors.noFloorInFilter": "Merci de choisir un étage dans le filtre pour voir les réservations",
-  "BookingParkingInBuildingWithRoomTypes.availableParkingSpaces": "%{availableCount} place(s) disponible(s)",
   "BookingParkingInBuildingWithRoomTypes.bookParkingOnFloorHelp": "%{bookedRooms} réservation(s), %{freeRooms} place(s) de parking disponible(s) sur %{totalRooms}",
-  "BookingParkingInBuildingWithRoomTypes.bookParkingOnFloorLabel": "Réserver un parking au %{floorName}",
   "BookingParkingInBuildingWithRoomTypes.drawerTitle": "Réserver un parking au %{floorName} pour la période %{slotString}",
+  "BookingParkingInBuildingWithRoomTypes.noFreeParkingAvailableInFloor": "Aucune place de parking disponible au %{floorName}",
   "BookingRoomTitle.bookThisSpaceFor": "Réserver cette place pour %{slotTimes}",
   "BookingRoomTitle.booked": "Cette place de parking est déjà réservée",
   "BookingRoomTitle.free": "Réserver cette place de parking",
@@ -52339,8 +52637,8 @@ const fr = {
   "CalibrateLayoutDrawer.options.save.label": "Enregistrer",
   "CalibrateLayoutDrawer.title": "Calibrer le plan",
   "CampusBuildingsAccordion.buildingCount": "Le nombre de bâtiments",
-  "CancelAddItemToRoom.help": "Annuler l'ajout de l'objet",
-  "CancelAddWorkplaceToRoom.help": "Annuler l'ajout du poste de travail",
+  "CancelAddItemToRoom.help": "Annuler l'ajout de l'objet dans l'espace",
+  "CancelAddWorkplaceToRoom.help": "Annuler l'ajout du poste de travail dans l'espace",
   "CancelDuplicateShapsToRoomMouse.help": "Annuler la duplication des formes",
   "ChangeColor.classic": "Selectionner une couleur avec la platte avancée",
   "ChangeCompanyMenu.ChangeCompany": "Voir une autre entreprise dans une nouvelle page",
@@ -52353,6 +52651,14 @@ const fr = {
   "CheckAllDefaultViews.shortcuts.title": "Raccourcis de configuration",
   "CheckAllDefaultViews.shortcuts.views.buttonsHelp": "Cocher cette vue pour tous les types d'entités",
   "CheckAllDefaultViews.shortcuts.views.title": "Raccourcis pour les vues d'interface par defaut",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.daySlotAll": "toute la journée",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.daySlotAmWithArticle": "le matin",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.daySlotIncompatible": "Vous pouvez réserver un parking uniquement %{availableSlots}.\nAucune place de parking n'est disponible pour votre type de véhicule%{vehicleInfo} pendant votre créneau horaire sélectionné.",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.daySlotPmWithArticle": "l'après-midi",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.noParkingAvailable": "Il n'y a pas de parking disponible pour votre type de véhicule dans ce bâtiment, merci de contacter votre administrateur",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.noVehicle": "Vous devez enregistrer un véhicule dans votre profil pour réserver des places de parking",
+  "CheckPersonVehiculeParkingDaySlotSingleBookingPerDayCompatibility.singleBookingPerDayIncompatible": "Vous avez déjà une réservation de parking pour ce jour. Avec votre type de véhicule, vous ne pouvez réserver qu'une seule place de parking par jour.",
+  "CheckThereIsAtLeastOneFreeRoomInTheBuilding.noFreeParkingAvailable": "Aucune place de parking disponible sur votre créneau",
   "CloneEntitiesFailed.cloneFailed": "Impossible de cloner",
   "CollapseSwitchButton.help.false": "Voir le détail",
   "CollapseSwitchButton.help.true": "Masquer le détail",
@@ -52442,6 +52748,10 @@ const fr = {
   "DateDimensionSelect.options.week": "Semaine",
   "DateDimensionSelect.options.year": "Année",
   "DayHeaders.time": "Heure",
+  "DaySlotTypeLabel.amHelp": "Les horaires de la matinée sont de 8h00 à 13h30",
+  "DaySlotTypeLabel.amLabel": "Matin",
+  "DaySlotTypeLabel.pmHelp": "Les horaires de l'après-midi sont de 14h00 à 19h00",
+  "DaySlotTypeLabel.pmLabel": "Après-midi",
   "DeleteDialog.cancel.help": "Annuler la suppression",
   "DeleteDialog.cancel.label": "Annuler",
   "DeleteDialog.content": "Vous êtes sur le point de supprimer <b>%{determinant.undefined}</b>, cette action n'est pas réversible et peut avoir des impacts, êtes-vous sûr de vouloir réaliser cette action ?",
@@ -52460,6 +52770,7 @@ const fr = {
   "DeskBookingConfirmationButton.confirm": "Confirmer votre présence",
   "DeskBookingConfirmationButton.confirmHelp": "Confirmez que vous êtes présent à votre poste de travail",
   "DeskBookingsSection.noBookingsFound": "Aucune réservation à venir trouvée.",
+  "DimensionBuildingPlanningLabel.anotherPersonIsAssigned": "%{personFullName} est affecté sur %{dimensionTypeName} %{dimensionName}",
   "DimensionBuildingPlanningLabel.youAreAssigned": "Vous êtes affecté sur %{dimensionTypeName} %{dimensionName}",
   "DimensionInfo.carbonFootprint.help": "L'empreinte carbone est de %{value} de CO2 emis pour %{dimensionType} %{dimension}",
   "DimensionInfo.dimensionPeopleCount.help": "Il y a %{value} personne(s) affectées dans %{dimensionType} %{dimension}",
@@ -52498,6 +52809,7 @@ const fr = {
   "DimensionTypesByTab.ListItemHasChildrenSelected": "Des dimensions sont sélectionnés",
   "DimensionTypesByTab.action.false": "Tout désélectionner",
   "DimensionTypesByTab.action.true": "Tout sélectionner",
+  "DirectBuildingPlanningLabel.anotherPersonIsAssigned": "%{personFullName} est affecté sur le bâtiment %{buildingName}",
   "DirectBuildingPlanningLabel.youAreAssigned": "Vous êtes affecté sur le bâtiment %{buildingName}",
   "DisplayPersonTexts.personCode.help": "Afficher ou non le matricule des personnes affectées aus postes de travail sur le plan",
   "DisplayPersonTexts.personCode.label": "Matricule",
@@ -52733,12 +53045,12 @@ const fr = {
   "GlobalSearchIncludeScenarios.label": "Inclure les scénarios dans la recherche",
   "GoogleApiWrapper.configurationNotFound": "La clé API Google Maps n'est pas configurée",
   "GoogleApiWrapper.loadingFailed": "Échec du chargement de l'API Google Maps",
-  "HalfDayWorkingLocationToggle.all.help": "Les horaires de la journée sont de 8h00 à 19h00",
-  "HalfDayWorkingLocationToggle.all.label": "Toute la journée",
-  "HalfDayWorkingLocationToggle.am.help": "Les horaires de la matinée sont de 8h00 à 13h30",
-  "HalfDayWorkingLocationToggle.am.label": "Matin",
-  "HalfDayWorkingLocationToggle.pm.help": "Les horaires de l'après-midi sont de 14h00 à 19h00",
-  "HalfDayWorkingLocationToggle.pm.label": "Après-midi",
+  "HalfDayWorkingLocationToggle.allHelp": "Les horaires de la journée sont de 8h00 à 19h00",
+  "HalfDayWorkingLocationToggle.allLabel": "Toute la journée",
+  "HalfDayWorkingLocationToggle.amHelp": "Les horaires de la matinée sont de 8h00 à 13h30",
+  "HalfDayWorkingLocationToggle.amLabel": "Matin",
+  "HalfDayWorkingLocationToggle.pmHelp": "Les horaires de l'après-midi sont de 14h00 à 19h00",
+  "HalfDayWorkingLocationToggle.pmLabel": "Après-midi",
   "HasManyStandaloneNoData.noData": "Il n'y aucun %{targetObjectTypeLabel} d'associé pour %{determinant.defined}",
   "HeatMapSelection.heatmaps.carbonFootprintCount.description": "Colorier les espaces en fonction de l'empreinte carbone du mobilier",
   "HeatMapSelection.heatmaps.carbonFootprintCount.label": "Densité d'empreinte carbone du mobilier",
@@ -52818,6 +53130,9 @@ const fr = {
   "ItemTypesMapFilterZone.tabs.options": "Options",
   "ItemsInventory.EmptyList": "Il n'y a aucun objet dans cet espace",
   "JupDateRangePicker.chooseRange": "Choisissez une période",
+  "JupRoleToJupUiOptionList.globalOptionsHeader": "Options globale de l'interface",
+  "JupRoleToJupUiOptionList.layout2dOptionsHeader": "Options du plan de travail",
+  "JupRoleToJupUiOptionList.setTo": "Définir à %{value}",
   "JupRoleToObjectTypeMatrix.objectTypes.help.checkbox": "Mettre à jour la propriété (%{name})",
   "JupRoleToObjectTypeMatrix.views.help.false": "Afficher la vue d'interface",
   "JupRoleToObjectTypeMatrix.views.help.true": "Cacher la vue d'interface",
@@ -53015,7 +53330,11 @@ const fr = {
   "OrganizationTabsFilter.tabs.hierarchy": "Hiérarchie",
   "OrganizationTabsFilter.tabs.level1": "Services",
   "OrganizationTabsFilter.tabs.topLevel": "Directions",
+  "OtherThanWorkplaceBooking.locationOffice": "Bureau",
+  "OtherThanWorkplaceBooking.locationRemote": "Télétravail",
   "PWLSelectDimensionCard.selectDimensionCard.title": "Sélectionnez une dimension",
+  "ParkingBookingIcon.tooltip": "Cette personne peut réserver des places de parking dans ce bâtiment",
+  "ParkingOptions.noParkingBookedInBuilding": "Aucun parking est réservé",
   "PartnerEntityCreateTab.button.help": "Créer dans %{partnerName}",
   "PartnerEntityCreateTab.button.label": "Créer dans %{partnerName}",
   "PartnerEntityCreateTab.progress.syncing": "Synchronisation %{label}...",
@@ -53061,6 +53380,11 @@ const fr = {
   "PersonPanelWorkplaceAffectations.title": "Affectations aux postes de travail",
   "PersonRelationsPanel.description": "Les relations de cette personne",
   "PersonRelationsPanel.title": "Relations",
+  "PersonSearchSelector.changePersonCta": "Changer la personne",
+  "PersonSearchSelector.noPersonSelected": "Aucune personne sélectionnée",
+  "PersonSearchSelector.removePersonHelp": "Retirer la personne sélectionnée",
+  "PersonSearchSelector.selectPersonCta": "Sélectionner une personne",
+  "PersonSearchSelector.selectedPersonLabel": "Personne : %{personName}",
   "PersonSecurityPanel.description": "Informations relatives à la sécurité et aux évacuations",
   "PersonSecurityPanel.title": "Sécurité",
   "PersonSecurityProfileInRoomListItem.peopleCount": "Il y a %{count} personne(s) avec le profil de sécurité %{name} affectée(s) aux espaces",
@@ -53510,8 +53834,8 @@ const fr = {
   "WorkCanvasLoadingIcon.title": "Chargement du plan",
   "WorkCanvasShortcutTooltipHelp.help": "Raccourci clavier : <b>%{shortcut}</b>",
   "WorkCanvasToggleOptionHelp.shortcut": "Raccourci clavier : <b>%{shortcut}</b>",
-  "WorkingLocationToggle.locations.OFFICE": "Bureau",
-  "WorkingLocationToggle.locations.REMOTE": "Télétravail",
+  "WorkingLocationToggle.locationOffice": "Bureau",
+  "WorkingLocationToggle.locationRemote": "Télétravail",
   "WorkpaceBookingAverageByWeekDay.excludeWeekends": "Exclure les week-ends",
   "WorkpaceBookingAverageByWeekDay.labels.bar": "Nombre de réservations",
   "WorkpaceBookingAverageByWeekDay.labels.line": "Moyenne par semaine",
@@ -53540,6 +53864,7 @@ const fr = {
   "WorkplaceBookingDimensionOccupanyRate.message.occupied": "Le quartier est occupé à %{percentage}",
   "WorkplaceBookingDimensionOccupanyRate.tooltip.crowded": "Le quartier est considéré comme surchargé.",
   "WorkplaceBookingDimensionOccupanyRate.tooltip.title": "Il y a %{bookedWorkplaces} poste(s) de travail occupé(s) sur %{totalBookableWorkplaces} disponibles à la réservation.",
+  "WorkplaceBookingIcon.tooltip": "Cette personne peut réserver des postes de travail dans ce bâtiment",
   "WorkplaceCanvasItem.workplace.free": "Le poste de travail n'est pas occupé",
   "WorkplaceCanvasItem.workplace.isBookable": "Le poste de travail est réservable",
   "WorkplaceCanvasItem.workplace.isFlex": "Le poste de travail est en flex",
@@ -53547,7 +53872,7 @@ const fr = {
   "WorkplaceFullName.noName": "Poste de travail sans nom",
   "WorkplaceList.workplace.flex": "Ce poste de travail est en flex",
   "WorkplaceList.workplace.free": "Ce poste de travail est libre",
-  "WorkplaceList.workplace.transit": "Ce poste de travail est partagé",
+  "WorkplaceList.workplace.transit": "Ce poste de travail est de passage",
   "WorkplaceList.zoomOnWorkplace": "Zoomer sur le poste de travail sur le plan",
   "WorkplaceNestedList.title": "Personnes affectées aux postes de travail",
   "WorkplaceOccupancyRateByDimension.labels.occupancyRate": "Taux d'occupation (%)",
@@ -53562,6 +53887,11 @@ const fr = {
   "WorkplaceTypeDataQualityNotUsed.columns.name": "Nom du type de poste de travail",
   "WorkplaceTypeDataQualityNotUsed.columns.shape": "Forme",
   "WorkplaceTypeInfo.help": "Le nombre de postes de travail est %{count}",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.buttonFixSelectedHelp": "Ajoute la propriété z: 0 aux positions sélectionnées qui n'ont pas de coordonnée z",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.headerCompany": "Entreprise",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.headerItemType": "Type d'objet",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.headerPosition": "Position",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.headerWorkplaceType": "Type de poste de travail",
   "WorkplaceTypeItemTypesDrawer.title": "Liste des types d'objets",
   "WorkplaceTypeItemTypesDrawerSortableItem.info.close": "Replier les options",
   "WorkplaceTypeItemTypesDrawerSortableItem.info.open": "Déplier les options",
@@ -53987,6 +54317,8 @@ const fr = {
   "models.Company.properties.planningNumberOfDays.label": "Nombre de jours de planification",
   "models.Company.properties.proxyImages.description": "Activer le proxy pour les images",
   "models.Company.properties.proxyImages.label": "Images proxy",
+  "models.Company.properties.trackUserActivity.description": "Autoriser Surfy à suivre l'activité des utilisateurs pour améliorer l'expérience utilisateur",
+  "models.Company.properties.trackUserActivity.label": "Autoriser Surfy à suivre l'activité des utilisateurs pour améliorer l'expérience utilisateur",
   "models.Company.properties.workingDaysCount.description": "Le nombre de jours de travail par semaine peut être 5 pour les jours ouvrés, 6 incluant le samedi et 7 incluant le dimanche",
   "models.Company.properties.workingDaysCount.label": "Nombre de jours de travail par semaine",
   "models.Company.properties.workplaceBookingConfirmationRange.description": "Plage horaire pendant laquelle les utilisateurs peuvent confirmer leurs réservations de postes de travail. Format: HH:MM-HH:MM (ex: 06:00-10:30). Ne rien mettre dans ce champ pour ne pas activer la confirmation de réservation de poste de travail",
@@ -54412,16 +54744,26 @@ const fr = {
   "models.JupRoleToJupObjectType.properties.arUpdate.label": "Mise à jour (U)",
   "models.JupRoleToJupObjectType.properties.id.label": "Identifiant de l'association rôle à type d'objet",
   "models.JupRoleToJupObjectType.singular": "Association rôle à type d'objet",
-  "models.JupRoleToJupUiLayout.description": "Une association rôle aux layouts d'interface permet de définir les permissions d'accès aux différentes dispositions d'interface pour un rôle",
-  "models.JupRoleToJupUiLayout.determinant.defined": "l'association du rôle aux layouts d'interface",
-  "models.JupRoleToJupUiLayout.determinant.undefined": "une association du rôle aux layouts d'interface",
-  "models.JupRoleToJupUiLayout.determinants.defined": "les associations du rôle aux layouts d'interface",
-  "models.JupRoleToJupUiLayout.determinants.undefined": "des associations du rôle aux layouts d'interface",
-  "models.JupRoleToJupUiLayout.plural": "Associations rôle aux layouts d'interface",
-  "models.JupRoleToJupUiLayout.properties.canSee.description": "Autorise l'option' à être vu par le rôle",
-  "models.JupRoleToJupUiLayout.properties.canSee.label": "Peut voir l'option",
-  "models.JupRoleToJupUiLayout.properties.id.label": "Identifiant de l'association rôle aux layouts d'interface",
-  "models.JupRoleToJupUiLayout.singular": "Association rôle aux layouts d'interface",
+  "models.JupRoleToJupUiLayout.description": "Une association rôle aux visions permet de définir les permissions d'accès aux différentes visions pour un rôle",
+  "models.JupRoleToJupUiLayout.determinant.defined": "l'association du rôle aux visions",
+  "models.JupRoleToJupUiLayout.determinant.undefined": "une association du rôle aux visions",
+  "models.JupRoleToJupUiLayout.determinants.defined": "les associations du rôle aux visions",
+  "models.JupRoleToJupUiLayout.determinants.undefined": "des associations du rôle aux visions",
+  "models.JupRoleToJupUiLayout.plural": "Associations rôle aux visions",
+  "models.JupRoleToJupUiLayout.properties.canSee.description": "Autorise la vision à être vue par le rôle",
+  "models.JupRoleToJupUiLayout.properties.canSee.label": "Peut voir la vision",
+  "models.JupRoleToJupUiLayout.properties.id.label": "Identifiant de l'association rôle aux visions",
+  "models.JupRoleToJupUiLayout.singular": "Association rôle aux visions",
+  "models.JupRoleToJupUiLayoutTab.description": "Une association rôle aux onglets de plan permet de définir les permissions d'accès aux différents onglets de plan pour un rôle",
+  "models.JupRoleToJupUiLayoutTab.determinant.defined": "l'association du rôle aux onglets de plan",
+  "models.JupRoleToJupUiLayoutTab.determinant.undefined": "une association du rôle aux onglets de plan",
+  "models.JupRoleToJupUiLayoutTab.determinants.defined": "les associations du rôle aux onglets de plan",
+  "models.JupRoleToJupUiLayoutTab.determinants.undefined": "des associations du rôle aux onglets de plan",
+  "models.JupRoleToJupUiLayoutTab.plural": "Associations rôle aux onglets de plan",
+  "models.JupRoleToJupUiLayoutTab.properties.canSee.description": "Autorise l'onglet de plan à être vu par le rôle",
+  "models.JupRoleToJupUiLayoutTab.properties.canSee.label": "Peut voir l'onglet",
+  "models.JupRoleToJupUiLayoutTab.properties.id.label": "Identifiant de l'association rôle aux onglets de plan",
+  "models.JupRoleToJupUiLayoutTab.singular": "Association rôle aux onglets de plan",
   "models.JupRoleToJupUiOperation.description": "Une association rôle aux opérations d'interface permet de définir les permissions d'accès aux différentes opérations de l'interface pour un rôle",
   "models.JupRoleToJupUiOperation.determinant.defined": "l'association du rôle aux opérations d'interface",
   "models.JupRoleToJupUiOperation.determinant.undefined": "une association du rôle aux opérations d'interface",
@@ -54458,6 +54800,16 @@ const fr = {
   "models.JupUiLayout.plural": "Visions du plan",
   "models.JupUiLayout.properties.id.label": "Identifiant de la vision du plan",
   "models.JupUiLayout.singular": "Vision du plan",
+  "models.JupUiLayoutTab.description": "Un onglet de plan définit les différents onglets disponibles dans l'interface de visualisation des plans",
+  "models.JupUiLayoutTab.determinant.defined": "l'onglet de plan",
+  "models.JupUiLayoutTab.determinant.undefined": "un onglet de plan",
+  "models.JupUiLayoutTab.determinants.defined": "les onglets de plan",
+  "models.JupUiLayoutTab.determinants.undefined": "des onglets de plan",
+  "models.JupUiLayoutTab.plural": "Onglets de plan",
+  "models.JupUiLayoutTab.properties.id.label": "Identifiant de l'onglet de plan",
+  "models.JupUiLayoutTab.properties.name.description": "Le nom de l'onglet affiché dans l'interface",
+  "models.JupUiLayoutTab.properties.name.label": "Nom de l'onglet",
+  "models.JupUiLayoutTab.singular": "Onglet de plan",
   "models.JupUiOperation.description": "Une opération d'interface définit les actions et fonctionnalités disponibles dans l'interface utilisateur",
   "models.JupUiOperation.determinant.defined": "l'opération d'interface",
   "models.JupUiOperation.determinant.undefined": "une opération d'interface",
@@ -54902,6 +55254,8 @@ const fr = {
   "models.PersonWorkingLocation.views.booking-maps.label": "Réservations sur un plan",
   "models.PersonWorkingLocation.views.my-planning.help": "Gérer mon planning des prochaines semaines",
   "models.PersonWorkingLocation.views.my-planning.label": "Gérer mon planning",
+  "models.PersonWorkingLocation.views.obo-planning.help": "Gérer le planning et effectuer des réservations pour une autre personne",
+  "models.PersonWorkingLocation.views.obo-planning.label": "Réserver pour une autre personne",
   "models.PersonWorkingLocation.views.pwl-dimension.help": "Visualiser les réservations par quartier",
   "models.PersonWorkingLocation.views.pwl-dimension.label": "Réservations par quartiers",
   "models.Room.description": "Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces",
@@ -55261,6 +55615,8 @@ const fr = {
   "models.WorkplaceType.views.avatar.label": "Voir la forme",
   "models.WorkplaceType.views.dq-not-used.help": "Lister tous les types de poste de travail non utilisés via des postes de travail",
   "models.WorkplaceType.views.dq-not-used.label": "Non utilisés",
+  "models.WorkplaceType.views.dq-workplace-type-item-type-position-z.help": "Lister les types d'objet de type de poste de travail avec une position manquant la coordonnée z",
+  "models.WorkplaceType.views.dq-workplace-type-item-type-position-z.label": "Position Z manquante",
   "models.WorkplaceType.views.editor.help": "Editer les formes et l'emplacement des types d'objet pour le type de poste de travail %{name}",
   "models.WorkplaceType.views.editor.label": "Editer les formes",
   "models.WorkplaceTypeItemType.determinant.defined": "le type d'objet dans le type de poste de travail",
@@ -55344,11 +55700,14 @@ const en = {
   "BookParkingFloorRoomsDrawer.noRoomsAvailable": "No parking spaces available on this floor",
   "BookParkingFloorRoomsDrawer.view": "See",
   "BookParkingFloorRoomsDrawer.viewOnMap": "See on the map",
-  "BookParkingInBuildingOption.availableParkingSpaces": "%{availableCount} space(s) available",
-  "BookParkingInBuildingOption.bookParkingOnFloorHelp": "Book parking on %{floorName} (%{availableCount} spaces available)",
-  "BookParkingInBuildingOption.bookParkingOnFloorLabel": "Book parking on %{floorName}",
-  "BookParkingInBuildingOption.drawerTitle": "Book parking on %{floorName} for the period %{slotString}",
+  "BookParkingInBuildingOption.daySlotAll": "for the full day",
+  "BookParkingInBuildingOption.daySlotAmWithArticle": "in the morning",
+  "BookParkingInBuildingOption.daySlotIncompatible": "No parking spaces are available for your vehicle type%{vehicleInfo} during your selected time slot.\nYou can only book parking %{availableSlots}.",
+  "BookParkingInBuildingOption.daySlotPartiallyIncompatible": "Some parking types (%{roomTypeNames}) are not available for your selected time slot, but you can still book other compatible parking spaces.",
+  "BookParkingInBuildingOption.daySlotPmWithArticle": "in the afternoon",
   "BookParkingInBuildingOption.noParkingAvailable": "There is no parking available for your vehicle type in this building, please contact your administrator",
+  "BookParkingInBuildingOption.noVehicle": "You need to register a vehicle in your profile to book parking spaces",
+  "BookParkingInBuildingOption.singleBookingPerDayIncompatible": "You already have a parking booking for this day. With your vehicle type, you can only book one parking space per day.",
   "BookPersonBuildingWorkplace.availableWorkplaces": "%{freeWorkplaces} places available",
   "BookPersonBuildingWorkplace.bookWorkplaceOnFloor": "Reserve a workstation at %{floorName} for the period %{slotString}",
   "BookPersonBuildingWorkplace.bookWorkplaceOnFloorButton.label": "Reserve a workstation at %{floorName}",
@@ -55388,10 +55747,9 @@ const en = {
   "BookingMap.errors.noBuildingInFilter": "Please select a building and floor in the filter to view reservations",
   "BookingMap.errors.noDateInFilter": "Please choose a date in the filter to see reservations",
   "BookingMap.errors.noFloorInFilter": "Please select a floor in the filter to see reservations",
-  "BookingParkingInBuildingWithRoomTypes.availableParkingSpaces": "%{availableCount} space(s) available",
   "BookingParkingInBuildingWithRoomTypes.bookParkingOnFloorHelp": "%{bookedRooms} reservation(s), %{freeRooms} parking space(s) available out of %{totalRooms}",
-  "BookingParkingInBuildingWithRoomTypes.bookParkingOnFloorLabel": "Book parking on %{floorName}",
   "BookingParkingInBuildingWithRoomTypes.drawerTitle": "Book parking on %{floorName} for the period %{slotString}",
+  "BookingParkingInBuildingWithRoomTypes.noFreeParkingAvailableInFloor": "No free parking available on %{floorName}",
   "BookingRoomTitle.bookThisSpaceFor": "Reserve this slot for %{slotTimes}",
   "BookingRoomTitle.booked": "This parking space is already reserved",
   "BookingRoomTitle.free": "Reserve this parking space",
@@ -55502,8 +55860,8 @@ const en = {
   "CalibrateLayoutDrawer.options.save.label": "To register",
   "CalibrateLayoutDrawer.title": "Calibrate the plan",
   "CampusBuildingsAccordion.buildingCount": "The number of buildings",
-  "CancelAddItemToRoom.help": "Cancel adding the object",
-  "CancelAddWorkplaceToRoom.help": "Cancel the addition of the workstation",
+  "CancelAddItemToRoom.help": "Cancel adding the object to the space",
+  "CancelAddWorkplaceToRoom.help": "Cancel adding the workstation to the space",
   "CancelDuplicateShapsToRoomMouse.help": "Undo duplicate shapes",
   "ChangeColor.classic": "Select a color with the advanced plate",
   "ChangeCompanyMenu.ChangeCompany": "See another company in a new page",
@@ -55516,6 +55874,14 @@ const en = {
   "CheckAllDefaultViews.shortcuts.title": "Configuration shortcuts",
   "CheckAllDefaultViews.shortcuts.views.buttonsHelp": "Check this view for all types of entities",
   "CheckAllDefaultViews.shortcuts.views.title": "Shortcuts for default interface views",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.daySlotAll": "for the full day",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.daySlotAmWithArticle": "in the morning",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.daySlotIncompatible": "No parking spaces are available for your vehicle type%{vehicleInfo} during your selected time slot.\nYou can only book parking %{availableSlots}.",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.daySlotPmWithArticle": "in the afternoon",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.noParkingAvailable": "There is no parking available for your vehicle type in this building, please contact your administrator",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.noVehicle": "You need to register a vehicle in your profile to book parking spaces",
+  "CheckPersonVehiculeParkingDaySlotSingleBookingPerDayCompatibility.singleBookingPerDayIncompatible": "You already have a parking booking for this day. With your vehicle type, you can only book one parking space per day.",
+  "CheckThereIsAtLeastOneFreeRoomInTheBuilding.noFreeParkingAvailable": "No parking spaces available during your time slot",
   "CloneEntitiesFailed.cloneFailed": "Failed to clone",
   "CollapseSwitchButton.help.false": "See the detail",
   "CollapseSwitchButton.help.true": "Hide the detail",
@@ -55605,6 +55971,10 @@ const en = {
   "DateDimensionSelect.options.week": "Week",
   "DateDimensionSelect.options.year": "Year",
   "DayHeaders.time": "Time",
+  "DaySlotTypeLabel.amHelp": "Morning hours are from 8:00 AM to 1:30 PM",
+  "DaySlotTypeLabel.amLabel": "Morning",
+  "DaySlotTypeLabel.pmHelp": "Afternoon hours are from 2:00 PM to 7:00 PM",
+  "DaySlotTypeLabel.pmLabel": "Afternoon",
   "DeleteDialog.cancel.help": "Undelete",
   "DeleteDialog.cancel.label": "Cancel",
   "DeleteDialog.content": "You are about to delete <b>%{determinant.undefined}</b> , this action is not reversible and may have impacts, are you sure you want to perform this action?",
@@ -55623,6 +55993,7 @@ const en = {
   "DeskBookingConfirmationButton.confirm": "Confirm",
   "DeskBookingConfirmationButton.confirmHelp": "Confirm that you are present at your workstation",
   "DeskBookingsSection.noBookingsFound": "No upcoming bookings found.",
+  "DimensionBuildingPlanningLabel.anotherPersonIsAssigned": "%{personFullName} is assigned to %{dimensionTypeName} %{dimensionName}",
   "DimensionBuildingPlanningLabel.youAreAssigned": "You are assigned to %{dimensionTypeName} %{dimensionName}",
   "DimensionInfo.carbonFootprint.help": "The carbon footprint is %{value} of CO2 emitted for %{dimensionType} %{dimension}",
   "DimensionInfo.dimensionPeopleCount.help": "There are %{value} affected person(s) in %{dimensionType} %{dimension}",
@@ -55661,6 +56032,7 @@ const en = {
   "DimensionTypesByTab.ListItemHasChildrenSelected": "Dimensions are selected",
   "DimensionTypesByTab.action.false": "unselect all",
   "DimensionTypesByTab.action.true": "Select all",
+  "DirectBuildingPlanningLabel.anotherPersonIsAssigned": "%{personFullName} is assigned to the building %{buildingName}",
   "DirectBuildingPlanningLabel.youAreAssigned": "You are assigned to the building %{buildingName}",
   "DisplayPersonTexts.personCode.help": "Whether or not to display the number of the people assigned to the workstations on the plan",
   "DisplayPersonTexts.personCode.label": "Registration number",
@@ -55896,12 +56268,12 @@ const en = {
   "GlobalSearchIncludeScenarios.label": "Include scenarios in search",
   "GoogleApiWrapper.configurationNotFound": "Google Maps API key is not configured",
   "GoogleApiWrapper.loadingFailed": "Failed to load Google Maps API",
-  "HalfDayWorkingLocationToggle.all.help": "The hours of the day are from 8:00 a.m. to 7:00 p.m.",
-  "HalfDayWorkingLocationToggle.all.label": "All day",
-  "HalfDayWorkingLocationToggle.am.help": "Morning hours are from 8:00 a.m. to 1:30 p.m.",
-  "HalfDayWorkingLocationToggle.am.label": "Morning",
-  "HalfDayWorkingLocationToggle.pm.help": "Afternoon hours are from 2:00 p.m. to 7:00 p.m.",
-  "HalfDayWorkingLocationToggle.pm.label": "Afternoon",
+  "HalfDayWorkingLocationToggle.allHelp": "Full day hours are from 8:00 AM to 7:00 PM",
+  "HalfDayWorkingLocationToggle.allLabel": "Full day",
+  "HalfDayWorkingLocationToggle.amHelp": "Morning hours are from 8:00 AM to 1:30 PM",
+  "HalfDayWorkingLocationToggle.amLabel": "Morning",
+  "HalfDayWorkingLocationToggle.pmHelp": "Afternoon hours are from 2:00 PM to 7:00 PM",
+  "HalfDayWorkingLocationToggle.pmLabel": "Afternoon",
   "HasManyStandaloneNoData.noData": "There is no associated %{targetObjectTypeLabel} for %{determinant.defined}",
   "HeatMapSelection.heatmaps.carbonFootprintCount.description": "Color the spaces according to the carbon footprint of the furniture",
   "HeatMapSelection.heatmaps.carbonFootprintCount.label": "Furniture Carbon Footprint Density",
@@ -55981,6 +56353,9 @@ const en = {
   "ItemTypesMapFilterZone.tabs.options": "options",
   "ItemsInventory.EmptyList": "There are no objects in this space",
   "JupDateRangePicker.chooseRange": "Choose a period",
+  "JupRoleToJupUiOptionList.globalOptionsHeader": "Global interface options",
+  "JupRoleToJupUiOptionList.layout2dOptionsHeader": "Worktop options",
+  "JupRoleToJupUiOptionList.setTo": "Set to %{value}",
   "JupRoleToObjectTypeMatrix.objectTypes.help.checkbox": "Update property ( %{name} )",
   "JupRoleToObjectTypeMatrix.views.help.false": "Show interface view",
   "JupRoleToObjectTypeMatrix.views.help.true": "Hide interface view",
@@ -56178,7 +56553,11 @@ const en = {
   "OrganizationTabsFilter.tabs.hierarchy": "Hierarchy",
   "OrganizationTabsFilter.tabs.level1": "Services",
   "OrganizationTabsFilter.tabs.topLevel": "Directions",
+  "OtherThanWorkplaceBooking.locationOffice": "Desk",
+  "OtherThanWorkplaceBooking.locationRemote": "Telework",
   "PWLSelectDimensionCard.selectDimensionCard.title": "Select a dimension",
+  "ParkingBookingIcon.tooltip": "This person can reserve parking spaces in this building",
+  "ParkingOptions.noParkingBookedInBuilding": "No parking is reserved",
   "PartnerEntityCreateTab.button.help": "Create in %{partnerName}",
   "PartnerEntityCreateTab.button.label": "Create in %{partnerName}",
   "PartnerEntityCreateTab.progress.syncing": "Synchronizing %{label} ...",
@@ -56224,6 +56603,11 @@ const en = {
   "PersonPanelWorkplaceAffectations.title": "Workstation assignments",
   "PersonRelationsPanel.description": "This person's relationships",
   "PersonRelationsPanel.title": "Relationships",
+  "PersonSearchSelector.changePersonCta": "Change person",
+  "PersonSearchSelector.noPersonSelected": "No person selected",
+  "PersonSearchSelector.removePersonHelp": "Clear selected person",
+  "PersonSearchSelector.selectPersonCta": "Select a person",
+  "PersonSearchSelector.selectedPersonLabel": "Person: %{personName}",
   "PersonSecurityPanel.description": "Safety and Evacuation Information",
   "PersonSecurityPanel.title": "security",
   "PersonSecurityProfileInRoomListItem.peopleCount": "There are %{count} person(s) with security profile %{name} assigned to spaces",
@@ -56673,8 +57057,8 @@ const en = {
   "WorkCanvasLoadingIcon.title": "Loading the plan",
   "WorkCanvasShortcutTooltipHelp.help": "Keyboard shortcut: <b>%{shortcut}</b>",
   "WorkCanvasToggleOptionHelp.shortcut": "Keyboard shortcut: <b>%{shortcut}</b>",
-  "WorkingLocationToggle.locations.OFFICE": "Office",
-  "WorkingLocationToggle.locations.REMOTE": "Remote",
+  "WorkingLocationToggle.locationOffice": "Office",
+  "WorkingLocationToggle.locationRemote": "Remote",
   "WorkpaceBookingAverageByWeekDay.excludeWeekends": "Exclude weekends",
   "WorkpaceBookingAverageByWeekDay.labels.bar": "Number of bookings",
   "WorkpaceBookingAverageByWeekDay.labels.line": "Average per week",
@@ -56703,6 +57087,7 @@ const en = {
   "WorkplaceBookingDimensionOccupanyRate.message.occupied": "The territory is occupied at %{percentage}",
   "WorkplaceBookingDimensionOccupanyRate.tooltip.crowded": "The territory is considered overcrowded.",
   "WorkplaceBookingDimensionOccupanyRate.tooltip.title": "There are %{bookedWorkplaces} occupied workstation(s) out of %{totalBookableWorkplaces} available for booking.",
+  "WorkplaceBookingIcon.tooltip": "This person can reserve workstations in this building",
   "WorkplaceCanvasItem.workplace.free": "The workstation is not busy",
   "WorkplaceCanvasItem.workplace.isBookable": "The workstation is reservable",
   "WorkplaceCanvasItem.workplace.isFlex": "The workstation is in flex",
@@ -56710,7 +57095,7 @@ const en = {
   "WorkplaceFullName.noName": "Unnamed workstation",
   "WorkplaceList.workplace.flex": "This workstation is in flex",
   "WorkplaceList.workplace.free": "This workstation is free",
-  "WorkplaceList.workplace.transit": "This workstation is shared",
+  "WorkplaceList.workplace.transit": "This workstation is temporary.",
   "WorkplaceList.zoomOnWorkplace": "Zoom to the workstation on the plan",
   "WorkplaceNestedList.title": "People assigned to workstations",
   "WorkplaceOccupancyRateByDimension.labels.occupancyRate": "Occupancy Rate (%)",
@@ -56725,6 +57110,11 @@ const en = {
   "WorkplaceTypeDataQualityNotUsed.columns.name": "Workstation type name",
   "WorkplaceTypeDataQualityNotUsed.columns.shape": "Form",
   "WorkplaceTypeInfo.help": "The number of workstations is %{count}",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.buttonFixSelectedHelp": "Adds the property z: 0 to selected positions that do not have a z coordinate",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.headerCompany": "Business",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.headerItemType": "Type of object",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.headerPosition": "Position",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.headerWorkplaceType": "Type of workstation",
   "WorkplaceTypeItemTypesDrawer.title": "List of object types",
   "WorkplaceTypeItemTypesDrawerSortableItem.info.close": "Fold options",
   "WorkplaceTypeItemTypesDrawerSortableItem.info.open": "Unfold options",
@@ -57150,6 +57540,8 @@ const en = {
   "models.Company.properties.planningNumberOfDays.label": "Number of planning days",
   "models.Company.properties.proxyImages.description": "Enable proxy for images",
   "models.Company.properties.proxyImages.label": "Proxy images",
+  "models.Company.properties.trackUserActivity.description": "Allow Surfy to track user activity to improve the user experience",
+  "models.Company.properties.trackUserActivity.label": "Allow Surfy to track user activity to improve the user experience",
   "models.Company.properties.workingDaysCount.description": "The number of working days per week can be 5 for working days, 6 including Saturday and 7 including Sunday",
   "models.Company.properties.workingDaysCount.label": "Number of working days per week",
   "models.Company.properties.workplaceBookingConfirmationRange.description": "Time range during which users can confirm their workstation reservations. Format: HH:MM-HH:MM (e.g., 06:00-10:30). Leave this field blank to disable workstation reservation confirmation.",
@@ -57575,16 +57967,26 @@ const en = {
   "models.JupRoleToJupObjectType.properties.arUpdate.label": "Update (U)",
   "models.JupRoleToJupObjectType.properties.id.label": "Role to object type association identifier",
   "models.JupRoleToJupObjectType.singular": "Role to object type association",
-  "models.JupRoleToJupUiLayout.description": "A role association to interface layouts allows you to define access permissions to different interface layouts for a role",
-  "models.JupRoleToJupUiLayout.determinant.defined": "the association of the role with interface layouts",
-  "models.JupRoleToJupUiLayout.determinant.undefined": "an association of the role to interface layouts",
-  "models.JupRoleToJupUiLayout.determinants.defined": "role associations to interface layouts",
-  "models.JupRoleToJupUiLayout.determinants.undefined": "from role associations to interface layouts",
-  "models.JupRoleToJupUiLayout.plural": "Role associations to interface layouts",
-  "models.JupRoleToJupUiLayout.properties.canSee.description": "Allows the option' to be seen by the role",
-  "models.JupRoleToJupUiLayout.properties.canSee.label": "Can see option",
-  "models.JupRoleToJupUiLayout.properties.id.label": "Identifier of the role association to interface layouts",
-  "models.JupRoleToJupUiLayout.singular": "Associating roles with interface layouts",
+  "models.JupRoleToJupUiLayout.description": "A role-to-visions association allows you to define access permissions to different visions for a role.",
+  "models.JupRoleToJupUiLayout.determinant.defined": "the association of the role with the visions",
+  "models.JupRoleToJupUiLayout.determinant.undefined": "an association of role with visions",
+  "models.JupRoleToJupUiLayout.determinants.defined": "the associations of role with visions",
+  "models.JupRoleToJupUiLayout.determinants.undefined": "associations of role to visions",
+  "models.JupRoleToJupUiLayout.plural": "Associations play a role in visions",
+  "models.JupRoleToJupUiLayout.properties.canSee.description": "Allows the vision to be seen by the role",
+  "models.JupRoleToJupUiLayout.properties.canSee.label": "Can see the vision",
+  "models.JupRoleToJupUiLayout.properties.id.label": "Role-based association identifier for visions",
+  "models.JupRoleToJupUiLayout.singular": "Association role to visions",
+  "models.JupRoleToJupUiLayoutTab.description": "A role association with plan tabs allows you to define access permissions to the different plan tabs for a role.",
+  "models.JupRoleToJupUiLayoutTab.determinant.defined": "associating the role with the plan tabs",
+  "models.JupRoleToJupUiLayoutTab.determinant.undefined": "an association of the role with the plan tabs",
+  "models.JupRoleToJupUiLayoutTab.determinants.defined": "role associations to plan tabs",
+  "models.JupRoleToJupUiLayoutTab.determinants.undefined": "role associations to plan tabs",
+  "models.JupRoleToJupUiLayoutTab.plural": "Role associations to plan tabs",
+  "models.JupRoleToJupUiLayoutTab.properties.canSee.description": "Allows the plan tab to be seen by the role",
+  "models.JupRoleToJupUiLayoutTab.properties.canSee.label": "Can see the tab",
+  "models.JupRoleToJupUiLayoutTab.properties.id.label": "Role association identifier for plan tabs",
+  "models.JupRoleToJupUiLayoutTab.singular": "role association to plan tabs",
   "models.JupRoleToJupUiOperation.description": "A role association to interface operations allows you to define access permissions to the different interface operations for a role",
   "models.JupRoleToJupUiOperation.determinant.defined": "association of the role with interface operations",
   "models.JupRoleToJupUiOperation.determinant.undefined": "an association of the role to interface operations",
@@ -57621,6 +58023,16 @@ const en = {
   "models.JupUiLayout.plural": "Visions of the plan",
   "models.JupUiLayout.properties.id.label": "Plan Vision Identifier",
   "models.JupUiLayout.singular": "View of the plan",
+  "models.JupUiLayoutTab.description": "A plan tab defines the different tabs available in the plan viewing interface.",
+  "models.JupUiLayoutTab.determinant.defined": "the plan tab",
+  "models.JupUiLayoutTab.determinant.undefined": "a map tab",
+  "models.JupUiLayoutTab.determinants.defined": "the plan tabs",
+  "models.JupUiLayoutTab.determinants.undefined": "plan tabs",
+  "models.JupUiLayoutTab.plural": "Map tabs",
+  "models.JupUiLayoutTab.properties.id.label": "Map tab ID",
+  "models.JupUiLayoutTab.properties.name.description": "The name of the tab displayed in the interface",
+  "models.JupUiLayoutTab.properties.name.label": "Tab name",
+  "models.JupUiLayoutTab.singular": "Map tab",
   "models.JupUiOperation.description": "An interface operation defines the actions and functionality available in the user interface",
   "models.JupUiOperation.determinant.defined": "interface operation",
   "models.JupUiOperation.determinant.undefined": "an interface operation",
@@ -58065,6 +58477,8 @@ const en = {
   "models.PersonWorkingLocation.views.booking-maps.label": "Reservations on a plan",
   "models.PersonWorkingLocation.views.my-planning.help": "Manage my schedule for the next few weeks",
   "models.PersonWorkingLocation.views.my-planning.label": "Manage my schedule",
+  "models.PersonWorkingLocation.views.obo-planning.help": "Manage the schedule and make bookings for another person",
+  "models.PersonWorkingLocation.views.obo-planning.label": "Book for another person",
   "models.PersonWorkingLocation.views.pwl-dimension.help": "View reservations by territory",
   "models.PersonWorkingLocation.views.pwl-dimension.label": "Reservations by territories",
   "models.Room.description": "Spaces are workplaces or areas in order to divide a floor into sub-spaces.",
@@ -58424,6 +58838,8 @@ const en = {
   "models.WorkplaceType.views.avatar.label": "See the shape",
   "models.WorkplaceType.views.dq-not-used.help": "List all types of unused workstations via workstations",
   "models.WorkplaceType.views.dq-not-used.label": "Not used",
+  "models.WorkplaceType.views.dq-workplace-type-item-type-position-z.help": "List the types of workstation objects whose position is missing the z-coordinate.",
+  "models.WorkplaceType.views.dq-workplace-type-item-type-position-z.label": "Missing Z position",
   "models.WorkplaceType.views.editor.help": "Edit shapes and locations of object types for workstation type %{name}",
   "models.WorkplaceType.views.editor.label": "Edit shapes",
   "models.WorkplaceTypeItemType.determinant.defined": "the object type in the workstation type",
@@ -58507,11 +58923,14 @@ const es = {
   "BookParkingFloorRoomsDrawer.noRoomsAvailable": "No hay plazas de aparcamiento disponibles en este piso.",
   "BookParkingFloorRoomsDrawer.view": "Ver",
   "BookParkingFloorRoomsDrawer.viewOnMap": "Ver en el mapa",
-  "BookParkingInBuildingOption.availableParkingSpaces": "%{availableCount} lugar(es) disponible(s)",
-  "BookParkingInBuildingOption.bookParkingOnFloorHelp": "Reserva una plaza de aparcamiento en %{floorName} ( %{availableCount} plazas disponibles)",
-  "BookParkingInBuildingOption.bookParkingOnFloorLabel": "Reserva una plaza de aparcamiento en %{floorName}",
-  "BookParkingInBuildingOption.drawerTitle": "Reserva una plaza de aparcamiento en %{floorName} para el período %{slotString}",
+  "BookParkingInBuildingOption.daySlotAll": "todo el día",
+  "BookParkingInBuildingOption.daySlotAmWithArticle": "La mañana",
+  "BookParkingInBuildingOption.daySlotIncompatible": "Solo puedes reservar una plaza de aparcamiento para %{availableSlots} . No hay plazas disponibles para tu tipo de vehículo %{vehicleInfo} durante la franja horaria seleccionada.\n",
+  "BookParkingInBuildingOption.daySlotPartiallyIncompatible": "Algunos tipos de estacionamiento ( %{roomTypeNames} ) no están disponibles para el horario seleccionado, pero aún puedes reservar otros espacios de estacionamiento compatibles.",
+  "BookParkingInBuildingOption.daySlotPmWithArticle": "la tarde",
   "BookParkingInBuildingOption.noParkingAvailable": "No hay estacionamiento disponible para su tipo de vehículo en este edificio; comuníquese con su administrador.",
+  "BookParkingInBuildingOption.noVehicle": "Debes registrar un vehículo en tu perfil para reservar plazas de aparcamiento.",
+  "BookParkingInBuildingOption.singleBookingPerDayIncompatible": "Ya tienes una reserva de estacionamiento para hoy. Con tu tipo de vehículo, solo puedes reservar una plaza por día.",
   "BookPersonBuildingWorkplace.availableWorkplaces": "%{freeWorkplaces} plazas disponibles",
   "BookPersonBuildingWorkplace.bookWorkplaceOnFloor": "Reserve una estación de trabajo en %{floorName} para el período %{slotString}",
   "BookPersonBuildingWorkplace.bookWorkplaceOnFloorButton.label": "Reserve una estación de trabajo en %{floorName}",
@@ -58551,10 +58970,9 @@ const es = {
   "BookingMap.errors.noBuildingInFilter": "Por favor seleccione un edificio y piso en el filtro para ver las reservas",
   "BookingMap.errors.noDateInFilter": "Por favor seleccione una fecha en el filtro para ver las reservas",
   "BookingMap.errors.noFloorInFilter": "Por favor seleccione un piso en el filtro para ver las reservas",
-  "BookingParkingInBuildingWithRoomTypes.availableParkingSpaces": "%{availableCount} lugar(es) disponible(s)",
   "BookingParkingInBuildingWithRoomTypes.bookParkingOnFloorHelp": "%{bookedRooms} reserva(s), %{freeRooms} plaza(s) de aparcamiento disponibles de %{totalRooms}",
-  "BookingParkingInBuildingWithRoomTypes.bookParkingOnFloorLabel": "Reserva una plaza de aparcamiento en %{floorName}",
   "BookingParkingInBuildingWithRoomTypes.drawerTitle": "Reserva una plaza de aparcamiento en %{floorName} para el período %{slotString}",
+  "BookingParkingInBuildingWithRoomTypes.noFreeParkingAvailableInFloor": "No hay plazas de aparcamiento disponibles en %{floorName}",
   "BookingRoomTitle.bookThisSpaceFor": "Reserva este espacio para %{slotTimes}",
   "BookingRoomTitle.booked": "Esta plaza de aparcamiento ya está reservada.",
   "BookingRoomTitle.free": "Reserva esta plaza de parking",
@@ -58665,8 +59083,8 @@ const es = {
   "CalibrateLayoutDrawer.options.save.label": "Para registrarse",
   "CalibrateLayoutDrawer.title": "Calibrar el plan",
   "CampusBuildingsAccordion.buildingCount": "El número de edificios",
-  "CancelAddItemToRoom.help": "Cancelar la adición del objeto",
-  "CancelAddWorkplaceToRoom.help": "Cancelar la adición de la estación de trabajo",
+  "CancelAddItemToRoom.help": "Cancelar la adición del objeto al espacio",
+  "CancelAddWorkplaceToRoom.help": "Cancelar la adición de la estación de trabajo al espacio",
   "CancelDuplicateShapsToRoomMouse.help": "Deshacer formas duplicadas",
   "ChangeColor.classic": "Selecciona un color con la placa avanzada",
   "ChangeCompanyMenu.ChangeCompany": "Ver otra empresa en una página nueva",
@@ -58679,6 +59097,14 @@ const es = {
   "CheckAllDefaultViews.shortcuts.title": "Atajos de configuración",
   "CheckAllDefaultViews.shortcuts.views.buttonsHelp": "Consulte esta vista para todo tipo de entidades",
   "CheckAllDefaultViews.shortcuts.views.title": "Accesos directos para vistas de interfaz predeterminadas",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.daySlotAll": "todo el día",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.daySlotAmWithArticle": "La mañana",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.daySlotIncompatible": "Solo puedes reservar una plaza de aparcamiento para %{availableSlots} . No hay plazas disponibles para tu tipo de vehículo %{vehicleInfo} durante la franja horaria seleccionada.",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.daySlotPmWithArticle": "la tarde",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.noParkingAvailable": "No hay estacionamiento disponible para su tipo de vehículo en este edificio; comuníquese con su administrador.",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.noVehicle": "Debes registrar un vehículo en tu perfil para reservar plazas de aparcamiento.",
+  "CheckPersonVehiculeParkingDaySlotSingleBookingPerDayCompatibility.singleBookingPerDayIncompatible": "Ya tienes una reserva de estacionamiento para hoy. Con tu tipo de vehículo, solo puedes reservar una plaza por día.",
+  "CheckThereIsAtLeastOneFreeRoomInTheBuilding.noFreeParkingAvailable": "No hay plazas de aparcamiento disponibles durante su franja horaria",
   "CloneEntitiesFailed.cloneFailed": "La clonación es imposible.",
   "CollapseSwitchButton.help.false": "Ver el detalle",
   "CollapseSwitchButton.help.true": "ocultar el detalle",
@@ -58768,6 +59194,10 @@ const es = {
   "DateDimensionSelect.options.week": "Semana",
   "DateDimensionSelect.options.year": "Año",
   "DayHeaders.time": "Hora",
+  "DaySlotTypeLabel.amHelp": "El horario de mañana es de 8:00 a 13:30 horas.",
+  "DaySlotTypeLabel.amLabel": "Mañana",
+  "DaySlotTypeLabel.pmHelp": "El horario de tarde es de 14:00 a 19:00 horas.",
+  "DaySlotTypeLabel.pmLabel": "Tarde",
   "DeleteDialog.cancel.help": "recuperar",
   "DeleteDialog.cancel.label": "anular",
   "DeleteDialog.content": "Está a punto de eliminar <b>%{determinant.undefined}</b> , esta acción no es reversible y puede tener impactos, ¿está seguro de que desea realizar esta acción?",
@@ -58786,6 +59216,7 @@ const es = {
   "DeskBookingConfirmationButton.confirm": "Confirma tu asistencia",
   "DeskBookingConfirmationButton.confirmHelp": "Confirme que está presente en su estación de trabajo",
   "DeskBookingsSection.noBookingsFound": "No se encontraron reservas próximas.",
+  "DimensionBuildingPlanningLabel.anotherPersonIsAssigned": "%{personFullName} está asignado a %{dimensionTypeName} %{dimensionName}",
   "DimensionBuildingPlanningLabel.youAreAssigned": "Estás asignado a %{dimensionTypeName} %{dimensionName}",
   "DimensionInfo.carbonFootprint.help": "La huella de carbono es %{value} de CO2 emitido para %{dimensionType} %{dimension}",
   "DimensionInfo.dimensionPeopleCount.help": "Hay %{value} persona(s) afectada(s) en %{dimensionType} %{dimension}",
@@ -58824,6 +59255,7 @@ const es = {
   "DimensionTypesByTab.ListItemHasChildrenSelected": "Se seleccionan las dimensiones",
   "DimensionTypesByTab.action.false": "Deseleccionar todo",
   "DimensionTypesByTab.action.true": "Seleccionar todo",
+  "DirectBuildingPlanningLabel.anotherPersonIsAssigned": "%{personFullName} está asignado al edificio %{buildingName}",
   "DirectBuildingPlanningLabel.youAreAssigned": "Estás asignado al edificio %{buildingName}",
   "DisplayPersonTexts.personCode.help": "Mostrar o no el número de personas asignadas a las estaciones de trabajo en el plan",
   "DisplayPersonTexts.personCode.label": "Número de registro",
@@ -59059,12 +59491,12 @@ const es = {
   "GlobalSearchIncludeScenarios.label": "Incluir escenarios en la búsqueda",
   "GoogleApiWrapper.configurationNotFound": "La clave API de Google Maps no está configurada",
   "GoogleApiWrapper.loadingFailed": "No se pudo cargar la API de Google Maps",
-  "HalfDayWorkingLocationToggle.all.help": "El horario del día es de 8:00 a.m. a 7:00 p.m.",
-  "HalfDayWorkingLocationToggle.all.label": "Todo el día",
-  "HalfDayWorkingLocationToggle.am.help": "El horario de mañana es de 8:00 a 13:30 horas.",
-  "HalfDayWorkingLocationToggle.am.label": "Mañana",
-  "HalfDayWorkingLocationToggle.pm.help": "El horario de tarde es de 14:00 a 19:00 horas.",
-  "HalfDayWorkingLocationToggle.pm.label": "Tarde",
+  "HalfDayWorkingLocationToggle.allHelp": "El horario del día es de 8:00 a.m. a 7:00 p.m.",
+  "HalfDayWorkingLocationToggle.allLabel": "Todo el día",
+  "HalfDayWorkingLocationToggle.amHelp": "El horario de mañana es de 8:00 a 13:30 horas.",
+  "HalfDayWorkingLocationToggle.amLabel": "Mañana",
+  "HalfDayWorkingLocationToggle.pmHelp": "El horario de tarde es de 14:00 a 19:00 horas.",
+  "HalfDayWorkingLocationToggle.pmLabel": "Tarde",
   "HasManyStandaloneNoData.noData": "No hay ningún %{targetObjectTypeLabel} asociado para %{determinant.defined}",
   "HeatMapSelection.heatmaps.carbonFootprintCount.description": "Colorea los espacios según la huella de carbono del mobiliario",
   "HeatMapSelection.heatmaps.carbonFootprintCount.label": "Mobiliario Densidad Huella de Carbono",
@@ -59144,6 +59576,9 @@ const es = {
   "ItemTypesMapFilterZone.tabs.options": "opciones",
   "ItemsInventory.EmptyList": "No hay objetos en este espacio.",
   "JupDateRangePicker.chooseRange": "Elige un período",
+  "JupRoleToJupUiOptionList.globalOptionsHeader": "Opciones de interfaz global",
+  "JupRoleToJupUiOptionList.layout2dOptionsHeader": "Opciones de encimera",
+  "JupRoleToJupUiOptionList.setTo": "Establecer en %{value}",
   "JupRoleToObjectTypeMatrix.objectTypes.help.checkbox": "Actualizar propiedad ( %{name} )",
   "JupRoleToObjectTypeMatrix.views.help.false": "Mostrar vista de interfaz",
   "JupRoleToObjectTypeMatrix.views.help.true": "Ocultar vista de interfaz",
@@ -59341,7 +59776,11 @@ const es = {
   "OrganizationTabsFilter.tabs.hierarchy": "Jerarquía",
   "OrganizationTabsFilter.tabs.level1": "Servicios",
   "OrganizationTabsFilter.tabs.topLevel": "Direcciones",
+  "OtherThanWorkplaceBooking.locationOffice": "Escritorio",
+  "OtherThanWorkplaceBooking.locationRemote": "Teletrabajo",
   "PWLSelectDimensionCard.selectDimensionCard.title": "Seleccione una dimensión",
+  "ParkingBookingIcon.tooltip": "Esta persona puede reservar plazas de aparcamiento en este edificio.",
+  "ParkingOptions.noParkingBookedInBuilding": "No hay estacionamiento reservado",
   "PartnerEntityCreateTab.button.help": "Crear en %{partnerName}",
   "PartnerEntityCreateTab.button.label": "Crear en %{partnerName}",
   "PartnerEntityCreateTab.progress.syncing": "Sincronizando %{label} ...",
@@ -59387,6 +59826,11 @@ const es = {
   "PersonPanelWorkplaceAffectations.title": "Asignaciones de estaciones de trabajo",
   "PersonRelationsPanel.description": "Las relaciones de esta persona",
   "PersonRelationsPanel.title": "Relaciones",
+  "PersonSearchSelector.changePersonCta": "Cambiar la persona",
+  "PersonSearchSelector.noPersonSelected": "Nadie seleccionado",
+  "PersonSearchSelector.removePersonHelp": "Eliminar la persona seleccionada",
+  "PersonSearchSelector.selectPersonCta": "Seleccione una persona",
+  "PersonSearchSelector.selectedPersonLabel": "Persona: %{personName}",
   "PersonSecurityPanel.description": "Información de seguridad y evacuación",
   "PersonSecurityPanel.title": "seguridad",
   "PersonSecurityProfileInRoomListItem.peopleCount": "Hay %{count} persona(s) con el perfil de seguridad %{name} asignado a los espacios",
@@ -59836,8 +60280,8 @@ const es = {
   "WorkCanvasLoadingIcon.title": "Cargando el plan",
   "WorkCanvasShortcutTooltipHelp.help": "Atajo de teclado: <b>%{shortcut}</b>",
   "WorkCanvasToggleOptionHelp.shortcut": "Atajo de teclado: <b>%{shortcut}</b>",
-  "WorkingLocationToggle.locations.OFFICE": "Escritorio",
-  "WorkingLocationToggle.locations.REMOTE": "Teletrabajo",
+  "WorkingLocationToggle.locationOffice": "Escritorio",
+  "WorkingLocationToggle.locationRemote": "Teletrabajo",
   "WorkpaceBookingAverageByWeekDay.excludeWeekends": "Excluir fines de semana",
   "WorkpaceBookingAverageByWeekDay.labels.bar": "Número de reservas",
   "WorkpaceBookingAverageByWeekDay.labels.line": "Promedio por semana",
@@ -59866,6 +60310,7 @@ const es = {
   "WorkplaceBookingDimensionOccupanyRate.message.occupied": "El barrio está ocupado en %{percentage}",
   "WorkplaceBookingDimensionOccupanyRate.tooltip.crowded": "La zona se considera superpoblada.",
   "WorkplaceBookingDimensionOccupanyRate.tooltip.title": "Hay %{bookedWorkplaces} estaciones de trabajo ocupadas de %{totalBookableWorkplaces} disponibles para reservar.",
+  "WorkplaceBookingIcon.tooltip": "Esta persona puede reservar estaciones de trabajo en este edificio.",
   "WorkplaceCanvasItem.workplace.free": "La estación de trabajo no está ocupada.",
   "WorkplaceCanvasItem.workplace.isBookable": "La estación de trabajo se puede reservar.",
   "WorkplaceCanvasItem.workplace.isFlex": "La estación de trabajo está en flex",
@@ -59873,7 +60318,7 @@ const es = {
   "WorkplaceFullName.noName": "Estación de trabajo sin nombre",
   "WorkplaceList.workplace.flex": "Esta estación de trabajo está en flex",
   "WorkplaceList.workplace.free": "Esta estación de trabajo es gratuita",
-  "WorkplaceList.workplace.transit": "Esta estación de trabajo es compartida.",
+  "WorkplaceList.workplace.transit": "Esta estación de trabajo es temporal.",
   "WorkplaceList.zoomOnWorkplace": "Zoom a la estación de trabajo en el plan",
   "WorkplaceNestedList.title": "Personas asignadas a estaciones de trabajo",
   "WorkplaceOccupancyRateByDimension.labels.occupancyRate": "Tasa de ocupación (%)",
@@ -59888,6 +60333,11 @@ const es = {
   "WorkplaceTypeDataQualityNotUsed.columns.name": "Nombre del tipo de estación de trabajo",
   "WorkplaceTypeDataQualityNotUsed.columns.shape": "Formulario",
   "WorkplaceTypeInfo.help": "El número de estaciones de trabajo es %{count}",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.buttonFixSelectedHelp": "Agrega la propiedad z: 0 a las posiciones seleccionadas que no tienen una coordenada z",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.headerCompany": "negocios",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.headerItemType": "Tipo de objeto",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.headerPosition": "posición",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.headerWorkplaceType": "Tipo de estación de trabajo",
   "WorkplaceTypeItemTypesDrawer.title": "Lista de tipos de objetos",
   "WorkplaceTypeItemTypesDrawerSortableItem.info.close": "Opciones de plegado",
   "WorkplaceTypeItemTypesDrawerSortableItem.info.open": "Opciones de despliegue",
@@ -60313,6 +60763,8 @@ const es = {
   "models.Company.properties.planningNumberOfDays.label": "Número de días de planificación",
   "models.Company.properties.proxyImages.description": "Habilitar proxy para imágenes",
   "models.Company.properties.proxyImages.label": "Imágenes proxy",
+  "models.Company.properties.trackUserActivity.description": "Permitir que Surfy rastree la actividad del usuario para mejorar la experiencia del usuario",
+  "models.Company.properties.trackUserActivity.label": "Permitir que Surfy rastree la actividad del usuario para mejorar la experiencia del usuario",
   "models.Company.properties.workingDaysCount.description": "El número de días laborables a la semana puede ser de 5 para los días laborables, 6 incluido el sábado y 7 incluido el domingo",
   "models.Company.properties.workingDaysCount.label": "Número de días laborables por semana",
   "models.Company.properties.workplaceBookingConfirmationRange.description": "Intervalo de tiempo durante el cual los usuarios pueden confirmar sus reservas de estaciones de trabajo. Formato: HH:MM-HH:MM (p. ej., 06:00-10:30). Deje este campo en blanco para desactivar la confirmación de reservas de estaciones de trabajo.",
@@ -60738,16 +61190,26 @@ const es = {
   "models.JupRoleToJupObjectType.properties.arUpdate.label": "Actualizar (U)",
   "models.JupRoleToJupObjectType.properties.id.label": "Identificador de asociación de rol a tipo de objeto",
   "models.JupRoleToJupObjectType.singular": "Asociación de rol a tipo de objeto",
-  "models.JupRoleToJupUiLayout.description": "Una asociación de roles a diseños de interfaz le permite definir permisos de acceso a diferentes diseños de interfaz para un rol.",
-  "models.JupRoleToJupUiLayout.determinant.defined": "La asociación del rol con los diseños de interfaz",
-  "models.JupRoleToJupUiLayout.determinant.undefined": "una asociación del rol con los diseños de interfaz",
-  "models.JupRoleToJupUiLayout.determinants.defined": "asociaciones de roles con diseños de interfaz",
-  "models.JupRoleToJupUiLayout.determinants.undefined": "Desde asociaciones de roles hasta diseños de interfaz",
-  "models.JupRoleToJupUiLayout.plural": "Asociaciones de roles a diseños de interfaz",
-  "models.JupRoleToJupUiLayout.properties.canSee.description": "Permite que la opción sea vista por el rol",
-  "models.JupRoleToJupUiLayout.properties.canSee.label": "Puede ver la opción",
-  "models.JupRoleToJupUiLayout.properties.id.label": "Identificador de la asociación de roles a los diseños de interfaz",
-  "models.JupRoleToJupUiLayout.singular": "Asociación de roles con diseños de interfaz",
+  "models.JupRoleToJupUiLayout.description": "Una asociación de roles a visiones le permite definir permisos de acceso a diferentes visiones para un rol.",
+  "models.JupRoleToJupUiLayout.determinant.defined": "la asociación del rol con las visiones",
+  "models.JupRoleToJupUiLayout.determinant.undefined": "una asociación de rol con visiones",
+  "models.JupRoleToJupUiLayout.determinants.defined": "Las asociaciones del rol con las visiones",
+  "models.JupRoleToJupUiLayout.determinants.undefined": "asociaciones de roles con visiones",
+  "models.JupRoleToJupUiLayout.plural": "Las asociaciones juegan un papel en las visiones",
+  "models.JupRoleToJupUiLayout.properties.canSee.description": "Permite que la visión sea vista por el rol.",
+  "models.JupRoleToJupUiLayout.properties.canSee.label": "Puedo ver la visión",
+  "models.JupRoleToJupUiLayout.properties.id.label": "Identificador de asociación basado en roles para visiones",
+  "models.JupRoleToJupUiLayout.singular": "El papel de la asociación en las visiones",
+  "models.JupRoleToJupUiLayoutTab.description": "Una asociación de roles con pestañas de plan le permite definir permisos de acceso a las diferentes pestañas de plan para un rol.",
+  "models.JupRoleToJupUiLayoutTab.determinant.defined": "asociar el rol con las pestañas del plan",
+  "models.JupRoleToJupUiLayoutTab.determinant.undefined": "una asociación del rol con las pestañas del plan",
+  "models.JupRoleToJupUiLayoutTab.determinants.defined": "Asociaciones de roles para planificar pestañas",
+  "models.JupRoleToJupUiLayoutTab.determinants.undefined": "Asociaciones de roles para planificar pestañas",
+  "models.JupRoleToJupUiLayoutTab.plural": "Asociaciones de roles para planificar pestañas",
+  "models.JupRoleToJupUiLayoutTab.properties.canSee.description": "Permite que el rol vea la pestaña del plan",
+  "models.JupRoleToJupUiLayoutTab.properties.canSee.label": "¿Puedes ver la pestaña?",
+  "models.JupRoleToJupUiLayoutTab.properties.id.label": "Identificador de asociación de roles para las pestañas del plan",
+  "models.JupRoleToJupUiLayoutTab.singular": "Asociación de roles a las pestañas del plan",
   "models.JupRoleToJupUiOperation.description": "Una asociación de roles a operaciones de interfaz le permite definir permisos de acceso a las diferentes operaciones de interfaz para un rol.",
   "models.JupRoleToJupUiOperation.determinant.defined": "asociación del rol con operaciones de interfaz",
   "models.JupRoleToJupUiOperation.determinant.undefined": "una asociación del rol a las operaciones de interfaz",
@@ -60784,6 +61246,16 @@ const es = {
   "models.JupUiLayout.plural": "Visiones del plan",
   "models.JupUiLayout.properties.id.label": "Identificador de la visión del plan",
   "models.JupUiLayout.singular": "visión del plan",
+  "models.JupUiLayoutTab.description": "Una pestaña de plano define las diferentes pestañas disponibles en la interfaz de visualización de plano.",
+  "models.JupUiLayoutTab.determinant.defined": "la pestaña del plan",
+  "models.JupUiLayoutTab.determinant.undefined": "una pestaña de mapa",
+  "models.JupUiLayoutTab.determinants.defined": "las pestañas del plan",
+  "models.JupUiLayoutTab.determinants.undefined": "pestañas del plan",
+  "models.JupUiLayoutTab.plural": "Pestañas del mapa",
+  "models.JupUiLayoutTab.properties.id.label": "ID de la pestaña del mapa",
+  "models.JupUiLayoutTab.properties.name.description": "El nombre de la pestaña que se muestra en la interfaz",
+  "models.JupUiLayoutTab.properties.name.label": "Nombre de la pestaña",
+  "models.JupUiLayoutTab.singular": "Pestaña de mapa",
   "models.JupUiOperation.description": "Una operación de interfaz define las acciones y funcionalidades disponibles en la interfaz de usuario.",
   "models.JupUiOperation.determinant.defined": "operación de interfaz",
   "models.JupUiOperation.determinant.undefined": "una operación de interfaz",
@@ -61228,6 +61700,8 @@ const es = {
   "models.PersonWorkingLocation.views.booking-maps.label": "Reservas en un plan",
   "models.PersonWorkingLocation.views.my-planning.help": "Gestionar mi agenda para las próximas semanas",
   "models.PersonWorkingLocation.views.my-planning.label": "Administrar mi agenda",
+  "models.PersonWorkingLocation.views.obo-planning.help": "Gestionar el horario y realizar reservas para otra persona.",
+  "models.PersonWorkingLocation.views.obo-planning.label": "Reservar para otra persona",
   "models.PersonWorkingLocation.views.pwl-dimension.help": "Ver reservas por barrio",
   "models.PersonWorkingLocation.views.pwl-dimension.label": "Reservas por distrito",
   "models.Room.description": "Los espacios son lugares de trabajo o zonas para dividir un piso en subespacios.",
@@ -61587,6 +62061,8 @@ const es = {
   "models.WorkplaceType.views.avatar.label": "Ver la forma",
   "models.WorkplaceType.views.dq-not-used.help": "Enumere todos los tipos de estaciones de trabajo no utilizadas a través de estaciones de trabajo",
   "models.WorkplaceType.views.dq-not-used.label": "No utilizado",
+  "models.WorkplaceType.views.dq-workplace-type-item-type-position-z.help": "Enumere los tipos de objetos de estación de trabajo cuya posición no tiene la coordenada z.",
+  "models.WorkplaceType.views.dq-workplace-type-item-type-position-z.label": "Falta la posición Z",
   "models.WorkplaceType.views.editor.help": "Edite formas y ubicaciones de tipos de objetos para el tipo de estación de trabajo %{name}",
   "models.WorkplaceType.views.editor.label": "Editar formas",
   "models.WorkplaceTypeItemType.determinant.defined": "el tipo de objeto en el tipo de estación de trabajo",
@@ -61670,11 +62146,14 @@ const it = {
   "BookParkingFloorRoomsDrawer.noRoomsAvailable": "Nessun posto auto disponibile su questo piano",
   "BookParkingFloorRoomsDrawer.view": "Vedere",
   "BookParkingFloorRoomsDrawer.viewOnMap": "Vedi sulla mappa",
-  "BookParkingInBuildingOption.availableParkingSpaces": "%{availableCount} posto/i disponibile/i",
-  "BookParkingInBuildingOption.bookParkingOnFloorHelp": "Prenota un posto auto al %{floorName} ( %{availableCount} posti disponibili)",
-  "BookParkingInBuildingOption.bookParkingOnFloorLabel": "Prenota un posto auto al %{floorName}",
-  "BookParkingInBuildingOption.drawerTitle": "Prenota un posto auto al %{floorName} per il periodo %{slotString}",
+  "BookParkingInBuildingOption.daySlotAll": "tutto il giorno",
+  "BookParkingInBuildingOption.daySlotAmWithArticle": "La mattina",
+  "BookParkingInBuildingOption.daySlotIncompatible": "Puoi prenotare un posto auto solo per %{availableSlots} . Non ci sono posti auto disponibili per il tuo tipo di veicolo %{vehicleInfo} nella fascia oraria selezionata.\n",
+  "BookParkingInBuildingOption.daySlotPartiallyIncompatible": "Alcune tipologie di parcheggio ( %{roomTypeNames} ) non sono disponibili per la fascia oraria selezionata, ma puoi comunque prenotare altri posti auto compatibili.",
+  "BookParkingInBuildingOption.daySlotPmWithArticle": "il pomeriggio",
   "BookParkingInBuildingOption.noParkingAvailable": "In questo edificio non è disponibile alcun parcheggio per il tuo tipo di veicolo; contatta l'amministratore.",
+  "BookParkingInBuildingOption.noVehicle": "Per prenotare i posti auto è necessario registrare un veicolo nel proprio profilo.",
+  "BookParkingInBuildingOption.singleBookingPerDayIncompatible": "Hai già una prenotazione per il parcheggio di oggi. Con il tuo tipo di veicolo, puoi prenotare solo un posto auto al giorno.",
   "BookPersonBuildingWorkplace.availableWorkplaces": "%{freeWorkplaces} posti disponibili",
   "BookPersonBuildingWorkplace.bookWorkplaceOnFloor": "Prenota una postazione di lavoro al %{floorName} per il periodo %{slotString}",
   "BookPersonBuildingWorkplace.bookWorkplaceOnFloorButton.label": "Prenota una postazione di lavoro a %{floorName}",
@@ -61714,10 +62193,9 @@ const it = {
   "BookingMap.errors.noBuildingInFilter": "Seleziona un edificio e un piano nel filtro per visualizzare le prenotazioni",
   "BookingMap.errors.noDateInFilter": "Seleziona una data nel filtro per vedere le prenotazioni",
   "BookingMap.errors.noFloorInFilter": "Seleziona un piano nel filtro per vedere le prenotazioni",
-  "BookingParkingInBuildingWithRoomTypes.availableParkingSpaces": "%{availableCount} posto/i disponibile/i",
   "BookingParkingInBuildingWithRoomTypes.bookParkingOnFloorHelp": "%{bookedRooms} prenotazione/i, %{freeRooms} posto/i di parcheggio disponibile/i su %{totalRooms}",
-  "BookingParkingInBuildingWithRoomTypes.bookParkingOnFloorLabel": "Prenota un posto auto al %{floorName}",
   "BookingParkingInBuildingWithRoomTypes.drawerTitle": "Prenota un posto auto al %{floorName} per il periodo %{slotString}",
+  "BookingParkingInBuildingWithRoomTypes.noFreeParkingAvailableInFloor": "Nessun posto auto disponibile a %{floorName}",
   "BookingRoomTitle.bookThisSpaceFor": "Prenota questo slot per %{slotTimes}",
   "BookingRoomTitle.booked": "Questo posto auto è già riservato",
   "BookingRoomTitle.free": "Prenota questo posto auto",
@@ -61828,8 +62306,8 @@ const it = {
   "CalibrateLayoutDrawer.options.save.label": "registrare",
   "CalibrateLayoutDrawer.title": "Calibrare il piano",
   "CampusBuildingsAccordion.buildingCount": "Il numero di edifici",
-  "CancelAddItemToRoom.help": "Annulla l'aggiunta di oggetti",
-  "CancelAddWorkplaceToRoom.help": "Annulla aggiunta workstation",
+  "CancelAddItemToRoom.help": "Annulla l'aggiunta dell'oggetto allo spazio",
+  "CancelAddWorkplaceToRoom.help": "Annulla l'aggiunta della postazione di lavoro allo spazio",
   "CancelDuplicateShapsToRoomMouse.help": "Annulla forme duplicate",
   "ChangeColor.classic": "Seleziona un colore con la piastra avanzata",
   "ChangeCompanyMenu.ChangeCompany": "Vedere un'altra attività in una nuova pagina",
@@ -61842,6 +62320,14 @@ const it = {
   "CheckAllDefaultViews.shortcuts.title": "Collegamenti di installazione",
   "CheckAllDefaultViews.shortcuts.views.buttonsHelp": "Controlla questa vista per tutti i tipi di entità",
   "CheckAllDefaultViews.shortcuts.views.title": "Scorciatoie per le visualizzazioni dell'interfaccia predefinite",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.daySlotAll": "tutto il giorno",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.daySlotAmWithArticle": "La mattina",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.daySlotIncompatible": "Puoi prenotare un posto auto solo per %{availableSlots} . Non ci sono posti auto disponibili per il tuo tipo di veicolo %{vehicleInfo} nella fascia oraria selezionata.",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.daySlotPmWithArticle": "il pomeriggio",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.noParkingAvailable": "In questo edificio non è disponibile alcun parcheggio per il tuo tipo di veicolo; contatta l'amministratore.",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.noVehicle": "Per prenotare i posti auto è necessario registrare un veicolo nel proprio profilo.",
+  "CheckPersonVehiculeParkingDaySlotSingleBookingPerDayCompatibility.singleBookingPerDayIncompatible": "Hai già una prenotazione per il parcheggio di oggi. Con il tuo tipo di veicolo, puoi prenotare solo un posto auto al giorno.",
+  "CheckThereIsAtLeastOneFreeRoomInTheBuilding.noFreeParkingAvailable": "Nessun parcheggio disponibile durante la fascia oraria selezionata",
   "CloneEntitiesFailed.cloneFailed": "La clonazione è impossibile.",
   "CollapseSwitchButton.help.false": "Guarda il dettaglio",
   "CollapseSwitchButton.help.true": "Nascondi il dettaglio",
@@ -61931,6 +62417,10 @@ const it = {
   "DateDimensionSelect.options.week": "Settimana",
   "DateDimensionSelect.options.year": "Anno",
   "DayHeaders.time": "Ora",
+  "DaySlotTypeLabel.amHelp": "L'orario mattutino è dalle 8:00 alle 13:30.",
+  "DaySlotTypeLabel.amLabel": "Mattina",
+  "DaySlotTypeLabel.pmHelp": "L'orario pomeridiano è dalle 14:00 alle 19:00.",
+  "DaySlotTypeLabel.pmLabel": "Pomeriggio",
   "DeleteDialog.cancel.help": "Annulla eliminazione",
   "DeleteDialog.cancel.label": "per cancellare",
   "DeleteDialog.content": "Stai per eliminare <b>%{determinant.undefined}</b> , questa azione non è reversibile e potrebbe avere un impatto, sei sicuro di voler eseguire questa azione?",
@@ -61949,6 +62439,7 @@ const it = {
   "DeskBookingConfirmationButton.confirm": "Conferma la tua presenza",
   "DeskBookingConfirmationButton.confirmHelp": "Conferma di essere presente alla tua postazione di lavoro",
   "DeskBookingsSection.noBookingsFound": "Nessuna prenotazione imminente trovata.",
+  "DimensionBuildingPlanningLabel.anotherPersonIsAssigned": "%{personFullName} è assegnato a %{dimensionTypeName} %{dimensionName}",
   "DimensionBuildingPlanningLabel.youAreAssigned": "Ti è stato assegnato %{dimensionTypeName} %{dimensionName}",
   "DimensionInfo.carbonFootprint.help": "L'impronta di carbonio è %{value} di CO2 emessa per %{dimensionType} %{dimension}",
   "DimensionInfo.dimensionPeopleCount.help": "Sono presenti %{value} persone interessate in %{dimensionType} %{dimension}",
@@ -61987,6 +62478,7 @@ const it = {
   "DimensionTypesByTab.ListItemHasChildrenSelected": "Le dimensioni sono selezionate",
   "DimensionTypesByTab.action.false": "Deseleziona tutto",
   "DimensionTypesByTab.action.true": "Seleziona tutto",
+  "DirectBuildingPlanningLabel.anotherPersonIsAssigned": "%{personFullName} è assegnato all'edificio %{buildingName}",
   "DirectBuildingPlanningLabel.youAreAssigned": "Ti è stato assegnato l'edificio %{buildingName}",
   "DisplayPersonTexts.personCode.help": "Se visualizzare o meno il numero delle persone assegnate alle postazioni del piano",
   "DisplayPersonTexts.personCode.label": "Numero di registrazione",
@@ -62222,12 +62714,12 @@ const it = {
   "GlobalSearchIncludeScenarios.label": "Includi scenari nella ricerca",
   "GoogleApiWrapper.configurationNotFound": "La chiave API di Google Maps non è configurata",
   "GoogleApiWrapper.loadingFailed": "Impossibile caricare l'API di Google Maps",
-  "HalfDayWorkingLocationToggle.all.help": "Gli orari di apertura sono dalle 8:00 alle 19:00.",
-  "HalfDayWorkingLocationToggle.all.label": "Tutto il giorno",
-  "HalfDayWorkingLocationToggle.am.help": "L'orario mattutino è dalle 8:00 alle 13:30.",
-  "HalfDayWorkingLocationToggle.am.label": "Mattina",
-  "HalfDayWorkingLocationToggle.pm.help": "L'orario pomeridiano è dalle 14:00 alle 19:00.",
-  "HalfDayWorkingLocationToggle.pm.label": "Pomeriggio",
+  "HalfDayWorkingLocationToggle.allHelp": "Gli orari di apertura sono dalle 8:00 alle 19:00.",
+  "HalfDayWorkingLocationToggle.allLabel": "Tutto il giorno",
+  "HalfDayWorkingLocationToggle.amHelp": "L'orario mattutino è dalle 8:00 alle 13:30.",
+  "HalfDayWorkingLocationToggle.amLabel": "Mattina",
+  "HalfDayWorkingLocationToggle.pmHelp": "L'orario pomeridiano è dalle 14:00 alle 19:00.",
+  "HalfDayWorkingLocationToggle.pmLabel": "Pomeriggio",
   "HasManyStandaloneNoData.noData": "Non esiste alcun %{targetObjectTypeLabel} associato per %{determinant.defined}",
   "HeatMapSelection.heatmaps.carbonFootprintCount.description": "Colora gli spazi in base all'impronta di carbonio dei mobili",
   "HeatMapSelection.heatmaps.carbonFootprintCount.label": "Densità dell'impronta di carbonio dei mobili",
@@ -62307,6 +62799,9 @@ const it = {
   "ItemTypesMapFilterZone.tabs.options": "Opzioni",
   "ItemsInventory.EmptyList": "Non ci sono oggetti in questo spazio",
   "JupDateRangePicker.chooseRange": "Scegli un periodo",
+  "JupRoleToJupUiOptionList.globalOptionsHeader": "Opzioni di interfaccia globali",
+  "JupRoleToJupUiOptionList.layout2dOptionsHeader": "Opzioni del piano di lavoro",
+  "JupRoleToJupUiOptionList.setTo": "Imposta su %{value}",
   "JupRoleToObjectTypeMatrix.objectTypes.help.checkbox": "Aggiorna proprietà ( %{name} )",
   "JupRoleToObjectTypeMatrix.views.help.false": "Mostra vista interfaccia",
   "JupRoleToObjectTypeMatrix.views.help.true": "Nascondi la visualizzazione dell'interfaccia",
@@ -62504,7 +62999,11 @@ const it = {
   "OrganizationTabsFilter.tabs.hierarchy": "Gerarchia",
   "OrganizationTabsFilter.tabs.level1": "Servizi",
   "OrganizationTabsFilter.tabs.topLevel": "Indicazioni",
+  "OtherThanWorkplaceBooking.locationOffice": "Scrivania",
+  "OtherThanWorkplaceBooking.locationRemote": "Telelavoro",
   "PWLSelectDimensionCard.selectDimensionCard.title": "Seleziona una dimensione",
+  "ParkingBookingIcon.tooltip": "Questa persona può prenotare posti auto in questo edificio",
+  "ParkingOptions.noParkingBookedInBuilding": "Nessun parcheggio è riservato",
   "PartnerEntityCreateTab.button.help": "Crea in %{partnerName}",
   "PartnerEntityCreateTab.button.label": "Crea in %{partnerName}",
   "PartnerEntityCreateTab.progress.syncing": "Sincronizzazione di %{label} ...",
@@ -62550,6 +63049,11 @@ const it = {
   "PersonPanelWorkplaceAffectations.title": "Compiti della postazione di lavoro",
   "PersonRelationsPanel.description": "Le relazioni di questa persona",
   "PersonRelationsPanel.title": "Relazioni",
+  "PersonSearchSelector.changePersonCta": "Cambia la persona",
+  "PersonSearchSelector.noPersonSelected": "Nessuno selezionato",
+  "PersonSearchSelector.removePersonHelp": "Rimuovi la persona selezionata",
+  "PersonSearchSelector.selectPersonCta": "Seleziona una persona",
+  "PersonSearchSelector.selectedPersonLabel": "Persona: %{personName}",
   "PersonSecurityPanel.description": "Informazioni sulla sicurezza e sull'evacuazione",
   "PersonSecurityPanel.title": "Sicurezza",
   "PersonSecurityProfileInRoomListItem.peopleCount": "Ci sono %{count} persone con profilo di sicurezza %{name} assegnate agli spazi",
@@ -62999,8 +63503,8 @@ const it = {
   "WorkCanvasLoadingIcon.title": "Caricamento del piano",
   "WorkCanvasShortcutTooltipHelp.help": "Scorciatoia da tastiera: <b>%{shortcut}</b>",
   "WorkCanvasToggleOptionHelp.shortcut": "Scorciatoia da tastiera: <b>%{shortcut}</b>",
-  "WorkingLocationToggle.locations.OFFICE": "Scrivania",
-  "WorkingLocationToggle.locations.REMOTE": "Telelavoro",
+  "WorkingLocationToggle.locationOffice": "Scrivania",
+  "WorkingLocationToggle.locationRemote": "Telelavoro",
   "WorkpaceBookingAverageByWeekDay.excludeWeekends": "Escludere i fine settimana",
   "WorkpaceBookingAverageByWeekDay.labels.bar": "Numero di prenotazioni",
   "WorkpaceBookingAverageByWeekDay.labels.line": "Media settimanale",
@@ -63029,6 +63533,7 @@ const it = {
   "WorkplaceBookingDimensionOccupanyRate.message.occupied": "Il quartiere è occupato al %{percentage}",
   "WorkplaceBookingDimensionOccupanyRate.tooltip.crowded": "La zona è considerata sovraffollata.",
   "WorkplaceBookingDimensionOccupanyRate.tooltip.title": "Ci sono %{bookedWorkplaces} postazioni di lavoro occupate su %{totalBookableWorkplaces} disponibili per la prenotazione.",
+  "WorkplaceBookingIcon.tooltip": "Questa persona può prenotare postazioni di lavoro in questo edificio",
   "WorkplaceCanvasItem.workplace.free": "La stazione di lavoro non è occupata",
   "WorkplaceCanvasItem.workplace.isBookable": "La postazione di lavoro è prenotabile",
   "WorkplaceCanvasItem.workplace.isFlex": "La postazione è in flex",
@@ -63036,7 +63541,7 @@ const it = {
   "WorkplaceFullName.noName": "Postazione di lavoro senza nome",
   "WorkplaceList.workplace.flex": "Questa workstation è in flex",
   "WorkplaceList.workplace.free": "Questa postazione è gratuita",
-  "WorkplaceList.workplace.transit": "Questa workstation è condivisa",
+  "WorkplaceList.workplace.transit": "Questa postazione di lavoro è temporanea.",
   "WorkplaceList.zoomOnWorkplace": "Zoom sulla workstation sulla planimetria",
   "WorkplaceNestedList.title": "Persone assegnate alle postazioni di lavoro",
   "WorkplaceOccupancyRateByDimension.labels.occupancyRate": "Tasso di occupazione (%)",
@@ -63051,6 +63556,11 @@ const it = {
   "WorkplaceTypeDataQualityNotUsed.columns.name": "Nome del tipo di workstation",
   "WorkplaceTypeDataQualityNotUsed.columns.shape": "Modulo",
   "WorkplaceTypeInfo.help": "Il numero di workstation è %{count}",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.buttonFixSelectedHelp": "Aggiunge la proprietà z: 0 alle posizioni selezionate che non hanno una coordinata z",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.headerCompany": "Azienda",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.headerItemType": "Tipo di oggetto",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.headerPosition": "Posizione",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.headerWorkplaceType": "Tipo di postazione di lavoro",
   "WorkplaceTypeItemTypesDrawer.title": "Elenco dei tipi di oggetto",
   "WorkplaceTypeItemTypesDrawerSortableItem.info.close": "Opzioni di piegatura",
   "WorkplaceTypeItemTypesDrawerSortableItem.info.open": "Apri le opzioni",
@@ -63476,6 +63986,8 @@ const it = {
   "models.Company.properties.planningNumberOfDays.label": "Numero di giorni di pianificazione",
   "models.Company.properties.proxyImages.description": "Abilita proxy per le immagini",
   "models.Company.properties.proxyImages.label": "Immagini proxy",
+  "models.Company.properties.trackUserActivity.description": "Consenti a Surfy di monitorare l'attività dell'utente per migliorare l'esperienza utente",
+  "models.Company.properties.trackUserActivity.label": "Consenti a Surfy di monitorare l'attività dell'utente per migliorare l'esperienza utente",
   "models.Company.properties.workingDaysCount.description": "Il numero di giorni lavorativi settimanali può essere 5 per i giorni lavorativi, 6 compreso il sabato e 7 compresa la domenica",
   "models.Company.properties.workingDaysCount.label": "Numero di giorni lavorativi alla settimana",
   "models.Company.properties.workplaceBookingConfirmationRange.description": "Intervallo di tempo durante il quale gli utenti possono confermare la prenotazione delle proprie postazioni di lavoro. Formato: HH:MM-HH:MM (ad esempio, 06:00-10:30). Lasciare vuoto questo campo per disabilitare la conferma della prenotazione delle postazioni di lavoro.",
@@ -63901,16 +64413,26 @@ const it = {
   "models.JupRoleToJupObjectType.properties.arUpdate.label": "Aggiorna (U)",
   "models.JupRoleToJupObjectType.properties.id.label": "Identificatore di associazione tra ruolo e tipo di oggetto",
   "models.JupRoleToJupObjectType.singular": "Ruolo di associazione al tipo di oggetto",
-  "models.JupRoleToJupUiLayout.description": "Un'associazione di ruolo ai layout dell'interfaccia consente di definire le autorizzazioni di accesso a diversi layout dell'interfaccia per un ruolo",
-  "models.JupRoleToJupUiLayout.determinant.defined": "l'associazione del ruolo con i layout dell'interfaccia",
-  "models.JupRoleToJupUiLayout.determinant.undefined": "un'associazione del ruolo ai layout dell'interfaccia",
-  "models.JupRoleToJupUiLayout.determinants.defined": "associazioni di ruolo ai layout dell'interfaccia",
-  "models.JupRoleToJupUiLayout.determinants.undefined": "dalle associazioni di ruolo ai layout dell'interfaccia",
-  "models.JupRoleToJupUiLayout.plural": "Associazioni di ruolo ai layout dell'interfaccia",
-  "models.JupRoleToJupUiLayout.properties.canSee.description": "Consente all'opzione di essere visualizzata dal ruolo",
-  "models.JupRoleToJupUiLayout.properties.canSee.label": "Può vedere l'opzione",
-  "models.JupRoleToJupUiLayout.properties.id.label": "Identificatore dell'associazione del ruolo ai layout dell'interfaccia",
-  "models.JupRoleToJupUiLayout.singular": "Associazione dei ruoli ai layout dell'interfaccia",
+  "models.JupRoleToJupUiLayout.description": "Un'associazione ruolo-visioni consente di definire le autorizzazioni di accesso a diverse visioni per un ruolo.",
+  "models.JupRoleToJupUiLayout.determinant.defined": "l'associazione del ruolo con le visioni",
+  "models.JupRoleToJupUiLayout.determinant.undefined": "un'associazione di ruolo con visioni",
+  "models.JupRoleToJupUiLayout.determinants.defined": "le associazioni di ruolo con visioni",
+  "models.JupRoleToJupUiLayout.determinants.undefined": "associazioni di ruolo alle visioni",
+  "models.JupRoleToJupUiLayout.plural": "Le associazioni svolgono un ruolo nelle visioni",
+  "models.JupRoleToJupUiLayout.properties.canSee.description": "Permette di vedere la visione attraverso il ruolo",
+  "models.JupRoleToJupUiLayout.properties.canSee.label": "Può vedere la visione",
+  "models.JupRoleToJupUiLayout.properties.id.label": "Identificatore di associazione basato sui ruoli per le visioni",
+  "models.JupRoleToJupUiLayout.singular": "Ruolo di associazione alle visioni",
+  "models.JupRoleToJupUiLayoutTab.description": "Un'associazione di ruolo con le schede del piano consente di definire le autorizzazioni di accesso alle diverse schede del piano per un ruolo.",
+  "models.JupRoleToJupUiLayoutTab.determinant.defined": "associare il ruolo alle schede del piano",
+  "models.JupRoleToJupUiLayoutTab.determinant.undefined": "un'associazione del ruolo con le schede del piano",
+  "models.JupRoleToJupUiLayoutTab.determinants.defined": "associazioni di ruolo per pianificare le schede",
+  "models.JupRoleToJupUiLayoutTab.determinants.undefined": "associazioni di ruolo per pianificare le schede",
+  "models.JupRoleToJupUiLayoutTab.plural": "Associazioni di ruolo per pianificare le schede",
+  "models.JupRoleToJupUiLayoutTab.properties.canSee.description": "Consente al ruolo di visualizzare la scheda del piano",
+  "models.JupRoleToJupUiLayoutTab.properties.canSee.label": "Puoi vedere la scheda",
+  "models.JupRoleToJupUiLayoutTab.properties.id.label": "Identificatore di associazione ruolo per le schede del piano",
+  "models.JupRoleToJupUiLayoutTab.singular": "associazione di ruolo alle schede del piano",
   "models.JupRoleToJupUiOperation.description": "Un'associazione di ruolo alle operazioni di interfaccia consente di definire le autorizzazioni di accesso alle diverse operazioni di interfaccia per un ruolo",
   "models.JupRoleToJupUiOperation.determinant.defined": "associazione del ruolo alle operazioni di interfaccia",
   "models.JupRoleToJupUiOperation.determinant.undefined": "un'associazione del ruolo alle operazioni di interfaccia",
@@ -63947,6 +64469,16 @@ const it = {
   "models.JupUiLayout.plural": "Visioni del piano",
   "models.JupUiLayout.properties.id.label": "Identificatore della visione del piano",
   "models.JupUiLayout.singular": "Visione del piano",
+  "models.JupUiLayoutTab.description": "Una scheda del piano definisce le diverse schede disponibili nell'interfaccia di visualizzazione del piano.",
+  "models.JupUiLayoutTab.determinant.defined": "la scheda del piano",
+  "models.JupUiLayoutTab.determinant.undefined": "una scheda mappa",
+  "models.JupUiLayoutTab.determinants.defined": "le schede del piano",
+  "models.JupUiLayoutTab.determinants.undefined": "schede del piano",
+  "models.JupUiLayoutTab.plural": "Schede della mappa",
+  "models.JupUiLayoutTab.properties.id.label": "ID scheda mappa",
+  "models.JupUiLayoutTab.properties.name.description": "Il nome della scheda visualizzata nell'interfaccia",
+  "models.JupUiLayoutTab.properties.name.label": "Nome della scheda",
+  "models.JupUiLayoutTab.singular": "Scheda Mappa",
   "models.JupUiOperation.description": "Un'operazione di interfaccia definisce le azioni e le funzionalità disponibili nell'interfaccia utente",
   "models.JupUiOperation.determinant.defined": "funzionamento dell'interfaccia",
   "models.JupUiOperation.determinant.undefined": "un'operazione di interfaccia",
@@ -64391,6 +64923,8 @@ const it = {
   "models.PersonWorkingLocation.views.booking-maps.label": "Prenotazioni su un piano",
   "models.PersonWorkingLocation.views.my-planning.help": "Gestisci il mio programma per le prossime settimane",
   "models.PersonWorkingLocation.views.my-planning.label": "Gestisci il mio programma",
+  "models.PersonWorkingLocation.views.obo-planning.help": "Gestisci il programma ed effettua prenotazioni per un'altra persona",
+  "models.PersonWorkingLocation.views.obo-planning.label": "Prenota per un'altra persona",
   "models.PersonWorkingLocation.views.pwl-dimension.help": "Visualizza le prenotazioni per quartiere",
   "models.PersonWorkingLocation.views.pwl-dimension.label": "Prenotazioni per distretto",
   "models.Room.description": "Gli spazi sono luoghi di lavoro o zone per dividere un piano in sottospazi",
@@ -64750,6 +65284,8 @@ const it = {
   "models.WorkplaceType.views.avatar.label": "Vedi il modulo",
   "models.WorkplaceType.views.dq-not-used.help": "Elenca tutti i tipi di workstation inutilizzati tramite workstation",
   "models.WorkplaceType.views.dq-not-used.label": "Non usato",
+  "models.WorkplaceType.views.dq-workplace-type-item-type-position-z.help": "Elenca i tipi di oggetti workstation nella cui posizione manca la coordinata z.",
+  "models.WorkplaceType.views.dq-workplace-type-item-type-position-z.label": "Posizione Z mancante",
   "models.WorkplaceType.views.editor.help": "Modifica forme e posizioni dei tipi di oggetto per il tipo di workstation %{name}",
   "models.WorkplaceType.views.editor.label": "Modifica forme",
   "models.WorkplaceTypeItemType.determinant.defined": "il tipo di oggetto nel tipo di workstation",
@@ -64833,11 +65369,14 @@ const nl = {
   "BookParkingFloorRoomsDrawer.noRoomsAvailable": "Er zijn geen parkeerplaatsen beschikbaar op deze verdieping.",
   "BookParkingFloorRoomsDrawer.view": "zien",
   "BookParkingFloorRoomsDrawer.viewOnMap": "Zie op de kaart",
-  "BookParkingInBuildingOption.availableParkingSpaces": "%{availableCount} beschikbare plaatsen",
-  "BookParkingInBuildingOption.bookParkingOnFloorHelp": "Reserveer een parkeerplaats op %{floorName} ( %{availableCount} beschikbare plaatsen)",
-  "BookParkingInBuildingOption.bookParkingOnFloorLabel": "Reserveer een parkeerplaats op %{floorName}",
-  "BookParkingInBuildingOption.drawerTitle": "Reserveer een parkeerplaats op %{floorName} voor de periode %{slotString}",
+  "BookParkingInBuildingOption.daySlotAll": "de hele dag",
+  "BookParkingInBuildingOption.daySlotAmWithArticle": "De ochtend",
+  "BookParkingInBuildingOption.daySlotIncompatible": "Je kunt slechts voor %{availableSlots} een parkeerplaats reserveren. Er zijn geen parkeerplaatsen beschikbaar voor jouw voertuigtype %{vehicleInfo} tijdens het door jou gekozen tijdslot.\n",
+  "BookParkingInBuildingOption.daySlotPartiallyIncompatible": "Sommige parkeertypes ( %{roomTypeNames} ) zijn niet beschikbaar voor het door u gekozen tijdslot, maar u kunt wel andere compatibele parkeerplaatsen reserveren.",
+  "BookParkingInBuildingOption.daySlotPmWithArticle": "de middag",
   "BookParkingInBuildingOption.noParkingAvailable": "Er is geen parkeergelegenheid voor uw type voertuig in dit gebouw; neem contact op met uw beheerder.",
+  "BookParkingInBuildingOption.noVehicle": "Om parkeerplaatsen te reserveren, moet u een voertuig in uw profiel registreren.",
+  "BookParkingInBuildingOption.singleBookingPerDayIncompatible": "Je hebt al een parkeerreservering voor vandaag. Met jouw type voertuig kun je slechts één parkeerplaats per dag reserveren.",
   "BookPersonBuildingWorkplace.availableWorkplaces": "%{freeWorkplaces} plaatsen beschikbaar",
   "BookPersonBuildingWorkplace.bookWorkplaceOnFloor": "Reserveer een werkplek op %{floorName} voor de periode %{slotString}",
   "BookPersonBuildingWorkplace.bookWorkplaceOnFloorButton.label": "Reserveer een werkstation op %{floorName}",
@@ -64877,10 +65416,9 @@ const nl = {
   "BookingMap.errors.noBuildingInFilter": "Selecteer een gebouw en verdieping in het filter om reserveringen te bekijken",
   "BookingMap.errors.noDateInFilter": "Selecteer een datum in het filter om reserveringen te zien",
   "BookingMap.errors.noFloorInFilter": "Selecteer een verdieping in het filter om reserveringen te zien",
-  "BookingParkingInBuildingWithRoomTypes.availableParkingSpaces": "%{availableCount} beschikbare plaatsen",
   "BookingParkingInBuildingWithRoomTypes.bookParkingOnFloorHelp": "%{bookedRooms} reservering(en), %{freeRooms} beschikbare parkeerplaats(en) van %{totalRooms}",
-  "BookingParkingInBuildingWithRoomTypes.bookParkingOnFloorLabel": "Reserveer een parkeerplaats op %{floorName}",
   "BookingParkingInBuildingWithRoomTypes.drawerTitle": "Reserveer een parkeerplaats op %{floorName} voor de periode %{slotString}",
+  "BookingParkingInBuildingWithRoomTypes.noFreeParkingAvailableInFloor": "Er zijn geen parkeerplaatsen beschikbaar op %{floorName}",
   "BookingRoomTitle.bookThisSpaceFor": "Reserveer dit tijdslot voor %{slotTimes}",
   "BookingRoomTitle.booked": "Deze parkeerplaats is al gereserveerd.",
   "BookingRoomTitle.free": "Reserveer deze parkeerplaats",
@@ -64991,8 +65529,8 @@ const nl = {
   "CalibrateLayoutDrawer.options.save.label": "Opnemen",
   "CalibrateLayoutDrawer.title": "Kalibreer het plan",
   "CampusBuildingsAccordion.buildingCount": "Het aantal gebouwen",
-  "CancelAddItemToRoom.help": "Maak het toevoegen van het object ongedaan",
-  "CancelAddWorkplaceToRoom.help": "Het toevoegen van een werkstation ongedaan maken",
+  "CancelAddItemToRoom.help": "Het toevoegen van het object aan de ruimte annuleren",
+  "CancelAddWorkplaceToRoom.help": "Annuleer het toevoegen van het werkstation aan de ruimte.",
   "CancelDuplicateShapsToRoomMouse.help": "Vormduplicatie ongedaan maken",
   "ChangeColor.classic": "Selecteer een kleur met de geavanceerde plaat",
   "ChangeCompanyMenu.ChangeCompany": "Bekijk een ander bedrijf op een nieuwe pagina",
@@ -65005,6 +65543,14 @@ const nl = {
   "CheckAllDefaultViews.shortcuts.title": "Configuratiesnelkoppelingen",
   "CheckAllDefaultViews.shortcuts.views.buttonsHelp": "Controleer deze weergave voor alle entiteitstypen",
   "CheckAllDefaultViews.shortcuts.views.title": "Snelkoppelingen voor standaardinterfaceweergaven",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.daySlotAll": "de hele dag",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.daySlotAmWithArticle": "De ochtend",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.daySlotIncompatible": "Je kunt slechts een parkeerplaats reserveren voor %{availableSlots} . Er zijn geen parkeerplaatsen beschikbaar voor jouw voertuigtype %{vehicleInfo} tijdens het door jou geselecteerde tijdslot.",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.daySlotPmWithArticle": "de middag",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.noParkingAvailable": "Er is geen parkeergelegenheid voor uw type voertuig in dit gebouw; neem contact op met uw beheerder.",
+  "CheckPersonVehiculeParkingDaySlotCompatibility.noVehicle": "Om parkeerplaatsen te reserveren, moet u een voertuig in uw profiel registreren.",
+  "CheckPersonVehiculeParkingDaySlotSingleBookingPerDayCompatibility.singleBookingPerDayIncompatible": "Je hebt al een parkeerreservering voor vandaag. Met jouw type voertuig kun je slechts één parkeerplaats per dag reserveren.",
+  "CheckThereIsAtLeastOneFreeRoomInTheBuilding.noFreeParkingAvailable": "Er zijn geen parkeerplaatsen beschikbaar tijdens uw gereserveerde tijdslot.",
   "CloneEntitiesFailed.cloneFailed": "Klonen is onmogelijk.",
   "CollapseSwitchButton.help.false": "Zie de details",
   "CollapseSwitchButton.help.true": "Details verbergen",
@@ -65094,6 +65640,10 @@ const nl = {
   "DateDimensionSelect.options.week": "Week",
   "DateDimensionSelect.options.year": "Jaar",
   "DayHeaders.time": "Uur",
+  "DaySlotTypeLabel.amHelp": "De ochtenduren zijn van 8.00 uur tot 13.30 uur.",
+  "DaySlotTypeLabel.amLabel": "Ochtend",
+  "DaySlotTypeLabel.pmHelp": "De middaguren zijn van 14.00 uur.",
+  "DaySlotTypeLabel.pmLabel": "Middag",
   "DeleteDialog.cancel.help": "Verwijdering ongedaan maken",
   "DeleteDialog.cancel.label": "Annuleren",
   "DeleteDialog.content": "U staat op het punt <b>%{determinant.undefined}</b> te verwijderen. Deze actie is niet ongedaan te maken en kan gevolgen hebben. Weet u zeker dat u deze actie wilt uitvoeren?",
@@ -65112,6 +65662,7 @@ const nl = {
   "DeskBookingConfirmationButton.confirm": "Bevestig uw aanwezigheid",
   "DeskBookingConfirmationButton.confirmHelp": "Bevestig dat u aanwezig bent op uw werkplek",
   "DeskBookingsSection.noBookingsFound": "Geen aankomende reserveringen gevonden.",
+  "DimensionBuildingPlanningLabel.anotherPersonIsAssigned": "%{personFullName} is toegewezen aan %{dimensionTypeName} %{dimensionName}",
   "DimensionBuildingPlanningLabel.youAreAssigned": "U bent toegewezen aan %{dimensionTypeName} %{dimensionName}",
   "DimensionInfo.carbonFootprint.help": "De CO2-voetafdruk is %{value} van de CO2-uitstoot voor %{dimensionType} %{dimension}",
   "DimensionInfo.dimensionPeopleCount.help": "Er zijn %{value} persoon(en) toegewezen in %{dimensionType} %{dimension}",
@@ -65150,6 +65701,7 @@ const nl = {
   "DimensionTypesByTab.ListItemHasChildrenSelected": "Afmetingen zijn geselecteerd",
   "DimensionTypesByTab.action.false": "deselecteer alles",
   "DimensionTypesByTab.action.true": "Selecteer alles",
+  "DirectBuildingPlanningLabel.anotherPersonIsAssigned": "%{personFullName} is toegewezen aan het gebouw %{buildingName}",
   "DirectBuildingPlanningLabel.youAreAssigned": "Je bent toegewezen aan gebouw %{buildingName}",
   "DisplayPersonTexts.personCode.help": "Wel of niet het personeelsnummer weergeven van de mensen die op het plan aan de werkstations zijn toegewezen",
   "DisplayPersonTexts.personCode.label": "Registratie nummer",
@@ -65385,12 +65937,12 @@ const nl = {
   "GlobalSearchIncludeScenarios.label": "Scenario's opnemen in zoeken",
   "GoogleApiWrapper.configurationNotFound": "Google Maps API-sleutel is niet geconfigureerd",
   "GoogleApiWrapper.loadingFailed": "Het laden van de Google Maps API is mislukt",
-  "HalfDayWorkingLocationToggle.all.help": "De openingstijden zijn van 08:00 tot 19:00 uur.",
-  "HalfDayWorkingLocationToggle.all.label": "De hele dag",
-  "HalfDayWorkingLocationToggle.am.help": "De ochtenduren zijn van 8.00 uur tot 13.30 uur.",
-  "HalfDayWorkingLocationToggle.am.label": "Ochtend",
-  "HalfDayWorkingLocationToggle.pm.help": "De middaguren zijn van 14.00 uur.",
-  "HalfDayWorkingLocationToggle.pm.label": "Middag",
+  "HalfDayWorkingLocationToggle.allHelp": "De openingstijden zijn van 08:00 tot 19:00 uur.",
+  "HalfDayWorkingLocationToggle.allLabel": "De hele dag",
+  "HalfDayWorkingLocationToggle.amHelp": "De ochtenduren zijn van 8.00 uur tot 13.30 uur.",
+  "HalfDayWorkingLocationToggle.amLabel": "Ochtend",
+  "HalfDayWorkingLocationToggle.pmHelp": "De middaguren zijn van 14.00 uur.",
+  "HalfDayWorkingLocationToggle.pmLabel": "Middag",
   "HasManyStandaloneNoData.noData": "Er is geen %{targetObjectTypeLabel} gekoppeld voor %{determinant.defined}",
   "HeatMapSelection.heatmaps.carbonFootprintCount.description": "Kleurruimtes volgens de ecologische voetafdruk van het meubilair",
   "HeatMapSelection.heatmaps.carbonFootprintCount.label": "Koolstofvoetafdrukdichtheid van meubilair",
@@ -65470,6 +66022,9 @@ const nl = {
   "ItemTypesMapFilterZone.tabs.options": "Opties",
   "ItemsInventory.EmptyList": "Er bevinden zich geen objecten in deze ruimte",
   "JupDateRangePicker.chooseRange": "Kies een periode",
+  "JupRoleToJupUiOptionList.globalOptionsHeader": "Globale interface-opties",
+  "JupRoleToJupUiOptionList.layout2dOptionsHeader": "Werkbladopties",
+  "JupRoleToJupUiOptionList.setTo": "Instellen op %{value}",
   "JupRoleToObjectTypeMatrix.objectTypes.help.checkbox": "Eigenschap bijwerken ( %{name} )",
   "JupRoleToObjectTypeMatrix.views.help.false": "Interfaceweergave tonen",
   "JupRoleToObjectTypeMatrix.views.help.true": "Interfaceweergave verbergen",
@@ -65667,7 +66222,11 @@ const nl = {
   "OrganizationTabsFilter.tabs.hierarchy": "Hiërarchie",
   "OrganizationTabsFilter.tabs.level1": "Diensten",
   "OrganizationTabsFilter.tabs.topLevel": "Routebeschrijving",
+  "OtherThanWorkplaceBooking.locationOffice": "Bureau",
+  "OtherThanWorkplaceBooking.locationRemote": "Telewerk",
   "PWLSelectDimensionCard.selectDimensionCard.title": "Selecteer een dimensie",
+  "ParkingBookingIcon.tooltip": "Deze persoon kan parkeerplaatsen in dit gebouw reserveren.",
+  "ParkingOptions.noParkingBookedInBuilding": "Er zijn geen parkeerplaatsen gereserveerd.",
   "PartnerEntityCreateTab.button.help": "Maken in %{partnerName}",
   "PartnerEntityCreateTab.button.label": "Maken in %{partnerName}",
   "PartnerEntityCreateTab.progress.syncing": "%{label} synchroniseren ...",
@@ -65713,6 +66272,11 @@ const nl = {
   "PersonPanelWorkplaceAffectations.title": "Werkstationopdrachten",
   "PersonRelationsPanel.description": "De relaties van deze persoon",
   "PersonRelationsPanel.title": "Relaties",
+  "PersonSearchSelector.changePersonCta": "Verander de persoon",
+  "PersonSearchSelector.noPersonSelected": "Niemand heeft gekozen",
+  "PersonSearchSelector.removePersonHelp": "Verwijder de geselecteerde persoon",
+  "PersonSearchSelector.selectPersonCta": "Selecteer een persoon",
+  "PersonSearchSelector.selectedPersonLabel": "Persoon: %{personName}",
   "PersonSecurityPanel.description": "Veiligheids- en evacuatie-informatie",
   "PersonSecurityPanel.title": "Beveiliging",
   "PersonSecurityProfileInRoomListItem.peopleCount": "Er zijn %{count} persoon(en) met beveiligingsprofiel %{name} toegewezen aan ruimtes",
@@ -66162,8 +66726,8 @@ const nl = {
   "WorkCanvasLoadingIcon.title": "Het plan laden",
   "WorkCanvasShortcutTooltipHelp.help": "Sneltoets: <b>%{shortcut}</b>",
   "WorkCanvasToggleOptionHelp.shortcut": "Sneltoets: <b>%{shortcut}</b>",
-  "WorkingLocationToggle.locations.OFFICE": "Bureau",
-  "WorkingLocationToggle.locations.REMOTE": "Telewerk",
+  "WorkingLocationToggle.locationOffice": "Bureau",
+  "WorkingLocationToggle.locationRemote": "Telewerk",
   "WorkpaceBookingAverageByWeekDay.excludeWeekends": "Weekenden uitsluiten",
   "WorkpaceBookingAverageByWeekDay.labels.bar": "Aantal reserveringen",
   "WorkpaceBookingAverageByWeekDay.labels.line": "Gemiddeld per week",
@@ -66192,6 +66756,7 @@ const nl = {
   "WorkplaceBookingDimensionOccupanyRate.message.occupied": "De buurt is bezet met %{percentage}",
   "WorkplaceBookingDimensionOccupanyRate.tooltip.crowded": "Het gebied wordt als overbevolkt beschouwd.",
   "WorkplaceBookingDimensionOccupanyRate.tooltip.title": "Er zijn %{bookedWorkplaces} bezette werkplek(ken) van %{totalBookableWorkplaces} beschikbaar voor boeking.",
+  "WorkplaceBookingIcon.tooltip": "Deze persoon kan werkplekken in dit gebouw reserveren.",
   "WorkplaceCanvasItem.workplace.free": "De werkplek is niet bezet",
   "WorkplaceCanvasItem.workplace.isBookable": "De werkplek is te reserveren",
   "WorkplaceCanvasItem.workplace.isFlex": "De werkplek is in flex",
@@ -66199,7 +66764,7 @@ const nl = {
   "WorkplaceFullName.noName": "Naamloze werkstation",
   "WorkplaceList.workplace.flex": "Deze werkplek is flex",
   "WorkplaceList.workplace.free": "Dit werkstation is gratis",
-  "WorkplaceList.workplace.transit": "Dit werkstation wordt gedeeld",
+  "WorkplaceList.workplace.transit": "Deze werkplek is tijdelijk.",
   "WorkplaceList.zoomOnWorkplace": "Zoom in op de werkplek op de plattegrond",
   "WorkplaceNestedList.title": "Mensen die aan werkstations zijn toegewezen",
   "WorkplaceOccupancyRateByDimension.labels.occupancyRate": "Bezettingsgraad (%)",
@@ -66214,6 +66779,11 @@ const nl = {
   "WorkplaceTypeDataQualityNotUsed.columns.name": "Naam van het werkstationtype",
   "WorkplaceTypeDataQualityNotUsed.columns.shape": "Vorm",
   "WorkplaceTypeInfo.help": "Het aantal werkstations is %{count}",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.buttonFixSelectedHelp": "Voegt de eigenschap z: 0 toe aan geselecteerde posities die geen z-coördinaat hebben.",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.headerCompany": "Onderneming",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.headerItemType": "Object type",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.headerPosition": "Positie",
+  "WorkplaceTypeItemTypeDataQualityPositionZ.headerWorkplaceType": "Type werkstation",
   "WorkplaceTypeItemTypesDrawer.title": "Lijst met objecttypen",
   "WorkplaceTypeItemTypesDrawerSortableItem.info.close": "Opties samenvouwen",
   "WorkplaceTypeItemTypesDrawerSortableItem.info.open": "Vouw opties uit",
@@ -66639,6 +67209,8 @@ const nl = {
   "models.Company.properties.planningNumberOfDays.label": "Aantal planningsdagen",
   "models.Company.properties.proxyImages.description": "Proxy voor afbeeldingen inschakelen",
   "models.Company.properties.proxyImages.label": "Proxy-afbeeldingen",
+  "models.Company.properties.trackUserActivity.description": "Sta Surfy toe om gebruikersactiviteit te volgen en zo de gebruikerservaring te verbeteren.",
+  "models.Company.properties.trackUserActivity.label": "Sta Surfy toe om gebruikersactiviteit te volgen en zo de gebruikerservaring te verbeteren.",
   "models.Company.properties.workingDaysCount.description": "Het aantal werkdagen per week kan voor werkdagen 5 bedragen, 6 inclusief zaterdag en 7 inclusief zondag",
   "models.Company.properties.workingDaysCount.label": "Aantal werkdagen per week",
   "models.Company.properties.workplaceBookingConfirmationRange.description": "Tijdsbestek waarbinnen gebruikers hun werkplekreserveringen kunnen bevestigen. Formaat: UU:MM-UU:MM (bijv. 06:00-10:30). Laat dit veld leeg om de bevestiging van werkplekreserveringen uit te schakelen.",
@@ -67064,16 +67636,26 @@ const nl = {
   "models.JupRoleToJupObjectType.properties.arUpdate.label": "Bijwerken (U)",
   "models.JupRoleToJupObjectType.properties.id.label": "Rol-naar-objecttype-associatie-ID",
   "models.JupRoleToJupObjectType.singular": "Rol-naar-objecttype-associatie",
-  "models.JupRoleToJupUiLayout.description": "Met een rolkoppeling aan interface-indelingen kunt u toegangsrechten definiëren voor verschillende interface-indelingen voor een rol",
-  "models.JupRoleToJupUiLayout.determinant.defined": "de associatie van de rol met interface-indelingen",
-  "models.JupRoleToJupUiLayout.determinant.undefined": "een associatie van de rol met interface-indelingen",
-  "models.JupRoleToJupUiLayout.determinants.defined": "rolassociaties aan interface-indelingen",
-  "models.JupRoleToJupUiLayout.determinants.undefined": "van rolassociaties tot interface-indelingen",
-  "models.JupRoleToJupUiLayout.plural": "Rolassociaties aan interface-indelingen",
-  "models.JupRoleToJupUiLayout.properties.canSee.description": "Zorgt ervoor dat de optie door de rol gezien kan worden",
-  "models.JupRoleToJupUiLayout.properties.canSee.label": "Kan optie zien",
-  "models.JupRoleToJupUiLayout.properties.id.label": "Identificatie van de rolkoppeling met interface-indelingen",
-  "models.JupRoleToJupUiLayout.singular": "Rollen koppelen aan interface-indelingen",
+  "models.JupRoleToJupUiLayout.description": "Met een koppeling tussen rollen en visies kunt u toegangsrechten tot verschillende visies voor een rol definiëren.",
+  "models.JupRoleToJupUiLayout.determinant.defined": "de koppeling van de rol aan de visies",
+  "models.JupRoleToJupUiLayout.determinant.undefined": "een verband tussen rol en visies",
+  "models.JupRoleToJupUiLayout.determinants.defined": "de verbanden tussen rol en visies",
+  "models.JupRoleToJupUiLayout.determinants.undefined": "associaties van rol aan visies",
+  "models.JupRoleToJupUiLayout.plural": "Verenigingen spelen een rol in visies.",
+  "models.JupRoleToJupUiLayout.properties.canSee.description": "Maakt het mogelijk dat de visie door de rol wordt gezien.",
+  "models.JupRoleToJupUiLayout.properties.canSee.label": "Ik kan de visie zien",
+  "models.JupRoleToJupUiLayout.properties.id.label": "Rolgebaseerde associatie-identificatie voor visies",
+  "models.JupRoleToJupUiLayout.singular": "De rol van de vereniging bij het realiseren van visies",
+  "models.JupRoleToJupUiLayoutTab.description": "Door een rol te koppelen aan plantabbladen kunt u toegangsrechten tot de verschillende plantabbladen voor een rol definiëren.",
+  "models.JupRoleToJupUiLayoutTab.determinant.defined": "de rol koppelen aan de tabbladen van het plan",
+  "models.JupRoleToJupUiLayoutTab.determinant.undefined": "een koppeling van de rol aan de plantabbladen",
+  "models.JupRoleToJupUiLayoutTab.determinants.defined": "rolassociaties aan plantabbladen",
+  "models.JupRoleToJupUiLayoutTab.determinants.undefined": "rolassociaties aan plantabbladen",
+  "models.JupRoleToJupUiLayoutTab.plural": "Rolassociaties aan plantabbladen",
+  "models.JupRoleToJupUiLayoutTab.properties.canSee.description": "Hiermee kan het tabblad 'Plan' zichtbaar worden gemaakt voor de betreffende rol.",
+  "models.JupRoleToJupUiLayoutTab.properties.canSee.label": "Je kunt het tabblad zien",
+  "models.JupRoleToJupUiLayoutTab.properties.id.label": "Rolassociatie-identificatie voor plantabbladen",
+  "models.JupRoleToJupUiLayoutTab.singular": "roltoewijzing aan plantabbladen",
   "models.JupRoleToJupUiOperation.description": "Met een rolkoppeling aan interfacebewerkingen kunt u toegangsrechten definiëren voor de verschillende interfacebewerkingen voor een rol",
   "models.JupRoleToJupUiOperation.determinant.defined": "het koppelen van de rol aan interfacebewerkingen",
   "models.JupRoleToJupUiOperation.determinant.undefined": "een associatie van de rol met interfacebewerkingen",
@@ -67110,6 +67692,16 @@ const nl = {
   "models.JupUiLayout.plural": "Visies op het plan",
   "models.JupUiLayout.properties.id.label": "Plan Visie Identifier",
   "models.JupUiLayout.singular": "Visie op het plan",
+  "models.JupUiLayoutTab.description": "Een tabblad 'Plan' definieert de verschillende tabbladen die beschikbaar zijn in de interface voor het bekijken van plattegronden.",
+  "models.JupUiLayoutTab.determinant.defined": "het tabblad 'plan'",
+  "models.JupUiLayoutTab.determinant.undefined": "een kaarttabblad",
+  "models.JupUiLayoutTab.determinants.defined": "de plantabbladen",
+  "models.JupUiLayoutTab.determinants.undefined": "plan tabbladen",
+  "models.JupUiLayoutTab.plural": "Kaarttabbladen",
+  "models.JupUiLayoutTab.properties.id.label": "Kaarttab-ID",
+  "models.JupUiLayoutTab.properties.name.description": "De naam van het tabblad dat in de interface wordt weergegeven.",
+  "models.JupUiLayoutTab.properties.name.label": "Tabnaam",
+  "models.JupUiLayoutTab.singular": "Kaarttabblad",
   "models.JupUiOperation.description": "Een interfacebewerking definieert de acties en functionaliteit die beschikbaar zijn in de gebruikersinterface",
   "models.JupUiOperation.determinant.defined": "interface-bediening",
   "models.JupUiOperation.determinant.undefined": "een interfaceoperatie",
@@ -67554,6 +68146,8 @@ const nl = {
   "models.PersonWorkingLocation.views.booking-maps.label": "Reserveringen op een plan",
   "models.PersonWorkingLocation.views.my-planning.help": "Beheer mijn agenda voor de komende weken",
   "models.PersonWorkingLocation.views.my-planning.label": "Beheer mijn agenda",
+  "models.PersonWorkingLocation.views.obo-planning.help": "Beheer de planning en maak reserveringen voor iemand anders.",
+  "models.PersonWorkingLocation.views.obo-planning.label": "Boek voor iemand anders.",
   "models.PersonWorkingLocation.views.pwl-dimension.help": "Bekijk reserveringen per buurt",
   "models.PersonWorkingLocation.views.pwl-dimension.label": "Reserveringen per district",
   "models.Room.description": "Ruimtes zijn werkplekken of zones om een ​​verdieping in deelruimtes te verdelen",
@@ -67913,6 +68507,8 @@ const nl = {
   "models.WorkplaceType.views.avatar.label": "Zie de vorm",
   "models.WorkplaceType.views.dq-not-used.help": "Vermeld alle ongebruikte typen werkstations via werkstations",
   "models.WorkplaceType.views.dq-not-used.label": "Niet gebruikt",
+  "models.WorkplaceType.views.dq-workplace-type-item-type-position-z.help": "Geef een lijst van de typen werkstationobjecten waarvan de positie de z-coördinaat mist.",
+  "models.WorkplaceType.views.dq-workplace-type-item-type-position-z.label": "Ontbrekende Z-positie",
   "models.WorkplaceType.views.editor.help": "Vormen en locaties van objecttypen bewerken voor werkstationtype %{name}",
   "models.WorkplaceType.views.editor.label": "Vormen bewerken",
   "models.WorkplaceTypeItemType.determinant.defined": "het objecttype in het werkstationtype",
@@ -68105,14 +68701,6 @@ const localStorageEffect = () => ({ setSelf, onSet, node: node2 }) => {
   }
 };
 atomFamily({
-  key: "workingLocationStore",
-  default: void 0
-});
-atom({
-  key: "currentCompany",
-  default: null
-});
-atomFamily({
   key: "roomPathFindingResultAtomFamily",
   default: void 0
 });
@@ -68148,8 +68736,13 @@ function consoleLog(...args) {
     console.log.apply(console.log, args);
   }
 }
-var LIBVERSION = "2.0.0", EMPTY = "", UNKNOWN = "?", FUNC_TYPE = "function", UNDEF_TYPE = "undefined", OBJ_TYPE = "object", STR_TYPE = "string", MAJOR = "major", MODEL = "model", NAME = "name", TYPE = "type", VENDOR = "vendor", VERSION = "version", ARCHITECTURE = "architecture", CONSOLE = "console", MOBILE = "mobile", TABLET = "tablet", SMARTTV = "smarttv", WEARABLE = "wearable", XR = "xr", EMBEDDED = "embedded", INAPP = "inapp", USER_AGENT = "user-agent", UA_MAX_LENGTH = 500, BRANDS = "brands", FORMFACTORS = "formFactors", FULLVERLIST = "fullVersionList", PLATFORM = "platform", PLATFORMVER = "platformVersion", BITNESS = "bitness", CH_HEADER = "sec-ch-ua", CH_HEADER_FULL_VER_LIST = CH_HEADER + "-full-version-list", CH_HEADER_ARCH = CH_HEADER + "-arch", CH_HEADER_BITNESS = CH_HEADER + "-" + BITNESS, CH_HEADER_FORM_FACTORS = CH_HEADER + "-form-factors", CH_HEADER_MOBILE = CH_HEADER + "-" + MOBILE, CH_HEADER_MODEL = CH_HEADER + "-" + MODEL, CH_HEADER_PLATFORM = CH_HEADER + "-" + PLATFORM, CH_HEADER_PLATFORM_VER = CH_HEADER_PLATFORM + "-version", CH_ALL_VALUES = [BRANDS, FULLVERLIST, MOBILE, MODEL, PLATFORM, PLATFORMVER, ARCHITECTURE, FORMFACTORS, BITNESS], UA_BROWSER = "browser", UA_CPU = "cpu", UA_DEVICE = "device", UA_ENGINE = "engine", UA_OS = "os", UA_RESULT = "result", AMAZON = "Amazon", APPLE = "Apple", ASUS = "ASUS", BLACKBERRY = "BlackBerry", GOOGLE = "Google", HUAWEI = "Huawei", LENOVO = "Lenovo", HONOR = "Honor", LG = "LG", MICROSOFT = "Microsoft", MOTOROLA = "Motorola", SAMSUNG = "Samsung", SHARP = "Sharp", SONY = "Sony", XIAOMI = "Xiaomi", ZEBRA = "Zebra", PREFIX_MOBILE = "Mobile ", SUFFIX_BROWSER = " Browser", CHROME = "Chrome", CHROMECAST = "Chromecast", EDGE = "Edge", FIREFOX = "Firefox", OPERA = "Opera", FACEBOOK = "Facebook", SOGOU = "Sogou", WINDOWS = "Windows";
-var isWindow = typeof window !== UNDEF_TYPE, NAVIGATOR = isWindow && window.navigator ? window.navigator : void 0, NAVIGATOR_UADATA = NAVIGATOR && NAVIGATOR.userAgentData ? NAVIGATOR.userAgentData : void 0;
+var LIBVERSION = "2.0.7", UA_MAX_LENGTH = 500, USER_AGENT = "user-agent", EMPTY = "", UNKNOWN = "?", TYPEOF = {
+  FUNCTION: "function",
+  OBJECT: "object",
+  STRING: "string",
+  UNDEFINED: "undefined"
+}, BROWSER = "browser", CPU = "cpu", DEVICE = "device", ENGINE = "engine", OS = "os", RESULT = "result", NAME = "name", TYPE = "type", VENDOR = "vendor", VERSION = "version", ARCHITECTURE = "architecture", MAJOR = "major", MODEL = "model", CONSOLE = "console", MOBILE = "mobile", TABLET = "tablet", SMARTTV = "smarttv", WEARABLE = "wearable", XR = "xr", EMBEDDED = "embedded", INAPP = "inapp", BRANDS = "brands", FORMFACTORS = "formFactors", FULLVERLIST = "fullVersionList", PLATFORM = "platform", PLATFORMVER = "platformVersion", BITNESS = "bitness", CH = "sec-ch-ua", CH_FULL_VER_LIST = CH + "-full-version-list", CH_ARCH = CH + "-arch", CH_BITNESS = CH + "-" + BITNESS, CH_FORM_FACTORS = CH + "-form-factors", CH_MOBILE = CH + "-" + MOBILE, CH_MODEL = CH + "-" + MODEL, CH_PLATFORM = CH + "-" + PLATFORM, CH_PLATFORM_VER = CH_PLATFORM + "-version", CH_ALL_VALUES = [BRANDS, FULLVERLIST, MOBILE, MODEL, PLATFORM, PLATFORMVER, ARCHITECTURE, FORMFACTORS, BITNESS], AMAZON = "Amazon", APPLE = "Apple", ASUS = "ASUS", BLACKBERRY = "BlackBerry", GOOGLE = "Google", HUAWEI = "Huawei", LENOVO = "Lenovo", HONOR = "Honor", LG = "LG", MICROSOFT = "Microsoft", MOTOROLA = "Motorola", NVIDIA = "Nvidia", ONEPLUS = "OnePlus", OPPO = "OPPO", SAMSUNG = "Samsung", SHARP = "Sharp", SONY = "Sony", XIAOMI = "Xiaomi", ZEBRA = "Zebra", CHROME = "Chrome", CHROMIUM = "Chromium", CHROMECAST = "Chromecast", EDGE = "Edge", FIREFOX = "Firefox", OPERA = "Opera", FACEBOOK = "Facebook", SOGOU = "Sogou", PREFIX_MOBILE = "Mobile ", SUFFIX_BROWSER = " Browser", WINDOWS = "Windows";
+var isWindow = typeof window !== TYPEOF.UNDEFINED, NAVIGATOR = isWindow && window.navigator ? window.navigator : void 0, NAVIGATOR_UADATA = NAVIGATOR && NAVIGATOR.userAgentData ? NAVIGATOR.userAgentData : void 0;
 var extend = function(defaultRgx, extensions) {
   var mergedRgx = {};
   var extraRgx = extensions;
@@ -68172,19 +68765,19 @@ var extend = function(defaultRgx, extensions) {
   }
   return enums;
 }, has = function(str1, str2) {
-  if (typeof str1 === OBJ_TYPE && str1.length > 0) {
+  if (typeof str1 === TYPEOF.OBJECT && str1.length > 0) {
     for (var i in str1) {
-      if (lowerize(str1[i]) == lowerize(str2)) return true;
+      if (lowerize(str2) == lowerize(str1[i])) return true;
     }
     return false;
   }
-  return isString(str1) ? lowerize(str2).indexOf(lowerize(str1)) !== -1 : false;
+  return isString(str1) ? lowerize(str2) == lowerize(str1) : false;
 }, isExtensions = function(obj, deep) {
   for (var prop in obj) {
     return /^(browser|cpu|device|engine|os)$/.test(prop) || (deep ? isExtensions(obj[prop]) : false);
   }
 }, isString = function(val) {
-  return typeof val === STR_TYPE;
+  return typeof val === TYPEOF.STRING;
 }, itemListToArray = function(header) {
   if (!header) return void 0;
   var arr = [];
@@ -68204,8 +68797,9 @@ var extend = function(defaultRgx, extensions) {
   return isString(version2) ? strip(/[^\d\.]/g, version2).split(".")[0] : void 0;
 }, setProps = function(arr) {
   for (var i in arr) {
+    if (!arr.hasOwnProperty(i)) continue;
     var propName = arr[i];
-    if (typeof propName == OBJ_TYPE && propName.length == 2) {
+    if (typeof propName == TYPEOF.OBJECT && propName.length == 2) {
       this[propName[0]] = propName[1];
     } else {
       this[propName] = void 0;
@@ -68217,10 +68811,8 @@ var extend = function(defaultRgx, extensions) {
 }, stripQuotes = function(str) {
   return strip(/\\?\"/g, str);
 }, trim = function(str, len) {
-  if (isString(str)) {
-    str = strip(/^\s\s*/, str);
-    return typeof len === UNDEF_TYPE ? str : str.substring(0, UA_MAX_LENGTH);
-  }
+  str = strip(/^\s\s*/, String(str));
+  return typeof len === TYPEOF.UNDEFINED ? str : str.substring(0, len);
 };
 var rgxMapper = function(ua, arrays) {
   if (!ua || !arrays) return;
@@ -68237,21 +68829,29 @@ var rgxMapper = function(ua, arrays) {
         for (p = 0; p < props.length; p++) {
           match2 = matches[++k];
           q = props[p];
-          if (typeof q === OBJ_TYPE && q.length > 0) {
+          if (typeof q === TYPEOF.OBJECT && q.length > 0) {
             if (q.length === 2) {
-              if (typeof q[1] == FUNC_TYPE) {
+              if (typeof q[1] == TYPEOF.FUNCTION) {
                 this[q[0]] = q[1].call(this, match2);
               } else {
                 this[q[0]] = q[1];
               }
-            } else if (q.length === 3) {
-              if (typeof q[1] === FUNC_TYPE && !(q[1].exec && q[1].test)) {
-                this[q[0]] = match2 ? q[1].call(this, match2, q[2]) : void 0;
+            } else if (q.length >= 3) {
+              if (typeof q[1] === TYPEOF.FUNCTION && !(q[1].exec && q[1].test)) {
+                if (q.length > 3) {
+                  this[q[0]] = match2 ? q[1].apply(this, q.slice(2)) : void 0;
+                } else {
+                  this[q[0]] = match2 ? q[1].call(this, match2, q[2]) : void 0;
+                }
               } else {
-                this[q[0]] = match2 ? match2.replace(q[1], q[2]) : void 0;
+                if (q.length == 3) {
+                  this[q[0]] = match2 ? match2.replace(q[1], q[2]) : void 0;
+                } else if (q.length == 4) {
+                  this[q[0]] = match2 ? q[3].call(this, match2.replace(q[1], q[2])) : void 0;
+                } else if (q.length > 4) {
+                  this[q[0]] = match2 ? q[3].apply(this, [match2.replace(q[1], q[2])].concat(q.slice(4))) : void 0;
+                }
               }
-            } else if (q.length === 4) {
-              this[q[0]] = match2 ? q[3].call(this, match2.replace(q[1], q[2])) : void 0;
             }
           } else {
             this[q] = match2 ? match2 : void 0;
@@ -68263,7 +68863,7 @@ var rgxMapper = function(ua, arrays) {
   }
 }, strMapper = function(str, map) {
   for (var i in map) {
-    if (typeof map[i] === OBJ_TYPE && map[i].length > 0) {
+    if (typeof map[i] === TYPEOF.OBJECT && map[i].length > 0) {
       for (var j = 0; j < map[i].length; j++) {
         if (has(map[i][j], str)) {
           return i === UNKNOWN ? void 0 : i;
@@ -68277,16 +68877,16 @@ var rgxMapper = function(ua, arrays) {
 };
 var windowsVersionMap = {
   "ME": "4.90",
-  "NT 3.11": "NT3.51",
-  "NT 4.0": "NT4.0",
-  "2000": "NT 5.0",
-  "XP": ["NT 5.1", "NT 5.2"],
-  "Vista": "NT 6.0",
-  "7": "NT 6.1",
-  "8": "NT 6.2",
-  "8.1": "NT 6.3",
-  "10": ["NT 6.4", "NT 10.0"],
-  "RT": "ARM"
+  "NT 3.51": "3.51",
+  "NT 4.0": "4.0",
+  "2000": ["5.0", "5.01"],
+  "XP": ["5.1", "5.2"],
+  "Vista": "6.0",
+  "7": "6.1",
+  "8": "6.2",
+  "8.1": "6.3",
+  "10": ["6.4", "10.0"],
+  "NT": ""
 }, formFactorsMap = {
   "embedded": "Automotive",
   "mobile": "Mobile",
@@ -68296,6 +68896,16 @@ var windowsVersionMap = {
   "xr": ["VR", "XR"],
   "?": ["Desktop", "Unknown"],
   "*": void 0
+}, browserHintsMap = {
+  "Chrome": "Google Chrome",
+  "Edge": "Microsoft Edge",
+  "Edge WebView2": "Microsoft Edge WebView2",
+  "Chrome WebView": "Android WebView",
+  "Chrome Headless": "HeadlessChrome",
+  "Huawei Browser": "HuaweiBrowser",
+  "MIUI Browser": "Miui Browser",
+  "Opera Mobi": "OperaMobile",
+  "Yandex": "YaBrowser"
 };
 var defaultRegexes = {
   browser: [
@@ -68306,8 +68916,12 @@ var defaultRegexes = {
     ],
     [VERSION, [NAME, PREFIX_MOBILE + "Chrome"]],
     [
-      /edg(?:e|ios|a)?\/([\w\.]+)/i
+      /webview.+edge\/([\w\.]+)/i
       // Microsoft Edge
+    ],
+    [VERSION, [NAME, EDGE + " WebView"]],
+    [
+      /edg(?:e|ios|a)?\/([\w\.]+)/i
     ],
     [VERSION, [NAME, "Edge"]],
     [
@@ -68356,13 +68970,15 @@ var defaultRegexes = {
       // Avant/IEMobile/SlimBrowser/SlimBoat/Slimjet
       /(?:ms|\()(ie) ([\w\.]+)/i,
       // Internet Explorer
-      // Blink/Webkit/KHTML based                                         // Flock/RockMelt/Midori/Epiphany/Silk/Skyfire/Bolt/Iron/Iridium/PhantomJS/Bowser/QupZilla/Falkon
-      /(flock|rockmelt|midori|epiphany|silk|skyfire|ovibrowser|bolt|iron|vivaldi|iridium|phantomjs|bowser|qupzilla|falkon|rekonq|puffin|brave|whale(?!.+naver)|qqbrowserlite|duckduckgo|klar|helio|(?=comodo_)?dragon)\/([-\w\.]+)/i,
-      // Rekonq/Puffin/Brave/Whale/QQBrowserLite/QQ//Vivaldi/DuckDuckGo/Klar/Helio/Dragon
-      /(heytap|ovi|115)browser\/([\d\.]+)/i,
-      // HeyTap/Ovi/115
-      /(weibo)__([\d\.]+)/i
-      // Weibo
+      // Blink/Webkit/KHTML based                                         // Flock/RockMelt/Midori/Epiphany/Silk/Skyfire/Bolt/Iron/Iridium/PhantomJS/Bowser/QupZilla/Falkon/LG Browser/Otter/qutebrowser/Dooble/Palemoon
+      /(atlas|flock|rockmelt|midori|epiphany|silk|skyfire|ovibrowser|bolt|iron|vivaldi|iridium|phantomjs|bowser|qupzilla|falkon|rekonq|puffin|brave|whale(?!.+naver)|qqbrowserlite|duckduckgo|klar|helio|(?=comodo_)?dragon|otter|dooble|(?:lg |qute)browser|palemoon)\/([-\w\.]+)/i,
+      // Atlas/Rekonq/Puffin/Brave/Whale/QQBrowserLite/QQ//Vivaldi/DuckDuckGo/Klar/Helio/Dragon
+      /(heytap|ovi|115|surf|qwant)browser\/([\d\.]+)/i,
+      // HeyTap/Ovi/115/Surf
+      /(qwant)(?:ios|mobile)\/([\d\.]+)/i,
+      // Qwant
+      /(ecosia|weibo)(?:__| \w+@)([\d\.]+)/i
+      // Ecosia/Weibo
     ],
     [NAME, VERSION],
     [
@@ -68488,8 +69104,8 @@ var defaultRegexes = {
     ],
     [NAME, VERSION],
     [
-      /(lbbrowser|rekonq)/i
-      // LieBao Browser/Rekonq
+      /(lbbrowser|rekonq|steam(?= (clie|tenf|gameo)))/i
+      // LieBao Browser/Rekonq/Steam
     ],
     [NAME],
     [
@@ -68506,12 +69122,12 @@ var defaultRegexes = {
     ],
     [[NAME, FACEBOOK], VERSION, [TYPE, INAPP]],
     [
-      /(Klarna)\/([\w\.]+)/i,
-      // Klarna Shopping Browser for iOS & Android
       /(kakao(?:talk|story))[\/ ]([\w\.]+)/i,
       // Kakao App
       /(naver)\(.*?(\d+\.[\w\.]+).*\)/i,
       // Naver InApp
+      /(daum)apps[\/ ]([\w\.]+)/i,
+      // Daum App
       /safari (line)\/([\w\.]+)/i,
       // Line App for iOS
       /\b(line)\/([\w\.]+)\/iab/i,
@@ -68520,8 +69136,10 @@ var defaultRegexes = {
       // Alipay
       /(twitter)(?:and| f.+e\/([\w\.]+))/i,
       // Twitter
-      /(instagram|snapchat)[\/ ]([-\w\.]+)/i
-      // Instagram/Snapchat
+      /(bing)(?:web|sapphire)\/([\w\.]+)/i,
+      // Bing
+      /(instagram|snapchat|klarna)[\/ ]([-\w\.]+)/i
+      // Instagram/Snapchat/Klarna
     ],
     [NAME, VERSION, [TYPE, INAPP]],
     [
@@ -68540,6 +69158,11 @@ var defaultRegexes = {
     ],
     [NAME, [TYPE, INAPP]],
     [
+      /(zalo(?:app)?)[\/\sa-z]*([\w\.-]+)/i
+      // Zalo 
+    ],
+    [[NAME, /(.+)/, "Zalo"], VERSION, [TYPE, INAPP]],
+    [
       /(chromium)[\/ ]([-\w\.]+)/i
       // Chromium
     ],
@@ -68549,6 +69172,11 @@ var defaultRegexes = {
       // Chrome Headless
     ],
     [VERSION, [NAME, CHROME + " Headless"]],
+    [
+      /wv\).+chrome\/([\w\.]+).+edgw\//i
+      // Edge WebView2
+    ],
+    [VERSION, [NAME, EDGE + " WebView2"]],
     [
       / wv\).+(chrome)\/([\w\.]+)/i
       // Chrome WebView
@@ -68620,15 +69248,15 @@ var defaultRegexes = {
       // Swiftfox
       /(icedragon|iceweasel|camino|chimera|fennec|maemo browser|minimo|conkeror)[\/ ]?([\w\.\+]+)/i,
       // IceDragon/Iceweasel/Camino/Chimera/Fennec/Maemo/Minimo/Conkeror
-      /(seamonkey|k-meleon|icecat|iceape|firebird|phoenix|palemoon|basilisk|waterfox)\/([-\w\.]+)$/i,
+      /(seamonkey|k-meleon|icecat|iceape|firebird|phoenix|basilisk|waterfox)\/([-\w\.]+)$/i,
       // Firefox/SeaMonkey/K-Meleon/IceCat/IceApe/Firebird/Phoenix
       /(firefox)\/([\w\.]+)/i,
       // Other Firefox-based
-      /(mozilla)\/([\w\.]+) .+rv\:.+gecko\/\d+/i,
+      /(mozilla)\/([\w\.]+(?= .+rv\:.+gecko\/\d+)|[0-4][\w\.]+(?!.+compatible))/i,
       // Mozilla
       // Other
-      /(polaris|lynx|dillo|icab|doris|amaya|w3m|netsurf|obigo|mosaic|(?:go|ice|up)[\. ]?browser)[-\/ ]?v?([\w\.]+)/i,
-      // Polaris/Lynx/Dillo/iCab/Doris/Amaya/w3m/NetSurf/Obigo/Mosaic/Go/ICE/UP.Browser
+      /(amaya|dillo|doris|icab|ladybird|lynx|mosaic|netsurf|obigo|polaris|w3m|(?:go|ice|up)[\. ]?browser)[-\/ ]?v?([\w\.]+)/i,
+      // Polaris/Lynx/Dillo/iCab/Doris/Amaya/w3m/NetSurf/Obigo/Mosaic/Go/ICE/UP.Browser/Ladybird
       /\b(links) \(([\w\.]+)/i
       // Links
     ],
@@ -68641,47 +69269,54 @@ var defaultRegexes = {
   ],
   cpu: [
     [
-      /\b(?:(amd|x|x86[-_]?|wow|win)64)\b/i
+      /\b((amd|x|x86[-_]?|wow|win)64)\b/i
       // AMD64 (x64)
     ],
     [[ARCHITECTURE, "amd64"]],
     [
       /(ia32(?=;))/i,
       // IA32 (quicktime)
-      /((?:i[346]|x)86)[;\)]/i
+      /\b((i[346]|x)86)(pc)?\b/i
       // IA32 (x86)
     ],
     [[ARCHITECTURE, "ia32"]],
     [
-      /\b(aarch64|arm(v?8e?l?|_?64))\b/i
+      /\b(aarch64|arm(v?[89]e?l?|_?64))\b/i
       // ARM64
     ],
     [[ARCHITECTURE, "arm64"]],
     [
-      /\b(arm(?:v[67])?ht?n?[fl]p?)\b/i
+      /\b(arm(v[67])?ht?n?[fl]p?)\b/i
       // ARMHF
     ],
     [[ARCHITECTURE, "armhf"]],
     [
       // PocketPC mistakenly identified as PowerPC
-      /windows (ce|mobile); ppc;/i
+      /( (ce|mobile); ppc;|\/[\w\.]+arm\b)/i
     ],
     [[ARCHITECTURE, "arm"]],
     [
-      /((?:ppc|powerpc)(?:64)?)(?: mac|;|\))/i
-      // PowerPC
-    ],
-    [[ARCHITECTURE, /ower/, EMPTY, lowerize]],
-    [
-      /(sun4\w)[;\)]/i
+      / sun4\w[;\)]/i
       // SPARC
     ],
     [[ARCHITECTURE, "sparc"]],
     [
-      /((?:avr32|ia64(?=;))|68k(?=\))|\barm(?=v(?:[1-7]|[5-7]1)l?|;|eabi)|(?=atmel )avr|(?:irix|mips|sparc)(?:64)?\b|pa-risc)/i
       // IA64, 68K, ARM/64, AVR/32, IRIX/64, MIPS/64, SPARC/64, PA-RISC
+      /\b(avr32|ia64(?=;)|68k(?=\))|\barm(?=v([1-7]|[5-7]1)l?|;|eabi)|(irix|mips|sparc)(64)?\b|pa-risc)/i,
+      /((ppc|powerpc)(64)?)( mac|;|\))/i,
+      // PowerPC
+      /(?:osf1|[freopnt]{3,4}bsd) (alpha)/i
+      // Alpha
     ],
-    [[ARCHITECTURE, lowerize]]
+    [[ARCHITECTURE, /ower/, EMPTY, lowerize]],
+    [
+      /mc680.0/i
+    ],
+    [[ARCHITECTURE, "68k"]],
+    [
+      /winnt.+\[axp/i
+    ],
+    [[ARCHITECTURE, "alpha"]]
   ],
   device: [
     [
@@ -68694,21 +69329,20 @@ var defaultRegexes = {
     [MODEL, [VENDOR, SAMSUNG], [TYPE, TABLET]],
     [
       /\b((?:s[cgp]h|gt|sm)-(?![lr])\w+|sc[g-]?[\d]+a?|galaxy nexus)/i,
-      /samsung[- ]((?!sm-[lr])[-\w]+)/i,
+      /samsung[- ]((?!sm-[lr]|browser)[-\w]+)/i,
       /sec-(sgh\w+)/i
     ],
     [MODEL, [VENDOR, SAMSUNG], [TYPE, MOBILE]],
     [
       // Apple
-      /(?:\/|\()(ip(?:hone|od)[\w, ]*)(?:\/|;)/i
+      /(?:\/|\()(ip(?:hone|od)[\w, ]*)[\/\);]/i
       // iPod/iPhone
     ],
     [MODEL, [VENDOR, APPLE], [TYPE, MOBILE]],
     [
-      /\((ipad);[-\w\),; ]+apple/i,
+      /\b(?:ios|apple\w+)\/.+[\(\/](ipad)/i,
       // iPad
-      /applecoremedia\/[\w\.]+ \((ipad)/i,
-      /\b(ipad)\d\d?,\d\d?[;\]].+ios/i
+      /\b(ipad)[\d,]*[;\] ].+(mac |i(pad)?)os/i
     ],
     [MODEL, [VENDOR, APPLE], [TYPE, TABLET]],
     [
@@ -68722,55 +69356,67 @@ var defaultRegexes = {
     [MODEL, [VENDOR, SHARP], [TYPE, MOBILE]],
     [
       // Honor
-      /(?:honor)([-\w ]+)[;\)]/i
+      /\b((?:brt|eln|hey2?|gdi|jdn)-a?[lnw]09|(?:ag[rm]3?|jdn2|kob2)-a?[lw]0[09]hn)(?: bui|\)|;)/i
+    ],
+    [MODEL, [VENDOR, HONOR], [TYPE, TABLET]],
+    [
+      /honor([-\w ]+)[;\)]/i
     ],
     [MODEL, [VENDOR, HONOR], [TYPE, MOBILE]],
     [
       // Huawei
-      /\b((?:ag[rs][23]?|bah2?|sht?|btv)-a?[lw]\d{2})\b(?!.+d\/s)/i
+      /\b((?:ag[rs][2356]?k?|bah[234]?|bg[2o]|bt[kv]|cmr|cpn|db[ry]2?|jdn2|got|kob2?k?|mon|pce|scm|sht?|[tw]gr|vrd)-[ad]?[lw][0125][09]b?|605hw|bg2-u03|(?:gem|fdr|m2|ple|t1)-[7a]0[1-4][lu]|t1-a2[13][lw]|mediapad[\w\. ]*(?= bui|\)))\b(?!.+d\/s)/i
     ],
     [MODEL, [VENDOR, HUAWEI], [TYPE, TABLET]],
     [
-      /(?:huawei)([-\w ]+)[;\)]/i,
-      /\b(nexus 6p|\w{2,4}e?-[atu]?[ln][\dx][012359c][adn]?)\b(?!.+d\/s)/i
+      /(?:huawei) ?([-\w ]+)[;\)]/i,
+      /\b(nexus 6p|\w{2,4}e?-[atu]?[ln][\dx][\dc][adnt]?)\b(?!.+d\/s)/i
     ],
     [MODEL, [VENDOR, HUAWEI], [TYPE, MOBILE]],
     [
       // Xiaomi
-      /\b(poco[\w ]+|m2\d{3}j\d\d[a-z]{2})(?: bui|\))/i,
-      // Xiaomi POCO
+      /oid[^\)]+; (2[\dbc]{4}(182|283|rp\w{2})[cgl]|m2105k81a?c)(?: bui|\))/i,
+      /\b(?:xiao)?((?:red)?mi[-_ ]?pad[\w- ]*)(?: bui|\))/i
+      // Mi Pad tablets
+    ],
+    [[MODEL, /_/g, " "], [VENDOR, XIAOMI], [TYPE, TABLET]],
+    [
       /\b; (\w+) build\/hm\1/i,
       // Xiaomi Hongmi 'numeric' models
       /\b(hm[-_ ]?note?[_ ]?(?:\d\w)?) bui/i,
       // Xiaomi Hongmi
-      /\b(redmi[\-_ ]?(?:note|k)?[\w_ ]+)(?: bui|\))/i,
-      // Xiaomi Redmi
-      /oid[^\)]+; (m?[12][0-389][01]\w{3,6}[c-y])( bui|; wv|\))/i,
-      // Xiaomi Redmi 'numeric' models
-      /\b(mi[-_ ]?(?:a\d|one|one[_ ]plus|note lte|max|cc)?[_ ]?(?:\d?\w?)[_ ]?(?:plus|se|lite|pro)?)(?: bui|\))/i
+      // Xiaomi Redmi / POCO / Black Shark / Qin
+      /oid[^\)]+; (redmi[\-_ ]?(?:note|k)?[\w_ ]+|m?[12]\d[01]\d\w{3,6}|poco[\w ]+|(shark )?\w{3}-[ah]0|qin ?[1-3](s\+|ultra| pro)?)( bui|; wv|\))/i,
       // Xiaomi Mi
+      /\b(mi[-_ ]?(?:a\d|one|one[_ ]plus|note|max|cc)?[_ ]?(?:\d{0,2}\w?)[_ ]?(?:plus|se|lite|pro)?( 5g|lte)?)(?: bui|\))/i,
+      / ([\w ]+) miui\/v?\d/i
     ],
     [[MODEL, /_/g, " "], [VENDOR, XIAOMI], [TYPE, MOBILE]],
     [
-      /oid[^\)]+; (2\d{4}(283|rpbf)[cgl])( bui|\))/i,
-      // Redmi Pad
-      /\b(mi[-_ ]?(?:pad)(?:[\w_ ]+))(?: bui|\))/i
-      // Mi Pad tablets
+      // OnePlus
+      /droid.+; (cph2[3-6]\d[13579]|((gm|hd)19|(ac|be|in|kb)20|(d[en]|eb|le|mt)21|ne22)[0-2]\d|p[g-k]\w[1m]10)\b/i,
+      /(?:one)?(?:plus)? (a\d0\d\d)(?: b|\))/i
     ],
-    [[MODEL, /_/g, " "], [VENDOR, XIAOMI], [TYPE, TABLET]],
+    [MODEL, [VENDOR, ONEPLUS], [TYPE, MOBILE]],
     [
       // OPPO
       /; (\w+) bui.+ oppo/i,
       /\b(cph[12]\d{3}|p(?:af|c[al]|d\w|e[ar])[mt]\d0|x9007|a101op)\b/i
     ],
-    [MODEL, [VENDOR, "OPPO"], [TYPE, MOBILE]],
+    [MODEL, [VENDOR, OPPO], [TYPE, MOBILE]],
     [
-      /\b(opd2\d{3}a?) bui/i
+      /\b(opd2(\d{3}a?))(?: bui|\))/i
     ],
-    [MODEL, [VENDOR, "OPPO"], [TYPE, TABLET]],
+    [MODEL, [VENDOR, strMapper, { "OnePlus": ["203", "304", "403", "404", "413", "415"], "*": OPPO }], [TYPE, TABLET]],
+    [
+      // BLU
+      /(vivo (5r?|6|8l?|go|one|s|x[il]?[2-4]?)[\w\+ ]*)(?: bui|\))/i
+      // Vivo series
+    ],
+    [MODEL, [VENDOR, "BLU"], [TYPE, MOBILE]],
     [
       // Vivo
-      /vivo (\w+)(?: bui|\))/i,
+      /; vivo (\w+)(?: bui|\))/i,
       /\b(v[12]\d{3}\w?[at])(?: bui|;)/i
     ],
     [MODEL, [VENDOR, "Vivo"], [TYPE, MOBILE]],
@@ -68780,10 +69426,20 @@ var defaultRegexes = {
     ],
     [MODEL, [VENDOR, "Realme"], [TYPE, MOBILE]],
     [
+      // Lenovo
+      /(ideatab[-\w ]+|602lv|d-42a|a101lv|a2109a|a3500-hv|s[56]000|pb-6505[my]|tb-?x?\d{3,4}(?:f[cu]|xu|[av])|yt\d?-[jx]?\d+[lfmx])( bui|;|\)|\/)/i,
+      /lenovo ?(b[68]0[08]0-?[hf]?|tab(?:[\w- ]+?)|tb[\w-]{6,7})( bui|;|\)|\/)/i
+    ],
+    [MODEL, [VENDOR, LENOVO], [TYPE, TABLET]],
+    [
+      /lenovo[-_ ]?([-\w ]+?)(?: bui|\)|\/)/i
+    ],
+    [MODEL, [VENDOR, LENOVO], [TYPE, MOBILE]],
+    [
       // Motorola
       /\b(milestone|droid(?:[2-4x]| (?:bionic|x2|pro|razr))?:?( 4g)?)\b[\w ]+build\//i,
-      /\bmot(?:orola)?[- ](\w*)/i,
-      /((?:moto[\w\(\) ]+|xt\d{3,4}|nexus 6)(?= bui|\)))/i
+      /\bmot(?:orola)?[- ]([\w\s]+)(\)| bui)/i,
+      /((?:moto(?! 360)[-\w\(\) ]+|xt\d{3,4}[cgkosw\+]?[-\d]*|nexus 6)(?= bui|\)))/i
     ],
     [MODEL, [VENDOR, MOTOROLA], [TYPE, MOBILE]],
     [
@@ -68797,36 +69453,38 @@ var defaultRegexes = {
     [MODEL, [VENDOR, LG], [TYPE, TABLET]],
     [
       /(lm(?:-?f100[nv]?|-[\w\.]+)(?= bui|\))|nexus [45])/i,
-      /\blg[-e;\/ ]+((?!browser|netcast|android tv)\w+)/i,
+      /\blg[-e;\/ ]+(?!.*(?:browser|netcast|android tv|watch|webos))(\w+)/i,
       /\blg-?([\d\w]+) bui/i
     ],
     [MODEL, [VENDOR, LG], [TYPE, MOBILE]],
     [
-      // Lenovo
-      /(ideatab[-\w ]+)/i,
-      /lenovo ?(s[56]000[-\w]+|tab(?:[\w ]+)|yt[-\d\w]{6}|tb[-\d\w]{6})/i
-    ],
-    [MODEL, [VENDOR, LENOVO], [TYPE, TABLET]],
-    [
       // Nokia
-      /(?:maemo|nokia).*(n900|lumia \d+)/i,
-      /nokia[-_ ]?([-\w\.]*)/i
+      /(nokia) (t[12][01])/i
     ],
-    [[MODEL, /_/g, " "], [VENDOR, "Nokia"], [TYPE, MOBILE]],
+    [VENDOR, MODEL, [TYPE, TABLET]],
+    [
+      /(?:maemo|nokia).*(n900|lumia \d+|rm-\d+)/i,
+      /nokia[-_ ]?(([-\w\. ]*?))( bui|\)|;|\/)/i
+    ],
+    [[MODEL, /_/g, " "], [TYPE, MOBILE], [VENDOR, "Nokia"]],
     [
       // Google
-      /(pixel c)\b/i
-      // Google Pixel C
+      /(pixel (c|tablet))\b/i
+      // Google Pixel C/Tablet
     ],
     [MODEL, [VENDOR, GOOGLE], [TYPE, TABLET]],
     [
-      /droid.+; (pixel[\daxl ]{0,6})(?: bui|\))/i
       // Google Pixel
+      /droid.+;(?: google)? (g(01[13]a|020[aem]|025[jn]|1b60|1f8f|2ybb|4s1m|576d|5nz6|8hhn|8vou|a02099|c15s|d1yq|e2ae|ec77|gh2x|kv4x|p4bc|pj41|r83y|tt9q|ur25|wvk6)|pixel[\d ]*a?( pro)?( xl)?( fold)?( \(5g\))?)( bui|\))/i
     ],
     [MODEL, [VENDOR, GOOGLE], [TYPE, MOBILE]],
     [
+      /(google) (pixelbook( go)?)/i
+    ],
+    [VENDOR, MODEL],
+    [
       // Sony
-      /droid.+; (a?\d[0-2]{2}so|[c-g]\d{4}|so[-gl]\w+|xq-a\w[4-7][12])(?= bui|\).+chrome\/(?![1-6]{0,1}\d\.))/i
+      /droid.+; (a?\d[0-2]{2}so|[c-g]\d{4}|so[-gl]\w+|xq-\w\w\d\d)(?= bui|\).+chrome\/(?![1-6]{0,1}\d\.))/i
     ],
     [MODEL, [VENDOR, SONY], [TYPE, MOBILE]],
     [
@@ -68834,12 +69492,6 @@ var defaultRegexes = {
       /\b(?:sony)?sgp\w+(?: bui|\))/i
     ],
     [[MODEL, "Xperia Tablet"], [VENDOR, SONY], [TYPE, TABLET]],
-    [
-      // OnePlus
-      / (kb2005|in20[12]5|be20[12][59])\b/i,
-      /(?:one)?(?:plus)? (a\d0\d\d)(?: b|\))/i
-    ],
-    [MODEL, [VENDOR, "OnePlus"], [TYPE, MOBILE]],
     [
       // Amazon
       /(alexa)webm/i,
@@ -68862,8 +69514,7 @@ var defaultRegexes = {
     [MODEL, VENDOR, [TYPE, TABLET]],
     [
       /\b((?:bb[a-f]|st[hv])100-\d)/i,
-      /\(bb10; (\w+)/i
-      // BlackBerry 10
+      /(?:blackberry|\(bb10;) (\w+)/i
     ],
     [MODEL, [VENDOR, BLACKBERRY], [TYPE, MOBILE]],
     [
@@ -68940,36 +69591,53 @@ var defaultRegexes = {
     [MODEL, [VENDOR, "Smartfren"], [TYPE, MOBILE]],
     [
       // Nothing
-      /droid.+; (a(?:015|06[35]|142p?))/i
+      /droid.+; (a(in)?(0(15|59|6[35])|142)p?)/i
     ],
     [MODEL, [VENDOR, "Nothing"], [TYPE, MOBILE]],
     [
+      // Archos
+      /; (x67 5g|tikeasy \w+|ac[1789]\d\w+)( b|\))/i,
+      /archos ?(5|gamepad2?|([\w ]*[t1789]|hello) ?\d+[\w ]*)( b|\))/i
+    ],
+    [MODEL, [VENDOR, "Archos"], [TYPE, TABLET]],
+    [
+      /archos ([\w ]+)( b|\))/i,
+      /; (ac[3-6]\d\w{2,8})( b|\))/i
+    ],
+    [MODEL, [VENDOR, "Archos"], [TYPE, MOBILE]],
+    [
+      // HMD
+      /; (n159v)/i
+    ],
+    [MODEL, [VENDOR, "HMD"], [TYPE, MOBILE]],
+    [
       // MIXED
-      /(blackberry|benq|palm(?=\-)|sonyericsson|acer|asus|dell|meizu|motorola|polytron|infinix|tecno|micromax|advan)[-_ ]?([-\w]*)/i,
-      // BlackBerry/BenQ/Palm/Sony-Ericsson/Acer/Asus/Dell/Meizu/Motorola/Polytron/Infinix/Tecno/Micromax/Advan
-      /; (imo) ((?!tab)[\w ]+?)(?: bui|\))/i,
+      /(imo) (tab \w+)/i,
       // IMO
+      /(infinix|tecno) (x1101b?|p904|dp(7c|8d|10a)( pro)?|p70[1-3]a?|p904|t1101)/i
+      // Infinix XPad / Tecno
+    ],
+    [VENDOR, MODEL, [TYPE, TABLET]],
+    [
+      /(blackberry|benq|palm(?=\-)|sonyericsson|acer|asus(?! zenw)|dell|jolla|meizu|motorola|polytron|tecno|micromax|advan)[-_ ]?([-\w]*)/i,
+      // BlackBerry/BenQ/Palm/Sony-Ericsson/Acer/Asus/Dell/Meizu/Motorola/Polytron/Tecno/Micromax/Advan
+      // BLU/HMD/IMO/Infinix/Lava/OnePlus/TCL/Wiko
+      /; (blu|hmd|imo|infinix|lava|oneplus|tcl|wiko)[_ ]([\w\+ ]+?)(?: bui|\)|; r)/i,
       /(hp) ([\w ]+\w)/i,
       // HP iPAQ
-      /(asus)-?(\w+)/i,
-      // Asus
       /(microsoft); (lumia[\w ]+)/i,
       // Microsoft Lumia
-      /(lenovo)[-_ ]?([-\w]+)/i,
-      // Lenovo
-      /(jolla)/i,
-      // Jolla
-      /(oppo) ?([\w ]+) bui/i
+      /(oppo) ?([\w ]+) bui/i,
       // OPPO
+      /(hisense) ([ehv][\w ]+)\)/i,
+      // Hisense
+      /droid[^;]+; (philips)[_ ]([sv-x][\d]{3,4}[xz]?)/i
+      // Philips
     ],
     [VENDOR, MODEL, [TYPE, MOBILE]],
     [
-      /(imo) (tab \w+)/i,
-      // IMO
       /(kobo)\s(ereader|touch)/i,
       // Kobo
-      /(archos) (gamepad2?)/i,
-      // Archos
       /(hp).+(touchpad(?!.+tablet)|tablet)/i,
       // HP TouchPad
       /(kindle)\/([\w\.]+)/i
@@ -68987,10 +69655,10 @@ var defaultRegexes = {
     ],
     [MODEL, [VENDOR, "Fairphone"], [TYPE, MOBILE]],
     [
-      /(shield[\w ]+) b/i
-      // Nvidia Shield Tablets
+      /((?:tegranote|shield t(?!.+d tv))[\w- ]*?)(?: b|\))/i
+      // Nvidia Tablets
     ],
-    [MODEL, [VENDOR, "Nvidia"], [TYPE, TABLET]],
+    [MODEL, [VENDOR, NVIDIA], [TYPE, TABLET]],
     [
       /(sprint) (\w+)/i
       // Sprint Phones
@@ -69014,6 +69682,8 @@ var defaultRegexes = {
       ///////////////////
       // SMARTTVS
       ///////////////////
+      /(philips)[\w ]+tv/i,
+      // Philips
       /smart-tv.+(samsung)/i
       // Samsung
     ],
@@ -69023,8 +69693,14 @@ var defaultRegexes = {
     ],
     [[MODEL, /^/, "SmartTV"], [VENDOR, SAMSUNG], [TYPE, SMARTTV]],
     [
-      /(nux; netcast.+smarttv|lg (netcast\.tv-201\d|android tv))/i
+      /(vizio)(?: |.+model\/)(\w+-\w+)/i,
+      // Vizio
+      /tcast.+(lg)e?. ([-\w]+)/i
       // LG SmartTV
+    ],
+    [VENDOR, MODEL, [TYPE, SMARTTV]],
+    [
+      /(nux; netcast.+smarttv|lg (netcast\.tv-201\d|android tv))/i
     ],
     [[VENDOR, LG], [TYPE, SMARTTV]],
     [
@@ -69053,10 +69729,20 @@ var defaultRegexes = {
     ],
     [[MODEL, CHROMECAST], [VENDOR, GOOGLE], [TYPE, SMARTTV]],
     [
+      /(portaltv)/i
+      // Facebook Portal TV
+    ],
+    [MODEL, [VENDOR, FACEBOOK], [TYPE, SMARTTV]],
+    [
       /droid.+aft(\w+)( bui|\))/i
       // Fire TV
     ],
     [MODEL, [VENDOR, AMAZON], [TYPE, SMARTTV]],
+    [
+      /(shield \w+ tv)/i
+      // Nvidia Shield TV
+    ],
+    [MODEL, [VENDOR, NVIDIA], [TYPE, SMARTTV]],
     [
       /\(dtv[\);].+(aquos)/i,
       /(aquos-tv[\w ]+)\)/i
@@ -69069,7 +69755,7 @@ var defaultRegexes = {
     ],
     [MODEL, [VENDOR, SONY], [TYPE, SMARTTV]],
     [
-      /(mitv-\w{5}) bui/i
+      /(mi(tv|box)-?\w+) bui/i
       // Xiaomi
     ],
     [MODEL, [VENDOR, XIAOMI], [TYPE, SMARTTV]],
@@ -69084,28 +69770,11 @@ var defaultRegexes = {
       /hbbtv\/\d+\.\d+\.\d+ +\([\w\+ ]*; *([\w\d][^;]*);([^;]*)/i
       // HbbTV devices
     ],
-    [[VENDOR, trim], [MODEL, trim], [TYPE, SMARTTV]],
-    [
-      /\b(android tv|smart[- ]?tv|opera tv|tv; rv:)\b/i
-      // SmartTV from Unidentified Vendors
-    ],
-    [[TYPE, SMARTTV]],
+    [[VENDOR, /.+\/(\w+)/, "$1", strMapper, { "LG": "lge" }], [MODEL, trim], [TYPE, SMARTTV]],
     [
       ///////////////////
       // CONSOLES
       ///////////////////
-      /(ouya)/i,
-      // Ouya
-      /(nintendo) (\w+)/i
-      // Nintendo
-    ],
-    [VENDOR, MODEL, [TYPE, CONSOLE]],
-    [
-      /droid.+; (shield) bui/i
-      // Nvidia
-    ],
-    [MODEL, [VENDOR, "Nvidia"], [TYPE, CONSOLE]],
-    [
       /(playstation \w+)/i
       // Playstation
     ],
@@ -69116,23 +69785,62 @@ var defaultRegexes = {
     ],
     [MODEL, [VENDOR, MICROSOFT], [TYPE, CONSOLE]],
     [
+      /(ouya)/i,
+      // Ouya
+      /(nintendo) (\w+)/i,
+      // Nintendo
+      /(retroid) (pocket ([^\)]+))/i,
+      // Retroid Pocket
+      /(valve).+(steam deck)/i,
+      /droid.+; ((shield|rgcube|gr0006))( bui|\))/i
+      // Nvidia Portable/Anbernic/Logitech
+    ],
+    [[VENDOR, strMapper, { "Nvidia": "Shield", "Anbernic": "RGCUBE", "Logitech": "GR0006" }], MODEL, [TYPE, CONSOLE]],
+    [
       ///////////////////
       // WEARABLES
       ///////////////////
-      /\b(sm-[lr]\d\d[05][fnuw]?s?)\b/i
+      /\b(sm-[lr]\d\d[0156][fnuw]?s?|gear live)\b/i
       // Samsung Galaxy Watch
     ],
     [MODEL, [VENDOR, SAMSUNG], [TYPE, WEARABLE]],
     [
-      /((pebble))app/i
+      /((pebble))app/i,
       // Pebble
+      /(asus|google|lg|oppo|xiaomi) ((pixel |zen)?watch[\w ]*)( bui|\))/i
+      // Asus ZenWatch / LG Watch / Pixel Watch / Xiaomi Watch
     ],
     [VENDOR, MODEL, [TYPE, WEARABLE]],
+    [
+      /(ow(?:19|20)?we?[1-3]{1,3})/i
+      // Oppo Watch
+    ],
+    [MODEL, [VENDOR, OPPO], [TYPE, WEARABLE]],
     [
       /(watch)(?: ?os[,\/]|\d,\d\/)[\d\.]+/i
       // Apple Watch
     ],
     [MODEL, [VENDOR, APPLE], [TYPE, WEARABLE]],
+    [
+      /(opwwe\d{3})/i
+      // OnePlus Watch
+    ],
+    [MODEL, [VENDOR, ONEPLUS], [TYPE, WEARABLE]],
+    [
+      /(moto 360)/i
+      // Motorola 360
+    ],
+    [MODEL, [VENDOR, MOTOROLA], [TYPE, WEARABLE]],
+    [
+      /(smartwatch 3)/i
+      // Sony SmartWatch
+    ],
+    [MODEL, [VENDOR, SONY], [TYPE, WEARABLE]],
+    [
+      /(g watch r)/i
+      // LG G Watch R
+    ],
+    [MODEL, [VENDOR, LG], [TYPE, WEARABLE]],
     [
       /droid.+; (wt63?0{2,3})\)/i
     ],
@@ -69146,15 +69854,20 @@ var defaultRegexes = {
     ],
     [MODEL, [VENDOR, GOOGLE], [TYPE, XR]],
     [
-      /(pico) (4|neo3(?: link|pro)?)/i
+      /(pico) ([\w ]+) os\d/i
       // Pico
     ],
     [VENDOR, MODEL, [TYPE, XR]],
     [
-      /; (quest( \d| pro)?)/i
-      // Oculus Quest
+      /(quest( \d| pro)?s?).+vr/i
+      // Meta Quest
     ],
     [MODEL, [VENDOR, FACEBOOK], [TYPE, XR]],
+    [
+      /mobile vr; rv.+firefox/i
+      // Unidentifiable VR device using Firefox Reality / Wolvic
+    ],
+    [[TYPE, XR]],
     [
       ///////////////////
       // EMBEDDED
@@ -69169,18 +69882,31 @@ var defaultRegexes = {
     ],
     [MODEL, [VENDOR, AMAZON], [TYPE, EMBEDDED]],
     [
+      /(homepod).+mac os/i
+      // Apple HomePod
+    ],
+    [MODEL, [VENDOR, APPLE], [TYPE, EMBEDDED]],
+    [
+      /windows iot/i
+      // Unidentifiable embedded device using Windows IoT
+    ],
+    [[TYPE, EMBEDDED]],
+    [
       ////////////////////
       // MIXED (GENERIC)
       ///////////////////
-      /droid .+?; ([^;]+?)(?: bui|; wv\)|\) applew).+? mobile safari/i
-      // Android Phones from Unidentified Vendors
+      /droid.+; ([\w- ]+) (4k|android|smart|google)[- ]?tv/i
+      // Unidentifiable SmartTV
     ],
-    [MODEL, [TYPE, MOBILE]],
+    [MODEL, [TYPE, SMARTTV]],
     [
-      /droid .+?; ([^;]+?)(?: bui|\) applew).+?(?! mobile) safari/i
-      // Android Tablets from Unidentified Vendors
+      /\b((4k|android|smart|opera)[- ]?tv|tv; rv:|large screen[\w ]+safari)\b/i
     ],
-    [MODEL, [TYPE, TABLET]],
+    [[TYPE, SMARTTV]],
+    [
+      /droid .+?; ([^;]+?)(?: bui|; wv\)|\) applew|; hmsc).+?(mobile|vr|\d) safari/i
+    ],
+    [MODEL, [TYPE, strMapper, { "mobile": "Mobile", "xr": "VR", "*": TABLET }]],
     [
       /\b((tablet|tab)[;\/]|focus\/\d(?!.+mobile))/i
       // Unidentifiable Tablet
@@ -69192,7 +69918,7 @@ var defaultRegexes = {
     ],
     [[TYPE, MOBILE]],
     [
-      /(android[-\w\. ]{0,9});.+buil/i
+      /droid .+?; ([\w\. -]+)( bui|\))/i
       // Generic Android Device
     ],
     [MODEL, [VENDOR, "Generic"]]
@@ -69225,8 +69951,13 @@ var defaultRegexes = {
       /(icab)[\/ ]([23]\.[\d\.]+)/i,
       // iCab
       /\b(libweb)/i
+      // LibWeb
     ],
     [NAME, VERSION],
+    [
+      /ladybird\//i
+    ],
+    [[NAME, "LibWeb"]],
     [
       /rv\:([\w\.]{1,9})\b.+(gecko)/i
       // Gecko
@@ -69236,33 +69967,39 @@ var defaultRegexes = {
   os: [
     [
       // Windows
-      /microsoft (windows) (vista|xp)/i
-      // Windows (iTunes)
+      /(windows nt) (6\.[23]); arm/i
+      // Windows RT
+    ],
+    [[NAME, /N/, "R"], [VERSION, strMapper, windowsVersionMap]],
+    [
+      /(windows (?:phone|mobile|iot))(?: os)?[\/ ]?([\d\.]*( se)?)/i,
+      // Windows IoT/Mobile/Phone
+      // Windows NT/3.1/95/98/ME/2000/XP/Vista/7/8/8.1/10/11
+      /(windows)[\/ ](1[01]|2000|3\.1|7|8(\.1)?|9[58]|me|server 20\d\d( r2)?|vista|xp)/i
     ],
     [NAME, VERSION],
     [
-      /(windows (?:phone(?: os)?|mobile))[\/ ]?([\d\.\w ]*)/i
-      // Windows Phone
+      /windows nt ?([\d\.\)]*)(?!.+xbox)/i,
+      /\bwin(?=3| ?9|n)(?:nt| 9x )?([\d\.;]*)/i
     ],
-    [NAME, [VERSION, strMapper, windowsVersionMap]],
+    [[VERSION, /(;|\))/g, "", strMapper, windowsVersionMap], [NAME, WINDOWS]],
     [
-      /windows nt 6\.2; (arm)/i,
-      // Windows RT
-      /windows[\/ ]?([ntce\d\. ]+\w)(?!.+xbox)/i,
-      /(?:win(?=3|9|n)|win 9x )([nt\d\.]+)/i
+      /(windows ce)\/?([\d\.]*)/i
+      // Windows CE
     ],
-    [[VERSION, strMapper, windowsVersionMap], [NAME, WINDOWS]],
+    [NAME, VERSION],
     [
       // iOS/macOS
-      /ip[honead]{2,4}\b(?:.*os ([\w]+) like mac|; opera)/i,
+      /[adehimnop]{4,7}\b(?:.*os ([\w]+) like mac|; opera)/i,
       // iOS
-      /(?:ios;fbsv\/|iphone.+ios[\/ ])([\d\.]+)/i,
+      /(?:ios;fbsv|ios(?=.+ip(?:ad|hone)|.+apple ?tv)|ip(?:ad|hone)(?: |.+i(?:pad)?)os|apple ?tv.+ios)[\/ ]([\w\.]+)/i,
+      /\btvos ?([\w\.]+)/i,
       /cfnetwork\/.+darwin/i
     ],
     [[VERSION, /_/g, "."], [NAME, "iOS"]],
     [
       /(mac os x) ?([\w\. ]*)/i,
-      /(macintosh|mac_powerpc\b)(?!.+haiku)/i
+      /(macintosh|mac_powerpc\b)(?!.+(haiku|morphos))/i
       // Mac OS
     ],
     [[NAME, "macOS"], [VERSION, /_/g, "."]],
@@ -69294,19 +70031,20 @@ var defaultRegexes = {
     [VERSION, [NAME, CHROMECAST]],
     [
       // Mobile OSes
-      /droid ([\w\.]+)\b.+(android[- ]x86|harmonyos)/i
-      // Android-x86/HarmonyOS
+      /droid ([\w\.]+)\b.+(android[- ]x86)/i
+      // Android-x86
     ],
     [VERSION, NAME],
     [
-      // Android/WebOS/QNX/Bada/RIM/Maemo/MeeGo/Sailfish OS/OpenHarmony
-      /(android|webos|qnx|bada|rim tablet os|maemo|meego|sailfish|openharmony)[-\/ ]?([\w\.]*)/i,
-      /(blackberry)\w*\/([\w\.]*)/i,
-      // Blackberry
-      /(tizen|kaios)[\/ ]([\w\.]+)/i,
-      // Tizen/KaiOS
-      /\((series40);/i
-      // Series 40
+      /(ubuntu) ([\w\.]+) like android/i
+      // Ubuntu Touch
+    ],
+    [[NAME, /(.+)/, "$1 Touch"], VERSION],
+    [
+      /(harmonyos)[\/ ]?([\d\.]*)/i,
+      // HarmonyOS
+      // Android/Blackberry/WebOS/QNX/Bada/RIM/KaiOS/Maemo/MeeGo/S40/Sailfish OS/OpenHarmony/Tizen
+      /(android|bada|blackberry|kaios|maemo|meego|openharmony|qnx|rim tablet os|sailfish|series40|symbian|tizen)\w*[-\/\.; ]?([\d\.]*)/i
     ],
     [NAME, VERSION],
     [
@@ -69315,7 +70053,7 @@ var defaultRegexes = {
     ],
     [VERSION, [NAME, BLACKBERRY]],
     [
-      /(?:symbian ?os|symbos|s60(?=;)|series60)[-\/ ]?([\w\.]*)/i
+      /(?:symbian ?os|symbos|s60(?=;)|series ?60)[-\/ ]?([\w\.]*)/i
       // Symbian
     ],
     [VERSION, [NAME, "Symbian"]],
@@ -69325,11 +70063,16 @@ var defaultRegexes = {
     ],
     [VERSION, [NAME, FIREFOX + " OS"]],
     [
-      /web0s;.+rt(tv)/i,
-      /\b(?:hp)?wos(?:browser)?\/([\w\.]+)/i
+      /\b(?:hp)?wos(?:browser)?\/([\w\.]+)/i,
       // WebOS
+      /webos(?:[ \/]?|\.tv-20(?=2[2-9]))(\d[\d\.]*)/i
     ],
     [VERSION, [NAME, "webOS"]],
+    [
+      /web0s;.+?(?:chr[o0]me|safari)\/(\d+)/i
+      // https://webostv.developer.lge.com/develop/specifications/web-api-and-web-engine
+    ],
+    [[VERSION, strMapper, { "25": "120", "24": "108", "23": "94", "22": "87", "6": "79", "5": "68", "4": "53", "3": "38", "2": "538", "1": "537", "*": "TV" }], [NAME, "webOS"]],
     [
       /watch(?: ?os[,\/]|\d,\d\/)([\d\.]+)/i
       // watchOS
@@ -69359,34 +70102,34 @@ var defaultRegexes = {
       // Other
       /\b(joli|palm)\b ?(?:os)?\/?([\w\.]*)/i,
       // Joli/Palm
-      /(mint)[\/\(\) ]?(\w*)/i,
+      /linux.+(mint)[\/\(\) ]?([\w\.]*)/i,
       // Mint
-      /(mageia|vectorlinux)[; ]/i,
-      // Mageia/VectorLinux
-      /([kxln]?ubuntu|debian|suse|opensuse|gentoo|arch(?= linux)|slackware|fedora|mandriva|centos|pclinuxos|red ?hat|zenwalk|linpus|raspbian|plan 9|minix|risc os|contiki|deepin|manjaro|elementary os|sabayon|linspire)(?: gnu\/linux)?(?: enterprise)?(?:[- ]linux)?(?:-gnu)?[-\/ ]?(?!chrom|package)([-\w\.]*)/i,
-      // Ubuntu/Debian/SUSE/Gentoo/Arch/Slackware/Fedora/Mandriva/CentOS/PCLinuxOS/RedHat/Zenwalk/Linpus/Raspbian/Plan9/Minix/RISCOS/Contiki/Deepin/Manjaro/elementary/Sabayon/Linspire
-      /(hurd|linux) ?([\w\.]*)/i,
-      // Hurd/Linux
+      /(mageia|vectorlinux|fuchsia|arcaos|arch(?= ?linux))[;l ]([\d\.]*)/i,
+      // Mageia/VectorLinux/Fuchsia/ArcaOS/Arch
+      /([kxln]?ubuntu|debian|suse|opensuse|gentoo|slackware|fedora|mandriva|centos|pclinuxos|red ?hat|zenwalk|linpus|raspbian|plan 9|minix|risc os|contiki|deepin|manjaro|elementary os|sabayon|linspire|knoppix)(?: gnu[\/ ]linux)?(?: enterprise)?(?:[- ]linux)?(?:-gnu)?[-\/ ]?(?!chrom|package)([-\w\.]*)/i,
+      // Ubuntu/Debian/SUSE/Gentoo/Slackware/Fedora/Mandriva/CentOS/PCLinuxOS/RedHat/Zenwalk/Linpus/Raspbian/Plan9/Minix/RISCOS/Contiki/Deepin/Manjaro/elementary/Sabayon/Linspire/Knoppix
+      /((?:open)?solaris)[-\/ ]?([\w\.]*)/i,
+      // Solaris
+      /\b(aix)[; ]([1-9\.]{0,4})/i,
+      // AIX
+      /(hurd|linux|morphos)(?: (?:arm|x86|ppc)\w*| ?)([\w\.]*)/i,
+      // Hurd/Linux/MorphOS
       /(gnu) ?([\w\.]*)/i,
       // GNU
       /\b([-frentopcghs]{0,5}bsd|dragonfly)[\/ ]?(?!amd|[ix346]{1,2}86)([\w\.]*)/i,
       // FreeBSD/NetBSD/OpenBSD/PC-BSD/GhostBSD/DragonFly
-      /(haiku) (\w+)/i
+      /(haiku) ?(r\d)?/i
       // Haiku
     ],
     [NAME, VERSION],
     [
-      /(sunos) ?([\w\.\d]*)/i
+      /(sunos) ?([\d\.]*)/i
       // Solaris
     ],
     [[NAME, "Solaris"], VERSION],
     [
-      /((?:open)?solaris)[-\/ ]?([\w\.]*)/i,
-      // Solaris
-      /(aix) ((\d)(?=\.|\)| )[\w\.])*/i,
-      // AIX
-      /\b(beos|os\/2|amigaos|morphos|openvms|fuchsia|hp-ux|serenityos)/i,
-      // BeOS/OS2/AmigaOS/MorphOS/OpenVMS/Fuchsia/HP-UX/SerenityOS
+      /\b(beos|os\/2|amigaos|openvms|hp-ux|serenityos)/i,
+      // BeOS/OS2/AmigaOS/OpenVMS/HP-UX/SerenityOS
       /(unix) ?([\w\.]*)/i
       // UNIX
     ],
@@ -69396,27 +70139,27 @@ var defaultRegexes = {
 var defaultProps = (function() {
   var props = { init: {}, isIgnore: {}, isIgnoreRgx: {}, toString: {} };
   setProps.call(props.init, [
-    [UA_BROWSER, [NAME, VERSION, MAJOR, TYPE]],
-    [UA_CPU, [ARCHITECTURE]],
-    [UA_DEVICE, [TYPE, MODEL, VENDOR]],
-    [UA_ENGINE, [NAME, VERSION]],
-    [UA_OS, [NAME, VERSION]]
+    [BROWSER, [NAME, VERSION, MAJOR, TYPE]],
+    [CPU, [ARCHITECTURE]],
+    [DEVICE, [TYPE, MODEL, VENDOR]],
+    [ENGINE, [NAME, VERSION]],
+    [OS, [NAME, VERSION]]
   ]);
   setProps.call(props.isIgnore, [
-    [UA_BROWSER, [VERSION, MAJOR]],
-    [UA_ENGINE, [VERSION]],
-    [UA_OS, [VERSION]]
+    [BROWSER, [VERSION, MAJOR]],
+    [ENGINE, [VERSION]],
+    [OS, [VERSION]]
   ]);
   setProps.call(props.isIgnoreRgx, [
-    [UA_BROWSER, / ?browser$/i],
-    [UA_OS, / ?os$/i]
+    [BROWSER, / ?browser$/i],
+    [OS, / ?os$/i]
   ]);
   setProps.call(props.toString, [
-    [UA_BROWSER, [NAME, VERSION]],
-    [UA_CPU, [ARCHITECTURE]],
-    [UA_DEVICE, [VENDOR, MODEL]],
-    [UA_ENGINE, [NAME, VERSION]],
-    [UA_OS, [NAME, VERSION]]
+    [BROWSER, [NAME, VERSION]],
+    [CPU, [ARCHITECTURE]],
+    [DEVICE, [VENDOR, MODEL]],
+    [ENGINE, [NAME, VERSION]],
+    [OS, [NAME, VERSION]]
   ]);
   return props;
 })();
@@ -69439,14 +70182,14 @@ var createIData = function(item, itemType) {
   IData.prototype.withFeatureCheck = function() {
     return item.detectFeature().get();
   };
-  if (itemType != UA_RESULT) {
+  if (itemType != RESULT) {
     IData.prototype.is = function(strToCheck) {
       var is = false;
       for (var i in this) {
         if (this.hasOwnProperty(i) && !has(is_ignoreProps, i) && lowerize(is_ignoreRgx ? strip(is_ignoreRgx, this[i]) : this[i]) == lowerize(is_ignoreRgx ? strip(is_ignoreRgx, strToCheck) : strToCheck)) {
           is = true;
-          if (strToCheck != UNDEF_TYPE) break;
-        } else if (strToCheck == UNDEF_TYPE && is) {
+          if (strToCheck != TYPEOF.UNDEFINED) break;
+        } else if (strToCheck == TYPEOF.UNDEFINED && is) {
           is = !is;
           break;
         }
@@ -69456,32 +70199,32 @@ var createIData = function(item, itemType) {
     IData.prototype.toString = function() {
       var str = EMPTY;
       for (var i in toString_props) {
-        if (typeof this[toString_props[i]] !== UNDEF_TYPE) {
+        if (typeof this[toString_props[i]] !== TYPEOF.UNDEFINED) {
           str += (str ? " " : EMPTY) + this[toString_props[i]];
         }
       }
-      return str || UNDEF_TYPE;
+      return str || TYPEOF.UNDEFINED;
     };
   }
-  if (!NAVIGATOR_UADATA) {
-    IData.prototype.then = function(cb) {
-      var that = this;
-      var IDataResolve = function() {
-        for (var prop in that) {
-          if (that.hasOwnProperty(prop)) {
-            this[prop] = that[prop];
-          }
+  IData.prototype.then = function(cb) {
+    var that = this;
+    var IDataResolve = function() {
+      for (var prop in that) {
+        if (that.hasOwnProperty(prop)) {
+          this[prop] = that[prop];
         }
-      };
-      IDataResolve.prototype = {
-        is: IData.prototype.is,
-        toString: IData.prototype.toString
-      };
-      var resolveData = new IDataResolve();
-      cb(resolveData);
-      return resolveData;
+      }
     };
-  }
+    IDataResolve.prototype = {
+      is: IData.prototype.is,
+      toString: IData.prototype.toString,
+      withClientHints: IData.prototype.withClientHints,
+      withFeatureCheck: IData.prototype.withFeatureCheck
+    };
+    var resolveData = new IDataResolve();
+    cb(resolveData);
+    return resolveData;
+  };
   return new IData();
 };
 function UACHData(uach, isHttpUACH) {
@@ -69489,140 +70232,23 @@ function UACHData(uach, isHttpUACH) {
   setProps.call(this, CH_ALL_VALUES);
   if (isHttpUACH) {
     setProps.call(this, [
-      [BRANDS, itemListToArray(uach[CH_HEADER])],
-      [FULLVERLIST, itemListToArray(uach[CH_HEADER_FULL_VER_LIST])],
-      [MOBILE, /\?1/.test(uach[CH_HEADER_MOBILE])],
-      [MODEL, stripQuotes(uach[CH_HEADER_MODEL])],
-      [PLATFORM, stripQuotes(uach[CH_HEADER_PLATFORM])],
-      [PLATFORMVER, stripQuotes(uach[CH_HEADER_PLATFORM_VER])],
-      [ARCHITECTURE, stripQuotes(uach[CH_HEADER_ARCH])],
-      [FORMFACTORS, itemListToArray(uach[CH_HEADER_FORM_FACTORS])],
-      [BITNESS, stripQuotes(uach[CH_HEADER_BITNESS])]
+      [BRANDS, itemListToArray(uach[CH])],
+      [FULLVERLIST, itemListToArray(uach[CH_FULL_VER_LIST])],
+      [MOBILE, /\?1/.test(uach[CH_MOBILE])],
+      [MODEL, stripQuotes(uach[CH_MODEL])],
+      [PLATFORM, stripQuotes(uach[CH_PLATFORM])],
+      [PLATFORMVER, stripQuotes(uach[CH_PLATFORM_VER])],
+      [ARCHITECTURE, stripQuotes(uach[CH_ARCH])],
+      [FORMFACTORS, itemListToArray(uach[CH_FORM_FACTORS])],
+      [BITNESS, stripQuotes(uach[CH_BITNESS])]
     ]);
   } else {
     for (var prop in uach) {
-      if (this.hasOwnProperty(prop) && typeof uach[prop] !== UNDEF_TYPE) this[prop] = uach[prop];
+      if (this.hasOwnProperty(prop) && typeof uach[prop] !== TYPEOF.UNDEFINED) this[prop] = uach[prop];
     }
   }
 }
 function UAItem(itemType, ua, rgxMap, uaCH) {
-  this.get = function(prop) {
-    if (!prop) return this.data;
-    return this.data.hasOwnProperty(prop) ? this.data[prop] : void 0;
-  };
-  this.set = function(prop, val) {
-    this.data[prop] = val;
-    return this;
-  };
-  this.setCH = function(ch) {
-    this.uaCH = ch;
-    return this;
-  };
-  this.detectFeature = function() {
-    if (NAVIGATOR && NAVIGATOR.userAgent == this.ua) {
-      switch (this.itemType) {
-        case UA_BROWSER:
-          if (NAVIGATOR.brave && typeof NAVIGATOR.brave.isBrave == FUNC_TYPE) {
-            this.set(NAME, "Brave");
-          }
-          break;
-        case UA_DEVICE:
-          if (!this.get(TYPE) && NAVIGATOR_UADATA && NAVIGATOR_UADATA[MOBILE]) {
-            this.set(TYPE, MOBILE);
-          }
-          if (this.get(MODEL) == "Macintosh" && NAVIGATOR && typeof NAVIGATOR.standalone !== UNDEF_TYPE && NAVIGATOR.maxTouchPoints && NAVIGATOR.maxTouchPoints > 2) {
-            this.set(MODEL, "iPad").set(TYPE, TABLET);
-          }
-          break;
-        case UA_OS:
-          if (!this.get(NAME) && NAVIGATOR_UADATA && NAVIGATOR_UADATA[PLATFORM]) {
-            this.set(NAME, NAVIGATOR_UADATA[PLATFORM]);
-          }
-          break;
-        case UA_RESULT:
-          var data = this.data;
-          var detect = function(itemType2) {
-            return data[itemType2].getItem().detectFeature().get();
-          };
-          this.set(UA_BROWSER, detect(UA_BROWSER)).set(UA_CPU, detect(UA_CPU)).set(UA_DEVICE, detect(UA_DEVICE)).set(UA_ENGINE, detect(UA_ENGINE)).set(UA_OS, detect(UA_OS));
-      }
-    }
-    return this;
-  };
-  this.parseUA = function() {
-    if (this.itemType != UA_RESULT) {
-      rgxMapper.call(this.data, this.ua, this.rgxMap);
-    }
-    if (this.itemType == UA_BROWSER) {
-      this.set(MAJOR, majorize(this.get(VERSION)));
-    }
-    return this;
-  };
-  this.parseCH = function() {
-    var uaCH2 = this.uaCH, rgxMap2 = this.rgxMap;
-    switch (this.itemType) {
-      case UA_BROWSER:
-        var brands = uaCH2[FULLVERLIST] || uaCH2[BRANDS], prevName;
-        if (brands) {
-          for (var i in brands) {
-            var brandName = strip(/(Google|Microsoft) /, brands[i].brand || brands[i]), brandVersion = brands[i].version;
-            if (!/not.a.brand/i.test(brandName) && (!prevName || /chrom/i.test(prevName) && !/chromi/i.test(brandName))) {
-              this.set(NAME, brandName).set(VERSION, brandVersion).set(MAJOR, majorize(brandVersion));
-              prevName = brandName;
-            }
-          }
-        }
-        break;
-      case UA_CPU:
-        var archName = uaCH2[ARCHITECTURE];
-        if (archName) {
-          if (archName && uaCH2[BITNESS] == "64") archName += "64";
-          rgxMapper.call(this.data, archName + ";", rgxMap2);
-        }
-        break;
-      case UA_DEVICE:
-        if (uaCH2[MOBILE]) {
-          this.set(TYPE, MOBILE);
-        }
-        if (uaCH2[MODEL]) {
-          this.set(MODEL, uaCH2[MODEL]);
-        }
-        if (uaCH2[MODEL] == "Xbox") {
-          this.set(TYPE, CONSOLE).set(VENDOR, MICROSOFT);
-        }
-        if (uaCH2[FORMFACTORS]) {
-          var ff;
-          if (typeof uaCH2[FORMFACTORS] !== "string") {
-            var idx = 0;
-            while (!ff && idx < uaCH2[FORMFACTORS].length) {
-              ff = strMapper(uaCH2[FORMFACTORS][idx++], formFactorsMap);
-            }
-          } else {
-            ff = strMapper(uaCH2[FORMFACTORS], formFactorsMap);
-          }
-          this.set(TYPE, ff);
-        }
-        break;
-      case UA_OS:
-        var osName = uaCH2[PLATFORM];
-        if (osName) {
-          var osVersion = uaCH2[PLATFORMVER];
-          if (osName == WINDOWS) osVersion = parseInt(majorize(osVersion), 10) >= 13 ? "11" : "10";
-          this.set(NAME, osName).set(VERSION, osVersion);
-        }
-        if (this.get(NAME) == WINDOWS && uaCH2[MODEL] == "Xbox") {
-          this.set(NAME, "Xbox").set(VERSION, void 0);
-        }
-        break;
-      case UA_RESULT:
-        var data = this.data;
-        var parse2 = function(itemType2) {
-          return data[itemType2].getItem().setCH(uaCH2).parseCH().get();
-        };
-        this.set(UA_BROWSER, parse2(UA_BROWSER)).set(UA_CPU, parse2(UA_CPU)).set(UA_DEVICE, parse2(UA_DEVICE)).set(UA_ENGINE, parse2(UA_ENGINE)).set(UA_OS, parse2(UA_OS));
-    }
-    return this;
-  };
   setProps.call(this, [
     ["itemType", itemType],
     ["ua", ua],
@@ -69632,10 +70258,152 @@ function UAItem(itemType, ua, rgxMap, uaCH) {
   ]);
   return this;
 }
+UAItem.prototype.get = function(prop) {
+  if (!prop) return this.data;
+  return this.data.hasOwnProperty(prop) ? this.data[prop] : void 0;
+};
+UAItem.prototype.set = function(prop, val) {
+  this.data[prop] = val;
+  return this;
+};
+UAItem.prototype.setCH = function(ch) {
+  this.uaCH = ch;
+  return this;
+};
+UAItem.prototype.detectFeature = function() {
+  if (NAVIGATOR && NAVIGATOR.userAgent == this.ua) {
+    switch (this.itemType) {
+      case BROWSER:
+        if (NAVIGATOR.brave && typeof NAVIGATOR.brave.isBrave == TYPEOF.FUNCTION) {
+          this.set(NAME, "Brave");
+        }
+        break;
+      case DEVICE:
+        if (!this.get(TYPE) && NAVIGATOR_UADATA && NAVIGATOR_UADATA[MOBILE]) {
+          this.set(TYPE, MOBILE);
+        }
+        if (this.get(MODEL) == "Macintosh" && NAVIGATOR && typeof NAVIGATOR.standalone !== TYPEOF.UNDEFINED && NAVIGATOR.maxTouchPoints && NAVIGATOR.maxTouchPoints > 2) {
+          this.set(MODEL, "iPad").set(TYPE, TABLET);
+        }
+        break;
+      case OS:
+        if (!this.get(NAME) && NAVIGATOR_UADATA && NAVIGATOR_UADATA[PLATFORM]) {
+          this.set(NAME, NAVIGATOR_UADATA[PLATFORM]);
+        }
+        break;
+      case RESULT:
+        var data = this.data;
+        var detect = function(itemType) {
+          return data[itemType].getItem().detectFeature().get();
+        };
+        this.set(BROWSER, detect(BROWSER)).set(CPU, detect(CPU)).set(DEVICE, detect(DEVICE)).set(ENGINE, detect(ENGINE)).set(OS, detect(OS));
+    }
+  }
+  return this;
+};
+UAItem.prototype.parseUA = function() {
+  if (this.itemType != RESULT) {
+    rgxMapper.call(this.data, this.ua, this.rgxMap);
+  }
+  switch (this.itemType) {
+    case BROWSER:
+      this.set(MAJOR, majorize(this.get(VERSION)));
+      break;
+    case OS:
+      if (this.get(NAME) == "iOS" && this.get(VERSION) == "18.6") {
+        var realVersion = /\) Version\/([\d\.]+)/.exec(this.ua);
+        if (realVersion && parseInt(realVersion[1].substring(0, 2), 10) >= 26) {
+          this.set(VERSION, realVersion[1]);
+        }
+      }
+      break;
+  }
+  return this;
+};
+UAItem.prototype.parseCH = function() {
+  var uaCH = this.uaCH, rgxMap = this.rgxMap;
+  switch (this.itemType) {
+    case BROWSER:
+    case ENGINE:
+      var brands = uaCH[FULLVERLIST] || uaCH[BRANDS], prevName;
+      if (brands) {
+        for (var i = 0; i < brands.length; i++) {
+          var brandName = brands[i].brand || brands[i], brandVersion = brands[i].version;
+          if (this.itemType == BROWSER && !/not.a.brand/i.test(brandName) && (!prevName || /Chrom/.test(prevName) && brandName != CHROMIUM || prevName == EDGE && /WebView2/.test(brandName))) {
+            brandName = strMapper(brandName, browserHintsMap);
+            prevName = this.get(NAME);
+            if (!(prevName && !/Chrom/.test(prevName) && /Chrom/.test(brandName))) {
+              this.set(NAME, brandName).set(VERSION, brandVersion).set(MAJOR, majorize(brandVersion));
+            }
+            prevName = brandName;
+          }
+          if (this.itemType == ENGINE && brandName == CHROMIUM) {
+            this.set(VERSION, brandVersion);
+          }
+        }
+      }
+      break;
+    case CPU:
+      var archName = uaCH[ARCHITECTURE];
+      if (archName) {
+        if (archName && uaCH[BITNESS] == "64") archName += "64";
+        rgxMapper.call(this.data, archName + ";", rgxMap);
+      }
+      break;
+    case DEVICE:
+      if (uaCH[MOBILE]) {
+        this.set(TYPE, MOBILE);
+      }
+      if (uaCH[MODEL]) {
+        this.set(MODEL, uaCH[MODEL]);
+        if (!this.get(TYPE) || !this.get(VENDOR)) {
+          var reParse = {};
+          rgxMapper.call(reParse, "droid 9; " + uaCH[MODEL] + ")", rgxMap);
+          if (!this.get(TYPE) && !!reParse.type) {
+            this.set(TYPE, reParse.type);
+          }
+          if (!this.get(VENDOR) && !!reParse.vendor) {
+            this.set(VENDOR, reParse.vendor);
+          }
+        }
+      }
+      if (uaCH[FORMFACTORS]) {
+        var ff;
+        if (typeof uaCH[FORMFACTORS] !== "string") {
+          var idx = 0;
+          while (!ff && idx < uaCH[FORMFACTORS].length) {
+            ff = strMapper(uaCH[FORMFACTORS][idx++], formFactorsMap);
+          }
+        } else {
+          ff = strMapper(uaCH[FORMFACTORS], formFactorsMap);
+        }
+        this.set(TYPE, ff);
+      }
+      break;
+    case OS:
+      var osName = uaCH[PLATFORM];
+      if (osName) {
+        var osVersion = uaCH[PLATFORMVER];
+        if (osName == WINDOWS) osVersion = parseInt(majorize(osVersion), 10) >= 13 ? "11" : "10";
+        this.set(NAME, osName).set(VERSION, osVersion);
+      }
+      if (this.get(NAME) == WINDOWS && uaCH[MODEL] == "Xbox") {
+        this.set(NAME, "Xbox").set(VERSION, void 0);
+      }
+      break;
+    case RESULT:
+      var data = this.data;
+      var parse2 = function(itemType) {
+        return data[itemType].getItem().setCH(uaCH).parseCH().get();
+      };
+      this.set(BROWSER, parse2(BROWSER)).set(CPU, parse2(CPU)).set(DEVICE, parse2(DEVICE)).set(ENGINE, parse2(ENGINE)).set(OS, parse2(OS));
+  }
+  return this;
+};
 function UAParser(ua, extensions, headers) {
-  if (typeof ua === OBJ_TYPE) {
+  if (typeof ua === TYPEOF.OBJECT) {
     if (isExtensions(ua, true)) {
-      if (typeof extensions === OBJ_TYPE) {
+      if (typeof extensions === TYPEOF.OBJECT) {
         headers = extensions;
       }
       extensions = ua;
@@ -69644,21 +70412,31 @@ function UAParser(ua, extensions, headers) {
       extensions = void 0;
     }
     ua = void 0;
-  } else if (typeof ua === STR_TYPE && !isExtensions(extensions, true)) {
+  } else if (typeof ua === TYPEOF.STRING && !isExtensions(extensions, true)) {
     headers = extensions;
     extensions = void 0;
   }
-  if (headers && typeof headers.append === FUNC_TYPE) {
-    var kv = {};
-    headers.forEach(function(v, k) {
-      kv[k] = v;
-    });
-    headers = kv;
+  if (headers) {
+    if (typeof headers.append === TYPEOF.FUNCTION) {
+      var kv = {};
+      headers.forEach(function(v, k) {
+        kv[String(k).toLowerCase()] = v;
+      });
+      headers = kv;
+    } else {
+      var normalized = {};
+      for (var header in headers) {
+        if (headers.hasOwnProperty(header)) {
+          normalized[String(header).toLowerCase()] = headers[header];
+        }
+      }
+      headers = normalized;
+    }
   }
   if (!(this instanceof UAParser)) {
     return new UAParser(ua, extensions, headers).getResult();
   }
-  var userAgent = typeof ua === STR_TYPE ? ua : (
+  var userAgent = typeof ua === TYPEOF.STRING ? ua : (
     // Passed user-agent string
     headers && headers[USER_AGENT] ? headers[USER_AGENT] : (
       // User-Agent from passed headers
@@ -69668,9 +70446,9 @@ function UAParser(ua, extensions, headers) {
       )
     )
   ), httpUACH = new UACHData(headers, true), regexMap = extensions ? extend(defaultRegexes, extensions) : defaultRegexes, createItemFunc = function(itemType) {
-    if (itemType == UA_RESULT) {
+    if (itemType == RESULT) {
       return function() {
-        return new UAItem(itemType, userAgent, regexMap, httpUACH).set("ua", userAgent).set(UA_BROWSER, this.getBrowser()).set(UA_CPU, this.getCPU()).set(UA_DEVICE, this.getDevice()).set(UA_ENGINE, this.getEngine()).set(UA_OS, this.getOS()).get();
+        return new UAItem(itemType, userAgent, regexMap, httpUACH).set("ua", userAgent).set(BROWSER, this.getBrowser()).set(CPU, this.getCPU()).set(DEVICE, this.getDevice()).set(ENGINE, this.getEngine()).set(OS, this.getOS()).get();
       };
     } else {
       return function() {
@@ -69679,18 +70457,17 @@ function UAParser(ua, extensions, headers) {
     }
   };
   setProps.call(this, [
-    ["getBrowser", createItemFunc(UA_BROWSER)],
-    ["getCPU", createItemFunc(UA_CPU)],
-    ["getDevice", createItemFunc(UA_DEVICE)],
-    ["getEngine", createItemFunc(UA_ENGINE)],
-    ["getOS", createItemFunc(UA_OS)],
-    ["getResult", createItemFunc(UA_RESULT)],
+    ["getBrowser", createItemFunc(BROWSER)],
+    ["getCPU", createItemFunc(CPU)],
+    ["getDevice", createItemFunc(DEVICE)],
+    ["getEngine", createItemFunc(ENGINE)],
+    ["getOS", createItemFunc(OS)],
+    ["getResult", createItemFunc(RESULT)],
     ["getUA", function() {
       return userAgent;
     }],
     ["setUA", function(ua2) {
-      if (isString(ua2))
-        userAgent = ua2.length > UA_MAX_LENGTH ? trim(ua2, UA_MAX_LENGTH) : ua2;
+      if (isString(ua2)) userAgent = trim(ua2, UA_MAX_LENGTH);
       return this;
     }]
   ]).setUA(userAgent);
@@ -69721,7 +70498,7 @@ const defaultHelpTooltipStyle = {
   maxWidth: 540,
   fontSize: 14
 };
-const HelpTooltipStyled = styled$2(({ className, ...props }) => /* @__PURE__ */ jsxRuntimeExports.jsx(Tooltip, { ...props, classes: { popper: className } }))(() => ({
+const HelpTooltipStyled = styled$3(({ className, ...props }) => /* @__PURE__ */ jsxRuntimeExports.jsx(Tooltip, { ...props, classes: { popper: className } }))(() => ({
   [`& .${tooltipClasses.tooltip}`]: defaultHelpTooltipStyle
 }));
 function HelpTooltip(props) {
@@ -71636,6 +72413,9 @@ const WorkplaceTypeViews = {
   "dataQualities": {
     "dq-not-used": {
       "name": "dq-not-used"
+    },
+    "dq-workplace-type-item-type-position-z": {
+      "name": "dq-workplace-type-item-type-position-z"
     }
   }
 };
@@ -72101,6 +72881,9 @@ const PersonWorkingLocationViews = {
     "my-planning": {
       "name": "my-planning",
       "isStandalone": false
+    },
+    "obo-planning": {
+      "name": "obo-planning"
     },
     "booking-maps": {
       "name": "booking-maps"
@@ -73356,6 +74139,68 @@ const JupRoleToJupUiLayoutViews = {
   },
   "dataQualities": {}
 };
+const JupUiLayoutTabViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
+const JupRoleToJupUiLayoutTabViews = {
+  "indexes": {
+    "list": {
+      "name": "list",
+      "isDefaultView": true
+    },
+    "create": {
+      "name": "create",
+      "isDefaultView": true
+    },
+    "import": {
+      "name": "import",
+      "isDefaultView": true
+    },
+    "dataquality": {
+      "name": "dataquality",
+      "isDefaultView": true
+    }
+  },
+  "singles": {
+    "details": {
+      "name": "details",
+      "isDefaultView": true
+    },
+    "edit": {
+      "name": "edit",
+      "isDefaultView": true
+    }
+  },
+  "dataQualities": {}
+};
 const ItemFactViews = {
   "indexes": {
     "list": {
@@ -73590,6 +74435,8 @@ const ViewCoreSchema = {
   partnerExportMappingToRoomType: PartnerExportMappingToRoomTypeViews,
   partnerExportMappingConfigurationToFloor: PartnerExportMappingConfigurationToFloorViews,
   jupRoleToJupUiLayout: JupRoleToJupUiLayoutViews,
+  jupUiLayoutTab: JupUiLayoutTabViews,
+  jupRoleToJupUiLayoutTab: JupRoleToJupUiLayoutTabViews,
   itemFact: ItemFactViews,
   featureFamily: FeatureFamilyViews,
   featureGroup: FeatureGroupViews,

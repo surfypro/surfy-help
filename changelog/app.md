@@ -1,8 +1,11 @@
 # Nouveautés
 
-<!-- ## 7 Janvier 2026 - v3.4.149
+<!-- ## 16 Janvier 2026 - v3.4.149
 
-- Les utilisateurs qui n'ont pas access a un scenario ne voient pas l'option "Inclure les scénarios dans la recherche" dans la recherche globale. -->
+- Les utilisateurs qui n'ont pas access a un scenario ne voient pas l'option "Inclure les scénarios dans la recherche" dans la recherche globale. 
+- Mise en place d'une nouvelle page permettant de réserver un poste de travail à la place d'une autre personne via la vue <LIV code="personWorkingLocation:obo-planning" />.
+ -->
+
 
 ## 4 Janvier 2026 - v3.4.147
 
