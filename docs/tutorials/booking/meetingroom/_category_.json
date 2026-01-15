@@ -1,0 +1,9 @@
+{
+  "label": "La réservation de salle de réunion",
+  "position": 2,
+  "link": {
+    "slug": "meetingroombooking",
+    "type": "generated-index",
+    "description": "La réservation de salle de réunion dans Surfy"
+  }
+}

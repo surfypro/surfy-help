@@ -1,0 +1,9 @@
+{
+  "label": "La réservation de poste de travail",
+  "position": 1,
+  "link": {
+    "slug": "workstationbooking",
+    "type": "generated-index",
+    "description": "Tout savoir sur la réservation de poste de travail dans Surfy"
+  }
+}

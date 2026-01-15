@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Réserver avec Teams dans Surfy
+# Réserver un poste de travail avec Teams
 
 Dans Teams, on peut ajouter l'application Surfy en cliquant sur "Application" et en recherchant "Surfy".<br />
 Une fois sélectionnée, l'application est ajoutée à Teams et permet directement au collaborateur autorisé d'utiliser les fonctionnalités de réservation de Surfy via Teams.<br />

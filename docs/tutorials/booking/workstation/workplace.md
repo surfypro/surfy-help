@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# La réservation dans Surfy
+# Réserver un poste de travail
 
 <Youtube code="76svpWcvXos"/>
 
