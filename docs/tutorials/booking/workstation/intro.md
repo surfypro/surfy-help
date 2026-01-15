@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Guide de démarrage
 
+Ce guide détaille le processus de consultation et de réservation d'un poste de travail dans Surfy.
+
 ## Prérequis pour l'utilisation de la réservation avec Surfy
 
 Surfy propose de digitaliser les plans des bâtiments pour faciliter globalement la gestion de l'environnement de travail.<br />
