@@ -13,6 +13,13 @@ Permet de dénombrer chaque genre, par exemple pour la gestion des sanitaires
 
 ## Propriétés obligatoires {#properties-mandatory}
     
+### Code {#code}
+
+
+
+*Nom technique:* ```code```
+<PH code="personGender:code"/>
+
 ### Nom {#name}
 
 Le nom du genre de la personne

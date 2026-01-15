@@ -13,6 +13,13 @@ Allows you to count each gender, for example for managing toilets
 
 ## Required Properties {#properties-mandatory}
     
+### Code {#code}
+
+
+
+*Technical name:* ```code```
+<PH code="personGender:code"/>
+
 ### Last name {#name}
 
 The gender name of the person

@@ -1702,6 +1702,10 @@
                     "label": "Nom",
                     "description": "Le nom du genre de la personne"
                 },
+                "code": {
+                    "label": "Code",
+                    "description": null
+                },
                 "createdAt": {
                     "label": "Date de création",
                     "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
