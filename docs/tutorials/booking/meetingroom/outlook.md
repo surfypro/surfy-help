@@ -2,6 +2,6 @@
 sidebar_position: 3
 ---
 
-# Interopérabilité Outlook
+# Réserver une salle dans Outlook
 
 En cours de construction
