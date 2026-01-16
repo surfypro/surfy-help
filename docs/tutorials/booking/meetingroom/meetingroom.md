@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ## Consulter les salles de réunion
 
-Cette fonctionnalité nécessite un paramétrage des salles à inclure dans les espaces consultables.
+Cette fonctionnalité nécessite un paramétrage des salles à inclure dans les espaces consultables. Voir le chapitre [Configurer la gestion des espaces de réunion](/docs/tutorials/surfaces/meetingroom/config).
 
 Une fois les espaces de réunion paramétrés, pour consulter les salles de réunion, depuis la page d'accueil,
 
