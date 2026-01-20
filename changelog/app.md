@@ -1,9 +1,13 @@
 # Nouveautés
 
-<!-- ## 16 Janvier 2026 - v3.4.149
+<!-- ## 21 Janvier 2026 - v3.4.150
 
-- Les utilisateurs qui n'ont pas access a un scenario ne voient pas l'option "Inclure les scénarios dans la recherche" dans la recherche globale. 
-- Mise en place d'une nouvelle page permettant de réserver un poste de travail à la place d'une autre personne via la vue <LIV code="personWorkingLocation:obo-planning" />.
+- Les utilisateurs qui n'ont pas accès à un scénario ne voient plus l'option "Inclure les scénarios dans la recherche" dans la recherche globale.
+- Mise en place d'une nouvelle page permettant de réserver un poste de travail pour une autre personne via la vue <LIV code="personWorkingLocation:obo-planning" />.
+- Le comportement des visions est désormais le suivant :
+    - Chaque bâtiment peut posséder une vision par défaut, qui sera utilisée en priorité.
+    - Si la vision est changée depuis le menu du plan, elle sera appliquée sur le bâtiment pour l'utilisateur jusqu'au rafraîchissement de la page, où la vision par défaut sera à nouveau appliquée.
+    - Si aucune vision n'est définie sur le bâtiment, la première vision disponible pour l'utilisateur sera appliquée.
  -->
 
 
