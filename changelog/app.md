@@ -1,4 +1,7 @@
 # Nouveautés
+## 28 Janvier 2026 - v3.4.155
+
+- L'info-bulle des postes de travail affiche désormais l'email des personnes affectées au poste de travail en plus de leur organisation.
 
 ## 27 Janvier 2026 - v3.4.152
 
