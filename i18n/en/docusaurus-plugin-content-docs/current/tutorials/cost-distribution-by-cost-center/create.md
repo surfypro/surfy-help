@@ -37,7 +37,7 @@ By opening the butterfly to the left of each cost center, you get the detailed l
 
 The cost center named "-" lists errors on spaces and workstations that have a "cost distribution type" but no "cost center". You can easily complete the cost center by clicking on the name of each space or workstation listed in this tab until everything is filled in and removed from the list. 
 
-Spaces and workstations without "cost distribution type" appear nowhere and their surface is counted nowhere. 
+Spaces (or workstations, if the workspace is allocated as a "cost center per workstation") without a "cost allocation type" do not appear anywhere in the allocation, and their area or area ratio is not included in any part. This prevents a portion of the premises from being included in the billing.
 
 :::tip Good to Know
 Clicking on any space name to the left of the lists returns to the concerned space's environment, on the plans. You can then directly modify the information, then after refresh (F5) return to the updated distribution keys.
