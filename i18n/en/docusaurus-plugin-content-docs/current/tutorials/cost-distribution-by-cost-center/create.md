@@ -4,17 +4,15 @@ sidebar_position: 1
 
 # Recharge Spaces by Cost Center
 
-Surfy offers automatic calculation of distribution keys and cumulative surfaces by cost center on one or more buildings to distribute and recharge building charges in proportion to occupancy surfaces or people assigned to these spaces.
+Surfy provides automatic calculation of distribution keys and cumulative surfaces by cost center on one or more buildings, in order to allocate and recharge building costs in proportion to either the occupied surfaces or the people assigned to those spaces.
 
+To recharge spaces by cost center in Surfy, all spaces to be billed must have both a cost center and a cost distribution type defined.
 
-To recharge spaces by cost centers in Surfy, all spaces to be charged must be filled in with their cost center and cost distribution type.
+To recharge a space entirely to its cost center, the space cost distribution type must be **"cost center by space"**.
 
-To recharge a space entirely to its cost center, the space's cost distribution type must be "cost center by space".
+To recharge surface ratios by workstations of a space to their cost center, all workstations to be billed must have a cost center, and the cost distribution type of the parent space must be **"cost center by workstation"**.
 
-To recharge surface ratios by workstations of a space to their cost center, all workstations to be charged must be filled in with their cost center and the cost distribution type of their belonging space must be "cost center by workstation".
-
-
-You can choose the cost distribution type for each space, and thus mix spaces recharged by space and space ratios charged by workstation.
+You can choose the cost distribution type for each space, and therefore mix spaces recharged by space with space ratios recharged by workstation.
 
 ## Visualize Cost Centers on the Plan
 
@@ -31,7 +29,9 @@ Once this information is entered, from the home page, click on the icon at the e
 
 You get, by Cost Center, cumulative surfaces and financial distribution keys. 
 
-Cost centers to be distributed are not distributed in this table. They are present in the list like any other cost center. 
+Cost centers to be distributed are not distributed in this table. They are present in the list like any other cost center:
+- with a * star for cost centers distributed at building level
+- with two ** stars for cost centers distributed at floor level
 
 By opening the butterfly to the left of each cost center, you get the detailed list of each space and workstations of each space, attached to the cost center, with the surface to recharge and the internal distribution key to the cost center for the space or workstations of the space. 
 
@@ -46,7 +46,7 @@ Clicking on any space name to the left of the lists returns to the concerned spa
 
 ## Distribute Common Areas
 
-Example of distributing the "common areas" cost center between two other cost centers:
+Example of distributing the **"common areas"** cost center between two other cost centers:
 
 <Youtube code="FUzULkVESXY"/>
 
@@ -55,6 +55,9 @@ Example of distributing the "common areas" cost center between two other cost ce
 
 Data is available in Excel files, with or without distribution, by floor or for the entire building:
 
+::::tip GOOD TO KNOW
+Each file has a **"Details"** sheet listing each billed space or space ratio, with its own refactoring information and distribution key.
+::::
 
 
 ### Excel File, by Floor with Distribution

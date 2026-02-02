@@ -31,13 +31,16 @@ Une fois ces informations entrées, à partir de la page d’accueil, cliquer su
 
 On obtient, par Centre de Coût, les surfaces cumulées et les clés de répartition financières. 
 
-Les centres de coût à ventiler ne sont pas ventilés dans ce tableau. Ils sont présents dans la liste comme tout autre centre de coût. 
+Les centres de coût à ventiler ne sont pas ventilés dans ce tableau. Ils sont présents dans la liste comme tout autre centre de coût :<br />
+-   avec une * étoile pour les centres de coût ventilés au bâtiment
+-   avec deux ** étoiles pour les centres de coût ventilés à l'étage
+
 
 En ouvrant le papillon à gauche de chaque centre de coût, on obtient la liste détaillée de chaque espace et des postes de travail de chaque espace, rattachés au centre de coût, avec la surface à refacturer et la clé de répartition interne au centre de coût pour l'espace ou les postes de travail de l'espace. 
 
 Le centre de coût nommé "-" liste les erreurs sur les espaces et les postes de travail qui ont un "type de distribution des coûts" mais pas de "centre de coût". On peut facilement compléter le centre de coût en cliquant sur le nom de chacun des espaces ou postes de travail listés dans cet onglet jusqu’à tout renseigner et retirer de la liste. 
 
-Les espaces et postes de travail sans "type de distribution des coûts" n’apparaissent nulle part et leur surface n’est comptabilisée nulle part. 
+Les espaces (ou les postes de travail, si l'espace d'appartenance est en "centre de coût par poste de travail") sans "type de distribution des coûts" n’apparaissent nulle part dans la répartition et leur surface ou ratio de surface n’est comptabilisée nulle par part. Cela permet de ne pas faire entrer dans la facturation une partie des locaux.
 
 :::tip Bon à savoir
 Cliquer sur n'importe quel nom d'espace à la gauche des listes renvoit dans l'environnement de l'espace concerné, sur les plans. On peut alors modifier directement l'information, puis après rafraichissement(F5) revenir sur les clés de répartitions mises à jour.
@@ -55,7 +58,9 @@ Exemple de ventilation du centre de coût des "parties communes" entre deux autr
 
 Les données sont disponibles en fichiers Excel, avec ou sans ventilation, par étage ou pour l’ensemble du bâtiment :
 
-
+:::tip BON A SAVOIR
+Chaque fichier dispose d'un onglet "Détails" listant chaque espace ou ratio d'espace facturé, avec ses propres informations de refacturation et clé de répartition.
+:::
 
 ### Le fichier Excel, par Etage avec ventilation
 
