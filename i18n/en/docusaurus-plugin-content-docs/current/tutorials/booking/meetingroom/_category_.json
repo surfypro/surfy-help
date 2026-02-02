@@ -1,0 +1,9 @@
+{
+  "label": "Meeting room booking in Surfy",
+  "position": 2,
+  "link": {
+    "slug": "meetingroombooking",
+    "type": "generated-index",
+    "description": "Meeting room booking in Surfy"
+  }
+}

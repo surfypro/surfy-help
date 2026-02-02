@@ -44,9 +44,9 @@ Already reserved workstations are colored in orange on the plan, with the name a
 -   clicking on an already made booking shows the position of the reserved workstation, colored in blue with name and possible photo.
 -   clicking on the trash deletes this booking.
 
-:::tip GOOD TO KNOW
+::::tip GOOD TO KNOW
 Clicking on the "Share the day in morning/afternoon" icon deletes the day's bookings and modifies the choice "full day" or "morning / afternoon"
-:::
+::::
 
 From the booking page, it is also possible to:
 
@@ -62,3 +62,4 @@ By clicking on the reserved workstation title, you access its geolocation on the
 
 Using Teams offers a more direct experience and better suited for using booking features on smartphone.<br />
 To book with Teams in Surfy, see the chapter [Book with Teams in Surfy](/en/docs/tutorials/booking/teams)
+

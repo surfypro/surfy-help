@@ -34,13 +34,11 @@ The file is available in "Downloads".
 
 The people's workstation booking dashboard allows you to obtain, within a date range and in color chart form, the following information:
 
-
 -   the number of bookings per day, week, month, year: allows you to track overall booking attendance for the chosen period
 -   the number of bookings per day of the week: allows you to get statistics on the most frequented days of the week.
 -   the number of people who booked per day, week, month, year: allows you to know the overall number of people who booked for the chosen period
 -   the number of people who booked per district per day, week, month, year: allows you to know the number of people per district who booked for the chosen period
 -   the number of bookings per district per day, week, month, year: allows you to track district booking attendance for the chosen period
-
 
 To view booking charts, from the left menu,
 

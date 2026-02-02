@@ -12,7 +12,7 @@ Want to access Surfy? We tell you everything about registering your company and 
 - [Surfy, for Support functions](/en/docs/userprofile/fmsupport)<br />
 Depending on your profession and role in the company, access directly to the appropriate tutorials.
 
-- [Surfy for booking](/en/docs/userprofile/bookingusers) guides you through [configuring](/en/docs/courses/occupy/occupycourse#setting-up-district-assignment) the booking district and [using](/en/docs/tutorials/booking/create) the workstation or parking booking service.<br />
+- [Surfy for booking](/en/docs/userprofile/bookingusers) guides you through [configuring](/en/docs/courses/occupy/occupycourse#setting-up-district-assignment) the booking district and [using](/en/docs/tutorials/booking/workplace) the workstation or parking booking service.<br />
 [Meeting rooms](/en/docs/courses/occupy/meetingroomcourse) can be consulted and filtered by room type, building or desired capacity, then booked directly in Outlook.<br />
 
 - [Tutorials](/en/docs/tutorials/intro) to understand and use the features.<br />

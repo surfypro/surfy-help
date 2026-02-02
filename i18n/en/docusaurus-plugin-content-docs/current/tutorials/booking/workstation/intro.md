@@ -17,7 +17,6 @@ A dedicated platform will be assigned to you, a building must be digitized and p
 If the company's plans are already digitized in Surfy, booking features are available immediately, after the company accepts the booking license with Surfy ([Contact us](https://www.surfy.pro/en-gb/contact)), and after [configuring assignment districts](/en/docs/tutorials/dimensiontypetobuilding/create) and [assigning collaborators to assignment districts](/en/docs/tutorials/affectations/dimensiontoperson/create).
 
 
-
 ## Available Booking Features
 
 Booking features are available only in French.<br />
@@ -41,11 +40,11 @@ To configure the booking window, from the left menu,
 -   click on the "pencil" icon at the bottom of the company card to "modify company XXX"
 -   defining the "number of planning days" allows you to establish the number of days in the sliding booking window
 
-:::tip AT THIS STAGE
+::::tip AT THIS STAGE
 Checking the "Enable dimension overload for booking" box allows you to activate priority management on booking districts.
 If a collaborator's booking district is saturated, Surfy can offer the collaborator to book on another district with lower priority.<br />
 Checking the "Enable booking by building when all dimensions are overloaded" box allows you to enable booking for the entire building if a collaborator's booking areas are all full. In this case, only areas checked with "Positions bookable only via dimension" will be inaccessible for booking. See chapter [Enable Building Booking When All Dimensions Are Crowded Feature](/en/entities/user-guide/booking/enable-building-booking-when-all-dimensions-are-crowded/)
-:::
+::::
 
 -   save the modification
 -   click on the company logo at the top left of the screen, and refresh (F5).
@@ -63,9 +62,9 @@ To modify the overload rate of a booking district, from the left menu,
 -   modify the value of the "Overload Rate for Booking" (1=100%)
 -   save the modifications.
 
-:::tip GOOD TO KNOW
+::::tip GOOD TO KNOW
 Checking the "Workplaces bookable only via dimension" box for a layer excludes access to reservations for collaborators not directly assigned to this layer, who will not be able to book in this district if their original district is overloaded. Collaborators assigned to the layer retain all options if the district is saturated. This option prevents a district from being saturated in the case of opening to the entire building following saturation.
-:::
+::::
 
 Each collaborator assignment to a district has a priority number.<br />
 By default, the priority number is "0" and corresponds to maximum priority.<br />
@@ -84,9 +83,9 @@ If the overload rate for booking a district is reached and a collaborator assign
 
 Multiple assignments of a collaborator to districts can have the same priority number. The corresponding districts will then follow the same priority rule.<br />
 
-:::tip GOOD TO KNOW
+::::tip GOOD TO KNOW
 A saturated district can indicate occupancy of more than 100%. Indeed, if bookings have been made in half-days, the number of bookings can then exceed the number of bookable workstations.
-:::
+::::
 
 
 ## Access to Booking Features
@@ -104,11 +103,13 @@ Using Teams offers a more direct experience and better suited for using booking 
 
 More information on [booking features via the Surfy application](/en/docs/tutorials/booking/workplace) and for [using Teams for booking features](/en/docs/tutorials/booking/teams).
 
+
 # Application Security & Compliance for IT Administrators
 
 The application is hosted at Microsoft Azure France. It complies with GDPR regulations.
 
 Find all our commitments on [security](https://www.surfy.pro/en-gb/security)
+
 
 # Deployment & Adoption for IT Administrators
 
@@ -121,6 +122,8 @@ The requested consents are as follows:
 - offline_access
 - User.Read
 
+
 # How to Get Support?
 
 Our team remains available to support you, please refer to our [contact page](https://www.surfy.pro/en-gb/contact) to get help.
+

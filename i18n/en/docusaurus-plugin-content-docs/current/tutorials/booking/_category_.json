@@ -1,9 +1,9 @@
 {
-  "label": "Booking Features",
+  "label": "Booking in Surfy",
   "position": 13,
   "link": {
     "slug": "booking",
     "type": "generated-index",
-    "description": "Everything about Surfy's booking planning"
+    "description": "Booking in Surfy for your users"
   }
 }
