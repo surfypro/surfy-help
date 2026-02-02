@@ -56,7 +56,7 @@ Example of distributing the **"common areas"** cost center between two other cos
 Data is available in Excel files, with or without distribution, by floor or for the entire building:
 
 ::::tip GOOD TO KNOW
-Each file has a **"Details"** sheet listing each billed space or space ratio, with its own refactoring information and distribution key.
+Each file has a **"Details"** sheet listing each billed space or space ratio, with its own rebilling informations and distribution key.
 ::::
 
 
