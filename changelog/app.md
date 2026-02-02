@@ -1,6 +1,16 @@
 # Nouveautés
 
-<!-- ## 21 Janvier 2026 - v3.4.150
+<!-- ## 30 janvier 2026 - v3.4.157
+
+- Réorganisation des affectations des personnes dans la page de réservation des postes de travail, l'objectif est d'offrir une vue plus claire et plus intuitive des affectations des personnes sur plusieurs bâtiments et territoires. Les bâtiments sont désormais triés par ordre d'importance d'affectation : par exemple, une affectation à un territoire est prioritaire sur une affectation à un bâtiment simple. 
+- Dans la réservation pour les tiers, il est maintenant possible d’associer directement le tiers aux bâtiments auxquels la personne qui effectue la réservation est affectée. -->
+
+
+## 28 Janvier 2026 - v3.4.155
+
+- L'info-bulle des postes de travail affiche désormais l'email des personnes affectées au poste de travail en plus de leur organisation.
+
+## 27 Janvier 2026 - v3.4.152
 
 - Les utilisateurs qui n'ont pas accès à un scénario ne voient plus l'option "Inclure les scénarios dans la recherche" dans la recherche globale.
 - Mise en place d'une nouvelle page permettant de réserver un poste de travail pour une autre personne via la vue <LIV code="personWorkingLocation:obo-planning" />.
@@ -8,7 +18,7 @@
     - Chaque bâtiment peut posséder une vision par défaut, qui sera utilisée en priorité.
     - Si la vision est changée depuis le menu du plan, elle sera appliquée sur le bâtiment pour l'utilisateur jusqu'au rafraîchissement de la page, où la vision par défaut sera à nouveau appliquée.
     - Si aucune vision n'est définie sur le bâtiment, la première vision disponible pour l'utilisateur sera appliquée.
- -->
+
 
 
 ## 4 Janvier 2026 - v3.4.147
