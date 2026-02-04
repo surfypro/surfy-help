@@ -339,6 +339,22 @@
     "message": "Building data in Surfy",
     "description": "The generated-index page description for category Les Données du bâtiment in sidebar s1"
   },
+  "sidebar.help-sidebar.category.La réservation de poste de travail": {
+    "message": "Workstation booking in Surfy",
+    "description": "The label for category La réservation de poste de travail in sidebar s1"
+  },
+  "sidebar.help-sidebar.category.La réservation de poste de travail.link.generated-index.description": {
+    "message": "Everything about workstation booking in Surfy",
+    "description": "The generated-index page description for category La réservation de poste de travail in sidebar s1"
+  },
+  "sidebar.help-sidebar.category.La réservation de salle de réunion": {
+    "message": "Meeting room booking in Surfy",
+    "description": "The label for category La réservation de salle de réunion in sidebar s1"
+  },
+  "sidebar.help-sidebar.category.La réservation de salle de réunion.link.generated-index.description": {
+    "message": "Everything about meeting room booking in Surfy",
+    "description": "The generated-index page description for category La réservation de salle de réunion in sidebar s1"
+  },
   "sidebar.s1.category.Le tableau de bord du bâtiment": {
     "message": "Building Dashboard",
     "description": "The label for category Le tableau de bord du bâtiment in sidebar s1"
@@ -658,6 +674,10 @@
   "sidebar.help-sidebar.category.Les Données du bâtiment": {
     "message": "Building Data",
     "description": "The label for category Les Données du bâtiment in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.La réservation dans Surfy": {
+    "message": "Booking in Surfy",
+    "description": "The label for category La réservation dans Surfy in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Les Données du bâtiment.link.generated-index.description": {
     "message": "Building data in Surfy",
