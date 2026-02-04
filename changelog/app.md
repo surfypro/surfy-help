@@ -1,11 +1,16 @@
 # Nouveautés
+<!-- 
+## 5 Février 2026 - v3.4.160
 
-<!-- ## 4 Février 2026 - v3.4.158
+- Ajout d'une option d'affichage sur les personnes affectées aux postes de travail permettant de voir la photo des personnes affectées sur le plan.
+ -->
+
+## 4 Février 2026 - v3.4.159
 
 - Réorganisation des affectations des personnes dans la page de réservation des postes de travail, l'objectif est d'offrir une vue plus claire et plus intuitive des affectations des personnes sur plusieurs bâtiments et territoires. Les bâtiments sont désormais triés par ordre d'importance d'affectation : par exemple, une affectation à un territoire est prioritaire sur une affectation à un bâtiment simple. 
 - Dans la réservation pour les tiers, il est maintenant possible d’associer directement le tiers aux bâtiments auxquels la personne qui effectue la réservation est affectée.
 - La copie des postes de travail copie également la position de l’ancre du texte du nom du poste de travail copié.
- -->
+
 
 
 ## 28 Janvier 2026 - v3.4.155
