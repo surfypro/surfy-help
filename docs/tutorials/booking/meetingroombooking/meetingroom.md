@@ -32,7 +32,7 @@ Une interaction bidirectionnelle entre Surfy et Outlook permet la réservation, 
 En plus des fonctionnalités offertes par Outlook, Surfy permet de trouver la salle adequate (bâtiment, étage, type de salle, capacité, équipements), de la géolocaliser dans le bâtiment, de consulter sa disponiblité et de réserver cette salle via l'interface Outlook, sans dépaysement.
 
 Pour réserver une salle, celle ci doit d'abord être déclarée comme "Réservable".<br />
-Pour configurer la gestion des salles, voir le chapitre sur [L'administrateur de salles de réunion](docs\tutorials\booking\meetingroom\admin.md)
+Pour configurer la gestion des salles, voir le chapitre sur [L'administrateur de salles de réunion](docs\tutorials\booking\meetingroombooking\admin.md)
 
 Depuis la page de consultation des salles de réunion, les espaces réservables peuvent être réservés en cliquant sur l'icône "Calendrier" sous la salle choisie afin de "Réserver via le calendrier".
 

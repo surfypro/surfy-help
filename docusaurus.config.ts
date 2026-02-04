@@ -19,7 +19,11 @@ const config: Config = {
   projectName: 'surfy-help', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    }
+  },
 
   // Internationalization configuration
   i18n: {

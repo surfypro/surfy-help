@@ -42,9 +42,9 @@ Assign people in bulk [to workstations](/en/docs/tutorials/affectations/workplac
 
 
 
-[Book in Surfy](/en/docs/tutorials/booking/workstation/workplace)
+[Book in Surfy](/en/docs/tutorials/booking/workstationbooking/workplace)
 
-[Use Teams for Booking in Surfy](/en/docs/tutorials/booking/workstation/teams)
+[Use Teams for Booking in Surfy](/en/docs/tutorials/booking/workstationbooking/teams)
 
 
 ### Set Up Space Booking
