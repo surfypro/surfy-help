@@ -7050,6 +7050,10 @@
                     "label": "Priority",
                     "description": "Sets the priority of the person 's assignment to the dimension. A lower value means a higher priority."
                 },
+                "addToPeopleCount": {
+                    "label": "Count assignment",
+                    "description": "Add this assignment to the total number of people assigned to the assignment layer"
+                },
                 "createdAt": {
                     "label": "Creation date",
                     "description": "Date of creation in Surfy, allows you to know the history of creation in Surfy"

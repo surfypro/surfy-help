@@ -7050,6 +7050,10 @@
                     "label": "Priorité",
                     "description": "Définit la priorité de l'affectation de la personne à la dimension. Une valeur plus faible signifie une priorité plus élevée."
                 },
+                "addToPeopleCount": {
+                    "label": "Comptabiliser l'affectation",
+                    "description": "Ajouter cette affectation au nombre total des personnes affectées au calque d'affectation"
+                },
                 "createdAt": {
                     "label": "Date de création",
                     "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"

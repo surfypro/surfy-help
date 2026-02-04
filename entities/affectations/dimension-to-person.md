@@ -15,6 +15,13 @@ Permet d'affecter une personne à un quartier, territoire ou village
 
 ## Propriétés de base {#properties-base}
     
+### Comptabiliser l'affectation {#add-to-people-count}
+
+Ajouter cette affectation au nombre total des personnes affectées au calque d'affectation
+
+*Nom technique:* ```addToPeopleCount```
+<PH code="dimensionToPerson:addToPeopleCount"/>
+
 ### Priorité {#priority}
 
 Définit la priorité de l'affectation de la personne à la dimension. Une valeur plus faible signifie une priorité plus élevée.

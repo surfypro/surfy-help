@@ -15,6 +15,13 @@ Allows you to assign a person to a district, territory or village
 
 ## Basic properties {#properties-base}
     
+### Count assignment {#add-to-people-count}
+
+Add this assignment to the total number of people assigned to the assignment layer
+
+*Technical name:* ```addToPeopleCount```
+<PH code="dimensionToPerson:addToPeopleCount"/>
+
 ### Priority {#priority}
 
 Sets the priority of the person 's assignment to the dimension. A lower value means a higher priority.
