@@ -3,6 +3,52 @@ sidebar_position: 2
 ---
 # Modifier une Affectation à un quartier
 
+
+## Modifier l'affectation d'une personne à un quartier depuis le plan
+
+Pour modifier l'affectation d'une personne à un quartier depuis le plan, il faut être en vision "Quartiers" regroupant les espaces d'un même quartier en entités uniques.
+
+Pour changer la vision en mode Quartiers,
+
+-   cliquer sur l'icône verticale "Changer la vision du plan"
+-   sélectionner la vision "Quartiers"
+
+Surfy est en mode affectation par quartier : Les calques d'affectation s'affichent sur le plan et le type de calque est sélectionné pour la navigation par quartiers.
+
+Les informations du quartier, ses affectations et son inventaire sont accessibles de la même manière que pour un espace classique, en cliquant dans le quartier puis dans les onglets "Affectations" et "Inventaire" au dessus de la fiche du quartier.
+
+
+
+
+-   cliquer dans le quartier pour le sélectionner sur le plan
+-   cliquer sur l'icône "Affecter une personne à XXX" en haut à gauche de la fiche du quartier
+-   Rechercher et sélectionner dans la liste la <P code="dimensionToPerson:person" /> à affecter
+
+La personne est affectée au quartier.
+
+## Affecter une personne à un quartier depuis la fiche de la personne
+
+On peut modifier les affectations d'une personne en modifiant la fiche de la personne.
+
+La loupe de recherche sous le logo de l'entreprise permet de rechercher une personne dans la base de données de Surfy.
+
+Cliquer sur le nom ouvre la fiche de la personne, avec ses informations d'affectations.
+
+Pour modifier ces informations,
+
+-   cliquer dans le menu contextuel (case grise sous la loupe de recherche) pour "modifier la personne XXX"
+-   en bas de page, cliquer sur la bande "Affectations aux calques d'affectation"
+
+Les quartiers d'affectation de la personne sont disponibles à la création, modification ou suppression.
+
+Pour créer une nouvelle affectation,
+
+-   cliquer sur "Créer une affectation au calque d'affectation"
+-   choisir le calque d'analyse pour l'affectation
+-   choisir la priorité d'affectation (voir [Gérer les priorités des quartiers de réservation](/docs/tutorials/booking/workstationbooking/intro#gérer-les-priorités-des-quartiers-de-réservation))
+-   comptabiliser ou non l'affectation dans les données d'occupation
+
+
 ## Modification de l'affectation à un quartier d'une personne
 
 La manière la plus simple de modifier l'affectation à un quartier d'une personne dans Surfy est de supprimer son affectation au quartier puis de créer une nouvelle affectation, qu'elle soit à un quartier ou non.

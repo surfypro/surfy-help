@@ -5,23 +5,50 @@ sidebar_position: 1
 
 Pour affecter des personnes à des quartiers, il faut tout d'abord créer des calques d'affectation puis définir les quartiers en qualifiant les espaces. Consulter la rubrique [Calques d'affectation](/docs/tutorials/dimensiontypetobuilding/create.md) pour tout savoir sur la création, modification ou suppression d'un calque d'affectation.
 
-Une fois les quartiers créés sur les plans,
+Une fois les quartiers créés sur les plans et pour créer l'affectation d'une personne à un quartier, il faut être en vision "Quartiers" regroupant les espaces d'un même quartier en entités uniques.
 
--   cliquer sur l'icone verticale "Grille" pour "Colorier les espaces sur le plan en fonction des calques d'affectation" et visualiser les cumuls d'informations par calque d'affectation.
--   "sélectionner le type de calque pour la navigation" afin d'activer la sélection par quartiers entiers, en cliquant sur l'icone en bout de ligne du nom du calque
--   les informations du quartier, ses affectations et son inventaire sont accessibles de la même manière que pour un espace classique, en cliquant dans le quartier pour afficher ces informations à gauche de l'écran.
+Pour changer la vision en mode Quartiers,
 
-:::tip Vision du plan
-Cliquer sur l'icône verticale "Changer la vision du plan" et sélectionner "Quartiers" permet en 2 clics de configurer Surfy en mode affectation par quartier : Les calques d'affectation s'affichent sur le plan et le type de calque est sélectionné pour la navigation. Tant que la vision n'est pas changée, elle reste effective même après rafraichissement (F5). Il faut donc penser à revenir dans la vision par défaut "Typologies des espaces" pour une utilisation standard. Voir [la vision par quartiers](/docs/courses/views/planviews.md#vision-quartiers).
-:::
+-   cliquer sur l'icône verticale "Changer la vision du plan"
+-   sélectionner la vision "Quartiers"
 
-Pour affecter une personne à un quartier, 
+Surfy est en mode affectation par quartier : Les calques d'affectation s'affichent sur le plan et le type de calque est sélectionné pour la navigation par quartiers.
+
+Les informations du quartier, ses affectations et son inventaire sont accessibles de la même manière que pour un espace classique, en cliquant dans le quartier puis dans les onglets "Affectations" et "Inventaire" au dessus de la fiche du quartier.
+
+## Affecter une personne à un quartier depuis le plan
+
+Pour affecter une personne à un quartier depuis le plan, 
 
 -   cliquer dans le quartier pour le sélectionner sur le plan
 -   cliquer sur l'icône "Affecter une personne à XXX" en haut à gauche de la fiche du quartier
 -   Rechercher et sélectionner dans la liste la <P code="dimensionToPerson:person" /> à affecter
 
 La personne est affectée au quartier.
+
+## Affecter une personne à un quartier depuis la fiche de la personne
+
+On peut modifier les affectations d'une personne en modifiant la fiche de la personne.
+
+La loupe de recherche sous le logo de l'entreprise permet de rechercher une personne dans la base de données de Surfy.
+
+Cliquer sur le nom ouvre la fiche de la personne, avec ses informations d'affectations.
+
+Pour modifier ces informations,
+
+-   cliquer dans le menu contextuel (case grise sous la loupe de recherche) pour "modifier la personne XXX"
+-   en bas de page, cliquer sur la bande "Affectations aux calques d'affectation"
+
+Les quartiers d'affectation de la personne sont disponibles à la création, modification ou suppression.
+
+Pour créer une nouvelle affectation,
+
+-   cliquer sur "Créer une affectation au calque d'affectation"
+-   choisir le calque d'analyse pour l'affectation
+-   choisir la priorité d'affectation (voir [Gérer les priorités des quartiers de réservation](/docs/tutorials/booking/workstationbooking/intro#gérer-les-priorités-des-quartiers-de-réservation))
+-   comptabiliser ou non l'affectation dans les données d'occupation
+
+
 
 Si la personne n'est pas encore créée dans la base de données de Surfy, on peut "Créer et associer" cette personne au calque d'affectation :
 

@@ -4,23 +4,17 @@ sidebar_position: 3
 
 # Supprimer une Affectation à un quartier
 
-Pour supprimer l'affectation d'une personne à un quartier, il faut être en mode "Navigation par calque d'affectation".
+Pour supprimer l'affectation d'une personne à un quartier, il faut être en vision "Quartiers" regroupant les espaces d'un même quartier en entités uniques.
 
-## Passer en navigation par quartiers
+Pour changer la vision en mode Quartiers,
 
-Pour passer en navigation "par quartiers", ou "par calques d'affectation",
+-   cliquer sur l'icône verticale "Changer la vision du plan"
+-   sélectionner la vision "Quartiers"
 
--   cliquer sur l'icone verticale "Grille" pour "Colorier les espaces sur le plan en fonction des calques d'affectation"
--   cliquer sur l'icone en bout de ligne du nom du calque pour "sélectionner le type de calque pour la navigation" afin d'activer la sélection par quartiers
--   les informations du quartier, ses affectations et son inventaire sont accessibles de la même manière que pour un espace classique, en cliquant dans le quartier.
+Surfy est en mode affectation par quartier : Les calques d'affectation s'affichent sur le plan et le type de calque est sélectionné pour la navigation par quartiers.
 
+Les informations du quartier, ses affectations et son inventaire sont accessibles de la même manière que pour un espace classique, en cliquant dans le quartier puis dans les onglets "Affectations" et "Inventaire" au dessus de la fiche du quartier.
 
-:::tip Vision du plan
-Cliquer sur l'icône verticale "Changer la vision du plan" et sélectionner la vision "Quartiers" permet en 2 clics de configurer Surfy en mode affectation par quartier : Les calques d'affectation s'affichent sur le plan et le type de calque est sélectionné pour la navigation. Tant que la vision n'est pas changée, elle reste effective même après rafraichissement (F5). Il faut donc penser à revenir dans la vision par défaut "Typologies des espaces" pour une utilisation standard. Voir [la vision par quartiers](/docs/courses/views/planviews.md#vision-quartiers).
-:::
-
-
-Les affectations au quartier sont accessibles en cliquant dans le quartier pour le sélectionner.
 
 ## Suppression d'affectation individuelle
 
