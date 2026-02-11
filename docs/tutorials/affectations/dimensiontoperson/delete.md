@@ -53,24 +53,27 @@ cocher la case correspondant au quartier à retirer des affectations, puis sur l
 
 ## Suppression par la liste filtrée des affectations :
 
-Dans le menu Liste à gauche de l'écran,
+Depuis le menu de gauche,
 
 -   cliquer sur "Affectations", "Affectations aux calques d'affectation" puis "Lister les affectations aux calques d'affectation"
 -   filtrer la liste en fonction des calques et types de calque à l'aide de l'icône "Filtrer les affectations aux calques d'affectation", en haut à droite de l'écran
 -   cocher les affectations à supprimer au début de chaque ligne, puis "supprimer les affectations aux calques d'affectation sélectionnées" par l'icône "poubelle" en haut de page.
 
+Plus d'informations sur les [Listes filtrées](/docs/courses/find/listfindcourse)
 
 ## Suppression d'affectation en masse par fichier Excel
 
 On peut supprimer en masse des affectations en changeant les personnes affectées pour les remplacer par une personne créée pour être ensuite supprimée :
+
 -   créer une personne dont le nom et le prénom sont "SUPPRIMER"
 -   sortir le fichier Excel des affectations à supprimer
--   remplacer le nom, prénom et identifiant des personnes affectées par le nom, le prénom et l'identifiant de la personne "SUPPRIMER"
--   importer le fichier des affectations
--   supprimer la personne "SUPPRIMER"
+-   remplacer le nom, prénom et surtout l'identifiant des personnes affectées par le nom, le prénom et l'identifiant de la personne "SUPPRIMER"
+-   importer le fichier des affectations : copier-coller dans Surfy les colonnes contiguës "identifiant de l'affectation" et l'"identifiant Surfy" de la personne.
+-   comparer et mettre à jour les données d'import
 
-La personne étant supprimée, toutes ses affectations sont supprimées.
+Les affectations à supprimer sont attribuées à la personne "SUPPRIMER".
 
+-   supprimer la personne "SUPPRIMER" afin de supprimer toutes ses affectations.
 
 
 ### Création du fichier Excel
@@ -94,15 +97,13 @@ On peut créer le fichier Excel comportant les affectations à supprimer de diff
 
 ### Traitement des informations dans le fichier Excel
 
-Pour supprimer en masse des affectations aux quartiers il faut tout d'abord créer une personne dont le nom et prénom sont "SUPPRIMER", qui servira a recueillir les affectations à supprimer. Il faudra ensuite supprimer cette personne pour que toutes les affectations soient supprimées avec elle.
-
 Dans le fichier Excel, à chaque ligne d'affectation à supprimer, remplacer le nom prénom et identifiant des personnes affectées par le nom prénom et identifiant de la personne "SUPPRIMER"
 
 Une fois le fichier modifié, il reste à l'importer dans Surfy puis à supprimer la personne "SUPPRIMER"
 
 ### Importation du fichier Excel modifié
 
-Sélectionner les colonnes de l'identifiant de l'affectation et de l'identifiant de la personne "SUPPRIMER" en deux colonnes contiguës
+Sélectionner les colonnes de l'identifiant de l'affectation et de l'identifiant de la personne "SUPPRIMER".
 Un copier-coller dans un nouvel onglet est nécessaire afin d'avoir des colonnes contiguës.
 
 Dans le menu Liste à gauche de l'écran,
@@ -113,3 +114,9 @@ Dans le menu Liste à gauche de l'écran,
 -   cliquer sur "Créer tout", ou cocher les cases désirées et cliquer sur "Créer"
 -   les affectations à supprimer ont pour personne affectée "SUPPRIMER"
 -   supprimer la personne "SUPPRIMER" pour supprimer toutes ses affectations.
+
+:::danger ATTENTION
+Il est nécessaire de bien configurer la syntaxe des têtes de colonnes avant l'import dans Surfy afin que l'application comprenne correctement les modifications à apporter.
+Ne pas être vigilant expose à des imports en masse d'erreurs dans la base de données !
+Pour plus de détail sur l'import en masse, merci de [nous contacter](https://www.surfy.pro/contact)
+:::
