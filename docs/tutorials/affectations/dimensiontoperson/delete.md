@@ -4,7 +4,11 @@ sidebar_position: 3
 
 # Supprimer une Affectation à un quartier
 
-Pour supprimer l'affectation d'une personne à un quartier, il faut être en vision "Quartiers" regroupant les espaces d'un même quartier en entités uniques.
+## Supprimer une affectation aux quartiers depuis le plan
+
+Pour supprimer l'affectation d'une personne à un quartier depuis le plan, il faut être en vision "Quartiers" regroupant les espaces d'un même quartier en entités uniques.
+
+### Changer la vision en mode Quartiers
 
 Pour changer la vision en mode Quartiers,
 
@@ -16,9 +20,9 @@ Surfy est en mode affectation par quartier : Les calques d'affectation s'affiche
 Les informations du quartier, ses affectations et son inventaire sont accessibles de la même manière que pour un espace classique, en cliquant dans le quartier puis dans les onglets "Affectations" et "Inventaire" au dessus de la fiche du quartier.
 
 
-## Suppression d'affectation individuelle
+### Supprimer l'affectation aux quartiers depuis le plan
 
-Pour supprimer l'affectation d'une personne à un quartier,
+Pour supprimer l'affectation d'une personne à un quartier depuis le plan,
 
 -   cliquer sur le quartier pour le sélectionner, la fiche du quartier s'affiche à gauche du plan
 -   cliquer sur l'onglet "Affectations" afin d'afficher les affectations présentes dans le quartier
@@ -30,6 +34,22 @@ L'affectation de la personne au quartier est supprimée
 :::tip Bon à savoir
 Supprimer l'affectation d'une personne ne supprime pas la personne. En revanche, supprimer une personne supprime toutes ses affectations !
 :::
+
+## Supprimer l'affectation aux quartiers depuis la fiche de la personne
+
+On peut supprimer les affectations d'une personne en modifiant la fiche de la personne sans avoir besoin de changer de vision.
+
+La loupe de recherche sous le logo de l'entreprise permet de rechercher une personne dans la base de données de Surfy.
+
+Cliquer sur le nom ouvre la fiche de la personne, avec ses informations d'affectations.
+
+Pour supprimer une affectation,
+
+-   cliquer dans le menu contextuel (case grise sous la loupe de recherche) pour "modifier la personne XXX"
+-   en bas de page, cliquer sur la bande "Affectations aux calques d'affectation"
+
+Les quartiers d'affectation de la personne sont disponibles à la création, modification ou suppression.
+cocher la case correspondant au quartier à retirer des affectations, puis sur l'icône en début de liste pour "supprimer les affectations au calque d'affectation sélectionnés".
 
 ## Suppression par la liste filtrée des affectations :
 
