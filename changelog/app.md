@@ -3,6 +3,7 @@
 ## 5 Février 2026 - v3.4.160
 
 - Ajout d'une option d'affichage sur les personnes affectées aux postes de travail permettant de voir la photo des personnes affectées sur le plan.
+- Création d'un rapport de qualité des données sur les type d'objets qui permet de vérifier l'unicité du nom des types d'objets.
  -->
 
 ## 4 Février 2026 - v3.4.159
