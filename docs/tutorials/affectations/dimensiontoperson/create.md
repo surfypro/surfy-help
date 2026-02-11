@@ -3,11 +3,13 @@ sidebar_position: 1
 ---
 # Créer une Affectation à un quartier
 
-Pour affecter des personnes à des quartiers, il faut tout d'abord créer des calques d'affectation puis définir les quartiers en qualifiant les espaces. Consulter la rubrique [Calques d'affectation](/docs/tutorials/dimensiontypetobuilding/create.md) pour tout savoir sur la création, modification ou suppression d'un calque d'affectation.
+Pour affecter une personne à un quartier, il faut tout d'abord créer des calques d'affectation puis définir les quartiers en qualifiant les espaces. Consulter la rubrique [Calques d'affectation](/docs/tutorials/dimensiontypetobuilding/create.md) pour tout savoir sur la création, modification ou suppression d'un calque d'affectation.
 
-Une fois les quartiers créés sur les plans et pour créer l'affectation d'une personne à un quartier, il faut être en vision "Quartiers" regroupant les espaces d'un même quartier en entités uniques.
+## Affecter une personne à un quartier depuis le plan
 
-Pour changer la vision en mode Quartiers,
+Une fois les quartiers créés sur les plans et pour créer l'affectation d'une personne à un quartier depuis le plan, il faut être en vision "Quartiers" regroupant les espaces d'un même quartier en entités uniques.
+
+### Changer la vision en vision Quartiers
 
 -   cliquer sur l'icône verticale "Changer la vision du plan"
 -   sélectionner la vision "Quartiers"
@@ -16,9 +18,7 @@ Surfy est en mode affectation par quartier : Les calques d'affectation s'affiche
 
 Les informations du quartier, ses affectations et son inventaire sont accessibles de la même manière que pour un espace classique, en cliquant dans le quartier puis dans les onglets "Affectations" et "Inventaire" au dessus de la fiche du quartier.
 
-## Affecter une personne à un quartier depuis le plan
-
-Pour affecter une personne à un quartier depuis le plan, 
+### Affecter une personne à un quartier depuis le plan
 
 -   cliquer dans le quartier pour le sélectionner sur le plan
 -   cliquer sur l'icône "Affecter une personne à XXX" en haut à gauche de la fiche du quartier
@@ -28,7 +28,7 @@ La personne est affectée au quartier.
 
 ## Affecter une personne à un quartier depuis la fiche de la personne
 
-On peut modifier les affectations d'une personne en modifiant la fiche de la personne.
+On peut modifier les affectations d'une personne en modifiant la fiche de la personne, sans avoir besoin de changer de vision.
 
 La loupe de recherche sous le logo de l'entreprise permet de rechercher une personne dans la base de données de Surfy.
 
@@ -59,6 +59,8 @@ Si la personne n'est pas encore créée dans la base de données de Surfy, on pe
 La personne est créée et affectée au quartier correspondant.
 
 ## Visualiser les affectations à un quartier
+
+Pour visualiser les affectations à un quartier, il faut êtr en vision "Quartiers".
 
 Pour visualiser dans Surfy les affectations à un quartier :
 -   cliquer sur le quartier pour le sélectionner
