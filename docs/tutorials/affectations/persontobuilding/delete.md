@@ -6,9 +6,32 @@ sidebar_position: 3
 
 L'affectation d'un personne à un bâtiment peut être supprimée lors de la nouvelle affectation de la personne: les affectations existantes sur le même bâtiment sont proposées par défaut à la suppression, il suffit de "supprimer les affectations sélectionnées" pour ne garder que la nouvelle affectation.
 
-## Supprimer l'affectation d'une personne à un bâtiment
+## Supprimer l'affectation depuis la fiche de la personne
 
-Depuis la page d'accueil,
+On peut supprimer les affectations d'une personne à partir de la fiche de cette personne.
+
+La loupe de recherche sous le logo de l'entreprise permet de rechercher une personne dans la base de données de Surfy.
+
+Cliquer sur le nom ouvre la fiche de la personne, avec ses informations d'affectations.
+
+Pour modifier ces informations,
+
+-   cliquer dans le menu contextuel (case grise sous la loupe de recherche) pour "modifier la personne XXX"
+-   en bas de page, cliquer sur la bande "Affectations au bâtiment"
+
+Les bâtiments d'affectation de la personne sont disponibles à la suppression.
+
+Pour supprimer l'affectation,
+
+-   cocher la case en début de ligne du bâtiment concerné
+-   cliquer sur l'icone "Supprimer les affectations au bâtiment sélectionnées".
+-   confirmer la suppression.
+
+L'affectation au bâtiment est supprimée.
+
+## Supprimer l'affectation depuis la liste des affectations
+
+Depuis le menu de gauche,
 
 -   cliquer sur "Affectations", "Affectations au bâtiment", puis "Lister les affectations au bâtiment".
 -   rechercher l'affectation au bâtiment à supprimer

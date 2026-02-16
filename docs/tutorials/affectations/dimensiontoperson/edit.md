@@ -26,7 +26,7 @@ Les informations du quartier, ses affectations et son inventaire sont accessible
 
 -   cliquer dans le quartier pour le sélectionner sur le plan
 -   cliquer sur l'onglet "Affectations" pour lister les affectations du quartier
--   cliquer sur l'icône "Poubelle" au dessus de la fiche du quartier pour "supprimer l'affectation au calque d'affectation" de la personne
+-   cliquer sur l'icône "Poubelle" face à la personne concernée pour "supprimer l'affectation au calque d'affectation" de la personne
 
 La personne est supprimée du quartier.
 Pour affecter la personne à un autre quartier, voir [créer une affectation à un quartier](/docs/tutorials/affectations/dimensiontoperson/create)
@@ -53,6 +53,9 @@ Pour créer une nouvelle affectation,
 -   choisir le calque d'analyse pour l'affectation
 -   choisir la priorité d'affectation (voir [Gérer les priorités des quartiers de réservation](/docs/tutorials/booking/workstationbooking/intro#gérer-les-priorités-des-quartiers-de-réservation))
 -   comptabiliser ou non l'affectation dans les données d'occupation
+-   valider chaque nouvelle affectation, qui s'ajoute à la liste.
+
+Pour supprimer une affectation, cocher la case en début de ligne, cliquer sur l'icône "Poubelle" pour "supprimer les affectations aux calques d'affectation sélectionnés" et confirmer la suppression.
 
 ## Modification d'affectation à un quartier en masse par fichier Excel
 
