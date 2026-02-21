@@ -34,7 +34,7 @@ Permet d'identifier rapidement le type d'objet avec un nom complet, logique et d
     
 ### Afficher les informations sur le plan {#display-item-reference-in-map}
 
-Permet d'afficher le champ « Référence » de chaque objet sur le plan
+Permet d'afficher les informations de chaque objet sur le plan en fonction des options sélectionnées
 
 *Nom technique:* ```displayItemReferenceInMap```
 <PH code="itemType:displayItemReferenceInMap"/>

@@ -2136,7 +2136,7 @@
                 },
                 "displayItemReferenceInMap": {
                     "label": "Show plan information",
-                    "description": "Allows you to display the “Reference” field of each object on the plan"
+                    "description": "Allows you to display information for each object on the plan based on the selected options."
                 },
                 "code": {
                     "label": "Code",
@@ -6165,6 +6165,10 @@
                 "code": {
                     "label": "Immobilizer code",
                     "description": "The asset number is used to keep the accounting number"
+                },
+                "comment": {
+                    "label": "Comment",
+                    "description": "Free remark or note about the object"
                 },
                 "reference": {
                     "label": "Object reference",

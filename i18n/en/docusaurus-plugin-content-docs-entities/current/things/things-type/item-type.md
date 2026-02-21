@@ -132,7 +132,7 @@ The purchase price of the item type
 
 ### Show plan information {#display-item-reference-in-map}
 
-Allows you to display the “Reference” field of each object on the plan
+Allows you to display information for each object on the plan based on the selected options.
 
 *Technical name:* ```displayItemReferenceInMap```
 <PH code="itemType:displayItemReferenceInMap"/>

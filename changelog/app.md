@@ -1,10 +1,21 @@
 # Nouveautés
+
+## 22 Février 2026 - v3.4.168
+
+- Les objets possèdent désormais une option sur le plan afin de définir quelles propriétés afficher ou non sur le plan, comme pour les espaces ou les postes de travail. L'affichage n'est disponible que quand <P code="itemType:displayItemReferenceInMap" /> est activé.
+- Mise en place d'une nouvelle vision "Inventaire" permettant de visualiser sur le plan les codes des objets par défaut.
+- Ajout d'une nouvelle propriété <P code="item:comment" /> permettant d'ajouter un commentaire à un objet sur le plan avec des indications complémentaires. Ce champ est visible dans l'info-bulle de l'objet sur le plan.
+- Ajout d'une option disponible dans les options du plan, pour les bâtiments en 3D, permettant de faire pivoter le bâtiment à 360 degrés afin d'en visualiser toutes les faces.
+
 <!-- 
+
 ## 5 Février 2026 - v3.4.160
 
 - Ajout d'une option d'affichage sur les personnes affectées aux postes de travail permettant de voir la photo des personnes affectées sur le plan.
 - Création d'un rapport de qualité des données sur les type d'objets qui permet de vérifier l'unicité du nom des types d'objets.
- -->
+- Les images sont exportable en svg
+
+-->
 
 ## 4 Février 2026 - v3.4.159
 

@@ -103,7 +103,7 @@ declare type DimensionRoomPropertyNames = 'id' | 'createdAt' | 'updatedAt' | 'ex
 
 declare type DimensionRoomPropertyTypeRecord = Record<DimensionRoomPropertyNames, IPropertyTypeDefinition>;
 
-declare type DimensionToPersonPropertyNames = 'id' | 'priority' | 'createdAt' | 'updatedAt' | 'externalId' | 'dimensionId' | 'dimension' | 'personId' | 'person' | 'userCompanyCreatedById' | 'userCompanyCreatedBy' | 'userCompanyUpdatedById' | 'userCompanyUpdatedBy' | 'companyId' | 'company';
+declare type DimensionToPersonPropertyNames = 'id' | 'priority' | 'addToPeopleCount' | 'createdAt' | 'updatedAt' | 'externalId' | 'dimensionId' | 'dimension' | 'personId' | 'person' | 'userCompanyCreatedById' | 'userCompanyCreatedBy' | 'userCompanyUpdatedById' | 'userCompanyUpdatedBy' | 'companyId' | 'company';
 
 declare type DimensionToPersonPropertyTypeRecord = Record<DimensionToPersonPropertyNames, IPropertyTypeDefinition>;
 
@@ -381,7 +381,7 @@ declare type ItemFactPropertyNames = 'id' | 'measure' | 'value' | 'voltage' | 't
 
 declare type ItemFactPropertyTypeRecord = Record<ItemFactPropertyNames, IPropertyTypeDefinition>;
 
-declare type ItemPropertyNames = 'id' | 'code' | 'reference' | 'purchaseDate' | 'position' | 'rotation' | 'textAnchor' | 'price' | 'itemAffectationsCount' | 'createdAt' | 'updatedAt' | 'externalId' | 'itemTypeId' | 'itemType' | 'roomId' | 'room' | 'workplaceId' | 'workplace' | 'userCompanyCreatedById' | 'userCompanyCreatedBy' | 'userCompanyUpdatedById' | 'userCompanyUpdatedBy' | 'itemToPeople' | 'personCompanyToItems' | 'itemFacts' | 'companyId' | 'company';
+declare type ItemPropertyNames = 'id' | 'code' | 'comment' | 'reference' | 'purchaseDate' | 'position' | 'rotation' | 'textAnchor' | 'price' | 'itemAffectationsCount' | 'createdAt' | 'updatedAt' | 'externalId' | 'itemTypeId' | 'itemType' | 'roomId' | 'room' | 'workplaceId' | 'workplace' | 'userCompanyCreatedById' | 'userCompanyCreatedBy' | 'userCompanyUpdatedById' | 'userCompanyUpdatedBy' | 'itemToPeople' | 'personCompanyToItems' | 'itemFacts' | 'companyId' | 'company';
 
 declare type ItemPropertyTypeRecord = Record<ItemPropertyNames, IPropertyTypeDefinition>;
 
@@ -576,7 +576,7 @@ declare type PersonCompanyToRoomTypePropertyNames = 'id' | 'createdAt' | 'update
 
 declare type PersonCompanyToRoomTypePropertyTypeRecord = Record<PersonCompanyToRoomTypePropertyNames, IPropertyTypeDefinition>;
 
-declare type PersonGenderPropertyNames = 'id' | 'name' | 'createdAt' | 'updatedAt' | 'externalId' | 'people';
+declare type PersonGenderPropertyNames = 'id' | 'name' | 'code' | 'createdAt' | 'updatedAt' | 'externalId' | 'people';
 
 declare type PersonGenderPropertyTypeRecord = Record<PersonGenderPropertyNames, IPropertyTypeDefinition>;
 
