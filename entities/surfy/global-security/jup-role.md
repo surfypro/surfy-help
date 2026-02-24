@@ -25,6 +25,13 @@ Un rôle définit les permissions d'accès aux fonctionnalités dans l'interface
 
 ## Propriétés de base {#properties-base}
     
+### Exposer en tant que claim OIDC {#is-claim}
+
+Si activé, ce rôle est exposé comme rôle d'application dans les jetons OIDC (ex. Entra ID) et peut être assigné via les packages d'accès
+
+*Nom technique:* ```isClaim```
+<PH code="jupRole:isClaim"/>
+
 ### Name {#name}
 
 

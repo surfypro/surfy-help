@@ -26,15 +26,15 @@
     "@emotion/styled": "^11.14.1",
     "@mdx-js/loader": "^3.1.1",
     "@mdx-js/react": "^3.1.1",
-    "@mui/icons-material": "^7.3.6",
-    "@mui/material": "^7.3.6",
+    "@mui/icons-material": "^7.3.8",
+    "@mui/material": "^7.3.8",
     "@types/js-cookie": "^3.0.6",
     "@types/react-copy-to-clipboard": "^5.0.7",
     "babel-loader": "^10.0.0",
     "clsx": "^2.1.1",
     "js-cookie": "^3.0.5",
     "pluralize": "^8.0.0",
-    "pnpm": "^10.25.0",
+    "pnpm": "^10.30.2",
     "prism-react-renderer": "^2.4.1",
     "react": "^18.3.1",
     "react-copy-to-clipboard": "^5.1.0",
@@ -46,7 +46,7 @@
     "@docusaurus/tsconfig": "^3.9.2",
     "@docusaurus/types": "^3.9.2",
     "@types/pluralize": "^0.0.33",
-    "@types/react": "^18.3.27",
+    "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "cross-env": "^10.1.0",
     "typescript": "~5.9.3"
@@ -66,11 +66,16 @@
   "engines": {
     "node": ">=22.0"
   },
-  "packageManager": "pnpm@10.28.2",
+  "packageManager": "pnpm@10.30.2",
   "pnpm": {
     "onlyBuiltDependencies": [
       "core-js",
       "core-js-pure"
-    ]
+    ],
+    "overrides": {
+      "minimatch": ">=10.2.1",
+      "react": "^18.3.1",
+      "react-dom": "^18.3.1"
+    }
   }
 }

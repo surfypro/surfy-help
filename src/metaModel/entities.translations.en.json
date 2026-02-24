@@ -7966,6 +7966,10 @@
                     "label": "Name",
                     "description": null
                 },
+                "isClaim": {
+                    "label": "Expose as an OIDC claim",
+                    "description": "If enabled, this role is exposed as an application role in OIDC tokens (e.g., Entra ID) and can be assigned via access packages."
+                },
                 "createdAt": {
                     "label": "Creation date",
                     "description": "Date of creation in Surfy, allows you to know the history of creation in Surfy"
