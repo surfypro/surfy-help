@@ -45,6 +45,10 @@ Si votre entreprise utilise l'authentification automatique et si vous réunissez
 
    Une demande d'accès est envoyée à l'administrateur Surfy pour validation.
 
+   :::tip 
+   S'il n'apparait pas, vous pouvez accéder directement au formulaire en cliquant sur le lien : [formulaire](https://webforms.pipedrive.com/f/c6B3DcL0iB2LwLtpUgQprxMGiOOg6O1Sb3raOBiArbmmHVJT8fFH7fia1gQNzhoLmP)
+   :::
+
 10) Une fois votre accès validé et votre rôle attribué en relation avec votre entreprise, une confirmation par mail vous est envoyée.
 
 ## Connexion via un compte Surfy
