@@ -2136,7 +2136,7 @@
                 },
                 "displayItemReferenceInMap": {
                     "label": "Afficher les informations sur le plan",
-                    "description": "Permet d'afficher le champ « Référence » de chaque objet sur le plan"
+                    "description": "Permet d'afficher les informations de chaque objet sur le plan en fonction des options sélectionnées"
                 },
                 "code": {
                     "label": "Code",
@@ -6166,6 +6166,10 @@
                     "label": "Code d'immobilisation",
                     "description": "Le numéro d'immobilisation est utilisé pour conserver le numéro comptable"
                 },
+                "comment": {
+                    "label": "Commentaire",
+                    "description": "Remarque ou note libre sur l'objet"
+                },
                 "reference": {
                     "label": "Référence de l'objet",
                     "description": "La référence de l'objet est utilisé pour le retrouver et pour differencier cet objet des autres"
@@ -7961,6 +7965,10 @@
                 "name": {
                     "label": "Name",
                     "description": null
+                },
+                "isClaim": {
+                    "label": "Exposer en tant que claim OIDC",
+                    "description": "Si activé, ce rôle est exposé comme rôle d'application dans les jetons OIDC (ex. Entra ID) et peut être assigné via les packages d'accès"
                 },
                 "createdAt": {
                     "label": "Date de création",

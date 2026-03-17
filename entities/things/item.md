@@ -39,6 +39,13 @@ Le numéro d'immobilisation est utilisé pour conserver le numéro comptable
 *Nom technique:* ```code```
 <PH code="item:code"/>
 
+### Commentaire {#comment}
+
+Remarque ou note libre sur l'objet
+
+*Nom technique:* ```comment```
+<PH code="item:comment"/>
+
 ### Date d'achat {#purchase-date}
 
 La date d'achat de l'objet

@@ -32,6 +32,13 @@ An object represents a physical or material element present in workspaces
 
 ## Basic properties {#properties-base}
     
+### Comment {#comment}
+
+Free remark or note about the object
+
+*Technical name:* ```comment```
+<PH code="item:comment"/>
+
 ### Date of purchase {#purchase-date}
 
 The date of purchase of the object

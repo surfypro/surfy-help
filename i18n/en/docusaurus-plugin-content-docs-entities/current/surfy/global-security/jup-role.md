@@ -25,6 +25,13 @@ A role defines access permissions to features in the user interface
 
 ## Basic properties {#properties-base}
     
+### Expose as an OIDC claim {#is-claim}
+
+If enabled, this role is exposed as an application role in OIDC tokens (e.g., Entra ID) and can be assigned via access packages.
+
+*Technical name:* ```isClaim```
+<PH code="jupRole:isClaim"/>
+
 ### Name {#name}
 
 

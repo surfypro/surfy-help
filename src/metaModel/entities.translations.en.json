@@ -2136,7 +2136,7 @@
                 },
                 "displayItemReferenceInMap": {
                     "label": "Show plan information",
-                    "description": "Allows you to display the “Reference” field of each object on the plan"
+                    "description": "Allows you to display information for each object on the plan based on the selected options."
                 },
                 "code": {
                     "label": "Code",
@@ -6166,6 +6166,10 @@
                     "label": "Immobilizer code",
                     "description": "The asset number is used to keep the accounting number"
                 },
+                "comment": {
+                    "label": "Comment",
+                    "description": "Free remark or note about the object"
+                },
                 "reference": {
                     "label": "Object reference",
                     "description": "The object reference is used to find it and to differentiate this object from others"
@@ -7961,6 +7965,10 @@
                 "name": {
                     "label": "Name",
                     "description": null
+                },
+                "isClaim": {
+                    "label": "Expose as an OIDC claim",
+                    "description": "If enabled, this role is exposed as an application role in OIDC tokens (e.g., Entra ID) and can be assigned via access packages."
                 },
                 "createdAt": {
                     "label": "Creation date",
