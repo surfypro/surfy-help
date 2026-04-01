@@ -1,6 +1,6 @@
 # Nouveautés
 
-## 1 Avril 2026 - v3.4.176
+## 1 Avril 2026 - v3.4.179
 
 - Mise en place d’un nouveau rapport <LIV code="company:booking-reporting" /> permettant de suivre le taux d’occupation des postes de travail réservables par bâtiment et par quartier sur une période donnée, avec un tableau récapitulatif et un tableau de détails listant les jours de saturation. Les colonnes des deux tableaux sont triables en cliquant sur leur en-tête.
 - Création d’un rapport de qualité des données sur les types d’objets, permettant de vérifier l’unicité du nom de chaque type d’objet.
