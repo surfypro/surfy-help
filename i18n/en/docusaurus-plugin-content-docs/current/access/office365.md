@@ -35,6 +35,10 @@ If your company does not use automatic authentication, you get the following pag
 
    An access request is sent to the Surfy administrator for validation.
 
+   :::tip
+   If it doesn’t appear, you can access the form directly by clicking this link: [form](https://webforms.pipedrive.com/f/c6B3DcL0iB2LwLtpUgQprxMGiOOg6O1Sb3raOBiArbmmHVJT8fFH7fia1gQNzhoLmP)
+   :::
+
 6. Once your access is validated and your role assigned in relation to your company, a confirmation email is sent to you.
 
 ## Connection via your Office365 Account

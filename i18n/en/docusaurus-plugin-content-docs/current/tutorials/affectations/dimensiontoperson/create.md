@@ -3,16 +3,17 @@ sidebar_position: 1
 ---
 # Create a District Assignment
 
-To assign people to districts, you must first create assignment layers then define districts by qualifying spaces. See the [Assignment Layers](/en/docs/tutorials/dimensiontypetobuilding/create) section to learn everything about creating, modifying or deleting an assignment layer.
+To assign a person to a district, you must first create assignment layers, then define districts by qualifying spaces. See the [Assignment Layers](/en/docs/tutorials/dimensiontypetobuilding/create) section to learn everything about creating, modifying, or deleting an assignment layer.
 
-Once districts are created on the plans,
+## Assign a person to a district from the plan
 
--   click on the vertical "Grid" icon to "Color spaces on the plan according to assignment layers" and view information totals by assignment layer.
--   "select the layer type for navigation" to activate selection by entire districts, by clicking on the icon at the end of the layer name line
--   district information, its assignments and inventory are accessible in the same way as for a classic space, by clicking in the district to display this information on the left side of the screen.
+-   click on the vertical icon **"Change the view of the plan"** icon
+-   select the **"Neighbourhoods"** view
+
+Surfy is now in district assignment mode: assignment layers are displayed on the plan and the layer type is selected for district navigation.
 
 :::tip Plan View
-Clicking on the vertical "Change plan view" icon and selecting "Districts" allows you to configure Surfy in district assignment mode in 2 clicks: Assignment layers are displayed on the plan and the layer type is selected for navigation. As long as the view is not changed, it remains effective even after refresh (F5). You must therefore remember to return to the default view "Space Typologies" for standard use. See [district view](/en/docs/courses/views/planviews#district-view).
+Clicking on the vertical icon "Change the view of the plan" icon and selecting "Neighbourhoods" allows you to configure Surfy in district assignment mode in 2 clicks: Assignment layers are displayed on the plan and the layer type is selected for navigation. As long as the view is not changed, it remains effective even after refresh (F5). You must therefore remember to return to the default view "Space Typologies" for standard use. See [Neighbourhoods view](/en/docs/courses/views/planviews#district-view).
 :::
 
 To assign a person to a district, 
@@ -23,6 +24,28 @@ To assign a person to a district,
 
 The person is assigned to the district.
 
+## Assign a person to a district from the person record
+
+You can update a person’s assignments by editing the person record, without changing the plan view.
+
+Use the search icon under the company logo to search for a person in the Surfy database.
+
+Clicking the name opens the person record, including assignment information.
+
+To edit this information:
+
+- click the context menu (grey box under the search icon) to **"edit person XXX"**
+- at the bottom of the page, click the **"Assignment layer assignments"** section
+
+The person’s district assignments are available for creation, editing, or deletion.
+
+To create a new assignment:
+
+- click **"Create an assignment to an assignment layer"**
+- choose the analysis layer for the assignment
+- choose the assignment priority (see [Manage Booking District Priorities](/en/docs/tutorials/booking/workstationbooking/intro#manage-booking-district-priorities))
+- choose whether or not to include the assignment in occupancy data
+
 If the person is not yet created in the Surfy database, you can "Create and associate" this person with the assignment layer:
 
 -   click on "Create and associate"
@@ -32,6 +55,8 @@ If the person is not yet created in the Surfy database, you can "Create and asso
 The person is created and assigned to the corresponding district.
 
 ## View District Assignments
+
+To view district assignments, you must be in **"Districts"** view.
 
 To view district assignments in Surfy:
 -   click on the district to select it
