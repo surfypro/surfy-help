@@ -25,6 +25,13 @@ A structure defines a geometric shape that can be used to calibrate and position
 
 ## Basic properties {#properties-base}
     
+### Anchor Lat Lng {#anchor-lat-lng}
+
+
+
+*Technical name:* ```anchorLatLng```
+<PH code="structure:anchorLatLng"/>
+
 ### Transformation {#transform}
 
 Transformation of the structure to calibrate it on a map

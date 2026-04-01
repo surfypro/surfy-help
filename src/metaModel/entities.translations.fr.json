@@ -2660,6 +2660,10 @@
                     "label": "Transformation",
                     "description": "Transformation de la structure pour la calibrer sur une carte"
                 },
+                "anchorLatLng": {
+                    "label": "Anchor Lat Lng",
+                    "description": null
+                },
                 "createdAt": {
                     "label": "Date de création",
                     "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
@@ -8943,6 +8947,10 @@
                 "automaticUserToRoleMapping": {
                     "label": "Associer automatiquement les rôles",
                     "description": "Associer automatiquement les rôles et les rôles de contenu aux utilisateurs qui respectent cette règle"
+                },
+                "useOpenIdTokenRoleMapping": {
+                    "label": "Utiliser le mappage des rôles via le token OpenID et les Claims",
+                    "description": "Associer automatiquement les rôles à partir des rôles inclus dans le token OpenID"
                 },
                 "createdAt": {
                     "label": "Date de création",

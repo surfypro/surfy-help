@@ -25,6 +25,13 @@ Une structure définit une forme géométrique qui peut être utilisée pour cal
 
 ## Propriétés de base {#properties-base}
     
+### Anchor Lat Lng {#anchor-lat-lng}
+
+
+
+*Nom technique:* ```anchorLatLng```
+<PH code="structure:anchorLatLng"/>
+
 ### Transformation {#transform}
 
 Transformation de la structure pour la calibrer sur une carte

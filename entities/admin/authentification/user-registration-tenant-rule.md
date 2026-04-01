@@ -36,6 +36,13 @@ Séparer les domaines avec des espaces et inclure l'arobase
 *Nom technique:* ```name```
 <PH code="userRegistrationTenantRule:name"/>
 
+### Utiliser le mappage des rôles via le token OpenID et les Claims {#use-open-id-token-role-mapping}
+
+Associer automatiquement les rôles à partir des rôles inclus dans le token OpenID
+
+*Nom technique:* ```useOpenIdTokenRoleMapping```
+<PH code="userRegistrationTenantRule:useOpenIdTokenRoleMapping"/>
+
     
 
 ## Entités associées (unique) {#properties-belongs-to}

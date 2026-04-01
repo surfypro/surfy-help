@@ -36,6 +36,13 @@ Automatically associate roles and content roles with users who meet this rule
 *Technical name:* ```name```
 <PH code="userRegistrationTenantRule:name"/>
 
+### Use role mapping via the OpenID token and Claims {#use-open-id-token-role-mapping}
+
+Automatically associate roles based on the roles included in the OpenID token
+
+*Technical name:* ```useOpenIdTokenRoleMapping```
+<PH code="userRegistrationTenantRule:useOpenIdTokenRoleMapping"/>
+
     
 
 ## Associated entities (unique) {#properties-belongs-to}

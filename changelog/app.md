@@ -1,15 +1,18 @@
 # Nouveautés
 
+## 1 Avril 2026 - v3.4.176
 
-<!-- 
+- Mise en place d’un nouveau rapport <LIV code="company:booking-reporting" /> permettant de suivre le taux d’occupation des postes de travail réservables par bâtiment et par quartier sur une période donnée, avec un tableau récapitulatif et un tableau de détails listant les jours de saturation. Les colonnes des deux tableaux sont triables en cliquant sur leur en-tête.
+- Création d’un rapport de qualité des données sur les types d’objets, permettant de vérifier l’unicité du nom de chaque type d’objet.
+- Les images sont exportables en SVG depuis l’option d’export des images du plan.
+- Le rapport <LIV code="person:dq-no-affectations" /> affiche désormais les codes et noms des centres de coût des personnes sans affectation.
+- Amélioration et optimisation du calibrage des plans en 3D.
+- Les centres de coûts affichent désormais le code entre parenthèses à côté du nom dans les légendes du plan.
+- Mise en place d'une propriété <P code="userRegistrationTenantRule:useOpenIdTokenRoleMapping"/> permettant de configurer si les rôles OpenID doivent être utilisés pour les utilisateurs créés automatiquement depuis l'annuaire Microsoft Azure Entra ID.
 
-## 22 Février 2026 - v3.4.169
 
-- Ajout d'une option d'affichage sur les personnes affectées aux postes de travail permettant de voir la photo des personnes affectées sur le plan.
-- Création d'un rapport de qualité des données sur les type d'objets qui permet de vérifier l'unicité du nom des types d'objets.
-- Les images sont exportable en svg
+<!-- - Ajout d'une option d'affichage sur les personnes affectées aux postes de travail permettant de voir la photo des personnes affectées sur le plan. -->
 
--->
 
 ## 22 Février 2026 - v3.4.168
 
