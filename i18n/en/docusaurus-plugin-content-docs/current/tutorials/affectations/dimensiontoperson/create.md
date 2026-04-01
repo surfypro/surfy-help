@@ -7,13 +7,13 @@ To assign a person to a district, you must first create assignment layers, then 
 
 ## Assign a person to a district from the plan
 
--   click on the vertical icon **"Change the view of the plan"** icon
+-   click on the vertical **"Change the view of the plan"** icon
 -   select the **"Neighbourhoods"** view
 
 Surfy is now in district assignment mode: assignment layers are displayed on the plan and the layer type is selected for district navigation.
 
 :::tip Plan View
-Clicking on the vertical icon "Change the view of the plan" icon and selecting "Neighbourhoods" allows you to configure Surfy in district assignment mode in 2 clicks: Assignment layers are displayed on the plan and the layer type is selected for navigation. As long as the view is not changed, it remains effective even after refresh (F5). You must therefore remember to return to the default view "Space Typologies" for standard use. See [Neighbourhoods view](/en/docs/courses/views/planviews#district-view).
+Clicking on the vertical "Change the view of the plan" icon and selecting "Neighbourhoods" allows you to configure Surfy in district assignment mode in 2 clicks: Assignment layers are displayed on the plan and the layer type is selected for navigation. As long as the view is not changed, it remains effective even after refresh (F5). You must therefore remember to return to the default view "Space Typologies" for standard use. See [Neighbourhoods view](/en/docs/courses/views/planviews#district-view).
 :::
 
 To assign a person to a district, 
@@ -35,7 +35,7 @@ Clicking the name opens the person record, including assignment information.
 To edit this information:
 
 - click the context menu (grey box under the search icon) to **"edit person XXX"**
-- at the bottom of the page, click the **"Assignment layer assignments"** section
+- at the bottom of the page, click the **"Assignment to assignment layers"** section
 
 The person’s district assignments are available for creation, editing, or deletion.
 
@@ -56,7 +56,7 @@ The person is created and assigned to the corresponding district.
 
 ## View District Assignments
 
-To view district assignments, you must be in **"Districts"** view.
+To view district assignments, you must be in **"Neighbourhoods"** view.
 
 To view district assignments in Surfy:
 -   click on the district to select it

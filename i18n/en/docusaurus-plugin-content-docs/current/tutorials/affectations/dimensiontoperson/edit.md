@@ -3,10 +3,57 @@ sidebar_position: 2
 ---
 # Modify a District Assignment
 
-## Modifying a Person's District Assignment
-
 The simplest way to modify a person's district assignment in Surfy is to delete their assignment to the district then create a new assignment, whether to a district or not.
 To move a person from one district to another, see the chapters [Delete a District Assignment](/en/docs/tutorials/affectations/dimensiontoperson/delete) and [Create a District Assignment](/en/docs/tutorials/affectations/dimensiontoperson/create).
+
+## Modify a person’s district assignment from the plan
+
+To modify a person’s district assignment from the plan, you must be in the **"Neighbourhoods"** view, which groups spaces from the same district as single entities.
+
+### Switch to Districts view
+
+To switch to Districts view:
+
+-   click on the vertical **"Change plan view"** icon
+-   select the **"Neighbourhoods"** view
+
+Surfy is now in district assignment mode: assignment layers are displayed on the plan and the layer type is selected for district navigation.
+
+District information, assignments, and inventory are accessible like for a regular space: click the district, then use the **"Assignments"** and **"Inventory"** tabs above the district card.
+
+### Modify a district assignment
+
+-   click in the district to select it on the plan
+-   click the **"Assignments"** tab to list district assignments
+-   click the **"Trash"** icon next to the person to remove that person’s assignment
+
+The person is removed from the district.
+To assign the person to another district, see [Create a District Assignment](/en/docs/tutorials/affectations/dimensiontoperson/create).
+
+## Modify district assignments from the person record
+
+You can modify a person’s assignments by editing the person record without changing the plan view.
+
+Use the search icon under the company logo to find a person in the Surfy database.
+
+Clicking the name opens the person record with assignment information.
+
+To modify this information:
+
+-   click the context menu (grey box under the search icon) to **"edit person XXX"**
+-   at the bottom of the page, click the **"Assignment layer assignments"** section
+
+The person’s district assignments are available for creation, update, and deletion.
+
+To create a new assignment:
+
+-   click **"Create an assignment to an assignment layer"**
+-   choose the analysis layer for the assignment
+-   choose the assignment priority (see [Manage Booking District Priorities](/en/docs/tutorials/booking/workstationbooking/intro#manage-booking-district-priorities))
+-   choose whether or not to include the assignment in occupancy data
+-   validate each new assignment, which is added to the list
+
+To delete an assignment, check the box at the start of the line, click the **"Trash"** icon to **"delete selected assignment layer assignments"**, then confirm.
 
 
 ## Bulk District Assignment Modification by Excel File

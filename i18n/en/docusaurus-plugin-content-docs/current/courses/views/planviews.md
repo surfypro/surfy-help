@@ -86,9 +86,9 @@ This view is intended to quickly access information and allows returning just as
 It is intended for [Security Managers](https://www.surfy.pro/en-gb/ug/sante-et-securite) wanting to [manage Security team members](/en/docs/tutorials/person/personSecurityProfile/list#visualize-security-profiles-on-plans) with complete peace of mind.
 
 
-## "Districts" View
+## "Neighbourhoods" View {#district-view}
 
-The "Districts" view colors spaces by assignment layers, groups spaces into districts following these layers and allows directly assigning people to these districts.
+The "Neighbourhoods" view colors spaces by assignment layers, groups spaces into neighbourhoods following these layers and allows directly assigning people to these neighbourhoods.
 
 This is the ideal view for the [assignment manager](https://www.surfy.pro/en-gb/ff/affecter-les-collaborateurs), allowing them to [manage district assignment](/en/docs/tutorials/affectations/dimensiontoperson/create) but also [fixed workstation assignments](/en/docs/tutorials/affectations/workplaceaffectation/create).
 You can indeed mix in the same space workstations declared as Flex (bookable or not) and fixed assignment workstations.

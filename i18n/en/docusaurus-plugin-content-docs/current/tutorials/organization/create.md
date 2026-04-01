@@ -136,7 +136,7 @@ You can then "Modify" each space to attach its Service (see [Attach a Service to
 To return to district navigation,
 
 -   click on the "Change plan view" icon
--   select the "Districts" view
+-   select the "Neighbourhoods" view
 
 District navigation is selected and district spaces are attached to the chosen Service.
 
