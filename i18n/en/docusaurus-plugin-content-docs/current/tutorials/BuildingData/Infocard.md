@@ -28,15 +28,15 @@ The building information card is composed of the following information:
 -   Foisonnement rate
 -   Number of free workstations
 -   Number of flex workstations
--   Taux de postes de travail en flex
--   Nombre de postes de travail partagés
--   Taux de postes de travail partagés
--   Nombre de postes de travail de passage
--   Nombre de places assises
--   Taux de places assises par affectations
--   Empreinte carbone
+-   Flex workstation rate
+-   Number of shared workstations
+-   Shared workstation rate
+-   Number of temporary workstations
+-   Number of seats
+-   Seat-to-assignment ratio
+-   Carbon footprint
 
-En passant la souris sur chaque ligne, on obtient le descriptif de l'information dans l'info bulle.<br />
+Hovering over each line displays the description of the information in a tooltip.<br />
 This information is calculated automatically by Surfy. It may be necessary to recalculate the data to get up-to-date information in case of plan modifications. To do this, click on the "reload data" icon at the top right of the screen then refresh (F5).<br />
 Non-effective information is not present in the building card (example: no workstation = no corresponding line)
 
