@@ -125,7 +125,7 @@
   },
   "sidebar.s1.category.L'Echelle": {
     "message": "Scale",
-    "description": "The label for category L'Echelle in sidebar s1"
+    "description": "The label for category Scale in sidebar s1"
   },
   "sidebar.s1.category.L'Echelle.link.generated-index.description": {
     "message": "Everything about plan scales",
@@ -841,7 +841,7 @@
   },
   "sidebar.help-sidebar.category.Les Types d'objet Icône": {
     "message": "Icon Object Types",
-    "description": "The label for category Les Types d'objet Icône in sidebar help-sidebar"
+    "description": "The label for category Icon Object Types in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Workstation Types": {
     "message": "Workstation Types",
