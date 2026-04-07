@@ -6,7 +6,7 @@ title: "Book a Meeting Room"
 
 # Book a Meeting Room
 
-<Youtube code="nW7ys4OsQDA"/>
+<Youtube code="aXloFCDlMsg"/>
 
 ## View Meeting Rooms
 
@@ -34,7 +34,7 @@ A bidirectional interaction between Surfy and Outlook allows booking, modifying,
 In addition to the features offered by Outlook, Surfy lets you find the appropriate room (building, floor, room type, capacity, equipment), geolocate it in the building, view its availability, and book the room via the Outlook interface without changing context.
 
 To be bookable, a room must first be declared as "Bookable".<br />
-To configure room management, see the chapter on [Meeting Rooms Administrator](/en/docs/tutorials/booking/meetingroom/admin).
+To configure room management, see the chapter on [Meeting Rooms Administrator](/en/docs/tutorials/booking/meetingroombooking/admin).
 
 From the meeting room view page, bookable spaces can be booked by clicking on the "Calendar" icon under the chosen room to "Book via the calendar".
 
