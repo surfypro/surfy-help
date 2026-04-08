@@ -42,7 +42,7 @@ La disponibilité d'une salle peut être consultée en cliquant sur l'icône "ho
 Outlook affiche l’ensemble des réservations existantes pour la salle concernée.
 
 
-## Réserver une salle de réunion via Outlook.
+## Réserver une salle de réunion via Outlook
 
 La réservation via Outlook est instantanément synchronisée avec Surfy.
 Toute action dans Outlook est constatée dans Surfy et vice versa.

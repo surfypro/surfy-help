@@ -7,13 +7,14 @@ sidebar_position: 4
 Surfy offre la possibilité de réserver des postes de travail pour des personnes tiers (invités, directeurs, controleurs, ...)
 
 Cette fonctionnalité nécessite l'ajoût du rôle "Réservation pour un tiers" à l'utilisateur qui pourra réserver pour d'autres personnes. <br />
-Voir le chapitre [Attribuer un rôle d'utilisateur](/docs/access/intro#attribuer-un-rôle-dutilisateur)
-
-<Youtube code="OLtmOg3zSdE"/>
+Voir le chapitre [Attribuer un rôle d'utilisateur](/docs/access/intro#attribuer-un-rôle-dutilisateur) <br />
 
 Une fois le rôle attribué, l'utilisateur peut accéder à la fonctionnalité.
 
-Depuis le menu de gauche,
+<Youtube code="OLtmOg3zSdE"/>
+
+ <br />
+Pour réserver pour un tiers, depuis le menu de gauche,
 
 -   cliquer sur "planning", "emplacement de travail des personnes", puis "gérer le planning et effectuer des réservations pour une autre personne".
 -   rechercher la personne pour laquelle on doit faire une réservation. 
