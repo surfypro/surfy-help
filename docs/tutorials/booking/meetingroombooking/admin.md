@@ -1,12 +1,12 @@
 ---
-sidebar_position: 4
+sidebar_position: 1
 ---
 
-# L'administrateur des salles de réunion
+# Guide de démarrage
 
-Deux pré-requis sont nécessaires pour pouvoir utiliser la consultation/réservation des salles de réunion :
-Configuration du groupe de typologies d'espaces, <br />
-Attribution de l'adresse email des espaces réservables. <br />
+Deux pré-requis sont nécessaires pour pouvoir utiliser la consultation/réservation des salles de réunion : <br />
+-   La configuration du groupe de typologies d'espaces, pour la visualisation et la géolocalisation des espaces de réunion, <br />
+-   L'attribution de l'adresse email des espaces réservables pour la réservation des espaces de réunion.<br />
 
 ## Groupe de typologies d'espace
 

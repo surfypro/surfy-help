@@ -50,3 +50,26 @@ Pour visualiser les graphiques de réservation, depuis le menu de gauche,
 Les graphiques apparaissent sous la fenêtre de choix de la période.
 Glisser la souris sur les graphiques  permet de connaitre le détail du nombre de réservation ou de personnes par date ou quartier.
 
+## La gestion d'occupation des quartiers
+
+Afin d'optimiser l'occupation des quartiers de réservation, Surfy propose un tableau récapitulatif mensuel des taux de saturation moyens par quartier ainsi que le détail des jours saturés.
+
+L'utilisateur doit posséder le rôle "Administrateur" pour accéder à cette fonctionnalité.
+
+Pour visualiser la saturation mensuelle des quartiers par bâtiment et identifier les jours de dépassement de seuil, depuis le menu de gauche,
+
+-   cliquer sur "Administration" puis "Entreprises" pui "visualiser la saturation mensuelle des quartiers par bâtiment et identifier les jours de dépassement de seuil"
+-   choisir le mois et les bâtiments concernés
+
+Le tableau récapitulatif décrit :
+    -   la période
+    -   le bâtiment
+    -   le quartier concerné
+    -   le nombre de postes réservables dans le quartier
+    -   le taux de saturation moyen du quartier sur la période
+    -   le nombre de jours ayant activé la réservation dans le quartier sur la période
+    -   le nombre de jour où le quartier a été saturé sur la période
+    -   le pourcentage de jours saturés
+    -   le seuil de saturation de chaque quartier
+
+Les informations peuvent être exportées en fichier Excel en cliquant sur "EXPORTER EXCEL (2 ONGLETS)" en haut à droite de l'écran.
