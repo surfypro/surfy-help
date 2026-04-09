@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Guide de démarrage
 
-Ce guide détaille le processus de consultation et de réservation d'un poste de travail dans Surfy.
+Ce guide détaille le processus de mise en oeuvre de la réservation des postes de travail avec Surfy.
 
 ## Prérequis pour l'utilisation de la réservation avec Surfy
 
@@ -18,39 +18,56 @@ Si les plans de l'entreprise sont déjà digitalisés dans Surfy, les fonctionna
 
 
 
-## Fonctionnalités de réservation disponibles
+## Fonctionnalités de réservation de poste de travail
 
-Les fonctionnalités de réservation sont disponibles uniquement en Français.<br />
-Chaque collaborateur autorisé peut utiliser les fonctionnalités de réservation de Surfy pour :
+Chaque collaborateur autorisé peut utiliser les fonctionnalités de réservation de poste de travail pour :
 
 -   réserver un poste de travail
--   indiquer que vous êtes en télétravail
--   voir quels collègues ont réservé un poste de travail dans votre quartier
--   rechercher un collègue et obtenir ses réservations sur la période de réservation à venir
+-   indiquer qu'il est en télétravail
+-   voir quels collègues ont réservé un poste de travail dans son quartier
+-   rechercher un collègue et connaitre ses réservations sur la période de réservation à venir
 -   visualiser toutes les réservations sur un étage un jour donné
+
 
 ## Configuration des paramètres de la réservation
 
-Les paramètres de configuration de la réservation sont accessibles par l'administrateur Surfy.<br />
+Les paramètres de configuration de la réservation sont accessibles par les personnes disposant d'un rôle 
+Administrateur dans Surfy.
 
-### Configuration de la fenêtre de réservation
-
-Pour configurer la fenêtre de réservation, depuis le menu de gauche,
+Pour accéder aux paramètres de configuration de la réservation, depuis le menu de gauche,
 
 -   cliquer sur "Administration" puis "Entreprises" puis "Vue des entreprises en tuiles"
 -   cliquer sur l'icône "crayon" en bas de la fiche de l'entreprise pour "modifier l'entreprise XXX"
--   définir le "nombre de jours du planning" permet d'établir le nombre de jours de la fenêtre glissante de réservation
 
-:::tip A CE STADE
-Cocher la case "Activer la surcharge des dimensions pour la réservation" permet d'activer la gestion de priorités sur les quartiers de réservation.
+Les paramètres suivants sont disponibles :
+
+### Nombre de jours de planification
+
+Le "nombre de jours du planification" correspond au nombre de jours ouvrés disponibles aux utilisateurs dans la fenêtre de réservation.
+
+### Activer la surcharge des dimensions pour la réservation
+
+Cocher la case "Activer la surcharge des dimensions pour la réservation" permet d'activer la gestion des priorités sur les quartiers de réservation.<br />
 Si le quartier de réservation d'un collaborateur est saturé, Surfy peut proposer au collaborateur de réserver sur un autre quartier dont la priorité est inférieure.<br />
-Cocher la case "Activer la réservation par bâtiment quand toutes les dimensions sont surchargées" permet d'activer la réservation sur l'ensemble du bâtiment si les quartiers de réservation d'un collaborateur sont tous saturés. Dans ce cas, seuls les quartiers cochés "Postes réservables uniquement via la dimension" ne seront pas accessibles à la réservation. Voir le chapitre [Fonctionnalité de réservation par bâtiment quand toutes les dimensions sont surchargées](/entities/user-guide/booking/enable-building-booking-when-all-dimensions-are-crowded).
-:::
 
--   sauvegarder la modification
--   cliquer sur le logo de l'entreprise en haut à gauche de l'écran, et rafraichir (F5).
+### Activer la réservation par bâtiment quand toutes les dimensions sont surchargées
 
-### Gérer les priorités des quartiers de réservation
+Cocher la case "Activer la réservation par bâtiment quand toutes les dimensions sont surchargées" permet d'activer la réservation sur l'ensemble du bâtiment si les quartiers de réservation d'un collaborateur sont tous saturés.
+
+Les quartiers cochés "Postes réservables uniquement via la dimension" ne seront pas accessibles à la réservation. Voir le chapitre [Fonctionnalité de réservation par bâtiment quand toutes les dimensions sont surchargées](/entities/user-guide/booking/enable-building-booking-when-all-dimensions-are-crowded).
+
+### Plage de confirmation de réservation de poste de travail
+
+En définissant une plage horaire, la fonctionnalité de confirmation de présence est validée.<br />
+Le jour de la réservation et dans cette plage horaire, l'utilisateur peut :
+
+-   confirmer sa présence en cliquant sur "Confirmer votre présence", son poste de travail est réservé.
+-   ne pas confirmer sa présence, son poste de travail est libéré à la fin de la plage de confirmation.
+
+Sauvegarder les modifications et rafraichir la page (F5).<br />
+
+
+## Gérer les priorités des quartiers de réservation
 
 Pour activer la gestion des priorités sur les quartiers d'affectation, il est nécessaire de cocher la case "Activer la surcharge des dimensions pour la réservation" dans la fiche de l'entreprise (Voir ci-dessus).
 
@@ -94,11 +111,11 @@ Un quartier saturé peut indiquer une occupation à plus de 100%. En effet, si d
 
 La réservation dans Surfy est accessible aux collaborateurs dans l'application via un navigateur, ou depuis Teams en ajoutant l'application "Surfy".
 
-Pour accéder à Surfy par un navigateur, se rendre sur [app.surfy.pro](https://app.surfy.pro/login) depuis Chrome, Egde, Firefox, Safari,...
-puis le collaborateur utilise son compte pour accéder aux fonctionnalités qui lui sont autorisées.
+Pour accéder à Surfy par un navigateur, rendez-vous sur [app.surfy.pro](https://app.surfy.pro/login) depuis Chrome, Egde, Firefox, Safari,...<br />
+Le collaborateur utilise ensuite son compte pour accéder aux fonctionnalités qui lui sont autorisées.
 
-Pour ajouter l'application Surfy dans Teams, le collaborateur clique sur "Applications" et recherche "Surfy" pour l'ajouter à ses applications Teams.
-Une fois ajoutée dans Teams, l'application permet au collaborateur d'accéder aux fonctionnalités qui lui sont autorisées.
+Pour ajouter l'application Surfy dans Teams, cliquer sur "Applications" et rechercher "Surfy" pour l'ajouter aux applications Teams.
+Une fois ajoutée dans Teams, l'application permet d'accéder aux fonctionnalités autorisées de Surfy.
 
 Les deux accès mènent aux mêmes fonctionnalités.<br />
 L'utilisation de Teams offre une expérience plus directe et plus adaptée à une utilisation des fonctionnalités de réservation sur smartphone.
