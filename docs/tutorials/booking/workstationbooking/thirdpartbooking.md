@@ -13,30 +13,35 @@ Une fois le rôle attribué, l'utilisateur peut accéder à la fonctionnalité.
 
 <Youtube code="OLtmOg3zSdE"/>
 
- <br />
+<br />
+
+<br />
+
 Pour réserver pour un tiers, depuis le menu de gauche,
 
 -   cliquer sur "planning", "emplacement de travail des personnes", puis "gérer le planning et effectuer des réservations pour une autre personne".
 -   rechercher la personne pour laquelle on doit faire une réservation. 
 
-Si la personne est dans la base de données de Surfy,
+## Si la personne est dans la base de données de Surfy
+
 -   cliquer sur son nom pour faire apparaitre ses quartiers de réservation éventuels.
--   réserver pour la personne comme pour vous même
+-   réserver pour la personne comme pour vous même.
 
-Si la personne n'est pas affectée au quartier souhaité,
+### Si la personne n'est pas affectée au quartier souhaité
+
 -   cliquer sur l'un des "bâtiments non assignés" à la personne afin de forcer son assignation à ce bâtiment
--   réserver pour la personne comme pour vous même
+-   réserver pour la personne comme pour vous même.
 
+## Si la personne n'est pas dans la base de données de Surfy
 
-
-
-
-
-Si la personne n'est pas dans la base de données de Surfy :
--   créer la personne avec son Prénom, Nom et adresse Email (Voir [Création de personne](/docs/tutorials/person/create))
+-   créer la personne avec son Prénom, Nom et adresse Email (Voir [Création de personne](/docs/tutorials/person/create)).
+-   rafraîchir la page (F5).
 -   cliquer sur "planning", "emplacement de travail des personnes", puis "gérer le planning et effectuer des réservations pour une autre personne".
 -   rechercher la personne nouvellement créé pour laquelle on doit faire une réservation.
--   cliquer sur l'un des "bâtiments non assignés" à la personne afin de forcer son assignation à ce bâtiment
--   réserver pour la personne comme pour vous même
+-   cliquer sur l'un des "bâtiments non assignés" à la personne afin de forcer son assignation à ce bâtiment.
+-   réserver pour la personne comme pour vous même.
 
-
+:::tip BON A SAVOIR
+L'affectation au quartier ou au bâtiment d'une personne reste acquise pour les réservations futures éventuelles. <br />
+Pour supprimer l'affectation à un quartier ou bâtiment, voir le chapitre [Supprimer une affectation au quartier](/docs/tutorials/affectations/dimensiontoperson/delete) ou au [bâtiment](/docs/tutorials/affectations/persontobuilding/delete)
+:::

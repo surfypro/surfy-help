@@ -57,3 +57,5 @@ Le plan de l'étage s'affiche, avec l'ensemble des réservations effectuées à 
 -   "retrouver un collègue ou consulter son planning" en saisissant le nom du collègue dans le champ imparti.<br />
 Les réservations du collègue sur la période à venir s'affichent.<br />
 En cliquant sur l'intitulé du poste réservé, on accède à sa géolocalisation sur le plan.<br />
+
+-   "Confirmer sa présence" le jour même de la réservation afin d'éviter les No Shows, dans le cas où cette option est configurée.
