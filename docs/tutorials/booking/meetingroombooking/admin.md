@@ -4,11 +4,16 @@ sidebar_position: 1
 
 # Guide de démarrage
 
-Deux pré-requis sont nécessaires pour pouvoir utiliser la consultation/réservation des salles de réunion : <br />
--   La configuration du groupe de typologies d'espaces, pour la visualisation et la géolocalisation des espaces de réunion, <br />
--   L'attribution de l'adresse email des espaces réservables pour la réservation des espaces de réunion.<br />
+Deux pré-requis sont nécessaires pour pouvoir utiliser la consultation/réservation des espaces de réunion :
 
-## Groupe de typologies d'espace
+-   La configuration du "groupe de typologies d'espace" des espaces proposés à la consultation/réservation,
+-   L'attribution de l'adresse email des espaces réservables pour la réservation des espaces de réunion.
+
+## Configuration des espaces consultables
+
+
+
+### Groupe de typologies d'espace
 
 Les typologies d'espaces correspondants aux espaces consultables doivent être regroupées dans le groupe de typologie d'espace "Espaces de réunion". <br />
 Le code MEETING doit être associé au groupe de typologie d'espace "Espaces de réunion".
@@ -21,13 +26,33 @@ Depuis le menu de gauche,
 
 ### Association de typologie d'espace à groupe de typologies d'espace
 
-Pour associer une typologie d'espace à un groupe de typologies d'espaces,/docs/tutorials/surfaces/room/roomtype#les-groupes-de-typologies-despace
-Les espaces des typologies choisies sont alors consultables en cliquant sur l'icône "Voir et naviguer dans les salles de réunion", sous le logo de l'entreprise.
+Une fois le groupe de typologie des espaces consultables renseigné avec le code MEETING, chaque typologie consultable doit être associée à ce groupe.
+Par exemple : "salles de réunion", "Box de réunion", "phone box" peuvent être les typologies associées au groupe de typologies d'espace "Espaces de réunion".
+
+Pour associer une typologie d'espace à un groupe de typologies, voir le chapitre [associer une typologie d'espace à un groupe de typologies d'espaces](/docs/tutorials/surfaces/room/roomtype#les-groupes-de-typologies-despace).
+
+Les espaces inclus dans le groupe de typologies d'espace "Espaces de réunion" sont consultables en cliquant sur l'icône "Voir et naviguer dans les salles de réunion", en haut à gauche de l'écran sous le logo de l'entreprise.
+
+### Configuration des équipements des espaces consultables
+
+On peut afficher les équipements de chaque espace de réunion via la famille d'objets contenant les objets à afficher (Audiovisuel, Equipements de service,...)
+
+Pour configurer les équipements consultables, depuis le menu de gauche,
+
+-   cliquer sur "Mobiliers", "Typologies", "Famille de types d'objet" pour "Lister les familles de types d'objet"
+-   cliquer sur l'icône "3 points" en début de ligne de la famille des équipements consultables pour "Voir plus d'option pour la famille de types d'objet XXX", puis "Modifier la famille de types d'objet XXX"
+-   dans la case "Code", renseigner "SERVICES"
+-   sauvegarder les modifications
+-   rafraichir la page (F5)
+
+Les équipements correspondants sont visibles dans chaque espace lors de la consultation des espaces de réunion.
 
 ## Configuration des espaces réservables
 
+Une fois la configuration des espaces consultables correctement effectuée, chacun des espaces consultable peut être déclaré "réservable".
+
 Chaque espace réservable doit être associé à un email de réservation caractérisant l'espace.
-Cet email est habituellement attribué par votre DSI et doit être reporté dans la fiche de l'espace concerné.
+Cet email est habituellement attribué par la DSI et doit être reporté dans la fiche de l'espace concerné.
 
 Depuis le plan où se trouve l'espace,
 
