@@ -1,5 +1,12 @@
 # Nouveautés
 
+## 13 Avril 2026 - v3.4.183
+
+- Nouvelle vue <LIV code="company:dq-reports-overview-duplicate-company" /> sur l'<OT code="company" /> : elle liste les contrôles qualité à valider avant d'exporter ou dupliquer les données d'une entreprise. Les contrôles sont présentés sous forme d'étapes ordonnées — chaque étape doit être réglée avant de passer à la suivante. Une fois tous les contrôles conformes, un bouton permet de télécharger le fichier JSON de l'entreprise, après recalcul automatique des données pour garantir leur fraîcheur.
+- Dans la vue <LIV code="company:dq-reports-overview-duplicate-company" />, chaque rapport de qualité des données affiche le nombre d'enregistrements en anomalie et un lien pour accéder directement au rapport détaillé.
+- Le rapport <LIV code="roomPoint:dq-uniq-position" /> affiche désormais les espaces dans lesquels chaque point est utilisé ainsi qu'un lien permettant d'ouvrir le plan directement sur le point concerné pour faciliter la correction manuelle.
+- Correction d'un problème où les objets placés sur le plan ne s'affichaient pas dans certains cas lors du chargement du plan.
+
 ## 1 Avril 2026 - v3.4.179
 
 - Mise en place d’un nouveau rapport <LIV code="company:booking-reporting" /> permettant de suivre le taux d’occupation des postes de travail réservables par bâtiment et par quartier sur une période donnée, avec un tableau récapitulatif et un tableau de détails listant les jours de saturation. Les colonnes des deux tableaux sont triables en cliquant sur leur en-tête.
