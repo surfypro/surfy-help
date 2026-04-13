@@ -11,6 +11,7 @@
 
 - Mise en place d’un nouveau rapport <LIV code="company:booking-reporting" /> permettant de suivre le taux d’occupation des postes de travail réservables par bâtiment et par quartier sur une période donnée, avec un tableau récapitulatif et un tableau de détails listant les jours de saturation. Les colonnes des deux tableaux sont triables en cliquant sur leur en-tête.
 - Création d’un rapport de qualité des données sur les types d’objets, permettant de vérifier l’unicité du nom de chaque type d’objet.
+- Dans les tableaux de qualité des données, un avertissement s’affiche lorsque toutes les lignes visibles sont sélectionnées et que d’autres enregistrements existent au-delà de la pagination — une action lancée à ce moment s’appliquera également aux objets non visibles.
 - Les images sont exportables en SVG depuis l’option d’export des images du plan.
 - Le rapport <LIV code="person:dq-no-affectations" /> affiche désormais les codes et noms des centres de coût des personnes sans affectation.
 - Amélioration et optimisation du calibrage des plans en 3D.
