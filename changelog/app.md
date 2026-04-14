@@ -1,11 +1,12 @@
 # Nouveautés
+<!-- 
+## 14 Avril 2026 - v3.4.183
 
-## 13 Avril 2026 - v3.4.183
-
+- Dans les options d'affichage des personnes affectées aux postes de travail sur le plan, il est désormais possible d'afficher les propriétés <P code="person:personState" />, <P code="person:email" />, <P code="person:monitorReference" />, <P code="person:computerReference" />, <P code="person:cellphone" />, <P code="person:telephone" />, <P code="person:title" />, <P code="person:badgeNumber" />, <P code="person:boxNumber" />, <P code="person:badgeRestaurant" /> et <P code="person:registrationNumber" />.
 - Nouvelle vue <LIV code="company:dq-reports-overview-duplicate-company" /> sur l'<OT code="company" /> : elle liste les contrôles qualité à valider avant d'exporter ou dupliquer les données d'une entreprise. Les contrôles sont présentés sous forme d'étapes ordonnées — chaque étape doit être réglée avant de passer à la suivante. Une fois tous les contrôles conformes, un bouton permet de télécharger le fichier JSON de l'entreprise, après recalcul automatique des données pour garantir leur fraîcheur.
 - Dans la vue <LIV code="company:dq-reports-overview-duplicate-company" />, chaque rapport de qualité des données affiche le nombre d'enregistrements en anomalie et un lien pour accéder directement au rapport détaillé.
 - Le rapport <LIV code="roomPoint:dq-uniq-position" /> affiche désormais les espaces dans lesquels chaque point est utilisé ainsi qu'un lien permettant d'ouvrir le plan directement sur le point concerné pour faciliter la correction manuelle.
-- Correction d'un problème où les objets placés sur le plan ne s'affichaient pas dans certains cas lors du chargement du plan.
+- Correction d'un problème où les objets placés sur le plan ne s'affichaient pas dans certains cas lors du chargement du plan. -->
 
 ## 1 Avril 2026 - v3.4.179
 
@@ -34,6 +35,7 @@
 - Réorganisation des affectations des personnes dans la page de réservation des postes de travail, l'objectif est d'offrir une vue plus claire et plus intuitive des affectations des personnes sur plusieurs bâtiments et territoires. Les bâtiments sont désormais triés par ordre d'importance d'affectation : par exemple, une affectation à un territoire est prioritaire sur une affectation à un bâtiment simple. 
 - Dans la réservation pour les tiers, il est maintenant possible d’associer directement le tiers aux bâtiments auxquels la personne qui effectue la réservation est affectée.
 - La copie des postes de travail copie également la position de l’ancre du texte du nom du poste de travail copié.
+- Dans les options d'affichage des postes de travail sur le plan, il est désormais possible d'afficher la photo des personnes affectées directement sur le plan.
 
 
 
