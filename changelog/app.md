@@ -1,12 +1,15 @@
 # Nouveautés
-<!-- 
-## 14 Avril 2026 - v3.4.183
+
+## 19 Avril 2026 - v3.4.186
 
 - Dans les options d'affichage des personnes affectées aux postes de travail sur le plan, il est désormais possible d'afficher les propriétés <P code="person:personState" />, <P code="person:email" />, <P code="person:monitorReference" />, <P code="person:computerReference" />, <P code="person:cellphone" />, <P code="person:telephone" />, <P code="person:title" />, <P code="person:badgeNumber" />, <P code="person:boxNumber" />, <P code="person:badgeRestaurant" /> et <P code="person:registrationNumber" />.
-- Nouvelle vue <LIV code="company:dq-reports-overview-duplicate-company" /> sur l'<OT code="company" /> : elle liste les contrôles qualité à valider avant d'exporter ou dupliquer les données d'une entreprise. Les contrôles sont présentés sous forme d'étapes ordonnées — chaque étape doit être réglée avant de passer à la suivante. Une fois tous les contrôles conformes, un bouton permet de télécharger le fichier JSON de l'entreprise, après recalcul automatique des données pour garantir leur fraîcheur.
-- Dans la vue <LIV code="company:dq-reports-overview-duplicate-company" />, chaque rapport de qualité des données affiche le nombre d'enregistrements en anomalie et un lien pour accéder directement au rapport détaillé.
+- <LIV code="company:dq-reports-overview-duplicate-company" />
+  - Nouvelle vue sur l'<OT code="company" /> : elle liste les contrôles qualité à valider avant d'exporter ou de dupliquer les données d'une entreprise, avec des étapes ordonnées aux intitulés visibles et la possibilité de ne passer à l'étape suivante qu'une fois la précédente traitée.
+  - Chaque rapport de qualité des données affiche le nombre d'enregistrements en anomalie et un lien pour accéder directement au rapport détaillé.
+  - Une fois tous les contrôles conformes, un bouton permet de télécharger le fichier JSON de l'entreprise après recalcul automatique des données, avec des messages de progression pendant le recalcul et la génération du fichier.
 - Le rapport <LIV code="roomPoint:dq-uniq-position" /> affiche désormais les espaces dans lesquels chaque point est utilisé ainsi qu'un lien permettant d'ouvrir le plan directement sur le point concerné pour faciliter la correction manuelle.
-- Correction d'un problème où les objets placés sur le plan ne s'affichaient pas dans certains cas lors du chargement du plan. -->
+- Mise en place d'une interface permettant d'importer des personnes et des centres de coût à partir d'un rapport Workday.
+- Correction d'un problème où les objets placés sur le plan ne s'affichaient pas dans certains cas lors du chargement du plan.
 
 ## 1 Avril 2026 - v3.4.179
 
