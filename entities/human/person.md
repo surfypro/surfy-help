@@ -204,6 +204,13 @@ Permet d'indiquer le type de contrat de la personne vis à vis de l'entreprise
 *Nom technique:* ```personState```
 <PH code="person:personState"/>
 
+### Type de personne {#person-type}
+
+Indique si la personne est un collaborateur (employé interne) ou un invité (externe, visiteur)
+
+*Nom technique:* ```personType```
+<PH code="person:personType"/>
+
 
 ## Entités associées (liste) {#properties-has-many}
 

@@ -15,6 +15,20 @@ Un rôle de contenu définit les permissions d'accès aux différentes données 
 
 ## Propriétés de base {#properties-base}
     
+### Code {#code}
+
+Code du rôle de contenu, utilisé pour faire la correspondance avec un claim OIDC
+
+*Nom technique:* ```code```
+<PH code="contentRole:code"/>
+
+### Exposer en tant que claim OIDC {#is-claim}
+
+Si activé, ce rôle de contenu est géré via les claims OIDC et peut être synchronisé depuis le jeton
+
+*Nom technique:* ```isClaim```
+<PH code="contentRole:isClaim"/>
+
 ### Nom {#name}
 
 Nom du rôle de contenu

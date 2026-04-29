@@ -189,6 +189,10 @@
                 "label": "Profil de sécurité des personnes",
                 "description": "Permet de définir les différents profils sécurité associables à des personnes"
             },
+            "personType": {
+                "label": "Type de personne",
+                "description": "Permet de catégoriser les personnes selon leur relation avec l'entreprise, par exemple collaborateur (employé interne) ou invité (externe, visiteur)"
+            },
             "person": {
                 "label": "Personne",
                 "description": "Ce sont les personnes entrées dans la base de données de Surfy"
@@ -5209,6 +5213,36 @@
                     "description": "Une entreprise représente une organisation ou une société qui utilise la plateforme Surfy pour gérer ses espaces de travail et ses ressources"
                 }
             },
+            "personType": {
+                "id": {
+                    "label": "Identifiant du type de personne",
+                    "description": null
+                },
+                "name": {
+                    "label": "Nom",
+                    "description": "Le nom du type de personne, par exemple « Collaborateur » ou « Invité »"
+                },
+                "code": {
+                    "label": "Code",
+                    "description": "Le code du type de personne utilisé pour l'import et les intégrations"
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "people": {
+                    "label": "Personnes",
+                    "description": "Ce sont les personnes entrées dans la base de données de Surfy"
+                }
+            },
             "person": {
                 "id": {
                     "label": "Identifiant Surfy",
@@ -5357,6 +5391,14 @@
                 "personGender": {
                     "label": "Genre de la personne",
                     "description": "Permet de dénombrer chaque genre, par exemple pour la gestion des sanitaires"
+                },
+                "personTypeId": {
+                    "label": "Identifiant du type de personne",
+                    "description": "Permet de catégoriser les personnes selon leur relation avec l'entreprise, par exemple collaborateur (employé interne) ou invité (externe, visiteur)"
+                },
+                "personType": {
+                    "label": "Type de personne",
+                    "description": "Indique si la personne est un collaborateur (employé interne) ou un invité (externe, visiteur)"
                 },
                 "userCompanyCreatedById": {
                     "label": "Identifiant de l'utilisateur qui a créé",
@@ -7974,6 +8016,10 @@
                     "label": "Exposer en tant que claim OIDC",
                     "description": "Si activé, ce rôle est exposé comme rôle d'application dans les jetons OIDC (ex. Entra ID) et peut être assigné via les packages d'accès"
                 },
+                "excludeScenarios": {
+                    "label": "Exclure les scénarios",
+                    "description": "Si activé, les utilisateurs ayant ce rôle ne peuvent pas voir les scénarios, uniquement lorsqu'aucun bâtiment n'est associé aux content roles de l'utilisateur. Tous les rôles de l'utilisateur doivent avoir cette option activée pour que les scénarios ne soient pas visibles."
+                },
                 "createdAt": {
                     "label": "Date de création",
                     "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
@@ -8087,6 +8133,14 @@
                 "name": {
                     "label": "Nom",
                     "description": "Nom du rôle de contenu"
+                },
+                "code": {
+                    "label": "Code",
+                    "description": "Code du rôle de contenu, utilisé pour faire la correspondance avec un claim OIDC"
+                },
+                "isClaim": {
+                    "label": "Exposer en tant que claim OIDC",
+                    "description": "Si activé, ce rôle de contenu est géré via les claims OIDC et peut être synchronisé depuis le jeton"
                 },
                 "createdAt": {
                     "label": "Date de création",

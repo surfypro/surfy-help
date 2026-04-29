@@ -204,6 +204,13 @@ The person's attachment service
 *Technical name:* ```organization```
 <PH code="person:organization"/>
 
+### Type of person {#person-type}
+
+Indicates whether the person is a collaborator (internal employee) or a guest (external, visitor)
+
+*Technical name:* ```personType```
+<PH code="person:personType"/>
+
 
 ## Associated entities (list) {#properties-has-many}
 

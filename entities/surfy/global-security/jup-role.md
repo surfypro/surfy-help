@@ -25,6 +25,13 @@ Un rôle définit les permissions d'accès aux fonctionnalités dans l'interface
 
 ## Propriétés de base {#properties-base}
     
+### Exclure les scénarios {#exclude-scenarios}
+
+Si activé, les utilisateurs ayant ce rôle ne peuvent pas voir les scénarios, uniquement lorsqu'aucun bâtiment n'est associé aux content roles de l'utilisateur. Tous les rôles de l'utilisateur doivent avoir cette option activée pour que les scénarios ne soient pas visibles.
+
+*Nom technique:* ```excludeScenarios```
+<PH code="jupRole:excludeScenarios"/>
+
 ### Exposer en tant que claim OIDC {#is-claim}
 
 Si activé, ce rôle est exposé comme rôle d'application dans les jetons OIDC (ex. Entra ID) et peut être assigné via les packages d'accès

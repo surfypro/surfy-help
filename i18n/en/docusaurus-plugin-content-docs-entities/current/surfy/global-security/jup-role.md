@@ -25,6 +25,13 @@ A role defines access permissions to features in the user interface
 
 ## Basic properties {#properties-base}
     
+### Exclude scenarios {#exclude-scenarios}
+
+If enabled, users with this role cannot see scenarios only when no building is associated with the user's content roles. All user roles must have this option enabled for scenarios to be invisible to the user.
+
+*Technical name:* ```excludeScenarios```
+<PH code="jupRole:excludeScenarios"/>
+
 ### Expose as an OIDC claim {#is-claim}
 
 If enabled, this role is exposed as an application role in OIDC tokens (e.g., Entra ID) and can be assigned via access packages.

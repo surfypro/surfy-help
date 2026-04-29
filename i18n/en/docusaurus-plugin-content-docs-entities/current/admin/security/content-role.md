@@ -15,6 +15,20 @@ A content role defines access permissions to different platform data for users
 
 ## Basic properties {#properties-base}
     
+### Code {#code}
+
+Content role code, used to match an OIDC claim
+
+*Technical name:* ```code```
+<PH code="contentRole:code"/>
+
+### Expose as an OIDC claim {#is-claim}
+
+If enabled, this content role is managed via OIDC claims and can be synchronized from the token.
+
+*Technical name:* ```isClaim```
+<PH code="contentRole:isClaim"/>
+
 ### Last name {#name}
 
 Content role name

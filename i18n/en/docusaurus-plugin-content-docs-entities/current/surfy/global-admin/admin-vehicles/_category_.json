@@ -1,6 +1,6 @@
 {
   "label": "admin-vehicles",
-  "position": 5,
+  "position": 6,
   "link": {
     "slug": "admin-vehicles",
     "type": "generated-index"

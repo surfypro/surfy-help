@@ -1,6 +1,7 @@
 {
     "objectTypePathMapping": {
         "person": "/entities/human",
+        "personType": "/entities/surfy/global-admin",
         "personState": "/entities/human/person-type",
         "personSecurityProfile": "/entities/human/person-type",
         "personToPerson": "/entities/human/person-relations",

@@ -189,6 +189,10 @@
                 "label": "Personal safety profile",
                 "description": "Allows you to define the different security profiles that can be associated with people"
             },
+            "personType": {
+                "label": "Type of person",
+                "description": "Allows you to categorize people according to their relationship with the company, for example collaborator (internal employee) or guest (external, visitor)"
+            },
             "person": {
                 "label": "Person",
                 "description": "These are the people entered into Surfy's database"
@@ -5209,6 +5213,36 @@
                     "description": "A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources"
                 }
             },
+            "personType": {
+                "id": {
+                    "label": "Person type identifier",
+                    "description": null
+                },
+                "name": {
+                    "label": "Last name",
+                    "description": "The name of the person type, for example &quot;Collaborator&quot; or &quot;Guest&quot;"
+                },
+                "code": {
+                    "label": "Code",
+                    "description": "The person type code used for import and integrations"
+                },
+                "createdAt": {
+                    "label": "Creation date",
+                    "description": "Date of creation in Surfy, allows you to know the history of creation in Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date of update",
+                    "description": "Update date in Surfy, allows you to know the history of modifications"
+                },
+                "externalId": {
+                    "label": "External key",
+                    "description": "This field can be used to remember the correspondence key in another software"
+                },
+                "people": {
+                    "label": "People",
+                    "description": "These are the people entered into Surfy's database"
+                }
+            },
             "person": {
                 "id": {
                     "label": "Surfy ID",
@@ -5357,6 +5391,14 @@
                 "personGender": {
                     "label": "Gender of the person",
                     "description": "Allows you to count each gender, for example for managing toilets"
+                },
+                "personTypeId": {
+                    "label": "Person type identifier",
+                    "description": "Allows you to categorize people according to their relationship with the company, for example collaborator (internal employee) or guest (external, visitor)"
+                },
+                "personType": {
+                    "label": "Type of person",
+                    "description": "Indicates whether the person is a collaborator (internal employee) or a guest (external, visitor)"
                 },
                 "userCompanyCreatedById": {
                     "label": "ID of the user who created",
@@ -7974,6 +8016,10 @@
                     "label": "Expose as an OIDC claim",
                     "description": "If enabled, this role is exposed as an application role in OIDC tokens (e.g., Entra ID) and can be assigned via access packages."
                 },
+                "excludeScenarios": {
+                    "label": "Exclude scenarios",
+                    "description": "If enabled, users with this role cannot see scenarios only when no building is associated with the user's content roles. All user roles must have this option enabled for scenarios to be invisible to the user."
+                },
                 "createdAt": {
                     "label": "Creation date",
                     "description": "Date of creation in Surfy, allows you to know the history of creation in Surfy"
@@ -8087,6 +8133,14 @@
                 "name": {
                     "label": "Last name",
                     "description": "Content role name"
+                },
+                "code": {
+                    "label": "Code",
+                    "description": "Content role code, used to match an OIDC claim"
+                },
+                "isClaim": {
+                    "label": "Expose as an OIDC claim",
+                    "description": "If enabled, this content role is managed via OIDC claims and can be synchronized from the token."
                 },
                 "createdAt": {
                     "label": "Creation date",
