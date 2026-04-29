@@ -1,9 +1,21 @@
 # Nouveautés
 
+## 19 Avril 2026 - v3.4.186
+
+- Dans les options d'affichage des personnes affectées aux postes de travail sur le plan, il est désormais possible d'afficher les propriétés <P code="person:personState" />, <P code="person:email" />, <P code="person:monitorReference" />, <P code="person:computerReference" />, <P code="person:cellphone" />, <P code="person:telephone" />, <P code="person:title" />, <P code="person:badgeNumber" />, <P code="person:boxNumber" />, <P code="person:badgeRestaurant" /> et <P code="person:registrationNumber" />.
+- <LIV code="company:dq-reports-overview-duplicate-company" />
+  - Nouvelle vue sur l'<OT code="company" /> : elle liste les contrôles qualité à valider avant d'exporter ou de dupliquer les données d'une entreprise, avec des étapes ordonnées aux intitulés visibles et la possibilité de ne passer à l'étape suivante qu'une fois la précédente traitée.
+  - Chaque rapport de qualité des données affiche le nombre d'enregistrements en anomalie et un lien pour accéder directement au rapport détaillé.
+  - Une fois tous les contrôles conformes, un bouton permet de télécharger le fichier JSON de l'entreprise après recalcul automatique des données, avec des messages de progression pendant le recalcul et la génération du fichier.
+- Le rapport <LIV code="roomPoint:dq-uniq-position" /> affiche désormais les espaces dans lesquels chaque point est utilisé ainsi qu'un lien permettant d'ouvrir le plan directement sur le point concerné pour faciliter la correction manuelle.
+- Mise en place d'une interface permettant d'importer des personnes et des centres de coût à partir d'un rapport Workday.
+- Correction d'un problème où les objets placés sur le plan ne s'affichaient pas dans certains cas lors du chargement du plan.
+
 ## 1 Avril 2026 - v3.4.179
 
 - Mise en place d’un nouveau rapport <LIV code="company:booking-reporting" /> permettant de suivre le taux d’occupation des postes de travail réservables par bâtiment et par quartier sur une période donnée, avec un tableau récapitulatif et un tableau de détails listant les jours de saturation. Les colonnes des deux tableaux sont triables en cliquant sur leur en-tête.
 - Création d’un rapport de qualité des données sur les types d’objets, permettant de vérifier l’unicité du nom de chaque type d’objet.
+- Dans les tableaux de qualité des données, un avertissement s’affiche lorsque toutes les lignes visibles sont sélectionnées et que d’autres enregistrements existent au-delà de la pagination — une action lancée à ce moment s’appliquera également aux objets non visibles.
 - Les images sont exportables en SVG depuis l’option d’export des images du plan.
 - Le rapport <LIV code="person:dq-no-affectations" /> affiche désormais les codes et noms des centres de coût des personnes sans affectation.
 - Amélioration et optimisation du calibrage des plans en 3D.
@@ -26,6 +38,7 @@
 - Réorganisation des affectations des personnes dans la page de réservation des postes de travail, l'objectif est d'offrir une vue plus claire et plus intuitive des affectations des personnes sur plusieurs bâtiments et territoires. Les bâtiments sont désormais triés par ordre d'importance d'affectation : par exemple, une affectation à un territoire est prioritaire sur une affectation à un bâtiment simple. 
 - Dans la réservation pour les tiers, il est maintenant possible d’associer directement le tiers aux bâtiments auxquels la personne qui effectue la réservation est affectée.
 - La copie des postes de travail copie également la position de l’ancre du texte du nom du poste de travail copié.
+- Dans les options d'affichage des postes de travail sur le plan, il est désormais possible d'afficher la photo des personnes affectées directement sur le plan.
 
 
 
