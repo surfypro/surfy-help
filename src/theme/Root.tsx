@@ -1,8 +1,6 @@
-import { ThemeProvider, createTheme } from "@mui/material";
-import React, { useEffect } from "react";
-import { SetupRecoilContext, I18NHelpContext } from '@site/surfy';
-import { useCurrentLocale } from "../components/Translations/translations";
-
+import { ThemeProvider, createTheme } from '@mui/material';
+import React from 'react';
+import { SetupRecoilContext, I18NHelpContext, useCurrentLocale } from '@site/surfy';
 
 const theme = createTheme({
     typography: {
@@ -15,17 +13,19 @@ const theme = createTheme({
         },
         h3: {
             fontFamily: `var(--ifm-heading-font-family)`,
-        }
-    }
+        },
+    },
 });
 
 export default function Root(props: { children: React.ReactNode }) {
     const { children } = props;
     const language = useCurrentLocale();
 
-    return <ThemeProvider theme={theme}>
-        <SetupRecoilContext defaultLanguage={language} I18nContext={I18NHelpContext}>
-            {children}
-        </SetupRecoilContext>
-    </ThemeProvider>
+    return (
+        <ThemeProvider theme={theme}>
+            <SetupRecoilContext defaultLanguage={language} I18nContext={I18NHelpContext}>
+                {children}
+            </SetupRecoilContext>
+        </ThemeProvider>
+    );
 }
