@@ -1,6 +1,9 @@
 ---
 search_rank: 0.5
----    
+---
+
+<ObjectTypeMenuBreadcrumb code="companyWorkingLocation" />
+
 # Company work location
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 

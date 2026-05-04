@@ -1,6 +1,9 @@
 ---
 search_rank: 0.5
----    
+---
+
+<ObjectTypeMenuBreadcrumb code="roomPointSegment" />
+
 # Qualification de segment
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 

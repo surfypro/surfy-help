@@ -1,6 +1,9 @@
 ---
 search_rank: 0.5
----    
+---
+
+<ObjectTypeMenuBreadcrumb code="personCompanyToItem" />
+
 # Intervention on an object
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 

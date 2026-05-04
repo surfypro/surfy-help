@@ -1,6 +1,9 @@
 ---
 search_rank: 0.5
----    
+---
+
+<ObjectTypeMenuBreadcrumb code="workplace" />
+
 # Workplace
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 

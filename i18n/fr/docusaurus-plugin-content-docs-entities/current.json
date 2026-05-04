@@ -170,5 +170,9 @@
   "sidebar.help-sidebar.category.admin-vehicles": {
     "message": "Véhicules",
     "description": "The label for category 'admin-vehicles' in sidebar 'help-sidebar'"
+  },
+  "sidebar.help-sidebar.category.vehicle-planning-admin": {
+    "message": "Administration des plannings des véhicules",
+    "description": "no-description"
   }
 }
