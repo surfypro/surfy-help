@@ -283,6 +283,10 @@ const config: Config = {
               label: 'GitHub',
               href: 'https://github.com/surfypro/surfy-help',
             },
+            {
+              label: 'Nouveautés (alpha)',
+              to: '/changelog/app-alpha',
+            },
           ],
         },
       ],

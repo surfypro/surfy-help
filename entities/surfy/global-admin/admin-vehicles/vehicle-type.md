@@ -52,6 +52,13 @@ Le nom du type de véhicule
 
 ## Entités associées (liste) {#properties-has-many}
 
+### Configurations véhicule de réservation {#booking-vehicle-configurations}
+
+Configuration de réservation par type de véhicule et motorisation
+
+*Nom technique:* ```bookingVehicleConfigurations```
+<PH code="vehicleType:bookingVehicleConfigurations"/>
+
 ### Véhicules {#vehicles}
 
 Un véhicule permet de gérer les informations relatives à un véhicule

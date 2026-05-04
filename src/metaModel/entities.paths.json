@@ -8,6 +8,8 @@
         "personToPersonType": "/entities/human/person-relations",
         "vehicle": "/entities/human/person-vehicles",
         "personToVehicle": "/entities/human/person-vehicles",
+        "bookingVehicleConfiguration": "/entities/human/person-vehicles",
+        "bookingVehicleConfigurationToParkingRoomTypeConfiguration": "/entities/human/person-vehicles",
         "workplace": "/entities/things",
         "item": "/entities/things",
         "workplaceType": "/entities/things/things-type",

@@ -27,7 +27,7 @@ A role defines access permissions to features in the user interface
     
 ### Exclude scenarios {#exclude-scenarios}
 
-If enabled, users with this role cannot see scenarios only when no building is associated with the user's content roles. All user roles must have this option enabled for scenarios to be invisible to the user.
+If enabled, users with this role cannot see scenarios, but only when no building is associated with the user's content roles. All of the user's roles must have this option enabled for scenarios to be hidden.
 
 *Technical name:* ```excludeScenarios```
 <PH code="jupRole:excludeScenarios"/>

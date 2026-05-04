@@ -329,6 +329,14 @@
                 "label": "Emplacement de travail de l'entreprise",
                 "description": "Un emplacement de travail de l'entreprise permet de personnaliser pour une entreprise les lieux de travail des personnes pour la réservation"
             },
+            "bookingVehicleConfiguration": {
+                "label": "Configuration véhicule de réservation",
+                "description": "Configuration de réservation par type de véhicule et motorisation"
+            },
+            "bookingVehicleConfigurationToParkingRoomTypeConfiguration": {
+                "label": "Configuration de type de place de parking",
+                "description": "Règles de réservation par type de place de parking"
+            },
             "jupObjectType": {
                 "label": "Type d'entité",
                 "description": "Un type d'entité définit les différents types d'objets disponibles dans l'interface utilisateur"
@@ -1511,6 +1519,22 @@
                 "companyWorkingLocationUpdatedBies": {
                     "label": "Emplacements de travail de l'entreprise",
                     "description": "Un emplacement de travail de l'entreprise permet de personnaliser pour une entreprise les lieux de travail des personnes pour la réservation"
+                },
+                "bookingVehicleConfigurationCreatedBies": {
+                    "label": "Configurations véhicule de réservation",
+                    "description": "Configuration de réservation par type de véhicule et motorisation"
+                },
+                "bookingVehicleConfigurationUpdatedBies": {
+                    "label": "Configurations véhicule de réservation",
+                    "description": "Configuration de réservation par type de véhicule et motorisation"
+                },
+                "bookingVehicleConfigurationToParkingRoomTypeConfigurationCreatedBies": {
+                    "label": "Configurations de type de place de parking",
+                    "description": "Règles de réservation par type de place de parking"
+                },
+                "bookingVehicleConfigurationToParkingRoomTypeConfigurationUpdatedBies": {
+                    "label": "Configurations de type de place de parking",
+                    "description": "Règles de réservation par type de place de parking"
                 },
                 "contentRoleCreatedBies": {
                     "label": "Rôles de contenu",
@@ -5633,6 +5657,10 @@
                 "vehicles": {
                     "label": "Véhicules",
                     "description": "Un véhicule permet de gérer les informations relatives à un véhicule"
+                },
+                "bookingVehicleConfigurations": {
+                    "label": "Configurations véhicule de réservation",
+                    "description": "Configuration de réservation par type de véhicule et motorisation"
                 }
             },
             "vehiclePropulsionType": {
@@ -5671,6 +5699,10 @@
                 "vehicles": {
                     "label": "Véhicules",
                     "description": "Un véhicule permet de gérer les informations relatives à un véhicule"
+                },
+                "bookingVehicleConfigurations": {
+                    "label": "Configurations véhicule de réservation",
+                    "description": "Configuration de réservation par type de véhicule et motorisation"
                 }
             },
             "vehicle": {
@@ -7929,6 +7961,138 @@
                 "userCompanyUpdatedBy": {
                     "label": "Mis à jour par l'utilisateur",
                     "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                }
+            },
+            "bookingVehicleConfiguration": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "vehicleTypeId": {
+                    "label": "Identifiant du type de véhicule",
+                    "description": "Un type de véhicule permet de catégoriser les véhicules comme voiture, moto, vélo ..."
+                },
+                "vehicleType": {
+                    "label": "Type de véhicule",
+                    "description": "Type de véhicule concerné par cette configuration"
+                },
+                "vehiclePropulsionTypeId": {
+                    "label": "Identifiant du type de propulsion de véhicule",
+                    "description": "Un type de propulsion de véhicule permet de catégoriser les véhicules selon leur mode de propulsion (électrique, thérmique, hybride, huile de coude, etc.)"
+                },
+                "vehiclePropulsionType": {
+                    "label": "Type de motorisation",
+                    "description": "Motorisation concernée par cette configuration"
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "bookingVehicleConfigurationToParkingRoomTypeConfigurations": {
+                    "label": "Configurations de type de place de parking",
+                    "description": "Règles de réservation par type de place de parking"
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": "Une entreprise représente une organisation ou une société qui utilise la plateforme Surfy pour gérer ses espaces de travail et ses ressources"
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": "Une entreprise représente une organisation ou une société qui utilise la plateforme Surfy pour gérer ses espaces de travail et ses ressources"
+                }
+            },
+            "bookingVehicleConfigurationToParkingRoomTypeConfiguration": {
+                "id": {
+                    "label": "Id",
+                    "description": null
+                },
+                "allowDaySlotAm": {
+                    "label": "Autoriser le matin",
+                    "description": "Autorise la réservation du créneau matin"
+                },
+                "allowDaySlotPm": {
+                    "label": "Autoriser l'après-midi",
+                    "description": "Autorise la réservation du créneau après-midi"
+                },
+                "allowDaySlotAll": {
+                    "label": "Autoriser la journée",
+                    "description": "Autorise la réservation du créneau journée"
+                },
+                "singleBookingPerDay": {
+                    "label": "Réservation unique par jour",
+                    "description": "Limite la réservation à une seule par jour"
+                },
+                "parkingRoomTypeCode": {
+                    "label": "Type de place de parking",
+                    "description": "Code du type de place de parking"
+                },
+                "createdAt": {
+                    "label": "Date de création",
+                    "description": "Date de création dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "updatedAt": {
+                    "label": "Date de mise à jour",
+                    "description": "Date de mise à jour dans Surfy, permet de connaitre l'historique des modifications"
+                },
+                "externalId": {
+                    "label": "Clé externe",
+                    "description": "Ce champs peut être utilisé pour retenir la clé de correspondance dans un autre logiciel"
+                },
+                "bookingVehicleConfigurationId": {
+                    "label": "Id (configuration véhicule de réservation)",
+                    "description": "Configuration de réservation par type de véhicule et motorisation"
+                },
+                "bookingVehicleConfiguration": {
+                    "label": "Configuration véhicule de réservation",
+                    "description": "Configuration de réservation par type de véhicule et motorisation"
+                },
+                "userCompanyCreatedById": {
+                    "label": "Identifiant de l'utilisateur qui a créé",
+                    "description": "Créer par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyCreatedBy": {
+                    "label": "Créé par l'utilisateur",
+                    "description": "Créer par cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedById": {
+                    "label": "Identifiant de l'utilisateur qui a modifié",
+                    "description": "Mis à jour par l'identifiant de cet utilisateur dans Surfy, permet de connaitre l'historique de la création dans Surfy"
+                },
+                "userCompanyUpdatedBy": {
+                    "label": "Mis à jour par l'utilisateur",
+                    "description": "Mise à jour par cet utilisateur dans Surfy, permet de connaitre l'historique de la modification dans  Surfy"
+                },
+                "companyId": {
+                    "label": "Identifiant de l'entreprise",
+                    "description": "Une entreprise représente une organisation ou une société qui utilise la plateforme Surfy pour gérer ses espaces de travail et ses ressources"
+                },
+                "company": {
+                    "label": "Entreprise",
+                    "description": "Une entreprise représente une organisation ou une société qui utilise la plateforme Surfy pour gérer ses espaces de travail et ses ressources"
                 }
             },
             "jupObjectType": {

@@ -761,6 +761,20 @@ Organizations have two hierarchical levels: departments and services, and help d
 *Technical name:* ```organizationUpdatedBies```
 <PH code="userCompany:organizationUpdatedBies"/>
 
+### Parking space type configurations {#booking-vehicle-configuration-to-parking-room-type-configuration-created-bies}
+
+Reservation rules by parking space type
+
+*Technical name:* ```bookingVehicleConfigurationToParkingRoomTypeConfigurationCreatedBies```
+<PH code="userCompany:bookingVehicleConfigurationToParkingRoomTypeConfigurationCreatedBies"/>
+
+### Parking space type configurations {#booking-vehicle-configuration-to-parking-room-type-configuration-updated-bies}
+
+Reservation rules by parking space type
+
+*Technical name:* ```bookingVehicleConfigurationToParkingRoomTypeConfigurationUpdatedBies```
+<PH code="userCompany:bookingVehicleConfigurationToParkingRoomTypeConfigurationUpdatedBies"/>
+
 ### Partner API keys {#partner-api-credential-created-bies}
 
 A Partner API Key is used to authenticate and authorize access to APIs for external partners.
@@ -921,6 +935,20 @@ The service provider object types make it possible to define a relationship betw
 
 *Technical name:* ```personCompanyToItemTypeUpdatedBies```
 <PH code="userCompany:personCompanyToItemTypeUpdatedBies"/>
+
+### Reservation vehicle configurations {#booking-vehicle-configuration-created-bies}
+
+Booking configuration by vehicle type and engine
+
+*Technical name:* ```bookingVehicleConfigurationCreatedBies```
+<PH code="userCompany:bookingVehicleConfigurationCreatedBies"/>
+
+### Reservation vehicle configurations {#booking-vehicle-configuration-updated-bies}
+
+Booking configuration by vehicle type and engine
+
+*Technical name:* ```bookingVehicleConfigurationUpdatedBies```
+<PH code="userCompany:bookingVehicleConfigurationUpdatedBies"/>
 
 ### Reservations at people's workstations {#person-to-workplace-booking-created-bies}
 

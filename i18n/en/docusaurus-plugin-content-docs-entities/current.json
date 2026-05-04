@@ -203,6 +203,10 @@
     "message": "Feature guides",
     "description": "The label for category user-guide in sidebar help-sidebar"
   },
+  "sidebar.help-sidebar.category.security-model": {
+    "message": "Security model",
+    "description": "The label for category security-model in sidebar help-sidebar"
+  },
   "sidebar.help-sidebar.category.current-tenant": {
     "message": "menuLeft currentTenant",
     "description": "no-description"

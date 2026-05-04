@@ -139,6 +139,10 @@
     "message": "Guide des fonctionnalités",
     "description": "The label for category 'user-guide' in sidebar 'help-sidebar'"
   },
+  "sidebar.help-sidebar.category.security-model": {
+    "message": "Modèle de sécurité",
+    "description": "The label for category 'security-model' in sidebar 'help-sidebar'"
+  },
   "version.label": {
     "message": "Next",
     "description": "The label for version current"

@@ -52,6 +52,13 @@ The name of the vehicle propulsion type
 
 ## Associated entities (list) {#properties-has-many}
 
+### Reservation vehicle configurations {#booking-vehicle-configurations}
+
+Booking configuration by vehicle type and engine
+
+*Technical name:* ```bookingVehicleConfigurations```
+<PH code="vehiclePropulsionType:bookingVehicleConfigurations"/>
+
 ### Vehicles {#vehicles}
 
 A vehicle allows you to manage information related to a vehicle

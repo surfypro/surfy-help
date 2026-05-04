@@ -544,6 +544,20 @@ Une clé d'API partenaire permet d'authentifier et d'autoriser l'accès aux API 
 *Nom technique:* ```partnerApiCredentialUpdatedBies```
 <PH code="userCompany:partnerApiCredentialUpdatedBies"/>
 
+### Configurations de type de place de parking {#booking-vehicle-configuration-to-parking-room-type-configuration-created-bies}
+
+Règles de réservation par type de place de parking
+
+*Nom technique:* ```bookingVehicleConfigurationToParkingRoomTypeConfigurationCreatedBies```
+<PH code="userCompany:bookingVehicleConfigurationToParkingRoomTypeConfigurationCreatedBies"/>
+
+### Configurations de type de place de parking {#booking-vehicle-configuration-to-parking-room-type-configuration-updated-bies}
+
+Règles de réservation par type de place de parking
+
+*Nom technique:* ```bookingVehicleConfigurationToParkingRoomTypeConfigurationUpdatedBies```
+<PH code="userCompany:bookingVehicleConfigurationToParkingRoomTypeConfigurationUpdatedBies"/>
+
 ### Configurations des transformations des exports partenaires {#partner-export-mapping-configuration-created-bies}
 
 
@@ -557,6 +571,20 @@ Une clé d'API partenaire permet d'authentifier et d'autoriser l'accès aux API 
 
 *Nom technique:* ```partnerExportMappingConfigurationUpdatedBies```
 <PH code="userCompany:partnerExportMappingConfigurationUpdatedBies"/>
+
+### Configurations véhicule de réservation {#booking-vehicle-configuration-created-bies}
+
+Configuration de réservation par type de véhicule et motorisation
+
+*Nom technique:* ```bookingVehicleConfigurationCreatedBies```
+<PH code="userCompany:bookingVehicleConfigurationCreatedBies"/>
+
+### Configurations véhicule de réservation {#booking-vehicle-configuration-updated-bies}
+
+Configuration de réservation par type de véhicule et motorisation
+
+*Nom technique:* ```bookingVehicleConfigurationUpdatedBies```
+<PH code="userCompany:bookingVehicleConfigurationUpdatedBies"/>
 
 ### Connecteurs d'espace {#room-connector-created-bies}
 

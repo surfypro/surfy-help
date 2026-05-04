@@ -30,13 +30,13 @@ For the system to recognize parking spaces, an administrator must configure room
      - `PARKING-CAR` for standard parking spaces
      - `PARKING-ELECTRIC-CAR` for electric parking spaces
      - `PARKING-PRM` for PRM parking spaces
-   - Enter the **"Code"** field with exactly these values (uppercase, with hyphens)
+   - Enter property <P code="roomType:code" /> with exactly these values (uppercase, with hyphens)
    - Add a name and color to facilitate identification
 
 2. **Associate Rooms to Types**:
    - For each parking space (room) in the system
    - Select the appropriate room type (the one with code `PARKING-CAR`, `PARKING-ELECTRIC-CAR`, or `PARKING-PRM`)
-   - The system will automatically use the room type code to filter available spaces
+   - The system will automatically use <P code="roomType:code" /> to filter available spaces
 
 **Important**: Codes must be written exactly as indicated (uppercase, with hyphens) for the system to recognize them correctly.
 
@@ -45,34 +45,34 @@ For the system to recognize parking spaces, an administrator must configure room
 The system supports different vehicle types. Each vehicle is defined by:
 
 ### Vehicle Type
-- **CAR**: Car
-- Other types can be added as needed (motorcycle, bicycle, etc.)
+- **`CAR`**: Car
+- **`CAR-PRM`**: Car for people with reduced mobility (PRM)
+- The system uses property <P code="vehicleType:code" /> for filtering.
+- The mapping is currently provided for `CAR` and `CAR-PRM`.
 
 ### Propulsion Type
-The propulsion type determines the vehicle's power source:
-- **ELECTRIC**: Electric propulsion
-- **THERMAL**: Thermal propulsion (gasoline, diesel, etc.)
-- **HYBRID**: Hybrid propulsion
-- **MANUAL**: Manual propulsion (bicycle, etc.)
-- Other types can be configured as needed
+The propulsion type determines whether the vehicle is considered "electric" or "non-electric" for parking filtering:
+
+- **`ELECTRIC`**: Electric propulsion
+- **`*`**: Non-electric propulsion (all other propulsion codes)
+
+To make the mapping work, property <P code="vehiclePropulsionType:code" /> must be **exactly** `ELECTRIC` (electric vehicles) or `*` (non-electric vehicles).
 
 ## Vehicle to Parking Space Mapping
 
-The system automatically associates vehicles with appropriate parking space types:
+The system automatically associates vehicles with parking space types based on booking vehicle configuration master data.
 
-### Mapping Rules
+### Configuration Source
 
-1. **Electric Car (CAR + ELECTRIC)**
-   - Maps to: **PARKING-ELECTRIC-CAR**
-   - The system only shows spaces equipped for electric charging
+Mappings are read from booking vehicle configuration, together with its linked parking mapping lines:
 
-2. **Non-Electric Car (CAR + other propulsion)**
-   - Maps to: **PARKING-CAR**
-   - The system shows standard parking spaces
+- Vehicle configuration: vehicle type + propulsion type
+- Mapping lines: parking space type, allowed day slots, and single booking per day option
 
-3. **People with Reduced Mobility**
-   - Maps to: **PARKING-PRM**
-   - Accessible based on the user's specific needs
+Filtering uses the combination of:
+- <P code="vehicleType:code" />
+- <P code="vehiclePropulsionType:code" />
+- parking room type code (`PARKING-CAR`, `PARKING-ELECTRIC-CAR`, `PARKING-PRM`)
 
 ### Advanced Mapping Options
 
@@ -198,7 +198,9 @@ For a user to be able to reserve parking spaces in a building, **three condition
 
 ### Condition 3: The Person Must Have a Vehicle
 1. The person must have at least one vehicle registered in their profile
-2. The vehicle must be properly configured with its type (e.g., CAR) and propulsion type (e.g., ELECTRIC, THERMAL, etc.)
+2. The vehicle must be properly configured with:
+   - <P code="vehicleType:code" /> (e.g., `CAR` or `CAR-PRM`)
+   - <P code="vehiclePropulsionType:code" /> (e.g., `ELECTRIC` or `*` for non-electric vehicles)
 
 ### Result
 Once these three conditions are met:
@@ -211,45 +213,34 @@ The user will then be able to see and reserve parking spaces in this building. T
 ### Important Note
 This configuration must be performed for each building where the user should be able to reserve parking spaces. If a user works in multiple buildings, the option must be enabled separately for each building.
 
-## Configuration Examples
+## Parking Configuration
 
-### Example 1: Electric Car with Restrictions
+This section gathers the required setup to control parking filtering and booking rules.
 
-```typescript
-{
-    vehicleTypeCode: 'CAR',
-    vehiclePropulsionTypeCode: 'ELECTRIC',
-    parkingRoomTypeCodes: [{
-        code: 'PARKING-ELECTRIC-CAR',
-        allowedDaySlotTypes: ['am', 'pm'],  // Only morning or afternoon
-        singleBookingPerDay: true            // Only one booking per day
-    }]
-}
-```
+### 1) Configure parking space types
 
-**Behavior:**
-- Electric cars can only book during morning or afternoon slots (not full day)
-- Users with electric cars can only make one parking booking per day
-- If they try to book a second time slot on the same day, they'll see an error message
+1. Create room types with the following codes:
+   - `PARKING-CAR`
+   - `PARKING-ELECTRIC-CAR`
+   - `PARKING-PRM`
+2. Ensure property <P code="roomType:code" /> exactly matches those codes.
+3. Link each parking room to the correct room type.
 
-### Example 2: Standard Car with Full Flexibility
+### 2) Configure vehicle -> parking mappings
 
-```typescript
-{
-    vehicleTypeCode: 'CAR',
-    vehiclePropulsionTypeCode: '*',  // Any other propulsion type
-    parkingRoomTypeCodes: [{
-        code: 'PARKING-CAR',
-        allowedDaySlotTypes: ['am', 'pm', 'all'],  // All time slots allowed
-        singleBookingPerDay: false                  // Multiple bookings per day allowed
-    }]
-}
-```
+1. In booking vehicle configuration, create one configuration per:
+   - vehicle type
+   - propulsion type
+2. Add one or more mapping lines to parking room types.
+3. For each line, define:
+   - allowed day slots (morning, afternoon, full day)
+   - single booking per day option
 
-**Behavior:**
-- Standard cars can book during any time slot (morning, afternoon, or full day)
-- Users with standard cars can make multiple parking bookings per day
-- They can book one space in the morning and another in the afternoon if needed
+### 3) Common rule examples
+
+- `CAR` + `ELECTRIC` -> `PARKING-ELECTRIC-CAR` with `am` and `pm`, and single booking per day enabled
+- `CAR` + `*` -> `PARKING-CAR` with `am`, `pm`, `all`
+- `CAR-PRM` + `*` -> `PARKING-PRM` with `am`, `pm`, `all`
 
 ## Important Notes
 
@@ -258,4 +249,4 @@ This configuration must be performed for each building where the user should be 
 - The system enforces day slot restrictions and single booking per day rules based on vehicle type configuration
 - Reservations can be viewed in the "My Reservations" section
 - Administrators can configure vehicle and space types according to the company's needs
-- Advanced mapping options (`allowedDaySlotTypes` and `singleBookingPerDay`) are configured in the system code and require developer access to modify
+- Advanced mapping options are configured in booking master data, without code changes

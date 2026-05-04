@@ -16,40 +16,40 @@
     "start:en": "pnpm start --locale en"
   },
   "dependencies": {
-    "@babel/preset-typescript": "^7.28.5",
-    "@docusaurus/core": "^3.10.0",
-    "@docusaurus/plugin-client-redirects": "^3.10.0",
-    "@docusaurus/plugin-content-docs": "^3.10.0",
-    "@docusaurus/plugin-google-gtag": "^3.10.0",
-    "@docusaurus/preset-classic": "^3.10.0",
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.1",
-    "@mdx-js/loader": "^3.1.1",
-    "@mdx-js/react": "^3.1.1",
-    "@mui/icons-material": "^9.0.0",
-    "@mui/material": "^9.0.0",
-    "@types/js-cookie": "^3.0.6",
-    "@types/react-copy-to-clipboard": "^5.0.7",
-    "babel-loader": "^10.1.1",
-    "clsx": "^2.1.1",
-    "js-cookie": "^3.0.5",
-    "pluralize": "^8.0.0",
-    "pnpm": "^10.33.0",
-    "prism-react-renderer": "^2.4.1",
+    "@babel/preset-typescript": "7.28.5",
+    "@docusaurus/core": "3.10.0",
+    "@docusaurus/plugin-client-redirects": "3.10.0",
+    "@docusaurus/plugin-content-docs": "3.10.0",
+    "@docusaurus/plugin-google-gtag": "3.10.0",
+    "@docusaurus/preset-classic": "3.10.0",
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.1",
+    "@mdx-js/loader": "3.1.1",
+    "@mdx-js/react": "3.1.1",
+    "@mui/icons-material": "9.0.0",
+    "@mui/material": "9.0.0",
+    "@types/js-cookie": "3.0.6",
+    "@types/react-copy-to-clipboard": "5.0.7",
+    "babel-loader": "10.1.1",
+    "clsx": "2.1.1",
+    "js-cookie": "3.0.5",
+    "pluralize": "8.0.0",
+    "pnpm": "10.33.0",
+    "prism-react-renderer": "2.4.1",
     "react": "19.2.5",
-    "react-copy-to-clipboard": "^5.1.1",
+    "react-copy-to-clipboard": "5.1.1",
     "react-dom": "19.2.5",
-    "recoil": "^0.7.7"
+    "recoil": "0.7.7"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.10.0",
-    "@docusaurus/tsconfig": "^3.10.0",
-    "@docusaurus/types": "^3.10.0",
-    "@types/pluralize": "^0.0.33",
+    "@docusaurus/module-type-aliases": "3.10.0",
+    "@docusaurus/tsconfig": "3.10.0",
+    "@docusaurus/types": "3.10.0",
+    "@types/pluralize": "0.0.33",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
-    "cross-env": "^10.1.0",
-    "typescript": "~6.0.2"
+    "cross-env": "10.1.0",
+    "typescript": "6.0.2"
   },
   "browserslist": {
     "production": [
@@ -66,7 +66,7 @@
   "engines": {
     "node": ">=22.0"
   },
-  "packageManager": "pnpm@10.30.2",
+  "packageManager": "pnpm@10.33.2",
   "pnpm": {
     "onlyBuiltDependencies": [
       "core-js",

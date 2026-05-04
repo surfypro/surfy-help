@@ -30,13 +30,13 @@ Pour que le système reconnaisse les places de parking, un administrateur doit c
      - `PARKING-CAR` pour les places de parking standard
      - `PARKING-ELECTRIC-CAR` pour les places de parking électriques
      - `PARKING-PRM` pour les places de parking PMR
-   - Renseigner le champ **"Code"** avec exactement ces valeurs (en majuscules, avec tirets)
+   - Renseigner la propriété <P code="roomType:code" /> avec exactement ces valeurs (en majuscules, avec tirets)
    - Ajouter un nom et une couleur pour faciliter l'identification
 
 2. **Associer les salles aux types** :
    - Pour chaque place de parking (salle) dans le système
    - Sélectionner le type de salle approprié (celui avec le code `PARKING-CAR`, `PARKING-ELECTRIC-CAR` ou `PARKING-PRM`)
-   - Le système utilisera automatiquement le code du type de salle pour filtrer les places disponibles
+   - Le système utilisera automatiquement <P code="roomType:code" /> pour filtrer les places disponibles
 
 **Important** : Les codes doivent être écrits exactement comme indiqué (en majuscules, avec tirets) pour que le système les reconnaisse correctement.
 
@@ -45,34 +45,34 @@ Pour que le système reconnaisse les places de parking, un administrateur doit c
 Le système prend en charge différents types de véhicules. Chaque véhicule est défini par :
 
 ### Type de véhicule
-- **CAR** : Voiture
-- D'autres types peuvent être ajoutés selon les besoins (moto, vélo, etc.)
+- **`CAR`** : Voiture
+- **`CAR-PRM`** : Voiture pour personne a mobilite reduite (PMR)
+- Le filtrage utilise la propriété <P code="vehicleType:code" />.
+- Le système fournit des correspondances de parking pour `CAR` et `CAR-PRM`.
 
 ### Type de propulsion
-Le type de propulsion détermine le mode d'alimentation du véhicule :
-- **ELECTRIC** : Propulsion électrique
-- **THERMAL** : Propulsion thermique (essence, diesel, etc.)
-- **HYBRID** : Propulsion hybride
-- **MANUAL** : Propulsion manuelle (vélo, etc.)
-- D'autres types peuvent être configurés selon les besoins
+Le type de propulsion détermine si le véhicule est considéré comme "électrique" ou "non électrique" pour filtrer les places de parking :
+
+- **`ELECTRIC`** : Propulsion électrique
+- **`*`** : Propulsion non électrique (toutes les autres propulsions)
+
+Pour que la correspondance fonctionne, la propriété <P code="vehiclePropulsionType:code" /> doit être **exactement** `ELECTRIC` (véhicules électriques) ou `*` (véhicules non électriques).
 
 ## Correspondance entre véhicules et places de parking
 
-Le système associe automatiquement les véhicules aux types de places de parking appropriés :
+Le système associe automatiquement les véhicules aux types de places de parking à partir des données de configuration de réservation.
 
-### Règles de correspondance
+### Source de configuration
 
-1. **Voiture électrique (CAR + ELECTRIC)**
-   - Correspond à : **PARKING-ELECTRIC-CAR**
-   - Le système propose uniquement les places équipées pour la recharge électrique
+Les correspondances sont lues depuis l'objet de configuration véhicule de réservation, avec ses lignes de correspondance parking associées :
 
-2. **Voiture non électrique (CAR + autre propulsion)**
-   - Correspond à : **PARKING-CAR**
-   - Le système propose les places de parking standard
+- Configuration véhicule : type de véhicule + type de propulsion
+- Lignes de correspondance : type de place de parking, créneaux autorisés et réservation unique par jour
 
-3. **Personnes à mobilité réduite**
-   - Correspond à : **PARKING-PRM**
-   - Accessible selon les besoins spécifiques de l'utilisateur
+Le filtrage utilise la combinaison de codes :
+- <P code="vehicleType:code" />
+- <P code="vehiclePropulsionType:code" />
+- code du type de place de parking (`PARKING-CAR`, `PARKING-ELECTRIC-CAR`, `PARKING-PRM`)
 
 ### Options avancées de correspondance
 
@@ -198,7 +198,9 @@ Pour qu'un utilisateur puisse réserver des places de parking dans un bâtiment,
 
 ### Condition 3 : La personne doit avoir un véhicule
 1. La personne doit avoir au moins un véhicule enregistré dans son profil
-2. Le véhicule doit être correctement configuré avec son type (ex: CAR) et son type de propulsion (ex: ELECTRIC, THERMAL, etc.)
+2. Le véhicule doit être correctement configuré avec :
+   - <P code="vehicleType:code" /> (ex: `CAR` ou `CAR-PRM`)
+   - <P code="vehiclePropulsionType:code" /> (ex: `ELECTRIC` ou `*` pour les véhicules non électriques)
 
 ### Résultat
 Une fois ces trois conditions remplies :
@@ -211,45 +213,34 @@ L'utilisateur pourra alors voir et réserver des places de parking dans ce bâti
 ### Note importante
 Cette configuration doit être effectuée pour chaque bâtiment où l'utilisateur doit pouvoir réserver des places de parking. Si un utilisateur travaille dans plusieurs bâtiments, l'option doit être activée séparément pour chaque bâtiment.
 
-## Exemples de configuration
+## Configuration du parking
 
-### Exemple 1 : Voiture électrique avec restrictions
+Cette section centralise la configuration nécessaire pour piloter le filtrage des places et les règles de réservation.
 
-```typescript
-{
-    vehicleTypeCode: 'CAR',
-    vehiclePropulsionTypeCode: 'ELECTRIC',
-    parkingRoomTypeCodes: [{
-        code: 'PARKING-ELECTRIC-CAR',
-        allowedDaySlotTypes: ['am', 'pm'],  // Seulement matin ou après-midi
-        singleBookingPerDay: true            // Une seule réservation par jour
-    }]
-}
-```
+### 1) Configurer les types de places de parking
 
-**Comportement :**
-- Les voitures électriques ne peuvent réserver que pendant les créneaux matin ou après-midi (pas journée complète)
-- Les utilisateurs avec des voitures électriques ne peuvent faire qu'une seule réservation de parking par jour
-- S'ils tentent de réserver un deuxième créneau horaire le même jour, ils verront un message d'erreur
+1. Créer les types de salles avec les codes :
+   - `PARKING-CAR`
+   - `PARKING-ELECTRIC-CAR`
+   - `PARKING-PRM`
+2. Vérifier que la propriété <P code="roomType:code" /> est saisie exactement avec ces codes.
+3. Associer chaque salle de parking au bon type de salle.
 
-### Exemple 2 : Voiture standard avec flexibilité complète
+### 2) Configurer les correspondances véhicule -> parking
 
-```typescript
-{
-    vehicleTypeCode: 'CAR',
-    vehiclePropulsionTypeCode: '*',  // Tout autre type de propulsion
-    parkingRoomTypeCodes: [{
-        code: 'PARKING-CAR',
-        allowedDaySlotTypes: ['am', 'pm', 'all'],  // Tous les créneaux autorisés
-        singleBookingPerDay: false                  // Plusieurs réservations par jour autorisées
-    }]
-}
-```
+1. Dans la configuration véhicule de réservation, créer une configuration par combinaison de :
+   - type de véhicule
+   - type de propulsion
+2. Ajouter une ou plusieurs lignes de correspondance vers des types de place de parking.
+3. Pour chaque ligne, définir :
+   - les créneaux autorisés (matin, après-midi, journée)
+   - l'option de réservation unique par jour
 
-**Comportement :**
-- Les voitures standard peuvent réserver pendant n'importe quel créneau horaire (matin, après-midi ou journée complète)
-- Les utilisateurs avec des voitures standard peuvent faire plusieurs réservations de parking par jour
-- Ils peuvent réserver une place le matin et une autre l'après-midi si nécessaire
+### 3) Exemples de règles courantes
+
+- `CAR` + `ELECTRIC` -> `PARKING-ELECTRIC-CAR` avec créneaux `am` et `pm`, et réservation unique par jour activée
+- `CAR` + `*` -> `PARKING-CAR` avec créneaux `am`, `pm`, `all`
+- `CAR-PRM` + `*` -> `PARKING-PRM` avec créneaux `am`, `pm`, `all`
 
 ## Notes importantes
 
@@ -258,4 +249,4 @@ Cette configuration doit être effectuée pour chaque bâtiment où l'utilisateu
 - Le système applique les restrictions de créneaux horaires et les règles de réservation unique par jour en fonction de la configuration du type de véhicule
 - Les réservations peuvent être consultées dans la section "Mes réservations"
 - Les administrateurs peuvent configurer les types de véhicules et de places selon les besoins de l'entreprise
-- Les options avancées de correspondance (`allowedDaySlotTypes` et `singleBookingPerDay`) sont configurées dans le code du système et nécessitent un accès développeur pour être modifiées
+- Les options avancées de correspondance sont configurées dans les données de référence de réservation, sans modification de code

@@ -19,89 +19,89 @@ importers:
   .:
     dependencies:
       '@babel/preset-typescript':
-        specifier: ^7.28.5
+        specifier: 7.28.5
         version: 7.28.5(@babel/core@7.29.0)
       '@docusaurus/core':
-        specifier: ^3.10.0
+        specifier: 3.10.0
         version: 3.10.0(@mdx-js/react@3.1.1(@types/react@18.3.1)(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@6.0.2)
       '@docusaurus/plugin-client-redirects':
-        specifier: ^3.10.0
+        specifier: 3.10.0
         version: 3.10.0(@mdx-js/react@3.1.1(@types/react@18.3.1)(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@6.0.2)
       '@docusaurus/plugin-content-docs':
-        specifier: ^3.10.0
+        specifier: 3.10.0
         version: 3.10.0(@mdx-js/react@3.1.1(@types/react@18.3.1)(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@6.0.2)
       '@docusaurus/plugin-google-gtag':
-        specifier: ^3.10.0
+        specifier: 3.10.0
         version: 3.10.0(@mdx-js/react@3.1.1(@types/react@18.3.1)(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@6.0.2)
       '@docusaurus/preset-classic':
-        specifier: ^3.10.0
+        specifier: 3.10.0
         version: 3.10.0(@algolia/client-search@5.50.1)(@mdx-js/react@3.1.1(@types/react@18.3.1)(react@18.3.1))(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.17.3)(typescript@6.0.2)
       '@emotion/react':
-        specifier: ^11.14.0
+        specifier: 11.14.0
         version: 11.14.0(@types/react@18.3.1)(react@18.3.1)
       '@emotion/styled':
-        specifier: ^11.14.1
+        specifier: 11.14.1
         version: 11.14.1(@emotion/react@11.14.0(@types/react@18.3.1)(react@18.3.1))(@types/react@18.3.1)(react@18.3.1)
       '@mdx-js/loader':
-        specifier: ^3.1.1
+        specifier: 3.1.1
         version: 3.1.1(webpack@5.105.4)
       '@mdx-js/react':
-        specifier: ^3.1.1
+        specifier: 3.1.1
         version: 3.1.1(@types/react@18.3.1)(react@18.3.1)
       '@mui/icons-material':
-        specifier: ^9.0.0
+        specifier: 9.0.0
         version: 9.0.0(@mui/material@9.0.0(@emotion/react@11.14.0(@types/react@18.3.1)(react@18.3.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.1)(react@18.3.1))(@types/react@18.3.1)(react@18.3.1))(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react@18.3.1)(react@18.3.1)
       '@mui/material':
-        specifier: ^9.0.0
+        specifier: 9.0.0
         version: 9.0.0(@emotion/react@11.14.0(@types/react@18.3.1)(react@18.3.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.1)(react@18.3.1))(@types/react@18.3.1)(react@18.3.1))(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/js-cookie':
-        specifier: ^3.0.6
+        specifier: 3.0.6
         version: 3.0.6
       '@types/react-copy-to-clipboard':
-        specifier: ^5.0.7
+        specifier: 5.0.7
         version: 5.0.7
       babel-loader:
-        specifier: ^10.1.1
+        specifier: 10.1.1
         version: 10.1.1(@babel/core@7.29.0)(webpack@5.105.4)
       clsx:
-        specifier: ^2.1.1
+        specifier: 2.1.1
         version: 2.1.1
       js-cookie:
-        specifier: ^3.0.5
+        specifier: 3.0.5
         version: 3.0.5
       pluralize:
-        specifier: ^8.0.0
+        specifier: 8.0.0
         version: 8.0.0
       pnpm:
-        specifier: ^10.33.0
+        specifier: 10.33.0
         version: 10.33.0
       prism-react-renderer:
-        specifier: ^2.4.1
+        specifier: 2.4.1
         version: 2.4.1(react@18.3.1)
       react:
         specifier: 18.3.1
         version: 18.3.1
       react-copy-to-clipboard:
-        specifier: ^5.1.1
+        specifier: 5.1.1
         version: 5.1.1(react@18.3.1)
       react-dom:
         specifier: 18.3.1
         version: 18.3.1(react@18.3.1)
       recoil:
-        specifier: ^0.7.7
+        specifier: 0.7.7
         version: 0.7.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
       '@docusaurus/module-type-aliases':
-        specifier: ^3.10.0
+        specifier: 3.10.0
         version: 3.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@docusaurus/tsconfig':
-        specifier: ^3.10.0
+        specifier: 3.10.0
         version: 3.10.0
       '@docusaurus/types':
-        specifier: ^3.10.0
+        specifier: 3.10.0
         version: 3.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/pluralize':
-        specifier: ^0.0.33
+        specifier: 0.0.33
         version: 0.0.33
       '@types/react':
         specifier: 18.3.1
@@ -110,10 +110,10 @@ importers:
         specifier: 18.3.1
         version: 18.3.1
       cross-env:
-        specifier: ^10.1.0
+        specifier: 10.1.0
         version: 10.1.0
       typescript:
-        specifier: ~6.0.2
+        specifier: 6.0.2
         version: 6.0.2
 
 packages:
@@ -8231,7 +8231,7 @@ snapshots:
 
   '@types/sax@1.2.7':
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 25.6.0
 
   '@types/send@0.17.6':
     dependencies:
