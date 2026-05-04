@@ -1,4 +1,8 @@
 {
+  "breadcrumb.entitiesRoot": {
+    "message": "Références",
+    "description": "Fil d'Ariane : lien vers l'index des entités"
+  },
   "sidebar.help-sidebar.category.human": {
     "message": "Collaborateurs",
     "description": "The label for category 'human' in sidebar 'help-sidebar'"

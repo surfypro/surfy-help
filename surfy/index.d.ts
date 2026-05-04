@@ -729,6 +729,8 @@ declare type StructurePropertyTypeRecord = Record<StructurePropertyNames, IPrope
 
 export declare function SurfyHelpLinkToIndexView(props: {
     code: ObjectTypeIndexViewCodes;
+    /** When set to `alpha`, opens the linked Surfy view on https://app-alpha.surfy.pro instead of production. Omit for normal production links. */
+    environment?: 'alpha';
 }): default_2.JSX.Element;
 
 declare type TranslationMethodDataType = Record<string, string | undefined | null | number | ReactNode>;

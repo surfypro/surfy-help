@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Nouveautés
 
 ## 19 Avril 2026 - v3.4.186

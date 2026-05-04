@@ -62620,13 +62620,14 @@ function ErrorMessage(props) {
 	});
 }
 function SurfyHelpLinkToIndexView(props) {
-	const { code } = props;
+	const { code, environment } = props;
 	const [objectTypeName, viewName] = code.split(":");
 	if (!getObjectTypeDefinitionByName(objectTypeName)) return /* @__PURE__ */ jsx(ErrorMessage, { message: `Object type not found ${objectTypeName}` });
 	const view = getObjectTypeViewCoreByNameMandatory(objectTypeName, viewName);
 	if (!view) return /* @__PURE__ */ jsx(ErrorMessage, { message: `View not found ${objectTypeName} ${viewName}` });
 	const viewUrl = getIndexTabViewPath(objectTypeName, view);
-	const url = `https://app.surfy.pro/?redirectToView=${encodeURIComponent(viewUrl)}`;
+	const appOrigin = environment === "alpha" ? "https://app-alpha.surfy.pro" : "https://app.surfy.pro";
+	const url = `${appOrigin}/?redirectToView=${encodeURIComponent(viewUrl)}`;
 	return /* @__PURE__ */ jsx(HelpTooltip, {
 		title: /* @__PURE__ */ jsx(ObjectTypeIndexViewHelp, {
 			objectTypeName,

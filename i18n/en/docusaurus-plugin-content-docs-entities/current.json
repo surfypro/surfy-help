@@ -1,4 +1,8 @@
 {
+  "breadcrumb.entitiesRoot": {
+    "message": "References",
+    "description": "Breadcrumb: link to entities index"
+  },
   "version.label": {
     "message": "Next",
     "description": "The label for version current"
