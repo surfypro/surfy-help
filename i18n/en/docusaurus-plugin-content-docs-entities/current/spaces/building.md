@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: building
+sidebar_label: "Building"
 ---
 
-<ObjectTypeMenuBreadcrumb code="building" />
-
 # Building
+<ObjectTypeMenuBreadcrumb code="building" title={"Building"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 The building is used to group the floors

@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: room-point-room
+sidebar_label: "Association entre un point et un espace"
 ---
 
-<ObjectTypeMenuBreadcrumb code="roomPointRoom" />
-
 # Association entre un point et un espace
+<ObjectTypeMenuBreadcrumb code="roomPointRoom" title={"Association entre un point et un espace"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 L'association entre un point et un espace permet de conserver l'ordre des points dans un espace afin de constituer un polyon

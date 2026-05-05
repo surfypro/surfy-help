@@ -42,5 +42,9 @@
   "copyright": {
     "message": "Copyright © 2026 Surfy",
     "description": "The footer copyright"
+  },
+  "link.item.label.Nouveautés (alpha)": {
+    "message": "Nouveautés (alpha)",
+    "description": "The label of footer link with label=Nouveautés (alpha) linking to /changelog/app-alpha"
   }
 }

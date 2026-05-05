@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: booking-vehicle-configuration-to-parking-room-type-configuration
+sidebar_label: "Parking space type configuration"
 ---
 
-<ObjectTypeMenuBreadcrumb code="bookingVehicleConfigurationToParkingRoomTypeConfiguration" />
-
 # Parking space type configuration
+<ObjectTypeMenuBreadcrumb code="bookingVehicleConfigurationToParkingRoomTypeConfiguration" title={"Parking space type configuration"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Reservation rules by parking space type

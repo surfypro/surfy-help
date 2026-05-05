@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: person-company-to-item
+sidebar_label: "Intervention on an object"
 ---
 
-<ObjectTypeMenuBreadcrumb code="personCompanyToItem" />
-
 # Intervention on an object
+<ObjectTypeMenuBreadcrumb code="personCompanyToItem" title={"Intervention on an object"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 The interventions of service providers on objects make it possible to define, for example, the date of a visit to a fire extinguisher

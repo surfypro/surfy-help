@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: feature-family
+sidebar_label: "Family of features"
 ---
 
-<ObjectTypeMenuBreadcrumb code="featureFamily" />
-
 # Family of features
+<ObjectTypeMenuBreadcrumb code="featureFamily" title={"Family of features"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A feature family allows you to group related features according to their domain or use.

@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: person-to-vehicle
+sidebar_label: "Affectation véhicule"
 ---
 
-<ObjectTypeMenuBreadcrumb code="personToVehicle" />
-
 # Affectation véhicule
+<ObjectTypeMenuBreadcrumb code="personToVehicle" title={"Affectation véhicule"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Permet d'associer une personne à un ou plusieurs véhicules

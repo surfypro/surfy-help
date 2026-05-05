@@ -10,7 +10,7 @@ Cette page décrit les **changements visibles** déjà disponibles sur l’**app
 
 L’application utilisée au quotidien par la plupart des organisations reste sur [https://app.surfy.pro](https://app.surfy.pro).
 
-Lors d’une mise en production, le contenu utile est repris dans la page [Nouveautés](./app.md) ; les entrées correspondantes sont retirées ou raccourcies ici. Même ton que pour la page production (utilisateur final, pas de nom de client, balises `<P />`, `<LIV />`, `<OT />`, etc.).
+Lors d’une mise en production, le contenu utile est repris dans la page [Nouveautés](./app.md) ; les entrées correspondantes sont retirées ou raccourcies ici.
 
 ## Mai 2026 — en test sur l’alpha
 

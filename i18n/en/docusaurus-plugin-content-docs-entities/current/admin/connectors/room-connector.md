@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: room-connector
+sidebar_label: "Space connector"
 ---
 
-<ObjectTypeMenuBreadcrumb code="roomConnector" />
-
 # Space connector
+<ObjectTypeMenuBreadcrumb code="roomConnector" title={"Space connector"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Space connectors allow you to create a link between several spaces on different floors

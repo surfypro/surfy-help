@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: jup-object-type
+sidebar_label: "Entity type"
 ---
 
-<ObjectTypeMenuBreadcrumb code="jupObjectType" />
-
 # Entity type
+<ObjectTypeMenuBreadcrumb code="jupObjectType" title={"Entity type"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 An entity type defines the different types of objects available in the user interface

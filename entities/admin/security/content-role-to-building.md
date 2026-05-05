@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: content-role-to-building
+sidebar_label: "Association rôle de contenu aux bâtiments"
 ---
 
-<ObjectTypeMenuBreadcrumb code="contentRoleToBuilding" />
-
 # Association rôle de contenu aux bâtiments
+<ObjectTypeMenuBreadcrumb code="contentRoleToBuilding" title={"Association rôle de contenu aux bâtiments"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association rôle de contenu aux bâtiments permet de définir les permissions d'accès spécifiques aux bâtiments pour un rôle donné

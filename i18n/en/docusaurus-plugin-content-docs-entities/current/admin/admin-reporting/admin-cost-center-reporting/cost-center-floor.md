@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: cost-center-floor
+sidebar_label: "Cost center association on floors"
 ---
 
-<ObjectTypeMenuBreadcrumb code="costCenterFloor" />
-
 # Cost center association on floors
+<ObjectTypeMenuBreadcrumb code="costCenterFloor" title={"Cost center association on floors"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A cost center to floor association allows you to define specific cost centers for each floor

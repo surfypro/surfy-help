@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: item-to-person
+sidebar_label: "Object-to-person association"
 ---
 
-<ObjectTypeMenuBreadcrumb code="itemToPerson" />
-
 # Object-to-person association
+<ObjectTypeMenuBreadcrumb code="itemToPerson" title={"Object-to-person association"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Allows you to associate an object with a person (ergonomic seat, locker)

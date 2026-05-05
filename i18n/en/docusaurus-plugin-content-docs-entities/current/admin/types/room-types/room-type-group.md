@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: room-type-group
+sidebar_label: "Space typology group"
 ---
 
-<ObjectTypeMenuBreadcrumb code="roomTypeGroup" />
-
 # Space typology group
+<ObjectTypeMenuBreadcrumb code="roomTypeGroup" title={"Space typology group"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A space typology group allows you to group several types of spaces to facilitate their management and display.

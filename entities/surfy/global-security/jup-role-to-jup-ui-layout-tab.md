@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: jup-role-to-jup-ui-layout-tab
+sidebar_label: "Association rôle aux onglets de plan"
 ---
 
-<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiLayoutTab" />
-
 # Association rôle aux onglets de plan
+<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiLayoutTab" title={"Association rôle aux onglets de plan"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association rôle aux onglets de plan permet de définir les permissions d'accès aux différents onglets de plan pour un rôle

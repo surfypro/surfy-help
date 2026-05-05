@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: company
+sidebar_label: "Business"
 ---
 
-<ObjectTypeMenuBreadcrumb code="company" />
-
 # Business
+<ObjectTypeMenuBreadcrumb code="company" title={"Business"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources

@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: item-fact
+sidebar_label: "Object movement"
 ---
 
-<ObjectTypeMenuBreadcrumb code="itemFact" />
-
 # Object movement
+<ObjectTypeMenuBreadcrumb code="itemFact" title={"Object movement"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 An object movement records the movements or changes in status of an object in the system

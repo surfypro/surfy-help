@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: organization-floor
+sidebar_label: "Association organisation aux étages"
 ---
 
-<ObjectTypeMenuBreadcrumb code="organizationFloor" />
-
 # Association organisation aux étages
+<ObjectTypeMenuBreadcrumb code="organizationFloor" title={"Association organisation aux étages"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association organisation aux étages permet de définir les organisations responsables de chaque étage

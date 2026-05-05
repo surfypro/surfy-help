@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: person-company-to-room-type
+sidebar_label: "Type of provider space"
 ---
 
-<ObjectTypeMenuBreadcrumb code="personCompanyToRoomType" />
-
 # Type of provider space
+<ObjectTypeMenuBreadcrumb code="personCompanyToRoomType" title={"Type of provider space"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 The types of spaces of the service providers make it possible to define a relationship between a type of space and the service provider and to define a mission.

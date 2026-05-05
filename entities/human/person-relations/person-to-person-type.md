@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: person-to-person-type
+sidebar_label: "Type de relation entre personnes"
 ---
 
-<ObjectTypeMenuBreadcrumb code="personToPersonType" />
-
 # Type de relation entre personnes
+<ObjectTypeMenuBreadcrumb code="personToPersonType" title={"Type de relation entre personnes"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un type de relation entre personnes définit les différents types de liens qui peuvent exister entre les personnes

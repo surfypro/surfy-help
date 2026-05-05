@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: item-to-person
+sidebar_label: "Association d'objet à personne"
 ---
 
-<ObjectTypeMenuBreadcrumb code="itemToPerson" />
-
 # Association d'objet à personne
+<ObjectTypeMenuBreadcrumb code="itemToPerson" title={"Association d'objet à personne"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Permet d'associer un objet à une personne (siège ergonomique, casier)

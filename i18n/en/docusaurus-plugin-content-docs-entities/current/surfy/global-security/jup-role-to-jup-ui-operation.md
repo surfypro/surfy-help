@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: jup-role-to-jup-ui-operation
+sidebar_label: "Role association with interface operations"
 ---
 
-<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiOperation" />
-
 # Role association with interface operations
+<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiOperation" title={"Role association with interface operations"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A role association to interface operations allows you to define access permissions to the different interface operations for a role

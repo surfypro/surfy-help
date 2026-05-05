@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: jup-ui-layout
+sidebar_label: "Vision du plan"
 ---
 
-<ObjectTypeMenuBreadcrumb code="jupUiLayout" />
-
 # Vision du plan
+<ObjectTypeMenuBreadcrumb code="jupUiLayout" title={"Vision du plan"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un layout d'interface définit la disposition et l'organisation des éléments dans l'interface utilisateur

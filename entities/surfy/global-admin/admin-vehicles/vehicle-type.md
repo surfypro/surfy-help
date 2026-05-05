@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: vehicle-type
+sidebar_label: "Type de véhicule"
 ---
 
-<ObjectTypeMenuBreadcrumb code="vehicleType" />
-
 # Type de véhicule
+<ObjectTypeMenuBreadcrumb code="vehicleType" title={"Type de véhicule"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un type de véhicule permet de catégoriser les véhicules comme voiture, moto, vélo ...

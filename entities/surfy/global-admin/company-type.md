@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: company-type
+sidebar_label: "Type d'entreprise"
 ---
 
-<ObjectTypeMenuBreadcrumb code="companyType" />
-
 # Type d'entreprise
+<ObjectTypeMenuBreadcrumb code="companyType" title={"Type d'entreprise"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un type d'entreprise permet de catégoriser les entreprises selon leur usage

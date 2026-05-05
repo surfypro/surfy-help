@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: dimension-room
+sidebar_label: "Association calque d'analyse aux espaces"
 ---
 
-<ObjectTypeMenuBreadcrumb code="dimensionRoom" />
-
 # Association calque d'analyse aux espaces
+<ObjectTypeMenuBreadcrumb code="dimensionRoom" title={"Association calque d'analyse aux espaces"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association calque d'analyse aux espaces permet de définir les calques d'analyse spécifiques pour chaque espace

@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: person-company-to-room-type
+sidebar_label: "Type d'espace du prestataire"
 ---
 
-<ObjectTypeMenuBreadcrumb code="personCompanyToRoomType" />
-
 # Type d'espace du prestataire
+<ObjectTypeMenuBreadcrumb code="personCompanyToRoomType" title={"Type d'espace du prestataire"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Les types d'espaces des prestataires permettent de définir une relation entre un type d'espaces et le prestataire et d'y définir une mission

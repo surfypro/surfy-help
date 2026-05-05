@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: dimension-to-person
+sidebar_label: "Affectation au calque d'affectation"
 ---
 
-<ObjectTypeMenuBreadcrumb code="dimensionToPerson" />
-
 # Affectation au calque d'affectation
+<ObjectTypeMenuBreadcrumb code="dimensionToPerson" title={"Affectation au calque d'affectation"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Permet d'affecter une personne à un quartier, territoire ou village

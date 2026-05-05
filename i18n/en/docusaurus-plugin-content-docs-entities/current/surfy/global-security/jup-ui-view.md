@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: jup-ui-view
+sidebar_label: "Interface view"
 ---
 
-<ObjectTypeMenuBreadcrumb code="jupUiView" />
-
 # Interface view
+<ObjectTypeMenuBreadcrumb code="jupUiView" title={"Interface view"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 An interface view defines the different perspectives and displays available in the user interface 

@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: person-to-dimension-booking
+sidebar_label: "Reservation to the people assignment layer"
 ---
 
-<ObjectTypeMenuBreadcrumb code="personToDimensionBooking" />
-
 # Reservation to the people assignment layer
+<ObjectTypeMenuBreadcrumb code="personToDimensionBooking" title={"Reservation to the people assignment layer"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Reservations to people assignment layers are recorded and available with reservation start and end dates

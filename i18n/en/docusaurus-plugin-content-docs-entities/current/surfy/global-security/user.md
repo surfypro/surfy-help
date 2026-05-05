@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: user
+sidebar_label: "User"
 ---
 
-<ObjectTypeMenuBreadcrumb code="user" />
-
 # User
+<ObjectTypeMenuBreadcrumb code="user" title={"User"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

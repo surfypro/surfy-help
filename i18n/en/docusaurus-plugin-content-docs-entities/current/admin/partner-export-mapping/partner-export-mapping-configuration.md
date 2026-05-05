@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: partner-export-mapping-configuration
+sidebar_label: "Configuring Partner Export Transformation"
 ---
 
-<ObjectTypeMenuBreadcrumb code="partnerExportMappingConfiguration" />
-
 # Configuring Partner Export Transformation
+<ObjectTypeMenuBreadcrumb code="partnerExportMappingConfiguration" title={"Configuring Partner Export Transformation"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: campus
+sidebar_label: "Campus"
 ---
 
-<ObjectTypeMenuBreadcrumb code="campus" />
-
 # Campus
+<ObjectTypeMenuBreadcrumb code="campus" title={"Campus"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Le campus est utilisé pour regrouper des bâtiments qui sont au même endroit.

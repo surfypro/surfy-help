@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: jup-role-to-jup-ui-layout
+sidebar_label: "Association rôle aux visions"
 ---
 
-<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiLayout" />
-
 # Association rôle aux visions
+<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiLayout" title={"Association rôle aux visions"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association rôle aux visions permet de définir les permissions d'accès aux différentes visions pour un rôle

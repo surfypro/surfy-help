@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: person-company
+sidebar_label: "Entreprise prestataire"
 ---
 
-<ObjectTypeMenuBreadcrumb code="personCompany" />
-
 # Entreprise prestataire
+<ObjectTypeMenuBreadcrumb code="personCompany" title={"Entreprise prestataire"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 L'entreprise prestataire permet de gérer le personnel prestataire par entreprise d'appartenance

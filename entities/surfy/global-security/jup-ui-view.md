@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: jup-ui-view
+sidebar_label: "Vue d'interface"
 ---
 
-<ObjectTypeMenuBreadcrumb code="jupUiView" />
-
 # Vue d'interface
+<ObjectTypeMenuBreadcrumb code="jupUiView" title={"Vue d'interface"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une vue d'interface définit les différentes perspectives et affichages disponibles dans l'interface utilisateur 

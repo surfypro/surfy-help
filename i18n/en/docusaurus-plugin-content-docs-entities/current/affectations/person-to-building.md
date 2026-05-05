@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: person-to-building
+sidebar_label: "Building assignment"
 ---
 
-<ObjectTypeMenuBreadcrumb code="personToBuilding" />
-
 # Building assignment
+<ObjectTypeMenuBreadcrumb code="personToBuilding" title={"Building assignment"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Allows assigning a person to a building, without additional information. The assignment can be counted or not.

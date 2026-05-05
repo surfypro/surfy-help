@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: jup-ui-operation
+sidebar_label: "Opération d'interface"
 ---
 
-<ObjectTypeMenuBreadcrumb code="jupUiOperation" />
-
 # Opération d'interface
+<ObjectTypeMenuBreadcrumb code="jupUiOperation" title={"Opération d'interface"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une opération d'interface définit les actions et fonctionnalités disponibles dans l'interface utilisateur

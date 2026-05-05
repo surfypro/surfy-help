@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: room-connector-type
+sidebar_label: " Room Connector Type"
 ---
 
-<ObjectTypeMenuBreadcrumb code="roomConnectorType" />
-
 #  Room Connector Type
+<ObjectTypeMenuBreadcrumb code="roomConnectorType" title={" Room Connector Type"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

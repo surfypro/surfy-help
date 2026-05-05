@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: user-registration-tenant-rule-to-content-role
+sidebar_label: "Authentication rule to content role association"
 ---
 
-<ObjectTypeMenuBreadcrumb code="userRegistrationTenantRuleToContentRole" />
-
 # Authentication rule to content role association
+<ObjectTypeMenuBreadcrumb code="userRegistrationTenantRuleToContentRole" title={"Authentication rule to content role association"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: company
+sidebar_label: "Entreprise"
 ---
 
-<ObjectTypeMenuBreadcrumb code="company" />
-
 # Entreprise
+<ObjectTypeMenuBreadcrumb code="company" title={"Entreprise"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une entreprise représente une organisation ou une société qui utilise la plateforme Surfy pour gérer ses espaces de travail et ses ressources

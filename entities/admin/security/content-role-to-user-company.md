@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: content-role-to-user-company
+sidebar_label: "Association rôle de contenu à l'utilisateur de l'entreprise"
 ---
 
-<ObjectTypeMenuBreadcrumb code="contentRoleToUserCompany" />
-
 # Association rôle de contenu à l'utilisateur de l'entreprise
+<ObjectTypeMenuBreadcrumb code="contentRoleToUserCompany" title={"Association rôle de contenu à l'utilisateur de l'entreprise"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association rôle de contenu à l'utilisateur de l'entreprise permet de définir les permissions d'accès spécifiques aux utilisateurs de l'entreprise pour un rôle donné

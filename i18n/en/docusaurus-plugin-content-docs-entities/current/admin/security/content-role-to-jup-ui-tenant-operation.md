@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: content-role-to-jup-ui-tenant-operation
+sidebar_label: "Associating content role to interface operations for an enterprise"
 ---
 
-<ObjectTypeMenuBreadcrumb code="contentRoleToJupUiTenantOperation" />
-
 # Associating content role to interface operations for an enterprise
+<ObjectTypeMenuBreadcrumb code="contentRoleToJupUiTenantOperation" title={"Associating content role to interface operations for an enterprise"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

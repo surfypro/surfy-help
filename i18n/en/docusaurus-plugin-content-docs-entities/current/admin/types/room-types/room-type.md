@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: room-type
+sidebar_label: "Space typology"
 ---
 
-<ObjectTypeMenuBreadcrumb code="roomType" />
-
 # Space typology
+<ObjectTypeMenuBreadcrumb code="roomType" title={"Space typology"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

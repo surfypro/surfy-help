@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: room-type-group-building
+sidebar_label: "Association of building space typology groups"
 ---
 
-<ObjectTypeMenuBreadcrumb code="roomTypeGroupBuilding" />
-
 # Association of building space typology groups
+<ObjectTypeMenuBreadcrumb code="roomTypeGroupBuilding" title={"Association of building space typology groups"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A space typology group association with buildings allows you to define the groups of space types available in each building

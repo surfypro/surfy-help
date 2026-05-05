@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: dimension-type
+sidebar_label: "Type de calque"
 ---
 
-<ObjectTypeMenuBreadcrumb code="dimensionType" />
-
 # Type de calque
+<ObjectTypeMenuBreadcrumb code="dimensionType" title={"Type de calque"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un type de calque permet de catégoriser les calques d'analyse selon leur usage ou leur domaine d'application

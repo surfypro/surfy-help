@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: jup-role-to-jup-ui-view
+sidebar_label: "Association rôle aux vues d'interface"
 ---
 
-<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiView" />
-
 # Association rôle aux vues d'interface
+<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiView" title={"Association rôle aux vues d'interface"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association rôle aux vues d'interface permet de définir les permissions d'accès aux différentes vues de l'interface pour un rôle

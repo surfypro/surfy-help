@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: person-to-building
+sidebar_label: "Affection au bâtiment"
 ---
 
-<ObjectTypeMenuBreadcrumb code="personToBuilding" />
-
 # Affection au bâtiment
+<ObjectTypeMenuBreadcrumb code="personToBuilding" title={"Affection au bâtiment"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Permet d'attribuer une personne à un bâtiment, sans information supplémentaire. L'affectation peut être comptabilisée, ou non.

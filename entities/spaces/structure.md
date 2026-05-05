@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: structure
+sidebar_label: "Structure"
 ---
 
-<ObjectTypeMenuBreadcrumb code="structure" />
-
 # Structure
+<ObjectTypeMenuBreadcrumb code="structure" title={"Structure"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une structure définit une forme géométrique qui peut être utilisée pour calibrer et positionner des éléments sur des cartes

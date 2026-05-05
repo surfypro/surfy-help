@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: vehicle
+sidebar_label: "Vehicle"
 ---
 
-<ObjectTypeMenuBreadcrumb code="vehicle" />
-
 # Vehicle
+<ObjectTypeMenuBreadcrumb code="vehicle" title={"Vehicle"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A vehicle allows you to manage information related to a vehicle

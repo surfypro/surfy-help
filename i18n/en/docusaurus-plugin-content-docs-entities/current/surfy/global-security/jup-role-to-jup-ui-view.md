@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: jup-role-to-jup-ui-view
+sidebar_label: "Role association with interface views"
 ---
 
-<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiView" />
-
 # Role association with interface views
+<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiView" title={"Role association with interface views"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A role to interface view association allows you to define access permissions to the different interface views for a role

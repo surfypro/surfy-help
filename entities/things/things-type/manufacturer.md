@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: manufacturer
+sidebar_label: "Fabricant du type d'objet"
 ---
 
-<ObjectTypeMenuBreadcrumb code="manufacturer" />
-
 # Fabricant du type d'objet
+<ObjectTypeMenuBreadcrumb code="manufacturer" title={"Fabricant du type d'objet"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un fabricant représente une entreprise ou une marque qui produit des objets ou équipements

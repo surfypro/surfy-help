@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: object-3d-model
+sidebar_label: "Modèle 3d"
 ---
 
-<ObjectTypeMenuBreadcrumb code="object3dModel" />
-
 # Modèle 3d
+<ObjectTypeMenuBreadcrumb code="object3dModel" title={"Modèle 3d"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Le Modèle 3D permet une représentation 3D réaliste des objets placés sur le plan; En absence de modèle 3D les objets sont représentés en forme pleine dans la vue 3D

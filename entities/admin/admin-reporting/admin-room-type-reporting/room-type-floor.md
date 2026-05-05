@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: room-type-floor
+sidebar_label: "Association typologie d'espace aux étages"
 ---
 
-<ObjectTypeMenuBreadcrumb code="roomTypeFloor" />
-
 # Association typologie d'espace aux étages
+<ObjectTypeMenuBreadcrumb code="roomTypeFloor" title={"Association typologie d'espace aux étages"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association typologie d'espace aux étages permet de définir les types d'espaces disponibles dans chaque étage

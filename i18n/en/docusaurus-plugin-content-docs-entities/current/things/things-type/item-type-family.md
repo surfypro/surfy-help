@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: item-type-family
+sidebar_label: "Family of object types"
 ---
 
-<ObjectTypeMenuBreadcrumb code="itemTypeFamily" />
-
 # Family of object types
+<ObjectTypeMenuBreadcrumb code="itemTypeFamily" title={"Family of object types"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Allows you to display objects by Family on the plans and in the pdf inventory

@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: user-company
+sidebar_label: "Business user"
 ---
 
-<ObjectTypeMenuBreadcrumb code="userCompany" />
-
 # Business user
+<ObjectTypeMenuBreadcrumb code="userCompany" title={"Business user"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Enterprise users have access to their company's Surfy platform

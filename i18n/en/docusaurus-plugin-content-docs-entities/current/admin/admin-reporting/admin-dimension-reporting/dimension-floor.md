@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: dimension-floor
+sidebar_label: "Association of analysis layer to floors"
 ---
 
-<ObjectTypeMenuBreadcrumb code="dimensionFloor" />
-
 # Association of analysis layer to floors
+<ObjectTypeMenuBreadcrumb code="dimensionFloor" title={"Association of analysis layer to floors"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 An analysis layer to floor association allows you to define specific analysis layers for each floor

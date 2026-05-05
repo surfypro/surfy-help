@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: jup-ui-layout-tab
+sidebar_label: "Map tab"
 ---
 
-<ObjectTypeMenuBreadcrumb code="jupUiLayoutTab" />
-
 # Map tab
+<ObjectTypeMenuBreadcrumb code="jupUiLayoutTab" title={"Map tab"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A plan tab defines the different tabs available in the plan viewing interface.

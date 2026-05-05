@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: booking-vehicle-configuration
+sidebar_label: "Vehicle reservation configuration"
 ---
 
-<ObjectTypeMenuBreadcrumb code="bookingVehicleConfiguration" />
-
 # Vehicle reservation configuration
+<ObjectTypeMenuBreadcrumb code="bookingVehicleConfiguration" title={"Vehicle reservation configuration"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Booking configuration by vehicle type and engine

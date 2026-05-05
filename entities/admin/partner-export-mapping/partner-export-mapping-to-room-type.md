@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: partner-export-mapping-to-room-type
+sidebar_label: "Transformation des exports partenaires pour les types d'espaces"
 ---
 
-<ObjectTypeMenuBreadcrumb code="partnerExportMappingToRoomType" />
-
 # Transformation des exports partenaires pour les types d'espaces
+<ObjectTypeMenuBreadcrumb code="partnerExportMappingToRoomType" title={"Transformation des exports partenaires pour les types d'espaces"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

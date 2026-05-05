@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: person-to-workplace-booking
+sidebar_label: "Reservation at people's workstations"
 ---
 
-<ObjectTypeMenuBreadcrumb code="personToWorkplaceBooking" />
-
 # Reservation at people's workstations
+<ObjectTypeMenuBreadcrumb code="personToWorkplaceBooking" title={"Reservation at people's workstations"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 People's workstation reservations are recorded and available with reservation start and end dates

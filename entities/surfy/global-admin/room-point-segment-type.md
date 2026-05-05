@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: room-point-segment-type
+sidebar_label: "Type de segment"
 ---
 
-<ObjectTypeMenuBreadcrumb code="roomPointSegmentType" />
-
 # Type de segment
+<ObjectTypeMenuBreadcrumb code="roomPointSegmentType" title={"Type de segment"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un type de segment définit les différents types de segments qui peuvent exister entre les points d'espaces

@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: working-location
+sidebar_label: "Work location"
 ---
 
-<ObjectTypeMenuBreadcrumb code="workingLocation" />
-
 # Work location
+<ObjectTypeMenuBreadcrumb code="workingLocation" title={"Work location"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A workplace defines where people work

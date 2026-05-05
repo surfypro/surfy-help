@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: dimension-building
+sidebar_label: "Association calque d'analyse aux bâtiments"
 ---
 
-<ObjectTypeMenuBreadcrumb code="dimensionBuilding" />
-
 # Association calque d'analyse aux bâtiments
+<ObjectTypeMenuBreadcrumb code="dimensionBuilding" title={"Association calque d'analyse aux bâtiments"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association calque d'analyse aux bâtiments permet de définir les calques d'analyse spécifiques pour chaque bâtiment

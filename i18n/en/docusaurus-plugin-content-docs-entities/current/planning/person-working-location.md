@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: person-working-location
+sidebar_label: "People's work location"
 ---
 
-<ObjectTypeMenuBreadcrumb code="personWorkingLocation" />
-
 # People's work location
+<ObjectTypeMenuBreadcrumb code="personWorkingLocation" title={"People's work location"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A workplace of people defines the workplace of people

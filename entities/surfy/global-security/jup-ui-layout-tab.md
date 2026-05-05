@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: jup-ui-layout-tab
+sidebar_label: "Onglet de plan"
 ---
 
-<ObjectTypeMenuBreadcrumb code="jupUiLayoutTab" />
-
 # Onglet de plan
+<ObjectTypeMenuBreadcrumb code="jupUiLayoutTab" title={"Onglet de plan"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un onglet de plan définit les différents onglets disponibles dans l'interface de visualisation des plans

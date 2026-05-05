@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: room
+sidebar_label: "Espace"
 ---
 
-<ObjectTypeMenuBreadcrumb code="room" />
-
 # Espace
+<ObjectTypeMenuBreadcrumb code="room" title={"Espace"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces

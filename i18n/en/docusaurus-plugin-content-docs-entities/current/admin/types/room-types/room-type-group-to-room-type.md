@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: room-type-group-to-room-type
+sidebar_label: "Space typology group association to space typology"
 ---
 
-<ObjectTypeMenuBreadcrumb code="roomTypeGroupToRoomType" />
-
 # Space typology group association to space typology
+<ObjectTypeMenuBreadcrumb code="roomTypeGroupToRoomType" title={"Space typology group association to space typology"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A space typology group to space typology association allows you to define which space types belong to which groups

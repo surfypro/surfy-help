@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: dimension-floor
+sidebar_label: "Association calque d'analyse aux étages"
 ---
 
-<ObjectTypeMenuBreadcrumb code="dimensionFloor" />
-
 # Association calque d'analyse aux étages
+<ObjectTypeMenuBreadcrumb code="dimensionFloor" title={"Association calque d'analyse aux étages"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association calque d'analyse aux étages permet de définir les calques d'analyse spécifiques pour chaque étage

@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: partner-export-mapping
+sidebar_label: "Transformation des exports partenaires"
 ---
 
-<ObjectTypeMenuBreadcrumb code="partnerExportMapping" />
-
 # Transformation des exports partenaires
+<ObjectTypeMenuBreadcrumb code="partnerExportMapping" title={"Transformation des exports partenaires"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

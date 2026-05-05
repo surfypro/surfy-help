@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: person-to-person
+sidebar_label: "Person-to-person relationship"
 ---
 
-<ObjectTypeMenuBreadcrumb code="personToPerson" />
-
 # Person-to-person relationship
+<ObjectTypeMenuBreadcrumb code="personToPerson" title={"Person-to-person relationship"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A person to person relationship allows you to define the hierarchical or organizational links between people

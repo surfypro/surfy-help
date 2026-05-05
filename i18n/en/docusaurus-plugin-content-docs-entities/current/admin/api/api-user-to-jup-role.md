@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: api-user-to-jup-role
+sidebar_label: "Association of API user to role"
 ---
 
-<ObjectTypeMenuBreadcrumb code="apiUserToJupRole" />
-
 # Association of API user to role
+<ObjectTypeMenuBreadcrumb code="apiUserToJupRole" title={"Association of API user to role"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 An API user role association allows you to define access permissions to API features for a specific user

@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: floor
+sidebar_label: "Étage"
 ---
 
-<ObjectTypeMenuBreadcrumb code="floor" />
-
 # Étage
+<ObjectTypeMenuBreadcrumb code="floor" title={"Étage"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Les étages represent un plateau de travail ou un niveau d'un bâtiment

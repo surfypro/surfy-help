@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: structure-point
+sidebar_label: " Structure Point"
 ---
 
-<ObjectTypeMenuBreadcrumb code="structurePoint" />
-
 #  Structure Point
+<ObjectTypeMenuBreadcrumb code="structurePoint" title={" Structure Point"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

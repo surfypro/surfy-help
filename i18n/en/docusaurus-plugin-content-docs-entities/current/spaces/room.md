@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: room
+sidebar_label: "Space"
 ---
 
-<ObjectTypeMenuBreadcrumb code="room" />
-
 # Space
+<ObjectTypeMenuBreadcrumb code="room" title={"Space"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Spaces are workplaces or areas in order to divide a floor into sub-spaces.

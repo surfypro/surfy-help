@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: workplace-type-item-type
+sidebar_label: "Object type in workstation type"
 ---
 
-<ObjectTypeMenuBreadcrumb code="workplaceTypeItemType" />
-
 # Object type in workstation type
+<ObjectTypeMenuBreadcrumb code="workplaceTypeItemType" title={"Object type in workstation type"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: workplace-type
+sidebar_label: "Type of workstation"
 ---
 
-<ObjectTypeMenuBreadcrumb code="workplaceType" />
-
 # Type of workstation
+<ObjectTypeMenuBreadcrumb code="workplaceType" title={"Type of workstation"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

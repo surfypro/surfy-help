@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: structure
+sidebar_label: "Structure"
 ---
 
-<ObjectTypeMenuBreadcrumb code="structure" />
-
 # Structure
+<ObjectTypeMenuBreadcrumb code="structure" title={"Structure"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A structure defines a geometric shape that can be used to calibrate and position features on maps

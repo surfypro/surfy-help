@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: workplace
+sidebar_label: "Workplace"
 ---
 
-<ObjectTypeMenuBreadcrumb code="workplace" />
-
 # Workplace
+<ObjectTypeMenuBreadcrumb code="workplace" title={"Workplace"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

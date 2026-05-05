@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: person-type
+sidebar_label: "Type de personne"
 ---
 
-<ObjectTypeMenuBreadcrumb code="personType" />
-
 # Type de personne
+<ObjectTypeMenuBreadcrumb code="personType" title={"Type de personne"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Permet de catégoriser les personnes selon leur relation avec l'entreprise, par exemple collaborateur (employé interne) ou invité (externe, visiteur)

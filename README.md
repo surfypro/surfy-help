@@ -47,7 +47,7 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
   <P code="entité:nomTechniquePropriété" />
   ```
   Exemple : `<P code="person:lastname" />`, `<P code="item:reference" />`
-- Utiliser le nom technique exact de la propriété (voir fichiers markdown générés dans `entities/` ou fichiers de traduction `entities.translations.*.json`).
+- Utiliser le nom technique exact de la propriété (voir les pages markdown générées sous `entities/` dans ce dépôt, ou les clés i18n `models.<Type>.properties.<nom>.label` dans le dépôt **surfy** `src/translations/i18n-ln/`).
 - Ne jamais écrire la description d'une propriété en dur dans le texte : laisser la balise afficher dynamiquement l'aide et la traduction.
 - Pour les listes de propriétés, remplacer chaque nom par la balise spéciale correspondante.
 - Appliquer la même règle pour les propriétés de type relation (ex : `<P code="person:organization" />`).

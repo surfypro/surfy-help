@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: room-point
+sidebar_label: "Point des espaces"
 ---
 
-<ObjectTypeMenuBreadcrumb code="roomPoint" />
-
 # Point des espaces
+<ObjectTypeMenuBreadcrumb code="roomPoint" title={"Point des espaces"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un point des espaces définit les coordonnées géométriques pour dessiner le contour d'un espace

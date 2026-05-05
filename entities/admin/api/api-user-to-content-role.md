@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: api-user-to-content-role
+sidebar_label: "Association d'utilisateur d'api au rôle de contenu"
 ---
 
-<ObjectTypeMenuBreadcrumb code="apiUserToContentRole" />
-
 # Association d'utilisateur d'api au rôle de contenu
+<ObjectTypeMenuBreadcrumb code="apiUserToContentRole" title={"Association d'utilisateur d'api au rôle de contenu"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

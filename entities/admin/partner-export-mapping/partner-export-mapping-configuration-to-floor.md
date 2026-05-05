@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: partner-export-mapping-configuration-to-floor
+sidebar_label: "Etage inclus dans la configuration de la transformation des exports partenaires"
 ---
 
-<ObjectTypeMenuBreadcrumb code="partnerExportMappingConfigurationToFloor" />
-
 # Etage inclus dans la configuration de la transformation des exports partenaires
+<ObjectTypeMenuBreadcrumb code="partnerExportMappingConfigurationToFloor" title={"Etage inclus dans la configuration de la transformation des exports partenaires"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

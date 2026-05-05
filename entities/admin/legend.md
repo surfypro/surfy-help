@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: legend
+sidebar_label: "Légende"
 ---
 
-<ObjectTypeMenuBreadcrumb code="legend" />
-
 # Légende
+<ObjectTypeMenuBreadcrumb code="legend" title={"Légende"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 La légende permet de configurer les propriété visible quand le plan est sauvegardé en image

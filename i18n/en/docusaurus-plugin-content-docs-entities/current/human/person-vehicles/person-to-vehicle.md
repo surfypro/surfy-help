@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: person-to-vehicle
+sidebar_label: "Vehicle assignment"
 ---
 
-<ObjectTypeMenuBreadcrumb code="personToVehicle" />
-
 # Vehicle assignment
+<ObjectTypeMenuBreadcrumb code="personToVehicle" title={"Vehicle assignment"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Allows you to associate a person with one or more vehicles

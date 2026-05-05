@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: dimension-building
+sidebar_label: "Association of analysis layer to buildings"
 ---
 
-<ObjectTypeMenuBreadcrumb code="dimensionBuilding" />
-
 # Association of analysis layer to buildings
+<ObjectTypeMenuBreadcrumb code="dimensionBuilding" title={"Association of analysis layer to buildings"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 An analysis layer association with buildings allows you to define specific analysis layers for each building

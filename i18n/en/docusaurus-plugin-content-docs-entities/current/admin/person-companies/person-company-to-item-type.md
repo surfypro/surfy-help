@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: person-company-to-item-type
+sidebar_label: "Provider object type"
 ---
 
-<ObjectTypeMenuBreadcrumb code="personCompanyToItemType" />
-
 # Provider object type
+<ObjectTypeMenuBreadcrumb code="personCompanyToItemType" title={"Provider object type"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 The service provider object types make it possible to define a relationship between the object type and the service provider and to define the mission.

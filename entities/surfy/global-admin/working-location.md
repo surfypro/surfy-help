@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: working-location
+sidebar_label: "Emplacement de travail"
 ---
 
-<ObjectTypeMenuBreadcrumb code="workingLocation" />
-
 # Emplacement de travail
+<ObjectTypeMenuBreadcrumb code="workingLocation" title={"Emplacement de travail"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un emplacement de travail définit le lieu de travail des personnes

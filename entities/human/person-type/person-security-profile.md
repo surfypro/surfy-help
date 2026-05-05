@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: person-security-profile
+sidebar_label: "Profil de sécurité des personnes"
 ---
 
-<ObjectTypeMenuBreadcrumb code="personSecurityProfile" />
-
 # Profil de sécurité des personnes
+<ObjectTypeMenuBreadcrumb code="personSecurityProfile" title={"Profil de sécurité des personnes"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Permet de définir les différents profils sécurité associables à des personnes

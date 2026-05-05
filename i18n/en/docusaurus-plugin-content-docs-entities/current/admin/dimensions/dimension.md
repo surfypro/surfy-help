@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: dimension
+sidebar_label: "Analysis Layer"
 ---
 
-<ObjectTypeMenuBreadcrumb code="dimension" />
-
 # Analysis Layer
+<ObjectTypeMenuBreadcrumb code="dimension" title={"Analysis Layer"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 An analysis layer allows categorizing and analyzing spaces according to different criteria for statistical analysis and reporting

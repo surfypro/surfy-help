@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: item-type
+sidebar_label: "Type d'objet"
 ---
 
-<ObjectTypeMenuBreadcrumb code="itemType" />
-
 # Type d'objet
+<ObjectTypeMenuBreadcrumb code="itemType" title={"Type d'objet"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un type d'objet permet de catégoriser et définir les caractéristiques des objets physiques présents dans les espaces de travail

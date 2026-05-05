@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: user-registration-tenant-rule
+sidebar_label: "Règle d'authentification"
 ---
 
-<ObjectTypeMenuBreadcrumb code="userRegistrationTenantRule" />
-
 # Règle d'authentification
+<ObjectTypeMenuBreadcrumb code="userRegistrationTenantRule" title={"Règle d'authentification"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

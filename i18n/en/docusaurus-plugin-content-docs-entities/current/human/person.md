@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: person
+sidebar_label: "Person"
 ---
 
-<ObjectTypeMenuBreadcrumb code="person" />
-
 # Person
+<ObjectTypeMenuBreadcrumb code="person" title={"Person"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 These are the people entered into Surfy's database

@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: jup-ui-layout
+sidebar_label: "View of the plan"
 ---
 
-<ObjectTypeMenuBreadcrumb code="jupUiLayout" />
-
 # View of the plan
+<ObjectTypeMenuBreadcrumb code="jupUiLayout" title={"View of the plan"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 An interface layout defines the arrangement and organization of elements in the user interface

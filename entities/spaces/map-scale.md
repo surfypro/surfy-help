@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: map-scale
+sidebar_label: "Échelle plan"
 ---
 
-<ObjectTypeMenuBreadcrumb code="mapScale" />
-
 # Échelle plan
+<ObjectTypeMenuBreadcrumb code="mapScale" title={"Échelle plan"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une échelle de plan permet de définir les paramètres d'affichage et de mise à l'échelle pour les plans

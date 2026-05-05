@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: user-registration-tenant-rule-to-jup-role
+sidebar_label: "Association de règle d'authentification à rôle"
 ---
 
-<ObjectTypeMenuBreadcrumb code="userRegistrationTenantRuleToJupRole" />
-
 # Association de règle d'authentification à rôle
+<ObjectTypeMenuBreadcrumb code="userRegistrationTenantRuleToJupRole" title={"Association de règle d'authentification à rôle"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

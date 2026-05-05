@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: user-company
+sidebar_label: "Utilisateur de l'entreprise"
 ---
 
-<ObjectTypeMenuBreadcrumb code="userCompany" />
-
 # Utilisateur de l'entreprise
+<ObjectTypeMenuBreadcrumb code="userCompany" title={"Utilisateur de l'entreprise"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Les utilisateurs de l'entreprise ont accès à la plateforme Surfy de leur entreprise

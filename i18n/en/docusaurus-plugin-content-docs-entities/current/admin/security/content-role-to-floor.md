@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: content-role-to-floor
+sidebar_label: "Association role of content to floors"
 ---
 
-<ObjectTypeMenuBreadcrumb code="contentRoleToFloor" />
-
 # Association role of content to floors
+<ObjectTypeMenuBreadcrumb code="contentRoleToFloor" title={"Association role of content to floors"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A content role to floor association allows you to define floor-specific access permissions for a given role

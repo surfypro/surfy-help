@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: person-state
+sidebar_label: "Status of persons"
 ---
 
-<ObjectTypeMenuBreadcrumb code="personState" />
-
 # Status of persons
+<ObjectTypeMenuBreadcrumb code="personState" title={"Status of persons"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Allows you to define all types of contracts between people and the company

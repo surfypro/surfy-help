@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: workplace-type-item-type
+sidebar_label: "Type d'objet dans type de poste de travail"
 ---
 
-<ObjectTypeMenuBreadcrumb code="workplaceTypeItemType" />
-
 # Type d'objet dans type de poste de travail
+<ObjectTypeMenuBreadcrumb code="workplaceTypeItemType" title={"Type d'objet dans type de poste de travail"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

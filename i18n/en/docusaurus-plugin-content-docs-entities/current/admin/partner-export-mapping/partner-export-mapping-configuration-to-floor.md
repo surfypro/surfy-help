@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: partner-export-mapping-configuration-to-floor
+sidebar_label: "Floor included in the configuration of the transformation of partner exports"
 ---
 
-<ObjectTypeMenuBreadcrumb code="partnerExportMappingConfigurationToFloor" />
-
 # Floor included in the configuration of the transformation of partner exports
+<ObjectTypeMenuBreadcrumb code="partnerExportMappingConfigurationToFloor" title={"Floor included in the configuration of the transformation of partner exports"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

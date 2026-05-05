@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: person-company
+sidebar_label: "Service provider company"
 ---
 
-<ObjectTypeMenuBreadcrumb code="personCompany" />
-
 # Service provider company
+<ObjectTypeMenuBreadcrumb code="personCompany" title={"Service provider company"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 The service provider company allows you to manage service provider personnel by company to which they belong

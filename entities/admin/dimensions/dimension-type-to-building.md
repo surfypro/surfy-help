@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: dimension-type-to-building
+sidebar_label: "Type de calque d'affectation du bâtiment"
 ---
 
-<ObjectTypeMenuBreadcrumb code="dimensionTypeToBuilding" />
-
 # Type de calque d'affectation du bâtiment
+<ObjectTypeMenuBreadcrumb code="dimensionTypeToBuilding" title={"Type de calque d'affectation du bâtiment"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Les types de calques d'affectation du bâtiment permettent de définir les différents types de calques d'affectation du bâtiment. En associant un type de calque d'affectation à un bâtiment, cela permet de transformer un calque d'analyse en calque d'affectation.

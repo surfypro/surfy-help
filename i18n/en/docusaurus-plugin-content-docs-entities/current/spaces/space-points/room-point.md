@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: room-point
+sidebar_label: "Point of spaces"
 ---
 
-<ObjectTypeMenuBreadcrumb code="roomPoint" />
-
 # Point of spaces
+<ObjectTypeMenuBreadcrumb code="roomPoint" title={"Point of spaces"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A point in spaces defines the geometric coordinates for drawing the outline of a space

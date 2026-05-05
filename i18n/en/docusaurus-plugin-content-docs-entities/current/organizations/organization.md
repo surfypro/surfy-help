@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: organization
+sidebar_label: "Organization"
 ---
 
-<ObjectTypeMenuBreadcrumb code="organization" />
-
 # Organization
+<ObjectTypeMenuBreadcrumb code="organization" title={"Organization"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Organizations have two hierarchical levels: departments and services, and help define the organizational structure of the company.

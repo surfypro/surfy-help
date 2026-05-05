@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: content-role
+sidebar_label: "Content role"
 ---
 
-<ObjectTypeMenuBreadcrumb code="contentRole" />
-
 # Content role
+<ObjectTypeMenuBreadcrumb code="contentRole" title={"Content role"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A content role defines access permissions to different platform data for users

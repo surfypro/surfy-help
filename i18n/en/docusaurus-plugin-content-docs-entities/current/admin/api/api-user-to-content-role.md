@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: api-user-to-content-role
+sidebar_label: "Associating API user with the content role"
 ---
 
-<ObjectTypeMenuBreadcrumb code="apiUserToContentRole" />
-
 # Associating API user with the content role
+<ObjectTypeMenuBreadcrumb code="apiUserToContentRole" title={"Associating API user with the content role"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

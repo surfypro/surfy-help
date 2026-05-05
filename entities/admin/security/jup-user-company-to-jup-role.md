@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: jup-user-company-to-jup-role
+sidebar_label: "Association utilisateur de l'entreprise au rôle"
 ---
 
-<ObjectTypeMenuBreadcrumb code="jupUserCompanyToJupRole" />
-
 # Association utilisateur de l'entreprise au rôle
+<ObjectTypeMenuBreadcrumb code="jupUserCompanyToJupRole" title={"Association utilisateur de l'entreprise au rôle"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association utilisateur de l'entreprise au rôle permet de définir les permissions d'accès aux fonctionnalités pour un utilisateur spécifique de l'entreprise

@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: opener-post-message-host
+sidebar_label: "Hôte de message pour fenêtre contextuelle"
 ---
 
-<ObjectTypeMenuBreadcrumb code="openerPostMessageHost" />
-
 # Hôte de message pour fenêtre contextuelle
+<ObjectTypeMenuBreadcrumb code="openerPostMessageHost" title={"Hôte de message pour fenêtre contextuelle"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un hôte de message pour fenêtre contextuelle est un élément qui permet de communiquer avec une fenêtre contextuelle ouverte sur les actions du plan

@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: partner-api-credential
+sidebar_label: "Clé d'api partenaire"
 ---
 
-<ObjectTypeMenuBreadcrumb code="partnerApiCredential" />
-
 # Clé d'api partenaire
+<ObjectTypeMenuBreadcrumb code="partnerApiCredential" title={"Clé d'api partenaire"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une clé d'API partenaire permet d'authentifier et d'autoriser l'accès aux API pour les partenaires externes

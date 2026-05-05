@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: fact
+sidebar_label: "Fait"
 ---
 
-<ObjectTypeMenuBreadcrumb code="fact" />
-
 # Fait
+<ObjectTypeMenuBreadcrumb code="fact" title={"Fait"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un fait représente une donnée factuelle ou un événement enregistré dans le système pour des analyses et des rapports

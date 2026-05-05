@@ -173,6 +173,10 @@
   },
   "sidebar.help-sidebar.category.vehicle-planning-admin": {
     "message": "Administration des plannings des véhicules",
-    "description": "no-description"
+    "description": "The label for category 'vehicle-planning-admin' in sidebar 'help-sidebar'"
+  },
+  "sidebar.help-sidebar.category.person-to-room-booking": {
+    "message": "Réservation à l'espace des personnes",
+    "description": "The label for the doc item 'person-to-room-booking' in sidebar 'help-sidebar'"
   }
 }

@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: content-role-to-floor
+sidebar_label: "Association rôle de contenu aux étages"
 ---
 
-<ObjectTypeMenuBreadcrumb code="contentRoleToFloor" />
-
 # Association rôle de contenu aux étages
+<ObjectTypeMenuBreadcrumb code="contentRoleToFloor" title={"Association rôle de contenu aux étages"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association rôle de contenu aux étages permet de définir les permissions d'accès spécifiques aux étages pour un rôle donné

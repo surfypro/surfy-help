@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: item
+sidebar_label: "Objet"
 ---
 
-<ObjectTypeMenuBreadcrumb code="item" />
-
 # Objet
+<ObjectTypeMenuBreadcrumb code="item" title={"Objet"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un objet représente un élément physique ou matériel présent dans les espaces de travail

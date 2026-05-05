@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: jup-object-type
+sidebar_label: "Type d'entité"
 ---
 
-<ObjectTypeMenuBreadcrumb code="jupObjectType" />
-
 # Type d'entité
+<ObjectTypeMenuBreadcrumb code="jupObjectType" title={"Type d'entité"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un type d'entité définit les différents types d'objets disponibles dans l'interface utilisateur

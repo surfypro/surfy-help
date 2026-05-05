@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: room-affectation
+sidebar_label: "Space allocation"
 ---
 
-<ObjectTypeMenuBreadcrumb code="roomAffectation" />
-
 # Space allocation
+<ObjectTypeMenuBreadcrumb code="roomAffectation" title={"Space allocation"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Allows you to assign a person to a single space

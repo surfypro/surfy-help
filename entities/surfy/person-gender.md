@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: person-gender
+sidebar_label: "Genre de la personne"
 ---
 
-<ObjectTypeMenuBreadcrumb code="personGender" />
-
 # Genre de la personne
+<ObjectTypeMenuBreadcrumb code="personGender" title={"Genre de la personne"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Permet de dénombrer chaque genre, par exemple pour la gestion des sanitaires

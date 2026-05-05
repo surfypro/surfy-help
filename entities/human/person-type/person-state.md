@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: person-state
+sidebar_label: "Statut des personnes"
 ---
 
-<ObjectTypeMenuBreadcrumb code="personState" />
-
 # Statut des personnes
+<ObjectTypeMenuBreadcrumb code="personState" title={"Statut des personnes"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Permet de définir tous les types de contrat des personnes vis à vis de l'entreprise

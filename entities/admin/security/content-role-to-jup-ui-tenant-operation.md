@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: content-role-to-jup-ui-tenant-operation
+sidebar_label: "Association rôle de contenu aux opérations d'interface pour une entreprise"
 ---
 
-<ObjectTypeMenuBreadcrumb code="contentRoleToJupUiTenantOperation" />
-
 # Association rôle de contenu aux opérations d'interface pour une entreprise
+<ObjectTypeMenuBreadcrumb code="contentRoleToJupUiTenantOperation" title={"Association rôle de contenu aux opérations d'interface pour une entreprise"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

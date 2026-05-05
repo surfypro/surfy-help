@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: person-to-room-booking
+sidebar_label: "Reservation for the people area"
 ---
 
-<ObjectTypeMenuBreadcrumb code="personToRoomBooking" />
-
 # Reservation for the people area
+<ObjectTypeMenuBreadcrumb code="personToRoomBooking" title={"Reservation for the people area"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Reservations for people's spaces are recorded and available with the reservation start and end dates

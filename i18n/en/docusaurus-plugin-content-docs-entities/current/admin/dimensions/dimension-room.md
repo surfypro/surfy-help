@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: dimension-room
+sidebar_label: "Association of analysis layer to spaces"
 ---
 
-<ObjectTypeMenuBreadcrumb code="dimensionRoom" />
-
 # Association of analysis layer to spaces
+<ObjectTypeMenuBreadcrumb code="dimensionRoom" title={"Association of analysis layer to spaces"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 An analysis layer association to spaces allows you to define specific analysis layers for each space

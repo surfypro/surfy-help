@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: api-user
+sidebar_label: "Utilisateur d'api"
 ---
 
-<ObjectTypeMenuBreadcrumb code="apiUser" />
-
 # Utilisateur d'api
+<ObjectTypeMenuBreadcrumb code="apiUser" title={"Utilisateur d'api"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

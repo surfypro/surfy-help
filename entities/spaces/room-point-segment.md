@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: room-point-segment
+sidebar_label: "Qualification de segment"
 ---
 
-<ObjectTypeMenuBreadcrumb code="roomPointSegment" />
-
 # Qualification de segment
+<ObjectTypeMenuBreadcrumb code="roomPointSegment" title={"Qualification de segment"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une qualification de segment permet de définir les propriétés d'affichage et d'orientation d'un segment entre deux points d'espace

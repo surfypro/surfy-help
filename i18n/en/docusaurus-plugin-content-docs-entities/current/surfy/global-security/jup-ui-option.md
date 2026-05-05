@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: jup-ui-option
+sidebar_label: "Interface option"
 ---
 
-<ObjectTypeMenuBreadcrumb code="jupUiOption" />
-
 # Interface option
+<ObjectTypeMenuBreadcrumb code="jupUiOption" title={"Interface option"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 An interface option defines the settings and configurations available in the user interface

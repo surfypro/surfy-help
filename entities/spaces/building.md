@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: building
+sidebar_label: "Bâtiment"
 ---
 
-<ObjectTypeMenuBreadcrumb code="building" />
-
 # Bâtiment
+<ObjectTypeMenuBreadcrumb code="building" title={"Bâtiment"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Le bâtiment est utilisé pour regrouper les étages

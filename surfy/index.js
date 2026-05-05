@@ -1,6 +1,6 @@
 import * as React$1 from "react";
 import React, { Children, cloneElement, createContext, forwardRef, isValidElement, useCallback, useContext, useDebugValue, useEffect, useMemo, useReducer } from "react";
-import { Box, Fade, IconButton, Paper, Tooltip, Typography, styled, tooltipClasses } from "@mui/material";
+import { Box, Breadcrumbs, Fade, IconButton, Paper, Tooltip, Typography, styled, tooltipClasses } from "@mui/material";
 import { Fragment, jsx, jsxs } from "react/jsx-runtime";
 import * as pluralize from "pluralize";
 import { RecoilRoot } from "recoil";
@@ -30,6 +30,836 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 	value: mod,
 	enumerable: true
 }) : target, mod));
+//#endregion
+//#region node_modules/.pnpm/jotai@2.19.1_@babel+core@7.29.0_@babel+template@7.28.6_@types+react@18.3.1_react@18.3.1/node_modules/jotai/esm/vanilla/internals.mjs
+function hasInitialValue(atom) {
+	return "init" in atom;
+}
+function isActuallyWritableAtom(atom) {
+	return !!atom.write;
+}
+function hasOnMount(atom) {
+	return !!atom.onMount;
+}
+function isAtomStateInitialized(atomState) {
+	return "v" in atomState || "e" in atomState;
+}
+function returnAtomValue(atomState) {
+	if ("e" in atomState) throw atomState.e;
+	return atomState.v;
+}
+function isPromiseLike$1(p) {
+	return typeof (p == null ? void 0 : p.then) === "function";
+}
+function addPendingPromiseToDependency(atom, promise, dependencyAtomState) {
+	if (!dependencyAtomState.p.has(atom)) {
+		dependencyAtomState.p.add(atom);
+		const cleanup = () => dependencyAtomState.p.delete(atom);
+		promise.then(cleanup, cleanup);
+	}
+}
+function getMountedOrPendingDependents(atom, atomState, mountedMap) {
+	const mounted = mountedMap.get(atom);
+	const mountedDependents = mounted == null ? void 0 : mounted.t;
+	const pendingDependents = atomState.p;
+	if (!(mountedDependents == null ? void 0 : mountedDependents.size)) return pendingDependents;
+	if (!pendingDependents.size) return mountedDependents;
+	const dependents = new Set(mountedDependents);
+	for (const a of pendingDependents) dependents.add(a);
+	return dependents;
+}
+var BUILDING_BLOCK_atomRead = (_store, atom, ...params) => atom.read(...params);
+var BUILDING_BLOCK_atomWrite = (_store, atom, ...params) => atom.write(...params);
+var BUILDING_BLOCK_atomOnInit = (store, atom) => {
+	var _a;
+	return (_a = atom.INTERNAL_onInit) == null ? void 0 : _a.call(atom, store);
+};
+var BUILDING_BLOCK_atomOnMount = (_store, atom, setAtom) => {
+	var _a;
+	return (_a = atom.onMount) == null ? void 0 : _a.call(atom, setAtom);
+};
+var BUILDING_BLOCK_ensureAtomState = (store, atom) => {
+	var _a;
+	const buildingBlocks = getInternalBuildingBlocks(store);
+	const atomStateMap = buildingBlocks[0];
+	const storeHooks = buildingBlocks[6];
+	const atomOnInit = buildingBlocks[9];
+	let atomState = atomStateMap.get(atom);
+	if (!atomState) {
+		atomState = {
+			d: /* @__PURE__ */ new Map(),
+			p: /* @__PURE__ */ new Set(),
+			n: 0
+		};
+		atomStateMap.set(atom, atomState);
+		(_a = storeHooks.i) == null || _a.call(storeHooks, atom);
+		atomOnInit?.(store, atom);
+	}
+	return atomState;
+};
+var BUILDING_BLOCK_flushCallbacks = (store) => {
+	var _a;
+	const buildingBlocks = getInternalBuildingBlocks(store);
+	const mountedMap = buildingBlocks[1];
+	const changedAtoms = buildingBlocks[3];
+	const mountCallbacks = buildingBlocks[4];
+	const unmountCallbacks = buildingBlocks[5];
+	const storeHooks = buildingBlocks[6];
+	const recomputeInvalidatedAtoms = buildingBlocks[13];
+	if (!storeHooks.f && !changedAtoms.size && !mountCallbacks.size && !unmountCallbacks.size) return;
+	const errors = [];
+	const call = (fn) => {
+		try {
+			fn();
+		} catch (e) {
+			errors.push(e);
+		}
+	};
+	do {
+		if (storeHooks.f) call(storeHooks.f);
+		const callbacks = /* @__PURE__ */ new Set();
+		for (const atom of changedAtoms) {
+			const listeners = (_a = mountedMap.get(atom)) == null ? void 0 : _a.l;
+			if (listeners) for (const listener of listeners) callbacks.add(listener);
+		}
+		changedAtoms.clear();
+		for (const fn of unmountCallbacks) callbacks.add(fn);
+		unmountCallbacks.clear();
+		for (const fn of mountCallbacks) callbacks.add(fn);
+		mountCallbacks.clear();
+		for (const fn of callbacks) call(fn);
+		if (changedAtoms.size) recomputeInvalidatedAtoms(store);
+	} while (changedAtoms.size || unmountCallbacks.size || mountCallbacks.size);
+	if (errors.length) throw new AggregateError(errors);
+};
+var BUILDING_BLOCK_recomputeInvalidatedAtoms = (store) => {
+	const buildingBlocks = getInternalBuildingBlocks(store);
+	const mountedMap = buildingBlocks[1];
+	const invalidatedAtoms = buildingBlocks[2];
+	const changedAtoms = buildingBlocks[3];
+	const ensureAtomState = buildingBlocks[11];
+	const readAtomState = buildingBlocks[14];
+	const mountDependencies = buildingBlocks[17];
+	if (!changedAtoms.size) return;
+	const sortedReversedAtoms = [];
+	const sortedReversedStates = [];
+	const visiting = /* @__PURE__ */ new WeakSet();
+	const visited = /* @__PURE__ */ new WeakSet();
+	const stackAtoms = [];
+	const stackStates = [];
+	for (const atom of changedAtoms) {
+		stackAtoms.push(atom);
+		stackStates.push(ensureAtomState(store, atom));
+	}
+	while (stackAtoms.length) {
+		const top = stackAtoms.length - 1;
+		const a = stackAtoms[top];
+		const aState = stackStates[top];
+		if (visited.has(a)) {
+			stackAtoms.pop();
+			stackStates.pop();
+			continue;
+		}
+		if (visiting.has(a)) {
+			if (invalidatedAtoms.get(a) === aState.n) {
+				sortedReversedAtoms.push(a);
+				sortedReversedStates.push(aState);
+			}
+			visited.add(a);
+			stackAtoms.pop();
+			stackStates.pop();
+			continue;
+		}
+		visiting.add(a);
+		for (const d of getMountedOrPendingDependents(a, aState, mountedMap)) if (!visiting.has(d)) {
+			stackAtoms.push(d);
+			stackStates.push(ensureAtomState(store, d));
+		}
+	}
+	for (let i = sortedReversedAtoms.length - 1; i >= 0; --i) {
+		const a = sortedReversedAtoms[i];
+		const aState = sortedReversedStates[i];
+		let hasChangedDeps = false;
+		for (const dep of aState.d.keys()) if (dep !== a && changedAtoms.has(dep)) {
+			hasChangedDeps = true;
+			break;
+		}
+		if (hasChangedDeps) {
+			invalidatedAtoms.set(a, aState.n);
+			readAtomState(store, a);
+			mountDependencies(store, a);
+		}
+		invalidatedAtoms.delete(a);
+	}
+};
+var BUILDING_BLOCK_readAtomState = (store, atom) => {
+	var _a, _b;
+	const buildingBlocks = getInternalBuildingBlocks(store);
+	const mountedMap = buildingBlocks[1];
+	const invalidatedAtoms = buildingBlocks[2];
+	const changedAtoms = buildingBlocks[3];
+	const storeHooks = buildingBlocks[6];
+	const atomRead = buildingBlocks[7];
+	const ensureAtomState = buildingBlocks[11];
+	const flushCallbacks = buildingBlocks[12];
+	const recomputeInvalidatedAtoms = buildingBlocks[13];
+	const readAtomState = buildingBlocks[14];
+	const writeAtomState = buildingBlocks[16];
+	const mountDependencies = buildingBlocks[17];
+	const setAtomStateValueOrPromise = buildingBlocks[20];
+	const registerAbortHandler = buildingBlocks[26];
+	const storeEpochHolder = buildingBlocks[28];
+	const atomState = ensureAtomState(store, atom);
+	const storeEpochNumber = storeEpochHolder[0];
+	if (isAtomStateInitialized(atomState)) {
+		if (mountedMap.has(atom) && invalidatedAtoms.get(atom) !== atomState.n || atomState.m === storeEpochNumber) {
+			atomState.m = storeEpochNumber;
+			return atomState;
+		}
+		let hasChangedDeps = false;
+		for (const [a, n] of atomState.d) if (readAtomState(store, a).n !== n) {
+			hasChangedDeps = true;
+			break;
+		}
+		if (!hasChangedDeps) {
+			atomState.m = storeEpochNumber;
+			return atomState;
+		}
+	}
+	let isSync = true;
+	const prevDeps = new Set(atomState.d.keys());
+	const pruneDependencies = () => {
+		for (const a of prevDeps) atomState.d.delete(a);
+	};
+	const mountDependenciesIfAsync = () => {
+		if (mountedMap.has(atom)) {
+			const shouldRecompute = !changedAtoms.size;
+			mountDependencies(store, atom);
+			if (shouldRecompute) {
+				recomputeInvalidatedAtoms(store);
+				flushCallbacks(store);
+			}
+		}
+	};
+	const getter = (a) => {
+		var _a2;
+		if (a === atom) {
+			const aState2 = ensureAtomState(store, a);
+			if (!isAtomStateInitialized(aState2)) if (hasInitialValue(a)) setAtomStateValueOrPromise(store, a, a.init);
+			else throw new Error("no atom init");
+			return returnAtomValue(aState2);
+		}
+		const aState = readAtomState(store, a);
+		try {
+			return returnAtomValue(aState);
+		} finally {
+			prevDeps.delete(a);
+			atomState.d.set(a, aState.n);
+			if (isPromiseLike$1(atomState.v)) addPendingPromiseToDependency(atom, atomState.v, aState);
+			if (mountedMap.has(atom)) (_a2 = mountedMap.get(a)) == null || _a2.t.add(atom);
+			if (!isSync) mountDependenciesIfAsync();
+		}
+	};
+	let controller;
+	let setSelf;
+	const options = {
+		get signal() {
+			if (!controller) controller = new AbortController();
+			return controller.signal;
+		},
+		get setSelf() {
+			if (!setSelf && isActuallyWritableAtom(atom)) setSelf = (...args) => {
+				if (!isSync) try {
+					return writeAtomState(store, atom, ...args);
+				} finally {
+					recomputeInvalidatedAtoms(store);
+					flushCallbacks(store);
+				}
+			};
+			return setSelf;
+		}
+	};
+	const prevEpochNumber = atomState.n;
+	const prevInvalidated = invalidatedAtoms.get(atom) === prevEpochNumber;
+	try {
+		const valueOrPromise = atomRead(store, atom, getter, options);
+		setAtomStateValueOrPromise(store, atom, valueOrPromise);
+		if (isPromiseLike$1(valueOrPromise)) {
+			registerAbortHandler(store, valueOrPromise, () => controller == null ? void 0 : controller.abort());
+			const settle = () => {
+				pruneDependencies();
+				mountDependenciesIfAsync();
+			};
+			valueOrPromise.then(settle, settle);
+		} else pruneDependencies();
+		(_a = storeHooks.r) == null || _a.call(storeHooks, atom);
+		atomState.m = storeEpochNumber;
+		return atomState;
+	} catch (error) {
+		delete atomState.v;
+		atomState.e = error;
+		++atomState.n;
+		atomState.m = storeEpochNumber;
+		return atomState;
+	} finally {
+		isSync = false;
+		if (atomState.n !== prevEpochNumber && prevInvalidated) {
+			invalidatedAtoms.set(atom, atomState.n);
+			changedAtoms.add(atom);
+			(_b = storeHooks.c) == null || _b.call(storeHooks, atom);
+		}
+	}
+};
+var BUILDING_BLOCK_invalidateDependents = (store, atom) => {
+	const buildingBlocks = getInternalBuildingBlocks(store);
+	const mountedMap = buildingBlocks[1];
+	const invalidatedAtoms = buildingBlocks[2];
+	const ensureAtomState = buildingBlocks[11];
+	const stack = [atom];
+	while (stack.length) {
+		const a = stack.pop();
+		const aState = ensureAtomState(store, a);
+		for (const d of getMountedOrPendingDependents(a, aState, mountedMap)) {
+			const dState = ensureAtomState(store, d);
+			if (invalidatedAtoms.get(d) !== dState.n) {
+				invalidatedAtoms.set(d, dState.n);
+				stack.push(d);
+			}
+		}
+	}
+};
+var BUILDING_BLOCK_writeAtomState = (store, atom, ...args) => {
+	const buildingBlocks = getInternalBuildingBlocks(store);
+	const changedAtoms = buildingBlocks[3];
+	const storeHooks = buildingBlocks[6];
+	const atomWrite = buildingBlocks[8];
+	const ensureAtomState = buildingBlocks[11];
+	const flushCallbacks = buildingBlocks[12];
+	const recomputeInvalidatedAtoms = buildingBlocks[13];
+	const readAtomState = buildingBlocks[14];
+	const invalidateDependents = buildingBlocks[15];
+	const writeAtomState = buildingBlocks[16];
+	const mountDependencies = buildingBlocks[17];
+	const setAtomStateValueOrPromise = buildingBlocks[20];
+	const storeEpochHolder = buildingBlocks[28];
+	let isSync = true;
+	const getter = (a) => returnAtomValue(readAtomState(store, a));
+	const setter = (a, ...args2) => {
+		var _a;
+		const aState = ensureAtomState(store, a);
+		try {
+			if (a === atom) {
+				if (!hasInitialValue(a)) throw new Error("atom not writable");
+				const prevEpochNumber = aState.n;
+				const v = args2[0];
+				setAtomStateValueOrPromise(store, a, v);
+				mountDependencies(store, a);
+				if (prevEpochNumber !== aState.n) {
+					++storeEpochHolder[0];
+					changedAtoms.add(a);
+					invalidateDependents(store, a);
+					(_a = storeHooks.c) == null || _a.call(storeHooks, a);
+				}
+				return;
+			} else return writeAtomState(store, a, ...args2);
+		} finally {
+			if (!isSync) {
+				recomputeInvalidatedAtoms(store);
+				flushCallbacks(store);
+			}
+		}
+	};
+	try {
+		return atomWrite(store, atom, getter, setter, ...args);
+	} finally {
+		isSync = false;
+	}
+};
+var BUILDING_BLOCK_mountDependencies = (store, atom) => {
+	var _a;
+	const buildingBlocks = getInternalBuildingBlocks(store);
+	const mountedMap = buildingBlocks[1];
+	const changedAtoms = buildingBlocks[3];
+	const storeHooks = buildingBlocks[6];
+	const ensureAtomState = buildingBlocks[11];
+	const invalidateDependents = buildingBlocks[15];
+	const mountAtom = buildingBlocks[18];
+	const unmountAtom = buildingBlocks[19];
+	const atomState = ensureAtomState(store, atom);
+	const mounted = mountedMap.get(atom);
+	if (mounted && atomState.d.size > 0) {
+		for (const [a, n] of atomState.d) if (!mounted.d.has(a)) {
+			const aState = ensureAtomState(store, a);
+			mountAtom(store, a).t.add(atom);
+			mounted.d.add(a);
+			if (n !== aState.n) {
+				changedAtoms.add(a);
+				invalidateDependents(store, a);
+				(_a = storeHooks.c) == null || _a.call(storeHooks, a);
+			}
+		}
+		for (const a of mounted.d) if (!atomState.d.has(a)) {
+			mounted.d.delete(a);
+			unmountAtom(store, a)?.t.delete(atom);
+		}
+	}
+};
+var BUILDING_BLOCK_mountAtom = (store, atom) => {
+	var _a;
+	const buildingBlocks = getInternalBuildingBlocks(store);
+	const mountedMap = buildingBlocks[1];
+	const mountCallbacks = buildingBlocks[4];
+	const storeHooks = buildingBlocks[6];
+	const atomOnMount = buildingBlocks[10];
+	const ensureAtomState = buildingBlocks[11];
+	const flushCallbacks = buildingBlocks[12];
+	const recomputeInvalidatedAtoms = buildingBlocks[13];
+	const readAtomState = buildingBlocks[14];
+	const writeAtomState = buildingBlocks[16];
+	const mountAtom = buildingBlocks[18];
+	const atomState = ensureAtomState(store, atom);
+	let mounted = mountedMap.get(atom);
+	if (!mounted) {
+		readAtomState(store, atom);
+		for (const a of atomState.d.keys()) mountAtom(store, a).t.add(atom);
+		mounted = {
+			l: /* @__PURE__ */ new Set(),
+			d: new Set(atomState.d.keys()),
+			t: /* @__PURE__ */ new Set()
+		};
+		mountedMap.set(atom, mounted);
+		if (isActuallyWritableAtom(atom) && hasOnMount(atom)) {
+			const processOnMount = () => {
+				let isSync = true;
+				const setAtom = (...args) => {
+					try {
+						return writeAtomState(store, atom, ...args);
+					} finally {
+						if (!isSync) {
+							recomputeInvalidatedAtoms(store);
+							flushCallbacks(store);
+						}
+					}
+				};
+				try {
+					const onUnmount = atomOnMount(store, atom, setAtom);
+					if (onUnmount) mounted.u = () => {
+						isSync = true;
+						try {
+							onUnmount();
+						} finally {
+							isSync = false;
+						}
+					};
+				} finally {
+					isSync = false;
+				}
+			};
+			mountCallbacks.add(processOnMount);
+		}
+		(_a = storeHooks.m) == null || _a.call(storeHooks, atom);
+	}
+	return mounted;
+};
+var BUILDING_BLOCK_unmountAtom = (store, atom) => {
+	var _a, _b;
+	const buildingBlocks = getInternalBuildingBlocks(store);
+	const mountedMap = buildingBlocks[1];
+	const unmountCallbacks = buildingBlocks[5];
+	const storeHooks = buildingBlocks[6];
+	const ensureAtomState = buildingBlocks[11];
+	const unmountAtom = buildingBlocks[19];
+	const atomState = ensureAtomState(store, atom);
+	let mounted = mountedMap.get(atom);
+	if (!mounted || mounted.l.size) return mounted;
+	let isDependent = false;
+	for (const a of mounted.t) if ((_a = mountedMap.get(a)) == null ? void 0 : _a.d.has(atom)) {
+		isDependent = true;
+		break;
+	}
+	if (!isDependent) {
+		if (mounted.u) unmountCallbacks.add(mounted.u);
+		mounted = void 0;
+		mountedMap.delete(atom);
+		for (const a of atomState.d.keys()) unmountAtom(store, a)?.t.delete(atom);
+		(_b = storeHooks.u) == null || _b.call(storeHooks, atom);
+		return;
+	}
+	return mounted;
+};
+var BUILDING_BLOCK_setAtomStateValueOrPromise = (store, atom, valueOrPromise) => {
+	const buildingBlocks = getInternalBuildingBlocks(store);
+	const ensureAtomState = buildingBlocks[11];
+	const abortPromise = buildingBlocks[27];
+	const atomState = ensureAtomState(store, atom);
+	const hasPrevValue = "v" in atomState;
+	const prevValue = atomState.v;
+	if (isPromiseLike$1(valueOrPromise)) for (const a of atomState.d.keys()) addPendingPromiseToDependency(atom, valueOrPromise, ensureAtomState(store, a));
+	atomState.v = valueOrPromise;
+	delete atomState.e;
+	if (!hasPrevValue || !Object.is(prevValue, atomState.v)) {
+		++atomState.n;
+		if (isPromiseLike$1(prevValue)) abortPromise(store, prevValue);
+	}
+};
+var BUILDING_BLOCK_storeGet = (store, atom) => {
+	const readAtomState = getInternalBuildingBlocks(store)[14];
+	return returnAtomValue(readAtomState(store, atom));
+};
+var BUILDING_BLOCK_storeSet = (store, atom, ...args) => {
+	const buildingBlocks = getInternalBuildingBlocks(store);
+	const changedAtoms = buildingBlocks[3];
+	const flushCallbacks = buildingBlocks[12];
+	const recomputeInvalidatedAtoms = buildingBlocks[13];
+	const writeAtomState = buildingBlocks[16];
+	const prevChangedAtomsSize = changedAtoms.size;
+	try {
+		return writeAtomState(store, atom, ...args);
+	} finally {
+		if (changedAtoms.size !== prevChangedAtomsSize) {
+			recomputeInvalidatedAtoms(store);
+			flushCallbacks(store);
+		}
+	}
+};
+var BUILDING_BLOCK_storeSub = (store, atom, listener) => {
+	const buildingBlocks = getInternalBuildingBlocks(store);
+	const flushCallbacks = buildingBlocks[12];
+	const mountAtom = buildingBlocks[18];
+	const unmountAtom = buildingBlocks[19];
+	const listeners = mountAtom(store, atom).l;
+	listeners.add(listener);
+	flushCallbacks(store);
+	return () => {
+		listeners.delete(listener);
+		unmountAtom(store, atom);
+		flushCallbacks(store);
+	};
+};
+var BUILDING_BLOCK_registerAbortHandler = (store, promise, abortHandler) => {
+	const abortHandlersMap = getInternalBuildingBlocks(store)[25];
+	let abortHandlers = abortHandlersMap.get(promise);
+	if (!abortHandlers) {
+		abortHandlers = /* @__PURE__ */ new Set();
+		abortHandlersMap.set(promise, abortHandlers);
+		const cleanup = () => abortHandlersMap.delete(promise);
+		promise.then(cleanup, cleanup);
+	}
+	abortHandlers.add(abortHandler);
+};
+var BUILDING_BLOCK_abortPromise = (store, promise) => {
+	getInternalBuildingBlocks(store)[25].get(promise)?.forEach((fn) => fn());
+};
+var buildingBlockMap = /* @__PURE__ */ new WeakMap();
+var getInternalBuildingBlocks = (store) => {
+	return buildingBlockMap.get(store);
+};
+function getBuildingBlocks(store) {
+	const buildingBlocks = getInternalBuildingBlocks(store);
+	const enhanceBuildingBlocks = buildingBlocks[24];
+	if (enhanceBuildingBlocks) return enhanceBuildingBlocks(buildingBlocks);
+	return buildingBlocks;
+}
+function buildStore(...buildArgs) {
+	const store = {
+		get(atom) {
+			const storeGet = getInternalBuildingBlocks(store)[21];
+			return storeGet(store, atom);
+		},
+		set(atom, ...args) {
+			const storeSet = getInternalBuildingBlocks(store)[22];
+			return storeSet(store, atom, ...args);
+		},
+		sub(atom, listener) {
+			const storeSub = getInternalBuildingBlocks(store)[23];
+			return storeSub(store, atom, listener);
+		}
+	};
+	const buildingBlocks = [
+		/* @__PURE__ */ new WeakMap(),
+		/* @__PURE__ */ new WeakMap(),
+		/* @__PURE__ */ new WeakMap(),
+		/* @__PURE__ */ new Set(),
+		/* @__PURE__ */ new Set(),
+		/* @__PURE__ */ new Set(),
+		{},
+		BUILDING_BLOCK_atomRead,
+		BUILDING_BLOCK_atomWrite,
+		BUILDING_BLOCK_atomOnInit,
+		BUILDING_BLOCK_atomOnMount,
+		BUILDING_BLOCK_ensureAtomState,
+		BUILDING_BLOCK_flushCallbacks,
+		BUILDING_BLOCK_recomputeInvalidatedAtoms,
+		BUILDING_BLOCK_readAtomState,
+		BUILDING_BLOCK_invalidateDependents,
+		BUILDING_BLOCK_writeAtomState,
+		BUILDING_BLOCK_mountDependencies,
+		BUILDING_BLOCK_mountAtom,
+		BUILDING_BLOCK_unmountAtom,
+		BUILDING_BLOCK_setAtomStateValueOrPromise,
+		BUILDING_BLOCK_storeGet,
+		BUILDING_BLOCK_storeSet,
+		BUILDING_BLOCK_storeSub,
+		void 0,
+		/* @__PURE__ */ new WeakMap(),
+		BUILDING_BLOCK_registerAbortHandler,
+		BUILDING_BLOCK_abortPromise,
+		[0]
+	].map((fn, i) => buildArgs[i] || fn);
+	buildingBlockMap.set(store, Object.freeze(buildingBlocks));
+	return store;
+}
+//#endregion
+//#region node_modules/.pnpm/jotai@2.19.1_@babel+core@7.29.0_@babel+template@7.28.6_@types+react@18.3.1_react@18.3.1/node_modules/jotai/esm/vanilla.mjs
+var keyCount = 0;
+function atom(read, write) {
+	const key = `atom${++keyCount}`;
+	const config = { toString() {
+		return key;
+	} };
+	if (typeof read === "function") config.read = read;
+	else {
+		config.init = read;
+		config.read = defaultRead;
+		config.write = defaultWrite;
+	}
+	if (write) config.write = write;
+	return config;
+}
+function defaultRead(get) {
+	return get(this);
+}
+function defaultWrite(get, set, arg) {
+	return set(this, typeof arg === "function" ? arg(get(this)) : arg);
+}
+var overriddenCreateStore;
+function createStore() {
+	if (overriddenCreateStore) return overriddenCreateStore();
+	return buildStore();
+}
+var defaultStore;
+function getDefaultStore() {
+	if (!defaultStore) defaultStore = createStore();
+	return defaultStore;
+}
+//#endregion
+//#region node_modules/.pnpm/jotai@2.19.1_@babel+core@7.29.0_@babel+template@7.28.6_@types+react@18.3.1_react@18.3.1/node_modules/jotai/esm/react.mjs
+var StoreContext = createContext(void 0);
+function useStore(options) {
+	const store = useContext(StoreContext);
+	return (options == null ? void 0 : options.store) || store || getDefaultStore();
+}
+var isPromiseLike = (x) => typeof (x == null ? void 0 : x.then) === "function";
+var attachPromiseStatus = (promise) => {
+	if (!promise.status) {
+		promise.status = "pending";
+		promise.then((v) => {
+			promise.status = "fulfilled";
+			promise.value = v;
+		}, (e) => {
+			promise.status = "rejected";
+			promise.reason = e;
+		});
+	}
+};
+var use = React.use || ((promise) => {
+	if (promise.status === "pending") throw promise;
+	else if (promise.status === "fulfilled") return promise.value;
+	else if (promise.status === "rejected") throw promise.reason;
+	else {
+		attachPromiseStatus(promise);
+		throw promise;
+	}
+});
+var continuablePromiseMap = /* @__PURE__ */ new WeakMap();
+var createContinuablePromise = (store, promise, getValue) => {
+	const registerAbortHandler = getBuildingBlocks(store)[26];
+	let continuablePromise = continuablePromiseMap.get(promise);
+	if (!continuablePromise) {
+		continuablePromise = new Promise((resolve, reject) => {
+			let curr = promise;
+			const onFulfilled = (me) => (v) => {
+				if (curr === me) resolve(v);
+			};
+			const onRejected = (me) => (e) => {
+				if (curr === me) reject(e);
+			};
+			const onAbort = () => {
+				try {
+					const nextValue = getValue();
+					if (isPromiseLike(nextValue)) {
+						continuablePromiseMap.set(nextValue, continuablePromise);
+						curr = nextValue;
+						nextValue.then(onFulfilled(nextValue), onRejected(nextValue));
+						registerAbortHandler(store, nextValue, onAbort);
+					} else resolve(nextValue);
+				} catch (e) {
+					reject(e);
+				}
+			};
+			promise.then(onFulfilled(promise), onRejected(promise));
+			registerAbortHandler(store, promise, onAbort);
+		});
+		continuablePromiseMap.set(promise, continuablePromise);
+	}
+	return continuablePromise;
+};
+function useAtomValue(atom, options) {
+	const { delay, unstable_promiseStatus: promiseStatus = !React.use } = options || {};
+	const store = useStore(options);
+	const [[valueFromReducer, storeFromReducer, atomFromReducer], rerender] = useReducer((prev) => {
+		const nextValue = store.get(atom);
+		if (Object.is(prev[0], nextValue) && prev[1] === store && prev[2] === atom) return prev;
+		return [
+			nextValue,
+			store,
+			atom
+		];
+	}, void 0, () => [
+		store.get(atom),
+		store,
+		atom
+	]);
+	let value = valueFromReducer;
+	if (storeFromReducer !== store || atomFromReducer !== atom) {
+		rerender();
+		value = store.get(atom);
+	}
+	useEffect(() => {
+		const unsub = store.sub(atom, () => {
+			if (promiseStatus) try {
+				const value2 = store.get(atom);
+				if (isPromiseLike(value2)) attachPromiseStatus(createContinuablePromise(store, value2, () => store.get(atom)));
+			} catch (e) {}
+			if (typeof delay === "number") {
+				console.warn(`[DEPRECATED] delay option is deprecated and will be removed in v3.
+
+Migration guide:
+
+Create a custom hook like the following.
+
+function useAtomValueWithDelay<Value>(
+  atom: Atom<Value>,
+  options: { delay: number },
+): Value {
+  const { delay } = options
+  const store = useStore(options)
+  const [value, setValue] = useState(() => store.get(atom))
+  useEffect(() => {
+    const unsub = store.sub(atom, () => {
+      setTimeout(() => setValue(store.get(atom)), delay)
+    })
+    return unsub
+  }, [store, atom, delay])
+  return value
+}
+`);
+				setTimeout(rerender, delay);
+				return;
+			}
+			rerender();
+		});
+		rerender();
+		return unsub;
+	}, [
+		store,
+		atom,
+		delay,
+		promiseStatus
+	]);
+	useDebugValue(value);
+	if (isPromiseLike(value)) {
+		const promise = createContinuablePromise(store, value, () => store.get(atom));
+		if (promiseStatus) attachPromiseStatus(promise);
+		return use(promise);
+	}
+	return value;
+}
+function useSetAtom(atom, options) {
+	const store = useStore(options);
+	return useCallback((...args) => {
+		return store.set(atom, ...args);
+	}, [store, atom]);
+}
+function useAtom(atom, options) {
+	return [useAtomValue(atom, options), useSetAtom(atom, options)];
+}
+//#endregion
+//#region src/front/surfy/RecursiveDrawer/RecursiveDrawerContainer.state.ts
+var recursiveDrawerMenuAtom = atom(void 0);
+atom(0);
+//#endregion
+//#region src/surfy-help/views/IndexViewMenuPathBreadcrumb.tsx
+function escapeForRegExp(segment) {
+	return segment.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+function menuPathHasAncestor(menu, start, ancestorId) {
+	let cur = start;
+	while (cur && cur.item.id !== "root") {
+		if (cur.item.id === ancestorId) return true;
+		cur = cur.parentId ? menu.nodesById.get(cur.parentId) : void 0;
+	}
+	return false;
+}
+function findMenuLeafNodesForIndexView(menu, objectTypeName, viewName) {
+	const suffix = `-${objectTypeName}-${viewName}`;
+	const re = new RegExp(`${escapeForRegExp(suffix)}$`);
+	return menu.nodes.filter((n) => re.test(n.item.id));
+}
+function pickPreferredLeafNode(menu, candidates) {
+	if (candidates.length === 0) return;
+	const outsideContext = candidates.filter((n) => !menuPathHasAncestor(menu, n, "index-context-menu"));
+	return (outsideContext.length > 0 ? outsideContext : candidates).reduce((best, n) => n.depth < best.depth ? n : best);
+}
+function buildPathFromLeafToRoot(menu, leaf) {
+	const upwards = [];
+	let cur = leaf;
+	while (cur && cur.item.id !== "root") {
+		upwards.push(cur);
+		cur = cur.parentId ? menu.nodesById.get(cur.parentId) : void 0;
+	}
+	return upwards.reverse();
+}
+/**
+* Plain-text path from the left menu root to the index view (MUI Breadcrumbs, no links).
+* Uses the hydrated recursive drawer menu when available.
+*/
+function IndexViewMenuPathBreadcrumb(props) {
+	const { objectTypeName, viewName } = props;
+	const menu = useAtomValue(recursiveDrawerMenuAtom);
+	const pathNodes = useMemo(() => {
+		if (!menu) return [];
+		const leaf = pickPreferredLeafNode(menu, findMenuLeafNodesForIndexView(menu, objectTypeName, viewName));
+		if (!leaf) return [];
+		return buildPathFromLeafToRoot(menu, leaf);
+	}, [
+		menu,
+		objectTypeName,
+		viewName
+	]);
+	if (pathNodes.length === 0) return null;
+	return /* @__PURE__ */ jsx(Breadcrumbs, {
+		"aria-label": "menu path",
+		component: "nav",
+		maxItems: 8,
+		separator: "›",
+		sx: {
+			mt: 1,
+			typography: "caption",
+			color: "text.secondary",
+			flexWrap: "wrap"
+		},
+		children: pathNodes.map((node) => /* @__PURE__ */ jsx(Typography, {
+			component: "span",
+			variant: "caption",
+			color: "inherit",
+			children: node.item.Label ? /* @__PURE__ */ jsx(node.item.Label, {
+				menu,
+				node
+			}) : node.item.id
+		}, node.item.id))
+	});
+}
 //#endregion
 //#region src/core/generated/objectTypeDefinitions/occupancyStatus.ts
 var occupancyStatusObjectTypeDefintion = {
@@ -42736,760 +43566,6 @@ function PaperFrame(props) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/jotai@2.19.1_@babel+core@7.29.0_@babel+template@7.28.6_@types+react@18.3.1_react@18.3.1/node_modules/jotai/esm/vanilla/internals.mjs
-function hasInitialValue(atom) {
-	return "init" in atom;
-}
-function isActuallyWritableAtom(atom) {
-	return !!atom.write;
-}
-function hasOnMount(atom) {
-	return !!atom.onMount;
-}
-function isAtomStateInitialized(atomState) {
-	return "v" in atomState || "e" in atomState;
-}
-function returnAtomValue(atomState) {
-	if ("e" in atomState) throw atomState.e;
-	return atomState.v;
-}
-function isPromiseLike$1(p) {
-	return typeof (p == null ? void 0 : p.then) === "function";
-}
-function addPendingPromiseToDependency(atom, promise, dependencyAtomState) {
-	if (!dependencyAtomState.p.has(atom)) {
-		dependencyAtomState.p.add(atom);
-		const cleanup = () => dependencyAtomState.p.delete(atom);
-		promise.then(cleanup, cleanup);
-	}
-}
-function getMountedOrPendingDependents(atom, atomState, mountedMap) {
-	const mounted = mountedMap.get(atom);
-	const mountedDependents = mounted == null ? void 0 : mounted.t;
-	const pendingDependents = atomState.p;
-	if (!(mountedDependents == null ? void 0 : mountedDependents.size)) return pendingDependents;
-	if (!pendingDependents.size) return mountedDependents;
-	const dependents = new Set(mountedDependents);
-	for (const a of pendingDependents) dependents.add(a);
-	return dependents;
-}
-var BUILDING_BLOCK_atomRead = (_store, atom, ...params) => atom.read(...params);
-var BUILDING_BLOCK_atomWrite = (_store, atom, ...params) => atom.write(...params);
-var BUILDING_BLOCK_atomOnInit = (store, atom) => {
-	var _a;
-	return (_a = atom.INTERNAL_onInit) == null ? void 0 : _a.call(atom, store);
-};
-var BUILDING_BLOCK_atomOnMount = (_store, atom, setAtom) => {
-	var _a;
-	return (_a = atom.onMount) == null ? void 0 : _a.call(atom, setAtom);
-};
-var BUILDING_BLOCK_ensureAtomState = (store, atom) => {
-	var _a;
-	const buildingBlocks = getInternalBuildingBlocks(store);
-	const atomStateMap = buildingBlocks[0];
-	const storeHooks = buildingBlocks[6];
-	const atomOnInit = buildingBlocks[9];
-	let atomState = atomStateMap.get(atom);
-	if (!atomState) {
-		atomState = {
-			d: /* @__PURE__ */ new Map(),
-			p: /* @__PURE__ */ new Set(),
-			n: 0
-		};
-		atomStateMap.set(atom, atomState);
-		(_a = storeHooks.i) == null || _a.call(storeHooks, atom);
-		atomOnInit?.(store, atom);
-	}
-	return atomState;
-};
-var BUILDING_BLOCK_flushCallbacks = (store) => {
-	var _a;
-	const buildingBlocks = getInternalBuildingBlocks(store);
-	const mountedMap = buildingBlocks[1];
-	const changedAtoms = buildingBlocks[3];
-	const mountCallbacks = buildingBlocks[4];
-	const unmountCallbacks = buildingBlocks[5];
-	const storeHooks = buildingBlocks[6];
-	const recomputeInvalidatedAtoms = buildingBlocks[13];
-	if (!storeHooks.f && !changedAtoms.size && !mountCallbacks.size && !unmountCallbacks.size) return;
-	const errors = [];
-	const call = (fn) => {
-		try {
-			fn();
-		} catch (e) {
-			errors.push(e);
-		}
-	};
-	do {
-		if (storeHooks.f) call(storeHooks.f);
-		const callbacks = /* @__PURE__ */ new Set();
-		for (const atom of changedAtoms) {
-			const listeners = (_a = mountedMap.get(atom)) == null ? void 0 : _a.l;
-			if (listeners) for (const listener of listeners) callbacks.add(listener);
-		}
-		changedAtoms.clear();
-		for (const fn of unmountCallbacks) callbacks.add(fn);
-		unmountCallbacks.clear();
-		for (const fn of mountCallbacks) callbacks.add(fn);
-		mountCallbacks.clear();
-		for (const fn of callbacks) call(fn);
-		if (changedAtoms.size) recomputeInvalidatedAtoms(store);
-	} while (changedAtoms.size || unmountCallbacks.size || mountCallbacks.size);
-	if (errors.length) throw new AggregateError(errors);
-};
-var BUILDING_BLOCK_recomputeInvalidatedAtoms = (store) => {
-	const buildingBlocks = getInternalBuildingBlocks(store);
-	const mountedMap = buildingBlocks[1];
-	const invalidatedAtoms = buildingBlocks[2];
-	const changedAtoms = buildingBlocks[3];
-	const ensureAtomState = buildingBlocks[11];
-	const readAtomState = buildingBlocks[14];
-	const mountDependencies = buildingBlocks[17];
-	if (!changedAtoms.size) return;
-	const sortedReversedAtoms = [];
-	const sortedReversedStates = [];
-	const visiting = /* @__PURE__ */ new WeakSet();
-	const visited = /* @__PURE__ */ new WeakSet();
-	const stackAtoms = [];
-	const stackStates = [];
-	for (const atom of changedAtoms) {
-		stackAtoms.push(atom);
-		stackStates.push(ensureAtomState(store, atom));
-	}
-	while (stackAtoms.length) {
-		const top = stackAtoms.length - 1;
-		const a = stackAtoms[top];
-		const aState = stackStates[top];
-		if (visited.has(a)) {
-			stackAtoms.pop();
-			stackStates.pop();
-			continue;
-		}
-		if (visiting.has(a)) {
-			if (invalidatedAtoms.get(a) === aState.n) {
-				sortedReversedAtoms.push(a);
-				sortedReversedStates.push(aState);
-			}
-			visited.add(a);
-			stackAtoms.pop();
-			stackStates.pop();
-			continue;
-		}
-		visiting.add(a);
-		for (const d of getMountedOrPendingDependents(a, aState, mountedMap)) if (!visiting.has(d)) {
-			stackAtoms.push(d);
-			stackStates.push(ensureAtomState(store, d));
-		}
-	}
-	for (let i = sortedReversedAtoms.length - 1; i >= 0; --i) {
-		const a = sortedReversedAtoms[i];
-		const aState = sortedReversedStates[i];
-		let hasChangedDeps = false;
-		for (const dep of aState.d.keys()) if (dep !== a && changedAtoms.has(dep)) {
-			hasChangedDeps = true;
-			break;
-		}
-		if (hasChangedDeps) {
-			invalidatedAtoms.set(a, aState.n);
-			readAtomState(store, a);
-			mountDependencies(store, a);
-		}
-		invalidatedAtoms.delete(a);
-	}
-};
-var BUILDING_BLOCK_readAtomState = (store, atom) => {
-	var _a, _b;
-	const buildingBlocks = getInternalBuildingBlocks(store);
-	const mountedMap = buildingBlocks[1];
-	const invalidatedAtoms = buildingBlocks[2];
-	const changedAtoms = buildingBlocks[3];
-	const storeHooks = buildingBlocks[6];
-	const atomRead = buildingBlocks[7];
-	const ensureAtomState = buildingBlocks[11];
-	const flushCallbacks = buildingBlocks[12];
-	const recomputeInvalidatedAtoms = buildingBlocks[13];
-	const readAtomState = buildingBlocks[14];
-	const writeAtomState = buildingBlocks[16];
-	const mountDependencies = buildingBlocks[17];
-	const setAtomStateValueOrPromise = buildingBlocks[20];
-	const registerAbortHandler = buildingBlocks[26];
-	const storeEpochHolder = buildingBlocks[28];
-	const atomState = ensureAtomState(store, atom);
-	const storeEpochNumber = storeEpochHolder[0];
-	if (isAtomStateInitialized(atomState)) {
-		if (mountedMap.has(atom) && invalidatedAtoms.get(atom) !== atomState.n || atomState.m === storeEpochNumber) {
-			atomState.m = storeEpochNumber;
-			return atomState;
-		}
-		let hasChangedDeps = false;
-		for (const [a, n] of atomState.d) if (readAtomState(store, a).n !== n) {
-			hasChangedDeps = true;
-			break;
-		}
-		if (!hasChangedDeps) {
-			atomState.m = storeEpochNumber;
-			return atomState;
-		}
-	}
-	let isSync = true;
-	const prevDeps = new Set(atomState.d.keys());
-	const pruneDependencies = () => {
-		for (const a of prevDeps) atomState.d.delete(a);
-	};
-	const mountDependenciesIfAsync = () => {
-		if (mountedMap.has(atom)) {
-			const shouldRecompute = !changedAtoms.size;
-			mountDependencies(store, atom);
-			if (shouldRecompute) {
-				recomputeInvalidatedAtoms(store);
-				flushCallbacks(store);
-			}
-		}
-	};
-	const getter = (a) => {
-		var _a2;
-		if (a === atom) {
-			const aState2 = ensureAtomState(store, a);
-			if (!isAtomStateInitialized(aState2)) if (hasInitialValue(a)) setAtomStateValueOrPromise(store, a, a.init);
-			else throw new Error("no atom init");
-			return returnAtomValue(aState2);
-		}
-		const aState = readAtomState(store, a);
-		try {
-			return returnAtomValue(aState);
-		} finally {
-			prevDeps.delete(a);
-			atomState.d.set(a, aState.n);
-			if (isPromiseLike$1(atomState.v)) addPendingPromiseToDependency(atom, atomState.v, aState);
-			if (mountedMap.has(atom)) (_a2 = mountedMap.get(a)) == null || _a2.t.add(atom);
-			if (!isSync) mountDependenciesIfAsync();
-		}
-	};
-	let controller;
-	let setSelf;
-	const options = {
-		get signal() {
-			if (!controller) controller = new AbortController();
-			return controller.signal;
-		},
-		get setSelf() {
-			if (!setSelf && isActuallyWritableAtom(atom)) setSelf = (...args) => {
-				if (!isSync) try {
-					return writeAtomState(store, atom, ...args);
-				} finally {
-					recomputeInvalidatedAtoms(store);
-					flushCallbacks(store);
-				}
-			};
-			return setSelf;
-		}
-	};
-	const prevEpochNumber = atomState.n;
-	const prevInvalidated = invalidatedAtoms.get(atom) === prevEpochNumber;
-	try {
-		const valueOrPromise = atomRead(store, atom, getter, options);
-		setAtomStateValueOrPromise(store, atom, valueOrPromise);
-		if (isPromiseLike$1(valueOrPromise)) {
-			registerAbortHandler(store, valueOrPromise, () => controller == null ? void 0 : controller.abort());
-			const settle = () => {
-				pruneDependencies();
-				mountDependenciesIfAsync();
-			};
-			valueOrPromise.then(settle, settle);
-		} else pruneDependencies();
-		(_a = storeHooks.r) == null || _a.call(storeHooks, atom);
-		atomState.m = storeEpochNumber;
-		return atomState;
-	} catch (error) {
-		delete atomState.v;
-		atomState.e = error;
-		++atomState.n;
-		atomState.m = storeEpochNumber;
-		return atomState;
-	} finally {
-		isSync = false;
-		if (atomState.n !== prevEpochNumber && prevInvalidated) {
-			invalidatedAtoms.set(atom, atomState.n);
-			changedAtoms.add(atom);
-			(_b = storeHooks.c) == null || _b.call(storeHooks, atom);
-		}
-	}
-};
-var BUILDING_BLOCK_invalidateDependents = (store, atom) => {
-	const buildingBlocks = getInternalBuildingBlocks(store);
-	const mountedMap = buildingBlocks[1];
-	const invalidatedAtoms = buildingBlocks[2];
-	const ensureAtomState = buildingBlocks[11];
-	const stack = [atom];
-	while (stack.length) {
-		const a = stack.pop();
-		const aState = ensureAtomState(store, a);
-		for (const d of getMountedOrPendingDependents(a, aState, mountedMap)) {
-			const dState = ensureAtomState(store, d);
-			if (invalidatedAtoms.get(d) !== dState.n) {
-				invalidatedAtoms.set(d, dState.n);
-				stack.push(d);
-			}
-		}
-	}
-};
-var BUILDING_BLOCK_writeAtomState = (store, atom, ...args) => {
-	const buildingBlocks = getInternalBuildingBlocks(store);
-	const changedAtoms = buildingBlocks[3];
-	const storeHooks = buildingBlocks[6];
-	const atomWrite = buildingBlocks[8];
-	const ensureAtomState = buildingBlocks[11];
-	const flushCallbacks = buildingBlocks[12];
-	const recomputeInvalidatedAtoms = buildingBlocks[13];
-	const readAtomState = buildingBlocks[14];
-	const invalidateDependents = buildingBlocks[15];
-	const writeAtomState = buildingBlocks[16];
-	const mountDependencies = buildingBlocks[17];
-	const setAtomStateValueOrPromise = buildingBlocks[20];
-	const storeEpochHolder = buildingBlocks[28];
-	let isSync = true;
-	const getter = (a) => returnAtomValue(readAtomState(store, a));
-	const setter = (a, ...args2) => {
-		var _a;
-		const aState = ensureAtomState(store, a);
-		try {
-			if (a === atom) {
-				if (!hasInitialValue(a)) throw new Error("atom not writable");
-				const prevEpochNumber = aState.n;
-				const v = args2[0];
-				setAtomStateValueOrPromise(store, a, v);
-				mountDependencies(store, a);
-				if (prevEpochNumber !== aState.n) {
-					++storeEpochHolder[0];
-					changedAtoms.add(a);
-					invalidateDependents(store, a);
-					(_a = storeHooks.c) == null || _a.call(storeHooks, a);
-				}
-				return;
-			} else return writeAtomState(store, a, ...args2);
-		} finally {
-			if (!isSync) {
-				recomputeInvalidatedAtoms(store);
-				flushCallbacks(store);
-			}
-		}
-	};
-	try {
-		return atomWrite(store, atom, getter, setter, ...args);
-	} finally {
-		isSync = false;
-	}
-};
-var BUILDING_BLOCK_mountDependencies = (store, atom) => {
-	var _a;
-	const buildingBlocks = getInternalBuildingBlocks(store);
-	const mountedMap = buildingBlocks[1];
-	const changedAtoms = buildingBlocks[3];
-	const storeHooks = buildingBlocks[6];
-	const ensureAtomState = buildingBlocks[11];
-	const invalidateDependents = buildingBlocks[15];
-	const mountAtom = buildingBlocks[18];
-	const unmountAtom = buildingBlocks[19];
-	const atomState = ensureAtomState(store, atom);
-	const mounted = mountedMap.get(atom);
-	if (mounted && atomState.d.size > 0) {
-		for (const [a, n] of atomState.d) if (!mounted.d.has(a)) {
-			const aState = ensureAtomState(store, a);
-			mountAtom(store, a).t.add(atom);
-			mounted.d.add(a);
-			if (n !== aState.n) {
-				changedAtoms.add(a);
-				invalidateDependents(store, a);
-				(_a = storeHooks.c) == null || _a.call(storeHooks, a);
-			}
-		}
-		for (const a of mounted.d) if (!atomState.d.has(a)) {
-			mounted.d.delete(a);
-			unmountAtom(store, a)?.t.delete(atom);
-		}
-	}
-};
-var BUILDING_BLOCK_mountAtom = (store, atom) => {
-	var _a;
-	const buildingBlocks = getInternalBuildingBlocks(store);
-	const mountedMap = buildingBlocks[1];
-	const mountCallbacks = buildingBlocks[4];
-	const storeHooks = buildingBlocks[6];
-	const atomOnMount = buildingBlocks[10];
-	const ensureAtomState = buildingBlocks[11];
-	const flushCallbacks = buildingBlocks[12];
-	const recomputeInvalidatedAtoms = buildingBlocks[13];
-	const readAtomState = buildingBlocks[14];
-	const writeAtomState = buildingBlocks[16];
-	const mountAtom = buildingBlocks[18];
-	const atomState = ensureAtomState(store, atom);
-	let mounted = mountedMap.get(atom);
-	if (!mounted) {
-		readAtomState(store, atom);
-		for (const a of atomState.d.keys()) mountAtom(store, a).t.add(atom);
-		mounted = {
-			l: /* @__PURE__ */ new Set(),
-			d: new Set(atomState.d.keys()),
-			t: /* @__PURE__ */ new Set()
-		};
-		mountedMap.set(atom, mounted);
-		if (isActuallyWritableAtom(atom) && hasOnMount(atom)) {
-			const processOnMount = () => {
-				let isSync = true;
-				const setAtom = (...args) => {
-					try {
-						return writeAtomState(store, atom, ...args);
-					} finally {
-						if (!isSync) {
-							recomputeInvalidatedAtoms(store);
-							flushCallbacks(store);
-						}
-					}
-				};
-				try {
-					const onUnmount = atomOnMount(store, atom, setAtom);
-					if (onUnmount) mounted.u = () => {
-						isSync = true;
-						try {
-							onUnmount();
-						} finally {
-							isSync = false;
-						}
-					};
-				} finally {
-					isSync = false;
-				}
-			};
-			mountCallbacks.add(processOnMount);
-		}
-		(_a = storeHooks.m) == null || _a.call(storeHooks, atom);
-	}
-	return mounted;
-};
-var BUILDING_BLOCK_unmountAtom = (store, atom) => {
-	var _a, _b;
-	const buildingBlocks = getInternalBuildingBlocks(store);
-	const mountedMap = buildingBlocks[1];
-	const unmountCallbacks = buildingBlocks[5];
-	const storeHooks = buildingBlocks[6];
-	const ensureAtomState = buildingBlocks[11];
-	const unmountAtom = buildingBlocks[19];
-	const atomState = ensureAtomState(store, atom);
-	let mounted = mountedMap.get(atom);
-	if (!mounted || mounted.l.size) return mounted;
-	let isDependent = false;
-	for (const a of mounted.t) if ((_a = mountedMap.get(a)) == null ? void 0 : _a.d.has(atom)) {
-		isDependent = true;
-		break;
-	}
-	if (!isDependent) {
-		if (mounted.u) unmountCallbacks.add(mounted.u);
-		mounted = void 0;
-		mountedMap.delete(atom);
-		for (const a of atomState.d.keys()) unmountAtom(store, a)?.t.delete(atom);
-		(_b = storeHooks.u) == null || _b.call(storeHooks, atom);
-		return;
-	}
-	return mounted;
-};
-var BUILDING_BLOCK_setAtomStateValueOrPromise = (store, atom, valueOrPromise) => {
-	const buildingBlocks = getInternalBuildingBlocks(store);
-	const ensureAtomState = buildingBlocks[11];
-	const abortPromise = buildingBlocks[27];
-	const atomState = ensureAtomState(store, atom);
-	const hasPrevValue = "v" in atomState;
-	const prevValue = atomState.v;
-	if (isPromiseLike$1(valueOrPromise)) for (const a of atomState.d.keys()) addPendingPromiseToDependency(atom, valueOrPromise, ensureAtomState(store, a));
-	atomState.v = valueOrPromise;
-	delete atomState.e;
-	if (!hasPrevValue || !Object.is(prevValue, atomState.v)) {
-		++atomState.n;
-		if (isPromiseLike$1(prevValue)) abortPromise(store, prevValue);
-	}
-};
-var BUILDING_BLOCK_storeGet = (store, atom) => {
-	const readAtomState = getInternalBuildingBlocks(store)[14];
-	return returnAtomValue(readAtomState(store, atom));
-};
-var BUILDING_BLOCK_storeSet = (store, atom, ...args) => {
-	const buildingBlocks = getInternalBuildingBlocks(store);
-	const changedAtoms = buildingBlocks[3];
-	const flushCallbacks = buildingBlocks[12];
-	const recomputeInvalidatedAtoms = buildingBlocks[13];
-	const writeAtomState = buildingBlocks[16];
-	const prevChangedAtomsSize = changedAtoms.size;
-	try {
-		return writeAtomState(store, atom, ...args);
-	} finally {
-		if (changedAtoms.size !== prevChangedAtomsSize) {
-			recomputeInvalidatedAtoms(store);
-			flushCallbacks(store);
-		}
-	}
-};
-var BUILDING_BLOCK_storeSub = (store, atom, listener) => {
-	const buildingBlocks = getInternalBuildingBlocks(store);
-	const flushCallbacks = buildingBlocks[12];
-	const mountAtom = buildingBlocks[18];
-	const unmountAtom = buildingBlocks[19];
-	const listeners = mountAtom(store, atom).l;
-	listeners.add(listener);
-	flushCallbacks(store);
-	return () => {
-		listeners.delete(listener);
-		unmountAtom(store, atom);
-		flushCallbacks(store);
-	};
-};
-var BUILDING_BLOCK_registerAbortHandler = (store, promise, abortHandler) => {
-	const abortHandlersMap = getInternalBuildingBlocks(store)[25];
-	let abortHandlers = abortHandlersMap.get(promise);
-	if (!abortHandlers) {
-		abortHandlers = /* @__PURE__ */ new Set();
-		abortHandlersMap.set(promise, abortHandlers);
-		const cleanup = () => abortHandlersMap.delete(promise);
-		promise.then(cleanup, cleanup);
-	}
-	abortHandlers.add(abortHandler);
-};
-var BUILDING_BLOCK_abortPromise = (store, promise) => {
-	getInternalBuildingBlocks(store)[25].get(promise)?.forEach((fn) => fn());
-};
-var buildingBlockMap = /* @__PURE__ */ new WeakMap();
-var getInternalBuildingBlocks = (store) => {
-	return buildingBlockMap.get(store);
-};
-function getBuildingBlocks(store) {
-	const buildingBlocks = getInternalBuildingBlocks(store);
-	const enhanceBuildingBlocks = buildingBlocks[24];
-	if (enhanceBuildingBlocks) return enhanceBuildingBlocks(buildingBlocks);
-	return buildingBlocks;
-}
-function buildStore(...buildArgs) {
-	const store = {
-		get(atom) {
-			const storeGet = getInternalBuildingBlocks(store)[21];
-			return storeGet(store, atom);
-		},
-		set(atom, ...args) {
-			const storeSet = getInternalBuildingBlocks(store)[22];
-			return storeSet(store, atom, ...args);
-		},
-		sub(atom, listener) {
-			const storeSub = getInternalBuildingBlocks(store)[23];
-			return storeSub(store, atom, listener);
-		}
-	};
-	const buildingBlocks = [
-		/* @__PURE__ */ new WeakMap(),
-		/* @__PURE__ */ new WeakMap(),
-		/* @__PURE__ */ new WeakMap(),
-		/* @__PURE__ */ new Set(),
-		/* @__PURE__ */ new Set(),
-		/* @__PURE__ */ new Set(),
-		{},
-		BUILDING_BLOCK_atomRead,
-		BUILDING_BLOCK_atomWrite,
-		BUILDING_BLOCK_atomOnInit,
-		BUILDING_BLOCK_atomOnMount,
-		BUILDING_BLOCK_ensureAtomState,
-		BUILDING_BLOCK_flushCallbacks,
-		BUILDING_BLOCK_recomputeInvalidatedAtoms,
-		BUILDING_BLOCK_readAtomState,
-		BUILDING_BLOCK_invalidateDependents,
-		BUILDING_BLOCK_writeAtomState,
-		BUILDING_BLOCK_mountDependencies,
-		BUILDING_BLOCK_mountAtom,
-		BUILDING_BLOCK_unmountAtom,
-		BUILDING_BLOCK_setAtomStateValueOrPromise,
-		BUILDING_BLOCK_storeGet,
-		BUILDING_BLOCK_storeSet,
-		BUILDING_BLOCK_storeSub,
-		void 0,
-		/* @__PURE__ */ new WeakMap(),
-		BUILDING_BLOCK_registerAbortHandler,
-		BUILDING_BLOCK_abortPromise,
-		[0]
-	].map((fn, i) => buildArgs[i] || fn);
-	buildingBlockMap.set(store, Object.freeze(buildingBlocks));
-	return store;
-}
-//#endregion
-//#region node_modules/.pnpm/jotai@2.19.1_@babel+core@7.29.0_@babel+template@7.28.6_@types+react@18.3.1_react@18.3.1/node_modules/jotai/esm/vanilla.mjs
-var keyCount = 0;
-function atom(read, write) {
-	const key = `atom${++keyCount}`;
-	const config = { toString() {
-		return key;
-	} };
-	if (typeof read === "function") config.read = read;
-	else {
-		config.init = read;
-		config.read = defaultRead;
-		config.write = defaultWrite;
-	}
-	if (write) config.write = write;
-	return config;
-}
-function defaultRead(get) {
-	return get(this);
-}
-function defaultWrite(get, set, arg) {
-	return set(this, typeof arg === "function" ? arg(get(this)) : arg);
-}
-var overriddenCreateStore;
-function createStore() {
-	if (overriddenCreateStore) return overriddenCreateStore();
-	return buildStore();
-}
-var defaultStore;
-function getDefaultStore() {
-	if (!defaultStore) defaultStore = createStore();
-	return defaultStore;
-}
-//#endregion
-//#region node_modules/.pnpm/jotai@2.19.1_@babel+core@7.29.0_@babel+template@7.28.6_@types+react@18.3.1_react@18.3.1/node_modules/jotai/esm/react.mjs
-var StoreContext = createContext(void 0);
-function useStore(options) {
-	const store = useContext(StoreContext);
-	return (options == null ? void 0 : options.store) || store || getDefaultStore();
-}
-var isPromiseLike = (x) => typeof (x == null ? void 0 : x.then) === "function";
-var attachPromiseStatus = (promise) => {
-	if (!promise.status) {
-		promise.status = "pending";
-		promise.then((v) => {
-			promise.status = "fulfilled";
-			promise.value = v;
-		}, (e) => {
-			promise.status = "rejected";
-			promise.reason = e;
-		});
-	}
-};
-var use = React.use || ((promise) => {
-	if (promise.status === "pending") throw promise;
-	else if (promise.status === "fulfilled") return promise.value;
-	else if (promise.status === "rejected") throw promise.reason;
-	else {
-		attachPromiseStatus(promise);
-		throw promise;
-	}
-});
-var continuablePromiseMap = /* @__PURE__ */ new WeakMap();
-var createContinuablePromise = (store, promise, getValue) => {
-	const registerAbortHandler = getBuildingBlocks(store)[26];
-	let continuablePromise = continuablePromiseMap.get(promise);
-	if (!continuablePromise) {
-		continuablePromise = new Promise((resolve, reject) => {
-			let curr = promise;
-			const onFulfilled = (me) => (v) => {
-				if (curr === me) resolve(v);
-			};
-			const onRejected = (me) => (e) => {
-				if (curr === me) reject(e);
-			};
-			const onAbort = () => {
-				try {
-					const nextValue = getValue();
-					if (isPromiseLike(nextValue)) {
-						continuablePromiseMap.set(nextValue, continuablePromise);
-						curr = nextValue;
-						nextValue.then(onFulfilled(nextValue), onRejected(nextValue));
-						registerAbortHandler(store, nextValue, onAbort);
-					} else resolve(nextValue);
-				} catch (e) {
-					reject(e);
-				}
-			};
-			promise.then(onFulfilled(promise), onRejected(promise));
-			registerAbortHandler(store, promise, onAbort);
-		});
-		continuablePromiseMap.set(promise, continuablePromise);
-	}
-	return continuablePromise;
-};
-function useAtomValue(atom, options) {
-	const { delay, unstable_promiseStatus: promiseStatus = !React.use } = options || {};
-	const store = useStore(options);
-	const [[valueFromReducer, storeFromReducer, atomFromReducer], rerender] = useReducer((prev) => {
-		const nextValue = store.get(atom);
-		if (Object.is(prev[0], nextValue) && prev[1] === store && prev[2] === atom) return prev;
-		return [
-			nextValue,
-			store,
-			atom
-		];
-	}, void 0, () => [
-		store.get(atom),
-		store,
-		atom
-	]);
-	let value = valueFromReducer;
-	if (storeFromReducer !== store || atomFromReducer !== atom) {
-		rerender();
-		value = store.get(atom);
-	}
-	useEffect(() => {
-		const unsub = store.sub(atom, () => {
-			if (promiseStatus) try {
-				const value2 = store.get(atom);
-				if (isPromiseLike(value2)) attachPromiseStatus(createContinuablePromise(store, value2, () => store.get(atom)));
-			} catch (e) {}
-			if (typeof delay === "number") {
-				console.warn(`[DEPRECATED] delay option is deprecated and will be removed in v3.
-
-Migration guide:
-
-Create a custom hook like the following.
-
-function useAtomValueWithDelay<Value>(
-  atom: Atom<Value>,
-  options: { delay: number },
-): Value {
-  const { delay } = options
-  const store = useStore(options)
-  const [value, setValue] = useState(() => store.get(atom))
-  useEffect(() => {
-    const unsub = store.sub(atom, () => {
-      setTimeout(() => setValue(store.get(atom)), delay)
-    })
-    return unsub
-  }, [store, atom, delay])
-  return value
-}
-`);
-				setTimeout(rerender, delay);
-				return;
-			}
-			rerender();
-		});
-		rerender();
-		return unsub;
-	}, [
-		store,
-		atom,
-		delay,
-		promiseStatus
-	]);
-	useDebugValue(value);
-	if (isPromiseLike(value)) {
-		const promise = createContinuablePromise(store, value, () => store.get(atom));
-		if (promiseStatus) attachPromiseStatus(promise);
-		return use(promise);
-	}
-	return value;
-}
-function useSetAtom(atom, options) {
-	const store = useStore(options);
-	return useCallback((...args) => {
-		return store.set(atom, ...args);
-	}, [store, atom]);
-}
-function useAtom(atom, options) {
-	return [useAtomValue(atom, options), useSetAtom(atom, options)];
-}
-//#endregion
 //#region node_modules/.pnpm/jotai@2.19.1_@babel+core@7.29.0_@babel+template@7.28.6_@types+react@18.3.1_react@18.3.1/node_modules/jotai/esm/vanilla/utils.mjs
 var RESET = /* @__PURE__ */ Symbol("");
 var isPromiseLike$2 = (x) => typeof (x == null ? void 0 : x.then) === "function";
@@ -63025,9 +63101,19 @@ function SurfyHelpLinkToIndexView(props) {
 	const viewUrl = getIndexTabViewPath(objectTypeName, view);
 	const url = `https://app.surfy.pro/?redirectToView=${encodeURIComponent(viewUrl)}`;
 	return /* @__PURE__ */ jsx(HelpTooltip, {
-		title: /* @__PURE__ */ jsx(ObjectTypeIndexViewHelp, {
-			objectTypeName,
-			view
+		title: /* @__PURE__ */ jsxs(Box, {
+			sx: {
+				display: "flex",
+				flexDirection: "column",
+				alignItems: "flex-start"
+			},
+			children: [/* @__PURE__ */ jsx(ObjectTypeIndexViewHelp, {
+				objectTypeName,
+				view
+			}), /* @__PURE__ */ jsx(IndexViewMenuPathBreadcrumb, {
+				objectTypeName,
+				viewName: view.name
+			})]
 		}),
 		children: /* @__PURE__ */ jsx("a", {
 			href: url,
@@ -89586,7 +89672,7 @@ function insertSeparators(items, className, separator, ownerState) {
 		return acc;
 	}, []);
 }
-var Breadcrumbs = /* @__PURE__ */ React$1.forwardRef(function Breadcrumbs(inProps, ref) {
+var Breadcrumbs$1 = /* @__PURE__ */ React$1.forwardRef(function Breadcrumbs(inProps, ref) {
 	const props = useDefaultProps({
 		props: inProps,
 		name: "MuiBreadcrumbs"
@@ -89655,7 +89741,7 @@ var Breadcrumbs = /* @__PURE__ */ React$1.forwardRef(function Breadcrumbs(inProp
 		})
 	});
 });
-process.env.NODE_ENV !== "production" && (Breadcrumbs.propTypes = {
+process.env.NODE_ENV !== "production" && (Breadcrumbs$1.propTypes = {
 	children: import_prop_types.default.node,
 	classes: import_prop_types.default.object,
 	className: import_prop_types.default.string,
@@ -90155,7 +90241,7 @@ function ObjectTypeMenuBreadcrumb(props) {
 		translation
 	]);
 	if (!items) return null;
-	return /* @__PURE__ */ jsx(Breadcrumbs, {
+	return /* @__PURE__ */ jsx(Breadcrumbs$1, {
 		sx: { mb: 2 },
 		"aria-label": "breadcrumb",
 		separator: "›",

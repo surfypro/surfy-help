@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: jup-role-to-jup-ui-layout-tab
+sidebar_label: "Role association to plan tabs"
 ---
 
-<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiLayoutTab" />
-
 # Role association to plan tabs
+<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiLayoutTab" title={"Role association to plan tabs"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A role association with plan tabs allows you to define access permissions to the different plan tabs for a role.

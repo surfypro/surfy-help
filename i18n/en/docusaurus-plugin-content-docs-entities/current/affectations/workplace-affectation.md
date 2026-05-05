@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: workplace-affectation
+sidebar_label: "Work station assignment"
 ---
 
-<ObjectTypeMenuBreadcrumb code="workplaceAffectation" />
-
 # Work station assignment
+<ObjectTypeMenuBreadcrumb code="workplaceAffectation" title={"Work station assignment"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Allows a fixed workstation to be assigned to a person

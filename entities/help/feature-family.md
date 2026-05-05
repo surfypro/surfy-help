@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: feature-family
+sidebar_label: "Famille de fonctionnalités"
 ---
 
-<ObjectTypeMenuBreadcrumb code="featureFamily" />
-
 # Famille de fonctionnalités
+<ObjectTypeMenuBreadcrumb code="featureFamily" title={"Famille de fonctionnalités"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une famille de fonctionnalités permet de regrouper des fonctionnalités liées selon leur domaine ou leur usage

@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: building-type
+sidebar_label: "Type de bâtiment"
 ---
 
-<ObjectTypeMenuBreadcrumb code="buildingType" />
-
 # Type de bâtiment
+<ObjectTypeMenuBreadcrumb code="buildingType" title={"Type de bâtiment"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un type de bâtiment permet de catégoriser les bâtiments selon leur usage

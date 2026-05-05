@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: jup-role-to-jup-ui-operation
+sidebar_label: "Association rôle aux opérations d'interface"
 ---
 
-<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiOperation" />
-
 # Association rôle aux opérations d'interface
+<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiOperation" title={"Association rôle aux opérations d'interface"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association rôle aux opérations d'interface permet de définir les permissions d'accès aux différentes opérations de l'interface pour un rôle

@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: jup-role-to-jup-object-type
+sidebar_label: "Role to object type association"
 ---
 
-<ObjectTypeMenuBreadcrumb code="jupRoleToJupObjectType" />
-
 # Role to object type association
+<ObjectTypeMenuBreadcrumb code="jupRoleToJupObjectType" title={"Role to object type association"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A role to object type association allows you to define specific CRUD permissions for a role on an entity type

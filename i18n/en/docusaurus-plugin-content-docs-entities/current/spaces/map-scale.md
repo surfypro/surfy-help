@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: map-scale
+sidebar_label: "Plane scale"
 ---
 
-<ObjectTypeMenuBreadcrumb code="mapScale" />
-
 # Plane scale
+<ObjectTypeMenuBreadcrumb code="mapScale" title={"Plane scale"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A map scale allows you to define the display and scale parameters for maps

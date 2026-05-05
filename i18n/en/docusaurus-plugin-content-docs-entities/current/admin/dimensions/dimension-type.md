@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: dimension-type
+sidebar_label: "Layer type"
 ---
 
-<ObjectTypeMenuBreadcrumb code="dimensionType" />
-
 # Layer type
+<ObjectTypeMenuBreadcrumb code="dimensionType" title={"Layer type"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A layer type allows you to categorize analysis layers according to their use or area of application.

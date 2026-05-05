@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: manufacturer
+sidebar_label: "Object type manufacturer"
 ---
 
-<ObjectTypeMenuBreadcrumb code="manufacturer" />
-
 # Object type manufacturer
+<ObjectTypeMenuBreadcrumb code="manufacturer" title={"Object type manufacturer"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A manufacturer represents a company or brand that produces objects or equipment

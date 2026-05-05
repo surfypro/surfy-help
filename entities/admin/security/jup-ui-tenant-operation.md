@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: jup-ui-tenant-operation
+sidebar_label: "Opération d'interface pour une entreprise"
 ---
 
-<ObjectTypeMenuBreadcrumb code="jupUiTenantOperation" />
-
 # Opération d'interface pour une entreprise
+<ObjectTypeMenuBreadcrumb code="jupUiTenantOperation" title={"Opération d'interface pour une entreprise"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une opération d'interface pour une entreprise définit les actions et fonctionnalités spécifiques disponibles pour une entreprise dans l'interface utilisateur

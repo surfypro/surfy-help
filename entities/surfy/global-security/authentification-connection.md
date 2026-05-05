@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: authentification-connection
+sidebar_label: "Connection d'authentification"
 ---
 
-<ObjectTypeMenuBreadcrumb code="authentificationConnection" />
-
 # Connection d'authentification
+<ObjectTypeMenuBreadcrumb code="authentificationConnection" title={"Connection d'authentification"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une connexion d'authentification permet de configurer les méthodes d'authentification pour accéder à la plateforme (SSO, LDAP, etc.)

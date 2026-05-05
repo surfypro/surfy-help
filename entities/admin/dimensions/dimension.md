@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: dimension
+sidebar_label: "Calque d'analyse"
 ---
 
-<ObjectTypeMenuBreadcrumb code="dimension" />
-
 # Calque d'analyse
+<ObjectTypeMenuBreadcrumb code="dimension" title={"Calque d'analyse"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un calque d'analyse permet de catégoriser et analyser les espaces selon différents critères pour des analyses statistiques et de reporting

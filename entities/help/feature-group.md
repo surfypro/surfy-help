@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: feature-group
+sidebar_label: " Feature Group"
 ---
 
-<ObjectTypeMenuBreadcrumb code="featureGroup" />
-
 #  Feature Group
+<ObjectTypeMenuBreadcrumb code="featureGroup" title={" Feature Group"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

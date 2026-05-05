@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: floor
+sidebar_label: "Floor"
 ---
 
-<ObjectTypeMenuBreadcrumb code="floor" />
-
 # Floor
+<ObjectTypeMenuBreadcrumb code="floor" title={"Floor"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Floors represent a work platform or a level of a building.

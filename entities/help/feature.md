@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: feature
+sidebar_label: "Fonctionnalité"
 ---
 
-<ObjectTypeMenuBreadcrumb code="feature" />
-
 # Fonctionnalité
+<ObjectTypeMenuBreadcrumb code="feature" title={"Fonctionnalité"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une fonctionnalité représente une caractéristique ou une capacité spécifique disponible dans le système

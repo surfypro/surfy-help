@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: cost-center
+sidebar_label: "Cost center"
 ---
 
-<ObjectTypeMenuBreadcrumb code="costCenter" />
-
 # Cost center
+<ObjectTypeMenuBreadcrumb code="costCenter" title={"Cost center"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 The cost center allows spaces to be distributed dynamically for re-invoicing

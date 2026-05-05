@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: vehicle-propulsion-type
+sidebar_label: "Vehicle propulsion type"
 ---
 
-<ObjectTypeMenuBreadcrumb code="vehiclePropulsionType" />
-
 # Vehicle propulsion type
+<ObjectTypeMenuBreadcrumb code="vehiclePropulsionType" title={"Vehicle propulsion type"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A vehicle propulsion type allows us to categorize vehicles according to their propulsion method (electric, thermal, hybrid, manual, etc.)

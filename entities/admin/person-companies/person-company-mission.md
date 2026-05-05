@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: person-company-mission
+sidebar_label: "Mission du prestataire"
 ---
 
-<ObjectTypeMenuBreadcrumb code="personCompanyMission" />
-
 # Mission du prestataire
+<ObjectTypeMenuBreadcrumb code="personCompanyMission" title={"Mission du prestataire"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Les missions des prestataires permettent de connaitre le domaine d'intervention des prestataires

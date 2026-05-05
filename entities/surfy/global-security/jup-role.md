@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: jup-role
+sidebar_label: "Rôle"
 ---
 
-<ObjectTypeMenuBreadcrumb code="jupRole" />
-
 # Rôle
+<ObjectTypeMenuBreadcrumb code="jupRole" title={"Rôle"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un rôle définit les permissions d'accès aux fonctionnalités dans l'interface utilisateur

@@ -1,10 +1,11 @@
 ---
 search_rank: 0.5
+sidebar_key: company-type
+sidebar_label: "Type of company"
 ---
 
-<ObjectTypeMenuBreadcrumb code="companyType" />
-
 # Type of company
+<ObjectTypeMenuBreadcrumb code="companyType" title={"Type of company"} />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A business type allows businesses to be categorized according to their use
