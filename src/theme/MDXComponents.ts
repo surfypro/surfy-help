@@ -9,7 +9,7 @@ import {
     SurfyHelpStandaloneViewMenuBreadcrumb,
     SurfyHelpLinkToIndexView,
     ClickOnIndexViewMenuPathBreadcrumb,
-} from '../../surfy';
+} from '@site/surfy';
 
 export default {
     ...MDXComponents,
