@@ -1,21 +1,26 @@
 import MDXComponents from '@theme-original/MDXComponents';
 import { Youtube } from '@site/src/components/videos/Youtube';
 import {
-    ObjectType,
+    SurfyHelpObjectType,
     ObjectTypeHelper,
     ObjectTypeMenuBreadcrumb,
-    PropertyType,
+    SurfyHelpPropertyType,
     PropertyTypeHelper,
+    SurfyHelpStandaloneViewMenuBreadcrumb,
     SurfyHelpLinkToIndexView,
+    ClickOnIndexViewMenuPathBreadcrumb,
 } from '@site/surfy';
 
 export default {
     ...MDXComponents,
-    P: PropertyType,
+    P: SurfyHelpPropertyType,
     LIV: SurfyHelpLinkToIndexView,
-    OT: ObjectType,
+    OT: SurfyHelpObjectType,
+    OTB: ObjectTypeMenuBreadcrumb,
+    LIVB: SurfyHelpStandaloneViewMenuBreadcrumb,
     ObjectTypeMenuBreadcrumb,
     PH: PropertyTypeHelper,
     OH: ObjectTypeHelper,
     Youtube,
+    ClickViewMenu: ClickOnIndexViewMenuPathBreadcrumb
 };

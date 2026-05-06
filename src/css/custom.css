@@ -46,6 +46,11 @@ a.home::hover {
   color: #666;
 }
 
-.homebutton{
-  margin:4px;
+.homebutton {
+  margin: 4px;
+}
+
+/* Keep markdown list compaction out of ClickViewMenu breadcrumbs */
+.markdown .MuiBreadcrumbs-ol li+li {
+  margin-top: 0;
 }

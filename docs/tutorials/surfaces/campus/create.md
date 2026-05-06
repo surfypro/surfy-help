@@ -8,7 +8,7 @@ Un campus est un ensemble de bâtiments regroupés dans une entité "Campus" per
 
 Pour créer un campus depuis la page d'accueil, dans le menu de gauche,
 
--   cliquer sur "Espaces" puis "Campus" puis "Créer un Campus"
+-   <ClickViewMenu code="campus:create"/>
 -   indiquer le <P code="campus:name" /> du campus, et sa <P code="campus:color" /> de représentation
 -   renseigner éventuellement l'<P code="campus:address" /> du campus, permettant sa géolocalisation sur une carte
 -   valider la création

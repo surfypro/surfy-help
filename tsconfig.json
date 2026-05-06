@@ -6,6 +6,7 @@
     "baseUrl": ".",
     "jsx": "react-jsx", // or "react"
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "noEmit": true
   }
 }

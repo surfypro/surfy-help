@@ -12,7 +12,7 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc",
+    "typecheck": "tsc --noEmit",
     "start:en": "pnpm start --locale en"
   },
   "dependencies": {
@@ -33,7 +33,6 @@
     "babel-loader": "10.1.1",
     "clsx": "2.1.1",
     "js-cookie": "3.0.5",
-    "pluralize": "8.0.0",
     "pnpm": "10.33.0",
     "prism-react-renderer": "2.4.1",
     "react": "19.2.5",
