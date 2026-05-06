@@ -5,7 +5,7 @@ sidebar_label: "Rôle de contenu"
 ---
 
 # Rôle de contenu
-<ObjectTypeMenuBreadcrumb code="contentRole" title={"Rôle de contenu"} />
+<ObjectTypeMenuBreadcrumb code="contentRole" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un rôle de contenu définit les permissions d'accès aux différentes données de la plateforme pour les utilisateurs

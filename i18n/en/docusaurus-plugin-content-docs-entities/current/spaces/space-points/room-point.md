@@ -5,7 +5,7 @@ sidebar_label: "Point of spaces"
 ---
 
 # Point of spaces
-<ObjectTypeMenuBreadcrumb code="roomPoint" title={"Point of spaces"} />
+<ObjectTypeMenuBreadcrumb code="roomPoint" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A point in spaces defines the geometric coordinates for drawing the outline of a space

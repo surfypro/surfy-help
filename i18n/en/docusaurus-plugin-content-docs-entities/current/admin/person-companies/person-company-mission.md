@@ -5,7 +5,7 @@ sidebar_label: "Mission of the service provider"
 ---
 
 # Mission of the service provider
-<ObjectTypeMenuBreadcrumb code="personCompanyMission" title={"Mission of the service provider"} />
+<ObjectTypeMenuBreadcrumb code="personCompanyMission" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 The missions of the service providers make it possible to know the area of ​​intervention of the service providers

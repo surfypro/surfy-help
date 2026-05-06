@@ -5,7 +5,7 @@ sidebar_label: "Type de poste de travail"
 ---
 
 # Type de poste de travail
-<ObjectTypeMenuBreadcrumb code="workplaceType" title={"Type de poste de travail"} />
+<ObjectTypeMenuBreadcrumb code="workplaceType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

@@ -5,7 +5,7 @@ sidebar_label: "Assignment to Assignment Layer"
 ---
 
 # Assignment to Assignment Layer
-<ObjectTypeMenuBreadcrumb code="dimensionToPerson" title={"Assignment to Assignment Layer"} />
+<ObjectTypeMenuBreadcrumb code="dimensionToPerson" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Allows you to assign a person to a district, territory or village

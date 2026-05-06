@@ -5,7 +5,7 @@ sidebar_label: "Reservation for the people area"
 ---
 
 # Reservation for the people area
-<ObjectTypeMenuBreadcrumb code="personToRoomBooking" title={"Reservation for the people area"} />
+<ObjectTypeMenuBreadcrumb code="personToRoomBooking" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Reservations for people's spaces are recorded and available with the reservation start and end dates

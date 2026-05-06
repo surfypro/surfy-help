@@ -5,7 +5,7 @@ sidebar_label: "Role association of content with buildings"
 ---
 
 # Role association of content with buildings
-<ObjectTypeMenuBreadcrumb code="contentRoleToBuilding" title={"Role association of content with buildings"} />
+<ObjectTypeMenuBreadcrumb code="contentRoleToBuilding" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A content role to building association allows you to define building-specific access permissions for a given role

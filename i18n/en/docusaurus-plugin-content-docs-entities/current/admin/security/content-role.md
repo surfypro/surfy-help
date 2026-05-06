@@ -5,7 +5,7 @@ sidebar_label: "Content role"
 ---
 
 # Content role
-<ObjectTypeMenuBreadcrumb code="contentRole" title={"Content role"} />
+<ObjectTypeMenuBreadcrumb code="contentRole" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A content role defines access permissions to different platform data for users

@@ -5,7 +5,7 @@ sidebar_label: "Association d'objet à personne"
 ---
 
 # Association d'objet à personne
-<ObjectTypeMenuBreadcrumb code="itemToPerson" title={"Association d'objet à personne"} />
+<ObjectTypeMenuBreadcrumb code="itemToPerson" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Permet d'associer un objet à une personne (siège ergonomique, casier)

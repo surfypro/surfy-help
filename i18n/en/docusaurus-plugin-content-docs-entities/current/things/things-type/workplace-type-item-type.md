@@ -5,7 +5,7 @@ sidebar_label: "Object type in workstation type"
 ---
 
 # Object type in workstation type
-<ObjectTypeMenuBreadcrumb code="workplaceTypeItemType" title={"Object type in workstation type"} />
+<ObjectTypeMenuBreadcrumb code="workplaceTypeItemType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

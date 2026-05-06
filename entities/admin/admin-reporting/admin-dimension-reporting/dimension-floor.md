@@ -5,7 +5,7 @@ sidebar_label: "Association calque d'analyse aux étages"
 ---
 
 # Association calque d'analyse aux étages
-<ObjectTypeMenuBreadcrumb code="dimensionFloor" title={"Association calque d'analyse aux étages"} />
+<ObjectTypeMenuBreadcrumb code="dimensionFloor" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association calque d'analyse aux étages permet de définir les calques d'analyse spécifiques pour chaque étage

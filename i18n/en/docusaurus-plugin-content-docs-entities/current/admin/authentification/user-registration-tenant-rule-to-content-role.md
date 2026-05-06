@@ -5,7 +5,7 @@ sidebar_label: "Authentication rule to content role association"
 ---
 
 # Authentication rule to content role association
-<ObjectTypeMenuBreadcrumb code="userRegistrationTenantRuleToContentRole" title={"Authentication rule to content role association"} />
+<ObjectTypeMenuBreadcrumb code="userRegistrationTenantRuleToContentRole" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

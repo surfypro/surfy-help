@@ -5,7 +5,7 @@ sidebar_label: "Association organization on the floors"
 ---
 
 # Association organization on the floors
-<ObjectTypeMenuBreadcrumb code="organizationFloor" title={"Association organization on the floors"} />
+<ObjectTypeMenuBreadcrumb code="organizationFloor" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 An organizational association on floors allows you to define the organizations responsible for each floor

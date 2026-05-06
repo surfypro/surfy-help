@@ -5,7 +5,7 @@ sidebar_label: "Personne"
 ---
 
 # Personne
-<ObjectTypeMenuBreadcrumb code="person" title={"Personne"} />
+<ObjectTypeMenuBreadcrumb code="person" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Ce sont les personnes entrées dans la base de données de Surfy

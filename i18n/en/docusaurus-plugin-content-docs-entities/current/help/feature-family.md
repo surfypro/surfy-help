@@ -5,7 +5,7 @@ sidebar_label: "Family of features"
 ---
 
 # Family of features
-<ObjectTypeMenuBreadcrumb code="featureFamily" title={"Family of features"} />
+<ObjectTypeMenuBreadcrumb code="featureFamily" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A feature family allows you to group related features according to their domain or use.

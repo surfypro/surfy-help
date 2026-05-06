@@ -5,7 +5,7 @@ sidebar_label: "Building assignment"
 ---
 
 # Building assignment
-<ObjectTypeMenuBreadcrumb code="personToBuilding" title={"Building assignment"} />
+<ObjectTypeMenuBreadcrumb code="personToBuilding" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Allows assigning a person to a building, without additional information. The assignment can be counted or not.

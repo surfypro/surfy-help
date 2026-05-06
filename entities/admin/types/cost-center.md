@@ -5,7 +5,7 @@ sidebar_label: "Centre de coût"
 ---
 
 # Centre de coût
-<ObjectTypeMenuBreadcrumb code="costCenter" title={"Centre de coût"} />
+<ObjectTypeMenuBreadcrumb code="costCenter" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Le centre de coût permet de répartir les espaces dynamiquement pour la refacturation

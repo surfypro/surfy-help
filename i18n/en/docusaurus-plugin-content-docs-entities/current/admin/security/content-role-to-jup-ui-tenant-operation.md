@@ -5,7 +5,7 @@ sidebar_label: "Associating content role to interface operations for an enterpri
 ---
 
 # Associating content role to interface operations for an enterprise
-<ObjectTypeMenuBreadcrumb code="contentRoleToJupUiTenantOperation" title={"Associating content role to interface operations for an enterprise"} />
+<ObjectTypeMenuBreadcrumb code="contentRoleToJupUiTenantOperation" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

@@ -5,7 +5,7 @@ sidebar_label: "Object type"
 ---
 
 # Object type
-<ObjectTypeMenuBreadcrumb code="itemType" title={"Object type"} />
+<ObjectTypeMenuBreadcrumb code="itemType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 An object type allows you to categorize and define the characteristics of physical objects present in workspaces

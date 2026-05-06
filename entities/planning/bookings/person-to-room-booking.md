@@ -5,7 +5,7 @@ sidebar_label: "Réservation à l'espace des personnes"
 ---
 
 # Réservation à l'espace des personnes
-<ObjectTypeMenuBreadcrumb code="personToRoomBooking" title={"Réservation à l'espace des personnes"} />
+<ObjectTypeMenuBreadcrumb code="personToRoomBooking" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Les réservations aux espaces des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation

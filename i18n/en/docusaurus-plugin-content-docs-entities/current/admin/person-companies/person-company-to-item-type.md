@@ -5,7 +5,7 @@ sidebar_label: "Provider object type"
 ---
 
 # Provider object type
-<ObjectTypeMenuBreadcrumb code="personCompanyToItemType" title={"Provider object type"} />
+<ObjectTypeMenuBreadcrumb code="personCompanyToItemType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 The service provider object types make it possible to define a relationship between the object type and the service provider and to define the mission.

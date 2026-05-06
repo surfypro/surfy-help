@@ -1,5 +1,5 @@
 import MDXComponents from '@theme-original/MDXComponents';
-import { Youtube } from '@site/src/components/videos/Youtube';
+import { Youtube } from '../components/videos/Youtube';
 import {
     SurfyHelpObjectType,
     ObjectTypeHelper,
@@ -9,7 +9,7 @@ import {
     SurfyHelpStandaloneViewMenuBreadcrumb,
     SurfyHelpLinkToIndexView,
     ClickOnIndexViewMenuPathBreadcrumb,
-} from '@site/surfy';
+} from '../../surfy';
 
 export default {
     ...MDXComponents,

@@ -1,6 +1,6 @@
 import { ThemeProvider, createTheme } from '@mui/material';
 import React from 'react';
-import { SetupRecoilContext, I18NHelpContext } from '@site/surfy';
+import { SetupRecoilContext, I18NHelpContext } from '../../surfy';
 import { useCurrentLocale } from '../translations/translations';
 
 const theme = createTheme({

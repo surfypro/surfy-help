@@ -5,7 +5,7 @@ sidebar_label: "Building"
 ---
 
 # Building
-<ObjectTypeMenuBreadcrumb code="building" title={"Building"} />
+<ObjectTypeMenuBreadcrumb code="building" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 The building is used to group the floors

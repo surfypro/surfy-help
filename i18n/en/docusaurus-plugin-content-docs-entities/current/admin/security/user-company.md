@@ -5,7 +5,7 @@ sidebar_label: "Business user"
 ---
 
 # Business user
-<ObjectTypeMenuBreadcrumb code="userCompany" title={"Business user"} />
+<ObjectTypeMenuBreadcrumb code="userCompany" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Enterprise users have access to their company's Surfy platform

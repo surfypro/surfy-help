@@ -5,7 +5,7 @@ sidebar_label: "Association of space typology on floors"
 ---
 
 # Association of space typology on floors
-<ObjectTypeMenuBreadcrumb code="roomTypeFloor" title={"Association of space typology on floors"} />
+<ObjectTypeMenuBreadcrumb code="roomTypeFloor" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A space typology association with floors makes it possible to define the types of spaces available on each floor

@@ -5,7 +5,7 @@ sidebar_label: "Réservation au calque d'affectation des personnes"
 ---
 
 # Réservation au calque d'affectation des personnes
-<ObjectTypeMenuBreadcrumb code="personToDimensionBooking" title={"Réservation au calque d'affectation des personnes"} />
+<ObjectTypeMenuBreadcrumb code="personToDimensionBooking" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Les réservations aux calques d'affectation des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation

@@ -5,7 +5,7 @@ sidebar_label: "Company work location"
 ---
 
 # Company work location
-<ObjectTypeMenuBreadcrumb code="companyWorkingLocation" title={"Company work location"} />
+<ObjectTypeMenuBreadcrumb code="companyWorkingLocation" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A company work location allows a company to customize people's work locations for booking

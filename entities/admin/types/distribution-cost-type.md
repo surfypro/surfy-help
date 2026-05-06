@@ -5,7 +5,7 @@ sidebar_label: "Type de distribution des coûts"
 ---
 
 # Type de distribution des coûts
-<ObjectTypeMenuBreadcrumb code="distributionCostType" title={"Type de distribution des coûts"} />
+<ObjectTypeMenuBreadcrumb code="distributionCostType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un type de distribution des coûts permet de définir les méthodes de répartition des coûts entre les différents centres de coût

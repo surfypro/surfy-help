@@ -5,7 +5,7 @@ sidebar_label: "Utilisateur d'api"
 ---
 
 # Utilisateur d'api
-<ObjectTypeMenuBreadcrumb code="apiUser" title={"Utilisateur d'api"} />
+<ObjectTypeMenuBreadcrumb code="apiUser" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

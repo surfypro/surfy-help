@@ -5,7 +5,7 @@ sidebar_label: "People's work location"
 ---
 
 # People's work location
-<ObjectTypeMenuBreadcrumb code="personWorkingLocation" title={"People's work location"} />
+<ObjectTypeMenuBreadcrumb code="personWorkingLocation" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A workplace of people defines the workplace of people

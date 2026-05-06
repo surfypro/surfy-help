@@ -5,7 +5,7 @@ sidebar_label: "Type of company"
 ---
 
 # Type of company
-<ObjectTypeMenuBreadcrumb code="companyType" title={"Type of company"} />
+<ObjectTypeMenuBreadcrumb code="companyType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A business type allows businesses to be categorized according to their use

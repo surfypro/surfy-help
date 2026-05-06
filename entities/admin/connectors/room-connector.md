@@ -5,7 +5,7 @@ sidebar_label: "Connecteur d'espace"
 ---
 
 # Connecteur d'espace
-<ObjectTypeMenuBreadcrumb code="roomConnector" title={"Connecteur d'espace"} />
+<ObjectTypeMenuBreadcrumb code="roomConnector" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces dans des étages différents

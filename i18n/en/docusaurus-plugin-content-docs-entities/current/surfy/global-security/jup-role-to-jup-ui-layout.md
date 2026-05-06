@@ -5,7 +5,7 @@ sidebar_label: "Association role to visions"
 ---
 
 # Association role to visions
-<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiLayout" title={"Association role to visions"} />
+<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiLayout" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A role-to-visions association allows you to define access permissions to different visions for a role.

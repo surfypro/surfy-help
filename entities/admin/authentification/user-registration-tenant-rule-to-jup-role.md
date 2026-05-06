@@ -5,7 +5,7 @@ sidebar_label: "Association de règle d'authentification à rôle"
 ---
 
 # Association de règle d'authentification à rôle
-<ObjectTypeMenuBreadcrumb code="userRegistrationTenantRuleToJupRole" title={"Association de règle d'authentification à rôle"} />
+<ObjectTypeMenuBreadcrumb code="userRegistrationTenantRuleToJupRole" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

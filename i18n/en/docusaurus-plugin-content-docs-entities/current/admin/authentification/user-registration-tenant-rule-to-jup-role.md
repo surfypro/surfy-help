@@ -5,7 +5,7 @@ sidebar_label: "Association of authentication rule to role"
 ---
 
 # Association of authentication rule to role
-<ObjectTypeMenuBreadcrumb code="userRegistrationTenantRuleToJupRole" title={"Association of authentication rule to role"} />
+<ObjectTypeMenuBreadcrumb code="userRegistrationTenantRuleToJupRole" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

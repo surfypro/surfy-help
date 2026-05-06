@@ -5,7 +5,7 @@ sidebar_label: "Groupe de typologie d'espace"
 ---
 
 # Groupe de typologie d'espace
-<ObjectTypeMenuBreadcrumb code="roomTypeGroup" title={"Groupe de typologie d'espace"} />
+<ObjectTypeMenuBreadcrumb code="roomTypeGroup" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un groupe de typologie d'espace permet de regrouper plusieurs types d'espaces pour faciliter leur gestion et leur affichage

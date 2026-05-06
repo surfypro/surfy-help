@@ -5,7 +5,7 @@ sidebar_label: "Parking space type configuration"
 ---
 
 # Parking space type configuration
-<ObjectTypeMenuBreadcrumb code="bookingVehicleConfigurationToParkingRoomTypeConfiguration" title={"Parking space type configuration"} />
+<ObjectTypeMenuBreadcrumb code="bookingVehicleConfigurationToParkingRoomTypeConfiguration" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Reservation rules by parking space type

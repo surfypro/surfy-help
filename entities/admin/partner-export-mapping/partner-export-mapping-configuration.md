@@ -5,7 +5,7 @@ sidebar_label: "Configuration de la transformation des exports partenaires"
 ---
 
 # Configuration de la transformation des exports partenaires
-<ObjectTypeMenuBreadcrumb code="partnerExportMappingConfiguration" title={"Configuration de la transformation des exports partenaires"} />
+<ObjectTypeMenuBreadcrumb code="partnerExportMappingConfiguration" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

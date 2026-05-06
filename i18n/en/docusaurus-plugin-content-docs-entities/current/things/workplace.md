@@ -5,7 +5,7 @@ sidebar_label: "Workplace"
 ---
 
 # Workplace
-<ObjectTypeMenuBreadcrumb code="workplace" title={"Workplace"} />
+<ObjectTypeMenuBreadcrumb code="workplace" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

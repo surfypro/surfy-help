@@ -5,7 +5,7 @@ sidebar_label: "Emplacement de travail"
 ---
 
 # Emplacement de travail
-<ObjectTypeMenuBreadcrumb code="workingLocation" title={"Emplacement de travail"} />
+<ObjectTypeMenuBreadcrumb code="workingLocation" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un emplacement de travail définit le lieu de travail des personnes

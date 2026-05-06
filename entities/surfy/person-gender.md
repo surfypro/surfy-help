@@ -5,7 +5,7 @@ sidebar_label: "Genre de la personne"
 ---
 
 # Genre de la personne
-<ObjectTypeMenuBreadcrumb code="personGender" title={"Genre de la personne"} />
+<ObjectTypeMenuBreadcrumb code="personGender" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Permet de dénombrer chaque genre, par exemple pour la gestion des sanitaires

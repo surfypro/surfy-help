@@ -5,7 +5,7 @@ sidebar_label: "Fact"
 ---
 
 # Fact
-<ObjectTypeMenuBreadcrumb code="fact" title={"Fact"} />
+<ObjectTypeMenuBreadcrumb code="fact" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A fact represents a factual data or event recorded in the system for analysis and reporting

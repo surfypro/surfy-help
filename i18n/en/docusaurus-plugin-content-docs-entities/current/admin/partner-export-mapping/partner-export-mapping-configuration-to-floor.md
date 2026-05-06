@@ -5,7 +5,7 @@ sidebar_label: "Floor included in the configuration of the transformation of par
 ---
 
 # Floor included in the configuration of the transformation of partner exports
-<ObjectTypeMenuBreadcrumb code="partnerExportMappingConfigurationToFloor" title={"Floor included in the configuration of the transformation of partner exports"} />
+<ObjectTypeMenuBreadcrumb code="partnerExportMappingConfigurationToFloor" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

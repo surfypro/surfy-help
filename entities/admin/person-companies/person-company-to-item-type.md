@@ -5,7 +5,7 @@ sidebar_label: "Type d'objet du prestataire"
 ---
 
 # Type d'objet du prestataire
-<ObjectTypeMenuBreadcrumb code="personCompanyToItemType" title={"Type d'objet du prestataire"} />
+<ObjectTypeMenuBreadcrumb code="personCompanyToItemType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Les types d'objets des prestataires permettent de définir une relation entre le type d'objet et le prestataires et d'y définir la mission

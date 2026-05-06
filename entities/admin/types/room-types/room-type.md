@@ -5,7 +5,7 @@ sidebar_label: "Typologie d'espace"
 ---
 
 # Typologie d'espace
-<ObjectTypeMenuBreadcrumb code="roomType" title={"Typologie d'espace"} />
+<ObjectTypeMenuBreadcrumb code="roomType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

@@ -5,7 +5,7 @@ sidebar_label: "Association de règle d'authentification à rôle de contenu"
 ---
 
 # Association de règle d'authentification à rôle de contenu
-<ObjectTypeMenuBreadcrumb code="userRegistrationTenantRuleToContentRole" title={"Association de règle d'authentification à rôle de contenu"} />
+<ObjectTypeMenuBreadcrumb code="userRegistrationTenantRuleToContentRole" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

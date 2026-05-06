@@ -5,7 +5,7 @@ sidebar_label: "Partner API key"
 ---
 
 # Partner API key
-<ObjectTypeMenuBreadcrumb code="partnerApiCredential" title={"Partner API key"} />
+<ObjectTypeMenuBreadcrumb code="partnerApiCredential" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A Partner API Key is used to authenticate and authorize access to APIs for external partners.

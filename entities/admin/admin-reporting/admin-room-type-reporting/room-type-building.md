@@ -5,7 +5,7 @@ sidebar_label: "Association typologie d'espace aux bâtiments"
 ---
 
 # Association typologie d'espace aux bâtiments
-<ObjectTypeMenuBreadcrumb code="roomTypeBuilding" title={"Association typologie d'espace aux bâtiments"} />
+<ObjectTypeMenuBreadcrumb code="roomTypeBuilding" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association typologie d'espace aux bâtiments permet de définir les types d'espaces disponibles dans chaque bâtiment

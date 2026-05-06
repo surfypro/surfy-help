@@ -5,7 +5,7 @@ sidebar_label: "Association organisation aux bâtiments"
 ---
 
 # Association organisation aux bâtiments
-<ObjectTypeMenuBreadcrumb code="organizationBuilding" title={"Association organisation aux bâtiments"} />
+<ObjectTypeMenuBreadcrumb code="organizationBuilding" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association organisation aux bâtiments permet de définir les organisations responsables de chaque bâtiment

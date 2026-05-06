@@ -5,7 +5,7 @@ sidebar_label: "Authentication rule"
 ---
 
 # Authentication rule
-<ObjectTypeMenuBreadcrumb code="userRegistrationTenantRule" title={"Authentication rule"} />
+<ObjectTypeMenuBreadcrumb code="userRegistrationTenantRule" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

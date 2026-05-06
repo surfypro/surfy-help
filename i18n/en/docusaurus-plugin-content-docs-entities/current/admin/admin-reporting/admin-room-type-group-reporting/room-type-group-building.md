@@ -5,7 +5,7 @@ sidebar_label: "Association of building space typology groups"
 ---
 
 # Association of building space typology groups
-<ObjectTypeMenuBreadcrumb code="roomTypeGroupBuilding" title={"Association of building space typology groups"} />
+<ObjectTypeMenuBreadcrumb code="roomTypeGroupBuilding" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A space typology group association with buildings allows you to define the groups of space types available in each building

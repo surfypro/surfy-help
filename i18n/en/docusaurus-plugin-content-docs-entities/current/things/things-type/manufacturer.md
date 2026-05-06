@@ -5,7 +5,7 @@ sidebar_label: "Object type manufacturer"
 ---
 
 # Object type manufacturer
-<ObjectTypeMenuBreadcrumb code="manufacturer" title={"Object type manufacturer"} />
+<ObjectTypeMenuBreadcrumb code="manufacturer" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A manufacturer represents a company or brand that produces objects or equipment

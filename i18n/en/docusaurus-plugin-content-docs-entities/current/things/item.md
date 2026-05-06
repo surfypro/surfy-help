@@ -5,7 +5,7 @@ sidebar_label: "Object"
 ---
 
 # Object
-<ObjectTypeMenuBreadcrumb code="item" title={"Object"} />
+<ObjectTypeMenuBreadcrumb code="item" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 An object represents a physical or material element present in workspaces

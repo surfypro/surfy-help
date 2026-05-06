@@ -5,7 +5,7 @@ sidebar_label: "Affectation d'espace"
 ---
 
 # Affectation d'espace
-<ObjectTypeMenuBreadcrumb code="roomAffectation" title={"Affectation d'espace"} />
+<ObjectTypeMenuBreadcrumb code="roomAffectation" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Permet d'affecter une personne à un espace simple

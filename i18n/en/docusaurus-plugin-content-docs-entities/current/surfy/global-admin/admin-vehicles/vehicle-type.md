@@ -5,7 +5,7 @@ sidebar_label: "Vehicle type"
 ---
 
 # Vehicle type
-<ObjectTypeMenuBreadcrumb code="vehicleType" title={"Vehicle type"} />
+<ObjectTypeMenuBreadcrumb code="vehicleType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A vehicle type allows us to categorize vehicles such as cars, motorcycles, bicycles...

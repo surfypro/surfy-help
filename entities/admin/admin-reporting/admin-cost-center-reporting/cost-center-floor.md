@@ -5,7 +5,7 @@ sidebar_label: "Association centre de coût aux étages"
 ---
 
 # Association centre de coût aux étages
-<ObjectTypeMenuBreadcrumb code="costCenterFloor" title={"Association centre de coût aux étages"} />
+<ObjectTypeMenuBreadcrumb code="costCenterFloor" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association centre de coût aux étages permet de définir les centres de coût spécifiques pour chaque étage

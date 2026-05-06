@@ -5,7 +5,7 @@ sidebar_label: "Transformation des exports partenaires pour les types d'espaces"
 ---
 
 # Transformation des exports partenaires pour les types d'espaces
-<ObjectTypeMenuBreadcrumb code="partnerExportMappingToRoomType" title={"Transformation des exports partenaires pour les types d'espaces"} />
+<ObjectTypeMenuBreadcrumb code="partnerExportMappingToRoomType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

@@ -5,7 +5,7 @@ sidebar_label: "Poste de travail"
 ---
 
 # Poste de travail
-<ObjectTypeMenuBreadcrumb code="workplace" title={"Poste de travail"} />
+<ObjectTypeMenuBreadcrumb code="workplace" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

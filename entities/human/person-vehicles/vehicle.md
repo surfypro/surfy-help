@@ -5,7 +5,7 @@ sidebar_label: "Véhicule"
 ---
 
 # Véhicule
-<ObjectTypeMenuBreadcrumb code="vehicle" title={"Véhicule"} />
+<ObjectTypeMenuBreadcrumb code="vehicle" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un véhicule permet de gérer les informations relatives à un véhicule

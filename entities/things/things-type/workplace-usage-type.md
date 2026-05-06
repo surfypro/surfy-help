@@ -5,7 +5,7 @@ sidebar_label: "Type d'usage de poste de travail"
 ---
 
 # Type d'usage de poste de travail
-<ObjectTypeMenuBreadcrumb code="workplaceUsageType" title={"Type d'usage de poste de travail"} />
+<ObjectTypeMenuBreadcrumb code="workplaceUsageType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Le type d'usage de poste de travail permet de catégoriser les postes de travail selon leur utilisation avec les termes de l'entreprise et de les visualiser avec des couleurs différentes sur les plans

@@ -5,7 +5,7 @@ sidebar_label: "Legend"
 ---
 
 # Legend
-<ObjectTypeMenuBreadcrumb code="legend" title={"Legend"} />
+<ObjectTypeMenuBreadcrumb code="legend" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 The legend allows you to configure the properties visible when the plan is saved as an image

@@ -5,7 +5,7 @@ sidebar_label: "Gender of the person"
 ---
 
 # Gender of the person
-<ObjectTypeMenuBreadcrumb code="personGender" title={"Gender of the person"} />
+<ObjectTypeMenuBreadcrumb code="personGender" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Allows you to count each gender, for example for managing toilets

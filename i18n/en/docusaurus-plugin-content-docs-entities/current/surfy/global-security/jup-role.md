@@ -5,7 +5,7 @@ sidebar_label: "Role"
 ---
 
 # Role
-<ObjectTypeMenuBreadcrumb code="jupRole" title={"Role"} />
+<ObjectTypeMenuBreadcrumb code="jupRole" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A role defines access permissions to features in the user interface

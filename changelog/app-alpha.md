@@ -14,7 +14,7 @@ Lors d’une mise en production, le contenu utile est repris dans la page [Nouve
 
 ## Mai 2026 — en test sur l’alpha
 
-- <LIV code="personWorkingLocation:guest-planning" environment="alpha" />
+- <LIV code="personWorkingLocation:guest-planning" host="app-alpha.surfy.pro" />
   - Nouvelle vue de **planning pour invités** : création et suivi d’invités, choix d’un invité puis accès au planning des postes comme pour une personne habituelle.
   - Panneaux d’invitation et de liste d’invités enrichis pour guider la saisie.
 - Mise en place de l’<OT code="personType" /> dans les données de référence et le menu : les personnes peuvent être associées à un type (par exemple invité), visible dans les fiches et les écrans de réservation concernés.

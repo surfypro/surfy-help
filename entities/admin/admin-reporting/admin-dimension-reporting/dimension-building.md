@@ -5,7 +5,7 @@ sidebar_label: "Association calque d'analyse aux bâtiments"
 ---
 
 # Association calque d'analyse aux bâtiments
-<ObjectTypeMenuBreadcrumb code="dimensionBuilding" title={"Association calque d'analyse aux bâtiments"} />
+<ObjectTypeMenuBreadcrumb code="dimensionBuilding" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association calque d'analyse aux bâtiments permet de définir les calques d'analyse spécifiques pour chaque bâtiment

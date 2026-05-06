@@ -5,7 +5,7 @@ sidebar_label: "Type of workstation"
 ---
 
 # Type of workstation
-<ObjectTypeMenuBreadcrumb code="workplaceType" title={"Type of workstation"} />
+<ObjectTypeMenuBreadcrumb code="workplaceType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

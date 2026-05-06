@@ -5,7 +5,7 @@ sidebar_label: "Personal safety profile"
 ---
 
 # Personal safety profile
-<ObjectTypeMenuBreadcrumb code="personSecurityProfile" title={"Personal safety profile"} />
+<ObjectTypeMenuBreadcrumb code="personSecurityProfile" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Allows you to define the different security profiles that can be associated with people

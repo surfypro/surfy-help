@@ -5,7 +5,7 @@ sidebar_label: " Room Connector Type"
 ---
 
 #  Room Connector Type
-<ObjectTypeMenuBreadcrumb code="roomConnectorType" title={" Room Connector Type"} />
+<ObjectTypeMenuBreadcrumb code="roomConnectorType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

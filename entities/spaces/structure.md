@@ -5,7 +5,7 @@ sidebar_label: "Structure"
 ---
 
 # Structure
-<ObjectTypeMenuBreadcrumb code="structure" title={"Structure"} />
+<ObjectTypeMenuBreadcrumb code="structure" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une structure définit une forme géométrique qui peut être utilisée pour calibrer et positionner des éléments sur des cartes

@@ -5,7 +5,7 @@ sidebar_label: "Association rôle aux options d'interface"
 ---
 
 # Association rôle aux options d'interface
-<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiOption" title={"Association rôle aux options d'interface"} />
+<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiOption" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association rôle aux options d'interface permet de définir les permissions d'accès aux différentes options de l'interface pour un rôle

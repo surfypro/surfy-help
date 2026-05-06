@@ -5,7 +5,7 @@ sidebar_label: "Mouvement d'objet"
 ---
 
 # Mouvement d'objet
-<ObjectTypeMenuBreadcrumb code="itemFact" title={"Mouvement d'objet"} />
+<ObjectTypeMenuBreadcrumb code="itemFact" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un mouvement d'objet enregistre les déplacements ou changements de statut d'un objet dans le système

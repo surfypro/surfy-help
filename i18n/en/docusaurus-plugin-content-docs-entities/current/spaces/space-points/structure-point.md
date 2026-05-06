@@ -5,7 +5,7 @@ sidebar_label: " Structure Point"
 ---
 
 #  Structure Point
-<ObjectTypeMenuBreadcrumb code="structurePoint" title={" Structure Point"} />
+<ObjectTypeMenuBreadcrumb code="structurePoint" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

@@ -5,7 +5,7 @@ sidebar_label: "Occupancy status"
 ---
 
 # Occupancy status
-<ObjectTypeMenuBreadcrumb code="occupancyStatus" title={"Occupancy status"} />
+<ObjectTypeMenuBreadcrumb code="occupancyStatus" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 The occupancy status makes it possible to identify the real-time status of a space or workstation, for example if it is free, occupied or squatted, the occupancy status is updated. day by connected objects present in space

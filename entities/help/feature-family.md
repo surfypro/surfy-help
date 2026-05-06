@@ -5,7 +5,7 @@ sidebar_label: "Famille de fonctionnalités"
 ---
 
 # Famille de fonctionnalités
-<ObjectTypeMenuBreadcrumb code="featureFamily" title={"Famille de fonctionnalités"} />
+<ObjectTypeMenuBreadcrumb code="featureFamily" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une famille de fonctionnalités permet de regrouper des fonctionnalités liées selon leur domaine ou leur usage

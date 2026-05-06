@@ -5,7 +5,7 @@ sidebar_label: "Type de Fait"
 ---
 
 # Type de Fait
-<ObjectTypeMenuBreadcrumb code="factType" title={"Type de Fait"} />
+<ObjectTypeMenuBreadcrumb code="factType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un type de fait permet de catégoriser les différents types de données factuelles ou d'événements enregistrés dans le système

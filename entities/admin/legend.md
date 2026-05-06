@@ -5,7 +5,7 @@ sidebar_label: "Légende"
 ---
 
 # Légende
-<ObjectTypeMenuBreadcrumb code="legend" title={"Légende"} />
+<ObjectTypeMenuBreadcrumb code="legend" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 La légende permet de configurer les propriété visible quand le plan est sauvegardé en image

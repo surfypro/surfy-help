@@ -5,7 +5,7 @@ sidebar_label: "Segment qualification"
 ---
 
 # Segment qualification
-<ObjectTypeMenuBreadcrumb code="roomPointSegment" title={"Segment qualification"} />
+<ObjectTypeMenuBreadcrumb code="roomPointSegment" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A segment qualification allows you to define the display and orientation properties of a segment between two space points

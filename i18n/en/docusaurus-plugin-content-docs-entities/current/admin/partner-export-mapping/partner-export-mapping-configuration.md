@@ -5,7 +5,7 @@ sidebar_label: "Configuring Partner Export Transformation"
 ---
 
 # Configuring Partner Export Transformation
-<ObjectTypeMenuBreadcrumb code="partnerExportMappingConfiguration" title={"Configuring Partner Export Transformation"} />
+<ObjectTypeMenuBreadcrumb code="partnerExportMappingConfiguration" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

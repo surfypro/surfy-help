@@ -5,7 +5,7 @@ sidebar_label: "Association rôle à type d'objet"
 ---
 
 # Association rôle à type d'objet
-<ObjectTypeMenuBreadcrumb code="jupRoleToJupObjectType" title={"Association rôle à type d'objet"} />
+<ObjectTypeMenuBreadcrumb code="jupRoleToJupObjectType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association rôle à type d'objet permet de définir les permissions CRUD spécifiques pour un rôle sur un type d'entité

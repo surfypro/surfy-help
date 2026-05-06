@@ -5,7 +5,7 @@ sidebar_label: "Interface operation"
 ---
 
 # Interface operation
-<ObjectTypeMenuBreadcrumb code="jupUiOperation" title={"Interface operation"} />
+<ObjectTypeMenuBreadcrumb code="jupUiOperation" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 An interface operation defines the actions and functionality available in the user interface

@@ -5,7 +5,7 @@ sidebar_label: "Type d'entité"
 ---
 
 # Type d'entité
-<ObjectTypeMenuBreadcrumb code="jupObjectType" title={"Type d'entité"} />
+<ObjectTypeMenuBreadcrumb code="jupObjectType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un type d'entité définit les différents types d'objets disponibles dans l'interface utilisateur

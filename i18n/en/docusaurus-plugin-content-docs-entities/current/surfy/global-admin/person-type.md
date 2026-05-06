@@ -5,7 +5,7 @@ sidebar_label: "Type of person"
 ---
 
 # Type of person
-<ObjectTypeMenuBreadcrumb code="personType" title={"Type of person"} />
+<ObjectTypeMenuBreadcrumb code="personType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Allows you to categorize people according to their relationship with the company, for example collaborator (internal employee) or guest (external, visitor)

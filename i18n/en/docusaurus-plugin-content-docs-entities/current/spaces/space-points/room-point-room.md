@@ -5,7 +5,7 @@ sidebar_label: "Association between a point and a space"
 ---
 
 # Association between a point and a space
-<ObjectTypeMenuBreadcrumb code="roomPointRoom" title={"Association between a point and a space"} />
+<ObjectTypeMenuBreadcrumb code="roomPointRoom" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 The association between a point and a space makes it possible to preserve the order of the points in a space in order to constitute a polyon

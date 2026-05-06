@@ -5,7 +5,7 @@ sidebar_label: "Association groupe de typologie d'espace aux étages"
 ---
 
 # Association groupe de typologie d'espace aux étages
-<ObjectTypeMenuBreadcrumb code="roomTypeGroupFloor" title={"Association groupe de typologie d'espace aux étages"} />
+<ObjectTypeMenuBreadcrumb code="roomTypeGroupFloor" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association groupe de typologie d'espace aux étages permet de définir les groupes de types d'espaces disponibles dans chaque étage

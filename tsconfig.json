@@ -3,10 +3,26 @@
   "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
     "resolveJsonModule": true,
-    "baseUrl": ".",
+    "plugins": [
+      {
+        "name": "@mdx-js/typescript-plugin"
+      }
+    ],
     "jsx": "react-jsx", // or "react"
     "strict": true,
     "esModuleInterop": true,
-    "noEmit": true
-  }
+    "noEmit": true,
+    "ignoreDeprecations": "6.0"
+  },
+  "mdx": {
+    "checkMdx": true
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    "coverage",
+    "docs-en",
+    "docs-fr"
+  ]
 }

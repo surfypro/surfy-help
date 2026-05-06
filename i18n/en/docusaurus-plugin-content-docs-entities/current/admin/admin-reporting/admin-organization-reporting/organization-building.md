@@ -5,7 +5,7 @@ sidebar_label: "Association organization to buildings"
 ---
 
 # Association organization to buildings
-<ObjectTypeMenuBreadcrumb code="organizationBuilding" title={"Association organization to buildings"} />
+<ObjectTypeMenuBreadcrumb code="organizationBuilding" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 An organization-building association allows you to define the organizations responsible for each building

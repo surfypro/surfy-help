@@ -5,7 +5,7 @@ sidebar_label: "Type of cost distribution"
 ---
 
 # Type of cost distribution
-<ObjectTypeMenuBreadcrumb code="distributionCostType" title={"Type of cost distribution"} />
+<ObjectTypeMenuBreadcrumb code="distributionCostType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A cost distribution type allows you to define the methods for distributing costs between different cost centers

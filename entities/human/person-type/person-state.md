@@ -5,7 +5,7 @@ sidebar_label: "Statut des personnes"
 ---
 
 # Statut des personnes
-<ObjectTypeMenuBreadcrumb code="personState" title={"Statut des personnes"} />
+<ObjectTypeMenuBreadcrumb code="personState" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Permet de définir tous les types de contrat des personnes vis à vis de l'entreprise

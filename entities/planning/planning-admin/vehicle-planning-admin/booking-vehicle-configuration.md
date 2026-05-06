@@ -5,7 +5,7 @@ sidebar_label: "Configuration véhicule de réservation"
 ---
 
 # Configuration véhicule de réservation
-<ObjectTypeMenuBreadcrumb code="bookingVehicleConfiguration" title={"Configuration véhicule de réservation"} />
+<ObjectTypeMenuBreadcrumb code="bookingVehicleConfiguration" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Configuration de réservation par type de véhicule et motorisation

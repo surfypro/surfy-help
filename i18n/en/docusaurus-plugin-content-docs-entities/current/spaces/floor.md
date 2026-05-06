@@ -5,7 +5,7 @@ sidebar_label: "Floor"
 ---
 
 # Floor
-<ObjectTypeMenuBreadcrumb code="floor" title={"Floor"} />
+<ObjectTypeMenuBreadcrumb code="floor" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Floors represent a work platform or a level of a building.

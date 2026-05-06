@@ -5,7 +5,7 @@ sidebar_label: "Campus"
 ---
 
 # Campus
-<ObjectTypeMenuBreadcrumb code="campus" title={"Campus"} />
+<ObjectTypeMenuBreadcrumb code="campus" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Le campus est utilisé pour regrouper des bâtiments qui sont au même endroit.

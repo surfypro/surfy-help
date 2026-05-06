@@ -5,7 +5,7 @@ sidebar_label: "Organisation"
 ---
 
 # Organisation
-<ObjectTypeMenuBreadcrumb code="organization" title={"Organisation"} />
+<ObjectTypeMenuBreadcrumb code="organization" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Les organisations ont deux niveaux hiérarchiques : les directions et les services, et permettent de définir la structure organisationnelle de l'entreprise

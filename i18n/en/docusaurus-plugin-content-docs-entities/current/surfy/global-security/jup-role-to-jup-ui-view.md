@@ -5,7 +5,7 @@ sidebar_label: "Role association with interface views"
 ---
 
 # Role association with interface views
-<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiView" title={"Role association with interface views"} />
+<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiView" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A role to interface view association allows you to define access permissions to the different interface views for a role

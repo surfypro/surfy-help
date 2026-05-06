@@ -5,7 +5,7 @@ sidebar_label: "Etage inclus dans la configuration de la transformation des expo
 ---
 
 # Etage inclus dans la configuration de la transformation des exports partenaires
-<ObjectTypeMenuBreadcrumb code="partnerExportMappingConfigurationToFloor" title={"Etage inclus dans la configuration de la transformation des exports partenaires"} />
+<ObjectTypeMenuBreadcrumb code="partnerExportMappingConfigurationToFloor" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

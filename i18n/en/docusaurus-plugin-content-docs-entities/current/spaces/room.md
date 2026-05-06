@@ -5,7 +5,7 @@ sidebar_label: "Space"
 ---
 
 # Space
-<ObjectTypeMenuBreadcrumb code="room" title={"Space"} />
+<ObjectTypeMenuBreadcrumb code="room" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Spaces are workplaces or areas in order to divide a floor into sub-spaces.

@@ -5,7 +5,7 @@ sidebar_label: "Space typology"
 ---
 
 # Space typology
-<ObjectTypeMenuBreadcrumb code="roomType" title={"Space typology"} />
+<ObjectTypeMenuBreadcrumb code="roomType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

@@ -5,7 +5,7 @@ sidebar_label: "Association role of content to floors"
 ---
 
 # Association role of content to floors
-<ObjectTypeMenuBreadcrumb code="contentRoleToFloor" title={"Association role of content to floors"} />
+<ObjectTypeMenuBreadcrumb code="contentRoleToFloor" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A content role to floor association allows you to define floor-specific access permissions for a given role

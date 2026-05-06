@@ -5,7 +5,7 @@ sidebar_label: "Associating API user with the content role"
 ---
 
 # Associating API user with the content role
-<ObjectTypeMenuBreadcrumb code="apiUserToContentRole" title={"Associating API user with the content role"} />
+<ObjectTypeMenuBreadcrumb code="apiUserToContentRole" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

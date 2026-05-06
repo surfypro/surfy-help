@@ -5,7 +5,7 @@ sidebar_label: "Fabricant du type d'objet"
 ---
 
 # Fabricant du type d'objet
-<ObjectTypeMenuBreadcrumb code="manufacturer" title={"Fabricant du type d'objet"} />
+<ObjectTypeMenuBreadcrumb code="manufacturer" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un fabricant représente une entreprise ou une marque qui produit des objets ou équipements

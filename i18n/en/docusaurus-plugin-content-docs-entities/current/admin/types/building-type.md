@@ -5,7 +5,7 @@ sidebar_label: "Type of building"
 ---
 
 # Type of building
-<ObjectTypeMenuBreadcrumb code="buildingType" title={"Type of building"} />
+<ObjectTypeMenuBreadcrumb code="buildingType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A building type allows buildings to be categorized according to their use

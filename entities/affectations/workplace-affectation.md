@@ -5,7 +5,7 @@ sidebar_label: "Affectation au poste de travail"
 ---
 
 # Affectation au poste de travail
-<ObjectTypeMenuBreadcrumb code="workplaceAffectation" title={"Affectation au poste de travail"} />
+<ObjectTypeMenuBreadcrumb code="workplaceAffectation" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Permet d'attribuer un poste de travail fixe à une personne

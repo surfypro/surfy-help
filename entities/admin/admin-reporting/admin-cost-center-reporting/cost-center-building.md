@@ -5,7 +5,7 @@ sidebar_label: "Association centre de coût aux bâtiments"
 ---
 
 # Association centre de coût aux bâtiments
-<ObjectTypeMenuBreadcrumb code="costCenterBuilding" title={"Association centre de coût aux bâtiments"} />
+<ObjectTypeMenuBreadcrumb code="costCenterBuilding" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association centre de coût aux bâtiments permet de définir les centres de coût spécifiques pour chaque bâtiment

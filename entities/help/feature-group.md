@@ -5,7 +5,7 @@ sidebar_label: " Feature Group"
 ---
 
 #  Feature Group
-<ObjectTypeMenuBreadcrumb code="featureGroup" title={" Feature Group"} />
+<ObjectTypeMenuBreadcrumb code="featureGroup" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

@@ -5,7 +5,7 @@ sidebar_label: "Company user association to role"
 ---
 
 # Company user association to role
-<ObjectTypeMenuBreadcrumb code="jupUserCompanyToJupRole" title={"Company user association to role"} />
+<ObjectTypeMenuBreadcrumb code="jupUserCompanyToJupRole" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 An enterprise user role association allows you to define feature access permissions for a specific enterprise user

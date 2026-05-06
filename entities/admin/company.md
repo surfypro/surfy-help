@@ -5,7 +5,7 @@ sidebar_label: "Entreprise"
 ---
 
 # Entreprise
-<ObjectTypeMenuBreadcrumb code="company" title={"Entreprise"} />
+<ObjectTypeMenuBreadcrumb code="company" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une entreprise représente une organisation ou une société qui utilise la plateforme Surfy pour gérer ses espaces de travail et ses ressources

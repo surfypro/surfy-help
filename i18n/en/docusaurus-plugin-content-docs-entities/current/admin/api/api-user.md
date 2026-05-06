@@ -5,7 +5,7 @@ sidebar_label: "API user"
 ---
 
 # API user
-<ObjectTypeMenuBreadcrumb code="apiUser" title={"API user"} />
+<ObjectTypeMenuBreadcrumb code="apiUser" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

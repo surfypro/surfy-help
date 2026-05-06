@@ -5,7 +5,7 @@ sidebar_label: "Interface option"
 ---
 
 # Interface option
-<ObjectTypeMenuBreadcrumb code="jupUiOption" title={"Interface option"} />
+<ObjectTypeMenuBreadcrumb code="jupUiOption" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 An interface option defines the settings and configurations available in the user interface

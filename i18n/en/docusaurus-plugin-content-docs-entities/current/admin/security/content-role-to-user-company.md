@@ -5,7 +5,7 @@ sidebar_label: "Associating content role to business user"
 ---
 
 # Associating content role to business user
-<ObjectTypeMenuBreadcrumb code="contentRoleToUserCompany" title={"Associating content role to business user"} />
+<ObjectTypeMenuBreadcrumb code="contentRoleToUserCompany" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A content role to enterprise user association allows you to define specific access permissions for enterprise users for a given role

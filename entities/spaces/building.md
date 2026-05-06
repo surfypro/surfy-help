@@ -5,7 +5,7 @@ sidebar_label: "Bâtiment"
 ---
 
 # Bâtiment
-<ObjectTypeMenuBreadcrumb code="building" title={"Bâtiment"} />
+<ObjectTypeMenuBreadcrumb code="building" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Le bâtiment est utilisé pour regrouper les étages

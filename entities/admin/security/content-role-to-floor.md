@@ -5,7 +5,7 @@ sidebar_label: "Association rôle de contenu aux étages"
 ---
 
 # Association rôle de contenu aux étages
-<ObjectTypeMenuBreadcrumb code="contentRoleToFloor" title={"Association rôle de contenu aux étages"} />
+<ObjectTypeMenuBreadcrumb code="contentRoleToFloor" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association rôle de contenu aux étages permet de définir les permissions d'accès spécifiques aux étages pour un rôle donné

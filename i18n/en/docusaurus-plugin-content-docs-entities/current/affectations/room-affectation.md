@@ -5,7 +5,7 @@ sidebar_label: "Space allocation"
 ---
 
 # Space allocation
-<ObjectTypeMenuBreadcrumb code="roomAffectation" title={"Space allocation"} />
+<ObjectTypeMenuBreadcrumb code="roomAffectation" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Allows you to assign a person to a single space

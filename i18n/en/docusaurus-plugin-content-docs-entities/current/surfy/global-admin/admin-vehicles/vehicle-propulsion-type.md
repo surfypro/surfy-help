@@ -5,7 +5,7 @@ sidebar_label: "Vehicle propulsion type"
 ---
 
 # Vehicle propulsion type
-<ObjectTypeMenuBreadcrumb code="vehiclePropulsionType" title={"Vehicle propulsion type"} />
+<ObjectTypeMenuBreadcrumb code="vehiclePropulsionType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A vehicle propulsion type allows us to categorize vehicles according to their propulsion method (electric, thermal, hybrid, manual, etc.)

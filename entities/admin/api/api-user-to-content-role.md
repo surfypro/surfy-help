@@ -5,7 +5,7 @@ sidebar_label: "Association d'utilisateur d'api au rôle de contenu"
 ---
 
 # Association d'utilisateur d'api au rôle de contenu
-<ObjectTypeMenuBreadcrumb code="apiUserToContentRole" title={"Association d'utilisateur d'api au rôle de contenu"} />
+<ObjectTypeMenuBreadcrumb code="apiUserToContentRole" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

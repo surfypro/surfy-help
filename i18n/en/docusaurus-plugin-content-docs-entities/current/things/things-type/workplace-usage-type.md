@@ -5,7 +5,7 @@ sidebar_label: "Type of workstation use"
 ---
 
 # Type of workstation use
-<ObjectTypeMenuBreadcrumb code="workplaceUsageType" title={"Type of workstation use"} />
+<ObjectTypeMenuBreadcrumb code="workplaceUsageType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 The workstation usage type allows workstations to be categorized according to their use, using company terminology, and visualized with different colors on the plans.

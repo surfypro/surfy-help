@@ -5,7 +5,7 @@ sidebar_label: "Affection au bâtiment"
 ---
 
 # Affection au bâtiment
-<ObjectTypeMenuBreadcrumb code="personToBuilding" title={"Affection au bâtiment"} />
+<ObjectTypeMenuBreadcrumb code="personToBuilding" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Permet d'attribuer une personne à un bâtiment, sans information supplémentaire. L'affectation peut être comptabilisée, ou non.

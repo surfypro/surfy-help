@@ -5,7 +5,7 @@ sidebar_label: "Configuration de type de place de parking"
 ---
 
 # Configuration de type de place de parking
-<ObjectTypeMenuBreadcrumb code="bookingVehicleConfigurationToParkingRoomTypeConfiguration" title={"Configuration de type de place de parking"} />
+<ObjectTypeMenuBreadcrumb code="bookingVehicleConfigurationToParkingRoomTypeConfiguration" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Règles de réservation par type de place de parking

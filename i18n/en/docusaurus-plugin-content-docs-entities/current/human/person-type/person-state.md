@@ -5,7 +5,7 @@ sidebar_label: "Status of persons"
 ---
 
 # Status of persons
-<ObjectTypeMenuBreadcrumb code="personState" title={"Status of persons"} />
+<ObjectTypeMenuBreadcrumb code="personState" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Allows you to define all types of contracts between people and the company

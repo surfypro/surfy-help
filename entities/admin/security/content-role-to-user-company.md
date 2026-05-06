@@ -5,7 +5,7 @@ sidebar_label: "Association rôle de contenu à l'utilisateur de l'entreprise"
 ---
 
 # Association rôle de contenu à l'utilisateur de l'entreprise
-<ObjectTypeMenuBreadcrumb code="contentRoleToUserCompany" title={"Association rôle de contenu à l'utilisateur de l'entreprise"} />
+<ObjectTypeMenuBreadcrumb code="contentRoleToUserCompany" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association rôle de contenu à l'utilisateur de l'entreprise permet de définir les permissions d'accès spécifiques aux utilisateurs de l'entreprise pour un rôle donné

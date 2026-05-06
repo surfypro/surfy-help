@@ -5,7 +5,7 @@ sidebar_label: "Utilisateur de l'entreprise"
 ---
 
 # Utilisateur de l'entreprise
-<ObjectTypeMenuBreadcrumb code="userCompany" title={"Utilisateur de l'entreprise"} />
+<ObjectTypeMenuBreadcrumb code="userCompany" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Les utilisateurs de l'entreprise ont accès à la plateforme Surfy de leur entreprise

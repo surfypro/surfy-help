@@ -5,7 +5,7 @@ sidebar_label: "Type d'objet"
 ---
 
 # Type d'objet
-<ObjectTypeMenuBreadcrumb code="itemType" title={"Type d'objet"} />
+<ObjectTypeMenuBreadcrumb code="itemType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un type d'objet permet de catégoriser et définir les caractéristiques des objets physiques présents dans les espaces de travail

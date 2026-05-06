@@ -5,7 +5,7 @@ sidebar_label: "Type of Fact"
 ---
 
 # Type of Fact
-<ObjectTypeMenuBreadcrumb code="factType" title={"Type of Fact"} />
+<ObjectTypeMenuBreadcrumb code="factType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A fact type is used to categorize the different types of factual data or events recorded in the system

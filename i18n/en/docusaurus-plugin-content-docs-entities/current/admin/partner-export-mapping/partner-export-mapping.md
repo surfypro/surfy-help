@@ -5,7 +5,7 @@ sidebar_label: "Transformation of partner exports"
 ---
 
 # Transformation of partner exports
-<ObjectTypeMenuBreadcrumb code="partnerExportMapping" title={"Transformation of partner exports"} />
+<ObjectTypeMenuBreadcrumb code="partnerExportMapping" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

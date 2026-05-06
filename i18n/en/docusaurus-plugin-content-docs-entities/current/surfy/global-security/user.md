@@ -5,7 +5,7 @@ sidebar_label: "User"
 ---
 
 # User
-<ObjectTypeMenuBreadcrumb code="user" title={"User"} />
+<ObjectTypeMenuBreadcrumb code="user" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 

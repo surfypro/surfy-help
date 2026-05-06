@@ -5,7 +5,7 @@ sidebar_label: "Space connector"
 ---
 
 # Space connector
-<ObjectTypeMenuBreadcrumb code="roomConnector" title={"Space connector"} />
+<ObjectTypeMenuBreadcrumb code="roomConnector" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Space connectors allow you to create a link between several spaces on different floors

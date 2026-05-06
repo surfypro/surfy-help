@@ -5,7 +5,7 @@ sidebar_label: "Association groupe de typologie d'espace à typologie d'espace"
 ---
 
 # Association groupe de typologie d'espace à typologie d'espace
-<ObjectTypeMenuBreadcrumb code="roomTypeGroupToRoomType" title={"Association groupe de typologie d'espace à typologie d'espace"} />
+<ObjectTypeMenuBreadcrumb code="roomTypeGroupToRoomType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association groupe de typologie d'espace à typologie d'espace permet de définir quels types d'espaces appartiennent à quels groupes

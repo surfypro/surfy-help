@@ -5,7 +5,7 @@ sidebar_label: "Point des espaces"
 ---
 
 # Point des espaces
-<ObjectTypeMenuBreadcrumb code="roomPoint" title={"Point des espaces"} />
+<ObjectTypeMenuBreadcrumb code="roomPoint" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un point des espaces définit les coordonnées géométriques pour dessiner le contour d'un espace

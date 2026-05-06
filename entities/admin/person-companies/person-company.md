@@ -5,7 +5,7 @@ sidebar_label: "Entreprise prestataire"
 ---
 
 # Entreprise prestataire
-<ObjectTypeMenuBreadcrumb code="personCompany" title={"Entreprise prestataire"} />
+<ObjectTypeMenuBreadcrumb code="personCompany" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 L'entreprise prestataire permet de gérer le personnel prestataire par entreprise d'appartenance

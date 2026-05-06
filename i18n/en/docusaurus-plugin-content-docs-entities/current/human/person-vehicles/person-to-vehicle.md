@@ -5,7 +5,7 @@ sidebar_label: "Vehicle assignment"
 ---
 
 # Vehicle assignment
-<ObjectTypeMenuBreadcrumb code="personToVehicle" title={"Vehicle assignment"} />
+<ObjectTypeMenuBreadcrumb code="personToVehicle" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Allows you to associate a person with one or more vehicles

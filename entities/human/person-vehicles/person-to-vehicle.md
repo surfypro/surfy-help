@@ -5,7 +5,7 @@ sidebar_label: "Affectation véhicule"
 ---
 
 # Affectation véhicule
-<ObjectTypeMenuBreadcrumb code="personToVehicle" title={"Affectation véhicule"} />
+<ObjectTypeMenuBreadcrumb code="personToVehicle" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Permet d'associer une personne à un ou plusieurs véhicules

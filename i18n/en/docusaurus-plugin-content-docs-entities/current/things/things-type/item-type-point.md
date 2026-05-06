@@ -5,7 +5,7 @@ sidebar_label: "Point of object types"
 ---
 
 # Point of object types
-<ObjectTypeMenuBreadcrumb code="itemTypePoint" title={"Point of object types"} />
+<ObjectTypeMenuBreadcrumb code="itemTypePoint" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 An object types point allows you to define specific positions for object types on the plans

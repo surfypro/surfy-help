@@ -5,7 +5,7 @@ sidebar_label: "Service provider company"
 ---
 
 # Service provider company
-<ObjectTypeMenuBreadcrumb code="personCompany" title={"Service provider company"} />
+<ObjectTypeMenuBreadcrumb code="personCompany" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 The service provider company allows you to manage service provider personnel by company to which they belong

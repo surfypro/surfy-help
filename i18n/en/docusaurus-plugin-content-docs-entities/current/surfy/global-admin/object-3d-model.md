@@ -5,7 +5,7 @@ sidebar_label: "3d model"
 ---
 
 # 3d model
-<ObjectTypeMenuBreadcrumb code="object3dModel" title={"3d model"} />
+<ObjectTypeMenuBreadcrumb code="object3dModel" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 The 3D Model allows a realistic 3D representation of objects placed on the plan; In the absence of a 3D model, the objects are represented in full form in the 3D view

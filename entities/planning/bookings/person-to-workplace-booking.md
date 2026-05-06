@@ -5,7 +5,7 @@ sidebar_label: "Réservation au poste de travail des personnes"
 ---
 
 # Réservation au poste de travail des personnes
-<ObjectTypeMenuBreadcrumb code="personToWorkplaceBooking" title={"Réservation au poste de travail des personnes"} />
+<ObjectTypeMenuBreadcrumb code="personToWorkplaceBooking" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Les réservations des postes de travail des personnes sont enregistrées et disponibles avec les dates de début et de fin de réservation

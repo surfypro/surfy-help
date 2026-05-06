@@ -5,7 +5,7 @@ sidebar_label: "Functionality"
 ---
 
 # Functionality
-<ObjectTypeMenuBreadcrumb code="feature" title={"Functionality"} />
+<ObjectTypeMenuBreadcrumb code="feature" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A feature represents a specific characteristic or capability available in the system

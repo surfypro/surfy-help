@@ -5,7 +5,7 @@ sidebar_label: "Espace"
 ---
 
 # Espace
-<ObjectTypeMenuBreadcrumb code="room" title={"Espace"} />
+<ObjectTypeMenuBreadcrumb code="room" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Les espaces sont des lieux de travail ou des zones afin de découper un étage en sous espaces

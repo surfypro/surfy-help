@@ -5,7 +5,7 @@ sidebar_label: "Vision du plan"
 ---
 
 # Vision du plan
-<ObjectTypeMenuBreadcrumb code="jupUiLayout" title={"Vision du plan"} />
+<ObjectTypeMenuBreadcrumb code="jupUiLayout" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un layout d'interface définit la disposition et l'organisation des éléments dans l'interface utilisateur

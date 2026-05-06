@@ -5,7 +5,7 @@ sidebar_label: "Cost center"
 ---
 
 # Cost center
-<ObjectTypeMenuBreadcrumb code="costCenter" title={"Cost center"} />
+<ObjectTypeMenuBreadcrumb code="costCenter" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 The cost center allows spaces to be distributed dynamically for re-invoicing

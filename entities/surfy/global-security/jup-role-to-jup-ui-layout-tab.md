@@ -5,7 +5,7 @@ sidebar_label: "Association rôle aux onglets de plan"
 ---
 
 # Association rôle aux onglets de plan
-<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiLayoutTab" title={"Association rôle aux onglets de plan"} />
+<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiLayoutTab" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Une association rôle aux onglets de plan permet de définir les permissions d'accès aux différents onglets de plan pour un rôle

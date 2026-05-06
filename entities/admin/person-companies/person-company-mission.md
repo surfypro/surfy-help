@@ -5,7 +5,7 @@ sidebar_label: "Mission du prestataire"
 ---
 
 # Mission du prestataire
-<ObjectTypeMenuBreadcrumb code="personCompanyMission" title={"Mission du prestataire"} />
+<ObjectTypeMenuBreadcrumb code="personCompanyMission" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Les missions des prestataires permettent de connaitre le domaine d'intervention des prestataires

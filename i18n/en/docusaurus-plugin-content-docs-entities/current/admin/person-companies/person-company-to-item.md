@@ -5,7 +5,7 @@ sidebar_label: "Intervention on an object"
 ---
 
 # Intervention on an object
-<ObjectTypeMenuBreadcrumb code="personCompanyToItem" title={"Intervention on an object"} />
+<ObjectTypeMenuBreadcrumb code="personCompanyToItem" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 The interventions of service providers on objects make it possible to define, for example, the date of a visit to a fire extinguisher

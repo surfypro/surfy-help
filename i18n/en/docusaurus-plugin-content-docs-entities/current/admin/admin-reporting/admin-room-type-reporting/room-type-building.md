@@ -5,7 +5,7 @@ sidebar_label: "Association of space typology with buildings"
 ---
 
 # Association of space typology with buildings
-<ObjectTypeMenuBreadcrumb code="roomTypeBuilding" title={"Association of space typology with buildings"} />
+<ObjectTypeMenuBreadcrumb code="roomTypeBuilding" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A space typology association with buildings makes it possible to define the types of spaces available in each building

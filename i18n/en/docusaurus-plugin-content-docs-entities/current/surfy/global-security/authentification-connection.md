@@ -5,7 +5,7 @@ sidebar_label: "Authentication login"
 ---
 
 # Authentication login
-<ObjectTypeMenuBreadcrumb code="authentificationConnection" title={"Authentication login"} />
+<ObjectTypeMenuBreadcrumb code="authentificationConnection" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 An authentication connection allows you to configure the authentication methods for accessing the platform (SSO, LDAP, etc.)

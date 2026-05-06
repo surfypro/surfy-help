@@ -5,7 +5,7 @@ sidebar_label: "Business"
 ---
 
 # Business
-<ObjectTypeMenuBreadcrumb code="company" title={"Business"} />
+<ObjectTypeMenuBreadcrumb code="company" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A business represents an organization or company that uses the Surfy platform to manage its workspaces and resources

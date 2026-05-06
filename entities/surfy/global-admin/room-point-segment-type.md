@@ -5,7 +5,7 @@ sidebar_label: "Type de segment"
 ---
 
 # Type de segment
-<ObjectTypeMenuBreadcrumb code="roomPointSegmentType" title={"Type de segment"} />
+<ObjectTypeMenuBreadcrumb code="roomPointSegmentType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 Un type de segment définit les différents types de segments qui peuvent exister entre les points d'espaces

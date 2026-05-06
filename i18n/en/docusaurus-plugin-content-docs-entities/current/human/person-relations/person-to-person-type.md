@@ -5,7 +5,7 @@ sidebar_label: "Type of relationship between people"
 ---
 
 # Type of relationship between people
-<ObjectTypeMenuBreadcrumb code="personToPersonType" title={"Type of relationship between people"} />
+<ObjectTypeMenuBreadcrumb code="personToPersonType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A type of relationship between people defines the different types of links that can exist between people

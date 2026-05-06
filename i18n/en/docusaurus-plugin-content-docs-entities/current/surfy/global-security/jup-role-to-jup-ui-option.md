@@ -5,7 +5,7 @@ sidebar_label: "Role association with interface options"
 ---
 
 # Role association with interface options
-<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiOption" title={"Role association with interface options"} />
+<ObjectTypeMenuBreadcrumb code="jupRoleToJupUiOption" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
 A role association with interface options allows you to define access permissions to the different interface options for a role
