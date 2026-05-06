@@ -1,6 +1,6 @@
 import * as React$1 from "react";
 import React, { Children, cloneElement, createContext, forwardRef, isValidElement, useCallback, useContext, useDebugValue, useEffect, useMemo, useReducer } from "react";
-import { Box, Fade, IconButton, Paper, Tooltip, Typography, styled, tooltipClasses } from "@mui/material";
+import { Box, Fade, IconButton, Paper, Tooltip, Typography, tooltipClasses } from "@mui/material";
 import { Fragment, jsx, jsxs } from "react/jsx-runtime";
 import ReactDOM from "react-dom";
 import { RecoilRoot } from "recoil";
@@ -2443,7 +2443,7 @@ function hash(value, length) {
 * @param {string} value
 * @return {string}
 */
-function trim$2(value) {
+function trim$1(value) {
 	return value.trim();
 }
 /**
@@ -2649,7 +2649,7 @@ function dealloc(value) {
 * @return {string}
 */
 function delimit(type) {
-	return trim$2(slice(position - 1, delimiter(type === 91 ? type + 2 : type === 40 ? type + 1 : type)));
+	return trim$1(slice(position - 1, delimiter(type === 91 ? type + 2 : type === 40 ? type + 1 : type)));
 }
 /**
 * @param {number} type
@@ -2839,7 +2839,7 @@ function ruleset(value, root, parent, index, offset, rules, points, type, props,
 	var post = offset - 1;
 	var rule = offset === 0 ? rules : [""];
 	var size = sizeof(rule);
-	for (var i = 0, j = 0, k = 0; i < index; ++i) for (var x = 0, y = substr(value, post + 1, post = abs(j = points[i])), z = value; x < size; ++x) if (z = trim$2(j > 0 ? rule[x] + " " + y : replace(y, /&\f/g, rule[x]))) props[k++] = z;
+	for (var i = 0, j = 0, k = 0; i < index; ++i) for (var x = 0, y = substr(value, post + 1, post = abs(j = points[i])), z = value; x < size; ++x) if (z = trim$1(j > 0 ? rule[x] + " " + y : replace(y, /&\f/g, rule[x]))) props[k++] = z;
 	return node(value, root, parent, offset === 0 ? RULESET : type, props, children, length);
 }
 /**
@@ -3786,9 +3786,9 @@ var tags = [
 	"text",
 	"tspan"
 ];
-var styled$3 = createStyled$1.bind(null);
+var styled$2 = createStyled$1.bind(null);
 tags.forEach(function(tagName) {
-	styled$3[tagName] = styled$3(tagName);
+	styled$2[tagName] = styled$2(tagName);
 });
 //#endregion
 //#region node_modules/.pnpm/@mui+styled-engine@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emot_142b8548a4c974ee092fa12f4eb25256/node_modules/@mui/styled-engine/index.mjs
@@ -3799,8 +3799,8 @@ tags.forEach(function(tagName) {
 * This source code is licensed under the MIT license found in the
 * LICENSE file in the root directory of this source tree.
 */
-function styled$2(tag, options) {
-	const stylesFactory = styled$3(tag, options);
+function styled$1(tag, options) {
+	const stylesFactory = styled$2(tag, options);
 	if (process.env.NODE_ENV !== "production") return (...styles) => {
 		const component = typeof tag === "string" ? `"${tag}"` : "component";
 		if (styles.length === 0) console.error([`MUI: Seems like you called \`styled(${component})()\` without a \`style\` argument.`, "You must provide a `styles` argument: `styled(\"div\")(styleYouForgotToPass)`."].join("\n"));
@@ -3985,7 +3985,7 @@ var ClassNameGenerator = createClassNameGenerator();
 //#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/createBox/createBox.mjs
 function createBox(options = {}) {
 	const { themeId, defaultTheme, defaultClassName = "MuiBox-root", generateClassName } = options;
-	const BoxRoot = styled$2("div", { shouldForwardProp: (prop) => prop !== "theme" && prop !== "sx" && prop !== "as" })(styleFunctionSx_default);
+	const BoxRoot = styled$1("div", { shouldForwardProp: (prop) => prop !== "theme" && prop !== "sx" && prop !== "as" })(styleFunctionSx_default);
 	return /* @__PURE__ */ React$1.forwardRef(function Box(inProps, ref) {
 		const theme = useTheme$1(defaultTheme);
 		const { className, component = "div", ...other } = inProps;
@@ -4155,7 +4155,7 @@ function createStyled(input = {}) {
 		if (componentSlot === "Root" || componentSlot === "root") shouldForwardPropOption = rootShouldForwardProp;
 		else if (componentSlot) shouldForwardPropOption = slotShouldForwardProp;
 		else if (isStringTag(tag)) shouldForwardPropOption = void 0;
-		const defaultStyledResolver = styled$2(tag, {
+		const defaultStyledResolver = styled$1(tag, {
 			shouldForwardProp: shouldForwardPropOption,
 			label: generateStyledLabel(componentName, componentSlot),
 			...options
@@ -6058,7 +6058,7 @@ function slotShouldForwardProp(prop) {
 var rootShouldForwardProp = (prop) => slotShouldForwardProp(prop) && prop !== "classes";
 //#endregion
 //#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/styles/styled.mjs
-var styled$1 = createStyled({
+var styled = createStyled({
 	themeId: identifier_default,
 	defaultTheme,
 	rootShouldForwardProp
@@ -6157,7 +6157,7 @@ var useUtilityClasses$4 = (ownerState) => {
 		noWrap && "noWrap"
 	] }, getTypographyUtilityClass, classes);
 };
-var TypographyRoot = styled$1("span", {
+var TypographyRoot = styled("span", {
 	name: "MuiTypography",
 	slot: "Root",
 	overridesResolver: (props, styles) => {
@@ -6333,7 +6333,7 @@ var useUtilityClasses$3 = (ownerState) => {
 		`fontSize${capitalize_default(fontSize)}`
 	] }, getSvgIconUtilityClass, classes);
 };
-var SvgIconRoot = styled$1("svg", {
+var SvgIconRoot = styled("svg", {
 	name: "MuiSvgIcon",
 	slot: "Root",
 	overridesResolver: (props, styles) => {
@@ -6584,7 +6584,7 @@ function useFocusableWhenDisabled(parameters) {
 }
 //#endregion
 //#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/ButtonBase/useButtonBase.mjs
-var EMPTY$2 = {};
+var EMPTY$1 = {};
 function useButtonBase(parameters) {
 	const { nativeButton, nativeButtonProp, internalNativeButton = nativeButton, allowInferredHostMismatch = false, disabled, type, hasFormAction = false, tabIndex = 0, focusableWhenDisabled: focusableWhenDisabledParam, stopEventPropagation = false, onBeforeKeyDown, onBeforeKeyUp } = parameters;
 	const rootRef = React$1.useRef(null);
@@ -6642,7 +6642,7 @@ function useButtonBase(parameters) {
 		type
 	]);
 	return {
-		getButtonProps: React$1.useCallback((externalProps = EMPTY$2) => {
+		getButtonProps: React$1.useCallback((externalProps = EMPTY$1) => {
 			const { onClick: externalOnClick, onKeyDown: externalOnKeyDown, onKeyUp: externalOnKeyUp, ...otherExternalProps } = externalProps;
 			const handleClick = (event) => {
 				if (stopEventPropagation) event.stopPropagation();
@@ -7286,7 +7286,7 @@ var values = Object.values || function(obj) {
 		return obj[k];
 	});
 };
-var defaultProps$1 = {
+var defaultProps = {
 	component: "div",
 	childFactory: function childFactory(child) {
 		return child;
@@ -7362,15 +7362,15 @@ TransitionGroup.propTypes = process.env.NODE_ENV !== "production" ? {
 	exit: import_prop_types.default.bool,
 	childFactory: import_prop_types.default.func
 } : {};
-TransitionGroup.defaultProps = defaultProps$1;
+TransitionGroup.defaultProps = defaultProps;
 //#endregion
 //#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/useOnMount/useOnMount.mjs
-var EMPTY$1 = [];
+var EMPTY = [];
 /**
 * A React.useEffect equivalent that runs once, when the component is mounted.
 */
 function useOnMount(fn) {
-	React$1.useEffect(fn, EMPTY$1);
+	React$1.useEffect(fn, EMPTY);
 }
 //#endregion
 //#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/useTimeout/useTimeout.mjs
@@ -7497,7 +7497,7 @@ var pulsateKeyframe = keyframes`
     transform: scale(1);
   }
 `;
-var TouchRippleRoot = styled$1("span", {
+var TouchRippleRoot = styled("span", {
 	name: "MuiTouchRipple",
 	slot: "Root"
 })({
@@ -7511,7 +7511,7 @@ var TouchRippleRoot = styled$1("span", {
 	left: 0,
 	borderRadius: "inherit"
 });
-var TouchRippleRipple = styled$1(Ripple, {
+var TouchRippleRipple = styled(Ripple, {
 	name: "MuiTouchRipple",
 	slot: "Ripple"
 })`
@@ -7731,7 +7731,7 @@ var useUtilityClasses$2 = (ownerState) => {
 	if (focusVisible && !suppressFocusVisible && focusVisibleClassName) composedClasses.root += ` ${focusVisibleClassName}`;
 	return composedClasses;
 };
-var ButtonBaseRoot = styled$1("button", {
+var ButtonBaseRoot = styled("button", {
 	name: "MuiButtonBase",
 	slot: "Root"
 })({
@@ -7953,7 +7953,7 @@ process.env.NODE_ENV !== "production" && (ButtonBase.propTypes = {
 });
 //#endregion
 //#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/Breadcrumbs/BreadcrumbCollapsed.mjs
-var BreadcrumbCollapsedButton = styled$1(ButtonBase, { name: "MuiBreadcrumbCollapsed" })(memoTheme(({ theme }) => ({
+var BreadcrumbCollapsedButton = styled(ButtonBase, { name: "MuiBreadcrumbCollapsed" })(memoTheme(({ theme }) => ({
 	display: "flex",
 	marginLeft: `calc(${theme.spacing(1)} * 0.5)`,
 	marginRight: `calc(${theme.spacing(1)} * 0.5)`,
@@ -7971,7 +7971,7 @@ var BreadcrumbCollapsedButton = styled$1(ButtonBase, { name: "MuiBreadcrumbColla
 		...theme.palette.mode === "light" ? { backgroundColor: emphasize(theme.palette.grey[200], .12) } : { backgroundColor: emphasize(theme.palette.grey[600], .12) }
 	}
 })));
-var BreadcrumbCollapsedIcon = styled$1(MoreHoriz_default)({
+var BreadcrumbCollapsedIcon = styled(MoreHoriz_default)({
 	width: 24,
 	height: 16
 });
@@ -8020,14 +8020,14 @@ var useUtilityClasses$1 = (ownerState) => {
 		separator: ["separator"]
 	}, getBreadcrumbsUtilityClass, classes);
 };
-var BreadcrumbsRoot = styled$1(Typography$1, {
+var BreadcrumbsRoot = styled(Typography$1, {
 	name: "MuiBreadcrumbs",
 	slot: "Root",
 	overridesResolver: (props, styles) => {
 		return [{ [`& .${breadcrumbsClasses.li}`]: styles.li }, styles.root];
 	}
 })({});
-var BreadcrumbsOl = styled$1("ol", {
+var BreadcrumbsOl = styled("ol", {
 	name: "MuiBreadcrumbs",
 	slot: "Ol"
 })({
@@ -8038,7 +8038,7 @@ var BreadcrumbsOl = styled$1("ol", {
 	margin: 0,
 	listStyle: "none"
 });
-var BreadcrumbsSeparator = styled$1("li", {
+var BreadcrumbsSeparator = styled("li", {
 	name: "MuiBreadcrumbs",
 	slot: "Separator"
 })({
@@ -50989,7 +50989,7 @@ var InvalidZone = class extends Zone {
 function normalizeZone(input, defaultZone) {
 	if (isUndefined(input) || input === null) return defaultZone;
 	else if (input instanceof Zone) return input;
-	else if (isString$1(input)) {
+	else if (isString(input)) {
 		const lowered = input.toLowerCase();
 		if (lowered === "default") return defaultZone;
 		else if (lowered === "local" || lowered === "system") return SystemZone.instance;
@@ -51403,7 +51403,7 @@ function isNumber$1(o) {
 function isInteger(o) {
 	return typeof o === "number" && o % 1 === 0;
 }
-function isString$1(o) {
+function isString(o) {
 	return typeof o === "string";
 }
 function isDate$1(o) {
@@ -70050,1788 +70050,6 @@ function MenuBreadcrumb(props) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/ua-parser-js@2.0.9/node_modules/ua-parser-js/src/main/ua-parser.mjs
-var LIBVERSION = "2.0.9", UA_MAX_LENGTH = 500, USER_AGENT = "user-agent", EMPTY = "", UNKNOWN = "?", TYPEOF = {
-	FUNCTION: "function",
-	OBJECT: "object",
-	STRING: "string",
-	UNDEFINED: "undefined"
-}, BROWSER = "browser", CPU = "cpu", DEVICE = "device", ENGINE = "engine", OS = "os", RESULT = "result", NAME = "name", TYPE = "type", VENDOR = "vendor", VERSION = "version", ARCHITECTURE = "architecture", MAJOR = "major", MODEL = "model", CONSOLE = "console", MOBILE = "mobile", TABLET = "tablet", SMARTTV = "smarttv", WEARABLE = "wearable", XR = "xr", EMBEDDED = "embedded", FETCHER = "fetcher", INAPP = "inapp", BRANDS = "brands", FORMFACTORS = "formFactors", FULLVERLIST = "fullVersionList", PLATFORM = "platform", PLATFORMVER = "platformVersion", BITNESS = "bitness", CH = "sec-ch-ua", CH_FULL_VER_LIST = CH + "-full-version-list", CH_ARCH = CH + "-arch", CH_BITNESS = CH + "-" + BITNESS, CH_FORM_FACTORS = CH + "-form-factors", CH_MOBILE = CH + "-" + MOBILE, CH_MODEL = CH + "-" + MODEL, CH_PLATFORM = CH + "-" + PLATFORM, CH_PLATFORM_VER = CH_PLATFORM + "-version", CH_ALL_VALUES = [
-	BRANDS,
-	FULLVERLIST,
-	MOBILE,
-	MODEL,
-	PLATFORM,
-	PLATFORMVER,
-	ARCHITECTURE,
-	FORMFACTORS,
-	BITNESS
-], AMAZON = "Amazon", APPLE = "Apple", ASUS = "ASUS", BLACKBERRY = "BlackBerry", GOOGLE = "Google", HUAWEI = "Huawei", LENOVO = "Lenovo", HONOR = "Honor", LG = "LG", MICROSOFT = "Microsoft", MOTOROLA = "Motorola", NVIDIA = "Nvidia", ONEPLUS = "OnePlus", OPPO = "OPPO", SAMSUNG = "Samsung", SHARP = "Sharp", SONY = "Sony", XIAOMI = "Xiaomi", ZEBRA = "Zebra", CHROME = "Chrome", CHROMIUM = "Chromium", CHROMECAST = "Chromecast", EDGE = "Edge", FIREFOX = "Firefox", OPERA = "Opera", FACEBOOK = "Facebook", SOGOU = "Sogou", PREFIX_MOBILE = "Mobile ", SUFFIX_BROWSER = " Browser", WINDOWS = "Windows";
-var NAVIGATOR = typeof window !== TYPEOF.UNDEFINED && window.navigator ? window.navigator : void 0, NAVIGATOR_UADATA = NAVIGATOR && NAVIGATOR.userAgentData ? NAVIGATOR.userAgentData : void 0;
-var extend = function(defaultRgx, extensions) {
-	var mergedRgx = {};
-	var extraRgx = extensions;
-	if (!isExtensions(extensions)) {
-		extraRgx = {};
-		for (var i in extensions) for (var j in extensions[i]) extraRgx[j] = extensions[i][j].concat(extraRgx[j] ? extraRgx[j] : []);
-	}
-	for (var k in defaultRgx) mergedRgx[k] = extraRgx[k] && extraRgx[k].length % 2 === 0 ? extraRgx[k].concat(defaultRgx[k]) : defaultRgx[k];
-	return mergedRgx;
-}, enumerize = function(arr) {
-	var enums = {};
-	for (var i = 0; i < arr.length; i++) enums[arr[i].toUpperCase()] = arr[i];
-	return enums;
-}, has = function(str1, str2) {
-	if (typeof str1 === TYPEOF.OBJECT && str1.length > 0) {
-		for (var i in str1) if (lowerize(str2) == lowerize(str1[i])) return true;
-		return false;
-	}
-	return isString(str1) ? lowerize(str2) == lowerize(str1) : false;
-}, isExtensions = function(obj, deep) {
-	for (var prop in obj) return /^(browser|cpu|device|engine|os)$/.test(prop) || (deep ? isExtensions(obj[prop]) : false);
-}, isString = function(val) {
-	return typeof val === TYPEOF.STRING;
-}, itemListToArray = function(header) {
-	if (!header) return void 0;
-	var arr = [];
-	var tokens = strip(/\\?\"/g, header).split(",");
-	for (var i = 0; i < tokens.length; i++) if (tokens[i].indexOf(";") > -1) {
-		var token = trim(tokens[i]).split(";v=");
-		arr[i] = {
-			brand: token[0],
-			version: token[1]
-		};
-	} else arr[i] = trim(tokens[i]);
-	return arr;
-}, lowerize = function(str) {
-	return isString(str) ? str.toLowerCase() : str;
-}, majorize = function(version) {
-	return isString(version) ? strip(/[^\d\.]/g, version).split(".")[0] : void 0;
-}, setProps = function(arr) {
-	for (var i in arr) {
-		if (!arr.hasOwnProperty(i)) continue;
-		var propName = arr[i];
-		if (typeof propName == TYPEOF.OBJECT && propName.length == 2) this[propName[0]] = propName[1];
-		else this[propName] = void 0;
-	}
-	return this;
-}, strip = function(pattern, str) {
-	return isString(str) ? str.replace(pattern, EMPTY) : str;
-}, stripQuotes = function(str) {
-	return strip(/\\?\"/g, str);
-}, trim = function(str, len) {
-	str = strip(/^\s\s*/, String(str));
-	return typeof len === TYPEOF.UNDEFINED ? str : str.substring(0, len);
-};
-var rgxMapper = function(ua, arrays) {
-	if (!ua || !arrays) return;
-	var i = 0, j, k, p, q, matches, match;
-	while (i < arrays.length && !matches) {
-		var regex = arrays[i], props = arrays[i + 1];
-		j = k = 0;
-		while (j < regex.length && !matches) {
-			if (!regex[j]) break;
-			matches = regex[j++].exec(ua);
-			if (!!matches) for (p = 0; p < props.length; p++) {
-				match = matches[++k];
-				q = props[p];
-				if (typeof q === TYPEOF.OBJECT && q.length > 0) {
-					if (q.length === 2) if (typeof q[1] == TYPEOF.FUNCTION) this[q[0]] = q[1].call(this, match);
-					else this[q[0]] = q[1];
-					else if (q.length >= 3) {
-						if (typeof q[1] === TYPEOF.FUNCTION && !(q[1].exec && q[1].test)) if (q.length > 3) this[q[0]] = match ? q[1].apply(this, q.slice(2)) : void 0;
-						else this[q[0]] = match ? q[1].call(this, match, q[2]) : void 0;
-						else if (q.length == 3) this[q[0]] = match ? match.replace(q[1], q[2]) : void 0;
-						else if (q.length == 4) this[q[0]] = match ? q[3].call(this, match.replace(q[1], q[2])) : void 0;
-						else if (q.length > 4) this[q[0]] = match ? q[3].apply(this, [match.replace(q[1], q[2])].concat(q.slice(4))) : void 0;
-					}
-				} else this[q] = match ? match : void 0;
-			}
-		}
-		i += 2;
-	}
-}, strMapper = function(str, map) {
-	for (var i in map) if (typeof map[i] === TYPEOF.OBJECT && map[i].length > 0) {
-		for (var j = 0; j < map[i].length; j++) if (has(map[i][j], str)) return i === UNKNOWN ? void 0 : i;
-	} else if (has(map[i], str)) return i === UNKNOWN ? void 0 : i;
-	return map.hasOwnProperty("*") ? map["*"] : str;
-};
-var windowsVersionMap = {
-	"ME": "4.90",
-	"NT 3.51": "3.51",
-	"NT 4.0": "4.0",
-	"2000": ["5.0", "5.01"],
-	"XP": ["5.1", "5.2"],
-	"Vista": "6.0",
-	"7": "6.1",
-	"8": "6.2",
-	"8.1": "6.3",
-	"10": ["6.4", "10.0"],
-	"NT": ""
-}, formFactorsMap = {
-	"embedded": "Automotive",
-	"mobile": "Mobile",
-	"tablet": ["Tablet", "EInk"],
-	"smarttv": "TV",
-	"wearable": "Watch",
-	"xr": ["VR", "XR"],
-	"?": ["Desktop", "Unknown"],
-	"*": void 0
-}, browserHintsMap = {
-	"Chrome": "Google Chrome",
-	"Edge": "Microsoft Edge",
-	"Edge WebView2": "Microsoft Edge WebView2",
-	"Chrome WebView": "Android WebView",
-	"Chrome Headless": "HeadlessChrome",
-	"Huawei Browser": "HuaweiBrowser",
-	"MIUI Browser": "Miui Browser",
-	"Opera Mobi": "OperaMobile",
-	"Yandex": "YaBrowser"
-};
-var defaultRegexes = {
-	browser: [
-		[/\b(?:crmo|crios)\/([\w\.]+)/i],
-		[VERSION, [NAME, PREFIX_MOBILE + "Chrome"]],
-		[/webview.+edge\/([\w\.]+)/i],
-		[VERSION, [NAME, EDGE + " WebView"]],
-		[/edg(?:e|ios|a)?\/([\w\.]+)/i],
-		[VERSION, [NAME, "Edge"]],
-		[
-			/(opera mini)\/([-\w\.]+)/i,
-			/(opera [mobiletab]{3,6})\b.+version\/([-\w\.]+)/i,
-			/(opera)(?:.+version\/|[\/ ]+)([\w\.]+)/i
-		],
-		[NAME, VERSION],
-		[/opios[\/ ]+([\w\.]+)/i],
-		[VERSION, [NAME, OPERA + " Mini"]],
-		[/\bop(?:rg)?x\/([\w\.]+)/i],
-		[VERSION, [NAME, OPERA + " GX"]],
-		[/\bopr\/([\w\.]+)/i],
-		[VERSION, [NAME, OPERA]],
-		[/\bb[ai]*d(?:uhd|[ub]*[aekoprswx]{5,6})[\/ ]?([\w\.]+)/i],
-		[VERSION, [NAME, "Baidu"]],
-		[/\b(?:mxbrowser|mxios|myie2)\/?([-\w\.]*)\b/i],
-		[VERSION, [NAME, "Maxthon"]],
-		[
-			/(kindle)\/([\w\.]+)/i,
-			/(lunascape|maxthon|netfront|jasmine|blazer|sleipnir)[\/ ]?([\w\.]*)/i,
-			/(avant|iemobile|slim(?:browser|boat|jet))[\/ ]?([\d\.]*)/i,
-			/(?:ms|\()(ie) ([\w\.]+)/i,
-			/(atlas|flock|rockmelt|midori|epiphany|silk|skyfire|bolt|iron|vivaldi|iridium|phantomjs|bowser|qupzilla|falkon|rekonq|puffin|whale(?!.+naver)|qqbrowserlite|duckduckgo|klar|helio|(?=comodo_)?dragon|otter|dooble|(?:hi|lg |ovi|qute)browser|palemoon)\/v?([-\w\.]+)/i,
-			/(brave)(?: chrome)?\/([\d\.]+)/i,
-			/(aloha|heytap|ovi|115|surf|qwant)browser\/([\d\.]+)/i,
-			/(qwant)(?:ios|mobile)\/([\d\.]+)/i,
-			/(ecosia|weibo)(?:__| \w+@)([\d\.]+)/i
-		],
-		[NAME, VERSION],
-		[/quark(?:pc)?\/([-\w\.]+)/i],
-		[VERSION, [NAME, "Quark"]],
-		[/\bddg\/([\w\.]+)/i],
-		[VERSION, [NAME, "DuckDuckGo"]],
-		[/(?:\buc? ?browser|(?:juc.+)ucweb)[\/ ]?([\w\.]+)/i],
-		[VERSION, [NAME, "UCBrowser"]],
-		[
-			/microm.+\bqbcore\/([\w\.]+)/i,
-			/\bqbcore\/([\w\.]+).+microm/i,
-			/micromessenger\/([\w\.]+)/i
-		],
-		[VERSION, [NAME, "WeChat"]],
-		[/konqueror\/([\w\.]+)/i],
-		[VERSION, [NAME, "Konqueror"]],
-		[/trident.+rv[: ]([\w\.]{1,9})\b.+like gecko/i],
-		[VERSION, [NAME, "IE"]],
-		[/ya(?:search)?browser\/([\w\.]+)/i],
-		[VERSION, [NAME, "Yandex"]],
-		[/slbrowser\/([\w\.]+)/i],
-		[VERSION, [NAME, "Smart " + LENOVO + SUFFIX_BROWSER]],
-		[/(av(?:ast|g|ira))\/([\w\.]+)/i],
-		[[
-			NAME,
-			/(.+)/,
-			"$1 Secure" + SUFFIX_BROWSER
-		], VERSION],
-		[/norton\/([\w\.]+)/i],
-		[VERSION, [NAME, "Norton Private" + SUFFIX_BROWSER]],
-		[/\bfocus\/([\w\.]+)/i],
-		[VERSION, [NAME, FIREFOX + " Focus"]],
-		[/ mms\/([\w\.]+)$/i],
-		[VERSION, [NAME, OPERA + " Neon"]],
-		[/ opt\/([\w\.]+)$/i],
-		[VERSION, [NAME, OPERA + " Touch"]],
-		[/coc_coc\w+\/([\w\.]+)/i],
-		[VERSION, [NAME, "Coc Coc"]],
-		[/dolfin\/([\w\.]+)/i],
-		[VERSION, [NAME, "Dolphin"]],
-		[/coast\/([\w\.]+)/i],
-		[VERSION, [NAME, OPERA + " Coast"]],
-		[/miuibrowser\/([\w\.]+)/i],
-		[VERSION, [NAME, "MIUI" + SUFFIX_BROWSER]],
-		[/fxios\/([\w\.-]+)/i],
-		[VERSION, [NAME, PREFIX_MOBILE + FIREFOX]],
-		[/\bqihoobrowser\/?([\w\.]*)/i],
-		[VERSION, [NAME, "360"]],
-		[/\b(qq)\/([\w\.]+)/i],
-		[[
-			NAME,
-			/(.+)/,
-			"$1Browser"
-		], VERSION],
-		[/(oculus|sailfish|huawei|vivo|pico)browser\/([\w\.]+)/i],
-		[[
-			NAME,
-			/(.+)/,
-			"$1" + SUFFIX_BROWSER
-		], VERSION],
-		[/samsungbrowser\/([\w\.]+)/i],
-		[VERSION, [NAME, SAMSUNG + " Internet"]],
-		[/metasr[\/ ]?([\d\.]+)/i],
-		[VERSION, [NAME, SOGOU + " Explorer"]],
-		[/(sogou)mo\w+\/([\d\.]+)/i],
-		[[NAME, SOGOU + " Mobile"], VERSION],
-		[
-			/(electron)\/([\w\.]+) safari/i,
-			/(tesla)(?: qtcarbrowser|\/(20\d\d\.[-\w\.]+))/i,
-			/m?(qqbrowser|2345(?=browser|chrome|explorer))\w*[\/ ]?v?([\w\.]+)/i
-		],
-		[NAME, VERSION],
-		[/(lbbrowser|luakit|rekonq|steam(?= (clie|tenf|gameo)))/i],
-		[NAME],
-		[/ome\/([\w\.]+).+(iron(?= saf)|360(?=[es]e$))/i],
-		[VERSION, NAME],
-		[/((?:fban\/fbios|fb_iab\/fb4a)(?!.+fbav)|;fbav\/([\w\.]+);)/i],
-		[
-			[NAME, FACEBOOK],
-			VERSION,
-			[TYPE, INAPP]
-		],
-		[
-			/(kakao(?:talk|story))[\/ ]([\w\.]+)/i,
-			/(naver)\(.*?(\d+\.[\w\.]+).*\)/i,
-			/(daum)apps[\/ ]([\w\.]+)/i,
-			/safari (line)\/([\w\.]+)/i,
-			/\b(line)\/([\w\.]+)\/iab/i,
-			/(alipay)client\/([\w\.]+)/i,
-			/(twitter)(?:and| f.+e\/([\w\.]+))/i,
-			/(bing)(?:web|sapphire)\/([\w\.]+)/i,
-			/(instagram|snapchat|klarna)[\/ ]([-\w\.]+)/i
-		],
-		[
-			NAME,
-			VERSION,
-			[TYPE, INAPP]
-		],
-		[/\bgsa\/([\w\.]+) .*safari\//i],
-		[
-			VERSION,
-			[NAME, "GSA"],
-			[TYPE, INAPP]
-		],
-		[/(?:musical_ly|trill)(?:.+app_?version\/|_)([\w\.]+)/i],
-		[
-			VERSION,
-			[NAME, "TikTok"],
-			[TYPE, INAPP]
-		],
-		[/\[(linkedin)app\]/i],
-		[NAME, [TYPE, INAPP]],
-		[/(zalo(?:app)?)[\/\sa-z]*([\w\.-]+)/i],
-		[
-			[
-				NAME,
-				/(.+)/,
-				"Zalo"
-			],
-			VERSION,
-			[TYPE, INAPP]
-		],
-		[/(chromium)[\/ ]([-\w\.]+)/i],
-		[NAME, VERSION],
-		[/ome-(lighthouse)$/i],
-		[NAME, [TYPE, FETCHER]],
-		[/headlesschrome(?:\/([\w\.]+)| )/i],
-		[VERSION, [NAME, CHROME + " Headless"]],
-		[/wv\).+chrome\/([\w\.]+).+edgw\//i],
-		[VERSION, [NAME, EDGE + " WebView2"]],
-		[/ wv\).+(chrome)\/([\w\.]+)/i],
-		[[NAME, CHROME + " WebView"], VERSION],
-		[/droid.+ version\/([\w\.]+)\b.+(?:mobile safari|safari)/i],
-		[VERSION, [NAME, "Android" + SUFFIX_BROWSER]],
-		[/chrome\/([\w\.]+) mobile/i],
-		[VERSION, [NAME, PREFIX_MOBILE + "Chrome"]],
-		[/(chrome|omniweb|arora|[tizenoka]{5} ?browser)\/v?([\w\.]+)/i],
-		[NAME, VERSION],
-		[/version\/([\w\.\,]+) .*mobile(?:\/\w+ | ?)safari/i],
-		[VERSION, [NAME, PREFIX_MOBILE + "Safari"]],
-		[/iphone .*mobile(?:\/\w+ | ?)safari/i],
-		[[NAME, PREFIX_MOBILE + "Safari"]],
-		[/version\/([\w\.\,]+) .*(safari)/i],
-		[VERSION, NAME],
-		[/webkit.+?(mobile ?safari|safari)(\/[\w\.]+)/i],
-		[NAME, [VERSION, "1"]],
-		[/(webkit|khtml)\/([\w\.]+)/i],
-		[NAME, VERSION],
-		[/(?:mobile|tablet);.*(firefox)\/([\w\.-]+)/i],
-		[[NAME, PREFIX_MOBILE + FIREFOX], VERSION],
-		[/(navigator|netscape\d?)\/([-\w\.]+)/i],
-		[[NAME, "Netscape"], VERSION],
-		[/(wolvic|librewolf)\/([\w\.]+)/i],
-		[NAME, VERSION],
-		[/mobile vr; rv:([\w\.]+)\).+firefox/i],
-		[VERSION, [NAME, FIREFOX + " Reality"]],
-		[
-			/ekiohf.+(flow)\/([\w\.]+)/i,
-			/(swiftfox)/i,
-			/(icedragon|iceweasel|camino|chimera|fennec|maemo browser|minimo|conkeror)[\/ ]?([\w\.\+]+)/i,
-			/(seamonkey|k-meleon|icecat|iceape|firebird|phoenix|basilisk|waterfox)\/([-\w\.]+)$/i,
-			/(firefox)\/([\w\.]+)/i,
-			/(mozilla)\/([\w\.]+(?= .+rv\:.+gecko\/\d+)|[0-4][\w\.]+(?!.+compatible))/i,
-			/(amaya|dillo|doris|icab|ladybird|lynx|mosaic|netsurf|obigo|polaris|w3m|(?:go|ice|up)[\. ]?browser)[-\/ ]?v?([\w\.]+)/i,
-			/\b(links) \(([\w\.]+)/i
-		],
-		[NAME, [
-			VERSION,
-			/_/g,
-			"."
-		]],
-		[/(cobalt)\/([\w\.]+)/i],
-		[NAME, [
-			VERSION,
-			/[^\d\.]+./,
-			EMPTY
-		]]
-	],
-	cpu: [
-		[/\b((amd|x|x86[-_]?|wow|win)64)\b/i],
-		[[ARCHITECTURE, "amd64"]],
-		[/(ia32(?=;))/i, /\b((i[346]|x)86)(pc)?\b/i],
-		[[ARCHITECTURE, "ia32"]],
-		[/\b(aarch64|arm(v?[89]e?l?|_?64))\b/i],
-		[[ARCHITECTURE, "arm64"]],
-		[/\b(arm(v[67])?ht?n?[fl]p?)\b/i],
-		[[ARCHITECTURE, "armhf"]],
-		[/( (ce|mobile); ppc;|\/[\w\.]+arm\b)/i],
-		[[ARCHITECTURE, "arm"]],
-		[/ sun4\w[;\)]/i],
-		[[ARCHITECTURE, "sparc"]],
-		[
-			/\b(avr32|ia64(?=;)|68k(?=\))|\barm(?=v([1-7]|[5-7]1)l?|;|eabi)|(irix|mips|sparc)(64)?\b|pa-risc)/i,
-			/((ppc|powerpc)(64)?)( mac|;|\))/i,
-			/(?:osf1|[freopnt]{3,4}bsd) (alpha)/i
-		],
-		[[
-			ARCHITECTURE,
-			/ower/,
-			EMPTY,
-			lowerize
-		]],
-		[/mc680.0/i],
-		[[ARCHITECTURE, "68k"]],
-		[/winnt.+\[axp/i],
-		[[ARCHITECTURE, "alpha"]]
-	],
-	device: [
-		[/\b(sch-i[89]0\d|shw-m380s|sm-[ptx]\w{2,4}|gt-[pn]\d{2,4}|sgh-t8[56]9|nexus 10)/i],
-		[
-			MODEL,
-			[VENDOR, SAMSUNG],
-			[TYPE, TABLET]
-		],
-		[
-			/\b((?:s[cgp]h|gt|sm)-(?![lr])\w+|sc[g-]?[\d]+a?|galaxy nexus)/i,
-			/samsung[- ]((?!sm-[lr]|browser)[-\w]+)/i,
-			/sec-(sgh\w+)/i
-		],
-		[
-			MODEL,
-			[VENDOR, SAMSUNG],
-			[TYPE, MOBILE]
-		],
-		[/(?:\/|\()(ip(?:hone|od)[\w, ]*)[\/\);]/i],
-		[
-			MODEL,
-			[VENDOR, APPLE],
-			[TYPE, MOBILE]
-		],
-		[/\b(?:ios|apple\w+)\/.+[\(\/](ipad)/i, /\b(ipad)[\d,]*[;\] ].+(mac |i(pad)?)os/i],
-		[
-			MODEL,
-			[VENDOR, APPLE],
-			[TYPE, TABLET]
-		],
-		[/(macintosh);/i],
-		[MODEL, [VENDOR, APPLE]],
-		[/\b(sh-?[altvz]?\d\d[a-ekm]?)/i],
-		[
-			MODEL,
-			[VENDOR, SHARP],
-			[TYPE, MOBILE]
-		],
-		[/\b((?:brt|eln|hey2?|gdi|jdn)-a?[lnw]09|(?:ag[rm]3?|jdn2|kob2)-a?[lw]0[09]hn)(?: bui|\)|;)/i],
-		[
-			MODEL,
-			[VENDOR, HONOR],
-			[TYPE, TABLET]
-		],
-		[/honor([-\w ]+)[;\)]/i],
-		[
-			MODEL,
-			[VENDOR, HONOR],
-			[TYPE, MOBILE]
-		],
-		[/\b((?:ag[rs][2356]?k?|bah[234]?|bg[2o]|bt[kv]|cmr|cpn|db[ry]2?|jdn2|got|kob2?k?|mon|pce|scm|sht?|[tw]gr|vrd)-[ad]?[lw][0125][09]b?|605hw|bg2-u03|(?:gem|fdr|m2|ple|t1)-[7a]0[1-4][lu]|t1-a2[13][lw]|mediapad[\w\. ]*(?= bui|\)))\b(?!.+d\/s)/i],
-		[
-			MODEL,
-			[VENDOR, HUAWEI],
-			[TYPE, TABLET]
-		],
-		[/(?:huawei) ?([-\w ]+)[;\)]/i, /\b(nexus 6p|\w{2,4}e?-[atu]?[ln][\dx][\dc][adnt]?)\b(?!.+d\/s)/i],
-		[
-			MODEL,
-			[VENDOR, HUAWEI],
-			[TYPE, MOBILE]
-		],
-		[/oid[^\)]+; (2[\dbc]{4}(182|283|rp\w{2})[cgl]|m2105k81a?c)(?: bui|\))/i, /\b(?:xiao)?((?:red)?mi[-_ ]?pad[\w- ]*)(?: bui|\))/i],
-		[
-			[
-				MODEL,
-				/_/g,
-				" "
-			],
-			[VENDOR, XIAOMI],
-			[TYPE, TABLET]
-		],
-		[
-			/\b; (\w+) build\/hm\1/i,
-			/\b(hm[-_ ]?note?[_ ]?(?:\d\w)?) bui/i,
-			/oid[^\)]+; (redmi[\-_ ]?(?:note|k)?[\w_ ]+|m?[12]\d[01]\d\w{3,6}|poco[\w ]+|(shark )?\w{3}-[ah]0|qin ?[1-3](s\+|ultra| pro)?)( bui|; wv|\))/i,
-			/\b(mi[-_ ]?(?:a\d|one|one[_ ]plus|note|max|cc)?[_ ]?(?:\d{0,2}\w?)[_ ]?(?:plus|se|lite|pro)?( 5g|lte)?)(?: bui|\))/i,
-			/ ([\w ]+) miui\/v?\d/i
-		],
-		[
-			[
-				MODEL,
-				/_/g,
-				" "
-			],
-			[VENDOR, XIAOMI],
-			[TYPE, MOBILE]
-		],
-		[/droid.+; (cph2[3-6]\d[13579]|((gm|hd)19|(ac|be|in|kb)20|(d[en]|eb|le|mt)21|ne22)[0-2]\d|p[g-l]\w[1m]10)\b/i, /(?:one)?(?:plus)? (a\d0\d\d)(?: b|\))/i],
-		[
-			MODEL,
-			[VENDOR, ONEPLUS],
-			[TYPE, MOBILE]
-		],
-		[/; (\w+) bui.+ oppo/i, /\b(cph[12]\d{3}|p(?:af|c[al]|d\w|e[ar])[mt]\d0|x9007|a101op)\b/i],
-		[
-			MODEL,
-			[VENDOR, OPPO],
-			[TYPE, MOBILE]
-		],
-		[/\b(opd2(\d{3}a?))(?: bui|\))/i],
-		[
-			MODEL,
-			[
-				VENDOR,
-				strMapper,
-				{
-					"OnePlus": [
-						"203",
-						"304",
-						"403",
-						"404",
-						"413",
-						"415"
-					],
-					"*": OPPO
-				}
-			],
-			[TYPE, TABLET]
-		],
-		[/(vivo (5r?|6|8l?|go|one|s|x[il]?[2-4]?)[\w\+ ]*)(?: bui|\))/i],
-		[
-			MODEL,
-			[VENDOR, "BLU"],
-			[TYPE, MOBILE]
-		],
-		[/; vivo (\w+)(?: bui|\))/i, /\b(v[12]\d{3}\w?[at])(?: bui|;)/i],
-		[
-			MODEL,
-			[VENDOR, "Vivo"],
-			[TYPE, MOBILE]
-		],
-		[/\b(rmx[1-3]\d{3})(?: bui|;|\))/i],
-		[
-			MODEL,
-			[VENDOR, "Realme"],
-			[TYPE, MOBILE]
-		],
-		[/(ideatab[-\w ]+|602lv|d-42a|a101lv|a2109a|a3500-hv|s[56]000|pb-6505[my]|tb-?x?\d{3,4}(?:f[cu]|xu|[av])|yt\d?-[jx]?\d+[lfmx])( bui|;|\)|\/)/i, /lenovo ?(b[68]0[08]0-?[hf]?|tab(?:[\w- ]+?)|tb[\w-]{6,7})( bui|;|\)|\/)/i],
-		[
-			MODEL,
-			[VENDOR, LENOVO],
-			[TYPE, TABLET]
-		],
-		[/lenovo[-_ ]?([-\w ]+?)(?: bui|\)|\/)/i],
-		[
-			MODEL,
-			[VENDOR, LENOVO],
-			[TYPE, MOBILE]
-		],
-		[
-			/\b(milestone|droid(?:[2-4x]| (?:bionic|x2|pro|razr))?:?( 4g)?)\b[\w ]+build\//i,
-			/\bmot(?:orola)?[- ]([\w\s]+)(\)| bui)/i,
-			/((?:moto(?! 360)[-\w\(\) ]+|xt\d{3,4}[cgkosw\+]?[-\d]*|nexus 6)(?= bui|\)))/i
-		],
-		[
-			MODEL,
-			[VENDOR, MOTOROLA],
-			[TYPE, MOBILE]
-		],
-		[/\b(mz60\d|xoom[2 ]{0,2}) build\//i],
-		[
-			MODEL,
-			[VENDOR, MOTOROLA],
-			[TYPE, TABLET]
-		],
-		[/\b(?:lg)?([vl]k\-?\d{3}) bui| 3\.[-\w; ]{10}lg?-([06cv9]{3,4})/i],
-		[
-			MODEL,
-			[VENDOR, LG],
-			[TYPE, TABLET]
-		],
-		[
-			/(lm(?:-?f100[nv]?|-[\w\.]+)(?= bui|\))|nexus [45])/i,
-			/\blg[-e;\/ ]+(?!.*(?:browser|netcast|android tv|watch|webos))(\w+)/i,
-			/\blg-?([\d\w]+) bui/i
-		],
-		[
-			MODEL,
-			[VENDOR, LG],
-			[TYPE, MOBILE]
-		],
-		[/(nokia) (t[12][01])/i],
-		[
-			VENDOR,
-			MODEL,
-			[TYPE, TABLET]
-		],
-		[/(?:maemo|nokia).*(n900|lumia \d+|rm-\d+)/i, /nokia[-_ ]?(([-\w\. ]*?))( bui|\)|;|\/)/i],
-		[
-			[
-				MODEL,
-				/_/g,
-				" "
-			],
-			[TYPE, MOBILE],
-			[VENDOR, "Nokia"]
-		],
-		[/(pixel (c|tablet))\b/i],
-		[
-			MODEL,
-			[VENDOR, GOOGLE],
-			[TYPE, TABLET]
-		],
-		[/droid.+;(?: google)? (g(01[13]a|020[aem]|025[jn]|1b60|1f8f|2ybb|4s1m|576d|5nz6|8hhn|8vou|a02099|c15s|d1yq|e2ae|ec77|gh2x|kv4x|p4bc|pj41|r83y|tt9q|ur25|wvk6)|pixel[\d ]*a?( pro)?( xl)?( fold)?( \(5g\))?)( bui|\))/i],
-		[
-			MODEL,
-			[VENDOR, GOOGLE],
-			[TYPE, MOBILE]
-		],
-		[/(google) (pixelbook( go)?)/i],
-		[VENDOR, MODEL],
-		[/droid.+; (a?\d[0-2]{2}so|[c-g]\d{4}|so[-gl]\w+|xq-\w\w\d\d)(?= bui|\).+chrome\/(?![1-6]{0,1}\d\.))/i],
-		[
-			MODEL,
-			[VENDOR, SONY],
-			[TYPE, MOBILE]
-		],
-		[/sony tablet [ps]/i, /\b(?:sony)?sgp\w+(?: bui|\))/i],
-		[
-			[MODEL, "Xperia Tablet"],
-			[VENDOR, SONY],
-			[TYPE, TABLET]
-		],
-		[
-			/(alexa)webm/i,
-			/(kf[a-z]{2}wi|aeo(?!bc)\w\w)( bui|\))/i,
-			/(kf[a-z]+)( bui|\)).+silk\//i
-		],
-		[
-			MODEL,
-			[VENDOR, AMAZON],
-			[TYPE, TABLET]
-		],
-		[/((?:sd|kf)[0349hijorstuw]+)( bui|\)).+silk\//i],
-		[
-			[
-				MODEL,
-				/(.+)/g,
-				"Fire Phone $1"
-			],
-			[VENDOR, AMAZON],
-			[TYPE, MOBILE]
-		],
-		[/(playbook);[-\w\),; ]+(rim)/i],
-		[
-			MODEL,
-			VENDOR,
-			[TYPE, TABLET]
-		],
-		[/\b((?:bb[a-f]|st[hv])100-\d)/i, /(?:blackberry|\(bb10;) (\w+)/i],
-		[
-			MODEL,
-			[VENDOR, BLACKBERRY],
-			[TYPE, MOBILE]
-		],
-		[/(?:\b|asus_)(transfo[prime ]{4,10} \w+|eeepc|slider \w+|nexus 7|padfone|p00[cj])/i],
-		[
-			MODEL,
-			[VENDOR, ASUS],
-			[TYPE, TABLET]
-		],
-		[/ (z[bes]6[027][012][km][ls]|zenfone \d\w?)\b/i],
-		[
-			MODEL,
-			[VENDOR, ASUS],
-			[TYPE, MOBILE]
-		],
-		[/(nexus 9)/i],
-		[
-			MODEL,
-			[VENDOR, "HTC"],
-			[TYPE, TABLET]
-		],
-		[
-			/(htc)[-;_ ]{1,2}([\w ]+(?=\)| bui)|\w+)/i,
-			/(zte)[- ]([\w ]+?)(?: bui|\/|\))/i,
-			/(alcatel|geeksphone|nexian|panasonic(?!(?:;|\.))|sony(?!-bra))[-_ ]?([-\w]*)/i
-		],
-		[
-			VENDOR,
-			[
-				MODEL,
-				/_/g,
-				" "
-			],
-			[TYPE, MOBILE]
-		],
-		[/tcl (xess p17aa)/i, /droid [\w\.]+; ((?:8[14]9[16]|9(?:0(?:48|60|8[01])|1(?:3[27]|66)|2(?:6[69]|9[56])|466))[gqswx])(_\w(\w|\w\w))?(\)| bui)/i],
-		[
-			MODEL,
-			[VENDOR, "TCL"],
-			[TYPE, TABLET]
-		],
-		[/droid [\w\.]+; (418(?:7d|8v)|5087z|5102l|61(?:02[dh]|25[adfh]|27[ai]|56[dh]|59k|65[ah])|a509dl|t(?:43(?:0w|1[adepqu])|50(?:6d|7[adju])|6(?:09dl|10k|12b|71[efho]|76[hjk])|7(?:66[ahju]|67[hw]|7[045][bh]|71[hk]|73o|76[ho]|79w|81[hks]?|82h|90[bhsy]|99b)|810[hs]))(_\w(\w|\w\w))?(\)| bui)/i],
-		[
-			MODEL,
-			[VENDOR, "TCL"],
-			[TYPE, MOBILE]
-		],
-		[/(itel) ((\w+))/i],
-		[
-			[VENDOR, lowerize],
-			MODEL,
-			[
-				TYPE,
-				strMapper,
-				{
-					"tablet": ["p10001l", "w7001"],
-					"*": "mobile"
-				}
-			]
-		],
-		[/droid.+; ([ab][1-7]-?[0178a]\d\d?)/i],
-		[
-			MODEL,
-			[VENDOR, "Acer"],
-			[TYPE, TABLET]
-		],
-		[/droid.+; (m[1-5] note) bui/i, /\bmz-([-\w]{2,})/i],
-		[
-			MODEL,
-			[VENDOR, "Meizu"],
-			[TYPE, MOBILE]
-		],
-		[/; ((?:power )?armor(?:[\w ]{0,8}))(?: bui|\))/i],
-		[
-			MODEL,
-			[VENDOR, "Ulefone"],
-			[TYPE, MOBILE]
-		],
-		[/; (energy ?\w+)(?: bui|\))/i, /; energizer ([\w ]+)(?: bui|\))/i],
-		[
-			MODEL,
-			[VENDOR, "Energizer"],
-			[TYPE, MOBILE]
-		],
-		[/; cat (b35);/i, /; (b15q?|s22 flip|s48c|s62 pro)(?: bui|\))/i],
-		[
-			MODEL,
-			[VENDOR, "Cat"],
-			[TYPE, MOBILE]
-		],
-		[/((?:new )?andromax[\w- ]+)(?: bui|\))/i],
-		[
-			MODEL,
-			[VENDOR, "Smartfren"],
-			[TYPE, MOBILE]
-		],
-		[/droid.+; (a(in)?(0(15|59|6[35])|142)p?)/i],
-		[
-			MODEL,
-			[VENDOR, "Nothing"],
-			[TYPE, MOBILE]
-		],
-		[/; (x67 5g|tikeasy \w+|ac[1789]\d\w+)( b|\))/i, /archos ?(5|gamepad2?|([\w ]*[t1789]|hello) ?\d+[\w ]*)( b|\))/i],
-		[
-			MODEL,
-			[VENDOR, "Archos"],
-			[TYPE, TABLET]
-		],
-		[/archos ([\w ]+)( b|\))/i, /; (ac[3-6]\d\w{2,8})( b|\))/i],
-		[
-			MODEL,
-			[VENDOR, "Archos"],
-			[TYPE, MOBILE]
-		],
-		[/; (n159v)/i],
-		[
-			MODEL,
-			[VENDOR, "HMD"],
-			[TYPE, MOBILE]
-		],
-		[/(imo) (tab \w+)/i, /(infinix|tecno) (x1101b?|p904|dp(7c|8d|10a)( pro)?|p70[1-3]a?|p904|t1101)/i],
-		[
-			VENDOR,
-			MODEL,
-			[TYPE, TABLET]
-		],
-		[
-			/(blackberry|benq|palm(?=\-)|sonyericsson|acer|asus(?! zenw)|dell|jolla|meizu|motorola|polytron|tecno|micromax|advan)[-_ ]?([-\w]*)/i,
-			/; (blu|hmd|imo|infinix|lava|oneplus|tcl|wiko)[_ ]([\w\+ ]+?)(?: bui|\)|; r)/i,
-			/(hp) ([\w ]+\w)/i,
-			/(microsoft); (lumia[\w ]+)/i,
-			/(oppo) ?([\w ]+) bui/i,
-			/(hisense) ([ehv][\w ]+)\)/i,
-			/droid[^;]+; (philips)[_ ]([sv-x][\d]{3,4}[xz]?)/i
-		],
-		[
-			VENDOR,
-			MODEL,
-			[TYPE, MOBILE]
-		],
-		[
-			/(kobo)\s(ereader|touch)/i,
-			/(hp).+(touchpad(?!.+tablet)|tablet)/i,
-			/(kindle)\/([\w\.]+)/i
-		],
-		[
-			VENDOR,
-			MODEL,
-			[TYPE, TABLET]
-		],
-		[/(surface duo)/i],
-		[
-			MODEL,
-			[VENDOR, MICROSOFT],
-			[TYPE, TABLET]
-		],
-		[/droid [\d\.]+; (fp\du?)(?: b|\))/i],
-		[
-			MODEL,
-			[VENDOR, "Fairphone"],
-			[TYPE, MOBILE]
-		],
-		[/((?:tegranote|shield t(?!.+d tv))[\w- ]*?)(?: b|\))/i],
-		[
-			MODEL,
-			[VENDOR, NVIDIA],
-			[TYPE, TABLET]
-		],
-		[/(sprint) (\w+)/i],
-		[
-			VENDOR,
-			MODEL,
-			[TYPE, MOBILE]
-		],
-		[/(kin\.[onetw]{3})/i],
-		[
-			[
-				MODEL,
-				/\./g,
-				" "
-			],
-			[VENDOR, MICROSOFT],
-			[TYPE, MOBILE]
-		],
-		[/droid.+; ([c6]+|et5[16]|mc[239][23]x?|vc8[03]x?)\)/i],
-		[
-			MODEL,
-			[VENDOR, ZEBRA],
-			[TYPE, TABLET]
-		],
-		[/droid.+; (ec30|ps20|tc[2-8]\d[kx])\)/i],
-		[
-			MODEL,
-			[VENDOR, ZEBRA],
-			[TYPE, MOBILE]
-		],
-		[/(philips)[\w ]+tv/i, /smart-tv.+(samsung)/i],
-		[VENDOR, [TYPE, SMARTTV]],
-		[/hbbtv.+maple;(\d+)/i],
-		[
-			[
-				MODEL,
-				/^/,
-				"SmartTV"
-			],
-			[VENDOR, SAMSUNG],
-			[TYPE, SMARTTV]
-		],
-		[/(vizio)(?: |.+model\/)(\w+-\w+)/i, /tcast.+(lg)e?. ([-\w]+)/i],
-		[
-			VENDOR,
-			MODEL,
-			[TYPE, SMARTTV]
-		],
-		[/(nux; netcast.+smarttv|lg (netcast\.tv-201\d|android tv))/i],
-		[[VENDOR, LG], [TYPE, SMARTTV]],
-		[/(apple) ?tv/i],
-		[
-			VENDOR,
-			[MODEL, APPLE + " TV"],
-			[TYPE, SMARTTV]
-		],
-		[/crkey.*devicetype\/chromecast/i],
-		[
-			[MODEL, CHROMECAST + " Third Generation"],
-			[VENDOR, GOOGLE],
-			[TYPE, SMARTTV]
-		],
-		[/crkey.*devicetype\/([^/]*)/i],
-		[
-			[
-				MODEL,
-				/^/,
-				"Chromecast "
-			],
-			[VENDOR, GOOGLE],
-			[TYPE, SMARTTV]
-		],
-		[/fuchsia.*crkey/i],
-		[
-			[MODEL, CHROMECAST + " Nest Hub"],
-			[VENDOR, GOOGLE],
-			[TYPE, SMARTTV]
-		],
-		[/crkey/i],
-		[
-			[MODEL, CHROMECAST],
-			[VENDOR, GOOGLE],
-			[TYPE, SMARTTV]
-		],
-		[/(portaltv)/i],
-		[
-			MODEL,
-			[VENDOR, FACEBOOK],
-			[TYPE, SMARTTV]
-		],
-		[/droid.+aft(\w+)( bui|\))/i],
-		[
-			MODEL,
-			[VENDOR, AMAZON],
-			[TYPE, SMARTTV]
-		],
-		[/(shield \w+ tv)/i],
-		[
-			MODEL,
-			[VENDOR, NVIDIA],
-			[TYPE, SMARTTV]
-		],
-		[/\(dtv[\);].+(aquos)/i, /(aquos-tv[\w ]+)\)/i],
-		[
-			MODEL,
-			[VENDOR, SHARP],
-			[TYPE, SMARTTV]
-		],
-		[/(bravia[\w ]+)( bui|\))/i],
-		[
-			MODEL,
-			[VENDOR, SONY],
-			[TYPE, SMARTTV]
-		],
-		[/(mi(tv|box)-?\w+) bui/i],
-		[
-			MODEL,
-			[VENDOR, XIAOMI],
-			[TYPE, SMARTTV]
-		],
-		[/Hbbtv.*(technisat) (.*);/i],
-		[
-			VENDOR,
-			MODEL,
-			[TYPE, SMARTTV]
-		],
-		[/\b(roku)[\dx]*[\)\/]((?:dvp-)?[\d\.]*)/i, /hbbtv\/\d+\.\d+\.\d+ +\([\w\+ ]*; *([\w\d][^;]*);([^;]*)/i],
-		[
-			[
-				VENDOR,
-				/.+\/(\w+)/,
-				"$1",
-				strMapper,
-				{ "LG": "lge" }
-			],
-			[MODEL, trim],
-			[TYPE, SMARTTV]
-		],
-		[/(playstation \w+)/i],
-		[
-			MODEL,
-			[VENDOR, SONY],
-			[TYPE, CONSOLE]
-		],
-		[/\b(xbox(?: one)?(?!; xbox))[\); ]/i],
-		[
-			MODEL,
-			[VENDOR, MICROSOFT],
-			[TYPE, CONSOLE]
-		],
-		[
-			/(ouya)/i,
-			/(nintendo) (\w+)/i,
-			/(retroid) (pocket ([^\)]+))/i,
-			/(valve).+(steam deck)/i,
-			/droid.+; ((shield|rgcube|gr0006))( bui|\))/i
-		],
-		[
-			[
-				VENDOR,
-				strMapper,
-				{
-					"Nvidia": "Shield",
-					"Anbernic": "RGCUBE",
-					"Logitech": "GR0006"
-				}
-			],
-			MODEL,
-			[TYPE, CONSOLE]
-		],
-		[/\b(sm-[lr]\d\d[0156][fnuw]?s?|gear live)\b/i],
-		[
-			MODEL,
-			[VENDOR, SAMSUNG],
-			[TYPE, WEARABLE]
-		],
-		[/((pebble))app/i, /(asus|google|lg|oppo|xiaomi) ((pixel |zen)?watch[\w ]*)( bui|\))/i],
-		[
-			VENDOR,
-			MODEL,
-			[TYPE, WEARABLE]
-		],
-		[/(ow(?:19|20)?we?[1-3]{1,3})/i],
-		[
-			MODEL,
-			[VENDOR, OPPO],
-			[TYPE, WEARABLE]
-		],
-		[/(watch)(?: ?os[,\/]|\d,\d\/)[\d\.]+/i],
-		[
-			MODEL,
-			[VENDOR, APPLE],
-			[TYPE, WEARABLE]
-		],
-		[/(opwwe\d{3})/i],
-		[
-			MODEL,
-			[VENDOR, ONEPLUS],
-			[TYPE, WEARABLE]
-		],
-		[/(moto 360)/i],
-		[
-			MODEL,
-			[VENDOR, MOTOROLA],
-			[TYPE, WEARABLE]
-		],
-		[/(smartwatch 3)/i],
-		[
-			MODEL,
-			[VENDOR, SONY],
-			[TYPE, WEARABLE]
-		],
-		[/(g watch r)/i],
-		[
-			MODEL,
-			[VENDOR, LG],
-			[TYPE, WEARABLE]
-		],
-		[/droid.+; (wt63?0{2,3})\)/i],
-		[
-			MODEL,
-			[VENDOR, ZEBRA],
-			[TYPE, WEARABLE]
-		],
-		[/droid.+; (glass) \d/i],
-		[
-			MODEL,
-			[VENDOR, GOOGLE],
-			[TYPE, XR]
-		],
-		[/(pico) ([\w ]+) os\d/i],
-		[
-			VENDOR,
-			MODEL,
-			[TYPE, XR]
-		],
-		[/(quest( \d| pro)?s?).+vr/i],
-		[
-			MODEL,
-			[VENDOR, FACEBOOK],
-			[TYPE, XR]
-		],
-		[/mobile vr; rv.+firefox/i],
-		[[TYPE, XR]],
-		[/(tesla)(?: qtcarbrowser|\/[-\w\.]+)/i],
-		[VENDOR, [TYPE, EMBEDDED]],
-		[/(aeobc)\b/i],
-		[
-			MODEL,
-			[VENDOR, AMAZON],
-			[TYPE, EMBEDDED]
-		],
-		[/(homepod).+mac os/i],
-		[
-			MODEL,
-			[VENDOR, APPLE],
-			[TYPE, EMBEDDED]
-		],
-		[/windows iot/i],
-		[[TYPE, EMBEDDED]],
-		[/droid.+; ([\w- ]+) (4k|android|smart|google)[- ]?tv/i],
-		[MODEL, [TYPE, SMARTTV]],
-		[/\b((4k|android|smart|opera)[- ]?tv|tv; rv:|large screen[\w ]+safari)\b/i],
-		[[TYPE, SMARTTV]],
-		[/droid .+?; ([^;]+?)(?: bui|; wv\)|\) applew|; hmsc).+?(mobile|vr|\d) safari/i],
-		[MODEL, [
-			TYPE,
-			strMapper,
-			{
-				"mobile": "Mobile",
-				"xr": "VR",
-				"*": TABLET
-			}
-		]],
-		[/\b((tablet|tab)[;\/]|focus\/\d(?!.+mobile))/i],
-		[[TYPE, TABLET]],
-		[/(phone|mobile(?:[;\/]| [ \w\/\.]*safari)|pda(?=.+windows ce))/i],
-		[[TYPE, MOBILE]],
-		[/droid .+?; ([\w\. -]+)( bui|\))/i],
-		[MODEL, [VENDOR, "Generic"]]
-	],
-	engine: [
-		[/windows.+ edge\/([\w\.]+)/i],
-		[VERSION, [NAME, EDGE + "HTML"]],
-		[/(arkweb)\/([\w\.]+)/i],
-		[NAME, VERSION],
-		[/webkit\/537\.36.+chrome\/(?!27)([\w\.]+)/i],
-		[VERSION, [NAME, "Blink"]],
-		[
-			/(presto)\/([\w\.]+)/i,
-			/(webkit|trident|netfront|netsurf|amaya|lynx|w3m|goanna|servo)\/([\w\.]+)/i,
-			/ekioh(flow)\/([\w\.]+)/i,
-			/(khtml|tasman|links|dillo)[\/ ]\(?([\w\.]+)/i,
-			/(icab)[\/ ]([23]\.[\d\.]+)/i,
-			/\b(libweb)/i
-		],
-		[NAME, VERSION],
-		[/ladybird\//i],
-		[[NAME, "LibWeb"]],
-		[/rv\:([\w\.]{1,9})\b.+(gecko)/i],
-		[VERSION, NAME]
-	],
-	os: [
-		[/(windows nt) (6\.[23]); arm/i],
-		[[
-			NAME,
-			/N/,
-			"R"
-		], [
-			VERSION,
-			strMapper,
-			windowsVersionMap
-		]],
-		[/(windows (?:phone|mobile|iot))(?: os)?[\/ ]?([\d\.]*( se)?)/i, /(windows)[\/ ](1[01]|2000|3\.1|7|8(\.1)?|9[58]|me|server 20\d\d( r2)?|vista|xp)/i],
-		[NAME, VERSION],
-		[/windows nt ?([\d\.\)]*)(?!.+xbox)/i, /\bwin(?=3| ?9|n)(?:nt| 9x )?([\d\.;]*)/i],
-		[[
-			VERSION,
-			/(;|\))/g,
-			"",
-			strMapper,
-			windowsVersionMap
-		], [NAME, WINDOWS]],
-		[/(windows ce)\/?([\d\.]*)/i],
-		[NAME, VERSION],
-		[
-			/[adehimnop]{4,7}\b(?:.*os ([\w]+) like mac|; opera)/i,
-			/(?:ios;fbsv|ios(?=.+ip(?:ad|hone)|.+apple ?tv)|ip(?:ad|hone)(?: |.+i(?:pad)?)os|apple ?tv.+ios)[\/ ]([\w\.]+)/i,
-			/\btvos ?([\w\.]+)/i,
-			/cfnetwork\/.+darwin/i
-		],
-		[[
-			VERSION,
-			/_/g,
-			"."
-		], [NAME, "iOS"]],
-		[/(mac os x) ?([\w\. ]*)/i, /(macintosh|mac_powerpc\b)(?!.+(haiku|morphos))/i],
-		[[NAME, "macOS"], [
-			VERSION,
-			/_/g,
-			"."
-		]],
-		[/android ([\d\.]+).*crkey/i],
-		[VERSION, [NAME, CHROMECAST + " Android"]],
-		[/fuchsia.*crkey\/([\d\.]+)/i],
-		[VERSION, [NAME, CHROMECAST + " Fuchsia"]],
-		[/crkey\/([\d\.]+).*devicetype\/smartspeaker/i],
-		[VERSION, [NAME, CHROMECAST + " SmartSpeaker"]],
-		[/linux.*crkey\/([\d\.]+)/i],
-		[VERSION, [NAME, CHROMECAST + " Linux"]],
-		[/crkey\/([\d\.]+)/i],
-		[VERSION, [NAME, CHROMECAST]],
-		[/droid ([\w\.]+)\b.+(android[- ]x86)/i],
-		[VERSION, NAME],
-		[/(ubuntu) ([\w\.]+) like android/i],
-		[[
-			NAME,
-			/(.+)/,
-			"$1 Touch"
-		], VERSION],
-		[/(harmonyos)[\/ ]?([\d\.]*)/i, /(android|bada|blackberry|kaios|maemo|meego|openharmony|qnx|rim tablet os|sailfish|series40|symbian|tizen)\w*[-\/\.; ]?([\d\.]*)/i],
-		[NAME, VERSION],
-		[/\(bb(10);/i],
-		[VERSION, [NAME, BLACKBERRY]],
-		[/(?:symbian ?os|symbos|s60(?=;)|series ?60)[-\/ ]?([\w\.]*)/i],
-		[VERSION, [NAME, "Symbian"]],
-		[/mozilla\/[\d\.]+ \((?:mobile[;\w ]*|tablet|tv|[^\)]*(?:viera|lg(?:l25|-d300)|alcatel ?o.+|y300-f1)); rv:([\w\.]+)\).+gecko\//i],
-		[VERSION, [NAME, FIREFOX + " OS"]],
-		[/\b(?:hp)?wos(?:browser)?\/([\w\.]+)/i, /webos(?:[ \/]?|\.tv-20(?=2[2-9]))(\d[\d\.]*)/i],
-		[VERSION, [NAME, "webOS"]],
-		[/web0s;.+?(?:chr[o0]me|safari)\/(\d+)/i],
-		[[
-			VERSION,
-			strMapper,
-			{
-				"25": "120",
-				"24": "108",
-				"23": "94",
-				"22": "87",
-				"6": "79",
-				"5": "68",
-				"4": "53",
-				"3": "38",
-				"2": "538",
-				"1": "537",
-				"*": "TV"
-			}
-		], [NAME, "webOS"]],
-		[/watch(?: ?os[,\/ ]|\d,\d\/)([\d\.]+)/i],
-		[VERSION, [NAME, "watchOS"]],
-		[/cros [\w]+(?:\)| ([\w\.]+)\b)/i],
-		[VERSION, [NAME, "Chrome OS"]],
-		[/kepler ([\w\.]+); (aft|aeo)/i],
-		[VERSION, [NAME, "Vega OS"]],
-		[
-			/(netrange)mmh/i,
-			/(nettv)\/(\d+\.[\w\.]+)/i,
-			/(nintendo|playstation) (\w+)/i,
-			/(xbox); +xbox ([^\);]+)/i,
-			/(pico) .+os([\w\.]+)/i,
-			/\b(joli|palm)\b ?(?:os)?\/?([\w\.]*)/i,
-			/linux.+(mint)[\/\(\) ]?([\w\.]*)/i,
-			/(mageia|vectorlinux|fuchsia|arcaos|arch(?= ?linux))[;l ]([\d\.]*)/i,
-			/([kxln]?ubuntu|debian|suse|opensuse|gentoo|slackware|fedora|mandriva|centos|pclinuxos|red ?hat|zenwalk|linpus|raspbian|plan 9|minix|risc os|contiki|deepin|manjaro|elementary os|sabayon|linspire|knoppix)(?: gnu[\/ ]linux)?(?: enterprise)?(?:[- ]linux)?(?:-gnu)?[-\/ ]?(?!chrom|package)([-\w\.]*)/i,
-			/((?:open)?solaris)[-\/ ]?([\w\.]*)/i,
-			/\b(aix)[; ]([1-9\.]{0,4})/i,
-			/(hurd|linux|morphos)(?: (?:arm|x86|ppc)\w*| ?)([\w\.]*)/i,
-			/(gnu) ?([\w\.]*)/i,
-			/\b([-frentopcghs]{0,5}bsd|dragonfly)[\/ ]?(?!amd|[ix346]{1,2}86)([\w\.]*)/i,
-			/(haiku) ?(r\d)?/i
-		],
-		[NAME, VERSION],
-		[/(sunos) ?([\d\.]*)/i],
-		[[NAME, "Solaris"], VERSION],
-		[/\b(beos|os\/2|amigaos|openvms|hp-ux|serenityos)/i, /(unix) ?([\w\.]*)/i],
-		[NAME, VERSION]
-	]
-};
-var defaultProps = (function() {
-	var props = {
-		init: {},
-		isIgnore: {},
-		isIgnoreRgx: {},
-		toString: {}
-	};
-	setProps.call(props.init, [
-		[BROWSER, [
-			NAME,
-			VERSION,
-			MAJOR,
-			TYPE
-		]],
-		[CPU, [ARCHITECTURE]],
-		[DEVICE, [
-			TYPE,
-			MODEL,
-			VENDOR
-		]],
-		[ENGINE, [NAME, VERSION]],
-		[OS, [NAME, VERSION]]
-	]);
-	setProps.call(props.isIgnore, [
-		[BROWSER, [VERSION, MAJOR]],
-		[ENGINE, [VERSION]],
-		[OS, [VERSION]]
-	]);
-	setProps.call(props.isIgnoreRgx, [[BROWSER, / ?browser$/i], [OS, / ?os$/i]]);
-	setProps.call(props.toString, [
-		[BROWSER, [NAME, VERSION]],
-		[CPU, [ARCHITECTURE]],
-		[DEVICE, [VENDOR, MODEL]],
-		[ENGINE, [NAME, VERSION]],
-		[OS, [NAME, VERSION]]
-	]);
-	return props;
-})();
-var createIData = function(item, itemType) {
-	var init_props = defaultProps.init[itemType], is_ignoreProps = defaultProps.isIgnore[itemType] || 0, is_ignoreRgx = defaultProps.isIgnoreRgx[itemType] || 0, toString_props = defaultProps.toString[itemType] || 0;
-	function IData() {
-		setProps.call(this, init_props);
-	}
-	IData.prototype.getItem = function() {
-		return item;
-	};
-	IData.prototype.withClientHints = function() {
-		if (!NAVIGATOR_UADATA) return item.parseCH().get();
-		return NAVIGATOR_UADATA.getHighEntropyValues(CH_ALL_VALUES).then(function(res) {
-			return item.setCH(new UACHData(res, false)).parseCH().get();
-		});
-	};
-	IData.prototype.withFeatureCheck = function() {
-		return item.detectFeature().get();
-	};
-	if (itemType != RESULT) {
-		IData.prototype.is = function(strToCheck) {
-			var is = false;
-			for (var i in this) if (this.hasOwnProperty(i) && !has(is_ignoreProps, i) && lowerize(is_ignoreRgx ? strip(is_ignoreRgx, this[i]) : this[i]) == lowerize(is_ignoreRgx ? strip(is_ignoreRgx, strToCheck) : strToCheck)) {
-				is = true;
-				if (strToCheck != TYPEOF.UNDEFINED) break;
-			} else if (strToCheck == TYPEOF.UNDEFINED && is) {
-				is = !is;
-				break;
-			}
-			return is;
-		};
-		IData.prototype.toString = function() {
-			var str = EMPTY;
-			for (var i in toString_props) if (typeof this[toString_props[i]] !== TYPEOF.UNDEFINED) str += (str ? " " : EMPTY) + this[toString_props[i]];
-			return str || TYPEOF.UNDEFINED;
-		};
-	}
-	IData.prototype.then = function(cb) {
-		var that = this;
-		var IDataResolve = function() {
-			for (var prop in that) if (that.hasOwnProperty(prop)) this[prop] = that[prop];
-		};
-		IDataResolve.prototype = {
-			is: IData.prototype.is,
-			toString: IData.prototype.toString,
-			withClientHints: IData.prototype.withClientHints,
-			withFeatureCheck: IData.prototype.withFeatureCheck
-		};
-		var resolveData = new IDataResolve();
-		cb(resolveData);
-		return resolveData;
-	};
-	return new IData();
-};
-function UACHData(uach, isHttpUACH) {
-	uach = uach || {};
-	setProps.call(this, CH_ALL_VALUES);
-	if (isHttpUACH) setProps.call(this, [
-		[BRANDS, itemListToArray(uach[CH])],
-		[FULLVERLIST, itemListToArray(uach[CH_FULL_VER_LIST])],
-		[MOBILE, /\?1/.test(uach[CH_MOBILE])],
-		[MODEL, stripQuotes(uach[CH_MODEL])],
-		[PLATFORM, stripQuotes(uach[CH_PLATFORM])],
-		[PLATFORMVER, stripQuotes(uach[CH_PLATFORM_VER])],
-		[ARCHITECTURE, stripQuotes(uach[CH_ARCH])],
-		[FORMFACTORS, itemListToArray(uach[CH_FORM_FACTORS])],
-		[BITNESS, stripQuotes(uach[CH_BITNESS])]
-	]);
-	else for (var prop in uach) if (this.hasOwnProperty(prop) && typeof uach[prop] !== TYPEOF.UNDEFINED) this[prop] = uach[prop];
-}
-function UAItem(itemType, ua, rgxMap, uaCH) {
-	setProps.call(this, [
-		["itemType", itemType],
-		["ua", ua],
-		["uaCH", uaCH],
-		["rgxMap", rgxMap],
-		["data", createIData(this, itemType)]
-	]);
-	return this;
-}
-UAItem.prototype.get = function(prop) {
-	if (!prop) return this.data;
-	return this.data.hasOwnProperty(prop) ? this.data[prop] : void 0;
-};
-UAItem.prototype.set = function(prop, val) {
-	this.data[prop] = val;
-	return this;
-};
-UAItem.prototype.setCH = function(ch) {
-	this.uaCH = ch;
-	return this;
-};
-UAItem.prototype.detectFeature = function() {
-	if (NAVIGATOR && NAVIGATOR.userAgent == this.ua) switch (this.itemType) {
-		case BROWSER:
-			if (NAVIGATOR.brave && typeof NAVIGATOR.brave.isBrave == TYPEOF.FUNCTION) this.set(NAME, "Brave");
-			break;
-		case DEVICE:
-			if (!this.get(TYPE) && NAVIGATOR_UADATA && NAVIGATOR_UADATA[MOBILE]) this.set(TYPE, MOBILE);
-			if (this.get(MODEL) == "Macintosh" && NAVIGATOR && typeof NAVIGATOR.standalone !== TYPEOF.UNDEFINED && NAVIGATOR.maxTouchPoints && NAVIGATOR.maxTouchPoints > 2) this.set(MODEL, "iPad").set(TYPE, TABLET);
-			break;
-		case OS:
-			if (!this.get(NAME) && NAVIGATOR_UADATA && NAVIGATOR_UADATA[PLATFORM]) this.set(NAME, NAVIGATOR_UADATA[PLATFORM]);
-			break;
-		case RESULT:
-			var data = this.data;
-			var detect = function(itemType) {
-				return data[itemType].getItem().detectFeature().get();
-			};
-			this.set(BROWSER, detect(BROWSER)).set(CPU, detect(CPU)).set(DEVICE, detect(DEVICE)).set(ENGINE, detect(ENGINE)).set(OS, detect(OS));
-	}
-	return this;
-};
-UAItem.prototype.parseUA = function() {
-	if (this.itemType != RESULT) rgxMapper.call(this.data, this.ua, this.rgxMap);
-	switch (this.itemType) {
-		case BROWSER:
-			this.set(MAJOR, majorize(this.get(VERSION)));
-			break;
-		case OS:
-			if (this.get(NAME) == "iOS" && this.get(VERSION) == "18.6") {
-				var realVersion = /\) Version\/([\d\.]+)/.exec(this.ua);
-				if (realVersion && parseInt(realVersion[1].substring(0, 2), 10) >= 26) this.set(VERSION, realVersion[1]);
-			}
-			break;
-	}
-	return this;
-};
-UAItem.prototype.parseCH = function() {
-	var uaCH = this.uaCH, rgxMap = this.rgxMap;
-	switch (this.itemType) {
-		case BROWSER:
-		case ENGINE:
-			var brands = uaCH[FULLVERLIST] || uaCH[BRANDS], prevName;
-			if (brands) for (var i = 0; i < brands.length; i++) {
-				var brandName = brands[i].brand || brands[i], brandVersion = brands[i].version;
-				if (this.itemType == BROWSER && !/not.a.brand/i.test(brandName) && (!prevName || /Chrom/.test(prevName) && brandName != CHROMIUM || prevName == EDGE && /WebView2/.test(brandName))) {
-					brandName = strMapper(brandName, browserHintsMap);
-					prevName = this.get(NAME);
-					if (!(prevName && !/Chrom/.test(prevName) && /Chrom/.test(brandName))) this.set(NAME, brandName).set(VERSION, brandVersion).set(MAJOR, majorize(brandVersion));
-					prevName = brandName;
-				}
-				if (this.itemType == ENGINE && brandName == CHROMIUM) this.set(VERSION, brandVersion);
-			}
-			break;
-		case CPU:
-			var archName = uaCH[ARCHITECTURE];
-			if (archName) {
-				if (archName && uaCH[BITNESS] == "64") archName += "64";
-				rgxMapper.call(this.data, archName + ";", rgxMap);
-			}
-			break;
-		case DEVICE:
-			if (uaCH[MOBILE]) this.set(TYPE, MOBILE);
-			if (uaCH[MODEL]) {
-				this.set(MODEL, uaCH[MODEL]);
-				if (!this.get(TYPE) || !this.get(VENDOR)) {
-					var reParse = {};
-					rgxMapper.call(reParse, "droid 9; " + uaCH[MODEL] + ")", rgxMap);
-					if (!this.get(TYPE) && !!reParse.type) this.set(TYPE, reParse.type);
-					if (!this.get(VENDOR) && !!reParse.vendor) this.set(VENDOR, reParse.vendor);
-				}
-			}
-			if (uaCH[FORMFACTORS]) {
-				var ff;
-				if (typeof uaCH[FORMFACTORS] !== "string") {
-					var idx = 0;
-					while (!ff && idx < uaCH[FORMFACTORS].length) ff = strMapper(uaCH[FORMFACTORS][idx++], formFactorsMap);
-				} else ff = strMapper(uaCH[FORMFACTORS], formFactorsMap);
-				this.set(TYPE, ff);
-			}
-			break;
-		case OS:
-			var osName = uaCH[PLATFORM];
-			if (osName) {
-				var osVersion = uaCH[PLATFORMVER];
-				if (osName == WINDOWS) osVersion = parseInt(majorize(osVersion), 10) >= 13 ? "11" : "10";
-				this.set(NAME, osName).set(VERSION, osVersion);
-			}
-			if (this.get(NAME) == WINDOWS && uaCH[MODEL] == "Xbox") this.set(NAME, "Xbox").set(VERSION, void 0);
-			break;
-		case RESULT:
-			var data = this.data;
-			var parse = function(itemType) {
-				return data[itemType].getItem().setCH(uaCH).parseCH().get();
-			};
-			this.set(BROWSER, parse(BROWSER)).set(CPU, parse(CPU)).set(DEVICE, parse(DEVICE)).set(ENGINE, parse(ENGINE)).set(OS, parse(OS));
-	}
-	return this;
-};
-function UAParser(ua, extensions, headers) {
-	if (typeof ua === TYPEOF.OBJECT) {
-		if (isExtensions(ua, true)) {
-			if (typeof extensions === TYPEOF.OBJECT) headers = extensions;
-			extensions = ua;
-		} else {
-			headers = ua;
-			extensions = void 0;
-		}
-		ua = void 0;
-	} else if (typeof ua === TYPEOF.STRING && !isExtensions(extensions, true)) {
-		headers = extensions;
-		extensions = void 0;
-	}
-	if (headers) if (typeof headers.append === TYPEOF.FUNCTION) {
-		var kv = {};
-		headers.forEach(function(v, k) {
-			kv[String(k).toLowerCase()] = v;
-		});
-		headers = kv;
-	} else {
-		var normalized = {};
-		for (var header in headers) if (headers.hasOwnProperty(header)) normalized[String(header).toLowerCase()] = headers[header];
-		headers = normalized;
-	}
-	if (!(this instanceof UAParser)) return new UAParser(ua, extensions, headers).getResult();
-	var userAgent = typeof ua === TYPEOF.STRING ? ua : headers && headers[USER_AGENT] ? headers[USER_AGENT] : NAVIGATOR && NAVIGATOR.userAgent ? NAVIGATOR.userAgent : EMPTY, httpUACH = new UACHData(headers, true), regexMap = extensions ? extend(defaultRegexes, extensions) : defaultRegexes, createItemFunc = function(itemType) {
-		if (itemType == RESULT) return function() {
-			return new UAItem(itemType, userAgent, regexMap, httpUACH).set("ua", userAgent).set(BROWSER, this.getBrowser()).set(CPU, this.getCPU()).set(DEVICE, this.getDevice()).set(ENGINE, this.getEngine()).set(OS, this.getOS()).get();
-		};
-		else return function() {
-			return new UAItem(itemType, userAgent, regexMap[itemType], httpUACH).parseUA().get();
-		};
-	};
-	setProps.call(this, [
-		["getBrowser", createItemFunc(BROWSER)],
-		["getCPU", createItemFunc(CPU)],
-		["getDevice", createItemFunc(DEVICE)],
-		["getEngine", createItemFunc(ENGINE)],
-		["getOS", createItemFunc(OS)],
-		["getResult", createItemFunc(RESULT)],
-		["getUA", function() {
-			return userAgent;
-		}],
-		["setUA", function(ua) {
-			if (isString(ua)) userAgent = trim(ua, UA_MAX_LENGTH);
-			return this;
-		}]
-	]).setUA(userAgent);
-	return this;
-}
-UAParser.VERSION = LIBVERSION;
-UAParser.BROWSER = enumerize([
-	NAME,
-	VERSION,
-	MAJOR,
-	TYPE
-]);
-UAParser.CPU = enumerize([ARCHITECTURE]);
-UAParser.DEVICE = enumerize([
-	MODEL,
-	VENDOR,
-	TYPE,
-	CONSOLE,
-	MOBILE,
-	SMARTTV,
-	TABLET,
-	WEARABLE,
-	EMBEDDED
-]);
-UAParser.ENGINE = UAParser.OS = enumerize([NAME, VERSION]);
-//#endregion
-//#region src/core/console/console.ts
-function getFrameBaseName(frame) {
-	if (!frame) return;
-	return (frame.split("/").pop() ?? frame).replace(/:\d+:\d+$/, "").replace(/\.[^.]+$/, "");
-}
-function removePosition(frame) {
-	if (!frame) return;
-	return frame.replace(/:\d+:\d+$/, "").replace(".js", "");
-}
-function extractWhatIsInParenthesis(line) {
-	const match = line.match(/\(([^)]+)\)/);
-	return match ? match[1] : void 0;
-}
-function cleanStackLine(line) {
-	return line.replace("/Users/pouya/dev/surfy/surfy/dist/server/", "");
-}
-function consoleTraceCode() {
-	const [_first, second, third] = ((/* @__PURE__ */ new Error()).stack?.split("\n") ?? []).filter((line) => line.includes("dist/server/")).map(extractWhatIsInParenthesis).map(cleanStackLine);
-	const secondName = getFrameBaseName(second);
-	const thirdName = removePosition(third);
-	if (secondName || thirdName) console.log("[CODE]", secondName, thirdName);
-}
-//#endregion
-//#region src/front/jup/Components/Frame/PaperFrame.tsx
-function PaperFrame(props) {
-	return /* @__PURE__ */ jsx(Paper, {
-		...props,
-		sx: {
-			m: 2,
-			p: 2,
-			...props.sx
-		},
-		children: props.children
-	});
-}
-//#endregion
-//#region node_modules/.pnpm/jotai@2.19.1_@babel+core@7.29.0_@babel+template@7.28.6_@types+react@18.3.1_react@18.3.1/node_modules/jotai/esm/vanilla/utils.mjs
-var RESET = /* @__PURE__ */ Symbol("");
-var isPromiseLike$2 = (x) => typeof (x == null ? void 0 : x.then) === "function";
-function createJSONStorage(getStringStorage = () => {
-	try {
-		return window.localStorage;
-	} catch (e) {
-		return;
-	}
-}, options) {
-	var _a;
-	let lastStr;
-	let lastValue;
-	const storage = {
-		getItem: (key, initialValue) => {
-			var _a2, _b;
-			const parse = (str2) => {
-				str2 = str2 || "";
-				if (lastStr !== str2) {
-					try {
-						lastValue = JSON.parse(str2, options == null ? void 0 : options.reviver);
-					} catch (e) {
-						return initialValue;
-					}
-					lastStr = str2;
-				}
-				return lastValue;
-			};
-			const str = (_b = (_a2 = getStringStorage()) == null ? void 0 : _a2.getItem(key)) != null ? _b : null;
-			if (isPromiseLike$2(str)) return str.then(parse);
-			return parse(str);
-		},
-		setItem: (key, newValue) => {
-			var _a2;
-			return (_a2 = getStringStorage()) == null ? void 0 : _a2.setItem(key, JSON.stringify(newValue, options == null ? void 0 : options.replacer));
-		},
-		removeItem: (key) => {
-			var _a2;
-			return (_a2 = getStringStorage()) == null ? void 0 : _a2.removeItem(key);
-		}
-	};
-	const createHandleSubscribe = (subscriber2) => (key, callback, initialValue) => subscriber2(key, (v) => {
-		let newValue;
-		try {
-			newValue = JSON.parse(v || "");
-		} catch (e) {
-			newValue = initialValue;
-		}
-		callback(newValue);
-	});
-	let subscriber;
-	try {
-		subscriber = (_a = getStringStorage()) == null ? void 0 : _a.subscribe;
-	} catch (e) {}
-	if (!subscriber && typeof window !== "undefined" && typeof window.addEventListener === "function" && window.Storage) subscriber = (key, callback) => {
-		if (!(getStringStorage() instanceof window.Storage)) return () => {};
-		const storageEventCallback = (e) => {
-			if (e.storageArea === getStringStorage() && e.key === key) callback(e.newValue);
-		};
-		window.addEventListener("storage", storageEventCallback);
-		return () => {
-			window.removeEventListener("storage", storageEventCallback);
-		};
-	};
-	if (subscriber) storage.subscribe = createHandleSubscribe(subscriber);
-	return storage;
-}
-var defaultStorage = createJSONStorage();
-function atomWithStorage(key, initialValue, storage = defaultStorage, options) {
-	const baseAtom = atom((options == null ? void 0 : options.getOnInit) ? storage.getItem(key, initialValue) : initialValue);
-	baseAtom.onMount = (setAtom) => {
-		var _a;
-		setAtom(storage.getItem(key, initialValue));
-		return (_a = storage.subscribe) == null ? void 0 : _a.call(storage, key, setAtom, initialValue);
-	};
-	return atom((get) => get(baseAtom), (get, set, update) => {
-		const nextValue = typeof update === "function" ? update(get(baseAtom)) : update;
-		if (nextValue === RESET) {
-			set(baseAtom, initialValue);
-			return storage.removeItem(key);
-		}
-		if (isPromiseLike$2(nextValue)) return nextValue.then((resolvedValue) => {
-			set(baseAtom, resolvedValue);
-			return storage.setItem(key, resolvedValue);
-		});
-		set(baseAtom, nextValue);
-		return storage.setItem(key, nextValue);
-	});
-}
-//#endregion
-//#region node_modules/.pnpm/jotai-family@1.0.1_jotai@2.19.1_@babel+core@7.29.0_@babel+template@7.28.6_@types+react@18.3.1_react@18.3.1_/node_modules/jotai-family/dist/atomFamily.js
-function atomFamily(initializeAtom, areEqual) {
-	let shouldRemove = null;
-	const atoms = /* @__PURE__ */ new Map();
-	const listeners = /* @__PURE__ */ new Set();
-	function createAtom(param) {
-		let item;
-		if (areEqual === void 0) item = atoms.get(param);
-		else for (const [key, value] of atoms) if (areEqual(key, param)) {
-			item = value;
-			break;
-		}
-		if (item !== void 0) if (shouldRemove?.(item[1], param)) createAtom.remove(param);
-		else return item[0];
-		const newAtom = initializeAtom(param);
-		atoms.set(param, [newAtom, Date.now()]);
-		notifyListeners("CREATE", param, newAtom);
-		return newAtom;
-	}
-	function notifyListeners(type, param, atom) {
-		for (const listener of listeners) listener({
-			type,
-			param,
-			atom
-		});
-	}
-	createAtom.unstable_listen = (callback) => {
-		listeners.add(callback);
-		return () => {
-			listeners.delete(callback);
-		};
-	};
-	createAtom.getParams = () => atoms.keys();
-	createAtom.remove = (param) => {
-		if (areEqual === void 0) {
-			if (!atoms.has(param)) return;
-			const [atom] = atoms.get(param);
-			atoms.delete(param);
-			notifyListeners("REMOVE", param, atom);
-		} else for (const [key, [atom]] of atoms) if (areEqual(key, param)) {
-			atoms.delete(key);
-			notifyListeners("REMOVE", key, atom);
-			break;
-		}
-	};
-	createAtom.setShouldRemove = (fn) => {
-		shouldRemove = fn;
-		if (!shouldRemove) return;
-		for (const [key, [atom, createdAt]] of atoms) if (shouldRemove(createdAt, key)) {
-			atoms.delete(key);
-			notifyListeners("REMOVE", key, atom);
-		}
-	};
-	return createAtom;
-}
-//#endregion
-//#region src/front/jup/Map/jotai/recoilCompatibleStorage.ts
-/** Recoil `atomFamily` persisted keys use `${key}__${JSON.stringify(param)}`. */
-function recoilFamilyStorageKey(recoilBaseKey, param) {
-	return `${recoilBaseKey}__${JSON.stringify(param)}`;
-}
-/** JSON sync storage compatible with Recoil `localStorageEffect` keys. */
-function createRecoilFamilyJsonStorage(recoilBaseKey, workCanvasId) {
-	const key = recoilFamilyStorageKey(recoilBaseKey, workCanvasId);
-	return {
-		getItem: (storedKey, initial) => {
-			const ls = getLocalStorage();
-			if (!ls) return initial;
-			const raw = ls.getItem(key);
-			if (raw == null) return initial;
-			try {
-				return JSON.parse(raw);
-			} catch {
-				return initial;
-			}
-		},
-		setItem: (_storedKey, value) => {
-			const ls = getLocalStorage();
-			if (!ls) return;
-			if (value === void 0) ls.removeItem(key);
-			else ls.setItem(key, JSON.stringify(value));
-		},
-		removeItem: () => {
-			getLocalStorage()?.removeItem(key);
-		}
-	};
-}
-function createRecoilFamilyJsonStorageOrMemory(recoilBaseKey, workCanvasId) {
-	if (getLocalStorage()) return createRecoilFamilyJsonStorage(recoilBaseKey, workCanvasId);
-	const key = recoilFamilyStorageKey(recoilBaseKey, workCanvasId);
-	const cache = {};
-	return {
-		getItem: (_k, initial) => {
-			if (!(key in cache)) return initial;
-			try {
-				return JSON.parse(cache[key]);
-			} catch {
-				return initial;
-			}
-		},
-		setItem: (_k, value) => {
-			if (value === void 0) delete cache[key];
-			else cache[key] = JSON.stringify(value);
-		},
-		removeItem: () => {
-			delete cache[key];
-		}
-	};
-}
-atomFamily((_companyName) => atom(void 0));
-atom(null);
-atomFamily((_workCanvasId) => atom(void 0));
-atomFamily((_workCanvasId) => atom(void 0));
-atomFamily((_workCanvasId) => atom(void 0));
-atomFamily((_workCanvasId) => atom(void 0));
-atomFamily((workCanvasId) => atomWithStorage(`displayCenterPathAtomFamily:${workCanvasId}`, false, createRecoilFamilyJsonStorageOrMemory("displayCenterPathAtomFamily", workCanvasId), { getOnInit: true }));
-atomFamily((workCanvasId) => atomWithStorage(`displayGridNodeFurnituresBboxAtomFamily:${workCanvasId}`, false, createRecoilFamilyJsonStorageOrMemory("displayGridNodeFurnituresBboxAtomFamily", workCanvasId), { getOnInit: true }));
-atomFamily((workCanvasId) => atomWithStorage(`enableHoverPathfindingAtomFamily:${workCanvasId}`, false, createRecoilFamilyJsonStorageOrMemory("enableHoverPathfindingAtomFamily", workCanvasId), { getOnInit: true }));
-//#endregion
-//#region src/front/jup/Components/Tooltips/HelpTooltip.tsx
-consoleTraceCode();
-var defaultHelpTooltipStyle = {
-	backgroundColor: "transparent",
-	padding: 0,
-	fontSize: 14
-};
-var HelpTooltipStyled$1 = styled(({ className, ...props }) => /* @__PURE__ */ jsx(Tooltip, {
-	...props,
-	classes: { popper: className }
-}))(() => ({ [`& .${tooltipClasses.tooltip}`]: defaultHelpTooltipStyle }));
-function HelpTooltip(props) {
-	const { title, children } = props;
-	if (!title) return children;
-	const content = /* @__PURE__ */ jsx(PaperFrame, { children: title });
-	return /* @__PURE__ */ jsx(HelpTooltipStyled$1, {
-		slots: { transition: Fade },
-		disableInteractive: true,
-		...props,
-		title: content,
-		children
-	});
-}
-//#endregion
 //#region src/front/jup/Entities/ViewTabs/helper.ts
 function getListViewPath(objectTypeName, path) {
 	return `/views/i/${getObjectTypeDefinitionByName(objectTypeName).name}/${path}`;
@@ -71858,6 +70076,17 @@ function getIndexViewPathIncludingDataQuality(objectTypeName, view) {
 	return null;
 }
 //#endregion
+//#region src/surfy-help/components/MetaModel/HelpTooltipStyled.tsx
+var HelpTooltipStyled = styled(({ className, ...props }) => /* @__PURE__ */ jsx(Tooltip, {
+	...props,
+	classes: { popper: className }
+}))(() => ({ [`& .${tooltipClasses.tooltip}`]: {
+	backgroundColor: "transparent",
+	maxWidth: 600,
+	minWidth: 600,
+	fontSize: 14
+} }));
+//#endregion
 //#region src/surfy-help/views/SurfyHelpLinkToIndexView.tsx
 function ErrorMessage(props) {
 	const { message } = props;
@@ -71881,36 +70110,40 @@ function SurfyHelpLinkToIndexView(props) {
 	if (!view) return /* @__PURE__ */ jsx(ErrorMessage, { message: `View not found ${objectTypeName} ${viewName}` });
 	const viewUrl = getIndexViewPathIncludingDataQuality(objectTypeName, view);
 	const url = viewUrl ? `https://${host ?? "app.surfy.pro"}/?redirectToView=${encodeURIComponent(viewUrl)}` : "#";
-	return /* @__PURE__ */ jsx(HelpTooltip, {
-		title: /* @__PURE__ */ jsxs(Box, {
-			sx: {
-				display: "flex",
-				flexDirection: "column",
-				alignItems: "flex-start"
-			},
-			children: [
-				/* @__PURE__ */ jsx(Typography, {
-					variant: "h6",
-					sx: { mb: 1 },
-					children: /* @__PURE__ */ jsx(ObjectTypeViewLabel, {
+	return /* @__PURE__ */ jsx(HelpTooltipStyled, {
+		title: /* @__PURE__ */ jsx(Paper, {
+			sx: { p: 2 },
+			children: /* @__PURE__ */ jsxs(Box, {
+				sx: {
+					display: "flex",
+					flexDirection: "column",
+					alignItems: "flex-start"
+				},
+				children: [
+					/* @__PURE__ */ jsx(Typography, {
+						variant: "h5",
+						component: "h2",
+						sx: { mb: 1 },
+						children: /* @__PURE__ */ jsx(ObjectTypeViewLabel, {
+							objectTypeName,
+							viewName,
+							isDefaultView: view.isDefaultView
+						})
+					}),
+					/* @__PURE__ */ jsx(ObjectTypeIndexViewHelp, {
 						objectTypeName,
-						viewName,
-						isDefaultView: view.isDefaultView
+						view
+					}),
+					/* @__PURE__ */ jsx(MenuBreadcrumb, {
+						sx: { mt: 1 },
+						children: /* @__PURE__ */ jsx(StandaloneIndexViewMenuPathBreadcrumb, {
+							objectTypeName,
+							viewName: view.name,
+							sx: { mt: 2 }
+						})
 					})
-				}),
-				/* @__PURE__ */ jsx(ObjectTypeIndexViewHelp, {
-					objectTypeName,
-					view
-				}),
-				/* @__PURE__ */ jsx(MenuBreadcrumb, {
-					sx: { mt: 1 },
-					children: /* @__PURE__ */ jsx(StandaloneIndexViewMenuPathBreadcrumb, {
-						objectTypeName,
-						viewName: view.name,
-						sx: { mt: 2 }
-					})
-				})
-			]
+				]
+			})
 		}),
 		children: /* @__PURE__ */ jsx("a", {
 			href: url,
@@ -90286,7 +88519,7 @@ var useUtilityClasses = (ownerState) => {
 		variant === "elevation" && `elevation${elevation}`
 	] }, getPaperUtilityClass, classes);
 };
-var PaperRoot = styled$1("div", {
+var PaperRoot = styled("div", {
 	name: "MuiPaper",
 	slot: "Root",
 	overridesResolver: (props, styles) => {
@@ -90378,17 +88611,6 @@ process.env.NODE_ENV !== "production" && (Paper$1.propTypes = {
 	variant: import_prop_types.default.oneOfType([import_prop_types.default.oneOf(["elevation", "outlined"]), import_prop_types.default.string])
 });
 //#endregion
-//#region src/surfy-help/components/MetaModel/HelpTooltipStyled.tsx
-var HelpTooltipStyled = styled$1(({ className, ...props }) => /* @__PURE__ */ jsx(Tooltip, {
-	...props,
-	classes: { popper: className }
-}))(() => ({ [`& .${tooltipClasses.tooltip}`]: {
-	backgroundColor: "transparent",
-	maxWidth: 500,
-	minWidth: 500,
-	fontSize: 14
-} }));
-//#endregion
 //#region src/surfy-help/utils/documentionStyle.ts
 function toDocumentationLinkString(text) {
 	return toKebabCase(text);
@@ -90417,7 +88639,12 @@ function SurfyHelpObjectType(props) {
 						justifyContent: "flex-start",
 						alignItems: "flex-start"
 					},
-					children: /* @__PURE__ */ jsx("h2", { children: label })
+					children: /* @__PURE__ */ jsx(Typography, {
+						variant: "h5",
+						component: "h2",
+						sx: { mb: 1 },
+						children: label
+					})
 				}),
 				description ? /* @__PURE__ */ jsx(Box$1, { children: description }) : null,
 				/* @__PURE__ */ jsx(ObjectTypeMenuBreadcrumb, {
@@ -90454,7 +88681,12 @@ function SurfyHelpPropertyType(props) {
 						justifyContent: "center",
 						alignItems: "flex-start"
 					},
-					children: [/* @__PURE__ */ jsx("h2", { children: /* @__PURE__ */ jsx(PropertyTypeLabel, { propertyType }) }), /* @__PURE__ */ jsx(Box, {
+					children: [/* @__PURE__ */ jsx(Typography, {
+						variant: "h5",
+						component: "h2",
+						sx: { mb: 1 },
+						children: /* @__PURE__ */ jsx(PropertyTypeLabel, { propertyType })
+					}), /* @__PURE__ */ jsx(Box, {
 						style: {
 							flexGrow: 1,
 							display: "flex",
