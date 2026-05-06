@@ -17,9 +17,9 @@ Un véhicule peut être associé à plusieurs personnes, et une personne peut ê
  -  cliquer sur "Collaborateurs", "Véhicules", "Véhicules" puis "Créer un véhicule"
  -  renseigner :
     -  le type de véhicule (Voiture, moto, vélo,...),
-    -  le type de propulsion (Hybride, gaz, essence, électrique,...),
+    -  le type de propulsion (Thermique, Hybride, Electrique,...),
     -  si le véhicule appartient à la flotte de l'entreprise,
-    -  l'immatriculation
+    -  l'immatriculation en option
 -  valider la création.
 
 ## Association de véhicule à personne

@@ -45,7 +45,7 @@ Pour configurer les équipements consultables, depuis le menu de gauche,
 -   sauvegarder les modifications
 -   rafraichir la page (F5)
 
-Les équipements correspondants sont visibles dans chaque espace lors de la consultation des espaces de réunion.
+Les équipements de la famille configurée et présents dans l'espace sont visibles pour chaque espace lors de la consultation des espaces de réunion.
 
 ## Configuration des espaces réservables
 
