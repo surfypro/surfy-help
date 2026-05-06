@@ -1,0 +1,5 @@
+# Netlify redirects for Docusaurus static pages.
+# Keep only specific redirects here.
+# Do NOT add a catch-all rewrite such as:
+#   /* /index.html 200
+# because it bypasses pre-generated HTML pages.
