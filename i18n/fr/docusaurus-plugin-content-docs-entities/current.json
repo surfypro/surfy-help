@@ -147,6 +147,10 @@
     "message": "Modèle de sécurité",
     "description": "The label for category 'security-model' in sidebar 'help-sidebar'"
   },
+  "sidebar.help-sidebar.category.parking-booking": {
+    "message": "Réservation de parking",
+    "description": "The label for category 'parking-booking' in sidebar 'help-sidebar'"
+  },
   "version.label": {
     "message": "Next",
     "description": "The label for version current"

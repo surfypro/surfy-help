@@ -234,5 +234,9 @@
   "sidebar.help-sidebar.category.booking-system": {
     "message": "Booking system",
     "description": "The label for category 'booking-system' in sidebar 'help-sidebar'"
+  },
+  "sidebar.help-sidebar.category.parking-booking": {
+    "message": "Parking booking",
+    "description": "The label for category 'parking-booking' in sidebar 'help-sidebar'"
   }
 }

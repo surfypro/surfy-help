@@ -1,7 +1,3 @@
----
-slug: /entities/user-guide/booking/enable-building-booking-when-all-dimensions-are-crowded
----
-
 # Fonctionnalité de réservation par bâtiment quand toutes les dimensions sont surchargées
 
 ## À quoi sert cette fonctionnalité ?

@@ -10,11 +10,9 @@ Ce guide décrit le comportement quand <P code="userRegistrationTenantRule:useOp
 
 ## Format attendu dans le JWT
 
-Pour être pris en compte, les valeurs doivent être présentes dans le token JWT, dans :
+Pour être pris en compte (support officiel actuel), les valeurs doivent être présentes dans le token JWT au format :
 
-- `roles: ["..."]` (format recommandé).
-- ou `role: ["..."]`.
-- ou `roles: "valeur1 valeur2"` (valeurs séparées par des espaces).
+- `roles: ["a", "b"]`.
 
 ## Comment former les codes à mettre dans les claims
 

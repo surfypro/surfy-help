@@ -10,11 +10,9 @@ This guide describes behavior when <P code="userRegistrationTenantRule:useOpenId
 
 ## Expected JWT format
 
-To be processed, values must be present in the JWT token in:
+To be processed (current official support), values must be present in the JWT token using:
 
-- `roles: ["..."]` (recommended format).
-- or `role: ["..."]`.
-- or `roles: "value1 value2"` (space-separated values).
+- `roles: ["a", "b"]`.
 
 ## How to format role codes in claims
 

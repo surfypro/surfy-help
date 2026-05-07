@@ -1,7 +1,3 @@
----
-slug: /entities/user-guide/booking/enable-building-booking-when-all-dimensions-are-crowded
----
-
 # Enable Building Booking When All Dimensions Are Crowded Feature
 
 ## What is this feature for?

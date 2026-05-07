@@ -1,7 +1,3 @@
----
-slug: /entities/user-guide/booking/calendar-drawer-view-guide
----
-
 # Calendar Drawer View User Guide
 
 ## Overview

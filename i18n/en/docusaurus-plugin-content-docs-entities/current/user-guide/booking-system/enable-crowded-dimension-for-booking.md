@@ -1,7 +1,3 @@
----
-slug: /entities/user-guide/booking/enable-crowded-dimension-for-booking
----
-
 # Enable Crowded Dimension for Booking Feature
 
 ## What is this feature for?

@@ -20,7 +20,9 @@ Lors d’une mise en production, le contenu utile est repris dans la page [Nouve
   - Guide : [Gérer les invités : rôle du « Type de personne »](/entities/user-guide/guest-planning-managing-guests)
 - Mise en place de l’<OT code="personType" /> dans les données de référence et le menu : les personnes peuvent être associées à un type (par exemple invité), visible dans les fiches et les écrans de réservation concernés.
 - Pour les **rôles**, possibilité de **restreindre les scénarios** auxquels un profil a accès, avec textes d’aide mis à jour sur les bâtiments et la gestion des invités.
+  - Guide de configuration : [Restreindre la visibilité des scénarios par rôle](/entities/user-guide/security-model/restrict-scenario-visibility-by-role)
 - **Réservations véhicules et parkings** : évolution de la configuration (liaisons types de véhicules / types d’espaces de parking, règles associées) et de l’administration du planning véhicules pour mieux refléter les règles métier sur le terrain.
+  - Guide : [Réservation de parking : vue d'ensemble](/entities/user-guide/parking-booking)
 - **Import des personnes et des centres de coût depuis Workday** : parcours et synchronisation affinés pour plus de clarté et de fiabilité lors des imports répétés.
 - **Parcours dans l’interface** : fil de navigation (fil d’Ariane) rendu plus lisible sur les écrans concernés.
 
