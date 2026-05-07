@@ -1,3 +1,7 @@
+---
+slug: /entities/user-guide/booking/enable-crowded-dimension-for-booking
+---
+
 # Fonctionnalité de surcharge des dimensions pour la réservation
 
 ## À quoi sert cette fonctionnalité ?

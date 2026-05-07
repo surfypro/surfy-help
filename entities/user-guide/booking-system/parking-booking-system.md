@@ -1,3 +1,7 @@
+---
+slug: /entities/user-guide/booking/parking-booking-system
+---
+
 # Système de réservation de parking
 
 ## Vue d'ensemble

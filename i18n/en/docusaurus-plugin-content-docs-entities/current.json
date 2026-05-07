@@ -230,5 +230,9 @@
   "sidebar.help-sidebar.category.vehicle-planning-admin": {
     "message": "Vehicle scheduling administration",
     "description": "no-description"
+  },
+  "sidebar.help-sidebar.category.booking-system": {
+    "message": "Booking system",
+    "description": "The label for category 'booking-system' in sidebar 'help-sidebar'"
   }
 }

@@ -178,5 +178,9 @@
   "sidebar.help-sidebar.category.person-to-room-booking": {
     "message": "Réservation à l'espace des personnes",
     "description": "The label for the doc item 'person-to-room-booking' in sidebar 'help-sidebar'"
+  },
+  "sidebar.help-sidebar.category.booking-system": {
+    "message": "Système de réservation",
+    "description": "The label for category 'booking-system' in sidebar 'help-sidebar'"
   }
 }

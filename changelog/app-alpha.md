@@ -17,6 +17,7 @@ Lors d’une mise en production, le contenu utile est repris dans la page [Nouve
 - <LIV code="personWorkingLocation:guest-planning" host="app-alpha.surfy.pro" />
   - Nouvelle vue de **planning pour invités** : création et suivi d’invités, choix d’un invité puis accès au planning des postes comme pour une personne habituelle.
   - Panneaux d’invitation et de liste d’invités enrichis pour guider la saisie.
+  - Guide : [Gérer les invités : rôle du « Type de personne »](/entities/user-guide/guest-planning-managing-guests)
 - Mise en place de l’<OT code="personType" /> dans les données de référence et le menu : les personnes peuvent être associées à un type (par exemple invité), visible dans les fiches et les écrans de réservation concernés.
 - Pour les **rôles**, possibilité de **restreindre les scénarios** auxquels un profil a accès, avec textes d’aide mis à jour sur les bâtiments et la gestion des invités.
 - **Réservations véhicules et parkings** : évolution de la configuration (liaisons types de véhicules / types d’espaces de parking, règles associées) et de l’administration du planning véhicules pour mieux refléter les règles métier sur le terrain.
