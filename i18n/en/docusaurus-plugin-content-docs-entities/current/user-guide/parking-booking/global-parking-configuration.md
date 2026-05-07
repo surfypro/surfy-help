@@ -22,6 +22,39 @@ In booking vehicle configuration:
 - define allowed day slots (morning / afternoon / full day);
 - define single booking per day option.
 
+### About `vehicleType:code` values (e.g. `CAR`, `CAR-...`)
+
+Unlike parking room type codes (`PARKING-CAR`, etc.), **vehicle type** codes are not a fixed standard imposed by Surfy: they come from your master data and may vary per tenant.
+
+What Surfy does:
+
+- a vehicle references a vehicle type and a propulsion type (via their IDs);
+- parking compatibility then relies on the **codes** of those master data entries (e.g. `CAR`, `CAR-COMPANY`, etc.) to find the matching booking vehicle configuration.
+
+### Recommended convention for vehicle codes
+
+To keep operations consistent and avoid tenant-to-tenant ambiguity, we recommend:
+
+- `vehicleType:code`:
+  - `CAR`
+  - `CAR-PRM` (PRM vehicle)
+  - `MOTORBIKE`
+  - `BICYCLE`
+- `vehiclePropulsionType:code`:
+  - `THERMAL`
+  - `ELECTRIC`
+  - `HYBRID`
+
+Important:
+
+- this is a **recommendation** (not a hard technical constraint);
+- parking mappings work as long as the same codes are used end-to-end (vehicle master data + booking configuration).
+
+To verify/maintain these codes, refer to the reference pages:
+
+- **Vehicle type**: `/entities/surfy/global-admin/admin-vehicles/vehicle-type`
+- **Vehicle propulsion type**: `/entities/surfy/global-admin/admin-vehicles/vehicle-propulsion-type`
+
 ## 3) Important blocking point
 
 Without valid `BookingVehicleConfigurationToParkingRoomTypeConfiguration` rows, parking spaces are not proposed.

@@ -22,6 +22,39 @@ Dans les configurations de réservation véhicule :
 - définir les créneaux autorisés (matin / après-midi / journée);
 - définir l’option de réservation unique par jour.
 
+### À propos des codes `vehicleType:code` (ex: `CAR`, `CAR-...`)
+
+Contrairement aux codes des types de places parking (`PARKING-CAR`, etc.), les codes de **type de véhicule** ne sont pas une liste “standard” imposée par Surfy : ils proviennent de votre référentiel (master data) et peuvent varier selon les tenants.
+
+Ce que fait Surfy :
+
+- un véhicule est rattaché à un type de véhicule et un type de propulsion (via leurs IDs) ;
+- la compatibilité parking se base ensuite sur les **codes** de ces master data (ex : `CAR`, `CAR-COMPANY`, etc.) pour retrouver la configuration de réservation correspondante.
+
+### Convention recommandée pour les codes véhicule
+
+Pour simplifier l'exploitation et éviter les ambiguïtés entre tenants, nous recommandons :
+
+- `vehicleType:code` :
+  - `CAR`
+  - `CAR-PRM` (véhicule PMR)
+  - `MOTORBIKE`
+  - `BICYCLE`
+- `vehiclePropulsionType:code` :
+  - `THERMAL`
+  - `ELECTRIC`
+  - `HYBRID`
+
+Important :
+
+- cette convention est une **recommandation** (pas une contrainte technique) ;
+- les mappings parking fonctionnent tant que les mêmes codes sont utilisés de bout en bout (master data véhicule + configuration de réservation).
+
+Pour vérifier/maintenir ces codes, référez-vous aux pages de référence :
+
+- **Type de véhicule** : `/entities/surfy/global-admin/admin-vehicles/vehicle-type`
+- **Type de propulsion de véhicule** : `/entities/surfy/global-admin/admin-vehicles/vehicle-propulsion-type`
+
 ## 3) Point bloquant important
 
 Sans lignes `BookingVehicleConfigurationToParkingRoomTypeConfiguration` valides, les places de parking ne sont pas proposées.
