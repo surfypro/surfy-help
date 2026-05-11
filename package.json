@@ -26,23 +26,23 @@
     "@emotion/styled": "11.14.1",
     "@mdx-js/loader": "3.1.1",
     "@mdx-js/react": "3.1.1",
-    "@mui/icons-material": "9.0.0",
-    "@mui/material": "9.0.0",
+    "@mui/icons-material": "9.0.1",
+    "@mui/material": "9.0.1",
     "@types/js-cookie": "3.0.6",
     "@types/react-copy-to-clipboard": "5.0.7",
     "babel-loader": "10.1.1",
     "clsx": "2.1.1",
-    "jotai": "2.19.1",
+    "jotai": "2.20.0",
     "jotai-family": "1.0.1",
     "js-cookie": "3.0.5",
     "pluralize": "8.0.0",
-    "pnpm": "10.33.0",
+    "pnpm": "11.1.0",
     "prism-react-renderer": "2.4.1",
-    "react": "19.2.5",
+    "react": "19.2.6",
     "react-copy-to-clipboard": "5.1.1",
-    "react-dom": "19.2.5",
-    "react-router": "7.14.0",
-    "react-router-dom": "7.14.0",
+    "react-dom": "19.2.6",
+    "react-router": "7.15.0",
+    "react-router-dom": "7.15.0",
     "recoil": "0.7.7"
   },
   "devDependencies": {
@@ -54,7 +54,7 @@
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "cross-env": "10.1.0",
-    "typescript": "6.0.2"
+    "typescript": "6.0.3"
   },
   "browserslist": {
     "production": [

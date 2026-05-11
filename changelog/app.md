@@ -4,6 +4,20 @@ sidebar_position: 1
 
 # Nouveautés
 
+## 11 Mai 2026 - v3.4.194
+
+- <LIV code="personWorkingLocation:guest-planning" />
+  - Nouvelle vue de **planning pour invités** : création et suivi d’invités, choix d’un invité puis accès au planning des postes comme pour une personne habituelle.
+  - Panneaux d’invitation et de liste d’invités enrichis pour guider la saisie.
+  - Guide : [Gérer les invités : rôle du « Type de personne »](/entities/user-guide/guest-planning-managing-guests)
+- Mise en place de l’<OT code="personType" /> dans les données de référence et le menu : les personnes peuvent être associées à un type, visible dans les fiches et les écrans de réservation concernés.
+- Pour les **rôles**, possibilité de **restreindre les scénarios** auxquels un profil a accès, avec textes d’aide mis à jour sur les bâtiments et la gestion des invités.
+  - Guide de configuration : [Restreindre la visibilité des scénarios par rôle](/entities/user-guide/security-model/restrict-scenario-visibility-by-role)
+- **Réservations véhicules et parkings** : évolution de la configuration (liaisons types de véhicules / types d’espaces de parking, règles associées) et de l’administration du planning véhicules pour mieux refléter les règles métier sur le terrain.
+  - Guide : [Réservation de parking : vue d'ensemble](/entities/user-guide/parking-booking)
+- **Import des personnes et des centres de coût depuis Workday** : parcours et synchronisation affinés pour plus de clarté et de fiabilité lors des imports répétés.
+- **Parcours dans l’interface** : fil de navigation rendu plus lisible sur les écrans concernés.
+
 ## 19 Avril 2026 - v3.4.186
 
 - Dans les options d'affichage des personnes affectées aux postes de travail sur le plan, il est désormais possible d'afficher les propriétés <P code="person:personState" />, <P code="person:email" />, <P code="person:monitorReference" />, <P code="person:computerReference" />, <P code="person:cellphone" />, <P code="person:telephone" />, <P code="person:title" />, <P code="person:badgeNumber" />, <P code="person:boxNumber" />, <P code="person:badgeRestaurant" /> et <P code="person:registrationNumber" />.

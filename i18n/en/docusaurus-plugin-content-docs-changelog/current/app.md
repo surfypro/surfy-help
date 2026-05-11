@@ -1,5 +1,19 @@
 # What's New
 
+## May 11, 2026 - v3.4.194
+
+- <LIV code="personWorkingLocation:guest-planning" />
+  - New **guest planning** view: create and track guests, select a guest, then access desk planning as for a regular person.
+  - Improved invitation and guest list panels to make data entry clearer.
+  - Guide: [Managing guests: role of the “Person type”](/entities/user-guide/guest-planning-managing-guests)
+- Added <OT code="personType" /> to reference data and the menu: people can now be associated with a type, visible in records and related booking screens.
+- For **roles**, it is now possible to **restrict scenarios** a profile can access, with updated help texts on buildings and guest management.
+  - Configuration guide: [Restrict scenario visibility by role](/entities/user-guide/security-model/restrict-scenario-visibility-by-role)
+- **Vehicle and parking bookings**: configuration has evolved (vehicle type / parking space type links and related rules), with vehicle planning administration better aligned with operational rules.
+  - Guide: [Parking booking overview](/entities/user-guide/parking-booking)
+- **Workday person and cost center import**: improved flow and synchronization for clearer, more reliable repeated imports.
+- **Interface navigation**: breadcrumbs are now easier to read on the relevant screens.
+
 ## January 4, 2026 - v3.4.147
 
 - The role matrix now groups object types following the menu organization.
