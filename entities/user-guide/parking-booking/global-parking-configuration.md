@@ -52,8 +52,8 @@ Important :
 
 Pour vérifier/maintenir ces codes, référez-vous aux pages de référence :
 
-- **Type de véhicule** : `/entities/surfy/global-admin/admin-vehicles/vehicle-type`
-- **Type de propulsion de véhicule** : `/entities/surfy/global-admin/admin-vehicles/vehicle-propulsion-type`
+- **Type de véhicule** : [Documentation](/entities/surfy/global-admin/admin-vehicles/vehicle-type)
+- **Type de propulsion de véhicule** : [Documentation](/entities/surfy/global-admin/admin-vehicles/vehicle-propulsion-type)
 
 ## 3) Point bloquant important
 
