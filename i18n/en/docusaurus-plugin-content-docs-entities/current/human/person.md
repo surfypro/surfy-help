@@ -162,6 +162,13 @@ The title of the person
 *Technical name:* ```title```
 <PH code="person:title"/>
 
+### Workflow {#workflow}
+
+Information about the workflow steps associated with this person
+
+*Technical name:* ```workflow```
+<PH code="person:workflow"/>
+
     
 
 ## Associated entities (unique) {#properties-belongs-to}

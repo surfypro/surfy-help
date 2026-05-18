@@ -12,7 +12,7 @@ var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
 var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __commonJSMin = (cb, mod) => () => (mod || cb((mod = { exports: {} }).exports, mod), mod.exports);
+var __commonJSMin = (cb, mod) => () => (mod || (cb((mod = { exports: {} }).exports, mod), cb = null), mod.exports);
 var __copyProps = (to, from, except, desc) => {
 	if (from && typeof from === "object" || typeof from === "function") for (var keys = __getOwnPropNames(from), i = 0, n = keys.length, key; i < n; i++) {
 		key = keys[i];
@@ -32,7 +32,7 @@ var __require = /* @__PURE__ */ ((x) => typeof require !== "undefined" ? require
 	throw Error("Calling `require` for \"" + x + "\" in an environment that doesn't expose the `require` function. See https://rolldown.rs/in-depth/bundling-cjs#require-external-modules for more details.");
 });
 //#endregion
-//#region node_modules/.pnpm/react-is@19.2.5/node_modules/react-is/cjs/react-is.production.js
+//#region node_modules/.pnpm/react-is@19.2.6/node_modules/react-is/cjs/react-is.production.js
 /**
 * @license React
 * react-is.production.js
@@ -122,7 +122,7 @@ var require_react_is_production = /* @__PURE__ */ __commonJSMin(((exports) => {
 	exports.typeOf = typeOf;
 }));
 //#endregion
-//#region node_modules/.pnpm/react-is@19.2.5/node_modules/react-is/cjs/react-is.development.js
+//#region node_modules/.pnpm/react-is@19.2.6/node_modules/react-is/cjs/react-is.development.js
 /**
 * @license React
 * react-is.development.js
@@ -214,7 +214,7 @@ var require_react_is_development$1 = /* @__PURE__ */ __commonJSMin(((exports) =>
 	})();
 }));
 //#endregion
-//#region node_modules/.pnpm/react-is@19.2.5/node_modules/react-is/index.js
+//#region node_modules/.pnpm/react-is@19.2.6/node_modules/react-is/index.js
 var require_react_is$1 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	if (process.env.NODE_ENV === "production") module.exports = require_react_is_production();
 	else module.exports = require_react_is_development$1();
@@ -1082,7 +1082,7 @@ function clsx() {
 	return n;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/integerPropType/integerPropType.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/integerPropType/integerPropType.mjs
 function getTypeByValue(value) {
 	const valueType = typeof value;
 	switch (valueType) {
@@ -1116,7 +1116,7 @@ validator.isRequired = requiredInteger;
 validatorNoop.isRequired = validatorNoop;
 var integerPropType = process.env.NODE_ENV === "production" ? validatorNoop : validator;
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/composeClasses/composeClasses.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/composeClasses/composeClasses.mjs
 /**
 * Compose classes from multiple sources.
 *
@@ -1164,7 +1164,7 @@ function composeClasses(slots, getUtilityClass, classes = void 0) {
 	return output;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/useForkRef/useForkRef.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/useForkRef/useForkRef.mjs
 /**
 * Merges refs into a single memoized callback ref or `null`.
 *
@@ -1213,7 +1213,7 @@ function useForkRef(...refs) {
 	}, refs);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/isHostComponent/isHostComponent.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/isHostComponent/isHostComponent.mjs
 /**
 * Determines if a given element is a DOM element name (i.e. not a React component).
 */
@@ -1221,7 +1221,7 @@ function isHostComponent(element) {
 	return typeof element === "string";
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/appendOwnerState/appendOwnerState.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/appendOwnerState/appendOwnerState.mjs
 /**
 * Type of the ownerState based on the type of an element it applies to.
 * This resolves to the provided OwnerState for React components and `undefined` for host components.
@@ -1245,24 +1245,27 @@ function appendOwnerState(elementType, otherProps, ownerState) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/extractEventHandlers/extractEventHandlers.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/isEventHandler/isEventHandler.mjs
+function isEventHandler(key, value) {
+	const thirdCharCode = key.charCodeAt(2);
+	return key[0] === "o" && key[1] === "n" && thirdCharCode >= 65 && thirdCharCode <= 90 && typeof value === "function";
+}
+//#endregion
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/extractEventHandlers/extractEventHandlers.mjs
 /**
 * Extracts event handlers from a given object.
 * A prop is considered an event handler if it is a function and its name starts with `on`.
 *
 * @param object An object to extract event handlers from.
-* @param excludeKeys An array of keys to exclude from the returned object.
 */
-function extractEventHandlers(object, excludeKeys = []) {
+function extractEventHandlers(object) {
 	if (object === void 0) return {};
 	const result = {};
-	Object.keys(object).filter((prop) => prop.match(/^on[A-Z]/) && typeof object[prop] === "function" && !excludeKeys.includes(prop)).forEach((prop) => {
-		result[prop] = object[prop];
-	});
+	for (const prop of Object.keys(object)) if (isEventHandler(prop, object[prop])) result[prop] = object[prop];
 	return result;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/omitEventHandlers/omitEventHandlers.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/omitEventHandlers/omitEventHandlers.mjs
 /**
 * Removes event handlers from the given object.
 * A field is considered an event handler if it is a function with a name beginning with `on`.
@@ -1279,7 +1282,7 @@ function omitEventHandlers(object) {
 	return result;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/mergeSlotProps/mergeSlotProps.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/mergeSlotProps/mergeSlotProps.mjs
 /**
 * Merges the slot component internal props (usually coming from a hook)
 * with the externally provided ones.
@@ -1342,7 +1345,7 @@ function mergeSlotProps(parameters) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/resolveComponentProps/resolveComponentProps.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/resolveComponentProps/resolveComponentProps.mjs
 /**
 * If `componentProps` is a function, calls it with the provided `ownerState`.
 * Otherwise, just returns `componentProps`.
@@ -1352,7 +1355,7 @@ function resolveComponentProps(componentProps, ownerState, slotState) {
 	return componentProps;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/useSlotProps/useSlotProps.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/useSlotProps/useSlotProps.mjs
 /**
 * @ignore - do not document.
 * Builds the props to be passed into the slot of an unstyled component.
@@ -1375,7 +1378,7 @@ function useSlotProps(parameters) {
 	}, ownerState);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/fastDeepAssign/fastDeepAssign.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/fastDeepAssign/fastDeepAssign.mjs
 /**
 * Assigns props from one object to another. Focused on performance, only normal objects with no
 * prototype are supported.
@@ -1424,7 +1427,7 @@ function mergeObject(target, source) {
 	return target;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/formatMuiErrorMessage/formatMuiErrorMessage.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/formatMuiErrorMessage/formatMuiErrorMessage.mjs
 /**
 * WARNING: Don't import this directly. It's imported by the code generated by
 * `@mui/interal-babel-plugin-minify-errors`. Make sure to always use string literals in `Error`
@@ -1441,13 +1444,13 @@ function formatMuiErrorMessage(code, ...args) {
 	return `Minified MUI error #${code}; visit ${url} for the full message.`;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/capitalize/capitalize.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/capitalize/capitalize.mjs
 function capitalize(string) {
 	if (typeof string !== "string") throw new Error(process.env.NODE_ENV !== "production" ? "MUI: `capitalize(string)` expects a string argument." : formatMuiErrorMessage(7));
 	return string.charAt(0).toUpperCase() + string.slice(1);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/responsivePropType/responsivePropType.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/responsivePropType/responsivePropType.mjs
 var import_prop_types = /* @__PURE__ */ __toESM(require_prop_types(), 1);
 var responsivePropType = process.env.NODE_ENV !== "production" ? import_prop_types.default.oneOfType([
 	import_prop_types.default.number,
@@ -1456,14 +1459,14 @@ var responsivePropType = process.env.NODE_ENV !== "production" ? import_prop_typ
 	import_prop_types.default.array
 ]) : {};
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/isObjectEmpty/isObjectEmpty.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/isObjectEmpty/isObjectEmpty.mjs
 function isObjectEmpty$1(object) {
 	if (object == null) return true;
 	for (const _ in object) return false;
 	return true;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/deepmerge/deepmerge.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/deepmerge/deepmerge.mjs
 var import_react_is = require_react_is$1();
 function isPlainObject(item) {
 	if (typeof item !== "object" || item === null) return false;
@@ -1507,7 +1510,7 @@ function deepmerge(target, source, options = { clone: true }) {
 	return output;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/cssContainerQueries/cssContainerQueries.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/cssContainerQueries/cssContainerQueries.mjs
 var MIN_WIDTH_PATTERN = /min-width:\s*([0-9.]+)/;
 /**
 * WARN: Mutably updates the `css` object.
@@ -1574,7 +1577,7 @@ function cssContainerQueries(themeInput) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/createBreakpoints/createBreakpoints.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/createBreakpoints/createBreakpoints.mjs
 var sortBreakpointsValues = (values) => {
 	const breakpointsAsArray = Object.keys(values).map((key) => ({
 		key,
@@ -1634,7 +1637,7 @@ function createBreakpoints(breakpoints) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/breakpoints/breakpoints.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/breakpoints/breakpoints.mjs
 var EMPTY_THEME$2 = {};
 var values$1 = {
 	xs: 0,
@@ -1708,7 +1711,7 @@ function hasBreakpoint(breakpoints, value) {
 	return false;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/style/style.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/style/style.mjs
 /**
 * HACK: The `alternateProp` logic is there because our theme looks like this:
 * {
@@ -1784,7 +1787,7 @@ function style$1(options) {
 	return fn;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/spacing/spacing.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/spacing/spacing.mjs
 var EMPTY_THEME$1 = { internal_cache: {} };
 var properties = {
 	m: "margin",
@@ -1941,7 +1944,7 @@ spacing.propTypes = process.env.NODE_ENV !== "production" ? Array.from(spacingKe
 }, {}) : {};
 spacing.filterProps = spacingKeys;
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/compose/compose.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/compose/compose.mjs
 function compose(...styles) {
 	const handlers = styles.reduce((acc, style) => {
 		style.filterProps.forEach((prop) => {
@@ -1959,7 +1962,7 @@ function compose(...styles) {
 	return fn;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/borders/borders.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/borders/borders.mjs
 function borderTransform(value) {
 	if (typeof value !== "number") return value;
 	return `${value}px solid`;
@@ -1995,7 +1998,7 @@ borderRadius.propTypes = process.env.NODE_ENV !== "production" ? { borderRadius:
 borderRadius.filterProps = ["borderRadius"];
 compose(border, borderTop, borderRight, borderBottom, borderLeft, borderColor, borderTopColor, borderRightColor, borderBottomColor, borderLeftColor, borderRadius, outline, outlineColor);
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/cssGrid/cssGrid.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/cssGrid/cssGrid.mjs
 var gap = (props) => {
 	if (props.gap !== void 0 && props.gap !== null) {
 		const transformer = createUnaryUnit(props.theme, "spacing", 8, "gap");
@@ -2028,7 +2031,7 @@ rowGap.propTypes = process.env.NODE_ENV !== "production" ? { rowGap: responsiveP
 rowGap.filterProps = ["rowGap"];
 compose(gap, columnGap, rowGap, style$1({ prop: "gridColumn" }), style$1({ prop: "gridRow" }), style$1({ prop: "gridAutoFlow" }), style$1({ prop: "gridAutoColumns" }), style$1({ prop: "gridAutoRows" }), style$1({ prop: "gridTemplateColumns" }), style$1({ prop: "gridTemplateRows" }), style$1({ prop: "gridTemplateAreas" }), style$1({ prop: "gridArea" }));
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/palette/palette.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/palette/palette.mjs
 function paletteTransform(value, userValue) {
 	if (userValue === "grey") return userValue;
 	return value;
@@ -2048,7 +2051,7 @@ compose(style$1({
 	transform: paletteTransform
 }));
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/sizing/sizing.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/sizing/sizing.mjs
 function sizingTransform(value) {
 	return value <= 1 && value !== 0 ? `${value * 100}%` : value;
 }
@@ -2097,7 +2100,7 @@ style$1({
 });
 compose(width, maxWidth, minWidth, height, maxHeight, minHeight, style$1({ prop: "boxSizing" }));
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/styleFunctionSx/defaultSxConfig.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/styleFunctionSx/defaultSxConfig.mjs
 var defaultSxConfig = {
 	border: {
 		themeKey: "borders",
@@ -2249,7 +2252,7 @@ var defaultSxConfig = {
 	}
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/styleFunctionSx/styleFunctionSx.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/styleFunctionSx/styleFunctionSx.mjs
 var EMPTY_THEME = {};
 function unstable_createStyleFunctionSx() {
 	function styleFunctionSx(props) {
@@ -2320,7 +2323,7 @@ function setThemeValue(css, prop, value, theme, config) {
 	const themeMapping = getPath(theme, themeKey);
 	iterateBreakpoints(css, theme, value, (mediaKey, valueFinal) => {
 		const finalValue = getStyleValue2(themeMapping, transform, valueFinal, prop);
-		if (cssProperty === false) if (mediaKey) css[mediaKey] = finalValue;
+		if (cssProperty === false) if (mediaKey) fastDeepAssign(css[mediaKey], finalValue);
 		else fastDeepAssign(css, finalValue);
 		else if (mediaKey) css[mediaKey][cssProperty] = finalValue;
 		else css[cssProperty] = finalValue;
@@ -3818,10 +3821,10 @@ function internal_serializeStyles(styles) {
 	return serializeStyles(wrapper);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/createTheme/shape.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/createTheme/shape.mjs
 var shape = { borderRadius: 4 };
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/createTheme/createSpacing.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/createTheme/createSpacing.mjs
 function createSpacing(spacingInput = 8, transform = createUnarySpacing({ spacing: spacingInput })) {
 	if (spacingInput.mui) return spacingInput;
 	const spacing = (...argsInput) => {
@@ -3837,7 +3840,7 @@ function createSpacing(spacingInput = 8, transform = createUnarySpacing({ spacin
 	return spacing;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/createTheme/applyStyles.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/createTheme/applyStyles.mjs
 /**
 * A universal utility to style components with multiple color modes. Always use it from the theme object.
 * It works with:
@@ -3913,7 +3916,7 @@ function applyStyles(key, styles) {
 	return {};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/createTheme/createTheme.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/createTheme/createTheme.mjs
 function createTheme$1(options = {}, ...args) {
 	const { breakpoints: breakpointsInput = {}, palette: paletteInput = {}, spacing: spacingInput, shape: shapeInput = {}, ...other } = options;
 	const breakpoints = createBreakpoints(breakpointsInput);
@@ -3949,7 +3952,7 @@ function createTheme$1(options = {}, ...args) {
 	return muiTheme;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/useThemeWithoutDefault/useThemeWithoutDefault.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/useThemeWithoutDefault/useThemeWithoutDefault.mjs
 function isObjectEmpty(obj) {
 	return Object.keys(obj).length === 0;
 }
@@ -3958,13 +3961,13 @@ function useTheme$2(defaultTheme = null) {
 	return !contextTheme || isObjectEmpty(contextTheme) ? defaultTheme : contextTheme;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/useTheme/useTheme.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/useTheme/useTheme.mjs
 var systemDefaultTheme$1 = createTheme$1();
 function useTheme$1(defaultTheme = systemDefaultTheme$1) {
 	return useTheme$2(defaultTheme);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/ClassNameGenerator/ClassNameGenerator.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/ClassNameGenerator/ClassNameGenerator.mjs
 var defaultGenerator = (componentName) => componentName;
 var createClassNameGenerator = () => {
 	let generate = defaultGenerator;
@@ -3982,7 +3985,7 @@ var createClassNameGenerator = () => {
 };
 var ClassNameGenerator = createClassNameGenerator();
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/createBox/createBox.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/createBox/createBox.mjs
 function createBox(options = {}) {
 	const { themeId, defaultTheme, defaultClassName = "MuiBox-root", generateClassName } = options;
 	const BoxRoot = styled$1("div", { shouldForwardProp: (prop) => prop !== "theme" && prop !== "sx" && prop !== "as" })(styleFunctionSx_default);
@@ -3999,7 +4002,7 @@ function createBox(options = {}) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/generateUtilityClass/generateUtilityClass.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/generateUtilityClass/generateUtilityClass.mjs
 var globalStateClasses = {
 	active: "active",
 	checked: "checked",
@@ -4019,7 +4022,7 @@ function generateUtilityClass(componentName, slot, globalStatePrefix = "Mui") {
 	return globalStateClass ? `${globalStatePrefix}-${globalStateClass}` : `${ClassNameGenerator.generate(componentName)}-${slot}`;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/generateUtilityClasses/generateUtilityClasses.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/generateUtilityClasses/generateUtilityClasses.mjs
 function generateUtilityClasses(componentName, slots, globalStatePrefix = "Mui") {
 	const result = {};
 	slots.forEach((slot) => {
@@ -4028,14 +4031,24 @@ function generateUtilityClasses(componentName, slots, globalStatePrefix = "Mui")
 	return result;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/Box/Box.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/Box/Box.mjs
 var Box$2 = createBox({
 	defaultClassName: generateUtilityClasses("MuiBox", ["root"]).root,
 	generateClassName: ClassNameGenerator.generate
 });
 process.env.NODE_ENV !== "production" && (Box$2.propTypes = {
+	/**
+	* @ignore
+	*/
 	children: import_prop_types.default.node,
+	/**
+	* The component used for the root node.
+	* Either a string to use a HTML element or a component.
+	*/
 	component: import_prop_types.default.elementType,
+	/**
+	* The system prop that allows defining system overrides as well as additional CSS styles.
+	*/
 	sx: import_prop_types.default.oneOfType([
 		import_prop_types.default.arrayOf(import_prop_types.default.oneOfType([
 			import_prop_types.default.func,
@@ -4047,7 +4060,7 @@ process.env.NODE_ENV !== "production" && (Box$2.propTypes = {
 	])
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/getDisplayName/getDisplayName.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/getDisplayName/getDisplayName.mjs
 function getFunctionComponentName(Component, fallback = "") {
 	return Component.displayName || Component.name || fallback;
 }
@@ -4071,7 +4084,7 @@ function getDisplayName(Component) {
 	}
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/preprocessStyles.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/preprocessStyles.mjs
 function preprocessStyles(input) {
 	const { variants, ...style } = input;
 	const result = {
@@ -4086,7 +4099,7 @@ function preprocessStyles(input) {
 	return result;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/createStyled/createStyled.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/createStyled/createStyled.mjs
 var systemDefaultTheme = createTheme$1();
 function shouldForwardProp(prop) {
 	return prop !== "ownerState" && prop !== "theme" && prop !== "sx" && prop !== "as";
@@ -4242,7 +4255,7 @@ function lowercaseFirstLetter(string) {
 	return string.charAt(0).toLowerCase() + string.slice(1);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/resolveProps/resolveProps.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/resolveProps/resolveProps.mjs
 /**
 * Add keys, values of `defaultProps` that does not exist in `props`
 * @param defaultProps
@@ -4272,7 +4285,7 @@ function resolveProps(defaultProps, props, mergeClassNameAndStyle = false) {
 					output[propName][slotPropName] = resolveProps(defaultSlotProps[slotPropName], slotProps[slotPropName], mergeClassNameAndStyle);
 				}
 			}
-		} else if (propName === "className" && mergeClassNameAndStyle && props.className) output.className = clsx(defaultProps?.className, props?.className);
+		} else if (propName === "className" && mergeClassNameAndStyle && props.className !== void 0) output.className = clsx(defaultProps?.className, props?.className);
 		else if (propName === "style" && mergeClassNameAndStyle && props.style) output.style = {
 			...defaultProps?.style,
 			...props?.style
@@ -4282,7 +4295,7 @@ function resolveProps(defaultProps, props, mergeClassNameAndStyle = false) {
 	return output;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/useEnhancedEffect/useEnhancedEffect.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/useEnhancedEffect/useEnhancedEffect.mjs
 /**
 * A version of `React.useLayoutEffect` that does not show a warning when server-side rendering.
 * This is useful for effects that are only needed for client-side rendering but not for SSR.
@@ -4292,12 +4305,12 @@ function resolveProps(defaultProps, props, mergeClassNameAndStyle = false) {
 */
 var useEnhancedEffect = typeof window !== "undefined" ? React$1.useLayoutEffect : React$1.useEffect;
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/clamp/clamp.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/clamp/clamp.mjs
 function clamp(val, min = Number.MIN_SAFE_INTEGER, max = Number.MAX_SAFE_INTEGER) {
 	return Math.max(min, Math.min(val, max));
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/colorManipulator/colorManipulator.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/colorManipulator/colorManipulator.mjs
 /**
 * Returns a number whose value is limited to the given range.
 * @param {number} value The value to be clamped
@@ -4548,7 +4561,7 @@ function private_safeEmphasize(color, coefficient, warning) {
 	}
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/DefaultPropsProvider/DefaultPropsProvider.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/DefaultPropsProvider/DefaultPropsProvider.mjs
 var PropsContext = /* @__PURE__ */ React$1.createContext(void 0);
 function DefaultPropsProvider$1({ value, children }) {
 	return /* @__PURE__ */ jsx(PropsContext.Provider, {
@@ -4557,7 +4570,13 @@ function DefaultPropsProvider$1({ value, children }) {
 	});
 }
 process.env.NODE_ENV !== "production" && (DefaultPropsProvider$1.propTypes = {
+	/**
+	* @ignore
+	*/
 	children: import_prop_types.default.node,
+	/**
+	* @ignore
+	*/
 	value: import_prop_types.default.object
 });
 function getThemeProps(params) {
@@ -4576,7 +4595,7 @@ function useDefaultProps$1({ props, name }) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/memoTheme.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/memoTheme.mjs
 var arg = { theme: void 0 };
 /**
 * Memoize style function on theme.
@@ -4597,7 +4616,7 @@ function unstable_memoTheme(styleFn) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/cssVars/createGetCssVar.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/cssVars/createGetCssVar.mjs
 /**
 * The benefit of this function is to help developers get CSS var from theme without specifying the whole variable
 * and they does not need to remember the prefix (defined once).
@@ -4615,7 +4634,7 @@ function createGetCssVar$1(prefix = "") {
 	return getCssVar;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/cssVars/cssVarsParser.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/cssVars/cssVarsParser.mjs
 /**
 * This function create an object from keys, value and then assign to target
 *
@@ -4725,7 +4744,7 @@ function cssVarsParser(theme, options) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/cssVars/prepareCssVars.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/cssVars/prepareCssVars.mjs
 function prepareCssVars(theme, parserConfig = {}) {
 	const { getSelector = defaultGetSelector, disableCssColorScheme, colorSchemeSelector: selector, enableContrastVars } = parserConfig;
 	const { colorSchemes = {}, components, defaultColorScheme = "light", ...otherTheme } = theme;
@@ -4812,7 +4831,7 @@ function prepareCssVars(theme, parserConfig = {}) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/cssVars/getColorSchemeSelector.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/cssVars/getColorSchemeSelector.mjs
 function createGetColorSchemeSelector(selector) {
 	return function getColorSchemeSelector(colorScheme) {
 		if (selector === "media") {
@@ -4831,13 +4850,13 @@ function createGetColorSchemeSelector(selector) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/colors/common.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/colors/common.mjs
 var common = {
 	black: "#000",
 	white: "#fff"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/colors/grey.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/colors/grey.mjs
 var grey = {
 	50: "#fafafa",
 	100: "#f5f5f5",
@@ -4855,7 +4874,7 @@ var grey = {
 	A700: "#616161"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/colors/purple.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/colors/purple.mjs
 var purple = {
 	50: "#f3e5f5",
 	100: "#e1bee7",
@@ -4873,7 +4892,7 @@ var purple = {
 	A700: "#aa00ff"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/colors/red.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/colors/red.mjs
 var red = {
 	50: "#ffebee",
 	100: "#ffcdd2",
@@ -4891,7 +4910,7 @@ var red = {
 	A700: "#d50000"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/colors/orange.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/colors/orange.mjs
 var orange = {
 	50: "#fff3e0",
 	100: "#ffe0b2",
@@ -4909,7 +4928,7 @@ var orange = {
 	A700: "#ff6d00"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/colors/blue.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/colors/blue.mjs
 var blue = {
 	50: "#e3f2fd",
 	100: "#bbdefb",
@@ -4927,7 +4946,7 @@ var blue = {
 	A700: "#2962ff"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/colors/lightBlue.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/colors/lightBlue.mjs
 var lightBlue = {
 	50: "#e1f5fe",
 	100: "#b3e5fc",
@@ -4945,7 +4964,7 @@ var lightBlue = {
 	A700: "#0091ea"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/colors/green.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/colors/green.mjs
 var green = {
 	50: "#e8f5e9",
 	100: "#c8e6c9",
@@ -4963,7 +4982,7 @@ var green = {
 	A700: "#00c853"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/styles/createPalette.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/styles/createPalette.mjs
 function getLight() {
 	return {
 		text: {
@@ -5206,7 +5225,7 @@ const theme2 = createTheme({ palette: {
 	}, other);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_5e07e9882db893bc8f30a4a8333e290a/node_modules/@mui/system/cssVars/prepareTypographyVars.mjs
+//#region node_modules/.pnpm/@mui+system@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+sty_7a16ee91c79414a186ff3a0a51aa4990/node_modules/@mui/system/cssVars/prepareTypographyVars.mjs
 function prepareTypographyVars(typography) {
 	const vars = {};
 	Object.entries(typography).forEach((entry) => {
@@ -5216,7 +5235,7 @@ function prepareTypographyVars(typography) {
 	return vars;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/styles/createMixins.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/styles/createMixins.mjs
 function createMixins(breakpoints, mixins) {
 	return {
 		toolbar: {
@@ -5228,7 +5247,7 @@ function createMixins(breakpoints, mixins) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/styles/createTypography.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/styles/createTypography.mjs
 function round(value) {
 	return Math.round(value * 1e5) / 1e5;
 }
@@ -5287,7 +5306,7 @@ function createTypography(palette, typography) {
 	}, other, { clone: false });
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/styles/shadows.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/styles/shadows.mjs
 var shadowKeyUmbraOpacity = .2;
 var shadowKeyPenumbraOpacity = .14;
 var shadowAmbientShadowOpacity = .12;
@@ -5326,7 +5345,7 @@ var shadows = [
 	createShadow(0, 11, 15, -7, 0, 24, 38, 3, 0, 9, 46, 8)
 ];
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/styles/createTransitions.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/styles/createTransitions.mjs
 var easing = {
 	easeInOut: "cubic-bezier(0.4, 0, 0.2, 1)",
 	easeOut: "cubic-bezier(0.0, 0, 0.2, 1)",
@@ -5382,7 +5401,7 @@ function createTransitions(inputTransitions) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/styles/zIndex.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/styles/zIndex.mjs
 var zIndex = {
 	mobileStepper: 1e3,
 	fab: 1050,
@@ -5394,7 +5413,7 @@ var zIndex = {
 	tooltip: 1500
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/styles/stringifyTheme.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/styles/stringifyTheme.mjs
 function isSerializable(val) {
 	return isPlainObject(val) || typeof val === "undefined" || typeof val === "string" || typeof val === "boolean" || typeof val === "number" || Array.isArray(val);
 }
@@ -5441,7 +5460,7 @@ theme.transitions = createTransitions(theme.transitions || {});
 export default theme;`;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/styles/createThemeNoVars.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/styles/createThemeNoVars.mjs
 function coefficientToPercentage(coefficient) {
 	if (typeof coefficient === "number") return `${(coefficient * 100).toFixed(0)}%`;
 	return `calc((${coefficient}) * 100%)`;
@@ -5547,7 +5566,7 @@ function createThemeNoVars(options = {}, ...args) {
 	return muiTheme;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/styles/getOverlayAlpha.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/styles/getOverlayAlpha.mjs
 function getOverlayAlpha(elevation) {
 	let alphaValue;
 	if (elevation < 1) alphaValue = 5.11916 * elevation ** 2;
@@ -5555,7 +5574,7 @@ function getOverlayAlpha(elevation) {
 	return Math.round(alphaValue * 10) / 1e3;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/styles/createColorScheme.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/styles/createColorScheme.mjs
 var defaultDarkOverlays = [...Array(25)].map((_, index) => {
 	if (index === 0) return "none";
 	const overlay = getOverlayAlpha(index);
@@ -5589,12 +5608,12 @@ function createColorScheme(options) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/styles/shouldSkipGeneratingVar.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/styles/shouldSkipGeneratingVar.mjs
 function shouldSkipGeneratingVar(keys) {
 	return !!keys[0].match(/(cssVarPrefix|colorSchemeSelector|modularCssLayers|rootSelector|typography|mixins|breakpoints|direction|transitions)/) || !!keys[0].match(/sxConfig$/) || keys[0] === "palette" && !!keys[1]?.match(/(mode|contrastThreshold|tonalOffset)/);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/styles/excludeVariablesFromRoot.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/styles/excludeVariablesFromRoot.mjs
 /**
 * @internal These variables should not appear in the :root stylesheet when the `defaultColorScheme="dark"`
 */
@@ -5604,7 +5623,7 @@ var excludeVariablesFromRoot = (cssVarPrefix) => [
 	`--${cssVarPrefix ? `${cssVarPrefix}-` : ""}palette-AppBar-darkColor`
 ];
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/styles/createGetSelector.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/styles/createGetSelector.mjs
 var createGetSelector_default = (theme) => (colorScheme, css) => {
 	const root = theme.rootSelector || ":root";
 	const selector = theme.colorSchemeSelector;
@@ -5640,7 +5659,7 @@ var createGetSelector_default = (theme) => (colorScheme, css) => {
 	return root;
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/styles/createThemeWithVars.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/styles/createThemeWithVars.mjs
 function assignNode(obj, keys) {
 	keys.forEach((k) => {
 		if (!obj[k]) obj[k] = {};
@@ -5968,7 +5987,7 @@ function createThemeWithVars(options = {}, ...args) {
 	return theme;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/styles/createTheme.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/styles/createTheme.mjs
 function attachColorScheme(theme, scheme, colorScheme) {
 	if (!theme.colorSchemes) return;
 	if (colorScheme) theme.colorSchemes[scheme] = {
@@ -6036,53 +6055,59 @@ function createTheme(options = {}, ...args) {
 	}, ...args);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/styles/defaultTheme.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/styles/defaultTheme.mjs
 var defaultTheme = createTheme();
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/styles/identifier.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/styles/identifier.mjs
 var identifier_default = "$$material";
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/styles/useTheme.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/styles/useTheme.mjs
 function useTheme() {
 	const theme = useTheme$1(defaultTheme);
 	if (process.env.NODE_ENV !== "production") React$1.useDebugValue(theme);
 	return theme["$$material"] || theme;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/styles/slotShouldForwardProp.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/styles/slotShouldForwardProp.mjs
 function slotShouldForwardProp(prop) {
 	return prop !== "ownerState" && prop !== "theme" && prop !== "sx" && prop !== "as";
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/styles/rootShouldForwardProp.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/styles/rootShouldForwardProp.mjs
 var rootShouldForwardProp = (prop) => slotShouldForwardProp(prop) && prop !== "classes";
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/styles/styled.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/styles/styled.mjs
 var styled = createStyled({
 	themeId: identifier_default,
 	defaultTheme,
 	rootShouldForwardProp
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/DefaultPropsProvider/DefaultPropsProvider.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/DefaultPropsProvider/DefaultPropsProvider.mjs
 function DefaultPropsProvider(props) {
 	return /* @__PURE__ */ jsx(DefaultPropsProvider$1, { ...props });
 }
 process.env.NODE_ENV !== "production" && (DefaultPropsProvider.propTypes = {
+	/**
+	* @ignore
+	*/
 	children: import_prop_types.default.node,
+	/**
+	* @ignore
+	*/
 	value: import_prop_types.default.object.isRequired
 });
 function useDefaultProps(params) {
 	return useDefaultProps$1(params);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/utils/memoTheme.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/utils/memoTheme.mjs
 var memoTheme = unstable_memoTheme;
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/utils/capitalize.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/utils/capitalize.mjs
 var capitalize_default = capitalize;
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/utils/createSimplePaletteValueFilter.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/utils/createSimplePaletteValueFilter.mjs
 /**
 * Type guard to check if the object has a "main" property of type string.
 *
@@ -6118,7 +6143,7 @@ function createSimplePaletteValueFilter(additionalPropertiesToCheck = []) {
 	return ([, value]) => value && checkSimplePaletteColorValues(value, additionalPropertiesToCheck);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/Typography/typographyClasses.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/Typography/typographyClasses.mjs
 function getTypographyUtilityClass(slot) {
 	return generateUtilityClass("MuiTypography", slot);
 }
@@ -6146,7 +6171,7 @@ generateUtilityClasses("MuiTypography", [
 	"gutterBottom"
 ]);
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/Typography/Typography.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/Typography/Typography.mjs
 var useUtilityClasses$4 = (ownerState) => {
 	const { align, gutterBottom, noWrap, variant, classes } = ownerState;
 	return composeClasses({ root: [
@@ -6254,6 +6279,10 @@ var Typography$1 = /* @__PURE__ */ React$1.forwardRef(function Typography(inProp
 	});
 });
 process.env.NODE_ENV !== "production" && (Typography$1.propTypes = {
+	/**
+	* Set the text-align on the component.
+	* @default 'inherit'
+	*/
 	align: import_prop_types.default.oneOf([
 		"center",
 		"inherit",
@@ -6261,9 +6290,23 @@ process.env.NODE_ENV !== "production" && (Typography$1.propTypes = {
 		"left",
 		"right"
 	]),
+	/**
+	* The content of the component.
+	*/
 	children: import_prop_types.default.node,
+	/**
+	* Override or extend the styles applied to the component.
+	*/
 	classes: import_prop_types.default.object,
+	/**
+	* @ignore
+	*/
 	className: import_prop_types.default.string,
+	/**
+	* The color of the component.
+	* It supports both default and custom theme colors, which can be added as shown in the
+	* [palette customization guide](https://mui.com/material-ui/customization/palette/#custom-colors).
+	*/
 	color: import_prop_types.default.oneOfType([import_prop_types.default.oneOf([
 		"primary",
 		"secondary",
@@ -6275,10 +6318,31 @@ process.env.NODE_ENV !== "production" && (Typography$1.propTypes = {
 		"textSecondary",
 		"textDisabled"
 	]), import_prop_types.default.string]),
+	/**
+	* The component used for the root node.
+	* Either a string to use a HTML element or a component.
+	*/
 	component: import_prop_types.default.elementType,
+	/**
+	* If `true`, the text will have a bottom margin.
+	* @default false
+	*/
 	gutterBottom: import_prop_types.default.bool,
+	/**
+	* If `true`, the text will not wrap, but instead will truncate with a text overflow ellipsis.
+	*
+	* Note that text overflow can only happen with block or inline-block level elements
+	* (the element needs to have a width in order to overflow).
+	* @default false
+	*/
 	noWrap: import_prop_types.default.bool,
+	/**
+	* @ignore
+	*/
 	style: import_prop_types.default.object,
+	/**
+	* The system prop that allows defining system overrides as well as additional CSS styles.
+	*/
 	sx: import_prop_types.default.oneOfType([
 		import_prop_types.default.arrayOf(import_prop_types.default.oneOfType([
 			import_prop_types.default.func,
@@ -6288,6 +6352,10 @@ process.env.NODE_ENV !== "production" && (Typography$1.propTypes = {
 		import_prop_types.default.func,
 		import_prop_types.default.object
 	]),
+	/**
+	* Applies the theme typography styles.
+	* @default 'body1'
+	*/
 	variant: import_prop_types.default.oneOfType([import_prop_types.default.oneOf([
 		"body1",
 		"body2",
@@ -6304,10 +6372,29 @@ process.env.NODE_ENV !== "production" && (Typography$1.propTypes = {
 		"subtitle1",
 		"subtitle2"
 	]), import_prop_types.default.string]),
+	/**
+	* The component maps the variant prop to a range of different HTML element types.
+	* For instance, subtitle1 to `<h6>`.
+	* If you wish to change that mapping, you can provide your own.
+	* Alternatively, you can use the `component` prop.
+	* @default {
+	*   h1: 'h1',
+	*   h2: 'h2',
+	*   h3: 'h3',
+	*   h4: 'h4',
+	*   h5: 'h5',
+	*   h6: 'h6',
+	*   subtitle1: 'h6',
+	*   subtitle2: 'h6',
+	*   body1: 'p',
+	*   body2: 'p',
+	*   inherit: 'p',
+	* }
+	*/
 	variantMapping: import_prop_types.default.object
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/SvgIcon/svgIconClasses.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/SvgIcon/svgIconClasses.mjs
 function getSvgIconUtilityClass(slot) {
 	return generateUtilityClass("MuiSvgIcon", slot);
 }
@@ -6324,7 +6411,7 @@ generateUtilityClasses("MuiSvgIcon", [
 	"fontSizeLarge"
 ]);
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/SvgIcon/SvgIcon.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/SvgIcon/SvgIcon.mjs
 var useUtilityClasses$3 = (ownerState) => {
 	const { color, fontSize, classes } = ownerState;
 	return composeClasses({ root: [
@@ -6425,9 +6512,25 @@ var SvgIcon = /* @__PURE__ */ React$1.forwardRef(function SvgIcon(inProps, ref) 
 	});
 });
 process.env.NODE_ENV !== "production" && (SvgIcon.propTypes = {
+	/**
+	* Node passed into the SVG element.
+	*/
 	children: import_prop_types.default.node,
+	/**
+	* Override or extend the styles applied to the component.
+	*/
 	classes: import_prop_types.default.object,
+	/**
+	* @ignore
+	*/
 	className: import_prop_types.default.string,
+	/**
+	* The color of the component.
+	* It supports both default and custom theme colors, which can be added as shown in the
+	* [palette customization guide](https://mui.com/material-ui/customization/palette/#custom-colors).
+	* You can use the `htmlColor` prop to apply a color attribute to the SVG element.
+	* @default 'inherit'
+	*/
 	color: import_prop_types.default.oneOfType([import_prop_types.default.oneOf([
 		"inherit",
 		"action",
@@ -6439,16 +6542,42 @@ process.env.NODE_ENV !== "production" && (SvgIcon.propTypes = {
 		"success",
 		"warning"
 	]), import_prop_types.default.string]),
+	/**
+	* The component used for the root node.
+	* Either a string to use a HTML element or a component.
+	*/
 	component: import_prop_types.default.elementType,
+	/**
+	* The fontSize applied to the icon. Defaults to 24px, but can be configure to inherit font size.
+	* @default 'medium'
+	*/
 	fontSize: import_prop_types.default.oneOfType([import_prop_types.default.oneOf([
 		"inherit",
 		"large",
 		"medium",
 		"small"
 	]), import_prop_types.default.string]),
+	/**
+	* Applies a color attribute to the SVG element.
+	*/
 	htmlColor: import_prop_types.default.string,
+	/**
+	* If `true`, the root node will inherit the custom `component`'s viewBox and the `viewBox`
+	* prop will be ignored.
+	* Useful when you want to reference a custom `component` and have `SvgIcon` pass that
+	* `component`'s viewBox to the root node.
+	* @default false
+	*/
 	inheritViewBox: import_prop_types.default.bool,
+	/**
+	* The shape-rendering attribute. The behavior of the different options is described on the
+	* [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute/shape-rendering).
+	* If you are having issues with blurry icons you should investigate this prop.
+	*/
 	shapeRendering: import_prop_types.default.string,
+	/**
+	* The system prop that allows defining system overrides as well as additional CSS styles.
+	*/
 	sx: import_prop_types.default.oneOfType([
 		import_prop_types.default.arrayOf(import_prop_types.default.oneOfType([
 			import_prop_types.default.func,
@@ -6458,12 +6587,24 @@ process.env.NODE_ENV !== "production" && (SvgIcon.propTypes = {
 		import_prop_types.default.func,
 		import_prop_types.default.object
 	]),
+	/**
+	* Provides a human-readable title for the element that contains it.
+	* https://www.w3.org/TR/SVG-access/#Equivalent
+	*/
 	titleAccess: import_prop_types.default.string,
+	/**
+	* Allows you to redefine what the coordinates without units mean inside an SVG element.
+	* For example, if the SVG element is 500 (width) by 200 (height),
+	* and you pass viewBox="0 0 50 20",
+	* this means that the coordinates inside the SVG will go from the top left corner (0,0)
+	* to bottom right (50,20) and each unit will be worth 10px.
+	* @default '0 0 24 24'
+	*/
 	viewBox: import_prop_types.default.string
 });
 SvgIcon.muiName = "SvgIcon";
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/SvgIcon/createSvgIcon.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/SvgIcon/createSvgIcon.mjs
 /**
 * Private module reserved for @mui packages.
 */
@@ -6481,16 +6622,16 @@ function createSvgIcon(path, displayName) {
 	return /* @__PURE__ */ React$1.memo(/* @__PURE__ */ React$1.forwardRef(Component));
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/internal/svg-icons/MoreHoriz.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/internal/svg-icons/MoreHoriz.mjs
 /**
 * @ignore - internal component.
 */
 var MoreHoriz_default = createSvgIcon(/* @__PURE__ */ jsx("path", { d: "M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" }), "MoreHoriz");
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/refType/refType.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/refType/refType.mjs
 var refType = import_prop_types.default.oneOfType([import_prop_types.default.func, import_prop_types.default.object]);
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/chainPropTypes/chainPropTypes.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/chainPropTypes/chainPropTypes.mjs
 function chainPropTypes(propType1, propType2) {
 	if (process.env.NODE_ENV === "production") return () => null;
 	return function validate(...args) {
@@ -6498,7 +6639,7 @@ function chainPropTypes(propType1, propType2) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/elementTypeAcceptingRef/elementTypeAcceptingRef.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/elementTypeAcceptingRef/elementTypeAcceptingRef.mjs
 function isClassComponent$1(elementType) {
 	const { prototype = {} } = elementType;
 	return Boolean(prototype.isReactComponent);
@@ -6524,7 +6665,7 @@ function elementTypeAcceptingRef(props, propName, componentName, location, propF
 }
 var elementTypeAcceptingRef_default = chainPropTypes(import_prop_types.default.elementType, elementTypeAcceptingRef);
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/isFocusVisible/isFocusVisible.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/isFocusVisible/isFocusVisible.mjs
 /**
 * Returns a boolean indicating if the event's target has :focus-visible
 */
@@ -6537,10 +6678,10 @@ function isFocusVisible(element) {
 	return false;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/utils/useForkRef.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/utils/useForkRef.mjs
 var useForkRef_default = useForkRef;
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/useEventCallback/useEventCallback.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/useEventCallback/useEventCallback.mjs
 /**
 * Inspired by https://github.com/facebook/react/issues/14099#issuecomment-440013892
 * See RFC in https://github.com/reactjs/rfcs/pull/220
@@ -6553,10 +6694,10 @@ function useEventCallback(fn) {
 	return React$1.useRef((...args) => (0, ref.current)(...args)).current;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/utils/useEventCallback.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/utils/useEventCallback.mjs
 var useEventCallback_default = useEventCallback;
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/utils/useFocusableWhenDisabled.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/utils/useFocusableWhenDisabled.mjs
 function useFocusableWhenDisabled(parameters) {
 	const { focusableWhenDisabled, disabled, composite = false, tabIndex: tabIndexProp = 0, isNativeButton } = parameters;
 	const isFocusableComposite = composite && focusableWhenDisabled !== false;
@@ -6583,7 +6724,7 @@ function useFocusableWhenDisabled(parameters) {
 	]);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/ButtonBase/useButtonBase.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/ButtonBase/useButtonBase.mjs
 var EMPTY$1 = {};
 function useButtonBase(parameters) {
 	const { nativeButton, nativeButtonProp, internalNativeButton = nativeButton, allowInferredHostMismatch = false, disabled, type, hasFormAction = false, tabIndex = 0, focusableWhenDisabled: focusableWhenDisabledParam, stopEventPropagation = false, onBeforeKeyDown, onBeforeKeyUp } = parameters;
@@ -6694,7 +6835,7 @@ function useButtonBase(parameters) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/useLazyRef/useLazyRef.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/useLazyRef/useLazyRef.mjs
 var UNINITIALIZED = {};
 /**
 * A React.useRef() that is initialized lazily with a function. Note that it accepts an optional
@@ -6709,7 +6850,7 @@ function useLazyRef(init, initArg) {
 	return ref;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/useLazyRipple/useLazyRipple.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/useLazyRipple/useLazyRipple.mjs
 /**
 * Lazy initialization container for the Ripple instance. This improves
 * performance by delaying mounting the ripple until it's needed.
@@ -7125,29 +7266,169 @@ var Transition = /* @__PURE__ */ function(_React$Component) {
 }(React.Component);
 Transition.contextType = TransitionGroupContext_default;
 Transition.propTypes = process.env.NODE_ENV !== "production" ? {
+	/**
+	* A React reference to DOM element that need to transition:
+	* https://stackoverflow.com/a/51127130/4671932
+	*
+	*   - When `nodeRef` prop is used, `node` is not passed to callback functions
+	*      (e.g. `onEnter`) because user already has direct access to the node.
+	*   - When changing `key` prop of `Transition` in a `TransitionGroup` a new
+	*     `nodeRef` need to be provided to `Transition` with changed `key` prop
+	*     (see
+	*     [test/CSSTransition-test.js](https://github.com/reactjs/react-transition-group/blob/13435f897b3ab71f6e19d724f145596f5910581c/test/CSSTransition-test.js#L362-L437)).
+	*/
 	nodeRef: import_prop_types.default.shape({ current: typeof Element === "undefined" ? import_prop_types.default.any : function(propValue, key, componentName, location, propFullName, secret) {
 		var value = propValue[key];
 		return import_prop_types.default.instanceOf(value && "ownerDocument" in value ? value.ownerDocument.defaultView.Element : Element)(propValue, key, componentName, location, propFullName, secret);
 	} }),
+	/**
+	* A `function` child can be used instead of a React element. This function is
+	* called with the current transition status (`'entering'`, `'entered'`,
+	* `'exiting'`, `'exited'`), which can be used to apply context
+	* specific props to a component.
+	*
+	* ```jsx
+	* <Transition in={this.state.in} timeout={150}>
+	*   {state => (
+	*     <MyComponent className={`fade fade-${state}`} />
+	*   )}
+	* </Transition>
+	* ```
+	*/
 	children: import_prop_types.default.oneOfType([import_prop_types.default.func.isRequired, import_prop_types.default.element.isRequired]).isRequired,
+	/**
+	* Show the component; triggers the enter or exit states
+	*/
 	in: import_prop_types.default.bool,
+	/**
+	* By default the child component is mounted immediately along with
+	* the parent `Transition` component. If you want to "lazy mount" the component on the
+	* first `in={true}` you can set `mountOnEnter`. After the first enter transition the component will stay
+	* mounted, even on "exited", unless you also specify `unmountOnExit`.
+	*/
 	mountOnEnter: import_prop_types.default.bool,
+	/**
+	* By default the child component stays mounted after it reaches the `'exited'` state.
+	* Set `unmountOnExit` if you'd prefer to unmount the component after it finishes exiting.
+	*/
 	unmountOnExit: import_prop_types.default.bool,
+	/**
+	* By default the child component does not perform the enter transition when
+	* it first mounts, regardless of the value of `in`. If you want this
+	* behavior, set both `appear` and `in` to `true`.
+	*
+	* > **Note**: there are no special appear states like `appearing`/`appeared`, this prop
+	* > only adds an additional enter transition. However, in the
+	* > `<CSSTransition>` component that first enter transition does result in
+	* > additional `.appear-*` classes, that way you can choose to style it
+	* > differently.
+	*/
 	appear: import_prop_types.default.bool,
+	/**
+	* Enable or disable enter transitions.
+	*/
 	enter: import_prop_types.default.bool,
+	/**
+	* Enable or disable exit transitions.
+	*/
 	exit: import_prop_types.default.bool,
+	/**
+	* The duration of the transition, in milliseconds.
+	* Required unless `addEndListener` is provided.
+	*
+	* You may specify a single timeout for all transitions:
+	*
+	* ```jsx
+	* timeout={500}
+	* ```
+	*
+	* or individually:
+	*
+	* ```jsx
+	* timeout={{
+	*  appear: 500,
+	*  enter: 300,
+	*  exit: 500,
+	* }}
+	* ```
+	*
+	* - `appear` defaults to the value of `enter`
+	* - `enter` defaults to `0`
+	* - `exit` defaults to `0`
+	*
+	* @type {number | { enter?: number, exit?: number, appear?: number }}
+	*/
 	timeout: function timeout(props) {
 		var pt = timeoutsShape;
 		if (!props.addEndListener) pt = pt.isRequired;
 		for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) args[_key - 1] = arguments[_key];
 		return pt.apply(void 0, [props].concat(args));
 	},
+	/**
+	* Add a custom transition end trigger. Called with the transitioning
+	* DOM node and a `done` callback. Allows for more fine grained transition end
+	* logic. Timeouts are still used as a fallback if provided.
+	*
+	* **Note**: when `nodeRef` prop is passed, `node` is not passed.
+	*
+	* ```jsx
+	* addEndListener={(node, done) => {
+	*   // use the css transitionend event to mark the finish of a transition
+	*   node.addEventListener('transitionend', done, false);
+	* }}
+	* ```
+	*/
 	addEndListener: import_prop_types.default.func,
+	/**
+	* Callback fired before the "entering" status is applied. An extra parameter
+	* `isAppearing` is supplied to indicate if the enter stage is occurring on the initial mount
+	*
+	* **Note**: when `nodeRef` prop is passed, `node` is not passed.
+	*
+	* @type Function(node: HtmlElement, isAppearing: bool) -> void
+	*/
 	onEnter: import_prop_types.default.func,
+	/**
+	* Callback fired after the "entering" status is applied. An extra parameter
+	* `isAppearing` is supplied to indicate if the enter stage is occurring on the initial mount
+	*
+	* **Note**: when `nodeRef` prop is passed, `node` is not passed.
+	*
+	* @type Function(node: HtmlElement, isAppearing: bool)
+	*/
 	onEntering: import_prop_types.default.func,
+	/**
+	* Callback fired after the "entered" status is applied. An extra parameter
+	* `isAppearing` is supplied to indicate if the enter stage is occurring on the initial mount
+	*
+	* **Note**: when `nodeRef` prop is passed, `node` is not passed.
+	*
+	* @type Function(node: HtmlElement, isAppearing: bool) -> void
+	*/
 	onEntered: import_prop_types.default.func,
+	/**
+	* Callback fired before the "exiting" status is applied.
+	*
+	* **Note**: when `nodeRef` prop is passed, `node` is not passed.
+	*
+	* @type Function(node: HtmlElement) -> void
+	*/
 	onExit: import_prop_types.default.func,
+	/**
+	* Callback fired after the "exiting" status is applied.
+	*
+	* **Note**: when `nodeRef` prop is passed, `node` is not passed.
+	*
+	* @type Function(node: HtmlElement) -> void
+	*/
 	onExiting: import_prop_types.default.func,
+	/**
+	* Callback fired after the "exited" status is applied.
+	*
+	* **Note**: when `nodeRef` prop is passed, `node` is not passed
+	*
+	* @type Function(node: HtmlElement) -> void
+	*/
 	onExited: import_prop_types.default.func
 } : {};
 function noop() {}
@@ -7355,16 +7636,61 @@ var TransitionGroup = /* @__PURE__ */ function(_React$Component) {
 	return TransitionGroup;
 }(React.Component);
 TransitionGroup.propTypes = process.env.NODE_ENV !== "production" ? {
+	/**
+	* `<TransitionGroup>` renders a `<div>` by default. You can change this
+	* behavior by providing a `component` prop.
+	* If you use React v16+ and would like to avoid a wrapping `<div>` element
+	* you can pass in `component={null}`. This is useful if the wrapping div
+	* borks your css styles.
+	*/
 	component: import_prop_types.default.any,
+	/**
+	* A set of `<Transition>` components, that are toggled `in` and out as they
+	* leave. the `<TransitionGroup>` will inject specific transition props, so
+	* remember to spread them through if you are wrapping the `<Transition>` as
+	* with our `<Fade>` example.
+	*
+	* While this component is meant for multiple `Transition` or `CSSTransition`
+	* children, sometimes you may want to have a single transition child with
+	* content that you want to be transitioned out and in when you change it
+	* (e.g. routes, images etc.) In that case you can change the `key` prop of
+	* the transition child as you change its content, this will cause
+	* `TransitionGroup` to transition the child out and back in.
+	*/
 	children: import_prop_types.default.node,
+	/**
+	* A convenience prop that enables or disables appear animations
+	* for all children. Note that specifying this will override any defaults set
+	* on individual children Transitions.
+	*/
 	appear: import_prop_types.default.bool,
+	/**
+	* A convenience prop that enables or disables enter animations
+	* for all children. Note that specifying this will override any defaults set
+	* on individual children Transitions.
+	*/
 	enter: import_prop_types.default.bool,
+	/**
+	* A convenience prop that enables or disables exit animations
+	* for all children. Note that specifying this will override any defaults set
+	* on individual children Transitions.
+	*/
 	exit: import_prop_types.default.bool,
+	/**
+	* You may need to apply reactive updates to a child as it is exiting.
+	* This is generally done by using `cloneElement` however in the case of an exiting
+	* child the element has already been removed and not accessible to the consumer.
+	*
+	* If you do need to update a child as it leaves you can provide a `childFactory`
+	* to wrap every child, even the ones that are leaving.
+	*
+	* @type Function(child: ReactElement) -> ReactElement
+	*/
 	childFactory: import_prop_types.default.func
 } : {};
 TransitionGroup.defaultProps = defaultProps;
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/useOnMount/useOnMount.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/useOnMount/useOnMount.mjs
 var EMPTY = [];
 /**
 * A React.useEffect equivalent that runs once, when the component is mounted.
@@ -7373,7 +7699,7 @@ function useOnMount(fn) {
 	React$1.useEffect(fn, EMPTY);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/useTimeout/useTimeout.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/useTimeout/useTimeout.mjs
 var Timeout = class Timeout {
 	static create() {
 		return new Timeout();
@@ -7405,7 +7731,7 @@ function useTimeout() {
 	return timeout;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/ButtonBase/Ripple.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/ButtonBase/Ripple.mjs
 /**
 * @ignore - internal component.
 */
@@ -7440,18 +7766,42 @@ function Ripple(props) {
 	});
 }
 process.env.NODE_ENV !== "production" && (Ripple.propTypes = {
+	/**
+	* Override or extend the styles applied to the component.
+	*/
 	classes: import_prop_types.default.object.isRequired,
 	className: import_prop_types.default.string,
+	/**
+	* @ignore - injected from TransitionGroup
+	*/
 	in: import_prop_types.default.bool,
+	/**
+	* @ignore - injected from TransitionGroup
+	*/
 	onExited: import_prop_types.default.func,
+	/**
+	* If `true`, the ripple pulsates, typically indicating the keyboard focus state of an element.
+	*/
 	pulsate: import_prop_types.default.bool,
+	/**
+	* Diameter of the ripple.
+	*/
 	rippleSize: import_prop_types.default.number,
+	/**
+	* Horizontal position of the ripple center.
+	*/
 	rippleX: import_prop_types.default.number,
+	/**
+	* Vertical position of the ripple center.
+	*/
 	rippleY: import_prop_types.default.number,
+	/**
+	* exit delay
+	*/
 	timeout: import_prop_types.default.number.isRequired
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/ButtonBase/touchRippleClasses.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/ButtonBase/touchRippleClasses.mjs
 var touchRippleClasses = generateUtilityClasses("MuiTouchRipple", [
 	"root",
 	"ripple",
@@ -7462,7 +7812,7 @@ var touchRippleClasses = generateUtilityClasses("MuiTouchRipple", [
 	"childPulsate"
 ]);
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/ButtonBase/TouchRipple.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/ButtonBase/TouchRipple.mjs
 var DURATION = 550;
 var enterKeyframe = keyframes`
   0% {
@@ -7705,12 +8055,22 @@ var TouchRipple = /* @__PURE__ */ React$1.forwardRef(function TouchRipple(inProp
 	});
 });
 process.env.NODE_ENV !== "production" && (TouchRipple.propTypes = {
+	/**
+	* If `true`, the ripple starts at the center of the component
+	* rather than at the point of interaction.
+	*/
 	center: import_prop_types.default.bool,
+	/**
+	* Override or extend the styles applied to the component.
+	*/
 	classes: import_prop_types.default.object,
+	/**
+	* @ignore
+	*/
 	className: import_prop_types.default.string
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/ButtonBase/buttonBaseClasses.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/ButtonBase/buttonBaseClasses.mjs
 function getButtonBaseUtilityClass(slot) {
 	return generateUtilityClass("MuiButtonBase", slot);
 }
@@ -7720,7 +8080,7 @@ var buttonBaseClasses = generateUtilityClasses("MuiButtonBase", [
 	"focusVisible"
 ]);
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/ButtonBase/ButtonBase.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/ButtonBase/ButtonBase.mjs
 var useUtilityClasses$2 = (ownerState) => {
 	const { disabled, focusVisible, focusVisibleClassName, suppressFocusVisible, classes } = ownerState;
 	const composedClasses = composeClasses({ root: [
@@ -7900,35 +8260,144 @@ function useRippleHandler(ripple, rippleAction, eventCallback, skipRippleAction 
 	});
 }
 process.env.NODE_ENV !== "production" && (ButtonBase.propTypes = {
+	/**
+	* A ref for imperative actions.
+	* It currently only supports `focusVisible()` action.
+	*/
 	action: refType,
+	/**
+	* If `true`, the ripples are centered.
+	* They won't start at the cursor interaction position.
+	* @default false
+	*/
 	centerRipple: import_prop_types.default.bool,
+	/**
+	* The content of the component.
+	*/
 	children: import_prop_types.default.node,
+	/**
+	* Override or extend the styles applied to the component.
+	*/
 	classes: import_prop_types.default.object,
+	/**
+	* @ignore
+	*/
 	className: import_prop_types.default.string,
+	/**
+	* The component used for the root node.
+	* Either a string to use a HTML element or a component.
+	*/
 	component: elementTypeAcceptingRef_default,
+	/**
+	* If `true`, the component is disabled.
+	* @default false
+	*/
 	disabled: import_prop_types.default.bool,
+	/**
+	* If `true`, the ripple effect is disabled.
+	*
+	* ⚠️ Without a ripple there is no styling for :focus-visible by default. Be sure
+	* to highlight the element by applying separate styles with the `.Mui-focusVisible` class.
+	* @default false
+	*/
 	disableRipple: import_prop_types.default.bool,
+	/**
+	* If `true`, the touch ripple effect is disabled.
+	* @default false
+	*/
 	disableTouchRipple: import_prop_types.default.bool,
+	/**
+	* If `true`, the base button will have a keyboard focus ripple.
+	* @default false
+	*/
 	focusRipple: import_prop_types.default.bool,
+	/**
+	* This prop can help identify which element has keyboard focus.
+	* The class name will be applied when the element gains the focus through keyboard interaction.
+	* It's a polyfill for the [CSS :focus-visible selector](https://drafts.csswg.org/selectors-4/#the-focus-visible-pseudo).
+	* The rationale for using this feature [is explained here](https://github.com/WICG/focus-visible/blob/HEAD/explainer.md).
+	* A [polyfill can be used](https://github.com/WICG/focus-visible) to apply a `focus-visible` class to other components
+	* if needed.
+	*/
 	focusVisibleClassName: import_prop_types.default.string,
+	/**
+	* @ignore
+	*/
 	formAction: import_prop_types.default.oneOfType([import_prop_types.default.func, import_prop_types.default.string]),
+	/**
+	* @ignore
+	*/
 	href: import_prop_types.default.any,
+	/**
+	* The component used to render a link when the `href` prop is provided.
+	* @default 'a'
+	*/
 	LinkComponent: import_prop_types.default.elementType,
+	/**
+	* Whether the custom component is expected to render a native `<button>` element
+	* when passing a React component to the `component` or `slots` prop.
+	*/
 	nativeButton: import_prop_types.default.bool,
+	/**
+	* @ignore
+	*/
 	onBlur: import_prop_types.default.func,
+	/**
+	* @ignore
+	*/
 	onClick: import_prop_types.default.func,
+	/**
+	* @ignore
+	*/
 	onContextMenu: import_prop_types.default.func,
+	/**
+	* @ignore
+	*/
 	onDragLeave: import_prop_types.default.func,
+	/**
+	* @ignore
+	*/
 	onFocus: import_prop_types.default.func,
+	/**
+	* Callback fired when the component is focused with a keyboard.
+	* We trigger a `onFocus` callback too.
+	*/
 	onFocusVisible: import_prop_types.default.func,
+	/**
+	* @ignore
+	*/
 	onKeyDown: import_prop_types.default.func,
+	/**
+	* @ignore
+	*/
 	onKeyUp: import_prop_types.default.func,
+	/**
+	* @ignore
+	*/
 	onMouseDown: import_prop_types.default.func,
+	/**
+	* @ignore
+	*/
 	onMouseLeave: import_prop_types.default.func,
+	/**
+	* @ignore
+	*/
 	onMouseUp: import_prop_types.default.func,
+	/**
+	* @ignore
+	*/
 	onTouchEnd: import_prop_types.default.func,
+	/**
+	* @ignore
+	*/
 	onTouchMove: import_prop_types.default.func,
+	/**
+	* @ignore
+	*/
 	onTouchStart: import_prop_types.default.func,
+	/**
+	* The system prop that allows defining system overrides as well as additional CSS styles.
+	*/
 	sx: import_prop_types.default.oneOfType([
 		import_prop_types.default.arrayOf(import_prop_types.default.oneOfType([
 			import_prop_types.default.func,
@@ -7938,21 +8407,32 @@ process.env.NODE_ENV !== "production" && (ButtonBase.propTypes = {
 		import_prop_types.default.func,
 		import_prop_types.default.object
 	]),
+	/**
+	* @default 0
+	*/
 	tabIndex: import_prop_types.default.number,
+	/**
+	* Props applied to the `TouchRipple` element.
+	*/
 	TouchRippleProps: import_prop_types.default.object,
+	/**
+	* A ref that points to the `TouchRipple` element.
+	*/
 	touchRippleRef: import_prop_types.default.oneOfType([import_prop_types.default.func, import_prop_types.default.shape({ current: import_prop_types.default.shape({
 		pulsate: import_prop_types.default.func.isRequired,
 		start: import_prop_types.default.func.isRequired,
 		stop: import_prop_types.default.func.isRequired
 	}) })]),
-	type: import_prop_types.default.oneOfType([import_prop_types.default.oneOf([
-		"button",
-		"reset",
-		"submit"
-	]), import_prop_types.default.string])
+	/**
+	* The HTML [`type`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button#type)
+	* attribute applied to `button` and `a` elements.
+	* Ignored when rendering non-native buttons.
+	* @default 'button'
+	*/
+	type: import_prop_types.default.string
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/Breadcrumbs/BreadcrumbCollapsed.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/Breadcrumbs/BreadcrumbCollapsed.mjs
 var BreadcrumbCollapsedButton = styled(ButtonBase, { name: "MuiBreadcrumbCollapsed" })(memoTheme(({ theme }) => ({
 	display: "flex",
 	marginLeft: `calc(${theme.spacing(1)} * 0.5)`,
@@ -7994,12 +8474,24 @@ function BreadcrumbCollapsed(props) {
 	}) });
 }
 process.env.NODE_ENV !== "production" && (BreadcrumbCollapsed.propTypes = {
+	/**
+	* The props used for the CollapsedIcon slot.
+	* @default {}
+	*/
 	slotProps: import_prop_types.default.shape({ collapsedIcon: import_prop_types.default.oneOfType([import_prop_types.default.func, import_prop_types.default.object]) }),
+	/**
+	* The components used for each slot inside the BreadcumbCollapsed.
+	* Either a string to use a HTML element or a component.
+	* @default {}
+	*/
 	slots: import_prop_types.default.shape({ CollapsedIcon: import_prop_types.default.elementType }),
+	/**
+	* The system prop that allows defining system overrides as well as additional CSS styles.
+	*/
 	sx: import_prop_types.default.object
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/Breadcrumbs/breadcrumbsClasses.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/Breadcrumbs/breadcrumbsClasses.mjs
 function getBreadcrumbsUtilityClass(slot) {
 	return generateUtilityClass("MuiBreadcrumbs", slot);
 }
@@ -8010,7 +8502,7 @@ var breadcrumbsClasses = generateUtilityClasses("MuiBreadcrumbs", [
 	"separator"
 ]);
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/Breadcrumbs/Breadcrumbs.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/Breadcrumbs/Breadcrumbs.mjs
 var useUtilityClasses$1 = (ownerState) => {
 	const { classes } = ownerState;
 	return composeClasses({
@@ -8129,17 +8621,66 @@ var Breadcrumbs = /* @__PURE__ */ React$1.forwardRef(function Breadcrumbs(inProp
 	});
 });
 process.env.NODE_ENV !== "production" && (Breadcrumbs.propTypes = {
+	/**
+	* The content of the component.
+	*/
 	children: import_prop_types.default.node,
+	/**
+	* Override or extend the styles applied to the component.
+	*/
 	classes: import_prop_types.default.object,
+	/**
+	* @ignore
+	*/
 	className: import_prop_types.default.string,
+	/**
+	* The component used for the root node.
+	* Either a string to use a HTML element or a component.
+	*/
 	component: import_prop_types.default.elementType,
+	/**
+	* Override the default label for the expand button.
+	*
+	* For localization purposes, you can use the provided [translations](https://mui.com/material-ui/guides/localization/).
+	* @default 'Show path'
+	*/
 	expandText: import_prop_types.default.string,
+	/**
+	* If max items is exceeded, the number of items to show after the ellipsis.
+	* @default 1
+	*/
 	itemsAfterCollapse: integerPropType,
+	/**
+	* If max items is exceeded, the number of items to show before the ellipsis.
+	* @default 1
+	*/
 	itemsBeforeCollapse: integerPropType,
+	/**
+	* Specifies the maximum number of breadcrumbs to display. When there are more
+	* than the maximum number, only the first `itemsBeforeCollapse` and last `itemsAfterCollapse`
+	* will be shown, with an ellipsis in between.
+	* @default 8
+	*/
 	maxItems: integerPropType,
+	/**
+	* Custom separator node.
+	* @default '/'
+	*/
 	separator: import_prop_types.default.node,
+	/**
+	* The props used for each slot inside the Breadcumb.
+	* @default {}
+	*/
 	slotProps: import_prop_types.default.shape({ collapsedIcon: import_prop_types.default.oneOfType([import_prop_types.default.func, import_prop_types.default.object]) }),
+	/**
+	* The components used for each slot inside the Breadcumb.
+	* Either a string to use a HTML element or a component.
+	* @default {}
+	*/
 	slots: import_prop_types.default.shape({ CollapsedIcon: import_prop_types.default.elementType }),
+	/**
+	* The system prop that allows defining system overrides as well as additional CSS styles.
+	*/
 	sx: import_prop_types.default.oneOfType([
 		import_prop_types.default.arrayOf(import_prop_types.default.oneOfType([
 			import_prop_types.default.func,
@@ -29092,6 +29633,21 @@ var personObjectTypeDefintion = {
 			},
 			association: void 0
 		},
+		workflow: {
+			name: "workflow",
+			objectTypeName: "person",
+			type: "string",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: void 0,
+				regex: void 0
+			},
+			association: void 0
+		},
 		createdAt: {
 			name: "createdAt",
 			objectTypeName: "person",
@@ -45674,6 +46230,21 @@ var userRegistrationTenantRuleObjectTypeDefintion = {
 			},
 			association: void 0
 		},
+		useOpenIdTokenClaimsToAssociateToTenant: {
+			name: "useOpenIdTokenClaimsToAssociateToTenant",
+			objectTypeName: "userRegistrationTenantRule",
+			type: "boolean",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: false,
+				regex: void 0
+			},
+			association: void 0
+		},
 		createdAt: {
 			name: "createdAt",
 			objectTypeName: "userRegistrationTenantRule",
@@ -49312,7 +49883,7 @@ function getObjectTypeCapitalizedSingularLabel(translation, objectTypeName) {
 	return capitalizeFirstLetter(getObjectTypeSingularLabel(translation, objectTypeName));
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/locale/utils/buildFormatNumber.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/locale/utils/buildFormatNumber.mjs
 var buildFormatNumber = (locale) => {
 	let formatter;
 	if (typeof Intl !== "undefined" && Intl.NumberFormat) try {
@@ -49324,7 +49895,7 @@ var buildFormatNumber = (locale) => {
 	};
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/locale/deDE.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/locale/deDE.mjs
 var formatNumber$4 = buildFormatNumber("de-DE");
 var deDE$1 = { components: {
 	MuiBreadcrumbs: { defaultProps: { expandText: "Pfad anzeigen" } },
@@ -49362,10 +49933,10 @@ var deDE$1 = { components: {
 	} }
 } };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/locale/enUS.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/locale/enUS.mjs
 var enUS$1 = {};
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/locale/esES.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/locale/esES.mjs
 var formatNumber$3 = buildFormatNumber("es-ES");
 var esES$1 = { components: {
 	MuiBreadcrumbs: { defaultProps: { expandText: "Mostrar ruta" } },
@@ -49403,7 +49974,7 @@ var esES$1 = { components: {
 	} }
 } };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/locale/frFR.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/locale/frFR.mjs
 var formatNumber$2 = buildFormatNumber("fr-FR");
 var frFR$1 = { components: {
 	MuiBreadcrumbs: { defaultProps: { expandText: "Montrer le chemin" } },
@@ -49441,7 +50012,7 @@ var frFR$1 = { components: {
 	} }
 } };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/locale/itIT.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/locale/itIT.mjs
 var formatNumber$1 = buildFormatNumber("it-IT");
 var itIT$1 = { components: {
 	MuiBreadcrumbs: { defaultProps: { expandText: "Visualizza percorso" } },
@@ -49479,7 +50050,7 @@ var itIT$1 = { components: {
 	} }
 } };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/locale/nlNL.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/locale/nlNL.mjs
 var formatNumber = buildFormatNumber("nl-NL");
 var nlNL$1 = { components: {
 	MuiBreadcrumbs: { defaultProps: { expandText: "Pad tonen" } },
@@ -49517,12 +50088,12 @@ var nlNL$1 = { components: {
 	} }
 } };
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_01acbf00a2427cc18e39f322dd9b0de2/node_modules/@mui/x-date-pickers/locales/utils/getPickersLocalization.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.1.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_554d179ac5f3dd77f28f979e78899858/node_modules/@mui/x-date-pickers/locales/utils/getPickersLocalization.mjs
 var getPickersLocalization = (pickersTranslations) => {
 	return { components: { MuiLocalizationProvider: { defaultProps: { localeText: _extends({}, pickersTranslations) } } } };
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_01acbf00a2427cc18e39f322dd9b0de2/node_modules/@mui/x-date-pickers/locales/deDE.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.1.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_554d179ac5f3dd77f28f979e78899858/node_modules/@mui/x-date-pickers/locales/deDE.mjs
 var timeViews$1 = {
 	hours: "Stunden",
 	minutes: "Minuten",
@@ -49640,7 +50211,7 @@ var enUS = getPickersLocalization({
 	empty: "Empty"
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_01acbf00a2427cc18e39f322dd9b0de2/node_modules/@mui/x-date-pickers/locales/esES.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.1.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_554d179ac5f3dd77f28f979e78899858/node_modules/@mui/x-date-pickers/locales/esES.mjs
 var views$2 = {
 	hours: "Horas",
 	minutes: "Minutos",
@@ -49701,7 +50272,7 @@ var esES = getPickersLocalization({
 	empty: "Vacío"
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_01acbf00a2427cc18e39f322dd9b0de2/node_modules/@mui/x-date-pickers/locales/frFR.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.1.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_554d179ac5f3dd77f28f979e78899858/node_modules/@mui/x-date-pickers/locales/frFR.mjs
 var views$1 = {
 	hours: "heures",
 	minutes: "minutes",
@@ -49762,7 +50333,7 @@ var frFR = getPickersLocalization({
 	empty: "Vider"
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_01acbf00a2427cc18e39f322dd9b0de2/node_modules/@mui/x-date-pickers/locales/itIT.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.1.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_554d179ac5f3dd77f28f979e78899858/node_modules/@mui/x-date-pickers/locales/itIT.mjs
 var views = {
 	hours: "le ore",
 	minutes: "i minuti",
@@ -49790,6 +50361,7 @@ var itIT = getPickersLocalization({
 	dateTimePickerToolbarTitle: "Seleziona data e orario",
 	timePickerToolbarTitle: "Seleziona orario",
 	dateRangePickerToolbarTitle: "Seleziona intervallo di date",
+	timeRangePickerToolbarTitle: "Seleziona intervallo di orari",
 	clockLabelText: (view, formattedTime) => `Seleziona ${views[view]}. ${!formattedTime ? "Nessun orario selezionato" : `L'ora selezionata è ${formattedTime}`}`,
 	hoursClockNumberText: (hours) => `${hours} ore`,
 	minutesClockNumberText: (minutes) => `${minutes} minuti`,
@@ -49801,6 +50373,7 @@ var itIT = getPickersLocalization({
 	calendarWeekNumberText: (weekNumber) => `${weekNumber}`,
 	openDatePickerDialogue: (formattedDate) => formattedDate ? `Scegli la data, la data selezionata è ${formattedDate}` : "Scegli la data",
 	openTimePickerDialogue: (formattedTime) => formattedTime ? `Scegli l'ora, l'ora selezionata è ${formattedTime}` : "Scegli l'ora",
+	openRangePickerDialogue: (formattedRange) => formattedRange ? `Scegli l'intervallo, l'intervallo selezionato è ${formattedRange}` : "Scegli l'intervallo",
 	fieldClearLabel: "Cancella valore",
 	timeTableLabel: "scegli un'ora",
 	dateTableLabel: "scegli una data",
@@ -49823,7 +50396,7 @@ var itIT = getPickersLocalization({
 	empty: "Vuoto"
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_01acbf00a2427cc18e39f322dd9b0de2/node_modules/@mui/x-date-pickers/locales/nlNL.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.1.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_554d179ac5f3dd77f28f979e78899858/node_modules/@mui/x-date-pickers/locales/nlNL.mjs
 var timeViews = {
 	hours: "uren",
 	minutes: "minuten",
@@ -56586,7 +57159,7 @@ var require_get_proto = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	} : null;
 }));
 //#endregion
-//#region node_modules/.pnpm/hasown@2.0.2/node_modules/hasown/index.js
+//#region node_modules/.pnpm/hasown@2.0.3/node_modules/hasown/index.js
 var require_hasown = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var call = Function.prototype.call;
 	var $hasOwn = Object.prototype.hasOwnProperty;
@@ -57088,7 +57661,7 @@ var require_warning = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = warning;
 }));
 //#endregion
-//#region node_modules/.pnpm/jotai@2.19.1_@babel+core@7.29.0_@babel+template@7.28.6_@types+react@18.3.1_react@18.3.1/node_modules/jotai/esm/vanilla/internals.mjs
+//#region node_modules/.pnpm/jotai@2.20.0_@babel+core@7.29.0_@babel+template@7.28.6_@types+react@18.3.1_react@18.3.1/node_modules/jotai/esm/vanilla/internals.mjs
 var import_node_polyglot = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var entries = require_object_entries();
 	var warning = require_warning();
@@ -57351,7 +57924,7 @@ function hasInitialValue(atom) {
 	return "init" in atom;
 }
 function isActuallyWritableAtom(atom) {
-	return !!atom.write;
+	return typeof atom.write === "function";
 }
 function hasOnMount(atom) {
 	return !!atom.onMount;
@@ -57383,24 +57956,23 @@ function getMountedOrPendingDependents(atom, atomState, mountedMap) {
 	for (const a of pendingDependents) dependents.add(a);
 	return dependents;
 }
-var BUILDING_BLOCK_atomRead = (_store, atom, ...params) => atom.read(...params);
-var BUILDING_BLOCK_atomWrite = (_store, atom, ...params) => atom.write(...params);
-var BUILDING_BLOCK_atomOnInit = (store, atom) => {
-	var _a;
-	return (_a = atom.INTERNAL_onInit) == null ? void 0 : _a.call(atom, store);
-};
-var BUILDING_BLOCK_atomOnMount = (_store, atom, setAtom) => {
+function hasOnInit(atom) {
+	return !!atom.INTERNAL_onInit;
+}
+var BUILDING_BLOCK_atomRead = (_buildingBlocks, _store, atom, ...params) => atom.read(...params);
+var BUILDING_BLOCK_atomWrite = (_buildingBlocks, _store, atom, ...params) => atom.write(...params);
+var BUILDING_BLOCK_atomOnInit = (_buildingBlocks, store, atom) => atom.INTERNAL_onInit(store);
+var BUILDING_BLOCK_atomOnMount = (_buildingBlocks, _store, atom, setAtom) => {
 	var _a;
 	return (_a = atom.onMount) == null ? void 0 : _a.call(atom, setAtom);
 };
-var BUILDING_BLOCK_ensureAtomState = (store, atom) => {
+var BUILDING_BLOCK_ensureAtomState = (buildingBlocks, store, atom) => {
 	var _a;
-	const buildingBlocks = getInternalBuildingBlocks(store);
 	const atomStateMap = buildingBlocks[0];
-	const storeHooks = buildingBlocks[6];
-	const atomOnInit = buildingBlocks[9];
 	let atomState = atomStateMap.get(atom);
 	if (!atomState) {
+		const storeHooks = buildingBlocks[6];
+		const atomOnInit = buildingBlocks[9];
 		atomState = {
 			d: /* @__PURE__ */ new Map(),
 			p: /* @__PURE__ */ new Set(),
@@ -57408,13 +57980,12 @@ var BUILDING_BLOCK_ensureAtomState = (store, atom) => {
 		};
 		atomStateMap.set(atom, atomState);
 		(_a = storeHooks.i) == null || _a.call(storeHooks, atom);
-		atomOnInit?.(store, atom);
+		if (hasOnInit(atom)) atomOnInit(buildingBlocks, store, atom);
 	}
 	return atomState;
 };
-var BUILDING_BLOCK_flushCallbacks = (store) => {
+var BUILDING_BLOCK_flushCallbacks = (buildingBlocks, store) => {
 	var _a;
-	const buildingBlocks = getInternalBuildingBlocks(store);
 	const mountedMap = buildingBlocks[1];
 	const changedAtoms = buildingBlocks[3];
 	const mountCallbacks = buildingBlocks[4];
@@ -57443,12 +58014,11 @@ var BUILDING_BLOCK_flushCallbacks = (store) => {
 		for (const fn of mountCallbacks) callbacks.add(fn);
 		mountCallbacks.clear();
 		for (const fn of callbacks) call(fn);
-		if (changedAtoms.size) recomputeInvalidatedAtoms(store);
+		if (changedAtoms.size) recomputeInvalidatedAtoms(buildingBlocks, store);
 	} while (changedAtoms.size || unmountCallbacks.size || mountCallbacks.size);
 	if (errors.length) throw new AggregateError(errors);
 };
-var BUILDING_BLOCK_recomputeInvalidatedAtoms = (store) => {
-	const buildingBlocks = getInternalBuildingBlocks(store);
+var BUILDING_BLOCK_recomputeInvalidatedAtoms = (buildingBlocks, store) => {
 	const mountedMap = buildingBlocks[1];
 	const invalidatedAtoms = buildingBlocks[2];
 	const changedAtoms = buildingBlocks[3];
@@ -57464,7 +58034,7 @@ var BUILDING_BLOCK_recomputeInvalidatedAtoms = (store) => {
 	const stackStates = [];
 	for (const atom of changedAtoms) {
 		stackAtoms.push(atom);
-		stackStates.push(ensureAtomState(store, atom));
+		stackStates.push(ensureAtomState(buildingBlocks, store, atom));
 	}
 	while (stackAtoms.length) {
 		const top = stackAtoms.length - 1;
@@ -57488,7 +58058,7 @@ var BUILDING_BLOCK_recomputeInvalidatedAtoms = (store) => {
 		visiting.add(a);
 		for (const d of getMountedOrPendingDependents(a, aState, mountedMap)) if (!visiting.has(d)) {
 			stackAtoms.push(d);
-			stackStates.push(ensureAtomState(store, d));
+			stackStates.push(ensureAtomState(buildingBlocks, store, d));
 		}
 	}
 	for (let i = sortedReversedAtoms.length - 1; i >= 0; --i) {
@@ -57501,15 +58071,14 @@ var BUILDING_BLOCK_recomputeInvalidatedAtoms = (store) => {
 		}
 		if (hasChangedDeps) {
 			invalidatedAtoms.set(a, aState.n);
-			readAtomState(store, a);
-			mountDependencies(store, a);
+			readAtomState(buildingBlocks, store, a);
+			mountDependencies(buildingBlocks, store, a);
 		}
 		invalidatedAtoms.delete(a);
 	}
 };
-var BUILDING_BLOCK_readAtomState = (store, atom) => {
+var BUILDING_BLOCK_readAtomState = (buildingBlocks, store, atom) => {
 	var _a, _b;
-	const buildingBlocks = getInternalBuildingBlocks(store);
 	const mountedMap = buildingBlocks[1];
 	const invalidatedAtoms = buildingBlocks[2];
 	const changedAtoms = buildingBlocks[3];
@@ -57524,7 +58093,7 @@ var BUILDING_BLOCK_readAtomState = (store, atom) => {
 	const setAtomStateValueOrPromise = buildingBlocks[20];
 	const registerAbortHandler = buildingBlocks[26];
 	const storeEpochHolder = buildingBlocks[28];
-	const atomState = ensureAtomState(store, atom);
+	const atomState = ensureAtomState(buildingBlocks, store, atom);
 	const storeEpochNumber = storeEpochHolder[0];
 	if (isAtomStateInitialized(atomState)) {
 		if (mountedMap.has(atom) && invalidatedAtoms.get(atom) !== atomState.n || atomState.m === storeEpochNumber) {
@@ -57532,7 +58101,7 @@ var BUILDING_BLOCK_readAtomState = (store, atom) => {
 			return atomState;
 		}
 		let hasChangedDeps = false;
-		for (const [a, n] of atomState.d) if (readAtomState(store, a).n !== n) {
+		for (const [a, n] of atomState.d) if (readAtomState(buildingBlocks, store, a).n !== n) {
 			hasChangedDeps = true;
 			break;
 		}
@@ -57549,22 +58118,22 @@ var BUILDING_BLOCK_readAtomState = (store, atom) => {
 	const mountDependenciesIfAsync = () => {
 		if (mountedMap.has(atom)) {
 			const shouldRecompute = !changedAtoms.size;
-			mountDependencies(store, atom);
+			mountDependencies(buildingBlocks, store, atom);
 			if (shouldRecompute) {
-				recomputeInvalidatedAtoms(store);
-				flushCallbacks(store);
+				recomputeInvalidatedAtoms(buildingBlocks, store);
+				flushCallbacks(buildingBlocks, store);
 			}
 		}
 	};
 	const getter = (a) => {
 		var _a2;
 		if (a === atom) {
-			const aState2 = ensureAtomState(store, a);
-			if (!isAtomStateInitialized(aState2)) if (hasInitialValue(a)) setAtomStateValueOrPromise(store, a, a.init);
+			const aState2 = ensureAtomState(buildingBlocks, store, a);
+			if (!isAtomStateInitialized(aState2)) if (hasInitialValue(a)) setAtomStateValueOrPromise(buildingBlocks, store, a, a.init);
 			else throw new Error("no atom init");
 			return returnAtomValue(aState2);
 		}
-		const aState = readAtomState(store, a);
+		const aState = readAtomState(buildingBlocks, store, a);
 		try {
 			return returnAtomValue(aState);
 		} finally {
@@ -57585,10 +58154,10 @@ var BUILDING_BLOCK_readAtomState = (store, atom) => {
 		get setSelf() {
 			if (!setSelf && isActuallyWritableAtom(atom)) setSelf = (...args) => {
 				if (!isSync) try {
-					return writeAtomState(store, atom, ...args);
+					return writeAtomState(buildingBlocks, store, atom, args);
 				} finally {
-					recomputeInvalidatedAtoms(store);
-					flushCallbacks(store);
+					recomputeInvalidatedAtoms(buildingBlocks, store);
+					flushCallbacks(buildingBlocks, store);
 				}
 			};
 			return setSelf;
@@ -57597,10 +58166,10 @@ var BUILDING_BLOCK_readAtomState = (store, atom) => {
 	const prevEpochNumber = atomState.n;
 	const prevInvalidated = invalidatedAtoms.get(atom) === prevEpochNumber;
 	try {
-		const valueOrPromise = atomRead(store, atom, getter, options);
-		setAtomStateValueOrPromise(store, atom, valueOrPromise);
+		const valueOrPromise = atomRead(buildingBlocks, store, atom, getter, options);
+		setAtomStateValueOrPromise(buildingBlocks, store, atom, valueOrPromise);
 		if (isPromiseLike$1(valueOrPromise)) {
-			registerAbortHandler(store, valueOrPromise, () => controller == null ? void 0 : controller.abort());
+			registerAbortHandler(buildingBlocks, store, valueOrPromise, () => controller == null ? void 0 : controller.abort());
 			const settle = () => {
 				pruneDependencies();
 				mountDependenciesIfAsync();
@@ -57625,17 +58194,16 @@ var BUILDING_BLOCK_readAtomState = (store, atom) => {
 		}
 	}
 };
-var BUILDING_BLOCK_invalidateDependents = (store, atom) => {
-	const buildingBlocks = getInternalBuildingBlocks(store);
+var BUILDING_BLOCK_invalidateDependents = (buildingBlocks, store, atom) => {
 	const mountedMap = buildingBlocks[1];
 	const invalidatedAtoms = buildingBlocks[2];
 	const ensureAtomState = buildingBlocks[11];
 	const stack = [atom];
 	while (stack.length) {
 		const a = stack.pop();
-		const aState = ensureAtomState(store, a);
+		const aState = ensureAtomState(buildingBlocks, store, a);
 		for (const d of getMountedOrPendingDependents(a, aState, mountedMap)) {
-			const dState = ensureAtomState(store, d);
+			const dState = ensureAtomState(buildingBlocks, store, d);
 			if (invalidatedAtoms.get(d) !== dState.n) {
 				invalidatedAtoms.set(d, dState.n);
 				stack.push(d);
@@ -57643,8 +58211,7 @@ var BUILDING_BLOCK_invalidateDependents = (store, atom) => {
 		}
 	}
 };
-var BUILDING_BLOCK_writeAtomState = (store, atom, ...args) => {
-	const buildingBlocks = getInternalBuildingBlocks(store);
+var BUILDING_BLOCK_writeAtomState = (buildingBlocks, store, atom, args) => {
 	const changedAtoms = buildingBlocks[3];
 	const storeHooks = buildingBlocks[6];
 	const atomWrite = buildingBlocks[8];
@@ -57658,41 +58225,40 @@ var BUILDING_BLOCK_writeAtomState = (store, atom, ...args) => {
 	const setAtomStateValueOrPromise = buildingBlocks[20];
 	const storeEpochHolder = buildingBlocks[28];
 	let isSync = true;
-	const getter = (a) => returnAtomValue(readAtomState(store, a));
+	const getter = (a) => returnAtomValue(readAtomState(buildingBlocks, store, a));
 	const setter = (a, ...args2) => {
 		var _a;
-		const aState = ensureAtomState(store, a);
+		const aState = ensureAtomState(buildingBlocks, store, a);
 		try {
 			if (a === atom) {
 				if (!hasInitialValue(a)) throw new Error("atom not writable");
 				const prevEpochNumber = aState.n;
 				const v = args2[0];
-				setAtomStateValueOrPromise(store, a, v);
-				mountDependencies(store, a);
+				setAtomStateValueOrPromise(buildingBlocks, store, a, v);
+				mountDependencies(buildingBlocks, store, a);
 				if (prevEpochNumber !== aState.n) {
 					++storeEpochHolder[0];
 					changedAtoms.add(a);
-					invalidateDependents(store, a);
+					invalidateDependents(buildingBlocks, store, a);
 					(_a = storeHooks.c) == null || _a.call(storeHooks, a);
 				}
 				return;
-			} else return writeAtomState(store, a, ...args2);
+			} else return writeAtomState(buildingBlocks, store, a, args2);
 		} finally {
 			if (!isSync) {
-				recomputeInvalidatedAtoms(store);
-				flushCallbacks(store);
+				recomputeInvalidatedAtoms(buildingBlocks, store);
+				flushCallbacks(buildingBlocks, store);
 			}
 		}
 	};
 	try {
-		return atomWrite(store, atom, getter, setter, ...args);
+		return atomWrite(buildingBlocks, store, atom, getter, setter, ...args);
 	} finally {
 		isSync = false;
 	}
 };
-var BUILDING_BLOCK_mountDependencies = (store, atom) => {
+var BUILDING_BLOCK_mountDependencies = (buildingBlocks, store, atom) => {
 	var _a;
-	const buildingBlocks = getInternalBuildingBlocks(store);
 	const mountedMap = buildingBlocks[1];
 	const changedAtoms = buildingBlocks[3];
 	const storeHooks = buildingBlocks[6];
@@ -57700,28 +58266,27 @@ var BUILDING_BLOCK_mountDependencies = (store, atom) => {
 	const invalidateDependents = buildingBlocks[15];
 	const mountAtom = buildingBlocks[18];
 	const unmountAtom = buildingBlocks[19];
-	const atomState = ensureAtomState(store, atom);
+	const atomState = ensureAtomState(buildingBlocks, store, atom);
 	const mounted = mountedMap.get(atom);
 	if (mounted && atomState.d.size > 0) {
 		for (const [a, n] of atomState.d) if (!mounted.d.has(a)) {
-			const aState = ensureAtomState(store, a);
-			mountAtom(store, a).t.add(atom);
+			const aState = ensureAtomState(buildingBlocks, store, a);
+			mountAtom(buildingBlocks, store, a).t.add(atom);
 			mounted.d.add(a);
 			if (n !== aState.n) {
 				changedAtoms.add(a);
-				invalidateDependents(store, a);
+				invalidateDependents(buildingBlocks, store, a);
 				(_a = storeHooks.c) == null || _a.call(storeHooks, a);
 			}
 		}
 		for (const a of mounted.d) if (!atomState.d.has(a)) {
 			mounted.d.delete(a);
-			unmountAtom(store, a)?.t.delete(atom);
+			unmountAtom(buildingBlocks, store, a)?.t.delete(atom);
 		}
 	}
 };
-var BUILDING_BLOCK_mountAtom = (store, atom) => {
+var BUILDING_BLOCK_mountAtom = (buildingBlocks, store, atom) => {
 	var _a;
-	const buildingBlocks = getInternalBuildingBlocks(store);
 	const mountedMap = buildingBlocks[1];
 	const mountCallbacks = buildingBlocks[4];
 	const storeHooks = buildingBlocks[6];
@@ -57732,11 +58297,11 @@ var BUILDING_BLOCK_mountAtom = (store, atom) => {
 	const readAtomState = buildingBlocks[14];
 	const writeAtomState = buildingBlocks[16];
 	const mountAtom = buildingBlocks[18];
-	const atomState = ensureAtomState(store, atom);
+	const atomState = ensureAtomState(buildingBlocks, store, atom);
 	let mounted = mountedMap.get(atom);
 	if (!mounted) {
-		readAtomState(store, atom);
-		for (const a of atomState.d.keys()) mountAtom(store, a).t.add(atom);
+		readAtomState(buildingBlocks, store, atom);
+		for (const a of atomState.d.keys()) mountAtom(buildingBlocks, store, a).t.add(atom);
 		mounted = {
 			l: /* @__PURE__ */ new Set(),
 			d: new Set(atomState.d.keys()),
@@ -57748,16 +58313,16 @@ var BUILDING_BLOCK_mountAtom = (store, atom) => {
 				let isSync = true;
 				const setAtom = (...args) => {
 					try {
-						return writeAtomState(store, atom, ...args);
+						return writeAtomState(buildingBlocks, store, atom, args);
 					} finally {
 						if (!isSync) {
-							recomputeInvalidatedAtoms(store);
-							flushCallbacks(store);
+							recomputeInvalidatedAtoms(buildingBlocks, store);
+							flushCallbacks(buildingBlocks, store);
 						}
 					}
 				};
 				try {
-					const onUnmount = atomOnMount(store, atom, setAtom);
+					const onUnmount = atomOnMount(buildingBlocks, store, atom, setAtom);
 					if (onUnmount) mounted.u = () => {
 						isSync = true;
 						try {
@@ -57776,15 +58341,14 @@ var BUILDING_BLOCK_mountAtom = (store, atom) => {
 	}
 	return mounted;
 };
-var BUILDING_BLOCK_unmountAtom = (store, atom) => {
+var BUILDING_BLOCK_unmountAtom = (buildingBlocks, store, atom) => {
 	var _a, _b;
-	const buildingBlocks = getInternalBuildingBlocks(store);
 	const mountedMap = buildingBlocks[1];
 	const unmountCallbacks = buildingBlocks[5];
 	const storeHooks = buildingBlocks[6];
 	const ensureAtomState = buildingBlocks[11];
 	const unmountAtom = buildingBlocks[19];
-	const atomState = ensureAtomState(store, atom);
+	const atomState = ensureAtomState(buildingBlocks, store, atom);
 	let mounted = mountedMap.get(atom);
 	if (!mounted || mounted.l.size) return mounted;
 	let isDependent = false;
@@ -57796,63 +58360,60 @@ var BUILDING_BLOCK_unmountAtom = (store, atom) => {
 		if (mounted.u) unmountCallbacks.add(mounted.u);
 		mounted = void 0;
 		mountedMap.delete(atom);
-		for (const a of atomState.d.keys()) unmountAtom(store, a)?.t.delete(atom);
+		for (const a of atomState.d.keys()) unmountAtom(buildingBlocks, store, a)?.t.delete(atom);
 		(_b = storeHooks.u) == null || _b.call(storeHooks, atom);
 		return;
 	}
 	return mounted;
 };
-var BUILDING_BLOCK_setAtomStateValueOrPromise = (store, atom, valueOrPromise) => {
-	const buildingBlocks = getInternalBuildingBlocks(store);
+var BUILDING_BLOCK_setAtomStateValueOrPromise = (buildingBlocks, store, atom, valueOrPromise) => {
 	const ensureAtomState = buildingBlocks[11];
 	const abortPromise = buildingBlocks[27];
-	const atomState = ensureAtomState(store, atom);
+	const atomState = ensureAtomState(buildingBlocks, store, atom);
 	const hasPrevValue = "v" in atomState;
 	const prevValue = atomState.v;
-	if (isPromiseLike$1(valueOrPromise)) for (const a of atomState.d.keys()) addPendingPromiseToDependency(atom, valueOrPromise, ensureAtomState(store, a));
+	if (isPromiseLike$1(valueOrPromise)) for (const a of atomState.d.keys()) addPendingPromiseToDependency(atom, valueOrPromise, ensureAtomState(buildingBlocks, store, a));
 	atomState.v = valueOrPromise;
 	delete atomState.e;
 	if (!hasPrevValue || !Object.is(prevValue, atomState.v)) {
 		++atomState.n;
-		if (isPromiseLike$1(prevValue)) abortPromise(store, prevValue);
+		if (isPromiseLike$1(prevValue)) abortPromise(buildingBlocks, store, prevValue);
 	}
 };
-var BUILDING_BLOCK_storeGet = (store, atom) => {
-	const readAtomState = getInternalBuildingBlocks(store)[14];
-	return returnAtomValue(readAtomState(store, atom));
+var BUILDING_BLOCK_storeGet = (buildingBlocks, store, atom) => {
+	const readAtomState = buildingBlocks[14];
+	return returnAtomValue(readAtomState(buildingBlocks, store, atom));
 };
-var BUILDING_BLOCK_storeSet = (store, atom, ...args) => {
-	const buildingBlocks = getInternalBuildingBlocks(store);
+var BUILDING_BLOCK_storeSet = (buildingBlocks, store, atom, ...args) => {
 	const changedAtoms = buildingBlocks[3];
 	const flushCallbacks = buildingBlocks[12];
 	const recomputeInvalidatedAtoms = buildingBlocks[13];
 	const writeAtomState = buildingBlocks[16];
 	const prevChangedAtomsSize = changedAtoms.size;
 	try {
-		return writeAtomState(store, atom, ...args);
+		return writeAtomState(buildingBlocks, store, atom, args);
 	} finally {
 		if (changedAtoms.size !== prevChangedAtomsSize) {
-			recomputeInvalidatedAtoms(store);
-			flushCallbacks(store);
+			recomputeInvalidatedAtoms(buildingBlocks, store);
+			flushCallbacks(buildingBlocks, store);
 		}
 	}
 };
-var BUILDING_BLOCK_storeSub = (store, atom, listener) => {
-	const buildingBlocks = getInternalBuildingBlocks(store);
+var BUILDING_BLOCK_storeSub = (buildingBlocks, store, atom, listener) => {
 	const flushCallbacks = buildingBlocks[12];
 	const mountAtom = buildingBlocks[18];
 	const unmountAtom = buildingBlocks[19];
-	const listeners = mountAtom(store, atom).l;
+	const listeners = mountAtom(buildingBlocks, store, atom).l;
 	listeners.add(listener);
-	flushCallbacks(store);
+	flushCallbacks(buildingBlocks, store);
 	return () => {
 		listeners.delete(listener);
-		unmountAtom(store, atom);
-		flushCallbacks(store);
+		unmountAtom(buildingBlocks, store, atom);
+		flushCallbacks(buildingBlocks, store);
 	};
 };
-var BUILDING_BLOCK_registerAbortHandler = (store, promise, abortHandler) => {
-	const abortHandlersMap = getInternalBuildingBlocks(store)[25];
+var BUILDING_BLOCK_registerAbortHandler = (buildingBlocks, _store, promise, abortHandler) => {
+	const abortHandlersMap = buildingBlocks[25];
 	let abortHandlers = abortHandlersMap.get(promise);
 	if (!abortHandlers) {
 		abortHandlers = /* @__PURE__ */ new Set();
@@ -57862,32 +58423,26 @@ var BUILDING_BLOCK_registerAbortHandler = (store, promise, abortHandler) => {
 	}
 	abortHandlers.add(abortHandler);
 };
-var BUILDING_BLOCK_abortPromise = (store, promise) => {
-	getInternalBuildingBlocks(store)[25].get(promise)?.forEach((fn) => fn());
+var BUILDING_BLOCK_abortPromise = (buildingBlocks, _store, promise) => {
+	buildingBlocks[25].get(promise)?.forEach((fn) => fn());
 };
 var buildingBlockMap = /* @__PURE__ */ new WeakMap();
-var getInternalBuildingBlocks = (store) => {
-	return buildingBlockMap.get(store);
-};
 function getBuildingBlocks(store) {
-	const buildingBlocks = getInternalBuildingBlocks(store);
+	const buildingBlocks = buildingBlockMap.get(store);
 	const enhanceBuildingBlocks = buildingBlocks[24];
-	if (enhanceBuildingBlocks) return enhanceBuildingBlocks(buildingBlocks);
+	if (enhanceBuildingBlocks) return enhanceBuildingBlocks(buildingBlocks, store);
 	return buildingBlocks;
 }
-function buildStore(...buildArgs) {
+function buildStore(...partialBuildingBlocks) {
 	const store = {
 		get(atom) {
-			const storeGet = getInternalBuildingBlocks(store)[21];
-			return storeGet(store, atom);
+			return storeGet(buildingBlocks, store, atom);
 		},
 		set(atom, ...args) {
-			const storeSet = getInternalBuildingBlocks(store)[22];
-			return storeSet(store, atom, ...args);
+			return storeSet(buildingBlocks, store, atom, ...args);
 		},
 		sub(atom, listener) {
-			const storeSub = getInternalBuildingBlocks(store)[23];
-			return storeSub(store, atom, listener);
+			return storeSub(buildingBlocks, store, atom, listener);
 		}
 	};
 	const buildingBlocks = [
@@ -57920,12 +58475,15 @@ function buildStore(...buildArgs) {
 		BUILDING_BLOCK_registerAbortHandler,
 		BUILDING_BLOCK_abortPromise,
 		[0]
-	].map((fn, i) => buildArgs[i] || fn);
+	].map((fn, i) => partialBuildingBlocks[i] || fn);
 	buildingBlockMap.set(store, Object.freeze(buildingBlocks));
+	const storeGet = buildingBlocks[21];
+	const storeSet = buildingBlocks[22];
+	const storeSub = buildingBlocks[23];
 	return store;
 }
 //#endregion
-//#region node_modules/.pnpm/jotai@2.19.1_@babel+core@7.29.0_@babel+template@7.28.6_@types+react@18.3.1_react@18.3.1/node_modules/jotai/esm/vanilla.mjs
+//#region node_modules/.pnpm/jotai@2.20.0_@babel+core@7.29.0_@babel+template@7.28.6_@types+react@18.3.1_react@18.3.1/node_modules/jotai/esm/vanilla.mjs
 var keyCount = 0;
 function atom(read, write) {
 	const key = `atom${++keyCount}`;
@@ -57958,7 +58516,7 @@ function getDefaultStore() {
 	return defaultStore;
 }
 //#endregion
-//#region node_modules/.pnpm/jotai@2.19.1_@babel+core@7.29.0_@babel+template@7.28.6_@types+react@18.3.1_react@18.3.1/node_modules/jotai/esm/react.mjs
+//#region node_modules/.pnpm/jotai@2.20.0_@babel+core@7.29.0_@babel+template@7.28.6_@types+react@18.3.1_react@18.3.1/node_modules/jotai/esm/react.mjs
 var StoreContext = createContext(void 0);
 function useStore(options) {
 	const store = useContext(StoreContext);
@@ -57988,7 +58546,8 @@ var use = React.use || ((promise) => {
 });
 var continuablePromiseMap = /* @__PURE__ */ new WeakMap();
 var createContinuablePromise = (store, promise, getValue) => {
-	const registerAbortHandler = getBuildingBlocks(store)[26];
+	const buildingBlocks = getBuildingBlocks(store);
+	const registerAbortHandler = buildingBlocks[26];
 	let continuablePromise = continuablePromiseMap.get(promise);
 	if (!continuablePromise) {
 		continuablePromise = new Promise((resolve, reject) => {
@@ -58006,14 +58565,14 @@ var createContinuablePromise = (store, promise, getValue) => {
 						continuablePromiseMap.set(nextValue, continuablePromise);
 						curr = nextValue;
 						nextValue.then(onFulfilled(nextValue), onRejected(nextValue));
-						registerAbortHandler(store, nextValue, onAbort);
+						registerAbortHandler(buildingBlocks, store, nextValue, onAbort);
 					} else resolve(nextValue);
 				} catch (e) {
 					reject(e);
 				}
 			};
 			promise.then(onFulfilled(promise), onRejected(promise));
-			registerAbortHandler(store, promise, onAbort);
+			registerAbortHandler(buildingBlocks, store, promise, onAbort);
 		});
 		continuablePromiseMap.set(promise, continuablePromise);
 	}
@@ -60611,7 +61170,8 @@ var require__Stack = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	* @param {Array} [entries] The key-value pairs to cache.
 	*/
 	function Stack(entries) {
-		this.size = (this.__data__ = new ListCache(entries)).size;
+		var data = this.__data__ = new ListCache(entries);
+		this.size = data.size;
 	}
 	Stack.prototype.clear = stackClear;
 	Stack.prototype["delete"] = stackDelete;
@@ -63203,7 +63763,7 @@ var public_p2_config_default = {
 		"msal": { "clientId": "194145f8-c6dd-4fff-9162-4069cbd0c0b1" },
 		"google": { "clientId": "905042472880-rv5v9r3a45c02dp3nht2klqhdrqmlo6b.apps.googleusercontent.com" },
 		"okta-sephora": { "clientId": "0oa7exckjf7mnoM7c0i7" },
-		"okta-sephora-global": { "clientId": "0oavs3nez7SeXuFLU417" },
+		"okta-sephora-global": { "clientId": "0oavi71769d07Luv7417" },
 		"te-digital-pass": { "clientId": "app-surfy-prod" },
 		"azure-vca": { "clientId": "0271aec8-d6fa-4328-82d5-93463001184a" },
 		"azure-te": { "clientId": "52c5380a-833f-422a-ad56-3d4a98842353" },
@@ -69990,10 +70550,10 @@ function ClickOnIndexViewMenuPathBreadcrumb(props) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/Box/boxClasses.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/Box/boxClasses.mjs
 var boxClasses = generateUtilityClasses("MuiBox", ["root"]);
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/Box/Box.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/Box/Box.mjs
 var Box$1 = createBox({
 	themeId: identifier_default,
 	defaultTheme: createTheme(),
@@ -70001,8 +70561,18 @@ var Box$1 = createBox({
 	generateClassName: ClassNameGenerator.generate
 });
 process.env.NODE_ENV !== "production" && (Box$1.propTypes = {
+	/**
+	* @ignore
+	*/
 	children: import_prop_types.default.node,
+	/**
+	* The component used for the root node.
+	* Either a string to use a HTML element or a component.
+	*/
 	component: import_prop_types.default.elementType,
+	/**
+	* The system prop that allows defining system overrides as well as additional CSS styles.
+	*/
 	sx: import_prop_types.default.oneOfType([
 		import_prop_types.default.arrayOf(import_prop_types.default.oneOfType([
 			import_prop_types.default.func,
@@ -70172,7 +70742,7 @@ function SurfyHelpStandaloneViewMenuBreadcrumb(props) {
 var version = {
 	"major": 3,
 	"minor": 4,
-	"build": 191
+	"build": 195
 };
 //#endregion
 //#region src/back/Tracking/version.ts
@@ -70540,6 +71110,12 @@ var jsonTranslationsFiles = {
 		"CompanyTypeLabel.notClassified": "Plateforme non classifiée",
 		"CompareEntities.buttons.reset.help": "Recommencer l'import",
 		"CompareEntities.buttons.reset.label": "Recommencer",
+		"CompareObjectTypeAutomaticSyncIcon.helpDouble": "Après la comparaison, %{first} et %{second} s'appliquent automatiquement pour cette étape (sans boutons d'onglet).",
+		"CompareObjectTypeAutomaticSyncIcon.helpSingle": "Après la comparaison, %{operation} s'applique automatiquement pour cette étape (sans bouton d'onglet).",
+		"CompareObjectTypeAutomaticSyncIcon.helpTriple": "Après la comparaison, %{first}, %{second} et %{third} s'appliquent automatiquement pour cette étape (sans boutons d'onglet).",
+		"CompareObjectTypeAutomaticSyncIcon.operationCreate": "la création en masse",
+		"CompareObjectTypeAutomaticSyncIcon.operationDelete": "la suppression en masse",
+		"CompareObjectTypeAutomaticSyncIcon.operationUpdate": "la mise à jour en masse",
 		"CompareObjectTypeCreateIcon.help": "Cette synchronisation va effectuer une création des entitiés qui n'existent pas dans la cible",
 		"CompareObjectTypeDeleteIcon.help": "Cette synchronisation va effectuer une suppression des entitiés qui ne proviennent pas de la source",
 		"CompareObjectTypeUpdateIcon.help": "Cette synchronisation va effectuer une mise à jour des entitiés",
@@ -70973,13 +71549,6 @@ var jsonTranslationsFiles = {
 		"GuestCreateAccordion.firstnameLabel": "Prénom",
 		"GuestCreateAccordion.guestPersonTypeMissingMessage": "Aucun type invité n'a été trouvé dans les Person Type. Ajoutez un type de personne avec le code GUEST dans les données de référence globales.",
 		"GuestCreateAccordion.lastnameLabel": "Nom de famille",
-		"GuestInvitePanel.alreadyInvitedToBuilding": "Cet invité est déjà affecté à ce bâtiment",
-		"GuestInvitePanel.assignedBuildingsLabel": "Bâtiments déjà affectés",
-		"GuestInvitePanel.inviteGuestCta": "Inviter sur ce bâtiment",
-		"GuestInvitePanel.inviteSectionTitle": "Inviter l'invité sur un bâtiment",
-		"GuestInvitePanel.inviteSectionTitleForGuest": "Inviter %{guestName} sur un bâtiment",
-		"GuestInvitePanel.noAssignedBuilding": "Aucun bâtiment affecté",
-		"GuestInvitePanel.selectBuildingLabel": "Bâtiment",
 		"GuestListPanel.deleteGuestHelp": "Supprimer cet invité",
 		"GuestListPanel.guestsSectionTitle": "Invités",
 		"GuestListPanel.invitationPeriodLabel": "Période d'invitation : %{startDate} - %{endDate}",
@@ -71047,6 +71616,8 @@ var jsonTranslationsFiles = {
 		"ImportQuadientWorkday.selectCredentials": "Sélectionner les identifiants Workday",
 		"ImportQuadientWorkday.syncDone": "Synchronisation terminée",
 		"ImportQuadientWorkday.title": "Synchronisation Workday (Quadient)",
+		"ImportUpdateAllOption.help": "Appliquer la mise à jour de toutes les lignes sans les sélectionner une par une",
+		"ImportUpdateAllOption.label": "Tout mettre à jour",
 		"ImportUpdateEntitiesTable.description": "Liste des objets qui nécessitent une mise à jour",
 		"ImportUpdateOption.help": "Effectuer la mise à jour des objets sélectionnés",
 		"ImportUpdateOption.label": "Mettre à jour",
@@ -71084,7 +71655,8 @@ var jsonTranslationsFiles = {
 		"ItemTypeOptions.help": "Le nombre d'objets est %{count}",
 		"ItemTypesMapFilterZone.tabs.options": "Options",
 		"ItemsInventory.EmptyList": "Il n'y a aucun objet dans cet espace",
-		"JupDateRangePicker.chooseRange": "Choisissez une période",
+		"JupDateRangePickerRangeTitle.chooseRange": "Choisissez une période",
+		"JupDateRangePickerRangeTitle.openCalendarOnSelectedDateTooltip": "Cliquez pour ouvrir le calendrier sur cette date",
 		"JupRoleAzureSync.checkScopes": "Vérifier les scopes",
 		"JupRoleAzureSync.checkingScopes": "Vérification...",
 		"JupRoleAzureSync.description": "Synchronisez les rôles Jup avec isClaim activé vers les rôles d'application Entra ID. Seuls les rôles marqués 'Exposer en tant que claim OIDC' sont synchronisés.",
@@ -71207,9 +71779,21 @@ var jsonTranslationsFiles = {
 		"MSUsersSync.description": "Synchronisez les utilisateurs Microsoft 365 avec les collaborateurs Surfy. Les collaborateurs manquants sont créés automatiquement à partir de leur adresse e-mail.",
 		"MSUsersSync.refresh": "Synchroniser les utilisateurs Microsoft",
 		"MSUsersSync.title": "Synchronisation des utilisateurs Microsoft",
+		"MapFilterAnalyticsChartModePieToggle.ariaLabel": "Diagramme circulaire",
+		"MapFilterAnalyticsChartModePieToggle.tooltip": "Afficher la répartition en diagramme circulaire (secteurs). Les libellés sont tracés sur le graphique avec des traits de rappel.",
+		"MapFilterAnalyticsChartModePolarAreaToggle.ariaLabel": "Diagramme en aires polaires",
+		"MapFilterAnalyticsChartModePolarAreaToggle.tooltip": "Afficher la répartition en aires polaires (rayons proportionnels aux surfaces). Les libellés sont tracés sur le graphique avec des traits de rappel.",
+		"MapFilterAnalyticsChartModeTableToggle.ariaLabel": "Tableau",
+		"MapFilterAnalyticsChartModeTableToggle.tooltip": "Afficher la répartition sous forme de tableau (libellé, surface, pourcentage).",
+		"MapFilterAnalyticsTable.ariaLabel": "Répartition des surfaces par libellé",
+		"MapFilterAnalyticsTable.columnLabel": "Libellé",
+		"MapFilterAnalyticsTable.columnPercent": "Part",
+		"MapFilterAnalyticsTable.columnSurface": "Surface",
+		"MapFilterAnalyticsTable.rowTotal": "Total",
 		"MapFilterNodeIsAllSelected.help": "Toute la sélection ci dessous sera chargé, même si des nouveaux objets sont crées",
 		"MapFilterNodeToggleAll.action.false": "Tout désélectionner",
 		"MapFilterNodeToggleAll.action.true": "Tout sélectionner",
+		"MapFilters.areaDistributionTitle": "Répartition des surfaces sélectionnées (m²)",
 		"MapFiltersCategory.CategoryHasChildrenSelected": "Des éléments sont sélectionnés",
 		"MapFiltersNode.info.close": "Fermer les informations supplémentaires",
 		"MapFiltersNode.info.open": "Voir le détail et les indicateurs pour %{label}",
@@ -71339,6 +71923,7 @@ var jsonTranslationsFiles = {
 		"ParkingRoomTypeCode.values.PARKING-CAR": "Parking voiture",
 		"ParkingRoomTypeCode.values.PARKING-ELECTRIC-CAR": "Parking voiture electrique",
 		"ParkingRoomTypeCode.values.PARKING-PRM": "Parking PMR",
+		"PartnerApiCredentialsSelector.pleaseSelect": "Veuillez sélectionner",
 		"PartnerEntityCreateTab.button.help": "Créer dans %{partnerName}",
 		"PartnerEntityCreateTab.button.label": "Créer dans %{partnerName}",
 		"PartnerEntityCreateTab.progress.syncing": "Synchronisation %{label}...",
@@ -73178,6 +73763,8 @@ var jsonTranslationsFiles = {
 		"models.Person.properties.telephone.label": "Téléphone fixe",
 		"models.Person.properties.title.description": "Le titre de la personne",
 		"models.Person.properties.title.label": "Titre",
+		"models.Person.properties.workflow.description": "Informations sur les étapes de workflow associées à cette personne",
+		"models.Person.properties.workflow.label": "Workflow",
 		"models.Person.singular": "personne",
 		"models.Person.views.dq-near-end-date.help": "Lister les personnes qui ont une date de fin de contrat après aujourd'hui et qui sont affectées à un poste de travail",
 		"models.Person.views.dq-near-end-date.label": "Personnes quittant l'entreprise",
@@ -73384,8 +73971,8 @@ var jsonTranslationsFiles = {
 		"models.PersonWorkingLocation.singular": "Emplacement de travail des personnes",
 		"models.PersonWorkingLocation.views.booking-maps.help": "Voir toutes les réservations sur un plan",
 		"models.PersonWorkingLocation.views.booking-maps.label": "Réservations sur un plan",
-		"models.PersonWorkingLocation.views.guest-planning.help": "Créer des invités, les affecter à des bâtiments et gérer leurs réservations",
-		"models.PersonWorkingLocation.views.guest-planning.label": "Planning des invités",
+		"models.PersonWorkingLocation.views.guest-planning.help": "Créer des invités externes, les affecter à des bâtiments et gérer leurs réservations",
+		"models.PersonWorkingLocation.views.guest-planning.label": "Planning des invités externes",
 		"models.PersonWorkingLocation.views.my-planning.help": "Gérer mon planning des prochaines semaines",
 		"models.PersonWorkingLocation.views.my-planning.label": "Gérer mon planning",
 		"models.PersonWorkingLocation.views.obo-planning.help": "Gérer le planning et effectuer des réservations pour une autre personne",
@@ -73629,6 +74216,8 @@ var jsonTranslationsFiles = {
 		"models.UserRegistrationTenantRule.properties.automaticUserToRoleMapping.label": "Associer automatiquement les rôles",
 		"models.UserRegistrationTenantRule.properties.domains.description": "Séparer les domaines avec des espaces et inclure l'arobase",
 		"models.UserRegistrationTenantRule.properties.domains.label": "Domaines",
+		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.description": "Associer l'utilisateur au tenant uniquement si le claim exact Surfy.Tenant.<NomDuTenant> est présent dans le token",
+		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.label": "Utiliser les claims OpenID pour associer au tenant",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenRoleMapping.description": "Associer automatiquement les rôles à partir des rôles inclus dans le token OpenID",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenRoleMapping.label": "Utiliser le mappage des rôles via le token OpenID et les Claims",
 		"models.UserRegistrationTenantRule.singular": "Règle d'authentification",
@@ -74099,6 +74688,12 @@ var jsonTranslationsFiles = {
 		"CompanyTypeLabel.notClassified": "Unclassified platform",
 		"CompareEntities.buttons.reset.help": "Restart the import",
 		"CompareEntities.buttons.reset.label": "Restart",
+		"CompareObjectTypeAutomaticSyncIcon.helpDouble": "After compare, %{first} and %{second} run automatically for this step (no tab buttons).",
+		"CompareObjectTypeAutomaticSyncIcon.helpSingle": "After compare, %{operation} runs automatically for this step (no tab button).",
+		"CompareObjectTypeAutomaticSyncIcon.helpTriple": "After compare, %{first}, %{second}, and %{third} run automatically for this step (no tab buttons).",
+		"CompareObjectTypeAutomaticSyncIcon.operationCreate": "bulk creation",
+		"CompareObjectTypeAutomaticSyncIcon.operationDelete": "bulk deletion",
+		"CompareObjectTypeAutomaticSyncIcon.operationUpdate": "bulk update",
 		"CompareObjectTypeCreateIcon.help": "This synchronization will perform a creation of entities that do not exist in the target",
 		"CompareObjectTypeDeleteIcon.help": "This synchronization will perform a deletion of entities that do not come from the source",
 		"CompareObjectTypeUpdateIcon.help": "This synchronization will perform an update of the entities",
@@ -74532,13 +75127,6 @@ var jsonTranslationsFiles = {
 		"GuestCreateAccordion.firstnameLabel": "First name",
 		"GuestCreateAccordion.guestPersonTypeMissingMessage": "No guest type was found in the Person Type. Add a person type with the code GUEST to the global reference data.",
 		"GuestCreateAccordion.lastnameLabel": "Last name",
-		"GuestInvitePanel.alreadyInvitedToBuilding": "This guest is already assigned to this building.",
-		"GuestInvitePanel.assignedBuildingsLabel": "Buildings already affected",
-		"GuestInvitePanel.inviteGuestCta": "Invite to this building",
-		"GuestInvitePanel.inviteSectionTitle": "Invite the guest onto a building",
-		"GuestInvitePanel.inviteSectionTitleForGuest": "Invite %{guestName} to a building",
-		"GuestInvitePanel.noAssignedBuilding": "No buildings affected",
-		"GuestInvitePanel.selectBuildingLabel": "Building",
 		"GuestListPanel.deleteGuestHelp": "Remove this guest",
 		"GuestListPanel.guestsSectionTitle": "Guests",
 		"GuestListPanel.invitationPeriodLabel": "Invitation period: %{startDate} - %{endDate}",
@@ -74606,6 +75194,8 @@ var jsonTranslationsFiles = {
 		"ImportQuadientWorkday.selectCredentials": "Select Workday credentials",
 		"ImportQuadientWorkday.syncDone": "Sync done",
 		"ImportQuadientWorkday.title": "Workday sync (Quadient)",
+		"ImportUpdateAllOption.help": "Apply the update to all rows without selecting them one by one.",
+		"ImportUpdateAllOption.label": "Update everything",
 		"ImportUpdateEntitiesTable.description": "List of objects that require updating",
 		"ImportUpdateOption.help": "Update selected objects",
 		"ImportUpdateOption.label": "Update",
@@ -74643,7 +75233,8 @@ var jsonTranslationsFiles = {
 		"ItemTypeOptions.help": "The number of objects is %{count}",
 		"ItemTypesMapFilterZone.tabs.options": "options",
 		"ItemsInventory.EmptyList": "There are no objects in this space",
-		"JupDateRangePicker.chooseRange": "Choose a period",
+		"JupDateRangePickerRangeTitle.chooseRange": "Choose a period",
+		"JupDateRangePickerRangeTitle.openCalendarOnSelectedDateTooltip": "Click to open the calendar for that date",
 		"JupRoleAzureSync.checkScopes": "Check scopes",
 		"JupRoleAzureSync.checkingScopes": "Checking...",
 		"JupRoleAzureSync.description": "Synchronize Jup roles with isClaim enabled to Entra ID app roles. Only roles marked 'Expose as OIDC claim' are synced.",
@@ -74766,9 +75357,21 @@ var jsonTranslationsFiles = {
 		"MSUsersSync.description": "Synchronize Microsoft 365 users with Surfy collaborators. Missing collaborators are created automatically based on their email address.",
 		"MSUsersSync.refresh": "Sync Microsoft users",
 		"MSUsersSync.title": "Microsoft users synchronization",
+		"MapFilterAnalyticsChartModePieToggle.ariaLabel": "Pie chart",
+		"MapFilterAnalyticsChartModePieToggle.tooltip": "Display the distribution in a pie chart (sectors). The labels are drawn on the graph with guide lines.",
+		"MapFilterAnalyticsChartModePolarAreaToggle.ariaLabel": "Polar area diagram",
+		"MapFilterAnalyticsChartModePolarAreaToggle.tooltip": "Display the distribution in polar areas (radii proportional to the areas). The labels are drawn on the graph with guide lines.",
+		"MapFilterAnalyticsChartModeTableToggle.ariaLabel": "Painting",
+		"MapFilterAnalyticsChartModeTableToggle.tooltip": "Display the distribution in table format (label, area, percentage).",
+		"MapFilterAnalyticsTable.ariaLabel": "Area breakdown by label",
+		"MapFilterAnalyticsTable.columnLabel": "Label",
+		"MapFilterAnalyticsTable.columnPercent": "Part",
+		"MapFilterAnalyticsTable.columnSurface": "Area",
+		"MapFilterAnalyticsTable.rowTotal": "Total",
 		"MapFilterNodeIsAllSelected.help": "All the selection below will be loaded, even if new objects are created",
 		"MapFilterNodeToggleAll.action.false": "unselect all",
 		"MapFilterNodeToggleAll.action.true": "Select all",
+		"MapFilters.areaDistributionTitle": "Distribution of selected areas (m²)",
 		"MapFiltersCategory.CategoryHasChildrenSelected": "Items are selected",
 		"MapFiltersNode.info.close": "Close additional information",
 		"MapFiltersNode.info.open": "See detail and indicators for %{label}",
@@ -74898,6 +75501,7 @@ var jsonTranslationsFiles = {
 		"ParkingRoomTypeCode.values.PARKING-CAR": "Car park",
 		"ParkingRoomTypeCode.values.PARKING-ELECTRIC-CAR": "Electric car parking",
 		"ParkingRoomTypeCode.values.PARKING-PRM": "Accessible parking",
+		"PartnerApiCredentialsSelector.pleaseSelect": "Please select",
 		"PartnerEntityCreateTab.button.help": "Create in %{partnerName}",
 		"PartnerEntityCreateTab.button.label": "Create in %{partnerName}",
 		"PartnerEntityCreateTab.progress.syncing": "Synchronizing %{label} ...",
@@ -74972,7 +75576,7 @@ var jsonTranslationsFiles = {
 		"PersonWorkingLocationByDimensionTable.selectDimensionCard.title": "Select a dimension",
 		"PhysicalItemNotInsideWorkplaceRoom.alignRooms": "Change object spaces to that of the workstation",
 		"PlanningPersonAffectations.alerts.noAffectation.message": "You are not associated with any territory, please contact your assignment manager to be able to reserve a workspace",
-		"PlanningPersonAffectations.alerts.noAffectation.messageForPerson": "%{personFullName} is not associated with any territory, please contact their assignment manager to be able to reserve a workspace",
+		"PlanningPersonAffectations.alerts.noAffectation.messageForPerson": "%{personFullName} is not associated with any territory; please contact their assigned manager to reserve a workspace.",
 		"PlanningPersonAffectations.alerts.noAffectation.title": "Unable to reserve a workstation",
 		"PropertSelectorDrawer.help": "Select the properties you want to display in the table",
 		"PropertSelectorDrawer.options.reset.help": "Return the selection of properties to their initial state",
@@ -76737,6 +77341,8 @@ var jsonTranslationsFiles = {
 		"models.Person.properties.telephone.label": "Phone",
 		"models.Person.properties.title.description": "The title of the person",
 		"models.Person.properties.title.label": "title",
+		"models.Person.properties.workflow.description": "Information about the workflow steps associated with this person",
+		"models.Person.properties.workflow.label": "Workflow",
 		"models.Person.singular": "person",
 		"models.Person.views.dq-near-end-date.help": "List the people who have a contract end date after today and who are assigned to a workstation",
 		"models.Person.views.dq-near-end-date.label": "People leaving the company",
@@ -76943,8 +77549,8 @@ var jsonTranslationsFiles = {
 		"models.PersonWorkingLocation.singular": "People's work location",
 		"models.PersonWorkingLocation.views.booking-maps.help": "View all bookings on a map",
 		"models.PersonWorkingLocation.views.booking-maps.label": "Reservations on a plan",
-		"models.PersonWorkingLocation.views.guest-planning.help": "Create guests, assign them to buildings, and manage their bookings.",
-		"models.PersonWorkingLocation.views.guest-planning.label": "Guest schedule",
+		"models.PersonWorkingLocation.views.guest-planning.help": "Create external guests, assign them to buildings, and manage their bookings.",
+		"models.PersonWorkingLocation.views.guest-planning.label": "External Guest Schedule",
 		"models.PersonWorkingLocation.views.my-planning.help": "Manage my schedule for the next few weeks",
 		"models.PersonWorkingLocation.views.my-planning.label": "Manage my schedule",
 		"models.PersonWorkingLocation.views.obo-planning.help": "Manage the schedule and make bookings for another person",
@@ -77188,6 +77794,8 @@ var jsonTranslationsFiles = {
 		"models.UserRegistrationTenantRule.properties.automaticUserToRoleMapping.label": "Automatically associate roles",
 		"models.UserRegistrationTenantRule.properties.domains.description": "Separate domains with spaces and include the at sign",
 		"models.UserRegistrationTenantRule.properties.domains.label": "Areas",
+		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.description": "Associate the user with the tenant only if the exact claim is surfy.<NomDuTenant> is present in the token",
+		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.label": "Use OpenID claims to associate with the tenant",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenRoleMapping.description": "Automatically associate roles based on the roles included in the OpenID token",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenRoleMapping.label": "Use role mapping via the OpenID token and Claims",
 		"models.UserRegistrationTenantRule.singular": "Authentication rule",
@@ -77658,6 +78266,12 @@ var jsonTranslationsFiles = {
 		"CompanyTypeLabel.notClassified": "Plataforma sin clasificar",
 		"CompareEntities.buttons.reset.help": "Reinicie la importación",
 		"CompareEntities.buttons.reset.label": "Reiniciar",
+		"CompareObjectTypeAutomaticSyncIcon.helpDouble": "Después de la comparación, %{first} y %{second} se aplican automáticamente para este paso (sin botones de tabulación).",
+		"CompareObjectTypeAutomaticSyncIcon.helpSingle": "Después de la comparación, %{operation} se aplica automáticamente para este paso (sin necesidad de pulsar un botón de pestaña).",
+		"CompareObjectTypeAutomaticSyncIcon.helpTriple": "Después de la comparación, %{first} , %{second} y %{third} se aplican automáticamente para este paso (sin botones de tabulación).",
+		"CompareObjectTypeAutomaticSyncIcon.operationCreate": "creación en masa",
+		"CompareObjectTypeAutomaticSyncIcon.operationDelete": "eliminación masiva",
+		"CompareObjectTypeAutomaticSyncIcon.operationUpdate": "la actualización masiva",
 		"CompareObjectTypeCreateIcon.help": "Esta sincronización creará entidades que no existen en el destino.",
 		"CompareObjectTypeDeleteIcon.help": "Esta sincronización realizará una eliminación de entidades que no provienen de la fuente",
 		"CompareObjectTypeUpdateIcon.help": "Esta sincronización actualizará las entidades.",
@@ -78091,13 +78705,6 @@ var jsonTranslationsFiles = {
 		"GuestCreateAccordion.firstnameLabel": "primer nombre",
 		"GuestCreateAccordion.guestPersonTypeMissingMessage": "No se encontró ningún tipo de invitado en el tipo de persona. Agregue un tipo de persona con el código GUEST a los datos de referencia globales.",
 		"GuestCreateAccordion.lastnameLabel": "Apellido",
-		"GuestInvitePanel.alreadyInvitedToBuilding": "Este huésped ya está asignado a este edificio.",
-		"GuestInvitePanel.assignedBuildingsLabel": "Edificios ya afectados",
-		"GuestInvitePanel.inviteGuestCta": "Invitación a este edificio",
-		"GuestInvitePanel.inviteSectionTitle": "Invitar al invitado a un edificio",
-		"GuestInvitePanel.inviteSectionTitleForGuest": "Invitar %{guestName} a un edificio",
-		"GuestInvitePanel.noAssignedBuilding": "Ningún edificio se ha visto afectado.",
-		"GuestInvitePanel.selectBuildingLabel": "Edificio",
 		"GuestListPanel.deleteGuestHelp": "Eliminar a este invitado",
 		"GuestListPanel.guestsSectionTitle": "Huéspedes",
 		"GuestListPanel.invitationPeriodLabel": "Periodo de invitación: %{startDate} - %{endDate}",
@@ -78165,6 +78772,8 @@ var jsonTranslationsFiles = {
 		"ImportQuadientWorkday.selectCredentials": "Seleccione las credenciales de Workday.",
 		"ImportQuadientWorkday.syncDone": "Sincronización completa",
 		"ImportQuadientWorkday.title": "Sincronización de la jornada laboral (Quadient)",
+		"ImportUpdateAllOption.help": "Aplicar la actualización a todas las filas sin seleccionarlas una por una.",
+		"ImportUpdateAllOption.label": "Actualizar todo",
 		"ImportUpdateEntitiesTable.description": "Lista de objetos que requieren actualización",
 		"ImportUpdateOption.help": "Actualizar objetos seleccionados",
 		"ImportUpdateOption.label": "Poner al día",
@@ -78202,7 +78811,8 @@ var jsonTranslationsFiles = {
 		"ItemTypeOptions.help": "El número de objetos es %{count}",
 		"ItemTypesMapFilterZone.tabs.options": "opciones",
 		"ItemsInventory.EmptyList": "No hay objetos en este espacio.",
-		"JupDateRangePicker.chooseRange": "Elige un período",
+		"JupDateRangePickerRangeTitle.chooseRange": "Elige un período",
+		"JupDateRangePickerRangeTitle.openCalendarOnSelectedDateTooltip": "Haz clic para abrir el calendario de esa fecha.",
 		"JupRoleAzureSync.checkScopes": "Comprueba los alcances",
 		"JupRoleAzureSync.checkingScopes": "Verificación...",
 		"JupRoleAzureSync.description": "Sincronice los roles de Jup con isClaim habilitado con los roles de la aplicación Entra ID. Solo se sincronizan los roles marcados como &quot;Exponer como reclamación OIDC&quot;.",
@@ -78325,9 +78935,21 @@ var jsonTranslationsFiles = {
 		"MSUsersSync.description": "Sincroniza los usuarios de Microsoft 365 con los colaboradores de Surfy. Los colaboradores que falten se crearán automáticamente a partir de su dirección de correo electrónico.",
 		"MSUsersSync.refresh": "Sincronizar usuarios de Microsoft",
 		"MSUsersSync.title": "Sincronización de usuarios de Microsoft",
+		"MapFilterAnalyticsChartModePieToggle.ariaLabel": "Gráfico circular",
+		"MapFilterAnalyticsChartModePieToggle.tooltip": "Muestre la distribución en un gráfico circular (sectores). Las etiquetas se dibujan en el gráfico con líneas guía.",
+		"MapFilterAnalyticsChartModePolarAreaToggle.ariaLabel": "Diagrama de área polar",
+		"MapFilterAnalyticsChartModePolarAreaToggle.tooltip": "Muestra la distribución en áreas polares (radios proporcionales a las áreas). Las etiquetas se dibujan en el gráfico con líneas guía.",
+		"MapFilterAnalyticsChartModeTableToggle.ariaLabel": "Cuadro",
+		"MapFilterAnalyticsChartModeTableToggle.tooltip": "Muestre la distribución en formato de tabla (etiqueta, área, porcentaje).",
+		"MapFilterAnalyticsTable.ariaLabel": "Desglose del área por etiqueta",
+		"MapFilterAnalyticsTable.columnLabel": "Etiqueta",
+		"MapFilterAnalyticsTable.columnPercent": "Parte",
+		"MapFilterAnalyticsTable.columnSurface": "superficie",
+		"MapFilterAnalyticsTable.rowTotal": "total",
 		"MapFilterNodeIsAllSelected.help": "Se cargará toda la selección a continuación, incluso si se crean nuevos objetos",
 		"MapFilterNodeToggleAll.action.false": "Deseleccionar todo",
 		"MapFilterNodeToggleAll.action.true": "Seleccionar todo",
+		"MapFilters.areaDistributionTitle": "Distribución de las áreas seleccionadas (m²)",
 		"MapFiltersCategory.CategoryHasChildrenSelected": "Se seleccionan elementos",
 		"MapFiltersNode.info.close": "Cerrar información adicional",
 		"MapFiltersNode.info.open": "Ver detalle e indicadores para %{label}",
@@ -78457,6 +79079,7 @@ var jsonTranslationsFiles = {
 		"ParkingRoomTypeCode.values.PARKING-CAR": "Aparcamiento",
 		"ParkingRoomTypeCode.values.PARKING-ELECTRIC-CAR": "Aparcamiento para coches eléctricos",
 		"ParkingRoomTypeCode.values.PARKING-PRM": "Aparcamiento accesible",
+		"PartnerApiCredentialsSelector.pleaseSelect": "Seleccione",
 		"PartnerEntityCreateTab.button.help": "Crear en %{partnerName}",
 		"PartnerEntityCreateTab.button.label": "Crear en %{partnerName}",
 		"PartnerEntityCreateTab.progress.syncing": "Sincronizando %{label} ...",
@@ -78531,7 +79154,7 @@ var jsonTranslationsFiles = {
 		"PersonWorkingLocationByDimensionTable.selectDimensionCard.title": "Seleccione una dimensión",
 		"PhysicalItemNotInsideWorkplaceRoom.alignRooms": "Cambiar espacios de objetos al de la estación de trabajo.",
 		"PlanningPersonAffectations.alerts.noAffectation.message": "No estás asociado a ningún territorio, por favor contacta a tu responsable de asignación para poder reservar un espacio de trabajo.",
-		"PlanningPersonAffectations.alerts.noAffectation.messageForPerson": "%{personFullName} no está asociado a ningún territorio, por favor contacta a su responsable de asignación para poder reservar un espacio de trabajo.",
+		"PlanningPersonAffectations.alerts.noAffectation.messageForPerson": "%{personFullName} no está asociado a ningún territorio; póngase en contacto con su gerente asignado para reservar un espacio de trabajo.",
 		"PlanningPersonAffectations.alerts.noAffectation.title": "No se puede reservar una estación de trabajo",
 		"PropertSelectorDrawer.help": "Seleccione las propiedades que desea mostrar en la tabla",
 		"PropertSelectorDrawer.options.reset.help": "Restablecer la selección de propiedades a su estado inicial",
@@ -80296,6 +80919,8 @@ var jsonTranslationsFiles = {
 		"models.Person.properties.telephone.label": "Teléfono fijo",
 		"models.Person.properties.title.description": "El titulo de la persona",
 		"models.Person.properties.title.label": "título",
+		"models.Person.properties.workflow.description": "Información sobre los pasos del flujo de trabajo asociados con esta persona.",
+		"models.Person.properties.workflow.label": "Flujo de trabajo",
 		"models.Person.singular": "persona",
 		"models.Person.views.dq-near-end-date.help": "Enumere las personas que tienen una fecha de finalización del contrato posterior a hoy y que están asignadas a una estación de trabajo",
 		"models.Person.views.dq-near-end-date.label": "Personas que abandonan la empresa.",
@@ -80502,8 +81127,8 @@ var jsonTranslationsFiles = {
 		"models.PersonWorkingLocation.singular": "Lugar de trabajo de las personas",
 		"models.PersonWorkingLocation.views.booking-maps.help": "Ver todas las reservas en un mapa",
 		"models.PersonWorkingLocation.views.booking-maps.label": "Reservas en un plan",
-		"models.PersonWorkingLocation.views.guest-planning.help": "Crea huéspedes, asígnalos a edificios y gestiona sus reservas.",
-		"models.PersonWorkingLocation.views.guest-planning.label": "Horario de invitados",
+		"models.PersonWorkingLocation.views.guest-planning.help": "Crea huéspedes externos, asígnalos a edificios y gestiona sus reservas.",
+		"models.PersonWorkingLocation.views.guest-planning.label": "Calendario de invitados externos",
 		"models.PersonWorkingLocation.views.my-planning.help": "Gestionar mi agenda para las próximas semanas",
 		"models.PersonWorkingLocation.views.my-planning.label": "Administrar mi agenda",
 		"models.PersonWorkingLocation.views.obo-planning.help": "Gestionar el horario y realizar reservas para otra persona.",
@@ -80747,6 +81372,8 @@ var jsonTranslationsFiles = {
 		"models.UserRegistrationTenantRule.properties.automaticUserToRoleMapping.label": "Asociar roles automáticamente",
 		"models.UserRegistrationTenantRule.properties.domains.description": "Separe los dominios con espacios e incluya el signo de arroba",
 		"models.UserRegistrationTenantRule.properties.domains.label": "Áreas",
+		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.description": "Asocie al usuario con el inquilino solo si la reclamación exacta es surfy.<NomDuTenant> está presente en el token",
+		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.label": "Utilice las declaraciones de OpenID para asociarse con el inquilino.",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenRoleMapping.description": "Asocia automáticamente los roles en función de los roles incluidos en el token OpenID.",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenRoleMapping.label": "Utilice la asignación de roles a través del token OpenID y las reclamaciones.",
 		"models.UserRegistrationTenantRule.singular": "Regla de autenticación",
@@ -81217,6 +81844,12 @@ var jsonTranslationsFiles = {
 		"CompanyTypeLabel.notClassified": "Piattaforma non classificata",
 		"CompareEntities.buttons.reset.help": "Riavvia l'importazione",
 		"CompareEntities.buttons.reset.label": "Ricomincia",
+		"CompareObjectTypeAutomaticSyncIcon.helpDouble": "Dopo il confronto, %{first} e %{second} vengono applicati automaticamente per questo passaggio (senza pulsanti tab).",
+		"CompareObjectTypeAutomaticSyncIcon.helpSingle": "Dopo il confronto, %{operation} viene applicata automaticamente per questo passaggio (senza bisogno di premere il tasto Tab).",
+		"CompareObjectTypeAutomaticSyncIcon.helpTriple": "Dopo il confronto, %{first} , %{second} e %{third} vengono applicati automaticamente per questo passaggio (senza pulsanti tab).",
+		"CompareObjectTypeAutomaticSyncIcon.operationCreate": "creazione di massa",
+		"CompareObjectTypeAutomaticSyncIcon.operationDelete": "cancellazione di massa",
+		"CompareObjectTypeAutomaticSyncIcon.operationUpdate": "l'aggiornamento di massa",
 		"CompareObjectTypeCreateIcon.help": "Questa sincronizzazione creerà entità che non esistono nella destinazione",
 		"CompareObjectTypeDeleteIcon.help": "Questa sincronizzazione eseguirà un'eliminazione delle entità che non provengono dall'origine",
 		"CompareObjectTypeUpdateIcon.help": "Questa sincronizzazione aggiornerà le entità",
@@ -81650,13 +82283,6 @@ var jsonTranslationsFiles = {
 		"GuestCreateAccordion.firstnameLabel": "Nome",
 		"GuestCreateAccordion.guestPersonTypeMissingMessage": "Non è stato trovato alcun tipo di ospite nel campo Tipo di persona. Aggiungere un tipo di persona con il codice OSPITE ai dati di riferimento globali.",
 		"GuestCreateAccordion.lastnameLabel": "Cognome",
-		"GuestInvitePanel.alreadyInvitedToBuilding": "Questo ospite è già assegnato a questo edificio.",
-		"GuestInvitePanel.assignedBuildingsLabel": "Edifici già interessati",
-		"GuestInvitePanel.inviteGuestCta": "Invito a questo edificio",
-		"GuestInvitePanel.inviteSectionTitle": "Invitare l'ospite su un edificio",
-		"GuestInvitePanel.inviteSectionTitleForGuest": "Invita %{guestName} a un edificio",
-		"GuestInvitePanel.noAssignedBuilding": "Nessun edificio è stato interessato.",
-		"GuestInvitePanel.selectBuildingLabel": "Edificio",
 		"GuestListPanel.deleteGuestHelp": "Rimuovi questo ospite",
 		"GuestListPanel.guestsSectionTitle": "Ospiti",
 		"GuestListPanel.invitationPeriodLabel": "Periodo di invito: %{startDate} - %{endDate}",
@@ -81724,6 +82350,8 @@ var jsonTranslationsFiles = {
 		"ImportQuadientWorkday.selectCredentials": "Seleziona le credenziali Workday",
 		"ImportQuadientWorkday.syncDone": "Sincronizzazione completata",
 		"ImportQuadientWorkday.title": "Sincronizzazione della giornata lavorativa (Quadrante)",
+		"ImportUpdateAllOption.help": "Applica l'aggiornamento a tutte le righe senza selezionarle una per una.",
+		"ImportUpdateAllOption.label": "Aggiorna tutto",
 		"ImportUpdateEntitiesTable.description": "Elenco di oggetti che richiedono un aggiornamento",
 		"ImportUpdateOption.help": "Aggiorna gli oggetti selezionati",
 		"ImportUpdateOption.label": "Aggiornare",
@@ -81761,7 +82389,8 @@ var jsonTranslationsFiles = {
 		"ItemTypeOptions.help": "Il numero di oggetti è %{count}",
 		"ItemTypesMapFilterZone.tabs.options": "Opzioni",
 		"ItemsInventory.EmptyList": "Non ci sono oggetti in questo spazio",
-		"JupDateRangePicker.chooseRange": "Scegli un periodo",
+		"JupDateRangePickerRangeTitle.chooseRange": "Scegli un periodo",
+		"JupDateRangePickerRangeTitle.openCalendarOnSelectedDateTooltip": "Fai clic per aprire il calendario per quella data",
 		"JupRoleAzureSync.checkScopes": "Controllare gli ambiti",
 		"JupRoleAzureSync.checkingScopes": "Verifica...",
 		"JupRoleAzureSync.description": "Sincronizza i ruoli Jup con isClaim abilitato con i ruoli dell'applicazione Entra ID. Vengono sincronizzati solo i ruoli contrassegnati come &quot;Esponi come claim OIDC&quot;.",
@@ -81884,9 +82513,21 @@ var jsonTranslationsFiles = {
 		"MSUsersSync.description": "Sincronizza gli utenti di Microsoft 365 con i collaboratori surfy. I collaboratori mancanti vengono creati automaticamente a partire dal loro indirizzo email.",
 		"MSUsersSync.refresh": "Sincronizza gli utenti Microsoft",
 		"MSUsersSync.title": "Sincronizzazione utente Microsoft",
+		"MapFilterAnalyticsChartModePieToggle.ariaLabel": "Grafico a torta",
+		"MapFilterAnalyticsChartModePieToggle.tooltip": "Rappresenta la distribuzione in un grafico a torta (settori). Le etichette sono disegnate sul grafico con linee guida.",
+		"MapFilterAnalyticsChartModePolarAreaToggle.ariaLabel": "Diagramma dell'area polare",
+		"MapFilterAnalyticsChartModePolarAreaToggle.tooltip": "Mostra la distribuzione nelle aree polari (raggio proporzionale alle aree). Le etichette sono disegnate sul grafico con linee guida.",
+		"MapFilterAnalyticsChartModeTableToggle.ariaLabel": "Pittura",
+		"MapFilterAnalyticsChartModeTableToggle.tooltip": "Visualizza la distribuzione in formato tabellare (etichetta, area, percentuale).",
+		"MapFilterAnalyticsTable.ariaLabel": "Suddivisione dell'area per etichetta",
+		"MapFilterAnalyticsTable.columnLabel": "Etichetta",
+		"MapFilterAnalyticsTable.columnPercent": "Parte",
+		"MapFilterAnalyticsTable.columnSurface": "La zona",
+		"MapFilterAnalyticsTable.rowTotal": "Totale",
 		"MapFilterNodeIsAllSelected.help": "Verrà caricata tutta la selezione sottostante, anche se vengono creati nuovi oggetti",
 		"MapFilterNodeToggleAll.action.false": "Deseleziona tutto",
 		"MapFilterNodeToggleAll.action.true": "Seleziona tutto",
+		"MapFilters.areaDistributionTitle": "Distribuzione delle aree selezionate (m²)",
 		"MapFiltersCategory.CategoryHasChildrenSelected": "Gli elementi sono selezionati",
 		"MapFiltersNode.info.close": "Chiudi informazioni aggiuntive",
 		"MapFiltersNode.info.open": "Visualizza i dettagli e gli indicatori per %{label}",
@@ -82016,6 +82657,7 @@ var jsonTranslationsFiles = {
 		"ParkingRoomTypeCode.values.PARKING-CAR": "Parcheggio",
 		"ParkingRoomTypeCode.values.PARKING-ELECTRIC-CAR": "Parcheggio elettrico",
 		"ParkingRoomTypeCode.values.PARKING-PRM": "Parcheggio accessibile",
+		"PartnerApiCredentialsSelector.pleaseSelect": "Seleziona",
 		"PartnerEntityCreateTab.button.help": "Crea in %{partnerName}",
 		"PartnerEntityCreateTab.button.label": "Crea in %{partnerName}",
 		"PartnerEntityCreateTab.progress.syncing": "Sincronizzazione di %{label} ...",
@@ -82090,7 +82732,7 @@ var jsonTranslationsFiles = {
 		"PersonWorkingLocationByDimensionTable.selectDimensionCard.title": "Seleziona una dimensione",
 		"PhysicalItemNotInsideWorkplaceRoom.alignRooms": "Cambiare gli spazi degli oggetti in quelli della workstation",
 		"PlanningPersonAffectations.alerts.noAffectation.message": "Non sei associato ad alcun territorio, contatta il tuo responsabile di assegnazione per poter prenotare uno spazio di lavoro",
-		"PlanningPersonAffectations.alerts.noAffectation.messageForPerson": "%{personFullName} non è associato ad alcun territorio, contatta il suo responsabile di assegnazione per poter prenotare uno spazio di lavoro",
+		"PlanningPersonAffectations.alerts.noAffectation.messageForPerson": "%{personFullName} non è associato ad alcun territorio; si prega di contattare il responsabile assegnato per prenotare una postazione di lavoro.",
 		"PlanningPersonAffectations.alerts.noAffectation.title": "Impossibile prenotare una postazione di lavoro",
 		"PropertSelectorDrawer.help": "Seleziona le proprietà che desideri visualizzare nella tabella",
 		"PropertSelectorDrawer.options.reset.help": "Ripristina la selezione delle proprietà al loro stato iniziale",
@@ -83855,6 +84497,8 @@ var jsonTranslationsFiles = {
 		"models.Person.properties.telephone.label": "Telefono",
 		"models.Person.properties.title.description": "Il titolo della persona",
 		"models.Person.properties.title.label": "Titolo",
+		"models.Person.properties.workflow.description": "Informazioni sulle fasi del flusso di lavoro associate a questa persona",
+		"models.Person.properties.workflow.label": "Flusso di lavoro",
 		"models.Person.singular": "persona",
 		"models.Person.views.dq-near-end-date.help": "Elenca le persone che hanno una data di fine contratto successiva alla data odierna e che sono assegnate a una workstation",
 		"models.Person.views.dq-near-end-date.label": "Persone che lasciano l'azienda",
@@ -84061,8 +84705,8 @@ var jsonTranslationsFiles = {
 		"models.PersonWorkingLocation.singular": "Luogo di lavoro delle persone",
 		"models.PersonWorkingLocation.views.booking-maps.help": "Visualizza tutte le prenotazioni su una mappa",
 		"models.PersonWorkingLocation.views.booking-maps.label": "Prenotazioni su un piano",
-		"models.PersonWorkingLocation.views.guest-planning.help": "Crea ospiti, assegnali agli edifici e gestisci le loro prenotazioni.",
-		"models.PersonWorkingLocation.views.guest-planning.label": "Programma degli ospiti",
+		"models.PersonWorkingLocation.views.guest-planning.help": "Crea ospiti esterni, assegnali agli edifici e gestisci le loro prenotazioni.",
+		"models.PersonWorkingLocation.views.guest-planning.label": "Programma degli ospiti esterni",
 		"models.PersonWorkingLocation.views.my-planning.help": "Gestisci il mio programma per le prossime settimane",
 		"models.PersonWorkingLocation.views.my-planning.label": "Gestisci il mio programma",
 		"models.PersonWorkingLocation.views.obo-planning.help": "Gestisci il programma ed effettua prenotazioni per un'altra persona",
@@ -84306,6 +84950,8 @@ var jsonTranslationsFiles = {
 		"models.UserRegistrationTenantRule.properties.automaticUserToRoleMapping.label": "Associa automaticamente i ruoli",
 		"models.UserRegistrationTenantRule.properties.domains.description": "Separare i domini con spazi e includere il segno di chiocciola",
 		"models.UserRegistrationTenantRule.properties.domains.label": "le zone",
+		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.description": "Associa l'utente al tenant solo se la rivendicazione esatta surfy.<NomDuTenant> è presente nel token",
+		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.label": "Utilizzare le attestazioni OpenID per associarsi al tenant",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenRoleMapping.description": "Associa automaticamente i ruoli in base ai ruoli inclusi nel token OpenID",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenRoleMapping.label": "Utilizzare la mappatura dei ruoli tramite il token OpenID e le attestazioni",
 		"models.UserRegistrationTenantRule.singular": "Regola di autenticazione",
@@ -84776,6 +85422,12 @@ var jsonTranslationsFiles = {
 		"CompanyTypeLabel.notClassified": "Niet-geclassificeerd platform",
 		"CompareEntities.buttons.reset.help": "Start het importeren opnieuw",
 		"CompareEntities.buttons.reset.label": "Herstarten",
+		"CompareObjectTypeAutomaticSyncIcon.helpDouble": "Na de vergelijking worden %{first} en %{second} automatisch toegepast voor deze stap (zonder tabknoppen).",
+		"CompareObjectTypeAutomaticSyncIcon.helpSingle": "Na de vergelijking wordt %{operation} automatisch toegepast voor deze stap (zonder tabtoets).",
+		"CompareObjectTypeAutomaticSyncIcon.helpTriple": "Na de vergelijking worden %{first} , %{second} en %{third} automatisch toegepast voor deze stap (zonder tabknoppen).",
+		"CompareObjectTypeAutomaticSyncIcon.operationCreate": "massaproductie",
+		"CompareObjectTypeAutomaticSyncIcon.operationDelete": "massale verwijdering",
+		"CompareObjectTypeAutomaticSyncIcon.operationUpdate": "de massale update",
 		"CompareObjectTypeCreateIcon.help": "Door deze synchronisatie worden entiteiten gemaakt die niet in het doel bestaan",
 		"CompareObjectTypeDeleteIcon.help": "Deze synchronisatie verwijdert entiteiten die niet afkomstig zijn van de bron",
 		"CompareObjectTypeUpdateIcon.help": "Deze synchronisatie zal de entiteiten bijwerken",
@@ -85209,13 +85861,6 @@ var jsonTranslationsFiles = {
 		"GuestCreateAccordion.firstnameLabel": "Voornaam",
 		"GuestCreateAccordion.guestPersonTypeMissingMessage": "Er is geen gasttype gevonden in het veld Persoonstype. Voeg een persoonstype met de code GAST toe aan de globale referentiegegevens.",
 		"GuestCreateAccordion.lastnameLabel": "Achternaam",
-		"GuestInvitePanel.alreadyInvitedToBuilding": "Deze gast is al aan dit gebouw toegewezen.",
-		"GuestInvitePanel.assignedBuildingsLabel": "Gebouwen die al getroffen zijn",
-		"GuestInvitePanel.inviteGuestCta": "Uitnodiging voor dit gebouw",
-		"GuestInvitePanel.inviteSectionTitle": "Nodig de gast uit in een gebouw",
-		"GuestInvitePanel.inviteSectionTitleForGuest": "Nodig %{guestName} uit voor een bezoek aan een gebouw",
-		"GuestInvitePanel.noAssignedBuilding": "Geen gebouwen getroffen",
-		"GuestInvitePanel.selectBuildingLabel": "Gebouw",
 		"GuestListPanel.deleteGuestHelp": "Verwijder deze gast",
 		"GuestListPanel.guestsSectionTitle": "Gasten",
 		"GuestListPanel.invitationPeriodLabel": "Uitnodigingsperiode: %{startDate} - %{endDate}",
@@ -85283,6 +85928,8 @@ var jsonTranslationsFiles = {
 		"ImportQuadientWorkday.selectCredentials": "Selecteer Workday-inloggegevens",
 		"ImportQuadientWorkday.syncDone": "Synchronisatie voltooid",
 		"ImportQuadientWorkday.title": "Workday-synchronisatie (Quadient)",
+		"ImportUpdateAllOption.help": "Pas de update toe op alle rijen zonder ze één voor één te selecteren.",
+		"ImportUpdateAllOption.label": "Update alles",
 		"ImportUpdateEntitiesTable.description": "Lijst met objecten die moeten worden bijgewerkt",
 		"ImportUpdateOption.help": "Geselecteerde objecten bijwerken",
 		"ImportUpdateOption.label": "Update",
@@ -85320,7 +85967,8 @@ var jsonTranslationsFiles = {
 		"ItemTypeOptions.help": "Het aantal objecten is %{count}",
 		"ItemTypesMapFilterZone.tabs.options": "Opties",
 		"ItemsInventory.EmptyList": "Er bevinden zich geen objecten in deze ruimte",
-		"JupDateRangePicker.chooseRange": "Kies een periode",
+		"JupDateRangePickerRangeTitle.chooseRange": "Kies een periode",
+		"JupDateRangePickerRangeTitle.openCalendarOnSelectedDateTooltip": "Klik om de kalender voor die datum te openen.",
 		"JupRoleAzureSync.checkScopes": "Controleer de scopes",
 		"JupRoleAzureSync.checkingScopes": "Verificatie...",
 		"JupRoleAzureSync.description": "Synchroniseer Jup-rollen met isClaim ingeschakeld met Entra ID-applicatierollen. Alleen rollen die zijn gemarkeerd als 'Weergeven als OIDC-claim' worden gesynchroniseerd.",
@@ -85443,9 +86091,21 @@ var jsonTranslationsFiles = {
 		"MSUsersSync.description": "Synchroniseer Microsoft 365-gebruikers met Surfy-medewerkers. Ontbrekende medewerkers worden automatisch aangemaakt op basis van hun e-mailadres.",
 		"MSUsersSync.refresh": "Microsoft-gebruikers synchroniseren",
 		"MSUsersSync.title": "Microsoft-gebruikerssynchronisatie",
+		"MapFilterAnalyticsChartModePieToggle.ariaLabel": "Cirkeldiagram",
+		"MapFilterAnalyticsChartModePieToggle.tooltip": "Geef de verdeling weer in een cirkeldiagram (sectoren). De labels worden met hulplijnen op de grafiek getekend.",
+		"MapFilterAnalyticsChartModePolarAreaToggle.ariaLabel": "Polair vlakdiagram",
+		"MapFilterAnalyticsChartModePolarAreaToggle.tooltip": "Geef de verdeling weer in polaire gebieden (stralen evenredig met de oppervlakten). De labels zijn met hulplijnen op de grafiek getekend.",
+		"MapFilterAnalyticsChartModeTableToggle.ariaLabel": "Schilderen",
+		"MapFilterAnalyticsChartModeTableToggle.tooltip": "Geef de verdeling weer in tabelvorm (label, oppervlakte, percentage).",
+		"MapFilterAnalyticsTable.ariaLabel": "Gebiedsindeling per label",
+		"MapFilterAnalyticsTable.columnLabel": "Label",
+		"MapFilterAnalyticsTable.columnPercent": "Deel",
+		"MapFilterAnalyticsTable.columnSurface": "Oppervlak",
+		"MapFilterAnalyticsTable.rowTotal": "Totaal",
 		"MapFilterNodeIsAllSelected.help": "De gehele selectie hieronder wordt geladen, zelfs als er nieuwe objecten worden aangemaakt",
 		"MapFilterNodeToggleAll.action.false": "deselecteer alles",
 		"MapFilterNodeToggleAll.action.true": "Selecteer alles",
+		"MapFilters.areaDistributionTitle": "Verdeling van de geselecteerde oppervlakten (m²)",
 		"MapFiltersCategory.CategoryHasChildrenSelected": "Artikelen zijn geselecteerd",
 		"MapFiltersNode.info.close": "Sluit aanvullende informatie",
 		"MapFiltersNode.info.open": "Bekijk details en indicatoren voor %{label}",
@@ -85575,6 +86235,7 @@ var jsonTranslationsFiles = {
 		"ParkingRoomTypeCode.values.PARKING-CAR": "Parkeerplaats",
 		"ParkingRoomTypeCode.values.PARKING-ELECTRIC-CAR": "Parkeerplaats voor elektrische auto's",
 		"ParkingRoomTypeCode.values.PARKING-PRM": "Toegankelijke parkeerplaatsen",
+		"PartnerApiCredentialsSelector.pleaseSelect": "Selecteer alstublieft",
 		"PartnerEntityCreateTab.button.help": "Maken in %{partnerName}",
 		"PartnerEntityCreateTab.button.label": "Maken in %{partnerName}",
 		"PartnerEntityCreateTab.progress.syncing": "%{label} synchroniseren ...",
@@ -85649,7 +86310,7 @@ var jsonTranslationsFiles = {
 		"PersonWorkingLocationByDimensionTable.selectDimensionCard.title": "Selecteer een dimensie",
 		"PhysicalItemNotInsideWorkplaceRoom.alignRooms": "Wijzig de objectruimten naar die van het werkstation",
 		"PlanningPersonAffectations.alerts.noAffectation.message": "U bent aan geen enkel gebied gekoppeld. Neem contact op met uw opdrachtmanager om een ​​werkruimte te kunnen reserveren",
-		"PlanningPersonAffectations.alerts.noAffectation.messageForPerson": "%{personFullName} is aan geen enkel gebied gekoppeld. Neem contact op met de verantwoordelijke manager om een werkruimte te kunnen reserveren",
+		"PlanningPersonAffectations.alerts.noAffectation.messageForPerson": "%{personFullName} is niet gekoppeld aan een specifiek gebied; neem contact op met de aan hem/haar toegewezen manager om een ​​werkplek te reserveren.",
 		"PlanningPersonAffectations.alerts.noAffectation.title": "Kan geen werkplek reserveren",
 		"PropertSelectorDrawer.help": "Selecteer de eigenschappen die u in de tabel wilt weergeven",
 		"PropertSelectorDrawer.options.reset.help": "Breng de selectie van eigenschappen terug naar hun oorspronkelijke staat",
@@ -87414,6 +88075,8 @@ var jsonTranslationsFiles = {
 		"models.Person.properties.telephone.label": "Telefoon",
 		"models.Person.properties.title.description": "De titel van de persoon",
 		"models.Person.properties.title.label": "Titel",
+		"models.Person.properties.workflow.description": "Informatie over de workflowstappen die bij deze persoon horen.",
+		"models.Person.properties.workflow.label": "Werkstroom",
 		"models.Person.singular": "persoon",
 		"models.Person.views.dq-near-end-date.help": "Vermeld de mensen met een einddatum van het contract na vandaag en die aan een werkplek zijn toegewezen",
 		"models.Person.views.dq-near-end-date.label": "Mensen die het bedrijf verlaten",
@@ -87620,8 +88283,8 @@ var jsonTranslationsFiles = {
 		"models.PersonWorkingLocation.singular": "Werklocatie van mensen",
 		"models.PersonWorkingLocation.views.booking-maps.help": "Bekijk alle boekingen op een kaart",
 		"models.PersonWorkingLocation.views.booking-maps.label": "Reserveringen op een plan",
-		"models.PersonWorkingLocation.views.guest-planning.help": "Maak gasten aan, wijs ze toe aan gebouwen en beheer hun boekingen.",
-		"models.PersonWorkingLocation.views.guest-planning.label": "Gastenschema",
+		"models.PersonWorkingLocation.views.guest-planning.help": "Maak externe gasten aan, wijs ze toe aan gebouwen en beheer hun boekingen.",
+		"models.PersonWorkingLocation.views.guest-planning.label": "Schema voor externe gasten",
 		"models.PersonWorkingLocation.views.my-planning.help": "Beheer mijn agenda voor de komende weken",
 		"models.PersonWorkingLocation.views.my-planning.label": "Beheer mijn agenda",
 		"models.PersonWorkingLocation.views.obo-planning.help": "Beheer de planning en maak reserveringen voor iemand anders.",
@@ -87865,6 +88528,8 @@ var jsonTranslationsFiles = {
 		"models.UserRegistrationTenantRule.properties.automaticUserToRoleMapping.label": "Automatisch rollen koppelen",
 		"models.UserRegistrationTenantRule.properties.domains.description": "Scheid domeinen met spaties en plaats het apenstaartje",
 		"models.UserRegistrationTenantRule.properties.domains.label": "Gebieden",
+		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.description": "Koppel de gebruiker alleen aan de tenant als de exacte claim surfy is.<NomDuTenant> is aanwezig in het token",
+		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.label": "Gebruik OpenID-claims om een ​​koppeling met de tenant te maken.",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenRoleMapping.description": "Automatisch rollen toewijzen op basis van de rollen die in het OpenID-token zijn opgenomen.",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenRoleMapping.label": "Gebruik roltoewijzing via het OpenID-token en claims.",
 		"models.UserRegistrationTenantRule.singular": "Authenticatieregel",
@@ -88163,7 +88828,7 @@ function PropertyTypeDescription(props) {
 	return null;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+icons-material@9.0.0_@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3._b7de9e753ee6c56829113c05bd2c6b2a/node_modules/@mui/icons-material/NewReleases.mjs
+//#region node_modules/.pnpm/@mui+icons-material@9.0.1_@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3._217084f2040e1861ae7ec2142ed05686/node_modules/@mui/icons-material/NewReleases.mjs
 var NewReleases_default = createSvgIcon(/* @__PURE__ */ jsx("path", { d: "m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68zm-10 5h-2v-2h2zm0-4h-2V7h2z" }), "NewReleases");
 //#endregion
 //#region src/front/jup/Entities/Entity/PropertyTypeIcons/PropertyTypeMandatoryIcon.tsx
@@ -88249,7 +88914,7 @@ var PropertyTypeLabel = React.forwardRef((props, ref) => {
 	});
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+icons-material@9.0.0_@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3._b7de9e753ee6c56829113c05bd2c6b2a/node_modules/@mui/icons-material/ContentCopyTwoTone.mjs
+//#region node_modules/.pnpm/@mui+icons-material@9.0.1_@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3._217084f2040e1861ae7ec2142ed05686/node_modules/@mui/icons-material/ContentCopyTwoTone.mjs
 var ContentCopyTwoTone_default = createSvgIcon([/* @__PURE__ */ jsx("path", {
 	d: "M8 7h11v14H8z",
 	opacity: ".3"
@@ -88302,7 +88967,7 @@ function ObjectTypeMenuBreadcrumb(props) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/elementAcceptingRef/elementAcceptingRef.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/elementAcceptingRef/elementAcceptingRef.mjs
 function isClassComponent(elementType) {
 	const { prototype = {} } = elementType;
 	return Boolean(prototype.isReactComponent);
@@ -88329,7 +88994,7 @@ function acceptingRef(props, propName, componentName, location, propFullName) {
 var elementAcceptingRef = chainPropTypes(import_prop_types.default.element, acceptingRef);
 elementAcceptingRef.isRequired = chainPropTypes(import_prop_types.default.element.isRequired, acceptingRef);
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.0.0_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/getReactElementRef/getReactElementRef.mjs
+//#region node_modules/.pnpm/@mui+utils@9.0.1_@types+react@18.3.1_react@18.3.1/node_modules/@mui/utils/getReactElementRef/getReactElementRef.mjs
 /**
 * Returns the ref of a React element handling differences between React 19 and older versions.
 * It will throw runtime error if the element is not a valid React element.
@@ -88342,7 +89007,7 @@ function getReactElementRef(element) {
 	return element?.ref || null;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/transitions/utils.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/transitions/utils.mjs
 var reflow = (node) => node.scrollTop;
 function normalizedTransitionCallback(nodeRef, callback) {
 	return (maybeIsAppearing) => {
@@ -88374,7 +89039,7 @@ function getTransitionProps(props, options) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/Fade/Fade.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/Fade/Fade.mjs
 var styles = {
 	entering: { opacity: 1 },
 	entered: { opacity: 1 },
@@ -88451,21 +89116,70 @@ var Fade$1 = /* @__PURE__ */ React$1.forwardRef(function Fade(props, ref) {
 	});
 });
 process.env.NODE_ENV !== "production" && (Fade$1.propTypes = {
+	/**
+	* Add a custom transition end trigger. Called with the transitioning DOM
+	* node and a done callback. Allows for more fine grained transition end
+	* logic. Note: Timeouts are still used as a fallback if provided.
+	*/
 	addEndListener: import_prop_types.default.func,
+	/**
+	* Perform the enter transition when it first mounts if `in` is also `true`.
+	* Set this to `false` to disable this behavior.
+	* @default true
+	*/
 	appear: import_prop_types.default.bool,
+	/**
+	* A single child content element.
+	*/
 	children: elementAcceptingRef.isRequired,
+	/**
+	* The transition timing function.
+	* You may specify a single easing or a object containing enter and exit values.
+	*/
 	easing: import_prop_types.default.oneOfType([import_prop_types.default.shape({
 		enter: import_prop_types.default.string,
 		exit: import_prop_types.default.string
 	}), import_prop_types.default.string]),
+	/**
+	* If `true`, the component will transition in.
+	*/
 	in: import_prop_types.default.bool,
+	/**
+	* @ignore
+	*/
 	onEnter: import_prop_types.default.func,
+	/**
+	* @ignore
+	*/
 	onEntered: import_prop_types.default.func,
+	/**
+	* @ignore
+	*/
 	onEntering: import_prop_types.default.func,
+	/**
+	* @ignore
+	*/
 	onExit: import_prop_types.default.func,
+	/**
+	* @ignore
+	*/
 	onExited: import_prop_types.default.func,
+	/**
+	* @ignore
+	*/
 	onExiting: import_prop_types.default.func,
+	/**
+	* @ignore
+	*/
 	style: import_prop_types.default.object,
+	/**
+	* The duration for the transition, in milliseconds.
+	* You may specify a single timeout for all transitions, or individually with an object.
+	* @default {
+	*   enter: theme.transitions.duration.enteringScreen,
+	*   exit: theme.transitions.duration.leavingScreen,
+	* }
+	*/
 	timeout: import_prop_types.default.oneOfType([import_prop_types.default.number, import_prop_types.default.shape({
 		appear: import_prop_types.default.number,
 		enter: import_prop_types.default.number,
@@ -88473,7 +89187,7 @@ process.env.NODE_ENV !== "production" && (Fade$1.propTypes = {
 	})])
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/Paper/paperClasses.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/Paper/paperClasses.mjs
 function getPaperUtilityClass(slot) {
 	return generateUtilityClass("MuiPaper", slot);
 }
@@ -88509,7 +89223,7 @@ generateUtilityClasses("MuiPaper", [
 	"elevation24"
 ]);
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.0.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_4af15d5b12310518de04c4747a838151/node_modules/@mui/material/Paper/Paper.mjs
+//#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/Paper/Paper.mjs
 var useUtilityClasses = (ownerState) => {
 	const { square, elevation, variant, classes } = ownerState;
 	return composeClasses({ root: [
@@ -88588,17 +89302,45 @@ var Paper$1 = /* @__PURE__ */ React$1.forwardRef(function Paper(inProps, ref) {
 	});
 });
 process.env.NODE_ENV !== "production" && (Paper$1.propTypes = {
+	/**
+	* The content of the component.
+	*/
 	children: import_prop_types.default.node,
+	/**
+	* Override or extend the styles applied to the component.
+	*/
 	classes: import_prop_types.default.object,
+	/**
+	* @ignore
+	*/
 	className: import_prop_types.default.string,
+	/**
+	* The component used for the root node.
+	* Either a string to use a HTML element or a component.
+	*/
 	component: import_prop_types.default.elementType,
+	/**
+	* Shadow depth, corresponds to `dp` in the spec.
+	* It accepts values between 0 and 24 inclusive.
+	* @default 1
+	*/
 	elevation: chainPropTypes(integerPropType, (props) => {
 		const { elevation, variant } = props;
 		if (elevation > 0 && variant === "outlined") return /* @__PURE__ */ new Error(`MUI: Combining \`elevation={${elevation}}\` with \`variant="${variant}"\` has no effect. Either use \`elevation={0}\` or use a different \`variant\`.`);
 		return null;
 	}),
+	/**
+	* If `true`, rounded corners are disabled.
+	* @default false
+	*/
 	square: import_prop_types.default.bool,
+	/**
+	* @ignore
+	*/
 	style: import_prop_types.default.object,
+	/**
+	* The system prop that allows defining system overrides as well as additional CSS styles.
+	*/
 	sx: import_prop_types.default.oneOfType([
 		import_prop_types.default.arrayOf(import_prop_types.default.oneOfType([
 			import_prop_types.default.func,
@@ -88608,6 +89350,10 @@ process.env.NODE_ENV !== "production" && (Paper$1.propTypes = {
 		import_prop_types.default.func,
 		import_prop_types.default.object
 	]),
+	/**
+	* The variant to use.
+	* @default 'elevation'
+	*/
 	variant: import_prop_types.default.oneOfType([import_prop_types.default.oneOf(["elevation", "outlined"]), import_prop_types.default.string])
 });
 //#endregion
