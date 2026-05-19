@@ -16,15 +16,19 @@ Lors d’une mise en production, le contenu utile est repris dans la page [Nouve
 
 - Statistiques dans les filtres du plan (répartition par dimension)
   - Affichage possible sous forme de **tableau** ou de **graphique**, avec un choix explicite entre les deux.
-  - Graphiques circulaire et en zone polaire plus lisibles et libellés plus cohérents sur le plan.
+  - Graphiques circulaire et en zone polaire plus lisibles, avec des libellés plus cohérents sur le plan.
+- Recherche globale des personnes
+  - Une icône indique désormais, dans les résultats, si la personne peut réserver un poste de travail dans un bâtiment grâce à <P code="personToBuilding:allowWorkplaceBookingInTheBuilding" />.
 - <OT code="person" />
-  - Nouvelle propriété <P code="person:workflow" /> pour préciser le parcours ou le traitement attendu sur la fiche personne, selon votre paramétrage.
-- Import des personnes et des centres de coût depuis Workday
-  - Prise en charge de l’import des **organisations** en complément des personnes et des centres de coût.
-  - Enchaînement de synchronisation affiné pour les affectations aux **bâtiments** et aux **véhicules** des personnes, en lien avec le champ <P code="person:workflow" /> lorsque vous l’utilisez.
+  - Nouvelle propriété <P code="person:workflow" /> sur la fiche personne, utilisable pour suivre des étapes d’intégration ou de traitement selon votre paramétrage.
+- Import des personnes, organisations et centres de coût depuis Workday
+  - Import des **organisations** et de leur **hiérarchie** en complément des personnes et des centres de coût.
+  - Avant synchronisation, affichage du **périmètre** : bâtiments reconnus, personnes incluses et locations Workday sans bâtiment Surfy correspondant.
+  - Rapprochement des personnes avec les bâtiments Surfy via la **clé externe** du bâtiment et la location Workday (y compris lorsque plusieurs locations sont listées dans une même clé, séparées par des virgules).
+  - Étape dédiée aux **affectations aux bâtiments** du périmètre, avec activation de la réservation de poste et de parking dans le bâtiment lorsque la liaison est créée ou corrigée.
+  - Affectation automatique aux **quartiers** à partir du centre de coût Workday, lorsque les quartiers du bâtiment sont correctement configurés ; l’import signale les bâtiments pour lesquels plusieurs types de quartier sont associés et bloque l’étape tant que la configuration n’est pas corrigée.
+  - Gestion affinée des **véhicules** et du champ <P code="person:workflow" /> pour enchaîner les étapes d’affectation sans repasser inutilement sur des personnes déjà traitées.
 - Connexion aux services tiers (plateforme)
-  - Lorsqu’un seul jeu d’identifiants est disponible pour un connecteur, il est **sélectionné automatiquement** sans étape inutile.
-- Règles d’authentification et rôles sans claims
-  - Lorsque <P code="userRegistrationTenantRule:automaticUserToRoleMapping" /> est activé **sans** <P code="userRegistrationTenantRule:useOpenIdTokenRoleMapping" />, les rôles et rôles de contenu définis dans la règle ne sont ajoutés automatiquement **que pour la toute première création du compte** dans Surfy, et non à chaque nouvelle association à un tenant pour un utilisateur déjà connu.
+  - Lorsqu’un seul jeu d’identifiants est disponible pour un connecteur, il est **sélectionné automatiquement**.
 
 <!-- À la prochaine release : fusionner dans app.md puis alléger ou vider cette section. Les liens <LIV /> vers l’alpha utilisent environment="alpha" ; les retirer quand le contenu est en production. -->
