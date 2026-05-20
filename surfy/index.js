@@ -27,7 +27,7 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 	value: mod,
 	enumerable: true
 }) : target, mod));
-var __require = /* @__PURE__ */ ((x) => typeof require !== "undefined" ? require : typeof Proxy !== "undefined" ? new Proxy(x, { get: (a, b) => (typeof require !== "undefined" ? require : a)[b] }) : x)(function(x) {
+var __require = /* @__PURE__ */ ((x) => typeof require !== "undefined" ? require : typeof Proxy !== "undefined" ? new Proxy(x, { get: (a, b) => (typeof require !== "undefined" ? require : a)[b] }) : x)(function (x) {
 	if (typeof require !== "undefined") return require.apply(this, arguments);
 	throw Error("Calling `require` for \"" + x + "\" in an environment that doesn't expose the `require` function. See https://rolldown.rs/in-depth/bundling-cjs#require-external-modules for more details.");
 });
@@ -80,43 +80,43 @@ var require_react_is_production = /* @__PURE__ */ __commonJSMin(((exports) => {
 	exports.StrictMode = REACT_STRICT_MODE_TYPE;
 	exports.Suspense = REACT_SUSPENSE_TYPE;
 	exports.SuspenseList = REACT_SUSPENSE_LIST_TYPE;
-	exports.isContextConsumer = function(object) {
+	exports.isContextConsumer = function (object) {
 		return typeOf(object) === REACT_CONSUMER_TYPE;
 	};
-	exports.isContextProvider = function(object) {
+	exports.isContextProvider = function (object) {
 		return typeOf(object) === REACT_CONTEXT_TYPE;
 	};
-	exports.isElement = function(object) {
+	exports.isElement = function (object) {
 		return "object" === typeof object && null !== object && object.$$typeof === REACT_ELEMENT_TYPE;
 	};
-	exports.isForwardRef = function(object) {
+	exports.isForwardRef = function (object) {
 		return typeOf(object) === REACT_FORWARD_REF_TYPE;
 	};
-	exports.isFragment = function(object) {
+	exports.isFragment = function (object) {
 		return typeOf(object) === REACT_FRAGMENT_TYPE;
 	};
-	exports.isLazy = function(object) {
+	exports.isLazy = function (object) {
 		return typeOf(object) === REACT_LAZY_TYPE;
 	};
-	exports.isMemo = function(object) {
+	exports.isMemo = function (object) {
 		return typeOf(object) === REACT_MEMO_TYPE;
 	};
-	exports.isPortal = function(object) {
+	exports.isPortal = function (object) {
 		return typeOf(object) === REACT_PORTAL_TYPE;
 	};
-	exports.isProfiler = function(object) {
+	exports.isProfiler = function (object) {
 		return typeOf(object) === REACT_PROFILER_TYPE;
 	};
-	exports.isStrictMode = function(object) {
+	exports.isStrictMode = function (object) {
 		return typeOf(object) === REACT_STRICT_MODE_TYPE;
 	};
-	exports.isSuspense = function(object) {
+	exports.isSuspense = function (object) {
 		return typeOf(object) === REACT_SUSPENSE_TYPE;
 	};
-	exports.isSuspenseList = function(object) {
+	exports.isSuspenseList = function (object) {
 		return typeOf(object) === REACT_SUSPENSE_LIST_TYPE;
 	};
-	exports.isValidElementType = function(type) {
+	exports.isValidElementType = function (type) {
 		return "string" === typeof type || "function" === typeof type || type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || "object" === typeof type && null !== type && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_CONSUMER_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_CLIENT_REFERENCE || void 0 !== type.getModuleId) ? !0 : !1;
 	};
 	exports.typeOf = typeOf;
@@ -133,7 +133,7 @@ var require_react_is_production = /* @__PURE__ */ __commonJSMin(((exports) => {
 * LICENSE file in the root directory of this source tree.
 */
 var require_react_is_development$1 = /* @__PURE__ */ __commonJSMin(((exports) => {
-	"production" !== process.env.NODE_ENV && (function() {
+	"production" !== process.env.NODE_ENV && (function () {
 		function typeOf(object) {
 			if ("object" === typeof object && null !== object) {
 				var $$typeof = object.$$typeof;
@@ -171,43 +171,43 @@ var require_react_is_development$1 = /* @__PURE__ */ __commonJSMin(((exports) =>
 		exports.StrictMode = REACT_STRICT_MODE_TYPE;
 		exports.Suspense = REACT_SUSPENSE_TYPE;
 		exports.SuspenseList = REACT_SUSPENSE_LIST_TYPE;
-		exports.isContextConsumer = function(object) {
+		exports.isContextConsumer = function (object) {
 			return typeOf(object) === REACT_CONSUMER_TYPE;
 		};
-		exports.isContextProvider = function(object) {
+		exports.isContextProvider = function (object) {
 			return typeOf(object) === REACT_CONTEXT_TYPE;
 		};
-		exports.isElement = function(object) {
+		exports.isElement = function (object) {
 			return "object" === typeof object && null !== object && object.$$typeof === REACT_ELEMENT_TYPE;
 		};
-		exports.isForwardRef = function(object) {
+		exports.isForwardRef = function (object) {
 			return typeOf(object) === REACT_FORWARD_REF_TYPE;
 		};
-		exports.isFragment = function(object) {
+		exports.isFragment = function (object) {
 			return typeOf(object) === REACT_FRAGMENT_TYPE;
 		};
-		exports.isLazy = function(object) {
+		exports.isLazy = function (object) {
 			return typeOf(object) === REACT_LAZY_TYPE;
 		};
-		exports.isMemo = function(object) {
+		exports.isMemo = function (object) {
 			return typeOf(object) === REACT_MEMO_TYPE;
 		};
-		exports.isPortal = function(object) {
+		exports.isPortal = function (object) {
 			return typeOf(object) === REACT_PORTAL_TYPE;
 		};
-		exports.isProfiler = function(object) {
+		exports.isProfiler = function (object) {
 			return typeOf(object) === REACT_PROFILER_TYPE;
 		};
-		exports.isStrictMode = function(object) {
+		exports.isStrictMode = function (object) {
 			return typeOf(object) === REACT_STRICT_MODE_TYPE;
 		};
-		exports.isSuspense = function(object) {
+		exports.isSuspense = function (object) {
 			return typeOf(object) === REACT_SUSPENSE_TYPE;
 		};
-		exports.isSuspenseList = function(object) {
+		exports.isSuspenseList = function (object) {
 			return typeOf(object) === REACT_SUSPENSE_LIST_TYPE;
 		};
-		exports.isValidElementType = function(type) {
+		exports.isValidElementType = function (type) {
 			return "string" === typeof type || "function" === typeof type || type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || "object" === typeof type && null !== type && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_CONSUMER_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_CLIENT_REFERENCE || void 0 !== type.getModuleId) ? !0 : !1;
 		};
 		exports.typeOf = typeOf;
@@ -271,44 +271,44 @@ var require_react_is_production_min = /* @__PURE__ */ __commonJSMin(((exports) =
 	exports.Profiler = g;
 	exports.StrictMode = f;
 	exports.Suspense = p;
-	exports.isAsyncMode = function(a) {
+	exports.isAsyncMode = function (a) {
 		return A(a) || z(a) === l;
 	};
 	exports.isConcurrentMode = A;
-	exports.isContextConsumer = function(a) {
+	exports.isContextConsumer = function (a) {
 		return z(a) === k;
 	};
-	exports.isContextProvider = function(a) {
+	exports.isContextProvider = function (a) {
 		return z(a) === h;
 	};
-	exports.isElement = function(a) {
+	exports.isElement = function (a) {
 		return "object" === typeof a && null !== a && a.$$typeof === c;
 	};
-	exports.isForwardRef = function(a) {
+	exports.isForwardRef = function (a) {
 		return z(a) === n;
 	};
-	exports.isFragment = function(a) {
+	exports.isFragment = function (a) {
 		return z(a) === e;
 	};
-	exports.isLazy = function(a) {
+	exports.isLazy = function (a) {
 		return z(a) === t;
 	};
-	exports.isMemo = function(a) {
+	exports.isMemo = function (a) {
 		return z(a) === r;
 	};
-	exports.isPortal = function(a) {
+	exports.isPortal = function (a) {
 		return z(a) === d;
 	};
-	exports.isProfiler = function(a) {
+	exports.isProfiler = function (a) {
 		return z(a) === g;
 	};
-	exports.isStrictMode = function(a) {
+	exports.isStrictMode = function (a) {
 		return z(a) === f;
 	};
-	exports.isSuspense = function(a) {
+	exports.isSuspense = function (a) {
 		return z(a) === p;
 	};
-	exports.isValidElementType = function(a) {
+	exports.isValidElementType = function (a) {
 		return "string" === typeof a || "function" === typeof a || a === e || a === m || a === g || a === f || a === p || a === q || "object" === typeof a && null !== a && (a.$$typeof === t || a.$$typeof === r || a.$$typeof === h || a.$$typeof === k || a.$$typeof === n || a.$$typeof === w || a.$$typeof === x || a.$$typeof === y || a.$$typeof === v);
 	};
 	exports.typeOf = z;
@@ -324,7 +324,7 @@ var require_react_is_production_min = /* @__PURE__ */ __commonJSMin(((exports) =
 * LICENSE file in the root directory of this source tree.
 */
 var require_react_is_development = /* @__PURE__ */ __commonJSMin(((exports) => {
-	if (process.env.NODE_ENV !== "production") (function() {
+	if (process.env.NODE_ENV !== "production") (function () {
 		"use strict";
 		var hasSymbol = typeof Symbol === "function" && Symbol.for;
 		var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for("react.element") : 60103;
@@ -492,11 +492,11 @@ var require_object_assign = /* @__PURE__ */ __commonJSMin(((exports, module) => 
 			if (Object.getOwnPropertyNames(test1)[0] === "5") return false;
 			var test2 = {};
 			for (var i = 0; i < 10; i++) test2["_" + String.fromCharCode(i)] = i;
-			if (Object.getOwnPropertyNames(test2).map(function(n) {
+			if (Object.getOwnPropertyNames(test2).map(function (n) {
 				return test2[n];
 			}).join("") !== "0123456789") return false;
 			var test3 = {};
-			"abcdefghijklmnopqrst".split("").forEach(function(letter) {
+			"abcdefghijklmnopqrst".split("").forEach(function (letter) {
 				test3[letter] = letter;
 			});
 			if (Object.keys(Object.assign({}, test3)).join("") !== "abcdefghijklmnopqrst") return false;
@@ -505,7 +505,7 @@ var require_object_assign = /* @__PURE__ */ __commonJSMin(((exports, module) => 
 			return false;
 		}
 	}
-	module.exports = shouldUseNative() ? Object.assign : function(target, source) {
+	module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 		var from;
 		var to = toObject(target);
 		var symbols;
@@ -545,17 +545,17 @@ var require_has = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 * LICENSE file in the root directory of this source tree.
 */
 var require_checkPropTypes = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-	var printWarning = function() {};
+	var printWarning = function () { };
 	if (process.env.NODE_ENV !== "production") {
 		var ReactPropTypesSecret = require_ReactPropTypesSecret();
 		var loggedTypeFailures = {};
 		var has = require_has();
-		printWarning = function(text) {
+		printWarning = function (text) {
 			var message = "Warning: " + text;
 			if (typeof console !== "undefined") console.error(message);
 			try {
 				throw new Error(message);
-			} catch (x) {}
+			} catch (x) { }
 		};
 	}
 	/**
@@ -597,7 +597,7 @@ var require_checkPropTypes = /* @__PURE__ */ __commonJSMin(((exports, module) =>
 	*
 	* @private
 	*/
-	checkPropTypes.resetWarningCache = function() {
+	checkPropTypes.resetWarningCache = function () {
 		if (process.env.NODE_ENV !== "production") loggedTypeFailures = {};
 	};
 	module.exports = checkPropTypes;
@@ -616,18 +616,18 @@ var require_factoryWithTypeCheckers = /* @__PURE__ */ __commonJSMin(((exports, m
 	var ReactPropTypesSecret = require_ReactPropTypesSecret();
 	var has = require_has();
 	var checkPropTypes = require_checkPropTypes();
-	var printWarning = function() {};
-	if (process.env.NODE_ENV !== "production") printWarning = function(text) {
+	var printWarning = function () { };
+	if (process.env.NODE_ENV !== "production") printWarning = function (text) {
 		var message = "Warning: " + text;
 		if (typeof console !== "undefined") console.error(message);
 		try {
 			throw new Error(message);
-		} catch (x) {}
+		} catch (x) { }
 	};
 	function emptyFunctionThatReturnsNull() {
 		return null;
 	}
-	module.exports = function(isValidElement, throwOnDirectAccess) {
+	module.exports = function (isValidElement, throwOnDirectAccess) {
 		var ITERATOR_SYMBOL = typeof Symbol === "function" && Symbol.iterator;
 		var FAUX_ITERATOR_SYMBOL = "@@iterator";
 		/**
@@ -1011,10 +1011,10 @@ var require_factoryWithTypeCheckers = /* @__PURE__ */ __commonJSMin(((exports, m
 */
 var require_factoryWithThrowingShims = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var ReactPropTypesSecret = require_ReactPropTypesSecret();
-	function emptyFunction() {}
-	function emptyFunctionWithReset() {}
+	function emptyFunction() { }
+	function emptyFunctionWithReset() { }
 	emptyFunctionWithReset.resetWarningCache = emptyFunction;
-	module.exports = function() {
+	module.exports = function () {
 		function shim(props, propName, componentName, location, propFullName, secret) {
 			if (secret === ReactPropTypesSecret) return;
 			var err = /* @__PURE__ */ new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
@@ -1647,11 +1647,15 @@ var values$1 = {
 	xl: 1536
 };
 var DEFAULT_BREAKPOINTS = createBreakpoints({ values: values$1 });
-var defaultContainerQueries = { containerQueries: (containerName) => ({ up: (key) => {
-	let result = typeof key === "number" ? key : values$1[key] || key;
-	if (typeof result === "number") result = `${result}px`;
-	return containerName ? `@container ${containerName} (min-width:${result})` : `@container (min-width:${result})`;
-} }) };
+var defaultContainerQueries = {
+	containerQueries: (containerName) => ({
+		up: (key) => {
+			let result = typeof key === "number" ? key : values$1[key] || key;
+			if (typeof result === "number") result = `${result}px`;
+			return containerName ? `@container ${containerName} (min-width:${result})` : `@container (min-width:${result})`;
+		}
+	})
+};
 function handleBreakpoints(props, propValue, styleFromPropValue) {
 	const result = {};
 	return iterateBreakpoints(result, props.theme, propValue, (mediaKey, value, initialKey) => {
@@ -2335,7 +2339,7 @@ function callIfFn(maybeFn, arg) {
 //#endregion
 //#region node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/extends.js
 function _extends() {
-	return _extends = Object.assign ? Object.assign.bind() : function(n) {
+	return _extends = Object.assign ? Object.assign.bind() : function (n) {
 		for (var e = 1; e < arguments.length; e++) {
 			var t = arguments[e];
 			for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]);
@@ -2359,10 +2363,10 @@ function createStyleElement(options) {
 	tag.setAttribute("data-s", "");
 	return tag;
 }
-var StyleSheet = /* @__PURE__ */ function() {
+var StyleSheet = /* @__PURE__ */ function () {
 	function StyleSheet(options) {
 		var _this = this;
-		this._insertTag = function(tag) {
+		this._insertTag = function (tag) {
 			var before;
 			if (_this.tags.length === 0) if (_this.insertionPoint) before = _this.insertionPoint.nextSibling;
 			else if (_this.prepend) before = _this.container.firstChild;
@@ -2392,12 +2396,12 @@ var StyleSheet = /* @__PURE__ */ function() {
 			var sheet = sheetForTag(tag);
 			try {
 				sheet.insertRule(rule, sheet.cssRules.length);
-			} catch (e) {}
+			} catch (e) { }
 		} else tag.appendChild(document.createTextNode(rule));
 		this.ctr++;
 	};
 	_proto.flush = function flush() {
-		this.tags.forEach(function(tag) {
+		this.tags.forEach(function (tag) {
 			var _tag$parentNode;
 			return (_tag$parentNode = tag.parentNode) == null ? void 0 : _tag$parentNode.removeChild(tag);
 		});
@@ -2903,7 +2907,7 @@ function stringify(element, index, children, callback) {
 */
 function middleware(collection) {
 	var length = sizeof(collection);
-	return function(element, index, children, callback) {
+	return function (element, index, children, callback) {
 		var output = "";
 		for (var i = 0; i < length; i++) output += collection[i](element, index, children, callback) || "";
 		return output;
@@ -2914,7 +2918,7 @@ function middleware(collection) {
 * @return {function}
 */
 function rulesheet(callback) {
-	return function(element) {
+	return function (element) {
 		if (!element.root) {
 			if (element = element.return) callback(element);
 		}
@@ -2924,7 +2928,7 @@ function rulesheet(callback) {
 //#region node_modules/.pnpm/@emotion+memoize@0.9.0/node_modules/@emotion/memoize/dist/emotion-memoize.esm.js
 function memoize(fn) {
 	var cache = Object.create(null);
-	return function(arg) {
+	return function (arg) {
 		if (cache[arg] === void 0) cache[arg] = fn(arg);
 		return cache[arg];
 	};
@@ -3088,7 +3092,7 @@ var defaultStylisPlugins = [function prefixer(element, index, children, callback
 				element["return"] = prefix$1(element.value, element.length);
 				break;
 			case KEYFRAMES: return serialize([copy(element, { value: replace(element.value, "@", "@" + WEBKIT) })], callback);
-			case RULESET: if (element.length) return combine(element.props, function(value) {
+			case RULESET: if (element.length) return combine(element.props, function (value) {
 				switch (match$1(value, /(::plac\w+|:read-\w+)/)) {
 					case ":read-only":
 					case ":read-write": return serialize([copy(element, { props: [replace(value, /:(read-\w+)/, ":" + MOZ + "$1")] })], callback);
@@ -3107,7 +3111,7 @@ var createCache = function createCache(options) {
 	var key = options.key;
 	if (key === "css") {
 		var ssrStyles = document.querySelectorAll("style[data-emotion]:not([data-s])");
-		Array.prototype.forEach.call(ssrStyles, function(node) {
+		Array.prototype.forEach.call(ssrStyles, function (node) {
 			if (node.getAttribute("data-emotion").indexOf(" ") === -1) return;
 			document.head.appendChild(node);
 			node.setAttribute("data-s", "");
@@ -3118,7 +3122,7 @@ var createCache = function createCache(options) {
 	var container;
 	var nodesToHydrate = [];
 	container = options.container || document.head;
-	Array.prototype.forEach.call(document.querySelectorAll("style[data-emotion^=\"" + key + " \"]"), function(node) {
+	Array.prototype.forEach.call(document.querySelectorAll("style[data-emotion^=\"" + key + " \"]"), function (node) {
 		var attrib = node.getAttribute("data-emotion").split(" ");
 		for (var i = 1; i < attrib.length; i++) inserted[attrib[i]] = true;
 		nodesToHydrate.push(node);
@@ -3126,7 +3130,7 @@ var createCache = function createCache(options) {
 	var _insert;
 	var omnipresentPlugins = [compat, removeLabel];
 	var currentSheet;
-	var finalizingPlugins = [stringify, rulesheet(function(rule) {
+	var finalizingPlugins = [stringify, rulesheet(function (rule) {
 		currentSheet.insert(rule);
 	})];
 	var serializer = middleware(omnipresentPlugins.concat(stylisPlugins, finalizingPlugins));
@@ -3230,7 +3234,7 @@ var require_hoist_non_react_statics_cjs = /* @__PURE__ */ __commonJSMin(((export
 					var descriptor = getOwnPropertyDescriptor(sourceComponent, key);
 					try {
 						defineProperty(targetComponent, key, descriptor);
-					} catch (e) {}
+					} catch (e) { }
 				}
 			}
 		}
@@ -3243,7 +3247,7 @@ var require_hoist_non_react_statics_cjs = /* @__PURE__ */ __commonJSMin(((export
 var isBrowser = true;
 function getRegisteredStyles(registered, registeredStyles, classNames) {
 	var rawClassName = "";
-	classNames.split(" ").forEach(function(className) {
+	classNames.split(" ").forEach(function (className) {
 		if (registered[className] !== void 0) registeredStyles.push(registered[className] + ";");
 		else if (className) rawClassName += className + " ";
 	});
@@ -3348,13 +3352,13 @@ var isCustomProperty = function isCustomProperty(property) {
 var isProcessableValue = function isProcessableValue(value) {
 	return value != null && typeof value !== "boolean";
 };
-var processStyleName = /* @__PURE__ */ memoize(function(styleName) {
+var processStyleName = /* @__PURE__ */ memoize(function (styleName) {
 	return isCustomProperty(styleName) ? styleName : styleName.replace(hyphenateRegex, "-$&").toLowerCase();
 });
 var processStyleValue = function processStyleValue(key, value) {
 	switch (key) {
 		case "animation":
-		case "animationName": if (typeof value === "string") return value.replace(animationRegex, function(match, p1, p2) {
+		case "animationName": if (typeof value === "string") return value.replace(animationRegex, function (match, p1, p2) {
 			cursor = {
 				name: p1,
 				styles: p2,
@@ -3475,7 +3479,7 @@ useInsertionEffect || React$1.useLayoutEffect;
 var EmotionCacheContext = /* @__PURE__ */ React$1.createContext(typeof HTMLElement !== "undefined" ? /* @__PURE__ */ createCache({ key: "css" }) : null);
 EmotionCacheContext.Provider;
 var withEmotionCache = function withEmotionCache(func) {
-	return /* @__PURE__ */ forwardRef(function(props, ref) {
+	return /* @__PURE__ */ forwardRef(function (props, ref) {
 		return func(props, useContext(EmotionCacheContext), ref);
 	});
 };
@@ -3491,12 +3495,12 @@ var createEmotionProps = function createEmotionProps(type, props) {
 var Insertion$1 = function Insertion(_ref) {
 	var cache = _ref.cache, serialized = _ref.serialized, isStringTag = _ref.isStringTag;
 	registerStyles(cache, serialized, isStringTag);
-	useInsertionEffectAlwaysWithSyncFallback(function() {
+	useInsertionEffectAlwaysWithSyncFallback(function () {
 		return insertStyles(cache, serialized, isStringTag);
 	});
 	return null;
 };
-var Emotion$1 = /* @__PURE__ */ withEmotionCache(function(props, cache, ref) {
+var Emotion$1 = /* @__PURE__ */ withEmotionCache(function (props, cache, ref) {
 	var cssProp = props.css;
 	if (typeof cssProp === "string" && cache.registered[cssProp] !== void 0) cssProp = cache.registered[cssProp];
 	var WrappedComponent = props[typePropName];
@@ -3527,9 +3531,9 @@ var jsx$1 = function jsx(type, props) {
 	for (var i = 2; i < argsLength; i++) createElementArgArray[i] = args[i];
 	return React$1.createElement.apply(null, createElementArgArray);
 };
-(function(_jsx) {
+(function (_jsx) {
 	var JSX;
-	(function(_JSX) {})(JSX || (JSX = _jsx.JSX || (_jsx.JSX = {})));
+	(function (_JSX) { })(JSX || (JSX = _jsx.JSX || (_jsx.JSX = {})));
 })(jsx$1 || (jsx$1 = {}));
 function css() {
 	for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) args[_key] = arguments[_key];
@@ -3550,7 +3554,7 @@ function keyframes() {
 //#endregion
 //#region node_modules/.pnpm/@emotion+is-prop-valid@1.4.0/node_modules/@emotion/is-prop-valid/dist/emotion-is-prop-valid.esm.js
 var reactPropsRegex = /^((children|dangerouslySetInnerHTML|key|ref|autoFocus|defaultValue|defaultChecked|innerHTML|suppressContentEditableWarning|suppressHydrationWarning|valueLink|abbr|accept|acceptCharset|accessKey|action|allow|allowUserMedia|allowPaymentRequest|allowFullScreen|allowTransparency|alt|async|autoComplete|autoPlay|capture|cellPadding|cellSpacing|challenge|charSet|checked|cite|classID|className|cols|colSpan|content|contentEditable|contextMenu|controls|controlsList|coords|crossOrigin|data|dateTime|decoding|default|defer|dir|disabled|disablePictureInPicture|disableRemotePlayback|download|draggable|encType|enterKeyHint|fetchpriority|fetchPriority|form|formAction|formEncType|formMethod|formNoValidate|formTarget|frameBorder|headers|height|hidden|high|href|hrefLang|htmlFor|httpEquiv|id|inputMode|integrity|is|keyParams|keyType|kind|label|lang|list|loading|loop|low|marginHeight|marginWidth|max|maxLength|media|mediaGroup|method|min|minLength|multiple|muted|name|nonce|noValidate|open|optimum|pattern|placeholder|playsInline|popover|popoverTarget|popoverTargetAction|poster|preload|profile|radioGroup|readOnly|referrerPolicy|rel|required|reversed|role|rows|rowSpan|sandbox|scope|scoped|scrolling|seamless|selected|shape|size|sizes|slot|span|spellCheck|src|srcDoc|srcLang|srcSet|start|step|style|summary|tabIndex|target|title|translate|type|useMap|value|width|wmode|wrap|about|datatype|inlist|prefix|property|resource|typeof|vocab|autoCapitalize|autoCorrect|autoSave|color|incremental|fallback|inert|itemProp|itemScope|itemType|itemID|itemRef|on|option|results|security|unselectable|accentHeight|accumulate|additive|alignmentBaseline|allowReorder|alphabetic|amplitude|arabicForm|ascent|attributeName|attributeType|autoReverse|azimuth|baseFrequency|baselineShift|baseProfile|bbox|begin|bias|by|calcMode|capHeight|clip|clipPathUnits|clipPath|clipRule|colorInterpolation|colorInterpolationFilters|colorProfile|colorRendering|contentScriptType|contentStyleType|cursor|cx|cy|d|decelerate|descent|diffuseConstant|direction|display|divisor|dominantBaseline|dur|dx|dy|edgeMode|elevation|enableBackground|end|exponent|externalResourcesRequired|fill|fillOpacity|fillRule|filter|filterRes|filterUnits|floodColor|floodOpacity|focusable|fontFamily|fontSize|fontSizeAdjust|fontStretch|fontStyle|fontVariant|fontWeight|format|from|fr|fx|fy|g1|g2|glyphName|glyphOrientationHorizontal|glyphOrientationVertical|glyphRef|gradientTransform|gradientUnits|hanging|horizAdvX|horizOriginX|ideographic|imageRendering|in|in2|intercept|k|k1|k2|k3|k4|kernelMatrix|kernelUnitLength|kerning|keyPoints|keySplines|keyTimes|lengthAdjust|letterSpacing|lightingColor|limitingConeAngle|local|markerEnd|markerMid|markerStart|markerHeight|markerUnits|markerWidth|mask|maskContentUnits|maskUnits|mathematical|mode|numOctaves|offset|opacity|operator|order|orient|orientation|origin|overflow|overlinePosition|overlineThickness|panose1|paintOrder|pathLength|patternContentUnits|patternTransform|patternUnits|pointerEvents|points|pointsAtX|pointsAtY|pointsAtZ|preserveAlpha|preserveAspectRatio|primitiveUnits|r|radius|refX|refY|renderingIntent|repeatCount|repeatDur|requiredExtensions|requiredFeatures|restart|result|rotate|rx|ry|scale|seed|shapeRendering|slope|spacing|specularConstant|specularExponent|speed|spreadMethod|startOffset|stdDeviation|stemh|stemv|stitchTiles|stopColor|stopOpacity|strikethroughPosition|strikethroughThickness|string|stroke|strokeDasharray|strokeDashoffset|strokeLinecap|strokeLinejoin|strokeMiterlimit|strokeOpacity|strokeWidth|surfaceScale|systemLanguage|tableValues|targetX|targetY|textAnchor|textDecoration|textRendering|textLength|to|transform|u1|u2|underlinePosition|underlineThickness|unicode|unicodeBidi|unicodeRange|unitsPerEm|vAlphabetic|vHanging|vIdeographic|vMathematical|values|vectorEffect|version|vertAdvY|vertOriginX|vertOriginY|viewBox|viewTarget|visibility|widths|wordSpacing|writingMode|x|xHeight|x1|x2|xChannelSelector|xlinkActuate|xlinkArcrole|xlinkHref|xlinkRole|xlinkShow|xlinkTitle|xlinkType|xmlBase|xmlns|xmlnsXlink|xmlLang|xmlSpace|y|y1|y2|yChannelSelector|z|zoomAndPan|for|class|autofocus)|(([Dd][Aa][Tt][Aa]|[Aa][Rr][Ii][Aa]|x)-.*))$/;
-var isPropValid = /* @__PURE__ */ memoize(function(prop) {
+var isPropValid = /* @__PURE__ */ memoize(function (prop) {
 	return reactPropsRegex.test(prop) || prop.charCodeAt(0) === 111 && prop.charCodeAt(1) === 110 && prop.charCodeAt(2) < 91;
 });
 //#endregion
@@ -3567,7 +3571,7 @@ var composeShouldForwardProps = function composeShouldForwardProps(tag, options,
 	var shouldForwardProp;
 	if (options) {
 		var optionsShouldForwardProp = options.shouldForwardProp;
-		shouldForwardProp = tag.__emotion_forwardProp && optionsShouldForwardProp ? function(propName) {
+		shouldForwardProp = tag.__emotion_forwardProp && optionsShouldForwardProp ? function (propName) {
 			return tag.__emotion_forwardProp(propName) && optionsShouldForwardProp(propName);
 		} : optionsShouldForwardProp;
 	}
@@ -3577,7 +3581,7 @@ var composeShouldForwardProps = function composeShouldForwardProps(tag, options,
 var Insertion = function Insertion(_ref) {
 	var cache = _ref.cache, serialized = _ref.serialized, isStringTag = _ref.isStringTag;
 	registerStyles(cache, serialized, isStringTag);
-	useInsertionEffectAlwaysWithSyncFallback(function() {
+	useInsertionEffectAlwaysWithSyncFallback(function () {
 		return insertStyles(cache, serialized, isStringTag);
 	});
 	return null;
@@ -3594,7 +3598,7 @@ var createStyled$1 = function createStyled(tag, options) {
 	var shouldForwardProp = composeShouldForwardProps(tag, options, isReal);
 	var defaultShouldForwardProp = shouldForwardProp || getDefaultShouldForwardProp(baseTag);
 	var shouldUseAs = !defaultShouldForwardProp("as");
-	return function() {
+	return function () {
 		var args = arguments;
 		var styles = isReal && tag.__emotion_styles !== void 0 ? tag.__emotion_styles.slice(0) : [];
 		if (identifierName !== void 0) styles.push("label:" + identifierName + ";");
@@ -3606,7 +3610,7 @@ var createStyled$1 = function createStyled(tag, options) {
 			var i = 1;
 			for (; i < len; i++) styles.push(args[i], templateStringsArr[i]);
 		}
-		var Styled = withEmotionCache(function(props, cache, ref) {
+		var Styled = withEmotionCache(function (props, cache, ref) {
 			var FinalTag = shouldUseAs && props.as || baseTag;
 			var className = "";
 			var classInterpolations = [];
@@ -3641,11 +3645,13 @@ var createStyled$1 = function createStyled(tag, options) {
 		Styled.__emotion_base = baseTag;
 		Styled.__emotion_styles = styles;
 		Styled.__emotion_forwardProp = shouldForwardProp;
-		Object.defineProperty(Styled, "toString", { value: function value() {
-			if (targetClassName === void 0 && isDevelopment) return "NO_COMPONENT_SELECTOR";
-			return "." + targetClassName;
-		} });
-		Styled.withComponent = function(nextTag, nextOptions) {
+		Object.defineProperty(Styled, "toString", {
+			value: function value() {
+				if (targetClassName === void 0 && isDevelopment) return "NO_COMPONENT_SELECTOR";
+				return "." + targetClassName;
+			}
+		});
+		Styled.withComponent = function (nextTag, nextOptions) {
 			return createStyled(nextTag, _extends({}, options, nextOptions, { shouldForwardProp: composeShouldForwardProps(Styled, nextOptions, true) })).apply(void 0, styles);
 		};
 		return Styled;
@@ -3790,7 +3796,7 @@ var tags = [
 	"tspan"
 ];
 var styled$2 = createStyled$1.bind(null);
-tags.forEach(function(tagName) {
+tags.forEach(function (tagName) {
 	styled$2[tagName] = styled$2(tagName);
 });
 //#endregion
@@ -4817,11 +4823,13 @@ function prepareCssVars(theme, parserConfig = {}) {
 			} : { ...css };
 			insertStyleSheet(getSelector(key, { ...finalCss }), finalCss);
 		});
-		if (enableContrastVars) stylesheets.push({ ":root": {
-			"--__l-threshold": "0.7",
-			"--__l": "clamp(0, (l / var(--__l-threshold) - 1) * -infinity, 1)",
-			"--__a": "clamp(0.87, (l / var(--__l-threshold) - 1) * -infinity, 1)"
-		} });
+		if (enableContrastVars) stylesheets.push({
+			":root": {
+				"--__l-threshold": "0.7",
+				"--__l": "clamp(0, (l / var(--__l-threshold) - 1) * -infinity, 1)",
+				"--__a": "clamp(0.87, (l / var(--__l-threshold) - 1) * -infinity, 1)"
+			}
+		});
 		return stylesheets;
 	};
 	return {
@@ -5646,10 +5654,12 @@ var createGetSelector_default = (theme) => (colorScheme, css) => {
 				[rule.replace("%s", colorScheme)]: excludedVariables,
 				[`${root}, ${rule.replace("%s", colorScheme)}`]: css
 			};
-			return { [root]: {
-				...css,
-				...excludedVariables
-			} };
+			return {
+				[root]: {
+					...css,
+					...excludedVariables
+				}
+			};
 		}
 		if (rule && rule !== "media") return `${root}, ${rule.replace("%s", String(colorScheme))}`;
 	} else if (colorScheme) {
@@ -5684,7 +5694,7 @@ function getSpacingVal(spacingInput) {
 var silent = (fn) => {
 	try {
 		return fn();
-	} catch (error) {}
+	} catch (error) { }
 };
 var createGetCssVar = (cssVarPrefix = "mui") => createGetCssVar$1(cssVarPrefix);
 function attachColorScheme$1(colorSpace, colorSchemes, scheme, restTheme, colorScheme) {
@@ -6010,10 +6020,12 @@ function createTheme(options = {}, ...args) {
 	const defaultScheme = initialColorSchemes?.[defaultColorSchemeInput];
 	const colorSchemesInput = {
 		...initialColorSchemes,
-		...palette ? { [defaultColorSchemeInput]: {
-			...typeof defaultScheme !== "boolean" && defaultScheme,
-			palette
-		} } : void 0
+		...palette ? {
+			[defaultColorSchemeInput]: {
+				...typeof defaultScheme !== "boolean" && defaultScheme,
+				palette
+			}
+		} : void 0
 	};
 	if (cssVariables === false) {
 		if (!("colorSchemes" in options)) return createThemeNoVars(options, ...args);
@@ -6174,13 +6186,15 @@ generateUtilityClasses("MuiTypography", [
 //#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/Typography/Typography.mjs
 var useUtilityClasses$4 = (ownerState) => {
 	const { align, gutterBottom, noWrap, variant, classes } = ownerState;
-	return composeClasses({ root: [
-		"root",
-		variant,
-		ownerState.align !== "inherit" && `align${capitalize_default(align)}`,
-		gutterBottom && "gutterBottom",
-		noWrap && "noWrap"
-	] }, getTypographyUtilityClass, classes);
+	return composeClasses({
+		root: [
+			"root",
+			variant,
+			ownerState.align !== "inherit" && `align${capitalize_default(align)}`,
+			gutterBottom && "gutterBottom",
+			noWrap && "noWrap"
+		]
+	}, getTypographyUtilityClass, classes);
 };
 var TypographyRoot = styled("span", {
 	name: "MuiTypography",
@@ -6414,11 +6428,13 @@ generateUtilityClasses("MuiSvgIcon", [
 //#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/SvgIcon/SvgIcon.mjs
 var useUtilityClasses$3 = (ownerState) => {
 	const { color, fontSize, classes } = ownerState;
-	return composeClasses({ root: [
-		"root",
-		color !== "inherit" && `color${capitalize_default(color)}`,
-		`fontSize${capitalize_default(fontSize)}`
-	] }, getSvgIconUtilityClass, classes);
+	return composeClasses({
+		root: [
+			"root",
+			color !== "inherit" && `color${capitalize_default(color)}`,
+			`fontSize${capitalize_default(fontSize)}`
+		]
+	}, getSvgIconUtilityClass, classes);
 };
 var SvgIconRoot = styled("svg", {
 	name: "MuiSvgIcon",
@@ -6703,9 +6719,11 @@ function useFocusableWhenDisabled(parameters) {
 	const isFocusableComposite = composite && focusableWhenDisabled !== false;
 	const isNonFocusableComposite = composite && focusableWhenDisabled === false;
 	return React$1.useMemo(() => {
-		const additionalProps = { onKeyDown(event) {
-			if (disabled && focusableWhenDisabled && event.key !== "Tab") event.preventDefault();
-		} };
+		const additionalProps = {
+			onKeyDown(event) {
+				if (disabled && focusableWhenDisabled && event.key !== "Tab") event.preventDefault();
+			}
+		};
 		if (!composite) {
 			additionalProps.tabIndex = tabIndexProp;
 			if (!isNativeButton && disabled) additionalProps.tabIndex = focusableWhenDisabled ? tabIndexProp : -1;
@@ -6933,7 +6951,7 @@ function _objectWithoutPropertiesLoose(r, e) {
 //#endregion
 //#region node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js
 function _setPrototypeOf(t, e) {
-	return _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
+	return _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function (t, e) {
 		return t.__proto__ = e, t;
 	}, _setPrototypeOf(t, e);
 }
@@ -7074,7 +7092,7 @@ var EXITING = "exiting";
 * When `in` is `false` the same thing happens except the state moves from
 * `'exiting'` to `'exited'`.
 */
-var Transition = /* @__PURE__ */ function(_React$Component) {
+var Transition = /* @__PURE__ */ function (_React$Component) {
 	_inheritsLoose(Transition, _React$Component);
 	function Transition(props, context) {
 		var _this = _React$Component.call(this, props, context) || this;
@@ -7148,16 +7166,16 @@ var Transition = /* @__PURE__ */ function(_React$Component) {
 		var timeouts = this.getTimeouts();
 		var enterTimeout = appearing ? timeouts.appear : timeouts.enter;
 		if (!mounting && !enter || config_default.disabled) {
-			this.safeSetState({ status: ENTERED }, function() {
+			this.safeSetState({ status: ENTERED }, function () {
 				_this2.props.onEntered(maybeNode);
 			});
 			return;
 		}
 		this.props.onEnter(maybeNode, maybeAppearing);
-		this.safeSetState({ status: ENTERING }, function() {
+		this.safeSetState({ status: ENTERING }, function () {
 			_this2.props.onEntering(maybeNode, maybeAppearing);
-			_this2.onTransitionEnd(enterTimeout, function() {
-				_this2.safeSetState({ status: ENTERED }, function() {
+			_this2.onTransitionEnd(enterTimeout, function () {
+				_this2.safeSetState({ status: ENTERED }, function () {
 					_this2.props.onEntered(maybeNode, maybeAppearing);
 				});
 			});
@@ -7169,16 +7187,16 @@ var Transition = /* @__PURE__ */ function(_React$Component) {
 		var timeouts = this.getTimeouts();
 		var maybeNode = this.props.nodeRef ? void 0 : ReactDOM.findDOMNode(this);
 		if (!exit || config_default.disabled) {
-			this.safeSetState({ status: EXITED }, function() {
+			this.safeSetState({ status: EXITED }, function () {
 				_this3.props.onExited(maybeNode);
 			});
 			return;
 		}
 		this.props.onExit(maybeNode);
-		this.safeSetState({ status: EXITING }, function() {
+		this.safeSetState({ status: EXITING }, function () {
 			_this3.props.onExiting(maybeNode);
-			_this3.onTransitionEnd(timeouts.exit, function() {
-				_this3.safeSetState({ status: EXITED }, function() {
+			_this3.onTransitionEnd(timeouts.exit, function () {
+				_this3.safeSetState({ status: EXITED }, function () {
 					_this3.props.onExited(maybeNode);
 				});
 			});
@@ -7197,14 +7215,14 @@ var Transition = /* @__PURE__ */ function(_React$Component) {
 	_proto.setNextCallback = function setNextCallback(callback) {
 		var _this4 = this;
 		var active = true;
-		this.nextCallback = function(event) {
+		this.nextCallback = function (event) {
 			if (active) {
 				active = false;
 				_this4.nextCallback = null;
 				callback(event);
 			}
 		};
-		this.nextCallback.cancel = function() {
+		this.nextCallback.cancel = function () {
 			active = false;
 		};
 		return this.nextCallback;
@@ -7277,10 +7295,12 @@ Transition.propTypes = process.env.NODE_ENV !== "production" ? {
 	*     (see
 	*     [test/CSSTransition-test.js](https://github.com/reactjs/react-transition-group/blob/13435f897b3ab71f6e19d724f145596f5910581c/test/CSSTransition-test.js#L362-L437)).
 	*/
-	nodeRef: import_prop_types.default.shape({ current: typeof Element === "undefined" ? import_prop_types.default.any : function(propValue, key, componentName, location, propFullName, secret) {
-		var value = propValue[key];
-		return import_prop_types.default.instanceOf(value && "ownerDocument" in value ? value.ownerDocument.defaultView.Element : Element)(propValue, key, componentName, location, propFullName, secret);
-	} }),
+	nodeRef: import_prop_types.default.shape({
+		current: typeof Element === "undefined" ? import_prop_types.default.any : function (propValue, key, componentName, location, propFullName, secret) {
+			var value = propValue[key];
+			return import_prop_types.default.instanceOf(value && "ownerDocument" in value ? value.ownerDocument.defaultView.Element : Element)(propValue, key, componentName, location, propFullName, secret);
+		}
+	}),
 	/**
 	* A `function` child can be used instead of a React element. This function is
 	* called with the current transition status (`'entering'`, `'entered'`,
@@ -7431,7 +7451,7 @@ Transition.propTypes = process.env.NODE_ENV !== "production" ? {
 	*/
 	onExited: import_prop_types.default.func
 } : {};
-function noop() {}
+function noop() { }
 Transition.defaultProps = {
 	in: false,
 	mountOnEnter: false,
@@ -7470,9 +7490,9 @@ function getChildMapping(children, mapFn) {
 		return mapFn && isValidElement(child) ? mapFn(child) : child;
 	};
 	var result = Object.create(null);
-	if (children) Children.map(children, function(c) {
+	if (children) Children.map(children, function (c) {
 		return c;
-	}).forEach(function(child) {
+	}).forEach(function (child) {
 		result[child.key] = mapper(child);
 	});
 	return result;
@@ -7524,7 +7544,7 @@ function getProp(child, prop, props) {
 	return props[prop] != null ? props[prop] : child.props[prop];
 }
 function getInitialChildMapping(props, onExited) {
-	return getChildMapping(props.children, function(child) {
+	return getChildMapping(props.children, function (child) {
 		return cloneElement(child, {
 			onExited: onExited.bind(null, child),
 			in: true,
@@ -7537,7 +7557,7 @@ function getInitialChildMapping(props, onExited) {
 function getNextChildMapping(nextProps, prevChildMapping, onExited) {
 	var nextChildMapping = getChildMapping(nextProps.children);
 	var children = mergeChildMappings(prevChildMapping, nextChildMapping);
-	Object.keys(children).forEach(function(key) {
+	Object.keys(children).forEach(function (key) {
 		var child = children[key];
 		if (!isValidElement(child)) return;
 		var hasPrev = key in prevChildMapping;
@@ -7562,8 +7582,8 @@ function getNextChildMapping(nextProps, prevChildMapping, onExited) {
 }
 //#endregion
 //#region node_modules/.pnpm/react-transition-group@4.4.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/react-transition-group/esm/TransitionGroup.js
-var values = Object.values || function(obj) {
-	return Object.keys(obj).map(function(k) {
+var values = Object.values || function (obj) {
+	return Object.keys(obj).map(function (k) {
 		return obj[k];
 	});
 };
@@ -7587,7 +7607,7 @@ var defaultProps = {
 * component. This means you can mix and match animations across different list
 * items.
 */
-var TransitionGroup = /* @__PURE__ */ function(_React$Component) {
+var TransitionGroup = /* @__PURE__ */ function (_React$Component) {
 	_inheritsLoose(TransitionGroup, _React$Component);
 	function TransitionGroup(props, context) {
 		var _this = _React$Component.call(this, props, context) || this;
@@ -7617,7 +7637,7 @@ var TransitionGroup = /* @__PURE__ */ function(_React$Component) {
 		var currentChildMapping = getChildMapping(this.props.children);
 		if (child.key in currentChildMapping) return;
 		if (child.props.onExited) child.props.onExited(node);
-		if (this.mounted) this.setState(function(state) {
+		if (this.mounted) this.setState(function (state) {
 			var children = _extends({}, state.children);
 			delete children[child.key];
 			return { children };
@@ -7951,7 +7971,7 @@ var TouchRipple = /* @__PURE__ */ React$1.forwardRef(function TouchRipple(inProp
 		nextKey.current += 1;
 		rippleCallback.current = cb;
 	}, [classes]);
-	const start = React$1.useCallback((event = {}, options = {}, cb = () => {}) => {
+	const start = React$1.useCallback((event = {}, options = {}, cb = () => { }) => {
 		const { pulsate = false, center = centerProp || options.pulsate, fakeElement = false } = options;
 		if (event?.type === "mousedown" && ignoringMouseDown.current) {
 			ignoringMouseDown.current = false;
@@ -8083,11 +8103,13 @@ var buttonBaseClasses = generateUtilityClasses("MuiButtonBase", [
 //#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/ButtonBase/ButtonBase.mjs
 var useUtilityClasses$2 = (ownerState) => {
 	const { disabled, focusVisible, focusVisibleClassName, suppressFocusVisible, classes } = ownerState;
-	const composedClasses = composeClasses({ root: [
-		"root",
-		disabled && "disabled",
-		focusVisible && !suppressFocusVisible && "focusVisible"
-	] }, getButtonBaseUtilityClass, classes);
+	const composedClasses = composeClasses({
+		root: [
+			"root",
+			disabled && "disabled",
+			focusVisible && !suppressFocusVisible && "focusVisible"
+		]
+	}, getButtonBaseUtilityClass, classes);
 	if (focusVisible && !suppressFocusVisible && focusVisibleClassName) composedClasses.root += ` ${focusVisibleClassName}`;
 	return composedClasses;
 };
@@ -8169,10 +8191,12 @@ var ButtonBase = /* @__PURE__ */ React$1.forwardRef(function ButtonBase(inProps,
 		onKeyDown: onKeyDownProp,
 		onKeyUp: onKeyUpProp
 	});
-	React$1.useImperativeHandle(action, () => ({ focusVisible: () => {
-		setFocusVisible(true);
-		buttonRef.current.focus();
-	} }), [buttonRef]);
+	React$1.useImperativeHandle(action, () => ({
+		focusVisible: () => {
+			setFocusVisible(true);
+			buttonRef.current.focus();
+		}
+	}), [buttonRef]);
 	const enableTouchRipple = ripple.shouldMount && !disableRipple && !disabled;
 	React$1.useEffect(() => {
 		if (focusVisible && focusRipple && !disableRipple) ripple.pulsate();
@@ -8418,11 +8442,13 @@ process.env.NODE_ENV !== "production" && (ButtonBase.propTypes = {
 	/**
 	* A ref that points to the `TouchRipple` element.
 	*/
-	touchRippleRef: import_prop_types.default.oneOfType([import_prop_types.default.func, import_prop_types.default.shape({ current: import_prop_types.default.shape({
-		pulsate: import_prop_types.default.func.isRequired,
-		start: import_prop_types.default.func.isRequired,
-		stop: import_prop_types.default.func.isRequired
-	}) })]),
+	touchRippleRef: import_prop_types.default.oneOfType([import_prop_types.default.func, import_prop_types.default.shape({
+		current: import_prop_types.default.shape({
+			pulsate: import_prop_types.default.func.isRequired,
+			start: import_prop_types.default.func.isRequired,
+			stop: import_prop_types.default.func.isRequired
+		})
+	})]),
 	/**
 	* The HTML [`type`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button#type)
 	* attribute applied to `button` and `a` elements.
@@ -8462,16 +8488,18 @@ function BreadcrumbCollapsed(props) {
 	const { slots = {}, slotProps = {}, ...otherProps } = props;
 	const { nativeButton, ...buttonBaseProps } = otherProps;
 	const ownerState = props;
-	return /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(BreadcrumbCollapsedButton, {
-		focusRipple: true,
-		...buttonBaseProps,
-		ownerState,
-		children: /* @__PURE__ */ jsx(BreadcrumbCollapsedIcon, {
-			as: slots.CollapsedIcon,
+	return /* @__PURE__ */ jsx("li", {
+		children: /* @__PURE__ */ jsx(BreadcrumbCollapsedButton, {
+			focusRipple: true,
+			...buttonBaseProps,
 			ownerState,
-			...slotProps.collapsedIcon
+			children: /* @__PURE__ */ jsx(BreadcrumbCollapsedIcon, {
+				as: slots.CollapsedIcon,
+				ownerState,
+				...slotProps.collapsedIcon
+			})
 		})
-	}) });
+	});
 }
 process.env.NODE_ENV !== "production" && (BreadcrumbCollapsed.propTypes = {
 	/**
@@ -49499,7 +49527,7 @@ var featureObjectTypeDefintion = {
 //#endregion
 //#region src/core/generated/schema.generated.ts
 var JupSchema;
-(function(_JupSchema) {
+(function (_JupSchema) {
 	const occupancyStatus = _JupSchema.occupancyStatus = occupancyStatusObjectTypeDefintion;
 	const user = _JupSchema.user = userObjectTypeDefintion;
 	const userRefreshToken = _JupSchema.userRefreshToken = userRefreshTokenObjectTypeDefintion;
@@ -49888,7 +49916,7 @@ var buildFormatNumber = (locale) => {
 	let formatter;
 	if (typeof Intl !== "undefined" && Intl.NumberFormat) try {
 		formatter = new Intl.NumberFormat(locale);
-	} catch {}
+	} catch { }
 	return (value) => {
 		if (!Number.isFinite(value)) return String(value);
 		return formatter ? formatter.format(value) : String(value);
@@ -49897,196 +49925,246 @@ var buildFormatNumber = (locale) => {
 //#endregion
 //#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/locale/deDE.mjs
 var formatNumber$4 = buildFormatNumber("de-DE");
-var deDE$1 = { components: {
-	MuiBreadcrumbs: { defaultProps: { expandText: "Pfad anzeigen" } },
-	MuiTablePagination: { defaultProps: {
-		getItemAriaLabel: (type) => {
-			if (type === "first") return "Zur ersten Seite";
-			if (type === "last") return "Zur letzten Seite";
-			if (type === "next") return "Zur nächsten Seite";
-			return "Zur vorherigen Seite";
+var deDE$1 = {
+	components: {
+		MuiBreadcrumbs: { defaultProps: { expandText: "Pfad anzeigen" } },
+		MuiTablePagination: {
+			defaultProps: {
+				getItemAriaLabel: (type) => {
+					if (type === "first") return "Zur ersten Seite";
+					if (type === "last") return "Zur letzten Seite";
+					if (type === "next") return "Zur nächsten Seite";
+					return "Zur vorherigen Seite";
+				},
+				labelRowsPerPage: "Zeilen pro Seite:",
+				labelDisplayedRows: ({ from, to, count }) => `${formatNumber$4(from)}–${formatNumber$4(to)} von ${count !== -1 ? formatNumber$4(count) : `mehr als ${formatNumber$4(to)}`}`
+			}
 		},
-		labelRowsPerPage: "Zeilen pro Seite:",
-		labelDisplayedRows: ({ from, to, count }) => `${formatNumber$4(from)}–${formatNumber$4(to)} von ${count !== -1 ? formatNumber$4(count) : `mehr als ${formatNumber$4(to)}`}`
-	} },
-	MuiRating: { defaultProps: {
-		getLabelText: (value) => `${value} ${value !== 1 ? "Sterne" : "Stern"}`,
-		emptyLabelText: "Keine Wertung"
-	} },
-	MuiAutocomplete: { defaultProps: {
-		clearText: "Leeren",
-		closeText: "Schließen",
-		loadingText: "Wird geladen…",
-		noOptionsText: "Keine Optionen",
-		openText: "Öffnen"
-	} },
-	MuiAlert: { defaultProps: { closeText: "Schließen" } },
-	MuiPagination: { defaultProps: {
-		"aria-label": "Navigation via Seitennummerierung",
-		getItemAriaLabel: (type, page, selected) => {
-			if (type === "page") return `${selected ? "" : "Gehe zu "}Seite ${page}`;
-			if (type === "first") return "Zur ersten Seite";
-			if (type === "last") return "Zur letzten Seite";
-			if (type === "next") return "Zur nächsten Seite";
-			return "Zur vorherigen Seite";
+		MuiRating: {
+			defaultProps: {
+				getLabelText: (value) => `${value} ${value !== 1 ? "Sterne" : "Stern"}`,
+				emptyLabelText: "Keine Wertung"
+			}
+		},
+		MuiAutocomplete: {
+			defaultProps: {
+				clearText: "Leeren",
+				closeText: "Schließen",
+				loadingText: "Wird geladen…",
+				noOptionsText: "Keine Optionen",
+				openText: "Öffnen"
+			}
+		},
+		MuiAlert: { defaultProps: { closeText: "Schließen" } },
+		MuiPagination: {
+			defaultProps: {
+				"aria-label": "Navigation via Seitennummerierung",
+				getItemAriaLabel: (type, page, selected) => {
+					if (type === "page") return `${selected ? "" : "Gehe zu "}Seite ${page}`;
+					if (type === "first") return "Zur ersten Seite";
+					if (type === "last") return "Zur letzten Seite";
+					if (type === "next") return "Zur nächsten Seite";
+					return "Zur vorherigen Seite";
+				}
+			}
 		}
-	} }
-} };
+	}
+};
 //#endregion
 //#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/locale/enUS.mjs
 var enUS$1 = {};
 //#endregion
 //#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/locale/esES.mjs
 var formatNumber$3 = buildFormatNumber("es-ES");
-var esES$1 = { components: {
-	MuiBreadcrumbs: { defaultProps: { expandText: "Mostrar ruta" } },
-	MuiTablePagination: { defaultProps: {
-		getItemAriaLabel: (type) => {
-			if (type === "first") return "Ir a la primera página";
-			if (type === "last") return "Ir a la última página";
-			if (type === "next") return "Ir a la página siguiente";
-			return "Ir a la página anterior";
+var esES$1 = {
+	components: {
+		MuiBreadcrumbs: { defaultProps: { expandText: "Mostrar ruta" } },
+		MuiTablePagination: {
+			defaultProps: {
+				getItemAriaLabel: (type) => {
+					if (type === "first") return "Ir a la primera página";
+					if (type === "last") return "Ir a la última página";
+					if (type === "next") return "Ir a la página siguiente";
+					return "Ir a la página anterior";
+				},
+				labelRowsPerPage: "Filas por página:",
+				labelDisplayedRows: ({ from, to, count }) => `${formatNumber$3(from)}–${formatNumber$3(to)} de ${count !== -1 ? formatNumber$3(count) : `más de ${formatNumber$3(to)}`}`
+			}
 		},
-		labelRowsPerPage: "Filas por página:",
-		labelDisplayedRows: ({ from, to, count }) => `${formatNumber$3(from)}–${formatNumber$3(to)} de ${count !== -1 ? formatNumber$3(count) : `más de ${formatNumber$3(to)}`}`
-	} },
-	MuiRating: { defaultProps: {
-		getLabelText: (value) => `${value} Estrella${value !== 1 ? "s" : ""}`,
-		emptyLabelText: "Vacío"
-	} },
-	MuiAutocomplete: { defaultProps: {
-		clearText: "Limpiar",
-		closeText: "Cerrar",
-		loadingText: "Cargando…",
-		noOptionsText: "Sin opciones",
-		openText: "Abierto"
-	} },
-	MuiAlert: { defaultProps: { closeText: "Cerrar" } },
-	MuiPagination: { defaultProps: {
-		"aria-label": "Paginador",
-		getItemAriaLabel: (type, page, selected) => {
-			if (type === "page") return `${selected ? "" : "Ir a la "}página ${page}`;
-			if (type === "first") return "Ir a la primera página";
-			if (type === "last") return "Ir a la última página";
-			if (type === "next") return "Ir a la página siguiente";
-			return "Ir a la página anterior";
+		MuiRating: {
+			defaultProps: {
+				getLabelText: (value) => `${value} Estrella${value !== 1 ? "s" : ""}`,
+				emptyLabelText: "Vacío"
+			}
+		},
+		MuiAutocomplete: {
+			defaultProps: {
+				clearText: "Limpiar",
+				closeText: "Cerrar",
+				loadingText: "Cargando…",
+				noOptionsText: "Sin opciones",
+				openText: "Abierto"
+			}
+		},
+		MuiAlert: { defaultProps: { closeText: "Cerrar" } },
+		MuiPagination: {
+			defaultProps: {
+				"aria-label": "Paginador",
+				getItemAriaLabel: (type, page, selected) => {
+					if (type === "page") return `${selected ? "" : "Ir a la "}página ${page}`;
+					if (type === "first") return "Ir a la primera página";
+					if (type === "last") return "Ir a la última página";
+					if (type === "next") return "Ir a la página siguiente";
+					return "Ir a la página anterior";
+				}
+			}
 		}
-	} }
-} };
+	}
+};
 //#endregion
 //#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/locale/frFR.mjs
 var formatNumber$2 = buildFormatNumber("fr-FR");
-var frFR$1 = { components: {
-	MuiBreadcrumbs: { defaultProps: { expandText: "Montrer le chemin" } },
-	MuiTablePagination: { defaultProps: {
-		getItemAriaLabel: (type) => {
-			if (type === "first") return "Aller à la première page";
-			if (type === "last") return "Aller à la dernière page";
-			if (type === "next") return "Aller à la page suivante";
-			return "Aller à la page précédente";
+var frFR$1 = {
+	components: {
+		MuiBreadcrumbs: { defaultProps: { expandText: "Montrer le chemin" } },
+		MuiTablePagination: {
+			defaultProps: {
+				getItemAriaLabel: (type) => {
+					if (type === "first") return "Aller à la première page";
+					if (type === "last") return "Aller à la dernière page";
+					if (type === "next") return "Aller à la page suivante";
+					return "Aller à la page précédente";
+				},
+				labelRowsPerPage: "Lignes par page :",
+				labelDisplayedRows: ({ from, to, count }) => `${formatNumber$2(from)}–${formatNumber$2(to)} sur ${count !== -1 ? formatNumber$2(count) : `plus que ${formatNumber$2(to)}`}`
+			}
 		},
-		labelRowsPerPage: "Lignes par page :",
-		labelDisplayedRows: ({ from, to, count }) => `${formatNumber$2(from)}–${formatNumber$2(to)} sur ${count !== -1 ? formatNumber$2(count) : `plus que ${formatNumber$2(to)}`}`
-	} },
-	MuiRating: { defaultProps: {
-		getLabelText: (value) => `${value} Etoile${value !== 1 ? "s" : ""}`,
-		emptyLabelText: "Vide"
-	} },
-	MuiAutocomplete: { defaultProps: {
-		clearText: "Vider",
-		closeText: "Fermer",
-		loadingText: "Chargement…",
-		noOptionsText: "Pas de résultats",
-		openText: "Ouvrir"
-	} },
-	MuiAlert: { defaultProps: { closeText: "Fermer" } },
-	MuiPagination: { defaultProps: {
-		"aria-label": "navigation de pagination",
-		getItemAriaLabel: (type, page, selected) => {
-			if (type === "page") return `${selected ? "" : "Aller à la "}page ${page}`;
-			if (type === "first") return "Aller à la première page";
-			if (type === "last") return "Aller à la dernière page";
-			if (type === "next") return "Aller à la page suivante";
-			return "Aller à la page précédente";
+		MuiRating: {
+			defaultProps: {
+				getLabelText: (value) => `${value} Etoile${value !== 1 ? "s" : ""}`,
+				emptyLabelText: "Vide"
+			}
+		},
+		MuiAutocomplete: {
+			defaultProps: {
+				clearText: "Vider",
+				closeText: "Fermer",
+				loadingText: "Chargement…",
+				noOptionsText: "Pas de résultats",
+				openText: "Ouvrir"
+			}
+		},
+		MuiAlert: { defaultProps: { closeText: "Fermer" } },
+		MuiPagination: {
+			defaultProps: {
+				"aria-label": "navigation de pagination",
+				getItemAriaLabel: (type, page, selected) => {
+					if (type === "page") return `${selected ? "" : "Aller à la "}page ${page}`;
+					if (type === "first") return "Aller à la première page";
+					if (type === "last") return "Aller à la dernière page";
+					if (type === "next") return "Aller à la page suivante";
+					return "Aller à la page précédente";
+				}
+			}
 		}
-	} }
-} };
+	}
+};
 //#endregion
 //#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/locale/itIT.mjs
 var formatNumber$1 = buildFormatNumber("it-IT");
-var itIT$1 = { components: {
-	MuiBreadcrumbs: { defaultProps: { expandText: "Visualizza percorso" } },
-	MuiTablePagination: { defaultProps: {
-		getItemAriaLabel: (type) => {
-			if (type === "first") return "Vai alla prima pagina";
-			if (type === "last") return "Vai all'ultima pagina";
-			if (type === "next") return "Vai alla pagina successiva";
-			return "Vai alla pagina precedente";
+var itIT$1 = {
+	components: {
+		MuiBreadcrumbs: { defaultProps: { expandText: "Visualizza percorso" } },
+		MuiTablePagination: {
+			defaultProps: {
+				getItemAriaLabel: (type) => {
+					if (type === "first") return "Vai alla prima pagina";
+					if (type === "last") return "Vai all'ultima pagina";
+					if (type === "next") return "Vai alla pagina successiva";
+					return "Vai alla pagina precedente";
+				},
+				labelRowsPerPage: "Righe per pagina:",
+				labelDisplayedRows: ({ from, to, count }) => `${formatNumber$1(from)}–${formatNumber$1(to)} di ${count !== -1 ? formatNumber$1(count) : `più di ${formatNumber$1(to)}`}`
+			}
 		},
-		labelRowsPerPage: "Righe per pagina:",
-		labelDisplayedRows: ({ from, to, count }) => `${formatNumber$1(from)}–${formatNumber$1(to)} di ${count !== -1 ? formatNumber$1(count) : `più di ${formatNumber$1(to)}`}`
-	} },
-	MuiRating: { defaultProps: {
-		getLabelText: (value) => `${value} Stell${value !== 1 ? "e" : "a"}`,
-		emptyLabelText: "Vuoto"
-	} },
-	MuiAutocomplete: { defaultProps: {
-		clearText: "Svuota",
-		closeText: "Chiudi",
-		loadingText: "Caricamento in corso…",
-		noOptionsText: "Nessuna opzione",
-		openText: "Apri"
-	} },
-	MuiAlert: { defaultProps: { closeText: "Chiudi" } },
-	MuiPagination: { defaultProps: {
-		"aria-label": "Navigazione impaginata",
-		getItemAriaLabel: (type, page, selected) => {
-			if (type === "page") return `${selected ? "" : "Vai alla "}pagina ${page}`;
-			if (type === "first") return "Vai alla prima pagina";
-			if (type === "last") return "Vai all'ultima pagina";
-			if (type === "next") return "Vai alla pagina successiva";
-			return "Vai alla pagina precedente";
+		MuiRating: {
+			defaultProps: {
+				getLabelText: (value) => `${value} Stell${value !== 1 ? "e" : "a"}`,
+				emptyLabelText: "Vuoto"
+			}
+		},
+		MuiAutocomplete: {
+			defaultProps: {
+				clearText: "Svuota",
+				closeText: "Chiudi",
+				loadingText: "Caricamento in corso…",
+				noOptionsText: "Nessuna opzione",
+				openText: "Apri"
+			}
+		},
+		MuiAlert: { defaultProps: { closeText: "Chiudi" } },
+		MuiPagination: {
+			defaultProps: {
+				"aria-label": "Navigazione impaginata",
+				getItemAriaLabel: (type, page, selected) => {
+					if (type === "page") return `${selected ? "" : "Vai alla "}pagina ${page}`;
+					if (type === "first") return "Vai alla prima pagina";
+					if (type === "last") return "Vai all'ultima pagina";
+					if (type === "next") return "Vai alla pagina successiva";
+					return "Vai alla pagina precedente";
+				}
+			}
 		}
-	} }
-} };
+	}
+};
 //#endregion
 //#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/locale/nlNL.mjs
 var formatNumber = buildFormatNumber("nl-NL");
-var nlNL$1 = { components: {
-	MuiBreadcrumbs: { defaultProps: { expandText: "Pad tonen" } },
-	MuiTablePagination: { defaultProps: {
-		getItemAriaLabel: (type) => {
-			if (type === "first") return "Ga naar eerste pagina";
-			if (type === "last") return "Ga naar laatste pagina";
-			if (type === "next") return "Ga naar volgende pagina";
-			return "Ga naar vorige pagina";
+var nlNL$1 = {
+	components: {
+		MuiBreadcrumbs: { defaultProps: { expandText: "Pad tonen" } },
+		MuiTablePagination: {
+			defaultProps: {
+				getItemAriaLabel: (type) => {
+					if (type === "first") return "Ga naar eerste pagina";
+					if (type === "last") return "Ga naar laatste pagina";
+					if (type === "next") return "Ga naar volgende pagina";
+					return "Ga naar vorige pagina";
+				},
+				labelRowsPerPage: "Regels per pagina:",
+				labelDisplayedRows: ({ from, to, count }) => `${formatNumber(from)}–${formatNumber(to)} van ${count !== -1 ? formatNumber(count) : `meer dan ${formatNumber(to)}`}`
+			}
 		},
-		labelRowsPerPage: "Regels per pagina:",
-		labelDisplayedRows: ({ from, to, count }) => `${formatNumber(from)}–${formatNumber(to)} van ${count !== -1 ? formatNumber(count) : `meer dan ${formatNumber(to)}`}`
-	} },
-	MuiRating: { defaultProps: {
-		getLabelText: (value) => `${value} Ster${value !== 1 ? "ren" : ""}`,
-		emptyLabelText: "Leeg"
-	} },
-	MuiAutocomplete: { defaultProps: {
-		clearText: "Wissen",
-		closeText: "Sluiten",
-		loadingText: "Laden…",
-		noOptionsText: "Geen opties",
-		openText: "Openen"
-	} },
-	MuiAlert: { defaultProps: { closeText: "Sluiten" } },
-	MuiPagination: { defaultProps: {
-		"aria-label": "Navigatie via paginering",
-		getItemAriaLabel: (type, page, selected) => {
-			if (type === "page") return `${selected ? "" : "Ga naar "}pagina ${page}`;
-			if (type === "first") return "Ga naar eerste pagina";
-			if (type === "last") return "Ga naar laatste pagina";
-			if (type === "next") return "Ga naar volgende pagina";
-			return "Ga naar vorige pagina";
+		MuiRating: {
+			defaultProps: {
+				getLabelText: (value) => `${value} Ster${value !== 1 ? "ren" : ""}`,
+				emptyLabelText: "Leeg"
+			}
+		},
+		MuiAutocomplete: {
+			defaultProps: {
+				clearText: "Wissen",
+				closeText: "Sluiten",
+				loadingText: "Laden…",
+				noOptionsText: "Geen opties",
+				openText: "Openen"
+			}
+		},
+		MuiAlert: { defaultProps: { closeText: "Sluiten" } },
+		MuiPagination: {
+			defaultProps: {
+				"aria-label": "Navigatie via paginering",
+				getItemAriaLabel: (type, page, selected) => {
+					if (type === "page") return `${selected ? "" : "Ga naar "}pagina ${page}`;
+					if (type === "first") return "Ga naar eerste pagina";
+					if (type === "last") return "Ga naar laatste pagina";
+					if (type === "next") return "Ga naar volgende pagina";
+					return "Ga naar vorige pagina";
+				}
+			}
 		}
-	} }
-} };
+	}
+};
 //#endregion
 //#region node_modules/.pnpm/@mui+x-date-pickers@9.1.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_554d179ac5f3dd77f28f979e78899858/node_modules/@mui/x-date-pickers/locales/utils/getPickersLocalization.mjs
 var getPickersLocalization = (pickersTranslations) => {
@@ -50461,7 +50539,7 @@ var nlNL = getPickersLocalization({
 /**
 * @private
 */
-var LuxonError = class extends Error {};
+var LuxonError = class extends Error { };
 /**
 * @private
 */
@@ -50489,7 +50567,7 @@ var InvalidDurationError = class extends LuxonError {
 /**
 * @private
 */
-var ConflictingSpecificationError = class extends LuxonError {};
+var ConflictingSpecificationError = class extends LuxonError { };
 /**
 * @private
 */
@@ -50501,7 +50579,7 @@ var InvalidUnitError = class extends LuxonError {
 /**
 * @private
 */
-var InvalidArgumentError = class extends LuxonError {};
+var InvalidArgumentError = class extends LuxonError { };
 /**
 * @private
 */
@@ -56657,7 +56735,7 @@ var require_implementation$2 = /* @__PURE__ */ __commonJSMin(((exports, module) 
 		var isArgs = require_isArguments$1();
 		var isEnumerable = Object.prototype.propertyIsEnumerable;
 		var hasDontEnumBug = !isEnumerable.call({ toString: null }, "toString");
-		var hasProtoEnumBug = isEnumerable.call(function() {}, "prototype");
+		var hasProtoEnumBug = isEnumerable.call(function () { }, "prototype");
 		var dontEnums = [
 			"toString",
 			"toLocaleString",
@@ -56667,7 +56745,7 @@ var require_implementation$2 = /* @__PURE__ */ __commonJSMin(((exports, module) 
 			"propertyIsEnumerable",
 			"constructor"
 		];
-		var equalsConstructorPrototype = function(o) {
+		var equalsConstructorPrototype = function (o) {
 			var ctor = o.constructor;
 			return ctor && ctor.prototype === o;
 		};
@@ -56696,7 +56774,7 @@ var require_implementation$2 = /* @__PURE__ */ __commonJSMin(((exports, module) 
 			$webkitStorageInfo: true,
 			$window: true
 		};
-		var hasAutomationEqualityBug = function() {
+		var hasAutomationEqualityBug = function () {
 			if (typeof window === "undefined") return false;
 			for (var k in window) try {
 				if (!excludedKeys["$" + k] && has.call(window, k) && window[k] !== null && typeof window[k] === "object") try {
@@ -56709,7 +56787,7 @@ var require_implementation$2 = /* @__PURE__ */ __commonJSMin(((exports, module) 
 			}
 			return false;
 		}();
-		var equalsConstructorPrototypeIfNotBuggy = function(o) {
+		var equalsConstructorPrototypeIfNotBuggy = function (o) {
 			if (typeof window === "undefined" || !hasAutomationEqualityBug) return equalsConstructorPrototype(o);
 			try {
 				return equalsConstructorPrototype(o);
@@ -56749,7 +56827,7 @@ var require_object_keys = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var originalKeys = Object.keys;
 	keysShim.shim = function shimObjectKeys() {
 		if (Object.keys) {
-			if (!function() {
+			if (!function () {
 				var args = Object.keys(arguments);
 				return args && args.length === arguments.length;
 			}(1, 2)) Object.keys = function keys(object) {
@@ -56858,11 +56936,11 @@ var require_define_properties = /* @__PURE__ */ __commonJSMin(((exports, module)
 	var toStr = Object.prototype.toString;
 	var concat = Array.prototype.concat;
 	var defineDataProperty = require_define_data_property();
-	var isFunction = function(fn) {
+	var isFunction = function (fn) {
 		return typeof fn === "function" && toStr.call(fn) === "[object Function]";
 	};
 	var supportsDescriptors = require_has_property_descriptors()();
-	var defineProperty = function(object, name, value, predicate) {
+	var defineProperty = function (object, name, value, predicate) {
 		if (name in object) {
 			if (predicate === true) {
 				if (object[name] === value) return;
@@ -56871,7 +56949,7 @@ var require_define_properties = /* @__PURE__ */ __commonJSMin(((exports, module)
 		if (supportsDescriptors) defineDataProperty(object, name, value, true);
 		else defineDataProperty(object, name, value);
 	};
-	var defineProperties = function(object, map) {
+	var defineProperties = function (object, map) {
 		var predicates = arguments.length > 2 ? arguments[2] : {};
 		var props = keys(map);
 		if (hasSymbols) props = concat.call(props, Object.getOwnPropertySymbols(map));
@@ -57043,7 +57121,7 @@ var require_implementation$1 = /* @__PURE__ */ __commonJSMin(((exports, module) 
 		for (var i = offset || 0, j = 0; i < arrLike.length; i += 1, j += 1) arr[j] = arrLike[i];
 		return arr;
 	};
-	var joiny = function(arr, joiner) {
+	var joiny = function (arr, joiner) {
 		var str = "";
 		for (var i = 0; i < arr.length; i += 1) {
 			str += arr[i];
@@ -57056,7 +57134,7 @@ var require_implementation$1 = /* @__PURE__ */ __commonJSMin(((exports, module) 
 		if (typeof target !== "function" || toStr.apply(target) !== funcType) throw new TypeError(ERROR_MESSAGE + target);
 		var args = slicy(arguments, 1);
 		var bound;
-		var binder = function() {
+		var binder = function () {
 			if (this instanceof bound) {
 				var result = target.apply(this, concatty(args, arguments));
 				if (Object(result) === result) return result;
@@ -57069,7 +57147,7 @@ var require_implementation$1 = /* @__PURE__ */ __commonJSMin(((exports, module) 
 		for (var i = 0; i < boundLength; i++) boundArgs[i] = "$" + i;
 		bound = Function("binder", "return function (" + joiny(boundArgs, ",") + "){ return binder.apply(this,arguments); }")(binder);
 		if (target.prototype) {
-			var Empty = function Empty() {};
+			var Empty = function Empty() { };
 			Empty.prototype = target.prototype;
 			bound.prototype = new Empty();
 			Empty.prototype = null;
@@ -57186,17 +57264,17 @@ var require_get_intrinsic = /* @__PURE__ */ __commonJSMin(((exports, module) => 
 	var round = require_round();
 	var sign = require_sign();
 	var $Function = Function;
-	var getEvalledConstructor = function(expressionSyntax) {
+	var getEvalledConstructor = function (expressionSyntax) {
 		try {
 			return $Function("\"use strict\"; return (" + expressionSyntax + ").constructor;")();
-		} catch (e) {}
+		} catch (e) { }
 	};
 	var $gOPD = require_gopd();
 	var $defineProperty = require_es_define_property();
-	var throwTypeError = function() {
+	var throwTypeError = function () {
 		throw new $TypeError();
 	};
-	var ThrowTypeError = $gOPD ? function() {
+	var ThrowTypeError = $gOPD ? function () {
 		try {
 			arguments.callee;
 			return throwTypeError;
@@ -57424,7 +57502,7 @@ var require_get_intrinsic = /* @__PURE__ */ __commonJSMin(((exports, module) => 
 		if (first === "%" && last !== "%") throw new $SyntaxError("invalid intrinsic syntax, expected closing `%`");
 		else if (last === "%" && first !== "%") throw new $SyntaxError("invalid intrinsic syntax, expected opening `%`");
 		var result = [];
-		$replace(string, rePropName, function(match, number, quote, subString) {
+		$replace(string, rePropName, function (match, number, quote, subString) {
 			result[result.length] = quote ? $replace(subString, reEscapeChar, "$1") : number || match;
 		});
 		return result;
@@ -57597,9 +57675,11 @@ var require_shim = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var define = require_define_properties();
 	module.exports = function shimEntries() {
 		var polyfill = getPolyfill();
-		define(Object, { entries: polyfill }, { entries: function testEntries() {
-			return Object.entries !== polyfill;
-		} });
+		define(Object, { entries: polyfill }, {
+			entries: function testEntries() {
+				return Object.entries !== polyfill;
+			}
+		});
 		return polyfill;
 	};
 }));
@@ -57635,22 +57715,22 @@ var require_warning = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	* same logic and follow the same code paths.
 	*/
 	var __DEV__ = process.env.NODE_ENV !== "production";
-	var warning = function() {};
+	var warning = function () { };
 	if (__DEV__) {
 		var printWarning = function printWarning(format, args) {
 			var len = arguments.length;
 			args = new Array(len > 1 ? len - 1 : 0);
 			for (var key = 1; key < len; key++) args[key - 1] = arguments[key];
 			var argIndex = 0;
-			var message = "Warning: " + format.replace(/%s/g, function() {
+			var message = "Warning: " + format.replace(/%s/g, function () {
 				return args[argIndex++];
 			});
 			if (typeof console !== "undefined") console.error(message);
 			try {
 				throw new Error(message);
-			} catch (x) {}
+			} catch (x) { }
 		};
-		warning = function(condition, format, args) {
+		warning = function (condition, format, args) {
 			var len = arguments.length;
 			args = new Array(len > 2 ? len - 2 : 0);
 			for (var key = 2; key < len; key++) args[key - 2] = arguments[key];
@@ -57672,7 +57752,7 @@ var import_node_polyglot = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMi
 	var defaultReplace = String.prototype.replace;
 	var split = String.prototype.split;
 	var delimiter = "||||";
-	var russianPluralGroups = function(n) {
+	var russianPluralGroups = function (n) {
 		var lastTwo = n % 100;
 		var end = lastTwo % 10;
 		if (lastTwo !== 11 && end === 1) return 0;
@@ -57681,48 +57761,48 @@ var import_node_polyglot = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMi
 	};
 	var defaultPluralRules = {
 		pluralTypes: {
-			arabic: function(n) {
+			arabic: function (n) {
 				if (n < 3) return n;
 				var lastTwo = n % 100;
 				if (lastTwo >= 3 && lastTwo <= 10) return 3;
 				return lastTwo >= 11 ? 4 : 5;
 			},
 			bosnian_serbian: russianPluralGroups,
-			chinese: function() {
+			chinese: function () {
 				return 0;
 			},
 			croatian: russianPluralGroups,
-			french: function(n) {
+			french: function (n) {
 				return n >= 2 ? 1 : 0;
 			},
-			german: function(n) {
+			german: function (n) {
 				return n !== 1 ? 1 : 0;
 			},
 			russian: russianPluralGroups,
-			lithuanian: function(n) {
+			lithuanian: function (n) {
 				if (n % 10 === 1 && n % 100 !== 11) return 0;
 				return n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19) ? 1 : 2;
 			},
-			czech: function(n) {
+			czech: function (n) {
 				if (n === 1) return 0;
 				return n >= 2 && n <= 4 ? 1 : 2;
 			},
-			polish: function(n) {
+			polish: function (n) {
 				if (n === 1) return 0;
 				var end = n % 10;
 				return 2 <= end && end <= 4 && (n % 100 < 10 || n % 100 >= 20) ? 1 : 2;
 			},
-			icelandic: function(n) {
+			icelandic: function (n) {
 				return n % 10 !== 1 || n % 100 === 11 ? 1 : 0;
 			},
-			slovenian: function(n) {
+			slovenian: function (n) {
 				var lastTwo = n % 100;
 				if (lastTwo === 1) return 0;
 				if (lastTwo === 2) return 1;
 				if (lastTwo === 3 || lastTwo === 4) return 2;
 				return 3;
 			},
-			romanian: function(n) {
+			romanian: function (n) {
 				if (n === 1) return 0;
 				var lastTwo = n % 100;
 				if (n === 0 || lastTwo >= 2 && lastTwo <= 19) return 1;
@@ -57808,7 +57888,7 @@ var import_node_polyglot = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMi
 	}
 	function createMemoizedPluralTypeNameSelector() {
 		var localePluralTypeStorage = {};
-		return function(pluralRules, locale) {
+		return function (pluralRules, locale) {
 			var pluralType = localePluralTypeStorage[locale];
 			if (pluralType && !pluralRules.pluralTypes[pluralType]) {
 				pluralType = null;
@@ -57845,7 +57925,7 @@ var import_node_polyglot = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMi
 			var pluralTypeWithCount = pluralTypeIndex(pluralRulesOrDefault, memoizedPluralTypeName(pluralRulesOrDefault, locale || "en"), options.smart_count);
 			result = defaultReplace.call(texts[pluralTypeWithCount] || texts[0], /^[^\S]*|[^\S]*$/g, "");
 		}
-		result = replace.call(result, interpolationRegex, function(expression, argument) {
+		result = replace.call(result, interpolationRegex, function (expression, argument) {
 			if (!has(options, argument) || options[argument] == null) return expression;
 			return options[argument];
 		});
@@ -57863,11 +57943,11 @@ var import_node_polyglot = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMi
 		this.tokenRegex = constructTokenRegex(opts.interpolation);
 		this.pluralRules = opts.pluralRules || defaultPluralRules;
 	}
-	Polyglot.prototype.locale = function(newLocale) {
+	Polyglot.prototype.locale = function (newLocale) {
 		if (newLocale) this.currentLocale = newLocale;
 		return this.currentLocale;
 	};
-	Polyglot.prototype.extend = function(morePhrases, prefix) {
+	Polyglot.prototype.extend = function (morePhrases, prefix) {
 		var phraseEntries = entries(morePhrases || {});
 		for (var i = 0; i < phraseEntries.length; i += 1) {
 			var key = phraseEntries[i][0];
@@ -57877,7 +57957,7 @@ var import_node_polyglot = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMi
 			else this.phrases[prefixedKey] = phrase;
 		}
 	};
-	Polyglot.prototype.unset = function(morePhrases, prefix) {
+	Polyglot.prototype.unset = function (morePhrases, prefix) {
 		if (typeof morePhrases === "string") delete this.phrases[morePhrases];
 		else {
 			var phraseEntries = entries(morePhrases || {});
@@ -57890,14 +57970,14 @@ var import_node_polyglot = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMi
 			}
 		}
 	};
-	Polyglot.prototype.clear = function() {
+	Polyglot.prototype.clear = function () {
 		this.phrases = {};
 	};
-	Polyglot.prototype.replace = function(newPhrases) {
+	Polyglot.prototype.replace = function (newPhrases) {
 		this.clear();
 		this.extend(newPhrases);
 	};
-	Polyglot.prototype.t = function(key, options) {
+	Polyglot.prototype.t = function (key, options) {
 		var phrase, result;
 		var opts = options == null ? {} : options;
 		if (typeof this.phrases[key] === "string") phrase = this.phrases[key];
@@ -57912,7 +57992,7 @@ var import_node_polyglot = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMi
 		if (typeof phrase === "string") result = transformPhrase(phrase, opts, this.currentLocale, this.tokenRegex, this.pluralRules, this.replaceImplementation);
 		return result;
 	};
-	Polyglot.prototype.has = function(key) {
+	Polyglot.prototype.has = function (key) {
 		return has(this.phrases, key);
 	};
 	Polyglot.transformPhrase = function transform(phrase, substitutions, locale) {
@@ -58487,9 +58567,11 @@ function buildStore(...partialBuildingBlocks) {
 var keyCount = 0;
 function atom(read, write) {
 	const key = `atom${++keyCount}`;
-	const config = { toString() {
-		return key;
-	} };
+	const config = {
+		toString() {
+			return key;
+		}
+	};
 	if (typeof read === "function") config.read = read;
 	else {
 		config.init = read;
@@ -58604,7 +58686,7 @@ function useAtomValue(atom, options) {
 			if (promiseStatus) try {
 				const value2 = store.get(atom);
 				if (isPromiseLike(value2)) attachPromiseStatus(createContinuablePromise(store, value2, () => store.get(atom)));
-			} catch (e) {}
+			} catch (e) { }
 			if (typeof delay === "number") {
 				console.warn(`[DEPRECATED] delay option is deprecated and will be removed in v3.
 
@@ -58664,14 +58746,14 @@ var polyglotApiAtom = atom(void 0);
 //#endregion
 //#region src/core/utils/pluralUtils.ts
 var import_pluralize = (/* @__PURE__ */ __commonJSMin(((exports, module) => {
-	(function(root, pluralize) {
+	(function (root, pluralize) {
 		/* istanbul ignore else */
 		if (typeof __require === "function" && typeof exports === "object" && typeof module === "object") module.exports = pluralize();
-		else if (typeof define === "function" && define.amd) define(function() {
+		else if (typeof define === "function" && define.amd) define(function () {
 			return pluralize();
 		});
 		else root.pluralize = pluralize();
-	})(exports, function() {
+	})(exports, function () {
 		var pluralRules = [];
 		var singularRules = [];
 		var uncountables = {};
@@ -58710,7 +58792,7 @@ var import_pluralize = (/* @__PURE__ */ __commonJSMin(((exports, module) => {
 		* @return {string}
 		*/
 		function interpolate(str, args) {
-			return str.replace(/\$(\d{1,2})/g, function(match, index) {
+			return str.replace(/\$(\d{1,2})/g, function (match, index) {
 				return args[index] || "";
 			});
 		}
@@ -58722,7 +58804,7 @@ var import_pluralize = (/* @__PURE__ */ __commonJSMin(((exports, module) => {
 		* @return {string}
 		*/
 		function replace(word, rule) {
-			return word.replace(rule[0], function(match, index) {
+			return word.replace(rule[0], function (match, index) {
 				var result = interpolate(rule[1], arguments);
 				if (match === "") return restoreCase(word[index - 1], result);
 				return restoreCase(match, result);
@@ -58754,7 +58836,7 @@ var import_pluralize = (/* @__PURE__ */ __commonJSMin(((exports, module) => {
 		* @return {Function}
 		*/
 		function replaceWord(replaceMap, keepMap, rules) {
-			return function(word) {
+			return function (word) {
 				var token = word.toLowerCase();
 				if (keepMap.hasOwnProperty(token)) return restoreCase(word, token);
 				if (replaceMap.hasOwnProperty(token)) return restoreCase(word, replaceMap[token]);
@@ -58765,7 +58847,7 @@ var import_pluralize = (/* @__PURE__ */ __commonJSMin(((exports, module) => {
 		* Check if a word is part of the map.
 		*/
 		function checkWord(replaceMap, keepMap, rules, bool) {
-			return function(word) {
+			return function (word) {
 				var token = word.toLowerCase();
 				if (keepMap.hasOwnProperty(token)) return true;
 				if (replaceMap.hasOwnProperty(token)) return false;
@@ -58814,7 +58896,7 @@ var import_pluralize = (/* @__PURE__ */ __commonJSMin(((exports, module) => {
 		* @param {(string|RegExp)} rule
 		* @param {string}          replacement
 		*/
-		pluralize.addPluralRule = function(rule, replacement) {
+		pluralize.addPluralRule = function (rule, replacement) {
 			pluralRules.push([sanitizeRule(rule), replacement]);
 		};
 		/**
@@ -58823,7 +58905,7 @@ var import_pluralize = (/* @__PURE__ */ __commonJSMin(((exports, module) => {
 		* @param {(string|RegExp)} rule
 		* @param {string}          replacement
 		*/
-		pluralize.addSingularRule = function(rule, replacement) {
+		pluralize.addSingularRule = function (rule, replacement) {
 			singularRules.push([sanitizeRule(rule), replacement]);
 		};
 		/**
@@ -58831,7 +58913,7 @@ var import_pluralize = (/* @__PURE__ */ __commonJSMin(((exports, module) => {
 		*
 		* @param {(string|RegExp)} word
 		*/
-		pluralize.addUncountableRule = function(word) {
+		pluralize.addUncountableRule = function (word) {
 			if (typeof word === "string") {
 				uncountables[word.toLowerCase()] = true;
 				return;
@@ -58845,7 +58927,7 @@ var import_pluralize = (/* @__PURE__ */ __commonJSMin(((exports, module) => {
 		* @param {string} single
 		* @param {string} plural
 		*/
-		pluralize.addIrregularRule = function(single, plural) {
+		pluralize.addIrregularRule = function (single, plural) {
 			plural = plural.toLowerCase();
 			single = single.toLowerCase();
 			irregularSingles[single] = plural;
@@ -58902,7 +58984,7 @@ var import_pluralize = (/* @__PURE__ */ __commonJSMin(((exports, module) => {
 			["groove", "grooves"],
 			["pickaxe", "pickaxes"],
 			["passerby", "passersby"]
-		].forEach(function(rule) {
+		].forEach(function (rule) {
 			return pluralize.addIrregularRule(rule[0], rule[1]);
 		});
 		/**
@@ -58934,7 +59016,7 @@ var import_pluralize = (/* @__PURE__ */ __commonJSMin(((exports, module) => {
 			[/eaux$/i, "$0"],
 			[/m[ae]n$/i, "men"],
 			["thou", "you"]
-		].forEach(function(rule) {
+		].forEach(function (rule) {
 			return pluralize.addPluralRule(rule[0], rule[1]);
 		});
 		/**
@@ -58964,7 +59046,7 @@ var import_pluralize = (/* @__PURE__ */ __commonJSMin(((exports, module) => {
 			[/(child)ren$/i, "$1"],
 			[/(eau)x?$/i, "$1"],
 			[/men$/i, "man"]
-		].forEach(function(rule) {
+		].forEach(function (rule) {
 			return pluralize.addSingularRule(rule[0], rule[1]);
 		});
 		/**
@@ -59375,7 +59457,7 @@ var require__getRawTag = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		try {
 			value[symToStringTag] = void 0;
 			var unmasked = true;
-		} catch (e) {}
+		} catch (e) { }
 		var result = nativeObjectToString.call(value);
 		if (unmasked) if (isOwn) value[symToStringTag] = tag;
 		else delete value[symToStringTag];
@@ -59872,7 +59954,7 @@ var require__coreJsData = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 var require__isMasked = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var coreJsData = require__coreJsData();
 	/** Used to detect methods masquerading as native. */
-	var maskSrcKey = function() {
+	var maskSrcKey = function () {
 		var uid = /[^.]+$/.exec(coreJsData && coreJsData.keys && coreJsData.keys.IE_PROTO || "");
 		return uid ? "Symbol(src)_1." + uid : "";
 	}();
@@ -59904,10 +59986,10 @@ var require__toSource = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		if (func != null) {
 			try {
 				return funcToString.call(func);
-			} catch (e) {}
+			} catch (e) { }
 			try {
 				return func + "";
-			} catch (e) {}
+			} catch (e) { }
 		}
 		return "";
 	}
@@ -60631,7 +60713,7 @@ var require__baseUnary = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	* @returns {Function} Returns the new capped function.
 	*/
 	function baseUnary(func) {
-		return function(value) {
+		return function (value) {
 			return func(value);
 		};
 	}
@@ -60741,9 +60823,9 @@ var require_isArguments = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var hasOwnProperty = objectProto.hasOwnProperty;
 	/** Built-in value references. */
 	var propertyIsEnumerable = objectProto.propertyIsEnumerable;
-	module.exports = baseIsArguments(function() {
+	module.exports = baseIsArguments(function () {
 		return arguments;
-	}()) ? baseIsArguments : function(value) {
+	}()) ? baseIsArguments : function (value) {
 		return isObjectLike(value) && hasOwnProperty.call(value, "callee") && !propertyIsEnumerable.call(value, "callee");
 	};
 }));
@@ -60863,7 +60945,7 @@ var require__overRest = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	*/
 	function overRest(func, start, transform) {
 		start = nativeMax(start === void 0 ? func.length - 1 : start, 0);
-		return function() {
+		return function () {
 			var args = arguments, index = -1, length = nativeMax(args.length - start, 0), array = Array(length);
 			while (++index < length) array[index] = args[start + index];
 			index = -1;
@@ -60898,7 +60980,7 @@ var require_constant = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	* // => true
 	*/
 	function constant(value) {
-		return function() {
+		return function () {
 			return value;
 		};
 	}
@@ -60908,19 +60990,19 @@ var require_constant = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 //#region node_modules/.pnpm/lodash@4.18.1/node_modules/lodash/_defineProperty.js
 var require__defineProperty = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var getNative = require__getNative();
-	module.exports = function() {
+	module.exports = function () {
 		try {
 			var func = getNative(Object, "defineProperty");
 			func({}, "", {});
 			return func;
-		} catch (e) {}
+		} catch (e) { }
 	}();
 }));
 //#endregion
 //#region node_modules/.pnpm/lodash@4.18.1/node_modules/lodash/_baseSetToString.js
 var require__baseSetToString = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var constant = require_constant(), defineProperty = require__defineProperty(), identity = require_identity();
-	module.exports = !defineProperty ? identity : function(func, string) {
+	module.exports = !defineProperty ? identity : function (func, string) {
 		return defineProperty(func, "toString", {
 			"configurable": true,
 			"enumerable": false,
@@ -60946,7 +61028,7 @@ var require__shortOut = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	*/
 	function shortOut(func) {
 		var count = 0, lastCalled = 0;
-		return function() {
+		return function () {
 			var stamp = nativeNow(), remaining = HOT_SPAN - (stamp - lastCalled);
 			lastCalled = stamp;
 			if (remaining > 0) {
@@ -61018,7 +61100,7 @@ var require_isArrayLikeObject = /* @__PURE__ */ __commonJSMin(((exports, module)
 //#region node_modules/.pnpm/lodash@4.18.1/node_modules/lodash/difference.js
 var require_difference = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var baseDifference = require__baseDifference(), baseFlatten = require__baseFlatten(), baseRest = require__baseRest(), isArrayLikeObject = require_isArrayLikeObject();
-	module.exports = baseRest(function(array, values) {
+	module.exports = baseRest(function (array, values) {
 		return isArrayLikeObject(array) ? baseDifference(array, baseFlatten(values, 1, isArrayLikeObject, true)) : [];
 	});
 }));
@@ -61049,7 +61131,7 @@ var require_last = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 //#region node_modules/.pnpm/lodash@4.18.1/node_modules/lodash/differenceWith.js
 var require_differenceWith = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var baseDifference = require__baseDifference(), baseFlatten = require__baseFlatten(), baseRest = require__baseRest(), isArrayLikeObject = require_isArrayLikeObject(), last = require_last();
-	module.exports = baseRest(function(array, values) {
+	module.exports = baseRest(function (array, values) {
 		var comparator = last(values);
 		if (isArrayLikeObject(comparator)) comparator = void 0;
 		return isArrayLikeObject(array) ? baseDifference(array, baseFlatten(values, 1, isArrayLikeObject, true), void 0, comparator) : [];
@@ -61237,7 +61319,7 @@ var require__equalArrays = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 				break;
 			}
 			if (seen) {
-				if (!arraySome(other, function(othValue, othIndex) {
+				if (!arraySome(other, function (othValue, othIndex) {
 					if (!cacheHas(seen, othIndex) && (arrValue === othValue || equalFunc(arrValue, othValue, bitmask, customizer, stack))) return seen.push(othIndex);
 				})) {
 					result = false;
@@ -61271,7 +61353,7 @@ var require__mapToArray = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	*/
 	function mapToArray(map) {
 		var index = -1, result = Array(map.size);
-		map.forEach(function(value, key) {
+		map.forEach(function (value, key) {
 			result[++index] = [key, value];
 		});
 		return result;
@@ -61290,7 +61372,7 @@ var require__setToArray = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	*/
 	function setToArray(set) {
 		var index = -1, result = Array(set.size);
-		set.forEach(function(value) {
+		set.forEach(function (value) {
 			result[++index] = value;
 		});
 		return result;
@@ -61434,10 +61516,10 @@ var require__getSymbols = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	/** Built-in value references. */
 	var propertyIsEnumerable = Object.prototype.propertyIsEnumerable;
 	var nativeGetSymbols = Object.getOwnPropertySymbols;
-	module.exports = !nativeGetSymbols ? stubArray : function(object) {
+	module.exports = !nativeGetSymbols ? stubArray : function (object) {
 		if (object == null) return [];
 		object = Object(object);
-		return arrayFilter(nativeGetSymbols(object), function(symbol) {
+		return arrayFilter(nativeGetSymbols(object), function (symbol) {
 			return propertyIsEnumerable.call(object, symbol);
 		});
 	};
@@ -61527,12 +61609,12 @@ var require__nodeUtil = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var freeModule = freeExports && typeof module == "object" && module && !module.nodeType && module;
 	/** Detect free variable `process` from Node.js. */
 	var freeProcess = freeModule && freeModule.exports === freeExports && freeGlobal.process;
-	module.exports = function() {
+	module.exports = function () {
 		try {
 			var types = freeModule && freeModule.require && freeModule.require("util").types;
 			if (types) return types;
 			return freeProcess && freeProcess.binding && freeProcess.binding("util");
-		} catch (e) {}
+		} catch (e) { }
 	}();
 }));
 //#endregion
@@ -61593,7 +61675,7 @@ var require__overArg = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	* @returns {Function} Returns the new function.
 	*/
 	function overArg(func, transform) {
-		return function(arg) {
+		return function (arg) {
 			return func(transform(arg));
 		};
 	}
@@ -61771,7 +61853,7 @@ var require__getTag = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	* @returns {string} Returns the `toStringTag`.
 	*/
 	var getTag = baseGetTag;
-	if (DataView && getTag(new DataView(/* @__PURE__ */ new ArrayBuffer(1))) != dataViewTag || Map && getTag(new Map()) != mapTag || Promise && getTag(Promise.resolve()) != promiseTag || Set && getTag(new Set()) != setTag || WeakMap && getTag(new WeakMap()) != weakMapTag) getTag = function(value) {
+	if (DataView && getTag(new DataView(/* @__PURE__ */ new ArrayBuffer(1))) != dataViewTag || Map && getTag(new Map()) != mapTag || Promise && getTag(Promise.resolve()) != promiseTag || Set && getTag(new Set()) != setTag || WeakMap && getTag(new WeakMap()) != weakMapTag) getTag = function (value) {
 		var result = baseGetTag(value), Ctor = result == objectTag ? value.constructor : void 0, ctorString = Ctor ? toSource(Ctor) : "";
 		if (ctorString) switch (ctorString) {
 			case dataViewCtorString: return dataViewTag;
@@ -61955,7 +62037,7 @@ var require__matchesStrictComparable = /* @__PURE__ */ __commonJSMin(((exports, 
 	* @returns {Function} Returns the new spec function.
 	*/
 	function matchesStrictComparable(key, srcValue) {
-		return function(object) {
+		return function (object) {
 			if (object == null) return false;
 			return object[key] === srcValue && (srcValue !== void 0 || key in Object(object));
 		};
@@ -61976,7 +62058,7 @@ var require__baseMatches = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	function baseMatches(source) {
 		var matchData = getMatchData(source);
 		if (matchData.length == 1 && matchData[0][2]) return matchesStrictComparable(matchData[0][0], matchData[0][1]);
-		return function(object) {
+		return function (object) {
 			return object === source || baseIsMatch(object, source, matchData);
 		};
 	}
@@ -62056,7 +62138,7 @@ var require_memoize = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	*/
 	function memoize(func, resolver) {
 		if (typeof func != "function" || resolver != null && typeof resolver != "function") throw new TypeError(FUNC_ERROR_TEXT);
-		var memoized = function() {
+		var memoized = function () {
 			var args = arguments, key = resolver ? resolver.apply(this, args) : args[0], cache = memoized.cache;
 			if (cache.has(key)) return cache.get(key);
 			var result = func.apply(this, args);
@@ -62084,7 +62166,7 @@ var require__memoizeCapped = /* @__PURE__ */ __commonJSMin(((exports, module) =>
 	* @returns {Function} Returns the new memoized function.
 	*/
 	function memoizeCapped(func) {
-		var result = memoize(func, function(key) {
+		var result = memoize(func, function (key) {
 			if (cache.size === MAX_MEMOIZE_SIZE) cache.clear();
 			return key;
 		});
@@ -62101,10 +62183,10 @@ var require__stringToPath = /* @__PURE__ */ __commonJSMin(((exports, module) => 
 	var rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g;
 	/** Used to match backslashes in property paths. */
 	var reEscapeChar = /\\(\\)?/g;
-	module.exports = memoizeCapped(function(string) {
+	module.exports = memoizeCapped(function (string) {
 		var result = [];
 		if (string.charCodeAt(0) === 46) result.push("");
-		string.replace(rePropName, function(match, number, quote, subString) {
+		string.replace(rePropName, function (match, number, quote, subString) {
 			result.push(quote ? subString.replace(reEscapeChar, "$1") : number || match);
 		});
 		return result;
@@ -62352,7 +62434,7 @@ var require__baseMatchesProperty = /* @__PURE__ */ __commonJSMin(((exports, modu
 	*/
 	function baseMatchesProperty(path, srcValue) {
 		if (isKey(path) && isStrictComparable(srcValue)) return matchesStrictComparable(toKey(path), srcValue);
-		return function(object) {
+		return function (object) {
 			var objValue = get(object, path);
 			return objValue === void 0 && objValue === srcValue ? hasIn(object, path) : baseIsEqual(srcValue, objValue, COMPARE_PARTIAL_FLAG | COMPARE_UNORDERED_FLAG);
 		};
@@ -62370,7 +62452,7 @@ var require__baseProperty = /* @__PURE__ */ __commonJSMin(((exports, module) => 
 	* @returns {Function} Returns the new accessor function.
 	*/
 	function baseProperty(key) {
-		return function(object) {
+		return function (object) {
 			return object == null ? void 0 : object[key];
 		};
 	}
@@ -62388,7 +62470,7 @@ var require__basePropertyDeep = /* @__PURE__ */ __commonJSMin(((exports, module)
 	* @returns {Function} Returns the new accessor function.
 	*/
 	function basePropertyDeep(path) {
-		return function(object) {
+		return function (object) {
 			return baseGet(object, path);
 		};
 	}
@@ -62456,12 +62538,12 @@ var require__createFind = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	* @returns {Function} Returns the new find function.
 	*/
 	function createFind(findIndexFunc) {
-		return function(collection, predicate, fromIndex) {
+		return function (collection, predicate, fromIndex) {
 			var iterable = Object(collection);
 			if (!isArrayLike(collection)) {
 				var iteratee = baseIteratee(predicate, 3);
 				collection = keys(collection);
-				predicate = function(key) {
+				predicate = function (key) {
 					return iteratee(iterable[key], key, iterable);
 				};
 			}
@@ -62729,7 +62811,7 @@ var require__createBaseFor = /* @__PURE__ */ __commonJSMin(((exports, module) =>
 	* @returns {Function} Returns the new base function.
 	*/
 	function createBaseFor(fromRight) {
-		return function(object, iteratee, keysFunc) {
+		return function (object, iteratee, keysFunc) {
 			var index = -1, iterable = Object(object), props = keysFunc(object), length = props.length;
 			while (length--) {
 				var key = props[fromRight ? length : ++index];
@@ -62832,9 +62914,9 @@ var require__baseCreate = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var isObject = require_isObject();
 	/** Built-in value references. */
 	var objectCreate = Object.create;
-	module.exports = function() {
-		function object() {}
-		return function(proto) {
+	module.exports = function () {
+		function object() { }
+		return function (proto) {
 			if (!isObject(proto)) return {};
 			if (objectCreate) return objectCreate(proto);
 			object.prototype = proto;
@@ -63161,7 +63243,7 @@ var require__baseMerge = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	*/
 	function baseMerge(object, source, srcIndex, customizer, stack) {
 		if (object === source) return;
-		baseFor(source, function(srcValue, key) {
+		baseFor(source, function (srcValue, key) {
 			stack || (stack = new Stack());
 			if (isObject(srcValue)) baseMergeDeep(object, source, key, srcIndex, baseMerge, customizer, stack);
 			else {
@@ -63185,7 +63267,7 @@ var require__createAssigner = /* @__PURE__ */ __commonJSMin(((exports, module) =
 	* @returns {Function} Returns the new assigner function.
 	*/
 	function createAssigner(assigner) {
-		return baseRest(function(object, sources) {
+		return baseRest(function (object, sources) {
 			var index = -1, length = sources.length, customizer = length > 1 ? sources[length - 1] : void 0, guard = length > 2 ? sources[2] : void 0;
 			customizer = assigner.length > 3 && typeof customizer == "function" ? (length--, customizer) : void 0;
 			if (guard && isIterateeCall(sources[0], sources[1], guard)) {
@@ -63206,7 +63288,7 @@ var require__createAssigner = /* @__PURE__ */ __commonJSMin(((exports, module) =
 //#region node_modules/.pnpm/lodash@4.18.1/node_modules/lodash/merge.js
 var require_merge = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var baseMerge = require__baseMerge();
-	module.exports = require__createAssigner()(function(object, source, srcIndex) {
+	module.exports = require__createAssigner()(function (object, source, srcIndex) {
 		baseMerge(object, source, srcIndex);
 	});
 }));
@@ -63569,14 +63651,14 @@ var require_noop = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	* _.times(2, _.noop);
 	* // => [undefined, undefined]
 	*/
-	function noop() {}
+	function noop() { }
 	module.exports = noop;
 }));
 //#endregion
 //#region node_modules/.pnpm/lodash@4.18.1/node_modules/lodash/_createSet.js
 var require__createSet = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var Set = require__Set(), noop = require_noop(), setToArray = require__setToArray();
-	module.exports = !(Set && 1 / setToArray(new Set([, -0]))[1] == Infinity) ? noop : function(values) {
+	module.exports = !(Set && 1 / setToArray(new Set([, -0]))[1] == Infinity) ? noop : function (values) {
 		return new Set(values);
 	};
 }));
@@ -63723,10 +63805,12 @@ var public_alpha_config_default = {
 };
 var public_base_config_default = {
 	cloudinary: { "name": "app-surfy-pro" },
-	profile: { "logo": {
-		"square": "https://res.cloudinary.com/app-surfy-pro/image/upload/v1515245191/app/surfy/logo-surfy-square.png",
-		"normal": "https://res.cloudinary.com/app-surfy-pro/image/upload/v1660809543/app/surfy/logo-surfy.png"
-	} },
+	profile: {
+		"logo": {
+			"square": "https://res.cloudinary.com/app-surfy-pro/image/upload/v1515245191/app/surfy/logo-surfy-square.png",
+			"normal": "https://res.cloudinary.com/app-surfy-pro/image/upload/v1660809543/app/surfy/logo-surfy.png"
+		}
+	},
 	authentication: {}
 };
 var public_development_config_default = {
@@ -65046,13 +65130,15 @@ var ViewCoreSchema = {
 				shouldDisplay: void 0
 			}
 		},
-		dataQualities: { "dq-building-3d-eligibility": {
-			name: "dq-building-3d-eligibility",
-			isDefaultView: void 0,
-			hidden: void 0,
-			isStandalone: void 0,
-			shouldDisplay: void 0
-		} }
+		dataQualities: {
+			"dq-building-3d-eligibility": {
+				name: "dq-building-3d-eligibility",
+				isDefaultView: void 0,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			}
+		}
 	},
 	mapScale: {
 		indexes: {
@@ -65179,13 +65265,15 @@ var ViewCoreSchema = {
 				shouldDisplay: void 0
 			}
 		},
-		dataQualities: { "dq-structure-transform-without-anchor": {
-			name: "dq-structure-transform-without-anchor",
-			isDefaultView: void 0,
-			hidden: void 0,
-			isStandalone: void 0,
-			shouldDisplay: void 0
-		} }
+		dataQualities: {
+			"dq-structure-transform-without-anchor": {
+				name: "dq-structure-transform-without-anchor",
+				isDefaultView: void 0,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			}
+		}
 	},
 	structurePoint: {
 		indexes: {
@@ -66217,7 +66305,15 @@ var ViewCoreSchema = {
 				shouldDisplay: void 0
 			}
 		},
-		dataQualities: {}
+		dataQualities: {
+			"dq-missing-color": {
+				name: "dq-missing-color",
+				isDefaultView: void 0,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			}
+		}
 	},
 	dimensionRoom: {
 		indexes: {
@@ -66266,13 +66362,15 @@ var ViewCoreSchema = {
 				shouldDisplay: void 0
 			}
 		},
-		dataQualities: { "dq-wrong-dimension-type": {
-			name: "dq-wrong-dimension-type",
-			isDefaultView: void 0,
-			hidden: void 0,
-			isStandalone: void 0,
-			shouldDisplay: void 0
-		} }
+		dataQualities: {
+			"dq-wrong-dimension-type": {
+				name: "dq-wrong-dimension-type",
+				isDefaultView: void 0,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			}
+		}
 	},
 	dimensionFloor: {
 		indexes: {
@@ -67296,13 +67394,15 @@ var ViewCoreSchema = {
 				shouldDisplay: void 0
 			}
 		},
-		dataQualities: { "dq-workplace-transit-with-affectations": {
-			name: "dq-workplace-transit-with-affectations",
-			isDefaultView: void 0,
-			hidden: void 0,
-			isStandalone: void 0,
-			shouldDisplay: void 0
-		} }
+		dataQualities: {
+			"dq-workplace-transit-with-affectations": {
+				name: "dq-workplace-transit-with-affectations",
+				isDefaultView: void 0,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			}
+		}
 	},
 	item: {
 		indexes: {
@@ -67351,13 +67451,15 @@ var ViewCoreSchema = {
 				shouldDisplay: void 0
 			}
 		},
-		dataQualities: { "dq-item-not-in-workplace-room": {
-			name: "dq-item-not-in-workplace-room",
-			isDefaultView: void 0,
-			hidden: void 0,
-			isStandalone: void 0,
-			shouldDisplay: void 0
-		} }
+		dataQualities: {
+			"dq-item-not-in-workplace-room": {
+				name: "dq-item-not-in-workplace-room",
+				isDefaultView: void 0,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			}
+		}
 	},
 	workplaceAffectation: {
 		indexes: {
@@ -67413,13 +67515,15 @@ var ViewCoreSchema = {
 				shouldDisplay: void 0
 			}
 		},
-		dataQualities: { "dq-workplace-affectation-latest": {
-			name: "dq-workplace-affectation-latest",
-			isDefaultView: void 0,
-			hidden: void 0,
-			isStandalone: void 0,
-			shouldDisplay: void 0
-		} }
+		dataQualities: {
+			"dq-workplace-affectation-latest": {
+				name: "dq-workplace-affectation-latest",
+				isDefaultView: void 0,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			}
+		}
 	},
 	organizationFloor: {
 		indexes: {
@@ -67762,13 +67866,15 @@ var ViewCoreSchema = {
 				shouldDisplay: void 0
 			}
 		},
-		dataQualities: { "dq-dimension-to-person-latest": {
-			name: "dq-dimension-to-person-latest",
-			isDefaultView: void 0,
-			hidden: void 0,
-			isStandalone: void 0,
-			shouldDisplay: void 0
-		} }
+		dataQualities: {
+			"dq-dimension-to-person-latest": {
+				name: "dq-dimension-to-person-latest",
+				isDefaultView: void 0,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			}
+		}
 	},
 	dimensionTypeToBuilding: {
 		indexes: {
@@ -70502,7 +70608,7 @@ var entities_paths_default = {
 		"feature": "/entities/help",
 		"userRefreshToken": null
 	},
-	viewPathMapping: /* @__PURE__ */ JSON.parse("{\"occupancyStatus:list\":\"/entities/surfy/global-admin\",\"occupancyStatus:create\":\"/entities/surfy/global-admin\",\"occupancyStatus:import\":\"/entities/surfy/global-admin\",\"occupancyStatus:dataquality\":\"/entities/surfy/global-admin\",\"user:list\":\"/entities/surfy/global-security\",\"user:create\":\"/entities/surfy/global-security\",\"user:import\":\"/entities/surfy/global-security\",\"user:dataquality\":\"/entities/surfy/global-security\",\"companyType:list\":\"/entities/surfy/global-admin\",\"companyType:create\":\"/entities/surfy/global-admin\",\"companyType:import\":\"/entities/surfy/global-admin\",\"companyType:dataquality\":\"/entities/surfy/global-admin\",\"company:cards\":\"/entities/admin\",\"company:people-info\":\"/entities/admin\",\"company:usage\":\"/entities/admin\",\"company:booking-reporting\":\"/entities/admin\",\"company:dataquality-index\":\"/entities/admin\",\"company:dq-reports-overview-duplicate-company\":\"/entities/admin\",\"company:list\":\"/entities/admin\",\"company:create\":\"/entities/admin\",\"company:import\":\"/entities/admin\",\"company:dataquality\":\"/entities/admin\",\"company:dq-fix-inventory\":\"/entities/admin/dataquality\",\"company:dq-shapes-position\":\"/entities/admin/dataquality\",\"campus:cards\":\"/entities/spaces\",\"campus:list\":\"/entities/spaces\",\"campus:create\":\"/entities/spaces\",\"campus:import\":\"/entities/spaces\",\"campus:dataquality\":\"/entities/spaces\",\"roomConnectorType:list\":\"/entities/admin/connectors\",\"roomConnectorType:create\":\"/entities/admin/connectors\",\"roomConnectorType:import\":\"/entities/admin/connectors\",\"roomConnectorType:dataquality\":\"/entities/admin/connectors\",\"roomConnector:list\":\"/entities/admin/connectors\",\"roomConnector:create\":\"/entities/admin/connectors\",\"roomConnector:import\":\"/entities/admin/connectors\",\"roomConnector:dataquality\":\"/entities/admin/connectors\",\"userCompany:list\":\"/entities/admin/security\",\"userCompany:create\":\"/entities/admin/security\",\"userCompany:import\":\"/entities/admin/security\",\"userCompany:dataquality\":\"/entities/admin/security\",\"personGender:list\":\"/entities/surfy\",\"personGender:create\":\"/entities/surfy\",\"personGender:import\":\"/entities/surfy\",\"personGender:dataquality\":\"/entities/surfy\",\"personCompany:list\":\"/entities/admin/person-companies\",\"personCompany:create\":\"/entities/admin/person-companies\",\"personCompany:import\":\"/entities/admin/person-companies\",\"personCompany:dataquality\":\"/entities/admin/person-companies\",\"jupUiLayout:list\":\"/entities/surfy/global-security\",\"jupUiLayout:create\":\"/entities/surfy/global-security\",\"jupUiLayout:import\":\"/entities/surfy/global-security\",\"jupUiLayout:dataquality\":\"/entities/surfy/global-security\",\"buildingType:list\":\"/entities/admin/types\",\"buildingType:create\":\"/entities/admin/types\",\"buildingType:import\":\"/entities/admin/types\",\"buildingType:dataquality\":\"/entities/admin/types\",\"organization:hierarchy\":\"/entities/organizations\",\"organization:list\":\"/entities/organizations\",\"organization:create\":\"/entities/organizations\",\"organization:import\":\"/entities/organizations\",\"organization:dataquality\":\"/entities/organizations\",\"organization:dq-organization-hierarchy\":\"/entities/organizations/dataquality\",\"organization:dq-level1-not-used\":\"/entities/organizations/dataquality\",\"itemTypeFamily:list\":\"/entities/things/things-type\",\"itemTypeFamily:create\":\"/entities/things/things-type\",\"itemTypeFamily:import\":\"/entities/things/things-type\",\"itemTypeFamily:dataquality\":\"/entities/things/things-type\",\"manufacturer:list\":\"/entities/things/things-type\",\"manufacturer:create\":\"/entities/things/things-type\",\"manufacturer:import\":\"/entities/things/things-type\",\"manufacturer:dataquality\":\"/entities/things/things-type\",\"object3dModel:list\":\"/entities/surfy/global-admin\",\"object3dModel:create\":\"/entities/surfy/global-admin\",\"object3dModel:import\":\"/entities/surfy/global-admin\",\"object3dModel:dataquality\":\"/entities/surfy/global-admin\",\"itemType:list\":\"/entities/things/things-type\",\"itemType:create\":\"/entities/things/things-type\",\"itemType:import\":\"/entities/things/things-type\",\"itemType:dataquality\":\"/entities/things/things-type\",\"itemType:dq-not-used\":\"/entities/things/things-type/dataquality\",\"itemType:dq-uniq-name\":\"/entities/things/things-type/dataquality\",\"building:cards\":\"/entities/spaces\",\"building:pictures\":\"/entities/spaces\",\"building:3d-cards\":\"/entities/spaces\",\"building:gmap\":\"/entities/spaces\",\"building:3d-map\":\"/entities/spaces\",\"building:assets\":\"/entities/spaces\",\"building:list\":\"/entities/spaces\",\"building:create\":\"/entities/spaces\",\"building:import\":\"/entities/spaces\",\"building:dataquality\":\"/entities/spaces\",\"building:dq-building-3d-eligibility\":\"/entities/spaces/dataquality\",\"mapScale:list\":\"/entities/spaces\",\"mapScale:create\":\"/entities/spaces\",\"mapScale:import\":\"/entities/spaces\",\"mapScale:dataquality\":\"/entities/spaces\",\"mapScale:dq-not-used\":\"/entities/spaces/dataquality\",\"mapScale:dq-uniq-name\":\"/entities/spaces/dataquality\",\"structure:list\":\"/entities/spaces\",\"structure:create\":\"/entities/spaces\",\"structure:import\":\"/entities/spaces\",\"structure:dataquality\":\"/entities/spaces\",\"structure:dq-structure-transform-without-anchor\":\"/entities/spaces/dataquality\",\"structurePoint:list\":\"/entities/spaces/space-points\",\"structurePoint:create\":\"/entities/spaces/space-points\",\"structurePoint:import\":\"/entities/spaces/space-points\",\"structurePoint:dataquality\":\"/entities/spaces/space-points\",\"floor:list\":\"/entities/spaces\",\"floor:create\":\"/entities/spaces\",\"floor:import\":\"/entities/spaces\",\"floor:dataquality\":\"/entities/spaces\",\"distributionCostType:list\":\"/entities/admin/types\",\"distributionCostType:create\":\"/entities/admin/types\",\"distributionCostType:import\":\"/entities/admin/types\",\"distributionCostType:dataquality\":\"/entities/admin/types\",\"roomTypeGroup:list\":\"/entities/admin/types/room-types\",\"roomTypeGroup:create\":\"/entities/admin/types/room-types\",\"roomTypeGroup:import\":\"/entities/admin/types/room-types\",\"roomTypeGroup:dataquality\":\"/entities/admin/types/room-types\",\"roomType:list\":\"/entities/admin/types/room-types\",\"roomType:create\":\"/entities/admin/types/room-types\",\"roomType:import\":\"/entities/admin/types/room-types\",\"roomType:dataquality\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:list\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:create\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:import\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:dataquality\":\"/entities/admin/types/room-types\",\"roomTypeGroupFloor:list\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:create\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:import\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:list\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:create\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:import\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"costCenter:list\":\"/entities/admin/types\",\"costCenter:create\":\"/entities/admin/types\",\"costCenter:import\":\"/entities/admin/types\",\"costCenter:dataquality\":\"/entities/admin/types\",\"costCenterBuilding:list\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:create\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:import\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:list\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:create\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:import\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:dataquality\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"room:meeting-rooms\":\"/entities/spaces\",\"room:list\":\"/entities/spaces\",\"room:create\":\"/entities/spaces\",\"room:import\":\"/entities/spaces\",\"room:dataquality\":\"/entities/spaces\",\"room:dq-organization-to-room\":\"/entities/spaces/dataquality\",\"room:dq-uniq-name\":\"/entities/spaces/dataquality\",\"room:dq-no-point\":\"/entities/spaces/dataquality\",\"room:dq-capacity-equals-seats-count\":\"/entities/spaces/dataquality\",\"room:dq-capacity-gt-0\":\"/entities/spaces/dataquality\",\"roomPoint:list\":\"/entities/spaces/space-points\",\"roomPoint:create\":\"/entities/spaces/space-points\",\"roomPoint:import\":\"/entities/spaces/space-points\",\"roomPoint:dataquality\":\"/entities/spaces/space-points\",\"roomPoint:dq-uniq-position\":\"/entities/spaces/space-points/dataquality\",\"roomPoint:dq-not-used\":\"/entities/spaces/space-points/dataquality\",\"roomPointRoom:list\":\"/entities/spaces/space-points\",\"roomPointRoom:create\":\"/entities/spaces/space-points\",\"roomPointRoom:import\":\"/entities/spaces/space-points\",\"roomPointRoom:dataquality\":\"/entities/spaces/space-points\",\"roomPointSegmentType:list\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:create\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:import\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:dataquality\":\"/entities/surfy/global-admin\",\"roomPointSegment:list\":\"/entities/spaces\",\"roomPointSegment:create\":\"/entities/spaces\",\"roomPointSegment:import\":\"/entities/spaces\",\"roomPointSegment:dataquality\":\"/entities/spaces\",\"roomPointSegment:dq-not-uniq\":\"/entities/spaces/dataquality\",\"roomPointSegment:dq-point-not-on-same-floor\":\"/entities/spaces/dataquality\",\"itemTypePoint:list\":\"/entities/things/things-type\",\"itemTypePoint:create\":\"/entities/things/things-type\",\"itemTypePoint:import\":\"/entities/things/things-type\",\"itemTypePoint:dataquality\":\"/entities/things/things-type\",\"dimensionType:list\":\"/entities/admin/dimensions\",\"dimensionType:create\":\"/entities/admin/dimensions\",\"dimensionType:import\":\"/entities/admin/dimensions\",\"dimensionType:dataquality\":\"/entities/admin/dimensions\",\"dimension:list\":\"/entities/admin/dimensions\",\"dimension:create\":\"/entities/admin/dimensions\",\"dimension:import\":\"/entities/admin/dimensions\",\"dimension:dataquality\":\"/entities/admin/dimensions\",\"dimensionRoom:list\":\"/entities/admin/dimensions\",\"dimensionRoom:create\":\"/entities/admin/dimensions\",\"dimensionRoom:import\":\"/entities/admin/dimensions\",\"dimensionRoom:dataquality\":\"/entities/admin/dimensions\",\"dimensionRoom:dq-wrong-dimension-type\":\"/entities/admin/dimensions/dataquality\",\"dimensionFloor:list\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:create\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:import\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:dataquality\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:list\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:create\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:import\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"factType:list\":\"/entities/spaces/building-facts\",\"factType:create\":\"/entities/spaces/building-facts\",\"factType:import\":\"/entities/spaces/building-facts\",\"factType:dataquality\":\"/entities/spaces/building-facts\",\"fact:list\":\"/entities/spaces/building-facts\",\"fact:create\":\"/entities/spaces/building-facts\",\"fact:import\":\"/entities/spaces/building-facts\",\"fact:dataquality\":\"/entities/spaces/building-facts\",\"personState:list\":\"/entities/human/person-type\",\"personState:create\":\"/entities/human/person-type\",\"personState:import\":\"/entities/human/person-type\",\"personState:dataquality\":\"/entities/human/person-type\",\"personSecurityProfile:list\":\"/entities/human/person-type\",\"personSecurityProfile:create\":\"/entities/human/person-type\",\"personSecurityProfile:import\":\"/entities/human/person-type\",\"personSecurityProfile:dataquality\":\"/entities/human/person-type\",\"personType:list\":\"/entities/surfy/global-admin\",\"personType:create\":\"/entities/surfy/global-admin\",\"personType:import\":\"/entities/surfy/global-admin\",\"personType:dataquality\":\"/entities/surfy/global-admin\",\"person:list\":\"/entities/human\",\"person:create\":\"/entities/human\",\"person:import\":\"/entities/human\",\"person:dataquality\":\"/entities/human\",\"person:dq-only-associated-to-building\":\"/entities/human/dataquality\",\"person:dq-near-end-date\":\"/entities/human/dataquality\",\"person:dq-no-affectations\":\"/entities/human/dataquality\",\"person:dq-person-duplicate\":\"/entities/human/dataquality\",\"person:dq-not-affectable-end-date-expired\":\"/entities/human/dataquality\",\"personToPersonType:list\":\"/entities/human/person-relations\",\"personToPersonType:create\":\"/entities/human/person-relations\",\"personToPersonType:import\":\"/entities/human/person-relations\",\"personToPersonType:dataquality\":\"/entities/human/person-relations\",\"personToPerson:list\":\"/entities/human/person-relations\",\"personToPerson:create\":\"/entities/human/person-relations\",\"personToPerson:import\":\"/entities/human/person-relations\",\"personToPerson:dataquality\":\"/entities/human/person-relations\",\"vehicleType:list\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:create\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:import\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:dataquality\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:list\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:create\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:import\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:dataquality\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicle:list\":\"/entities/human/person-vehicles\",\"vehicle:create\":\"/entities/human/person-vehicles\",\"vehicle:import\":\"/entities/human/person-vehicles\",\"vehicle:dataquality\":\"/entities/human/person-vehicles\",\"personToVehicle:list\":\"/entities/human/person-vehicles\",\"personToVehicle:create\":\"/entities/human/person-vehicles\",\"personToVehicle:import\":\"/entities/human/person-vehicles\",\"personToVehicle:dataquality\":\"/entities/human/person-vehicles\",\"roomAffectation:room-mouvement-matrix-import\":\"/entities/affectations\",\"roomAffectation:list\":\"/entities/affectations\",\"roomAffectation:create\":\"/entities/affectations\",\"roomAffectation:import\":\"/entities/affectations\",\"roomAffectation:dataquality\":\"/entities/affectations\",\"workplaceType:list\":\"/entities/things/things-type\",\"workplaceType:create\":\"/entities/things/things-type\",\"workplaceType:import\":\"/entities/things/things-type\",\"workplaceType:dataquality\":\"/entities/things/things-type\",\"workplaceType:dq-not-used\":\"/entities/things/things-type/dataquality\",\"workplaceType:dq-workplace-type-item-type-position-z\":\"/entities/things/things-type/dataquality\",\"workplaceUsageType:list\":\"/entities/things/things-type\",\"workplaceUsageType:create\":\"/entities/things/things-type\",\"workplaceUsageType:import\":\"/entities/things/things-type\",\"workplaceUsageType:dataquality\":\"/entities/things/things-type\",\"workplaceTypeItemType:list\":\"/entities/things/things-type\",\"workplaceTypeItemType:create\":\"/entities/things/things-type\",\"workplaceTypeItemType:import\":\"/entities/things/things-type\",\"workplaceTypeItemType:dataquality\":\"/entities/things/things-type\",\"workplace:list\":\"/entities/things\",\"workplace:create\":\"/entities/things\",\"workplace:import\":\"/entities/things\",\"workplace:dataquality\":\"/entities/things\",\"workplace:dq-workplace-transit-with-affectations\":\"/entities/things/dataquality\",\"item:list\":\"/entities/things\",\"item:create\":\"/entities/things\",\"item:import\":\"/entities/things\",\"item:dataquality\":\"/entities/things\",\"item:dq-item-not-in-workplace-room\":\"/entities/things/dataquality\",\"workplaceAffectation:workplace-mouvement-matrix-import\":\"/entities/affectations\",\"workplaceAffectation:list\":\"/entities/affectations\",\"workplaceAffectation:create\":\"/entities/affectations\",\"workplaceAffectation:import\":\"/entities/affectations\",\"workplaceAffectation:dataquality\":\"/entities/affectations\",\"workplaceAffectation:dq-workplace-affectation-latest\":\"/entities/affectations/dataquality\",\"organizationFloor:list\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:create\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:import\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:dataquality\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:list\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:create\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:import\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"roomTypeFloor:list\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:create\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:import\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:list\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:create\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:import\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"itemToPerson:list\":\"/entities/affectations\",\"itemToPerson:create\":\"/entities/affectations\",\"itemToPerson:import\":\"/entities/affectations\",\"itemToPerson:dataquality\":\"/entities/affectations\",\"personToBuilding:list\":\"/entities/affectations\",\"personToBuilding:create\":\"/entities/affectations\",\"personToBuilding:import\":\"/entities/affectations\",\"personToBuilding:dataquality\":\"/entities/affectations\",\"dimensionToPerson:list\":\"/entities/affectations\",\"dimensionToPerson:create\":\"/entities/affectations\",\"dimensionToPerson:import\":\"/entities/affectations\",\"dimensionToPerson:dataquality\":\"/entities/affectations\",\"dimensionToPerson:dq-dimension-to-person-latest\":\"/entities/affectations/dataquality\",\"dimensionTypeToBuilding:list\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:create\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:import\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:dataquality\":\"/entities/admin/dimensions\",\"workingLocation:list\":\"/entities/surfy/global-admin\",\"workingLocation:create\":\"/entities/surfy/global-admin\",\"workingLocation:import\":\"/entities/surfy/global-admin\",\"workingLocation:dataquality\":\"/entities/surfy/global-admin\",\"personWorkingLocation:my-planning\":\"/entities/planning\",\"personWorkingLocation:obo-planning\":\"/entities/planning\",\"personWorkingLocation:guest-planning\":\"/entities/planning\",\"personWorkingLocation:booking-maps\":\"/entities/planning\",\"personWorkingLocation:pwl-dimension\":\"/entities/planning\",\"personWorkingLocation:list\":\"/entities/planning\",\"personWorkingLocation:create\":\"/entities/planning\",\"personWorkingLocation:import\":\"/entities/planning\",\"personWorkingLocation:dataquality\":\"/entities/planning\",\"personToWorkplaceBooking:dashboard-index\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:list\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:create\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:import\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:dataquality\":\"/entities/planning/bookings\",\"personToRoomBooking:list\":\"/entities/planning/bookings\",\"personToRoomBooking:create\":\"/entities/planning/bookings\",\"personToRoomBooking:import\":\"/entities/planning/bookings\",\"personToRoomBooking:dataquality\":\"/entities/planning/bookings\",\"personToDimensionBooking:list\":\"/entities/planning/bookings\",\"personToDimensionBooking:create\":\"/entities/planning/bookings\",\"personToDimensionBooking:import\":\"/entities/planning/bookings\",\"personToDimensionBooking:dataquality\":\"/entities/planning/bookings\",\"personCompanyMission:list\":\"/entities/admin/person-companies\",\"personCompanyMission:create\":\"/entities/admin/person-companies\",\"personCompanyMission:import\":\"/entities/admin/person-companies\",\"personCompanyMission:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToItemType:list\":\"/entities/admin/person-companies\",\"personCompanyToItemType:create\":\"/entities/admin/person-companies\",\"personCompanyToItemType:import\":\"/entities/admin/person-companies\",\"personCompanyToItemType:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:list\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:create\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:import\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToItem:list\":\"/entities/admin/person-companies\",\"personCompanyToItem:create\":\"/entities/admin/person-companies\",\"personCompanyToItem:import\":\"/entities/admin/person-companies\",\"personCompanyToItem:dataquality\":\"/entities/admin/person-companies\",\"legend:list\":\"/entities/admin\",\"legend:create\":\"/entities/admin\",\"legend:import\":\"/entities/admin\",\"legend:dataquality\":\"/entities/admin\",\"openerPostMessageHost:list\":\"/entities/admin/api\",\"openerPostMessageHost:create\":\"/entities/admin/api\",\"openerPostMessageHost:import\":\"/entities/admin/api\",\"openerPostMessageHost:dataquality\":\"/entities/admin/api\",\"companyWorkingLocation:list\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:create\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:import\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:dataquality\":\"/entities/planning/planning-admin\",\"bookingVehicleConfiguration:list\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:create\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:import\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:dataquality\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:list\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:create\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:import\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:dataquality\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"jupObjectType:list\":\"/entities/surfy/global-security\",\"jupObjectType:create\":\"/entities/surfy/global-security\",\"jupObjectType:import\":\"/entities/surfy/global-security\",\"jupObjectType:dataquality\":\"/entities/surfy/global-security\",\"jupUiView:list\":\"/entities/surfy/global-security\",\"jupUiView:create\":\"/entities/surfy/global-security\",\"jupUiView:import\":\"/entities/surfy/global-security\",\"jupUiView:dataquality\":\"/entities/surfy/global-security\",\"jupRole:help\":\"/entities/surfy/global-security\",\"jupRole:azure-sync\":\"/entities/surfy/global-security\",\"jupRole:list\":\"/entities/surfy/global-security\",\"jupRole:create\":\"/entities/surfy/global-security\",\"jupRole:import\":\"/entities/surfy/global-security\",\"jupRole:dataquality\":\"/entities/surfy/global-security\",\"jupUiOption:list\":\"/entities/surfy/global-security\",\"jupUiOption:create\":\"/entities/surfy/global-security\",\"jupUiOption:import\":\"/entities/surfy/global-security\",\"jupUiOption:dataquality\":\"/entities/surfy/global-security\",\"jupUiOperation:list\":\"/entities/surfy/global-security\",\"jupUiOperation:create\":\"/entities/surfy/global-security\",\"jupUiOperation:import\":\"/entities/surfy/global-security\",\"jupUiOperation:dataquality\":\"/entities/surfy/global-security\",\"contentRole:list\":\"/entities/admin/security\",\"contentRole:create\":\"/entities/admin/security\",\"contentRole:import\":\"/entities/admin/security\",\"contentRole:dataquality\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:list\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:create\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:import\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:dataquality\":\"/entities/admin/security\",\"jupRoleToJupUiView:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:list\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:create\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:import\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:dataquality\":\"/entities/surfy/global-security\",\"contentRoleToBuilding:list\":\"/entities/admin/security\",\"contentRoleToBuilding:create\":\"/entities/admin/security\",\"contentRoleToBuilding:import\":\"/entities/admin/security\",\"contentRoleToBuilding:dataquality\":\"/entities/admin/security\",\"contentRoleToUserCompany:list\":\"/entities/admin/security\",\"contentRoleToUserCompany:create\":\"/entities/admin/security\",\"contentRoleToUserCompany:import\":\"/entities/admin/security\",\"contentRoleToUserCompany:dataquality\":\"/entities/admin/security\",\"contentRoleToFloor:list\":\"/entities/admin/security\",\"contentRoleToFloor:create\":\"/entities/admin/security\",\"contentRoleToFloor:import\":\"/entities/admin/security\",\"contentRoleToFloor:dataquality\":\"/entities/admin/security\",\"partnerApiCredential:list\":\"/entities/admin/api\",\"partnerApiCredential:create\":\"/entities/admin/api\",\"partnerApiCredential:import\":\"/entities/admin/api\",\"partnerApiCredential:dataquality\":\"/entities/admin/api\",\"apiUser:list\":\"/entities/admin/api\",\"apiUser:create\":\"/entities/admin/api\",\"apiUser:import\":\"/entities/admin/api\",\"apiUser:dataquality\":\"/entities/admin/api\",\"apiUserToJupRole:list\":\"/entities/admin/api\",\"apiUserToJupRole:create\":\"/entities/admin/api\",\"apiUserToJupRole:import\":\"/entities/admin/api\",\"apiUserToJupRole:dataquality\":\"/entities/admin/api\",\"apiUserToContentRole:list\":\"/entities/admin/api\",\"apiUserToContentRole:create\":\"/entities/admin/api\",\"apiUserToContentRole:import\":\"/entities/admin/api\",\"apiUserToContentRole:dataquality\":\"/entities/admin/api\",\"jupUiTenantOperation:list\":\"/entities/admin/security\",\"jupUiTenantOperation:create\":\"/entities/admin/security\",\"jupUiTenantOperation:import\":\"/entities/admin/security\",\"jupUiTenantOperation:dataquality\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:list\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:create\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:import\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:dataquality\":\"/entities/admin/security\",\"authentificationConnection:list\":\"/entities/surfy/global-security\",\"authentificationConnection:create\":\"/entities/surfy/global-security\",\"authentificationConnection:import\":\"/entities/surfy/global-security\",\"authentificationConnection:dataquality\":\"/entities/surfy/global-security\",\"userRegistrationTenantRule:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:dataquality\":\"/entities/admin/authentification\",\"partnerExportMappingConfiguration:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:dataquality\":\"/entities/admin/partner-export-mapping\",\"jupRoleToJupUiLayout:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:dataquality\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:list\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:create\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:import\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:dataquality\":\"/entities/surfy/global-security\",\"itemFact:list\":\"/entities/things/items-fact\",\"itemFact:create\":\"/entities/things/items-fact\",\"itemFact:import\":\"/entities/things/items-fact\",\"itemFact:dataquality\":\"/entities/things/items-fact\",\"featureFamily:list\":\"/entities/help\",\"featureFamily:create\":\"/entities/help\",\"featureFamily:import\":\"/entities/help\",\"featureFamily:dataquality\":\"/entities/help\",\"featureGroup:list\":\"/entities/help\",\"featureGroup:create\":\"/entities/help\",\"featureGroup:import\":\"/entities/help\",\"featureGroup:dataquality\":\"/entities/help\",\"feature:list\":\"/entities/help\",\"feature:create\":\"/entities/help\",\"feature:import\":\"/entities/help\",\"feature:dataquality\":\"/entities/help\"}")
+	viewPathMapping: /* @__PURE__ */ JSON.parse("{\"occupancyStatus:list\":\"/entities/surfy/global-admin\",\"occupancyStatus:create\":\"/entities/surfy/global-admin\",\"occupancyStatus:import\":\"/entities/surfy/global-admin\",\"occupancyStatus:dataquality\":\"/entities/surfy/global-admin\",\"user:list\":\"/entities/surfy/global-security\",\"user:create\":\"/entities/surfy/global-security\",\"user:import\":\"/entities/surfy/global-security\",\"user:dataquality\":\"/entities/surfy/global-security\",\"companyType:list\":\"/entities/surfy/global-admin\",\"companyType:create\":\"/entities/surfy/global-admin\",\"companyType:import\":\"/entities/surfy/global-admin\",\"companyType:dataquality\":\"/entities/surfy/global-admin\",\"company:cards\":\"/entities/admin\",\"company:people-info\":\"/entities/admin\",\"company:usage\":\"/entities/admin\",\"company:booking-reporting\":\"/entities/admin\",\"company:dataquality-index\":\"/entities/admin\",\"company:dq-reports-overview-duplicate-company\":\"/entities/admin\",\"company:list\":\"/entities/admin\",\"company:create\":\"/entities/admin\",\"company:import\":\"/entities/admin\",\"company:dataquality\":\"/entities/admin\",\"company:dq-fix-inventory\":\"/entities/admin/dataquality\",\"company:dq-shapes-position\":\"/entities/admin/dataquality\",\"campus:cards\":\"/entities/spaces\",\"campus:list\":\"/entities/spaces\",\"campus:create\":\"/entities/spaces\",\"campus:import\":\"/entities/spaces\",\"campus:dataquality\":\"/entities/spaces\",\"roomConnectorType:list\":\"/entities/admin/connectors\",\"roomConnectorType:create\":\"/entities/admin/connectors\",\"roomConnectorType:import\":\"/entities/admin/connectors\",\"roomConnectorType:dataquality\":\"/entities/admin/connectors\",\"roomConnector:list\":\"/entities/admin/connectors\",\"roomConnector:create\":\"/entities/admin/connectors\",\"roomConnector:import\":\"/entities/admin/connectors\",\"roomConnector:dataquality\":\"/entities/admin/connectors\",\"userCompany:list\":\"/entities/admin/security\",\"userCompany:create\":\"/entities/admin/security\",\"userCompany:import\":\"/entities/admin/security\",\"userCompany:dataquality\":\"/entities/admin/security\",\"personGender:list\":\"/entities/surfy\",\"personGender:create\":\"/entities/surfy\",\"personGender:import\":\"/entities/surfy\",\"personGender:dataquality\":\"/entities/surfy\",\"personCompany:list\":\"/entities/admin/person-companies\",\"personCompany:create\":\"/entities/admin/person-companies\",\"personCompany:import\":\"/entities/admin/person-companies\",\"personCompany:dataquality\":\"/entities/admin/person-companies\",\"jupUiLayout:list\":\"/entities/surfy/global-security\",\"jupUiLayout:create\":\"/entities/surfy/global-security\",\"jupUiLayout:import\":\"/entities/surfy/global-security\",\"jupUiLayout:dataquality\":\"/entities/surfy/global-security\",\"buildingType:list\":\"/entities/admin/types\",\"buildingType:create\":\"/entities/admin/types\",\"buildingType:import\":\"/entities/admin/types\",\"buildingType:dataquality\":\"/entities/admin/types\",\"organization:hierarchy\":\"/entities/organizations\",\"organization:list\":\"/entities/organizations\",\"organization:create\":\"/entities/organizations\",\"organization:import\":\"/entities/organizations\",\"organization:dataquality\":\"/entities/organizations\",\"organization:dq-organization-hierarchy\":\"/entities/organizations/dataquality\",\"organization:dq-level1-not-used\":\"/entities/organizations/dataquality\",\"itemTypeFamily:list\":\"/entities/things/things-type\",\"itemTypeFamily:create\":\"/entities/things/things-type\",\"itemTypeFamily:import\":\"/entities/things/things-type\",\"itemTypeFamily:dataquality\":\"/entities/things/things-type\",\"manufacturer:list\":\"/entities/things/things-type\",\"manufacturer:create\":\"/entities/things/things-type\",\"manufacturer:import\":\"/entities/things/things-type\",\"manufacturer:dataquality\":\"/entities/things/things-type\",\"object3dModel:list\":\"/entities/surfy/global-admin\",\"object3dModel:create\":\"/entities/surfy/global-admin\",\"object3dModel:import\":\"/entities/surfy/global-admin\",\"object3dModel:dataquality\":\"/entities/surfy/global-admin\",\"itemType:list\":\"/entities/things/things-type\",\"itemType:create\":\"/entities/things/things-type\",\"itemType:import\":\"/entities/things/things-type\",\"itemType:dataquality\":\"/entities/things/things-type\",\"itemType:dq-not-used\":\"/entities/things/things-type/dataquality\",\"itemType:dq-uniq-name\":\"/entities/things/things-type/dataquality\",\"building:cards\":\"/entities/spaces\",\"building:pictures\":\"/entities/spaces\",\"building:3d-cards\":\"/entities/spaces\",\"building:gmap\":\"/entities/spaces\",\"building:3d-map\":\"/entities/spaces\",\"building:assets\":\"/entities/spaces\",\"building:list\":\"/entities/spaces\",\"building:create\":\"/entities/spaces\",\"building:import\":\"/entities/spaces\",\"building:dataquality\":\"/entities/spaces\",\"building:dq-building-3d-eligibility\":\"/entities/spaces/dataquality\",\"mapScale:list\":\"/entities/spaces\",\"mapScale:create\":\"/entities/spaces\",\"mapScale:import\":\"/entities/spaces\",\"mapScale:dataquality\":\"/entities/spaces\",\"mapScale:dq-not-used\":\"/entities/spaces/dataquality\",\"mapScale:dq-uniq-name\":\"/entities/spaces/dataquality\",\"structure:list\":\"/entities/spaces\",\"structure:create\":\"/entities/spaces\",\"structure:import\":\"/entities/spaces\",\"structure:dataquality\":\"/entities/spaces\",\"structure:dq-structure-transform-without-anchor\":\"/entities/spaces/dataquality\",\"structurePoint:list\":\"/entities/spaces/space-points\",\"structurePoint:create\":\"/entities/spaces/space-points\",\"structurePoint:import\":\"/entities/spaces/space-points\",\"structurePoint:dataquality\":\"/entities/spaces/space-points\",\"floor:list\":\"/entities/spaces\",\"floor:create\":\"/entities/spaces\",\"floor:import\":\"/entities/spaces\",\"floor:dataquality\":\"/entities/spaces\",\"distributionCostType:list\":\"/entities/admin/types\",\"distributionCostType:create\":\"/entities/admin/types\",\"distributionCostType:import\":\"/entities/admin/types\",\"distributionCostType:dataquality\":\"/entities/admin/types\",\"roomTypeGroup:list\":\"/entities/admin/types/room-types\",\"roomTypeGroup:create\":\"/entities/admin/types/room-types\",\"roomTypeGroup:import\":\"/entities/admin/types/room-types\",\"roomTypeGroup:dataquality\":\"/entities/admin/types/room-types\",\"roomType:list\":\"/entities/admin/types/room-types\",\"roomType:create\":\"/entities/admin/types/room-types\",\"roomType:import\":\"/entities/admin/types/room-types\",\"roomType:dataquality\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:list\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:create\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:import\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:dataquality\":\"/entities/admin/types/room-types\",\"roomTypeGroupFloor:list\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:create\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:import\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:list\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:create\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:import\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"costCenter:list\":\"/entities/admin/types\",\"costCenter:create\":\"/entities/admin/types\",\"costCenter:import\":\"/entities/admin/types\",\"costCenter:dataquality\":\"/entities/admin/types\",\"costCenterBuilding:list\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:create\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:import\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:list\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:create\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:import\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:dataquality\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"room:meeting-rooms\":\"/entities/spaces\",\"room:list\":\"/entities/spaces\",\"room:create\":\"/entities/spaces\",\"room:import\":\"/entities/spaces\",\"room:dataquality\":\"/entities/spaces\",\"room:dq-organization-to-room\":\"/entities/spaces/dataquality\",\"room:dq-uniq-name\":\"/entities/spaces/dataquality\",\"room:dq-no-point\":\"/entities/spaces/dataquality\",\"room:dq-capacity-equals-seats-count\":\"/entities/spaces/dataquality\",\"room:dq-capacity-gt-0\":\"/entities/spaces/dataquality\",\"roomPoint:list\":\"/entities/spaces/space-points\",\"roomPoint:create\":\"/entities/spaces/space-points\",\"roomPoint:import\":\"/entities/spaces/space-points\",\"roomPoint:dataquality\":\"/entities/spaces/space-points\",\"roomPoint:dq-uniq-position\":\"/entities/spaces/space-points/dataquality\",\"roomPoint:dq-not-used\":\"/entities/spaces/space-points/dataquality\",\"roomPointRoom:list\":\"/entities/spaces/space-points\",\"roomPointRoom:create\":\"/entities/spaces/space-points\",\"roomPointRoom:import\":\"/entities/spaces/space-points\",\"roomPointRoom:dataquality\":\"/entities/spaces/space-points\",\"roomPointSegmentType:list\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:create\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:import\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:dataquality\":\"/entities/surfy/global-admin\",\"roomPointSegment:list\":\"/entities/spaces\",\"roomPointSegment:create\":\"/entities/spaces\",\"roomPointSegment:import\":\"/entities/spaces\",\"roomPointSegment:dataquality\":\"/entities/spaces\",\"roomPointSegment:dq-not-uniq\":\"/entities/spaces/dataquality\",\"roomPointSegment:dq-point-not-on-same-floor\":\"/entities/spaces/dataquality\",\"itemTypePoint:list\":\"/entities/things/things-type\",\"itemTypePoint:create\":\"/entities/things/things-type\",\"itemTypePoint:import\":\"/entities/things/things-type\",\"itemTypePoint:dataquality\":\"/entities/things/things-type\",\"dimensionType:list\":\"/entities/admin/dimensions\",\"dimensionType:create\":\"/entities/admin/dimensions\",\"dimensionType:import\":\"/entities/admin/dimensions\",\"dimensionType:dataquality\":\"/entities/admin/dimensions\",\"dimension:list\":\"/entities/admin/dimensions\",\"dimension:create\":\"/entities/admin/dimensions\",\"dimension:import\":\"/entities/admin/dimensions\",\"dimension:dataquality\":\"/entities/admin/dimensions\",\"dimension:dq-missing-color\":\"/entities/admin/dimensions/dataquality\",\"dimensionRoom:list\":\"/entities/admin/dimensions\",\"dimensionRoom:create\":\"/entities/admin/dimensions\",\"dimensionRoom:import\":\"/entities/admin/dimensions\",\"dimensionRoom:dataquality\":\"/entities/admin/dimensions\",\"dimensionRoom:dq-wrong-dimension-type\":\"/entities/admin/dimensions/dataquality\",\"dimensionFloor:list\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:create\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:import\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:dataquality\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:list\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:create\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:import\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"factType:list\":\"/entities/spaces/building-facts\",\"factType:create\":\"/entities/spaces/building-facts\",\"factType:import\":\"/entities/spaces/building-facts\",\"factType:dataquality\":\"/entities/spaces/building-facts\",\"fact:list\":\"/entities/spaces/building-facts\",\"fact:create\":\"/entities/spaces/building-facts\",\"fact:import\":\"/entities/spaces/building-facts\",\"fact:dataquality\":\"/entities/spaces/building-facts\",\"personState:list\":\"/entities/human/person-type\",\"personState:create\":\"/entities/human/person-type\",\"personState:import\":\"/entities/human/person-type\",\"personState:dataquality\":\"/entities/human/person-type\",\"personSecurityProfile:list\":\"/entities/human/person-type\",\"personSecurityProfile:create\":\"/entities/human/person-type\",\"personSecurityProfile:import\":\"/entities/human/person-type\",\"personSecurityProfile:dataquality\":\"/entities/human/person-type\",\"personType:list\":\"/entities/surfy/global-admin\",\"personType:create\":\"/entities/surfy/global-admin\",\"personType:import\":\"/entities/surfy/global-admin\",\"personType:dataquality\":\"/entities/surfy/global-admin\",\"person:list\":\"/entities/human\",\"person:create\":\"/entities/human\",\"person:import\":\"/entities/human\",\"person:dataquality\":\"/entities/human\",\"person:dq-only-associated-to-building\":\"/entities/human/dataquality\",\"person:dq-near-end-date\":\"/entities/human/dataquality\",\"person:dq-no-affectations\":\"/entities/human/dataquality\",\"person:dq-person-duplicate\":\"/entities/human/dataquality\",\"person:dq-not-affectable-end-date-expired\":\"/entities/human/dataquality\",\"personToPersonType:list\":\"/entities/human/person-relations\",\"personToPersonType:create\":\"/entities/human/person-relations\",\"personToPersonType:import\":\"/entities/human/person-relations\",\"personToPersonType:dataquality\":\"/entities/human/person-relations\",\"personToPerson:list\":\"/entities/human/person-relations\",\"personToPerson:create\":\"/entities/human/person-relations\",\"personToPerson:import\":\"/entities/human/person-relations\",\"personToPerson:dataquality\":\"/entities/human/person-relations\",\"vehicleType:list\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:create\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:import\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:dataquality\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:list\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:create\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:import\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:dataquality\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicle:list\":\"/entities/human/person-vehicles\",\"vehicle:create\":\"/entities/human/person-vehicles\",\"vehicle:import\":\"/entities/human/person-vehicles\",\"vehicle:dataquality\":\"/entities/human/person-vehicles\",\"personToVehicle:list\":\"/entities/human/person-vehicles\",\"personToVehicle:create\":\"/entities/human/person-vehicles\",\"personToVehicle:import\":\"/entities/human/person-vehicles\",\"personToVehicle:dataquality\":\"/entities/human/person-vehicles\",\"roomAffectation:room-mouvement-matrix-import\":\"/entities/affectations\",\"roomAffectation:list\":\"/entities/affectations\",\"roomAffectation:create\":\"/entities/affectations\",\"roomAffectation:import\":\"/entities/affectations\",\"roomAffectation:dataquality\":\"/entities/affectations\",\"workplaceType:list\":\"/entities/things/things-type\",\"workplaceType:create\":\"/entities/things/things-type\",\"workplaceType:import\":\"/entities/things/things-type\",\"workplaceType:dataquality\":\"/entities/things/things-type\",\"workplaceType:dq-not-used\":\"/entities/things/things-type/dataquality\",\"workplaceType:dq-workplace-type-item-type-position-z\":\"/entities/things/things-type/dataquality\",\"workplaceUsageType:list\":\"/entities/things/things-type\",\"workplaceUsageType:create\":\"/entities/things/things-type\",\"workplaceUsageType:import\":\"/entities/things/things-type\",\"workplaceUsageType:dataquality\":\"/entities/things/things-type\",\"workplaceTypeItemType:list\":\"/entities/things/things-type\",\"workplaceTypeItemType:create\":\"/entities/things/things-type\",\"workplaceTypeItemType:import\":\"/entities/things/things-type\",\"workplaceTypeItemType:dataquality\":\"/entities/things/things-type\",\"workplace:list\":\"/entities/things\",\"workplace:create\":\"/entities/things\",\"workplace:import\":\"/entities/things\",\"workplace:dataquality\":\"/entities/things\",\"workplace:dq-workplace-transit-with-affectations\":\"/entities/things/dataquality\",\"item:list\":\"/entities/things\",\"item:create\":\"/entities/things\",\"item:import\":\"/entities/things\",\"item:dataquality\":\"/entities/things\",\"item:dq-item-not-in-workplace-room\":\"/entities/things/dataquality\",\"workplaceAffectation:workplace-mouvement-matrix-import\":\"/entities/affectations\",\"workplaceAffectation:list\":\"/entities/affectations\",\"workplaceAffectation:create\":\"/entities/affectations\",\"workplaceAffectation:import\":\"/entities/affectations\",\"workplaceAffectation:dataquality\":\"/entities/affectations\",\"workplaceAffectation:dq-workplace-affectation-latest\":\"/entities/affectations/dataquality\",\"organizationFloor:list\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:create\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:import\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:dataquality\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:list\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:create\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:import\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"roomTypeFloor:list\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:create\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:import\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:list\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:create\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:import\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"itemToPerson:list\":\"/entities/affectations\",\"itemToPerson:create\":\"/entities/affectations\",\"itemToPerson:import\":\"/entities/affectations\",\"itemToPerson:dataquality\":\"/entities/affectations\",\"personToBuilding:list\":\"/entities/affectations\",\"personToBuilding:create\":\"/entities/affectations\",\"personToBuilding:import\":\"/entities/affectations\",\"personToBuilding:dataquality\":\"/entities/affectations\",\"dimensionToPerson:list\":\"/entities/affectations\",\"dimensionToPerson:create\":\"/entities/affectations\",\"dimensionToPerson:import\":\"/entities/affectations\",\"dimensionToPerson:dataquality\":\"/entities/affectations\",\"dimensionToPerson:dq-dimension-to-person-latest\":\"/entities/affectations/dataquality\",\"dimensionTypeToBuilding:list\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:create\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:import\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:dataquality\":\"/entities/admin/dimensions\",\"workingLocation:list\":\"/entities/surfy/global-admin\",\"workingLocation:create\":\"/entities/surfy/global-admin\",\"workingLocation:import\":\"/entities/surfy/global-admin\",\"workingLocation:dataquality\":\"/entities/surfy/global-admin\",\"personWorkingLocation:my-planning\":\"/entities/planning\",\"personWorkingLocation:obo-planning\":\"/entities/planning\",\"personWorkingLocation:guest-planning\":\"/entities/planning\",\"personWorkingLocation:booking-maps\":\"/entities/planning\",\"personWorkingLocation:pwl-dimension\":\"/entities/planning\",\"personWorkingLocation:list\":\"/entities/planning\",\"personWorkingLocation:create\":\"/entities/planning\",\"personWorkingLocation:import\":\"/entities/planning\",\"personWorkingLocation:dataquality\":\"/entities/planning\",\"personToWorkplaceBooking:dashboard-index\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:list\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:create\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:import\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:dataquality\":\"/entities/planning/bookings\",\"personToRoomBooking:list\":\"/entities/planning/bookings\",\"personToRoomBooking:create\":\"/entities/planning/bookings\",\"personToRoomBooking:import\":\"/entities/planning/bookings\",\"personToRoomBooking:dataquality\":\"/entities/planning/bookings\",\"personToDimensionBooking:list\":\"/entities/planning/bookings\",\"personToDimensionBooking:create\":\"/entities/planning/bookings\",\"personToDimensionBooking:import\":\"/entities/planning/bookings\",\"personToDimensionBooking:dataquality\":\"/entities/planning/bookings\",\"personCompanyMission:list\":\"/entities/admin/person-companies\",\"personCompanyMission:create\":\"/entities/admin/person-companies\",\"personCompanyMission:import\":\"/entities/admin/person-companies\",\"personCompanyMission:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToItemType:list\":\"/entities/admin/person-companies\",\"personCompanyToItemType:create\":\"/entities/admin/person-companies\",\"personCompanyToItemType:import\":\"/entities/admin/person-companies\",\"personCompanyToItemType:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:list\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:create\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:import\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToItem:list\":\"/entities/admin/person-companies\",\"personCompanyToItem:create\":\"/entities/admin/person-companies\",\"personCompanyToItem:import\":\"/entities/admin/person-companies\",\"personCompanyToItem:dataquality\":\"/entities/admin/person-companies\",\"legend:list\":\"/entities/admin\",\"legend:create\":\"/entities/admin\",\"legend:import\":\"/entities/admin\",\"legend:dataquality\":\"/entities/admin\",\"openerPostMessageHost:list\":\"/entities/admin/api\",\"openerPostMessageHost:create\":\"/entities/admin/api\",\"openerPostMessageHost:import\":\"/entities/admin/api\",\"openerPostMessageHost:dataquality\":\"/entities/admin/api\",\"companyWorkingLocation:list\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:create\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:import\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:dataquality\":\"/entities/planning/planning-admin\",\"bookingVehicleConfiguration:list\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:create\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:import\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:dataquality\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:list\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:create\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:import\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:dataquality\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"jupObjectType:list\":\"/entities/surfy/global-security\",\"jupObjectType:create\":\"/entities/surfy/global-security\",\"jupObjectType:import\":\"/entities/surfy/global-security\",\"jupObjectType:dataquality\":\"/entities/surfy/global-security\",\"jupUiView:list\":\"/entities/surfy/global-security\",\"jupUiView:create\":\"/entities/surfy/global-security\",\"jupUiView:import\":\"/entities/surfy/global-security\",\"jupUiView:dataquality\":\"/entities/surfy/global-security\",\"jupRole:help\":\"/entities/surfy/global-security\",\"jupRole:azure-sync\":\"/entities/surfy/global-security\",\"jupRole:list\":\"/entities/surfy/global-security\",\"jupRole:create\":\"/entities/surfy/global-security\",\"jupRole:import\":\"/entities/surfy/global-security\",\"jupRole:dataquality\":\"/entities/surfy/global-security\",\"jupUiOption:list\":\"/entities/surfy/global-security\",\"jupUiOption:create\":\"/entities/surfy/global-security\",\"jupUiOption:import\":\"/entities/surfy/global-security\",\"jupUiOption:dataquality\":\"/entities/surfy/global-security\",\"jupUiOperation:list\":\"/entities/surfy/global-security\",\"jupUiOperation:create\":\"/entities/surfy/global-security\",\"jupUiOperation:import\":\"/entities/surfy/global-security\",\"jupUiOperation:dataquality\":\"/entities/surfy/global-security\",\"contentRole:list\":\"/entities/admin/security\",\"contentRole:create\":\"/entities/admin/security\",\"contentRole:import\":\"/entities/admin/security\",\"contentRole:dataquality\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:list\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:create\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:import\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:dataquality\":\"/entities/admin/security\",\"jupRoleToJupUiView:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:list\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:create\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:import\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:dataquality\":\"/entities/surfy/global-security\",\"contentRoleToBuilding:list\":\"/entities/admin/security\",\"contentRoleToBuilding:create\":\"/entities/admin/security\",\"contentRoleToBuilding:import\":\"/entities/admin/security\",\"contentRoleToBuilding:dataquality\":\"/entities/admin/security\",\"contentRoleToUserCompany:list\":\"/entities/admin/security\",\"contentRoleToUserCompany:create\":\"/entities/admin/security\",\"contentRoleToUserCompany:import\":\"/entities/admin/security\",\"contentRoleToUserCompany:dataquality\":\"/entities/admin/security\",\"contentRoleToFloor:list\":\"/entities/admin/security\",\"contentRoleToFloor:create\":\"/entities/admin/security\",\"contentRoleToFloor:import\":\"/entities/admin/security\",\"contentRoleToFloor:dataquality\":\"/entities/admin/security\",\"partnerApiCredential:list\":\"/entities/admin/api\",\"partnerApiCredential:create\":\"/entities/admin/api\",\"partnerApiCredential:import\":\"/entities/admin/api\",\"partnerApiCredential:dataquality\":\"/entities/admin/api\",\"apiUser:list\":\"/entities/admin/api\",\"apiUser:create\":\"/entities/admin/api\",\"apiUser:import\":\"/entities/admin/api\",\"apiUser:dataquality\":\"/entities/admin/api\",\"apiUserToJupRole:list\":\"/entities/admin/api\",\"apiUserToJupRole:create\":\"/entities/admin/api\",\"apiUserToJupRole:import\":\"/entities/admin/api\",\"apiUserToJupRole:dataquality\":\"/entities/admin/api\",\"apiUserToContentRole:list\":\"/entities/admin/api\",\"apiUserToContentRole:create\":\"/entities/admin/api\",\"apiUserToContentRole:import\":\"/entities/admin/api\",\"apiUserToContentRole:dataquality\":\"/entities/admin/api\",\"jupUiTenantOperation:list\":\"/entities/admin/security\",\"jupUiTenantOperation:create\":\"/entities/admin/security\",\"jupUiTenantOperation:import\":\"/entities/admin/security\",\"jupUiTenantOperation:dataquality\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:list\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:create\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:import\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:dataquality\":\"/entities/admin/security\",\"authentificationConnection:list\":\"/entities/surfy/global-security\",\"authentificationConnection:create\":\"/entities/surfy/global-security\",\"authentificationConnection:import\":\"/entities/surfy/global-security\",\"authentificationConnection:dataquality\":\"/entities/surfy/global-security\",\"userRegistrationTenantRule:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:dataquality\":\"/entities/admin/authentification\",\"partnerExportMappingConfiguration:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:dataquality\":\"/entities/admin/partner-export-mapping\",\"jupRoleToJupUiLayout:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:dataquality\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:list\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:create\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:import\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:dataquality\":\"/entities/surfy/global-security\",\"itemFact:list\":\"/entities/things/items-fact\",\"itemFact:create\":\"/entities/things/items-fact\",\"itemFact:import\":\"/entities/things/items-fact\",\"itemFact:dataquality\":\"/entities/things/items-fact\",\"featureFamily:list\":\"/entities/help\",\"featureFamily:create\":\"/entities/help\",\"featureFamily:import\":\"/entities/help\",\"featureFamily:dataquality\":\"/entities/help\",\"featureGroup:list\":\"/entities/help\",\"featureGroup:create\":\"/entities/help\",\"featureGroup:import\":\"/entities/help\",\"featureGroup:dataquality\":\"/entities/help\",\"feature:list\":\"/entities/help\",\"feature:create\":\"/entities/help\",\"feature:import\":\"/entities/help\",\"feature:dataquality\":\"/entities/help\"}")
 };
 //#endregion
 //#region src/surfy-help/metaModel/metamodel.json.helper.ts
@@ -70650,12 +70756,14 @@ function getIndexViewPathIncludingDataQuality(objectTypeName, view) {
 var HelpTooltipStyled = styled(({ className, ...props }) => /* @__PURE__ */ jsx(Tooltip, {
 	...props,
 	classes: { popper: className }
-}))(() => ({ [`& .${tooltipClasses.tooltip}`]: {
-	backgroundColor: "transparent",
-	maxWidth: 600,
-	minWidth: 600,
-	fontSize: 14
-} }));
+}))(() => ({
+	[`& .${tooltipClasses.tooltip}`]: {
+		backgroundColor: "transparent",
+		maxWidth: 600,
+		minWidth: 600,
+		fontSize: 14
+	}
+}));
 //#endregion
 //#region src/surfy-help/views/SurfyHelpLinkToIndexView.tsx
 function ErrorMessage(props) {
@@ -70691,27 +70799,27 @@ function SurfyHelpLinkToIndexView(props) {
 				},
 				children: [
 					/* @__PURE__ */ jsx(Typography, {
-						variant: "h5",
-						component: "h2",
-						sx: { mb: 1 },
-						children: /* @__PURE__ */ jsx(ObjectTypeViewLabel, {
-							objectTypeName,
-							viewName,
-							isDefaultView: view.isDefaultView
-						})
-					}),
-					/* @__PURE__ */ jsx(ObjectTypeIndexViewHelp, {
+					variant: "h5",
+					component: "h2",
+					sx: { mb: 1 },
+					children: /* @__PURE__ */ jsx(ObjectTypeViewLabel, {
 						objectTypeName,
-						view
-					}),
-					/* @__PURE__ */ jsx(MenuBreadcrumb, {
-						sx: { mt: 1 },
-						children: /* @__PURE__ */ jsx(StandaloneIndexViewMenuPathBreadcrumb, {
-							objectTypeName,
-							viewName: view.name,
-							sx: { mt: 2 }
-						})
+						viewName,
+						isDefaultView: view.isDefaultView
 					})
+				}),
+					/* @__PURE__ */ jsx(ObjectTypeIndexViewHelp, {
+					objectTypeName,
+					view
+				}),
+					/* @__PURE__ */ jsx(MenuBreadcrumb, {
+					sx: { mt: 1 },
+					children: /* @__PURE__ */ jsx(StandaloneIndexViewMenuPathBreadcrumb, {
+						objectTypeName,
+						viewName: view.name,
+						sx: { mt: 2 }
+					})
+				})
 				]
 			})
 		}),
@@ -70732,17 +70840,19 @@ function SurfyHelpLinkToIndexView(props) {
 function SurfyHelpStandaloneViewMenuBreadcrumb(props) {
 	const { code } = props;
 	const [objectTypeName, viewName] = code.split(":");
-	return /* @__PURE__ */ jsxs(Box$2, { children: ["Cliquer sur ", /* @__PURE__ */ jsx(StandaloneIndexViewMenuPathBreadcrumb, {
-		objectTypeName,
-		viewName
-	})] });
+	return /* @__PURE__ */ jsxs(Box$2, {
+		children: ["Cliquer sur ", /* @__PURE__ */ jsx(StandaloneIndexViewMenuPathBreadcrumb, {
+			objectTypeName,
+			viewName
+		})]
+	});
 }
 //#endregion
 //#region src/version.json
 var version = {
 	"major": 3,
 	"minor": 4,
-	"build": 195
+	"build": 197
 };
 //#endregion
 //#region src/back/Tracking/version.ts
@@ -71226,6 +71336,11 @@ var jsonTranslationsFiles = {
 		"DeskBookingsSection.noBookingsFound": "Aucune réservation à venir trouvée.",
 		"DimensionChip.anotherPersonIsAssignedViaDimension": "%{personFullName} est affecté sur %{dimensionTypeName} %{dimensionName}",
 		"DimensionChip.youAreAssignedViaDimension": "Vous êtes affecté sur %{dimensionTypeName} %{dimensionName}",
+		"DimensionDataQualityMissingColor.buttonAssignColorsHelp": "Attribuer les couleurs proposées aux calques d'analyse sélectionnés",
+		"DimensionDataQualityMissingColor.headerDimensionType": "Type de calque",
+		"DimensionDataQualityMissingColor.headerId": "Identifiant",
+		"DimensionDataQualityMissingColor.headerName": "Nom",
+		"DimensionDataQualityMissingColor.headerProposedColor": "Couleur proposée",
 		"DimensionInfo.carbonFootprint.help": "L'empreinte carbone est de %{value} de CO2 emis pour %{dimensionType} %{dimension}",
 		"DimensionInfo.dimensionPeopleCount.help": "Il y a %{value} personne(s) affectées dans %{dimensionType} %{dimension}",
 		"DimensionInfo.expansionRatio.help": "Le taux de foisonnement est de %{value} pour %{dimensionType} %{dimension}",
@@ -73145,6 +73260,8 @@ var jsonTranslationsFiles = {
 		"models.Dimension.properties.workplacesBookableOnlyViaDimension.description": "Lorsque activé, les postes de travail de cette dimension ne peuvent être réservés que via une assignation directe à la dimension, et sont exclus des réservations par étage",
 		"models.Dimension.properties.workplacesBookableOnlyViaDimension.label": "Postes réservables uniquement via la dimension",
 		"models.Dimension.singular": "Calque d'analyse",
+		"models.Dimension.views.dq-missing-color.help": "Lister les calques d'analyse sans couleur et attribuer automatiquement une couleur visible sur le plan",
+		"models.Dimension.views.dq-missing-color.label": "Couleur manquante",
 		"models.DimensionBuilding.description": "Une association calque d'analyse aux bâtiments permet de définir les calques d'analyse spécifiques pour chaque bâtiment",
 		"models.DimensionBuilding.determinant.defined": "l'association du calque d'analyse aux bâtiments",
 		"models.DimensionBuilding.determinant.undefined": "une association du calque d'analyse aux bâtiments",
@@ -74216,7 +74333,7 @@ var jsonTranslationsFiles = {
 		"models.UserRegistrationTenantRule.properties.automaticUserToRoleMapping.label": "Associer automatiquement les rôles",
 		"models.UserRegistrationTenantRule.properties.domains.description": "Séparer les domaines avec des espaces et inclure l'arobase",
 		"models.UserRegistrationTenantRule.properties.domains.label": "Domaines",
-		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.description": "Associer l'utilisateur au tenant uniquement si le claim exact Surfy.Tenant.<NomDuTenant> est présent dans le token",
+		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.description": "Associer l'utilisateur au tenant uniquement si le claim exact Surfy.Tenant.{NomDuTenant} est présent dans le token",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.label": "Utiliser les claims OpenID pour associer au tenant",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenRoleMapping.description": "Associer automatiquement les rôles à partir des rôles inclus dans le token OpenID",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenRoleMapping.label": "Utiliser le mappage des rôles via le token OpenID et les Claims",
@@ -74804,6 +74921,11 @@ var jsonTranslationsFiles = {
 		"DeskBookingsSection.noBookingsFound": "No upcoming bookings found.",
 		"DimensionChip.anotherPersonIsAssignedViaDimension": "%{personFullName} is assigned to %{dimensionTypeName} %{dimensionName}",
 		"DimensionChip.youAreAssignedViaDimension": "You are assigned to %{dimensionTypeName} %{dimensionName}",
+		"DimensionDataQualityMissingColor.buttonAssignColorsHelp": "Assign proposed colors to the selected analysis layers",
+		"DimensionDataQualityMissingColor.headerDimensionType": "Layer type",
+		"DimensionDataQualityMissingColor.headerId": "Id",
+		"DimensionDataQualityMissingColor.headerName": "Name",
+		"DimensionDataQualityMissingColor.headerProposedColor": "Proposed color",
 		"DimensionInfo.carbonFootprint.help": "The carbon footprint is %{value} of CO2 emitted for %{dimensionType} %{dimension}",
 		"DimensionInfo.dimensionPeopleCount.help": "There are %{value} affected person(s) in %{dimensionType} %{dimension}",
 		"DimensionInfo.expansionRatio.help": "The sprawl rate is %{value} for %{dimensionType} %{dimension}",
@@ -76723,6 +76845,8 @@ var jsonTranslationsFiles = {
 		"models.Dimension.properties.workplacesBookableOnlyViaDimension.description": "When enabled, workplaces in this dimension can only be booked via direct assignment to the dimension, and are excluded from floor-based bookings",
 		"models.Dimension.properties.workplacesBookableOnlyViaDimension.label": "Workplaces Bookable Only Via Dimension",
 		"models.Dimension.singular": "Analysis Layer",
+		"models.Dimension.views.dq-missing-color.help": "List analysis layers without a color and automatically assign a visible color for the floor plan",
+		"models.Dimension.views.dq-missing-color.label": "Missing color",
 		"models.DimensionBuilding.description": "An analysis layer association with buildings allows you to define specific analysis layers for each building",
 		"models.DimensionBuilding.determinant.defined": "the association of the analysis layer with the buildings",
 		"models.DimensionBuilding.determinant.undefined": "an association of the analysis layer with buildings",
@@ -77794,7 +77918,7 @@ var jsonTranslationsFiles = {
 		"models.UserRegistrationTenantRule.properties.automaticUserToRoleMapping.label": "Automatically associate roles",
 		"models.UserRegistrationTenantRule.properties.domains.description": "Separate domains with spaces and include the at sign",
 		"models.UserRegistrationTenantRule.properties.domains.label": "Areas",
-		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.description": "Associate the user with the tenant only if the exact claim is surfy.<NomDuTenant> is present in the token",
+		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.description": "Associate the user with the tenant only if the exact claim is surfy.{NomDuTenant} is present in the token",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.label": "Use OpenID claims to associate with the tenant",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenRoleMapping.description": "Automatically associate roles based on the roles included in the OpenID token",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenRoleMapping.label": "Use role mapping via the OpenID token and Claims",
@@ -78382,6 +78506,11 @@ var jsonTranslationsFiles = {
 		"DeskBookingsSection.noBookingsFound": "No se encontraron reservas próximas.",
 		"DimensionChip.anotherPersonIsAssignedViaDimension": "%{personFullName} está asignado a %{dimensionTypeName} %{dimensionName}",
 		"DimensionChip.youAreAssignedViaDimension": "Estás asignado a %{dimensionTypeName} %{dimensionName}",
+		"DimensionDataQualityMissingColor.buttonAssignColorsHelp": "Asigne los colores sugeridos a las capas de análisis seleccionadas.",
+		"DimensionDataQualityMissingColor.headerDimensionType": "Tipo de capa",
+		"DimensionDataQualityMissingColor.headerId": "login",
+		"DimensionDataQualityMissingColor.headerName": "apellido",
+		"DimensionDataQualityMissingColor.headerProposedColor": "Color ofrecido",
 		"DimensionInfo.carbonFootprint.help": "La huella de carbono es %{value} de CO2 emitido para %{dimensionType} %{dimension}",
 		"DimensionInfo.dimensionPeopleCount.help": "Hay %{value} persona(s) afectada(s) en %{dimensionType} %{dimension}",
 		"DimensionInfo.expansionRatio.help": "La tasa de expansión es %{value} para %{dimensionType} %{dimension}",
@@ -80301,6 +80430,8 @@ var jsonTranslationsFiles = {
 		"models.Dimension.properties.workplacesBookableOnlyViaDimension.description": "Cuando está habilitado, las estaciones de trabajo en esta dimensión solo se pueden reservar mediante asignación directa a la dimensión y quedan excluidas de las reservas de pisos.",
 		"models.Dimension.properties.workplacesBookableOnlyViaDimension.label": "Posiciones reservables únicamente a través de dimensión",
 		"models.Dimension.singular": "Capa de análisis",
+		"models.Dimension.views.dq-missing-color.help": "Enumerar las capas de análisis sin color y asignar automáticamente un color visible al plan.",
+		"models.Dimension.views.dq-missing-color.label": "Color faltante",
 		"models.DimensionBuilding.description": "Una asociación de capa de análisis con edificios le permite definir capas de análisis específicas para cada edificio",
 		"models.DimensionBuilding.determinant.defined": "la asociación de la capa de análisis con los edificios",
 		"models.DimensionBuilding.determinant.undefined": "una asociación de la capa de análisis con edificios",
@@ -81372,7 +81503,7 @@ var jsonTranslationsFiles = {
 		"models.UserRegistrationTenantRule.properties.automaticUserToRoleMapping.label": "Asociar roles automáticamente",
 		"models.UserRegistrationTenantRule.properties.domains.description": "Separe los dominios con espacios e incluya el signo de arroba",
 		"models.UserRegistrationTenantRule.properties.domains.label": "Áreas",
-		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.description": "Asocie al usuario con el inquilino solo si la reclamación exacta es surfy.<NomDuTenant> está presente en el token",
+		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.description": "Asocie al usuario con el inquilino solo si la reclamación exacta es surfy.{NomDuTenant} está presente en el token",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.label": "Utilice las declaraciones de OpenID para asociarse con el inquilino.",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenRoleMapping.description": "Asocia automáticamente los roles en función de los roles incluidos en el token OpenID.",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenRoleMapping.label": "Utilice la asignación de roles a través del token OpenID y las reclamaciones.",
@@ -81960,6 +82091,11 @@ var jsonTranslationsFiles = {
 		"DeskBookingsSection.noBookingsFound": "Nessuna prenotazione imminente trovata.",
 		"DimensionChip.anotherPersonIsAssignedViaDimension": "%{personFullName} è assegnato a %{dimensionTypeName} %{dimensionName}",
 		"DimensionChip.youAreAssignedViaDimension": "Ti è stato assegnato %{dimensionTypeName} %{dimensionName}",
+		"DimensionDataQualityMissingColor.buttonAssignColorsHelp": "Assegna i colori suggeriti ai livelli di analisi selezionati",
+		"DimensionDataQualityMissingColor.headerDimensionType": "Tipo di livello",
+		"DimensionDataQualityMissingColor.headerId": "ID",
+		"DimensionDataQualityMissingColor.headerName": "Nome",
+		"DimensionDataQualityMissingColor.headerProposedColor": "Colore offerto",
 		"DimensionInfo.carbonFootprint.help": "L'impronta di carbonio è %{value} di CO2 emessa per %{dimensionType} %{dimension}",
 		"DimensionInfo.dimensionPeopleCount.help": "Sono presenti %{value} persone interessate in %{dimensionType} %{dimension}",
 		"DimensionInfo.expansionRatio.help": "Il tasso di espansione è %{value} per %{dimensionType} %{dimension}",
@@ -83879,6 +84015,8 @@ var jsonTranslationsFiles = {
 		"models.Dimension.properties.workplacesBookableOnlyViaDimension.description": "Se abilitato, le postazioni di lavoro in questa dimensione possono essere prenotate solo tramite assegnazione diretta alla dimensione e sono escluse dalle prenotazioni dei piani",
 		"models.Dimension.properties.workplacesBookableOnlyViaDimension.label": "Posizioni prenotabili solo tramite dimensione",
 		"models.Dimension.singular": "Livello di analisi",
+		"models.Dimension.views.dq-missing-color.help": "Elenca i livelli di analisi senza colore e assegna automaticamente un colore visibile al piano.",
+		"models.Dimension.views.dq-missing-color.label": "Colore mancante",
 		"models.DimensionBuilding.description": "Un'associazione di livelli di analisi con gli edifici consente di definire livelli di analisi specifici per ciascun edificio",
 		"models.DimensionBuilding.determinant.defined": "l'associazione dello strato di analisi con gli edifici",
 		"models.DimensionBuilding.determinant.undefined": "un'associazione dello strato di analisi con gli edifici",
@@ -84950,7 +85088,7 @@ var jsonTranslationsFiles = {
 		"models.UserRegistrationTenantRule.properties.automaticUserToRoleMapping.label": "Associa automaticamente i ruoli",
 		"models.UserRegistrationTenantRule.properties.domains.description": "Separare i domini con spazi e includere il segno di chiocciola",
 		"models.UserRegistrationTenantRule.properties.domains.label": "le zone",
-		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.description": "Associa l'utente al tenant solo se la rivendicazione esatta surfy.<NomDuTenant> è presente nel token",
+		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.description": "Associa l'utente al tenant solo se la rivendicazione esatta surfy.{NomDuTenant} è presente nel token",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.label": "Utilizzare le attestazioni OpenID per associarsi al tenant",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenRoleMapping.description": "Associa automaticamente i ruoli in base ai ruoli inclusi nel token OpenID",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenRoleMapping.label": "Utilizzare la mappatura dei ruoli tramite il token OpenID e le attestazioni",
@@ -85538,6 +85676,11 @@ var jsonTranslationsFiles = {
 		"DeskBookingsSection.noBookingsFound": "Geen aankomende reserveringen gevonden.",
 		"DimensionChip.anotherPersonIsAssignedViaDimension": "%{personFullName} is toegewezen aan %{dimensionTypeName} %{dimensionName}",
 		"DimensionChip.youAreAssignedViaDimension": "U bent toegewezen aan %{dimensionTypeName} %{dimensionName}",
+		"DimensionDataQualityMissingColor.buttonAssignColorsHelp": "Wijs de voorgestelde kleuren toe aan de geselecteerde analyselagen.",
+		"DimensionDataQualityMissingColor.headerDimensionType": "Laagtype",
+		"DimensionDataQualityMissingColor.headerId": "Identificatie",
+		"DimensionDataQualityMissingColor.headerName": "Naam",
+		"DimensionDataQualityMissingColor.headerProposedColor": "Kleur aangeboden",
 		"DimensionInfo.carbonFootprint.help": "De CO2-voetafdruk is %{value} van de CO2-uitstoot voor %{dimensionType} %{dimension}",
 		"DimensionInfo.dimensionPeopleCount.help": "Er zijn %{value} persoon(en) toegewezen in %{dimensionType} %{dimension}",
 		"DimensionInfo.expansionRatio.help": "Het uitbreidingspercentage is %{value} voor %{dimensionType} %{dimension}",
@@ -87457,6 +87600,8 @@ var jsonTranslationsFiles = {
 		"models.Dimension.properties.workplacesBookableOnlyViaDimension.description": "Wanneer ingeschakeld, kunnen werkstations in deze dimensie alleen worden gereserveerd via directe toewijzing aan de dimensie en zijn ze uitgesloten van vloerreserveringen",
 		"models.Dimension.properties.workplacesBookableOnlyViaDimension.label": "Posities alleen reserveerbaar via dimensie",
 		"models.Dimension.singular": "Analyse laag",
+		"models.Dimension.views.dq-missing-color.help": "Toon de analyselagen zonder kleur en wijs automatisch een zichtbare kleur toe aan het plan.",
+		"models.Dimension.views.dq-missing-color.label": "Ontbrekende kleur",
 		"models.DimensionBuilding.description": "Dankzij een analyselaagkoppeling met gebouwen kunt u voor elk gebouw specifieke analyselagen definiëren",
 		"models.DimensionBuilding.determinant.defined": "de associatie van de analyselaag met de gebouwen",
 		"models.DimensionBuilding.determinant.undefined": "een associatie van de analyselaag met gebouwen",
@@ -88528,7 +88673,7 @@ var jsonTranslationsFiles = {
 		"models.UserRegistrationTenantRule.properties.automaticUserToRoleMapping.label": "Automatisch rollen koppelen",
 		"models.UserRegistrationTenantRule.properties.domains.description": "Scheid domeinen met spaties en plaats het apenstaartje",
 		"models.UserRegistrationTenantRule.properties.domains.label": "Gebieden",
-		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.description": "Koppel de gebruiker alleen aan de tenant als de exacte claim surfy is.<NomDuTenant> is aanwezig in het token",
+		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.description": "Koppel de gebruiker alleen aan de tenant als de exacte claim surfy is.{NomDuTenant} is aanwezig in het token",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenClaimsToAssociateToTenant.label": "Gebruik OpenID-claims om een ​​koppeling met de tenant te maken.",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenRoleMapping.description": "Automatisch rollen toewijzen op basis van de rollen die in het OpenID-token zijn opgenomen.",
 		"models.UserRegistrationTenantRule.properties.useOpenIdTokenRoleMapping.label": "Gebruik roltoewijzing via het OpenID-token en claims.",
@@ -88727,10 +88872,12 @@ function I18NHelpContext(props) {
 //#region src/front/jup/Application/Recoil/SetupRecoilContext.tsx
 function SetupRecoilContext(props) {
 	const { defaultLanguage, I18nContext } = props;
-	return /* @__PURE__ */ jsx(RecoilRoot, { children: /* @__PURE__ */ jsx(I18nContext, {
-		defaultLanguage,
-		children: props.children
-	}) });
+	return /* @__PURE__ */ jsx(RecoilRoot, {
+		children: /* @__PURE__ */ jsx(I18nContext, {
+			defaultLanguage,
+			children: props.children
+		})
+	});
 }
 //#endregion
 //#region src/back/ModelDefinitions/schema.helper.ts
@@ -88930,10 +89077,12 @@ function ObjectTypeHelper(props) {
 	const { code } = props;
 	if (!isDevMode()) return null;
 	const text = `<OT code="${code}" />`;
-	return /* @__PURE__ */ jsxs(Fragment, { children: [/* @__PURE__ */ jsx("code", { children: text }), /* @__PURE__ */ jsx(CopyToClipboard, {
-		text,
-		children: /* @__PURE__ */ jsx(IconButton, { children: /* @__PURE__ */ jsx(ContentCopyTwoTone_default, {}) })
-	})] });
+	return /* @__PURE__ */ jsxs(Fragment, {
+		children: [/* @__PURE__ */ jsx("code", { children: text }), /* @__PURE__ */ jsx(CopyToClipboard, {
+			text,
+			children: /* @__PURE__ */ jsx(IconButton, { children: /* @__PURE__ */ jsx(ContentCopyTwoTone_default, {}) })
+		})]
+	});
 }
 //#endregion
 //#region src/surfy-help/components/MetaModel/helpers/PropertyTypeHelper.tsx
@@ -88941,10 +89090,12 @@ function PropertyTypeHelper(props) {
 	const { code } = props;
 	if (!isDevMode()) return null;
 	const text = `<P code="${code}" />`;
-	return /* @__PURE__ */ jsxs(Fragment, { children: [/* @__PURE__ */ jsx("code", { children: text }), /* @__PURE__ */ jsx(CopyToClipboard, {
-		text,
-		children: /* @__PURE__ */ jsx(IconButton, { children: /* @__PURE__ */ jsx(ContentCopyTwoTone_default, {}) })
-	})] });
+	return /* @__PURE__ */ jsxs(Fragment, {
+		children: [/* @__PURE__ */ jsx("code", { children: text }), /* @__PURE__ */ jsx(CopyToClipboard, {
+			text,
+			children: /* @__PURE__ */ jsx(IconButton, { children: /* @__PURE__ */ jsx(ContentCopyTwoTone_default, {}) })
+		})]
+	});
 }
 //#endregion
 //#region src/surfy-help/components/MetaModel/ObjectTypeMenuBreadcrumb/ObjectTypeMenuBreadcrumb.tsx
@@ -89226,12 +89377,14 @@ generateUtilityClasses("MuiPaper", [
 //#region node_modules/.pnpm/@mui+material@9.0.1_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emotion+s_039949e37a6cc6aea71d85e0d24b37d1/node_modules/@mui/material/Paper/Paper.mjs
 var useUtilityClasses = (ownerState) => {
 	const { square, elevation, variant, classes } = ownerState;
-	return composeClasses({ root: [
-		"root",
-		variant,
-		!square && "rounded",
-		variant === "elevation" && `elevation${elevation}`
-	] }, getPaperUtilityClass, classes);
+	return composeClasses({
+		root: [
+			"root",
+			variant,
+			!square && "rounded",
+			variant === "elevation" && `elevation${elevation}`
+		]
+	}, getPaperUtilityClass, classes);
 };
 var PaperRoot = styled("div", {
 	name: "MuiPaper",
@@ -89380,18 +89533,18 @@ function SurfyHelpObjectType(props) {
 			sx: { p: 2 },
 			children: [
 				/* @__PURE__ */ jsx(Box$1, {
-					style: {
-						display: "flex",
-						justifyContent: "flex-start",
-						alignItems: "flex-start"
-					},
-					children: /* @__PURE__ */ jsx(Typography, {
-						variant: "h5",
-						component: "h2",
-						sx: { mb: 1 },
-						children: label
-					})
-				}),
+				style: {
+					display: "flex",
+					justifyContent: "flex-start",
+					alignItems: "flex-start"
+				},
+				children: /* @__PURE__ */ jsx(Typography, {
+					variant: "h5",
+					component: "h2",
+					sx: { mb: 1 },
+					children: label
+				})
+			}),
 				description ? /* @__PURE__ */ jsx(Box$1, { children: description }) : null,
 				/* @__PURE__ */ jsx(ObjectTypeMenuBreadcrumb, {
 					code: objectTypeName,
@@ -89422,31 +89575,31 @@ function SurfyHelpPropertyType(props) {
 			sx: { p: 2 },
 			children: [
 				/* @__PURE__ */ jsxs(Box, {
+				style: {
+					display: "flex",
+					justifyContent: "center",
+					alignItems: "flex-start"
+				},
+				children: [/* @__PURE__ */ jsx(Typography, {
+					variant: "h5",
+					component: "h2",
+					sx: { mb: 1 },
+					children: /* @__PURE__ */ jsx(PropertyTypeLabel, { propertyType })
+				}), /* @__PURE__ */ jsx(Box, {
 					style: {
+						flexGrow: 1,
 						display: "flex",
-						justifyContent: "center",
-						alignItems: "flex-start"
+						justifyContent: "flex-end",
+						alignItems: "center"
 					},
-					children: [/* @__PURE__ */ jsx(Typography, {
-						variant: "h5",
-						component: "h2",
-						sx: { mb: 1 },
-						children: /* @__PURE__ */ jsx(PropertyTypeLabel, { propertyType })
-					}), /* @__PURE__ */ jsx(Box, {
-						style: {
-							flexGrow: 1,
-							display: "flex",
-							justifyContent: "flex-end",
-							alignItems: "center"
-						},
-						children: /* @__PURE__ */ jsx(ObjectTypeSingularCapitalizedLabel, { objectTypeName })
-					})]
-				}),
+					children: /* @__PURE__ */ jsx(ObjectTypeSingularCapitalizedLabel, { objectTypeName })
+				})]
+			}),
 				/* @__PURE__ */ jsx(Box, { children: /* @__PURE__ */ jsx(PropertyTypeDescription, { propertyType }) }),
 				/* @__PURE__ */ jsx(Box, {
-					sx: { mt: 2 },
-					children: propertyType.options.mandatory === true && /* @__PURE__ */ jsx(PropertyTypeMandatoryLabel, { propertyType })
-				})
+				sx: { mt: 2 },
+				children: propertyType.options.mandatory === true && /* @__PURE__ */ jsx(PropertyTypeMandatoryLabel, { propertyType })
+			})
 			]
 		}),
 		slots: { transition: Fade },
