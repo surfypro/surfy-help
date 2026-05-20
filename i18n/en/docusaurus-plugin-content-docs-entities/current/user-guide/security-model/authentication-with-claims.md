@@ -32,7 +32,7 @@ To be processed (current official support), values must be present in the JWT to
 A claim matches a role in two ways:
 
 - Direct match with the role or content role code (example: `admin_tenant`).
-- Surfy format: `Surfy.Role.<RoleSuffix>` (example: `Surfy.Role.AdminTenant`).
+- Surfy format: `Surfy.Role.{RoleSuffix}` (example: `Surfy.Role.AdminTenant`).
 
 The suffix (`AdminTenant`) is the PascalCase version of the code:
 
@@ -44,7 +44,7 @@ The suffix (`AdminTenant`) is the PascalCase version of the code:
 
 You can also use tenant-scoped claims:
 
-- `Surfy.Tenant.<ExactTenantName>.Role.<RoleSuffix>`
+- `Surfy.Tenant.{ExactTenantName}.Role.{RoleSuffix}`
 
 Example:
 
@@ -52,7 +52,7 @@ Example:
 
 Important rules:
 
-- `<ExactTenantName>` must exactly match the tenant name in Surfy.
+- `{ExactTenantName}` must exactly match the tenant name in Surfy.
 - If the name does not match, the claim is ignored for that tenant.
 - This applies to roles and content roles exposed as claims.
 
@@ -61,7 +61,7 @@ Important rules:
 A rule can also require the user to be associated to a tenant only when the token contains a dedicated claim:
 
 - enable <P code="userRegistrationTenantRule:useOpenIdTokenClaimsToAssociateToTenant" /> on the rule;
-- add `Surfy.Tenant.<ExactTenantName>` to the token `roles` array.
+- add `Surfy.Tenant.{ExactTenantName}` to the token `roles` array.
 
 This claim only authorizes creation of the user-tenant association. It does not grant a role by itself.
 

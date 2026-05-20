@@ -27,7 +27,7 @@ For each tenant defined by applicable rules:
 - if the user-tenant association already exists, Surfy reuses it,
 - otherwise Surfy creates the user-tenant association.
 
-If <P code="userRegistrationTenantRule:useOpenIdTokenClaimsToAssociateToTenant" /> is enabled on the rule, this association is created only when the token `roles` array contains the exact value `Surfy.Tenant.<ExactTenantName>`.
+If <P code="userRegistrationTenantRule:useOpenIdTokenClaimsToAssociateToTenant" /> is enabled on the rule, this association is created only when the token `roles` array contains the exact value `Surfy.Tenant.{ExactTenantName}`.
 
 This check only controls creation of the user-tenant association. It does not automatically remove an existing association.
 
@@ -59,4 +59,4 @@ Roles marked as claims are not governed by these static assignments.
 - Yes, role checks continue after login during token refresh.
 - Claims mode governs only roles and content roles exposed as claims, adding and removing them according to the token.
 - Other roles remain manually managed or managed by static rules, add-only during the first automatic association.
-- The `Surfy.Tenant.<ExactTenantName>` value in `roles` can gate tenant association, but does not grant any role.
+- The `Surfy.Tenant.{ExactTenantName}` value in `roles` can gate tenant association, but does not grant any role.

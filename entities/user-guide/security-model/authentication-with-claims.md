@@ -32,7 +32,7 @@ Pour être pris en compte (support officiel actuel), les valeurs doivent être p
 Un claim peut correspondre à un rôle de 2 façons :
 
 - Correspondance directe avec le code du rôle ou du rôle de contenu (exemple : `admin_tenant`).
-- Format Surfy : `Surfy.Role.<RoleSuffix>` (exemple : `Surfy.Role.AdminTenant`).
+- Format Surfy : `Surfy.Role.{RoleSuffix}` (exemple : `Surfy.Role.AdminTenant`).
 
 Le suffixe (`AdminTenant`) est la version PascalCase du code :
 
@@ -44,7 +44,7 @@ Le suffixe (`AdminTenant`) est la version PascalCase du code :
 
 Vous pouvez aussi utiliser des claims limités à un tenant :
 
-- `Surfy.Tenant.<NomExactDuTenant>.Role.<RoleSuffix>`
+- `Surfy.Tenant.{NomExactDuTenant}.Role.{RoleSuffix}`
 
 Exemple :
 
@@ -52,7 +52,7 @@ Exemple :
 
 Règles importantes :
 
-- `<NomExactDuTenant>` doit correspondre exactement au nom du tenant dans Surfy.
+- `{NomExactDuTenant}` doit correspondre exactement au nom du tenant dans Surfy.
 - Si le nom ne correspond pas, le claim est ignoré pour ce tenant.
 - Ce mécanisme s'applique aux rôles et rôles de contenu exposés comme claims.
 
@@ -61,7 +61,7 @@ Règles importantes :
 Une règle peut aussi demander que l'utilisateur ne soit associé au tenant que si le token contient un claim dédié :
 
 - activer <P code="userRegistrationTenantRule:useOpenIdTokenClaimsToAssociateToTenant" /> sur la règle ;
-- ajouter la valeur `Surfy.Tenant.<NomExactDuTenant>` dans le tableau `roles` du token.
+- ajouter la valeur `Surfy.Tenant.{NomExactDuTenant}` dans le tableau `roles` du token.
 
 Ce claim sert uniquement à autoriser la création de l'association utilisateur-tenant. Il ne donne pas de rôle par lui-même.
 

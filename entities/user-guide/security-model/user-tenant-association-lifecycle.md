@@ -27,7 +27,7 @@ Pour chaque tenant défini par les règles applicables :
 - si l'association utilisateur-tenant existe déjà, Surfy la réutilise,
 - sinon Surfy crée l'association utilisateur-tenant.
 
-Si <P code="userRegistrationTenantRule:useOpenIdTokenClaimsToAssociateToTenant" /> est activé sur la règle, la création de cette association est autorisée uniquement si le tableau `roles` du token contient la valeur exacte `Surfy.Tenant.<NomExactDuTenant>`.
+Si <P code="userRegistrationTenantRule:useOpenIdTokenClaimsToAssociateToTenant" /> est activé sur la règle, la création de cette association est autorisée uniquement si le tableau `roles` du token contient la valeur exacte `Surfy.Tenant.{NomExactDuTenant}`.
 
 Ce contrôle agit seulement sur la création de l'association utilisateur-tenant. Il ne supprime pas automatiquement une association existante.
 
@@ -59,4 +59,4 @@ Les rôles marqués comme claims ne sont pas pilotés par ces associations stati
 - Oui, la vérification des rôles continue après login, lors du rafraîchissement du token.
 - Le mode claims gouverne uniquement les rôles et rôles de contenu exposés comme claims, avec ajout et retrait selon le token.
 - Les autres rôles restent sous gestion manuelle ou via les règles statiques, en ajout uniquement lors de la première association automatique.
-- La valeur `Surfy.Tenant.<NomExactDuTenant>` dans `roles` peut conditionner l'association au tenant, mais ne donne pas de rôle.
+- La valeur `Surfy.Tenant.{NomExactDuTenant}` dans `roles` peut conditionner l'association au tenant, mais ne donne pas de rôle.
