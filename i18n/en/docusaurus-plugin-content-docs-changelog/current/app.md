@@ -1,5 +1,27 @@
 # What's New
 
+## May 19, 2026 - v3.4.197
+
+- Statistics in plan filters (breakdown by dimension)
+  - Display as a **table** or **chart**, with an explicit choice between the two.
+  - Pie and polar area charts are easier to read, with more consistent labels on the plan.
+- <LIV code="dimension:dq-missing-color" />
+  - New data quality report listing analysis and assignment layers without a usable color on the plan.
+  - A suggested color is proposed for each affected layer, with bulk assignment of suggested colors to selected layers.
+- Global person search
+  - An icon now indicates in results whether the person can book a workstation in a building via <P code="personToBuilding:allowWorkplaceBookingInTheBuilding" />.
+- <OT code="person" />
+  - New property <P code="person:workflow" /> on the person record, usable to track integration or processing steps according to your setup.
+- Workday import of people, organizations and cost centers
+  - Import of **organizations** and their **hierarchy** in addition to people and cost centers.
+  - Before synchronization, **scope** is displayed: recognized buildings, included people, and Workday locations without a matching Surfy building.
+  - Matching people to Surfy buildings via building **external key** and Workday location (including when multiple locations are listed in one comma-separated key).
+  - Dedicated step for **building assignments** in scope, enabling workstation and parking booking in the building when the link is created or corrected.
+  - Automatic assignment to **districts** from the Workday cost center when building districts are correctly configured; the import reports buildings with multiple associated district types and blocks the step until configuration is fixed.
+  - Refined **vehicle** handling and <P code="person:workflow" /> to chain assignment steps without unnecessarily reprocessing people already handled.
+- Third-party service connection (platform)
+  - When only one credential set is available for a connector, it is **selected automatically**.
+
 ## May 11, 2026 - v3.4.194
 
 - <LIV code="personWorkingLocation:guest-planning" />
