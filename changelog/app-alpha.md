@@ -20,9 +20,12 @@ Lors d’une mise en production, le contenu utile est repris dans la page [Nouve
 - Import des personnes, organisations et centres de coût depuis Workday
   - L’import renseigne désormais <P code="person:mainLocation" /> à partir de la location Workday de la personne.
 
-- Affectations aux bâtiments
-  - Dans la fiche personne, les listes de contrôle d’affectation (chambre, poste de travail) et la recherche globale affichent des icônes pour chaque liaison : comptabilisation dans le bâtiment, réservation de poste et réservation de parking autorisées.
-  - Lors du retrait d’une affectation au bâtiment depuis ces listes, une liaison avec réservation de poste ou de parking configurée n’est plus supprimée : la personne est retirée du comptage du bâtiment à la place.
+- Affectation d’une personne sur le plan (dialogue de liste de contrôle)
+  - Lorsque vous affectez une personne à un **espace** ou à un **poste de travail**, le dialogue qui propose de retirer ses autres affectations existantes a été enrichi pour la section **bâtiments**.
+  - Chaque autre bâtiment listé affiche des pictogrammes : la personne est-elle **comptabilisée** dans le bâtiment (<P code="personToBuilding:addToPeopleCount" />), peut-elle **réserver un poste** (<P code="personToBuilding:allowWorkplaceBookingInTheBuilding" />) ou **réserver un parking** (<P code="personToBuilding:allowParkingBookingInTheBuilding" />) dans ce bâtiment.
+  - Par défaut, seules les affectations aux bâtiments où la personne est encore comptabilisée restent **cochées** ; les liaisons déjà exclues du comptage ne le sont plus automatiquement.
+  - Si vous confirmez le retrait d’une affectation à un bâtiment où la réservation de poste ou de parking est déjà autorisée, Surfy **ne supprime plus** la liaison : la personne n’est plus comptabilisée dans ce bâtiment, mais les options de réservation associées sont conservées.
+  - Les mêmes pictogrammes sont visibles dans la **fiche personne** (panneau des affectations aux bâtiments) et dans les **résultats de la recherche globale** des personnes.
 
 - Réservation de parking (planning)
   - Les options de réservation de parking sont regroupées dans un panneau dépliable « Réserver un parking ».

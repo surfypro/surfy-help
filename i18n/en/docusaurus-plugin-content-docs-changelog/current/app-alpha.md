@@ -16,9 +16,12 @@ When a release goes to production, useful content is moved to [What's New](./app
 - Workday import of people, organizations and cost centers
   - The import now sets <P code="person:mainLocation" /> from each person’s Workday location.
 
-- Building assignments
-  - On the person record, assignment checklists (room, workstation) and global search show icons for each link: counted in the building, workstation booking and parking booking allowed.
-  - When removing a building assignment from these lists, a link with workstation or parking booking configured is no longer deleted: the person is removed from the building count instead.
+- Assigning a person on the plan (checklist dialog)
+  - When you assign a person to a **space** or **workstation**, the dialog that offers to remove their other existing assignments has been improved for the **buildings** section.
+  - Each other building listed shows icons for whether the person is **counted** in the building (<P code="personToBuilding:addToPeopleCount" />), may **book a workstation** (<P code="personToBuilding:allowWorkplaceBookingInTheBuilding" />), or may **book parking** (<P code="personToBuilding:allowParkingBookingInTheBuilding" />) there.
+  - By default, only building assignments where the person is still counted remain **checked**; links already excluded from the count are no longer selected automatically.
+  - If you confirm removing an assignment to a building where workstation or parking booking is already allowed, Surfy **no longer deletes** the link: the person is removed from the building count, but the related booking options are kept.
+  - The same icons appear on the **person record** (building assignments panel) and in **global person search** results.
 
 - Parking booking (planning)
   - Parking booking options are grouped in a collapsible “Book parking” panel.
