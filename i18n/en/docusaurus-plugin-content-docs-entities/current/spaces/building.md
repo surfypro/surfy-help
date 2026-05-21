@@ -78,6 +78,13 @@ Share of rent allocated to parking
 *Technical name:* ```yearlyParkingRent```
 <PH code="building:yearlyParkingRent"/>
 
+### Area {#surface}
+
+The building's surface area was entered manually; this value is not related to the spaces modeled in Surfy.
+
+*Technical name:* ```surface```
+<PH code="building:surface"/>
+
 ### Building code {#code}
 
 Building industry coding used particularly in synchronization.
@@ -273,13 +280,6 @@ Amount of the deposit deposited upon signing the lease
 
 *Technical name:* ```securityDeposit```
 <PH code="building:securityDeposit"/>
-
-### Surface {#surface}
-
-
-
-*Technical name:* ```surface```
-<PH code="building:surface"/>
 
 ### Total capacity {#total-capacity-count}
 

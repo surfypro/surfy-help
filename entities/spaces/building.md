@@ -255,7 +255,7 @@ Le ratio par poste de travail est le nombre de métres carrés dans le bâtiment
 
 ### Surface {#surface}
 
-
+La surface du bâtiment saisie manuellement ; cette valeur n'est pas liée aux espaces modélisés dans Surfy
 
 *Nom technique:* ```surface```
 <PH code="building:surface"/>

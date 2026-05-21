@@ -12,6 +12,24 @@ L’application utilisée au quotidien par la plupart des organisations reste su
 
 Lors d’une mise en production, le contenu utile est repris dans la page [Nouveautés](./app.md) ; cette page est ensuite masquée en la renommant `_app-alpha.md`.
 
+## 21 Mai 2026 - v3.4.199
+
+- <OT code="person" />
+  - Nouvelle propriété <P code="person:mainLocation" /> (établissement de référence) sur la fiche personne.
+
+- Import des personnes, organisations et centres de coût depuis Workday
+  - L’import renseigne désormais <P code="person:mainLocation" /> à partir de la location Workday de la personne.
+
+- Affectations aux bâtiments
+  - Dans la fiche personne, les listes de contrôle d’affectation (chambre, poste de travail) et la recherche globale affichent des icônes pour chaque liaison : comptabilisation dans le bâtiment, réservation de poste et réservation de parking autorisées.
+  - Lors du retrait d’une affectation au bâtiment depuis ces listes, une liaison avec réservation de poste ou de parking configurée n’est plus supprimée : la personne est retirée du comptage du bâtiment à la place.
+
+- Réservation de parking (planning)
+  - Les options de réservation de parking sont regroupées dans un panneau dépliable « Réserver un parking ».
+
+- <OT code="userRegistrationTenantRule" />
+  - Textes d’aide affinés pour les options liées aux claims OpenID et à l’association au tenant.
+
 ## 20 Mai 2026 - v3.4.198
 
 - <OT code="building" />

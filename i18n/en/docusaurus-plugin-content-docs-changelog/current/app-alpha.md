@@ -8,6 +8,24 @@ Most organizations’ day-to-day application remains at [https://app.surfy.pro](
 
 When a release goes to production, useful content is moved to [What's New](./app.md); this page is then hidden by renaming it to `_app-alpha.md`.
 
+## May 21, 2026 - v3.4.199
+
+- <OT code="person" />
+  - New property <P code="person:mainLocation" /> (reference establishment) on the person record.
+
+- Workday import of people, organizations and cost centers
+  - The import now sets <P code="person:mainLocation" /> from each person’s Workday location.
+
+- Building assignments
+  - On the person record, assignment checklists (room, workstation) and global search show icons for each link: counted in the building, workstation booking and parking booking allowed.
+  - When removing a building assignment from these lists, a link with workstation or parking booking configured is no longer deleted: the person is removed from the building count instead.
+
+- Parking booking (planning)
+  - Parking booking options are grouped in a collapsible “Book parking” panel.
+
+- <OT code="userRegistrationTenantRule" />
+  - Refined help texts for OpenID claim options and tenant association.
+
 ## May 20, 2026 - v3.4.198
 
 - <OT code="building" />
