@@ -1,26 +1,26 @@
 ---
 sidebar_position: 2
-pagination_label: "Booking in Surfy"
-title: "Booking in Surfy"
+pagination_label: "Book a workstation"
+title: "Book a workstation"
 ---
 
-# Booking in Surfy
+# Book a workstation
 
 <Youtube code="5qnwa0ye4-g"/>
 
-## Book from the Surfy Application
+## Book from the Surfy application
 
-To book a workstation in Surfy, the collaborator must have [access to Surfy](/en/docs/access/intro) validating booking, and be assigned to a building, floor or district to be able to book in that building, floor or district.
+To book a workstation in Surfy, the collaborator must have [access to Surfy](/en/docs/access/intro) with booking enabled, and be assigned to a building, floor, or district to book in that building, floor, or district.
 
-You can book a workstation (or declare remote work) for half-day or full day.
+You can book a workstation (or declare remote work) for a half-day or full day.
 
-To do this, if the collaborator has access to other Surfy features (Reader mode for example):
+To do this, if the collaborator has access to other Surfy features (Reader mode, for example):
 
--   click on the "Manage my planning for the coming weeks" icon at the top left of the screen, just above the search magnifying glass, or in the left menu click on "Planning", then "People's Work Location", then "Manage my planning for the coming weeks".
+-   click on the "Manage my planning for the coming weeks" icon at the top left of the screen, just above the search magnifying glass, or in the left menu click on "Planning", then "People's work location", then "Manage my planning for the coming weeks".
 
 If the collaborator only has access to booking features, they arrive directly on the "Manage my planning for the coming weeks" page.
 
-The rest of the user experience is identical to that of using via Teams:
+The rest of the user experience is identical to that of using Teams:
 
 The dates of the next X days (X being configurable in the company card) are displayed and allow booking in the authorized district.
 
@@ -37,16 +37,16 @@ Workstation information is displayed under the reserved day.
 Clicking on the booking line gives access to the workstation position on the plan and displays the name and photo of the person on the reserved workstation.
 
 Colleagues who have already booked in a district that day are listed under the district box. To locate a colleague's booking location on the plan, click on their booking line.<br />
-The district plan appears, workstations available for booking are colored in green.<br />
-Already reserved workstations are colored in orange on the plan, with the name and possible photo of the colleague who booked.
+The district plan appears; workstations available for booking are colored green.<br />
+Workstations already reserved are colored orange on the plan, with the name and possible photo of the colleague who booked.
 
--   clicking on an available workstation on the plan establishes the booking at that workstation which turns orange.
+-   clicking on an available workstation on the plan establishes the booking at that workstation, which turns orange.
 -   clicking on an already made booking shows the position of the reserved workstation, colored in blue with name and possible photo.
 -   clicking on the trash deletes this booking.
 
-::::tip GOOD TO KNOW
+:::tip GOOD TO KNOW
 Clicking on the "Share the day in morning/afternoon" icon deletes the day's bookings and modifies the choice "full day" or "morning / afternoon"
-::::
+:::
 
 From the booking page, it is also possible to:
 
@@ -57,9 +57,9 @@ The floor plan is displayed, with all bookings made on the requested date.<br />
 The colleague's bookings for the upcoming period are displayed.<br />
 By clicking on the reserved workstation title, you access its geolocation on the plan.<br />
 
+-   "Confirm your presence" on the day of the booking to avoid no-shows, when this option is configured.
 
 ## Book from Teams
 
-Using Teams offers a more direct experience and better suited for using booking features on smartphone.<br />
-To book with Teams in Surfy, see the chapter [Book with Teams in Surfy](/en/docs/tutorials/booking/teams)
-
+Using Teams offers a more direct experience and is better suited for using booking features on a smartphone.<br />
+To book with Teams in Surfy, see the chapter [Book with Teams in Surfy](/en/docs/tutorials/booking/workstationbooking/teams)

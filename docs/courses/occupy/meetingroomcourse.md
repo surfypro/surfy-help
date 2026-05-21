@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Les espaces de réunion
 
-## Configurer la gestion des espaces de réunion
+## Vue d'ensemble de la configuration
 
 Voir le tutoriel [Configurer la gestion des espaces de réunion](/docs/tutorials/surfaces/meetingroom/config)
 

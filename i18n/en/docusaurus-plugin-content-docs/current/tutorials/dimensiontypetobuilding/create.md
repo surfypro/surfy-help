@@ -66,6 +66,12 @@ The selected space is qualified by the chosen layer
 The vertical "Grid" icon allows you to "color spaces on the plan according to assignment layers" present on the floor.
 After data reload (icon at the top right of the screen) and refresh (F5), the accumulated data for each assignment layer is available by opening the butterfly in front of each layer, or by opening the global butterfly.
 
+Clicking on "Distribution of selected areas (m²)" displays the data:
+
+-   as a pie chart
+-   as polar areas (radii proportional to areas)
+-   as a table
+
 ## Assignment Layer Data Report
 
 The assignment layer data report is available for each building:

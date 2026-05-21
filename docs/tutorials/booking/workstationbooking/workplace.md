@@ -60,4 +60,4 @@ En cliquant sur l'intitulé du poste réservé, on accède à sa géolocalisatio
 ## Réserver depuis Teams
 
 L'utilisation de Teams offre une expérience plus directe et plus adaptée à une utilisation des fonctionnalités de réservation sur smartphone.<br />
-Pour réserver avec Teams dans Surfy, voir le chapitre [Réserver avec Teams dans Surfy](/docs/tutorials/booking/teams)
+Pour réserver avec Teams dans Surfy, voir le chapitre [Réserver avec Teams dans Surfy](/docs/tutorials/booking/workstationbooking/teams)

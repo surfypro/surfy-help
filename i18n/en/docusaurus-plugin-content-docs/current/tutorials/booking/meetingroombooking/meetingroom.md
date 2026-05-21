@@ -10,7 +10,7 @@ title: "Book a Meeting Room"
 
 ## View Meeting Rooms
 
-This feature requires configuration of the rooms to be included in the viewable spaces. See the chapter [Configure Meeting Space Management](/en/docs/tutorials/surfaces/meetingroom/config).
+This feature requires configuration of the rooms to be included in the viewable spaces. See the chapter [Configure meeting spaces](/en/docs/tutorials/surfaces/meetingroom/config).
 
 Once meeting spaces have been configured, to view meeting rooms from the home page:
 
@@ -19,9 +19,9 @@ Once meeting spaces have been configured, to view meeting rooms from the home pa
 All viewable rooms appear on the screen with the equipment of each room and a filter by building, floor, capacity and space typology is available to find the appropriate room.<br />
 A photo of the room can be displayed by hovering the mouse over the "Landscape" icon. If there is no photo, the "Landscape" icon is not displayed.
 
-::::tip Good to Know
+:::tip Good to Know
 If meeting room booking is available, the day can also be specified in order to view rooms available on that day.
-::::
+:::
 
 -   click on the "road map" icon to "Locate the space on a plan"
 

@@ -47,9 +47,9 @@ Already reserved workstations are colored in orange on the plan, with the name a
 -   clicking on an already made booking shows the position of the reserved workstation, colored in blue with name and possible photo.
 -   clicking on the trash deletes this booking.
 
-::::tip GOOD TO KNOW
+:::tip GOOD TO KNOW
 Clicking on the "Share the day in morning/afternoon" icon deletes the day's bookings and modifies the choice "full day" or "morning / afternoon"
-::::
+:::
 
 From the booking page, it is also possible to:
 
@@ -60,3 +60,4 @@ The floor plan is displayed, with all bookings made on the requested date.<br />
 The colleague's bookings for the upcoming period are displayed.<br />
 By clicking on the reserved workstation title, you access its geolocation on the plan.<br />
 
+-   "Confirm your presence" on the day of the booking to avoid no-shows, when this option is configured.
