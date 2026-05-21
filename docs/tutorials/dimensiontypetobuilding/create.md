@@ -66,6 +66,11 @@ L'espace sélectionné est qualifié par le calque choisi
 L'icône verticale "Grille" permet de "colorier les espaces sur le plan en fonction des calques d'affectation" présents sur l'étage.
 Après rechargement des données (icône en haut à droite de l'écran) et rafraichissement (F5), les données cumulées pour chaque calque d'affectation sont disponibles en ouvrant le papillon en face de chaque calque, ou en ouvrant le papillon global.
 
+Cliquer sur "Répartition des surfaces sélectionnées(m²)" affiche les données :
+-   en diagramme circulaire
+-   en aires polaires (rayons proportionnels aux surfaces)
+-   sous forme de tableau
+
 ## Rapport des données des calques d'affectation
 
 Le rapport des données des calques d'affectation est disponible pour chaque bâtiment :

@@ -55,6 +55,11 @@ La sauvegarde automatique des calques permet une qualification rapide des espace
 L'icône verticale "Palette" permet de visualiser sur le plan tous les calques d'analyse présents sur l'étage.
 Après recalcul des données (icône en haut à droite de l'écran "Recharger les données du plan") et rafraichissement (F5), les données cumulées pour chaque calque sont disponibles en ouvrant le papillon en face de chaque calque, ou en ouvrant le papillon global pour l'ensemble des calques présents.
 
+Cliquer sur "Répartition des surfaces sélectionnées(m²)" affiche les données :
+-   en diagramme circulaire
+-   en aires polaires (rayons proportionnels aux surfaces)
+-   sous forme de tableau
+
 ## Rapport des données des calques d'analyse
 
 Le rapport des données des calques d'analyse est disponible pour chaque bâtiment :
