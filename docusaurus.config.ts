@@ -205,6 +205,7 @@ const config: Config = {
         { to: '/docs/courses/intro', label: 'Cours' },
         { to: '/docs/certifications/intro', label: 'Certifications' },
         { to: '/changelog/app', label: 'Nouveautés', position: 'left' },
+        { to: '/changelog/app-alpha', label: 'Nouveautés (alpha)', position: 'left' },
         // { to: '/blog', label: 'Blog', position: 'left' },
         { to: 'https://www.surfy.pro/contact', label: 'Nous contacter', position: 'left', target: '_blank', rel: 'noopener noreferrer' },
         { to: '/entities/intro', label: 'Developpeurs' },

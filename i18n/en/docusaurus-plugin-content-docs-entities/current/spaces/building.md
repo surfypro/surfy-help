@@ -78,6 +78,13 @@ Share of rent allocated to parking
 *Technical name:* ```yearlyParkingRent```
 <PH code="building:yearlyParkingRent"/>
 
+### Building code {#code}
+
+Building industry coding used particularly in synchronization.
+
+*Technical name:* ```code```
+<PH code="building:code"/>
+
 ### Building purchase date {#purchase-date}
 
 Building purchase date

@@ -78,6 +78,13 @@ Montant annuel des charges d'exploitations (exemple : eau, éléctricité)
 *Nom technique:* ```yearlyExploitationFees```
 <PH code="building:yearlyExploitationFees"/>
 
+### Code bâtiment {#code}
+
+Code métier du bâtiment utilisé notamment dans les synchronisations
+
+*Nom technique:* ```code```
+<PH code="building:code"/>
+
 ### Date d'achat du bâtiment {#purchase-date}
 
 Date d'achat du bâtiment

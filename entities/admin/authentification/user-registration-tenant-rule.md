@@ -49,7 +49,7 @@ Associer automatiquement les rôles à partir des rôles inclus dans le token Op
 
 ### Utiliser les claims OpenID pour associer au tenant {#use-open-id-token-claims-to-associate-to-tenant}
 
-Associer l'utilisateur au tenant uniquement si le claim exact Surfy.Tenant.{NomDuTenant} est présent dans le token
+Associer l'utilisateur au tenant uniquement si le claim exact Surfy.Tenant.<NomDuTenant> est présent dans le token
 
 *Nom technique:* ```useOpenIdTokenClaimsToAssociateToTenant```
 <PH code="userRegistrationTenantRule:useOpenIdTokenClaimsToAssociateToTenant"/>
