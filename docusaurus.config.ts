@@ -1,6 +1,7 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import { surfyBundleWebpackPlugin } from './src/plugins/surfyBundleWebpack';
 
 const config: Config = {
   title: 'Surfy Academy', // This will be overridden by translations
@@ -90,6 +91,7 @@ const config: Config = {
     ],
   ],
   plugins: [
+    surfyBundleWebpackPlugin,
     // Load Google gtag only in production to avoid window.gtag errors in dev
     ...(process.env.NODE_ENV === 'production'
       ? ([

@@ -4,9 +4,9 @@ sidebar_position: 2
 
 # Meeting Spaces
 
-## Configure Meeting Space Management
+## Configuration overview
 
-See the tutorial [Configure Meeting Space Management](/en/docs/tutorials/surfaces/meetingroom/config)
+See the tutorial [Configure meeting spaces](/en/docs/tutorials/surfaces/meetingroom/config)
 
 For more information:
 

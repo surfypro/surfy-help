@@ -48,3 +48,26 @@ To view booking charts, from the left menu,
 Charts appear below the period selection window.
 Hovering over the charts allows you to know the detail of the number of bookings or people by date or district.
 
+## District occupancy management
+
+To optimize booking district occupancy, Surfy provides a monthly summary table of average saturation rates per district, as well as details of saturated days.
+
+The user must have the "Administrator" role to access this feature.
+
+To view monthly district saturation by building and identify days when thresholds are exceeded, from the left menu,
+
+-   click on "Administration" then "Companies", then "view monthly district saturation by building and identify days when thresholds are exceeded"
+-   choose the month and the relevant buildings
+
+The summary table includes:
+    -   the period
+    -   the building
+    -   the district concerned
+    -   the number of bookable workstations in the district
+    -   the district's average saturation rate for the period
+    -   the number of days when booking was enabled in the district for the period
+    -   the number of days when the district was saturated for the period
+    -   the percentage of saturated days
+    -   each district's saturation threshold
+
+The information can be exported to an Excel file by clicking on "EXPORT TO EXCEL (2 SHEETS)" at the top right of the screen.

@@ -55,6 +55,12 @@ Automatic layer saving allows rapid space qualification by clicking and qualifyi
 The vertical "Palette" icon allows you to visualize on the plan all analysis layers present on the floor.
 After data recalculation (icon at the top right of the screen "Reload plan data") and refresh (F5), the accumulated data for each layer is available by opening the butterfly in front of each layer, or by opening the global butterfly for all present layers.
 
+Clicking on "Distribution of selected areas (m²)" displays the data:
+
+-   as a pie chart
+-   as polar areas (radii proportional to areas)
+-   as a table
+
 ## Analysis Layer Data Report
 
 The analysis layer data report is available for each building:
