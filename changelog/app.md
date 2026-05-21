@@ -4,6 +4,39 @@ sidebar_position: 1
 
 # Nouveautés
 
+## 21 Mai 2026 - v3.4.199
+
+- <OT code="building" />
+  - Nouvelle propriété <P code="building:code" /> sur la fiche bâtiment.
+  - La <P code="building:surface" /> est également visible sur la carte du bâtiment lorsqu’elle est renseignée.
+
+- <OT code="person" />
+  - Nouvelle propriété <P code="person:mainLocation" /> (établissement de référence) sur la fiche personne.
+
+- Import des personnes, organisations et centres de coût depuis Workday
+  - L’import renseigne désormais <P code="person:mainLocation" /> à partir de la location Workday de la personne.
+  - Lors de l’étape d’affectations aux bâtiments, les options <P code="personToBuilding:allowWorkplaceBookingInTheBuilding" /> et <P code="personToBuilding:allowParkingBookingInTheBuilding" /> sont définies en fonction du <P code="building:code" /> du bâtiment concerné.
+  - L’étape d’affectation au véhicule thermique générique est bloquée avec un message explicite si le véhicule attendu (clé externe `GENERIC-THERMIC`) n’existe pas encore dans Surfy.
+
+- Affectation d’une personne sur le plan (dialogue de liste de contrôle)
+  - Lorsque vous affectez une personne à un **espace** ou à un **poste de travail**, le dialogue qui propose de retirer ses autres affectations existantes a été enrichi pour la section **bâtiments**.
+  - Chaque autre bâtiment listé affiche des pictogrammes : la personne est-elle **comptabilisée** dans le bâtiment (<P code="personToBuilding:addToPeopleCount" />), peut-elle **réserver un poste** (<P code="personToBuilding:allowWorkplaceBookingInTheBuilding" />) ou **réserver un parking** (<P code="personToBuilding:allowParkingBookingInTheBuilding" />) dans ce bâtiment.
+  - Par défaut, seules les affectations aux bâtiments où la personne est encore comptabilisée restent **cochées** ; les liaisons déjà exclues du comptage ne le sont plus automatiquement.
+  - Si vous confirmez le retrait d’une affectation à un bâtiment où la réservation de poste ou de parking est déjà autorisée, Surfy **ne supprime plus** la liaison : la personne n’est plus comptabilisée dans ce bâtiment, mais les options de réservation associées sont conservées.
+  - Les mêmes pictogrammes sont visibles dans la **fiche personne** (panneau des affectations aux bâtiments) et dans les **résultats de la recherche globale** des personnes.
+
+- Réservation de parking (planning)
+  - Les options de réservation de parking sont regroupées dans un panneau dépliable « Réserver un parking ».
+
+- Réservation de poste de travail sur un calque d’affectation
+  - Libellés du bouton de réservation clarifiés lorsqu’un étage précis est concerné pour le créneau choisi.
+
+- Propriétés de type couleur
+  - Saisie des couleurs plus fiable lors de la modification d’une propriété couleur sur une fiche.
+
+- <OT code="userRegistrationTenantRule" />
+  - Textes d’aide affinés pour les options liées aux claims OpenID et à l’association au tenant.
+
 ## 19 Mai 2026 - v3.4.197
 
 - Statistiques dans les filtres du plan (répartition par dimension)
