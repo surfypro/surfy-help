@@ -78,13 +78,6 @@ Share of rent allocated to parking
 *Technical name:* ```yearlyParkingRent```
 <PH code="building:yearlyParkingRent"/>
 
-### Area {#surface}
-
-The building's surface area was entered manually; this value is not related to the spaces modeled in Surfy.
-
-*Technical name:* ```surface```
-<PH code="building:surface"/>
-
 ### Building code {#code}
 
 Building industry coding used particularly in synchronization.
@@ -105,6 +98,13 @@ The carbon footprint is the number of CO2 emitted
 
 *Technical name:* ```carbonFootprint```
 <PH code="building:carbonFootprint"/>
+
+### Declared area {#surface}
+
+The declared surface area of ​​the building entered manually; this value is not linked to the spaces modeled in Surfy.
+
+*Technical name:* ```surface```
+<PH code="building:surface"/>
 
 ### End date of the lease {#lease-end-date}
 

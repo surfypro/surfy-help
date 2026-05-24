@@ -17,6 +17,16 @@ Un emplacement de travail de l'entreprise permet de personnaliser pour une entre
 
 
 
+## Propriétés de base {#properties-base}
+    
+### Libellé personnalisé {#label}
+
+Libellé affiché pour cet emplacement de travail dans l'entreprise, à la place du libellé par défaut
+
+*Nom technique:* ```label```
+<PH code="companyWorkingLocation:label"/>
+
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 
