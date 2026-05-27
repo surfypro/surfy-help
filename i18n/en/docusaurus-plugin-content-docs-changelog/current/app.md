@@ -14,6 +14,11 @@
 - Parking booking
   - New **motorbike** parking space type is now available in parking space types.
 
+- Booking maps (workstation and parking)
+  - On maps opened from planning to book a workstation or select a district, spaces now show the **display name** (instead of the merged name), along with people on the relevant assignment layers.
+  - When you open a map from planning, the view automatically centers on the relevant area (district, workstation or parking space).
+  - On the parking booking map, space type icons are shown and zoom focuses on your booked space or available spaces.
+
 ## May 24, 2026 - v3.4.199
 
 - <OT code="companyWorkingLocation" />

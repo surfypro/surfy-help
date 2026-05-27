@@ -18,6 +18,11 @@ sidebar_position: 1
 - Réservation de parking
   - Nouveau type de place **moto** disponible dans les types de places de parking.
 
+- Plans de réservation (poste de travail et parking)
+  - Sur les plans ouverts depuis le planning pour réserver un poste ou choisir un quartier, les espaces affichent le **nom d’affichage** de l’espace (et non plus le nom fusionné), ainsi que les personnes des calques d’affectation concernés.
+  - Lors de l’ouverture d’un plan depuis le planning, l’affichage se centre automatiquement sur la zone concernée (quartier, poste ou place de parking).
+  - Sur le plan de réservation de parking, les icônes de type d’espace sont affichées et le zoom se place sur la place déjà réservée ou sur les places disponibles.
+
 ## 24 Mai 2026 - v3.4.199
 
 - <OT code="companyWorkingLocation" />
