@@ -1,55 +1,55 @@
-# Confirmation des reservations de poste de travail
+# Confirmation des réservations de poste de travail
 
-## A quoi sert cette fonctionnalite ?
+## À quoi sert cette fonctionnalité ?
 
-Cette fonctionnalite permet de confirmer la presence pour une reservation de poste de travail du jour, dans une plage horaire definie par l'entreprise.
+Cette fonctionnalité permet de confirmer la présence pour une réservation de poste de travail du jour, dans une plage horaire définie par l’entreprise.
 
-Objectif :
+Objectifs :
 
-- liberer les postes reserves mais non confirmes,
-- prevenir l'utilisateur avant annulation,
-- maintenir un planning fiable pour l'equipe.
+- libérer les postes réservés mais non confirmés ;
+- prévenir l’utilisateur avant annulation ;
+- maintenir un planning fiable pour l’équipe.
 
-## Comment ca fonctionne ?
+## Comment ça fonctionne ?
 
 ### 1) Plage de confirmation
 
-L'entreprise configure une plage de confirmation (par exemple `06:00-10:00`).
+L’entreprise configure une plage de confirmation (par exemple `06:00-10:00`).
 
-Pour les reservations du jour, l'utilisateur doit confirmer sa presence dans cette plage depuis **Mon planning**.
+Pour les réservations du jour, l’utilisateur doit confirmer sa présence dans cette plage depuis **Mon planning**.
 
-### 2) Email de rappel avant la fin de plage
+### 2) E-mail de rappel avant la fin de plage
 
-Environ 15 minutes avant la fin de la plage, un email de rappel est envoye aux utilisateurs qui ont une reservation non confirmee du jour.
+Environ 15 minutes avant la fin de la plage, un e-mail de rappel est envoyé aux utilisateurs qui ont une réservation non confirmée du jour.
 
-Le message contient un lien direct vers **Mon planning** pour confirmer rapidement la reservation :
+Le message contient un lien direct vers **Mon planning** pour confirmer rapidement la réservation :
 
 `https://app.surfy.pro/{NomDuTenant}/views/i/personWorkingLocation/my-planning`
 
-### 3) Annulation apres la fin de plage
+### 3) Annulation après la fin de plage
 
-Si la reservation n'est toujours pas confirmee apres la fin de la plage, la reservation est annulee automatiquement et un email d'information est envoye.
+Si la réservation n’est toujours pas confirmée après la fin de la plage, la réservation est annulée automatiquement et un e-mail d’information est envoyé.
 
 ## Comportement selon la confirmation
 
-### Reservation confirmee dans la plage
+### Réservation confirmée dans la plage
 
-- la reservation est conservee,
-- aucun email d'annulation n'est envoye.
+- la réservation est conservée ;
+- aucun e-mail d’annulation n’est envoyé.
 
-### Reservation non confirmee apres la plage
+### Réservation non confirmée après la plage
 
-- la reservation est annulee automatiquement,
-- l'utilisateur recoit un email indiquant l'annulation.
+- la réservation est annulée automatiquement ;
+- l’utilisateur reçoit un e-mail indiquant l’annulation.
 
-## Ce que voit l'utilisateur
+## Ce que voit l’utilisateur
 
-- un bouton de confirmation pour les reservations du jour,
-- un email de rappel avant la fin de la plage si la reservation n'est pas encore confirmee,
-- un email d'annulation si la confirmation n'a pas ete faite a temps.
+- un bouton de confirmation pour les réservations du jour ;
+- un e-mail de rappel avant la fin de la plage si la réservation n’est pas encore confirmée ;
+- un e-mail d’annulation si la confirmation n’a pas été faite à temps.
 
 ## Bonnes pratiques
 
-- definir une plage adaptee aux horaires d'arrivee habituels,
-- informer les equipes que la confirmation dans **Mon planning** est necessaire pour conserver la reservation,
-- verifier regulierement que les adresses email utilisateur sont valides pour recevoir les rappels.
+- définir une plage adaptée aux horaires d’arrivée habituels ;
+- informer les équipes que la confirmation dans **Mon planning** est nécessaire pour conserver la réservation ;
+- vérifier régulièrement que les adresses e-mail utilisateur sont valides pour recevoir les rappels.
