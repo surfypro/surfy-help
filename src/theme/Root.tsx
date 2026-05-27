@@ -1,6 +1,6 @@
 import { ThemeProvider, createTheme } from '@mui/material';
 import React from 'react';
-import { SetupRecoilContext, I18NHelpContext } from '@site/surfy';
+import { I18NHelpContext, SetupI18nContext } from '@site/surfy';
 import { useCurrentLocale } from '../translations/translations';
 
 const theme = createTheme({
@@ -24,9 +24,9 @@ export default function Root(props: { children: React.ReactNode }) {
 
     return (
         <ThemeProvider theme={theme}>
-            <SetupRecoilContext defaultLanguage={language} I18nContext={I18NHelpContext}>
+            <SetupI18nContext defaultLanguage={language} I18nContext={I18NHelpContext} >
                 {children}
-            </SetupRecoilContext>
+            </SetupI18nContext>
         </ThemeProvider>
     );
 }

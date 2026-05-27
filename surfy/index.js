@@ -3,7 +3,6 @@ import React, { Children, cloneElement, createContext, forwardRef, isValidElemen
 import { Box, Fade, IconButton, Paper, Tooltip, Typography, tooltipClasses } from "@mui/material";
 import { Fragment, jsx, jsxs } from "react/jsx-runtime";
 import ReactDOM from "react-dom";
-import { RecoilRoot } from "recoil";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 //#region \0rolldown/runtime.js
 var __create = Object.create;
@@ -38362,6 +38361,21 @@ var personToWorkplaceBookingObjectTypeDefintion = {
 			},
 			association: void 0
 		},
+		emailConfirmationWarningNotificationSentAt: {
+			name: "emailConfirmationWarningNotificationSentAt",
+			objectTypeName: "personToWorkplaceBooking",
+			type: "datetime",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: null,
+				regex: void 0
+			},
+			association: void 0
+		},
 		createdAt: {
 			name: "createdAt",
 			objectTypeName: "personToWorkplaceBooking",
@@ -50133,12 +50147,12 @@ var nlNL$1 = { components: {
 	} }
 } };
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.1.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_554d179ac5f3dd77f28f979e78899858/node_modules/@mui/x-date-pickers/locales/utils/getPickersLocalization.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.3.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_9fbf3468ef48a17349e8f3e8d98a3441/node_modules/@mui/x-date-pickers/locales/utils/getPickersLocalization.mjs
 var getPickersLocalization = (pickersTranslations) => {
 	return { components: { MuiLocalizationProvider: { defaultProps: { localeText: _extends({}, pickersTranslations) } } } };
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.1.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_554d179ac5f3dd77f28f979e78899858/node_modules/@mui/x-date-pickers/locales/deDE.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.3.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_9fbf3468ef48a17349e8f3e8d98a3441/node_modules/@mui/x-date-pickers/locales/deDE.mjs
 var timeViews$1 = {
 	hours: "Stunden",
 	minutes: "Minuten",
@@ -50256,7 +50270,7 @@ var enUS = getPickersLocalization({
 	empty: "Empty"
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.1.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_554d179ac5f3dd77f28f979e78899858/node_modules/@mui/x-date-pickers/locales/esES.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.3.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_9fbf3468ef48a17349e8f3e8d98a3441/node_modules/@mui/x-date-pickers/locales/esES.mjs
 var views$2 = {
 	hours: "Horas",
 	minutes: "Minutos",
@@ -50317,7 +50331,7 @@ var esES = getPickersLocalization({
 	empty: "Vacío"
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.1.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_554d179ac5f3dd77f28f979e78899858/node_modules/@mui/x-date-pickers/locales/frFR.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.3.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_9fbf3468ef48a17349e8f3e8d98a3441/node_modules/@mui/x-date-pickers/locales/frFR.mjs
 var views$1 = {
 	hours: "heures",
 	minutes: "minutes",
@@ -50378,7 +50392,7 @@ var frFR = getPickersLocalization({
 	empty: "Vider"
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.1.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_554d179ac5f3dd77f28f979e78899858/node_modules/@mui/x-date-pickers/locales/itIT.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.3.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_9fbf3468ef48a17349e8f3e8d98a3441/node_modules/@mui/x-date-pickers/locales/itIT.mjs
 var views = {
 	hours: "le ore",
 	minutes: "i minuti",
@@ -50441,7 +50455,7 @@ var itIT = getPickersLocalization({
 	empty: "Vuoto"
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.1.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_554d179ac5f3dd77f28f979e78899858/node_modules/@mui/x-date-pickers/locales/nlNL.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.3.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_9fbf3468ef48a17349e8f3e8d98a3441/node_modules/@mui/x-date-pickers/locales/nlNL.mjs
 var timeViews = {
 	hours: "uren",
 	minutes: "minuten",
@@ -55200,7 +55214,7 @@ var DateTime = class DateTime {
 	*/
 	static fromMillis(milliseconds, options = {}) {
 		if (!isNumber$1(milliseconds)) throw new InvalidArgumentError(`fromMillis requires a numerical input, but received a ${typeof milliseconds} with value ${milliseconds}`);
-		else if (milliseconds < -MAX_DATE || milliseconds > MAX_DATE) return DateTime.invalid("Timestamp out of range");
+		else if (milliseconds < -864e13 || milliseconds > MAX_DATE) return DateTime.invalid("Timestamp out of range");
 		else return new DateTime({
 			ts: milliseconds,
 			zone: normalizeZone(options.zone, Settings.defaultZone),
@@ -56926,7 +56940,7 @@ var require_define_properties = /* @__PURE__ */ __commonJSMin(((exports, module)
 	module.exports = defineProperties;
 }));
 //#endregion
-//#region node_modules/.pnpm/es-object-atoms@1.1.1/node_modules/es-object-atoms/index.js
+//#region node_modules/.pnpm/es-object-atoms@1.1.2/node_modules/es-object-atoms/index.js
 var require_es_object_atoms = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	/** @type {import('.')} */
 	module.exports = Object;
@@ -57590,7 +57604,7 @@ var require_call_bind = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	else module.exports.apply = applyBind;
 }));
 //#endregion
-//#region node_modules/.pnpm/es-object-atoms@1.1.1/node_modules/es-object-atoms/RequireObjectCoercible.js
+//#region node_modules/.pnpm/es-object-atoms@1.1.2/node_modules/es-object-atoms/RequireObjectCoercible.js
 var require_RequireObjectCoercible = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var $TypeError = require_type();
 	/** @type {import('./RequireObjectCoercible')} */
@@ -70793,7 +70807,7 @@ function SurfyHelpStandaloneViewMenuBreadcrumb(props) {
 var version = {
 	"major": 3,
 	"minor": 4,
-	"build": 199
+	"build": 201
 };
 //#endregion
 //#region src/back/Tracking/version.ts
@@ -71976,6 +71990,7 @@ var jsonTranslationsFiles = {
 		"ParkingOptionsAccordion.title": "Réserver un parking",
 		"ParkingRoomTypeCode.values.PARKING-CAR": "Parking voiture",
 		"ParkingRoomTypeCode.values.PARKING-ELECTRIC-CAR": "Parking voiture electrique",
+		"ParkingRoomTypeCode.values.PARKING-MOTO": "Parking moto",
 		"ParkingRoomTypeCode.values.PARKING-PRM": "Parking PMR",
 		"PartnerApiCredentialsSelector.pleaseSelect": "Veuillez sélectionner",
 		"PartnerEntityCreateTab.button.help": "Créer dans %{partnerName}",
@@ -74008,6 +74023,8 @@ var jsonTranslationsFiles = {
 		"models.PersonToWorkplaceBooking.determinants.defined": "les réservations au poste de travail des personnes",
 		"models.PersonToWorkplaceBooking.determinants.undefined": "des réservations au poste de travail des personnes",
 		"models.PersonToWorkplaceBooking.plural": "Réservations au poste de travail des personnes",
+		"models.PersonToWorkplaceBooking.properties.emailConfirmationWarningNotificationSentAt.description": "La date et l'heure d'envoi de l'avertissement e-mail avant annulation de la réservation non confirmée",
+		"models.PersonToWorkplaceBooking.properties.emailConfirmationWarningNotificationSentAt.label": "Avertissement e-mail de confirmation envoyé le",
 		"models.PersonToWorkplaceBooking.properties.endDatetime.description": "La date et l'heure de fin de la réservation",
 		"models.PersonToWorkplaceBooking.properties.endDatetime.label": "Fin de la réservation",
 		"models.PersonToWorkplaceBooking.properties.id.label": "Identifiant de la réservation au poste de travail des personnes",
@@ -75570,6 +75587,7 @@ var jsonTranslationsFiles = {
 		"ParkingOptionsAccordion.title": "Reserve parking",
 		"ParkingRoomTypeCode.values.PARKING-CAR": "Car park",
 		"ParkingRoomTypeCode.values.PARKING-ELECTRIC-CAR": "Electric car parking",
+		"ParkingRoomTypeCode.values.PARKING-MOTO": "Motorcycle parking",
 		"ParkingRoomTypeCode.values.PARKING-PRM": "Accessible parking",
 		"PartnerApiCredentialsSelector.pleaseSelect": "Please select",
 		"PartnerEntityCreateTab.button.help": "Create in %{partnerName}",
@@ -77602,6 +77620,8 @@ var jsonTranslationsFiles = {
 		"models.PersonToWorkplaceBooking.determinants.defined": "reservations at people's workstations",
 		"models.PersonToWorkplaceBooking.determinants.undefined": "reservations at people's workstations",
 		"models.PersonToWorkplaceBooking.plural": "Reservations at people's workstations",
+		"models.PersonToWorkplaceBooking.properties.emailConfirmationWarningNotificationSentAt.description": "The date and time the email warning was sent before the cancellation of the unconfirmed reservation.",
+		"models.PersonToWorkplaceBooking.properties.emailConfirmationWarningNotificationSentAt.label": "Confirmation email sent on",
 		"models.PersonToWorkplaceBooking.properties.endDatetime.description": "The date and time the reservation ends",
 		"models.PersonToWorkplaceBooking.properties.endDatetime.label": "End of reservation",
 		"models.PersonToWorkplaceBooking.properties.id.label": "Workstation reservation ID for people",
@@ -79164,6 +79184,7 @@ var jsonTranslationsFiles = {
 		"ParkingOptionsAccordion.title": "Reserva de aparcamiento",
 		"ParkingRoomTypeCode.values.PARKING-CAR": "Aparcamiento",
 		"ParkingRoomTypeCode.values.PARKING-ELECTRIC-CAR": "Aparcamiento para coches eléctricos",
+		"ParkingRoomTypeCode.values.PARKING-MOTO": "Aparcamiento para motocicletas",
 		"ParkingRoomTypeCode.values.PARKING-PRM": "Aparcamiento accesible",
 		"PartnerApiCredentialsSelector.pleaseSelect": "Seleccione",
 		"PartnerEntityCreateTab.button.help": "Crear en %{partnerName}",
@@ -81196,6 +81217,8 @@ var jsonTranslationsFiles = {
 		"models.PersonToWorkplaceBooking.determinants.defined": "reservas en los puestos de trabajo de las personas",
 		"models.PersonToWorkplaceBooking.determinants.undefined": "reservas en los puestos de trabajo de las personas",
 		"models.PersonToWorkplaceBooking.plural": "Reservas en los puestos de trabajo de las personas",
+		"models.PersonToWorkplaceBooking.properties.emailConfirmationWarningNotificationSentAt.description": "La fecha y hora en que se envió el correo electrónico de advertencia antes de la cancelación de la reserva no confirmada.",
+		"models.PersonToWorkplaceBooking.properties.emailConfirmationWarningNotificationSentAt.label": "Correo electrónico de confirmación enviado el",
 		"models.PersonToWorkplaceBooking.properties.endDatetime.description": "La fecha y hora de finalización de la reserva.",
 		"models.PersonToWorkplaceBooking.properties.endDatetime.label": "Fin de la reserva",
 		"models.PersonToWorkplaceBooking.properties.id.label": "ID de reserva de estación de trabajo para personas",
@@ -82758,6 +82781,7 @@ var jsonTranslationsFiles = {
 		"ParkingOptionsAccordion.title": "Prenotare il parcheggio",
 		"ParkingRoomTypeCode.values.PARKING-CAR": "Parcheggio",
 		"ParkingRoomTypeCode.values.PARKING-ELECTRIC-CAR": "Parcheggio elettrico",
+		"ParkingRoomTypeCode.values.PARKING-MOTO": "Parcheggio per motociclette",
 		"ParkingRoomTypeCode.values.PARKING-PRM": "Parcheggio accessibile",
 		"PartnerApiCredentialsSelector.pleaseSelect": "Seleziona",
 		"PartnerEntityCreateTab.button.help": "Crea in %{partnerName}",
@@ -84790,6 +84814,8 @@ var jsonTranslationsFiles = {
 		"models.PersonToWorkplaceBooking.determinants.defined": "prenotazioni presso le postazioni di lavoro delle persone",
 		"models.PersonToWorkplaceBooking.determinants.undefined": "prenotazioni presso le postazioni di lavoro delle persone",
 		"models.PersonToWorkplaceBooking.plural": "Prenotazioni alle postazioni di lavoro delle persone",
+		"models.PersonToWorkplaceBooking.properties.emailConfirmationWarningNotificationSentAt.description": "Data e ora di invio dell'email di avviso prima della cancellazione della prenotazione non confermata.",
+		"models.PersonToWorkplaceBooking.properties.emailConfirmationWarningNotificationSentAt.label": "Email di conferma inviata il",
 		"models.PersonToWorkplaceBooking.properties.endDatetime.description": "La data e l'ora in cui termina la prenotazione",
 		"models.PersonToWorkplaceBooking.properties.endDatetime.label": "Fine della prenotazione",
 		"models.PersonToWorkplaceBooking.properties.id.label": "ID di prenotazione della postazione di lavoro per le persone",
@@ -86352,6 +86378,7 @@ var jsonTranslationsFiles = {
 		"ParkingOptionsAccordion.title": "Parkeerplaats reserveren",
 		"ParkingRoomTypeCode.values.PARKING-CAR": "Parkeerplaats",
 		"ParkingRoomTypeCode.values.PARKING-ELECTRIC-CAR": "Parkeerplaats voor elektrische auto's",
+		"ParkingRoomTypeCode.values.PARKING-MOTO": "Motorfietsparkeerplaats",
 		"ParkingRoomTypeCode.values.PARKING-PRM": "Toegankelijke parkeerplaatsen",
 		"PartnerApiCredentialsSelector.pleaseSelect": "Selecteer alstublieft",
 		"PartnerEntityCreateTab.button.help": "Maken in %{partnerName}",
@@ -88384,6 +88411,8 @@ var jsonTranslationsFiles = {
 		"models.PersonToWorkplaceBooking.determinants.defined": "reserveringen op de werkplekken van mensen",
 		"models.PersonToWorkplaceBooking.determinants.undefined": "reserveringen op de werkplekken van mensen",
 		"models.PersonToWorkplaceBooking.plural": "Reserveringen op de werkplekken van mensen",
+		"models.PersonToWorkplaceBooking.properties.emailConfirmationWarningNotificationSentAt.description": "De datum en tijd waarop de waarschuwingsmail werd verzonden vóór de annulering van de niet-bevestigde reservering.",
+		"models.PersonToWorkplaceBooking.properties.emailConfirmationWarningNotificationSentAt.label": "Bevestigingsmail verzonden op",
 		"models.PersonToWorkplaceBooking.properties.endDatetime.description": "De datum en tijd waarop de reservering eindigt",
 		"models.PersonToWorkplaceBooking.properties.endDatetime.label": "Einde reservering",
 		"models.PersonToWorkplaceBooking.properties.id.label": "Werkstationreserverings-ID voor personen",
@@ -88844,7 +88873,7 @@ var PolyglotHelpApi = class extends PolyglotApi {
 	}
 };
 //#endregion
-//#region src/front/jup/Application/Recoil/i18n/I18NHelpContext.tsx
+//#region src/front/jup/Application/Context/i18n/I18NHelpContext.tsx
 function I18NHelpContext(props) {
 	const { defaultLanguage } = props;
 	const [i18n, setI18n] = useAtom(polyglotApiAtom);
@@ -88855,13 +88884,13 @@ function I18NHelpContext(props) {
 	return null;
 }
 //#endregion
-//#region src/front/jup/Application/Recoil/SetupRecoilContext.tsx
-function SetupRecoilContext(props) {
+//#region src/front/jup/Application/SetupI18nContext.tsx
+function SetupI18nContext(props) {
 	const { defaultLanguage, I18nContext } = props;
-	return /* @__PURE__ */ jsx(RecoilRoot, { children: /* @__PURE__ */ jsx(I18nContext, {
+	return /* @__PURE__ */ jsx(I18nContext, {
 		defaultLanguage,
 		children: props.children
-	}) });
+	});
 }
 //#endregion
 //#region src/back/ModelDefinitions/schema.helper.ts
@@ -89589,4 +89618,4 @@ function SurfyHelpPropertyType(props) {
 	});
 }
 //#endregion
-export { ClickOnIndexViewMenuPathBreadcrumb, I18NHelpContext, ObjectTypeHelper, ObjectTypeIndexViewHelp, ObjectTypeMenuBreadcrumb, ObjectTypeSingularCapitalizedLabel, PropertyTypeDescription, PropertyTypeHelper, PropertyTypeLabel, PropertyTypeMandatoryLabel, SetupRecoilContext, SurfyHelpLinkToIndexView, SurfyHelpObjectType, SurfyHelpPropertyType, SurfyHelpStandaloneViewMenuBreadcrumb, appVersion, getObjectTypeDefinitionByName, getPropertyTypeByCode, getPropertyTypeByName, isTenantObjectType, useFlattenDeterminants, useTranslation };
+export { ClickOnIndexViewMenuPathBreadcrumb, I18NHelpContext, ObjectTypeHelper, ObjectTypeIndexViewHelp, ObjectTypeMenuBreadcrumb, ObjectTypeSingularCapitalizedLabel, PropertyTypeDescription, PropertyTypeHelper, PropertyTypeLabel, PropertyTypeMandatoryLabel, SetupI18nContext, SurfyHelpLinkToIndexView, SurfyHelpObjectType, SurfyHelpPropertyType, SurfyHelpStandaloneViewMenuBreadcrumb, appVersion, getObjectTypeDefinitionByName, getPropertyTypeByCode, getPropertyTypeByName, isTenantObjectType, useFlattenDeterminants, useTranslation };

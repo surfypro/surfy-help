@@ -23,7 +23,7 @@ export type IconStyle = "solid" | "regular" | "light" | "thin" | "duotone" | "br
 export type FontAwesomeIconsStyle = IconStyle;
 export type IconShapeType = "circle" | "rectangle" | "triangle";
 export type DaySlotType = "am" | "pm" | "all" | "custom";
-export type ParkingRoomTypeCode = "PARKING-CAR" | "PARKING-ELECTRIC-CAR" | "PARKING-PRM";
+export type ParkingRoomTypeCode = "PARKING-CAR" | "PARKING-ELECTRIC-CAR" | "PARKING-PRM" | "PARKING-MOTO";
 export interface ICustomIconProperties {
 	defaultBorderColor?: string;
 	defaultBackgroundColor?: string;
@@ -221,7 +221,7 @@ export type DimensionToPersonPropertyNames = "id" | "priority" | "addToPeopleCou
 export type DimensionPropertyNames = "id" | "name" | "color" | "value" | "peopleCount" | "totalPeopleCount" | "manualPeopleCount" | "carbonFootprintPerMeter" | "crowdedForBookingRate" | "workplacesBookableOnlyViaDimension" | "createdAt" | "updatedAt" | "externalId" | "dimensionTypeId" | "dimensionType" | "userCompanyCreatedById" | "userCompanyCreatedBy" | "userCompanyUpdatedById" | "userCompanyUpdatedBy" | "dimensionRooms" | "dimensionFloors" | "dimensionBuildings" | "dimensionToPeople" | "personToDimensionBookings" | "companyId" | "company";
 export type PersonToDimensionBookingPropertyNames = "id" | "startDatetime" | "endDatetime" | "createdAt" | "updatedAt" | "externalId" | "personId" | "person" | "dimensionId" | "dimension" | "personWorkingLocationId" | "personWorkingLocation" | "userCompanyCreatedById" | "userCompanyCreatedBy" | "userCompanyUpdatedById" | "userCompanyUpdatedBy" | "companyId" | "company";
 export type PersonWorkingLocationPropertyNames = "id" | "date" | "daySlotType" | "createdAt" | "updatedAt" | "externalId" | "personId" | "person" | "workingLocationId" | "workingLocation" | "userCompanyCreatedById" | "userCompanyCreatedBy" | "userCompanyUpdatedById" | "userCompanyUpdatedBy" | "personToWorkplaceBookings" | "personToRoomBookings" | "personToDimensionBookings" | "companyId" | "company";
-export type PersonToWorkplaceBookingPropertyNames = "id" | "startDatetime" | "endDatetime" | "workspaceHasBeenConfirmedAt" | "createdAt" | "updatedAt" | "externalId" | "personId" | "person" | "workplaceId" | "workplace" | "personWorkingLocationId" | "personWorkingLocation" | "userCompanyCreatedById" | "userCompanyCreatedBy" | "userCompanyUpdatedById" | "userCompanyUpdatedBy" | "companyId" | "company";
+export type PersonToWorkplaceBookingPropertyNames = "id" | "startDatetime" | "endDatetime" | "workspaceHasBeenConfirmedAt" | "emailConfirmationWarningNotificationSentAt" | "createdAt" | "updatedAt" | "externalId" | "personId" | "person" | "workplaceId" | "workplace" | "personWorkingLocationId" | "personWorkingLocation" | "userCompanyCreatedById" | "userCompanyCreatedBy" | "userCompanyUpdatedById" | "userCompanyUpdatedBy" | "companyId" | "company";
 export type WorkplacePropertyNames = "id" | "position" | "rotation" | "isFlex" | "isTransit" | "isShared" | "textAnchor" | "name" | "workplaceAffectationsCalculatedRateSum" | "workplaceAffectationsCount" | "comment" | "isBookable" | "createdAt" | "updatedAt" | "externalId" | "workplaceTypeId" | "workplaceType" | "roomId" | "room" | "organizationId" | "organization" | "costCenterId" | "costCenter" | "workplaceUsageTypeId" | "workplaceUsageType" | "userCompanyCreatedById" | "userCompanyCreatedBy" | "userCompanyUpdatedById" | "userCompanyUpdatedBy" | "items" | "workplaceAffectations" | "personToWorkplaceBookings" | "companyId" | "company";
 export type OrganizationFloorPropertyNames = "id" | "roomsArea" | "roomsCount" | "workplacesCount" | "workplacesRatio" | "peopleCount" | "seatsCount" | "peopleRatio" | "occupancyRate" | "expansionRatio" | "freeWorkplacesCount" | "flexWorkplacesCount" | "sharedWorkplacesCount" | "sharedWorkplacesRatio" | "transitWorkplacesCount" | "flexRatio" | "seatsPeopleRatio" | "totalPeopleCount" | "carbonFootprint" | "totalCapacityCount" | "totalCapacityWorkplaceCountRatio" | "createdAt" | "updatedAt" | "externalId" | "organizationId" | "organization" | "floorId" | "floor" | "userCompanyCreatedById" | "userCompanyCreatedBy" | "userCompanyUpdatedById" | "userCompanyUpdatedBy" | "companyId" | "company";
 export type OrganizationBuildingPropertyNames = "id" | "roomsArea" | "roomsCount" | "workplacesCount" | "workplacesRatio" | "peopleCount" | "seatsCount" | "peopleRatio" | "occupancyRate" | "expansionRatio" | "freeWorkplacesCount" | "flexWorkplacesCount" | "sharedWorkplacesCount" | "sharedWorkplacesRatio" | "transitWorkplacesCount" | "flexRatio" | "seatsPeopleRatio" | "totalPeopleCount" | "carbonFootprint" | "totalCapacityCount" | "totalCapacityWorkplaceCountRatio" | "createdAt" | "updatedAt" | "externalId" | "organizationId" | "organization" | "buildingId" | "building" | "userCompanyCreatedById" | "userCompanyCreatedBy" | "userCompanyUpdatedById" | "userCompanyUpdatedBy" | "companyId" | "company";
@@ -445,7 +445,7 @@ interface IProps$1 {
 	children: React.ReactNode;
 	I18nContext: React.FunctionComponent<I18NContextProps>;
 }
-export declare function SetupRecoilContext(props: IProps$1): React.JSX.Element;
+export declare function SetupI18nContext(props: IProps$1): React.JSX.Element;
 export declare function PropertyTypeDescription(props: {
 	propertyType: IPropertyTypeDefinition;
 }): string | React.JSX.Element | null;
