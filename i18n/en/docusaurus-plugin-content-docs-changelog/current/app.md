@@ -1,5 +1,14 @@
 # What's New
 
+## May 27, 2026 - v3.4.206
+
+- Workstation booking confirmation
+  - The <P code="company:workplaceBookingConfirmationRange" /> window must include an **IANA timezone** (e.g. `06:00-10:30@Europe/Paris`) so reminder and automatic cancellation emails run at the correct local time.
+  - In **My planning**, the confirmation window shown for same-day bookings includes this timezone.
+
+- <OT code="itemType" />
+  - New report <LIV code="itemType:dq-family-tenant-consistency" /> to find object types linked to a family from another tenant, with a bulk fix action to assign them to the tenant’s **Unclassified** family.
+
 ## May 27, 2026 - v3.4.202
 
 - Unconfirmed workstation bookings

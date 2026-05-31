@@ -14,7 +14,7 @@ Objectifs :
 
 ### 1) Plage de confirmation
 
-L’entreprise configure une plage de confirmation (par exemple `06:00-10:00`).
+L’entreprise configure une plage de confirmation avec un fuseau horaire IANA (par exemple `06:00-10:00@Europe/Paris`).
 
 Pour les réservations du jour, l’utilisateur doit confirmer sa présence dans cette plage depuis **Mon planning**.
 

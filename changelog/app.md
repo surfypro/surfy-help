@@ -4,6 +4,15 @@ sidebar_position: 1
 
 # Nouveautés
 
+## 31 Mai 2026 - v3.4.207
+
+- Confirmation des réservations de postes
+  - La plage <P code="company:workplaceBookingConfirmationRange" /> doit inclure un **fuseau horaire IANA** (ex. `06:00-10:30@Europe/Paris`) pour que les rappels et annulations automatiques s’appliquent à la bonne heure locale.
+  - Dans **Mon planning**, la plage affichée pour confirmer une réservation du jour inclut ce fuseau horaire.
+
+- <OT code="itemType" />
+  - Nouveau rapport <LIV code="itemType:dq-family-tenant-consistency" /> pour repérer les types d’objet rattachés à une famille incohérente, avec une action de correction en masse vers la famille **Non classé** du tenant concerné.
+
 ## 27 Mai 2026 - v3.4.202
 
 - Réservations de postes non confirmées

@@ -14,7 +14,7 @@ Goals:
 
 ### 1) Confirmation window
 
-The company configures a confirmation window (for example `06:00-10:00`).
+The company configures a confirmation window with an IANA timezone (for example `06:00-10:00@Europe/Paris`).
 
 For same-day bookings, users must confirm their presence during this window from **My planning**.
 
