@@ -36,20 +36,14 @@ Affecter des personnes en masse [aux postes de travail](/docs/tutorials/affectat
 
 [Exporter le rapport des personnes affectées par quartier](/docs/tutorials/dimensiontypetobuilding/create.md#rapport-des-donn%C3%A9es-des-calques-daffectation)
 
-## Réservation des postes de travail et des espaces
+## Réservation des postes de travail
 
-### Mettre en place la réservation des postes de travail
-
+Pour pouvoir réserver dans Surfy, les quartiers de réservation doivent être configurés et les personnes affectées à leur quartier (Voir ci-dessus).
 
 
 [Réserver dans Surfy](/docs/tutorials/booking/workstationbooking/workplace.md)
 
 [Utiliser Teams pour la réservation dans Surfy](/docs/tutorials/booking/workstationbooking/teams.md)
 
-
-### Mettre en place la réservation d'espace
-
-La réservation d'espace (Salle de réunion, place de parking,...) n'est pas encore opérationnelle dans Surfy.
-Merci de vous rapprocher de l'équipe Surfy pour une mise en oeuvre rapide de cette fonctionnalité.
 
 

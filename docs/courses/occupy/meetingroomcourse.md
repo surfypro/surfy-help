@@ -26,5 +26,14 @@ Voir le tutoriel [visualiser les espaces de réunion](/docs/tutorials/surfaces/m
 Les informations des espaces de réunion peuvent être délivrées à des applications tiers (réservation, ticketing) via nos API.
 Pour plus d'informations, Merci de [contacter Surfy](https://www.surfy.pro/contact)
 
+## Réservation des espaces de réunion
+
+### Configuration de la réservation d'espace de réunion
+
+[Guide de démarrage](/docs/tutorials/booking/meetingroombooking/admin/)
+
+### Réserver un espace de réunion
+
+[Réserver un espace de réunion](/docs/tutorials/booking/meetingroombooking/meetingroom/)
 
 
