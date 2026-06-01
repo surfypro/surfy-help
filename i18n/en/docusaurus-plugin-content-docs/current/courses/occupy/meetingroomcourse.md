@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Meeting Spaces
+# Meeting spaces
 
 ## Configuration overview
 
@@ -16,15 +16,21 @@ For more information:
 
 [Create](/en/docs/tutorials/objects/family/create) or [modify](/en/docs/tutorials/objects/family/edit) an object type family to list meeting space equipment (enter the Code: SERVICES)
 
-
-## View Meeting Spaces
+## View meeting spaces
 
 See the tutorial [view meeting spaces](/en/docs/tutorials/surfaces/meetingroom/read)
 
-## Share Meeting Space Information
+## Share meeting space information
 
 Meeting space information can be delivered to third-party applications (booking, ticketing) via our APIs.
 For more information, please [contact Surfy](https://www.surfy.pro/en-gb/contact)
 
+## Meeting space booking
 
+### Configure meeting space booking
 
+[Getting started guide](/en/docs/tutorials/booking/meetingroombooking/admin)
+
+### Book a meeting space
+
+[Book a meeting space](/en/docs/tutorials/booking/meetingroombooking/meetingroom)
