@@ -120,6 +120,13 @@ The photo of the person to have it in the trombinoscope or in research
 *Technical name:* ```picture```
 <PH code="person:picture"/>
 
+### Reference institution {#main-location}
+
+The person 's reference establishment in text format, often imported from the HRIS
+
+*Technical name:* ```mainLocation```
+<PH code="person:mainLocation"/>
+
 ### Registration {#registration-number}
 
 The person's registration number

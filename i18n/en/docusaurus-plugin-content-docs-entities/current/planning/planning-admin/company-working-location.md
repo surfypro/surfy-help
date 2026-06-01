@@ -17,6 +17,16 @@ A company work location allows a company to customize people's work locations fo
 
 
 
+## Basic properties {#properties-base}
+    
+### Custom label {#label}
+
+Label displayed for this work location within the company, instead of the default label
+
+*Technical name:* ```label```
+<PH code="companyWorkingLocation:label"/>
+
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 

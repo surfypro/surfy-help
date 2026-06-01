@@ -36,6 +36,13 @@ La date et l'heure de fin de la réservation
 
 ## Propriétés de base {#properties-base}
     
+### Avertissement e-mail de confirmation envoyé le {#email-confirmation-warning-notification-sent-at}
+
+La date et l'heure d'envoi de l'avertissement e-mail avant annulation de la réservation non confirmée
+
+*Nom technique:* ```emailConfirmationWarningNotificationSentAt```
+<PH code="personToWorkplaceBooking:emailConfirmationWarningNotificationSentAt"/>
+
 ### Workspace Has Been Confirmed At {#workspace-has-been-confirmed-at}
 
 

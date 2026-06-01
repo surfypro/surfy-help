@@ -99,6 +99,13 @@ The carbon footprint is the number of CO2 emitted
 *Technical name:* ```carbonFootprint```
 <PH code="building:carbonFootprint"/>
 
+### Declared area {#surface}
+
+The declared surface area of ​​the building entered manually; this value is not linked to the spaces modeled in Surfy.
+
+*Technical name:* ```surface```
+<PH code="building:surface"/>
+
 ### End date of the lease {#lease-end-date}
 
 End date of the lease
@@ -273,13 +280,6 @@ Amount of the deposit deposited upon signing the lease
 
 *Technical name:* ```securityDeposit```
 <PH code="building:securityDeposit"/>
-
-### Surface {#surface}
-
-
-
-*Technical name:* ```surface```
-<PH code="building:surface"/>
 
 ### Total capacity {#total-capacity-count}
 

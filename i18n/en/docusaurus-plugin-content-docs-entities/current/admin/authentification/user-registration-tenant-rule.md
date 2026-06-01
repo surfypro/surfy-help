@@ -42,7 +42,7 @@ Automatically associate roles and content roles with users who meet this rule
 
 ### Use OpenID claims to associate with the tenant {#use-open-id-token-claims-to-associate-to-tenant}
 
-Associate the user with the tenant only if the exact claim is surfy.{NomDuTenant} is present in the token
+Associate the user with the tenant only if the exact claim surfy.{TenantName} is present in the token
 
 *Technical name:* ```useOpenIdTokenClaimsToAssociateToTenant```
 <PH code="userRegistrationTenantRule:useOpenIdTokenClaimsToAssociateToTenant"/>

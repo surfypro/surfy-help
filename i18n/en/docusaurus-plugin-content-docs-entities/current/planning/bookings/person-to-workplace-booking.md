@@ -36,6 +36,13 @@ The start date and time of the reservation
 
 ## Basic properties {#properties-base}
     
+### Confirmation email sent on {#email-confirmation-warning-notification-sent-at}
+
+The date and time the email warning was sent before the cancellation of the unconfirmed reservation.
+
+*Technical name:* ```emailConfirmationWarningNotificationSentAt```
+<PH code="personToWorkplaceBooking:emailConfirmationWarningNotificationSentAt"/>
+
 ### Workspace Has Been Confirmed At {#workspace-has-been-confirmed-at}
 
 

@@ -3,7 +3,6 @@ import React, { Children, cloneElement, createContext, forwardRef, isValidElemen
 import { Box, Fade, IconButton, Paper, Tooltip, Typography, tooltipClasses } from "@mui/material";
 import { Fragment, jsx, jsxs } from "react/jsx-runtime";
 import ReactDOM from "react-dom";
-import { RecoilRoot } from "recoil";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 //#region \0rolldown/runtime.js
 var __create = Object.create;
@@ -9465,7 +9464,7 @@ var companyObjectTypeDefintion = {
 				technical: false,
 				unit: void 0,
 				defaultValue: null,
-				regex: "^([0-1][0-9]|2[0-3]):[0-5][0-9]-([0-1][0-9]|2[0-3]):[0-5][0-9]$"
+				regex: "^((?:[0-1][0-9]|2[0-3]):[0-5][0-9])-((?:[0-1][0-9]|2[0-3]):[0-5][0-9])@((?:UTC)|(?:[A-Za-z_]+(?:\\/[A-Za-z0-9_+-]+)+))$"
 			},
 			association: void 0
 		},
@@ -29663,6 +29662,21 @@ var personObjectTypeDefintion = {
 			},
 			association: void 0
 		},
+		mainLocation: {
+			name: "mainLocation",
+			objectTypeName: "person",
+			type: "string",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: void 0,
+				regex: void 0
+			},
+			association: void 0
+		},
 		createdAt: {
 			name: "createdAt",
 			objectTypeName: "person",
@@ -38347,6 +38361,21 @@ var personToWorkplaceBookingObjectTypeDefintion = {
 			},
 			association: void 0
 		},
+		emailConfirmationWarningNotificationSentAt: {
+			name: "emailConfirmationWarningNotificationSentAt",
+			objectTypeName: "personToWorkplaceBooking",
+			type: "datetime",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: null,
+				regex: void 0
+			},
+			association: void 0
+		},
 		createdAt: {
 			name: "createdAt",
 			objectTypeName: "personToWorkplaceBooking",
@@ -40741,6 +40770,21 @@ var companyWorkingLocationObjectTypeDefintion = {
 				calculated: false,
 				technical: true,
 				unit: void 0
+			},
+			association: void 0
+		},
+		label: {
+			name: "label",
+			objectTypeName: "companyWorkingLocation",
+			type: "string",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: void 0,
+				regex: void 0
 			},
 			association: void 0
 		},
@@ -50103,12 +50147,12 @@ var nlNL$1 = { components: {
 	} }
 } };
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.1.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_554d179ac5f3dd77f28f979e78899858/node_modules/@mui/x-date-pickers/locales/utils/getPickersLocalization.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.3.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_9fbf3468ef48a17349e8f3e8d98a3441/node_modules/@mui/x-date-pickers/locales/utils/getPickersLocalization.mjs
 var getPickersLocalization = (pickersTranslations) => {
 	return { components: { MuiLocalizationProvider: { defaultProps: { localeText: _extends({}, pickersTranslations) } } } };
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.1.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_554d179ac5f3dd77f28f979e78899858/node_modules/@mui/x-date-pickers/locales/deDE.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.3.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_9fbf3468ef48a17349e8f3e8d98a3441/node_modules/@mui/x-date-pickers/locales/deDE.mjs
 var timeViews$1 = {
 	hours: "Stunden",
 	minutes: "Minuten",
@@ -50226,7 +50270,7 @@ var enUS = getPickersLocalization({
 	empty: "Empty"
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.1.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_554d179ac5f3dd77f28f979e78899858/node_modules/@mui/x-date-pickers/locales/esES.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.3.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_9fbf3468ef48a17349e8f3e8d98a3441/node_modules/@mui/x-date-pickers/locales/esES.mjs
 var views$2 = {
 	hours: "Horas",
 	minutes: "Minutos",
@@ -50287,7 +50331,7 @@ var esES = getPickersLocalization({
 	empty: "Vacío"
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.1.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_554d179ac5f3dd77f28f979e78899858/node_modules/@mui/x-date-pickers/locales/frFR.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.3.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_9fbf3468ef48a17349e8f3e8d98a3441/node_modules/@mui/x-date-pickers/locales/frFR.mjs
 var views$1 = {
 	hours: "heures",
 	minutes: "minutes",
@@ -50348,7 +50392,7 @@ var frFR = getPickersLocalization({
 	empty: "Vider"
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.1.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_554d179ac5f3dd77f28f979e78899858/node_modules/@mui/x-date-pickers/locales/itIT.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.3.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_9fbf3468ef48a17349e8f3e8d98a3441/node_modules/@mui/x-date-pickers/locales/itIT.mjs
 var views = {
 	hours: "le ore",
 	minutes: "i minuti",
@@ -50411,7 +50455,7 @@ var itIT = getPickersLocalization({
 	empty: "Vuoto"
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.1.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_554d179ac5f3dd77f28f979e78899858/node_modules/@mui/x-date-pickers/locales/nlNL.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.3.0_@emotion+react@11.14.0_@types+react@18.3.1_react@18.3.1__@emo_9fbf3468ef48a17349e8f3e8d98a3441/node_modules/@mui/x-date-pickers/locales/nlNL.mjs
 var timeViews = {
 	hours: "uren",
 	minutes: "minuten",
@@ -55170,7 +55214,7 @@ var DateTime = class DateTime {
 	*/
 	static fromMillis(milliseconds, options = {}) {
 		if (!isNumber$1(milliseconds)) throw new InvalidArgumentError(`fromMillis requires a numerical input, but received a ${typeof milliseconds} with value ${milliseconds}`);
-		else if (milliseconds < -MAX_DATE || milliseconds > MAX_DATE) return DateTime.invalid("Timestamp out of range");
+		else if (milliseconds < -864e13 || milliseconds > MAX_DATE) return DateTime.invalid("Timestamp out of range");
 		else return new DateTime({
 			ts: milliseconds,
 			zone: normalizeZone(options.zone, Settings.defaultZone),
@@ -56896,7 +56940,7 @@ var require_define_properties = /* @__PURE__ */ __commonJSMin(((exports, module)
 	module.exports = defineProperties;
 }));
 //#endregion
-//#region node_modules/.pnpm/es-object-atoms@1.1.1/node_modules/es-object-atoms/index.js
+//#region node_modules/.pnpm/es-object-atoms@1.1.2/node_modules/es-object-atoms/index.js
 var require_es_object_atoms = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	/** @type {import('.')} */
 	module.exports = Object;
@@ -57560,7 +57604,7 @@ var require_call_bind = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	else module.exports.apply = applyBind;
 }));
 //#endregion
-//#region node_modules/.pnpm/es-object-atoms@1.1.1/node_modules/es-object-atoms/RequireObjectCoercible.js
+//#region node_modules/.pnpm/es-object-atoms@1.1.2/node_modules/es-object-atoms/RequireObjectCoercible.js
 var require_RequireObjectCoercible = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var $TypeError = require_type();
 	/** @type {import('./RequireObjectCoercible')} */
@@ -64920,6 +64964,13 @@ var ViewCoreSchema = {
 				hidden: void 0,
 				isStandalone: void 0,
 				shouldDisplay: void 0
+			},
+			"dq-family-tenant-consistency": {
+				name: "dq-family-tenant-consistency",
+				isDefaultView: void 0,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
 			}
 		}
 	},
@@ -70523,7 +70574,7 @@ var entities_paths_default = {
 		"feature": "/entities/help",
 		"userRefreshToken": null
 	},
-	viewPathMapping: /* @__PURE__ */ JSON.parse("{\"occupancyStatus:list\":\"/entities/surfy/global-admin\",\"occupancyStatus:create\":\"/entities/surfy/global-admin\",\"occupancyStatus:import\":\"/entities/surfy/global-admin\",\"occupancyStatus:dataquality\":\"/entities/surfy/global-admin\",\"user:list\":\"/entities/surfy/global-security\",\"user:create\":\"/entities/surfy/global-security\",\"user:import\":\"/entities/surfy/global-security\",\"user:dataquality\":\"/entities/surfy/global-security\",\"companyType:list\":\"/entities/surfy/global-admin\",\"companyType:create\":\"/entities/surfy/global-admin\",\"companyType:import\":\"/entities/surfy/global-admin\",\"companyType:dataquality\":\"/entities/surfy/global-admin\",\"company:cards\":\"/entities/admin\",\"company:people-info\":\"/entities/admin\",\"company:usage\":\"/entities/admin\",\"company:booking-reporting\":\"/entities/admin\",\"company:dataquality-index\":\"/entities/admin\",\"company:dq-reports-overview-duplicate-company\":\"/entities/admin\",\"company:list\":\"/entities/admin\",\"company:create\":\"/entities/admin\",\"company:import\":\"/entities/admin\",\"company:dataquality\":\"/entities/admin\",\"company:dq-fix-inventory\":\"/entities/admin/dataquality\",\"company:dq-shapes-position\":\"/entities/admin/dataquality\",\"campus:cards\":\"/entities/spaces\",\"campus:list\":\"/entities/spaces\",\"campus:create\":\"/entities/spaces\",\"campus:import\":\"/entities/spaces\",\"campus:dataquality\":\"/entities/spaces\",\"roomConnectorType:list\":\"/entities/admin/connectors\",\"roomConnectorType:create\":\"/entities/admin/connectors\",\"roomConnectorType:import\":\"/entities/admin/connectors\",\"roomConnectorType:dataquality\":\"/entities/admin/connectors\",\"roomConnector:list\":\"/entities/admin/connectors\",\"roomConnector:create\":\"/entities/admin/connectors\",\"roomConnector:import\":\"/entities/admin/connectors\",\"roomConnector:dataquality\":\"/entities/admin/connectors\",\"userCompany:list\":\"/entities/admin/security\",\"userCompany:create\":\"/entities/admin/security\",\"userCompany:import\":\"/entities/admin/security\",\"userCompany:dataquality\":\"/entities/admin/security\",\"personGender:list\":\"/entities/surfy\",\"personGender:create\":\"/entities/surfy\",\"personGender:import\":\"/entities/surfy\",\"personGender:dataquality\":\"/entities/surfy\",\"personCompany:list\":\"/entities/admin/person-companies\",\"personCompany:create\":\"/entities/admin/person-companies\",\"personCompany:import\":\"/entities/admin/person-companies\",\"personCompany:dataquality\":\"/entities/admin/person-companies\",\"jupUiLayout:list\":\"/entities/surfy/global-security\",\"jupUiLayout:create\":\"/entities/surfy/global-security\",\"jupUiLayout:import\":\"/entities/surfy/global-security\",\"jupUiLayout:dataquality\":\"/entities/surfy/global-security\",\"buildingType:list\":\"/entities/admin/types\",\"buildingType:create\":\"/entities/admin/types\",\"buildingType:import\":\"/entities/admin/types\",\"buildingType:dataquality\":\"/entities/admin/types\",\"organization:hierarchy\":\"/entities/organizations\",\"organization:list\":\"/entities/organizations\",\"organization:create\":\"/entities/organizations\",\"organization:import\":\"/entities/organizations\",\"organization:dataquality\":\"/entities/organizations\",\"organization:dq-organization-hierarchy\":\"/entities/organizations/dataquality\",\"organization:dq-level1-not-used\":\"/entities/organizations/dataquality\",\"itemTypeFamily:list\":\"/entities/things/things-type\",\"itemTypeFamily:create\":\"/entities/things/things-type\",\"itemTypeFamily:import\":\"/entities/things/things-type\",\"itemTypeFamily:dataquality\":\"/entities/things/things-type\",\"manufacturer:list\":\"/entities/things/things-type\",\"manufacturer:create\":\"/entities/things/things-type\",\"manufacturer:import\":\"/entities/things/things-type\",\"manufacturer:dataquality\":\"/entities/things/things-type\",\"object3dModel:list\":\"/entities/surfy/global-admin\",\"object3dModel:create\":\"/entities/surfy/global-admin\",\"object3dModel:import\":\"/entities/surfy/global-admin\",\"object3dModel:dataquality\":\"/entities/surfy/global-admin\",\"itemType:list\":\"/entities/things/things-type\",\"itemType:create\":\"/entities/things/things-type\",\"itemType:import\":\"/entities/things/things-type\",\"itemType:dataquality\":\"/entities/things/things-type\",\"itemType:dq-not-used\":\"/entities/things/things-type/dataquality\",\"itemType:dq-uniq-name\":\"/entities/things/things-type/dataquality\",\"building:cards\":\"/entities/spaces\",\"building:pictures\":\"/entities/spaces\",\"building:3d-cards\":\"/entities/spaces\",\"building:gmap\":\"/entities/spaces\",\"building:3d-map\":\"/entities/spaces\",\"building:assets\":\"/entities/spaces\",\"building:list\":\"/entities/spaces\",\"building:create\":\"/entities/spaces\",\"building:import\":\"/entities/spaces\",\"building:dataquality\":\"/entities/spaces\",\"building:dq-building-3d-eligibility\":\"/entities/spaces/dataquality\",\"mapScale:list\":\"/entities/spaces\",\"mapScale:create\":\"/entities/spaces\",\"mapScale:import\":\"/entities/spaces\",\"mapScale:dataquality\":\"/entities/spaces\",\"mapScale:dq-not-used\":\"/entities/spaces/dataquality\",\"mapScale:dq-uniq-name\":\"/entities/spaces/dataquality\",\"structure:list\":\"/entities/spaces\",\"structure:create\":\"/entities/spaces\",\"structure:import\":\"/entities/spaces\",\"structure:dataquality\":\"/entities/spaces\",\"structure:dq-structure-transform-without-anchor\":\"/entities/spaces/dataquality\",\"structurePoint:list\":\"/entities/spaces/space-points\",\"structurePoint:create\":\"/entities/spaces/space-points\",\"structurePoint:import\":\"/entities/spaces/space-points\",\"structurePoint:dataquality\":\"/entities/spaces/space-points\",\"floor:list\":\"/entities/spaces\",\"floor:create\":\"/entities/spaces\",\"floor:import\":\"/entities/spaces\",\"floor:dataquality\":\"/entities/spaces\",\"distributionCostType:list\":\"/entities/admin/types\",\"distributionCostType:create\":\"/entities/admin/types\",\"distributionCostType:import\":\"/entities/admin/types\",\"distributionCostType:dataquality\":\"/entities/admin/types\",\"roomTypeGroup:list\":\"/entities/admin/types/room-types\",\"roomTypeGroup:create\":\"/entities/admin/types/room-types\",\"roomTypeGroup:import\":\"/entities/admin/types/room-types\",\"roomTypeGroup:dataquality\":\"/entities/admin/types/room-types\",\"roomType:list\":\"/entities/admin/types/room-types\",\"roomType:create\":\"/entities/admin/types/room-types\",\"roomType:import\":\"/entities/admin/types/room-types\",\"roomType:dataquality\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:list\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:create\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:import\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:dataquality\":\"/entities/admin/types/room-types\",\"roomTypeGroupFloor:list\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:create\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:import\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:list\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:create\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:import\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"costCenter:list\":\"/entities/admin/types\",\"costCenter:create\":\"/entities/admin/types\",\"costCenter:import\":\"/entities/admin/types\",\"costCenter:dataquality\":\"/entities/admin/types\",\"costCenterBuilding:list\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:create\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:import\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:list\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:create\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:import\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:dataquality\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"room:meeting-rooms\":\"/entities/spaces\",\"room:list\":\"/entities/spaces\",\"room:create\":\"/entities/spaces\",\"room:import\":\"/entities/spaces\",\"room:dataquality\":\"/entities/spaces\",\"room:dq-organization-to-room\":\"/entities/spaces/dataquality\",\"room:dq-uniq-name\":\"/entities/spaces/dataquality\",\"room:dq-no-point\":\"/entities/spaces/dataquality\",\"room:dq-capacity-equals-seats-count\":\"/entities/spaces/dataquality\",\"room:dq-capacity-gt-0\":\"/entities/spaces/dataquality\",\"roomPoint:list\":\"/entities/spaces/space-points\",\"roomPoint:create\":\"/entities/spaces/space-points\",\"roomPoint:import\":\"/entities/spaces/space-points\",\"roomPoint:dataquality\":\"/entities/spaces/space-points\",\"roomPoint:dq-uniq-position\":\"/entities/spaces/space-points/dataquality\",\"roomPoint:dq-not-used\":\"/entities/spaces/space-points/dataquality\",\"roomPointRoom:list\":\"/entities/spaces/space-points\",\"roomPointRoom:create\":\"/entities/spaces/space-points\",\"roomPointRoom:import\":\"/entities/spaces/space-points\",\"roomPointRoom:dataquality\":\"/entities/spaces/space-points\",\"roomPointSegmentType:list\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:create\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:import\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:dataquality\":\"/entities/surfy/global-admin\",\"roomPointSegment:list\":\"/entities/spaces\",\"roomPointSegment:create\":\"/entities/spaces\",\"roomPointSegment:import\":\"/entities/spaces\",\"roomPointSegment:dataquality\":\"/entities/spaces\",\"roomPointSegment:dq-not-uniq\":\"/entities/spaces/dataquality\",\"roomPointSegment:dq-point-not-on-same-floor\":\"/entities/spaces/dataquality\",\"itemTypePoint:list\":\"/entities/things/things-type\",\"itemTypePoint:create\":\"/entities/things/things-type\",\"itemTypePoint:import\":\"/entities/things/things-type\",\"itemTypePoint:dataquality\":\"/entities/things/things-type\",\"dimensionType:list\":\"/entities/admin/dimensions\",\"dimensionType:create\":\"/entities/admin/dimensions\",\"dimensionType:import\":\"/entities/admin/dimensions\",\"dimensionType:dataquality\":\"/entities/admin/dimensions\",\"dimension:list\":\"/entities/admin/dimensions\",\"dimension:create\":\"/entities/admin/dimensions\",\"dimension:import\":\"/entities/admin/dimensions\",\"dimension:dataquality\":\"/entities/admin/dimensions\",\"dimension:dq-missing-color\":\"/entities/admin/dimensions/dataquality\",\"dimensionRoom:list\":\"/entities/admin/dimensions\",\"dimensionRoom:create\":\"/entities/admin/dimensions\",\"dimensionRoom:import\":\"/entities/admin/dimensions\",\"dimensionRoom:dataquality\":\"/entities/admin/dimensions\",\"dimensionRoom:dq-wrong-dimension-type\":\"/entities/admin/dimensions/dataquality\",\"dimensionFloor:list\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:create\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:import\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:dataquality\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:list\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:create\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:import\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"factType:list\":\"/entities/spaces/building-facts\",\"factType:create\":\"/entities/spaces/building-facts\",\"factType:import\":\"/entities/spaces/building-facts\",\"factType:dataquality\":\"/entities/spaces/building-facts\",\"fact:list\":\"/entities/spaces/building-facts\",\"fact:create\":\"/entities/spaces/building-facts\",\"fact:import\":\"/entities/spaces/building-facts\",\"fact:dataquality\":\"/entities/spaces/building-facts\",\"personState:list\":\"/entities/human/person-type\",\"personState:create\":\"/entities/human/person-type\",\"personState:import\":\"/entities/human/person-type\",\"personState:dataquality\":\"/entities/human/person-type\",\"personSecurityProfile:list\":\"/entities/human/person-type\",\"personSecurityProfile:create\":\"/entities/human/person-type\",\"personSecurityProfile:import\":\"/entities/human/person-type\",\"personSecurityProfile:dataquality\":\"/entities/human/person-type\",\"personType:list\":\"/entities/surfy/global-admin\",\"personType:create\":\"/entities/surfy/global-admin\",\"personType:import\":\"/entities/surfy/global-admin\",\"personType:dataquality\":\"/entities/surfy/global-admin\",\"person:list\":\"/entities/human\",\"person:create\":\"/entities/human\",\"person:import\":\"/entities/human\",\"person:dataquality\":\"/entities/human\",\"person:dq-only-associated-to-building\":\"/entities/human/dataquality\",\"person:dq-near-end-date\":\"/entities/human/dataquality\",\"person:dq-no-affectations\":\"/entities/human/dataquality\",\"person:dq-person-duplicate\":\"/entities/human/dataquality\",\"person:dq-not-affectable-end-date-expired\":\"/entities/human/dataquality\",\"personToPersonType:list\":\"/entities/human/person-relations\",\"personToPersonType:create\":\"/entities/human/person-relations\",\"personToPersonType:import\":\"/entities/human/person-relations\",\"personToPersonType:dataquality\":\"/entities/human/person-relations\",\"personToPerson:list\":\"/entities/human/person-relations\",\"personToPerson:create\":\"/entities/human/person-relations\",\"personToPerson:import\":\"/entities/human/person-relations\",\"personToPerson:dataquality\":\"/entities/human/person-relations\",\"vehicleType:list\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:create\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:import\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:dataquality\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:list\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:create\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:import\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:dataquality\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicle:list\":\"/entities/human/person-vehicles\",\"vehicle:create\":\"/entities/human/person-vehicles\",\"vehicle:import\":\"/entities/human/person-vehicles\",\"vehicle:dataquality\":\"/entities/human/person-vehicles\",\"personToVehicle:list\":\"/entities/human/person-vehicles\",\"personToVehicle:create\":\"/entities/human/person-vehicles\",\"personToVehicle:import\":\"/entities/human/person-vehicles\",\"personToVehicle:dataquality\":\"/entities/human/person-vehicles\",\"roomAffectation:room-mouvement-matrix-import\":\"/entities/affectations\",\"roomAffectation:list\":\"/entities/affectations\",\"roomAffectation:create\":\"/entities/affectations\",\"roomAffectation:import\":\"/entities/affectations\",\"roomAffectation:dataquality\":\"/entities/affectations\",\"workplaceType:list\":\"/entities/things/things-type\",\"workplaceType:create\":\"/entities/things/things-type\",\"workplaceType:import\":\"/entities/things/things-type\",\"workplaceType:dataquality\":\"/entities/things/things-type\",\"workplaceType:dq-not-used\":\"/entities/things/things-type/dataquality\",\"workplaceType:dq-workplace-type-item-type-position-z\":\"/entities/things/things-type/dataquality\",\"workplaceUsageType:list\":\"/entities/things/things-type\",\"workplaceUsageType:create\":\"/entities/things/things-type\",\"workplaceUsageType:import\":\"/entities/things/things-type\",\"workplaceUsageType:dataquality\":\"/entities/things/things-type\",\"workplaceTypeItemType:list\":\"/entities/things/things-type\",\"workplaceTypeItemType:create\":\"/entities/things/things-type\",\"workplaceTypeItemType:import\":\"/entities/things/things-type\",\"workplaceTypeItemType:dataquality\":\"/entities/things/things-type\",\"workplace:list\":\"/entities/things\",\"workplace:create\":\"/entities/things\",\"workplace:import\":\"/entities/things\",\"workplace:dataquality\":\"/entities/things\",\"workplace:dq-workplace-transit-with-affectations\":\"/entities/things/dataquality\",\"item:list\":\"/entities/things\",\"item:create\":\"/entities/things\",\"item:import\":\"/entities/things\",\"item:dataquality\":\"/entities/things\",\"item:dq-item-not-in-workplace-room\":\"/entities/things/dataquality\",\"workplaceAffectation:workplace-mouvement-matrix-import\":\"/entities/affectations\",\"workplaceAffectation:list\":\"/entities/affectations\",\"workplaceAffectation:create\":\"/entities/affectations\",\"workplaceAffectation:import\":\"/entities/affectations\",\"workplaceAffectation:dataquality\":\"/entities/affectations\",\"workplaceAffectation:dq-workplace-affectation-latest\":\"/entities/affectations/dataquality\",\"organizationFloor:list\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:create\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:import\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:dataquality\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:list\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:create\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:import\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"roomTypeFloor:list\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:create\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:import\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:list\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:create\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:import\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"itemToPerson:list\":\"/entities/affectations\",\"itemToPerson:create\":\"/entities/affectations\",\"itemToPerson:import\":\"/entities/affectations\",\"itemToPerson:dataquality\":\"/entities/affectations\",\"personToBuilding:list\":\"/entities/affectations\",\"personToBuilding:create\":\"/entities/affectations\",\"personToBuilding:import\":\"/entities/affectations\",\"personToBuilding:dataquality\":\"/entities/affectations\",\"dimensionToPerson:list\":\"/entities/affectations\",\"dimensionToPerson:create\":\"/entities/affectations\",\"dimensionToPerson:import\":\"/entities/affectations\",\"dimensionToPerson:dataquality\":\"/entities/affectations\",\"dimensionToPerson:dq-dimension-to-person-latest\":\"/entities/affectations/dataquality\",\"dimensionTypeToBuilding:list\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:create\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:import\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:dataquality\":\"/entities/admin/dimensions\",\"workingLocation:list\":\"/entities/surfy/global-admin\",\"workingLocation:create\":\"/entities/surfy/global-admin\",\"workingLocation:import\":\"/entities/surfy/global-admin\",\"workingLocation:dataquality\":\"/entities/surfy/global-admin\",\"personWorkingLocation:my-planning\":\"/entities/planning\",\"personWorkingLocation:obo-planning\":\"/entities/planning\",\"personWorkingLocation:guest-planning\":\"/entities/planning\",\"personWorkingLocation:booking-maps\":\"/entities/planning\",\"personWorkingLocation:pwl-dimension\":\"/entities/planning\",\"personWorkingLocation:list\":\"/entities/planning\",\"personWorkingLocation:create\":\"/entities/planning\",\"personWorkingLocation:import\":\"/entities/planning\",\"personWorkingLocation:dataquality\":\"/entities/planning\",\"personToWorkplaceBooking:dashboard-index\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:list\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:create\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:import\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:dataquality\":\"/entities/planning/bookings\",\"personToRoomBooking:list\":\"/entities/planning/bookings\",\"personToRoomBooking:create\":\"/entities/planning/bookings\",\"personToRoomBooking:import\":\"/entities/planning/bookings\",\"personToRoomBooking:dataquality\":\"/entities/planning/bookings\",\"personToDimensionBooking:list\":\"/entities/planning/bookings\",\"personToDimensionBooking:create\":\"/entities/planning/bookings\",\"personToDimensionBooking:import\":\"/entities/planning/bookings\",\"personToDimensionBooking:dataquality\":\"/entities/planning/bookings\",\"personCompanyMission:list\":\"/entities/admin/person-companies\",\"personCompanyMission:create\":\"/entities/admin/person-companies\",\"personCompanyMission:import\":\"/entities/admin/person-companies\",\"personCompanyMission:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToItemType:list\":\"/entities/admin/person-companies\",\"personCompanyToItemType:create\":\"/entities/admin/person-companies\",\"personCompanyToItemType:import\":\"/entities/admin/person-companies\",\"personCompanyToItemType:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:list\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:create\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:import\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToItem:list\":\"/entities/admin/person-companies\",\"personCompanyToItem:create\":\"/entities/admin/person-companies\",\"personCompanyToItem:import\":\"/entities/admin/person-companies\",\"personCompanyToItem:dataquality\":\"/entities/admin/person-companies\",\"legend:list\":\"/entities/admin\",\"legend:create\":\"/entities/admin\",\"legend:import\":\"/entities/admin\",\"legend:dataquality\":\"/entities/admin\",\"openerPostMessageHost:list\":\"/entities/admin/api\",\"openerPostMessageHost:create\":\"/entities/admin/api\",\"openerPostMessageHost:import\":\"/entities/admin/api\",\"openerPostMessageHost:dataquality\":\"/entities/admin/api\",\"companyWorkingLocation:list\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:create\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:import\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:dataquality\":\"/entities/planning/planning-admin\",\"bookingVehicleConfiguration:list\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:create\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:import\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:dataquality\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:list\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:create\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:import\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:dataquality\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"jupObjectType:list\":\"/entities/surfy/global-security\",\"jupObjectType:create\":\"/entities/surfy/global-security\",\"jupObjectType:import\":\"/entities/surfy/global-security\",\"jupObjectType:dataquality\":\"/entities/surfy/global-security\",\"jupUiView:list\":\"/entities/surfy/global-security\",\"jupUiView:create\":\"/entities/surfy/global-security\",\"jupUiView:import\":\"/entities/surfy/global-security\",\"jupUiView:dataquality\":\"/entities/surfy/global-security\",\"jupRole:help\":\"/entities/surfy/global-security\",\"jupRole:azure-sync\":\"/entities/surfy/global-security\",\"jupRole:list\":\"/entities/surfy/global-security\",\"jupRole:create\":\"/entities/surfy/global-security\",\"jupRole:import\":\"/entities/surfy/global-security\",\"jupRole:dataquality\":\"/entities/surfy/global-security\",\"jupUiOption:list\":\"/entities/surfy/global-security\",\"jupUiOption:create\":\"/entities/surfy/global-security\",\"jupUiOption:import\":\"/entities/surfy/global-security\",\"jupUiOption:dataquality\":\"/entities/surfy/global-security\",\"jupUiOperation:list\":\"/entities/surfy/global-security\",\"jupUiOperation:create\":\"/entities/surfy/global-security\",\"jupUiOperation:import\":\"/entities/surfy/global-security\",\"jupUiOperation:dataquality\":\"/entities/surfy/global-security\",\"contentRole:list\":\"/entities/admin/security\",\"contentRole:create\":\"/entities/admin/security\",\"contentRole:import\":\"/entities/admin/security\",\"contentRole:dataquality\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:list\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:create\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:import\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:dataquality\":\"/entities/admin/security\",\"jupRoleToJupUiView:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:list\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:create\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:import\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:dataquality\":\"/entities/surfy/global-security\",\"contentRoleToBuilding:list\":\"/entities/admin/security\",\"contentRoleToBuilding:create\":\"/entities/admin/security\",\"contentRoleToBuilding:import\":\"/entities/admin/security\",\"contentRoleToBuilding:dataquality\":\"/entities/admin/security\",\"contentRoleToUserCompany:list\":\"/entities/admin/security\",\"contentRoleToUserCompany:create\":\"/entities/admin/security\",\"contentRoleToUserCompany:import\":\"/entities/admin/security\",\"contentRoleToUserCompany:dataquality\":\"/entities/admin/security\",\"contentRoleToFloor:list\":\"/entities/admin/security\",\"contentRoleToFloor:create\":\"/entities/admin/security\",\"contentRoleToFloor:import\":\"/entities/admin/security\",\"contentRoleToFloor:dataquality\":\"/entities/admin/security\",\"partnerApiCredential:list\":\"/entities/admin/api\",\"partnerApiCredential:create\":\"/entities/admin/api\",\"partnerApiCredential:import\":\"/entities/admin/api\",\"partnerApiCredential:dataquality\":\"/entities/admin/api\",\"apiUser:list\":\"/entities/admin/api\",\"apiUser:create\":\"/entities/admin/api\",\"apiUser:import\":\"/entities/admin/api\",\"apiUser:dataquality\":\"/entities/admin/api\",\"apiUserToJupRole:list\":\"/entities/admin/api\",\"apiUserToJupRole:create\":\"/entities/admin/api\",\"apiUserToJupRole:import\":\"/entities/admin/api\",\"apiUserToJupRole:dataquality\":\"/entities/admin/api\",\"apiUserToContentRole:list\":\"/entities/admin/api\",\"apiUserToContentRole:create\":\"/entities/admin/api\",\"apiUserToContentRole:import\":\"/entities/admin/api\",\"apiUserToContentRole:dataquality\":\"/entities/admin/api\",\"jupUiTenantOperation:list\":\"/entities/admin/security\",\"jupUiTenantOperation:create\":\"/entities/admin/security\",\"jupUiTenantOperation:import\":\"/entities/admin/security\",\"jupUiTenantOperation:dataquality\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:list\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:create\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:import\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:dataquality\":\"/entities/admin/security\",\"authentificationConnection:list\":\"/entities/surfy/global-security\",\"authentificationConnection:create\":\"/entities/surfy/global-security\",\"authentificationConnection:import\":\"/entities/surfy/global-security\",\"authentificationConnection:dataquality\":\"/entities/surfy/global-security\",\"userRegistrationTenantRule:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:dataquality\":\"/entities/admin/authentification\",\"partnerExportMappingConfiguration:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:dataquality\":\"/entities/admin/partner-export-mapping\",\"jupRoleToJupUiLayout:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:dataquality\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:list\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:create\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:import\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:dataquality\":\"/entities/surfy/global-security\",\"itemFact:list\":\"/entities/things/items-fact\",\"itemFact:create\":\"/entities/things/items-fact\",\"itemFact:import\":\"/entities/things/items-fact\",\"itemFact:dataquality\":\"/entities/things/items-fact\",\"featureFamily:list\":\"/entities/help\",\"featureFamily:create\":\"/entities/help\",\"featureFamily:import\":\"/entities/help\",\"featureFamily:dataquality\":\"/entities/help\",\"featureGroup:list\":\"/entities/help\",\"featureGroup:create\":\"/entities/help\",\"featureGroup:import\":\"/entities/help\",\"featureGroup:dataquality\":\"/entities/help\",\"feature:list\":\"/entities/help\",\"feature:create\":\"/entities/help\",\"feature:import\":\"/entities/help\",\"feature:dataquality\":\"/entities/help\"}")
+	viewPathMapping: /* @__PURE__ */ JSON.parse("{\"occupancyStatus:list\":\"/entities/surfy/global-admin\",\"occupancyStatus:create\":\"/entities/surfy/global-admin\",\"occupancyStatus:import\":\"/entities/surfy/global-admin\",\"occupancyStatus:dataquality\":\"/entities/surfy/global-admin\",\"user:list\":\"/entities/surfy/global-security\",\"user:create\":\"/entities/surfy/global-security\",\"user:import\":\"/entities/surfy/global-security\",\"user:dataquality\":\"/entities/surfy/global-security\",\"companyType:list\":\"/entities/surfy/global-admin\",\"companyType:create\":\"/entities/surfy/global-admin\",\"companyType:import\":\"/entities/surfy/global-admin\",\"companyType:dataquality\":\"/entities/surfy/global-admin\",\"company:cards\":\"/entities/admin\",\"company:people-info\":\"/entities/admin\",\"company:usage\":\"/entities/admin\",\"company:booking-reporting\":\"/entities/admin\",\"company:dataquality-index\":\"/entities/admin\",\"company:dq-reports-overview-duplicate-company\":\"/entities/admin\",\"company:list\":\"/entities/admin\",\"company:create\":\"/entities/admin\",\"company:import\":\"/entities/admin\",\"company:dataquality\":\"/entities/admin\",\"company:dq-fix-inventory\":\"/entities/admin/dataquality\",\"company:dq-shapes-position\":\"/entities/admin/dataquality\",\"campus:cards\":\"/entities/spaces\",\"campus:list\":\"/entities/spaces\",\"campus:create\":\"/entities/spaces\",\"campus:import\":\"/entities/spaces\",\"campus:dataquality\":\"/entities/spaces\",\"roomConnectorType:list\":\"/entities/admin/connectors\",\"roomConnectorType:create\":\"/entities/admin/connectors\",\"roomConnectorType:import\":\"/entities/admin/connectors\",\"roomConnectorType:dataquality\":\"/entities/admin/connectors\",\"roomConnector:list\":\"/entities/admin/connectors\",\"roomConnector:create\":\"/entities/admin/connectors\",\"roomConnector:import\":\"/entities/admin/connectors\",\"roomConnector:dataquality\":\"/entities/admin/connectors\",\"userCompany:list\":\"/entities/admin/security\",\"userCompany:create\":\"/entities/admin/security\",\"userCompany:import\":\"/entities/admin/security\",\"userCompany:dataquality\":\"/entities/admin/security\",\"personGender:list\":\"/entities/surfy\",\"personGender:create\":\"/entities/surfy\",\"personGender:import\":\"/entities/surfy\",\"personGender:dataquality\":\"/entities/surfy\",\"personCompany:list\":\"/entities/admin/person-companies\",\"personCompany:create\":\"/entities/admin/person-companies\",\"personCompany:import\":\"/entities/admin/person-companies\",\"personCompany:dataquality\":\"/entities/admin/person-companies\",\"jupUiLayout:list\":\"/entities/surfy/global-security\",\"jupUiLayout:create\":\"/entities/surfy/global-security\",\"jupUiLayout:import\":\"/entities/surfy/global-security\",\"jupUiLayout:dataquality\":\"/entities/surfy/global-security\",\"buildingType:list\":\"/entities/admin/types\",\"buildingType:create\":\"/entities/admin/types\",\"buildingType:import\":\"/entities/admin/types\",\"buildingType:dataquality\":\"/entities/admin/types\",\"organization:hierarchy\":\"/entities/organizations\",\"organization:list\":\"/entities/organizations\",\"organization:create\":\"/entities/organizations\",\"organization:import\":\"/entities/organizations\",\"organization:dataquality\":\"/entities/organizations\",\"organization:dq-organization-hierarchy\":\"/entities/organizations/dataquality\",\"organization:dq-level1-not-used\":\"/entities/organizations/dataquality\",\"itemTypeFamily:list\":\"/entities/things/things-type\",\"itemTypeFamily:create\":\"/entities/things/things-type\",\"itemTypeFamily:import\":\"/entities/things/things-type\",\"itemTypeFamily:dataquality\":\"/entities/things/things-type\",\"manufacturer:list\":\"/entities/things/things-type\",\"manufacturer:create\":\"/entities/things/things-type\",\"manufacturer:import\":\"/entities/things/things-type\",\"manufacturer:dataquality\":\"/entities/things/things-type\",\"object3dModel:list\":\"/entities/surfy/global-admin\",\"object3dModel:create\":\"/entities/surfy/global-admin\",\"object3dModel:import\":\"/entities/surfy/global-admin\",\"object3dModel:dataquality\":\"/entities/surfy/global-admin\",\"itemType:list\":\"/entities/things/things-type\",\"itemType:create\":\"/entities/things/things-type\",\"itemType:import\":\"/entities/things/things-type\",\"itemType:dataquality\":\"/entities/things/things-type\",\"itemType:dq-not-used\":\"/entities/things/things-type/dataquality\",\"itemType:dq-uniq-name\":\"/entities/things/things-type/dataquality\",\"itemType:dq-family-tenant-consistency\":\"/entities/things/things-type/dataquality\",\"building:cards\":\"/entities/spaces\",\"building:pictures\":\"/entities/spaces\",\"building:3d-cards\":\"/entities/spaces\",\"building:gmap\":\"/entities/spaces\",\"building:3d-map\":\"/entities/spaces\",\"building:assets\":\"/entities/spaces\",\"building:list\":\"/entities/spaces\",\"building:create\":\"/entities/spaces\",\"building:import\":\"/entities/spaces\",\"building:dataquality\":\"/entities/spaces\",\"building:dq-building-3d-eligibility\":\"/entities/spaces/dataquality\",\"mapScale:list\":\"/entities/spaces\",\"mapScale:create\":\"/entities/spaces\",\"mapScale:import\":\"/entities/spaces\",\"mapScale:dataquality\":\"/entities/spaces\",\"mapScale:dq-not-used\":\"/entities/spaces/dataquality\",\"mapScale:dq-uniq-name\":\"/entities/spaces/dataquality\",\"structure:list\":\"/entities/spaces\",\"structure:create\":\"/entities/spaces\",\"structure:import\":\"/entities/spaces\",\"structure:dataquality\":\"/entities/spaces\",\"structure:dq-structure-transform-without-anchor\":\"/entities/spaces/dataquality\",\"structurePoint:list\":\"/entities/spaces/space-points\",\"structurePoint:create\":\"/entities/spaces/space-points\",\"structurePoint:import\":\"/entities/spaces/space-points\",\"structurePoint:dataquality\":\"/entities/spaces/space-points\",\"floor:list\":\"/entities/spaces\",\"floor:create\":\"/entities/spaces\",\"floor:import\":\"/entities/spaces\",\"floor:dataquality\":\"/entities/spaces\",\"distributionCostType:list\":\"/entities/admin/types\",\"distributionCostType:create\":\"/entities/admin/types\",\"distributionCostType:import\":\"/entities/admin/types\",\"distributionCostType:dataquality\":\"/entities/admin/types\",\"roomTypeGroup:list\":\"/entities/admin/types/room-types\",\"roomTypeGroup:create\":\"/entities/admin/types/room-types\",\"roomTypeGroup:import\":\"/entities/admin/types/room-types\",\"roomTypeGroup:dataquality\":\"/entities/admin/types/room-types\",\"roomType:list\":\"/entities/admin/types/room-types\",\"roomType:create\":\"/entities/admin/types/room-types\",\"roomType:import\":\"/entities/admin/types/room-types\",\"roomType:dataquality\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:list\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:create\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:import\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:dataquality\":\"/entities/admin/types/room-types\",\"roomTypeGroupFloor:list\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:create\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:import\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:list\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:create\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:import\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"costCenter:list\":\"/entities/admin/types\",\"costCenter:create\":\"/entities/admin/types\",\"costCenter:import\":\"/entities/admin/types\",\"costCenter:dataquality\":\"/entities/admin/types\",\"costCenterBuilding:list\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:create\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:import\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:list\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:create\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:import\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:dataquality\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"room:meeting-rooms\":\"/entities/spaces\",\"room:list\":\"/entities/spaces\",\"room:create\":\"/entities/spaces\",\"room:import\":\"/entities/spaces\",\"room:dataquality\":\"/entities/spaces\",\"room:dq-organization-to-room\":\"/entities/spaces/dataquality\",\"room:dq-uniq-name\":\"/entities/spaces/dataquality\",\"room:dq-no-point\":\"/entities/spaces/dataquality\",\"room:dq-capacity-equals-seats-count\":\"/entities/spaces/dataquality\",\"room:dq-capacity-gt-0\":\"/entities/spaces/dataquality\",\"roomPoint:list\":\"/entities/spaces/space-points\",\"roomPoint:create\":\"/entities/spaces/space-points\",\"roomPoint:import\":\"/entities/spaces/space-points\",\"roomPoint:dataquality\":\"/entities/spaces/space-points\",\"roomPoint:dq-uniq-position\":\"/entities/spaces/space-points/dataquality\",\"roomPoint:dq-not-used\":\"/entities/spaces/space-points/dataquality\",\"roomPointRoom:list\":\"/entities/spaces/space-points\",\"roomPointRoom:create\":\"/entities/spaces/space-points\",\"roomPointRoom:import\":\"/entities/spaces/space-points\",\"roomPointRoom:dataquality\":\"/entities/spaces/space-points\",\"roomPointSegmentType:list\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:create\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:import\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:dataquality\":\"/entities/surfy/global-admin\",\"roomPointSegment:list\":\"/entities/spaces\",\"roomPointSegment:create\":\"/entities/spaces\",\"roomPointSegment:import\":\"/entities/spaces\",\"roomPointSegment:dataquality\":\"/entities/spaces\",\"roomPointSegment:dq-not-uniq\":\"/entities/spaces/dataquality\",\"roomPointSegment:dq-point-not-on-same-floor\":\"/entities/spaces/dataquality\",\"itemTypePoint:list\":\"/entities/things/things-type\",\"itemTypePoint:create\":\"/entities/things/things-type\",\"itemTypePoint:import\":\"/entities/things/things-type\",\"itemTypePoint:dataquality\":\"/entities/things/things-type\",\"dimensionType:list\":\"/entities/admin/dimensions\",\"dimensionType:create\":\"/entities/admin/dimensions\",\"dimensionType:import\":\"/entities/admin/dimensions\",\"dimensionType:dataquality\":\"/entities/admin/dimensions\",\"dimension:list\":\"/entities/admin/dimensions\",\"dimension:create\":\"/entities/admin/dimensions\",\"dimension:import\":\"/entities/admin/dimensions\",\"dimension:dataquality\":\"/entities/admin/dimensions\",\"dimension:dq-missing-color\":\"/entities/admin/dimensions/dataquality\",\"dimensionRoom:list\":\"/entities/admin/dimensions\",\"dimensionRoom:create\":\"/entities/admin/dimensions\",\"dimensionRoom:import\":\"/entities/admin/dimensions\",\"dimensionRoom:dataquality\":\"/entities/admin/dimensions\",\"dimensionRoom:dq-wrong-dimension-type\":\"/entities/admin/dimensions/dataquality\",\"dimensionFloor:list\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:create\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:import\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:dataquality\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:list\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:create\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:import\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"factType:list\":\"/entities/spaces/building-facts\",\"factType:create\":\"/entities/spaces/building-facts\",\"factType:import\":\"/entities/spaces/building-facts\",\"factType:dataquality\":\"/entities/spaces/building-facts\",\"fact:list\":\"/entities/spaces/building-facts\",\"fact:create\":\"/entities/spaces/building-facts\",\"fact:import\":\"/entities/spaces/building-facts\",\"fact:dataquality\":\"/entities/spaces/building-facts\",\"personState:list\":\"/entities/human/person-type\",\"personState:create\":\"/entities/human/person-type\",\"personState:import\":\"/entities/human/person-type\",\"personState:dataquality\":\"/entities/human/person-type\",\"personSecurityProfile:list\":\"/entities/human/person-type\",\"personSecurityProfile:create\":\"/entities/human/person-type\",\"personSecurityProfile:import\":\"/entities/human/person-type\",\"personSecurityProfile:dataquality\":\"/entities/human/person-type\",\"personType:list\":\"/entities/surfy/global-admin\",\"personType:create\":\"/entities/surfy/global-admin\",\"personType:import\":\"/entities/surfy/global-admin\",\"personType:dataquality\":\"/entities/surfy/global-admin\",\"person:list\":\"/entities/human\",\"person:create\":\"/entities/human\",\"person:import\":\"/entities/human\",\"person:dataquality\":\"/entities/human\",\"person:dq-only-associated-to-building\":\"/entities/human/dataquality\",\"person:dq-near-end-date\":\"/entities/human/dataquality\",\"person:dq-no-affectations\":\"/entities/human/dataquality\",\"person:dq-person-duplicate\":\"/entities/human/dataquality\",\"person:dq-not-affectable-end-date-expired\":\"/entities/human/dataquality\",\"personToPersonType:list\":\"/entities/human/person-relations\",\"personToPersonType:create\":\"/entities/human/person-relations\",\"personToPersonType:import\":\"/entities/human/person-relations\",\"personToPersonType:dataquality\":\"/entities/human/person-relations\",\"personToPerson:list\":\"/entities/human/person-relations\",\"personToPerson:create\":\"/entities/human/person-relations\",\"personToPerson:import\":\"/entities/human/person-relations\",\"personToPerson:dataquality\":\"/entities/human/person-relations\",\"vehicleType:list\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:create\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:import\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:dataquality\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:list\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:create\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:import\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:dataquality\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicle:list\":\"/entities/human/person-vehicles\",\"vehicle:create\":\"/entities/human/person-vehicles\",\"vehicle:import\":\"/entities/human/person-vehicles\",\"vehicle:dataquality\":\"/entities/human/person-vehicles\",\"personToVehicle:list\":\"/entities/human/person-vehicles\",\"personToVehicle:create\":\"/entities/human/person-vehicles\",\"personToVehicle:import\":\"/entities/human/person-vehicles\",\"personToVehicle:dataquality\":\"/entities/human/person-vehicles\",\"roomAffectation:room-mouvement-matrix-import\":\"/entities/affectations\",\"roomAffectation:list\":\"/entities/affectations\",\"roomAffectation:create\":\"/entities/affectations\",\"roomAffectation:import\":\"/entities/affectations\",\"roomAffectation:dataquality\":\"/entities/affectations\",\"workplaceType:list\":\"/entities/things/things-type\",\"workplaceType:create\":\"/entities/things/things-type\",\"workplaceType:import\":\"/entities/things/things-type\",\"workplaceType:dataquality\":\"/entities/things/things-type\",\"workplaceType:dq-not-used\":\"/entities/things/things-type/dataquality\",\"workplaceType:dq-workplace-type-item-type-position-z\":\"/entities/things/things-type/dataquality\",\"workplaceUsageType:list\":\"/entities/things/things-type\",\"workplaceUsageType:create\":\"/entities/things/things-type\",\"workplaceUsageType:import\":\"/entities/things/things-type\",\"workplaceUsageType:dataquality\":\"/entities/things/things-type\",\"workplaceTypeItemType:list\":\"/entities/things/things-type\",\"workplaceTypeItemType:create\":\"/entities/things/things-type\",\"workplaceTypeItemType:import\":\"/entities/things/things-type\",\"workplaceTypeItemType:dataquality\":\"/entities/things/things-type\",\"workplace:list\":\"/entities/things\",\"workplace:create\":\"/entities/things\",\"workplace:import\":\"/entities/things\",\"workplace:dataquality\":\"/entities/things\",\"workplace:dq-workplace-transit-with-affectations\":\"/entities/things/dataquality\",\"item:list\":\"/entities/things\",\"item:create\":\"/entities/things\",\"item:import\":\"/entities/things\",\"item:dataquality\":\"/entities/things\",\"item:dq-item-not-in-workplace-room\":\"/entities/things/dataquality\",\"workplaceAffectation:workplace-mouvement-matrix-import\":\"/entities/affectations\",\"workplaceAffectation:list\":\"/entities/affectations\",\"workplaceAffectation:create\":\"/entities/affectations\",\"workplaceAffectation:import\":\"/entities/affectations\",\"workplaceAffectation:dataquality\":\"/entities/affectations\",\"workplaceAffectation:dq-workplace-affectation-latest\":\"/entities/affectations/dataquality\",\"organizationFloor:list\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:create\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:import\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:dataquality\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:list\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:create\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:import\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"roomTypeFloor:list\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:create\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:import\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:list\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:create\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:import\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"itemToPerson:list\":\"/entities/affectations\",\"itemToPerson:create\":\"/entities/affectations\",\"itemToPerson:import\":\"/entities/affectations\",\"itemToPerson:dataquality\":\"/entities/affectations\",\"personToBuilding:list\":\"/entities/affectations\",\"personToBuilding:create\":\"/entities/affectations\",\"personToBuilding:import\":\"/entities/affectations\",\"personToBuilding:dataquality\":\"/entities/affectations\",\"dimensionToPerson:list\":\"/entities/affectations\",\"dimensionToPerson:create\":\"/entities/affectations\",\"dimensionToPerson:import\":\"/entities/affectations\",\"dimensionToPerson:dataquality\":\"/entities/affectations\",\"dimensionToPerson:dq-dimension-to-person-latest\":\"/entities/affectations/dataquality\",\"dimensionTypeToBuilding:list\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:create\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:import\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:dataquality\":\"/entities/admin/dimensions\",\"workingLocation:list\":\"/entities/surfy/global-admin\",\"workingLocation:create\":\"/entities/surfy/global-admin\",\"workingLocation:import\":\"/entities/surfy/global-admin\",\"workingLocation:dataquality\":\"/entities/surfy/global-admin\",\"personWorkingLocation:my-planning\":\"/entities/planning\",\"personWorkingLocation:obo-planning\":\"/entities/planning\",\"personWorkingLocation:guest-planning\":\"/entities/planning\",\"personWorkingLocation:booking-maps\":\"/entities/planning\",\"personWorkingLocation:pwl-dimension\":\"/entities/planning\",\"personWorkingLocation:list\":\"/entities/planning\",\"personWorkingLocation:create\":\"/entities/planning\",\"personWorkingLocation:import\":\"/entities/planning\",\"personWorkingLocation:dataquality\":\"/entities/planning\",\"personToWorkplaceBooking:dashboard-index\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:list\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:create\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:import\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:dataquality\":\"/entities/planning/bookings\",\"personToRoomBooking:list\":\"/entities/planning/bookings\",\"personToRoomBooking:create\":\"/entities/planning/bookings\",\"personToRoomBooking:import\":\"/entities/planning/bookings\",\"personToRoomBooking:dataquality\":\"/entities/planning/bookings\",\"personToDimensionBooking:list\":\"/entities/planning/bookings\",\"personToDimensionBooking:create\":\"/entities/planning/bookings\",\"personToDimensionBooking:import\":\"/entities/planning/bookings\",\"personToDimensionBooking:dataquality\":\"/entities/planning/bookings\",\"personCompanyMission:list\":\"/entities/admin/person-companies\",\"personCompanyMission:create\":\"/entities/admin/person-companies\",\"personCompanyMission:import\":\"/entities/admin/person-companies\",\"personCompanyMission:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToItemType:list\":\"/entities/admin/person-companies\",\"personCompanyToItemType:create\":\"/entities/admin/person-companies\",\"personCompanyToItemType:import\":\"/entities/admin/person-companies\",\"personCompanyToItemType:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:list\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:create\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:import\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToItem:list\":\"/entities/admin/person-companies\",\"personCompanyToItem:create\":\"/entities/admin/person-companies\",\"personCompanyToItem:import\":\"/entities/admin/person-companies\",\"personCompanyToItem:dataquality\":\"/entities/admin/person-companies\",\"legend:list\":\"/entities/admin\",\"legend:create\":\"/entities/admin\",\"legend:import\":\"/entities/admin\",\"legend:dataquality\":\"/entities/admin\",\"openerPostMessageHost:list\":\"/entities/admin/api\",\"openerPostMessageHost:create\":\"/entities/admin/api\",\"openerPostMessageHost:import\":\"/entities/admin/api\",\"openerPostMessageHost:dataquality\":\"/entities/admin/api\",\"companyWorkingLocation:list\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:create\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:import\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:dataquality\":\"/entities/planning/planning-admin\",\"bookingVehicleConfiguration:list\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:create\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:import\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:dataquality\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:list\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:create\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:import\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:dataquality\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"jupObjectType:list\":\"/entities/surfy/global-security\",\"jupObjectType:create\":\"/entities/surfy/global-security\",\"jupObjectType:import\":\"/entities/surfy/global-security\",\"jupObjectType:dataquality\":\"/entities/surfy/global-security\",\"jupUiView:list\":\"/entities/surfy/global-security\",\"jupUiView:create\":\"/entities/surfy/global-security\",\"jupUiView:import\":\"/entities/surfy/global-security\",\"jupUiView:dataquality\":\"/entities/surfy/global-security\",\"jupRole:help\":\"/entities/surfy/global-security\",\"jupRole:azure-sync\":\"/entities/surfy/global-security\",\"jupRole:list\":\"/entities/surfy/global-security\",\"jupRole:create\":\"/entities/surfy/global-security\",\"jupRole:import\":\"/entities/surfy/global-security\",\"jupRole:dataquality\":\"/entities/surfy/global-security\",\"jupUiOption:list\":\"/entities/surfy/global-security\",\"jupUiOption:create\":\"/entities/surfy/global-security\",\"jupUiOption:import\":\"/entities/surfy/global-security\",\"jupUiOption:dataquality\":\"/entities/surfy/global-security\",\"jupUiOperation:list\":\"/entities/surfy/global-security\",\"jupUiOperation:create\":\"/entities/surfy/global-security\",\"jupUiOperation:import\":\"/entities/surfy/global-security\",\"jupUiOperation:dataquality\":\"/entities/surfy/global-security\",\"contentRole:list\":\"/entities/admin/security\",\"contentRole:create\":\"/entities/admin/security\",\"contentRole:import\":\"/entities/admin/security\",\"contentRole:dataquality\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:list\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:create\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:import\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:dataquality\":\"/entities/admin/security\",\"jupRoleToJupUiView:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:list\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:create\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:import\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:dataquality\":\"/entities/surfy/global-security\",\"contentRoleToBuilding:list\":\"/entities/admin/security\",\"contentRoleToBuilding:create\":\"/entities/admin/security\",\"contentRoleToBuilding:import\":\"/entities/admin/security\",\"contentRoleToBuilding:dataquality\":\"/entities/admin/security\",\"contentRoleToUserCompany:list\":\"/entities/admin/security\",\"contentRoleToUserCompany:create\":\"/entities/admin/security\",\"contentRoleToUserCompany:import\":\"/entities/admin/security\",\"contentRoleToUserCompany:dataquality\":\"/entities/admin/security\",\"contentRoleToFloor:list\":\"/entities/admin/security\",\"contentRoleToFloor:create\":\"/entities/admin/security\",\"contentRoleToFloor:import\":\"/entities/admin/security\",\"contentRoleToFloor:dataquality\":\"/entities/admin/security\",\"partnerApiCredential:list\":\"/entities/admin/api\",\"partnerApiCredential:create\":\"/entities/admin/api\",\"partnerApiCredential:import\":\"/entities/admin/api\",\"partnerApiCredential:dataquality\":\"/entities/admin/api\",\"apiUser:list\":\"/entities/admin/api\",\"apiUser:create\":\"/entities/admin/api\",\"apiUser:import\":\"/entities/admin/api\",\"apiUser:dataquality\":\"/entities/admin/api\",\"apiUserToJupRole:list\":\"/entities/admin/api\",\"apiUserToJupRole:create\":\"/entities/admin/api\",\"apiUserToJupRole:import\":\"/entities/admin/api\",\"apiUserToJupRole:dataquality\":\"/entities/admin/api\",\"apiUserToContentRole:list\":\"/entities/admin/api\",\"apiUserToContentRole:create\":\"/entities/admin/api\",\"apiUserToContentRole:import\":\"/entities/admin/api\",\"apiUserToContentRole:dataquality\":\"/entities/admin/api\",\"jupUiTenantOperation:list\":\"/entities/admin/security\",\"jupUiTenantOperation:create\":\"/entities/admin/security\",\"jupUiTenantOperation:import\":\"/entities/admin/security\",\"jupUiTenantOperation:dataquality\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:list\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:create\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:import\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:dataquality\":\"/entities/admin/security\",\"authentificationConnection:list\":\"/entities/surfy/global-security\",\"authentificationConnection:create\":\"/entities/surfy/global-security\",\"authentificationConnection:import\":\"/entities/surfy/global-security\",\"authentificationConnection:dataquality\":\"/entities/surfy/global-security\",\"userRegistrationTenantRule:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:dataquality\":\"/entities/admin/authentification\",\"partnerExportMappingConfiguration:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:dataquality\":\"/entities/admin/partner-export-mapping\",\"jupRoleToJupUiLayout:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:dataquality\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:list\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:create\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:import\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:dataquality\":\"/entities/surfy/global-security\",\"itemFact:list\":\"/entities/things/items-fact\",\"itemFact:create\":\"/entities/things/items-fact\",\"itemFact:import\":\"/entities/things/items-fact\",\"itemFact:dataquality\":\"/entities/things/items-fact\",\"featureFamily:list\":\"/entities/help\",\"featureFamily:create\":\"/entities/help\",\"featureFamily:import\":\"/entities/help\",\"featureFamily:dataquality\":\"/entities/help\",\"featureGroup:list\":\"/entities/help\",\"featureGroup:create\":\"/entities/help\",\"featureGroup:import\":\"/entities/help\",\"featureGroup:dataquality\":\"/entities/help\",\"feature:list\":\"/entities/help\",\"feature:create\":\"/entities/help\",\"feature:import\":\"/entities/help\",\"feature:dataquality\":\"/entities/help\"}")
 };
 //#endregion
 //#region src/surfy-help/metaModel/metamodel.json.helper.ts
@@ -70763,7 +70814,7 @@ function SurfyHelpStandaloneViewMenuBreadcrumb(props) {
 var version = {
 	"major": 3,
 	"minor": 4,
-	"build": 199
+	"build": 207
 };
 //#endregion
 //#region src/back/Tracking/version.ts
@@ -71243,6 +71294,7 @@ var jsonTranslationsFiles = {
 		"DeskBookingConfirmationButton.bookingConfirmed": "La réservation a été confirmée",
 		"DeskBookingConfirmationButton.confirm": "Confirmer votre présence",
 		"DeskBookingConfirmationButton.confirmHelp": "Confirmez que vous êtes présent à votre poste de travail",
+		"DeskBookingConfirmationButton.confirmHelpWithRange": "Confirmez que vous êtes présent à votre poste de travail. Vous pouvez confirmer entre %{confirmationRange}.",
 		"DeskBookingsSection.noBookingsFound": "Aucune réservation à venir trouvée.",
 		"DimensionChip.anotherPersonIsAssignedViaDimension": "%{personFullName} est affecté sur %{dimensionTypeName} %{dimensionName}",
 		"DimensionChip.youAreAssignedViaDimension": "Vous êtes affecté sur %{dimensionTypeName} %{dimensionName}",
@@ -71663,6 +71715,16 @@ var jsonTranslationsFiles = {
 		"InlinePositionZField.positionZLabel": "Position Z (cm)",
 		"ItemTypeAvatarSingleView.copy": "Copier les points dans le presse-papier",
 		"ItemTypeAvatarSingleView.debug.label": "Activer le mode avancé pour la 3d",
+		"ItemTypeDataQualityFamilyTenantConsistency.buttonFixWithUnclassifiedHelp": "Assigner les types d'objet selectionnes a la famille UNCLASSIFIED du tenant",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeFamilyId": "Id famille",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeFamilyName": "Famille",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeFamilyTenant": "Tenant famille",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeId": "Id type d'objet",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeName": "Type d'objet",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeTenant": "Tenant type d'objet",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerReason": "Raison",
+		"ItemTypeDataQualityFamilyTenantConsistency.reasonMissingFamilyOrTenant": "Les informations de famille du type d'objet ou de tenant sont manquantes.",
+		"ItemTypeDataQualityFamilyTenantConsistency.reasonTenantMismatch": "La famille du type d'objet appartient a un tenant different du type d'objet.",
 		"ItemTypeDataQualityNotUsed.columns.name": "Nom du type d'objet",
 		"ItemTypeDataQualityNotUsed.columns.shape": "Forme",
 		"ItemTypeDataQualityNotUsed.columns.workplaceTypeCount": "Nombre de type de poste de travail",
@@ -71940,14 +72002,13 @@ var jsonTranslationsFiles = {
 		"OrganizationTabsFilter.tabs.hierarchy": "Hiérarchie",
 		"OrganizationTabsFilter.tabs.level1": "Services",
 		"OrganizationTabsFilter.tabs.topLevel": "Directions",
-		"OtherThanWorkplaceBooking.locationOffice": "Bureau",
-		"OtherThanWorkplaceBooking.locationRemote": "Télétravail",
 		"PWLSelectDimensionCard.selectDimensionCard.title": "Sélectionnez une dimension",
 		"ParkingBookingIcon.tooltip": "Cette personne peut réserver des places de parking dans ce bâtiment",
 		"ParkingOptions.noParkingBookedInBuilding": "Aucun parking est réservé",
 		"ParkingOptionsAccordion.title": "Réserver un parking",
 		"ParkingRoomTypeCode.values.PARKING-CAR": "Parking voiture",
 		"ParkingRoomTypeCode.values.PARKING-ELECTRIC-CAR": "Parking voiture electrique",
+		"ParkingRoomTypeCode.values.PARKING-MOTO": "Parking moto",
 		"ParkingRoomTypeCode.values.PARKING-PRM": "Parking PMR",
 		"PartnerApiCredentialsSelector.pleaseSelect": "Veuillez sélectionner",
 		"PartnerEntityCreateTab.button.help": "Créer dans %{partnerName}",
@@ -72017,6 +72078,7 @@ var jsonTranslationsFiles = {
 		"PersonSecurityProfileWorkplaceFilter.title": "Les profils de sécurité des personnes affectées aux postes de travail",
 		"PersonSecurityProfileWorkplaceInfo.nodeInfo.peopleCount": "Il y a %{count} personne(s) avec le profil de sécurité %{name} affecté aux postes de travail",
 		"PersonSecurityProfileWorkplaceInfo.nodeInfo.workplaceCount": "Il y a %{count} poste(s) de travail avec au moins une personne avec profil de sécurité %{name}",
+		"PersonToBuildingCountIcon.notCountedTooltip": "Cette personne n'est pas comptabilité dans le bâtiment",
 		"PersonTooltipFullName.guestTag": "(Invité)",
 		"PersonWorkingLocationByDimensionTable.errors.noBuildingSelection": "Aucune sélection de bâtiment ou de zone.",
 		"PersonWorkingLocationByDimensionTable.errors.noDimensionSelection": "Aucune dimension sélectionnée.",
@@ -72285,6 +72347,7 @@ var jsonTranslationsFiles = {
 		"UnlinkMapScaleAsyncButton.label": "Dissocier l'échelle",
 		"UserNotPartOfCompanyAdminCanCreate.createButton": "Créer l'association",
 		"UserNotPartOfCompanyAdminCanCreate.message": "Vous n'êtes pas associé à l'entreprise %{companyId}.",
+		"VehicleInfoDisplay.parkingAllowedNoVehicle": "Vous pouvez réserver un parking dans ce bâtiment, mais aucun véhicule n'est enregistré sur votre profil.",
 		"VehicleInfoDisplay.parkingAvailable": "Vous pouvez réserver un parking car vous avez au moins un véhicule",
 		"WeekNavigation.thisWeek": "Cette semaine",
 		"WorkCanvas.Options.AddItemTypePointOption.help.disable": "Arrêter la création de sommets",
@@ -72491,8 +72554,10 @@ var jsonTranslationsFiles = {
 		"WorkCanvasLoadingIcon.title": "Chargement du plan",
 		"WorkCanvasShortcutTooltipHelp.help": "Raccourci clavier : <b>%{shortcut}</b>",
 		"WorkCanvasToggleOptionHelp.shortcut": "Raccourci clavier : <b>%{shortcut}</b>",
-		"WorkingLocationToggle.locationOffice": "Bureau",
-		"WorkingLocationToggle.locationRemote": "Télétravail",
+		"WorkingLocationLabelFromCode.locationOffice": "Bureau",
+		"WorkingLocationLabelFromCode.locationRemote": "Télétravail",
+		"WorkingLocationLabelHelp.helpOffice": "Déclarez votre présence au bureau et réservez votre espace",
+		"WorkingLocationLabelHelp.helpRemote": "Déclarez-vous en télétravail, vous ne réservez pas d'espace",
 		"WorkpaceBookingAverageByWeekDay.excludeWeekends": "Exclure les week-ends",
 		"WorkpaceBookingAverageByWeekDay.labels.bar": "Nombre de réservations",
 		"WorkpaceBookingAverageByWeekDay.labels.line": "Moyenne par semaine",
@@ -72902,6 +72967,8 @@ var jsonTranslationsFiles = {
 		"models.Building.properties.sharedWorkplacesCount.label": "Nombre de postes de travail partagés",
 		"models.Building.properties.sharedWorkplacesRatio.description": "Taux de postes de travail partagés par au moins 2 personnes par rapport à l'ensemble des postes de travail du bâtiment",
 		"models.Building.properties.sharedWorkplacesRatio.label": "Taux de postes de travail partagés",
+		"models.Building.properties.surface.description": "La surface déclarée du bâtiment saisie manuellement ; cette valeur n'est pas liée aux espaces modélisés dans Surfy",
+		"models.Building.properties.surface.label": "Surface déclarée",
 		"models.Building.properties.transitWorkplacesCount.description": "Nombre de postes de travail de passage, ces postes ne sont pas comptabilisés dans les postes libres et ne sont pas en flex",
 		"models.Building.properties.transitWorkplacesCount.label": "Nombre de postes de travail de passage",
 		"models.Building.properties.userCompanyOwner.description": "L'utilisateur propriétaire du bâtiment voit toujours le bâtiment même en présence de rôle de contenu, en cas de création de scénario, l'utilisateur qui a créé le scénario devient le propriétaire, le propriétaire peut être changé par la suite",
@@ -73030,7 +73097,7 @@ var jsonTranslationsFiles = {
 		"models.Company.properties.trackUserActivity.label": "Autoriser Surfy à suivre l'activité des utilisateurs pour améliorer l'expérience utilisateur",
 		"models.Company.properties.workingDaysCount.description": "Le nombre de jours de travail par semaine peut être 5 pour les jours ouvrés, 6 incluant le samedi et 7 incluant le dimanche",
 		"models.Company.properties.workingDaysCount.label": "Nombre de jours de travail par semaine",
-		"models.Company.properties.workplaceBookingConfirmationRange.description": "Plage horaire pendant laquelle les utilisateurs peuvent confirmer leurs réservations de postes de travail. Format: HH:MM-HH:MM (ex: 06:00-10:30). Ne rien mettre dans ce champ pour ne pas activer la confirmation de réservation de poste de travail",
+		"models.Company.properties.workplaceBookingConfirmationRange.description": "Plage horaire pendant laquelle les utilisateurs peuvent confirmer leurs réservations de postes de travail. Format obligatoire: HH:MM-HH:MM@Timezone IANA (ex: 06:00-10:30@Europe/Paris). Ne rien mettre dans ce champ pour ne pas activer la confirmation de réservation de poste de travail. Timezone IANA: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
 		"models.Company.properties.workplaceBookingConfirmationRange.label": "Plage de confirmation de réservation de poste de travail",
 		"models.Company.reports.export-all-duplicate.fileName": "duplication",
 		"models.Company.reports.export-all-duplicate.help": "Sauvegarder les données de l'entreprise pour faire une copie de la plateforme",
@@ -73072,6 +73139,8 @@ var jsonTranslationsFiles = {
 		"models.CompanyWorkingLocation.determinants.undefined": "des emplacements de travail des entreprises",
 		"models.CompanyWorkingLocation.plural": "Emplacements de travail de l'entreprise",
 		"models.CompanyWorkingLocation.properties.id.label": "Identifiant de l'emplacement de travail de l'entreprise",
+		"models.CompanyWorkingLocation.properties.label.description": "Libellé affiché pour cet emplacement de travail dans l'entreprise, à la place du libellé par défaut",
+		"models.CompanyWorkingLocation.properties.label.label": "Libellé personnalisé",
 		"models.CompanyWorkingLocation.singular": "Emplacement de travail de l'entreprise",
 		"models.ContentRole.description": "Un rôle de contenu définit les permissions d'accès aux différentes données de la plateforme pour les utilisateurs",
 		"models.ContentRole.determinant.defined": "le rôle de contenu",
@@ -73405,6 +73474,8 @@ var jsonTranslationsFiles = {
 		"models.ItemType.singular": "type d'objet",
 		"models.ItemType.views.avatar.help": "Voir la forme de %{name}",
 		"models.ItemType.views.avatar.label": "Forme",
+		"models.ItemType.views.dq-family-tenant-consistency.help": "Lister les types d'objet liés à une famille incohérente ; permet de les réassigner à la famille UNCLASSIFIED",
+		"models.ItemType.views.dq-family-tenant-consistency.label": "Famille incohérente",
 		"models.ItemType.views.dq-not-used.help": "Lister tous les types d'objets non utilisés via des objets ou via des types de poste de travail non utilisés",
 		"models.ItemType.views.dq-not-used.label": "Non utilisés",
 		"models.ItemType.views.dq-uniq-name.help": "Lister les types d'objet ayant le même nom au sein d'une même entreprise ; permet de les renommer en ajoutant (1), (2), (3)",
@@ -73765,6 +73836,8 @@ var jsonTranslationsFiles = {
 		"models.Person.properties.info.label": "Commentaire",
 		"models.Person.properties.lastname.description": "Le nom de famille de la personne",
 		"models.Person.properties.lastname.label": "Nom de famille",
+		"models.Person.properties.mainLocation.description": "L'établissement de référence de la personne sous forme de texte, souvent importé depuis le SI RH",
+		"models.Person.properties.mainLocation.label": "Établissement de référence",
 		"models.Person.properties.monitorReference.description": "La référence de l'écran informatique associé à cette personne",
 		"models.Person.properties.monitorReference.label": "Référence écran",
 		"models.Person.properties.notAffectable.description": "La personne ne peut pas être affectée à un poste de travail, un espace, un bâtiment ou un calque d'affectation",
@@ -73971,6 +74044,8 @@ var jsonTranslationsFiles = {
 		"models.PersonToWorkplaceBooking.determinants.defined": "les réservations au poste de travail des personnes",
 		"models.PersonToWorkplaceBooking.determinants.undefined": "des réservations au poste de travail des personnes",
 		"models.PersonToWorkplaceBooking.plural": "Réservations au poste de travail des personnes",
+		"models.PersonToWorkplaceBooking.properties.emailConfirmationWarningNotificationSentAt.description": "La date et l'heure d'envoi de l'avertissement e-mail avant annulation de la réservation non confirmée",
+		"models.PersonToWorkplaceBooking.properties.emailConfirmationWarningNotificationSentAt.label": "Avertissement e-mail de confirmation envoyé le",
 		"models.PersonToWorkplaceBooking.properties.endDatetime.description": "La date et l'heure de fin de la réservation",
 		"models.PersonToWorkplaceBooking.properties.endDatetime.label": "Fin de la réservation",
 		"models.PersonToWorkplaceBooking.properties.id.label": "Identifiant de la réservation au poste de travail des personnes",
@@ -74408,7 +74483,7 @@ var jsonTranslationsFiles = {
 		"useOpenMeetingRoomBookingDrawer.noRoomName": "Nom d'espace non défini",
 		"useOpenMeetingRoomBookingDrawer.roomBooking": "Réservation d'espace",
 		"validation.regex.company.name": "Le nom de l'entreprise doit être en minuscules, contenir uniquement des lettres, des chiffres et des tirets",
-		"validation.regex.company.workplaceBookingConfirmationRange": "La plage de confirmation de réservation doit être au format HH:MM-HH:MM (ex: 06:00-10:30)",
+		"validation.regex.company.workplaceBookingConfirmationRange": "La plage de confirmation de réservation doit être au format HH:MM-HH:MM@Timezone IANA (ex: 06:00-10:30@Europe/Paris)",
 		"validation.regex.default": "La valeur doit correspondre au format : %{pattern}",
 		"weight.gram": "Gramme",
 		"weight.kilogram": "Kilogramme",
@@ -74829,7 +74904,8 @@ var jsonTranslationsFiles = {
 		"DeleteWorkplace.help": "Delete workstation: [ %{name} ], assignments will also be deleted",
 		"DeskBookingConfirmationButton.bookingConfirmed": "The booking has been confirmed",
 		"DeskBookingConfirmationButton.confirm": "Confirm",
-		"DeskBookingConfirmationButton.confirmHelp": "Confirm that you are present at your workstation",
+		"DeskBookingConfirmationButton.confirmHelp": "Confirm that you are present at your workplace",
+		"DeskBookingConfirmationButton.confirmHelpWithRange": "Confirm that you are present at your workplace. You can confirm between %{confirmationRange}.",
 		"DeskBookingsSection.noBookingsFound": "No upcoming bookings found.",
 		"DimensionChip.anotherPersonIsAssignedViaDimension": "%{personFullName} is assigned to %{dimensionTypeName} %{dimensionName}",
 		"DimensionChip.youAreAssignedViaDimension": "You are assigned to %{dimensionTypeName} %{dimensionName}",
@@ -75250,6 +75326,16 @@ var jsonTranslationsFiles = {
 		"InlinePositionZField.positionZLabel": "Position Z (cm)",
 		"ItemTypeAvatarSingleView.copy": "Copy points to clipboard",
 		"ItemTypeAvatarSingleView.debug.label": "Enable advanced mode for 3d",
+		"ItemTypeDataQualityFamilyTenantConsistency.buttonFixWithUnclassifiedHelp": "Assign selected item types to tenant UNCLASSIFIED family",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeFamilyId": "Family id",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeFamilyName": "Family",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeFamilyTenant": "Family tenant",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeId": "Item type id",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeName": "Item type",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeTenant": "Item type tenant",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerReason": "Reason",
+		"ItemTypeDataQualityFamilyTenantConsistency.reasonMissingFamilyOrTenant": "Item type family or tenant information is missing.",
+		"ItemTypeDataQualityFamilyTenantConsistency.reasonTenantMismatch": "Item type family belongs to a different tenant than the item type.",
 		"ItemTypeDataQualityNotUsed.columns.name": "Object type name",
 		"ItemTypeDataQualityNotUsed.columns.shape": "Form",
 		"ItemTypeDataQualityNotUsed.columns.workplaceTypeCount": "Number of workstation type",
@@ -75527,14 +75613,13 @@ var jsonTranslationsFiles = {
 		"OrganizationTabsFilter.tabs.hierarchy": "Hierarchy",
 		"OrganizationTabsFilter.tabs.level1": "Services",
 		"OrganizationTabsFilter.tabs.topLevel": "Directions",
-		"OtherThanWorkplaceBooking.locationOffice": "Desk",
-		"OtherThanWorkplaceBooking.locationRemote": "Telework",
 		"PWLSelectDimensionCard.selectDimensionCard.title": "Select a dimension",
 		"ParkingBookingIcon.tooltip": "This person can reserve parking spaces in this building",
 		"ParkingOptions.noParkingBookedInBuilding": "No parking is reserved",
 		"ParkingOptionsAccordion.title": "Reserve parking",
 		"ParkingRoomTypeCode.values.PARKING-CAR": "Car park",
 		"ParkingRoomTypeCode.values.PARKING-ELECTRIC-CAR": "Electric car parking",
+		"ParkingRoomTypeCode.values.PARKING-MOTO": "Motorcycle parking",
 		"ParkingRoomTypeCode.values.PARKING-PRM": "Accessible parking",
 		"PartnerApiCredentialsSelector.pleaseSelect": "Please select",
 		"PartnerEntityCreateTab.button.help": "Create in %{partnerName}",
@@ -75604,6 +75689,7 @@ var jsonTranslationsFiles = {
 		"PersonSecurityProfileWorkplaceFilter.title": "The security profiles of the people assigned to the workstations",
 		"PersonSecurityProfileWorkplaceInfo.nodeInfo.peopleCount": "There are %{count} person(s) with security profile %{name} assigned to workstations",
 		"PersonSecurityProfileWorkplaceInfo.nodeInfo.workplaceCount": "There are %{count} workstation(s) with at least one person with security profile %{name}",
+		"PersonToBuildingCountIcon.notCountedTooltip": "This person is not accounting in the building",
 		"PersonTooltipFullName.guestTag": "(Guest)",
 		"PersonWorkingLocationByDimensionTable.errors.noBuildingSelection": "No building or area selection.",
 		"PersonWorkingLocationByDimensionTable.errors.noDimensionSelection": "No dimensions selected.",
@@ -75872,7 +75958,8 @@ var jsonTranslationsFiles = {
 		"UnlinkMapScaleAsyncButton.label": "Dissociate the scale",
 		"UserNotPartOfCompanyAdminCanCreate.createButton": "Create the association",
 		"UserNotPartOfCompanyAdminCanCreate.message": "You are not associated with the company %{companyId}.",
-		"VehicleInfoDisplay.parkingAvailable": "You can reserve a parking space because you have at least one vehicle.",
+		"VehicleInfoDisplay.parkingAllowedNoVehicle": "You can book parking in this building, but no vehicle is assigned to your profile.",
+		"VehicleInfoDisplay.parkingAvailable": "You can book parking because you have at least one vehicle",
 		"WeekNavigation.thisWeek": "This Week",
 		"WorkCanvas.Options.AddItemTypePointOption.help.disable": "Stop creating summits",
 		"WorkCanvas.Options.AddItemTypePointOption.help.enable": "Adding a vertex makes it possible to rework with more precision a form",
@@ -76078,8 +76165,10 @@ var jsonTranslationsFiles = {
 		"WorkCanvasLoadingIcon.title": "Loading the plan",
 		"WorkCanvasShortcutTooltipHelp.help": "Keyboard shortcut: <b>%{shortcut}</b>",
 		"WorkCanvasToggleOptionHelp.shortcut": "Keyboard shortcut: <b>%{shortcut}</b>",
-		"WorkingLocationToggle.locationOffice": "Office",
-		"WorkingLocationToggle.locationRemote": "Remote",
+		"WorkingLocationLabelFromCode.locationOffice": "Desk",
+		"WorkingLocationLabelFromCode.locationRemote": "Telework",
+		"WorkingLocationLabelHelp.helpOffice": "Register your presence at the office and reserve your space",
+		"WorkingLocationLabelHelp.helpRemote": "Declare yourself as working remotely; you are not reserving a space.",
 		"WorkpaceBookingAverageByWeekDay.excludeWeekends": "Exclude weekends",
 		"WorkpaceBookingAverageByWeekDay.labels.bar": "Number of bookings",
 		"WorkpaceBookingAverageByWeekDay.labels.line": "Average per week",
@@ -76489,6 +76578,8 @@ var jsonTranslationsFiles = {
 		"models.Building.properties.sharedWorkplacesCount.label": "Number of shared workstations",
 		"models.Building.properties.sharedWorkplacesRatio.description": "Rate of workstations shared by at least 2 people compared to all workstations in the building",
 		"models.Building.properties.sharedWorkplacesRatio.label": "Rate of shared workstations",
+		"models.Building.properties.surface.description": "The declared surface area of ​​the building entered manually; this value is not linked to the spaces modeled in Surfy.",
+		"models.Building.properties.surface.label": "Declared area",
 		"models.Building.properties.transitWorkplacesCount.description": "Number of temporary workstations, these positions are not counted in free positions and are not flex",
 		"models.Building.properties.transitWorkplacesCount.label": "Number of transit workstations",
 		"models.Building.properties.userCompanyOwner.description": "The user who owns the building always sees the building even if there is a content role, in case of scenario creation, the user who created the scenario becomes the owner, the owner can be changed later",
@@ -76617,7 +76708,7 @@ var jsonTranslationsFiles = {
 		"models.Company.properties.trackUserActivity.label": "Allow Surfy to track user activity to improve the user experience",
 		"models.Company.properties.workingDaysCount.description": "The number of working days per week can be 5 for working days, 6 including Saturday and 7 including Sunday",
 		"models.Company.properties.workingDaysCount.label": "Number of working days per week",
-		"models.Company.properties.workplaceBookingConfirmationRange.description": "Time range during which users can confirm their workstation reservations. Format: HH:MM-HH:MM (e.g., 06:00-10:30). Leave this field blank to disable workstation reservation confirmation.",
+		"models.Company.properties.workplaceBookingConfirmationRange.description": "Time range during which users can confirm their workstation reservations. Required format: HH:MM-HH:MM@IANA Timezone (e.g., 06:00-10:30@Europe/Paris). Leave this field blank to disable workstation reservation confirmation. IANA Timezone: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
 		"models.Company.properties.workplaceBookingConfirmationRange.label": "Workstation booking confirmation window",
 		"models.Company.reports.export-all-duplicate.fileName": "duplication",
 		"models.Company.reports.export-all-duplicate.help": "Backup company data to make a copy of the platform",
@@ -76659,6 +76750,8 @@ var jsonTranslationsFiles = {
 		"models.CompanyWorkingLocation.determinants.undefined": "company workplaces",
 		"models.CompanyWorkingLocation.plural": "Company work locations",
 		"models.CompanyWorkingLocation.properties.id.label": "Company work location identifier",
+		"models.CompanyWorkingLocation.properties.label.description": "Label displayed for this work location within the company, instead of the default label",
+		"models.CompanyWorkingLocation.properties.label.label": "Custom label",
 		"models.CompanyWorkingLocation.singular": "Company work location",
 		"models.ContentRole.description": "A content role defines access permissions to different platform data for users",
 		"models.ContentRole.determinant.defined": "the role of content",
@@ -76992,6 +77085,8 @@ var jsonTranslationsFiles = {
 		"models.ItemType.singular": "object type",
 		"models.ItemType.views.avatar.help": "See the form of %{name}",
 		"models.ItemType.views.avatar.label": "Form",
+		"models.ItemType.views.dq-family-tenant-consistency.help": "List the object types linked to an inconsistent family; allows them to be reassigned to the UNCLASSIFIED family.",
+		"models.ItemType.views.dq-family-tenant-consistency.label": "Incoherent family",
 		"models.ItemType.views.dq-not-used.help": "List all unused object types via objects or via unused workstation types",
 		"models.ItemType.views.dq-not-used.label": "Not used",
 		"models.ItemType.views.dq-uniq-name.help": "List the types of objects with the same name within the same company; allows you to rename them by adding (1), (2), (3)",
@@ -77352,6 +77447,8 @@ var jsonTranslationsFiles = {
 		"models.Person.properties.info.label": "Comment",
 		"models.Person.properties.lastname.description": "Person's last name",
 		"models.Person.properties.lastname.label": "Last name",
+		"models.Person.properties.mainLocation.description": "The person 's reference establishment in text format, often imported from the HRIS",
+		"models.Person.properties.mainLocation.label": "Reference institution",
 		"models.Person.properties.monitorReference.description": "The reference of the computer screen associated with this person",
 		"models.Person.properties.monitorReference.label": "Screen reference",
 		"models.Person.properties.notAffectable.description": "The person cannot be assigned to a workstation, space, building or assignment layer",
@@ -77558,6 +77655,8 @@ var jsonTranslationsFiles = {
 		"models.PersonToWorkplaceBooking.determinants.defined": "reservations at people's workstations",
 		"models.PersonToWorkplaceBooking.determinants.undefined": "reservations at people's workstations",
 		"models.PersonToWorkplaceBooking.plural": "Reservations at people's workstations",
+		"models.PersonToWorkplaceBooking.properties.emailConfirmationWarningNotificationSentAt.description": "The date and time the email warning was sent before the cancellation of the unconfirmed reservation.",
+		"models.PersonToWorkplaceBooking.properties.emailConfirmationWarningNotificationSentAt.label": "Confirmation email sent on",
 		"models.PersonToWorkplaceBooking.properties.endDatetime.description": "The date and time the reservation ends",
 		"models.PersonToWorkplaceBooking.properties.endDatetime.label": "End of reservation",
 		"models.PersonToWorkplaceBooking.properties.id.label": "Workstation reservation ID for people",
@@ -77995,7 +78094,7 @@ var jsonTranslationsFiles = {
 		"useOpenMeetingRoomBookingDrawer.noRoomName": "Undefined space name",
 		"useOpenMeetingRoomBookingDrawer.roomBooking": "Space booking",
 		"validation.regex.company.name": "The company name must be in lowercase, contain only letters, numbers and hyphens",
-		"validation.regex.company.workplaceBookingConfirmationRange": "The booking confirmation window must be in HH:MM-HH:MM format (e.g., 06:00-10:30)",
+		"validation.regex.company.workplaceBookingConfirmationRange": "The booking confirmation window must be in HH:MM-HH:MM@IANA Timezone format (e.g., 06:00-10:30@Europe/Paris)",
 		"validation.regex.default": "The value must match the format: %{pattern}",
 		"weight.gram": "Gram",
 		"weight.kilogram": "Kilogram",
@@ -78417,6 +78516,7 @@ var jsonTranslationsFiles = {
 		"DeskBookingConfirmationButton.bookingConfirmed": "La reserva ha sido confirmada.",
 		"DeskBookingConfirmationButton.confirm": "Confirma tu asistencia",
 		"DeskBookingConfirmationButton.confirmHelp": "Confirme que está presente en su estación de trabajo",
+		"DeskBookingConfirmationButton.confirmHelpWithRange": "Confirma que estás presente en tu puesto de trabajo. Puedes confirmarlo entre %{confirmationRange} .",
 		"DeskBookingsSection.noBookingsFound": "No se encontraron reservas próximas.",
 		"DimensionChip.anotherPersonIsAssignedViaDimension": "%{personFullName} está asignado a %{dimensionTypeName} %{dimensionName}",
 		"DimensionChip.youAreAssignedViaDimension": "Estás asignado a %{dimensionTypeName} %{dimensionName}",
@@ -78837,6 +78937,16 @@ var jsonTranslationsFiles = {
 		"InlinePositionZField.positionZLabel": "Posición Z (cm)",
 		"ItemTypeAvatarSingleView.copy": "Copiar puntos al portapapeles",
 		"ItemTypeAvatarSingleView.debug.label": "Habilitar el modo avanzado para 3d",
+		"ItemTypeDataQualityFamilyTenantConsistency.buttonFixWithUnclassifiedHelp": "Asigne los tipos de objetos seleccionados a la familia NO CLASIFICADA del inquilino.",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeFamilyId": "Identificación familiar",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeFamilyName": "Familia",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeFamilyTenant": "Familia inquilina",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeId": "ID de tipo de objeto",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeName": "Tipo de objeto",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeTenant": "Tipo de objeto inquilino",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerReason": "Razón",
+		"ItemTypeDataQualityFamilyTenantConsistency.reasonMissingFamilyOrTenant": "Falta la información familiar sobre el tipo de objeto o inquilino.",
+		"ItemTypeDataQualityFamilyTenantConsistency.reasonTenantMismatch": "La familia de tipos de objeto pertenece a un inquilino diferente al del tipo de objeto.",
 		"ItemTypeDataQualityNotUsed.columns.name": "Nombre del tipo de objeto",
 		"ItemTypeDataQualityNotUsed.columns.shape": "Formulario",
 		"ItemTypeDataQualityNotUsed.columns.workplaceTypeCount": "Número de tipo de estación de trabajo",
@@ -79114,14 +79224,13 @@ var jsonTranslationsFiles = {
 		"OrganizationTabsFilter.tabs.hierarchy": "Jerarquía",
 		"OrganizationTabsFilter.tabs.level1": "Servicios",
 		"OrganizationTabsFilter.tabs.topLevel": "Direcciones",
-		"OtherThanWorkplaceBooking.locationOffice": "Escritorio",
-		"OtherThanWorkplaceBooking.locationRemote": "Teletrabajo",
 		"PWLSelectDimensionCard.selectDimensionCard.title": "Seleccione una dimensión",
 		"ParkingBookingIcon.tooltip": "Esta persona puede reservar plazas de aparcamiento en este edificio.",
 		"ParkingOptions.noParkingBookedInBuilding": "No hay estacionamiento reservado",
 		"ParkingOptionsAccordion.title": "Reserva de aparcamiento",
 		"ParkingRoomTypeCode.values.PARKING-CAR": "Aparcamiento",
 		"ParkingRoomTypeCode.values.PARKING-ELECTRIC-CAR": "Aparcamiento para coches eléctricos",
+		"ParkingRoomTypeCode.values.PARKING-MOTO": "Aparcamiento para motocicletas",
 		"ParkingRoomTypeCode.values.PARKING-PRM": "Aparcamiento accesible",
 		"PartnerApiCredentialsSelector.pleaseSelect": "Seleccione",
 		"PartnerEntityCreateTab.button.help": "Crear en %{partnerName}",
@@ -79191,6 +79300,7 @@ var jsonTranslationsFiles = {
 		"PersonSecurityProfileWorkplaceFilter.title": "Los perfiles de seguridad de las personas asignadas a los puestos de trabajo",
 		"PersonSecurityProfileWorkplaceInfo.nodeInfo.peopleCount": "Hay %{count} persona(s) con el perfil de seguridad %{name} asignado a las estaciones de trabajo",
 		"PersonSecurityProfileWorkplaceInfo.nodeInfo.workplaceCount": "Hay %{count} estaciones de trabajo con al menos una persona con perfil de seguridad %{name}",
+		"PersonToBuildingCountIcon.notCountedTooltip": "Esta persona no es contable en el edificio.",
 		"PersonTooltipFullName.guestTag": "(Invitado)",
 		"PersonWorkingLocationByDimensionTable.errors.noBuildingSelection": "Sin selección de edificio o área.",
 		"PersonWorkingLocationByDimensionTable.errors.noDimensionSelection": "No hay dimensiones seleccionadas",
@@ -79459,6 +79569,7 @@ var jsonTranslationsFiles = {
 		"UnlinkMapScaleAsyncButton.label": "Escala de desagrupación",
 		"UserNotPartOfCompanyAdminCanCreate.createButton": "Crea la asociación",
 		"UserNotPartOfCompanyAdminCanCreate.message": "No estás asociado con la empresa %{companyId} .",
+		"VehicleInfoDisplay.parkingAllowedNoVehicle": "Puedes reservar una plaza de aparcamiento en este edificio, pero no hay ningún vehículo registrado en tu perfil.",
 		"VehicleInfoDisplay.parkingAvailable": "Puedes reservar una plaza de aparcamiento porque tienes al menos un vehículo.",
 		"WeekNavigation.thisWeek": "Esta semana",
 		"WorkCanvas.Options.AddItemTypePointOption.help.disable": "Deja de crear cumbres",
@@ -79665,8 +79776,10 @@ var jsonTranslationsFiles = {
 		"WorkCanvasLoadingIcon.title": "Cargando el plan",
 		"WorkCanvasShortcutTooltipHelp.help": "Atajo de teclado: <b>%{shortcut}</b>",
 		"WorkCanvasToggleOptionHelp.shortcut": "Atajo de teclado: <b>%{shortcut}</b>",
-		"WorkingLocationToggle.locationOffice": "Escritorio",
-		"WorkingLocationToggle.locationRemote": "Teletrabajo",
+		"WorkingLocationLabelFromCode.locationOffice": "Escritorio",
+		"WorkingLocationLabelFromCode.locationRemote": "Teletrabajo",
+		"WorkingLocationLabelHelp.helpOffice": "Registre su asistencia en la oficina y reserve su espacio.",
+		"WorkingLocationLabelHelp.helpRemote": "Declara que trabajas de forma remota; no estás reservando un espacio.",
 		"WorkpaceBookingAverageByWeekDay.excludeWeekends": "Excluir fines de semana",
 		"WorkpaceBookingAverageByWeekDay.labels.bar": "Número de reservas",
 		"WorkpaceBookingAverageByWeekDay.labels.line": "Promedio por semana",
@@ -80076,6 +80189,8 @@ var jsonTranslationsFiles = {
 		"models.Building.properties.sharedWorkplacesCount.label": "Número de estaciones de trabajo compartidas",
 		"models.Building.properties.sharedWorkplacesRatio.description": "Tasa de estaciones de trabajo compartidas por al menos 2 personas en comparación con todas las estaciones de trabajo del edificio",
 		"models.Building.properties.sharedWorkplacesRatio.label": "Tasa de puestos de trabajo compartidos",
+		"models.Building.properties.surface.description": "La superficie declarada del edificio se introdujo manualmente; este valor no está vinculado a los espacios modelados en Surfy.",
+		"models.Building.properties.surface.label": "Área declarada",
 		"models.Building.properties.transitWorkplacesCount.description": "Número de puestos de trabajo temporales, estos puestos no se cuentan en puestos libres y no son flexibles",
 		"models.Building.properties.transitWorkplacesCount.label": "Número de estaciones de trabajo de tránsito",
 		"models.Building.properties.userCompanyOwner.description": "El usuario propietario del edificio siempre ve el edificio incluso si tiene un rol de contenido; en caso de creación de un escenario, el usuario que creó el escenario se convierte en el propietario; el propietario se puede cambiar más tarde.",
@@ -80204,7 +80319,7 @@ var jsonTranslationsFiles = {
 		"models.Company.properties.trackUserActivity.label": "Permitir que Surfy rastree la actividad del usuario para mejorar la experiencia del usuario",
 		"models.Company.properties.workingDaysCount.description": "El número de días laborables a la semana puede ser de 5 para los días laborables, 6 incluido el sábado y 7 incluido el domingo",
 		"models.Company.properties.workingDaysCount.label": "Número de días laborables por semana",
-		"models.Company.properties.workplaceBookingConfirmationRange.description": "Intervalo de tiempo durante el cual los usuarios pueden confirmar sus reservas de estaciones de trabajo. Formato: HH:MM-HH:MM (p. ej., 06:00-10:30). Deje este campo en blanco para desactivar la confirmación de reservas de estaciones de trabajo.",
+		"models.Company.properties.workplaceBookingConfirmationRange.description": "Intervalo de tiempo durante el cual los usuarios pueden confirmar sus reservas de estaciones de trabajo. Formato requerido: HH:MM-HH:MM@Zona horaria IANA (p. ej., 06:00-10:30@Europe/Paris). Deje este campo en blanco para desactivar la confirmación de la reserva de estaciones de trabajo. Zona horaria IANA: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
 		"models.Company.properties.workplaceBookingConfirmationRange.label": "Ventana de confirmación de reserva de estación de trabajo",
 		"models.Company.reports.export-all-duplicate.fileName": "duplicación",
 		"models.Company.reports.export-all-duplicate.help": "Backup de datos de la empresa para hacer una copia de la plataforma",
@@ -80246,6 +80361,8 @@ var jsonTranslationsFiles = {
 		"models.CompanyWorkingLocation.determinants.undefined": "lugares de trabajo de la empresa",
 		"models.CompanyWorkingLocation.plural": "Ubicaciones de trabajo de la empresa",
 		"models.CompanyWorkingLocation.properties.id.label": "Identificador del lugar de trabajo de la empresa",
+		"models.CompanyWorkingLocation.properties.label.description": "Etiqueta que se muestra para esta ubicación de trabajo dentro de la empresa, en lugar de la etiqueta predeterminada.",
+		"models.CompanyWorkingLocation.properties.label.label": "Etiqueta personalizada",
 		"models.CompanyWorkingLocation.singular": "Lugar de trabajo de la empresa",
 		"models.ContentRole.description": "Un rol de contenido define permisos de acceso a diferentes datos de la plataforma para los usuarios",
 		"models.ContentRole.determinant.defined": "el papel del contenido",
@@ -80579,6 +80696,8 @@ var jsonTranslationsFiles = {
 		"models.ItemType.singular": "tipo de objeto",
 		"models.ItemType.views.avatar.help": "Ver la forma de %{name}",
 		"models.ItemType.views.avatar.label": "Formulario",
+		"models.ItemType.views.dq-family-tenant-consistency.help": "Enumera los tipos de objetos vinculados a una familia inconsistente; permite reasignarlos a la familia NO CLASIFICADO.",
+		"models.ItemType.views.dq-family-tenant-consistency.label": "Familia incoherente",
 		"models.ItemType.views.dq-not-used.help": "Enumere todos los tipos de objetos no utilizados mediante objetos o mediante tipos de estaciones de trabajo no utilizados",
 		"models.ItemType.views.dq-not-used.label": "No utilizado",
 		"models.ItemType.views.dq-uniq-name.help": "Enumera los tipos de objetos con el mismo nombre dentro de la misma empresa; permite cambiarles el nombre agregando (1), (2), (3)",
@@ -80939,6 +81058,8 @@ var jsonTranslationsFiles = {
 		"models.Person.properties.info.label": "Comentario",
 		"models.Person.properties.lastname.description": "Apellido de la persona",
 		"models.Person.properties.lastname.label": "Apellido",
+		"models.Person.properties.mainLocation.description": "La información de referencia de la persona en formato de texto, a menudo importada del sistema de información de recursos humanos (HRIS).",
+		"models.Person.properties.mainLocation.label": "Institución de referencia",
 		"models.Person.properties.monitorReference.description": "La referencia de la pantalla del ordenador asociada a esta persona.",
 		"models.Person.properties.monitorReference.label": "Referencia de pantalla",
 		"models.Person.properties.notAffectable.description": "La persona no puede ser asignada a una estación de trabajo, espacio, edificio o capa de asignación.",
@@ -81145,6 +81266,8 @@ var jsonTranslationsFiles = {
 		"models.PersonToWorkplaceBooking.determinants.defined": "reservas en los puestos de trabajo de las personas",
 		"models.PersonToWorkplaceBooking.determinants.undefined": "reservas en los puestos de trabajo de las personas",
 		"models.PersonToWorkplaceBooking.plural": "Reservas en los puestos de trabajo de las personas",
+		"models.PersonToWorkplaceBooking.properties.emailConfirmationWarningNotificationSentAt.description": "La fecha y hora en que se envió el correo electrónico de advertencia antes de la cancelación de la reserva no confirmada.",
+		"models.PersonToWorkplaceBooking.properties.emailConfirmationWarningNotificationSentAt.label": "Correo electrónico de confirmación enviado el",
 		"models.PersonToWorkplaceBooking.properties.endDatetime.description": "La fecha y hora de finalización de la reserva.",
 		"models.PersonToWorkplaceBooking.properties.endDatetime.label": "Fin de la reserva",
 		"models.PersonToWorkplaceBooking.properties.id.label": "ID de reserva de estación de trabajo para personas",
@@ -81582,7 +81705,7 @@ var jsonTranslationsFiles = {
 		"useOpenMeetingRoomBookingDrawer.noRoomName": "Espacio de nombres indefinido",
 		"useOpenMeetingRoomBookingDrawer.roomBooking": "Reserva de espacio",
 		"validation.regex.company.name": "El nombre de la empresa debe estar en minúsculas, contener solo letras, números y guiones.",
-		"validation.regex.company.workplaceBookingConfirmationRange": "La ventana de confirmación de la reserva debe tener el formato HH:MM-HH:MM (por ejemplo, 06:00-10:30)",
+		"validation.regex.company.workplaceBookingConfirmationRange": "La ventana de confirmación de la reserva debe estar en formato HH:MM-HH:MM@IANA (por ejemplo, 06:00-10:30@Europe/Paris).",
 		"validation.regex.default": "El valor debe coincidir con el formato: %{pattern}",
 		"weight.gram": "Gramo",
 		"weight.kilogram": "Kilogramo",
@@ -82004,6 +82127,7 @@ var jsonTranslationsFiles = {
 		"DeskBookingConfirmationButton.bookingConfirmed": "La prenotazione è stata confermata.",
 		"DeskBookingConfirmationButton.confirm": "Conferma la tua presenza",
 		"DeskBookingConfirmationButton.confirmHelp": "Conferma di essere presente alla tua postazione di lavoro",
+		"DeskBookingConfirmationButton.confirmHelpWithRange": "Conferma di essere presente alla tua postazione di lavoro. Puoi confermare tra %{confirmationRange} .",
 		"DeskBookingsSection.noBookingsFound": "Nessuna prenotazione imminente trovata.",
 		"DimensionChip.anotherPersonIsAssignedViaDimension": "%{personFullName} è assegnato a %{dimensionTypeName} %{dimensionName}",
 		"DimensionChip.youAreAssignedViaDimension": "Ti è stato assegnato %{dimensionTypeName} %{dimensionName}",
@@ -82424,6 +82548,16 @@ var jsonTranslationsFiles = {
 		"InlinePositionZField.positionZLabel": "Posizione Z (cm)",
 		"ItemTypeAvatarSingleView.copy": "Copia i punti negli appunti",
 		"ItemTypeAvatarSingleView.debug.label": "Abilita la modalità avanzata per il 3D",
+		"ItemTypeDataQualityFamilyTenantConsistency.buttonFixWithUnclassifiedHelp": "Assegna i tipi di oggetto selezionati alla famiglia NON CLASSIFICATA del tenant",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeFamilyId": "ID Famiglia",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeFamilyName": "Famiglia",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeFamilyTenant": "Famiglia di inquilini",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeId": "ID tipo oggetto",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeName": "Tipo di oggetto",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeTenant": "Tipo di oggetto: Inquilino",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerReason": "Motivo",
+		"ItemTypeDataQualityFamilyTenantConsistency.reasonMissingFamilyOrTenant": "Mancano le informazioni relative alla famiglia per il tipo di oggetto o inquilino.",
+		"ItemTypeDataQualityFamilyTenantConsistency.reasonTenantMismatch": "La famiglia di tipi di oggetto appartiene a un tenant diverso rispetto al tipo di oggetto.",
 		"ItemTypeDataQualityNotUsed.columns.name": "Nome del tipo di oggetto",
 		"ItemTypeDataQualityNotUsed.columns.shape": "Modulo",
 		"ItemTypeDataQualityNotUsed.columns.workplaceTypeCount": "Numero del tipo di postazione di lavoro",
@@ -82701,14 +82835,13 @@ var jsonTranslationsFiles = {
 		"OrganizationTabsFilter.tabs.hierarchy": "Gerarchia",
 		"OrganizationTabsFilter.tabs.level1": "Servizi",
 		"OrganizationTabsFilter.tabs.topLevel": "Indicazioni",
-		"OtherThanWorkplaceBooking.locationOffice": "Scrivania",
-		"OtherThanWorkplaceBooking.locationRemote": "Telelavoro",
 		"PWLSelectDimensionCard.selectDimensionCard.title": "Seleziona una dimensione",
 		"ParkingBookingIcon.tooltip": "Questa persona può prenotare posti auto in questo edificio",
 		"ParkingOptions.noParkingBookedInBuilding": "Nessun parcheggio è riservato",
 		"ParkingOptionsAccordion.title": "Prenotare il parcheggio",
 		"ParkingRoomTypeCode.values.PARKING-CAR": "Parcheggio",
 		"ParkingRoomTypeCode.values.PARKING-ELECTRIC-CAR": "Parcheggio elettrico",
+		"ParkingRoomTypeCode.values.PARKING-MOTO": "Parcheggio per motociclette",
 		"ParkingRoomTypeCode.values.PARKING-PRM": "Parcheggio accessibile",
 		"PartnerApiCredentialsSelector.pleaseSelect": "Seleziona",
 		"PartnerEntityCreateTab.button.help": "Crea in %{partnerName}",
@@ -82778,6 +82911,7 @@ var jsonTranslationsFiles = {
 		"PersonSecurityProfileWorkplaceFilter.title": "I profili di sicurezza delle persone assegnate alle postazioni di lavoro",
 		"PersonSecurityProfileWorkplaceInfo.nodeInfo.peopleCount": "Ci sono %{count} persone con profilo di sicurezza %{name} assegnate alle workstation",
 		"PersonSecurityProfileWorkplaceInfo.nodeInfo.workplaceCount": "Ci sono %{count} postazioni di lavoro con almeno una persona con profilo di sicurezza %{name}",
+		"PersonToBuildingCountIcon.notCountedTooltip": "Questa persona non sta contabilizzando nell'edificio",
 		"PersonTooltipFullName.guestTag": "(Ospite)",
 		"PersonWorkingLocationByDimensionTable.errors.noBuildingSelection": "Nessuna selezione di edifici o aree.",
 		"PersonWorkingLocationByDimensionTable.errors.noDimensionSelection": "Nessuna dimensione selezionata.",
@@ -83046,6 +83180,7 @@ var jsonTranslationsFiles = {
 		"UnlinkMapScaleAsyncButton.label": "Separa scala",
 		"UserNotPartOfCompanyAdminCanCreate.createButton": "Crea l'associazione",
 		"UserNotPartOfCompanyAdminCanCreate.message": "Non sei associato alla società %{companyId} .",
+		"VehicleInfoDisplay.parkingAllowedNoVehicle": "È possibile prenotare un parcheggio in questo edificio, ma nessun veicolo risulta registrato sul tuo profilo.",
 		"VehicleInfoDisplay.parkingAvailable": "Puoi prenotare un posto auto perché hai almeno un veicolo.",
 		"WeekNavigation.thisWeek": "Questa settimana",
 		"WorkCanvas.Options.AddItemTypePointOption.help.disable": "Smetti di creare vertici",
@@ -83252,8 +83387,10 @@ var jsonTranslationsFiles = {
 		"WorkCanvasLoadingIcon.title": "Caricamento del piano",
 		"WorkCanvasShortcutTooltipHelp.help": "Scorciatoia da tastiera: <b>%{shortcut}</b>",
 		"WorkCanvasToggleOptionHelp.shortcut": "Scorciatoia da tastiera: <b>%{shortcut}</b>",
-		"WorkingLocationToggle.locationOffice": "Scrivania",
-		"WorkingLocationToggle.locationRemote": "Telelavoro",
+		"WorkingLocationLabelFromCode.locationOffice": "Scrivania",
+		"WorkingLocationLabelFromCode.locationRemote": "Telelavoro",
+		"WorkingLocationLabelHelp.helpOffice": "Registra la tua presenza in ufficio e prenota il tuo posto.",
+		"WorkingLocationLabelHelp.helpRemote": "Dichiara di lavorare da remoto; non è necessario prenotare uno spazio.",
 		"WorkpaceBookingAverageByWeekDay.excludeWeekends": "Escludere i fine settimana",
 		"WorkpaceBookingAverageByWeekDay.labels.bar": "Numero di prenotazioni",
 		"WorkpaceBookingAverageByWeekDay.labels.line": "Media settimanale",
@@ -83663,6 +83800,8 @@ var jsonTranslationsFiles = {
 		"models.Building.properties.sharedWorkplacesCount.label": "Numero di postazioni condivise",
 		"models.Building.properties.sharedWorkplacesRatio.description": "Percentuale di postazioni condivise da almeno 2 persone rispetto a tutte le postazioni presenti nell'edificio",
 		"models.Building.properties.sharedWorkplacesRatio.label": "Tasso di postazioni di lavoro condivise",
+		"models.Building.properties.surface.description": "La superficie dichiarata dell'edificio è stata inserita manualmente; questo valore non è collegato agli spazi modellati in Surfy.",
+		"models.Building.properties.surface.label": "Area dichiarata",
 		"models.Building.properties.transitWorkplacesCount.description": "Numero di postazioni temporanee, queste posizioni non sono conteggiate nelle posizioni libere e non sono in flex",
 		"models.Building.properties.transitWorkplacesCount.label": "Numero di postazioni di transito",
 		"models.Building.properties.userCompanyOwner.description": "L'utente proprietario dell'edificio vede sempre l'edificio anche se c'è un ruolo di contenuto, in caso di creazione di uno scenario, l'utente che ha creato lo scenario diventa il proprietario, il proprietario può essere cambiato in seguito",
@@ -83791,7 +83930,7 @@ var jsonTranslationsFiles = {
 		"models.Company.properties.trackUserActivity.label": "Consenti a Surfy di monitorare l'attività dell'utente per migliorare l'esperienza utente",
 		"models.Company.properties.workingDaysCount.description": "Il numero di giorni lavorativi settimanali può essere 5 per i giorni lavorativi, 6 compreso il sabato e 7 compresa la domenica",
 		"models.Company.properties.workingDaysCount.label": "Numero di giorni lavorativi alla settimana",
-		"models.Company.properties.workplaceBookingConfirmationRange.description": "Intervallo di tempo durante il quale gli utenti possono confermare la prenotazione delle proprie postazioni di lavoro. Formato: HH:MM-HH:MM (ad esempio, 06:00-10:30). Lasciare vuoto questo campo per disabilitare la conferma della prenotazione delle postazioni di lavoro.",
+		"models.Company.properties.workplaceBookingConfirmationRange.description": "Intervallo di tempo durante il quale gli utenti possono confermare le prenotazioni delle postazioni di lavoro. Formato obbligatorio: HH:MM-HH:MM@Fuso orario IANA (ad esempio, 06:00-10:30@Europa/Parigi). Lasciare vuoto questo campo per disabilitare la conferma della prenotazione della postazione di lavoro. Fuso orario IANA: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
 		"models.Company.properties.workplaceBookingConfirmationRange.label": "Finestra di conferma della prenotazione della postazione di lavoro",
 		"models.Company.reports.export-all-duplicate.fileName": "duplicazione",
 		"models.Company.reports.export-all-duplicate.help": "Eseguire il backup dei dati aziendali per creare una copia della piattaforma",
@@ -83833,6 +83972,8 @@ var jsonTranslationsFiles = {
 		"models.CompanyWorkingLocation.determinants.undefined": "luoghi di lavoro aziendali",
 		"models.CompanyWorkingLocation.plural": "Luoghi di lavoro aziendali",
 		"models.CompanyWorkingLocation.properties.id.label": "Identificatore della sede di lavoro dell'azienda",
+		"models.CompanyWorkingLocation.properties.label.description": "Etichetta visualizzata per questa postazione di lavoro all'interno dell'azienda, al posto dell'etichetta predefinita.",
+		"models.CompanyWorkingLocation.properties.label.label": "Etichetta personalizzata",
 		"models.CompanyWorkingLocation.singular": "Sede di lavoro dell'azienda",
 		"models.ContentRole.description": "Un ruolo di contenuto definisce le autorizzazioni di accesso ai diversi dati della piattaforma per gli utenti",
 		"models.ContentRole.determinant.defined": "il ruolo del contenuto",
@@ -84166,6 +84307,8 @@ var jsonTranslationsFiles = {
 		"models.ItemType.singular": "tipo di oggetto",
 		"models.ItemType.views.avatar.help": "Guarda la forma di %{name}",
 		"models.ItemType.views.avatar.label": "Modulo",
+		"models.ItemType.views.dq-family-tenant-consistency.help": "Elenca i tipi di oggetto collegati a una famiglia incoerente; consente di riassegnarli alla famiglia NON CLASSIFICATA.",
+		"models.ItemType.views.dq-family-tenant-consistency.label": "Famiglia incoerente",
 		"models.ItemType.views.dq-not-used.help": "Elenca tutti i tipi di oggetti inutilizzati tramite oggetti o tramite tipi di workstation inutilizzati",
 		"models.ItemType.views.dq-not-used.label": "Non usato",
 		"models.ItemType.views.dq-uniq-name.help": "Elenca i tipi di oggetti con lo stesso nome all'interno della stessa azienda; consente di rinominarli aggiungendo (1), (2), (3)",
@@ -84526,6 +84669,8 @@ var jsonTranslationsFiles = {
 		"models.Person.properties.info.label": "Commento",
 		"models.Person.properties.lastname.description": "Il cognome della persona",
 		"models.Person.properties.lastname.label": "Cognome",
+		"models.Person.properties.mainLocation.description": "L'ente referenziale della persona in formato testuale, spesso importato dal sistema informativo delle risorse umane (HRIS).",
+		"models.Person.properties.mainLocation.label": "Istituto di riferimento",
 		"models.Person.properties.monitorReference.description": "Il riferimento dello schermo del computer associato a questa persona",
 		"models.Person.properties.monitorReference.label": "Riferimento dello schermo",
 		"models.Person.properties.notAffectable.description": "La persona non può essere assegnata a una postazione di lavoro, uno spazio, un edificio o un livello di assegnazione",
@@ -84732,6 +84877,8 @@ var jsonTranslationsFiles = {
 		"models.PersonToWorkplaceBooking.determinants.defined": "prenotazioni presso le postazioni di lavoro delle persone",
 		"models.PersonToWorkplaceBooking.determinants.undefined": "prenotazioni presso le postazioni di lavoro delle persone",
 		"models.PersonToWorkplaceBooking.plural": "Prenotazioni alle postazioni di lavoro delle persone",
+		"models.PersonToWorkplaceBooking.properties.emailConfirmationWarningNotificationSentAt.description": "Data e ora di invio dell'email di avviso prima della cancellazione della prenotazione non confermata.",
+		"models.PersonToWorkplaceBooking.properties.emailConfirmationWarningNotificationSentAt.label": "Email di conferma inviata il",
 		"models.PersonToWorkplaceBooking.properties.endDatetime.description": "La data e l'ora in cui termina la prenotazione",
 		"models.PersonToWorkplaceBooking.properties.endDatetime.label": "Fine della prenotazione",
 		"models.PersonToWorkplaceBooking.properties.id.label": "ID di prenotazione della postazione di lavoro per le persone",
@@ -85169,7 +85316,7 @@ var jsonTranslationsFiles = {
 		"useOpenMeetingRoomBookingDrawer.noRoomName": "Spazio dei nomi indefinito",
 		"useOpenMeetingRoomBookingDrawer.roomBooking": "Prenotazione dello spazio",
 		"validation.regex.company.name": "Il nome dell'azienda deve essere in minuscolo e contenere solo lettere, numeri e trattini",
-		"validation.regex.company.workplaceBookingConfirmationRange": "La finestra di conferma della prenotazione deve essere nel formato HH:MM-HH:MM (ad esempio, 06:00-10:30)",
+		"validation.regex.company.workplaceBookingConfirmationRange": "La finestra temporale per la conferma della prenotazione deve essere nel formato HH:MM-HH:MM@Fuso Orario IANA (ad esempio, 06:00-10:30@Europa/Parigi).",
 		"validation.regex.default": "Il valore deve corrispondere al formato: %{pattern}",
 		"weight.gram": "Grammo",
 		"weight.kilogram": "Chilogrammo",
@@ -85591,6 +85738,7 @@ var jsonTranslationsFiles = {
 		"DeskBookingConfirmationButton.bookingConfirmed": "De reservering is bevestigd.",
 		"DeskBookingConfirmationButton.confirm": "Bevestig uw aanwezigheid",
 		"DeskBookingConfirmationButton.confirmHelp": "Bevestig dat u aanwezig bent op uw werkplek",
+		"DeskBookingConfirmationButton.confirmHelpWithRange": "Bevestig dat u aanwezig bent op uw werkplek. U kunt dit bevestigen binnen %{confirmationRange} .",
 		"DeskBookingsSection.noBookingsFound": "Geen aankomende reserveringen gevonden.",
 		"DimensionChip.anotherPersonIsAssignedViaDimension": "%{personFullName} is toegewezen aan %{dimensionTypeName} %{dimensionName}",
 		"DimensionChip.youAreAssignedViaDimension": "U bent toegewezen aan %{dimensionTypeName} %{dimensionName}",
@@ -86011,6 +86159,16 @@ var jsonTranslationsFiles = {
 		"InlinePositionZField.positionZLabel": "Z-positie (cm)",
 		"ItemTypeAvatarSingleView.copy": "Kopieer punten naar het klembord",
 		"ItemTypeAvatarSingleView.debug.label": "Schakel de geavanceerde modus voor 3D in",
+		"ItemTypeDataQualityFamilyTenantConsistency.buttonFixWithUnclassifiedHelp": "Wijs de geselecteerde objecttypen toe aan de UNCLASSIFIED-familie van de tenant.",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeFamilyId": "Familie-ID",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeFamilyName": "Familie",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeFamilyTenant": "Huurdersgezin",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeId": "objecttype-ID",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeName": "Object type",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeTenant": "Huurder type object",
+		"ItemTypeDataQualityFamilyTenantConsistency.headerReason": "Reden",
+		"ItemTypeDataQualityFamilyTenantConsistency.reasonMissingFamilyOrTenant": "De familiegegevens voor het type object of huurder ontbreken.",
+		"ItemTypeDataQualityFamilyTenantConsistency.reasonTenantMismatch": "De objecttypefamilie behoort tot een andere tenant dan het objecttype zelf.",
 		"ItemTypeDataQualityNotUsed.columns.name": "Naam objecttype",
 		"ItemTypeDataQualityNotUsed.columns.shape": "Vorm",
 		"ItemTypeDataQualityNotUsed.columns.workplaceTypeCount": "Aantal werkplektypes",
@@ -86288,14 +86446,13 @@ var jsonTranslationsFiles = {
 		"OrganizationTabsFilter.tabs.hierarchy": "Hiërarchie",
 		"OrganizationTabsFilter.tabs.level1": "Diensten",
 		"OrganizationTabsFilter.tabs.topLevel": "Routebeschrijving",
-		"OtherThanWorkplaceBooking.locationOffice": "Bureau",
-		"OtherThanWorkplaceBooking.locationRemote": "Telewerk",
 		"PWLSelectDimensionCard.selectDimensionCard.title": "Selecteer een dimensie",
 		"ParkingBookingIcon.tooltip": "Deze persoon kan parkeerplaatsen in dit gebouw reserveren.",
 		"ParkingOptions.noParkingBookedInBuilding": "Er zijn geen parkeerplaatsen gereserveerd.",
 		"ParkingOptionsAccordion.title": "Parkeerplaats reserveren",
 		"ParkingRoomTypeCode.values.PARKING-CAR": "Parkeerplaats",
 		"ParkingRoomTypeCode.values.PARKING-ELECTRIC-CAR": "Parkeerplaats voor elektrische auto's",
+		"ParkingRoomTypeCode.values.PARKING-MOTO": "Motorfietsparkeerplaats",
 		"ParkingRoomTypeCode.values.PARKING-PRM": "Toegankelijke parkeerplaatsen",
 		"PartnerApiCredentialsSelector.pleaseSelect": "Selecteer alstublieft",
 		"PartnerEntityCreateTab.button.help": "Maken in %{partnerName}",
@@ -86365,6 +86522,7 @@ var jsonTranslationsFiles = {
 		"PersonSecurityProfileWorkplaceFilter.title": "Beveiligingsprofielen van mensen die aan werkstations zijn toegewezen",
 		"PersonSecurityProfileWorkplaceInfo.nodeInfo.peopleCount": "Er zijn %{count} perso(o)n(en) met beveiligingsprofiel %{name} toegewezen aan de werkstations",
 		"PersonSecurityProfileWorkplaceInfo.nodeInfo.workplaceCount": "Er zijn %{count} werkstation(s) met minstens één persoon met %{name} beveiligingsprofiel",
+		"PersonToBuildingCountIcon.notCountedTooltip": "Deze persoon is geen accountant in het gebouw",
 		"PersonTooltipFullName.guestTag": "(Gast)",
 		"PersonWorkingLocationByDimensionTable.errors.noBuildingSelection": "Geen gebouw- of gebiedsselectie.",
 		"PersonWorkingLocationByDimensionTable.errors.noDimensionSelection": "Geen afmetingen geselecteerd.",
@@ -86633,6 +86791,7 @@ var jsonTranslationsFiles = {
 		"UnlinkMapScaleAsyncButton.label": "Degroepeer schaal",
 		"UserNotPartOfCompanyAdminCanCreate.createButton": "Maak de vereniging",
 		"UserNotPartOfCompanyAdminCanCreate.message": "U bent niet gekoppeld aan het bedrijf %{companyId} .",
+		"VehicleInfoDisplay.parkingAllowedNoVehicle": "Je kunt in dit gebouw een parkeerplaats reserveren, maar er is geen voertuig geregistreerd op je profiel.",
 		"VehicleInfoDisplay.parkingAvailable": "Je kunt een parkeerplaats reserveren omdat je minimaal één voertuig hebt.",
 		"WeekNavigation.thisWeek": "Deze week",
 		"WorkCanvas.Options.AddItemTypePointOption.help.disable": "Stop met het maken van hoekpunten",
@@ -86839,8 +86998,10 @@ var jsonTranslationsFiles = {
 		"WorkCanvasLoadingIcon.title": "Het plan laden",
 		"WorkCanvasShortcutTooltipHelp.help": "Sneltoets: <b>%{shortcut}</b>",
 		"WorkCanvasToggleOptionHelp.shortcut": "Sneltoets: <b>%{shortcut}</b>",
-		"WorkingLocationToggle.locationOffice": "Bureau",
-		"WorkingLocationToggle.locationRemote": "Telewerk",
+		"WorkingLocationLabelFromCode.locationOffice": "Bureau",
+		"WorkingLocationLabelFromCode.locationRemote": "Telewerk",
+		"WorkingLocationLabelHelp.helpOffice": "Meld je aan op kantoor en reserveer je plek.",
+		"WorkingLocationLabelHelp.helpRemote": "Geef aan dat u op afstand werkt; u reserveert geen werkplek.",
 		"WorkpaceBookingAverageByWeekDay.excludeWeekends": "Weekenden uitsluiten",
 		"WorkpaceBookingAverageByWeekDay.labels.bar": "Aantal reserveringen",
 		"WorkpaceBookingAverageByWeekDay.labels.line": "Gemiddeld per week",
@@ -87250,6 +87411,8 @@ var jsonTranslationsFiles = {
 		"models.Building.properties.sharedWorkplacesCount.label": "Aantal gedeelde werkstations",
 		"models.Building.properties.sharedWorkplacesRatio.description": "Percentage werkplekken gedeeld door minimaal 2 personen vergeleken met alle werkplekken in het gebouw",
 		"models.Building.properties.sharedWorkplacesRatio.label": "Tarief gedeeld werkstation",
+		"models.Building.properties.surface.description": "De opgegeven oppervlakte van het gebouw is handmatig ingevoerd; deze waarde is niet gekoppeld aan de in Surfy.",
+		"models.Building.properties.surface.label": "Uitgeroepen gebied",
 		"models.Building.properties.transitWorkplacesCount.description": "Aantal tijdelijke werkplekken, deze posities worden niet meegeteld in de vrije posities en zijn niet in flex",
 		"models.Building.properties.transitWorkplacesCount.label": "Aantal passerende werkplekken",
 		"models.Building.properties.userCompanyOwner.description": "De gebruiker die eigenaar is van het gebouw ziet het gebouw altijd, zelfs als er een inhoudsrol is. Bij het maken van een scenario wordt de gebruiker die het scenario heeft gemaakt de eigenaar. De eigenaar kan later worden gewijzigd.",
@@ -87378,7 +87541,7 @@ var jsonTranslationsFiles = {
 		"models.Company.properties.trackUserActivity.label": "Sta Surfy toe om gebruikersactiviteit te volgen en zo de gebruikerservaring te verbeteren.",
 		"models.Company.properties.workingDaysCount.description": "Het aantal werkdagen per week kan voor werkdagen 5 bedragen, 6 inclusief zaterdag en 7 inclusief zondag",
 		"models.Company.properties.workingDaysCount.label": "Aantal werkdagen per week",
-		"models.Company.properties.workplaceBookingConfirmationRange.description": "Tijdsbestek waarbinnen gebruikers hun werkplekreserveringen kunnen bevestigen. Formaat: UU:MM-UU:MM (bijv. 06:00-10:30). Laat dit veld leeg om de bevestiging van werkplekreserveringen uit te schakelen.",
+		"models.Company.properties.workplaceBookingConfirmationRange.description": "Tijdsbereik waarin gebruikers hun werkplekreserveringen kunnen bevestigen. Vereist formaat: HH:MM-HH:MM@IANA-tijdzone (bijv. 06:00-10:30@Europe/Paris). Laat dit veld leeg om de bevestiging van werkplekreserveringen uit te schakelen. IANA-tijdzone: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
 		"models.Company.properties.workplaceBookingConfirmationRange.label": "Bevestigingsvenster voor werkstationboeking",
 		"models.Company.reports.export-all-duplicate.fileName": "duplicatie",
 		"models.Company.reports.export-all-duplicate.help": "Maak een back-up van bedrijfsgegevens om een ​​kopie van het platform te maken",
@@ -87420,6 +87583,8 @@ var jsonTranslationsFiles = {
 		"models.CompanyWorkingLocation.determinants.undefined": "bedrijfswerkplekken",
 		"models.CompanyWorkingLocation.plural": "Werklocaties van het bedrijf",
 		"models.CompanyWorkingLocation.properties.id.label": "Identificatie van de werklocatie van het bedrijf",
+		"models.CompanyWorkingLocation.properties.label.description": "Dit label wordt voor deze werklocatie binnen het bedrijf weergegeven in plaats van het standaardlabel.",
+		"models.CompanyWorkingLocation.properties.label.label": "Aangepast label",
 		"models.CompanyWorkingLocation.singular": "Werklocatie van het bedrijf",
 		"models.ContentRole.description": "Een inhoudsrol definieert toegangsrechten tot verschillende platformgegevens voor gebruikers",
 		"models.ContentRole.determinant.defined": "de rol van de inhoud",
@@ -87753,6 +87918,8 @@ var jsonTranslationsFiles = {
 		"models.ItemType.singular": "object type",
 		"models.ItemType.views.avatar.help": "Zie de vorm van %{name}",
 		"models.ItemType.views.avatar.label": "Vorm",
+		"models.ItemType.views.dq-family-tenant-consistency.help": "Geef een lijst van de objecttypen die gekoppeld zijn aan een inconsistente familie; hiermee kunnen ze opnieuw worden toegewezen aan de familie ONGEKLASSIFICEERD.",
+		"models.ItemType.views.dq-family-tenant-consistency.label": "Onsamenhangende familie",
 		"models.ItemType.views.dq-not-used.help": "Maak een lijst van alle ongebruikte objecttypen via objecten of via ongebruikte werkstationtypen",
 		"models.ItemType.views.dq-not-used.label": "Niet gebruikt",
 		"models.ItemType.views.dq-uniq-name.help": "Lijst de typen objecten met dezelfde naam binnen hetzelfde bedrijf; hiermee kunt u ze hernoemen door (1), (2), (3) toe te voegen.",
@@ -88113,6 +88280,8 @@ var jsonTranslationsFiles = {
 		"models.Person.properties.info.label": "Opmerking",
 		"models.Person.properties.lastname.description": "De achternaam van de persoon",
 		"models.Person.properties.lastname.label": "Achternaam",
+		"models.Person.properties.mainLocation.description": "De referentie-instelling van de persoon in tekstformaat, vaak geïmporteerd uit het HRIS.",
+		"models.Person.properties.mainLocation.label": "Referentie-instelling",
 		"models.Person.properties.monitorReference.description": "De referentie van het computerscherm dat bij deze persoon hoort",
 		"models.Person.properties.monitorReference.label": "Schermreferentie",
 		"models.Person.properties.notAffectable.description": "De persoon kan niet worden toegewezen aan een werkstation-, ruimte-, gebouw- of opdrachtlaag",
@@ -88319,6 +88488,8 @@ var jsonTranslationsFiles = {
 		"models.PersonToWorkplaceBooking.determinants.defined": "reserveringen op de werkplekken van mensen",
 		"models.PersonToWorkplaceBooking.determinants.undefined": "reserveringen op de werkplekken van mensen",
 		"models.PersonToWorkplaceBooking.plural": "Reserveringen op de werkplekken van mensen",
+		"models.PersonToWorkplaceBooking.properties.emailConfirmationWarningNotificationSentAt.description": "De datum en tijd waarop de waarschuwingsmail werd verzonden vóór de annulering van de niet-bevestigde reservering.",
+		"models.PersonToWorkplaceBooking.properties.emailConfirmationWarningNotificationSentAt.label": "Bevestigingsmail verzonden op",
 		"models.PersonToWorkplaceBooking.properties.endDatetime.description": "De datum en tijd waarop de reservering eindigt",
 		"models.PersonToWorkplaceBooking.properties.endDatetime.label": "Einde reservering",
 		"models.PersonToWorkplaceBooking.properties.id.label": "Werkstationreserverings-ID voor personen",
@@ -88756,7 +88927,7 @@ var jsonTranslationsFiles = {
 		"useOpenMeetingRoomBookingDrawer.noRoomName": "Ongedefinieerde naamruimte",
 		"useOpenMeetingRoomBookingDrawer.roomBooking": "Ruimtereservering",
 		"validation.regex.company.name": "De bedrijfsnaam moet in kleine letters zijn en mag alleen letters, cijfers en koppeltekens bevatten",
-		"validation.regex.company.workplaceBookingConfirmationRange": "Het boekingsbevestigingsvenster moet de notatie UU:MM-UU:MM hebben (bijv. 06:00-10:30)",
+		"validation.regex.company.workplaceBookingConfirmationRange": "Het tijdsvenster voor de boekingsbevestiging moet de indeling HH:MM-HH:MM@IANA-tijdzone hebben (bijv. 06:00-10:30@Europe/Paris).",
 		"validation.regex.default": "De waarde moet overeenkomen met het formaat: %{pattern}",
 		"weight.gram": "Gram",
 		"weight.kilogram": "Kilogram",
@@ -88779,7 +88950,7 @@ var PolyglotHelpApi = class extends PolyglotApi {
 	}
 };
 //#endregion
-//#region src/front/jup/Application/Recoil/i18n/I18NHelpContext.tsx
+//#region src/front/jup/Application/Context/i18n/I18NHelpContext.tsx
 function I18NHelpContext(props) {
 	const { defaultLanguage } = props;
 	const [i18n, setI18n] = useAtom(polyglotApiAtom);
@@ -88790,13 +88961,13 @@ function I18NHelpContext(props) {
 	return null;
 }
 //#endregion
-//#region src/front/jup/Application/Recoil/SetupRecoilContext.tsx
-function SetupRecoilContext(props) {
+//#region src/front/jup/Application/SetupI18nContext.tsx
+function SetupI18nContext(props) {
 	const { defaultLanguage, I18nContext } = props;
-	return /* @__PURE__ */ jsx(RecoilRoot, { children: /* @__PURE__ */ jsx(I18nContext, {
+	return /* @__PURE__ */ jsx(I18nContext, {
 		defaultLanguage,
 		children: props.children
-	}) });
+	});
 }
 //#endregion
 //#region src/back/ModelDefinitions/schema.helper.ts
@@ -89524,4 +89695,4 @@ function SurfyHelpPropertyType(props) {
 	});
 }
 //#endregion
-export { ClickOnIndexViewMenuPathBreadcrumb, I18NHelpContext, ObjectTypeHelper, ObjectTypeIndexViewHelp, ObjectTypeMenuBreadcrumb, ObjectTypeSingularCapitalizedLabel, PropertyTypeDescription, PropertyTypeHelper, PropertyTypeLabel, PropertyTypeMandatoryLabel, SetupRecoilContext, SurfyHelpLinkToIndexView, SurfyHelpObjectType, SurfyHelpPropertyType, SurfyHelpStandaloneViewMenuBreadcrumb, appVersion, getObjectTypeDefinitionByName, getPropertyTypeByCode, getPropertyTypeByName, isTenantObjectType, useFlattenDeterminants, useTranslation };
+export { ClickOnIndexViewMenuPathBreadcrumb, I18NHelpContext, ObjectTypeHelper, ObjectTypeIndexViewHelp, ObjectTypeMenuBreadcrumb, ObjectTypeSingularCapitalizedLabel, PropertyTypeDescription, PropertyTypeHelper, PropertyTypeLabel, PropertyTypeMandatoryLabel, SetupI18nContext, SurfyHelpLinkToIndexView, SurfyHelpObjectType, SurfyHelpPropertyType, SurfyHelpStandaloneViewMenuBreadcrumb, appVersion, getObjectTypeDefinitionByName, getPropertyTypeByCode, getPropertyTypeByName, isTenantObjectType, useFlattenDeterminants, useTranslation };

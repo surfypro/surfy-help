@@ -78,6 +78,13 @@ Le courriel de la personne
 *Nom technique:* ```email```
 <PH code="person:email"/>
 
+### Établissement de référence {#main-location}
+
+L'établissement de référence de la personne sous forme de texte, souvent importé depuis le SI RH
+
+*Nom technique:* ```mainLocation```
+<PH code="person:mainLocation"/>
+
 ### Immatriculation {#registration-number}
 
 Le numéro d'immatriculation de la personne

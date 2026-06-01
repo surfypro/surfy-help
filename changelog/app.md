@@ -4,6 +4,85 @@ sidebar_position: 1
 
 # Nouveautés
 
+## 31 Mai 2026 - v3.4.207
+
+- Confirmation des réservations de postes
+  - La plage <P code="company:workplaceBookingConfirmationRange" /> doit inclure un **fuseau horaire IANA** (ex. `06:00-10:30@Europe/Paris`) pour que les rappels et annulations automatiques s’appliquent à la bonne heure locale.
+  - Dans **Mon planning**, la plage affichée pour confirmer une réservation du jour inclut ce fuseau horaire.
+
+- <OT code="itemType" />
+  - Nouveau rapport <LIV code="itemType:dq-family-tenant-consistency" /> pour repérer les types d’objet rattachés à une famille incohérente, avec une action de correction en masse vers la famille **Non classé** du tenant concerné.
+
+## 27 Mai 2026 - v3.4.202
+
+- Réservations de postes non confirmées
+  - Un premier e-mail d’avertissement est envoyé avant annulation de la réservation, puis la réservation est annulée automatiquement si elle n’est toujours pas confirmée.
+  - Les e-mails liés à ce processus intègrent un lien direct vers le planning personnel, avec une URL corrigée.
+  - Sur la réservation au poste, <P code="personToWorkplaceBooking:emailConfirmationWarningNotificationSentAt" /> indique si l’e-mail de rappel avant annulation a déjà été envoyé.
+  - Documentation avancée : [Confirmation des réservations et plages horaires](/entities/user-guide/booking-system/workplace-booking-confirmation-window).
+
+- E-mails de la plateforme
+  - Les e-mails envoyés par Surfy peuvent intégrer un branding enrichi (logo et paramètres d’expéditeur).
+
+- Réservation de parking
+  - Nouveau type de place **moto** disponible dans les types de places de parking.
+
+- Plans de réservation (poste de travail et parking)
+  - Sur les plans ouverts depuis le planning pour réserver un poste ou choisir un quartier, les espaces affichent le **nom d’affichage** de l’espace (et non plus le nom fusionné), ainsi que les personnes des calques d’affectation concernés.
+  - Lors de l’ouverture d’un plan depuis le planning, l’affichage se centre automatiquement sur la zone concernée (quartier, poste ou place de parking).
+  - Sur le plan de réservation de parking, les icônes de type d’espace sont affichées et le zoom se place sur la place déjà réservée ou sur les places disponibles.
+
+## 24 Mai 2026 - v3.4.199
+
+- <OT code="companyWorkingLocation" />
+  - Nouvelle propriété <P code="companyWorkingLocation:label" /> permettant de définir un **libellé personnalisé** pour chaque emplacement de travail de l’entreprise (au bureau, en télétravail, etc.).
+  - Ce libellé remplace le libellé par défaut dans le **planning**, les **réservations** et la **recherche globale** des personnes.
+  - Dans le planning, chaque choix d’emplacement de travail (bureau, télétravail, etc.) affiche une **info-bulle** rappelant ce que ce choix implique pour la réservation de poste et de parking sur site.
+
+- Plan
+  - Lors de l’affectation ou du retrait d’une personne sur un **espace** ou un **poste de travail**, les affectations et les indicateurs de l’espace concerné (occupation, comptages) se mettent à jour immédiatement sur le plan.
+
+- <OT code="building" />
+  - La propriété <P code="building:surface" /> est renommée **Surface déclarée**, avec une description précisant qu’il s’agit d’une valeur saisie manuellement, distincte de la surface qualifiée calculée à partir des espaces modélisés.
+
+- Réservation de parking (planning)
+  - Le panneau dépliable « Réserver un parking » n’apparaît que lorsqu’aucune place de parking n’est déjà réservée pour le créneau, ni dans le bâtiment courant ni dans un autre bâtiment.
+  - Si une réservation de parking existe déjà dans un autre bâtiment pour le même créneau, un message l’indique et les options de nouvelle réservation dans le bâtiment courant ne sont pas proposées.
+  - Lorsqu’une réservation existe déjà dans le bâtiment, les places réservées s’affichent directement, sans panneau dépliable.
+
+## 21 Mai 2026 - v3.4.199
+
+- <OT code="building" />
+  - Nouvelle propriété <P code="building:code" /> sur la fiche bâtiment.
+  - La <P code="building:surface" /> est également visible sur la carte du bâtiment lorsqu’elle est renseignée.
+
+- <OT code="person" />
+  - Nouvelle propriété <P code="person:mainLocation" /> (établissement de référence) sur la fiche personne.
+
+- Import des personnes, organisations et centres de coût depuis Workday
+  - L’import renseigne désormais <P code="person:mainLocation" /> à partir de la location Workday de la personne.
+  - Lors de l’étape d’affectations aux bâtiments, les options <P code="personToBuilding:allowWorkplaceBookingInTheBuilding" /> et <P code="personToBuilding:allowParkingBookingInTheBuilding" /> sont définies en fonction du <P code="building:code" /> du bâtiment concerné.
+  - L’étape d’affectation au véhicule thermique générique est bloquée avec un message explicite si le véhicule attendu (clé externe `GENERIC-THERMIC`) n’existe pas encore dans Surfy.
+
+- Affectation d’une personne sur le plan (dialogue de liste de contrôle)
+  - Lorsque vous affectez une personne à un **espace** ou à un **poste de travail**, le dialogue qui propose de retirer ses autres affectations existantes a été enrichi pour la section **bâtiments**.
+  - Chaque autre bâtiment listé affiche des pictogrammes : la personne est-elle **comptabilisée** dans le bâtiment (<P code="personToBuilding:addToPeopleCount" />), peut-elle **réserver un poste** (<P code="personToBuilding:allowWorkplaceBookingInTheBuilding" />) ou **réserver un parking** (<P code="personToBuilding:allowParkingBookingInTheBuilding" />) dans ce bâtiment.
+  - Par défaut, seules les affectations aux bâtiments où la personne est encore comptabilisée restent **cochées** ; les liaisons déjà exclues du comptage ne le sont plus automatiquement.
+  - Si vous confirmez le retrait d’une affectation à un bâtiment où la réservation de poste ou de parking est déjà autorisée, Surfy **ne supprime plus** la liaison : la personne n’est plus comptabilisée dans ce bâtiment, mais les options de réservation associées sont conservées.
+  - Les mêmes pictogrammes sont visibles dans la **fiche personne** (panneau des affectations aux bâtiments) et dans les **résultats de la recherche globale** des personnes.
+
+- Réservation de parking (planning)
+  - Les options de réservation de parking sont regroupées dans un panneau dépliable « Réserver un parking ».
+
+- Réservation de poste de travail sur un calque d’affectation
+  - Libellés du bouton de réservation clarifiés lorsqu’un étage précis est concerné pour le créneau choisi.
+
+- Propriétés de type couleur
+  - Saisie des couleurs plus fiable lors de la modification d’une propriété couleur sur une fiche.
+
+- <OT code="userRegistrationTenantRule" />
+  - Textes d’aide affinés pour les options liées aux claims OpenID et à l’association au tenant.
+
 ## 19 Mai 2026 - v3.4.197
 
 - Statistiques dans les filtres du plan (répartition par dimension)

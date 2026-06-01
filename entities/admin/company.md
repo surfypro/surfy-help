@@ -94,7 +94,7 @@ Le nombre de jours de travail par semaine peut être 5 pour les jours ouvrés, 6
 
 ### Plage de confirmation de réservation de poste de travail {#workplace-booking-confirmation-range}
 
-Plage horaire pendant laquelle les utilisateurs peuvent confirmer leurs réservations de postes de travail. Format: HH:MM-HH:MM (ex: 06:00-10:30). Ne rien mettre dans ce champ pour ne pas activer la confirmation de réservation de poste de travail
+Plage horaire pendant laquelle les utilisateurs peuvent confirmer leurs réservations de postes de travail. Format obligatoire: HH:MM-HH:MM@Timezone IANA (ex: 06:00-10:30@Europe/Paris). Ne rien mettre dans ce champ pour ne pas activer la confirmation de réservation de poste de travail. Timezone IANA: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 *Nom technique:* ```workplaceBookingConfirmationRange```
 <PH code="company:workplaceBookingConfirmationRange"/>

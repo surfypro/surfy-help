@@ -1,5 +1,84 @@
 # What's New
 
+## May 27, 2026 - v3.4.206
+
+- Workstation booking confirmation
+  - The <P code="company:workplaceBookingConfirmationRange" /> window must include an **IANA timezone** (e.g. `06:00-10:30@Europe/Paris`) so reminder and automatic cancellation emails run at the correct local time.
+  - In **My planning**, the confirmation window shown for same-day bookings includes this timezone.
+
+- <OT code="itemType" />
+  - New report <LIV code="itemType:dq-family-tenant-consistency" /> to find object types linked to a family from another tenant, with a bulk fix action to assign them to the tenant’s **Unclassified** family.
+
+## May 27, 2026 - v3.4.202
+
+- Unconfirmed workstation bookings
+  - A warning email is now sent before cancellation, and the booking is automatically cancelled if it is still not confirmed.
+  - Emails in this flow now include a direct link to personal planning, with corrected URL formatting.
+  - On the workstation booking record, <P code="personToWorkplaceBooking:emailConfirmationWarningNotificationSentAt" /> shows whether the pre-cancellation warning email has been sent.
+  - Advanced guide: [Workplace booking confirmation windows](/entities/user-guide/booking-system/workplace-booking-confirmation-window).
+
+- Platform emails
+  - Emails sent by Surfy can now include improved branding (logo and sender settings).
+
+- Parking booking
+  - New **motorbike** parking space type is now available in parking space types.
+
+- Booking maps (workstation and parking)
+  - On maps opened from planning to book a workstation or select a district, spaces now show the **display name** (instead of the merged name), along with people on the relevant assignment layers.
+  - When you open a map from planning, the view automatically centers on the relevant area (district, workstation or parking space).
+  - On the parking booking map, space type icons are shown and zoom focuses on your booked space or available spaces.
+
+## May 24, 2026 - v3.4.199
+
+- <OT code="companyWorkingLocation" />
+  - New property <P code="companyWorkingLocation:label" /> lets you set a **custom label** for each company working location (office, remote work, etc.).
+  - This label replaces the default wording in **planning**, **bookings** and **global person search**.
+  - In planning, each working location choice (office, remote work, etc.) shows a **tooltip** explaining what that choice means for on-site workstation and parking booking.
+
+- Plan
+  - When you assign or remove a person on a **space** or **workstation**, assignments and indicators for that space (occupancy, counts) update immediately on the plan.
+
+- <OT code="building" />
+  - Property <P code="building:surface" /> is now labeled **Declared surface**, with a description clarifying that it is a manually entered value, separate from qualified surface calculated from modeled spaces.
+
+- Parking booking (planning)
+  - The collapsible “Book parking” panel appears only when no parking space is already booked for the time slot, in the current building or another building.
+  - If a parking booking already exists in another building for the same slot, a message explains this and new booking options are not offered for the current building.
+  - When a booking already exists in the building, reserved spaces are shown directly, without the collapsible panel.
+
+## May 21, 2026 - v3.4.199
+
+- <OT code="building" />
+  - New property <P code="building:code" /> on the building record.
+  - <P code="building:surface" /> is also shown on the building card when set.
+
+- <OT code="person" />
+  - New property <P code="person:mainLocation" /> (reference establishment) on the person record.
+
+- Workday import of people, organizations and cost centers
+  - The import now sets <P code="person:mainLocation" /> from each person’s Workday location.
+  - During the building-assignment step, <P code="personToBuilding:allowWorkplaceBookingInTheBuilding" /> and <P code="personToBuilding:allowParkingBookingInTheBuilding" /> are set according to the target building’s <P code="building:code" />.
+  - The generic thermal vehicle assignment step is blocked with a clear message if the expected vehicle (external key `GENERIC-THERMIC`) does not exist in Surfy yet.
+
+- Assigning a person on the plan (checklist dialog)
+  - When you assign a person to a **space** or **workstation**, the dialog that offers to remove their other existing assignments has been improved for the **buildings** section.
+  - Each other building listed shows icons for whether the person is **counted** in the building (<P code="personToBuilding:addToPeopleCount" />), may **book a workstation** (<P code="personToBuilding:allowWorkplaceBookingInTheBuilding" />), or may **book parking** (<P code="personToBuilding:allowParkingBookingInTheBuilding" />) there.
+  - By default, only building assignments where the person is still counted remain **checked**; links already excluded from the count are no longer selected automatically.
+  - If you confirm removing an assignment to a building where workstation or parking booking is already allowed, Surfy **no longer deletes** the link: the person is removed from the building count, but the related booking options are kept.
+  - The same icons appear on the **person record** (building assignments panel) and in **global person search** results.
+
+- Parking booking (planning)
+  - Parking booking options are grouped in a collapsible “Book parking” panel.
+
+- Workstation booking on an assignment layer
+  - Clearer booking button labels when a specific floor applies to the selected time slot.
+
+- Color properties
+  - More reliable color entry when editing a color property on a record.
+
+- <OT code="userRegistrationTenantRule" />
+  - Refined help texts for OpenID claim options and tenant association.
+
 ## May 19, 2026 - v3.4.197
 
 - Statistics in plan filters (breakdown by dimension)
