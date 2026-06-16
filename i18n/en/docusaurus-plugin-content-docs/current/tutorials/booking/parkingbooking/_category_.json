@@ -1,0 +1,9 @@
+{
+  "label": "Parking space booking in Surfy",
+  "position": 3,
+  "link": {
+    "slug": "parkingbooking",
+    "type": "generated-index",
+    "description": "Everything about parking space booking in Surfy"
+  }
+}

@@ -355,6 +355,14 @@
     "message": "Everything about meeting room booking in Surfy",
     "description": "The generated-index page description for category La réservation de salle de réunion in sidebar s1"
   },
+  "sidebar.help-sidebar.category.La réservation de place de parking": {
+    "message": "Parking space booking in Surfy",
+    "description": "The label for category La réservation de place de parking in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.La réservation de place de parking.link.generated-index.description": {
+    "message": "Everything about parking space booking in Surfy",
+    "description": "The generated-index page description for category La réservation de place de parking in sidebar help-sidebar"
+  },
   "sidebar.s1.category.Le tableau de bord du bâtiment": {
     "message": "Building Dashboard",
     "description": "The label for category Le tableau de bord du bâtiment in sidebar s1"
