@@ -1,0 +1,9 @@
+{
+  "label": "La réservation de place de parking",
+  "position": 3,
+  "link": {
+    "slug": "parkingbooking",
+    "type": "generated-index",
+    "description": "Tout savoir sur la réservation de place de parking dans Surfy"
+  }
+}
