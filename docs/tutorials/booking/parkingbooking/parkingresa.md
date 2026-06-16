@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Accès à la réservation de parking
@@ -19,9 +19,9 @@ L'utilisation de Teams offre une expérience plus directe et plus adaptée à un
 
 ## Réserver une place de parking
 
-La réservation de place de parking s'effectue par la même interface que la [réservation de poste de travail](/docs/tutorials/booking/workstationbooking/workplace/).
+La réservation de place de parking s'effectue par la même interface que la [réservation de poste de travail](/docs/tutorials/booking/workstationbooking/workplace).
 
-L'utilisateur dont le collaborateur associé est correctement configuré (voir le [Guide de démarrage de la réservation de parking](docs\tutorials\booking\parkingbooking\admin.md)) peut alors réserver une place de parking dans les bâtiments indiquant la lettre "P" dans le récapitulatif de ses affectations, en haut de la page de réservation.
+L'utilisateur dont le collaborateur associé est correctement configuré (voir le [Guide de démarrage de la réservation de parking](/docs/tutorials/booking/parkingbooking/admin)) peut alors réserver une place de parking dans les bâtiments indiquant la lettre "P" dans le récapitulatif de ses affectations, en haut de la page de réservation.
 
 En cliquant sur "RESERVER", la case "Réserver un parking" permet de choisir sur le plan la place de parking adequate le jour voulu. Les places libres sont coloriées en vert.<br />
 Cliquer sur une place de parking sur le plan valide la réservation le jour choisi.<br />
