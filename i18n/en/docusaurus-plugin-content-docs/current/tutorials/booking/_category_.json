@@ -1,9 +1,9 @@
 {
-  "label": "Booking in Surfy",
+  "label": "Booking with Surfy",
   "position": 13,
   "link": {
     "slug": "booking",
     "type": "generated-index",
-    "description": "Booking in Surfy for your users"
+    "description": "Booking with Surfy for your users"
   }
 }
