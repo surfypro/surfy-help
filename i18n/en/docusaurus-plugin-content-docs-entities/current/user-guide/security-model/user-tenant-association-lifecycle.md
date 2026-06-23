@@ -27,7 +27,7 @@ For each tenant defined by applicable rules:
 - if the user-tenant association already exists, Surfy reuses it,
 - otherwise Surfy creates the user-tenant association.
 
-If <P code="userRegistrationTenantRule:useOpenIdTokenClaimsToAssociateToTenant" /> is enabled on the rule, this association is created only when the token `roles` array contains the exact value `Surfy.Tenant.{ExactTenantName}`.
+If <P code="userRegistrationTenantRule:useOpenIdTokenClaimsToAssociateToTenant" /> is enabled on the rule, this association is created only when the token contains the expected claim: either `Surfy.Tenant.{ExactTenantName}` in the `roles` array, or a value matching <P code="company:jwtClaimCode" /> in the claim named by <P code="userRegistrationTenantRule:jwtTokenTenantMappingPropertyName" /> (see [Associate a user to a tenant via a custom JWT claim](./tenant-association-via-jwt-claim.md)).
 
 This check only controls creation of the user-tenant association. It does not automatically remove an existing association.
 

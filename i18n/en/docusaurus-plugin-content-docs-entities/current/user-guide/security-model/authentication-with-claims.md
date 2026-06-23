@@ -70,6 +70,12 @@ Example:
 - `roles: ["Surfy.Tenant.acme-corp"]` authorizes association to the tenant whose exact name is `acme-corp`.
 - `roles: ["Surfy.Tenant.acme-corp.Role.AdminTenant"]` grants a role scoped to that tenant, but does not create the user-tenant association by itself.
 
+### Custom JWT claim (alternative)
+
+When the identity provider cannot use `roles` for tenant association, set <P code="userRegistrationTenantRule:jwtTokenTenantMappingPropertyName" /> on the rule and <P code="company:jwtClaimCode" /> on the company. Surfy then reads another token claim and compares its values to the code defined on the company.
+
+Detailed guide: [Associate a user to a tenant via a custom JWT claim](./tenant-association-via-jwt-claim.md).
+
 ## Interaction with static rules
 
 When <P code="userRegistrationTenantRule:automaticUserToRoleMapping" /> is also enabled, roles not exposed as claims can still be added by the rule, but only when a new user is automatically associated for the first time.
