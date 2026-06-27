@@ -12,7 +12,7 @@ L’application utilisée au quotidien par la plupart des organisations reste su
 
 Lors d’une mise en production, le contenu utile est repris dans la page [Nouveautés](./app.md) ; cette page est ensuite masquée en la renommant `_app-alpha.md`.
 
-## 23 Juin 2026 - v3.4.217
+## 27 Juin 2026 - v3.5.1
 
 Synthèse des évolutions testées sur l’alpha depuis la production (`master`), incluant les travaux des branches `meetingrooms` et `react19`.
 
@@ -35,6 +35,9 @@ Synthèse des évolutions testées sur l’alpha depuis la production (`master`)
   - Visible sur les cartes de sélection de tenant, dans la barre de recherche (filtre sur le nom d’affichage) et dans le menu de changement de tenant.
   - Les listes de plateformes sont triées par nom d’affichage.
 
+- <OT code="building" />
+  - <P code="building:regulatoryCapacity" /> est recalculée automatiquement à partir des étages du bâtiment.
+
 ### Planning et réservations
 
 - Réservation de **parking** (Mon planning)
@@ -54,6 +57,10 @@ Synthèse des évolutions testées sur l’alpha depuis la production (`master`)
 - **Plan**
   - Image de fond affichée plus nettement en mode consultation, fluide en mode édition.
   - **Échelle du plan** : création et liaison à l’étage plus fluides ; couleurs des segments clarifiées pendant le tracé.
+  - **Fusionner les sommets** : option pour réutiliser le même sommet entre espaces adjacents.
+  - **Affectation d’une personne** sur un espace ou un poste : fonctionne même si la personne n’est pas encore chargée sur le plan.
+  - **Liste des étages** (bandeau à droite du plan) : affichage en colonne.
+  - Ouverture du plan depuis un **lien avec sélection** (poste, espace, etc.) : mise en surbrillance plus fiable.
   - Suppression d’un **espace** : les points de segment devenus orphelins sont retirés du plan et de la base.
 
 - **Vue 3D du bâtiment**
@@ -69,8 +76,11 @@ Synthèse des évolutions testées sur l’alpha depuis la production (`master`)
 
 - **Opérations du tenant**
   - Import de **personnes et d’organisations** depuis un fichier RH au format CSV (lorsque l’opération est activée sur le tenant).
+  - Les lignes du fichier RH peuvent être filtrées selon le **lieu de travail autorisé** configuré pour l’import.
 
 ### Interface générale
+
+- **Fiches entités** : chargement plus fluide à l’ouverture d’une fiche en édition ou consultation.
 
 - **Listes d’entités** : message explicite lorsque la pagination dépasse le nombre d’éléments disponibles.
 - **Menu latéral** : correction de l’affichage des entrées imbriquées.

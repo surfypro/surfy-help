@@ -8,7 +8,7 @@ Most organizations’ day-to-day application remains at [https://app.surfy.pro](
 
 When a release goes to production, useful content is moved to [What's New](./app.md); this page is then hidden by renaming it to `_app-alpha.md`.
 
-## June 23, 2026 - v3.4.217
+## June 27, 2026 - v3.5.1
 
 Summary of updates tested on alpha since production (`master`), including work from the `meetingrooms` and `react19` branches.
 
@@ -31,6 +31,9 @@ Summary of updates tested on alpha since production (`master`), including work f
   - Shown on tenant selection cards, in the search bar (filters by display name) and in the change-tenant menu.
   - Platform lists are sorted by display name.
 
+- <OT code="building" />
+  - <P code="building:regulatoryCapacity" /> is automatically recalculated from the building’s floors.
+
 ### Planning and bookings
 
 - **Parking** booking (My planning)
@@ -50,6 +53,10 @@ Summary of updates tested on alpha since production (`master`), including work f
 - **Plan**
   - Background image sharper in view mode, smooth in edit mode.
   - **Map scale**: smoother creation and linking to the floor; clearer segment colours while drawing.
+  - **Merge vertices**: option to reuse the same vertex across adjacent spaces.
+  - **Person assignment** on a space or workstation: works even when the person is not yet loaded on the plan.
+  - **Floor list** (right-hand strip on the plan): displayed as a column.
+  - Opening the plan from a **link with selection** (workstation, space, etc.): more reliable highlighting.
   - **Space** deletion: orphan segment points are removed from the plan and database.
 
 - **Building 3D view**
@@ -65,8 +72,11 @@ Summary of updates tested on alpha since production (`master`), including work f
 
 - **Tenant operations**
   - Import **people and organizations** from an HR file in CSV format (when the operation is enabled on the tenant).
+  - HR file rows can be filtered by the **authorized workplace** configured for the import.
 
 ### General interface
+
+- **Entity cards**: smoother loading when opening a record for edit or view.
 
 - **Entity lists**: clear message when pagination goes beyond the number of available items.
 - **Side menu**: fixed display of nested entries.

@@ -70434,8 +70434,8 @@ function SurfyHelpStandaloneViewMenuBreadcrumb(props) {
 //#region src/version.json
 var version = {
 	"major": 3,
-	"minor": 4,
-	"build": 217
+	"minor": 5,
+	"build": 1
 };
 //#endregion
 //#region src/back/Tracking/version.ts
@@ -71815,7 +71815,7 @@ var jsonTranslationsFiles = {
 		"models.Building.properties.picture.label": "Photo du bâtiment",
 		"models.Building.properties.purchaseDate.description": "Date d'achat du bâtiment",
 		"models.Building.properties.purchaseDate.label": "Date d'achat du bâtiment",
-		"models.Building.properties.regulatoryCapacity.description": "La capacité réglementaire du plateau, permet de gérer l'évacuation du public et des employés",
+		"models.Building.properties.regulatoryCapacity.description": "La capacité réglementaire du bâtiment est la somme des capacités réglementaires des étages du bâtiment, permet de gérer l'évacuation du public et des employés",
 		"models.Building.properties.regulatoryCapacity.label": "Capacité réglementaire",
 		"models.Building.properties.rentReferenceIndex.description": "L'indice de référence des loyers (IRL) sert de base pour réviser les loyers des logements vides ou meublés",
 		"models.Building.properties.rentReferenceIndex.label": "Indice de référence des loyers",
@@ -75443,7 +75443,7 @@ var jsonTranslationsFiles = {
 		"models.Building.properties.picture.label": "Photo of the building",
 		"models.Building.properties.purchaseDate.description": "Building purchase date",
 		"models.Building.properties.purchaseDate.label": "Building purchase date",
-		"models.Building.properties.regulatoryCapacity.description": "The regulatory capacity of the platform, makes it possible to manage the evacuation of the public and employees",
+		"models.Building.properties.regulatoryCapacity.description": "The building's regulatory capacity is the sum of the regulatory capacities of the building's floors, and allows for the management of public and employee evacuation.",
 		"models.Building.properties.regulatoryCapacity.label": "Regulatory capacity",
 		"models.Building.properties.rentReferenceIndex.description": "The Rent Reference Index (RRI) is used as the basis for revising the rents for empty or furnished dwellings",
 		"models.Building.properties.rentReferenceIndex.label": "Rent benchmark",
@@ -79071,7 +79071,7 @@ var jsonTranslationsFiles = {
 		"models.Building.properties.picture.label": "Foto del edificio",
 		"models.Building.properties.purchaseDate.description": "Fecha de compra del edificio",
 		"models.Building.properties.purchaseDate.label": "Fecha de compra del edificio",
-		"models.Building.properties.regulatoryCapacity.description": "La capacidad reguladora de la plataforma permite gestionar la evacuación de público y empleados",
+		"models.Building.properties.regulatoryCapacity.description": "La capacidad regulatoria del edificio es la suma de las capacidades regulatorias de las plantas del edificio y permite gestionar la evacuación del público y de los empleados.",
 		"models.Building.properties.regulatoryCapacity.label": "Capacidad reguladora",
 		"models.Building.properties.rentReferenceIndex.description": "El índice de referencia de alquiler (RRI) se utiliza como base para revisar los alquileres de viviendas vacías o amuebladas.",
 		"models.Building.properties.rentReferenceIndex.label": "Referencia de alquiler",
@@ -82699,7 +82699,7 @@ var jsonTranslationsFiles = {
 		"models.Building.properties.picture.label": "Foto dell'edificio",
 		"models.Building.properties.purchaseDate.description": "Data di acquisto dell'immobile",
 		"models.Building.properties.purchaseDate.label": "Data di acquisto dell'immobile",
-		"models.Building.properties.regulatoryCapacity.description": "La capacità normativa del set, permette di gestire l'evacuazione del pubblico e dei dipendenti",
+		"models.Building.properties.regulatoryCapacity.description": "La capacità regolatrice dell'edificio è la somma delle capacità regolatrici dei piani dell'edificio e consente la gestione dell'evacuazione del pubblico e dei dipendenti.",
 		"models.Building.properties.regulatoryCapacity.label": "Capacità normativa",
 		"models.Building.properties.rentReferenceIndex.description": "L'indice di riferimento dell'affitto (IRL) serve come base per la revisione degli affitti di alloggi vuoti o arredati",
 		"models.Building.properties.rentReferenceIndex.label": "Indice di riferimento per gli affitti",
@@ -86327,7 +86327,7 @@ var jsonTranslationsFiles = {
 		"models.Building.properties.picture.label": "Foto van het gebouw",
 		"models.Building.properties.purchaseDate.description": "Datum van aankoop van het gebouw",
 		"models.Building.properties.purchaseDate.label": "Datum van aankoop van het gebouw",
-		"models.Building.properties.regulatoryCapacity.description": "De regelgevende capaciteit van het platform maakt het mogelijk om de evacuatie van publiek en werknemers te beheren",
+		"models.Building.properties.regulatoryCapacity.description": "De regulerende capaciteit van het gebouw is de som van de regulerende capaciteiten van de verdiepingen van het gebouw en maakt het mogelijk om de evacuatie van publiek en personeel te regelen.",
 		"models.Building.properties.regulatoryCapacity.label": "Regelgevende capaciteit",
 		"models.Building.properties.rentReferenceIndex.description": "De huurreferentie-index (IRL) dient als basis voor de herziening van de huurprijzen van leegstaande of gemeubileerde woonruimte",
 		"models.Building.properties.rentReferenceIndex.label": "Huurbenchmarkindex",
