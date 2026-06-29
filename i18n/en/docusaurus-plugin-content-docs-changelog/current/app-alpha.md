@@ -8,6 +8,19 @@ Most organizations’ day-to-day application remains at [https://app.surfy.pro](
 
 When a release goes to production, useful content is moved to [What's New](./app.md); this page is then hidden by renaming it to `_app-alpha.md`.
 
+## June 29, 2026 - v3.5.2
+
+- **Building 3D view**
+  - More reliable display of workstations and items when loading and when switching plan views.
+  - Spaces are coloured according to the active **plan view** (space types, districts, cost allocation, etc.).
+  - **Partitions** view: item types are no longer left selected by mistake after switching views.
+
+- <LIV code="person:dq-no-affectations" />
+  - **Exclude scenario buildings** checkbox to remove those buildings from the people-without-assignments table.
+
+- <OT code="personToRoomBooking" /> and <OT code="personToWorkplaceBooking" />
+  - Clearer breadcrumb trail and labels when viewing a booking (person, room or workstation concerned).
+
 ## June 27, 2026 - v3.5.1
 
 Summary of updates tested on alpha since production (`master`), including work from the `meetingrooms` and `react19` branches.

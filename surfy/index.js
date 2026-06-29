@@ -70435,7 +70435,7 @@ function SurfyHelpStandaloneViewMenuBreadcrumb(props) {
 var version = {
 	"major": 3,
 	"minor": 5,
-	"build": 1
+	"build": 2
 };
 //#endregion
 //#region src/back/Tracking/version.ts
@@ -73507,6 +73507,7 @@ var jsonTranslationsFiles = {
 		"PersonCostCenterWorkplaceInfo.nodeInfo.workplaceCount": "Il y a %{count} postes de travail avec au moins une personne avec le centre de coût %{costCenterName}",
 		"PersonDataQualityWithoutAffectation.costCenterHeader": "Centre de coût",
 		"PersonDataQualityWithoutAffectation.directionHeader": "Direction",
+		"PersonDataQualityWithoutAffectation.excludeScenarioBuildingsLabel": "Exclure les bâtiments scénarios",
 		"PersonDataQualityWithoutAffectation.serviceHeader": "Service",
 		"PersonInfoPanel.title": "Informations personnelles",
 		"PersonInventoryPanelView.description": "Informations relatives à l'inventaire",
@@ -77135,6 +77136,7 @@ var jsonTranslationsFiles = {
 		"PersonCostCenterWorkplaceInfo.nodeInfo.workplaceCount": "There are %{count} workstations with at least one person with cost center %{costCenterName}",
 		"PersonDataQualityWithoutAffectation.costCenterHeader": "Cost center",
 		"PersonDataQualityWithoutAffectation.directionHeader": "Direction",
+		"PersonDataQualityWithoutAffectation.excludeScenarioBuildingsLabel": "Exclude scenario buildings",
 		"PersonDataQualityWithoutAffectation.serviceHeader": "Service",
 		"PersonInfoPanel.title": "Personal informations",
 		"PersonInventoryPanelView.description": "Inventory-related information",
@@ -80763,6 +80765,7 @@ var jsonTranslationsFiles = {
 		"PersonCostCenterWorkplaceInfo.nodeInfo.workplaceCount": "Hay %{count} estaciones de trabajo con al menos una persona con centro de costos %{costCenterName}",
 		"PersonDataQualityWithoutAffectation.costCenterHeader": "Centro de coste",
 		"PersonDataQualityWithoutAffectation.directionHeader": "Dirección",
+		"PersonDataQualityWithoutAffectation.excludeScenarioBuildingsLabel": "Excluir edificios de escenario",
 		"PersonDataQualityWithoutAffectation.serviceHeader": "Servicio",
 		"PersonInfoPanel.title": "Información personal",
 		"PersonInventoryPanelView.description": "Información de inventario",
@@ -84391,6 +84394,7 @@ var jsonTranslationsFiles = {
 		"PersonCostCenterWorkplaceInfo.nodeInfo.workplaceCount": "Ci sono %{count} postazioni di lavoro con almeno una persona con centro di costo %{costCenterName}",
 		"PersonDataQualityWithoutAffectation.costCenterHeader": "Centro di costo",
 		"PersonDataQualityWithoutAffectation.directionHeader": "Direzione",
+		"PersonDataQualityWithoutAffectation.excludeScenarioBuildingsLabel": "Escludi gli edifici dello scenario",
 		"PersonDataQualityWithoutAffectation.serviceHeader": "Servizio",
 		"PersonInfoPanel.title": "Informazioni personali",
 		"PersonInventoryPanelView.description": "Informazioni sull'inventario",
@@ -88019,6 +88023,7 @@ var jsonTranslationsFiles = {
 		"PersonCostCenterWorkplaceInfo.nodeInfo.workplaceCount": "Er zijn %{count} werkstations met minstens één persoon met kostenplaats %{costCenterName}",
 		"PersonDataQualityWithoutAffectation.costCenterHeader": "Kostenplaats",
 		"PersonDataQualityWithoutAffectation.directionHeader": "Richting",
+		"PersonDataQualityWithoutAffectation.excludeScenarioBuildingsLabel": "Scenario-gebouwen uitsluiten",
 		"PersonDataQualityWithoutAffectation.serviceHeader": "Dienst",
 		"PersonInfoPanel.title": "Persoonlijke informatie",
 		"PersonInventoryPanelView.description": "Voorraadinformatie",

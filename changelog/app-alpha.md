@@ -12,6 +12,19 @@ L’application utilisée au quotidien par la plupart des organisations reste su
 
 Lors d’une mise en production, le contenu utile est repris dans la page [Nouveautés](./app.md) ; cette page est ensuite masquée en la renommant `_app-alpha.md`.
 
+## 29 Juin 2026 - v3.5.2
+
+- **Vue 3D du bâtiment**
+  - Affichage des postes de travail et des objets plus fiable au chargement et lors des changements de vision.
+  - Les espaces sont colorés selon la **vision du plan** active (typologies, quartiers, refacturation, etc.).
+  - Vision **Cloisons** : les types d’objets ne restent plus sélectionnés par erreur après un changement de vision.
+
+- <LIV code="person:dq-no-affectations" />
+  - Case à cocher **Exclure les bâtiments scénarios** pour retirer ces bâtiments du tableau des personnes sans affectation.
+
+- <OT code="personToRoomBooking" /> et <OT code="personToWorkplaceBooking" />
+  - Fil d’Ariane et libellés plus explicites lors de la consultation d’une réservation (personne, salle ou poste concerné).
+
 ## 27 Juin 2026 - v3.5.1
 
 Synthèse des évolutions testées sur l’alpha depuis la production (`master`), incluant les travaux des branches `meetingrooms` et `react19`.
