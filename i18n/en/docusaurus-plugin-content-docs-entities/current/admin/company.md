@@ -43,6 +43,13 @@ Expected value in the JWT token to associate the user with this company when the
 *Technical name:* ```jwtClaimCode```
 <PH code="company:jwtClaimCode"/>
 
+### Create a calendar invitation for each reservation {#workplace-booking-agenda-sync-enabled}
+
+For each workstation or parking reservation, an invitation is sent to the employee's calendar (Outlook, Gmail, etc.); the invitation is removed in case of cancellation.
+
+*Technical name:* ```workplaceBookingAgendaSyncEnabled```
+<PH code="company:workplaceBookingAgendaSyncEnabled"/>
+
 ### Display name {#pretty-name}
 
 Company name displayed in the interface, in addition to the technical identifier (name)

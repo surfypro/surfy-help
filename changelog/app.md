@@ -4,6 +4,68 @@ sidebar_position: 1
 
 # Nouveautés
 
+## 30 Juin 2026 - v3.5.5
+
+- <OT code="userRegistrationTenantRule" />
+  - Association automatique d’un utilisateur à un tenant lorsque son jeton de connexion contient un claim personnalisé correspondant au code défini sur l’entreprise.
+  - <P code="userRegistrationTenantRule:jwtTokenTenantMappingPropertyName" /> : nom du claim à lire dans le jeton.
+  - <P code="company:jwtClaimCode" /> : valeur attendue dans ce claim.
+  - Le mode existant via `Surfy.Tenant.{NomExactDuTenant}` dans les rôles du jeton reste disponible si le claim personnalisé n’est pas renseigné.
+  - Guide : [Associer un utilisateur à un tenant via un claim JWT personnalisé](/entities/user-guide/security-model/tenant-association-via-jwt-claim).
+
+- Connexion
+  - Après authentification, la redirection peut cibler une URL précise transmise dans le lien (par exemple depuis un **QR code d’affectation de poste**).
+  - Message de recherche sur l’écran de sélection de plateforme reformulé (« Aucune plateforme trouvée »).
+  - Prise en charge d’une connexion **OpenID via ADFS** pour l’authentification (lorsqu’elle est configurée sur la plateforme).
+  - Lors de la première connexion, la **photo de profil** peut être importée automatiquement depuis le jeton de connexion lorsque le fournisseur d’identité la fournit.
+
+- <OT code="company" />
+  - Nouvelle propriété <P code="company:prettyName" /> : **nom d’affichage** de l’entreprise, en complément de l’identifiant technique.
+  - Visible sur les cartes de sélection de tenant, dans la barre de recherche (filtre sur le nom d’affichage) et dans le menu de changement de tenant.
+  - Les listes de plateformes sont triées par nom d’affichage.
+
+- <OT code="building" />
+  - <P code="building:regulatoryCapacity" /> est recalculée automatiquement à partir des étages du bâtiment et affichée sur la **carte d’accueil** du bâtiment.
+
+- Planning et réservations
+  - Réservation de **parking** (Mon planning) : bouton par **étage** du bâtiment avec le nombre de places disponibles ; info-bulle détaillant les réservations en cours et la disponibilité par type de place.
+  - Réservation de **poste de travail** : bouton **Libérer cette réservation** sur les postes déjà réservés dans le planning.
+  - Confirmation des réservations du jour : seules les réservations **créées avant la fin** de la plage <P code="company:workplaceBookingConfirmationRange" /> peuvent recevoir un rappel ou être annulées automatiquement ; une réservation prise après cette heure (ex. sur un poste libéré en cours de journée) n’est plus concernée par ce processus.
+  - Réservation de **salles de réunion** : messages d’erreur plus explicites lors d’un échec de création de rendez-vous via le calendrier Microsoft.
+
+- <OT code="personToRoomBooking" /> et <OT code="personToWorkplaceBooking" />
+  - Fil d’Ariane et libellés plus explicites lors de la consultation d’une réservation (personne, salle ou poste concerné).
+
+- <LIV code="person:dq-no-affectations" />
+  - Case à cocher **Exclure les bâtiments scénarios** pour retirer ces bâtiments du tableau des personnes sans affectation.
+
+- **Plan**
+  - Image de fond affichée plus nettement en mode consultation.
+  - **Échelle du plan** : couleurs des segments clarifiées pendant le tracé.
+  - **Fusionner les sommets** : option pour réutiliser le même sommet entre espaces adjacents.
+  - **Affectation d’une personne** sur un espace ou un poste : fonctionne même si la personne n’est pas encore chargée sur le plan.
+  - **Liste des étages** (bandeau à droite du plan) : affichage en colonne.
+  - Ouverture du plan depuis un **lien avec sélection** (poste, espace, etc.) : mise en surbrillance plus fiable.
+  - Suppression d’un **espace** : les points de segment devenus orphelins sont retirés du plan et de la base.
+
+- **Vue 3D du bâtiment**
+  - Affichage des postes de travail et des objets plus fiable lors des changements de vision.
+  - Les espaces sont colorés selon la **vision du plan** active (typologies, quartiers, refacturation, etc.).
+  - Vision **Cloisons** : les types d’objets ne restent plus sélectionnés par erreur après un changement de vision.
+
+- **Import Excel**
+  - Gabarits téléchargeables et liste des colonnes à copier : en-têtes alignés avec l’importeur (apostrophes retirées des libellés français).
+
+- <OT code="building" />
+  - Rapport **Espaces** : export enrichi avec les identifiants des espaces, étages, bâtiments, centres de coût, organisations, types de coûts de distribution et types d’espaces.
+
+- **Opérations du tenant**
+  - Import de **personnes et d’organisations** depuis un fichier RH au format CSV (lorsque l’opération est activée sur le tenant).
+  - Les lignes du fichier RH peuvent être filtrées selon le **lieu de travail autorisé** configuré pour l’import.
+
+- **Interface générale**
+  - **Listes d’entités** : message explicite lorsque la pagination dépasse le nombre d’éléments disponibles.
+
 ## 31 Mai 2026 - v3.4.207
 
 - Confirmation des réservations de postes

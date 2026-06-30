@@ -248,7 +248,7 @@ Rate of workstations shared by at least 2 people compared to all workstations in
 
 ### Regulatory capacity {#regulatory-capacity}
 
-The regulatory capacity of the platform, makes it possible to manage the evacuation of the public and employees
+The building's regulatory capacity is the sum of the regulatory capacities of the building's floors, and allows for the management of public and employee evacuation.
 
 *Technical name:* ```regulatoryCapacity```
 <PH code="building:regulatoryCapacity"/>

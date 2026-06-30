@@ -52,7 +52,7 @@ Année de construction de l'immeuble permettant de mesurer sa vétusté
 
 ### Capacité réglementaire {#regulatory-capacity}
 
-La capacité réglementaire du plateau, permet de gérer l'évacuation du public et des employés
+La capacité réglementaire du bâtiment est la somme des capacités réglementaires des étages du bâtiment, permet de gérer l'évacuation du public et des employés
 
 *Nom technique:* ```regulatoryCapacity```
 <PH code="building:regulatoryCapacity"/>

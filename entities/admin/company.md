@@ -64,6 +64,13 @@ Valeur attendue dans le token JWT pour associer l'utilisateur à cette entrepris
 *Nom technique:* ```jwtClaimCode```
 <PH code="company:jwtClaimCode"/>
 
+### Créer une invitation calendrier pour chaque réservation {#workplace-booking-agenda-sync-enabled}
+
+À chaque réservation de poste ou de parking, envoie une invitation dans le calendrier du collaborateur (Outlook, Gmail, etc.) ; l'invitation est retirée en cas d'annulation
+
+*Nom technique:* ```workplaceBookingAgendaSyncEnabled```
+<PH code="company:workplaceBookingAgendaSyncEnabled"/>
+
 ### Icône {#icon-path}
 
 Le logo de l'entreprise en carré
