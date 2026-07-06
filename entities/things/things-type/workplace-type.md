@@ -57,6 +57,13 @@ sidebar_label: "Type de poste de travail"
 *Nom technique:* ```size```
 <PH code="workplaceType:size"/>
 
+### Text Anchor {#text-anchor}
+
+
+
+*Nom technique:* ```textAnchor```
+<PH code="workplaceType:textAnchor"/>
+
     
 
 

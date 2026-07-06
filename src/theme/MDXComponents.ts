@@ -8,6 +8,7 @@ import {
     PropertyTypeHelper,
     SurfyHelpStandaloneViewMenuBreadcrumb,
     SurfyHelpLinkToIndexView,
+    SurfyHelpLinkToSingleView,
     ClickOnIndexViewMenuPathBreadcrumb,
 } from '@site/surfy';
 
@@ -15,6 +16,7 @@ export default {
     ...MDXComponents,
     P: SurfyHelpPropertyType,
     LIV: SurfyHelpLinkToIndexView,
+    LSV: SurfyHelpLinkToSingleView,
     OT: SurfyHelpObjectType,
     OTB: ObjectTypeMenuBreadcrumb,
     LIVB: SurfyHelpStandaloneViewMenuBreadcrumb,

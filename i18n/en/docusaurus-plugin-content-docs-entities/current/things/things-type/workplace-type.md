@@ -57,6 +57,13 @@ sidebar_label: "Type of workstation"
 *Technical name:* ```size```
 <PH code="workplaceType:size"/>
 
+### Text Anchor {#text-anchor}
+
+
+
+*Technical name:* ```textAnchor```
+<PH code="workplaceType:textAnchor"/>
+
     
 
 
