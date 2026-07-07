@@ -150,6 +150,8 @@ sidebar_position: 1
 - Statistiques dans les filtres du plan (répartition par dimension)
   - Affichage possible sous forme de **tableau** ou de **graphique**, avec un choix explicite entre les deux.
   - Graphiques circulaire et en zone polaire plus lisibles, avec des libellés plus cohérents sur le plan.
+
+  <CloudinaryAsset publicId="help/changelog/v3.5.15/map-filter-analytics-fr" kind="video" asGif width={424} alt="Démonstration des statistiques dans les filtres du plan" />
 - <LIV code="dimension:dq-missing-color" />
   - Nouveau rapport de qualité des données listant les calques d’analyse et d’affectation sans couleur utilisable sur le plan.
   - Proposition d’une couleur pour chaque calque concerné, avec possibilité d’attribuer en masse les couleurs suggérées aux calques sélectionnés.

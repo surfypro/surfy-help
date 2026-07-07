@@ -151,6 +151,10 @@
     "message": "Réservation de parking",
     "description": "The label for category 'parking-booking' in sidebar 'help-sidebar'"
   },
+  "sidebar.help-sidebar.category.floor-plan": {
+    "message": "Plan et édition",
+    "description": "The label for category 'floor-plan' in sidebar 'help-sidebar'"
+  },
   "version.label": {
     "message": "Next",
     "description": "The label for version current"

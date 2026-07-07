@@ -146,6 +146,8 @@
 - Statistics in plan filters (breakdown by dimension)
   - Display as a **table** or **chart**, with an explicit choice between the two.
   - Pie and polar area charts are easier to read, with more consistent labels on the plan.
+
+  <CloudinaryAsset publicId="help/changelog/v3.5.15/map-filter-analytics-fr" kind="video" asGif width={424} alt="Demonstration of statistics in plan filters" />
 - <LIV code="dimension:dq-missing-color" />
   - New data quality report listing analysis and assignment layers without a usable color on the plan.
   - A suggested color is proposed for each affected layer, with bulk assignment of suggested colors to selected layers.
