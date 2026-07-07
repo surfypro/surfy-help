@@ -49,7 +49,7 @@ The claim name in the JWT token (list of values) is compared with the company's 
 
 ### Use OpenID claims to associate with the tenant {#use-open-id-token-claims-to-associate-to-tenant}
 
-Associate the user with the tenant only if the exact claim surfy.{TenantName} is present in the token, or if a custom JWT claim contains the company's JWT claim code
+Associate the user with the tenant only if the exact claim `surfy.{TenantName}` is present in the token, or if a custom JWT claim contains the company's JWT claim code
 
 *Technical name:* ```useOpenIdTokenClaimsToAssociateToTenant```
 <PH code="userRegistrationTenantRule:useOpenIdTokenClaimsToAssociateToTenant"/>

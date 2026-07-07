@@ -1,5 +1,6 @@
 import MDXComponents from '@theme-original/MDXComponents';
 import { Youtube } from '../components/videos/Youtube';
+import { CloudinaryAsset } from '../components/videos/CloudinaryAsset';
 import {
     SurfyHelpObjectType,
     ObjectTypeHelper,
@@ -24,5 +25,6 @@ export default {
     PH: PropertyTypeHelper,
     OH: ObjectTypeHelper,
     Youtube,
+    CloudinaryAsset,
     ClickViewMenu: ClickOnIndexViewMenuPathBreadcrumb
 };
