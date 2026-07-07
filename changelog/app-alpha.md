@@ -24,11 +24,10 @@ Lors d’une mise en production, le contenu utile est repris dans la page [Nouve
 
 - **Plan**
   - Vision **Organisations (niveau supérieur)** : le **service** des personnes affectées aux postes s’affiche sur le plan.
-  - **Mode édition** : lorsque plusieurs postes de travail sont sélectionnés, une poignée de rotation sur le cadre de sélection permet de les orienter **ensemble**, en conservant leur disposition relative.
-  - Le filtre analytique du plan propose une visualisation immédiate des surfaces par catégorie (graphique + tableau).
-
-    <CloudinaryAsset publicId="uploads/signed/help/changelog/v3.5.15/map-filter-analytics-fr" kind="image" format="gif" width={424} alt="Démonstration du filtre analytique du plan" />
+  - **Mode édition** : lorsque plusieurs postes de travail sont sélectionnés, une poignée de rotation sur le cadre de sélection permet de les orienter **ensemble**, en conservant leur disposition relative. Guide détaillé : [Rotation groupée des postes sur le plan](/entities/user-guide/floor-plan/workplace-group-rotation).
+  <CloudinaryAsset publicId="help/changelog/v3.5.15/workplace-group-rotation-fr" kind="video" asGif width={640} gifFps={8} alt="Rotation groupée de postes de travail en mode édition du plan" />
 
 - <OT code="workplaceType" />
   - Dans la vue d’édition des formes (<LSV code="workplaceType:editor" />), vous pouvez définir et enregistrer la position d’affichage du libellé par défaut (<P code="workplaceType:textAnchor" />) grâce à l’option d’ancrage (raccourci **A**).
   - Lors de l’ajout d’un poste de travail sur le plan, le libellé reprend cette position définie sur le type.
+  <CloudinaryAsset publicId="help/changelog/v3.5.15/workplace-type-text-anchor-fr" kind="video" asGif width={640} gifFps={8} alt="Déplacer le point d'ancrage du texte sur un type de poste" />

@@ -20,8 +20,10 @@ When a release goes to production, useful content is moved to [What's New](./app
 
 - **Plan**
   - **Organizations (top level)** view: affected people’s **service** (organization) is shown on workstations on the plan.
-  - **Edit mode**: when several workstations are selected, a rotation handle on the selection frame lets you rotate them **together** while keeping their relative layout.
+  - **Edit mode**: when several workstations are selected, a rotation handle on the selection frame lets you rotate them **together** while keeping their relative layout. Step-by-step guide: [Group rotation of workstations on the floor plan](/entities/user-guide/floor-plan/workplace-group-rotation).
+  <CloudinaryAsset publicId="help/changelog/v3.5.15/workplace-group-rotation-en" kind="video" asGif width={640} gifFps={8} alt="Group rotation of workstations in plan edit mode" />
 
 - <OT code="workplaceType" />
   - In the shape editor view (<LSV code="workplaceType:editor" />), you can set and save the default label display position (<P code="workplaceType:textAnchor" />) using the anchor option (shortcut **A**).
   - When you add a workstation on the plan, the label uses the position defined on the type.
+  <CloudinaryAsset publicId="help/changelog/v3.5.15/workplace-type-text-anchor-en" kind="video" asGif width={640} gifFps={8} alt="Move the text anchor point on a workstation type" />
