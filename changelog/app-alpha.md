@@ -31,3 +31,6 @@ Lors d’une mise en production, le contenu utile est repris dans la page [Nouve
   - Dans la vue d’édition des formes (<LSV code="workplaceType:editor" />), vous pouvez définir et enregistrer la position d’affichage du libellé par défaut (<P code="workplaceType:textAnchor" />) grâce à l’option d’ancrage (raccourci **A**).
   - Lors de l’ajout d’un poste de travail sur le plan, le libellé reprend cette position définie sur le type.
   <CloudinaryAsset publicId="help/changelog/v3.5.15/workplace-type-text-anchor-fr" kind="video" asGif width={640} gifFps={8} alt="Déplacer le point d'ancrage du texte sur un type de poste" />
+
+- **Plan — espaces**
+  - En **mode édition**, lorsque **au moins deux espaces** sont sélectionnés, une action sur le cadre de sélection ouvre un panneau pour modifier en lot l'<P code="room:organization" />, le <P code="room:costCenter" />, le <P code="room:distributionCostType" />, le <P code="room:roomConnector" /> et les dimensions. Guide : [Modification multiple d'espaces sur le plan](/entities/user-guide/floor-plan/rooms-bulk-edit).

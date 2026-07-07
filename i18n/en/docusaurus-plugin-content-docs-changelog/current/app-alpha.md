@@ -27,3 +27,6 @@ When a release goes to production, useful content is moved to [What's New](./app
   - In the shape editor view (<LSV code="workplaceType:editor" />), you can set and save the default label display position (<P code="workplaceType:textAnchor" />) using the anchor option (shortcut **A**).
   - When you add a workstation on the plan, the label uses the position defined on the type.
   <CloudinaryAsset publicId="help/changelog/v3.5.15/workplace-type-text-anchor-en" kind="video" asGif width={640} gifFps={8} alt="Move the text anchor point on a workstation type" />
+
+- **Floor plan — rooms**
+  - In **edit mode**, when **at least two rooms** are selected, an action on the selection frame opens a panel to bulk-edit <P code="room:organization" />, <P code="room:costCenter" />, <P code="room:distributionCostType" />, <P code="room:roomConnector" />, and dimensions. Guide: [Bulk room edit on the floor plan](/entities/user-guide/floor-plan/rooms-bulk-edit).
