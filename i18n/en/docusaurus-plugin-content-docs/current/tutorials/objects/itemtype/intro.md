@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 # Different Types of Objects
 
-Besides workstations which have particular properties (see [Workstation Types](/en/docs/workplacetype)), there are 2 categories of object types: Icons and Scale Objects.
+Besides workstations which have particular properties (see [Workstation types](/en/docs/workplacetype)), there are 2 categories of object types: Icons and Scale Objects.
 
 ### Icon Object Type
 

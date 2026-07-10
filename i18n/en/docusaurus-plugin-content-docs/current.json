@@ -55,6 +55,10 @@
     "message": "Workstation Types",
     "description": "The label for category Les Types de poste de travail in sidebar help-sidebar"
   },
+  "sidebar.help-sidebar.category.Types de postes de travail": {
+    "message": "Workstation Types",
+    "description": "The label for category Types de postes de travail in sidebar help-sidebar"
+  },
   "version.label": {
     "message": "Next",
     "description": "The label for version current"
@@ -207,9 +211,17 @@
     "message": "Workstation Types",
     "description": "The label for category Les Types de poste de travail in sidebar s1"
   },
+  "sidebar.s1.category.Types de postes de travail": {
+    "message": "Workstation Types",
+    "description": "The label for category Types de postes de travail in sidebar s1"
+  },
   "sidebar.s1.category.Les Types de poste de travail.link.generated-index.description": {
     "message": "Everything about workstation types",
     "description": "The generated-index page description for category Les Types de poste de travail in sidebar s1"
+  },
+  "sidebar.s1.category.Types de postes de travail.link.generated-index.description": {
+    "message": "Everything about workstation types",
+    "description": "The generated-index page description for category Types de postes de travail in sidebar s1"
   },
   "sidebar.s1.category.Les Objets": {
     "message": "Objects",
@@ -571,6 +583,10 @@
     "message": "Everything about workstation types",
     "description": "The generated-index page description for category Les Types de poste de travail in sidebar help-sidebar"
   },
+  "sidebar.help-sidebar.category.Types de postes de travail.link.generated-index.description": {
+    "message": "Everything about workstation types",
+    "description": "The generated-index page description for category Types de postes de travail in sidebar help-sidebar"
+  },
   "sidebar.help-sidebar.category.Les Objets.link.generated-index.description": {
     "message": "Everything about object management",
     "description": "The generated-index page description for category Les Objets in sidebar help-sidebar"
@@ -686,6 +702,10 @@
   "sidebar.help-sidebar.category.La réservation dans Surfy": {
     "message": "Booking in Surfy",
     "description": "The label for category La réservation dans Surfy in sidebar help-sidebar"
+  },
+  "sidebar.help-sidebar.category.La réservation dans Surfy.link.generated-index.description": {
+    "message": "Everything about booking in Surfy",
+    "description": "The generated-index page description for category La réservation dans Surfy in sidebar help-sidebar"
   },
   "sidebar.help-sidebar.category.Les Données du bâtiment.link.generated-index.description": {
     "message": "Building data in Surfy",
