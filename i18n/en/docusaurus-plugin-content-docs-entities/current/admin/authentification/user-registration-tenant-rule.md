@@ -33,6 +33,13 @@ Automatically associate roles and content roles with users who meet this rule
 *Technical name:* ```automaticUserToRoleMapping```
 <PH code="userRegistrationTenantRule:automaticUserToRoleMapping"/>
 
+### JWT property name for tenant association {#jwt-token-tenant-mapping-property-name}
+
+The claim name in the JWT token (list of values) is compared with the company's JWT claim code to associate the user with the tenant.
+
+*Technical name:* ```jwtTokenTenantMappingPropertyName```
+<PH code="userRegistrationTenantRule:jwtTokenTenantMappingPropertyName"/>
+
 ### Name {#name}
 
 
@@ -42,7 +49,7 @@ Automatically associate roles and content roles with users who meet this rule
 
 ### Use OpenID claims to associate with the tenant {#use-open-id-token-claims-to-associate-to-tenant}
 
-Associate the user with the tenant only if the exact claim surfy.{TenantName} is present in the token
+Associate the user with the tenant only if the exact claim `surfy.{TenantName}` is present in the token, or if a custom JWT claim contains the company's JWT claim code
 
 *Technical name:* ```useOpenIdTokenClaimsToAssociateToTenant```
 <PH code="userRegistrationTenantRule:useOpenIdTokenClaimsToAssociateToTenant"/>

@@ -40,6 +40,13 @@ Séparer les domaines avec des espaces et inclure l'arobase
 *Nom technique:* ```name```
 <PH code="userRegistrationTenantRule:name"/>
 
+### Nom de la propriété JWT pour l'association au tenant {#jwt-token-tenant-mapping-property-name}
+
+Nom du claim dans le token JWT (liste de valeurs) à comparer avec le code claim JWT de l'entreprise pour associer l'utilisateur au tenant
+
+*Nom technique:* ```jwtTokenTenantMappingPropertyName```
+<PH code="userRegistrationTenantRule:jwtTokenTenantMappingPropertyName"/>
+
 ### Utiliser le mappage des rôles via le token OpenID et les Claims {#use-open-id-token-role-mapping}
 
 Associer automatiquement les rôles à partir des rôles inclus dans le token OpenID
@@ -49,7 +56,7 @@ Associer automatiquement les rôles à partir des rôles inclus dans le token Op
 
 ### Utiliser les claims OpenID pour associer au tenant {#use-open-id-token-claims-to-associate-to-tenant}
 
-Associer l'utilisateur au tenant uniquement si le claim exact Surfy.Tenant.{NomDuTenant} est présent dans le token
+Associer l'utilisateur au tenant uniquement si le claim exact `Surfy.Tenant.{NomDuTenant}` est présent dans le token, ou si un claim JWT personnalisé contient le code claim JWT de l'entreprise
 
 *Nom technique:* ```useOpenIdTokenClaimsToAssociateToTenant```
 <PH code="userRegistrationTenantRule:useOpenIdTokenClaimsToAssociateToTenant"/>

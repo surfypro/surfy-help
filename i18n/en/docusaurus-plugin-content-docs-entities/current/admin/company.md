@@ -36,6 +36,27 @@ Allow Surfy to track user activity to improve the user experience
 *Technical name:* ```trackUserActivity```
 <PH code="company:trackUserActivity"/>
 
+### Claim code JWT {#jwt-claim-code}
+
+Expected value in the JWT token to associate the user with this company when the authentication rule uses a custom claim
+
+*Technical name:* ```jwtClaimCode```
+<PH code="company:jwtClaimCode"/>
+
+### Create a calendar invitation for each reservation {#workplace-booking-agenda-sync-enabled}
+
+For each workstation or parking reservation, an invitation is sent to the employee's calendar (Outlook, Gmail, etc.); the invitation is removed in case of cancellation.
+
+*Technical name:* ```workplaceBookingAgendaSyncEnabled```
+<PH code="company:workplaceBookingAgendaSyncEnabled"/>
+
+### Display name {#pretty-name}
+
+Company name displayed in the interface, in addition to the technical identifier (name)
+
+*Technical name:* ```prettyName```
+<PH code="company:prettyName"/>
+
 ### Enable booking by building when all dimensions are overloaded {#enable-building-booking-when-all-dimensions-are-crowded}
 
 Enables direct booking by building and floor when all dimensions are overloaded, providing an alternative booking option when no areas are available

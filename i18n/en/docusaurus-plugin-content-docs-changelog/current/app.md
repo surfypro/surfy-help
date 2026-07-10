@@ -1,5 +1,67 @@
 # What's New
 
+## June 30, 2026 - v3.5.5
+
+- <OT code="userRegistrationTenantRule" />
+  - Automatic association of a user to a tenant when their sign-in token contains a custom claim matching the code defined on the company.
+  - <P code="userRegistrationTenantRule:jwtTokenTenantMappingPropertyName" />: claim name to read in the token.
+  - <P code="company:jwtClaimCode" />: expected value in that claim.
+  - The existing mode using `Surfy.Tenant.{ExactTenantName}` in token roles remains available when the custom claim is not set.
+  - Guide: [Associate a user to a tenant via a custom JWT claim](/en/entities/user-guide/security-model/tenant-association-via-jwt-claim).
+
+- Sign-in
+  - After authentication, redirection can target a specific URL passed in the link (for example from a **workstation assignment QR code**).
+  - Search message on the platform selection screen reworded (“No platform found”).
+  - Support for **OpenID via ADFS** authentication (when configured on the platform).
+  - On first sign-in, the **profile picture** can be imported automatically from the sign-in token when the identity provider supplies it.
+
+- <OT code="company" />
+  - New property <P code="company:prettyName" />: organization **display name**, in addition to the technical identifier.
+  - Shown on tenant selection cards, in the search bar (filters by display name) and in the change-tenant menu.
+  - Platform lists are sorted by display name.
+
+- <OT code="building" />
+  - <P code="building:regulatoryCapacity" /> is automatically recalculated from the building’s floors and shown on the building **home card**.
+
+- Planning and bookings
+  - **Parking** booking (My planning): button per building **floor** showing how many spaces are available; tooltip with current bookings and availability by parking space type.
+  - **Workstation** booking: **Release this booking** button on already booked workstations in planning.
+  - Same-day booking confirmation: only bookings **created before the end** of the <P code="company:workplaceBookingConfirmationRange" /> window can receive a reminder or be cancelled automatically; a booking made after that time (e.g. on a desk freed later in the day) is no longer affected.
+  - **Meeting room** booking: clearer error messages when calendar event creation fails via Microsoft calendar.
+
+- <OT code="personToRoomBooking" /> and <OT code="personToWorkplaceBooking" />
+  - Clearer breadcrumb trail and labels when viewing a booking (person, room or workstation concerned).
+
+- <LIV code="person:dq-no-affectations" />
+  - **Exclude scenario buildings** checkbox to remove those buildings from the people-without-assignments table.
+
+- **Plan**
+  - Background image sharper in view mode.
+  - **Map scale**: clearer segment colours while drawing.
+  - **Merge vertices**: option to reuse the same vertex across adjacent spaces.
+  - **Person assignment** on a space or workstation: works even when the person is not yet loaded on the plan.
+  - **Floor list** (right-hand strip on the plan): displayed as a column.
+  - Opening the plan from a **link with selection** (workstation, space, etc.): more reliable highlighting.
+  - **Space** deletion: orphan segment points are removed from the plan and database.
+
+- **Building 3D view**
+  - More reliable display of workstations and items when switching plan views.
+  - Spaces are coloured according to the active **plan view** (space types, districts, cost allocation, etc.).
+  - **Partitions** view: item types are no longer left selected by mistake after switching views.
+
+- **Excel import**
+  - Downloadable templates and copyable column list: headers aligned with the importer (apostrophes removed from French labels).
+
+- <OT code="building" />
+  - **Spaces** report: export includes identifiers for spaces, floors, buildings, cost centers, organizations, distribution cost types and space types.
+
+- **Tenant operations**
+  - Import **people and organizations** from an HR file in CSV format (when the operation is enabled on the tenant).
+  - HR file rows can be filtered by the **authorized workplace** configured for the import.
+
+- **General interface**
+  - **Entity lists**: clear message when pagination goes beyond the number of available items.
+
 ## May 27, 2026 - v3.4.206
 
 - Workstation booking confirmation
@@ -84,6 +146,8 @@
 - Statistics in plan filters (breakdown by dimension)
   - Display as a **table** or **chart**, with an explicit choice between the two.
   - Pie and polar area charts are easier to read, with more consistent labels on the plan.
+
+  <CloudinaryAsset publicId="help/changelog/v3.5.15/map-filter-analytics-fr" kind="video" asGif width={424} alt="Demonstration of statistics in plan filters" />
 - <LIV code="dimension:dq-missing-color" />
   - New data quality report listing analysis and assignment layers without a usable color on the plan.
   - A suggested color is proposed for each affected layer, with bulk assignment of suggested colors to selected layers.

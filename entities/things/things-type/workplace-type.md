@@ -50,6 +50,13 @@ sidebar_label: "Type de poste de travail"
 *Nom technique:* ```color```
 <PH code="workplaceType:color"/>
 
+### Point d'ancrage du texte {#text-anchor}
+
+Point d'ancrage du texte pour les postes de ce type (modèle appliqué à la création d'un poste sur le plan).
+
+*Nom technique:* ```textAnchor```
+<PH code="workplaceType:textAnchor"/>
+
 ### Size {#size}
 
 

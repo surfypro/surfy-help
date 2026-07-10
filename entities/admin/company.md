@@ -57,6 +57,20 @@ Autoriser Surfy à suivre l'activité des utilisateurs pour améliorer l'expéri
 *Nom technique:* ```trackUserActivity```
 <PH code="company:trackUserActivity"/>
 
+### Code claim JWT {#jwt-claim-code}
+
+Valeur attendue dans le token JWT pour associer l'utilisateur à cette entreprise lorsque la règle d'authentification utilise un claim personnalisé
+
+*Nom technique:* ```jwtClaimCode```
+<PH code="company:jwtClaimCode"/>
+
+### Créer une invitation calendrier pour chaque réservation {#workplace-booking-agenda-sync-enabled}
+
+À chaque réservation de poste ou de parking, envoie une invitation dans le calendrier du collaborateur (Outlook, Gmail, etc.) ; l'invitation est retirée en cas d'annulation
+
+*Nom technique:* ```workplaceBookingAgendaSyncEnabled```
+<PH code="company:workplaceBookingAgendaSyncEnabled"/>
+
 ### Icône {#icon-path}
 
 Le logo de l'entreprise en carré
@@ -77,6 +91,13 @@ Le chemin du logo de votre entreprise
 
 *Nom technique:* ```logoPath```
 <PH code="company:logoPath"/>
+
+### Nom d'affichage {#pretty-name}
+
+Nom affiché de l'entreprise dans l'interface, en complément de l'identifiant technique (nom)
+
+*Nom technique:* ```prettyName```
+<PH code="company:prettyName"/>
 
 ### Nombre de jours de planification {#planning-number-of-days}
 
