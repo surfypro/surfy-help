@@ -32,7 +32,3 @@ Lorsque les espaces sélectionnés n'ont pas la même valeur pour une propriét�
 - La modification multiple concerne les **référentiels** (organisation, centre de coût, etc.) et les **dimensions**, pas les champs texte comme le nom de l'espace.
 - L'action n'apparaît que lorsque **au moins deux espaces** sont sélectionnés.
 
-## Voir aussi
-
-- [Rotation groupée des postes sur le plan](./workplace-group-rotation.md)
-- [Modifier un espace](/docs/tutorials/surfaces/room/edit)
