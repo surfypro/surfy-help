@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
-pagination_label: "Book with Teams in Surfy"
-title: "Book with Teams in Surfy"
+pagination_label: "Book with Surfy via Teams"
+title: "Book with Surfy via Teams"
 ---
 
 # Book with Surfy via Teams
