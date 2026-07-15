@@ -4,7 +4,7 @@ pagination_label: "Book with Teams in Surfy"
 title: "Book with Teams in Surfy"
 ---
 
-# Book with Teams in Surfy
+# Book with Surfy via Teams
 
 In Teams, you can add the Surfy application by clicking on "Application" and searching for "Surfy".<br />
 Once selected, the application is added to Teams and allows the authorized collaborator to directly use Surfy's booking features via Teams.<br />
