@@ -1,9 +1,9 @@
 {
-  "label": "Workstation booking in Surfy",
+  "label": "Workstation booking with Surfy",
   "position": 1,
   "link": {
     "slug": "workstationbooking",
     "type": "generated-index",
-    "description": "Everything about workstation booking in Surfy"
+    "description": "Everything about workstation booking with Surfy"
   }
 }

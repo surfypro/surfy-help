@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Manage district booking in Surfy
+# Manage district booking with Surfy
 
 This page summarizes the actions the booking administrator must take to ensure a smooth experience for users.
 

@@ -1,9 +1,10 @@
 {
-  "label": "Workplace Types",
+  "label": "Workstation Types",
   "position": 2,
   "link": {
     "slug": "workplacetype",
     "type": "generated-index",
-    "description": "Everything about workplace types"
+    "title": "Workstation Types",
+    "description": "Everything about workstation types"
   }
 }
