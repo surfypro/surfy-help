@@ -40,10 +40,6 @@ Chaque composant charge ses données dans un **Shadow DOM** (styles isolés).
 
 Version publiée : constante `SURFY_SDK_VERSION` (semver du package npm).
 
-:::note Migration
-`<surfy-floor-plan>` est renommé en `<surfy-floor-layout-2d>`. L'ancien tag reste enregistré comme alias déprécié.
-:::
-
 ## Principe d'intégration
 
 ```mermaid

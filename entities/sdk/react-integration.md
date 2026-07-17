@@ -35,7 +35,7 @@ Ne redéfinissez pas l'interface à la main — utilisez `SurfyLayoutElement` de
 
 ```tsx
 import { useEffect, useRef, useState } from 'react';
-import { SurfyFloorPlanElementImpl } from '@surfy/surfy-sdk';
+import { SurfyFloorLayout2dElementImpl } from '@surfy/surfy-sdk';
 import type { SurfyLayoutElement } from '@surfy/surfy-sdk';
 
 export function FloorLayout2dPanel() {
@@ -47,7 +47,7 @@ export function FloorLayout2dPanel() {
     const host = hostRef.current;
     if (!host) return;
 
-    const el = new SurfyFloorPlanElementImpl() as SurfyLayoutElement;
+    const el = new SurfyFloorLayout2dElementImpl() as SurfyLayoutElement;
     el.setAttribute('floor-id', import.meta.env.VITE_SURFY_FLOOR_ID);
     el.setAttribute('tenant', import.meta.env.VITE_SURFY_TENANT);
     el.setAttribute('base-url', import.meta.env.VITE_SURFY_BASE_URL);
@@ -122,7 +122,7 @@ La démo utilise un contexte React (`DemoThemeContext`) qui appelle `setTheme` s
 
 ## Points importants React
 
-1. **Instanciation impérative** : `new SurfyFloorPlanElementImpl()` ou `SurfyBuildingLayout3dElementImpl`, puis `appendChild`.
+1. **Instanciation impérative** : `new SurfyFloorLayout2dElementImpl()` ou `SurfyBuildingLayout3dElementImpl`, puis `appendChild`.
 2. **Token provider** : configurez `setAccessTokenProvider` avant ou juste après `appendChild`.
 3. **Pas de props React Surfy** : le SDK n'exporte pas de composant React canvas ; ce sont des custom elements avec Shadow DOM.
 4. **Arbres React distincts** : vos hooks et le React interne du SDK ne partagent pas d'état.

@@ -13,10 +13,6 @@ Le SDK expose **trois Web Components** pour intégrer la cartographie Surfy. Ils
 | `<surfy-building-layout-3d>` | Bâtiment 3D (multi-étages) | **CubyV2** | **Disponible** (alpha SDK) |
 | `<surfy-floor-layout-3d>` | Plan d'étage 3D | **CubyV2** | Spécifié — tag pas encore enregistré |
 
-:::note Nom historique
-`<surfy-floor-plan>` est l'ancien nom de `<surfy-floor-layout-2d>`. Il reste enregistré comme **alias déprécié** ; préférez le nouveau tag.
-:::
-
 ```mermaid
 flowchart LR
   subgraph api["API commune SurfyLayoutElement"]
@@ -267,8 +263,6 @@ declare global {
     'surfy-floor-layout-2d': SurfyFloorLayout2dElement;
     'surfy-floor-layout-3d': SurfyFloorLayout3dElement;
     'surfy-building-layout-3d': SurfyBuildingLayout3dElement;
-    /** @deprecated Utiliser surfy-floor-layout-2d */
-    'surfy-floor-plan': SurfyFloorLayout2dElement;
   }
 }
 ```

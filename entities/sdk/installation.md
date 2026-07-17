@@ -19,7 +19,7 @@ Le package publie un bundle ESM unique (`index.js`) et des types TypeScript (`in
 
 L'import du package enregistre automatiquement les éléments disponibles :
 
-- `surfy-floor-layout-2d` (+ alias déprécié `surfy-floor-plan`)
+- `surfy-floor-layout-2d`
 - `surfy-building-layout-3d`
 - `surfy-floor-layout-3d` — **pas encore enregistré** (tag réservé, voir changelog)
 
@@ -31,7 +31,7 @@ import '@surfy/surfy-sdk';
 import { registerSurfyLayoutElements } from '@surfy/surfy-sdk';
 
 registerSurfyLayoutElements();
-// → surfy-floor-layout-2d, surfy-floor-plan (déprécié), surfy-building-layout-3d
+// → surfy-floor-layout-2d, surfy-building-layout-3d
 // À venir : surfy-floor-layout-3d
 ```
 
