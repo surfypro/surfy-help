@@ -37,6 +37,7 @@ Chaque composant charge ses données dans un **Shadow DOM** (styles isolés).
 | `<surfy-building-layout-3d>` | Disponible — CubyV2, `setOptions`, `fitToView` |
 | `<surfy-floor-layout-3d>` | Tag réservé — pas encore enregistré dans le package |
 | `setOptions` / `fitToView` | Disponibles sur **bâtiment 3D** ; no-op sur 2D pour l'instant |
+| `updateRoom` | Disponible — couleur (2D + 3D) ; libellé / ancre (bâtiment 3D) |
 
 Version publiée : constante `SURFY_SDK_VERSION` (semver du package npm).
 
@@ -70,6 +71,7 @@ sequenceDiagram
 | [Éléments de layout](./layout-elements.md) | API commune + 2D / 3D / bâtiment |
 | [Thème (MUI)](./theme.md) | `setTheme`, `SurfyThemeOptions` |
 | [Options 3D](./options-3d.md) | `setOptions`, `fitToView` (bâtiment 3D) |
+| [Espaces (`updateRoom`)](./update-room.md) | Couleur + libellé + ancre par espace |
 | [Couleurs des espaces](./room-colors.md) | `setRoomColors`, plusieurs pièces |
 | [Taille et conteneur](./layout-and-sizing.md) | CSS, attribut `fill-parent` |
 | [Intégration React](./react-integration.md) | Exemple complet TypeScript |

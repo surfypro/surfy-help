@@ -28,6 +28,10 @@ building.addEventListener('surfy:ready', () => {
     buildingRotationZ: 15,
     selectedFloorIds: [101, 102],
     wallMode: 'cuby',
+    showStructureWalls: true,
+    structureFloorIds: [101],
+    singleFloorNavigation: { controls: 'map', zoomMode: 'zenith' },
+    multiFloorNavigation: { controls: 'building', zoomMode: 'isometric' },
   });
 });
 ```
@@ -44,27 +48,58 @@ Vous pouvez appeler `setOptions` **avant** `surfy:ready` : les valeurs sont cons
 | `buildingRotationZ` | `number` | `0` | Rotation du bâtiment autour de Z (degrés) |
 | `selectedFloorIds` | `number[]` | tous les étages du layout | Étages visibles |
 | `wallMode` | `SurfyLayout3dWallMode` | `'cuby'` | Mode de rendu des cloisons |
+| `showStructureWalls` | `boolean` | `false` | Afficher les structures du bâtiment |
+| `structureFloorIds` | `number[]` | tous les étages visibles | Étages dont la structure est affichée |
+| `singleFloorNavigation` | `SurfyLayout3dNavigationOptions` | `{ controls: 'map', zoomMode: 'zenith' }` | Navigation quand **un** étage est sélectionné |
+| `multiFloorNavigation` | `SurfyLayout3dNavigationOptions` | `{ controls: 'building', zoomMode: 'isometric' }` | Navigation quand **plusieurs** étages sont visibles |
 
 ### `wallMode` (`SurfyLayout3dWallMode`)
 
 | Valeur | Description |
 |--------|-------------|
-| `'cuby'` | Style cartographie Cuby (défaut embed SDK) |
+| `'cuby'` | Style cartographie Cuby (défaut embed SDK) — masque postes, mobilier et structures |
 | `'no'` | Sans murs |
 | `'half'` | Murs demi-hauteur |
 | `'reality'` | Rendu « réaliste » |
+| `'cuby-reality-selected'` | Mobilier/postes uniquement dans les espaces sélectionnés |
+| `'no-wall-selected'` | Comme ci-dessus, sans murs sur les espaces non sélectionnés |
+
+### Structure
+
+`showStructureWalls` contrôle la visibilité des maillages de structure (dalle + murs si créés au chargement).
+`structureFloorIds` permet de limiter l'affichage à certains étages. Omettre la clé équivaut à « tous les étages visibles ».
+
+:::note Géométrie des murs de structure
+Les murs de structure ne sont générés qu'au **premier chargement** si `showStructureWalls` est `true`. Un basculement ultérieur affiche ou masque le groupe 3D existant.
+:::
+
+### Navigation (`SurfyLayout3dNavigationOptions`)
+
+| Clé | Type | Valeurs | Rôle |
+|-----|------|---------|------|
+| `controls` | `SurfyLayout3dControls` | `'map'` · `'orbit'` · `'building'` | Schéma de manipulation caméra |
+| `zoomMode` | `SurfyLayout3dZoomMode` | `'zenith'` · `'isometric'` | Cadrage par défaut (`fitToView` / changement d'étages) |
+
+Le preset **single** s'applique lorsqu'un seul étage est dans `selectedFloorIds` ; le preset **multi** lorsque plusieurs étages sont visibles.
 
 ## Mise à jour dynamique
 
 ```ts
-// Écarter les étages après interaction utilisateur
+// Masquer un étage
 building.setOptions({ selectedFloorIds: [102] });
 
-// Augmenter l'espacement pour une présentation
-building.setOptions({ floorSpace: 400 });
+// Passer en mode réaliste avec structures sur l'étage 102
+building.setOptions({
+  wallMode: 'reality',
+  showStructureWalls: true,
+  structureFloorIds: [102],
+});
 
-// Masquer les libellés d'espaces
-building.setOptions({ showRoomLabels: false });
+// Navigation orbit + vue isométrique en multi-étages
+building.setOptions({
+  multiFloorNavigation: { controls: 'orbit', zoomMode: 'isometric' },
+});
+building.fitToView();
 ```
 
 ```mermaid
@@ -72,26 +107,26 @@ sequenceDiagram
   participant App as Application hôte
   participant B3 as surfy-building-layout-3d
 
-  App->>B3: setOptions({ floorSpace: 320 })
-  B3->>B3: merge + mise à jour scène Cuby
   App->>B3: setOptions({ selectedFloorIds: [1, 2] })
-  B3->>B3: filtre étages affichés
+  B3->>B3: filtre étages + preset multiFloorNavigation
+  App->>B3: setOptions({ wallMode: 'reality' })
+  B3->>B3: reconstruit cloisons + visibilité structure
   App->>B3: fitToView()
-  B3->>B3: centre la caméra sur la bbox
+  B3->>B3: centre la caméra (zoomMode actif)
 ```
 
 ## `fitToView()`
 
-Recentre la caméra sur la scène 3D courante (étages sélectionnés, espacement, rotation pris en compte).
+Recentre la caméra sur la scène 3D courante (étages sélectionnés, espacement, rotation et `zoomMode` du preset actif pris en compte).
 
 ```ts
 building.fitToView();
 ```
 
-Utile après un changement de `selectedFloorIds`, de `floorSpace` ou de taille du conteneur.
+Utile après un changement de `selectedFloorIds`, de `floorSpace`, de navigation (`zoomMode`) ou de taille du conteneur.
 
 :::tip Démo
-**surfy-sdk-demos** — onglet « Bâtiment 3D » : la scène charge tous les étages par défaut ; vous pouvez reproduire les appels ci-dessus depuis la console une fois `surfy:ready` émis.
+**surfy-sdk-demos** — onglet « Bâtiment 3D » : panneau **Options 3D** avec étages, wall mode, structure par étage et presets de navigation.
 :::
 
 ## Ce qui n'est pas exposé

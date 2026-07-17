@@ -63,6 +63,7 @@ Avant de merger une évolution du SDK :
 | API élément | `layout-elements.md` | `layout-elements-api.md` |
 | Thème MUI | `theme.md` | `layout-elements-api.md` (section Theme) |
 | Options 3D | `options-3d.md` | `layout-elements-api.md` (section 3D options) |
+| updateRoom | `update-room.md` | `layout-elements-api.md` |
 | Couleurs | `room-colors.md` | `layout-elements-api.md` |
 | Taille | `layout-and-sizing.md` | `layout-elements-api.md` |
 | React | `react-integration.md` | `distribution-and-demo-project.md` |

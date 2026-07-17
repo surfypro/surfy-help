@@ -211,7 +211,7 @@ const config: Config = {
         { to: '/changelog/app', label: 'Nouveautés', position: 'left' },
         // { to: '/blog', label: 'Blog', position: 'left' },
         { to: 'https://www.surfy.pro/contact', label: 'Nous contacter', position: 'left', target: '_blank', rel: 'noopener noreferrer' },
-        { to: '/entities/mcp/', label: 'Developpeurs' },
+        { to: '/entities/intro', label: 'Developpeurs' },
         // {
         //   href: 'https://github.com/surfypro/surfy-help',
         //   label: 'GitHub',

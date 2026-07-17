@@ -49,6 +49,7 @@ interface SurfyLayoutElement extends HTMLElement {
   setTheme(theme?: SurfyThemeOptions | null): void;
   setOptions(options: SurfyLayout3dOptions): void;
   fitToView(): void;
+  updateRoom(roomId: number, options: SurfyRoomUpdateOptions): void;
 }
 ```
 
@@ -56,6 +57,7 @@ interface SurfyLayoutElement extends HTMLElement {
 |---------|-----|-------------|-------------|
 | `setAccessTokenProvider` | oui | oui | JWT Bearer — voir [Authentification](./authentication.md) |
 | `setRoomColors` / `clearRoomColors` | oui | oui | Voir [Couleurs](./room-colors.md) |
+| `updateRoom` | couleur | oui | Voir [updateRoom](./update-room.md) |
 | `setTheme` | oui | oui | Voir [Thème](./theme.md) |
 | `setOptions` | no-op | oui | Voir [Options 3D](./options-3d.md) |
 | `fitToView` | stub | oui | Recentre la caméra (bâtiment 3D) |
