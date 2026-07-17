@@ -2,6 +2,8 @@
 
 On a floor plan view (<LIV code="floor:map" />), in **edit mode**, you can update reference properties for **multiple selected rooms** in one step.
 
+<CloudinaryAsset publicId="help/changelog/v3.5.15/rooms-bulk-edit-en" kind="video" asGif width={640} gifFps={8} alt="Bulk room edit on the floor plan in edit mode" />
+
 ## Prerequisites
 
 - Permission to update rooms.
@@ -35,4 +37,5 @@ When selected rooms do not share the same value for a property, the field shows 
 ## See also
 
 - [Group rotation of workplaces on the plan](./workplace-group-rotation)
+- [Text anchor point on a workstation type](./workplace-type-text-anchor)
 - [Edit a room](/en/docs/tutorials/surfaces/room/edit)

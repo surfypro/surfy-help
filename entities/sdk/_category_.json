@@ -1,0 +1,8 @@
+{
+  "label": "Surfy SDK",
+  "position": 99,
+  "link": {
+    "type": "generated-index",
+    "description": "Intégrer la cartographie Surfy via les Web Components surfy-floor-layout-2d et surfy-building-layout-3d (CubyV2). API : auth, couleurs, thème, options 3D."
+  }
+}

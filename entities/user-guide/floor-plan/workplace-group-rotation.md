@@ -2,6 +2,8 @@
 
 Sur la vue plan d’un étage (<LIV code="floor:map" />), en **mode édition**, vous pouvez orienter **plusieurs postes de travail en une seule fois** lorsqu’ils sont sélectionnés ensemble.
 
+<CloudinaryAsset publicId="help/changelog/v3.5.15/workplace-group-rotation-fr" kind="video" asGif width={640} gifFps={8} alt="Rotation groupée de postes de travail en mode édition du plan" />
+
 ## Prérequis
 
 - Droits d’édition sur le plan de l’étage.
@@ -34,3 +36,8 @@ Si un **seul** poste est sélectionné, la poignée de rotation reste sur le pos
 
 - La rotation groupée concerne les **postes de travail** uniquement (pas un mélange postes + objets meubles dans un même geste).
 - La vue **3D** du bâtiment n’est pas concernée.
+
+## Voir aussi
+
+- [Modification multiple d'espaces sur le plan](./rooms-bulk-edit)
+- [Point d'ancrage du texte sur un type de poste](./workplace-type-text-anchor)

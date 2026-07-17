@@ -23,10 +23,12 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
   markdown: {
+    mermaid: true,
     hooks: {
       onBrokenMarkdownLinks: 'warn',
     }
   },
+  themes: ['@docusaurus/theme-mermaid'],
 
   // Internationalization configuration
   i18n: {

@@ -36,13 +36,6 @@ sidebar_label: "Type of workstation"
 
 ## Basic properties {#properties-base}
     
-### Anchor point of the text {#text-anchor}
-
-Text anchor point for posts of this type (model applied to the creation of a post on the plan).
-
-*Technical name:* ```textAnchor```
-<PH code="workplaceType:textAnchor"/>
-
 ### Center {#center}
 
 
@@ -63,6 +56,13 @@ Text anchor point for posts of this type (model applied to the creation of a pos
 
 *Technical name:* ```size```
 <PH code="workplaceType:size"/>
+
+### Text anchor point {#text-anchor}
+
+Text anchor point for workplaces of this type (template applied when adding a workplace to the floor plan).
+
+*Technical name:* ```textAnchor```
+<PH code="workplaceType:textAnchor"/>
 
     
 

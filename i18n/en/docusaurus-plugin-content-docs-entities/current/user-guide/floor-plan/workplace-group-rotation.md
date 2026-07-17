@@ -2,6 +2,8 @@
 
 On a floor plan view (<LIV code="floor:map" />), in **edit mode**, you can rotate **several workstations at once** when they are selected together.
 
+<CloudinaryAsset publicId="help/changelog/v3.5.15/workplace-group-rotation-en" kind="video" asGif width={640} gifFps={8} alt="Group rotation of workstations in plan edit mode" />
+
 ## Prerequisites
 
 - Edit rights on the floor plan.
@@ -34,3 +36,8 @@ When **one** workstation is selected, the rotation handle stays on that workstat
 
 - Group rotation applies to **workstations** only (not a mixed selection of workstations and furniture items in one gesture).
 - The building **3D** view is not included.
+
+## See also
+
+- [Bulk room edit on the floor plan](./rooms-bulk-edit)
+- [Text anchor point on a workstation type](./workplace-type-text-anchor)

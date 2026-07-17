@@ -2,6 +2,8 @@
 
 Sur la vue plan d'un étage (<LIV code="floor:map" />), en **mode édition**, vous pouvez harmoniser en une fois les propriétés de référence de **plusieurs espaces** sélectionnés.
 
+<CloudinaryAsset publicId="help/changelog/v3.5.15/rooms-bulk-edit-fr" kind="video" asGif width={640} gifFps={8} alt="Modification multiple d'espaces sur le plan en mode édition" />
+
 ## Prérequis
 
 - Droits de modification sur les espaces.
@@ -32,3 +34,7 @@ Lorsque les espaces sélectionnés n'ont pas la même valeur pour une propriét�
 - La modification multiple concerne les **référentiels** (organisation, centre de coût, etc.) et les **dimensions**, pas les champs texte comme le nom de l'espace.
 - L'action n'apparaît que lorsque **au moins deux espaces** sont sélectionnés.
 
+## Voir aussi
+
+- [Rotation groupée des postes sur le plan](./workplace-group-rotation)
+- [Point d'ancrage du texte sur un type de poste](./workplace-type-text-anchor)
