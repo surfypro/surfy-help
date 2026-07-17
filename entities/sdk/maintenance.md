@@ -16,6 +16,8 @@ Cette section est destinée aux **développeurs Surfy** qui font évoluer le SDK
 | **`@surfy/surfy-sdk` `index.d.ts`** | Contrat TypeScript publié | Compilateur / IDE |
 | **`surfy-sdk-demos`** | Exemples exécutables + E2E | Intégrateurs + CI |
 
+Qualité du monorepo demos (oxlint, pas d’ESLint Surfy) : voir **`surfy-sdk-demos/docs/CODE_QUALITY.md`** et la règle Cursor `.cursor/rules/sdk-demos-code-quality.mdc`.
+
 La doc **surfy-help** doit rester alignée sur l'API **réellement publiée** dans le package npm, pas sur la roadmap interne seule.
 
 ## Correspondance démo ↔ documentation
@@ -50,9 +52,18 @@ Avant de merger une évolution du SDK :
 1. [ ] **`src/surfy-sdk/types/public.ts`** — types et JSDoc à jour
 2. [ ] **`docs/surfy-sdk/layout-elements-api.md`** — spec interne
 3. [ ] **`surfy-help/entities/sdk/`** — pages correspondantes (voir tableau ci-dessous)
-4. [ ] **`surfy-sdk-demos`** — onglets, snippets (`demoApiSnippets.ts`), E2E
+4. [ ] **`surfy-sdk-demos`** — onglets, snippets (`demoApiSnippets.ts`), E2E ; checklist [CODE_QUALITY.md](https://github.com/surfypro/surfy-sdk-demos/blob/main/docs/CODE_QUALITY.md) (lint oxlint, pas de types SDK recopiés)
 5. [ ] **Semver** — bump `SURFY_SDK_VERSION` si breaking change API
 6. [ ] **Changelog** — entrée dans `surfy-help/changelog/app-alpha.md` si visible intégrateurs
+
+## Qualité demos (rappel)
+
+Le repo **surfy-sdk-demos** n’exécute pas `eslint:typed` Surfy. Pour éviter la dérive :
+
+- Importer les types depuis `@surfy/surfy-sdk` (jamais de doublons locaux).
+- Garder les panels courts ; extraire les contrôles 3D / helpers.
+- Auth serveur via `SURFY_CONNECTION_STRING` + `parseSurfyConnectionString`.
+- Détail : `surfy-sdk-demos/docs/CODE_QUALITY.md`.
 
 ## Pages à synchroniser
 

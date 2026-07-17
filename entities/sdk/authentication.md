@@ -16,13 +16,13 @@ flowchart LR
   Surfy["API Surfy"]
 
   Browser -->|"GET /api/surfy-token"| Backend
-  Backend -->|"clientId + clientSecret"| Surfy
+  Backend -->|"connection string → clientId + clientSecret"| Surfy
   Surfy -->|"JWT"| Backend
   Backend -->|"JWT"| Browser
   Browser -->|"Bearer + x-tenant"| Surfy
 ```
 
-1. Votre **backend** échange `clientId` + `clientSecret` contre un JWT (`POST /api/v1/authentication/token` — voir [API Surfy](/apidocs/)).
+1. Votre **backend** parse `SURFY_CONNECTION_STRING` (`host` / `client_id` / `client_secret`), puis échange les credentials contre un JWT (`POST /api/v1/authentication/token` — voir [API Surfy](/apidocs/)).
 2. Votre **frontend** appelle votre endpoint (ex. `/api/surfy-token`) et passe le token au SDK via `setAccessTokenProvider`.
 
 ## Côté SDK
@@ -56,18 +56,54 @@ Appelez `setAccessTokenProvider()` **avant** le premier chargement réussi du pl
 
 ## Exemple backend (Node / Express)
 
+Préférez une **connection string** unique (Key Vault / CI) plutôt que des variables séparées :
+
+```text
+host=https://app.example.surfy.pro;client_id=<tenant>;client_secret=<api-key>
+```
+
+Alias acceptés : `endpoint` / `clientId` / `clientSecret`.
+
 ```ts
-// POST https://<base-url>/api/v1/authentication/token
-// Body: { "clientId": "...", "clientSecret": "..." }
+type SurfyApiConnection = {
+  host: string;
+  clientId: string;
+  clientSecret: string;
+};
+
+function parseSurfyConnectionString(raw: string): SurfyApiConnection {
+  const state: Partial<SurfyApiConnection> = {};
+  for (const segment of raw.trim().split(';')) {
+    const piece = segment.trim();
+    if (!piece) continue;
+    const eq = piece.indexOf('=');
+    if (eq <= 0) throw new Error(`Invalid segment "${piece}"`);
+    const key = piece.slice(0, eq).trim().toLowerCase();
+    const value = piece.slice(eq + 1).trim();
+    if (!value) throw new Error(`Missing value for "${key}"`);
+    if (key === 'host' || key === 'endpoint') state.host = value.replace(/\/$/, '');
+    else if (key === 'client_id' || key === 'clientid') state.clientId = value;
+    else if (key === 'client_secret' || key === 'clientsecret') state.clientSecret = value;
+    else throw new Error(`Unknown key "${key}"`);
+  }
+  if (!state.host || !state.clientId || !state.clientSecret) {
+    throw new Error('Connection string must include host, client_id, client_secret');
+  }
+  return state as SurfyApiConnection;
+}
+
+// Env: SURFY_CONNECTION_STRING=host=…;client_id=…;client_secret=…
+// POST {host}/api/v1/authentication/token — body: { clientId, clientSecret }
 
 app.get('/api/surfy-token', async (_req, res) => {
-  const response = await fetch(`${SURFY_BASE_URL}/api/v1/authentication/token`, {
+  const { host, clientId, clientSecret } = parseSurfyConnectionString(
+    process.env.SURFY_CONNECTION_STRING ?? '',
+  );
+
+  const response = await fetch(`${host}/api/v1/authentication/token`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      clientId: process.env.SURFY_CLIENT_ID,
-      clientSecret: process.env.SURFY_CLIENT_SECRET,
-    }),
+    body: JSON.stringify({ clientId, clientSecret }),
   });
 
   if (!response.ok) {

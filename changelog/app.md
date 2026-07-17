@@ -31,6 +31,7 @@ sidebar_position: 1
   - Réservation de **parking** (Mon planning) : bouton par **étage** du bâtiment avec le nombre de places disponibles ; info-bulle détaillant les réservations en cours et la disponibilité par type de place.
   - Réservation de **poste de travail** : bouton **Libérer cette réservation** sur les postes déjà réservés dans le planning.
   - Confirmation des réservations du jour : seules les réservations **créées avant la fin** de la plage <P code="company:workplaceBookingConfirmationRange" /> peuvent recevoir un rappel ou être annulées automatiquement ; une réservation prise après cette heure (ex. sur un poste libéré en cours de journée) n’est plus concernée par ce processus.
+  - <P code="company:workplaceBookingAgendaSyncEnabled" /> : à chaque réservation de **poste** ou de **parking**, une invitation est envoyée dans le calendrier du collaborateur (Outlook, Gmail, etc.) et retirée en cas d’annulation.
   - Réservation de **salles de réunion** : messages d’erreur plus explicites lors d’un échec de création de rendez-vous via le calendrier Microsoft.
 
 - <OT code="personToRoomBooking" /> et <OT code="personToWorkplaceBooking" />
