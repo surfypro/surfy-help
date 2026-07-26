@@ -16,27 +16,32 @@ Les vues **CubyV2** exposent des réglages d'affichage via `setOptions`. Les app
 ## `setOptions(options)`
 
 ```ts
-import type { SurfyLayout3dOptions, SurfyBuildingLayout3dElement } from '@surfy/surfy-sdk';
+import { SurfySdk, type SurfyLayout3dOptions } from '@surfy/surfy-sdk';
 
-const building = document.querySelector('surfy-building-layout-3d') as SurfyBuildingLayout3dElement;
-
-building.addEventListener('surfy:ready', () => {
-  building.setOptions({
-    floorSpace: 320,
-    showRoomLabels: false,
-    showFloorLabels: true,
-    buildingRotationZ: 15,
-    selectedFloorIds: [101, 102],
-    wallMode: 'cuby',
-    showStructureWalls: true,
-    structureFloorIds: [101],
-    singleFloorNavigation: { controls: 'map', zoomMode: 'zenith' },
-    multiFloorNavigation: { controls: 'building', zoomMode: 'isometric' },
-  });
+const building = SurfySdk.mountBuilding3d({
+  container: '#map',
+  tenant,
+  baseUrl,
+  buildingId,
+  getAccessToken,
+  onReady: () => {
+    building.setOptions({
+      floorSpace: 320,
+      showRoomLabels: false,
+      showFloorLabels: true,
+      buildingRotationZ: 15,
+      selectedFloorIds: [101, 102],
+      wallMode: 'no',
+      showStructureWalls: true,
+      structureFloorIds: [101],
+      singleFloorNavigation: { controls: 'map', zoomMode: 'zenith' },
+      multiFloorNavigation: { controls: 'building', zoomMode: 'isometric' },
+    } satisfies SurfyLayout3dOptions);
+  },
 });
 ```
 
-Vous pouvez appeler `setOptions` **avant** `surfy:ready` : les valeurs sont conservées et appliquées au chargement de la scène.
+Vous pouvez appeler `setOptions` **avant** `onReady` : les valeurs sont conservées et appliquées au chargement de la scène.
 
 ## Type `SurfyLayout3dOptions`
 
@@ -47,7 +52,7 @@ Vous pouvez appeler `setOptions` **avant** `surfy:ready` : les valeurs sont cons
 | `showFloorLabels` | `boolean` | `true` | Libellés des étages |
 | `buildingRotationZ` | `number` | `0` | Rotation du bâtiment autour de Z (degrés) |
 | `selectedFloorIds` | `number[]` | tous les étages du layout | Étages visibles |
-| `wallMode` | `SurfyLayout3dWallMode` | `'cuby'` | Mode de rendu des cloisons |
+| `wallMode` | `SurfyLayout3dWallMode` | `'no'` | Mode de rendu des cloisons |
 | `showStructureWalls` | `boolean` | `false` | Afficher les structures du bâtiment |
 | `structureFloorIds` | `number[]` | tous les étages visibles | Étages dont la structure est affichée |
 | `singleFloorNavigation` | `SurfyLayout3dNavigationOptions` | `{ controls: 'map', zoomMode: 'zenith' }` | Navigation quand **un** étage est sélectionné |
@@ -57,8 +62,8 @@ Vous pouvez appeler `setOptions` **avant** `surfy:ready` : les valeurs sont cons
 
 | Valeur | Description |
 |--------|-------------|
-| `'cuby'` | Style cartographie Cuby (défaut embed SDK) — masque postes, mobilier et structures |
-| `'no'` | Sans murs |
+| `'cuby'` | Style cartographie Cuby — masque postes, mobilier et structures (pas de raycast postes/items) |
+| `'no'` | Sans murs (**défaut**) — postes et mobilier visibles et pickables |
 | `'half'` | Murs demi-hauteur |
 | `'reality'` | Rendu « réaliste » |
 | `'cuby-reality-selected'` | Mobilier/postes uniquement dans les espaces sélectionnés |

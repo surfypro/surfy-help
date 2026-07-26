@@ -8,6 +8,14 @@ Most organizations’ day-to-day application remains at [https://app.surfy.pro](
 
 When a release goes to production, useful content is moved to [What's New](./app.md); this page is then hidden by renaming it to `_app-alpha.md`.
 
+## July 26, 2026 - v3.5.24
+
+- **Surfy SDK (integrators)**
+  - Embed a read-only **2D** floor plan or **3D** building (colors, zoom, selection) in your application.
+  - Three integration surfaces: **Web Component**, **JavaScript API** (`SurfySdk.mountFloor2d` / `mountBuilding3d`), and **Surfy React Web** (hooks).
+  - Client **data** API (buildings / floors / rooms) in the same ship, with machine JWT auth via your backend (no secret in the browser).
+  - Guide: [Surfy SDK](/entities/sdk/).
+
 ## July 22, 2026 - v3.5.23
 
 - <OT code="itemType" />

@@ -7,7 +7,7 @@ sidebar_label: "Thème (MUI)"
 
 Le SDK embarque un thème MUI par défaut (bleu classique Surfy) dans le Shadow DOM. L'application hôte peut le **surcharger** via `setTheme` — les **presets de thème ne sont pas fournis** dans le package npm : vous les définissez dans votre app.
 
-Fonctionne sur **tous** les éléments de layout (`surfy-floor-layout-2d`, `surfy-building-layout-3d`, …).
+Fonctionne sur le handle `SurfyLayout` (`setTheme`), les Web Components, et Surfy React Web (`themeOptions`).
 
 ## `setTheme(theme?)`
 

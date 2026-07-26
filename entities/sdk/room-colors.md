@@ -5,18 +5,24 @@ sidebar_label: "Couleurs des espaces"
 
 # Couleurs des espaces
 
-Coloriez un ou plusieurs espaces via `setRoomColors`. L'API est **identique** sur les trois éléments de layout (2D SVG et 3D CubyV2).
+Coloriez un ou plusieurs espaces via `setRoomColors`. L'API est **identique** sur API JS (`SurfyLayout`), Web Components et Surfy React Web (prop `roomColors` / méthodes équivalentes).
 
 ## Usage de base
 
 ```ts
-const el = document.querySelector('surfy-floor-layout-2d')!;
+import { SurfySdk } from '@surfy/surfy-sdk';
 
-// Attendre que le el soit prêt
-el.addEventListener('surfy:ready', () => {
-  el.setRoomColors({
-    577183: '#2196F3',
-  });
+const layout = SurfySdk.mountFloor2d({
+  container: '#map',
+  tenant,
+  baseUrl,
+  floorId,
+  getAccessToken,
+  onReady: () => {
+    layout.setRoomColors({
+      577183: '#2196F3',
+    });
+  },
 });
 ```
 

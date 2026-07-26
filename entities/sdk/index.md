@@ -6,89 +6,90 @@ search_rank: 1
 
 # Surfy SDK — intégration cartographie
 
-Le **Surfy SDK** (`@surfy/surfy-sdk`) expose la cartographie Surfy aux applications tierces via des **Web Components** :
+Le **Surfy SDK** (`@surfy/surfy-sdk`) permet d'embarquer un **plan d'étage 2D** ou un **bâtiment 3D** Surfy en **lecture seule** (couleurs, zoom, sélection, thème) — sans reconstruire la géométrie Surfy et **sans** exposer le `clientSecret` dans le navigateur.
 
-| Élément | Rendu | Statut |
-|---------|-------|--------|
-| `<surfy-floor-layout-2d>` | Plan d'étage 2D (SVG) | **Disponible** |
-| `<surfy-building-layout-3d>` | Bâtiment 3D multi-étages (CubyV2) | **Disponible** (alpha SDK) |
-| `<surfy-floor-layout-3d>` | Plan d'étage 3D (CubyV2) | Spécifié — enregistrement à venir |
+## Trois surfaces (+ API données)
 
-Les éléments disponibles partagent la **même API** : authentification JWT, `setRoomColors` / `clearRoomColors`, `setTheme`, événements `surfy:ready`, `surfy:room-selected`, `surfy:room-hover`, `surfy:error`. Le bâtiment 3D ajoute `setOptions` et `fitToView`.
+Les trois surfaces de layout partagent les **mêmes sémantiques** (auth JWT machine, tenant, couleurs, sélection). Choisissez selon votre stack :
 
-```html
-<surfy-floor-layout-2d
-  floor-id="10065"
-  tenant="surfy-demo"
-  base-url="https://app.surfy.pro"
-></surfy-floor-layout-2d>
+| Surface | Import | Public cible |
+|---------|--------|--------------|
+| **API JavaScript** | `@surfy/surfy-sdk` → `SurfySdk.mountFloor2d` / `mountBuilding3d` | HTML, Vue, Angular, tout hôte DOM |
+| **Web Component** | mêmes tags (`surfy-floor-layout-2d`, `surfy-building-layout-3d`) | Markup HTML / frameworks non-React |
+| **Surfy React Web** | `@surfy/surfy-sdk/react` | Apps React (préféré dans une app React Surfy ou tierce) |
+| **API données client** | `@surfy/surfy-sdk/client` → `SurfyClient` | Backend ou navigateur — bâtiments / étages / espaces |
+
+```ts
+import { SurfySdk } from '@surfy/surfy-sdk';
+
+const layout = SurfySdk.mountFloor2d({
+  container: '#map',
+  tenant: 'mon-tenant',
+  baseUrl: 'https://app.surfy.pro',
+  floorId: 10065,
+  getAccessToken: () => fetchToken(),
+});
 ```
 
-Chaque composant charge ses données dans un **Shadow DOM** (styles isolés).
+Handle `SurfyLayout` : `setRoomColors`, `setTheme`, `updateRoom`, `setFillParent`, callbacks `onReady` / `onRoomSelected` / `onRoomHover` / `onError`, `destroy()`. Le bâtiment 3D ajoute `setOptions` et `fitToView`.
 
 ## Statut des fonctionnalités
 
 | Fonctionnalité | Statut |
 |----------------|--------|
-| `<surfy-floor-layout-2d>` | Disponible — zoom, sélection d'espaces |
-| `setRoomColors` / `clearRoomColors` | Disponible (2D SVG + bâtiment 3D CubyV2) |
-| `setTheme` | Disponible (tous les éléments enregistrés) |
-| `fill-parent` | Disponible (2D et bâtiment 3D) |
-| `<surfy-building-layout-3d>` | Disponible — CubyV2, `setOptions`, `fitToView` |
-| `<surfy-floor-layout-3d>` | Tag réservé — pas encore enregistré dans le package |
-| `setOptions` / `fitToView` | Disponibles sur **bâtiment 3D** ; no-op sur 2D pour l'instant |
-| `updateRoom` | Disponible — couleur (2D + 3D) ; libellé / ancre (bâtiment 3D) |
+| `SurfySdk.mountFloor2d` / `mountBuilding3d` | Disponible — API JS recommandée hors React |
+| Web Components (`surfy-floor-layout-2d`, `surfy-building-layout-3d`) | Disponibles — même moteur que `mount*` |
+| Surfy React Web (`@surfy/surfy-sdk/react`) | Disponible — hooks + composants de layout |
+| `SurfyClient` (`@surfy/surfy-sdk/client`) | Disponible — QueryNode / entités |
+| `setRoomColors` / `clearRoomColors` | Disponible (2D + bâtiment 3D) |
+| `setTheme` | Disponible |
+| `fillParent` / `setFillParent` | Disponible |
+| `updateRoom` | Couleur (2D + 3D) ; libellé (bâtiment 3D) |
+| React Native mobile | **Hors périmètre V1** |
+| SSO / auth utilisateur déléguée | **Reporté** (V1 = JWT machine via backend) |
 
-Version publiée : constante `SURFY_SDK_VERSION` (semver du package npm).
+Version : `SurfySdk.version` / `SURFY_SDK_VERSION`.
+
+Le package peut être consommé en **artefact workspace** (`file:…/dist/surfy-sdk`) tant que la publication npm n'est pas ouverte — les demos et E2E restent la preuve de livraison.
 
 ## Principe d'intégration
 
 ```mermaid
 sequenceDiagram
   participant App as Application hôte
-  participant SDK as Élément layout SDK
+  participant SDK as Surfy SDK
   participant API as API Surfy
 
-  App->>SDK: setAccessTokenProvider()
+  App->>SDK: mount* / WC / React Web + getAccessToken
   SDK->>App: getAccessToken()
   App-->>SDK: JWT Bearer
-  SDK->>API: POST layout (étage ou bâtiment)
-  API-->>SDK: données layout
-  SDK->>App: surfy:ready
-  App->>SDK: setRoomColors / setTheme / setOptions
+  SDK->>API: layout / entities
+  API-->>SDK: données
+  SDK->>App: onReady / événements
+  App->>SDK: setRoomColors / setTheme / hooks
 ```
 
-1. L'hôte enregistre une fonction qui fournit un **JWT court** (jamais le `clientSecret` côté navigateur).
-2. Le SDK récupère les données layout via l'API Surfy.
-3. L'hôte écoute les événements DOM et pilote le rendu (couleurs, thème, options 3D, taille).
+1. Votre **backend** échange `clientId` + `clientSecret` (ou connection string) contre un JWT court.
+2. Le navigateur ne reçoit que le JWT via `getAccessToken` — **jamais** le secret.
+3. Vous pilotez le rendu (couleurs, thème, options 3D) puis appelez `destroy()` / démontez le composant React.
 
 ## Guides
 
 | Page | Contenu |
 |------|---------|
-| [Installation](./installation.md) | npm, enregistrement des custom elements |
-| [Authentification](./authentication.md) | JWT, tenant, proxy backend |
-| [Éléments de layout](./layout-elements.md) | API commune + 2D / 3D / bâtiment |
-| [Thème (MUI)](./theme.md) | `setTheme`, `SurfyThemeOptions` |
-| [Options 3D](./options-3d.md) | `setOptions`, `fitToView` (bâtiment 3D) |
-| [Espaces (`updateRoom`)](./update-room.md) | Couleur + libellé + ancre par espace |
-| [Couleurs des espaces](./room-colors.md) | `setRoomColors`, plusieurs pièces |
-| [Taille et conteneur](./layout-and-sizing.md) | CSS, attribut `fill-parent` |
-| [Intégration React](./react-integration.md) | Exemple complet TypeScript |
-| [Maintenir la documentation](./maintenance.md) | Cohérence doc ↔ code SDK |
+| [Installation](./installation.md) | Package, entrées `./`, `./react`, `./client` |
+| [Authentification](./authentication.md) | JWT machine, proxy backend |
+| [Éléments de layout](./layout-elements.md) | API JS `mount*` + Web Components |
+| [Surfy React Web](./surfy-react-web.md) | Hooks et composition React |
+| [API données client](./client-data-api.md) | `SurfyClient` / QueryNode |
+| [Thème (MUI)](./theme.md) | `setTheme` |
+| [Options 3D](./options-3d.md) | `setOptions`, `fitToView` |
+| [Espaces (`updateRoom`)](./update-room.md) | Couleur + libellé |
+| [Couleurs des espaces](./room-colors.md) | `setRoomColors` |
+| [Taille et conteneur](./layout-and-sizing.md) | CSS, `fillParent` |
+| [Intégration React (aperçu)](./react-integration.md) | Quand utiliser mount vs Surfy React Web |
+| [Maintenir la documentation](./maintenance.md) | Cohérence doc ↔ code |
 
 ## Démo de référence
 
-Le dépôt **surfy-sdk-demos** (monorepo public) contient :
-
-- `apps/react-web` — démo Vite + React avec **trois onglets** : étage 2D, étage 3D (placeholder), bâtiment 3D
-- `apps/demo-server` — proxy d'authentification (`clientId` / `clientSecret` côté serveur uniquement)
-- tests Playwright E2E (chargement 2D, bâtiment 3D, couleurs, thème)
-
-Chaque onglet correspond à un tag Web Component documenté dans [Éléments de layout](./layout-elements.md).
-
-## Ce que le SDK n'est pas
-
-- Ce n'est **pas** un export React du Work Canvas Surfy : React, MUI et Jotai sont **bundlés dans le Shadow DOM**.
-- Le CSS de votre application **ne pénètre pas** le plan (par design). Utilisez les méthodes et attributs publics.
-- Les secrets (`clientSecret`) restent **côté serveur**.
+Le dépôt **surfy-sdk-demos** (`apps/react-web`) illustre les surfaces et les routes de démo (étage 2D, bâtiment 3D). Les tests E2E de ce dépôt font partie de la barre de livraison V1.

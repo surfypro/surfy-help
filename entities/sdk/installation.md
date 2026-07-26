@@ -5,7 +5,7 @@ sidebar_label: "Installation"
 
 # Installation
 
-## npm
+## Package
 
 ```bash
 pnpm add @surfy/surfy-sdk
@@ -13,67 +13,91 @@ pnpm add @surfy/surfy-sdk
 npm install @surfy/surfy-sdk
 ```
 
-Le package publie un bundle ESM unique (`index.js`) et des types TypeScript (`index.d.ts`).
+Tant que le package n'est pas publié sur le registre npm public, utilisez l'artefact produit par le monolithe Surfy (`pnpm build:sdk` → dépendance `file:…/dist/surfy-sdk`). Voir le dépôt **surfy-sdk-demos** pour un exemple de consommation.
 
-## Enregistrement des Web Components
+### Entrées publiées
 
-L'import du package enregistre automatiquement les éléments disponibles :
+| Import | Rôle |
+|--------|------|
+| `@surfy/surfy-sdk` | Layout : `SurfySdk.mountFloor2d` / `mountBuilding3d`, enregistrement des Web Components, types |
+| `@surfy/surfy-sdk/react` | **Surfy React Web** — Provider, composants de layout, hooks `useRoom` / `useSetRoom` / … (ne enregistre **pas** les custom elements) |
+| `@surfy/surfy-sdk/client` | **API données** isomorphic — `SurfyClient`, `createFilter`, types d'entités |
 
-- `surfy-floor-layout-2d`
-- `surfy-building-layout-3d`
-- `surfy-floor-layout-3d` — **pas encore enregistré** (tag réservé, voir changelog)
+React / React DOM sont des **peerDependencies** optionnelles (requises seulement pour `@surfy/surfy-sdk/react`).
 
-### JavaScript / TypeScript (recommandé)
+## Montage API JS (recommandé hors React)
 
 ```ts
-import '@surfy/surfy-sdk';
-// ou explicitement :
-import { registerSurfyLayoutElements } from '@surfy/surfy-sdk';
+import { SurfySdk } from '@surfy/surfy-sdk';
 
-registerSurfyLayoutElements();
-// → surfy-floor-layout-2d, surfy-building-layout-3d
-// À venir : surfy-floor-layout-3d
+const layout = SurfySdk.mountFloor2d({
+  container: '#map',
+  tenant: 'mon-tenant',
+  baseUrl: 'https://app.surfy.pro',
+  floorId: 10065,
+  getAccessToken: async () => {
+    const response = await fetch('/api/surfy-token');
+    if (!response.ok) {
+      throw new Error(`Token request failed (${response.status})`);
+    }
+    const { token } = await response.json();
+    return token;
+  },
+});
 ```
 
-### HTML (CDN — exemple)
+`mountFloor2d` / `mountBuilding3d` enregistrent les custom elements si besoin, vérifient `window` / `document`, et attachent le layout au conteneur.
+
+### Web Component (markup)
 
 ```html
 <script type="module">
-  import { registerSurfyLayoutElements } from 'https://cdn.example/@surfy/surfy-sdk/index.js';
-  registerSurfyLayoutElements();
+  import '@surfy/surfy-sdk'; // enregistre les tags
 </script>
-
 <surfy-floor-layout-2d
-  id="plan"
   floor-id="10065"
   tenant="mon-tenant"
   base-url="https://app.surfy.pro"
+  fill-parent
 ></surfy-floor-layout-2d>
 ```
+
+Puis `setAccessTokenProvider` sur l'élément — voir [Éléments de layout](./layout-elements.md).
+
+### Surfy React Web
+
+```ts
+import {
+  SurfySdkReactProvider,
+  SurfyFloorLayout2dReact,
+  useRoom,
+} from '@surfy/surfy-sdk/react';
+```
+
+Détail : [Surfy React Web](./surfy-react-web.md).
 
 ### Constantes de tags
 
 ```ts
 import {
   SURFY_FLOOR_LAYOUT_2D_TAG,
-  SURFY_FLOOR_LAYOUT_3D_TAG,
   SURFY_BUILDING_LAYOUT_3D_TAG,
 } from '@surfy/surfy-sdk';
 ```
 
 ## Prérequis côté Surfy
 
-- Un **tenant** Surfy actif (`tenant` = identifiant client / slug).
-- Un **étage** (`floor-id`) pour les vues 2D/3D étage, ou un **bâtiment** (`building-id`) pour la vue bâtiment 3D.
-- Des **credentials API** (`clientId` + `clientSecret`) ou un flux JWT équivalent.
-- L'origine API (`base-url`) joignable depuis le navigateur (CORS si domaine différent).
+- Un **tenant** Surfy actif (`tenant` = slug).
+- Un **étage** (`floorId`) ou un **bâtiment** (`buildingId`).
+- Des **credentials API** (`clientId` + `clientSecret` / connection string) côté **backend** uniquement.
+- L'origine API (`baseUrl`) joignable (CORS si domaine différent).
 
 ## Vérifier la version chargée
 
 ```ts
-import { SURFY_SDK_VERSION } from '@surfy/surfy-sdk';
+import { SurfySdk, SURFY_SDK_VERSION } from '@surfy/surfy-sdk';
 
-console.log(SURFY_SDK_VERSION); // ex. "0.1.0"
+console.log(SurfySdk.version, SURFY_SDK_VERSION); // ex. "0.2.0"
 ```
 
 Chaque requête layout envoie aussi l'en-tête `X-Surfy-Sdk-Version` pour le support.

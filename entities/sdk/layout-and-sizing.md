@@ -5,7 +5,7 @@ sidebar_label: "Taille et conteneur"
 
 # Taille et conteneur
 
-Les éléments de layout (`surfy-floor-layout-2d`, `surfy-floor-layout-3d`, `surfy-building-layout-3d`) sont des blocs `display: block`. Leur taille dépend du **conteneur parent**.
+Les layouts (Web Component ou nœud monté par `SurfySdk.mount*`) sont des blocs `display: block`. Leur taille dépend du **conteneur parent**. Avec l'API JS, préférez `fillParent: true` (défaut) ou `layout.setFillParent(true)`.
 
 ## Hauteur fixe ou relative
 

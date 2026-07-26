@@ -3,283 +3,130 @@ sidebar_position: 4
 sidebar_label: "Éléments de layout"
 ---
 
-# Éléments de layout — API publique
+# Layouts — API JavaScript et Web Components
 
-Le SDK expose **trois Web Components** pour intégrer la cartographie Surfy. Ils partagent la **même API impérative** et le même modèle Shadow DOM.
+Deux façons d'embarquer le **même** rendu (Shadow DOM) :
 
-| Élément | Rendu | Moteur | Statut |
-|---------|-------|--------|--------|
-| `<surfy-floor-layout-2d>` | Plan d'étage 2D (SVG) | `SimpleFloorLayoutViewer` | **Disponible** |
-| `<surfy-building-layout-3d>` | Bâtiment 3D (multi-étages) | **CubyV2** | **Disponible** (alpha SDK) |
-| `<surfy-floor-layout-3d>` | Plan d'étage 3D | **CubyV2** | Spécifié — tag pas encore enregistré |
+1. **API JavaScript** — `SurfySdk.mountFloor2d` / `SurfySdk.mountBuilding3d` (recommandée hors React)
+2. **Web Component** — tags HTML + méthodes / événements DOM
+
+Pour une app React, préférez [Surfy React Web](./surfy-react-web.md).
+
+| Kind / tag | Rendu | Statut |
+|------------|-------|--------|
+| `floor-2d` / `<surfy-floor-layout-2d>` | Plan d'étage 2D (SVG) | **Disponible** |
+| `building-3d` / `<surfy-building-layout-3d>` | Bâtiment 3D multi-étages (CubyV2) | **Disponible** (alpha SDK) |
+
+```ts
+import { SurfySdk } from '@surfy/surfy-sdk';
+
+const layout = SurfySdk.mountBuilding3d({
+  container: '#map', // HTMLElement ou sélecteur CSS
+  tenant: 'mon-tenant',
+  baseUrl: 'https://app.surfy.pro',
+  buildingId: 42,
+  getAccessToken: () => fetchToken(),
+  onReady: () => console.log('ready'),
+  onError: (err) => console.error(err),
+});
+
+layout.setRoomColors({ 1001: '#2196F3' });
+layout.setOptions({ showRoomLabels: true });
+layout.fitToView();
+layout.destroy();
+```
 
 ```mermaid
 flowchart LR
-  subgraph api["API commune SurfyLayoutElement"]
-    Auth["setAccessTokenProvider"]
-    Colors["setRoomColors / clearRoomColors"]
-    Theme["setTheme"]
-    Opt3d["setOptions / fitToView"]
-    Events["surfy:ready, surfy:error, surfy:room-*"]
-  end
-
-  D2["surfy-floor-layout-2d"]
-  B3["surfy-building-layout-3d"]
-  D3["surfy-floor-layout-3d"]
-
-  api --> D2
-  api --> B3
-  api -.-> D3
-  D2 --> SVG["SVG 2D"]
-  B3 --> Cuby["CubyV2"]
-  D3 -.-> Cuby
+  App["Application hôte"] --> Mount["SurfySdk.mount*"]
+  App --> WC["Tags HTML"]
+  Mount --> Handle["SurfyLayout"]
+  Handle --> CE["Web Component"]
+  WC --> CE
+  CE --> SVG["SVG 2D"]
+  CE --> Cuby["CubyV2"]
 ```
 
----
+## `SurfyLayout` (handle `mount*`)
 
-## API commune (`SurfyLayoutElement`)
+| Méthode | Description |
+|---------|-------------|
+| `setAccessTokenProvider` | JWT Bearer — voir [Authentification](./authentication.md) |
+| `setRoomColors` / `clearRoomColors` | Voir [Couleurs](./room-colors.md) |
+| `updateRoom` | Voir [updateRoom](./update-room.md) |
+| `setTheme` | Voir [Thème](./theme.md) |
+| `setOptions` / `fitToView` / `zoomOn` | Voir [Options 3D](./options-3d.md) (`setOptions` no-op en 2D) |
+| `setFillParent` | Remplir le conteneur |
+| `setEntityId` | Changer `floorId` / `buildingId` |
+| `getRenderedRoomIds` | Ids d'espaces présents dans le DOM rendu |
+| `destroy` | Retire l'élément et les listeners |
 
-Tous les éléments implémentent la même interface TypeScript :
+Helpers : `SurfySdk.isKindRegistered(kind)`, `SurfySdk.tagForKind(kind)`, `SurfySdk.version`.
+
+### Options `mountFloor2d`
+
+| Champ | Requis | Description |
+|-------|--------|-------------|
+| `container` | oui | `HTMLElement` ou sélecteur |
+| `tenant` | oui | Slug tenant |
+| `baseUrl` | oui | Origine API sans slash final |
+| `floorId` | oui | Id étage |
+| `getAccessToken` | oui | `() => Promise<string>` |
+| `locale` / `fillParent` / `theme` | non | Locale, sizing, thème |
+| `onReady` / `onRoomHover` / `onRoomSelected` / `onError` | non | Callbacks typés |
+
+### Options `mountBuilding3d`
+
+Comme ci-dessus avec `buildingId` (requis), plus `floorIds?` (sous-ensemble d'étages) et `options?` (`SurfyLayout3dOptions`).
+
+Le SDK vérifie `window` / `document` et lève `SDK_CONFIG` si le tag n'est pas enregistré ou si le conteneur est invalide.
+
+## Web Component
+
+```html
+<surfy-floor-layout-2d
+  floor-id="10065"
+  tenant="mon-tenant"
+  base-url="https://app.surfy.pro"
+  fill-parent
+></surfy-floor-layout-2d>
+```
 
 ```ts
-interface SurfyLayoutElement extends HTMLElement {
-  setAccessTokenProvider(provider: () => Promise<string>): void;
-  setRoomColors(colors: Record<number, string>): void;
-  clearRoomColors(): void;
-  setTheme(theme?: SurfyThemeOptions | null): void;
-  setOptions(options: SurfyLayout3dOptions): void;
-  fitToView(): void;
-  updateRoom(roomId: number, options: SurfyRoomUpdateOptions): void;
-}
-```
+import '@surfy/surfy-sdk'; // enregistre les tags
+import type { SurfyLayoutElement } from '@surfy/surfy-sdk';
 
-| Méthode | 2D | Bâtiment 3D | Description |
-|---------|-----|-------------|-------------|
-| `setAccessTokenProvider` | oui | oui | JWT Bearer — voir [Authentification](./authentication.md) |
-| `setRoomColors` / `clearRoomColors` | oui | oui | Voir [Couleurs](./room-colors.md) |
-| `updateRoom` | couleur | oui | Voir [updateRoom](./update-room.md) |
-| `setTheme` | oui | oui | Voir [Thème](./theme.md) |
-| `setOptions` | no-op | oui | Voir [Options 3D](./options-3d.md) |
-| `fitToView` | stub | oui | Recentre la caméra (bâtiment 3D) |
+const el = document.querySelector('surfy-floor-layout-2d') as SurfyLayoutElement;
+el.setAccessTokenProvider(() => fetchToken());
+el.addEventListener('surfy:ready', () => {
+  el.setRoomColors({ 577183: '#2196F3' });
+});
+```
 
 ### Attributs communs
 
 | Attribut | Requis | Description |
 |----------|--------|-------------|
 | `tenant` | oui | Slug tenant (`x-tenant`) |
-| `base-url` | oui | Origine API Surfy, sans slash final |
+| `base-url` | oui | Origine API, sans slash final |
 | `locale` | non | `accept-language`, défaut `en` |
-| `fill-parent` | non | Occupe 100 % largeur/hauteur du parent — voir [Taille](./layout-and-sizing.md) |
+| `fill-parent` | non | 100 % du parent — voir [Taille](./layout-and-sizing.md) |
+| `floor-id` | 2D | Id étage |
+| `building-id` | bâtiment 3D | Id bâtiment |
 
 ### Événements DOM
 
-`CustomEvent` avec `bubbles: true`, écoutés sur l'élément hôte.
+| Événement | `detail` (indicatif) |
+|-----------|----------------------|
+| `surfy:ready` | Identifiant layout prêt |
+| `surfy:error` | `{ code, message }` |
+| `surfy:room-selected` | `{ roomId, name }` |
+| `surfy:room-hover` | `{ roomId, name }` ou `null` |
 
-```mermaid
-sequenceDiagram
-  participant Host as Application hôte
-  participant El as Élément layout SDK
+Les callbacks de `mount*` remplacent `addEventListener` pour le même contrat.
 
-  El->>Host: surfy:ready { floorId | buildingId }
-  El->>Host: surfy:room-hover { roomId, name }
-  El->>Host: surfy:room-selected { roomId, name }
-  Host->>El: setRoomColors / setTheme / setOptions
-  El-->>Host: surfy:error { code, message }
-```
+### Escape hatch
 
-| Événement | `detail` |
-|-----------|----------|
-| `surfy:ready` | Voir sections par élément |
-| `surfy:error` | `{ code: SurfySdkErrorCode, message: string }` |
-| `surfy:room-selected` | `{ roomId: number, name: string }` |
-| `surfy:room-hover` | `{ roomId: number, name: string }` ou `null` |
+`layout.element` expose le custom element (`SurfyLayoutElement`) pour tests ou usages avancés.
 
-### Codes d'erreur (`SurfySdkErrorCode`)
-
-`AUTH_EXPIRED` · `AUTH_FORBIDDEN` · `TENANT_MISMATCH` · `LAYOUT_NOT_FOUND` · `NETWORK` · `SDK_CONFIG`
-
----
-
-## `<surfy-floor-layout-2d>`
-
-Plan d'étage **2D** interactif (zoom, sélection d'espaces, toolbar MUI).
-
-### Attributs spécifiques
-
-| Attribut | Requis | Description |
-|----------|--------|-------------|
-| `floor-id` | oui | Identifiant numérique de l'étage |
-
-### `surfy:ready`
-
-```ts
-{ floorId: number }
-```
-
-### Exemple
-
-```html
-<div style="width: 100%; height: 500px;">
-  <surfy-floor-layout-2d
-    floor-id="10065"
-    tenant="surfy-demo"
-    base-url="https://app.surfy.pro"
-    locale="fr"
-    fill-parent
-  ></surfy-floor-layout-2d>
-</div>
-```
-
-```ts
-const el = document.querySelector('surfy-floor-layout-2d')!;
-
-el.setAccessTokenProvider(async () => /* JWT */);
-el.addEventListener('surfy:ready', () => {
-  el.setRoomColors({ 577183: '#2196F3' });
-  el.setTheme({ primary: { main: '#0277bd' } });
-});
-```
-
-### HTTP
-
-| | |
-|--|--|
-| Méthode | `POST` |
-| URL | `{base-url}/api/v1/layout/floor/data` |
-| Corps | `{ "floorId": <number> }` |
-
----
-
-## `<surfy-building-layout-3d>`
-
-Vue **3D** d'un **bâtiment entier** (plusieurs étages empilés), rendue par **CubyV2**.
-
-### Attributs spécifiques
-
-| Attribut | Requis | Description |
-|----------|--------|-------------|
-| `building-id` | oui | Identifiant numérique du bâtiment |
-
-### `surfy:ready`
-
-```ts
-{ buildingId: number }
-```
-
-### Exemple complet
-
-```html
-<div class="plan-host" style="width: 100%; height: 70vh; min-height: 420px;">
-  <surfy-building-layout-3d
-    building-id="42"
-    tenant="surfy-demo"
-    base-url="https://app.surfy.pro"
-    fill-parent
-  ></surfy-building-layout-3d>
-</div>
-```
-
-```ts
-import type { SurfyBuildingLayout3dElement } from '@surfy/surfy-sdk';
-
-const el = document.querySelector('surfy-building-layout-3d') as SurfyBuildingLayout3dElement;
-
-el.setAccessTokenProvider(async () => /* JWT */);
-
-el.setOptions({
-  floorSpace: 240,
-  showRoomLabels: true,
-  showFloorLabels: true,
-});
-
-el.addEventListener('surfy:ready', () => {
-  el.fitToView();
-});
-
-el.addEventListener('surfy:room-selected', (e) => {
-  console.log('Espace', e.detail.roomId, e.detail.name);
-});
-```
-
-### HTTP
-
-| | |
-|--|--|
-| Méthode | `POST` |
-| URL | `{base-url}/api/v1/layout/buildings/data` |
-| Corps | `{ "buildingIds": [<buildingId>] }` |
-
-Les couleurs, thème et événements `surfy:room-*` utilisent les **mêmes `roomId`** que les vues étage.
-
-Options d'affichage : [Options 3D](./options-3d.md).
-
----
-
-## `<surfy-floor-layout-3d>`
-
-Vue **3D** d'un **seul étage** (CubyV2). L'API est **spécifiée** et alignée sur `SurfyLayoutElement` ; l'enregistrement du custom element dans `@surfy/surfy-sdk` est **à venir** (constante `SURFY_FLOOR_LAYOUT_3D_TAG` déjà exportée).
-
-### Attributs spécifiques (prévus)
-
-| Attribut | Requis | Description |
-|----------|--------|-------------|
-| `floor-id` | oui | Identifiant de l'étage |
-
-### `surfy:ready` (prévu)
-
-```ts
-{ floorId: number }
-```
-
-### HTTP (prévu)
-
-Même endpoint que le 2D : `POST {base-url}/api/v1/layout/floor/data` avec `{ floorId }`.
-
-:::info À venir
-Vérifiez `SURFY_SDK_VERSION` et le changelog avant intégration. En attendant, la démo **surfy-sdk-demos** réserve l'onglet « Étage 3D » pour ce tag.
-:::
-
----
-
-## TypeScript
-
-Types exportés depuis `@surfy/surfy-sdk` :
-
-```ts
-import type {
-  SurfyLayoutElement,
-  SurfyFloorLayout2dElement,
-  SurfyFloorLayout3dElement,
-  SurfyBuildingLayout3dElement,
-  SurfyThemeOptions,
-  SurfyLayout3dOptions,
-  SurfyLayout3dWallMode,
-  SurfyFloorLayout2dReadyDetail,
-  SurfyBuildingLayout3dReadyDetail,
-  SurfyRoomSelectedDetail,
-  SurfySdkErrorCode,
-} from '@surfy/surfy-sdk';
-
-declare global {
-  interface HTMLElementTagNameMap {
-    'surfy-floor-layout-2d': SurfyFloorLayout2dElement;
-    'surfy-floor-layout-3d': SurfyFloorLayout3dElement;
-    'surfy-building-layout-3d': SurfyBuildingLayout3dElement;
-  }
-}
-```
-
-## Shadow DOM
-
-| Élément | Contenu shadow |
-|---------|----------------|
-| 2D | SVG + toolbar MUI |
-| Bâtiment 3D | Canvas WebGL CubyV2 + handlers (espacement, labels, rotation) |
-
-Styles et polices injectés dans le shadow root ; le CSS de votre page n'affecte pas l'intérieur. Voir [Taille et conteneur](./layout-and-sizing.md).
-
-## Versioning
-
-- Changement cassant sur attributs / méthodes / `detail` → **major** npm.
-- Ajout d'options ou d'éléments sans rupture 2D → **minor**.
-- En-tête `X-Surfy-Sdk-Version` sur les requêtes layout.
+Voir aussi [Installation](./installation.md), [Authentification](./authentication.md), [Taille](./layout-and-sizing.md).

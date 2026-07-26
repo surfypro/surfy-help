@@ -3,85 +3,60 @@ sidebar_position: 10
 sidebar_label: "Intégration React"
 ---
 
-# Intégration React
+# Intégration React — quel chemin choisir ?
 
-Exemple TypeScript aligné sur le dépôt **surfy-sdk-demos** (`apps/react-web`). La démo propose trois onglets mappés aux tags SDK :
+| Besoin | Chemin |
+|--------|--------|
+| App React, composition + hooks Surfy | **[Surfy React Web](./surfy-react-web.md)** (`@surfy/surfy-sdk/react`) — **recommandé** |
+| App React, surface minimale sans hooks | `SurfySdk.mountFloor2d` / `mountBuilding3d` dans un `useEffect` |
+| HTML / Vue / non-React | [Web Component ou mount*](./layout-elements.md) |
 
-| Onglet démo | Tag Web Component |
-|-------------|-------------------|
-| Étage 2D | `surfy-floor-layout-2d` |
-| Étage 3D | `surfy-floor-layout-3d` (placeholder — tag pas encore enregistré) |
-| Bâtiment 3D | `surfy-building-layout-3d` |
+Ne traite **pas** Surfy React Web comme un simple wrapper autour du tag HTML : c'est l'arbre React public du SDK (Provider + layout + hooks).
 
-## Installation
+## Mount depuis React (API JS)
 
-```bash
-pnpm add @surfy/surfy-sdk
-```
-
-## Types importés du package
-
-```ts
-import type {
-  SurfyLayoutElement,
-  SurfyThemeOptions,
-  SurfyLayout3dOptions,
-} from '@surfy/surfy-sdk';
-```
-
-Ne redéfinissez pas l'interface à la main — utilisez `SurfyLayoutElement` depuis le package.
-
-## Composant (étage 2D)
+Utile si vous ne voulez pas importer `@surfy/surfy-sdk/react` :
 
 ```tsx
-import { useEffect, useRef, useState } from 'react';
-import { SurfyFloorLayout2dElementImpl } from '@surfy/surfy-sdk';
-import type { SurfyLayoutElement } from '@surfy/surfy-sdk';
+import { useEffect, useRef } from 'react';
+import { SurfySdk, type SurfyLayout } from '@surfy/surfy-sdk';
 
-export function FloorLayout2dPanel() {
+export function FloorLayout2dMount({ floorId }: { floorId: number }) {
   const hostRef = useRef<HTMLDivElement>(null);
-  const layoutRef = useRef<SurfyLayoutElement | null>(null);
-  const [ready, setReady] = useState(false);
+  const layoutRef = useRef<SurfyLayout | null>(null);
 
   useEffect(() => {
     const host = hostRef.current;
     if (!host) return;
 
-    const el = new SurfyFloorLayout2dElementImpl() as SurfyLayoutElement;
-    el.setAttribute('floor-id', import.meta.env.VITE_SURFY_FLOOR_ID);
-    el.setAttribute('tenant', import.meta.env.VITE_SURFY_TENANT);
-    el.setAttribute('base-url', import.meta.env.VITE_SURFY_BASE_URL);
-    el.setAttribute('fill-parent', '');
-
-    el.setAccessTokenProvider(async () => {
-      const res = await fetch('/api/surfy-token');
-      if (!res.ok) throw new Error('Token failed');
-      const { token } = await res.json();
-      return token;
+    const layout = SurfySdk.mountFloor2d({
+      container: host,
+      tenant: import.meta.env.VITE_SURFY_TENANT,
+      baseUrl: import.meta.env.VITE_SURFY_BASE_URL,
+      floorId,
+      getAccessToken: async () => {
+        const res = await fetch('/api/surfy-token');
+        if (!res.ok) throw new Error('Token failed');
+        const { token } = await res.json();
+        return token;
+      },
+      fillParent: true,
     });
-
-    const onReady = () => setReady(true);
-    el.addEventListener('surfy:ready', onReady);
-    host.appendChild(el);
-    layoutRef.current = el;
+    layoutRef.current = layout;
 
     return () => {
-      el.removeEventListener('surfy:ready', onReady);
-      el.remove();
+      layout.destroy();
       layoutRef.current = null;
     };
-  }, []);
+  }, [floorId]);
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '70vh' }}>
       <button
-        disabled={!ready}
+        type="button"
         onClick={() => layoutRef.current?.setRoomColors({ 577183: '#2196F3' })}
       >
         Colorier un espace
-      </button>
-      <button onClick={() => layoutRef.current?.clearRoomColors()}>
-        Effacer les couleurs
       </button>
       <div ref={hostRef} style={{ flex: 1, minHeight: 0 }} />
     </div>
@@ -89,43 +64,12 @@ export function FloorLayout2dPanel() {
 }
 ```
 
-## Bâtiment 3D
+## Points importants
 
-Même pattern avec `SurfyBuildingLayout3dElementImpl` (exporté depuis `@surfy/surfy-sdk`) et l'attribut `building-id` :
-
-```tsx
-import { SurfyBuildingLayout3dElementImpl } from '@surfy/surfy-sdk';
-import type { SurfyBuildingLayout3dElement } from '@surfy/surfy-sdk';
-
-const el = new SurfyBuildingLayout3dElementImpl() as SurfyBuildingLayout3dElement;
-el.setAttribute('building-id', String(buildingId));
-// … tenant, base-url, fill-parent, setAccessTokenProvider …
-
-el.setOptions({ floorSpace: 280, showRoomLabels: true });
-el.addEventListener('surfy:ready', () => el.fitToView());
-```
-
-Voir [Options 3D](./options-3d.md) et la démo `LayoutDemoPanel` dans **surfy-sdk-demos**.
-
-## Thème depuis React
-
-```tsx
-const ocean: SurfyThemeOptions = {
-  primary: { main: '#0277bd' },
-  background: { default: '#e1f5fe', paper: '#ffffff' },
-};
-
-layoutRef.current?.setTheme(ocean);
-```
-
-La démo utilise un contexte React (`DemoThemeContext`) qui appelle `setTheme` sur l'élément actif — les presets restent dans l'app hôte, pas dans le SDK. Voir [Thème](./theme.md).
-
-## Points importants React
-
-1. **Instanciation impérative** : `new SurfyFloorLayout2dElementImpl()` ou `SurfyBuildingLayout3dElementImpl`, puis `appendChild`.
-2. **Token provider** : configurez `setAccessTokenProvider` avant ou juste après `appendChild`.
-3. **Pas de props React Surfy** : le SDK n'exporte pas de composant React canvas ; ce sont des custom elements avec Shadow DOM.
-4. **Arbres React distincts** : vos hooks et le React interne du SDK ne partagent pas d'état.
+1. **Cleanup** : appelez toujours `destroy()` (mount) ou démontez le composant React.
+2. **Token** : `getAccessToken` au montage — jamais de secret dans le bundle front.
+3. **Sizing** : le parent doit avoir une hauteur explicite — voir [Taille](./layout-and-sizing.md).
+4. **Hooks Surfy** : uniquement via `@surfy/surfy-sdk/react` sous `SurfySdkReactProvider`.
 
 ## Proxy Vite (développement)
 
@@ -140,24 +84,6 @@ export default defineConfig({
 });
 ```
 
-## `fill-parent` en React
+## Tests
 
-```tsx
-useEffect(() => {
-  const el = layoutRef.current;
-  if (!el) return;
-  if (fillParent) el.setAttribute('fill-parent', '');
-  else el.removeAttribute('fill-parent');
-}, [fillParent]);
-```
-
-## Tests E2E
-
-La démo inclut des tests Playwright qui vérifient notamment :
-
-- émission de `surfy:ready` (2D et bâtiment 3D)
-- absence d'erreurs JavaScript
-- application de `setRoomColors`
-- chargement du canvas 3D (dimensions non nulles)
-
-Réutilisez ces patterns pour valider vos intégrations CI.
+Les demos **surfy-sdk-demos** et les E2E associés valident le chargement 2D / bâtiment 3D, les couleurs et l'absence d'erreurs runtime. Réutilisez ces patterns en CI.

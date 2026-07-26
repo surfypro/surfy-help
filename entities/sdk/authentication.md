@@ -5,7 +5,9 @@ sidebar_label: "Authentification"
 
 # Authentification
 
-Le SDK appelle l'API Surfy avec un **JWT Bearer**. Le secret client (`clientSecret`) ne doit **jamais** être exposé dans le navigateur.
+Le SDK appelle l'API Surfy avec un **JWT Bearer** obtenu côté **backend intégrateur**. Le secret client (`clientSecret`) ne doit **jamais** être exposé dans le navigateur.
+
+V1 = **JWT machine** (API key / connection string). SSO / auth utilisateur déléguée = **hors périmètre** pour l'instant.
 
 ## Modèle recommandé
 
@@ -16,32 +18,40 @@ flowchart LR
   Surfy["API Surfy"]
 
   Browser -->|"GET /api/surfy-token"| Backend
-  Backend -->|"connection string → clientId + clientSecret"| Surfy
+  Backend -->|"clientId + clientSecret"| Surfy
   Surfy -->|"JWT"| Backend
   Backend -->|"JWT"| Browser
   Browser -->|"Bearer + x-tenant"| Surfy
 ```
 
 1. Votre **backend** parse `SURFY_CONNECTION_STRING` (`host` / `client_id` / `client_secret`), puis échange les credentials contre un JWT (`POST /api/v1/authentication/token` — voir [API Surfy](/apidocs/)).
-2. Votre **frontend** appelle votre endpoint (ex. `/api/surfy-token`) et passe le token au SDK via `setAccessTokenProvider`.
+2. Votre **frontend** passe le token via `getAccessToken` (mount / React) ou `setAccessTokenProvider` (Web Component).
 
-## Côté SDK
+## Côté SDK — API JS
 
 ```ts
-const el = document.querySelector('surfy-floor-layout-2d')!;
+import { SurfySdk } from '@surfy/surfy-sdk';
 
-el.setAccessTokenProvider(async () => {
-  const response = await fetch('/api/surfy-token');
-  if (!response.ok) {
-    throw new Error(`Token request failed (${response.status})`);
-  }
-  const { token } = await response.json();
-  return token;
+const layout = SurfySdk.mountFloor2d({
+  container: '#map',
+  tenant,
+  baseUrl,
+  floorId,
+  getAccessToken: async () => {
+    const response = await fetch('/api/surfy-token');
+    if (!response.ok) {
+      throw new Error(`Token request failed (${response.status})`);
+    }
+    const { token } = await response.json();
+    return token;
+  },
 });
 ```
 
+Même contrat pour `SurfySdk.mountBuilding3d`, `SurfyClient.create`, et les props React (`getAccessToken`).
+
 :::warning Obligatoire
-Appelez `setAccessTokenProvider()` **avant** le premier chargement réussi du plan (idéalement avant d'attacher l'élément au DOM ou dès sa création).
+Fournissez `getAccessToken` **au montage** (ou appelez `setAccessTokenProvider` avant le premier chargement réussi).
 :::
 
 ## En-têtes envoyés par le SDK
@@ -49,10 +59,10 @@ Appelez `setAccessTokenProvider()` **avant** le premier chargement réussi du pl
 | En-tête | Valeur |
 |---------|--------|
 | `Authorization` | `Bearer <token>` |
-| `x-tenant` | Attribut `tenant` du composant |
-| `accept-language` | Attribut `locale` (défaut `en`) |
+| `x-tenant` | Attribut / option `tenant` |
+| `accept-language` | `locale` (défaut `en`) |
 | `Content-Type` | `application/json` |
-| `X-Surfy-Sdk-Version` | Version du SDK |
+| `X-Surfy-Sdk-Version` | Version du SDK (layout) |
 
 ## Exemple backend (Node / Express)
 
@@ -117,20 +127,17 @@ app.get('/api/surfy-token', async (_req, res) => {
 
 ## Erreurs d'authentification
 
-Écoutez `surfy:error` sur l'élément :
+Via callback `onError` (mount / React) ou événement `surfy:error` (Web Component) :
 
 ```ts
-el.addEventListener('surfy:error', (event) => {
-  const { code, message } = event.detail;
-  // AUTH_EXPIRED, AUTH_FORBIDDEN, SDK_CONFIG, ...
-  console.error(code, message);
-});
+layout // SurfyLayout
+// onError: ({ code, message }) => …
 ```
 
 | Code | Signification |
 |------|----------------|
 | `AUTH_EXPIRED` | JWT expiré ou invalide (HTTP 401) |
-| `AUTH_FORBIDDEN` | Accès refusé à l'étage (HTTP 403) |
-| `SDK_CONFIG` | `setAccessTokenProvider` ou attribut requis manquant |
+| `AUTH_FORBIDDEN` | Accès refusé (HTTP 403) |
+| `SDK_CONFIG` | Provider ou option requis manquant |
 
-Renouvelez le token dans votre provider : il est rappelé à chaque chargement de layout.
+Renouvelez le token dans votre provider : il est rappelé à chaque chargement.

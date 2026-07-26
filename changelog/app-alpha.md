@@ -12,6 +12,14 @@ L’application utilisée au quotidien par la plupart des organisations reste su
 
 Lors d’une mise en production, le contenu utile est repris dans la page [Nouveautés](./app.md) ; cette page est ensuite masquée en la renommant `_app-alpha.md`.
 
+## 26 Juillet 2026 - v3.5.24
+
+- **Surfy SDK (intégrateurs)**
+  - Embarquez un plan d’étage **2D** ou un bâtiment **3D** en lecture seule (couleurs, zoom, sélection) dans votre application.
+  - Trois façons d’intégrer : **Web Component**, **API JavaScript** (`SurfySdk.mountFloor2d` / `mountBuilding3d`), et **Surfy React Web** (hooks).
+  - API **données** client (bâtiments / étages / espaces) dans le même livrable, avec authentification JWT machine via votre backend (pas de secret dans le navigateur).
+  - Guide : [Surfy SDK](/entities/sdk/).
+
 ## 22 Juillet 2026 - v3.5.23
 
 - <OT code="itemType" />
