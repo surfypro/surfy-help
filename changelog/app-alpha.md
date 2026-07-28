@@ -10,7 +10,17 @@ Cette page décrit les **changements visibles** déjà disponibles sur l’**app
 
 L’application utilisée au quotidien par la plupart des organisations reste sur [https://app.surfy.pro](https://app.surfy.pro)
 
-Lors d’une mise en production, le contenu utile est repris dans la page [Nouveautés](./app.md) ; cette page est ensuite masquée en la renommant `_app-alpha.md`.
+Lors d’une mise en production, seules les **nouveautés** sont reprises dans la page [Nouveautés](./app.md) ; les sections **Bugs résolus** ne sont **pas** reportées en production (elles servent à la vérification de l’équipe de test pendant le cycle alpha). Cette page est ensuite masquée en la renommant `_app-alpha.md`.
+
+## 28 Juillet 2026 - v3.5.25
+
+- <LIV code="personWorkingLocation:booking-security-day" />
+  - Nouvelle **vue sécurité réservation** sur les lieux de travail (si la vue est attribuée à votre rôle) : voir où les personnes **avec** un profil de sécurité ont réservé.
+  - **Mode planning** : horizon sur plusieurs jours ouvrés, puis détail par étage ou quartier, profil, et cartes personnes.
+  - **Mode jour** : date et filtres ; **plan coloré** selon le profil des réservants lorsque **exactement un** étage est sélectionné.
+  - Une **carte personne** par bâtiment ; plusieurs emplacements du même bâtiment dans la même carte.
+  - Guide : [Vue sécurité réservation](/entities/user-guide/booking-system/booking-security-day-view). Scénario guidé : [Du planning au jour](/entities/scenarios/booking-security-day-view).
+  <CloudinaryAsset publicId="help/changelog/v3.5.25/booking-security-day-view-fr" kind="video" asGif width={640} gifFps={8} alt="Vue sécurité réservation : du planning au jour avec plan coloré" />
 
 ## 26 Juillet 2026 - v3.5.24
 
@@ -19,6 +29,41 @@ Lors d’une mise en production, le contenu utile est repris dans la page [Nouve
   - Trois façons d’intégrer : **Web Component**, **API JavaScript** (`SurfySdk.mountFloor2d` / `mountBuilding3d`), et **Surfy React Web** (hooks).
   - API **données** client (bâtiments / étages / espaces) dans le même livrable, avec authentification JWT machine via votre backend (pas de secret dans le navigateur).
   - Guide : [Surfy SDK](/entities/sdk/).
+
+
+- **Plan — mode édition**
+  - Nouvelle option **Magnétisme** (**désactivée par défaut**, mémorisée sur l’appareil). Une fois activée, lors du **déplacement**, de la **duplication** ou de la **pose** d’un poste ou d’un objet, les **côtés** peuvent s’aimanter sur des formes déjà posées. Lorsque **plusieurs** côtés peuvent s’aligner en même temps (souvent deux axes à 90°, par ex. à gauche **et** en haut), le plan propose **plusieurs accrochages ensemble** — aperçu du jeu complet pendant le geste ; au relâchement, **une** transition douce vers la pose qui respecte tous ces accrochages. Si tout n’est pas compatible, le plan se limite à un sous-ensemble possible (parfois un seul).
+  - En **rotation**, les crans à 45° restent pendant le geste ; si le Magnétisme est actif et qu’une cible (ou un jeu d’accrochages) est proche, le **relâchement** finalise l’alignement des côtés (pas le cran 45°). Scénario guidé : [Magnétisme de segments sur le plan](/entities/scenarios/workplace-segment-magnetism).
+  <CloudinaryAsset publicId="help/changelog/v3.5.24/workplace-segment-magnetism-fr" kind="video" asGif width={640} gifFps={8} alt="Plusieurs accrochages simultanés (Magnétisme) sur le plan en mode édition" />
+
+## 25 Juillet 2026 - v3.5.23
+
+- **Plan — mode édition**
+  - Lorsque plusieurs postes de travail et/ou objets sont sélectionnés, une poignée de rotation sur le cadre de sélection permet de les orienter **ensemble** (postes seuls, objets seuls, ou les deux), en conservant leur disposition relative. Scénario guidé : [Rotation groupée sur le plan](/entities/scenarios/workplace-group-rotation).
+  <CloudinaryAsset publicId="help/changelog/v3.5.23/mixed-group-rotation-fr" kind="video" asGif width={640} gifFps={8} alt="Rotation groupée de postes et d’objets en mode édition du plan" />
+
+## 24 Juillet 2026 - v3.5.23
+
+- **Plan**
+  - Sur les options du plan (boutons d’icône), un **appui long** ouvre l’aide du scénario associé (ex. focus pièce et voisins), avec le même contenu que le scénario guidé.
+  - Après une **modification multiple d’espaces** qui change les dimensions, un message confirme la mise à jour.
+
+- **Clonage de bâtiment**
+  - Après un clonage réussi, les bâtiments nouvellement accessibles apparaissent dans l’application **sans devoir se reconnecter**.
+
+### Bugs résolus (vérification test alpha)
+
+Ces points sont listés pour l’équipe de test sur [app-alpha.surfy.pro](https://app-alpha.surfy.pro).
+Ils ne sont **pas** reportés dans le changelog production (`app.md`).
+
+- **Icône d’objet sur le plan** : l’icône conservait une mauvaise taille ou un mauvais décalage par rapport à la forme (zoom / échelle) ; le pictogramme et la zone de sélection restent alignés.
+- **Déplacement d’un objet** : après avoir déplacé un objet puis relâché, l’icône pouvait **revenir à l’ancienne position** jusqu’à un autre clic ; la position enregistrée s’affiche correctement dès le relâchement.
+- **Suppression multiple d’objets ou de postes** : la confirmation de suppression et le plan ne se mettaient pas à jour correctement (il fallait souvent recharger) ; la sélection disparaît du plan après confirmation.
+- **Plusieurs postes sélectionnés** : l’interface restait bloquée sur la fiche d’un poste et empêchait de revenir à la liste pour une suppression en lot ; la table de sélection reste utilisable.
+- **Segments de type Vide** : en mode édition, les segments « vides » n’étaient plus affichés en pointillés ; le style pointillé est de nouveau visible.
+- **Fusion de points d’espace** : après fusion, un segment partagé déjà supprimé pouvait **rester visible** jusqu’au rechargement ; le plan se met à jour immédiatement.
+- **Éditeur de type de poste** : les icônes des types d’objets liés au type de poste pouvaient **ne plus s’afficher** ; elles apparaissent à nouveau dans la composition.
+- **Aide au survol des options du plan** : le survol de certains boutons (ex. sélection / manipulation) pouvait provoquer une **erreur** et bloquer l’interface ; le survol reste stable et l’aide s’affiche quand un scénario est associé.
 
 ## 22 Juillet 2026 - v3.5.23
 
