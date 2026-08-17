@@ -13,9 +13,20 @@ L’application utilisée au quotidien par la plupart des organisations reste su
 Lors d’une mise en production, seules les **nouveautés** sont reprises dans la page [Nouveautés](./app.md) ; les sections **Bugs résolus** ne sont **pas** reportées en production (elles servent à la vérification de l’équipe de test pendant le cycle alpha). Cette page est ensuite masquée en la renommant `_app-alpha.md`.
 
 
+## 17 Août 2026
+
+- **Plan**
+  - **Mode vue :** glisser sur une forme — même déjà sélectionnée — **déplace le plan** ; un **clic** (sans glisser) **sélectionne** la forme.
+  - **Mode édition :** glisser un poste ou un objet sélectionné **déplace la forme** ; avec **Déplacer l’espace** actif, glisser une pièce **déplace l’espace**.
+  - **Zoom du plan :** pendant un glisser (forme ou pan), ou juste avant de reprendre le glisser, un changement d’échelle (molette, pinch, boutons zoom / fit) **garde la forme / le plan sous le pointeur** — le déplacement ne part plus ailleurs.
+
+
 ## 24 Juillet 2026 - v3.5.32
 
 - **Plan**
+  - **Mode vue :** glisser sur une forme — même déjà sélectionnée — **déplace le plan** ; un **clic** (sans glisser) **sélectionne** la forme.
+  - **Mode édition :** glisser un poste ou un objet sélectionné **déplace la forme** ; avec **Déplacer l’espace** actif, glisser une pièce **déplace l’espace**.
+  - **Zoom du plan :** pendant un glisser (forme ou pan), ou juste avant de reprendre le glisser, un changement d’échelle (molette, pinch, boutons zoom / fit) **garde la forme / le plan sous le pointeur** — le déplacement ne part plus ailleurs.
   - Sur les options du plan (boutons d’icône), un **appui long** ouvre l’aide du scénario associé (ex. focus pièce et voisins), avec le même contenu que le scénario guidé.
   - Après une **modification multiple d’espaces** qui change les dimensions, un message confirme la mise à jour.
   - Nouvelle option pour **ne voir que la pièce sélectionnée et ses voisines** (profondeur 1, 2 ou 3) afin de se concentrer sur une zone du plan. Scénario guidé : [Focus pièce et voisins](/entities/scenarios/focus-room-neighbors).
