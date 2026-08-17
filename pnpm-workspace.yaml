@@ -1,2 +1,12 @@
 allowBuilds:
   core-js: true
+overrides:
+  fast-uri@>=3.0.0 <3.1.5: ^3.1.5
+  serialize-javascript@>=5.0.0 <7.0.5: ^7.0.5
+  uuid@<11.1.1: 11.1.1
+audit:
+  ignore:
+    # image-size 2.0.3 is listed as patched but was never published
+    # https://github.com/github/advisory-database/issues/9028
+    - GHSA-w3rx-r6r6-pgpr
+    - GHSA-5p2g-fcmc-qvqq
