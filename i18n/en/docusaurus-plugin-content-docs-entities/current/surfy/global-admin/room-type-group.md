@@ -17,6 +17,13 @@ A space typology group allows you to group several types of spaces to facilitate
 
 ## Required Properties {#properties-mandatory}
     
+### Code {#code}
+
+
+
+*Technical name:* ```code```
+<PH code="roomTypeGroup:code"/>
+
 ### Space typology group name {#name}
 
 
@@ -29,13 +36,6 @@ A space typology group allows you to group several types of spaces to facilitate
 
 ## Basic properties {#properties-base}
     
-### Code {#code}
-
-
-
-*Technical name:* ```code```
-<PH code="roomTypeGroup:code"/>
-
 ### Color {#color}
 
 

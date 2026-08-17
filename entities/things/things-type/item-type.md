@@ -43,6 +43,13 @@ Permet d'afficher les informations de chaque objet sur le plan en fonction des o
 *Nom technique:* ```displayItemReferenceInMap```
 <PH code="itemType:displayItemReferenceInMap"/>
 
+### Badge icône {#icon-badge}
+
+Bande verticale optionnelle à droite de l'icône avec un texte court et des couleurs personnalisables (ex. CO2, EAU pour les extincteurs)
+
+*Nom technique:* ```iconBadge```
+<PH code="itemType:iconBadge"/>
+
 ### Code {#code}
 
 Permet d'avoir accès rapidement au type d'objet en tapant le code dans la recherche lors de la création d'objet
@@ -168,6 +175,13 @@ Le Modèle 3D permet une représentation 3D réaliste des objets placés sur le 
 
 
 ## Entités associées (liste) {#properties-has-many}
+
+### Arêtes visuelles de types d'objet {#item-type-visual-edges}
+
+Une arête visuelle définit un segment d'affichage uniquement sur le type d'objet, distinct des points de forme
+
+*Nom technique:* ```itemTypeVisualEdges```
+<PH code="itemType:itemTypeVisualEdges"/>
 
 ### Objets {#items}
 

@@ -92,6 +92,13 @@ The background color allows you to correctly configure multi-color icons, partic
 *Technical name:* ```iconBackgroundColor```
 <PH code="itemType:iconBackgroundColor"/>
 
+### Icon Badge {#icon-badge}
+
+Optional vertical strip to the right of the icon with short text and customizable colors (e.g., CO2, WATER for fire extinguishers)
+
+*Technical name:* ```iconBadge```
+<PH code="itemType:iconBadge"/>
+
 ### Icon border color {#icon-border-color}
 
 The border color allows you to correctly configure multi-color icons, especially triangular ones.
@@ -196,6 +203,13 @@ The service provider object types make it possible to define a relationship betw
 
 *Technical name:* ```personCompanyToItemTypes```
 <PH code="itemType:personCompanyToItemTypes"/>
+
+### Visual edges of object types {#item-type-visual-edges}
+
+A visual edge defines a display segment only on the object type, distinct from shape points
+
+*Technical name:* ```itemTypeVisualEdges```
+<PH code="itemType:itemTypeVisualEdges"/>
 
 
 

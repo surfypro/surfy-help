@@ -1304,6 +1304,20 @@ A vehicle allows you to manage information related to a vehicle
 *Technical name:* ```vehicleUpdatedBies```
 <PH code="userCompany:vehicleUpdatedBies"/>
 
+### Visual edges of object types {#item-type-visual-edge-created-bies}
+
+A visual edge defines a display segment only on the object type, distinct from shape points
+
+*Technical name:* ```itemTypeVisualEdgeCreatedBies```
+<PH code="userCompany:itemTypeVisualEdgeCreatedBies"/>
+
+### Visual edges of object types {#item-type-visual-edge-updated-bies}
+
+A visual edge defines a display segment only on the object type, distinct from shape points
+
+*Technical name:* ```itemTypeVisualEdgeUpdatedBies```
+<PH code="userCompany:itemTypeVisualEdgeUpdatedBies"/>
+
 ### Workstation assignments {#workplace-affectation-created-bies}
 
 Allows a fixed workstation to be assigned to a person

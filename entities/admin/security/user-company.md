@@ -135,6 +135,20 @@ Permet d'associer une personne à un ou plusieurs véhicules
 *Nom technique:* ```personToVehicleUpdatedBies```
 <PH code="userCompany:personToVehicleUpdatedBies"/>
 
+### Arêtes visuelles de types d'objet {#item-type-visual-edge-created-bies}
+
+Une arête visuelle définit un segment d'affichage uniquement sur le type d'objet, distinct des points de forme
+
+*Nom technique:* ```itemTypeVisualEdgeCreatedBies```
+<PH code="userCompany:itemTypeVisualEdgeCreatedBies"/>
+
+### Arêtes visuelles de types d'objet {#item-type-visual-edge-updated-bies}
+
+Une arête visuelle définit un segment d'affichage uniquement sur le type d'objet, distinct des points de forme
+
+*Nom technique:* ```itemTypeVisualEdgeUpdatedBies```
+<PH code="userCompany:itemTypeVisualEdgeUpdatedBies"/>
+
 ### Association rôle de contenu aux opérations d'interface pour une entreprise {#content-role-to-jup-ui-tenant-operation-created-bies}
 
 

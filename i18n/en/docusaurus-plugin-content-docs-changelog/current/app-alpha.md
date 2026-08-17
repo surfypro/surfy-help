@@ -8,6 +8,13 @@ Most organizations’ day-to-day application remains at [https://app.surfy.pro](
 
 When a release goes to production, only **features** are moved to [What's New](./app.md); the **Fixed bugs** sections are **not** copied to production (they are for the test team during the alpha cycle). This page is then hidden by renaming it to `_app-alpha.md`.
 
+
+## August 7, 2026 - v3.5.29
+
+- **Floor plan**
+  - In **view mode**, dragging on a shape — even one already selected — **pans the plan**; a **click** (without dragging) **selects** the shape.
+  - In **edit mode**, dragging a selected desk or object **moves the shape**; with **Move space** enabled, dragging a selected room **moves the space**.
+
 ## July 28, 2026 - v3.5.25
 
 - <LIV code="personWorkingLocation:booking-security-day" />

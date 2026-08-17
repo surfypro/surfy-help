@@ -12,6 +12,13 @@ L’application utilisée au quotidien par la plupart des organisations reste su
 
 Lors d’une mise en production, seules les **nouveautés** sont reprises dans la page [Nouveautés](./app.md) ; les sections **Bugs résolus** ne sont **pas** reportées en production (elles servent à la vérification de l’équipe de test pendant le cycle alpha). Cette page est ensuite masquée en la renommant `_app-alpha.md`.
 
+
+## 7 Août 2026 - v3.5.29
+
+- **Plan**
+  - En **mode vue**, glisser sur une forme — même déjà sélectionnée — **déplace le plan** ; un **clic** (sans glisser) **sélectionne** la forme.
+  - En **mode édition**, glisser un poste ou un objet sélectionné **déplace la forme** ; avec l’option **Déplacer l’espace** active, glisser une pièce sélectionnée **déplace l’espace**.
+
 ## 28 Juillet 2026 - v3.5.25
 
 - <LIV code="personWorkingLocation:booking-security-day" />
