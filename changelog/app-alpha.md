@@ -31,9 +31,6 @@ Lors d’une mise en production, seules les **nouveautés** sont reprises dans l
   - En **mode édition**, lorsque **au moins deux espaces** sont sélectionnés, une action sur le cadre de sélection ouvre un panneau pour modifier en lot l'<P code="room:organization" />, le <P code="room:costCenter" />, le <P code="room:distributionCostType" />, le <P code="room:roomConnector" /> et les dimensions. Scénario guidé : [Modification multiple d’espaces](/entities/scenarios/rooms-bulk-edit).
   <CloudinaryAsset publicId="help/changelog/v3.5.15/rooms-bulk-edit-fr" kind="video" asGif width={640} gifFps={8} alt="Modification multiple d'espaces sur le plan en mode édition" />
 
-- **Clonage de bâtiment**
-  - Après un clonage réussi, les bâtiments nouvellement accessibles apparaissent dans l’application **sans devoir se reconnecter**.
-
 - <OT code="itemType" />
   - Vous pouvez ajouter un **badge** (<P code="itemType:iconBadge" />) à droite **dans** le carré d’icône : texte court, couleur de fond et couleur du texte, pour distinguer des variantes qui partagent le même pictogramme. Scénario guidé : [Badge sur une icône de type d'objet](/entities/scenarios/item-type-icon-badge-create).
   <CloudinaryAsset publicId="help/changelog/v3.5.23/item-type-icon-badge-create-fr" kind="video" asGif width={640} gifFps={8} alt="Création d'un type d'objet avec badge sur l'icône" />
