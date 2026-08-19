@@ -9,19 +9,11 @@ Most organizations’ day-to-day application remains at [https://app.surfy.pro](
 When a release goes to production, only **features** are moved to [What's New](./app.md); the **Fixed bugs** sections are **not** copied to production (they are for the test team during the alpha cycle). This page is then hidden by renaming it to `_app-alpha.md`.
 
 
-## August 17, 2026
+## August 17, 2026 - v3.5.32
 
 - **Floor plan**
   - **View mode:** dragging on a shape — even one already selected — **pans the plan**; a **click** (no drag) **selects** the shape.
   - **Edit mode:** dragging a selected workstation or object **moves the shape**; with **Move the space** on, dragging a room **moves the space**.
-  - **Plan zoom:** during a drag (shape or pan), or just before dragging again, a scale change (wheel, pinch, zoom / fit buttons) **keeps the shape / plan under the pointer** — the move no longer jumps away.
-
-
-## July 24, 2026 - v3.5.32
-
-- **Floor plan**
-  - **View mode:** dragging on a shape — even one already selected — **pans the plan**; a **click** (no drag) **selects** the shape.
-  - **Edit mode:** dragging a selected workstation or object **moves the shape**; with **Move the room** on, dragging a room **moves the room**.
   - **Plan zoom:** during a drag (shape or pan), or just before dragging again, a scale change (wheel, pinch, zoom / fit buttons) **keeps the shape / plan under the pointer** — the move no longer jumps away.
   - On plan option icon buttons, a **long press** opens the related scenario help (e.g. focus room and neighbors), with the same content as the guided scenario.
   - After a **bulk room edit** that changes dimensions, a message confirms the update.

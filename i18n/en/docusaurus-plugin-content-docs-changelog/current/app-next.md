@@ -18,10 +18,6 @@ When a release goes to production, only **features** are moved to [What's New](.
 
 ## August 7, 2026 - v3.5.32
 
-- **Floor plan**
-  - In **view mode**, dragging on a shape — even one already selected — **pans the plan**; a **click** (without dragging) **selects** the shape.
-  - In **edit mode**, dragging a selected desk or object **moves the shape**; with **Move space** enabled, dragging a selected room **moves the space**.
-
 - **Floor plan — edit mode**
   - New **Magnetism** option (**off by default**, remembered on this device). When enabled, while **moving**, **duplicating**, or **placing** a workstation or object, **sides** can snap to shapes already on the plan. When **several** sides can align at once (often two axes at 90°, e.g. left **and** top), the plan offers **several snaps together** — a live preview of the full set during the gesture; on release, **one** smooth transition into the pose that satisfies all of those snaps. If they are not all compatible, the plan keeps a feasible subset (sometimes only one).
   - During **rotation**, 45° steps still guide the gesture; if Magnetism is on and a target (or snap set) is nearby, **releasing** finalises side alignment (not the 45° step). Guided scenario: [Segment magnetism on the floor plan](/entities/scenarios/workplace-segment-magnetism).

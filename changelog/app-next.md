@@ -18,10 +18,6 @@ Lors d’une mise en production, seules les **nouveautés** remontent dans [Nouv
 
 ## 7 Août 2026 - v3.5.32
 
-- **Plan**
-  - En **mode vue**, glisser sur une forme — même déjà sélectionnée — **déplace le plan** ; un **clic** (sans glisser) **sélectionne** la forme.
-  - En **mode édition**, glisser un poste ou un objet sélectionné **déplace la forme** ; avec l’option **Déplacer l’espace** active, glisser une pièce sélectionnée **déplace l’espace**.
-
 - **Plan — mode édition**
   - Nouvelle option **Magnétisme** (**désactivée par défaut**, mémorisée sur l’appareil). Une fois activée, lors du **déplacement**, de la **duplication** ou de la **pose** d’un poste ou d’un objet, les **côtés** peuvent s’aimanter sur des formes déjà posées. Lorsque **plusieurs** côtés peuvent s’aligner en même temps (souvent deux axes à 90°, par ex. à gauche **et** en haut), le plan propose **plusieurs accrochages ensemble** — aperçu du jeu complet pendant le geste ; au relâchement, **une** transition douce vers la pose qui respecte tous ces accrochages. Si tout n’est pas compatible, le plan se limite à un sous-ensemble possible (parfois un seul).
   - En **rotation**, les crans à 45° restent pendant le geste ; si le Magnétisme est actif et qu’une cible (ou un jeu d’accrochages) est proche, le **relâchement** finalise l’alignement des côtés (pas le cran 45°). Scénario guidé : [Magnétisme de segments sur le plan](/entities/scenarios/workplace-segment-magnetism).
