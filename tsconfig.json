@@ -1,13 +1,21 @@
 {
-  // This file is not used in compilation. It is here just for a nice editor experience.
-  "extends": "@docusaurus/tsconfig",
+  // Editor / typecheck only — Docusaurus build does not use this file.
+  // Inlined from @docusaurus/tsconfig (TS 7 removed `baseUrl`).
   "compilerOptions": {
-    "resolveJsonModule": true,
-    "jsx": "react-jsx", // or "react"
-    "strict": true,
+    "allowJs": true,
     "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "moduleResolution": "bundler",
+    "module": "esnext",
     "noEmit": true,
-    "ignoreDeprecations": "6.0"
+    "resolveJsonModule": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@site/*": ["./*"]
+    }
   },
   "exclude": [
     "node_modules",

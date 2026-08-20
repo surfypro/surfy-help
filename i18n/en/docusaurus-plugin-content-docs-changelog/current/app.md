@@ -27,6 +27,7 @@
   - **Parking** booking (My planning): button per building **floor** showing how many spaces are available; tooltip with current bookings and availability by parking space type.
   - **Workstation** booking: **Release this booking** button on already booked workstations in planning.
   - Same-day booking confirmation: only bookings **created before the end** of the <P code="company:workplaceBookingConfirmationRange" /> window can receive a reminder or be cancelled automatically; a booking made after that time (e.g. on a desk freed later in the day) is no longer affected.
+  - <P code="company:workplaceBookingAgendaSyncEnabled" />: for each **workstation** or **parking** booking, a calendar invitation is sent to the employee (Outlook, Gmail, etc.) and removed if the booking is cancelled.
   - **Meeting room** booking: clearer error messages when calendar event creation fails via Microsoft calendar.
 
 - <OT code="personToRoomBooking" /> and <OT code="personToWorkplaceBooking" />

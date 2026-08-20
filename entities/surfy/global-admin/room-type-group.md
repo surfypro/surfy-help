@@ -17,6 +17,13 @@ Un groupe de typologie d'espace permet de regrouper plusieurs types d'espaces po
 
 ## Propriétés obligatoires {#properties-mandatory}
     
+### Code {#code}
+
+
+
+*Nom technique:* ```code```
+<PH code="roomTypeGroup:code"/>
+
 ### Nom du groupe de typologie d'espace {#name}
 
 
@@ -29,13 +36,6 @@ Un groupe de typologie d'espace permet de regrouper plusieurs types d'espaces po
 
 ## Propriétés de base {#properties-base}
     
-### Code {#code}
-
-
-
-*Nom technique:* ```code```
-<PH code="roomTypeGroup:code"/>
-
 ### Couleur {#color}
 
 
