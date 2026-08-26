@@ -9,7 +9,7 @@ This page is **local-only** (`pnpm start` in surfy-help). It is **not** publishe
 
 This page describes **visible changes** merged on the **`next`** release train, **not yet** available on the alpha application.
 
-**Next train**: parallel integration branch alongside **`alpha`**. Features land here via PRs targeting `next` (`--base next`). When they are **promoted to alpha** and deployed on [app-alpha.surfy.pro](https://app-alpha.surfy.pro), move their bullets to [What's New (alpha)](./app-alpha.md) and remove them from here.
+**Next train**: parallel integration branch alongside **`alpha`**. Features land here via PRs targeting `next` (`--base next`). When they are **promoted to alpha** and deployed on [app-alpha.surfy.pro](https://app-alpha.surfy.pro), move their bullets to **What's New (alpha)** (`_app-alpha.md`) and remove them from here.
 
 The alpha application (for QA testing) remains at [https://app-alpha.surfy.pro](https://app-alpha.surfy.pro). The production application remains at [https://app.surfy.pro](https://app.surfy.pro).
 
