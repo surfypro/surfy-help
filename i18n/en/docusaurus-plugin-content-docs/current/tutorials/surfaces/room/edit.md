@@ -37,6 +37,25 @@ After refresh, the space displays the color of the chosen typology. This allows 
 The "drop" icon above the plan allows you to "activate color transparency" and see the different elements present on the plan background through the colors of Surfy's layers.
 :::
 
+## Qualify Multiple Spaces on the Same Floor
+
+You can select multiple spaces on a plan and give them the same organization, the same cost center, or the same analysis or assignment layers.
+
+<Youtube code="VcSFinClgAQ"/>
+
+
+To do this, from the floor plan,
+
+-   click on the first space to qualify
+-   while holding the "shift" key, click on the other spaces to qualify.<br />
+    The list of selected spaces appears on the left of the plan.
+-   click on the "modify the properties of all selected spaces" icon above the list of selected spaces.<br />
+    The multiple qualification card appears on the right of the screen.
+-   choose the organization, cost center and layers to associate with all selected spaces
+-   save if necessary the new organization and cost center information. Layers are saved automatically.
+
+The selected spaces are now all qualified according to the information provided.
+
 ## Bulk Import Information to Spaces
 
 You can import an Excel file containing the information to complete for spaces.<br />
