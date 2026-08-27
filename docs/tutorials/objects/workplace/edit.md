@@ -80,3 +80,14 @@ le poste de travail modifié aura la forme et les caractéristiques du nouveau t
 :::tip Bon à savoir
 On peut panacher des objets et des postes de travail dans les groupes d'objets, en déplacement ou en copie
 :::
+
+### Rotation d'un groupe de postes de travail
+
+La rotation n'est possible que sur un groupe de postes de travail.
+
+-   "Activer le mode édition du plan" en cliquant sur l'icône "crayon" au dessus du plan
+-   sélectionner les postes de travail à pivoter en maintenant la touche "shift" enfoncée
+-   une zone de sélection englobant les postes de travail à pivoter est délimitée
+-   cliquer sur l'icone "Faire pivoter tous les postes de travail sélectionnés autour du centre de la sélection" pour faire pivoter l'ensemble des postes sélectionnés par angle de 45°
+-   appuyer sur "shift" durant la rotation permet de faire pivoter l'ensemble d'un angle plus fin
+-   une fois la rotation effectuée, cliquer en dehors de la sélection pour déselectionner

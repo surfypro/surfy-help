@@ -92,3 +92,14 @@ The duplicated workstations are at the end of the mouse, ready to be dropped by 
 
 The duplicated workstations retain the orientation and relative positioning of the initial workstation group.
 
+### Rotate a Group of Workstations
+
+Rotation is only possible on a group of workstations.
+
+-   "Activate plan editing mode" by clicking on the "pencil" icon above the plan
+-   select the workstations to rotate while holding the "shift" key
+-   a selection area encompassing the workstations to rotate is delimited
+-   click on the "Rotate all selected workstations around the center of the selection" icon to rotate all selected workstations by 45° angles
+-   pressing "shift" during rotation allows you to rotate the whole group by a finer angle
+-   once the rotation is done, click outside the selection to deselect
+
