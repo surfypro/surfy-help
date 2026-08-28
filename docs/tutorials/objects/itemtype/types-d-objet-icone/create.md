@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Créer un type d'objet Icône
 
-<Youtube code="89my-CVLjOo"/>
+<Youtube code="JJafT03EPsg"/>
 
 Pour créer un type d'objet sous forme d'icône, depuis le menu de gauche,
 
@@ -29,6 +29,7 @@ Ces trois premiers champs (Nom, Indice de hauteur, Famille) sont obligatoires.
 -	<P code="itemType:description" /> et <P code="itemType:price" /> peuvent être renseignés.
 -	<P code="itemType:seatsCount" /> (uniquement pour les assises, sièges, canapés, etc…) et <P code="itemType:carbonFootprint" /> (donnée éventuellement par le fabricant, par objet) peuvent être renseignés et sont cumulés dans Surfy par pièce, étage ou bâtiment.
 -	la <P code="itemType:iconShape" /> permet de définir un type d'icône carré, rond ou triangulaire. Les <P code="itemType:iconBackgroundColor" /> et <P code="itemType:iconBorderColor" /> permettent de configurer correctement les icônes multi-couleurs, notamment triangulaires.
+-   le <P code="itemType:iconBadge" /> permet d'ajouter un texte court à l'icône sous forme de barre verticale, avec des couleurs personnalisables
 -	le <P code="itemType:manufacturer" /> du mobilier peut être renseigné
 -	le <P code="itemType:object3dModel" /> permet une visualisation 3D des Icônes issues du type d'icône et placées sur le plan (copieurs, extincteurs, fontaines à eau, portes manteaux). L'orientation de l'icone se fait en mode "édition du plan". Pour plus de lisibilité, la sortie de ce mode remet l'icone en position d'origine mais le modèle 3D sera orienté suivant l'orientation de l'icone en mode "édition du plan".
 -	la « Clé externe » permet d'identifier le type d'objet avec une utilisation extérieure à Surfy (interopérabilité avec des applications tiers)

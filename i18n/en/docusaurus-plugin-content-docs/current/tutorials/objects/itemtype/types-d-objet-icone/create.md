@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Create an Icon Object Type
 
-<Youtube code="lA3Lex8lm1k"/>
+<Youtube code="CUjW3-M8EEA"/>
 
 To create an icon object type, from the left menu,
 
@@ -29,6 +29,7 @@ These three first fields (Name, Height index, Family) are mandatory.
 -	<P code="itemType:description" /> and <P code="itemType:price" /> can be filled in.
 -	<P code="itemType:seatsCount" /> (only for seats, chairs, sofas, etc...) and <P code="itemType:carbonFootprint" /> (possibly provided by the manufacturer, per object) can be filled in and are accumulated in Surfy by room, floor or building.
 -	the <P code="itemType:iconShape" /> allows you to define a square, round or triangular icon type. The <P code="itemType:iconBackgroundColor" /> and <P code="itemType:iconBorderColor" /> allow you to properly configure multi-color icons, especially triangular ones.
+-   the <P code="itemType:iconBadge" /> allows you to add short text to the icon in the form of a vertical bar, with customizable colors
 -	the furniture <P code="itemType:manufacturer" /> can be filled in
 -	the <P code="itemType:object3dModel" /> allows 3D visualization of Icons from the icon type and placed on the plan (copiers, fire extinguishers, water fountains, coat racks). Icon orientation is done in "plan editing" mode. For better readability, exiting this mode puts the icon back in its original position but the 3D model will be oriented according to the icon orientation in "plan editing" mode.
 -	the "External key" allows you to identify the object type with external use to Surfy (interoperability with third-party applications)
