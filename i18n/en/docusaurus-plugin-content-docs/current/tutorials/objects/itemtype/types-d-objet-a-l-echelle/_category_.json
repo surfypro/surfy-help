@@ -1,9 +1,9 @@
 {
-  "label": "Scale Object Types",
+  "label": "Scaled Object Types",
   "position": 3,
   "link": {
     "slug": "scaleitemtypes",
     "type": "generated-index",
-    "description": "Everything about scale object types"
+    "description": "Everything about scaled object types"
   }
 }

@@ -1,9 +1,9 @@
 ---
 sidebar_position: 2
-pagination_label: "Edit a Scale Object Type"
-title: "Edit a Scale Object Type"
+pagination_label: "Edit a Scaled Object Type"
+title: "Edit a Scaled Object Type"
 ---
-# Modify a Scale Object Type
+# Modify a Scaled Object Type
 
 By modifying an object type, all objects associated with this object type will be modified.
 

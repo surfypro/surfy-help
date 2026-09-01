@@ -1,10 +1,10 @@
 ---
 sidebar_position: 3
-pagination_label: "Delete a Scale Object Type"
-title: "Delete a Scale Object Type"
+pagination_label: "Delete a Scaled Object Type"
+title: "Delete a Scaled Object Type"
 ---
 
-# Delete a Scale Object Type
+# Delete a Scaled Object Type
 
 :::danger Attention
 Deleting an object type will delete all objects from this object type across all buildings.
