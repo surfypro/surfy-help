@@ -192,11 +192,11 @@
     "description": "The generated-index page description for category Les Types d'objet in sidebar s1"
   },
   "sidebar.s1.category.Les Types d'objet à l'échelle": {
-    "message": "Scale Object Types",
+    "message": "Scaled Object Types",
     "description": "The label for category Les Types d'objet à l'échelle in sidebar s1"
   },
   "sidebar.s1.category.Les Types d'objet à l'échelle.link.generated-index.description": {
-    "message": "Everything about scale object types",
+    "message": "Everything about scaled object types",
     "description": "The generated-index page description for category Les Types d'objet à l'échelle in sidebar s1"
   },
   "sidebar.s1.category.Les Types d'objet Icône": {
@@ -576,11 +576,11 @@
     "description": "The generated-index page description for category 'Les Types d'objet' in sidebar 'help-sidebar'"
   },
   "sidebar.help-sidebar.category.Les Types d'objet à l'échelle": {
-    "message": "Scale Object Types",
+    "message": "Scaled Object Types",
     "description": "The label for category 'Les Types d'objet à l'échelle' in sidebar 'help-sidebar'"
   },
   "sidebar.help-sidebar.category.Les Types d'objet à l'échelle.link.generated-index.description": {
-    "message": "Everything about scale object types",
+    "message": "Everything about scaled object types",
     "description": "The generated-index page description for category 'Les Types d'objet à l'échelle' in sidebar 'help-sidebar'"
   },
   "sidebar.help-sidebar.category.Les Types d'objet Icône.link.generated-index.description": {
