@@ -1,15 +1,15 @@
 ---
 sidebar_position: 1
-pagination_label: "Create a Scale Object Type"
-title: "Create a Scale Object Type"
+pagination_label: "Create a Scaled Object Type"
+title: "Create a Scaled Object Type"
 ---
-# Create a Scale Object Type
+# Create a Scaled Object Type
 
 ## Create the Object Type Card
 
-<Youtube code="lA3Lex8lm1k"/>
+<Youtube code="58-qFvp37D0"/>
 
-To create a scale object type, from the left menu,
+To create a scaled object type, from the left menu,
 
 -	click on "Furniture", "Typologies", "Object Types", then "Create an object type".
 -	fill in the <P code="itemType:name" /> of the object type to create
@@ -21,20 +21,20 @@ These three first fields (Name, Height index, Family) are mandatory.
 -	the <P code="itemType:picture" /> field allows you to load the object type photo, which will be visible in the pdf inventory and on the selected object card on the plan.
 -	checking <P code="itemType:displayItemReferenceInMap" /> allows you to display the "Reference" field of each object on the plan.
 -	a particular <P code="itemType:code" /> will give you direct access to the object type by typing it in the search when creating an object.
--	the "Icon" choice should not be filled in when creating a scale object type.
--	the <P code="itemType:color" /> can be chosen from a selection, or by Hexa or RGB code to respect your graphic charter.
+-	the "Icon" choice should not be filled in when creating a scaled object type.
+-	the <P code="itemType:color" /> can be chosen from a selection, or by Hexa or RGB code to respect your graphic charter. Surfy recommends keeping objects white (by default) except in special cases, so as not to add confusion to space colors.
 -	the <P code="itemType:height" /> will in this case give the height of the associated 3D model, if it exists.
 -	<P code="itemType:description" /> and <P code="itemType:price" /> can be filled in.
 -	<P code="itemType:seatsCount" /> (only for seats, chairs, sofas, etc...) and <P code="itemType:carbonFootprint" /> (possibly provided by the manufacturer, per object) can be filled in and are accumulated in Surfy by room, floor or building.
--	the "Icon shape", "Background color" and "border color" fields are reserved for icon creations and should not be filled in when creating scale object types.
+-	the "Icon shape", "Background color" and "border color" fields are reserved for icon creations and should not be filled in when creating scaled object types.
 -	the <P code="itemType:manufacturer" /> can be filled in. If the manufacturer is not in the list, you can "create and associate an object type manufacturer" directly from the list.
 -	the <P code="itemType:object3dModel" /> allows 3D visualization of Objects from the object type and placed on the plan.
 -	the "External key" allows you to identify the object type with external use to Surfy (interoperability with third-party applications)
 -	"Validate the creation".
 
-It now remains to create the shape for the scale object type.
+It now remains to create the shape for the scaled object type.
 
-## Create the Scale Object Type Shape
+## Create the Scaled Object Type Shape
 
 ### 3D Models
 Surfy has a set of 3D models representing common furniture: tables, seats, desks, cabinets, etc... that can be associated with object types to represent them in 3D view of the building or floor.

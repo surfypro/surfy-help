@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## Créer la fiche du type d'objet
 
-<Youtube code="89my-CVLjOo"/>
+<Youtube code="Iy-0CjSbCoc"/>
 
 Pour créer un type d'objet à l'échelle, depuis le menu de gauche,
 
@@ -20,7 +20,7 @@ Ces trois premiers champs (Nom, Indice de hauteur, Famille) sont obligatoires.
 -	cocher <P code="itemType:displayItemReferenceInMap" /> permet d'afficher le champ « Référence » de chaque objet sur le plan.
 -	un <P code="itemType:code" /> particulier vous donnera accès directement au type d'objet en le tapant dans la recherche lors de la création d'objet.
 -	le choix « Icône » ne doit pas être renseigné dans le cas de création de type d'objet à l'échelle.
--	la <P code="itemType:color" /> peut être choisie parmi une sélection, ou par code Hexa ou RGB pour respecter votre charte graphique.
+-	la <P code="itemType:color" /> peut être choisie parmi une sélection, ou par code Hexa ou RGB pour respecter votre charte graphique. Surfy conseille de garder les objets en blanc (par défaut) sauf cas particulier, afin de ne pas ajouter de confusion aux couleurs des espaces.
 -	la <P code="itemType:height" /> donnera dans ce cas la hauteur du modèle 3D associé, s'il existe.
 -	<P code="itemType:description" /> et <P code="itemType:price" /> peuvent être renseignés.
 -	<P code="itemType:seatsCount" /> (uniquement pour les assises, sièges, canapés, etc…) et <P code="itemType:carbonFootprint" /> (donnée éventuellement par le fabricant, par objet) peuvent être renseignés et sont cumulés dans Surfy par pièce, étage ou bâtiment.
@@ -51,7 +51,7 @@ Afin que les formes dessinées en 2D soient compatibles avec les modèles 3D, l'
 
 ### Créer la forme en 2D
 
-Depuis la fiche du type d'objet, cliquer sur le menu contextuel (case grise sous la loupe de recherche), puis :
+Depuis la fiche du type d'objet, cliquer dans le menu contextuel (case grise sous la loupe de recherche), puis :
 
 -	cliquer sur « Editer la forme du type d'objet XXX » pour dessiner la forme du type d’objet.
 -   cliquer sur la page blanche afin de faire apparaitre les icônes de création.
