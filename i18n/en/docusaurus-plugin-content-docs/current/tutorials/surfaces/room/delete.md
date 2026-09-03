@@ -11,3 +11,6 @@ Deleting a space involves deleting all associated furniture and all person assig
 :::
 
 To delete a space, click on the space, then click on the "trash" icon at the bottom right of the space card (on the left of the plan). A double deletion confirmation is requested.
+
+You can select several spaces and delete them simultaneously by clicking on the first space, then on the other spaces while holding the "shift" key.<br />
+The list of selected spaces appears on the left of the plan. Clicking on the trash allows you to delete the spaces, after double confirmation.

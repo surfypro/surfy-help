@@ -6,13 +6,13 @@ sidebar_position: 2
 # Créer un espace
 
 
-<Youtube code="9A0XQaxj6hA"/>
+<Youtube code="iAS-3noFlUE"/>
 
-Pour créer un espace (ou pièce) sur un étage qui a déjà son fond de plan et son échelle :
+Pour créer un espace sur un étage qui a déjà son fond de plan et son échelle :
 
 -   depuis le plan de l'étage, cliquer sur le plan pour faire apparaître les icônes dans la zone située au dessus du plan
 -   choisir d' "activer le mode édition du plan" en cliquant sur l'icône "crayon".
--   cliquer sur l'icône "Ajouter un espace" permet d'avoir une croix indiquant l'horizontalité et la verticalité afin de faciliter le placement correct des sommets de l'espace à créer.
+-   cliquer sur l'icône "Ajouter un espace" permet d'avoir une mire indiquant l'horizontalité et la verticalité afin de faciliter le placement correct des sommets de l'espace à créer.
 
 :::warning Attention
 L'icône "Ajouter un espace" n'apparait que si aucun espace ni aucun objet n'est sélectionné (pour cela, cliquer sur une zone non digitalisée du plan), et que l'icône "Activer le mode édition du plan" est activée.
@@ -33,7 +33,7 @@ Pour assurer cette continuité et créer une "toile d'araignée" plutôt qu'une 
 Pour créer un segment commun à deux espaces, il faut fusionner un sommet de l'espace A avec un sommet de l'espace B, de chaque coté du segment à rendre commun. Une fois que les sommets de part et d'autre du segment sont communs, le segment est commun et se colorie en rouge.<br />
 On peut alors qualifier le segment commun en "Porte" ou "sans cloison".
 
-Les portes sont matérialisées sur la vue 2D des plans, avec leur sens d'ouverture et débattement. Les passages sont représentés en pointillés.
+Les portes sont matérialisées sur la vue 2D des plans, avec leur sens d'ouverture et débattement. Les passages "sans cloison" sont représentés en pointillés.
 Les portes et passages sont également visualisés dans la vue 3D de l'étage ou du bâtiment.
 
 Plus d'informations sur la [création d'un segment commun à deux espaces](/docs/tutorials/surfaces/doors/create#création-dun-segment-commun-à-deux-espaces)

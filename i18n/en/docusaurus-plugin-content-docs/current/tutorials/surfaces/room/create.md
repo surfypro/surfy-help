@@ -8,13 +8,13 @@ title: "Create a Space"
 # Create a Space
 
 
-<Youtube code="wGCPVpyd1C0"/>
+<Youtube code="KShI-4G2mOY"/>
 
 To create a space (or room) on a floor that already has its plan background and scale:
 
 -   from the floor plan, click on the plan to make icons appear in the area above the plan
 -   choose to "activate plan editing mode" by clicking on the "pencil" icon.
--   clicking on the "Add a space" icon allows you to have a cross indicating horizontality and verticality to facilitate correct placement of the vertices of the space to create.
+-   clicking on the "Add a space" icon allows you to have a crosshair indicating horizontality and verticality to facilitate correct placement of the vertices of the space to create.
 
 :::warning Attention
 The "Add a space" icon only appears if no space or object is selected (for this, click on a non-digitized area of the plan), and the "Activate plan editing mode" icon is activated.
