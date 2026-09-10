@@ -16,4 +16,6 @@ Courtes démonstrations filmées des parcours les plus utiles. Chaque page repre
 | [Modification multiple d’espaces](./rooms-bulk-edit) | Harmoniser organisation / dimensions sur plusieurs espaces |
 | [Focus pièce et voisins](./focus-room-neighbors) | Isoler une pièce et ses voisines sur le plan |
 | [Badge sur une icône de type d'objet](./item-type-icon-badge-create) | Créer un type avec icône + bande badge (texte / couleurs) |
+| [Créer des arêtes visuelles (type d'objet)](./item-type-create-visual-edges) | Séparer forme utile et décor d'affichage sur un type d'objet |
 | [Vue sécurité réservation — du planning au jour](./booking-security-day-view) | Localiser les réservations des profils de sécurité, puis le plan coloré du jour |
+| [Libération de poste par absence](./static-desk-release-on-absence) | Partager temporairement un poste fixe quand le titulaire est absent toute la journée |

@@ -1,7 +1,8 @@
 import { Box, Fade, IconButton, Link, Paper, Tooltip, Typography, styled, tooltipClasses } from "@mui/material";
 import * as React$1 from "react";
 import React, { Fragment, createContext, forwardRef, isValidElement, useCallback, useContext, useDebugValue, useEffect, useMemo, useReducer } from "react";
-import { Fragment as Fragment$1, jsx, jsxs } from "react/jsx-runtime";
+import { jsx, jsxs } from "react/jsx-runtime";
+import { Fragment as Fragment$1, jsxDEV } from "react/jsx-dev-runtime";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 //#region \0rolldown/runtime.js
 var __create = Object.create;
@@ -2538,7 +2539,7 @@ function _extends() {
 	}, _extends.apply(null, arguments);
 }
 //#endregion
-//#region node_modules/.pnpm/@emotion+sheet@1.4.0/node_modules/@emotion/sheet/dist/emotion-sheet.esm.js
+//#region node_modules/.pnpm/@emotion+sheet@1.4.0/node_modules/@emotion/sheet/dist/emotion-sheet.development.esm.js
 function sheetForTag(tag) {
 	if (tag.sheet) return tag.sheet;
 	/* istanbul ignore next */
@@ -2565,7 +2566,7 @@ var StyleSheet = /*#__PURE__*/ function() {
 			_this.container.insertBefore(tag, before);
 			_this.tags.push(tag);
 		};
-		this.isSpeedy = options.speedy === void 0 ? true : options.speedy;
+		this.isSpeedy = options.speedy === void 0 ? false : options.speedy;
 		this.tags = [];
 		this.ctr = 0;
 		this.nonce = options.nonce;
@@ -2582,11 +2583,16 @@ var StyleSheet = /*#__PURE__*/ function() {
 	_proto.insert = function insert(rule) {
 		if (this.ctr % (this.isSpeedy ? 65e3 : 1) === 0) this._insertTag(createStyleElement(this));
 		var tag = this.tags[this.tags.length - 1];
+		var isImportRule = rule.charCodeAt(0) === 64 && rule.charCodeAt(1) === 105;
+		if (isImportRule && this._alreadyInsertedOrderInsensitiveRule) console.error("You're attempting to insert the following rule:\n" + rule + "\n\n`@import` rules must be before all other types of rules in a stylesheet but other rules have already been inserted. Please ensure that `@import` rules are before all other rules.");
+		this._alreadyInsertedOrderInsensitiveRule = this._alreadyInsertedOrderInsensitiveRule || !isImportRule;
 		if (this.isSpeedy) {
 			var sheet = sheetForTag(tag);
 			try {
 				sheet.insertRule(rule, sheet.cssRules.length);
-			} catch (e) {}
+			} catch (e) {
+				if (!/:(-moz-placeholder|-moz-focus-inner|-moz-focusring|-ms-input-placeholder|-moz-read-write|-moz-read-only|-ms-clear|-ms-expand|-ms-reveal){/.test(rule)) console.error("There was a problem inserting the following rule: \"" + rule + "\"", e);
+			}
 		} else tag.appendChild(document.createTextNode(rule));
 		this.ctr++;
 	};
@@ -2597,6 +2603,7 @@ var StyleSheet = /*#__PURE__*/ function() {
 		});
 		this.tags = [];
 		this.ctr = 0;
+		this._alreadyInsertedOrderInsensitiveRule = false;
 	};
 	return StyleSheet;
 }();
@@ -3103,17 +3110,6 @@ function middleware(collection) {
 		return output;
 	};
 }
-/**
-* @param {function} callback
-* @return {function}
-*/
-function rulesheet(callback) {
-	return function(element) {
-		if (!element.root) {
-			if (element = element.return) callback(element);
-		}
-	};
-}
 //#endregion
 //#region node_modules/.pnpm/@emotion+memoize@0.9.0/node_modules/@emotion/memoize/dist/emotion-memoize.esm.js
 function memoize(fn) {
@@ -3124,7 +3120,7 @@ function memoize(fn) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@emotion+cache@11.14.0/node_modules/@emotion/cache/dist/emotion-cache.browser.esm.js
+//#region node_modules/.pnpm/@emotion+cache@11.14.0/node_modules/@emotion/cache/dist/emotion-cache.browser.development.esm.js
 var identifierWithPointTracking = function identifierWithPointTracking(begin, points, index) {
 	var previous = 0;
 	var character = 0;
@@ -3187,6 +3183,54 @@ var removeLabel = function removeLabel(element) {
 			element["return"] = "";
 			element.value = "";
 		}
+	}
+};
+var ignoreFlag = "emotion-disable-server-rendering-unsafe-selector-warning-please-do-not-use-this-the-warning-exists-for-a-reason";
+var isIgnoringComment = function isIgnoringComment(element) {
+	return element.type === "comm" && element.children.indexOf(ignoreFlag) > -1;
+};
+var createUnsafeSelectorsAlarm = function createUnsafeSelectorsAlarm(cache) {
+	return function(element, index, children) {
+		if (element.type !== "rule" || cache.compat) return;
+		var unsafePseudoClasses = element.value.match(/(:first|:nth|:nth-last)-child/g);
+		if (unsafePseudoClasses) {
+			var commentContainer = !!element.parent ? element.parent.children : children;
+			for (var i = commentContainer.length - 1; i >= 0; i--) {
+				var node = commentContainer[i];
+				if (node.line < element.line) break;
+				if (node.column < element.column) {
+					if (isIgnoringComment(node)) return;
+					break;
+				}
+			}
+			unsafePseudoClasses.forEach(function(unsafePseudoClass) {
+				console.error("The pseudo class \"" + unsafePseudoClass + "\" is potentially unsafe when doing server-side rendering. Try changing it to \"" + unsafePseudoClass.split("-child")[0] + "-of-type\".");
+			});
+		}
+	};
+};
+var isImportRule = function isImportRule(element) {
+	return element.type.charCodeAt(1) === 105 && element.type.charCodeAt(0) === 64;
+};
+var isPrependedWithRegularRules = function isPrependedWithRegularRules(index, children) {
+	for (var i = index - 1; i >= 0; i--) if (!isImportRule(children[i])) return true;
+	return false;
+};
+var nullifyElement = function nullifyElement(element) {
+	element.type = "";
+	element.value = "";
+	element["return"] = "";
+	element.children = "";
+	element.props = "";
+};
+var incorrectImportAlarm = function incorrectImportAlarm(element, index, children) {
+	if (!isImportRule(element)) return;
+	if (element.parent) {
+		console.error("`@import` rules can't be nested inside other rules. Please move it to the top level and put it before regular rules. Keep in mind that they can only be used within global styles.");
+		nullifyElement(element);
+	} else if (isPrependedWithRegularRules(index, children)) {
+		console.error("`@import` rules can't be after other rules. Please put your `@import` rules before your other rules.");
+		nullifyElement(element);
 	}
 };
 function prefix$1(value, length) {
@@ -3297,8 +3341,16 @@ var defaultStylisPlugins = [function prefixer(element, index, children, callback
 		}
 	}
 }];
+var getSourceMap;
+var sourceMapPattern = /\/\*#\ssourceMappingURL=data:application\/json;\S+\s+\*\//g;
+getSourceMap = function getSourceMap(styles) {
+	var matches = styles.match(sourceMapPattern);
+	if (!matches) return;
+	return matches[matches.length - 1];
+};
 var createCache = function createCache(options) {
 	var key = options.key;
+	if (!key) throw new Error("You have to configure `key` for your cache. Please make sure it's unique (and not equal to 'css') as it's used for linking styles to your cache.\nIf multiple caches share the same key they might \"fight\" for each other's style elements.");
 	if (key === "css") {
 		var ssrStyles = document.querySelectorAll("style[data-emotion]:not([data-s])");
 		Array.prototype.forEach.call(ssrStyles, function(node) {
@@ -3308,6 +3360,7 @@ var createCache = function createCache(options) {
 		});
 	}
 	var stylisPlugins = options.stylisPlugins || defaultStylisPlugins;
+	if (/[^a-z-]/.test(key)) throw new Error("Emotion key must only contain lower case alphabetical characters and - but \"" + key + "\" was passed");
 	var inserted = {};
 	var container;
 	var nodesToHydrate = [];
@@ -3319,16 +3372,28 @@ var createCache = function createCache(options) {
 	});
 	var _insert;
 	var omnipresentPlugins = [compat, removeLabel];
+	omnipresentPlugins.push(createUnsafeSelectorsAlarm({ get compat() {
+		return cache.compat;
+	} }), incorrectImportAlarm);
 	var currentSheet;
-	var finalizingPlugins = [stringify$1, rulesheet(function(rule) {
-		currentSheet.insert(rule);
-	})];
+	var finalizingPlugins = [stringify$1, function(element) {
+		if (!element.root) {
+			if (element["return"]) currentSheet.insert(element["return"]);
+			else if (element.value && element.type !== "comm") currentSheet.insert(element.value + "{}");
+		}
+	}];
 	var serializer = middleware(omnipresentPlugins.concat(stylisPlugins, finalizingPlugins));
 	var stylis = function stylis(styles) {
 		return serialize(compile(styles), serializer);
 	};
 	_insert = function insert(selector, serialized, sheet, shouldCache) {
 		currentSheet = sheet;
+		if (getSourceMap) {
+			var sourceMap = getSourceMap(serialized.styles);
+			if (sourceMap) currentSheet = { insert: function insert(rule) {
+				sheet.insert(rule + sourceMap);
+			} };
+		}
 		stylis(selector ? selector + "{" + serialized.styles + "}" : serialized.styles);
 		if (shouldCache) cache.inserted[serialized.name] = true;
 	};
@@ -3531,8 +3596,10 @@ var unitlessKeys = {
 	strokeWidth: 1
 };
 //#endregion
-//#region node_modules/.pnpm/@emotion+serialize@1.3.3/node_modules/@emotion/serialize/dist/emotion-serialize.esm.js
-var isDevelopment$2 = false;
+//#region node_modules/.pnpm/@emotion+serialize@1.3.3/node_modules/@emotion/serialize/dist/emotion-serialize.development.esm.js
+var isDevelopment$2 = true;
+var ILLEGAL_ESCAPE_SEQUENCE_ERROR$1 = "You have illegal escape sequence in your template literal, most likely inside content's property value.\nBecause you write your CSS inside a JavaScript string you actually have to do double escaping, so for example \"content: '\\00d7';\" should become \"content: '\\\\00d7';\".\nYou can read more about this here:\nhttps://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#ES2018_revision_of_illegal_escape_sequences";
+var UNDEFINED_AS_OBJECT_KEY_ERROR = "You have passed in falsy value as style object's key (can happen when in example you pass unexported component as computed key).";
 var hyphenateRegex = /[A-Z]|^ms/g;
 var animationRegex = /_EMO_([^_]+?)_([^]*?)_EMO_/g;
 var isCustomProperty = function isCustomProperty(property) {
@@ -3559,11 +3626,39 @@ var processStyleValue = function processStyleValue(key, value) {
 	if (unitlessKeys[key] !== 1 && !isCustomProperty(key) && typeof value === "number" && value !== 0) return value + "px";
 	return value;
 };
+var contentValuePattern = /(var|attr|counters?|url|element|(((repeating-)?(linear|radial))|conic)-gradient)\(|(no-)?(open|close)-quote/;
+var contentValues = [
+	"normal",
+	"none",
+	"initial",
+	"inherit",
+	"unset"
+];
+var oldProcessStyleValue = processStyleValue;
+var msPattern = /^-ms-/;
+var hyphenPattern = /-(.)/g;
+var hyphenatedCache = {};
+processStyleValue = function processStyleValue(key, value) {
+	if (key === "content") {
+		if (typeof value !== "string" || contentValues.indexOf(value) === -1 && !contentValuePattern.test(value) && (value.charAt(0) !== value.charAt(value.length - 1) || value.charAt(0) !== "\"" && value.charAt(0) !== "'")) throw new Error("You seem to be using a value for 'content' without quotes, try replacing it with `content: '\"" + value + "\"'`");
+	}
+	var processed = oldProcessStyleValue(key, value);
+	if (processed !== "" && !isCustomProperty(key) && key.indexOf("-") !== -1 && hyphenatedCache[key] === void 0) {
+		hyphenatedCache[key] = true;
+		console.error("Using kebab-case for css properties in objects is not supported. Did you mean " + key.replace(msPattern, "ms-").replace(hyphenPattern, function(str, _char) {
+			return _char.toUpperCase();
+		}) + "?");
+	}
+	return processed;
+};
 var noComponentSelectorMessage = "Component selectors can only be used in conjunction with @emotion/babel-plugin, the swc Emotion plugin, or another Emotion-aware compiler transform.";
 function handleInterpolation(mergedProps, registered, interpolation) {
 	if (interpolation == null) return "";
 	var componentSelector = interpolation;
-	if (componentSelector.__emotion_styles !== void 0) return componentSelector;
+	if (componentSelector.__emotion_styles !== void 0) {
+		if (String(componentSelector) === "NO_COMPONENT_SELECTOR") throw new Error(noComponentSelectorMessage);
+		return componentSelector;
+	}
 	switch (typeof interpolation) {
 		case "boolean": return "";
 		case "object":
@@ -3590,12 +3685,22 @@ function handleInterpolation(mergedProps, registered, interpolation) {
 				return serializedStyles.styles + ";";
 			}
 			return createStringFromObject(mergedProps, registered, interpolation);
-		case "function": if (mergedProps !== void 0) {
-			var previousCursor = cursor;
-			var result = interpolation(mergedProps);
-			cursor = previousCursor;
-			return handleInterpolation(mergedProps, registered, result);
-		}
+		case "function":
+			if (mergedProps !== void 0) {
+				var previousCursor = cursor;
+				var result = interpolation(mergedProps);
+				cursor = previousCursor;
+				return handleInterpolation(mergedProps, registered, result);
+			} else console.error("Functions that are interpolated in css calls will be stringified.\nIf you want to have a css call based on props, create a function that returns a css call like this\nlet dynamicStyle = (props) => css`color: ${props.color}`\nIt can be called directly with props or interpolated in a styled call like this\nlet SomeComponent = styled('div')`${dynamicStyle}`");
+			break;
+		case "string":
+			var matched = [];
+			var replaced = interpolation.replace(animationRegex, function(_match, _p1, p2) {
+				var fakeVarName = "animation" + matched.length;
+				matched.push("const " + fakeVarName + " = keyframes`" + p2.replace(/^@keyframes animation-\w+/, "") + "`");
+				return "${" + fakeVarName + "}";
+			});
+			if (matched.length) console.error("`keyframes` output got interpolated into plain string, please wrap it with `css`.\n\nInstead of doing this:\n\n" + [].concat(matched, ["`" + replaced + "`"]).join("\n") + "\n\nYou should wrap it with `css` like this:\n\ncss`" + replaced + "`");
 	}
 	var asString = interpolation;
 	if (registered == null) return asString;
@@ -3622,7 +3727,9 @@ function createStringFromObject(mergedProps, registered, obj) {
 					case "animationName":
 						string += processStyleName(key) + ":" + interpolated + ";";
 						break;
-					default: string += key + "{" + interpolated + "}";
+					default:
+						if (key === "undefined") console.error(UNDEFINED_AS_OBJECT_KEY_ERROR);
+						string += key + "{" + interpolated + "}";
 				}
 			}
 		}
@@ -3640,10 +3747,18 @@ function serializeStyles(args, registered, mergedProps) {
 	if (strings == null || strings.raw === void 0) {
 		stringMode = false;
 		styles += handleInterpolation(mergedProps, registered, strings);
-	} else styles += strings[0];
+	} else {
+		var asTemplateStringsArr = strings;
+		if (asTemplateStringsArr[0] === void 0) console.error(ILLEGAL_ESCAPE_SEQUENCE_ERROR$1);
+		styles += asTemplateStringsArr[0];
+	}
 	for (var i = 1; i < args.length; i++) {
 		styles += handleInterpolation(mergedProps, registered, args[i]);
-		if (stringMode) styles += strings[i];
+		if (stringMode) {
+			var templateStringsArr = strings;
+			if (templateStringsArr[i] === void 0) console.error(ILLEGAL_ESCAPE_SEQUENCE_ERROR$1);
+			styles += templateStringsArr[i];
+		}
 	}
 	labelPattern.lastIndex = 0;
 	var identifierName = "";
@@ -3652,7 +3767,10 @@ function serializeStyles(args, registered, mergedProps) {
 	return {
 		name: murmur2(styles) + identifierName,
 		styles,
-		next: cursor
+		next: cursor,
+		toString: function toString() {
+			return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop).";
+		}
 	};
 }
 //#endregion
@@ -3662,8 +3780,11 @@ var syncFallback = function syncFallback(create) {
 };
 var useInsertionEffect = React$1["useInsertionEffect"] ? React$1["useInsertionEffect"] : false;
 var useInsertionEffectAlwaysWithSyncFallback = useInsertionEffect || syncFallback;
-useInsertionEffect || React$1.useLayoutEffect;
+var useInsertionEffectWithLayoutFallback = useInsertionEffect || React$1.useLayoutEffect;
+//#endregion
+//#region node_modules/.pnpm/@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7/node_modules/@emotion/react/dist/emotion-element-489459f2.browser.development.esm.js
 var EmotionCacheContext = /* #__PURE__ */ React$1.createContext(typeof HTMLElement !== "undefined" ? /* #__PURE__ */ createCache({ key: "css" }) : null);
+EmotionCacheContext.displayName = "EmotionCacheContext";
 EmotionCacheContext.Provider;
 var withEmotionCache = function withEmotionCache(func) {
 	return /*#__PURE__*/ forwardRef(function(props, ref) {
@@ -3671,15 +3792,51 @@ var withEmotionCache = function withEmotionCache(func) {
 	});
 };
 var ThemeContext = /* #__PURE__ */ React$1.createContext({});
+ThemeContext.displayName = "EmotionThemeContext";
 var hasOwn = {}.hasOwnProperty;
+var getLastPart = function getLastPart(functionName) {
+	var parts = functionName.split(".");
+	return parts[parts.length - 1];
+};
+var getFunctionNameFromStackTraceLine = function getFunctionNameFromStackTraceLine(line) {
+	var match = /^\s+at\s+([A-Za-z0-9$.]+)\s/.exec(line);
+	if (match) return getLastPart(match[1]);
+	match = /^([A-Za-z0-9$.]+)@/.exec(line);
+	if (match) return getLastPart(match[1]);
+};
+var internalReactFunctionNames = /* #__PURE__ */ new Set([
+	"renderWithHooks",
+	"processChild",
+	"finishClassComponent",
+	"renderToString"
+]);
+var sanitizeIdentifier = function sanitizeIdentifier(identifier) {
+	return identifier.replace(/\$/g, "-");
+};
+var getLabelFromStackTrace = function getLabelFromStackTrace(stackTrace) {
+	if (!stackTrace) return void 0;
+	var lines = stackTrace.split("\n");
+	for (var i = 0; i < lines.length; i++) {
+		var functionName = getFunctionNameFromStackTraceLine(lines[i]);
+		if (!functionName) continue;
+		if (internalReactFunctionNames.has(functionName)) break;
+		if (/^[A-Z]/.test(functionName)) return sanitizeIdentifier(functionName);
+	}
+};
 var typePropName = "__EMOTION_TYPE_PLEASE_DO_NOT_USE__";
+var labelPropName = "__EMOTION_LABEL_PLEASE_DO_NOT_USE__";
 var createEmotionProps = function createEmotionProps(type, props) {
+	if (typeof props.css === "string" && props.css.indexOf(":") !== -1) throw new Error("Strings are not allowed as css prop values, please wrap it in a css template literal from '@emotion/react' like this: css`" + props.css + "`");
 	var newProps = {};
 	for (var _key in props) if (hasOwn.call(props, _key)) newProps[_key] = props[_key];
 	newProps[typePropName] = type;
+	if (typeof globalThis !== "undefined" && !!globalThis.EMOTION_RUNTIME_AUTO_LABEL && !!props.css && (typeof props.css !== "object" || !("name" in props.css) || typeof props.css.name !== "string" || props.css.name.indexOf("-") === -1)) {
+		var label = getLabelFromStackTrace((/* @__PURE__ */ new Error()).stack);
+		if (label) newProps[labelPropName] = label;
+	}
 	return newProps;
 };
-var Insertion$1 = function Insertion(_ref) {
+var Insertion$2 = function Insertion(_ref) {
 	var cache = _ref.cache, serialized = _ref.serialized, isStringTag = _ref.isStringTag;
 	registerStyles(cache, serialized, isStringTag);
 	useInsertionEffectAlwaysWithSyncFallback(function() {
@@ -3687,7 +3844,7 @@ var Insertion$1 = function Insertion(_ref) {
 	});
 	return null;
 };
-var Emotion$1 = /* @__PURE__ */ withEmotionCache(function(props, cache, ref) {
+var Emotion = /* #__PURE__ */ withEmotionCache(function(props, cache, ref) {
 	var cssProp = props.css;
 	if (typeof cssProp === "string" && cache.registered[cssProp] !== void 0) cssProp = cache.registered[cssProp];
 	var WrappedComponent = props[typePropName];
@@ -3696,18 +3853,331 @@ var Emotion$1 = /* @__PURE__ */ withEmotionCache(function(props, cache, ref) {
 	if (typeof props.className === "string") className = getRegisteredStyles(cache.registered, registeredStyles, props.className);
 	else if (props.className != null) className = props.className + " ";
 	var serialized = serializeStyles(registeredStyles, void 0, React$1.useContext(ThemeContext));
+	if (serialized.name.indexOf("-") === -1) {
+		var labelFromStack = props[labelPropName];
+		if (labelFromStack) serialized = serializeStyles([serialized, "label:" + labelFromStack + ";"]);
+	}
 	className += cache.key + "-" + serialized.name;
 	var newProps = {};
-	for (var _key2 in props) if (hasOwn.call(props, _key2) && _key2 !== "css" && _key2 !== typePropName && true) newProps[_key2] = props[_key2];
+	for (var _key2 in props) if (hasOwn.call(props, _key2) && _key2 !== "css" && _key2 !== typePropName && _key2 !== labelPropName) newProps[_key2] = props[_key2];
 	newProps.className = className;
 	if (ref) newProps.ref = ref;
-	return /*#__PURE__*/ React$1.createElement(React$1.Fragment, null, /*#__PURE__*/ React$1.createElement(Insertion$1, {
+	return /*#__PURE__*/ React$1.createElement(React$1.Fragment, null, /*#__PURE__*/ React$1.createElement(Insertion$2, {
 		cache,
 		serialized,
 		isStringTag: typeof WrappedComponent === "string"
 	}), /*#__PURE__*/ React$1.createElement(WrappedComponent, newProps));
 });
+Emotion.displayName = "EmotionCssPropInternal";
+var Emotion$1 = Emotion;
 require_hoist_non_react_statics_cjs();
+var isDevelopment$1 = true;
+var pkg = {
+	name: "@emotion/react",
+	version: "11.14.0",
+	main: "dist/emotion-react.cjs.js",
+	module: "dist/emotion-react.esm.js",
+	types: "dist/emotion-react.cjs.d.ts",
+	exports: {
+		".": {
+			types: {
+				"import": "./dist/emotion-react.cjs.mjs",
+				"default": "./dist/emotion-react.cjs.js"
+			},
+			development: {
+				"edge-light": {
+					module: "./dist/emotion-react.development.edge-light.esm.js",
+					"import": "./dist/emotion-react.development.edge-light.cjs.mjs",
+					"default": "./dist/emotion-react.development.edge-light.cjs.js"
+				},
+				worker: {
+					module: "./dist/emotion-react.development.edge-light.esm.js",
+					"import": "./dist/emotion-react.development.edge-light.cjs.mjs",
+					"default": "./dist/emotion-react.development.edge-light.cjs.js"
+				},
+				workerd: {
+					module: "./dist/emotion-react.development.edge-light.esm.js",
+					"import": "./dist/emotion-react.development.edge-light.cjs.mjs",
+					"default": "./dist/emotion-react.development.edge-light.cjs.js"
+				},
+				browser: {
+					module: "./dist/emotion-react.browser.development.esm.js",
+					"import": "./dist/emotion-react.browser.development.cjs.mjs",
+					"default": "./dist/emotion-react.browser.development.cjs.js"
+				},
+				module: "./dist/emotion-react.development.esm.js",
+				"import": "./dist/emotion-react.development.cjs.mjs",
+				"default": "./dist/emotion-react.development.cjs.js"
+			},
+			"edge-light": {
+				module: "./dist/emotion-react.edge-light.esm.js",
+				"import": "./dist/emotion-react.edge-light.cjs.mjs",
+				"default": "./dist/emotion-react.edge-light.cjs.js"
+			},
+			worker: {
+				module: "./dist/emotion-react.edge-light.esm.js",
+				"import": "./dist/emotion-react.edge-light.cjs.mjs",
+				"default": "./dist/emotion-react.edge-light.cjs.js"
+			},
+			workerd: {
+				module: "./dist/emotion-react.edge-light.esm.js",
+				"import": "./dist/emotion-react.edge-light.cjs.mjs",
+				"default": "./dist/emotion-react.edge-light.cjs.js"
+			},
+			browser: {
+				module: "./dist/emotion-react.browser.esm.js",
+				"import": "./dist/emotion-react.browser.cjs.mjs",
+				"default": "./dist/emotion-react.browser.cjs.js"
+			},
+			module: "./dist/emotion-react.esm.js",
+			"import": "./dist/emotion-react.cjs.mjs",
+			"default": "./dist/emotion-react.cjs.js"
+		},
+		"./jsx-runtime": {
+			types: {
+				"import": "./jsx-runtime/dist/emotion-react-jsx-runtime.cjs.mjs",
+				"default": "./jsx-runtime/dist/emotion-react-jsx-runtime.cjs.js"
+			},
+			development: {
+				"edge-light": {
+					module: "./jsx-runtime/dist/emotion-react-jsx-runtime.development.edge-light.esm.js",
+					"import": "./jsx-runtime/dist/emotion-react-jsx-runtime.development.edge-light.cjs.mjs",
+					"default": "./jsx-runtime/dist/emotion-react-jsx-runtime.development.edge-light.cjs.js"
+				},
+				worker: {
+					module: "./jsx-runtime/dist/emotion-react-jsx-runtime.development.edge-light.esm.js",
+					"import": "./jsx-runtime/dist/emotion-react-jsx-runtime.development.edge-light.cjs.mjs",
+					"default": "./jsx-runtime/dist/emotion-react-jsx-runtime.development.edge-light.cjs.js"
+				},
+				workerd: {
+					module: "./jsx-runtime/dist/emotion-react-jsx-runtime.development.edge-light.esm.js",
+					"import": "./jsx-runtime/dist/emotion-react-jsx-runtime.development.edge-light.cjs.mjs",
+					"default": "./jsx-runtime/dist/emotion-react-jsx-runtime.development.edge-light.cjs.js"
+				},
+				browser: {
+					module: "./jsx-runtime/dist/emotion-react-jsx-runtime.browser.development.esm.js",
+					"import": "./jsx-runtime/dist/emotion-react-jsx-runtime.browser.development.cjs.mjs",
+					"default": "./jsx-runtime/dist/emotion-react-jsx-runtime.browser.development.cjs.js"
+				},
+				module: "./jsx-runtime/dist/emotion-react-jsx-runtime.development.esm.js",
+				"import": "./jsx-runtime/dist/emotion-react-jsx-runtime.development.cjs.mjs",
+				"default": "./jsx-runtime/dist/emotion-react-jsx-runtime.development.cjs.js"
+			},
+			"edge-light": {
+				module: "./jsx-runtime/dist/emotion-react-jsx-runtime.edge-light.esm.js",
+				"import": "./jsx-runtime/dist/emotion-react-jsx-runtime.edge-light.cjs.mjs",
+				"default": "./jsx-runtime/dist/emotion-react-jsx-runtime.edge-light.cjs.js"
+			},
+			worker: {
+				module: "./jsx-runtime/dist/emotion-react-jsx-runtime.edge-light.esm.js",
+				"import": "./jsx-runtime/dist/emotion-react-jsx-runtime.edge-light.cjs.mjs",
+				"default": "./jsx-runtime/dist/emotion-react-jsx-runtime.edge-light.cjs.js"
+			},
+			workerd: {
+				module: "./jsx-runtime/dist/emotion-react-jsx-runtime.edge-light.esm.js",
+				"import": "./jsx-runtime/dist/emotion-react-jsx-runtime.edge-light.cjs.mjs",
+				"default": "./jsx-runtime/dist/emotion-react-jsx-runtime.edge-light.cjs.js"
+			},
+			browser: {
+				module: "./jsx-runtime/dist/emotion-react-jsx-runtime.browser.esm.js",
+				"import": "./jsx-runtime/dist/emotion-react-jsx-runtime.browser.cjs.mjs",
+				"default": "./jsx-runtime/dist/emotion-react-jsx-runtime.browser.cjs.js"
+			},
+			module: "./jsx-runtime/dist/emotion-react-jsx-runtime.esm.js",
+			"import": "./jsx-runtime/dist/emotion-react-jsx-runtime.cjs.mjs",
+			"default": "./jsx-runtime/dist/emotion-react-jsx-runtime.cjs.js"
+		},
+		"./_isolated-hnrs": {
+			types: {
+				"import": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.cjs.mjs",
+				"default": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.cjs.js"
+			},
+			development: {
+				"edge-light": {
+					module: "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.development.edge-light.esm.js",
+					"import": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.development.edge-light.cjs.mjs",
+					"default": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.development.edge-light.cjs.js"
+				},
+				worker: {
+					module: "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.development.edge-light.esm.js",
+					"import": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.development.edge-light.cjs.mjs",
+					"default": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.development.edge-light.cjs.js"
+				},
+				workerd: {
+					module: "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.development.edge-light.esm.js",
+					"import": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.development.edge-light.cjs.mjs",
+					"default": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.development.edge-light.cjs.js"
+				},
+				browser: {
+					module: "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.browser.development.esm.js",
+					"import": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.browser.development.cjs.mjs",
+					"default": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.browser.development.cjs.js"
+				},
+				module: "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.development.esm.js",
+				"import": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.development.cjs.mjs",
+				"default": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.development.cjs.js"
+			},
+			"edge-light": {
+				module: "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.edge-light.esm.js",
+				"import": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.edge-light.cjs.mjs",
+				"default": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.edge-light.cjs.js"
+			},
+			worker: {
+				module: "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.edge-light.esm.js",
+				"import": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.edge-light.cjs.mjs",
+				"default": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.edge-light.cjs.js"
+			},
+			workerd: {
+				module: "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.edge-light.esm.js",
+				"import": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.edge-light.cjs.mjs",
+				"default": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.edge-light.cjs.js"
+			},
+			browser: {
+				module: "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.browser.esm.js",
+				"import": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.browser.cjs.mjs",
+				"default": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.browser.cjs.js"
+			},
+			module: "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.esm.js",
+			"import": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.cjs.mjs",
+			"default": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.cjs.js"
+		},
+		"./jsx-dev-runtime": {
+			types: {
+				"import": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.cjs.mjs",
+				"default": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.cjs.js"
+			},
+			development: {
+				"edge-light": {
+					module: "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.development.edge-light.esm.js",
+					"import": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.development.edge-light.cjs.mjs",
+					"default": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.development.edge-light.cjs.js"
+				},
+				worker: {
+					module: "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.development.edge-light.esm.js",
+					"import": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.development.edge-light.cjs.mjs",
+					"default": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.development.edge-light.cjs.js"
+				},
+				workerd: {
+					module: "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.development.edge-light.esm.js",
+					"import": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.development.edge-light.cjs.mjs",
+					"default": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.development.edge-light.cjs.js"
+				},
+				browser: {
+					module: "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.browser.development.esm.js",
+					"import": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.browser.development.cjs.mjs",
+					"default": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.browser.development.cjs.js"
+				},
+				module: "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.development.esm.js",
+				"import": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.development.cjs.mjs",
+				"default": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.development.cjs.js"
+			},
+			"edge-light": {
+				module: "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.edge-light.esm.js",
+				"import": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.edge-light.cjs.mjs",
+				"default": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.edge-light.cjs.js"
+			},
+			worker: {
+				module: "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.edge-light.esm.js",
+				"import": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.edge-light.cjs.mjs",
+				"default": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.edge-light.cjs.js"
+			},
+			workerd: {
+				module: "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.edge-light.esm.js",
+				"import": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.edge-light.cjs.mjs",
+				"default": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.edge-light.cjs.js"
+			},
+			browser: {
+				module: "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.browser.esm.js",
+				"import": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.browser.cjs.mjs",
+				"default": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.browser.cjs.js"
+			},
+			module: "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.esm.js",
+			"import": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.cjs.mjs",
+			"default": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.cjs.js"
+		},
+		"./package.json": "./package.json",
+		"./types/css-prop": "./types/css-prop.d.ts",
+		"./macro": {
+			types: {
+				"import": "./macro.d.mts",
+				"default": "./macro.d.ts"
+			},
+			"default": "./macro.js"
+		}
+	},
+	imports: {
+		"#is-development": {
+			development: "./src/conditions/true.ts",
+			"default": "./src/conditions/false.ts"
+		},
+		"#is-browser": {
+			"edge-light": "./src/conditions/false.ts",
+			workerd: "./src/conditions/false.ts",
+			worker: "./src/conditions/false.ts",
+			browser: "./src/conditions/true.ts",
+			"default": "./src/conditions/is-browser.ts"
+		}
+	},
+	files: [
+		"src",
+		"dist",
+		"jsx-runtime",
+		"jsx-dev-runtime",
+		"_isolated-hnrs",
+		"types/css-prop.d.ts",
+		"macro.*"
+	],
+	sideEffects: false,
+	author: "Emotion Contributors",
+	license: "MIT",
+	scripts: { "test:typescript": "dtslint types" },
+	dependencies: {
+		"@babel/runtime": "^7.18.3",
+		"@emotion/babel-plugin": "^11.13.5",
+		"@emotion/cache": "^11.14.0",
+		"@emotion/serialize": "^1.3.3",
+		"@emotion/use-insertion-effect-with-fallbacks": "^1.2.0",
+		"@emotion/utils": "^1.4.2",
+		"@emotion/weak-memoize": "^0.4.0",
+		"hoist-non-react-statics": "^3.3.1"
+	},
+	peerDependencies: { react: ">=16.8.0" },
+	peerDependenciesMeta: { "@types/react": { optional: true } },
+	devDependencies: {
+		"@definitelytyped/dtslint": "0.0.112",
+		"@emotion/css": "11.13.5",
+		"@emotion/css-prettifier": "1.2.0",
+		"@emotion/server": "11.11.0",
+		"@emotion/styled": "11.14.0",
+		"@types/hoist-non-react-statics": "^3.3.5",
+		"html-tag-names": "^1.1.2",
+		react: "16.14.0",
+		"svg-tag-names": "^1.1.1",
+		typescript: "^5.4.5"
+	},
+	repository: "https://github.com/emotion-js/emotion/tree/main/packages/react",
+	publishConfig: { access: "public" },
+	"umd:main": "dist/emotion-react.umd.min.js",
+	preconstruct: {
+		entrypoints: [
+			"./index.ts",
+			"./jsx-runtime.ts",
+			"./jsx-dev-runtime.ts",
+			"./_isolated-hnrs.ts"
+		],
+		umdName: "emotionReact",
+		exports: { extra: {
+			"./types/css-prop": "./types/css-prop.d.ts",
+			"./macro": {
+				types: {
+					"import": "./macro.d.mts",
+					"default": "./macro.d.ts"
+				},
+				"default": "./macro.js"
+			}
+		} }
+	}
+};
 var jsx$1 = function jsx(type, props) {
 	var args = arguments;
 	if (props == null || !hasOwn.call(props, "css")) return React$1.createElement.apply(void 0, args);
@@ -3722,6 +4192,53 @@ var jsx$1 = function jsx(type, props) {
 	var JSX;
 	JSX || (JSX = _jsx.JSX || (_jsx.JSX = {}));
 })(jsx$1 || (jsx$1 = {}));
+var warnedAboutCssPropForGlobal = false;
+var Global = /* #__PURE__ */ withEmotionCache(function(props, cache) {
+	if (!warnedAboutCssPropForGlobal && ("className" in props && props.className || "css" in props && props.css)) {
+		console.error("It looks like you're using the css prop on Global, did you mean to use the styles prop instead?");
+		warnedAboutCssPropForGlobal = true;
+	}
+	var styles = props.styles;
+	var serialized = serializeStyles([styles], void 0, React$1.useContext(ThemeContext));
+	var sheetRef = React$1.useRef();
+	useInsertionEffectWithLayoutFallback(function() {
+		var key = cache.key + "-global";
+		var sheet = new cache.sheet.constructor({
+			key,
+			nonce: cache.sheet.nonce,
+			container: cache.sheet.container,
+			speedy: cache.sheet.isSpeedy
+		});
+		var rehydrating = false;
+		var node = document.querySelector("style[data-emotion=\"" + key + " " + serialized.name + "\"]");
+		if (cache.sheet.tags.length) sheet.before = cache.sheet.tags[0];
+		if (node !== null) {
+			rehydrating = true;
+			node.setAttribute("data-emotion", key);
+			sheet.hydrate([node]);
+		}
+		sheetRef.current = [sheet, rehydrating];
+		return function() {
+			sheet.flush();
+		};
+	}, [cache]);
+	useInsertionEffectWithLayoutFallback(function() {
+		var sheetRefCurrent = sheetRef.current;
+		var sheet = sheetRefCurrent[0];
+		if (sheetRefCurrent[1]) {
+			sheetRefCurrent[1] = false;
+			return;
+		}
+		if (serialized.next !== void 0) insertStyles(cache, serialized.next, true);
+		if (sheet.tags.length) {
+			sheet.before = sheet.tags[sheet.tags.length - 1].nextElementSibling;
+			sheet.flush();
+		}
+		cache.insert("", serialized, sheet, false);
+	}, [cache, serialized.name]);
+	return null;
+});
+Global.displayName = "EmotionGlobal";
 function css() {
 	for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) args[_key] = arguments[_key];
 	return serializeStyles(args);
@@ -3738,6 +4255,84 @@ function keyframes() {
 		}
 	};
 }
+var classnames = function classnames(args) {
+	var len = args.length;
+	var i = 0;
+	var cls = "";
+	for (; i < len; i++) {
+		var arg = args[i];
+		if (arg == null) continue;
+		var toAdd = void 0;
+		switch (typeof arg) {
+			case "boolean": break;
+			case "object":
+				if (Array.isArray(arg)) toAdd = classnames(arg);
+				else {
+					if (arg.styles !== void 0 && arg.name !== void 0) console.error("You have passed styles created with `css` from `@emotion/react` package to the `cx`.\n`cx` is meant to compose class names (strings) so you should convert those styles to a class name by passing them to the `css` received from <ClassNames/> component.");
+					toAdd = "";
+					for (var k in arg) if (arg[k] && k) {
+						toAdd && (toAdd += " ");
+						toAdd += k;
+					}
+				}
+				break;
+			default: toAdd = arg;
+		}
+		if (toAdd) {
+			cls && (cls += " ");
+			cls += toAdd;
+		}
+	}
+	return cls;
+};
+function merge$1(registered, css, className) {
+	var registeredStyles = [];
+	var rawClassName = getRegisteredStyles(registered, registeredStyles, className);
+	if (registeredStyles.length < 2) return className;
+	return rawClassName + css(registeredStyles);
+}
+var Insertion$1 = function Insertion(_ref) {
+	var cache = _ref.cache, serializedArr = _ref.serializedArr;
+	useInsertionEffectAlwaysWithSyncFallback(function() {
+		for (var i = 0; i < serializedArr.length; i++) insertStyles(cache, serializedArr[i], false);
+	});
+	return null;
+};
+var ClassNames = /* #__PURE__ */ withEmotionCache(function(props, cache) {
+	var hasRendered = false;
+	var serializedArr = [];
+	var css = function css() {
+		if (hasRendered && isDevelopment$1) throw new Error("css can only be used during render");
+		for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) args[_key] = arguments[_key];
+		var serialized = serializeStyles(args, cache.registered);
+		serializedArr.push(serialized);
+		registerStyles(cache, serialized, false);
+		return cache.key + "-" + serialized.name;
+	};
+	var content = {
+		css,
+		cx: function cx() {
+			if (hasRendered && isDevelopment$1) throw new Error("cx can only be used during render");
+			for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) args[_key2] = arguments[_key2];
+			return merge$1(cache.registered, css, classnames(args));
+		},
+		theme: React$1.useContext(ThemeContext)
+	};
+	var ele = props.children(content);
+	hasRendered = true;
+	return /*#__PURE__*/ React$1.createElement(React$1.Fragment, null, /*#__PURE__*/ React$1.createElement(Insertion$1, {
+		cache,
+		serializedArr
+	}), ele);
+});
+ClassNames.displayName = "EmotionClassNames";
+var isBrowser$2 = typeof document !== "undefined";
+if (isBrowser$2 && !(typeof jest !== "undefined" || typeof vi !== "undefined")) {
+	var globalContext = typeof globalThis !== "undefined" ? globalThis : isBrowser$2 ? window : window;
+	var globalKey = "__EMOTION_REACT_" + pkg.version.split(".")[0] + "__";
+	if (globalContext[globalKey]) console.warn("You are loading @emotion/react when it is already loaded. Running multiple instances may cause problems. This can happen if multiple versions are used, or if multiple builds of the same version are used.");
+	globalContext[globalKey] = true;
+}
 //#endregion
 //#region node_modules/.pnpm/@emotion+is-prop-valid@1.4.0/node_modules/@emotion/is-prop-valid/dist/emotion-is-prop-valid.esm.js
 var reactPropsRegex = /^((children|dangerouslySetInnerHTML|key|ref|autoFocus|defaultValue|defaultChecked|innerHTML|suppressContentEditableWarning|suppressHydrationWarning|valueLink|abbr|accept|acceptCharset|accessKey|action|allow|allowUserMedia|allowPaymentRequest|allowFullScreen|allowTransparency|alt|async|autoComplete|autoPlay|capture|cellPadding|cellSpacing|challenge|charSet|checked|cite|classID|className|cols|colSpan|content|contentEditable|contextMenu|controls|controlsList|coords|crossOrigin|data|dateTime|decoding|default|defer|dir|disabled|disablePictureInPicture|disableRemotePlayback|download|draggable|encType|enterKeyHint|fetchpriority|fetchPriority|form|formAction|formEncType|formMethod|formNoValidate|formTarget|frameBorder|headers|height|hidden|high|href|hrefLang|htmlFor|httpEquiv|id|inputMode|integrity|is|keyParams|keyType|kind|label|lang|list|loading|loop|low|marginHeight|marginWidth|max|maxLength|media|mediaGroup|method|min|minLength|multiple|muted|name|nonce|noValidate|open|optimum|pattern|placeholder|playsInline|popover|popoverTarget|popoverTargetAction|poster|preload|profile|radioGroup|readOnly|referrerPolicy|rel|required|reversed|role|rows|rowSpan|sandbox|scope|scoped|scrolling|seamless|selected|shape|size|sizes|slot|span|spellCheck|src|srcDoc|srcLang|srcSet|start|step|style|summary|tabIndex|target|title|translate|type|useMap|value|width|wmode|wrap|about|datatype|inlist|prefix|property|resource|typeof|vocab|autoCapitalize|autoCorrect|autoSave|color|incremental|fallback|inert|itemProp|itemScope|itemType|itemID|itemRef|on|option|results|security|unselectable|accentHeight|accumulate|additive|alignmentBaseline|allowReorder|alphabetic|amplitude|arabicForm|ascent|attributeName|attributeType|autoReverse|azimuth|baseFrequency|baselineShift|baseProfile|bbox|begin|bias|by|calcMode|capHeight|clip|clipPathUnits|clipPath|clipRule|colorInterpolation|colorInterpolationFilters|colorProfile|colorRendering|contentScriptType|contentStyleType|cursor|cx|cy|d|decelerate|descent|diffuseConstant|direction|display|divisor|dominantBaseline|dur|dx|dy|edgeMode|elevation|enableBackground|end|exponent|externalResourcesRequired|fill|fillOpacity|fillRule|filter|filterRes|filterUnits|floodColor|floodOpacity|focusable|fontFamily|fontSize|fontSizeAdjust|fontStretch|fontStyle|fontVariant|fontWeight|format|from|fr|fx|fy|g1|g2|glyphName|glyphOrientationHorizontal|glyphOrientationVertical|glyphRef|gradientTransform|gradientUnits|hanging|horizAdvX|horizOriginX|ideographic|imageRendering|in|in2|intercept|k|k1|k2|k3|k4|kernelMatrix|kernelUnitLength|kerning|keyPoints|keySplines|keyTimes|lengthAdjust|letterSpacing|lightingColor|limitingConeAngle|local|markerEnd|markerMid|markerStart|markerHeight|markerUnits|markerWidth|mask|maskContentUnits|maskUnits|mathematical|mode|numOctaves|offset|opacity|operator|order|orient|orientation|origin|overflow|overlinePosition|overlineThickness|panose1|paintOrder|pathLength|patternContentUnits|patternTransform|patternUnits|pointerEvents|points|pointsAtX|pointsAtY|pointsAtZ|preserveAlpha|preserveAspectRatio|primitiveUnits|r|radius|refX|refY|renderingIntent|repeatCount|repeatDur|requiredExtensions|requiredFeatures|restart|result|rotate|rx|ry|scale|seed|shapeRendering|slope|spacing|specularConstant|specularExponent|speed|spreadMethod|startOffset|stdDeviation|stemh|stemv|stitchTiles|stopColor|stopOpacity|strikethroughPosition|strikethroughThickness|string|stroke|strokeDasharray|strokeDashoffset|strokeLinecap|strokeLinejoin|strokeMiterlimit|strokeOpacity|strokeWidth|surfaceScale|systemLanguage|tableValues|targetX|targetY|textAnchor|textDecoration|textRendering|textLength|to|transform|u1|u2|underlinePosition|underlineThickness|unicode|unicodeBidi|unicodeRange|unitsPerEm|vAlphabetic|vHanging|vIdeographic|vMathematical|values|vectorEffect|version|vertAdvY|vertOriginX|vertOriginY|viewBox|viewTarget|visibility|widths|wordSpacing|writingMode|x|xHeight|x1|x2|xChannelSelector|xlinkActuate|xlinkArcrole|xlinkHref|xlinkRole|xlinkShow|xlinkTitle|xlinkType|xmlBase|xmlns|xmlnsXlink|xmlLang|xmlSpace|y|y1|y2|yChannelSelector|z|zoomAndPan|for|class|autofocus)|(([Dd][Aa][Tt][Aa]|[Aa][Rr][Ii][Aa]|x)-.*))$/;
@@ -3745,8 +4340,8 @@ var isPropValid = /* #__PURE__ */ memoize(function(prop) {
 	return reactPropsRegex.test(prop) || prop.charCodeAt(0) === 111 && prop.charCodeAt(1) === 110 && prop.charCodeAt(2) < 91;
 });
 //#endregion
-//#region node_modules/.pnpm/@emotion+styled@11.14.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@types+react@19.2.17_react@19.2.7/node_modules/@emotion/styled/base/dist/emotion-styled-base.browser.esm.js
-var isDevelopment = false;
+//#region node_modules/.pnpm/@emotion+styled@11.14.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@types+react@19.2.17_react@19.2.7/node_modules/@emotion/styled/base/dist/emotion-styled-base.browser.development.esm.js
+var isDevelopment = true;
 var testOmitPropsOnStringTag = isPropValid;
 var testOmitPropsOnComponent = function testOmitPropsOnComponent(key) {
 	return key !== "theme";
@@ -3765,6 +4360,7 @@ var composeShouldForwardProps = function composeShouldForwardProps(tag, options,
 	if (typeof shouldForwardProp !== "function" && isReal) shouldForwardProp = tag.__emotion_forwardProp;
 	return shouldForwardProp;
 };
+var ILLEGAL_ESCAPE_SEQUENCE_ERROR = "You have illegal escape sequence in your template literal, most likely inside content's property value.\nBecause you write your CSS inside a JavaScript string you actually have to do double escaping, so for example \"content: '\\00d7';\" should become \"content: '\\\\00d7';\".\nYou can read more about this here:\nhttps://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#ES2018_revision_of_illegal_escape_sequences";
 var Insertion = function Insertion(_ref) {
 	var cache = _ref.cache, serialized = _ref.serialized, isStringTag = _ref.isStringTag;
 	registerStyles(cache, serialized, isStringTag);
@@ -3774,6 +4370,7 @@ var Insertion = function Insertion(_ref) {
 	return null;
 };
 var createStyled$1 = function createStyled(tag, options) {
+	if (tag === void 0) throw new Error("You are trying to create a styled element with an undefined component.\nYou may have forgotten to import it.");
 	var isReal = tag.__emotion_real === tag;
 	var baseTag = isReal && tag.__emotion_base || tag;
 	var identifierName;
@@ -3792,10 +4389,14 @@ var createStyled$1 = function createStyled(tag, options) {
 		if (args[0] == null || args[0].raw === void 0) styles.push.apply(styles, args);
 		else {
 			var templateStringsArr = args[0];
+			if (templateStringsArr[0] === void 0) console.error(ILLEGAL_ESCAPE_SEQUENCE_ERROR);
 			styles.push(templateStringsArr[0]);
 			var len = args.length;
 			var i = 1;
-			for (; i < len; i++) styles.push(args[i], templateStringsArr[i]);
+			for (; i < len; i++) {
+				if (templateStringsArr[i] === void 0) console.error(ILLEGAL_ESCAPE_SEQUENCE_ERROR);
+				styles.push(args[i], templateStringsArr[i]);
+			}
 		}
 		var Styled = withEmotionCache(function(props, cache, ref) {
 			var FinalTag = shouldUseAs && props.as || baseTag;
@@ -3843,7 +4444,7 @@ var createStyled$1 = function createStyled(tag, options) {
 	};
 };
 //#endregion
-//#region node_modules/.pnpm/@emotion+styled@11.14.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@types+react@19.2.17_react@19.2.7/node_modules/@emotion/styled/dist/emotion-styled.browser.esm.js
+//#region node_modules/.pnpm/@emotion+styled@11.14.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@types+react@19.2.17_react@19.2.7/node_modules/@emotion/styled/dist/emotion-styled.browser.development.esm.js
 var tags = [
 	"a",
 	"abbr",
@@ -70534,9 +71135,14 @@ function updateGlobalLanguageSettings(locale) {
 }
 //#endregion
 //#region src/front/jup/Entities/Modules/EntityModule/Components/ObjectTypeSingularCapitalizedLabel.tsx
+var _jsxFileName$30 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/front/jup/Entities/Modules/EntityModule/Components/ObjectTypeSingularCapitalizedLabel.tsx";
 function ObjectTypeSingularCapitalizedLabel(props) {
 	const translation = useTranslation();
-	return /* @__PURE__ */ jsx("span", { children: getObjectTypeCapitalizedSingularLabel(translation, props.objectTypeName) });
+	return /* @__PURE__ */ jsxDEV("span", { children: getObjectTypeCapitalizedSingularLabel(translation, props.objectTypeName) }, void 0, false, {
+		fileName: _jsxFileName$30,
+		lineNumber: 9,
+		columnNumber: 12
+	}, this);
 }
 //#endregion
 //#region src/front/jup/Entities/Modules/EntityModule/labels.ts
@@ -70579,10 +71185,15 @@ function objectTypeIndexViewHelp(i18nApi, objectTypeName, viewName, isDefaultVie
 }
 //#endregion
 //#region src/front/jup/Entities/Modules/EntityModule/ObjectTypeIndexViewHelp.tsx
+var _jsxFileName$29 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/front/jup/Entities/Modules/EntityModule/ObjectTypeIndexViewHelp.tsx";
 function ObjectTypeIndexViewHelp(props) {
 	const { objectTypeName, view } = props;
 	const i18nApi = useI18nApi();
-	return /* @__PURE__ */ jsx("span", { children: objectTypeIndexViewHelp(i18nApi, objectTypeName, view.name, view.isDefaultView) });
+	return /* @__PURE__ */ jsxDEV("span", { children: objectTypeIndexViewHelp(i18nApi, objectTypeName, view.name, view.isDefaultView) }, void 0, false, {
+		fileName: _jsxFileName$29,
+		lineNumber: 11,
+		columnNumber: 12
+	}, this);
 }
 //#endregion
 //#region src/front/jup/Entities/ViewTabs/viewCoreLabel.ts
@@ -70602,10 +71213,15 @@ function objectTypeViewLabel(translation, objectTypeName, viewName, isDefaultVie
 }
 //#endregion
 //#region src/front/jup/Entities/Modules/EntityModule/ObjectTypeViewLabel.tsx
+var _jsxFileName$28 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/front/jup/Entities/Modules/EntityModule/ObjectTypeViewLabel.tsx";
 function ObjectTypeViewLabel(props) {
 	const { objectTypeName, viewName, isDefaultView } = props;
 	const translation = useTranslation();
-	return /* @__PURE__ */ jsx("span", { children: objectTypeViewLabel(translation, objectTypeName, viewName, isDefaultView) });
+	return /* @__PURE__ */ jsxDEV("span", { children: objectTypeViewLabel(translation, objectTypeName, viewName, isDefaultView) }, void 0, false, {
+		fileName: _jsxFileName$28,
+		lineNumber: 9,
+		columnNumber: 12
+	}, this);
 }
 //#endregion
 //#region src/front/jup/Entities/ViewTabs/viewCore.ts
@@ -70655,85 +71271,152 @@ function buildI18nTokenizedJsx(store, input, mapTokenString) {
 }
 //#endregion
 //#region src/front/jup/I18n/I18nTokenizedText.tsx
+var _jsxFileName$27 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/front/jup/I18n/I18nTokenizedText.tsx";
 function I18nTokenizedText(props) {
-	const { jsx: jsx$2 } = props;
-	return /* @__PURE__ */ jsx("span", {
+	const { jsx } = props;
+	return /* @__PURE__ */ jsxDEV("span", {
 		style: {
 			display: "flex",
 			alignItems: "center",
 			justifyContent: "flex-start",
 			gap: 4
 		},
-		children: jsx$2.map((e, i) => {
-			if (typeof e === "string") return /* @__PURE__ */ jsx("span", { children: e }, i);
-			return /* @__PURE__ */ jsx(Fragment, { children: e }, i);
+		children: jsx.map((e, i) => {
+			if (typeof e === "string") return /* @__PURE__ */ jsxDEV("span", { children: e }, i, false, {
+				fileName: _jsxFileName$27,
+				lineNumber: 11,
+				columnNumber: 24
+			}, this);
+			return /* @__PURE__ */ jsxDEV(Fragment, { children: e }, i, false, {
+				fileName: _jsxFileName$27,
+				lineNumber: 13,
+				columnNumber: 20
+			}, this);
 		})
-	});
+	}, void 0, false, {
+		fileName: _jsxFileName$27,
+		lineNumber: 8,
+		columnNumber: 12
+	}, this);
 }
 function I18nTokenizedTextWithStore(props) {
 	const { store, input, mapTokenString } = props;
-	return /* @__PURE__ */ jsx(I18nTokenizedText, { jsx: buildI18nTokenizedJsx(store, input, mapTokenString) });
+	return /* @__PURE__ */ jsxDEV(I18nTokenizedText, { jsx: buildI18nTokenizedJsx(store, input, mapTokenString) }, void 0, false, {
+		fileName: _jsxFileName$27,
+		lineNumber: 20,
+		columnNumber: 12
+	}, this);
 }
 //#endregion
 //#region src/front/jup/Menu/CapitalizedMenuGroupNodeLabel.tsx
+var _jsxFileName$26 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/front/jup/Menu/CapitalizedMenuGroupNodeLabel.tsx";
 function CapitalizedMenuGroupNodeLabel({ groupName }) {
 	const label = capitalizeFirstLetter(useTranslation("menu")(`menuLeft.${groupName}`));
-	return /* @__PURE__ */ jsx("span", { children: label });
+	return /* @__PURE__ */ jsxDEV("span", { children: label }, void 0, false, {
+		fileName: _jsxFileName$26,
+		lineNumber: 13,
+		columnNumber: 12
+	}, this);
 }
 //#endregion
 //#region src/front/jup/Help/helpAppMenuPathBreadcrumbs.nodes.helper.tsx
+var _jsxFileName$25 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/front/jup/Help/helpAppMenuPathBreadcrumbs.nodes.helper.tsx";
 function appendDirectorySegmentCrumbs(nodes, segments, objectTypeName) {
 	for (let i = 1; i < segments.length; i++) {
 		const slug = segments[i];
 		const toCamelCase = kebabCaseToCamelized(slug);
 		if (slug === "dataquality") {
-			nodes.push(/* @__PURE__ */ jsx(ObjectTypeSingularCapitalizedLabel, { objectTypeName }, `object-type-${objectTypeName}`));
-			nodes.push(/* @__PURE__ */ jsx(ObjectTypeIndexViewHelp, {
+			nodes.push(/* @__PURE__ */ jsxDEV(ObjectTypeSingularCapitalizedLabel, { objectTypeName }, `object-type-${objectTypeName}`, false, {
+				fileName: _jsxFileName$25,
+				lineNumber: 27,
+				columnNumber: 24
+			}, this));
+			nodes.push(/* @__PURE__ */ jsxDEV(ObjectTypeIndexViewHelp, {
 				view: {
 					name: "dataquality",
 					isDefaultView: true
 				},
 				objectTypeName
-			}, "dataquality-group"));
-		} else nodes.push(/* @__PURE__ */ jsx(CapitalizedMenuGroupNodeLabel, { groupName: toCamelCase }, `menu-group-${toCamelCase}`));
+			}, "dataquality-group", false, {
+				fileName: _jsxFileName$25,
+				lineNumber: 28,
+				columnNumber: 24
+			}, this));
+		} else nodes.push(/* @__PURE__ */ jsxDEV(CapitalizedMenuGroupNodeLabel, { groupName: toCamelCase }, `menu-group-${toCamelCase}`, false, {
+			fileName: _jsxFileName$25,
+			lineNumber: 30,
+			columnNumber: 24
+		}, this));
 	}
 }
 function appendObjectTypeCrumb(nodes, objectTypeName, viewName, isDataQualityView) {
 	if (isDataQualityView) return;
-	if (!((viewName ? isSingleViewCore(objectTypeName, viewName) : false) && isCurrentTenantSingleViewObjectType(objectTypeName))) nodes.push(/* @__PURE__ */ jsx(ObjectTypeSingularCapitalizedLabel, { objectTypeName }, `object-type-${objectTypeName}`));
+	if (!((viewName ? isSingleViewCore(objectTypeName, viewName) : false) && isCurrentTenantSingleViewObjectType(objectTypeName))) nodes.push(/* @__PURE__ */ jsxDEV(ObjectTypeSingularCapitalizedLabel, { objectTypeName }, `object-type-${objectTypeName}`, false, {
+		fileName: _jsxFileName$25,
+		lineNumber: 48,
+		columnNumber: 20
+	}, this));
 }
 function appendViewCrumb(nodes, objectTypeName, viewName, isDataQualityView, labels) {
 	const view = getObjectTypeViewCoreByName(objectTypeName, viewName);
 	if (!view) return;
 	if (isDataQualityView) {
-		nodes.push(/* @__PURE__ */ jsx(ObjectTypeViewLabel, {
+		nodes.push(/* @__PURE__ */ jsxDEV(ObjectTypeViewLabel, {
 			viewName: view.name,
 			objectTypeName
-		}, `view-label-${objectTypeName}-${viewName}`));
+		}, `view-label-${objectTypeName}-${viewName}`, false, {
+			fileName: _jsxFileName$25,
+			lineNumber: 65,
+			columnNumber: 20
+		}, this));
 		return;
 	}
 	if (!isSingleViewCore(objectTypeName, viewName)) {
-		nodes.push(/* @__PURE__ */ jsx(ObjectTypeIndexViewHelp, {
+		nodes.push(/* @__PURE__ */ jsxDEV(ObjectTypeIndexViewHelp, {
 			view,
 			objectTypeName
-		}, `view-${objectTypeName}-${viewName}`));
+		}, `view-${objectTypeName}-${viewName}`, false, {
+			fileName: _jsxFileName$25,
+			lineNumber: 70,
+			columnNumber: 20
+		}, this));
 		return;
 	}
-	if (isCurrentTenantSingleViewObjectType(objectTypeName)) nodes.push(/* @__PURE__ */ jsx("span", { children: labels.currentTenantStep }, "current-tenant-step"));
-	else nodes.push(/* @__PURE__ */ jsx(I18nTokenizedTextWithStore, {
+	if (isCurrentTenantSingleViewObjectType(objectTypeName)) nodes.push(/* @__PURE__ */ jsxDEV("span", { children: labels.currentTenantStep }, "current-tenant-step", false, {
+		fileName: _jsxFileName$25,
+		lineNumber: 75,
+		columnNumber: 20
+	}, this));
+	else nodes.push(/* @__PURE__ */ jsxDEV(I18nTokenizedTextWithStore, {
 		input: labels.entityRecordStep,
 		mapTokenString: "entityType",
-		store: { entityType: /* @__PURE__ */ jsx(ObjectTypeSingularCapitalizedLabel, { objectTypeName }, `entity-type-record-${objectTypeName}`) }
-	}, `entity-record-${objectTypeName}`));
-	nodes.push(/* @__PURE__ */ jsx(ObjectTypeViewLabel, {
+		store: { entityType: /* @__PURE__ */ jsxDEV(ObjectTypeSingularCapitalizedLabel, { objectTypeName }, `entity-type-record-${objectTypeName}`, false, {
+			fileName: _jsxFileName$25,
+			lineNumber: 84,
+			columnNumber: 25
+		}, this) }
+	}, `entity-record-${objectTypeName}`, false, {
+		fileName: _jsxFileName$25,
+		lineNumber: 78,
+		columnNumber: 13
+	}, this));
+	nodes.push(/* @__PURE__ */ jsxDEV(ObjectTypeViewLabel, {
 		viewName: view.name,
 		objectTypeName
-	}, `view-label-${objectTypeName}-${viewName}`));
+	}, `view-label-${objectTypeName}-${viewName}`, false, {
+		fileName: _jsxFileName$25,
+		lineNumber: 95,
+		columnNumber: 9
+	}, this));
 }
 function buildHelpAppMenuPathCrumbNodes(directoryPath, objectTypeName, viewName, labels) {
 	const segments = directoryPath.replace(/^\//, "").split("/").filter(Boolean);
 	if (segments.length === 0 || segments[0] !== "entities") return null;
-	const nodes = [/* @__PURE__ */ jsx("span", { children: labels.menuLabel }, "menu-label")];
+	const nodes = [/* @__PURE__ */ jsxDEV("span", { children: labels.menuLabel }, "menu-label", false, {
+		fileName: _jsxFileName$25,
+		lineNumber: 114,
+		columnNumber: 33
+	}, this)];
 	const isDataQualityView = segments.includes("dataquality");
 	appendDirectorySegmentCrumbs(nodes, segments, objectTypeName);
 	appendObjectTypeCrumb(nodes, objectTypeName, viewName, isDataQualityView);
@@ -70742,6 +71425,7 @@ function buildHelpAppMenuPathCrumbNodes(directoryPath, objectTypeName, viewName,
 }
 //#endregion
 //#region src/front/jup/Help/HelpAppMenuPathBreadcrumbs.tsx
+var _jsxFileName$24 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/front/jup/Help/HelpAppMenuPathBreadcrumbs.tsx";
 /**
 * Plain-text breadcrumb from a precomputed entities doc path + trailing segments (no links).
 * Shared by in-app help tooltips and surfy-help MDX components.
@@ -70755,7 +71439,7 @@ function HelpAppMenuPathBreadcrumbs(props) {
 		viewName
 	]);
 	if (!crumbs) return null;
-	return /* @__PURE__ */ jsx(Breadcrumbs, {
+	return /* @__PURE__ */ jsxDEV(Breadcrumbs, {
 		"aria-label": "menu path",
 		component: "nav",
 		maxItems: 10,
@@ -70767,7 +71451,11 @@ function HelpAppMenuPathBreadcrumbs(props) {
 			...sx
 		},
 		children: crumbs
-	});
+	}, void 0, false, {
+		fileName: _jsxFileName$24,
+		lineNumber: 38,
+		columnNumber: 9
+	}, this);
 }
 //#endregion
 //#region src/front/jup/I18n/i18n.v2.ts
@@ -70778,6 +71466,7 @@ function useComponentTranslation(componentKey) {
 }
 //#endregion
 //#region src/front/jup/Help/HelpViewMenuPathBreadcrumb.tsx
+var _jsxFileName$23 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/front/jup/Help/HelpViewMenuPathBreadcrumb.tsx";
 /**
 * Plain-text path from the left menu root to a view (MUI Breadcrumbs, no links).
 */
@@ -70786,7 +71475,7 @@ function HelpViewMenuPathBreadcrumb(props) {
 	const staticDirectoryPath = viewPathMapping[`${objectTypeName}:${viewName}`];
 	const componentTranslation = useComponentTranslation("HelpViewMenuPathBreadcrumb");
 	if (!staticDirectoryPath) return null;
-	return /* @__PURE__ */ jsx(HelpAppMenuPathBreadcrumbs, {
+	return /* @__PURE__ */ jsxDEV(HelpAppMenuPathBreadcrumbs, {
 		directoryPath: staticDirectoryPath,
 		objectTypeName,
 		viewName,
@@ -70796,32 +71485,49 @@ function HelpViewMenuPathBreadcrumb(props) {
 			currentTenantStep: componentTranslation("currentTenantStep"),
 			entityRecordStep: componentTranslation("entityRecordStep")
 		}
-	});
+	}, void 0, false, {
+		fileName: _jsxFileName$23,
+		lineNumber: 37,
+		columnNumber: 9
+	}, this);
 }
 //#endregion
 //#region src/surfy-help/views/ClickOnIndexViewMenuPathBreadcrumb.tsx
+var _jsxFileName$22 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/surfy-help/views/ClickOnIndexViewMenuPathBreadcrumb.tsx";
 function ClickOnIndexViewMenuPathBreadcrumb(props) {
 	const { code } = props;
 	const [objectTypeName, viewName] = code.split(":");
 	const componentTranslation = useComponentTranslation("ClickOnIndexViewMenuPathBreadcrumb");
-	return /* @__PURE__ */ jsxs(Box, {
+	return /* @__PURE__ */ jsxDEV(Box, {
 		sx: {
 			display: "flex",
 			flexDirection: "row",
 			alignItems: "center",
 			justifyContent: "start-flex"
 		},
-		children: [/* @__PURE__ */ jsx(Typography, {
+		children: [/* @__PURE__ */ jsxDEV(Typography, {
 			sx: {
 				mt: 1,
 				mr: 1
 			},
 			children: componentTranslation("clickOnLabel")
-		}), /* @__PURE__ */ jsx(HelpViewMenuPathBreadcrumb, {
+		}, void 0, false, {
+			fileName: _jsxFileName$22,
+			lineNumber: 23,
+			columnNumber: 13
+		}, this), /* @__PURE__ */ jsxDEV(HelpViewMenuPathBreadcrumb, {
 			objectTypeName,
 			viewName
-		})]
-	});
+		}, void 0, false, {
+			fileName: _jsxFileName$22,
+			lineNumber: 26,
+			columnNumber: 13
+		}, this)]
+	}, void 0, true, {
+		fileName: _jsxFileName$22,
+		lineNumber: 22,
+		columnNumber: 9
+	}, this);
 }
 //#endregion
 //#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/Box/boxClasses.mjs
@@ -70857,13 +71563,14 @@ process.env.NODE_ENV !== "production" && (Box$1.propTypes = {
 });
 //#endregion
 //#region src/front/jup/Help/HelpMenuPathAside.tsx
+var _jsxFileName$21 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/front/jup/Help/HelpMenuPathAside.tsx";
 /** Shared menu-path reminder block for in-app help and surfy-help adapters. */
 function HelpMenuPathAside(props) {
 	const { children, sx } = props;
 	const translatedReminderTitle = useComponentTranslation("HelpMenuPathAside")("menuPathReminderTitle");
-	return /* @__PURE__ */ jsx(Box$1, {
+	return /* @__PURE__ */ jsxDEV(Box$1, {
 		sx,
-		children: /* @__PURE__ */ jsxs(Box$1, {
+		children: /* @__PURE__ */ jsxDEV(Box$1, {
 			component: "aside",
 			"aria-label": translatedReminderTitle,
 			sx: (theme) => {
@@ -70878,58 +71585,103 @@ function HelpMenuPathAside(props) {
 					"& nav": { mt: 0 }
 				};
 			},
-			children: [/* @__PURE__ */ jsx(Typography$1, {
+			children: [/* @__PURE__ */ jsxDEV(Typography$1, {
 				variant: "caption",
 				color: "text.secondary",
 				component: "p",
 				sx: { mb: .5 },
 				children: translatedReminderTitle
-			}), /* @__PURE__ */ jsx(Typography$1, {
+			}, void 0, false, {
+				fileName: _jsxFileName$21,
+				lineNumber: 41,
+				columnNumber: 17
+			}, this), /* @__PURE__ */ jsxDEV(Typography$1, {
 				variant: "caption",
 				component: "span",
 				children
-			})]
-		})
-	});
+			}, void 0, false, {
+				fileName: _jsxFileName$21,
+				lineNumber: 44,
+				columnNumber: 17
+			}, this)]
+		}, void 0, true, {
+			fileName: _jsxFileName$21,
+			lineNumber: 25,
+			columnNumber: 13
+		}, this)
+	}, void 0, false, {
+		fileName: _jsxFileName$21,
+		lineNumber: 24,
+		columnNumber: 9
+	}, this);
 }
 //#endregion
 //#region src/front/jup/Help/HelpViewLink/HelpViewLinkTooltipContent.tsx
+var _jsxFileName$20 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/front/jup/Help/HelpViewLink/HelpViewLinkTooltipContent.tsx";
 function HelpViewLinkTooltipContent(props) {
 	const { objectTypeName, viewName, view } = props;
-	return /* @__PURE__ */ jsx(Paper, {
+	return /* @__PURE__ */ jsxDEV(Paper, {
 		sx: { p: 2 },
-		children: /* @__PURE__ */ jsxs(Box, {
+		children: /* @__PURE__ */ jsxDEV(Box, {
 			sx: {
 				display: "flex",
 				flexDirection: "column",
 				alignItems: "flex-start"
 			},
 			children: [
-				/* @__PURE__ */ jsx(Typography, {
+				/* @__PURE__ */ jsxDEV(Typography, {
 					variant: "h5",
 					component: "h2",
 					sx: { mb: 1 },
-					children: /* @__PURE__ */ jsx(ObjectTypeViewLabel, {
+					children: /* @__PURE__ */ jsxDEV(ObjectTypeViewLabel, {
 						objectTypeName,
 						viewName,
 						isDefaultView: view.isDefaultView
-					})
-				}),
-				/* @__PURE__ */ jsx(ObjectTypeIndexViewHelp, {
+					}, void 0, false, {
+						fileName: _jsxFileName$20,
+						lineNumber: 21,
+						columnNumber: 21
+					}, this)
+				}, void 0, false, {
+					fileName: _jsxFileName$20,
+					lineNumber: 20,
+					columnNumber: 17
+				}, this),
+				/* @__PURE__ */ jsxDEV(ObjectTypeIndexViewHelp, {
 					objectTypeName,
 					view
-				}),
-				/* @__PURE__ */ jsx(HelpMenuPathAside, {
+				}, void 0, false, {
+					fileName: _jsxFileName$20,
+					lineNumber: 27,
+					columnNumber: 17
+				}, this),
+				/* @__PURE__ */ jsxDEV(HelpMenuPathAside, {
 					sx: { mt: 1 },
-					children: /* @__PURE__ */ jsx(HelpViewMenuPathBreadcrumb, {
+					children: /* @__PURE__ */ jsxDEV(HelpViewMenuPathBreadcrumb, {
 						objectTypeName,
 						viewName: view.name,
 						sx: { mt: 2 }
-					})
-				})
+					}, void 0, false, {
+						fileName: _jsxFileName$20,
+						lineNumber: 29,
+						columnNumber: 21
+					}, this)
+				}, void 0, false, {
+					fileName: _jsxFileName$20,
+					lineNumber: 28,
+					columnNumber: 17
+				}, this)
 			]
-		})
-	});
+		}, void 0, true, {
+			fileName: _jsxFileName$20,
+			lineNumber: 19,
+			columnNumber: 13
+		}, this)
+	}, void 0, false, {
+		fileName: _jsxFileName$20,
+		lineNumber: 18,
+		columnNumber: 9
+	}, this);
 }
 //#endregion
 //#region src/front/jup/Components/Tooltips/tooltipPortalContainer.context.ts
@@ -70944,8 +71696,9 @@ function useTooltipPortalContainer() {
 }
 //#endregion
 //#region src/front/jup/Components/Frame/PaperFrame.tsx
+var _jsxFileName$19 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/front/jup/Components/Frame/PaperFrame.tsx";
 function PaperFrame(props) {
-	return /* @__PURE__ */ jsx(Paper, {
+	return /* @__PURE__ */ jsxDEV(Paper, {
 		...props,
 		sx: {
 			m: 2,
@@ -70953,8 +71706,71 @@ function PaperFrame(props) {
 			...props.sx
 		},
 		children: props.children
-	});
+	}, void 0, false, {
+		fileName: _jsxFileName$19,
+		lineNumber: 4,
+		columnNumber: 12
+	}, this);
 }
+//#endregion
+//#region node_modules/.pnpm/jotai-family@1.1.0_jotai@2.20.2_@babel+core@7.29.7_@babel+template@7.29.7_@types+react@19.2.17_react@19.2.7_/node_modules/jotai-family/dist/atomFamily.js
+function atomFamily(initializeAtom, areEqual) {
+	let shouldRemove = null;
+	const atoms = /* @__PURE__ */ new Map();
+	const listeners = /* @__PURE__ */ new Set();
+	function createAtom(param) {
+		let item;
+		if (areEqual === void 0) item = atoms.get(param);
+		else for (const [key, value] of atoms) if (areEqual(key, param)) {
+			item = value;
+			break;
+		}
+		if (item !== void 0) {
+			if (shouldRemove?.(item[1], param)) createAtom.remove(param);
+			else return item[0];
+		}
+		const newAtom = initializeAtom(param);
+		atoms.set(param, [newAtom, Date.now()]);
+		notifyListeners("CREATE", param, newAtom);
+		return newAtom;
+	}
+	function notifyListeners(type, param, atom) {
+		for (const listener of listeners) listener({
+			type,
+			param,
+			atom
+		});
+	}
+	createAtom.unstable_listen = (callback) => {
+		listeners.add(callback);
+		return () => {
+			listeners.delete(callback);
+		};
+	};
+	createAtom.getParams = () => atoms.keys();
+	createAtom.remove = (param) => {
+		if (areEqual === void 0) {
+			if (!atoms.has(param)) return;
+			const [atom] = atoms.get(param);
+			atoms.delete(param);
+			notifyListeners("REMOVE", param, atom);
+		} else for (const [key, [atom]] of atoms) if (areEqual(key, param)) {
+			atoms.delete(key);
+			notifyListeners("REMOVE", key, atom);
+			break;
+		}
+	};
+	createAtom.setShouldRemove = (fn) => {
+		shouldRemove = fn;
+		if (!shouldRemove) return;
+		for (const [key, [atom, createdAt]] of atoms) if (shouldRemove(createdAt, key)) {
+			atoms.delete(key);
+			notifyListeners("REMOVE", key, atom);
+		}
+	};
+	return createAtom;
+}
+atomFamily((_workCanvasId) => atom(false));
 //#endregion
 //#region node_modules/.pnpm/jotai@2.20.2_@babel+core@7.29.7_@babel+template@7.29.7_@types+react@19.2.17_react@19.2.7/node_modules/jotai/esm/vanilla/utils.mjs
 var RESET = /* @__PURE__ */ Symbol("");
@@ -71046,64 +71862,6 @@ function atomWithStorage(key, initialValue, storage = defaultStorage, options) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/jotai-family@1.1.0_jotai@2.20.2_@babel+core@7.29.7_@babel+template@7.29.7_@types+react@19.2.17_react@19.2.7_/node_modules/jotai-family/dist/atomFamily.js
-function atomFamily(initializeAtom, areEqual) {
-	let shouldRemove = null;
-	const atoms = /* @__PURE__ */ new Map();
-	const listeners = /* @__PURE__ */ new Set();
-	function createAtom(param) {
-		let item;
-		if (areEqual === void 0) item = atoms.get(param);
-		else for (const [key, value] of atoms) if (areEqual(key, param)) {
-			item = value;
-			break;
-		}
-		if (item !== void 0) {
-			if (shouldRemove?.(item[1], param)) createAtom.remove(param);
-			else return item[0];
-		}
-		const newAtom = initializeAtom(param);
-		atoms.set(param, [newAtom, Date.now()]);
-		notifyListeners("CREATE", param, newAtom);
-		return newAtom;
-	}
-	function notifyListeners(type, param, atom) {
-		for (const listener of listeners) listener({
-			type,
-			param,
-			atom
-		});
-	}
-	createAtom.unstable_listen = (callback) => {
-		listeners.add(callback);
-		return () => {
-			listeners.delete(callback);
-		};
-	};
-	createAtom.getParams = () => atoms.keys();
-	createAtom.remove = (param) => {
-		if (areEqual === void 0) {
-			if (!atoms.has(param)) return;
-			const [atom] = atoms.get(param);
-			atoms.delete(param);
-			notifyListeners("REMOVE", param, atom);
-		} else for (const [key, [atom]] of atoms) if (areEqual(key, param)) {
-			atoms.delete(key);
-			notifyListeners("REMOVE", key, atom);
-			break;
-		}
-	};
-	createAtom.setShouldRemove = (fn) => {
-		shouldRemove = fn;
-		if (!shouldRemove) return;
-		for (const [key, [atom, createdAt]] of atoms) if (shouldRemove(createdAt, key)) {
-			atoms.delete(key);
-			notifyListeners("REMOVE", key, atom);
-		}
-	};
-	return createAtom;
-}
-//#endregion
 //#region src/front/jup/Map/jotai/atomFamilyWithStorage.ts
 /**
 * Legacy localStorage key shape (ex-Jotai `atomFamily` + `localStorageEffect`):
@@ -71169,11 +71927,16 @@ function atomFamilyWithStorage(persistKey, initialValue, options) {
 atomFamilyWithStorage("enableHoverPathfindingAtomFamily", false);
 //#endregion
 //#region src/front/jup/Components/Tooltips/HelpTooltip.tsx
+var _jsxFileName$18 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/front/jup/Components/Tooltips/HelpTooltip.tsx";
 /** Rich help tooltips: transparent MUI shell + themed Paper body (see createSurfyMuiTheme). */
-var HelpTooltipStyled$1 = styled(({ className, ...props }) => /* @__PURE__ */ jsx(Tooltip, {
+var HelpTooltipStyled$1 = styled(({ className, ...props }) => /* @__PURE__ */ jsxDEV(Tooltip, {
 	...props,
 	classes: { popper: className }
-}))(({ theme }) => ({ [`& .${tooltipClasses.tooltip}`]: {
+}, void 0, false, {
+	fileName: _jsxFileName$18,
+	lineNumber: 15,
+	columnNumber: 5
+}, void 0))(({ theme }) => ({ [`& .${tooltipClasses.tooltip}`]: {
 	backgroundColor: "transparent",
 	padding: 0,
 	maxWidth: 540,
@@ -71197,7 +71960,7 @@ function needsTooltipWrapper(children) {
 }
 function wrapTooltipChild(children) {
 	if (!needsTooltipWrapper(children)) return children;
-	return /* @__PURE__ */ jsx("span", {
+	return /* @__PURE__ */ jsxDEV("span", {
 		style: {
 			display: "inline-flex",
 			alignSelf: "stretch",
@@ -71205,13 +71968,17 @@ function wrapTooltipChild(children) {
 			alignItems: "center"
 		},
 		children
-	});
+	}, void 0, false, {
+		fileName: _jsxFileName$18,
+		lineNumber: 50,
+		columnNumber: 9
+	}, this);
 }
 function HelpTooltip(props) {
 	const { title, children, slotProps, ...rest } = props;
 	const portalContainer = useTooltipPortalContainer();
 	if (!title) return children;
-	const content = /* @__PURE__ */ jsx(PaperFrame, {
+	const content = /* @__PURE__ */ jsxDEV(PaperFrame, {
 		elevation: 4,
 		sx: (theme) => {
 			const tipOverride = theme.components?.MuiTooltip?.styleOverrides?.tooltip;
@@ -71227,8 +71994,12 @@ function HelpTooltip(props) {
 			};
 		},
 		children: title
-	});
-	return /* @__PURE__ */ jsx(HelpTooltipStyled$1, {
+	}, void 0, false, {
+		fileName: _jsxFileName$18,
+		lineNumber: 72,
+		columnNumber: 9
+	}, this);
+	return /* @__PURE__ */ jsxDEV(HelpTooltipStyled$1, {
 		slots: { transition: Fade },
 		disableFocusListener: true,
 		disableInteractive: true,
@@ -71242,7 +72013,11 @@ function HelpTooltip(props) {
 		...rest,
 		title: content,
 		children: wrapTooltipChild(children)
-	});
+	}, void 0, false, {
+		fileName: _jsxFileName$18,
+		lineNumber: 96,
+		columnNumber: 9
+	}, this);
 }
 //#endregion
 //#region src/front/jup/Entities/ViewTabs/helper.ts
@@ -71271,7 +72046,7 @@ function getIndexViewPathIncludingDataQuality(objectTypeName, view) {
 	return null;
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/router/url.js
+//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/development/lib/router/url.js
 /**
 * react-router v8.3.0
 *
@@ -71288,7 +72063,7 @@ function normalizeProtocolRelativeUrl(url, protocol) {
 	return protocol + url.replace(/\\/g, "/");
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/router/history.js
+//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/development/lib/router/history.js
 /**
 * react-router v8.3.0
 *
@@ -71349,7 +72124,7 @@ function parsePath(path) {
 	return parsedPath;
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/router/utils.js
+//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/development/lib/router/utils.js
 /**
 * react-router v8.3.0
 *
@@ -71762,7 +72537,7 @@ function parseToInfo(_to, basename) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/router/router.js
+//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/development/lib/router/router.js
 /**
 * react-router v8.3.0
 *
@@ -71802,7 +72577,7 @@ function hasInvalidProtocol(location) {
 	}
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/context.js
+//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/development/lib/context.js
 /**
 * react-router v8.3.0
 *
@@ -71840,7 +72615,7 @@ RouteContext.displayName = "Route";
 var RouteErrorContext = React$1.createContext(null);
 RouteErrorContext.displayName = "RouteError";
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/errors.js
+//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/development/lib/errors.js
 /**
 * react-router v8.3.0
 *
@@ -71867,7 +72642,7 @@ function decodeRouteErrorResponseDigest(digest) {
 	} catch {}
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/hooks.js
+//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/development/lib/hooks.js
 /**
 * react-router v8.3.0
 *
@@ -72178,9 +72953,13 @@ function useRoutesImpl(routes, locationArg, dataRouterOpts) {
 	let { matches: parentMatches } = React$1.useContext(RouteContext);
 	let routeMatch = parentMatches[parentMatches.length - 1];
 	let parentParams = routeMatch ? routeMatch.params : {};
-	routeMatch && routeMatch.pathname;
+	let parentPathname = routeMatch ? routeMatch.pathname : "/";
 	let parentPathnameBase = routeMatch ? routeMatch.pathnameBase : "/";
-	routeMatch && routeMatch.route;
+	let parentRoute = routeMatch && routeMatch.route;
+	{
+		let parentPath = parentRoute && parentRoute.path || "";
+		warningOnce(parentPathname, !parentRoute || parentPath.endsWith("*") || parentPath.endsWith("*?"), `You rendered descendant <Routes> (or called \`useRoutes()\`) at "${parentPathname}" (under <Route path="${parentPath}">) but the parent route path has no trailing "*". This means if you navigate deeper, the parent won't match anymore and therefore the child routes will never render.\n\nPlease change the parent <Route path="${parentPath}"> to <Route path="${parentPath === "/" ? "*" : `${parentPath}/*`}">.`);
+	}
 	let locationFromContext = useLocation();
 	let location;
 	if (locationArg) {
@@ -72195,6 +72974,8 @@ function useRoutesImpl(routes, locationArg, dataRouterOpts) {
 		remainingPathname = "/" + pathname.replace(/^\//, "").split("/").slice(parentSegments.length).join("/");
 	}
 	let matches = dataRouterOpts && dataRouterOpts.state.matches.length ? dataRouterOpts.state.matches.map((m) => Object.assign(m, { route: dataRouterOpts.manifest[m.route.id] || m.route })) : matchRoutes(routes, { pathname: remainingPathname });
+	warning$3(parentRoute || matches != null, `No routes matched location "${location.pathname}${location.search}${location.hash}" `);
+	warning$3(matches == null || matches[matches.length - 1].route.element !== void 0 || matches[matches.length - 1].route.Component !== void 0 || matches[matches.length - 1].route.lazy !== void 0, `Matched leaf route at location "${location.pathname}${location.search}${location.hash}" does not have an element or Component. This means it will render an <Outlet /> with a null value by default resulting in an "empty" page.`);
 	let renderedMatches = _renderMatches(matches && matches.map((match) => Object.assign({}, match, {
 		params: Object.assign({}, parentParams, match.params),
 		pathname: joinPaths([parentPathnameBase, navigator.encodeLocation ? navigator.encodeLocation(match.pathname.replace(/%/g, "%25").replace(/\?/g, "%3F").replace(/#/g, "%23")).pathname : match.pathname]),
@@ -72218,10 +72999,19 @@ function DefaultErrorComponent() {
 	let error = useRouteError();
 	let message = isRouteErrorResponse(error) ? `${error.status} ${error.statusText}` : error instanceof Error ? error.message : JSON.stringify(error);
 	let stack = error instanceof Error ? error.stack : null;
-	return /* @__PURE__ */ React$1.createElement(React$1.Fragment, null, /* @__PURE__ */ React$1.createElement("h2", null, "Unexpected Application Error!"), /* @__PURE__ */ React$1.createElement("h3", { style: { fontStyle: "italic" } }, message), stack ? /* @__PURE__ */ React$1.createElement("pre", { style: {
+	let lightgrey = "rgba(200,200,200, 0.5)";
+	let preStyles = {
 		padding: "0.5rem",
-		backgroundColor: "rgba(200,200,200, 0.5)"
-	} }, stack) : null, null);
+		backgroundColor: lightgrey
+	};
+	let codeStyles = {
+		padding: "2px 4px",
+		backgroundColor: lightgrey
+	};
+	let devInfo = null;
+	console.error("Error handled by React Router default ErrorBoundary:", error);
+	devInfo = /* @__PURE__ */ React$1.createElement(React$1.Fragment, null, /* @__PURE__ */ React$1.createElement("p", null, "💿 Hey developer 👋"), /* @__PURE__ */ React$1.createElement("p", null, "You can provide a way better UX than this when your app throws errors by providing your own ", /* @__PURE__ */ React$1.createElement("code", { style: codeStyles }, "ErrorBoundary"), " or", " ", /* @__PURE__ */ React$1.createElement("code", { style: codeStyles }, "errorElement"), " prop on your route."));
+	return /* @__PURE__ */ React$1.createElement(React$1.Fragment, null, /* @__PURE__ */ React$1.createElement("h2", null, "Unexpected Application Error!"), /* @__PURE__ */ React$1.createElement("h3", { style: { fontStyle: "italic" } }, message), stack ? /* @__PURE__ */ React$1.createElement("pre", { style: preStyles }, stack) : null, devInfo);
 }
 var defaultErrorElement = /* @__PURE__ */ React$1.createElement(DefaultErrorComponent, null);
 var RenderErrorBoundary = class extends React$1.Component {
@@ -72634,7 +73424,7 @@ function Router({ basename: basenameProp = "/", children = null, location: locat
 }
 React$1.Component;
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/dom/dom.js
+//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/development/lib/dom/dom.js
 /**
 * react-router v8.3.0
 *
@@ -72734,7 +73524,7 @@ function getFormSubmissionInfo(target, basename) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/dom/ssr/invariant.js
+//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/development/lib/dom/ssr/invariant.js
 /**
 * react-router v8.3.0
 *
@@ -72749,7 +73539,7 @@ function invariant(value, message) {
 	if (value === false || value === null || typeof value === "undefined") throw new Error(message);
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/dom/ssr/markup.js
+//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/development/lib/dom/ssr/markup.js
 /**
 * react-router v8.3.0
 *
@@ -72772,7 +73562,7 @@ function escapeHtml(html) {
 	return html.replace(ESCAPE_REGEX, (match) => ESCAPE_LOOKUP[match]);
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/dom/ssr/single-fetch.js
+//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/development/lib/dom/ssr/single-fetch.js
 /**
 * react-router v8.3.0
 *
@@ -72790,7 +73580,7 @@ function singleFetchUrl(reqUrl, extension) {
 	return url;
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/dom/ssr/routeModules.js
+//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/development/lib/dom/ssr/routeModules.js
 /**
 * react-router v8.3.0
 *
@@ -72820,7 +73610,7 @@ async function loadRouteModule(route, routeModulesCache) {
 	}
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/dom/ssr/links.js
+//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/development/lib/dom/ssr/links.js
 /**
 * react-router v8.3.0
 *
@@ -72921,7 +73711,7 @@ function dedupeLinkDescriptors(descriptors, preloads) {
 	}, []);
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/dom/ssr/components.js
+//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/development/lib/dom/ssr/components.js
 /**
 * react-router v8.3.0
 *
@@ -73180,7 +73970,7 @@ function mergeRefs(...refs) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/dom/lib.js
+//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/development/lib/dom/lib.js
 /**
 * react-router v8.3.0
 *
@@ -81465,7 +82255,7 @@ var init_targeting_factory = __esmMin((() => {
 }));
 //#endregion
 //#region node_modules/.pnpm/@amplitude+targeting@0.3.10/node_modules/@amplitude/targeting/lib/esm/index.js
-var esm_exports$1 = /* @__PURE__ */ __exportAll({ evaluateTargeting: () => evaluateTargeting });
+var esm_exports = /* @__PURE__ */ __exportAll({ evaluateTargeting: () => evaluateTargeting });
 var evaluateTargeting;
 var init_esm = __esmMin((() => {
 	init_targeting_factory();
@@ -81504,7 +82294,7 @@ var evaluateTargetingAndStore = function(_a) {
 						,
 						7
 					]);
-					return [4, Promise.resolve().then(() => (init_esm(), esm_exports$1))];
+					return [4, Promise.resolve().then(() => (init_esm(), esm_exports))];
 				case 4:
 					evaluateTargetingPackage = _c.sent().evaluateTargeting;
 					params = __assign$2(__assign$2({}, targetingParams), {
@@ -102931,7 +103721,7 @@ function url(uri, path = "", loc) {
 	return obj;
 }
 //#endregion
-//#region node_modules/.pnpm/socket.io-parser@4.2.7/node_modules/socket.io-parser/build/esm/is-binary.js
+//#region node_modules/.pnpm/socket.io-parser@4.2.7/node_modules/socket.io-parser/build/esm-debug/is-binary.js
 var withNativeArrayBuffer = typeof ArrayBuffer === "function";
 var isView = (obj) => {
 	return typeof ArrayBuffer.isView === "function" ? ArrayBuffer.isView(obj) : obj.buffer instanceof ArrayBuffer;
@@ -102959,7 +103749,7 @@ function hasBinary(obj, toJSON) {
 	return false;
 }
 //#endregion
-//#region node_modules/.pnpm/socket.io-parser@4.2.7/node_modules/socket.io-parser/build/esm/binary.js
+//#region node_modules/.pnpm/socket.io-parser@4.2.7/node_modules/socket.io-parser/build/esm-debug/binary.js
 /**
 * Replaces every Buffer | ArrayBuffer | Blob | File in packet with a numbered placeholder.
 *
@@ -103024,14 +103814,532 @@ function _reconstructPacket(data, buffers) {
 	return data;
 }
 //#endregion
-//#region node_modules/.pnpm/socket.io-parser@4.2.7/node_modules/socket.io-parser/build/esm/index.js
-var esm_exports = /* @__PURE__ */ __exportAll({
+//#region node_modules/.pnpm/ms@2.1.3/node_modules/ms/index.js
+var require_ms = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+	/**
+	* Helpers.
+	*/
+	var s = 1e3;
+	var m = s * 60;
+	var h = m * 60;
+	var d = h * 24;
+	var w = d * 7;
+	var y = d * 365.25;
+	/**
+	* Parse or format the given `val`.
+	*
+	* Options:
+	*
+	*  - `long` verbose formatting [false]
+	*
+	* @param {String|Number} val
+	* @param {Object} [options]
+	* @throws {Error} throw an error if val is not a non-empty string or a number
+	* @return {String|Number}
+	* @api public
+	*/
+	module.exports = function(val, options) {
+		options = options || {};
+		var type = typeof val;
+		if (type === "string" && val.length > 0) return parse(val);
+		else if (type === "number" && isFinite(val)) return options.long ? fmtLong(val) : fmtShort(val);
+		throw new Error("val is not a non-empty string or a valid number. val=" + JSON.stringify(val));
+	};
+	/**
+	* Parse the given `str` and return milliseconds.
+	*
+	* @param {String} str
+	* @return {Number}
+	* @api private
+	*/
+	function parse(str) {
+		str = String(str);
+		if (str.length > 100) return;
+		var match = /^(-?(?:\d+)?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|weeks?|w|years?|yrs?|y)?$/i.exec(str);
+		if (!match) return;
+		var n = parseFloat(match[1]);
+		switch ((match[2] || "ms").toLowerCase()) {
+			case "years":
+			case "year":
+			case "yrs":
+			case "yr":
+			case "y": return n * y;
+			case "weeks":
+			case "week":
+			case "w": return n * w;
+			case "days":
+			case "day":
+			case "d": return n * d;
+			case "hours":
+			case "hour":
+			case "hrs":
+			case "hr":
+			case "h": return n * h;
+			case "minutes":
+			case "minute":
+			case "mins":
+			case "min":
+			case "m": return n * m;
+			case "seconds":
+			case "second":
+			case "secs":
+			case "sec":
+			case "s": return n * s;
+			case "milliseconds":
+			case "millisecond":
+			case "msecs":
+			case "msec":
+			case "ms": return n;
+			default: return;
+		}
+	}
+	/**
+	* Short format for `ms`.
+	*
+	* @param {Number} ms
+	* @return {String}
+	* @api private
+	*/
+	function fmtShort(ms) {
+		var msAbs = Math.abs(ms);
+		if (msAbs >= d) return Math.round(ms / d) + "d";
+		if (msAbs >= h) return Math.round(ms / h) + "h";
+		if (msAbs >= m) return Math.round(ms / m) + "m";
+		if (msAbs >= s) return Math.round(ms / s) + "s";
+		return ms + "ms";
+	}
+	/**
+	* Long format for `ms`.
+	*
+	* @param {Number} ms
+	* @return {String}
+	* @api private
+	*/
+	function fmtLong(ms) {
+		var msAbs = Math.abs(ms);
+		if (msAbs >= d) return plural(ms, msAbs, d, "day");
+		if (msAbs >= h) return plural(ms, msAbs, h, "hour");
+		if (msAbs >= m) return plural(ms, msAbs, m, "minute");
+		if (msAbs >= s) return plural(ms, msAbs, s, "second");
+		return ms + " ms";
+	}
+	/**
+	* Pluralization helper.
+	*/
+	function plural(ms, msAbs, n, name) {
+		var isPlural = msAbs >= n * 1.5;
+		return Math.round(ms / n) + " " + name + (isPlural ? "s" : "");
+	}
+}));
+//#endregion
+//#region node_modules/.pnpm/debug@4.4.3_supports-color@5.5.0/node_modules/debug/src/common.js
+var require_common = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+	/**
+	* This is the common logic for both the Node.js and web browser
+	* implementations of `debug()`.
+	*/
+	function setup(env) {
+		createDebug.debug = createDebug;
+		createDebug.default = createDebug;
+		createDebug.coerce = coerce;
+		createDebug.disable = disable;
+		createDebug.enable = enable;
+		createDebug.enabled = enabled;
+		createDebug.humanize = require_ms();
+		createDebug.destroy = destroy;
+		Object.keys(env).forEach((key) => {
+			createDebug[key] = env[key];
+		});
+		/**
+		* The currently active debug mode names, and names to skip.
+		*/
+		createDebug.names = [];
+		createDebug.skips = [];
+		/**
+		* Map of special "%n" handling functions, for the debug "format" argument.
+		*
+		* Valid key names are a single, lower or upper-case letter, i.e. "n" and "N".
+		*/
+		createDebug.formatters = {};
+		/**
+		* Selects a color for a debug namespace
+		* @param {String} namespace The namespace string for the debug instance to be colored
+		* @return {Number|String} An ANSI color code for the given namespace
+		* @api private
+		*/
+		function selectColor(namespace) {
+			let hash = 0;
+			for (let i = 0; i < namespace.length; i++) {
+				hash = (hash << 5) - hash + namespace.charCodeAt(i);
+				hash |= 0;
+			}
+			return createDebug.colors[Math.abs(hash) % createDebug.colors.length];
+		}
+		createDebug.selectColor = selectColor;
+		/**
+		* Create a debugger with the given `namespace`.
+		*
+		* @param {String} namespace
+		* @return {Function}
+		* @api public
+		*/
+		function createDebug(namespace) {
+			let prevTime;
+			let enableOverride = null;
+			let namespacesCache;
+			let enabledCache;
+			function debug(...args) {
+				if (!debug.enabled) return;
+				const self = debug;
+				const curr = Number(/* @__PURE__ */ new Date());
+				self.diff = curr - (prevTime || curr);
+				self.prev = prevTime;
+				self.curr = curr;
+				prevTime = curr;
+				args[0] = createDebug.coerce(args[0]);
+				if (typeof args[0] !== "string") args.unshift("%O");
+				let index = 0;
+				args[0] = args[0].replace(/%([a-zA-Z%])/g, (match, format) => {
+					if (match === "%%") return "%";
+					index++;
+					const formatter = createDebug.formatters[format];
+					if (typeof formatter === "function") {
+						const val = args[index];
+						match = formatter.call(self, val);
+						args.splice(index, 1);
+						index--;
+					}
+					return match;
+				});
+				createDebug.formatArgs.call(self, args);
+				(self.log || createDebug.log).apply(self, args);
+			}
+			debug.namespace = namespace;
+			debug.useColors = createDebug.useColors();
+			debug.color = createDebug.selectColor(namespace);
+			debug.extend = extend;
+			debug.destroy = createDebug.destroy;
+			Object.defineProperty(debug, "enabled", {
+				enumerable: true,
+				configurable: false,
+				get: () => {
+					if (enableOverride !== null) return enableOverride;
+					if (namespacesCache !== createDebug.namespaces) {
+						namespacesCache = createDebug.namespaces;
+						enabledCache = createDebug.enabled(namespace);
+					}
+					return enabledCache;
+				},
+				set: (v) => {
+					enableOverride = v;
+				}
+			});
+			if (typeof createDebug.init === "function") createDebug.init(debug);
+			return debug;
+		}
+		function extend(namespace, delimiter) {
+			const newDebug = createDebug(this.namespace + (typeof delimiter === "undefined" ? ":" : delimiter) + namespace);
+			newDebug.log = this.log;
+			return newDebug;
+		}
+		/**
+		* Enables a debug mode by namespaces. This can include modes
+		* separated by a colon and wildcards.
+		*
+		* @param {String} namespaces
+		* @api public
+		*/
+		function enable(namespaces) {
+			createDebug.save(namespaces);
+			createDebug.namespaces = namespaces;
+			createDebug.names = [];
+			createDebug.skips = [];
+			const split = (typeof namespaces === "string" ? namespaces : "").trim().replace(/\s+/g, ",").split(",").filter(Boolean);
+			for (const ns of split) if (ns[0] === "-") createDebug.skips.push(ns.slice(1));
+			else createDebug.names.push(ns);
+		}
+		/**
+		* Checks if the given string matches a namespace template, honoring
+		* asterisks as wildcards.
+		*
+		* @param {String} search
+		* @param {String} template
+		* @return {Boolean}
+		*/
+		function matchesTemplate(search, template) {
+			let searchIndex = 0;
+			let templateIndex = 0;
+			let starIndex = -1;
+			let matchIndex = 0;
+			while (searchIndex < search.length) if (templateIndex < template.length && (template[templateIndex] === search[searchIndex] || template[templateIndex] === "*")) {
+				if (template[templateIndex] === "*") {
+					starIndex = templateIndex;
+					matchIndex = searchIndex;
+					templateIndex++;
+				} else {
+					searchIndex++;
+					templateIndex++;
+				}
+			} else if (starIndex !== -1) {
+				templateIndex = starIndex + 1;
+				matchIndex++;
+				searchIndex = matchIndex;
+			} else return false;
+			while (templateIndex < template.length && template[templateIndex] === "*") templateIndex++;
+			return templateIndex === template.length;
+		}
+		/**
+		* Disable debug output.
+		*
+		* @return {String} namespaces
+		* @api public
+		*/
+		function disable() {
+			const namespaces = [...createDebug.names, ...createDebug.skips.map((namespace) => "-" + namespace)].join(",");
+			createDebug.enable("");
+			return namespaces;
+		}
+		/**
+		* Returns true if the given mode name is enabled, false otherwise.
+		*
+		* @param {String} name
+		* @return {Boolean}
+		* @api public
+		*/
+		function enabled(name) {
+			for (const skip of createDebug.skips) if (matchesTemplate(name, skip)) return false;
+			for (const ns of createDebug.names) if (matchesTemplate(name, ns)) return true;
+			return false;
+		}
+		/**
+		* Coerce `val`.
+		*
+		* @param {Mixed} val
+		* @return {Mixed}
+		* @api private
+		*/
+		function coerce(val) {
+			if (val instanceof Error) return val.stack || val.message;
+			return val;
+		}
+		/**
+		* XXX DO NOT USE. This is a temporary stub function.
+		* XXX It WILL be removed in the next major release.
+		*/
+		function destroy() {
+			console.warn("Instance method `debug.destroy()` is deprecated and no longer does anything. It will be removed in the next major version of `debug`.");
+		}
+		createDebug.enable(createDebug.load());
+		return createDebug;
+	}
+	module.exports = setup;
+}));
+//#endregion
+//#region node_modules/.pnpm/debug@4.4.3_supports-color@5.5.0/node_modules/debug/src/browser.js
+var require_browser = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+	/**
+	* This is the web browser implementation of `debug()`.
+	*/
+	exports.formatArgs = formatArgs;
+	exports.save = save;
+	exports.load = load;
+	exports.useColors = useColors;
+	exports.storage = localstorage();
+	exports.destroy = (() => {
+		let warned = false;
+		return () => {
+			if (!warned) {
+				warned = true;
+				console.warn("Instance method `debug.destroy()` is deprecated and no longer does anything. It will be removed in the next major version of `debug`.");
+			}
+		};
+	})();
+	/**
+	* Colors.
+	*/
+	exports.colors = [
+		"#0000CC",
+		"#0000FF",
+		"#0033CC",
+		"#0033FF",
+		"#0066CC",
+		"#0066FF",
+		"#0099CC",
+		"#0099FF",
+		"#00CC00",
+		"#00CC33",
+		"#00CC66",
+		"#00CC99",
+		"#00CCCC",
+		"#00CCFF",
+		"#3300CC",
+		"#3300FF",
+		"#3333CC",
+		"#3333FF",
+		"#3366CC",
+		"#3366FF",
+		"#3399CC",
+		"#3399FF",
+		"#33CC00",
+		"#33CC33",
+		"#33CC66",
+		"#33CC99",
+		"#33CCCC",
+		"#33CCFF",
+		"#6600CC",
+		"#6600FF",
+		"#6633CC",
+		"#6633FF",
+		"#66CC00",
+		"#66CC33",
+		"#9900CC",
+		"#9900FF",
+		"#9933CC",
+		"#9933FF",
+		"#99CC00",
+		"#99CC33",
+		"#CC0000",
+		"#CC0033",
+		"#CC0066",
+		"#CC0099",
+		"#CC00CC",
+		"#CC00FF",
+		"#CC3300",
+		"#CC3333",
+		"#CC3366",
+		"#CC3399",
+		"#CC33CC",
+		"#CC33FF",
+		"#CC6600",
+		"#CC6633",
+		"#CC9900",
+		"#CC9933",
+		"#CCCC00",
+		"#CCCC33",
+		"#FF0000",
+		"#FF0033",
+		"#FF0066",
+		"#FF0099",
+		"#FF00CC",
+		"#FF00FF",
+		"#FF3300",
+		"#FF3333",
+		"#FF3366",
+		"#FF3399",
+		"#FF33CC",
+		"#FF33FF",
+		"#FF6600",
+		"#FF6633",
+		"#FF9900",
+		"#FF9933",
+		"#FFCC00",
+		"#FFCC33"
+	];
+	/**
+	* Currently only WebKit-based Web Inspectors, Firefox >= v31,
+	* and the Firebug extension (any Firefox version) are known
+	* to support "%c" CSS customizations.
+	*
+	* TODO: add a `localStorage` variable to explicitly enable/disable colors
+	*/
+	function useColors() {
+		if (typeof window !== "undefined" && window.process && (window.process.type === "renderer" || window.process.__nwjs)) return true;
+		if (typeof navigator !== "undefined" && navigator.userAgent && navigator.userAgent.toLowerCase().match(/(edge|trident)\/(\d+)/)) return false;
+		let m;
+		return typeof document !== "undefined" && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance || typeof window !== "undefined" && window.console && (window.console.firebug || window.console.exception && window.console.table) || typeof navigator !== "undefined" && navigator.userAgent && (m = navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/)) && parseInt(m[1], 10) >= 31 || typeof navigator !== "undefined" && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/);
+	}
+	/**
+	* Colorize log arguments if enabled.
+	*
+	* @api public
+	*/
+	function formatArgs(args) {
+		args[0] = (this.useColors ? "%c" : "") + this.namespace + (this.useColors ? " %c" : " ") + args[0] + (this.useColors ? "%c " : " ") + "+" + module.exports.humanize(this.diff);
+		if (!this.useColors) return;
+		const c = "color: " + this.color;
+		args.splice(1, 0, c, "color: inherit");
+		let index = 0;
+		let lastC = 0;
+		args[0].replace(/%[a-zA-Z%]/g, (match) => {
+			if (match === "%%") return;
+			index++;
+			if (match === "%c") lastC = index;
+		});
+		args.splice(lastC, 0, c);
+	}
+	/**
+	* Invokes `console.debug()` when available.
+	* No-op when `console.debug` is not a "function".
+	* If `console.debug` is not available, falls back
+	* to `console.log`.
+	*
+	* @api public
+	*/
+	exports.log = console.debug || console.log || (() => {});
+	/**
+	* Save `namespaces`.
+	*
+	* @param {String} namespaces
+	* @api private
+	*/
+	function save(namespaces) {
+		try {
+			if (namespaces) exports.storage.setItem("debug", namespaces);
+			else exports.storage.removeItem("debug");
+		} catch (error) {}
+	}
+	/**
+	* Load `namespaces`.
+	*
+	* @return {String} returns the previously persisted debug modes
+	* @api private
+	*/
+	function load() {
+		let r;
+		try {
+			r = exports.storage.getItem("debug") || exports.storage.getItem("DEBUG");
+		} catch (error) {}
+		if (!r && typeof process !== "undefined" && "env" in process) r = process.env.DEBUG;
+		return r;
+	}
+	/**
+	* Localstorage attempts to return the localstorage.
+	*
+	* This is necessary because safari throws
+	* when a user disables cookies/localstorage
+	* and you attempt to access it.
+	*
+	* @return {LocalStorage}
+	* @api private
+	*/
+	function localstorage() {
+		try {
+			return localStorage;
+		} catch (error) {}
+	}
+	module.exports = require_common()(exports);
+	var { formatters } = module.exports;
+	/**
+	* Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
+	*/
+	formatters.j = function(v) {
+		try {
+			return JSON.stringify(v);
+		} catch (error) {
+			return "[UnexpectedJSONParseError]: " + error.message;
+		}
+	};
+}));
+//#endregion
+//#region node_modules/.pnpm/socket.io-parser@4.2.7/node_modules/socket.io-parser/build/esm-debug/index.js
+var esm_debug_exports = /* @__PURE__ */ __exportAll({
 	Decoder: () => Decoder,
 	Encoder: () => Encoder,
 	PacketType: () => PacketType,
 	isPacketValid: () => isPacketValid,
 	protocol: () => 5
 });
+var debug = (0, (/* @__PURE__ */ __toESM(require_browser())).default)("socket.io-parser");
 /**
 * These strings must not be used as event names, as they have a special meaning.
 */
@@ -103072,6 +104380,7 @@ var Encoder = class {
 	* @param {Object} obj - packet object
 	*/
 	encode(obj) {
+		debug("encoding packet %j", obj);
 		if (obj.type === PacketType.EVENT || obj.type === PacketType.ACK) {
 			if (hasBinary(obj)) return this.encodeAsBinary({
 				type: obj.type === PacketType.EVENT ? PacketType.BINARY_EVENT : PacketType.BINARY_ACK,
@@ -103091,6 +104400,7 @@ var Encoder = class {
 		if (obj.nsp && "/" !== obj.nsp) str += obj.nsp + ",";
 		if (null != obj.id) str += obj.id;
 		if (null != obj.data) str += JSON.stringify(obj.data, this.replacer);
+		debug("encoded %j as %s", obj, str);
 		return str;
 	}
 	/**
@@ -103194,6 +104504,7 @@ var Decoder = class Decoder extends Emitter {
 			if (Decoder.isPayloadValid(p.type, payload)) p.data = payload;
 			else throw new Error("invalid payload");
 		}
+		debug("decoded %s as %j", str, p);
 		return p;
 	}
 	tryParse(str) {
@@ -104178,7 +105489,7 @@ var Manager = class extends Emitter {
 		this.timeout(null == opts.timeout ? 2e4 : opts.timeout);
 		this._readyState = "closed";
 		this.uri = uri;
-		const _parser = opts.parser || esm_exports;
+		const _parser = opts.parser || esm_debug_exports;
 		this.encoder = new _parser.Encoder();
 		this.decoder = new _parser.Decoder();
 		this._autoConnect = opts.autoConnect !== false;
@@ -107729,9 +109040,6 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 		})();
 	});
 })))());
-function getTenant() {
-	return getTenantFromDocumentUrl();
-}
 function getTenantFromDocumentUrl() {
 	const location = getDocumentLocation();
 	if (location) return getTenantFromLocationPathname(location.pathname);
@@ -107746,7 +109054,7 @@ function getTenantFromLocationPathname(pathname) {
 function captureClientErrorInLogRocket(err) {
 	const { logRocket } = getPublicConfigurationFront();
 	if (logRocket) {
-		const options = { extra: { tenant: getTenant() ?? "no-url-tenant" } };
+		const options = { extra: { tenant: getTenantFromDocumentUrl() ?? "no-url-tenant" } };
 		import_build_umd.default.captureException(err, options);
 	}
 }
@@ -107807,6 +109115,8 @@ var routes = {
 	logEvent: "tracking/event",
 	userProperty: "tracking/userProperty"
 };
+atomFamily((_companyName) => atom(void 0));
+atom(null);
 //#endregion
 //#region src/front/Tracking/Amplitude/amplitude.ts
 function trackLogEvent(trackEvent) {
@@ -107827,10 +109137,11 @@ function trackLogEvent(trackEvent) {
 }
 //#endregion
 //#region src/front/surfy/GlobalSearch/Entities/JupLink.tsx
+var _jsxFileName$17 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/front/surfy/GlobalSearch/Entities/JupLink.tsx";
 function JupLink(props) {
 	const { children, track, to, helpTitle, ...otherProps } = props;
 	if (to) {
-		const link = /* @__PURE__ */ jsx(Link, {
+		const link = /* @__PURE__ */ jsxDEV(Link, {
 			onClick: () => {
 				if (track) trackLogEvent(track);
 			},
@@ -107838,19 +109149,28 @@ function JupLink(props) {
 			to,
 			...otherProps,
 			children
-		});
-		if (helpTitle) return /* @__PURE__ */ jsx(HelpTooltip, {
+		}, void 0, false, {
+			fileName: _jsxFileName$17,
+			lineNumber: 20,
+			columnNumber: 22
+		}, this);
+		if (helpTitle) return /* @__PURE__ */ jsxDEV(HelpTooltip, {
 			title: helpTitle,
 			children: link
-		});
+		}, void 0, false, {
+			fileName: _jsxFileName$17,
+			lineNumber: 26,
+			columnNumber: 20
+		}, this);
 		return link;
 	}
 	return children;
 }
 //#endregion
 //#region src/front/jup/Help/HelpViewLink/HelpViewLink.tsx
+var _jsxFileName$16 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/front/jup/Help/HelpViewLink/HelpViewLink.tsx";
 function HelpViewLinkError(props) {
-	return /* @__PURE__ */ jsxs("span", {
+	return /* @__PURE__ */ jsxDEV("span", {
 		style: {
 			color: "red",
 			fontWeight: "bold"
@@ -107860,14 +109180,22 @@ function HelpViewLinkError(props) {
 			props.message,
 			"]"
 		]
-	});
+	}, void 0, true, {
+		fileName: _jsxFileName$16,
+		lineNumber: 20,
+		columnNumber: 12
+	}, this);
 }
 function renderViewLabel(objectTypeName, viewName, isDefaultView) {
-	return /* @__PURE__ */ jsx(ObjectTypeViewLabel, {
+	return /* @__PURE__ */ jsxDEV(ObjectTypeViewLabel, {
 		objectTypeName,
 		viewName,
 		isDefaultView
-	});
+	}, void 0, false, {
+		fileName: _jsxFileName$16,
+		lineNumber: 29,
+		columnNumber: 9
+	}, this);
 }
 /**
 * Shared view reference for in-app help and surfy-help MDX adapters.
@@ -107876,14 +109204,22 @@ function renderViewLabel(objectTypeName, viewName, isDefaultView) {
 function HelpViewLink(props) {
 	const { code, linkTarget = "tooltip-only", externalHost = "app.surfy.pro", TooltipComponent = HelpTooltip } = props;
 	const [objectTypeName, viewName] = parseObjectTypeViewCode(code);
-	if (!getObjectTypeDefinitionByName(objectTypeName)) return /* @__PURE__ */ jsx(HelpViewLinkError, { message: `Object type not found ${objectTypeName}` });
+	if (!getObjectTypeDefinitionByName(objectTypeName)) return /* @__PURE__ */ jsxDEV(HelpViewLinkError, { message: `Object type not found ${objectTypeName}` }, void 0, false, {
+		fileName: _jsxFileName$16,
+		lineNumber: 53,
+		columnNumber: 16
+	}, this);
 	const view = getObjectTypeViewCoreByNameMandatory(objectTypeName, viewName);
 	const label = renderViewLabel(objectTypeName, viewName, view.isDefaultView === true);
-	const tooltipTitle = /* @__PURE__ */ jsx(HelpViewLinkTooltipContent, {
+	const tooltipTitle = /* @__PURE__ */ jsxDEV(HelpViewLinkTooltipContent, {
 		objectTypeName,
 		viewName,
 		view
-	});
+	}, void 0, false, {
+		fileName: _jsxFileName$16,
+		lineNumber: 59,
+		columnNumber: 9
+	}, this);
 	const trigger = resolveTrigger({
 		code,
 		linkTarget,
@@ -107893,42 +109229,63 @@ function HelpViewLink(props) {
 		view,
 		label
 	});
-	return /* @__PURE__ */ jsx(TooltipComponent, {
+	return /* @__PURE__ */ jsxDEV(TooltipComponent, {
 		title: tooltipTitle,
 		children: trigger
-	});
+	}, void 0, false, {
+		fileName: _jsxFileName$16,
+		lineNumber: 77,
+		columnNumber: 9
+	}, this);
 }
 function resolveTrigger(props) {
 	const { code, linkTarget, externalHost, objectTypeName, viewName, view, label } = props;
-	if (isSingleViewCore(objectTypeName, viewName) || linkTarget === "tooltip-only") return /* @__PURE__ */ jsx("span", {
+	if (isSingleViewCore(objectTypeName, viewName) || linkTarget === "tooltip-only") return /* @__PURE__ */ jsxDEV("span", {
 		style: {
 			cursor: "help",
 			fontWeight: "bold"
 		},
 		"data-help-view-link": code,
 		children: label
-	});
+	}, void 0, false, {
+		fileName: _jsxFileName$16,
+		lineNumber: 97,
+		columnNumber: 13
+	}, this);
 	const viewUrl = getIndexViewPathIncludingDataQuality(objectTypeName, view);
-	if (linkTarget === "in-app" && viewUrl) return /* @__PURE__ */ jsx(JupLink, {
+	if (linkTarget === "in-app" && viewUrl) return /* @__PURE__ */ jsxDEV(JupLink, {
 		to: viewUrl,
 		"data-help-view-link": code,
 		children: label
-	});
+	}, void 0, false, {
+		fileName: _jsxFileName$16,
+		lineNumber: 106,
+		columnNumber: 13
+	}, this);
 	const url = viewUrl ? `https://${externalHost}/?redirectToView=${encodeURIComponent(viewUrl)}` : "#";
-	return /* @__PURE__ */ jsx("a", {
+	return /* @__PURE__ */ jsxDEV("a", {
 		href: url,
 		target: "_blank",
 		rel: "noopener noreferrer",
 		"data-help-view-link": code,
 		children: label
-	});
+	}, void 0, false, {
+		fileName: _jsxFileName$16,
+		lineNumber: 116,
+		columnNumber: 9
+	}, this);
 }
 //#endregion
 //#region src/surfy-help/components/MetaModel/HelpTooltipStyled.tsx
-var HelpTooltipStyled = styled$1(({ className, ...props }) => /* @__PURE__ */ jsx(Tooltip, {
+var _jsxFileName$15 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/surfy-help/components/MetaModel/HelpTooltipStyled.tsx";
+var HelpTooltipStyled = styled$1(({ className, ...props }) => /* @__PURE__ */ jsxDEV(Tooltip, {
 	...props,
 	classes: { popper: className }
-}))(() => ({ [`& .${tooltipClasses.tooltip}`]: {
+}, void 0, false, {
+	fileName: _jsxFileName$15,
+	lineNumber: 5,
+	columnNumber: 5
+}, void 0))(() => ({ [`& .${tooltipClasses.tooltip}`]: {
 	backgroundColor: "transparent",
 	maxWidth: 600,
 	minWidth: 600,
@@ -107936,46 +109293,65 @@ var HelpTooltipStyled = styled$1(({ className, ...props }) => /* @__PURE__ */ js
 } }));
 //#endregion
 //#region src/surfy-help/views/SurfyHelpLinkToIndexView.tsx
+var _jsxFileName$14 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/surfy-help/views/SurfyHelpLinkToIndexView.tsx";
 /**
 * Docusaurus MDX adapter: index view link + tooltip, or single view via shared {@link HelpViewLink}.
 */
 function SurfyHelpLinkToIndexView(props) {
 	const { code, host } = props;
-	return /* @__PURE__ */ jsx(HelpViewLink, {
+	return /* @__PURE__ */ jsxDEV(HelpViewLink, {
 		code,
 		linkTarget: "external",
 		externalHost: host,
 		TooltipComponent: HelpTooltipStyled
-	});
+	}, void 0, false, {
+		fileName: _jsxFileName$14,
+		lineNumber: 17,
+		columnNumber: 9
+	}, this);
 }
 //#endregion
 //#region src/surfy-help/views/SurfyHelpLinkToSingleView.tsx
+var _jsxFileName$13 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/surfy-help/views/SurfyHelpLinkToSingleView.tsx";
 /**
 * Docusaurus MDX adapter: single (entity-scoped) view label + tooltip (no app link).
 */
 function SurfyHelpLinkToSingleView(props) {
-	return /* @__PURE__ */ jsx(HelpViewLink, {
+	return /* @__PURE__ */ jsxDEV(HelpViewLink, {
 		code: props.code,
 		linkTarget: "tooltip-only",
 		TooltipComponent: HelpTooltipStyled
-	});
+	}, void 0, false, {
+		fileName: _jsxFileName$13,
+		lineNumber: 14,
+		columnNumber: 9
+	}, this);
 }
 //#endregion
 //#region src/surfy-help/views/SurfyHelpStandaloneViewMenuBreadcrumb.tsx
+var _jsxFileName$12 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/surfy-help/views/SurfyHelpStandaloneViewMenuBreadcrumb.tsx";
 function SurfyHelpStandaloneViewMenuBreadcrumb(props) {
 	const { code } = props;
 	const [objectTypeName, viewName] = parseObjectTypeViewCode(code);
-	return /* @__PURE__ */ jsxs(Box$2, { children: ["Cliquer sur ", /* @__PURE__ */ jsx(HelpViewMenuPathBreadcrumb, {
+	return /* @__PURE__ */ jsxDEV(Box$2, { children: ["Cliquer sur ", /* @__PURE__ */ jsxDEV(HelpViewMenuPathBreadcrumb, {
 		objectTypeName,
 		viewName
-	})] });
+	}, void 0, false, {
+		fileName: _jsxFileName$12,
+		lineNumber: 11,
+		columnNumber: 21
+	}, this)] }, void 0, true, {
+		fileName: _jsxFileName$12,
+		lineNumber: 9,
+		columnNumber: 12
+	}, this);
 }
 //#endregion
 //#region src/version.json
 var version = {
 	"major": 3,
 	"minor": 5,
-	"build": 32
+	"build": 46
 };
 //#endregion
 //#region src/back/Tracking/version.ts
@@ -108919,7 +110295,7 @@ var jsonTranslationsFiles = {
 		"FieldTypeIcon.Remove": "Retirer l'icone",
 		"FieldTypeIconBadge.backgroundColor.description": "Couleur de fond de la bande verticale (dans le carré d'icône, à droite)",
 		"FieldTypeIconBadge.backgroundColor.label": "Couleur de fond",
-		"FieldTypeIconBadge.create.description": "Aucun badge n'est défini. Créez-en un pour afficher une bande texte verticale à droite, à l'intérieur du carré d'icône.",
+		"FieldTypeIconBadge.create.description": "Aucun badge n'est défini. Créez-en un pour afficher une bande texte verticale à droite, à l'intérieur de l'icône.",
 		"FieldTypeIconBadge.create.help": "Ouvre l'éditeur de badge (texte et couleurs)",
 		"FieldTypeIconBadge.create.label": "Créer un badge",
 		"FieldTypeIconBadge.preview.description": "Rendu live de l'icône de type d'objet (forme, fond, bordure, glyphe) avec la bande badge — même logique que sur le plan",
@@ -111447,6 +112823,8 @@ var jsonTranslationsFiles = {
 		"TenantOperations.ms-user-sync-bourbon.label": "Synchronisation des utilisateurs Microsoft",
 		"TenantOperations.ms-user-sync-thea.description": "Synchronise les utilisateurs depuis Microsoft",
 		"TenantOperations.ms-user-sync-thea.label": "Synchronisation des utilisateurs Microsoft",
+		"TenantOperations.ms-user-sync-tikehau.description": "Synchronise les utilisateurs depuis Microsoft Entra ID",
+		"TenantOperations.ms-user-sync-tikehau.label": "Synchronisation des utilisateurs Microsoft",
 		"TenantOperations.quadient-import-workday.label": "Synchronisation Workday (Quadient)",
 		"TenantOperations.sephora-sync-sap-success-factors.label": "Synchronisation MSC",
 		"TenantOperations.st-grenoble-import-hr-file.label": "Import du fichier RH",
@@ -111466,6 +112844,9 @@ var jsonTranslationsFiles = {
 		"ThemeModeSwitchMenuItem.dark.label": "Passer en mode lumineux",
 		"ThemeModeSwitchMenuItem.light.help": "Utiliser le mode sombre permet de travailler avec des couleurs sombre en fond pour moins se fatiguer les yeux",
 		"ThemeModeSwitchMenuItem.light.label": "Passer en mode sombre",
+		"TikehauMSUserSyncOperation.description": "Synchronisez les utilisateurs Entra ID avec les collaborateurs Surfy. Phase initiale : dump complet avec filtres Graph de base (comptes actifs, membres, licences). Les collaborateurs manquants sont proposés pour création par email.",
+		"TikehauMSUserSyncOperation.refresh": "Synchroniser les utilisateurs Microsoft",
+		"TikehauMSUserSyncOperation.title": "Synchronisation des utilisateurs Microsoft",
 		"TimeSlot.clickToBook": "Cliquer pour réserver le %{day} à %{time}",
 		"TimeSlot.pastDay": "Impossible de réserver : %{day} est déjà passé",
 		"TimeSlot.pastTime": "Impossible de réserver : l'heure %{time} est déjà passée",
@@ -111489,6 +112870,8 @@ var jsonTranslationsFiles = {
 		"ToggleEnableMissingFloors.label": "Afficher les étages fantômes",
 		"ToggleEnableRoomLabels.help": "Afficher les noms des espaces sous forme d'étiquettes sur la vue 3D",
 		"ToggleEnableRoomLabels.label": "Afficher les étiquettes des espaces",
+		"ToggleEnableStructureWalls.help": "Afficher l'empreinte de la structure du bâtiment dans la vue 3D. Non disponible en mode de murs Cuby.",
+		"ToggleEnableStructureWalls.label": "Afficher la structure du bâtiment",
 		"ToggleJupRoleObjectTypeCrudAsyncAction.help": "Mettre à jour la propriété (%{name})",
 		"ToggleWorkplaceFreeConditionTypeIconButton.and": "Voir les postes de travail libre pour au moins un des jours demandés",
 		"ToggleWorkplaceFreeConditionTypeIconButton.or": "Voir les postes de travail libre pour tous les jours demandés",
@@ -112716,7 +114099,7 @@ var jsonTranslationsFiles = {
 		"FieldTypeIcon.Remove": "Remove the icon",
 		"FieldTypeIconBadge.backgroundColor.description": "Background color of the vertical strip (in the icon square, on the right)",
 		"FieldTypeIconBadge.backgroundColor.label": "background color",
-		"FieldTypeIconBadge.create.description": "No badge is defined. Create one to display a vertical text strip on the right, inside the icon square.",
+		"FieldTypeIconBadge.create.description": "No badge is defined. Create one to display a vertical text bar on the right, inside the icon.",
 		"FieldTypeIconBadge.create.help": "Open the badge editor (text and colors)",
 		"FieldTypeIconBadge.create.label": "Create a badge",
 		"FieldTypeIconBadge.preview.description": "Live rendering of the object type icon (shape, background, border, glyph) with the badge strip — same logic as on the plan",
@@ -115244,6 +116627,8 @@ var jsonTranslationsFiles = {
 		"TenantOperations.ms-user-sync-bourbon.label": "Microsoft User Synchronization",
 		"TenantOperations.ms-user-sync-thea.description": "Synchronizes users from Microsoft",
 		"TenantOperations.ms-user-sync-thea.label": "Microsoft User Synchronization",
+		"TenantOperations.ms-user-sync-tikehau.description": "Synchronizes users from Microsoft Entra ID",
+		"TenantOperations.ms-user-sync-tikehau.label": "Microsoft users synchronization",
 		"TenantOperations.quadient-import-workday.label": "Workday sync (Quadient)",
 		"TenantOperations.sephora-sync-sap-success-factors.label": "MSC synchronization",
 		"TenantOperations.st-grenoble-import-hr-file.label": "Importing the HR file",
@@ -115263,6 +116648,9 @@ var jsonTranslationsFiles = {
 		"ThemeModeSwitchMenuItem.dark.label": "Switch to light mode",
 		"ThemeModeSwitchMenuItem.light.help": "Using dark mode allows you to work with dark colors in the background for less eye strain",
 		"ThemeModeSwitchMenuItem.light.label": "Switch to dark mode",
+		"TikehauMSUserSyncOperation.description": "Sync Entra ID users with Surfy collaborators. Initial phase: full dump with base Graph filters (enabled members with licenses). Missing collaborators are proposed for creation by email.",
+		"TikehauMSUserSyncOperation.refresh": "Sync Microsoft users",
+		"TikehauMSUserSyncOperation.title": "Microsoft users synchronization",
 		"TimeSlot.clickToBook": "Click to book on %{day} at %{time}",
 		"TimeSlot.pastDay": "Cannot book: %{day} has already passed",
 		"TimeSlot.pastTime": "Cannot book: %{time} has already passed",
@@ -115286,6 +116674,8 @@ var jsonTranslationsFiles = {
 		"ToggleEnableMissingFloors.label": "Show ghost floors",
 		"ToggleEnableRoomLabels.help": "Display the names of the spaces as labels on the 3D view",
 		"ToggleEnableRoomLabels.label": "Show space labels",
+		"ToggleEnableStructureWalls.help": "Display the building structure footprint in the 3D view. Not available in Cuby wall mode.",
+		"ToggleEnableStructureWalls.label": "Display the building structure",
 		"ToggleJupRoleObjectTypeCrudAsyncAction.help": "Update property ( %{name} )",
 		"ToggleWorkplaceFreeConditionTypeIconButton.and": "See free workstations for at least one of the requested days",
 		"ToggleWorkplaceFreeConditionTypeIconButton.or": "See free workstations for all requested days",
@@ -116513,7 +117903,7 @@ var jsonTranslationsFiles = {
 		"FieldTypeIcon.Remove": "Eliminar el ícono",
 		"FieldTypeIconBadge.backgroundColor.description": "Color de fondo de la franja vertical (en el cuadrado del icono, a la derecha)",
 		"FieldTypeIconBadge.backgroundColor.label": "color de fondo",
-		"FieldTypeIconBadge.create.description": "No se ha definido ninguna insignia. Crea una para mostrar una franja de texto vertical a la derecha, dentro del cuadrado del icono.",
+		"FieldTypeIconBadge.create.description": "No se ha definido ninguna insignia. Crea una para mostrar una barra de texto vertical a la derecha, dentro del icono.",
 		"FieldTypeIconBadge.create.help": "Abrir el editor de insignias (texto y colores)",
 		"FieldTypeIconBadge.create.label": "Crea una insignia",
 		"FieldTypeIconBadge.preview.description": "Representación en vivo del icono del tipo de objeto (forma, fondo, borde, glifo) con la tira de insignias: la misma lógica que en el plan.",
@@ -119041,6 +120431,8 @@ var jsonTranslationsFiles = {
 		"TenantOperations.ms-user-sync-bourbon.label": "Sincronización de usuarios de Microsoft",
 		"TenantOperations.ms-user-sync-thea.description": "Sincroniza usuarios de Microsoft",
 		"TenantOperations.ms-user-sync-thea.label": "Sincronización de usuarios de Microsoft",
+		"TenantOperations.ms-user-sync-tikehau.description": "Sincroniza los usuarios de Microsoft Entra ID.",
+		"TenantOperations.ms-user-sync-tikehau.label": "Sincronización de usuarios de Microsoft",
 		"TenantOperations.quadient-import-workday.label": "Sincronización de la jornada laboral (Quadient)",
 		"TenantOperations.sephora-sync-sap-success-factors.label": "sincronización MSC",
 		"TenantOperations.st-grenoble-import-hr-file.label": "Importando el archivo HR",
@@ -119060,6 +120452,9 @@ var jsonTranslationsFiles = {
 		"ThemeModeSwitchMenuItem.dark.label": "Cambiar al modo de luz",
 		"ThemeModeSwitchMenuItem.light.help": "El modo oscuro le permite trabajar con colores oscuros en el fondo para reducir la fatiga visual.",
 		"ThemeModeSwitchMenuItem.light.label": "Cambiar al modo oscuro",
+		"TikehauMSUserSyncOperation.description": "Sincroniza los usuarios de Entra ID con los colaboradores de Surfy. Fase inicial: volcado completo con filtros básicos de Graph (cuentas activas, miembros, licencias). Se sugiere la creación de los colaboradores faltantes mediante correo electrónico.",
+		"TikehauMSUserSyncOperation.refresh": "Sincronizar usuarios de Microsoft",
+		"TikehauMSUserSyncOperation.title": "Sincronización de usuarios de Microsoft",
 		"TimeSlot.clickToBook": "Haga clic para reservar %{day} a %{time}",
 		"TimeSlot.pastDay": "No se puede reservar: ya ha pasado %{day}",
 		"TimeSlot.pastTime": "No se puede reservar: el tiempo %{time} ya ha pasado",
@@ -119083,6 +120478,8 @@ var jsonTranslationsFiles = {
 		"ToggleEnableMissingFloors.label": "Mostrar pisos fantasma",
 		"ToggleEnableRoomLabels.help": "Muestra los nombres de los espacios como etiquetas en la vista 3D.",
 		"ToggleEnableRoomLabels.label": "Mostrar etiquetas de espacio",
+		"ToggleEnableStructureWalls.help": "Muestra la huella de la estructura del edificio en la vista 3D. No disponible en el modo de pared cúbica.",
+		"ToggleEnableStructureWalls.label": "Mostrar la estructura del edificio",
 		"ToggleJupRoleObjectTypeCrudAsyncAction.help": "Actualizar propiedad ( %{name} )",
 		"ToggleWorkplaceFreeConditionTypeIconButton.and": "Ver puestos de trabajo libres durante al menos uno de los días solicitados",
 		"ToggleWorkplaceFreeConditionTypeIconButton.or": "Ver estaciones de trabajo gratuitas para todos los días solicitados",
@@ -120310,7 +121707,7 @@ var jsonTranslationsFiles = {
 		"FieldTypeIcon.Remove": "rimuovi icona",
 		"FieldTypeIconBadge.backgroundColor.description": "Colore di sfondo della striscia verticale (nel riquadro dell'icona, a destra)",
 		"FieldTypeIconBadge.backgroundColor.label": "colore di sfondo",
-		"FieldTypeIconBadge.create.description": "Non è definito alcun badge. Creane uno per visualizzare una striscia di testo verticale a destra, all'interno del riquadro dell'icona.",
+		"FieldTypeIconBadge.create.description": "Non è definito alcun badge. Creane uno per visualizzare una barra di testo verticale a destra, all'interno dell'icona.",
 		"FieldTypeIconBadge.create.help": "Apri l'editor dei badge (testo e colori)",
 		"FieldTypeIconBadge.create.label": "Crea un badge",
 		"FieldTypeIconBadge.preview.description": "Visualizzazione in tempo reale dell'icona del tipo di oggetto (forma, sfondo, bordo, glifo) con la striscia del badge: stessa logica del progetto.",
@@ -122838,6 +124235,8 @@ var jsonTranslationsFiles = {
 		"TenantOperations.ms-user-sync-bourbon.label": "Sincronizzazione utente Microsoft",
 		"TenantOperations.ms-user-sync-thea.description": "Sincronizza gli utenti di Microsoft",
 		"TenantOperations.ms-user-sync-thea.label": "Sincronizzazione utente Microsoft",
+		"TenantOperations.ms-user-sync-tikehau.description": "Sincronizza gli utenti da Microsoft Entra ID",
+		"TenantOperations.ms-user-sync-tikehau.label": "Sincronizzazione utente Microsoft",
 		"TenantOperations.quadient-import-workday.label": "Sincronizzazione della giornata lavorativa (Quadrante)",
 		"TenantOperations.sephora-sync-sap-success-factors.label": "Sincronizzazione MSC",
 		"TenantOperations.st-grenoble-import-hr-file.label": "Importazione del file HR",
@@ -122857,6 +124256,9 @@ var jsonTranslationsFiles = {
 		"ThemeModeSwitchMenuItem.dark.label": "Passa alla modalità luminosa",
 		"ThemeModeSwitchMenuItem.light.help": "L'uso della modalità scura consente di lavorare con i colori scuri sullo sfondo per ridurre l'affaticamento degli occhi",
 		"ThemeModeSwitchMenuItem.light.label": "Passa alla modalità oscura",
+		"TikehauMSUserSyncOperation.description": "Sincronizza gli utenti di Entra ID con i collaboratori surfy. Fase iniziale: dump completo con filtri Graph di base (account attivi, membri, licenze). Ai collaboratori mancanti verrà suggerita la creazione tramite e-mail.",
+		"TikehauMSUserSyncOperation.refresh": "Sincronizza gli utenti Microsoft",
+		"TikehauMSUserSyncOperation.title": "Sincronizzazione utente Microsoft",
 		"TimeSlot.clickToBook": "Clicca per prenotare %{day} alle %{time}",
 		"TimeSlot.pastDay": "Impossibile prenotare: %{day} è già trascorso",
 		"TimeSlot.pastTime": "Impossibile prenotare: il tempo %{time} è già trascorso",
@@ -122880,6 +124282,8 @@ var jsonTranslationsFiles = {
 		"ToggleEnableMissingFloors.label": "Mostra pavimenti fantasma",
 		"ToggleEnableRoomLabels.help": "Visualizza i nomi degli spazi come etichette nella vista 3D",
 		"ToggleEnableRoomLabels.label": "Mostra etichette spaziali",
+		"ToggleEnableStructureWalls.help": "Visualizza l'ingombro della struttura dell'edificio nella vista 3D. Non disponibile nella modalità parete Cuby.",
+		"ToggleEnableStructureWalls.label": "Mostra la struttura dell'edificio",
 		"ToggleJupRoleObjectTypeCrudAsyncAction.help": "Aggiorna proprietà ( %{name} )",
 		"ToggleWorkplaceFreeConditionTypeIconButton.and": "Vedi le postazioni libere per almeno uno dei giorni richiesti",
 		"ToggleWorkplaceFreeConditionTypeIconButton.or": "Visualizza le postazioni libere per tutti i giorni richiesti",
@@ -124107,7 +125511,7 @@ var jsonTranslationsFiles = {
 		"FieldTypeIcon.Remove": "Pictogram verwijderen",
 		"FieldTypeIconBadge.backgroundColor.description": "Achtergrondkleur van de verticale strook (in het pictogramvierkant, rechts)",
 		"FieldTypeIconBadge.backgroundColor.label": "achtergrondkleur",
-		"FieldTypeIconBadge.create.description": "Er is geen badge gedefinieerd. Maak er een aan die een verticale tekststrook aan de rechterkant weergeeft, binnen het pictogramvierkant.",
+		"FieldTypeIconBadge.create.description": "Er is geen badge gedefinieerd. Maak er een aan die een verticale tekstbalk aan de rechterkant, binnen het pictogram, weergeeft.",
 		"FieldTypeIconBadge.create.help": "Open de badge-editor (tekst en kleuren)",
 		"FieldTypeIconBadge.create.label": "Maak een badge",
 		"FieldTypeIconBadge.preview.description": "Live weergave van het objecttype-icoon (vorm, achtergrond, rand, glyph) met de badge-strip — dezelfde logica als op het plan.",
@@ -126635,6 +128039,8 @@ var jsonTranslationsFiles = {
 		"TenantOperations.ms-user-sync-bourbon.label": "Microsoft-gebruikerssynchronisatie",
 		"TenantOperations.ms-user-sync-thea.description": "Synchroniseert gebruikers van Microsoft",
 		"TenantOperations.ms-user-sync-thea.label": "Microsoft-gebruikerssynchronisatie",
+		"TenantOperations.ms-user-sync-tikehau.description": "Synchroniseert gebruikers van Microsoft Entra ID.",
+		"TenantOperations.ms-user-sync-tikehau.label": "Microsoft-gebruikerssynchronisatie",
 		"TenantOperations.quadient-import-workday.label": "Workday-synchronisatie (Quadient)",
 		"TenantOperations.sephora-sync-sap-success-factors.label": "MSC-synchronisatie",
 		"TenantOperations.st-grenoble-import-hr-file.label": "Het RH-bestand importeren",
@@ -126654,6 +128060,9 @@ var jsonTranslationsFiles = {
 		"ThemeModeSwitchMenuItem.dark.label": "Schakel over naar de heldere modus",
 		"ThemeModeSwitchMenuItem.light.help": "Door de donkere modus te gebruiken, kunt u met donkere kleuren op de achtergrond werken om vermoeide ogen te verminderen.",
 		"ThemeModeSwitchMenuItem.light.label": "Schakel over naar de donkere modus",
+		"TikehauMSUserSyncOperation.description": "Synchroniseer Entra ID-gebruikers met Surfy-collaborateurs. Eerste fase: volledige dump met basis Graph-filters (actieve accounts, leden, licenties). Ontbrekende collaborateurs worden per e-mail voorgesteld om aan te maken.",
+		"TikehauMSUserSyncOperation.refresh": "Microsoft-gebruikers synchroniseren",
+		"TikehauMSUserSyncOperation.title": "Microsoft-gebruikerssynchronisatie",
 		"TimeSlot.clickToBook": "Klik om %{day} om %{time} te boeken",
 		"TimeSlot.pastDay": "Kan niet boeken: %{day} is al verstreken",
 		"TimeSlot.pastTime": "Kan niet boeken: tijd %{time} is al verstreken",
@@ -126677,6 +128086,8 @@ var jsonTranslationsFiles = {
 		"ToggleEnableMissingFloors.label": "Laat spookvloeren zien",
 		"ToggleEnableRoomLabels.help": "Geef de namen van de ruimtes weer als labels in de 3D-weergave",
 		"ToggleEnableRoomLabels.label": "Ruimtelabels weergeven",
+		"ToggleEnableStructureWalls.help": "Toon de plattegrond van de gebouwstructuur in de 3D-weergave. Niet beschikbaar in de Cuby-wandmodus.",
+		"ToggleEnableStructureWalls.label": "Toon de gebouwstructuur",
 		"ToggleJupRoleObjectTypeCrudAsyncAction.help": "Eigenschap bijwerken ( %{name} )",
 		"ToggleWorkplaceFreeConditionTypeIconButton.and": "Bekijk vrije werkplekken voor minimaal één van de aangevraagde dagen",
 		"ToggleWorkplaceFreeConditionTypeIconButton.or": "Bekijk vrije werkplekken voor alle aangevraagde dagen",
@@ -127053,12 +128464,17 @@ var I18NHelpContext = (props) => {
 };
 //#endregion
 //#region src/front/jup/Application/SetupI18nContext.tsx
+var _jsxFileName$11 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/front/jup/Application/SetupI18nContext.tsx";
 function SetupI18nContext(props) {
 	const { defaultLanguage, I18nContext } = props;
-	return /* @__PURE__ */ jsx(I18nContext, {
+	return /* @__PURE__ */ jsxDEV(I18nContext, {
 		defaultLanguage,
 		children: props.children
-	});
+	}, void 0, false, {
+		fileName: _jsxFileName$11,
+		lineNumber: 15,
+		columnNumber: 12
+	}, this);
 }
 //#endregion
 //#region src/back/ModelDefinitions/schema.helper.ts
@@ -127147,11 +128563,16 @@ function getPropertyTypeDescription(i18nApi, propertyType) {
 }
 //#endregion
 //#region src/front/jup/Entities/Entity/PropertyTypeDescription.tsx
+var _jsxFileName$10 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/front/jup/Entities/Entity/PropertyTypeDescription.tsx";
 function PropertyTypeDescription(props) {
 	const { propertyType } = props;
 	const i18n = useI18nApi();
 	const description = getPropertyTypeDescription(i18n, propertyType);
-	if (description) return /* @__PURE__ */ jsx("span", { children: description });
+	if (description) return /* @__PURE__ */ jsxDEV("span", { children: description }, void 0, false, {
+		fileName: _jsxFileName$10,
+		lineNumber: 14,
+		columnNumber: 16
+	}, this);
 	if (propertyType.association?.targetModelName) return getObjectTypeTranslatedDescription(i18n, propertyType.association?.targetModelName);
 	return null;
 }
@@ -127160,8 +128581,13 @@ function PropertyTypeDescription(props) {
 var NewReleases_default = createSvgIcon(/*#__PURE__*/ jsx("path", { d: "m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68zm-10 5h-2v-2h2zm0-4h-2V7h2z" }), "NewReleases");
 //#endregion
 //#region src/front/jup/Entities/Entity/PropertyTypeIcons/PropertyTypeMandatoryIcon.tsx
+var _jsxFileName$9 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/front/jup/Entities/Entity/PropertyTypeIcons/PropertyTypeMandatoryIcon.tsx";
 function PropertyTypeMandatoryIcon(props) {
-	return /* @__PURE__ */ jsx(NewReleases_default, { ...props });
+	return /* @__PURE__ */ jsxDEV(NewReleases_default, { ...props }, void 0, false, {
+		fileName: _jsxFileName$9,
+		lineNumber: 5,
+		columnNumber: 12
+	}, this);
 }
 //#endregion
 //#region src/front/jup/Entities/Modules/EntityModule/Components/plural.ts
@@ -127202,26 +128628,44 @@ function getPropertyTypeLabelWithTranslation(i18n, propertyType) {
 }
 //#endregion
 //#region src/front/jup/Entities/Entity/PropertyTypeIcons/PropertyTypeMandatoryText.tsx
+var _jsxFileName$8 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/front/jup/Entities/Entity/PropertyTypeIcons/PropertyTypeMandatoryText.tsx";
 function PropertyTypeMandatoryText(props) {
 	const { propertyType } = props;
 	const i18n = useI18nApi();
-	return /* @__PURE__ */ jsx("span", { children: getPropertyTypeMandatoryText(i18n, propertyType) });
+	return /* @__PURE__ */ jsxDEV("span", { children: getPropertyTypeMandatoryText(i18n, propertyType) }, void 0, false, {
+		fileName: _jsxFileName$8,
+		lineNumber: 10,
+		columnNumber: 12
+	}, this);
 }
 function getPropertyTypeMandatoryText(i18nApi, propertyType) {
 	return i18nApi.translate("entity.properties.mandatory", { name: getPropertyTypeLabelWithTranslation(i18nApi, propertyType) });
 }
 //#endregion
 //#region src/front/jup/Entities/Entity/PropertyTypeMandatoryLabel.tsx
+var _jsxFileName$7 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/front/jup/Entities/Entity/PropertyTypeMandatoryLabel.tsx";
 function PropertyTypeMandatoryLabel(props) {
 	const { propertyType } = props;
-	return /* @__PURE__ */ jsxs(Typography, {
+	return /* @__PURE__ */ jsxDEV(Typography, {
 		variant: "caption",
 		style: {
 			display: "flex",
 			alignItems: "center"
 		},
-		children: [/* @__PURE__ */ jsx(PropertyTypeMandatoryIcon, { sx: { marginRight: 1 } }), /* @__PURE__ */ jsx(PropertyTypeMandatoryText, { propertyType })]
-	});
+		children: [/* @__PURE__ */ jsxDEV(PropertyTypeMandatoryIcon, { sx: { marginRight: 1 } }, void 0, false, {
+			fileName: _jsxFileName$7,
+			lineNumber: 11,
+			columnNumber: 9
+		}, this), /* @__PURE__ */ jsxDEV(PropertyTypeMandatoryText, { propertyType }, void 0, false, {
+			fileName: _jsxFileName$7,
+			lineNumber: 12,
+			columnNumber: 9
+		}, this)]
+	}, void 0, true, {
+		fileName: _jsxFileName$7,
+		lineNumber: 10,
+		columnNumber: 12
+	}, this);
 }
 //#endregion
 //#region src/front/jup/Entities/Properties/Fields/units/units.helper.ts
@@ -127230,16 +128674,21 @@ function getTranslatedUnit(translation, unit) {
 }
 //#endregion
 //#region src/front/jup/Entities/Properties/PropertyTypeLabel.tsx
+var _jsxFileName$6 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/front/jup/Entities/Properties/PropertyTypeLabel.tsx";
 function PropertyTypeLabel(props) {
 	const { propertyType, displayUnit, style, ref, ...otherProps } = props;
 	const i18n = useI18nApi();
 	const unit = displayUnit && propertyType.options.unit && ` (${getTranslatedUnit(i18n.translate, propertyType.options.unit)})`;
-	return /* @__PURE__ */ jsxs("span", {
+	return /* @__PURE__ */ jsxDEV("span", {
 		ref,
 		style,
 		...otherProps,
 		children: [getPropertyTypeLabelWithTranslation(i18n, propertyType), unit]
-	});
+	}, void 0, true, {
+		fileName: _jsxFileName$6,
+		lineNumber: 22,
+		columnNumber: 12
+	}, this);
 }
 //#endregion
 //#region node_modules/.pnpm/@mui+icons-material@9.3.1_@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2._f15963edadea30de2ff83270c043ab8d/node_modules/@mui/icons-material/ContentCopyTwoTone.mjs
@@ -127254,35 +128703,78 @@ function isDevMode() {
 }
 //#endregion
 //#region src/surfy-help/components/MetaModel/helpers/ObjectTypeHelper.tsx
+var _jsxFileName$5 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/surfy-help/components/MetaModel/helpers/ObjectTypeHelper.tsx";
 function ObjectTypeHelper(props) {
 	const { code } = props;
 	if (!isDevMode()) return null;
 	const text = `<OT code="${code}" />`;
-	return /* @__PURE__ */ jsxs(Fragment$1, { children: [/* @__PURE__ */ jsx("code", { children: text }), /* @__PURE__ */ jsx(CopyToClipboard, {
+	return /* @__PURE__ */ jsxDEV(Fragment$1, { children: [/* @__PURE__ */ jsxDEV("code", { children: text }, void 0, false, {
+		fileName: _jsxFileName$5,
+		lineNumber: 16,
+		columnNumber: 13
+	}, this), /* @__PURE__ */ jsxDEV(CopyToClipboard, {
 		text,
-		children: /* @__PURE__ */ jsx(IconButton, { children: /* @__PURE__ */ jsx(ContentCopyTwoTone_default, {}) })
-	})] });
+		children: /* @__PURE__ */ jsxDEV(IconButton, { children: /* @__PURE__ */ jsxDEV(ContentCopyTwoTone_default, {}, void 0, false, {
+			fileName: _jsxFileName$5,
+			lineNumber: 19,
+			columnNumber: 21
+		}, this) }, void 0, false, {
+			fileName: _jsxFileName$5,
+			lineNumber: 18,
+			columnNumber: 17
+		}, this)
+	}, void 0, false, {
+		fileName: _jsxFileName$5,
+		lineNumber: 17,
+		columnNumber: 13
+	}, this)] }, void 0, true, {
+		fileName: _jsxFileName$5,
+		lineNumber: 15,
+		columnNumber: 9
+	}, this);
 }
 //#endregion
 //#region src/surfy-help/components/MetaModel/helpers/PropertyTypeHelper.tsx
+var _jsxFileName$4 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/surfy-help/components/MetaModel/helpers/PropertyTypeHelper.tsx";
 function PropertyTypeHelper(props) {
 	const { code } = props;
 	if (!isDevMode()) return null;
 	const text = `<P code="${code}" />`;
-	return /* @__PURE__ */ jsxs(Fragment$1, { children: [/* @__PURE__ */ jsx("code", { children: text }), /* @__PURE__ */ jsx(CopyToClipboard, {
+	return /* @__PURE__ */ jsxDEV(Fragment$1, { children: [/* @__PURE__ */ jsxDEV("code", { children: text }, void 0, false, {
+		fileName: _jsxFileName$4,
+		lineNumber: 16,
+		columnNumber: 13
+	}, this), /* @__PURE__ */ jsxDEV(CopyToClipboard, {
 		text,
-		children: /* @__PURE__ */ jsx(IconButton, { children: /* @__PURE__ */ jsx(ContentCopyTwoTone_default, {}) })
-	})] });
+		children: /* @__PURE__ */ jsxDEV(IconButton, { children: /* @__PURE__ */ jsxDEV(ContentCopyTwoTone_default, {}, void 0, false, {
+			fileName: _jsxFileName$4,
+			lineNumber: 19,
+			columnNumber: 21
+		}, this) }, void 0, false, {
+			fileName: _jsxFileName$4,
+			lineNumber: 18,
+			columnNumber: 17
+		}, this)
+	}, void 0, false, {
+		fileName: _jsxFileName$4,
+		lineNumber: 17,
+		columnNumber: 13
+	}, this)] }, void 0, true, {
+		fileName: _jsxFileName$4,
+		lineNumber: 15,
+		columnNumber: 9
+	}, this);
 }
 //#endregion
 //#region src/surfy-help/views/StaticHelpMenuPathBreadcrumbs.tsx
+var _jsxFileName$3 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/surfy-help/views/StaticHelpMenuPathBreadcrumbs.tsx";
 /**
 * Docusaurus MDX adapter for {@link HelpAppMenuPathBreadcrumbs} (i18n wiring only).
 */
 function StaticHelpMenuPathBreadcrumbs(props) {
 	const { directoryPath, objectTypeName, viewName, sx } = props;
 	const componentTranslation = useComponentTranslation("StaticHelpMenuPathBreadcrumbs");
-	return /* @__PURE__ */ jsx(HelpAppMenuPathBreadcrumbs, {
+	return /* @__PURE__ */ jsxDEV(HelpAppMenuPathBreadcrumbs, {
 		directoryPath,
 		objectTypeName,
 		viewName,
@@ -127292,10 +128784,15 @@ function StaticHelpMenuPathBreadcrumbs(props) {
 			currentTenantStep: componentTranslation("currentTenantStep"),
 			entityRecordStep: componentTranslation("entityRecordStep")
 		}
-	});
+	}, void 0, false, {
+		fileName: _jsxFileName$3,
+		lineNumber: 29,
+		columnNumber: 9
+	}, this);
 }
 //#endregion
 //#region src/surfy-help/components/MetaModel/ObjectTypeMenuBreadcrumb/ObjectTypeMenuBreadcrumb.tsx
+var _jsxFileName$2 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/surfy-help/components/MetaModel/ObjectTypeMenuBreadcrumb/ObjectTypeMenuBreadcrumb.tsx";
 /**
 * Reminder of where the object type lives in the Surfy app left menu (same tree as
 * {@link getNewMenu} / `objectTypePathMapping`). Plain text only — not a duplicate of the
@@ -127306,13 +128803,21 @@ function ObjectTypeMenuBreadcrumb(props) {
 	const directoryPath = objectTypePathMapping[code];
 	if (!directoryPath || typeof directoryPath !== "string") return null;
 	if (!directoryPath.startsWith("/entities")) return null;
-	return /* @__PURE__ */ jsx(HelpMenuPathAside, {
+	return /* @__PURE__ */ jsxDEV(HelpMenuPathAside, {
 		sx,
-		children: /* @__PURE__ */ jsx(StaticHelpMenuPathBreadcrumbs, {
+		children: /* @__PURE__ */ jsxDEV(StaticHelpMenuPathBreadcrumbs, {
 			directoryPath,
 			objectTypeName: code
-		})
-	});
+		}, void 0, false, {
+			fileName: _jsxFileName$2,
+			lineNumber: 25,
+			columnNumber: 13
+		}, this)
+	}, void 0, false, {
+		fileName: _jsxFileName$2,
+		lineNumber: 24,
+		columnNumber: 9
+	}, this);
 }
 //#endregion
 //#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/elementAcceptingRef/elementAcceptingRef.mjs
@@ -128051,6 +129556,7 @@ function toDocumentationLinkString(text) {
 }
 //#endregion
 //#region src/surfy-help/components/MetaModel/SurfyHelpObjectType.tsx
+var _jsxFileName$1 = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/surfy-help/components/MetaModel/SurfyHelpObjectType.tsx";
 function SurfyHelpObjectType(props) {
 	const translation = useTranslation();
 	const i18n = useI18nApi();
@@ -128063,40 +129569,70 @@ function SurfyHelpObjectType(props) {
 	const descKey = `models.${otDef.capitalized.singular}.description`;
 	const description = i18n.has(descKey) ? translation(descKey) : null;
 	const href = `${i18n.locale === "fr" ? "" : `/${i18n.locale}`}${directoryPath}/${toDocumentationLinkString(objectTypeName)}`;
-	return /* @__PURE__ */ jsx(HelpTooltipStyled, {
-		title: /* @__PURE__ */ jsxs(Paper$1, {
-			sx: { p: 2 },
-			children: [
-				/* @__PURE__ */ jsx(Box$1, {
-					style: {
-						display: "flex",
-						justifyContent: "flex-start",
-						alignItems: "flex-start"
-					},
-					children: /* @__PURE__ */ jsx(Typography, {
-						variant: "h5",
-						component: "h2",
-						sx: { mb: 1 },
-						children: label
-					})
-				}),
-				description ? /* @__PURE__ */ jsx(Box$1, { children: description }) : null,
-				/* @__PURE__ */ jsx(ObjectTypeMenuBreadcrumb, {
-					code: objectTypeName,
-					sx: { mt: 2 }
-				})
-			]
-		}),
+	const title = /* @__PURE__ */ jsxDEV(Paper$1, {
+		sx: { p: 2 },
+		children: [
+			/* @__PURE__ */ jsxDEV(Box$1, {
+				style: {
+					display: "flex",
+					justifyContent: "flex-start",
+					alignItems: "flex-start"
+				},
+				children: /* @__PURE__ */ jsxDEV(Typography, {
+					variant: "h5",
+					component: "h2",
+					sx: { mb: 1 },
+					children: label
+				}, void 0, false, {
+					fileName: _jsxFileName$1,
+					lineNumber: 42,
+					columnNumber: 17
+				}, this)
+			}, void 0, false, {
+				fileName: _jsxFileName$1,
+				lineNumber: 41,
+				columnNumber: 13
+			}, this),
+			description ? /* @__PURE__ */ jsxDEV(Box$1, { children: description }, void 0, false, {
+				fileName: _jsxFileName$1,
+				lineNumber: 46,
+				columnNumber: 28
+			}, this) : null,
+			/* @__PURE__ */ jsxDEV(ObjectTypeMenuBreadcrumb, {
+				code: objectTypeName,
+				sx: { mt: 2 }
+			}, void 0, false, {
+				fileName: _jsxFileName$1,
+				lineNumber: 47,
+				columnNumber: 13
+			}, this)
+		]
+	}, void 0, true, {
+		fileName: _jsxFileName$1,
+		lineNumber: 40,
+		columnNumber: 9
+	}, this);
+	return /* @__PURE__ */ jsxDEV(HelpTooltipStyled, {
+		title,
 		slots: { transition: Fade$1 },
 		disableInteractive: true,
-		children: /* @__PURE__ */ jsx("a", {
+		children: /* @__PURE__ */ jsxDEV("a", {
 			href,
 			children: label
-		})
-	});
+		}, void 0, false, {
+			fileName: _jsxFileName$1,
+			lineNumber: 52,
+			columnNumber: 13
+		}, this)
+	}, void 0, false, {
+		fileName: _jsxFileName$1,
+		lineNumber: 51,
+		columnNumber: 9
+	}, this);
 }
 //#endregion
 //#region src/surfy-help/components/MetaModel/SurfyHelpPropertyType.tsx
+var _jsxFileName = "/Users/pouya/dev/surfy/surfy-worktrees/wt-ado-463-map-filter-analytics-org-typo-cc/src/surfy-help/components/MetaModel/SurfyHelpPropertyType.tsx";
 function SurfyHelpPropertyType(props) {
 	const currentLocale = useI18nApi().locale;
 	const { code } = props;
@@ -128105,46 +129641,98 @@ function SurfyHelpPropertyType(props) {
 	const directoryPath = objectTypePathMapping[objectTypeName];
 	if (!directoryPath) throw new Error(`object type ${objectTypeName} not found in entities`);
 	const href = `${currentLocale === "fr" ? "" : `/${currentLocale}`}${directoryPath}/${toDocumentationLinkString(objectTypeName)}#${toDocumentationLinkString(name)}`;
-	const title = /* @__PURE__ */ jsxs(Paper, {
+	const title = /* @__PURE__ */ jsxDEV(Paper, {
 		sx: { p: 2 },
 		children: [
-			/* @__PURE__ */ jsxs(Box, {
+			/* @__PURE__ */ jsxDEV(Box, {
 				style: {
 					display: "flex",
 					justifyContent: "center",
 					alignItems: "flex-start"
 				},
-				children: [/* @__PURE__ */ jsx(Typography, {
+				children: [/* @__PURE__ */ jsxDEV(Typography, {
 					variant: "h5",
 					component: "h2",
 					sx: { mb: 1 },
-					children: /* @__PURE__ */ jsx(PropertyTypeLabel, { propertyType })
-				}), /* @__PURE__ */ jsx(Box, {
+					children: /* @__PURE__ */ jsxDEV(PropertyTypeLabel, { propertyType }, void 0, false, {
+						fileName: _jsxFileName,
+						lineNumber: 36,
+						columnNumber: 21
+					}, this)
+				}, void 0, false, {
+					fileName: _jsxFileName,
+					lineNumber: 35,
+					columnNumber: 17
+				}, this), /* @__PURE__ */ jsxDEV(Box, {
 					style: {
 						flexGrow: 1,
 						display: "flex",
 						justifyContent: "flex-end",
 						alignItems: "center"
 					},
-					children: /* @__PURE__ */ jsx(ObjectTypeSingularCapitalizedLabel, { objectTypeName })
-				})]
-			}),
-			/* @__PURE__ */ jsx(Box, { children: /* @__PURE__ */ jsx(PropertyTypeDescription, { propertyType }) }),
-			/* @__PURE__ */ jsx(Box, {
+					children: /* @__PURE__ */ jsxDEV(ObjectTypeSingularCapitalizedLabel, { objectTypeName }, void 0, false, {
+						fileName: _jsxFileName,
+						lineNumber: 39,
+						columnNumber: 21
+					}, this)
+				}, void 0, false, {
+					fileName: _jsxFileName,
+					lineNumber: 38,
+					columnNumber: 17
+				}, this)]
+			}, void 0, true, {
+				fileName: _jsxFileName,
+				lineNumber: 34,
+				columnNumber: 13
+			}, this),
+			/* @__PURE__ */ jsxDEV(Box, { children: /* @__PURE__ */ jsxDEV(PropertyTypeDescription, { propertyType }, void 0, false, {
+				fileName: _jsxFileName,
+				lineNumber: 43,
+				columnNumber: 17
+			}, this) }, void 0, false, {
+				fileName: _jsxFileName,
+				lineNumber: 42,
+				columnNumber: 13
+			}, this),
+			/* @__PURE__ */ jsxDEV(Box, {
 				sx: { mt: 2 },
-				children: propertyType.options.mandatory === true && /* @__PURE__ */ jsx(PropertyTypeMandatoryLabel, { propertyType })
-			})
+				children: propertyType.options.mandatory === true && /* @__PURE__ */ jsxDEV(PropertyTypeMandatoryLabel, { propertyType }, void 0, false, {
+					fileName: _jsxFileName,
+					lineNumber: 46,
+					columnNumber: 61
+				}, this)
+			}, void 0, false, {
+				fileName: _jsxFileName,
+				lineNumber: 45,
+				columnNumber: 13
+			}, this)
 		]
-	});
-	return /* @__PURE__ */ jsx(HelpTooltipStyled, {
+	}, void 0, true, {
+		fileName: _jsxFileName,
+		lineNumber: 33,
+		columnNumber: 9
+	}, this);
+	return /* @__PURE__ */ jsxDEV(HelpTooltipStyled, {
 		title,
 		slots: { transition: Fade },
 		disableInteractive: true,
-		children: /* @__PURE__ */ jsx("a", {
+		children: /* @__PURE__ */ jsxDEV("a", {
 			href,
-			children: /* @__PURE__ */ jsx(PropertyTypeLabel, { propertyType })
-		})
-	});
+			children: /* @__PURE__ */ jsxDEV(PropertyTypeLabel, { propertyType }, void 0, false, {
+				fileName: _jsxFileName,
+				lineNumber: 53,
+				columnNumber: 17
+			}, this)
+		}, void 0, false, {
+			fileName: _jsxFileName,
+			lineNumber: 52,
+			columnNumber: 13
+		}, this)
+	}, void 0, false, {
+		fileName: _jsxFileName,
+		lineNumber: 51,
+		columnNumber: 9
+	}, this);
 }
 //#endregion
 export { ClickOnIndexViewMenuPathBreadcrumb, I18NHelpContext, ObjectTypeHelper, ObjectTypeIndexViewHelp, ObjectTypeMenuBreadcrumb, ObjectTypeSingularCapitalizedLabel, PropertyTypeDescription, PropertyTypeHelper, PropertyTypeLabel, PropertyTypeMandatoryLabel, SetupI18nContext, SurfyHelpLinkToIndexView, SurfyHelpLinkToSingleView, SurfyHelpObjectType, SurfyHelpPropertyType, SurfyHelpStandaloneViewMenuBreadcrumb, appVersion, getObjectTypeDefinitionByName, getPropertyTypeByCode, getPropertyTypeByName, isTenantObjectType, useFlattenDeterminants, useTranslation };

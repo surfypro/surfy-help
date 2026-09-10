@@ -13,16 +13,33 @@ L’application utilisée au quotidien par la plupart des organisations reste su
 Lors d’une mise en production, seules les **nouveautés** sont reprises dans la page [Nouveautés](./app.md) ; les sections **Bugs résolus** ne sont **pas** reportées en production (elles servent à la vérification de l’équipe de test pendant le cycle alpha). Cette page est ensuite masquée en la renommant `_app-alpha.md`.
 
 
+## 3 Septembre 2026 - v3.5.35
+
+- **Plan — filtres : répartition des surfaces**
+  - L’accordéon **« Répartition des surfaces sélectionnées (m²) »** (tableau, graphique circulaire ou en zone polaire) est désormais disponible lorsque vous sélectionnez des nœuds dans les filtres **Organisations**, **Typologies**, **Groupes de typologie** et **Centres de coût — onglet Espaces** du plan d’étage — même comportement que pour les **calques d’analyse**.
+  - Les totaux portent sur la **surface qualifiée des espaces** des nœuds sélectionnés, sur le **périmètre d’étage(s) courant** du plan.
+  - Pas d’accordéon sur les onglets **Postes de travail** / **Personnes** des centres de coût.
+  <CloudinaryAsset publicId="help/changelog/v3.5.46/map-filter-analytics-org-typo-cc-fr" kind="video" asGif width={424} gifFps={8} alt="Répartition des surfaces sélectionnées dans les filtres Organisations du plan" />
+
 ## 2 Septembre 2026 - v3.5.34
 
+### Bugs résolus (vérification test alpha)
+
+Ces points sont listés pour l’équipe de test sur [app-alpha.surfy.pro](https://app-alpha.surfy.pro).
+Ils ne sont **pas** reportés dans le changelog production (`app.md`).
+
+- **Plan — Ne voir que les pièces à côté :** lorsque l’option est active, la sélection d’un **poste de travail** ou d’un **objet** dans un espace n’appliquait pas le filtre de voisinage (seul un clic sur l’espace fonctionnait) ; le voisinage s’applique désormais comme pour la sélection de l’espace (profondeur 1, 2 ou 3).
+
+## 18 Août 2026 - v3.5.33
+
 - <OT code="itemType" />
-  - Éditeur de forme : contrôle exclusif **« Points de forme »** / **« Arêtes visuelles »** (un seul calque actif ; **Points de forme** par défaut).
-  - Les **Arêtes visuelles** s'affichent sur le plan en **tirets courts** mais **ne participent pas** au Magnétisme, à la surface au sol, aux collisions ni à l'emprise.
-  - Lors du dessin, vous pouvez réutiliser un Point de forme existant seulement si les cercles se **superposent largement** et que le point **change de couleur au survol** ; sinon le sommet reste libre.
-  - Un **sommet d'arête visuelle** lié à un Point de forme **n'est pas déplaçable** ; pour le détacher, **supprimez l'arête**. S'il est lié, l'arête suit le point quand il bouge.
-  - **Déplacer le plan** dans l'éditeur de type d'objet (et dans l'éditeur de type de poste) : glisser le fond de plan ; sans fond de plan, le plan de travail se déplace quand même.
-  - Les polygones historiques mélangés **ne sont pas convertis automatiquement**.
-  - Guide : [Arêtes visuelles (type d'objet)](/entities/user-guide/floor-plan/item-type-visual-edges). Scénario guidé : [Créer des arêtes visuelles](/entities/scenarios/item-type-create-visual-edges).
+  - Dans l’éditeur de forme du type d’objet, basculez entre **« Points de forme »** et **« Arêtes visuelles »** (un seul calque actif à la fois ; par défaut : Points de forme).
+  - Les **Arêtes visuelles** s’affichent sur le plan mais **ne participent pas** au Magnétisme, à la surface au sol ni aux collisions / emprise. Elles sont tracées en **tirets courts**.
+  - Lors du dessin d’Arêtes visuelles, vous pouvez réutiliser un Point de forme existant uniquement lorsque les cercles se **superposent largement** et que le point **change de couleur au survol** ; cliquez ensuite pour lier. Sinon, le sommet est libre.
+  - Un **sommet d’arête visuelle** lié à un Point de forme **n’est pas déplaçable** ; pour le détacher, **supprimez l’arête**. Si lié, l’arête suit le point lorsqu’il bouge.
+  - **Déplacer le plan** dans l’éditeur de type d’objet (et dans l’éditeur de type de poste) : faites glisser le fond de plan ; sans fond de plan, le canevas se déplace quand même.
+  - Les formes historiques mélangées ne sont **pas** converties automatiquement.
+  - Guide : [Arêtes visuelles (type d’objet)](/entities/user-guide/floor-plan/item-type-visual-edges). Scénario guidé : [Créer des arêtes visuelles](/entities/scenarios/item-type-create-visual-edges).
 
 ## 17 Août 2026 - v3.5.32
 

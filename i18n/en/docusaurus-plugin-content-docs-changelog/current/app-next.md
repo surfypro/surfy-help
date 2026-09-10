@@ -16,6 +16,19 @@ The alpha application (for QA testing) remains at [https://app-alpha.surfy.pro](
 When a release goes to production, only **features** are moved to [What's New](./app.md) from the alpha page; **Fixed bugs** sections are **not** copied to production.
 
 
+## September 1, 2026 - v3.5.33
+
+- **Floor plan — edit mode — Magnetism (update)**
+  - Magnetism now compares only workstations and objects in the **same space**, within a **neighbourhood of about 1.5 m** (centre to centre). During the gesture, **dotted lines** link the centre of the shape in progress to the centres of those neighbours. Multiple snaps remain possible within that perimeter; on release, one smooth transition to the retained pose.
+  - Detailed scenario (behaviours and rules): [Segment magnetism on the floor plan](/entities/scenarios/workplace-segment-magnetism).
+
+- **Planning and bookings — desk release on absence**
+  - Company option <P code="company:enableStaticDeskReleaseOnAbsence" /> (off by default) and <P code="workplace:isReleasable" /> on each relevant desk: when **everyone** assigned declares a **full day** as leave, off-site, or remote work, the desk is **bookable for that day** (**desk released by absence**) on the **building booking map**. The fixed assignment does not change; the desk does **not** become permanent flex.
+  - On the map, **distinct shade of green** from flex desks for desks released by absence (**no legend**).
+  - While a colleague has booked the desk that day, the holder **cannot remove** the absence declaration or declare a return to the office.
+  - Guide: [Desk release on absence](/entities/user-guide/booking-system/static-desk-release-on-absence). Guided scenario: [Desk release on absence](/entities/scenarios/static-desk-release-on-absence).
+  <CloudinaryAsset publicId="help/changelog/v3.5.33/static-desk-release-on-absence-en" kind="video" asGif width={640} gifFps={8} alt="Desk release on absence: setup, absence, booking, and block" />
+
 ## August 7, 2026 - v3.5.32
 
 - **Floor plan — edit mode**

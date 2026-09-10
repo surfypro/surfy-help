@@ -53,3 +53,7 @@ If the booking is still not confirmed after the window ends, the booking is auto
 - set a window that matches typical arrival times,
 - communicate clearly that confirmation in **My planning** is required to keep a booking,
 - make sure user email addresses are valid to receive reminders.
+
+## See also
+
+- [Desk release on absence](./static-desk-release-on-absence) — another Mon planning rule (temporary sharing of a fixed desk).

@@ -16,4 +16,6 @@ Short filmed walkthroughs of the most useful flows. Each page includes the **vid
 | [Bulk room edit](./rooms-bulk-edit) | Align organisation / dimensions on several spaces |
 | [Focus room and neighbours](./focus-room-neighbors) | Isolate a room and its neighbours on the plan |
 | [Icon badge on an object type](./item-type-icon-badge-create) | Create a type with icon + badge strip (text / colors) |
+| [Create visual edges (object type)](./item-type-create-visual-edges) | Separate useful shape and display décor on an object type |
 | [Booking security view — from planning to day](./booking-security-day-view) | Locate security-profile bookings, then the colored day plan |
+| [Desk release on absence](./static-desk-release-on-absence) | Temporarily share a fixed desk when the holder is away all day |

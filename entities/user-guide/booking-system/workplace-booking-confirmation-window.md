@@ -53,3 +53,7 @@ Si la réservation n’est toujours pas confirmée après la fin de la plage, la
 - définir une plage adaptée aux horaires d’arrivée habituels ;
 - informer les équipes que la confirmation dans **Mon planning** est nécessaire pour conserver la réservation ;
 - vérifier régulièrement que les adresses e-mail utilisateur sont valides pour recevoir les rappels.
+
+## Voir aussi
+
+- [Libération de poste par absence](./static-desk-release-on-absence) — autre règle sur Mon planning (partage temporaire d'un poste fixe).

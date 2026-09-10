@@ -176,13 +176,6 @@ Le Modèle 3D permet une représentation 3D réaliste des objets placés sur le 
 
 ## Entités associées (liste) {#properties-has-many}
 
-### Arêtes visuelles de types d'objet {#item-type-visual-edges}
-
-Une arête visuelle définit un segment d'affichage uniquement sur le type d'objet, distinct des points de forme
-
-*Nom technique:* ```itemTypeVisualEdges```
-<PH code="itemType:itemTypeVisualEdges"/>
-
 ### Objets {#items}
 
 Un objet représente un élément physique ou matériel présent dans les espaces de travail

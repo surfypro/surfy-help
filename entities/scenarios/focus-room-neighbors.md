@@ -26,7 +26,7 @@ Sur le plan (<LIV code="floor:map" />), isolez une pièce et ses voisines pour v
 
 ## Gestes sans narration
 
-- Cliquez une **pièce** pour la choisir comme centre du focus.
+- Cliquez une **pièce**, un **poste de travail** ou un **objet** pour choisir l’espace centre du focus (le voisinage se calcule à partir de l’espace qui contient la forme).
 - Utilisez les profondeurs **1**, **2** ou **3** pour élargir ou réduire le voisinage affiché.
 
 ## Voir aussi

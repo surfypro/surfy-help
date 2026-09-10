@@ -16,6 +16,19 @@ L’application alpha (testable par l’équipe QA) reste sur [https://app-alpha
 Lors d’une mise en production, seules les **nouveautés** remontent dans [Nouveautés](./app.md) depuis la page alpha ; les sections **Bugs résolus** ne sont **pas** reportées en production.
 
 
+## 1 Septembre 2026 - v3.5.33
+
+- **Plan — mode édition — Magnétisme (mise à jour)**
+  - Le magnétisme ne compare plus que les postes et objets du **même espace**, dans un **voisinage d’environ 1,50 m** (centre à centre). Pendant le geste, des **lignes pointillées** relient le centre de la forme en cours aux centres de ces voisins. Les accrochages multiples restent possibles dans ce périmètre ; au relâchement, une transition douce vers la pose retenue.
+  - Scénario détaillé (comportements et règles) : [Magnétisme de segments sur le plan](/entities/scenarios/workplace-segment-magnetism).
+
+- **Planning et réservations — libération de poste par absence**
+  - Option entreprise <P code="company:enableStaticDeskReleaseOnAbsence" /> (désactivée par défaut) et case <P code="workplace:isReleasable" /> sur chaque poste concerné : lorsque **toutes** les personnes affectées déclarent en **journée entière** un congé, hors site ou télétravail, le poste devient **réservable pour la journée** (**poste libéré par absence**) sur la **carte de réservation du bâtiment**. L'affectation fixe n'est pas modifiée ; le poste n'est **pas** passé en flex permanent.
+  - Sur la carte, **teinte de vert distincte** des postes flex libres pour les postes libérés par absence (**sans légende**).
+  - Tant qu'un collègue a réservé le poste ce jour-là, le titulaire **ne peut pas retirer** sa déclaration d'absence ni déclarer un retour au bureau.
+  - Guide : [Libération de poste par absence](/entities/user-guide/booking-system/static-desk-release-on-absence). Scénario guidé : [Libération de poste par absence](/entities/scenarios/static-desk-release-on-absence).
+  <CloudinaryAsset publicId="help/changelog/v3.5.33/static-desk-release-on-absence-fr" kind="video" asGif width={640} gifFps={8} alt="Libération de poste par absence : configuration, absence, réservation et blocage" />
+
 ## 7 Août 2026 - v3.5.32
 
 - **Plan — mode édition**

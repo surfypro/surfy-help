@@ -78,6 +78,13 @@ Enable path finding functionality
 *Technical name:* ```enablePathfinding```
 <PH code="company:enablePathfinding"/>
 
+### Free up static workstations in case of absence {#enable-static-desk-release-on-absence}
+
+This also requires the &quot;Available Position&quot; checkbox on each relevant workstation. When a person statically assigned to a available position declares an absence (OOO, OFF, REMOTE) for the entire day (all assigned personnel absent), the position becomes temporarily reservable by colleagues with reservation rights in the building.
+
+*Technical name:* ```enableStaticDeskReleaseOnAbsence```
+<PH code="company:enableStaticDeskReleaseOnAbsence"/>
+
 ### Icon {#icon-path}
 
 The company logo in square
