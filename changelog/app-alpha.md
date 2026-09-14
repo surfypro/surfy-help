@@ -39,7 +39,7 @@ Lors d’une mise en production, seules les **nouveautés** sont reprises dans l
   <CloudinaryAsset publicId="help/changelog/v3.5.33/static-desk-release-on-absence-fr" kind="video" asGif width={640} gifFps={8} alt="Libération de poste par absence : configuration, absence, réservation et blocage" />
 
 - <LIV code="floor:map" />
-  - **Magnétisme** (**désactivée par défaut**, mémorisée sur l’appareil) : lors du **déplacement**, de la **duplication** ou de la **pose** d’un poste ou d’un objet, les **côtés** peuvent s’aimanter sur des formes déjà posées. Plusieurs accrochages simultanés possibles ; au relâchement, une transition douce vers la pose retenue.
+  - **Magnétisme** - Non prêt pour la production] (**désactivée par défaut**, mémorisée sur l’appareil) : lors du **déplacement**, de la **duplication** ou de la **pose** d’un poste ou d’un objet, les **côtés** peuvent s’aimanter sur des formes déjà posées. Plusieurs accrochages simultanés possibles ; au relâchement, une transition douce vers la pose retenue.
   - Le magnétisme ne compare que les postes et objets du **même espace**, dans un **voisinage d’environ 1,50 m** (centre à centre), avec des **lignes pointillées** vers les voisins pendant le geste.
   - En **rotation**, les crans à 45° restent pendant le geste ; si le Magnétisme est actif et qu’une cible est proche, le **relâchement** finalise l’alignement des côtés. Scénario : [Magnétisme de segments sur le plan](/entities/scenarios/workplace-segment-magnetism).
   <CloudinaryAsset publicId="help/changelog/v3.5.24/workplace-segment-magnetism-fr" kind="video" asGif width={640} gifFps={8} alt="Plusieurs accrochages simultanés (Magnétisme) sur le plan en mode édition" />
