@@ -13,6 +13,32 @@ Most organizations’ day-to-day application remains at [https://app.surfy.pro](
 When a release goes to production, only **features** are moved to [What's New](./app.md); the **Fixed bugs** sections are **not** copied to production (they are for the test team during the alpha cycle). This page is then hidden by renaming it to `_app-alpha.md`.
 
 
+## September 14, 2026 - v3.5.50
+
+- **Bookings on a floor plan — parking and desks on the same floor**
+  - On **booking maps** (booking-maps index, security profile day panel, and **My schedule drawers**), **parking spaces** appear on the **same floor** as workstations when parking is configured for that floor.
+  - A **parking-only floor** (no desks) shows the parking layer, not an empty desk layer.
+  - **Person search** on these maps covers both **desk and parking** bookings.
+  - Hover on a space: **space name**, **occupant** when booked, and **time slot**; colours distinguish free / booked / booked by you.
+  - The **parking type icon** stays visible even when the space has a display name.
+  - In My schedule drawers, you can book a **desk** or a **parking space** on the same floor plan, depending on configuration.
+
+- **Reports — tables and charts**
+  - **Service ratio** table (e.g. building dashboard): **Service**, **workstation count (PdT)**, and **m²/PdT** columns, with header hover help.
+  - On report data tables: toggles for **precise figures**, **show / hide m²**, and **recalculate percentages** based on still-visible series.
+  - Click the chart **legend** to hide or show a series; the table follows the same selection.
+  - Some reports sort category labels **alphabetically** for more stable reading.
+
+- **Floor plan — bulk room edit**
+  - The bulk-edit panel now also includes <P code="room:roomType" /> (in addition to organization, cost center, distribution cost type, connector, and dimensions).
+
+### Fixed bugs (alpha test verification)
+
+These items are listed for the test team on [app-alpha.surfy.pro](https://app-alpha.surfy.pro).
+They are **not** copied to the production changelog (`app.md`).
+
+- **Image upload (Cloudinary)**: if the upload widget fails to start (configuration or load), an **explicit error message** is shown instead of a silent failure.
+
 ## September 3, 2026 - v3.5.35
 
 - **Floor plan — filters: area distribution**
@@ -72,7 +98,7 @@ They are **not** copied to the production changelog (`app.md`).
   <CloudinaryAsset publicId="help/changelog/v3.5.23/mixed-group-rotation-en" kind="video" asGif width={640} gifFps={8} alt="Group rotation of workstations and objects in plan edit mode" />
 
 - **Floor plan — spaces**
-  - In **edit mode**, when **at least two spaces** are selected, an action on the selection frame opens a panel to bulk-edit <P code="room:organization" />, <P code="room:costCenter" />, <P code="room:distributionCostType" />, <P code="room:roomConnector" />, and dimensions. Guided scenario: [Bulk room edit](/entities/scenarios/rooms-bulk-edit).
+  - In **edit mode**, when **at least two spaces** are selected, an action on the selection frame opens a panel to bulk-edit <P code="room:organization" />, <P code="room:costCenter" />, <P code="room:distributionCostType" />, <P code="room:roomConnector" />, <P code="room:roomType" />, and dimensions. Guided scenario: [Bulk room edit](/entities/scenarios/rooms-bulk-edit).
   <CloudinaryAsset publicId="help/changelog/v3.5.15/rooms-bulk-edit-en" kind="video" asGif width={640} gifFps={8} alt="Bulk room edit on the plan in edit mode" />
 
 - <OT code="itemType" />

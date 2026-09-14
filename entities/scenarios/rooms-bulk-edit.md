@@ -28,6 +28,7 @@ Sur le plan (<LIV code="floor:map" />), harmonisez en une fois les propriétés 
    - <P code="room:costCenter" />
    - <P code="room:distributionCostType" />
    - <P code="room:roomConnector" />
+   - <P code="room:roomType" />
    - les **dimensions** par type de calque d’analyse
 
 4. **Cliquez sur le bouton Sauvegarder**  

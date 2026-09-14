@@ -13,6 +13,32 @@ L’application utilisée au quotidien par la plupart des organisations reste su
 Lors d’une mise en production, seules les **nouveautés** sont reprises dans la page [Nouveautés](./app.md) ; les sections **Bugs résolus** ne sont **pas** reportées en production (elles servent à la vérification de l’équipe de test pendant le cycle alpha). Cette page est ensuite masquée en la renommant `_app-alpha.md`.
 
 
+## 14 Septembre 2026 - v3.5.50
+
+- **Réservations sur un plan — parking et postes sur le même étage**
+  - Sur les **cartes de réservation** (index des réservations sur un plan, panneau jour du profil sécurité, et **tiroirs Mon planning**), les **places de parking** apparaissent sur le **même étage** que les postes de travail lorsqu’elles sont configurées pour cet étage.
+  - Un **étage avec parking seulement** (sans postes) affiche la couche parking, sans couche postes vide.
+  - La **recherche** de personnes sur ces cartes prend en compte les réservations de **postes et de parking**.
+  - Survol d’une place : **nom de l’espace**, **occupant** si réservé, et **créneau** ; les couleurs distinguent libre / réservé / réservé par vous.
+  - L’**icône du type parking** reste visible même lorsque la place a un nom affiché.
+  - Dans les tiroirs Mon planning, vous pouvez réserver un **poste** ou une **place parking** sur le même plan d’étage selon la configuration.
+
+- **Rapports — tableaux et graphiques**
+  - Tableau **ratio par service** (ex. tableau de bord bâtiment) : colonnes **Service**, **nombre de postes (PdT)** et **m²/PdT**, avec aide au survol des en-têtes.
+  - Sur les tableaux de données des rapports : bascules pour **chiffres précis**, **afficher / masquer les m²**, et **recalculer les pourcentages** selon les séries encore visibles.
+  - Clic dans la **légende** du graphique pour masquer ou réafficher une série ; le tableau suit la même sélection.
+  - Certains rapports trient les libellés de catégories **par ordre alphabétique** pour une lecture plus stable.
+
+- **Plan — modification multiple d’espaces**
+  - Le panneau de modification en lot inclut désormais aussi la <P code="room:roomType" /> (en plus de l’organisation, du centre de coût, du type de répartition, du connecteur et des dimensions).
+
+### Bugs résolus (vérification équipe de test alpha)
+
+Ces points sont listés pour l’équipe de test sur [app-alpha.surfy.pro](https://app-alpha.surfy.pro).
+Ils ne sont **pas** reportés dans le changelog de production (`app.md`).
+
+- **Upload d’image (Cloudinary)** : si le widget d’upload ne démarre pas (configuration ou chargement), un **message d’erreur explicite** s’affiche à la place d’un échec silencieux.
+
 ## 3 Septembre 2026 - v3.5.35
 
 - **Plan — filtres : répartition des surfaces**
@@ -72,7 +98,7 @@ Ils ne sont **pas** reportés dans le changelog production (`app.md`).
   <CloudinaryAsset publicId="help/changelog/v3.5.23/mixed-group-rotation-fr" kind="video" asGif width={640} gifFps={8} alt="Rotation groupée de postes et d’objets en mode édition du plan" />
 
 - **Plan — espaces**
-  - En **mode édition**, lorsque **au moins deux espaces** sont sélectionnés, une action sur le cadre de sélection ouvre un panneau pour modifier en lot l'<P code="room:organization" />, le <P code="room:costCenter" />, le <P code="room:distributionCostType" />, le <P code="room:roomConnector" /> et les dimensions. Scénario guidé : [Modification multiple d’espaces](/entities/scenarios/rooms-bulk-edit).
+  - En **mode édition**, lorsque **au moins deux espaces** sont sélectionnés, une action sur le cadre de sélection ouvre un panneau pour modifier en lot l'<P code="room:organization" />, le <P code="room:costCenter" />, le <P code="room:distributionCostType" />, le <P code="room:roomConnector" />, la <P code="room:roomType" /> et les dimensions. Scénario guidé : [Modification multiple d’espaces](/entities/scenarios/rooms-bulk-edit).
   <CloudinaryAsset publicId="help/changelog/v3.5.15/rooms-bulk-edit-fr" kind="video" asGif width={640} gifFps={8} alt="Modification multiple d'espaces sur le plan en mode édition" />
 
 - <OT code="itemType" />
