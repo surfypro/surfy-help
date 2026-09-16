@@ -17,7 +17,7 @@ To enable for the entire platform the ability to book fixed-assignment but relea
 -   click on "Administration", "Companies", then "Companies tile view"
 -   click on the "Pencil" icon at the bottom of the company card to "modify company XXX"
 -   check "<P code="company:enableStaticDeskReleaseOnAbsence" />"
--   save the modifications
+-   save the modification
 
 ### Configure a releasable workstation
 
