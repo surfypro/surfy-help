@@ -15,7 +15,7 @@ Pour activer pour l'ensemble de la plateforme la possibilité de réserver des p
 -   cliquer sur "Administration", "Entreprises", puis "Vue des entreprises en tuile"
 -   cliquer sur l'icône "Crayon" en bas de la fiche de l'entreprise pour "Modifier l'entreprise XXX"
 -   cocher la case "Libérer les postes statiques en cas d'absence"
--   sauvegarder les modifications
+-   sauvegarder la modification
 
 ### Configurer un poste libérable
 
