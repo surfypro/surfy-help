@@ -25,7 +25,7 @@ To define a workstation as releasable, from the floor plan,
 
 -   click on the workstation concerned
 -   click on "Modify" in the workstation card on the left of the plan
--   check <P code="workplace:isReleasable" />
+-   check "<P code="workplace:isReleasable" />"
 -   save the modification
 
 ## Declaring a released workstation
