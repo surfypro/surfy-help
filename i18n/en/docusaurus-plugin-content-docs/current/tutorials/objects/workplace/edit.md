@@ -13,7 +13,53 @@ title: "Edit a Workstation"
 -   modify the workstation's <P code="workplace:name" />, its <P code="workplace:organization" />, its <P code="workplace:costCenter" />, its [flex or passage qualification](/en/docs/courses/views/2Dviews#display-workstation-status-on-plan)
 -   save the modifications
 
-### Workstation Usage Type
+
+## Modify a Workstation's Workstation Type
+
+To change a workstation's workstation type on the plan,
+
+-   click on the workstation then on "Modify" in the workstation card, on the left of the plan.
+-   click on the pencil "Change workstation type" and choose the new workstation type to apply to the workstation
+-   "Save" the modifications
+
+:::tip Good to Know
+the modified workstation will have the shape and characteristics of the new workstation type, but will keep all the information (<P code="workplace:name" />, <P code="workplace:organization" />, <P code="workplace:costCenter" />, assignments, qualifications) from its old type. The workstation's orientation and placement is also preserved.
+:::
+
+## Move a Workstation
+
+-   "Activate plan editing mode" by clicking on the "pencil" icon above the plan
+-   click on the workstation to move
+-   drag-move the workstation by keeping the mouse pressed during movement
+-   rotate the workstation with the red arrow by 45° steps. To free the angle, press the "shift" key at the same time
+-   click on the blue box to replace the workstation in its initial position.
+
+
+
+### Move a Group of Workstations
+
+-   "Activate plan editing mode" by clicking on the "pencil" icon above the plan
+-   click on one of the workstations to move then on the others while holding the "shift" key
+-   a selection area encompassing the workstations to move is delimited, the workstations to move are selected.
+-   move the workstation group by clicking on the "move group" icon of the selection area
+-   click on the plan to deselect the workstations in the group
+
+:::tip Good to Know
+You can mix objects and workstations in object groups, in move, rotation or copy
+:::
+
+### Rotate a Group of Workstations
+
+You can select a group composed of objects and workstations in order to rotate all the furniture. This allows, for example after a copy, to correctly orient all the objects in the group.
+
+-   "Activate plan editing mode" by clicking on the "pencil" icon above the plan
+-   select the objects or workstations to rotate while holding the "shift" key
+-   a selection area encompassing the objects and workstations to rotate is delimited
+-   click on the "Rotate all selected shapes around the center of the selection" icon above the selection, to rotate all selected furniture by 45° angles
+-   pressing "shift" during rotation allows you to rotate the whole group by a finer angle
+-   once the rotation is done, click outside the selection to deselect
+
+## Workstation Usage Type
 
 You can color workstations according to their usage type. For example: In recruitment, scheduled departure, ... or any other qualification relative to the workstation concerned.
 
@@ -47,49 +93,3 @@ The number of workstations per usage type is indicated opposite each usage type.
 :::tip GOOD TO KNOW
 You can visualize workstation usage types on the entire building or on several floors by [displaying the building in 3D](/en/docs/courses/views/3Dviews) and by clicking on the vertical "label" icon to "color workstations by their usage type".
 :::
-
-
-## Modify a Workstation's Workstation Type
-
-To change a workstation's workstation type on the plan,
-
--   click on the workstation then on "Modify" in the workstation card, on the left of the plan.
--   click on the pencil "Change workstation type" and choose the new workstation type to apply to the workstation
--   "Save" the modifications
-
-:::tip Good to Know
-the modified workstation will have the shape and characteristics of the new workstation type, but will keep all the information (<P code="workplace:name" />, <P code="workplace:organization" />, <P code="workplace:costCenter" />, assignments, qualifications) from its old type. The workstation's orientation and placement is also preserved.
-:::
-
-### Move a Workstation
-
--   "Activate plan editing mode" by clicking on the "pencil" icon above the plan
--   click on the workstation to move
--   drag-move the workstation by keeping the mouse pressed during movement
--   rotate the workstation with the red arrow by 45° steps. To free the angle, press the "shift" key at the same time
--   click on the blue box to replace the workstation in its initial position.
-
-
-
-### Move a Group of Workstations
-
--   "Activate plan editing mode" by clicking on the "pencil" icon above the plan
--   click on one of the workstations to move then on the others while holding the "shift" key
--   a selection area encompassing the workstations to move is delimited, the workstations to move are selected.
--   move the workstation group by clicking on the "move group" icon of the selection area
--   click on the plan to deselect the workstations in the group
-
-:::tip Good to Know
-You can mix objects and workstations in object groups, in movement or copy
-:::
-
-### Rotate a Group of Workstations
-
-Rotation is only possible on a group of workstations.
-
--   "Activate plan editing mode" by clicking on the "pencil" icon above the plan
--   select the workstations to rotate while holding the "shift" key
--   a selection area encompassing the workstations to rotate is delimited
--   click on the "Rotate all selected workstations around the center of the selection" icon to rotate all selected workstations by 45° angles
--   pressing "shift" during rotation allows you to rotate the whole group by a finer angle
--   once the rotation is done, click outside the selection to deselect

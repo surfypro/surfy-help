@@ -11,7 +11,53 @@ sidebar_position: 2
 -   modifier le <P code="workplace:name" /> du poste de travail, son <P code="workplace:organization" />, son <P code="workplace:costCenter" />, sa qualification [flex ou de passage](/docs/courses/views/2Dviews#afficher-létat-des-postes-de-travail-sur-le-plan)
 -   sauvegarder les modifications
 
-### Type d'usage des postes de travail
+
+## Modifier le type de poste de travail d'un poste de travail
+
+Pour changer le type de poste de travail d'un poste de travail sur le plan,
+
+-   cliquer sur le poste de travail puis sur "Modifier" dans la fiche du poste de travail, à gauche du plan.
+-   cliquer sur le crayon "Changer le type de poste de travail" et choisir le nouveau type de poste de travail à appliquer au poste de travail
+-   "Sauvegarder" les modifications
+
+:::tip Bon à savoir
+le poste de travail modifié aura la forme et les caractéristiques du nouveau type de poste de travail, mais gardera toutes les informations (<P code="workplace:name" />, <P code="workplace:organization" />, <P code="workplace:costCenter" />, affectations, qualifications) de son ancien type. L'orientation et le placement du poste de travail est également conservé.
+:::
+
+## Déplacer un poste de travail
+
+-   "Activer le mode édition du plan" en cliquant sur l'icône "crayon" au dessus du plan
+-   cliquer sur le poste de travail à déplacer
+-   glisser-déplacer le poste de travail en maintenant la souris enfoncée lors du déplacement
+-   faire pivoter le poste de travail avec la flèche rouge par pas de 45°. Pour libérer l'angle, appuyer en même temps sur la touche "shift"
+-   cliquer sur la case bleue pour replacer le poste de travail dans sa position initiale.
+
+
+
+### Déplacer un groupe de postes de travail
+
+-   "Activer le mode édition du plan" en cliquant sur l'icône "crayon" au dessus du plan
+-   cliquer sur un des postes de travail à déplacer puis sur les autres en maintenant la touche "shift" enfoncée
+-   une zone de sélection englobant les postes de travail à déplacer est délimitée, les postes de travail à déplacer sont sélectionnés.
+-   déplacer le groupe de postes de travail en cliquant sur l'icône "déplacer le groupe" de la zone de sélection
+-   cliquer sur le plan pour déselectionner les postes de travail du groupe
+
+:::tip Bon à savoir
+On peut panacher des objets et des postes de travail dans les groupes d'objets, en déplacement, en rotation ou en copie
+:::
+
+### Rotation d'un groupe de postes de travail
+
+On peut sélectionner un groupe composé d'objets et de postes de travail afin d'effectuer une rotation sur l'ensemble du mobilier. Cela permet, suite à une copie par exemple, d'orienter correctement l'ensemble des objets composant le groupe.
+
+-   "Activer le mode édition du plan" en cliquant sur l'icône "crayon" au dessus du plan
+-   sélectionner les objets ou postes de travail à pivoter en maintenant la touche "shift" enfoncée
+-   une zone de sélection englobant les objets et postes de travail à pivoter est délimitée
+-   cliquer sur l'icone "Faire pivoter toutes les formes sélectionnées autour du centre de la sélection" au dessus de la sélection, pour faire pivoter l'ensemble du mobilier sélectionné par angle de 45°
+-   appuyer sur "shift" durant la rotation permet de faire pivoter l'ensemble d'un angle plus fin
+-   une fois la rotation effectuée, cliquer en dehors de la sélection pour déselectionner
+
+## Type d'usage des postes de travail
 
 On peut colorier les postes de travail en fonction de leur type d'usage. Par exemple : En cours de recrutement, départ programmé, ... ou tout autre qualification relative au poste de travail concerné.
 
@@ -46,48 +92,3 @@ Le nombre de postes de travail par type d'usage est indiqué face à chaque type
 On peut visualiser les types d'usage des postes de travail sur l'ensemble du bâtiment ou sur plusieurs étages en [affichant le bâtiment en 3D](/docs/courses/views/3Dviews) et en cliquant sur l'icône verticale "étiquette" pour "colorier les postes de travail par rapport à leur type d'usage".
 :::
 
-
-## Modifier le type de poste de travail d'un poste de travail
-
-Pour changer le type de poste de travail d'un poste de travail sur le plan,
-
--   cliquer sur le poste de travail puis sur "Modifier" dans la fiche du poste de travail, à gauche du plan.
--   cliquer sur le crayon "Changer le type de poste de travail" et choisir le nouveau type de poste de travail à appliquer au poste de travail
--   "Sauvegarder" les modifications
-
-:::tip Bon à savoir
-le poste de travail modifié aura la forme et les caractéristiques du nouveau type de poste de travail, mais gardera toutes les informations (<P code="workplace:name" />, <P code="workplace:organization" />, <P code="workplace:costCenter" />, affectations, qualifications) de son ancien type. L'orientation et le placement du poste de travail est également conservé.
-:::
-
-### Déplacer un poste de travail
-
--   "Activer le mode édition du plan" en cliquant sur l'icône "crayon" au dessus du plan
--   cliquer sur le poste de travail à déplacer
--   glisser-déplacer le poste de travail en maintenant la souris enfoncée lors du déplacement
--   faire pivoter le poste de travail avec la flèche rouge par pas de 45°. Pour libérer l'angle, appuyer en même temps sur la touche "shift"
--   cliquer sur la case bleue pour replacer le poste de travail dans sa position initiale.
-
-
-
-### Déplacer un groupe de postes de travail
-
--   "Activer le mode édition du plan" en cliquant sur l'icône "crayon" au dessus du plan
--   cliquer sur un des postes de travail à déplacer puis sur les autres en maintenant la touche "shift" enfoncée
--   une zone de sélection englobant les postes de travail à déplacer est délimitée, les postes de travail à déplacer sont sélectionnés.
--   déplacer le groupe de postes de travail en cliquant sur l'icône "déplacer le groupe" de la zone de sélection
--   cliquer sur le plan pour déselectionner les postes de travail du groupe
-
-:::tip Bon à savoir
-On peut panacher des objets et des postes de travail dans les groupes d'objets, en déplacement ou en copie
-:::
-
-### Rotation d'un groupe de postes de travail
-
-La rotation n'est possible que sur un groupe de postes de travail.
-
--   "Activer le mode édition du plan" en cliquant sur l'icône "crayon" au dessus du plan
--   sélectionner les postes de travail à pivoter en maintenant la touche "shift" enfoncée
--   une zone de sélection englobant les postes de travail à pivoter est délimitée
--   cliquer sur l'icone "Faire pivoter tous les postes de travail sélectionnés autour du centre de la sélection" pour faire pivoter l'ensemble des postes sélectionnés par angle de 45°
--   appuyer sur "shift" durant la rotation permet de faire pivoter l'ensemble d'un angle plus fin
--   une fois la rotation effectuée, cliquer en dehors de la sélection pour déselectionner
