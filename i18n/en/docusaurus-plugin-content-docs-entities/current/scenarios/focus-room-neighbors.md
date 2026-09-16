@@ -26,7 +26,7 @@ On the floor plan (<LIV code="floor:map" />), isolate a room and its neighbors t
 
 ## Gestures without narration
 
-- Click a **room** to choose it as the focus centre.
+- Click a **room**, **workstation**, or **object** to choose its host space as the focus centre (the neighbourhood is computed from the space that contains the shape).
 - Use depths **1**, **2** or **3** to widen or narrow the neighbourhood shown.
 
 ## See also

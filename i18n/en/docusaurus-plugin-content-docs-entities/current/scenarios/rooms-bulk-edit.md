@@ -28,6 +28,7 @@ On the floor plan (<LIV code="floor:map" />), update reference properties for **
    - <P code="room:costCenter" />
    - <P code="room:distributionCostType" />
    - <P code="room:roomConnector" />
+   - <P code="room:roomType" />
    - **dimensions** by analysis layer type
 
 4. **Click on the Save button**  

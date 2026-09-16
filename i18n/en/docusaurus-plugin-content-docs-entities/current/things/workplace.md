@@ -78,6 +78,13 @@ If this workstation is shared by several people, this automatic field is validat
 *Technical name:* ```isShared```
 <PH code="workplace:isShared"/>
 
+### Is this a position that can be made available? {#is-releasable}
+
+If activated, and if the company option &quot;Release static workstations in case of absence&quot; is also activated, the workstation can become temporarily reservable when all assigned personnel declare a full-day absence (OOO, OFF, REMOTE)
+
+*Technical name:* ```isReleasable```
+<PH code="workplace:isReleasable"/>
+
 ### Number of assignments {#workplace-affectations-count}
 
 Number of assignments on the workstation

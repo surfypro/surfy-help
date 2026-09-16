@@ -61,6 +61,7 @@ var entities_paths_default = {
 		"itemType": "/entities/things/things-type",
 		"itemTypeFamily": "/entities/things/things-type",
 		"itemTypePoint": "/entities/things/things-type",
+		"itemTypeVisualEdge": "/entities/things/things-type",
 		"manufacturer": "/entities/things/things-type",
 		"workplaceTypeItemType": "/entities/things/things-type",
 		"workplaceUsageType": "/entities/things/things-type",
@@ -168,7 +169,7 @@ var entities_paths_default = {
 		"feature": "/entities/help",
 		"userRefreshToken": null
 	},
-	viewPathMapping: /* @__PURE__ */ JSON.parse("{\"occupancyStatus:list\":\"/entities/surfy/global-admin\",\"occupancyStatus:create\":\"/entities/surfy/global-admin\",\"occupancyStatus:import\":\"/entities/surfy/global-admin\",\"occupancyStatus:dataquality\":\"/entities/surfy/global-admin\",\"occupancyStatus:details\":\"/entities/surfy/global-admin\",\"occupancyStatus:edit\":\"/entities/surfy/global-admin\",\"user:list\":\"/entities/surfy/global-security\",\"user:create\":\"/entities/surfy/global-security\",\"user:import\":\"/entities/surfy/global-security\",\"user:dataquality\":\"/entities/surfy/global-security\",\"user:details\":\"/entities/surfy/global-security\",\"user:edit\":\"/entities/surfy/global-security\",\"userRefreshToken:list\":null,\"userRefreshToken:create\":null,\"userRefreshToken:import\":null,\"userRefreshToken:dataquality\":null,\"userRefreshToken:details\":null,\"userRefreshToken:edit\":null,\"companyType:list\":\"/entities/surfy/global-admin\",\"companyType:create\":\"/entities/surfy/global-admin\",\"companyType:import\":\"/entities/surfy/global-admin\",\"companyType:dataquality\":\"/entities/surfy/global-admin\",\"companyType:details\":\"/entities/surfy/global-admin\",\"companyType:edit\":\"/entities/surfy/global-admin\",\"company:cards\":\"/entities/admin\",\"company:people-info\":\"/entities/admin\",\"company:usage\":\"/entities/admin\",\"company:booking-reporting\":\"/entities/admin\",\"company:dataquality-index\":\"/entities/admin\",\"company:dq-reports-overview-duplicate-company\":\"/entities/admin\",\"company:list\":\"/entities/admin\",\"company:create\":\"/entities/admin\",\"company:import\":\"/entities/admin\",\"company:dataquality\":\"/entities/admin\",\"company:dashboard\":\"/entities/admin\",\"company:soc-tenant\":\"/entities/admin\",\"company:details\":\"/entities/admin\",\"company:edit\":\"/entities/admin\",\"company:dq-fix-inventory\":\"/entities/admin/dataquality\",\"company:dq-shapes-position\":\"/entities/admin/dataquality\",\"campus:cards\":\"/entities/spaces\",\"campus:list\":\"/entities/spaces\",\"campus:create\":\"/entities/spaces\",\"campus:import\":\"/entities/spaces\",\"campus:dataquality\":\"/entities/spaces\",\"campus:details\":\"/entities/spaces\",\"campus:edit\":\"/entities/spaces\",\"roomConnectorType:list\":\"/entities/admin/connectors\",\"roomConnectorType:create\":\"/entities/admin/connectors\",\"roomConnectorType:import\":\"/entities/admin/connectors\",\"roomConnectorType:dataquality\":\"/entities/admin/connectors\",\"roomConnectorType:details\":\"/entities/admin/connectors\",\"roomConnectorType:edit\":\"/entities/admin/connectors\",\"roomConnector:list\":\"/entities/admin/connectors\",\"roomConnector:create\":\"/entities/admin/connectors\",\"roomConnector:import\":\"/entities/admin/connectors\",\"roomConnector:dataquality\":\"/entities/admin/connectors\",\"roomConnector:details\":\"/entities/admin/connectors\",\"roomConnector:edit\":\"/entities/admin/connectors\",\"userCompany:list\":\"/entities/admin/security\",\"userCompany:create\":\"/entities/admin/security\",\"userCompany:import\":\"/entities/admin/security\",\"userCompany:dataquality\":\"/entities/admin/security\",\"userCompany:details\":\"/entities/admin/security\",\"userCompany:edit\":\"/entities/admin/security\",\"personGender:list\":\"/entities/surfy\",\"personGender:create\":\"/entities/surfy\",\"personGender:import\":\"/entities/surfy\",\"personGender:dataquality\":\"/entities/surfy\",\"personGender:details\":\"/entities/surfy\",\"personGender:edit\":\"/entities/surfy\",\"personCompany:list\":\"/entities/admin/person-companies\",\"personCompany:create\":\"/entities/admin/person-companies\",\"personCompany:import\":\"/entities/admin/person-companies\",\"personCompany:dataquality\":\"/entities/admin/person-companies\",\"personCompany:details\":\"/entities/admin/person-companies\",\"personCompany:edit\":\"/entities/admin/person-companies\",\"jupUiLayout:list\":\"/entities/surfy/global-security\",\"jupUiLayout:create\":\"/entities/surfy/global-security\",\"jupUiLayout:import\":\"/entities/surfy/global-security\",\"jupUiLayout:dataquality\":\"/entities/surfy/global-security\",\"jupUiLayout:details\":\"/entities/surfy/global-security\",\"jupUiLayout:edit\":\"/entities/surfy/global-security\",\"buildingType:list\":\"/entities/admin/types\",\"buildingType:create\":\"/entities/admin/types\",\"buildingType:import\":\"/entities/admin/types\",\"buildingType:dataquality\":\"/entities/admin/types\",\"buildingType:details\":\"/entities/admin/types\",\"buildingType:edit\":\"/entities/admin/types\",\"organization:hierarchy\":\"/entities/organizations\",\"organization:list\":\"/entities/organizations\",\"organization:create\":\"/entities/organizations\",\"organization:import\":\"/entities/organizations\",\"organization:dataquality\":\"/entities/organizations\",\"organization:details\":\"/entities/organizations\",\"organization:edit\":\"/entities/organizations\",\"organization:dq-organization-hierarchy\":\"/entities/organizations/dataquality\",\"organization:dq-level1-not-used\":\"/entities/organizations/dataquality\",\"itemTypeFamily:list\":\"/entities/things/things-type\",\"itemTypeFamily:create\":\"/entities/things/things-type\",\"itemTypeFamily:import\":\"/entities/things/things-type\",\"itemTypeFamily:dataquality\":\"/entities/things/things-type\",\"itemTypeFamily:details\":\"/entities/things/things-type\",\"itemTypeFamily:edit\":\"/entities/things/things-type\",\"manufacturer:list\":\"/entities/things/things-type\",\"manufacturer:create\":\"/entities/things/things-type\",\"manufacturer:import\":\"/entities/things/things-type\",\"manufacturer:dataquality\":\"/entities/things/things-type\",\"manufacturer:details\":\"/entities/things/things-type\",\"manufacturer:edit\":\"/entities/things/things-type\",\"object3dModel:list\":\"/entities/surfy/global-admin\",\"object3dModel:create\":\"/entities/surfy/global-admin\",\"object3dModel:import\":\"/entities/surfy/global-admin\",\"object3dModel:dataquality\":\"/entities/surfy/global-admin\",\"object3dModel:details\":\"/entities/surfy/global-admin\",\"object3dModel:edit\":\"/entities/surfy/global-admin\",\"itemType:list\":\"/entities/things/things-type\",\"itemType:create\":\"/entities/things/things-type\",\"itemType:import\":\"/entities/things/things-type\",\"itemType:dataquality\":\"/entities/things/things-type\",\"itemType:shape-editor\":\"/entities/things/things-type\",\"itemType:avatar\":\"/entities/things/things-type\",\"itemType:details\":\"/entities/things/things-type\",\"itemType:edit\":\"/entities/things/things-type\",\"itemType:dq-not-used\":\"/entities/things/things-type/dataquality\",\"itemType:dq-uniq-name\":\"/entities/things/things-type/dataquality\",\"itemType:dq-family-tenant-consistency\":\"/entities/things/things-type/dataquality\",\"building:cards\":\"/entities/spaces\",\"building:pictures\":\"/entities/spaces\",\"building:3d-cards\":\"/entities/spaces\",\"building:gmap\":\"/entities/spaces\",\"building:3d-map\":\"/entities/spaces\",\"building:assets\":\"/entities/spaces\",\"building:list\":\"/entities/spaces\",\"building:create\":\"/entities/spaces\",\"building:import\":\"/entities/spaces\",\"building:dataquality\":\"/entities/spaces\",\"building:cuby\":\"/entities/spaces\",\"building:dashboard\":\"/entities/spaces\",\"building:inventory\":\"/entities/spaces\",\"building:cost-distribution-by-cost-center\":\"/entities/spaces\",\"building:clone\":\"/entities/spaces\",\"building:building-3d-gmap\":\"/entities/spaces\",\"building:building-ifc\":\"/entities/spaces\",\"building:building-dxf-importer\":\"/entities/spaces\",\"building:details\":\"/entities/spaces\",\"building:edit\":\"/entities/spaces\",\"building:dq-building-3d-eligibility\":\"/entities/spaces/dataquality\",\"mapScale:list\":\"/entities/spaces\",\"mapScale:create\":\"/entities/spaces\",\"mapScale:import\":\"/entities/spaces\",\"mapScale:dataquality\":\"/entities/spaces\",\"mapScale:details\":\"/entities/spaces\",\"mapScale:edit\":\"/entities/spaces\",\"mapScale:dq-not-used\":\"/entities/spaces/dataquality\",\"mapScale:dq-uniq-name\":\"/entities/spaces/dataquality\",\"structure:list\":\"/entities/spaces\",\"structure:create\":\"/entities/spaces\",\"structure:import\":\"/entities/spaces\",\"structure:dataquality\":\"/entities/spaces\",\"structure:editor\":\"/entities/spaces\",\"structure:gmap-calibrate\":\"/entities/spaces\",\"structure:details\":\"/entities/spaces\",\"structure:edit\":\"/entities/spaces\",\"structure:dq-structure-transform-without-anchor\":\"/entities/spaces/dataquality\",\"structurePoint:list\":\"/entities/spaces/space-points\",\"structurePoint:create\":\"/entities/spaces/space-points\",\"structurePoint:import\":\"/entities/spaces/space-points\",\"structurePoint:dataquality\":\"/entities/spaces/space-points\",\"structurePoint:details\":\"/entities/spaces/space-points\",\"structurePoint:edit\":\"/entities/spaces/space-points\",\"floor:list\":\"/entities/spaces\",\"floor:create\":\"/entities/spaces\",\"floor:import\":\"/entities/spaces\",\"floor:dataquality\":\"/entities/spaces\",\"floor:map\":\"/entities/spaces\",\"floor:cuby\":\"/entities/spaces\",\"floor:geojson\":\"/entities/spaces\",\"floor:simple-layout\":\"/entities/spaces\",\"floor:standalone-2d-map\":\"/entities/spaces\",\"floor:details\":\"/entities/spaces\",\"floor:edit\":\"/entities/spaces\",\"distributionCostType:list\":\"/entities/admin/types\",\"distributionCostType:create\":\"/entities/admin/types\",\"distributionCostType:import\":\"/entities/admin/types\",\"distributionCostType:dataquality\":\"/entities/admin/types\",\"distributionCostType:details\":\"/entities/admin/types\",\"distributionCostType:edit\":\"/entities/admin/types\",\"roomTypeGroup:list\":\"/entities/surfy/global-admin\",\"roomTypeGroup:create\":\"/entities/surfy/global-admin\",\"roomTypeGroup:import\":\"/entities/surfy/global-admin\",\"roomTypeGroup:dataquality\":\"/entities/surfy/global-admin\",\"roomTypeGroup:details\":\"/entities/surfy/global-admin\",\"roomTypeGroup:edit\":\"/entities/surfy/global-admin\",\"roomType:list\":\"/entities/admin/types/room-types\",\"roomType:create\":\"/entities/admin/types/room-types\",\"roomType:import\":\"/entities/admin/types/room-types\",\"roomType:dataquality\":\"/entities/admin/types/room-types\",\"roomType:details\":\"/entities/admin/types/room-types\",\"roomType:edit\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:list\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:create\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:import\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:dataquality\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:details\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:edit\":\"/entities/admin/types/room-types\",\"roomTypeGroupFloor:list\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:create\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:import\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:details\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:edit\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:list\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:create\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:import\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:details\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:edit\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"costCenter:list\":\"/entities/admin/types\",\"costCenter:create\":\"/entities/admin/types\",\"costCenter:import\":\"/entities/admin/types\",\"costCenter:dataquality\":\"/entities/admin/types\",\"costCenter:details\":\"/entities/admin/types\",\"costCenter:edit\":\"/entities/admin/types\",\"costCenterBuilding:list\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:create\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:import\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:details\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:edit\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:list\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:create\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:import\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:dataquality\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:details\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:edit\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"room:meeting-rooms\":\"/entities/spaces\",\"room:list\":\"/entities/spaces\",\"room:create\":\"/entities/spaces\",\"room:import\":\"/entities/spaces\",\"room:dataquality\":\"/entities/spaces\",\"room:details\":\"/entities/spaces\",\"room:edit\":\"/entities/spaces\",\"room:dq-organization-to-room\":\"/entities/spaces/dataquality\",\"room:dq-uniq-name\":\"/entities/spaces/dataquality\",\"room:dq-no-point\":\"/entities/spaces/dataquality\",\"room:dq-capacity-equals-seats-count\":\"/entities/spaces/dataquality\",\"room:dq-capacity-gt-0\":\"/entities/spaces/dataquality\",\"roomPoint:list\":\"/entities/spaces/space-points\",\"roomPoint:create\":\"/entities/spaces/space-points\",\"roomPoint:import\":\"/entities/spaces/space-points\",\"roomPoint:dataquality\":\"/entities/spaces/space-points\",\"roomPoint:details\":\"/entities/spaces/space-points\",\"roomPoint:edit\":\"/entities/spaces/space-points\",\"roomPoint:dq-uniq-position\":\"/entities/spaces/space-points/dataquality\",\"roomPoint:dq-not-used\":\"/entities/spaces/space-points/dataquality\",\"roomPointRoom:list\":\"/entities/spaces/space-points\",\"roomPointRoom:create\":\"/entities/spaces/space-points\",\"roomPointRoom:import\":\"/entities/spaces/space-points\",\"roomPointRoom:dataquality\":\"/entities/spaces/space-points\",\"roomPointRoom:details\":\"/entities/spaces/space-points\",\"roomPointRoom:edit\":\"/entities/spaces/space-points\",\"roomPointSegmentType:list\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:create\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:import\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:dataquality\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:details\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:edit\":\"/entities/surfy/global-admin\",\"roomPointSegment:list\":\"/entities/spaces\",\"roomPointSegment:create\":\"/entities/spaces\",\"roomPointSegment:import\":\"/entities/spaces\",\"roomPointSegment:dataquality\":\"/entities/spaces\",\"roomPointSegment:details\":\"/entities/spaces\",\"roomPointSegment:edit\":\"/entities/spaces\",\"roomPointSegment:dq-not-uniq\":\"/entities/spaces/dataquality\",\"roomPointSegment:dq-point-not-on-same-floor\":\"/entities/spaces/dataquality\",\"itemTypePoint:list\":\"/entities/things/things-type\",\"itemTypePoint:create\":\"/entities/things/things-type\",\"itemTypePoint:import\":\"/entities/things/things-type\",\"itemTypePoint:dataquality\":\"/entities/things/things-type\",\"itemTypePoint:details\":\"/entities/things/things-type\",\"itemTypePoint:edit\":\"/entities/things/things-type\",\"dimensionType:list\":\"/entities/admin/dimensions\",\"dimensionType:create\":\"/entities/admin/dimensions\",\"dimensionType:import\":\"/entities/admin/dimensions\",\"dimensionType:dataquality\":\"/entities/admin/dimensions\",\"dimensionType:details\":\"/entities/admin/dimensions\",\"dimensionType:edit\":\"/entities/admin/dimensions\",\"dimension:list\":\"/entities/admin/dimensions\",\"dimension:create\":\"/entities/admin/dimensions\",\"dimension:import\":\"/entities/admin/dimensions\",\"dimension:dataquality\":\"/entities/admin/dimensions\",\"dimension:details\":\"/entities/admin/dimensions\",\"dimension:edit\":\"/entities/admin/dimensions\",\"dimension:dq-missing-color\":\"/entities/admin/dimensions/dataquality\",\"dimensionRoom:list\":\"/entities/admin/dimensions\",\"dimensionRoom:create\":\"/entities/admin/dimensions\",\"dimensionRoom:import\":\"/entities/admin/dimensions\",\"dimensionRoom:dataquality\":\"/entities/admin/dimensions\",\"dimensionRoom:details\":\"/entities/admin/dimensions\",\"dimensionRoom:edit\":\"/entities/admin/dimensions\",\"dimensionRoom:dq-wrong-dimension-type\":\"/entities/admin/dimensions/dataquality\",\"dimensionFloor:list\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:create\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:import\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:dataquality\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:details\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:edit\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:list\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:create\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:import\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:details\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:edit\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"factType:list\":\"/entities/spaces/building-facts\",\"factType:create\":\"/entities/spaces/building-facts\",\"factType:import\":\"/entities/spaces/building-facts\",\"factType:dataquality\":\"/entities/spaces/building-facts\",\"factType:details\":\"/entities/spaces/building-facts\",\"factType:edit\":\"/entities/spaces/building-facts\",\"fact:list\":\"/entities/spaces/building-facts\",\"fact:create\":\"/entities/spaces/building-facts\",\"fact:import\":\"/entities/spaces/building-facts\",\"fact:dataquality\":\"/entities/spaces/building-facts\",\"fact:details\":\"/entities/spaces/building-facts\",\"fact:edit\":\"/entities/spaces/building-facts\",\"personState:list\":\"/entities/human/person-type\",\"personState:create\":\"/entities/human/person-type\",\"personState:import\":\"/entities/human/person-type\",\"personState:dataquality\":\"/entities/human/person-type\",\"personState:details\":\"/entities/human/person-type\",\"personState:edit\":\"/entities/human/person-type\",\"personSecurityProfile:list\":\"/entities/human/person-type\",\"personSecurityProfile:create\":\"/entities/human/person-type\",\"personSecurityProfile:import\":\"/entities/human/person-type\",\"personSecurityProfile:dataquality\":\"/entities/human/person-type\",\"personSecurityProfile:details\":\"/entities/human/person-type\",\"personSecurityProfile:edit\":\"/entities/human/person-type\",\"personType:list\":\"/entities/surfy/global-admin\",\"personType:create\":\"/entities/surfy/global-admin\",\"personType:import\":\"/entities/surfy/global-admin\",\"personType:dataquality\":\"/entities/surfy/global-admin\",\"personType:details\":\"/entities/surfy/global-admin\",\"personType:edit\":\"/entities/surfy/global-admin\",\"person:list\":\"/entities/human\",\"person:create\":\"/entities/human\",\"person:import\":\"/entities/human\",\"person:dataquality\":\"/entities/human\",\"person:home\":\"/entities/human\",\"person:person-bookings\":\"/entities/human\",\"person:details\":\"/entities/human\",\"person:edit\":\"/entities/human\",\"person:dq-only-associated-to-building\":\"/entities/human/dataquality\",\"person:dq-near-end-date\":\"/entities/human/dataquality\",\"person:dq-no-affectations\":\"/entities/human/dataquality\",\"person:dq-person-duplicate\":\"/entities/human/dataquality\",\"person:dq-not-affectable-end-date-expired\":\"/entities/human/dataquality\",\"personToPersonType:list\":\"/entities/human/person-relations\",\"personToPersonType:create\":\"/entities/human/person-relations\",\"personToPersonType:import\":\"/entities/human/person-relations\",\"personToPersonType:dataquality\":\"/entities/human/person-relations\",\"personToPersonType:details\":\"/entities/human/person-relations\",\"personToPersonType:edit\":\"/entities/human/person-relations\",\"personToPerson:list\":\"/entities/human/person-relations\",\"personToPerson:create\":\"/entities/human/person-relations\",\"personToPerson:import\":\"/entities/human/person-relations\",\"personToPerson:dataquality\":\"/entities/human/person-relations\",\"personToPerson:details\":\"/entities/human/person-relations\",\"personToPerson:edit\":\"/entities/human/person-relations\",\"vehicleType:list\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:create\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:import\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:dataquality\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:details\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:edit\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:list\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:create\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:import\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:dataquality\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:details\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:edit\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicle:list\":\"/entities/human/person-vehicles\",\"vehicle:create\":\"/entities/human/person-vehicles\",\"vehicle:import\":\"/entities/human/person-vehicles\",\"vehicle:dataquality\":\"/entities/human/person-vehicles\",\"vehicle:details\":\"/entities/human/person-vehicles\",\"vehicle:edit\":\"/entities/human/person-vehicles\",\"personToVehicle:list\":\"/entities/human/person-vehicles\",\"personToVehicle:create\":\"/entities/human/person-vehicles\",\"personToVehicle:import\":\"/entities/human/person-vehicles\",\"personToVehicle:dataquality\":\"/entities/human/person-vehicles\",\"personToVehicle:details\":\"/entities/human/person-vehicles\",\"personToVehicle:edit\":\"/entities/human/person-vehicles\",\"roomAffectation:room-mouvement-matrix-import\":\"/entities/affectations\",\"roomAffectation:list\":\"/entities/affectations\",\"roomAffectation:create\":\"/entities/affectations\",\"roomAffectation:import\":\"/entities/affectations\",\"roomAffectation:dataquality\":\"/entities/affectations\",\"roomAffectation:details\":\"/entities/affectations\",\"roomAffectation:edit\":\"/entities/affectations\",\"workplaceType:list\":\"/entities/things/things-type\",\"workplaceType:create\":\"/entities/things/things-type\",\"workplaceType:import\":\"/entities/things/things-type\",\"workplaceType:dataquality\":\"/entities/things/things-type\",\"workplaceType:editor\":\"/entities/things/things-type\",\"workplaceType:avatar\":\"/entities/things/things-type\",\"workplaceType:details\":\"/entities/things/things-type\",\"workplaceType:edit\":\"/entities/things/things-type\",\"workplaceType:dq-not-used\":\"/entities/things/things-type/dataquality\",\"workplaceType:dq-workplace-type-item-type-position-z\":\"/entities/things/things-type/dataquality\",\"workplaceUsageType:list\":\"/entities/things/things-type\",\"workplaceUsageType:create\":\"/entities/things/things-type\",\"workplaceUsageType:import\":\"/entities/things/things-type\",\"workplaceUsageType:dataquality\":\"/entities/things/things-type\",\"workplaceUsageType:details\":\"/entities/things/things-type\",\"workplaceUsageType:edit\":\"/entities/things/things-type\",\"workplaceTypeItemType:list\":\"/entities/things/things-type\",\"workplaceTypeItemType:create\":\"/entities/things/things-type\",\"workplaceTypeItemType:import\":\"/entities/things/things-type\",\"workplaceTypeItemType:dataquality\":\"/entities/things/things-type\",\"workplaceTypeItemType:details\":\"/entities/things/things-type\",\"workplaceTypeItemType:edit\":\"/entities/things/things-type\",\"workplace:list\":\"/entities/things\",\"workplace:create\":\"/entities/things\",\"workplace:import\":\"/entities/things\",\"workplace:dataquality\":\"/entities/things\",\"workplace:assign-current-user\":\"/entities/things\",\"workplace:details\":\"/entities/things\",\"workplace:edit\":\"/entities/things\",\"workplace:dq-workplace-transit-with-affectations\":\"/entities/things/dataquality\",\"item:list\":\"/entities/things\",\"item:create\":\"/entities/things\",\"item:import\":\"/entities/things\",\"item:dataquality\":\"/entities/things\",\"item:details\":\"/entities/things\",\"item:edit\":\"/entities/things\",\"item:dq-item-not-in-workplace-room\":\"/entities/things/dataquality\",\"workplaceAffectation:workplace-mouvement-matrix-import\":\"/entities/affectations\",\"workplaceAffectation:list\":\"/entities/affectations\",\"workplaceAffectation:create\":\"/entities/affectations\",\"workplaceAffectation:import\":\"/entities/affectations\",\"workplaceAffectation:dataquality\":\"/entities/affectations\",\"workplaceAffectation:details\":\"/entities/affectations\",\"workplaceAffectation:edit\":\"/entities/affectations\",\"workplaceAffectation:dq-workplace-affectation-latest\":\"/entities/affectations/dataquality\",\"organizationFloor:list\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:create\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:import\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:dataquality\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:details\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:edit\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:list\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:create\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:import\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:details\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:edit\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"roomTypeFloor:list\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:create\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:import\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:details\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:edit\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:list\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:create\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:import\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:details\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:edit\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"itemToPerson:list\":\"/entities/affectations\",\"itemToPerson:create\":\"/entities/affectations\",\"itemToPerson:import\":\"/entities/affectations\",\"itemToPerson:dataquality\":\"/entities/affectations\",\"itemToPerson:details\":\"/entities/affectations\",\"itemToPerson:edit\":\"/entities/affectations\",\"personToBuilding:list\":\"/entities/affectations\",\"personToBuilding:create\":\"/entities/affectations\",\"personToBuilding:import\":\"/entities/affectations\",\"personToBuilding:dataquality\":\"/entities/affectations\",\"personToBuilding:details\":\"/entities/affectations\",\"personToBuilding:edit\":\"/entities/affectations\",\"dimensionToPerson:list\":\"/entities/affectations\",\"dimensionToPerson:create\":\"/entities/affectations\",\"dimensionToPerson:import\":\"/entities/affectations\",\"dimensionToPerson:dataquality\":\"/entities/affectations\",\"dimensionToPerson:details\":\"/entities/affectations\",\"dimensionToPerson:edit\":\"/entities/affectations\",\"dimensionToPerson:dq-dimension-to-person-latest\":\"/entities/affectations/dataquality\",\"dimensionTypeToBuilding:list\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:create\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:import\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:dataquality\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:details\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:edit\":\"/entities/admin/dimensions\",\"workingLocation:list\":\"/entities/surfy/global-admin\",\"workingLocation:create\":\"/entities/surfy/global-admin\",\"workingLocation:import\":\"/entities/surfy/global-admin\",\"workingLocation:dataquality\":\"/entities/surfy/global-admin\",\"workingLocation:details\":\"/entities/surfy/global-admin\",\"workingLocation:edit\":\"/entities/surfy/global-admin\",\"personWorkingLocation:my-planning\":\"/entities/planning\",\"personWorkingLocation:obo-planning\":\"/entities/planning\",\"personWorkingLocation:guest-planning\":\"/entities/planning\",\"personWorkingLocation:booking-maps\":\"/entities/planning\",\"personWorkingLocation:pwl-dimension\":\"/entities/planning\",\"personWorkingLocation:list\":\"/entities/planning\",\"personWorkingLocation:create\":\"/entities/planning\",\"personWorkingLocation:import\":\"/entities/planning\",\"personWorkingLocation:dataquality\":\"/entities/planning\",\"personWorkingLocation:details\":\"/entities/planning\",\"personWorkingLocation:edit\":\"/entities/planning\",\"personToWorkplaceBooking:dashboard-index\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:list\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:create\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:import\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:dataquality\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:details\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:edit\":\"/entities/planning/bookings\",\"personToRoomBooking:list\":\"/entities/planning/bookings\",\"personToRoomBooking:create\":\"/entities/planning/bookings\",\"personToRoomBooking:import\":\"/entities/planning/bookings\",\"personToRoomBooking:dataquality\":\"/entities/planning/bookings\",\"personToRoomBooking:details\":\"/entities/planning/bookings\",\"personToRoomBooking:edit\":\"/entities/planning/bookings\",\"personToDimensionBooking:list\":\"/entities/planning/bookings\",\"personToDimensionBooking:create\":\"/entities/planning/bookings\",\"personToDimensionBooking:import\":\"/entities/planning/bookings\",\"personToDimensionBooking:dataquality\":\"/entities/planning/bookings\",\"personToDimensionBooking:details\":\"/entities/planning/bookings\",\"personToDimensionBooking:edit\":\"/entities/planning/bookings\",\"personCompanyMission:list\":\"/entities/admin/person-companies\",\"personCompanyMission:create\":\"/entities/admin/person-companies\",\"personCompanyMission:import\":\"/entities/admin/person-companies\",\"personCompanyMission:dataquality\":\"/entities/admin/person-companies\",\"personCompanyMission:details\":\"/entities/admin/person-companies\",\"personCompanyMission:edit\":\"/entities/admin/person-companies\",\"personCompanyToItemType:list\":\"/entities/admin/person-companies\",\"personCompanyToItemType:create\":\"/entities/admin/person-companies\",\"personCompanyToItemType:import\":\"/entities/admin/person-companies\",\"personCompanyToItemType:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToItemType:details\":\"/entities/admin/person-companies\",\"personCompanyToItemType:edit\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:list\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:create\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:import\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:details\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:edit\":\"/entities/admin/person-companies\",\"personCompanyToItem:list\":\"/entities/admin/person-companies\",\"personCompanyToItem:create\":\"/entities/admin/person-companies\",\"personCompanyToItem:import\":\"/entities/admin/person-companies\",\"personCompanyToItem:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToItem:details\":\"/entities/admin/person-companies\",\"personCompanyToItem:edit\":\"/entities/admin/person-companies\",\"legend:list\":\"/entities/admin\",\"legend:create\":\"/entities/admin\",\"legend:import\":\"/entities/admin\",\"legend:dataquality\":\"/entities/admin\",\"legend:details\":\"/entities/admin\",\"legend:edit\":\"/entities/admin\",\"openerPostMessageHost:list\":\"/entities/admin/api\",\"openerPostMessageHost:create\":\"/entities/admin/api\",\"openerPostMessageHost:import\":\"/entities/admin/api\",\"openerPostMessageHost:dataquality\":\"/entities/admin/api\",\"openerPostMessageHost:details\":\"/entities/admin/api\",\"openerPostMessageHost:edit\":\"/entities/admin/api\",\"companyWorkingLocation:list\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:create\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:import\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:dataquality\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:details\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:edit\":\"/entities/planning/planning-admin\",\"bookingVehicleConfiguration:list\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:create\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:import\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:dataquality\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:details\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:edit\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:list\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:create\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:import\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:dataquality\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:details\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:edit\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"jupObjectType:list\":\"/entities/surfy/global-security\",\"jupObjectType:create\":\"/entities/surfy/global-security\",\"jupObjectType:import\":\"/entities/surfy/global-security\",\"jupObjectType:dataquality\":\"/entities/surfy/global-security\",\"jupObjectType:details\":\"/entities/surfy/global-security\",\"jupObjectType:edit\":\"/entities/surfy/global-security\",\"jupUiView:list\":\"/entities/surfy/global-security\",\"jupUiView:create\":\"/entities/surfy/global-security\",\"jupUiView:import\":\"/entities/surfy/global-security\",\"jupUiView:dataquality\":\"/entities/surfy/global-security\",\"jupUiView:details\":\"/entities/surfy/global-security\",\"jupUiView:edit\":\"/entities/surfy/global-security\",\"jupRole:help\":\"/entities/surfy/global-security\",\"jupRole:azure-sync\":\"/entities/surfy/global-security\",\"jupRole:list\":\"/entities/surfy/global-security\",\"jupRole:create\":\"/entities/surfy/global-security\",\"jupRole:import\":\"/entities/surfy/global-security\",\"jupRole:dataquality\":\"/entities/surfy/global-security\",\"jupRole:matrix\":\"/entities/surfy/global-security\",\"jupRole:details\":\"/entities/surfy/global-security\",\"jupRole:edit\":\"/entities/surfy/global-security\",\"jupUiOption:list\":\"/entities/surfy/global-security\",\"jupUiOption:create\":\"/entities/surfy/global-security\",\"jupUiOption:import\":\"/entities/surfy/global-security\",\"jupUiOption:dataquality\":\"/entities/surfy/global-security\",\"jupUiOption:details\":\"/entities/surfy/global-security\",\"jupUiOption:edit\":\"/entities/surfy/global-security\",\"jupUiOperation:list\":\"/entities/surfy/global-security\",\"jupUiOperation:create\":\"/entities/surfy/global-security\",\"jupUiOperation:import\":\"/entities/surfy/global-security\",\"jupUiOperation:dataquality\":\"/entities/surfy/global-security\",\"jupUiOperation:details\":\"/entities/surfy/global-security\",\"jupUiOperation:edit\":\"/entities/surfy/global-security\",\"contentRole:list\":\"/entities/admin/security\",\"contentRole:create\":\"/entities/admin/security\",\"contentRole:import\":\"/entities/admin/security\",\"contentRole:dataquality\":\"/entities/admin/security\",\"contentRole:details\":\"/entities/admin/security\",\"contentRole:edit\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:list\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:create\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:import\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:dataquality\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:details\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:edit\":\"/entities/admin/security\",\"jupRoleToJupUiView:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:list\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:create\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:import\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:details\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:edit\":\"/entities/surfy/global-security\",\"contentRoleToBuilding:list\":\"/entities/admin/security\",\"contentRoleToBuilding:create\":\"/entities/admin/security\",\"contentRoleToBuilding:import\":\"/entities/admin/security\",\"contentRoleToBuilding:dataquality\":\"/entities/admin/security\",\"contentRoleToBuilding:details\":\"/entities/admin/security\",\"contentRoleToBuilding:edit\":\"/entities/admin/security\",\"contentRoleToUserCompany:list\":\"/entities/admin/security\",\"contentRoleToUserCompany:create\":\"/entities/admin/security\",\"contentRoleToUserCompany:import\":\"/entities/admin/security\",\"contentRoleToUserCompany:dataquality\":\"/entities/admin/security\",\"contentRoleToUserCompany:details\":\"/entities/admin/security\",\"contentRoleToUserCompany:edit\":\"/entities/admin/security\",\"contentRoleToFloor:list\":\"/entities/admin/security\",\"contentRoleToFloor:create\":\"/entities/admin/security\",\"contentRoleToFloor:import\":\"/entities/admin/security\",\"contentRoleToFloor:dataquality\":\"/entities/admin/security\",\"contentRoleToFloor:details\":\"/entities/admin/security\",\"contentRoleToFloor:edit\":\"/entities/admin/security\",\"partnerApiCredential:list\":\"/entities/admin/api\",\"partnerApiCredential:create\":\"/entities/admin/api\",\"partnerApiCredential:import\":\"/entities/admin/api\",\"partnerApiCredential:dataquality\":\"/entities/admin/api\",\"partnerApiCredential:details\":\"/entities/admin/api\",\"partnerApiCredential:edit\":\"/entities/admin/api\",\"apiUser:list\":\"/entities/admin/api\",\"apiUser:create\":\"/entities/admin/api\",\"apiUser:import\":\"/entities/admin/api\",\"apiUser:dataquality\":\"/entities/admin/api\",\"apiUser:edit-fetch-loop-repro\":\"/entities/admin/api\",\"apiUser:details\":\"/entities/admin/api\",\"apiUser:edit\":\"/entities/admin/api\",\"apiUserToJupRole:list\":\"/entities/admin/api\",\"apiUserToJupRole:create\":\"/entities/admin/api\",\"apiUserToJupRole:import\":\"/entities/admin/api\",\"apiUserToJupRole:dataquality\":\"/entities/admin/api\",\"apiUserToJupRole:details\":\"/entities/admin/api\",\"apiUserToJupRole:edit\":\"/entities/admin/api\",\"apiUserToContentRole:list\":\"/entities/admin/api\",\"apiUserToContentRole:create\":\"/entities/admin/api\",\"apiUserToContentRole:import\":\"/entities/admin/api\",\"apiUserToContentRole:dataquality\":\"/entities/admin/api\",\"apiUserToContentRole:details\":\"/entities/admin/api\",\"apiUserToContentRole:edit\":\"/entities/admin/api\",\"jupUiTenantOperation:list\":\"/entities/admin/security\",\"jupUiTenantOperation:create\":\"/entities/admin/security\",\"jupUiTenantOperation:import\":\"/entities/admin/security\",\"jupUiTenantOperation:dataquality\":\"/entities/admin/security\",\"jupUiTenantOperation:details\":\"/entities/admin/security\",\"jupUiTenantOperation:edit\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:list\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:create\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:import\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:dataquality\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:details\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:edit\":\"/entities/admin/security\",\"authentificationConnection:list\":\"/entities/surfy/global-security\",\"authentificationConnection:create\":\"/entities/surfy/global-security\",\"authentificationConnection:import\":\"/entities/surfy/global-security\",\"authentificationConnection:dataquality\":\"/entities/surfy/global-security\",\"authentificationConnection:details\":\"/entities/surfy/global-security\",\"authentificationConnection:edit\":\"/entities/surfy/global-security\",\"userRegistrationTenantRule:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:details\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:edit\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:details\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:edit\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:details\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:edit\":\"/entities/admin/authentification\",\"partnerExportMappingConfiguration:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:edit\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:edit\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:edit\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:edit\":\"/entities/admin/partner-export-mapping\",\"jupRoleToJupUiLayout:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:edit\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:list\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:create\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:import\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:dataquality\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:details\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:edit\":\"/entities/surfy/global-security\",\"itemFact:list\":\"/entities/things/items-fact\",\"itemFact:create\":\"/entities/things/items-fact\",\"itemFact:import\":\"/entities/things/items-fact\",\"itemFact:dataquality\":\"/entities/things/items-fact\",\"itemFact:details\":\"/entities/things/items-fact\",\"itemFact:edit\":\"/entities/things/items-fact\",\"featureFamily:list\":\"/entities/help\",\"featureFamily:create\":\"/entities/help\",\"featureFamily:import\":\"/entities/help\",\"featureFamily:dataquality\":\"/entities/help\",\"featureFamily:details\":\"/entities/help\",\"featureFamily:edit\":\"/entities/help\",\"featureGroup:list\":\"/entities/help\",\"featureGroup:create\":\"/entities/help\",\"featureGroup:import\":\"/entities/help\",\"featureGroup:dataquality\":\"/entities/help\",\"featureGroup:details\":\"/entities/help\",\"featureGroup:edit\":\"/entities/help\",\"feature:list\":\"/entities/help\",\"feature:create\":\"/entities/help\",\"feature:import\":\"/entities/help\",\"feature:dataquality\":\"/entities/help\",\"feature:details\":\"/entities/help\",\"feature:edit\":\"/entities/help\"}")
+	viewPathMapping: /* @__PURE__ */ JSON.parse("{\"occupancyStatus:list\":\"/entities/surfy/global-admin\",\"occupancyStatus:create\":\"/entities/surfy/global-admin\",\"occupancyStatus:import\":\"/entities/surfy/global-admin\",\"occupancyStatus:dataquality\":\"/entities/surfy/global-admin\",\"occupancyStatus:details\":\"/entities/surfy/global-admin\",\"occupancyStatus:edit\":\"/entities/surfy/global-admin\",\"user:list\":\"/entities/surfy/global-security\",\"user:create\":\"/entities/surfy/global-security\",\"user:import\":\"/entities/surfy/global-security\",\"user:dataquality\":\"/entities/surfy/global-security\",\"user:details\":\"/entities/surfy/global-security\",\"user:edit\":\"/entities/surfy/global-security\",\"userRefreshToken:list\":null,\"userRefreshToken:create\":null,\"userRefreshToken:import\":null,\"userRefreshToken:dataquality\":null,\"userRefreshToken:details\":null,\"userRefreshToken:edit\":null,\"companyType:list\":\"/entities/surfy/global-admin\",\"companyType:create\":\"/entities/surfy/global-admin\",\"companyType:import\":\"/entities/surfy/global-admin\",\"companyType:dataquality\":\"/entities/surfy/global-admin\",\"companyType:details\":\"/entities/surfy/global-admin\",\"companyType:edit\":\"/entities/surfy/global-admin\",\"company:cards\":\"/entities/admin\",\"company:people-info\":\"/entities/admin\",\"company:usage\":\"/entities/admin\",\"company:booking-reporting\":\"/entities/admin\",\"company:dataquality-index\":\"/entities/admin\",\"company:dq-reports-overview-duplicate-company\":\"/entities/admin\",\"company:list\":\"/entities/admin\",\"company:create\":\"/entities/admin\",\"company:import\":\"/entities/admin\",\"company:dataquality\":\"/entities/admin\",\"company:dashboard\":\"/entities/admin\",\"company:soc-tenant\":\"/entities/admin\",\"company:details\":\"/entities/admin\",\"company:edit\":\"/entities/admin\",\"company:dq-fix-inventory\":\"/entities/admin/dataquality\",\"company:dq-shapes-position\":\"/entities/admin/dataquality\",\"campus:cards\":\"/entities/spaces\",\"campus:list\":\"/entities/spaces\",\"campus:create\":\"/entities/spaces\",\"campus:import\":\"/entities/spaces\",\"campus:dataquality\":\"/entities/spaces\",\"campus:details\":\"/entities/spaces\",\"campus:edit\":\"/entities/spaces\",\"roomConnectorType:list\":\"/entities/admin/connectors\",\"roomConnectorType:create\":\"/entities/admin/connectors\",\"roomConnectorType:import\":\"/entities/admin/connectors\",\"roomConnectorType:dataquality\":\"/entities/admin/connectors\",\"roomConnectorType:details\":\"/entities/admin/connectors\",\"roomConnectorType:edit\":\"/entities/admin/connectors\",\"roomConnector:list\":\"/entities/admin/connectors\",\"roomConnector:create\":\"/entities/admin/connectors\",\"roomConnector:import\":\"/entities/admin/connectors\",\"roomConnector:dataquality\":\"/entities/admin/connectors\",\"roomConnector:details\":\"/entities/admin/connectors\",\"roomConnector:edit\":\"/entities/admin/connectors\",\"userCompany:list\":\"/entities/admin/security\",\"userCompany:create\":\"/entities/admin/security\",\"userCompany:import\":\"/entities/admin/security\",\"userCompany:dataquality\":\"/entities/admin/security\",\"userCompany:details\":\"/entities/admin/security\",\"userCompany:edit\":\"/entities/admin/security\",\"personGender:list\":\"/entities/surfy\",\"personGender:create\":\"/entities/surfy\",\"personGender:import\":\"/entities/surfy\",\"personGender:dataquality\":\"/entities/surfy\",\"personGender:details\":\"/entities/surfy\",\"personGender:edit\":\"/entities/surfy\",\"personCompany:list\":\"/entities/admin/person-companies\",\"personCompany:create\":\"/entities/admin/person-companies\",\"personCompany:import\":\"/entities/admin/person-companies\",\"personCompany:dataquality\":\"/entities/admin/person-companies\",\"personCompany:details\":\"/entities/admin/person-companies\",\"personCompany:edit\":\"/entities/admin/person-companies\",\"jupUiLayout:list\":\"/entities/surfy/global-security\",\"jupUiLayout:create\":\"/entities/surfy/global-security\",\"jupUiLayout:import\":\"/entities/surfy/global-security\",\"jupUiLayout:dataquality\":\"/entities/surfy/global-security\",\"jupUiLayout:details\":\"/entities/surfy/global-security\",\"jupUiLayout:edit\":\"/entities/surfy/global-security\",\"buildingType:list\":\"/entities/admin/types\",\"buildingType:create\":\"/entities/admin/types\",\"buildingType:import\":\"/entities/admin/types\",\"buildingType:dataquality\":\"/entities/admin/types\",\"buildingType:details\":\"/entities/admin/types\",\"buildingType:edit\":\"/entities/admin/types\",\"organization:hierarchy\":\"/entities/organizations\",\"organization:list\":\"/entities/organizations\",\"organization:create\":\"/entities/organizations\",\"organization:import\":\"/entities/organizations\",\"organization:dataquality\":\"/entities/organizations\",\"organization:details\":\"/entities/organizations\",\"organization:edit\":\"/entities/organizations\",\"organization:dq-organization-hierarchy\":\"/entities/organizations/dataquality\",\"organization:dq-level1-not-used\":\"/entities/organizations/dataquality\",\"itemTypeFamily:list\":\"/entities/things/things-type\",\"itemTypeFamily:create\":\"/entities/things/things-type\",\"itemTypeFamily:import\":\"/entities/things/things-type\",\"itemTypeFamily:dataquality\":\"/entities/things/things-type\",\"itemTypeFamily:details\":\"/entities/things/things-type\",\"itemTypeFamily:edit\":\"/entities/things/things-type\",\"manufacturer:list\":\"/entities/things/things-type\",\"manufacturer:create\":\"/entities/things/things-type\",\"manufacturer:import\":\"/entities/things/things-type\",\"manufacturer:dataquality\":\"/entities/things/things-type\",\"manufacturer:details\":\"/entities/things/things-type\",\"manufacturer:edit\":\"/entities/things/things-type\",\"object3dModel:list\":\"/entities/surfy/global-admin\",\"object3dModel:create\":\"/entities/surfy/global-admin\",\"object3dModel:import\":\"/entities/surfy/global-admin\",\"object3dModel:dataquality\":\"/entities/surfy/global-admin\",\"object3dModel:details\":\"/entities/surfy/global-admin\",\"object3dModel:edit\":\"/entities/surfy/global-admin\",\"itemType:list\":\"/entities/things/things-type\",\"itemType:create\":\"/entities/things/things-type\",\"itemType:import\":\"/entities/things/things-type\",\"itemType:dataquality\":\"/entities/things/things-type\",\"itemType:shape-editor\":\"/entities/things/things-type\",\"itemType:avatar\":\"/entities/things/things-type\",\"itemType:details\":\"/entities/things/things-type\",\"itemType:edit\":\"/entities/things/things-type\",\"itemType:dq-not-used\":\"/entities/things/things-type/dataquality\",\"itemType:dq-uniq-name\":\"/entities/things/things-type/dataquality\",\"itemType:dq-family-tenant-consistency\":\"/entities/things/things-type/dataquality\",\"building:cards\":\"/entities/spaces\",\"building:pictures\":\"/entities/spaces\",\"building:3d-cards\":\"/entities/spaces\",\"building:gmap\":\"/entities/spaces\",\"building:3d-map\":\"/entities/spaces\",\"building:assets\":\"/entities/spaces\",\"building:list\":\"/entities/spaces\",\"building:create\":\"/entities/spaces\",\"building:import\":\"/entities/spaces\",\"building:dataquality\":\"/entities/spaces\",\"building:cuby\":\"/entities/spaces\",\"building:dashboard\":\"/entities/spaces\",\"building:inventory\":\"/entities/spaces\",\"building:cost-distribution-by-cost-center\":\"/entities/spaces\",\"building:clone\":\"/entities/spaces\",\"building:building-3d-gmap\":\"/entities/spaces\",\"building:building-ifc\":\"/entities/spaces\",\"building:building-dxf-importer\":\"/entities/spaces\",\"building:details\":\"/entities/spaces\",\"building:edit\":\"/entities/spaces\",\"building:dq-building-3d-eligibility\":\"/entities/spaces/dataquality\",\"mapScale:list\":\"/entities/spaces\",\"mapScale:create\":\"/entities/spaces\",\"mapScale:import\":\"/entities/spaces\",\"mapScale:dataquality\":\"/entities/spaces\",\"mapScale:details\":\"/entities/spaces\",\"mapScale:edit\":\"/entities/spaces\",\"mapScale:dq-not-used\":\"/entities/spaces/dataquality\",\"mapScale:dq-uniq-name\":\"/entities/spaces/dataquality\",\"structure:list\":\"/entities/spaces\",\"structure:create\":\"/entities/spaces\",\"structure:import\":\"/entities/spaces\",\"structure:dataquality\":\"/entities/spaces\",\"structure:editor\":\"/entities/spaces\",\"structure:gmap-calibrate\":\"/entities/spaces\",\"structure:details\":\"/entities/spaces\",\"structure:edit\":\"/entities/spaces\",\"structure:dq-structure-transform-without-anchor\":\"/entities/spaces/dataquality\",\"structurePoint:list\":\"/entities/spaces/space-points\",\"structurePoint:create\":\"/entities/spaces/space-points\",\"structurePoint:import\":\"/entities/spaces/space-points\",\"structurePoint:dataquality\":\"/entities/spaces/space-points\",\"structurePoint:details\":\"/entities/spaces/space-points\",\"structurePoint:edit\":\"/entities/spaces/space-points\",\"floor:list\":\"/entities/spaces\",\"floor:create\":\"/entities/spaces\",\"floor:import\":\"/entities/spaces\",\"floor:dataquality\":\"/entities/spaces\",\"floor:map\":\"/entities/spaces\",\"floor:cuby\":\"/entities/spaces\",\"floor:geojson\":\"/entities/spaces\",\"floor:simple-layout\":\"/entities/spaces\",\"floor:standalone-2d-map\":\"/entities/spaces\",\"floor:details\":\"/entities/spaces\",\"floor:edit\":\"/entities/spaces\",\"distributionCostType:list\":\"/entities/admin/types\",\"distributionCostType:create\":\"/entities/admin/types\",\"distributionCostType:import\":\"/entities/admin/types\",\"distributionCostType:dataquality\":\"/entities/admin/types\",\"distributionCostType:details\":\"/entities/admin/types\",\"distributionCostType:edit\":\"/entities/admin/types\",\"roomTypeGroup:list\":\"/entities/surfy/global-admin\",\"roomTypeGroup:create\":\"/entities/surfy/global-admin\",\"roomTypeGroup:import\":\"/entities/surfy/global-admin\",\"roomTypeGroup:dataquality\":\"/entities/surfy/global-admin\",\"roomTypeGroup:details\":\"/entities/surfy/global-admin\",\"roomTypeGroup:edit\":\"/entities/surfy/global-admin\",\"roomType:list\":\"/entities/admin/types/room-types\",\"roomType:create\":\"/entities/admin/types/room-types\",\"roomType:import\":\"/entities/admin/types/room-types\",\"roomType:dataquality\":\"/entities/admin/types/room-types\",\"roomType:details\":\"/entities/admin/types/room-types\",\"roomType:edit\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:list\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:create\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:import\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:dataquality\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:details\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:edit\":\"/entities/admin/types/room-types\",\"roomTypeGroupFloor:list\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:create\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:import\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:details\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:edit\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:list\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:create\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:import\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:details\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:edit\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"costCenter:list\":\"/entities/admin/types\",\"costCenter:create\":\"/entities/admin/types\",\"costCenter:import\":\"/entities/admin/types\",\"costCenter:dataquality\":\"/entities/admin/types\",\"costCenter:details\":\"/entities/admin/types\",\"costCenter:edit\":\"/entities/admin/types\",\"costCenterBuilding:list\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:create\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:import\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:details\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:edit\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:list\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:create\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:import\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:dataquality\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:details\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:edit\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"room:meeting-rooms\":\"/entities/spaces\",\"room:list\":\"/entities/spaces\",\"room:create\":\"/entities/spaces\",\"room:import\":\"/entities/spaces\",\"room:dataquality\":\"/entities/spaces\",\"room:details\":\"/entities/spaces\",\"room:edit\":\"/entities/spaces\",\"room:dq-organization-to-room\":\"/entities/spaces/dataquality\",\"room:dq-uniq-name\":\"/entities/spaces/dataquality\",\"room:dq-no-point\":\"/entities/spaces/dataquality\",\"room:dq-capacity-equals-seats-count\":\"/entities/spaces/dataquality\",\"room:dq-capacity-gt-0\":\"/entities/spaces/dataquality\",\"roomPoint:list\":\"/entities/spaces/space-points\",\"roomPoint:create\":\"/entities/spaces/space-points\",\"roomPoint:import\":\"/entities/spaces/space-points\",\"roomPoint:dataquality\":\"/entities/spaces/space-points\",\"roomPoint:details\":\"/entities/spaces/space-points\",\"roomPoint:edit\":\"/entities/spaces/space-points\",\"roomPoint:dq-uniq-position\":\"/entities/spaces/space-points/dataquality\",\"roomPoint:dq-not-used\":\"/entities/spaces/space-points/dataquality\",\"roomPointRoom:list\":\"/entities/spaces/space-points\",\"roomPointRoom:create\":\"/entities/spaces/space-points\",\"roomPointRoom:import\":\"/entities/spaces/space-points\",\"roomPointRoom:dataquality\":\"/entities/spaces/space-points\",\"roomPointRoom:details\":\"/entities/spaces/space-points\",\"roomPointRoom:edit\":\"/entities/spaces/space-points\",\"roomPointSegmentType:list\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:create\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:import\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:dataquality\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:details\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:edit\":\"/entities/surfy/global-admin\",\"roomPointSegment:list\":\"/entities/spaces\",\"roomPointSegment:create\":\"/entities/spaces\",\"roomPointSegment:import\":\"/entities/spaces\",\"roomPointSegment:dataquality\":\"/entities/spaces\",\"roomPointSegment:details\":\"/entities/spaces\",\"roomPointSegment:edit\":\"/entities/spaces\",\"roomPointSegment:dq-not-uniq\":\"/entities/spaces/dataquality\",\"roomPointSegment:dq-point-not-on-same-floor\":\"/entities/spaces/dataquality\",\"itemTypePoint:list\":\"/entities/things/things-type\",\"itemTypePoint:create\":\"/entities/things/things-type\",\"itemTypePoint:import\":\"/entities/things/things-type\",\"itemTypePoint:dataquality\":\"/entities/things/things-type\",\"itemTypePoint:details\":\"/entities/things/things-type\",\"itemTypePoint:edit\":\"/entities/things/things-type\",\"itemTypeVisualEdge:list\":null,\"itemTypeVisualEdge:create\":null,\"itemTypeVisualEdge:import\":null,\"itemTypeVisualEdge:dataquality\":null,\"itemTypeVisualEdge:details\":null,\"itemTypeVisualEdge:edit\":null,\"dimensionType:list\":\"/entities/admin/dimensions\",\"dimensionType:create\":\"/entities/admin/dimensions\",\"dimensionType:import\":\"/entities/admin/dimensions\",\"dimensionType:dataquality\":\"/entities/admin/dimensions\",\"dimensionType:details\":\"/entities/admin/dimensions\",\"dimensionType:edit\":\"/entities/admin/dimensions\",\"dimension:list\":\"/entities/admin/dimensions\",\"dimension:create\":\"/entities/admin/dimensions\",\"dimension:import\":\"/entities/admin/dimensions\",\"dimension:dataquality\":\"/entities/admin/dimensions\",\"dimension:details\":\"/entities/admin/dimensions\",\"dimension:edit\":\"/entities/admin/dimensions\",\"dimension:dq-missing-color\":\"/entities/admin/dimensions/dataquality\",\"dimensionRoom:list\":\"/entities/admin/dimensions\",\"dimensionRoom:create\":\"/entities/admin/dimensions\",\"dimensionRoom:import\":\"/entities/admin/dimensions\",\"dimensionRoom:dataquality\":\"/entities/admin/dimensions\",\"dimensionRoom:details\":\"/entities/admin/dimensions\",\"dimensionRoom:edit\":\"/entities/admin/dimensions\",\"dimensionRoom:dq-wrong-dimension-type\":\"/entities/admin/dimensions/dataquality\",\"dimensionFloor:list\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:create\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:import\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:dataquality\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:details\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:edit\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:list\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:create\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:import\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:details\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:edit\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"factType:list\":\"/entities/spaces/building-facts\",\"factType:create\":\"/entities/spaces/building-facts\",\"factType:import\":\"/entities/spaces/building-facts\",\"factType:dataquality\":\"/entities/spaces/building-facts\",\"factType:details\":\"/entities/spaces/building-facts\",\"factType:edit\":\"/entities/spaces/building-facts\",\"fact:list\":\"/entities/spaces/building-facts\",\"fact:create\":\"/entities/spaces/building-facts\",\"fact:import\":\"/entities/spaces/building-facts\",\"fact:dataquality\":\"/entities/spaces/building-facts\",\"fact:details\":\"/entities/spaces/building-facts\",\"fact:edit\":\"/entities/spaces/building-facts\",\"personState:list\":\"/entities/human/person-type\",\"personState:create\":\"/entities/human/person-type\",\"personState:import\":\"/entities/human/person-type\",\"personState:dataquality\":\"/entities/human/person-type\",\"personState:details\":\"/entities/human/person-type\",\"personState:edit\":\"/entities/human/person-type\",\"personSecurityProfile:list\":\"/entities/human/person-type\",\"personSecurityProfile:create\":\"/entities/human/person-type\",\"personSecurityProfile:import\":\"/entities/human/person-type\",\"personSecurityProfile:dataquality\":\"/entities/human/person-type\",\"personSecurityProfile:details\":\"/entities/human/person-type\",\"personSecurityProfile:edit\":\"/entities/human/person-type\",\"personType:list\":\"/entities/surfy/global-admin\",\"personType:create\":\"/entities/surfy/global-admin\",\"personType:import\":\"/entities/surfy/global-admin\",\"personType:dataquality\":\"/entities/surfy/global-admin\",\"personType:details\":\"/entities/surfy/global-admin\",\"personType:edit\":\"/entities/surfy/global-admin\",\"person:list\":\"/entities/human\",\"person:create\":\"/entities/human\",\"person:import\":\"/entities/human\",\"person:dataquality\":\"/entities/human\",\"person:home\":\"/entities/human\",\"person:person-bookings\":\"/entities/human\",\"person:details\":\"/entities/human\",\"person:edit\":\"/entities/human\",\"person:dq-only-associated-to-building\":\"/entities/human/dataquality\",\"person:dq-near-end-date\":\"/entities/human/dataquality\",\"person:dq-no-affectations\":\"/entities/human/dataquality\",\"person:dq-person-duplicate\":\"/entities/human/dataquality\",\"person:dq-not-affectable-end-date-expired\":\"/entities/human/dataquality\",\"personToPersonType:list\":\"/entities/human/person-relations\",\"personToPersonType:create\":\"/entities/human/person-relations\",\"personToPersonType:import\":\"/entities/human/person-relations\",\"personToPersonType:dataquality\":\"/entities/human/person-relations\",\"personToPersonType:details\":\"/entities/human/person-relations\",\"personToPersonType:edit\":\"/entities/human/person-relations\",\"personToPerson:list\":\"/entities/human/person-relations\",\"personToPerson:create\":\"/entities/human/person-relations\",\"personToPerson:import\":\"/entities/human/person-relations\",\"personToPerson:dataquality\":\"/entities/human/person-relations\",\"personToPerson:details\":\"/entities/human/person-relations\",\"personToPerson:edit\":\"/entities/human/person-relations\",\"vehicleType:list\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:create\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:import\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:dataquality\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:details\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:edit\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:list\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:create\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:import\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:dataquality\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:details\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:edit\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicle:list\":\"/entities/human/person-vehicles\",\"vehicle:create\":\"/entities/human/person-vehicles\",\"vehicle:import\":\"/entities/human/person-vehicles\",\"vehicle:dataquality\":\"/entities/human/person-vehicles\",\"vehicle:details\":\"/entities/human/person-vehicles\",\"vehicle:edit\":\"/entities/human/person-vehicles\",\"personToVehicle:list\":\"/entities/human/person-vehicles\",\"personToVehicle:create\":\"/entities/human/person-vehicles\",\"personToVehicle:import\":\"/entities/human/person-vehicles\",\"personToVehicle:dataquality\":\"/entities/human/person-vehicles\",\"personToVehicle:details\":\"/entities/human/person-vehicles\",\"personToVehicle:edit\":\"/entities/human/person-vehicles\",\"roomAffectation:room-mouvement-matrix-import\":\"/entities/affectations\",\"roomAffectation:list\":\"/entities/affectations\",\"roomAffectation:create\":\"/entities/affectations\",\"roomAffectation:import\":\"/entities/affectations\",\"roomAffectation:dataquality\":\"/entities/affectations\",\"roomAffectation:details\":\"/entities/affectations\",\"roomAffectation:edit\":\"/entities/affectations\",\"workplaceType:list\":\"/entities/things/things-type\",\"workplaceType:create\":\"/entities/things/things-type\",\"workplaceType:import\":\"/entities/things/things-type\",\"workplaceType:dataquality\":\"/entities/things/things-type\",\"workplaceType:editor\":\"/entities/things/things-type\",\"workplaceType:avatar\":\"/entities/things/things-type\",\"workplaceType:details\":\"/entities/things/things-type\",\"workplaceType:edit\":\"/entities/things/things-type\",\"workplaceType:dq-not-used\":\"/entities/things/things-type/dataquality\",\"workplaceType:dq-workplace-type-item-type-position-z\":\"/entities/things/things-type/dataquality\",\"workplaceUsageType:list\":\"/entities/things/things-type\",\"workplaceUsageType:create\":\"/entities/things/things-type\",\"workplaceUsageType:import\":\"/entities/things/things-type\",\"workplaceUsageType:dataquality\":\"/entities/things/things-type\",\"workplaceUsageType:details\":\"/entities/things/things-type\",\"workplaceUsageType:edit\":\"/entities/things/things-type\",\"workplaceTypeItemType:list\":\"/entities/things/things-type\",\"workplaceTypeItemType:create\":\"/entities/things/things-type\",\"workplaceTypeItemType:import\":\"/entities/things/things-type\",\"workplaceTypeItemType:dataquality\":\"/entities/things/things-type\",\"workplaceTypeItemType:details\":\"/entities/things/things-type\",\"workplaceTypeItemType:edit\":\"/entities/things/things-type\",\"workplace:list\":\"/entities/things\",\"workplace:create\":\"/entities/things\",\"workplace:import\":\"/entities/things\",\"workplace:dataquality\":\"/entities/things\",\"workplace:assign-current-user\":\"/entities/things\",\"workplace:details\":\"/entities/things\",\"workplace:edit\":\"/entities/things\",\"workplace:dq-workplace-transit-with-affectations\":\"/entities/things/dataquality\",\"item:list\":\"/entities/things\",\"item:create\":\"/entities/things\",\"item:import\":\"/entities/things\",\"item:dataquality\":\"/entities/things\",\"item:details\":\"/entities/things\",\"item:edit\":\"/entities/things\",\"item:dq-item-not-in-workplace-room\":\"/entities/things/dataquality\",\"workplaceAffectation:workplace-mouvement-matrix-import\":\"/entities/affectations\",\"workplaceAffectation:list\":\"/entities/affectations\",\"workplaceAffectation:create\":\"/entities/affectations\",\"workplaceAffectation:import\":\"/entities/affectations\",\"workplaceAffectation:dataquality\":\"/entities/affectations\",\"workplaceAffectation:details\":\"/entities/affectations\",\"workplaceAffectation:edit\":\"/entities/affectations\",\"workplaceAffectation:dq-workplace-affectation-latest\":\"/entities/affectations/dataquality\",\"organizationFloor:list\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:create\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:import\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:dataquality\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:details\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:edit\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:list\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:create\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:import\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:details\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:edit\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"roomTypeFloor:list\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:create\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:import\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:details\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:edit\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:list\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:create\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:import\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:details\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:edit\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"itemToPerson:list\":\"/entities/affectations\",\"itemToPerson:create\":\"/entities/affectations\",\"itemToPerson:import\":\"/entities/affectations\",\"itemToPerson:dataquality\":\"/entities/affectations\",\"itemToPerson:details\":\"/entities/affectations\",\"itemToPerson:edit\":\"/entities/affectations\",\"personToBuilding:list\":\"/entities/affectations\",\"personToBuilding:create\":\"/entities/affectations\",\"personToBuilding:import\":\"/entities/affectations\",\"personToBuilding:dataquality\":\"/entities/affectations\",\"personToBuilding:details\":\"/entities/affectations\",\"personToBuilding:edit\":\"/entities/affectations\",\"dimensionToPerson:list\":\"/entities/affectations\",\"dimensionToPerson:create\":\"/entities/affectations\",\"dimensionToPerson:import\":\"/entities/affectations\",\"dimensionToPerson:dataquality\":\"/entities/affectations\",\"dimensionToPerson:details\":\"/entities/affectations\",\"dimensionToPerson:edit\":\"/entities/affectations\",\"dimensionToPerson:dq-dimension-to-person-latest\":\"/entities/affectations/dataquality\",\"dimensionTypeToBuilding:list\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:create\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:import\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:dataquality\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:details\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:edit\":\"/entities/admin/dimensions\",\"workingLocation:list\":\"/entities/surfy/global-admin\",\"workingLocation:create\":\"/entities/surfy/global-admin\",\"workingLocation:import\":\"/entities/surfy/global-admin\",\"workingLocation:dataquality\":\"/entities/surfy/global-admin\",\"workingLocation:details\":\"/entities/surfy/global-admin\",\"workingLocation:edit\":\"/entities/surfy/global-admin\",\"personWorkingLocation:my-planning\":\"/entities/planning\",\"personWorkingLocation:obo-planning\":\"/entities/planning\",\"personWorkingLocation:guest-planning\":\"/entities/planning\",\"personWorkingLocation:booking-maps\":\"/entities/planning\",\"personWorkingLocation:booking-security-day\":\"/entities/planning\",\"personWorkingLocation:pwl-dimension\":\"/entities/planning\",\"personWorkingLocation:list\":\"/entities/planning\",\"personWorkingLocation:create\":\"/entities/planning\",\"personWorkingLocation:import\":\"/entities/planning\",\"personWorkingLocation:dataquality\":\"/entities/planning\",\"personWorkingLocation:details\":\"/entities/planning\",\"personWorkingLocation:edit\":\"/entities/planning\",\"personToWorkplaceBooking:dashboard-index\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:list\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:create\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:import\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:dataquality\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:details\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:edit\":\"/entities/planning/bookings\",\"personToRoomBooking:list\":\"/entities/planning/bookings\",\"personToRoomBooking:create\":\"/entities/planning/bookings\",\"personToRoomBooking:import\":\"/entities/planning/bookings\",\"personToRoomBooking:dataquality\":\"/entities/planning/bookings\",\"personToRoomBooking:details\":\"/entities/planning/bookings\",\"personToRoomBooking:edit\":\"/entities/planning/bookings\",\"personToDimensionBooking:list\":\"/entities/planning/bookings\",\"personToDimensionBooking:create\":\"/entities/planning/bookings\",\"personToDimensionBooking:import\":\"/entities/planning/bookings\",\"personToDimensionBooking:dataquality\":\"/entities/planning/bookings\",\"personToDimensionBooking:details\":\"/entities/planning/bookings\",\"personToDimensionBooking:edit\":\"/entities/planning/bookings\",\"personCompanyMission:list\":\"/entities/admin/person-companies\",\"personCompanyMission:create\":\"/entities/admin/person-companies\",\"personCompanyMission:import\":\"/entities/admin/person-companies\",\"personCompanyMission:dataquality\":\"/entities/admin/person-companies\",\"personCompanyMission:details\":\"/entities/admin/person-companies\",\"personCompanyMission:edit\":\"/entities/admin/person-companies\",\"personCompanyToItemType:list\":\"/entities/admin/person-companies\",\"personCompanyToItemType:create\":\"/entities/admin/person-companies\",\"personCompanyToItemType:import\":\"/entities/admin/person-companies\",\"personCompanyToItemType:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToItemType:details\":\"/entities/admin/person-companies\",\"personCompanyToItemType:edit\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:list\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:create\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:import\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:details\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:edit\":\"/entities/admin/person-companies\",\"personCompanyToItem:list\":\"/entities/admin/person-companies\",\"personCompanyToItem:create\":\"/entities/admin/person-companies\",\"personCompanyToItem:import\":\"/entities/admin/person-companies\",\"personCompanyToItem:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToItem:details\":\"/entities/admin/person-companies\",\"personCompanyToItem:edit\":\"/entities/admin/person-companies\",\"legend:list\":\"/entities/admin\",\"legend:create\":\"/entities/admin\",\"legend:import\":\"/entities/admin\",\"legend:dataquality\":\"/entities/admin\",\"legend:details\":\"/entities/admin\",\"legend:edit\":\"/entities/admin\",\"openerPostMessageHost:list\":\"/entities/admin/api\",\"openerPostMessageHost:create\":\"/entities/admin/api\",\"openerPostMessageHost:import\":\"/entities/admin/api\",\"openerPostMessageHost:dataquality\":\"/entities/admin/api\",\"openerPostMessageHost:details\":\"/entities/admin/api\",\"openerPostMessageHost:edit\":\"/entities/admin/api\",\"companyWorkingLocation:list\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:create\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:import\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:dataquality\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:details\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:edit\":\"/entities/planning/planning-admin\",\"bookingVehicleConfiguration:list\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:create\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:import\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:dataquality\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:details\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:edit\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:list\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:create\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:import\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:dataquality\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:details\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:edit\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"jupObjectType:list\":\"/entities/surfy/global-security\",\"jupObjectType:create\":\"/entities/surfy/global-security\",\"jupObjectType:import\":\"/entities/surfy/global-security\",\"jupObjectType:dataquality\":\"/entities/surfy/global-security\",\"jupObjectType:details\":\"/entities/surfy/global-security\",\"jupObjectType:edit\":\"/entities/surfy/global-security\",\"jupUiView:list\":\"/entities/surfy/global-security\",\"jupUiView:create\":\"/entities/surfy/global-security\",\"jupUiView:import\":\"/entities/surfy/global-security\",\"jupUiView:dataquality\":\"/entities/surfy/global-security\",\"jupUiView:details\":\"/entities/surfy/global-security\",\"jupUiView:edit\":\"/entities/surfy/global-security\",\"jupRole:help\":\"/entities/surfy/global-security\",\"jupRole:azure-sync\":\"/entities/surfy/global-security\",\"jupRole:list\":\"/entities/surfy/global-security\",\"jupRole:create\":\"/entities/surfy/global-security\",\"jupRole:import\":\"/entities/surfy/global-security\",\"jupRole:dataquality\":\"/entities/surfy/global-security\",\"jupRole:matrix\":\"/entities/surfy/global-security\",\"jupRole:details\":\"/entities/surfy/global-security\",\"jupRole:edit\":\"/entities/surfy/global-security\",\"jupUiOption:list\":\"/entities/surfy/global-security\",\"jupUiOption:create\":\"/entities/surfy/global-security\",\"jupUiOption:import\":\"/entities/surfy/global-security\",\"jupUiOption:dataquality\":\"/entities/surfy/global-security\",\"jupUiOption:details\":\"/entities/surfy/global-security\",\"jupUiOption:edit\":\"/entities/surfy/global-security\",\"jupUiOperation:list\":\"/entities/surfy/global-security\",\"jupUiOperation:create\":\"/entities/surfy/global-security\",\"jupUiOperation:import\":\"/entities/surfy/global-security\",\"jupUiOperation:dataquality\":\"/entities/surfy/global-security\",\"jupUiOperation:details\":\"/entities/surfy/global-security\",\"jupUiOperation:edit\":\"/entities/surfy/global-security\",\"contentRole:list\":\"/entities/admin/security\",\"contentRole:create\":\"/entities/admin/security\",\"contentRole:import\":\"/entities/admin/security\",\"contentRole:dataquality\":\"/entities/admin/security\",\"contentRole:details\":\"/entities/admin/security\",\"contentRole:edit\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:list\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:create\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:import\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:dataquality\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:details\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:edit\":\"/entities/admin/security\",\"jupRoleToJupUiView:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:list\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:create\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:import\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:details\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:edit\":\"/entities/surfy/global-security\",\"contentRoleToBuilding:list\":\"/entities/admin/security\",\"contentRoleToBuilding:create\":\"/entities/admin/security\",\"contentRoleToBuilding:import\":\"/entities/admin/security\",\"contentRoleToBuilding:dataquality\":\"/entities/admin/security\",\"contentRoleToBuilding:details\":\"/entities/admin/security\",\"contentRoleToBuilding:edit\":\"/entities/admin/security\",\"contentRoleToUserCompany:list\":\"/entities/admin/security\",\"contentRoleToUserCompany:create\":\"/entities/admin/security\",\"contentRoleToUserCompany:import\":\"/entities/admin/security\",\"contentRoleToUserCompany:dataquality\":\"/entities/admin/security\",\"contentRoleToUserCompany:details\":\"/entities/admin/security\",\"contentRoleToUserCompany:edit\":\"/entities/admin/security\",\"contentRoleToFloor:list\":\"/entities/admin/security\",\"contentRoleToFloor:create\":\"/entities/admin/security\",\"contentRoleToFloor:import\":\"/entities/admin/security\",\"contentRoleToFloor:dataquality\":\"/entities/admin/security\",\"contentRoleToFloor:details\":\"/entities/admin/security\",\"contentRoleToFloor:edit\":\"/entities/admin/security\",\"partnerApiCredential:list\":\"/entities/admin/api\",\"partnerApiCredential:create\":\"/entities/admin/api\",\"partnerApiCredential:import\":\"/entities/admin/api\",\"partnerApiCredential:dataquality\":\"/entities/admin/api\",\"partnerApiCredential:details\":\"/entities/admin/api\",\"partnerApiCredential:edit\":\"/entities/admin/api\",\"apiUser:list\":\"/entities/admin/api\",\"apiUser:create\":\"/entities/admin/api\",\"apiUser:import\":\"/entities/admin/api\",\"apiUser:dataquality\":\"/entities/admin/api\",\"apiUser:edit-fetch-loop-repro\":\"/entities/admin/api\",\"apiUser:details\":\"/entities/admin/api\",\"apiUser:edit\":\"/entities/admin/api\",\"apiUserToJupRole:list\":\"/entities/admin/api\",\"apiUserToJupRole:create\":\"/entities/admin/api\",\"apiUserToJupRole:import\":\"/entities/admin/api\",\"apiUserToJupRole:dataquality\":\"/entities/admin/api\",\"apiUserToJupRole:details\":\"/entities/admin/api\",\"apiUserToJupRole:edit\":\"/entities/admin/api\",\"apiUserToContentRole:list\":\"/entities/admin/api\",\"apiUserToContentRole:create\":\"/entities/admin/api\",\"apiUserToContentRole:import\":\"/entities/admin/api\",\"apiUserToContentRole:dataquality\":\"/entities/admin/api\",\"apiUserToContentRole:details\":\"/entities/admin/api\",\"apiUserToContentRole:edit\":\"/entities/admin/api\",\"jupUiTenantOperation:list\":\"/entities/admin/security\",\"jupUiTenantOperation:create\":\"/entities/admin/security\",\"jupUiTenantOperation:import\":\"/entities/admin/security\",\"jupUiTenantOperation:dataquality\":\"/entities/admin/security\",\"jupUiTenantOperation:details\":\"/entities/admin/security\",\"jupUiTenantOperation:edit\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:list\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:create\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:import\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:dataquality\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:details\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:edit\":\"/entities/admin/security\",\"authentificationConnection:list\":\"/entities/surfy/global-security\",\"authentificationConnection:create\":\"/entities/surfy/global-security\",\"authentificationConnection:import\":\"/entities/surfy/global-security\",\"authentificationConnection:dataquality\":\"/entities/surfy/global-security\",\"authentificationConnection:details\":\"/entities/surfy/global-security\",\"authentificationConnection:edit\":\"/entities/surfy/global-security\",\"userRegistrationTenantRule:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:details\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:edit\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:details\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:edit\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:details\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:edit\":\"/entities/admin/authentification\",\"partnerExportMappingConfiguration:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:edit\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:edit\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:edit\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:edit\":\"/entities/admin/partner-export-mapping\",\"jupRoleToJupUiLayout:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:edit\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:list\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:create\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:import\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:dataquality\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:details\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:edit\":\"/entities/surfy/global-security\",\"itemFact:list\":\"/entities/things/items-fact\",\"itemFact:create\":\"/entities/things/items-fact\",\"itemFact:import\":\"/entities/things/items-fact\",\"itemFact:dataquality\":\"/entities/things/items-fact\",\"itemFact:details\":\"/entities/things/items-fact\",\"itemFact:edit\":\"/entities/things/items-fact\",\"featureFamily:list\":\"/entities/help\",\"featureFamily:create\":\"/entities/help\",\"featureFamily:import\":\"/entities/help\",\"featureFamily:dataquality\":\"/entities/help\",\"featureFamily:details\":\"/entities/help\",\"featureFamily:edit\":\"/entities/help\",\"featureGroup:list\":\"/entities/help\",\"featureGroup:create\":\"/entities/help\",\"featureGroup:import\":\"/entities/help\",\"featureGroup:dataquality\":\"/entities/help\",\"featureGroup:details\":\"/entities/help\",\"featureGroup:edit\":\"/entities/help\",\"feature:list\":\"/entities/help\",\"feature:create\":\"/entities/help\",\"feature:import\":\"/entities/help\",\"feature:dataquality\":\"/entities/help\",\"feature:details\":\"/entities/help\",\"feature:edit\":\"/entities/help\"}")
 };
 //#endregion
 //#region src/surfy-help/metaModel/metamodel.json.helper.ts
@@ -10648,6 +10649,55 @@ var ViewCoreSchema = {
 		},
 		dataQualities: {}
 	},
+	itemTypeVisualEdge: {
+		indexes: {
+			list: {
+				name: "list",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			create: {
+				name: "create",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			import: {
+				name: "import",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			dataquality: {
+				name: "dataquality",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			}
+		},
+		singles: {
+			details: {
+				name: "details",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			edit: {
+				name: "edit",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			}
+		},
+		dataQualities: {}
+	},
 	dimensionType: {
 		indexes: {
 			list: {
@@ -12426,6 +12476,13 @@ var ViewCoreSchema = {
 			},
 			"booking-maps": {
 				name: "booking-maps",
+				isDefaultView: void 0,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			"booking-security-day": {
+				name: "booking-security-day",
 				isDefaultView: void 0,
 				hidden: void 0,
 				isStandalone: void 0,
@@ -15619,6 +15676,21 @@ var companyObjectTypeDefintion = {
 			},
 			association: void 0
 		},
+		enableStaticDeskReleaseOnAbsence: {
+			name: "enableStaticDeskReleaseOnAbsence",
+			objectTypeName: "company",
+			type: "boolean",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: false,
+				regex: void 0
+			},
+			association: void 0
+		},
 		workplaceBookingConfirmationRange: {
 			name: "workplaceBookingConfirmationRange",
 			objectTypeName: "company",
@@ -18035,6 +18107,42 @@ var userCompanyObjectTypeDefintion = {
 				options: { readOnly: true }
 			}
 		},
+		itemTypeVisualEdgeCreatedBies: {
+			name: "itemTypeVisualEdgeCreatedBies",
+			objectTypeName: "userCompany",
+			type: "has-many-paginated",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyCreatedById",
+				targetModelName: "itemTypeVisualEdge",
+				propertyTypeName: "itemTypeVisualEdgeCreatedBies",
+				options: { readOnly: true }
+			}
+		},
+		itemTypeVisualEdgeUpdatedBies: {
+			name: "itemTypeVisualEdgeUpdatedBies",
+			objectTypeName: "userCompany",
+			type: "has-many-paginated",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyUpdatedById",
+				targetModelName: "itemTypeVisualEdge",
+				propertyTypeName: "itemTypeVisualEdgeUpdatedBies",
+				options: { readOnly: true }
+			}
+		},
 		dimensionTypeCreatedBies: {
 			name: "dimensionTypeCreatedBies",
 			objectTypeName: "userCompany",
@@ -20381,6 +20489,7 @@ var userCompanyObjectTypeDefintion = {
 			"roomPointRoom",
 			"roomPointSegment",
 			"itemTypePoint",
+			"itemTypeVisualEdge",
 			"dimensionType",
 			"dimension",
 			"dimensionRoom",
@@ -22848,6 +22957,24 @@ var itemTypeObjectTypeDefintion = {
 				options: { readOnly: false }
 			}
 		},
+		itemTypeVisualEdges: {
+			name: "itemTypeVisualEdges",
+			objectTypeName: "itemType",
+			type: "has-many-paginated",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "itemTypeId",
+				targetModelName: "itemTypeVisualEdge",
+				propertyTypeName: "itemTypeVisualEdges",
+				options: { readOnly: false }
+			}
+		},
 		workplaceTypeItemTypes: {
 			name: "workplaceTypeItemTypes",
 			objectTypeName: "itemType",
@@ -22954,6 +23081,7 @@ var itemTypeObjectTypeDefintion = {
 	context: {
 		hasMany: [
 			"itemTypePoint",
+			"itemTypeVisualEdge",
 			"workplaceTypeItemType",
 			"item",
 			"personCompanyToItemType"
@@ -32014,6 +32142,42 @@ var itemTypePointObjectTypeDefintion = {
 				options: { readOnly: true }
 			}
 		},
+		itemTypeVisualEdgeStarts: {
+			name: "itemTypeVisualEdgeStarts",
+			objectTypeName: "itemTypePoint",
+			type: "has-many-paginated",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "itemTypePointStartId",
+				targetModelName: "itemTypeVisualEdge",
+				propertyTypeName: "itemTypeVisualEdgeStarts",
+				options: { readOnly: false }
+			}
+		},
+		itemTypeVisualEdgeEnds: {
+			name: "itemTypeVisualEdgeEnds",
+			objectTypeName: "itemTypePoint",
+			type: "has-many-paginated",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "itemTypePointEndId",
+				targetModelName: "itemTypeVisualEdge",
+				propertyTypeName: "itemTypeVisualEdgeEnds",
+				options: { readOnly: false }
+			}
+		},
 		companyId: {
 			name: "companyId",
 			objectTypeName: "itemTypePoint",
@@ -32061,6 +32225,377 @@ var itemTypePointObjectTypeDefintion = {
 		singular: "ItemTypePoint",
 		plural: "ItemTypePoints",
 		id: "ItemTypePointId"
+	},
+	hidden: false,
+	context: {
+		hasMany: ["itemTypeVisualEdge"],
+		belongsTo: ["company"]
+	}
+};
+//#endregion
+//#region src/core/generated/objectTypeDefinitions/itemTypeVisualEdge.ts
+var itemTypeVisualEdgeObjectTypeDefintion = {
+	name: "itemTypeVisualEdge",
+	type: "table",
+	scope: "private",
+	isMasterData: true,
+	isReportingData: false,
+	isSecurityData: false,
+	propertiesByName: {
+		id: {
+			name: "id",
+			objectTypeName: "itemTypeVisualEdge",
+			type: "primary-key",
+			options: {
+				mandatory: true,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: void 0
+		},
+		x1: {
+			name: "x1",
+			objectTypeName: "itemTypeVisualEdge",
+			type: "float",
+			options: {
+				mandatory: true,
+				readOnly: true,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: void 0,
+				regex: void 0
+			},
+			association: void 0
+		},
+		y1: {
+			name: "y1",
+			objectTypeName: "itemTypeVisualEdge",
+			type: "float",
+			options: {
+				mandatory: true,
+				readOnly: true,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: void 0,
+				regex: void 0
+			},
+			association: void 0
+		},
+		x2: {
+			name: "x2",
+			objectTypeName: "itemTypeVisualEdge",
+			type: "float",
+			options: {
+				mandatory: true,
+				readOnly: true,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: void 0,
+				regex: void 0
+			},
+			association: void 0
+		},
+		y2: {
+			name: "y2",
+			objectTypeName: "itemTypeVisualEdge",
+			type: "float",
+			options: {
+				mandatory: true,
+				readOnly: true,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: void 0,
+				regex: void 0
+			},
+			association: void 0
+		},
+		sortIndex: {
+			name: "sortIndex",
+			objectTypeName: "itemTypeVisualEdge",
+			type: "integer",
+			options: {
+				mandatory: true,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: void 0,
+				regex: void 0
+			},
+			association: void 0
+		},
+		createdAt: {
+			name: "createdAt",
+			objectTypeName: "itemTypeVisualEdge",
+			type: "timestamp",
+			options: {
+				mandatory: false,
+				readOnly: true,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: void 0
+		},
+		updatedAt: {
+			name: "updatedAt",
+			objectTypeName: "itemTypeVisualEdge",
+			type: "timestamp",
+			options: {
+				mandatory: false,
+				readOnly: true,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: void 0
+		},
+		externalId: {
+			name: "externalId",
+			objectTypeName: "itemTypeVisualEdge",
+			type: "string",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: void 0
+		},
+		itemTypeId: {
+			name: "itemTypeId",
+			objectTypeName: "itemTypeVisualEdge",
+			type: "foreign-key",
+			options: {
+				mandatory: true,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "itemTypeId",
+				targetModelName: "itemType",
+				propertyTypeName: "itemType",
+				options: { readOnly: false }
+			}
+		},
+		itemType: {
+			name: "itemType",
+			objectTypeName: "itemTypeVisualEdge",
+			type: "belongs-to",
+			options: {
+				mandatory: true,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "itemTypeId",
+				targetModelName: "itemType",
+				propertyTypeName: "itemType",
+				options: { readOnly: false }
+			}
+		},
+		itemTypePointStartId: {
+			name: "itemTypePointStartId",
+			objectTypeName: "itemTypeVisualEdge",
+			type: "foreign-key",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "itemTypePointStartId",
+				targetModelName: "itemTypePoint",
+				propertyTypeName: "itemTypePointStart",
+				options: { readOnly: false }
+			}
+		},
+		itemTypePointStart: {
+			name: "itemTypePointStart",
+			objectTypeName: "itemTypeVisualEdge",
+			type: "belongs-to",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "itemTypePointStartId",
+				targetModelName: "itemTypePoint",
+				propertyTypeName: "itemTypePointStart",
+				options: { readOnly: false }
+			}
+		},
+		itemTypePointEndId: {
+			name: "itemTypePointEndId",
+			objectTypeName: "itemTypeVisualEdge",
+			type: "foreign-key",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "itemTypePointEndId",
+				targetModelName: "itemTypePoint",
+				propertyTypeName: "itemTypePointEnd",
+				options: { readOnly: false }
+			}
+		},
+		itemTypePointEnd: {
+			name: "itemTypePointEnd",
+			objectTypeName: "itemTypeVisualEdge",
+			type: "belongs-to",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "itemTypePointEndId",
+				targetModelName: "itemTypePoint",
+				propertyTypeName: "itemTypePointEnd",
+				options: { readOnly: false }
+			}
+		},
+		userCompanyCreatedById: {
+			name: "userCompanyCreatedById",
+			objectTypeName: "itemTypeVisualEdge",
+			type: "foreign-key",
+			options: {
+				mandatory: false,
+				readOnly: true,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyCreatedById",
+				targetModelName: "userCompany",
+				propertyTypeName: "userCompanyCreatedBy",
+				options: { readOnly: true }
+			}
+		},
+		userCompanyCreatedBy: {
+			name: "userCompanyCreatedBy",
+			objectTypeName: "itemTypeVisualEdge",
+			type: "belongs-to",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyCreatedById",
+				targetModelName: "userCompany",
+				propertyTypeName: "userCompanyCreatedBy",
+				options: { readOnly: true }
+			}
+		},
+		userCompanyUpdatedById: {
+			name: "userCompanyUpdatedById",
+			objectTypeName: "itemTypeVisualEdge",
+			type: "foreign-key",
+			options: {
+				mandatory: false,
+				readOnly: true,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyUpdatedById",
+				targetModelName: "userCompany",
+				propertyTypeName: "userCompanyUpdatedBy",
+				options: { readOnly: true }
+			}
+		},
+		userCompanyUpdatedBy: {
+			name: "userCompanyUpdatedBy",
+			objectTypeName: "itemTypeVisualEdge",
+			type: "belongs-to",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyUpdatedById",
+				targetModelName: "userCompany",
+				propertyTypeName: "userCompanyUpdatedBy",
+				options: { readOnly: true }
+			}
+		},
+		companyId: {
+			name: "companyId",
+			objectTypeName: "itemTypeVisualEdge",
+			type: "foreign-key",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "companyId",
+				targetModelName: "company",
+				propertyTypeName: "company",
+				options: { readOnly: true }
+			}
+		},
+		company: {
+			name: "company",
+			objectTypeName: "itemTypeVisualEdge",
+			type: "belongs-to",
+			options: {
+				mandatory: true,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "companyId",
+				targetModelName: "company",
+				propertyTypeName: "company",
+				options: { readOnly: true }
+			}
+		}
+	},
+	plural: "itemTypeVisualEdges",
+	camelized: {
+		singular: "itemTypeVisualEdge",
+		plural: "itemTypeVisualEdges",
+		id: "itemTypeVisualEdgeId"
+	},
+	capitalized: {
+		singular: "ItemTypeVisualEdge",
+		plural: "ItemTypeVisualEdges",
+		id: "ItemTypeVisualEdgeId"
 	},
 	hidden: false,
 	context: {
@@ -39358,6 +39893,21 @@ var workplaceObjectTypeDefintion = {
 		},
 		isBookable: {
 			name: "isBookable",
+			objectTypeName: "workplace",
+			type: "boolean",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: false,
+				regex: void 0
+			},
+			association: void 0
+		},
+		isReleasable: {
+			name: "isReleasable",
 			objectTypeName: "workplace",
 			type: "boolean",
 			options: {
@@ -55838,6 +56388,7 @@ var JupSchema;
 	const roomPointSegmentType = _JupSchema.roomPointSegmentType = roomPointSegmentTypeObjectTypeDefintion;
 	const roomPointSegment = _JupSchema.roomPointSegment = roomPointSegmentObjectTypeDefintion;
 	const itemTypePoint = _JupSchema.itemTypePoint = itemTypePointObjectTypeDefintion;
+	const itemTypeVisualEdge = _JupSchema.itemTypeVisualEdge = itemTypeVisualEdgeObjectTypeDefintion;
 	const dimensionType = _JupSchema.dimensionType = dimensionTypeObjectTypeDefintion;
 	const dimension = _JupSchema.dimension = dimensionObjectTypeDefintion;
 	const dimensionRoom = _JupSchema.dimensionRoom = dimensionRoomObjectTypeDefintion;
@@ -55958,6 +56509,7 @@ var JupSchema;
 		roomPointSegmentType,
 		roomPointSegment,
 		itemTypePoint,
+		itemTypeVisualEdge,
 		dimensionType,
 		dimension,
 		dimensionRoom,
@@ -56079,6 +56631,7 @@ var JupSchema;
 		roomPointSegmentType,
 		roomPointSegment,
 		itemTypePoint,
+		itemTypeVisualEdge,
 		dimensionType,
 		dimension,
 		dimensionRoom,
@@ -65466,7 +66019,7 @@ function addLanguage(code, name, mui, momentCode, muiDatePicker, flagCode) {
 //#endregion
 //#region src/core/globals.ts
 /** Window when in browser, undefined in Node. */
-var windowGlobal = typeof window === "undefined" ? void 0 : window;
+var windowGlobal = typeof globalThis.window === "undefined" ? void 0 : globalThis.window;
 /** Document when in browser, undefined in Node. */
 var documentGlobal = typeof document === "undefined" ? void 0 : document;
 //#endregion
@@ -70375,7 +70928,11 @@ var public_base_config_default = {
 	authentication: {}
 };
 var public_development_config_default = {
-	origins: ["https://localhost", "https://127.0.0.1"],
+	origins: [
+		"https://localhost",
+		"https://127.0.0.1",
+		"https://dev.surfy.local"
+	],
 	endpoints: { "backend": "https://localhost" },
 	mcp: { "projectName": "user-surfy-dev" },
 	authentication: {
@@ -70445,7 +71002,10 @@ function normalizeOriginForCompare(url) {
 function isLocalHttpsDevelopmentOrigin(origin) {
 	try {
 		const u = new URL(origin);
-		return u.protocol === "https:" && (u.hostname === "localhost" || u.hostname === "127.0.0.1");
+		if (u.protocol !== "https:") return false;
+		if (u.hostname === "localhost" || u.hostname === "127.0.0.1") return true;
+		const host = u.hostname.toLowerCase();
+		return host === "dev.surfy.local" || host.endsWith(".dev.surfy.local");
 	} catch {
 		return false;
 	}
@@ -70956,6 +71516,65 @@ function PaperFrame(props) {
 	});
 }
 //#endregion
+//#region node_modules/.pnpm/jotai-family@1.1.0_jotai@2.20.2_@babel+core@7.29.7_@babel+template@7.29.7_@types+react@19.2.17_react@19.2.7_/node_modules/jotai-family/dist/atomFamily.js
+function atomFamily(initializeAtom, areEqual) {
+	let shouldRemove = null;
+	const atoms = /* @__PURE__ */ new Map();
+	const listeners = /* @__PURE__ */ new Set();
+	function createAtom(param) {
+		let item;
+		if (areEqual === void 0) item = atoms.get(param);
+		else for (const [key, value] of atoms) if (areEqual(key, param)) {
+			item = value;
+			break;
+		}
+		if (item !== void 0) {
+			if (shouldRemove?.(item[1], param)) createAtom.remove(param);
+			else return item[0];
+		}
+		const newAtom = initializeAtom(param);
+		atoms.set(param, [newAtom, Date.now()]);
+		notifyListeners("CREATE", param, newAtom);
+		return newAtom;
+	}
+	function notifyListeners(type, param, atom) {
+		for (const listener of listeners) listener({
+			type,
+			param,
+			atom
+		});
+	}
+	createAtom.unstable_listen = (callback) => {
+		listeners.add(callback);
+		return () => {
+			listeners.delete(callback);
+		};
+	};
+	createAtom.getParams = () => atoms.keys();
+	createAtom.remove = (param) => {
+		if (areEqual === void 0) {
+			if (!atoms.has(param)) return;
+			const [atom] = atoms.get(param);
+			atoms.delete(param);
+			notifyListeners("REMOVE", param, atom);
+		} else for (const [key, [atom]] of atoms) if (areEqual(key, param)) {
+			atoms.delete(key);
+			notifyListeners("REMOVE", key, atom);
+			break;
+		}
+	};
+	createAtom.setShouldRemove = (fn) => {
+		shouldRemove = fn;
+		if (!shouldRemove) return;
+		for (const [key, [atom, createdAt]] of atoms) if (shouldRemove(createdAt, key)) {
+			atoms.delete(key);
+			notifyListeners("REMOVE", key, atom);
+		}
+	};
+	return createAtom;
+}
+atomFamily((_workCanvasId) => atom(false));
+//#endregion
 //#region node_modules/.pnpm/jotai@2.20.2_@babel+core@7.29.7_@babel+template@7.29.7_@types+react@19.2.17_react@19.2.7/node_modules/jotai/esm/vanilla/utils.mjs
 var RESET = /* @__PURE__ */ Symbol("");
 var isPromiseLike$2 = (x) => typeof (x == null ? void 0 : x.then) === "function";
@@ -71046,64 +71665,6 @@ function atomWithStorage(key, initialValue, storage = defaultStorage, options) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/jotai-family@1.1.0_jotai@2.20.2_@babel+core@7.29.7_@babel+template@7.29.7_@types+react@19.2.17_react@19.2.7_/node_modules/jotai-family/dist/atomFamily.js
-function atomFamily(initializeAtom, areEqual) {
-	let shouldRemove = null;
-	const atoms = /* @__PURE__ */ new Map();
-	const listeners = /* @__PURE__ */ new Set();
-	function createAtom(param) {
-		let item;
-		if (areEqual === void 0) item = atoms.get(param);
-		else for (const [key, value] of atoms) if (areEqual(key, param)) {
-			item = value;
-			break;
-		}
-		if (item !== void 0) {
-			if (shouldRemove?.(item[1], param)) createAtom.remove(param);
-			else return item[0];
-		}
-		const newAtom = initializeAtom(param);
-		atoms.set(param, [newAtom, Date.now()]);
-		notifyListeners("CREATE", param, newAtom);
-		return newAtom;
-	}
-	function notifyListeners(type, param, atom) {
-		for (const listener of listeners) listener({
-			type,
-			param,
-			atom
-		});
-	}
-	createAtom.unstable_listen = (callback) => {
-		listeners.add(callback);
-		return () => {
-			listeners.delete(callback);
-		};
-	};
-	createAtom.getParams = () => atoms.keys();
-	createAtom.remove = (param) => {
-		if (areEqual === void 0) {
-			if (!atoms.has(param)) return;
-			const [atom] = atoms.get(param);
-			atoms.delete(param);
-			notifyListeners("REMOVE", param, atom);
-		} else for (const [key, [atom]] of atoms) if (areEqual(key, param)) {
-			atoms.delete(key);
-			notifyListeners("REMOVE", key, atom);
-			break;
-		}
-	};
-	createAtom.setShouldRemove = (fn) => {
-		shouldRemove = fn;
-		if (!shouldRemove) return;
-		for (const [key, [atom, createdAt]] of atoms) if (shouldRemove(createdAt, key)) {
-			atoms.delete(key);
-			notifyListeners("REMOVE", key, atom);
-		}
-	};
-	return createAtom;
-}
-//#endregion
 //#region src/front/jup/Map/jotai/atomFamilyWithStorage.ts
 /**
 * Legacy localStorage key shape (ex-Jotai `atomFamily` + `localStorageEffect`):
@@ -71176,7 +71737,7 @@ var HelpTooltipStyled$1 = styled(({ className, ...props }) => /* @__PURE__ */ js
 }))(({ theme }) => ({ [`& .${tooltipClasses.tooltip}`]: {
 	backgroundColor: "transparent",
 	padding: 0,
-	maxWidth: 540,
+	maxWidth: "min(92vw, 44rem)",
 	fontSize: theme.typography.body2.fontSize
 } }));
 var focusableHtmlTags = /* @__PURE__ */ new Set([
@@ -71231,7 +71792,6 @@ function HelpTooltip(props) {
 	return /* @__PURE__ */ jsx(HelpTooltipStyled$1, {
 		slots: { transition: Fade },
 		disableFocusListener: true,
-		disableInteractive: true,
 		slotProps: {
 			...slotProps,
 			popper: {
@@ -71239,6 +71799,7 @@ function HelpTooltip(props) {
 				...portalContainer ? { container: portalContainer } : {}
 			}
 		},
+		disableInteractive: true,
 		...rest,
 		title: content,
 		children: wrapTooltipChild(children)
@@ -107729,9 +108290,6 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 		})();
 	});
 })))());
-function getTenant() {
-	return getTenantFromDocumentUrl();
-}
 function getTenantFromDocumentUrl() {
 	const location = getDocumentLocation();
 	if (location) return getTenantFromLocationPathname(location.pathname);
@@ -107746,7 +108304,7 @@ function getTenantFromLocationPathname(pathname) {
 function captureClientErrorInLogRocket(err) {
 	const { logRocket } = getPublicConfigurationFront();
 	if (logRocket) {
-		const options = { extra: { tenant: getTenant() ?? "no-url-tenant" } };
+		const options = { extra: { tenant: getTenantFromDocumentUrl() ?? "no-url-tenant" } };
 		import_build_umd.default.captureException(err, options);
 	}
 }
@@ -107807,6 +108365,8 @@ var routes = {
 	logEvent: "tracking/event",
 	userProperty: "tracking/userProperty"
 };
+atomFamily((_companyName) => atom(void 0));
+atom(null);
 //#endregion
 //#region src/front/Tracking/Amplitude/amplitude.ts
 function trackLogEvent(trackEvent) {
@@ -107975,7 +108535,7 @@ function SurfyHelpStandaloneViewMenuBreadcrumb(props) {
 var version = {
 	"major": 3,
 	"minor": 5,
-	"build": 32
+	"build": 52
 };
 //#endregion
 //#region src/back/Tracking/version.ts
@@ -108041,6 +108601,7 @@ function isTenantObjectType(objecTypeName) {
 //#region src/front/jup/I18n/i18n.backends.languages.ts
 var jsonTranslationsFiles = {
 	fr: {
+		"AccordionFilterListItemText.moreSelected": "+%{count} autres",
 		"AccordionSearchParamFilterDates.title": "Dates",
 		"AddPersonToDimension.help": "Affecter une personne à %{name}",
 		"AddPersonToItem.help": "Associer une personne à cet objet, vous pouvez ajouter plusieurs personnes pour le même objet",
@@ -108125,6 +108686,9 @@ var jsonTranslationsFiles = {
 		"BookingMap.errors.noFloorInFilter": "Merci de choisir un étage dans le filtre pour voir les réservations",
 		"BookingParkingInBuildingWithRoomTypes.drawerTitle": "Réserver un parking au %{floorName} pour la période %{slotString}",
 		"BookingParkingInBuildingWithRoomTypes.noFreeParkingAvailableInFloor": "Aucune place de parking disponible au %{floorName}",
+		"BookingReleasedStaticDeskWorkplaceTitle.bookWorkplace": "Réserver ce poste de travail",
+		"BookingReleasedStaticDeskWorkplaceTitle.introMany": "Ce poste de travail est mis à disposition car ces personnes ne seront pas au bureau ce jour.",
+		"BookingReleasedStaticDeskWorkplaceTitle.introOne": "Ce poste de travail est mis à disposition car cette personne ne sera pas au bureau ce jour.",
 		"BookingReminderNotConfirmedEmail.body": "Votre réservation de poste de travail du %{bookingDate} n'est pas encore confirmée.",
 		"BookingReminderNotConfirmedEmail.confirmBefore": "Merci de confirmer votre présence avant %{confirmationEndTime} depuis la page \"Mon planning\" :",
 		"BookingReminderNotConfirmedEmail.firstNameSuffix": " %{firstName}",
@@ -108156,8 +108720,27 @@ var jsonTranslationsFiles = {
 		"BookingRoomTitle.bookThisSpaceFor": "Réserver cette place pour %{slotTimes}",
 		"BookingRoomTitle.free": "Réserver cette place de parking",
 		"BookingRoomTitle.userBooked": "Vous avez réservé cette place de parking",
+		"BookingSecurityProfileDayDashboard.horizonDays": "Horizon : %{count} jours ouvrés",
+		"BookingSecurityProfileDayDashboard.subtitleBuildingMode": "Un bloc par jour, puis par bâtiment : quantités par profil SST avec icônes. Cliquez pour le détail.",
+		"BookingSecurityProfileDayDashboard.title": "Pilotage des profils de sécurité",
+		"BookingSecurityProfileDayPersonCards.cardsCount": "%{count} personne(s)",
+		"BookingSecurityProfileDayPersonCards.emptyNoPeople": "Aucune personne avec un profil de sécurité n'a réservé pour ces filtres",
+		"BookingSecurityProfileDayPersonCardsByBuilding.emptyNoPeople": "Aucune personne avec un profil de sécurité n'a réservé pour ces filtres",
+		"BookingSecurityProfileDayPersonCardsByBuilding.noQuartier": "Sans quartier",
+		"BookingSecurityProfileDayPersonCardsByBuilding.sectionByFloor": "Par étage",
+		"BookingSecurityProfileDayPersonCardsByBuilding.sectionByQuartier": "Par quartier",
+		"BookingSecurityProfileDayPilotGrid.noData": "Aucune personne avec profil de sécurité réservée sur la période",
+		"BookingSecurityProfileDayPilotGrid.noQuartier": "Sans quartier",
+		"BookingSecurityProfileDayPilotGrid.openDayDetail": "Voir le détail du %{day}",
+		"BookingSecurityProfileDayPilotGrid.sectionByFloor": "Par étage",
+		"BookingSecurityProfileDayPilotGrid.sectionByQuartier": "Par quartier",
+		"BookingSecurityProfileDayPlanPanel.planHintMultiFloor": "Sélectionnez un seul étage pour afficher le plan",
+		"BookingSecurityProfileDayPlanPanel.planHintSelectOneFloor": "Sélectionnez un étage pour afficher le plan",
+		"BookingSecurityProfileDayPlanPanel.sectionPlan": "Plan",
 		"BookingWorkplaceDeleteSnackbar.room": "La réservation à l'espace %{roomName} a été annulée pour la période %{slot}",
 		"BookingWorkplaceDeleteSnackbar.workplace": "La réservation au poste de travail %{workplaceName} a été annulée pour la période %{slot}",
+		"BookingWorkplaceStateLegend.flexFree": "Poste flex libre",
+		"BookingWorkplaceStateLegend.releasedByAbsence": "Poste libéré par absence",
 		"BookingWorkplaceTitle.booked": "Ce poste de travail est déjà réservé",
 		"BookingWorkplaceTitle.free": "Réserver ce poste de travail",
 		"BookingWorkplaceTitle.userBooked": "Vous avez réservé ce poste de travail",
@@ -108181,7 +108764,8 @@ var jsonTranslationsFiles = {
 		"BookWorkplaceOnDimensionAsyncButton.helpWithFloor": "Réserver sur le plan un poste de travail dans %{dimensionName} à l'étage %{floorName}",
 		"BookWorkplaceOnDimensionAsyncButton.label": "Réserver un poste de travail dans %{dimensionName}",
 		"BookWorkplaceOnDimensionAsyncButton.labelWithFloor": "Réserver un poste de travail dans %{dimensionName} à l'étage %{floorName}",
-		"BookWorkplaceOnDimensionWithSlotOpenDrawerButton.errors.noFloor": "La dimension n'est sur aucun étage ou les postes de travail ne sont pas réservables, impossible de réserver pour le moment depuis le plan",
+		"BookWorkplaceOnDimensionWithSlotOpenDrawerButton.errors.noBookableWorkplaces": "n'a aucun poste de travail réservable pour le moment, impossible de réserver depuis le plan",
+		"BookWorkplaceOnDimensionWithSlotOpenDrawerButton.errors.noFloor": "n'est sur aucun étage, impossible de réserver pour le moment depuis le plan",
 		"BookWorkplaceOnDimensionWithSlotOpenDrawerButton.multipleFloors.info": "Cette zone est présente sur plusieurs étages :",
 		"BourbonMSUserSyncOperation.description": "Synchronisez les utilisateurs Microsoft 365 avec les collaborateurs Surfy. Les collaborateurs manquants sont créés automatiquement à partir de leur adresse e-mail.",
 		"BourbonMSUserSyncOperation.refresh": "Synchroniser les utilisateurs Microsoft",
@@ -108214,7 +108798,15 @@ var jsonTranslationsFiles = {
 		"BuildingClonePropertiesSelector.properties.clone.workplaces": "Copier les postes de travail",
 		"BuildingClonePropertiesSelector.properties.clone.workplaceStructure": "Copier la structure des postes de travail",
 		"BuildingCloneScenarios.noClone": "Aucun scénario n'a été créé pour le moment, vous pouvez créer votre premier scénario pour ce bâtiment",
+		"BuildingDashboard.charts.noGroup": "Sans groupe",
+		"BuildingDashboard.charts.r1Title": "Types de surface par service",
+		"BuildingDashboard.charts.r2Title": "Types de surface par niveau",
+		"BuildingDashboard.charts.r3Title": "Répartition des types de surface par service",
+		"BuildingDashboard.charts.r4Title": "Ratio m²/PdT par service",
+		"BuildingDashboard.charts.ratioNa": "N/A",
+		"BuildingDashboard.charts.unassigned": "Non affecté",
 		"BuildingDashboard.dashboards.area": "Tableau de bord des surfaces",
+		"BuildingDashboard.dashboards.roomTypeGroup": "Groupes de typologie",
 		"BuildingDashboard.dashboards.workplace": "Tableau de bord des postes de travail",
 		"BuildingDataQuality3dEligibility.headerBuilding": "Bâtiment",
 		"BuildingDataQuality3dEligibility.headerCompany": "Plateforme",
@@ -108301,6 +108893,7 @@ var jsonTranslationsFiles = {
 		"BuildingDxfImporterFloorImportPanel.reuseExistingBackgroundLabel": "Réutiliser l'image existante sur l'étage",
 		"BuildingDxfImporterFloorImportPanel.sectionHelp": "Un fichier DXF et son PNG compagnon pour cet étage. L'algorithme produit directement la géométrie des espaces et points partagés.",
 		"BuildingDxfImporterFloorImportPanel.sectionTitle": "Étage sélectionné — %{floorName} (niveau %{floorLevel})",
+		"BuildingDxfImporterFloorImportPanel.selectAtLeastOnePolygonLayer": "Sélectionnez au moins un calque polygone pour pouvoir importer.",
 		"BuildingDxfImporterFloorsSection.addFloorRowLabel": "Ajouter un étage",
 		"BuildingDxfImporterFloorsSection.floorAlreadyExists": "Un étage avec ce nom existe déjà sur ce bâtiment",
 		"BuildingDxfImporterFloorsSection.floorLevelLabel": "Niveau (métier)",
@@ -108316,8 +108909,12 @@ var jsonTranslationsFiles = {
 		"BuildingDxfImporterPreviewPanel.parsing": "Calcul de la topologie finale…",
 		"BuildingDxfImporterPreviewPanel.pixelsPerMeter": "Échelle : %{value} px/m",
 		"BuildingDxfImporterPreviewPanel.polygonLayer": "Calque polygone : %{layers}",
+		"BuildingDxfImporterPreviewPanel.polygonLayerOption": "%{layer} — score %{score}, %{count} polygone(s)",
+		"BuildingDxfImporterPreviewPanel.polygonLayersHelp": "Cochez les calques d’espaces à importer (score ≥ seuil auto). Un changement relance le calcul.",
+		"BuildingDxfImporterPreviewPanel.polygonLayersTitle": "Calques polygones",
 		"BuildingDxfImporterPreviewPanel.ready": "Topologie prête — vous pouvez importer sur cet étage",
 		"BuildingDxfImporterPreviewPanel.roomCount": "%{count} espace(s) à importer",
+		"BuildingDxfImporterPreviewPanel.selectAtLeastOnePolygonLayer": "Sélectionnez au moins un calque polygone pour pouvoir importer.",
 		"BuildingDxfImporterPreviewPanel.sharedClusters": "%{count} cluster(s) de points partagés (mitoyens)",
 		"BuildingDxfImporterPreviewPanel.title": "Aperçu topologie finale",
 		"BuildingDxfImporterResetImportSyncAction.help": "Efface les fichiers déposés, l'aperçu et les messages pour cet étage",
@@ -108435,6 +109032,11 @@ var jsonTranslationsFiles = {
 		"ClickOnIndexViewMenuPathBreadcrumb.clickOnLabel": "Cliquez sur :",
 		"CloneEntitiesFailed.noAccess": "Vous n'avez pas accès à cette entité",
 		"CloneEntitiesFailed.reloadHint": "Les données affichées peuvent être périmées. Veuillez recharger la page :",
+		"CloudinadryWidgetLoader.error.cloudinary-api-missing": "Le script Cloudinary a chargé mais l'API createUploadWidget est absente.",
+		"CloudinadryWidgetLoader.error.missing-cloud-name": "Cloudinary n'a pas pu démarrer : le nom du cloud est manquant dans la configuration publique.",
+		"CloudinadryWidgetLoader.error.missing-unsigned-preset": "Cloudinary n'a pas pu démarrer : le preset d'upload (unsignedPreset) est manquant dans la configuration runtime.",
+		"CloudinadryWidgetLoader.error.script-load-failed": "Cloudinary n'a pas pu charger le script du widget (réseau, CSP ou bloqueur).",
+		"CloudinadryWidgetLoader.error.widget-create-failed": "Cloudinary n'a pas pu créer le widget d'upload.",
 		"CollapseSwitchButton.help.false": "Voir le détail",
 		"CollapseSwitchButton.help.true": "Masquer le détail",
 		"CollapseWorkplaceAffectationList.title": "Affecter cette personne pour les jours suivants uniquement",
@@ -108573,6 +109175,8 @@ var jsonTranslationsFiles = {
 		"DaySlotTypeLabel.amLabel": "Matin",
 		"DaySlotTypeLabel.pmHelp": "Les horaires de l'après-midi sont de 14h00 à 19h00",
 		"DaySlotTypeLabel.pmLabel": "Après-midi",
+		"DaySlotWorklocationToggle.staticDeskReleaseRemovalBlocked": "Impossible de retirer cette absence : votre poste a déjà été réservé par une autre personne pour cette journée.",
+		"DaySlotWorklocationToggle.staticDeskReleaseReturnToOfficeBlocked": "Votre poste a été réservé par un collègue pour cette journée. Tant que cette réservation n'est pas annulée, il est impossible de déclarer votre retour au bureau.",
 		"DefaultViewSetIndicator.recommendedViewTooltip": "Cette vision est conseillée pour ce bâtiment",
 		"DeleteCleanInventoryItemsAsyncButton.help": "Supprimer les éléments qui peuvent être retirés",
 		"DeleteCleanInventoryItemsAsyncButton.label": "Supprimer",
@@ -108919,7 +109523,7 @@ var jsonTranslationsFiles = {
 		"FieldTypeIcon.Remove": "Retirer l'icone",
 		"FieldTypeIconBadge.backgroundColor.description": "Couleur de fond de la bande verticale (dans le carré d'icône, à droite)",
 		"FieldTypeIconBadge.backgroundColor.label": "Couleur de fond",
-		"FieldTypeIconBadge.create.description": "Aucun badge n'est défini. Créez-en un pour afficher une bande texte verticale à droite, à l'intérieur du carré d'icône.",
+		"FieldTypeIconBadge.create.description": "Aucun badge n'est défini. Créez-en un pour afficher une bande texte verticale à droite, à l'intérieur de l'icône.",
 		"FieldTypeIconBadge.create.help": "Ouvre l'éditeur de badge (texte et couleurs)",
 		"FieldTypeIconBadge.create.label": "Créer un badge",
 		"FieldTypeIconBadge.preview.description": "Rendu live de l'icône de type d'objet (forme, fond, bordure, glyphe) avec la bande badge — même logique que sur le plan",
@@ -108989,7 +109593,7 @@ var jsonTranslationsFiles = {
 		"FreeWorkplacesDayListItem.updateFreeWorkplaceVisibleDay.true": "Arrêter de colorier les postes libre %{day}",
 		"FurnituresSelection.move": "Déplacer tout le groupe",
 		"FurnituresSelectionDragZone.help": "Déplacer le groupe",
-		"FurnituresSelectionGroupRotation.help": "Faire pivoter tous les postes de travail sélectionnés autour du centre de la sélection",
+		"FurnituresSelectionGroupRotation.help": "Faire pivoter toutes les formes sélectionnées autour du centre de la sélection",
 		"generateDocumentation.properties.base": "Propriétés de base",
 		"generateDocumentation.properties.belongsTo": "Entités associées (unique)",
 		"generateDocumentation.properties.hasMany": "Entités associées (liste)",
@@ -109239,7 +109843,7 @@ var jsonTranslationsFiles = {
 		"MapFilterNodeIsAllSelected.help": "Toute la sélection ci dessous sera chargé, même si des nouveaux objets sont crées",
 		"MapFilterNodeToggleAll.action.false": "Tout désélectionner",
 		"MapFilterNodeToggleAll.action.true": "Tout sélectionner",
-		"MapFilters.areaDistributionTitle": "Répartition des surfaces sélectionnées (m²)",
+		"MapFilterRoomsAreaAnalyticsAccordion.areaDistributionTitle": "Répartition des surfaces sélectionnées (m²)",
 		"MapFiltersCategory.CategoryHasChildrenSelected": "Des éléments sont sélectionnés",
 		"MapFiltersNode.info.close": "Fermer les informations supplémentaires",
 		"MapFiltersNode.info.open": "Voir le détail et les indicateurs pour %{label}",
@@ -109299,9 +109903,9 @@ var jsonTranslationsFiles = {
 		"MeetingRoomsDayFilters.nextTooltip": "Jours suivants",
 		"MeetingRoomsDayFilters.previousTooltip": "Jours précédents",
 		"MeetingRoomsDayFilters.title": "Jours",
-		"MeetingRoomsFilterOption.multiSelectTooltip": "Ajouter ou retirer cette option de la sélection",
-		"MeetingRoomsFilterOption.singleSelectAriaLabel": "Sélectionner uniquement cette option",
-		"MeetingRoomsFilterOption.singleSelectTooltip": "Afficher uniquement cette option",
+		"MeetingRoomsFilterListItem.multiSelectTooltip": "Ajouter ou retirer cette option de la sélection",
+		"MeetingRoomsFilterListItem.singleSelectAriaLabel": "Sélectionner uniquement cette option",
+		"MeetingRoomsFilterListItem.singleSelectTooltip": "Afficher uniquement cette option",
 		"MeetingRoomsHourRangeSelector.rangeEndValueLabel": "Fin : %{time}",
 		"MeetingRoomsHourRangeSelector.rangeSelectionTooltip": "Faites glisser les poignées pour définir la plage horaire utilisée pour rechercher des réservations.",
 		"MeetingRoomsHourRangeSelector.rangeStartValueLabel": "Début : %{time}",
@@ -109604,6 +110208,8 @@ var jsonTranslationsFiles = {
 		"models.Company.properties.enableCrowdedDimensionForBooking.label": "Activer la surcharge des dimensions pour la réservation",
 		"models.Company.properties.enablePathfinding.description": "Activer la fonctionnalité de recherche de chemin",
 		"models.Company.properties.enablePathfinding.label": "Activer le pathfinding",
+		"models.Company.properties.enableStaticDeskReleaseOnAbsence.description": "Nécessite aussi la case « Poste libérable » sur chaque poste concerné. Lorsqu'une personne affectée statiquement à un poste libérable déclare une absence (OOO, OFF, REMOTE) sur la journée entière (toutes les personnes affectées absentes), le poste devient temporairement réservable par les collègues ayant le droit de réservation dans le bâtiment",
+		"models.Company.properties.enableStaticDeskReleaseOnAbsence.label": "Libérer les postes statiques en cas d'absence",
 		"models.Company.properties.iconPath.description": "Le logo de l'entreprise en carré",
 		"models.Company.properties.iconPath.label": "Icône",
 		"models.Company.properties.id.label": "Identifiant de l'entreprise",
@@ -110038,6 +110644,27 @@ var jsonTranslationsFiles = {
 		"models.ItemTypePoint.properties.y.description": "Position verticale du point sur le plan",
 		"models.ItemTypePoint.properties.y.label": "Coordonnée Y",
 		"models.ItemTypePoint.singular": "Point des types d'objet",
+		"models.ItemTypeVisualEdge.description": "Une arête visuelle définit un segment d'affichage uniquement sur le type d'objet, distinct des points de forme",
+		"models.ItemTypeVisualEdge.determinant.defined": "l'arête visuelle de type d'objet",
+		"models.ItemTypeVisualEdge.determinant.undefined": "une arête visuelle de type d'objet",
+		"models.ItemTypeVisualEdge.determinants.defined": "les arêtes visuelles de types d'objet",
+		"models.ItemTypeVisualEdge.determinants.undefined": "des arêtes visuelles de types d'objet",
+		"models.ItemTypeVisualEdge.plural": "Arêtes visuelles de types d'objet",
+		"models.ItemTypeVisualEdge.properties.itemTypePointEnd.description": "Point de forme optionnel auquel l'extrémité de fin est liée",
+		"models.ItemTypeVisualEdge.properties.itemTypePointEnd.label": "Point de forme (fin)",
+		"models.ItemTypeVisualEdge.properties.itemTypePointStart.description": "Point de forme optionnel auquel l'extrémité de début est liée",
+		"models.ItemTypeVisualEdge.properties.itemTypePointStart.label": "Point de forme (début)",
+		"models.ItemTypeVisualEdge.properties.sortIndex.description": "Ordre d'affichage de l'arête visuelle",
+		"models.ItemTypeVisualEdge.properties.sortIndex.label": "Index de tri",
+		"models.ItemTypeVisualEdge.properties.x1.description": "Abscisse de la première extrémité de l'arête",
+		"models.ItemTypeVisualEdge.properties.x1.label": "Coordonnée X1",
+		"models.ItemTypeVisualEdge.properties.x2.description": "Abscisse de la seconde extrémité de l'arête",
+		"models.ItemTypeVisualEdge.properties.x2.label": "Coordonnée X2",
+		"models.ItemTypeVisualEdge.properties.y1.description": "Ordonnée de la première extrémité de l'arête",
+		"models.ItemTypeVisualEdge.properties.y1.label": "Coordonnée Y1",
+		"models.ItemTypeVisualEdge.properties.y2.description": "Ordonnée de la seconde extrémité de l'arête",
+		"models.ItemTypeVisualEdge.properties.y2.label": "Coordonnée Y2",
+		"models.ItemTypeVisualEdge.singular": "Arête visuelle de type d'objet",
 		"models.JupObjectType.description": "Un type d'entité définit les différents types d'objets disponibles dans l'interface utilisateur",
 		"models.JupObjectType.determinant.defined": "le type d'entité",
 		"models.JupObjectType.determinant.undefined": "un type d'entité",
@@ -110610,6 +111237,8 @@ var jsonTranslationsFiles = {
 		"models.PersonWorkingLocation.singular": "Emplacement de travail des personnes",
 		"models.PersonWorkingLocation.views.booking-maps.help": "Voir toutes les réservations sur un plan",
 		"models.PersonWorkingLocation.views.booking-maps.label": "Réservations sur un plan",
+		"models.PersonWorkingLocation.views.booking-security-day.help": "Voir où les profils de sécurité ont réservé",
+		"models.PersonWorkingLocation.views.booking-security-day.label": "Profils de sécurité présents",
 		"models.PersonWorkingLocation.views.guest-planning.help": "Créer des invités externes, les affecter à des bâtiments et gérer leurs réservations",
 		"models.PersonWorkingLocation.views.guest-planning.label": "Planning des invités externes",
 		"models.PersonWorkingLocation.views.my-planning.help": "Gérer mon planning des prochaines semaines",
@@ -110938,6 +111567,8 @@ var jsonTranslationsFiles = {
 		"models.Workplace.properties.isBookable.label": "Est réservable ?",
 		"models.Workplace.properties.isFlex.description": "Si ce poste est utilisé en mode Flex",
 		"models.Workplace.properties.isFlex.label": "Est en flex ?",
+		"models.Workplace.properties.isReleasable.description": "Si activé, et si l'option de l'entreprise « Libérer les postes statiques en cas d'absence » est aussi activée, le poste peut devenir temporairement réservable lorsque toutes les personnes affectées déclarent une absence journée entière (OOO, OFF, REMOTE)",
+		"models.Workplace.properties.isReleasable.label": "Est un poste libérable ?",
 		"models.Workplace.properties.isShared.description": "Si ce poste est partagé par plusieurs personnes, ce champ automatique est validé dès qu'il y a au moins 2 affectations sur le poste de travail",
 		"models.Workplace.properties.isShared.label": "Est partagé ?",
 		"models.Workplace.properties.isTransit.description": "Si ce poste est de passage, ce poste sera exclu des postes de travail libres sans être réservable en flex, un poste de passage permet d'avoir un poste de travail disponible pour tout ceux qui souhaitent l'utiliser sans être inclus dans un système de réservation",
@@ -111104,6 +111735,15 @@ var jsonTranslationsFiles = {
 		"NoRoleAssociated.noRole": "Aucun rôle ne semble être associé à votre utilisateur pour l'entreprise %{tenant}, merci de vous rapprocher de votre administrateur",
 		"NoTenantCompanyPicker.noTenantsFound": "Aucune plateforme trouvée pour \"%{query}\"",
 		"NumberOfPeoplePerRowField.label": "Nombre de personnes par ligne pour les affectations aux espaces",
+		"OAuthConfirmPage.autoCloseMessage": "Cette fenêtre se fermera automatiquement.",
+		"OAuthConfirmPage.callbackLoading": "Finalisation de la connexion…",
+		"OAuthConfirmPage.continueMicrosoft": "Office 365",
+		"OAuthConfirmPage.continueMicrosoftHelp": "Se connecter avec votre compte professionel Microsoft via Office 365",
+		"OAuthConfirmPage.errorMessage": "L'authentification Microsoft a échoué. Vous pouvez fermer cette fenêtre et réessayer.",
+		"OAuthConfirmPage.genericReason": "Connexion Surfy",
+		"OAuthConfirmPage.mcpAuthenticateReason": "Authenticate MCP Surfy (Cursor) — connexion demandée par Surfy",
+		"OAuthConfirmPage.thanksMessage": "Merci, authentification terminée.",
+		"OAuthConfirmPage.title": "Confirmation Surfy",
 		"ObjectTypeImportKeys.title": "Les clés disponibles pour réconcilier %{determinants.undefined} dans l'ordre du choix, si vous souhaitez modifier une des propriétés clé vous devez utilisez l'identifiant comme clé",
 		"ObjectTypeImportScalarProperties.help": "Copier dans le presse-papier",
 		"OboBuildingAssignmentChip.assignHelp": "Affecter %{buildingName} à cette personne lui permettant de réserver un poste de travail",
@@ -111234,6 +111874,9 @@ var jsonTranslationsFiles = {
 		"RefetchFloorLayoutButton.refetch": "Recharger les données du plan",
 		"RefetchObjectTypeIcon.help": "Recharger les données pour %{determinant.defined}",
 		"RefreshPageButton.label": "Recharger la page",
+		"ReleasableStaticWorkplaceChip.anotherPersonIsAssignedToReleasableStaticWorkplace": "%{personFullName} est affecté sur le poste de travail libérable %{workplaceName}",
+		"ReleasableStaticWorkplaceChip.chipLabel": "Poste de travail libérable : %{workplaceName}",
+		"ReleasableStaticWorkplaceChip.youAreAssignedToReleasableStaticWorkplace": "Vous êtes affecté sur le poste de travail libérable %{workplaceName}",
 		"ReleaseWorkplaceBookingAsyncAction.ariaLabel": "Libérer cette réservation de poste de travail",
 		"ReleaseWorkplaceBookingAsyncAction.help": "Libérer cette réservation",
 		"RemoveFromCartIconButton.help": "Retirer du panier",
@@ -111262,6 +111905,27 @@ var jsonTranslationsFiles = {
 		"RenderingTypeError.troubleshooting.webgl2Support": "Support WebGL 2",
 		"RenderingTypeError.troubleshooting.webglSupport": "Support WebGL",
 		"RenderingTypeError.troubleshooting.yes": "Oui",
+		"ReportChart.collapse": "Replier le rapport",
+		"ReportChart.dataTableFooterTotal": "Total",
+		"ReportChart.dataTableMeasureArea": "m²",
+		"ReportChart.dataTableMeasurePercent": "%",
+		"ReportChart.dataTablePreciseFigures.disable": "Désactiver les chiffres précis",
+		"ReportChart.dataTablePreciseFigures.enable": "Activer les chiffres précis",
+		"ReportChart.dataTableRatioNa": "N/A",
+		"ReportChart.dataTableRecalculatePercents.disable": "Conserver les pourcentages d'origine",
+		"ReportChart.dataTableRecalculatePercents.enable": "Recalculer les pourcentages selon les filtres",
+		"ReportChart.dataTableRegion": "Tableau de données du rapport",
+		"ReportChart.dataTableService": "Service",
+		"ReportChart.dataTableShowArea.disable": "Masquer les m²",
+		"ReportChart.dataTableShowArea.enable": "Afficher les m²",
+		"ReportChart.dataTableWorkplacesCount": "PdT",
+		"ReportChart.dataTableWorkplacesCountHelp": "Postes de travail",
+		"ReportChart.dataTableWorkplacesCountValue": "%{smart_count} poste de travail |||| %{smart_count} postes de travail",
+		"ReportChart.dataTableWorkplacesRatio": "m²/PdT",
+		"ReportChart.dataTableWorkplacesRatioHelp": "mètres carrés par poste de travail",
+		"ReportChart.exitFullscreen": "Quitter le plein écran",
+		"ReportChart.expand": "Déplier le rapport",
+		"ReportChart.fullscreen": "Plein écran",
 		"ReportChart.NoValue": "Sans valeur",
 		"ReportErrorByMailButton.label": "Nous contacter",
 		"ReportErrorSteps.report.description": "Cette erreur est remontée à nos équipes et nous allons tenter de la corriger au plus vite",
@@ -111364,6 +112028,10 @@ var jsonTranslationsFiles = {
 		"RoomTypeGroupLabel.exclude.tooltip": "Le groupe de typologie d'espace exclue les types d'espaces associés",
 		"RoomTypeGroupMapFilter.Empty": "Il n'y a aucun groupe de type d'espace associé aux espaces via les type d'espaces, vous pouvez en ajouter en modifiant un groupe de type d'espace et en y ajoutant associant un type d'espace, puis vous pourrez contrôler leur affichage depuis cette section",
 		"RoomTypeGroupsMapFilterZone.tabs_options": "Options",
+		"RoomTypeGroupTooltipTitle.deselectAllBelow": "Désélectionner tous les groupes de type d'espace ci-dessous",
+		"RoomTypeGroupTooltipTitle.deselectEntity": "Désélectionner %{organization} va retirer les couleurs du plan",
+		"RoomTypeGroupTooltipTitle.selectAllBelow": "Sélectionner tous les types d'objets ci-dessous afin de les colorier sur la carte",
+		"RoomTypeGroupTooltipTitle.selectEntity": "Sélectionner %{organization} pour colorier les espaces sur le plan",
 		"RoomTypeGroupToRoomTypeLabel.exclude.tooltip": "La typologie d'espace est exclue",
 		"RoomWorkplaceList.EmptyList": "Il n'y a aucun poste de travail dans cet espace",
 		"SavePlanAsSvgButton.help": "Télécharge le plan tel qu'affiché en fichier SVG. Le fichier s'ouvre à l'échelle 1, sans zoom ni décalage.",
@@ -111386,6 +112054,17 @@ var jsonTranslationsFiles = {
 		"SelectDimensionTypeNavigationLayoutIcon.help": "La navigation par calque d'analyse permet de cliquer sur un espace, sélectionner le calque correspondant et voir les personnes affectées à ce calque ou les postes de travail et les objets associés à ce calque à travers les espaces",
 		"SelectDimensionTypeNavigationLayoutIcon.select": "Sélectionner ce type de calque pour la navigation",
 		"SelectDimensionTypeNavigationLayoutIcon.unselect": "Retirer la navigation par calque d'analyse et revenir à la navigation par espaces",
+		"SelectItemTypeShapeFormeLayerSyncAction.ariaLabel": "Points de forme",
+		"SelectItemTypeShapeFormeLayerSyncAction.help": "Éditer les points qui définissent la géométrie de forme du type d'objet",
+		"SelectItemTypeShapeLayerToggle.formeAria": "Points de forme",
+		"SelectItemTypeShapeLayerToggle.formeHelp": "Éditer les points qui définissent la géométrie de forme du type d'objet",
+		"SelectItemTypeShapeLayerToggle.formeLabel": "Points de forme",
+		"SelectItemTypeShapeLayerToggle.groupAria": "Calque de l'éditeur de type d'objet",
+		"SelectItemTypeShapeLayerToggle.visualAria": "Arêtes visuelles",
+		"SelectItemTypeShapeLayerToggle.visualHelp": "Éditer les arêtes d'affichage, distinctes de la géométrie de forme",
+		"SelectItemTypeShapeLayerToggle.visualLabel": "Arêtes visuelles",
+		"SelectItemTypeShapeVisualEdgesLayerSyncAction.ariaLabel": "Arêtes visuelles",
+		"SelectItemTypeShapeVisualEdgesLayerSyncAction.help": "Éditer les arêtes d'affichage, distinctes de la géométrie de forme",
 		"ShapeTextAnchorDrawer.empty": "Merci de sélectionner une forme compatible afin de déplacer le texte d'affichage",
 		"SharingcloudSyncOperationLabel.title": "Syncronisation Sharingcloud",
 		"ShowEntityDrawer.title.listItem": "Voir les informations pour %{determinant.defined} dans la barre latérale",
@@ -111393,6 +112072,10 @@ var jsonTranslationsFiles = {
 		"SingleFloorSelector.noFloorWithStructure": "Aucun étage avec structure",
 		"SingleFloorSelector.selectFloorPrompt": "Veuillez choisir un étage",
 		"SingleNodeQuery.refetch": "Recharger les données",
+		"StaticDeskReleaseAvailableWorkplaceListItem.workplaceLine": "%{workplaceName} — %{buildingName}",
+		"StaticDeskReleaseDeclaredAlert.message": "Les postes de travail suivants sont disponibles à la réservation pour vos collègues pour toute cette journée :",
+		"StaticDeskReleaseThirdPartyBookedWorkplaceListItem.bookedWorkplaceLine": "%{workplaceName} — %{buildingName}",
+		"StaticDeskReleaseThirdPartyBookedWorkplaceListItem.bookedWorkplaceTooltip": "%{bookedByPersonFullname} a réservé cet espace de travail (%{workplaceName} — %{buildingName}). Tant que cette personne n'a pas annulé sa réservation, il est impossible de déclarer votre retour au bureau.",
 		"StaticHelpMenuPathBreadcrumbs.currentTenantStep": "Plateforme courante",
 		"StaticHelpMenuPathBreadcrumbs.entityRecordStep": "Fiche %{entityType}",
 		"StaticHelpMenuPathBreadcrumbs.menuLabel": "Menu",
@@ -111447,6 +112130,8 @@ var jsonTranslationsFiles = {
 		"TenantOperations.ms-user-sync-bourbon.label": "Synchronisation des utilisateurs Microsoft",
 		"TenantOperations.ms-user-sync-thea.description": "Synchronise les utilisateurs depuis Microsoft",
 		"TenantOperations.ms-user-sync-thea.label": "Synchronisation des utilisateurs Microsoft",
+		"TenantOperations.ms-user-sync-tikehau.description": "Synchronise les utilisateurs depuis Microsoft Entra ID",
+		"TenantOperations.ms-user-sync-tikehau.label": "Synchronisation des utilisateurs Microsoft",
 		"TenantOperations.quadient-import-workday.label": "Synchronisation Workday (Quadient)",
 		"TenantOperations.sephora-sync-sap-success-factors.label": "Synchronisation MSC",
 		"TenantOperations.st-grenoble-import-hr-file.label": "Import du fichier RH",
@@ -111466,6 +112151,9 @@ var jsonTranslationsFiles = {
 		"ThemeModeSwitchMenuItem.dark.label": "Passer en mode lumineux",
 		"ThemeModeSwitchMenuItem.light.help": "Utiliser le mode sombre permet de travailler avec des couleurs sombre en fond pour moins se fatiguer les yeux",
 		"ThemeModeSwitchMenuItem.light.label": "Passer en mode sombre",
+		"TikehauMSUserSyncOperation.description": "Synchronisez les utilisateurs Entra ID avec les collaborateurs Surfy. Phase initiale : dump complet avec filtres Graph de base (comptes actifs, membres, licences). Les collaborateurs manquants sont proposés pour création par email.",
+		"TikehauMSUserSyncOperation.refresh": "Synchroniser les utilisateurs Microsoft",
+		"TikehauMSUserSyncOperation.title": "Synchronisation des utilisateurs Microsoft",
 		"TimeSlot.clickToBook": "Cliquer pour réserver le %{day} à %{time}",
 		"TimeSlot.pastDay": "Impossible de réserver : %{day} est déjà passé",
 		"TimeSlot.pastTime": "Impossible de réserver : l'heure %{time} est déjà passée",
@@ -111489,6 +112177,8 @@ var jsonTranslationsFiles = {
 		"ToggleEnableMissingFloors.label": "Afficher les étages fantômes",
 		"ToggleEnableRoomLabels.help": "Afficher les noms des espaces sous forme d'étiquettes sur la vue 3D",
 		"ToggleEnableRoomLabels.label": "Afficher les étiquettes des espaces",
+		"ToggleEnableStructureWalls.help": "Afficher l'empreinte de la structure du bâtiment dans la vue 3D. Non disponible en mode de murs Cuby.",
+		"ToggleEnableStructureWalls.label": "Afficher la structure du bâtiment",
 		"ToggleJupRoleObjectTypeCrudAsyncAction.help": "Mettre à jour la propriété (%{name})",
 		"ToggleWorkplaceFreeConditionTypeIconButton.and": "Voir les postes de travail libre pour au moins un des jours demandés",
 		"ToggleWorkplaceFreeConditionTypeIconButton.or": "Voir les postes de travail libre pour tous les jours demandés",
@@ -111526,6 +112216,10 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.AddItemTypeToWorkplaceTypeCancelOption.label": "Annuler l'ajout d'un type d'objet",
 		"WorkCanvas.Options.AddItemTypeToWorkplaceTypeOption.help": "Ajouter une type d'objet pour pouvoir composer le type de poste de travail",
 		"WorkCanvas.Options.AddItemTypeToWorkplaceTypeOption.label": "Ajouter un type d'objet",
+		"WorkCanvas.Options.AddItemTypeVisualEdgeOption.help.disable": "Arrêter le dessin d'arête visuelle",
+		"WorkCanvas.Options.AddItemTypeVisualEdgeOption.help.enable": "Dessiner une arête décorative (2 clics) sur le calque visual edges",
+		"WorkCanvas.Options.AddItemTypeVisualEdgeOption.label.disable": "Arrêter l'ajout d'arête visuelle",
+		"WorkCanvas.Options.AddItemTypeVisualEdgeOption.label.enable": "Ajouter une arête visuelle",
 		"WorkCanvas.Options.AddRoomPointOption.help.disable": "Arrêter la création de sommets",
 		"WorkCanvas.Options.AddRoomPointOption.help.enable": "Ajouter un sommet permet de retravailler avec plus de precisions une forme",
 		"WorkCanvas.Options.AddRoomPointOption.label.disable": "Arrêter l'ajout d'un sommet",
@@ -111574,6 +112268,8 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.DeleteItemTypePointsOption.label": "Supprimer les sommets sélectionnés",
 		"WorkCanvas.Options.DeleteItemTypeShapeOption.help": "Supprimer totalement la forme du type d'objet afin de pouvoir par exemple la redessiner entierement ou la transformer en icone",
 		"WorkCanvas.Options.DeleteItemTypeShapeOption.label": "Supprimer la forme",
+		"WorkCanvas.Options.DeleteItemTypeVisualEdgesOption.help": "Supprimer les arêtes visuelles sélectionnées",
+		"WorkCanvas.Options.DeleteItemTypeVisualEdgesOption.label": "Supprimer les arêtes visuelles",
 		"WorkCanvas.Options.DeleteRoomPointRoomOption.help": "Supprimer les sommets de l'espace",
 		"WorkCanvas.Options.DeleteRoomPointRoomOption.label": "Supprimer les sommets sélectionnés",
 		"WorkCanvas.Options.DeleteStructureShapeOption.help": "Supprimer totalement la forme de la structure de pouvoir par exemple la redessiner entierement",
@@ -111681,6 +112377,10 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.ToggleColorizeIsTransitWorkplacesOption.help.enable": "Voir sur le plan en couleur les postes de travail qui sont de passage",
 		"WorkCanvas.Options.ToggleColorizeIsTransitWorkplacesOption.label.disable": "Arrêter de colorier les postes de passage",
 		"WorkCanvas.Options.ToggleColorizeIsTransitWorkplacesOption.label.enable": "Colorier les postes de passage",
+		"WorkCanvas.Options.ToggleColorizeReleasableWorkplacesOption.help.disable": "Ne plus voir les postes libérables de façon différente sur le plan",
+		"WorkCanvas.Options.ToggleColorizeReleasableWorkplacesOption.help.enable": "Voir sur le plan en couleur les postes de travail marqués comme libérables (libération sur absence)",
+		"WorkCanvas.Options.ToggleColorizeReleasableWorkplacesOption.label.disable": "Arrêter de colorier les postes libérables",
+		"WorkCanvas.Options.ToggleColorizeReleasableWorkplacesOption.label.enable": "Colorier les postes libérables",
 		"WorkCanvas.Options.ToggleEditModeOption.description": "Lors de la rotation des objets et des postes de travail, par defaut un angle de 45° est appliqué, pour le désactiver utilisez la touche du clavier <b>SHIFT</b>",
 		"WorkCanvas.Options.ToggleEditModeOption.help.disable": "Désactiver le mode édition du plan pour revenir dans le mode lecture du plan",
 		"WorkCanvas.Options.ToggleEditModeOption.help.enable": "Activer le mode édition du plan permet de créer et déplacer des formes ou créer des espaces",
@@ -111774,6 +112474,7 @@ var jsonTranslationsFiles = {
 		"WorkplaceCanvasItem.workplace.free": "Le poste de travail n'est pas occupé",
 		"WorkplaceCanvasItem.workplace.isBookable": "Le poste de travail est réservable",
 		"WorkplaceCanvasItem.workplace.isFlex": "Le poste de travail est en flex",
+		"WorkplaceCanvasItem.workplace.isReleasable": "Le poste de travail est libérable",
 		"WorkplaceCanvasItem.workplace.isTransit": "Le poste de travail est de passage",
 		"WorkplaceFullName.noName": "Poste de travail sans nom",
 		"WorkplaceList.workplace.flex": "Ce poste de travail est en flex",
@@ -111838,6 +112539,7 @@ var jsonTranslationsFiles = {
 		"ZbreSyncOperationLabel.title": "Syncronisation Z#bre"
 	},
 	en: {
+		"AccordionFilterListItemText.moreSelected": "+%{count} others",
 		"AccordionSearchParamFilterDates.title": "Dates",
 		"AddPersonToDimension.help": "Assign person to %{name}",
 		"AddPersonToItem.help": "Associate a person with this object, you can add several people for the same object",
@@ -111918,10 +112620,13 @@ var jsonTranslationsFiles = {
 		"BookingDialog.startTime": "Start Time",
 		"BookingDialog.subject": "Meeting Subject",
 		"BookingMap.errors.noBuildingInFilter": "Please select a building and floor in the filter to view reservations",
-		"BookingMap.errors.noDateInFilter": "Please choose a date in the filter to see reservations",
+		"BookingMap.errors.noDateInFilter": "Please select a date in the filter to see reservations",
 		"BookingMap.errors.noFloorInFilter": "Please select a floor in the filter to see reservations",
 		"BookingParkingInBuildingWithRoomTypes.drawerTitle": "Reserve a parking space at %{floorName} for the period %{slotString}",
 		"BookingParkingInBuildingWithRoomTypes.noFreeParkingAvailableInFloor": "No parking spaces available at %{floorName}",
+		"BookingReleasedStaticDeskWorkplaceTitle.bookWorkplace": "Reserve this workstation",
+		"BookingReleasedStaticDeskWorkplaceTitle.introMany": "This workstation is made available because these people will not be at the office today.",
+		"BookingReleasedStaticDeskWorkplaceTitle.introOne": "This workstation is made available because this person will not be at the office today.",
 		"BookingReminderNotConfirmedEmail.body": "Your workstation reservation for %{bookingDate} is not yet confirmed.",
 		"BookingReminderNotConfirmedEmail.confirmBefore": "Please confirm your attendance before %{confirmationEndTime} from the &quot;My schedule&quot; page:",
 		"BookingReminderNotConfirmedEmail.firstNameSuffix": " %{firstName}",
@@ -111953,8 +112658,27 @@ var jsonTranslationsFiles = {
 		"BookingRoomTitle.bookThisSpaceFor": "Reserve this slot for %{slotTimes}",
 		"BookingRoomTitle.free": "Reserve this parking space",
 		"BookingRoomTitle.userBooked": "You have reserved this parking space",
+		"BookingSecurityProfileDayDashboard.horizonDays": "Horizon: %{count} working days",
+		"BookingSecurityProfileDayDashboard.subtitleBuildingMode": "One block per day, then per building: counts per security profile with icons. Click for detail.",
+		"BookingSecurityProfileDayDashboard.title": "Security profile overview",
+		"BookingSecurityProfileDayPersonCards.cardsCount": "%{count} person(s)",
+		"BookingSecurityProfileDayPersonCards.emptyNoPeople": "No person with a security profile booked for these filters",
+		"BookingSecurityProfileDayPersonCardsByBuilding.emptyNoPeople": "No person with a security profile booked for these filters",
+		"BookingSecurityProfileDayPersonCardsByBuilding.noQuartier": "No zone",
+		"BookingSecurityProfileDayPersonCardsByBuilding.sectionByFloor": "By floor",
+		"BookingSecurityProfileDayPersonCardsByBuilding.sectionByQuartier": "By zone",
+		"BookingSecurityProfileDayPilotGrid.noData": "No person with a security profile booked over the period",
+		"BookingSecurityProfileDayPilotGrid.noQuartier": "No zone",
+		"BookingSecurityProfileDayPilotGrid.openDayDetail": "Open detail for %{day}",
+		"BookingSecurityProfileDayPilotGrid.sectionByFloor": "By floor",
+		"BookingSecurityProfileDayPilotGrid.sectionByQuartier": "By zone",
+		"BookingSecurityProfileDayPlanPanel.planHintMultiFloor": "Select a single floor to display the floor plan",
+		"BookingSecurityProfileDayPlanPanel.planHintSelectOneFloor": "Select one floor to display the floor plan",
+		"BookingSecurityProfileDayPlanPanel.sectionPlan": "Floor plan",
 		"BookingWorkplaceDeleteSnackbar.room": "The reservation at space %{roomName} has been cancelled for the period %{slot}",
 		"BookingWorkplaceDeleteSnackbar.workplace": "The reservation at workstation %{workplaceName} has been cancelled for the period %{slot}",
+		"BookingWorkplaceStateLegend.flexFree": "Free flex desk",
+		"BookingWorkplaceStateLegend.releasedByAbsence": "Desk released by absence",
 		"BookingWorkplaceTitle.booked": "This workstation is already reserved",
 		"BookingWorkplaceTitle.free": "Reserve this workstation",
 		"BookingWorkplaceTitle.userBooked": "You have reserved this workstation",
@@ -111978,7 +112702,8 @@ var jsonTranslationsFiles = {
 		"BookWorkplaceOnDimensionAsyncButton.helpWithFloor": "Reserve a workstation on the map in %{dimensionName} on floor %{floorName}",
 		"BookWorkplaceOnDimensionAsyncButton.label": "Reserve a workstation in %{dimensionName}",
 		"BookWorkplaceOnDimensionAsyncButton.labelWithFloor": "Reserve a workstation in %{dimensionName} on floor %{floorName}",
-		"BookWorkplaceOnDimensionWithSlotOpenDrawerButton.errors.noFloor": "The dimension is not on any floor or the workstations are not bookable, impossible to book at the moment from the plan",
+		"BookWorkplaceOnDimensionWithSlotOpenDrawerButton.errors.noBookableWorkplaces": "No reservable workstations are available at the moment; reservations cannot be made via the seating plan.",
+		"BookWorkplaceOnDimensionWithSlotOpenDrawerButton.errors.noFloor": "It's not on any floor, so it's impossible to book it from the map at the moment.",
 		"BookWorkplaceOnDimensionWithSlotOpenDrawerButton.multipleFloors.info": "This area is present on several floors:",
 		"BourbonMSUserSyncOperation.description": "Synchronize Microsoft 365 users with Surfy collaborators. Missing collaborators are created automatically based on their email address.",
 		"BourbonMSUserSyncOperation.refresh": "Sync Microsoft users",
@@ -112011,7 +112736,15 @@ var jsonTranslationsFiles = {
 		"BuildingClonePropertiesSelector.properties.clone.workplaces": "Copy workstations",
 		"BuildingClonePropertiesSelector.properties.clone.workplaceStructure": "Copy the workstation structure",
 		"BuildingCloneScenarios.noClone": "No scenarios have been created yet. You can create your first scenario for this building.",
+		"BuildingDashboard.charts.noGroup": "Without a group",
+		"BuildingDashboard.charts.r1Title": "Surface types by service",
+		"BuildingDashboard.charts.r2Title": "Surface types by level",
+		"BuildingDashboard.charts.r3Title": "Distribution of surface types by service",
+		"BuildingDashboard.charts.r4Title": "m²/PdT ratio per service",
+		"BuildingDashboard.charts.ratioNa": "N / A",
+		"BuildingDashboard.charts.unassigned": "Not affected",
 		"BuildingDashboard.dashboards.area": "Surfaces Dashboard",
+		"BuildingDashboard.dashboards.roomTypeGroup": "Typology groups",
 		"BuildingDashboard.dashboards.workplace": "Desktop Dashboard",
 		"BuildingDataQuality3dEligibility.headerBuilding": "Building",
 		"BuildingDataQuality3dEligibility.headerCompany": "Platform",
@@ -112098,6 +112831,7 @@ var jsonTranslationsFiles = {
 		"BuildingDxfImporterFloorImportPanel.reuseExistingBackgroundLabel": "Reuse existing floor background image",
 		"BuildingDxfImporterFloorImportPanel.sectionHelp": "One DXF file and its companion PNG for this floor. The algorithm directly produces space geometry and shared points.",
 		"BuildingDxfImporterFloorImportPanel.sectionTitle": "Selected floor — %{floorName} (level %{floorLevel})",
+		"BuildingDxfImporterFloorImportPanel.selectAtLeastOnePolygonLayer": "Select at least one polygon layer to enable import.",
 		"BuildingDxfImporterFloorsSection.addFloorRowLabel": "Add a floor",
 		"BuildingDxfImporterFloorsSection.floorAlreadyExists": "A floor with this name already exists on this building",
 		"BuildingDxfImporterFloorsSection.floorLevelLabel": "Level (business)",
@@ -112113,8 +112847,12 @@ var jsonTranslationsFiles = {
 		"BuildingDxfImporterPreviewPanel.parsing": "Computing final topology…",
 		"BuildingDxfImporterPreviewPanel.pixelsPerMeter": "Scale: %{value} px/m",
 		"BuildingDxfImporterPreviewPanel.polygonLayer": "Polygon layer: %{layers}",
+		"BuildingDxfImporterPreviewPanel.polygonLayerOption": "%{layer} — score %{score}, %{count} polygon(s)",
+		"BuildingDxfImporterPreviewPanel.polygonLayersHelp": "Check the space layers to import (score ≥ auto threshold). Changing selection recomputes topology.",
+		"BuildingDxfImporterPreviewPanel.polygonLayersTitle": "Polygon layers",
 		"BuildingDxfImporterPreviewPanel.ready": "Topology ready — you can import on this floor",
 		"BuildingDxfImporterPreviewPanel.roomCount": "%{count} space(s) to import",
+		"BuildingDxfImporterPreviewPanel.selectAtLeastOnePolygonLayer": "Select at least one polygon layer to enable import.",
 		"BuildingDxfImporterPreviewPanel.sharedClusters": "%{count} shared point cluster(s) (party walls)",
 		"BuildingDxfImporterPreviewPanel.title": "Final topology preview",
 		"BuildingDxfImporterResetImportSyncAction.help": "Clears dropped files, preview and messages for this floor",
@@ -112232,6 +112970,11 @@ var jsonTranslationsFiles = {
 		"ClickOnIndexViewMenuPathBreadcrumb.clickOnLabel": "Click on:",
 		"CloneEntitiesFailed.noAccess": "You do not have access to this entity",
 		"CloneEntitiesFailed.reloadHint": "Your displayed data may be outdated. Please reload the page:",
+		"CloudinadryWidgetLoader.error.cloudinary-api-missing": "Cloudinary script loaded but createUploadWidget API is missing.",
+		"CloudinadryWidgetLoader.error.missing-cloud-name": "Cloudinary could not start: cloud name is missing from public configuration.",
+		"CloudinadryWidgetLoader.error.missing-unsigned-preset": "Cloudinary could not start: upload unsignedPreset is missing from runtime configuration.",
+		"CloudinadryWidgetLoader.error.script-load-failed": "Cloudinary could not load the widget script (network, CSP, or ad blocker).",
+		"CloudinadryWidgetLoader.error.widget-create-failed": "Cloudinary could not create the upload widget.",
 		"CollapseSwitchButton.help.false": "See the detail",
 		"CollapseSwitchButton.help.true": "Hide the detail",
 		"CollapseWorkplaceAffectationList.title": "Assign this person for the following days only",
@@ -112370,6 +113113,8 @@ var jsonTranslationsFiles = {
 		"DaySlotTypeLabel.amLabel": "Morning",
 		"DaySlotTypeLabel.pmHelp": "Afternoon hours are from 2:00 PM to 7:00 PM",
 		"DaySlotTypeLabel.pmLabel": "Afternoon",
+		"DaySlotWorklocationToggle.staticDeskReleaseRemovalBlocked": "This absence cannot be removed because your desk has already been booked by someone else for this day.",
+		"DaySlotWorklocationToggle.staticDeskReleaseReturnToOfficeBlocked": "Your desk has been booked by a colleague for this day. Until that booking is cancelled, you cannot declare your return to the office.",
 		"DefaultViewSetIndicator.recommendedViewTooltip": "This view is recommended for this building",
 		"DeleteCleanInventoryItemsAsyncButton.help": "Delete items that can be removed",
 		"DeleteCleanInventoryItemsAsyncButton.label": "Delete",
@@ -112716,7 +113461,7 @@ var jsonTranslationsFiles = {
 		"FieldTypeIcon.Remove": "Remove the icon",
 		"FieldTypeIconBadge.backgroundColor.description": "Background color of the vertical strip (in the icon square, on the right)",
 		"FieldTypeIconBadge.backgroundColor.label": "background color",
-		"FieldTypeIconBadge.create.description": "No badge is defined. Create one to display a vertical text strip on the right, inside the icon square.",
+		"FieldTypeIconBadge.create.description": "No badge is defined. Create one to display a vertical text bar on the right, inside the icon.",
 		"FieldTypeIconBadge.create.help": "Open the badge editor (text and colors)",
 		"FieldTypeIconBadge.create.label": "Create a badge",
 		"FieldTypeIconBadge.preview.description": "Live rendering of the object type icon (shape, background, border, glyph) with the badge strip — same logic as on the plan",
@@ -112786,7 +113531,7 @@ var jsonTranslationsFiles = {
 		"FreeWorkplacesDayListItem.updateFreeWorkplaceVisibleDay.true": "Stop coloring free posts %{day}",
 		"FurnituresSelection.move": "Move the whole group",
 		"FurnituresSelectionDragZone.help": "Move group",
-		"FurnituresSelectionGroupRotation.help": "Rotate all selected workstations around the center of the selection",
+		"FurnituresSelectionGroupRotation.help": "Rotate all selected shapes around the center of the selection",
 		"generateDocumentation.properties.base": "Basic properties",
 		"generateDocumentation.properties.belongsTo": "Associated entities (unique)",
 		"generateDocumentation.properties.hasMany": "Associated entities (list)",
@@ -113036,7 +113781,7 @@ var jsonTranslationsFiles = {
 		"MapFilterNodeIsAllSelected.help": "All the selection below will be loaded, even if new objects are created",
 		"MapFilterNodeToggleAll.action.false": "unselect all",
 		"MapFilterNodeToggleAll.action.true": "Select all",
-		"MapFilters.areaDistributionTitle": "Distribution of selected areas (m²)",
+		"MapFilterRoomsAreaAnalyticsAccordion.areaDistributionTitle": "Distribution of selected areas (m²)",
 		"MapFiltersCategory.CategoryHasChildrenSelected": "Items are selected",
 		"MapFiltersNode.info.close": "Close additional information",
 		"MapFiltersNode.info.open": "See detail and indicators for %{label}",
@@ -113096,9 +113841,9 @@ var jsonTranslationsFiles = {
 		"MeetingRoomsDayFilters.nextTooltip": "Next days",
 		"MeetingRoomsDayFilters.previousTooltip": "Previous days",
 		"MeetingRoomsDayFilters.title": "Days",
-		"MeetingRoomsFilterOption.multiSelectTooltip": "Add or remove this option from the selection",
-		"MeetingRoomsFilterOption.singleSelectAriaLabel": "Select only this option",
-		"MeetingRoomsFilterOption.singleSelectTooltip": "Show only this option",
+		"MeetingRoomsFilterListItem.multiSelectTooltip": "Add or remove this option from the selection",
+		"MeetingRoomsFilterListItem.singleSelectAriaLabel": "Select only this option",
+		"MeetingRoomsFilterListItem.singleSelectTooltip": "Show only this option",
 		"MeetingRoomsHourRangeSelector.rangeEndValueLabel": "End: %{time}",
 		"MeetingRoomsHourRangeSelector.rangeSelectionTooltip": "Drag the handles to set the time range used to search for bookings.",
 		"MeetingRoomsHourRangeSelector.rangeStartValueLabel": "Start: %{time}",
@@ -113401,6 +114146,8 @@ var jsonTranslationsFiles = {
 		"models.Company.properties.enableCrowdedDimensionForBooking.label": "Enable dimension override for booking",
 		"models.Company.properties.enablePathfinding.description": "Enable path finding functionality",
 		"models.Company.properties.enablePathfinding.label": "Enable pathfinding",
+		"models.Company.properties.enableStaticDeskReleaseOnAbsence.description": "This also requires the &quot;Available Position&quot; checkbox on each relevant workstation. When a person statically assigned to a available position declares an absence (OOO, OFF, REMOTE) for the entire day (all assigned personnel absent), the position becomes temporarily reservable by colleagues with reservation rights in the building.",
+		"models.Company.properties.enableStaticDeskReleaseOnAbsence.label": "Free up static workstations in case of absence",
 		"models.Company.properties.iconPath.description": "The company logo in square",
 		"models.Company.properties.iconPath.label": "Icon",
 		"models.Company.properties.id.label": "Company ID",
@@ -113835,6 +114582,27 @@ var jsonTranslationsFiles = {
 		"models.ItemTypePoint.properties.y.description": "Vertical position of the point on the plane",
 		"models.ItemTypePoint.properties.y.label": "Y coordinate",
 		"models.ItemTypePoint.singular": "Point of object types",
+		"models.ItemTypeVisualEdge.description": "A visual edge defines a display segment only on the object type, distinct from shape points",
+		"models.ItemTypeVisualEdge.determinant.defined": "the visual edge of the object type",
+		"models.ItemTypeVisualEdge.determinant.undefined": "a visual edge of object type",
+		"models.ItemTypeVisualEdge.determinants.defined": "the visual edges of object types",
+		"models.ItemTypeVisualEdge.determinants.undefined": "visual edges of object types",
+		"models.ItemTypeVisualEdge.plural": "Visual edges of object types",
+		"models.ItemTypeVisualEdge.properties.itemTypePointEnd.description": "An optional shape point to which the end end is connected.",
+		"models.ItemTypeVisualEdge.properties.itemTypePointEnd.label": "Point of shape (end)",
+		"models.ItemTypeVisualEdge.properties.itemTypePointStart.description": "An optional shape point to which the start endpoint is linked.",
+		"models.ItemTypeVisualEdge.properties.itemTypePointStart.label": "Form point (beginning)",
+		"models.ItemTypeVisualEdge.properties.sortIndex.description": "Visual edge display order",
+		"models.ItemTypeVisualEdge.properties.sortIndex.label": "Sort index",
+		"models.ItemTypeVisualEdge.properties.x1.description": "Abscissa of the first endpoint of the edge",
+		"models.ItemTypeVisualEdge.properties.x1.label": "Coordinate X1",
+		"models.ItemTypeVisualEdge.properties.x2.description": "Abscissa of the second end of the edge",
+		"models.ItemTypeVisualEdge.properties.x2.label": "Coordinate X2",
+		"models.ItemTypeVisualEdge.properties.y1.description": "Ordinate of the first endpoint of the edge",
+		"models.ItemTypeVisualEdge.properties.y1.label": "Coordinate Y1",
+		"models.ItemTypeVisualEdge.properties.y2.description": "Ordinate of the second end of the edge",
+		"models.ItemTypeVisualEdge.properties.y2.label": "Coordinate Y2",
+		"models.ItemTypeVisualEdge.singular": "Object type visual edge",
 		"models.JupObjectType.description": "An entity type defines the different types of objects available in the user interface",
 		"models.JupObjectType.determinant.defined": "the type of entity",
 		"models.JupObjectType.determinant.undefined": "an entity type",
@@ -114407,6 +115175,8 @@ var jsonTranslationsFiles = {
 		"models.PersonWorkingLocation.singular": "People's work location",
 		"models.PersonWorkingLocation.views.booking-maps.help": "View all bookings on a map",
 		"models.PersonWorkingLocation.views.booking-maps.label": "Reservations on a plan",
+		"models.PersonWorkingLocation.views.booking-security-day.help": "See where the security profiles have booked",
+		"models.PersonWorkingLocation.views.booking-security-day.label": "Security profiles present",
 		"models.PersonWorkingLocation.views.guest-planning.help": "Create external guests, assign them to buildings, and manage their bookings.",
 		"models.PersonWorkingLocation.views.guest-planning.label": "External Guest Schedule",
 		"models.PersonWorkingLocation.views.my-planning.help": "Manage my schedule for the next few weeks",
@@ -114735,6 +115505,8 @@ var jsonTranslationsFiles = {
 		"models.Workplace.properties.isBookable.label": "Is bookable?",
 		"models.Workplace.properties.isFlex.description": "If this station is used in Flex mode",
 		"models.Workplace.properties.isFlex.label": "Is flex?",
+		"models.Workplace.properties.isReleasable.description": "If activated, and if the company option &quot;Release static workstations in case of absence&quot; is also activated, the workstation can become temporarily reservable when all assigned personnel declare a full-day absence (OOO, OFF, REMOTE)",
+		"models.Workplace.properties.isReleasable.label": "Is this a position that can be made available?",
 		"models.Workplace.properties.isShared.description": "If this workstation is shared by several people, this automatic field is validated as soon as there are at least 2 assignments on the workstation",
 		"models.Workplace.properties.isShared.label": "Is shared ?",
 		"models.Workplace.properties.isTransit.description": "If this position is transient, this position will be excluded from free workstations without being reservable in flex, a transient position makes it possible to have a workstation available for all those who wish to use it without being included in a system of reservation",
@@ -114901,6 +115673,15 @@ var jsonTranslationsFiles = {
 		"NoRoleAssociated.noRole": "No role seems to be associated with your user for the company %{tenant}, please contact your administrator",
 		"NoTenantCompanyPicker.noTenantsFound": "No tenants found for \"%{query}\"",
 		"NumberOfPeoplePerRowField.label": "Number of people per line for space assignments",
+		"OAuthConfirmPage.autoCloseMessage": "This window will close automatically.",
+		"OAuthConfirmPage.callbackLoading": "Finishing sign-in…",
+		"OAuthConfirmPage.continueMicrosoft": "Office 365",
+		"OAuthConfirmPage.continueMicrosoftHelp": "Connect with your Microsoft professional account via Office 365",
+		"OAuthConfirmPage.errorMessage": "Microsoft authentication failed. You can close this window and try again.",
+		"OAuthConfirmPage.genericReason": "Surfy sign-in",
+		"OAuthConfirmPage.mcpAuthenticateReason": "Authenticate MCP Surfy (Cursor) — sign-in requested by Surfy",
+		"OAuthConfirmPage.thanksMessage": "Thank you, authentication is complete.",
+		"OAuthConfirmPage.title": "Surfy confirmation",
 		"ObjectTypeImportKeys.title": "The keys available to reconcile %{determinants.undefined} in the order of your choice, if you wish to modify one of the key properties you must use the identifier as key",
 		"ObjectTypeImportScalarProperties.help": "Copy to clipboard",
 		"OboBuildingAssignmentChip.assignHelp": "Assign %{buildingName} to this person , allowing them to reserve a workstation.",
@@ -115031,6 +115812,9 @@ var jsonTranslationsFiles = {
 		"RefetchFloorLayoutButton.refetch": "Reload plan data",
 		"RefetchObjectTypeIcon.help": "Reload data for %{determinant.defined}",
 		"RefreshPageButton.label": "Reload page",
+		"ReleasableStaticWorkplaceChip.anotherPersonIsAssignedToReleasableStaticWorkplace": "%{personFullName} is assigned to the freed-up workstation %{workplaceName}",
+		"ReleasableStaticWorkplaceChip.chipLabel": "Workstation available for release: %{workplaceName}",
+		"ReleasableStaticWorkplaceChip.youAreAssignedToReleasableStaticWorkplace": "You are assigned to the available workstation %{workplaceName}",
 		"ReleaseWorkplaceBookingAsyncAction.ariaLabel": "Release this workplace reservation",
 		"ReleaseWorkplaceBookingAsyncAction.help": "Release this reservation",
 		"RemoveFromCartIconButton.help": "Remove from cart",
@@ -115059,6 +115843,27 @@ var jsonTranslationsFiles = {
 		"RenderingTypeError.troubleshooting.webgl2Support": "WebGL 2 support",
 		"RenderingTypeError.troubleshooting.webglSupport": "WebGL support",
 		"RenderingTypeError.troubleshooting.yes": "Yes",
+		"ReportChart.collapse": "Fold back the report",
+		"ReportChart.dataTableFooterTotal": "Total",
+		"ReportChart.dataTableMeasureArea": "m²",
+		"ReportChart.dataTableMeasurePercent": "%",
+		"ReportChart.dataTablePreciseFigures.disable": "Disable precise figures",
+		"ReportChart.dataTablePreciseFigures.enable": "Enable precise figures",
+		"ReportChart.dataTableRatioNa": "N/A",
+		"ReportChart.dataTableRecalculatePercents.disable": "Keep original percentages",
+		"ReportChart.dataTableRecalculatePercents.enable": "Recalculate percentages from visible filters",
+		"ReportChart.dataTableRegion": "Report data table",
+		"ReportChart.dataTableService": "Service",
+		"ReportChart.dataTableShowArea.disable": "Hide m²",
+		"ReportChart.dataTableShowArea.enable": "Show m²",
+		"ReportChart.dataTableWorkplacesCount": "WP",
+		"ReportChart.dataTableWorkplacesCountHelp": "Workplaces",
+		"ReportChart.dataTableWorkplacesCountValue": "%{smart_count} workplace |||| %{smart_count} workplaces",
+		"ReportChart.dataTableWorkplacesRatio": "m²/WP",
+		"ReportChart.dataTableWorkplacesRatioHelp": "square meters per workplace",
+		"ReportChart.exitFullscreen": "Exit full screen",
+		"ReportChart.expand": "Expand the report",
+		"ReportChart.fullscreen": "Full screen",
 		"ReportChart.NoValue": "Without value",
 		"ReportErrorByMailButton.label": "Contact us",
 		"ReportErrorSteps.report.description": "This error has been reported to our teams and we will try to correct it as quickly as possible.",
@@ -115161,6 +115966,10 @@ var jsonTranslationsFiles = {
 		"RoomTypeGroupLabel.exclude.tooltip": "The space typology group excludes associated space types",
 		"RoomTypeGroupMapFilter.Empty": "There is no space type group associated with spaces via space types, you can add more by editing a space type group and adding associating a space type to it, then you can control their display from this section",
 		"RoomTypeGroupsMapFilterZone.tabs_options": "Options",
+		"RoomTypeGroupTooltipTitle.deselectAllBelow": "Deselect all the space type groups below",
+		"RoomTypeGroupTooltipTitle.deselectEntity": "Deselecting %{organization} will remove colors from the plan",
+		"RoomTypeGroupTooltipTitle.selectAllBelow": "Select all the types of objects below in order to color them on the map",
+		"RoomTypeGroupTooltipTitle.selectEntity": "Select %{organization} to color the spaces on the plan",
 		"RoomTypeGroupToRoomTypeLabel.exclude.tooltip": "The space typology is excluded",
 		"RoomWorkplaceList.EmptyList": "There are no workstations in this space",
 		"SavePlanAsSvgButton.help": "Download the plan as displayed as an SVG file (DOM copy, not server). The file opens at scale 1, with no zoom or offset.",
@@ -115172,7 +115981,7 @@ var jsonTranslationsFiles = {
 		"SearchFilters.buttons.clear.help": "Clear all filters and reset them to their initial state to ensure you can see all available entities",
 		"SearchFilters.buttons.clear.label": "Clear all filters",
 		"SearchMenuItem.icon.tooltip": "Search",
-		"SearchPersonCalendarAccordion.input.placeholder": "Find a colleague or check their schedule...",
+		"SearchPersonCalendarAccordion.input.placeholder": "Find a colleague or view their schedule...",
 		"SearchPersonCalendarResults.noResult": "No person was found with this search",
 		"SearchPersonCalendarResults.startSearch": "Start the search with a person 's name with at least 2 characters",
 		"SecondaryDimensionListItem.priority": "Priority %{priority}",
@@ -115183,6 +115992,17 @@ var jsonTranslationsFiles = {
 		"SelectDimensionTypeNavigationLayoutIcon.help": "Navigation by analysis layer allows you to click on a space, select the corresponding layer and see the people assigned to this layer or the workstations and objects associated with this layer through the spaces",
 		"SelectDimensionTypeNavigationLayoutIcon.select": "Select this layer type for navigation",
 		"SelectDimensionTypeNavigationLayoutIcon.unselect": "Remove navigation by analysis layer and return to navigation by spaces",
+		"SelectItemTypeShapeFormeLayerSyncAction.ariaLabel": "Shape points",
+		"SelectItemTypeShapeFormeLayerSyncAction.help": "Edit the points that define the object type shape geometry",
+		"SelectItemTypeShapeLayerToggle.formeAria": "Shape points",
+		"SelectItemTypeShapeLayerToggle.formeHelp": "Edit the points that define the object type shape geometry",
+		"SelectItemTypeShapeLayerToggle.formeLabel": "Shape points",
+		"SelectItemTypeShapeLayerToggle.groupAria": "Object type editor layer",
+		"SelectItemTypeShapeLayerToggle.visualAria": "Visual edges",
+		"SelectItemTypeShapeLayerToggle.visualHelp": "Edit display-only edges, distinct from shape geometry",
+		"SelectItemTypeShapeLayerToggle.visualLabel": "Visual edges",
+		"SelectItemTypeShapeVisualEdgesLayerSyncAction.ariaLabel": "Visual edges",
+		"SelectItemTypeShapeVisualEdgesLayerSyncAction.help": "Edit display-only edges, distinct from shape geometry",
 		"ShapeTextAnchorDrawer.empty": "Please select a compatible shape to move the display text",
 		"SharingcloudSyncOperationLabel.title": "Sharingcloud synchronization",
 		"ShowEntityDrawer.title.listItem": "See information for %{determinant.defined} in the sidebar",
@@ -115190,6 +116010,10 @@ var jsonTranslationsFiles = {
 		"SingleFloorSelector.noFloorWithStructure": "No floor with structure",
 		"SingleFloorSelector.selectFloorPrompt": "Please choose a floor",
 		"SingleNodeQuery.refetch": "Reload data",
+		"StaticDeskReleaseAvailableWorkplaceListItem.workplaceLine": "%{workplaceName} — %{buildingName}",
+		"StaticDeskReleaseDeclaredAlert.message": "The following desks are available for colleagues to book for this full day:",
+		"StaticDeskReleaseThirdPartyBookedWorkplaceListItem.bookedWorkplaceLine": "%{workplaceName} — %{buildingName}",
+		"StaticDeskReleaseThirdPartyBookedWorkplaceListItem.bookedWorkplaceTooltip": "%{bookedByPersonFullname} has booked this workspace (%{workplaceName} — %{buildingName}). Until they cancel their booking, you cannot declare your return to the office.",
 		"StaticHelpMenuPathBreadcrumbs.currentTenantStep": "Current platform",
 		"StaticHelpMenuPathBreadcrumbs.entityRecordStep": "Record %{entityType}",
 		"StaticHelpMenuPathBreadcrumbs.menuLabel": "Menu",
@@ -115244,6 +116068,8 @@ var jsonTranslationsFiles = {
 		"TenantOperations.ms-user-sync-bourbon.label": "Microsoft User Synchronization",
 		"TenantOperations.ms-user-sync-thea.description": "Synchronizes users from Microsoft",
 		"TenantOperations.ms-user-sync-thea.label": "Microsoft User Synchronization",
+		"TenantOperations.ms-user-sync-tikehau.description": "Synchronizes users from Microsoft Entra ID",
+		"TenantOperations.ms-user-sync-tikehau.label": "Microsoft users synchronization",
 		"TenantOperations.quadient-import-workday.label": "Workday sync (Quadient)",
 		"TenantOperations.sephora-sync-sap-success-factors.label": "MSC synchronization",
 		"TenantOperations.st-grenoble-import-hr-file.label": "Importing the HR file",
@@ -115263,6 +116089,9 @@ var jsonTranslationsFiles = {
 		"ThemeModeSwitchMenuItem.dark.label": "Switch to light mode",
 		"ThemeModeSwitchMenuItem.light.help": "Using dark mode allows you to work with dark colors in the background for less eye strain",
 		"ThemeModeSwitchMenuItem.light.label": "Switch to dark mode",
+		"TikehauMSUserSyncOperation.description": "Sync Entra ID users with Surfy collaborators. Initial phase: full dump with base Graph filters (enabled members with licenses). Missing collaborators are proposed for creation by email.",
+		"TikehauMSUserSyncOperation.refresh": "Sync Microsoft users",
+		"TikehauMSUserSyncOperation.title": "Microsoft users synchronization",
 		"TimeSlot.clickToBook": "Click to book on %{day} at %{time}",
 		"TimeSlot.pastDay": "Cannot book: %{day} has already passed",
 		"TimeSlot.pastTime": "Cannot book: %{time} has already passed",
@@ -115286,6 +116115,8 @@ var jsonTranslationsFiles = {
 		"ToggleEnableMissingFloors.label": "Show ghost floors",
 		"ToggleEnableRoomLabels.help": "Display the names of the spaces as labels on the 3D view",
 		"ToggleEnableRoomLabels.label": "Show space labels",
+		"ToggleEnableStructureWalls.help": "Display the building structure footprint in the 3D view. Not available in Cuby wall mode.",
+		"ToggleEnableStructureWalls.label": "Display the building structure",
 		"ToggleJupRoleObjectTypeCrudAsyncAction.help": "Update property ( %{name} )",
 		"ToggleWorkplaceFreeConditionTypeIconButton.and": "See free workstations for at least one of the requested days",
 		"ToggleWorkplaceFreeConditionTypeIconButton.or": "See free workstations for all requested days",
@@ -115323,6 +116154,10 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.AddItemTypeToWorkplaceTypeCancelOption.label": "Cancel adding an object type",
 		"WorkCanvas.Options.AddItemTypeToWorkplaceTypeOption.help": "Add an object type to be able to compose the type of workstation",
 		"WorkCanvas.Options.AddItemTypeToWorkplaceTypeOption.label": "Add an object type",
+		"WorkCanvas.Options.AddItemTypeVisualEdgeOption.help.disable": "Stop visual edge drawing",
+		"WorkCanvas.Options.AddItemTypeVisualEdgeOption.help.enable": "Draw a decorative edge (2 clicks) on the visual edges layer",
+		"WorkCanvas.Options.AddItemTypeVisualEdgeOption.label.disable": "Stop adding visual edge",
+		"WorkCanvas.Options.AddItemTypeVisualEdgeOption.label.enable": "Add a visual edge",
 		"WorkCanvas.Options.AddRoomPointOption.help.disable": "Stop creating summits",
 		"WorkCanvas.Options.AddRoomPointOption.help.enable": "Adding a vertex makes it possible to rework with more precision a form",
 		"WorkCanvas.Options.AddRoomPointOption.label.disable": "Stop adding a vertex",
@@ -115371,6 +116206,8 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.DeleteItemTypePointsOption.label": "Remove selected vertices",
 		"WorkCanvas.Options.DeleteItemTypeShapeOption.help": "Completely remove the shape from the object type so that you can, for example, redraw it entirely or transform it into an icon",
 		"WorkCanvas.Options.DeleteItemTypeShapeOption.label": "Delete shape",
+		"WorkCanvas.Options.DeleteItemTypeVisualEdgesOption.help": "Remove the selected visual edges",
+		"WorkCanvas.Options.DeleteItemTypeVisualEdgesOption.label": "Remove visual edges",
 		"WorkCanvas.Options.DeleteRoomPointRoomOption.help": "Remove vertices from space",
 		"WorkCanvas.Options.DeleteRoomPointRoomOption.label": "Remove selected vertices",
 		"WorkCanvas.Options.DeleteStructureShapeOption.help": "Completely remove the shape of the power structure, for example redraw it entirely",
@@ -115478,6 +116315,10 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.ToggleColorizeIsTransitWorkplacesOption.help.enable": "See on the color map the workstations that are passing through",
 		"WorkCanvas.Options.ToggleColorizeIsTransitWorkplacesOption.label.disable": "Stop coloring crossing posts",
 		"WorkCanvas.Options.ToggleColorizeIsTransitWorkplacesOption.label.enable": "Color the checkpoints",
+		"WorkCanvas.Options.ToggleColorizeReleasableWorkplacesOption.help.disable": "No longer view available positions differently on the plan",
+		"WorkCanvas.Options.ToggleColorizeReleasableWorkplacesOption.help.enable": "See the coloured map for workstations marked as available for release (release due to absence).",
+		"WorkCanvas.Options.ToggleColorizeReleasableWorkplacesOption.label.disable": "Stop coloring in the vacant positions",
+		"WorkCanvas.Options.ToggleColorizeReleasableWorkplacesOption.label.enable": "Color in the available positions",
 		"WorkCanvas.Options.ToggleEditModeOption.description": "When rotating objects and workstations, by default an angle of 45 ° is applied, to deactivate it use the keyboard key <b>SHIFT</b>",
 		"WorkCanvas.Options.ToggleEditModeOption.help.disable": "Deactivate plan editing mode to return to plan reading mode",
 		"WorkCanvas.Options.ToggleEditModeOption.help.enable": "Activate the editing mode of the plan allows you to create and move shapes or create spaces",
@@ -115571,6 +116412,7 @@ var jsonTranslationsFiles = {
 		"WorkplaceCanvasItem.workplace.free": "The workstation is not busy",
 		"WorkplaceCanvasItem.workplace.isBookable": "The workstation is reservable",
 		"WorkplaceCanvasItem.workplace.isFlex": "The workstation is in flex",
+		"WorkplaceCanvasItem.workplace.isReleasable": "The workstation is available",
 		"WorkplaceCanvasItem.workplace.isTransit": "The workstation is passing through",
 		"WorkplaceFullName.noName": "Unnamed workstation",
 		"WorkplaceList.workplace.flex": "This workstation is in flex",
@@ -115635,6 +116477,7 @@ var jsonTranslationsFiles = {
 		"ZbreSyncOperationLabel.title": "Z#ber synchronization"
 	},
 	es: {
+		"AccordionFilterListItemText.moreSelected": "+ %{count} otros",
 		"AccordionSearchParamFilterDates.title": "Fechas",
 		"AddPersonToDimension.help": "Asignar persona a %{name}",
 		"AddPersonToItem.help": "Asocia una persona a este objeto, puedes agregar varias personas para el mismo objeto",
@@ -115719,6 +116562,9 @@ var jsonTranslationsFiles = {
 		"BookingMap.errors.noFloorInFilter": "Por favor seleccione un piso en el filtro para ver las reservas",
 		"BookingParkingInBuildingWithRoomTypes.drawerTitle": "Reserva una plaza de aparcamiento en %{floorName} para el período %{slotString}",
 		"BookingParkingInBuildingWithRoomTypes.noFreeParkingAvailableInFloor": "No hay plazas de aparcamiento disponibles en %{floorName}",
+		"BookingReleasedStaticDeskWorkplaceTitle.bookWorkplace": "Reserva esta estación de trabajo",
+		"BookingReleasedStaticDeskWorkplaceTitle.introMany": "Este puesto de trabajo se habilita porque estas personas no estarán hoy en la oficina.",
+		"BookingReleasedStaticDeskWorkplaceTitle.introOne": "Este puesto de trabajo se habilita porque esta persona no estará hoy en la oficina.",
 		"BookingReminderNotConfirmedEmail.body": "Su reserva de puesto de trabajo para %{bookingDate} aún no está confirmada.",
 		"BookingReminderNotConfirmedEmail.confirmBefore": "Por favor, confirme su asistencia antes %{confirmationEndTime} desde la página &quot;Mi horario&quot;:",
 		"BookingReminderNotConfirmedEmail.firstNameSuffix": " %{firstName}",
@@ -115750,8 +116596,27 @@ var jsonTranslationsFiles = {
 		"BookingRoomTitle.bookThisSpaceFor": "Reserva este espacio para %{slotTimes}",
 		"BookingRoomTitle.free": "Reserva esta plaza de parking",
 		"BookingRoomTitle.userBooked": "Has reservado esta plaza de aparcamiento",
+		"BookingSecurityProfileDayDashboard.horizonDays": "Horizonte: %{count} días laborables",
+		"BookingSecurityProfileDayDashboard.subtitleBuildingMode": "Un bloque por día, luego por edificio: cantidades por perfil SST con iconos. Haga clic para obtener más detalles.",
+		"BookingSecurityProfileDayDashboard.title": "Gestión de perfiles de seguridad",
+		"BookingSecurityProfileDayPersonCards.cardsCount": "%{count} persona(s)",
+		"BookingSecurityProfileDayPersonCards.emptyNoPeople": "Nadie con un perfil de seguridad ha reservado estos filtros.",
+		"BookingSecurityProfileDayPersonCardsByBuilding.emptyNoPeople": "Nadie con un perfil de seguridad ha reservado estos filtros.",
+		"BookingSecurityProfileDayPersonCardsByBuilding.noQuartier": "Sin piedad",
+		"BookingSecurityProfileDayPersonCardsByBuilding.sectionByFloor": "Por piso",
+		"BookingSecurityProfileDayPersonCardsByBuilding.sectionByQuartier": "Por barrio",
+		"BookingSecurityProfileDayPilotGrid.noData": "Durante ese período no se registró ninguna detención de personas con perfil de seguridad.",
+		"BookingSecurityProfileDayPilotGrid.noQuartier": "Sin piedad",
+		"BookingSecurityProfileDayPilotGrid.openDayDetail": "Consulte los detalles de %{day}",
+		"BookingSecurityProfileDayPilotGrid.sectionByFloor": "Por piso",
+		"BookingSecurityProfileDayPilotGrid.sectionByQuartier": "Por barrio",
+		"BookingSecurityProfileDayPlanPanel.planHintMultiFloor": "Seleccione una sola planta para visualizar el plano.",
+		"BookingSecurityProfileDayPlanPanel.planHintSelectOneFloor": "Seleccione una planta para ver el plano.",
+		"BookingSecurityProfileDayPlanPanel.sectionPlan": "plan",
 		"BookingWorkplaceDeleteSnackbar.room": "La reserva en el espacio %{roomName} ha sido cancelada para el período %{slot}",
 		"BookingWorkplaceDeleteSnackbar.workplace": "La reserva en la estación de trabajo %{workplaceName} ha sido cancelada para el período %{slot}",
+		"BookingWorkplaceStateLegend.flexFree": "Puesto flexible y abierto",
+		"BookingWorkplaceStateLegend.releasedByAbsence": "Puesto vacante por ausencia",
 		"BookingWorkplaceTitle.booked": "Esta estación de trabajo ya está reservada",
 		"BookingWorkplaceTitle.free": "Reserva esta estación de trabajo",
 		"BookingWorkplaceTitle.userBooked": "Has reservado esta estación de trabajo",
@@ -115775,7 +116640,8 @@ var jsonTranslationsFiles = {
 		"BookWorkplaceOnDimensionAsyncButton.helpWithFloor": "Reserva una estación de trabajo en el mapa en %{dimensionName} en el piso %{floorName}",
 		"BookWorkplaceOnDimensionAsyncButton.label": "Reserve una estación de trabajo en %{dimensionName}",
 		"BookWorkplaceOnDimensionAsyncButton.labelWithFloor": "Reservar una estación de trabajo en %{dimensionName} en el piso %{floorName}",
-		"BookWorkplaceOnDimensionWithSlotOpenDrawerButton.errors.noFloor": "La dimensión no está en ningún piso o los puestos de trabajo no son reservables, imposible reservar en este momento desde el plano",
+		"BookWorkplaceOnDimensionWithSlotOpenDrawerButton.errors.noBookableWorkplaces": "En estos momentos no hay puestos de trabajo que se puedan reservar; no es posible realizar reservas a través del plano de asientos.",
+		"BookWorkplaceOnDimensionWithSlotOpenDrawerButton.errors.noFloor": "No está en ninguna planta, por lo que de momento es imposible reservarlo desde el mapa.",
 		"BookWorkplaceOnDimensionWithSlotOpenDrawerButton.multipleFloors.info": "Esta área está presente en varias plantas:",
 		"BourbonMSUserSyncOperation.description": "Sincroniza los usuarios de Microsoft 365 con los colaboradores de Surfy. Los colaboradores que falten se crearán automáticamente a partir de su dirección de correo electrónico.",
 		"BourbonMSUserSyncOperation.refresh": "Sincronizar usuarios de Microsoft",
@@ -115808,7 +116674,15 @@ var jsonTranslationsFiles = {
 		"BuildingClonePropertiesSelector.properties.clone.workplaces": "Copiar estaciones de trabajo",
 		"BuildingClonePropertiesSelector.properties.clone.workplaceStructure": "Copiar la estructura de la estación de trabajo",
 		"BuildingCloneScenarios.noClone": "Aún no se ha creado ningún escenario, puedes crear tu primer escenario para este edificio",
+		"BuildingDashboard.charts.noGroup": "Sin un grupo",
+		"BuildingDashboard.charts.r1Title": "Tipos de superficie por servicio",
+		"BuildingDashboard.charts.r2Title": "Tipos de superficie por nivel",
+		"BuildingDashboard.charts.r3Title": "Distribución de los tipos de superficie por servicio",
+		"BuildingDashboard.charts.r4Title": "Relación m²/PdT por servicio",
+		"BuildingDashboard.charts.ratioNa": "N / A",
+		"BuildingDashboard.charts.unassigned": "No afectado",
 		"BuildingDashboard.dashboards.area": "Panel de superficies",
+		"BuildingDashboard.dashboards.roomTypeGroup": "Grupos tipológicos",
 		"BuildingDashboard.dashboards.workplace": "Panel de escritorio",
 		"BuildingDataQuality3dEligibility.headerBuilding": "Edificio",
 		"BuildingDataQuality3dEligibility.headerCompany": "Plataforma",
@@ -115895,6 +116769,7 @@ var jsonTranslationsFiles = {
 		"BuildingDxfImporterFloorImportPanel.reuseExistingBackgroundLabel": "Reutilizar la imagen existente en el suelo",
 		"BuildingDxfImporterFloorImportPanel.sectionHelp": "Un archivo DXF y su correspondiente imagen PNG para esta planta. El algoritmo genera directamente la geometría de los espacios y puntos compartidos.",
 		"BuildingDxfImporterFloorImportPanel.sectionTitle": "Piso seleccionado: %{floorName} (nivel %{floorLevel} )",
+		"BuildingDxfImporterFloorImportPanel.selectAtLeastOnePolygonLayer": "Seleccione al menos una capa de polígonos para poder importarla.",
 		"BuildingDxfImporterFloorsSection.addFloorRowLabel": "Añade un piso",
 		"BuildingDxfImporterFloorsSection.floorAlreadyExists": "En este edificio ya existe una planta con ese nombre.",
 		"BuildingDxfImporterFloorsSection.floorLevelLabel": "Nivel (profesión)",
@@ -115910,8 +116785,12 @@ var jsonTranslationsFiles = {
 		"BuildingDxfImporterPreviewPanel.parsing": "Cálculo de la topología final…",
 		"BuildingDxfImporterPreviewPanel.pixelsPerMeter": "Escala : %{value} px/m",
 		"BuildingDxfImporterPreviewPanel.polygonLayer": "Capa de polígonos: %{layers}",
+		"BuildingDxfImporterPreviewPanel.polygonLayerOption": "%{layer} — puntuación %{score} , %{count} polígono(s)",
+		"BuildingDxfImporterPreviewPanel.polygonLayersHelp": "Seleccione las capas espaciales que desea importar (puntuación ≥ umbral automático). Un cambio reinicia el cálculo.",
+		"BuildingDxfImporterPreviewPanel.polygonLayersTitle": "capas poligonales",
 		"BuildingDxfImporterPreviewPanel.ready": "Topología lista: puedes importarla a este piso.",
 		"BuildingDxfImporterPreviewPanel.roomCount": "%{count} espacio(s) para importar",
+		"BuildingDxfImporterPreviewPanel.selectAtLeastOnePolygonLayer": "Seleccione al menos una capa de polígonos para poder importarla.",
 		"BuildingDxfImporterPreviewPanel.sharedClusters": "%{count} grupo(s) de puntos compartidos (adyacentes)",
 		"BuildingDxfImporterPreviewPanel.title": "Resumen de la topología final",
 		"BuildingDxfImporterResetImportSyncAction.help": "Elimina los archivos subidos, las vistas previas y los mensajes de esta planta.",
@@ -116029,6 +116908,11 @@ var jsonTranslationsFiles = {
 		"ClickOnIndexViewMenuPathBreadcrumb.clickOnLabel": "Hacer clic en:",
 		"CloneEntitiesFailed.noAccess": "No tienes acceso a esta entidad.",
 		"CloneEntitiesFailed.reloadHint": "Los datos mostrados pueden estar desactualizados. Por favor, actualice la página.",
+		"CloudinadryWidgetLoader.error.cloudinary-api-missing": "El script de Cloudinary se ha cargado, pero falta la API createUploadWidget.",
+		"CloudinadryWidgetLoader.error.missing-cloud-name": "Cloudinary no se pudo iniciar: falta el nombre de la nube en la configuración pública.",
+		"CloudinadryWidgetLoader.error.missing-unsigned-preset": "Cloudinary no pudo iniciarse: falta el preajuste de carga (unsignedPreset) en la configuración de tiempo de ejecución.",
+		"CloudinadryWidgetLoader.error.script-load-failed": "Cloudinary no pudo cargar el script del widget (red, CSP o bloqueador).",
+		"CloudinadryWidgetLoader.error.widget-create-failed": "Cloudinary no pudo crear el widget de carga.",
 		"CollapseSwitchButton.help.false": "Ver el detalle",
 		"CollapseSwitchButton.help.true": "ocultar el detalle",
 		"CollapseWorkplaceAffectationList.title": "Asignar a esta persona solo para los días siguientes",
@@ -116167,6 +117051,8 @@ var jsonTranslationsFiles = {
 		"DaySlotTypeLabel.amLabel": "Mañana",
 		"DaySlotTypeLabel.pmHelp": "El horario de tarde es de 14:00 a 19:00 horas.",
 		"DaySlotTypeLabel.pmLabel": "Tarde",
+		"DaySlotWorklocationToggle.staticDeskReleaseRemovalBlocked": "Esta ausencia no se puede eliminar: su puesto ya ha sido reservado por otra persona para este día.",
+		"DaySlotWorklocationToggle.staticDeskReleaseReturnToOfficeBlocked": "Tu puesto de trabajo ha sido reservado por un compañero para hoy. Hasta que no se cancele esta reserva, no es posible notificar tu regreso a la oficina.",
 		"DefaultViewSetIndicator.recommendedViewTooltip": "Esta visión se recomienda para este edificio.",
 		"DeleteCleanInventoryItemsAsyncButton.help": "Retire cualquier objeto que pueda retirarse.",
 		"DeleteCleanInventoryItemsAsyncButton.label": "eliminar",
@@ -116513,7 +117399,7 @@ var jsonTranslationsFiles = {
 		"FieldTypeIcon.Remove": "Eliminar el ícono",
 		"FieldTypeIconBadge.backgroundColor.description": "Color de fondo de la franja vertical (en el cuadrado del icono, a la derecha)",
 		"FieldTypeIconBadge.backgroundColor.label": "color de fondo",
-		"FieldTypeIconBadge.create.description": "No se ha definido ninguna insignia. Crea una para mostrar una franja de texto vertical a la derecha, dentro del cuadrado del icono.",
+		"FieldTypeIconBadge.create.description": "No se ha definido ninguna insignia. Crea una para mostrar una barra de texto vertical a la derecha, dentro del icono.",
 		"FieldTypeIconBadge.create.help": "Abrir el editor de insignias (texto y colores)",
 		"FieldTypeIconBadge.create.label": "Crea una insignia",
 		"FieldTypeIconBadge.preview.description": "Representación en vivo del icono del tipo de objeto (forma, fondo, borde, glifo) con la tira de insignias: la misma lógica que en el plan.",
@@ -116583,7 +117469,7 @@ var jsonTranslationsFiles = {
 		"FreeWorkplacesDayListItem.updateFreeWorkplaceVisibleDay.true": "Deja de colorear publicaciones gratuitas %{day}",
 		"FurnituresSelection.move": "Mover a todo el grupo",
 		"FurnituresSelectionDragZone.help": "Mover grupo",
-		"FurnituresSelectionGroupRotation.help": "Gire todas las estaciones de trabajo seleccionadas alrededor del centro de la selección.",
+		"FurnituresSelectionGroupRotation.help": "Gira todas las formas seleccionadas alrededor del centro de la selección.",
 		"generateDocumentation.properties.base": "Propiedades básicas",
 		"generateDocumentation.properties.belongsTo": "Entidades asociadas (únicas)",
 		"generateDocumentation.properties.hasMany": "Entidades asociadas (lista)",
@@ -116833,7 +117719,7 @@ var jsonTranslationsFiles = {
 		"MapFilterNodeIsAllSelected.help": "Se cargará toda la selección a continuación, incluso si se crean nuevos objetos",
 		"MapFilterNodeToggleAll.action.false": "Deseleccionar todo",
 		"MapFilterNodeToggleAll.action.true": "Seleccionar todo",
-		"MapFilters.areaDistributionTitle": "Distribución de las áreas seleccionadas (m²)",
+		"MapFilterRoomsAreaAnalyticsAccordion.areaDistributionTitle": "Distribución de las áreas seleccionadas (m²)",
 		"MapFiltersCategory.CategoryHasChildrenSelected": "Se seleccionan elementos",
 		"MapFiltersNode.info.close": "Cerrar información adicional",
 		"MapFiltersNode.info.open": "Ver detalle e indicadores para %{label}",
@@ -116893,9 +117779,9 @@ var jsonTranslationsFiles = {
 		"MeetingRoomsDayFilters.nextTooltip": "días siguientes",
 		"MeetingRoomsDayFilters.previousTooltip": "días anteriores",
 		"MeetingRoomsDayFilters.title": "Días",
-		"MeetingRoomsFilterOption.multiSelectTooltip": "Añadir o eliminar esta opción de la selección",
-		"MeetingRoomsFilterOption.singleSelectAriaLabel": "Seleccione solo esta opción",
-		"MeetingRoomsFilterOption.singleSelectTooltip": "Mostrar solo esta opción",
+		"MeetingRoomsFilterListItem.multiSelectTooltip": "Añadir o eliminar esta opción de la selección",
+		"MeetingRoomsFilterListItem.singleSelectAriaLabel": "Seleccione solo esta opción",
+		"MeetingRoomsFilterListItem.singleSelectTooltip": "Mostrar solo esta opción",
 		"MeetingRoomsHourRangeSelector.rangeEndValueLabel": "Fin: %{time}",
 		"MeetingRoomsHourRangeSelector.rangeSelectionTooltip": "Arrastra los controladores para establecer el rango de tiempo utilizado para buscar reservas.",
 		"MeetingRoomsHourRangeSelector.rangeStartValueLabel": "Inicio: %{time}",
@@ -117198,6 +118084,8 @@ var jsonTranslationsFiles = {
 		"models.Company.properties.enableCrowdedDimensionForBooking.label": "Habilitar recargo por dimensión para la reserva",
 		"models.Company.properties.enablePathfinding.description": "Habilitar la función de búsqueda de ruta",
 		"models.Company.properties.enablePathfinding.label": "Habilitar la búsqueda de rutas",
+		"models.Company.properties.enableStaticDeskReleaseOnAbsence.description": "Esto también requiere que la casilla de verificación &quot;Puesto disponible&quot; esté marcada en cada estación de trabajo correspondiente. Cuando una persona asignada de forma fija a un puesto disponible declara una ausencia (fuera de la oficina, fuera de servicio, trabajo remoto) durante todo el día (todo el personal asignado está ausente), el puesto queda temporalmente disponible para ser reservado por compañeros con derechos de reserva en el edificio.",
+		"models.Company.properties.enableStaticDeskReleaseOnAbsence.label": "Liberar estaciones de trabajo estáticas en caso de ausencia.",
 		"models.Company.properties.iconPath.description": "El logo de la empresa en cuadrado",
 		"models.Company.properties.iconPath.label": "Icono",
 		"models.Company.properties.id.label": "Identificación de la compañía",
@@ -117632,6 +118520,27 @@ var jsonTranslationsFiles = {
 		"models.ItemTypePoint.properties.y.description": "Posición vertical del punto en el plano",
 		"models.ItemTypePoint.properties.y.label": "Coordenada Y",
 		"models.ItemTypePoint.singular": "Tipos de puntos de objetos",
+		"models.ItemTypeVisualEdge.description": "Un borde visual define un segmento de visualización solo en el tipo de objeto, distinto de los puntos de forma.",
+		"models.ItemTypeVisualEdge.determinant.defined": "el borde visual del tipo de objeto",
+		"models.ItemTypeVisualEdge.determinant.undefined": "un borde visual del tipo de objeto",
+		"models.ItemTypeVisualEdge.determinants.defined": "los bordes visuales de los tipos de objetos",
+		"models.ItemTypeVisualEdge.determinants.undefined": "bordes visuales de los tipos de objetos",
+		"models.ItemTypeVisualEdge.plural": "bordes visuales de los tipos de objetos",
+		"models.ItemTypeVisualEdge.properties.itemTypePointEnd.description": "Un punto de forma opcional al que se conecta el extremo final.",
+		"models.ItemTypeVisualEdge.properties.itemTypePointEnd.label": "Punta de forma (extremo)",
+		"models.ItemTypeVisualEdge.properties.itemTypePointStart.description": "Un punto de forma opcional al que está vinculado el punto final de inicio.",
+		"models.ItemTypeVisualEdge.properties.itemTypePointStart.label": "Punto de inicio (comienzo)",
+		"models.ItemTypeVisualEdge.properties.sortIndex.description": "Orden de visualización del borde visual",
+		"models.ItemTypeVisualEdge.properties.sortIndex.label": "Índice de clasificación",
+		"models.ItemTypeVisualEdge.properties.x1.description": "Abscisa del primer extremo de la arista",
+		"models.ItemTypeVisualEdge.properties.x1.label": "Coordenada X1",
+		"models.ItemTypeVisualEdge.properties.x2.description": "Abscisa del segundo extremo de la arista",
+		"models.ItemTypeVisualEdge.properties.x2.label": "Coordenada X2",
+		"models.ItemTypeVisualEdge.properties.y1.description": "Ordenada del primer extremo de la arista",
+		"models.ItemTypeVisualEdge.properties.y1.label": "Coordenada Y1",
+		"models.ItemTypeVisualEdge.properties.y2.description": "Ordenada del segundo extremo del borde",
+		"models.ItemTypeVisualEdge.properties.y2.label": "Coordenada Y2",
+		"models.ItemTypeVisualEdge.singular": "Borde visual del tipo de objeto",
 		"models.JupObjectType.description": "Un tipo de entidad define los diferentes tipos de objetos disponibles en la interfaz de usuario",
 		"models.JupObjectType.determinant.defined": "el tipo de entidad",
 		"models.JupObjectType.determinant.undefined": "un tipo de entidad",
@@ -118204,6 +119113,8 @@ var jsonTranslationsFiles = {
 		"models.PersonWorkingLocation.singular": "Lugar de trabajo de las personas",
 		"models.PersonWorkingLocation.views.booking-maps.help": "Ver todas las reservas en un mapa",
 		"models.PersonWorkingLocation.views.booking-maps.label": "Reservas en un plan",
+		"models.PersonWorkingLocation.views.booking-security-day.help": "Vea dónde han reservado los perfiles de seguridad.",
+		"models.PersonWorkingLocation.views.booking-security-day.label": "Perfiles de seguridad presentes",
 		"models.PersonWorkingLocation.views.guest-planning.help": "Crea huéspedes externos, asígnalos a edificios y gestiona sus reservas.",
 		"models.PersonWorkingLocation.views.guest-planning.label": "Calendario de invitados externos",
 		"models.PersonWorkingLocation.views.my-planning.help": "Gestionar mi agenda para las próximas semanas",
@@ -118532,6 +119443,8 @@ var jsonTranslationsFiles = {
 		"models.Workplace.properties.isBookable.label": "¿Se puede reservar?",
 		"models.Workplace.properties.isFlex.description": "Si esta estación se usa en modo Flex",
 		"models.Workplace.properties.isFlex.label": "¿Es flexible?",
+		"models.Workplace.properties.isReleasable.description": "Si está activada, y si también está activada la opción de la empresa &quot;Liberar estaciones de trabajo estáticas en caso de ausencia&quot;, la estación de trabajo puede quedar temporalmente reservable cuando todo el personal asignado declare una ausencia de día completo (OOO, OFF, REMOTE).",
+		"models.Workplace.properties.isReleasable.label": "¿Es este un puesto que se puede cubrir?",
 		"models.Workplace.properties.isShared.description": "Si este puesto de trabajo es compartido por varias personas, este campo automático se valida tan pronto como haya al menos 2 asignaciones en el puesto de trabajo.",
 		"models.Workplace.properties.isShared.label": "Está compartido ?",
 		"models.Workplace.properties.isTransit.description": "Si esta posición es transitoria, esta posición será excluida de las estaciones de trabajo libres sin ser reservable en flex, una posición transitoria permite tener una estación de trabajo disponible para todos aquellos que deseen utilizarla sin estar incluidos en un sistema de reserva.",
@@ -118698,6 +119611,15 @@ var jsonTranslationsFiles = {
 		"NoRoleAssociated.noRole": "No parece haber ningún rol asociado con su usuario para la empresa %{tenant} , comuníquese con su administrador",
 		"NoTenantCompanyPicker.noTenantsFound": "No se encontró ninguna plataforma para &quot; %{query} &quot;",
 		"NumberOfPeoplePerRowField.label": "Número de personas por línea para asignaciones de espacio",
+		"OAuthConfirmPage.autoCloseMessage": "Esta ventana se cerrará automáticamente.",
+		"OAuthConfirmPage.callbackLoading": "Conexión finalizada…",
+		"OAuthConfirmPage.continueMicrosoft": "Office 365",
+		"OAuthConfirmPage.continueMicrosoftHelp": "Conéctese con su cuenta profesional de Microsoft a través de Office 365",
+		"OAuthConfirmPage.errorMessage": "La autenticación de Microsoft falló. Puede cerrar esta ventana e intentarlo de nuevo.",
+		"OAuthConfirmPage.genericReason": "Inicio de sesión de Surfy",
+		"OAuthConfirmPage.mcpAuthenticateReason": "Autenticar MCP Surfy (Cursor) — conexión solicitada por Surfy",
+		"OAuthConfirmPage.thanksMessage": "Gracias, autenticación completada.",
+		"OAuthConfirmPage.title": "Confirmación surfy",
 		"ObjectTypeImportKeys.title": "Las claves disponibles para conciliar %{determinants.undefined} en el orden de su elección, si desea modificar una de las propiedades de la clave debe utilizar el identificador como clave",
 		"ObjectTypeImportScalarProperties.help": "Copiar al portapapeles",
 		"OboBuildingAssignmentChip.assignHelp": "Asignar %{buildingName} a esta persona, permitiéndole reservar una estación de trabajo.",
@@ -118828,6 +119750,9 @@ var jsonTranslationsFiles = {
 		"RefetchFloorLayoutButton.refetch": "Recargar datos del plan",
 		"RefetchObjectTypeIcon.help": "Recargar datos para %{determinant.defined}",
 		"RefreshPageButton.label": "Recargar página",
+		"ReleasableStaticWorkplaceChip.anotherPersonIsAssignedToReleasableStaticWorkplace": "%{personFullName} está asignado a la estación de trabajo liberada %{workplaceName}",
+		"ReleasableStaticWorkplaceChip.chipLabel": "Estación de trabajo disponible para su liberación: %{workplaceName}",
+		"ReleasableStaticWorkplaceChip.youAreAssignedToReleasableStaticWorkplace": "Se le ha asignado la estación de trabajo liberada %{workplaceName}",
 		"ReleaseWorkplaceBookingAsyncAction.ariaLabel": "Libera esta reserva de estación de trabajo",
 		"ReleaseWorkplaceBookingAsyncAction.help": "Liberar esta reserva",
 		"RemoveFromCartIconButton.help": "Quitar de la cesta",
@@ -118856,6 +119781,27 @@ var jsonTranslationsFiles = {
 		"RenderingTypeError.troubleshooting.webgl2Support": "Compatibilidad con WebGL 2",
 		"RenderingTypeError.troubleshooting.webglSupport": "Compatibilidad con WebGL",
 		"RenderingTypeError.troubleshooting.yes": "Sí",
+		"ReportChart.collapse": "Doblar el informe",
+		"ReportChart.dataTableFooterTotal": "total",
+		"ReportChart.dataTableMeasureArea": "m²",
+		"ReportChart.dataTableMeasurePercent": "%",
+		"ReportChart.dataTablePreciseFigures.disable": "Deshabilitar números precisos",
+		"ReportChart.dataTablePreciseFigures.enable": "Activar cifras precisas",
+		"ReportChart.dataTableRatioNa": "N / A",
+		"ReportChart.dataTableRecalculatePercents.disable": "Mantén los porcentajes originales.",
+		"ReportChart.dataTableRecalculatePercents.enable": "Recalcula los porcentajes según los filtros.",
+		"ReportChart.dataTableRegion": "Tabla de datos del informe",
+		"ReportChart.dataTableService": "Servicio",
+		"ReportChart.dataTableShowArea.disable": "Ocultar los metros cuadrados",
+		"ReportChart.dataTableShowArea.enable": "Mostrar los metros cuadrados",
+		"ReportChart.dataTableWorkplacesCount": "PdT",
+		"ReportChart.dataTableWorkplacesCountHelp": "Estaciones de trabajo",
+		"ReportChart.dataTableWorkplacesCountValue": "%{smart_count} estaciones de trabajo |||| %{smart_count} estaciones de trabajo",
+		"ReportChart.dataTableWorkplacesRatio": "m²/PdT",
+		"ReportChart.dataTableWorkplacesRatioHelp": "metros cuadrados por estación de trabajo",
+		"ReportChart.exitFullscreen": "Salir de la pantalla completa",
+		"ReportChart.expand": "Amplíe el informe",
+		"ReportChart.fullscreen": "Pantalla completa",
 		"ReportChart.NoValue": "Sin valor",
 		"ReportErrorByMailButton.label": "Contáctenos",
 		"ReportErrorSteps.report.description": "Este error ha sido informado a nuestros equipos e intentaremos corregirlo lo más rápido posible.",
@@ -118958,6 +119904,10 @@ var jsonTranslationsFiles = {
 		"RoomTypeGroupLabel.exclude.tooltip": "El grupo de tipología de espacio excluye los tipos de espacio asociados.",
 		"RoomTypeGroupMapFilter.Empty": "No hay ningún grupo de tipo de espacio asociado con espacios a través de tipos de espacio, puede agregar más editando un grupo de tipo de espacio y agregándole un tipo de espacio asociado, luego puede controlar su visualización desde esta sección",
 		"RoomTypeGroupsMapFilterZone.tabs_options": "opciones",
+		"RoomTypeGroupTooltipTitle.deselectAllBelow": "Deseleccione todos los grupos de tipos de espacio a continuación.",
+		"RoomTypeGroupTooltipTitle.deselectEntity": "Si anula la selección de %{organization} se eliminarán los colores del plan.",
+		"RoomTypeGroupTooltipTitle.selectAllBelow": "Seleccione todos los tipos de objetos a continuación para colorearlos en el mapa",
+		"RoomTypeGroupTooltipTitle.selectEntity": "Seleccione %{organization} para colorear los espacios en el plano.",
 		"RoomTypeGroupToRoomTypeLabel.exclude.tooltip": "Se excluye la tipología del espacio.",
 		"RoomWorkplaceList.EmptyList": "No hay estaciones de trabajo en este espacio.",
 		"SavePlanAsSvgButton.help": "Descarga el plano tal como se muestra en formato SVG. El archivo se abre a escala 1:1, sin zoom ni desplazamiento.",
@@ -118980,6 +119930,17 @@ var jsonTranslationsFiles = {
 		"SelectDimensionTypeNavigationLayoutIcon.help": "La navegación por capa de análisis le permite hacer clic en un espacio, seleccionar la capa correspondiente y ver las personas asignadas a esta capa o las estaciones de trabajo y objetos asociados con esta capa a través de los espacios.",
 		"SelectDimensionTypeNavigationLayoutIcon.select": "Seleccione este tipo de capa para la navegación",
 		"SelectDimensionTypeNavigationLayoutIcon.unselect": "Eliminar navegación por capa de análisis y volver a navegación por espacios",
+		"SelectItemTypeShapeFormeLayerSyncAction.ariaLabel": "Puntos de forma",
+		"SelectItemTypeShapeFormeLayerSyncAction.help": "Edita los puntos que definen la geometría de la forma del tipo de objeto.",
+		"SelectItemTypeShapeLayerToggle.formeAria": "Puntos de forma",
+		"SelectItemTypeShapeLayerToggle.formeHelp": "Edita los puntos que definen la geometría de la forma del tipo de objeto.",
+		"SelectItemTypeShapeLayerToggle.formeLabel": "Puntos de forma",
+		"SelectItemTypeShapeLayerToggle.groupAria": "Capa del editor de tipos de objetos",
+		"SelectItemTypeShapeLayerToggle.visualAria": "bordes visuales",
+		"SelectItemTypeShapeLayerToggle.visualHelp": "Edita los bordes de visualización, independientemente de la geometría de la forma.",
+		"SelectItemTypeShapeLayerToggle.visualLabel": "bordes visuales",
+		"SelectItemTypeShapeVisualEdgesLayerSyncAction.ariaLabel": "bordes visuales",
+		"SelectItemTypeShapeVisualEdgesLayerSyncAction.help": "Edita los bordes de visualización, independientemente de la geometría de la forma.",
 		"ShapeTextAnchorDrawer.empty": "Seleccione una forma compatible para mover el texto mostrado",
 		"SharingcloudSyncOperationLabel.title": "Sincronización de nube compartida",
 		"ShowEntityDrawer.title.listItem": "Ver información para %{determinant.defined} en la barra lateral",
@@ -118987,6 +119948,10 @@ var jsonTranslationsFiles = {
 		"SingleFloorSelector.noFloorWithStructure": "Sin piso con estructura",
 		"SingleFloorSelector.selectFloorPrompt": "Por favor seleccione un piso",
 		"SingleNodeQuery.refetch": "Recargar datos",
+		"StaticDeskReleaseAvailableWorkplaceListItem.workplaceLine": "%{workplaceName} — %{buildingName}",
+		"StaticDeskReleaseDeclaredAlert.message": "Los siguientes puestos de trabajo están disponibles para que sus compañeros los reserven durante todo el día:",
+		"StaticDeskReleaseThirdPartyBookedWorkplaceListItem.bookedWorkplaceLine": "%{workplaceName} — %{buildingName}",
+		"StaticDeskReleaseThirdPartyBookedWorkplaceListItem.bookedWorkplaceTooltip": "%{bookedByPersonFullname} ha reservado este espacio de trabajo ( %{workplaceName} — %{buildingName} ). Hasta que esta persona cancele su reserva, no es posible notificar su regreso a la oficina.",
 		"StaticHelpMenuPathBreadcrumbs.currentTenantStep": "Plataforma actual",
 		"StaticHelpMenuPathBreadcrumbs.entityRecordStep": "Registro %{entityType}",
 		"StaticHelpMenuPathBreadcrumbs.menuLabel": "Menú",
@@ -119041,6 +120006,8 @@ var jsonTranslationsFiles = {
 		"TenantOperations.ms-user-sync-bourbon.label": "Sincronización de usuarios de Microsoft",
 		"TenantOperations.ms-user-sync-thea.description": "Sincroniza usuarios de Microsoft",
 		"TenantOperations.ms-user-sync-thea.label": "Sincronización de usuarios de Microsoft",
+		"TenantOperations.ms-user-sync-tikehau.description": "Sincroniza los usuarios de Microsoft Entra ID.",
+		"TenantOperations.ms-user-sync-tikehau.label": "Sincronización de usuarios de Microsoft",
 		"TenantOperations.quadient-import-workday.label": "Sincronización de la jornada laboral (Quadient)",
 		"TenantOperations.sephora-sync-sap-success-factors.label": "sincronización MSC",
 		"TenantOperations.st-grenoble-import-hr-file.label": "Importando el archivo HR",
@@ -119060,6 +120027,9 @@ var jsonTranslationsFiles = {
 		"ThemeModeSwitchMenuItem.dark.label": "Cambiar al modo de luz",
 		"ThemeModeSwitchMenuItem.light.help": "El modo oscuro le permite trabajar con colores oscuros en el fondo para reducir la fatiga visual.",
 		"ThemeModeSwitchMenuItem.light.label": "Cambiar al modo oscuro",
+		"TikehauMSUserSyncOperation.description": "Sincroniza los usuarios de Entra ID con los colaboradores de Surfy. Fase inicial: volcado completo con filtros básicos de Graph (cuentas activas, miembros, licencias). Se sugiere la creación de los colaboradores faltantes mediante correo electrónico.",
+		"TikehauMSUserSyncOperation.refresh": "Sincronizar usuarios de Microsoft",
+		"TikehauMSUserSyncOperation.title": "Sincronización de usuarios de Microsoft",
 		"TimeSlot.clickToBook": "Haga clic para reservar %{day} a %{time}",
 		"TimeSlot.pastDay": "No se puede reservar: ya ha pasado %{day}",
 		"TimeSlot.pastTime": "No se puede reservar: el tiempo %{time} ya ha pasado",
@@ -119083,6 +120053,8 @@ var jsonTranslationsFiles = {
 		"ToggleEnableMissingFloors.label": "Mostrar pisos fantasma",
 		"ToggleEnableRoomLabels.help": "Muestra los nombres de los espacios como etiquetas en la vista 3D.",
 		"ToggleEnableRoomLabels.label": "Mostrar etiquetas de espacio",
+		"ToggleEnableStructureWalls.help": "Muestra la huella de la estructura del edificio en la vista 3D. No disponible en el modo de pared cúbica.",
+		"ToggleEnableStructureWalls.label": "Mostrar la estructura del edificio",
 		"ToggleJupRoleObjectTypeCrudAsyncAction.help": "Actualizar propiedad ( %{name} )",
 		"ToggleWorkplaceFreeConditionTypeIconButton.and": "Ver puestos de trabajo libres durante al menos uno de los días solicitados",
 		"ToggleWorkplaceFreeConditionTypeIconButton.or": "Ver estaciones de trabajo gratuitas para todos los días solicitados",
@@ -119120,6 +120092,10 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.AddItemTypeToWorkplaceTypeCancelOption.label": "Cancelar la adición de un tipo de objeto",
 		"WorkCanvas.Options.AddItemTypeToWorkplaceTypeOption.help": "Agregue un tipo de objeto para poder componer el tipo de estación de trabajo",
 		"WorkCanvas.Options.AddItemTypeToWorkplaceTypeOption.label": "Agregar un tipo de objeto",
+		"WorkCanvas.Options.AddItemTypeVisualEdgeOption.help.disable": "Detener el dibujo de bordes visuales",
+		"WorkCanvas.Options.AddItemTypeVisualEdgeOption.help.enable": "Dibuja un borde decorativo (2 clics) en la capa de bordes visuales.",
+		"WorkCanvas.Options.AddItemTypeVisualEdgeOption.label.disable": "Deja de añadir un borde visual",
+		"WorkCanvas.Options.AddItemTypeVisualEdgeOption.label.enable": "Añade un toque visual",
 		"WorkCanvas.Options.AddRoomPointOption.help.disable": "Deja de crear cumbres",
 		"WorkCanvas.Options.AddRoomPointOption.help.enable": "Agregar un vértice permite volver a trabajar con mayor precisión un formulario",
 		"WorkCanvas.Options.AddRoomPointOption.label.disable": "Deja de agregar un vértice",
@@ -119168,6 +120144,8 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.DeleteItemTypePointsOption.label": "Eliminar vértices seleccionados",
 		"WorkCanvas.Options.DeleteItemTypeShapeOption.help": "Elimine completamente la forma del tipo de objeto para que pueda, por ejemplo, volver a dibujarla por completo o transformarla en un icono",
 		"WorkCanvas.Options.DeleteItemTypeShapeOption.label": "Eliminar forma",
+		"WorkCanvas.Options.DeleteItemTypeVisualEdgesOption.help": "Eliminar los bordes visuales seleccionados",
+		"WorkCanvas.Options.DeleteItemTypeVisualEdgesOption.label": "Eliminar bordes visuales",
 		"WorkCanvas.Options.DeleteRoomPointRoomOption.help": "Quitar vértices del espacio",
 		"WorkCanvas.Options.DeleteRoomPointRoomOption.label": "Eliminar vértices seleccionados",
 		"WorkCanvas.Options.DeleteStructureShapeOption.help": "Eliminar por completo la forma de la estructura de poder, por ejemplo, volver a dibujarla por completo",
@@ -119275,6 +120253,10 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.ToggleColorizeIsTransitWorkplacesOption.help.enable": "Vea en el mapa de colores las estaciones de trabajo que están pasando",
 		"WorkCanvas.Options.ToggleColorizeIsTransitWorkplacesOption.label.disable": "Deja de colorear los postes de cruce",
 		"WorkCanvas.Options.ToggleColorizeIsTransitWorkplacesOption.label.enable": "Colorea los puntos de control",
+		"WorkCanvas.Options.ToggleColorizeReleasableWorkplacesOption.help.disable": "Ya no se consideran las posiciones disponibles de manera diferente en el plan.",
+		"WorkCanvas.Options.ToggleColorizeReleasableWorkplacesOption.help.enable": "Consulte el mapa de colores para ver las estaciones de trabajo marcadas como disponibles para su liberación (liberación debido a ausencia).",
+		"WorkCanvas.Options.ToggleColorizeReleasableWorkplacesOption.label.disable": "Deja de colorear las posiciones vacantes",
+		"WorkCanvas.Options.ToggleColorizeReleasableWorkplacesOption.label.enable": "Color en las posiciones disponibles",
 		"WorkCanvas.Options.ToggleEditModeOption.description": "Al rotar objetos y estaciones de trabajo, por defecto se aplica un ángulo de 45 °, para desactivarlo use la tecla <b>SHIFT</b> del teclado",
 		"WorkCanvas.Options.ToggleEditModeOption.help.disable": "Desactivar el modo de edición de planos para volver al modo de lectura de planos",
 		"WorkCanvas.Options.ToggleEditModeOption.help.enable": "Activar el modo de edición del plano te permite crear y mover formas o crear espacios",
@@ -119368,6 +120350,7 @@ var jsonTranslationsFiles = {
 		"WorkplaceCanvasItem.workplace.free": "La estación de trabajo no está ocupada.",
 		"WorkplaceCanvasItem.workplace.isBookable": "La estación de trabajo se puede reservar.",
 		"WorkplaceCanvasItem.workplace.isFlex": "La estación de trabajo está en flex",
+		"WorkplaceCanvasItem.workplace.isReleasable": "La estación de trabajo está disponible",
 		"WorkplaceCanvasItem.workplace.isTransit": "La estación de trabajo está pasando",
 		"WorkplaceFullName.noName": "Estación de trabajo sin nombre",
 		"WorkplaceList.workplace.flex": "Esta estación de trabajo está en flex",
@@ -119432,6 +120415,7 @@ var jsonTranslationsFiles = {
 		"ZbreSyncOperationLabel.title": "Sincronización Z#ber"
 	},
 	it: {
+		"AccordionFilterListItemText.moreSelected": "+ %{count} altro",
 		"AccordionSearchParamFilterDates.title": "Date",
 		"AddPersonToDimension.help": "Assegna persona a %{name}",
 		"AddPersonToItem.help": "Associa una persona a questo oggetto, puoi aggiungere più persone per lo stesso oggetto",
@@ -119516,6 +120500,9 @@ var jsonTranslationsFiles = {
 		"BookingMap.errors.noFloorInFilter": "Seleziona un piano nel filtro per vedere le prenotazioni",
 		"BookingParkingInBuildingWithRoomTypes.drawerTitle": "Prenota un posto auto al %{floorName} per il periodo %{slotString}",
 		"BookingParkingInBuildingWithRoomTypes.noFreeParkingAvailableInFloor": "Nessun posto auto disponibile a %{floorName}",
+		"BookingReleasedStaticDeskWorkplaceTitle.bookWorkplace": "Prenota questa postazione di lavoro",
+		"BookingReleasedStaticDeskWorkplaceTitle.introMany": "Questa postazione di lavoro viene resa disponibile perché queste persone non saranno in ufficio oggi.",
+		"BookingReleasedStaticDeskWorkplaceTitle.introOne": "Questa postazione di lavoro viene resa disponibile perché questa persona non sarà in ufficio oggi.",
 		"BookingReminderNotConfirmedEmail.body": "La prenotazione della postazione di lavoro per %{bookingDate} non è ancora confermata.",
 		"BookingReminderNotConfirmedEmail.confirmBefore": "Si prega di confermare la propria presenza entro %{confirmationEndTime} dalla pagina &quot;Il mio programma&quot;:",
 		"BookingReminderNotConfirmedEmail.firstNameSuffix": " %{firstName}",
@@ -119547,8 +120534,27 @@ var jsonTranslationsFiles = {
 		"BookingRoomTitle.bookThisSpaceFor": "Prenota questo slot per %{slotTimes}",
 		"BookingRoomTitle.free": "Prenota questo posto auto",
 		"BookingRoomTitle.userBooked": "Hai prenotato questo posto auto",
+		"BookingSecurityProfileDayDashboard.horizonDays": "Orizzonte: %{count} giorni lavorativi",
+		"BookingSecurityProfileDayDashboard.subtitleBuildingMode": "Un blocco al giorno, poi per edificio: quantità per profilo SST con icone. Clicca per i dettagli.",
+		"BookingSecurityProfileDayDashboard.title": "Gestione dei profili di sicurezza",
+		"BookingSecurityProfileDayPersonCards.cardsCount": "%{count} persone",
+		"BookingSecurityProfileDayPersonCards.emptyNoPeople": "Nessuno con un profilo di sicurezza ha prenotato questi filtri",
+		"BookingSecurityProfileDayPersonCardsByBuilding.emptyNoPeople": "Nessuno con un profilo di sicurezza ha prenotato questi filtri",
+		"BookingSecurityProfileDayPersonCardsByBuilding.noQuartier": "Nessun pietà",
+		"BookingSecurityProfileDayPersonCardsByBuilding.sectionByFloor": "Per piano",
+		"BookingSecurityProfileDayPersonCardsByBuilding.sectionByQuartier": "Per quartiere",
+		"BookingSecurityProfileDayPilotGrid.noData": "Durante il periodo in questione non è stato effettuato alcun arresto nei confronti di persone con un profilo di sicurezza.",
+		"BookingSecurityProfileDayPilotGrid.noQuartier": "Nessun pietà",
+		"BookingSecurityProfileDayPilotGrid.openDayDetail": "Vedi i dettagli di %{day}",
+		"BookingSecurityProfileDayPilotGrid.sectionByFloor": "Per piano",
+		"BookingSecurityProfileDayPilotGrid.sectionByQuartier": "Per quartiere",
+		"BookingSecurityProfileDayPlanPanel.planHintMultiFloor": "Seleziona un singolo piano per visualizzare la planimetria",
+		"BookingSecurityProfileDayPlanPanel.planHintSelectOneFloor": "Seleziona un piano per visualizzare la planimetria.",
+		"BookingSecurityProfileDayPlanPanel.sectionPlan": "Piano",
 		"BookingWorkplaceDeleteSnackbar.room": "La prenotazione nello spazio %{roomName} è stata cancellata per il periodo %{slot}",
 		"BookingWorkplaceDeleteSnackbar.workplace": "La prenotazione sulla postazione di lavoro %{workplaceName} è stata cancellata per il periodo %{slot}",
+		"BookingWorkplaceStateLegend.flexFree": "Posizione flessibile e aperta",
+		"BookingWorkplaceStateLegend.releasedByAbsence": "Posto vacante per assenza",
 		"BookingWorkplaceTitle.booked": "Questa postazione di lavoro è già prenotata",
 		"BookingWorkplaceTitle.free": "Prenota questa postazione di lavoro",
 		"BookingWorkplaceTitle.userBooked": "Hai prenotato questa postazione di lavoro",
@@ -119572,7 +120578,8 @@ var jsonTranslationsFiles = {
 		"BookWorkplaceOnDimensionAsyncButton.helpWithFloor": "Prenota una postazione di lavoro sulla planimetria in %{dimensionName} al piano %{floorName}",
 		"BookWorkplaceOnDimensionAsyncButton.label": "Prenota una postazione di lavoro in %{dimensionName}",
 		"BookWorkplaceOnDimensionAsyncButton.labelWithFloor": "Prenota una postazione di lavoro in %{dimensionName} al piano %{floorName}",
-		"BookWorkplaceOnDimensionWithSlotOpenDrawerButton.errors.noFloor": "La dimensione non è su nessun piano o le postazioni di lavoro non sono prenotabili, impossibile prenotare al momento dalla planimetria",
+		"BookWorkplaceOnDimensionWithSlotOpenDrawerButton.errors.noBookableWorkplaces": "Al momento non sono disponibili postazioni di lavoro prenotabili; non è possibile effettuare prenotazioni tramite la planimetria.",
+		"BookWorkplaceOnDimensionWithSlotOpenDrawerButton.errors.noFloor": "Non si trova su nessun piano ed è attualmente impossibile prenotarlo tramite la mappa.",
 		"BookWorkplaceOnDimensionWithSlotOpenDrawerButton.multipleFloors.info": "Questa zona è presente su più piani:",
 		"BourbonMSUserSyncOperation.description": "Sincronizza gli utenti di Microsoft 365 con i collaboratori surfy. I collaboratori mancanti vengono creati automaticamente a partire dal loro indirizzo email.",
 		"BourbonMSUserSyncOperation.refresh": "Sincronizza gli utenti Microsoft",
@@ -119605,7 +120612,15 @@ var jsonTranslationsFiles = {
 		"BuildingClonePropertiesSelector.properties.clone.workplaces": "Copiare le postazioni di lavoro",
 		"BuildingClonePropertiesSelector.properties.clone.workplaceStructure": "Copia la struttura della postazione di lavoro",
 		"BuildingCloneScenarios.noClone": "Nessuno scenario è stato ancora creato, puoi creare il tuo primo scenario per questo edificio",
+		"BuildingDashboard.charts.noGroup": "Senza un gruppo",
+		"BuildingDashboard.charts.r1Title": "Tipologie di superfici in base all'utilizzo",
+		"BuildingDashboard.charts.r2Title": "Tipologie di superficie per livello",
+		"BuildingDashboard.charts.r3Title": "Distribuzione delle tipologie di superficie in base al servizio",
+		"BuildingDashboard.charts.r4Title": "Rapporto m²/PdT per servizio",
+		"BuildingDashboard.charts.ratioNa": "N / A",
+		"BuildingDashboard.charts.unassigned": "Non influenzato",
 		"BuildingDashboard.dashboards.area": "Dashboard delle superfici",
+		"BuildingDashboard.dashboards.roomTypeGroup": "Gruppi tipologici",
 		"BuildingDashboard.dashboards.workplace": "Cruscotto del desktop",
 		"BuildingDataQuality3dEligibility.headerBuilding": "Edificio",
 		"BuildingDataQuality3dEligibility.headerCompany": "Piattaforma",
@@ -119692,6 +120707,7 @@ var jsonTranslationsFiles = {
 		"BuildingDxfImporterFloorImportPanel.reuseExistingBackgroundLabel": "Riutilizzare l'immagine esistente sul pavimento",
 		"BuildingDxfImporterFloorImportPanel.sectionHelp": "Un file DXF e il relativo file PNG per questo piano. L'algoritmo genera direttamente la geometria degli spazi e dei punti condivisi.",
 		"BuildingDxfImporterFloorImportPanel.sectionTitle": "Piano selezionato: %{floorName} (livello %{floorLevel} )",
+		"BuildingDxfImporterFloorImportPanel.selectAtLeastOnePolygonLayer": "Selezionare almeno un layer poligonale per poterlo importare.",
 		"BuildingDxfImporterFloorsSection.addFloorRowLabel": "Aggiungi un piano",
 		"BuildingDxfImporterFloorsSection.floorAlreadyExists": "In questo edificio esiste già un piano con quel nome.",
 		"BuildingDxfImporterFloorsSection.floorLevelLabel": "Livello (professione)",
@@ -119707,8 +120723,12 @@ var jsonTranslationsFiles = {
 		"BuildingDxfImporterPreviewPanel.parsing": "Calcolo della topologia finale…",
 		"BuildingDxfImporterPreviewPanel.pixelsPerMeter": "Scala : %{value} px/m",
 		"BuildingDxfImporterPreviewPanel.polygonLayer": "Strato poligonale: %{layers}",
+		"BuildingDxfImporterPreviewPanel.polygonLayerOption": "%{layer} — punteggio %{score} , %{count} poligono(i)",
+		"BuildingDxfImporterPreviewPanel.polygonLayersHelp": "Seleziona i layer spaziali da importare (punteggio ≥ soglia automatica). Una modifica riavvia il calcolo.",
+		"BuildingDxfImporterPreviewPanel.polygonLayersTitle": "Giorni poligonali",
 		"BuildingDxfImporterPreviewPanel.ready": "Topologia pronta: puoi importare su questo piano",
 		"BuildingDxfImporterPreviewPanel.roomCount": "%{count} spazi da importare",
+		"BuildingDxfImporterPreviewPanel.selectAtLeastOnePolygonLayer": "Selezionare almeno un layer poligonale per poterlo importare.",
 		"BuildingDxfImporterPreviewPanel.sharedClusters": "%{count} cluster(i) di punti condivisi (adiacenti)",
 		"BuildingDxfImporterPreviewPanel.title": "Panoramica finale della topologia",
 		"BuildingDxfImporterResetImportSyncAction.help": "Elimina i file caricati, le anteprime e i messaggi relativi a questo piano.",
@@ -119826,6 +120846,11 @@ var jsonTranslationsFiles = {
 		"ClickOnIndexViewMenuPathBreadcrumb.clickOnLabel": "Fare clic su:",
 		"CloneEntitiesFailed.noAccess": "Non hai accesso a questa entità",
 		"CloneEntitiesFailed.reloadHint": "I dati visualizzati potrebbero non essere aggiornati. Si prega di aggiornare la pagina.",
+		"CloudinadryWidgetLoader.error.cloudinary-api-missing": "Lo script di Cloudinary è stato caricato, ma l'API createUploadWidget non è presente.",
+		"CloudinadryWidgetLoader.error.missing-cloud-name": "Impossibile avviare Cloudinary: il nome del cloud non è presente nella configurazione pubblica.",
+		"CloudinadryWidgetLoader.error.missing-unsigned-preset": "Cloudinary non è stato avviato: il preset di caricamento (unsignedPreset) non è presente nella configurazione di runtime.",
+		"CloudinadryWidgetLoader.error.script-load-failed": "Cloudinary non è riuscito a caricare lo script del widget (rete, CSP o blocco).",
+		"CloudinadryWidgetLoader.error.widget-create-failed": "Cloudinary non è riuscito a creare il widget di caricamento.",
 		"CollapseSwitchButton.help.false": "Guarda il dettaglio",
 		"CollapseSwitchButton.help.true": "Nascondi il dettaglio",
 		"CollapseWorkplaceAffectationList.title": "Assegna questa persona solo per i giorni seguenti",
@@ -119964,6 +120989,8 @@ var jsonTranslationsFiles = {
 		"DaySlotTypeLabel.amLabel": "Mattina",
 		"DaySlotTypeLabel.pmHelp": "L'orario pomeridiano è dalle 14:00 alle 19:00.",
 		"DaySlotTypeLabel.pmLabel": "Pomeriggio",
+		"DaySlotWorklocationToggle.staticDeskReleaseRemovalBlocked": "Questa assenza non può essere annullata: il tuo posto è già stato prenotato da un'altra persona per questa data.",
+		"DaySlotWorklocationToggle.staticDeskReleaseReturnToOfficeBlocked": "La tua postazione di lavoro è stata prenotata da un collega per oggi. Finché la prenotazione non verrà annullata, non sarà possibile segnalare il tuo rientro in ufficio.",
 		"DefaultViewSetIndicator.recommendedViewTooltip": "Questa visione è consigliata per questo edificio",
 		"DeleteCleanInventoryItemsAsyncButton.help": "Rimuovere tutti gli oggetti che possono essere rimossi.",
 		"DeleteCleanInventoryItemsAsyncButton.label": "Cancellare",
@@ -120310,7 +121337,7 @@ var jsonTranslationsFiles = {
 		"FieldTypeIcon.Remove": "rimuovi icona",
 		"FieldTypeIconBadge.backgroundColor.description": "Colore di sfondo della striscia verticale (nel riquadro dell'icona, a destra)",
 		"FieldTypeIconBadge.backgroundColor.label": "colore di sfondo",
-		"FieldTypeIconBadge.create.description": "Non è definito alcun badge. Creane uno per visualizzare una striscia di testo verticale a destra, all'interno del riquadro dell'icona.",
+		"FieldTypeIconBadge.create.description": "Non è definito alcun badge. Creane uno per visualizzare una barra di testo verticale a destra, all'interno dell'icona.",
 		"FieldTypeIconBadge.create.help": "Apri l'editor dei badge (testo e colori)",
 		"FieldTypeIconBadge.create.label": "Crea un badge",
 		"FieldTypeIconBadge.preview.description": "Visualizzazione in tempo reale dell'icona del tipo di oggetto (forma, sfondo, bordo, glifo) con la striscia del badge: stessa logica del progetto.",
@@ -120380,7 +121407,7 @@ var jsonTranslationsFiles = {
 		"FreeWorkplacesDayListItem.updateFreeWorkplaceVisibleDay.true": "Smettila di colorare i post gratuiti %{day}",
 		"FurnituresSelection.move": "Sposta l'intero gruppo",
 		"FurnituresSelectionDragZone.help": "Sposta gruppo",
-		"FurnituresSelectionGroupRotation.help": "Ruota tutte le postazioni di lavoro selezionate attorno al centro della selezione",
+		"FurnituresSelectionGroupRotation.help": "Ruota tutte le forme selezionate attorno al centro della selezione",
 		"generateDocumentation.properties.base": "Proprietà di base",
 		"generateDocumentation.properties.belongsTo": "Enti associati (singoli)",
 		"generateDocumentation.properties.hasMany": "Enti associati (elenco)",
@@ -120630,7 +121657,7 @@ var jsonTranslationsFiles = {
 		"MapFilterNodeIsAllSelected.help": "Verrà caricata tutta la selezione sottostante, anche se vengono creati nuovi oggetti",
 		"MapFilterNodeToggleAll.action.false": "Deseleziona tutto",
 		"MapFilterNodeToggleAll.action.true": "Seleziona tutto",
-		"MapFilters.areaDistributionTitle": "Distribuzione delle aree selezionate (m²)",
+		"MapFilterRoomsAreaAnalyticsAccordion.areaDistributionTitle": "Distribuzione delle aree selezionate (m²)",
 		"MapFiltersCategory.CategoryHasChildrenSelected": "Gli elementi sono selezionati",
 		"MapFiltersNode.info.close": "Chiudi informazioni aggiuntive",
 		"MapFiltersNode.info.open": "Visualizza i dettagli e gli indicatori per %{label}",
@@ -120690,9 +121717,9 @@ var jsonTranslationsFiles = {
 		"MeetingRoomsDayFilters.nextTooltip": "giorni seguenti",
 		"MeetingRoomsDayFilters.previousTooltip": "Giorni precedenti",
 		"MeetingRoomsDayFilters.title": "Giorni",
-		"MeetingRoomsFilterOption.multiSelectTooltip": "Aggiungi o rimuovi questa opzione dalla selezione",
-		"MeetingRoomsFilterOption.singleSelectAriaLabel": "Seleziona solo questa opzione",
-		"MeetingRoomsFilterOption.singleSelectTooltip": "Mostra solo questa opzione",
+		"MeetingRoomsFilterListItem.multiSelectTooltip": "Aggiungi o rimuovi questa opzione dalla selezione",
+		"MeetingRoomsFilterListItem.singleSelectAriaLabel": "Seleziona solo questa opzione",
+		"MeetingRoomsFilterListItem.singleSelectTooltip": "Mostra solo questa opzione",
 		"MeetingRoomsHourRangeSelector.rangeEndValueLabel": "Fine: %{time}",
 		"MeetingRoomsHourRangeSelector.rangeSelectionTooltip": "Trascina le maniglie per impostare l'intervallo di tempo utilizzato per cercare le prenotazioni.",
 		"MeetingRoomsHourRangeSelector.rangeStartValueLabel": "Inizio: %{time}",
@@ -120995,6 +122022,8 @@ var jsonTranslationsFiles = {
 		"models.Company.properties.enableCrowdedDimensionForBooking.label": "Abilita supplemento dimensione per prenotazione",
 		"models.Company.properties.enablePathfinding.description": "Abilita la funzionalità di ricerca del percorso",
 		"models.Company.properties.enablePathfinding.label": "Abilita il pathfinding",
+		"models.Company.properties.enableStaticDeskReleaseOnAbsence.description": "Ciò richiede anche la selezione della casella &quot;Posizione disponibile&quot; su ogni postazione di lavoro pertinente. Quando una persona assegnata staticamente a una posizione disponibile dichiara un'assenza (fuori sede, assente, lavoro da remoto) per l'intera giornata (tutto il personale assegnato è assente), la posizione diventa temporaneamente prenotabile dai colleghi con diritti di prenotazione nell'edificio.",
+		"models.Company.properties.enableStaticDeskReleaseOnAbsence.label": "Liberare le postazioni di lavoro fisse in caso di assenza",
 		"models.Company.properties.iconPath.description": "Il logo aziendale quadrato",
 		"models.Company.properties.iconPath.label": "Icona",
 		"models.Company.properties.id.label": "Codice Identificativo dell'azienda",
@@ -121429,6 +122458,27 @@ var jsonTranslationsFiles = {
 		"models.ItemTypePoint.properties.y.description": "Posizione verticale del punto sul piano",
 		"models.ItemTypePoint.properties.y.label": "coordinata Y",
 		"models.ItemTypePoint.singular": "Punto dei tipi di oggetto",
+		"models.ItemTypeVisualEdge.description": "Un bordo visivo definisce un segmento di visualizzazione solo sul tipo di oggetto, distinto dai punti della forma.",
+		"models.ItemTypeVisualEdge.determinant.defined": "il bordo visivo del tipo di oggetto",
+		"models.ItemTypeVisualEdge.determinant.undefined": "un bordo visivo del tipo di oggetto",
+		"models.ItemTypeVisualEdge.determinants.defined": "i bordi visivi dei tipi di oggetto",
+		"models.ItemTypeVisualEdge.determinants.undefined": "bordi visivi dei tipi di oggetto",
+		"models.ItemTypeVisualEdge.plural": "Bordi visivi dei tipi di oggetto",
+		"models.ItemTypeVisualEdge.properties.itemTypePointEnd.description": "Un punto di forma opzionale a cui è collegata l'estremità.",
+		"models.ItemTypeVisualEdge.properties.itemTypePointEnd.label": "Punto della forma (estremità)",
+		"models.ItemTypeVisualEdge.properties.itemTypePointStart.description": "Un punto di forma opzionale a cui è collegato il punto finale iniziale.",
+		"models.ItemTypeVisualEdge.properties.itemTypePointStart.label": "Punto di forma (inizio)",
+		"models.ItemTypeVisualEdge.properties.sortIndex.description": "ordine di visualizzazione del bordo visivo",
+		"models.ItemTypeVisualEdge.properties.sortIndex.label": "Ordina indice",
+		"models.ItemTypeVisualEdge.properties.x1.description": "Ascissa del primo punto finale del bordo",
+		"models.ItemTypeVisualEdge.properties.x1.label": "Coordinate X1",
+		"models.ItemTypeVisualEdge.properties.x2.description": "Ascissa della seconda estremità del bordo",
+		"models.ItemTypeVisualEdge.properties.x2.label": "Coordinate X2",
+		"models.ItemTypeVisualEdge.properties.y1.description": "Ordinata del primo punto finale del bordo",
+		"models.ItemTypeVisualEdge.properties.y1.label": "Coordinate Y1",
+		"models.ItemTypeVisualEdge.properties.y2.description": "Ordinata della seconda estremità del bordo",
+		"models.ItemTypeVisualEdge.properties.y2.label": "Coordinate Y2",
+		"models.ItemTypeVisualEdge.singular": "bordo visivo del tipo di oggetto",
 		"models.JupObjectType.description": "Un tipo di entità definisce i diversi tipi di oggetti disponibili nell'interfaccia utente",
 		"models.JupObjectType.determinant.defined": "tipo di entità",
 		"models.JupObjectType.determinant.undefined": "un tipo di entità",
@@ -122001,6 +123051,8 @@ var jsonTranslationsFiles = {
 		"models.PersonWorkingLocation.singular": "Luogo di lavoro delle persone",
 		"models.PersonWorkingLocation.views.booking-maps.help": "Visualizza tutte le prenotazioni su una mappa",
 		"models.PersonWorkingLocation.views.booking-maps.label": "Prenotazioni su un piano",
+		"models.PersonWorkingLocation.views.booking-security-day.help": "Scopri dove hanno prenotato i profili di sicurezza",
+		"models.PersonWorkingLocation.views.booking-security-day.label": "Profili di sicurezza presenti",
 		"models.PersonWorkingLocation.views.guest-planning.help": "Crea ospiti esterni, assegnali agli edifici e gestisci le loro prenotazioni.",
 		"models.PersonWorkingLocation.views.guest-planning.label": "Programma degli ospiti esterni",
 		"models.PersonWorkingLocation.views.my-planning.help": "Gestisci il mio programma per le prossime settimane",
@@ -122329,6 +123381,8 @@ var jsonTranslationsFiles = {
 		"models.Workplace.properties.isBookable.label": "è prenotabile?",
 		"models.Workplace.properties.isFlex.description": "Se questa estensione viene utilizzata in modalità Flex",
 		"models.Workplace.properties.isFlex.label": "è flessibile?",
+		"models.Workplace.properties.isReleasable.description": "Se attivata, e se è attivata anche l'opzione aziendale &quot;Rilascia postazioni di lavoro statiche in caso di assenza&quot;, la postazione di lavoro può diventare temporaneamente prenotabile quando tutto il personale assegnato dichiara un'assenza di un'intera giornata (fuori orario, assente, lavoro da remoto).",
+		"models.Workplace.properties.isReleasable.label": "Si tratta di una posizione che può essere resa disponibile?",
 		"models.Workplace.properties.isShared.description": "Se questa postazione è condivisa da più persone, questo campo automatico viene convalidato non appena ci sono almeno 2 assegnazioni sulla postazione",
 		"models.Workplace.properties.isShared.label": "è condiviso?",
 		"models.Workplace.properties.isTransit.description": "Se questa posizione è transitoria, questa posizione sarà esclusa dalle postazioni libere senza essere prenotabile in flex, una posizione transitoria permette di avere una postazione a disposizione per tutti coloro che desiderano utilizzarla senza essere inseriti in un sistema di prenotazione",
@@ -122495,6 +123549,15 @@ var jsonTranslationsFiles = {
 		"NoRoleAssociated.noRole": "Nessun ruolo sembra essere associato al tuo utente per l'azienda %{tenant} , contatta il tuo amministratore",
 		"NoTenantCompanyPicker.noTenantsFound": "Nessuna piattaforma trovata per &quot; %{query} &quot;",
 		"NumberOfPeoplePerRowField.label": "Numero di persone per linea per assegnazioni di spazio",
+		"OAuthConfirmPage.autoCloseMessage": "Questa finestra si chiuderà automaticamente.",
+		"OAuthConfirmPage.callbackLoading": "Connessione stabilita…",
+		"OAuthConfirmPage.continueMicrosoft": "Ufficio 365",
+		"OAuthConfirmPage.continueMicrosoftHelp": "Accedi con il tuo account aziendale Microsoft tramite Office 365",
+		"OAuthConfirmPage.errorMessage": "Autenticazione Microsoft non riuscita. Puoi chiudere questa finestra e riprovare.",
+		"OAuthConfirmPage.genericReason": "Accesso a Surfy",
+		"OAuthConfirmPage.mcpAuthenticateReason": "Autenticazione MCP Surfy (Cursore) — connessione richiesta da Surfy",
+		"OAuthConfirmPage.thanksMessage": "Grazie, autenticazione completata.",
+		"OAuthConfirmPage.title": "Conferma surfy",
 		"ObjectTypeImportKeys.title": "Le chiavi disponibili per riconciliare %{determinants.undefined} nell'ordine che preferisci, se desideri modificare una delle proprietà della chiave devi utilizzare l'identificatore come chiave",
 		"ObjectTypeImportScalarProperties.help": "Copia negli appunti",
 		"OboBuildingAssignmentChip.assignHelp": "Assegna %{buildingName} a questa persona, consentendole di riservare una postazione di lavoro.",
@@ -122625,6 +123688,9 @@ var jsonTranslationsFiles = {
 		"RefetchFloorLayoutButton.refetch": "Ricarica i dati del piano",
 		"RefetchObjectTypeIcon.help": "Ricarica i dati per %{determinant.defined}",
 		"RefreshPageButton.label": "Ricarica la pagina",
+		"ReleasableStaticWorkplaceChip.anotherPersonIsAssignedToReleasableStaticWorkplace": "%{personFullName} è assegnato alla postazione di lavoro liberata %{workplaceName}",
+		"ReleasableStaticWorkplaceChip.chipLabel": "Postazione di lavoro disponibile per il rilascio: %{workplaceName}",
+		"ReleasableStaticWorkplaceChip.youAreAssignedToReleasableStaticWorkplace": "Ti è stata assegnata la postazione di lavoro liberata %{workplaceName}",
 		"ReleaseWorkplaceBookingAsyncAction.ariaLabel": "Rilasciare la prenotazione di questa postazione di lavoro",
 		"ReleaseWorkplaceBookingAsyncAction.help": "Rilascia questa prenotazione",
 		"RemoveFromCartIconButton.help": "Rimuovere dal cestino",
@@ -122653,6 +123719,27 @@ var jsonTranslationsFiles = {
 		"RenderingTypeError.troubleshooting.webgl2Support": "Supporto WebGL 2",
 		"RenderingTypeError.troubleshooting.webglSupport": "Supporto WebGL",
 		"RenderingTypeError.troubleshooting.yes": "SÌ",
+		"ReportChart.collapse": "Ripiegare il rapporto",
+		"ReportChart.dataTableFooterTotal": "Totale",
+		"ReportChart.dataTableMeasureArea": "m²",
+		"ReportChart.dataTableMeasurePercent": "%",
+		"ReportChart.dataTablePreciseFigures.disable": "Disabilita i numeri precisi",
+		"ReportChart.dataTablePreciseFigures.enable": "Attivare cifre precise",
+		"ReportChart.dataTableRatioNa": "N / A",
+		"ReportChart.dataTableRecalculatePercents.disable": "Mantieni le percentuali originali",
+		"ReportChart.dataTableRecalculatePercents.enable": "Ricalcola le percentuali in base ai filtri",
+		"ReportChart.dataTableRegion": "Tabella dei dati del report",
+		"ReportChart.dataTableService": "Servizio",
+		"ReportChart.dataTableShowArea.disable": "Nascondi i metri quadrati",
+		"ReportChart.dataTableShowArea.enable": "Visualizza i metri quadrati",
+		"ReportChart.dataTableWorkplacesCount": "PdT",
+		"ReportChart.dataTableWorkplacesCountHelp": "Posti di lavoro personali",
+		"ReportChart.dataTableWorkplacesCountValue": "%{smart_count} postazioni di lavoro |||| %{smart_count} postazioni di lavoro",
+		"ReportChart.dataTableWorkplacesRatio": "m²/PdT",
+		"ReportChart.dataTableWorkplacesRatioHelp": "metri quadrati per postazione di lavoro",
+		"ReportChart.exitFullscreen": "Esci dalla modalità a schermo intero",
+		"ReportChart.expand": "Espandi il report",
+		"ReportChart.fullscreen": "A schermo intero",
 		"ReportChart.NoValue": "Senza valore",
 		"ReportErrorByMailButton.label": "Contattaci",
 		"ReportErrorSteps.report.description": "Questo errore è stato segnalato ai nostri team e cercheremo di correggerlo il più rapidamente possibile.",
@@ -122755,6 +123842,10 @@ var jsonTranslationsFiles = {
 		"RoomTypeGroupLabel.exclude.tooltip": "Il gruppo di tipologie di spazio esclude i tipi di spazio associati",
 		"RoomTypeGroupMapFilter.Empty": "Non esiste alcun gruppo di tipi di spazio associato agli spazi tramite i tipi di spazio, puoi aggiungerne altri modificando un gruppo di tipi di spazio e aggiungendovi associando un tipo di spazio, quindi puoi controllarne la visualizzazione da questa sezione",
 		"RoomTypeGroupsMapFilterZone.tabs_options": "Opzioni",
+		"RoomTypeGroupTooltipTitle.deselectAllBelow": "Deseleziona tutti i gruppi di tipi di spazio sottostanti",
+		"RoomTypeGroupTooltipTitle.deselectEntity": "Deselezionando %{organization} verranno rimossi i colori dalla mappa",
+		"RoomTypeGroupTooltipTitle.selectAllBelow": "Seleziona tutti i tipi di oggetti qui sotto per colorarli sulla mappa",
+		"RoomTypeGroupTooltipTitle.selectEntity": "Seleziona %{organization} per colorare gli spazi sulla planimetria",
 		"RoomTypeGroupToRoomTypeLabel.exclude.tooltip": "La tipologia dello spazio è esclusa",
 		"RoomWorkplaceList.EmptyList": "Non sono presenti postazioni di lavoro in questo spazio",
 		"SavePlanAsSvgButton.help": "Scarica la planimetria così come viene visualizzata, in formato SVG. Il file si aprirà in scala 1:1, senza zoom né offset.",
@@ -122777,6 +123868,17 @@ var jsonTranslationsFiles = {
 		"SelectDimensionTypeNavigationLayoutIcon.help": "La navigazione per layer di analisi permette di cliccare su uno spazio, selezionare il layer corrispondente e vedere attraverso gli spazi le persone assegnate a questo layer oppure le postazioni e gli oggetti associati a questo layer",
 		"SelectDimensionTypeNavigationLayoutIcon.select": "Seleziona questo tipo di livello per la navigazione",
 		"SelectDimensionTypeNavigationLayoutIcon.unselect": "Rimuovi la navigazione per livello di analisi e torna alla navigazione per spazi",
+		"SelectItemTypeShapeFormeLayerSyncAction.ariaLabel": "Punti di forma",
+		"SelectItemTypeShapeFormeLayerSyncAction.help": "Modifica i punti che definiscono la geometria della forma del tipo di oggetto",
+		"SelectItemTypeShapeLayerToggle.formeAria": "Punti di forma",
+		"SelectItemTypeShapeLayerToggle.formeHelp": "Modifica i punti che definiscono la geometria della forma del tipo di oggetto",
+		"SelectItemTypeShapeLayerToggle.formeLabel": "Punti di forma",
+		"SelectItemTypeShapeLayerToggle.groupAria": "Livello editor tipo oggetto",
+		"SelectItemTypeShapeLayerToggle.visualAria": "bordi visivi",
+		"SelectItemTypeShapeLayerToggle.visualHelp": "Modifica i bordi del display, separatamente dalla geometria della forma.",
+		"SelectItemTypeShapeLayerToggle.visualLabel": "bordi visivi",
+		"SelectItemTypeShapeVisualEdgesLayerSyncAction.ariaLabel": "bordi visivi",
+		"SelectItemTypeShapeVisualEdgesLayerSyncAction.help": "Modifica i bordi del display, separatamente dalla geometria della forma.",
 		"ShapeTextAnchorDrawer.empty": "Seleziona una forma compatibile per spostare il testo visualizzato",
 		"SharingcloudSyncOperationLabel.title": "Sincronizzazione del cloud di condivisione",
 		"ShowEntityDrawer.title.listItem": "Vedi le informazioni per %{determinant.defined} nella barra laterale",
@@ -122784,6 +123886,10 @@ var jsonTranslationsFiles = {
 		"SingleFloorSelector.noFloorWithStructure": "Nessun pavimento con struttura",
 		"SingleFloorSelector.selectFloorPrompt": "Si prega di scegliere un piano",
 		"SingleNodeQuery.refetch": "Ricarica dati",
+		"StaticDeskReleaseAvailableWorkplaceListItem.workplaceLine": "%{workplaceName} — %{buildingName}",
+		"StaticDeskReleaseDeclaredAlert.message": "Le seguenti postazioni di lavoro sono disponibili per la prenotazione da parte dei vostri colleghi per l'intera giornata:",
+		"StaticDeskReleaseThirdPartyBookedWorkplaceListItem.bookedWorkplaceLine": "%{workplaceName} — %{buildingName}",
+		"StaticDeskReleaseThirdPartyBookedWorkplaceListItem.bookedWorkplaceTooltip": "%{bookedByPersonFullname} ha prenotato questo spazio di lavoro ( %{workplaceName} — %{buildingName} ). Finché questa persona non annullerà la prenotazione, non sarà possibile segnalare il tuo ritorno in ufficio.",
 		"StaticHelpMenuPathBreadcrumbs.currentTenantStep": "Piattaforma attuale",
 		"StaticHelpMenuPathBreadcrumbs.entityRecordStep": "Record %{entityType}",
 		"StaticHelpMenuPathBreadcrumbs.menuLabel": "Menu",
@@ -122838,6 +123944,8 @@ var jsonTranslationsFiles = {
 		"TenantOperations.ms-user-sync-bourbon.label": "Sincronizzazione utente Microsoft",
 		"TenantOperations.ms-user-sync-thea.description": "Sincronizza gli utenti di Microsoft",
 		"TenantOperations.ms-user-sync-thea.label": "Sincronizzazione utente Microsoft",
+		"TenantOperations.ms-user-sync-tikehau.description": "Sincronizza gli utenti da Microsoft Entra ID",
+		"TenantOperations.ms-user-sync-tikehau.label": "Sincronizzazione utente Microsoft",
 		"TenantOperations.quadient-import-workday.label": "Sincronizzazione della giornata lavorativa (Quadrante)",
 		"TenantOperations.sephora-sync-sap-success-factors.label": "Sincronizzazione MSC",
 		"TenantOperations.st-grenoble-import-hr-file.label": "Importazione del file HR",
@@ -122857,6 +123965,9 @@ var jsonTranslationsFiles = {
 		"ThemeModeSwitchMenuItem.dark.label": "Passa alla modalità luminosa",
 		"ThemeModeSwitchMenuItem.light.help": "L'uso della modalità scura consente di lavorare con i colori scuri sullo sfondo per ridurre l'affaticamento degli occhi",
 		"ThemeModeSwitchMenuItem.light.label": "Passa alla modalità oscura",
+		"TikehauMSUserSyncOperation.description": "Sincronizza gli utenti di Entra ID con i collaboratori surfy. Fase iniziale: dump completo con filtri Graph di base (account attivi, membri, licenze). Ai collaboratori mancanti verrà suggerita la creazione tramite e-mail.",
+		"TikehauMSUserSyncOperation.refresh": "Sincronizza gli utenti Microsoft",
+		"TikehauMSUserSyncOperation.title": "Sincronizzazione utente Microsoft",
 		"TimeSlot.clickToBook": "Clicca per prenotare %{day} alle %{time}",
 		"TimeSlot.pastDay": "Impossibile prenotare: %{day} è già trascorso",
 		"TimeSlot.pastTime": "Impossibile prenotare: il tempo %{time} è già trascorso",
@@ -122880,6 +123991,8 @@ var jsonTranslationsFiles = {
 		"ToggleEnableMissingFloors.label": "Mostra pavimenti fantasma",
 		"ToggleEnableRoomLabels.help": "Visualizza i nomi degli spazi come etichette nella vista 3D",
 		"ToggleEnableRoomLabels.label": "Mostra etichette spaziali",
+		"ToggleEnableStructureWalls.help": "Visualizza l'ingombro della struttura dell'edificio nella vista 3D. Non disponibile nella modalità parete Cuby.",
+		"ToggleEnableStructureWalls.label": "Mostra la struttura dell'edificio",
 		"ToggleJupRoleObjectTypeCrudAsyncAction.help": "Aggiorna proprietà ( %{name} )",
 		"ToggleWorkplaceFreeConditionTypeIconButton.and": "Vedi le postazioni libere per almeno uno dei giorni richiesti",
 		"ToggleWorkplaceFreeConditionTypeIconButton.or": "Visualizza le postazioni libere per tutti i giorni richiesti",
@@ -122917,6 +124030,10 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.AddItemTypeToWorkplaceTypeCancelOption.label": "Annulla l'aggiunta di un tipo di oggetto",
 		"WorkCanvas.Options.AddItemTypeToWorkplaceTypeOption.help": "Aggiungere un tipo di oggetto per poter comporre il tipo di workstation",
 		"WorkCanvas.Options.AddItemTypeToWorkplaceTypeOption.label": "Aggiungi un tipo di oggetto",
+		"WorkCanvas.Options.AddItemTypeVisualEdgeOption.help.disable": "Interrompere il disegno del bordo visivo",
+		"WorkCanvas.Options.AddItemTypeVisualEdgeOption.help.enable": "Disegna un bordo decorativo (2 clic) sul livello dei bordi visivi",
+		"WorkCanvas.Options.AddItemTypeVisualEdgeOption.label.disable": "Smetti di aggiungere bordi visivi",
+		"WorkCanvas.Options.AddItemTypeVisualEdgeOption.label.enable": "Aggiungi un tocco visivo",
 		"WorkCanvas.Options.AddRoomPointOption.help.disable": "Smetti di creare vertici",
 		"WorkCanvas.Options.AddRoomPointOption.help.enable": "L'aggiunta di un vertice consente di rielaborare una forma con maggiore precisione",
 		"WorkCanvas.Options.AddRoomPointOption.label.disable": "Smetti di aggiungere un vertice",
@@ -122965,6 +124082,8 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.DeleteItemTypePointsOption.label": "Elimina i vertici selezionati",
 		"WorkCanvas.Options.DeleteItemTypeShapeOption.help": "Rimuovere completamente la forma del tipo di oggetto per poterlo, ad esempio, ridisegnarlo interamente o trasformarlo in un'icona",
 		"WorkCanvas.Options.DeleteItemTypeShapeOption.label": "elimina forma",
+		"WorkCanvas.Options.DeleteItemTypeVisualEdgesOption.help": "Rimuovi i bordi visivi selezionati",
+		"WorkCanvas.Options.DeleteItemTypeVisualEdgesOption.label": "Rimuovere i bordi visivi",
 		"WorkCanvas.Options.DeleteRoomPointRoomOption.help": "Rimuovere i vertici dallo spazio",
 		"WorkCanvas.Options.DeleteRoomPointRoomOption.label": "Elimina i vertici selezionati",
 		"WorkCanvas.Options.DeleteStructureShapeOption.help": "Rimuovere completamente la forma della struttura del potere, ad esempio ridisegnarla interamente",
@@ -123072,6 +124191,10 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.ToggleColorizeIsTransitWorkplacesOption.help.enable": "Vedi sulla planimetria le postazioni di lavoro di passaggio",
 		"WorkCanvas.Options.ToggleColorizeIsTransitWorkplacesOption.label.disable": "Smetti di colorare i posti di incrocio",
 		"WorkCanvas.Options.ToggleColorizeIsTransitWorkplacesOption.label.enable": "Colora i posti di blocco",
+		"WorkCanvas.Options.ToggleColorizeReleasableWorkplacesOption.help.disable": "Non visualizzare più le posizioni disponibili in modo diverso sul piano",
+		"WorkCanvas.Options.ToggleColorizeReleasableWorkplacesOption.help.enable": "Consulta la mappa colorata per individuare le postazioni di lavoro contrassegnate come disponibili (libere per assenza).",
+		"WorkCanvas.Options.ToggleColorizeReleasableWorkplacesOption.label.disable": "Smetti di colorare le posizioni vuote",
+		"WorkCanvas.Options.ToggleColorizeReleasableWorkplacesOption.label.enable": "Colorare le posizioni disponibili",
 		"WorkCanvas.Options.ToggleEditModeOption.description": "Quando si ruotano oggetti e postazioni, di default viene applicato un angolo di 45°, per disattivarlo utilizzare il tasto <b>MAIUSC</b> della tastiera",
 		"WorkCanvas.Options.ToggleEditModeOption.help.disable": "Disattiva la modalità di modifica del piano per tornare alla modalità di lettura del piano",
 		"WorkCanvas.Options.ToggleEditModeOption.help.enable": "Attivare la modalità di modifica del piano permette di creare e spostare forme o creare spazi",
@@ -123165,6 +124288,7 @@ var jsonTranslationsFiles = {
 		"WorkplaceCanvasItem.workplace.free": "La stazione di lavoro non è occupata",
 		"WorkplaceCanvasItem.workplace.isBookable": "La postazione di lavoro è prenotabile",
 		"WorkplaceCanvasItem.workplace.isFlex": "La postazione è in flex",
+		"WorkplaceCanvasItem.workplace.isReleasable": "La postazione di lavoro è disponibile",
 		"WorkplaceCanvasItem.workplace.isTransit": "La postazione è transitoria",
 		"WorkplaceFullName.noName": "Postazione di lavoro senza nome",
 		"WorkplaceList.workplace.flex": "Questa workstation è in flex",
@@ -123229,6 +124353,7 @@ var jsonTranslationsFiles = {
 		"ZbreSyncOperationLabel.title": "Sincronizzazione Z#ber"
 	},
 	nl: {
+		"AccordionFilterListItemText.moreSelected": "+ %{count} andere",
 		"AccordionSearchParamFilterDates.title": "Data",
 		"AddPersonToDimension.help": "Wijs iemand toe aan %{name}",
 		"AddPersonToItem.help": "Koppel een persoon aan dit object, u kunt meerdere personen toevoegen aan hetzelfde object",
@@ -123313,6 +124438,9 @@ var jsonTranslationsFiles = {
 		"BookingMap.errors.noFloorInFilter": "Selecteer een verdieping in het filter om reserveringen te zien",
 		"BookingParkingInBuildingWithRoomTypes.drawerTitle": "Reserveer een parkeerplaats op %{floorName} voor de periode %{slotString}",
 		"BookingParkingInBuildingWithRoomTypes.noFreeParkingAvailableInFloor": "Er zijn geen parkeerplaatsen beschikbaar op %{floorName}",
+		"BookingReleasedStaticDeskWorkplaceTitle.bookWorkplace": "Reserveer deze werkplek",
+		"BookingReleasedStaticDeskWorkplaceTitle.introMany": "Deze werkplek wordt beschikbaar gesteld omdat deze mensen vandaag niet op kantoor zullen zijn.",
+		"BookingReleasedStaticDeskWorkplaceTitle.introOne": "Deze werkplek wordt beschikbaar gesteld omdat deze persoon vandaag niet op kantoor aanwezig zal zijn.",
 		"BookingReminderNotConfirmedEmail.body": "Uw werkplekreservering voor %{bookingDate} is nog niet bevestigd.",
 		"BookingReminderNotConfirmedEmail.confirmBefore": "Bevestig uw aanwezigheid vóór %{confirmationEndTime} via de pagina &quot;Mijn rooster&quot;:",
 		"BookingReminderNotConfirmedEmail.firstNameSuffix": " %{firstName}",
@@ -123344,8 +124472,27 @@ var jsonTranslationsFiles = {
 		"BookingRoomTitle.bookThisSpaceFor": "Reserveer dit tijdslot voor %{slotTimes}",
 		"BookingRoomTitle.free": "Reserveer deze parkeerplaats",
 		"BookingRoomTitle.userBooked": "U heeft deze parkeerplaats gereserveerd.",
+		"BookingSecurityProfileDayDashboard.horizonDays": "Horizon: %{count} werkdagen",
+		"BookingSecurityProfileDayDashboard.subtitleBuildingMode": "Eén blok per dag, daarna per gebouw: hoeveelheden per SST-profiel met pictogrammen. Klik voor meer informatie.",
+		"BookingSecurityProfileDayDashboard.title": "Beheer van beveiligingsprofielen",
+		"BookingSecurityProfileDayPersonCards.cardsCount": "%{count} persoon/personen",
+		"BookingSecurityProfileDayPersonCards.emptyNoPeople": "Niemand met een beveiligingsprofiel heeft deze filters geboekt.",
+		"BookingSecurityProfileDayPersonCardsByBuilding.emptyNoPeople": "Niemand met een beveiligingsprofiel heeft deze filters geboekt.",
+		"BookingSecurityProfileDayPersonCardsByBuilding.noQuartier": "Geen genade",
+		"BookingSecurityProfileDayPersonCardsByBuilding.sectionByFloor": "Per verdieping",
+		"BookingSecurityProfileDayPersonCardsByBuilding.sectionByQuartier": "Per buurt",
+		"BookingSecurityProfileDayPilotGrid.noData": "Er is gedurende die periode niemand met een beveiligingsprofiel gearresteerd.",
+		"BookingSecurityProfileDayPilotGrid.noQuartier": "Geen genade",
+		"BookingSecurityProfileDayPilotGrid.openDayDetail": "Bekijk de details van %{day}",
+		"BookingSecurityProfileDayPilotGrid.sectionByFloor": "Per verdieping",
+		"BookingSecurityProfileDayPilotGrid.sectionByQuartier": "Per buurt",
+		"BookingSecurityProfileDayPlanPanel.planHintMultiFloor": "Selecteer één verdieping om de plattegrond weer te geven.",
+		"BookingSecurityProfileDayPlanPanel.planHintSelectOneFloor": "Selecteer een verdieping om de plattegrond te bekijken.",
+		"BookingSecurityProfileDayPlanPanel.sectionPlan": "Plan",
 		"BookingWorkplaceDeleteSnackbar.room": "De reservering bij ruimte %{roomName} is geannuleerd voor de periode %{slot}",
 		"BookingWorkplaceDeleteSnackbar.workplace": "De reservering op werkstation %{workplaceName} is geannuleerd voor de periode %{slot}",
+		"BookingWorkplaceStateLegend.flexFree": "Flexibele, open functie",
+		"BookingWorkplaceStateLegend.releasedByAbsence": "Functie vacant wegens afwezigheid",
 		"BookingWorkplaceTitle.booked": "Deze werkplek is al gereserveerd",
 		"BookingWorkplaceTitle.free": "Reserveer deze werkplek",
 		"BookingWorkplaceTitle.userBooked": "U heeft deze werkplek gereserveerd",
@@ -123369,7 +124516,8 @@ var jsonTranslationsFiles = {
 		"BookWorkplaceOnDimensionAsyncButton.helpWithFloor": "Reserveer een werkplek op de kaart in %{dimensionName} op verdieping %{floorName}",
 		"BookWorkplaceOnDimensionAsyncButton.label": "Reserveer een werkstation in %{dimensionName}",
 		"BookWorkplaceOnDimensionAsyncButton.labelWithFloor": "Reserveer een werkplek in %{dimensionName} op verdieping %{floorName}",
-		"BookWorkplaceOnDimensionWithSlotOpenDrawerButton.errors.noFloor": "De dimensie is niet op een verdieping of de werkplekken zijn niet boekbaar, onmogelijk om op dit moment te boeken vanuit het plan",
+		"BookWorkplaceOnDimensionWithSlotOpenDrawerButton.errors.noBookableWorkplaces": "Er zijn momenteel geen werkplekken beschikbaar om te reserveren; reserveringen kunnen niet via het zaalplan worden gemaakt.",
+		"BookWorkplaceOnDimensionWithSlotOpenDrawerButton.errors.noFloor": "Het bevindt zich niet op een verdieping, dus het is momenteel onmogelijk om het via de plattegrond te reserveren.",
 		"BookWorkplaceOnDimensionWithSlotOpenDrawerButton.multipleFloors.info": "Deze ruimte is op meerdere verdiepingen aanwezig:",
 		"BourbonMSUserSyncOperation.description": "Synchroniseer Microsoft 365-gebruikers met Surfy-medewerkers. Ontbrekende medewerkers worden automatisch aangemaakt op basis van hun e-mailadres.",
 		"BourbonMSUserSyncOperation.refresh": "Microsoft-gebruikers synchroniseren",
@@ -123402,7 +124550,15 @@ var jsonTranslationsFiles = {
 		"BuildingClonePropertiesSelector.properties.clone.workplaces": "Kopieer werkstations",
 		"BuildingClonePropertiesSelector.properties.clone.workplaceStructure": "Kopieer de werkstationstructuur",
 		"BuildingCloneScenarios.noClone": "Er is nog geen scenario gemaakt. U kunt uw eerste scenario voor dit gebouw maken",
+		"BuildingDashboard.charts.noGroup": "Zonder een groep",
+		"BuildingDashboard.charts.r1Title": "Oppervlaktetypen per dienst",
+		"BuildingDashboard.charts.r2Title": "Oppervlaktetypen per niveau",
+		"BuildingDashboard.charts.r3Title": "Indeling van oppervlaktypen per type dienst",
+		"BuildingDashboard.charts.r4Title": "m²/PdT-verhouding per dienst",
+		"BuildingDashboard.charts.ratioNa": "N/A",
+		"BuildingDashboard.charts.unassigned": "Niet beïnvloed",
 		"BuildingDashboard.dashboards.area": "Dashboard voor oppervlakken",
+		"BuildingDashboard.dashboards.roomTypeGroup": "Typologiegroepen",
 		"BuildingDashboard.dashboards.workplace": "Werkstationdashboard",
 		"BuildingDataQuality3dEligibility.headerBuilding": "Gebouw",
 		"BuildingDataQuality3dEligibility.headerCompany": "Platform",
@@ -123489,6 +124645,7 @@ var jsonTranslationsFiles = {
 		"BuildingDxfImporterFloorImportPanel.reuseExistingBackgroundLabel": "Hergebruik de bestaande afbeelding op de vloer.",
 		"BuildingDxfImporterFloorImportPanel.sectionHelp": "Een DXF-bestand en het bijbehorende PNG-bestand voor deze verdieping. Het algoritme genereert direct de geometrie van de gedeelde ruimtes en punten.",
 		"BuildingDxfImporterFloorImportPanel.sectionTitle": "Geselecteerde verdieping — %{floorName} (niveau %{floorLevel} )",
+		"BuildingDxfImporterFloorImportPanel.selectAtLeastOnePolygonLayer": "Selecteer ten minste één polygoonlaag om te kunnen importeren.",
 		"BuildingDxfImporterFloorsSection.addFloorRowLabel": "Voeg een verdieping toe",
 		"BuildingDxfImporterFloorsSection.floorAlreadyExists": "Er bestaat al een verdieping met die naam in dit gebouw.",
 		"BuildingDxfImporterFloorsSection.floorLevelLabel": "Niveau (beroep)",
@@ -123504,8 +124661,12 @@ var jsonTranslationsFiles = {
 		"BuildingDxfImporterPreviewPanel.parsing": "Berekening van de uiteindelijke topologie…",
 		"BuildingDxfImporterPreviewPanel.pixelsPerMeter": "Schaal : %{value} px/m",
 		"BuildingDxfImporterPreviewPanel.polygonLayer": "Polygonlaag: %{layers}",
+		"BuildingDxfImporterPreviewPanel.polygonLayerOption": "%{layer} — score %{score} , %{count} polygoon(en)",
+		"BuildingDxfImporterPreviewPanel.polygonLayersHelp": "Selecteer de ruimtelagen die u wilt importeren (score ≥ automatische drempelwaarde). Een wijziging start de berekening opnieuw.",
+		"BuildingDxfImporterPreviewPanel.polygonLayersTitle": "Veelhoeklagen",
 		"BuildingDxfImporterPreviewPanel.ready": "Topologie gereed — u kunt importeren naar deze plattegrond.",
 		"BuildingDxfImporterPreviewPanel.roomCount": "%{count} spatie(s) om te importeren",
+		"BuildingDxfImporterPreviewPanel.selectAtLeastOnePolygonLayer": "Selecteer ten minste één polygoonlaag om te kunnen importeren.",
 		"BuildingDxfImporterPreviewPanel.sharedClusters": "%{count} cluster(s) van gedeelde (aangrenzende) punten",
 		"BuildingDxfImporterPreviewPanel.title": "Definitief topologieoverzicht",
 		"BuildingDxfImporterResetImportSyncAction.help": "Verwijdert geüploade bestanden, voorbeelden en berichten voor deze verdieping.",
@@ -123623,6 +124784,11 @@ var jsonTranslationsFiles = {
 		"ClickOnIndexViewMenuPathBreadcrumb.clickOnLabel": "Klik op:",
 		"CloneEntitiesFailed.noAccess": "U hebt geen toegang tot deze entiteit.",
 		"CloneEntitiesFailed.reloadHint": "De weergegeven gegevens zijn mogelijk verouderd. Vernieuw de pagina:",
+		"CloudinadryWidgetLoader.error.cloudinary-api-missing": "Het Cloudinary-script is geladen, maar de createUploadWidget API ontbreekt.",
+		"CloudinadryWidgetLoader.error.missing-cloud-name": "Cloudinary kon niet starten: de cloudnaam ontbreekt in de openbare configuratie.",
+		"CloudinadryWidgetLoader.error.missing-unsigned-preset": "Cloudinary kon niet starten: de uploadvoorinstelling (unsignedPreset) ontbreekt in de runtimeconfiguratie.",
+		"CloudinadryWidgetLoader.error.script-load-failed": "Cloudinary kon het widgetscript niet laden (netwerkprobleem, CSP-probleem of blokkering).",
+		"CloudinadryWidgetLoader.error.widget-create-failed": "Cloudinary kon de uploadwidget niet aanmaken.",
 		"CollapseSwitchButton.help.false": "Zie de details",
 		"CollapseSwitchButton.help.true": "Details verbergen",
 		"CollapseWorkplaceAffectationList.title": "Wijs deze persoon alleen toe voor de volgende dagen",
@@ -123761,6 +124927,8 @@ var jsonTranslationsFiles = {
 		"DaySlotTypeLabel.amLabel": "Ochtend",
 		"DaySlotTypeLabel.pmHelp": "De middaguren zijn van 14.00 uur.",
 		"DaySlotTypeLabel.pmLabel": "Middag",
+		"DaySlotWorklocationToggle.staticDeskReleaseRemovalBlocked": "Deze afwezigheid kan niet worden verwijderd: uw plaats is voor deze dag al door iemand anders gereserveerd.",
+		"DaySlotWorklocationToggle.staticDeskReleaseReturnToOfficeBlocked": "Uw werkplek is vandaag gereserveerd door een collega. Zolang deze reservering niet is geannuleerd, is het niet mogelijk om uw terugkeer naar kantoor te melden.",
 		"DefaultViewSetIndicator.recommendedViewTooltip": "Deze visie wordt aanbevolen voor dit gebouw.",
 		"DeleteCleanInventoryItemsAsyncButton.help": "Verwijder alle voorwerpen die verwijderd kunnen worden.",
 		"DeleteCleanInventoryItemsAsyncButton.label": "verwijderen",
@@ -124107,7 +125275,7 @@ var jsonTranslationsFiles = {
 		"FieldTypeIcon.Remove": "Pictogram verwijderen",
 		"FieldTypeIconBadge.backgroundColor.description": "Achtergrondkleur van de verticale strook (in het pictogramvierkant, rechts)",
 		"FieldTypeIconBadge.backgroundColor.label": "achtergrondkleur",
-		"FieldTypeIconBadge.create.description": "Er is geen badge gedefinieerd. Maak er een aan die een verticale tekststrook aan de rechterkant weergeeft, binnen het pictogramvierkant.",
+		"FieldTypeIconBadge.create.description": "Er is geen badge gedefinieerd. Maak er een aan die een verticale tekstbalk aan de rechterkant, binnen het pictogram, weergeeft.",
 		"FieldTypeIconBadge.create.help": "Open de badge-editor (tekst en kleuren)",
 		"FieldTypeIconBadge.create.label": "Maak een badge",
 		"FieldTypeIconBadge.preview.description": "Live weergave van het objecttype-icoon (vorm, achtergrond, rand, glyph) met de badge-strip — dezelfde logica als op het plan.",
@@ -124177,7 +125345,7 @@ var jsonTranslationsFiles = {
 		"FreeWorkplacesDayListItem.updateFreeWorkplaceVisibleDay.true": "Stop met het kleuren van gratis berichten %{day}",
 		"FurnituresSelection.move": "Verplaats de hele groep",
 		"FurnituresSelectionDragZone.help": "Groep verplaatsen",
-		"FurnituresSelectionGroupRotation.help": "Draai alle geselecteerde werkstations rond het midden van de selectie.",
+		"FurnituresSelectionGroupRotation.help": "Draai alle geselecteerde vormen rond het middelpunt van de selectie.",
 		"generateDocumentation.properties.base": "Basiseigenschappen",
 		"generateDocumentation.properties.belongsTo": "Geassocieerde entiteiten (enkel)",
 		"generateDocumentation.properties.hasMany": "Geassocieerde entiteiten (lijst)",
@@ -124427,7 +125595,7 @@ var jsonTranslationsFiles = {
 		"MapFilterNodeIsAllSelected.help": "De gehele selectie hieronder wordt geladen, zelfs als er nieuwe objecten worden aangemaakt",
 		"MapFilterNodeToggleAll.action.false": "deselecteer alles",
 		"MapFilterNodeToggleAll.action.true": "Selecteer alles",
-		"MapFilters.areaDistributionTitle": "Verdeling van de geselecteerde oppervlakten (m²)",
+		"MapFilterRoomsAreaAnalyticsAccordion.areaDistributionTitle": "Verdeling van de geselecteerde oppervlakten (m²)",
 		"MapFiltersCategory.CategoryHasChildrenSelected": "Artikelen zijn geselecteerd",
 		"MapFiltersNode.info.close": "Sluit aanvullende informatie",
 		"MapFiltersNode.info.open": "Bekijk details en indicatoren voor %{label}",
@@ -124487,9 +125655,9 @@ var jsonTranslationsFiles = {
 		"MeetingRoomsDayFilters.nextTooltip": "volgende dagen",
 		"MeetingRoomsDayFilters.previousTooltip": "Vorige dagen",
 		"MeetingRoomsDayFilters.title": "Dagen",
-		"MeetingRoomsFilterOption.multiSelectTooltip": "Deze optie toevoegen aan of verwijderen uit de selectie",
-		"MeetingRoomsFilterOption.singleSelectAriaLabel": "Selecteer alleen deze optie",
-		"MeetingRoomsFilterOption.singleSelectTooltip": "Alleen deze optie weergeven",
+		"MeetingRoomsFilterListItem.multiSelectTooltip": "Deze optie toevoegen aan of verwijderen uit de selectie",
+		"MeetingRoomsFilterListItem.singleSelectAriaLabel": "Selecteer alleen deze optie",
+		"MeetingRoomsFilterListItem.singleSelectTooltip": "Alleen deze optie weergeven",
 		"MeetingRoomsHourRangeSelector.rangeEndValueLabel": "Einde: %{time}",
 		"MeetingRoomsHourRangeSelector.rangeSelectionTooltip": "Versleep de handgrepen om het tijdsbestek in te stellen waarin naar boekingen wordt gezocht.",
 		"MeetingRoomsHourRangeSelector.rangeStartValueLabel": "Begin: %{time}",
@@ -124792,6 +125960,8 @@ var jsonTranslationsFiles = {
 		"models.Company.properties.enableCrowdedDimensionForBooking.label": "Toeslag voor afmetingen bij boeking inschakelen",
 		"models.Company.properties.enablePathfinding.description": "Padzoekfunctionaliteit inschakelen",
 		"models.Company.properties.enablePathfinding.label": "Padvinden inschakelen",
+		"models.Company.properties.enableStaticDeskReleaseOnAbsence.description": "Dit vereist ook dat het selectievakje &quot;Beschikbare positie&quot; op elk relevant werkstation is aangevinkt. Wanneer een persoon die vast is toegewezen aan een beschikbare positie zich voor de hele dag afmeldt (OOO, OFF, REMOTE) (al het toegewezen personeel afwezig), wordt de positie tijdelijk reserveerbaar door collega's met reserveringsrechten in het gebouw.",
+		"models.Company.properties.enableStaticDeskReleaseOnAbsence.label": "Maak vaste werkplekken vrij in geval van afwezigheid.",
 		"models.Company.properties.iconPath.description": "Het bedrijfslogo in vierkant",
 		"models.Company.properties.iconPath.label": "Icoon",
 		"models.Company.properties.id.label": "bedrijfs ID",
@@ -125226,6 +126396,27 @@ var jsonTranslationsFiles = {
 		"models.ItemTypePoint.properties.y.description": "Verticale positie van het punt op het vlak",
 		"models.ItemTypePoint.properties.y.label": "Y-coördinaat",
 		"models.ItemTypePoint.singular": "Punt van objecttypen",
+		"models.ItemTypeVisualEdge.description": "Een visuele rand definieert een weergavesegment uitsluitend op het objecttype, in tegenstelling tot vormpunten.",
+		"models.ItemTypeVisualEdge.determinant.defined": "de visuele rand van het objecttype",
+		"models.ItemTypeVisualEdge.determinant.undefined": "een visuele rand van een objecttype",
+		"models.ItemTypeVisualEdge.determinants.defined": "de visuele randen van objecttypen",
+		"models.ItemTypeVisualEdge.determinants.undefined": "visuele randen van objecttypen",
+		"models.ItemTypeVisualEdge.plural": "Visuele randen van objecttypen",
+		"models.ItemTypeVisualEdge.properties.itemTypePointEnd.description": "Een optioneel vormpunt waaraan het uiteinde is verbonden.",
+		"models.ItemTypeVisualEdge.properties.itemTypePointEnd.label": "Vormpunt (einde)",
+		"models.ItemTypeVisualEdge.properties.itemTypePointStart.description": "Een optioneel vormpunt waaraan het begin-eindpunt is gekoppeld.",
+		"models.ItemTypeVisualEdge.properties.itemTypePointStart.label": "Vormpunt (begin)",
+		"models.ItemTypeVisualEdge.properties.sortIndex.description": "Visuele randweergave volgorde",
+		"models.ItemTypeVisualEdge.properties.sortIndex.label": "Sorteerindex",
+		"models.ItemTypeVisualEdge.properties.x1.description": "abscis van het eerste eindpunt van de rand",
+		"models.ItemTypeVisualEdge.properties.x1.label": "Coördinaat X1",
+		"models.ItemTypeVisualEdge.properties.x2.description": "abscis van het tweede uiteinde van de rand",
+		"models.ItemTypeVisualEdge.properties.x2.label": "Coördinaat X2",
+		"models.ItemTypeVisualEdge.properties.y1.description": "Ordinaat van het eerste eindpunt van de rand",
+		"models.ItemTypeVisualEdge.properties.y1.label": "Coördinaat Y1",
+		"models.ItemTypeVisualEdge.properties.y2.description": "Ordinaat van het tweede uiteinde van de rand",
+		"models.ItemTypeVisualEdge.properties.y2.label": "Coördinaat Y2",
+		"models.ItemTypeVisualEdge.singular": "Objecttype visuele rand",
 		"models.JupObjectType.description": "Een entiteitstype definieert de verschillende typen objecten die beschikbaar zijn in de gebruikersinterface",
 		"models.JupObjectType.determinant.defined": "het entiteitstype",
 		"models.JupObjectType.determinant.undefined": "een soort entiteit",
@@ -125798,6 +126989,8 @@ var jsonTranslationsFiles = {
 		"models.PersonWorkingLocation.singular": "Werklocatie van mensen",
 		"models.PersonWorkingLocation.views.booking-maps.help": "Bekijk alle boekingen op een kaart",
 		"models.PersonWorkingLocation.views.booking-maps.label": "Reserveringen op een plan",
+		"models.PersonWorkingLocation.views.booking-security-day.help": "Bekijk waar de beveiligingsprofielen hebben geboekt",
+		"models.PersonWorkingLocation.views.booking-security-day.label": "Beveiligingsprofielen presenteren",
 		"models.PersonWorkingLocation.views.guest-planning.help": "Maak externe gasten aan, wijs ze toe aan gebouwen en beheer hun boekingen.",
 		"models.PersonWorkingLocation.views.guest-planning.label": "Schema voor externe gasten",
 		"models.PersonWorkingLocation.views.my-planning.help": "Beheer mijn agenda voor de komende weken",
@@ -126126,6 +127319,8 @@ var jsonTranslationsFiles = {
 		"models.Workplace.properties.isBookable.label": "Is het boekbaar?",
 		"models.Workplace.properties.isFlex.description": "Als dit station in Flex-modus wordt gebruikt",
 		"models.Workplace.properties.isFlex.label": "Is het in flex?",
+		"models.Workplace.properties.isReleasable.description": "Indien geactiveerd, en indien ook de bedrijfsoptie &quot;Statische werkplekken vrijgeven bij afwezigheid&quot; is geactiveerd, kan de werkplek tijdelijk reserveerbaar worden wanneer al het toegewezen personeel een volledige dag afwezigheid meldt (OOO, OFF, REMOTE).",
+		"models.Workplace.properties.isReleasable.label": "Is dit een functie die beschikbaar gesteld kan worden?",
 		"models.Workplace.properties.isShared.description": "Indien dit werkstation door meerdere personen gedeeld wordt, wordt dit automatisch veld gevalideerd zodra er minimaal 2 opdrachten op het werkstation staan",
 		"models.Workplace.properties.isShared.label": "Is gedeeld ?",
 		"models.Workplace.properties.isTransit.description": "Indien deze functie van voorbijgaande aard is, wordt deze functie uitgesloten van vrije werkplekken zonder in flex te reserveren, een tijdelijke functie maakt het mogelijk om voor iedereen die er gebruik van wil maken een werkplek beschikbaar te hebben zonder opgenomen te zijn in een reserveringssysteem",
@@ -126292,6 +127487,15 @@ var jsonTranslationsFiles = {
 		"NoRoleAssociated.noRole": "Er lijkt geen rol te zijn gekoppeld aan uw gebruiker voor het bedrijf %{tenant} . Neem contact op met uw beheerder",
 		"NoTenantCompanyPicker.noTenantsFound": "Geen platform gevonden voor &quot; %{query} &quot;",
 		"NumberOfPeoplePerRowField.label": "Aantal personen per lijn voor ruimtetoewijzingen",
+		"OAuthConfirmPage.autoCloseMessage": "Dit venster wordt automatisch gesloten.",
+		"OAuthConfirmPage.callbackLoading": "Verbinding tot stand gebracht…",
+		"OAuthConfirmPage.continueMicrosoft": "Office 365",
+		"OAuthConfirmPage.continueMicrosoftHelp": "Meld u aan met uw Microsoft Professional-account via Office 365",
+		"OAuthConfirmPage.errorMessage": "De Microsoft-verificatie is mislukt. U kunt dit venster sluiten en het opnieuw proberen.",
+		"OAuthConfirmPage.genericReason": "Surfy login",
+		"OAuthConfirmPage.mcpAuthenticateReason": "Authenticate MCP Surfy (Cursor) — verbinding aangevraagd door Surfy",
+		"OAuthConfirmPage.thanksMessage": "Dank u wel, authenticatie voltooid.",
+		"OAuthConfirmPage.title": "Surfy Bevestiging",
 		"ObjectTypeImportKeys.title": "De beschikbare sleutels voor het afstemmen van %{determinants.undefined} in de volgorde van uw keuze. Als u een van de sleuteleigenschappen wilt wijzigen, moet u de ID als sleutel gebruiken",
 		"ObjectTypeImportScalarProperties.help": "Kopieer naar klembord",
 		"OboBuildingAssignmentChip.assignHelp": "Wijs %{buildingName} toe aan deze persoon, zodat hij of zij een werkplek kan reserveren.",
@@ -126422,6 +127626,9 @@ var jsonTranslationsFiles = {
 		"RefetchFloorLayoutButton.refetch": "Plangegevens opnieuw laden",
 		"RefetchObjectTypeIcon.help": "Gegevens voor %{determinant.defined} opnieuw laden",
 		"RefreshPageButton.label": "Herlaad pagina",
+		"ReleasableStaticWorkplaceChip.anotherPersonIsAssignedToReleasableStaticWorkplace": "%{personFullName} is toegewezen aan het vrijgekomen werkstation %{workplaceName}",
+		"ReleasableStaticWorkplaceChip.chipLabel": "Werkstation beschikbaar voor vrijgave: %{workplaceName}",
+		"ReleasableStaticWorkplaceChip.youAreAssignedToReleasableStaticWorkplace": "Je bent toegewezen aan het vrijgekomen werkstation %{workplaceName}",
 		"ReleaseWorkplaceBookingAsyncAction.ariaLabel": "Maak deze werkstationreservering vrij",
 		"ReleaseWorkplaceBookingAsyncAction.help": "Geef deze reservering vrij",
 		"RemoveFromCartIconButton.help": "Uit winkelwagen verwijderen",
@@ -126450,6 +127657,27 @@ var jsonTranslationsFiles = {
 		"RenderingTypeError.troubleshooting.webgl2Support": "WebGL 2-ondersteuning",
 		"RenderingTypeError.troubleshooting.webglSupport": "WebGL-ondersteuning",
 		"RenderingTypeError.troubleshooting.yes": "Ja",
+		"ReportChart.collapse": "Vouw het rapport terug",
+		"ReportChart.dataTableFooterTotal": "Totaal",
+		"ReportChart.dataTableMeasureArea": "m²",
+		"ReportChart.dataTableMeasurePercent": "%",
+		"ReportChart.dataTablePreciseFigures.disable": "Schakel precieze getallen uit",
+		"ReportChart.dataTablePreciseFigures.enable": "Activeer nauwkeurige cijfers",
+		"ReportChart.dataTableRatioNa": "N/A",
+		"ReportChart.dataTableRecalculatePercents.disable": "Behoud de oorspronkelijke percentages.",
+		"ReportChart.dataTableRecalculatePercents.enable": "Herbereken de percentages volgens de filters.",
+		"ReportChart.dataTableRegion": "Rapportgegevenstabel",
+		"ReportChart.dataTableService": "Dienst",
+		"ReportChart.dataTableShowArea.disable": "Verberg de vierkante meters",
+		"ReportChart.dataTableShowArea.enable": "Toon de vierkante meters",
+		"ReportChart.dataTableWorkplacesCount": "PdT",
+		"ReportChart.dataTableWorkplacesCountHelp": "Persoonlijke werkplekken",
+		"ReportChart.dataTableWorkplacesCountValue": "%{smart_count} werkstations |||| %{smart_count} werkstations",
+		"ReportChart.dataTableWorkplacesRatio": "m²/PdT",
+		"ReportChart.dataTableWorkplacesRatioHelp": "vierkante meters per werkplek",
+		"ReportChart.exitFullscreen": "Verlaat de volledige schermmodus",
+		"ReportChart.expand": "Rapport uitbreiden",
+		"ReportChart.fullscreen": "Volledig scherm",
 		"ReportChart.NoValue": "Geen waarde",
 		"ReportErrorByMailButton.label": "Neem contact met ons op",
 		"ReportErrorSteps.report.description": "Deze fout is aan onze teams gemeld en we zullen proberen deze zo snel mogelijk te corrigeren.",
@@ -126552,6 +127780,10 @@ var jsonTranslationsFiles = {
 		"RoomTypeGroupLabel.exclude.tooltip": "De ruimtetypologiegroep sluit bijbehorende ruimtetypen uit",
 		"RoomTypeGroupMapFilter.Empty": "Er is geen ruimtetypegroep gekoppeld aan ruimtes via ruimtetypen. U kunt er meer toevoegen door een ruimtetypegroep te bewerken en er een ruimtetype aan toe te voegen. Vervolgens kunt u de weergave ervan vanuit deze sectie beheren",
 		"RoomTypeGroupsMapFilterZone.tabs_options": "Opties",
+		"RoomTypeGroupTooltipTitle.deselectAllBelow": "Deselecteer alle onderstaande groepen met ruimtetypen.",
+		"RoomTypeGroupTooltipTitle.deselectEntity": "Als u %{organization} deselecteert, worden de kleuren uit het vlak verwijderd",
+		"RoomTypeGroupTooltipTitle.selectAllBelow": "Selecteer hieronder alle objecttypen om ze op de kaart in te kleuren",
+		"RoomTypeGroupTooltipTitle.selectEntity": "Selecteer %{organization} om de ruimtes op het plan te kleuren",
 		"RoomTypeGroupToRoomTypeLabel.exclude.tooltip": "De ruimtetypologie is uitgesloten",
 		"RoomWorkplaceList.EmptyList": "In deze ruimte zijn geen werkplekken aanwezig",
 		"SavePlanAsSvgButton.help": "Download het plan zoals weergegeven in SVG-formaat. Het bestand wordt op schaal 1:1 geopend, zonder inzoomen of verschuiving.",
@@ -126574,6 +127806,17 @@ var jsonTranslationsFiles = {
 		"SelectDimensionTypeNavigationLayoutIcon.help": "Door te navigeren per analyselaag kunt u op een ruimte klikken, de bijbehorende laag selecteren en door de ruimtes heen de mensen bekijken die aan deze laag zijn toegewezen of de werkstations en objecten die aan deze laag zijn gekoppeld",
 		"SelectDimensionTypeNavigationLayoutIcon.select": "Selecteer dit laagtype voor navigatie",
 		"SelectDimensionTypeNavigationLayoutIcon.unselect": "Verwijder navigatie per analyselaag en keer terug naar navigatie per spaties",
+		"SelectItemTypeShapeFormeLayerSyncAction.ariaLabel": "Vormpunten",
+		"SelectItemTypeShapeFormeLayerSyncAction.help": "Bewerk de punten die de vormgeometrie van het objecttype definiëren.",
+		"SelectItemTypeShapeLayerToggle.formeAria": "Vormpunten",
+		"SelectItemTypeShapeLayerToggle.formeHelp": "Bewerk de punten die de vormgeometrie van het objecttype definiëren.",
+		"SelectItemTypeShapeLayerToggle.formeLabel": "Vormpunten",
+		"SelectItemTypeShapeLayerToggle.groupAria": "Objecttype-editorlaag",
+		"SelectItemTypeShapeLayerToggle.visualAria": "Visuele randen",
+		"SelectItemTypeShapeLayerToggle.visualHelp": "Bewerk de weergaveranden, los van de vormgeometrie.",
+		"SelectItemTypeShapeLayerToggle.visualLabel": "Visuele randen",
+		"SelectItemTypeShapeVisualEdgesLayerSyncAction.ariaLabel": "Visuele randen",
+		"SelectItemTypeShapeVisualEdgesLayerSyncAction.help": "Bewerk de weergaveranden, los van de vormgeometrie.",
 		"ShapeTextAnchorDrawer.empty": "Selecteer een compatibele vorm om de displaytekst te verplaatsen",
 		"SharingcloudSyncOperationLabel.title": "Sharingcloud-synchronisatie",
 		"ShowEntityDrawer.title.listItem": "Zie informatie voor %{determinant.defined} in de zijbalk",
@@ -126581,6 +127824,10 @@ var jsonTranslationsFiles = {
 		"SingleFloorSelector.noFloorWithStructure": "Geen vloer met structuur",
 		"SingleFloorSelector.selectFloorPrompt": "Kies een verdieping",
 		"SingleNodeQuery.refetch": "Gegevens opnieuw laden",
+		"StaticDeskReleaseAvailableWorkplaceListItem.workplaceLine": "%{workplaceName} — %{buildingName}",
+		"StaticDeskReleaseDeclaredAlert.message": "De volgende werkplekken kunnen door uw collega's voor de hele dag worden gereserveerd:",
+		"StaticDeskReleaseThirdPartyBookedWorkplaceListItem.bookedWorkplaceLine": "%{workplaceName} — %{buildingName}",
+		"StaticDeskReleaseThirdPartyBookedWorkplaceListItem.bookedWorkplaceTooltip": "%{bookedByPersonFullname} heeft deze werkplek gereserveerd ( %{workplaceName} — %{buildingName} ). Zolang deze persoon de reservering niet annuleert, is het niet mogelijk om uw terugkeer naar kantoor te melden.",
 		"StaticHelpMenuPathBreadcrumbs.currentTenantStep": "Huidig ​​platform",
 		"StaticHelpMenuPathBreadcrumbs.entityRecordStep": "Formulier %{entityType}",
 		"StaticHelpMenuPathBreadcrumbs.menuLabel": "Menu",
@@ -126635,6 +127882,8 @@ var jsonTranslationsFiles = {
 		"TenantOperations.ms-user-sync-bourbon.label": "Microsoft-gebruikerssynchronisatie",
 		"TenantOperations.ms-user-sync-thea.description": "Synchroniseert gebruikers van Microsoft",
 		"TenantOperations.ms-user-sync-thea.label": "Microsoft-gebruikerssynchronisatie",
+		"TenantOperations.ms-user-sync-tikehau.description": "Synchroniseert gebruikers van Microsoft Entra ID.",
+		"TenantOperations.ms-user-sync-tikehau.label": "Microsoft-gebruikerssynchronisatie",
 		"TenantOperations.quadient-import-workday.label": "Workday-synchronisatie (Quadient)",
 		"TenantOperations.sephora-sync-sap-success-factors.label": "MSC-synchronisatie",
 		"TenantOperations.st-grenoble-import-hr-file.label": "Het RH-bestand importeren",
@@ -126654,6 +127903,9 @@ var jsonTranslationsFiles = {
 		"ThemeModeSwitchMenuItem.dark.label": "Schakel over naar de heldere modus",
 		"ThemeModeSwitchMenuItem.light.help": "Door de donkere modus te gebruiken, kunt u met donkere kleuren op de achtergrond werken om vermoeide ogen te verminderen.",
 		"ThemeModeSwitchMenuItem.light.label": "Schakel over naar de donkere modus",
+		"TikehauMSUserSyncOperation.description": "Synchroniseer Entra ID-gebruikers met Surfy-collaborateurs. Eerste fase: volledige dump met basis Graph-filters (actieve accounts, leden, licenties). Ontbrekende collaborateurs worden per e-mail voorgesteld om aan te maken.",
+		"TikehauMSUserSyncOperation.refresh": "Microsoft-gebruikers synchroniseren",
+		"TikehauMSUserSyncOperation.title": "Microsoft-gebruikerssynchronisatie",
 		"TimeSlot.clickToBook": "Klik om %{day} om %{time} te boeken",
 		"TimeSlot.pastDay": "Kan niet boeken: %{day} is al verstreken",
 		"TimeSlot.pastTime": "Kan niet boeken: tijd %{time} is al verstreken",
@@ -126677,6 +127929,8 @@ var jsonTranslationsFiles = {
 		"ToggleEnableMissingFloors.label": "Laat spookvloeren zien",
 		"ToggleEnableRoomLabels.help": "Geef de namen van de ruimtes weer als labels in de 3D-weergave",
 		"ToggleEnableRoomLabels.label": "Ruimtelabels weergeven",
+		"ToggleEnableStructureWalls.help": "Toon de plattegrond van de gebouwstructuur in de 3D-weergave. Niet beschikbaar in de Cuby-wandmodus.",
+		"ToggleEnableStructureWalls.label": "Toon de gebouwstructuur",
 		"ToggleJupRoleObjectTypeCrudAsyncAction.help": "Eigenschap bijwerken ( %{name} )",
 		"ToggleWorkplaceFreeConditionTypeIconButton.and": "Bekijk vrije werkplekken voor minimaal één van de aangevraagde dagen",
 		"ToggleWorkplaceFreeConditionTypeIconButton.or": "Bekijk vrije werkplekken voor alle aangevraagde dagen",
@@ -126714,6 +127968,10 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.AddItemTypeToWorkplaceTypeCancelOption.label": "Het toevoegen van een objecttype ongedaan maken",
 		"WorkCanvas.Options.AddItemTypeToWorkplaceTypeOption.help": "Voeg een objecttype toe om het werkplektype te kunnen samenstellen",
 		"WorkCanvas.Options.AddItemTypeToWorkplaceTypeOption.label": "Voeg een objecttype toe",
+		"WorkCanvas.Options.AddItemTypeVisualEdgeOption.help.disable": "Stop met het visueel tekenen van randen",
+		"WorkCanvas.Options.AddItemTypeVisualEdgeOption.help.enable": "Teken een decoratieve rand (2 klikken) op de laag met visuele randen.",
+		"WorkCanvas.Options.AddItemTypeVisualEdgeOption.label.disable": "Stop met het toevoegen van visuele rand",
+		"WorkCanvas.Options.AddItemTypeVisualEdgeOption.label.enable": "Voeg een visueel accent toe",
 		"WorkCanvas.Options.AddRoomPointOption.help.disable": "Stop met het maken van hoekpunten",
 		"WorkCanvas.Options.AddRoomPointOption.help.enable": "Door een hoekpunt toe te voegen, kunt u een vorm nauwkeuriger bewerken",
 		"WorkCanvas.Options.AddRoomPointOption.label.disable": "Stop met het toevoegen van een hoekpunt",
@@ -126762,6 +128020,8 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.DeleteItemTypePointsOption.label": "Verwijder geselecteerde hoekpunten",
 		"WorkCanvas.Options.DeleteItemTypeShapeOption.help": "Verwijder de vorm van het objecttype volledig, zodat u deze bijvoorbeeld volledig opnieuw kunt tekenen of in een pictogram kunt transformeren",
 		"WorkCanvas.Options.DeleteItemTypeShapeOption.label": "Vorm verwijderen",
+		"WorkCanvas.Options.DeleteItemTypeVisualEdgesOption.help": "Verwijder de geselecteerde visuele randen",
+		"WorkCanvas.Options.DeleteItemTypeVisualEdgesOption.label": "Verwijder visuele randen",
 		"WorkCanvas.Options.DeleteRoomPointRoomOption.help": "Verwijder hoekpunten uit de ruimte",
 		"WorkCanvas.Options.DeleteRoomPointRoomOption.label": "Verwijder geselecteerde hoekpunten",
 		"WorkCanvas.Options.DeleteStructureShapeOption.help": "Verwijder de vorm van de machtsstructuur volledig, teken deze bijvoorbeeld volledig opnieuw",
@@ -126869,6 +128129,10 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.ToggleColorizeIsTransitWorkplacesOption.help.enable": "Bekijk op het kleurplan de werkplekken die passeren",
 		"WorkCanvas.Options.ToggleColorizeIsTransitWorkplacesOption.label.disable": "Stop met het kleuren van kruispunten",
 		"WorkCanvas.Options.ToggleColorizeIsTransitWorkplacesOption.label.enable": "Kleur de kruispunten",
+		"WorkCanvas.Options.ToggleColorizeReleasableWorkplacesOption.help.disable": "Bekijk beschikbare posities niet langer anders op de plattegrond.",
+		"WorkCanvas.Options.ToggleColorizeReleasableWorkplacesOption.help.enable": "Zie de gekleurde kaart voor werkstations die zijn gemarkeerd als beschikbaar voor vrijgave (vrijgave vanwege afwezigheid).",
+		"WorkCanvas.Options.ToggleColorizeReleasableWorkplacesOption.label.disable": "Stop met het inkleuren van de lege plekken.",
+		"WorkCanvas.Options.ToggleColorizeReleasableWorkplacesOption.label.enable": "Kleur de beschikbare posities in.",
 		"WorkCanvas.Options.ToggleEditModeOption.description": "Bij het roteren van objecten en werkstations wordt standaard een hoek van 45° toegepast. Om deze te deactiveren gebruikt u de <b>SHIFT-</b> toetsenbordtoets",
 		"WorkCanvas.Options.ToggleEditModeOption.help.disable": "Schakel de planbewerkingsmodus uit om terug te keren naar de planleesmodus",
 		"WorkCanvas.Options.ToggleEditModeOption.help.enable": "Door de planbewerkingsmodus te activeren, kunt u vormen maken en verplaatsen of ruimtes creëren",
@@ -126962,6 +128226,7 @@ var jsonTranslationsFiles = {
 		"WorkplaceCanvasItem.workplace.free": "De werkplek is niet bezet",
 		"WorkplaceCanvasItem.workplace.isBookable": "De werkplek is te reserveren",
 		"WorkplaceCanvasItem.workplace.isFlex": "De werkplek is in flex",
+		"WorkplaceCanvasItem.workplace.isReleasable": "Het werkstation is beschikbaar.",
 		"WorkplaceCanvasItem.workplace.isTransit": "Het werkstation passeert",
 		"WorkplaceFullName.noName": "Naamloze werkstation",
 		"WorkplaceList.workplace.flex": "Deze werkplek is flex",

@@ -13,6 +13,17 @@ L’application utilisée au quotidien par la plupart des organisations reste su
 Lors d’une mise en production, seules les **nouveautés** sont reprises dans la page [Nouveautés](./app.md) ; les sections **Bugs résolus** ne sont **pas** reportées en production (elles servent à la vérification de l’équipe de test pendant le cycle alpha). Cette page est ensuite masquée en la renommant `_app-alpha.md`.
 
 
+## 2 Septembre 2026 - v3.5.34
+
+- <OT code="itemType" />
+  - Éditeur de forme : contrôle exclusif **« Points de forme »** / **« Arêtes visuelles »** (un seul calque actif ; **Points de forme** par défaut).
+  - Les **Arêtes visuelles** s'affichent sur le plan en **tirets courts** mais **ne participent pas** au Magnétisme, à la surface au sol, aux collisions ni à l'emprise.
+  - Lors du dessin, vous pouvez réutiliser un Point de forme existant seulement si les cercles se **superposent largement** et que le point **change de couleur au survol** ; sinon le sommet reste libre.
+  - Un **sommet d'arête visuelle** lié à un Point de forme **n'est pas déplaçable** ; pour le détacher, **supprimez l'arête**. S'il est lié, l'arête suit le point quand il bouge.
+  - **Déplacer le plan** dans l'éditeur de type d'objet (et dans l'éditeur de type de poste) : glisser le fond de plan ; sans fond de plan, le plan de travail se déplace quand même.
+  - Les polygones historiques mélangés **ne sont pas convertis automatiquement**.
+  - Guide : [Arêtes visuelles (type d'objet)](/entities/user-guide/floor-plan/item-type-visual-edges). Scénario guidé : [Créer des arêtes visuelles](/entities/scenarios/item-type-create-visual-edges).
+
 ## 17 Août 2026 - v3.5.32
 
 - **Plan**

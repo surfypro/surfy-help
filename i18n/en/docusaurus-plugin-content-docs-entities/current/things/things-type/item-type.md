@@ -204,13 +204,6 @@ The service provider object types make it possible to define a relationship betw
 *Technical name:* ```personCompanyToItemTypes```
 <PH code="itemType:personCompanyToItemTypes"/>
 
-### Visual edges of object types {#item-type-visual-edges}
-
-A visual edge defines a display segment only on the object type, distinct from shape points
-
-*Technical name:* ```itemTypeVisualEdges```
-<PH code="itemType:itemTypeVisualEdges"/>
-
 
 
 

@@ -85,6 +85,13 @@ Activer le proxy pour les images
 *Nom technique:* ```proxyImages```
 <PH code="company:proxyImages"/>
 
+### Libérer les postes statiques en cas d'absence {#enable-static-desk-release-on-absence}
+
+Nécessite aussi la case « Poste libérable » sur chaque poste concerné. Lorsqu'une personne affectée statiquement à un poste libérable déclare une absence (OOO, OFF, REMOTE) sur la journée entière (toutes les personnes affectées absentes), le poste devient temporairement réservable par les collègues ayant le droit de réservation dans le bâtiment
+
+*Nom technique:* ```enableStaticDeskReleaseOnAbsence```
+<PH code="company:enableStaticDeskReleaseOnAbsence"/>
+
 ### Logo {#logo-path}
 
 Le chemin du logo de votre entreprise

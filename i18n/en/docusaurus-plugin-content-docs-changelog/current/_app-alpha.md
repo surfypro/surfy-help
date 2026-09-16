@@ -9,6 +9,17 @@ Most organizations’ day-to-day application remains at [https://app.surfy.pro](
 When a release goes to production, only **features** are moved to [What's New](./app.md); the **Fixed bugs** sections are **not** copied to production (they are for the test team during the alpha cycle). This page is then hidden by renaming it to `_app-alpha.md`.
 
 
+## September 2, 2026 - v3.5.34
+
+- <OT code="itemType" />
+  - Shape editor: exclusive **Shape points** / **Visual edges** control (one active layer; **Shape points** by default).
+  - **Visual edges** render on the plan as **short dashes** but **do not join** Magnetism, floor area, collisions, or footprint.
+  - While drawing, you may reuse an existing shape point only when the circles **largely overlap** and the point **changes color on hover**; otherwise the vertex stays free.
+  - A **visual edge vertex** bound to a shape point **cannot be dragged**; to detach it, **delete the edge**. When bound, the edge follows the point when it moves.
+  - **Pan the plan** in the object-type editor (and in the workstation-type editor): drag the background map; without a background map, the work canvas still moves.
+  - Historical mixed polygons are **not converted automatically**.
+  - Guide: [Visual edges (object type)](/entities/user-guide/floor-plan/item-type-visual-edges). Guided scenario: [Create visual edges](/entities/scenarios/item-type-create-visual-edges).
+
 ## August 17, 2026 - v3.5.32
 
 - **Floor plan**

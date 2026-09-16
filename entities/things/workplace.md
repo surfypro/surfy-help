@@ -71,6 +71,13 @@ Si ce poste de travail est reservable dans un système de réservation
 *Nom technique:* ```isBookable```
 <PH code="workplace:isBookable"/>
 
+### Est un poste libérable ? {#is-releasable}
+
+Si activé, et si l'option de l'entreprise « Libérer les postes statiques en cas d'absence » est aussi activée, le poste peut devenir temporairement réservable lorsque toutes les personnes affectées déclarent une absence journée entière (OOO, OFF, REMOTE)
+
+*Nom technique:* ```isReleasable```
+<PH code="workplace:isReleasable"/>
+
 ### Nom du poste de travail {#name}
 
 Le nom du poste de travail est utilisé pour l'identifier plus simplement
