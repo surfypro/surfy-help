@@ -37,7 +37,7 @@ L'icône "goutte" au dessus du plan permet d'"activer la transparence des couleu
 
 ## Qualifier plusieurs espaces d'un même étage
 
-On peut sélectionner plusieurs espaces sur un plan et leur donner la même organisation, le même centre de coût ou les mêmes calques d'analyse ou d'affectation.
+On peut sélectionner plusieurs espaces sur un plan et leur donner la même typologie, la même organisation, le même centre de coût ou les mêmes calques d'analyse ou d'affectation.
 
 <Youtube code="JmmnoYQ_nbA"/>
 
@@ -49,8 +49,8 @@ Pour cela, depuis le plan de l'étage,
     La liste des espaces sélectionnés apparait à gauche du plan.
 -   cliquer sur l'icône "Modifier les propriétés de tous les espaces sélectionnés" au dessus de la liste des espaces sélectionnés.<br />
     la fiche de qualification multiple apparait à droite de l'écran.
--   choisir l'organisation, le centre de coût et les calques à associer à l'ensemble des espaces sélectionnés
--   sauvegarder si nécessaire les nouvelles informations d'organisation et de centre de coût. Les calques sont sauvegardés automatiquement.
+-   choisir la typologie, l'organisation, le centre de coût et les calques à associer à l'ensemble des espaces sélectionnés
+-   sauvegarder si nécessaire les nouvelles informations de typologie, d'organisation et de centre de coût. Les calques sont sauvegardés automatiquement.
 
 Les espaces sélectionnés sont maintenant tous qualifiés suivant les informations fournies.
 

@@ -39,7 +39,7 @@ The "drop" icon above the plan allows you to "activate color transparency" and s
 
 ## Qualify Multiple Spaces on the Same Floor
 
-You can select multiple spaces on a plan and give them the same organization, the same cost center, or the same analysis or assignment layers.
+You can select multiple spaces on a plan and give them the same typology, the same organization, the same cost center, or the same analysis or assignment layers.
 
 <Youtube code="VcSFinClgAQ"/>
 
@@ -51,8 +51,8 @@ To do this, from the floor plan,
     The list of selected spaces appears on the left of the plan.
 -   click on the "modify the properties of all selected spaces" icon above the list of selected spaces.<br />
     The multiple qualification card appears on the right of the screen.
--   choose the organization, cost center and layers to associate with all selected spaces
--   save if necessary the new organization and cost center information. Layers are saved automatically.
+-   choose the typology, organization, cost center and layers to associate with all selected spaces
+-   save if necessary the new typology, organization and cost center information. Layers are saved automatically.
 
 The selected spaces are now all qualified according to the information provided.
 
