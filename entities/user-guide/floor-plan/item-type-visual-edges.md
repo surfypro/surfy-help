@@ -30,7 +30,7 @@ Dans l'éditeur de type d'objet (et dans l'éditeur de type de poste), **Déplac
 
 ## Créer des arêtes visuelles
 
-1. Ouvrez l'éditeur de forme du type d'objet (<LSV code="itemType:editor" />).
+1. Ouvrez l'éditeur de forme du type d'objet (<LSV code="itemType:shape-editor" />).
 2. Basculez le contrôle sur **« Arêtes visuelles »**.
 3. Activez **Ajouter une arête visuelle** (*Dessiner une arête décorative (2 clics) sur le calque visual edges*).
 4. Cliquez pour placer chaque **sommet d'arête visuelle** :

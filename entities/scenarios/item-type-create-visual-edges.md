@@ -17,7 +17,7 @@ Guide détaillé : [Arêtes visuelles (type d'objet)](/entities/user-guide/floor
 ## Étapes
 
 1. **Ouvrez l'éditeur de forme du type d'objet**  
-   Point de départ : vue d'édition des formes (<LSV code="itemType:editor" />). Le calque actif est **Points de forme**.
+   Point de départ : vue d'édition des formes (<LSV code="itemType:shape-editor" />). Le calque actif est **Points de forme**.
 
 2. **Basculez sur « Arêtes visuelles »**  
    Le contrôle exclusif **« Points de forme »** / **« Arêtes visuelles »** active le calque de dessin décoratif.

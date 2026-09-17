@@ -30,7 +30,7 @@ In the object-type editor (and in the workstation-type editor), **pan the plan**
 
 ## Creating visual edges
 
-1. Open the object type shape editor (<LSV code="itemType:editor" />).
+1. Open the object type shape editor (<LSV code="itemType:shape-editor" />).
 2. Switch the control to **Visual edges**.
 3. Turn on **Add a visual edge** (*Draw a decorative edge (2 clicks) on the visual edges layer*).
 4. Click to place each **visual edge vertex**:
