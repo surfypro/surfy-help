@@ -17,7 +17,7 @@ Detailed guide: [Visual edges (object type)](/entities/user-guide/floor-plan/ite
 ## Steps
 
 1. **Open the object type shape editor**  
-   Starting point: shape editor view (<LSV code="itemType:editor" />). The active layer is **Shape points**.
+   Starting point: shape editor view (<LSV code="itemType:shape-editor" />). The active layer is **Shape points**.
 
 2. **Switch to Visual edges**  
    The exclusive **Shape points** / **Visual edges** control activates the décor drawing layer.
