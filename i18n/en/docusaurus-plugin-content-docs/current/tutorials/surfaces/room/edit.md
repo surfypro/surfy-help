@@ -50,7 +50,10 @@ To do this, from the floor plan,
 -   while holding the "shift" key, click on the other spaces to qualify.<br />
     The list of selected spaces appears on the left of the plan.
 -   click on the "modify the properties of all selected spaces" icon above the list of selected spaces.<br />
-    The multiple qualification card appears on the right of the screen.
+    The multiple edit card appears on the right of the screen.
+
+If the selected spaces have different qualifications or layers from one another, "Multiple values" is displayed under the corresponding qualification or layer type.
+
 -   choose the typology, organization, cost center and layers to associate with all selected spaces
 -   save if necessary the new typology, organization and cost center information. Layers are saved automatically.
 

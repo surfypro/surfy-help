@@ -48,7 +48,10 @@ Pour cela, depuis le plan de l'étage,
 -   en maintenant la touche "shift" enfoncée, cliquer sur les autres espaces à qualifier.<br />
     La liste des espaces sélectionnés apparait à gauche du plan.
 -   cliquer sur l'icône "Modifier les propriétés de tous les espaces sélectionnés" au dessus de la liste des espaces sélectionnés.<br />
-    la fiche de qualification multiple apparait à droite de l'écran.
+    la fiche de modification multiple apparait à droite de l'écran.
+
+Si les espaces sélectionnés ont des qualifications ou des calques différents les uns des autres, la notion de "Valeurs multiples" est affichée sous la qualification ou le type de calque correspondant.
+
 -   choisir la typologie, l'organisation, le centre de coût et les calques à associer à l'ensemble des espaces sélectionnés
 -   sauvegarder si nécessaire les nouvelles informations de typologie, d'organisation et de centre de coût. Les calques sont sauvegardés automatiquement.
 
