@@ -61,7 +61,7 @@ L'administrateur Surfy de l'entreprise peut attribuer des fonctionnalités en cu
 Pour attribuer un rôle d'utilisateur à un utilisateur, depuis le menu de gauche,
 
 -   cliquer sur "Administration" puis "Sécurité" et "Utilisateurs de l'entreprise" pour "Lister les utilisateurs de l'entreprise".
--   cliquer sur l'icone "point rouge" en début de ligne de l'utilisateur concerné pour "modifier l'utilisateur de l'entreprise xxxx@xx"
+-   cliquer sur l'icone "panier" en début de ligne de l'utilisateur concerné pour "modifier l'utilisateur de l'entreprise xxxx@xx"
 -   cliquer sur "Rôle de l'utilisateur de l'entreprise" puis sur "CREER UN ROLE DE L'UTILISATEUR DE L'ENTREPRISE"
 -   cliquer sur l'icône "Crayon" du "Rôle".
 
@@ -86,7 +86,7 @@ Pour modifier le rôle d'un utilisateur de l'entreprise, on peut retirer un rôl
 Pour retirer un rôle à un utilisateur de l'entreprise,
 
 -   cliquer sur "Administration" puis "Sécurité" et "Utilisateurs de l'entreprise" pour "Lister les utilisateurs de l'entreprise".
--   cliquer sur l'icone "point rouge" en début de ligne de l'utilisateur concerné pour "modifier l'utilisateur de l'entreprise xxxx@xx"
+-   cliquer sur l'icone "panier" en début de ligne de l'utilisateur concerné pour "modifier l'utilisateur de l'entreprise xxxx@xx"
 -   cliquer sur "Rôle de l'utilisateur de l'entreprise"
 -   cocher la case en début de ligne du rôle à retirer
 -   cliquer sur la corbeille qui apparait
@@ -102,7 +102,7 @@ Si aucun rôle de contenu n'est donné à un utilisateur, celui-çi verra tous l
 Pour attribuer un rôle de contenu à un utilisateur de l'entreprise, dans le menu de gauche,
 
 -   cliquer sur "Administration" puis "Sécurité" et "Utilisateurs de l'entreprise" pour "Lister les utilisateurs de l'entreprise".
--   cliquer sur l'icone "point rouge" en début de ligne de l'utilisateur concerné pour "modifier l'utilisateur de l'entreprise xxxx@xx"
+-   cliquer sur l'icone "panier" en début de ligne de l'utilisateur concerné pour "modifier l'utilisateur de l'entreprise xxxx@xx"
 -   cliquer sur "Rôle de contenu de l'utilisateur de l'entreprise" puis sur "CREER UN ROLE DE CONTENU DE L'UTILISATEUR DE L'ENTREPRISE"
 
 La liste des rôles de contenu disponibles apparait. Si le rôle de contenu désiré n'apparait pas, il faut [créer un rôle de contenu](docs/access/intro.md#créer-un-rôle-de-contenu) afin de pouvoir l'attribuer à l'utilisateur.
@@ -125,7 +125,7 @@ Pour modifier le rôle de contenu d'un utilisateur de l'entreprise, on peut reti
 Pour retirer un rôle de contenu à un utilisateur de l'entreprise,
 
    cliquer sur "Administration" puis "Sécurité" et "Utilisateurs de l'entreprise" pour "Lister les utilisateurs de l'entreprise".
--   cliquer sur l'icone "point rouge" en début de ligne de l'utilisateur concerné pour "modifier l'utilisateur de l'entreprise xxxx@xx"
+-   cliquer sur l'icone "panier" en début de ligne de l'utilisateur concerné pour "modifier l'utilisateur de l'entreprise xxxx@xx"
 -   cliquer sur "Rôle de contenu de l'utilisateur de l'entreprise"
 -   cocher la case en début de ligne du rôle de contenu à retirer
 -   cliquer sur la corbeille qui apparait

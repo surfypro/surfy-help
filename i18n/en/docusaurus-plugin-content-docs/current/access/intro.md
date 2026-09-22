@@ -61,7 +61,7 @@ The company's Surfy administrator can assign features by combining roles to diff
 To assign a user role to a user, from the left menu,
 
 -   click on "Administration" then "Security" and "Company Users" to "List Company Users".
--   click on the "red dot" icon at the beginning of the line of the concerned user to "modify company user xxxx@xx"
+-   click on the "basket" icon at the beginning of the line of the concerned user to "modify company user xxxx@xx"
 -   click on "Company User Role" then on "CREATE A COMPANY USER ROLE"
 -   click on the "Pencil" icon of the "Role".
 
@@ -86,7 +86,7 @@ To modify a company user's role, you can remove a role and then assign another r
 To remove a role from a company user,
 
 -   click on "Administration" then "Security" and "Company Users" to "List Company Users".
--   click on the "red dot" icon at the beginning of the line of the concerned user to "modify company user xxxx@xx"
+-   click on the "basket" icon at the beginning of the line of the concerned user to "modify company user xxxx@xx"
 -   click on "Company User Role"
 -   check the box at the beginning of the line of the role to remove
 -   click on the trash can that appears
@@ -102,7 +102,7 @@ If a user is not assigned a content role, they will see all buildings on the pla
 To assign a content role to a company user, in the left menu,
 
 -   click on "Administration" then "Security" and "Company Users" to "List Company Users".
--   click on the "red dot" icon at the beginning of the line of the concerned user to "modify company user xxxx@xx"
+-   click on the "basket" icon at the beginning of the line of the concerned user to "modify company user xxxx@xx"
 -   click on "Company User Content Role" then on "CREATE A COMPANY USER CONTENT ROLE"
 
 The list of available content roles appears. If the desired content role does not appear, you must [create a content role](docs/access/intro#create-a-content-role) in order to assign it to the user.
@@ -125,7 +125,7 @@ To modify a company user's content role, you can remove a content role and/or as
 To remove a content role from a company user,
 
 -   click on "Administration" then "Security" and "Company Users" to "List Company Users".
--   click on the "red dot" icon at the beginning of the line of the concerned user to "modify company user xxxx@xx"
+-   click on the "basket" icon at the beginning of the line of the concerned user to "modify company user xxxx@xx"
 -   click on "Company User Content Role"
 -   check the box at the beginning of the line of the content role to remove
 -   click on the trash can that appears
