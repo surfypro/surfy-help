@@ -146,7 +146,7 @@ This role, added to the basic Reader (`READ`) or Simplified Reader (`READLIGHT`)
 
 If no content role is assigned to the user, all buildings, including scenarios, are listed and their data reports can be exported to Excel files.
 
-More information about [the content role](/en/docs/access/intro#content-role).
+More information about [searching in lists](/en/docs/courses/find/listfindcourse) and about [the content role](/en/docs/access/intro#content-role).
 
 #### Space List (`LISTESPACE`)
 
@@ -154,7 +154,7 @@ This role, added to the basic Reader (`READ`) or Simplified Reader (`READLIGHT`)
 
 If no content role is assigned to the user, the spaces of all buildings accessible to the user are listed.
 
-More information about [the content role](/en/docs/access/intro#content-role).
+More information about [searching in lists](/en/docs/courses/find/listfindcourse) and about [the content role](/en/docs/access/intro#content-role).
 
 #### Building Modification (`BUILDMODIF`)
 
@@ -218,6 +218,8 @@ This role, added to the basic Planning User (`PLANNING-USER`) user role, allows 
 Guests are listed and can be deleted.<br />
 This role is only effective on platforms that have subscribed to the booking option in Surfy.
 
+More information about [booking for an external guest](/en/docs/tutorials/booking/workstationbooking/thirdpartbooking#book-for-an-external-guest).
+
 
 #### Security Profiles Planning (`PLANSECU`)
 
@@ -245,7 +247,7 @@ This role, added to the basic Simplified Reader (`READLIGHT`) user role, allows 
 
 It complements the Cost Allocation Keys (`CLE-REPART`) role which allows financial cost allocation on the building.
 
-More information about [space rebilling](/en/docs/tutorials/cost-distribution-by-cost-center/create).
+More information about [the "Rebilling" view](/en/docs/courses/views/planviews#rebilling-view).
 
 #### Cost Allocation Keys (`CLE-REPART`)
 
@@ -272,8 +274,6 @@ These roles are not included by default in the basic Company Administrator (`ADM
 
 This role allows creating the peripheral dimensions of a floor in order to define its perimeter for better visualization of the 3D view of the floor or building.
 The drawn structure provides a solid base to receive digitized spaces within a defined perimeter.
-
-More information about [3D views](/en/docs/courses/views/3Dviews).
 
 #### Calibrator (`CALIB`)
 

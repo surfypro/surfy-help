@@ -144,7 +144,7 @@ Ce rôle, ajouté au rôle utilisateur de base Lecteur (`READ`) ou Lecteur simpl
 
 Si aucun rôle de contenu n'est attribué à l'utilisateur, tous les bâtiments, y compris les scénarios, sont listés et leurs rapports de données sont exportables en fichiers Excel.
 
-Plus d'informations sur [le rôle de contenu](/docs/access/intro.md#le-rôle-de-contenu).
+Plus d'informations sur [la recherche dans les listes](/docs/courses/find/listfindcourse.md) et sur [le rôle de contenu](/docs/access/intro.md#le-rôle-de-contenu).
 
 #### Liste des espaces (`LISTESPACE`)
 
@@ -152,7 +152,7 @@ Ce rôle, ajouté au rôle utilisateur de base Lecteur (`READ`) ou Lecteur simpl
 
 Si aucun rôle de contenu n'est attribué à l'utilisateur, les espaces de tous les bâtiments accessibles à l'utilisateur sont listés.
 
-Plus d'informations sur [le rôle de contenu](/docs/access/intro.md#le-rôle-de-contenu).
+Plus d'informations sur [la recherche dans les listes](/docs/courses/find/listfindcourse.md) et sur [le rôle de contenu](/docs/access/intro.md#le-rôle-de-contenu).
 
 #### Modification Bâtiments (`BUILDMODIF`)
 
@@ -216,7 +216,7 @@ Ce rôle, ajouté au rôle utilisateur de base Planning Utilisateur (`PLANNING-U
 Les invités sont listésc et peuvent être supprimés.<br />
 Ce rôle est effectif uniquement sur les plateformes ayant souscrit à l'option de réservation dans Surfy.
 
-Plus d'informations sur [la réservation pour un invité externe](/docs/tutorials/booking/workstationbooking/thirdpartbooking.md).
+Plus d'informations sur [la réservation pour un invité externe](/docs/tutorials/booking/workstationbooking/thirdpartbooking/#réserver-pour-un-invité-externe).
 
 #### Planning Profils Sécurité (`PLANSECU`)
 
@@ -244,7 +244,7 @@ Ce rôle, ajouté au rôle utilisateur de base Lecteur simplifié (`READLIGHT`),
 
 Il est complémentaire du rôle Clés de répartition (`CLE-REPART`) qui permet la répartition financière des coûts sur le bâtiment.
 
-Plus d'informations sur [la refacturation des espaces](/docs/tutorials/cost-distribution-by-cost-center/create.md).
+Plus d'informations sur [la vision "Refacturation"](/docs/courses/views/planviews.md#vision-refacturation).
 
 #### Clés de répartition (`CLE-REPART`)
 
@@ -271,8 +271,6 @@ Ces rôles ne sont pas inclus par défaut dans le rôle utilisateur de base Admi
 
 Ce rôle permet de créer les dimensions périphériques d'un étage afin de définir son périmètre pour une meilleure visualisation de la vue 3D de l'étage ou du bâtiment.
 La structure dessinée donne une base pleine pour recevoir les espaces digitalisés dans un périmètre défini.
-
-Plus d'informations sur [les vues 3D](/docs/courses/views/3Dviews.md).
 
 #### Calibrateur (`CALIB`)
 
