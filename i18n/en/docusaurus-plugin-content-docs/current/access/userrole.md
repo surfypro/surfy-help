@@ -94,7 +94,7 @@ This role does not allow deleting people from the database.
 
 The home page shows the main buildings view (excluding scenarios) with photos. The main buildings tile view is accessible.<br />
 
-More information about [assignments](/en/docs/tutorials/affectations/intro).
+More information about [people assignments](/en/docs/tutorials/affectations/intro).
 
 #### People Deletion (`SUPPERS`)
 

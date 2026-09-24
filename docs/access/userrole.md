@@ -92,7 +92,7 @@ Ce rôle ne permet pas de supprimer des personnes de la base de données.
 
 La page d'accueil comporte la vue des bâtiments principaux (hors scénarios) avec photos. La vue des bâtiments principaux en tuiles est accessible.<br />
 
-Plus d'informations sur [les affectations](/docs/tutorials/affectations/intro.md).
+Plus d'informations sur [les affectations des personnes](/docs/tutorials/affectations/intro.md).
 
 #### Suppression de Personnes (`SUPPERS`)
 
