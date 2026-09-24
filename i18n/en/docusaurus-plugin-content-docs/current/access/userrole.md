@@ -10,6 +10,8 @@ A user role allows you to give the appropriate rights to each user according to 
 
 User roles can be combined to assign the necessary rights to each user.
 
+More information about [assigning a user role](/en/docs/access/intro#assign-a-user-role).
+
 ## Basic user roles
 
 Basic user roles can be assigned to a user without any complementary user role.<br />
@@ -66,6 +68,8 @@ Used in addition to another basic user role, it completes that role with the abi
 This role is only effective on platforms that have subscribed to the booking option in Surfy.<br />
 It is not included by default in the basic Company Administrator (`ADMIN-TENANT`) role.
 
+More information about [booking a workstation](/en/docs/tutorials/booking/workstationbooking/workplace) and on [parking booking](/en/docs/tutorials/booking/parkingbooking/parkingresa).
+
 
 ## Additional user roles
 
@@ -90,6 +94,8 @@ This role does not allow deleting people from the database.
 
 The home page shows the main buildings view (excluding scenarios) with photos. The main buildings tile view is accessible.<br />
 
+More information about [assignments](/en/docs/tutorials/affectations/intro).
+
 #### People Deletion (`SUPPERS`)
 
 This role, added to the basic Reader (`READ`) user role, allows deleting people from the Surfy database. 
@@ -102,6 +108,8 @@ This role, added to the basic Reader (`READ`) user role, allows listing, filteri
 
 This role, added to the basic Reader (`READ`) user role as well as the Person Assignment (`AFFECTATIONS`) role, allows importing transfer matrices in order to move a set of people from workstations to workstations, or from spaces to spaces.
 
+More information about [using the transfer matrix](/en/docs/tutorials/affectations/workplaceaffectation/edit#use-the-transfer-matrix).
+
 ### Roles for spaces and plans
 
 These roles are included by default in the basic Company Administrator (`ADMIN-TENANT`) user role
@@ -112,17 +120,25 @@ This role, added to the basic Reader (`READ`) user role, allows activating "Plan
 
 Deleting spaces, objects or workstations as well as person assignment movements are not allowed in this role.
 
+More information about [editing a space](/en/docs/tutorials/surfaces/room/edit).
+
 #### Scenarios Reader (`SCEN`)
 
 This role, added to the basic Reader (`READ`) user role, allows access to the buildings tile view with cumulative building information as well as to the scenarios of the different buildings, in Reader mode.
+
+More information about [creating a scenario](/en/docs/tutorials/surfaces/building/create#create-scenario).
 
 #### Meeting room reader (`READ-MEETING-ROOM`)
 
 This role, added to a basic user role, allows consulting and geolocating meeting spaces with their equipment, by building, floor, space type and capacity.
 
+More information about [consulting meeting rooms](/en/docs/tutorials/surfaces/meetingroom/read).
+
 #### Info Display (`VISU-INFOS`)
 
 This role, added to the basic Reader (`READ`) user role, allows displaying buildings as tiles on the platform home page.
+
+More information about [the building information card](/en/docs/tutorials/BuildingData/Infocard).
 
 #### Building List (`LISTBAT`)
 
@@ -130,11 +146,15 @@ This role, added to the basic Reader (`READ`) or Simplified Reader (`READLIGHT`)
 
 If no content role is assigned to the user, all buildings, including scenarios, are listed and their data reports can be exported to Excel files.
 
+More information about [the content role](/en/docs/access/intro#content-role).
+
 #### Space List (`LISTESPACE`)
 
 This role, added to the basic Reader (`READ`) or Simplified Reader (`READLIGHT`) user role, allows listing, filtering and exporting to an Excel file all spaces of buildings accessible to the user.
 
 If no content role is assigned to the user, the spaces of all buildings accessible to the user are listed.
+
+More information about [the content role](/en/docs/access/intro#content-role).
 
 #### Building Modification (`BUILDMODIF`)
 
@@ -143,6 +163,8 @@ This role, added to the basic Reader (`READ`) or Simplified Reader (`READLIGHT`)
 #### Space Qualification (`QUAL-PIECE`)
 
 This role, added to the basic Reader (`READ`) user role, allows modifying space information (Typology, organization, cost center, analysis layers, ...) by space or by group of spaces.
+
+More information about [qualifying a space](/en/docs/tutorials/surfaces/room/edit#qualify-a-space-or-modify-space-information).
 
 
 ### Roles for furniture
@@ -155,10 +177,14 @@ This role, added to the basic Reader (`READ`) user role, allows adding objects a
 
 This role does not allow modifying or deleting spaces, nor creating or deleting person assignments.
 
+More information about [creating a workstation](/en/docs/tutorials/objects/workplace/create) and on [creating an object](/en/docs/tutorials/objects/item/create).
+
 #### Workstation Info Edit (`INFOS-PdT`)
 
 This role, added to the basic Reader (`READ`) user role, allows modifying workstation information (workstation type, organization, cost center, workstation qualifications).
 Moving, modifying assignment or deleting the workstation are not allowed in this role.
+
+More information about [editing a workstation](/en/docs/tutorials/objects/workplace/edit).
 
 ### Roles for booking
 
@@ -177,10 +203,14 @@ Used in addition to another basic user role, it completes that role with the abi
 
 This role is only effective on platforms that have subscribed to the booking option in Surfy.<br />
 
+More information about [booking a workstation](/en/docs/tutorials/booking/workstationbooking/workplace) and on [parking booking](/en/docs/tutorials/booking/parkingbooking/parkingresa).
+
 #### Book on behalf of others (`RESTIERS`)
 
 This role, added to the basic Planning User (`PLANNING-USER`) user role, allows booking on behalf of a collaborator, present in the database or to be created by the role user.<br />
 This role is only effective on platforms that have subscribed to the booking option in Surfy.
+
+More information about [booking on behalf of someone else](/en/docs/tutorials/booking/workstationbooking/thirdpartbooking).
 
 #### External Guest Booking (`RESINVIT`)
 
@@ -194,12 +224,16 @@ This role is only effective on platforms that have subscribed to the booking opt
 This role, added to any basic user role, allows locating on plans Security team members who have booked a workstation, according to the booking date, building, booking district, Security profile type and floor.<br />
 This role is only effective on platforms that have subscribed to the booking option in Surfy.
 
+More information about [security profiles](/en/docs/tutorials/person/personSecurityProfile/create) and on [displaying security profiles on the plan](/en/docs/courses/views/2Dviews#display-security-profiles-on-plan).
+
 #### Planning Administrator (`ADMIN-PLANNING`)
 
 This role, added to any basic user role, allows listing people's workstation bookings and accessing the people's workstation booking dashboard to obtain charts linked to the use of booking features.
 
 This role also allows viewing the monthly saturation of districts by building and identifying threshold exceedance days.<br />
 This role is only effective on platforms that have subscribed to the booking option in Surfy.
+
+More information about [the Planning Administrator](/en/docs/tutorials/booking/workstationbooking/admin).
 
 ### Roles for views and exports
 
@@ -211,16 +245,23 @@ This role, added to the basic Simplified Reader (`READLIGHT`) user role, allows 
 
 It complements the Cost Allocation Keys (`CLE-REPART`) role which allows financial cost allocation on the building.
 
+More information about [space rebilling](/en/docs/tutorials/cost-distribution-by-cost-center/create).
+
 #### Cost Allocation Keys (`CLE-REPART`)
 
 This role allows access to the allocation key and surfaces qualified by cost center for buildings.<br />
 It allows Excel file export, with or without common areas allocation.<br />
 This role also allows viewing the detailed card of each accessible building, including the building's real estate information.<br />
 It includes the buildings tile view.
+
+More information about [space rebilling](/en/docs/tutorials/cost-distribution-by-cost-center/create).
+
 #### Excel Reports (`RAPP`)
 
 This role allows access to the dashboard and inventory of accessible buildings.<br />
 It includes the buildings tile view.
+
+More information about [data reports](/en/docs/tutorials/BuildingData/Buildingdashboard/Buildingreporting) and about [the building inventory report](/en/docs/tutorials/BuildingData/Buildingdashboard/Buildingreporting#building-inventory-report).
 
 
 ### Technical user roles
@@ -232,11 +273,15 @@ These roles are not included by default in the basic Company Administrator (`ADM
 This role allows creating the peripheral dimensions of a floor in order to define its perimeter for better visualization of the 3D view of the floor or building.
 The drawn structure provides a solid base to receive digitized spaces within a defined perimeter.
 
+More information about [3D views](/en/docs/courses/views/3Dviews).
+
 #### Calibrator (`CALIB`)
 
 This role allows resizing all digitized spaces of a floor to the new plan background that does not have the dimensions of the original plan background.
 
 Recalibrating spaces requires resetting the scale to adapt it to the new dimensions of the plan background.
+
+More information about [creating the scale](/en/docs/tutorials/surfaces/mapscale/create).
 
 #### Copy Paste Basket (`PAN`)
 

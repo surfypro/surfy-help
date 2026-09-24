@@ -8,6 +8,8 @@ Un rôle utilisateur permet de donner les droits adequats à chaque utilisateur 
 
 Les rôles utilisateur peuvent s'additionner pour attribuer les droits nécessaires à chaque utilisateur.
 
+Plus d'informations sur [l'attribution d'un rôle d'utilisateur](/docs/access/intro.md#attribuer-un-rôle-dutilisateur).
+
 ## Les rôles utilisateur de base
 
 Les rôles utilisateur de base peuvent être attribués à un utilisateur sans autre rôle utilisateur complémentaire.<br />
@@ -64,6 +66,8 @@ Utilisé en addition à un autre rôle utilisateur de base, il complète ce rôl
 Ce rôle est effectif uniquement sur les plateformes ayant souscrit à l'option de réservation dans Surfy.<br />
 Il n'est pas inclu par défaut dans le rôle de base Administrateur d'entreprise (`ADMIN-TENANT`).
 
+Plus d'informations sur [la réservation d'un poste de travail](/docs/tutorials/booking/workstationbooking/workplace.md) et sur [la réservation de parking](/docs/tutorials/booking/parkingbooking/parkingresa.md).
+
 
 ## Les rôles utilisateur additionnels
 
@@ -86,7 +90,9 @@ Il permet de créer une matrice de transfert mais ne permet pas de l'importer da
 
 Ce rôle ne permet pas de supprimer des personnes de la base de données.
 
-La page d'accueil comporte la vue des bâtiments principaux (hors scénarios) avec photos.La vue des bâtiments principaux en tuile est accessible.<br />
+La page d'accueil comporte la vue des bâtiments principaux (hors scénarios) avec photos. La vue des bâtiments principaux en tuiles est accessible.<br />
+
+Plus d'informations sur [les affectations](/docs/tutorials/affectations/intro.md).
 
 #### Suppression de Personnes (`SUPPERS`)
 
@@ -100,6 +106,8 @@ Ce rôle, ajouté au rôle utilisateur de base Lecteur (`READ`), permet de liste
 
 Ce rôle, ajouté au rôle utilisateur de base Lecteur (`READ`) ainsi qu'au rôle Affectation de personnes (`AFFECTATIONS`), permet d'importer les matrices de transfert afin de déménager un ensemble de personnes de postes de travail à postes de travail, ou d'espaces à espaces.
 
+Plus d'informations sur [l'utilisation de la matrice de transfert](/docs/tutorials/affectations/workplaceaffectation/edit.md#utiliser-la-matrice-de-transfert).
+
 ### Rôles pour les espaces et les plans
 
 Ces rôles sont inclus par défaut dans le rôle utilisateur de base Administrateur d'entreprise (`ADMIN-TENANT`)
@@ -110,17 +118,25 @@ Ce rôle, ajouté au rôle utilisateur de base Lecteur (`READ`), permet l'activa
 
 La suppression d'espaces, d'objets ou de postes de travail ainsi que les mouvements d'affectation de personnes ne sont pas autorisés dans ce rôle.
 
+Plus d'informations sur [la modification d'un espace](/docs/tutorials/surfaces/room/edit.md).
+
 #### Scénarios Lecteur (`SCEN`)
 
 Ce rôle, ajouté au rôle utilisateur de base Lecteur (`READ`), permet d'accéder à la vue des bâtiments en tuiles avec les informations cumulées du bâtiment ainsi qu'aux scénarios des différents bâtiments, en mode Lecteur.
+
+Plus d'informations sur [la création d'un scénario](/docs/tutorials/surfaces/building/create.md#create-scenario).
 
 #### Lecture Salles de Réunions (`READ-MEETING-ROOM`)
 
 Ce rôle, ajouté à un rôle d'utilisateur de base, permet de consulter et de géolocaliser les espaces de réunion avec leurs équipements, par bâtiment, étage, type d'espace et capacité.
 
+Plus d'informations sur [la consultation des salles de réunion](/docs/tutorials/surfaces/meetingroom/read.md).
+
 #### Affichage des Infos (`VISU-INFOS`)
 
 Ce rôle, ajouté au rôle utilisateur de base Lecteur (`READ`), permet d'afficher les bâtiments en tuiles sur la page d'accueil de la plateforme.
+
+Plus d'informations sur [la fiche d'information du bâtiment](/docs/tutorials/BuildingData/Infocard.md).
 
 #### Liste Bâtiments (`LISTBAT`)
 
@@ -128,11 +144,15 @@ Ce rôle, ajouté au rôle utilisateur de base Lecteur (`READ`) ou Lecteur simpl
 
 Si aucun rôle de contenu n'est attribué à l'utilisateur, tous les bâtiments, y compris les scénarios, sont listés et leurs rapports de données sont exportables en fichiers Excel.
 
+Plus d'informations sur [le rôle de contenu](/docs/access/intro.md#le-rôle-de-contenu).
+
 #### Liste des espaces (`LISTESPACE`)
 
 Ce rôle, ajouté au rôle utilisateur de base Lecteur (`READ`) ou Lecteur simplifié (`READLIGHT`), permet de lister, filtrer et exporter en fichier Excel l'ensemble des espaces des bâtiments accessibles à l'utilisateur.
 
 Si aucun rôle de contenu n'est attribué à l'utilisateur, les espaces de tous les bâtiments accessibles à l'utilisateur sont listés.
+
+Plus d'informations sur [le rôle de contenu](/docs/access/intro.md#le-rôle-de-contenu).
 
 #### Modification Bâtiments (`BUILDMODIF`)
 
@@ -141,6 +161,8 @@ Ce rôle, ajouté au rôle utilisateur de base Lecteur (`READ`) ou Lecteur simpl
 #### Qualification de Pièce (`QUAL-PIECE`)
 
 Ce rôle, ajouté au rôle utilisateur de base Lecteur (`READ`), permet de modifier les informations des espaces (Typologie, organisation, centre de coût, calques d'analyses, ...) par espace ou par groupe d'espaces.
+
+Plus d'informations sur [la qualification d'un espace](/docs/tutorials/surfaces/room/edit.md#qualifier-un-espace-ou-modifier-les-informations-dun-espace).
 
 
 ### Rôles pour le mobilier
@@ -153,10 +175,14 @@ Ce rôle, ajouté au rôle utilisateur de base Lecteur (`READ`), permet d'ajoute
 
 Ce rôle ne permet pas de modifier ou supprimer des espaces, ni de créer ou supprimer des affectations de personnes.
 
+Plus d'informations sur [la création d'un poste de travail](/docs/tutorials/objects/workplace/create.md) et sur [la création d'un objet](/docs/tutorials/objects/item/create.md).
+
 #### Modif infos sur PdT (`INFOS-PdT`)
 
 Ce rôle, ajouté au rôle utilisateur de base Lecteur (`READ`), permet de modifier les informations des postes de travail (type de poste de travail, organisation, centre de coût, qualifications du poste).
 Le déplacement, la modification d'affectation ou la suppression du poste de travail ne sont pas autorisés dans ce rôle.
+
+Plus d'informations sur [la modification d'un poste de travail](/docs/tutorials/objects/workplace/edit.md).
 
 ### Rôles pour la réservation
 
@@ -175,10 +201,14 @@ Utilisé en addition à un autre rôle utilisateur de base, il complète ce rôl
 
 Ce rôle est effectif uniquement sur les plateformes ayant souscrit à l'option de réservation dans Surfy.<br />
 
+Plus d'informations sur [la réservation d'un poste de travail](/docs/tutorials/booking/workstationbooking/workplace.md) et sur [la réservation de parking](/docs/tutorials/booking/parkingbooking/parkingresa.md).
+
 #### Réservation pour un tiers (`RESTIERS`)
 
 Ce rôle, ajouté au rôle utilisateur de base Planning Utilisateur (`PLANNING-USER`), permet de réserver à la place d'un collaborateur, présent dans la base ou à créer par l'utilisateur du rôle.<br />
 Ce rôle est effectif uniquement sur les plateformes ayant souscrit à l'option de réservation dans Surfy.
+
+Plus d'informations sur [la réservation pour un tiers](/docs/tutorials/booking/workstationbooking/thirdpartbooking.md).
 
 #### Réservation invités externes (`RESINVIT`)
 
@@ -186,11 +216,14 @@ Ce rôle, ajouté au rôle utilisateur de base Planning Utilisateur (`PLANNING-U
 Les invités sont listésc et peuvent être supprimés.<br />
 Ce rôle est effectif uniquement sur les plateformes ayant souscrit à l'option de réservation dans Surfy.
 
+Plus d'informations sur [la réservation pour un invité externe](/docs/tutorials/booking/workstationbooking/thirdpartbooking.md).
 
 #### Planning Profils Sécurité (`PLANSECU`)
 
 Ce rôle, ajouté à n'importe quel rôle utilisateur de base, permet de localiser sur les plans les équipiers de Sécurité ayant réservé un poste de travail, en fonction de la date de réservation, du bâtiment, du quartier de réservation, du type de profil Sécurité et de l'étage.<br />
 Ce rôle est effectif uniquement sur les plateformes ayant souscrit à l'option de réservation dans Surfy.
+
+Plus d'informations sur [les profils Sécurité](/docs/tutorials/person/personSecurityProfile/create.md) et sur [l'affichage des profils Sécurité sur le plan](/docs/courses/views/2Dviews.md#afficher-les-profils-sécurité-sur-le-plan).
 
 #### Administrateur de Planning (`ADMIN-PLANNING`)
 
@@ -198,6 +231,8 @@ Ce rôle, ajouté à n'importe quel rôle utilisateur de base, permet de lister 
 
 Ce rôle permet également de visualiser la saturation mensuelle des quartiers par bâtiment et d'identifier les jours de dépassement de seuil.<br />
 Ce rôle est effectif uniquement sur les plateformes ayant souscrit à l'option de réservation dans Surfy.
+
+Plus d'informations sur [l'administrateur de Planning](/docs/tutorials/booking/workstationbooking/admin.md).
 
 ### Rôles de visions et d'exports
 
@@ -209,16 +244,23 @@ Ce rôle, ajouté au rôle utilisateur de base Lecteur simplifié (`READLIGHT`),
 
 Il est complémentaire du rôle Clés de répartition (`CLE-REPART`) qui permet la répartition financière des coûts sur le bâtiment.
 
+Plus d'informations sur [la refacturation des espaces](/docs/tutorials/cost-distribution-by-cost-center/create.md).
+
 #### Clés de répartition (`CLE-REPART`)
 
 Ce rôle permet d'accéder à la clé de répartition et surfaces qualifiées par centre de coût pour les bâtiments.<br />
 Il permet la sortie en fichiers Excel, avec ou sans ventilation des parties communes.<br />
 Ce rôle permet également de visualiser la fiche détaillée de chaque bâtiment accessible, comprenant les informations immobilières du bâtiment.<br />
 Il inclut la vue des bâtiments en tuiles.
+
+Plus d'informations sur [la refacturation des espaces](/docs/tutorials/cost-distribution-by-cost-center/create.md).
+
 #### RAPPORTS Excel (`RAPP`)
 
 Ce rôle permet d'accéder au tableau de bord et à l'inventaire des bâtiments accessibles.<br />
 Il inclut la vue des bâtiments en tuiles.
+
+Plus d'informations sur [les rapports de données](/docs/tutorials/BuildingData/Buildingdashboard/Buildingreporting.md) et sur [le rapport de l'inventaire du bâtiment](/docs/tutorials/BuildingData/Buildingdashboard/Buildingreporting.md#rapport-de-linventaire-du-bâtiment).
 
 
 ### Les rôles utilisateur techniques
@@ -230,11 +272,15 @@ Ces rôles ne sont pas inclus par défaut dans le rôle utilisateur de base Admi
 Ce rôle permet de créer les dimensions périphériques d'un étage afin de définir son périmètre pour une meilleure visualisation de la vue 3D de l'étage ou du bâtiment.
 La structure dessinée donne une base pleine pour recevoir les espaces digitalisés dans un périmètre défini.
 
+Plus d'informations sur [les vues 3D](/docs/courses/views/3Dviews.md).
+
 #### Calibrateur (`CALIB`)
 
 Ce rôle permet de redimensionner l'ensemble des espaces digitalisés d'un étage au nouveau fond de plan n'ayant pas les dimensions du fond de plan d'origine.
 
 La recalibration des espaces nécessite une réinitialisation de l'échelle pour adapter celle ci aux nouvelles dimensions du fond de plan.
+
+Plus d'informations sur [la création de l'échelle](/docs/tutorials/surfaces/mapscale/create.md).
 
 #### Panier Copier Coller (`PAN`)
 
