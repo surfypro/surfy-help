@@ -12,7 +12,7 @@ A workstation is a group of objects to which particular qualifications can be as
 -   [attachment to a Service](/en/docs/tutorials/organization/create#attach-a-service-to-a-workstation)
 -   [attachment to a cost center](/en/docs/tutorials/costcenter/create#assign-a-cost-center-to-a-workstation)
 -   coloring of workstations according to their [usage state](/en/docs/courses/views/2Dviews#display-workstation-status-on-plan)
--   coloring of workstations according to the [security profile](/en/docs/courses/views/2Dviews#display-security-profiles-on-plans) of the person assigned to the workstation
+-   coloring of workstations according to the [security profile](/en/docs/courses/views/2Dviews#display-security-profiles-on-plan) of the person assigned to the workstation
 -   coloring according to their [cost center](/en/docs/tutorials/cost-distribution-by-cost-center/create#visualize-cost-centers-on-plan)
 -   coloring according to their [usage type](/en/docs/tutorials/objects/workplace/edit#workstation-usage-type)
 
@@ -94,12 +94,12 @@ The duplicated workstations retain the orientation and relative positioning of t
 
 ### Rotate a Group of Workstations
 
-Rotation is only possible on a group of workstations.
+To rotate a group of objects or workstations,
 
 -   "Activate plan editing mode" by clicking on the "pencil" icon above the plan
--   select the workstations to rotate while holding the "shift" key
--   a selection area encompassing the workstations to rotate is delimited
--   click on the "Rotate all selected workstations around the center of the selection" icon to rotate all selected workstations by 45° angles
+-   select the objects or workstations to rotate while holding the "shift" key
+-   a selection area encompassing the objects or workstations to rotate is delimited
+-   click on the "Rotate all selected objects around the center of the selection" icon to rotate all selected objects by 45° angles
 -   pressing "shift" during rotation allows you to rotate the whole group by a finer angle
 -   once the rotation is done, click outside the selection to deselect
 

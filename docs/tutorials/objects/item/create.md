@@ -63,7 +63,8 @@ Pour "copier" les objets, plusieurs options sont possibles:
 
 Les objets dupliqués sont au bout de la souris, prêts à être déposés en cliquant sur le plan.
 
-Les objets dupliqués conservent l'orientation et le positionnement relatif du groupe d'objet initial.
+Les objets dupliqués conservent l'orientation et le positionnement relatif du groupe d'objet initial.<br />
+Pour faire pivoter un groupe d'objets ou de postes de travail, voir la section [Rotation d'un groupe d'objets](/docs/tutorials/objects/item/edit/#rotation-dun-groupe-dobjets)
 
 
 

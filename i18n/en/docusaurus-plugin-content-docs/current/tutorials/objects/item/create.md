@@ -65,7 +65,8 @@ To "copy" the objects, several options are possible:
 
 The duplicated objects are at the mouse cursor, ready to be dropped by clicking on the plan.
 
-The duplicated objects retain the orientation and relative positioning of the initial object group.
+The duplicated objects retain the orientation and relative positioning of the initial object group.<br />
+To rotate a group of objects or workstations, see the section [Rotate a Group of Objects](/en/docs/tutorials/objects/item/edit#rotate-a-group-of-objects)
 
 
 
