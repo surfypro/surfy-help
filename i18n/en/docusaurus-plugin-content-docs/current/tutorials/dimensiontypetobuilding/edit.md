@@ -39,3 +39,13 @@ You can then:
 
 After data reload (icon at the top right of the screen) and refresh (F5), the modifications are visible on plans and layer data.
 
+## Visualize Assignment Layers
+
+The vertical "Grid" icon allows you to "color spaces on the plan according to assignment layers" present on the floor.
+After data reload (icon at the top right of the screen) and refresh (F5), cumulative data for each assignment layer is available by opening the butterfly opposite each layer, or by opening the global butterfly.
+
+Clicking on "Distribution of selected surfaces (m²)" displays the data:
+-   as a pie chart
+-   as polar areas (radii proportional to surfaces)
+-   as a table
+

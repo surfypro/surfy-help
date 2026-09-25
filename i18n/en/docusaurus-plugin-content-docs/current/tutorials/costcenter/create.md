@@ -87,3 +87,19 @@ To assign a cost center to a workstation from the plan,
 -   click on the "pencil" icon of the "Cost Center" and select the cost center from the list
 -   "save" the modifications
 
+## Visualize Cost Centers on Plans
+
+To visualize cost centers on plans, click on the vertical "€" icon to "color spaces and workstations according to cost centers".
+
+Three tabs are offered:
+
+-   the SPACES tab allows you to display space cost centers in colors. Cumulative space information for each cost center is available by clicking on the butterfly at the end of the cost center line.
+
+    Clicking on "Distribution of selected surfaces (m²)" displays the data:<br />
+     °  as a pie chart<br />
+     °  as polar areas (radii proportional to surfaces)<br />
+     °  as a table<br />
+
+-   the WORKSTATIONS tab allows you to display workstation cost centers in colors. The number of workstations per cost center is indicated at the end of the cost center line.
+-   the PEOPLE tab allows you to display people's cost center on the workstation they are assigned to. The number of people and workstations per cost center is indicated at the end of the cost center line.
+

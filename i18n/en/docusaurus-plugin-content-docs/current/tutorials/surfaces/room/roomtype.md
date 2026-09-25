@@ -122,7 +122,7 @@ Typology groups are proposed for use. From the left menu,
 
 The space typology group is given to the typology, and is added to the typology's typology group list, below the selection.
 
-### Visualize Typology Groups:
+### Visualize Space Typology Groups:
 
 To get group information, from the floor plan,
 
@@ -130,3 +130,8 @@ To get group information, from the floor plan,
 
 Cumulative information for each space typology group is displayed by opening the "butterfly" at the end of the line.
 The grouped typology list is obtained by passing the mouse over the "?" icon.
+
+Clicking on "Distribution of selected surfaces (m²)" displays the data:
+-   as a pie chart
+-   as polar areas (radii proportional to surfaces)
+-   as a table

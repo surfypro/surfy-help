@@ -119,7 +119,7 @@ Des groupes de typologies sont proposés à l'utilisation. Depuis le menu de gau
 
 Le groupe de typologie d'espace est donné à la typologie, et s'ajoute à la liste des groupes de typologie de la typologie, en dessous de la sélection.
 
-### Visualiser les groupes de typologies :
+### Visualiser les groupes de typologies d'espace :
 
 Pour obtenir les informations des groupes, depuis le plan de l'étage,
 
@@ -127,3 +127,8 @@ Pour obtenir les informations des groupes, depuis le plan de l'étage,
 
 Les informations cumulées pour chaque groupe de typologies d'espace sont affichées en ouvrant le "papillon" en fin de ligne.
 La liste des typologies groupée s'obtient en passant la souris sur l'icône "?".
+
+Cliquer sur "Répartition des surfaces sélectionnées (m²)" affiche les données :
+-   en diagramme circulaire
+-   en aires polaires (rayons proportionnels aux surfaces)
+-   sous forme de tableau

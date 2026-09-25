@@ -112,14 +112,6 @@ To attach a Service to a space, from the floor plan,
 The space is attached to the concerned Service.
 
 Once spaces are attached, it is necessary to "reload plan data" by clicking on the icon at the top right of the screen, then refresh (F5).
-From the floor or building plan, click on the vertical icon "Color spaces on the plan according to organizations" to visualize organizations in color on plans.
-
-Three tabs are offered:
--   SERVICES: displays Services in color and cumulative information of Services
--   DEPARTMENTS: displays Departments in color and cumulative information of Departments
--   HIERARCHY: displays Services in color and cumulative information of Services by Department
-
-By opening the "butterfly" at the end of each organization's line, you get cumulative information for the organization, for the floor or building visualized.
 
 ### Attach a Service to a District
 
@@ -166,4 +158,20 @@ To attach a Service to a workstation,
 -   click on the "pencil" icon of the "Organization" line
 -   choose the Service corresponding to the workstation
 -   "Save" the modifications
+
+## Visualize Organizations on Plans
+
+From the floor or building plan, clicking on the vertical "organization chart" icon to "Color spaces on the plan according to organizations" allows you to visualize organizations in color on plans.
+
+Three tabs are offered:
+-   SERVICES: displays Services in color and cumulative information of Services
+-   DEPARTMENTS: displays Departments in color and cumulative information of Departments
+-   HIERARCHY: displays Services in color and cumulative information of Services by Department
+
+By opening the "butterfly" at the end of each organization's line, you get cumulative information for the organization, for the floor or building visualized.
+
+Clicking on "Distribution of selected surfaces (m²)" displays the data:
+-   as a pie chart
+-   as polar areas (radii proportional to surfaces)
+-   as a table
 

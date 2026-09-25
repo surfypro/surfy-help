@@ -22,7 +22,7 @@ Entities will still be attached to this organization but it will no longer be ac
 ## Visualize Organizations on Plans
 
 Once space attachments are modified, it is necessary to "reload plan data" by clicking on the icon at the top right of the screen, then refresh (F5).
-From the floor or building plan, click on the vertical icon "Color spaces on the plan according to organizations" to visualize organizations in color on plans.
+From the floor or building plan, clicking on the vertical "organization chart" icon to "Color spaces on the plan according to organizations" allows you to visualize organizations in color on plans.
 
 Three tabs are offered:
 -   SERVICES: displays Services in color and cumulative information of Services
@@ -30,3 +30,8 @@ Three tabs are offered:
 -   HIERARCHY: displays Services in color and cumulative information of Services by Department
 
 By opening the "butterfly" at the end of each organization's line, you get cumulative information for the organization, for the floor or building visualized.
+
+Clicking on "Distribution of selected surfaces (m²)" displays the data:
+-   as a pie chart
+-   as polar areas (radii proportional to surfaces)
+-   as a table

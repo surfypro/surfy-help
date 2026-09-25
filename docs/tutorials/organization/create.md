@@ -110,14 +110,6 @@ Pour rattacher un Service à un espace, depuis le plan de l'étage,
 L'espace est rattaché au Service concerné.
 
 Une fois les espaces rattachés, il est nécessaire de "recharger les données du plan" en cliquant sur l'icône en haut à droite de l'écran, puis de rafraichir (F5).
-Depuis le plan de l'étage ou du bâtiment, cliquer sur l'icône verticale "Colorier les espaces sur le plan selon les organisations" pour visualiser les organisations en couleur sur les plans.
-
-Trois onglets sont proposés:
--   SERVICES : affiche les Services en couleur et les informations cumulées des Services
--   DIRECTIONS : affiche les Directions en couleur et les informations cumulées des Directions
--   HIERARCHIE : affiche les Services en couleur et les informations cumulées des Services par Direction
-
-En ouvrant le "papillon" en bout de ligne de chaque organisation, on obtient les informations cumulées pour l'organisation, pour l'étage ou le bâtiment visualisé.
 
 ### Rattacher un Service à un quartier
 
@@ -165,3 +157,18 @@ Pour rattacher un Service à un poste de travail,
 -   choisir le Service correspondant au poste de travail
 -   "Sauvegarder" les modifications
 
+## Visualiser les organisations sur les plans
+
+Depuis le plan de l'étage ou du bâtiment, cliquer sur l'icône verticale "organigramme" pour "Colorier les espaces sur le plan selon les organisations" permet de visualiser les organisations en couleur sur les plans.
+
+Trois onglets sont proposés:
+-   SERVICES : affiche les Services en couleur et les informations cumulées des Services
+-   DIRECTIONS : affiche les Directions en couleur et les informations cumulées des Directions
+-   HIERARCHIE : affiche les Services en couleur et les informations cumulées des Services par Direction
+
+En ouvrant le "papillon" en bout de ligne de chaque organisation, on obtient les informations cumulées pour l'organisation, pour l'étage ou le bâtiment visualisé.
+
+Cliquer sur "Répartition des surfaces sélectionnées (m²)" affiche les données :
+-   en diagramme circulaire
+-   en aires polaires (rayons proportionnels aux surfaces)
+-   sous forme de tableau

@@ -32,3 +32,13 @@ You can modify an analysis layer directly, from the home page:
 -   "save" the analysis layer modifications.
 
 After refresh (F5), the analysis layer takes into account the modifications made.
+
+## Visualize Analysis Layers
+
+The vertical "Palette" icon allows you to visualize on the plan all analysis layers present on the floor.
+After recalculating the data (icon at the top right of the screen "Reload plan data") and refresh (F5), cumulative data for each layer is available by opening the butterfly opposite each layer, or by opening the global butterfly for all layers present.
+
+Clicking on "Distribution of selected surfaces (m²)" displays the data:
+-   as a pie chart
+-   as polar areas (radii proportional to surfaces)
+-   as a table

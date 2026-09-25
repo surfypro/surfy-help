@@ -16,11 +16,17 @@ Pour modifier les informations des centres de coût dans Surfy, depuis le menu d
 
 ## Visualiser les centres de coût sur les plans
 
-Pour visualiser les centres de coût sur les plans, cliquer sur l'icône verticale "€" des centres de coût.
+Pour visualiser les centres de coût sur les plans, cliquer sur l'icône verticale "€" pour "colorier les espaces et postes de travail par rapport aux centres de coût".
 
 Trois onglets sont proposés:
 
 -   l'onglet ESPACES permet d'afficher les centres de coût des espaces en couleurs.Les informations cumulées de espaces pour chaque centre de coût sont disponibles en cliquant sur le papillon en bout de ligne du centre de coût.
+
+    Cliquer sur "Répartition des surfaces sélectionnées (m²)" affiche les données :<br />
+     °  en diagramme circulaire<br />
+     °  en aires polaires (rayons proportionnels aux surfaces)<br />
+     °  sous forme de tableau<br />
+
 -   l'onglet POSTES DE TRAVAIL permet d'afficher les centres de coût des postes de travail en couleurs. Le nombre de poste de travail par centre de coût est indiqué en bout de ligne du centre de coût.
 -   l'onglet PERSONNES permet d'afficher le centre de coût des personnes sur le poste de travail sur lequel ils sont affectés. Le nombre de personnes et de postes de travail par centre de coût est indiqué en bout de ligne du centre de coût. 
 
