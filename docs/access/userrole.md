@@ -46,7 +46,7 @@ La création, modification ou suppression de données ou de plans n'est pas auto
 
 Ce rôle utilisateur sert de base pour l'ajout de rôles additionnels permettant de compléter les fonctionnalités accessibles à l'utilisateur.
 
-Plus d'informations sur le [mode Lecteur](/docs/courses/read/readcourse/)
+Plus d'informations sur le [mode Lecteur](/docs/courses/read/readcourse/).
 
 ### Lecteur simplifié (`READLIGHT`)
 
