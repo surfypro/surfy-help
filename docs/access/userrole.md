@@ -46,6 +46,8 @@ La création, modification ou suppression de données ou de plans n'est pas auto
 
 Ce rôle utilisateur sert de base pour l'ajout de rôles additionnels permettant de compléter les fonctionnalités accessibles à l'utilisateur.
 
+Plus d'informations sur le [mode Lecteur](/docs/courses/read/readcourse/)
+
 ### Lecteur simplifié (`READLIGHT`)
 
 Avec ce rôle, la page d'accueil de l'utilisateur comporte la vue des bâtiments principaux (hors scénarios) avec photos.<br />

@@ -48,6 +48,8 @@ Creating, modifying or deleting data or plans is not allowed.
 
 This user role serves as a base for adding additional roles to complete the features accessible to the user.
 
+More information about [Reader mode](/en/docs/courses/read/readcourse/).
+
 ### Simplified Reader (`READLIGHT`)
 
 With this role, the user's home page shows the main buildings view (excluding scenarios) with photos.<br />
