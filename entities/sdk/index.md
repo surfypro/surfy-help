@@ -6,17 +6,17 @@ search_rank: 1
 
 # Surfy SDK — intégration cartographie
 
-Le **Surfy SDK** (`@surfy/surfy-sdk`) permet d'embarquer un **plan d'étage 2D** ou un **bâtiment 3D** Surfy en **lecture seule** (couleurs, zoom, sélection, thème) — sans reconstruire la géométrie Surfy et **sans** exposer le `clientSecret` dans le navigateur.
+Le **Surfy SDK** (`@surfy/surfy-sdk`) permet d'embarquer un **plan d'étage 2D**, un **bâtiment 3D**, ou une **Vue plateforme / Vue campus** (carte multi-bâtiments MapLibre + Cuby) en **lecture seule** — sans reconstruire la géométrie Surfy et **sans** exposer le `clientSecret` dans le navigateur.
 
-## Trois surfaces (+ API données)
+## Trois surfaces de layout (+ plateforme/campus + API données)
 
-Les trois surfaces de layout partagent les **mêmes sémantiques** (auth JWT machine, tenant, couleurs, sélection). Choisissez selon votre stack :
+Les surfaces d'étage / bâtiment partagent les **mêmes sémantiques** (auth JWT machine, tenant, couleurs, sélection). La Vue plateforme / campus est **React Web uniquement** au MVP :
 
 | Surface | Import | Public cible |
 |---------|--------|--------------|
-| **API JavaScript** | `@surfy/surfy-sdk` → `SurfySdk.mountFloor2d` / `mountBuilding3d` | HTML, Vue, Angular, tout hôte DOM |
-| **Web Component** | mêmes tags (`surfy-floor-layout-2d`, `surfy-building-layout-3d`) | Markup HTML / frameworks non-React |
-| **Surfy React Web** | `@surfy/surfy-sdk/react` | Apps React (préféré dans une app React Surfy ou tierce) |
+| **API JavaScript** | `@surfy/surfy-sdk` → `SurfySdk.mountFloor2d` / `mountBuilding3d` | HTML, Vue, Angular, tout hôte DOM (étage / bâtiment) |
+| **Web Component** | mêmes tags (`surfy-floor-layout-2d`, `surfy-building-layout-3d`) | Markup HTML / frameworks non-React (étage / bâtiment) |
+| **Surfy React Web** | `@surfy/surfy-sdk/react` | Apps React — layouts + **Vue plateforme / Vue campus** |
 | **API données client** | `@surfy/surfy-sdk/client` → `SurfyClient` | Backend ou navigateur — bâtiments / étages / espaces |
 
 ```ts
@@ -40,6 +40,7 @@ Handle `SurfyLayout` : `setRoomColors`, `setTheme`, `updateRoom`, `setFillParent
 | `SurfySdk.mountFloor2d` / `mountBuilding3d` | Disponible — API JS recommandée hors React |
 | Web Components (`surfy-floor-layout-2d`, `surfy-building-layout-3d`) | Disponibles — même moteur que `mount*` |
 | Surfy React Web (`@surfy/surfy-sdk/react`) | Disponible — hooks + composants de layout |
+| **Vue plateforme / Vue campus** (`SurfyPlatformView3dReact` / `SurfyCampusView3dReact`) | Disponible — MapLibre + Cuby ; React Web uniquement |
 | `SurfyClient` (`@surfy/surfy-sdk/client`) | Disponible — QueryNode / entités |
 | `setRoomColors` / `clearRoomColors` | Disponible (2D + bâtiment 3D) |
 | `setTheme` | Disponible |
@@ -81,6 +82,7 @@ sequenceDiagram
 | [Authentification](./authentication.md) | JWT machine, proxy backend |
 | [Éléments de layout](./layout-elements.md) | API JS `mount*` + Web Components |
 | [Surfy React Web](./surfy-react-web.md) | Hooks et composition React |
+| [Vue plateforme / campus](./platform-campus-3d.md) | Carte multi-bâtiments MapLibre + Cuby, offline, altitude |
 | [API données client](./client-data-api.md) | `SurfyClient` / QueryNode |
 | [Thème (MUI)](./theme.md) | `setTheme` |
 | [Options 3D](./options-3d.md) | `setOptions`, `fitToView` |
@@ -92,4 +94,4 @@ sequenceDiagram
 
 ## Démo de référence
 
-Le dépôt **surfy-sdk-demos** (`apps/react-web`) illustre les surfaces et les routes de démo (étage 2D, bâtiment 3D). Les tests E2E de ce dépôt font partie de la barre de livraison V1.
+Le dépôt **surfy-sdk-demos** (`apps/react-web`) illustre les surfaces et les routes de démo (étage 2D, bâtiment 3D, **plateforme / campus**). Les tests E2E de ce dépôt font partie de la barre de livraison V1.

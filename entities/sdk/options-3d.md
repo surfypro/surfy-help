@@ -138,4 +138,6 @@ Utile après un changement de `selectedFloorIds`, de `floorSpace`, de navigation
 
 Les options internes du Work Canvas Surfy (filtres carte, calques d'analyse, sélecteur d'étages UI, etc.) ne sont **pas** configurables via le SDK. Seules les clés de `SurfyLayout3dOptions` sont le contrat public.
 
+Pour la **Vue plateforme / Vue campus**, le contrat public est React (props + hooks) — pas `setOptions` sur un élément WC. Voir [Vue plateforme / campus](./platform-campus-3d.md).
+
 Voir [Éléments de layout — bâtiment 3D](./layout-elements.md#surfy-building-layout-3d) et [Taille et conteneur](./layout-and-sizing.md).

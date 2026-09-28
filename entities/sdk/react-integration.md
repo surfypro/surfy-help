@@ -8,8 +8,9 @@ sidebar_label: "Intégration React"
 | Besoin | Chemin |
 |--------|--------|
 | App React, composition + hooks Surfy | **[Surfy React Web](./surfy-react-web.md)** (`@surfy/surfy-sdk/react`) — **recommandé** |
+| App React, **Vue plateforme / Vue campus** | **[Vue plateforme / campus](./platform-campus-3d.md)** — React Web uniquement (pas de WC / mount*) |
 | App React, surface minimale sans hooks | `SurfySdk.mountFloor2d` / `mountBuilding3d` dans un `useEffect` |
-| HTML / Vue / non-React | [Web Component ou mount*](./layout-elements.md) |
+| HTML / Vue / non-React | [Web Component ou mount*](./layout-elements.md) (étage / bâtiment ; pas plateforme MVP) |
 
 Ne traite **pas** Surfy React Web comme un simple wrapper autour du tag HTML : c'est l'arbre React public du SDK (Provider + layout + hooks).
 

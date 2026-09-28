@@ -16,9 +16,11 @@ Import : **`@surfy/surfy-sdk/react`** (n'enregistre **pas** les custom elements 
 | `SurfySdkReactProvider` | Provider d'instance (store isolé pour multi-embeds) |
 | `SurfyFloorLayout2dReact` | Plan d'étage 2D (wrappe le Provider par défaut) |
 | `SurfyBuildingLayout3dReact` | Bâtiment 3D Cuby |
+| `SurfyPlatformView3dReact` / `SurfyCampusView3dReact` | **Vue plateforme / Vue campus** — MapLibre + Cuby (voir [guide dédié](./platform-campus-3d.md)) |
 | `useRoom` / `useRoomValue` | Lire un espace hydraté par id |
 | `useSetRoom` | Écrire / effacer un espace dans le store |
 | `useRooms` | Liste d'espaces (id de canvas ou liste d'ids) |
+| Hooks plateforme | `useBuildings`, `usePositionFromGeo`, … — voir [Vue plateforme / campus](./platform-campus-3d.md) |
 
 Les hooks sont liés au **Provider le plus proche**. Placez-les **sous** le layout (ou sous un `SurfySdkReactProvider` partagé).
 
@@ -112,4 +114,4 @@ Même règle que les autres surfaces : prop `getAccessToken` → JWT machine via
 - **Pas** de React Native mobile dans ce package.
 - Ne documentez / n'importez pas les modules internes Surfy hors de `@surfy/surfy-sdk/react`.
 
-Pour HTML / Vue / non-React : [Éléments de layout](./layout-elements.md). Aperçu React + `mount*` : [Intégration React](./react-integration.md).
+Pour HTML / Vue / non-React : [Éléments de layout](./layout-elements.md). Aperçu React + `mount*` : [Intégration React](./react-integration.md). Carte multi-bâtiments : [Vue plateforme / campus](./platform-campus-3d.md).
