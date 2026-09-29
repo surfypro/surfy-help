@@ -1024,6 +1024,20 @@ A content role to floor association allows you to define floor-specific access p
 *Technical name:* ```contentRoleToFloorUpdatedBies```
 <PH code="userCompany:contentRoleToFloorUpdatedBies"/>
 
+### Segment connectors {#segment-connector-created-bies}
+
+A segment connector qualifies a door segment as a building entry/exit for Pathfinding
+
+*Technical name:* ```segmentConnectorCreatedBies```
+<PH code="userCompany:segmentConnectorCreatedBies"/>
+
+### Segment connectors {#segment-connector-updated-bies}
+
+A segment connector qualifies a door segment as a building entry/exit for Pathfinding
+
+*Technical name:* ```segmentConnectorUpdatedBies```
+<PH code="userCompany:segmentConnectorUpdatedBies"/>
+
 ### Segment qualifications {#room-point-segment-created-bies}
 
 A segment qualification allows you to define the display and orientation properties of a segment between two space points
@@ -1303,6 +1317,20 @@ A vehicle allows you to manage information related to a vehicle
 
 *Technical name:* ```vehicleUpdatedBies```
 <PH code="userCompany:vehicleUpdatedBies"/>
+
+### Visual edges of object types {#item-type-visual-edge-created-bies}
+
+A visual edge defines a display segment only on the object type, distinct from shape points
+
+*Technical name:* ```itemTypeVisualEdgeCreatedBies```
+<PH code="userCompany:itemTypeVisualEdgeCreatedBies"/>
+
+### Visual edges of object types {#item-type-visual-edge-updated-bies}
+
+A visual edge defines a display segment only on the object type, distinct from shape points
+
+*Technical name:* ```itemTypeVisualEdgeUpdatedBies```
+<PH code="userCompany:itemTypeVisualEdgeUpdatedBies"/>
 
 ### Workstation assignments {#workplace-affectation-created-bies}
 

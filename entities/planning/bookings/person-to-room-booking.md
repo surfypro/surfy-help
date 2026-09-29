@@ -34,6 +34,23 @@ La date et l'heure de fin de la réservation
     
 
 
+## Propriétés de base {#properties-base}
+    
+### Avertissement e-mail de confirmation envoyé le {#email-confirmation-warning-notification-sent-at}
+
+La date et l'heure d'envoi de l'avertissement e-mail avant annulation de la réservation non confirmée
+
+*Nom technique:* ```emailConfirmationWarningNotificationSentAt```
+<PH code="personToRoomBooking:emailConfirmationWarningNotificationSentAt"/>
+
+### Espace confirmé le {#room-has-been-confirmed-at}
+
+Date et heure de confirmation de présence pour la réservation d'espace (parking)
+
+*Nom technique:* ```roomHasBeenConfirmedAt```
+<PH code="personToRoomBooking:roomHasBeenConfirmedAt"/>
+
+    
 
 ## Entités associées (unique) {#properties-belongs-to}
 

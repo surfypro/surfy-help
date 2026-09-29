@@ -52,6 +52,22 @@ An object type allows you to categorize and define the characteristics of physic
 <PH code="itemTypePoint:itemType"/>
 
 
+## Associated entities (list) {#properties-has-many}
+
+### Visual edges of object types {#item-type-visual-edge-starts}
+
+A visual edge defines a display segment only on the object type, distinct from shape points
+
+*Technical name:* ```itemTypeVisualEdgeStarts```
+<PH code="itemTypePoint:itemTypeVisualEdgeStarts"/>
+
+### Visual edges of object types {#item-type-visual-edge-ends}
+
+A visual edge defines a display segment only on the object type, distinct from shape points
+
+*Technical name:* ```itemTypeVisualEdgeEnds```
+<PH code="itemTypePoint:itemTypeVisualEdgeEnds"/>
+
 
 
 

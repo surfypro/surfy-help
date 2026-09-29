@@ -232,6 +232,27 @@ Le nombre total de personnes affectées, soit directement affécté aux espaces,
 *Nom technique:* ```totalPeopleCount```
 <PH code="building:totalPeopleCount"/>
 
+### Pathfinding Regen Completed At {#pathfinding-regen-completed-at}
+
+
+
+*Nom technique:* ```pathfindingRegenCompletedAt```
+<PH code="building:pathfindingRegenCompletedAt"/>
+
+### Pathfinding Regen Requested At {#pathfinding-regen-requested-at}
+
+
+
+*Nom technique:* ```pathfindingRegenRequestedAt```
+<PH code="building:pathfindingRegenRequestedAt"/>
+
+### Pathfinding Regen Status {#pathfinding-regen-status}
+
+
+
+*Nom technique:* ```pathfindingRegenStatus```
+<PH code="building:pathfindingRegenStatus"/>
+
 ### Photo du bâtiment {#picture}
 
 Vous pouvez utiliser une photo de votre bâtiment pour le repérer rapidement depuis la page d'accueil (voir les bâtiments avec des photos) ou pour illustrer les vues des collaborateurs

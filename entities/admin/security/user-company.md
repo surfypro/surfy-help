@@ -135,6 +135,20 @@ Permet d'associer une personne à un ou plusieurs véhicules
 *Nom technique:* ```personToVehicleUpdatedBies```
 <PH code="userCompany:personToVehicleUpdatedBies"/>
 
+### Arêtes visuelles de types d'objet {#item-type-visual-edge-created-bies}
+
+Une arête visuelle définit un segment d'affichage uniquement sur le type d'objet, distinct des points de forme
+
+*Nom technique:* ```itemTypeVisualEdgeCreatedBies```
+<PH code="userCompany:itemTypeVisualEdgeCreatedBies"/>
+
+### Arêtes visuelles de types d'objet {#item-type-visual-edge-updated-bies}
+
+Une arête visuelle définit un segment d'affichage uniquement sur le type d'objet, distinct des points de forme
+
+*Nom technique:* ```itemTypeVisualEdgeUpdatedBies```
+<PH code="userCompany:itemTypeVisualEdgeUpdatedBies"/>
+
 ### Association rôle de contenu aux opérations d'interface pour une entreprise {#content-role-to-jup-ui-tenant-operation-created-bies}
 
 
@@ -603,6 +617,20 @@ Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces d
 
 *Nom technique:* ```roomConnectorUpdatedBies```
 <PH code="userCompany:roomConnectorUpdatedBies"/>
+
+### Connecteurs de segment {#segment-connector-created-bies}
+
+Un connecteur de segment qualifie un segment de porte comme entrée/sortie bâtiment pour le Pathfinding
+
+*Nom technique:* ```segmentConnectorCreatedBies```
+<PH code="userCompany:segmentConnectorCreatedBies"/>
+
+### Connecteurs de segment {#segment-connector-updated-bies}
+
+Un connecteur de segment qualifie un segment de porte comme entrée/sortie bâtiment pour le Pathfinding
+
+*Nom technique:* ```segmentConnectorUpdatedBies```
+<PH code="userCompany:segmentConnectorUpdatedBies"/>
 
 ### Échelles plan {#map-scale-created-bies}
 

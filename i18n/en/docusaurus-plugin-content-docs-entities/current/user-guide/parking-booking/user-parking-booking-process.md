@@ -27,9 +27,15 @@ The system displays availability stats (total, booked, free spaces).
 
 The user selects a compatible free space (or uses automatic booking if available).
 
-## Step 5 - Confirm
+## Step 5 - Availability check
 
 The system checks real-time availability:
 
-- if free, booking is confirmed;
+- if free, the booking is saved;
 - otherwise, the user must select another space.
+
+## Same-day presence confirmation
+
+If the company enabled a confirmation window, a parking booking made **in advance** must be confirmed on the day in **My planning** (parking button, or shared button with the desk). A booking created **on the same day** is confirmed automatically.
+
+Detailed guide: [Desk and parking booking confirmation](../booking-system/workplace-booking-confirmation-window).

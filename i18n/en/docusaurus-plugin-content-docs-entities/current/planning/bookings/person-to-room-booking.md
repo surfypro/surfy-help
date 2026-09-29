@@ -34,6 +34,23 @@ The start date and time of the reservation
     
 
 
+## Basic properties {#properties-base}
+    
+### Confirmation email sent on {#email-confirmation-warning-notification-sent-at}
+
+The date and time the email warning was sent before the cancellation of the unconfirmed reservation.
+
+*Technical name:* ```emailConfirmationWarningNotificationSentAt```
+<PH code="personToRoomBooking:emailConfirmationWarningNotificationSentAt"/>
+
+### Space confirmed {#room-has-been-confirmed-at}
+
+Date and time of confirmation of attendance for space reservation (parking)
+
+*Technical name:* ```roomHasBeenConfirmedAt```
+<PH code="personToRoomBooking:roomHasBeenConfirmedAt"/>
+
+    
 
 ## Associated entities (unique) {#properties-belongs-to}
 
