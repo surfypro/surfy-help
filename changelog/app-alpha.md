@@ -12,6 +12,14 @@ L’application utilisée au quotidien par la plupart des organisations reste su
 
 Lors d’une mise en production, seules les **nouveautés** sont reprises dans la page [Nouveautés](./app.md) ; les sections **Bugs résolus** ne sont **pas** reportées en production (elles servent à la vérification de l’équipe de test pendant le cycle alpha). Cette page est ensuite masquée en la renommant `_app-alpha.md`.
 
+## 30 Septembre 2026
+
+- Pathfinding dans un bâtiment
+  - Nouvelle vue <LSV code="building:building-pathfinding" /> : depuis la fiche d’un <OT code="building" />, choisissez une **origine** et une **destination** (espaces du bâtiment), puis suivez le **chemin en 3D** sur la carte du bâtiment.
+  - Disponible lorsque <P code="company:enablePathfinding" /> est activé pour l’entreprise.
+  - **Admin** : vous pouvez **actualiser la navigation** du bâtiment pour prendre en compte les **connecteurs d’espaces** entre étages ; Surfy reste utilisable pendant le calcul.
+  - Guide : [Pathfinding — navigation dans un bâtiment](/entities/user-guide/floor-plan/pathfinding-campus).
+
 ## 28 Septembre 2026
 
 - Aperçu 3D d'un espace depuis le plan

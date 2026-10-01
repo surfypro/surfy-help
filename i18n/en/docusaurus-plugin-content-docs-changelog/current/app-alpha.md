@@ -12,6 +12,14 @@ Most organizations’ day-to-day application remains at [https://app.surfy.pro](
 
 When a release goes to production, only **features** are moved to [What's New](./app.md); the **Fixed bugs** sections are **not** copied to production (they are for the test team during the alpha cycle). This page is then hidden by renaming it to `_app-alpha.md`.
 
+## September 30, 2026
+
+- Pathfinding inside a building
+  - New <LSV code="building:building-pathfinding" /> view: from a <OT code="building" /> record, choose an **origin** and a **destination** (spaces in that building), then follow the **3D route** on the building map.
+  - Available when <P code="company:enablePathfinding" /> is enabled for the company.
+  - **Admin**: you can **refresh navigation** for the building so **space connectors** between floors are taken into account; Surfy stays usable while the calculation runs.
+  - Guide: [Pathfinding — navigating inside a building](/entities/user-guide/floor-plan/pathfinding-campus).
+
 ## September 28, 2026
 
 - 3D room preview from the floor plan

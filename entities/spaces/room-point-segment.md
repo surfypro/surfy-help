@@ -59,15 +59,6 @@ Un type de segment définit les différents types de segments qui peuvent existe
 <PH code="roomPointSegment:roomPointSegmentType"/>
 
 
-## Entités associées (liste) {#properties-has-many}
-
-### Connecteurs de segment {#segment-connectors}
-
-Un connecteur de segment qualifie un segment de porte comme entrée/sortie bâtiment pour le Pathfinding
-
-*Nom technique:* ```segmentConnectors```
-<PH code="roomPointSegment:segmentConnectors"/>
-
 
 
 

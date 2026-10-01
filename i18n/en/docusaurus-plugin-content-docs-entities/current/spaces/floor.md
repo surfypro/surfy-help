@@ -148,27 +148,6 @@ The occupancy ratio is the number of square meters divided by the number of peop
 *Technical name:* ```peopleRatio```
 <PH code="floor:peopleRatio"/>
 
-### Pathfinding Generate Completed At {#pathfinding-generate-completed-at}
-
-
-
-*Technical name:* ```pathfindingGenerateCompletedAt```
-<PH code="floor:pathfindingGenerateCompletedAt"/>
-
-### Pathfinding Generate Requested At {#pathfinding-generate-requested-at}
-
-
-
-*Technical name:* ```pathfindingGenerateRequestedAt```
-<PH code="floor:pathfindingGenerateRequestedAt"/>
-
-### Pathfinding Generate Status {#pathfinding-generate-status}
-
-
-
-*Technical name:* ```pathfindingGenerateStatus```
-<PH code="floor:pathfindingGenerateStatus"/>
-
 ### Qualified surface {#rooms-area}
 
 The qualified surface is the sum of the surfaces of the spaces

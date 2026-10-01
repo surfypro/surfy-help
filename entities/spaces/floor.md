@@ -148,27 +148,6 @@ L'opacité permet de voir plus ou moins le fond de plan
 *Nom technique:* ```backgroundLayoutOpacity```
 <PH code="floor:backgroundLayoutOpacity"/>
 
-### Pathfinding Generate Completed At {#pathfinding-generate-completed-at}
-
-
-
-*Nom technique:* ```pathfindingGenerateCompletedAt```
-<PH code="floor:pathfindingGenerateCompletedAt"/>
-
-### Pathfinding Generate Requested At {#pathfinding-generate-requested-at}
-
-
-
-*Nom technique:* ```pathfindingGenerateRequestedAt```
-<PH code="floor:pathfindingGenerateRequestedAt"/>
-
-### Pathfinding Generate Status {#pathfinding-generate-status}
-
-
-
-*Nom technique:* ```pathfindingGenerateStatus```
-<PH code="floor:pathfindingGenerateStatus"/>
-
 ### Ratio d'occupation {#people-ratio}
 
 Le ratio d'occupation est le nombre de métres carrés divisé par le nombre de personnes affectées soit directement dans les espaces, soit via un poste de travail

@@ -51,6 +51,34 @@ Ce sont les personnes entrées dans la base de données de Surfy
 *Nom technique:* ```featureGroupUpdatedBies```
 <PH code="userCompany:featureGroupUpdatedBies"/>
 
+###  Structure Exclusion Points {#structure-exclusion-point-created-bies}
+
+
+
+*Nom technique:* ```structureExclusionPointCreatedBies```
+<PH code="userCompany:structureExclusionPointCreatedBies"/>
+
+###  Structure Exclusion Points {#structure-exclusion-point-updated-bies}
+
+
+
+*Nom technique:* ```structureExclusionPointUpdatedBies```
+<PH code="userCompany:structureExclusionPointUpdatedBies"/>
+
+###  Structure Exclusions {#structure-exclusion-created-bies}
+
+
+
+*Nom technique:* ```structureExclusionCreatedBies```
+<PH code="userCompany:structureExclusionCreatedBies"/>
+
+###  Structure Exclusions {#structure-exclusion-updated-bies}
+
+
+
+*Nom technique:* ```structureExclusionUpdatedBies```
+<PH code="userCompany:structureExclusionUpdatedBies"/>
+
 ###  Structure Points {#structure-point-created-bies}
 
 
@@ -617,20 +645,6 @@ Les connecteurs d'espaces permettent de créer un lien entre plusieurs espaces d
 
 *Nom technique:* ```roomConnectorUpdatedBies```
 <PH code="userCompany:roomConnectorUpdatedBies"/>
-
-### Connecteurs de segment {#segment-connector-created-bies}
-
-Un connecteur de segment qualifie un segment de porte comme entrée/sortie bâtiment pour le Pathfinding
-
-*Nom technique:* ```segmentConnectorCreatedBies```
-<PH code="userCompany:segmentConnectorCreatedBies"/>
-
-### Connecteurs de segment {#segment-connector-updated-bies}
-
-Un connecteur de segment qualifie un segment de porte comme entrée/sortie bâtiment pour le Pathfinding
-
-*Nom technique:* ```segmentConnectorUpdatedBies```
-<PH code="userCompany:segmentConnectorUpdatedBies"/>
 
 ### Échelles plan {#map-scale-created-bies}
 

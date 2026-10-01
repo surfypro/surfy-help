@@ -51,6 +51,34 @@ These are the people entered into Surfy's database
 *Technical name:* ```featureGroupUpdatedBies```
 <PH code="userCompany:featureGroupUpdatedBies"/>
 
+###  Structure Exclusion Points {#structure-exclusion-point-created-bies}
+
+
+
+*Technical name:* ```structureExclusionPointCreatedBies```
+<PH code="userCompany:structureExclusionPointCreatedBies"/>
+
+###  Structure Exclusion Points {#structure-exclusion-point-updated-bies}
+
+
+
+*Technical name:* ```structureExclusionPointUpdatedBies```
+<PH code="userCompany:structureExclusionPointUpdatedBies"/>
+
+###  Structure Exclusions {#structure-exclusion-created-bies}
+
+
+
+*Technical name:* ```structureExclusionCreatedBies```
+<PH code="userCompany:structureExclusionCreatedBies"/>
+
+###  Structure Exclusions {#structure-exclusion-updated-bies}
+
+
+
+*Technical name:* ```structureExclusionUpdatedBies```
+<PH code="userCompany:structureExclusionUpdatedBies"/>
+
 ###  Structure Points {#structure-point-created-bies}
 
 
@@ -1023,20 +1051,6 @@ A content role to floor association allows you to define floor-specific access p
 
 *Technical name:* ```contentRoleToFloorUpdatedBies```
 <PH code="userCompany:contentRoleToFloorUpdatedBies"/>
-
-### Segment connectors {#segment-connector-created-bies}
-
-A segment connector qualifies a door segment as a building entry/exit for Pathfinding
-
-*Technical name:* ```segmentConnectorCreatedBies```
-<PH code="userCompany:segmentConnectorCreatedBies"/>
-
-### Segment connectors {#segment-connector-updated-bies}
-
-A segment connector qualifies a door segment as a building entry/exit for Pathfinding
-
-*Technical name:* ```segmentConnectorUpdatedBies```
-<PH code="userCompany:segmentConnectorUpdatedBies"/>
 
 ### Segment qualifications {#room-point-segment-created-bies}
 

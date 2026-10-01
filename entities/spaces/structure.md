@@ -49,6 +49,13 @@ Transformation de la structure pour la calibrer sur une carte
 
 ## Entités associées (liste) {#properties-has-many}
 
+###  Structure Exclusions {#structure-exclusions}
+
+
+
+*Nom technique:* ```structureExclusions```
+<PH code="structure:structureExclusions"/>
+
 ###  Structure Points {#structure-points}
 
 
