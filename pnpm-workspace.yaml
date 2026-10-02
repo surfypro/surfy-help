@@ -1,7 +1,9 @@
 allowBuilds:
   core-js: true
 overrides:
+  brace-expansion@<1.1.21: ^1.1.21
   colord@<2.9.4: ^2.9.4
+  dompurify@>=3.4.13 <=3.4.15: ^3.4.16
   fast-uri@>=3.0.0 <3.1.7: ^3.1.7
   joi@>=16.0.0 <17.13.6: ^17.13.6
   js-yaml@>=4.0.0 <4.3.2: ^4.3.2
