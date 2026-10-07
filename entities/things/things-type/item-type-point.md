@@ -52,6 +52,22 @@ Un type d'objet permet de catégoriser et définir les caractéristiques des obj
 <PH code="itemTypePoint:itemType"/>
 
 
+## Entités associées (liste) {#properties-has-many}
+
+### Arêtes visuelles de types d'objet {#item-type-visual-edge-starts}
+
+Une arête visuelle définit un segment d'affichage uniquement sur le type d'objet, distinct des points de forme
+
+*Nom technique:* ```itemTypeVisualEdgeStarts```
+<PH code="itemTypePoint:itemTypeVisualEdgeStarts"/>
+
+### Arêtes visuelles de types d'objet {#item-type-visual-edge-ends}
+
+Une arête visuelle définit un segment d'affichage uniquement sur le type d'objet, distinct des points de forme
+
+*Nom technique:* ```itemTypeVisualEdgeEnds```
+<PH code="itemTypePoint:itemTypeVisualEdgeEnds"/>
+
 
 
 

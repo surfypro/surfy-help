@@ -54,8 +54,27 @@ const mediaStyle: CSSProperties = {
     borderRadius: 6
 };
 
+const DEFAULT_CLOUD_NAME = 'app-surfy-pro';
+/** Cloudflare Workers → res.cloudinary.com/app-surfy-pro (bandwidth via CF). */
+const SURFY_IMAGES_CDN = 'https://images.surfy.pro';
+const SURFY_VIDEOS_CDN = 'https://videos.surfy.pro';
+
 function stripVideoExtension(publicId: string): string {
     return publicId.replace(/\.(mp4|webm|mov)$/i, '');
+}
+
+/**
+ * Surfy CDN hosts strip the Cloudinary resource-type segment: the Worker re-adds
+ * `image` or `video`. Direct Cloudinary hosts keep `/image|video/upload/…`.
+ */
+function cloudinaryDeliveryBase(cloudName: string, kind: CloudinaryAssetKind): { base: string; pathIncludesKind: boolean } {
+    if (cloudName === DEFAULT_CLOUD_NAME) {
+        if (kind === 'video') {
+            return { base: SURFY_VIDEOS_CDN, pathIncludesKind: false };
+        }
+        return { base: SURFY_IMAGES_CDN, pathIncludesKind: false };
+    }
+    return { base: `https://res.cloudinary.com/${cloudName}`, pathIncludesKind: true };
 }
 
 function buildCloudinaryUrl(
@@ -66,15 +85,18 @@ function buildCloudinaryUrl(
     options: { asGif: boolean; width: number; gifFps: number }
 ): string {
     const { asGif, width, gifFps } = options;
+    const effectiveKind: CloudinaryAssetKind = asGif ? 'video' : kind;
+    const { base, pathIncludesKind } = cloudinaryDeliveryBase(cloudName, effectiveKind);
+    const kindSegment = pathIncludesKind ? `/${effectiveKind}` : '';
 
     if (asGif && kind === 'video') {
         const baseId = stripVideoExtension(publicId);
         const transforms = [`f_gif`, `fps_${gifFps}`, `w_${width}`, 'e_loop'].join(',');
-        return `https://res.cloudinary.com/${cloudName}/video/upload/${transforms}/${baseId}.gif`;
+        return `${base}${kindSegment}/upload/${transforms}/${baseId}.gif`;
     }
 
     const extension = format ? `.${format}` : '';
-    return `https://res.cloudinary.com/${cloudName}/${kind}/upload/${publicId}${extension}`;
+    return `${base}${kindSegment}/upload/${publicId}${extension}`;
 }
 
 function CloudinaryAssetFrame(props: {
@@ -108,7 +130,7 @@ export function CloudinaryAsset(props: ICloudinaryAssetProps) {
         loop = true,
         muted = true,
         autoPlay = false,
-        cloudName = 'app-surfy-pro',
+        cloudName = DEFAULT_CLOUD_NAME,
         asGif = false,
         gifFps = 16
     } = props;

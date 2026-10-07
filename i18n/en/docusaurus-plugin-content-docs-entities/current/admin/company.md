@@ -36,6 +36,13 @@ Allow Surfy to track user activity to improve the user experience
 *Technical name:* ```trackUserActivity```
 <PH code="company:trackUserActivity"/>
 
+### Booking confirmation window (workstation and parking) {#workplace-booking-confirmation-range}
+
+Time slot during which users can confirm their workstation and parking reservations. Required format: HH:MM-HH:MM@IANA Timezone (e.g., 06:00-10:30@Europe/Paris). Leave this field blank to disable confirmation. IANA Timezone: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+*Technical name:* ```workplaceBookingConfirmationRange```
+<PH code="company:workplaceBookingConfirmationRange"/>
+
 ### Claim code JWT {#jwt-claim-code}
 
 Expected value in the JWT token to associate the user with this company when the authentication rule uses a custom claim
@@ -119,13 +126,6 @@ Enable proxy for images
 
 *Technical name:* ```proxyImages```
 <PH code="company:proxyImages"/>
-
-### Workstation booking confirmation window {#workplace-booking-confirmation-range}
-
-Time range during which users can confirm their workstation reservations. Required format: HH:MM-HH:MM@IANA Timezone (e.g., 06:00-10:30@Europe/Paris). Leave this field blank to disable workstation reservation confirmation. IANA Timezone: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-*Technical name:* ```workplaceBookingConfirmationRange```
-<PH code="company:workplaceBookingConfirmationRange"/>
 
     
 

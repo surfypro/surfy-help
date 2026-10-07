@@ -51,6 +51,34 @@ These are the people entered into Surfy's database
 *Technical name:* ```featureGroupUpdatedBies```
 <PH code="userCompany:featureGroupUpdatedBies"/>
 
+###  Structure Exclusion Points {#structure-exclusion-point-created-bies}
+
+
+
+*Technical name:* ```structureExclusionPointCreatedBies```
+<PH code="userCompany:structureExclusionPointCreatedBies"/>
+
+###  Structure Exclusion Points {#structure-exclusion-point-updated-bies}
+
+
+
+*Technical name:* ```structureExclusionPointUpdatedBies```
+<PH code="userCompany:structureExclusionPointUpdatedBies"/>
+
+###  Structure Exclusions {#structure-exclusion-created-bies}
+
+
+
+*Technical name:* ```structureExclusionCreatedBies```
+<PH code="userCompany:structureExclusionCreatedBies"/>
+
+###  Structure Exclusions {#structure-exclusion-updated-bies}
+
+
+
+*Technical name:* ```structureExclusionUpdatedBies```
+<PH code="userCompany:structureExclusionUpdatedBies"/>
+
 ###  Structure Points {#structure-point-created-bies}
 
 
@@ -1303,6 +1331,20 @@ A vehicle allows you to manage information related to a vehicle
 
 *Technical name:* ```vehicleUpdatedBies```
 <PH code="userCompany:vehicleUpdatedBies"/>
+
+### Visual edges of object types {#item-type-visual-edge-created-bies}
+
+A visual edge defines a display segment only on the object type, distinct from shape points
+
+*Technical name:* ```itemTypeVisualEdgeCreatedBies```
+<PH code="userCompany:itemTypeVisualEdgeCreatedBies"/>
+
+### Visual edges of object types {#item-type-visual-edge-updated-bies}
+
+A visual edge defines a display segment only on the object type, distinct from shape points
+
+*Technical name:* ```itemTypeVisualEdgeUpdatedBies```
+<PH code="userCompany:itemTypeVisualEdgeUpdatedBies"/>
 
 ### Workstation assignments {#workplace-affectation-created-bies}
 
