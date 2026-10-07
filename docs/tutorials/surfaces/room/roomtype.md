@@ -56,8 +56,8 @@ La typologie désirée n'apparait pas.
 -   nommer et renseigner les informations de la typologie, voir [Créer une typologie d'espace](/docs/tutorials/surfaces/room/roomtype.md#cr%C3%A9er-une-typologie-despace)
 -   "Valider la création"
 
-La nouvelle typologie est créée et associée à l'espace sélectionné.
-Pour visualiser le plan colorié avec la nouvelle typologie, il est nécessaire de rafraichir la page (F5).
+La nouvelle typologie est créée et associée à l'espace sélectionné qui prend la couleur de la typologie.
+
 
 Les espaces suivants pourront être qualifiés par cette nouvelle typologie qui apparaitra dans la liste de choix.
 

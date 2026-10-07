@@ -30,8 +30,7 @@ Once the space is created, you can modify or complete its information:
 -   "save" the information. 
 -   Analysis layers can also be filled in, layer saving is automatic and allows you to quickly qualify from one space to another.
 
-It is important to fill in at least one space qualification such as "typology", in order to give a color to the spaces on the plans. 
-After refresh, the space displays the color of the chosen typology. This allows you to know which spaces are created and filled in.
+It is important to fill in at least one space qualification such as "typology", in order to give a color to the spaces on the plans. This allows you to know which spaces are created and filled in.
 
 :::tip Good to Know
 The "drop" icon above the plan allows you to "activate color transparency" and see the different elements present on the plan background through the colors of Surfy's layers.

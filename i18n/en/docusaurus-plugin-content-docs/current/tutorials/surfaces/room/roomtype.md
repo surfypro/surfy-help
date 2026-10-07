@@ -59,8 +59,8 @@ The desired typology does not appear.
 -   name and fill in the typology information, see [Create a Space Typology](/en/docs/tutorials/surfaces/room/roomtype#create-a-space-typology)
 -   "Validate creation"
 
-The new typology is created and associated with the selected space.
-To visualize the plan colored with the new typology, it is necessary to refresh the page (F5).
+The new typology is created and associated with the selected space which takes the typology color.
+
 
 Subsequent spaces can be qualified by this new typology which will appear in the choice list.
 
