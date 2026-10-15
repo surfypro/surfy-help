@@ -49,13 +49,6 @@ Transformation of the structure to calibrate it on a map
 
 ## Associated entities (list) {#properties-has-many}
 
-###  Structure Exclusions {#structure-exclusions}
-
-
-
-*Technical name:* ```structureExclusions```
-<PH code="structure:structureExclusions"/>
-
 ###  Structure Points {#structure-points}
 
 
@@ -69,6 +62,13 @@ Floors represent a work platform or a level of a building.
 
 *Technical name:* ```floors```
 <PH code="structure:floors"/>
+
+### Structural exclusions {#structure-exclusions}
+
+A structural exclusion defines a hole (patio, void, column) inside the external shape of the structure.
+
+*Technical name:* ```structureExclusions```
+<PH code="structure:structureExclusions"/>
 
 
 

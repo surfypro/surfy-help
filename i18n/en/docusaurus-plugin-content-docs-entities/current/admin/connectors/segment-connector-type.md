@@ -34,6 +34,16 @@ Tongue Codes: outside-in, outside-out, outside-in-out
     
 
 
+## Basic properties {#properties-base}
+    
+### Color {#color}
+
+Optional color of the Segment Connector type — used in Connector Mode on the Building Pathfinding View
+
+*Technical name:* ```color```
+<PH code="segmentConnectorType:color"/>
+
+    
 
 
 

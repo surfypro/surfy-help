@@ -1,14 +1,14 @@
 ---
 search_rank: 0.5
 sidebar_key: room-connector-type
-sidebar_label: " Room Connector Type"
+sidebar_label: "Type de connecteur d'espaces"
 ---
 
-#  Room Connector Type
+# Type de connecteur d'espaces
 <ObjectTypeMenuBreadcrumb code="roomConnectorType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+Un type de connecteur d'espaces qualifie les connecteurs reliant des espaces entre étages
 
 <OH code="roomConnectorType"/>
 
@@ -17,7 +17,7 @@ sidebar_label: " Room Connector Type"
 
 ## Propriétés obligatoires {#properties-mandatory}
     
-### Name {#name}
+### Nom du type de connecteur d'espaces {#name}
 
 
 
@@ -27,6 +27,16 @@ sidebar_label: " Room Connector Type"
     
 
 
+## Propriétés de base {#properties-base}
+    
+### Couleur {#color}
+
+Couleur optionnelle du type de connecteur — utilisée en Mode connecteurs sur la Vue Pathfinding bâtiment
+
+*Nom technique:* ```color```
+<PH code="roomConnectorType:color"/>
+
+    
 
 
 

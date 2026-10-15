@@ -51,7 +51,7 @@ Ce document répertorie tous les raccourcis clavier disponibles dans l'applicati
 > **💡 Astuce :** Lors de la création d'espaces :
 > - Les angles sont bloqués à 45° par défaut
 > - Maintenez **SHIFT** pour débloquer les angles
-> - Maintenez **ALT** pour réutiliser un sommet existant
+> - Maintenez **ALT** pour réutiliser un sommet existant — les segments ne se surlignent plus en rouge, pour laisser les sommets visibles et cliquables
 
 ---
 
@@ -105,7 +105,7 @@ Certaines touches modifient le comportement lors d'actions spécifiques :
   - Pendant la création : débloque les angles de 45°
 
 - **ALT** :
-  - Pendant la création d'espace : permet de réutiliser un sommet existant
+  - Pendant la création d'espace : permet de réutiliser un sommet existant ; les segments ne se surlignent plus en rouge afin de laisser les sommets visibles et cliquables
 
 ### Compatibilité
 

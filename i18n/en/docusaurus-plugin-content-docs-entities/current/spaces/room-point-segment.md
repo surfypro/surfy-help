@@ -59,6 +59,15 @@ A segment type defines the different types of segments that can exist between sp
 <PH code="roomPointSegment:roomPointSegmentType"/>
 
 
+## Associated entities (list) {#properties-has-many}
+
+### Segment connectors {#segment-connectors}
+
+A segment connector qualifies a door segment as a building entry/exit for Pathfinding
+
+*Technical name:* ```segmentConnectors```
+<PH code="roomPointSegment:segmentConnectors"/>
+
 
 
 

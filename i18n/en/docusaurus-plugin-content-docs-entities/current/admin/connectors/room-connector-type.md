@@ -1,14 +1,14 @@
 ---
 search_rank: 0.5
 sidebar_key: room-connector-type
-sidebar_label: " Room Connector Type"
+sidebar_label: "Type of space connector"
 ---
 
-#  Room Connector Type
+# Type of space connector
 <ObjectTypeMenuBreadcrumb code="roomConnectorType" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+A type of space connector refers to connectors linking spaces between floors
 
 <OH code="roomConnectorType"/>
 
@@ -17,7 +17,7 @@ sidebar_label: " Room Connector Type"
 
 ## Required Properties {#properties-mandatory}
     
-### Name {#name}
+### Name of the space connector type {#name}
 
 
 
@@ -27,6 +27,16 @@ sidebar_label: " Room Connector Type"
     
 
 
+## Basic properties {#properties-base}
+    
+### Color {#color}
+
+Optional connector type color — used in Connector Mode on the Building Pathfinding View
+
+*Technical name:* ```color```
+<PH code="roomConnectorType:color"/>
+
+    
 
 
 

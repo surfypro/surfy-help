@@ -51,7 +51,7 @@ This document lists all available keyboard shortcuts in the Surfy application.
 > **💡 Tip:** When creating spaces:
 > - Angles are locked to 45° by default
 > - Hold **SHIFT** to unlock angles
-> - Hold **ALT** to reuse an existing vertex
+> - Hold **ALT** to reuse an existing vertex — segments no longer highlight in red, so vertices stay visible and clickable
 
 ---
 
@@ -105,7 +105,7 @@ Certain keys modify behavior during specific actions:
   - During creation: unlocks 45° angles
 
 - **ALT**:
-  - During space creation: allows reusing an existing vertex
+  - During space creation: allows reusing an existing vertex; segments no longer highlight in red so vertices stay visible and clickable
 
 ### Compatibility
 

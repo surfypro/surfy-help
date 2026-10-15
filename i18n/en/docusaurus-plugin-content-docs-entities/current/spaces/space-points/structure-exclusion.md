@@ -1,14 +1,14 @@
 ---
 search_rank: 0.5
 sidebar_key: structure-exclusion
-sidebar_label: " Structure Exclusion"
+sidebar_label: "Structure exclusion"
 ---
 
-#  Structure Exclusion
+# Structure exclusion
 <ObjectTypeMenuBreadcrumb code="structureExclusion" />
 <!--- THIS FILE IS GENERATED PLEASE DO NOT EDIT IT DIRECTLY --->
 
-
+A structural exclusion defines a hole (patio, void, column) inside the external shape of the structure.
 
 <OH code="structureExclusion"/>
 
@@ -19,9 +19,9 @@ sidebar_label: " Structure Exclusion"
 
 ## Basic properties {#properties-base}
     
-### Name {#name}
+### Last name {#name}
 
-
+Optional name for easy identification of the exclusion (patio, elevator shaft, etc.)
 
 *Technical name:* ```name```
 <PH code="structureExclusion:name"/>
@@ -40,9 +40,9 @@ A structure defines a geometric shape that can be used to calibrate and position
 
 ## Associated entities (list) {#properties-has-many}
 
-###  Structure Exclusion Points {#structure-exclusion-points}
+### Structure exclusion points {#structure-exclusion-points}
 
-
+A structure exclusion point defines a vertex of the hole polygon inside the outer shape
 
 *Technical name:* ```structureExclusionPoints```
 <PH code="structureExclusion:structureExclusionPoints"/>

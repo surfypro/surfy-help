@@ -61,7 +61,7 @@ var entities_paths_default = {
 		"itemType": "/entities/things/things-type",
 		"itemTypeFamily": "/entities/things/things-type",
 		"itemTypePoint": "/entities/things/things-type",
-		"itemTypeVisualEdge": "/entities/things/things-type",
+		"itemTypeVisualEdge": null,
 		"manufacturer": "/entities/things/things-type",
 		"workplaceTypeItemType": "/entities/things/things-type",
 		"workplaceUsageType": "/entities/things/things-type",
@@ -80,6 +80,8 @@ var entities_paths_default = {
 		"roomPoint": "/entities/spaces/space-points",
 		"roomPointRoom": "/entities/spaces/space-points",
 		"structurePoint": "/entities/spaces/space-points",
+		"structureExclusion": "/entities/spaces/space-points",
+		"structureExclusionPoint": "/entities/spaces/space-points",
 		"factType": "/entities/spaces/building-facts",
 		"fact": "/entities/spaces/building-facts",
 		"roomPointSegment": "/entities/spaces",
@@ -137,6 +139,8 @@ var entities_paths_default = {
 		"roomTypeGroupBuilding": "/entities/admin/admin-reporting/admin-room-type-group-reporting",
 		"roomConnector": "/entities/admin/connectors",
 		"roomConnectorType": "/entities/admin/connectors",
+		"segmentConnector": "/entities/admin/connectors",
+		"segmentConnectorType": "/entities/admin/connectors",
 		"legend": "/entities/admin",
 		"company": "/entities/admin",
 		"jupRole": "/entities/surfy/global-security",
@@ -169,14 +173,14 @@ var entities_paths_default = {
 		"feature": "/entities/help",
 		"userRefreshToken": null
 	},
-	viewPathMapping: /* @__PURE__ */ JSON.parse("{\"occupancyStatus:list\":\"/entities/surfy/global-admin\",\"occupancyStatus:create\":\"/entities/surfy/global-admin\",\"occupancyStatus:import\":\"/entities/surfy/global-admin\",\"occupancyStatus:dataquality\":\"/entities/surfy/global-admin\",\"occupancyStatus:details\":\"/entities/surfy/global-admin\",\"occupancyStatus:edit\":\"/entities/surfy/global-admin\",\"user:list\":\"/entities/surfy/global-security\",\"user:create\":\"/entities/surfy/global-security\",\"user:import\":\"/entities/surfy/global-security\",\"user:dataquality\":\"/entities/surfy/global-security\",\"user:details\":\"/entities/surfy/global-security\",\"user:edit\":\"/entities/surfy/global-security\",\"userRefreshToken:list\":null,\"userRefreshToken:create\":null,\"userRefreshToken:import\":null,\"userRefreshToken:dataquality\":null,\"userRefreshToken:details\":null,\"userRefreshToken:edit\":null,\"companyType:list\":\"/entities/surfy/global-admin\",\"companyType:create\":\"/entities/surfy/global-admin\",\"companyType:import\":\"/entities/surfy/global-admin\",\"companyType:dataquality\":\"/entities/surfy/global-admin\",\"companyType:details\":\"/entities/surfy/global-admin\",\"companyType:edit\":\"/entities/surfy/global-admin\",\"company:cards\":\"/entities/admin\",\"company:people-info\":\"/entities/admin\",\"company:usage\":\"/entities/admin\",\"company:booking-reporting\":\"/entities/admin\",\"company:dataquality-index\":\"/entities/admin\",\"company:dq-reports-overview-duplicate-company\":\"/entities/admin\",\"company:list\":\"/entities/admin\",\"company:create\":\"/entities/admin\",\"company:import\":\"/entities/admin\",\"company:dataquality\":\"/entities/admin\",\"company:dashboard\":\"/entities/admin\",\"company:soc-tenant\":\"/entities/admin\",\"company:details\":\"/entities/admin\",\"company:edit\":\"/entities/admin\",\"company:dq-fix-inventory\":\"/entities/admin/dataquality\",\"company:dq-shapes-position\":\"/entities/admin/dataquality\",\"campus:cards\":\"/entities/spaces\",\"campus:list\":\"/entities/spaces\",\"campus:create\":\"/entities/spaces\",\"campus:import\":\"/entities/spaces\",\"campus:dataquality\":\"/entities/spaces\",\"campus:details\":\"/entities/spaces\",\"campus:edit\":\"/entities/spaces\",\"roomConnectorType:list\":\"/entities/admin/connectors\",\"roomConnectorType:create\":\"/entities/admin/connectors\",\"roomConnectorType:import\":\"/entities/admin/connectors\",\"roomConnectorType:dataquality\":\"/entities/admin/connectors\",\"roomConnectorType:details\":\"/entities/admin/connectors\",\"roomConnectorType:edit\":\"/entities/admin/connectors\",\"roomConnector:list\":\"/entities/admin/connectors\",\"roomConnector:create\":\"/entities/admin/connectors\",\"roomConnector:import\":\"/entities/admin/connectors\",\"roomConnector:dataquality\":\"/entities/admin/connectors\",\"roomConnector:details\":\"/entities/admin/connectors\",\"roomConnector:edit\":\"/entities/admin/connectors\",\"userCompany:list\":\"/entities/admin/security\",\"userCompany:create\":\"/entities/admin/security\",\"userCompany:import\":\"/entities/admin/security\",\"userCompany:dataquality\":\"/entities/admin/security\",\"userCompany:details\":\"/entities/admin/security\",\"userCompany:edit\":\"/entities/admin/security\",\"personGender:list\":\"/entities/surfy\",\"personGender:create\":\"/entities/surfy\",\"personGender:import\":\"/entities/surfy\",\"personGender:dataquality\":\"/entities/surfy\",\"personGender:details\":\"/entities/surfy\",\"personGender:edit\":\"/entities/surfy\",\"personCompany:list\":\"/entities/admin/person-companies\",\"personCompany:create\":\"/entities/admin/person-companies\",\"personCompany:import\":\"/entities/admin/person-companies\",\"personCompany:dataquality\":\"/entities/admin/person-companies\",\"personCompany:details\":\"/entities/admin/person-companies\",\"personCompany:edit\":\"/entities/admin/person-companies\",\"jupUiLayout:list\":\"/entities/surfy/global-security\",\"jupUiLayout:create\":\"/entities/surfy/global-security\",\"jupUiLayout:import\":\"/entities/surfy/global-security\",\"jupUiLayout:dataquality\":\"/entities/surfy/global-security\",\"jupUiLayout:details\":\"/entities/surfy/global-security\",\"jupUiLayout:edit\":\"/entities/surfy/global-security\",\"buildingType:list\":\"/entities/admin/types\",\"buildingType:create\":\"/entities/admin/types\",\"buildingType:import\":\"/entities/admin/types\",\"buildingType:dataquality\":\"/entities/admin/types\",\"buildingType:details\":\"/entities/admin/types\",\"buildingType:edit\":\"/entities/admin/types\",\"organization:hierarchy\":\"/entities/organizations\",\"organization:list\":\"/entities/organizations\",\"organization:create\":\"/entities/organizations\",\"organization:import\":\"/entities/organizations\",\"organization:dataquality\":\"/entities/organizations\",\"organization:details\":\"/entities/organizations\",\"organization:edit\":\"/entities/organizations\",\"organization:dq-organization-hierarchy\":\"/entities/organizations/dataquality\",\"organization:dq-level1-not-used\":\"/entities/organizations/dataquality\",\"itemTypeFamily:list\":\"/entities/things/things-type\",\"itemTypeFamily:create\":\"/entities/things/things-type\",\"itemTypeFamily:import\":\"/entities/things/things-type\",\"itemTypeFamily:dataquality\":\"/entities/things/things-type\",\"itemTypeFamily:details\":\"/entities/things/things-type\",\"itemTypeFamily:edit\":\"/entities/things/things-type\",\"manufacturer:list\":\"/entities/things/things-type\",\"manufacturer:create\":\"/entities/things/things-type\",\"manufacturer:import\":\"/entities/things/things-type\",\"manufacturer:dataquality\":\"/entities/things/things-type\",\"manufacturer:details\":\"/entities/things/things-type\",\"manufacturer:edit\":\"/entities/things/things-type\",\"object3dModel:list\":\"/entities/surfy/global-admin\",\"object3dModel:create\":\"/entities/surfy/global-admin\",\"object3dModel:import\":\"/entities/surfy/global-admin\",\"object3dModel:dataquality\":\"/entities/surfy/global-admin\",\"object3dModel:details\":\"/entities/surfy/global-admin\",\"object3dModel:edit\":\"/entities/surfy/global-admin\",\"itemType:list\":\"/entities/things/things-type\",\"itemType:create\":\"/entities/things/things-type\",\"itemType:import\":\"/entities/things/things-type\",\"itemType:dataquality\":\"/entities/things/things-type\",\"itemType:shape-editor\":\"/entities/things/things-type\",\"itemType:avatar\":\"/entities/things/things-type\",\"itemType:details\":\"/entities/things/things-type\",\"itemType:edit\":\"/entities/things/things-type\",\"itemType:dq-not-used\":\"/entities/things/things-type/dataquality\",\"itemType:dq-uniq-name\":\"/entities/things/things-type/dataquality\",\"itemType:dq-family-tenant-consistency\":\"/entities/things/things-type/dataquality\",\"building:cards\":\"/entities/spaces\",\"building:pictures\":\"/entities/spaces\",\"building:3d-cards\":\"/entities/spaces\",\"building:gmap\":\"/entities/spaces\",\"building:3d-map\":\"/entities/spaces\",\"building:assets\":\"/entities/spaces\",\"building:list\":\"/entities/spaces\",\"building:create\":\"/entities/spaces\",\"building:import\":\"/entities/spaces\",\"building:dataquality\":\"/entities/spaces\",\"building:cuby\":\"/entities/spaces\",\"building:dashboard\":\"/entities/spaces\",\"building:inventory\":\"/entities/spaces\",\"building:cost-distribution-by-cost-center\":\"/entities/spaces\",\"building:clone\":\"/entities/spaces\",\"building:building-3d-gmap\":\"/entities/spaces\",\"building:building-ifc\":\"/entities/spaces\",\"building:building-dxf-importer\":\"/entities/spaces\",\"building:details\":\"/entities/spaces\",\"building:edit\":\"/entities/spaces\",\"building:dq-building-3d-eligibility\":\"/entities/spaces/dataquality\",\"mapScale:list\":\"/entities/spaces\",\"mapScale:create\":\"/entities/spaces\",\"mapScale:import\":\"/entities/spaces\",\"mapScale:dataquality\":\"/entities/spaces\",\"mapScale:details\":\"/entities/spaces\",\"mapScale:edit\":\"/entities/spaces\",\"mapScale:dq-not-used\":\"/entities/spaces/dataquality\",\"mapScale:dq-uniq-name\":\"/entities/spaces/dataquality\",\"structure:list\":\"/entities/spaces\",\"structure:create\":\"/entities/spaces\",\"structure:import\":\"/entities/spaces\",\"structure:dataquality\":\"/entities/spaces\",\"structure:editor\":\"/entities/spaces\",\"structure:gmap-calibrate\":\"/entities/spaces\",\"structure:details\":\"/entities/spaces\",\"structure:edit\":\"/entities/spaces\",\"structure:dq-structure-transform-without-anchor\":\"/entities/spaces/dataquality\",\"structurePoint:list\":\"/entities/spaces/space-points\",\"structurePoint:create\":\"/entities/spaces/space-points\",\"structurePoint:import\":\"/entities/spaces/space-points\",\"structurePoint:dataquality\":\"/entities/spaces/space-points\",\"structurePoint:details\":\"/entities/spaces/space-points\",\"structurePoint:edit\":\"/entities/spaces/space-points\",\"floor:list\":\"/entities/spaces\",\"floor:create\":\"/entities/spaces\",\"floor:import\":\"/entities/spaces\",\"floor:dataquality\":\"/entities/spaces\",\"floor:map\":\"/entities/spaces\",\"floor:cuby\":\"/entities/spaces\",\"floor:geojson\":\"/entities/spaces\",\"floor:simple-layout\":\"/entities/spaces\",\"floor:standalone-2d-map\":\"/entities/spaces\",\"floor:details\":\"/entities/spaces\",\"floor:edit\":\"/entities/spaces\",\"distributionCostType:list\":\"/entities/admin/types\",\"distributionCostType:create\":\"/entities/admin/types\",\"distributionCostType:import\":\"/entities/admin/types\",\"distributionCostType:dataquality\":\"/entities/admin/types\",\"distributionCostType:details\":\"/entities/admin/types\",\"distributionCostType:edit\":\"/entities/admin/types\",\"roomTypeGroup:list\":\"/entities/surfy/global-admin\",\"roomTypeGroup:create\":\"/entities/surfy/global-admin\",\"roomTypeGroup:import\":\"/entities/surfy/global-admin\",\"roomTypeGroup:dataquality\":\"/entities/surfy/global-admin\",\"roomTypeGroup:details\":\"/entities/surfy/global-admin\",\"roomTypeGroup:edit\":\"/entities/surfy/global-admin\",\"roomType:list\":\"/entities/admin/types/room-types\",\"roomType:create\":\"/entities/admin/types/room-types\",\"roomType:import\":\"/entities/admin/types/room-types\",\"roomType:dataquality\":\"/entities/admin/types/room-types\",\"roomType:details\":\"/entities/admin/types/room-types\",\"roomType:edit\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:list\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:create\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:import\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:dataquality\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:details\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:edit\":\"/entities/admin/types/room-types\",\"roomTypeGroupFloor:list\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:create\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:import\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:details\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:edit\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:list\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:create\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:import\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:details\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:edit\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"costCenter:list\":\"/entities/admin/types\",\"costCenter:create\":\"/entities/admin/types\",\"costCenter:import\":\"/entities/admin/types\",\"costCenter:dataquality\":\"/entities/admin/types\",\"costCenter:details\":\"/entities/admin/types\",\"costCenter:edit\":\"/entities/admin/types\",\"costCenterBuilding:list\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:create\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:import\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:details\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:edit\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:list\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:create\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:import\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:dataquality\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:details\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:edit\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"room:meeting-rooms\":\"/entities/spaces\",\"room:list\":\"/entities/spaces\",\"room:create\":\"/entities/spaces\",\"room:import\":\"/entities/spaces\",\"room:dataquality\":\"/entities/spaces\",\"room:details\":\"/entities/spaces\",\"room:edit\":\"/entities/spaces\",\"room:dq-organization-to-room\":\"/entities/spaces/dataquality\",\"room:dq-uniq-name\":\"/entities/spaces/dataquality\",\"room:dq-no-point\":\"/entities/spaces/dataquality\",\"room:dq-capacity-equals-seats-count\":\"/entities/spaces/dataquality\",\"room:dq-capacity-gt-0\":\"/entities/spaces/dataquality\",\"roomPoint:list\":\"/entities/spaces/space-points\",\"roomPoint:create\":\"/entities/spaces/space-points\",\"roomPoint:import\":\"/entities/spaces/space-points\",\"roomPoint:dataquality\":\"/entities/spaces/space-points\",\"roomPoint:details\":\"/entities/spaces/space-points\",\"roomPoint:edit\":\"/entities/spaces/space-points\",\"roomPoint:dq-uniq-position\":\"/entities/spaces/space-points/dataquality\",\"roomPoint:dq-not-used\":\"/entities/spaces/space-points/dataquality\",\"roomPointRoom:list\":\"/entities/spaces/space-points\",\"roomPointRoom:create\":\"/entities/spaces/space-points\",\"roomPointRoom:import\":\"/entities/spaces/space-points\",\"roomPointRoom:dataquality\":\"/entities/spaces/space-points\",\"roomPointRoom:details\":\"/entities/spaces/space-points\",\"roomPointRoom:edit\":\"/entities/spaces/space-points\",\"roomPointSegmentType:list\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:create\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:import\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:dataquality\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:details\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:edit\":\"/entities/surfy/global-admin\",\"roomPointSegment:list\":\"/entities/spaces\",\"roomPointSegment:create\":\"/entities/spaces\",\"roomPointSegment:import\":\"/entities/spaces\",\"roomPointSegment:dataquality\":\"/entities/spaces\",\"roomPointSegment:details\":\"/entities/spaces\",\"roomPointSegment:edit\":\"/entities/spaces\",\"roomPointSegment:dq-not-uniq\":\"/entities/spaces/dataquality\",\"roomPointSegment:dq-point-not-on-same-floor\":\"/entities/spaces/dataquality\",\"itemTypePoint:list\":\"/entities/things/things-type\",\"itemTypePoint:create\":\"/entities/things/things-type\",\"itemTypePoint:import\":\"/entities/things/things-type\",\"itemTypePoint:dataquality\":\"/entities/things/things-type\",\"itemTypePoint:details\":\"/entities/things/things-type\",\"itemTypePoint:edit\":\"/entities/things/things-type\",\"itemTypeVisualEdge:list\":null,\"itemTypeVisualEdge:create\":null,\"itemTypeVisualEdge:import\":null,\"itemTypeVisualEdge:dataquality\":null,\"itemTypeVisualEdge:details\":null,\"itemTypeVisualEdge:edit\":null,\"dimensionType:list\":\"/entities/admin/dimensions\",\"dimensionType:create\":\"/entities/admin/dimensions\",\"dimensionType:import\":\"/entities/admin/dimensions\",\"dimensionType:dataquality\":\"/entities/admin/dimensions\",\"dimensionType:details\":\"/entities/admin/dimensions\",\"dimensionType:edit\":\"/entities/admin/dimensions\",\"dimension:list\":\"/entities/admin/dimensions\",\"dimension:create\":\"/entities/admin/dimensions\",\"dimension:import\":\"/entities/admin/dimensions\",\"dimension:dataquality\":\"/entities/admin/dimensions\",\"dimension:details\":\"/entities/admin/dimensions\",\"dimension:edit\":\"/entities/admin/dimensions\",\"dimension:dq-missing-color\":\"/entities/admin/dimensions/dataquality\",\"dimensionRoom:list\":\"/entities/admin/dimensions\",\"dimensionRoom:create\":\"/entities/admin/dimensions\",\"dimensionRoom:import\":\"/entities/admin/dimensions\",\"dimensionRoom:dataquality\":\"/entities/admin/dimensions\",\"dimensionRoom:details\":\"/entities/admin/dimensions\",\"dimensionRoom:edit\":\"/entities/admin/dimensions\",\"dimensionRoom:dq-wrong-dimension-type\":\"/entities/admin/dimensions/dataquality\",\"dimensionFloor:list\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:create\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:import\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:dataquality\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:details\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:edit\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:list\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:create\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:import\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:details\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:edit\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"factType:list\":\"/entities/spaces/building-facts\",\"factType:create\":\"/entities/spaces/building-facts\",\"factType:import\":\"/entities/spaces/building-facts\",\"factType:dataquality\":\"/entities/spaces/building-facts\",\"factType:details\":\"/entities/spaces/building-facts\",\"factType:edit\":\"/entities/spaces/building-facts\",\"fact:list\":\"/entities/spaces/building-facts\",\"fact:create\":\"/entities/spaces/building-facts\",\"fact:import\":\"/entities/spaces/building-facts\",\"fact:dataquality\":\"/entities/spaces/building-facts\",\"fact:details\":\"/entities/spaces/building-facts\",\"fact:edit\":\"/entities/spaces/building-facts\",\"personState:list\":\"/entities/human/person-type\",\"personState:create\":\"/entities/human/person-type\",\"personState:import\":\"/entities/human/person-type\",\"personState:dataquality\":\"/entities/human/person-type\",\"personState:details\":\"/entities/human/person-type\",\"personState:edit\":\"/entities/human/person-type\",\"personSecurityProfile:list\":\"/entities/human/person-type\",\"personSecurityProfile:create\":\"/entities/human/person-type\",\"personSecurityProfile:import\":\"/entities/human/person-type\",\"personSecurityProfile:dataquality\":\"/entities/human/person-type\",\"personSecurityProfile:details\":\"/entities/human/person-type\",\"personSecurityProfile:edit\":\"/entities/human/person-type\",\"personType:list\":\"/entities/surfy/global-admin\",\"personType:create\":\"/entities/surfy/global-admin\",\"personType:import\":\"/entities/surfy/global-admin\",\"personType:dataquality\":\"/entities/surfy/global-admin\",\"personType:details\":\"/entities/surfy/global-admin\",\"personType:edit\":\"/entities/surfy/global-admin\",\"person:list\":\"/entities/human\",\"person:create\":\"/entities/human\",\"person:import\":\"/entities/human\",\"person:dataquality\":\"/entities/human\",\"person:home\":\"/entities/human\",\"person:person-bookings\":\"/entities/human\",\"person:details\":\"/entities/human\",\"person:edit\":\"/entities/human\",\"person:dq-only-associated-to-building\":\"/entities/human/dataquality\",\"person:dq-near-end-date\":\"/entities/human/dataquality\",\"person:dq-no-affectations\":\"/entities/human/dataquality\",\"person:dq-person-duplicate\":\"/entities/human/dataquality\",\"person:dq-not-affectable-end-date-expired\":\"/entities/human/dataquality\",\"personToPersonType:list\":\"/entities/human/person-relations\",\"personToPersonType:create\":\"/entities/human/person-relations\",\"personToPersonType:import\":\"/entities/human/person-relations\",\"personToPersonType:dataquality\":\"/entities/human/person-relations\",\"personToPersonType:details\":\"/entities/human/person-relations\",\"personToPersonType:edit\":\"/entities/human/person-relations\",\"personToPerson:list\":\"/entities/human/person-relations\",\"personToPerson:create\":\"/entities/human/person-relations\",\"personToPerson:import\":\"/entities/human/person-relations\",\"personToPerson:dataquality\":\"/entities/human/person-relations\",\"personToPerson:details\":\"/entities/human/person-relations\",\"personToPerson:edit\":\"/entities/human/person-relations\",\"vehicleType:list\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:create\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:import\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:dataquality\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:details\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:edit\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:list\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:create\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:import\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:dataquality\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:details\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:edit\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicle:list\":\"/entities/human/person-vehicles\",\"vehicle:create\":\"/entities/human/person-vehicles\",\"vehicle:import\":\"/entities/human/person-vehicles\",\"vehicle:dataquality\":\"/entities/human/person-vehicles\",\"vehicle:details\":\"/entities/human/person-vehicles\",\"vehicle:edit\":\"/entities/human/person-vehicles\",\"personToVehicle:list\":\"/entities/human/person-vehicles\",\"personToVehicle:create\":\"/entities/human/person-vehicles\",\"personToVehicle:import\":\"/entities/human/person-vehicles\",\"personToVehicle:dataquality\":\"/entities/human/person-vehicles\",\"personToVehicle:details\":\"/entities/human/person-vehicles\",\"personToVehicle:edit\":\"/entities/human/person-vehicles\",\"roomAffectation:room-mouvement-matrix-import\":\"/entities/affectations\",\"roomAffectation:list\":\"/entities/affectations\",\"roomAffectation:create\":\"/entities/affectations\",\"roomAffectation:import\":\"/entities/affectations\",\"roomAffectation:dataquality\":\"/entities/affectations\",\"roomAffectation:details\":\"/entities/affectations\",\"roomAffectation:edit\":\"/entities/affectations\",\"workplaceType:list\":\"/entities/things/things-type\",\"workplaceType:create\":\"/entities/things/things-type\",\"workplaceType:import\":\"/entities/things/things-type\",\"workplaceType:dataquality\":\"/entities/things/things-type\",\"workplaceType:editor\":\"/entities/things/things-type\",\"workplaceType:avatar\":\"/entities/things/things-type\",\"workplaceType:details\":\"/entities/things/things-type\",\"workplaceType:edit\":\"/entities/things/things-type\",\"workplaceType:dq-not-used\":\"/entities/things/things-type/dataquality\",\"workplaceType:dq-workplace-type-item-type-position-z\":\"/entities/things/things-type/dataquality\",\"workplaceUsageType:list\":\"/entities/things/things-type\",\"workplaceUsageType:create\":\"/entities/things/things-type\",\"workplaceUsageType:import\":\"/entities/things/things-type\",\"workplaceUsageType:dataquality\":\"/entities/things/things-type\",\"workplaceUsageType:details\":\"/entities/things/things-type\",\"workplaceUsageType:edit\":\"/entities/things/things-type\",\"workplaceTypeItemType:list\":\"/entities/things/things-type\",\"workplaceTypeItemType:create\":\"/entities/things/things-type\",\"workplaceTypeItemType:import\":\"/entities/things/things-type\",\"workplaceTypeItemType:dataquality\":\"/entities/things/things-type\",\"workplaceTypeItemType:details\":\"/entities/things/things-type\",\"workplaceTypeItemType:edit\":\"/entities/things/things-type\",\"workplace:list\":\"/entities/things\",\"workplace:create\":\"/entities/things\",\"workplace:import\":\"/entities/things\",\"workplace:dataquality\":\"/entities/things\",\"workplace:assign-current-user\":\"/entities/things\",\"workplace:details\":\"/entities/things\",\"workplace:edit\":\"/entities/things\",\"workplace:dq-workplace-transit-with-affectations\":\"/entities/things/dataquality\",\"item:list\":\"/entities/things\",\"item:create\":\"/entities/things\",\"item:import\":\"/entities/things\",\"item:dataquality\":\"/entities/things\",\"item:details\":\"/entities/things\",\"item:edit\":\"/entities/things\",\"item:dq-item-not-in-workplace-room\":\"/entities/things/dataquality\",\"workplaceAffectation:workplace-mouvement-matrix-import\":\"/entities/affectations\",\"workplaceAffectation:list\":\"/entities/affectations\",\"workplaceAffectation:create\":\"/entities/affectations\",\"workplaceAffectation:import\":\"/entities/affectations\",\"workplaceAffectation:dataquality\":\"/entities/affectations\",\"workplaceAffectation:details\":\"/entities/affectations\",\"workplaceAffectation:edit\":\"/entities/affectations\",\"workplaceAffectation:dq-workplace-affectation-latest\":\"/entities/affectations/dataquality\",\"organizationFloor:list\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:create\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:import\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:dataquality\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:details\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:edit\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:list\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:create\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:import\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:details\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:edit\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"roomTypeFloor:list\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:create\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:import\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:details\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:edit\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:list\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:create\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:import\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:details\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:edit\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"itemToPerson:list\":\"/entities/affectations\",\"itemToPerson:create\":\"/entities/affectations\",\"itemToPerson:import\":\"/entities/affectations\",\"itemToPerson:dataquality\":\"/entities/affectations\",\"itemToPerson:details\":\"/entities/affectations\",\"itemToPerson:edit\":\"/entities/affectations\",\"personToBuilding:list\":\"/entities/affectations\",\"personToBuilding:create\":\"/entities/affectations\",\"personToBuilding:import\":\"/entities/affectations\",\"personToBuilding:dataquality\":\"/entities/affectations\",\"personToBuilding:details\":\"/entities/affectations\",\"personToBuilding:edit\":\"/entities/affectations\",\"dimensionToPerson:list\":\"/entities/affectations\",\"dimensionToPerson:create\":\"/entities/affectations\",\"dimensionToPerson:import\":\"/entities/affectations\",\"dimensionToPerson:dataquality\":\"/entities/affectations\",\"dimensionToPerson:details\":\"/entities/affectations\",\"dimensionToPerson:edit\":\"/entities/affectations\",\"dimensionToPerson:dq-dimension-to-person-latest\":\"/entities/affectations/dataquality\",\"dimensionTypeToBuilding:list\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:create\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:import\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:dataquality\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:details\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:edit\":\"/entities/admin/dimensions\",\"workingLocation:list\":\"/entities/surfy/global-admin\",\"workingLocation:create\":\"/entities/surfy/global-admin\",\"workingLocation:import\":\"/entities/surfy/global-admin\",\"workingLocation:dataquality\":\"/entities/surfy/global-admin\",\"workingLocation:details\":\"/entities/surfy/global-admin\",\"workingLocation:edit\":\"/entities/surfy/global-admin\",\"personWorkingLocation:my-planning\":\"/entities/planning\",\"personWorkingLocation:obo-planning\":\"/entities/planning\",\"personWorkingLocation:guest-planning\":\"/entities/planning\",\"personWorkingLocation:booking-maps\":\"/entities/planning\",\"personWorkingLocation:booking-security-day\":\"/entities/planning\",\"personWorkingLocation:pwl-dimension\":\"/entities/planning\",\"personWorkingLocation:list\":\"/entities/planning\",\"personWorkingLocation:create\":\"/entities/planning\",\"personWorkingLocation:import\":\"/entities/planning\",\"personWorkingLocation:dataquality\":\"/entities/planning\",\"personWorkingLocation:details\":\"/entities/planning\",\"personWorkingLocation:edit\":\"/entities/planning\",\"personToWorkplaceBooking:dashboard-index\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:list\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:create\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:import\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:dataquality\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:details\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:edit\":\"/entities/planning/bookings\",\"personToRoomBooking:list\":\"/entities/planning/bookings\",\"personToRoomBooking:create\":\"/entities/planning/bookings\",\"personToRoomBooking:import\":\"/entities/planning/bookings\",\"personToRoomBooking:dataquality\":\"/entities/planning/bookings\",\"personToRoomBooking:details\":\"/entities/planning/bookings\",\"personToRoomBooking:edit\":\"/entities/planning/bookings\",\"personToDimensionBooking:list\":\"/entities/planning/bookings\",\"personToDimensionBooking:create\":\"/entities/planning/bookings\",\"personToDimensionBooking:import\":\"/entities/planning/bookings\",\"personToDimensionBooking:dataquality\":\"/entities/planning/bookings\",\"personToDimensionBooking:details\":\"/entities/planning/bookings\",\"personToDimensionBooking:edit\":\"/entities/planning/bookings\",\"personCompanyMission:list\":\"/entities/admin/person-companies\",\"personCompanyMission:create\":\"/entities/admin/person-companies\",\"personCompanyMission:import\":\"/entities/admin/person-companies\",\"personCompanyMission:dataquality\":\"/entities/admin/person-companies\",\"personCompanyMission:details\":\"/entities/admin/person-companies\",\"personCompanyMission:edit\":\"/entities/admin/person-companies\",\"personCompanyToItemType:list\":\"/entities/admin/person-companies\",\"personCompanyToItemType:create\":\"/entities/admin/person-companies\",\"personCompanyToItemType:import\":\"/entities/admin/person-companies\",\"personCompanyToItemType:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToItemType:details\":\"/entities/admin/person-companies\",\"personCompanyToItemType:edit\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:list\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:create\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:import\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:details\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:edit\":\"/entities/admin/person-companies\",\"personCompanyToItem:list\":\"/entities/admin/person-companies\",\"personCompanyToItem:create\":\"/entities/admin/person-companies\",\"personCompanyToItem:import\":\"/entities/admin/person-companies\",\"personCompanyToItem:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToItem:details\":\"/entities/admin/person-companies\",\"personCompanyToItem:edit\":\"/entities/admin/person-companies\",\"legend:list\":\"/entities/admin\",\"legend:create\":\"/entities/admin\",\"legend:import\":\"/entities/admin\",\"legend:dataquality\":\"/entities/admin\",\"legend:details\":\"/entities/admin\",\"legend:edit\":\"/entities/admin\",\"openerPostMessageHost:list\":\"/entities/admin/api\",\"openerPostMessageHost:create\":\"/entities/admin/api\",\"openerPostMessageHost:import\":\"/entities/admin/api\",\"openerPostMessageHost:dataquality\":\"/entities/admin/api\",\"openerPostMessageHost:details\":\"/entities/admin/api\",\"openerPostMessageHost:edit\":\"/entities/admin/api\",\"companyWorkingLocation:list\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:create\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:import\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:dataquality\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:details\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:edit\":\"/entities/planning/planning-admin\",\"bookingVehicleConfiguration:list\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:create\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:import\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:dataquality\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:details\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:edit\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:list\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:create\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:import\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:dataquality\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:details\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:edit\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"jupObjectType:list\":\"/entities/surfy/global-security\",\"jupObjectType:create\":\"/entities/surfy/global-security\",\"jupObjectType:import\":\"/entities/surfy/global-security\",\"jupObjectType:dataquality\":\"/entities/surfy/global-security\",\"jupObjectType:details\":\"/entities/surfy/global-security\",\"jupObjectType:edit\":\"/entities/surfy/global-security\",\"jupUiView:list\":\"/entities/surfy/global-security\",\"jupUiView:create\":\"/entities/surfy/global-security\",\"jupUiView:import\":\"/entities/surfy/global-security\",\"jupUiView:dataquality\":\"/entities/surfy/global-security\",\"jupUiView:details\":\"/entities/surfy/global-security\",\"jupUiView:edit\":\"/entities/surfy/global-security\",\"jupRole:help\":\"/entities/surfy/global-security\",\"jupRole:azure-sync\":\"/entities/surfy/global-security\",\"jupRole:list\":\"/entities/surfy/global-security\",\"jupRole:create\":\"/entities/surfy/global-security\",\"jupRole:import\":\"/entities/surfy/global-security\",\"jupRole:dataquality\":\"/entities/surfy/global-security\",\"jupRole:matrix\":\"/entities/surfy/global-security\",\"jupRole:details\":\"/entities/surfy/global-security\",\"jupRole:edit\":\"/entities/surfy/global-security\",\"jupUiOption:list\":\"/entities/surfy/global-security\",\"jupUiOption:create\":\"/entities/surfy/global-security\",\"jupUiOption:import\":\"/entities/surfy/global-security\",\"jupUiOption:dataquality\":\"/entities/surfy/global-security\",\"jupUiOption:details\":\"/entities/surfy/global-security\",\"jupUiOption:edit\":\"/entities/surfy/global-security\",\"jupUiOperation:list\":\"/entities/surfy/global-security\",\"jupUiOperation:create\":\"/entities/surfy/global-security\",\"jupUiOperation:import\":\"/entities/surfy/global-security\",\"jupUiOperation:dataquality\":\"/entities/surfy/global-security\",\"jupUiOperation:details\":\"/entities/surfy/global-security\",\"jupUiOperation:edit\":\"/entities/surfy/global-security\",\"contentRole:list\":\"/entities/admin/security\",\"contentRole:create\":\"/entities/admin/security\",\"contentRole:import\":\"/entities/admin/security\",\"contentRole:dataquality\":\"/entities/admin/security\",\"contentRole:details\":\"/entities/admin/security\",\"contentRole:edit\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:list\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:create\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:import\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:dataquality\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:details\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:edit\":\"/entities/admin/security\",\"jupRoleToJupUiView:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:list\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:create\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:import\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:details\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:edit\":\"/entities/surfy/global-security\",\"contentRoleToBuilding:list\":\"/entities/admin/security\",\"contentRoleToBuilding:create\":\"/entities/admin/security\",\"contentRoleToBuilding:import\":\"/entities/admin/security\",\"contentRoleToBuilding:dataquality\":\"/entities/admin/security\",\"contentRoleToBuilding:details\":\"/entities/admin/security\",\"contentRoleToBuilding:edit\":\"/entities/admin/security\",\"contentRoleToUserCompany:list\":\"/entities/admin/security\",\"contentRoleToUserCompany:create\":\"/entities/admin/security\",\"contentRoleToUserCompany:import\":\"/entities/admin/security\",\"contentRoleToUserCompany:dataquality\":\"/entities/admin/security\",\"contentRoleToUserCompany:details\":\"/entities/admin/security\",\"contentRoleToUserCompany:edit\":\"/entities/admin/security\",\"contentRoleToFloor:list\":\"/entities/admin/security\",\"contentRoleToFloor:create\":\"/entities/admin/security\",\"contentRoleToFloor:import\":\"/entities/admin/security\",\"contentRoleToFloor:dataquality\":\"/entities/admin/security\",\"contentRoleToFloor:details\":\"/entities/admin/security\",\"contentRoleToFloor:edit\":\"/entities/admin/security\",\"partnerApiCredential:list\":\"/entities/admin/api\",\"partnerApiCredential:create\":\"/entities/admin/api\",\"partnerApiCredential:import\":\"/entities/admin/api\",\"partnerApiCredential:dataquality\":\"/entities/admin/api\",\"partnerApiCredential:details\":\"/entities/admin/api\",\"partnerApiCredential:edit\":\"/entities/admin/api\",\"apiUser:list\":\"/entities/admin/api\",\"apiUser:create\":\"/entities/admin/api\",\"apiUser:import\":\"/entities/admin/api\",\"apiUser:dataquality\":\"/entities/admin/api\",\"apiUser:edit-fetch-loop-repro\":\"/entities/admin/api\",\"apiUser:details\":\"/entities/admin/api\",\"apiUser:edit\":\"/entities/admin/api\",\"apiUserToJupRole:list\":\"/entities/admin/api\",\"apiUserToJupRole:create\":\"/entities/admin/api\",\"apiUserToJupRole:import\":\"/entities/admin/api\",\"apiUserToJupRole:dataquality\":\"/entities/admin/api\",\"apiUserToJupRole:details\":\"/entities/admin/api\",\"apiUserToJupRole:edit\":\"/entities/admin/api\",\"apiUserToContentRole:list\":\"/entities/admin/api\",\"apiUserToContentRole:create\":\"/entities/admin/api\",\"apiUserToContentRole:import\":\"/entities/admin/api\",\"apiUserToContentRole:dataquality\":\"/entities/admin/api\",\"apiUserToContentRole:details\":\"/entities/admin/api\",\"apiUserToContentRole:edit\":\"/entities/admin/api\",\"jupUiTenantOperation:list\":\"/entities/admin/security\",\"jupUiTenantOperation:create\":\"/entities/admin/security\",\"jupUiTenantOperation:import\":\"/entities/admin/security\",\"jupUiTenantOperation:dataquality\":\"/entities/admin/security\",\"jupUiTenantOperation:details\":\"/entities/admin/security\",\"jupUiTenantOperation:edit\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:list\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:create\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:import\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:dataquality\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:details\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:edit\":\"/entities/admin/security\",\"authentificationConnection:list\":\"/entities/surfy/global-security\",\"authentificationConnection:create\":\"/entities/surfy/global-security\",\"authentificationConnection:import\":\"/entities/surfy/global-security\",\"authentificationConnection:dataquality\":\"/entities/surfy/global-security\",\"authentificationConnection:details\":\"/entities/surfy/global-security\",\"authentificationConnection:edit\":\"/entities/surfy/global-security\",\"userRegistrationTenantRule:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:details\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:edit\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:details\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:edit\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:details\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:edit\":\"/entities/admin/authentification\",\"partnerExportMappingConfiguration:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:edit\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:edit\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:edit\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:edit\":\"/entities/admin/partner-export-mapping\",\"jupRoleToJupUiLayout:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:edit\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:list\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:create\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:import\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:dataquality\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:details\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:edit\":\"/entities/surfy/global-security\",\"itemFact:list\":\"/entities/things/items-fact\",\"itemFact:create\":\"/entities/things/items-fact\",\"itemFact:import\":\"/entities/things/items-fact\",\"itemFact:dataquality\":\"/entities/things/items-fact\",\"itemFact:details\":\"/entities/things/items-fact\",\"itemFact:edit\":\"/entities/things/items-fact\",\"featureFamily:list\":\"/entities/help\",\"featureFamily:create\":\"/entities/help\",\"featureFamily:import\":\"/entities/help\",\"featureFamily:dataquality\":\"/entities/help\",\"featureFamily:details\":\"/entities/help\",\"featureFamily:edit\":\"/entities/help\",\"featureGroup:list\":\"/entities/help\",\"featureGroup:create\":\"/entities/help\",\"featureGroup:import\":\"/entities/help\",\"featureGroup:dataquality\":\"/entities/help\",\"featureGroup:details\":\"/entities/help\",\"featureGroup:edit\":\"/entities/help\",\"feature:list\":\"/entities/help\",\"feature:create\":\"/entities/help\",\"feature:import\":\"/entities/help\",\"feature:dataquality\":\"/entities/help\",\"feature:details\":\"/entities/help\",\"feature:edit\":\"/entities/help\"}")
+	viewPathMapping: /* @__PURE__ */ JSON.parse("{\"occupancyStatus:list\":\"/entities/surfy/global-admin\",\"occupancyStatus:create\":\"/entities/surfy/global-admin\",\"occupancyStatus:import\":\"/entities/surfy/global-admin\",\"occupancyStatus:dataquality\":\"/entities/surfy/global-admin\",\"occupancyStatus:details\":\"/entities/surfy/global-admin\",\"occupancyStatus:edit\":\"/entities/surfy/global-admin\",\"user:list\":\"/entities/surfy/global-security\",\"user:create\":\"/entities/surfy/global-security\",\"user:import\":\"/entities/surfy/global-security\",\"user:dataquality\":\"/entities/surfy/global-security\",\"user:details\":\"/entities/surfy/global-security\",\"user:edit\":\"/entities/surfy/global-security\",\"userRefreshToken:list\":null,\"userRefreshToken:create\":null,\"userRefreshToken:import\":null,\"userRefreshToken:dataquality\":null,\"userRefreshToken:details\":null,\"userRefreshToken:edit\":null,\"companyType:list\":\"/entities/surfy/global-admin\",\"companyType:create\":\"/entities/surfy/global-admin\",\"companyType:import\":\"/entities/surfy/global-admin\",\"companyType:dataquality\":\"/entities/surfy/global-admin\",\"companyType:details\":\"/entities/surfy/global-admin\",\"companyType:edit\":\"/entities/surfy/global-admin\",\"company:cards\":\"/entities/admin\",\"company:people-info\":\"/entities/admin\",\"company:usage\":\"/entities/admin\",\"company:booking-reporting\":\"/entities/admin\",\"company:dataquality-index\":\"/entities/admin\",\"company:dq-reports-overview-duplicate-company\":\"/entities/admin\",\"company:list\":\"/entities/admin\",\"company:create\":\"/entities/admin\",\"company:import\":\"/entities/admin\",\"company:dataquality\":\"/entities/admin\",\"company:dashboard\":\"/entities/admin\",\"company:soc-tenant\":\"/entities/admin\",\"company:details\":\"/entities/admin\",\"company:edit\":\"/entities/admin\",\"company:dq-fix-inventory\":\"/entities/admin/dataquality\",\"company:dq-shapes-position\":\"/entities/admin/dataquality\",\"company:dq-image-list\":\"/entities/admin/dataquality\",\"campus:cards\":\"/entities/spaces\",\"campus:list\":\"/entities/spaces\",\"campus:create\":\"/entities/spaces\",\"campus:import\":\"/entities/spaces\",\"campus:dataquality\":\"/entities/spaces\",\"campus:details\":\"/entities/spaces\",\"campus:edit\":\"/entities/spaces\",\"roomConnectorType:list\":\"/entities/admin/connectors\",\"roomConnectorType:create\":\"/entities/admin/connectors\",\"roomConnectorType:import\":\"/entities/admin/connectors\",\"roomConnectorType:dataquality\":\"/entities/admin/connectors\",\"roomConnectorType:details\":\"/entities/admin/connectors\",\"roomConnectorType:edit\":\"/entities/admin/connectors\",\"roomConnector:list\":\"/entities/admin/connectors\",\"roomConnector:create\":\"/entities/admin/connectors\",\"roomConnector:import\":\"/entities/admin/connectors\",\"roomConnector:dataquality\":\"/entities/admin/connectors\",\"roomConnector:details\":\"/entities/admin/connectors\",\"roomConnector:edit\":\"/entities/admin/connectors\",\"segmentConnectorType:list\":\"/entities/admin/connectors\",\"segmentConnectorType:create\":\"/entities/admin/connectors\",\"segmentConnectorType:import\":\"/entities/admin/connectors\",\"segmentConnectorType:dataquality\":\"/entities/admin/connectors\",\"segmentConnectorType:details\":\"/entities/admin/connectors\",\"segmentConnectorType:edit\":\"/entities/admin/connectors\",\"segmentConnector:list\":\"/entities/admin/connectors\",\"segmentConnector:create\":\"/entities/admin/connectors\",\"segmentConnector:import\":\"/entities/admin/connectors\",\"segmentConnector:dataquality\":\"/entities/admin/connectors\",\"segmentConnector:details\":\"/entities/admin/connectors\",\"segmentConnector:edit\":\"/entities/admin/connectors\",\"userCompany:list\":\"/entities/admin/security\",\"userCompany:create\":\"/entities/admin/security\",\"userCompany:import\":\"/entities/admin/security\",\"userCompany:dataquality\":\"/entities/admin/security\",\"userCompany:details\":\"/entities/admin/security\",\"userCompany:edit\":\"/entities/admin/security\",\"personGender:list\":\"/entities/surfy\",\"personGender:create\":\"/entities/surfy\",\"personGender:import\":\"/entities/surfy\",\"personGender:dataquality\":\"/entities/surfy\",\"personGender:details\":\"/entities/surfy\",\"personGender:edit\":\"/entities/surfy\",\"personCompany:list\":\"/entities/admin/person-companies\",\"personCompany:create\":\"/entities/admin/person-companies\",\"personCompany:import\":\"/entities/admin/person-companies\",\"personCompany:dataquality\":\"/entities/admin/person-companies\",\"personCompany:details\":\"/entities/admin/person-companies\",\"personCompany:edit\":\"/entities/admin/person-companies\",\"jupUiLayout:list\":\"/entities/surfy/global-security\",\"jupUiLayout:create\":\"/entities/surfy/global-security\",\"jupUiLayout:import\":\"/entities/surfy/global-security\",\"jupUiLayout:dataquality\":\"/entities/surfy/global-security\",\"jupUiLayout:details\":\"/entities/surfy/global-security\",\"jupUiLayout:edit\":\"/entities/surfy/global-security\",\"buildingType:list\":\"/entities/admin/types\",\"buildingType:create\":\"/entities/admin/types\",\"buildingType:import\":\"/entities/admin/types\",\"buildingType:dataquality\":\"/entities/admin/types\",\"buildingType:details\":\"/entities/admin/types\",\"buildingType:edit\":\"/entities/admin/types\",\"organization:hierarchy\":\"/entities/organizations\",\"organization:list\":\"/entities/organizations\",\"organization:create\":\"/entities/organizations\",\"organization:import\":\"/entities/organizations\",\"organization:dataquality\":\"/entities/organizations\",\"organization:details\":\"/entities/organizations\",\"organization:edit\":\"/entities/organizations\",\"organization:dq-organization-hierarchy\":\"/entities/organizations/dataquality\",\"organization:dq-level1-not-used\":\"/entities/organizations/dataquality\",\"itemTypeFamily:list\":\"/entities/things/things-type\",\"itemTypeFamily:create\":\"/entities/things/things-type\",\"itemTypeFamily:import\":\"/entities/things/things-type\",\"itemTypeFamily:dataquality\":\"/entities/things/things-type\",\"itemTypeFamily:details\":\"/entities/things/things-type\",\"itemTypeFamily:edit\":\"/entities/things/things-type\",\"manufacturer:list\":\"/entities/things/things-type\",\"manufacturer:create\":\"/entities/things/things-type\",\"manufacturer:import\":\"/entities/things/things-type\",\"manufacturer:dataquality\":\"/entities/things/things-type\",\"manufacturer:details\":\"/entities/things/things-type\",\"manufacturer:edit\":\"/entities/things/things-type\",\"object3dModel:list\":\"/entities/surfy/global-admin\",\"object3dModel:create\":\"/entities/surfy/global-admin\",\"object3dModel:import\":\"/entities/surfy/global-admin\",\"object3dModel:dataquality\":\"/entities/surfy/global-admin\",\"object3dModel:details\":\"/entities/surfy/global-admin\",\"object3dModel:edit\":\"/entities/surfy/global-admin\",\"itemType:list\":\"/entities/things/things-type\",\"itemType:create\":\"/entities/things/things-type\",\"itemType:import\":\"/entities/things/things-type\",\"itemType:dataquality\":\"/entities/things/things-type\",\"itemType:shape-editor\":\"/entities/things/things-type\",\"itemType:avatar\":\"/entities/things/things-type\",\"itemType:details\":\"/entities/things/things-type\",\"itemType:edit\":\"/entities/things/things-type\",\"itemType:dq-not-used\":\"/entities/things/things-type/dataquality\",\"itemType:dq-uniq-name\":\"/entities/things/things-type/dataquality\",\"itemType:dq-family-tenant-consistency\":\"/entities/things/things-type/dataquality\",\"building:cards\":\"/entities/spaces\",\"building:pictures\":\"/entities/spaces\",\"building:3d-cards\":\"/entities/spaces\",\"building:gmap\":\"/entities/spaces\",\"building:3d-map\":\"/entities/spaces\",\"building:3d-maplibre\":\"/entities/spaces\",\"building:assets\":\"/entities/spaces\",\"building:list\":\"/entities/spaces\",\"building:create\":\"/entities/spaces\",\"building:import\":\"/entities/spaces\",\"building:dataquality\":\"/entities/spaces\",\"building:cuby\":\"/entities/spaces\",\"building:dashboard\":\"/entities/spaces\",\"building:inventory\":\"/entities/spaces\",\"building:cost-distribution-by-cost-center\":\"/entities/spaces\",\"building:clone\":\"/entities/spaces\",\"building:building-3d-gmap\":\"/entities/spaces\",\"building:building-pathfinding\":\"/entities/spaces\",\"building:building-ifc\":\"/entities/spaces\",\"building:building-dxf-importer\":\"/entities/spaces\",\"building:details\":\"/entities/spaces\",\"building:edit\":\"/entities/spaces\",\"building:dq-building-3d-eligibility\":\"/entities/spaces/dataquality\",\"mapScale:list\":\"/entities/spaces\",\"mapScale:create\":\"/entities/spaces\",\"mapScale:import\":\"/entities/spaces\",\"mapScale:dataquality\":\"/entities/spaces\",\"mapScale:details\":\"/entities/spaces\",\"mapScale:edit\":\"/entities/spaces\",\"mapScale:dq-not-used\":\"/entities/spaces/dataquality\",\"mapScale:dq-uniq-name\":\"/entities/spaces/dataquality\",\"structure:list\":\"/entities/spaces\",\"structure:create\":\"/entities/spaces\",\"structure:import\":\"/entities/spaces\",\"structure:dataquality\":\"/entities/spaces\",\"structure:editor\":\"/entities/spaces\",\"structure:gmap-calibrate\":\"/entities/spaces\",\"structure:details\":\"/entities/spaces\",\"structure:edit\":\"/entities/spaces\",\"structure:dq-structure-transform-without-anchor\":\"/entities/spaces/dataquality\",\"structurePoint:list\":\"/entities/spaces/space-points\",\"structurePoint:create\":\"/entities/spaces/space-points\",\"structurePoint:import\":\"/entities/spaces/space-points\",\"structurePoint:dataquality\":\"/entities/spaces/space-points\",\"structurePoint:details\":\"/entities/spaces/space-points\",\"structurePoint:edit\":\"/entities/spaces/space-points\",\"structureExclusion:list\":\"/entities/spaces/space-points\",\"structureExclusion:create\":\"/entities/spaces/space-points\",\"structureExclusion:import\":\"/entities/spaces/space-points\",\"structureExclusion:dataquality\":\"/entities/spaces/space-points\",\"structureExclusion:details\":\"/entities/spaces/space-points\",\"structureExclusion:edit\":\"/entities/spaces/space-points\",\"structureExclusionPoint:list\":\"/entities/spaces/space-points\",\"structureExclusionPoint:create\":\"/entities/spaces/space-points\",\"structureExclusionPoint:import\":\"/entities/spaces/space-points\",\"structureExclusionPoint:dataquality\":\"/entities/spaces/space-points\",\"structureExclusionPoint:details\":\"/entities/spaces/space-points\",\"structureExclusionPoint:edit\":\"/entities/spaces/space-points\",\"floor:list\":\"/entities/spaces\",\"floor:create\":\"/entities/spaces\",\"floor:import\":\"/entities/spaces\",\"floor:dataquality\":\"/entities/spaces\",\"floor:map\":\"/entities/spaces\",\"floor:cuby\":\"/entities/spaces\",\"floor:geojson\":\"/entities/spaces\",\"floor:simple-layout\":\"/entities/spaces\",\"floor:standalone-2d-map\":\"/entities/spaces\",\"floor:details\":\"/entities/spaces\",\"floor:edit\":\"/entities/spaces\",\"distributionCostType:list\":\"/entities/admin/types\",\"distributionCostType:create\":\"/entities/admin/types\",\"distributionCostType:import\":\"/entities/admin/types\",\"distributionCostType:dataquality\":\"/entities/admin/types\",\"distributionCostType:details\":\"/entities/admin/types\",\"distributionCostType:edit\":\"/entities/admin/types\",\"roomTypeGroup:list\":\"/entities/surfy/global-admin\",\"roomTypeGroup:create\":\"/entities/surfy/global-admin\",\"roomTypeGroup:import\":\"/entities/surfy/global-admin\",\"roomTypeGroup:dataquality\":\"/entities/surfy/global-admin\",\"roomTypeGroup:details\":\"/entities/surfy/global-admin\",\"roomTypeGroup:edit\":\"/entities/surfy/global-admin\",\"roomType:list\":\"/entities/admin/types/room-types\",\"roomType:create\":\"/entities/admin/types/room-types\",\"roomType:import\":\"/entities/admin/types/room-types\",\"roomType:dataquality\":\"/entities/admin/types/room-types\",\"roomType:details\":\"/entities/admin/types/room-types\",\"roomType:edit\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:list\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:create\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:import\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:dataquality\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:details\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:edit\":\"/entities/admin/types/room-types\",\"roomTypeGroupFloor:list\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:create\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:import\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:details\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:edit\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:list\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:create\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:import\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:details\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:edit\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"costCenter:list\":\"/entities/admin/types\",\"costCenter:create\":\"/entities/admin/types\",\"costCenter:import\":\"/entities/admin/types\",\"costCenter:dataquality\":\"/entities/admin/types\",\"costCenter:details\":\"/entities/admin/types\",\"costCenter:edit\":\"/entities/admin/types\",\"costCenterBuilding:list\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:create\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:import\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:details\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:edit\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:list\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:create\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:import\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:dataquality\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:details\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:edit\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"room:meeting-rooms\":\"/entities/spaces\",\"room:list\":\"/entities/spaces\",\"room:create\":\"/entities/spaces\",\"room:import\":\"/entities/spaces\",\"room:dataquality\":\"/entities/spaces\",\"room:details\":\"/entities/spaces\",\"room:edit\":\"/entities/spaces\",\"room:dq-organization-to-room\":\"/entities/spaces/dataquality\",\"room:dq-uniq-name\":\"/entities/spaces/dataquality\",\"room:dq-no-point\":\"/entities/spaces/dataquality\",\"room:dq-capacity-equals-seats-count\":\"/entities/spaces/dataquality\",\"room:dq-capacity-gt-0\":\"/entities/spaces/dataquality\",\"roomPoint:list\":\"/entities/spaces/space-points\",\"roomPoint:create\":\"/entities/spaces/space-points\",\"roomPoint:import\":\"/entities/spaces/space-points\",\"roomPoint:dataquality\":\"/entities/spaces/space-points\",\"roomPoint:details\":\"/entities/spaces/space-points\",\"roomPoint:edit\":\"/entities/spaces/space-points\",\"roomPoint:dq-uniq-position\":\"/entities/spaces/space-points/dataquality\",\"roomPoint:dq-not-used\":\"/entities/spaces/space-points/dataquality\",\"roomPointRoom:list\":\"/entities/spaces/space-points\",\"roomPointRoom:create\":\"/entities/spaces/space-points\",\"roomPointRoom:import\":\"/entities/spaces/space-points\",\"roomPointRoom:dataquality\":\"/entities/spaces/space-points\",\"roomPointRoom:details\":\"/entities/spaces/space-points\",\"roomPointRoom:edit\":\"/entities/spaces/space-points\",\"roomPointSegmentType:list\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:create\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:import\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:dataquality\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:details\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:edit\":\"/entities/surfy/global-admin\",\"roomPointSegment:list\":\"/entities/spaces\",\"roomPointSegment:create\":\"/entities/spaces\",\"roomPointSegment:import\":\"/entities/spaces\",\"roomPointSegment:dataquality\":\"/entities/spaces\",\"roomPointSegment:details\":\"/entities/spaces\",\"roomPointSegment:edit\":\"/entities/spaces\",\"roomPointSegment:dq-not-uniq\":\"/entities/spaces/dataquality\",\"roomPointSegment:dq-point-not-on-same-floor\":\"/entities/spaces/dataquality\",\"itemTypePoint:list\":\"/entities/things/things-type\",\"itemTypePoint:create\":\"/entities/things/things-type\",\"itemTypePoint:import\":\"/entities/things/things-type\",\"itemTypePoint:dataquality\":\"/entities/things/things-type\",\"itemTypePoint:details\":\"/entities/things/things-type\",\"itemTypePoint:edit\":\"/entities/things/things-type\",\"itemTypeVisualEdge:list\":null,\"itemTypeVisualEdge:create\":null,\"itemTypeVisualEdge:import\":null,\"itemTypeVisualEdge:dataquality\":null,\"itemTypeVisualEdge:details\":null,\"itemTypeVisualEdge:edit\":null,\"dimensionType:list\":\"/entities/admin/dimensions\",\"dimensionType:create\":\"/entities/admin/dimensions\",\"dimensionType:import\":\"/entities/admin/dimensions\",\"dimensionType:dataquality\":\"/entities/admin/dimensions\",\"dimensionType:details\":\"/entities/admin/dimensions\",\"dimensionType:edit\":\"/entities/admin/dimensions\",\"dimension:list\":\"/entities/admin/dimensions\",\"dimension:create\":\"/entities/admin/dimensions\",\"dimension:import\":\"/entities/admin/dimensions\",\"dimension:dataquality\":\"/entities/admin/dimensions\",\"dimension:details\":\"/entities/admin/dimensions\",\"dimension:edit\":\"/entities/admin/dimensions\",\"dimension:dq-missing-color\":\"/entities/admin/dimensions/dataquality\",\"dimensionRoom:list\":\"/entities/admin/dimensions\",\"dimensionRoom:create\":\"/entities/admin/dimensions\",\"dimensionRoom:import\":\"/entities/admin/dimensions\",\"dimensionRoom:dataquality\":\"/entities/admin/dimensions\",\"dimensionRoom:details\":\"/entities/admin/dimensions\",\"dimensionRoom:edit\":\"/entities/admin/dimensions\",\"dimensionRoom:dq-wrong-dimension-type\":\"/entities/admin/dimensions/dataquality\",\"dimensionFloor:list\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:create\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:import\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:dataquality\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:details\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:edit\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:list\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:create\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:import\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:details\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:edit\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"factType:list\":\"/entities/spaces/building-facts\",\"factType:create\":\"/entities/spaces/building-facts\",\"factType:import\":\"/entities/spaces/building-facts\",\"factType:dataquality\":\"/entities/spaces/building-facts\",\"factType:details\":\"/entities/spaces/building-facts\",\"factType:edit\":\"/entities/spaces/building-facts\",\"fact:list\":\"/entities/spaces/building-facts\",\"fact:create\":\"/entities/spaces/building-facts\",\"fact:import\":\"/entities/spaces/building-facts\",\"fact:dataquality\":\"/entities/spaces/building-facts\",\"fact:details\":\"/entities/spaces/building-facts\",\"fact:edit\":\"/entities/spaces/building-facts\",\"personState:list\":\"/entities/human/person-type\",\"personState:create\":\"/entities/human/person-type\",\"personState:import\":\"/entities/human/person-type\",\"personState:dataquality\":\"/entities/human/person-type\",\"personState:details\":\"/entities/human/person-type\",\"personState:edit\":\"/entities/human/person-type\",\"personSecurityProfile:list\":\"/entities/human/person-type\",\"personSecurityProfile:create\":\"/entities/human/person-type\",\"personSecurityProfile:import\":\"/entities/human/person-type\",\"personSecurityProfile:dataquality\":\"/entities/human/person-type\",\"personSecurityProfile:details\":\"/entities/human/person-type\",\"personSecurityProfile:edit\":\"/entities/human/person-type\",\"personType:list\":\"/entities/surfy/global-admin\",\"personType:create\":\"/entities/surfy/global-admin\",\"personType:import\":\"/entities/surfy/global-admin\",\"personType:dataquality\":\"/entities/surfy/global-admin\",\"personType:details\":\"/entities/surfy/global-admin\",\"personType:edit\":\"/entities/surfy/global-admin\",\"person:list\":\"/entities/human\",\"person:create\":\"/entities/human\",\"person:import\":\"/entities/human\",\"person:dataquality\":\"/entities/human\",\"person:home\":\"/entities/human\",\"person:person-bookings\":\"/entities/human\",\"person:details\":\"/entities/human\",\"person:edit\":\"/entities/human\",\"person:dq-only-associated-to-building\":\"/entities/human/dataquality\",\"person:dq-near-end-date\":\"/entities/human/dataquality\",\"person:dq-no-affectations\":\"/entities/human/dataquality\",\"person:dq-person-duplicate\":\"/entities/human/dataquality\",\"person:dq-not-affectable-end-date-expired\":\"/entities/human/dataquality\",\"personToPersonType:list\":\"/entities/human/person-relations\",\"personToPersonType:create\":\"/entities/human/person-relations\",\"personToPersonType:import\":\"/entities/human/person-relations\",\"personToPersonType:dataquality\":\"/entities/human/person-relations\",\"personToPersonType:details\":\"/entities/human/person-relations\",\"personToPersonType:edit\":\"/entities/human/person-relations\",\"personToPerson:list\":\"/entities/human/person-relations\",\"personToPerson:create\":\"/entities/human/person-relations\",\"personToPerson:import\":\"/entities/human/person-relations\",\"personToPerson:dataquality\":\"/entities/human/person-relations\",\"personToPerson:details\":\"/entities/human/person-relations\",\"personToPerson:edit\":\"/entities/human/person-relations\",\"vehicleType:list\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:create\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:import\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:dataquality\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:details\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:edit\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:list\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:create\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:import\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:dataquality\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:details\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:edit\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicle:list\":\"/entities/human/person-vehicles\",\"vehicle:create\":\"/entities/human/person-vehicles\",\"vehicle:import\":\"/entities/human/person-vehicles\",\"vehicle:dataquality\":\"/entities/human/person-vehicles\",\"vehicle:details\":\"/entities/human/person-vehicles\",\"vehicle:edit\":\"/entities/human/person-vehicles\",\"personToVehicle:list\":\"/entities/human/person-vehicles\",\"personToVehicle:create\":\"/entities/human/person-vehicles\",\"personToVehicle:import\":\"/entities/human/person-vehicles\",\"personToVehicle:dataquality\":\"/entities/human/person-vehicles\",\"personToVehicle:details\":\"/entities/human/person-vehicles\",\"personToVehicle:edit\":\"/entities/human/person-vehicles\",\"roomAffectation:room-mouvement-matrix-import\":\"/entities/affectations\",\"roomAffectation:list\":\"/entities/affectations\",\"roomAffectation:create\":\"/entities/affectations\",\"roomAffectation:import\":\"/entities/affectations\",\"roomAffectation:dataquality\":\"/entities/affectations\",\"roomAffectation:details\":\"/entities/affectations\",\"roomAffectation:edit\":\"/entities/affectations\",\"workplaceType:list\":\"/entities/things/things-type\",\"workplaceType:create\":\"/entities/things/things-type\",\"workplaceType:import\":\"/entities/things/things-type\",\"workplaceType:dataquality\":\"/entities/things/things-type\",\"workplaceType:editor\":\"/entities/things/things-type\",\"workplaceType:avatar\":\"/entities/things/things-type\",\"workplaceType:details\":\"/entities/things/things-type\",\"workplaceType:edit\":\"/entities/things/things-type\",\"workplaceType:dq-not-used\":\"/entities/things/things-type/dataquality\",\"workplaceType:dq-workplace-type-item-type-position-z\":\"/entities/things/things-type/dataquality\",\"workplaceUsageType:list\":\"/entities/things/things-type\",\"workplaceUsageType:create\":\"/entities/things/things-type\",\"workplaceUsageType:import\":\"/entities/things/things-type\",\"workplaceUsageType:dataquality\":\"/entities/things/things-type\",\"workplaceUsageType:details\":\"/entities/things/things-type\",\"workplaceUsageType:edit\":\"/entities/things/things-type\",\"workplaceTypeItemType:list\":\"/entities/things/things-type\",\"workplaceTypeItemType:create\":\"/entities/things/things-type\",\"workplaceTypeItemType:import\":\"/entities/things/things-type\",\"workplaceTypeItemType:dataquality\":\"/entities/things/things-type\",\"workplaceTypeItemType:details\":\"/entities/things/things-type\",\"workplaceTypeItemType:edit\":\"/entities/things/things-type\",\"workplace:list\":\"/entities/things\",\"workplace:create\":\"/entities/things\",\"workplace:import\":\"/entities/things\",\"workplace:dataquality\":\"/entities/things\",\"workplace:assign-current-user\":\"/entities/things\",\"workplace:details\":\"/entities/things\",\"workplace:edit\":\"/entities/things\",\"workplace:dq-workplace-transit-with-affectations\":\"/entities/things/dataquality\",\"item:list\":\"/entities/things\",\"item:create\":\"/entities/things\",\"item:import\":\"/entities/things\",\"item:dataquality\":\"/entities/things\",\"item:details\":\"/entities/things\",\"item:edit\":\"/entities/things\",\"item:dq-item-not-in-workplace-room\":\"/entities/things/dataquality\",\"workplaceAffectation:workplace-mouvement-matrix-import\":\"/entities/affectations\",\"workplaceAffectation:list\":\"/entities/affectations\",\"workplaceAffectation:create\":\"/entities/affectations\",\"workplaceAffectation:import\":\"/entities/affectations\",\"workplaceAffectation:dataquality\":\"/entities/affectations\",\"workplaceAffectation:details\":\"/entities/affectations\",\"workplaceAffectation:edit\":\"/entities/affectations\",\"workplaceAffectation:dq-workplace-affectation-latest\":\"/entities/affectations/dataquality\",\"organizationFloor:list\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:create\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:import\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:dataquality\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:details\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:edit\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:list\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:create\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:import\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:details\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:edit\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"roomTypeFloor:list\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:create\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:import\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:details\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:edit\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:list\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:create\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:import\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:details\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:edit\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"itemToPerson:list\":\"/entities/affectations\",\"itemToPerson:create\":\"/entities/affectations\",\"itemToPerson:import\":\"/entities/affectations\",\"itemToPerson:dataquality\":\"/entities/affectations\",\"itemToPerson:details\":\"/entities/affectations\",\"itemToPerson:edit\":\"/entities/affectations\",\"personToBuilding:list\":\"/entities/affectations\",\"personToBuilding:create\":\"/entities/affectations\",\"personToBuilding:import\":\"/entities/affectations\",\"personToBuilding:dataquality\":\"/entities/affectations\",\"personToBuilding:details\":\"/entities/affectations\",\"personToBuilding:edit\":\"/entities/affectations\",\"dimensionToPerson:list\":\"/entities/affectations\",\"dimensionToPerson:create\":\"/entities/affectations\",\"dimensionToPerson:import\":\"/entities/affectations\",\"dimensionToPerson:dataquality\":\"/entities/affectations\",\"dimensionToPerson:details\":\"/entities/affectations\",\"dimensionToPerson:edit\":\"/entities/affectations\",\"dimensionToPerson:dq-dimension-to-person-latest\":\"/entities/affectations/dataquality\",\"dimensionTypeToBuilding:list\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:create\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:import\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:dataquality\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:details\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:edit\":\"/entities/admin/dimensions\",\"workingLocation:list\":\"/entities/surfy/global-admin\",\"workingLocation:create\":\"/entities/surfy/global-admin\",\"workingLocation:import\":\"/entities/surfy/global-admin\",\"workingLocation:dataquality\":\"/entities/surfy/global-admin\",\"workingLocation:details\":\"/entities/surfy/global-admin\",\"workingLocation:edit\":\"/entities/surfy/global-admin\",\"personWorkingLocation:my-planning\":\"/entities/planning\",\"personWorkingLocation:obo-planning\":\"/entities/planning\",\"personWorkingLocation:guest-planning\":\"/entities/planning\",\"personWorkingLocation:booking-maps\":\"/entities/planning\",\"personWorkingLocation:booking-security-day\":\"/entities/planning\",\"personWorkingLocation:pwl-dimension\":\"/entities/planning\",\"personWorkingLocation:list\":\"/entities/planning\",\"personWorkingLocation:create\":\"/entities/planning\",\"personWorkingLocation:import\":\"/entities/planning\",\"personWorkingLocation:dataquality\":\"/entities/planning\",\"personWorkingLocation:details\":\"/entities/planning\",\"personWorkingLocation:edit\":\"/entities/planning\",\"personToWorkplaceBooking:dashboard-index\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:list\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:create\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:import\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:dataquality\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:details\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:edit\":\"/entities/planning/bookings\",\"personToRoomBooking:list\":\"/entities/planning/bookings\",\"personToRoomBooking:create\":\"/entities/planning/bookings\",\"personToRoomBooking:import\":\"/entities/planning/bookings\",\"personToRoomBooking:dataquality\":\"/entities/planning/bookings\",\"personToRoomBooking:details\":\"/entities/planning/bookings\",\"personToRoomBooking:edit\":\"/entities/planning/bookings\",\"personToDimensionBooking:list\":\"/entities/planning/bookings\",\"personToDimensionBooking:create\":\"/entities/planning/bookings\",\"personToDimensionBooking:import\":\"/entities/planning/bookings\",\"personToDimensionBooking:dataquality\":\"/entities/planning/bookings\",\"personToDimensionBooking:details\":\"/entities/planning/bookings\",\"personToDimensionBooking:edit\":\"/entities/planning/bookings\",\"personCompanyMission:list\":\"/entities/admin/person-companies\",\"personCompanyMission:create\":\"/entities/admin/person-companies\",\"personCompanyMission:import\":\"/entities/admin/person-companies\",\"personCompanyMission:dataquality\":\"/entities/admin/person-companies\",\"personCompanyMission:details\":\"/entities/admin/person-companies\",\"personCompanyMission:edit\":\"/entities/admin/person-companies\",\"personCompanyToItemType:list\":\"/entities/admin/person-companies\",\"personCompanyToItemType:create\":\"/entities/admin/person-companies\",\"personCompanyToItemType:import\":\"/entities/admin/person-companies\",\"personCompanyToItemType:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToItemType:details\":\"/entities/admin/person-companies\",\"personCompanyToItemType:edit\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:list\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:create\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:import\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:details\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:edit\":\"/entities/admin/person-companies\",\"personCompanyToItem:list\":\"/entities/admin/person-companies\",\"personCompanyToItem:create\":\"/entities/admin/person-companies\",\"personCompanyToItem:import\":\"/entities/admin/person-companies\",\"personCompanyToItem:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToItem:details\":\"/entities/admin/person-companies\",\"personCompanyToItem:edit\":\"/entities/admin/person-companies\",\"legend:list\":\"/entities/admin\",\"legend:create\":\"/entities/admin\",\"legend:import\":\"/entities/admin\",\"legend:dataquality\":\"/entities/admin\",\"legend:details\":\"/entities/admin\",\"legend:edit\":\"/entities/admin\",\"openerPostMessageHost:list\":\"/entities/admin/api\",\"openerPostMessageHost:create\":\"/entities/admin/api\",\"openerPostMessageHost:import\":\"/entities/admin/api\",\"openerPostMessageHost:dataquality\":\"/entities/admin/api\",\"openerPostMessageHost:details\":\"/entities/admin/api\",\"openerPostMessageHost:edit\":\"/entities/admin/api\",\"companyWorkingLocation:list\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:create\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:import\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:dataquality\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:details\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:edit\":\"/entities/planning/planning-admin\",\"bookingVehicleConfiguration:list\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:create\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:import\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:dataquality\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:details\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:edit\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:list\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:create\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:import\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:dataquality\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:details\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:edit\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"jupObjectType:list\":\"/entities/surfy/global-security\",\"jupObjectType:create\":\"/entities/surfy/global-security\",\"jupObjectType:import\":\"/entities/surfy/global-security\",\"jupObjectType:dataquality\":\"/entities/surfy/global-security\",\"jupObjectType:details\":\"/entities/surfy/global-security\",\"jupObjectType:edit\":\"/entities/surfy/global-security\",\"jupUiView:list\":\"/entities/surfy/global-security\",\"jupUiView:create\":\"/entities/surfy/global-security\",\"jupUiView:import\":\"/entities/surfy/global-security\",\"jupUiView:dataquality\":\"/entities/surfy/global-security\",\"jupUiView:details\":\"/entities/surfy/global-security\",\"jupUiView:edit\":\"/entities/surfy/global-security\",\"jupRole:help\":\"/entities/surfy/global-security\",\"jupRole:azure-sync\":\"/entities/surfy/global-security\",\"jupRole:list\":\"/entities/surfy/global-security\",\"jupRole:create\":\"/entities/surfy/global-security\",\"jupRole:import\":\"/entities/surfy/global-security\",\"jupRole:dataquality\":\"/entities/surfy/global-security\",\"jupRole:matrix\":\"/entities/surfy/global-security\",\"jupRole:details\":\"/entities/surfy/global-security\",\"jupRole:edit\":\"/entities/surfy/global-security\",\"jupUiOption:list\":\"/entities/surfy/global-security\",\"jupUiOption:create\":\"/entities/surfy/global-security\",\"jupUiOption:import\":\"/entities/surfy/global-security\",\"jupUiOption:dataquality\":\"/entities/surfy/global-security\",\"jupUiOption:details\":\"/entities/surfy/global-security\",\"jupUiOption:edit\":\"/entities/surfy/global-security\",\"jupUiOperation:list\":\"/entities/surfy/global-security\",\"jupUiOperation:create\":\"/entities/surfy/global-security\",\"jupUiOperation:import\":\"/entities/surfy/global-security\",\"jupUiOperation:dataquality\":\"/entities/surfy/global-security\",\"jupUiOperation:details\":\"/entities/surfy/global-security\",\"jupUiOperation:edit\":\"/entities/surfy/global-security\",\"contentRole:list\":\"/entities/admin/security\",\"contentRole:create\":\"/entities/admin/security\",\"contentRole:import\":\"/entities/admin/security\",\"contentRole:dataquality\":\"/entities/admin/security\",\"contentRole:details\":\"/entities/admin/security\",\"contentRole:edit\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:list\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:create\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:import\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:dataquality\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:details\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:edit\":\"/entities/admin/security\",\"jupRoleToJupUiView:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:list\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:create\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:import\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:details\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:edit\":\"/entities/surfy/global-security\",\"contentRoleToBuilding:list\":\"/entities/admin/security\",\"contentRoleToBuilding:create\":\"/entities/admin/security\",\"contentRoleToBuilding:import\":\"/entities/admin/security\",\"contentRoleToBuilding:dataquality\":\"/entities/admin/security\",\"contentRoleToBuilding:details\":\"/entities/admin/security\",\"contentRoleToBuilding:edit\":\"/entities/admin/security\",\"contentRoleToUserCompany:list\":\"/entities/admin/security\",\"contentRoleToUserCompany:create\":\"/entities/admin/security\",\"contentRoleToUserCompany:import\":\"/entities/admin/security\",\"contentRoleToUserCompany:dataquality\":\"/entities/admin/security\",\"contentRoleToUserCompany:details\":\"/entities/admin/security\",\"contentRoleToUserCompany:edit\":\"/entities/admin/security\",\"contentRoleToFloor:list\":\"/entities/admin/security\",\"contentRoleToFloor:create\":\"/entities/admin/security\",\"contentRoleToFloor:import\":\"/entities/admin/security\",\"contentRoleToFloor:dataquality\":\"/entities/admin/security\",\"contentRoleToFloor:details\":\"/entities/admin/security\",\"contentRoleToFloor:edit\":\"/entities/admin/security\",\"partnerApiCredential:list\":\"/entities/admin/api\",\"partnerApiCredential:create\":\"/entities/admin/api\",\"partnerApiCredential:import\":\"/entities/admin/api\",\"partnerApiCredential:dataquality\":\"/entities/admin/api\",\"partnerApiCredential:details\":\"/entities/admin/api\",\"partnerApiCredential:edit\":\"/entities/admin/api\",\"apiUser:list\":\"/entities/admin/api\",\"apiUser:create\":\"/entities/admin/api\",\"apiUser:import\":\"/entities/admin/api\",\"apiUser:dataquality\":\"/entities/admin/api\",\"apiUser:edit-fetch-loop-repro\":\"/entities/admin/api\",\"apiUser:details\":\"/entities/admin/api\",\"apiUser:edit\":\"/entities/admin/api\",\"apiUserToJupRole:list\":\"/entities/admin/api\",\"apiUserToJupRole:create\":\"/entities/admin/api\",\"apiUserToJupRole:import\":\"/entities/admin/api\",\"apiUserToJupRole:dataquality\":\"/entities/admin/api\",\"apiUserToJupRole:details\":\"/entities/admin/api\",\"apiUserToJupRole:edit\":\"/entities/admin/api\",\"apiUserToContentRole:list\":\"/entities/admin/api\",\"apiUserToContentRole:create\":\"/entities/admin/api\",\"apiUserToContentRole:import\":\"/entities/admin/api\",\"apiUserToContentRole:dataquality\":\"/entities/admin/api\",\"apiUserToContentRole:details\":\"/entities/admin/api\",\"apiUserToContentRole:edit\":\"/entities/admin/api\",\"jupUiTenantOperation:list\":\"/entities/admin/security\",\"jupUiTenantOperation:create\":\"/entities/admin/security\",\"jupUiTenantOperation:import\":\"/entities/admin/security\",\"jupUiTenantOperation:dataquality\":\"/entities/admin/security\",\"jupUiTenantOperation:details\":\"/entities/admin/security\",\"jupUiTenantOperation:edit\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:list\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:create\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:import\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:dataquality\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:details\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:edit\":\"/entities/admin/security\",\"authentificationConnection:list\":\"/entities/surfy/global-security\",\"authentificationConnection:create\":\"/entities/surfy/global-security\",\"authentificationConnection:import\":\"/entities/surfy/global-security\",\"authentificationConnection:dataquality\":\"/entities/surfy/global-security\",\"authentificationConnection:details\":\"/entities/surfy/global-security\",\"authentificationConnection:edit\":\"/entities/surfy/global-security\",\"userRegistrationTenantRule:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:details\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:edit\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:details\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:edit\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:details\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:edit\":\"/entities/admin/authentification\",\"partnerExportMappingConfiguration:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:edit\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:edit\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:edit\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:edit\":\"/entities/admin/partner-export-mapping\",\"jupRoleToJupUiLayout:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:edit\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:list\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:create\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:import\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:dataquality\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:details\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:edit\":\"/entities/surfy/global-security\",\"itemFact:list\":\"/entities/things/items-fact\",\"itemFact:create\":\"/entities/things/items-fact\",\"itemFact:import\":\"/entities/things/items-fact\",\"itemFact:dataquality\":\"/entities/things/items-fact\",\"itemFact:details\":\"/entities/things/items-fact\",\"itemFact:edit\":\"/entities/things/items-fact\",\"featureFamily:list\":\"/entities/help\",\"featureFamily:create\":\"/entities/help\",\"featureFamily:import\":\"/entities/help\",\"featureFamily:dataquality\":\"/entities/help\",\"featureFamily:details\":\"/entities/help\",\"featureFamily:edit\":\"/entities/help\",\"featureGroup:list\":\"/entities/help\",\"featureGroup:create\":\"/entities/help\",\"featureGroup:import\":\"/entities/help\",\"featureGroup:dataquality\":\"/entities/help\",\"featureGroup:details\":\"/entities/help\",\"featureGroup:edit\":\"/entities/help\",\"feature:list\":\"/entities/help\",\"feature:create\":\"/entities/help\",\"feature:import\":\"/entities/help\",\"feature:dataquality\":\"/entities/help\",\"feature:details\":\"/entities/help\",\"feature:edit\":\"/entities/help\"}")
 };
 //#endregion
 //#region src/surfy-help/metaModel/metamodel.json.helper.ts
 var objectTypePathMapping = entities_paths_default.objectTypePathMapping;
 var viewPathMapping = entities_paths_default.viewPathMapping ?? {};
 //#endregion
-//#region node_modules/.pnpm/react-is@19.2.8/node_modules/react-is/cjs/react-is.production.js
+//#region node_modules/.pnpm/react-is@19.3.0/node_modules/react-is/cjs/react-is.production.js
 /**
 * @license React
 * react-is.production.js
@@ -274,12 +278,12 @@ var require_react_is_production = /* @__PURE__ */ __commonJSMin(((exports) => {
 		return typeOf(object) === REACT_SUSPENSE_LIST_TYPE;
 	};
 	exports.isValidElementType = function(type) {
-		return "string" === typeof type || "function" === typeof type || type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || "object" === typeof type && null !== type && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_CONSUMER_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_CLIENT_REFERENCE || void 0 !== type.getModuleId) ? !0 : !1;
+		return "string" === typeof type || "function" === typeof type || type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || type === REACT_VIEW_TRANSITION_TYPE || "object" === typeof type && null !== type && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_CONSUMER_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_CLIENT_REFERENCE || void 0 !== type.getModuleId) ? !0 : !1;
 	};
 	exports.typeOf = typeOf;
 }));
 //#endregion
-//#region node_modules/.pnpm/react-is@19.2.8/node_modules/react-is/cjs/react-is.development.js
+//#region node_modules/.pnpm/react-is@19.3.0/node_modules/react-is/cjs/react-is.development.js
 /**
 * @license React
 * react-is.development.js
@@ -365,13 +369,13 @@ var require_react_is_development$1 = /* @__PURE__ */ __commonJSMin(((exports) =>
 			return typeOf(object) === REACT_SUSPENSE_LIST_TYPE;
 		};
 		exports.isValidElementType = function(type) {
-			return "string" === typeof type || "function" === typeof type || type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || "object" === typeof type && null !== type && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_CONSUMER_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_CLIENT_REFERENCE || void 0 !== type.getModuleId) ? !0 : !1;
+			return "string" === typeof type || "function" === typeof type || type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || type === REACT_VIEW_TRANSITION_TYPE || "object" === typeof type && null !== type && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_CONSUMER_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_CLIENT_REFERENCE || void 0 !== type.getModuleId) ? !0 : !1;
 		};
 		exports.typeOf = typeOf;
 	})();
 }));
 //#endregion
-//#region node_modules/.pnpm/react-is@19.2.8/node_modules/react-is/index.js
+//#region node_modules/.pnpm/react-is@19.3.0/node_modules/react-is/index.js
 var require_react_is$1 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	if (process.env.NODE_ENV === "production") module.exports = require_react_is_production();
 	else module.exports = require_react_is_development$1();
@@ -1259,7 +1263,7 @@ function clsx() {
 	return n;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/integerPropType/integerPropType.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/integerPropType/integerPropType.mjs
 function getTypeByValue(value) {
 	const valueType = typeof value;
 	switch (valueType) {
@@ -1293,7 +1297,7 @@ validator.isRequired = requiredInteger;
 validatorNoop.isRequired = validatorNoop;
 var integerPropType = process.env.NODE_ENV === "production" ? validatorNoop : validator;
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/composeClasses/composeClasses.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/composeClasses/composeClasses.mjs
 /**
 * Compose classes from multiple sources.
 *
@@ -1341,7 +1345,7 @@ function composeClasses(slots, getUtilityClass, classes = void 0) {
 	return output;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/useForkRef/useForkRef.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/useForkRef/useForkRef.mjs
 /**
 * Merges refs into a single memoized callback ref or `null`.
 *
@@ -1390,7 +1394,7 @@ function useForkRef(...refs) {
 	}, refs);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/isHostComponent/isHostComponent.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/isHostComponent/isHostComponent.mjs
 /**
 * Determines if a given element is a DOM element name (i.e. not a React component).
 */
@@ -1398,7 +1402,7 @@ function isHostComponent(element) {
 	return typeof element === "string";
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/appendOwnerState/appendOwnerState.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/appendOwnerState/appendOwnerState.mjs
 /**
 * Type of the ownerState based on the type of an element it applies to.
 * This resolves to the provided OwnerState for React components and `undefined` for host components.
@@ -1422,13 +1426,13 @@ function appendOwnerState(elementType, otherProps, ownerState) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/isEventHandler/isEventHandler.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/isEventHandler/isEventHandler.mjs
 function isEventHandler(key, value) {
 	const thirdCharCode = key.charCodeAt(2);
 	return key[0] === "o" && key[1] === "n" && thirdCharCode >= 65 && thirdCharCode <= 90 && typeof value === "function";
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/extractEventHandlers/extractEventHandlers.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/extractEventHandlers/extractEventHandlers.mjs
 /**
 * Extracts event handlers from a given object.
 * A prop is considered an event handler if it is a function and its name starts with `on`.
@@ -1442,7 +1446,7 @@ function extractEventHandlers(object) {
 	return result;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/omitEventHandlers/omitEventHandlers.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/omitEventHandlers/omitEventHandlers.mjs
 /**
 * Removes event handlers from the given object.
 * A field is considered an event handler if it is a function with a name beginning with `on`.
@@ -1459,7 +1463,7 @@ function omitEventHandlers(object) {
 	return result;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/mergeSlotProps/mergeSlotProps.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/mergeSlotProps/mergeSlotProps.mjs
 /**
 * Merges the slot component internal props (usually coming from a hook)
 * with the externally provided ones.
@@ -1522,7 +1526,7 @@ function mergeSlotProps(parameters) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/resolveComponentProps/resolveComponentProps.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/resolveComponentProps/resolveComponentProps.mjs
 /**
 * If `componentProps` is a function, calls it with the provided `ownerState`.
 * Otherwise, just returns `componentProps`.
@@ -1532,7 +1536,7 @@ function resolveComponentProps(componentProps, ownerState, slotState) {
 	return componentProps;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/useSlotProps/useSlotProps.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/useSlotProps/useSlotProps.mjs
 /**
 * @ignore - do not document.
 * Builds the props to be passed into the slot of an unstyled component.
@@ -1555,7 +1559,7 @@ function useSlotProps(parameters) {
 	}, ownerState);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/fastDeepAssign/fastDeepAssign.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/fastDeepAssign/fastDeepAssign.mjs
 /**
 * Assigns props from one object to another. Focused on performance, only normal objects with no
 * prototype are supported.
@@ -1610,7 +1614,7 @@ function mergeObject(target, source) {
 	return target;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/formatMuiErrorMessage/formatMuiErrorMessage.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/formatMuiErrorMessage/formatMuiErrorMessage.mjs
 /**
 * WARNING: Don't import this directly. It's imported by the code generated by
 * `@mui/interal-babel-plugin-minify-errors`. Make sure to always use string literals in `Error`
@@ -1627,13 +1631,13 @@ function formatMuiErrorMessage(code, ...args) {
 	return `Minified MUI error #${code}; visit ${url} for the full message.`;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/capitalize/capitalize.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/capitalize/capitalize.mjs
 function capitalize(string) {
 	if (typeof string !== "string") throw new Error(process.env.NODE_ENV !== "production" ? "MUI: `capitalize(string)` expects a string argument." : formatMuiErrorMessage(7));
 	return string.charAt(0).toUpperCase() + string.slice(1);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/responsivePropType/responsivePropType.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/responsivePropType/responsivePropType.mjs
 var import_prop_types = /* @__PURE__ */ __toESM(require_prop_types(), 1);
 var responsivePropType = process.env.NODE_ENV !== "production" ? import_prop_types.default.oneOfType([
 	import_prop_types.default.number,
@@ -1642,14 +1646,14 @@ var responsivePropType = process.env.NODE_ENV !== "production" ? import_prop_typ
 	import_prop_types.default.array
 ]) : {};
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/isObjectEmpty/isObjectEmpty.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/isObjectEmpty/isObjectEmpty.mjs
 function isObjectEmpty$1(object) {
 	if (object == null) return true;
 	for (const _ in object) return false;
 	return true;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/deepmerge/deepmerge.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/deepmerge/deepmerge.mjs
 var import_react_is = require_react_is$1();
 function isPlainObject(item) {
 	if (typeof item !== "object" || item === null) return false;
@@ -1693,7 +1697,7 @@ function deepmerge(target, source, options = { clone: true }) {
 	return output;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/cssContainerQueries/cssContainerQueries.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/cssContainerQueries/cssContainerQueries.mjs
 var MIN_WIDTH_PATTERN = /min-width:\s*([0-9.]+)/;
 /**
 * WARN: Mutably updates the `css` object.
@@ -1760,7 +1764,7 @@ function cssContainerQueries(themeInput) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/createBreakpoints/createBreakpoints.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/createBreakpoints/createBreakpoints.mjs
 var sortBreakpointsValues = (values) => {
 	const breakpointsAsArray = Object.keys(values).map((key) => ({
 		key,
@@ -1820,7 +1824,7 @@ function createBreakpoints(breakpoints) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/breakpoints/breakpoints.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/breakpoints/breakpoints.mjs
 var EMPTY_THEME$2 = {};
 /** @internal */
 var values = {
@@ -1897,7 +1901,7 @@ function hasBreakpoint(breakpoints, value) {
 	return false;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/style/style.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/style/style.mjs
 /**
 * HACK: The `alternateProp` logic is there because our theme looks like this:
 * {
@@ -1973,7 +1977,7 @@ function style$1(options) {
 	return fn;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/spacing/spacing.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/spacing/spacing.mjs
 var EMPTY_THEME$1 = { internal_cache: {} };
 var properties = {
 	m: "margin",
@@ -2134,7 +2138,7 @@ spacingFn.propTypes = process.env.NODE_ENV !== "production" ? Array.from(spacing
 }, {}) : {};
 spacingFn.filterProps = spacingKeys;
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/compose/compose.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/compose/compose.mjs
 function compose(...styles) {
 	const handlers = styles.reduce((acc, style) => {
 		style.filterProps.forEach((prop) => {
@@ -2152,7 +2156,7 @@ function compose(...styles) {
 	return fn;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/borders/borders.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/borders/borders.mjs
 /** @internal */
 function borderTransform(value) {
 	if (typeof value !== "number") return value;
@@ -2189,7 +2193,7 @@ borderRadius.propTypes = process.env.NODE_ENV !== "production" ? { borderRadius:
 borderRadius.filterProps = ["borderRadius"];
 compose(border, borderTop, borderRight, borderBottom, borderLeft, borderColor, borderTopColor, borderRightColor, borderBottomColor, borderLeftColor, borderRadius, outline, outlineColor);
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/cssGrid/cssGrid.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/cssGrid/cssGrid.mjs
 var gap = (props) => {
 	if (props.gap !== void 0 && props.gap !== null) {
 		const transformer = createUnaryUnit(props.theme, "spacing", 8, "gap");
@@ -2222,7 +2226,7 @@ rowGap.propTypes = process.env.NODE_ENV !== "production" ? { rowGap: responsiveP
 rowGap.filterProps = ["rowGap"];
 compose(gap, columnGap, rowGap, style$1({ prop: "gridColumn" }), style$1({ prop: "gridRow" }), style$1({ prop: "gridAutoFlow" }), style$1({ prop: "gridAutoColumns" }), style$1({ prop: "gridAutoRows" }), style$1({ prop: "gridTemplateColumns" }), style$1({ prop: "gridTemplateRows" }), style$1({ prop: "gridTemplateAreas" }), style$1({ prop: "gridArea" }));
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/palette/palette.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/palette/palette.mjs
 /** @internal */
 function paletteTransform(value, userValue) {
 	if (userValue === "grey") return userValue;
@@ -2243,7 +2247,7 @@ compose(style$1({
 	transform: paletteTransform
 }));
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/sizing/sizing.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/sizing/sizing.mjs
 var breakpointsValues = values;
 /** @internal */
 function sizingTransform(value) {
@@ -2294,7 +2298,7 @@ style$1({
 });
 compose(width, maxWidth, minWidth, height, maxHeight, minHeight, style$1({ prop: "boxSizing" }));
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/styleFunctionSx/defaultSxConfig.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/styleFunctionSx/defaultSxConfig.mjs
 var defaultSxConfig = {
 	border: {
 		themeKey: "borders",
@@ -2446,7 +2450,7 @@ var defaultSxConfig = {
 	}
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/styleFunctionSx/styleFunctionSx.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/styleFunctionSx/styleFunctionSx.mjs
 var EMPTY_THEME = {};
 function unstable_createStyleFunctionSx() {
 	function styleFunctionSx(props) {
@@ -2881,9 +2885,7 @@ function delimiter(type) {
 		case 40:
 			if (type === 41) delimiter(type);
 			break;
-		case 92:
-			next();
-			break;
+		case 92: next();
 	}
 	return position;
 }
@@ -3657,7 +3659,7 @@ function serializeStyles(args, registered, mergedProps) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@emotion+use-insertion-effect-with-fallbacks@1.2.0_react@19.2.7/node_modules/@emotion/use-insertion-effect-with-fallbacks/dist/emotion-use-insertion-effect-with-fallbacks.browser.esm.js
+//#region node_modules/.pnpm/@emotion+use-insertion-effect-with-fallbacks@1.2.0_react@19.3.0/node_modules/@emotion/use-insertion-effect-with-fallbacks/dist/emotion-use-insertion-effect-with-fallbacks.browser.esm.js
 var syncFallback = function syncFallback(create) {
 	return create();
 };
@@ -3746,7 +3748,7 @@ var isPropValid = /* #__PURE__ */ memoize(function(prop) {
 	return reactPropsRegex.test(prop) || prop.charCodeAt(0) === 111 && prop.charCodeAt(1) === 110 && prop.charCodeAt(2) < 91;
 });
 //#endregion
-//#region node_modules/.pnpm/@emotion+styled@11.14.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@types+react@19.2.17_react@19.2.7/node_modules/@emotion/styled/base/dist/emotion-styled-base.browser.esm.js
+//#region node_modules/.pnpm/@emotion+styled@11.14.1_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@types+react@19.3.0_react@19.3.0/node_modules/@emotion/styled/base/dist/emotion-styled-base.browser.esm.js
 var isDevelopment = false;
 var testOmitPropsOnStringTag = isPropValid;
 var testOmitPropsOnComponent = function testOmitPropsOnComponent(key) {
@@ -3844,7 +3846,7 @@ var createStyled$1 = function createStyled(tag, options) {
 	};
 };
 //#endregion
-//#region node_modules/.pnpm/@emotion+styled@11.14.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@types+react@19.2.17_react@19.2.7/node_modules/@emotion/styled/dist/emotion-styled.browser.esm.js
+//#region node_modules/.pnpm/@emotion+styled@11.14.1_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@types+react@19.3.0_react@19.3.0/node_modules/@emotion/styled/dist/emotion-styled.browser.esm.js
 var tags = [
 	"a",
 	"abbr",
@@ -3986,9 +3988,9 @@ tags.forEach(function(tagName) {
 	styled$3[tagName] = styled$3(tagName);
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+styled-engine@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emo_a1c242bca4d34cfc91b5c59f5d400e95/node_modules/@mui/styled-engine/index.mjs
+//#region node_modules/.pnpm/@mui+styled-engine@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emot_ed87484fdbd85921ed28e0bf330f4eeb/node_modules/@mui/styled-engine/index.mjs
 /**
-* @mui/styled-engine v9.3.0
+* @mui/styled-engine v9.4.0
 *
 * @license MIT
 * This source code is licensed under the MIT license found in the
@@ -4021,10 +4023,10 @@ function internal_serializeStyles(styles) {
 * @typeparam SpecificComponentProps  Props which will *not* be included when withComponent is called
 */
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/createTheme/shape.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/createTheme/shape.mjs
 var shape = { borderRadius: 4 };
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/createTheme/createSpacing.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/createTheme/createSpacing.mjs
 function createSpacing(spacingInput = 8, transform = createUnarySpacing({ spacing: spacingInput })) {
 	if (spacingInput.mui) return spacingInput;
 	const spacing = (...argsInput) => {
@@ -4040,7 +4042,7 @@ function createSpacing(spacingInput = 8, transform = createUnarySpacing({ spacin
 	return spacing;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/createTheme/applyStyles.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/createTheme/applyStyles.mjs
 /**
 * A universal utility to style components with multiple color modes. Always use it from the theme object.
 * It works with:
@@ -4116,7 +4118,7 @@ function applyStyles(key, styles) {
 	return {};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/createTheme/createTheme.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/createTheme/createTheme.mjs
 function createTheme$1(options = {}, ...args) {
 	const { breakpoints: breakpointsInput = {}, palette: paletteInput = {}, spacing: spacingInput, shape: shapeInput = {}, ...other } = options;
 	const breakpoints = createBreakpoints(breakpointsInput);
@@ -4152,7 +4154,7 @@ function createTheme$1(options = {}, ...args) {
 	return muiTheme;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/useThemeWithoutDefault/useThemeWithoutDefault.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/useThemeWithoutDefault/useThemeWithoutDefault.mjs
 function isObjectEmpty(obj) {
 	return Object.keys(obj).length === 0;
 }
@@ -4161,13 +4163,13 @@ function useThemeWithoutDefault(defaultTheme = null) {
 	return !contextTheme || isObjectEmpty(contextTheme) ? defaultTheme : contextTheme;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/useTheme/useTheme.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/useTheme/useTheme.mjs
 var systemDefaultTheme$1 = createTheme$1();
 function useTheme$1(defaultTheme = systemDefaultTheme$1) {
 	return useThemeWithoutDefault(defaultTheme);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/ClassNameGenerator/ClassNameGenerator.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/ClassNameGenerator/ClassNameGenerator.mjs
 var defaultGenerator = (componentName) => componentName;
 var createClassNameGenerator = () => {
 	let generate = defaultGenerator;
@@ -4185,7 +4187,7 @@ var createClassNameGenerator = () => {
 };
 var ClassNameGenerator = createClassNameGenerator();
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/createBox/createBox.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/createBox/createBox.mjs
 function createBox(options = {}) {
 	const { themeId, defaultTheme, defaultClassName = "MuiBox-root", generateClassName } = options;
 	const BoxRoot = styled$2("div", { shouldForwardProp: (prop) => prop !== "theme" && prop !== "sx" && prop !== "as" })(styleFunctionSx_default);
@@ -4202,7 +4204,7 @@ function createBox(options = {}) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/generateUtilityClass/generateUtilityClass.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/generateUtilityClass/generateUtilityClass.mjs
 var globalStateClasses = {
 	active: "active",
 	checked: "checked",
@@ -4222,7 +4224,7 @@ function generateUtilityClass(componentName, slot, globalStatePrefix = "Mui") {
 	return globalStateClass ? `${globalStatePrefix}-${globalStateClass}` : `${ClassNameGenerator.generate(componentName)}-${slot}`;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/generateUtilityClasses/generateUtilityClasses.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/generateUtilityClasses/generateUtilityClasses.mjs
 function generateUtilityClasses(componentName, slots, globalStatePrefix = "Mui") {
 	const result = {};
 	slots.forEach((slot) => {
@@ -4231,7 +4233,7 @@ function generateUtilityClasses(componentName, slots, globalStatePrefix = "Mui")
 	return result;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/Box/Box.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/Box/Box.mjs
 /**
 *
 * Demos:
@@ -4272,7 +4274,7 @@ process.env.NODE_ENV !== "production" && (Box$2.propTypes = {
 	])
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/getDisplayName/getDisplayName.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/getDisplayName/getDisplayName.mjs
 function getFunctionComponentName(Component, fallback = "") {
 	return Component.displayName || Component.name || fallback;
 }
@@ -4296,7 +4298,7 @@ function getDisplayName(Component) {
 	}
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/preprocessStyles.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/preprocessStyles.mjs
 function preprocessStyles(input) {
 	const { variants, ...style } = input;
 	const result = {
@@ -4311,7 +4313,7 @@ function preprocessStyles(input) {
 	return result;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/createStyled/createStyled.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/createStyled/createStyled.mjs
 var systemDefaultTheme = createTheme$1();
 function shouldForwardProp(prop) {
 	return prop !== "ownerState" && prop !== "theme" && prop !== "sx" && prop !== "as";
@@ -4468,7 +4470,7 @@ function lowercaseFirstLetter(string) {
 	return string.charAt(0).toLowerCase() + string.slice(1);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/resolveProps/resolveProps.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/resolveProps/resolveProps.mjs
 /**
 * Add keys, values of `defaultProps` that does not exist in `props`
 * @param defaultProps
@@ -4495,7 +4497,10 @@ function resolveProps(defaultProps, props, mergeClassNameAndStyle = false) {
 				output[propName] = { ...slotProps };
 				for (const slotKey in defaultSlotProps) if (Object.prototype.hasOwnProperty.call(defaultSlotProps, slotKey)) {
 					const slotPropName = slotKey;
-					output[propName][slotPropName] = resolveProps(defaultSlotProps[slotPropName], slotProps[slotPropName], mergeClassNameAndStyle);
+					const defaultSlotPropValue = defaultSlotProps[slotPropName];
+					const slotPropValue = slotProps[slotPropName];
+					if (typeof defaultSlotPropValue === "function" || typeof slotPropValue === "function") output[propName][slotPropName] = (...args) => resolveProps((typeof defaultSlotPropValue === "function" ? defaultSlotPropValue(...args) : defaultSlotPropValue) ?? {}, (typeof slotPropValue === "function" ? slotPropValue(...args) : slotPropValue) ?? {}, mergeClassNameAndStyle);
+					else output[propName][slotPropName] = resolveProps(defaultSlotPropValue ?? {}, slotPropValue ?? {}, mergeClassNameAndStyle);
 				}
 			}
 		} else if (propName === "className" && mergeClassNameAndStyle && props.className !== void 0) output.className = clsx(defaultProps?.className, props?.className);
@@ -4508,7 +4513,7 @@ function resolveProps(defaultProps, props, mergeClassNameAndStyle = false) {
 	return output;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/useEnhancedEffect/useEnhancedEffect.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/useEnhancedEffect/useEnhancedEffect.mjs
 /**
 * A version of `React.useLayoutEffect` that does not show a warning when server-side rendering.
 * This is useful for effects that are only needed for client-side rendering but not for SSR.
@@ -4518,12 +4523,12 @@ function resolveProps(defaultProps, props, mergeClassNameAndStyle = false) {
 */
 var useEnhancedEffect = typeof window !== "undefined" ? React$1.useLayoutEffect : React$1.useEffect;
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/clamp/clamp.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/clamp/clamp.mjs
 function clamp(val, min = Number.MIN_SAFE_INTEGER, max = Number.MAX_SAFE_INTEGER) {
 	return Math.max(min, Math.min(val, max));
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/colorManipulator/colorManipulator.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/colorManipulator/colorManipulator.mjs
 /**
 * Returns a number whose value is limited to the given range.
 * @param {number} value The value to be clamped
@@ -4774,7 +4779,7 @@ function private_safeEmphasize(color, coefficient, warning) {
 	}
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/DefaultPropsProvider/DefaultPropsProvider.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/DefaultPropsProvider/DefaultPropsProvider.mjs
 var PropsContext = /*#__PURE__*/ React$1.createContext(void 0);
 function DefaultPropsProvider$1({ value, children }) {
 	return /*#__PURE__*/ jsx(PropsContext.Provider, {
@@ -4808,7 +4813,7 @@ function useDefaultProps$1({ props, name }) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/memoTheme.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/memoTheme.mjs
 var arg = { theme: void 0 };
 /**
 * Memoize style function on theme.
@@ -4829,7 +4834,7 @@ function unstable_memoTheme(styleFn) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/cssVars/createGetCssVar.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/cssVars/createGetCssVar.mjs
 /**
 * The benefit of this function is to help developers get CSS var from theme without specifying the whole variable
 * and they does not need to remember the prefix (defined once).
@@ -4847,7 +4852,7 @@ function createGetCssVar$1(prefix = "") {
 	return getCssVar;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/cssVars/cssVarsParser.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/cssVars/cssVarsParser.mjs
 var prototypePollutingKeys = /* @__PURE__ */ new Set([
 	"__proto__",
 	"constructor",
@@ -4966,7 +4971,7 @@ function cssVarsParser(theme, options) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/cssVars/prepareCssVars.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/cssVars/prepareCssVars.mjs
 function prepareCssVars(theme, parserConfig = {}) {
 	const { getSelector = defaultGetSelector, disableCssColorScheme, colorSchemeSelector: selector, enableContrastVars } = parserConfig;
 	const { colorSchemes = {}, components, defaultColorScheme = "light", ...otherTheme } = theme;
@@ -5053,7 +5058,7 @@ function prepareCssVars(theme, parserConfig = {}) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/cssVars/getColorSchemeSelector.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/cssVars/getColorSchemeSelector.mjs
 function createGetColorSchemeSelector(selector) {
 	return function getColorSchemeSelector(colorScheme) {
 		if (selector === "media") {
@@ -5072,13 +5077,13 @@ function createGetColorSchemeSelector(selector) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/colors/common.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/colors/common.mjs
 var common = {
 	black: "#000",
 	white: "#fff"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/colors/grey.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/colors/grey.mjs
 var grey = {
 	50: "#fafafa",
 	100: "#f5f5f5",
@@ -5096,7 +5101,7 @@ var grey = {
 	A700: "#616161"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/colors/purple.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/colors/purple.mjs
 var purple = {
 	50: "#f3e5f5",
 	100: "#e1bee7",
@@ -5114,7 +5119,7 @@ var purple = {
 	A700: "#aa00ff"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/colors/red.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/colors/red.mjs
 var red = {
 	50: "#ffebee",
 	100: "#ffcdd2",
@@ -5132,7 +5137,7 @@ var red = {
 	A700: "#d50000"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/colors/orange.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/colors/orange.mjs
 var orange = {
 	50: "#fff3e0",
 	100: "#ffe0b2",
@@ -5150,7 +5155,7 @@ var orange = {
 	A700: "#ff6d00"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/colors/blue.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/colors/blue.mjs
 var blue = {
 	50: "#e3f2fd",
 	100: "#bbdefb",
@@ -5168,7 +5173,7 @@ var blue = {
 	A700: "#2962ff"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/colors/lightBlue.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/colors/lightBlue.mjs
 var lightBlue = {
 	50: "#e1f5fe",
 	100: "#b3e5fc",
@@ -5186,7 +5191,7 @@ var lightBlue = {
 	A700: "#0091ea"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/colors/green.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/colors/green.mjs
 var green = {
 	50: "#e8f5e9",
 	100: "#c8e6c9",
@@ -5204,7 +5209,7 @@ var green = {
 	A700: "#00c853"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/styles/createPalette.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/createPalette.mjs
 function getLight() {
 	return {
 		text: {
@@ -5447,7 +5452,60 @@ const theme2 = createTheme({ palette: {
 	}, other);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.3.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+st_de1d134da7285e71e07204289176cb1d/node_modules/@mui/system/cssVars/prepareTypographyVars.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/focusVisible.mjs
+var focusVisibleOffsetVar = "--_focusVisible-offset";
+var focusVisibleBehaviorVar = "--_focusVisible-behavior";
+var focusVisibleShadowVar = "--_focusVisible-shadow";
+var offsetValue = `var(${focusVisibleOffsetVar}, 1)`;
+var behaviorValue = `var(${focusVisibleBehaviorVar}, )`;
+var outsetFocusRing = {
+	[focusVisibleOffsetVar]: 1,
+	[focusVisibleBehaviorVar]: "initial"
+};
+function mergeFocusVisibleInput(optionsFocusVisible, args) {
+	return args.reduce((acc, arg) => arg && "focusVisible" in arg ? deepmerge(acc, { focusVisible: arg.focusVisible }) : acc, { focusVisible: optionsFocusVisible }).focusVisible;
+}
+/**
+* Whether an input is this module's own output. Only `wireFocusVisibleVars` emits the offset calc,
+* so it identifies a ring fed back in by `createTheme(existingTheme, …)`.
+*/
+function isResolvedFocusVisible(input) {
+	return input != null && typeof input === "object" && typeof input.outlineOffset === "string" && input.outlineOffset.includes(focusVisibleOffsetVar);
+}
+/**
+* Resolve the opt-in ring, wiring in the private inset vars. `outlineColor` is the caller's default
+* — a hex, the palette var, or a scheme's primary — overridden by a user-provided `outlineColor`.
+*/
+function resolveFocusVisible(input, outlineColor) {
+	return wireFocusVisibleVars({
+		outlineStyle: "solid",
+		outlineColor,
+		outlineWidth: 2,
+		outlineOffset: 2,
+		boxShadow: `var(${focusVisibleShadowVar}, 0 0)`,
+		...input === true ? null : input
+	});
+}
+/**
+* Wire the private inset vars into a resolved `theme.focusVisible` so a custom `outlineOffset` or
+* `boxShadow` insets automatically on clip-prone components. Mutates and returns the object.
+*/
+function wireFocusVisibleVars(resolved) {
+	const offset = resolved.outlineOffset ?? 0;
+	if (typeof offset !== "string" || !offset.includes(focusVisibleOffsetVar)) resolved.outlineOffset = `calc(${offsetValue} * ${typeof offset === "number" ? `${offset}px` : offset})`;
+	const standaloneBoxShadows = /* @__PURE__ */ new Set([
+		"none",
+		"initial",
+		"inherit",
+		"unset",
+		"revert",
+		"revert-layer"
+	]);
+	if (typeof resolved.boxShadow === "string" && !standaloneBoxShadows.has(resolved.boxShadow.trim().toLowerCase()) && !/\binset\b/.test(resolved.boxShadow) && !resolved.boxShadow.includes(focusVisibleBehaviorVar)) resolved.boxShadow = `${behaviorValue} ${resolved.boxShadow}`;
+	return resolved;
+}
+//#endregion
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/cssVars/prepareTypographyVars.mjs
 function prepareTypographyVars(typography) {
 	const vars = {};
 	Object.entries(typography).forEach((entry) => {
@@ -5457,7 +5515,7 @@ function prepareTypographyVars(typography) {
 	return vars;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/styles/createMixins.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/createMixins.mjs
 function createMixins(breakpoints, mixins) {
 	return {
 		toolbar: {
@@ -5469,7 +5527,7 @@ function createMixins(breakpoints, mixins) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/styles/createTypography.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/createTypography.mjs
 function round$1(value) {
 	return Math.round(value * 1e5) / 1e5;
 }
@@ -5528,7 +5586,7 @@ function createTypography(palette, typography) {
 	}, other, { clone: false });
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/styles/shadows.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/shadows.mjs
 var shadowKeyUmbraOpacity = .2;
 var shadowKeyPenumbraOpacity = .14;
 var shadowAmbientShadowOpacity = .12;
@@ -5567,7 +5625,7 @@ var shadows = [
 	createShadow(0, 11, 15, -7, 0, 24, 38, 3, 0, 9, 46, 8)
 ];
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/styles/createTransitions.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/createTransitions.mjs
 var DEFAULT_TRANSITION_PROPS$1 = ["all"];
 var EMPTY_OPTIONS$1 = {};
 var easing = {
@@ -5627,7 +5685,7 @@ function createTransitions(inputTransitions) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/styles/createMotion.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/createMotion.mjs
 var EMPTY_MOTION = {};
 function createMotion(inputMotion = EMPTY_MOTION) {
 	return {
@@ -5636,7 +5694,7 @@ function createMotion(inputMotion = EMPTY_MOTION) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/styles/zIndex.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/zIndex.mjs
 var zIndex = {
 	mobileStepper: 1e3,
 	fab: 1050,
@@ -5648,7 +5706,7 @@ var zIndex = {
 	tooltip: 1500
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/styles/stringifyTheme.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/stringifyTheme.mjs
 function isSerializable(val) {
 	return isPlainObject(val) || typeof val === "undefined" || typeof val === "string" || typeof val === "boolean" || typeof val === "number" || Array.isArray(val);
 }
@@ -5696,7 +5754,7 @@ theme.transitions = createTransitions(theme.transitions || {});
 export default theme;`;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/styles/createThemeNoVars.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/createThemeNoVars.mjs
 function coefficientToPercentage(coefficient) {
 	if (typeof coefficient === "number") return `${(coefficient * 100).toFixed(0)}%`;
 	return `calc((${coefficient}) * 100%)`;
@@ -5749,6 +5807,7 @@ function createThemeNoVars(options = {}, ...args) {
 	muiTheme = deepmerge(muiTheme, other);
 	muiTheme = args.reduce((acc, argument) => deepmerge(acc, argument), muiTheme);
 	delete muiTheme.transitions.reducedMotion;
+	if (muiTheme.focusVisible != null && muiTheme.focusVisible !== false) muiTheme.focusVisible = resolveFocusVisible(muiTheme.focusVisible, muiTheme.palette.primary.main);
 	if (process.env.NODE_ENV !== "production") {
 		const stateClasses = [
 			"active",
@@ -5804,7 +5863,7 @@ function createThemeNoVars(options = {}, ...args) {
 	return muiTheme;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/styles/getOverlayAlpha.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/getOverlayAlpha.mjs
 function getOverlayAlpha(elevation) {
 	let alphaValue;
 	if (elevation < 1) alphaValue = 5.11916 * elevation ** 2;
@@ -5812,7 +5871,7 @@ function getOverlayAlpha(elevation) {
 	return Math.round(alphaValue * 10) / 1e3;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/styles/createColorScheme.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/createColorScheme.mjs
 var defaultDarkOverlays = [...Array(25)].map((_, index) => {
 	if (index === 0) return "none";
 	const overlay = getOverlayAlpha(index);
@@ -5846,12 +5905,12 @@ function createColorScheme(options) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/styles/shouldSkipGeneratingVar.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/shouldSkipGeneratingVar.mjs
 function shouldSkipGeneratingVar(keys) {
-	return keys[0] === "motion" || !!keys[0].match(/(cssVarPrefix|colorSchemeSelector|modularCssLayers|rootSelector|typography|mixins|breakpoints|direction|transitions)/) || !!keys[0].match(/sxConfig$/) || keys[0] === "palette" && !!keys[1]?.match(/(mode|contrastThreshold|tonalOffset)/);
+	return keys[0] === "motion" || keys[0] === "focusVisible" || !!keys[0].match(/(cssVarPrefix|colorSchemeSelector|modularCssLayers|rootSelector|typography|mixins|breakpoints|direction|transitions)/) || !!keys[0].match(/sxConfig$/) || keys[0] === "palette" && !!keys[1]?.match(/(mode|contrastThreshold|tonalOffset)/);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/styles/excludeVariablesFromRoot.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/excludeVariablesFromRoot.mjs
 /**
 * @internal These variables should not appear in the :root stylesheet when the `defaultColorScheme="dark"`
 */
@@ -5861,7 +5920,7 @@ var excludeVariablesFromRoot = (cssVarPrefix) => [
 	`--${cssVarPrefix ? `${cssVarPrefix}-` : ""}palette-AppBar-darkColor`
 ];
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/styles/createGetSelector.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/createGetSelector.mjs
 var createGetSelector_default = (theme) => (colorScheme, css) => {
 	const root = theme.rootSelector || ":root";
 	const selector = theme.colorSchemeSelector;
@@ -5897,7 +5956,7 @@ var createGetSelector_default = (theme) => (colorScheme, css) => {
 	return root;
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/styles/createThemeWithVars.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/createThemeWithVars.mjs
 function assignNode(obj, keys) {
 	keys.forEach((k) => {
 		if (!obj[k]) obj[k] = {};
@@ -6190,6 +6249,8 @@ function createThemeWithVars(options = {}, ...args) {
 		});
 	});
 	theme = args.reduce((acc, argument) => deepmerge(acc, argument), theme);
+	const focusVisibleInput = mergeFocusVisibleInput(options.focusVisible, args);
+	if (focusVisibleInput != null && focusVisibleInput !== false) theme.focusVisible = resolveFocusVisible(focusVisibleInput, getCssVar("palette-primary-main"));
 	const parserConfig = {
 		prefix: cssVarPrefix,
 		disableCssColorScheme,
@@ -6225,7 +6286,7 @@ function createThemeWithVars(options = {}, ...args) {
 	return theme;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/styles/createTheme.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/createTheme.mjs
 function attachColorScheme(theme, scheme, colorScheme) {
 	if (!theme.colorSchemes) return;
 	if (colorScheme) theme.colorSchemes[scheme] = {
@@ -6282,6 +6343,19 @@ function createTheme(options = {}, ...args) {
 			};
 			attachColorScheme(theme, "light", colorSchemesInput.light);
 		}
+		if (theme.focusVisible != null && theme.focusVisible !== false) {
+			let focusVisibleInput = theme.focusVisible;
+			const rawFocusVisible = mergeFocusVisibleInput(options.focusVisible, args);
+			const authoredColor = rawFocusVisible && typeof rawFocusVisible === "object" ? rawFocusVisible.outlineColor : void 0;
+			if (!authoredColor || isResolvedFocusVisible(rawFocusVisible) && authoredColor === theme.palette.primary.main) {
+				const { outlineColor, ...rest } = focusVisibleInput;
+				focusVisibleInput = rest;
+			}
+			Object.keys(theme.colorSchemes).forEach((scheme) => {
+				const schemePalette = theme.colorSchemes?.[scheme]?.palette;
+				if (schemePalette?.primary) theme.colorSchemes[scheme].focusVisible = resolveFocusVisible(focusVisibleInput, schemePalette.primary.main);
+			});
+		}
 		return theme;
 	}
 	if (!palette && !("light" in colorSchemesInput) && defaultColorSchemeInput === "light") colorSchemesInput.light = true;
@@ -6293,35 +6367,35 @@ function createTheme(options = {}, ...args) {
 	}, ...args);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/styles/defaultTheme.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/defaultTheme.mjs
 var defaultTheme$1 = createTheme();
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/styles/identifier.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/identifier.mjs
 var identifier_default = "$$material";
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/styles/useTheme.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/useTheme.mjs
 function useTheme() {
 	const theme = useTheme$1(defaultTheme$1);
 	if (process.env.NODE_ENV !== "production") React$1.useDebugValue(theme);
 	return theme["$$material"] || theme;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/styles/slotShouldForwardProp.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/slotShouldForwardProp.mjs
 function slotShouldForwardProp(prop) {
 	return prop !== "ownerState" && prop !== "theme" && prop !== "sx" && prop !== "as";
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/styles/rootShouldForwardProp.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/rootShouldForwardProp.mjs
 var rootShouldForwardProp = (prop) => slotShouldForwardProp(prop) && prop !== "classes";
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/styles/styled.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/styled.mjs
 var styled$1 = createStyled({
 	themeId: identifier_default,
 	defaultTheme: defaultTheme$1,
 	rootShouldForwardProp
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/DefaultPropsProvider/DefaultPropsProvider.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/DefaultPropsProvider/DefaultPropsProvider.mjs
 function DefaultPropsProvider(props) {
 	return /*#__PURE__*/ jsx(DefaultPropsProvider$1, { ...props });
 }
@@ -6339,13 +6413,13 @@ function useDefaultProps(params) {
 	return useDefaultProps$1(params);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/utils/memoTheme.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/utils/memoTheme.mjs
 var memoTheme = unstable_memoTheme;
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/utils/capitalize.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/utils/capitalize.mjs
 var capitalize_default = capitalize;
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/utils/createSimplePaletteValueFilter.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/utils/createSimplePaletteValueFilter.mjs
 /**
 * Type guard to check if the object has a "main" property of type string.
 *
@@ -6381,7 +6455,7 @@ function createSimplePaletteValueFilter(additionalPropertiesToCheck = []) {
 	return ([, value]) => value && checkSimplePaletteColorValues(value, additionalPropertiesToCheck);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/Typography/typographyClasses.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/Typography/typographyClasses.mjs
 function getTypographyUtilityClass(slot) {
 	return generateUtilityClass("MuiTypography", slot);
 }
@@ -6409,7 +6483,7 @@ generateUtilityClasses("MuiTypography", [
 	"gutterBottom"
 ]);
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/Typography/Typography.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/Typography/Typography.mjs
 var useUtilityClasses$4 = (ownerState) => {
 	const { align, gutterBottom, noWrap, variant, classes } = ownerState;
 	return composeClasses({ root: [
@@ -6634,7 +6708,7 @@ process.env.NODE_ENV !== "production" && (Typography$1.propTypes = {
 	variantMapping: import_prop_types.default.object
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/SvgIcon/svgIconClasses.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/SvgIcon/svgIconClasses.mjs
 function getSvgIconUtilityClass(slot) {
 	return generateUtilityClass("MuiSvgIcon", slot);
 }
@@ -6651,7 +6725,7 @@ generateUtilityClasses("MuiSvgIcon", [
 	"fontSizeLarge"
 ]);
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/styles/reducedMotion.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/reducedMotion.mjs
 var defaultStyles = { transition: "none" };
 function resolveReducedMotionStyles(reducedMotion, styles) {
 	if (reducedMotion === "always") return styles;
@@ -6659,7 +6733,7 @@ function resolveReducedMotionStyles(reducedMotion, styles) {
 	return null;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/transitions/utils.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/transitions/utils.mjs
 var reflow = (node) => node.scrollTop;
 var EMPTY_STYLE = {};
 var DEFAULT_TRANSITION_PROPS = ["all"];
@@ -6712,7 +6786,7 @@ function getTransitionStyles(theme, props = DEFAULT_TRANSITION_PROPS, options = 
 	} : transitionStyles;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/SvgIcon/SvgIcon.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/SvgIcon/SvgIcon.mjs
 var useUtilityClasses$3 = (ownerState) => {
 	const { color, fontSize, classes } = ownerState;
 	return composeClasses({ root: [
@@ -6906,7 +6980,7 @@ process.env.NODE_ENV !== "production" && (SvgIcon.propTypes = {
 });
 SvgIcon.muiName = "SvgIcon";
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/SvgIcon/createSvgIcon.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/SvgIcon/createSvgIcon.mjs
 /**
 * Private module reserved for @mui packages.
 */
@@ -6924,16 +6998,16 @@ function createSvgIcon(path, displayName) {
 	return /*#__PURE__*/ React$1.memo(/*#__PURE__*/ React$1.forwardRef(Component));
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/internal/svg-icons/MoreHoriz.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/internal/svg-icons/MoreHoriz.mjs
 /**
 * @ignore - internal component.
 */
 var MoreHoriz_default = createSvgIcon(/*#__PURE__*/ jsx("path", { d: "M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" }), "MoreHoriz");
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/refType/refType.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/refType/refType.mjs
 var refType = import_prop_types.default.oneOfType([import_prop_types.default.func, import_prop_types.default.object]);
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/chainPropTypes/chainPropTypes.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/chainPropTypes/chainPropTypes.mjs
 function chainPropTypes(propType1, propType2) {
 	if (process.env.NODE_ENV === "production") return () => null;
 	return function validate(...args) {
@@ -6941,7 +7015,7 @@ function chainPropTypes(propType1, propType2) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/elementTypeAcceptingRef/elementTypeAcceptingRef.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/elementTypeAcceptingRef/elementTypeAcceptingRef.mjs
 function isClassComponent$1(elementType) {
 	const { prototype = {} } = elementType;
 	return Boolean(prototype.isReactComponent);
@@ -6967,7 +7041,7 @@ function elementTypeAcceptingRef(props, propName, componentName, location, propF
 }
 var elementTypeAcceptingRef_default = chainPropTypes(import_prop_types.default.elementType, elementTypeAcceptingRef);
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/isFocusVisible/isFocusVisible.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/isFocusVisible/isFocusVisible.mjs
 /**
 * Returns a boolean indicating if the event's target has :focus-visible
 */
@@ -6980,10 +7054,10 @@ function isFocusVisible(element) {
 	return false;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/utils/useForkRef.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/utils/useForkRef.mjs
 var useForkRef_default = useForkRef;
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/useEventCallback/useEventCallback.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/useEventCallback/useEventCallback.mjs
 /**
 * Inspired by https://github.com/react/react/issues/14099#issuecomment-440013892
 * See RFC in https://github.com/reactjs/rfcs/pull/220
@@ -6996,10 +7070,10 @@ function useEventCallback(fn) {
 	return React$1.useRef((...args) => (0, ref.current)(...args)).current;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/utils/useEventCallback.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/utils/useEventCallback.mjs
 var useEventCallback_default = useEventCallback;
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/utils/useFocusableWhenDisabled.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/utils/useFocusableWhenDisabled.mjs
 function useFocusableWhenDisabled(parameters) {
 	const { focusableWhenDisabled, disabled, composite = false, tabIndex: tabIndexProp = 0, isNativeButton } = parameters;
 	const isFocusableComposite = composite && focusableWhenDisabled !== false;
@@ -7026,7 +7100,7 @@ function useFocusableWhenDisabled(parameters) {
 	]);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/ButtonBase/useButtonBase.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/ButtonBase/useButtonBase.mjs
 var EMPTY$1 = {};
 function useButtonBase(parameters) {
 	const { nativeButton, nativeButtonProp, internalNativeButton = nativeButton, allowInferredHostMismatch = false, disabled, type, hasFormAction = false, tabIndex = 0, focusableWhenDisabled: focusableWhenDisabledParam, stopEventPropagation = false, onBeforeKeyDown, onBeforeKeyUp } = parameters;
@@ -7137,7 +7211,7 @@ function useButtonBase(parameters) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/useLazyRef/useLazyRef.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/useLazyRef/useLazyRef.mjs
 var UNINITIALIZED = {};
 /**
 * A React.useRef() that is initialized lazily with a function. Note that it accepts an optional
@@ -7152,7 +7226,7 @@ function useLazyRef(init, initArg) {
 	return ref;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/useLazyRipple/useLazyRipple.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/useLazyRipple/useLazyRipple.mjs
 /**
 * Lazy initialization container for the Ripple instance. This improves
 * performance by delaying mounting the ripple until it's needed.
@@ -7222,7 +7296,7 @@ function createControlledPromise() {
 	return p;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/useOnMount/useOnMount.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/useOnMount/useOnMount.mjs
 var EMPTY = [];
 /**
 * A React.useEffect equivalent that runs once, when the component is mounted.
@@ -7231,7 +7305,7 @@ function useOnMount(fn) {
 	React$1.useEffect(fn, EMPTY);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/useTimeout/useTimeout.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/useTimeout/useTimeout.mjs
 var Timeout = class Timeout {
 	static create() {
 		return new Timeout();
@@ -7263,7 +7337,7 @@ function useTimeout() {
 	return timeout;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/ButtonBase/Ripple.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/ButtonBase/Ripple.mjs
 /**
 * @ignore - internal component.
 */
@@ -7345,7 +7419,7 @@ process.env.NODE_ENV !== "production" && (Ripple.propTypes = {
 	timeout: import_prop_types.default.number.isRequired
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/ButtonBase/touchRippleClasses.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/ButtonBase/touchRippleClasses.mjs
 var touchRippleClasses = generateUtilityClasses("MuiTouchRipple", [
 	"root",
 	"ripple",
@@ -7356,7 +7430,7 @@ var touchRippleClasses = generateUtilityClasses("MuiTouchRipple", [
 	"childPulsate"
 ]);
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/transitions/useReducedMotion.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/transitions/useReducedMotion.mjs
 var MEDIA_QUERY = "(prefers-reduced-motion: reduce)";
 var REDUCED_MOTION_DURATION = 0;
 var REDUCED_MOTION_DELAY = "0ms";
@@ -7447,7 +7521,7 @@ function useReducedMotion(mode, disablePrefersReducedMotion) {
 	}), [shouldReduceMotion]);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/ButtonBase/TouchRipple.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/ButtonBase/TouchRipple.mjs
 var DURATION = 550;
 var EMPTY_OBJ = {};
 var EMPTY_ARRAY = [];
@@ -7825,7 +7899,7 @@ process.env.NODE_ENV !== "production" && (TouchRipple.propTypes = {
 	className: import_prop_types.default.string
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/ButtonBase/buttonBaseClasses.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/ButtonBase/buttonBaseClasses.mjs
 function getButtonBaseUtilityClass(slot) {
 	return generateUtilityClass("MuiButtonBase", slot);
 }
@@ -7835,7 +7909,7 @@ var buttonBaseClasses = generateUtilityClasses("MuiButtonBase", [
 	"focusVisible"
 ]);
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/ButtonBase/ButtonBase.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/ButtonBase/ButtonBase.mjs
 var useUtilityClasses$2 = (ownerState) => {
 	const { disabled, focusVisible, focusVisibleClassName, suppressFocusVisible, classes } = ownerState;
 	const composedClasses = composeClasses({ root: [
@@ -7849,7 +7923,7 @@ var useUtilityClasses$2 = (ownerState) => {
 var ButtonBaseRoot = styled$1("button", {
 	name: "MuiButtonBase",
 	slot: "Root"
-})({
+})(memoTheme(({ theme }) => ({
 	display: "inline-flex",
 	alignItems: "center",
 	justifyContent: "center",
@@ -7874,8 +7948,15 @@ var ButtonBaseRoot = styled$1("button", {
 		pointerEvents: "none",
 		cursor: "default"
 	},
-	"@media print": { colorAdjust: "exact" }
-});
+	"@media print": { colorAdjust: "exact" },
+	variants: [{
+		props: { internalDisabledThemeFocusVisible: false },
+		style: theme.focusVisible && {
+			...outsetFocusRing,
+			[`&.${buttonBaseClasses.focusVisible}`]: theme.focusVisible
+		}
+	}]
+})));
 /**
 * `ButtonBase` contains as few styles as possible.
 * It aims to be a simple building block for creating a button.
@@ -7886,7 +7967,7 @@ var ButtonBase = /*#__PURE__*/ React$1.forwardRef(function ButtonBase(inProps, r
 		props: inProps,
 		name: "MuiButtonBase"
 	});
-	const { action, centerRipple = false, children, className, component = "button", disabled = false, disableRipple = false, disableTouchRipple = false, focusRipple = false, focusVisibleClassName, focusableWhenDisabled, suppressFocusVisible = false, internalNativeButton: internalNativeButtonProp, LinkComponent = "a", nativeButton: nativeButtonProp, onBlur, onClick: onClickProp, onContextMenu, onDragLeave, onFocus, onFocusVisible, onKeyDown: onKeyDownProp, onKeyUp: onKeyUpProp, onMouseDown, onMouseLeave, onMouseUp, onTouchEnd, onTouchMove, onTouchStart, tabIndex = 0, TouchRippleProps, touchRippleRef, type, ...other } = props;
+	const { action, centerRipple = false, children, className, component = "button", disabled = false, disableRipple = false, disableTouchRipple = false, focusRipple = false, focusVisibleClassName, focusableWhenDisabled, suppressFocusVisible = false, internalNativeButton: internalNativeButtonProp, internalDisabledThemeFocusVisible = false, LinkComponent = "a", nativeButton: nativeButtonProp, onBlur, onClick: onClickProp, onContextMenu, onDragLeave, onFocus, onFocusVisible, onKeyDown: onKeyDownProp, onKeyUp: onKeyUpProp, onMouseDown, onMouseLeave, onMouseUp, onTouchEnd, onTouchMove, onTouchStart, tabIndex = 0, TouchRippleProps, touchRippleRef, type, ...other } = props;
 	const isLink = Boolean(other.href || other.to);
 	const hasFormAction = Boolean(other.formAction);
 	let ComponentProp = component;
@@ -7977,7 +8058,8 @@ var ButtonBase = /*#__PURE__*/ React$1.forwardRef(function ButtonBase(inProps, r
 		focusRipple,
 		suppressFocusVisible,
 		tabIndex,
-		focusVisible
+		focusVisible,
+		internalDisabledThemeFocusVisible
 	};
 	const classes = useUtilityClasses$2(ownerState);
 	return /*#__PURE__*/ jsxs(ButtonBaseRoot, {
@@ -8187,7 +8269,7 @@ process.env.NODE_ENV !== "production" && (ButtonBase.propTypes = {
 	type: import_prop_types.default.string
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/Breadcrumbs/BreadcrumbCollapsed.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/Breadcrumbs/BreadcrumbCollapsed.mjs
 var BreadcrumbCollapsedButton = styled$1(ButtonBase, { name: "MuiBreadcrumbCollapsed" })(memoTheme(({ theme }) => ({
 	display: "flex",
 	marginLeft: `calc(${theme.spacing(1)} * 0.5)`,
@@ -8246,7 +8328,7 @@ process.env.NODE_ENV !== "production" && (BreadcrumbCollapsed.propTypes = {
 	sx: import_prop_types.default.object
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/Breadcrumbs/breadcrumbsClasses.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/Breadcrumbs/breadcrumbsClasses.mjs
 function getBreadcrumbsUtilityClass(slot) {
 	return generateUtilityClass("MuiBreadcrumbs", slot);
 }
@@ -8257,7 +8339,7 @@ var breadcrumbsClasses = generateUtilityClasses("MuiBreadcrumbs", [
 	"separator"
 ]);
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/Breadcrumbs/Breadcrumbs.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/Breadcrumbs/Breadcrumbs.mjs
 var useUtilityClasses$1 = (ownerState) => {
 	const { classes } = ownerState;
 	return composeClasses({
@@ -8717,6 +8799,13 @@ var ViewCoreSchema = {
 				hidden: void 0,
 				isStandalone: void 0,
 				shouldDisplay: void 0
+			},
+			"dq-image-list": {
+				name: "dq-image-list",
+				isDefaultView: void 0,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
 			}
 		}
 	},
@@ -8826,6 +8915,104 @@ var ViewCoreSchema = {
 		dataQualities: {}
 	},
 	roomConnector: {
+		indexes: {
+			list: {
+				name: "list",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			create: {
+				name: "create",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			import: {
+				name: "import",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			dataquality: {
+				name: "dataquality",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			}
+		},
+		singles: {
+			details: {
+				name: "details",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			edit: {
+				name: "edit",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			}
+		},
+		dataQualities: {}
+	},
+	segmentConnectorType: {
+		indexes: {
+			list: {
+				name: "list",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			create: {
+				name: "create",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			import: {
+				name: "import",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			dataquality: {
+				name: "dataquality",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			}
+		},
+		singles: {
+			details: {
+				name: "details",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			edit: {
+				name: "edit",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			}
+		},
+		dataQualities: {}
+	},
+	segmentConnector: {
 		indexes: {
 			list: {
 				name: "list",
@@ -9459,6 +9646,13 @@ var ViewCoreSchema = {
 				isStandalone: void 0,
 				shouldDisplay: void 0
 			},
+			"3d-maplibre": {
+				name: "3d-maplibre",
+				isDefaultView: void 0,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
 			assets: {
 				name: "assets",
 				isDefaultView: void 0,
@@ -9533,6 +9727,13 @@ var ViewCoreSchema = {
 			},
 			"building-3d-gmap": {
 				name: "building-3d-gmap",
+				isDefaultView: void 0,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			"building-pathfinding": {
+				name: "building-pathfinding",
 				isDefaultView: void 0,
 				hidden: void 0,
 				isStandalone: void 0,
@@ -9709,6 +9910,104 @@ var ViewCoreSchema = {
 		} }
 	},
 	structurePoint: {
+		indexes: {
+			list: {
+				name: "list",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			create: {
+				name: "create",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			import: {
+				name: "import",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			dataquality: {
+				name: "dataquality",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			}
+		},
+		singles: {
+			details: {
+				name: "details",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			edit: {
+				name: "edit",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			}
+		},
+		dataQualities: {}
+	},
+	structureExclusion: {
+		indexes: {
+			list: {
+				name: "list",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			create: {
+				name: "create",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			import: {
+				name: "import",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			dataquality: {
+				name: "dataquality",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			}
+		},
+		singles: {
+			details: {
+				name: "details",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			edit: {
+				name: "edit",
+				isDefaultView: true,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			}
+		},
+		dataQualities: {}
+	},
+	structureExclusionPoint: {
 		indexes: {
 			list: {
 				name: "list",
@@ -16513,6 +16812,21 @@ var roomConnectorTypeObjectTypeDefintion = {
 			},
 			association: void 0
 		},
+		color: {
+			name: "color",
+			objectTypeName: "roomConnectorType",
+			type: "color",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: void 0,
+				regex: void 0
+			},
+			association: void 0
+		},
 		createdAt: {
 			name: "createdAt",
 			objectTypeName: "roomConnectorType",
@@ -16594,7 +16908,7 @@ var roomConnectorObjectTypeDefintion = {
 	name: "roomConnector",
 	type: "table",
 	scope: "private",
-	isMasterData: false,
+	isMasterData: true,
 	isReportingData: false,
 	isSecurityData: false,
 	propertiesByName: {
@@ -16876,6 +17190,424 @@ var roomConnectorObjectTypeDefintion = {
 	}
 };
 //#endregion
+//#region src/core/generated/objectTypeDefinitions/segmentConnectorType.ts
+var segmentConnectorTypeObjectTypeDefintion = {
+	name: "segmentConnectorType",
+	type: "table",
+	scope: "public",
+	isMasterData: true,
+	isReportingData: false,
+	isSecurityData: false,
+	propertiesByName: {
+		id: {
+			name: "id",
+			objectTypeName: "segmentConnectorType",
+			type: "primary-key",
+			options: {
+				mandatory: true,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: void 0
+		},
+		name: {
+			name: "name",
+			objectTypeName: "segmentConnectorType",
+			type: "string",
+			options: {
+				mandatory: true,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: void 0,
+				regex: void 0
+			},
+			association: void 0
+		},
+		code: {
+			name: "code",
+			objectTypeName: "segmentConnectorType",
+			type: "string",
+			options: {
+				mandatory: true,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: void 0,
+				regex: void 0
+			},
+			association: void 0
+		},
+		color: {
+			name: "color",
+			objectTypeName: "segmentConnectorType",
+			type: "color",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: void 0,
+				regex: void 0
+			},
+			association: void 0
+		},
+		createdAt: {
+			name: "createdAt",
+			objectTypeName: "segmentConnectorType",
+			type: "timestamp",
+			options: {
+				mandatory: false,
+				readOnly: true,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: void 0
+		},
+		updatedAt: {
+			name: "updatedAt",
+			objectTypeName: "segmentConnectorType",
+			type: "timestamp",
+			options: {
+				mandatory: false,
+				readOnly: true,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: void 0
+		},
+		externalId: {
+			name: "externalId",
+			objectTypeName: "segmentConnectorType",
+			type: "string",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: void 0
+		},
+		segmentConnectors: {
+			name: "segmentConnectors",
+			objectTypeName: "segmentConnectorType",
+			type: "has-many-paginated",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "segmentConnectorTypeId",
+				targetModelName: "segmentConnector",
+				propertyTypeName: "segmentConnectors",
+				options: { readOnly: false }
+			}
+		}
+	},
+	plural: "segmentConnectorTypes",
+	camelized: {
+		singular: "segmentConnectorType",
+		plural: "segmentConnectorTypes",
+		id: "segmentConnectorTypeId"
+	},
+	capitalized: {
+		singular: "SegmentConnectorType",
+		plural: "SegmentConnectorTypes",
+		id: "SegmentConnectorTypeId"
+	},
+	hidden: false,
+	context: {
+		hasMany: ["segmentConnector"],
+		belongsTo: []
+	}
+};
+//#endregion
+//#region src/core/generated/objectTypeDefinitions/segmentConnector.ts
+var segmentConnectorObjectTypeDefintion = {
+	name: "segmentConnector",
+	type: "table",
+	scope: "private",
+	isMasterData: false,
+	isReportingData: false,
+	isSecurityData: false,
+	propertiesByName: {
+		id: {
+			name: "id",
+			objectTypeName: "segmentConnector",
+			type: "primary-key",
+			options: {
+				mandatory: true,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: void 0
+		},
+		name: {
+			name: "name",
+			objectTypeName: "segmentConnector",
+			type: "string",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: void 0,
+				regex: void 0
+			},
+			association: void 0
+		},
+		createdAt: {
+			name: "createdAt",
+			objectTypeName: "segmentConnector",
+			type: "timestamp",
+			options: {
+				mandatory: false,
+				readOnly: true,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: void 0
+		},
+		updatedAt: {
+			name: "updatedAt",
+			objectTypeName: "segmentConnector",
+			type: "timestamp",
+			options: {
+				mandatory: false,
+				readOnly: true,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: void 0
+		},
+		externalId: {
+			name: "externalId",
+			objectTypeName: "segmentConnector",
+			type: "string",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: void 0
+		},
+		segmentConnectorTypeId: {
+			name: "segmentConnectorTypeId",
+			objectTypeName: "segmentConnector",
+			type: "foreign-key",
+			options: {
+				mandatory: true,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "segmentConnectorTypeId",
+				targetModelName: "segmentConnectorType",
+				propertyTypeName: "segmentConnectorType",
+				options: { readOnly: false }
+			}
+		},
+		segmentConnectorType: {
+			name: "segmentConnectorType",
+			objectTypeName: "segmentConnector",
+			type: "belongs-to",
+			options: {
+				mandatory: true,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "segmentConnectorTypeId",
+				targetModelName: "segmentConnectorType",
+				propertyTypeName: "segmentConnectorType",
+				options: { readOnly: false }
+			}
+		},
+		roomPointSegmentId: {
+			name: "roomPointSegmentId",
+			objectTypeName: "segmentConnector",
+			type: "foreign-key",
+			options: {
+				mandatory: true,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "roomPointSegmentId",
+				targetModelName: "roomPointSegment",
+				propertyTypeName: "roomPointSegment",
+				options: { readOnly: false }
+			}
+		},
+		roomPointSegment: {
+			name: "roomPointSegment",
+			objectTypeName: "segmentConnector",
+			type: "belongs-to",
+			options: {
+				mandatory: true,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "roomPointSegmentId",
+				targetModelName: "roomPointSegment",
+				propertyTypeName: "roomPointSegment",
+				options: { readOnly: false }
+			}
+		},
+		userCompanyCreatedById: {
+			name: "userCompanyCreatedById",
+			objectTypeName: "segmentConnector",
+			type: "foreign-key",
+			options: {
+				mandatory: false,
+				readOnly: true,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyCreatedById",
+				targetModelName: "userCompany",
+				propertyTypeName: "userCompanyCreatedBy",
+				options: { readOnly: true }
+			}
+		},
+		userCompanyCreatedBy: {
+			name: "userCompanyCreatedBy",
+			objectTypeName: "segmentConnector",
+			type: "belongs-to",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyCreatedById",
+				targetModelName: "userCompany",
+				propertyTypeName: "userCompanyCreatedBy",
+				options: { readOnly: true }
+			}
+		},
+		userCompanyUpdatedById: {
+			name: "userCompanyUpdatedById",
+			objectTypeName: "segmentConnector",
+			type: "foreign-key",
+			options: {
+				mandatory: false,
+				readOnly: true,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyUpdatedById",
+				targetModelName: "userCompany",
+				propertyTypeName: "userCompanyUpdatedBy",
+				options: { readOnly: true }
+			}
+		},
+		userCompanyUpdatedBy: {
+			name: "userCompanyUpdatedBy",
+			objectTypeName: "segmentConnector",
+			type: "belongs-to",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyUpdatedById",
+				targetModelName: "userCompany",
+				propertyTypeName: "userCompanyUpdatedBy",
+				options: { readOnly: true }
+			}
+		},
+		companyId: {
+			name: "companyId",
+			objectTypeName: "segmentConnector",
+			type: "foreign-key",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "companyId",
+				targetModelName: "company",
+				propertyTypeName: "company",
+				options: { readOnly: true }
+			}
+		},
+		company: {
+			name: "company",
+			objectTypeName: "segmentConnector",
+			type: "belongs-to",
+			options: {
+				mandatory: true,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "companyId",
+				targetModelName: "company",
+				propertyTypeName: "company",
+				options: { readOnly: true }
+			}
+		}
+	},
+	plural: "segmentConnectors",
+	camelized: {
+		singular: "segmentConnector",
+		plural: "segmentConnectors",
+		id: "segmentConnectorId"
+	},
+	capitalized: {
+		singular: "SegmentConnector",
+		plural: "SegmentConnectors",
+		id: "SegmentConnectorId"
+	},
+	hidden: false,
+	context: {
+		hasMany: [],
+		belongsTo: ["company"]
+	}
+};
+//#endregion
 //#region src/core/generated/objectTypeDefinitions/userCompany.ts
 var userCompanyObjectTypeDefintion = {
 	name: "userCompany",
@@ -17006,6 +17738,42 @@ var userCompanyObjectTypeDefintion = {
 				foreignKey: "userCompanyUpdatedById",
 				targetModelName: "roomConnector",
 				propertyTypeName: "roomConnectorUpdatedBies",
+				options: { readOnly: true }
+			}
+		},
+		segmentConnectorCreatedBies: {
+			name: "segmentConnectorCreatedBies",
+			objectTypeName: "userCompany",
+			type: "has-many-paginated",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyCreatedById",
+				targetModelName: "segmentConnector",
+				propertyTypeName: "segmentConnectorCreatedBies",
+				options: { readOnly: true }
+			}
+		},
+		segmentConnectorUpdatedBies: {
+			name: "segmentConnectorUpdatedBies",
+			objectTypeName: "userCompany",
+			type: "has-many-paginated",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyUpdatedById",
+				targetModelName: "segmentConnector",
+				propertyTypeName: "segmentConnectorUpdatedBies",
 				options: { readOnly: true }
 			}
 		},
@@ -17600,6 +18368,78 @@ var userCompanyObjectTypeDefintion = {
 				foreignKey: "userCompanyUpdatedById",
 				targetModelName: "structurePoint",
 				propertyTypeName: "structurePointUpdatedBies",
+				options: { readOnly: true }
+			}
+		},
+		structureExclusionCreatedBies: {
+			name: "structureExclusionCreatedBies",
+			objectTypeName: "userCompany",
+			type: "has-many-paginated",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyCreatedById",
+				targetModelName: "structureExclusion",
+				propertyTypeName: "structureExclusionCreatedBies",
+				options: { readOnly: true }
+			}
+		},
+		structureExclusionUpdatedBies: {
+			name: "structureExclusionUpdatedBies",
+			objectTypeName: "userCompany",
+			type: "has-many-paginated",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyUpdatedById",
+				targetModelName: "structureExclusion",
+				propertyTypeName: "structureExclusionUpdatedBies",
+				options: { readOnly: true }
+			}
+		},
+		structureExclusionPointCreatedBies: {
+			name: "structureExclusionPointCreatedBies",
+			objectTypeName: "userCompany",
+			type: "has-many-paginated",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyCreatedById",
+				targetModelName: "structureExclusionPoint",
+				propertyTypeName: "structureExclusionPointCreatedBies",
+				options: { readOnly: true }
+			}
+		},
+		structureExclusionPointUpdatedBies: {
+			name: "structureExclusionPointUpdatedBies",
+			objectTypeName: "userCompany",
+			type: "has-many-paginated",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyUpdatedById",
+				targetModelName: "structureExclusionPoint",
+				propertyTypeName: "structureExclusionPointUpdatedBies",
 				options: { readOnly: true }
 			}
 		},
@@ -20464,6 +21304,7 @@ var userCompanyObjectTypeDefintion = {
 		hasMany: [
 			"campus",
 			"roomConnector",
+			"segmentConnector",
 			"userCompany",
 			"personCompany",
 			"buildingType",
@@ -20475,6 +21316,8 @@ var userCompanyObjectTypeDefintion = {
 			"mapScale",
 			"structure",
 			"structurePoint",
+			"structureExclusion",
+			"structureExclusionPoint",
 			"floor",
 			"distributionCostType",
 			"roomType",
@@ -23730,6 +24573,51 @@ var buildingObjectTypeDefintion = {
 			},
 			association: void 0
 		},
+		pathfindingRegenStatus: {
+			name: "pathfindingRegenStatus",
+			objectTypeName: "building",
+			type: "string",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: "idle",
+				regex: void 0
+			},
+			association: void 0
+		},
+		pathfindingRegenRequestedAt: {
+			name: "pathfindingRegenRequestedAt",
+			objectTypeName: "building",
+			type: "datetime",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: null,
+				regex: void 0
+			},
+			association: void 0
+		},
+		pathfindingRegenCompletedAt: {
+			name: "pathfindingRegenCompletedAt",
+			objectTypeName: "building",
+			type: "datetime",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: null,
+				regex: void 0
+			},
+			association: void 0
+		},
 		createdAt: {
 			name: "createdAt",
 			objectTypeName: "building",
@@ -24862,6 +25750,24 @@ var structureObjectTypeDefintion = {
 				options: { readOnly: false }
 			}
 		},
+		structureExclusions: {
+			name: "structureExclusions",
+			objectTypeName: "structure",
+			type: "has-many-paginated",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "structureId",
+				targetModelName: "structureExclusion",
+				propertyTypeName: "structureExclusions",
+				options: { readOnly: false }
+			}
+		},
 		floors: {
 			name: "floors",
 			objectTypeName: "structure",
@@ -24930,7 +25836,11 @@ var structureObjectTypeDefintion = {
 	},
 	hidden: false,
 	context: {
-		hasMany: ["structurePoint", "floor"],
+		hasMany: [
+			"structurePoint",
+			"structureExclusion",
+			"floor"
+		],
 		belongsTo: ["company"]
 	}
 };
@@ -25196,6 +26106,532 @@ var structurePointObjectTypeDefintion = {
 		singular: "StructurePoint",
 		plural: "StructurePoints",
 		id: "StructurePointId"
+	},
+	hidden: false,
+	context: {
+		hasMany: [],
+		belongsTo: ["company"]
+	}
+};
+//#endregion
+//#region src/core/generated/objectTypeDefinitions/structureExclusion.ts
+var structureExclusionObjectTypeDefintion = {
+	name: "structureExclusion",
+	type: "table",
+	scope: "private",
+	isMasterData: true,
+	isReportingData: false,
+	isSecurityData: false,
+	propertiesByName: {
+		id: {
+			name: "id",
+			objectTypeName: "structureExclusion",
+			type: "primary-key",
+			options: {
+				mandatory: true,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: void 0
+		},
+		name: {
+			name: "name",
+			objectTypeName: "structureExclusion",
+			type: "string",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: void 0,
+				regex: void 0
+			},
+			association: void 0
+		},
+		createdAt: {
+			name: "createdAt",
+			objectTypeName: "structureExclusion",
+			type: "timestamp",
+			options: {
+				mandatory: false,
+				readOnly: true,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: void 0
+		},
+		updatedAt: {
+			name: "updatedAt",
+			objectTypeName: "structureExclusion",
+			type: "timestamp",
+			options: {
+				mandatory: false,
+				readOnly: true,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: void 0
+		},
+		externalId: {
+			name: "externalId",
+			objectTypeName: "structureExclusion",
+			type: "string",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: void 0
+		},
+		structureId: {
+			name: "structureId",
+			objectTypeName: "structureExclusion",
+			type: "foreign-key",
+			options: {
+				mandatory: true,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "structureId",
+				targetModelName: "structure",
+				propertyTypeName: "structure",
+				options: { readOnly: false }
+			}
+		},
+		structure: {
+			name: "structure",
+			objectTypeName: "structureExclusion",
+			type: "belongs-to",
+			options: {
+				mandatory: true,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "structureId",
+				targetModelName: "structure",
+				propertyTypeName: "structure",
+				options: { readOnly: false }
+			}
+		},
+		userCompanyCreatedById: {
+			name: "userCompanyCreatedById",
+			objectTypeName: "structureExclusion",
+			type: "foreign-key",
+			options: {
+				mandatory: false,
+				readOnly: true,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyCreatedById",
+				targetModelName: "userCompany",
+				propertyTypeName: "userCompanyCreatedBy",
+				options: { readOnly: true }
+			}
+		},
+		userCompanyCreatedBy: {
+			name: "userCompanyCreatedBy",
+			objectTypeName: "structureExclusion",
+			type: "belongs-to",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyCreatedById",
+				targetModelName: "userCompany",
+				propertyTypeName: "userCompanyCreatedBy",
+				options: { readOnly: true }
+			}
+		},
+		userCompanyUpdatedById: {
+			name: "userCompanyUpdatedById",
+			objectTypeName: "structureExclusion",
+			type: "foreign-key",
+			options: {
+				mandatory: false,
+				readOnly: true,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyUpdatedById",
+				targetModelName: "userCompany",
+				propertyTypeName: "userCompanyUpdatedBy",
+				options: { readOnly: true }
+			}
+		},
+		userCompanyUpdatedBy: {
+			name: "userCompanyUpdatedBy",
+			objectTypeName: "structureExclusion",
+			type: "belongs-to",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyUpdatedById",
+				targetModelName: "userCompany",
+				propertyTypeName: "userCompanyUpdatedBy",
+				options: { readOnly: true }
+			}
+		},
+		structureExclusionPoints: {
+			name: "structureExclusionPoints",
+			objectTypeName: "structureExclusion",
+			type: "has-many-paginated",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "structureExclusionId",
+				targetModelName: "structureExclusionPoint",
+				propertyTypeName: "structureExclusionPoints",
+				options: { readOnly: false }
+			}
+		},
+		companyId: {
+			name: "companyId",
+			objectTypeName: "structureExclusion",
+			type: "foreign-key",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "companyId",
+				targetModelName: "company",
+				propertyTypeName: "company",
+				options: { readOnly: true }
+			}
+		},
+		company: {
+			name: "company",
+			objectTypeName: "structureExclusion",
+			type: "belongs-to",
+			options: {
+				mandatory: true,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "companyId",
+				targetModelName: "company",
+				propertyTypeName: "company",
+				options: { readOnly: true }
+			}
+		}
+	},
+	plural: "structureExclusions",
+	camelized: {
+		singular: "structureExclusion",
+		plural: "structureExclusions",
+		id: "structureExclusionId"
+	},
+	capitalized: {
+		singular: "StructureExclusion",
+		plural: "StructureExclusions",
+		id: "StructureExclusionId"
+	},
+	hidden: false,
+	context: {
+		hasMany: ["structureExclusionPoint"],
+		belongsTo: ["company"]
+	}
+};
+//#endregion
+//#region src/core/generated/objectTypeDefinitions/structureExclusionPoint.ts
+var structureExclusionPointObjectTypeDefintion = {
+	name: "structureExclusionPoint",
+	type: "table",
+	scope: "private",
+	isMasterData: true,
+	isReportingData: false,
+	isSecurityData: false,
+	propertiesByName: {
+		id: {
+			name: "id",
+			objectTypeName: "structureExclusionPoint",
+			type: "primary-key",
+			options: {
+				mandatory: true,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: void 0
+		},
+		x: {
+			name: "x",
+			objectTypeName: "structureExclusionPoint",
+			type: "float",
+			options: {
+				mandatory: true,
+				readOnly: true,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: void 0,
+				regex: void 0
+			},
+			association: void 0
+		},
+		y: {
+			name: "y",
+			objectTypeName: "structureExclusionPoint",
+			type: "float",
+			options: {
+				mandatory: true,
+				readOnly: true,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: void 0,
+				regex: void 0
+			},
+			association: void 0
+		},
+		sortIndex: {
+			name: "sortIndex",
+			objectTypeName: "structureExclusionPoint",
+			type: "integer",
+			options: {
+				mandatory: true,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: 0,
+				regex: void 0
+			},
+			association: void 0
+		},
+		createdAt: {
+			name: "createdAt",
+			objectTypeName: "structureExclusionPoint",
+			type: "timestamp",
+			options: {
+				mandatory: false,
+				readOnly: true,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: void 0
+		},
+		updatedAt: {
+			name: "updatedAt",
+			objectTypeName: "structureExclusionPoint",
+			type: "timestamp",
+			options: {
+				mandatory: false,
+				readOnly: true,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: void 0
+		},
+		externalId: {
+			name: "externalId",
+			objectTypeName: "structureExclusionPoint",
+			type: "string",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: void 0
+		},
+		structureExclusionId: {
+			name: "structureExclusionId",
+			objectTypeName: "structureExclusionPoint",
+			type: "foreign-key",
+			options: {
+				mandatory: true,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "structureExclusionId",
+				targetModelName: "structureExclusion",
+				propertyTypeName: "structureExclusion",
+				options: { readOnly: false }
+			}
+		},
+		structureExclusion: {
+			name: "structureExclusion",
+			objectTypeName: "structureExclusionPoint",
+			type: "belongs-to",
+			options: {
+				mandatory: true,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "structureExclusionId",
+				targetModelName: "structureExclusion",
+				propertyTypeName: "structureExclusion",
+				options: { readOnly: false }
+			}
+		},
+		userCompanyCreatedById: {
+			name: "userCompanyCreatedById",
+			objectTypeName: "structureExclusionPoint",
+			type: "foreign-key",
+			options: {
+				mandatory: false,
+				readOnly: true,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyCreatedById",
+				targetModelName: "userCompany",
+				propertyTypeName: "userCompanyCreatedBy",
+				options: { readOnly: true }
+			}
+		},
+		userCompanyCreatedBy: {
+			name: "userCompanyCreatedBy",
+			objectTypeName: "structureExclusionPoint",
+			type: "belongs-to",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyCreatedById",
+				targetModelName: "userCompany",
+				propertyTypeName: "userCompanyCreatedBy",
+				options: { readOnly: true }
+			}
+		},
+		userCompanyUpdatedById: {
+			name: "userCompanyUpdatedById",
+			objectTypeName: "structureExclusionPoint",
+			type: "foreign-key",
+			options: {
+				mandatory: false,
+				readOnly: true,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyUpdatedById",
+				targetModelName: "userCompany",
+				propertyTypeName: "userCompanyUpdatedBy",
+				options: { readOnly: true }
+			}
+		},
+		userCompanyUpdatedBy: {
+			name: "userCompanyUpdatedBy",
+			objectTypeName: "structureExclusionPoint",
+			type: "belongs-to",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "userCompanyUpdatedById",
+				targetModelName: "userCompany",
+				propertyTypeName: "userCompanyUpdatedBy",
+				options: { readOnly: true }
+			}
+		},
+		companyId: {
+			name: "companyId",
+			objectTypeName: "structureExclusionPoint",
+			type: "foreign-key",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: true,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "companyId",
+				targetModelName: "company",
+				propertyTypeName: "company",
+				options: { readOnly: true }
+			}
+		},
+		company: {
+			name: "company",
+			objectTypeName: "structureExclusionPoint",
+			type: "belongs-to",
+			options: {
+				mandatory: true,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "companyId",
+				targetModelName: "company",
+				propertyTypeName: "company",
+				options: { readOnly: true }
+			}
+		}
+	},
+	plural: "structureExclusionPoints",
+	camelized: {
+		singular: "structureExclusionPoint",
+		plural: "structureExclusionPoints",
+		id: "structureExclusionPointId"
+	},
+	capitalized: {
+		singular: "StructureExclusionPoint",
+		plural: "StructureExclusionPoints",
+		id: "StructureExclusionPointId"
 	},
 	hidden: false,
 	context: {
@@ -25633,6 +27069,51 @@ var floorObjectTypeDefintion = {
 				technical: false,
 				unit: void 0,
 				defaultValue: void 0,
+				regex: void 0
+			},
+			association: void 0
+		},
+		pathfindingGenerateStatus: {
+			name: "pathfindingGenerateStatus",
+			objectTypeName: "floor",
+			type: "string",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: "idle",
+				regex: void 0
+			},
+			association: void 0
+		},
+		pathfindingGenerateRequestedAt: {
+			name: "pathfindingGenerateRequestedAt",
+			objectTypeName: "floor",
+			type: "datetime",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: null,
+				regex: void 0
+			},
+			association: void 0
+		},
+		pathfindingGenerateCompletedAt: {
+			name: "pathfindingGenerateCompletedAt",
+			objectTypeName: "floor",
+			type: "datetime",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: null,
 				regex: void 0
 			},
 			association: void 0
@@ -31693,6 +33174,24 @@ var roomPointSegmentObjectTypeDefintion = {
 			},
 			association: void 0
 		},
+		segmentConnectors: {
+			name: "segmentConnectors",
+			objectTypeName: "roomPointSegment",
+			type: "has-many-paginated",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0
+			},
+			association: {
+				foreignKey: "roomPointSegmentId",
+				targetModelName: "segmentConnector",
+				propertyTypeName: "segmentConnectors",
+				options: { readOnly: false }
+			}
+		},
 		roomPointSegmentTypeId: {
 			name: "roomPointSegmentTypeId",
 			objectTypeName: "roomPointSegment",
@@ -31923,7 +33422,7 @@ var roomPointSegmentObjectTypeDefintion = {
 	},
 	hidden: false,
 	context: {
-		hasMany: [],
+		hasMany: ["segmentConnector"],
 		belongsTo: ["company"]
 	}
 };
@@ -45478,6 +46977,36 @@ var personToRoomBookingObjectTypeDefintion = {
 			},
 			association: void 0
 		},
+		roomHasBeenConfirmedAt: {
+			name: "roomHasBeenConfirmedAt",
+			objectTypeName: "personToRoomBooking",
+			type: "datetime",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: null,
+				regex: void 0
+			},
+			association: void 0
+		},
+		emailConfirmationWarningNotificationSentAt: {
+			name: "emailConfirmationWarningNotificationSentAt",
+			objectTypeName: "personToRoomBooking",
+			type: "datetime",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: null,
+				regex: void 0
+			},
+			association: void 0
+		},
 		createdAt: {
 			name: "createdAt",
 			objectTypeName: "personToRoomBooking",
@@ -56358,6 +57887,8 @@ var JupSchema;
 	const campus = _JupSchema.campus = campusObjectTypeDefintion;
 	const roomConnectorType = _JupSchema.roomConnectorType = roomConnectorTypeObjectTypeDefintion;
 	const roomConnector = _JupSchema.roomConnector = roomConnectorObjectTypeDefintion;
+	const segmentConnectorType = _JupSchema.segmentConnectorType = segmentConnectorTypeObjectTypeDefintion;
+	const segmentConnector = _JupSchema.segmentConnector = segmentConnectorObjectTypeDefintion;
 	const userCompany = _JupSchema.userCompany = userCompanyObjectTypeDefintion;
 	const personGender = _JupSchema.personGender = personGenderObjectTypeDefintion;
 	const personCompany = _JupSchema.personCompany = personCompanyObjectTypeDefintion;
@@ -56372,6 +57903,8 @@ var JupSchema;
 	const mapScale = _JupSchema.mapScale = mapScaleObjectTypeDefintion;
 	const structure = _JupSchema.structure = structureObjectTypeDefintion;
 	const structurePoint = _JupSchema.structurePoint = structurePointObjectTypeDefintion;
+	const structureExclusion = _JupSchema.structureExclusion = structureExclusionObjectTypeDefintion;
+	const structureExclusionPoint = _JupSchema.structureExclusionPoint = structureExclusionPointObjectTypeDefintion;
 	const floor = _JupSchema.floor = floorObjectTypeDefintion;
 	const distributionCostType = _JupSchema.distributionCostType = distributionCostTypeObjectTypeDefintion;
 	const roomTypeGroup = _JupSchema.roomTypeGroup = roomTypeGroupObjectTypeDefintion;
@@ -56479,6 +58012,8 @@ var JupSchema;
 		campus,
 		roomConnectorType,
 		roomConnector,
+		segmentConnectorType,
+		segmentConnector,
 		userCompany,
 		personGender,
 		personCompany,
@@ -56493,6 +58028,8 @@ var JupSchema;
 		mapScale,
 		structure,
 		structurePoint,
+		structureExclusion,
+		structureExclusionPoint,
 		floor,
 		distributionCostType,
 		roomTypeGroup,
@@ -56601,6 +58138,8 @@ var JupSchema;
 		campus,
 		roomConnectorType,
 		roomConnector,
+		segmentConnectorType,
+		segmentConnector,
 		userCompany,
 		personGender,
 		personCompany,
@@ -56615,6 +58154,8 @@ var JupSchema;
 		mapScale,
 		structure,
 		structurePoint,
+		structureExclusion,
+		structureExclusionPoint,
 		floor,
 		distributionCostType,
 		roomTypeGroup,
@@ -56736,7 +58277,7 @@ function getObjectTypeCapitalizedSingularLabel(translation, objectTypeName) {
 	return capitalizeFirstLetter(getObjectTypeSingularLabel(translation, objectTypeName));
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/locale/utils/buildFormatNumber.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/locale/utils/buildFormatNumber.mjs
 var buildFormatNumber = (locale) => {
 	let formatter;
 	if (typeof Intl !== "undefined" && Intl.NumberFormat) try {
@@ -56748,7 +58289,7 @@ var buildFormatNumber = (locale) => {
 	};
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/locale/deDE.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/locale/deDE.mjs
 var formatNumber$4 = buildFormatNumber("de-DE");
 var deDE$1 = { components: {
 	MuiBreadcrumbs: { defaultProps: { expandText: "Pfad anzeigen" } },
@@ -56786,10 +58327,10 @@ var deDE$1 = { components: {
 	} }
 } };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/locale/enUS.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/locale/enUS.mjs
 var enUS$1 = {};
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/locale/esES.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/locale/esES.mjs
 var formatNumber$3 = buildFormatNumber("es-ES");
 var esES$1 = { components: {
 	MuiBreadcrumbs: { defaultProps: { expandText: "Mostrar ruta" } },
@@ -56827,7 +58368,7 @@ var esES$1 = { components: {
 	} }
 } };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/locale/frFR.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/locale/frFR.mjs
 var formatNumber$2 = buildFormatNumber("fr-FR");
 var frFR$1 = { components: {
 	MuiBreadcrumbs: { defaultProps: { expandText: "Montrer le chemin" } },
@@ -56865,7 +58406,7 @@ var frFR$1 = { components: {
 	} }
 } };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/locale/itIT.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/locale/itIT.mjs
 var formatNumber$1 = buildFormatNumber("it-IT");
 var itIT$1 = { components: {
 	MuiBreadcrumbs: { defaultProps: { expandText: "Visualizza percorso" } },
@@ -56903,7 +58444,7 @@ var itIT$1 = { components: {
 	} }
 } };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/locale/nlNL.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/locale/nlNL.mjs
 var formatNumber = buildFormatNumber("nl-NL");
 var nlNL$1 = { components: {
 	MuiBreadcrumbs: { defaultProps: { expandText: "Pad tonen" } },
@@ -56941,12 +58482,12 @@ var nlNL$1 = { components: {
 	} }
 } };
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.11.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@e_c1e046f26e00aaee7e12aa5ef362d7ea/node_modules/@mui/x-date-pickers/locales/utils/getPickersLocalization.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.14.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@em_00c1d8ea85ab5c1149c18c16b8d695d8/node_modules/@mui/x-date-pickers/locales/utils/getPickersLocalization.mjs
 var getPickersLocalization = (pickersTranslations) => {
 	return { components: { MuiLocalizationProvider: { defaultProps: { localeText: _extends({}, pickersTranslations) } } } };
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.11.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@e_c1e046f26e00aaee7e12aa5ef362d7ea/node_modules/@mui/x-date-pickers/locales/deDE.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.14.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@em_00c1d8ea85ab5c1149c18c16b8d695d8/node_modules/@mui/x-date-pickers/locales/deDE.mjs
 var timeViews$1 = {
 	hours: "Stunden",
 	minutes: "Minuten",
@@ -57064,7 +58605,7 @@ var enUS = getPickersLocalization({
 	empty: "Empty"
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.11.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@e_c1e046f26e00aaee7e12aa5ef362d7ea/node_modules/@mui/x-date-pickers/locales/esES.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.14.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@em_00c1d8ea85ab5c1149c18c16b8d695d8/node_modules/@mui/x-date-pickers/locales/esES.mjs
 var views$2 = {
 	hours: "Horas",
 	minutes: "Minutos",
@@ -57125,7 +58666,7 @@ var esES = getPickersLocalization({
 	empty: "Vacío"
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.11.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@e_c1e046f26e00aaee7e12aa5ef362d7ea/node_modules/@mui/x-date-pickers/locales/frFR.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.14.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@em_00c1d8ea85ab5c1149c18c16b8d695d8/node_modules/@mui/x-date-pickers/locales/frFR.mjs
 var views$1 = {
 	hours: "heures",
 	minutes: "minutes",
@@ -57186,7 +58727,7 @@ var frFR = getPickersLocalization({
 	empty: "Vider"
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.11.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@e_c1e046f26e00aaee7e12aa5ef362d7ea/node_modules/@mui/x-date-pickers/locales/itIT.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.14.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@em_00c1d8ea85ab5c1149c18c16b8d695d8/node_modules/@mui/x-date-pickers/locales/itIT.mjs
 var views = {
 	hours: "le ore",
 	minutes: "i minuti",
@@ -57249,7 +58790,7 @@ var itIT = getPickersLocalization({
 	empty: "Vuoto"
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.11.0_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@e_c1e046f26e00aaee7e12aa5ef362d7ea/node_modules/@mui/x-date-pickers/locales/nlNL.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.14.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@em_00c1d8ea85ab5c1149c18c16b8d695d8/node_modules/@mui/x-date-pickers/locales/nlNL.mjs
 var timeViews = {
 	hours: "uren",
 	minutes: "minuten",
@@ -59496,8 +61037,8 @@ function parse$1(s, ...patterns) {
 function simpleParse(...keys) {
 	return (match, cursor) => {
 		const ret = {};
-		let i;
-		for (i = 0; i < keys.length; i++) ret[keys[i]] = parseInteger(match[cursor + i]);
+		let i = 0;
+		for (; i < keys.length; i++) ret[keys[i]] = parseInteger(match[cursor + i]);
 		return [
 			ret,
 			null,
@@ -64548,7 +66089,7 @@ var require_warning = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = warning;
 }));
 //#endregion
-//#region node_modules/.pnpm/jotai@2.20.2_@babel+core@7.29.7_@babel+template@7.29.7_@types+react@19.2.17_react@19.2.7/node_modules/jotai/esm/vanilla/internals.mjs
+//#region node_modules/.pnpm/jotai@2.20.3_@babel+core@7.29.7_@babel+template@7.29.7_@types+react@19.3.0_react@19.3.0/node_modules/jotai/esm/vanilla/internals.mjs
 var import_node_polyglot = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var entries = require_object_entries();
 	var warning = require_warning();
@@ -65382,7 +66923,7 @@ function buildStore(...partialBuildingBlocks) {
 	return store;
 }
 //#endregion
-//#region node_modules/.pnpm/jotai@2.20.2_@babel+core@7.29.7_@babel+template@7.29.7_@types+react@19.2.17_react@19.2.7/node_modules/jotai/esm/vanilla.mjs
+//#region node_modules/.pnpm/jotai@2.20.3_@babel+core@7.29.7_@babel+template@7.29.7_@types+react@19.3.0_react@19.3.0/node_modules/jotai/esm/vanilla.mjs
 var keyCount = 0;
 function atom(read, write) {
 	const key = `atom${++keyCount}`;
@@ -65404,9 +66945,7 @@ function defaultRead(get) {
 function defaultWrite(get, set, arg) {
 	return set(this, typeof arg === "function" ? arg(get(this)) : arg);
 }
-var overriddenCreateStore;
 function createStore$1() {
-	if (overriddenCreateStore) return overriddenCreateStore();
 	return buildStore();
 }
 var defaultStore;
@@ -65415,7 +66954,7 @@ function getDefaultStore() {
 	return defaultStore;
 }
 //#endregion
-//#region node_modules/.pnpm/jotai@2.20.2_@babel+core@7.29.7_@babel+template@7.29.7_@types+react@19.2.17_react@19.2.7/node_modules/jotai/esm/react.mjs
+//#region node_modules/.pnpm/jotai@2.20.3_@babel+core@7.29.7_@babel+template@7.29.7_@types+react@19.3.0_react@19.3.0/node_modules/jotai/esm/react.mjs
 var StoreContext = createContext(void 0);
 function useStore(options) {
 	const store = useContext(StoreContext);
@@ -71384,7 +72923,7 @@ function ClickOnIndexViewMenuPathBreadcrumb(props) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/Box/boxClasses.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/Box/boxClasses.mjs
 var boxClasses = generateUtilityClasses("MuiBox", ["root"]);
 var Box$1 = createBox({
 	themeId: identifier_default,
@@ -71516,7 +73055,7 @@ function PaperFrame(props) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/jotai-family@1.1.0_jotai@2.20.2_@babel+core@7.29.7_@babel+template@7.29.7_@types+react@19.2.17_react@19.2.7_/node_modules/jotai-family/dist/atomFamily.js
+//#region node_modules/.pnpm/jotai-family@1.1.0_jotai@2.20.3_@babel+core@7.29.7_@babel+template@7.29.7_@types+react@19.3.0_react@19.3.0_/node_modules/jotai-family/dist/atomFamily.js
 function atomFamily(initializeAtom, areEqual) {
 	let shouldRemove = null;
 	const atoms = /* @__PURE__ */ new Map();
@@ -71575,7 +73114,7 @@ function atomFamily(initializeAtom, areEqual) {
 }
 atomFamily((_workCanvasId) => atom(false));
 //#endregion
-//#region node_modules/.pnpm/jotai@2.20.2_@babel+core@7.29.7_@babel+template@7.29.7_@types+react@19.2.17_react@19.2.7/node_modules/jotai/esm/vanilla/utils.mjs
+//#region node_modules/.pnpm/jotai@2.20.3_@babel+core@7.29.7_@babel+template@7.29.7_@types+react@19.3.0_react@19.3.0/node_modules/jotai/esm/vanilla/utils.mjs
 var RESET = /* @__PURE__ */ Symbol("");
 var isPromiseLike$2 = (x) => typeof (x == null ? void 0 : x.then) === "function";
 function createJSONStorage(getStringStorage = () => {
@@ -71832,9 +73371,9 @@ function getIndexViewPathIncludingDataQuality(objectTypeName, view) {
 	return null;
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/router/url.js
+//#region node_modules/.pnpm/react-router@8.4.0_react-dom@19.3.0_react@19.3.0__react@19.3.0/node_modules/react-router/dist/production/lib/router/url.js
 /**
-* react-router v8.3.0
+* react-router v8.4.0
 *
 * Copyright (c) Remix Software Inc.
 *
@@ -71849,9 +73388,9 @@ function normalizeProtocolRelativeUrl(url, protocol) {
 	return protocol + url.replace(/\\/g, "/");
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/router/history.js
+//#region node_modules/.pnpm/react-router@8.4.0_react-dom@19.3.0_react@19.3.0__react@19.3.0/node_modules/react-router/dist/production/lib/router/history.js
 /**
-* react-router v8.3.0
+* react-router v8.4.0
 *
 * Copyright (c) Remix Software Inc.
 *
@@ -71868,7 +73407,7 @@ function warning$3(cond, message) {
 		if (typeof console !== "undefined") console.warn(message);
 		try {
 			throw new Error(message);
-		} catch (e) {}
+		} catch {}
 	}
 }
 /**
@@ -71910,9 +73449,9 @@ function parsePath(path) {
 	return parsedPath;
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/router/utils.js
+//#region node_modules/.pnpm/react-router@8.4.0_react-dom@19.3.0_react@19.3.0__react@19.3.0/node_modules/react-router/dist/production/lib/router/utils.js
 /**
-* react-router v8.3.0
+* react-router v8.4.0
 *
 * Copyright (c) Remix Software Inc.
 *
@@ -72108,13 +73647,13 @@ function matchPathImpl(pattern, pathname, matcher, compiledParams) {
 	let match = pathname.match(matcher);
 	if (!match) return null;
 	let matchedPathname = match[0];
-	let pathnameBase = matchedPathname.replace(/(.)\/+$/, "$1");
+	let pathnameBase = removeTrailingSlash(matchedPathname, 1);
 	let captureGroups = match.slice(1);
 	return {
 		params: compiledParams.reduce((memo, { paramName, isOptional }, index) => {
 			if (paramName === "*") {
 				let splatValue = captureGroups[index] || "";
-				pathnameBase = matchedPathname.slice(0, matchedPathname.length - splatValue.length).replace(/(.)\/+$/, "$1");
+				pathnameBase = removeTrailingSlash(matchedPathname.slice(0, matchedPathname.length - splatValue.length), 1);
 			}
 			const value = captureGroups[index];
 			if (isOptional && !value) memo[paramName] = void 0;
@@ -72179,7 +73718,7 @@ function resolvePath(to, fromPathname = "/") {
 	let pathname;
 	if (toPathname) {
 		toPathname = removeDoubleSlashes(toPathname);
-		if (toPathname.startsWith("/")) pathname = resolvePathname(toPathname.substring(1), "/");
+		if (toPathname.startsWith("/") || toPathname.startsWith("\\")) pathname = resolvePathname(toPathname.substring(1), "/");
 		else pathname = resolvePathname(toPathname, fromPathname);
 	} else pathname = fromPathname;
 	return {
@@ -72240,7 +73779,11 @@ function resolveTo(toArg, routePathnames, locationPathname, isPathRelative = fal
 }
 var removeDoubleSlashes = (path) => path.replace(/[\\/]{2,}/g, "/");
 var joinPaths = (paths) => removeDoubleSlashes(paths.join("/"));
-var removeTrailingSlash = (path) => path.replace(/\/+$/, "");
+function removeTrailingSlash(path, minLength = 0) {
+	let end = path.length;
+	while (end > minLength && path.charCodeAt(end - 1) === 47) end--;
+	return end === path.length ? path : path.slice(0, end);
+}
 var normalizePathname = (pathname) => removeTrailingSlash(pathname).replace(/^\/*/, "/");
 var normalizeSearch = (search) => !search || search === "?" ? "" : search.startsWith("?") ? search : "?" + search;
 var normalizeHash = (hash) => !hash || hash === "#" ? "" : hash.startsWith("#") ? hash : "#" + hash;
@@ -72313,7 +73856,7 @@ function parseToInfo(_to, basename) {
 		let path = stripBasename(targetUrl.pathname, basename);
 		if (targetUrl.origin === currentUrl.origin && path != null) to = path + targetUrl.search + targetUrl.hash;
 		else isExternal = true;
-	} catch (e) {
+	} catch {
 		warning$3(false, `<Link to="${to}"> contains an invalid URL which will probably break when clicked - please update to a valid URL path.`);
 	}
 	return {
@@ -72323,9 +73866,53 @@ function parseToInfo(_to, basename) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/router/router.js
+//#region node_modules/.pnpm/react-router@8.4.0_react-dom@19.3.0_react@19.3.0__react@19.3.0/node_modules/react-router/dist/production/lib/router/navigation.js
 /**
-* react-router v8.3.0
+* react-router v8.4.0
+*
+* Copyright (c) Remix Software Inc.
+*
+* This source code is licensed under the MIT license found in the
+* LICENSE.md file in the root directory of this source tree.
+*
+* @license MIT
+*/
+var DEFAULT_NAVIGATION_URL = new URL("http://localhost");
+function getNavigatorCurrentUrl(navigator) {
+	if (navigator.createURL) return navigator.createURL("/");
+	try {
+		return new URL(navigator.createHref("/"), DEFAULT_NAVIGATION_URL);
+	} catch {
+		return DEFAULT_NAVIGATION_URL;
+	}
+}
+function isSameOrigin(a, b) {
+	return a.origin === b.origin && (a.origin !== "null" || a.protocol === b.protocol && a.host === b.host);
+}
+function isExplicitUrl(destination, target) {
+	if (destination.startsWith("//")) return true;
+	let protocol = target.protocol.toLowerCase();
+	if (!destination.toLowerCase().startsWith(protocol)) return false;
+	return target.host === "" || destination.slice(protocol.length).startsWith("//");
+}
+function validateNavigationTarget(original, resolved, currentUrl, externalPolicy) {
+	let originalUrl = null;
+	try {
+		originalUrl = original == null ? null : new URL(original, currentUrl);
+	} catch {}
+	let resolvedUrl = new URL(resolved, currentUrl);
+	let originalIsExternal = originalUrl != null && !isSameOrigin(originalUrl, currentUrl);
+	let resolvedIsExternal = !isSameOrigin(resolvedUrl, currentUrl);
+	if (externalPolicy === "reject") {
+		if (originalIsExternal || resolvedIsExternal) throw new Error("External navigation is not allowed");
+	} else if (resolvedIsExternal) {
+		if (originalUrl == null || !isExplicitUrl(original, originalUrl) || !isSameOrigin(originalUrl, resolvedUrl)) throw new Error("External navigation is not allowed");
+	}
+}
+//#endregion
+//#region node_modules/.pnpm/react-router@8.4.0_react-dom@19.3.0_react@19.3.0__react@19.3.0/node_modules/react-router/dist/production/lib/router/router.js
+/**
+* react-router v8.4.0
 *
 * Copyright (c) Remix Software Inc.
 *
@@ -72363,9 +73950,9 @@ function hasInvalidProtocol(location) {
 	}
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/context.js
+//#region node_modules/.pnpm/react-router@8.4.0_react-dom@19.3.0_react@19.3.0__react@19.3.0/node_modules/react-router/dist/production/lib/context.js
 /**
-* react-router v8.3.0
+* react-router v8.4.0
 *
 * Copyright (c) Remix Software Inc.
 *
@@ -72378,13 +73965,17 @@ var DataRouterContext = React$1.createContext(null);
 DataRouterContext.displayName = "DataRouter";
 var DataRouterStateContext = React$1.createContext(null);
 DataRouterStateContext.displayName = "DataRouterState";
+var DataRouterDataContext = React$1.createContext(null);
+DataRouterDataContext.displayName = "DataRouterData";
+var DataRouterNavigationContext = React$1.createContext(null);
+DataRouterNavigationContext.displayName = "DataRouterNavigation";
 var RSCRouterContext = React$1.createContext(false);
 function useIsRSCRouterContext() {
 	return React$1.useContext(RSCRouterContext);
 }
 var ViewTransitionContext = React$1.createContext({ isTransitioning: false });
 ViewTransitionContext.displayName = "ViewTransition";
-var FetchersContext = React$1.createContext(/* @__PURE__ */ new Map());
+var FetchersContext = React$1.createContext(null);
 FetchersContext.displayName = "Fetchers";
 var AwaitContext = React$1.createContext(null);
 AwaitContext.displayName = "Await";
@@ -72398,12 +73989,16 @@ var RouteContext = React$1.createContext({
 	isDataRoute: false
 });
 RouteContext.displayName = "Route";
+var IsDataRouteContext = React$1.createContext(false);
+IsDataRouteContext.displayName = "IsDataRoute";
+var RouteIdContext = React$1.createContext(void 0);
+RouteIdContext.displayName = "RouteId";
 var RouteErrorContext = React$1.createContext(null);
 RouteErrorContext.displayName = "RouteError";
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/errors.js
+//#region node_modules/.pnpm/react-router@8.4.0_react-dom@19.3.0_react@19.3.0__react@19.3.0/node_modules/react-router/dist/production/lib/errors.js
 /**
-* react-router v8.3.0
+* react-router v8.4.0
 *
 * Copyright (c) Remix Software Inc.
 *
@@ -72428,9 +74023,9 @@ function decodeRouteErrorResponseDigest(digest) {
 	} catch {}
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/hooks.js
+//#region node_modules/.pnpm/react-router@8.4.0_react-dom@19.3.0_react@19.3.0__react@19.3.0/node_modules/react-router/dist/production/lib/hooks.js
 /**
-* react-router v8.3.0
+* react-router v8.4.0
 *
 * Copyright (c) Remix Software Inc.
 *
@@ -72665,8 +74260,7 @@ var navigateEffectWarning = "You should call navigate() in a React.useEffect(), 
 * @returns A navigate function for programmatic navigation
 */
 function useNavigate() {
-	let { isDataRoute } = React$1.useContext(RouteContext);
-	return isDataRoute ? useNavigateStable() : useNavigateUnstable();
+	return React$1.useContext(IsDataRouteContext) ? useNavigateStable() : useNavigateUnstable();
 }
 function useNavigateUnstable() {
 	invariant$1(useInRouterContext(), `useNavigate() may be used only in the context of a <Router> component.`);
@@ -72688,6 +74282,7 @@ function useNavigateUnstable() {
 		}
 		let path = resolveTo(to, JSON.parse(routePathnamesJson), locationPathname, options.relative === "path");
 		if (dataRouterContext == null && basename !== "/") path.pathname = path.pathname === "/" ? basename : joinPaths([basename, path.pathname]);
+		validateNavigationTarget(typeof to === "string" ? to : createPath(to), navigator.createHref(path), getNavigatorCurrentUrl(navigator), "reject");
 		(!!options.replace ? navigator.replace : navigator.push)(path, options.state, options);
 	}, [
 		basename,
@@ -72755,7 +74350,10 @@ function useRoutesImpl(routes, locationArg, dataRouterOpts) {
 		let parentSegments = parentPathnameBase.replace(/^\//, "").split("/");
 		remainingPathname = "/" + pathname.replace(/^\//, "").split("/").slice(parentSegments.length).join("/");
 	}
-	let matches = dataRouterOpts && dataRouterOpts.state.matches.length ? dataRouterOpts.state.matches.map((m) => Object.assign(m, { route: dataRouterOpts.manifest[m.route.id] || m.route })) : matchRoutes(routes, { pathname: remainingPathname });
+	let matches;
+	if (dataRouterOpts) if (dataRouterOpts.state.matches.length) matches = dataRouterOpts.state.matches.map((m) => Object.assign(m, { route: dataRouterOpts.manifest[m.route.id] || m.route }));
+	else matches = dataRouterOpts.router.match(dataRouterOpts.state.location);
+	else matches = matchRoutes(routes, { pathname: remainingPathname });
 	let renderedMatches = _renderMatches(matches && matches.map((match) => Object.assign({}, match, {
 		params: Object.assign({}, parentParams, match.params),
 		pathname: joinPaths([parentPathnameBase, navigator.encodeLocation ? navigator.encodeLocation(match.pathname.replace(/%/g, "%25").replace(/\?/g, "%3F").replace(/#/g, "%23")).pathname : match.pathname]),
@@ -72820,17 +74418,17 @@ var RenderErrorBoundary = class extends React$1.Component {
 			const decoded = decodeRouteErrorResponseDigest(error.digest);
 			if (decoded) error = decoded;
 		}
-		let result = error !== void 0 ? /* @__PURE__ */ React$1.createElement(RouteContext.Provider, { value: this.props.routeContext }, /* @__PURE__ */ React$1.createElement(RouteErrorContext.Provider, {
+		let result = error !== void 0 ? /* @__PURE__ */ React$1.createElement(RouteContext.Provider, { value: this.props.routeContext }, /* @__PURE__ */ React$1.createElement(IsDataRouteContext.Provider, { value: this.props.routeContext.isDataRoute }, /* @__PURE__ */ React$1.createElement(RouteIdContext.Provider, { value: this.props.routeContext.matches[this.props.routeContext.matches.length - 1]?.route.id }, /* @__PURE__ */ React$1.createElement(RouteErrorContext.Provider, {
 			value: error,
 			children: this.props.component
-		})) : this.props.children;
+		})))) : this.props.children;
 		if (this.context) return /* @__PURE__ */ React$1.createElement(RSCErrorHandler, { error }, result);
 		return result;
 	}
 };
 var errorRedirectHandledMap = /* @__PURE__ */ new WeakMap();
 function RSCErrorHandler({ children, error }) {
-	let { basename } = React$1.useContext(NavigationContext);
+	let { basename, navigator } = React$1.useContext(NavigationContext);
 	if (typeof error === "object" && error && "digest" in error && typeof error.digest === "string") {
 		let redirect = decodeRedirectErrorDigest(error.digest);
 		if (redirect) {
@@ -72838,6 +74436,7 @@ function RSCErrorHandler({ children, error }) {
 			if (existingRedirect) throw existingRedirect;
 			let parsed = parseToInfo(redirect.location, basename);
 			let target = parsed.absoluteURL || parsed.to;
+			validateNavigationTarget(redirect.location, target, getNavigatorCurrentUrl(navigator), "allow-explicit");
 			if (hasInvalidProtocol(target)) throw new Error("Invalid redirect location");
 			if (isBrowser$1 && !errorRedirectHandledMap.get(error)) if (parsed.isExternal || redirect.reloadDocument) window.location.href = target;
 			else {
@@ -72856,7 +74455,7 @@ function RSCErrorHandler({ children, error }) {
 function RenderedRoute({ routeContext, match, children }) {
 	let dataRouterContext = React$1.useContext(DataRouterContext);
 	if (dataRouterContext && dataRouterContext.static && dataRouterContext.staticContext && (match.route.errorElement || match.route.ErrorBoundary)) dataRouterContext.staticContext._deepestRenderedBoundaryId = match.route.id;
-	return /* @__PURE__ */ React$1.createElement(RouteContext.Provider, { value: routeContext }, children);
+	return /* @__PURE__ */ React$1.createElement(RouteContext.Provider, { value: routeContext }, /* @__PURE__ */ React$1.createElement(IsDataRouteContext.Provider, { value: routeContext.isDataRoute }, /* @__PURE__ */ React$1.createElement(RouteIdContext.Provider, { value: match.route.id }, children)));
 }
 function _renderMatches(matches, parentMatches = [], dataRouterOpts) {
 	let dataRouterState = dataRouterOpts?.state;
@@ -72953,38 +74552,33 @@ function _renderMatches(matches, parentMatches = [], dataRouterOpts) {
 		}) : getChildren();
 	}, null);
 }
-function getDataRouterConsoleError$1(hookName) {
+function getDataRouterConsoleError(hookName) {
 	return `${hookName} must be used within a data router.  See https://reactrouter.com/en/main/routers/picking-a-router.`;
 }
-function useDataRouterContext$2(hookName) {
+function useDataRouterContext(hookName) {
 	let ctx = React$1.useContext(DataRouterContext);
-	invariant$1(ctx, getDataRouterConsoleError$1(hookName));
+	invariant$1(ctx, getDataRouterConsoleError(hookName));
 	return ctx;
 }
-function useDataRouterState$1(hookName) {
+function useDataRouterState(hookName) {
 	let state = React$1.useContext(DataRouterStateContext);
-	invariant$1(state, getDataRouterConsoleError$1(hookName));
+	invariant$1(state, getDataRouterConsoleError(hookName));
 	return state;
 }
-function useRouteContext(hookName) {
-	let route = React$1.useContext(RouteContext);
-	invariant$1(route, getDataRouterConsoleError$1(hookName));
-	return route;
+function useDataRouterData(hookName) {
+	let data = React$1.useContext(DataRouterDataContext);
+	invariant$1(data, getDataRouterConsoleError(hookName));
+	return data;
+}
+function useDataRouterNavigation(hookName) {
+	let navigation = React$1.useContext(DataRouterNavigationContext);
+	invariant$1(navigation, getDataRouterConsoleError(hookName));
+	return navigation;
 }
 function useCurrentRouteId(hookName) {
-	let route = useRouteContext(hookName);
-	let thisRoute = route.matches[route.matches.length - 1];
-	invariant$1(thisRoute.route.id, `${hookName} can only be used on routes that contain a unique "id"`);
-	return thisRoute.route.id;
-}
-/**
-* Returns the ID for the nearest contextual route
-*
-* @category Hooks
-* @returns The ID of the nearest contextual route
-*/
-function useRouteId() {
-	return useCurrentRouteId("useRouteId");
+	let routeId = React$1.useContext(RouteIdContext);
+	invariant$1(routeId, `${hookName} can only be used on routes that contain a unique "id"`);
+	return routeId;
 }
 /**
 * Returns the current {@link Navigation}, defaulting to an "idle" navigation
@@ -73009,11 +74603,11 @@ function useRouteId() {
 * @returns The current {@link Navigation} object
 */
 function useNavigation() {
-	let state = useDataRouterState$1("useNavigation");
+	let { navigation } = useDataRouterNavigation("useNavigation");
 	return React$1.useMemo(() => {
-		let { matches, historyAction, ...rest } = state.navigation;
+		let { matches, historyAction, ...rest } = navigation;
 		return rest;
-	}, [state.navigation]);
+	}, [navigation]);
 }
 /**
 * Returns the active route matches, useful for accessing `loaderData` for
@@ -73050,7 +74644,8 @@ function useNavigation() {
 * @returns An array of {@link UIMatch | UI matches} for the current route hierarchy
 */
 function useMatches() {
-	let { matches, loaderData } = useDataRouterState$1("useMatches");
+	let { matches } = useDataRouterState("useMatches");
+	let { loaderData } = useDataRouterData("useMatches");
 	return React$1.useMemo(() => matches.map((m) => convertRouteMatchToUiMatch(m, loaderData)), [matches, loaderData]);
 }
 /**
@@ -73075,13 +74670,13 @@ function useMatches() {
 */
 function useRouteError() {
 	let error = React$1.useContext(RouteErrorContext);
-	let state = useDataRouterState$1("useRouteError");
+	let data = useDataRouterData("useRouteError");
 	let routeId = useCurrentRouteId("useRouteError");
 	if (error !== void 0) return error;
-	return state.errors?.[routeId];
+	return data.errors?.[routeId];
 }
 function useNavigateStable() {
-	let { router } = useDataRouterContext$2("useNavigate");
+	let { router } = useDataRouterContext("useNavigate");
 	let id = useCurrentRouteId("useNavigate");
 	let activeRef = React$1.useRef(false);
 	React$1.useLayoutEffect(() => {
@@ -73105,7 +74700,7 @@ function warningOnce(key, cond, message) {
 	}
 }
 /**
-* react-router v8.3.0
+* react-router v8.4.0
 *
 * Copyright (c) Remix Software Inc.
 *
@@ -73115,13 +74710,15 @@ function warningOnce(key, cond, message) {
 * @license MIT
 */
 React$1.memo(DataRoutes);
-function DataRoutes({ routes, manifest, future, state, isStatic, onError }) {
+function DataRoutes({ routes, manifest, state, isStatic, onError }) {
+	let dataRouterContext = React$1.useContext(DataRouterContext);
+	invariant$1(dataRouterContext, "You must render this element inside a <DataRouterContext.Provider> element");
 	return useRoutesImpl(routes, void 0, {
+		router: dataRouterContext.router,
 		manifest,
 		state,
 		isStatic,
-		onError,
-		future
+		onError
 	});
 }
 /**
@@ -73195,9 +74792,9 @@ function Router({ basename: basenameProp = "/", children = null, location: locat
 }
 React$1.Component;
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/dom/dom.js
+//#region node_modules/.pnpm/react-router@8.4.0_react-dom@19.3.0_react@19.3.0__react@19.3.0/node_modules/react-router/dist/production/lib/dom/dom.js
 /**
-* react-router v8.3.0
+* react-router v8.4.0
 *
 * Copyright (c) Remix Software Inc.
 *
@@ -73230,7 +74827,7 @@ function isFormDataSubmitterSupported() {
 	if (_formDataSupportsSubmitter === null) try {
 		new FormData(document.createElement("form"), 0);
 		_formDataSupportsSubmitter = false;
-	} catch (e) {
+	} catch {
 		_formDataSupportsSubmitter = true;
 	}
 	return _formDataSupportsSubmitter;
@@ -73295,9 +74892,9 @@ function getFormSubmissionInfo(target, basename) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/dom/ssr/invariant.js
+//#region node_modules/.pnpm/react-router@8.4.0_react-dom@19.3.0_react@19.3.0__react@19.3.0/node_modules/react-router/dist/production/lib/dom/ssr/invariant.js
 /**
-* react-router v8.3.0
+* react-router v8.4.0
 *
 * Copyright (c) Remix Software Inc.
 *
@@ -73310,9 +74907,9 @@ function invariant(value, message) {
 	if (value === false || value === null || typeof value === "undefined") throw new Error(message);
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/dom/ssr/markup.js
+//#region node_modules/.pnpm/react-router@8.4.0_react-dom@19.3.0_react@19.3.0__react@19.3.0/node_modules/react-router/dist/production/lib/dom/ssr/markup.js
 /**
-* react-router v8.3.0
+* react-router v8.4.0
 *
 * Copyright (c) Remix Software Inc.
 *
@@ -73333,9 +74930,9 @@ function escapeHtml(html) {
 	return html.replace(ESCAPE_REGEX, (match) => ESCAPE_LOOKUP[match]);
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/dom/ssr/single-fetch.js
+//#region node_modules/.pnpm/react-router@8.4.0_react-dom@19.3.0_react@19.3.0__react@19.3.0/node_modules/react-router/dist/production/lib/dom/ssr/single-fetch.js
 /**
-* react-router v8.3.0
+* react-router v8.4.0
 *
 * Copyright (c) Remix Software Inc.
 *
@@ -73351,9 +74948,9 @@ function singleFetchUrl(reqUrl, extension) {
 	return url;
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/dom/ssr/routeModules.js
+//#region node_modules/.pnpm/react-router@8.4.0_react-dom@19.3.0_react@19.3.0__react@19.3.0/node_modules/react-router/dist/production/lib/dom/ssr/routeModules.js
 /**
-* react-router v8.3.0
+* react-router v8.4.0
 *
 * Copyright (c) Remix Software Inc.
 *
@@ -73381,9 +74978,9 @@ async function loadRouteModule(route, routeModulesCache) {
 	}
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/dom/ssr/links.js
+//#region node_modules/.pnpm/react-router@8.4.0_react-dom@19.3.0_react@19.3.0__react@19.3.0/node_modules/react-router/dist/production/lib/dom/ssr/links.js
 /**
-* react-router v8.3.0
+* react-router v8.4.0
 *
 * Copyright (c) Remix Software Inc.
 *
@@ -73482,9 +75079,9 @@ function dedupeLinkDescriptors(descriptors, preloads) {
 	}, []);
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/dom/ssr/components.js
+//#region node_modules/.pnpm/react-router@8.4.0_react-dom@19.3.0_react@19.3.0__react@19.3.0/node_modules/react-router/dist/production/lib/dom/ssr/components.js
 /**
-* react-router v8.3.0
+* react-router v8.4.0
 *
 * Copyright (c) Remix Software Inc.
 *
@@ -73493,16 +75090,6 @@ function dedupeLinkDescriptors(descriptors, preloads) {
 *
 * @license MIT
 */
-function useDataRouterContext$1() {
-	let context = React$1.useContext(DataRouterContext);
-	invariant(context, "You must render this element inside a <DataRouterContext.Provider> element");
-	return context;
-}
-function useDataRouterStateContext() {
-	let context = React$1.useContext(DataRouterStateContext);
-	invariant(context, "You must render this element inside a <DataRouterStateContext.Provider> element");
-	return context;
-}
 var FrameworkContext = React$1.createContext(void 0);
 FrameworkContext.displayName = "FrameworkContext";
 function useFrameworkContext() {
@@ -73606,11 +75193,11 @@ function composeEventHandlers(theirHandler, ourHandler) {
 function PrefetchPageLinks({ page, ...linkProps }) {
 	let rsc = useIsRSCRouterContext();
 	let { nonce: contextNonce } = useFrameworkContext();
-	let { router } = useDataRouterContext$1();
-	let matches = React$1.useMemo(() => matchRoutes(router.routes, page, router.basename), [
+	let { router } = useDataRouterContext("PrefetchPageLinks");
+	let matches = React$1.useMemo(() => router.match(page), [
+		router,
 		router.routes,
-		page,
-		router.basename
+		page
 	]);
 	if (!matches) return null;
 	if (linkProps.nonce == null && contextNonce) linkProps = {
@@ -73673,7 +75260,8 @@ function RSCPrefetchPageLinksImpl({ page, matches: nextMatches, ...linkProps }) 
 function PrefetchPageLinksImpl({ page, matches: nextMatches, ...linkProps }) {
 	let location = useLocation();
 	let { manifest, routeModules } = useFrameworkContext();
-	let { loaderData, matches } = useDataRouterStateContext();
+	let { matches } = useDataRouterState("PrefetchPageLinks");
+	let { loaderData } = useDataRouterData("PrefetchPageLinks");
 	let newMatchesForData = React$1.useMemo(() => getNewMatchesForLinks(page, nextMatches, matches, manifest, location, "data"), [
 		page,
 		nextMatches,
@@ -73741,9 +75329,9 @@ function mergeRefs(...refs) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/react-router@8.3.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/dom/lib.js
+//#region node_modules/.pnpm/react-router@8.4.0_react-dom@19.3.0_react@19.3.0__react@19.3.0/node_modules/react-router/dist/production/lib/dom/lib.js
 /**
-* react-router v8.3.0
+* react-router v8.4.0
 *
 * Copyright (c) Remix Software Inc.
 *
@@ -73754,8 +75342,8 @@ function mergeRefs(...refs) {
 */
 var isBrowser = typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined";
 try {
-	if (isBrowser) window.__reactRouterVersion = "8.3.0";
-} catch (e) {}
+	if (isBrowser) window.__reactRouterVersion = "8";
+} catch {}
 /**
 * A declarative {@link Router | `<Router>`} that accepts a pre-instantiated
 * `history` object.
@@ -73914,12 +75502,12 @@ Link$1.displayName = "Link";
 var NavLink = React$1.forwardRef(function NavLinkWithRef({ "aria-current": ariaCurrentProp = "page", caseSensitive = false, className: classNameProp = "", end = false, style: styleProp, to, viewTransition, children, ...rest }, ref) {
 	let path = useResolvedPath(to, { relative: rest.relative });
 	let location = useLocation();
-	let routerState = React$1.useContext(DataRouterStateContext);
+	let routerNavigation = React$1.useContext(DataRouterNavigationContext);
 	let { navigator, basename } = React$1.useContext(NavigationContext);
-	let isTransitioning = routerState != null && useViewTransitionState(path) && viewTransition === true;
+	let isTransitioning = routerNavigation != null && useViewTransitionState(path) && viewTransition === true;
 	let toPathname = navigator.encodeLocation ? navigator.encodeLocation(path).pathname : path.pathname;
 	let locationPathname = location.pathname;
-	let nextLocationPathname = routerState && routerState.navigation && routerState.navigation.location ? routerState.navigation.location.pathname : null;
+	let nextLocationPathname = routerNavigation?.navigation.location ? routerNavigation.navigation.location.pathname : null;
 	if (!caseSensitive) {
 		locationPathname = locationPathname.toLowerCase();
 		nextLocationPathname = nextLocationPathname ? nextLocationPathname.toLowerCase() : null;
@@ -74115,19 +75703,6 @@ function ScrollRestoration({ getKey, storageKey, ...props }) {
 	});
 }
 ScrollRestoration.displayName = "ScrollRestoration";
-function getDataRouterConsoleError(hookName) {
-	return `${hookName} must be used within a data router.  See https://reactrouter.com/en/main/routers/picking-a-router.`;
-}
-function useDataRouterContext(hookName) {
-	let ctx = React$1.useContext(DataRouterContext);
-	invariant$1(ctx, getDataRouterConsoleError(hookName));
-	return ctx;
-}
-function useDataRouterState(hookName) {
-	let state = React$1.useContext(DataRouterStateContext);
-	invariant$1(state, getDataRouterConsoleError(hookName));
-	return state;
-}
 /**
 * Handles the click behavior for router {@link Link | `<Link>`} components.This
 * is useful if you need to create custom {@link Link | `<Link>`} components with
@@ -74221,7 +75796,7 @@ var getUniqueFetcherId = () => `__${String(++fetcherId)}__`;
 function useSubmit() {
 	let { router } = useDataRouterContext("useSubmit");
 	let { basename } = React$1.useContext(NavigationContext);
-	let currentRouteId = useRouteId();
+	let currentRouteId = useCurrentRouteId("useSubmit");
 	let routerFetch = router.fetch;
 	let routerNavigate = router.navigate;
 	return React$1.useCallback(async (target, options = {}) => {
@@ -74229,6 +75804,7 @@ function useSubmit() {
 		if (options.navigate === false) await routerFetch(options.fetcherKey || getUniqueFetcherId(), currentRouteId, options.action || action, {
 			defaultShouldRevalidate: options.defaultShouldRevalidate,
 			preventScrollReset: options.preventScrollReset,
+			relative: options.relative,
 			formData,
 			body,
 			formMethod: options.method || method,
@@ -74238,6 +75814,7 @@ function useSubmit() {
 		else await routerNavigate(options.action || action, {
 			defaultShouldRevalidate: options.defaultShouldRevalidate,
 			preventScrollReset: options.preventScrollReset,
+			relative: options.relative,
 			formData,
 			body,
 			formMethod: options.method || method,
@@ -74361,6 +75938,9 @@ function useScrollRestoration({ getKey, storageKey } = {}) {
 			window.history.scrollRestoration = "auto";
 		};
 	}, []);
+	usePageShow(React$1.useCallback((event) => {
+		if (event.persisted) window.history.scrollRestoration = "manual";
+	}, []));
 	usePageHide(React$1.useCallback(() => {
 		if (navigation.state === "idle") {
 			let key = getScrollRestorationKey(location, matches, basename, getKey);
@@ -74385,7 +75965,7 @@ function useScrollRestoration({ getKey, storageKey } = {}) {
 			try {
 				let sessionPositions = sessionStorage.getItem(storageKey || SCROLL_RESTORATION_STORAGE_KEY);
 				if (sessionPositions) savedScrollPositions = JSON.parse(sessionPositions);
-			} catch (e) {}
+			} catch {}
 		}, [storageKey]);
 		React$1.useLayoutEffect(() => {
 			let disableScrollRestoration = router?.enableScrollRestoration(savedScrollPositions, () => window.scrollY, getKey ? (location, matches) => getScrollRestorationKey(location, matches, basename, getKey) : void 0);
@@ -74428,6 +76008,16 @@ function usePageHide(callback, options) {
 		window.addEventListener("pagehide", callback, opts);
 		return () => {
 			window.removeEventListener("pagehide", callback, opts);
+		};
+	}, [callback, capture]);
+}
+function usePageShow(callback, options) {
+	let { capture } = options || {};
+	React$1.useEffect(() => {
+		let opts = capture != null ? { capture } : void 0;
+		window.addEventListener("pageshow", callback, opts);
+		return () => {
+			window.removeEventListener("pageshow", callback, opts);
 		};
 	}, [callback, capture]);
 }
@@ -74587,7 +76177,7 @@ function __generator$1(thisArg, body) {
 		};
 	}
 }
-function __values$2(o) {
+function __values$1(o) {
 	var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
 	if (m) return m.call(o);
 	if (o && typeof o.length === "number") return { next: function() {
@@ -74599,7 +76189,7 @@ function __values$2(o) {
 	} };
 	throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
 }
-function __read$2(o, n) {
+function __read$1(o, n) {
 	var m = typeof Symbol === "function" && o[Symbol.iterator];
 	if (!m) return o;
 	var i = m.call(o), r, ar = [], e;
@@ -74625,7 +76215,7 @@ function __spreadArray$1(to, from, pack) {
 	}
 	return to.concat(ar || Array.prototype.slice.call(from));
 }
-var extendStatics$1, __assign$2;
+var extendStatics$1, __assign$1;
 var init_tslib_es6 = __esmMin((() => {
 	extendStatics$1 = function(d, b) {
 		extendStatics$1 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d, b) {
@@ -74635,19 +76225,19 @@ var init_tslib_es6 = __esmMin((() => {
 		};
 		return extendStatics$1(d, b);
 	};
-	__assign$2 = function() {
-		__assign$2 = Object.assign || function __assign(t) {
+	__assign$1 = function() {
+		__assign$1 = Object.assign || function __assign(t) {
 			for (var s, i = 1, n = arguments.length; i < n; i++) {
 				s = arguments[i];
 				for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
 			}
 			return t;
 		};
-		return __assign$2.apply(this, arguments);
+		return __assign$1.apply(this, arguments);
 	};
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+analytics-core@2.54.2/node_modules/@amplitude/analytics-core/lib/esm/types/event/event.js
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/types/event/event.js
 var IdentifyOperation, SpecialEventType;
 var init_event = __esmMin((() => {
 	(function(IdentifyOperation) {
@@ -74677,7 +76267,7 @@ var init_constants$1 = __esmMin((() => {
 	EU_AMPLITUDE_BATCH_SERVER_URL = "https://api.eu.amplitude.com/batch";
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+analytics-core@2.54.2/node_modules/@amplitude/analytics-core/lib/esm/types/status.js
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/types/status.js
 var Status;
 var init_status = __esmMin((() => {
 	(function(Status) {
@@ -74702,7 +76292,7 @@ var init_status = __esmMin((() => {
 	})(Status || (Status = {}));
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+analytics-core@2.54.2/node_modules/@amplitude/analytics-core/lib/esm/global-scope.js
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/global-scope.js
 var getGlobalScope;
 var init_global_scope = __esmMin((() => {
 	getGlobalScope = function() {
@@ -74715,7 +76305,7 @@ var init_global_scope = __esmMin((() => {
 	};
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+analytics-core@2.54.2/node_modules/@amplitude/analytics-core/lib/esm/utils/uuid.js
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/utils/uuid.js
 var legacyUUID, hex, UUID;
 var init_uuid = __esmMin((() => {
 	init_tslib_es6();
@@ -74723,7 +76313,7 @@ var init_uuid = __esmMin((() => {
 	legacyUUID = function(a) {
 		return a ? (a ^ Math.random() * 16 >> a / 4).toString(16) : (String(1e7) + String(-1e3) + String(-4e3) + String(-8e3) + String(-1e11)).replace(/[018]/g, UUID);
 	};
-	hex = __spreadArray$1([], __read$2(Array(256).keys()), false).map(function(index) {
+	hex = __spreadArray$1([], __read$1(Array(256).keys()), false).map(function(index) {
 		return index.toString(16).padStart(2, "0");
 	});
 	UUID = function(a) {
@@ -74734,8 +76324,8 @@ var init_uuid = __esmMin((() => {
 		var r = globalScope.crypto.getRandomValues(/* @__PURE__ */ new Uint8Array(16));
 		r[6] = r[6] & 15 | 64;
 		r[8] = r[8] & 63 | 128;
-		return __spreadArray$1([], __read$2(r.entries()), false).map(function(_a) {
-			var _b = __read$2(_a, 2), index = _b[0], int = _b[1];
+		return __spreadArray$1([], __read$1(r.entries()), false).map(function(_a) {
+			var _b = __read$1(_a, 2), index = _b[0], int = _b[1];
 			return [
 				4,
 				6,
@@ -74746,7 +76336,61 @@ var init_uuid = __esmMin((() => {
 	};
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+analytics-core@2.54.2/node_modules/@amplitude/analytics-core/lib/esm/utils/return-wrapper.js
+//#region node_modules/.pnpm/safe-json-stringify@1.2.0/node_modules/safe-json-stringify/index.js
+var require_safe_json_stringify = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+	var hasProp = Object.prototype.hasOwnProperty;
+	function throwsMessage(err) {
+		return "[Throws: " + (err ? err.message : "?") + "]";
+	}
+	function safeGetValueFromPropertyOnObject(obj, property) {
+		if (hasProp.call(obj, property)) try {
+			return obj[property];
+		} catch (err) {
+			return throwsMessage(err);
+		}
+		return obj[property];
+	}
+	function ensureProperties(obj) {
+		var seen = [];
+		function visit(obj) {
+			if (obj === null || typeof obj !== "object") return obj;
+			if (seen.indexOf(obj) !== -1) return "[Circular]";
+			seen.push(obj);
+			if (typeof obj.toJSON === "function") try {
+				var fResult = visit(obj.toJSON());
+				seen.pop();
+				return fResult;
+			} catch (err) {
+				return throwsMessage(err);
+			}
+			if (Array.isArray(obj)) {
+				var aResult = obj.map(visit);
+				seen.pop();
+				return aResult;
+			}
+			var result = Object.keys(obj).reduce(function(result, prop) {
+				result[prop] = visit(safeGetValueFromPropertyOnObject(obj, prop));
+				return result;
+			}, {});
+			seen.pop();
+			return result;
+		}
+		return visit(obj);
+	}
+	module.exports = function(data, replacer, space) {
+		return JSON.stringify(ensureProperties(data), replacer, space);
+	};
+	module.exports.ensureProperties = ensureProperties;
+}));
+//#endregion
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/utils/safe-stringify.js
+var import_safe_json_stringify, safeJsonStringify;
+var init_safe_stringify = __esmMin((() => {
+	import_safe_json_stringify = /* @__PURE__ */ __toESM(require_safe_json_stringify());
+	safeJsonStringify = import_safe_json_stringify.default || import_safe_json_stringify;
+}));
+//#endregion
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/utils/return-wrapper.js
 var returnWrapper;
 var init_return_wrapper = __esmMin((() => {
 	returnWrapper = function(awaitable) {
@@ -74754,7 +76398,7 @@ var init_return_wrapper = __esmMin((() => {
 	};
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+analytics-core@2.54.2/node_modules/@amplitude/analytics-core/lib/esm/types/loglevel.js
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/types/loglevel.js
 var LogLevel;
 var init_loglevel = __esmMin((() => {
 	(function(LogLevel) {
@@ -74766,7 +76410,7 @@ var init_loglevel = __esmMin((() => {
 	})(LogLevel || (LogLevel = {}));
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+analytics-core@2.54.2/node_modules/@amplitude/analytics-core/lib/esm/logger.js
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/logger.js
 var PREFIX, Logger;
 var init_logger = __esmMin((() => {
 	init_loglevel();
@@ -74808,11 +76452,21 @@ var init_logger = __esmMin((() => {
 		};
 		return Logger;
 	}();
+}));
+//#endregion
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/utils/instance-name.js
+var normalizeInstanceName;
+var init_instance_name = __esmMin((() => {
+	init_constants$1();
+	normalizeInstanceName = function(instanceName) {
+		return instanceName === void 0 || instanceName === "" ? DEFAULT_INSTANCE_NAME : instanceName;
+	};
 })), getDefaultConfig$1, Config, getServerUrl$1, createServerConfig;
 var init_config = __esmMin((() => {
 	init_constants$1();
 	init_logger();
 	init_loglevel();
+	init_instance_name();
 	getDefaultConfig$1 = function() {
 		return {
 			flushMaxRetries: 12,
@@ -74837,7 +76491,7 @@ var init_config = __esmMin((() => {
 			this.flushIntervalMillis = (_a = options.flushIntervalMillis) !== null && _a !== void 0 ? _a : defaultConfig.flushIntervalMillis;
 			this.flushMaxRetries = options.flushMaxRetries || defaultConfig.flushMaxRetries;
 			this.flushQueueSize = options.flushQueueSize || defaultConfig.flushQueueSize;
-			this.instanceName = options.instanceName || defaultConfig.instanceName;
+			this.instanceName = normalizeInstanceName(options.instanceName);
 			this.loggerProvider = options.loggerProvider || defaultConfig.loggerProvider;
 			this.logLevel = (_b = options.logLevel) !== null && _b !== void 0 ? _b : defaultConfig.logLevel;
 			this.minIdLength = options.minIdLength;
@@ -74896,7 +76550,7 @@ var init_config = __esmMin((() => {
 	})();
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+analytics-core@2.54.2/node_modules/@amplitude/analytics-core/lib/esm/utils/status-code.js
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/utils/status-code.js
 /**
 * Checks if an HTTP status code indicates success (2xx range)
 * @param code - The HTTP status code to check
@@ -74907,7 +76561,7 @@ function isSuccessStatusCode(code) {
 }
 var init_status_code = __esmMin((() => {}));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+analytics-core@2.54.2/node_modules/@amplitude/analytics-core/lib/esm/utils/debug.js
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/utils/debug.js
 var getStacktrace, debugWrapper;
 var init_debug = __esmMin((() => {
 	init_loglevel();
@@ -74949,41 +76603,11 @@ var init_debug = __esmMin((() => {
 	};
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+analytics-connector@1.6.6/node_modules/@amplitude/analytics-connector/dist/analytics-connector.esm.js
-function __values$1(o) {
-	var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
-	if (m) return m.call(o);
-	if (o && typeof o.length === "number") return { next: function() {
-		if (o && i >= o.length) o = void 0;
-		return {
-			value: o && o[i++],
-			done: !o
-		};
-	} };
-	throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
-}
-function __read$1(o, n) {
-	var m = typeof Symbol === "function" && o[Symbol.iterator];
-	if (!m) return o;
-	var i = m.call(o), r, ar = [], e;
-	try {
-		while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
-	} catch (error) {
-		e = { error };
-	} finally {
-		try {
-			if (r && !r.done && (m = i["return"])) m.call(i);
-		} finally {
-			if (e) throw e.error;
-		}
-	}
-	return ar;
-}
-var ApplicationContextProviderImpl, getLanguage, EventBridgeImpl, __assign$1, isEqual, ID_OP_SET, ID_OP_UNSET, ID_OP_CLEAR_ALL, IdentityStoreImpl, safeGlobal$1, AnalyticsConnector;
+//#region node_modules/.pnpm/@amplitude+analytics-connector@1.6.8/node_modules/@amplitude/analytics-connector/dist/analytics-connector.esm.js
+var ApplicationContextProviderImpl, getLanguage, EventBridgeImpl, isEqual, ID_OP_SET, ID_OP_UNSET, ID_OP_CLEAR_ALL, IdentityStoreImpl, safeGlobal$1, AnalyticsConnector;
 var init_analytics_connector_esm = __esmMin((() => {
-	ApplicationContextProviderImpl = function() {
-		function ApplicationContextProviderImpl() {}
-		ApplicationContextProviderImpl.prototype.getApplicationContext = function() {
+	ApplicationContextProviderImpl = class {
+		getApplicationContext() {
 			return {
 				versionName: this.versionName,
 				language: getLanguage(),
@@ -74991,78 +76615,57 @@ var init_analytics_connector_esm = __esmMin((() => {
 				os: void 0,
 				deviceModel: void 0
 			};
-		};
-		return ApplicationContextProviderImpl;
-	}();
-	getLanguage = function() {
+		}
+	};
+	getLanguage = () => {
 		return typeof navigator !== "undefined" && (navigator.languages && navigator.languages[0] || navigator.language) || "";
 	};
-	EventBridgeImpl = function() {
-		function EventBridgeImpl() {
+	EventBridgeImpl = class {
+		constructor() {
 			this.queue = [];
 		}
-		EventBridgeImpl.prototype.logEvent = function(event) {
+		logEvent(event) {
 			if (!this.receiver) {
 				if (this.queue.length < 512) this.queue.push(event);
 			} else this.receiver(event);
-		};
-		EventBridgeImpl.prototype.setEventReceiver = function(receiver) {
+		}
+		setEventReceiver(receiver) {
 			this.receiver = receiver;
 			if (this.queue.length > 0) {
-				this.queue.forEach(function(event) {
+				this.queue.forEach((event) => {
 					receiver(event);
 				});
 				this.queue = [];
 			}
-		};
-		return EventBridgeImpl;
-	}();
-	__assign$1 = function() {
-		__assign$1 = Object.assign || function __assign(t) {
-			for (var s, i = 1, n = arguments.length; i < n; i++) {
-				s = arguments[i];
-				for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-			}
-			return t;
-		};
-		return __assign$1.apply(this, arguments);
+		}
 	};
-	isEqual = function(obj1, obj2) {
-		var e_1, _a;
-		var primitive = [
+	isEqual = (obj1, obj2) => {
+		const primitive = [
 			"string",
 			"number",
 			"boolean",
 			"undefined"
 		];
-		var typeA = typeof obj1;
+		const typeA = typeof obj1;
 		if (typeA !== typeof obj2) return false;
-		try {
-			for (var primitive_1 = __values$1(primitive), primitive_1_1 = primitive_1.next(); !primitive_1_1.done; primitive_1_1 = primitive_1.next()) if (primitive_1_1.value === typeA) return obj1 === obj2;
-		} catch (e_1_1) {
-			e_1 = { error: e_1_1 };
-		} finally {
-			try {
-				if (primitive_1_1 && !primitive_1_1.done && (_a = primitive_1.return)) _a.call(primitive_1);
-			} finally {
-				if (e_1) throw e_1.error;
-			}
-		}
+		for (const p of primitive) if (p === typeA) return obj1 === obj2;
 		if (obj1 == null && obj2 == null) return true;
 		else if (obj1 == null || obj2 == null) return false;
 		if (obj1.length !== obj2.length) return false;
-		var isArrayA = Array.isArray(obj1);
-		var isArrayB = Array.isArray(obj2);
+		const isArrayA = Array.isArray(obj1);
+		const isArrayB = Array.isArray(obj2);
 		if (isArrayA !== isArrayB) return false;
 		if (isArrayA && isArrayB) {
-			for (var i = 0; i < obj1.length; i++) if (!isEqual(obj1[i], obj2[i])) return false;
+			for (let i = 0; i < obj1.length; i++) if (!isEqual(obj1[i], obj2[i])) return false;
 		} else {
-			if (!isEqual(Object.keys(obj1).sort(), Object.keys(obj2).sort())) return false;
-			var result_1 = true;
-			Object.keys(obj1).forEach(function(key) {
-				if (!isEqual(obj1[key], obj2[key])) result_1 = false;
+			const sorted1 = Object.keys(obj1).sort();
+			const sorted2 = Object.keys(obj2).sort();
+			if (!isEqual(sorted1, sorted2)) return false;
+			let result = true;
+			Object.keys(obj1).forEach((key) => {
+				if (!isEqual(obj1[key], obj2[key])) result = false;
 			});
-			return result_1;
+			return result;
 		}
 		return true;
 	};
@@ -75070,21 +76673,21 @@ var init_analytics_connector_esm = __esmMin((() => {
 	ID_OP_UNSET = "$unset";
 	ID_OP_CLEAR_ALL = "$clearAll";
 	if (!Object.entries) Object.entries = function(obj) {
-		var ownProps = Object.keys(obj);
-		var i = ownProps.length;
-		var resArray = new Array(i);
+		const ownProps = Object.keys(obj);
+		let i = ownProps.length;
+		const resArray = new Array(i);
 		while (i--) resArray[i] = [ownProps[i], obj[ownProps[i]]];
 		return resArray;
 	};
-	IdentityStoreImpl = function() {
-		function IdentityStoreImpl() {
+	IdentityStoreImpl = class {
+		constructor() {
 			this.identity = { userProperties: {} };
 			this.listeners = /* @__PURE__ */ new Set();
 		}
-		IdentityStoreImpl.prototype.editIdentity = function() {
-			var self = this;
-			var actingUserProperties = __assign$1({}, this.identity.userProperties);
-			var actingIdentity = __assign$1(__assign$1({}, this.identity), { userProperties: actingUserProperties });
+		editIdentity() {
+			const self = this;
+			const actingUserProperties = Object.assign({}, this.identity.userProperties);
+			const actingIdentity = Object.assign(Object.assign({}, this.identity), { userProperties: actingUserProperties });
 			return {
 				setUserId: function(userId) {
 					actingIdentity.userId = userId;
@@ -75098,60 +76701,20 @@ var init_analytics_connector_esm = __esmMin((() => {
 					actingIdentity.userProperties = userProperties;
 					return this;
 				},
-				setOptOut: function(optOut) {
+				setOptOut(optOut) {
 					actingIdentity.optOut = optOut;
 					return this;
 				},
 				updateUserProperties: function(actions) {
-					var e_1, _a, e_2, _b, e_3, _c;
-					var actingProperties = actingIdentity.userProperties || {};
-					try {
-						for (var _d = __values$1(Object.entries(actions)), _e = _d.next(); !_e.done; _e = _d.next()) {
-							var _f = __read$1(_e.value, 2), action = _f[0], properties = _f[1];
-							switch (action) {
-								case ID_OP_SET:
-									try {
-										for (var _g = (e_2 = void 0, __values$1(Object.entries(properties))), _h = _g.next(); !_h.done; _h = _g.next()) {
-											var _j = __read$1(_h.value, 2), key = _j[0], value = _j[1];
-											actingProperties[key] = value;
-										}
-									} catch (e_2_1) {
-										e_2 = { error: e_2_1 };
-									} finally {
-										try {
-											if (_h && !_h.done && (_b = _g.return)) _b.call(_g);
-										} finally {
-											if (e_2) throw e_2.error;
-										}
-									}
-									break;
-								case ID_OP_UNSET:
-									try {
-										for (var _k = (e_3 = void 0, __values$1(Object.keys(properties))), _l = _k.next(); !_l.done; _l = _k.next()) {
-											var key = _l.value;
-											delete actingProperties[key];
-										}
-									} catch (e_3_1) {
-										e_3 = { error: e_3_1 };
-									} finally {
-										try {
-											if (_l && !_l.done && (_c = _k.return)) _c.call(_k);
-										} finally {
-											if (e_3) throw e_3.error;
-										}
-									}
-									break;
-								case ID_OP_CLEAR_ALL: actingProperties = {};
-							}
-						}
-					} catch (e_1_1) {
-						e_1 = { error: e_1_1 };
-					} finally {
-						try {
-							if (_e && !_e.done && (_a = _d.return)) _a.call(_d);
-						} finally {
-							if (e_1) throw e_1.error;
-						}
+					let actingProperties = actingIdentity.userProperties || {};
+					for (const [action, properties] of Object.entries(actions)) switch (action) {
+						case ID_OP_SET:
+							for (const [key, value] of Object.entries(properties)) actingProperties[key] = value;
+							break;
+						case ID_OP_UNSET:
+							for (const key of Object.keys(properties)) delete actingProperties[key];
+							break;
+						case ID_OP_CLEAR_ALL: actingProperties = {};
 					}
 					actingIdentity.userProperties = actingProperties;
 					return this;
@@ -75161,53 +76724,50 @@ var init_analytics_connector_esm = __esmMin((() => {
 					return this;
 				}
 			};
-		};
-		IdentityStoreImpl.prototype.getIdentity = function() {
-			return __assign$1({}, this.identity);
-		};
-		IdentityStoreImpl.prototype.setIdentity = function(identity) {
-			var originalIdentity = __assign$1({}, this.identity);
-			this.identity = __assign$1({}, identity);
-			if (!isEqual(originalIdentity, this.identity)) this.listeners.forEach(function(listener) {
+		}
+		getIdentity() {
+			return Object.assign({}, this.identity);
+		}
+		setIdentity(identity) {
+			const originalIdentity = Object.assign({}, this.identity);
+			this.identity = Object.assign({}, identity);
+			if (!isEqual(originalIdentity, this.identity)) this.listeners.forEach((listener) => {
 				listener(identity);
 			});
-		};
-		IdentityStoreImpl.prototype.addIdentityListener = function(listener) {
+		}
+		addIdentityListener(listener) {
 			this.listeners.add(listener);
-		};
-		IdentityStoreImpl.prototype.removeIdentityListener = function(listener) {
+		}
+		removeIdentityListener(listener) {
 			this.listeners.delete(listener);
-		};
-		return IdentityStoreImpl;
-	}();
+		}
+	};
 	safeGlobal$1 = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : self;
-	AnalyticsConnector = function() {
-		function AnalyticsConnector() {
+	AnalyticsConnector = class AnalyticsConnector {
+		constructor() {
 			this.identityStore = new IdentityStoreImpl();
 			this.eventBridge = new EventBridgeImpl();
 			this.applicationContextProvider = new ApplicationContextProviderImpl();
 		}
-		AnalyticsConnector.getInstance = function(instanceName) {
+		static getInstance(instanceName) {
 			if (!safeGlobal$1["analyticsConnectorInstances"]) safeGlobal$1["analyticsConnectorInstances"] = {};
 			if (!safeGlobal$1["analyticsConnectorInstances"][instanceName]) safeGlobal$1["analyticsConnectorInstances"][instanceName] = new AnalyticsConnector();
 			return safeGlobal$1["analyticsConnectorInstances"][instanceName];
-		};
-		return AnalyticsConnector;
-	}();
-}));
-//#endregion
-//#region node_modules/.pnpm/@amplitude+analytics-core@2.54.2/node_modules/@amplitude/analytics-core/lib/esm/analytics-connector.js
-var getAnalyticsConnector;
-var init_analytics_connector = __esmMin((() => {
-	init_analytics_connector_esm();
-	init_constants$1();
-	getAnalyticsConnector = function(instanceName) {
-		if (instanceName === void 0) instanceName = DEFAULT_INSTANCE_NAME;
-		return AnalyticsConnector.getInstance(instanceName);
+		}
 	};
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+analytics-core@2.54.2/node_modules/@amplitude/analytics-core/lib/esm/utils/sampling.js
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/analytics-connector.js
+var getAnalyticsConnector;
+var init_analytics_connector = __esmMin((() => {
+	init_analytics_connector_esm();
+	init_instance_name();
+	getAnalyticsConnector = function(instanceName) {
+		return AnalyticsConnector.getInstance(normalizeInstanceName(instanceName));
+	};
+}));
+//#endregion
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/utils/sampling.js
 var generateHashCode;
 var init_sampling = __esmMin((() => {
 	generateHashCode = function(str) {
@@ -75222,7 +76782,7 @@ var init_sampling = __esmMin((() => {
 	};
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+analytics-core@2.54.2/node_modules/@amplitude/analytics-core/lib/esm/transports/base.js
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/transports/base.js
 var BaseTransport;
 var init_base = __esmMin((() => {
 	init_status();
@@ -75302,7 +76862,7 @@ var init_base = __esmMin((() => {
 	}();
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+analytics-core@2.54.2/node_modules/@amplitude/analytics-core/lib/esm/transports/fetch.js
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/transports/fetch.js
 var FetchTransport;
 var init_fetch = __esmMin((() => {
 	init_tslib_es6();
@@ -75324,7 +76884,7 @@ var init_fetch = __esmMin((() => {
 							/* istanbul ignore if */
 							if (typeof fetch === "undefined") throw new Error("FetchTransport is not supported");
 							options = {
-								headers: __assign$2({
+								headers: __assign$1({
 									"Content-Type": "application/json",
 									Accept: "*/*"
 								}, this.customHeaders),
@@ -75350,13 +76910,20 @@ var init_fetch = __esmMin((() => {
 	}(BaseTransport);
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+analytics-core@2.54.2/node_modules/@amplitude/analytics-core/lib/esm/remote-config/remote-config-localstorage.js
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/remote-config/remote-config-localstorage.js
 var RemoteConfigLocalStorage;
 var init_remote_config_localstorage = __esmMin((() => {
+	init_safe_stringify();
 	RemoteConfigLocalStorage = function() {
 		function RemoteConfigLocalStorage(apiKey, logger) {
 			this.key = "AMP_remote_config_".concat(apiKey.substring(0, 10));
 			this.logger = logger;
+			try {
+				this.isSupported = typeof localStorage !== "undefined";
+			} catch (error) {
+				this.logger.debug("Remote config localstorage failed to access: ", error);
+				this.isSupported = false;
+			}
 		}
 		RemoteConfigLocalStorage.prototype.fetchConfig = function() {
 			var result = null;
@@ -75364,6 +76931,7 @@ var init_remote_config_localstorage = __esmMin((() => {
 				remoteConfig: null,
 				lastFetch: /* @__PURE__ */ new Date()
 			};
+			if (!this.isSupported) return Promise.resolve(failedRemoteConfigInfo);
 			try {
 				result = localStorage.getItem(this.key);
 			} catch (error) {
@@ -75376,7 +76944,7 @@ var init_remote_config_localstorage = __esmMin((() => {
 			}
 			try {
 				var remoteConfigInfo = JSON.parse(result);
-				this.logger.debug("Remote config localstorage parsed successfully: ".concat(JSON.stringify(remoteConfigInfo)));
+				this.logger.debug("Remote config localstorage parsed successfully: ".concat(safeJsonStringify(remoteConfigInfo)));
 				return Promise.resolve({
 					remoteConfig: remoteConfigInfo.remoteConfig,
 					lastFetch: new Date(remoteConfigInfo.lastFetch)
@@ -75388,6 +76956,7 @@ var init_remote_config_localstorage = __esmMin((() => {
 			}
 		};
 		RemoteConfigLocalStorage.prototype.setConfig = function(config) {
+			if (!this.isSupported) return Promise.resolve(false);
 			try {
 				localStorage.setItem(this.key, JSON.stringify(config));
 				this.logger.debug("Remote config localstorage set successfully.");
@@ -75401,7 +76970,7 @@ var init_remote_config_localstorage = __esmMin((() => {
 	}();
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+analytics-core@2.54.2/node_modules/@amplitude/analytics-core/lib/esm/remote-config/remote-config.js
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/remote-config/remote-config.js
 /**
 * Settles with `promise`, but rejects with an AbortError when `signal` fires. The request-timeout
 * signal is handed to customFetch, but a transport that ignores it would block the await (and the
@@ -75438,16 +77007,18 @@ var init_remote_config = __esmMin((() => {
 	DEFAULT_TIMEOUT$1 = 1e3;
 	DEFAULT_MIN_TIME_BETWEEN_FETCHES = 3e5;
 	RemoteConfigClient = function() {
-		function RemoteConfigClient(apiKey, logger, serverZone, serverUrl, customFetch) {
+		function RemoteConfigClient(apiKey, logger, serverZone, serverUrl, customFetch, configGroup, customStorage) {
 			if (serverZone === void 0) serverZone = "US";
+			if (configGroup === void 0) configGroup = RemoteConfigClient.DEFAULT_CONFIG_GROUP;
 			this.callbackInfos = [];
 			this.lastSuccessfulFetch = null;
 			this.fetchPromise = null;
 			this.isLastFetchInvalidApiKey = false;
 			this.apiKey = apiKey;
+			this.configGroup = configGroup;
 			this.serverUrl = serverUrl || (serverZone === "US" ? "https://sr-client-cfg.amplitude.com/config" : "https://sr-client-cfg.eu.amplitude.com/config");
 			this.logger = logger;
-			this.storage = new RemoteConfigLocalStorage(apiKey, logger);
+			this.storage = customStorage || new RemoteConfigLocalStorage(apiKey, logger);
 			this.customFetch = customFetch;
 		}
 		RemoteConfigClient.prototype.subscribe = function(key, deliveryMode, callback) {
@@ -75764,15 +77335,15 @@ var init_remote_config = __esmMin((() => {
 		RemoteConfigClient.prototype.getUrlParams = function() {
 			var encodedApiKey = encodeURIComponent(this.apiKey);
 			var urlParams = new URLSearchParams();
-			urlParams.append("config_group", RemoteConfigClient.CONFIG_GROUP);
+			urlParams.append("config_group", this.configGroup);
 			return "".concat(this.serverUrl, "/").concat(encodedApiKey, "?").concat(urlParams.toString());
 		};
-		RemoteConfigClient.CONFIG_GROUP = "browser";
+		RemoteConfigClient.DEFAULT_CONFIG_GROUP = "browser";
 		return RemoteConfigClient;
 	}();
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+analytics-core@2.54.2/node_modules/@amplitude/analytics-core/lib/esm/types/server-zone.js
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/types/server-zone.js
 var ServerZone;
 var init_server_zone = __esmMin((() => {
 	(function(ServerZone) {
@@ -75785,7 +77356,7 @@ var init_server_zone = __esmMin((() => {
 	})(ServerZone || (ServerZone = {}));
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+analytics-core@2.54.2/node_modules/@amplitude/analytics-core/lib/esm/utils/json-query.js
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/utils/json-query.js
 function isJsonPrimitive(json) {
 	return typeof json === "string" || typeof json === "number" || typeof json === "boolean" || json === null || json === void 0;
 }
@@ -75815,9 +77386,9 @@ function _pruneJson(_a) {
 	if (!targetObject) targetObject = json;
 	var keys = Object.keys(targetObject);
 	try {
-		for (var keys_1 = __values$2(keys), keys_1_1 = keys_1.next(); !keys_1_1.done; keys_1_1 = keys_1.next()) {
+		for (var keys_1 = __values$1(keys), keys_1_1 = keys_1.next(); !keys_1_1.done; keys_1_1 = keys_1.next()) {
 			var key = keys_1_1.value;
-			var path = __spreadArray$1(__spreadArray$1([], __read$2(ancestors), false), [key], false);
+			var path = __spreadArray$1(__spreadArray$1([], __read$1(ancestors), false), [key], false);
 			if (isJsonPrimitive(targetObject[key])) {
 				if (!hasPathMatchInList(path, allowlist) || hasPathMatchInList(path, excludelist)) delete targetObject[key];
 			} else _pruneJson({
@@ -75902,7 +77473,7 @@ var init_json_query = __esmMin((() => {
 	init_tslib_es6();
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+analytics-core@2.54.2/node_modules/@amplitude/analytics-core/lib/esm/messenger/constants.js
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/messenger/constants.js
 var AMPLITUDE_ORIGIN, AMPLITUDE_ORIGIN_EU, AMPLITUDE_ORIGIN_STAGING, AMPLITUDE_ORIGINS_MAP, AMPLITUDE_BACKGROUND_CAPTURE_SCRIPT_URL;
 var init_constants = __esmMin((() => {
 	AMPLITUDE_ORIGIN = "https://app.amplitude.com";
@@ -75913,10 +77484,10 @@ var init_constants = __esmMin((() => {
 		EU: AMPLITUDE_ORIGIN_EU,
 		STAGING: AMPLITUDE_ORIGIN_STAGING
 	};
-	AMPLITUDE_BACKGROUND_CAPTURE_SCRIPT_URL = "https://cdn.amplitude.com/libs/background-capture-1.0.3.js.gz";
+	AMPLITUDE_BACKGROUND_CAPTURE_SCRIPT_URL = "https://cdn.amplitude.com/libs/background-capture-1.1.0.js.gz";
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+analytics-core@2.54.2/node_modules/@amplitude/analytics-core/lib/esm/messenger/utils.js
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/messenger/utils.js
 /**
 * Generates a simple unique ID for message request/response correlation.
 */
@@ -75953,7 +77524,7 @@ var init_utils = __esmMin((() => {
 	};
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+analytics-core@2.54.2/node_modules/@amplitude/analytics-core/lib/esm/messenger/base-window-messenger.js
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/messenger/base-window-messenger.js
 /**
 * Type guard: checks whether a value is a BaseWindowMessenger instance.
 */
@@ -76065,7 +77636,7 @@ var init_base_window_messenger = __esmMin((() => {
 			if (queued) {
 				this.pendingMessages.delete(action);
 				try {
-					for (var queued_1 = __values$2(queued), queued_1_1 = queued_1.next(); !queued_1_1.done; queued_1_1 = queued_1.next()) {
+					for (var queued_1 = __values$1(queued), queued_1_1 = queued_1.next(); !queued_1_1.done; queued_1_1 = queued_1.next()) {
 						var data = queued_1_1.value;
 						handler(data);
 					}
@@ -76177,7 +77748,21 @@ var init_base_window_messenger = __esmMin((() => {
 	_a$2 = MESSENGER_BRAND;
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+analytics-core@2.54.2/node_modules/@amplitude/analytics-core/lib/esm/messenger/background-capture.js
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/messenger/background-capture-types.js
+var BACKGROUND_CAPTURE_DEVICE_MODES, parseBackgroundCaptureDeviceMode;
+var init_background_capture_types = __esmMin((() => {
+	BACKGROUND_CAPTURE_DEVICE_MODES = [
+		"desktop",
+		"tablet",
+		"mobile"
+	];
+	parseBackgroundCaptureDeviceMode = function(value) {
+		if (typeof value !== "string") return;
+		return BACKGROUND_CAPTURE_DEVICE_MODES.includes(value) ? value : void 0;
+	};
+}));
+//#endregion
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/messenger/background-capture.js
 /**
 * Enable background capture on a messenger instance.
 * Plugins can call this on a shared messenger instance.
@@ -76203,17 +77788,18 @@ function enableBackgroundCapture(messenger, options) {
 			});
 		}
 	};
-	messenger.registerActionHandler("initialize-background-capture", function() {
+	messenger.registerActionHandler("initialize-background-capture", function(data) {
 		var _a, _b;
 		(_b = (_a = messenger.logger) === null || _a === void 0 ? void 0 : _a.debug) === null || _b === void 0 || _b.call(_a, "Initializing background capture (external script)");
 		var resolvedUrl = new URL(scriptUrl, messenger.endpoint).toString();
+		var initialDeviceMode = data && typeof data === "object" ? parseBackgroundCaptureDeviceMode(data.deviceMode) : void 0;
 		messenger.loadScriptOnce(resolvedUrl).then(function() {
 			var _a, _b, _c;
 			(_b = (_a = messenger.logger) === null || _a === void 0 ? void 0 : _a.debug) === null || _b === void 0 || _b.call(_a, "Background capture script loaded (external)");
-			backgroundCaptureInstance = (_c = window === null || window === void 0 ? void 0 : window.amplitudeBackgroundCapture) === null || _c === void 0 ? void 0 : _c.call(window, {
+			backgroundCaptureInstance = (_c = window === null || window === void 0 ? void 0 : window.amplitudeBackgroundCapture) === null || _c === void 0 ? void 0 : _c.call(window, __assign$1({
 				messenger,
 				onBackgroundCapture
-			});
+			}, initialDeviceMode !== void 0 ? { initialDeviceMode } : {}));
 			messenger.notify({ action: "background-capture-loaded" });
 		}).catch(function() {
 			var _a;
@@ -76228,23 +77814,27 @@ function enableBackgroundCapture(messenger, options) {
 }
 var BG_CAPTURE_BRAND;
 var init_background_capture = __esmMin((() => {
+	init_tslib_es6();
+	init_background_capture_types();
 	init_constants();
 	BG_CAPTURE_BRAND = "__AMPLITUDE_BACKGROUND_CAPTURE__";
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+analytics-core@2.54.2/node_modules/@amplitude/analytics-core/lib/esm/index.js
+//#region node_modules/.pnpm/@amplitude+analytics-core@2.59.0/node_modules/@amplitude/analytics-core/lib/esm/index.js
 var init_esm$1 = __esmMin((() => {
 	init_tslib_es6();
 	init_event();
 	init_constants$1();
 	init_status();
 	init_uuid();
+	init_safe_stringify();
 	init_return_wrapper();
 	init_config();
 	init_debug();
 	init_analytics_connector();
 	init_logger();
 	init_global_scope();
+	init_instance_name();
 	init_sampling();
 	init_base();
 	init_fetch();
@@ -76254,10 +77844,11 @@ var init_esm$1 = __esmMin((() => {
 	init_json_query();
 	init_base_window_messenger();
 	init_background_capture();
+	init_background_capture_types();
 	init_constants();
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/constants.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/constants.js
 init_esm$1();
 var DEFAULT_EVENT_PROPERTY_PREFIX = "[Amplitude]";
 var DEFAULT_SESSION_REPLAY_PROPERTY = "".concat(DEFAULT_EVENT_PROPERTY_PREFIX, " Session Replay ID");
@@ -76265,8 +77856,6 @@ var DEFAULT_SERVER_ZONE = ServerZone.US;
 var DEFAULT_PERFORMANCE_CONFIG = { enabled: true };
 var DEFAULT_URL_CHANGE_POLLING_INTERVAL = 1e3;
 var SESSION_REPLAY_DEBUG_PROPERTY = "".concat(DEFAULT_EVENT_PROPERTY_PREFIX, " Session Replay Debug");
-var BLOCK_CLASS = "amp-block";
-var MASK_TEXT_CLASS = "amp-mask";
 var UNMASK_TEXT_CLASS = "amp-unmask";
 var SESSION_REPLAY_SERVER_URL = "https://api-sr.amplitude.com/sessions/v2/track";
 var SESSION_REPLAY_EU_URL = "https://api-sr.eu.amplitude.com/sessions/v2/track";
@@ -76307,7 +77896,7 @@ var CustomRRwebEvent;
 	CustomRRwebEvent["REPLAY_GATE_DECISION"] = "replay-gate-decision";
 })(CustomRRwebEvent || (CustomRRwebEvent = {}));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/logger.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/logger.js
 var SafeLoggerProvider = function() {
 	function SafeLoggerProvider(loggerProvider) {
 		this.logger = loggerProvider;
@@ -76332,10 +77921,10 @@ var SafeLoggerProvider = function() {
 	return SafeLoggerProvider;
 }();
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/config/types.js
+//#region node_modules/.pnpm/@amplitude+session-replay-dom-privacy@0.2.0/node_modules/@amplitude/session-replay-dom-privacy/lib/esm/types.js
 var DEFAULT_MASK_LEVEL = "medium";
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/utils/get-input-type.js
+//#region node_modules/.pnpm/@amplitude+session-replay-dom-privacy@0.2.0/node_modules/@amplitude/session-replay-dom-privacy/lib/esm/get-input-type.js
 function toLowerCase$1(str) {
 	return str.toLowerCase();
 }
@@ -76350,17 +77939,35 @@ function getInputType$1(element) {
 	return element.hasAttribute("data-rr-is-password") ? "password" : type ? toLowerCase$1(type) : null;
 }
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/utils/server-url.js
-function getServerUrl(serverZone, trackServerUrl) {
-	if (trackServerUrl) return trackServerUrl;
-	if (serverZone === "STAGING") return SESSION_REPLAY_STAGING_URL;
-	if (serverZone === "EU") return SESSION_REPLAY_EU_URL;
-	return SESSION_REPLAY_SERVER_URL;
-}
+//#region node_modules/.pnpm/@amplitude+session-replay-dom-privacy@0.2.0/node_modules/@amplitude/session-replay-dom-privacy/lib/esm/url.js
+var globRegexCache = /* @__PURE__ */ new Map();
+var globToRegex = function(glob) {
+	var cached = globRegexCache.get(glob);
+	if (cached) return cached;
+	var T_TRAILING = "\0TRAIL\0";
+	var T_MIDDLE = "\0MID\0";
+	var T_DSTAR = "\0DS\0";
+	var T_STAR = "\0ST\0";
+	var T_QUEST = "\0QU\0";
+	var s = glob;
+	s = s.replace(/\/\*\*$/, T_TRAILING);
+	s = s.replace(/\/\*\*\//g, T_MIDDLE);
+	s = s.replace(/\*\*/g, T_DSTAR);
+	s = s.replace(/\*/g, T_STAR);
+	s = s.replace(/\?/g, T_QUEST);
+	s = s.replace(/[.+^${}()|[\]\\]/g, "\\$&");
+	s = s.split(T_TRAILING).join("(/.*)?");
+	s = s.split(T_MIDDLE).join("/(.*\\/)?");
+	s = s.split(T_DSTAR).join(".*");
+	s = s.split(T_STAR).join(".*");
+	s = s.split(T_QUEST).join(".");
+	var regex = new RegExp("^".concat(s, "$"));
+	globRegexCache.set(glob, regex);
+	return regex;
+};
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/helpers.js
+//#region node_modules/.pnpm/@amplitude+session-replay-dom-privacy@0.2.0/node_modules/@amplitude/session-replay-dom-privacy/lib/esm/policy.js
 init_tslib_es6();
-init_esm$1();
 /**
 * Light: Subset of inputs (sensitive types only — password, hidden, email, tel, cc-*)
 * Medium: All inputs (form fields), text is NOT masked
@@ -76393,7 +78000,7 @@ var getEffectiveMaskLevel = function(url, config) {
 	var e_1, _a;
 	var _b;
 	if (url && config.urlMaskLevels) try {
-		for (var _c = __values$2(config.urlMaskLevels), _d = _c.next(); !_d.done; _d = _c.next()) {
+		for (var _c = __values$1(config.urlMaskLevels), _d = _c.next(); !_d.done; _d = _c.next()) {
 			var rule = _d.value;
 			if (globToRegex(rule.match).test(url)) return rule.maskLevel;
 		}
@@ -76419,11 +78026,11 @@ var isMasked = function(elementType, config, element, currentUrl) {
 	var _a, _b;
 	if (config === void 0) config = { defaultMaskLevel: DEFAULT_MASK_LEVEL };
 	if (element) {
-		if (element.closest(".amp-mask")) return true;
+		if (element.closest(".amp-mask, [data-amp-mask]")) return true;
 		if (((_a = config.maskSelector) !== null && _a !== void 0 ? _a : []).some(function(selector) {
 			return element.closest(selector);
 		})) return true;
-		if (element.closest(".amp-unmask")) return false;
+		if (element.closest(".amp-unmask, [data-amp-unmask]")) return false;
 		if (((_b = config.unmaskSelector) !== null && _b !== void 0 ? _b : []).some(function(selector) {
 			return element.closest(selector);
 		})) return false;
@@ -76447,6 +78054,86 @@ var maskAttributeFn = function(config, getCurrentUrl) {
 		].includes(element.tagName) ? "input" : "text", config, element, getCurrentUrl === null || getCurrentUrl === void 0 ? void 0 : getCurrentUrl()) ? value.replace(/[^\s]/g, "*") : value;
 	};
 };
+//#endregion
+//#region node_modules/.pnpm/@amplitude+session-replay-dom-privacy@0.2.0/node_modules/@amplitude/session-replay-dom-privacy/lib/esm/recorder-options.js
+init_tslib_es6();
+var getBlockSelectors = function(config) {
+	var configured = config === null || config === void 0 ? void 0 : config.blockSelector;
+	return __spreadArray$1(__spreadArray$1([], __read$1(typeof configured === "string" ? configured ? [configured] : [] : configured !== null && configured !== void 0 ? configured : []), false), ["[data-amp-block]"], false).join(",");
+};
+var getMaskTextSelectors = function(config, url) {
+	var _a, _b;
+	if (config && (getEffectiveMaskLevel(url, config) === "conservative" || config.defaultMaskLevel === "conservative" || ((_a = config.urlMaskLevels) === null || _a === void 0 ? void 0 : _a.some(function(rule) {
+		return rule.maskLevel === "conservative";
+	})))) return "*";
+	return __spreadArray$1(__spreadArray$1([], __read$1((_b = config === null || config === void 0 ? void 0 : config.maskSelector) !== null && _b !== void 0 ? _b : []), false), ["[data-amp-mask]"], false).join(",");
+};
+/** Lifecycle and URL observation belong to the caller. Replace the recorder when policy changes. */
+var createPrivacyRecorderOptions = function(config, getCurrentUrl) {
+	if (getCurrentUrl === void 0) getCurrentUrl = function() {
+		return "";
+	};
+	return {
+		maskAllInputs: true,
+		maskTextClass: "amp-mask",
+		blockClass: "amp-block",
+		blockSelector: getBlockSelectors(config),
+		maskTextSelector: getMaskTextSelectors(config, getCurrentUrl()),
+		maskInputFn: maskFn("input", config, getCurrentUrl),
+		maskTextFn: maskFn("text", config, getCurrentUrl),
+		maskAttributeFn: maskAttributeFn(config, getCurrentUrl)
+	};
+};
+//#endregion
+//#region node_modules/.pnpm/@amplitude+session-replay-dom-privacy@0.2.0/node_modules/@amplitude/session-replay-dom-privacy/lib/esm/validation.js
+init_tslib_es6();
+/** Returns a copy. The caller supplies a validator for the target DOM's CSS syntax. */
+var validatePrivacySelectors = function(config, validate, onInvalid) {
+	var e_1, _a;
+	var result = __assign$1({}, config);
+	try {
+		for (var _b = __values$1([
+			"blockSelector",
+			"maskSelector",
+			"unmaskSelector"
+		]), _c = _b.next(); !_c.done; _c = _b.next()) {
+			var key = _c.value;
+			var value = config[key];
+			var valid = (typeof value === "string" ? [value] : value !== null && value !== void 0 ? value : []).filter(function(selector) {
+				try {
+					validate(selector);
+					return true;
+				} catch (_a) {
+					if (!onInvalid) throw new Error("Invalid privacy selector: ".concat(selector));
+					onInvalid(selector);
+					return false;
+				}
+			});
+			result[key] = valid.length ? valid : void 0;
+		}
+	} catch (e_1_1) {
+		e_1 = { error: e_1_1 };
+	} finally {
+		try {
+			if (_c && !_c.done && (_a = _b.return)) _a.call(_b);
+		} finally {
+			if (e_1) throw e_1.error;
+		}
+	}
+	return result;
+};
+//#endregion
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/utils/server-url.js
+function getServerUrl(serverZone, trackServerUrl) {
+	if (trackServerUrl) return trackServerUrl;
+	if (serverZone === "STAGING") return SESSION_REPLAY_STAGING_URL;
+	if (serverZone === "EU") return SESSION_REPLAY_EU_URL;
+	return SESSION_REPLAY_SERVER_URL;
+}
+//#endregion
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/helpers.js
+init_tslib_es6();
+init_esm$1();
 var getCurrentUrl = function() {
 	var globalScope = getGlobalScope();
 	return (globalScope === null || globalScope === void 0 ? void 0 : globalScope.location) ? globalScope.location.href : "";
@@ -76459,31 +78146,6 @@ var isValidGlobUrl = function(globUrl) {
 	if (!/^\/|^https?:\/\/[^\s]+$/.test(globUrl)) return false;
 	return true;
 };
-var globRegexCache = /* @__PURE__ */ new Map();
-var globToRegex = function(glob) {
-	var cached = globRegexCache.get(glob);
-	if (cached) return cached;
-	var T_TRAILING = "\0TRAIL\0";
-	var T_MIDDLE = "\0MID\0";
-	var T_DSTAR = "\0DS\0";
-	var T_STAR = "\0ST\0";
-	var T_QUEST = "\0QU\0";
-	var s = glob;
-	s = s.replace(/\/\*\*$/, T_TRAILING);
-	s = s.replace(/\/\*\*\//g, T_MIDDLE);
-	s = s.replace(/\*\*/g, T_DSTAR);
-	s = s.replace(/\*/g, T_STAR);
-	s = s.replace(/\?/g, T_QUEST);
-	s = s.replace(/[.+^${}()|[\]\\]/g, "\\$&");
-	s = s.split(T_TRAILING).join("(/.*)?");
-	s = s.split(T_MIDDLE).join("/(.*\\/)?");
-	s = s.split(T_DSTAR).join(".*");
-	s = s.split(T_STAR).join(".*");
-	s = s.split(T_QUEST).join(".");
-	var regex = new RegExp("^".concat(s, "$"));
-	globRegexCache.set(glob, regex);
-	return regex;
-};
 var validateUGCFilterRules = function(ugcFilterRules) {
 	if (!ugcFilterRules.every(function(rule) {
 		return typeof rule.selector === "string" && typeof rule.replacement === "string";
@@ -76493,20 +78155,20 @@ var validateUGCFilterRules = function(ugcFilterRules) {
 	})) throw new Error("ugcFilterRules must be an array of objects with valid globs");
 };
 var getPageUrl = function(pageUrl, ugcFilterRules) {
-	var e_2, _a;
+	var e_1, _a;
 	try {
-		for (var ugcFilterRules_1 = __values$2(ugcFilterRules), ugcFilterRules_1_1 = ugcFilterRules_1.next(); !ugcFilterRules_1_1.done; ugcFilterRules_1_1 = ugcFilterRules_1.next()) {
+		for (var ugcFilterRules_1 = __values$1(ugcFilterRules), ugcFilterRules_1_1 = ugcFilterRules_1.next(); !ugcFilterRules_1_1.done; ugcFilterRules_1_1 = ugcFilterRules_1.next()) {
 			var rule = ugcFilterRules_1_1.value;
 			var regex = globToRegex(rule.selector);
 			if (regex.test(pageUrl)) return pageUrl.replace(regex, rule.replacement);
 		}
-	} catch (e_2_1) {
-		e_2 = { error: e_2_1 };
+	} catch (e_1_1) {
+		e_1 = { error: e_1_1 };
 	} finally {
 		try {
 			if (ugcFilterRules_1_1 && !ugcFilterRules_1_1.done && (_a = ugcFilterRules_1.return)) _a.call(ugcFilterRules_1);
 		} finally {
-			if (e_2) throw e_2.error;
+			if (e_1) throw e_1.error;
 		}
 	}
 	return pageUrl;
@@ -76549,13 +78211,13 @@ var getStorageSize = function() {
 	});
 };
 var getDebugConfig = function(config) {
-	var debugConfig = __assign$2({}, config);
+	var debugConfig = __assign$1({}, config);
 	var apiKey = debugConfig.apiKey;
 	debugConfig.apiKey = "****".concat(apiKey.substring(apiKey.length - 4));
 	return debugConfig;
 };
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/config/local-config.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/config/local-config.js
 init_tslib_es6();
 init_esm$1();
 var getDefaultConfig = function() {
@@ -76572,7 +78234,7 @@ var SessionReplayLocalConfig = function(_super) {
 		var _this = this;
 		var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p;
 		var defaultConfig = getDefaultConfig();
-		_this = _super.call(this, __assign$2(__assign$2({
+		_this = _super.call(this, __assign$1(__assign$1({
 			transportProvider: defaultConfig.transportProvider,
 			loggerProvider: new SafeLoggerProvider(options.loggerProvider || defaultConfig.loggerProvider)
 		}, options), { apiKey })) || this;
@@ -76583,6 +78245,7 @@ var SessionReplayLocalConfig = function(_super) {
 		_this.configServerUrl = options.configServerUrl;
 		_this.trackServerUrl = options.trackServerUrl;
 		_this.shouldInlineStylesheet = options.shouldInlineStylesheet;
+		_this.inlineImages = options.inlineImages;
 		_this.version = options.version;
 		_this.performanceConfig = options.performanceConfig || DEFAULT_PERFORMANCE_CONFIG;
 		_this.storeType = (_a = options.storeType) !== null && _a !== void 0 ? _a : "memory";
@@ -76595,7 +78258,7 @@ var SessionReplayLocalConfig = function(_super) {
 		_this.captureFullSnapshotOnFocus = (_f = options.captureFullSnapshotOnFocus) !== null && _f !== void 0 ? _f : false;
 		if (options.maxPersistedEventsSizeBytes !== void 0) _this.maxPersistedEventsSizeBytes = sanitizeByteSize(options.maxPersistedEventsSizeBytes, MIN_EVENT_BYTE_SIZE, MAX_PERSISTED_EVENTS_SIZE_CEILING, "maxPersistedEventsSizeBytes", _this.loggerProvider);
 		if (options.maxSingleEventSizeBytes !== void 0) _this.maxSingleEventSizeBytes = sanitizeByteSize(options.maxSingleEventSizeBytes, MIN_EVENT_BYTE_SIZE, MAX_SINGLE_EVENT_SIZE_CEILING, "maxSingleEventSizeBytes", _this.loggerProvider);
-		_this.privacyConfig = __assign$2(__assign$2({}, (_g = options.privacyConfig) !== null && _g !== void 0 ? _g : {}), { unmaskSelector: Array.from(new Set(__spreadArray$1([".".concat(UNMASK_TEXT_CLASS)], __read$2((_j = (_h = options.privacyConfig) === null || _h === void 0 ? void 0 : _h.unmaskSelector) !== null && _j !== void 0 ? _j : []), false))) });
+		_this.privacyConfig = __assign$1(__assign$1({}, (_g = options.privacyConfig) !== null && _g !== void 0 ? _g : {}), { unmaskSelector: Array.from(new Set(__spreadArray$1([".".concat(UNMASK_TEXT_CLASS)], __read$1((_j = (_h = options.privacyConfig) === null || _h === void 0 ? void 0 : _h.unmaskSelector) !== null && _j !== void 0 ? _j : []), false))) });
 		if (options.interactionConfig) {
 			_this.interactionConfig = options.interactionConfig;
 			if (_this.interactionConfig.ugcFilterRules) validateUGCFilterRules(_this.interactionConfig.ugcFilterRules);
@@ -76717,31 +78380,17 @@ var MouseInteractions$1 = /* @__PURE__ */ ((MouseInteractions2) => {
 	return MouseInteractions2;
 })(MouseInteractions$1 || {});
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/config/joined-config.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/config/joined-config.js
 init_tslib_es6();
 init_esm$1();
 var REMOTE_CONFIG_TIMEOUT_MS = 1500;
 var removeInvalidSelectorsFromPrivacyConfig = function(privacyConfig, loggerProvider) {
 	var fragment = document.createDocumentFragment();
-	var dropInvalidSelectors = function(selectors) {
-		if (selectors === void 0) selectors = [];
-		if (typeof selectors === "string") selectors = [selectors];
-		selectors = selectors.filter(function(selector) {
-			try {
-				fragment.querySelector(selector);
-			} catch (_a) {
-				loggerProvider.warn("[session-replay-browser] omitting selector \"".concat(selector, "\" because it is invalid"));
-				return false;
-			}
-			return true;
-		});
-		if (selectors.length === 0) return;
-		return selectors;
-	};
-	privacyConfig.blockSelector = dropInvalidSelectors(privacyConfig.blockSelector);
-	privacyConfig.maskSelector = dropInvalidSelectors(privacyConfig.maskSelector);
-	privacyConfig.unmaskSelector = dropInvalidSelectors(privacyConfig.unmaskSelector);
-	return privacyConfig;
+	return validatePrivacySelectors(privacyConfig, function(selector) {
+		fragment.querySelector(selector);
+	}, function(selector) {
+		loggerProvider.warn("[session-replay-browser] omitting selector \"".concat(selector, "\" because it is invalid"));
+	});
 };
 var SessionReplayJoinedConfigGenerator = function() {
 	function SessionReplayJoinedConfigGenerator(remoteConfigClient, localConfig) {
@@ -76757,7 +78406,7 @@ var SessionReplayJoinedConfigGenerator = function() {
 			return __generator$1(this, function(_m) {
 				switch (_m.label) {
 					case 0:
-						config = __assign$2({}, this.localConfig);
+						config = __assign$1({}, this.localConfig);
 						config.optOut = this.localConfig.optOut;
 						config.captureEnabled = true;
 						_m.label = 1;
@@ -76828,8 +78477,8 @@ var SessionReplayJoinedConfigGenerator = function() {
 								blockSelector: [],
 								maskSelector: [],
 								unmaskSelector: [],
-								maskAttributes: __spreadArray$1([], __read$2(new Set(__spreadArray$1(__spreadArray$1([], __read$2((_d = localPrivacyConfig.maskAttributes) !== null && _d !== void 0 ? _d : []), false), __read$2((_e = remotePrivacyConfig.maskAttributes) !== null && _e !== void 0 ? _e : []), false))), false),
-								urlMaskLevels: __spreadArray$1(__spreadArray$1([], __read$2((_f = remotePrivacyConfig.urlMaskLevels) !== null && _f !== void 0 ? _f : []), false), __read$2((_g = localPrivacyConfig.urlMaskLevels) !== null && _g !== void 0 ? _g : []), false)
+								maskAttributes: __spreadArray$1([], __read$1(new Set(__spreadArray$1(__spreadArray$1([], __read$1((_d = localPrivacyConfig.maskAttributes) !== null && _d !== void 0 ? _d : []), false), __read$1((_e = remotePrivacyConfig.maskAttributes) !== null && _e !== void 0 ? _e : []), false))), false),
+								urlMaskLevels: __spreadArray$1(__spreadArray$1([], __read$1((_f = remotePrivacyConfig.urlMaskLevels) !== null && _f !== void 0 ? _f : []), false), __read$1((_g = localPrivacyConfig.urlMaskLevels) !== null && _g !== void 0 ? _g : []), false)
 							};
 							privacyConfigSelectorMap = function(privacyConfig) {
 								var e_2, _a, e_3, _b, e_4, _c;
@@ -76837,7 +78486,7 @@ var SessionReplayJoinedConfigGenerator = function() {
 								var selectorMap = {};
 								if (typeof privacyConfig.blockSelector === "string") privacyConfig.blockSelector = [privacyConfig.blockSelector];
 								try {
-									for (var _g = __values$2((_d = privacyConfig.blockSelector) !== null && _d !== void 0 ? _d : []), _h = _g.next(); !_h.done; _h = _g.next()) {
+									for (var _g = __values$1((_d = privacyConfig.blockSelector) !== null && _d !== void 0 ? _d : []), _h = _g.next(); !_h.done; _h = _g.next()) {
 										var selector = _h.value;
 										selectorMap[selector] = "block";
 									}
@@ -76851,7 +78500,7 @@ var SessionReplayJoinedConfigGenerator = function() {
 									}
 								}
 								try {
-									for (var _j = __values$2((_e = privacyConfig.maskSelector) !== null && _e !== void 0 ? _e : []), _k = _j.next(); !_k.done; _k = _j.next()) {
+									for (var _j = __values$1((_e = privacyConfig.maskSelector) !== null && _e !== void 0 ? _e : []), _k = _j.next(); !_k.done; _k = _j.next()) {
 										var selector = _k.value;
 										selectorMap[selector] = "mask";
 									}
@@ -76865,7 +78514,7 @@ var SessionReplayJoinedConfigGenerator = function() {
 									}
 								}
 								try {
-									for (var _l = __values$2((_f = privacyConfig.unmaskSelector) !== null && _f !== void 0 ? _f : []), _m = _l.next(); !_m.done; _m = _l.next()) {
+									for (var _l = __values$1((_f = privacyConfig.unmaskSelector) !== null && _f !== void 0 ? _f : []), _m = _l.next(); !_m.done; _m = _l.next()) {
 										var selector = _m.value;
 										selectorMap[selector] = "unmask";
 									}
@@ -76880,10 +78529,10 @@ var SessionReplayJoinedConfigGenerator = function() {
 								}
 								return selectorMap;
 							};
-							selectorMap = __assign$2(__assign$2({}, privacyConfigSelectorMap(localPrivacyConfig)), privacyConfigSelectorMap(remotePrivacyConfig));
+							selectorMap = __assign$1(__assign$1({}, privacyConfigSelectorMap(localPrivacyConfig)), privacyConfigSelectorMap(remotePrivacyConfig));
 							try {
-								for (_h = __values$2(Object.entries(selectorMap)), _j = _h.next(); !_j.done; _j = _h.next()) {
-									_k = __read$2(_j.value, 2), selector = _k[0], selectorType = _k[1];
+								for (_h = __values$1(Object.entries(selectorMap)), _j = _h.next(); !_j.done; _j = _h.next()) {
+									_k = __read$1(_j.value, 2), selector = _k[0], selectorType = _k[1];
 									if (selectorType === "mask") joinedPrivacyConfig.maskSelector.push(selector);
 									else if (selectorType === "block") joinedPrivacyConfig.blockSelector.push(selector);
 									else if (selectorType === "unmask") joinedPrivacyConfig.unmaskSelector.push(selector);
@@ -76955,7 +78604,7 @@ var createSessionReplayJoinedConfigGenerator = function(apiKey, options) {
 	});
 };
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/events/merge-mutation-events.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/events/merge-mutation-events.js
 init_tslib_es6();
 function isMergeableMutation(event) {
 	if (event.type !== EventType$1.IncrementalSnapshot) return false;
@@ -76975,10 +78624,10 @@ function mergeStyleDiffs(diffs) {
 	var e_1, _a, e_2, _b;
 	var merged = {};
 	try {
-		for (var diffs_1 = __values$2(diffs), diffs_1_1 = diffs_1.next(); !diffs_1_1.done; diffs_1_1 = diffs_1.next()) {
+		for (var diffs_1 = __values$1(diffs), diffs_1_1 = diffs_1.next(); !diffs_1_1.done; diffs_1_1 = diffs_1.next()) {
 			var diff = diffs_1_1.value;
 			try {
-				for (var _c = (e_2 = void 0, __values$2(Object.keys(diff))), _d = _c.next(); !_d.done; _d = _c.next()) {
+				for (var _c = (e_2 = void 0, __values$1(Object.keys(diff))), _d = _c.next(); !_d.done; _d = _c.next()) {
 					var prop = _d.value;
 					merged[prop] = diff[prop];
 				}
@@ -77063,7 +78712,7 @@ function coalesceStyleAttributes(attributes) {
 		}
 	};
 	try {
-		for (var _b = __values$2(styleIndicesById.values()), _c = _b.next(); !_c.done; _c = _b.next()) {
+		for (var _b = __values$1(styleIndicesById.values()), _c = _b.next(); !_c.done; _c = _b.next()) {
 			var indices = _c.value;
 			_loop_1(indices);
 		}
@@ -77081,16 +78730,16 @@ function coalesceStyleAttributes(attributes) {
 	attributes.forEach(function(attr, i) {
 		var mergedStyle = mergedStyleByIndex.get(i);
 		if (mergedStyle !== void 0) {
-			result.push(__assign$2(__assign$2({}, attr), { attributes: __assign$2(__assign$2({}, attr.attributes), { style: mergedStyle }) }));
+			result.push(__assign$1(__assign$1({}, attr), { attributes: __assign$1(__assign$1({}, attr.attributes), { style: mergedStyle }) }));
 			return;
 		}
 		if (!dropStyleAt.has(i)) {
 			result.push(attr);
 			return;
 		}
-		var rest = __assign$2({}, attr.attributes);
+		var rest = __assign$1({}, attr.attributes);
 		delete rest.style;
-		if (Object.keys(rest).length > 0) result.push(__assign$2(__assign$2({}, attr), { attributes: rest }));
+		if (Object.keys(rest).length > 0) result.push(__assign$1(__assign$1({}, attr), { attributes: rest }));
 	});
 	return result;
 }
@@ -77106,7 +78755,7 @@ function mergeGroup(events) {
 		var e_6, _a, e_7, _b;
 		var data = e.data;
 		try {
-			for (var _c = __values$2(data.adds), _d = _c.next(); !_d.done; _d = _c.next()) {
+			for (var _c = __values$1(data.adds), _d = _c.next(); !_d.done; _d = _c.next()) {
 				var add = _d.value;
 				if (!firstAddEventIndex.has(add.node.id)) firstAddEventIndex.set(add.node.id, i);
 				lastAddEventIndex.set(add.node.id, i);
@@ -77122,7 +78771,7 @@ function mergeGroup(events) {
 			}
 		}
 		try {
-			for (var _e = __values$2(data.removes), _f = _e.next(); !_f.done; _f = _e.next()) {
+			for (var _e = __values$1(data.removes), _f = _e.next(); !_f.done; _f = _e.next()) {
 				var remove = _f.value;
 				if (!firstRemoveEventIndex.has(remove.id)) firstRemoveEventIndex.set(remove.id, i);
 				lastRemoveEventIndex.set(remove.id, i);
@@ -77140,8 +78789,8 @@ function mergeGroup(events) {
 	var transientIds = /* @__PURE__ */ new Set();
 	var preExistingTransientIds = /* @__PURE__ */ new Set();
 	try {
-		for (var firstAddEventIndex_1 = __values$2(firstAddEventIndex), firstAddEventIndex_1_1 = firstAddEventIndex_1.next(); !firstAddEventIndex_1_1.done; firstAddEventIndex_1_1 = firstAddEventIndex_1.next()) {
-			var _c = __read$2(firstAddEventIndex_1_1.value, 2), id = _c[0], firstAddIdx = _c[1];
+		for (var firstAddEventIndex_1 = __values$1(firstAddEventIndex), firstAddEventIndex_1_1 = firstAddEventIndex_1.next(); !firstAddEventIndex_1_1.done; firstAddEventIndex_1_1 = firstAddEventIndex_1.next()) {
+			var _c = __read$1(firstAddEventIndex_1_1.value, 2), id = _c[0], firstAddIdx = _c[1];
 			var firstRemoveIdx = firstRemoveEventIndex.get(id);
 			if (firstRemoveIdx === void 0) continue;
 			if (lastAddEventIndex.get(id) >= lastRemoveEventIndex.get(id)) continue;
@@ -77163,8 +78812,8 @@ function mergeGroup(events) {
 		while (changed) {
 			changed = false;
 			try {
-				for (var lastParentById_1 = (e_5 = void 0, __values$2(lastParentById)), lastParentById_1_1 = lastParentById_1.next(); !lastParentById_1_1.done; lastParentById_1_1 = lastParentById_1.next()) {
-					var _d = __read$2(lastParentById_1_1.value, 2), nodeId = _d[0], parentId = _d[1];
+				for (var lastParentById_1 = (e_5 = void 0, __values$1(lastParentById)), lastParentById_1_1 = lastParentById_1.next(); !lastParentById_1_1.done; lastParentById_1_1 = lastParentById_1.next()) {
+					var _d = __read$1(lastParentById_1_1.value, 2), nodeId = _d[0], parentId = _d[1];
 					if (!transientIds.has(nodeId) && !preExistingTransientIds.has(nodeId) && !cascadeDropAddsOnlyIds.has(nodeId) && (transientIds.has(parentId) || preExistingTransientIds.has(parentId) || cascadeDropAddsOnlyIds.has(parentId))) {
 						var nodeFirstRemoveIdx = firstRemoveEventIndex.get(nodeId);
 						var nodeFirstAddIdx = firstAddEventIndex.get(nodeId);
@@ -77190,7 +78839,7 @@ function mergeGroup(events) {
 	events.forEach(function(e, eventIdx) {
 		var e_8, _a;
 		try {
-			for (var _b = __values$2(e.data.removes), _c = _b.next(); !_c.done; _c = _b.next()) {
+			for (var _b = __values$1(e.data.removes), _c = _b.next(); !_c.done; _c = _b.next()) {
 				var r = _c.value;
 				if (transientIds.has(r.id)) continue;
 				if (preExistingTransientIds.has(r.id) && eventIdx >= firstAddEventIndex.get(r.id)) continue;
@@ -77230,7 +78879,7 @@ function mergeGroup(events) {
 		}) : allTexts,
 		attributes: coalesceStyleAttributes(mergedAttributes)
 	};
-	return __assign$2(__assign$2({}, first), { data: merged });
+	return __assign$1(__assign$1({}, first), { data: merged });
 }
 /**
 * Merges consecutive IncrementalSnapshot mutation events into a single event,
@@ -77257,7 +78906,7 @@ function mergeMutationEvents(events) {
 	return result;
 }
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/events/event-compressor.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/events/event-compressor.js
 init_tslib_es6();
 init_esm$1();
 var DEFAULT_TIMEOUT = 2e3;
@@ -77321,7 +78970,7 @@ var EventCompressor = function() {
 		*/
 		this.flushQueue = function() {
 			var _a;
-			if (_this.pendingQueue.length > 0) (_a = _this.taskQueue).push.apply(_a, __spreadArray$1([], __read$2(_this.mergeMutationTasks(_this.pendingQueue.splice(0))), false));
+			if (_this.pendingQueue.length > 0) (_a = _this.taskQueue).push.apply(_a, __spreadArray$1([], __read$1(_this.mergeMutationTasks(_this.pendingQueue.splice(0))), false));
 			while (_this.taskQueue.length > 0) {
 				var task = _this.taskQueue.shift();
 				if (task) {
@@ -77380,9 +79029,9 @@ var EventCompressor = function() {
 		if (event.type === EventType$1.FullSnapshot) {
 			this.config.loggerProvider.debug("Processing full snapshot immediately.");
 			if (this.taskQueue.length > 0 || this.pendingQueue.length > 0) {
-				var allTasks = __spreadArray$1(__spreadArray$1([], __read$2(this.taskQueue.splice(0)), false), __read$2(this.mergeMutationTasks(this.pendingQueue.splice(0))), false);
+				var allTasks = __spreadArray$1(__spreadArray$1([], __read$1(this.taskQueue.splice(0)), false), __read$1(this.mergeMutationTasks(this.pendingQueue.splice(0))), false);
 				try {
-					for (var allTasks_1 = __values$2(allTasks), allTasks_1_1 = allTasks_1.next(); !allTasks_1_1.done; allTasks_1_1 = allTasks_1.next()) {
+					for (var allTasks_1 = __values$1(allTasks), allTasks_1_1 = allTasks_1.next(); !allTasks_1_1.done; allTasks_1_1 = allTasks_1.next()) {
 						var task = allTasks_1_1.value;
 						var compressed = this.compressEvent(task.event);
 						this.addCompressedEventToManager(compressed, task.sessionId);
@@ -77418,7 +79067,7 @@ var EventCompressor = function() {
 	EventCompressor.prototype.processQueue = function(idleDeadline) {
 		var _a;
 		var _this = this;
-		if (this.pendingQueue.length > 0) (_a = this.taskQueue).push.apply(_a, __spreadArray$1([], __read$2(this.mergeMutationTasks(this.pendingQueue.splice(0))), false));
+		if (this.pendingQueue.length > 0) (_a = this.taskQueue).push.apply(_a, __spreadArray$1([], __read$1(this.mergeMutationTasks(this.pendingQueue.splice(0))), false));
 		while (this.taskQueue.length > 0 && (idleDeadline.timeRemaining() > 0 || idleDeadline.didTimeout)) {
 			var task = this.taskQueue.shift();
 			if (task) {
@@ -77446,7 +79095,7 @@ var EventCompressor = function() {
 				return t.event;
 			}));
 			try {
-				for (var merged_1 = (e_2 = void 0, __values$2(merged)), merged_1_1 = merged_1.next(); !merged_1_1.done; merged_1_1 = merged_1.next()) {
+				for (var merged_1 = (e_2 = void 0, __values$1(merged)), merged_1_1 = merged_1.next(); !merged_1_1.done; merged_1_1 = merged_1.next()) {
 					var event_3 = merged_1_1.value;
 					result.push({
 						event: event_3,
@@ -77469,7 +79118,7 @@ var EventCompressor = function() {
 	return EventCompressor;
 }();
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/messages.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/messages.js
 var UNEXPECTED_ERROR_MESSAGE = "Unexpected error occurred";
 var UNEXPECTED_NETWORK_ERROR_MESSAGE = "Network error occurred, event batch rejected";
 var MAX_RETRIES_EXCEEDED_MESSAGE = "Session replay event batch rejected due to exceeded retry count";
@@ -77478,10 +79127,10 @@ var MISSING_DEVICE_ID_MESSAGE = "Session replay event batch not sent due to miss
 var MISSING_API_KEY_MESSAGE = "Session replay event batch not sent due to missing api key";
 var SESSION_KILLED_MESSAGE = "Session replay event batch dropped: server signalled capture disabled or session out of valid range for this session";
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/version.js
-var VERSION$1 = "1.48.2";
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/version.js
+var VERSION$1 = "1.51.0";
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/utils/gzip.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/utils/gzip.js
 init_tslib_es6();
 /**
 * Gzip-compresses a JSON string using the CompressionStream API.
@@ -77541,7 +79190,7 @@ function gzipJson(jsonStr, scope) {
 					result = new Uint8Array(totalLength);
 					offset = 0;
 					try {
-						for (chunks_1 = __values$2(chunks_2), chunks_1_1 = chunks_1.next(); !chunks_1_1.done; chunks_1_1 = chunks_1.next()) {
+						for (chunks_1 = __values$1(chunks_2), chunks_1_1 = chunks_1.next(); !chunks_1_1.done; chunks_1_1 = chunks_1.next()) {
 							chunk = chunks_1_1.value;
 							result.set(chunk, offset);
 							offset += chunk.length;
@@ -77565,7 +79214,7 @@ function gzipJson(jsonStr, scope) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/track-destination.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/track-destination.js
 init_tslib_es6();
 init_esm$1();
 var MAX_KILLED_SESSIONS = 256;
@@ -77622,8 +79271,8 @@ var SessionReplayTrackDestination = function() {
 				worker_1.terminate();
 				_this.worker = void 0;
 				try {
-					for (var _b = __values$2(_this.pendingWorkerRequests), _c = _b.next(); !_c.done; _c = _b.next()) {
-						var pending_1 = __read$2(_c.value, 2)[1];
+					for (var _b = __values$1(_this.pendingWorkerRequests), _c = _b.next(); !_c.done; _c = _b.next()) {
+						var pending_1 = __read$1(_c.value, 2)[1];
 						if (pending_1.timeout) clearTimeout(pending_1.timeout);
 						loggerProvider.warn("Session replay event send failed due to worker crash: ".concat(e.message));
 						pending_1.resolve();
@@ -77684,7 +79333,7 @@ var SessionReplayTrackDestination = function() {
 		}
 	}
 	SessionReplayTrackDestination.prototype.sendEventsList = function(destinationData) {
-		this.addToQueue(__assign$2(__assign$2({}, destinationData), {
+		this.addToQueue(__assign$1(__assign$1({}, destinationData), {
 			attempts: 0,
 			timeout: 0
 		}));
@@ -77856,7 +79505,7 @@ var SessionReplayTrackDestination = function() {
 							7,
 							8
 						]);
-						list_1 = __values$2(list), list_1_1 = list_1.next();
+						list_1 = __values$1(list), list_1_1 = list_1.next();
 						_b.label = 2;
 					case 2:
 						if (!!list_1_1.done) return [3, 5];
@@ -77931,7 +79580,7 @@ var SessionReplayTrackDestination = function() {
 		if (list.length <= 1) return list;
 		var groups = /* @__PURE__ */ new Map();
 		try {
-			for (var list_2 = __values$2(list), list_2_1 = list_2.next(); !list_2_1.done; list_2_1 = list_2.next()) {
+			for (var list_2 = __values$1(list), list_2_1 = list_2.next(); !list_2_1.done; list_2_1 = list_2.next()) {
 				var ctx = list_2_1.value;
 				var key = [
 					ctx.sessionId,
@@ -77975,8 +79624,8 @@ var SessionReplayTrackDestination = function() {
 					return sum + new Blob([e]).size;
 				}, 0);
 				if (current === null) {
-					current = __assign$2(__assign$2({}, ctx), {
-						events: __spreadArray$1([], __read$2(ctx.events), false),
+					current = __assign$1(__assign$1({}, ctx), {
+						events: __spreadArray$1([], __read$1(ctx.events), false),
 						attempts: 0
 					});
 					currentBytes = ctxBytes;
@@ -77984,8 +79633,8 @@ var SessionReplayTrackDestination = function() {
 				}
 				if (currentBytes + ctxBytes > 4e6) {
 					flushCurrent();
-					current = __assign$2(__assign$2({}, ctx), {
-						events: __spreadArray$1([], __read$2(ctx.events), false),
+					current = __assign$1(__assign$1({}, ctx), {
+						events: __spreadArray$1([], __read$1(ctx.events), false),
 						attempts: 0
 					});
 					currentBytes = ctxBytes;
@@ -78009,7 +79658,7 @@ var SessionReplayTrackDestination = function() {
 				};
 			};
 			try {
-				for (var group_1 = (e_5 = void 0, __values$2(group)), group_1_1 = group_1.next(); !group_1_1.done; group_1_1 = group_1.next()) {
+				for (var group_1 = (e_5 = void 0, __values$1(group)), group_1_1 = group_1.next(); !group_1_1.done; group_1_1 = group_1.next()) {
 					var ctx = group_1_1.value;
 					_loop_2(ctx);
 				}
@@ -78025,7 +79674,7 @@ var SessionReplayTrackDestination = function() {
 			flushCurrent();
 		};
 		try {
-			for (var _k = __values$2(groups.values()), _l = _k.next(); !_l.done; _l = _k.next()) {
+			for (var _k = __values$1(groups.values()), _l = _k.next(); !_l.done; _l = _k.next()) {
 				var group = _l.value;
 				_loop_1(group);
 			}
@@ -78125,7 +79774,7 @@ var SessionReplayTrackDestination = function() {
 		var e_6, _a;
 		this.timedOutWorkerRequests.set(id, context);
 		if (this.timedOutWorkerRequests.size > MAX_TIMED_OUT_WORKER_REQUESTS) try {
-			for (var _b = __values$2(this.timedOutWorkerRequests.keys()), _c = _b.next(); !_c.done; _c = _b.next()) {
+			for (var _b = __values$1(this.timedOutWorkerRequests.keys()), _c = _b.next(); !_c.done; _c = _b.next()) {
 				var oldest = _c.value;
 				this.timedOutWorkerRequests.delete(oldest);
 				break;
@@ -78265,7 +79914,7 @@ var SessionReplayTrackDestination = function() {
 						gzipped = _h;
 						payloadSize = gzipped ? gzipped.byteLength : new Blob([payloadJson]).size;
 						controller_1 = new AbortController();
-						headers = __assign$2({
+						headers = __assign$1({
 							"Content-Type": "application/json",
 							Accept: "*/*",
 							Authorization: "Bearer ".concat(apiKey),
@@ -78456,11 +80105,11 @@ var SessionReplayTrackDestination = function() {
 			return Promise.resolve();
 		};
 		var mid = Math.floor(context.events.length / 2);
-		this.sendEventsList(__assign$2(__assign$2({}, context), {
+		this.sendEventsList(__assign$1(__assign$1({}, context), {
 			events: context.events.slice(0, mid),
 			onComplete: noop
 		}));
-		this.sendEventsList(__assign$2(__assign$2({}, context), {
+		this.sendEventsList(__assign$1(__assign$1({}, context), {
 			events: context.events.slice(mid),
 			onComplete: noop
 		}));
@@ -78536,7 +80185,7 @@ var SessionReplayTrackDestination = function() {
 		if (this.killedSessions.has(sessionId)) return;
 		this.killedSessions.add(sessionId);
 		if (this.killedSessions.size > MAX_KILLED_SESSIONS) try {
-			for (var _c = __values$2(this.killedSessions), _d = _c.next(); !_d.done; _d = _c.next()) {
+			for (var _c = __values$1(this.killedSessions), _d = _c.next(); !_d.done; _d = _c.next()) {
 				var oldest = _d.value;
 				this.killedSessions.delete(oldest);
 				break;
@@ -78553,7 +80202,7 @@ var SessionReplayTrackDestination = function() {
 		this.loggerProvider.log("Session replay capture stopped for session ".concat(sessionId, " by server directive ").concat(skipCode, "; remaining events will be dropped"));
 		var remaining = [];
 		try {
-			for (var _e = __values$2(this.queue), _f = _e.next(); !_f.done; _f = _e.next()) {
+			for (var _e = __values$1(this.queue), _f = _e.next(); !_f.done; _f = _e.next()) {
 				var queued = _f.value;
 				if (queued.sessionId === sessionId) this.completeRequest({
 					context: queued,
@@ -78790,7 +80439,7 @@ var init_build = __esmMin((() => {
 	}));
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/events/base-events-store.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/events/base-events-store.js
 init_build();
 init_tslib_es6();
 var BaseEventsStore = function() {
@@ -78859,7 +80508,7 @@ var BaseEventsStore = function() {
 		var e_1, _a;
 		var totalSize = 0;
 		try {
-			for (var events_1 = __values$2(events), events_1_1 = events_1.next(); !events_1_1.done; events_1_1 = events_1.next()) {
+			for (var events_1 = __values$1(events), events_1_1 = events_1.next(); !events_1_1.done; events_1_1 = events_1.next()) {
 				var event_1 = events_1_1.value;
 				totalSize += this.getStringSize(event_1);
 			}
@@ -78878,7 +80527,7 @@ var BaseEventsStore = function() {
 	return BaseEventsStore;
 }();
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/utils/is-abort-error.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/utils/is-abort-error.js
 /**
 * IndexedDB can surface transient AbortErrors (internal cancellations,
 * cleanup) that are not actionable by customers. We downgrade these from
@@ -78898,7 +80547,7 @@ var logIdbError = function(logger, message, error) {
 	else logger.warn(message);
 };
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/events/events-idb-store.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/events/events-idb-store.js
 init_tslib_es6();
 function generateUUID() {
 	try {
@@ -79141,7 +80790,7 @@ var SessionReplayEventsIDBStore = function(_super) {
 							this.recordSuccess();
 							cancelTimeout();
 							currentSequenceData.tabId, rest = __rest(currentSequenceData, ["tabId"]);
-							return [2, __assign$2(__assign$2({}, rest), {
+							return [2, __assign$1(__assign$1({}, rest), {
 								sessionId,
 								sequenceId
 							})];
@@ -79385,7 +81034,7 @@ var SessionReplayEventsIDBStore = function(_super) {
 					case 1:
 						db = _b.sent();
 						tabId = (_a = args.tabId) !== null && _a !== void 0 ? _a : generateUUID();
-						return [2, new SessionReplayEventsIDBStore(__assign$2(__assign$2({}, args), {
+						return [2, new SessionReplayEventsIDBStore(__assign$1(__assign$1({}, args), {
 							db,
 							tabId
 						}))];
@@ -79425,7 +81074,7 @@ var SessionReplayEventsIDBStore = function(_super) {
 						]);
 						return [4, this.db.getAll("sessionCurrentSequence")];
 					case 4:
-						_a = __values$2.apply(void 0, [_d.sent()]), _b = _a.next();
+						_a = __values$1.apply(void 0, [_d.sent()]), _b = _a.next();
 						_d.label = 5;
 					case 5:
 						if (!!_b.done) return [3, 7];
@@ -79457,7 +81106,7 @@ var SessionReplayEventsIDBStore = function(_super) {
 	return SessionReplayEventsIDBStore;
 }(BaseEventsStore);
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/events/events-memory-store.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/events/events-memory-store.js
 init_tslib_es6();
 var InMemoryEventsStore = function(_super) {
 	__extends$1(InMemoryEventsStore, _super);
@@ -79474,7 +81123,7 @@ var InMemoryEventsStore = function(_super) {
 	};
 	InMemoryEventsStore.prototype.addSequence = function(sessionId) {
 		var sequenceId = this.sequenceId++;
-		var events = __spreadArray$1([], __read$2(this.sequences[sessionId]), false);
+		var events = __spreadArray$1([], __read$1(this.sequences[sessionId]), false);
 		this.finalizedSequences[sequenceId] = {
 			sessionId,
 			events
@@ -79496,8 +81145,8 @@ var InMemoryEventsStore = function(_super) {
 			return __generator$1(this, function(_f) {
 				result = [];
 				try {
-					for (_a = __values$2(Object.entries(this.finalizedSequences)), _b = _a.next(); !_b.done; _b = _a.next()) {
-						_c = __read$2(_b.value, 2), sequenceId = _c[0], _d = _c[1], sessionId = _d.sessionId, events = _d.events;
+					for (_a = __values$1(Object.entries(this.finalizedSequences)), _b = _a.next(); !_b.done; _b = _a.next()) {
+						_c = __read$1(_b.value, 2), sequenceId = _c[0], _d = _c[1], sessionId = _d.sessionId, events = _d.events;
 						if (events.length === 0) {
 							this.maybeLogEmptyFiltered("getSequencesToSend");
 							delete this.finalizedSequences[Number(sequenceId)];
@@ -79572,7 +81221,7 @@ var InMemoryEventsStore = function(_super) {
 	return InMemoryEventsStore;
 }(BaseEventsStore);
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/events/events-manager.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/events/events-manager.js
 init_tslib_es6();
 var createEventsManager = function(_a) {
 	var config = _a.config, minInterval = _a.minInterval, maxInterval = _a.maxInterval, maxPersistedEventsSize = _a.maxPersistedEventsSize, type = _a.type, payloadBatcher = _a.payloadBatcher, storeType = _a.storeType, trackDestinationWorkerScript = _a.trackDestinationWorkerScript, shouldSend = _a.shouldSend;
@@ -79591,7 +81240,7 @@ var createEventsManager = function(_a) {
 			switch (_d.label) {
 				case 0:
 					maxSingleEventSize = (_c = config.maxSingleEventSizeBytes) !== null && _c !== void 0 ? _c : MAX_SINGLE_EVENT_SIZE;
-					trackDestination = new SessionReplayTrackDestination(__assign$2(__assign$2({}, config), {
+					trackDestination = new SessionReplayTrackDestination(__assign$1(__assign$1({}, config), {
 						loggerProvider: config.loggerProvider,
 						payloadBatcher,
 						workerScript: trackDestinationWorkerScript
@@ -79815,7 +81464,7 @@ var createEventsManager = function(_a) {
 						});
 					};
 					getBeaconEvents = function() {
-						return __spreadArray$1([], __read$2(beaconBuffer), false);
+						return __spreadArray$1([], __read$1(beaconBuffer), false);
 					};
 					dropPendingBeaconEvents = function() {
 						advanceBeaconWindow(beaconWindowStart + beaconBuffer.length);
@@ -79834,7 +81483,7 @@ var createEventsManager = function(_a) {
 	});
 };
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/events/multi-manager.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/events/multi-manager.js
 init_tslib_es6();
 /**
 * "Registers" events managers internally. When an event is added this class routes the event to the correct
@@ -79907,14 +81556,14 @@ var MultiEventManager = function() {
 	return MultiEventManager;
 }();
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/libs/finder.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/libs/finder.js
 init_tslib_es6();
 /* istanbul ignore file */
 var config;
 var rootDocument;
-var start;
+var start$1;
 function finder(input, options) {
-	start = /* @__PURE__ */ new Date();
+	start$1 = /* @__PURE__ */ new Date();
 	if (input.nodeType !== Node.ELEMENT_NODE) throw new Error("Can't generate CSS selector for non-element node type.");
 	if ("html" === input.tagName.toLowerCase()) return "html";
 	var defaults = {
@@ -79937,7 +81586,7 @@ function finder(input, options) {
 		maxNumberOfTries: 1e4,
 		timeoutMs: void 0
 	};
-	config = __assign$2(__assign$2({}, defaults), options);
+	config = __assign$1(__assign$1({}, defaults), options);
 	rootDocument = findRootDocument(config.root, defaults);
 	var path = bottomUpSearch(input, "all", function() {
 		return bottomUpSearch(input, "two", function() {
@@ -79964,9 +81613,9 @@ function bottomUpSearch(input, limit, fallback) {
 	var i = 0;
 	var _loop_1 = function() {
 		var e_1, _a;
-		var elapsedTime = (/* @__PURE__ */ new Date()).getTime() - start.getTime();
+		var elapsedTime = (/* @__PURE__ */ new Date()).getTime() - start$1.getTime();
 		if (config.timeoutMs !== void 0 && elapsedTime > config.timeoutMs) throw new Error("Timeout: Can't find a unique selector after ".concat(elapsedTime, "ms"));
-		var level = maybe(id(current)) || maybe.apply(void 0, __spreadArray$1([], __read$2(attr(current)), false)) || maybe.apply(void 0, __spreadArray$1([], __read$2(classNames(current)), false)) || maybe(tagName(current)) || [any()];
+		var level = maybe(id(current)) || maybe.apply(void 0, __spreadArray$1([], __read$1(attr(current)), false)) || maybe.apply(void 0, __spreadArray$1([], __read$1(classNames(current)), false)) || maybe(tagName(current)) || [any()];
 		var nth = index$3(current);
 		if (limit == "all") {
 			if (nth) level = level.concat(level.filter(dispensableNth).map(function(node) {
@@ -79978,14 +81627,14 @@ function bottomUpSearch(input, limit, fallback) {
 				return nthChild(node, nth);
 			}));
 		} else if (limit == "one") {
-			var node = __read$2(level = level.slice(0, 1), 1)[0];
+			var node = __read$1(level = level.slice(0, 1), 1)[0];
 			if (nth && dispensableNth(node)) level = [nthChild(node, nth)];
 		} else if (limit == "none") {
 			level = [any()];
 			if (nth) level = [nthChild(level[0], nth)];
 		}
 		try {
-			for (var level_1 = (e_1 = void 0, __values$2(level)), level_1_1 = level_1.next(); !level_1_1.done; level_1_1 = level_1.next()) {
+			for (var level_1 = (e_1 = void 0, __values$1(level)), level_1_1 = level_1.next(); !level_1_1.done; level_1_1 = level_1.next()) {
 				var node = level_1_1.value;
 				node.level = i;
 			}
@@ -80016,7 +81665,7 @@ function findUniquePath(stack, fallback) {
 	var paths = sort(combinations(stack));
 	if (paths.length > config.threshold) return fallback ? fallback() : null;
 	try {
-		for (var paths_1 = __values$2(paths), paths_1_1 = paths_1.next(); !paths_1_1.done; paths_1_1 = paths_1.next()) {
+		for (var paths_1 = __values$1(paths), paths_1_1 = paths_1.next(); !paths_1_1.done; paths_1_1 = paths_1.next()) {
 			var candidate = paths_1_1.value;
 			if (unique(candidate)) return candidate;
 		}
@@ -80145,12 +81794,12 @@ function combinations(stack, path) {
 					7,
 					8
 				]);
-				_a = __values$2(stack[0]), _b = _a.next();
+				_a = __values$1(stack[0]), _b = _a.next();
 				_d.label = 2;
 			case 2:
 				if (!!_b.done) return [3, 5];
 				node = _b.value;
-				return [5, __values$2(combinations(stack.slice(1, stack.length), path.concat(node)))];
+				return [5, __values$1(combinations(stack.slice(1, stack.length), path.concat(node)))];
 			case 3:
 				_d.sent();
 				_d.label = 4;
@@ -80179,7 +81828,7 @@ function combinations(stack, path) {
 	});
 }
 function sort(paths) {
-	return __spreadArray$1([], __read$2(paths), false).sort(function(a, b) {
+	return __spreadArray$1([], __read$1(paths), false).sort(function(a, b) {
 		return penalty(a) - penalty(b);
 	});
 }
@@ -80199,7 +81848,7 @@ function optimize(path, input, scope) {
 				if (!(i < path.length - 1)) return [3, 5];
 				if (scope.counter > config.maxNumberOfTries) return [2];
 				scope.counter += 1;
-				newPath = __spreadArray$1([], __read$2(path), false);
+				newPath = __spreadArray$1([], __read$1(path), false);
 				newPath.splice(i, 1);
 				newPathKey = selector(newPath);
 				if (scope.visited.has(newPathKey)) return [2];
@@ -80208,7 +81857,7 @@ function optimize(path, input, scope) {
 			case 2:
 				_a.sent();
 				scope.visited.set(newPathKey, true);
-				return [5, __values$2(optimize(newPath, input, scope))];
+				return [5, __values$1(optimize(newPath, input, scope))];
 			case 3:
 				_a.sent();
 				_a.label = 4;
@@ -80223,7 +81872,7 @@ function same(path, input) {
 	return rootDocument.querySelector(selector(path)) === input;
 }
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/hooks/click.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/hooks/click.js
 init_tslib_es6();
 init_esm$1();
 var HOUR_IN_MILLISECONDS = 36e5;
@@ -80251,7 +81900,7 @@ var clickBatcher = function(_a) {
 		var x = curr.x, y = curr.y, selector = curr.selector, timestamp = curr.timestamp;
 		var hour = timestamp - timestamp % HOUR_IN_MILLISECONDS;
 		var k = "".concat(x, ":").concat(y, ":").concat(selector !== null && selector !== void 0 ? selector : "", ":").concat(hour);
-		if (!prev[k]) prev[k] = __assign$2(__assign$2({}, curr), {
+		if (!prev[k]) prev[k] = __assign$1(__assign$1({}, curr), {
 			timestamp: hour,
 			count: 1
 		});
@@ -80311,7 +81960,7 @@ var ClickHandler = function() {
 	return ClickHandler;
 }();
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/utils/rrweb.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/utils/rrweb.js
 init_esm$1();
 function getViewportHeight() {
 	var globalScope = getGlobalScope();
@@ -80322,7 +81971,7 @@ function getViewportWidth() {
 	return (globalScope === null || globalScope === void 0 ? void 0 : globalScope.innerWidth) || document.documentElement && document.documentElement.clientWidth || 0;
 }
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/beacon-transport.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/beacon-transport.js
 init_esm$1();
 /**
 * For very small payloads it's preferable to use the [Beacon API](https://developer.mozilla.org/en-US/docs/Web/API/Beacon_API).
@@ -80409,7 +82058,7 @@ var BeaconTransport = function() {
 	return BeaconTransport;
 }();
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/hooks/scroll.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/hooks/scroll.js
 init_esm$1();
 /**
 * This is intended to watch and update max scroll activity when loaded for a particular page.
@@ -80531,7 +82180,7 @@ var ScrollWatcher = function() {
 	return ScrollWatcher;
 }();
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/identifiers.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/identifiers.js
 var SessionIdentifiers = function() {
 	function SessionIdentifiers(_a) {
 		var sessionId = _a.sessionId, deviceId = _a.deviceId;
@@ -80542,7 +82191,7 @@ var SessionIdentifiers = function() {
 	return SessionIdentifiers;
 }();
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/replay-start-time-store.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/replay-start-time-store.js
 init_tslib_es6();
 init_esm$1();
 /**
@@ -80633,7 +82282,7 @@ var pruneStaleReplayStartTimes = function(apiKey, now, logger) {
 			if (!Number.isFinite(parsed) || parsed <= 0 || now - parsed >= 864e5) stale.push(key);
 		}
 		try {
-			for (var stale_1 = __values$2(stale), stale_1_1 = stale_1.next(); !stale_1_1.done; stale_1_1 = stale_1.next()) {
+			for (var stale_1 = __values$1(stale), stale_1_1 = stale_1.next(); !stale_1_1.done; stale_1_1 = stale_1.next()) {
 				var key = stale_1_1.value;
 				storage.removeItem(key);
 			}
@@ -80651,7 +82300,7 @@ var pruneStaleReplayStartTimes = function(apiKey, now, logger) {
 	}
 };
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/targeting/targeting-idb-store.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/targeting/targeting-idb-store.js
 init_tslib_es6();
 init_build();
 var targetingIDBStore$1 = new (function() {
@@ -80848,12 +82497,12 @@ function __generator(thisArg, body) {
 		},
 		trys: [],
 		ops: []
-	}, f, y, t, g;
-	return g = {
+	}, f, y, t, g = {
 		next: verb(0),
 		"throw": verb(1),
 		"return": verb(2)
-	}, typeof Symbol === "function" && (g[Symbol.iterator] = function() {
+	};
+	return typeof Symbol === "function" && (g[Symbol.iterator] = function() {
 		return this;
 	}), g;
 	function verb(n) {
@@ -81846,7 +83495,7 @@ var init_targeting_idb_store = __esmMin((() => {
 								sessionData = _d.sent();
 								eventTypes = sessionData ? sessionData.eventTypes : {};
 								eventTypeStore = eventTypes[eventType] || {};
-								updatedEventTypes = __assign$2(__assign$2({}, eventTypes), (_b = {}, _b[eventType] = __assign$2(__assign$2({}, eventTypeStore), (_c = {}, _c[eventTime] = { event_type: eventType }, _c)), _b));
+								updatedEventTypes = __assign$1(__assign$1({}, eventTypes), (_b = {}, _b[eventType] = __assign$1(__assign$1({}, eventTypeStore), (_c = {}, _c[eventTime] = { event_type: eventType }, _c)), _b));
 								updatedSessionData = {
 									sessionId: sessionIdStr,
 									eventTypes: updatedEventTypes,
@@ -81996,7 +83645,7 @@ var init_targeting = __esmMin((() => {
 									session_id: sessionId,
 									event,
 									event_types: eventStrings && Array.from(eventStrings),
-									user: __assign$2(__assign$2({}, userProperties), {
+									user: __assign$1(__assign$1({}, userProperties), {
 										device_id: deviceId,
 										user_properties: userProperties
 									}),
@@ -82033,7 +83682,7 @@ var init_esm = __esmMin((() => {
 	evaluateTargeting = targeting_factory_default.evaluateTargeting;
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/targeting/targeting-manager.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/targeting/targeting-manager.js
 init_tslib_es6();
 var evaluateTargetingAndStore = function(_a) {
 	var sessionId = _a.sessionId, targetingConfig = _a.targetingConfig, loggerProvider = _a.loggerProvider, apiKey = _a.apiKey, targetingParams = _a.targetingParams, _b = _a.urlChange, urlChange = _b === void 0 ? false : _b;
@@ -82068,7 +83717,7 @@ var evaluateTargetingAndStore = function(_a) {
 					return [4, Promise.resolve().then(() => (init_esm(), esm_exports$1))];
 				case 4:
 					evaluateTargetingPackage = _c.sent().evaluateTargeting;
-					params = __assign$2(__assign$2({}, targetingParams), {
+					params = __assign$1(__assign$1({}, targetingParams), {
 						flag: targetingConfig,
 						sessionId: typeof sessionId === "string" ? parseInt(sessionId, 10) : sessionId,
 						apiKey,
@@ -82096,7 +83745,7 @@ var evaluateTargetingAndStore = function(_a) {
 	});
 };
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/sampling.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/sampling.js
 var PRIME32_1 = 2654435761;
 var PRIME32_2 = 2246822519;
 var PRIME32_3 = 3266489917;
@@ -82177,7 +83826,7 @@ function isSessionInSample(sessionId, sampleRate) {
 	return xxHash32(sessionId.toString()) % 1e6 / 1e6 < sampleRate;
 }
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/plugins/url-tracking-plugin.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/plugins/url-tracking-plugin.js
 init_tslib_es6();
 /** Patch detection marker to prevent double-patching */
 var PATCH_MARKER = "__amplitude_url_tracking_patched__";
@@ -82308,7 +83957,7 @@ function createUrlTrackingPlugin(options) {
 		name: "amplitude/url-tracking@1",
 		observer: function(cb, globalScope, pluginOptions) {
 			var _a, _b, _c;
-			var config = __assign$2(__assign$2({}, options), pluginOptions);
+			var config = __assign$1(__assign$1({}, options), pluginOptions);
 			var ugcFilterRules = config.ugcFilterRules || [];
 			var enablePolling = (_a = config.enablePolling) !== null && _a !== void 0 ? _a : false;
 			var pollingInterval = (_b = config.pollingInterval) !== null && _b !== void 0 ? _b : DEFAULT_URL_CHANGE_POLLING_INTERVAL;
@@ -82371,7 +84020,7 @@ function createUrlTrackingPlugin(options) {
 }
 createUrlTrackingPlugin();
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/cross-origin-iframes.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/cross-origin-iframes.js
 init_tslib_es6();
 init_esm$1();
 function isInIframe() {
@@ -82406,10 +84055,10 @@ var CrossOriginIframeCoordinator = function() {
 		this.mutationObserver = new MutationObserver(function(mutations) {
 			var e_1, _a, e_2, _b, e_3, _c;
 			try {
-				for (var mutations_1 = __values$2(mutations), mutations_1_1 = mutations_1.next(); !mutations_1_1.done; mutations_1_1 = mutations_1.next()) {
+				for (var mutations_1 = __values$1(mutations), mutations_1_1 = mutations_1.next(); !mutations_1_1.done; mutations_1_1 = mutations_1.next()) {
 					var mutation = mutations_1_1.value;
 					try {
-						for (var _d = (e_2 = void 0, __values$2(Array.from(mutation.addedNodes))), _e = _d.next(); !_e.done; _e = _d.next()) {
+						for (var _d = (e_2 = void 0, __values$1(Array.from(mutation.addedNodes))), _e = _d.next(); !_e.done; _e = _d.next()) {
 							var node = _e.value;
 							if (node instanceof HTMLIFrameElement) _this.sendToIframeAfterLoad(node);
 							else if (node instanceof Element) node.querySelectorAll("iframe").forEach(function(iframe) {
@@ -82426,7 +84075,7 @@ var CrossOriginIframeCoordinator = function() {
 						}
 					}
 					try {
-						for (var _f = (e_3 = void 0, __values$2(Array.from(mutation.removedNodes))), _g = _f.next(); !_g.done; _g = _f.next()) {
+						for (var _f = (e_3 = void 0, __values$1(Array.from(mutation.removedNodes))), _g = _f.next(); !_g.done; _g = _f.next()) {
 							var node = _g.value;
 							if (node instanceof HTMLIFrameElement) {
 								var listener = _this.pendingLoadListeners.get(node);
@@ -82523,7 +84172,7 @@ function listenForParentSignals(callbacks) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/worker/index.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/worker/index.js
 var worker_exports = /* @__PURE__ */ __exportAll({
 	compressionScript: () => compressionScript,
 	trackDestinationScript: () => trackDestinationScript
@@ -82534,7 +84183,7 @@ var init_worker = __esmMin((() => {
 	trackDestinationScript = "var WebWorker=function(e){\"use strict\";var t,r=function(){return r=Object.assign||function(e){for(var t,r=1,n=arguments.length;r<n;r++)for(var s in t=arguments[r])Object.prototype.hasOwnProperty.call(t,s)&&(e[s]=t[s]);return e},r.apply(this,arguments)};function n(e,t,r,n){return new(r||(r=Promise))(function(s,o){function a(e){try{u(n.next(e))}catch(e){o(e)}}function i(e){try{u(n.throw(e))}catch(e){o(e)}}function u(e){var t;e.done?s(e.value):(t=e.value,t instanceof r?t:new r(function(e){e(t)})).then(a,i)}u((n=n.apply(e,t||[])).next())})}function s(e,t){var r,n,s,o={label:0,sent:function(){if(1&s[0])throw s[1];return s[1]},trys:[],ops:[]},a=Object.create((\"function\"==typeof Iterator?Iterator:Object).prototype);return a.next=i(0),a.throw=i(1),a.return=i(2),\"function\"==typeof Symbol&&(a[Symbol.iterator]=function(){return this}),a;function i(i){return function(u){return function(i){if(r)throw new TypeError(\"Generator is already executing.\");for(;a&&(a=0,i[0]&&(o=0)),o;)try{if(r=1,n&&(s=2&i[0]?n.return:i[0]?n.throw||((s=n.return)&&s.call(n),0):n.next)&&!(s=s.call(n,i[1])).done)return s;switch(n=0,s&&(i=[2&i[0],s.value]),i[0]){case 0:case 1:s=i;break;case 4:return o.label++,{value:i[1],done:!1};case 5:o.label++,n=i[1],i=[0];continue;case 7:i=o.ops.pop(),o.trys.pop();continue;default:if(!(s=o.trys,(s=s.length>0&&s[s.length-1])||6!==i[0]&&2!==i[0])){o=0;continue}if(3===i[0]&&(!s||i[1]>s[0]&&i[1]<s[3])){o.label=i[1];break}if(6===i[0]&&o.label<s[1]){o.label=s[1],s=i;break}if(s&&o.label<s[2]){o.label=s[2],o.ops.push(i);break}s[2]&&o.ops.pop(),o.trys.pop();continue}i=t.call(e,o)}catch(e){i=[6,e],n=0}finally{r=s=0}if(5&i[0])throw i[1];return{value:i[0]?i[1]:void 0,done:!0}}([i,u])}}}\"function\"==typeof SuppressedError&&SuppressedError,function(e){e.US=\"US\",e.EU=\"EU\",e.STAGING=\"STAGING\"}(t||(t={})),t.US;var o,a=/payload.*exceed/i,i=\"X-Session-Replay-Event-Skipped\";!function(e){e.GET_SR_PROPS=\"get-sr-props\",e.DEBUG_INFO=\"debug-info\",e.FETCH_REQUEST=\"fetch-request\",e.METADATA=\"metadata\",e.TARGETING_DECISION=\"targeting-decision\",e.REPLAY_GATE_DECISION=\"replay-gate-decision\"}(o||(o={}));var u=\"Network error occurred, event batch rejected\";function c(e,t){return n(this,void 0,void 0,function(){var r,o,a,i,u,c,l,d,p,f,v,y,h,b,g=this;return s(this,function(m){switch(m.label){case 0:return m.trys.push([0,4,,5]),r=t.CompressionStream,o=new r(\"gzip\"),a=o.writable.getWriter(),i=o.readable.getReader(),u=[],c=n(g,void 0,void 0,function(){var e,t,r;return s(this,function(n){switch(n.label){case 0:return[4,i.read()];case 1:if(e=n.sent(),t=e.done,r=e.value,t)return[3,3];u.push(r),n.label=2;case 2:return[3,0];case 3:return[2]}})}),[4,a.write((new TextEncoder).encode(e))];case 1:return m.sent(),[4,a.close()];case 2:return m.sent(),[4,c];case 3:m.sent(),l=u.reduce(function(e,t){return e+t.length},0),d=new Uint8Array(l),p=0;try{for(f=function(e){var t=\"function\"==typeof Symbol&&Symbol.iterator,r=t&&e[t],n=0;if(r)return r.call(e);if(e&&\"number\"==typeof e.length)return{next:function(){return e&&n>=e.length&&(e=void 0),{value:e&&e[n++],done:!e}}};throw new TypeError(t?\"Object is not iterable.\":\"Symbol.iterator is not defined.\")}(u),v=f.next();!v.done;v=f.next())y=v.value,d.set(y,p),p+=y.length}catch(e){h={error:e}}finally{try{v&&!v.done&&(b=f.return)&&b.call(f)}finally{if(h)throw h.error}}return[2,d];case 4:return m.sent(),[2,null];case 5:return[2]}})})}var l=0,d=new Map,p=function(e,t){return fetch(e,t)},f=function(e,t){var r=\"\".concat(++l);return new Promise(function(n,s){var o=t.signal,a=function(){d.delete(r);var e=new Error(\"Delegated session replay fetch aborted by send timeout\");e.name=\"AbortError\",s(e)};o.addEventListener(\"abort\",a,{once:!0}),d.set(r,function(e){o.removeEventListener(\"abort\",a),e.error?s(new Error(e.body)):n({status:e.status,headers:{get:function(t){return t===i?e.skipHeader:null}},text:function(){return Promise.resolve(e.body)}})}),postMessage({type:\"fetch-request\",requestId:r,url:e,method:\"POST\",headers:t.headers,body:t.body,keepalive:t.keepalive})})};function v(e,t,o){var l,d,p,f,v,y,h,b;return n(this,void 0,void 0,function(){var n,g,m,w,S,T,E,k,R,x,C,I,A,M,O;return s(this,function(s){switch(s.label){case 0:n=null!==(l=t.sendTimeoutMs)&&void 0!==l?l:1e4,s.label=1;case 1:return s.trys.push([1,14,,15]),!1!==t.enableTransportCompression&&\"CompressionStream\"in self?[4,c(e,self)]:[3,3];case 2:return m=s.sent(),[3,4];case 3:m=null,s.label=4;case 4:g=m,w=\"\".concat(null!==(p=null===(d=t.version)||void 0===d?void 0:d.type)&&void 0!==p?p:\"standalone\",\"/\").concat(null!==(v=null===(f=t.version)||void 0===f?void 0:f.version)&&void 0!==v?v:t.sdkVersion),S=new URLSearchParams({device_id:t.deviceId,session_id:\"\".concat(t.sessionId),type:t.eventType}),T=\"\".concat((U=t.serverZone,P=t.trackServerUrl,P||(\"STAGING\"===U?\"https://api-sr.stag2.amplitude.com/sessions/v2/track\":\"EU\"===U?\"https://api-sr.eu.amplitude.com/sessions/v2/track\":\"https://api-sr.amplitude.com/sessions/v2/track\")),\"?\").concat(S.toString()),E=r({\"Content-Type\":\"application/json\",Accept:\"*/*\",Authorization:\"Bearer \".concat(t.apiKey),\"X-Client-Version\":t.sdkVersion,\"X-Client-Library\":w,\"X-Client-Url\":t.currentUrl.substring(0,1e3),\"X-Client-Sample-Rate\":\"\".concat(t.sampleRate),\"X-Sampling-Hash-Alg\":\"xxhash32\"},g?{\"Content-Encoding\":\"gzip\"}:{}),k=g?g.byteLength:new Blob([e]).size,R=new AbortController,x=n>0?setTimeout(function(){R.abort()},n):void 0,C=void 0,s.label=5;case 5:return s.trys.push([5,,7,8]),[4,o(T,{method:\"POST\",headers:E,body:null!=g?g:e,keepalive:k<=65536,signal:R.signal})];case 6:return C=s.sent(),[3,8];case 7:return x&&clearTimeout(x),[7];case 8:if(null===C)return[2,{shouldRetry:!1,success:!1,message:\"Unexpected error occurred\"}];if(C.status>=200&&C.status<300)return I=Math.round(new Blob(t.events).size/1024),A=null!==(b=null===(h=null===(y=C.headers)||void 0===y?void 0:y.get)||void 0===h?void 0:h.call(y,i))&&void 0!==b?b:null,[2,{shouldRetry:!1,success:!0,message:\"Session replay event batch tracked successfully for session id \".concat(t.sessionId,\", size of events: \").concat(I,\" KB\"),skipCode:A}];if(413!==C.status)return[3,13];M=\"\",s.label=9;case 9:return s.trys.push([9,11,,12]),[4,C.text()];case 10:return M=s.sent(),[3,12];case 11:return s.sent(),[3,12];case 12:return[2,{shouldRetry:!1,success:!1,message:u,payloadTooLarge:!0,isWaf:a.test(M)}];case 13:return C.status>=500||408===C.status||429===C.status||499===C.status?[2,{shouldRetry:!0,success:!1,message:\"HTTP \".concat(C.status)}]:[2,{shouldRetry:!1,success:!1,message:u}];case 14:return(O=s.sent())&&\"object\"==typeof O&&\"AbortError\"===O.name?[2,{shouldRetry:!0,success:!1,message:\"Session replay worker request timed out after \".concat(n,\"ms\")}]:[2,{shouldRetry:!1,success:!1,message:String(O)}];case 15:return[2]}var U,P})})}function y(e,t,r,o,a){var i;return n(this,void 0,void 0,function(){var n,u,c;return s(this,function(s){switch(s.label){case 0:n=1,s.label=1;case 1:return[4,v(t,r,a)];case 2:return(u=s.sent()).success?(postMessage({type:\"log\",id:e,message:u.message}),postMessage({type:\"complete\",id:e,skipCode:null!==(i=u.skipCode)&&void 0!==i?i:null}),[2]):u.payloadTooLarge&&o?(postMessage({type:\"payload_too_large\",id:e,isWaf:!0===u.isWaf}),[2]):o&&u.shouldRetry&&n<r.flushMaxRetries?[4,new Promise(function(e){return setTimeout(e,Math.random()*n*1e3)})]:[3,4];case 3:return s.sent(),n++,[3,5];case 4:return c=n>=r.flushMaxRetries?\"Session replay event batch rejected due to exceeded retry count\":u.message,postMessage({type:\"warn\",id:e,message:c}),postMessage({type:\"complete\",id:e}),[2];case 5:return[3,1];case 6:return[2]}})})}onmessage=function(e){return n(void 0,void 0,void 0,function(){var t,r,n,o,a,i,u,c;return s(this,function(s){switch(s.label){case 0:return\"fetch-response\"===(t=e.data).type?((r=d.get(t.requestId))&&(d.delete(t.requestId),r(t)),[2]):\"send\"!==t.type?[3,2]:(n=t.id,o=t.payload,a=t.context,i=t.useRetry,u=t.useCustomTransport,c=JSON.stringify(o),[4,y(n,c,a,i,u?f:p)]);case 1:s.sent(),s.label=2;case 2:return[2]}})})};var h=onmessage;return e.trackDestinationOnMessage=h,Object.defineProperty(e,\"__esModule\",{value:!0}),e}({});\n";
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+rrweb-plugin-console-record@2.0.0-alpha.40_@amplitude+rrweb@2.1.3/node_modules/@amplitude/rrweb-plugin-console-record/dist/rrweb-plugin-console-record.js
+//#region node_modules/.pnpm/@amplitude+rrweb-plugin-console-record@2.0.0-alpha.40_@amplitude+rrweb@2.1.4/node_modules/@amplitude/rrweb-plugin-console-record/dist/rrweb-plugin-console-record.js
 var rrweb_plugin_console_record_exports = /* @__PURE__ */ __exportAll({
 	PLUGIN_NAME: () => PLUGIN_NAME,
 	getRecordConsolePlugin: () => getRecordConsolePlugin
@@ -100418,7 +102067,7 @@ var init_rrweb_record = __esmMin((() => {
 	({takeFullSnapshot} = record);
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/network-body-capture.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/network-body-capture.js
 var isBodyCaptureEnabled, getBodyMaskingLists, applyBodyMasking, captureSerializedBody;
 var init_network_body_capture = __esmMin((() => {
 	init_esm$1();
@@ -100455,7 +102104,7 @@ var init_network_body_capture = __esmMin((() => {
 	};
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/observers.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/observers.js
 var observers_exports = /* @__PURE__ */ __exportAll({ NetworkObservers: () => NetworkObservers });
 function isBinaryContentType(contentType) {
 	if (!contentType) return false;
@@ -100620,7 +102269,7 @@ var init_observers = __esmMin((() => {
 	}();
 }));
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/session-replay.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/session-replay.js
 init_tslib_es6();
 init_esm$1();
 var SessionReplay = function() {
@@ -100640,6 +102289,24 @@ var SessionReplay = function() {
 		this.hasEmittedGateDecision = false;
 		this.recordFunction = null;
 		this.recordEventsInFlight = false;
+		/**
+		* When false, capture is paused by a customer `stop()` (or `shutdown()`) call.
+		* Focus/targeting/session-change paths still invoke `recordEvents()`, but
+		* `getShouldRecord()` will refuse to start rrweb until `start()` or a new `init()`.
+		*/
+		this.recordingEnabled = true;
+		/**
+		* Bumped by `stop()` / `shutdown()` so an in-flight `_recordEvents()` that already
+		* passed `getShouldRecord()` cannot start rrweb after capture was paused.
+		*/
+		this.recordingGeneration = 0;
+		/**
+		* Set by customer `start()` so coordinated child iframes self-start instead of
+		* waiting for a parent signal that may never be resent. Kept until recording
+		* actually starts so a gated `start()` (targeting, sampling, remote capture)
+		* still self-starts when those gates later pass.
+		*/
+		this.startChildRecordingOnSetup = false;
 		this.pendingEmitEvents = [];
 		/** Current page URL, kept in sync with SPA navigations for URL-based masking */
 		this.currentPageUrl = "";
@@ -100671,6 +102338,7 @@ var SessionReplay = function() {
 		};
 		this.focusListener = function() {
 			var _a;
+			if (!_this.recordingEnabled) return;
 			if (_this.recordCancelCallback && _this.recordFunction) {
 				if (((_a = _this.config) === null || _a === void 0 ? void 0 : _a.captureFullSnapshotOnFocus) === false) return;
 				try {
@@ -100791,10 +102459,10 @@ var SessionReplay = function() {
 							return [4, getStorageSize()];
 						case 1:
 							storageSizeData = _a.sent();
-							debugInfo = __assign$2(__assign$2({}, storageSizeData), debugInfo);
+							debugInfo = __assign$1(__assign$1({}, storageSizeData), debugInfo);
 							_a.label = 2;
 						case 2:
-							if (this.recordCancelCallback && this.recordFunction) this.recordFunction.addCustomEvent(eventName, __assign$2(__assign$2({}, eventData), debugInfo));
+							if (this.recordCancelCallback && this.recordFunction) this.recordFunction.addCustomEvent(eventName, __assign$1(__assign$1({}, eventData), debugInfo));
 							else this.loggerProvider.debug("Not able to add custom replay capture event ".concat(eventName, " due to no ongoing recording."));
 							return [3, 4];
 						case 3:
@@ -100888,6 +102556,8 @@ var SessionReplay = function() {
 				switch (_v.label) {
 					case 0:
 						(_a = this.urlChangeCleanup) === null || _a === void 0 || _a.call(this);
+						this.recordingEnabled = true;
+						this.startChildRecordingOnSetup = false;
 						this.loggerProvider = new SafeLoggerProvider(options.loggerProvider || new Logger());
 						Object.prototype.hasOwnProperty.call(options, "logLevel") && this.loggerProvider.enable(options.logLevel);
 						this.currentPageUrl = getCurrentUrl();
@@ -100998,7 +102668,7 @@ var SessionReplay = function() {
 						this.loggerProvider.warn("Error occurred while creating interaction events manager: ".concat(typedError.toString()));
 						return [3, 11];
 					case 11:
-						this.eventsManager = new (MultiEventManager.bind.apply(MultiEventManager, __spreadArray$1([void 0], __read$2(managers), false)))();
+						this.eventsManager = new (MultiEventManager.bind.apply(MultiEventManager, __spreadArray$1([void 0], __read$1(managers), false)))();
 						if (this.eventCompressor) this.eventCompressor.terminate();
 						onFullSnapshotProcessed = this.config.eagerFullSnapshotSend === true ? function() {
 							return _this.sendEvents();
@@ -101007,7 +102677,7 @@ var SessionReplay = function() {
 						if (this.pendingEmitEvents.length > 0) {
 							pending_2 = this.pendingEmitEvents.splice(0);
 							try {
-								for (pending_1 = __values$2(pending_2), pending_1_1 = pending_1.next(); !pending_1_1.done; pending_1_1 = pending_1.next()) {
+								for (pending_1 = __values$1(pending_2), pending_1_1 = pending_1.next(); !pending_1_1.done; pending_1_1 = pending_1.next()) {
 									_t = pending_1_1.value, event_1 = _t.event, sessionId = _t.sessionId;
 									this.eventCompressor.enqueueEvent(event_1, sessionId);
 								}
@@ -101021,7 +102691,7 @@ var SessionReplay = function() {
 								}
 							}
 						}
-						this.pageLeaveFns = __spreadArray$1(__spreadArray$1([], __read$2(this.pageLeaveFns), false), [function() {
+						this.pageLeaveFns = __spreadArray$1(__spreadArray$1([], __read$1(this.pageLeaveFns), false), [function() {
 							var _a;
 							if (!_this.config || !((_a = _this.identifiers) === null || _a === void 0 ? void 0 : _a.sessionId) || !rrwebEventManager) return;
 							var events = rrwebEventManager.getBeaconEvents();
@@ -101043,7 +102713,7 @@ var SessionReplay = function() {
 						if ((_l = getGlobalScope()) === null || _l === void 0 ? void 0 : _l.opener) {
 							messenger = getOrCreateWindowMessenger();
 							enableBackgroundCapture(messenger);
-							messenger.setup(__assign$2({ logger: this.loggerProvider }, this.config.serverZone && { endpoint: AMPLITUDE_ORIGINS_MAP[this.config.serverZone] }));
+							messenger.setup(__assign$1({ logger: this.loggerProvider }, this.config.serverZone && { endpoint: AMPLITUDE_ORIGINS_MAP[this.config.serverZone] }));
 						}
 						this.loggerProvider.log("Installing @amplitude/session-replay-browser.");
 						this.teardownEventListeners(false);
@@ -101198,6 +102868,10 @@ var SessionReplay = function() {
 			this.loggerProvider.warn("Session is not being recorded due to lack of config, please call sessionReplay.init.");
 			return false;
 		}
+		if (!this.recordingEnabled) {
+			this.loggerProvider.log("Session ".concat(this.identifiers.sessionId, " not being captured because recording was stopped."));
+			return false;
+		}
 		if (!this.config.captureEnabled) {
 			this.loggerProvider.log("Session ".concat(this.identifiers.sessionId, " not being captured due to capture being disabled for project or because the remote config could not be fetched."));
 			return false;
@@ -101242,23 +102916,12 @@ var SessionReplay = function() {
 		return shouldRecord;
 	};
 	SessionReplay.prototype.getBlockSelectors = function() {
-		var _a, _b, _c;
-		var blockSelector = (_c = (_b = (_a = this.config) === null || _a === void 0 ? void 0 : _a.privacyConfig) === null || _b === void 0 ? void 0 : _b.blockSelector) !== null && _c !== void 0 ? _c : [];
-		if (blockSelector.length === 0) return;
-		return blockSelector;
+		var _a;
+		return getBlockSelectors((_a = this.config) === null || _a === void 0 ? void 0 : _a.privacyConfig);
 	};
 	SessionReplay.prototype.getMaskTextSelectors = function() {
-		var _a, _b;
-		var privacyConfig = (_a = this.config) === null || _a === void 0 ? void 0 : _a.privacyConfig;
-		if ((privacyConfig ? getEffectiveMaskLevel(this.currentPageUrl, privacyConfig) : void 0) === "conservative") return "*";
-		if ((_b = privacyConfig === null || privacyConfig === void 0 ? void 0 : privacyConfig.urlMaskLevels) === null || _b === void 0 ? void 0 : _b.some(function(rule) {
-			return rule.maskLevel === "conservative";
-		})) return "*";
-		var urlMaskLevels = privacyConfig === null || privacyConfig === void 0 ? void 0 : privacyConfig.urlMaskLevels;
-		if ((privacyConfig === null || privacyConfig === void 0 ? void 0 : privacyConfig.defaultMaskLevel) === "conservative" && urlMaskLevels && urlMaskLevels.length > 0) return "*";
-		var maskSelector = privacyConfig === null || privacyConfig === void 0 ? void 0 : privacyConfig.maskSelector;
-		if (!maskSelector) return;
-		return maskSelector;
+		var _a;
+		return getMaskTextSelectors((_a = this.config) === null || _a === void 0 ? void 0 : _a.privacyConfig, this.currentPageUrl);
 	};
 	SessionReplay.prototype.getRecordingPlugins = function(loggingConfig) {
 		var _a, _b, _c, _d, _e, _f;
@@ -101373,28 +103036,32 @@ var SessionReplay = function() {
 			});
 		});
 	};
+	SessionReplay.prototype.shouldAbandonRecordStart = function(generation) {
+		return !this.recordingEnabled || generation !== this.recordingGeneration;
+	};
 	SessionReplay.prototype._recordEvents = function(shouldLogMetadata) {
 		var _a, _b, _c, _d, _e, _f, _g, _h;
 		if (shouldLogMetadata === void 0) shouldLogMetadata = true;
 		return __awaiter$1(this, void 0, void 0, function() {
-			var config, shouldRecord, sessionId, recordFunction, networkLoggingConfig, trackUrl, ignoredUrls, interactionConfig, loggingConfig, hooks, ugcFilterRules, crossOriginIframesEnabled, coordinateChildren, childMode, _j, _k, _l, error_5;
-			var _m;
+			var config, shouldRecord, sessionId, generation, recordFunction, networkLoggingConfig, trackUrl, ignoredUrls, interactionConfig, loggingConfig, hooks, ugcFilterRules, crossOriginIframesEnabled, coordinateChildren, childMode, plugins, error_5;
 			var _this = this;
-			return __generator$1(this, function(_o) {
-				switch (_o.label) {
+			return __generator$1(this, function(_j) {
+				switch (_j.label) {
 					case 0:
 						config = this.config;
 						shouldRecord = this.getShouldRecord();
 						sessionId = (_a = this.identifiers) === null || _a === void 0 ? void 0 : _a.sessionId;
 						if (!shouldRecord || !sessionId || !config) return [2];
 						this.stopRecordingEvents();
+						generation = this.recordingGeneration;
 						return [4, this.getRecordFunction()];
 					case 1:
-						recordFunction = _o.sent();
-						if (!recordFunction) return [2];
+						recordFunction = _j.sent();
+						if (!recordFunction || this.shouldAbandonRecordStart(generation)) return [2];
 						return [4, this.initializeNetworkObservers()];
 					case 2:
-						_o.sent();
+						_j.sent();
+						if (this.shouldAbandonRecordStart(generation)) return [2];
 						networkLoggingConfig = (_b = config.loggingConfig) === null || _b === void 0 ? void 0 : _b.network;
 						trackUrl = getServerUrl(config.serverZone, config.trackServerUrl);
 						ignoredUrls = [
@@ -101423,9 +103090,9 @@ var SessionReplay = function() {
 						} : {};
 						ugcFilterRules = (interactionConfig === null || interactionConfig === void 0 ? void 0 : interactionConfig.enabled) && interactionConfig.ugcFilterRules ? interactionConfig.ugcFilterRules : [];
 						this.loggerProvider.log("Session Replay capture beginning for ".concat(sessionId, "."));
-						_o.label = 3;
+						_j.label = 3;
 					case 3:
-						_o.trys.push([
+						_j.trys.push([
 							3,
 							5,
 							,
@@ -101437,7 +103104,8 @@ var SessionReplay = function() {
 						if (childMode && coordinateChildren) {
 							this.crossOriginParentSignalCleanup = listenForParentSignals({
 								onStart: function() {
-									return _this._recordEventsInChildMode(recordFunction, sessionId, config, hooks);
+									if (!_this.recordingEnabled) return;
+									_this._recordEventsInChildMode(recordFunction, sessionId, config, hooks);
 								},
 								onStop: function() {
 									try {
@@ -101449,13 +103117,20 @@ var SessionReplay = function() {
 									}
 								}
 							});
+							if (this.startChildRecordingOnSetup) {
+								this.startChildRecordingOnSetup = false;
+								this._recordEventsInChildMode(recordFunction, sessionId, config, hooks);
+							}
 							return [2];
 						}
-						_j = this;
-						_k = recordFunction;
-						_l = [__assign$2({}, this.buildRRWebRecordOptions(config, hooks, function(event) {
-							if (_this.shouldOptOut()) {
-								_this.loggerProvider.log("Opting session ".concat(sessionId, " out of recording due to optOut config."));
+						this.startChildRecordingOnSetup = false;
+						return [4, this.getRecordingPlugins(loggingConfig)];
+					case 4:
+						plugins = _j.sent();
+						if (this.shouldAbandonRecordStart(generation)) return [2];
+						this.recordCancelCallback = recordFunction(__assign$1(__assign$1({}, this.buildRRWebRecordOptions(config, hooks, function(event) {
+							if (_this.shouldOptOut() || !_this.recordingEnabled) {
+								_this.loggerProvider.log(_this.shouldOptOut() ? "Opting session ".concat(sessionId, " out of recording due to optOut config.") : "Session Replay capture stopping for ".concat(sessionId, "."));
 								_this.stopRecordingEvents();
 								_this.sendEvents();
 								return;
@@ -101466,11 +103141,10 @@ var SessionReplay = function() {
 								event,
 								sessionId
 							});
-						}, "Error while capturing replay: "))];
-						_m = {};
-						return [4, this.getRecordingPlugins(loggingConfig)];
-					case 4:
-						_j.recordCancelCallback = _k.apply(void 0, [__assign$2.apply(void 0, _l.concat([(_m.plugins = _o.sent(), _m.recordCrossOriginIframes = crossOriginIframesEnabled, _m)]))]);
+						}, "Error while capturing replay: ")), {
+							plugins,
+							recordCrossOriginIframes: crossOriginIframesEnabled
+						}));
 						if (crossOriginIframesEnabled && !childMode && coordinateChildren) {
 							if (!this.crossOriginIframeCoordinator) this.crossOriginIframeCoordinator = new CrossOriginIframeCoordinator();
 							this.crossOriginIframeCoordinator.start();
@@ -101479,7 +103153,7 @@ var SessionReplay = function() {
 						if (shouldLogMetadata) this.addCustomRRWebEvent(CustomRRwebEvent.METADATA, this.metadata);
 						return [3, 6];
 					case 5:
-						error_5 = _o.sent();
+						error_5 = _j.sent();
 						this.loggerProvider.warn("Failed to initialize session replay:", error_5);
 						return [3, 6];
 					case 6: return [2];
@@ -101490,26 +103164,14 @@ var SessionReplay = function() {
 	SessionReplay.prototype.buildRRWebRecordOptions = function(config, hooks, emit, errorLogPrefix) {
 		var _this = this;
 		var privacyConfig = config.privacyConfig;
-		return __assign$2(__assign$2({
+		return __assign$1(__assign$1(__assign$1(__assign$1({
 			emit,
 			inlineStylesheet: config.shouldInlineStylesheet,
-			hooks,
-			maskAllInputs: true,
-			maskTextClass: MASK_TEXT_CLASS,
-			blockClass: BLOCK_CLASS,
-			blockSelector: this.getBlockSelectors(),
-			applyBackgroundColorToBlockedElements: config.applyBackgroundColorToBlockedElements,
-			maskInputFn: maskFn("input", privacyConfig, function() {
-				return _this.currentPageUrl;
-			}),
-			maskTextFn: maskFn("text", privacyConfig, function() {
-				return _this.currentPageUrl;
-			}),
-			maskAttributeFn: maskAttributeFn(privacyConfig, function() {
-				return _this.currentPageUrl;
-			}),
-			maskTextSelector: this.getMaskTextSelectors()
-		}, config.fullSnapshotIntervalMs !== void 0 && { checkoutEveryNms: config.fullSnapshotIntervalMs }), {
+			inlineImages: config.inlineImages,
+			hooks
+		}, createPrivacyRecorderOptions(privacyConfig, function() {
+			return _this.currentPageUrl;
+		})), { applyBackgroundColorToBlockedElements: config.applyBackgroundColorToBlockedElements }), config.fullSnapshotIntervalMs !== void 0 && { checkoutEveryNms: config.fullSnapshotIntervalMs }), {
 			recordCanvas: false,
 			captureAdoptedStyleSheets: config.captureAdoptedStyleSheets,
 			slimDOMOptions: {
@@ -101537,7 +103199,7 @@ var SessionReplay = function() {
 		try {
 			this.recordCancelCallback && this.recordCancelCallback();
 			this.recordCancelCallback = null;
-			this.recordCancelCallback = recordFunction(__assign$2(__assign$2({}, this.buildRRWebRecordOptions(config, hooks, function() {}, "Error while capturing replay (child iframe): ")), { recordCrossOriginIframes: true }));
+			this.recordCancelCallback = recordFunction(__assign$1(__assign$1({}, this.buildRRWebRecordOptions(config, hooks, function() {}, "Error while capturing replay (child iframe): ")), { recordCrossOriginIframes: true }));
 			this.loggerProvider.log("Session Replay child iframe capture beginning for session ".concat(sessionId, "."));
 		} catch (error) {
 			this.loggerProvider.warn("Failed to initialize session replay in child iframe mode:", error);
@@ -101551,6 +103213,31 @@ var SessionReplay = function() {
 		var _a;
 		return (_a = this.identifiers) === null || _a === void 0 ? void 0 : _a.sessionId;
 	};
+	SessionReplay.prototype.start = function() {
+		return returnWrapper(this._start());
+	};
+	SessionReplay.prototype._start = function() {
+		return __awaiter$1(this, void 0, void 0, function() {
+			return __generator$1(this, function(_a) {
+				switch (_a.label) {
+					case 0:
+						this.recordingEnabled = true;
+						this.startChildRecordingOnSetup = true;
+						return [4, this.recordEvents()];
+					case 1:
+						_a.sent();
+						return [2];
+				}
+			});
+		});
+	};
+	SessionReplay.prototype.stop = function() {
+		this.recordingEnabled = false;
+		this.startChildRecordingOnSetup = false;
+		this.recordingGeneration++;
+		this.stopRecordingEvents();
+		this.sendEvents();
+	};
 	SessionReplay.prototype.flush = function(useRetry) {
 		var _a;
 		if (useRetry === void 0) useRetry = false;
@@ -101562,6 +103249,9 @@ var SessionReplay = function() {
 	};
 	SessionReplay.prototype.shutdown = function() {
 		var _a, _b;
+		this.recordingEnabled = false;
+		this.startChildRecordingOnSetup = false;
+		this.recordingGeneration++;
 		(_a = this.urlChangeCleanup) === null || _a === void 0 || _a.call(this);
 		(_b = this.crossOriginParentSignalCleanup) === null || _b === void 0 || _b.call(this);
 		this.crossOriginParentSignalCleanup = null;
@@ -101622,7 +103312,7 @@ var SessionReplay = function() {
 	return SessionReplay;
 }();
 //#endregion
-//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.48.2_@amplitude+rrweb@2.1.3/node_modules/@amplitude/session-replay-browser/lib/esm/session-replay-factory.js
+//#region node_modules/.pnpm/@amplitude+session-replay-browser@1.51.0_@amplitude+rrweb@2.1.4/node_modules/@amplitude/session-replay-browser/lib/esm/session-replay-factory.js
 init_esm$1();
 var getLogConfig = function(sessionReplay) {
 	return function() {
@@ -101642,6 +103332,8 @@ var createInstance = function() {
 		getSessionId: debugWrapper(sessionReplay.getSessionId.bind(sessionReplay), "getSessionId", getLogConfig(sessionReplay)),
 		getSessionReplayProperties: debugWrapper(sessionReplay.getSessionReplayProperties.bind(sessionReplay), "getSessionReplayProperties", getLogConfig(sessionReplay)),
 		flush: debugWrapper(sessionReplay.flush.bind(sessionReplay), "flush", getLogConfig(sessionReplay)),
+		start: debugWrapper(sessionReplay.start.bind(sessionReplay), "start", getLogConfig(sessionReplay)),
+		stop: debugWrapper(sessionReplay.stop.bind(sessionReplay), "stop", getLogConfig(sessionReplay)),
 		shutdown: debugWrapper(sessionReplay.shutdown.bind(sessionReplay), "shutdown", getLogConfig(sessionReplay))
 	};
 };
@@ -101651,6 +103343,8 @@ var setSessionId = session_replay_factory_default.setSessionId;
 session_replay_factory_default.getSessionId;
 var getSessionReplayProperties$1 = session_replay_factory_default.getSessionReplayProperties;
 session_replay_factory_default.flush;
+session_replay_factory_default.start;
+session_replay_factory_default.stop;
 session_replay_factory_default.shutdown;
 session_replay_factory_default.evaluateTargetingAndCapture;
 //#endregion
@@ -102109,7 +103803,7 @@ Emitter.prototype.hasListeners = function(event) {
 	return !!this.listeners(event).length;
 };
 //#endregion
-//#region node_modules/.pnpm/engine.io-client@6.6.6_supports-color@5.5.0/node_modules/engine.io-client/build/esm/globals.js
+//#region node_modules/.pnpm/engine.io-client@6.6.7_supports-color@5.5.0/node_modules/engine.io-client/build/esm/globals.js
 var nextTick = (() => {
 	if (typeof Promise === "function" && typeof Promise.resolve === "function") return (cb) => Promise.resolve().then(cb);
 	else return (cb, setTimeoutFn) => setTimeoutFn(cb, 0);
@@ -102121,7 +103815,7 @@ var globalThisShim = (() => {
 })();
 var defaultBinaryType = "arraybuffer";
 //#endregion
-//#region node_modules/.pnpm/engine.io-client@6.6.6_supports-color@5.5.0/node_modules/engine.io-client/build/esm/util.js
+//#region node_modules/.pnpm/engine.io-client@6.6.7_supports-color@5.5.0/node_modules/engine.io-client/build/esm/util.js
 function pick(obj, ...attr) {
 	return attr.reduce((acc, k) => {
 		if (obj.hasOwnProperty(k)) acc[k] = obj[k];
@@ -102165,7 +103859,7 @@ function randomString() {
 	return Date.now().toString(36).substring(3) + Math.random().toString(36).substring(2, 5);
 }
 //#endregion
-//#region node_modules/.pnpm/engine.io-client@6.6.6_supports-color@5.5.0/node_modules/engine.io-client/build/esm/contrib/parseqs.js
+//#region node_modules/.pnpm/engine.io-client@6.6.7_supports-color@5.5.0/node_modules/engine.io-client/build/esm/contrib/parseqs.js
 /**
 * Compiles a querystring
 * Returns string representation of the object
@@ -102197,7 +103891,7 @@ function decode(qs) {
 	return qry;
 }
 //#endregion
-//#region node_modules/.pnpm/engine.io-client@6.6.6_supports-color@5.5.0/node_modules/engine.io-client/build/esm/transport.js
+//#region node_modules/.pnpm/engine.io-client@6.6.7_supports-color@5.5.0/node_modules/engine.io-client/build/esm/transport.js
 var TransportError = class extends Error {
 	constructor(reason, description, context) {
 		super(reason);
@@ -102321,7 +104015,7 @@ var Transport = class extends Emitter {
 	}
 };
 //#endregion
-//#region node_modules/.pnpm/engine.io-client@6.6.6_supports-color@5.5.0/node_modules/engine.io-client/build/esm/transports/polling.js
+//#region node_modules/.pnpm/engine.io-client@6.6.7_supports-color@5.5.0/node_modules/engine.io-client/build/esm/transports/polling.js
 var Polling = class extends Transport {
 	constructor() {
 		super(...arguments);
@@ -102439,14 +104133,14 @@ var Polling = class extends Transport {
 	}
 };
 //#endregion
-//#region node_modules/.pnpm/engine.io-client@6.6.6_supports-color@5.5.0/node_modules/engine.io-client/build/esm/contrib/has-cors.js
+//#region node_modules/.pnpm/engine.io-client@6.6.7_supports-color@5.5.0/node_modules/engine.io-client/build/esm/contrib/has-cors.js
 var value = false;
 try {
 	value = typeof XMLHttpRequest !== "undefined" && "withCredentials" in new XMLHttpRequest();
 } catch (err) {}
 var hasCORS = value;
 //#endregion
-//#region node_modules/.pnpm/engine.io-client@6.6.6_supports-color@5.5.0/node_modules/engine.io-client/build/esm/transports/polling-xhr.js
+//#region node_modules/.pnpm/engine.io-client@6.6.7_supports-color@5.5.0/node_modules/engine.io-client/build/esm/transports/polling-xhr.js
 function empty() {}
 var BaseXHR = class extends Polling {
 	/**
@@ -102654,7 +104348,7 @@ function newRequest(opts) {
 	} catch (e) {}
 }
 //#endregion
-//#region node_modules/.pnpm/engine.io-client@6.6.6_supports-color@5.5.0/node_modules/engine.io-client/build/esm/transports/websocket.js
+//#region node_modules/.pnpm/engine.io-client@6.6.7_supports-color@5.5.0/node_modules/engine.io-client/build/esm/transports/websocket.js
 var isReactNative = typeof navigator !== "undefined" && typeof navigator.product === "string" && navigator.product.toLowerCase() === "reactnative";
 var BaseWS = class extends Transport {
 	get name() {
@@ -102745,7 +104439,7 @@ var WS = class extends BaseWS {
 	}
 };
 //#endregion
-//#region node_modules/.pnpm/engine.io-client@6.6.6_supports-color@5.5.0/node_modules/engine.io-client/build/esm/transports/webtransport.js
+//#region node_modules/.pnpm/engine.io-client@6.6.7_supports-color@5.5.0/node_modules/engine.io-client/build/esm/transports/webtransport.js
 /**
 * WebTransport transport based on the built-in `WebTransport` object.
 *
@@ -102809,14 +104503,14 @@ var WT = class extends Transport {
 	}
 };
 //#endregion
-//#region node_modules/.pnpm/engine.io-client@6.6.6_supports-color@5.5.0/node_modules/engine.io-client/build/esm/transports/index.js
+//#region node_modules/.pnpm/engine.io-client@6.6.7_supports-color@5.5.0/node_modules/engine.io-client/build/esm/transports/index.js
 var transports = {
 	websocket: WS,
 	webtransport: WT,
 	polling: XHR
 };
 //#endregion
-//#region node_modules/.pnpm/engine.io-client@6.6.6_supports-color@5.5.0/node_modules/engine.io-client/build/esm/contrib/parseuri.js
+//#region node_modules/.pnpm/engine.io-client@6.6.7_supports-color@5.5.0/node_modules/engine.io-client/build/esm/contrib/parseuri.js
 /**
 * Parses a URI
 *
@@ -102882,7 +104576,7 @@ function queryKey(uri, query) {
 	return data;
 }
 //#endregion
-//#region node_modules/.pnpm/engine.io-client@6.6.6_supports-color@5.5.0/node_modules/engine.io-client/build/esm/socket.js
+//#region node_modules/.pnpm/engine.io-client@6.6.7_supports-color@5.5.0/node_modules/engine.io-client/build/esm/socket.js
 var withEventListeners = typeof addEventListener === "function" && typeof removeEventListener === "function";
 var OFFLINE_EVENT_LISTENERS = [];
 if (withEventListeners) addEventListener("offline", () => {
@@ -102890,39 +104584,29 @@ if (withEventListeners) addEventListener("offline", () => {
 }, false);
 /**
 * This class provides a WebSocket-like interface to connect to an Engine.IO server. The connection will be established
-* with one of the available low-level transports, like HTTP long-polling, WebSocket or WebTransport.
+* with one of the available low-level transports, like HTTP long-polling, WebSocket, or WebTransport.
 *
-* This class comes without upgrade mechanism, which means that it will keep the first low-level transport that
-* successfully establishes the connection.
-*
-* In order to allow tree-shaking, there are no transports included, that's why the `transports` option is mandatory.
+* This class comes with an upgrade mechanism, which means that once the connection is established with the first
+* low-level transport, it will try to upgrade to a better transport.
 *
 * @example
-* import { SocketWithoutUpgrade, WebSocket } from "engine.io-client";
+* import { Socket } from "engine.io-client";
 *
-* const socket = new SocketWithoutUpgrade({
-*   transports: [WebSocket]
-* });
+* const socket = new Socket();
 *
 * socket.on("open", () => {
 *   socket.send("hello");
 * });
 *
-* @see SocketWithUpgrade
-* @see Socket
 */
-var SocketWithoutUpgrade = class SocketWithoutUpgrade extends Emitter {
-	/**
-	* Socket constructor.
-	*
-	* @param {String|Object} uri - uri or options
-	* @param {Object} opts - options
-	*/
-	constructor(uri, opts) {
+var Socket$1 = class Socket$1 extends Emitter {
+	constructor(uri, opts = {}) {
+		var _a, _b;
 		super();
 		this.binaryType = defaultBinaryType;
 		this.writeBuffer = [];
 		this._prevBufferLen = 0;
+		this._upgrades = [];
 		this._pingInterval = -1;
 		this._pingTimeout = -1;
 		this._maxPayload = -1;
@@ -102947,13 +104631,23 @@ var SocketWithoutUpgrade = class SocketWithoutUpgrade extends Emitter {
 		if (opts.hostname && !opts.port) opts.port = this.secure ? "443" : "80";
 		this.hostname = opts.hostname || (typeof location !== "undefined" ? location.hostname : "localhost");
 		this.port = opts.port || (typeof location !== "undefined" && location.port ? location.port : this.secure ? "443" : "80");
-		this.transports = [];
-		this._transportsByName = {};
-		opts.transports.forEach((t) => {
-			const transportName = t.prototype.name;
-			this.transports.push(transportName);
-			this._transportsByName[transportName] = t;
-		});
+		if (opts.transportImplementations && opts.transports) throw new Error("specifying both 'transportImplementations' and 'transports' options is not supported");
+		if (opts.transportImplementations || ((_a = opts.transports) === null || _a === void 0 ? void 0 : _a.length) && typeof opts.transports[0] === "function") {
+			this.transports = [];
+			this._transportsByName = Object.create(null);
+			((_b = opts.transportImplementations) !== null && _b !== void 0 ? _b : opts.transports).forEach((t) => {
+				const transportName = t.prototype.name;
+				this.transports.push(transportName);
+				this._transportsByName[transportName] = t;
+			});
+		} else {
+			this.transports = opts.transports ? [...opts.transports] : [
+				"polling",
+				"websocket",
+				"webtransport"
+			];
+			this._transportsByName = transports;
+		}
 		this.opts = Object.assign({
 			path: "/engine.io",
 			agent: false,
@@ -103022,7 +104716,7 @@ var SocketWithoutUpgrade = class SocketWithoutUpgrade extends Emitter {
 			}, 0);
 			return;
 		}
-		const transportName = this.opts.rememberUpgrade && SocketWithoutUpgrade.priorWebsocketSuccess && this.transports.indexOf("websocket") !== -1 ? "websocket" : this.transports[0];
+		const transportName = this.opts.rememberUpgrade && Socket$1.priorWebsocketSuccess && this.transports.indexOf("websocket") !== -1 ? "websocket" : this.transports[0];
 		this.readyState = "opening";
 		const transport = this.createTransport(transportName);
 		transport.open();
@@ -103039,15 +104733,96 @@ var SocketWithoutUpgrade = class SocketWithoutUpgrade extends Emitter {
 		transport.on("drain", this._onDrain.bind(this)).on("packet", this._onPacket.bind(this)).on("error", this._onError.bind(this)).on("close", (reason) => this._onClose("transport close", reason));
 	}
 	/**
+	* Probes a transport.
+	*
+	* @param {String} name - transport name
+	* @private
+	*/
+	_probe(name) {
+		let transport = this.createTransport(name);
+		let failed = false;
+		Socket$1.priorWebsocketSuccess = false;
+		const onTransportOpen = () => {
+			if (failed) return;
+			transport.send([{
+				type: "ping",
+				data: "probe"
+			}]);
+			transport.once("packet", (msg) => {
+				if (failed) return;
+				if ("pong" === msg.type && "probe" === msg.data) {
+					this.upgrading = true;
+					this.emitReserved("upgrading", transport);
+					if (!transport) return;
+					Socket$1.priorWebsocketSuccess = "websocket" === transport.name;
+					this.transport.pause(() => {
+						if (failed) return;
+						if ("closed" === this.readyState) return;
+						cleanup();
+						this.setTransport(transport);
+						transport.send([{ type: "upgrade" }]);
+						this.emitReserved("upgrade", transport);
+						transport = null;
+						this.upgrading = false;
+						this.flush();
+					});
+				} else {
+					const err = /* @__PURE__ */ new Error("probe error");
+					err.transport = transport.name;
+					this.emitReserved("upgradeError", err);
+				}
+			});
+		};
+		function freezeTransport() {
+			if (failed) return;
+			failed = true;
+			cleanup();
+			transport.close();
+			transport = null;
+		}
+		const onerror = (err) => {
+			const error = /* @__PURE__ */ new Error("probe error: " + err);
+			error.transport = transport.name;
+			freezeTransport();
+			this.emitReserved("upgradeError", error);
+		};
+		function onTransportClose() {
+			onerror("transport closed");
+		}
+		function onclose() {
+			onerror("socket closed");
+		}
+		function onupgrade(to) {
+			if (transport && to.name !== transport.name) freezeTransport();
+		}
+		const cleanup = () => {
+			transport.removeListener("open", onTransportOpen);
+			transport.removeListener("error", onerror);
+			transport.removeListener("close", onTransportClose);
+			this.off("close", onclose);
+			this.off("upgrading", onupgrade);
+		};
+		transport.once("open", onTransportOpen);
+		transport.once("error", onerror);
+		transport.once("close", onTransportClose);
+		this.once("close", onclose);
+		this.once("upgrading", onupgrade);
+		if (this._upgrades.indexOf("webtransport") !== -1 && name !== "webtransport") this.setTimeoutFn(() => {
+			if (!failed) transport.open();
+		}, 200);
+		else transport.open();
+	}
+	/**
 	* Called when connection is deemed open.
 	*
 	* @private
 	*/
 	onOpen() {
 		this.readyState = "open";
-		SocketWithoutUpgrade.priorWebsocketSuccess = "websocket" === this.transport.name;
+		Socket$1.priorWebsocketSuccess = "websocket" === this.transport.name;
 		this.emitReserved("open");
 		this.flush();
+		if ("open" === this.readyState && this.opts.upgrade) for (let i = 0; i < this._upgrades.length; i++) this._probe(this._upgrades[i]);
 	}
 	/**
 	* Handles a packet.
@@ -103089,6 +104864,7 @@ var SocketWithoutUpgrade = class SocketWithoutUpgrade extends Emitter {
 		this.emitReserved("handshake", data);
 		this.id = data.sid;
 		this.transport.query.sid = data.sid;
+		this._upgrades = this._filterUpgrades(data.upgrades);
 		this._pingInterval = data.pingInterval;
 		this._pingTimeout = data.pingTimeout;
 		this._maxPayload = data.maxPayload;
@@ -103260,7 +105036,7 @@ var SocketWithoutUpgrade = class SocketWithoutUpgrade extends Emitter {
 	* @private
 	*/
 	_onError(err) {
-		SocketWithoutUpgrade.priorWebsocketSuccess = false;
+		Socket$1.priorWebsocketSuccess = false;
 		if (this.opts.tryAllTransports && this.transports.length > 1 && this.readyState === "opening") {
 			this.transports.shift();
 			return this._open();
@@ -103293,124 +105069,6 @@ var SocketWithoutUpgrade = class SocketWithoutUpgrade extends Emitter {
 			this._prevBufferLen = 0;
 		}
 	}
-};
-SocketWithoutUpgrade.protocol = 4;
-/**
-* This class provides a WebSocket-like interface to connect to an Engine.IO server. The connection will be established
-* with one of the available low-level transports, like HTTP long-polling, WebSocket or WebTransport.
-*
-* This class comes with an upgrade mechanism, which means that once the connection is established with the first
-* low-level transport, it will try to upgrade to a better transport.
-*
-* In order to allow tree-shaking, there are no transports included, that's why the `transports` option is mandatory.
-*
-* @example
-* import { SocketWithUpgrade, WebSocket } from "engine.io-client";
-*
-* const socket = new SocketWithUpgrade({
-*   transports: [WebSocket]
-* });
-*
-* socket.on("open", () => {
-*   socket.send("hello");
-* });
-*
-* @see SocketWithoutUpgrade
-* @see Socket
-*/
-var SocketWithUpgrade = class extends SocketWithoutUpgrade {
-	constructor() {
-		super(...arguments);
-		this._upgrades = [];
-	}
-	onOpen() {
-		super.onOpen();
-		if ("open" === this.readyState && this.opts.upgrade) for (let i = 0; i < this._upgrades.length; i++) this._probe(this._upgrades[i]);
-	}
-	/**
-	* Probes a transport.
-	*
-	* @param {String} name - transport name
-	* @private
-	*/
-	_probe(name) {
-		let transport = this.createTransport(name);
-		let failed = false;
-		SocketWithoutUpgrade.priorWebsocketSuccess = false;
-		const onTransportOpen = () => {
-			if (failed) return;
-			transport.send([{
-				type: "ping",
-				data: "probe"
-			}]);
-			transport.once("packet", (msg) => {
-				if (failed) return;
-				if ("pong" === msg.type && "probe" === msg.data) {
-					this.upgrading = true;
-					this.emitReserved("upgrading", transport);
-					if (!transport) return;
-					SocketWithoutUpgrade.priorWebsocketSuccess = "websocket" === transport.name;
-					this.transport.pause(() => {
-						if (failed) return;
-						if ("closed" === this.readyState) return;
-						cleanup();
-						this.setTransport(transport);
-						transport.send([{ type: "upgrade" }]);
-						this.emitReserved("upgrade", transport);
-						transport = null;
-						this.upgrading = false;
-						this.flush();
-					});
-				} else {
-					const err = /* @__PURE__ */ new Error("probe error");
-					err.transport = transport.name;
-					this.emitReserved("upgradeError", err);
-				}
-			});
-		};
-		function freezeTransport() {
-			if (failed) return;
-			failed = true;
-			cleanup();
-			transport.close();
-			transport = null;
-		}
-		const onerror = (err) => {
-			const error = /* @__PURE__ */ new Error("probe error: " + err);
-			error.transport = transport.name;
-			freezeTransport();
-			this.emitReserved("upgradeError", error);
-		};
-		function onTransportClose() {
-			onerror("transport closed");
-		}
-		function onclose() {
-			onerror("socket closed");
-		}
-		function onupgrade(to) {
-			if (transport && to.name !== transport.name) freezeTransport();
-		}
-		const cleanup = () => {
-			transport.removeListener("open", onTransportOpen);
-			transport.removeListener("error", onerror);
-			transport.removeListener("close", onTransportClose);
-			this.off("close", onclose);
-			this.off("upgrading", onupgrade);
-		};
-		transport.once("open", onTransportOpen);
-		transport.once("error", onerror);
-		transport.once("close", onTransportClose);
-		this.once("close", onclose);
-		this.once("upgrading", onupgrade);
-		if (this._upgrades.indexOf("webtransport") !== -1 && name !== "webtransport") this.setTimeoutFn(() => {
-			if (!failed) transport.open();
-		}, 200);
-		else transport.open();
-	}
-	onHandshake(data) {
-		this._upgrades = this._filterUpgrades(data.upgrades);
-		super.onHandshake(data);
-	}
 	/**
 	* Filters upgrades, returning only those matching client transports.
 	*
@@ -103423,40 +105081,10 @@ var SocketWithUpgrade = class extends SocketWithoutUpgrade {
 		return filteredUpgrades;
 	}
 };
-/**
-* This class provides a WebSocket-like interface to connect to an Engine.IO server. The connection will be established
-* with one of the available low-level transports, like HTTP long-polling, WebSocket or WebTransport.
-*
-* This class comes with an upgrade mechanism, which means that once the connection is established with the first
-* low-level transport, it will try to upgrade to a better transport.
-*
-* @example
-* import { Socket } from "engine.io-client";
-*
-* const socket = new Socket();
-*
-* socket.on("open", () => {
-*   socket.send("hello");
-* });
-*
-* @see SocketWithoutUpgrade
-* @see SocketWithUpgrade
-*/
-var Socket$1 = class extends SocketWithUpgrade {
-	constructor(uri, opts = {}) {
-		const isOptionsOnly = typeof uri === "object";
-		const o = isOptionsOnly ? { ...uri } : { ...opts };
-		if (!o.transports || o.transports && typeof o.transports[0] === "string") o.transports = (o.transports || [
-			"polling",
-			"websocket",
-			"webtransport"
-		]).map((transportName) => transports[transportName]).filter((t) => !!t);
-		super(isOptionsOnly ? o : uri, o);
-	}
-};
+Socket$1.protocol = 4;
 Socket$1.protocol;
 //#endregion
-//#region node_modules/.pnpm/socket.io-client@4.8.3_supports-color@5.5.0/node_modules/socket.io-client/build/esm/url.js
+//#region node_modules/.pnpm/socket.io-client@4.8.4_supports-color@5.5.0/node_modules/socket.io-client/build/esm/url.js
 /**
 * URL parser.
 *
@@ -103850,7 +105478,7 @@ function isPacketValid(packet) {
 	return isNamespaceValid(packet.nsp) && isAckIdValid(packet.id) && isDataValid(packet.type, packet.data);
 }
 //#endregion
-//#region node_modules/.pnpm/socket.io-client@4.8.3_supports-color@5.5.0/node_modules/socket.io-client/build/esm/on.js
+//#region node_modules/.pnpm/socket.io-client@4.8.4_supports-color@5.5.0/node_modules/socket.io-client/build/esm/on.js
 function on(obj, ev, fn) {
 	obj.on(ev, fn);
 	return function subDestroy() {
@@ -103858,7 +105486,7 @@ function on(obj, ev, fn) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/socket.io-client@4.8.3_supports-color@5.5.0/node_modules/socket.io-client/build/esm/socket.js
+//#region node_modules/.pnpm/socket.io-client@4.8.4_supports-color@5.5.0/node_modules/socket.io-client/build/esm/socket.js
 /**
 * Internal events.
 * These events can't be emitted by the user.
@@ -104643,7 +106271,7 @@ var Socket = class extends Emitter {
 	}
 };
 //#endregion
-//#region node_modules/.pnpm/socket.io-client@4.8.3_supports-color@5.5.0/node_modules/socket.io-client/build/esm/contrib/backo2.js
+//#region node_modules/.pnpm/socket.io-client@4.8.4_supports-color@5.5.0/node_modules/socket.io-client/build/esm/contrib/backo2.js
 /**
 * Initialize backoff timer with `opts`.
 *
@@ -104711,7 +106339,7 @@ Backoff.prototype.setJitter = function(jitter) {
 	this.jitter = jitter;
 };
 //#endregion
-//#region node_modules/.pnpm/socket.io-client@4.8.3_supports-color@5.5.0/node_modules/socket.io-client/build/esm/manager.js
+//#region node_modules/.pnpm/socket.io-client@4.8.4_supports-color@5.5.0/node_modules/socket.io-client/build/esm/manager.js
 var Manager = class extends Emitter {
 	constructor(uri, opts) {
 		var _a;
@@ -105019,7 +106647,7 @@ var Manager = class extends Emitter {
 	}
 };
 //#endregion
-//#region node_modules/.pnpm/socket.io-client@4.8.3_supports-color@5.5.0/node_modules/socket.io-client/build/esm/index.js
+//#region node_modules/.pnpm/socket.io-client@4.8.4_supports-color@5.5.0/node_modules/socket.io-client/build/esm/index.js
 /**
 * Managers cache.
 */
@@ -105055,18 +106683,15 @@ var socketIoOptions = { transports: ["websocket"] };
 /*!**************************************************!*\
 !*** ./packages/@logrocket/console/src/index.ts ***!
 \**************************************************/
-/*! @babel/runtime/helpers/interopRequireDefault */
 /*! ./registerConsole */
 /*!************************************************************!*\
 !*** ./packages/@logrocket/console/src/registerConsole.js ***!
 \************************************************************/
-/*! @babel/runtime/helpers/interopRequireDefault */
 /*! @logrocket/utils/src/enhanceFunc */
 /*! @logrocket/exceptions */
 /*!****************************************************************!*\
 !*** ./packages/@logrocket/custom-element-states/src/index.ts ***!
 \****************************************************************/
-/*! @babel/runtime/helpers/interopRequireDefault */
 /*! ./registerCustomStates */
 /*!*******************************************************************************!*\
 !*** ./packages/@logrocket/custom-element-states/src/registerCustomStates.ts ***!
@@ -105074,14 +106699,12 @@ var socketIoOptions = { transports: ["websocket"] };
 /*!*******************************************************!*\
 !*** ./packages/@logrocket/exceptions/src/Capture.js ***!
 \*******************************************************/
-/*! @babel/runtime/helpers/interopRequireDefault */
 /*! @logrocket/utils/src/scrubException */
 /*! @logrocket/utils/src/TraceKit */
 /*! ./stackTraceFromError */
 /*!*****************************************************!*\
 !*** ./packages/@logrocket/exceptions/src/index.ts ***!
 \*****************************************************/
-/*! @babel/runtime/helpers/interopRequireDefault */
 /*! ./registerExceptions */
 /*! ./Capture */
 /*!****************************************************************************!*\
@@ -105090,13 +106713,11 @@ var socketIoOptions = { transports: ["websocket"] };
 /*!***********************************************************!*\
 !*** ./packages/@logrocket/exceptions/src/raven/raven.js ***!
 \***********************************************************/
-/*! @babel/runtime/helpers/interopRequireDefault */
 /*! @logrocket/utils/src/TraceKit */
 /*! ./FunctionPropertyMirror */
 /*!******************************************************************!*\
 !*** ./packages/@logrocket/exceptions/src/registerExceptions.js ***!
 \******************************************************************/
-/*! @babel/runtime/helpers/interopRequireDefault */
 /*! ./raven/raven */
 /*! ./Capture */
 /*!*******************************************************************!*\
@@ -105109,7 +106730,6 @@ var socketIoOptions = { transports: ["websocket"] };
 /*!**************************************************!*\
 !*** ./packages/@logrocket/network/src/index.js ***!
 \**************************************************/
-/*! @babel/runtime/helpers/interopRequireDefault */
 /*! @babel/runtime/helpers/defineProperty */
 /*! ./registerFetch */
 /*! ./registerIonic */
@@ -105119,14 +106739,12 @@ var socketIoOptions = { transports: ["websocket"] };
 /*!**********************************************************!*\
 !*** ./packages/@logrocket/network/src/registerFetch.js ***!
 \**********************************************************/
-/*! @babel/runtime/helpers/interopRequireDefault */
 /*! @babel/runtime/helpers/defineProperty */
 /*! @logrocket/utils/src/mapValues */
 /*! ./fetchIntercept */
 /*!**********************************************************!*\
 !*** ./packages/@logrocket/network/src/registerIonic.ts ***!
 \**********************************************************/
-/*! @babel/runtime/helpers/interopRequireDefault */
 /*! @babel/runtime/helpers/defineProperty */
 /*! @logrocket/utils/src/protectFunc */
 /*!***********************************************************************!*\
@@ -105135,7 +106753,6 @@ var socketIoOptions = { transports: ["websocket"] };
 /*!********************************************************!*\
 !*** ./packages/@logrocket/network/src/registerXHR.js ***!
 \********************************************************/
-/*! @babel/runtime/helpers/interopRequireDefault */
 /*! @logrocket/utils/src/mapValues */
 /*! @logrocket/utils/src/enhanceFunc */
 /*! @logrocket/utils/src/protectFunc */
@@ -105148,18 +106765,15 @@ var socketIoOptions = { transports: ["websocket"] };
 /*!*********************************************************!*\
 !*** ./packages/@logrocket/redux/src/createEnhancer.js ***!
 \*********************************************************/
-/*! @babel/runtime/helpers/interopRequireDefault */
 /*! @babel/runtime/helpers/defineProperty */
 /*! @logrocket/now */
 /*!***********************************************************!*\
 !*** ./packages/@logrocket/redux/src/createMiddleware.js ***!
 \***********************************************************/
-/*! @babel/runtime/helpers/interopRequireDefault */
 /*! @logrocket/now */
 /*!************************************************!*\
 !*** ./packages/@logrocket/redux/src/index.ts ***!
 \************************************************/
-/*! @babel/runtime/helpers/interopRequireDefault */
 /*! ./createEnhancer */
 /*! ./createMiddleware */
 /*!***************************************************!*\
@@ -105187,12 +106801,10 @@ var socketIoOptions = { transports: ["websocket"] };
 /*!**********************************************************!*\
 !*** ./packages/@logrocket/utils/src/parseRawHeaders.ts ***!
 \**********************************************************/
-/*! @babel/runtime/helpers/interopRequireDefault */
 /*! @babel/runtime/helpers/defineProperty */
 /*!******************************************************!*\
 !*** ./packages/@logrocket/utils/src/protectFunc.ts ***!
 \******************************************************/
-/*! @babel/runtime/helpers/interopRequireDefault */
 /*! ./sendTelemetryData */
 /*! ./logError */
 /*!*********************************************************!*\
@@ -105201,14 +106813,12 @@ var socketIoOptions = { transports: ["websocket"] };
 /*!************************************************************!*\
 !*** ./packages/@logrocket/utils/src/sendTelemetryData.js ***!
 \************************************************************/
-/*! @babel/runtime/helpers/interopRequireDefault */
 /*! @babel/runtime/helpers/defineProperty */
 /*! ./logError */
 /*! ./TraceKit */
 /*!*********************************************!*\
 !*** ./packages/logrocket/src/LogRocket.js ***!
 \*********************************************/
-/*! @babel/runtime/helpers/interopRequireDefault */
 /*! @babel/runtime/helpers/defineProperty */
 /*! @babel/runtime/helpers/objectWithoutProperties */
 /*! @logrocket/network */
@@ -105220,44 +106830,38 @@ var socketIoOptions = { transports: ["websocket"] };
 /*!*************************************************!*\
 !*** ./packages/logrocket/src/makeLogRocket.js ***!
 \*************************************************/
-/*! @babel/runtime/helpers/interopRequireDefault */
 /*! ./LogRocket */
 /*!*****************************************!*\
 !*** ./packages/logrocket/src/setup.js ***!
 \*****************************************/
-/*! @babel/runtime/helpers/interopRequireDefault */
 /*! @babel/runtime/helpers/objectWithoutProperties */
 /*! ./makeLogRocket */
-/*!********************************************************************************************************!*\
-!*** ./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/defineProperty.js ***!
-\********************************************************************************************************/
+/*!************************************************************************************************************!*\
+!*** ./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/defineProperty.js ***!
+\************************************************************************************************************/
 /*! ./toPropertyKey.js */
-/*!***************************************************************************************************************!*\
-!*** ./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/interopRequireDefault.js ***!
-\***************************************************************************************************************/
-/*!*****************************************************************************************************************!*\
-!*** ./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/objectWithoutProperties.js ***!
-\*****************************************************************************************************************/
+/*!*********************************************************************************************************************!*\
+!*** ./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js ***!
+\*********************************************************************************************************************/
 /*! ./objectWithoutPropertiesLoose.js */
-/*!**********************************************************************************************************************!*\
-!*** ./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js ***!
-\**********************************************************************************************************************/
-/*!*****************************************************************************************************!*\
-!*** ./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/toPrimitive.js ***!
-\*****************************************************************************************************/
+/*!**************************************************************************************************************************!*\
+!*** ./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
+\**************************************************************************************************************************/
+/*!*********************************************************************************************************!*\
+!*** ./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/toPrimitive.js ***!
+\*********************************************************************************************************/
 /*! ./typeof.js */
-/*!*******************************************************************************************************!*\
-!*** ./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/toPropertyKey.js ***!
-\*******************************************************************************************************/
+/*!***********************************************************************************************************!*\
+!*** ./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/toPropertyKey.js ***!
+\***********************************************************************************************************/
 /*! ./typeof.js */
 /*! ./toPrimitive.js */
-/*!************************************************************************************************!*\
-!*** ./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/typeof.js ***!
-\************************************************************************************************/
+/*!****************************************************************************************************!*\
+!*** ./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/typeof.js ***!
+\****************************************************************************************************/
 /*!**********************************************!*\
 !*** ./packages/logrocket/src/module-npm.js ***!
 \**********************************************/
-/*! @babel/runtime/helpers/interopRequireDefault */
 /*! ./setup */
 //#endregion
 //#region src/front/jup/Tenant/tenant.dom.ts
@@ -105271,21 +106875,19 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 		}
 	})(exports, function() {
 		return (function() {
+			"use strict";
 			var __webpack_modules__ = {
-				"./packages/@logrocket/console/src/index.ts": (function(__unused_webpack_module, exports$1, __webpack_require__) {
-					"use strict";
-					var _interopRequireDefault = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-					Object.defineProperty(exports$1, "__esModule", { value: true });
-					exports$1["default"] = void 0;
-					exports$1["default"] = _interopRequireDefault(__webpack_require__("./packages/@logrocket/console/src/registerConsole.js")).default;
+				"./packages/@logrocket/console/src/index.ts": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_exports__["default"] = __webpack_require__("./packages/@logrocket/console/src/registerConsole.js")["default"];
 				}),
-				"./packages/@logrocket/console/src/registerConsole.js": (function(__unused_webpack_module, exports$2, __webpack_require__) {
-					"use strict";
-					var _interopRequireDefault = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-					Object.defineProperty(exports$2, "__esModule", { value: true });
-					exports$2["default"] = registerConsole;
-					var _enhanceFunc = _interopRequireDefault(__webpack_require__("./packages/@logrocket/utils/src/enhanceFunc.ts"));
-					var _exceptions = __webpack_require__("./packages/@logrocket/exceptions/src/index.ts");
+				"./packages/@logrocket/console/src/registerConsole.js": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "default": function() {
+						return registerConsole;
+					} });
+					var _logrocket_utils_src_enhanceFunc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./packages/@logrocket/utils/src/enhanceFunc.ts");
+					var _logrocket_exceptions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./packages/@logrocket/exceptions/src/index.ts");
 					function registerConsole(logger) {
 						const unsubFunctions = [];
 						[
@@ -105295,8 +106897,10 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 							"error",
 							"debug"
 						].forEach((method) => {
-							unsubFunctions.push((0, _enhanceFunc.default)(console, method, function() {
+							unsubFunctions.push((0, _logrocket_utils_src_enhanceFunc__WEBPACK_IMPORTED_MODULE_0__["default"])(console, method, function() {
+								var _logger$_logger;
 								for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) args[_key] = arguments[_key];
+								if ((_logger$_logger = logger._logger) !== null && _logger$_logger !== void 0 && _logger$_logger._skipConsoleCapture) return;
 								logger.addEvent("lr.core.LogEvent", function() {
 									let consoleOptions = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {};
 									const isEnabled = consoleOptions.isEnabled;
@@ -105307,8 +106911,8 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 											try {
 												secondArg = " ".concat(args[1]);
 											} catch (_unused) {}
-											_exceptions.Capture.captureMessage(logger, "".concat(args[0]).concat(secondArg), args, {}, true);
-										} else _exceptions.Capture.captureMessage(logger, args[0], args, {}, true);
+											_logrocket_exceptions__WEBPACK_IMPORTED_MODULE_1__.Capture.captureMessage(logger, "".concat(args[0]).concat(secondArg), args, {}, true);
+										} else _logrocket_exceptions__WEBPACK_IMPORTED_MODULE_1__.Capture.captureMessage(logger, args[0], args, {}, true);
 									}
 									return {
 										logLevel: method.toUpperCase(),
@@ -105322,17 +106926,15 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						};
 					}
 				}),
-				"./packages/@logrocket/custom-element-states/src/index.ts": (function(__unused_webpack_module, exports$3, __webpack_require__) {
-					"use strict";
-					var _interopRequireDefault = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-					Object.defineProperty(exports$3, "__esModule", { value: true });
-					exports$3["default"] = void 0;
-					exports$3["default"] = _interopRequireDefault(__webpack_require__("./packages/@logrocket/custom-element-states/src/registerCustomStates.ts")).default;
+				"./packages/@logrocket/custom-element-states/src/index.ts": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_exports__["default"] = __webpack_require__("./packages/@logrocket/custom-element-states/src/registerCustomStates.ts")["default"];
 				}),
-				"./packages/@logrocket/custom-element-states/src/registerCustomStates.ts": (function(__unused_webpack_module, exports$4) {
-					"use strict";
-					Object.defineProperty(exports$4, "__esModule", { value: true });
-					exports$4["default"] = registerCustomStates;
+				"./packages/@logrocket/custom-element-states/src/registerCustomStates.ts": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "default": function() {
+						return registerCustomStates;
+					} });
 					function wrapCustomStateSet(element, stateSet, stateChangeCallback) {
 						const saved = stateSet.__lr_originals;
 						const originalAdd = saved ? saved.add : stateSet.add.bind(stateSet);
@@ -105444,15 +107046,19 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						};
 					}
 				}),
-				"./packages/@logrocket/exceptions/src/Capture.js": (function(__unused_webpack_module, exports$5, __webpack_require__) {
-					"use strict";
-					var _interopRequireDefault = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-					Object.defineProperty(exports$5, "__esModule", { value: true });
-					exports$5.captureException = captureException;
-					exports$5.captureMessage = captureMessage;
-					var _scrubException = __webpack_require__("./packages/@logrocket/utils/src/scrubException.ts");
-					var _TraceKit = _interopRequireDefault(__webpack_require__("./packages/@logrocket/utils/src/TraceKit.js"));
-					var _stackTraceFromError = _interopRequireDefault(__webpack_require__("./packages/@logrocket/exceptions/src/stackTraceFromError.js"));
+				"./packages/@logrocket/exceptions/src/Capture.js": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, {
+						"captureException": function() {
+							return captureException;
+						},
+						"captureMessage": function() {
+							return captureMessage;
+						}
+					});
+					var _logrocket_utils_src_scrubException__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./packages/@logrocket/utils/src/scrubException.ts");
+					var _logrocket_utils_src_TraceKit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./packages/@logrocket/utils/src/TraceKit.js");
+					var _stackTraceFromError__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./packages/@logrocket/exceptions/src/stackTraceFromError.js");
 					function captureMessage(logger, message, messageArgs) {
 						let options = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : {};
 						const data = {
@@ -105461,60 +107067,43 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 							messageArgs,
 							browserHref: window.location ? window.location.href : ""
 						};
-						(0, _scrubException.scrubException)(data, options);
+						(0, _logrocket_utils_src_scrubException__WEBPACK_IMPORTED_MODULE_0__.scrubException)(data, options);
 						logger.addEvent("lr.core.Exception", () => data);
 					}
 					function captureException(logger, exception) {
 						let options = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {};
 						let preppedTrace = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : null;
 						let exceptionType = arguments.length > 4 && arguments[4] !== void 0 ? arguments[4] : "WINDOW";
-						const trace = preppedTrace || _TraceKit.default.computeStackTrace(exception);
+						const trace = preppedTrace || _logrocket_utils_src_TraceKit__WEBPACK_IMPORTED_MODULE_1__["default"].computeStackTrace(exception);
 						const data = {
 							exceptionType,
 							errorType: trace.name,
 							message: trace.message,
 							browserHref: window.location ? window.location.href : ""
 						};
-						(0, _scrubException.scrubException)(data, options);
-						const addEventOptions = { _stackTrace: (0, _stackTraceFromError.default)(trace) };
+						(0, _logrocket_utils_src_scrubException__WEBPACK_IMPORTED_MODULE_0__.scrubException)(data, options);
+						const addEventOptions = { _stackTrace: (0, _stackTraceFromError__WEBPACK_IMPORTED_MODULE_2__["default"])(trace) };
 						logger.addEvent("lr.core.Exception", () => data, addEventOptions);
 					}
 				}),
-				"./packages/@logrocket/exceptions/src/index.ts": (function(__unused_webpack_module, exports$6, __webpack_require__) {
-					"use strict";
-					var _interopRequireDefault = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-					Object.defineProperty(exports$6, "__esModule", { value: true });
-					exports$6.Capture = void 0;
-					Object.defineProperty(exports$6, "registerExceptions", {
-						enumerable: true,
-						get: function() {
-							return _registerExceptions.default;
+				"./packages/@logrocket/exceptions/src/index.ts": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, {
+						"Capture": function() {
+							return _Capture__WEBPACK_IMPORTED_MODULE_1__;
+						},
+						"registerExceptions": function() {
+							return _registerExceptions__WEBPACK_IMPORTED_MODULE_0__["default"];
 						}
 					});
-					var _registerExceptions = _interopRequireDefault(__webpack_require__("./packages/@logrocket/exceptions/src/registerExceptions.js"));
-					exports$6.Capture = _interopRequireWildcard(__webpack_require__("./packages/@logrocket/exceptions/src/Capture.js"));
-					function _interopRequireWildcard(e, t) {
-						if ("function" == typeof WeakMap) var r = /* @__PURE__ */ new WeakMap(), n = /* @__PURE__ */ new WeakMap();
-						return (_interopRequireWildcard = function(e, t) {
-							if (!t && e && e.__esModule) return e;
-							var o, i, f = {
-								__proto__: null,
-								default: e
-							};
-							if (null === e || "object" != typeof e && "function" != typeof e) return f;
-							if (o = t ? n : r) {
-								if (o.has(e)) return o.get(e);
-								o.set(e, f);
-							}
-							for (const t in e) "default" !== t && {}.hasOwnProperty.call(e, t) && ((i = (o = Object.defineProperty) && Object.getOwnPropertyDescriptor(e, t)) && (i.get || i.set) ? o(f, t, i) : f[t] = e[t]);
-							return f;
-						})(e, t);
-					}
+					var _registerExceptions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./packages/@logrocket/exceptions/src/registerExceptions.js");
+					var _Capture__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./packages/@logrocket/exceptions/src/Capture.js");
 				}),
-				"./packages/@logrocket/exceptions/src/raven/FunctionPropertyMirror.js": (function(__unused_webpack_module, exports$7) {
-					"use strict";
-					Object.defineProperty(exports$7, "__esModule", { value: true });
-					exports$7["default"] = void 0;
+				"./packages/@logrocket/exceptions/src/raven/FunctionPropertyMirror.js": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "default": function() {
+						return FunctionPropertyMirror;
+					} });
 					const DEFAULT_RESERVED_PROPS = /* @__PURE__ */ new Set([
 						"prototype",
 						"length",
@@ -105635,15 +107224,14 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 							});
 						}
 					}
-					exports$7["default"] = FunctionPropertyMirror;
 				}),
-				"./packages/@logrocket/exceptions/src/raven/raven.js": (function(__unused_webpack_module, exports$8, __webpack_require__) {
-					"use strict";
-					var _interopRequireDefault = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-					Object.defineProperty(exports$8, "__esModule", { value: true });
-					exports$8["default"] = void 0;
-					var _TraceKit = _interopRequireDefault(__webpack_require__("./packages/@logrocket/utils/src/TraceKit.js"));
-					var _FunctionPropertyMirror = _interopRequireDefault(__webpack_require__("./packages/@logrocket/exceptions/src/raven/FunctionPropertyMirror.js"));
+				"./packages/@logrocket/exceptions/src/raven/raven.js": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "default": function() {
+						return Handler;
+					} });
+					var _logrocket_utils_src_TraceKit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./packages/@logrocket/utils/src/TraceKit.js");
+					var _FunctionPropertyMirror__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./packages/@logrocket/exceptions/src/raven/FunctionPropertyMirror.js");
 					var objectPrototype = Object.prototype;
 					function isUndefined(what) {
 						return what === void 0;
@@ -105686,11 +107274,11 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 							this._ignoreOnError = 0;
 							this._wrappedBuiltIns = [];
 							this.captureException = captureException;
-							_TraceKit.default.report.subscribe(this._errorHandler);
+							_logrocket_utils_src_TraceKit__WEBPACK_IMPORTED_MODULE_0__["default"].report.subscribe(this._errorHandler);
 							this._instrumentTryCatch();
 						}
 						uninstall() {
-							_TraceKit.default.report.unsubscribe(this._errorHandler);
+							_logrocket_utils_src_TraceKit__WEBPACK_IMPORTED_MODULE_0__["default"].report.unsubscribe(this._errorHandler);
 							var builtin;
 							while (this._wrappedBuiltIns.length) {
 								builtin = this._wrappedBuiltIns.shift();
@@ -105738,12 +107326,12 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 									return func.apply(this, args);
 								} catch (e) {
 									self._ignoreNextOnError();
-									self.captureException(_TraceKit.default.computeStackTrace(e), options);
+									self.captureException(_logrocket_utils_src_TraceKit__WEBPACK_IMPORTED_MODULE_0__["default"].computeStackTrace(e), options);
 									throw e;
 								}
 							}
 							var reflect = typeof Reflect === "object" ? Reflect : void 0;
-							var propertyMirror = new _FunctionPropertyMirror.default(func, wrapped, {
+							var propertyMirror = new _FunctionPropertyMirror__WEBPACK_IMPORTED_MODULE_1__["default"](func, wrapped, {
 								hasKey,
 								includeSymbols: true
 							});
@@ -105944,38 +107532,20 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 							}, wrappedBuiltIns);
 						}
 					}
-					exports$8["default"] = Handler;
 				}),
-				"./packages/@logrocket/exceptions/src/registerExceptions.js": (function(__unused_webpack_module, exports$9, __webpack_require__) {
-					"use strict";
-					var _interopRequireDefault = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-					Object.defineProperty(exports$9, "__esModule", { value: true });
-					exports$9["default"] = registerCore;
-					var _raven = _interopRequireDefault(__webpack_require__("./packages/@logrocket/exceptions/src/raven/raven.js"));
-					var Capture = _interopRequireWildcard(__webpack_require__("./packages/@logrocket/exceptions/src/Capture.js"));
-					function _interopRequireWildcard(e, t) {
-						if ("function" == typeof WeakMap) var r = /* @__PURE__ */ new WeakMap(), n = /* @__PURE__ */ new WeakMap();
-						return (_interopRequireWildcard = function(e, t) {
-							if (!t && e && e.__esModule) return e;
-							var o, i, f = {
-								__proto__: null,
-								default: e
-							};
-							if (null === e || "object" != typeof e && "function" != typeof e) return f;
-							if (o = t ? n : r) {
-								if (o.has(e)) return o.get(e);
-								o.set(e, f);
-							}
-							for (const t in e) "default" !== t && {}.hasOwnProperty.call(e, t) && ((i = (o = Object.defineProperty) && Object.getOwnPropertyDescriptor(e, t)) && (i.get || i.set) ? o(f, t, i) : f[t] = e[t]);
-							return f;
-						})(e, t);
-					}
+				"./packages/@logrocket/exceptions/src/registerExceptions.js": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "default": function() {
+						return registerCore;
+					} });
+					var _raven_raven__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./packages/@logrocket/exceptions/src/raven/raven.js");
+					var _Capture__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./packages/@logrocket/exceptions/src/Capture.js");
 					function registerCore(logger) {
-						const raven = new _raven.default({ captureException(errorReport) {
-							Capture.captureException(logger, null, null, errorReport);
+						const raven = new _raven_raven__WEBPACK_IMPORTED_MODULE_0__["default"]({ captureException(errorReport) {
+							_Capture__WEBPACK_IMPORTED_MODULE_1__.captureException(logger, null, null, errorReport);
 						} });
 						const rejectionHandler = (evt) => {
-							if (evt.reason instanceof Error) Capture.captureException(logger, evt.reason, null, null, "UNHANDLED_REJECTION");
+							if (evt.reason instanceof Error) _Capture__WEBPACK_IMPORTED_MODULE_1__.captureException(logger, evt.reason, null, null, "UNHANDLED_REJECTION");
 							else logger.addEvent("lr.core.Exception", () => ({
 								exceptionType: "UNHANDLED_REJECTION",
 								message: evt.reason || "Unhandled Promise rejection"
@@ -105988,10 +107558,11 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						};
 					}
 				}),
-				"./packages/@logrocket/exceptions/src/stackTraceFromError.js": (function(__unused_webpack_module, exports$10) {
-					"use strict";
-					Object.defineProperty(exports$10, "__esModule", { value: true });
-					exports$10["default"] = stackTraceFromError;
+				"./packages/@logrocket/exceptions/src/stackTraceFromError.js": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "default": function() {
+						return stackTraceFromError;
+					} });
 					function stackTraceFromError(errorReport) {
 						function makeNotNull(val) {
 							return val === null ? void 0 : val;
@@ -106004,11 +107575,9 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						})) : void 0;
 					}
 				}),
-				"./packages/@logrocket/network/src/fetchIntercept.js": (function(__unused_webpack_module, exports$11, __webpack_require__) {
-					"use strict";
-					Object.defineProperty(exports$11, "__esModule", { value: true });
-					exports$11["default"] = void 0;
-					var _registerXHR = __webpack_require__("./packages/@logrocket/network/src/registerXHR.js");
+				"./packages/@logrocket/network/src/fetchIntercept.js": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					var _registerXHR__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./packages/@logrocket/network/src/registerXHR.js");
 					let interceptors = [];
 					function makeInterceptor(fetch, fetchId) {
 						const reversedInterceptors = interceptors.reduce((array, interceptor) => [interceptor].concat(array), []);
@@ -106019,7 +107588,7 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 							if (request || requestError) promise = promise.then((args) => request(fetchId, ...args), (args) => requestError(fetchId, ...args));
 						});
 						promise = promise.then((args) => {
-							(0, _registerXHR.setActive)(false);
+							(0, _registerXHR__WEBPACK_IMPORTED_MODULE_0__.setActive)(false);
 							let res;
 							let err;
 							try {
@@ -106027,7 +107596,7 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 							} catch (_err) {
 								err = _err;
 							}
-							(0, _registerXHR.setActive)(true);
+							(0, _registerXHR__WEBPACK_IMPORTED_MODULE_0__.setActive)(true);
 							if (err) throw err;
 							return res;
 						});
@@ -106050,7 +107619,7 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						if (isPolyfill) env.fetch.polyfill = isPolyfill;
 					}
 					let didAttach = false;
-					exports$11["default"] = {
+					__webpack_exports__["default"] = {
 						register(interceptor) {
 							if (!didAttach) {
 								didAttach = true;
@@ -106067,17 +107636,17 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						}
 					};
 				}),
-				"./packages/@logrocket/network/src/index.js": (function(__unused_webpack_module, exports$12, __webpack_require__) {
-					"use strict";
-					var _interopRequireDefault = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-					Object.defineProperty(exports$12, "__esModule", { value: true });
-					exports$12["default"] = registerNetwork;
-					var _defineProperty2 = _interopRequireDefault(__webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/defineProperty.js"));
-					var _registerFetch = _interopRequireDefault(__webpack_require__("./packages/@logrocket/network/src/registerFetch.js"));
-					var _registerIonic = __webpack_require__("./packages/@logrocket/network/src/registerIonic.ts");
-					var _registerNetworkInformation = _interopRequireDefault(__webpack_require__("./packages/@logrocket/network/src/registerNetworkInformation.js"));
-					var _registerXHR = _interopRequireDefault(__webpack_require__("./packages/@logrocket/network/src/registerXHR.js"));
-					var _mapValues = _interopRequireDefault(__webpack_require__("./packages/@logrocket/utils/src/mapValues.ts"));
+				"./packages/@logrocket/network/src/index.js": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "default": function() {
+						return registerNetwork;
+					} });
+					var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+					var _registerFetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./packages/@logrocket/network/src/registerFetch.js");
+					var _registerIonic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./packages/@logrocket/network/src/registerIonic.ts");
+					var _registerNetworkInformation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./packages/@logrocket/network/src/registerNetworkInformation.js");
+					var _registerXHR__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("./packages/@logrocket/network/src/registerXHR.js");
+					var _logrocket_utils_src_mapValues__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("./packages/@logrocket/utils/src/mapValues.ts");
 					function ownKeys(e, r) {
 						var t = Object.keys(e);
 						if (Object.getOwnPropertySymbols) {
@@ -106092,13 +107661,28 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						for (var r = 1; r < arguments.length; r++) {
 							var t = null != arguments[r] ? arguments[r] : {};
 							r % 2 ? ownKeys(Object(t), !0).forEach(function(r) {
-								(0, _defineProperty2.default)(e, r, t[r]);
+								(0, _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(e, r, t[r]);
 							}) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r) {
 								Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
 							});
 						}
 						return e;
 					}
+					const SANITIZER_TIMEOUT_MS = 1e4;
+					const withSanitizerTimeout = (sanitizerResult) => new Promise((resolve, reject) => {
+						const timeout = setTimeout(() => reject(/* @__PURE__ */ new Error("LogRocket network sanitizer timed out after 10 seconds.")), SANITIZER_TIMEOUT_MS);
+						Promise.resolve(sanitizerResult).then((result) => {
+							clearTimeout(timeout);
+							resolve(result);
+						}, (error) => {
+							clearTimeout(timeout);
+							reject(error);
+						});
+					});
+					const getCurrentHref = () => {
+						var _window;
+						return (_window = window) === null || _window === void 0 || (_window = _window.location) === null || _window === void 0 ? void 0 : _window.href;
+					};
 					function registerNetwork(logger) {
 						let config = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {
 							isReactNative: false,
@@ -106106,62 +107690,149 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						};
 						if ((config === null || config === void 0 ? void 0 : config.isDisabled) === true) return () => {};
 						const { isReactNative, shouldAugmentNPS, shouldParseXHRBlob } = config;
-						const ignoredNetwork = {};
+						let isActive = true;
+						let ignoredNetwork = {};
+						let pendingRequests = {};
 						const truncate = (data) => {
-							const limit = 4096e3;
+							const limit = 4194304;
+							const enormousLimit = 104857600;
 							let str = data;
 							if (typeof data === "object" && data != null) {
 								const proto = Object.getPrototypeOf(data);
 								if (proto === Object.prototype || proto === null) str = JSON.stringify(data);
 							}
-							if (str && str.length && str.length > limit && typeof str === "string") {
+							const strLength = str && typeof str === "string" ? str.length : 0;
+							if (strLength > enormousLimit) logger.addEvent("lr.DebugLog", () => ({ message: "Dropped enormous network body of size ".concat(strLength) }));
+							if (strLength > limit) {
 								const beginning = str.substring(0, 1e3);
-								return "".concat(beginning, " ... LogRocket truncating to first 1000 characters.\n      Keep data under 4MB to prevent truncation. https://docs.logrocket.com/reference/network");
+								return "".concat(beginning, " ... LogRocket is truncating to first 1000 characters.") + " Consider sanitizing large network bodies: https://docs.logrocket.com/reference/network";
 							}
 							return data;
 						};
+						const makeRequestEvent = (reqId, request, sanitized, baseURI) => {
+							if (!sanitized) {
+								ignoredNetwork[reqId] = true;
+								return null;
+							}
+							try {
+								const method = request.method;
+								let url = sanitized.url;
+								if (baseURI && typeof URL === "function") url = new URL(sanitized.url, baseURI).href;
+								else if (typeof document !== "undefined" && typeof document.createElement === "function") {
+									const a = document.createElement("a");
+									a.href = sanitized.url;
+									url = a.href;
+								}
+								return {
+									reqId,
+									url,
+									headers: (0, _logrocket_utils_src_mapValues__WEBPACK_IMPORTED_MODULE_5__["default"])(sanitized.headers, (headerValue) => {
+										return "".concat(headerValue);
+									}),
+									body: truncate(sanitized.body),
+									method,
+									referrer: sanitized.referrer || void 0,
+									mode: sanitized.mode || void 0,
+									credentials: sanitized.credentials || void 0,
+									initiatorType: sanitized.initiatorType || "UNKNOWN"
+								};
+							} catch (err) {
+								console.error(err);
+								ignoredNetwork[reqId] = true;
+								return null;
+							}
+						};
+						const resolveSanitizedRequest = (reqId, request, sanitized, timeOverride, baseURI, hrefOverride) => {
+							pendingRequests[reqId] = withSanitizerTimeout(sanitized).then((sanitizedRequest) => {
+								if (!isActive) return;
+								const requestEvent = makeRequestEvent(reqId, request, sanitizedRequest, baseURI);
+								if (requestEvent) logger.addEvent("lr.network.RequestEvent", () => isActive ? requestEvent : null, {
+									timeOverride,
+									hrefOverride
+								});
+							}).catch((err) => {
+								console.error(err);
+								if (isActive) ignoredNetwork[reqId] = true;
+							}).then(() => {
+								delete pendingRequests[reqId];
+							});
+						};
+						const queuePendingResponse = (reqId, response, timeOverride, hrefOverride) => {
+							const pendingRequest = pendingRequests[reqId];
+							if (!pendingRequest) return false;
+							pendingRequest.then(() => {
+								if (isActive) addResponse(reqId, response, timeOverride, hrefOverride);
+							}).catch((err) => console.error(err));
+							return true;
+						};
 						const addRequest = (reqId, request) => {
-							const method = request.method;
+							if (!isActive) return;
+							const timeOverride = Date.now();
+							const hrefOverride = getCurrentHref();
+							const baseURI = typeof document !== "undefined" ? document.baseURI : void 0;
 							logger.addEvent("lr.network.RequestEvent", function() {
 								let { isEnabled = true, requestSanitizer = (f) => f } = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {};
-								if (!isEnabled) return null;
+								if (!isActive || !isEnabled) return null;
 								let sanitized = null;
 								try {
 									sanitized = requestSanitizer(_objectSpread(_objectSpread({}, request), {}, { reqId }));
 								} catch (err) {
 									console.error(err);
 								}
-								if (sanitized) {
-									let url = sanitized.url;
-									if (typeof document !== "undefined" && typeof document.createElement === "function") {
-										const a = document.createElement("a");
-										a.href = sanitized.url;
-										url = a.href;
-									}
-									return {
-										reqId,
-										url,
-										headers: (0, _mapValues.default)(sanitized.headers, (headerValue) => {
-											return "".concat(headerValue);
-										}),
-										body: truncate(sanitized.body),
-										method,
-										referrer: sanitized.referrer || void 0,
-										mode: sanitized.mode || void 0,
-										credentials: sanitized.credentials || void 0,
-										initiatorType: sanitized.initiatorType || "UNKNOWN"
-									};
+								if (sanitized && typeof sanitized.then === "function") {
+									resolveSanitizedRequest(reqId, request, sanitized, timeOverride, baseURI, hrefOverride);
+									return null;
 								}
-								ignoredNetwork[reqId] = true;
-								return null;
+								return makeRequestEvent(reqId, request, sanitized, baseURI);
+							}, {
+								timeOverride,
+								hrefOverride
 							});
 						};
-						const addResponse = (reqId, response) => {
+						const makeResponseEvent = (reqId, response, sanitized) => {
 							const { method, status, responseType } = response;
+							if (sanitized) return {
+								reqId,
+								responseType,
+								status: sanitized.status,
+								headers: (0, _logrocket_utils_src_mapValues__WEBPACK_IMPORTED_MODULE_5__["default"])(sanitized.headers, (headerValue) => {
+									return "".concat(headerValue);
+								}),
+								body: truncate(sanitized.body),
+								method
+							};
+							return {
+								reqId,
+								responseType,
+								status,
+								headers: {},
+								body: null,
+								method
+							};
+						};
+						const resolveSanitizedResponse = (reqId, response, sanitized, timeOverride, hrefOverride) => {
+							withSanitizerTimeout(sanitized).catch((err) => {
+								console.error(err);
+								return null;
+							}).then((sanitizedResponse) => {
+								if (!isActive) return;
+								const responseEvent = makeResponseEvent(reqId, response, sanitizedResponse);
+								logger.addEvent("lr.network.ResponseEvent", () => isActive ? responseEvent : null, {
+									timeOverride,
+									hrefOverride
+								});
+							}).catch((err) => console.error(err));
+						};
+						const addResponse = function(reqId, response) {
+							let timeOverride = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : Date.now();
+							let hrefOverride = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : getCurrentHref();
+							if (!isActive) return;
+							if (queuePendingResponse(reqId, response, timeOverride, hrefOverride)) return;
 							logger.addEvent("lr.network.ResponseEvent", function() {
 								let { isEnabled = true, responseSanitizer = (f) => f } = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {};
-								if (!isEnabled) return null;
-								else if (ignoredNetwork[reqId]) {
+								if (!isActive || !isEnabled) return null;
+								if (queuePendingResponse(reqId, response, timeOverride, hrefOverride)) return null;
+								if (ignoredNetwork[reqId]) {
 									delete ignoredNetwork[reqId];
 									return null;
 								}
@@ -106171,33 +107842,23 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 								} catch (err) {
 									console.error(err);
 								}
-								if (sanitized) return {
-									reqId,
-									responseType,
-									status: sanitized.status,
-									headers: (0, _mapValues.default)(sanitized.headers, (headerValue) => {
-										return "".concat(headerValue);
-									}),
-									body: truncate(sanitized.body),
-									method
-								};
-								return {
-									reqId,
-									responseType,
-									status,
-									headers: {},
-									body: null,
-									method
-								};
+								if (sanitized && typeof sanitized.then === "function") {
+									resolveSanitizedResponse(reqId, response, sanitized, timeOverride, hrefOverride);
+									return null;
+								}
+								return makeResponseEvent(reqId, response, sanitized);
+							}, {
+								timeOverride,
+								hrefOverride
 							});
 						};
-						const isIgnored = (reqId) => logger.isDisabled || ignoredNetwork[reqId] === true;
-						const unsubFetch = (0, _registerFetch.default)({
+						const isIgnored = (reqId) => !isActive || logger.isDisabled || ignoredNetwork[reqId] === true;
+						const unsubFetch = (0, _registerFetch__WEBPACK_IMPORTED_MODULE_1__["default"])({
 							addRequest,
 							addResponse,
 							isIgnored
 						});
-						const unsubXHR = (0, _registerXHR.default)({
+						const unsubXHR = (0, _registerXHR__WEBPACK_IMPORTED_MODULE_4__["default"])({
 							addRequest,
 							addResponse,
 							isIgnored,
@@ -106205,13 +107866,16 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 							shouldAugmentNPS,
 							shouldParseXHRBlob
 						});
-						const unsubIonic = (0, _registerIonic.registerIonic)({
+						const unsubIonic = (0, _registerIonic__WEBPACK_IMPORTED_MODULE_2__.registerIonic)({
 							addRequest,
 							addResponse,
 							isIgnored
 						});
-						const unsubNetworkInformation = isReactNative ? () => {} : (0, _registerNetworkInformation.default)(logger);
+						const unsubNetworkInformation = isReactNative ? () => {} : (0, _registerNetworkInformation__WEBPACK_IMPORTED_MODULE_3__["default"])(logger);
 						return () => {
+							isActive = false;
+							ignoredNetwork = {};
+							pendingRequests = {};
 							unsubNetworkInformation();
 							unsubFetch();
 							unsubXHR();
@@ -106219,14 +107883,14 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						};
 					}
 				}),
-				"./packages/@logrocket/network/src/registerFetch.js": (function(__unused_webpack_module, exports$13, __webpack_require__) {
-					"use strict";
-					var _interopRequireDefault = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-					Object.defineProperty(exports$13, "__esModule", { value: true });
-					exports$13["default"] = registerFetch;
-					var _defineProperty2 = _interopRequireDefault(__webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/defineProperty.js"));
-					var _mapValues = _interopRequireDefault(__webpack_require__("./packages/@logrocket/utils/src/mapValues.ts"));
-					var _fetchIntercept = _interopRequireDefault(__webpack_require__("./packages/@logrocket/network/src/fetchIntercept.js"));
+				"./packages/@logrocket/network/src/registerFetch.js": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "default": function() {
+						return registerFetch;
+					} });
+					var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+					var _logrocket_utils_src_mapValues__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./packages/@logrocket/utils/src/mapValues.ts");
+					var _fetchIntercept__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./packages/@logrocket/network/src/fetchIntercept.js");
 					function ownKeys(e, r) {
 						var t = Object.keys(e);
 						if (Object.getOwnPropertySymbols) {
@@ -106241,7 +107905,7 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						for (var r = 1; r < arguments.length; r++) {
 							var t = null != arguments[r] ? arguments[r] : {};
 							r % 2 ? ownKeys(Object(t), !0).forEach(function(r) {
-								(0, _defineProperty2.default)(e, r, t[r]);
+								(0, _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(e, r, t[r]);
 							}) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r) {
 								Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
 							});
@@ -106258,15 +107922,16 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						});
 						return result;
 					}
-					const stringifyHeaders = (headers) => (0, _mapValues.default)(makeObjectFromHeaders(headers), (value) => {
+					const stringifyHeaders = (headers) => (0, _logrocket_utils_src_mapValues__WEBPACK_IMPORTED_MODULE_1__["default"])(makeObjectFromHeaders(headers), (value) => {
 						return "".concat(value);
 					});
 					function pluckFetchFields() {
+						var _arg$method$toUpperCa, _arg$method;
 						let arg = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {};
 						return {
 							url: arg.url,
 							headers: stringifyHeaders(arg.headers),
-							method: arg.method && arg.method.toUpperCase(),
+							method: (_arg$method$toUpperCa = (_arg$method = arg.method) === null || _arg$method === void 0 ? void 0 : _arg$method.toUpperCase()) !== null && _arg$method$toUpperCa !== void 0 ? _arg$method$toUpperCa : "GET",
 							referrer: arg.referrer || void 0,
 							mode: arg.mode || void 0,
 							credentials: arg.credentials || void 0
@@ -106283,7 +107948,7 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						let { addRequest, addResponse, isIgnored } = _ref;
 						const LOGROCKET_FETCH_LABEL = "fetch-";
 						const fetchMethodMap = {};
-						return _fetchIntercept.default.register({
+						return _fetchIntercept__WEBPACK_IMPORTED_MODULE_2__["default"].register({
 							request(fetchId) {
 								for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) args[_key - 1] = arguments[_key];
 								let p;
@@ -106385,17 +108050,27 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						});
 					}
 				}),
-				"./packages/@logrocket/network/src/registerIonic.ts": (function(__unused_webpack_module, exports$14, __webpack_require__) {
-					"use strict";
-					var _interopRequireDefault = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-					Object.defineProperty(exports$14, "__esModule", { value: true });
-					exports$14.appendQueryParamsString = appendQueryParamsString;
-					exports$14.mergeHeaders = mergeHeaders;
-					exports$14.processData = processData;
-					exports$14.registerIonic = registerIonic;
-					exports$14.serializeQueryParams = serializeQueryParams;
-					var _defineProperty2 = _interopRequireDefault(__webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/defineProperty.js"));
-					var _protectFunc = _interopRequireDefault(__webpack_require__("./packages/@logrocket/utils/src/protectFunc.ts"));
+				"./packages/@logrocket/network/src/registerIonic.ts": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, {
+						"appendQueryParamsString": function() {
+							return appendQueryParamsString;
+						},
+						"mergeHeaders": function() {
+							return mergeHeaders;
+						},
+						"processData": function() {
+							return processData;
+						},
+						"registerIonic": function() {
+							return registerIonic;
+						},
+						"serializeQueryParams": function() {
+							return serializeQueryParams;
+						}
+					});
+					var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+					var _logrocket_utils_src_protectFunc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./packages/@logrocket/utils/src/protectFunc.ts");
 					function ownKeys(e, r) {
 						var t = Object.keys(e);
 						if (Object.getOwnPropertySymbols) {
@@ -106410,7 +108085,7 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						for (var r = 1; r < arguments.length; r++) {
 							var t = null != arguments[r] ? arguments[r] : {};
 							r % 2 ? ownKeys(Object(t), !0).forEach(function(r) {
-								(0, _defineProperty2.default)(e, r, t[r]);
+								(0, _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(e, r, t[r]);
 							}) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r) {
 								Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
 							});
@@ -106578,7 +108253,7 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						const platforms = (_window$ionic = window.ionic) === null || _window$ionic === void 0 ? void 0 : _window$ionic.platforms;
 						if (typeof platforms !== "undefined" && typeof platforms.some === "function" && platforms.some((e) => UNSUPPORTED_PLATFORMS.has(e))) return () => {};
 						const originalSendRequest = ionicHttp.sendRequest;
-						const handleResponse = (0, _protectFunc.default)((response, isSuccess, ionicReqId) => {
+						const handleResponse = (0, _logrocket_utils_src_protectFunc__WEBPACK_IMPORTED_MODULE_1__["default"])((response, isSuccess, ionicReqId) => {
 							if (!isIgnored("".concat(LOGROCKET_IONIC_LABEL).concat(ionicReqId))) try {
 								const responseHash = {
 									url: response.url || "",
@@ -106648,10 +108323,11 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						};
 					}
 				}),
-				"./packages/@logrocket/network/src/registerNetworkInformation.js": (function(__unused_webpack_module, exports$15) {
-					"use strict";
-					Object.defineProperty(exports$15, "__esModule", { value: true });
-					exports$15["default"] = registerNetworkInformation;
+				"./packages/@logrocket/network/src/registerNetworkInformation.js": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "default": function() {
+						return registerNetworkInformation;
+					} });
 					const EFFECTIVE_TYPE_VALS = {
 						"slow-2g": "SLOW2G",
 						"2g": "TWOG",
@@ -106686,18 +108362,22 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						};
 					}
 				}),
-				"./packages/@logrocket/network/src/registerXHR.js": (function(__unused_webpack_module, exports$16, __webpack_require__) {
-					"use strict";
-					var _interopRequireDefault = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-					Object.defineProperty(exports$16, "__esModule", { value: true });
-					exports$16["default"] = registerXHR;
-					exports$16.setActive = setActive;
-					var _mapValues = _interopRequireDefault(__webpack_require__("./packages/@logrocket/utils/src/mapValues.ts"));
-					var _enhanceFunc = _interopRequireDefault(__webpack_require__("./packages/@logrocket/utils/src/enhanceFunc.ts"));
-					var _protectFunc = _interopRequireDefault(__webpack_require__("./packages/@logrocket/utils/src/protectFunc.ts"));
-					var _nps = __webpack_require__("./packages/@logrocket/utils/src/constants/nps.js");
-					var _statusCodes = __webpack_require__("./packages/@logrocket/utils/src/constants/statusCodes.ts");
-					var _parseRawHeaders = __webpack_require__("./packages/@logrocket/utils/src/parseRawHeaders.ts");
+				"./packages/@logrocket/network/src/registerXHR.js": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, {
+						"default": function() {
+							return registerXHR;
+						},
+						"setActive": function() {
+							return setActive;
+						}
+					});
+					var _logrocket_utils_src_mapValues__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./packages/@logrocket/utils/src/mapValues.ts");
+					var _logrocket_utils_src_enhanceFunc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./packages/@logrocket/utils/src/enhanceFunc.ts");
+					var _logrocket_utils_src_protectFunc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./packages/@logrocket/utils/src/protectFunc.ts");
+					var _logrocket_utils_src_constants_nps__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./packages/@logrocket/utils/src/constants/nps.js");
+					var _logrocket_utils_src_constants_statusCodes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("./packages/@logrocket/utils/src/constants/statusCodes.ts");
+					var _logrocket_utils_src_parseRawHeaders__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("./packages/@logrocket/utils/src/parseRawHeaders.ts");
 					let isActive = true;
 					function setActive(shouldBeActive) {
 						isActive = shouldBeActive;
@@ -106724,7 +108404,7 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 								for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) args[_key] = arguments[_key];
 								try {
 									const url = args[1];
-									if (window.URL && typeof window.URL === "function" && url.search(_nps.WOOTRIC_RESPONSES_REGEX) === 0) {
+									if (window.URL && typeof window.URL === "function" && url.search(_logrocket_utils_src_constants_nps__WEBPACK_IMPORTED_MODULE_3__.WOOTRIC_RESPONSES_REGEX) === 0) {
 										const logrocketSessionURL = new window.URL(logger.recordingURL);
 										logrocketSessionURL.searchParams.set("nps", "wootric");
 										const urlObj = new window.URL(url);
@@ -106736,38 +108416,15 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 								} catch (e) {}
 								return openOriginal.apply(this, args);
 							}
-							const sendOriginal = xhrObject.send;
-							function sendShim() {
-								for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) args[_key2] = arguments[_key2];
-								try {
-									const currentXHR = xhrMap.get(xhrObject);
-									if (window.URL && typeof window.URL === "function" && currentXHR && currentXHR.url && currentXHR.url.search(_nps.DELIGHTED_RESPONSES_REGEX) === 0 && args.length && args[0].indexOf(_nps.DELIGHTED_FEEDBACK_PREFIX) !== -1) {
-										const recordingURL = new window.URL(logger.recordingURL);
-										recordingURL.searchParams.set("nps", "delighted");
-										const logrocketSessionURL = encodeURIComponent(recordingURL.href);
-										args[0] = args[0].split("&").map((dataString) => {
-											if (dataString.startsWith(_nps.DELIGHTED_FEEDBACK_PREFIX)) {
-												const isEmpty = dataString === _nps.DELIGHTED_FEEDBACK_PREFIX;
-												return "".concat(dataString).concat(isEmpty ? "" : "\n\n", "<").concat(logrocketSessionURL, "|View LogRocket session>");
-											}
-											return dataString;
-										}).join("&");
-									}
-								} catch (e) {}
-								return sendOriginal.apply(this, args);
-							}
-							if (shouldAugmentNPS) {
-								xhrObject.open = openShim;
-								xhrObject.send = sendShim;
-							}
+							if (shouldAugmentNPS) xhrObject.open = openShim;
 							const captureResponse = () => {
 								var _window$navigator;
 								if (unsubscribedFromXhr) return;
 								const currentXHR = xhrMap.get(xhrObject);
 								if (!currentXHR || isIgnored("".concat(LOGROCKET_XHR_LABEL).concat(currentXHR.xhrId))) return;
 								if (!currentXHR.sent || !currentXHR.done) return;
-								let status = currentXHR.status || _statusCodes.XHR_CUSTOM_STATUS_CODES.error;
-								if (status === _statusCodes.XHR_CUSTOM_STATUS_CODES.error && ((_window$navigator = window.navigator) === null || _window$navigator === void 0 ? void 0 : _window$navigator.onLine) === false) status = _statusCodes.XHR_CUSTOM_STATUS_CODES.offline;
+								let status = currentXHR.status || _logrocket_utils_src_constants_statusCodes__WEBPACK_IMPORTED_MODULE_4__.XHR_CUSTOM_STATUS_CODES.error;
+								if (status === _logrocket_utils_src_constants_statusCodes__WEBPACK_IMPORTED_MODULE_4__.XHR_CUSTOM_STATUS_CODES.error && ((_window$navigator = window.navigator) === null || _window$navigator === void 0 ? void 0 : _window$navigator.onLine) === false) status = _logrocket_utils_src_constants_statusCodes__WEBPACK_IMPORTED_MODULE_4__.XHR_CUSTOM_STATUS_CODES.offline;
 								const response = {
 									url: currentXHR.url,
 									status,
@@ -106786,20 +108443,20 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 									};
 								} else addResponse("".concat(LOGROCKET_XHR_LABEL).concat(currentXHR.xhrId), response);
 							};
-							(0, _enhanceFunc.default)(xhrObject, "open", (0, _protectFunc.default)((method, url) => {
+							(0, _logrocket_utils_src_enhanceFunc__WEBPACK_IMPORTED_MODULE_1__["default"])(xhrObject, "open", (0, _logrocket_utils_src_protectFunc__WEBPACK_IMPORTED_MODULE_2__["default"])((method, url) => {
 								if (unsubscribedFromXhr) return;
 								const currentXHR = xhrMap.get(xhrObject);
 								currentXHR.method = method;
 								currentXHR.url = url;
 							}));
-							(0, _enhanceFunc.default)(xhrObject, "send", (0, _protectFunc.default)((data) => {
+							(0, _logrocket_utils_src_enhanceFunc__WEBPACK_IMPORTED_MODULE_1__["default"])(xhrObject, "send", (0, _logrocket_utils_src_protectFunc__WEBPACK_IMPORTED_MODULE_2__["default"])((data) => {
 								if (unsubscribedFromXhr) return;
 								const currentXHR = xhrMap.get(xhrObject);
 								if (!currentXHR) return;
 								const request = {
 									url: currentXHR.url,
 									method: currentXHR.method && currentXHR.method.toUpperCase(),
-									headers: (0, _mapValues.default)(currentXHR.requestHeaders || {}, (headerValues) => {
+									headers: (0, _logrocket_utils_src_mapValues__WEBPACK_IMPORTED_MODULE_0__["default"])(currentXHR.requestHeaders || {}, (headerValues) => {
 										return headerValues.join(", ");
 									}),
 									body: data,
@@ -106809,7 +108466,7 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 								currentXHR.sent = true;
 								captureResponse();
 							}));
-							(0, _enhanceFunc.default)(xhrObject, "setRequestHeader", (0, _protectFunc.default)((header, value) => {
+							(0, _logrocket_utils_src_enhanceFunc__WEBPACK_IMPORTED_MODULE_1__["default"])(xhrObject, "setRequestHeader", (0, _logrocket_utils_src_protectFunc__WEBPACK_IMPORTED_MODULE_2__["default"])((header, value) => {
 								if (unsubscribedFromXhr) return;
 								const currentXHR = xhrMap.get(xhrObject);
 								if (!currentXHR) return;
@@ -106818,14 +108475,14 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 								currentXHR.requestHeaders[header].push(value);
 							}));
 							const xhrListeners = {
-								readystatechange: (0, _protectFunc.default)(() => {
+								readystatechange: (0, _logrocket_utils_src_protectFunc__WEBPACK_IMPORTED_MODULE_2__["default"])(() => {
 									if (unsubscribedFromXhr) return;
 									if (xhrObject.readyState === 4) {
 										const currentXHR = xhrMap.get(xhrObject);
 										if (!currentXHR) return;
 										if (isIgnored("".concat(LOGROCKET_XHR_LABEL).concat(currentXHR.xhrId))) return;
 										const headerString = xhrObject.getAllResponseHeaders() || "";
-										currentXHR.responseHeaders = (0, _parseRawHeaders.parseRawHeaders)(headerString);
+										currentXHR.responseHeaders = (0, _logrocket_utils_src_parseRawHeaders__WEBPACK_IMPORTED_MODULE_5__.parseRawHeaders)(headerString);
 										let body;
 										try {
 											switch (xhrObject.responseType) {
@@ -106854,15 +108511,15 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 										currentXHR.done = true;
 									}
 								}),
-								abort: (0, _protectFunc.default)(() => {
+								abort: (0, _logrocket_utils_src_protectFunc__WEBPACK_IMPORTED_MODULE_2__["default"])(() => {
 									const currentXHR = xhrMap.get(xhrObject);
-									if (currentXHR) currentXHR.status = _statusCodes.XHR_CUSTOM_STATUS_CODES.aborted;
+									if (currentXHR) currentXHR.status = _logrocket_utils_src_constants_statusCodes__WEBPACK_IMPORTED_MODULE_4__.XHR_CUSTOM_STATUS_CODES.aborted;
 								}),
-								timeout: (0, _protectFunc.default)(() => {
+								timeout: (0, _logrocket_utils_src_protectFunc__WEBPACK_IMPORTED_MODULE_2__["default"])(() => {
 									const currentXHR = xhrMap.get(xhrObject);
-									if (currentXHR) currentXHR.status = _statusCodes.XHR_CUSTOM_STATUS_CODES.timeout;
+									if (currentXHR) currentXHR.status = _logrocket_utils_src_constants_statusCodes__WEBPACK_IMPORTED_MODULE_4__.XHR_CUSTOM_STATUS_CODES.timeout;
 								}),
-								loadend: (0, _protectFunc.default)(() => {
+								loadend: (0, _logrocket_utils_src_protectFunc__WEBPACK_IMPORTED_MODULE_2__["default"])(() => {
 									captureResponse();
 								})
 							};
@@ -106887,21 +108544,19 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						};
 					}
 				}),
-				"./packages/@logrocket/now/src/index.ts": (function(__unused_webpack_module, exports$17) {
-					"use strict";
-					Object.defineProperty(exports$17, "__esModule", { value: true });
-					exports$17["default"] = void 0;
+				"./packages/@logrocket/now/src/index.ts": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
 					const dateNow = Date.now.bind(Date);
 					const loadTime = dateNow();
-					exports$17["default"] = typeof performance !== "undefined" && performance.now ? performance.now.bind(performance) : () => dateNow() - loadTime;
+					__webpack_exports__["default"] = typeof performance !== "undefined" && performance.now ? performance.now.bind(performance) : () => dateNow() - loadTime;
 				}),
-				"./packages/@logrocket/redux/src/createEnhancer.js": (function(__unused_webpack_module, exports$18, __webpack_require__) {
-					"use strict";
-					var _interopRequireDefault = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-					Object.defineProperty(exports$18, "__esModule", { value: true });
-					exports$18["default"] = createEnhancer;
-					var _defineProperty2 = _interopRequireDefault(__webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/defineProperty.js"));
-					var _now = _interopRequireDefault(__webpack_require__("./packages/@logrocket/now/src/index.ts"));
+				"./packages/@logrocket/redux/src/createEnhancer.js": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "default": function() {
+						return createEnhancer;
+					} });
+					var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+					var _logrocket_now__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./packages/@logrocket/now/src/index.ts");
 					function ownKeys(e, r) {
 						var t = Object.keys(e);
 						if (Object.getOwnPropertySymbols) {
@@ -106916,7 +108571,7 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						for (var r = 1; r < arguments.length; r++) {
 							var t = null != arguments[r] ? arguments[r] : {};
 							r % 2 ? ownKeys(Object(t), !0).forEach(function(r) {
-								(0, _defineProperty2.default)(e, r, t[r]);
+								(0, _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(e, r, t[r]);
 							}) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r) {
 								Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
 							});
@@ -106943,7 +108598,7 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 								};
 							});
 							const dispatch = (action) => {
-								const start = (0, _now.default)();
+								const start = (0, _logrocket_now__WEBPACK_IMPORTED_MODULE_1__["default"])();
 								let err;
 								let res;
 								try {
@@ -106951,7 +108606,7 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 								} catch (_err) {
 									err = _err;
 								} finally {
-									const duration = (0, _now.default)() - start;
+									const duration = (0, _logrocket_now__WEBPACK_IMPORTED_MODULE_1__["default"])() - start;
 									logger.addEvent("lr.redux.ReduxAction", () => {
 										let sanitizedState = null;
 										let sanitizedAction = null;
@@ -106977,12 +108632,12 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						};
 					}
 				}),
-				"./packages/@logrocket/redux/src/createMiddleware.js": (function(__unused_webpack_module, exports$19, __webpack_require__) {
-					"use strict";
-					var _interopRequireDefault = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-					Object.defineProperty(exports$19, "__esModule", { value: true });
-					exports$19["default"] = createMiddleware;
-					var _now = _interopRequireDefault(__webpack_require__("./packages/@logrocket/now/src/index.ts"));
+				"./packages/@logrocket/redux/src/createMiddleware.js": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "default": function() {
+						return createMiddleware;
+					} });
+					var _logrocket_now__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./packages/@logrocket/now/src/index.ts");
 					let storeIdCounter = 0;
 					function createMiddleware(logger) {
 						let { stateSanitizer = (f) => f, actionSanitizer = (f) => f } = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {};
@@ -107001,7 +108656,7 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 								};
 							});
 							return (next) => (action) => {
-								const start = (0, _now.default)();
+								const start = (0, _logrocket_now__WEBPACK_IMPORTED_MODULE_0__["default"])();
 								let err;
 								let res;
 								try {
@@ -107009,7 +108664,7 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 								} catch (_err) {
 									err = _err;
 								} finally {
-									const duration = (0, _now.default)() - start;
+									const duration = (0, _logrocket_now__WEBPACK_IMPORTED_MODULE_0__["default"])() - start;
 									logger.addEvent("lr.redux.ReduxAction", () => {
 										let sanitizedState = null;
 										let sanitizedAction = null;
@@ -107034,29 +108689,21 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						};
 					}
 				}),
-				"./packages/@logrocket/redux/src/index.ts": (function(__unused_webpack_module, exports$20, __webpack_require__) {
-					"use strict";
-					var _interopRequireDefault = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-					Object.defineProperty(exports$20, "__esModule", { value: true });
-					Object.defineProperty(exports$20, "createEnhancer", {
-						enumerable: true,
-						get: function() {
-							return _createEnhancer.default;
+				"./packages/@logrocket/redux/src/index.ts": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, {
+						"createEnhancer": function() {
+							return _createEnhancer__WEBPACK_IMPORTED_MODULE_0__["default"];
+						},
+						"createMiddleware": function() {
+							return _createMiddleware__WEBPACK_IMPORTED_MODULE_1__["default"];
 						}
 					});
-					Object.defineProperty(exports$20, "createMiddleware", {
-						enumerable: true,
-						get: function() {
-							return _createMiddleware.default;
-						}
-					});
-					var _createEnhancer = _interopRequireDefault(__webpack_require__("./packages/@logrocket/redux/src/createEnhancer.js"));
-					var _createMiddleware = _interopRequireDefault(__webpack_require__("./packages/@logrocket/redux/src/createMiddleware.js"));
+					var _createEnhancer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./packages/@logrocket/redux/src/createEnhancer.js");
+					var _createMiddleware__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./packages/@logrocket/redux/src/createMiddleware.js");
 				}),
-				"./packages/@logrocket/utils/src/TraceKit.js": (function(__unused_webpack_module, exports$21, __webpack_require__) {
-					"use strict";
-					Object.defineProperty(exports$21, "__esModule", { value: true });
-					exports$21["default"] = void 0;
+				"./packages/@logrocket/utils/src/TraceKit.js": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
 					var TraceKit = {
 						collectWindowErrors: true,
 						debug: false
@@ -107443,22 +109090,32 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						computeStackTrace.computeStackTraceFromStackProp = computeStackTraceFromStackProp;
 						return computeStackTrace;
 					}();
-					exports$21["default"] = TraceKit;
+					__webpack_exports__["default"] = TraceKit;
 				}),
-				"./packages/@logrocket/utils/src/constants/nps.js": (function(__unused_webpack_module, exports$22) {
-					"use strict";
-					Object.defineProperty(exports$22, "__esModule", { value: true });
-					exports$22.WOOTRIC_RESPONSES_REGEX = exports$22.DELIGHTED_RESPONSES_REGEX = exports$22.DELIGHTED_FEEDBACK_PREFIX = void 0;
-					exports$22.WOOTRIC_RESPONSES_REGEX = /^https:\/\/production.wootric.com\/responses/;
-					exports$22.DELIGHTED_RESPONSES_REGEX = /^https:\/\/web.delighted.com\/e\/[a-zA-Z-]*\/c/;
-					exports$22.DELIGHTED_FEEDBACK_PREFIX = "comment=";
+				"./packages/@logrocket/utils/src/constants/nps.js": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "WOOTRIC_RESPONSES_REGEX": function() {
+						return WOOTRIC_RESPONSES_REGEX;
+					} });
+					const WOOTRIC_RESPONSES_REGEX = /^https:\/\/production.wootric.com\/responses/;
 				}),
-				"./packages/@logrocket/utils/src/constants/statusCodes.ts": (function(__unused_webpack_module, exports$23) {
-					"use strict";
-					Object.defineProperty(exports$23, "__esModule", { value: true });
-					exports$23.XHR_CUSTOM_STATUS_CODES = exports$23.XHR_CUSTOM_FAILURE_STATUSES = exports$23.STATUS_CODES = void 0;
-					exports$23.getStatusText = getStatusText;
-					const STATUS_CODES = exports$23.STATUS_CODES = {
+				"./packages/@logrocket/utils/src/constants/statusCodes.ts": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, {
+						"STATUS_CODES": function() {
+							return STATUS_CODES;
+						},
+						"XHR_CUSTOM_FAILURE_STATUSES": function() {
+							return XHR_CUSTOM_FAILURE_STATUSES;
+						},
+						"XHR_CUSTOM_STATUS_CODES": function() {
+							return XHR_CUSTOM_STATUS_CODES;
+						},
+						"getStatusText": function() {
+							return getStatusText;
+						}
+					});
+					const STATUS_CODES = {
 						0: "",
 						100: "Continue",
 						101: "Switching Protocol",
@@ -107524,13 +109181,13 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						510: "Not Extended",
 						511: "Network Authentication Required"
 					};
-					const XHR_CUSTOM_STATUS_CODES = exports$23.XHR_CUSTOM_STATUS_CODES = {
+					const XHR_CUSTOM_STATUS_CODES = {
 						error: 0,
 						timeout: 444,
 						aborted: 499,
 						offline: 1001
 					};
-					exports$23.XHR_CUSTOM_FAILURE_STATUSES = {
+					const XHR_CUSTOM_FAILURE_STATUSES = {
 						[XHR_CUSTOM_STATUS_CODES.error]: "Error",
 						[XHR_CUSTOM_STATUS_CODES.timeout]: "Timeout",
 						[XHR_CUSTOM_STATUS_CODES.aborted]: "Aborted",
@@ -107540,11 +109197,16 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						return STATUS_CODES[String(statusCode)];
 					}
 				}),
-				"./packages/@logrocket/utils/src/createUnsubListener.ts": (function(__unused_webpack_module, exports$24) {
-					"use strict";
-					Object.defineProperty(exports$24, "__esModule", { value: true });
-					exports$24.Handler = void 0;
-					exports$24.createUnsubListener = createUnsubListener;
+				"./packages/@logrocket/utils/src/createUnsubListener.ts": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, {
+						"Handler": function() {
+							return Handler;
+						},
+						"createUnsubListener": function() {
+							return createUnsubListener;
+						}
+					});
 					class Handler {
 						constructor(value) {
 							this._value = value;
@@ -107556,29 +109218,35 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 							this._value = void 0;
 						}
 					}
-					exports$24.Handler = Handler;
 					function createUnsubListener(handler) {
 						return () => {
 							handler.clear();
 						};
 					}
 				}),
-				"./packages/@logrocket/utils/src/enhanceFunc.ts": (function(__unused_webpack_module, exports$25, __webpack_require__) {
-					"use strict";
-					Object.defineProperty(exports$25, "__esModule", { value: true });
-					exports$25["default"] = enhanceFunc;
-					var _createUnsubListener = __webpack_require__("./packages/@logrocket/utils/src/createUnsubListener.ts");
+				"./packages/@logrocket/utils/src/enhanceFunc.ts": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "default": function() {
+						return enhanceFunc;
+					} });
+					var _createUnsubListener__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./packages/@logrocket/utils/src/createUnsubListener.ts");
 					const NO_OP_UNREGISTER = () => {};
+					const isPromiseLike = (value) => value !== null && (typeof value === "object" || typeof value === "function") && "then" in value && typeof value.then === "function";
 					function enhanceFunc(obj, method, handler) {
 						if (typeof obj[method] !== "function") return NO_OP_UNREGISTER;
 						try {
 							const original = obj[method];
-							const h = new _createUnsubListener.Handler(handler);
+							const h = new _createUnsubListener__WEBPACK_IMPORTED_MODULE_0__.Handler(handler);
 							function shim() {
-								var _h$get;
+								var _h$get2;
 								for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) args[_key] = arguments[_key];
-								const res = original.apply(this, args);
-								(_h$get = h.get()) === null || _h$get === void 0 || _h$get.apply(this, args);
+								const res = Reflect.apply(original, this, args);
+								if (isPromiseLike(res)) return res.then((value) => {
+									var _h$get;
+									(_h$get = h.get()) === null || _h$get === void 0 || _h$get.apply(this, args);
+									return value;
+								});
+								(_h$get2 = h.get()) === null || _h$get2 === void 0 || _h$get2.apply(this, args);
 								return res;
 							}
 							obj[method] = shim;
@@ -107591,16 +109259,15 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						}
 					}
 				}),
-				"./packages/@logrocket/utils/src/logError.js": (function(__unused_webpack_module, exports$26) {
-					"use strict";
-					Object.defineProperty(exports$26, "__esModule", { value: true });
-					exports$26["default"] = void 0;
-					exports$26["default"] = typeof console !== "undefined" && console.error && console.error.bind ? console.error.bind(console) : () => {};
+				"./packages/@logrocket/utils/src/logError.js": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_exports__["default"] = typeof console !== "undefined" && console.error && console.error.bind ? console.error.bind(console) : () => {};
 				}),
-				"./packages/@logrocket/utils/src/mapValues.ts": (function(__unused_webpack_module, exports$27) {
-					"use strict";
-					Object.defineProperty(exports$27, "__esModule", { value: true });
-					exports$27["default"] = mapValues;
+				"./packages/@logrocket/utils/src/mapValues.ts": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "default": function() {
+						return mapValues;
+					} });
 					function mapValues(obj, f) {
 						if (obj == null) return {};
 						const res = {};
@@ -107610,12 +109277,12 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						return res;
 					}
 				}),
-				"./packages/@logrocket/utils/src/parseRawHeaders.ts": (function(__unused_webpack_module, exports$28, __webpack_require__) {
-					"use strict";
-					var _interopRequireDefault = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-					Object.defineProperty(exports$28, "__esModule", { value: true });
-					exports$28.parseRawHeaders = void 0;
-					var _defineProperty2 = _interopRequireDefault(__webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/defineProperty.js"));
+				"./packages/@logrocket/utils/src/parseRawHeaders.ts": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "parseRawHeaders": function() {
+						return parseRawHeaders;
+					} });
+					var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/defineProperty.js");
 					function ownKeys(e, r) {
 						var t = Object.keys(e);
 						if (Object.getOwnPropertySymbols) {
@@ -107630,7 +109297,7 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						for (var r = 1; r < arguments.length; r++) {
 							var t = null != arguments[r] ? arguments[r] : {};
 							r % 2 ? ownKeys(Object(t), !0).forEach(function(r) {
-								(0, _defineProperty2.default)(e, r, t[r]);
+								(0, _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(e, r, t[r]);
 							}) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r) {
 								Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
 							});
@@ -107650,15 +109317,14 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 							return _objectSpread(_objectSpread({}, headers), {}, { [name]: typeof headers[key] === "string" ? "".concat(headers[key], ", ").concat(value) : value });
 						}, {});
 					};
-					exports$28.parseRawHeaders = parseRawHeaders;
 				}),
-				"./packages/@logrocket/utils/src/protectFunc.ts": (function(__unused_webpack_module, exports$29, __webpack_require__) {
-					"use strict";
-					var _interopRequireDefault = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-					Object.defineProperty(exports$29, "__esModule", { value: true });
-					exports$29["default"] = protectFunc;
-					var _sendTelemetryData = _interopRequireDefault(__webpack_require__("./packages/@logrocket/utils/src/sendTelemetryData.js"));
-					var _logError = _interopRequireDefault(__webpack_require__("./packages/@logrocket/utils/src/logError.js"));
+				"./packages/@logrocket/utils/src/protectFunc.ts": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "default": function() {
+						return protectFunc;
+					} });
+					var _sendTelemetryData__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./packages/@logrocket/utils/src/sendTelemetryData.js");
+					var _logError__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./packages/@logrocket/utils/src/logError.js");
 					function protectFunc(f) {
 						let onFail = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : () => {};
 						return function() {
@@ -107668,17 +109334,18 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 							} catch (err) {
 								if (typeof window !== "undefined" && window._lrdebug) throw err;
 								const payload = onFail(err);
-								(0, _logError.default)("LogRocket", err);
-								(0, _sendTelemetryData.default)(err, payload);
+								(0, _logError__WEBPACK_IMPORTED_MODULE_1__["default"])("LogRocket", err);
+								(0, _sendTelemetryData__WEBPACK_IMPORTED_MODULE_0__["default"])(err, payload);
 							}
 							return result;
 						};
 					}
 				}),
-				"./packages/@logrocket/utils/src/scrubException.ts": (function(__unused_webpack_module, exports$30) {
-					"use strict";
-					Object.defineProperty(exports$30, "__esModule", { value: true });
-					exports$30.scrubException = scrubException;
+				"./packages/@logrocket/utils/src/scrubException.ts": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "scrubException": function() {
+						return scrubException;
+					} });
 					function isScalar(value) {
 						return /boolean|number|string/.test(typeof value);
 					}
@@ -107702,15 +109369,19 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						}
 					}
 				}),
-				"./packages/@logrocket/utils/src/sendTelemetryData.js": (function(__unused_webpack_module, exports$31, __webpack_require__) {
-					"use strict";
-					var _interopRequireDefault = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-					Object.defineProperty(exports$31, "__esModule", { value: true });
-					exports$31["default"] = sendErrorTelemetry;
-					exports$31.sendTelemetry = sendTelemetry;
-					var _defineProperty2 = _interopRequireDefault(__webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/defineProperty.js"));
-					var _logError = _interopRequireDefault(__webpack_require__("./packages/@logrocket/utils/src/logError.js"));
-					var _TraceKit = _interopRequireDefault(__webpack_require__("./packages/@logrocket/utils/src/TraceKit.js"));
+				"./packages/@logrocket/utils/src/sendTelemetryData.js": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, {
+						"default": function() {
+							return sendErrorTelemetry;
+						},
+						"sendTelemetry": function() {
+							return sendTelemetry;
+						}
+					});
+					var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+					var _logError__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./packages/@logrocket/utils/src/logError.js");
+					var _TraceKit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./packages/@logrocket/utils/src/TraceKit.js");
 					function ownKeys(e, r) {
 						var t = Object.keys(e);
 						if (Object.getOwnPropertySymbols) {
@@ -107725,14 +109396,14 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						for (var r = 1; r < arguments.length; r++) {
 							var t = null != arguments[r] ? arguments[r] : {};
 							r % 2 ? ownKeys(Object(t), !0).forEach(function(r) {
-								(0, _defineProperty2.default)(e, r, t[r]);
+								(0, _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(e, r, t[r]);
 							}) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r) {
 								Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
 							});
 						}
 						return e;
 					}
-					const SCRIPT_VERSION = "196f4bb78c336889fd143e4b02dd55e3531141ef";
+					const SCRIPT_VERSION = "47c5a4861da1833d92b0f1a7036535e0bdfbed68";
 					function _sendToSentry(data) {
 						try {
 							var _window$__SDKCONFIG__, _window$__SDKCONFIG__2;
@@ -107757,15 +109428,15 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 								method: "POST",
 								body
 							}).catch((rejectReason) => {
-								(0, _logError.default)("Failed to send via fetch", rejectReason);
+								(0, _logError__WEBPACK_IMPORTED_MODULE_1__["default"])("Failed to send via fetch", rejectReason);
 							});
 						} catch (err) {
-							(0, _logError.default)("Failed to send", err);
+							(0, _logError__WEBPACK_IMPORTED_MODULE_1__["default"])("Failed to send", err);
 						}
 					}
 					function sendTelemetry(message, more) {
 						if (typeof window !== "undefined" && window._lrdebug) {
-							(0, _logError.default)(message);
+							(0, _logError__WEBPACK_IMPORTED_MODULE_1__["default"])(message);
 							return;
 						}
 						if (more && more.extra && more.extra.appID && typeof more.extra.appID.indexOf === "function" && more.extra.appID.indexOf("au2drp/") === 0 && Math.random() >= .25) return;
@@ -107784,7 +109455,7 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 							}
 							let stack;
 							try {
-								stack = _TraceKit.default.computeStackTrace(err).stack.map((frame) => ({
+								stack = _TraceKit__WEBPACK_IMPORTED_MODULE_2__["default"].computeStackTrace(err).stack.map((frame) => ({
 									filename: frame.url,
 									lineno: frame.line,
 									colno: frame.column,
@@ -107801,23 +109472,28 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 								}] }
 							});
 						} catch (err) {
-							(0, _logError.default)("Failed to send", err);
+							(0, _logError__WEBPACK_IMPORTED_MODULE_1__["default"])("Failed to send", err);
 						}
 					}
 				}),
-				"./packages/logrocket/src/LogRocket.js": (function(__unused_webpack_module, exports$32, __webpack_require__) {
-					"use strict";
-					var _interopRequireDefault = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-					Object.defineProperty(exports$32, "__esModule", { value: true });
-					exports$32["default"] = exports$32.MAX_QUEUE_SIZE = void 0;
-					var _defineProperty2 = _interopRequireDefault(__webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/defineProperty.js"));
-					var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/objectWithoutProperties.js"));
-					var _network = _interopRequireDefault(__webpack_require__("./packages/@logrocket/network/src/index.js"));
-					var _exceptions = __webpack_require__("./packages/@logrocket/exceptions/src/index.ts");
-					var _console = _interopRequireDefault(__webpack_require__("./packages/@logrocket/console/src/index.ts"));
-					var _customElementStates = _interopRequireDefault(__webpack_require__("./packages/@logrocket/custom-element-states/src/index.ts"));
-					var _redux = __webpack_require__("./packages/@logrocket/redux/src/index.ts");
-					var _sendTelemetryData = _interopRequireDefault(__webpack_require__("./packages/@logrocket/utils/src/sendTelemetryData.js"));
+				"./packages/logrocket/src/LogRocket.js": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, {
+						"MAX_QUEUE_SIZE": function() {
+							return MAX_QUEUE_SIZE;
+						},
+						"default": function() {
+							return LogRocket;
+						}
+					});
+					var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+					var _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+					var _logrocket_network__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./packages/@logrocket/network/src/index.js");
+					var _logrocket_exceptions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./packages/@logrocket/exceptions/src/index.ts");
+					var _logrocket_console__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("./packages/@logrocket/console/src/index.ts");
+					var _logrocket_custom_element_states__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("./packages/@logrocket/custom-element-states/src/index.ts");
+					var _logrocket_redux__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("./packages/@logrocket/redux/src/index.ts");
+					var _logrocket_utils_src_sendTelemetryData__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("./packages/@logrocket/utils/src/sendTelemetryData.js");
 					const _excluded = ["ingestServer"];
 					function ownKeys(e, r) {
 						var t = Object.keys(e);
@@ -107833,16 +109509,16 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						for (var r = 1; r < arguments.length; r++) {
 							var t = null != arguments[r] ? arguments[r] : {};
 							r % 2 ? ownKeys(Object(t), !0).forEach(function(r) {
-								(0, _defineProperty2.default)(e, r, t[r]);
+								(0, _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(e, r, t[r]);
 							}) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r) {
 								Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
 							});
 						}
 						return e;
 					}
-					const MAX_QUEUE_SIZE = exports$32.MAX_QUEUE_SIZE = 1e3;
+					const MAX_QUEUE_SIZE = 1e3;
 					const considerIngestServerOption = function() {
-						let _ref = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {}, { ingestServer } = _ref, options = (0, _objectWithoutProperties2.default)(_ref, _excluded);
+						let _ref = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {}, { ingestServer } = _ref, options = (0, _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, _excluded);
 						if (ingestServer) return _objectSpread({
 							serverURL: "".concat(ingestServer, "/i"),
 							statsURL: "".concat(ingestServer, "/s")
@@ -107864,7 +109540,7 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 									for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) args[_key] = arguments[_key];
 									_this.addEvent("lr.core.LogEvent", function() {
 										let consoleOptions = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {};
-										if (method === "error" && consoleOptions.shouldAggregateConsoleErrors) _exceptions.Capture.captureMessage(_this, args[0], args, {}, true);
+										if (method === "error" && consoleOptions.shouldAggregateConsoleErrors) _logrocket_exceptions__WEBPACK_IMPORTED_MODULE_3__.Capture.captureMessage(_this, args[0], args, {}, true);
 										return {
 											logLevel: method.toUpperCase(),
 											args
@@ -107877,8 +109553,9 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 							window._lr_surl_cb = this.getSessionURL.bind(this);
 						}
 						addEvent(type, getMessage) {
+							var _opts$timeOverride;
 							let opts = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {};
-							const time = Date.now();
+							const time = (_opts$timeOverride = opts.timeOverride) !== null && _opts$timeOverride !== void 0 ? _opts$timeOverride : Date.now();
 							this._run((logger) => {
 								logger.addEvent(type, getMessage, _objectSpread(_objectSpread({}, opts), {}, { timeOverride: time }));
 							});
@@ -107904,14 +109581,14 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 							if (!this._isInitialized) {
 								var _opts$network;
 								const { shouldAugmentNPS = true, shouldParseXHRBlob = false, shouldDetectExceptions = true } = opts;
-								if (shouldDetectExceptions) this._installed.push((0, _exceptions.registerExceptions)(this));
-								this._installed.push((0, _network.default)(this, {
+								if (shouldDetectExceptions) this._installed.push((0, _logrocket_exceptions__WEBPACK_IMPORTED_MODULE_3__.registerExceptions)(this));
+								this._installed.push((0, _logrocket_network__WEBPACK_IMPORTED_MODULE_2__["default"])(this, {
 									shouldAugmentNPS: !!shouldAugmentNPS,
 									shouldParseXHRBlob: !!shouldParseXHRBlob,
 									isDisabled: (opts === null || opts === void 0 || (_opts$network = opts.network) === null || _opts$network === void 0 ? void 0 : _opts$network.isEnabled) === false
 								}));
-								this._installed.push((0, _console.default)(this));
-								const { customStatesManager, unsub } = (0, _customElementStates.default)();
+								this._installed.push((0, _logrocket_console__WEBPACK_IMPORTED_MODULE_4__["default"])(this));
+								const { customStatesManager, unsub } = (0, _logrocket_custom_element_states__WEBPACK_IMPORTED_MODULE_5__["default"])();
 								this._installed.push(unsub);
 								this._isInitialized = true;
 								this._run((logger) => {
@@ -107930,7 +109607,7 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 								return;
 							} catch (e) {
 								console.warn("LogRocket: init failed to escape Angular Zone", e);
-								(0, _sendTelemetryData.default)(e);
+								(0, _logrocket_utils_src_sendTelemetryData__WEBPACK_IMPORTED_MODULE_7__["default"])(e);
 							}
 							this._initInternal(appID, opts);
 						}
@@ -107978,11 +109655,11 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						}
 						captureMessage(message) {
 							let options = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {};
-							_exceptions.Capture.captureMessage(this, message, [message], options);
+							_logrocket_exceptions__WEBPACK_IMPORTED_MODULE_3__.Capture.captureMessage(this, message, [message], options);
 						}
 						captureException(exception) {
 							let options = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {};
-							_exceptions.Capture.captureException(this, exception, options);
+							_logrocket_exceptions__WEBPACK_IMPORTED_MODULE_3__.Capture.captureException(this, exception, options);
 						}
 						get version() {
 							return this._logger && this._logger.version;
@@ -108004,24 +109681,23 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						}
 						reduxEnhancer() {
 							let options = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {};
-							return (0, _redux.createEnhancer)(this, options);
+							return (0, _logrocket_redux__WEBPACK_IMPORTED_MODULE_6__.createEnhancer)(this, options);
 						}
 						reduxMiddleware() {
 							let options = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {};
-							return (0, _redux.createMiddleware)(this, options);
+							return (0, _logrocket_redux__WEBPACK_IMPORTED_MODULE_6__.createMiddleware)(this, options);
 						}
 						get isDisabled() {
 							return !!(this._isDisabled || this._logger && this._logger._isDisabled);
 						}
 					}
-					exports$32["default"] = LogRocket;
 				}),
-				"./packages/logrocket/src/makeLogRocket.js": (function(__unused_webpack_module, exports$33, __webpack_require__) {
-					"use strict";
-					var _interopRequireDefault = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-					Object.defineProperty(exports$33, "__esModule", { value: true });
-					exports$33["default"] = makeLogRocket;
-					var _LogRocket = _interopRequireDefault(__webpack_require__("./packages/logrocket/src/LogRocket.js"));
+				"./packages/logrocket/src/makeLogRocket.js": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "default": function() {
+						return makeLogRocket;
+					} });
+					var _LogRocket__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./packages/logrocket/src/LogRocket.js");
 					const REACT_NATIVE_NOTICE = "LogRocket on React Native requires the LogRocket React Native specific SDK. See setup guide here https://docs.logrocket.com/reference/react-native.";
 					const makeNoopPolyfill = () => ({
 						init() {},
@@ -108066,7 +109742,7 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 					function makeLogRocket() {
 						let getLogger = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : () => {};
 						let getNoopPolyfill = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : makeNoopPolyfill;
-						let getInstance = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : () => new _LogRocket.default();
+						let getInstance = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : () => new _LogRocket__WEBPACK_IMPORTED_MODULE_0__["default"]();
 						if (typeof navigator !== "undefined" && navigator.product === "ReactNative") throw new Error(REACT_NATIVE_NOTICE);
 						if (typeof window !== "undefined") {
 							if (window._disableLogRocket || isUnsupportedLegacyBrowser()) return getNoopPolyfill();
@@ -108078,15 +109754,21 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						return makeNoopPolyfill();
 					}
 				}),
-				"./packages/logrocket/src/setup.js": (function(__unused_webpack_module, exports$34, __webpack_require__) {
-					"use strict";
-					var _interopRequireDefault = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-					Object.defineProperty(exports$34, "__esModule", { value: true });
-					exports$34["default"] = setup;
-					exports$34.getDomainsAndEnv = getDomainsAndEnv;
-					exports$34.setupBaseSDKCONFIG = setupBaseSDKCONFIG;
-					var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/objectWithoutProperties.js"));
-					var _makeLogRocket = _interopRequireDefault(__webpack_require__("./packages/logrocket/src/makeLogRocket.js"));
+				"./packages/logrocket/src/setup.js": (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, {
+						"default": function() {
+							return setup;
+						},
+						"getDomainsAndEnv": function() {
+							return getDomainsAndEnv;
+						},
+						"setupBaseSDKCONFIG": function() {
+							return setupBaseSDKCONFIG;
+						}
+					});
+					var _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+					var _makeLogRocket__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./packages/logrocket/src/makeLogRocket.js");
 					const _excluded = ["enterpriseServer", "sdkVersion"];
 					const CDN_SERVER_MAP = {
 						"cdn.logrocket.com": "https://r.logrocket.io",
@@ -108147,11 +109829,12 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						window.__SDKCONFIG__.statsURL = "".concat(ingestServer, "/s");
 					}
 					function setup() {
-						let _ref = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {}, { enterpriseServer, sdkVersion = "12.1.1" } = _ref, opts = (0, _objectWithoutProperties2.default)(_ref, _excluded);
+						let _ref = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {}, { enterpriseServer, sdkVersion = "12.4.0" } = _ref, opts = (0, _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, _excluded);
+						if (typeof window !== "undefined" && typeof window.LogRocket !== "undefined") return window.LogRocket;
 						const { scriptEnv, scriptOrigin, scriptIngest } = getDomainsAndEnv(sdkVersion);
 						const sdkServer = opts.sdkServer || enterpriseServer;
 						const ingestServer = opts.ingestServer || enterpriseServer || scriptIngest;
-						const instance = (0, _makeLogRocket.default)(() => {
+						const instance = (0, _makeLogRocket__WEBPACK_IMPORTED_MODULE_1__["default"])(() => {
 							const script = document.createElement("script");
 							if (ingestServer) {
 								setupBaseSDKCONFIG(ingestServer);
@@ -108177,41 +109860,46 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 								instance.uninstall();
 							};
 						});
+						if (typeof window !== "undefined") window.LogRocket = instance;
 						return instance;
 					}
 				}),
-				"./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/defineProperty.js": (function(module$1, __unused_webpack_exports, __webpack_require__) {
-					var toPropertyKey = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/toPropertyKey.js");
+				"./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/defineProperty.js": (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "default": function() {
+						return _defineProperty;
+					} });
+					var _toPropertyKey_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/toPropertyKey.js");
 					function _defineProperty(e, r, t) {
-						return (r = toPropertyKey(r)) in e ? Object.defineProperty(e, r, {
+						return (r = (0, _toPropertyKey_js__WEBPACK_IMPORTED_MODULE_0__["default"])(r)) in e ? Object.defineProperty(e, r, {
 							value: t,
 							enumerable: !0,
 							configurable: !0,
 							writable: !0
 						}) : e[r] = t, e;
 					}
-					module$1.exports = _defineProperty, module$1.exports.__esModule = true, module$1.exports["default"] = module$1.exports;
 				}),
-				"./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/interopRequireDefault.js": (function(module$2) {
-					function _interopRequireDefault(e) {
-						return e && e.__esModule ? e : { "default": e };
-					}
-					module$2.exports = _interopRequireDefault, module$2.exports.__esModule = true, module$2.exports["default"] = module$2.exports;
-				}),
-				"./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/objectWithoutProperties.js": (function(module$3, __unused_webpack_exports, __webpack_require__) {
-					var objectWithoutPropertiesLoose = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js");
+				"./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js": (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "default": function() {
+						return _objectWithoutProperties;
+					} });
+					var _objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
 					function _objectWithoutProperties(e, t) {
 						if (null == e) return {};
-						var o, r, i = objectWithoutPropertiesLoose(e, t);
+						var o, r, i = (0, _objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__["default"])(e, t);
 						if (Object.getOwnPropertySymbols) {
 							var n = Object.getOwnPropertySymbols(e);
 							for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]);
 						}
 						return i;
 					}
-					module$3.exports = _objectWithoutProperties, module$3.exports.__esModule = true, module$3.exports["default"] = module$3.exports;
 				}),
-				"./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js": (function(module$4) {
+				"./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js": (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "default": function() {
+						return _objectWithoutPropertiesLoose;
+					} });
 					function _objectWithoutPropertiesLoose(r, e) {
 						if (null == r) return {};
 						var t = {};
@@ -108221,51 +109909,67 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 						}
 						return t;
 					}
-					module$4.exports = _objectWithoutPropertiesLoose, module$4.exports.__esModule = true, module$4.exports["default"] = module$4.exports;
 				}),
-				"./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/toPrimitive.js": (function(module$5, __unused_webpack_exports, __webpack_require__) {
-					var _typeof = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/typeof.js")["default"];
+				"./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/toPrimitive.js": (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "default": function() {
+						return toPrimitive;
+					} });
+					var _typeof_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/typeof.js");
 					function toPrimitive(t, r) {
-						if ("object" != _typeof(t) || !t) return t;
+						if ("object" != (0, _typeof_js__WEBPACK_IMPORTED_MODULE_0__["default"])(t) || !t) return t;
 						var e = t[Symbol.toPrimitive];
 						if (void 0 !== e) {
 							var i = e.call(t, r || "default");
-							if ("object" != _typeof(i)) return i;
+							if ("object" != (0, _typeof_js__WEBPACK_IMPORTED_MODULE_0__["default"])(i)) return i;
 							throw new TypeError("@@toPrimitive must return a primitive value.");
 						}
 						return ("string" === r ? String : Number)(t);
 					}
-					module$5.exports = toPrimitive, module$5.exports.__esModule = true, module$5.exports["default"] = module$5.exports;
 				}),
-				"./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/toPropertyKey.js": (function(module$6, __unused_webpack_exports, __webpack_require__) {
-					var _typeof = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/typeof.js")["default"];
-					var toPrimitive = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/toPrimitive.js");
+				"./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/toPropertyKey.js": (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "default": function() {
+						return toPropertyKey;
+					} });
+					var _typeof_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/typeof.js");
+					var _toPrimitive_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/toPrimitive.js");
 					function toPropertyKey(t) {
-						var i = toPrimitive(t, "string");
-						return "symbol" == _typeof(i) ? i : i + "";
+						var i = (0, _toPrimitive_js__WEBPACK_IMPORTED_MODULE_1__["default"])(t, "string");
+						return "symbol" == (0, _typeof_js__WEBPACK_IMPORTED_MODULE_0__["default"])(i) ? i : i + "";
 					}
-					module$6.exports = toPropertyKey, module$6.exports.__esModule = true, module$6.exports["default"] = module$6.exports;
 				}),
-				"./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/typeof.js": (function(module$7) {
+				"./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/typeof.js": (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+					__webpack_require__.r(__webpack_exports__);
+					__webpack_require__.d(__webpack_exports__, { "default": function() {
+						return _typeof;
+					} });
 					function _typeof(o) {
 						"@babel/helpers - typeof";
-						return module$7.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(o) {
+						return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(o) {
 							return typeof o;
 						} : function(o) {
 							return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
-						}, module$7.exports.__esModule = true, module$7.exports["default"] = module$7.exports, _typeof(o);
+						}, _typeof(o);
 					}
-					module$7.exports = _typeof, module$7.exports.__esModule = true, module$7.exports["default"] = module$7.exports;
 				})
 			};
 			var __webpack_module_cache__ = {};
 			function __webpack_require__(moduleId) {
 				var cachedModule = __webpack_module_cache__[moduleId];
 				if (cachedModule !== void 0) return cachedModule.exports;
-				var module$8 = __webpack_module_cache__[moduleId] = { exports: {} };
-				__webpack_modules__[moduleId](module$8, module$8.exports, __webpack_require__);
-				return module$8.exports;
+				var module$1 = __webpack_module_cache__[moduleId] = { exports: {} };
+				__webpack_modules__[moduleId](module$1, module$1.exports, __webpack_require__);
+				return module$1.exports;
 			}
+			(function() {
+				__webpack_require__.d = function(exports$1, definition) {
+					for (var key in definition) if (__webpack_require__.o(definition, key) && !__webpack_require__.o(exports$1, key)) Object.defineProperty(exports$1, key, {
+						enumerable: true,
+						get: definition[key]
+					});
+				};
+			})();
 			(function() {
 				__webpack_require__.g = (function() {
 					if (typeof globalThis === "object") return globalThis;
@@ -108276,14 +109980,23 @@ var import_build_umd = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((
 					}
 				})();
 			})();
+			(function() {
+				__webpack_require__.o = function(obj, prop) {
+					return Object.prototype.hasOwnProperty.call(obj, prop);
+				};
+			})();
+			(function() {
+				__webpack_require__.r = function(exports$2) {
+					if (typeof Symbol !== "undefined" && Symbol.toStringTag) Object.defineProperty(exports$2, Symbol.toStringTag, { value: "Module" });
+					Object.defineProperty(exports$2, "__esModule", { value: true });
+				};
+			})();
 			var __webpack_exports__ = {};
 			(function() {
-				"use strict";
-				var exports$35 = __webpack_exports__;
-				var _interopRequireDefault = __webpack_require__("./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-				Object.defineProperty(exports$35, "__esModule", { value: true });
-				exports$35["default"] = void 0;
-				exports$35["default"] = (0, _interopRequireDefault(__webpack_require__("./packages/logrocket/src/setup.js")).default)();
+				__webpack_require__.r(__webpack_exports__);
+				/** @type {import('./types').LR.LogRocket} */
+				const instance = (0, __webpack_require__("./packages/logrocket/src/setup.js")["default"])();
+				__webpack_exports__["default"] = instance;
 			})();
 			__webpack_exports__ = __webpack_exports__["default"];
 			return __webpack_exports__;
@@ -108535,7 +110248,7 @@ function SurfyHelpStandaloneViewMenuBreadcrumb(props) {
 var version = {
 	"major": 3,
 	"minor": 5,
-	"build": 54
+	"build": 58
 };
 //#endregion
 //#region src/back/Tracking/version.ts
@@ -108614,6 +110327,7 @@ var jsonTranslationsFiles = {
 		"AddressDialog.selectedAddress": "Adresse sélectionnée",
 		"AddressDialog.validate": "Valider",
 		"AllTenantsDataQualityTable.enableAllTenantsLabel": "Inclure toutes les plateformes",
+		"AssignOboBuildingAsyncAction.assignHelp": "Affecter %{buildingName} à cette personne lui permettant de réserver un poste de travail",
 		"AssignPersonCheckListBuildingAffectations.title": "Cette personne est déjà directement affectée sur d'autres bâtiments, voulez-vous supprimer les affectations suivantes pour %{personFullname}",
 		"AssignPersonCheckListDialog.actions.close.help": "Fermer et ne supprimer aucune autre affectation",
 		"AssignPersonCheckListDialog.actions.close.label": "Fermer",
@@ -108625,6 +110339,8 @@ var jsonTranslationsFiles = {
 		"AssignPersonCheckListWorkplaceTransit.title": "Le poste de travail %{workplaceName} est un poste de passage",
 		"AssignPersonToRoomCheckListDialogTitle.title": "Vous avez affecté %{personName} sur l'espace %{roomName}",
 		"AssignPersonToWorkplaceCheckListDialogTitle.title": "Vous avez affecté %{personName} sur le poste de travail %{workplaceName}",
+		"AssignWorkplaceToCurrentUserAsyncAction.help": "Occuper le poste de travail",
+		"AssignWorkplaceToCurrentUserAsyncAction.label": "Oui",
 		"Auth0AuthenticationButton.connections.auth0.help": "Se connecter avec votre compte Surfy",
 		"Auth0AuthenticationButton.connections.auth0.label": "Compte Surfy (open id)",
 		"AuthenticationButton.connections.auth0.help": "Se connecter avec votre compte Surfy",
@@ -108660,11 +110376,13 @@ var jsonTranslationsFiles = {
 		"BookingCalendarSubjectEmail.workplaceAm": "[Surfy] Matin — Poste %{workplace}%{buildingSuffix}",
 		"BookingCalendarSubjectEmail.workplaceDefaultName": "Poste",
 		"BookingCalendarSubjectEmail.workplacePm": "[Surfy] Après-midi — Poste %{workplace}%{buildingSuffix}",
-		"BookingCanceledNotConfirmedEmail.body": "Votre réservation de poste de travail%{workplacePart}%{buildingPart} du %{bookingDate} a été annulée, car elle n'a pas été confirmée avant %{confirmationEndTime}.",
+		"BookingCanceledNotConfirmedEmail.bodyRoom": "Votre réservation de parking%{roomPart}%{buildingPart} du %{bookingDate} a été annulée, car elle n'a pas été confirmée avant %{confirmationEndTime}.",
+		"BookingCanceledNotConfirmedEmail.bodyWorkplace": "Votre réservation de poste de travail%{workplacePart}%{buildingPart} du %{bookingDate} a été annulée, car elle n'a pas été confirmée avant %{confirmationEndTime}.",
 		"BookingCanceledNotConfirmedEmail.buildingPart": " dans le bâtiment %{buildingName}",
 		"BookingCanceledNotConfirmedEmail.firstNameSuffix": " %{firstName}",
 		"BookingCanceledNotConfirmedEmail.greeting": "Bonjour%{firstNameSuffix}",
 		"BookingCanceledNotConfirmedEmail.nextBookings": "Pour vos prochaines réservations, vous devrez confirmer votre présence entre %{confirmationStartTime} et %{confirmationEndTime} depuis la page \"Mon planning\" :",
+		"BookingCanceledNotConfirmedEmail.roomPart": " (%{roomName})",
 		"BookingCanceledNotConfirmedEmail.subject": "Votre réservation du %{bookingDate} a été annulée",
 		"BookingCanceledNotConfirmedEmail.workplacePart": " (%{workplaceName})",
 		"BookingDialog.attendeesHelper": "Sélectionnez des collaborateurs ou appuyez sur Entrée pour ajouter un email.",
@@ -108689,10 +110407,12 @@ var jsonTranslationsFiles = {
 		"BookingReleasedStaticDeskWorkplaceTitle.bookWorkplace": "Réserver ce poste de travail",
 		"BookingReleasedStaticDeskWorkplaceTitle.introMany": "Ce poste de travail est mis à disposition car ces personnes ne seront pas au bureau ce jour.",
 		"BookingReleasedStaticDeskWorkplaceTitle.introOne": "Ce poste de travail est mis à disposition car cette personne ne sera pas au bureau ce jour.",
-		"BookingReminderNotConfirmedEmail.body": "Votre réservation de poste de travail du %{bookingDate} n'est pas encore confirmée.",
+		"BookingReminderNotConfirmedEmail.bodyRoom": "Votre réservation de parking%{roomPart} du %{bookingDate} n'est pas encore confirmée.",
+		"BookingReminderNotConfirmedEmail.bodyWorkplace": "Votre réservation de poste de travail du %{bookingDate} n'est pas encore confirmée.",
 		"BookingReminderNotConfirmedEmail.confirmBefore": "Merci de confirmer votre présence avant %{confirmationEndTime} depuis la page \"Mon planning\" :",
 		"BookingReminderNotConfirmedEmail.firstNameSuffix": " %{firstName}",
 		"BookingReminderNotConfirmedEmail.greeting": "Bonjour%{firstNameSuffix}",
+		"BookingReminderNotConfirmedEmail.roomPart": " (%{roomName})",
 		"BookingReminderNotConfirmedEmail.subject": "Confirmation requise pour la reservation d'aujourd'hui",
 		"BookingReporting.pageTitle": "Rapport de réservation",
 		"BookingReportingDetailTable.columnActualRate": "Taux d'occupation réel",
@@ -108759,6 +110479,10 @@ var jsonTranslationsFiles = {
 		"BookRandomParkingButton.parking.release.help": "Libérer la réservation du parking",
 		"BookRandomParkingButton.parking.viewOnMap": "Voir sur le plan le parking réservé",
 		"BookRandomParkingButton.parking.viewOnMapWithSlot": "Voir sur le plan le parking réservé pour la période %{slotString}",
+		"BookWorkplaceOnBuildingFloorAsyncAction.availableWorkplaces": "%{freeWorkplaces} places disponibles",
+		"BookWorkplaceOnBuildingFloorAsyncAction.bookWorkplaceOnFloor": "Réserver un poste de travail au %{floorName} pour la période %{slotString}",
+		"BookWorkplaceOnBuildingFloorAsyncAction.buttonLabel": "Réserver un poste de travail au %{floorName}",
+		"BookWorkplaceOnBuildingFloorAsyncAction.help": "%{bookedWorkplaces} réservation(s), %{freeWorkplaces} postes de travail disponibles sur %{totalFloorWorkplacesCount}",
 		"BookWorkplaceOnDimensionAsyncButton.drawerTitle": "Réserver un poste de travail spécifique pour la période %{slotString}",
 		"BookWorkplaceOnDimensionAsyncButton.help": "Réserver sur le plan un poste de travail spécifique pour ce créneau",
 		"BookWorkplaceOnDimensionAsyncButton.helpWithFloor": "Réserver sur le plan un poste de travail dans %{dimensionName} à l'étage %{floorName}",
@@ -108782,8 +110506,6 @@ var jsonTranslationsFiles = {
 		"BuildingCloneCreateAccordion.cloneOrganization": "Associer les organisations aux espaces",
 		"BuildingCloneCreateAccordion.clonePeople": "Dupliquer les affectations",
 		"BuildingCloneCreateAccordion.cloneWorkplaces": "Dupliquer les postes de travail",
-		"BuildingCloneCreateAccordion.createCloneHelp": "Le scénario va dupliquer le bâtiment avec les propriétés cochés",
-		"BuildingCloneCreateAccordion.createCloneLabel": "Créer un scénario",
 		"BuildingClonePropertiesSelector.properties.clone.buildingAffectations": "Copier les affectations de bâtiments",
 		"BuildingClonePropertiesSelector.properties.clone.costCenterId": "Copier le centre de coût des espaces",
 		"BuildingClonePropertiesSelector.properties.clone.dimensionAffectations": "Copier les affectations de calques d'analyses",
@@ -108937,6 +110659,40 @@ var jsonTranslationsFiles = {
 		"BuildingMenuItem.menu.scenario": "Scenarios (%{count})",
 		"BuildingMissingStructuredAddress.message": "L'adresse du bâtiment '%{buildingName}' manque de composants structurés (rue, ville, etc.)",
 		"BuildingMissingStructuredAddressAction.message": "L'adresse du bâtiment '%{buildingName}' manque de composants structurés (rue, ville, etc.)",
+		"BuildingPathfindingControls.offlineBanner": "Mode hors ligne — itinéraire calculé localement à partir du graphe en cache",
+		"BuildingPathfindingFloorColumn.ariaLabel": "Colonne étages",
+		"BuildingPathfindingMapLibre.combosRegionLabel": "Source et destination",
+		"BuildingPathfindingMapLibre.gatedUnavailable": "Le pathfinding n'est pas activé pour cette société",
+		"BuildingPathfindingMapLibre.loadingRead": "Chargement du plan et du graphe de navigation…",
+		"BuildingPathfindingMapLibre.mapRegionLabel": "Carte (MapLibre)",
+		"BuildingPathfindingMapLibre.mapStubHint": "Carte MapLibre",
+		"BuildingPathfindingMapLibre.routeResultError": "Échec du calcul du chemin",
+		"BuildingPathfindingMapLibre.routeResultFound": "Chemin trouvé",
+		"BuildingPathfindingMapLibre.routeResultFoundDetail": "{{pointCount}} pts · {{spaceCount}} espaces",
+		"BuildingPathfindingMapLibre.routeResultLoading": "Calcul du chemin…",
+		"BuildingPathfindingMapLibre.routeResultNone": "Aucun chemin",
+		"BuildingPathfindingMapLibre.selectDestination": "Destination",
+		"BuildingPathfindingMapLibre.selectDestinationHelp": "Rechercher l'espace destination dans le bâtiment",
+		"BuildingPathfindingMapLibre.selectOrigin": "Origine",
+		"BuildingPathfindingMapLibre.selectOriginHelp": "Rechercher l'espace source dans le bâtiment",
+		"BuildingPathfindingMapLibre.title": "Pathfinding bâtiment",
+		"BuildingPathfindingMapLibreHoverCard.segmentConnectorLabel": "Connecteur segment n° %{id}",
+		"BuildingPathfindingOverlayStatusCluster.connectorTraits": "Connecteurs · %{count} traits",
+		"BuildingPathfindingOverlayStatusCluster.nodes": "Nœuds · %{count}",
+		"BuildingPathfindingOverlayStatusCluster.routePoints": "Itinéraire · %{count} pts",
+		"BuildingPathfindingTabControlsHost.combosRegionLabel": "Source et destination",
+		"BuildingPathfindingTabControlsHost.routeResultError": "Échec du calcul du chemin",
+		"BuildingPathfindingTabControlsHost.routeResultFound": "Chemin trouvé",
+		"BuildingPathfindingTabControlsHost.routeResultFoundDetail": "{{pointCount}} pts · {{spaceCount}} espaces",
+		"BuildingPathfindingTabControlsHost.routeResultLoading": "Calcul du chemin…",
+		"BuildingPathfindingTabControlsHost.routeResultNone": "Aucun chemin",
+		"BuildingPathfindingTabControlsHost.selectDestination": "Destination",
+		"BuildingPathfindingTabControlsHost.selectDestinationHelp": "Rechercher l'espace destination dans le bâtiment",
+		"BuildingPathfindingTabControlsHost.selectOrigin": "Origine",
+		"BuildingPathfindingTabControlsHost.selectOriginHelp": "Rechercher l'espace source dans le bâtiment",
+		"BuildingPathfindingTabControlsHost.title": "Pathfinding bâtiment",
+		"BuildingRegeneratePathfindingGraphAsyncAction.help": "Enqueue la régénération asynchrone du graphe pathfinding pour ce bâtiment",
+		"BuildingRegeneratePathfindingGraphAsyncAction.label": "Régénérer le graphe pathfinding",
 		"BuildingReports.items.sheets.merged": "Fusion",
 		"BuildingReports.items.sheets.physicals": "Objets Physiques",
 		"BuildingReports.items.sheets.virtuals": "Objets Virtuels",
@@ -109006,8 +110762,14 @@ var jsonTranslationsFiles = {
 		"CalibrateLayoutDrawer.title": "Calibrer le plan",
 		"CampusBuildingsAccordion.buildingCount": "Le nombre de bâtiments",
 		"CancelAddItemToRoom.help": "Annuler l'ajout de l'objet dans l'espace",
+		"CancelAddItemToRoomSyncAction.help": "Annuler l'ajout de l'objet dans l'espace (%{shortcut})",
 		"CancelAddWorkplaceToRoom.help": "Annuler l'ajout du poste de travail dans l'espace",
+		"CancelAddWorkplaceToRoomSyncAction.help": "Annuler l'ajout du poste de travail dans l'espace (%{shortcut})",
+		"CancelCopyCartImportSyncAction.help": "Annuler la copie",
+		"CancelCopyCartImportSyncAction.label": "Annuler",
 		"CancelDuplicateShapsToRoomMouse.help": "Annuler la duplication des formes",
+		"CancelEnterpriseConnectionSyncAction.help": "Revenir vers la page d'authentification avec toutes les options",
+		"CancelEnterpriseConnectionSyncAction.label": "Retour",
 		"CenterBboxCircleMarker.tooltip": "Ancre de la structure (centre de la bbox)",
 		"ChangeColor.browserColorPicker": "Sélectionner une couleur avec la palette du navigateur",
 		"ChangeColor.notHexMatchError": "Le champs ne respecte pas le format hexadécimal d'une couleur",
@@ -109029,14 +110791,31 @@ var jsonTranslationsFiles = {
 		"CheckPersonVehiculeParkingDaySlotCompatibility.noVehicle": "Vous devez enregistrer un véhicule dans votre profil pour réserver des places de parking",
 		"CheckPersonVehiculeParkingDaySlotSingleBookingPerDayCompatibility.singleBookingPerDayIncompatible": "Vous avez déjà une réservation de parking pour ce jour dans ce bâtiment. Avec votre type de véhicule, vous ne pouvez réserver qu'une seule place de parking par jour et par bâtiment.",
 		"CheckThereIsAtLeastOneFreeRoomInTheBuilding.noFreeParkingAvailable": "Aucune place de parking disponible sur votre créneau",
+		"CleanAllJupRoleObjectTypesAsyncAction.help": "Nettoyer tous les types d'objets",
+		"CleanAllJupRoleObjectTypesAsyncAction.label": "Nettoyer tous les types d'objets",
+		"ClearDimensionTypeNavigationSyncAction.ariaLabel": "Annuler la navigation par calque",
+		"ClearFieldTypeColorSyncAction.ariaLabel": "Retirer la couleur",
+		"ClearFieldTypeColorSyncAction.help": "Retirer la couleur",
+		"ClearFieldTypeIconSyncAction.ariaLabel": "Retirer l'icone",
+		"ClearFieldTypeIconSyncAction.help": "Retirer l'icone",
+		"ClearJupRoleMatrixObjectTypeFilterSyncAction.ariaLabel": "Effacer la recherche",
+		"ClearJupRoleMatrixObjectTypeFilterSyncAction.help": "Effacer la recherche",
+		"ClearMeetingRoomsFiltersSyncAction.help": "Effacer les filtres",
 		"ClickOnIndexViewMenuPathBreadcrumb.clickOnLabel": "Cliquez sur :",
 		"CloneEntitiesFailed.noAccess": "Vous n'avez pas accès à cette entité",
 		"CloneEntitiesFailed.reloadHint": "Les données affichées peuvent être périmées. Veuillez recharger la page :",
+		"CloseAssignPersonCheckListDialogSyncAction.help": "Fermer et ne supprimer aucune autre affectation",
+		"CloseAssignPersonCheckListDialogSyncAction.label": "Fermer",
+		"CloseWrongRoomsDialogSyncAction.help": "Fermer cette fenêtre",
+		"CloseWrongRoomsDialogSyncAction.label": "Fermer",
 		"CloudinadryWidgetLoader.error.cloudinary-api-missing": "Le script Cloudinary a chargé mais l'API createUploadWidget est absente.",
 		"CloudinadryWidgetLoader.error.missing-cloud-name": "Cloudinary n'a pas pu démarrer : le nom du cloud est manquant dans la configuration publique.",
 		"CloudinadryWidgetLoader.error.missing-unsigned-preset": "Cloudinary n'a pas pu démarrer : le preset d'upload (unsignedPreset) est manquant dans la configuration runtime.",
-		"CloudinadryWidgetLoader.error.script-load-failed": "Cloudinary n'a pas pu charger le script du widget (réseau, CSP ou bloqueur).",
+		"CloudinadryWidgetLoader.error.script-load-failed": "Impossible de charger le script Cloudinary (widget.cloudinary.com) — souvent bloqué par un proxy / pare-feu d'entreprise ou un bloqueur.",
 		"CloudinadryWidgetLoader.error.widget-create-failed": "Cloudinary n'a pas pu créer le widget d'upload.",
+		"CloudinadryWidgetLoader.fallback.help": "Choisir une image locale (upload direct Cloudinary, sans le widget CDN)",
+		"CloudinadryWidgetLoader.fallback.hint": "Un sélecteur de fichier local reste disponible (upload via api.cloudinary.com).",
+		"CloudinadryWidgetLoader.fallback.warningAria": "Le widget Cloudinary CDN a échoué ; upload local de secours activé",
 		"CollapseSwitchButton.help.false": "Voir le détail",
 		"CollapseSwitchButton.help.true": "Masquer le détail",
 		"CollapseWorkplaceAffectationList.title": "Affecter cette personne pour les jours suivants uniquement",
@@ -109077,6 +110856,8 @@ var jsonTranslationsFiles = {
 		"CompanyTypeLabel.notClassified": "Plateforme non classifiée",
 		"CompareEntities.buttons.reset.help": "Recommencer l'import",
 		"CompareEntities.buttons.reset.label": "Recommencer",
+		"CompareImportOptionsBarAsyncAction.help": "Commencer la comparaison avec les données dans surfy afin de détérminer les modifications à importer",
+		"CompareImportOptionsBarAsyncAction.label": "Comparer",
 		"CompareObjectTypeAutomaticSyncIcon.helpDouble": "Après la comparaison, %{first} et %{second} s'appliquent automatiquement pour cette étape (sans boutons d'onglet).",
 		"CompareObjectTypeAutomaticSyncIcon.helpSingle": "Après la comparaison, %{operation} s'applique automatiquement pour cette étape (sans bouton d'onglet).",
 		"CompareObjectTypeAutomaticSyncIcon.helpTriple": "Après la comparaison, %{first}, %{second} et %{third} s'appliquent automatiquement pour cette étape (sans boutons d'onglet).",
@@ -109090,8 +110871,9 @@ var jsonTranslationsFiles = {
 		"ConfirmationButtons.confirm": "Confirmer la réalisation de l'action",
 		"ConfirmationButtons.loading": "L'action est en cours d'execution, merci de patienter",
 		"ConnectedPartnerContext.title": "Vous êtes connecté à <b>%{label}</b> (%{host})",
+		"CopyBelongsToImportKeySyncAction.ariaLabel": "Copier le titre de la colonne",
+		"CopyBelongsToImportKeySyncAction.help": "Copier le titre de la colonne dans le presse papier",
 		"CopyBuildingToCart.dialogTitle": "Copier le bâtiment",
-		"CopyBuildingToCart.help": "Copier la structure du bâtiment",
 		"CopyBuildingToCartCancelButton.help": "Fermer et annuler",
 		"CopyBuildingToCartCancelButton.label": "Annuler",
 		"CopyBuildingToCartCopyButton.help": "Copier les informations",
@@ -109099,8 +110881,22 @@ var jsonTranslationsFiles = {
 		"CopyBuildingToCartSaveToFileButton.help": "Enregistrer le contenu dans un fichier JSON",
 		"CopyBuildingToCartSaveToFileButton.label": "Enregistrer en fichier",
 		"CopyCartContentIntoTenant.buttons.single.paste.help": "Importer dans cette entreprise",
+		"CopyEqualsIdsInfoTabSyncAction.help": "Copier dans le presse-papiers les identifiants des entités",
+		"CopyEqualsIdsInfoTabSyncAction.label": "Copier dans le presse-papiers les identifiants des entités",
+		"CopyFieldTypePasswordSyncAction.ariaLabel": "Copier le mot de passe",
+		"CopyFieldTypePasswordSyncAction.help": "Copier le contenu du mot de passe dans le presse-papier",
+		"CopyFloorGeoJsonSyncAction.help": "Copier le GeoJSON dans le presse-papier",
+		"CopyFloorGeoJsonSyncAction.label": "COPIER",
 		"CopyImagePathToClipboard.CopyUrl": "Copier l'url",
+		"CopyImportScalarPropertySyncAction.ariaLabel": "Copier dans le presse-papier",
+		"CopyImportScalarPropertySyncAction.help": "Copier dans le presse-papier",
+		"CopyIntoClipboardSyncAction.help": "Copier dans le presse papier",
+		"CopyItemTypePointsSyncAction.help": "Copier les points dans le presse-papier",
+		"CopyItemTypePointsSyncAction.label": "Copier les points dans le presse-papier",
 		"CopyItemTypesToCart.help": "Copier les types d'objets dans le panier",
+		"CopyItemTypesToCartAsyncAction.ariaLabel": "Copier les types d'objets dans le panier",
+		"CopyItemTypesToCartAsyncAction.help": "Copier les types d'objets dans le panier",
+		"CopyWorkplaceTypesToCartAsyncAction.help": "Copier les types de poste de travail dans le panier",
 		"CopyWorkplaceTypeToCart.help": "Copier les types de poste de travail dans le panier",
 		"CostCenterMapFilter.Empty": "Il n'y a aucun centre de coût pour le moment associé aux espaces, vous pouvez en ajouter en modifiant un espace et en y associant un centre de coût, puis vous pourrez contrôler leur affichage depuis cette séction",
 		"CostCenterMapFilterTabs.tabs.people": "Personnes",
@@ -109108,8 +110904,16 @@ var jsonTranslationsFiles = {
 		"CostCenterMapFilterTabs.tabs.workplaces": "Postes de travail",
 		"CostCenterWorkplaceMapFilter.Empty": "Il n'y a aucun centre de coût pour le moment associé aux postes de travail, vous pouvez en ajouter en modifiant un poste de travail et en y associant un centre de coût, puis vous pourrez contrôler leur affichage depuis cette séction",
 		"CostCenterWorkplaceMapFilter.nodeInfo.workplacesCount": "Il y a %{count} postes de travail avec le centre de coût %{name}",
+		"CreateBuildingCloneAsyncAction.help": "Le scénario va dupliquer le bâtiment avec les propriétés cochés",
+		"CreateBuildingCloneAsyncAction.label": "Créer un scénario",
 		"CreateCleanInventoryItemsAsyncButton.help": "Créer les éléments manquants",
 		"CreateCleanInventoryItemsAsyncButton.label": "Créer",
+		"CreateFieldTypeIconBadgeSyncAction.help": "Ouvre l'éditeur de badge (texte et couleurs)",
+		"CreateFieldTypeIconBadgeSyncAction.label": "Créer un badge",
+		"CreateGuestAsyncAction.help": "Créer l'invité",
+		"CreateGuestAsyncAction.label": "Créer l'invité",
+		"CreatePartnerEntitiesAsyncAction.help": "Créer dans %{partnerName}",
+		"CreatePartnerEntitiesAsyncAction.label": "Créer dans %{partnerName}",
 		"CubyFitToViewIsometricButtonOption.help": "Centrer le plan sur les espaces en vue isometric",
 		"CubyFitToViewIsometricButtonOption.label": "Centrer le plan en vue isometric",
 		"CubyFitToViewZenithalButtonOption.help": "Centrer le plan sur les espaces en vue zénithale",
@@ -109180,12 +110984,17 @@ var jsonTranslationsFiles = {
 		"DefaultViewSetIndicator.recommendedViewTooltip": "Cette vision est conseillée pour ce bâtiment",
 		"DeleteCleanInventoryItemsAsyncButton.help": "Supprimer les éléments qui peuvent être retirés",
 		"DeleteCleanInventoryItemsAsyncButton.label": "Supprimer",
+		"DeleteCompanyReportingDataAsyncAction.ariaLabel": "Supprimer les données de reporting",
+		"DeleteCompanyReportingDataAsyncAction.help": "Supprimer les données de reporting calculées, il faut recalculer les données de reporting pour les avoir de nouveau, cette option permet un nettoyage des données de reporting",
+		"DeleteCompanyReportingDataAsyncAction.progress": "Suppression des données de reporting de %{objectType} : %{current}/%{total}",
 		"DeleteDialog.cancel.help": "Annuler la suppression",
 		"DeleteDialog.cancel.label": "Annuler",
 		"DeleteDialog.content": "Vous êtes sur le point de supprimer <b>%{determinant.undefined}</b>, cette action n'est pas réversible et peut avoir des impacts, êtes-vous sûr de vouloir réaliser cette action ?",
 		"DeleteDialog.delete.help": "Supprimer définitivement %{determinant.defined}",
 		"DeleteDialog.delete.label": "Supprimer",
 		"DeleteDialog.title": "Supprimer %{determinant.undefined}",
+		"DeleteFieldTypeIconBadgeSyncAction.ariaLabel": "Supprimer le badge",
+		"DeleteFieldTypeIconBadgeSyncAction.help": "Supprimer le badge",
 		"DeleteMapScaleAsyncButton.help": "Supprimer l'échelle revient à retirer l'échelle du plan et le supprimer de la base, il ne sera plus accessible via d'autres plan, Il n'est pas possible de supprimer une échelle qui se trouve sur plusieurs étages.",
 		"DeleteMapScaleAsyncButton.label": "Supprimer l'échelle",
 		"DeleteMultipleDialog.cancel.help": "Annuler la suppression",
@@ -109195,8 +111004,12 @@ var jsonTranslationsFiles = {
 		"DeleteMultipleDialog.delete.label": "Supprimer",
 		"DeleteMultipleDialog.title": "Supprimer %{determinants.undefined}",
 		"DeleteMultipleEntities.help": "Supprimer %{determinants.defined} sélectionné(e)s",
+		"DeletePartnerEntitiesAsyncAction.help": "Supprimer dans %{partnerName}",
+		"DeletePartnerEntitiesAsyncAction.label": "Supprimer dans %{partnerName}",
+		"DeleteStructureExclusionAsyncAction.ariaLabel": "Supprimer l'exclusion structure",
+		"DeleteStructureExclusionAsyncAction.help": "Supprimer cette exclusion structure (patio, vide, colonne) sans toucher à la forme extérieure",
 		"DeleteWorkplace.help": "Supprimer le poste de travail : [ %{name} ], les affectations seront aussi supprimées",
-		"DeskBookingConfirmationButton.bookingConfirmed": "La réservation a été confirmée",
+		"DeskBookingConfirmationButton.bookingConfirmed": "La réservation de poste de travail a été confirmée",
 		"DeskBookingConfirmationButton.confirm": "Confirmer votre présence",
 		"DeskBookingConfirmationButton.confirmHelp": "Confirmez que vous êtes présent à votre poste de travail",
 		"DeskBookingConfirmationButton.confirmHelpWithRange": "Confirmez que vous êtes présent à votre poste de travail. Vous pouvez confirmer entre %{confirmationRange}.",
@@ -109385,9 +111198,19 @@ var jsonTranslationsFiles = {
 		"DisplayWorkplaceTexts.workplaceUsageType.label": "Type d'usage",
 		"distance.centimeter": "Centimètres",
 		"distance.meter": "Métres",
+		"DownloadBuildingDistributionCostByFloorsSyncAction.help": "Télécharger le fichier excel pour pourvoir partager et exporter les clés de répartition et surfaces qualifiées par centre de coût et par étage, l'export inclut la distribution par étage ou par bâtiment des centres de coûts",
+		"DownloadBuildingDistributionCostByFloorsSyncAction.label": "Télécharger le fichier excel avec les ventilations",
+		"DownloadBuildingDistributionCostSyncAction.help": "Télécharger le fichier excel pour pourvoir partager et exporter les clés de répartition et surfaces qualifiées par centre de coût",
+		"DownloadBuildingDistributionCostSyncAction.label": "Télécharger le fichier excel sans les ventilations",
+		"DownloadBuildingIfcSyncAction.help": "Download IFC file",
+		"DownloadBuildingIfcSyncAction.label": "Download File",
 		"DownloadBuildingImagesAccordion.accordion.title": "Exporter les images de tout le bâtiment",
 		"DownloadBuildingImagesAccordion.buttons.download.help": "Télécharger tous les plans de tous les étages du bâtiment au format png dans un zip, le temps d'attente de cette extraction peut être long",
 		"DownloadBuildingImagesAccordion.buttons.download.label": "Télécharger le ZIP",
+		"DownloadCopilotDoorImagesSyncAction.help": "DL images",
+		"DownloadCopilotDoorImagesSyncAction.label": "DL IMAGES",
+		"DownloadFlatBuildingAsyncAction.ariaLabel": "Télécharger le bâtiment à plat",
+		"DownloadFlatBuildingAsyncAction.help": "Télécharger le fichier excel des espaces et des postes de travail avec les identifiants",
 		"DownloadImageButton.helpNoLegend": "Télécharger tout le plan en bonne qualité sans la légende, l'export peut prendre plus de temps.",
 		"DownloadImageButton.helpWithLegend": "Télécharger tout le plan en bonne qualité avec la légende, l'export peut prendre plus de temps.",
 		"DownloadImageButton.labelNoLegend": "Télécharger le plan sans legende (PNG)",
@@ -109417,6 +111240,10 @@ var jsonTranslationsFiles = {
 		"DqReportStatusCard.viewFullReport": "Voir le rapport complet",
 		"DropDownOptions.moreOptions": "Voir plus d'options pour %{determinant.defined} %{name}",
 		"EditEntityDrawer.title.edit": "Modifier %{determinant.defined}",
+		"EditFieldTypeAddressSyncAction.ariaLabel": "Modifier l'adresse",
+		"EditFieldTypeAddressSyncAction.help": "Modifier l'adresse",
+		"EditFieldTypeIconSyncAction.ariaLabel": "Changer d'icone",
+		"EditFieldTypeIconSyncAction.help": "Changer d'icone",
 		"EditInlineToggleIconButton.cancel.help": "Arrêter la modification sans sauvegarder",
 		"EditInlineToggleIconButton.edit.help": "Modifier directement sur cette page les propriétés pour %{determinant.defined}",
 		"EditInlineToggleIconButton.edit.label": "Modifier",
@@ -109507,6 +111334,8 @@ var jsonTranslationsFiles = {
 		"Errors.ROOM_BOOKING_CONFLICT": "L'espace est déjà réservée pour ce créneau horaire. Veuillez choisir un autre horaire ou un autre espace.",
 		"Errors.WORKPLACE_BOOKING_CONFLICT": "Le poste de travail est déjà réservé pour ce créneau horaire. Veuillez choisir un autre horaire ou un autre poste de travail.",
 		"ErrorTextZone.reload": "Recommencer l'opération",
+		"EscapeCompareObjectTypeStepSyncAction.help": "Passer cette étape et aller directement à la prochaine",
+		"EscapeCompareObjectTypeStepSyncAction.label": "Passer cette étape",
 		"ExportQueryNodeToFileButton.help.list": "Télécharger en excel %{determinants.defined}",
 		"FetchSocTenantEventsAsyncAction.help": "Récupère les changements et snapshots d'ids de sécurité de l'entreprise depuis la date choisie",
 		"FetchSocTenantEventsAsyncAction.label": "Lancer l'audit sécurité",
@@ -109540,11 +111369,23 @@ var jsonTranslationsFiles = {
 		"FieldTypeIndexBoolean.help": "Modifier la valeur directement",
 		"FieldTypeIndexBoolean.values.false": "Non",
 		"FieldTypeIndexBoolean.values.true": "Oui",
+		"FieldTypeLegendConfiguration.familyCostCenters": "Centres de coût",
+		"FieldTypeLegendConfiguration.familyOrganizationsDirection": "Directions",
+		"FieldTypeLegendConfiguration.familyOrganizationsService": "Services",
+		"FieldTypeLegendConfiguration.familyRoomTypeGroups": "Groupes de typologie",
+		"FieldTypeLegendConfiguration.familyRoomTypes": "Typologies",
+		"FieldTypeLegendConfiguration.legacyRoomTypeGroups": "Groupes de typologie — sélection par entité",
+		"FieldTypeLegendConfiguration.legacyRoomTypes": "Typologies — sélection par entité",
+		"FieldTypeLegendConfiguration.selectionByEntity": "Sélection des propriétés par entité",
+		"FieldTypeLegendConfiguration.selectionByFilter": "Sélection par filtre",
+		"FieldTypeLegendConfiguration.selectionStructure": "Sélection des propriétés de la structure",
 		"FieldTypeModel3d.Remove": "Retirer le modèle 3D",
 		"FieldTypeModel3d.Upload": "Changer le modèle 3D",
 		"FieldTypePassword.icons.copy": "Copier le contenu du mot de passe dans le presse-papier",
 		"FieldTypePassword.icons.generate": "Générer un mot de passe unique",
 		"FileDropZone.dropZone": "Deplacer et glisser le fichier d'import dans cette zone ou cliquer dans la zone pour sélectionner votre fichier",
+		"FinishCopyCartImportSyncAction.help": "Terminer et fermer cette fenêtre",
+		"FinishCopyCartImportSyncAction.label": "Terminer",
 		"FixAddressButton.button.fix": "Corriger l'adresse",
 		"FixAddressButton.button.help": "Corriger automatiquement l'adresse de '%{buildingName}' en utilisant le géocodage Google Maps",
 		"FixAddressButton.error.message": "❌ Échec de la correction : %{error}",
@@ -109594,11 +111435,17 @@ var jsonTranslationsFiles = {
 		"FurnituresSelection.move": "Déplacer tout le groupe",
 		"FurnituresSelectionDragZone.help": "Déplacer le groupe",
 		"FurnituresSelectionGroupRotation.help": "Faire pivoter toutes les formes sélectionnées autour du centre de la sélection",
+		"GenerateBuildingPathfindingRouteAsyncAction.help": "Calcule le chemin entre l'origine et la destination sélectionnées",
+		"GenerateBuildingPathfindingRouteAsyncAction.label": "Générer le chemin",
 		"generateDocumentation.properties.base": "Propriétés de base",
 		"generateDocumentation.properties.belongsTo": "Entités associées (unique)",
 		"generateDocumentation.properties.hasMany": "Entités associées (liste)",
 		"generateDocumentation.properties.mandatory": "Propriétés obligatoires",
 		"generateDocumentation.properties.technicalName": "Nom technique",
+		"GenerateFieldTypePasswordSyncAction.ariaLabel": "Générer un mot de passe",
+		"GenerateFieldTypePasswordSyncAction.help": "Générer un mot de passe unique",
+		"GeneratePathfindingGraphAsyncAction.help": "Générer le graphe d'orientation permet de calculer les nœuds par lesquels la recherche de chemin peut trouver les espaces et le mobilier. Si l'espace d'origine peut être sélectionné, le graphe a déjà été généré.",
+		"GeneratePathfindingGraphAsyncAction.label": "Générer le graphe d'orientation",
 		"GenericNoChangeTable.open.help": "Voir le détail des données identiques",
 		"GenericNoChangeTable.open.label": "Voir les données",
 		"GlobalOptions.CartCopyBuildingOption.help": "Copier les bâtiments dans le panier",
@@ -109614,7 +111461,6 @@ var jsonTranslationsFiles = {
 		"GoogleApiWrapper.loadingFailed": "Échec du chargement de l'API Google Maps",
 		"GuestCreateAccordion.contractEndDateLabel": "Date de fin de la période de l'invité",
 		"GuestCreateAccordion.contractStartDateLabel": "Date de début de la période de l'invité",
-		"GuestCreateAccordion.createGuestCta": "Créer l'invité",
 		"GuestCreateAccordion.createSectionTitle": "Créer un invité",
 		"GuestCreateAccordion.emailLabel": "Email",
 		"GuestCreateAccordion.firstnameLabel": "Prénom",
@@ -109714,7 +111560,6 @@ var jsonTranslationsFiles = {
 		"InfoTabContent.open.label": "Voir le détail de l'import",
 		"InlinePositionZField.positionZLabel": "Position Z (cm)",
 		"ItemsInventory.EmptyList": "Il n'y a aucun objet dans cet espace",
-		"ItemTypeAvatarSingleView.copy": "Copier les points dans le presse-papier",
 		"ItemTypeAvatarSingleView.debug.label": "Activer le mode avancé pour la 3d",
 		"ItemTypeDataQualityFamilyTenantConsistency.buttonFixWithUnclassifiedHelp": "Assigner les types d'objet selectionnes a la famille UNCLASSIFIED du tenant",
 		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeFamilyId": "Id famille",
@@ -109763,7 +111608,6 @@ var jsonTranslationsFiles = {
 		"JupRoleAzureSyncRolesTable.value": "Valeur",
 		"JupRoleAzureSyncScopeAlert.grantedScopes": "Scopes accordés",
 		"JupRoleAzureSyncScopeAlert.scopesOk": "Application.ReadUpdate.All accordé.",
-		"JupRoleMatrixObjectTypeFilter.clearSearchHelp": "Effacer la recherche",
 		"JupRoleMatrixObjectTypeFilter.noResults": "Aucun type d'objet ne correspond à votre recherche.",
 		"JupRoleMatrixObjectTypeFilter.searchAriaLabel": "Filtrer les types d'objets de la matrice des rôles",
 		"JupRoleMatrixObjectTypeFilter.searchPlaceholder": "Rechercher un type d'objet (nom technique, libellé…)",
@@ -109792,6 +111636,8 @@ var jsonTranslationsFiles = {
 		"layoutViewSets.peopleDimensionTypes.label": "Quartiers",
 		"layoutViewSets.roomType.description": "Voir le plan de l'étage selon la typologie des espaces",
 		"layoutViewSets.roomType.label": "Typologies des espaces",
+		"layoutViewSets.roomTypeGroups.description": "Voir le plan de l'étage selon le groupe de typologie des espaces",
+		"layoutViewSets.roomTypeGroups.label": "Groupes de typologies",
 		"layoutViewSets.securityCompliance.description": "Analyser la conformité de votre plan de prévention de la sécurité et des profils de securité des personnes affectés",
 		"layoutViewSets.securityCompliance.label": "Conformité de la sécurité",
 		"layoutViewSets.walls.description": "Concentrez-vous sur les espaces et cloisons",
@@ -109855,7 +111701,12 @@ var jsonTranslationsFiles = {
 		"MapLegendFloor.title.floor": "Étage",
 		"MapLegendPersonSecurityProfile.title": "Profils de sécurité",
 		"MapLegendRoom.title": "Espaces",
-		"MeetingRoomBookAction.bookRoom": "Réserver via le calendrier",
+		"MeetingRoomBookSyncAction.bookRoom": "Réserver via le calendrier",
+		"MeetingRoomCalendarSyncAction.ariaLabel": "Voir le calendrier des réservations",
+		"MeetingRoomCalendarSyncAction.calendarFor": "Agenda pour",
+		"MeetingRoomCalendarSyncAction.help": "Voir le calendrier des réservations",
+		"MeetingRoomCalendarSyncAction.noRoomName": "Nom d'espace non défini",
+		"MeetingRoomCalendarSyncAction.roomCalendar": "Calendrier de l'espace",
 		"MeetingRoomCard.availability.available": "Disponible sur ce créneau",
 		"MeetingRoomCard.availability.searching": "Recherche des disponibilités...",
 		"MeetingRoomCard.bookable": "Cet espace est réservable",
@@ -109879,13 +111730,13 @@ var jsonTranslationsFiles = {
 		"MeetingRoomCard.viewPicture": "Voir la photo de l'espace",
 		"MeetingRoomCardSeats.seatsMultiple": "%{count} places assises",
 		"MeetingRoomCardSeats.seatsSingle": "%{count} place assise",
-		"MeetingRoomDirectBookAction.bookingInProgressHelp": "Réservation en cours...",
-		"MeetingRoomDirectBookAction.bookingSuccess": "Réservation confirmée pour %{roomName} (%{timeRange})",
-		"MeetingRoomDirectBookAction.directBook": "Réservation rapide",
-		"MeetingRoomDirectBookAction.missingSelection": "Sélectionnez d'abord un jour et une plage horaire",
-		"MeetingRoomDirectBookAction.noRoomName": "Nom d'espace non défini",
-		"MeetingRoomDirectBookAction.roomUnavailable": "La salle est indisponible sur cette plage horaire",
-		"MeetingRoomDirectBookAction.schedulesLoading": "Disponibilités en cours de chargement",
+		"MeetingRoomDirectBookSyncAction.bookingInProgressHelp": "Réservation en cours...",
+		"MeetingRoomDirectBookSyncAction.bookingSuccess": "Réservation confirmée pour %{roomName} (%{timeRange})",
+		"MeetingRoomDirectBookSyncAction.directBook": "Réservation rapide",
+		"MeetingRoomDirectBookSyncAction.missingSelection": "Sélectionnez d'abord un jour et une plage horaire",
+		"MeetingRoomDirectBookSyncAction.noRoomName": "Nom d'espace non défini",
+		"MeetingRoomDirectBookSyncAction.roomUnavailable": "La salle est indisponible sur cette plage horaire",
+		"MeetingRoomDirectBookSyncAction.schedulesLoading": "Disponibilités en cours de chargement",
 		"MeetingRooms.clearFilters": "Effacer les filtres",
 		"MeetingRooms.loadingAvailabilityTooltip": "Chargement des disponibilités de réservation...",
 		"MeetingRooms.noMeetingRoomsConfigured": "Vous n'avez pas de salles de réunions configurées via des groupes de typologies d'espaces",
@@ -109960,6 +111811,8 @@ var jsonTranslationsFiles = {
 		"menu.menuLeft.vehiclePlanningAdmin": "Administration des plannings des véhicules",
 		"menu.menuLeft.workplace": "Postes de travail",
 		"menu.tenantOperations": "Synchronisation",
+		"MergePersonDuplicatesAsyncAction.help": "Fusionner les personnes",
+		"MergePersonDuplicatesAsyncAction.label": "Fusionner",
 		"MicrosoftUsersPicturesSyncTitle.title": "Synchronisation des photos Microsoft",
 		"MicrosoftUsersSyncTitle.title": "Synchronisation des utilisateurs Microsoft",
 		"models.ApiUser.determinant.defined": "l'utilisateur d'api",
@@ -110125,6 +111978,8 @@ var jsonTranslationsFiles = {
 		"models.Building.reports.buildingPeople.help": "Rapport des personnes affectées dans le bâtiment",
 		"models.Building.reports.dimensionTypes.fileName": "Types de dimension",
 		"models.Building.reports.dimensionTypes.help": "Rapport des types de dimension avec les données de reporting du bâtiment",
+		"models.Building.reports.exceptionalObjects.fileName": "Objets exceptionnels",
+		"models.Building.reports.exceptionalObjects.help": "Rapport des objets exceptionnels",
 		"models.Building.reports.organizations.fileName": "Organisations",
 		"models.Building.reports.organizations.help": "Rapport des organisations du bâtiment",
 		"models.Building.reports.workplaceAffectations.fileName": "Affectations de poste de travail",
@@ -110136,6 +111991,8 @@ var jsonTranslationsFiles = {
 		"models.Building.views.3d-cards.label": "3d",
 		"models.Building.views.3d-map.help": "Voir tous les bâtiments de référence en 3D sur une carte",
 		"models.Building.views.3d-map.label": "Carte 3D",
+		"models.Building.views.3d-maplibre.help": "Voir les structures des bâtiments de référence en LOD MapLibre (même rendu que le SDK Structure Cuby)",
+		"models.Building.views.3d-maplibre.label": "Carte 3D MapLibre",
 		"models.Building.views.3d.help": "Le plan en 3d du bâtiment %{name} (cuby)",
 		"models.Building.views.3d.label": "Plan 3d",
 		"models.Building.views.assets.help": "Les actifs immobiliers",
@@ -110146,6 +112003,8 @@ var jsonTranslationsFiles = {
 		"models.Building.views.building-dxf-importer.label": "Import DXF",
 		"models.Building.views.building-ifc.help": "Exporter ce bâtiment en IFC pour le BIM",
 		"models.Building.views.building-ifc.label": "IFC",
+		"models.Building.views.building-pathfinding.help": "Naviguer dans le bâtiment : choisir une source et une destination, voir le chemin sur la carte",
+		"models.Building.views.building-pathfinding.label": "Pathfinding",
 		"models.Building.views.cards.help": "Vue des bâtiments en tuile",
 		"models.Building.views.cards.label": "Infos",
 		"models.Building.views.clone.help": "Les <b>scénarios</b> et projets du bâtiment %{name}",
@@ -110231,8 +112090,8 @@ var jsonTranslationsFiles = {
 		"models.Company.properties.workingDaysCount.label": "Nombre de jours de travail par semaine",
 		"models.Company.properties.workplaceBookingAgendaSyncEnabled.description": "À chaque réservation de poste ou de parking, envoie une invitation dans le calendrier du collaborateur (Outlook, Gmail, etc.) ; l'invitation est retirée en cas d'annulation",
 		"models.Company.properties.workplaceBookingAgendaSyncEnabled.label": "Créer une invitation calendrier pour chaque réservation",
-		"models.Company.properties.workplaceBookingConfirmationRange.description": "Plage horaire pendant laquelle les utilisateurs peuvent confirmer leurs réservations de postes de travail. Format obligatoire: HH:MM-HH:MM@Timezone IANA (ex: 06:00-10:30@Europe/Paris). Ne rien mettre dans ce champ pour ne pas activer la confirmation de réservation de poste de travail. Timezone IANA: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
-		"models.Company.properties.workplaceBookingConfirmationRange.label": "Plage de confirmation de réservation de poste de travail",
+		"models.Company.properties.workplaceBookingConfirmationRange.description": "Plage horaire pendant laquelle les utilisateurs peuvent confirmer leurs réservations de postes de travail et de parking. Format obligatoire: HH:MM-HH:MM@Timezone IANA (ex: 06:00-10:30@Europe/Paris). Ne rien mettre dans ce champ pour ne pas activer la confirmation. Timezone IANA: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+		"models.Company.properties.workplaceBookingConfirmationRange.label": "Plage de confirmation de réservation (poste de travail et parking)",
 		"models.Company.reports.export-all-duplicate.fileName": "duplication",
 		"models.Company.reports.export-all-duplicate.help": "Sauvegarder les données de l'entreprise pour faire une copie de la plateforme",
 		"models.Company.reports.export-all.fileName": "sauvegarde",
@@ -111185,9 +113044,13 @@ var jsonTranslationsFiles = {
 		"models.PersonToRoomBooking.determinants.defined": "les réservations à l'espace des personnes",
 		"models.PersonToRoomBooking.determinants.undefined": "des réservations à l'espace des personnes",
 		"models.PersonToRoomBooking.plural": "Réservations à l'espace des personnes",
+		"models.PersonToRoomBooking.properties.emailConfirmationWarningNotificationSentAt.description": "La date et l'heure d'envoi de l'avertissement e-mail avant annulation de la réservation non confirmée",
+		"models.PersonToRoomBooking.properties.emailConfirmationWarningNotificationSentAt.label": "Avertissement e-mail de confirmation envoyé le",
 		"models.PersonToRoomBooking.properties.endDatetime.description": "La date et l'heure de fin de la réservation",
 		"models.PersonToRoomBooking.properties.endDatetime.label": "Fin de la réservation",
 		"models.PersonToRoomBooking.properties.id.label": "Identifiant de la réservation à l'espace des personnes",
+		"models.PersonToRoomBooking.properties.roomHasBeenConfirmedAt.description": "Date et heure de confirmation de présence pour la réservation d'espace (parking)",
+		"models.PersonToRoomBooking.properties.roomHasBeenConfirmedAt.label": "Espace confirmé le",
 		"models.PersonToRoomBooking.properties.startDatetime.description": "La date et l'heure de début de la réservation",
 		"models.PersonToRoomBooking.properties.startDatetime.label": "Début de la réservation",
 		"models.PersonToRoomBooking.singular": "Réservation à l'espace des personnes",
@@ -111314,6 +113177,16 @@ var jsonTranslationsFiles = {
 		"models.RoomConnector.properties.waitTime.description": "Le temps d'attente moyenne avant que le connecteur d'espace soit disponible",
 		"models.RoomConnector.properties.waitTime.label": "Temps d'attente moyen",
 		"models.RoomConnector.singular": "Connecteur d'espace",
+		"models.RoomConnectorType.description": "Un type de connecteur d'espaces qualifie les connecteurs reliant des espaces entre étages",
+		"models.RoomConnectorType.determinant.defined": "le type de connecteur d'espaces",
+		"models.RoomConnectorType.determinant.undefined": "un type de connecteur d'espaces",
+		"models.RoomConnectorType.determinants.defined": "les types de connecteur d'espaces",
+		"models.RoomConnectorType.determinants.undefined": "des types de connecteur d'espaces",
+		"models.RoomConnectorType.plural": "types de connecteur d'espaces",
+		"models.RoomConnectorType.properties.color.description": "Couleur optionnelle du type de connecteur — utilisée en Mode connecteurs sur la Vue Pathfinding bâtiment",
+		"models.RoomConnectorType.properties.color.label": "Couleur",
+		"models.RoomConnectorType.properties.name.label": "Nom du type de connecteur d'espaces",
+		"models.RoomConnectorType.singular": "type de connecteur d'espaces",
 		"models.RoomPoint.description": "Un point des espaces définit les coordonnées géométriques pour dessiner le contour d'un espace",
 		"models.RoomPoint.determinant.defined": "le point des espaces",
 		"models.RoomPoint.determinant.undefined": "un point des espaces",
@@ -111433,6 +113306,26 @@ var jsonTranslationsFiles = {
 		"models.RoomTypeGroupToRoomType.plural": "Associations groupe de typologie d'espace à typologie d'espace",
 		"models.RoomTypeGroupToRoomType.properties.id.label": "Identifiant de l'association groupe de typologie d'espace à typologie d'espace",
 		"models.RoomTypeGroupToRoomType.singular": "Association groupe de typologie d'espace à typologie d'espace",
+		"models.SegmentConnector.description": "Un connecteur de segment qualifie un segment de porte comme entrée/sortie bâtiment pour le Pathfinding",
+		"models.SegmentConnector.determinant.defined": "le connecteur de segment",
+		"models.SegmentConnector.determinant.undefined": "un connecteur de segment",
+		"models.SegmentConnector.determinants.defined": "les connecteurs de segment",
+		"models.SegmentConnector.determinants.undefined": "des connecteurs de segment",
+		"models.SegmentConnector.plural": "connecteurs de segment",
+		"models.SegmentConnector.properties.name.label": "Nom du connecteur de segment",
+		"models.SegmentConnector.singular": "connecteur de segment",
+		"models.SegmentConnectorType.description": "Un type de connecteur de segment qualifie une porte d'entrée/sortie bâtiment (outside-in, outside-out, outside-in-out) — distinct des types SVG door-left/door-right",
+		"models.SegmentConnectorType.determinant.defined": "le type de connecteur de segment",
+		"models.SegmentConnectorType.determinant.undefined": "un type de connecteur de segment",
+		"models.SegmentConnectorType.determinants.defined": "les types de connecteur de segment",
+		"models.SegmentConnectorType.determinants.undefined": "des types de connecteur de segment",
+		"models.SegmentConnectorType.plural": "types de connecteur de segment",
+		"models.SegmentConnectorType.properties.code.description": "Codes Tongue : outside-in, outside-out, outside-in-out",
+		"models.SegmentConnectorType.properties.code.label": "Code du type de connecteur de segment",
+		"models.SegmentConnectorType.properties.color.description": "Couleur optionnelle du type de Segment Connector — utilisée en Mode connecteurs sur la Vue Pathfinding bâtiment",
+		"models.SegmentConnectorType.properties.color.label": "Couleur",
+		"models.SegmentConnectorType.properties.name.label": "Nom du type de connecteur de segment",
+		"models.SegmentConnectorType.singular": "type de connecteur de segment",
 		"models.Structure.description": "Une structure définit une forme géométrique qui peut être utilisée pour calibrer et positionner des éléments sur des cartes",
 		"models.Structure.determinant.defined": "la structure",
 		"models.Structure.determinant.undefined": "une structure",
@@ -111451,6 +113344,28 @@ var jsonTranslationsFiles = {
 		"models.Structure.views.editor.label": "Editer la forme",
 		"models.Structure.views.gmap-calibrate.help": "Calibrer la structure sur une carte afin d'associer des coordonnées géographiques",
 		"models.Structure.views.gmap-calibrate.label": "Calibrer la structure sur une carte",
+		"models.StructureExclusion.description": "Une exclusion de structure définit un trou (patio, vide, colonne) à l'intérieur de la forme extérieure de la structure",
+		"models.StructureExclusion.determinant.defined": "l'exclusion de structure",
+		"models.StructureExclusion.determinant.undefined": "une exclusion de structure",
+		"models.StructureExclusion.determinants.defined": "les exclusions de structure",
+		"models.StructureExclusion.determinants.undefined": "des exclusions de structure",
+		"models.StructureExclusion.plural": "exclusions de structure",
+		"models.StructureExclusion.properties.name.description": "Nom optionnel pour retrouver facilement l'exclusion (patio, cage d'ascenseur, etc.)",
+		"models.StructureExclusion.properties.name.label": "Nom",
+		"models.StructureExclusion.singular": "exclusion de structure",
+		"models.StructureExclusionPoint.description": "Un point d'exclusion de structure définit un sommet du polygone de trou à l'intérieur de la forme extérieure",
+		"models.StructureExclusionPoint.determinant.defined": "le point d'exclusion de structure",
+		"models.StructureExclusionPoint.determinant.undefined": "un point d'exclusion de structure",
+		"models.StructureExclusionPoint.determinants.defined": "les points d'exclusion de structure",
+		"models.StructureExclusionPoint.determinants.undefined": "des points d'exclusion de structure",
+		"models.StructureExclusionPoint.plural": "points d'exclusion de structure",
+		"models.StructureExclusionPoint.properties.sortIndex.description": "Ordre du sommet dans le polygone d'exclusion",
+		"models.StructureExclusionPoint.properties.sortIndex.label": "Index de tri",
+		"models.StructureExclusionPoint.properties.x.description": "Position horizontale du point sur le plan",
+		"models.StructureExclusionPoint.properties.x.label": "Coordonnée X",
+		"models.StructureExclusionPoint.properties.y.description": "Position verticale du point sur le plan",
+		"models.StructureExclusionPoint.properties.y.label": "Coordonnée Y",
+		"models.StructureExclusionPoint.singular": "point d'exclusion de structure",
 		"models.User.determinant.defined": "l'utilisateur",
 		"models.User.determinant.undefined": "un utilisateur",
 		"models.User.determinants.defined": "les utilisateurs",
@@ -111749,6 +113664,14 @@ var jsonTranslationsFiles = {
 		"OboBuildingAssignmentChip.assignHelp": "Affecter %{buildingName} à cette personne lui permettant de réserver un poste de travail",
 		"OboBuildingComparisonAlert.buildingAccessWarning": "%{targetPersonName} ne peut pas réserver dans les bâtiments suivants, cliquer sur le bâtiment pour permettre à la personne de pouvoir y réserver un poste de travail",
 		"OboBuildingComparisonAlert.warningTitle": "Attention : Bâtiments non assignés",
+		"OpenCopyBuildingToCartAsyncAction.ariaLabel": "Copier la structure du bâtiment",
+		"OpenCopyBuildingToCartAsyncAction.help": "Copier la structure du bâtiment",
+		"OpenGenericNoChangeTableSyncAction.help": "Voir le détail des données identiques",
+		"OpenGenericNoChangeTableSyncAction.label": "Voir les données",
+		"OpenImportCreateEntitiesTableSyncAction.help": "Voir le détail des entités à créer car il y a plus de 500 lignes, pour des raisons de perfromance les lignes sont cachés par defaut",
+		"OpenImportCreateEntitiesTableSyncAction.label": "Voir les entités à créer",
+		"OpenInfoTabContentSyncAction.help": "Voir le détail de l'import pour les comparaisons identiques",
+		"OpenInfoTabContentSyncAction.label": "Voir le détail de l'import",
 		"OpenRoomsBulkEditSyncAction.help": "Modifier les propriétés de tous les espaces sélectionnés",
 		"OperationHelpMarkdown.help.documentation": "Documentation",
 		"OrganizationDataQualityHierarchy.headerChildOrganizations": "Organisations filles",
@@ -111797,6 +113720,7 @@ var jsonTranslationsFiles = {
 		"PartnerEntityUpdateTab.button.label": "Mettre à jour dans %{partnerName}",
 		"PartnerEntityUpdateTab.headers.type": "Type",
 		"PartnerEntityUpdateTab.progress.syncing": "Synchronisation %{label}...",
+		"PasteCartContentIntoTenantAsyncAction.help": "Importer dans cette entreprise",
 		"PersonAffectationsPanel.description": "Les affectations de la personne",
 		"PersonAffectationsPanel.title": "Affectations",
 		"PersonBadgePanel.description": "Informations diverses sur la personne",
@@ -111816,6 +113740,8 @@ var jsonTranslationsFiles = {
 		"PersonCostCenterWorkplaceFilter.Empty": "Il n'y a aucun centre de coûts associé aux personnes",
 		"PersonCostCenterWorkplaceInfo.nodeInfo.peopleCount": "Il y a %{count} personnes avec le centre de coût %{costCenterName}",
 		"PersonCostCenterWorkplaceInfo.nodeInfo.workplaceCount": "Il y a %{count} postes de travail avec au moins une personne avec le centre de coût %{costCenterName}",
+		"PersonDataQualityOnlyAssociatedtoBuilding.buildingFilterPlaceholder": "Choisir un ou plusieurs bâtiments",
+		"PersonDataQualityOnlyAssociatedtoBuilding.filterByBuildingTitle": "Filtrer la liste par bâtiment",
 		"PersonDataQualityWithoutAffectation.costCenterHeader": "Centre de coût",
 		"PersonDataQualityWithoutAffectation.directionHeader": "Direction",
 		"PersonDataQualityWithoutAffectation.excludeScenarioBuildingsLabel": "Exclure les bâtiments scénarios",
@@ -111834,7 +113760,6 @@ var jsonTranslationsFiles = {
 		"PersonRelationsPanelView.title": "Relations",
 		"PersonSearchSelector.changePersonCta": "Changer la personne",
 		"PersonSearchSelector.noPersonSelected": "Aucune personne sélectionnée",
-		"PersonSearchSelector.removePersonHelp": "Retirer la personne sélectionnée",
 		"PersonSearchSelector.selectedPersonLabel": "Personne : %{personName}",
 		"PersonSearchSelector.selectPersonCta": "Sélectionner une personne",
 		"PersonSecurityPanel.description": "Informations relatives à la sécurité et aux évacuations",
@@ -111866,6 +113791,8 @@ var jsonTranslationsFiles = {
 		"PropertSelectorDrawer.tabLabel": "Propriétés",
 		"PropertyTypeErrors.title": "Les valeurs suivantes n'existent pas pour la propriété <b>%{propertyTypeLabel}</b> dans <b>%{objectTypeLabel}</b>",
 		"PWLSelectDimensionCard.selectDimensionCard.title": "Sélectionnez une dimension",
+		"QualifySegmentConnectorSyncAction.help": "Associe un type outside-in / outside-out / outside-in-out au segment de porte sélectionné",
+		"QualifySegmentConnectorSyncAction.label": "Qualifier en Segment Connector",
 		"RedirectCountdownTimer.redirectMessage": "Cette page redirigera automatiquement vers %{redirectTarget} dans %{secondsRemaining}s",
 		"ReduceMenuSwitch.open.false": "Reduire le menu pour profiter de l'espace de travail",
 		"ReduceMenuSwitch.open.true": "Déplier le menu",
@@ -111874,14 +113801,25 @@ var jsonTranslationsFiles = {
 		"RefetchFloorLayoutButton.refetch": "Recharger les données du plan",
 		"RefetchObjectTypeIcon.help": "Recharger les données pour %{determinant.defined}",
 		"RefreshPageButton.label": "Recharger la page",
+		"RefreshRoomCalendarAsyncAction.help": "Actualiser le calendrier",
 		"ReleasableStaticWorkplaceChip.anotherPersonIsAssignedToReleasableStaticWorkplace": "%{personFullName} est affecté sur le poste de travail libérable %{workplaceName}",
 		"ReleasableStaticWorkplaceChip.chipLabel": "Poste de travail libérable : %{workplaceName}",
 		"ReleasableStaticWorkplaceChip.youAreAssignedToReleasableStaticWorkplace": "Vous êtes affecté sur le poste de travail libérable %{workplaceName}",
+		"ReleaseBookedParkingAsyncAction.ariaLabel": "Libérer la réservation du parking",
+		"ReleaseBookedParkingAsyncAction.help": "Libérer la réservation du parking",
 		"ReleaseWorkplaceBookingAsyncAction.ariaLabel": "Libérer cette réservation de poste de travail",
 		"ReleaseWorkplaceBookingAsyncAction.help": "Libérer cette réservation",
+		"RemoveFieldTypeAddressSyncAction.ariaLabel": "Supprimer l'adresse",
+		"RemoveFieldTypeAddressSyncAction.help": "Supprimer l'adresse",
+		"RemoveFieldTypeImageSyncAction.ariaLabel": "Retirer l'image",
+		"RemoveFieldTypeImageSyncAction.help": "Retirer l'image",
+		"RemoveFieldTypeModel3dSyncAction.ariaLabel": "Retirer le modèle 3D",
+		"RemoveFieldTypeModel3dSyncAction.help": "Retirer le modèle 3D",
 		"RemoveFromCartIconButton.help": "Retirer du panier",
 		"RemoveItemColorsOption.help": "Colorier les objets en blanc afin de pouvoir se concentrer sur d'autres éléments sur la carte",
 		"RemoveItemColorsOption.label": "Ne pas colorier les objets",
+		"RemovePersonSearchSelectionAsyncAction.ariaLabel": "Retirer la personne sélectionnée",
+		"RemovePersonSearchSelectionAsyncAction.help": "Retirer la personne sélectionnée",
 		"RenderingTypeError.errorMessages.default": "Votre navigateur ne prend pas en charge les fonctionnalités graphiques requises pour la vue 3D de la carte. Veuillez essayer de mettre à jour votre navigateur ou d'activer l'accélération matérielle dans les paramètres de votre navigateur.",
 		"RenderingTypeError.errorMessages.macAMD": "La vue 3D de la carte peut ne pas fonctionner correctement sur votre Mac avec carte graphique AMD. Veuillez essayer de mettre à jour vos pilotes graphiques ou d'utiliser un autre navigateur.",
 		"RenderingTypeError.errorMessages.mobile": "La vue 3D de la carte n'est pas entièrement prise en charge sur les appareils mobiles. Veuillez utiliser un navigateur de bureau pour une meilleure expérience.",
@@ -111934,6 +113872,10 @@ var jsonTranslationsFiles = {
 		"ReportErrorSteps.report.steps.reload": "Recharger la page et voir si l'erreur est résolue",
 		"ReportErrorSteps.report.steps.title": "Vous pouvez essayer dans l'ordre",
 		"ReportErrorSteps.report.title": "Vous venez de rencontrer une erreur",
+		"ResetFieldTypeIconBadgeSyncAction.ariaLabel": "Réinitialiser le badge",
+		"ResetFieldTypeIconBadgeSyncAction.help": "Réinitialiser les valeurs (texte et couleurs)",
+		"ResetImportCompareEntitiesSyncAction.help": "Recommencer l'import",
+		"ResetImportCompareEntitiesSyncAction.label": "Recommencer",
 		"ResetPaginationSyncAction.help": "Revenir à la première page",
 		"ResetPaginationSyncAction.label": "Réinitialiser la pagination",
 		"ResetRotationAngle.resetRotationAngle": "Réinitilaliser à 0 ° l'angle de la rotation qui est actuellement de %{initialRotation}",
@@ -111941,6 +113883,10 @@ var jsonTranslationsFiles = {
 		"ResetTextAnchorButton.label": "Réinitialiser la position d'ancrage",
 		"ResetTextPositionButton.help": "Cette option remet la position du texte pour cet espace à son emplacement initiale",
 		"ResetTextPositionButton.label": "Réinitialiser la position du texte",
+		"RestartExportPartnerResourcesSyncAction.help": "Recommencer la synchronisation",
+		"RestartExportPartnerResourcesSyncAction.label": "Recommencer",
+		"RestartSephoraSapImportSyncAction.help": "Recharger les données",
+		"RestartSephoraSapImportSyncAction.label": "Recommencer l'import",
 		"RightDrawerContent.close": "Fermer le panneau de droite en cliquant sur la croix.",
 		"RightSearchFilterDrawer.buttons.clear.help": "Effacer tous les filtres et les remettre dans leur état inital afin de vous assurer que vous pouvez voir toutes les entités disponible",
 		"RightSearchFilterDrawer.buttons.clear.label": "Effacer tous les filtres",
@@ -111969,6 +113915,10 @@ var jsonTranslationsFiles = {
 		"RoomBookingCalendar.thisWeek": "Cette semaine",
 		"RoomBookingCalendar.time": "Heure",
 		"RoomBookingCalendar.unavailable": "Indisponible ou passé",
+		"RoomBookingConfirmationButton.bookingConfirmed": "La réservation de parking a été confirmée",
+		"RoomBookingConfirmationButton.confirm": "Confirmer le parking",
+		"RoomBookingConfirmationButton.confirmHelp": "Confirmez que vous utiliserez votre place de parking",
+		"RoomBookingConfirmationButton.confirmHelpWithRange": "Confirmez que vous utiliserez votre place de parking. Vous pouvez confirmer entre %{confirmationRange}.",
 		"RoomCalendarDrawer.calendarTitle": "Calendrier des réservations",
 		"RoomCalendarDrawer.cancelled": "Annulé",
 		"RoomCalendarDrawer.errorFetchingEvents": "Erreur lors du chargement des réservations",
@@ -112008,13 +113958,6 @@ var jsonTranslationsFiles = {
 		"RoomDimensionUpdatedSnackbar.setOne": "La valeur %{value} a été mise sur l'espace %{roomName}",
 		"RoomDimensionUpdatedSnackbar.setTwo": "La valeur %{value} a été mise sur les espaces %{roomName1} et %{roomName2}",
 		"RoomFullName.noName": "Espace sans nom",
-		"RoomGraphHandler.buttons.generateGraph.description": "Générer le graphe d'orientation permet de calculer les nœuds par lesquels la recherche de chemin peut trouver les espaces et le mobilier. Si l'espace d'origine peut être sélectionné, le graphe a déjà été généré.",
-		"RoomGraphHandler.buttons.generateGraph.label": "Générer le graphe d'orientation",
-		"RoomGraphHandler.buttons.selectOriginRoom.description": "Veuillez sélectionner un espace puis vous pourrez via cette option le définir comme espace de départ",
-		"RoomGraphHandler.buttons.selectOriginRoom.label": "Sélectionner l'espace d'origine",
-		"RoomGraphHandler.icons.displayBoundingBoxes.description": "Afficher les espaces d'exclusions du mobilier",
-		"RoomGraphHandler.icons.displayNodes.description": "Afficher les chemins dans les pièces",
-		"RoomGraphHandler.icons.enablePathfinding.description": "Activer le tracé du chemin depuis l'espace source avec la forme sous la souris",
 		"RoomGraphHandler.rooms.origin": "Espace d'origine",
 		"RoomLabels.capacity.suffix": "p.",
 		"RoomMapFilter.Empty": "Il n'y a aucun type d'espace associé aux espaces, vous pouvez en ajouter en modifiant un espace et en y ajoutant associant un type, puis vous pourrez contrôler leur affichage depuis cette séction",
@@ -112053,9 +113996,16 @@ var jsonTranslationsFiles = {
 		"SecurityComplianceModeSwitch.label": "Filtrer les personnes avec des profils de sécurité",
 		"SeeMoreDimensionsChip.lowerPriorityDimensionsTooltip": "Les dimensions de priorité inférieure ne seront disponibles à la réservation que si les précédentes sont saturées",
 		"SeeMoreDimensionsChip.seeMoreDimensions": "+%{count} autres",
+		"SelectAllWrongRoomsSyncAction.help": "Sélectionner ou déselectionner toutes les lignes",
+		"SelectAllWrongRoomsSyncAction.labelWhenChecked": "Tout déselectionner",
+		"SelectAllWrongRoomsSyncAction.labelWhenUnchecked": "Tout sélectionner",
 		"SelectDimensionTypeNavigationLayoutIcon.help": "La navigation par calque d'analyse permet de cliquer sur un espace, sélectionner le calque correspondant et voir les personnes affectées à ce calque ou les postes de travail et les objets associés à ce calque à travers les espaces",
 		"SelectDimensionTypeNavigationLayoutIcon.select": "Sélectionner ce type de calque pour la navigation",
 		"SelectDimensionTypeNavigationLayoutIcon.unselect": "Retirer la navigation par calque d'analyse et revenir à la navigation par espaces",
+		"SelectDimensionTypeNavigationLayoutSyncAction.ariaLabelSelect": "Sélectionner le calque de navigation",
+		"SelectDimensionTypeNavigationLayoutSyncAction.ariaLabelUnselect": "Retirer le calque de navigation",
+		"SelectDimensionTypeNavigationLayoutSyncAction.select": "Sélectionner ce type de calque pour la navigation",
+		"SelectDimensionTypeNavigationLayoutSyncAction.unselect": "Retirer la navigation par calque d'analyse et revenir à la navigation par espaces",
 		"SelectItemTypeShapeFormeLayerSyncAction.ariaLabel": "Points de forme",
 		"SelectItemTypeShapeFormeLayerSyncAction.help": "Éditer les points qui définissent la géométrie de forme du type d'objet",
 		"SelectItemTypeShapeLayerToggle.formeAria": "Points de forme",
@@ -112067,6 +114017,12 @@ var jsonTranslationsFiles = {
 		"SelectItemTypeShapeLayerToggle.visualLabel": "Arêtes visuelles",
 		"SelectItemTypeShapeVisualEdgesLayerSyncAction.ariaLabel": "Arêtes visuelles",
 		"SelectItemTypeShapeVisualEdgesLayerSyncAction.help": "Éditer les arêtes d'affichage, distinctes de la géométrie de forme",
+		"SelectOriginRoomSyncAction.help": "Veuillez sélectionner un espace puis vous pourrez via cette option le définir comme espace de départ",
+		"SelectOriginRoomSyncAction.label": "Sélectionner l'espace d'origine",
+		"SelectPathfindingRouteDestinationSyncAction.help": "Sélectionner l'espace de destination",
+		"SelectPathfindingRouteDestinationSyncAction.label": "Sélectionner la destination",
+		"SelectPathfindingRouteOriginSyncAction.help": "Sélectionner l'espace d'origine",
+		"SelectPathfindingRouteOriginSyncAction.label": "Sélectionner l'origine",
 		"ShapeTextAnchorDrawer.empty": "Merci de sélectionner une forme compatible afin de déplacer le texte d'affichage",
 		"SharingcloudSyncOperationLabel.title": "Syncronisation Sharingcloud",
 		"ShowEntityDrawer.title.listItem": "Voir les informations pour %{determinant.defined} dans la barre latérale",
@@ -112115,6 +114071,10 @@ var jsonTranslationsFiles = {
 		"SyncSelectedJupRolesAsyncButton.label": "Synchroniser la sélection (%{count})",
 		"SyncSelectedPicturesAsyncButton.help": "Synchroniser les photos pour les utilisateurs sélectionnés",
 		"SyncSelectedPicturesAsyncButton.label": "Synchroniser la sélection (%{count})",
+		"SyncZbreEmptyExternalIdsAsyncAction.help": "Lancer la syncro des externalId avec Zbre",
+		"SyncZbreEmptyExternalIdsAsyncAction.label": "Synchroniser avec Zbre (%{count}/%{total})",
+		"SyncZbreSiteSurfyGlobalIdsAsyncAction.help": "Lancer la syncro des variables SurfyId avec Zbre",
+		"SyncZbreSiteSurfyGlobalIdsAsyncAction.label": "Synchroniser avec Zbre (%{count}/%{total})",
 		"TableOptionsRow.checked.false": "Tout sélectionner",
 		"TableOptionsRow.checked.true": "Tout déselectionner",
 		"TableOptionsRow.help": "Sélectionner ou déselectionner toutes les lignes",
@@ -112165,16 +114125,31 @@ var jsonTranslationsFiles = {
 		"TimeSlot.slotBookedWithTime": "%{startTime} - %{endTime} | Réservé par %{organizer}",
 		"TimeSlot.slotRefreshing": "Mise à jour en cours...",
 		"TimeSlot.slotRefreshingWithCountdown": "Mise à jour en cours... Veuillez patienter %{seconds}s avant la confirmation de la réservation par Office365",
+		"ToggleAllMapFiltersNodeInfoSyncAction.ariaLabel": "Basculer tous les détails",
+		"ToggleAllMapFiltersNodeInfoSyncAction.closeHelp": "Fermer tous les détails et indicateurs",
+		"ToggleAllMapFiltersNodeInfoSyncAction.openHelp": "Ouvrir tous les détails et indicateurs",
 		"ToggleAllOpenInfoState.false": "Ouvrir tous les détails et indicateurs",
 		"ToggleAllOpenInfoState.true": "Fermer tous les détails et indicateurs",
 		"ToggleCopilotEnable.help.false": "Activer Surfy Copilot pour permettre la reconnaissance automatique des portes",
 		"ToggleCopilotEnable.help.true": "Désactiver Surfy Copilot et revenir en modélisation manuelle",
 		"ToggleCopilotEnable.label.false": "Activer Surfy Copilot",
 		"ToggleCopilotEnable.label.true": "Désactiver Surfy Copilot",
+		"ToggleCopilotEnableSyncAction.helpWhenDisabled": "Activer Surfy Copilot pour permettre la reconnaissance automatique des portes",
+		"ToggleCopilotEnableSyncAction.helpWhenEnabled": "Désactiver Surfy Copilot et revenir en modélisation manuelle",
+		"ToggleCopilotEnableSyncAction.labelWhenDisabled": "Activer Surfy Copilot",
+		"ToggleCopilotEnableSyncAction.labelWhenEnabled": "Désactiver Surfy Copilot",
+		"ToggleDisplayAllCompaniesSyncAction.help": "Afficher toutes les données",
+		"ToggleDisplayAllCompaniesSyncAction.label": "Afficher toutes les entreprises",
+		"ToggleDisplayFurnitureBboxSyncAction.ariaLabel": "Afficher les espaces d'exclusions du mobilier",
+		"ToggleDisplayFurnitureBboxSyncAction.help": "Afficher les espaces d'exclusions du mobilier",
 		"ToggleDisplayLineButton.help": "Permet d'activer l'affichage du segment et du point d'ancrage pour cet espace",
 		"ToggleDisplayLineButton.label": "Activer l'affichage de l'ancre",
+		"ToggleDisplayPathfindingGridSyncAction.ariaLabel": "Afficher les chemins dans les pièces",
+		"ToggleDisplayPathfindingGridSyncAction.help": "Afficher les chemins dans les pièces",
 		"ToggleEnableFloorLabels.help": "Afficher le nom de l'étage sur le côté de la structure dans la vue 3D",
 		"ToggleEnableFloorLabels.label": "Afficher les étiquettes des étages",
+		"ToggleEnableHoverPathfindingSyncAction.ariaLabel": "Activer le tracé du chemin depuis l'espace source",
+		"ToggleEnableHoverPathfindingSyncAction.help": "Activer le tracé du chemin depuis l'espace source avec la forme sous la souris",
 		"ToggleEnableMissingFloors.help": "Afficher les étages fantômes pour les étages manquantes entre l'étage de niveau 0 et l'étage la plus haute en fonction des niveaux des vraies étages",
 		"ToggleEnableMissingFloors.label": "Afficher les étages fantômes",
 		"ToggleEnableRoomLabels.help": "Afficher les noms des espaces sous forme d'étiquettes sur la vue 3D",
@@ -112182,21 +114157,71 @@ var jsonTranslationsFiles = {
 		"ToggleEnableStructureWalls.help": "Afficher l'empreinte de la structure du bâtiment dans la vue 3D. Non disponible en mode de murs Cuby.",
 		"ToggleEnableStructureWalls.label": "Afficher la structure du bâtiment",
 		"ToggleJupRoleObjectTypeCrudAsyncAction.help": "Mettre à jour la propriété (%{name})",
+		"ToggleMapFiltersNodeInfoSyncAction.ariaLabel": "Basculer les informations du nœud",
+		"ToggleMapFiltersNodeInfoSyncAction.close": "Fermer les informations supplémentaires",
+		"ToggleMapFiltersNodeInfoSyncAction.open": "Voir le détail et les indicateurs pour %{label}",
+		"ToggleMapFiltersNodesAllSyncAction.deselectAll": "Tout désélectionner",
+		"ToggleMapFiltersNodesAllSyncAction.selectAll": "Tout sélectionner",
+		"TogglePathfindingConnectorsModeSyncAction.ariaLabel": "Mode connecteurs",
+		"TogglePathfindingConnectorsModeSyncAction.help": "Afficher le Mode connecteurs (espaces et arêtes liés aux connecteurs)",
+		"TogglePathfindingCurrentFloorMode.help": "Affiche les espaces de l'étage sélectionné et la structure seule des étages inférieurs. Désactivez pour voir tous les étages avec leurs espaces.",
+		"TogglePathfindingCurrentFloorMode.label": "Mode étage courant",
+		"TogglePathfindingEditModeSyncAction.ariaLabel": "Mode édition Pathfinding",
+		"TogglePathfindingEditModeSyncAction.help": "Mode édition Pathfinding : clic sur un espace pour rattacher un connecteur d'espaces",
+		"TogglePathfindingGraphNodesSyncAction.ariaLabel": "Afficher le graph Pathfinding",
+		"TogglePathfindingGraphNodesSyncAction.help": "Afficher les nœuds du graph Pathfinding en 3D",
+		"ToggleSmoothedPathDisplaySyncAction.ariaLabel": "Basculer l'affichage du chemin lissé",
+		"ToggleSmoothedPathDisplaySyncAction.help": "Affichage du chemin lissé (moyenne des points / virages inutiles simplifiés). Désactivé = affichage standard du graphe.",
 		"ToggleWorkplaceFreeConditionTypeIconButton.and": "Voir les postes de travail libre pour au moins un des jours demandés",
 		"ToggleWorkplaceFreeConditionTypeIconButton.or": "Voir les postes de travail libre pour tous les jours demandés",
+		"ToggleWorkplaceTypeItemTypeDetailsSyncAction.helpClose": "Replier les options",
+		"ToggleWorkplaceTypeItemTypeDetailsSyncAction.helpOpen": "Déplier les options",
 		"ToggleZbreSyncCheckbox.help": "La synchronisation permet de colorier les espaces et les postes de travail en fonction des capteurs placés dans Z#bre",
 		"ToggleZbreSyncCheckbox.label": "Synchroniser avec les occupations temps réel dans Z#bre",
 		"TopLevelOrganizationFilter.Empty": "Il n'y a aucune organisation associée aux espaces. Vous pouvez en ajouter en modifiant un espace et en l'associant à une organisation, puis vous pourrez contrôler leur affichage depuis cette section.",
+		"UnifiedBookingConfirmationButton.confirm": "Confirmer poste et parking",
+		"UnifiedBookingConfirmationButton.confirmHelp": "Confirmez en une fois votre présence au poste et votre place de parking",
+		"UnifiedBookingConfirmationButton.confirmHelpWithRange": "Confirmez en une fois votre présence au poste et votre place de parking. Vous pouvez confirmer entre %{confirmationRange}.",
 		"UnlinkMapScaleAsyncButton.help": "Dissocier l'échelle de ce plan le retire du plan, mais conserve l'échelle dans la base de données pour de futurs utilisations",
 		"UnlinkMapScaleAsyncButton.label": "Dissocier l'échelle",
+		"UnselectMapFilterNodesSyncAction.ariaLabel": "Tout désélectionner",
+		"UnselectMapFilterNodesSyncAction.help": "Tout désélectionner",
+		"UpdatePartnerEntitiesAsyncAction.help": "Mettre à jour dans %{partnerName}",
+		"UpdatePartnerEntitiesAsyncAction.label": "Mettre à jour dans %{partnerName}",
 		"useOpenMeetingRoomBookingDrawer.bookRoom": "Réserver",
 		"useOpenMeetingRoomBookingDrawer.noRoomName": "Nom d'espace non défini",
 		"useOpenMeetingRoomBookingDrawer.roomBooking": "Réservation d'espace",
 		"useOpenRoomsBulkEditDrawer.drawerHelp": "Modifier les propriétés de tous les espaces sélectionnés",
 		"useOpenRoomsBulkEditDrawer.drawerTitle": "Modification multiple",
+		"usePathfindingProgressTranslation.applying": "Application…",
+		"usePathfindingProgressTranslation.force": "Forcer la régénération",
+		"usePathfindingProgressTranslation.forceHelp": "Ignore le skip (sources inchangées) et régénère le graphe",
+		"usePathfindingProgressTranslation.loadingGraph": "Chargement du graphe…",
+		"usePathfindingProgressTranslation.phases.build_rooms": "Construction des salles (%{roomCount})",
+		"usePathfindingProgressTranslation.phases.building_list_floors": "Liste des étages (%{floorCount})",
+		"usePathfindingProgressTranslation.phases.building_ready": "Graphe bâtiment prêt",
+		"usePathfindingProgressTranslation.phases.campus_connectors": "Re-stitch connecteurs du bâtiment",
+		"usePathfindingProgressTranslation.phases.finalize_merge": "Fusion du graphe (%{nodeCount} nœuds)",
+		"usePathfindingProgressTranslation.phases.floor_generate": "Génération étage %{floorId} (%{index}/%{total})",
+		"usePathfindingProgressTranslation.phases.floor_skip": "Étage %{floorId} inchangé — skip (%{index}/%{total})",
+		"usePathfindingProgressTranslation.phases.load_layout": "Chargement du plan",
+		"usePathfindingProgressTranslation.phases.persist": "Enregistrement",
+		"usePathfindingProgressTranslation.phases.sparsify_portals": "Simplification des portails",
+		"usePathfindingProgressTranslation.queued": "En file…",
+		"usePathfindingProgressTranslation.status.failed": "Échec",
+		"usePathfindingProgressTranslation.status.idle": "Inactif",
+		"usePathfindingProgressTranslation.status.queued": "En file",
+		"usePathfindingProgressTranslation.status.ready": "Prêt",
+		"usePathfindingProgressTranslation.status.running": "En cours",
+		"usePathfindingProgressTranslation.step": "%{label} (%{ms} ms)",
+		"usePathfindingProgressTranslation.withHistory": "%{current} | %{history}",
 		"UserNotPartOfCompanyAdminCanCreate.createButton": "Créer l'association",
 		"UserNotPartOfCompanyAdminCanCreate.message": "Vous n'êtes pas associé à l'entreprise %{companyId}.",
 		"useSearchAndAssociateListItemTooltip.listItemSelect": "Sélectionner %{label}",
+		"ValidateBuildingFloorsSelectionSyncAction.help": "Valider la sélection",
+		"ValidateBuildingFloorsSelectionSyncAction.label": "Valider",
+		"ValidateEnterpriseConnectionAsyncAction.help": "Valider l'email permet de connaître votre entreprise et de vous orienter vers la bonne plateforme d'authentification",
+		"ValidateEnterpriseConnectionAsyncAction.label": "Valider",
 		"validation.regex.company.name": "Le nom de l'entreprise doit être en minuscules, contenir uniquement des lettres, des chiffres et des tirets",
 		"validation.regex.company.workplaceBookingConfirmationRange": "La plage de confirmation de réservation doit être au format HH:MM-HH:MM@Timezone IANA (ex: 06:00-10:30@Europe/Paris)",
 		"validation.regex.default": "La valeur doit correspondre au format : %{pattern}",
@@ -112238,6 +114263,17 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.AddSegmentPointOption.help.enable": "Ajouter un sommet sur un segment permet de mettre un point n'importe ou sans tenir compte des autres points",
 		"WorkCanvas.Options.AddSegmentPointOption.label.disable": "Arrêter l'ajout d'un sommet sur un segment",
 		"WorkCanvas.Options.AddSegmentPointOption.label.enable": "Ajouter un sommet sur un segment",
+		"WorkCanvas.Options.AddStructureExclusionOption.help.disable": "Arrêter la création de l'exclusion structure",
+		"WorkCanvas.Options.AddStructureExclusionOption.help.enable": "Dessiner un polygone d'exclusion structure (patio, vide, colonne) à l'intérieur de la forme extérieure",
+		"WorkCanvas.Options.AddStructureExclusionOption.label.disable": "Arrêter l'ajout d'exclusion structure",
+		"WorkCanvas.Options.AddStructureExclusionOption.label.enable": "Ajouter une exclusion structure",
+		"WorkCanvas.Options.AddStructureExclusionOption.namePlaceholder": "Nom (optionnel)",
+		"WorkCanvas.Options.AddStructureExclusionPointOption.help.disable": "Arrêter la création de sommets d'exclusion structure",
+		"WorkCanvas.Options.AddStructureExclusionPointOption.help.enable": "Ajouter un sommet sur le polygone d'exclusion structure sélectionné",
+		"WorkCanvas.Options.AddStructureExclusionPointOption.label.disable": "Arrêter l'ajout d'un sommet d'exclusion structure",
+		"WorkCanvas.Options.AddStructureExclusionPointOption.label.enable": "Ajouter un sommet d'exclusion structure",
+		"WorkCanvas.Options.AddStructureExclusionSaveOption.help": "Enregistrer l'exclusion structure dessinée",
+		"WorkCanvas.Options.AddStructureExclusionSaveOption.label": "Enregistrer l'exclusion structure",
 		"WorkCanvas.Options.AddStructurePointOption.help.disable": "Arrêter la création de sommets",
 		"WorkCanvas.Options.AddStructurePointOption.help.enable": "Ajouter un sommet permet de retravailler avec plus de precisions une forme",
 		"WorkCanvas.Options.AddStructurePointOption.label.disable": "Arrêter l'ajout d'un sommet",
@@ -112274,6 +114310,10 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.DeleteItemTypeVisualEdgesOption.label": "Supprimer les arêtes visuelles",
 		"WorkCanvas.Options.DeleteRoomPointRoomOption.help": "Supprimer les sommets de l'espace",
 		"WorkCanvas.Options.DeleteRoomPointRoomOption.label": "Supprimer les sommets sélectionnés",
+		"WorkCanvas.Options.DeleteStructureExclusionPointOption.help": "Supprimer le ou les sommets d'exclusion structure sélectionnés",
+		"WorkCanvas.Options.DeleteStructureExclusionPointOption.label": "Supprimer le sommet d'exclusion",
+		"WorkCanvas.Options.DeleteStructurePointOption.help": "Supprimer le ou les sommets de la forme extérieure sélectionnés",
+		"WorkCanvas.Options.DeleteStructurePointOption.label": "Supprimer le sommet de structure",
 		"WorkCanvas.Options.DeleteStructureShapeOption.help": "Supprimer totalement la forme de la structure de pouvoir par exemple la redessiner entierement",
 		"WorkCanvas.Options.DeleteStructureShapeOption.label": "Supprimer la forme",
 		"WorkCanvas.Options.DeleteWorkplaceTypeItemTypeOption.help": "Retirer le type d'objet du type de poste de travail",
@@ -112351,6 +114391,12 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.SplitPolygoneOption.label": "Séparer l'espace",
 		"WorkCanvas.Options.SplitRoomPointOption.help": "Séparer le sommet permet de réutiliser plusieurs sommets pour chaque ségment et ainsi créer des espaces séparés",
 		"WorkCanvas.Options.SplitRoomPointOption.label": "Séparer le sommet",
+		"WorkCanvas.Options.StructureExclusionsOption.empty": "Aucune exclusion structure sur cette forme.",
+		"WorkCanvas.Options.StructureExclusionsOption.help.disable": "Fermer la liste des exclusions structure",
+		"WorkCanvas.Options.StructureExclusionsOption.help.enable": "Voir et supprimer les exclusions structure (patio, vide, colonne)",
+		"WorkCanvas.Options.StructureExclusionsOption.label.disable": "Fermer la liste des exclusions structure",
+		"WorkCanvas.Options.StructureExclusionsOption.label.enable": "Lister les exclusions structure",
+		"WorkCanvas.Options.StructureExclusionsOption.rowFallback": "Exclusion structure",
 		"WorkCanvas.Options.TextAnchorOption.help.disable": "Arrêter le déplacement du texte d'affichage",
 		"WorkCanvas.Options.TextAnchorOption.help.enable": "Déplacer le texte d'affichage",
 		"WorkCanvas.Options.TextAnchorOption.label.disable": "Arrêter la gestion du texte d'affichage",
@@ -112538,7 +114584,11 @@ var jsonTranslationsFiles = {
 		"ZbreItemSitesValidationSync.done": "Terminer",
 		"ZbreItemSitesValidationSync.noAnomalies": "Aucune anomalie détectée sur les sites objets Zbre.",
 		"ZbreItemSitesValidationSync.title": "Anomalies sur les sites objets Zbre (casiers…)",
-		"ZbreSyncOperationLabel.title": "Syncronisation Z#bre"
+		"ZbreSyncOperationLabel.title": "Syncronisation Z#bre",
+		"ZoomOnItemTypeSyncAction.ariaLabel": "Zoomer sur le type d'objet",
+		"ZoomOnMapScaleSyncAction.help": "Zoomer permet de retrouver facilement l'échelle sur le plan.",
+		"ZoomOnMapScaleSyncAction.label": "Zoomer sur l'échelle",
+		"ZoomOnWorkplaceTypeSyncAction.ariaLabel": "Zoomer sur le type de poste"
 	},
 	en: {
 		"AccordionFilterListItemText.moreSelected": "+%{count} others",
@@ -112554,6 +114604,7 @@ var jsonTranslationsFiles = {
 		"AddressDialog.selectedAddress": "Selected address",
 		"AddressDialog.validate": "Validate",
 		"AllTenantsDataQualityTable.enableAllTenantsLabel": "Include all platforms",
+		"AssignOboBuildingAsyncAction.assignHelp": "Assign %{buildingName} to this person so they can book a workplace",
 		"AssignPersonCheckListBuildingAffectations.title": "This person is already directly assigned on other buildings, do you want to remove the following assignments for %{personFullname}",
 		"AssignPersonCheckListDialog.actions.close.help": "Close and don't delete any other assignments",
 		"AssignPersonCheckListDialog.actions.close.label": "To close",
@@ -112565,6 +114616,8 @@ var jsonTranslationsFiles = {
 		"AssignPersonCheckListWorkplaceTransit.title": "The workstation %{workplaceName} is a temporary workstation",
 		"AssignPersonToRoomCheckListDialogTitle.title": "You assigned %{personName} to space %{roomName}",
 		"AssignPersonToWorkplaceCheckListDialogTitle.title": "You have assigned %{personName} to workstation %{workplaceName}",
+		"AssignWorkplaceToCurrentUserAsyncAction.help": "Occupy the workplace",
+		"AssignWorkplaceToCurrentUserAsyncAction.label": "Yes",
 		"Auth0AuthenticationButton.connections.auth0.help": "Log in with your Surfy account",
 		"Auth0AuthenticationButton.connections.auth0.label": "Surfy account (open id)",
 		"AuthenticationButton.connections.auth0.help": "Log in with your Surfy account",
@@ -112600,11 +114653,13 @@ var jsonTranslationsFiles = {
 		"BookingCalendarSubjectEmail.workplaceAm": "[Surfy] Morning — Position %{workplace} %{buildingSuffix}",
 		"BookingCalendarSubjectEmail.workplaceDefaultName": "Job",
 		"BookingCalendarSubjectEmail.workplacePm": "[Surfy] Afternoon — Station %{workplace} %{buildingSuffix}",
-		"BookingCanceledNotConfirmedEmail.body": "Your workstation reservation %{workplacePart} %{buildingPart} on %{bookingDate} has been cancelled because it was not confirmed before %{confirmationEndTime} .",
+		"BookingCanceledNotConfirmedEmail.bodyRoom": "Your parking reservation %{roomPart} %{buildingPart} on %{bookingDate} has been cancelled because it was not confirmed before %{confirmationEndTime} .",
+		"BookingCanceledNotConfirmedEmail.bodyWorkplace": "Your workstation reservation %{workplacePart} %{buildingPart} on %{bookingDate} has been cancelled because it was not confirmed before %{confirmationEndTime} .",
 		"BookingCanceledNotConfirmedEmail.buildingPart": " in the building %{buildingName}",
 		"BookingCanceledNotConfirmedEmail.firstNameSuffix": " %{firstName}",
 		"BookingCanceledNotConfirmedEmail.greeting": "Hello %{firstNameSuffix}",
 		"BookingCanceledNotConfirmedEmail.nextBookings": "For your future bookings, you will need to confirm your attendance between %{confirmationStartTime} and %{confirmationEndTime} from the &quot;My schedule&quot; page:",
+		"BookingCanceledNotConfirmedEmail.roomPart": " ( %{roomName} )",
 		"BookingCanceledNotConfirmedEmail.subject": "Your reservation for %{bookingDate} has been cancelled.",
 		"BookingCanceledNotConfirmedEmail.workplacePart": " ( %{workplaceName} )",
 		"BookingDialog.attendeesHelper": "Select collaborators or press Enter to add an email address.",
@@ -112629,10 +114684,12 @@ var jsonTranslationsFiles = {
 		"BookingReleasedStaticDeskWorkplaceTitle.bookWorkplace": "Reserve this workstation",
 		"BookingReleasedStaticDeskWorkplaceTitle.introMany": "This workstation is made available because these people will not be at the office today.",
 		"BookingReleasedStaticDeskWorkplaceTitle.introOne": "This workstation is made available because this person will not be at the office today.",
-		"BookingReminderNotConfirmedEmail.body": "Your workstation reservation for %{bookingDate} is not yet confirmed.",
+		"BookingReminderNotConfirmedEmail.bodyRoom": "Your parking reservation %{roomPart} for %{bookingDate} is not yet confirmed.",
+		"BookingReminderNotConfirmedEmail.bodyWorkplace": "Your workstation reservation for %{bookingDate} is not yet confirmed.",
 		"BookingReminderNotConfirmedEmail.confirmBefore": "Please confirm your attendance before %{confirmationEndTime} from the &quot;My schedule&quot; page:",
 		"BookingReminderNotConfirmedEmail.firstNameSuffix": " %{firstName}",
 		"BookingReminderNotConfirmedEmail.greeting": "Hello %{firstNameSuffix}",
+		"BookingReminderNotConfirmedEmail.roomPart": " ( %{roomName} )",
 		"BookingReminderNotConfirmedEmail.subject": "Confirmation required for today's reservation",
 		"BookingReporting.pageTitle": "Booking Reporting",
 		"BookingReportingDetailTable.columnActualRate": "Actual occupancy rate",
@@ -112699,6 +114756,10 @@ var jsonTranslationsFiles = {
 		"BookRandomParkingButton.parking.release.help": "Release parking reservation",
 		"BookRandomParkingButton.parking.viewOnMap": "See the reserved parking on the map",
 		"BookRandomParkingButton.parking.viewOnMapWithSlot": "See the map for the parking area reserved for the period %{slotString}",
+		"BookWorkplaceOnBuildingFloorAsyncAction.availableWorkplaces": "%{freeWorkplaces} available desks",
+		"BookWorkplaceOnBuildingFloorAsyncAction.bookWorkplaceOnFloor": "Book a workplace on %{floorName} for %{slotString}",
+		"BookWorkplaceOnBuildingFloorAsyncAction.buttonLabel": "Book a workplace on %{floorName}",
+		"BookWorkplaceOnBuildingFloorAsyncAction.help": "%{bookedWorkplaces} booking(s), %{freeWorkplaces} workplaces available of %{totalFloorWorkplacesCount}",
 		"BookWorkplaceOnDimensionAsyncButton.drawerTitle": "Reserve a specific workstation for the period %{slotString}",
 		"BookWorkplaceOnDimensionAsyncButton.help": "Reserve a specific workstation on the plan for this slot",
 		"BookWorkplaceOnDimensionAsyncButton.helpWithFloor": "Reserve a workstation on the map in %{dimensionName} on floor %{floorName}",
@@ -112722,8 +114783,6 @@ var jsonTranslationsFiles = {
 		"BuildingCloneCreateAccordion.cloneOrganization": "Associate organizations with spaces",
 		"BuildingCloneCreateAccordion.clonePeople": "Duplicate assignments",
 		"BuildingCloneCreateAccordion.cloneWorkplaces": "Duplicate workstations",
-		"BuildingCloneCreateAccordion.createCloneHelp": "The scenario will duplicate the building with the selected properties",
-		"BuildingCloneCreateAccordion.createCloneLabel": "Create scenario",
 		"BuildingClonePropertiesSelector.properties.clone.buildingAffectations": "Copy building assignments",
 		"BuildingClonePropertiesSelector.properties.clone.costCenterId": "Copy the cost center of the spaces",
 		"BuildingClonePropertiesSelector.properties.clone.dimensionAffectations": "Copy the analysis layer assignments",
@@ -112877,6 +114936,40 @@ var jsonTranslationsFiles = {
 		"BuildingMenuItem.menu.scenario": "Scenarios ( %{count} )",
 		"BuildingMissingStructuredAddress.message": "The address for building '%{buildingName}' is missing structured components (street, city, etc.)",
 		"BuildingMissingStructuredAddressAction.message": "The address for building '%{buildingName}' is missing structured components (street, city, etc.)",
+		"BuildingPathfindingControls.offlineBanner": "Offline mode — route computed locally from the cached graph",
+		"BuildingPathfindingFloorColumn.ariaLabel": "Floor column",
+		"BuildingPathfindingMapLibre.combosRegionLabel": "Origin and destination",
+		"BuildingPathfindingMapLibre.gatedUnavailable": "Pathfinding is not enabled for this company",
+		"BuildingPathfindingMapLibre.loadingRead": "Loading building plan and navigation graph…",
+		"BuildingPathfindingMapLibre.mapRegionLabel": "Map (MapLibre)",
+		"BuildingPathfindingMapLibre.mapStubHint": "MapLibre map",
+		"BuildingPathfindingMapLibre.routeResultError": "Failed to compute path",
+		"BuildingPathfindingMapLibre.routeResultFound": "Path found",
+		"BuildingPathfindingMapLibre.routeResultFoundDetail": "{{pointCount}} pts · {{spaceCount}} spaces",
+		"BuildingPathfindingMapLibre.routeResultLoading": "Computing path…",
+		"BuildingPathfindingMapLibre.routeResultNone": "No path",
+		"BuildingPathfindingMapLibre.selectDestination": "Destination",
+		"BuildingPathfindingMapLibre.selectDestinationHelp": "Search for the destination space in this building",
+		"BuildingPathfindingMapLibre.selectOrigin": "Origin",
+		"BuildingPathfindingMapLibre.selectOriginHelp": "Search for the origin space in this building",
+		"BuildingPathfindingMapLibre.title": "Building pathfinding",
+		"BuildingPathfindingMapLibreHoverCard.segmentConnectorLabel": "Segment connector #%{id}",
+		"BuildingPathfindingOverlayStatusCluster.connectorTraits": "Connectors · %{count} traits",
+		"BuildingPathfindingOverlayStatusCluster.nodes": "Nodes · %{count}",
+		"BuildingPathfindingOverlayStatusCluster.routePoints": "Route · %{count} pts",
+		"BuildingPathfindingTabControlsHost.combosRegionLabel": "Origin and destination",
+		"BuildingPathfindingTabControlsHost.routeResultError": "Failed to compute path",
+		"BuildingPathfindingTabControlsHost.routeResultFound": "Path found",
+		"BuildingPathfindingTabControlsHost.routeResultFoundDetail": "{{pointCount}} pts · {{spaceCount}} spaces",
+		"BuildingPathfindingTabControlsHost.routeResultLoading": "Computing path…",
+		"BuildingPathfindingTabControlsHost.routeResultNone": "No path",
+		"BuildingPathfindingTabControlsHost.selectDestination": "Destination",
+		"BuildingPathfindingTabControlsHost.selectDestinationHelp": "Search for the destination space in the building",
+		"BuildingPathfindingTabControlsHost.selectOrigin": "Origin",
+		"BuildingPathfindingTabControlsHost.selectOriginHelp": "Search for the origin space in the building",
+		"BuildingPathfindingTabControlsHost.title": "Building pathfinding",
+		"BuildingRegeneratePathfindingGraphAsyncAction.help": "Enqueue asynchronous pathfinding graph regeneration for this building",
+		"BuildingRegeneratePathfindingGraphAsyncAction.label": "Regenerate pathfinding graph",
 		"BuildingReports.items.sheets.merged": "Merger",
 		"BuildingReports.items.sheets.physicals": "Physical Objects",
 		"BuildingReports.items.sheets.virtuals": "Virtual Objects",
@@ -112946,8 +115039,14 @@ var jsonTranslationsFiles = {
 		"CalibrateLayoutDrawer.title": "Calibrate the plan",
 		"CampusBuildingsAccordion.buildingCount": "The number of buildings",
 		"CancelAddItemToRoom.help": "Cancel adding the object to the space",
+		"CancelAddItemToRoomSyncAction.help": "Cancel adding the item to the room (%{shortcut})",
 		"CancelAddWorkplaceToRoom.help": "Cancel adding the workstation to the space",
+		"CancelAddWorkplaceToRoomSyncAction.help": "Cancel adding the workplace to the room (%{shortcut})",
+		"CancelCopyCartImportSyncAction.help": "Cancel the copy",
+		"CancelCopyCartImportSyncAction.label": "Cancel",
 		"CancelDuplicateShapsToRoomMouse.help": "Undo duplicate shapes",
+		"CancelEnterpriseConnectionSyncAction.help": "Return to the authentication page with all options",
+		"CancelEnterpriseConnectionSyncAction.label": "Back",
 		"CenterBboxCircleMarker.tooltip": "Structure anchor (bbox center)",
 		"ChangeColor.browserColorPicker": "Select a color with the browser palette",
 		"ChangeColor.notHexMatchError": "The field does not respect the hexadecimal format of a color",
@@ -112969,14 +115068,31 @@ var jsonTranslationsFiles = {
 		"CheckPersonVehiculeParkingDaySlotCompatibility.noVehicle": "You need to register a vehicle in your profile to book parking spaces",
 		"CheckPersonVehiculeParkingDaySlotSingleBookingPerDayCompatibility.singleBookingPerDayIncompatible": "You already have a parking booking for this day in this building. With your vehicle type, you can only book one parking space per day per building.",
 		"CheckThereIsAtLeastOneFreeRoomInTheBuilding.noFreeParkingAvailable": "No parking spaces available during your time slot",
+		"CleanAllJupRoleObjectTypesAsyncAction.help": "Clean All Object Types",
+		"CleanAllJupRoleObjectTypesAsyncAction.label": "Clean All Object Types",
+		"ClearDimensionTypeNavigationSyncAction.ariaLabel": "Clear dimension-type navigation",
+		"ClearFieldTypeColorSyncAction.ariaLabel": "Clear color",
+		"ClearFieldTypeColorSyncAction.help": "Clear color",
+		"ClearFieldTypeIconSyncAction.ariaLabel": "Clear icon",
+		"ClearFieldTypeIconSyncAction.help": "Clear icon",
+		"ClearJupRoleMatrixObjectTypeFilterSyncAction.ariaLabel": "Clear search",
+		"ClearJupRoleMatrixObjectTypeFilterSyncAction.help": "Clear search",
+		"ClearMeetingRoomsFiltersSyncAction.help": "Clear filters",
 		"ClickOnIndexViewMenuPathBreadcrumb.clickOnLabel": "Click on:",
 		"CloneEntitiesFailed.noAccess": "You do not have access to this entity",
 		"CloneEntitiesFailed.reloadHint": "Your displayed data may be outdated. Please reload the page:",
+		"CloseAssignPersonCheckListDialogSyncAction.help": "Close without removing other assignments",
+		"CloseAssignPersonCheckListDialogSyncAction.label": "Close",
+		"CloseWrongRoomsDialogSyncAction.help": "Close this dialog",
+		"CloseWrongRoomsDialogSyncAction.label": "Close",
 		"CloudinadryWidgetLoader.error.cloudinary-api-missing": "Cloudinary script loaded but createUploadWidget API is missing.",
 		"CloudinadryWidgetLoader.error.missing-cloud-name": "Cloudinary could not start: cloud name is missing from public configuration.",
 		"CloudinadryWidgetLoader.error.missing-unsigned-preset": "Cloudinary could not start: upload unsignedPreset is missing from runtime configuration.",
-		"CloudinadryWidgetLoader.error.script-load-failed": "Cloudinary could not load the widget script (network, CSP, or ad blocker).",
+		"CloudinadryWidgetLoader.error.script-load-failed": "Could not load the Cloudinary widget script (widget.cloudinary.com) — often blocked by a corporate proxy/firewall or an ad blocker.",
 		"CloudinadryWidgetLoader.error.widget-create-failed": "Cloudinary could not create the upload widget.",
+		"CloudinadryWidgetLoader.fallback.help": "Pick a local image (direct Cloudinary upload, without the CDN widget)",
+		"CloudinadryWidgetLoader.fallback.hint": "A local file picker remains available (upload via api.cloudinary.com).",
+		"CloudinadryWidgetLoader.fallback.warningAria": "Cloudinary CDN widget failed; native file upload fallback enabled",
 		"CollapseSwitchButton.help.false": "See the detail",
 		"CollapseSwitchButton.help.true": "Hide the detail",
 		"CollapseWorkplaceAffectationList.title": "Assign this person for the following days only",
@@ -113017,6 +115133,8 @@ var jsonTranslationsFiles = {
 		"CompanyTypeLabel.notClassified": "Unclassified platform",
 		"CompareEntities.buttons.reset.help": "Restart the import",
 		"CompareEntities.buttons.reset.label": "Restart",
+		"CompareImportOptionsBarAsyncAction.help": "Start comparison with Surfy data to determine import changes",
+		"CompareImportOptionsBarAsyncAction.label": "Compare",
 		"CompareObjectTypeAutomaticSyncIcon.helpDouble": "After compare, %{first} and %{second} run automatically for this step (no tab buttons).",
 		"CompareObjectTypeAutomaticSyncIcon.helpSingle": "After compare, %{operation} runs automatically for this step (no tab button).",
 		"CompareObjectTypeAutomaticSyncIcon.helpTriple": "After compare, %{first}, %{second}, and %{third} run automatically for this step (no tab buttons).",
@@ -113030,8 +115148,9 @@ var jsonTranslationsFiles = {
 		"ConfirmationButtons.confirm": "Confirm the completion of the action",
 		"ConfirmationButtons.loading": "The action is running, please wait",
 		"ConnectedPartnerContext.title": "You are connected to <b>%{label}</b> ( %{host} )",
+		"CopyBelongsToImportKeySyncAction.ariaLabel": "Copy column title",
+		"CopyBelongsToImportKeySyncAction.help": "Copy column title to clipboard",
 		"CopyBuildingToCart.dialogTitle": "Copy building",
-		"CopyBuildingToCart.help": "Copy building structure",
 		"CopyBuildingToCartCancelButton.help": "Close and cancel",
 		"CopyBuildingToCartCancelButton.label": "Cancel",
 		"CopyBuildingToCartCopyButton.help": "Copy the information",
@@ -113039,8 +115158,22 @@ var jsonTranslationsFiles = {
 		"CopyBuildingToCartSaveToFileButton.help": "Save the content to a JSON file",
 		"CopyBuildingToCartSaveToFileButton.label": "Save to file",
 		"CopyCartContentIntoTenant.buttons.single.paste.help": "Import to this company",
+		"CopyEqualsIdsInfoTabSyncAction.help": "Copy entity ids to clipboard",
+		"CopyEqualsIdsInfoTabSyncAction.label": "Copy entity ids to clipboard",
+		"CopyFieldTypePasswordSyncAction.ariaLabel": "Copy password",
+		"CopyFieldTypePasswordSyncAction.help": "Copy password",
+		"CopyFloorGeoJsonSyncAction.help": "Copy GeoJson to Clipboard",
+		"CopyFloorGeoJsonSyncAction.label": "COPY",
 		"CopyImagePathToClipboard.CopyUrl": "Copy url",
+		"CopyImportScalarPropertySyncAction.ariaLabel": "Copy to clipboard",
+		"CopyImportScalarPropertySyncAction.help": "Copy to clipboard",
+		"CopyIntoClipboardSyncAction.help": "Copy to clipboard",
+		"CopyItemTypePointsSyncAction.help": "Copy points to clipboard",
+		"CopyItemTypePointsSyncAction.label": "Copy points to clipboard",
 		"CopyItemTypesToCart.help": "Copy item types to cart",
+		"CopyItemTypesToCartAsyncAction.ariaLabel": "Copy item types to cart",
+		"CopyItemTypesToCartAsyncAction.help": "Copy item types to cart",
+		"CopyWorkplaceTypesToCartAsyncAction.help": "Copy workplace types to the cart",
 		"CopyWorkplaceTypeToCart.help": "Copy workstation types to cart",
 		"CostCenterMapFilter.Empty": "There are no cost centers currently associated with spaces, you can add more by modifying a space and associating a cost center with it, then you can control their display from this section",
 		"CostCenterMapFilterTabs.tabs.people": "People",
@@ -113048,8 +115181,16 @@ var jsonTranslationsFiles = {
 		"CostCenterMapFilterTabs.tabs.workplaces": "Personal work places",
 		"CostCenterWorkplaceMapFilter.Empty": "There is currently no cost center associated with the workstations, you can add one by modifying a workstation and associating a cost center with it, then you can control their display from this section",
 		"CostCenterWorkplaceMapFilter.nodeInfo.workplacesCount": "There are %{count} workstations with cost center %{name}",
+		"CreateBuildingCloneAsyncAction.help": "The scenario will duplicate the building with the selected properties",
+		"CreateBuildingCloneAsyncAction.label": "Create scenario",
 		"CreateCleanInventoryItemsAsyncButton.help": "Create missing items",
 		"CreateCleanInventoryItemsAsyncButton.label": "Create",
+		"CreateFieldTypeIconBadgeSyncAction.help": "Opens the badge editor (text and colors)",
+		"CreateFieldTypeIconBadgeSyncAction.label": "Create badge",
+		"CreateGuestAsyncAction.help": "Create guest",
+		"CreateGuestAsyncAction.label": "Create guest",
+		"CreatePartnerEntitiesAsyncAction.help": "Create in %{partnerName}",
+		"CreatePartnerEntitiesAsyncAction.label": "Create in %{partnerName}",
 		"CubyFitToViewIsometricButtonOption.help": "Center plan on spaces in isometric view",
 		"CubyFitToViewIsometricButtonOption.label": "Center the plane in isometric view",
 		"CubyFitToViewZenithalButtonOption.help": "Center the plan on the spaces in zenithal view",
@@ -113120,12 +115261,17 @@ var jsonTranslationsFiles = {
 		"DefaultViewSetIndicator.recommendedViewTooltip": "This view is recommended for this building",
 		"DeleteCleanInventoryItemsAsyncButton.help": "Delete items that can be removed",
 		"DeleteCleanInventoryItemsAsyncButton.label": "Delete",
+		"DeleteCompanyReportingDataAsyncAction.ariaLabel": "Delete reporting data",
+		"DeleteCompanyReportingDataAsyncAction.help": "Delete computed reporting data; reporting must be recalculated afterwards. This option cleans reporting data.",
+		"DeleteCompanyReportingDataAsyncAction.progress": "Deleting reporting data for %{objectType}: %{current}/%{total}",
 		"DeleteDialog.cancel.help": "Undelete",
 		"DeleteDialog.cancel.label": "Cancel",
 		"DeleteDialog.content": "You are about to delete <b>%{determinant.undefined}</b> , this action is not reversible and may have impacts, are you sure you want to perform this action?",
 		"DeleteDialog.delete.help": "Permanently delete %{determinant.defined}",
 		"DeleteDialog.delete.label": "Remove",
 		"DeleteDialog.title": "Remove %{determinant.undefined}",
+		"DeleteFieldTypeIconBadgeSyncAction.ariaLabel": "Delete badge",
+		"DeleteFieldTypeIconBadgeSyncAction.help": "Delete badge",
 		"DeleteMapScaleAsyncButton.help": "Deleting the scale is the same as removing the scale from the plan and deleting it from the base, it will no longer be accessible via other plans. It is not possible to delete a scale that is on multiple floors.",
 		"DeleteMapScaleAsyncButton.label": "Delete scale",
 		"DeleteMultipleDialog.cancel.help": "Undelete",
@@ -113135,8 +115281,12 @@ var jsonTranslationsFiles = {
 		"DeleteMultipleDialog.delete.label": "Remove",
 		"DeleteMultipleDialog.title": "Remove %{determinants.undefined}",
 		"DeleteMultipleEntities.help": "Delete selected %{determinants.defined}",
+		"DeletePartnerEntitiesAsyncAction.help": "Delete in %{partnerName}",
+		"DeletePartnerEntitiesAsyncAction.label": "Delete in %{partnerName}",
+		"DeleteStructureExclusionAsyncAction.ariaLabel": "Remove structure exclusion",
+		"DeleteStructureExclusionAsyncAction.help": "Remove this structure exclusion (patio, void, column) without affecting the outer shape",
 		"DeleteWorkplace.help": "Delete workstation: [ %{name} ], assignments will also be deleted",
-		"DeskBookingConfirmationButton.bookingConfirmed": "The booking has been confirmed",
+		"DeskBookingConfirmationButton.bookingConfirmed": "Workplace booking confirmed",
 		"DeskBookingConfirmationButton.confirm": "Confirm",
 		"DeskBookingConfirmationButton.confirmHelp": "Confirm that you are present at your workplace",
 		"DeskBookingConfirmationButton.confirmHelpWithRange": "Confirm that you are present at your workplace. You can confirm between %{confirmationRange}.",
@@ -113325,9 +115475,19 @@ var jsonTranslationsFiles = {
 		"DisplayWorkplaceTexts.workplaceUsageType.label": "Type of use",
 		"distance.centimeter": "Centimeters",
 		"distance.meter": "Meters",
+		"DownloadBuildingDistributionCostByFloorsSyncAction.help": "Download Excel to share cost-center allocation keys and qualified areas by floor",
+		"DownloadBuildingDistributionCostByFloorsSyncAction.label": "Download Excel with floor allocations",
+		"DownloadBuildingDistributionCostSyncAction.help": "Download Excel to share cost-center allocation keys and qualified areas",
+		"DownloadBuildingDistributionCostSyncAction.label": "Download Excel without floor allocations",
+		"DownloadBuildingIfcSyncAction.help": "Download IFC file",
+		"DownloadBuildingIfcSyncAction.label": "Download File",
 		"DownloadBuildingImagesAccordion.accordion.title": "Export images of the whole building",
 		"DownloadBuildingImagesAccordion.buttons.download.help": "Download all the plans of all the floors of the building in png format in a zip, the waiting time for this extraction can be long",
 		"DownloadBuildingImagesAccordion.buttons.download.label": "Download ZIP",
+		"DownloadCopilotDoorImagesSyncAction.help": "DL images",
+		"DownloadCopilotDoorImagesSyncAction.label": "DL IMAGES",
+		"DownloadFlatBuildingAsyncAction.ariaLabel": "Download flat building Excel",
+		"DownloadFlatBuildingAsyncAction.help": "Download the Excel file of spaces and workplaces with identifiers",
 		"DownloadImageButton.helpNoLegend": "Download the full plan in good quality without the legend; export may take longer.",
 		"DownloadImageButton.helpWithLegend": "Download the full plan in good quality with the legend; export may take longer.",
 		"DownloadImageButton.labelNoLegend": "Download plan without legend (PNG)",
@@ -113357,6 +115517,10 @@ var jsonTranslationsFiles = {
 		"DqReportStatusCard.viewFullReport": "View full report",
 		"DropDownOptions.moreOptions": "See more options for %{determinant.defined} %{name}",
 		"EditEntityDrawer.title.edit": "Edit %{determinant.defined}",
+		"EditFieldTypeAddressSyncAction.ariaLabel": "Edit address",
+		"EditFieldTypeAddressSyncAction.help": "Edit address",
+		"EditFieldTypeIconSyncAction.ariaLabel": "Edit icon",
+		"EditFieldTypeIconSyncAction.help": "Edit icon",
 		"EditInlineToggleIconButton.cancel.help": "Stop editing without saving",
 		"EditInlineToggleIconButton.edit.help": "Edit the properties for %{determinant.defined} directly on this page",
 		"EditInlineToggleIconButton.edit.label": "Edit",
@@ -113447,6 +115611,8 @@ var jsonTranslationsFiles = {
 		"Errors.ROOM_BOOKING_CONFLICT": "The space is already reserved for this time slot. Please choose another time or space.",
 		"Errors.WORKPLACE_BOOKING_CONFLICT": "The workstation is already reserved for this time slot. Please choose another time or workstation.",
 		"ErrorTextZone.reload": "Redo the operation",
+		"EscapeCompareObjectTypeStepSyncAction.help": "Skip this step and go directly to the next one",
+		"EscapeCompareObjectTypeStepSyncAction.label": "Skip this step",
 		"ExportQueryNodeToFileButton.help.list": "Download in excel %{determinants.defined}",
 		"FetchSocTenantEventsAsyncAction.help": "Fetches security changes and id snapshots for the company since the selected date",
 		"FetchSocTenantEventsAsyncAction.label": "Run security audit",
@@ -113480,11 +115646,23 @@ var jsonTranslationsFiles = {
 		"FieldTypeIndexBoolean.help": "Modify the value directly",
 		"FieldTypeIndexBoolean.values.false": "No",
 		"FieldTypeIndexBoolean.values.true": "Yes",
+		"FieldTypeLegendConfiguration.familyCostCenters": "Cost centers",
+		"FieldTypeLegendConfiguration.familyOrganizationsDirection": "Directions",
+		"FieldTypeLegendConfiguration.familyOrganizationsService": "Services",
+		"FieldTypeLegendConfiguration.familyRoomTypeGroups": "Room type groups",
+		"FieldTypeLegendConfiguration.familyRoomTypes": "Room types",
+		"FieldTypeLegendConfiguration.legacyRoomTypeGroups": "Room type groups — per-entity selection",
+		"FieldTypeLegendConfiguration.legacyRoomTypes": "Room types — per-entity selection",
+		"FieldTypeLegendConfiguration.selectionByEntity": "Entity property selection",
+		"FieldTypeLegendConfiguration.selectionByFilter": "Filter selection",
+		"FieldTypeLegendConfiguration.selectionStructure": "Structure property selection",
 		"FieldTypeModel3d.Remove": "Remove 3D model",
 		"FieldTypeModel3d.Upload": "Change 3D model",
 		"FieldTypePassword.icons.copy": "Copy the contents of the password to the clipboard",
 		"FieldTypePassword.icons.generate": "Generate a unique password",
 		"FileDropZone.dropZone": "Move and drag the import file into this area or click in the area to select your file",
+		"FinishCopyCartImportSyncAction.help": "Finish and close this window",
+		"FinishCopyCartImportSyncAction.label": "Finish",
 		"FixAddressButton.button.fix": "Correct the address",
 		"FixAddressButton.button.help": "Automatically correct the address of ' %{buildingName} ' using Google Maps geocoding",
 		"FixAddressButton.error.message": "❌ Fix failed: %{error}",
@@ -113534,11 +115712,17 @@ var jsonTranslationsFiles = {
 		"FurnituresSelection.move": "Move the whole group",
 		"FurnituresSelectionDragZone.help": "Move group",
 		"FurnituresSelectionGroupRotation.help": "Rotate all selected shapes around the center of the selection",
+		"GenerateBuildingPathfindingRouteAsyncAction.help": "Compute the path between the selected origin and destination",
+		"GenerateBuildingPathfindingRouteAsyncAction.label": "Generate path",
 		"generateDocumentation.properties.base": "Basic properties",
 		"generateDocumentation.properties.belongsTo": "Associated entities (unique)",
 		"generateDocumentation.properties.hasMany": "Associated entities (list)",
 		"generateDocumentation.properties.mandatory": "Required Properties",
 		"generateDocumentation.properties.technicalName": "Technical name",
+		"GenerateFieldTypePasswordSyncAction.ariaLabel": "Generate password",
+		"GenerateFieldTypePasswordSyncAction.help": "Generate password",
+		"GeneratePathfindingGraphAsyncAction.help": "Generating the orientation graph calculates the nodes through which the path search can find spaces and furniture. If the original space can be selected, the graph has already been generated.",
+		"GeneratePathfindingGraphAsyncAction.label": "Generate the orientation graph",
 		"GenericNoChangeTable.open.help": "See the detail of the identical data",
 		"GenericNoChangeTable.open.label": "View data",
 		"GlobalOptions.CartCopyBuildingOption.help": "Copy buildings to cart",
@@ -113554,7 +115738,6 @@ var jsonTranslationsFiles = {
 		"GoogleApiWrapper.loadingFailed": "Failed to load Google Maps API",
 		"GuestCreateAccordion.contractEndDateLabel": "End date of guest period",
 		"GuestCreateAccordion.contractStartDateLabel": "Start date of guest period",
-		"GuestCreateAccordion.createGuestCta": "Create the guest",
 		"GuestCreateAccordion.createSectionTitle": "Create a guest",
 		"GuestCreateAccordion.emailLabel": "E-mail",
 		"GuestCreateAccordion.firstnameLabel": "First name",
@@ -113654,7 +115837,6 @@ var jsonTranslationsFiles = {
 		"InfoTabContent.open.label": "See import details",
 		"InlinePositionZField.positionZLabel": "Position Z (cm)",
 		"ItemsInventory.EmptyList": "There are no objects in this space",
-		"ItemTypeAvatarSingleView.copy": "Copy points to clipboard",
 		"ItemTypeAvatarSingleView.debug.label": "Enable advanced mode for 3d",
 		"ItemTypeDataQualityFamilyTenantConsistency.buttonFixWithUnclassifiedHelp": "Assign selected item types to tenant UNCLASSIFIED family",
 		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeFamilyId": "Family id",
@@ -113703,7 +115885,6 @@ var jsonTranslationsFiles = {
 		"JupRoleAzureSyncRolesTable.value": "Value",
 		"JupRoleAzureSyncScopeAlert.grantedScopes": "Granted scopes",
 		"JupRoleAzureSyncScopeAlert.scopesOk": "Application.ReadUpdate.All granted.",
-		"JupRoleMatrixObjectTypeFilter.clearSearchHelp": "Clear search",
 		"JupRoleMatrixObjectTypeFilter.noResults": "No object type matches your search.",
 		"JupRoleMatrixObjectTypeFilter.searchAriaLabel": "Filter the object types in the role matrix",
 		"JupRoleMatrixObjectTypeFilter.searchPlaceholder": "Search for an object type (technical name, label…)",
@@ -113732,6 +115913,8 @@ var jsonTranslationsFiles = {
 		"layoutViewSets.peopleDimensionTypes.label": "Neighborhoods",
 		"layoutViewSets.roomType.description": "See the floor plan according to the typology of spaces",
 		"layoutViewSets.roomType.label": "Typologies of spaces",
+		"layoutViewSets.roomTypeGroups.description": "View the floor plan by space typology group",
+		"layoutViewSets.roomTypeGroups.label": "Typology groups",
 		"layoutViewSets.securityCompliance.description": "Analyze the compliance of your security prevention plan and the security profiles of the people affected",
 		"layoutViewSets.securityCompliance.label": "Security Compliance",
 		"layoutViewSets.walls.description": "Focus on spaces and partitions",
@@ -113795,7 +115978,12 @@ var jsonTranslationsFiles = {
 		"MapLegendFloor.title.floor": "Floor",
 		"MapLegendPersonSecurityProfile.title": "Security Profiles",
 		"MapLegendRoom.title": "Spaces",
-		"MeetingRoomBookAction.bookRoom": "Book",
+		"MeetingRoomBookSyncAction.bookRoom": "Book",
+		"MeetingRoomCalendarSyncAction.ariaLabel": "View booking calendar",
+		"MeetingRoomCalendarSyncAction.calendarFor": "Calendar for",
+		"MeetingRoomCalendarSyncAction.help": "View booking calendar",
+		"MeetingRoomCalendarSyncAction.noRoomName": "Undefined space name",
+		"MeetingRoomCalendarSyncAction.roomCalendar": "Space calendar",
 		"MeetingRoomCard.availability.available": "Available in this slot",
 		"MeetingRoomCard.availability.searching": "Searching for availabilities...",
 		"MeetingRoomCard.bookable": "This space is bookable",
@@ -113819,13 +116007,13 @@ var jsonTranslationsFiles = {
 		"MeetingRoomCard.viewPicture": "View space photo",
 		"MeetingRoomCardSeats.seatsMultiple": "%{count} seats",
 		"MeetingRoomCardSeats.seatsSingle": "%{count} seat",
-		"MeetingRoomDirectBookAction.bookingInProgressHelp": "Booking in progress...",
-		"MeetingRoomDirectBookAction.bookingSuccess": "Booking confirmed for %{roomName} (%{timeRange})",
-		"MeetingRoomDirectBookAction.directBook": "Quick booking",
-		"MeetingRoomDirectBookAction.missingSelection": "Select a day and time range first",
-		"MeetingRoomDirectBookAction.noRoomName": "Undefined space name",
-		"MeetingRoomDirectBookAction.roomUnavailable": "The room is not available for this time range",
-		"MeetingRoomDirectBookAction.schedulesLoading": "Checking availability…",
+		"MeetingRoomDirectBookSyncAction.bookingInProgressHelp": "Booking in progress...",
+		"MeetingRoomDirectBookSyncAction.bookingSuccess": "Booking confirmed for %{roomName} (%{timeRange})",
+		"MeetingRoomDirectBookSyncAction.directBook": "Quick booking",
+		"MeetingRoomDirectBookSyncAction.missingSelection": "Select a day and time range first",
+		"MeetingRoomDirectBookSyncAction.noRoomName": "Undefined space name",
+		"MeetingRoomDirectBookSyncAction.roomUnavailable": "The room is not available for this time range",
+		"MeetingRoomDirectBookSyncAction.schedulesLoading": "Checking availability…",
 		"MeetingRooms.clearFilters": "Clear filters",
 		"MeetingRooms.loadingAvailabilityTooltip": "Loading booking availabilities...",
 		"MeetingRooms.noMeetingRoomsConfigured": "You don't have meeting rooms configured via space typology groups",
@@ -113900,6 +116088,8 @@ var jsonTranslationsFiles = {
 		"menu.menuLeft.vehiclePlanningAdmin": "Vehicle scheduling administration",
 		"menu.menuLeft.workplace": "Personal work places",
 		"menu.tenantOperations": "Synchronization",
+		"MergePersonDuplicatesAsyncAction.help": "Merge people",
+		"MergePersonDuplicatesAsyncAction.label": "Merge",
 		"MicrosoftUsersPicturesSyncTitle.title": "Microsoft users pictures sync",
 		"MicrosoftUsersSyncTitle.title": "Microsoft users sync",
 		"models.ApiUser.determinant.defined": "API user",
@@ -114065,6 +116255,8 @@ var jsonTranslationsFiles = {
 		"models.Building.reports.buildingPeople.help": "Report of persons affected in the building",
 		"models.Building.reports.dimensionTypes.fileName": "Dimension types",
 		"models.Building.reports.dimensionTypes.help": "Relationship between dimension types and building reporting data",
+		"models.Building.reports.exceptionalObjects.fileName": "Exceptional objects",
+		"models.Building.reports.exceptionalObjects.help": "Report on exceptional items",
 		"models.Building.reports.organizations.fileName": "Organizations",
 		"models.Building.reports.organizations.help": "Building organizations report",
 		"models.Building.reports.workplaceAffectations.fileName": "Workstation assignments",
@@ -114076,6 +116268,8 @@ var jsonTranslationsFiles = {
 		"models.Building.views.3d-cards.label": "3d",
 		"models.Building.views.3d-map.help": "View all reference buildings in 3D on a map",
 		"models.Building.views.3d-map.label": "3D map",
+		"models.Building.views.3d-maplibre.help": "View the structures of the reference buildings in MapLibre LOD (same rendering as the Cuby Structure SDK)",
+		"models.Building.views.3d-maplibre.label": "MapLibre 3D Map",
 		"models.Building.views.3d.help": "The 3d plan of the building %{name} (cuby)",
 		"models.Building.views.3d.label": "3d plane",
 		"models.Building.views.assets.help": "Real estate assets",
@@ -114086,6 +116280,8 @@ var jsonTranslationsFiles = {
 		"models.Building.views.building-dxf-importer.label": "Import DXF",
 		"models.Building.views.building-ifc.help": "Export this building to IFC for BIM",
 		"models.Building.views.building-ifc.label": "IFC",
+		"models.Building.views.building-pathfinding.help": "Navigating the building: choose a source and a destination, see the route on the map",
+		"models.Building.views.building-pathfinding.label": "Pathfinding",
 		"models.Building.views.cards.help": "View of tiled buildings",
 		"models.Building.views.cards.label": "Info",
 		"models.Building.views.clone.help": "Building <b>scenarios</b> and projects %{name}",
@@ -114171,8 +116367,8 @@ var jsonTranslationsFiles = {
 		"models.Company.properties.workingDaysCount.label": "Number of working days per week",
 		"models.Company.properties.workplaceBookingAgendaSyncEnabled.description": "For each workstation or parking reservation, an invitation is sent to the employee's calendar (Outlook, Gmail, etc.); the invitation is removed in case of cancellation.",
 		"models.Company.properties.workplaceBookingAgendaSyncEnabled.label": "Create a calendar invitation for each reservation",
-		"models.Company.properties.workplaceBookingConfirmationRange.description": "Time range during which users can confirm their workstation reservations. Required format: HH:MM-HH:MM@IANA Timezone (e.g., 06:00-10:30@Europe/Paris). Leave this field blank to disable workstation reservation confirmation. IANA Timezone: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
-		"models.Company.properties.workplaceBookingConfirmationRange.label": "Workstation booking confirmation window",
+		"models.Company.properties.workplaceBookingConfirmationRange.description": "Time slot during which users can confirm their workstation and parking reservations. Required format: HH:MM-HH:MM@IANA Timezone (e.g., 06:00-10:30@Europe/Paris). Leave this field blank to disable confirmation. IANA Timezone: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+		"models.Company.properties.workplaceBookingConfirmationRange.label": "Booking confirmation window (workstation and parking)",
 		"models.Company.reports.export-all-duplicate.fileName": "duplication",
 		"models.Company.reports.export-all-duplicate.help": "Backup company data to make a copy of the platform",
 		"models.Company.reports.export-all.fileName": "backup",
@@ -115125,9 +117321,13 @@ var jsonTranslationsFiles = {
 		"models.PersonToRoomBooking.determinants.defined": "reservations for the people area",
 		"models.PersonToRoomBooking.determinants.undefined": "reservations for the people area",
 		"models.PersonToRoomBooking.plural": "Reservations for the people area",
+		"models.PersonToRoomBooking.properties.emailConfirmationWarningNotificationSentAt.description": "The date and time the email warning was sent before the cancellation of the unconfirmed reservation.",
+		"models.PersonToRoomBooking.properties.emailConfirmationWarningNotificationSentAt.label": "Confirmation email sent on",
 		"models.PersonToRoomBooking.properties.endDatetime.description": "The date and time the reservation ends",
 		"models.PersonToRoomBooking.properties.endDatetime.label": "End of reservation",
 		"models.PersonToRoomBooking.properties.id.label": "Reservation ID for the people area",
+		"models.PersonToRoomBooking.properties.roomHasBeenConfirmedAt.description": "Date and time of confirmation of attendance for space reservation (parking)",
+		"models.PersonToRoomBooking.properties.roomHasBeenConfirmedAt.label": "Space confirmed",
 		"models.PersonToRoomBooking.properties.startDatetime.description": "The start date and time of the reservation",
 		"models.PersonToRoomBooking.properties.startDatetime.label": "Start of booking",
 		"models.PersonToRoomBooking.singular": "Reservation for the people area",
@@ -115254,6 +117454,16 @@ var jsonTranslationsFiles = {
 		"models.RoomConnector.properties.waitTime.description": "The average wait time before the space connector becomes available",
 		"models.RoomConnector.properties.waitTime.label": "Average waiting time",
 		"models.RoomConnector.singular": "Space connector",
+		"models.RoomConnectorType.description": "A type of space connector refers to connectors linking spaces between floors",
+		"models.RoomConnectorType.determinant.defined": "the type of space connector",
+		"models.RoomConnectorType.determinant.undefined": "a type of space connector",
+		"models.RoomConnectorType.determinants.defined": "the types of space connectors",
+		"models.RoomConnectorType.determinants.undefined": "types of space connectors",
+		"models.RoomConnectorType.plural": "types of space connectors",
+		"models.RoomConnectorType.properties.color.description": "Optional connector type color — used in Connector Mode on the Building Pathfinding View",
+		"models.RoomConnectorType.properties.color.label": "Color",
+		"models.RoomConnectorType.properties.name.label": "Name of the space connector type",
+		"models.RoomConnectorType.singular": "type of space connector",
 		"models.RoomPoint.description": "A point in spaces defines the geometric coordinates for drawing the outline of a space",
 		"models.RoomPoint.determinant.defined": "the point of spaces",
 		"models.RoomPoint.determinant.undefined": "a point of spaces",
@@ -115373,6 +117583,26 @@ var jsonTranslationsFiles = {
 		"models.RoomTypeGroupToRoomType.plural": "Space typology group associations to space typology",
 		"models.RoomTypeGroupToRoomType.properties.id.label": "Space typology group association identifier to space typology",
 		"models.RoomTypeGroupToRoomType.singular": "Space typology group association to space typology",
+		"models.SegmentConnector.description": "A segment connector qualifies a door segment as a building entry/exit for Pathfinding",
+		"models.SegmentConnector.determinant.defined": "the segment connector",
+		"models.SegmentConnector.determinant.undefined": "a segment connector",
+		"models.SegmentConnector.determinants.defined": "segment connectors",
+		"models.SegmentConnector.determinants.undefined": "segment connectors",
+		"models.SegmentConnector.plural": "segment connectors",
+		"models.SegmentConnector.properties.name.label": "Segment connector name",
+		"models.SegmentConnector.singular": "segment connector",
+		"models.SegmentConnectorType.description": "A segment connector type qualifies a building entry/exit door (outside-in, outside-out, outside-in-out) — distinct from the SVG door-left/door-right types",
+		"models.SegmentConnectorType.determinant.defined": "the type of segment connector",
+		"models.SegmentConnectorType.determinant.undefined": "a type of segment connector",
+		"models.SegmentConnectorType.determinants.defined": "segment connector types",
+		"models.SegmentConnectorType.determinants.undefined": "segment connector types",
+		"models.SegmentConnectorType.plural": "segment connector types",
+		"models.SegmentConnectorType.properties.code.description": "Tongue Codes: outside-in, outside-out, outside-in-out",
+		"models.SegmentConnectorType.properties.code.label": "Segment connector type code",
+		"models.SegmentConnectorType.properties.color.description": "Optional color of the Segment Connector type — used in Connector Mode on the Building Pathfinding View",
+		"models.SegmentConnectorType.properties.color.label": "Color",
+		"models.SegmentConnectorType.properties.name.label": "Segment connector type name",
+		"models.SegmentConnectorType.singular": "segment connector type",
 		"models.Structure.description": "A structure defines a geometric shape that can be used to calibrate and position features on maps",
 		"models.Structure.determinant.defined": "the structure",
 		"models.Structure.determinant.undefined": "a structure",
@@ -115391,6 +117621,28 @@ var jsonTranslationsFiles = {
 		"models.Structure.views.editor.label": "Edit shape",
 		"models.Structure.views.gmap-calibrate.help": "Calibrate the structure on a map in order to associate geographic coordinates",
 		"models.Structure.views.gmap-calibrate.label": "Calibrate the structure on a map",
+		"models.StructureExclusion.description": "A structural exclusion defines a hole (patio, void, column) inside the external shape of the structure.",
+		"models.StructureExclusion.determinant.defined": "the exclusion of structure",
+		"models.StructureExclusion.determinant.undefined": "a structural exclusion",
+		"models.StructureExclusion.determinants.defined": "structural exclusions",
+		"models.StructureExclusion.determinants.undefined": "structural exclusions",
+		"models.StructureExclusion.plural": "structural exclusions",
+		"models.StructureExclusion.properties.name.description": "Optional name for easy identification of the exclusion (patio, elevator shaft, etc.)",
+		"models.StructureExclusion.properties.name.label": "Last name",
+		"models.StructureExclusion.singular": "structure exclusion",
+		"models.StructureExclusionPoint.description": "A structure exclusion point defines a vertex of the hole polygon inside the outer shape",
+		"models.StructureExclusionPoint.determinant.defined": "the structure exclusion point",
+		"models.StructureExclusionPoint.determinant.undefined": "a structural exclusion point",
+		"models.StructureExclusionPoint.determinants.defined": "structural exclusion points",
+		"models.StructureExclusionPoint.determinants.undefined": "structural exclusion points",
+		"models.StructureExclusionPoint.plural": "structure exclusion points",
+		"models.StructureExclusionPoint.properties.sortIndex.description": "Order of the vertex in the exclusion polygon",
+		"models.StructureExclusionPoint.properties.sortIndex.label": "Sort index",
+		"models.StructureExclusionPoint.properties.x.description": "Horizontal position of the point on the plane",
+		"models.StructureExclusionPoint.properties.x.label": "X coordinate",
+		"models.StructureExclusionPoint.properties.y.description": "Vertical position of the point on the plane",
+		"models.StructureExclusionPoint.properties.y.label": "Y coordinate",
+		"models.StructureExclusionPoint.singular": "structure exclusion point",
 		"models.User.determinant.defined": "the user",
 		"models.User.determinant.undefined": "an user",
 		"models.User.determinants.defined": "the users",
@@ -115689,6 +117941,14 @@ var jsonTranslationsFiles = {
 		"OboBuildingAssignmentChip.assignHelp": "Assign %{buildingName} to this person , allowing them to reserve a workstation.",
 		"OboBuildingComparisonAlert.buildingAccessWarning": "%{targetPersonName} cannot reserve a workstation in the following buildings; click on the building to allow the person to reserve a workstation there.",
 		"OboBuildingComparisonAlert.warningTitle": "Warning: Unassigned buildings",
+		"OpenCopyBuildingToCartAsyncAction.ariaLabel": "Copy building structure",
+		"OpenCopyBuildingToCartAsyncAction.help": "Copy building structure",
+		"OpenGenericNoChangeTableSyncAction.help": "View details of identical data",
+		"OpenGenericNoChangeTableSyncAction.label": "View data",
+		"OpenImportCreateEntitiesTableSyncAction.help": "Show create details — more than 500 rows are hidden by default for performance",
+		"OpenImportCreateEntitiesTableSyncAction.label": "Show entities to create",
+		"OpenInfoTabContentSyncAction.help": "Show import details for identical comparisons",
+		"OpenInfoTabContentSyncAction.label": "Show import details",
 		"OpenRoomsBulkEditSyncAction.help": "Edit properties for all selected rooms",
 		"OperationHelpMarkdown.help.documentation": "Documentation",
 		"OrganizationDataQualityHierarchy.headerChildOrganizations": "Daughter organizations",
@@ -115737,6 +117997,7 @@ var jsonTranslationsFiles = {
 		"PartnerEntityUpdateTab.button.label": "Update in %{partnerName}",
 		"PartnerEntityUpdateTab.headers.type": "Type",
 		"PartnerEntityUpdateTab.progress.syncing": "Synchronizing %{label} ...",
+		"PasteCartContentIntoTenantAsyncAction.help": "Import into this company",
 		"PersonAffectationsPanel.description": "The person's assignments",
 		"PersonAffectationsPanel.title": "assignments",
 		"PersonBadgePanel.description": "Miscellaneous information about the person",
@@ -115756,6 +118017,8 @@ var jsonTranslationsFiles = {
 		"PersonCostCenterWorkplaceFilter.Empty": "There are no cost centers associated with people",
 		"PersonCostCenterWorkplaceInfo.nodeInfo.peopleCount": "There are %{count} people with cost center %{costCenterName}",
 		"PersonCostCenterWorkplaceInfo.nodeInfo.workplaceCount": "There are %{count} workstations with at least one person with cost center %{costCenterName}",
+		"PersonDataQualityOnlyAssociatedtoBuilding.buildingFilterPlaceholder": "Select one or more buildings",
+		"PersonDataQualityOnlyAssociatedtoBuilding.filterByBuildingTitle": "Filter the list by building",
 		"PersonDataQualityWithoutAffectation.costCenterHeader": "Cost center",
 		"PersonDataQualityWithoutAffectation.directionHeader": "Direction",
 		"PersonDataQualityWithoutAffectation.excludeScenarioBuildingsLabel": "Exclude scenario buildings",
@@ -115774,7 +118037,6 @@ var jsonTranslationsFiles = {
 		"PersonRelationsPanelView.title": "Relations",
 		"PersonSearchSelector.changePersonCta": "Change person",
 		"PersonSearchSelector.noPersonSelected": "No person selected",
-		"PersonSearchSelector.removePersonHelp": "Clear selected person",
 		"PersonSearchSelector.selectedPersonLabel": "Person: %{personName}",
 		"PersonSearchSelector.selectPersonCta": "Select a person",
 		"PersonSecurityPanel.description": "Safety and Evacuation Information",
@@ -115806,6 +118068,8 @@ var jsonTranslationsFiles = {
 		"PropertSelectorDrawer.tabLabel": "Properties",
 		"PropertyTypeErrors.title": "The following values do not exist for property <b>%{propertyTypeLabel}</b> in <b>%{objectTypeLabel}</b>",
 		"PWLSelectDimensionCard.selectDimensionCard.title": "Select a dimension",
+		"QualifySegmentConnectorSyncAction.help": "Attach an outside-in / outside-out / outside-in-out type to the selected door segment",
+		"QualifySegmentConnectorSyncAction.label": "Qualify as Segment Connector",
 		"RedirectCountdownTimer.redirectMessage": "This page will automatically redirect to %{redirectTarget} in %{secondsRemaining}s",
 		"ReduceMenuSwitch.open.false": "Collapse the menu to take advantage of the workspace",
 		"ReduceMenuSwitch.open.true": "Expand menu",
@@ -115814,14 +118078,25 @@ var jsonTranslationsFiles = {
 		"RefetchFloorLayoutButton.refetch": "Reload plan data",
 		"RefetchObjectTypeIcon.help": "Reload data for %{determinant.defined}",
 		"RefreshPageButton.label": "Reload page",
+		"RefreshRoomCalendarAsyncAction.help": "Refresh calendar",
 		"ReleasableStaticWorkplaceChip.anotherPersonIsAssignedToReleasableStaticWorkplace": "%{personFullName} is assigned to the freed-up workstation %{workplaceName}",
 		"ReleasableStaticWorkplaceChip.chipLabel": "Workstation available for release: %{workplaceName}",
 		"ReleasableStaticWorkplaceChip.youAreAssignedToReleasableStaticWorkplace": "You are assigned to the available workstation %{workplaceName}",
+		"ReleaseBookedParkingAsyncAction.ariaLabel": "Release parking booking",
+		"ReleaseBookedParkingAsyncAction.help": "Release parking booking",
 		"ReleaseWorkplaceBookingAsyncAction.ariaLabel": "Release this workplace reservation",
 		"ReleaseWorkplaceBookingAsyncAction.help": "Release this reservation",
+		"RemoveFieldTypeAddressSyncAction.ariaLabel": "Remove address",
+		"RemoveFieldTypeAddressSyncAction.help": "Remove address",
+		"RemoveFieldTypeImageSyncAction.ariaLabel": "Remove image",
+		"RemoveFieldTypeImageSyncAction.help": "Remove image",
+		"RemoveFieldTypeModel3dSyncAction.ariaLabel": "Remove 3D model",
+		"RemoveFieldTypeModel3dSyncAction.help": "Remove 3D model",
 		"RemoveFromCartIconButton.help": "Remove from cart",
 		"RemoveItemColorsOption.help": "Color objects white so you can focus on other elements on the map",
 		"RemoveItemColorsOption.label": "Do not color objects",
+		"RemovePersonSearchSelectionAsyncAction.ariaLabel": "Clear selected person",
+		"RemovePersonSearchSelectionAsyncAction.help": "Clear selected person",
 		"RenderingTypeError.errorMessages.default": "Your browser does not support the graphics features required for the 3D map view. Please try updating your browser or enabling hardware acceleration in your browser settings.",
 		"RenderingTypeError.errorMessages.macAMD": "The 3D map view may not work properly on your Mac with AMD graphics card. Please try updating your graphics drivers or using a different browser.",
 		"RenderingTypeError.errorMessages.mobile": "3D map view is not fully supported on mobile devices. Please use a desktop browser for a better experience.",
@@ -115874,6 +118149,10 @@ var jsonTranslationsFiles = {
 		"ReportErrorSteps.report.steps.reload": "Reload the page and see if the error is resolved",
 		"ReportErrorSteps.report.steps.title": "You can try in order",
 		"ReportErrorSteps.report.title": "You have just encountered an error",
+		"ResetFieldTypeIconBadgeSyncAction.ariaLabel": "Reset badge",
+		"ResetFieldTypeIconBadgeSyncAction.help": "Reset values (text and colors)",
+		"ResetImportCompareEntitiesSyncAction.help": "Restart the import",
+		"ResetImportCompareEntitiesSyncAction.label": "Start over",
 		"ResetPaginationSyncAction.help": "Go back to the first page",
 		"ResetPaginationSyncAction.label": "Reset pagination",
 		"ResetRotationAngle.resetRotationAngle": "Reset to 0° the angle of the rotation which is currently %{initialRotation}",
@@ -115881,6 +118160,10 @@ var jsonTranslationsFiles = {
 		"ResetTextAnchorButton.label": "Reset anchor position",
 		"ResetTextPositionButton.help": "This option returns the text position for this space to its original location",
 		"ResetTextPositionButton.label": "Reset text position",
+		"RestartExportPartnerResourcesSyncAction.help": "Restart synchronization",
+		"RestartExportPartnerResourcesSyncAction.label": "Restart",
+		"RestartSephoraSapImportSyncAction.help": "Reload data",
+		"RestartSephoraSapImportSyncAction.label": "Restart import",
 		"RightDrawerContent.close": "Close the right panel by clicking on the cross.",
 		"RightSearchFilterDrawer.buttons.clear.help": "Clear all filters and reset them to their initial state to ensure you can see all available entities",
 		"RightSearchFilterDrawer.buttons.clear.label": "Clear all filters",
@@ -115909,6 +118192,10 @@ var jsonTranslationsFiles = {
 		"RoomBookingCalendar.thisWeek": "This Week",
 		"RoomBookingCalendar.time": "Time",
 		"RoomBookingCalendar.unavailable": "Unavailable or Past",
+		"RoomBookingConfirmationButton.bookingConfirmed": "Parking booking confirmed",
+		"RoomBookingConfirmationButton.confirm": "Confirm parking",
+		"RoomBookingConfirmationButton.confirmHelp": "Confirm that you will use your parking spot",
+		"RoomBookingConfirmationButton.confirmHelpWithRange": "Confirm that you will use your parking spot. You can confirm between %{confirmationRange}.",
 		"RoomCalendarDrawer.calendarTitle": "Booking calendar",
 		"RoomCalendarDrawer.cancelled": "Cancelled",
 		"RoomCalendarDrawer.errorFetchingEvents": "Error loading bookings",
@@ -115948,13 +118235,6 @@ var jsonTranslationsFiles = {
 		"RoomDimensionUpdatedSnackbar.setOne": "Value %{value} has been set on space %{roomName}",
 		"RoomDimensionUpdatedSnackbar.setTwo": "Value %{value} has been set on spaces %{roomName1} and %{roomName2}",
 		"RoomFullName.noName": "unnamed space",
-		"RoomGraphHandler.buttons.generateGraph.description": "Generating the orientation graph calculates the nodes through which the path search can find spaces and furniture. If the original space can be selected, the graph has already been generated.",
-		"RoomGraphHandler.buttons.generateGraph.label": "Generate the orientation graph",
-		"RoomGraphHandler.buttons.selectOriginRoom.description": "Please select a space and then you can use this option to set it as the starting space.",
-		"RoomGraphHandler.buttons.selectOriginRoom.label": "Select the original space",
-		"RoomGraphHandler.icons.displayBoundingBoxes.description": "Show furniture exclusion areas",
-		"RoomGraphHandler.icons.displayNodes.description": "Show paths in rooms",
-		"RoomGraphHandler.icons.enablePathfinding.description": "Enable path tracing from source space with shape under mouse",
 		"RoomGraphHandler.rooms.origin": "Original space",
 		"RoomLabels.capacity.suffix": "p.",
 		"RoomMapFilter.Empty": "There is no space type associated with spaces, you can add more by modifying a space and adding an associated type to it, then you can control their display from this section",
@@ -115993,9 +118273,16 @@ var jsonTranslationsFiles = {
 		"SecurityComplianceModeSwitch.label": "Filter people with security profiles",
 		"SeeMoreDimensionsChip.lowerPriorityDimensionsTooltip": "Lower priority sizes will only be available for booking if the higher priority sizes are full.",
 		"SeeMoreDimensionsChip.seeMoreDimensions": "+ %{count} other",
+		"SelectAllWrongRoomsSyncAction.help": "Select or deselect all rows",
+		"SelectAllWrongRoomsSyncAction.labelWhenChecked": "Deselect all",
+		"SelectAllWrongRoomsSyncAction.labelWhenUnchecked": "Select all",
 		"SelectDimensionTypeNavigationLayoutIcon.help": "Navigation by analysis layer allows you to click on a space, select the corresponding layer and see the people assigned to this layer or the workstations and objects associated with this layer through the spaces",
 		"SelectDimensionTypeNavigationLayoutIcon.select": "Select this layer type for navigation",
 		"SelectDimensionTypeNavigationLayoutIcon.unselect": "Remove navigation by analysis layer and return to navigation by spaces",
+		"SelectDimensionTypeNavigationLayoutSyncAction.ariaLabelSelect": "Select navigation layer",
+		"SelectDimensionTypeNavigationLayoutSyncAction.ariaLabelUnselect": "Clear navigation layer",
+		"SelectDimensionTypeNavigationLayoutSyncAction.select": "Select this layer type for navigation",
+		"SelectDimensionTypeNavigationLayoutSyncAction.unselect": "Remove analysis-layer navigation and return to space navigation",
 		"SelectItemTypeShapeFormeLayerSyncAction.ariaLabel": "Shape points",
 		"SelectItemTypeShapeFormeLayerSyncAction.help": "Edit the points that define the object type shape geometry",
 		"SelectItemTypeShapeLayerToggle.formeAria": "Shape points",
@@ -116007,6 +118294,12 @@ var jsonTranslationsFiles = {
 		"SelectItemTypeShapeLayerToggle.visualLabel": "Visual edges",
 		"SelectItemTypeShapeVisualEdgesLayerSyncAction.ariaLabel": "Visual edges",
 		"SelectItemTypeShapeVisualEdgesLayerSyncAction.help": "Edit display-only edges, distinct from shape geometry",
+		"SelectOriginRoomSyncAction.help": "Select a room first, then use this option to set it as the starting room",
+		"SelectOriginRoomSyncAction.label": "Select origin room",
+		"SelectPathfindingRouteDestinationSyncAction.help": "Select destination space",
+		"SelectPathfindingRouteDestinationSyncAction.label": "Select destination",
+		"SelectPathfindingRouteOriginSyncAction.help": "Select origin space",
+		"SelectPathfindingRouteOriginSyncAction.label": "Select origin",
 		"ShapeTextAnchorDrawer.empty": "Please select a compatible shape to move the display text",
 		"SharingcloudSyncOperationLabel.title": "Sharingcloud synchronization",
 		"ShowEntityDrawer.title.listItem": "See information for %{determinant.defined} in the sidebar",
@@ -116055,6 +118348,10 @@ var jsonTranslationsFiles = {
 		"SyncSelectedJupRolesAsyncButton.label": "Sync selected (%{count})",
 		"SyncSelectedPicturesAsyncButton.help": "Sync pictures for selected users",
 		"SyncSelectedPicturesAsyncButton.label": "Sync Selected (%{count})",
+		"SyncZbreEmptyExternalIdsAsyncAction.help": "Start syncing externalId with Zbre",
+		"SyncZbreEmptyExternalIdsAsyncAction.label": "Sync with Zbre (%{count}/%{total})",
+		"SyncZbreSiteSurfyGlobalIdsAsyncAction.help": "Start syncing SurfyId variables with Zbre",
+		"SyncZbreSiteSurfyGlobalIdsAsyncAction.label": "Sync with Zbre (%{count}/%{total})",
 		"TableOptionsRow.checked.false": "Select all",
 		"TableOptionsRow.checked.true": "Unselect all",
 		"TableOptionsRow.help": "Select or deselect all lines",
@@ -116105,16 +118402,31 @@ var jsonTranslationsFiles = {
 		"TimeSlot.slotBookedWithTime": "%{startTime} - %{endTime} | Booked by %{organizer}",
 		"TimeSlot.slotRefreshing": "Updating...",
 		"TimeSlot.slotRefreshingWithCountdown": "Updating... Please wait %{seconds}s before confirmation",
+		"ToggleAllMapFiltersNodeInfoSyncAction.ariaLabel": "Toggle all details",
+		"ToggleAllMapFiltersNodeInfoSyncAction.closeHelp": "Close all details and indicators",
+		"ToggleAllMapFiltersNodeInfoSyncAction.openHelp": "Open all details and indicators",
 		"ToggleAllOpenInfoState.false": "Open all details and indicators",
 		"ToggleAllOpenInfoState.true": "Close all details and indicators",
 		"ToggleCopilotEnable.help.false": "Enable Surfy Copilot to enable automatic door recognition",
 		"ToggleCopilotEnable.help.true": "Disable Surfy Copilot and return to manual modeling",
 		"ToggleCopilotEnable.label.false": "Activate Surfy Copilot",
 		"ToggleCopilotEnable.label.true": "Disable Surfy Copilot",
+		"ToggleCopilotEnableSyncAction.helpWhenDisabled": "Enable Surfy Copilot for automatic door recognition",
+		"ToggleCopilotEnableSyncAction.helpWhenEnabled": "Disable Surfy Copilot and return to manual modeling",
+		"ToggleCopilotEnableSyncAction.labelWhenDisabled": "Enable Surfy Copilot",
+		"ToggleCopilotEnableSyncAction.labelWhenEnabled": "Disable Surfy Copilot",
+		"ToggleDisplayAllCompaniesSyncAction.help": "Display All Data",
+		"ToggleDisplayAllCompaniesSyncAction.label": "Display all companies",
+		"ToggleDisplayFurnitureBboxSyncAction.ariaLabel": "Show furniture exclusion bounding boxes",
+		"ToggleDisplayFurnitureBboxSyncAction.help": "Show furniture exclusion bounding boxes",
 		"ToggleDisplayLineButton.help": "Allows you to activate the display of the segment and the anchor point for this space",
 		"ToggleDisplayLineButton.label": "Activate anchor display",
+		"ToggleDisplayPathfindingGridSyncAction.ariaLabel": "Show room path nodes",
+		"ToggleDisplayPathfindingGridSyncAction.help": "Show room path nodes",
 		"ToggleEnableFloorLabels.help": "Display the floor name on the side of the structure in the 3D view",
 		"ToggleEnableFloorLabels.label": "Show floor labels",
+		"ToggleEnableHoverPathfindingSyncAction.ariaLabel": "Enable hover pathfinding from source room",
+		"ToggleEnableHoverPathfindingSyncAction.help": "Enable path drawing from the source room to the shape under the mouse",
 		"ToggleEnableMissingFloors.help": "Show ghost floors for missing floors between level 0 floor and highest floor based on real floor levels",
 		"ToggleEnableMissingFloors.label": "Show ghost floors",
 		"ToggleEnableRoomLabels.help": "Display the names of the spaces as labels on the 3D view",
@@ -116122,21 +118434,71 @@ var jsonTranslationsFiles = {
 		"ToggleEnableStructureWalls.help": "Display the building structure footprint in the 3D view. Not available in Cuby wall mode.",
 		"ToggleEnableStructureWalls.label": "Display the building structure",
 		"ToggleJupRoleObjectTypeCrudAsyncAction.help": "Update property ( %{name} )",
+		"ToggleMapFiltersNodeInfoSyncAction.ariaLabel": "Toggle node information",
+		"ToggleMapFiltersNodeInfoSyncAction.close": "Close additional information",
+		"ToggleMapFiltersNodeInfoSyncAction.open": "View details and indicators for %{label}",
+		"ToggleMapFiltersNodesAllSyncAction.deselectAll": "Deselect all",
+		"ToggleMapFiltersNodesAllSyncAction.selectAll": "Select all",
+		"TogglePathfindingConnectorsModeSyncAction.ariaLabel": "Connectors mode",
+		"TogglePathfindingConnectorsModeSyncAction.help": "Show Connectors mode (spaces and edges linked to connectors)",
+		"TogglePathfindingCurrentFloorMode.help": "Displays the spaces on the selected floor and the structure only on the floors below. Turn off to see all floors with their spaces.",
+		"TogglePathfindingCurrentFloorMode.label": "Current floor mode",
+		"TogglePathfindingEditModeSyncAction.ariaLabel": "Pathfinding edit mode",
+		"TogglePathfindingEditModeSyncAction.help": "Pathfinding edit mode: click a space to attach a space connector",
+		"TogglePathfindingGraphNodesSyncAction.ariaLabel": "Show Pathfinding graph",
+		"TogglePathfindingGraphNodesSyncAction.help": "Show Pathfinding graph nodes in 3D",
+		"ToggleSmoothedPathDisplaySyncAction.ariaLabel": "Toggle smoothed path display",
+		"ToggleSmoothedPathDisplaySyncAction.help": "Display of the smoothed path (average of points / unnecessary turns simplified). Disabled = standard graph display.",
 		"ToggleWorkplaceFreeConditionTypeIconButton.and": "See free workstations for at least one of the requested days",
 		"ToggleWorkplaceFreeConditionTypeIconButton.or": "See free workstations for all requested days",
+		"ToggleWorkplaceTypeItemTypeDetailsSyncAction.helpClose": "Collapse options",
+		"ToggleWorkplaceTypeItemTypeDetailsSyncAction.helpOpen": "Expand options",
 		"ToggleZbreSyncCheckbox.help": "Synchronization allows spaces and workstations to be colored according to the sensors placed in Z#ber",
 		"ToggleZbreSyncCheckbox.label": "Synchronize with real-time occupations in Z#ber",
 		"TopLevelOrganizationFilter.Empty": "There are no organizations associated with spaces. You can add organizations by editing a space and associating it with one; you can then control their display from this section.",
+		"UnifiedBookingConfirmationButton.confirm": "Confirm desk and parking",
+		"UnifiedBookingConfirmationButton.confirmHelp": "Confirm both your desk presence and parking spot at once",
+		"UnifiedBookingConfirmationButton.confirmHelpWithRange": "Confirm both your desk presence and parking spot at once. You can confirm between %{confirmationRange}.",
 		"UnlinkMapScaleAsyncButton.help": "Unlinking the scale from this plane removes it from the plane, but keeps the scale in the database for future use",
 		"UnlinkMapScaleAsyncButton.label": "Dissociate the scale",
+		"UnselectMapFilterNodesSyncAction.ariaLabel": "Deselect all",
+		"UnselectMapFilterNodesSyncAction.help": "Deselect all",
+		"UpdatePartnerEntitiesAsyncAction.help": "Update in %{partnerName}",
+		"UpdatePartnerEntitiesAsyncAction.label": "Update in %{partnerName}",
 		"useOpenMeetingRoomBookingDrawer.bookRoom": "Book",
 		"useOpenMeetingRoomBookingDrawer.noRoomName": "Undefined space name",
 		"useOpenMeetingRoomBookingDrawer.roomBooking": "Space booking",
 		"useOpenRoomsBulkEditDrawer.drawerHelp": "Edit properties for all selected rooms",
 		"useOpenRoomsBulkEditDrawer.drawerTitle": "Bulk edit",
+		"usePathfindingProgressTranslation.applying": "Applying…",
+		"usePathfindingProgressTranslation.force": "Force regeneration",
+		"usePathfindingProgressTranslation.forceHelp": "Ignore skip (unchanged sources) and regenerate the graph",
+		"usePathfindingProgressTranslation.loadingGraph": "Loading graph…",
+		"usePathfindingProgressTranslation.phases.build_rooms": "Building rooms (%{roomCount})",
+		"usePathfindingProgressTranslation.phases.building_list_floors": "Listing floors (%{floorCount})",
+		"usePathfindingProgressTranslation.phases.building_ready": "Building graph ready",
+		"usePathfindingProgressTranslation.phases.campus_connectors": "Re-stitching building connectors",
+		"usePathfindingProgressTranslation.phases.finalize_merge": "Merging graph (%{nodeCount} nodes)",
+		"usePathfindingProgressTranslation.phases.floor_generate": "Generating floor %{floorId} (%{index}/%{total})",
+		"usePathfindingProgressTranslation.phases.floor_skip": "Floor %{floorId} unchanged — skip (%{index}/%{total})",
+		"usePathfindingProgressTranslation.phases.load_layout": "Loading floor plan",
+		"usePathfindingProgressTranslation.phases.persist": "Saving",
+		"usePathfindingProgressTranslation.phases.sparsify_portals": "Sparsifying portals",
+		"usePathfindingProgressTranslation.queued": "Queued…",
+		"usePathfindingProgressTranslation.status.failed": "Failed",
+		"usePathfindingProgressTranslation.status.idle": "Idle",
+		"usePathfindingProgressTranslation.status.queued": "Queued",
+		"usePathfindingProgressTranslation.status.ready": "Ready",
+		"usePathfindingProgressTranslation.status.running": "Running",
+		"usePathfindingProgressTranslation.step": "%{label} (%{ms} ms)",
+		"usePathfindingProgressTranslation.withHistory": "%{current} | %{history}",
 		"UserNotPartOfCompanyAdminCanCreate.createButton": "Create the association",
 		"UserNotPartOfCompanyAdminCanCreate.message": "You are not associated with the company %{companyId}.",
 		"useSearchAndAssociateListItemTooltip.listItemSelect": "Select %{label}",
+		"ValidateBuildingFloorsSelectionSyncAction.help": "Validate selection",
+		"ValidateBuildingFloorsSelectionSyncAction.label": "Validate",
+		"ValidateEnterpriseConnectionAsyncAction.help": "Validate email to identify your company and route you to the right auth platform",
+		"ValidateEnterpriseConnectionAsyncAction.label": "Validate",
 		"validation.regex.company.name": "The company name must be in lowercase, contain only letters, numbers and hyphens",
 		"validation.regex.company.workplaceBookingConfirmationRange": "The booking confirmation window must be in HH:MM-HH:MM@IANA Timezone format (e.g., 06:00-10:30@Europe/Paris)",
 		"validation.regex.default": "The value must match the format: %{pattern}",
@@ -116178,6 +118540,17 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.AddSegmentPointOption.help.enable": "Adding a vertex on a segment allows you to put a point anywhere without taking into account the other points",
 		"WorkCanvas.Options.AddSegmentPointOption.label.disable": "Stop adding a vertex on a segment",
 		"WorkCanvas.Options.AddSegmentPointOption.label.enable": "Add a vertex on a segment",
+		"WorkCanvas.Options.AddStructureExclusionOption.help.disable": "Stop the creation of structural exclusion",
+		"WorkCanvas.Options.AddStructureExclusionOption.help.enable": "Draw a structure exclusion polygon (patio, void, column) inside the outer shape",
+		"WorkCanvas.Options.AddStructureExclusionOption.label.disable": "Stop adding structure exclusion",
+		"WorkCanvas.Options.AddStructureExclusionOption.label.enable": "Add a structural exclusion",
+		"WorkCanvas.Options.AddStructureExclusionOption.namePlaceholder": "Name (optional)",
+		"WorkCanvas.Options.AddStructureExclusionPointOption.help.disable": "Stop the creation of structure exclusion vertices",
+		"WorkCanvas.Options.AddStructureExclusionPointOption.help.enable": "Add a vertex on the selected structure exclusion polygon",
+		"WorkCanvas.Options.AddStructureExclusionPointOption.label.disable": "Stop adding a structure exclusion vertex",
+		"WorkCanvas.Options.AddStructureExclusionPointOption.label.enable": "Add a structure exclusion vertex",
+		"WorkCanvas.Options.AddStructureExclusionSaveOption.help": "Save the drawn structure exclusion",
+		"WorkCanvas.Options.AddStructureExclusionSaveOption.label": "Save the structure exclusion",
 		"WorkCanvas.Options.AddStructurePointOption.help.disable": "Stop creating summits",
 		"WorkCanvas.Options.AddStructurePointOption.help.enable": "Adding a vertex makes it possible to rework with more precision a form",
 		"WorkCanvas.Options.AddStructurePointOption.label.disable": "Stop adding a vertex",
@@ -116214,6 +118587,10 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.DeleteItemTypeVisualEdgesOption.label": "Remove visual edges",
 		"WorkCanvas.Options.DeleteRoomPointRoomOption.help": "Remove vertices from space",
 		"WorkCanvas.Options.DeleteRoomPointRoomOption.label": "Remove selected vertices",
+		"WorkCanvas.Options.DeleteStructureExclusionPointOption.help": "Remove the selected structure exclusion vertex(es)",
+		"WorkCanvas.Options.DeleteStructureExclusionPointOption.label": "Remove the exclusion vertex",
+		"WorkCanvas.Options.DeleteStructurePointOption.help": "Delete the selected vertex(es) of the outer shape",
+		"WorkCanvas.Options.DeleteStructurePointOption.label": "Remove the structure's vertex",
 		"WorkCanvas.Options.DeleteStructureShapeOption.help": "Completely remove the shape of the power structure, for example redraw it entirely",
 		"WorkCanvas.Options.DeleteStructureShapeOption.label": "Delete shape",
 		"WorkCanvas.Options.DeleteWorkplaceTypeItemTypeOption.help": "Remove object type from workstation type",
@@ -116291,6 +118668,12 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.SplitPolygoneOption.label": "Separate space",
 		"WorkCanvas.Options.SplitRoomPointOption.help": "Split vertex allows multiple vertices to be reused for each segment and thus create separate spaces",
 		"WorkCanvas.Options.SplitRoomPointOption.label": "Separate vertex",
+		"WorkCanvas.Options.StructureExclusionsOption.empty": "No structural exclusions on this form.",
+		"WorkCanvas.Options.StructureExclusionsOption.help.disable": "Close the list of structure exclusions",
+		"WorkCanvas.Options.StructureExclusionsOption.help.enable": "View and remove structure exclusions (patio, empty, column)",
+		"WorkCanvas.Options.StructureExclusionsOption.label.disable": "Close the list of structure exclusions",
+		"WorkCanvas.Options.StructureExclusionsOption.label.enable": "List the structural exclusions",
+		"WorkCanvas.Options.StructureExclusionsOption.rowFallback": "Structure exclusion",
 		"WorkCanvas.Options.TextAnchorOption.help.disable": "Stop moving display text",
 		"WorkCanvas.Options.TextAnchorOption.help.enable": "Move display text",
 		"WorkCanvas.Options.TextAnchorOption.label.disable": "Stop display text management",
@@ -116478,7 +118861,11 @@ var jsonTranslationsFiles = {
 		"ZbreItemSitesValidationSync.done": "Finish",
 		"ZbreItemSitesValidationSync.noAnomalies": "No anomalies detected on Zbre object sites.",
 		"ZbreItemSitesValidationSync.title": "Zbre object site anomalies (lockers…)",
-		"ZbreSyncOperationLabel.title": "Z#ber synchronization"
+		"ZbreSyncOperationLabel.title": "Z#ber synchronization",
+		"ZoomOnItemTypeSyncAction.ariaLabel": "Zoom on item type",
+		"ZoomOnMapScaleSyncAction.help": "Zoom to quickly find the scale on the floor plan.",
+		"ZoomOnMapScaleSyncAction.label": "Zoom on scale",
+		"ZoomOnWorkplaceTypeSyncAction.ariaLabel": "Zoom on workplace type"
 	},
 	es: {
 		"AccordionFilterListItemText.moreSelected": "+ %{count} otros",
@@ -116494,6 +118881,7 @@ var jsonTranslationsFiles = {
 		"AddressDialog.selectedAddress": "Dirección seleccionada",
 		"AddressDialog.validate": "Validar",
 		"AllTenantsDataQualityTable.enableAllTenantsLabel": "Incluir todas las plataformas",
+		"AssignOboBuildingAsyncAction.assignHelp": "Asignar %{buildingName} a esta persona, permitiéndole reservar una estación de trabajo.",
 		"AssignPersonCheckListBuildingAffectations.title": "Esta persona ya está directamente asignada en otros edificios, ¿desea eliminar las siguientes asignaciones para %{personFullname} ?",
 		"AssignPersonCheckListDialog.actions.close.help": "Cierra y no elimines ninguna otra tarea",
 		"AssignPersonCheckListDialog.actions.close.label": "cerca",
@@ -116505,6 +118893,8 @@ var jsonTranslationsFiles = {
 		"AssignPersonCheckListWorkplaceTransit.title": "La estación de trabajo %{workplaceName} es una estación de trabajo temporal",
 		"AssignPersonToRoomCheckListDialogTitle.title": "Asignó %{personName} al espacio %{roomName}",
 		"AssignPersonToWorkplaceCheckListDialogTitle.title": "Ha asignado %{personName} a la estación de trabajo %{workplaceName}",
+		"AssignWorkplaceToCurrentUserAsyncAction.help": "Ocupar la estación de trabajo",
+		"AssignWorkplaceToCurrentUserAsyncAction.label": "Sí",
 		"Auth0AuthenticationButton.connections.auth0.help": "Inicie sesión con su cuenta de Surfy",
 		"Auth0AuthenticationButton.connections.auth0.label": "Cuenta Surfy (identificación abierta)",
 		"AuthenticationButton.connections.auth0.help": "Inicie sesión con su cuenta de Surfy",
@@ -116540,11 +118930,13 @@ var jsonTranslationsFiles = {
 		"BookingCalendarSubjectEmail.workplaceAm": "[Surfy] Mañana — Posición %{workplace} %{buildingSuffix}",
 		"BookingCalendarSubjectEmail.workplaceDefaultName": "Trabajo",
 		"BookingCalendarSubjectEmail.workplacePm": "[Surfy] Tarde — Estación %{workplace} %{buildingSuffix}",
-		"BookingCanceledNotConfirmedEmail.body": "Su reserva de estación de trabajo %{workplacePart} %{buildingPart} para el %{bookingDate} ha sido cancelada porque no fue confirmada antes %{confirmationEndTime} .",
+		"BookingCanceledNotConfirmedEmail.bodyRoom": "Su reserva de aparcamiento %{roomPart} %{buildingPart} para el %{bookingDate} ha sido cancelada porque no fue confirmada antes %{confirmationEndTime} .",
+		"BookingCanceledNotConfirmedEmail.bodyWorkplace": "Su reserva de estación de trabajo %{workplacePart} %{buildingPart} para el %{bookingDate} ha sido cancelada porque no fue confirmada antes %{confirmationEndTime} .",
 		"BookingCanceledNotConfirmedEmail.buildingPart": " en el edificio %{buildingName}",
 		"BookingCanceledNotConfirmedEmail.firstNameSuffix": " %{firstName}",
 		"BookingCanceledNotConfirmedEmail.greeting": "Hola %{firstNameSuffix}",
 		"BookingCanceledNotConfirmedEmail.nextBookings": "Para sus futuras reservas, deberá confirmar su asistencia entre %{confirmationStartTime} y %{confirmationEndTime} desde la página &quot;Mi agenda&quot;:",
+		"BookingCanceledNotConfirmedEmail.roomPart": " ( %{roomName} )",
 		"BookingCanceledNotConfirmedEmail.subject": "Su reserva para %{bookingDate} ha sido cancelada.",
 		"BookingCanceledNotConfirmedEmail.workplacePart": " ( %{workplaceName} )",
 		"BookingDialog.attendeesHelper": "Seleccione colaboradores o pulse Intro para añadir un correo electrónico.",
@@ -116569,10 +118961,12 @@ var jsonTranslationsFiles = {
 		"BookingReleasedStaticDeskWorkplaceTitle.bookWorkplace": "Reserva esta estación de trabajo",
 		"BookingReleasedStaticDeskWorkplaceTitle.introMany": "Este puesto de trabajo se habilita porque estas personas no estarán hoy en la oficina.",
 		"BookingReleasedStaticDeskWorkplaceTitle.introOne": "Este puesto de trabajo se habilita porque esta persona no estará hoy en la oficina.",
-		"BookingReminderNotConfirmedEmail.body": "Su reserva de puesto de trabajo para %{bookingDate} aún no está confirmada.",
+		"BookingReminderNotConfirmedEmail.bodyRoom": "Su reserva de aparcamiento %{roomPart} para %{bookingDate} aún no está confirmada.",
+		"BookingReminderNotConfirmedEmail.bodyWorkplace": "Su reserva de puesto de trabajo para %{bookingDate} aún no está confirmada.",
 		"BookingReminderNotConfirmedEmail.confirmBefore": "Por favor, confirme su asistencia antes %{confirmationEndTime} desde la página &quot;Mi horario&quot;:",
 		"BookingReminderNotConfirmedEmail.firstNameSuffix": " %{firstName}",
 		"BookingReminderNotConfirmedEmail.greeting": "Hola %{firstNameSuffix}",
+		"BookingReminderNotConfirmedEmail.roomPart": " ( %{roomName} )",
 		"BookingReminderNotConfirmedEmail.subject": "Se requiere confirmación para la reserva de hoy.",
 		"BookingReporting.pageTitle": "Informe de reserva",
 		"BookingReportingDetailTable.columnActualRate": "Tasa de ocupación real",
@@ -116639,6 +119033,10 @@ var jsonTranslationsFiles = {
 		"BookRandomParkingButton.parking.release.help": "Liberar reserva de estacionamiento",
 		"BookRandomParkingButton.parking.viewOnMap": "Ver parking reservado en el mapa",
 		"BookRandomParkingButton.parking.viewOnMapWithSlot": "Consulte el mapa para ver la zona de estacionamiento reservada para el período %{slotString}",
+		"BookWorkplaceOnBuildingFloorAsyncAction.availableWorkplaces": "%{freeWorkplaces} plazas disponibles",
+		"BookWorkplaceOnBuildingFloorAsyncAction.bookWorkplaceOnFloor": "Reserve una estación de trabajo en %{floorName} para el período %{slotString}",
+		"BookWorkplaceOnBuildingFloorAsyncAction.buttonLabel": "Reserve una estación de trabajo en %{floorName}",
+		"BookWorkplaceOnBuildingFloorAsyncAction.help": "%{bookedWorkplaces} reserva(s), %{freeWorkplaces} estaciones de trabajo disponibles en %{totalFloorWorkplacesCount}",
 		"BookWorkplaceOnDimensionAsyncButton.drawerTitle": "Reserve una estación de trabajo específica para el período %{slotString}",
 		"BookWorkplaceOnDimensionAsyncButton.help": "Reserve una estación de trabajo específica en el plan para este espacio",
 		"BookWorkplaceOnDimensionAsyncButton.helpWithFloor": "Reserva una estación de trabajo en el mapa en %{dimensionName} en el piso %{floorName}",
@@ -116662,8 +119060,6 @@ var jsonTranslationsFiles = {
 		"BuildingCloneCreateAccordion.cloneOrganization": "Organizaciones asociadas con espacios",
 		"BuildingCloneCreateAccordion.clonePeople": "Asignaciones duplicadas",
 		"BuildingCloneCreateAccordion.cloneWorkplaces": "Estaciones de trabajo duplicadas",
-		"BuildingCloneCreateAccordion.createCloneHelp": "El escenario duplicará el edificio con las propiedades marcadas.",
-		"BuildingCloneCreateAccordion.createCloneLabel": "Crea un escenario",
 		"BuildingClonePropertiesSelector.properties.clone.buildingAffectations": "Copiar asignaciones de edificios",
 		"BuildingClonePropertiesSelector.properties.clone.costCenterId": "Copiar el centro de costos de los espacios",
 		"BuildingClonePropertiesSelector.properties.clone.dimensionAffectations": "Copiar las asignaciones de la capa de análisis",
@@ -116817,6 +119213,40 @@ var jsonTranslationsFiles = {
 		"BuildingMenuItem.menu.scenario": "Escenarios ( %{count} )",
 		"BuildingMissingStructuredAddress.message": "A la dirección del edificio ' %{buildingName} ' le faltan componentes estructurados (calle, ciudad, etc.)",
 		"BuildingMissingStructuredAddressAction.message": "A la dirección del edificio ' %{buildingName} ' le faltan componentes estructurados (calle, ciudad, etc.)",
+		"BuildingPathfindingControls.offlineBanner": "Modo sin conexión: la ruta se calcula localmente a partir del gráfico almacenado en caché.",
+		"BuildingPathfindingFloorColumn.ariaLabel": "Columna de piso",
+		"BuildingPathfindingMapLibre.combosRegionLabel": "Origen y destino",
+		"BuildingPathfindingMapLibre.gatedUnavailable": "La función de búsqueda de rutas no está habilitada para esta empresa.",
+		"BuildingPathfindingMapLibre.loadingRead": "Cargando el mapa y el gráfico de navegación…",
+		"BuildingPathfindingMapLibre.mapRegionLabel": "Mapa (MapLibre)",
+		"BuildingPathfindingMapLibre.mapStubHint": "Mapa de MapLibre",
+		"BuildingPathfindingMapLibre.routeResultError": "Falló el cálculo de la ruta.",
+		"BuildingPathfindingMapLibre.routeResultFound": "Camino encontrado",
+		"BuildingPathfindingMapLibre.routeResultFoundDetail": "{{pointCount}} puntos · {{spaceCount}} espacios",
+		"BuildingPathfindingMapLibre.routeResultLoading": "Calculando la ruta…",
+		"BuildingPathfindingMapLibre.routeResultNone": "No hay camino",
+		"BuildingPathfindingMapLibre.selectDestination": "Destino",
+		"BuildingPathfindingMapLibre.selectDestinationHelp": "Busque el espacio de destino en el edificio.",
+		"BuildingPathfindingMapLibre.selectOrigin": "Origen",
+		"BuildingPathfindingMapLibre.selectOriginHelp": "Busque el espacio de origen en el edificio.",
+		"BuildingPathfindingMapLibre.title": "Construcción de sistemas de búsqueda de rutas",
+		"BuildingPathfindingMapLibreHoverCard.segmentConnectorLabel": "Número de conector de segmento %{id}",
+		"BuildingPathfindingOverlayStatusCluster.connectorTraits": "Conectores · %{count} rasgos",
+		"BuildingPathfindingOverlayStatusCluster.nodes": "Nodos · %{count}",
+		"BuildingPathfindingOverlayStatusCluster.routePoints": "Ruta · %{count} pts",
+		"BuildingPathfindingTabControlsHost.combosRegionLabel": "Origen y destino",
+		"BuildingPathfindingTabControlsHost.routeResultError": "Falló el cálculo de la ruta.",
+		"BuildingPathfindingTabControlsHost.routeResultFound": "Camino encontrado",
+		"BuildingPathfindingTabControlsHost.routeResultFoundDetail": "{{pointCount}} puntos · {{spaceCount}} espacios",
+		"BuildingPathfindingTabControlsHost.routeResultLoading": "Calculando la ruta…",
+		"BuildingPathfindingTabControlsHost.routeResultNone": "No hay camino",
+		"BuildingPathfindingTabControlsHost.selectDestination": "Destino",
+		"BuildingPathfindingTabControlsHost.selectDestinationHelp": "Busque el espacio de destino en el edificio.",
+		"BuildingPathfindingTabControlsHost.selectOrigin": "Origen",
+		"BuildingPathfindingTabControlsHost.selectOriginHelp": "Busque el espacio de origen en el edificio.",
+		"BuildingPathfindingTabControlsHost.title": "Construcción de sistemas de búsqueda de rutas",
+		"BuildingRegeneratePathfindingGraphAsyncAction.help": "Encolar la regeneración asíncrona del grafo de búsqueda de rutas para este edificio.",
+		"BuildingRegeneratePathfindingGraphAsyncAction.label": "Regenerar el grafo de búsqueda de rutas",
 		"BuildingReports.items.sheets.merged": "Fusión",
 		"BuildingReports.items.sheets.physicals": "Objetos fisicos",
 		"BuildingReports.items.sheets.virtuals": "Objetos virtuales",
@@ -116886,8 +119316,14 @@ var jsonTranslationsFiles = {
 		"CalibrateLayoutDrawer.title": "Calibrar el plan",
 		"CampusBuildingsAccordion.buildingCount": "El número de edificios",
 		"CancelAddItemToRoom.help": "Cancelar la adición del objeto al espacio",
+		"CancelAddItemToRoomSyncAction.help": "Deshacer la adición del objeto al espacio ( %{shortcut} )",
 		"CancelAddWorkplaceToRoom.help": "Cancelar la adición de la estación de trabajo al espacio",
+		"CancelAddWorkplaceToRoomSyncAction.help": "Deshacer la adición de la estación de trabajo al espacio ( %{shortcut} )",
+		"CancelCopyCartImportSyncAction.help": "Cancelar copia",
+		"CancelCopyCartImportSyncAction.label": "anular",
 		"CancelDuplicateShapsToRoomMouse.help": "Deshacer formas duplicadas",
+		"CancelEnterpriseConnectionSyncAction.help": "Volver a la página de autenticación con todas las opciones",
+		"CancelEnterpriseConnectionSyncAction.label": "regreso",
 		"CenterBboxCircleMarker.tooltip": "Anclaje de la estructura (centro del cuadro delimitador)",
 		"ChangeColor.browserColorPicker": "Seleccione un color utilizando la paleta de colores del navegador.",
 		"ChangeColor.notHexMatchError": "El campo no respeta el formato hexadecimal de un color.",
@@ -116909,14 +119345,31 @@ var jsonTranslationsFiles = {
 		"CheckPersonVehiculeParkingDaySlotCompatibility.noVehicle": "Debes registrar un vehículo en tu perfil para reservar plazas de aparcamiento.",
 		"CheckPersonVehiculeParkingDaySlotSingleBookingPerDayCompatibility.singleBookingPerDayIncompatible": "Ya tiene una reserva de estacionamiento para hoy en este edificio. Con su tipo de vehículo, solo puede reservar una plaza de estacionamiento por día y por edificio.",
 		"CheckThereIsAtLeastOneFreeRoomInTheBuilding.noFreeParkingAvailable": "No hay plazas de aparcamiento disponibles durante su franja horaria",
+		"CleanAllJupRoleObjectTypesAsyncAction.help": "Limpiar todo tipo de objetos",
+		"CleanAllJupRoleObjectTypesAsyncAction.label": "Limpiar todo tipo de objetos",
+		"ClearDimensionTypeNavigationSyncAction.ariaLabel": "Cancelar la navegación de capas",
+		"ClearFieldTypeColorSyncAction.ariaLabel": "Quitar color",
+		"ClearFieldTypeColorSyncAction.help": "Quitar color",
+		"ClearFieldTypeIconSyncAction.ariaLabel": "Eliminar el ícono",
+		"ClearFieldTypeIconSyncAction.help": "Eliminar el ícono",
+		"ClearJupRoleMatrixObjectTypeFilterSyncAction.ariaLabel": "Borrar búsqueda",
+		"ClearJupRoleMatrixObjectTypeFilterSyncAction.help": "Borrar búsqueda",
+		"ClearMeetingRoomsFiltersSyncAction.help": "Borrar filtros",
 		"ClickOnIndexViewMenuPathBreadcrumb.clickOnLabel": "Hacer clic en:",
 		"CloneEntitiesFailed.noAccess": "No tienes acceso a esta entidad.",
 		"CloneEntitiesFailed.reloadHint": "Los datos mostrados pueden estar desactualizados. Por favor, actualice la página.",
+		"CloseAssignPersonCheckListDialogSyncAction.help": "Cierra y no elimines ninguna otra tarea",
+		"CloseAssignPersonCheckListDialogSyncAction.label": "cerca",
+		"CloseWrongRoomsDialogSyncAction.help": "cierra esta ventana",
+		"CloseWrongRoomsDialogSyncAction.label": "cerca",
 		"CloudinadryWidgetLoader.error.cloudinary-api-missing": "El script de Cloudinary se ha cargado, pero falta la API createUploadWidget.",
 		"CloudinadryWidgetLoader.error.missing-cloud-name": "Cloudinary no se pudo iniciar: falta el nombre de la nube en la configuración pública.",
 		"CloudinadryWidgetLoader.error.missing-unsigned-preset": "Cloudinary no pudo iniciarse: falta el preajuste de carga (unsignedPreset) en la configuración de tiempo de ejecución.",
-		"CloudinadryWidgetLoader.error.script-load-failed": "Cloudinary no pudo cargar el script del widget (red, CSP o bloqueador).",
+		"CloudinadryWidgetLoader.error.script-load-failed": "No se puede cargar el script de Cloudinary (widget.cloudinary.com): a menudo está bloqueado por un proxy/cortafuegos corporativo o un bloqueador.",
 		"CloudinadryWidgetLoader.error.widget-create-failed": "Cloudinary no pudo crear el widget de carga.",
+		"CloudinadryWidgetLoader.fallback.help": "Seleccione una imagen local (carga directa a Cloudinary, sin el widget CDN).",
+		"CloudinadryWidgetLoader.fallback.hint": "Sigue estando disponible un selector de archivos local (carga a través de api.cloudinary.com).",
+		"CloudinadryWidgetLoader.fallback.warningAria": "El widget de Cloudinary CDN falló; la carga de la copia de seguridad local está habilitada.",
 		"CollapseSwitchButton.help.false": "Ver el detalle",
 		"CollapseSwitchButton.help.true": "ocultar el detalle",
 		"CollapseWorkplaceAffectationList.title": "Asignar a esta persona solo para los días siguientes",
@@ -116957,6 +119410,8 @@ var jsonTranslationsFiles = {
 		"CompanyTypeLabel.notClassified": "Plataforma sin clasificar",
 		"CompareEntities.buttons.reset.help": "Reinicie la importación",
 		"CompareEntities.buttons.reset.label": "Reiniciar",
+		"CompareImportOptionsBarAsyncAction.help": "Iniciar la comparación con los datos en surfy para determinar las modificaciones a importar",
+		"CompareImportOptionsBarAsyncAction.label": "Comparar",
 		"CompareObjectTypeAutomaticSyncIcon.helpDouble": "Después de la comparación, %{first} y %{second} se aplican automáticamente para este paso (sin botones de tabulación).",
 		"CompareObjectTypeAutomaticSyncIcon.helpSingle": "Después de la comparación, %{operation} se aplica automáticamente para este paso (sin necesidad de pulsar un botón de pestaña).",
 		"CompareObjectTypeAutomaticSyncIcon.helpTriple": "Después de la comparación, %{first} , %{second} y %{third} se aplican automáticamente para este paso (sin botones de tabulación).",
@@ -116970,8 +119425,9 @@ var jsonTranslationsFiles = {
 		"ConfirmationButtons.confirm": "Confirmar la finalización de la acción.",
 		"ConfirmationButtons.loading": "La acción se está ejecutando, espera",
 		"ConnectedPartnerContext.title": "Está conectado a <b>%{label}</b> ( %{host} )",
+		"CopyBelongsToImportKeySyncAction.ariaLabel": "Copia el título de la columna",
+		"CopyBelongsToImportKeySyncAction.help": "Copiar el título de la columna al portapapeles",
 		"CopyBuildingToCart.dialogTitle": "Copiar el edificio",
-		"CopyBuildingToCart.help": "Copiar estructura de edificio",
 		"CopyBuildingToCartCancelButton.help": "Cerrar y cancelar",
 		"CopyBuildingToCartCancelButton.label": "anular",
 		"CopyBuildingToCartCopyButton.help": "Copiar la información",
@@ -116979,8 +119435,22 @@ var jsonTranslationsFiles = {
 		"CopyBuildingToCartSaveToFileButton.help": "Guardar el contenido en un archivo JSON",
 		"CopyBuildingToCartSaveToFileButton.label": "Guardar como archivo",
 		"CopyCartContentIntoTenant.buttons.single.paste.help": "Importar a esta empresa",
+		"CopyEqualsIdsInfoTabSyncAction.help": "Copiar ID de entidad al portapapeles",
+		"CopyEqualsIdsInfoTabSyncAction.label": "Copiar ID de entidad al portapapeles",
+		"CopyFieldTypePasswordSyncAction.ariaLabel": "Copia la contraseña",
+		"CopyFieldTypePasswordSyncAction.help": "Copie el contenido de la contraseña al portapapeles",
+		"CopyFloorGeoJsonSyncAction.help": "Copia el GeoJSON al portapapeles.",
+		"CopyFloorGeoJsonSyncAction.label": "COPIAR",
 		"CopyImagePathToClipboard.CopyUrl": "Copiar URL",
+		"CopyImportScalarPropertySyncAction.ariaLabel": "Copiar al portapapeles",
+		"CopyImportScalarPropertySyncAction.help": "Copiar al portapapeles",
+		"CopyIntoClipboardSyncAction.help": "Copiar al portapapeles",
+		"CopyItemTypePointsSyncAction.help": "Copiar puntos al portapapeles",
+		"CopyItemTypePointsSyncAction.label": "Copiar puntos al portapapeles",
 		"CopyItemTypesToCart.help": "Copiar tipos de artículos al carrito",
+		"CopyItemTypesToCartAsyncAction.ariaLabel": "Copiar tipos de artículos al carrito",
+		"CopyItemTypesToCartAsyncAction.help": "Copiar tipos de artículos al carrito",
+		"CopyWorkplaceTypesToCartAsyncAction.help": "Copiar tipos de estaciones de trabajo al carrito",
 		"CopyWorkplaceTypeToCart.help": "Copiar tipos de estaciones de trabajo al carrito",
 		"CostCenterMapFilter.Empty": "Actualmente no hay centros de costos asociados a los espacios, puedes agregar más modificando un espacio y asociándole un centro de costos, luego puedes controlar su visualización desde esta sección",
 		"CostCenterMapFilterTabs.tabs.people": "Gente",
@@ -116988,8 +119458,16 @@ var jsonTranslationsFiles = {
 		"CostCenterMapFilterTabs.tabs.workplaces": "Estaciones de trabajo",
 		"CostCenterWorkplaceMapFilter.Empty": "Actualmente no hay un centro de costos asociado con las estaciones de trabajo, puede agregar uno modificando una estación de trabajo y asociando un centro de costos con ella, luego puede controlar su visualización desde esta sección",
 		"CostCenterWorkplaceMapFilter.nodeInfo.workplacesCount": "Hay %{count} estaciones de trabajo con el centro de costos %{name}",
+		"CreateBuildingCloneAsyncAction.help": "El escenario duplicará el edificio con las propiedades marcadas.",
+		"CreateBuildingCloneAsyncAction.label": "Crea un escenario",
 		"CreateCleanInventoryItemsAsyncButton.help": "Crea los elementos que faltan",
 		"CreateCleanInventoryItemsAsyncButton.label": "crear",
+		"CreateFieldTypeIconBadgeSyncAction.help": "Abrir el editor de insignias (texto y colores)",
+		"CreateFieldTypeIconBadgeSyncAction.label": "Crea una insignia",
+		"CreateGuestAsyncAction.help": "Crear el invitado",
+		"CreateGuestAsyncAction.label": "Crear el invitado",
+		"CreatePartnerEntitiesAsyncAction.help": "Crear en %{partnerName}",
+		"CreatePartnerEntitiesAsyncAction.label": "Crear en %{partnerName}",
 		"CubyFitToViewIsometricButtonOption.help": "Centrar plano en espacios en vista isométrica",
 		"CubyFitToViewIsometricButtonOption.label": "Centrar el plano en vista isométrica",
 		"CubyFitToViewZenithalButtonOption.help": "Centrar el plano en los espacios en vista cenital",
@@ -117060,12 +119538,17 @@ var jsonTranslationsFiles = {
 		"DefaultViewSetIndicator.recommendedViewTooltip": "Esta visión se recomienda para este edificio.",
 		"DeleteCleanInventoryItemsAsyncButton.help": "Retire cualquier objeto que pueda retirarse.",
 		"DeleteCleanInventoryItemsAsyncButton.label": "eliminar",
+		"DeleteCompanyReportingDataAsyncAction.ariaLabel": "Eliminar datos de informes",
+		"DeleteCompanyReportingDataAsyncAction.help": "Eliminar datos de reporte calculados, hay que volver a calcular los datos de reporte para tenerlos nuevamente, esta opción permite limpiar los datos de reporte",
+		"DeleteCompanyReportingDataAsyncAction.progress": "Eliminando datos de informes de %{objectType} : %{current} / %{total}",
 		"DeleteDialog.cancel.help": "recuperar",
 		"DeleteDialog.cancel.label": "anular",
 		"DeleteDialog.content": "Está a punto de eliminar <b>%{determinant.undefined}</b> , esta acción no es reversible y puede tener impactos, ¿está seguro de que desea realizar esta acción?",
 		"DeleteDialog.delete.help": "Eliminar permanentemente %{determinant.defined}",
 		"DeleteDialog.delete.label": "eliminar",
 		"DeleteDialog.title": "Eliminar %{determinant.undefined}",
+		"DeleteFieldTypeIconBadgeSyncAction.ariaLabel": "Quitar la insignia",
+		"DeleteFieldTypeIconBadgeSyncAction.help": "Quitar la insignia",
 		"DeleteMapScaleAsyncButton.help": "Eliminar la escala equivale a quitar la escala del plano y eliminarla de la base, ya no será accesible a través de otros planos. No es posible eliminar una escala que esté en varios pisos.",
 		"DeleteMapScaleAsyncButton.label": "Eliminar escala",
 		"DeleteMultipleDialog.cancel.help": "recuperar",
@@ -117075,8 +119558,12 @@ var jsonTranslationsFiles = {
 		"DeleteMultipleDialog.delete.label": "eliminar",
 		"DeleteMultipleDialog.title": "Eliminar %{determinants.undefined}",
 		"DeleteMultipleEntities.help": "Eliminar %{determinants.defined} seleccionados",
+		"DeletePartnerEntitiesAsyncAction.help": "Eliminar en %{partnerName}",
+		"DeletePartnerEntitiesAsyncAction.label": "Eliminar en %{partnerName}",
+		"DeleteStructureExclusionAsyncAction.ariaLabel": "Eliminar la exclusión de la estructura",
+		"DeleteStructureExclusionAsyncAction.help": "Elimine esta exclusión estructural (patio, vacío, columna) sin alterar la forma externa.",
 		"DeleteWorkplace.help": "Eliminar estación de trabajo: [ %{name} ], las asignaciones también se eliminarán",
-		"DeskBookingConfirmationButton.bookingConfirmed": "La reserva ha sido confirmada.",
+		"DeskBookingConfirmationButton.bookingConfirmed": "La reserva del puesto de trabajo ha sido confirmada.",
 		"DeskBookingConfirmationButton.confirm": "Confirma tu asistencia",
 		"DeskBookingConfirmationButton.confirmHelp": "Confirme que está presente en su estación de trabajo",
 		"DeskBookingConfirmationButton.confirmHelpWithRange": "Confirma que estás presente en tu puesto de trabajo. Puedes confirmarlo entre %{confirmationRange} .",
@@ -117265,9 +119752,19 @@ var jsonTranslationsFiles = {
 		"DisplayWorkplaceTexts.workplaceUsageType.label": "Tipo de uso",
 		"distance.centimeter": "Centímetros",
 		"distance.meter": "Metros",
+		"DownloadBuildingDistributionCostByFloorsSyncAction.help": "Descargue el archivo excel para poder compartir y exportar las claves de distribución y áreas calificadas por centro de costo y por piso, la exportación incluye la distribución por piso o por edificio de los centros de costo",
+		"DownloadBuildingDistributionCostByFloorsSyncAction.label": "Descarga el archivo excel con los desgloses",
+		"DownloadBuildingDistributionCostSyncAction.help": "Descarga el archivo excel para poder compartir y exportar las claves de distribución y áreas calificadas por centro de costo",
+		"DownloadBuildingDistributionCostSyncAction.label": "Descarga el archivo excel sin desgloses",
+		"DownloadBuildingIfcSyncAction.help": "Descargar archivo IFC",
+		"DownloadBuildingIfcSyncAction.label": "Descargar archivo",
 		"DownloadBuildingImagesAccordion.accordion.title": "Exportar imágenes de todo el edificio",
 		"DownloadBuildingImagesAccordion.buttons.download.help": "Descarga todos los planos de todas las plantas del edificio en formato png en un zip, el tiempo de espera para esta extracción puede ser largo",
 		"DownloadBuildingImagesAccordion.buttons.download.label": "Descargar ZIP",
+		"DownloadCopilotDoorImagesSyncAction.help": "Imágenes DL",
+		"DownloadCopilotDoorImagesSyncAction.label": "Imágenes DL",
+		"DownloadFlatBuildingAsyncAction.ariaLabel": "Descarga el edificio plano",
+		"DownloadFlatBuildingAsyncAction.help": "Descargue el archivo de Excel que contiene los espacios y estaciones de trabajo con sus identificadores.",
 		"DownloadImageButton.helpNoLegend": "Descargue el plan completo en buena calidad sin el título, la exportación puede demorar más.",
 		"DownloadImageButton.helpWithLegend": "Descargue el plan completo en buena calidad con la leyenda, la exportación puede demorar más.",
 		"DownloadImageButton.labelNoLegend": "Descarga el plano sin leyenda (PNG)",
@@ -117297,6 +119794,10 @@ var jsonTranslationsFiles = {
 		"DqReportStatusCard.viewFullReport": "Consulte el informe completo.",
 		"DropDownOptions.moreOptions": "Ver más opciones para %{determinant.defined} %{name}",
 		"EditEntityDrawer.title.edit": "Editar %{determinant.defined}",
+		"EditFieldTypeAddressSyncAction.ariaLabel": "Cambiar dirección",
+		"EditFieldTypeAddressSyncAction.help": "Cambiar dirección",
+		"EditFieldTypeIconSyncAction.ariaLabel": "Cambiar icono",
+		"EditFieldTypeIconSyncAction.help": "Cambiar icono",
 		"EditInlineToggleIconButton.cancel.help": "Dejar de editar sin guardar",
 		"EditInlineToggleIconButton.edit.help": "Edite las propiedades de %{determinant.defined} directamente en esta página",
 		"EditInlineToggleIconButton.edit.label": "Editar",
@@ -117387,6 +119888,8 @@ var jsonTranslationsFiles = {
 		"Errors.ROOM_BOOKING_CONFLICT": "El espacio ya está reservado para esta franja horaria. Por favor, elija otra hora o espacio.",
 		"Errors.WORKPLACE_BOOKING_CONFLICT": "La estación de trabajo ya está reservada para esta franja horaria. Elija otra hora o estación de trabajo.",
 		"ErrorTextZone.reload": "Rehacer la operación",
+		"EscapeCompareObjectTypeStepSyncAction.help": "Sáltate este paso y ve directamente al siguiente.",
+		"EscapeCompareObjectTypeStepSyncAction.label": "Supera este paso",
 		"ExportQueryNodeToFileButton.help.list": "Descargar en excel %{determinants.defined}",
 		"FetchSocTenantEventsAsyncAction.help": "Recupera los cambios y las instantáneas de los identificadores de seguridad de la empresa desde la fecha seleccionada.",
 		"FetchSocTenantEventsAsyncAction.label": "Iniciar la auditoría de seguridad",
@@ -117420,11 +119923,23 @@ var jsonTranslationsFiles = {
 		"FieldTypeIndexBoolean.help": "Modificar el valor directamente",
 		"FieldTypeIndexBoolean.values.false": "No",
 		"FieldTypeIndexBoolean.values.true": "Sí",
+		"FieldTypeLegendConfiguration.familyCostCenters": "centros de costos",
+		"FieldTypeLegendConfiguration.familyOrganizationsDirection": "Direcciones",
+		"FieldTypeLegendConfiguration.familyOrganizationsService": "Servicios",
+		"FieldTypeLegendConfiguration.familyRoomTypeGroups": "Grupos tipológicos",
+		"FieldTypeLegendConfiguration.familyRoomTypes": "tipos",
+		"FieldTypeLegendConfiguration.legacyRoomTypeGroups": "Grupos tipológicos: selección por entidad",
+		"FieldTypeLegendConfiguration.legacyRoomTypes": "Tipologías: selección por entidad",
+		"FieldTypeLegendConfiguration.selectionByEntity": "Selección de propiedades por entidad",
+		"FieldTypeLegendConfiguration.selectionByFilter": "Selección por filtro",
+		"FieldTypeLegendConfiguration.selectionStructure": "Selección de las propiedades de la estructura",
 		"FieldTypeModel3d.Remove": "Eliminar modelo 3D",
 		"FieldTypeModel3d.Upload": "Cambiar modelo 3D",
 		"FieldTypePassword.icons.copy": "Copie el contenido de la contraseña al portapapeles",
 		"FieldTypePassword.icons.generate": "Genera una contraseña única",
 		"FileDropZone.dropZone": "Mueva y arrastre el archivo de importación a esta área o haga clic en el área para seleccionar su archivo",
+		"FinishCopyCartImportSyncAction.help": "Finaliza y cierra esta ventana.",
+		"FinishCopyCartImportSyncAction.label": "Para terminar",
 		"FixAddressButton.button.fix": "Corrija la dirección",
 		"FixAddressButton.button.help": "Corrija automáticamente la dirección de ' %{buildingName} ' mediante la geocodificación de Google Maps",
 		"FixAddressButton.error.message": "❌ %{error}",
@@ -117474,11 +119989,17 @@ var jsonTranslationsFiles = {
 		"FurnituresSelection.move": "Mover a todo el grupo",
 		"FurnituresSelectionDragZone.help": "Mover grupo",
 		"FurnituresSelectionGroupRotation.help": "Gira todas las formas seleccionadas alrededor del centro de la selección.",
+		"GenerateBuildingPathfindingRouteAsyncAction.help": "Calcula la ruta entre el origen y el destino seleccionados.",
+		"GenerateBuildingPathfindingRouteAsyncAction.label": "Generar la ruta",
 		"generateDocumentation.properties.base": "Propiedades básicas",
 		"generateDocumentation.properties.belongsTo": "Entidades asociadas (únicas)",
 		"generateDocumentation.properties.hasMany": "Entidades asociadas (lista)",
 		"generateDocumentation.properties.mandatory": "Propiedades obligatorias",
 		"generateDocumentation.properties.technicalName": "Nombre técnico",
+		"GenerateFieldTypePasswordSyncAction.ariaLabel": "Generar una contraseña",
+		"GenerateFieldTypePasswordSyncAction.help": "Genera una contraseña única",
+		"GeneratePathfindingGraphAsyncAction.help": "Al generar el gráfico de orientación se calculan los nodos a través de los cuales el buscador de ruta puede encontrar los espacios y muebles. Si se puede seleccionar el espacio original, el gráfico ya se ha generado.",
+		"GeneratePathfindingGraphAsyncAction.label": "Generar el gráfico de orientación.",
 		"GenericNoChangeTable.open.help": "Ver el detalle de los datos idénticos",
 		"GenericNoChangeTable.open.label": "Ver datos",
 		"GlobalOptions.CartCopyBuildingOption.help": "Copiar edificios al carrito",
@@ -117494,7 +120015,6 @@ var jsonTranslationsFiles = {
 		"GoogleApiWrapper.loadingFailed": "No se pudo cargar la API de Google Maps",
 		"GuestCreateAccordion.contractEndDateLabel": "Fecha de finalización del período de estancia del huésped",
 		"GuestCreateAccordion.contractStartDateLabel": "Fecha de inicio del período del huésped",
-		"GuestCreateAccordion.createGuestCta": "Crear el invitado",
 		"GuestCreateAccordion.createSectionTitle": "Crear un invitado",
 		"GuestCreateAccordion.emailLabel": "e-mail",
 		"GuestCreateAccordion.firstnameLabel": "primer nombre",
@@ -117594,7 +120114,6 @@ var jsonTranslationsFiles = {
 		"InfoTabContent.open.label": "Ver detalles de importación",
 		"InlinePositionZField.positionZLabel": "Posición Z (cm)",
 		"ItemsInventory.EmptyList": "No hay objetos en este espacio.",
-		"ItemTypeAvatarSingleView.copy": "Copiar puntos al portapapeles",
 		"ItemTypeAvatarSingleView.debug.label": "Habilitar el modo avanzado para 3d",
 		"ItemTypeDataQualityFamilyTenantConsistency.buttonFixWithUnclassifiedHelp": "Asigne los tipos de objetos seleccionados a la familia NO CLASIFICADA del inquilino.",
 		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeFamilyId": "Identificación familiar",
@@ -117643,7 +120162,6 @@ var jsonTranslationsFiles = {
 		"JupRoleAzureSyncRolesTable.value": "Valor",
 		"JupRoleAzureSyncScopeAlert.grantedScopes": "Alcances concedidos",
 		"JupRoleAzureSyncScopeAlert.scopesOk": "Aplicación.LeerActualizar.Todos concedidos.",
-		"JupRoleMatrixObjectTypeFilter.clearSearchHelp": "Borrar búsqueda",
 		"JupRoleMatrixObjectTypeFilter.noResults": "No se encontró ningún tipo de objeto que coincida con su búsqueda.",
 		"JupRoleMatrixObjectTypeFilter.searchAriaLabel": "Filtra los tipos de objetos en la matriz de roles.",
 		"JupRoleMatrixObjectTypeFilter.searchPlaceholder": "Buscar un tipo de objeto (nombre técnico, etiqueta…)",
@@ -117672,6 +120190,8 @@ var jsonTranslationsFiles = {
 		"layoutViewSets.peopleDimensionTypes.label": "Barrios",
 		"layoutViewSets.roomType.description": "Ver la planta según la tipología de espacios",
 		"layoutViewSets.roomType.label": "Tipologías de espacios",
+		"layoutViewSets.roomTypeGroups.description": "Consulte el plano de planta según el grupo de tipología espacial.",
+		"layoutViewSets.roomTypeGroups.label": "Grupos tipológicos",
 		"layoutViewSets.securityCompliance.description": "Analiza el cumplimiento de tu plan de prevención de seguridad y los perfiles de seguridad de las personas afectadas",
 		"layoutViewSets.securityCompliance.label": "Cumplimiento de seguridad",
 		"layoutViewSets.walls.description": "Centrarse en espacios y particiones.",
@@ -117735,7 +120255,12 @@ var jsonTranslationsFiles = {
 		"MapLegendFloor.title.floor": "piso",
 		"MapLegendPersonSecurityProfile.title": "Perfiles de seguridad",
 		"MapLegendRoom.title": "Espacios",
-		"MeetingRoomBookAction.bookRoom": "Reserva a través del calendario",
+		"MeetingRoomBookSyncAction.bookRoom": "Reserva a través del calendario",
+		"MeetingRoomCalendarSyncAction.ariaLabel": "Ver el calendario de reservas",
+		"MeetingRoomCalendarSyncAction.calendarFor": "Agenda para",
+		"MeetingRoomCalendarSyncAction.help": "Ver el calendario de reservas",
+		"MeetingRoomCalendarSyncAction.noRoomName": "Espacio de nombres indefinido",
+		"MeetingRoomCalendarSyncAction.roomCalendar": "Calendario espacial",
 		"MeetingRoomCard.availability.available": "Disponible en este horario",
 		"MeetingRoomCard.availability.searching": "Comprobando disponibilidad...",
 		"MeetingRoomCard.bookable": "Este espacio se puede reservar.",
@@ -117759,13 +120284,13 @@ var jsonTranslationsFiles = {
 		"MeetingRoomCard.viewPicture": "Ver foto del espacio",
 		"MeetingRoomCardSeats.seatsMultiple": "%{count} asientos",
 		"MeetingRoomCardSeats.seatsSingle": "%{count} asiento",
-		"MeetingRoomDirectBookAction.bookingInProgressHelp": "Reserva en curso...",
-		"MeetingRoomDirectBookAction.bookingSuccess": "Reserva confirmada para %{roomName} ( %{timeRange} )",
-		"MeetingRoomDirectBookAction.directBook": "Reserva rápida",
-		"MeetingRoomDirectBookAction.missingSelection": "Primero, seleccione un día y una franja horaria.",
-		"MeetingRoomDirectBookAction.noRoomName": "Espacio de nombres indefinido",
-		"MeetingRoomDirectBookAction.roomUnavailable": "La sala no está disponible durante este horario.",
-		"MeetingRoomDirectBookAction.schedulesLoading": "Cargando disponibilidad",
+		"MeetingRoomDirectBookSyncAction.bookingInProgressHelp": "Reserva en curso...",
+		"MeetingRoomDirectBookSyncAction.bookingSuccess": "Reserva confirmada para %{roomName} ( %{timeRange} )",
+		"MeetingRoomDirectBookSyncAction.directBook": "Reserva rápida",
+		"MeetingRoomDirectBookSyncAction.missingSelection": "Primero, seleccione un día y una franja horaria.",
+		"MeetingRoomDirectBookSyncAction.noRoomName": "Espacio de nombres indefinido",
+		"MeetingRoomDirectBookSyncAction.roomUnavailable": "La sala no está disponible durante este horario.",
+		"MeetingRoomDirectBookSyncAction.schedulesLoading": "Cargando disponibilidad",
 		"MeetingRooms.clearFilters": "Borrar filtros",
 		"MeetingRooms.loadingAvailabilityTooltip": "Cargando disponibilidad de reservas...",
 		"MeetingRooms.noMeetingRoomsConfigured": "No tienes salas de reuniones configuradas a través de grupos de tipología de espacios",
@@ -117840,6 +120365,8 @@ var jsonTranslationsFiles = {
 		"menu.menuLeft.vehiclePlanningAdmin": "Administración de la programación de vehículos",
 		"menu.menuLeft.workplace": "Estaciones de trabajo",
 		"menu.tenantOperations": "Sincronización",
+		"MergePersonDuplicatesAsyncAction.help": "Fusionar personas",
+		"MergePersonDuplicatesAsyncAction.label": "Unir",
 		"MicrosoftUsersPicturesSyncTitle.title": "Sincronización de fotos de Microsoft",
 		"MicrosoftUsersSyncTitle.title": "Sincronización de usuarios de Microsoft",
 		"models.ApiUser.determinant.defined": "Usuario de API",
@@ -118005,6 +120532,8 @@ var jsonTranslationsFiles = {
 		"models.Building.reports.buildingPeople.help": "Informe de afectados en el edificio",
 		"models.Building.reports.dimensionTypes.fileName": "Tipos de dimensión",
 		"models.Building.reports.dimensionTypes.help": "Relación entre los tipos de dimensión y los datos de informes de construcción",
+		"models.Building.reports.exceptionalObjects.fileName": "Objetos excepcionales",
+		"models.Building.reports.exceptionalObjects.help": "Informe sobre artículos excepcionales",
 		"models.Building.reports.organizations.fileName": "Organizaciones",
 		"models.Building.reports.organizations.help": "Informe de organizaciones de construcción",
 		"models.Building.reports.workplaceAffectations.fileName": "Asignaciones de estaciones de trabajo",
@@ -118016,6 +120545,8 @@ var jsonTranslationsFiles = {
 		"models.Building.views.3d-cards.label": "3d",
 		"models.Building.views.3d-map.help": "Visualice todos los edificios de referencia en 3D en un mapa.",
 		"models.Building.views.3d-map.label": "Mapa 3D",
+		"models.Building.views.3d-maplibre.help": "Visualice las estructuras de los edificios de referencia en MapLibre LOD (mismo renderizado que el SDK de Cuby Structure).",
+		"models.Building.views.3d-maplibre.label": "Mapa 3D de MapLibre",
 		"models.Building.views.3d.help": "El plano 3d del edificio %{name} (cuby)",
 		"models.Building.views.3d.label": "Plano 3d",
 		"models.Building.views.assets.help": "Activos inmobiliarios",
@@ -118026,6 +120557,8 @@ var jsonTranslationsFiles = {
 		"models.Building.views.building-dxf-importer.label": "Importar DXF",
 		"models.Building.views.building-ifc.help": "Exportar este edificio a IFC para BIM",
 		"models.Building.views.building-ifc.label": "CFI",
+		"models.Building.views.building-pathfinding.help": "Cómo moverse por el edificio: elige un origen y un destino, consulta la ruta en el mapa.",
+		"models.Building.views.building-pathfinding.label": "Búsqueda de rutas",
 		"models.Building.views.cards.help": "Vista de edificios de azulejos",
 		"models.Building.views.cards.label": "Info",
 		"models.Building.views.clone.help": "Construyendo <b>escenarios</b> y proyectos %{name}",
@@ -118111,8 +120644,8 @@ var jsonTranslationsFiles = {
 		"models.Company.properties.workingDaysCount.label": "Número de días laborables por semana",
 		"models.Company.properties.workplaceBookingAgendaSyncEnabled.description": "Por cada puesto de trabajo o reserva de aparcamiento, se envía una invitación al calendario del empleado (Outlook, Gmail, etc.); la invitación se elimina en caso de cancelación.",
 		"models.Company.properties.workplaceBookingAgendaSyncEnabled.label": "Crea una invitación de calendario para cada reserva.",
-		"models.Company.properties.workplaceBookingConfirmationRange.description": "Intervalo de tiempo durante el cual los usuarios pueden confirmar sus reservas de estaciones de trabajo. Formato requerido: HH:MM-HH:MM@Zona horaria IANA (p. ej., 06:00-10:30@Europe/Paris). Deje este campo en blanco para desactivar la confirmación de la reserva de estaciones de trabajo. Zona horaria IANA: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
-		"models.Company.properties.workplaceBookingConfirmationRange.label": "Ventana de confirmación de reserva de estación de trabajo",
+		"models.Company.properties.workplaceBookingConfirmationRange.description": "Franja horaria durante la cual los usuarios pueden confirmar sus reservas de estación de trabajo y estacionamiento. Formato requerido: HH:MM-HH:MM@Zona horaria IANA (p. ej., 06:00-10:30@Europa/París). Deje este campo en blanco para desactivar la confirmación. Zona horaria IANA: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+		"models.Company.properties.workplaceBookingConfirmationRange.label": "Ventana de confirmación de reserva (puesto de trabajo y aparcamiento)",
 		"models.Company.reports.export-all-duplicate.fileName": "duplicación",
 		"models.Company.reports.export-all-duplicate.help": "Backup de datos de la empresa para hacer una copia de la plataforma",
 		"models.Company.reports.export-all.fileName": "respaldo",
@@ -119065,9 +121598,13 @@ var jsonTranslationsFiles = {
 		"models.PersonToRoomBooking.determinants.defined": "reservas para el área de personas",
 		"models.PersonToRoomBooking.determinants.undefined": "reservas para el área de personas",
 		"models.PersonToRoomBooking.plural": "Reservas para la zona de personas",
+		"models.PersonToRoomBooking.properties.emailConfirmationWarningNotificationSentAt.description": "La fecha y hora en que se envió el correo electrónico de advertencia antes de la cancelación de la reserva no confirmada.",
+		"models.PersonToRoomBooking.properties.emailConfirmationWarningNotificationSentAt.label": "Correo electrónico de confirmación enviado el",
 		"models.PersonToRoomBooking.properties.endDatetime.description": "La fecha y hora de finalización de la reserva.",
 		"models.PersonToRoomBooking.properties.endDatetime.label": "Fin de la reserva",
 		"models.PersonToRoomBooking.properties.id.label": "ID de reserva para el área de personas",
+		"models.PersonToRoomBooking.properties.roomHasBeenConfirmedAt.description": "Fecha y hora de confirmación de asistencia para la reserva de espacio (estacionamiento)",
+		"models.PersonToRoomBooking.properties.roomHasBeenConfirmedAt.label": "Espacio confirmado",
 		"models.PersonToRoomBooking.properties.startDatetime.description": "La fecha y hora de inicio de la reserva.",
 		"models.PersonToRoomBooking.properties.startDatetime.label": "Inicio de la reserva",
 		"models.PersonToRoomBooking.singular": "Reserva para la zona de personas",
@@ -119194,6 +121731,16 @@ var jsonTranslationsFiles = {
 		"models.RoomConnector.properties.waitTime.description": "El tiempo de espera promedio antes de que el conector espacial esté disponible",
 		"models.RoomConnector.properties.waitTime.label": "tiempo promedio de espera",
 		"models.RoomConnector.singular": "Conector espacial",
+		"models.RoomConnectorType.description": "Un tipo de conector de espacios se refiere a los conectores que unen espacios entre pisos.",
+		"models.RoomConnectorType.determinant.defined": "el tipo de conector espacial",
+		"models.RoomConnectorType.determinant.undefined": "un tipo de conector espacial",
+		"models.RoomConnectorType.determinants.defined": "los tipos de conectores espaciales",
+		"models.RoomConnectorType.determinants.undefined": "tipos de conectores espaciales",
+		"models.RoomConnectorType.plural": "tipos de conectores espaciales",
+		"models.RoomConnectorType.properties.color.description": "Color opcional del tipo de conector: se utiliza en el modo Conector en la vista de búsqueda de rutas de edificios.",
+		"models.RoomConnectorType.properties.color.label": "color",
+		"models.RoomConnectorType.properties.name.label": "Nombre del tipo de conector espacial",
+		"models.RoomConnectorType.singular": "tipo de conector espacial",
 		"models.RoomPoint.description": "Un punto en el espacio define las coordenadas geométricas para dibujar el contorno de un espacio.",
 		"models.RoomPoint.determinant.defined": "el punto de los espacios",
 		"models.RoomPoint.determinant.undefined": "un punto de espacios",
@@ -119313,6 +121860,26 @@ var jsonTranslationsFiles = {
 		"models.RoomTypeGroupToRoomType.plural": "Asociaciones de grupos de tipología espacial a la tipología espacial",
 		"models.RoomTypeGroupToRoomType.properties.id.label": "Identificador de asociación del grupo de tipología espacial a la tipología espacial",
 		"models.RoomTypeGroupToRoomType.singular": "Asociación del grupo de tipología espacial a la tipología espacial",
+		"models.SegmentConnector.description": "Un conector de segmento califica un segmento de puerta como entrada/salida de edificio para Pathfinding.",
+		"models.SegmentConnector.determinant.defined": "el conector de segmento",
+		"models.SegmentConnector.determinant.undefined": "un conector de segmento",
+		"models.SegmentConnector.determinants.defined": "conectores de segmento",
+		"models.SegmentConnector.determinants.undefined": "conectores de segmento",
+		"models.SegmentConnector.plural": "conectores de segmento",
+		"models.SegmentConnector.properties.name.label": "Nombre del conector de segmento",
+		"models.SegmentConnector.singular": "conector de segmento",
+		"models.SegmentConnectorType.description": "Un tipo de conector de segmento califica una puerta de entrada/salida de edificio (de afuera hacia adentro, de afuera hacia afuera, de afuera hacia adentro y hacia afuera), distinto de los tipos de puerta SVG izquierda/derecha.",
+		"models.SegmentConnectorType.determinant.defined": "el tipo de conector de segmento",
+		"models.SegmentConnectorType.determinant.undefined": "un tipo de conector de segmento",
+		"models.SegmentConnectorType.determinants.defined": "tipos de conectores de segmento",
+		"models.SegmentConnectorType.determinants.undefined": "tipos de conectores de segmento",
+		"models.SegmentConnectorType.plural": "tipos de conectores de segmento",
+		"models.SegmentConnectorType.properties.code.description": "Códigos de la lengua: de afuera hacia adentro, de afuera hacia afuera, de afuera hacia adentro y hacia afuera",
+		"models.SegmentConnectorType.properties.code.label": "Código de tipo de conector de segmento",
+		"models.SegmentConnectorType.properties.color.description": "Color opcional del tipo de conector de segmento: se utiliza en el modo conector en la vista de búsqueda de rutas de edificios.",
+		"models.SegmentConnectorType.properties.color.label": "color",
+		"models.SegmentConnectorType.properties.name.label": "Nombre del tipo de conector de segmento",
+		"models.SegmentConnectorType.singular": "tipo de conector de segmento",
 		"models.Structure.description": "Una estructura define una forma geométrica que se puede utilizar para calibrar y posicionar entidades en los mapas.",
 		"models.Structure.determinant.defined": "la estructura",
 		"models.Structure.determinant.undefined": "una estructura",
@@ -119331,6 +121898,28 @@ var jsonTranslationsFiles = {
 		"models.Structure.views.editor.label": "Editar forma",
 		"models.Structure.views.gmap-calibrate.help": "Calibrar la estructura en un mapa para asociar coordenadas geográficas",
 		"models.Structure.views.gmap-calibrate.label": "Calibrar la estructura en un mapa",
+		"models.StructureExclusion.description": "Una exclusión estructural define un hueco (patio, vacío, columna) dentro de la forma externa de la estructura.",
+		"models.StructureExclusion.determinant.defined": "la exclusión de la estructura",
+		"models.StructureExclusion.determinant.undefined": "una exclusión estructural",
+		"models.StructureExclusion.determinants.defined": "exclusiones estructurales",
+		"models.StructureExclusion.determinants.undefined": "exclusiones estructurales",
+		"models.StructureExclusion.plural": "exclusiones estructurales",
+		"models.StructureExclusion.properties.name.description": "Nombre opcional para facilitar la identificación de la exclusión (patio, hueco del ascensor, etc.).",
+		"models.StructureExclusion.properties.name.label": "apellido",
+		"models.StructureExclusion.singular": "exclusión de estructura",
+		"models.StructureExclusionPoint.description": "Un punto de exclusión de estructura define un vértice del polígono del agujero dentro de la forma exterior.",
+		"models.StructureExclusionPoint.determinant.defined": "el punto de exclusión de la estructura",
+		"models.StructureExclusionPoint.determinant.undefined": "un punto de exclusión estructural",
+		"models.StructureExclusionPoint.determinants.defined": "puntos de exclusión estructural",
+		"models.StructureExclusionPoint.determinants.undefined": "puntos de exclusión estructural",
+		"models.StructureExclusionPoint.plural": "puntos de exclusión de la estructura",
+		"models.StructureExclusionPoint.properties.sortIndex.description": "Orden del vértice en el polígono de exclusión",
+		"models.StructureExclusionPoint.properties.sortIndex.label": "Índice de clasificación",
+		"models.StructureExclusionPoint.properties.x.description": "Posición horizontal del punto en el plano",
+		"models.StructureExclusionPoint.properties.x.label": "Coordenada X",
+		"models.StructureExclusionPoint.properties.y.description": "Posición vertical del punto en el plano",
+		"models.StructureExclusionPoint.properties.y.label": "Coordenada Y",
+		"models.StructureExclusionPoint.singular": "punto de exclusión de la estructura",
 		"models.User.determinant.defined": "usuario",
 		"models.User.determinant.undefined": "un usuario",
 		"models.User.determinants.defined": "los usuarios",
@@ -119629,6 +122218,14 @@ var jsonTranslationsFiles = {
 		"OboBuildingAssignmentChip.assignHelp": "Asignar %{buildingName} a esta persona, permitiéndole reservar una estación de trabajo.",
 		"OboBuildingComparisonAlert.buildingAccessWarning": "%{targetPersonName} no puede reservar una estación de trabajo en los siguientes edificios; haga clic en el edificio para permitir que la persona reserve una estación de trabajo allí.",
 		"OboBuildingComparisonAlert.warningTitle": "Advertencia: Edificios sin asignar",
+		"OpenCopyBuildingToCartAsyncAction.ariaLabel": "Copiar estructura de edificio",
+		"OpenCopyBuildingToCartAsyncAction.help": "Copiar estructura de edificio",
+		"OpenGenericNoChangeTableSyncAction.help": "Ver el detalle de los datos idénticos",
+		"OpenGenericNoChangeTableSyncAction.label": "Ver datos",
+		"OpenImportCreateEntitiesTableSyncAction.help": "Ver el detalle de las entidades a crear porque hay más de 500 líneas, por motivos de rendimiento las líneas están ocultas por defecto",
+		"OpenImportCreateEntitiesTableSyncAction.label": "Ver entidades para crear",
+		"OpenInfoTabContentSyncAction.help": "Ver detalles de importación para comparaciones idénticas",
+		"OpenInfoTabContentSyncAction.label": "Ver detalles de importación",
 		"OpenRoomsBulkEditSyncAction.help": "Modificar las propiedades de todos los espacios seleccionados",
 		"OperationHelpMarkdown.help.documentation": "Documentación",
 		"OrganizationDataQualityHierarchy.headerChildOrganizations": "Organizaciones hijas",
@@ -119677,6 +122274,7 @@ var jsonTranslationsFiles = {
 		"PartnerEntityUpdateTab.button.label": "Actualización en %{partnerName}",
 		"PartnerEntityUpdateTab.headers.type": "Tipo",
 		"PartnerEntityUpdateTab.progress.syncing": "Sincronizando %{label} ...",
+		"PasteCartContentIntoTenantAsyncAction.help": "Importar a esta empresa",
 		"PersonAffectationsPanel.description": "Las tareas de la persona",
 		"PersonAffectationsPanel.title": "asignaciones",
 		"PersonBadgePanel.description": "Información diversa sobre la persona.",
@@ -119696,6 +122294,8 @@ var jsonTranslationsFiles = {
 		"PersonCostCenterWorkplaceFilter.Empty": "No existen centros de costos asociados a las personas",
 		"PersonCostCenterWorkplaceInfo.nodeInfo.peopleCount": "Hay %{count} personas con el centro de costos %{costCenterName}",
 		"PersonCostCenterWorkplaceInfo.nodeInfo.workplaceCount": "Hay %{count} estaciones de trabajo con al menos una persona con centro de costos %{costCenterName}",
+		"PersonDataQualityOnlyAssociatedtoBuilding.buildingFilterPlaceholder": "Elija uno o más edificios",
+		"PersonDataQualityOnlyAssociatedtoBuilding.filterByBuildingTitle": "Filtra la lista por construcción",
 		"PersonDataQualityWithoutAffectation.costCenterHeader": "Centro de coste",
 		"PersonDataQualityWithoutAffectation.directionHeader": "Dirección",
 		"PersonDataQualityWithoutAffectation.excludeScenarioBuildingsLabel": "Excluir edificios de escenario",
@@ -119714,7 +122314,6 @@ var jsonTranslationsFiles = {
 		"PersonRelationsPanelView.title": "Relaciones",
 		"PersonSearchSelector.changePersonCta": "Cambiar la persona",
 		"PersonSearchSelector.noPersonSelected": "Nadie seleccionado",
-		"PersonSearchSelector.removePersonHelp": "Eliminar la persona seleccionada",
 		"PersonSearchSelector.selectedPersonLabel": "Persona: %{personName}",
 		"PersonSearchSelector.selectPersonCta": "Seleccione una persona",
 		"PersonSecurityPanel.description": "Información de seguridad y evacuación",
@@ -119746,6 +122345,8 @@ var jsonTranslationsFiles = {
 		"PropertSelectorDrawer.tabLabel": "Propiedades",
 		"PropertyTypeErrors.title": "Los siguientes valores no existen para la propiedad <b>%{propertyTypeLabel}</b> en <b>%{objectTypeLabel}</b>",
 		"PWLSelectDimensionCard.selectDimensionCard.title": "Seleccione una dimensión",
+		"QualifySegmentConnectorSyncAction.help": "Asocia un tipo de entrada exterior/exterior/exterior-interior-exterior con el segmento de puerta seleccionado.",
+		"QualifySegmentConnectorSyncAction.label": "Calificador en conector de segmento",
 		"RedirectCountdownTimer.redirectMessage": "Esta página se redirigirá automáticamente a %{redirectTarget} en %{secondsRemaining} segundos",
 		"ReduceMenuSwitch.open.false": "Contraer el menú para aprovechar el espacio de trabajo",
 		"ReduceMenuSwitch.open.true": "Expandir menú",
@@ -119754,14 +122355,25 @@ var jsonTranslationsFiles = {
 		"RefetchFloorLayoutButton.refetch": "Recargar datos del plan",
 		"RefetchObjectTypeIcon.help": "Recargar datos para %{determinant.defined}",
 		"RefreshPageButton.label": "Recargar página",
+		"RefreshRoomCalendarAsyncAction.help": "Actualizar el calendario",
 		"ReleasableStaticWorkplaceChip.anotherPersonIsAssignedToReleasableStaticWorkplace": "%{personFullName} está asignado a la estación de trabajo liberada %{workplaceName}",
 		"ReleasableStaticWorkplaceChip.chipLabel": "Estación de trabajo disponible para su liberación: %{workplaceName}",
 		"ReleasableStaticWorkplaceChip.youAreAssignedToReleasableStaticWorkplace": "Se le ha asignado la estación de trabajo liberada %{workplaceName}",
+		"ReleaseBookedParkingAsyncAction.ariaLabel": "Liberar reserva de estacionamiento",
+		"ReleaseBookedParkingAsyncAction.help": "Liberar reserva de estacionamiento",
 		"ReleaseWorkplaceBookingAsyncAction.ariaLabel": "Libera esta reserva de estación de trabajo",
 		"ReleaseWorkplaceBookingAsyncAction.help": "Liberar esta reserva",
+		"RemoveFieldTypeAddressSyncAction.ariaLabel": "Eliminar dirección",
+		"RemoveFieldTypeAddressSyncAction.help": "Eliminar dirección",
+		"RemoveFieldTypeImageSyncAction.ariaLabel": "Quita la imagen",
+		"RemoveFieldTypeImageSyncAction.help": "Quita la imagen",
+		"RemoveFieldTypeModel3dSyncAction.ariaLabel": "Eliminar modelo 3D",
+		"RemoveFieldTypeModel3dSyncAction.help": "Eliminar modelo 3D",
 		"RemoveFromCartIconButton.help": "Quitar de la cesta",
 		"RemoveItemColorsOption.help": "Colorea los objetos de blanco para que puedas enfocarte en otros elementos en el mapa",
 		"RemoveItemColorsOption.label": "No colorear objetos",
+		"RemovePersonSearchSelectionAsyncAction.ariaLabel": "Eliminar la persona seleccionada",
+		"RemovePersonSearchSelectionAsyncAction.help": "Eliminar la persona seleccionada",
 		"RenderingTypeError.errorMessages.default": "Su navegador no admite las funciones gráficas necesarias para la vista del mapa 3D. Intente actualizar su navegador o habilitar la aceleración por hardware en la configuración.",
 		"RenderingTypeError.errorMessages.macAMD": "Es posible que la vista del mapa 3D no funcione correctamente en tu Mac con tarjeta gráfica AMD. Intenta actualizar los controladores de tu tarjeta gráfica o usar un navegador diferente.",
 		"RenderingTypeError.errorMessages.mobile": "La vista de mapa 3D no es totalmente compatible con dispositivos móviles. Para una mejor experiencia, utilice un navegador de escritorio.",
@@ -119814,6 +122426,10 @@ var jsonTranslationsFiles = {
 		"ReportErrorSteps.report.steps.reload": "Vuelva a cargar la página y vea si el error se resuelve.",
 		"ReportErrorSteps.report.steps.title": "Puedes probar en orden",
 		"ReportErrorSteps.report.title": "Acabas de encontrar un error",
+		"ResetFieldTypeIconBadgeSyncAction.ariaLabel": "Restablecer la insignia",
+		"ResetFieldTypeIconBadgeSyncAction.help": "Restablecer los valores (texto y colores)",
+		"ResetImportCompareEntitiesSyncAction.help": "Reinicie la importación",
+		"ResetImportCompareEntitiesSyncAction.label": "Reiniciar",
 		"ResetPaginationSyncAction.help": "Volver a la primera página",
 		"ResetPaginationSyncAction.label": "Restablecer paginación",
 		"ResetRotationAngle.resetRotationAngle": "Restablecer a 0° el ángulo de rotación que actualmente es %{initialRotation}",
@@ -119821,6 +122437,10 @@ var jsonTranslationsFiles = {
 		"ResetTextAnchorButton.label": "Restablecer posición de anclaje",
 		"ResetTextPositionButton.help": "Esta opción devuelve la posición del texto de este espacio a su ubicación original.",
 		"ResetTextPositionButton.label": "Restablecer posición de texto",
+		"RestartExportPartnerResourcesSyncAction.help": "Reiniciar la sincronización",
+		"RestartExportPartnerResourcesSyncAction.label": "Reiniciar",
+		"RestartSephoraSapImportSyncAction.help": "Recargar datos",
+		"RestartSephoraSapImportSyncAction.label": "Reinicie la importación",
 		"RightDrawerContent.close": "Cierre el panel derecho haciendo clic en la cruz.",
 		"RightSearchFilterDrawer.buttons.clear.help": "Borre todos los filtros y reinícielos a su estado inicial para asegurarse de que puede ver todas las entidades disponibles",
 		"RightSearchFilterDrawer.buttons.clear.label": "Borrar todos los filtros",
@@ -119849,6 +122469,10 @@ var jsonTranslationsFiles = {
 		"RoomBookingCalendar.thisWeek": "Esta semana",
 		"RoomBookingCalendar.time": "Hora",
 		"RoomBookingCalendar.unavailable": "No disponible o pasado",
+		"RoomBookingConfirmationButton.bookingConfirmed": "La reserva de aparcamiento ha sido confirmada.",
+		"RoomBookingConfirmationButton.confirm": "Confirmar el estacionamiento",
+		"RoomBookingConfirmationButton.confirmHelp": "Confirma que utilizarás tu plaza de aparcamiento.",
+		"RoomBookingConfirmationButton.confirmHelpWithRange": "Confirma que utilizarás tu plaza de aparcamiento. Puedes confirmarlo entre %{confirmationRange} .",
 		"RoomCalendarDrawer.calendarTitle": "Calendario de reservas",
 		"RoomCalendarDrawer.cancelled": "Cancelado",
 		"RoomCalendarDrawer.errorFetchingEvents": "Error al cargar reservas",
@@ -119888,13 +122512,6 @@ var jsonTranslationsFiles = {
 		"RoomDimensionUpdatedSnackbar.setOne": "El valor %{value} se ha colocado en el espacio %{roomName}",
 		"RoomDimensionUpdatedSnackbar.setTwo": "El valor %{value} se ha colocado en los espacios %{roomName1} y %{roomName2}",
 		"RoomFullName.noName": "espacio sin nombre",
-		"RoomGraphHandler.buttons.generateGraph.description": "Al generar el gráfico de orientación se calculan los nodos a través de los cuales el buscador de ruta puede encontrar los espacios y muebles. Si se puede seleccionar el espacio original, el gráfico ya se ha generado.",
-		"RoomGraphHandler.buttons.generateGraph.label": "Generar el gráfico de orientación.",
-		"RoomGraphHandler.buttons.selectOriginRoom.description": "Seleccione un espacio y luego podrá usar esta opción para definirlo como el espacio inicial.",
-		"RoomGraphHandler.buttons.selectOriginRoom.label": "Seleccionar espacio original",
-		"RoomGraphHandler.icons.displayBoundingBoxes.description": "Mostrar espacios de exclusión de muebles",
-		"RoomGraphHandler.icons.displayNodes.description": "Mostrar caminos en las habitaciones",
-		"RoomGraphHandler.icons.enablePathfinding.description": "Activar el dibujo de ruta desde el espacio de origen con la forma debajo del mouse",
 		"RoomGraphHandler.rooms.origin": "espacio original",
 		"RoomLabels.capacity.suffix": "pag.",
 		"RoomMapFilter.Empty": "No hay ningún tipo de espacio asociado a los espacios, puede agregar más modificando un espacio y agregando un tipo asociado, luego puede controlar su visualización desde esta sección",
@@ -119933,9 +122550,16 @@ var jsonTranslationsFiles = {
 		"SecurityComplianceModeSwitch.label": "Filtrar personas con perfiles de seguridad",
 		"SeeMoreDimensionsChip.lowerPriorityDimensionsTooltip": "Los tamaños de menor prioridad solo estarán disponibles para reservar si los tamaños de mayor prioridad están llenos.",
 		"SeeMoreDimensionsChip.seeMoreDimensions": "+ %{count} otros",
+		"SelectAllWrongRoomsSyncAction.help": "Seleccionar o anular la selección de todas las líneas",
+		"SelectAllWrongRoomsSyncAction.labelWhenChecked": "Deselecciona todo",
+		"SelectAllWrongRoomsSyncAction.labelWhenUnchecked": "Seleccionar todo",
 		"SelectDimensionTypeNavigationLayoutIcon.help": "La navegación por capa de análisis le permite hacer clic en un espacio, seleccionar la capa correspondiente y ver las personas asignadas a esta capa o las estaciones de trabajo y objetos asociados con esta capa a través de los espacios.",
 		"SelectDimensionTypeNavigationLayoutIcon.select": "Seleccione este tipo de capa para la navegación",
 		"SelectDimensionTypeNavigationLayoutIcon.unselect": "Eliminar navegación por capa de análisis y volver a navegación por espacios",
+		"SelectDimensionTypeNavigationLayoutSyncAction.ariaLabelSelect": "Seleccione la capa de navegación",
+		"SelectDimensionTypeNavigationLayoutSyncAction.ariaLabelUnselect": "Eliminar la capa de navegación",
+		"SelectDimensionTypeNavigationLayoutSyncAction.select": "Seleccione este tipo de capa para la navegación",
+		"SelectDimensionTypeNavigationLayoutSyncAction.unselect": "Eliminar navegación por capa de análisis y volver a navegación por espacios",
 		"SelectItemTypeShapeFormeLayerSyncAction.ariaLabel": "Puntos de forma",
 		"SelectItemTypeShapeFormeLayerSyncAction.help": "Edita los puntos que definen la geometría de la forma del tipo de objeto.",
 		"SelectItemTypeShapeLayerToggle.formeAria": "Puntos de forma",
@@ -119947,6 +122571,12 @@ var jsonTranslationsFiles = {
 		"SelectItemTypeShapeLayerToggle.visualLabel": "bordes visuales",
 		"SelectItemTypeShapeVisualEdgesLayerSyncAction.ariaLabel": "bordes visuales",
 		"SelectItemTypeShapeVisualEdgesLayerSyncAction.help": "Edita los bordes de visualización, independientemente de la geometría de la forma.",
+		"SelectOriginRoomSyncAction.help": "Seleccione un espacio y luego podrá usar esta opción para definirlo como el espacio inicial.",
+		"SelectOriginRoomSyncAction.label": "Seleccionar espacio original",
+		"SelectPathfindingRouteDestinationSyncAction.help": "Seleccione el espacio de destino",
+		"SelectPathfindingRouteDestinationSyncAction.label": "Seleccione el destino",
+		"SelectPathfindingRouteOriginSyncAction.help": "Seleccionar espacio original",
+		"SelectPathfindingRouteOriginSyncAction.label": "Seleccione el origen",
 		"ShapeTextAnchorDrawer.empty": "Seleccione una forma compatible para mover el texto mostrado",
 		"SharingcloudSyncOperationLabel.title": "Sincronización de nube compartida",
 		"ShowEntityDrawer.title.listItem": "Ver información para %{determinant.defined} en la barra lateral",
@@ -119995,6 +122625,10 @@ var jsonTranslationsFiles = {
 		"SyncSelectedJupRolesAsyncButton.label": "Sincronizar la selección ( %{count} )",
 		"SyncSelectedPicturesAsyncButton.help": "Sincronizar fotos para usuarios seleccionados",
 		"SyncSelectedPicturesAsyncButton.label": "Sincronizar la selección ( %{count} )",
+		"SyncZbreEmptyExternalIdsAsyncAction.help": "Iniciar la sincronización de externalId con Zere",
+		"SyncZbreEmptyExternalIdsAsyncAction.label": "Sincronizar con Zbre ( %{count} / %{total} )",
+		"SyncZbreSiteSurfyGlobalIdsAsyncAction.help": "Iniciar la sincronización de la variable SurfyId con Zbre",
+		"SyncZbreSiteSurfyGlobalIdsAsyncAction.label": "Sincronizar con Zbre ( %{count} / %{total} )",
 		"TableOptionsRow.checked.false": "Seleccionar todo",
 		"TableOptionsRow.checked.true": "Deselecciona todo",
 		"TableOptionsRow.help": "Seleccionar o anular la selección de todas las líneas",
@@ -120045,16 +122679,31 @@ var jsonTranslationsFiles = {
 		"TimeSlot.slotBookedWithTime": "%{startTime} - %{endTime} | Reservado por %{organizer}",
 		"TimeSlot.slotRefreshing": "Actualizando en progreso...",
 		"TimeSlot.slotRefreshingWithCountdown": "Actualizando... Espere %{seconds} s para que Office365 confirme su reserva.",
+		"ToggleAllMapFiltersNodeInfoSyncAction.ariaLabel": "Mostrar todos los detalles",
+		"ToggleAllMapFiltersNodeInfoSyncAction.closeHelp": "Cerrar todos los detalles e indicadores",
+		"ToggleAllMapFiltersNodeInfoSyncAction.openHelp": "Abrir todos los detalles e indicadores",
 		"ToggleAllOpenInfoState.false": "Abrir todos los detalles e indicadores",
 		"ToggleAllOpenInfoState.true": "Cerrar todos los detalles e indicadores",
 		"ToggleCopilotEnable.help.false": "Activa Surfy Copilot para habilitar el reconocimiento automático de puertas",
 		"ToggleCopilotEnable.help.true": "Desactiva Surfy Copilot y vuelve al modelado manual",
 		"ToggleCopilotEnable.label.false": "Activar Surfy Copiloto",
 		"ToggleCopilotEnable.label.true": "Desactivar Surfy Copilot",
+		"ToggleCopilotEnableSyncAction.helpWhenDisabled": "Activa Surfy Copilot para habilitar el reconocimiento automático de puertas",
+		"ToggleCopilotEnableSyncAction.helpWhenEnabled": "Desactiva Surfy Copilot y vuelve al modelado manual",
+		"ToggleCopilotEnableSyncAction.labelWhenDisabled": "Activar Surfy Copiloto",
+		"ToggleCopilotEnableSyncAction.labelWhenEnabled": "Desactivar Surfy Copilot",
+		"ToggleDisplayAllCompaniesSyncAction.help": "Mostrar todos los datos",
+		"ToggleDisplayAllCompaniesSyncAction.label": "Mostrar todas las empresas",
+		"ToggleDisplayFurnitureBboxSyncAction.ariaLabel": "Mostrar espacios de exclusión de muebles",
+		"ToggleDisplayFurnitureBboxSyncAction.help": "Mostrar espacios de exclusión de muebles",
 		"ToggleDisplayLineButton.help": "Le permite activar la visualización del segmento y el punto de anclaje de este espacio.",
 		"ToggleDisplayLineButton.label": "Activar pantalla de anclaje",
+		"ToggleDisplayPathfindingGridSyncAction.ariaLabel": "Mostrar caminos en las habitaciones",
+		"ToggleDisplayPathfindingGridSyncAction.help": "Mostrar caminos en las habitaciones",
 		"ToggleEnableFloorLabels.help": "Mostrar el nombre de la planta en el lateral de la estructura en la vista 3D",
 		"ToggleEnableFloorLabels.label": "Mostrar etiquetas de piso",
+		"ToggleEnableHoverPathfindingSyncAction.ariaLabel": "Activar el rastreo de ruta desde el espacio de origen",
+		"ToggleEnableHoverPathfindingSyncAction.help": "Activar el dibujo de ruta desde el espacio de origen con la forma debajo del mouse",
 		"ToggleEnableMissingFloors.help": "Mostrar pisos fantasma para los pisos faltantes entre el nivel 0 y el piso más alto según los niveles de piso reales",
 		"ToggleEnableMissingFloors.label": "Mostrar pisos fantasma",
 		"ToggleEnableRoomLabels.help": "Muestra los nombres de los espacios como etiquetas en la vista 3D.",
@@ -120062,21 +122711,71 @@ var jsonTranslationsFiles = {
 		"ToggleEnableStructureWalls.help": "Muestra la huella de la estructura del edificio en la vista 3D. No disponible en el modo de pared cúbica.",
 		"ToggleEnableStructureWalls.label": "Mostrar la estructura del edificio",
 		"ToggleJupRoleObjectTypeCrudAsyncAction.help": "Actualizar propiedad ( %{name} )",
+		"ToggleMapFiltersNodeInfoSyncAction.ariaLabel": "Información del nodo de conmutación",
+		"ToggleMapFiltersNodeInfoSyncAction.close": "Cerrar información adicional",
+		"ToggleMapFiltersNodeInfoSyncAction.open": "Ver detalle e indicadores para %{label}",
+		"ToggleMapFiltersNodesAllSyncAction.deselectAll": "Deseleccionar todo",
+		"ToggleMapFiltersNodesAllSyncAction.selectAll": "Seleccionar todo",
+		"TogglePathfindingConnectorsModeSyncAction.ariaLabel": "Modo conector",
+		"TogglePathfindingConnectorsModeSyncAction.help": "Mostrar el modo de conector (espacios y aristas vinculados a los conectores)",
+		"TogglePathfindingCurrentFloorMode.help": "Muestra los espacios del piso seleccionado y la estructura solo de los pisos inferiores. Desactive esta opción para ver todos los pisos con sus respectivos espacios.",
+		"TogglePathfindingCurrentFloorMode.label": "Modo de piso actual",
+		"TogglePathfindingEditModeSyncAction.ariaLabel": "Modo de edición de búsqueda de rutas",
+		"TogglePathfindingEditModeSyncAction.help": "Modo de edición de búsqueda de rutas: haga clic en un espacio para adjuntar un conector de espacio.",
+		"TogglePathfindingGraphNodesSyncAction.ariaLabel": "Mostrar el gráfico de búsqueda de rutas",
+		"TogglePathfindingGraphNodesSyncAction.help": "Visualiza los nodos del grafo de búsqueda de rutas en 3D.",
+		"ToggleSmoothedPathDisplaySyncAction.ariaLabel": "Activar/desactivar la visualización de la ruta suavizada",
+		"ToggleSmoothedPathDisplaySyncAction.help": "Visualización de la trayectoria suavizada (promedio de puntos / giros innecesarios simplificados). Desactivado = visualización gráfica estándar.",
 		"ToggleWorkplaceFreeConditionTypeIconButton.and": "Ver puestos de trabajo libres durante al menos uno de los días solicitados",
 		"ToggleWorkplaceFreeConditionTypeIconButton.or": "Ver estaciones de trabajo gratuitas para todos los días solicitados",
+		"ToggleWorkplaceTypeItemTypeDetailsSyncAction.helpClose": "Opciones de plegado",
+		"ToggleWorkplaceTypeItemTypeDetailsSyncAction.helpOpen": "Opciones de despliegue",
 		"ToggleZbreSyncCheckbox.help": "La sincronización permite colorear espacios y puestos de trabajo según los sensores colocados en Z#ber",
 		"ToggleZbreSyncCheckbox.label": "Sincroniza con ocupaciones en tiempo real en Z#ber",
 		"TopLevelOrganizationFilter.Empty": "No hay organizaciones asociadas a los espacios. Puedes añadir organizaciones editando un espacio y asociándolo a uno; luego, puedes controlar su visualización desde esta sección.",
+		"UnifiedBookingConfirmationButton.confirm": "Confirme la ubicación y el estacionamiento.",
+		"UnifiedBookingConfirmationButton.confirmHelp": "Confirma tu presencia en la estación y tu plaza de aparcamiento de una sola vez.",
+		"UnifiedBookingConfirmationButton.confirmHelpWithRange": "Confirma tu presencia en la estación y tu plaza de aparcamiento de una sola vez. Puedes confirmar entre %{confirmationRange} .",
 		"UnlinkMapScaleAsyncButton.help": "Desvincular la escala de este plano la elimina del plano, pero mantiene la escala en la base de datos para uso futuro",
 		"UnlinkMapScaleAsyncButton.label": "Escala de desagrupación",
+		"UnselectMapFilterNodesSyncAction.ariaLabel": "Deseleccionar todo",
+		"UnselectMapFilterNodesSyncAction.help": "Deseleccionar todo",
+		"UpdatePartnerEntitiesAsyncAction.help": "Actualización en %{partnerName}",
+		"UpdatePartnerEntitiesAsyncAction.label": "Actualización en %{partnerName}",
 		"useOpenMeetingRoomBookingDrawer.bookRoom": "Para reservar",
 		"useOpenMeetingRoomBookingDrawer.noRoomName": "Espacio de nombres indefinido",
 		"useOpenMeetingRoomBookingDrawer.roomBooking": "Reserva de espacio",
 		"useOpenRoomsBulkEditDrawer.drawerHelp": "Modificar las propiedades de todos los espacios seleccionados",
 		"useOpenRoomsBulkEditDrawer.drawerTitle": "Modificación múltiple",
+		"usePathfindingProgressTranslation.applying": "Solicitud…",
+		"usePathfindingProgressTranslation.force": "Regeneración de fuerza",
+		"usePathfindingProgressTranslation.forceHelp": "Ignorar el salto (fuentes sin cambios) y regenerar el gráfico",
+		"usePathfindingProgressTranslation.loadingGraph": "Cargando gráfico…",
+		"usePathfindingProgressTranslation.phases.build_rooms": "Construyendo habitaciones ( %{roomCount} )",
+		"usePathfindingProgressTranslation.phases.building_list_floors": "Lista de pisos ( %{floorCount} )",
+		"usePathfindingProgressTranslation.phases.building_ready": "Listo para la creación de gráficos",
+		"usePathfindingProgressTranslation.phases.campus_connectors": "Reconstruir los conectores del edificio",
+		"usePathfindingProgressTranslation.phases.finalize_merge": "Combinar grafo ( %{nodeCount} nodos)",
+		"usePathfindingProgressTranslation.phases.floor_generate": "Piso de generación %{floorId} ( %{index} / %{total} )",
+		"usePathfindingProgressTranslation.phases.floor_skip": "Piso %{floorId} sin cambios — omitir ( %{index} / %{total} )",
+		"usePathfindingProgressTranslation.phases.load_layout": "Cargando el plan",
+		"usePathfindingProgressTranslation.phases.persist": "Registro",
+		"usePathfindingProgressTranslation.phases.sparsify_portals": "Simplificando los portales",
+		"usePathfindingProgressTranslation.queued": "En fila…",
+		"usePathfindingProgressTranslation.status.failed": "Falla",
+		"usePathfindingProgressTranslation.status.idle": "Inactivo",
+		"usePathfindingProgressTranslation.status.queued": "En línea",
+		"usePathfindingProgressTranslation.status.ready": "Listo",
+		"usePathfindingProgressTranslation.status.running": "En curso",
+		"usePathfindingProgressTranslation.step": "%{label} ( %{ms} ms)",
+		"usePathfindingProgressTranslation.withHistory": "%{current} | %{history}",
 		"UserNotPartOfCompanyAdminCanCreate.createButton": "Crea la asociación",
 		"UserNotPartOfCompanyAdminCanCreate.message": "No estás asociado con la empresa %{companyId} .",
 		"useSearchAndAssociateListItemTooltip.listItemSelect": "Seleccione %{label}",
+		"ValidateBuildingFloorsSelectionSyncAction.help": "Confirmar selección",
+		"ValidateBuildingFloorsSelectionSyncAction.label": "Validar",
+		"ValidateEnterpriseConnectionAsyncAction.help": "Validar el correo electrónico le permite conocer su empresa y dirigirlo a la plataforma de autenticación adecuada",
+		"ValidateEnterpriseConnectionAsyncAction.label": "Validar",
 		"validation.regex.company.name": "El nombre de la empresa debe estar en minúsculas, contener solo letras, números y guiones.",
 		"validation.regex.company.workplaceBookingConfirmationRange": "La ventana de confirmación de la reserva debe estar en formato HH:MM-HH:MM@IANA (por ejemplo, 06:00-10:30@Europe/Paris).",
 		"validation.regex.default": "El valor debe coincidir con el formato: %{pattern}",
@@ -120118,6 +122817,17 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.AddSegmentPointOption.help.enable": "Agregar un vértice en un segmento le permite colocar un punto en cualquier lugar sin tener en cuenta los otros puntos",
 		"WorkCanvas.Options.AddSegmentPointOption.label.disable": "Dejar de agregar un vértice en un segmento",
 		"WorkCanvas.Options.AddSegmentPointOption.label.enable": "Agregar un vértice en un segmento",
+		"WorkCanvas.Options.AddStructureExclusionOption.help.disable": "Detengamos la creación de exclusión estructural.",
+		"WorkCanvas.Options.AddStructureExclusionOption.help.enable": "Dibuja un polígono de exclusión de estructura (patio, vacío, columna) dentro de la forma exterior.",
+		"WorkCanvas.Options.AddStructureExclusionOption.label.disable": "Deje de agregar exclusión de estructura",
+		"WorkCanvas.Options.AddStructureExclusionOption.label.enable": "Agregar una exclusión estructural",
+		"WorkCanvas.Options.AddStructureExclusionOption.namePlaceholder": "Nombre (opcional)",
+		"WorkCanvas.Options.AddStructureExclusionPointOption.help.disable": "Detener la creación de vértices de exclusión de estructura",
+		"WorkCanvas.Options.AddStructureExclusionPointOption.help.enable": "Añade un vértice al polígono de exclusión de la estructura seleccionada.",
+		"WorkCanvas.Options.AddStructureExclusionPointOption.label.disable": "Deja de añadir un vértice de exclusión de estructura.",
+		"WorkCanvas.Options.AddStructureExclusionPointOption.label.enable": "Agregar un vértice de exclusión de estructura",
+		"WorkCanvas.Options.AddStructureExclusionSaveOption.help": "Guardar la exclusión de la estructura dibujada",
+		"WorkCanvas.Options.AddStructureExclusionSaveOption.label": "Guardar la exclusión de la estructura",
 		"WorkCanvas.Options.AddStructurePointOption.help.disable": "Deja de crear cumbres",
 		"WorkCanvas.Options.AddStructurePointOption.help.enable": "Agregar un vértice permite volver a trabajar con mayor precisión un formulario",
 		"WorkCanvas.Options.AddStructurePointOption.label.disable": "Deja de agregar un vértice",
@@ -120154,6 +122864,10 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.DeleteItemTypeVisualEdgesOption.label": "Eliminar bordes visuales",
 		"WorkCanvas.Options.DeleteRoomPointRoomOption.help": "Quitar vértices del espacio",
 		"WorkCanvas.Options.DeleteRoomPointRoomOption.label": "Eliminar vértices seleccionados",
+		"WorkCanvas.Options.DeleteStructureExclusionPointOption.help": "Eliminar el/los vértice(s) de exclusión de estructura seleccionado(s)",
+		"WorkCanvas.Options.DeleteStructureExclusionPointOption.label": "Eliminar el vértice de exclusión",
+		"WorkCanvas.Options.DeleteStructurePointOption.help": "Elimine el/los vértice(s) seleccionado(s) de la forma exterior.",
+		"WorkCanvas.Options.DeleteStructurePointOption.label": "Eliminar el vértice de la estructura",
 		"WorkCanvas.Options.DeleteStructureShapeOption.help": "Eliminar por completo la forma de la estructura de poder, por ejemplo, volver a dibujarla por completo",
 		"WorkCanvas.Options.DeleteStructureShapeOption.label": "Eliminar forma",
 		"WorkCanvas.Options.DeleteWorkplaceTypeItemTypeOption.help": "Eliminar el tipo de objeto del tipo de estación de trabajo",
@@ -120231,6 +122945,12 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.SplitPolygoneOption.label": "espacio separado",
 		"WorkCanvas.Options.SplitRoomPointOption.help": "El vértice dividido permite reutilizar múltiples vértices para cada segmento y así crear espacios separados",
 		"WorkCanvas.Options.SplitRoomPointOption.label": "vértice separado",
+		"WorkCanvas.Options.StructureExclusionsOption.empty": "Este formulario no incluye exclusiones estructurales.",
+		"WorkCanvas.Options.StructureExclusionsOption.help.disable": "Cerrar la lista de exclusiones de la estructura",
+		"WorkCanvas.Options.StructureExclusionsOption.help.enable": "Visualice y elimine las exclusiones de estructura (patio, vacío, columna).",
+		"WorkCanvas.Options.StructureExclusionsOption.label.disable": "Cerrar la lista de exclusiones de la estructura",
+		"WorkCanvas.Options.StructureExclusionsOption.label.enable": "Enumere las exclusiones estructurales",
+		"WorkCanvas.Options.StructureExclusionsOption.rowFallback": "Exclusión de estructura",
 		"WorkCanvas.Options.TextAnchorOption.help.disable": "Dejar de mover el texto de la pantalla",
 		"WorkCanvas.Options.TextAnchorOption.help.enable": "Mover texto de visualización",
 		"WorkCanvas.Options.TextAnchorOption.label.disable": "Detener visualización de gestión de texto",
@@ -120418,7 +123138,11 @@ var jsonTranslationsFiles = {
 		"ZbreItemSitesValidationSync.done": "Para terminar",
 		"ZbreItemSitesValidationSync.noAnomalies": "No se detectaron anomalías en los sitios de objetos Zbre.",
 		"ZbreItemSitesValidationSync.title": "Anomalías en los sitios de objetos Zbre (casilleros…)",
-		"ZbreSyncOperationLabel.title": "Sincronización Z#ber"
+		"ZbreSyncOperationLabel.title": "Sincronización Z#ber",
+		"ZoomOnItemTypeSyncAction.ariaLabel": "Acercar la imagen al tipo de objeto",
+		"ZoomOnMapScaleSyncAction.help": "El zoom hace que sea fácil encontrar la escala en el mapa.",
+		"ZoomOnMapScaleSyncAction.label": "Acercar la escala",
+		"ZoomOnWorkplaceTypeSyncAction.ariaLabel": "Amplíe el tipo de trabajo"
 	},
 	it: {
 		"AccordionFilterListItemText.moreSelected": "+ %{count} altro",
@@ -120434,6 +123158,7 @@ var jsonTranslationsFiles = {
 		"AddressDialog.selectedAddress": "Indirizzo selezionato",
 		"AddressDialog.validate": "convalidare",
 		"AllTenantsDataQualityTable.enableAllTenantsLabel": "Includi tutte le piattaforme",
+		"AssignOboBuildingAsyncAction.assignHelp": "Assegna %{buildingName} a questa persona, consentendole di riservare una postazione di lavoro.",
 		"AssignPersonCheckListBuildingAffectations.title": "Questa persona è già assegnata direttamente su altri edifici, vuoi rimuovere le seguenti assegnazioni per %{personFullname}",
 		"AssignPersonCheckListDialog.actions.close.help": "Chiudi e non eliminare altre assegnazioni",
 		"AssignPersonCheckListDialog.actions.close.label": "Chiudere",
@@ -120445,6 +123170,8 @@ var jsonTranslationsFiles = {
 		"AssignPersonCheckListWorkplaceTransit.title": "La workstation %{workplaceName} è una workstation temporanea",
 		"AssignPersonToRoomCheckListDialogTitle.title": "Hai assegnato %{personName} allo spazio %{roomName}",
 		"AssignPersonToWorkplaceCheckListDialogTitle.title": "Hai assegnato %{personName} alla workstation %{workplaceName}",
+		"AssignWorkplaceToCurrentUserAsyncAction.help": "Occupare la postazione di lavoro",
+		"AssignWorkplaceToCurrentUserAsyncAction.label": "SÌ",
 		"Auth0AuthenticationButton.connections.auth0.help": "Accedi con il tuo account Surfy",
 		"Auth0AuthenticationButton.connections.auth0.label": "Conto Surfy (id aperto)",
 		"AuthenticationButton.connections.auth0.help": "Accedi con il tuo account Surfy",
@@ -120480,11 +123207,13 @@ var jsonTranslationsFiles = {
 		"BookingCalendarSubjectEmail.workplaceAm": "[Surfy] Mattina — Posizione %{workplace} %{buildingSuffix}",
 		"BookingCalendarSubjectEmail.workplaceDefaultName": "Lavoro",
 		"BookingCalendarSubjectEmail.workplacePm": "[Surfy] Pomeriggio — Stazione %{workplace} %{buildingSuffix}",
-		"BookingCanceledNotConfirmedEmail.body": "La prenotazione della postazione di lavoro %{workplacePart} %{buildingPart} per %{bookingDate} è stata annullata perché non è stata confermata entro %{confirmationEndTime} .",
+		"BookingCanceledNotConfirmedEmail.bodyRoom": "La tua prenotazione del parcheggio %{roomPart} %{buildingPart} per %{bookingDate} è stata annullata perché non è stata confermata entro %{confirmationEndTime} .",
+		"BookingCanceledNotConfirmedEmail.bodyWorkplace": "La prenotazione della postazione di lavoro %{workplacePart} %{buildingPart} per %{bookingDate} è stata annullata perché non è stata confermata entro %{confirmationEndTime} .",
 		"BookingCanceledNotConfirmedEmail.buildingPart": " nell'edificio %{buildingName}",
 		"BookingCanceledNotConfirmedEmail.firstNameSuffix": " %{firstName}",
 		"BookingCanceledNotConfirmedEmail.greeting": "Ciao %{firstNameSuffix}",
 		"BookingCanceledNotConfirmedEmail.nextBookings": "Per le prenotazioni future, dovrai confermare la tua presenza tra %{confirmationStartTime} e %{confirmationEndTime} dalla pagina &quot;Il mio programma&quot;:",
+		"BookingCanceledNotConfirmedEmail.roomPart": " ( %{roomName} )",
 		"BookingCanceledNotConfirmedEmail.subject": "La tua prenotazione per %{bookingDate} è stata annullata.",
 		"BookingCanceledNotConfirmedEmail.workplacePart": " ( %{workplaceName} )",
 		"BookingDialog.attendeesHelper": "Seleziona i collaboratori o premi Invio per aggiungere un indirizzo email.",
@@ -120509,10 +123238,12 @@ var jsonTranslationsFiles = {
 		"BookingReleasedStaticDeskWorkplaceTitle.bookWorkplace": "Prenota questa postazione di lavoro",
 		"BookingReleasedStaticDeskWorkplaceTitle.introMany": "Questa postazione di lavoro viene resa disponibile perché queste persone non saranno in ufficio oggi.",
 		"BookingReleasedStaticDeskWorkplaceTitle.introOne": "Questa postazione di lavoro viene resa disponibile perché questa persona non sarà in ufficio oggi.",
-		"BookingReminderNotConfirmedEmail.body": "La prenotazione della postazione di lavoro per %{bookingDate} non è ancora confermata.",
+		"BookingReminderNotConfirmedEmail.bodyRoom": "La tua prenotazione del parcheggio %{roomPart} per %{bookingDate} non è ancora confermata.",
+		"BookingReminderNotConfirmedEmail.bodyWorkplace": "La prenotazione della postazione di lavoro per %{bookingDate} non è ancora confermata.",
 		"BookingReminderNotConfirmedEmail.confirmBefore": "Si prega di confermare la propria presenza entro %{confirmationEndTime} dalla pagina &quot;Il mio programma&quot;:",
 		"BookingReminderNotConfirmedEmail.firstNameSuffix": " %{firstName}",
 		"BookingReminderNotConfirmedEmail.greeting": "Ciao %{firstNameSuffix}",
+		"BookingReminderNotConfirmedEmail.roomPart": " ( %{roomName} )",
 		"BookingReminderNotConfirmedEmail.subject": "Per la prenotazione odierna è necessaria la conferma.",
 		"BookingReporting.pageTitle": "Rapporto di prenotazione",
 		"BookingReportingDetailTable.columnActualRate": "Tasso di occupazione effettivo",
@@ -120579,6 +123310,10 @@ var jsonTranslationsFiles = {
 		"BookRandomParkingButton.parking.release.help": "Rilascio prenotazione parcheggio",
 		"BookRandomParkingButton.parking.viewOnMap": "Vedi i parcheggi riservati sulla mappa",
 		"BookRandomParkingButton.parking.viewOnMapWithSlot": "Consulta la mappa per l'area di parcheggio riservata per il periodo %{slotString}",
+		"BookWorkplaceOnBuildingFloorAsyncAction.availableWorkplaces": "%{freeWorkplaces} posti disponibili",
+		"BookWorkplaceOnBuildingFloorAsyncAction.bookWorkplaceOnFloor": "Prenota una postazione di lavoro al %{floorName} per il periodo %{slotString}",
+		"BookWorkplaceOnBuildingFloorAsyncAction.buttonLabel": "Prenota una postazione di lavoro a %{floorName}",
+		"BookWorkplaceOnBuildingFloorAsyncAction.help": "%{bookedWorkplaces} prenotazione/i, %{freeWorkplaces} postazioni di lavoro disponibili su %{totalFloorWorkplacesCount}",
 		"BookWorkplaceOnDimensionAsyncButton.drawerTitle": "Prenota una postazione di lavoro specifica per il periodo %{slotString}",
 		"BookWorkplaceOnDimensionAsyncButton.help": "Prenota una postazione di lavoro specifica nel piano per questo slot",
 		"BookWorkplaceOnDimensionAsyncButton.helpWithFloor": "Prenota una postazione di lavoro sulla planimetria in %{dimensionName} al piano %{floorName}",
@@ -120602,8 +123337,6 @@ var jsonTranslationsFiles = {
 		"BuildingCloneCreateAccordion.cloneOrganization": "Associare le organizzazioni con gli spazi",
 		"BuildingCloneCreateAccordion.clonePeople": "Compiti duplicati",
 		"BuildingCloneCreateAccordion.cloneWorkplaces": "Postazioni di lavoro duplicate",
-		"BuildingCloneCreateAccordion.createCloneHelp": "Lo scenario duplicherà l'edificio con le proprietà controllate",
-		"BuildingCloneCreateAccordion.createCloneLabel": "Crea uno scenario",
 		"BuildingClonePropertiesSelector.properties.clone.buildingAffectations": "Copiare gli incarichi di costruzione",
 		"BuildingClonePropertiesSelector.properties.clone.costCenterId": "Copia il centro di costo degli spazi",
 		"BuildingClonePropertiesSelector.properties.clone.dimensionAffectations": "Copia le assegnazioni del livello di analisi",
@@ -120757,6 +123490,40 @@ var jsonTranslationsFiles = {
 		"BuildingMenuItem.menu.scenario": "Scenari ( %{count} )",
 		"BuildingMissingStructuredAddress.message": "All'indirizzo dell'edificio ' %{buildingName} ' mancano componenti strutturati (via, città, ecc.)",
 		"BuildingMissingStructuredAddressAction.message": "All'indirizzo dell'edificio ' %{buildingName} ' mancano componenti strutturati (via, città, ecc.)",
+		"BuildingPathfindingControls.offlineBanner": "Modalità offline: percorso calcolato localmente a partire dal grafico memorizzato nella cache.",
+		"BuildingPathfindingFloorColumn.ariaLabel": "Colonna del pavimento",
+		"BuildingPathfindingMapLibre.combosRegionLabel": "Origine e destinazione",
+		"BuildingPathfindingMapLibre.gatedUnavailable": "La funzione di ricerca del percorso non è abilitata per questa azienda",
+		"BuildingPathfindingMapLibre.loadingRead": "Caricamento della mappa e del grafico di navigazione…",
+		"BuildingPathfindingMapLibre.mapRegionLabel": "Mappa (MapLibre)",
+		"BuildingPathfindingMapLibre.mapStubHint": "Mappa di MapLibre",
+		"BuildingPathfindingMapLibre.routeResultError": "Calcolo del percorso non riuscito",
+		"BuildingPathfindingMapLibre.routeResultFound": "Percorso trovato",
+		"BuildingPathfindingMapLibre.routeResultFoundDetail": "{{pointCount}} punti · {{spaceCount}} spazi",
+		"BuildingPathfindingMapLibre.routeResultLoading": "Calcolo del percorso…",
+		"BuildingPathfindingMapLibre.routeResultNone": "Nessun percorso",
+		"BuildingPathfindingMapLibre.selectDestination": "Destinazione",
+		"BuildingPathfindingMapLibre.selectDestinationHelp": "Cerca lo spazio di destinazione nell'edificio",
+		"BuildingPathfindingMapLibre.selectOrigin": "Origine",
+		"BuildingPathfindingMapLibre.selectOriginHelp": "Cerca lo spazio sorgente nell'edificio",
+		"BuildingPathfindingMapLibre.title": "Orientamento degli edifici",
+		"BuildingPathfindingMapLibreHoverCard.segmentConnectorLabel": "Numero del connettore del segmento %{id}",
+		"BuildingPathfindingOverlayStatusCluster.connectorTraits": "Connettori · %{count} caratteristiche",
+		"BuildingPathfindingOverlayStatusCluster.nodes": "Nodi · %{count}",
+		"BuildingPathfindingOverlayStatusCluster.routePoints": "Percorso · %{count} punti",
+		"BuildingPathfindingTabControlsHost.combosRegionLabel": "Origine e destinazione",
+		"BuildingPathfindingTabControlsHost.routeResultError": "Calcolo del percorso non riuscito",
+		"BuildingPathfindingTabControlsHost.routeResultFound": "Percorso trovato",
+		"BuildingPathfindingTabControlsHost.routeResultFoundDetail": "{{pointCount}} punti · {{spaceCount}} spazi",
+		"BuildingPathfindingTabControlsHost.routeResultLoading": "Calcolo del percorso…",
+		"BuildingPathfindingTabControlsHost.routeResultNone": "Nessun percorso",
+		"BuildingPathfindingTabControlsHost.selectDestination": "Destinazione",
+		"BuildingPathfindingTabControlsHost.selectDestinationHelp": "Cerca lo spazio di destinazione nell'edificio",
+		"BuildingPathfindingTabControlsHost.selectOrigin": "Origine",
+		"BuildingPathfindingTabControlsHost.selectOriginHelp": "Cerca lo spazio sorgente nell'edificio",
+		"BuildingPathfindingTabControlsHost.title": "Orientamento degli edifici",
+		"BuildingRegeneratePathfindingGraphAsyncAction.help": "Metti in coda la rigenerazione asincrona del grafo di ricerca del percorso per questo edificio",
+		"BuildingRegeneratePathfindingGraphAsyncAction.label": "Rigenera il grafo di ricerca del percorso",
 		"BuildingReports.items.sheets.merged": "Fusione",
 		"BuildingReports.items.sheets.physicals": "Oggetti fisici",
 		"BuildingReports.items.sheets.virtuals": "Oggetti virtuali",
@@ -120826,8 +123593,14 @@ var jsonTranslationsFiles = {
 		"CalibrateLayoutDrawer.title": "Calibrare il piano",
 		"CampusBuildingsAccordion.buildingCount": "Il numero di edifici",
 		"CancelAddItemToRoom.help": "Annulla l'aggiunta dell'oggetto allo spazio",
+		"CancelAddItemToRoomSyncAction.help": "Annulla l'aggiunta dell'oggetto allo spazio ( %{shortcut} )",
 		"CancelAddWorkplaceToRoom.help": "Annulla l'aggiunta della postazione di lavoro allo spazio",
+		"CancelAddWorkplaceToRoomSyncAction.help": "Annulla l'aggiunta della workstation allo spazio ( %{shortcut} )",
+		"CancelCopyCartImportSyncAction.help": "Copia di annullamento",
+		"CancelCopyCartImportSyncAction.label": "per cancellare",
 		"CancelDuplicateShapsToRoomMouse.help": "Annulla forme duplicate",
+		"CancelEnterpriseConnectionSyncAction.help": "Torna alla pagina di autenticazione con tutte le opzioni",
+		"CancelEnterpriseConnectionSyncAction.label": "Ritorno",
 		"CenterBboxCircleMarker.tooltip": "Punto di ancoraggio della struttura (centro del box box)",
 		"ChangeColor.browserColorPicker": "Seleziona un colore utilizzando la tavolozza dei colori del browser.",
 		"ChangeColor.notHexMatchError": "Il campo non rispetta il formato esadecimale di un colore",
@@ -120849,14 +123622,31 @@ var jsonTranslationsFiles = {
 		"CheckPersonVehiculeParkingDaySlotCompatibility.noVehicle": "Per prenotare i posti auto è necessario registrare un veicolo nel proprio profilo.",
 		"CheckPersonVehiculeParkingDaySlotSingleBookingPerDayCompatibility.singleBookingPerDayIncompatible": "Hai già una prenotazione per il parcheggio in questo edificio per oggi. Con il tuo tipo di veicolo, puoi prenotare un solo posto auto al giorno per edificio.",
 		"CheckThereIsAtLeastOneFreeRoomInTheBuilding.noFreeParkingAvailable": "Nessun parcheggio disponibile durante la fascia oraria selezionata",
+		"CleanAllJupRoleObjectTypesAsyncAction.help": "Pulire tutti i tipi di oggetti",
+		"CleanAllJupRoleObjectTypesAsyncAction.label": "Pulire tutti i tipi di oggetti",
+		"ClearDimensionTypeNavigationSyncAction.ariaLabel": "Annulla la navigazione a livelli",
+		"ClearFieldTypeColorSyncAction.ariaLabel": "rimuovere il colore",
+		"ClearFieldTypeColorSyncAction.help": "rimuovere il colore",
+		"ClearFieldTypeIconSyncAction.ariaLabel": "rimuovi icona",
+		"ClearFieldTypeIconSyncAction.help": "rimuovi icona",
+		"ClearJupRoleMatrixObjectTypeFilterSyncAction.ariaLabel": "Cancella ricerca",
+		"ClearJupRoleMatrixObjectTypeFilterSyncAction.help": "Cancella ricerca",
+		"ClearMeetingRoomsFiltersSyncAction.help": "Cancella filtri",
 		"ClickOnIndexViewMenuPathBreadcrumb.clickOnLabel": "Fare clic su:",
 		"CloneEntitiesFailed.noAccess": "Non hai accesso a questa entità",
 		"CloneEntitiesFailed.reloadHint": "I dati visualizzati potrebbero non essere aggiornati. Si prega di aggiornare la pagina.",
+		"CloseAssignPersonCheckListDialogSyncAction.help": "Chiudi e non eliminare altre assegnazioni",
+		"CloseAssignPersonCheckListDialogSyncAction.label": "Chiudere",
+		"CloseWrongRoomsDialogSyncAction.help": "chiudi questa finestra",
+		"CloseWrongRoomsDialogSyncAction.label": "Chiudere",
 		"CloudinadryWidgetLoader.error.cloudinary-api-missing": "Lo script di Cloudinary è stato caricato, ma l'API createUploadWidget non è presente.",
 		"CloudinadryWidgetLoader.error.missing-cloud-name": "Impossibile avviare Cloudinary: il nome del cloud non è presente nella configurazione pubblica.",
 		"CloudinadryWidgetLoader.error.missing-unsigned-preset": "Cloudinary non è stato avviato: il preset di caricamento (unsignedPreset) non è presente nella configurazione di runtime.",
-		"CloudinadryWidgetLoader.error.script-load-failed": "Cloudinary non è riuscito a caricare lo script del widget (rete, CSP o blocco).",
+		"CloudinadryWidgetLoader.error.script-load-failed": "Impossibile caricare lo script di Cloudinary (widget.cloudinary.com) — spesso bloccato da un proxy/firewall aziendale o da un sistema di blocco.",
 		"CloudinadryWidgetLoader.error.widget-create-failed": "Cloudinary non è riuscito a creare il widget di caricamento.",
+		"CloudinadryWidgetLoader.fallback.help": "Scegli un'immagine locale (caricamento diretto su Cloudinary, senza il widget CDN)",
+		"CloudinadryWidgetLoader.fallback.hint": "È ancora disponibile un selettore di file locali (caricamento tramite api.cloudinary.com).",
+		"CloudinadryWidgetLoader.fallback.warningAria": "Il widget Cloudinary CDN non è riuscito; caricamento del backup locale abilitato",
 		"CollapseSwitchButton.help.false": "Guarda il dettaglio",
 		"CollapseSwitchButton.help.true": "Nascondi il dettaglio",
 		"CollapseWorkplaceAffectationList.title": "Assegna questa persona solo per i giorni seguenti",
@@ -120897,6 +123687,8 @@ var jsonTranslationsFiles = {
 		"CompanyTypeLabel.notClassified": "Piattaforma non classificata",
 		"CompareEntities.buttons.reset.help": "Riavvia l'importazione",
 		"CompareEntities.buttons.reset.label": "Ricomincia",
+		"CompareImportOptionsBarAsyncAction.help": "Avviare il confronto con i dati in navigazione per determinare le modifiche da importare",
+		"CompareImportOptionsBarAsyncAction.label": "Confrontare",
 		"CompareObjectTypeAutomaticSyncIcon.helpDouble": "Dopo il confronto, %{first} e %{second} vengono applicati automaticamente per questo passaggio (senza pulsanti tab).",
 		"CompareObjectTypeAutomaticSyncIcon.helpSingle": "Dopo il confronto, %{operation} viene applicata automaticamente per questo passaggio (senza bisogno di premere il tasto Tab).",
 		"CompareObjectTypeAutomaticSyncIcon.helpTriple": "Dopo il confronto, %{first} , %{second} e %{third} vengono applicati automaticamente per questo passaggio (senza pulsanti tab).",
@@ -120910,8 +123702,9 @@ var jsonTranslationsFiles = {
 		"ConfirmationButtons.confirm": "Conferma il completamento dell'azione",
 		"ConfirmationButtons.loading": "L'azione è in esecuzione, attendere",
 		"ConnectedPartnerContext.title": "Sei connesso a <b>%{label}</b> ( %{host} )",
+		"CopyBelongsToImportKeySyncAction.ariaLabel": "Copia il titolo della colonna",
+		"CopyBelongsToImportKeySyncAction.help": "Copia il titolo della colonna negli appunti",
 		"CopyBuildingToCart.dialogTitle": "Copia l'edificio",
-		"CopyBuildingToCart.help": "Copia la struttura dell'edificio",
 		"CopyBuildingToCartCancelButton.help": "Chiudi e annulla",
 		"CopyBuildingToCartCancelButton.label": "per cancellare",
 		"CopyBuildingToCartCopyButton.help": "Copia le informazioni",
@@ -120919,8 +123712,22 @@ var jsonTranslationsFiles = {
 		"CopyBuildingToCartSaveToFileButton.help": "Salva il contenuto in un file JSON",
 		"CopyBuildingToCartSaveToFileButton.label": "Salva come file",
 		"CopyCartContentIntoTenant.buttons.single.paste.help": "Importa in questa azienda",
+		"CopyEqualsIdsInfoTabSyncAction.help": "Copia gli ID entità negli appunti",
+		"CopyEqualsIdsInfoTabSyncAction.label": "Copia gli ID entità negli appunti",
+		"CopyFieldTypePasswordSyncAction.ariaLabel": "Copia la password",
+		"CopyFieldTypePasswordSyncAction.help": "Copia il contenuto della password negli appunti",
+		"CopyFloorGeoJsonSyncAction.help": "Copia il GeoJSON negli appunti",
+		"CopyFloorGeoJsonSyncAction.label": "COPIA",
 		"CopyImagePathToClipboard.CopyUrl": "Copia URL",
+		"CopyImportScalarPropertySyncAction.ariaLabel": "Copia negli appunti",
+		"CopyImportScalarPropertySyncAction.help": "Copia negli appunti",
+		"CopyIntoClipboardSyncAction.help": "Copia negli appunti",
+		"CopyItemTypePointsSyncAction.help": "Copia i punti negli appunti",
+		"CopyItemTypePointsSyncAction.label": "Copia i punti negli appunti",
 		"CopyItemTypesToCart.help": "Copia i tipi di articoli nel carrello",
+		"CopyItemTypesToCartAsyncAction.ariaLabel": "Copia i tipi di articoli nel carrello",
+		"CopyItemTypesToCartAsyncAction.help": "Copia i tipi di articoli nel carrello",
+		"CopyWorkplaceTypesToCartAsyncAction.help": "Copia i tipi di workstation nel carrello",
 		"CopyWorkplaceTypeToCart.help": "Copia i tipi di workstation nel carrello",
 		"CostCenterMapFilter.Empty": "Non ci sono centri di costo attualmente associati agli spazi, puoi aggiungerne altri modificando uno spazio e associandovi un centro di costo, poi puoi controllarne la visualizzazione da questa sezione",
 		"CostCenterMapFilterTabs.tabs.people": "Persone",
@@ -120928,8 +123735,16 @@ var jsonTranslationsFiles = {
 		"CostCenterMapFilterTabs.tabs.workplaces": "Posti di lavoro personali",
 		"CostCenterWorkplaceMapFilter.Empty": "Al momento non ci sono centri di costo associati alle workstation, puoi aggiungerne altri modificando una workstation e associando ad essa un centro di costo, quindi puoi controllarne la visualizzazione da questa sezione",
 		"CostCenterWorkplaceMapFilter.nodeInfo.workplacesCount": "Ci sono %{count} postazioni di lavoro con centro di costo %{name}",
+		"CreateBuildingCloneAsyncAction.help": "Lo scenario duplicherà l'edificio con le proprietà controllate",
+		"CreateBuildingCloneAsyncAction.label": "Crea uno scenario",
 		"CreateCleanInventoryItemsAsyncButton.help": "Crea gli elementi mancanti",
 		"CreateCleanInventoryItemsAsyncButton.label": "Creare",
+		"CreateFieldTypeIconBadgeSyncAction.help": "Apri l'editor dei badge (testo e colori)",
+		"CreateFieldTypeIconBadgeSyncAction.label": "Crea un badge",
+		"CreateGuestAsyncAction.help": "Crea l'ospite",
+		"CreateGuestAsyncAction.label": "Crea l'ospite",
+		"CreatePartnerEntitiesAsyncAction.help": "Crea in %{partnerName}",
+		"CreatePartnerEntitiesAsyncAction.label": "Crea in %{partnerName}",
 		"CubyFitToViewIsometricButtonOption.help": "Pianta centrale su vani in vista isometrica",
 		"CubyFitToViewIsometricButtonOption.label": "Centrare il piano nella vista isometrica",
 		"CubyFitToViewZenithalButtonOption.help": "Centrare la pianta sugli spazi in vista zenitale",
@@ -121000,12 +123815,17 @@ var jsonTranslationsFiles = {
 		"DefaultViewSetIndicator.recommendedViewTooltip": "Questa visione è consigliata per questo edificio",
 		"DeleteCleanInventoryItemsAsyncButton.help": "Rimuovere tutti gli oggetti che possono essere rimossi.",
 		"DeleteCleanInventoryItemsAsyncButton.label": "Cancellare",
+		"DeleteCompanyReportingDataAsyncAction.ariaLabel": "Eliminare i dati di reporting",
+		"DeleteCompanyReportingDataAsyncAction.help": "Elimina i dati di reporting calcolati, devi ricalcolare i dati di reporting per averli di nuovo, questa opzione consente la pulizia dei dati di reporting",
+		"DeleteCompanyReportingDataAsyncAction.progress": "Eliminazione dei dati di reporting da %{objectType} : %{current} / %{total}",
 		"DeleteDialog.cancel.help": "Annulla eliminazione",
 		"DeleteDialog.cancel.label": "per cancellare",
 		"DeleteDialog.content": "Stai per eliminare <b>%{determinant.undefined}</b> , questa azione non è reversibile e potrebbe avere un impatto, sei sicuro di voler eseguire questa azione?",
 		"DeleteDialog.delete.help": "Elimina definitivamente %{determinant.defined}",
 		"DeleteDialog.delete.label": "Cancellare",
 		"DeleteDialog.title": "Rimuovi %{determinant.undefined}",
+		"DeleteFieldTypeIconBadgeSyncAction.ariaLabel": "Rimuovere il distintivo",
+		"DeleteFieldTypeIconBadgeSyncAction.help": "Rimuovere il distintivo",
 		"DeleteMapScaleAsyncButton.help": "Eliminare la scala equivale a rimuovere la scala dalla pianta ed eliminarla dalla base, non sarà più accessibile da altre piante. Non è possibile eliminare una scala che si trova su più piani.",
 		"DeleteMapScaleAsyncButton.label": "Elimina scala",
 		"DeleteMultipleDialog.cancel.help": "Annulla eliminazione",
@@ -121015,8 +123835,12 @@ var jsonTranslationsFiles = {
 		"DeleteMultipleDialog.delete.label": "Cancellare",
 		"DeleteMultipleDialog.title": "Rimuovi %{determinants.undefined}",
 		"DeleteMultipleEntities.help": "Elimina %{determinants.defined} selezionati",
+		"DeletePartnerEntitiesAsyncAction.help": "Elimina in %{partnerName}",
+		"DeletePartnerEntitiesAsyncAction.label": "Elimina in %{partnerName}",
+		"DeleteStructureExclusionAsyncAction.ariaLabel": "Rimuovere l'esclusione della struttura",
+		"DeleteStructureExclusionAsyncAction.help": "Rimuovere questa esclusione strutturale (patio, vuoto, colonna) senza alterare la forma esterna",
 		"DeleteWorkplace.help": "Elimina workstation: [ %{name} ], anche le assegnazioni verranno eliminate",
-		"DeskBookingConfirmationButton.bookingConfirmed": "La prenotazione è stata confermata.",
+		"DeskBookingConfirmationButton.bookingConfirmed": "La prenotazione della postazione di lavoro è stata confermata.",
 		"DeskBookingConfirmationButton.confirm": "Conferma la tua presenza",
 		"DeskBookingConfirmationButton.confirmHelp": "Conferma di essere presente alla tua postazione di lavoro",
 		"DeskBookingConfirmationButton.confirmHelpWithRange": "Conferma di essere presente alla tua postazione di lavoro. Puoi confermare tra %{confirmationRange} .",
@@ -121205,9 +124029,19 @@ var jsonTranslationsFiles = {
 		"DisplayWorkplaceTexts.workplaceUsageType.label": "Tipo di utilizzo",
 		"distance.centimeter": "centimetri",
 		"distance.meter": "Metri",
+		"DownloadBuildingDistributionCostByFloorsSyncAction.help": "Scarica il file excel per poter condividere ed esportare le chiavi di distribuzione e le aree qualificate per centro di costo e per piano, l'export prevede la distribuzione per piano o per edificio dei centri di costo",
+		"DownloadBuildingDistributionCostByFloorsSyncAction.label": "Scarica il file excel con le disaggregazioni",
+		"DownloadBuildingDistributionCostSyncAction.help": "Scarica il file excel per poter condividere ed esportare le chiavi di distribuzione e le aree qualificate per centro di costo",
+		"DownloadBuildingDistributionCostSyncAction.label": "Scarica il file excel senza suddivisioni",
+		"DownloadBuildingIfcSyncAction.help": "Scarica il file IFC",
+		"DownloadBuildingIfcSyncAction.label": "Scarica il file",
 		"DownloadBuildingImagesAccordion.accordion.title": "Esporta le immagini dell'intero edificio",
 		"DownloadBuildingImagesAccordion.buttons.download.help": "Scarica tutte le planimetrie di tutti i piani dell'edificio in formato png in un zip, i tempi di attesa per questa estrazione possono essere lunghi",
 		"DownloadBuildingImagesAccordion.buttons.download.label": "Scarica ZIP",
+		"DownloadCopilotDoorImagesSyncAction.help": "immagini DL",
+		"DownloadCopilotDoorImagesSyncAction.label": "IMMAGINI DL",
+		"DownloadFlatBuildingAsyncAction.ariaLabel": "Scarica l'edificio piatto",
+		"DownloadFlatBuildingAsyncAction.help": "Scarica il file Excel contenente gli spazi e le postazioni di lavoro con i relativi identificativi.",
 		"DownloadImageButton.helpNoLegend": "Scarica l'intero piano in buona qualità senza la legenda, l'esportazione potrebbe richiedere più tempo.",
 		"DownloadImageButton.helpWithLegend": "Scarica l'intero piano in buona qualità con la legenda, l'esportazione potrebbe richiedere più tempo.",
 		"DownloadImageButton.labelNoLegend": "Scarica la planimetria senza legenda (PNG)",
@@ -121237,6 +124071,10 @@ var jsonTranslationsFiles = {
 		"DqReportStatusCard.viewFullReport": "Vedi il rapporto completo",
 		"DropDownOptions.moreOptions": "Visualizza altre opzioni per %{determinant.defined} %{name}",
 		"EditEntityDrawer.title.edit": "Modifica %{determinant.defined}",
+		"EditFieldTypeAddressSyncAction.ariaLabel": "Cambia indirizzo",
+		"EditFieldTypeAddressSyncAction.help": "Cambia indirizzo",
+		"EditFieldTypeIconSyncAction.ariaLabel": "Cambia icona",
+		"EditFieldTypeIconSyncAction.help": "Cambia icona",
 		"EditInlineToggleIconButton.cancel.help": "Interrompi la modifica senza salvare",
 		"EditInlineToggleIconButton.edit.help": "Modifica direttamente in questa pagina le proprietà di %{determinant.defined}",
 		"EditInlineToggleIconButton.edit.label": "Modificare",
@@ -121327,6 +124165,8 @@ var jsonTranslationsFiles = {
 		"Errors.ROOM_BOOKING_CONFLICT": "Il posto è già prenotato per questa fascia oraria. Si prega di scegliere un altro orario o un altro posto.",
 		"Errors.WORKPLACE_BOOKING_CONFLICT": "La postazione di lavoro è già prenotata per questa fascia oraria. Si prega di scegliere un altro orario o un'altra postazione di lavoro.",
 		"ErrorTextZone.reload": "Ripeti l'operazione",
+		"EscapeCompareObjectTypeStepSyncAction.help": "Salta questo passaggio e vai direttamente al successivo.",
+		"EscapeCompareObjectTypeStepSyncAction.label": "Supera questo passaggio",
 		"ExportQueryNodeToFileButton.help.list": "Scarica in excel %{determinants.defined}",
 		"FetchSocTenantEventsAsyncAction.help": "Recupera le modifiche e le istantanee degli ID di sicurezza aziendali a partire dalla data selezionata.",
 		"FetchSocTenantEventsAsyncAction.label": "Avviare l'audit di sicurezza",
@@ -121360,11 +124200,23 @@ var jsonTranslationsFiles = {
 		"FieldTypeIndexBoolean.help": "Modificare direttamente il valore",
 		"FieldTypeIndexBoolean.values.false": "NO",
 		"FieldTypeIndexBoolean.values.true": "SÌ",
+		"FieldTypeLegendConfiguration.familyCostCenters": "Centri di costo",
+		"FieldTypeLegendConfiguration.familyOrganizationsDirection": "Indicazioni",
+		"FieldTypeLegendConfiguration.familyOrganizationsService": "Servizi",
+		"FieldTypeLegendConfiguration.familyRoomTypeGroups": "Gruppi tipologici",
+		"FieldTypeLegendConfiguration.familyRoomTypes": "Tipi",
+		"FieldTypeLegendConfiguration.legacyRoomTypeGroups": "Gruppi tipologici — selezione per entità",
+		"FieldTypeLegendConfiguration.legacyRoomTypes": "Tipologie — selezione per entità",
+		"FieldTypeLegendConfiguration.selectionByEntity": "Selezione delle proprietà per entità",
+		"FieldTypeLegendConfiguration.selectionByFilter": "Selezione tramite filtro",
+		"FieldTypeLegendConfiguration.selectionStructure": "Selezione delle proprietà della struttura",
 		"FieldTypeModel3d.Remove": "Rimuovi il modello 3D",
 		"FieldTypeModel3d.Upload": "Cambia modello 3D",
 		"FieldTypePassword.icons.copy": "Copia il contenuto della password negli appunti",
 		"FieldTypePassword.icons.generate": "Genera una password univoca",
 		"FileDropZone.dropZone": "Sposta e trascina il file di importazione in quest'area o fai clic nell'area per selezionare il file",
+		"FinishCopyCartImportSyncAction.help": "Termina e chiudi questa finestra",
+		"FinishCopyCartImportSyncAction.label": "Per finire",
 		"FixAddressButton.button.fix": "Correggi l'indirizzo",
 		"FixAddressButton.button.help": "Correggi automaticamente l'indirizzo di ' %{buildingName} ' utilizzando la geocodifica di Google Maps",
 		"FixAddressButton.error.message": "❌ Correzione non riuscita: %{error}",
@@ -121414,11 +124266,17 @@ var jsonTranslationsFiles = {
 		"FurnituresSelection.move": "Sposta l'intero gruppo",
 		"FurnituresSelectionDragZone.help": "Sposta gruppo",
 		"FurnituresSelectionGroupRotation.help": "Ruota tutte le forme selezionate attorno al centro della selezione",
+		"GenerateBuildingPathfindingRouteAsyncAction.help": "Calcola il percorso tra l'origine e la destinazione selezionate.",
+		"GenerateBuildingPathfindingRouteAsyncAction.label": "Genera il percorso",
 		"generateDocumentation.properties.base": "Proprietà di base",
 		"generateDocumentation.properties.belongsTo": "Enti associati (singoli)",
 		"generateDocumentation.properties.hasMany": "Enti associati (elenco)",
 		"generateDocumentation.properties.mandatory": "Proprietà obbligatorie",
 		"generateDocumentation.properties.technicalName": "Nome tecnico",
+		"GenerateFieldTypePasswordSyncAction.ariaLabel": "Genera una password",
+		"GenerateFieldTypePasswordSyncAction.help": "Genera una password univoca",
+		"GeneratePathfindingGraphAsyncAction.help": "Generando il grafico di orientamento si calcolano i nodi attraverso i quali il pathfinder può trovare gli spazi e gli arredi. Se è possibile selezionare lo spazio originale, il grafico è già stato generato.",
+		"GeneratePathfindingGraphAsyncAction.label": "Generare il grafico di orientamento",
 		"GenericNoChangeTable.open.help": "Vedi il dettaglio dei dati identici",
 		"GenericNoChangeTable.open.label": "Visualizza i dati",
 		"GlobalOptions.CartCopyBuildingOption.help": "Copia gli edifici nel carrello",
@@ -121434,7 +124292,6 @@ var jsonTranslationsFiles = {
 		"GoogleApiWrapper.loadingFailed": "Impossibile caricare l'API di Google Maps",
 		"GuestCreateAccordion.contractEndDateLabel": "Data di fine del periodo di soggiorno",
 		"GuestCreateAccordion.contractStartDateLabel": "Data di inizio del periodo di soggiorno",
-		"GuestCreateAccordion.createGuestCta": "Crea l'ospite",
 		"GuestCreateAccordion.createSectionTitle": "Crea un ospite",
 		"GuestCreateAccordion.emailLabel": "E-mail",
 		"GuestCreateAccordion.firstnameLabel": "Nome",
@@ -121534,7 +124391,6 @@ var jsonTranslationsFiles = {
 		"InfoTabContent.open.label": "Vedi i dettagli di importazione",
 		"InlinePositionZField.positionZLabel": "Posizione Z (cm)",
 		"ItemsInventory.EmptyList": "Non ci sono oggetti in questo spazio",
-		"ItemTypeAvatarSingleView.copy": "Copia i punti negli appunti",
 		"ItemTypeAvatarSingleView.debug.label": "Abilita la modalità avanzata per il 3D",
 		"ItemTypeDataQualityFamilyTenantConsistency.buttonFixWithUnclassifiedHelp": "Assegna i tipi di oggetto selezionati alla famiglia NON CLASSIFICATA del tenant",
 		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeFamilyId": "ID Famiglia",
@@ -121583,7 +124439,6 @@ var jsonTranslationsFiles = {
 		"JupRoleAzureSyncRolesTable.value": "Valore",
 		"JupRoleAzureSyncScopeAlert.grantedScopes": "Ambiti concessi",
 		"JupRoleAzureSyncScopeAlert.scopesOk": "Applicazione.ReadUpdate.Tutto consentito.",
-		"JupRoleMatrixObjectTypeFilter.clearSearchHelp": "Cancella ricerca",
 		"JupRoleMatrixObjectTypeFilter.noResults": "Nessun tipo di oggetto corrisponde alla ricerca.",
 		"JupRoleMatrixObjectTypeFilter.searchAriaLabel": "Filtra i tipi di oggetto nella matrice dei ruoli",
 		"JupRoleMatrixObjectTypeFilter.searchPlaceholder": "Cerca un tipo di oggetto (nome tecnico, etichetta...).",
@@ -121612,6 +124467,8 @@ var jsonTranslationsFiles = {
 		"layoutViewSets.peopleDimensionTypes.label": "Quartieri",
 		"layoutViewSets.roomType.description": "Vedere la planimetria in base alla tipologia degli spazi",
 		"layoutViewSets.roomType.label": "Tipi di spazi",
+		"layoutViewSets.roomTypeGroups.description": "Visualizza la planimetria in base al gruppo di tipologia degli spazi",
+		"layoutViewSets.roomTypeGroups.label": "Gruppi tipologici",
 		"layoutViewSets.securityCompliance.description": "Analizza la conformità del tuo piano di prevenzione della sicurezza e i profili di sicurezza delle persone interessate",
 		"layoutViewSets.securityCompliance.label": "Conformità alla sicurezza",
 		"layoutViewSets.walls.description": "Concentrati su spazi e partizioni",
@@ -121675,7 +124532,12 @@ var jsonTranslationsFiles = {
 		"MapLegendFloor.title.floor": "Piano",
 		"MapLegendPersonSecurityProfile.title": "Profili di sicurezza",
 		"MapLegendRoom.title": "Spazi",
-		"MeetingRoomBookAction.bookRoom": "Prenota tramite il calendario",
+		"MeetingRoomBookSyncAction.bookRoom": "Prenota tramite il calendario",
+		"MeetingRoomCalendarSyncAction.ariaLabel": "Consulta il calendario delle prenotazioni",
+		"MeetingRoomCalendarSyncAction.calendarFor": "Ordine del giorno per",
+		"MeetingRoomCalendarSyncAction.help": "Consulta il calendario delle prenotazioni",
+		"MeetingRoomCalendarSyncAction.noRoomName": "Spazio dei nomi indefinito",
+		"MeetingRoomCalendarSyncAction.roomCalendar": "Calendario spaziale",
 		"MeetingRoomCard.availability.available": "Disponibile in questa fascia oraria",
 		"MeetingRoomCard.availability.searching": "Verifica disponibilità...",
 		"MeetingRoomCard.bookable": "Questo spazio può essere prenotato.",
@@ -121699,13 +124561,13 @@ var jsonTranslationsFiles = {
 		"MeetingRoomCard.viewPicture": "Vedi la foto dello spazio",
 		"MeetingRoomCardSeats.seatsMultiple": "%{count} posti",
 		"MeetingRoomCardSeats.seatsSingle": "%{count} posto",
-		"MeetingRoomDirectBookAction.bookingInProgressHelp": "Prenotazione in corso...",
-		"MeetingRoomDirectBookAction.bookingSuccess": "Prenotazione confermata per %{roomName} ( %{timeRange} )",
-		"MeetingRoomDirectBookAction.directBook": "Prenotazione rapida",
-		"MeetingRoomDirectBookAction.missingSelection": "Per prima cosa, seleziona un giorno e una fascia oraria.",
-		"MeetingRoomDirectBookAction.noRoomName": "Spazio dei nomi indefinito",
-		"MeetingRoomDirectBookAction.roomUnavailable": "La sala non è disponibile in questa fascia oraria.",
-		"MeetingRoomDirectBookAction.schedulesLoading": "La disponibilità è in fase di caricamento",
+		"MeetingRoomDirectBookSyncAction.bookingInProgressHelp": "Prenotazione in corso...",
+		"MeetingRoomDirectBookSyncAction.bookingSuccess": "Prenotazione confermata per %{roomName} ( %{timeRange} )",
+		"MeetingRoomDirectBookSyncAction.directBook": "Prenotazione rapida",
+		"MeetingRoomDirectBookSyncAction.missingSelection": "Per prima cosa, seleziona un giorno e una fascia oraria.",
+		"MeetingRoomDirectBookSyncAction.noRoomName": "Spazio dei nomi indefinito",
+		"MeetingRoomDirectBookSyncAction.roomUnavailable": "La sala non è disponibile in questa fascia oraria.",
+		"MeetingRoomDirectBookSyncAction.schedulesLoading": "La disponibilità è in fase di caricamento",
 		"MeetingRooms.clearFilters": "Cancella filtri",
 		"MeetingRooms.loadingAvailabilityTooltip": "Caricamento disponibilità prenotazione...",
 		"MeetingRooms.noMeetingRoomsConfigured": "Non hai sale riunioni configurate tramite gruppi di tipologia di spazio",
@@ -121780,6 +124642,8 @@ var jsonTranslationsFiles = {
 		"menu.menuLeft.vehiclePlanningAdmin": "Gestione della programmazione dei veicoli",
 		"menu.menuLeft.workplace": "Posti di lavoro personali",
 		"menu.tenantOperations": "Sincronizzazione",
+		"MergePersonDuplicatesAsyncAction.help": "Unire le persone",
+		"MergePersonDuplicatesAsyncAction.label": "Unire",
 		"MicrosoftUsersPicturesSyncTitle.title": "Sincronizzazione foto Microsoft",
 		"MicrosoftUsersSyncTitle.title": "Sincronizzazione utente Microsoft",
 		"models.ApiUser.determinant.defined": "utente API",
@@ -121945,6 +124809,8 @@ var jsonTranslationsFiles = {
 		"models.Building.reports.buildingPeople.help": "Segnalazione delle persone interessate nell'edificio",
 		"models.Building.reports.dimensionTypes.fileName": "Tipi di dimensione",
 		"models.Building.reports.dimensionTypes.help": "Relazione tra i tipi di dimensione e i dati di reporting dell'edificio",
+		"models.Building.reports.exceptionalObjects.fileName": "Oggetti eccezionali",
+		"models.Building.reports.exceptionalObjects.help": "Segnalazione di elementi eccezionali",
 		"models.Building.reports.organizations.fileName": "Organizzazioni",
 		"models.Building.reports.organizations.help": "Rapporto delle organizzazioni edilizie",
 		"models.Building.reports.workplaceAffectations.fileName": "Compiti della postazione di lavoro",
@@ -121956,6 +124822,8 @@ var jsonTranslationsFiles = {
 		"models.Building.views.3d-cards.label": "3d",
 		"models.Building.views.3d-map.help": "Visualizza tutti gli edifici di riferimento in 3D su una mappa",
 		"models.Building.views.3d-map.label": "Mappa 3D",
+		"models.Building.views.3d-maplibre.help": "Visualizza le strutture degli edifici di riferimento in MapLibre LOD (stesso rendering dell'SDK Cuby Structure)",
+		"models.Building.views.3d-maplibre.label": "Mappa 3D di MapLibre",
 		"models.Building.views.3d.help": "La pianta 3d dell'edificio %{name} (cuby)",
 		"models.Building.views.3d.label": "progetto 3d",
 		"models.Building.views.assets.help": "Patrimonio immobiliare",
@@ -121966,6 +124834,8 @@ var jsonTranslationsFiles = {
 		"models.Building.views.building-dxf-importer.label": "Importa DXF",
 		"models.Building.views.building-ifc.help": "Esporta questo edificio in IFC per BIM",
 		"models.Building.views.building-ifc.label": "IFC",
+		"models.Building.views.building-pathfinding.help": "Orientarsi all'interno dell'edificio: scegli un punto di partenza e uno di arrivo, visualizza il percorso sulla mappa.",
+		"models.Building.views.building-pathfinding.label": "Ricerca del percorso",
 		"models.Building.views.cards.help": "Veduta di edifici piastrellati",
 		"models.Building.views.cards.label": "Informazioni",
 		"models.Building.views.clone.help": "Costruire <b>scenari</b> e progetti %{name}",
@@ -122051,8 +124921,8 @@ var jsonTranslationsFiles = {
 		"models.Company.properties.workingDaysCount.label": "Numero di giorni lavorativi alla settimana",
 		"models.Company.properties.workplaceBookingAgendaSyncEnabled.description": "Per ogni postazione di lavoro o prenotazione di parcheggio, viene inviato un invito al calendario del dipendente (Outlook, Gmail, ecc.); l'invito viene rimosso in caso di cancellazione.",
 		"models.Company.properties.workplaceBookingAgendaSyncEnabled.label": "Crea un invito sul calendario per ogni prenotazione",
-		"models.Company.properties.workplaceBookingConfirmationRange.description": "Intervallo di tempo durante il quale gli utenti possono confermare le prenotazioni delle postazioni di lavoro. Formato obbligatorio: HH:MM-HH:MM@Fuso orario IANA (ad esempio, 06:00-10:30@Europa/Parigi). Lasciare vuoto questo campo per disabilitare la conferma della prenotazione della postazione di lavoro. Fuso orario IANA: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
-		"models.Company.properties.workplaceBookingConfirmationRange.label": "Finestra di conferma della prenotazione della postazione di lavoro",
+		"models.Company.properties.workplaceBookingConfirmationRange.description": "Fascia oraria durante la quale gli utenti possono confermare la prenotazione della postazione di lavoro e del parcheggio. Formato obbligatorio: HH:MM-HH:MM@Fuso orario IANA (es. 06:00-10:30@Europa/Parigi). Lasciare vuoto questo campo per disabilitare la conferma. Fuso orario IANA: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+		"models.Company.properties.workplaceBookingConfirmationRange.label": "Finestra di conferma della prenotazione (postazione di lavoro e parcheggio)",
 		"models.Company.reports.export-all-duplicate.fileName": "duplicazione",
 		"models.Company.reports.export-all-duplicate.help": "Eseguire il backup dei dati aziendali per creare una copia della piattaforma",
 		"models.Company.reports.export-all.fileName": "backup",
@@ -123005,9 +125875,13 @@ var jsonTranslationsFiles = {
 		"models.PersonToRoomBooking.determinants.defined": "prenotazioni per l'area persone",
 		"models.PersonToRoomBooking.determinants.undefined": "prenotazioni per l'area persone",
 		"models.PersonToRoomBooking.plural": "Prenotazioni per l'area persone",
+		"models.PersonToRoomBooking.properties.emailConfirmationWarningNotificationSentAt.description": "Data e ora di invio dell'email di avviso prima della cancellazione della prenotazione non confermata.",
+		"models.PersonToRoomBooking.properties.emailConfirmationWarningNotificationSentAt.label": "Email di conferma inviata il",
 		"models.PersonToRoomBooking.properties.endDatetime.description": "La data e l'ora in cui termina la prenotazione",
 		"models.PersonToRoomBooking.properties.endDatetime.label": "Fine della prenotazione",
 		"models.PersonToRoomBooking.properties.id.label": "ID di prenotazione per l'area persone",
+		"models.PersonToRoomBooking.properties.roomHasBeenConfirmedAt.description": "Data e ora di conferma della presenza per la prenotazione del posto auto",
+		"models.PersonToRoomBooking.properties.roomHasBeenConfirmedAt.label": "Conferma dello spazio",
 		"models.PersonToRoomBooking.properties.startDatetime.description": "La data e l'ora di inizio della prenotazione",
 		"models.PersonToRoomBooking.properties.startDatetime.label": "Inizio prenotazione",
 		"models.PersonToRoomBooking.singular": "Prenotazione per l'area persone",
@@ -123134,6 +126008,16 @@ var jsonTranslationsFiles = {
 		"models.RoomConnector.properties.waitTime.description": "Il tempo di attesa medio prima che il connettore dello spazio diventi disponibile",
 		"models.RoomConnector.properties.waitTime.label": "Tempo medio di attesa",
 		"models.RoomConnector.singular": "Connettore spaziale",
+		"models.RoomConnectorType.description": "Un tipo di connettore spaziale si riferisce ai connettori che collegano gli spazi tra i piani",
+		"models.RoomConnectorType.determinant.defined": "il tipo di connettore spaziale",
+		"models.RoomConnectorType.determinant.undefined": "un tipo di connettore spaziale",
+		"models.RoomConnectorType.determinants.defined": "i tipi di connettori spaziali",
+		"models.RoomConnectorType.determinants.undefined": "tipi di connettori spaziali",
+		"models.RoomConnectorType.plural": "tipi di connettori spaziali",
+		"models.RoomConnectorType.properties.color.description": "Colore del tipo di connettore opzionale: utilizzato nella modalità Connettore nella vista Percorso edificio",
+		"models.RoomConnectorType.properties.color.label": "Colore",
+		"models.RoomConnectorType.properties.name.label": "Nome del tipo di connettore spaziale",
+		"models.RoomConnectorType.singular": "tipo di connettore spaziale",
 		"models.RoomPoint.description": "Un punto negli spazi definisce le coordinate geometriche per disegnare il contorno di uno spazio",
 		"models.RoomPoint.determinant.defined": "punto di spazi",
 		"models.RoomPoint.determinant.undefined": "un punto di spazi",
@@ -123253,6 +126137,26 @@ var jsonTranslationsFiles = {
 		"models.RoomTypeGroupToRoomType.plural": "Associazioni di gruppo di tipologia spaziale alla tipologia spaziale",
 		"models.RoomTypeGroupToRoomType.properties.id.label": "Identificatore di associazione del gruppo di tipologia spaziale alla tipologia spaziale",
 		"models.RoomTypeGroupToRoomType.singular": "Associazione del gruppo di tipologia spaziale alla tipologia spaziale",
+		"models.SegmentConnector.description": "Un connettore di segmento qualifica un segmento di porta come ingresso/uscita dell'edificio per la ricerca del percorso",
+		"models.SegmentConnector.determinant.defined": "il connettore di segmento",
+		"models.SegmentConnector.determinant.undefined": "un connettore di segmento",
+		"models.SegmentConnector.determinants.defined": "dispositivi di segmento",
+		"models.SegmentConnector.determinants.undefined": "dispositivi di segmento",
+		"models.SegmentConnector.plural": "dispositivi di segmento",
+		"models.SegmentConnector.properties.name.label": "Nome del connettore del segmento",
+		"models.SegmentConnector.singular": "connettori di segmento",
+		"models.SegmentConnectorType.description": "Un tipo di connettore di segmento qualifica una porta di ingresso/uscita di un edificio (dall'esterno verso l'interno, dall'esterno verso l'esterno, dall'esterno verso l'interno verso l'esterno) — distinto dai tipi porta sinistra/porta destra SVG",
+		"models.SegmentConnectorType.determinant.defined": "il tipo di connettore di segmento",
+		"models.SegmentConnectorType.determinant.undefined": "un tipo di connettore di segmento",
+		"models.SegmentConnectorType.determinants.defined": "tipi di connettori di segmento",
+		"models.SegmentConnectorType.determinants.undefined": "tipi di connettori di segmento",
+		"models.SegmentConnectorType.plural": "tipi di connettori di segmento",
+		"models.SegmentConnectorType.properties.code.description": "Codici linguali: dall'esterno verso l'interno, dall'esterno verso l'esterno, dall'esterno verso l'interno verso l'esterno",
+		"models.SegmentConnectorType.properties.code.label": "Codice tipo connettore segmento",
+		"models.SegmentConnectorType.properties.color.description": "Colore opzionale del tipo di connettore del segmento, utilizzato nella modalità Connettore nella vista Percorso edificio.",
+		"models.SegmentConnectorType.properties.color.label": "Colore",
+		"models.SegmentConnectorType.properties.name.label": "Nome del tipo di connettore Segmento",
+		"models.SegmentConnectorType.singular": "tipo di connettore di segmento",
 		"models.Structure.description": "Una struttura definisce una forma geometrica che può essere utilizzata per calibrare e posizionare le caratteristiche sulle mappe",
 		"models.Structure.determinant.defined": "la struttura",
 		"models.Structure.determinant.undefined": "una struttura",
@@ -123271,6 +126175,28 @@ var jsonTranslationsFiles = {
 		"models.Structure.views.editor.label": "Modifica forma",
 		"models.Structure.views.gmap-calibrate.help": "Calibrare la struttura su una mappa per associare le coordinate geografiche",
 		"models.Structure.views.gmap-calibrate.label": "Calibrare la struttura su una mappa",
+		"models.StructureExclusion.description": "Un'esclusione strutturale definisce un foro (patio, vuoto, pilastro) all'interno della forma esterna della struttura.",
+		"models.StructureExclusion.determinant.defined": "l'esclusione della struttura",
+		"models.StructureExclusion.determinant.undefined": "un'esclusione strutturale",
+		"models.StructureExclusion.determinants.defined": "esclusioni strutturali",
+		"models.StructureExclusion.determinants.undefined": "esclusioni strutturali",
+		"models.StructureExclusion.plural": "esclusioni strutturali",
+		"models.StructureExclusion.properties.name.description": "Nome facoltativo per una facile identificazione dell'esclusione (patio, vano ascensore, ecc.).",
+		"models.StructureExclusion.properties.name.label": "Nome",
+		"models.StructureExclusion.singular": "esclusione della struttura",
+		"models.StructureExclusionPoint.description": "Un punto di esclusione della struttura definisce un vertice del poligono del foro all'interno della forma esterna",
+		"models.StructureExclusionPoint.determinant.defined": "il punto di esclusione della struttura",
+		"models.StructureExclusionPoint.determinant.undefined": "un punto di esclusione strutturale",
+		"models.StructureExclusionPoint.determinants.defined": "Criteri di esclusione strutturale",
+		"models.StructureExclusionPoint.determinants.undefined": "Criteri di esclusione strutturale",
+		"models.StructureExclusionPoint.plural": "punti di esclusione della struttura",
+		"models.StructureExclusionPoint.properties.sortIndex.description": "Ordine dei vertici nel poligono di esclusione",
+		"models.StructureExclusionPoint.properties.sortIndex.label": "Ordina indice",
+		"models.StructureExclusionPoint.properties.x.description": "Posizione orizzontale del punto sul piano",
+		"models.StructureExclusionPoint.properties.x.label": "coordinata X",
+		"models.StructureExclusionPoint.properties.y.description": "Posizione verticale del punto sul piano",
+		"models.StructureExclusionPoint.properties.y.label": "coordinata Y",
+		"models.StructureExclusionPoint.singular": "punto di esclusione della struttura",
 		"models.User.determinant.defined": "l'utente",
 		"models.User.determinant.undefined": "un utente",
 		"models.User.determinants.defined": "gli utenti",
@@ -123569,6 +126495,14 @@ var jsonTranslationsFiles = {
 		"OboBuildingAssignmentChip.assignHelp": "Assegna %{buildingName} a questa persona, consentendole di riservare una postazione di lavoro.",
 		"OboBuildingComparisonAlert.buildingAccessWarning": "%{targetPersonName} non può prenotare una postazione di lavoro nei seguenti edifici; fare clic sull'edificio per consentire alla persona di prenotare una postazione di lavoro lì.",
 		"OboBuildingComparisonAlert.warningTitle": "Attenzione: edifici non assegnati",
+		"OpenCopyBuildingToCartAsyncAction.ariaLabel": "Copia la struttura dell'edificio",
+		"OpenCopyBuildingToCartAsyncAction.help": "Copia la struttura dell'edificio",
+		"OpenGenericNoChangeTableSyncAction.help": "Vedi il dettaglio dei dati identici",
+		"OpenGenericNoChangeTableSyncAction.label": "Visualizza i dati",
+		"OpenImportCreateEntitiesTableSyncAction.help": "Vedi i dettagli delle entità da creare perché ci sono più di 500 linee, per motivi di prestazioni le linee sono nascoste per impostazione predefinita",
+		"OpenImportCreateEntitiesTableSyncAction.label": "Visualizza le entità da creare",
+		"OpenInfoTabContentSyncAction.help": "Vedere i dettagli di importazione per confronti identici",
+		"OpenInfoTabContentSyncAction.label": "Vedi i dettagli di importazione",
 		"OpenRoomsBulkEditSyncAction.help": "Modifica le proprietà di tutti gli spazi selezionati",
 		"OperationHelpMarkdown.help.documentation": "Documentazione",
 		"OrganizationDataQualityHierarchy.headerChildOrganizations": "Organizzazioni figlie",
@@ -123617,6 +126551,7 @@ var jsonTranslationsFiles = {
 		"PartnerEntityUpdateTab.button.label": "Aggiorna in %{partnerName}",
 		"PartnerEntityUpdateTab.headers.type": "Tipo",
 		"PartnerEntityUpdateTab.progress.syncing": "Sincronizzazione di %{label} ...",
+		"PasteCartContentIntoTenantAsyncAction.help": "Importa in questa azienda",
 		"PersonAffectationsPanel.description": "I compiti della persona",
 		"PersonAffectationsPanel.title": "Compiti",
 		"PersonBadgePanel.description": "Informazioni varie sulla persona",
@@ -123636,6 +126571,8 @@ var jsonTranslationsFiles = {
 		"PersonCostCenterWorkplaceFilter.Empty": "Non ci sono centri di costo associati alle persone",
 		"PersonCostCenterWorkplaceInfo.nodeInfo.peopleCount": "Ci sono %{count} persone con centro di costo %{costCenterName}",
 		"PersonCostCenterWorkplaceInfo.nodeInfo.workplaceCount": "Ci sono %{count} postazioni di lavoro con almeno una persona con centro di costo %{costCenterName}",
+		"PersonDataQualityOnlyAssociatedtoBuilding.buildingFilterPlaceholder": "Scegli uno o più edifici",
+		"PersonDataQualityOnlyAssociatedtoBuilding.filterByBuildingTitle": "Filtra l'elenco per edificio",
 		"PersonDataQualityWithoutAffectation.costCenterHeader": "Centro di costo",
 		"PersonDataQualityWithoutAffectation.directionHeader": "Direzione",
 		"PersonDataQualityWithoutAffectation.excludeScenarioBuildingsLabel": "Escludi gli edifici dello scenario",
@@ -123654,7 +126591,6 @@ var jsonTranslationsFiles = {
 		"PersonRelationsPanelView.title": "Relazioni",
 		"PersonSearchSelector.changePersonCta": "Cambia la persona",
 		"PersonSearchSelector.noPersonSelected": "Nessuno selezionato",
-		"PersonSearchSelector.removePersonHelp": "Rimuovi la persona selezionata",
 		"PersonSearchSelector.selectedPersonLabel": "Persona: %{personName}",
 		"PersonSearchSelector.selectPersonCta": "Seleziona una persona",
 		"PersonSecurityPanel.description": "Informazioni sulla sicurezza e sull'evacuazione",
@@ -123686,6 +126622,8 @@ var jsonTranslationsFiles = {
 		"PropertSelectorDrawer.tabLabel": "Proprietà",
 		"PropertyTypeErrors.title": "I seguenti valori non esistono per la proprietà <b>%{propertyTypeLabel}</b> in <b>%{objectTypeLabel}</b>",
 		"PWLSelectDimensionCard.selectDimensionCard.title": "Seleziona una dimensione",
+		"QualifySegmentConnectorSyncAction.help": "Associa un tipo dall'esterno verso l'interno / dall'esterno verso l'esterno / dall'esterno verso l'interno verso l'esterno al segmento di porta selezionato",
+		"QualifySegmentConnectorSyncAction.label": "Qualificarsi nel connettore di segmento",
 		"RedirectCountdownTimer.redirectMessage": "Questa pagina verrà automaticamente reindirizzata a %{redirectTarget} tra %{secondsRemaining} s",
 		"ReduceMenuSwitch.open.false": "Comprimi il menu per sfruttare lo spazio di lavoro",
 		"ReduceMenuSwitch.open.true": "Espandi il menu",
@@ -123694,14 +126632,25 @@ var jsonTranslationsFiles = {
 		"RefetchFloorLayoutButton.refetch": "Ricarica i dati del piano",
 		"RefetchObjectTypeIcon.help": "Ricarica i dati per %{determinant.defined}",
 		"RefreshPageButton.label": "Ricarica la pagina",
+		"RefreshRoomCalendarAsyncAction.help": "Aggiorna il calendario",
 		"ReleasableStaticWorkplaceChip.anotherPersonIsAssignedToReleasableStaticWorkplace": "%{personFullName} è assegnato alla postazione di lavoro liberata %{workplaceName}",
 		"ReleasableStaticWorkplaceChip.chipLabel": "Postazione di lavoro disponibile per il rilascio: %{workplaceName}",
 		"ReleasableStaticWorkplaceChip.youAreAssignedToReleasableStaticWorkplace": "Ti è stata assegnata la postazione di lavoro liberata %{workplaceName}",
+		"ReleaseBookedParkingAsyncAction.ariaLabel": "Rilascio prenotazione parcheggio",
+		"ReleaseBookedParkingAsyncAction.help": "Rilascio prenotazione parcheggio",
 		"ReleaseWorkplaceBookingAsyncAction.ariaLabel": "Rilasciare la prenotazione di questa postazione di lavoro",
 		"ReleaseWorkplaceBookingAsyncAction.help": "Rilascia questa prenotazione",
+		"RemoveFieldTypeAddressSyncAction.ariaLabel": "Elimina indirizzo",
+		"RemoveFieldTypeAddressSyncAction.help": "Elimina indirizzo",
+		"RemoveFieldTypeImageSyncAction.ariaLabel": "Rimuovi immagine",
+		"RemoveFieldTypeImageSyncAction.help": "Rimuovi immagine",
+		"RemoveFieldTypeModel3dSyncAction.ariaLabel": "Rimuovi il modello 3D",
+		"RemoveFieldTypeModel3dSyncAction.help": "Rimuovi il modello 3D",
 		"RemoveFromCartIconButton.help": "Rimuovere dal cestino",
 		"RemoveItemColorsOption.help": "Colora gli oggetti di bianco in modo da poterti concentrare su altri elementi sulla mappa",
 		"RemoveItemColorsOption.label": "Non colorare gli oggetti",
+		"RemovePersonSearchSelectionAsyncAction.ariaLabel": "Rimuovi la persona selezionata",
+		"RemovePersonSearchSelectionAsyncAction.help": "Rimuovi la persona selezionata",
 		"RenderingTypeError.errorMessages.default": "Il tuo browser non supporta le funzionalità grafiche richieste per la visualizzazione della mappa 3D. Prova ad aggiornare il browser o ad abilitare l'accelerazione hardware nelle impostazioni del browser.",
 		"RenderingTypeError.errorMessages.macAMD": "La visualizzazione della mappa 3D potrebbe non funzionare correttamente sul tuo Mac con scheda grafica AMD. Prova ad aggiornare i driver della scheda grafica o a utilizzare un browser diverso.",
 		"RenderingTypeError.errorMessages.mobile": "La visualizzazione della mappa 3D non è completamente supportata sui dispositivi mobili. Per un'esperienza migliore, utilizzare un browser desktop.",
@@ -123754,6 +126703,10 @@ var jsonTranslationsFiles = {
 		"ReportErrorSteps.report.steps.reload": "Ricarica la pagina e verifica se l'errore è stato risolto",
 		"ReportErrorSteps.report.steps.title": "Puoi provare in ordine",
 		"ReportErrorSteps.report.title": "Hai appena riscontrato un errore",
+		"ResetFieldTypeIconBadgeSyncAction.ariaLabel": "Reimposta il badge",
+		"ResetFieldTypeIconBadgeSyncAction.help": "Reimposta i valori (testo e colori)",
+		"ResetImportCompareEntitiesSyncAction.help": "Riavvia l'importazione",
+		"ResetImportCompareEntitiesSyncAction.label": "Ricomincia",
 		"ResetPaginationSyncAction.help": "Torna alla prima pagina",
 		"ResetPaginationSyncAction.label": "Reimposta la paginazione",
 		"ResetRotationAngle.resetRotationAngle": "Reimposta a 0° l'angolo di rotazione che attualmente è %{initialRotation}",
@@ -123761,6 +126714,10 @@ var jsonTranslationsFiles = {
 		"ResetTextAnchorButton.label": "Ripristina la posizione dell'ancora",
 		"ResetTextPositionButton.help": "Questa opzione riporta la posizione del testo per questo spazio nella sua posizione originale",
 		"ResetTextPositionButton.label": "Reimposta la posizione del testo",
+		"RestartExportPartnerResourcesSyncAction.help": "Riavvia la sincronizzazione",
+		"RestartExportPartnerResourcesSyncAction.label": "Ricomincia",
+		"RestartSephoraSapImportSyncAction.help": "Ricarica dati",
+		"RestartSephoraSapImportSyncAction.label": "Riavvia l'importazione",
 		"RightDrawerContent.close": "Chiudere il pannello di destra cliccando sulla croce.",
 		"RightSearchFilterDrawer.buttons.clear.help": "Cancella tutti i filtri e ripristinali al loro stato iniziale per assicurarti di poter vedere tutte le entità disponibili",
 		"RightSearchFilterDrawer.buttons.clear.label": "Cancella tutti i filtri",
@@ -123789,6 +126746,10 @@ var jsonTranslationsFiles = {
 		"RoomBookingCalendar.thisWeek": "Questa settimana",
 		"RoomBookingCalendar.time": "Ora",
 		"RoomBookingCalendar.unavailable": "Non disponibile o passato",
+		"RoomBookingConfirmationButton.bookingConfirmed": "La prenotazione del parcheggio è stata confermata.",
+		"RoomBookingConfirmationButton.confirm": "Conferma il parcheggio",
+		"RoomBookingConfirmationButton.confirmHelp": "Conferma che utilizzerai il tuo posto auto",
+		"RoomBookingConfirmationButton.confirmHelpWithRange": "Conferma che utilizzerai il tuo posto auto. Puoi confermare tra %{confirmationRange} .",
 		"RoomCalendarDrawer.calendarTitle": "Calendario delle prenotazioni",
 		"RoomCalendarDrawer.cancelled": "Annullato",
 		"RoomCalendarDrawer.errorFetchingEvents": "Errore durante il caricamento delle prenotazioni",
@@ -123828,13 +126789,6 @@ var jsonTranslationsFiles = {
 		"RoomDimensionUpdatedSnackbar.setOne": "Il valore %{value} è stato inserito nello spazio %{roomName}",
 		"RoomDimensionUpdatedSnackbar.setTwo": "Il valore %{value} è stato inserito negli spazi %{roomName1} e %{roomName2}",
 		"RoomFullName.noName": "spazio senza nome",
-		"RoomGraphHandler.buttons.generateGraph.description": "Generando il grafico di orientamento si calcolano i nodi attraverso i quali il pathfinder può trovare gli spazi e gli arredi. Se è possibile selezionare lo spazio originale, il grafico è già stato generato.",
-		"RoomGraphHandler.buttons.generateGraph.label": "Generare il grafico di orientamento",
-		"RoomGraphHandler.buttons.selectOriginRoom.description": "Seleziona uno spazio, quindi potrai utilizzare questa opzione per definirlo come spazio iniziale",
-		"RoomGraphHandler.buttons.selectOriginRoom.label": "Seleziona lo spazio originale",
-		"RoomGraphHandler.icons.displayBoundingBoxes.description": "Mostra gli spazi di esclusione dei mobili",
-		"RoomGraphHandler.icons.displayNodes.description": "Mostra i percorsi nelle stanze",
-		"RoomGraphHandler.icons.enablePathfinding.description": "Attiva il disegno del percorso dallo spazio di origine con la forma sotto il mouse",
 		"RoomGraphHandler.rooms.origin": "Spazio originale",
 		"RoomLabels.capacity.suffix": "P.",
 		"RoomMapFilter.Empty": "Non esiste un tipo di spazio associato agli spazi, puoi aggiungerne altri modificando uno spazio e aggiungendovi un tipo associato, quindi puoi controllarne la visualizzazione da questa sezione",
@@ -123873,9 +126827,16 @@ var jsonTranslationsFiles = {
 		"SecurityComplianceModeSwitch.label": "Filtra le persone con profili di sicurezza",
 		"SeeMoreDimensionsChip.lowerPriorityDimensionsTooltip": "Le taglie con priorità inferiore saranno disponibili per la prenotazione solo se le taglie con priorità superiore saranno esaurite.",
 		"SeeMoreDimensionsChip.seeMoreDimensions": "+ %{count} altro",
+		"SelectAllWrongRoomsSyncAction.help": "Seleziona o deseleziona tutte le righe",
+		"SelectAllWrongRoomsSyncAction.labelWhenChecked": "Deseleziona tutto",
+		"SelectAllWrongRoomsSyncAction.labelWhenUnchecked": "Seleziona tutto",
 		"SelectDimensionTypeNavigationLayoutIcon.help": "La navigazione per layer di analisi permette di cliccare su uno spazio, selezionare il layer corrispondente e vedere attraverso gli spazi le persone assegnate a questo layer oppure le postazioni e gli oggetti associati a questo layer",
 		"SelectDimensionTypeNavigationLayoutIcon.select": "Seleziona questo tipo di livello per la navigazione",
 		"SelectDimensionTypeNavigationLayoutIcon.unselect": "Rimuovi la navigazione per livello di analisi e torna alla navigazione per spazi",
+		"SelectDimensionTypeNavigationLayoutSyncAction.ariaLabelSelect": "Seleziona il livello di navigazione",
+		"SelectDimensionTypeNavigationLayoutSyncAction.ariaLabelUnselect": "Rimuovi il livello di navigazione",
+		"SelectDimensionTypeNavigationLayoutSyncAction.select": "Seleziona questo tipo di livello per la navigazione",
+		"SelectDimensionTypeNavigationLayoutSyncAction.unselect": "Rimuovi la navigazione per livello di analisi e torna alla navigazione per spazi",
 		"SelectItemTypeShapeFormeLayerSyncAction.ariaLabel": "Punti di forma",
 		"SelectItemTypeShapeFormeLayerSyncAction.help": "Modifica i punti che definiscono la geometria della forma del tipo di oggetto",
 		"SelectItemTypeShapeLayerToggle.formeAria": "Punti di forma",
@@ -123887,6 +126848,12 @@ var jsonTranslationsFiles = {
 		"SelectItemTypeShapeLayerToggle.visualLabel": "bordi visivi",
 		"SelectItemTypeShapeVisualEdgesLayerSyncAction.ariaLabel": "bordi visivi",
 		"SelectItemTypeShapeVisualEdgesLayerSyncAction.help": "Modifica i bordi del display, separatamente dalla geometria della forma.",
+		"SelectOriginRoomSyncAction.help": "Seleziona uno spazio, quindi potrai utilizzare questa opzione per definirlo come spazio iniziale",
+		"SelectOriginRoomSyncAction.label": "Seleziona lo spazio originale",
+		"SelectPathfindingRouteDestinationSyncAction.help": "Seleziona lo spazio di destinazione",
+		"SelectPathfindingRouteDestinationSyncAction.label": "Seleziona la destinazione",
+		"SelectPathfindingRouteOriginSyncAction.help": "Seleziona lo spazio originale",
+		"SelectPathfindingRouteOriginSyncAction.label": "Seleziona l'origine",
 		"ShapeTextAnchorDrawer.empty": "Seleziona una forma compatibile per spostare il testo visualizzato",
 		"SharingcloudSyncOperationLabel.title": "Sincronizzazione del cloud di condivisione",
 		"ShowEntityDrawer.title.listItem": "Vedi le informazioni per %{determinant.defined} nella barra laterale",
@@ -123935,6 +126902,10 @@ var jsonTranslationsFiles = {
 		"SyncSelectedJupRolesAsyncButton.label": "Sincronizza la selezione ( %{count} )",
 		"SyncSelectedPicturesAsyncButton.help": "Sincronizza le foto per gli utenti selezionati",
 		"SyncSelectedPicturesAsyncButton.label": "Sincronizza la selezione ( %{count} )",
+		"SyncZbreEmptyExternalIdsAsyncAction.help": "Avvia la sincronizzazione dell'externalId con Zere",
+		"SyncZbreEmptyExternalIdsAsyncAction.label": "Sincronizza con Zbre ( %{count} / %{total} )",
+		"SyncZbreSiteSurfyGlobalIdsAsyncAction.help": "Avvia la sincronizzazione della variabile SurfyId con Zbre",
+		"SyncZbreSiteSurfyGlobalIdsAsyncAction.label": "Sincronizza con Zbre ( %{count} / %{total} )",
 		"TableOptionsRow.checked.false": "Seleziona tutto",
 		"TableOptionsRow.checked.true": "Deseleziona tutto",
 		"TableOptionsRow.help": "Seleziona o deseleziona tutte le righe",
@@ -123985,16 +126956,31 @@ var jsonTranslationsFiles = {
 		"TimeSlot.slotBookedWithTime": "%{startTime} - %{endTime} | Riservato da %{organizer}",
 		"TimeSlot.slotRefreshing": "Aggiornamento in corso...",
 		"TimeSlot.slotRefreshingWithCountdown": "Aggiornamento in corso... Attendi %{seconds} s affinché Office365 confermi la prenotazione.",
+		"ToggleAllMapFiltersNodeInfoSyncAction.ariaLabel": "Mostra tutti i dettagli",
+		"ToggleAllMapFiltersNodeInfoSyncAction.closeHelp": "Chiudi tutti i dettagli e gli indicatori",
+		"ToggleAllMapFiltersNodeInfoSyncAction.openHelp": "Apri tutti i dettagli e gli indicatori",
 		"ToggleAllOpenInfoState.false": "Apri tutti i dettagli e gli indicatori",
 		"ToggleAllOpenInfoState.true": "Chiudi tutti i dettagli e gli indicatori",
 		"ToggleCopilotEnable.help.false": "Attiva Surfy Copilot per abilitare il riconoscimento automatico della porta",
 		"ToggleCopilotEnable.help.true": "Disabilita Surfy Copilot e torna alla modellazione manuale",
 		"ToggleCopilotEnable.label.false": "Attiva Surfy Copilot",
 		"ToggleCopilotEnable.label.true": "Disabilita Surfy Copilot",
+		"ToggleCopilotEnableSyncAction.helpWhenDisabled": "Attiva Surfy Copilot per abilitare il riconoscimento automatico della porta",
+		"ToggleCopilotEnableSyncAction.helpWhenEnabled": "Disabilita Surfy Copilot e torna alla modellazione manuale",
+		"ToggleCopilotEnableSyncAction.labelWhenDisabled": "Attiva Surfy Copilot",
+		"ToggleCopilotEnableSyncAction.labelWhenEnabled": "Disabilita Surfy Copilot",
+		"ToggleDisplayAllCompaniesSyncAction.help": "Mostra tutti i dati",
+		"ToggleDisplayAllCompaniesSyncAction.label": "Mostra tutte le aziende",
+		"ToggleDisplayFurnitureBboxSyncAction.ariaLabel": "Mostra gli spazi di esclusione dei mobili",
+		"ToggleDisplayFurnitureBboxSyncAction.help": "Mostra gli spazi di esclusione dei mobili",
 		"ToggleDisplayLineButton.help": "Permette di attivare la visualizzazione del segmento e del punto di ancoraggio per questo spazio",
 		"ToggleDisplayLineButton.label": "Abilita la visualizzazione dell'ancora",
+		"ToggleDisplayPathfindingGridSyncAction.ariaLabel": "Mostra i percorsi nelle stanze",
+		"ToggleDisplayPathfindingGridSyncAction.help": "Mostra i percorsi nelle stanze",
 		"ToggleEnableFloorLabels.help": "Visualizza il nome del piano sul lato della struttura nella vista 3D",
 		"ToggleEnableFloorLabels.label": "Mostra le etichette del pavimento",
+		"ToggleEnableHoverPathfindingSyncAction.ariaLabel": "Attiva il tracciamento del percorso dallo spazio sorgente",
+		"ToggleEnableHoverPathfindingSyncAction.help": "Attiva il disegno del percorso dallo spazio di origine con la forma sotto il mouse",
 		"ToggleEnableMissingFloors.help": "Mostra i piani fantasma per i piani mancanti tra il livello 0 e il piano più alto in base ai livelli reali",
 		"ToggleEnableMissingFloors.label": "Mostra pavimenti fantasma",
 		"ToggleEnableRoomLabels.help": "Visualizza i nomi degli spazi come etichette nella vista 3D",
@@ -124002,21 +126988,71 @@ var jsonTranslationsFiles = {
 		"ToggleEnableStructureWalls.help": "Visualizza l'ingombro della struttura dell'edificio nella vista 3D. Non disponibile nella modalità parete Cuby.",
 		"ToggleEnableStructureWalls.label": "Mostra la struttura dell'edificio",
 		"ToggleJupRoleObjectTypeCrudAsyncAction.help": "Aggiorna proprietà ( %{name} )",
+		"ToggleMapFiltersNodeInfoSyncAction.ariaLabel": "Informazioni sul nodo di commutazione",
+		"ToggleMapFiltersNodeInfoSyncAction.close": "Chiudi informazioni aggiuntive",
+		"ToggleMapFiltersNodeInfoSyncAction.open": "Visualizza i dettagli e gli indicatori per %{label}",
+		"ToggleMapFiltersNodesAllSyncAction.deselectAll": "Deseleziona tutto",
+		"ToggleMapFiltersNodesAllSyncAction.selectAll": "Seleziona tutto",
+		"TogglePathfindingConnectorsModeSyncAction.ariaLabel": "Modalità connettore",
+		"TogglePathfindingConnectorsModeSyncAction.help": "Visualizza la modalità del connettore (spazi e bordi collegati ai connettori)",
+		"TogglePathfindingCurrentFloorMode.help": "Mostra gli spazi al piano selezionato e la struttura solo ai piani sottostanti. Disattiva questa opzione per visualizzare tutti i piani con i relativi spazi.",
+		"TogglePathfindingCurrentFloorMode.label": "Modalità pavimento attuale",
+		"TogglePathfindingEditModeSyncAction.ariaLabel": "Modalità di modifica della ricerca del percorso",
+		"TogglePathfindingEditModeSyncAction.help": "Modalità di modifica del percorso: fai clic su uno spazio per collegare un connettore di spazio.",
+		"TogglePathfindingGraphNodesSyncAction.ariaLabel": "Visualizza il grafico di ricerca del percorso",
+		"TogglePathfindingGraphNodesSyncAction.help": "Visualizza i nodi del grafo di ricerca del percorso in 3D",
+		"ToggleSmoothedPathDisplaySyncAction.ariaLabel": "Attiva/disattiva la visualizzazione del percorso levigato",
+		"ToggleSmoothedPathDisplaySyncAction.help": "Visualizzazione del percorso levigato (media dei punti / svolte non necessarie semplificate). Disabilitato = visualizzazione standard del grafico.",
 		"ToggleWorkplaceFreeConditionTypeIconButton.and": "Vedi le postazioni libere per almeno uno dei giorni richiesti",
 		"ToggleWorkplaceFreeConditionTypeIconButton.or": "Visualizza le postazioni libere per tutti i giorni richiesti",
+		"ToggleWorkplaceTypeItemTypeDetailsSyncAction.helpClose": "Opzioni di piegatura",
+		"ToggleWorkplaceTypeItemTypeDetailsSyncAction.helpOpen": "Apri le opzioni",
 		"ToggleZbreSyncCheckbox.help": "La sincronizzazione consente di colorare gli spazi e le postazioni di lavoro in base ai sensori posizionati in Z#ber",
 		"ToggleZbreSyncCheckbox.label": "Sincronizza con le occupazioni in tempo reale in Z#ber",
 		"TopLevelOrganizationFilter.Empty": "Non ci sono organizzazioni associate agli spazi. Puoi aggiungere organizzazioni modificando uno spazio e associandolo a una; puoi quindi controllarne la visualizzazione da questa sezione.",
+		"UnifiedBookingConfirmationButton.confirm": "Conferma posizione e parcheggio",
+		"UnifiedBookingConfirmationButton.confirmHelp": "Conferma la tua presenza in stazione e il tuo posto auto in un colpo solo.",
+		"UnifiedBookingConfirmationButton.confirmHelpWithRange": "Conferma la tua presenza in stazione e il tuo posto auto in un colpo solo. Puoi confermare tra %{confirmationRange} .",
 		"UnlinkMapScaleAsyncButton.help": "Lo scollegamento della bilancia da questo piano la rimuove dal piano, ma la mantiene nel database per un uso futuro",
 		"UnlinkMapScaleAsyncButton.label": "Separa scala",
+		"UnselectMapFilterNodesSyncAction.ariaLabel": "Deseleziona tutto",
+		"UnselectMapFilterNodesSyncAction.help": "Deseleziona tutto",
+		"UpdatePartnerEntitiesAsyncAction.help": "Aggiorna in %{partnerName}",
+		"UpdatePartnerEntitiesAsyncAction.label": "Aggiorna in %{partnerName}",
 		"useOpenMeetingRoomBookingDrawer.bookRoom": "Per prenotare",
 		"useOpenMeetingRoomBookingDrawer.noRoomName": "Spazio dei nomi indefinito",
 		"useOpenMeetingRoomBookingDrawer.roomBooking": "Prenotazione dello spazio",
 		"useOpenRoomsBulkEditDrawer.drawerHelp": "Modifica le proprietà di tutti gli spazi selezionati",
 		"useOpenRoomsBulkEditDrawer.drawerTitle": "Modifica multipla",
+		"usePathfindingProgressTranslation.applying": "Applicazione…",
+		"usePathfindingProgressTranslation.force": "Rigenerazione della forza",
+		"usePathfindingProgressTranslation.forceHelp": "Ignora il salto (le sorgenti rimangono invariate) e rigenera il grafico.",
+		"usePathfindingProgressTranslation.loadingGraph": "Caricamento del grafico…",
+		"usePathfindingProgressTranslation.phases.build_rooms": "Edificio stanze ( %{roomCount} )",
+		"usePathfindingProgressTranslation.phases.building_list_floors": "Elenco dei piani ( %{floorCount} )",
+		"usePathfindingProgressTranslation.phases.building_ready": "Creazione del grafico pronta",
+		"usePathfindingProgressTranslation.phases.campus_connectors": "Ricucire i connettori dell'edificio",
+		"usePathfindingProgressTranslation.phases.finalize_merge": "Unione del grafo ( %{nodeCount} nodi)",
+		"usePathfindingProgressTranslation.phases.floor_generate": "Piano di generazione %{floorId} ( %{index} / %{total} )",
+		"usePathfindingProgressTranslation.phases.floor_skip": "Piano %{floorId} invariato — salta ( %{index} / %{total} )",
+		"usePathfindingProgressTranslation.phases.load_layout": "Caricamento del piano",
+		"usePathfindingProgressTranslation.phases.persist": "Registrazione",
+		"usePathfindingProgressTranslation.phases.sparsify_portals": "Semplificare i portali",
+		"usePathfindingProgressTranslation.queued": "In linea…",
+		"usePathfindingProgressTranslation.status.failed": "Fallimento",
+		"usePathfindingProgressTranslation.status.idle": "Inattivo",
+		"usePathfindingProgressTranslation.status.queued": "In linea",
+		"usePathfindingProgressTranslation.status.ready": "Pronto",
+		"usePathfindingProgressTranslation.status.running": "In corso",
+		"usePathfindingProgressTranslation.step": "%{label} ( %{ms} ms)",
+		"usePathfindingProgressTranslation.withHistory": "%{current} | %{history}",
 		"UserNotPartOfCompanyAdminCanCreate.createButton": "Crea l'associazione",
 		"UserNotPartOfCompanyAdminCanCreate.message": "Non sei associato alla società %{companyId} .",
 		"useSearchAndAssociateListItemTooltip.listItemSelect": "Seleziona %{label}",
+		"ValidateBuildingFloorsSelectionSyncAction.help": "Conferma la selezione",
+		"ValidateBuildingFloorsSelectionSyncAction.label": "convalidare",
+		"ValidateEnterpriseConnectionAsyncAction.help": "Convalidare l'e-mail ti consente di conoscere la tua azienda e di indirizzarti alla giusta piattaforma di autenticazione",
+		"ValidateEnterpriseConnectionAsyncAction.label": "convalidare",
 		"validation.regex.company.name": "Il nome dell'azienda deve essere in minuscolo e contenere solo lettere, numeri e trattini",
 		"validation.regex.company.workplaceBookingConfirmationRange": "La finestra temporale per la conferma della prenotazione deve essere nel formato HH:MM-HH:MM@Fuso Orario IANA (ad esempio, 06:00-10:30@Europa/Parigi).",
 		"validation.regex.default": "Il valore deve corrispondere al formato: %{pattern}",
@@ -124058,6 +127094,17 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.AddSegmentPointOption.help.enable": "L'aggiunta di un vertice su un segmento consente di posizionare un punto ovunque senza tener conto degli altri punti",
 		"WorkCanvas.Options.AddSegmentPointOption.label.disable": "Smetti di aggiungere un vertice su un segmento",
 		"WorkCanvas.Options.AddSegmentPointOption.label.enable": "Aggiungere un vertice su un segmento",
+		"WorkCanvas.Options.AddStructureExclusionOption.help.disable": "Fermare la creazione di esclusione strutturale",
+		"WorkCanvas.Options.AddStructureExclusionOption.help.enable": "Disegna un poligono di esclusione della struttura (patio, vuoto, colonna) all'interno della forma esterna",
+		"WorkCanvas.Options.AddStructureExclusionOption.label.disable": "Smetti di aggiungere l'esclusione della struttura",
+		"WorkCanvas.Options.AddStructureExclusionOption.label.enable": "Aggiungere un'esclusione strutturale",
+		"WorkCanvas.Options.AddStructureExclusionOption.namePlaceholder": "Nome (facoltativo)",
+		"WorkCanvas.Options.AddStructureExclusionPointOption.help.disable": "Interrompere la creazione di vertici di esclusione della struttura",
+		"WorkCanvas.Options.AddStructureExclusionPointOption.help.enable": "Aggiungi un vertice al poligono di esclusione della struttura selezionata",
+		"WorkCanvas.Options.AddStructureExclusionPointOption.label.disable": "Smetti di aggiungere un vertice di esclusione della struttura",
+		"WorkCanvas.Options.AddStructureExclusionPointOption.label.enable": "Aggiungi un vertice di esclusione della struttura",
+		"WorkCanvas.Options.AddStructureExclusionSaveOption.help": "Salva l'esclusione della struttura disegnata",
+		"WorkCanvas.Options.AddStructureExclusionSaveOption.label": "Salva l'esclusione della struttura",
 		"WorkCanvas.Options.AddStructurePointOption.help.disable": "Smetti di creare vertici",
 		"WorkCanvas.Options.AddStructurePointOption.help.enable": "L'aggiunta di un vertice consente di rielaborare una forma con maggiore precisione",
 		"WorkCanvas.Options.AddStructurePointOption.label.disable": "Smetti di aggiungere un vertice",
@@ -124094,6 +127141,10 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.DeleteItemTypeVisualEdgesOption.label": "Rimuovere i bordi visivi",
 		"WorkCanvas.Options.DeleteRoomPointRoomOption.help": "Rimuovere i vertici dallo spazio",
 		"WorkCanvas.Options.DeleteRoomPointRoomOption.label": "Elimina i vertici selezionati",
+		"WorkCanvas.Options.DeleteStructureExclusionPointOption.help": "Rimuovere il/i vertice/i di esclusione della struttura selezionata",
+		"WorkCanvas.Options.DeleteStructureExclusionPointOption.label": "Rimuovere il vertice di esclusione",
+		"WorkCanvas.Options.DeleteStructurePointOption.help": "Elimina il/i vertice/i selezionato/i della forma esterna",
+		"WorkCanvas.Options.DeleteStructurePointOption.label": "Rimuovi il vertice della struttura",
 		"WorkCanvas.Options.DeleteStructureShapeOption.help": "Rimuovere completamente la forma della struttura del potere, ad esempio ridisegnarla interamente",
 		"WorkCanvas.Options.DeleteStructureShapeOption.label": "elimina forma",
 		"WorkCanvas.Options.DeleteWorkplaceTypeItemTypeOption.help": "Rimuovere il tipo di oggetto dal tipo di workstation",
@@ -124171,6 +127222,12 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.SplitPolygoneOption.label": "Spazio separato",
 		"WorkCanvas.Options.SplitRoomPointOption.help": "Il vertice diviso consente di riutilizzare più vertici per ogni segmento e quindi di creare spazi separati",
 		"WorkCanvas.Options.SplitRoomPointOption.label": "Vertice separato",
+		"WorkCanvas.Options.StructureExclusionsOption.empty": "Nessuna esclusione strutturale su questo modulo.",
+		"WorkCanvas.Options.StructureExclusionsOption.help.disable": "Chiudere l'elenco delle esclusioni di struttura",
+		"WorkCanvas.Options.StructureExclusionsOption.help.enable": "Visualizza e rimuovi le esclusioni delle strutture (patio, vuoto, colonna)",
+		"WorkCanvas.Options.StructureExclusionsOption.label.disable": "Chiudere l'elenco delle esclusioni di struttura",
+		"WorkCanvas.Options.StructureExclusionsOption.label.enable": "Elencare le esclusioni strutturali",
+		"WorkCanvas.Options.StructureExclusionsOption.rowFallback": "Esclusione strutturale",
 		"WorkCanvas.Options.TextAnchorOption.help.disable": "Interrompi lo spostamento del testo visualizzato",
 		"WorkCanvas.Options.TextAnchorOption.help.enable": "Sposta il testo visualizzato",
 		"WorkCanvas.Options.TextAnchorOption.label.disable": "Interrompi la gestione del testo visualizzato",
@@ -124358,7 +127415,11 @@ var jsonTranslationsFiles = {
 		"ZbreItemSitesValidationSync.done": "Per finire",
 		"ZbreItemSitesValidationSync.noAnomalies": "Nessuna anomalia rilevata sui siti degli oggetti Zbre.",
 		"ZbreItemSitesValidationSync.title": "Anomalie sui siti degli oggetti Zbre (armadietti…)",
-		"ZbreSyncOperationLabel.title": "Sincronizzazione Z#ber"
+		"ZbreSyncOperationLabel.title": "Sincronizzazione Z#ber",
+		"ZoomOnItemTypeSyncAction.ariaLabel": "Ingrandisci il tipo di oggetto",
+		"ZoomOnMapScaleSyncAction.help": "Lo zoom rende facile trovare la scala sulla planimetria.",
+		"ZoomOnMapScaleSyncAction.label": "Zoom in scala",
+		"ZoomOnWorkplaceTypeSyncAction.ariaLabel": "Ingrandisci il tipo di lavoro"
 	},
 	nl: {
 		"AccordionFilterListItemText.moreSelected": "+ %{count} andere",
@@ -124374,6 +127435,7 @@ var jsonTranslationsFiles = {
 		"AddressDialog.selectedAddress": "Geselecteerd adres",
 		"AddressDialog.validate": "bevestigen",
 		"AllTenantsDataQualityTable.enableAllTenantsLabel": "Neem alle platforms op",
+		"AssignOboBuildingAsyncAction.assignHelp": "Wijs %{buildingName} toe aan deze persoon, zodat hij of zij een werkplek kan reserveren.",
 		"AssignPersonCheckListBuildingAffectations.title": "Deze persoon is al direct toegewezen aan andere gebouwen, wil je de volgende toewijzingen voor %{personFullname} verwijderen",
 		"AssignPersonCheckListDialog.actions.close.help": "Sluit en verwijder geen andere toewijzingen",
 		"AssignPersonCheckListDialog.actions.close.label": "sluiten",
@@ -124385,6 +127447,8 @@ var jsonTranslationsFiles = {
 		"AssignPersonCheckListWorkplaceTransit.title": "Werkstation %{workplaceName} is een transitwerkstation",
 		"AssignPersonToRoomCheckListDialogTitle.title": "Je hebt %{personName} toegewezen aan ruimte %{roomName}",
 		"AssignPersonToWorkplaceCheckListDialogTitle.title": "U heeft %{personName} toegewezen aan werkstation %{workplaceName}",
+		"AssignWorkplaceToCurrentUserAsyncAction.help": "Bezet het werkstation",
+		"AssignWorkplaceToCurrentUserAsyncAction.label": "Ja",
 		"Auth0AuthenticationButton.connections.auth0.help": "Log in met je Surfy-account",
 		"Auth0AuthenticationButton.connections.auth0.label": "Surfy-account (open id)",
 		"AuthenticationButton.connections.auth0.help": "Log in met je Surfy-account",
@@ -124420,11 +127484,13 @@ var jsonTranslationsFiles = {
 		"BookingCalendarSubjectEmail.workplaceAm": "[Surfy] Ochtend — Positie %{workplace} %{buildingSuffix}",
 		"BookingCalendarSubjectEmail.workplaceDefaultName": "Functie",
 		"BookingCalendarSubjectEmail.workplacePm": "[Surfy] Middag — Station %{workplace} %{buildingSuffix}",
-		"BookingCanceledNotConfirmedEmail.body": "Uw werkplekreservering %{workplacePart} %{buildingPart} op %{bookingDate} is geannuleerd omdat deze niet vóór %{confirmationEndTime} was bevestigd.",
+		"BookingCanceledNotConfirmedEmail.bodyRoom": "Uw parkeerreservering %{roomPart} %{buildingPart} op %{bookingDate} is geannuleerd omdat deze niet vóór %{confirmationEndTime} was bevestigd.",
+		"BookingCanceledNotConfirmedEmail.bodyWorkplace": "Uw werkplekreservering %{workplacePart} %{buildingPart} op %{bookingDate} is geannuleerd omdat deze niet vóór %{confirmationEndTime} was bevestigd.",
 		"BookingCanceledNotConfirmedEmail.buildingPart": " in het gebouw %{buildingName}",
 		"BookingCanceledNotConfirmedEmail.firstNameSuffix": " %{firstName}",
 		"BookingCanceledNotConfirmedEmail.greeting": "Hallo %{firstNameSuffix}",
 		"BookingCanceledNotConfirmedEmail.nextBookings": "Voor uw toekomstige boekingen dient u uw aanwezigheid te bevestigen tussen %{confirmationStartTime} en %{confirmationEndTime} via de pagina &quot;Mijn rooster&quot;:",
+		"BookingCanceledNotConfirmedEmail.roomPart": " ( %{roomName} )",
 		"BookingCanceledNotConfirmedEmail.subject": "Uw reservering voor %{bookingDate} is geannuleerd.",
 		"BookingCanceledNotConfirmedEmail.workplacePart": " ( %{workplaceName} )",
 		"BookingDialog.attendeesHelper": "Selecteer medewerkers of druk op Enter om een ​​e-mailadres toe te voegen.",
@@ -124449,10 +127515,12 @@ var jsonTranslationsFiles = {
 		"BookingReleasedStaticDeskWorkplaceTitle.bookWorkplace": "Reserveer deze werkplek",
 		"BookingReleasedStaticDeskWorkplaceTitle.introMany": "Deze werkplek wordt beschikbaar gesteld omdat deze mensen vandaag niet op kantoor zullen zijn.",
 		"BookingReleasedStaticDeskWorkplaceTitle.introOne": "Deze werkplek wordt beschikbaar gesteld omdat deze persoon vandaag niet op kantoor aanwezig zal zijn.",
-		"BookingReminderNotConfirmedEmail.body": "Uw werkplekreservering voor %{bookingDate} is nog niet bevestigd.",
+		"BookingReminderNotConfirmedEmail.bodyRoom": "Uw parkeerreservering %{roomPart} voor %{bookingDate} is nog niet bevestigd.",
+		"BookingReminderNotConfirmedEmail.bodyWorkplace": "Uw werkplekreservering voor %{bookingDate} is nog niet bevestigd.",
 		"BookingReminderNotConfirmedEmail.confirmBefore": "Bevestig uw aanwezigheid vóór %{confirmationEndTime} via de pagina &quot;Mijn rooster&quot;:",
 		"BookingReminderNotConfirmedEmail.firstNameSuffix": " %{firstName}",
 		"BookingReminderNotConfirmedEmail.greeting": "Hallo %{firstNameSuffix}",
+		"BookingReminderNotConfirmedEmail.roomPart": " ( %{roomName} )",
 		"BookingReminderNotConfirmedEmail.subject": "Bevestiging is vereist voor de reservering van vandaag.",
 		"BookingReporting.pageTitle": "Boekingsrapport",
 		"BookingReportingDetailTable.columnActualRate": "Werkelijke bezettingsgraad",
@@ -124519,6 +127587,10 @@ var jsonTranslationsFiles = {
 		"BookRandomParkingButton.parking.release.help": "Parkeerreservering vrijgeven",
 		"BookRandomParkingButton.parking.viewOnMap": "Zie gereserveerde parkeerplaats op de kaart",
 		"BookRandomParkingButton.parking.viewOnMapWithSlot": "Zie de plattegrond voor de parkeerplaats die is gereserveerd voor de periode %{slotString}",
+		"BookWorkplaceOnBuildingFloorAsyncAction.availableWorkplaces": "%{freeWorkplaces} plaatsen beschikbaar",
+		"BookWorkplaceOnBuildingFloorAsyncAction.bookWorkplaceOnFloor": "Reserveer een werkplek op %{floorName} voor de periode %{slotString}",
+		"BookWorkplaceOnBuildingFloorAsyncAction.buttonLabel": "Reserveer een werkstation op %{floorName}",
+		"BookWorkplaceOnBuildingFloorAsyncAction.help": "%{bookedWorkplaces} reservering(en), %{freeWorkplaces} werkstations beschikbaar op %{totalFloorWorkplacesCount}",
 		"BookWorkplaceOnDimensionAsyncButton.drawerTitle": "Reserveer een specifiek werkstation voor de periode %{slotString}",
 		"BookWorkplaceOnDimensionAsyncButton.help": "Reserveer een specifiek werkstation volgens het abonnement voor dit slot",
 		"BookWorkplaceOnDimensionAsyncButton.helpWithFloor": "Reserveer een werkplek op de kaart in %{dimensionName} op verdieping %{floorName}",
@@ -124542,8 +127614,6 @@ var jsonTranslationsFiles = {
 		"BuildingCloneCreateAccordion.cloneOrganization": "Koppel organisaties aan ruimtes",
 		"BuildingCloneCreateAccordion.clonePeople": "Dubbele opdrachten",
 		"BuildingCloneCreateAccordion.cloneWorkplaces": "Dubbele werkstations",
-		"BuildingCloneCreateAccordion.createCloneHelp": "Het scenario dupliceert het gebouw met de aangevinkte eigenschappen",
-		"BuildingCloneCreateAccordion.createCloneLabel": "Creëer een scenario",
 		"BuildingClonePropertiesSelector.properties.clone.buildingAffectations": "Kopieeropdrachten",
 		"BuildingClonePropertiesSelector.properties.clone.costCenterId": "Kopieer het kostenplaatsnummer van de ruimtes",
 		"BuildingClonePropertiesSelector.properties.clone.dimensionAffectations": "Kopieer de toewijzingen van de analyselaag.",
@@ -124697,6 +127767,40 @@ var jsonTranslationsFiles = {
 		"BuildingMenuItem.menu.scenario": "Scenario's ( %{count} )",
 		"BuildingMissingStructuredAddress.message": "In het adres van gebouw ' %{buildingName} ' ontbreken gestructureerde componenten (straat, stad, enz.)",
 		"BuildingMissingStructuredAddressAction.message": "In het adres van gebouw ' %{buildingName} ' ontbreken gestructureerde componenten (straat, stad, enz.)",
+		"BuildingPathfindingControls.offlineBanner": "Offline modus — route lokaal berekend op basis van de in de cache opgeslagen grafiek",
+		"BuildingPathfindingFloorColumn.ariaLabel": "Vloerkolom",
+		"BuildingPathfindingMapLibre.combosRegionLabel": "Bron en bestemming",
+		"BuildingPathfindingMapLibre.gatedUnavailable": "Routeplanning is niet ingeschakeld voor dit bedrijf.",
+		"BuildingPathfindingMapLibre.loadingRead": "De kaart en navigatiegrafiek worden geladen...",
+		"BuildingPathfindingMapLibre.mapRegionLabel": "Kaart (MapLibre)",
+		"BuildingPathfindingMapLibre.mapStubHint": "MapLibre-kaart",
+		"BuildingPathfindingMapLibre.routeResultError": "Padberekening mislukt",
+		"BuildingPathfindingMapLibre.routeResultFound": "Pad gevonden",
+		"BuildingPathfindingMapLibre.routeResultFoundDetail": "{{pointCount}} punten · {{spaceCount}} spaties",
+		"BuildingPathfindingMapLibre.routeResultLoading": "Het pad berekenen…",
+		"BuildingPathfindingMapLibre.routeResultNone": "Geen pad",
+		"BuildingPathfindingMapLibre.selectDestination": "Bestemming",
+		"BuildingPathfindingMapLibre.selectDestinationHelp": "Zoek de gewenste ruimte in het gebouw.",
+		"BuildingPathfindingMapLibre.selectOrigin": "Oorsprong",
+		"BuildingPathfindingMapLibre.selectOriginHelp": "Zoek de bronruimte in het gebouw.",
+		"BuildingPathfindingMapLibre.title": "Routeplanning bouwen",
+		"BuildingPathfindingMapLibreHoverCard.segmentConnectorLabel": "Segmentconnectornummer %{id}",
+		"BuildingPathfindingOverlayStatusCluster.connectorTraits": "Connectoren · %{count} eigenschappen",
+		"BuildingPathfindingOverlayStatusCluster.nodes": "Knooppunten · %{count}",
+		"BuildingPathfindingOverlayStatusCluster.routePoints": "Route · %{count} punten",
+		"BuildingPathfindingTabControlsHost.combosRegionLabel": "Bron en bestemming",
+		"BuildingPathfindingTabControlsHost.routeResultError": "Padberekening mislukt",
+		"BuildingPathfindingTabControlsHost.routeResultFound": "Pad gevonden",
+		"BuildingPathfindingTabControlsHost.routeResultFoundDetail": "{{pointCount}} punten · {{spaceCount}} spaties",
+		"BuildingPathfindingTabControlsHost.routeResultLoading": "Het pad berekenen…",
+		"BuildingPathfindingTabControlsHost.routeResultNone": "Geen pad",
+		"BuildingPathfindingTabControlsHost.selectDestination": "Bestemming",
+		"BuildingPathfindingTabControlsHost.selectDestinationHelp": "Zoek de gewenste ruimte in het gebouw.",
+		"BuildingPathfindingTabControlsHost.selectOrigin": "Oorsprong",
+		"BuildingPathfindingTabControlsHost.selectOriginHelp": "Zoek de bronruimte in het gebouw.",
+		"BuildingPathfindingTabControlsHost.title": "Routeplanning bouwen",
+		"BuildingRegeneratePathfindingGraphAsyncAction.help": "Zet de asynchrone hergeneratie van de routeplanningsgrafiek voor dit gebouw in de wachtrij.",
+		"BuildingRegeneratePathfindingGraphAsyncAction.label": "Genereer de routeplanningsgrafiek opnieuw.",
 		"BuildingReports.items.sheets.merged": "Fusie",
 		"BuildingReports.items.sheets.physicals": "Fysieke objecten",
 		"BuildingReports.items.sheets.virtuals": "Virtuele objecten",
@@ -124766,8 +127870,14 @@ var jsonTranslationsFiles = {
 		"CalibrateLayoutDrawer.title": "Kalibreer het plan",
 		"CampusBuildingsAccordion.buildingCount": "Het aantal gebouwen",
 		"CancelAddItemToRoom.help": "Het toevoegen van het object aan de ruimte annuleren",
+		"CancelAddItemToRoomSyncAction.help": "Maak het toevoegen van het object aan de ruimte ongedaan ( %{shortcut} )",
 		"CancelAddWorkplaceToRoom.help": "Annuleer het toevoegen van het werkstation aan de ruimte.",
+		"CancelAddWorkplaceToRoomSyncAction.help": "Maak het toevoegen van het werkstation aan de ruimte ongedaan ( %{shortcut} )",
+		"CancelCopyCartImportSyncAction.help": "Kopie annuleren",
+		"CancelCopyCartImportSyncAction.label": "Annuleren",
 		"CancelDuplicateShapsToRoomMouse.help": "Vormduplicatie ongedaan maken",
+		"CancelEnterpriseConnectionSyncAction.help": "Keer terug naar de authenticatiepagina met alle opties",
+		"CancelEnterpriseConnectionSyncAction.label": "Rug",
 		"CenterBboxCircleMarker.tooltip": "Anker van de structuur (midden van de bbox)",
 		"ChangeColor.browserColorPicker": "Selecteer een kleur met behulp van het kleurenpalet van de browser.",
 		"ChangeColor.notHexMatchError": "Het veld respecteert het hexadecimale formaat van een kleur niet",
@@ -124789,14 +127899,31 @@ var jsonTranslationsFiles = {
 		"CheckPersonVehiculeParkingDaySlotCompatibility.noVehicle": "Om parkeerplaatsen te reserveren, moet u een voertuig in uw profiel registreren.",
 		"CheckPersonVehiculeParkingDaySlotSingleBookingPerDayCompatibility.singleBookingPerDayIncompatible": "U heeft vandaag al een parkeerplaats gereserveerd in dit gebouw. ​​Met uw type voertuig kunt u slechts één parkeerplaats per dag per gebouw reserveren.",
 		"CheckThereIsAtLeastOneFreeRoomInTheBuilding.noFreeParkingAvailable": "Er zijn geen parkeerplaatsen beschikbaar tijdens uw gereserveerde tijdslot.",
+		"CleanAllJupRoleObjectTypesAsyncAction.help": "Reinig alle soorten objecten.",
+		"CleanAllJupRoleObjectTypesAsyncAction.label": "Reinig alle soorten objecten.",
+		"ClearDimensionTypeNavigationSyncAction.ariaLabel": "Laagnavigatie annuleren",
+		"ClearFieldTypeColorSyncAction.ariaLabel": "Kleur verwijderen",
+		"ClearFieldTypeColorSyncAction.help": "Kleur verwijderen",
+		"ClearFieldTypeIconSyncAction.ariaLabel": "Pictogram verwijderen",
+		"ClearFieldTypeIconSyncAction.help": "Pictogram verwijderen",
+		"ClearJupRoleMatrixObjectTypeFilterSyncAction.ariaLabel": "Duidelijke zoek",
+		"ClearJupRoleMatrixObjectTypeFilterSyncAction.help": "Duidelijke zoek",
+		"ClearMeetingRoomsFiltersSyncAction.help": "Filters wissen",
 		"ClickOnIndexViewMenuPathBreadcrumb.clickOnLabel": "Klik op:",
 		"CloneEntitiesFailed.noAccess": "U hebt geen toegang tot deze entiteit.",
 		"CloneEntitiesFailed.reloadHint": "De weergegeven gegevens zijn mogelijk verouderd. Vernieuw de pagina:",
+		"CloseAssignPersonCheckListDialogSyncAction.help": "Sluit en verwijder geen andere toewijzingen",
+		"CloseAssignPersonCheckListDialogSyncAction.label": "sluiten",
+		"CloseWrongRoomsDialogSyncAction.help": "sluit dit venster",
+		"CloseWrongRoomsDialogSyncAction.label": "sluiten",
 		"CloudinadryWidgetLoader.error.cloudinary-api-missing": "Het Cloudinary-script is geladen, maar de createUploadWidget API ontbreekt.",
 		"CloudinadryWidgetLoader.error.missing-cloud-name": "Cloudinary kon niet starten: de cloudnaam ontbreekt in de openbare configuratie.",
 		"CloudinadryWidgetLoader.error.missing-unsigned-preset": "Cloudinary kon niet starten: de uploadvoorinstelling (unsignedPreset) ontbreekt in de runtimeconfiguratie.",
-		"CloudinadryWidgetLoader.error.script-load-failed": "Cloudinary kon het widgetscript niet laden (netwerkprobleem, CSP-probleem of blokkering).",
+		"CloudinadryWidgetLoader.error.script-load-failed": "Het Cloudinary-script (widget.cloudinary.com) kan niet worden geladen — dit wordt vaak geblokkeerd door een bedrijfsproxy/firewall of andere blokkering.",
 		"CloudinadryWidgetLoader.error.widget-create-failed": "Cloudinary kon de uploadwidget niet aanmaken.",
+		"CloudinadryWidgetLoader.fallback.help": "Kies een lokale image (directe upload naar Cloudinary, zonder de CDN-widget).",
+		"CloudinadryWidgetLoader.fallback.hint": "Een lokale bestandsselector blijft beschikbaar (uploaden via api.cloudinary.com).",
+		"CloudinadryWidgetLoader.fallback.warningAria": "De Cloudinary CDN-widget is mislukt; lokale back-upupload is ingeschakeld.",
 		"CollapseSwitchButton.help.false": "Zie de details",
 		"CollapseSwitchButton.help.true": "Details verbergen",
 		"CollapseWorkplaceAffectationList.title": "Wijs deze persoon alleen toe voor de volgende dagen",
@@ -124837,6 +127964,8 @@ var jsonTranslationsFiles = {
 		"CompanyTypeLabel.notClassified": "Niet-geclassificeerd platform",
 		"CompareEntities.buttons.reset.help": "Start het importeren opnieuw",
 		"CompareEntities.buttons.reset.label": "Herstarten",
+		"CompareImportOptionsBarAsyncAction.help": "Start de vergelijking met de gegevens in surfy om de te importeren wijzigingen te bepalen",
+		"CompareImportOptionsBarAsyncAction.label": "Vergelijken",
 		"CompareObjectTypeAutomaticSyncIcon.helpDouble": "Na de vergelijking worden %{first} en %{second} automatisch toegepast voor deze stap (zonder tabknoppen).",
 		"CompareObjectTypeAutomaticSyncIcon.helpSingle": "Na de vergelijking wordt %{operation} automatisch toegepast voor deze stap (zonder tabtoets).",
 		"CompareObjectTypeAutomaticSyncIcon.helpTriple": "Na de vergelijking worden %{first} , %{second} en %{third} automatisch toegepast voor deze stap (zonder tabknoppen).",
@@ -124850,8 +127979,9 @@ var jsonTranslationsFiles = {
 		"ConfirmationButtons.confirm": "Bevestig de voltooiing van de actie",
 		"ConfirmationButtons.loading": "De actie wordt uitgevoerd, een ogenblik geduld",
 		"ConnectedPartnerContext.title": "U bent verbonden met <b>%{label}</b> ( %{host} )",
+		"CopyBelongsToImportKeySyncAction.ariaLabel": "Kopieer de kolomtitel",
+		"CopyBelongsToImportKeySyncAction.help": "Kopieer de kolomtitel naar het klembord",
 		"CopyBuildingToCart.dialogTitle": "Kopieer het gebouw",
-		"CopyBuildingToCart.help": "Kopieer de gebouwstructuur",
 		"CopyBuildingToCartCancelButton.help": "Sluiten en annuleren",
 		"CopyBuildingToCartCancelButton.label": "Annuleren",
 		"CopyBuildingToCartCopyButton.help": "Kopieer de informatie",
@@ -124859,8 +127989,22 @@ var jsonTranslationsFiles = {
 		"CopyBuildingToCartSaveToFileButton.help": "Sla de inhoud op in een JSON-bestand.",
 		"CopyBuildingToCartSaveToFileButton.label": "Opslaan als bestand",
 		"CopyCartContentIntoTenant.buttons.single.paste.help": "Importeer in dit bedrijf",
+		"CopyEqualsIdsInfoTabSyncAction.help": "Kopieer entiteits-ID's naar het klembord",
+		"CopyEqualsIdsInfoTabSyncAction.label": "Kopieer entiteits-ID's naar het klembord",
+		"CopyFieldTypePasswordSyncAction.ariaLabel": "Kopieer het wachtwoord",
+		"CopyFieldTypePasswordSyncAction.help": "Kopieer de inhoud van het wachtwoord naar het klembord",
+		"CopyFloorGeoJsonSyncAction.help": "Kopieer de GeoJSON naar het klembord.",
+		"CopyFloorGeoJsonSyncAction.label": "KOPIËREN",
 		"CopyImagePathToClipboard.CopyUrl": "Kopie URL",
+		"CopyImportScalarPropertySyncAction.ariaLabel": "Kopieer naar klembord",
+		"CopyImportScalarPropertySyncAction.help": "Kopieer naar klembord",
+		"CopyIntoClipboardSyncAction.help": "Kopiëren naar het klembord",
+		"CopyItemTypePointsSyncAction.help": "Kopieer punten naar het klembord",
+		"CopyItemTypePointsSyncAction.label": "Kopieer punten naar het klembord",
 		"CopyItemTypesToCart.help": "Kopieer itemtypen naar winkelwagen",
+		"CopyItemTypesToCartAsyncAction.ariaLabel": "Kopieer itemtypen naar winkelwagen",
+		"CopyItemTypesToCartAsyncAction.help": "Kopieer itemtypen naar winkelwagen",
+		"CopyWorkplaceTypesToCartAsyncAction.help": "Kopieer werkstationtypen naar winkelwagen",
 		"CopyWorkplaceTypeToCart.help": "Kopieer werkstationtypen naar winkelwagen",
 		"CostCenterMapFilter.Empty": "Er zijn momenteel geen kostenplaatsen gekoppeld aan ruimtes. U kunt er meer toevoegen door een ruimte te wijzigen en er een kostenplaats aan te koppelen. Vervolgens kunt u de weergave ervan vanuit deze sectie beheren",
 		"CostCenterMapFilterTabs.tabs.people": "Mensen",
@@ -124868,8 +128012,16 @@ var jsonTranslationsFiles = {
 		"CostCenterMapFilterTabs.tabs.workplaces": "Persoonlijke werkplekken",
 		"CostCenterWorkplaceMapFilter.Empty": "Er zijn momenteel geen kostenplaatsen gekoppeld aan werkstations. U kunt er meer toevoegen door een werkstation te wijzigen en er een kostenplaats aan te koppelen. Vervolgens kunt u de weergave ervan vanuit deze sectie beheren",
 		"CostCenterWorkplaceMapFilter.nodeInfo.workplacesCount": "Er zijn %{count} werkstations met kostenplaats %{name}",
+		"CreateBuildingCloneAsyncAction.help": "Het scenario dupliceert het gebouw met de aangevinkte eigenschappen",
+		"CreateBuildingCloneAsyncAction.label": "Creëer een scenario",
 		"CreateCleanInventoryItemsAsyncButton.help": "Maak de ontbrekende elementen aan.",
 		"CreateCleanInventoryItemsAsyncButton.label": "scheppen",
+		"CreateFieldTypeIconBadgeSyncAction.help": "Open de badge-editor (tekst en kleuren)",
+		"CreateFieldTypeIconBadgeSyncAction.label": "Maak een badge",
+		"CreateGuestAsyncAction.help": "Maak de gast aan",
+		"CreateGuestAsyncAction.label": "Maak de gast aan",
+		"CreatePartnerEntitiesAsyncAction.help": "Maken in %{partnerName}",
+		"CreatePartnerEntitiesAsyncAction.label": "Maken in %{partnerName}",
 		"CubyFitToViewIsometricButtonOption.help": "Centreer de plattegrond op de ruimtes in isometrisch aanzicht",
 		"CubyFitToViewIsometricButtonOption.label": "Centreer het plan in isometrisch aanzicht",
 		"CubyFitToViewZenithalButtonOption.help": "Centreer de plattegrond op de ruimtes in zenitaanzicht",
@@ -124940,12 +128092,17 @@ var jsonTranslationsFiles = {
 		"DefaultViewSetIndicator.recommendedViewTooltip": "Deze visie wordt aanbevolen voor dit gebouw.",
 		"DeleteCleanInventoryItemsAsyncButton.help": "Verwijder alle voorwerpen die verwijderd kunnen worden.",
 		"DeleteCleanInventoryItemsAsyncButton.label": "verwijderen",
+		"DeleteCompanyReportingDataAsyncAction.ariaLabel": "Rapportagegegevens verwijderen",
+		"DeleteCompanyReportingDataAsyncAction.help": "Verwijder berekende rapportagegegevens. U moet de rapportagegegevens opnieuw berekenen om ze opnieuw te kunnen gebruiken. Met deze optie kunt u de rapportagegegevens opschonen.",
+		"DeleteCompanyReportingDataAsyncAction.progress": "Rapportagegegevens verwijderen uit %{objectType} : %{current} / %{total}",
 		"DeleteDialog.cancel.help": "Verwijdering ongedaan maken",
 		"DeleteDialog.cancel.label": "Annuleren",
 		"DeleteDialog.content": "U staat op het punt <b>%{determinant.undefined}</b> te verwijderen. Deze actie is niet ongedaan te maken en kan gevolgen hebben. Weet u zeker dat u deze actie wilt uitvoeren?",
 		"DeleteDialog.delete.help": "%{determinant.defined} definitief verwijderen",
 		"DeleteDialog.delete.label": "verwijderen",
 		"DeleteDialog.title": "Verwijder %{determinant.undefined}",
+		"DeleteFieldTypeIconBadgeSyncAction.ariaLabel": "Verwijder het insigne",
+		"DeleteFieldTypeIconBadgeSyncAction.help": "Verwijder het insigne",
 		"DeleteMapScaleAsyncButton.help": "Het verwijderen van de schaal komt neer op het verwijderen van de schaal uit de plattegrond en deze verwijderen van de basis, deze zal niet meer toegankelijk zijn via andere plannen. Het is niet mogelijk om een ​​schaal te verwijderen die zich op meerdere verdiepingen bevindt.",
 		"DeleteMapScaleAsyncButton.label": "Schaal verwijderen",
 		"DeleteMultipleDialog.cancel.help": "Verwijdering ongedaan maken",
@@ -124955,8 +128112,12 @@ var jsonTranslationsFiles = {
 		"DeleteMultipleDialog.delete.label": "verwijderen",
 		"DeleteMultipleDialog.title": "Verwijder %{determinants.undefined}",
 		"DeleteMultipleEntities.help": "Verwijder geselecteerde %{determinants.defined}",
+		"DeletePartnerEntitiesAsyncAction.help": "Verwijderen in %{partnerName}",
+		"DeletePartnerEntitiesAsyncAction.label": "Verwijderen in %{partnerName}",
+		"DeleteStructureExclusionAsyncAction.ariaLabel": "Verwijder de uitsluiting van de structuur",
+		"DeleteStructureExclusionAsyncAction.help": "Verwijder deze structurele belemmering (terras, holte, kolom) zonder de externe vorm te veranderen.",
 		"DeleteWorkplace.help": "Werkstation verwijderen: [ %{name} ], opdrachten worden ook verwijderd",
-		"DeskBookingConfirmationButton.bookingConfirmed": "De reservering is bevestigd.",
+		"DeskBookingConfirmationButton.bookingConfirmed": "De reservering van de werkplek is bevestigd.",
 		"DeskBookingConfirmationButton.confirm": "Bevestig uw aanwezigheid",
 		"DeskBookingConfirmationButton.confirmHelp": "Bevestig dat u aanwezig bent op uw werkplek",
 		"DeskBookingConfirmationButton.confirmHelpWithRange": "Bevestig dat u aanwezig bent op uw werkplek. U kunt dit bevestigen binnen %{confirmationRange} .",
@@ -125145,9 +128306,19 @@ var jsonTranslationsFiles = {
 		"DisplayWorkplaceTexts.workplaceUsageType.label": "Soort gebruik",
 		"distance.centimeter": "Centimeter",
 		"distance.meter": "Meters",
+		"DownloadBuildingDistributionCostByFloorsSyncAction.help": "Download het Excel-bestand om de distributiesleutels en gekwalificeerde gebieden per kostenplaats en per verdieping te kunnen delen en exporteren. De export omvat de verdeling per verdieping of per gebouw van de kostenplaatsen",
+		"DownloadBuildingDistributionCostByFloorsSyncAction.label": "Download het Excel-bestand met de uitsplitsingen",
+		"DownloadBuildingDistributionCostSyncAction.help": "Download het Excel-bestand om de distributiesleutels en gekwalificeerde gebieden per kostenplaats te kunnen delen en exporteren",
+		"DownloadBuildingDistributionCostSyncAction.label": "Download het Excel-bestand zonder de storingen",
+		"DownloadBuildingIfcSyncAction.help": "Download IFC-bestand",
+		"DownloadBuildingIfcSyncAction.label": "Bestand downloaden",
 		"DownloadBuildingImagesAccordion.accordion.title": "Exporteer afbeeldingen van het hele gebouw",
 		"DownloadBuildingImagesAccordion.buttons.download.help": "Download alle plattegronden van alle verdiepingen van het gebouw in png-formaat in een zip, de wachttijd voor deze uittreksel kan lang zijn",
 		"DownloadBuildingImagesAccordion.buttons.download.label": "Download de ZIP",
+		"DownloadCopilotDoorImagesSyncAction.help": "DL-afbeeldingen",
+		"DownloadCopilotDoorImagesSyncAction.label": "DL-afbeeldingen",
+		"DownloadFlatBuildingAsyncAction.ariaLabel": "Download het flatgebouw",
+		"DownloadFlatBuildingAsyncAction.help": "Download het Excel-bestand met de ruimtes en werkplekken inclusief hun identificatiecodes.",
 		"DownloadImageButton.helpNoLegend": "Download het volledige plan in goede kwaliteit zonder de legenda, de export kan langer duren.",
 		"DownloadImageButton.helpWithLegend": "Download het gehele plan in goede kwaliteit met de legenda, de export kan langer duren.",
 		"DownloadImageButton.labelNoLegend": "Download het plan zonder legenda (PNG)",
@@ -125177,6 +128348,10 @@ var jsonTranslationsFiles = {
 		"DqReportStatusCard.viewFullReport": "Bekijk het volledige rapport.",
 		"DropDownOptions.moreOptions": "Bekijk meer opties voor %{determinant.defined} %{name}",
 		"EditEntityDrawer.title.edit": "Bewerk %{determinant.defined}",
+		"EditFieldTypeAddressSyncAction.ariaLabel": "Adres wijzigen",
+		"EditFieldTypeAddressSyncAction.help": "Adres wijzigen",
+		"EditFieldTypeIconSyncAction.ariaLabel": "Verander icoon",
+		"EditFieldTypeIconSyncAction.help": "Verander icoon",
 		"EditInlineToggleIconButton.cancel.help": "Stop met bewerken zonder op te slaan",
 		"EditInlineToggleIconButton.edit.help": "Wijzig de eigenschappen voor %{determinant.defined} rechtstreeks op deze pagina",
 		"EditInlineToggleIconButton.edit.label": "Bewerken",
@@ -125267,6 +128442,8 @@ var jsonTranslationsFiles = {
 		"Errors.ROOM_BOOKING_CONFLICT": "Deze ruimte is al gereserveerd voor dit tijdslot. Kies alstublieft een ander tijdstip of een andere ruimte.",
 		"Errors.WORKPLACE_BOOKING_CONFLICT": "Deze werkplek is al gereserveerd voor dit tijdslot. Kies een ander tijdstip of een andere werkplek.",
 		"ErrorTextZone.reload": "Herhaal de handeling",
+		"EscapeCompareObjectTypeStepSyncAction.help": "Sla deze stap over en ga direct naar de volgende.",
+		"EscapeCompareObjectTypeStepSyncAction.label": "Sla deze stap over.",
 		"ExportQueryNodeToFileButton.help.list": "Downloaden in Excel %{determinants.defined}",
 		"FetchSocTenantEventsAsyncAction.help": "Haalt wijzigingen en momentopnamen op van de beveiligings-ID's van het bedrijf sinds de gekozen datum.",
 		"FetchSocTenantEventsAsyncAction.label": "Start de beveiligingsaudit.",
@@ -125300,11 +128477,23 @@ var jsonTranslationsFiles = {
 		"FieldTypeIndexBoolean.help": "Wijzig de waarde rechtstreeks",
 		"FieldTypeIndexBoolean.values.false": "Neen",
 		"FieldTypeIndexBoolean.values.true": "Ja",
+		"FieldTypeLegendConfiguration.familyCostCenters": "Kostenplaatsen",
+		"FieldTypeLegendConfiguration.familyOrganizationsDirection": "Routebeschrijving",
+		"FieldTypeLegendConfiguration.familyOrganizationsService": "Diensten",
+		"FieldTypeLegendConfiguration.familyRoomTypeGroups": "Typologiegroepen",
+		"FieldTypeLegendConfiguration.familyRoomTypes": "Typologieën",
+		"FieldTypeLegendConfiguration.legacyRoomTypeGroups": "Typologiegroepen — selectie op basis van entiteit",
+		"FieldTypeLegendConfiguration.legacyRoomTypes": "Typologieën — selectie op basis van entiteit",
+		"FieldTypeLegendConfiguration.selectionByEntity": "Eigenschappen selecteren op basis van entiteit",
+		"FieldTypeLegendConfiguration.selectionByFilter": "Selectie via filter",
+		"FieldTypeLegendConfiguration.selectionStructure": "De eigenschappen van de structuur selecteren",
 		"FieldTypeModel3d.Remove": "3D-model verwijderen",
 		"FieldTypeModel3d.Upload": "Wijzig het 3D-model",
 		"FieldTypePassword.icons.copy": "Kopieer de inhoud van het wachtwoord naar het klembord",
 		"FieldTypePassword.icons.generate": "Genereer een uniek wachtwoord",
 		"FileDropZone.dropZone": "Verplaats en sleep het importbestand naar dit gebied of klik in het gebied om uw bestand te selecteren",
+		"FinishCopyCartImportSyncAction.help": "Voltooi en sluit dit venster.",
+		"FinishCopyCartImportSyncAction.label": "Tot het einde",
 		"FixAddressButton.button.fix": "Corrigeer het adres",
 		"FixAddressButton.button.help": "Corrigeer automatisch het adres van ' %{buildingName} ' met behulp van Google Maps-geocodering",
 		"FixAddressButton.error.message": "❌ Oplossing mislukt: %{error}",
@@ -125354,11 +128543,17 @@ var jsonTranslationsFiles = {
 		"FurnituresSelection.move": "Verplaats de hele groep",
 		"FurnituresSelectionDragZone.help": "Groep verplaatsen",
 		"FurnituresSelectionGroupRotation.help": "Draai alle geselecteerde vormen rond het middelpunt van de selectie.",
+		"GenerateBuildingPathfindingRouteAsyncAction.help": "Berekent de route tussen het geselecteerde vertrekpunt en de bestemming.",
+		"GenerateBuildingPathfindingRouteAsyncAction.label": "Genereer het pad",
 		"generateDocumentation.properties.base": "Basiseigenschappen",
 		"generateDocumentation.properties.belongsTo": "Geassocieerde entiteiten (enkel)",
 		"generateDocumentation.properties.hasMany": "Geassocieerde entiteiten (lijst)",
 		"generateDocumentation.properties.mandatory": "Verplichte eigenschappen",
 		"generateDocumentation.properties.technicalName": "Technische naam",
+		"GenerateFieldTypePasswordSyncAction.ariaLabel": "Een wachtwoord genereren",
+		"GenerateFieldTypePasswordSyncAction.help": "Genereer een uniek wachtwoord",
+		"GeneratePathfindingGraphAsyncAction.help": "Door de oriëntatiegrafiek te genereren, worden de knooppunten berekend waarlangs de verkenner de ruimtes en meubels kan vinden. Als de oorspronkelijke ruimte kan worden geselecteerd, is de grafiek al gegenereerd.",
+		"GeneratePathfindingGraphAsyncAction.label": "Genereer de oriëntatiegrafiek",
 		"GenericNoChangeTable.open.help": "Bekijk details van identieke gegevens",
 		"GenericNoChangeTable.open.label": "Bekijk de gegevens",
 		"GlobalOptions.CartCopyBuildingOption.help": "Kopieer gebouwen naar winkelwagen",
@@ -125374,7 +128569,6 @@ var jsonTranslationsFiles = {
 		"GoogleApiWrapper.loadingFailed": "Het laden van de Google Maps API is mislukt",
 		"GuestCreateAccordion.contractEndDateLabel": "Einddatum van de gastperiode",
 		"GuestCreateAccordion.contractStartDateLabel": "Begindatum van de gastperiode",
-		"GuestCreateAccordion.createGuestCta": "Maak de gast aan",
 		"GuestCreateAccordion.createSectionTitle": "Maak een gastaccount aan",
 		"GuestCreateAccordion.emailLabel": "E-mail",
 		"GuestCreateAccordion.firstnameLabel": "Voornaam",
@@ -125474,7 +128668,6 @@ var jsonTranslationsFiles = {
 		"InfoTabContent.open.label": "Bekijk importdetails",
 		"InlinePositionZField.positionZLabel": "Z-positie (cm)",
 		"ItemsInventory.EmptyList": "Er bevinden zich geen objecten in deze ruimte",
-		"ItemTypeAvatarSingleView.copy": "Kopieer punten naar het klembord",
 		"ItemTypeAvatarSingleView.debug.label": "Schakel de geavanceerde modus voor 3D in",
 		"ItemTypeDataQualityFamilyTenantConsistency.buttonFixWithUnclassifiedHelp": "Wijs de geselecteerde objecttypen toe aan de UNCLASSIFIED-familie van de tenant.",
 		"ItemTypeDataQualityFamilyTenantConsistency.headerItemTypeFamilyId": "Familie-ID",
@@ -125523,7 +128716,6 @@ var jsonTranslationsFiles = {
 		"JupRoleAzureSyncRolesTable.value": "Waarde",
 		"JupRoleAzureSyncScopeAlert.grantedScopes": "Toegekende bevoegdheden",
 		"JupRoleAzureSyncScopeAlert.scopesOk": "Application.ReadUpdate.All heeft toestemming verleend.",
-		"JupRoleMatrixObjectTypeFilter.clearSearchHelp": "Duidelijke zoek",
 		"JupRoleMatrixObjectTypeFilter.noResults": "Er is geen objecttype gevonden dat overeenkomt met uw zoekopdracht.",
 		"JupRoleMatrixObjectTypeFilter.searchAriaLabel": "Filter de objecttypen in de rolmatrix.",
 		"JupRoleMatrixObjectTypeFilter.searchPlaceholder": "Zoek naar een objecttype (technische naam, label, enz.).",
@@ -125552,6 +128744,8 @@ var jsonTranslationsFiles = {
 		"layoutViewSets.peopleDimensionTypes.label": "Buurten",
 		"layoutViewSets.roomType.description": "Zie de plattegrond volgens de typologie van ruimtes",
 		"layoutViewSets.roomType.label": "Ruimtetypologieën",
+		"layoutViewSets.roomTypeGroups.description": "Bekijk de plattegrond volgens de ruimtetypologiegroep.",
+		"layoutViewSets.roomTypeGroups.label": "Typologiegroepen",
 		"layoutViewSets.securityCompliance.description": "Analyseer de naleving van uw beveiligingspreventieplan en de beveiligingsprofielen van de getroffen mensen",
 		"layoutViewSets.securityCompliance.label": "Beveiligingsnaleving",
 		"layoutViewSets.walls.description": "Focus op ruimtes en scheidingswanden",
@@ -125615,7 +128809,12 @@ var jsonTranslationsFiles = {
 		"MapLegendFloor.title.floor": "Vloer",
 		"MapLegendPersonSecurityProfile.title": "Beveiligingsprofielen",
 		"MapLegendRoom.title": "Spaties",
-		"MeetingRoomBookAction.bookRoom": "Boek via de kalender",
+		"MeetingRoomBookSyncAction.bookRoom": "Boek via de kalender",
+		"MeetingRoomCalendarSyncAction.ariaLabel": "Bekijk de reserveringskalender",
+		"MeetingRoomCalendarSyncAction.calendarFor": "Agenda voor",
+		"MeetingRoomCalendarSyncAction.help": "Bekijk de reserveringskalender",
+		"MeetingRoomCalendarSyncAction.noRoomName": "Ongedefinieerde naamruimte",
+		"MeetingRoomCalendarSyncAction.roomCalendar": "Ruimtekalender",
 		"MeetingRoomCard.availability.available": "Beschikbaar in dit tijdslot",
 		"MeetingRoomCard.availability.searching": "Beschikbaarheid controleren...",
 		"MeetingRoomCard.bookable": "Deze ruimte kan worden gereserveerd.",
@@ -125639,13 +128838,13 @@ var jsonTranslationsFiles = {
 		"MeetingRoomCard.viewPicture": "Zie ruimtefoto",
 		"MeetingRoomCardSeats.seatsMultiple": "%{count}",
 		"MeetingRoomCardSeats.seatsSingle": "%{count} stoel",
-		"MeetingRoomDirectBookAction.bookingInProgressHelp": "Reservering in behandeling...",
-		"MeetingRoomDirectBookAction.bookingSuccess": "Reservering bevestigd voor %{roomName} ( %{timeRange} )",
-		"MeetingRoomDirectBookAction.directBook": "Snelle boeking",
-		"MeetingRoomDirectBookAction.missingSelection": "Selecteer eerst een dag en tijdslot.",
-		"MeetingRoomDirectBookAction.noRoomName": "Ongedefinieerde naamruimte",
-		"MeetingRoomDirectBookAction.roomUnavailable": "De kamer is niet beschikbaar tijdens dit tijdslot.",
-		"MeetingRoomDirectBookAction.schedulesLoading": "Beschikbaarheid wordt geladen",
+		"MeetingRoomDirectBookSyncAction.bookingInProgressHelp": "Reservering in behandeling...",
+		"MeetingRoomDirectBookSyncAction.bookingSuccess": "Reservering bevestigd voor %{roomName} ( %{timeRange} )",
+		"MeetingRoomDirectBookSyncAction.directBook": "Snelle boeking",
+		"MeetingRoomDirectBookSyncAction.missingSelection": "Selecteer eerst een dag en tijdslot.",
+		"MeetingRoomDirectBookSyncAction.noRoomName": "Ongedefinieerde naamruimte",
+		"MeetingRoomDirectBookSyncAction.roomUnavailable": "De kamer is niet beschikbaar tijdens dit tijdslot.",
+		"MeetingRoomDirectBookSyncAction.schedulesLoading": "Beschikbaarheid wordt geladen",
 		"MeetingRooms.clearFilters": "Filters wissen",
 		"MeetingRooms.loadingAvailabilityTooltip": "Beschikbaarheid voor boeking wordt geladen...",
 		"MeetingRooms.noMeetingRoomsConfigured": "U hebt geen vergaderruimtes geconfigureerd via ruimtetypologiegroepen",
@@ -125720,6 +128919,8 @@ var jsonTranslationsFiles = {
 		"menu.menuLeft.vehiclePlanningAdmin": "Administratie voor het plannen van voertuigen",
 		"menu.menuLeft.workplace": "Persoonlijke werkplekken",
 		"menu.tenantOperations": "Synchronisatie",
+		"MergePersonDuplicatesAsyncAction.help": "Mensen samenvoegen",
+		"MergePersonDuplicatesAsyncAction.label": "Samenvoegen",
 		"MicrosoftUsersPicturesSyncTitle.title": "Microsoft fotosynchronisatie",
 		"MicrosoftUsersSyncTitle.title": "Microsoft-gebruikerssynchronisatie",
 		"models.ApiUser.determinant.defined": "API-gebruiker",
@@ -125885,6 +129086,8 @@ var jsonTranslationsFiles = {
 		"models.Building.reports.buildingPeople.help": "Melding van getroffen personen in het gebouw",
 		"models.Building.reports.dimensionTypes.fileName": "Dimensietypen",
 		"models.Building.reports.dimensionTypes.help": "Relatie tussen dimensietypen en rapportagegegevens voor het bouwen",
+		"models.Building.reports.exceptionalObjects.fileName": "Uitzonderlijke objecten",
+		"models.Building.reports.exceptionalObjects.help": "Rapport over uitzonderlijke items",
 		"models.Building.reports.organizations.fileName": "Organisaties",
 		"models.Building.reports.organizations.help": "Verslag van bouworganisaties",
 		"models.Building.reports.workplaceAffectations.fileName": "Werkstationopdrachten",
@@ -125896,6 +129099,8 @@ var jsonTranslationsFiles = {
 		"models.Building.views.3d-cards.label": "3d",
 		"models.Building.views.3d-map.help": "Bekijk alle referentiegebouwen in 3D op een kaart.",
 		"models.Building.views.3d-map.label": "3D-kaart",
+		"models.Building.views.3d-maplibre.help": "Bekijk de structuren van de referentiegebouwen in MapLibre LOD (zelfde weergave als de Cuby Structure SDK).",
+		"models.Building.views.3d-maplibre.label": "MapLibre 3D-kaart",
 		"models.Building.views.3d.help": "Het 3D-plan van het gebouw %{name} (cuby)",
 		"models.Building.views.3d.label": "3D-plan",
 		"models.Building.views.assets.help": "Onroerende goederen",
@@ -125906,6 +129111,8 @@ var jsonTranslationsFiles = {
 		"models.Building.views.building-dxf-importer.label": "DXF-bestand importeren",
 		"models.Building.views.building-ifc.help": "Exporteer dit gebouw in IFC voor BIM",
 		"models.Building.views.building-ifc.label": "IFC",
+		"models.Building.views.building-pathfinding.help": "Navigeren door het gebouw: kies een vertrek- en aankomstpunt en bekijk de route op de plattegrond.",
+		"models.Building.views.building-pathfinding.label": "Routeplanning",
 		"models.Building.views.cards.help": "Uitzicht op betegelde gebouwen",
 		"models.Building.views.cards.label": "Info",
 		"models.Building.views.clone.help": "<b>Scenario's</b> en projecten bouwen %{name}",
@@ -125991,8 +129198,8 @@ var jsonTranslationsFiles = {
 		"models.Company.properties.workingDaysCount.label": "Aantal werkdagen per week",
 		"models.Company.properties.workplaceBookingAgendaSyncEnabled.description": "Voor elke werkplek- of parkeerplaatsreservering wordt een uitnodiging naar de agenda van de medewerker gestuurd (Outlook, Gmail, enz.); de uitnodiging wordt verwijderd als de reservering wordt geannuleerd.",
 		"models.Company.properties.workplaceBookingAgendaSyncEnabled.label": "Maak voor elke reservering een agenda-uitnodiging aan.",
-		"models.Company.properties.workplaceBookingConfirmationRange.description": "Tijdsbereik waarin gebruikers hun werkplekreserveringen kunnen bevestigen. Vereist formaat: HH:MM-HH:MM@IANA-tijdzone (bijv. 06:00-10:30@Europe/Paris). Laat dit veld leeg om de bevestiging van werkplekreserveringen uit te schakelen. IANA-tijdzone: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
-		"models.Company.properties.workplaceBookingConfirmationRange.label": "Bevestigingsvenster voor werkstationboeking",
+		"models.Company.properties.workplaceBookingConfirmationRange.description": "Tijdvak waarin gebruikers hun werkplek- en parkeerreserveringen kunnen bevestigen. Vereist formaat: HH:MM-HH:MM@IANA-tijdzone (bijv. 06:00-10:30@Europe/Paris). Laat dit veld leeg om de bevestiging uit te schakelen. IANA-tijdzone: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+		"models.Company.properties.workplaceBookingConfirmationRange.label": "Boekingsbevestigingsvenster (werkplek en parkeerplaats)",
 		"models.Company.reports.export-all-duplicate.fileName": "duplicatie",
 		"models.Company.reports.export-all-duplicate.help": "Maak een back-up van bedrijfsgegevens om een ​​kopie van het platform te maken",
 		"models.Company.reports.export-all.fileName": "back-up",
@@ -126945,9 +130152,13 @@ var jsonTranslationsFiles = {
 		"models.PersonToRoomBooking.determinants.defined": "reserveringen voor het mensengedeelte",
 		"models.PersonToRoomBooking.determinants.undefined": "reserveringen voor het mensengedeelte",
 		"models.PersonToRoomBooking.plural": "Reserveringen voor het mensengedeelte",
+		"models.PersonToRoomBooking.properties.emailConfirmationWarningNotificationSentAt.description": "De datum en tijd waarop de waarschuwingsmail werd verzonden vóór de annulering van de niet-bevestigde reservering.",
+		"models.PersonToRoomBooking.properties.emailConfirmationWarningNotificationSentAt.label": "Bevestigingsmail verzonden op",
 		"models.PersonToRoomBooking.properties.endDatetime.description": "De datum en tijd waarop de reservering eindigt",
 		"models.PersonToRoomBooking.properties.endDatetime.label": "Einde reservering",
 		"models.PersonToRoomBooking.properties.id.label": "Reserverings-ID voor het personengedeelte",
+		"models.PersonToRoomBooking.properties.roomHasBeenConfirmedAt.description": "Datum en tijd van bevestiging van aanwezigheid voor reservering van parkeerplaats.",
+		"models.PersonToRoomBooking.properties.roomHasBeenConfirmedAt.label": "Ruimte bevestigd",
 		"models.PersonToRoomBooking.properties.startDatetime.description": "De startdatum en -tijd van de reservering",
 		"models.PersonToRoomBooking.properties.startDatetime.label": "Begin van de boeking",
 		"models.PersonToRoomBooking.singular": "Reservering voor het mensengedeelte",
@@ -127074,6 +130285,16 @@ var jsonTranslationsFiles = {
 		"models.RoomConnector.properties.waitTime.description": "De gemiddelde wachttijd voordat de ruimteconnector beschikbaar komt",
 		"models.RoomConnector.properties.waitTime.label": "Gemiddelde wachttijd",
 		"models.RoomConnector.singular": "Ruimteconnector",
+		"models.RoomConnectorType.description": "Een type ruimteverbinding verwijst naar verbindingsstukken die ruimtes tussen verdiepingen met elkaar verbinden.",
+		"models.RoomConnectorType.determinant.defined": "het type ruimteconnector",
+		"models.RoomConnectorType.determinant.undefined": "een type ruimteconnector",
+		"models.RoomConnectorType.determinants.defined": "de soorten ruimteconnectoren",
+		"models.RoomConnectorType.determinants.undefined": "soorten ruimteconnectoren",
+		"models.RoomConnectorType.plural": "soorten ruimteconnectoren",
+		"models.RoomConnectorType.properties.color.description": "Optionele kleur voor het connectortype — gebruikt in de connectormodus in de weergave 'Bouwpadvinding'.",
+		"models.RoomConnectorType.properties.color.label": "Kleur",
+		"models.RoomConnectorType.properties.name.label": "Naam van het type ruimteconnector",
+		"models.RoomConnectorType.singular": "type ruimteconnector",
 		"models.RoomPoint.description": "Een punt in ruimtes definieert de geometrische coördinaten voor het tekenen van de omtrek van een ruimte",
 		"models.RoomPoint.determinant.defined": "het punt van spaties",
 		"models.RoomPoint.determinant.undefined": "een punt van spaties",
@@ -127193,6 +130414,26 @@ var jsonTranslationsFiles = {
 		"models.RoomTypeGroupToRoomType.plural": "Ruimtetypologiegroepsassociaties met ruimtetypologie",
 		"models.RoomTypeGroupToRoomType.properties.id.label": "Ruimtetypologiegroepsassociatie-identificatie aan ruimtetypologie",
 		"models.RoomTypeGroupToRoomType.singular": "Ruimtetypologiegroepsassociatie met ruimtetypologie",
+		"models.SegmentConnector.description": "Een segmentconnector kwalificeert een deursegment als een gebouwingang/uitgang voor Pathfinding.",
+		"models.SegmentConnector.determinant.defined": "de segmentconnector",
+		"models.SegmentConnector.determinant.undefined": "een segmentconnector",
+		"models.SegmentConnector.determinants.defined": "segmentconnectoren",
+		"models.SegmentConnector.determinants.undefined": "segmentconnectoren",
+		"models.SegmentConnector.plural": "segmentconnectoren",
+		"models.SegmentConnector.properties.name.label": "Naam van de segmentconnector",
+		"models.SegmentConnector.singular": "segmentconnector",
+		"models.SegmentConnectorType.description": "Een segmentconnector type kwalificeert een in-/uitgangsdeur van een gebouw (buiten-naar-binnen, buiten-naar-buiten, buiten-naar-binnen-naar-buiten) — dit is anders dan de SVG-deur-links/deur-rechts typen.",
+		"models.SegmentConnectorType.determinant.defined": "het type segmentconnector",
+		"models.SegmentConnectorType.determinant.undefined": "een type segmentconnector",
+		"models.SegmentConnectorType.determinants.defined": "segmentconnectortypen",
+		"models.SegmentConnectorType.determinants.undefined": "segmentconnectortypen",
+		"models.SegmentConnectorType.plural": "segmentconnectortypen",
+		"models.SegmentConnectorType.properties.code.description": "Tongcodes: van buiten naar binnen, van buiten naar buiten, van buiten naar binnen en van buiten naar buiten",
+		"models.SegmentConnectorType.properties.code.label": "Typecode voor segmentconnector",
+		"models.SegmentConnectorType.properties.color.description": "Optionele kleur van het segmentconnectortype — gebruikt in de connectormodus in de gebouwpadvindingsweergave",
+		"models.SegmentConnectorType.properties.color.label": "Kleur",
+		"models.SegmentConnectorType.properties.name.label": "Naam van het segmentconnectortype",
+		"models.SegmentConnectorType.singular": "segmentconnector type",
 		"models.Structure.description": "Een structuur definieert een geometrische vorm die kan worden gebruikt om objecten op kaarten te kalibreren en te positioneren",
 		"models.Structure.determinant.defined": "de structuur",
 		"models.Structure.determinant.undefined": "een structuur",
@@ -127211,6 +130452,28 @@ var jsonTranslationsFiles = {
 		"models.Structure.views.editor.label": "Vorm bewerken",
 		"models.Structure.views.gmap-calibrate.help": "Kalibreer de structuur op een kaart om geografische coördinaten te associëren",
 		"models.Structure.views.gmap-calibrate.label": "Kalibreer de structuur op een kaart",
+		"models.StructureExclusion.description": "Een structurele uitsluiting definieert een opening (terras, holte, kolom) binnen de externe vorm van de constructie.",
+		"models.StructureExclusion.determinant.defined": "de uitsluiting van structuur",
+		"models.StructureExclusion.determinant.undefined": "een structurele uitsluiting",
+		"models.StructureExclusion.determinants.defined": "structurele uitsluitingen",
+		"models.StructureExclusion.determinants.undefined": "structurele uitsluitingen",
+		"models.StructureExclusion.plural": "structurele uitsluitingen",
+		"models.StructureExclusion.properties.name.description": "Optionele naam voor eenvoudige identificatie van de uitzondering (terras, liftschacht, enz.)",
+		"models.StructureExclusion.properties.name.label": "Naam",
+		"models.StructureExclusion.singular": "structuuruitsluiting",
+		"models.StructureExclusionPoint.description": "Een structuuruitsluitingspunt definieert een hoekpunt van de gatpolygoon binnen de buitenste vorm.",
+		"models.StructureExclusionPoint.determinant.defined": "het uitsluitingspunt van de structuur",
+		"models.StructureExclusionPoint.determinant.undefined": "een structureel uitsluitingspunt",
+		"models.StructureExclusionPoint.determinants.defined": "structurele uitsluitingspunten",
+		"models.StructureExclusionPoint.determinants.undefined": "structurele uitsluitingspunten",
+		"models.StructureExclusionPoint.plural": "structuur uitsluitingspunten",
+		"models.StructureExclusionPoint.properties.sortIndex.description": "Volgorde van de hoekpunten in de uitsluitingspolygon",
+		"models.StructureExclusionPoint.properties.sortIndex.label": "Sorteerindex",
+		"models.StructureExclusionPoint.properties.x.description": "Horizontale positie van het punt op het vlak",
+		"models.StructureExclusionPoint.properties.x.label": "X-coördinaat",
+		"models.StructureExclusionPoint.properties.y.description": "Verticale positie van het punt op het vlak",
+		"models.StructureExclusionPoint.properties.y.label": "Y-coördinaat",
+		"models.StructureExclusionPoint.singular": "structuur uitsluitingspunt",
 		"models.User.determinant.defined": "de gebruiker",
 		"models.User.determinant.undefined": "een gebruiker",
 		"models.User.determinants.defined": "de gebruikers",
@@ -127509,6 +130772,14 @@ var jsonTranslationsFiles = {
 		"OboBuildingAssignmentChip.assignHelp": "Wijs %{buildingName} toe aan deze persoon, zodat hij of zij een werkplek kan reserveren.",
 		"OboBuildingComparisonAlert.buildingAccessWarning": "%{targetPersonName} kan geen werkplek reserveren in de volgende gebouwen; klik op het gebouw om de persoon toe te staan ​​daar een werkplek te reserveren.",
 		"OboBuildingComparisonAlert.warningTitle": "Waarschuwing: Niet-toegewezen gebouwen",
+		"OpenCopyBuildingToCartAsyncAction.ariaLabel": "Kopieer de gebouwstructuur",
+		"OpenCopyBuildingToCartAsyncAction.help": "Kopieer de gebouwstructuur",
+		"OpenGenericNoChangeTableSyncAction.help": "Bekijk details van identieke gegevens",
+		"OpenGenericNoChangeTableSyncAction.label": "Bekijk de gegevens",
+		"OpenImportCreateEntitiesTableSyncAction.help": "Bekijk de details van de entiteiten die moeten worden aangemaakt, omdat er meer dan 500 regels zijn. Om prestatieredenen zijn de regels standaard verborgen",
+		"OpenImportCreateEntitiesTableSyncAction.label": "Bekijk de entiteiten die u wilt maken",
+		"OpenInfoTabContentSyncAction.help": "Zie importdetails voor identieke vergelijkingen",
+		"OpenInfoTabContentSyncAction.label": "Bekijk importdetails",
 		"OpenRoomsBulkEditSyncAction.help": "Wijzig de eigenschappen van alle geselecteerde ruimtes.",
 		"OperationHelpMarkdown.help.documentation": "Documentatie",
 		"OrganizationDataQualityHierarchy.headerChildOrganizations": "Dochterorganisaties",
@@ -127557,6 +130828,7 @@ var jsonTranslationsFiles = {
 		"PartnerEntityUpdateTab.button.label": "Update in %{partnerName}",
 		"PartnerEntityUpdateTab.headers.type": "Vriendelijk",
 		"PartnerEntityUpdateTab.progress.syncing": "%{label} synchroniseren ...",
+		"PasteCartContentIntoTenantAsyncAction.help": "Importeer in dit bedrijf",
 		"PersonAffectationsPanel.description": "De opdrachten van de persoon",
 		"PersonAffectationsPanel.title": "Opdrachten",
 		"PersonBadgePanel.description": "Diverse informatie over de persoon",
@@ -127576,6 +130848,8 @@ var jsonTranslationsFiles = {
 		"PersonCostCenterWorkplaceFilter.Empty": "Er zijn geen kostenplaatsen verbonden aan mensen",
 		"PersonCostCenterWorkplaceInfo.nodeInfo.peopleCount": "Er zijn %{count} mensen met kostenplaats %{costCenterName}",
 		"PersonCostCenterWorkplaceInfo.nodeInfo.workplaceCount": "Er zijn %{count} werkstations met minstens één persoon met kostenplaats %{costCenterName}",
+		"PersonDataQualityOnlyAssociatedtoBuilding.buildingFilterPlaceholder": "Kies een of meer gebouwen",
+		"PersonDataQualityOnlyAssociatedtoBuilding.filterByBuildingTitle": "Filter de lijst op gebouw",
 		"PersonDataQualityWithoutAffectation.costCenterHeader": "Kostenplaats",
 		"PersonDataQualityWithoutAffectation.directionHeader": "Richting",
 		"PersonDataQualityWithoutAffectation.excludeScenarioBuildingsLabel": "Scenario-gebouwen uitsluiten",
@@ -127594,7 +130868,6 @@ var jsonTranslationsFiles = {
 		"PersonRelationsPanelView.title": "Relaties",
 		"PersonSearchSelector.changePersonCta": "Verander de persoon",
 		"PersonSearchSelector.noPersonSelected": "Niemand heeft gekozen",
-		"PersonSearchSelector.removePersonHelp": "Verwijder de geselecteerde persoon",
 		"PersonSearchSelector.selectedPersonLabel": "Persoon: %{personName}",
 		"PersonSearchSelector.selectPersonCta": "Selecteer een persoon",
 		"PersonSecurityPanel.description": "Veiligheids- en evacuatie-informatie",
@@ -127626,6 +130899,8 @@ var jsonTranslationsFiles = {
 		"PropertSelectorDrawer.tabLabel": "Eigenschappen",
 		"PropertyTypeErrors.title": "De volgende waarden bestaan ​​niet voor eigenschap <b>%{propertyTypeLabel}</b> in <b>%{objectTypeLabel}</b>",
 		"PWLSelectDimensionCard.selectDimensionCard.title": "Selecteer een dimensie",
+		"QualifySegmentConnectorSyncAction.help": "Koppelt een buiten-naar-binnen / buiten-naar-buiten / buiten-naar-binnen-buiten type aan het geselecteerde deursegment.",
+		"QualifySegmentConnectorSyncAction.label": "Kwalificatie in segmentconnector",
 		"RedirectCountdownTimer.redirectMessage": "Deze pagina wordt automatisch doorgestuurd naar %{redirectTarget} over %{secondsRemaining} seconden.",
 		"ReduceMenuSwitch.open.false": "Vouw het menu samen om te profiteren van de werkruimte",
 		"ReduceMenuSwitch.open.true": "Vouw menu uit",
@@ -127634,14 +130909,25 @@ var jsonTranslationsFiles = {
 		"RefetchFloorLayoutButton.refetch": "Plangegevens opnieuw laden",
 		"RefetchObjectTypeIcon.help": "Gegevens voor %{determinant.defined} opnieuw laden",
 		"RefreshPageButton.label": "Herlaad pagina",
+		"RefreshRoomCalendarAsyncAction.help": "Vernieuw de kalender",
 		"ReleasableStaticWorkplaceChip.anotherPersonIsAssignedToReleasableStaticWorkplace": "%{personFullName} is toegewezen aan het vrijgekomen werkstation %{workplaceName}",
 		"ReleasableStaticWorkplaceChip.chipLabel": "Werkstation beschikbaar voor vrijgave: %{workplaceName}",
 		"ReleasableStaticWorkplaceChip.youAreAssignedToReleasableStaticWorkplace": "Je bent toegewezen aan het vrijgekomen werkstation %{workplaceName}",
+		"ReleaseBookedParkingAsyncAction.ariaLabel": "Parkeerreservering vrijgeven",
+		"ReleaseBookedParkingAsyncAction.help": "Parkeerreservering vrijgeven",
 		"ReleaseWorkplaceBookingAsyncAction.ariaLabel": "Maak deze werkstationreservering vrij",
 		"ReleaseWorkplaceBookingAsyncAction.help": "Geef deze reservering vrij",
+		"RemoveFieldTypeAddressSyncAction.ariaLabel": "Adres verwijderen",
+		"RemoveFieldTypeAddressSyncAction.help": "Adres verwijderen",
+		"RemoveFieldTypeImageSyncAction.ariaLabel": "Afbeelding verwijderen",
+		"RemoveFieldTypeImageSyncAction.help": "Afbeelding verwijderen",
+		"RemoveFieldTypeModel3dSyncAction.ariaLabel": "3D-model verwijderen",
+		"RemoveFieldTypeModel3dSyncAction.help": "3D-model verwijderen",
 		"RemoveFromCartIconButton.help": "Uit winkelwagen verwijderen",
 		"RemoveItemColorsOption.help": "Kleur objecten wit, zodat u zich kunt concentreren op andere elementen op de kaart",
 		"RemoveItemColorsOption.label": "Kleur geen voorwerpen",
+		"RemovePersonSearchSelectionAsyncAction.ariaLabel": "Verwijder de geselecteerde persoon",
+		"RemovePersonSearchSelectionAsyncAction.help": "Verwijder de geselecteerde persoon",
 		"RenderingTypeError.errorMessages.default": "Uw browser ondersteunt de grafische functies die nodig zijn voor de 3D-kaartweergave niet. Probeer uw browser bij te werken of hardwareversnelling in te schakelen in uw browserinstellingen.",
 		"RenderingTypeError.errorMessages.macAMD": "De 3D-kaartweergave werkt mogelijk niet goed op uw Mac met een AMD-videokaart. Probeer uw grafische drivers bij te werken of een andere browser te gebruiken.",
 		"RenderingTypeError.errorMessages.mobile": "3D-kaartweergave wordt niet volledig ondersteund op mobiele apparaten. Gebruik een desktopbrowser voor een betere ervaring.",
@@ -127694,6 +130980,10 @@ var jsonTranslationsFiles = {
 		"ReportErrorSteps.report.steps.reload": "Laad de pagina opnieuw en kijk of de fout is opgelost",
 		"ReportErrorSteps.report.steps.title": "Je kunt het in volgorde proberen",
 		"ReportErrorSteps.report.title": "Er is zojuist een fout opgetreden",
+		"ResetFieldTypeIconBadgeSyncAction.ariaLabel": "Reset de badge",
+		"ResetFieldTypeIconBadgeSyncAction.help": "De waarden (tekst en kleuren) opnieuw instellen.",
+		"ResetImportCompareEntitiesSyncAction.help": "Start het importeren opnieuw",
+		"ResetImportCompareEntitiesSyncAction.label": "Herstarten",
 		"ResetPaginationSyncAction.help": "Ga terug naar de eerste pagina.",
 		"ResetPaginationSyncAction.label": "Paginatie opnieuw instellen",
 		"ResetRotationAngle.resetRotationAngle": "Reset de rotatiehoek naar 0°, momenteel %{initialRotation}",
@@ -127701,6 +130991,10 @@ var jsonTranslationsFiles = {
 		"ResetTextAnchorButton.label": "Ankerpositie opnieuw instellen",
 		"ResetTextPositionButton.help": "Met deze optie wordt de tekstpositie voor deze ruimte teruggezet naar de oorspronkelijke locatie",
 		"ResetTextPositionButton.label": "Tekstpositie opnieuw instellen",
+		"RestartExportPartnerResourcesSyncAction.help": "Synchronisatie opnieuw starten",
+		"RestartExportPartnerResourcesSyncAction.label": "Herstarten",
+		"RestartSephoraSapImportSyncAction.help": "Gegevens opnieuw laden",
+		"RestartSephoraSapImportSyncAction.label": "Start het importeren opnieuw",
 		"RightDrawerContent.close": "Sluit het rechterpaneel door op het kruisje te klikken.",
 		"RightSearchFilterDrawer.buttons.clear.help": "Wis alle filters en breng ze terug naar hun oorspronkelijke staat om ervoor te zorgen dat u alle beschikbare entiteiten kunt zien",
 		"RightSearchFilterDrawer.buttons.clear.label": "Wis alle filters",
@@ -127729,6 +131023,10 @@ var jsonTranslationsFiles = {
 		"RoomBookingCalendar.thisWeek": "Deze week",
 		"RoomBookingCalendar.time": "Uur",
 		"RoomBookingCalendar.unavailable": "Niet beschikbaar of voorbij",
+		"RoomBookingConfirmationButton.bookingConfirmed": "De parkeerreservering is bevestigd.",
+		"RoomBookingConfirmationButton.confirm": "Parkeerplaats bevestigen",
+		"RoomBookingConfirmationButton.confirmHelp": "Bevestig dat u uw parkeerplaats zult gebruiken.",
+		"RoomBookingConfirmationButton.confirmHelpWithRange": "Bevestig dat u uw parkeerplaats zult gebruiken. U kunt dit bevestigen tussen %{confirmationRange} .",
 		"RoomCalendarDrawer.calendarTitle": "Reserveringskalender",
 		"RoomCalendarDrawer.cancelled": "Geannuleerd",
 		"RoomCalendarDrawer.errorFetchingEvents": "Fout bij het laden van reserveringen",
@@ -127768,13 +131066,6 @@ var jsonTranslationsFiles = {
 		"RoomDimensionUpdatedSnackbar.setOne": "De waarde %{value} is in de ruimte %{roomName} geplaatst.",
 		"RoomDimensionUpdatedSnackbar.setTwo": "De waarde %{value} is geplaatst in de ruimtes %{roomName1} en %{roomName2}",
 		"RoomFullName.noName": "Naamloze ruimte",
-		"RoomGraphHandler.buttons.generateGraph.description": "Door de oriëntatiegrafiek te genereren, worden de knooppunten berekend waarlangs de verkenner de ruimtes en meubels kan vinden. Als de oorspronkelijke ruimte kan worden geselecteerd, is de grafiek al gegenereerd.",
-		"RoomGraphHandler.buttons.generateGraph.label": "Genereer de oriëntatiegrafiek",
-		"RoomGraphHandler.buttons.selectOriginRoom.description": "Selecteer een ruimte en gebruik deze optie om deze als startruimte te definiëren",
-		"RoomGraphHandler.buttons.selectOriginRoom.label": "Selecteer originele ruimte",
-		"RoomGraphHandler.icons.displayBoundingBoxes.description": "Toon uitsluitingsruimten voor meubels",
-		"RoomGraphHandler.icons.displayNodes.description": "Toon paden in kamers",
-		"RoomGraphHandler.icons.enablePathfinding.description": "Activeer padtekening vanuit de bronruimte met vorm onder de muis",
 		"RoomGraphHandler.rooms.origin": "Originele ruimte",
 		"RoomLabels.capacity.suffix": "P.",
 		"RoomMapFilter.Empty": "Er is geen ruimtetype gekoppeld aan ruimtes. U kunt er meer toevoegen door een ruimte te wijzigen en er een bijbehorend type aan toe te voegen. Vervolgens kunt u de weergave ervan vanuit deze sectie beheren",
@@ -127813,9 +131104,16 @@ var jsonTranslationsFiles = {
 		"SecurityComplianceModeSwitch.label": "Filter mensen met beveiligingsprofielen",
 		"SeeMoreDimensionsChip.lowerPriorityDimensionsTooltip": "Lagere prioriteitsgroottes kunnen alleen worden geboekt als de hogere prioriteitsgroottes volgeboekt zijn.",
 		"SeeMoreDimensionsChip.seeMoreDimensions": "+ %{count} andere",
+		"SelectAllWrongRoomsSyncAction.help": "Selecteer of deselecteer alle lijnen",
+		"SelectAllWrongRoomsSyncAction.labelWhenChecked": "Deselecteer alles",
+		"SelectAllWrongRoomsSyncAction.labelWhenUnchecked": "Selecteer alles",
 		"SelectDimensionTypeNavigationLayoutIcon.help": "Door te navigeren per analyselaag kunt u op een ruimte klikken, de bijbehorende laag selecteren en door de ruimtes heen de mensen bekijken die aan deze laag zijn toegewezen of de werkstations en objecten die aan deze laag zijn gekoppeld",
 		"SelectDimensionTypeNavigationLayoutIcon.select": "Selecteer dit laagtype voor navigatie",
 		"SelectDimensionTypeNavigationLayoutIcon.unselect": "Verwijder navigatie per analyselaag en keer terug naar navigatie per spaties",
+		"SelectDimensionTypeNavigationLayoutSyncAction.ariaLabelSelect": "Selecteer de navigatielaag",
+		"SelectDimensionTypeNavigationLayoutSyncAction.ariaLabelUnselect": "Verwijder de navigatielaag",
+		"SelectDimensionTypeNavigationLayoutSyncAction.select": "Selecteer dit laagtype voor navigatie",
+		"SelectDimensionTypeNavigationLayoutSyncAction.unselect": "Verwijder navigatie per analyselaag en keer terug naar navigatie per spaties",
 		"SelectItemTypeShapeFormeLayerSyncAction.ariaLabel": "Vormpunten",
 		"SelectItemTypeShapeFormeLayerSyncAction.help": "Bewerk de punten die de vormgeometrie van het objecttype definiëren.",
 		"SelectItemTypeShapeLayerToggle.formeAria": "Vormpunten",
@@ -127827,6 +131125,12 @@ var jsonTranslationsFiles = {
 		"SelectItemTypeShapeLayerToggle.visualLabel": "Visuele randen",
 		"SelectItemTypeShapeVisualEdgesLayerSyncAction.ariaLabel": "Visuele randen",
 		"SelectItemTypeShapeVisualEdgesLayerSyncAction.help": "Bewerk de weergaveranden, los van de vormgeometrie.",
+		"SelectOriginRoomSyncAction.help": "Selecteer een ruimte en gebruik deze optie om deze als startruimte te definiëren",
+		"SelectOriginRoomSyncAction.label": "Selecteer originele ruimte",
+		"SelectPathfindingRouteDestinationSyncAction.help": "Selecteer de bestemmingsruimte",
+		"SelectPathfindingRouteDestinationSyncAction.label": "Selecteer de bestemming",
+		"SelectPathfindingRouteOriginSyncAction.help": "Selecteer originele ruimte",
+		"SelectPathfindingRouteOriginSyncAction.label": "Selecteer de oorsprong",
 		"ShapeTextAnchorDrawer.empty": "Selecteer een compatibele vorm om de displaytekst te verplaatsen",
 		"SharingcloudSyncOperationLabel.title": "Sharingcloud-synchronisatie",
 		"ShowEntityDrawer.title.listItem": "Zie informatie voor %{determinant.defined} in de zijbalk",
@@ -127875,6 +131179,10 @@ var jsonTranslationsFiles = {
 		"SyncSelectedJupRolesAsyncButton.label": "Synchroniseer de selectie ( %{count} )",
 		"SyncSelectedPicturesAsyncButton.help": "Foto's synchroniseren voor geselecteerde gebruikers",
 		"SyncSelectedPicturesAsyncButton.label": "Synchroniseer de selectie ( %{count} )",
+		"SyncZbreEmptyExternalIdsAsyncAction.help": "Start de externalId-synchronisatie met Zere.",
+		"SyncZbreEmptyExternalIdsAsyncAction.label": "Synchroniseer met Zbre ( %{count} / %{total} )",
+		"SyncZbreSiteSurfyGlobalIdsAsyncAction.help": "Start de synchronisatie van de SurfyId-variabele met Zbre.",
+		"SyncZbreSiteSurfyGlobalIdsAsyncAction.label": "Synchroniseer met Zbre ( %{count} / %{total} )",
 		"TableOptionsRow.checked.false": "Selecteer alles",
 		"TableOptionsRow.checked.true": "Deselecteer alles",
 		"TableOptionsRow.help": "Selecteer of deselecteer alle lijnen",
@@ -127925,16 +131233,31 @@ var jsonTranslationsFiles = {
 		"TimeSlot.slotBookedWithTime": "%{startTime} - %{endTime} | Gereserveerd door %{organizer}",
 		"TimeSlot.slotRefreshing": "Bezig met updaten...",
 		"TimeSlot.slotRefreshingWithCountdown": "Bijwerken... Wacht %{seconds} s totdat Office365 uw reservering heeft bevestigd.",
+		"ToggleAllMapFiltersNodeInfoSyncAction.ariaLabel": "Alle details weergeven/verbergen",
+		"ToggleAllMapFiltersNodeInfoSyncAction.closeHelp": "Sluit alle details en indicatoren",
+		"ToggleAllMapFiltersNodeInfoSyncAction.openHelp": "Open alle details en indicatoren",
 		"ToggleAllOpenInfoState.false": "Open alle details en indicatoren",
 		"ToggleAllOpenInfoState.true": "Sluit alle details en indicatoren",
 		"ToggleCopilotEnable.help.false": "Activeer Surfy Copilot om automatische deurherkenning in te schakelen",
 		"ToggleCopilotEnable.help.true": "Schakel Surfy Copilot uit en ga terug naar handmatige modellering",
 		"ToggleCopilotEnable.label.false": "Activeer Surfy Copilot",
 		"ToggleCopilotEnable.label.true": "Schakel Surfy Copilot uit",
+		"ToggleCopilotEnableSyncAction.helpWhenDisabled": "Activeer Surfy Copilot om automatische deurherkenning in te schakelen",
+		"ToggleCopilotEnableSyncAction.helpWhenEnabled": "Schakel Surfy Copilot uit en ga terug naar handmatige modellering",
+		"ToggleCopilotEnableSyncAction.labelWhenDisabled": "Activeer Surfy Copilot",
+		"ToggleCopilotEnableSyncAction.labelWhenEnabled": "Schakel Surfy Copilot uit",
+		"ToggleDisplayAllCompaniesSyncAction.help": "Toon alle gegevens",
+		"ToggleDisplayAllCompaniesSyncAction.label": "Toon alle bedrijven",
+		"ToggleDisplayFurnitureBboxSyncAction.ariaLabel": "Toon uitsluitingsruimten voor meubels",
+		"ToggleDisplayFurnitureBboxSyncAction.help": "Toon uitsluitingsruimten voor meubels",
 		"ToggleDisplayLineButton.help": "Hiermee kunt u de weergave van het segment en het ankerpunt voor deze ruimte activeren",
 		"ToggleDisplayLineButton.label": "Ankerweergave inschakelen",
+		"ToggleDisplayPathfindingGridSyncAction.ariaLabel": "Toon paden in kamers",
+		"ToggleDisplayPathfindingGridSyncAction.help": "Toon paden in kamers",
 		"ToggleEnableFloorLabels.help": "Geef de verdiepingsnaam weer aan de zijkant van de constructie in de 3D-weergave",
 		"ToggleEnableFloorLabels.label": "Toon vloerlabels",
+		"ToggleEnableHoverPathfindingSyncAction.ariaLabel": "Activeer padtracering vanuit de bronruimte",
+		"ToggleEnableHoverPathfindingSyncAction.help": "Activeer padtekening vanuit de bronruimte met vorm onder de muis",
 		"ToggleEnableMissingFloors.help": "Toon spookvloeren voor ontbrekende verdiepingen tussen niveau 0 en de hoogste verdieping op basis van echte vloerniveaus",
 		"ToggleEnableMissingFloors.label": "Laat spookvloeren zien",
 		"ToggleEnableRoomLabels.help": "Geef de namen van de ruimtes weer als labels in de 3D-weergave",
@@ -127942,21 +131265,71 @@ var jsonTranslationsFiles = {
 		"ToggleEnableStructureWalls.help": "Toon de plattegrond van de gebouwstructuur in de 3D-weergave. Niet beschikbaar in de Cuby-wandmodus.",
 		"ToggleEnableStructureWalls.label": "Toon de gebouwstructuur",
 		"ToggleJupRoleObjectTypeCrudAsyncAction.help": "Eigenschap bijwerken ( %{name} )",
+		"ToggleMapFiltersNodeInfoSyncAction.ariaLabel": "Schakel knooppuntinformatie",
+		"ToggleMapFiltersNodeInfoSyncAction.close": "Sluit aanvullende informatie",
+		"ToggleMapFiltersNodeInfoSyncAction.open": "Bekijk details en indicatoren voor %{label}",
+		"ToggleMapFiltersNodesAllSyncAction.deselectAll": "deselecteer alles",
+		"ToggleMapFiltersNodesAllSyncAction.selectAll": "Selecteer alles",
+		"TogglePathfindingConnectorsModeSyncAction.ariaLabel": "Connectormodus",
+		"TogglePathfindingConnectorsModeSyncAction.help": "Toon de verbindingsmodus (ruimtes en randen die met de verbindingslijnen zijn verbonden).",
+		"TogglePathfindingCurrentFloorMode.help": "Toont de ruimtes op de geselecteerde verdieping en de structuur alleen op de verdiepingen daaronder. Schakel deze optie uit om alle verdiepingen met hun ruimtes te zien.",
+		"TogglePathfindingCurrentFloorMode.label": "Huidige vloermodus",
+		"TogglePathfindingEditModeSyncAction.ariaLabel": "Padvindingsbewerkingsmodus",
+		"TogglePathfindingEditModeSyncAction.help": "Padvindingsbewerkingsmodus: klik op een ruimte om een ​​ruimteverbinding toe te voegen.",
+		"TogglePathfindingGraphNodesSyncAction.ariaLabel": "Toon de routeplanningsgrafiek",
+		"TogglePathfindingGraphNodesSyncAction.help": "De knooppunten van de padvindingsgrafiek in 3D weergeven.",
+		"ToggleSmoothedPathDisplaySyncAction.ariaLabel": "Schakel de weergave van het afgevlakte pad in of uit.",
+		"ToggleSmoothedPathDisplaySyncAction.help": "Weergave van het afgevlakte pad (gemiddelde van punten / onnodige bochten vereenvoudigd). Uitgeschakeld = standaard grafiekweergave.",
 		"ToggleWorkplaceFreeConditionTypeIconButton.and": "Bekijk vrije werkplekken voor minimaal één van de aangevraagde dagen",
 		"ToggleWorkplaceFreeConditionTypeIconButton.or": "Bekijk vrije werkplekken voor alle aangevraagde dagen",
+		"ToggleWorkplaceTypeItemTypeDetailsSyncAction.helpClose": "Opties samenvouwen",
+		"ToggleWorkplaceTypeItemTypeDetailsSyncAction.helpOpen": "Vouw opties uit",
 		"ToggleZbreSyncCheckbox.help": "Door synchronisatie kunnen ruimtes en werkplekken worden gekleurd op basis van de in Z#bre geplaatste sensoren",
 		"ToggleZbreSyncCheckbox.label": "Synchroniseer met realtime bezigheden in Z#bre",
 		"TopLevelOrganizationFilter.Empty": "Er zijn geen organisaties aan ruimtes gekoppeld. U kunt organisaties toevoegen door een ruimte te bewerken en deze aan een organisatie te koppelen; u kunt de weergave ervan vervolgens vanuit dit gedeelte beheren.",
+		"UnifiedBookingConfirmationButton.confirm": "Bevestig uw positie en parkeerplek.",
+		"UnifiedBookingConfirmationButton.confirmHelp": "Bevestig in één keer uw aanwezigheid op het station en uw parkeerplaats.",
+		"UnifiedBookingConfirmationButton.confirmHelpWithRange": "Bevestig in één keer uw aanwezigheid op het station en uw parkeerplaats. U kunt bevestigen tussen %{confirmationRange} .",
 		"UnlinkMapScaleAsyncButton.help": "Als u de weegschaal ontkoppelt van dit plan, wordt deze uit het plan verwijderd, maar blijft de weegschaal in de database staan ​​voor toekomstig gebruik",
 		"UnlinkMapScaleAsyncButton.label": "Degroepeer schaal",
+		"UnselectMapFilterNodesSyncAction.ariaLabel": "deselecteer alles",
+		"UnselectMapFilterNodesSyncAction.help": "deselecteer alles",
+		"UpdatePartnerEntitiesAsyncAction.help": "Update in %{partnerName}",
+		"UpdatePartnerEntitiesAsyncAction.label": "Update in %{partnerName}",
 		"useOpenMeetingRoomBookingDrawer.bookRoom": "Om te boeken",
 		"useOpenMeetingRoomBookingDrawer.noRoomName": "Ongedefinieerde naamruimte",
 		"useOpenMeetingRoomBookingDrawer.roomBooking": "Ruimtereservering",
 		"useOpenRoomsBulkEditDrawer.drawerHelp": "Wijzig de eigenschappen van alle geselecteerde ruimtes.",
 		"useOpenRoomsBulkEditDrawer.drawerTitle": "Meerdere aanpassingen",
+		"usePathfindingProgressTranslation.applying": "Sollicitatie…",
+		"usePathfindingProgressTranslation.force": "Krachtregeneratie",
+		"usePathfindingProgressTranslation.forceHelp": "Negeer de skip (bronnen blijven ongewijzigd) en genereer de grafiek opnieuw.",
+		"usePathfindingProgressTranslation.loadingGraph": "Grafiek laden…",
+		"usePathfindingProgressTranslation.phases.build_rooms": "Kamerconstructie ( %{roomCount} )",
+		"usePathfindingProgressTranslation.phases.building_list_floors": "Lijst met verdiepingen ( %{floorCount} )",
+		"usePathfindingProgressTranslation.phases.building_ready": "Grafiek klaar voor gebruik",
+		"usePathfindingProgressTranslation.phases.campus_connectors": "Verbindingsstukken van het gebouw opnieuw vastnaaien",
+		"usePathfindingProgressTranslation.phases.finalize_merge": "Grafiek samenvoegen ( %{nodeCount} knooppunten)",
+		"usePathfindingProgressTranslation.phases.floor_generate": "Generatie verdieping %{floorId} ( %{index} / %{total} )",
+		"usePathfindingProgressTranslation.phases.floor_skip": "Verdieping %{floorId} ongewijzigd — overslaan ( %{index} / %{total} )",
+		"usePathfindingProgressTranslation.phases.load_layout": "Het plan laden",
+		"usePathfindingProgressTranslation.phases.persist": "Registratie",
+		"usePathfindingProgressTranslation.phases.sparsify_portals": "Portalen vereenvoudigen",
+		"usePathfindingProgressTranslation.queued": "In de rij…",
+		"usePathfindingProgressTranslation.status.failed": "Mislukking",
+		"usePathfindingProgressTranslation.status.idle": "Inactief",
+		"usePathfindingProgressTranslation.status.queued": "In de rij",
+		"usePathfindingProgressTranslation.status.ready": "Klaar",
+		"usePathfindingProgressTranslation.status.running": "In uitvoering",
+		"usePathfindingProgressTranslation.step": "%{label} ( %{ms} ms)",
+		"usePathfindingProgressTranslation.withHistory": "%{current} | %{history}",
 		"UserNotPartOfCompanyAdminCanCreate.createButton": "Maak de vereniging",
 		"UserNotPartOfCompanyAdminCanCreate.message": "U bent niet gekoppeld aan het bedrijf %{companyId} .",
 		"useSearchAndAssociateListItemTooltip.listItemSelect": "Selecteer %{label}",
+		"ValidateBuildingFloorsSelectionSyncAction.help": "Bevestig selectie",
+		"ValidateBuildingFloorsSelectionSyncAction.label": "bevestigen",
+		"ValidateEnterpriseConnectionAsyncAction.help": "Door de e-mail te valideren, leert u uw bedrijf kennen en wordt u naar het juiste authenticatieplatform geleid",
+		"ValidateEnterpriseConnectionAsyncAction.label": "bevestigen",
 		"validation.regex.company.name": "De bedrijfsnaam moet in kleine letters zijn en mag alleen letters, cijfers en koppeltekens bevatten",
 		"validation.regex.company.workplaceBookingConfirmationRange": "Het tijdsvenster voor de boekingsbevestiging moet de indeling HH:MM-HH:MM@IANA-tijdzone hebben (bijv. 06:00-10:30@Europe/Paris).",
 		"validation.regex.default": "De waarde moet overeenkomen met het formaat: %{pattern}",
@@ -127998,6 +131371,17 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.AddSegmentPointOption.help.enable": "Door een hoekpunt aan een segment toe te voegen, kunt u overal een punt plaatsen zonder rekening te houden met andere punten",
 		"WorkCanvas.Options.AddSegmentPointOption.label.disable": "Stop met het toevoegen van een hoekpunt aan een segment",
 		"WorkCanvas.Options.AddSegmentPointOption.label.enable": "Voeg een hoekpunt toe aan een segment",
+		"WorkCanvas.Options.AddStructureExclusionOption.help.disable": "Stop de creatie van structurele uitsluiting.",
+		"WorkCanvas.Options.AddStructureExclusionOption.help.enable": "Teken een uitsluitingspolygoon (terras, open ruimte, kolom) binnen de buitenste vorm.",
+		"WorkCanvas.Options.AddStructureExclusionOption.label.disable": "Stop met het toevoegen van structuuruitsluiting",
+		"WorkCanvas.Options.AddStructureExclusionOption.label.enable": "Voeg een structurele uitsluiting toe",
+		"WorkCanvas.Options.AddStructureExclusionOption.namePlaceholder": "Naam (optioneel)",
+		"WorkCanvas.Options.AddStructureExclusionPointOption.help.disable": "Stop het aanmaken van structuuruitsluitingspunten.",
+		"WorkCanvas.Options.AddStructureExclusionPointOption.help.enable": "Voeg een hoekpunt toe aan de geselecteerde structuuruitsluitingspolygoon.",
+		"WorkCanvas.Options.AddStructureExclusionPointOption.label.disable": "Stop met het toevoegen van een structuuruitsluitingsknooppunt.",
+		"WorkCanvas.Options.AddStructureExclusionPointOption.label.enable": "Voeg een structuuruitsluitingsknooppunt toe",
+		"WorkCanvas.Options.AddStructureExclusionSaveOption.help": "Sla de getekende structuuruitsluiting op.",
+		"WorkCanvas.Options.AddStructureExclusionSaveOption.label": "Sla de structuuruitsluiting op",
 		"WorkCanvas.Options.AddStructurePointOption.help.disable": "Stop met het maken van hoekpunten",
 		"WorkCanvas.Options.AddStructurePointOption.help.enable": "Door een hoekpunt toe te voegen, kunt u een vorm nauwkeuriger bewerken",
 		"WorkCanvas.Options.AddStructurePointOption.label.disable": "Stop met het toevoegen van een hoekpunt",
@@ -128034,6 +131418,10 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.DeleteItemTypeVisualEdgesOption.label": "Verwijder visuele randen",
 		"WorkCanvas.Options.DeleteRoomPointRoomOption.help": "Verwijder hoekpunten uit de ruimte",
 		"WorkCanvas.Options.DeleteRoomPointRoomOption.label": "Verwijder geselecteerde hoekpunten",
+		"WorkCanvas.Options.DeleteStructureExclusionPointOption.help": "Verwijder de geselecteerde structuuruitsluitingspunten.",
+		"WorkCanvas.Options.DeleteStructureExclusionPointOption.label": "Verwijder het uitsluitingsknooppunt",
+		"WorkCanvas.Options.DeleteStructurePointOption.help": "Verwijder de geselecteerde hoekpunten van de buitenste vorm.",
+		"WorkCanvas.Options.DeleteStructurePointOption.label": "Verwijder het hoekpunt van de structuur",
 		"WorkCanvas.Options.DeleteStructureShapeOption.help": "Verwijder de vorm van de machtsstructuur volledig, teken deze bijvoorbeeld volledig opnieuw",
 		"WorkCanvas.Options.DeleteStructureShapeOption.label": "Vorm verwijderen",
 		"WorkCanvas.Options.DeleteWorkplaceTypeItemTypeOption.help": "Verwijder het objecttype van het werkstationtype",
@@ -128111,6 +131499,12 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.SplitPolygoneOption.label": "Scheid de ruimte",
 		"WorkCanvas.Options.SplitRoomPointOption.help": "Door de hoekpunten te scheiden, kunt u voor elk segment meerdere hoekpunten hergebruiken en zo afzonderlijke ruimtes creëren",
 		"WorkCanvas.Options.SplitRoomPointOption.label": "Splits de bovenkant",
+		"WorkCanvas.Options.StructureExclusionsOption.empty": "Er zijn geen structurele uitzonderingen op dit formulier.",
+		"WorkCanvas.Options.StructureExclusionsOption.help.disable": "Sluit de lijst met structuuruitsluitingen.",
+		"WorkCanvas.Options.StructureExclusionsOption.help.enable": "Bekijk en verwijder uitsluitingen voor structuren (terras, leeg, kolom).",
+		"WorkCanvas.Options.StructureExclusionsOption.label.disable": "Sluit de lijst met structuuruitsluitingen.",
+		"WorkCanvas.Options.StructureExclusionsOption.label.enable": "Geef een lijst van de structurele uitsluitingen.",
+		"WorkCanvas.Options.StructureExclusionsOption.rowFallback": "Structuuruitsluiting",
 		"WorkCanvas.Options.TextAnchorOption.help.disable": "Stop met het verplaatsen van de displaytekst",
 		"WorkCanvas.Options.TextAnchorOption.help.enable": "Displaytekst verplaatsen",
 		"WorkCanvas.Options.TextAnchorOption.label.disable": "Stop met het beheren van de displaytekst",
@@ -128298,7 +131692,11 @@ var jsonTranslationsFiles = {
 		"ZbreItemSitesValidationSync.done": "Tot het einde",
 		"ZbreItemSitesValidationSync.noAnomalies": "Er zijn geen afwijkingen geconstateerd op de Zbre-objectlocaties.",
 		"ZbreItemSitesValidationSync.title": "Anomalieën op Zbre-objectlocaties (lockers…)",
-		"ZbreSyncOperationLabel.title": "Z#bre-synchronisatie"
+		"ZbreSyncOperationLabel.title": "Z#bre-synchronisatie",
+		"ZoomOnItemTypeSyncAction.ariaLabel": "Zoom in op het objecttype",
+		"ZoomOnMapScaleSyncAction.help": "Door te zoomen kunt u gemakkelijk de schaal op de plattegrond vinden.",
+		"ZoomOnMapScaleSyncAction.label": "Zoom in op de schaal",
+		"ZoomOnWorkplaceTypeSyncAction.ariaLabel": "Zoom in op het type baan"
 	}
 };
 //#endregion
@@ -128431,7 +131829,7 @@ function PropertyTypeDescription(props) {
 	return null;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+icons-material@9.3.1_@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2._f15963edadea30de2ff83270c043ab8d/node_modules/@mui/icons-material/NewReleases.mjs
+//#region node_modules/.pnpm/@mui+icons-material@9.4.0_@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3._968db6ddde4f40d43c39bdbaf180132c/node_modules/@mui/icons-material/NewReleases.mjs
 var NewReleases_default = createSvgIcon(/*#__PURE__*/ jsx("path", { d: "m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68zm-10 5h-2v-2h2zm0-4h-2V7h2z" }), "NewReleases");
 //#endregion
 //#region src/front/jup/Entities/Entity/PropertyTypeIcons/PropertyTypeMandatoryIcon.tsx
@@ -128517,7 +131915,7 @@ function PropertyTypeLabel(props) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+icons-material@9.3.1_@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2._f15963edadea30de2ff83270c043ab8d/node_modules/@mui/icons-material/ContentCopyTwoTone.mjs
+//#region node_modules/.pnpm/@mui+icons-material@9.4.0_@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3._968db6ddde4f40d43c39bdbaf180132c/node_modules/@mui/icons-material/ContentCopyTwoTone.mjs
 var ContentCopyTwoTone_default = createSvgIcon([/*#__PURE__*/ jsx("path", {
 	d: "M8 7h11v14H8z",
 	opacity: ".3"
@@ -128590,7 +131988,7 @@ function ObjectTypeMenuBreadcrumb(props) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/elementAcceptingRef/elementAcceptingRef.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/elementAcceptingRef/elementAcceptingRef.mjs
 function isClassComponent(elementType) {
 	const { prototype = {} } = elementType;
 	return Boolean(prototype.isReactComponent);
@@ -128617,7 +132015,7 @@ function acceptingRef(props, propName, componentName, location, propFullName) {
 var elementAcceptingRef = chainPropTypes(import_prop_types.default.element, acceptingRef);
 elementAcceptingRef.isRequired = chainPropTypes(import_prop_types.default.element.isRequired, acceptingRef);
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/getReactElementRef/getReactElementRef.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/getReactElementRef/getReactElementRef.mjs
 /**
 * Returns the ref of a React element handling differences between React 19 and older versions.
 * It will throw runtime error if the element is not a valid React element.
@@ -128630,7 +132028,7 @@ function getReactElementRef(element) {
 	return element?.ref || null;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+utils@9.3.0_@types+react@19.2.17_react@19.2.7/node_modules/@mui/utils/useValueAsRef/useValueAsRef.mjs
+//#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/useValueAsRef/useValueAsRef.mjs
 /**
 * Copied from `@base-ui/utils/useValueAsRef`.
 *
@@ -128655,10 +132053,10 @@ function createValueRef(value) {
 	return latest;
 }
 //#endregion
-//#region node_modules/.pnpm/react-transition-group@4.4.5_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-transition-group/esm/TransitionGroupContext.js
+//#region node_modules/.pnpm/react-transition-group@4.4.5_react-dom@19.3.0_react@19.3.0__react@19.3.0/node_modules/react-transition-group/esm/TransitionGroupContext.js
 var TransitionGroupContext_default = React.createContext(null);
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/internal/Transition.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/internal/Transition.mjs
 function resolveTimeouts(timeout) {
 	if (timeout == null) return {
 		appear: void 0,
@@ -128978,7 +132376,7 @@ process.env.NODE_ENV !== "production" && (Transition.propTypes = {
 	unmountOnExit: import_prop_types.default.bool
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/Fade/Fade.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/Fade/Fade.mjs
 var styles = {
 	entering: { opacity: 1 },
 	entered: { opacity: 1 },
@@ -129150,7 +132548,7 @@ process.env.NODE_ENV !== "production" && (Fade$1.propTypes = {
 	})])
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/Paper/paperClasses.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/Paper/paperClasses.mjs
 function getPaperUtilityClass(slot) {
 	return generateUtilityClass("MuiPaper", slot);
 }
@@ -129186,7 +132584,7 @@ generateUtilityClasses("MuiPaper", [
 	"elevation24"
 ]);
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.3.1_@emotion+react@11.14.0_@types+react@19.2.17_react@19.2.7__@emotion+_2bcaf85ce65f5e2584ddca6fd4dee32a/node_modules/@mui/material/Paper/Paper.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/Paper/Paper.mjs
 var useUtilityClasses = (ownerState) => {
 	const { square, elevation, variant, classes } = ownerState;
 	return composeClasses({ root: [

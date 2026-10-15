@@ -211,6 +211,27 @@ The occupancy ratio is the number of square meters in the building divided by th
 *Technical name:* ```peopleRatio```
 <PH code="building:peopleRatio"/>
 
+### Pathfinding Regen Completed At {#pathfinding-regen-completed-at}
+
+
+
+*Technical name:* ```pathfindingRegenCompletedAt```
+<PH code="building:pathfindingRegenCompletedAt"/>
+
+### Pathfinding Regen Requested At {#pathfinding-regen-requested-at}
+
+
+
+*Technical name:* ```pathfindingRegenRequestedAt```
+<PH code="building:pathfindingRegenRequestedAt"/>
+
+### Pathfinding Regen Status {#pathfinding-regen-status}
+
+
+
+*Technical name:* ```pathfindingRegenStatus```
+<PH code="building:pathfindingRegenStatus"/>
+
 ### Photo of the building {#picture}
 
 You can use a photo of your building to quickly find it from the home page (see buildings with photos) or to illustrate collaborators' views

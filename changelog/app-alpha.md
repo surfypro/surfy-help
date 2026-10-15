@@ -12,6 +12,13 @@ L’application utilisée au quotidien par la plupart des organisations reste su
 
 Lors d’une mise en production, seules les **nouveautés** sont reprises dans la page [Nouveautés](./app.md) ; les sections **Bugs résolus** ne sont **pas** reportées en production (elles servent à la vérification de l’équipe de test pendant le cycle alpha). Cette page est ensuite masquée en la renommant `_app-alpha.md`.
 
+## 5 Octobre 2026
+
+- Mode connecteurs (Pathfinding bâtiment)
+  - Sur la vue <LSV code="building:building-pathfinding" />, activez **Mode connecteurs** (désactivé par défaut) pour mettre en évidence les espaces et liaisons liés aux connecteurs, avec des **traits verticaux** entre étages.
+  - Les couleurs suivent le type de connecteur (<OT code="roomConnectorType" /> et <OT code="segmentConnectorType" />) ; sans couleur définie → **gris**. Édition via les fiches types.
+  - Guide : [Pathfinding — Mode connecteurs](/entities/user-guide/floor-plan/pathfinding-campus#mode-connecteurs).
+
 ## 30 Septembre 2026
 
 - Pathfinding dans un bâtiment

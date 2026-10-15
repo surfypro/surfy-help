@@ -12,6 +12,13 @@ Most organizations’ day-to-day application remains at [https://app.surfy.pro](
 
 When a release goes to production, only **features** are moved to [What's New](./app.md); the **Fixed bugs** sections are **not** copied to production (they are for the test team during the alpha cycle). This page is then hidden by renaming it to `_app-alpha.md`.
 
+## October 5, 2026
+
+- Connectors mode (building Pathfinding)
+  - On the <LSV code="building:building-pathfinding" /> view, turn on **Connectors mode** (off by default) to highlight spaces and links tied to connectors, with **vertical lines** between floors.
+  - Colors follow the connector type (<OT code="roomConnectorType" /> and <OT code="segmentConnectorType" />); with no color set → **gray**. Edit colors on the type records.
+  - Guide: [Pathfinding — Connectors mode](/entities/user-guide/floor-plan/pathfinding-campus#connectors-mode).
+
 ## September 30, 2026
 
 - Pathfinding inside a building

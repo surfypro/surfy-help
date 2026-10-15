@@ -27,6 +27,18 @@ From a <OT code="building" /> record, open the <LSV code="building:building-path
 
 On the same view, an administrator can **refresh navigation** for the building. The calculation takes **space connectors** between floors into account. Surfy stays usable while it runs; a message indicates when navigation is up to date.
 
+### Connectors mode {#connectors-mode}
+
+To quickly check that **space connectors** (links between floors) and **segment connectors** (building entrances / exits) are wired correctly:
+
+1. Open the <LSV code="building:building-pathfinding" /> view.
+2. Turn on **Connectors mode** (off by default).
+3. Spaces and links tied to connectors take the **type color**; with no color → **gray**. **Vertical lines** show links between floors.
+
+You can set an optional color on <OT code="roomConnectorType" /> and <OT code="segmentConnectorType" /> records.
+
+**Connectors mode** is **not** the origin → destination route: it is a visual check of connector wiring inside **this** building (not multi-building campus navigation).
+
 ### What this is not
 
 - **Not** multi-building **campus** navigation or outdoor travel between buildings.

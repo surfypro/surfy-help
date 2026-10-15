@@ -47,9 +47,9 @@ Le temps nécessaire pour pouvoir passer de chaque étage au prochain
 
 ## Entités associées (unique) {#properties-belongs-to}
 
-###  Room Connector Type {#room-connector-type}
+### Type de connecteur d'espaces {#room-connector-type}
 
-
+Un type de connecteur d'espaces qualifie les connecteurs reliant des espaces entre étages
 
 *Nom technique:* ```roomConnectorType```
 <PH code="roomConnector:roomConnectorType"/>

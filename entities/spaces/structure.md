@@ -49,13 +49,6 @@ Transformation de la structure pour la calibrer sur une carte
 
 ## Entités associées (liste) {#properties-has-many}
 
-###  Structure Exclusions {#structure-exclusions}
-
-
-
-*Nom technique:* ```structureExclusions```
-<PH code="structure:structureExclusions"/>
-
 ###  Structure Points {#structure-points}
 
 
@@ -69,6 +62,13 @@ Les étages represent un plateau de travail ou un niveau d'un bâtiment
 
 *Nom technique:* ```floors```
 <PH code="structure:floors"/>
+
+### Exclusions de structure {#structure-exclusions}
+
+Une exclusion de structure définit un trou (patio, vide, colonne) à l'intérieur de la forme extérieure de la structure
+
+*Nom technique:* ```structureExclusions```
+<PH code="structure:structureExclusions"/>
 
 
 

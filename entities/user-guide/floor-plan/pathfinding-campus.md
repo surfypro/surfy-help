@@ -27,6 +27,18 @@ Depuis la fiche d’un <OT code="building" />, ouvrez la vue <LSV code="building
 
 Sur la même vue, un administrateur peut **actualiser la navigation** du bâtiment. Le calcul prend en compte les **connecteurs d’espaces** entre étages. Surfy reste utilisable pendant le traitement ; un message indique quand la navigation est à jour.
 
+### Mode connecteurs {#mode-connecteurs}
+
+Pour contrôler rapidement que les **connecteurs d’espaces** (liaisons entre étages) et les **connecteurs de segment** (entrées / sorties du bâtiment) sont correctement reliés :
+
+1. Ouvrez la vue <LSV code="building:building-pathfinding" />.
+2. Activez **Mode connecteurs** (désactivé par défaut).
+3. Les espaces et liaisons liés aux connecteurs prennent la **couleur du type** ; sans couleur → **gris**. Des **traits verticaux** matérialisent les liaisons entre étages.
+
+Vous pouvez définir une couleur optionnelle sur les fiches <OT code="roomConnectorType" /> et <OT code="segmentConnectorType" />.
+
+**Mode connecteurs** n’est **pas** le tracé d’itinéraire origine → destination : c’est une aide visuelle pour vérifier le câblage des connecteurs dans **ce** bâtiment (pas le campus multi-bâtiments).
+
 ### Ce que ce n’est pas
 
 - **Pas** la navigation **campus** multi-bâtiments ni le trajet extérieur entre bâtiments.

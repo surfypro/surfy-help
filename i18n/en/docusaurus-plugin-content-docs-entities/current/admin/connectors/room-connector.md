@@ -47,9 +47,9 @@ The time required to be able to move from each floor to the next
 
 ## Associated entities (unique) {#properties-belongs-to}
 
-###  Room Connector Type {#room-connector-type}
+### Type of space connector {#room-connector-type}
 
-
+A type of space connector refers to connectors linking spaces between floors
 
 *Technical name:* ```roomConnectorType```
 <PH code="roomConnector:roomConnectorType"/>
