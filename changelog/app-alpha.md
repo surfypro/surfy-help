@@ -38,7 +38,7 @@ Lors d’une mise en production, seules les **nouveautés** sont reprises dans l
 ## 17 Septembre 2026 - v3.5.54
 
 - Stocker les nouvelles images sur Azure (France)
-  - Nouvelle option entreprise <P code="company:storeNewImagesOnAzureFrance" /> (fiche Entreprise). Si elle est activée, les **nouveaux** dépôts d’images produit sont hébergés en **France**. L’affichage (tailles / aperçus) reste comme aujourd’hui. Les images déjà en ligne **ne sont pas** migrées.
+  - Nouvelle option entreprise <P code="company:storeNewImagesOnAzureBlobStorage" /> (fiche Entreprise). Si elle est activée, les **nouveaux** dépôts d’images produit sont hébergés en **France**. L’affichage (tailles / aperçus) reste comme aujourd’hui. Les images déjà en ligne **ne sont pas** migrées.
   - Ne pas confondre avec l’option <P code="company:proxyImages" />. Les formats acceptés à l’ajout d’une image restent **inchangés** par parcours.
   - Guide : [Stocker les nouvelles images sur Azure (France)](/entities/user-guide/company-store-new-images-on-azure-france).
 - Confirmation des réservations (poste et parking)
