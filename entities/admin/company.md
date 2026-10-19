@@ -127,6 +127,13 @@ Plage horaire pendant laquelle les utilisateurs peuvent confirmer leurs réserva
 *Nom technique:* ```workplaceBookingConfirmationRange```
 <PH code="company:workplaceBookingConfirmationRange"/>
 
+### Stocker les nouvelles images sur Azure (France) {#store-new-images-on-azure-blob-storage}
+
+Si activé, les nouveaux uploads d'images produit sont hébergés sur Azure Blob (France). L'affichage reste via Cloudinary fetch. Les images déjà en ligne ne sont pas migrées. Ne pas confondre avec Images proxy.
+
+*Nom technique:* ```storeNewImagesOnAzureBlobStorage```
+<PH code="company:storeNewImagesOnAzureBlobStorage"/>
+
     
 
 ## Entités associées (unique) {#properties-belongs-to}

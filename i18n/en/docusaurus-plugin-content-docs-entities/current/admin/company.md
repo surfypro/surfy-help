@@ -127,6 +127,13 @@ Enable proxy for images
 *Technical name:* ```proxyImages```
 <PH code="company:proxyImages"/>
 
+### Store the new images on Azure (France) {#store-new-images-on-azure-blob-storage}
+
+If enabled, new product image uploads are hosted on Azure Blob (France). Display remains via Cloudinary fetch. Images already online are not migrated. Do not confuse this with proxy images.
+
+*Technical name:* ```storeNewImagesOnAzureBlobStorage```
+<PH code="company:storeNewImagesOnAzureBlobStorage"/>
+
     
 
 ## Associated entities (unique) {#properties-belongs-to}
