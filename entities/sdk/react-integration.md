@@ -7,16 +7,17 @@ sidebar_label: "Intégration React"
 
 | Besoin | Chemin |
 |--------|--------|
-| App React, composition + hooks Surfy | **[Surfy React Web](./surfy-react-web.md)** (`@surfy/surfy-sdk/react`) — **recommandé** |
-| App React, **Vue plateforme / Vue campus** | **[Vue plateforme / campus](./platform-campus-3d.md)** — React Web uniquement (pas de WC / mount*) |
-| App React, surface minimale sans hooks | `SurfySdk.mountFloor2d` / `mountBuilding3d` dans un `useEffect` |
-| HTML / Vue / non-React | [Web Component ou mount*](./layout-elements.md) (étage / bâtiment ; pas plateforme MVP) |
+| App React, **carte multi-bâtiments** | **[Vue plateforme](./platform-campus-3d.md)** — `SurfyPlatformView3dReact` (**seule** surface React publique recommandée) ; drill structure→Cuby in-map ; pilotage contexte + offline |
+| App React, composition / hooks autour de la plateforme | **[Surfy React Web](./surfy-react-web.md)** (`@surfy/surfy-sdk/react`) — Provider + hooks ; layouts campus/building/floor React = **dépréciés** |
+| Offline après 1er fetch (plateforme / layout) | Prop `offlineEnabled` (**défaut `true`**, SWR) — [plateforme](./platform-campus-3d.md#offline-plateforme) · [layout](./surfy-react-web.md#offline-layout-étage--bâtiment) |
+| App React, plan d'étage / bâtiment **hors** carte globale | `SurfySdk.mountFloor2d` / `mountBuilding3d` dans un `useEffect` — [Éléments de layout](./layout-elements.md) |
+| HTML / Vue / non-React | [Web Component ou mount*](./layout-elements.md) (étage / bâtiment ; pas de plateforme WC) |
 
-Ne traite **pas** Surfy React Web comme un simple wrapper autour du tag HTML : c'est l'arbre React public du SDK (Provider + layout + hooks).
+Intégrez d'abord via la **plateforme React** si vous avez besoin d'une vue globale. Ne présentez plus campus / building React comme entrée principale.
 
 ## Mount depuis React (API JS)
 
-Utile si vous ne voulez pas importer `@surfy/surfy-sdk/react` :
+Utile pour un layout étage / bâtiment **sans** importer les composants React de layout (dépréciés) :
 
 ```tsx
 import { useEffect, useRef } from 'react';
@@ -70,7 +71,7 @@ export function FloorLayout2dMount({ floorId }: { floorId: number }) {
 1. **Cleanup** : appelez toujours `destroy()` (mount) ou démontez le composant React.
 2. **Token** : `getAccessToken` au montage — jamais de secret dans le bundle front.
 3. **Sizing** : le parent doit avoir une hauteur explicite — voir [Taille](./layout-and-sizing.md).
-4. **Hooks Surfy** : uniquement via `@surfy/surfy-sdk/react` sous `SurfySdkReactProvider`.
+4. **Hooks Surfy** : uniquement via `@surfy/surfy-sdk/react` sous `SurfySdkReactProvider` (typiquement enfants de la plateforme).
 
 ## Proxy Vite (développement)
 
@@ -87,4 +88,4 @@ export default defineConfig({
 
 ## Tests
 
-Les demos **surfy-sdk-demos** et les E2E associés valident le chargement 2D / bâtiment 3D, les couleurs et l'absence d'erreurs runtime. Réutilisez ces patterns en CI.
+Les demos **surfy-sdk-demos** (route **plateforme** : clic structure → Cuby PF-style) et les E2E associés valident le chargement et l'absence d'erreurs runtime. Réutilisez ces patterns en CI.

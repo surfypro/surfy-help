@@ -106,3 +106,4 @@ Le projet **surfy-sdk-demos** colore dynamiquement le premier espace rendu ou ce
 - **Bâtiment 3D** : `setRoomColors` surcharge les **matériaux des pièces** CubyV2 (même sémantique `roomId`).
 - Pas de dégradé ni de motif : couleur unie par espace.
 - Les couleurs métier Surfy (centre de coût, calques d'analyse) ne sont pas exposées — utilisez `setRoomColors` pour votre propre sémantique.
+- Couleurs de **structure / massing** sur la Vue plateforme : source `Building.color` (pas `setRoomColors`) — voir [Vue plateforme](./platform-campus-3d.md).

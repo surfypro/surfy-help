@@ -12,6 +12,19 @@ Most organizations’ day-to-day application remains at [https://app.surfy.pro](
 
 When a release goes to production, only **features** are moved to [What's New](./app.md); the **Fixed bugs** sections are **not** copied to production (they are for the test team during the alpha cycle). This page is then hidden by renaming it to `_app-alpha.md`.
 
+## October 22, 2026
+
+- Scenario → reference building sync
+  - New <LSV code="building:scenarioSync" /> view: from the **reference building**, pick a linked **scenario** to list **gaps** (creates, deletes, edits, different geometry) for spaces, desks, and objects.
+  - Then push scenario values to the reference **step by step**: for matching spaces, <P code="room:roomType" />, <P code="room:costCenter" />, then <P code="room:organization" />; for desks and objects, **position / rotation** first, then **properties** (e.g. type).
+  - Each step updates **all** matching items at once. Creates and deletes stay visible in the inventory; **space outlines** are listed but **not** applied in this version.
+
+- MapLibre 3D Map — Structure mode and Building mode
+  - On the <LIV code="building:3d-maplibre" /> view, start with building **volumes** (**Structure mode**), using the **name list** on the left.
+  - A click (or zoom on a building) enters **Building mode**: **read-only** 3D detail, with the **same floor controls** as the Pathfinding view (no route creation).
+  - Only one building at a time in Building mode; **zoom out** returns to Structure mode.
+  - Guide: [MapLibre 3D Map](/entities/user-guide/floor-plan/carte-3d-maplibre).
+
 ## October 5, 2026
 
 - Connectors mode (building Pathfinding)

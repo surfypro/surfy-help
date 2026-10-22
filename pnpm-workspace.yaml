@@ -1,15 +1,26 @@
 allowBuilds:
   core-js: true
+  pnpm: true
 overrides:
   brace-expansion@<1.1.21: ^1.1.21
   colord@<2.9.4: ^2.9.4
+  compression@<1.8.2: ^1.8.2
   dompurify@>=3.4.13 <=3.4.15: ^3.4.16
   fast-uri@>=3.0.0 <3.1.7: ^3.1.7
+  follow-redirects@>=1.16.0 <1.16.1: ^1.16.1
+  http-cache-semantics@<=4.2.0: ^4.2.1
   joi@>=16.0.0 <17.13.6: ^17.13.6
   js-yaml@>=4.0.0 <4.3.2: ^4.3.2
+  katex@>=0.11.0 <0.18.2: ^0.18.2
+  launch-editor@<=2.14.1: ^2.14.2
+  postcss-selector-parser@<7.1.6: ^7.1.6
+  proxy-addr@>=1.1.0 <2.0.8: ^2.0.8
   qs@>=2.2.5 <6.16.0: ^6.16.0
   serialize-javascript@>=5.0.0 <7.0.5: ^7.0.5
+  shell-quote@>=1.8.4 <1.11.0: ^1.11.0
+  source-map-js@>=1.0.0 <1.2.2: ^1.2.2
   svgo@>=3.0.0 <3.3.5: ^3.3.5
+  tinypool@<2.1.2: ^2.1.2
   uuid@<11.1.1: 11.1.1
 audit:
   ignore:
@@ -17,3 +28,6 @@ audit:
     # https://github.com/github/advisory-database/issues/9028
     - GHSA-w3rx-r6r6-pgpr
     - GHSA-5p2g-fcmc-qvqq
+    # braces 3.0.4 listed as patched but not published yet (latest is 3.0.3)
+    # https://github.com/advisories/GHSA-vfj7-8cjw-p6xm
+    - GHSA-vfj7-8cjw-p6xm

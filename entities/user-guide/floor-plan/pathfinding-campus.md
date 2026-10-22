@@ -42,9 +42,11 @@ Vous pouvez définir une couleur optionnelle sur les fiches <OT code="roomConnec
 ### Ce que ce n’est pas
 
 - **Pas** la navigation **campus** multi-bâtiments ni le trajet extérieur entre bâtiments.
+- **Pas** l’[exploration multi-bâtiments en lecture seule](/entities/user-guide/floor-plan/carte-3d-maplibre) sur la Carte 3D MapLibre (Mode structure / Mode bâtiment, sans itinéraire).
 - **Pas** l’[aperçu 3D d’un seul espace](/entities/user-guide/floor-plan/room-3d-preview) depuis le plan d’étage.
 - **Pas** un outil réservé au débogage technique : c’est une vue de **navigation** pour se repérer dans le bâtiment.
 
 ## Voir aussi
 
+- [Carte 3D MapLibre](/entities/user-guide/floor-plan/carte-3d-maplibre)
 - [Aperçu 3D d'un espace](/entities/user-guide/floor-plan/room-3d-preview)

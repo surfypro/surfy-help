@@ -43,6 +43,42 @@ const building = SurfySdk.mountBuilding3d({
 
 Vous pouvez appeler `setOptions` **avant** `onReady` : les valeurs sont conservées et appliquées au chargement de la scène.
 
+## Équivalent React (`ref` / props)
+
+Sur **Surfy React Web**, le même contrat s'applique via le handle du composant (pas besoin de Web Component) :
+
+| API JS / WC | React |
+|-------------|--------|
+| `layout.setOptions({ selectedFloorIds })` | `ref.current.setOptions({ selectedFloorIds })` |
+| `layout.fitToView()` | `ref.current.fitToView()` |
+| options au mount (`options?`) | prop `layout3dOptions` |
+
+```tsx
+import { useRef } from 'react';
+import {
+  SurfyBuildingLayout3dReact,
+  type SurfyBuildingLayout3dReactHandle,
+} from '@surfy/surfy-sdk/react';
+
+const ref = useRef<SurfyBuildingLayout3dReactHandle>(null);
+
+<SurfyBuildingLayout3dReact
+  ref={ref}
+  buildingId={buildingId}
+  tenant={tenant}
+  baseUrl={baseUrl}
+  getAccessToken={fetchToken}
+  layout3dOptions={{ showRoomLabels: false }}
+  fillParent
+/>
+
+// Plus tard, depuis un bouton hors composant :
+ref.current?.setOptions({ selectedFloorIds: [101, 102] });
+ref.current?.fitToView();
+```
+
+Voir [Surfy React Web — parité](./surfy-react-web.md#parité-avec-lapi-js--web-component).
+
 ## Type `SurfyLayout3dOptions`
 
 | Option | Type | Défaut | Description |
@@ -138,6 +174,8 @@ Utile après un changement de `selectedFloorIds`, de `floorSpace`, de navigation
 
 Les options internes du Work Canvas Surfy (filtres carte, calques d'analyse, sélecteur d'étages UI, etc.) ne sont **pas** configurables via le SDK. Seules les clés de `SurfyLayout3dOptions` sont le contrat public.
 
-Pour la **Vue plateforme / Vue campus**, le contrat public est React (props + hooks) — pas `setOptions` sur un élément WC. Voir [Vue plateforme / campus](./platform-campus-3d.md).
+Pour la **Vue plateforme**, le contrat public est React (props + hooks) — pas `setOptions` sur un élément WC. Le focus bâtiment / étage et le drill structure→Cuby passent par `useSetCurrentZoom` / clic structure ; les couleurs de **massing** suivent `Building.color` (pas `setRoomColors`). Voir [Vue plateforme](./platform-campus-3d.md).
 
-Voir [Éléments de layout — bâtiment 3D](./layout-elements.md#surfy-building-layout-3d) et [Taille et conteneur](./layout-and-sizing.md).
+Les layouts React building / floor 3D restent documentés ici pour la parité `ref.setOptions` (legacy déprécié) — préférer `mountBuilding3d` / WC pour de nouveaux embeds hors plateforme.
+
+Voir [Éléments de layout — bâtiment 3D](./layout-elements.md) et [Taille et conteneur](./layout-and-sizing.md).

@@ -10,7 +10,21 @@ Deux façons d'embarquer le **même** rendu (Shadow DOM) :
 1. **API JavaScript** — `SurfySdk.mountFloor2d` / `SurfySdk.mountBuilding3d` (recommandée hors React)
 2. **Web Component** — tags HTML + méthodes / événements DOM
 
-Pour une app React, préférez [Surfy React Web](./surfy-react-web.md).
+Pour une **carte multi-bâtiments** en React, utilisez [Vue plateforme](./platform-campus-3d.md) (`SurfyPlatformView3dReact`). Les layouts React floor / building / floor 3D sont **dépréciés** comme contrat public — pour un plan d'étage ou un bâtiment hors carte globale, préférez **`mount*` / Web Components** (cette page). Voir [Surfy React Web](./surfy-react-web.md).
+
+### Parité React (legacy) ↔ mount* / WC
+
+| Sémantique | API JS / WC (**recommandé** hors plateforme) | Surfy React Web (layouts floor/building = **dépréciés**) |
+|------------|-------------|-----------------|
+| Étage 2D | `mountFloor2d` / `<surfy-floor-layout-2d>` | `SurfyFloorLayout2dReact` |
+| Bâtiment 3D | `mountBuilding3d` / `<surfy-building-layout-3d>` | `SurfyBuildingLayout3dReact` |
+| Prêt / erreur | `onReady` / `onError` · `surfy:ready` / `surfy:error` | props `onReady` / `onError` |
+| Survol / sélection | `onRoomHover` / `onRoomSelected` · événements DOM | props `onRoomHover` / `onRoomSelected` |
+| Options 3D | `setOptions` / `fitToView` | `ref.setOptions` / `ref.fitToView` (+ prop `layout3dOptions`) |
+| Couleurs | `setRoomColors` / `clearRoomColors` / `updateRoom` | idem sur `ref` (+ prop `roomColors`) |
+| Offline | (même moteur si self-fetch) | prop `offlineEnabled` (**défaut `true`**) |
+
+**Vue plateforme** : React uniquement — [Vue plateforme](./platform-campus-3d.md) (pas de `mount*` / WC). Les tags / `mount*` floor & building restent le contrat public pour les embeds classiques.
 
 | Kind / tag | Rendu | Statut |
 |------------|-------|--------|

@@ -42,9 +42,11 @@ You can set an optional color on <OT code="roomConnectorType" /> and <OT code="s
 ### What this is not
 
 - **Not** multi-building **campus** navigation or outdoor travel between buildings.
+- **Not** [read-only multi-building exploration](/entities/user-guide/floor-plan/carte-3d-maplibre) on the MapLibre 3D Map (Structure / Building modes, no route).
 - **Not** the [3D preview of a single room](/entities/user-guide/floor-plan/room-3d-preview) from the floor plan.
 - **Not** a technical debug-only tool: it is a **navigation** view to find your way in the building.
 
 ## See also
 
+- [MapLibre 3D Map](/entities/user-guide/floor-plan/carte-3d-maplibre)
 - [3D room preview](/entities/user-guide/floor-plan/room-3d-preview)

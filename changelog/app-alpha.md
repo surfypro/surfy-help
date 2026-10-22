@@ -12,6 +12,19 @@ L’application utilisée au quotidien par la plupart des organisations reste su
 
 Lors d’une mise en production, seules les **nouveautés** sont reprises dans la page [Nouveautés](./app.md) ; les sections **Bugs résolus** ne sont **pas** reportées en production (elles servent à la vérification de l’équipe de test pendant le cycle alpha). Cette page est ensuite masquée en la renommant `_app-alpha.md`.
 
+## 22 Octobre 2026
+
+- Synchronisation scénario → bâtiment de référence
+  - Nouvelle vue <LSV code="building:scenarioSync" /> : depuis le **bâtiment de référence**, choisissez un **scénario** lié pour lister les **écarts** (créations, suppressions, modifications, géométrie différente) sur les espaces, postes et objets.
+  - Reportez ensuite les valeurs du scénario vers la référence **étape par étape** : pour les espaces correspondants, <P code="room:roomType" />, <P code="room:costCenter" /> puis <P code="room:organization" /> ; pour les postes et objets, d’abord la **position / orientation**, puis les **propriétés** (ex. type).
+  - Chaque étape s’applique à **tous** les éléments concernés d’un coup. Les créations et suppressions restent visibles dans l’inventaire ; la **forme des espaces** est listée mais **non** reportée dans cette version.
+
+- Carte 3D MapLibre — Mode structure et Mode bâtiment
+  - Sur la vue <LIV code="building:3d-maplibre" />, explorez d’abord les **volumes** des bâtiments (**Mode structure**), avec la **liste des noms** à gauche.
+  - Un clic (ou un zoom sur un bâtiment) passe en **Mode bâtiment** : détail 3D **lecture seule**, avec les **mêmes contrôles d’étage** que sur la vue Pathfinding (sans créer d’itinéraire).
+  - Un seul bâtiment à la fois en Mode bâtiment ; un **dézoom** suffit pour revenir au Mode structure.
+  - Guide : [Carte 3D MapLibre](/entities/user-guide/floor-plan/carte-3d-maplibre).
+
 ## 5 Octobre 2026
 
 - Mode connecteurs (Pathfinding bâtiment)
