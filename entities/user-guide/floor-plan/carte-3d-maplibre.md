@@ -26,12 +26,20 @@ En **Mode bâtiment**, le bâtiment focus s’affiche en **détail 3D** (même r
 - Un panneau latéral propose les **contrôles d’étage / d’affichage** de la même famille que le Pathfinding (étage courant, aperçu des autres étages, etc.).
 - **Pas** de choix d’origine / destination et **pas** d’édition d’itinéraire sur cette vue.
 
-Au **premier** focus d’un bâtiment, le détail peut prendre un instant à s’afficher ; ensuite, revenir sur ce bâtiment est immédiat.
+## Chargement du détail {#chargement-du-detail}
+
+Au **premier** passage en Mode bâtiment (clic ou zoom), le détail peut nécessiter un **chargement** :
+
+- Un **indicateur** apparaît sur le **pin / nom** du bâtiment ; un **détail des étapes** peut s’afficher dans l’indicateur global de chargement.
+- Tant que le chargement est en cours pour ce bâtiment, le pin **reste visible** (même si le zoom aurait sinon masqué les libellés).
+- En **s’approchant** d’un bâtiment, le chargement peut démarrer **avant** le clic — le passage en Mode bâtiment est alors plus rapide.
+- Une fois le **détail prêt**, un **rezoom** sur le même bâtiment est en général **immédiat**.
+- En cas d’échec : un message d’erreur s’affiche ; le pin peut garder un indicateur d’échec.
 
 ## Zoom : sortir et revenir
 
 - **Dézoom** suffisamment → retour au **Mode structure** (volumes).
-- **Rezoom** sur le même bâtiment → retour au **Mode bâtiment** (détail déjà chargé).
+- **Rezoom** sur le même bâtiment → retour au **Mode bâtiment** (détail déjà prêt).
 
 ## Ce que ce n’est pas
 

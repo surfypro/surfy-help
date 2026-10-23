@@ -12,6 +12,13 @@ Most organizations’ day-to-day application remains at [https://app.surfy.pro](
 
 When a release goes to production, only **features** are moved to [What's New](./app.md); the **Fixed bugs** sections are **not** copied to production (they are for the test team during the alpha cycle). This page is then hidden by renaming it to `_app-alpha.md`.
 
+## October 23, 2026
+
+- MapLibre 3D Map — detail loading feedback
+  - On the <LIV code="building:3d-maplibre" /> view, the first time you enter **Building mode**, a **loading indicator** appears on the building pin / name, with **step detail** in the global loading indicator while the detail is not ready yet.
+  - When you **approach** a building, detail preparation can start **before** you click, for a smoother transition.
+  - Guide: [MapLibre 3D Map](/entities/user-guide/floor-plan/carte-3d-maplibre#detail-loading).
+
 ## October 22, 2026
 
 - Scenario → reference building sync

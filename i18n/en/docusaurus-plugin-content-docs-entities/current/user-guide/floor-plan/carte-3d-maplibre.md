@@ -26,12 +26,20 @@ In **Building mode**, the focused building shows in **3D detail** (same renderin
 - A side panel offers the **same family of floor / display controls** as Pathfinding (current floor, other floors preview, etc.).
 - **No** origin / destination picker and **no** route editing on this view.
 
-The **first** time you focus a building, detail may take a moment to appear; returning to that building afterward is immediate.
+## Detail loading {#detail-loading}
+
+The **first** time you enter Building mode (click or zoom), the detail may need to **load**:
+
+- A **loading indicator** appears on the building **pin / name**; **step detail** may show in the global loading indicator.
+- While loading is in progress for that building, the pin **stays visible** (even if zoom would otherwise hide labels).
+- When you **approach** a building, loading can start **before** you click — entering Building mode is then faster.
+- Once the **detail is ready**, **zooming back in** on the same building is usually **immediate**.
+- On failure: an error message is shown; the pin may keep a failure indicator.
 
 ## Zoom: leave and return
 
 - **Zoom out** far enough → back to **Structure mode** (volumes).
-- **Zoom in** again on the same building → back to **Building mode** (detail already loaded).
+- **Zoom in** again on the same building → back to **Building mode** (detail already ready).
 
 ## What this is not
 

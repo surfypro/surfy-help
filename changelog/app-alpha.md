@@ -12,6 +12,13 @@ L’application utilisée au quotidien par la plupart des organisations reste su
 
 Lors d’une mise en production, seules les **nouveautés** sont reprises dans la page [Nouveautés](./app.md) ; les sections **Bugs résolus** ne sont **pas** reportées en production (elles servent à la vérification de l’équipe de test pendant le cycle alpha). Cette page est ensuite masquée en la renommant `_app-alpha.md`.
 
+## 23 Octobre 2026
+
+- Carte 3D MapLibre — feedback de chargement du détail
+  - Sur la vue <LIV code="building:3d-maplibre" />, le premier passage en **Mode bâtiment** affiche un **indicateur de chargement** sur le pin / nom du bâtiment, avec un **détail des étapes** dans le chargement global lorsque le détail n’est pas encore prêt.
+  - En **s’approchant** d’un bâtiment, le détail peut commencer à se préparer **avant** le clic, pour un passage plus fluide.
+  - Guide : [Carte 3D MapLibre](/entities/user-guide/floor-plan/carte-3d-maplibre#chargement-du-detail).
+
 ## 22 Octobre 2026
 
 - Synchronisation scénario → bâtiment de référence
