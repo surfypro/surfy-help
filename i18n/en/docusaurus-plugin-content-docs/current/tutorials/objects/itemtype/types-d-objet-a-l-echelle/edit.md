@@ -74,6 +74,25 @@ You can directly access the information or shape of an object type if it is pres
 Modifying the shape of an object type can modify its position on plans, calculated from the central point (barycenter) of the object type shape
 :::
 
+### Create Visual Edges on the Object Type Shape
+
+<Youtube code="OyXt9Oi_zM0"/>
+
+From a simple object type shape, you can add linear "Visual Edges" to complete the initial shape and get an improved visualization of the object type.
+To do this, from the object type shape,
+-   click on "Visual Edges" then on the "Add a visual edge" icon
+-   click on or around the shape to place the first vertex of the edge, then the second
+
+The edge is then shown in green; its vertices can be moved more precisely if needed.
+
+Clicking outside the edge validates it, and it turns purple.
+
+Clicking the edge selects it in green, and lets you move its vertices, or delete the edge by clicking the trash icon above the shape.
+
+For example, you can illustrate a "half-height" cabinet type with a "Y".
+
+Edges can be drawn without contact with the initial shape, allowing an advanced illustration of the object type: for example the letter "A".
+Edges also let you create, for example, the swinging doors of a cabinet, without affecting its 3D representation, which is based only on the object type shape.
 
 ## Change Object Type of Already Created Objects
 

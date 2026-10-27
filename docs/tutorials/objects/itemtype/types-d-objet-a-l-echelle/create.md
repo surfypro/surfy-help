@@ -72,3 +72,23 @@ Pour créer une forme aux dimensions exactes, après avoir cliqué le premier po
 -	une fois votre forme validée, vous pouvez cliquer en dehors de la forme puis quitter la page, votre forme est sauvegardée.
 
 Chaque objet créé à partir du type d'objet aura la forme, la couleur et les caractéristiques du type d'objet créé.
+
+### Créer des arêtes visuelles sur la forme du type d'objet
+
+<Youtube code="j1D_LUV47Eo"/>
+
+A partir d’une forme simple d’un type d’objet, on peut ajouter des « Arêtes visuelles » linéaires permettant de compléter la forme initiale afin d’obtenir une visualisation améliorée du type d’objet.
+Pour cela, depuis la forme du type d’objet, 
+-   cliquer sur « Arêtes visuelles » puis sur l’icône « Ajouter une arête visuelle »
+-   cliquer sur ou autour de la forme pour déposer le premier sommet de l’arête, puis le deuxième
+
+L’arête est alors matérialisée en vert, ses sommets peuvent être déplacés plus précisément si nécessaire.
+
+Cliquer en dehors de l’arête permet de valider l’arête, qui passe en violet.
+
+Cliquer sur l’arête la sélectionne en vert, et permet de déplacer ses sommets, ou de supprimer l’arête en cliquant sur la corbeille au-dessus de la forme.
+
+On peut par exemple illustrer un type d’armoire "mi-hauteur" donc avec un "Y".
+
+Les arêtes peuvent être dessinées sans contact avec la forme initiale, permettant une illustration avancée du type d’objet : Par exemple la lettre « A ».
+Les arêtes permettent également de créer par exemple les portes battantes d'une armoire, sans influer sur sa représentation en 3D qui est basée sur la forme du type d’objet uniquement.

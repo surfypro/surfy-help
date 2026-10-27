@@ -74,3 +74,23 @@ To create a shape with exact dimensions, after clicking the first point, enter t
 -	once your shape is validated, you can click outside the shape then leave the page, your shape is saved.
 
 Each object created from the object type will have the shape, color and characteristics of the created object type.
+
+### Create Visual Edges on the Object Type Shape
+
+<Youtube code="OyXt9Oi_zM0"/>
+
+From a simple object type shape, you can add linear "Visual Edges" to complete the initial shape and get an improved visualization of the object type.
+To do this, from the object type shape,
+-   click on "Visual Edges" then on the "Add a visual edge" icon
+-   click on or around the shape to place the first vertex of the edge, then the second
+
+The edge is then shown in green; its vertices can be moved more precisely if needed.
+
+Clicking outside the edge validates it, and it turns purple.
+
+Clicking the edge selects it in green, and lets you move its vertices, or delete the edge by clicking the trash icon above the shape.
+
+For example, you can illustrate a "half-height" cabinet type with a "Y".
+
+Edges can be drawn without contact with the initial shape, allowing an advanced illustration of the object type: for example the letter "A".
+Edges also let you create, for example, the swinging doors of a cabinet, without affecting its 3D representation, which is based only on the object type shape.
