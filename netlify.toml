@@ -1,7 +1,11 @@
+# Netlify's build image still activates pnpm via Corepack 0.34, which looks for
+# bin/pnpm.cjs. pnpm 12 only ships bin/pnpm.mjs, so Corepack fails before install.
+# Point `base` at a folder without package manifests so Netlify skips that step;
+# the build command installs pnpm with npm, then runs the real install + build.
 [build]
-  command = "pnpm build"
-  publish = "build"
+  base = "netlify-base"
+  command = "cd .. && npm install -g pnpm@12.15.0 && pnpm install --frozen-lockfile && pnpm build"
+  publish = "../build"
 
 [build.environment]
   NODE_VERSION = "22"
-  PNPM_VERSION = "12.15.0"
