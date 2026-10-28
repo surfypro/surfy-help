@@ -12,7 +12,9 @@ Import : **`@surfy/surfy-sdk/react`**.
 > Spec eng (anglais) : `docs/surfy-sdk/platform-campus-view-3d.md` dans le monorepo Surfy.
 
 :::warning Contrat public React = plateforme only
-`SurfyCampusView3dReact`, `SurfyBuildingLayout3dReact` et `SurfyFloorLayout3dReact` sont **dépréciés** comme surface publique pour les intégrateurs. Préférez la plateforme ; pour un plan d'étage / bâtiment hors carte globale, utilisez l'**API JS** / **Web Component** (`mount*` / tags) — [Éléments de layout](./layout-elements.md). Détail : [Surfy React Web](./surfy-react-web.md).
+**Entry unique :** `SurfyPlatformView3dReact` (**Vue plateforme**).  
+`SurfyStructureCubyView3dReact` est **retiré** du contrat public (ne plus importer).  
+`SurfyCampusView3dReact`, `SurfyBuildingLayout3dReact` et `SurfyFloorLayout3dReact` restent **dépréciés**. Préférez la plateforme ; pour un plan d'étage / bâtiment hors carte globale, utilisez l'**API JS** / **Web Component** (`mount*` / tags) — [Éléments de layout](./layout-elements.md). Détail : [Surfy React Web](./surfy-react-web.md).
 :::
 
 ## Composant recommandé
@@ -65,11 +67,11 @@ Un **clic sur une structure** (ou un focus hôte équivalent) :
 
 Ce contrat couvre le **rendu** Cuby (look pathfinding). Il **n'inclut pas** le calcul d'itinéraire A→B / wayfinding.
 
-Le produit Surfy `building/3d-maplibre` conserve le même geste de drill in-map (hors périmètre changelog métier).
+Le produit Surfy `building/3d-maplibre` utilise la **même entry** `SurfyPlatformView3dReact` (même geste de drill in-map ; hors périmètre changelog métier).
 
-## Pilotage du contexte (focus hôte)
+## Pilotage contexte SDK (chrome hôte)
 
-Pilotez bâtiment / étage / sélection **depuis votre chrome**, hors du composant Surfy :
+Pilotez bâtiment / étage / sélection / position **depuis votre chrome**, hors du composant Surfy. Les drawers / listes / boutons (bâtiments, étages, inject geo) de la démo ou de votre app sont du **chrome hôte** — **pas** des drawers métier packagés dans le composant SDK.
 
 | API | Rôle |
 |-----|------|
@@ -125,9 +127,9 @@ Après un **premier fetch réussi**, le cache local Surfy conserve le **nécessa
 
 Layouts étage / bâtiment via API JS / WC : [Éléments de layout](./layout-elements.md). Offline layout React (legacy) : [Surfy React Web — Offline layout](./surfy-react-web.md#offline-layout-étage--bâtiment).
 
-## Altitude étage 0 & Position par altitude
+## Position par altitude (`usePositionFromGeo`)
 
-Le calibrage du bâtiment peut porter l’**Altitude étage 0**. L’intégrateur injecte `{ lat, lng, altitude }` (mètres AMSL) :
+L’intégrateur **injecte** une position `{ lat, lng, altitude }` (mètres AMSL) via **`usePositionFromGeo` uniquement**. Cette tranche **n’expose pas** d’API d’édition du calibrage (Altitude étage 0 / hauteurs d’étage) — le bâtiment doit déjà porter une altitude étage 0 calibrée côté données Surfy.
 
 ```tsx
 function LocateButton() {
@@ -152,13 +154,18 @@ Sans altitude étage 0 calibrée : erreur `SdkAltitudeFloor0LockedError` (`ALTIT
 ## Hors périmètre
 
 - Navigation guidée / **itinéraires A→B** (wayfinding)
+- Édition calibration Altitude étage 0 / hauteurs via le SDK
+- Drawers / listes métier **embarqués** dans le bundle SDK (chrome = hôte)
 - Personnes sur la carte
 - React Native / Google Maps
 - Web Component ou `SurfySdk.mount*` pour la plateforme
-- Nouveaux embeds React campus / building / floor 3D comme contrat public
+- `SurfyStructureCubyView3dReact` (retiré) et nouveaux embeds React campus / building / floor 3D comme contrat public
 
 Pour l'étage 2D / bâtiment 3D hors carte globale : [Éléments de layout](./layout-elements.md) (API JS / WC). Options Cuby layout building : [Options 3D](./options-3d.md).
 
-### Legacy (déprécié)
+### Legacy
 
-`SurfyCampusView3dReact` reste exporté à court terme avec marqueur `@deprecated` — ne plus l'utiliser pour de nouveaux embeds. Préférez `SurfyPlatformView3dReact` (+ focus `enterBuilding` si vous devez cadrer un campus / bâtiment).
+| Export | Statut |
+|--------|--------|
+| `SurfyStructureCubyView3dReact` | **Retiré** du contrat public — utiliser `SurfyPlatformView3dReact` |
+| `SurfyCampusView3dReact` | Exporté à court terme (`@deprecated`) — ne plus utiliser pour de nouveaux embeds |

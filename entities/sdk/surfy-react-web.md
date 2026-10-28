@@ -13,22 +13,23 @@ Pour une **carte multi-bâtiments**, utilisez **uniquement** :
 
 | Export | Rôle |
 |--------|------|
-| **`SurfyPlatformView3dReact`** | Vue plateforme MapLibre + structures + drill Cuby in-map — [guide](./platform-campus-3d.md) |
+| **`SurfyPlatformView3dReact`** | **Seule** entry Vue plateforme MapLibre + structures + drill Cuby in-map — [guide](./platform-campus-3d.md) |
 | `SurfySdkReactProvider` | Provider d'instance (store isolé pour multi-embeds) |
-| Hooks plateforme | `useBuildings`, `useSetCurrentZoom`, `usePositionFromGeo`, … — [pilotage contexte](./platform-campus-3d.md#pilotage-du-contexte-focus-hôte) |
+| Hooks plateforme | `useBuildings`, `useSetCurrentZoom`, `usePositionFromGeo`, … — [Pilotage contexte SDK](./platform-campus-3d.md#pilotage-contexte-sdk-chrome-hôte) |
 
-Clic structure → hydrate Cuby **style pathfinding** (éclaté, RDC) **dans la même carte** ; couleurs de structure = `Building.color` (SSOT). Pas d'itinéraire A→B dans ce contrat.
+Clic structure → hydrate Cuby **style pathfinding** (éclaté, RDC) **dans la même carte** ; couleurs de structure = `Building.color` (SSOT). Pas d'itinéraire A→B dans ce contrat. Contrôles (listes bâtiments / étages / inject geo) = **chrome hôte** via hooks — pas de drawers packagés dans le composant SDK.
 
-### Déprécié (ne plus recommander)
+### Retiré / déprécié (ne plus recommander)
 
 | Export | Remplacement |
 |--------|--------------|
+| `SurfyStructureCubyView3dReact` | **Retiré** — `SurfyPlatformView3dReact` |
 | `SurfyCampusView3dReact` | `SurfyPlatformView3dReact` (+ focus hôte) |
 | `SurfyBuildingLayout3dReact` | Plateforme pour la carte globale ; sinon **API JS / WC** `mountBuilding3d` / `<surfy-building-layout-3d>` |
 | `SurfyFloorLayout3dReact` | **API JS / WC** (étage 2D : `mountFloor2d` / `<surfy-floor-layout-2d>`) |
 | `SurfyFloorLayout2dReact` | Préférer `mountFloor2d` / WC pour les nouveaux embeds hors plateforme |
 
-Les exports restent disponibles à court terme (`@deprecated` dans les types) pour migration — **ne pas** les présenter comme contrat public.
+`SurfyStructureCubyView3dReact` n'est plus exporté. Les autres restent disponibles à court terme (`@deprecated`) pour migration — **ne pas** les présenter comme contrat public.
 
 Pour HTML / Vue / non-React (étage / bâtiment) : [Éléments de layout](./layout-elements.md) — **conservés**.
 
@@ -50,55 +51,50 @@ Quand vous utilisez encore un layout React floor/building (legacy), la sémantiq
 
 Les contrôles vivent **dans votre UI**, hors du composant Surfy.
 
-### Contrôles hors composant (bâtiment 3D — legacy)
+### Contrôles hors composant (plateforme — recommandé)
 
 ```tsx
-import { useRef } from 'react';
 import {
-  SurfyBuildingLayout3dReact,
-  type SurfyBuildingLayout3dReactHandle,
+  SurfyPlatformView3dReact,
+  useSetCurrentZoom,
+  usePositionFromGeo,
 } from '@surfy/surfy-sdk/react';
 
-export function BuildingWithHostChrome({ buildingId }: { buildingId: number }) {
-  const layoutRef = useRef<SurfyBuildingLayout3dReactHandle>(null);
+function HostChrome() {
+  const setZoom = useSetCurrentZoom();
+  const positionFromGeo = usePositionFromGeo();
+  return (
+    <>
+      <button type="button" onClick={() => setZoom({ type: 'enterBuilding', buildingId: 101 })}>
+        Focus bâtiment
+      </button>
+      <button
+        type="button"
+        onClick={() => positionFromGeo({ lat: 48.86, lng: 2.35, altitude: 42.5 })}
+      >
+        Position par altitude
+      </button>
+    </>
+  );
+}
 
+export function PlatformWithHostChrome() {
   return (
     <div style={{ height: '70vh' }}>
-      <button
-        type="button"
-        onClick={() =>
-          layoutRef.current?.setOptions({ selectedFloorIds: [101, 102] })
-        }
-      >
-        Étages 101–102
-      </button>
-      <button
-        type="button"
-        onClick={() => {
-          layoutRef.current?.setRoomColors({ 577183: '#2196F3' });
-          layoutRef.current?.fitToView();
-        }}
-      >
-        Colorier + cadrer
-      </button>
-      <SurfyBuildingLayout3dReact
-        ref={layoutRef}
-        buildingId={buildingId}
+      <SurfyPlatformView3dReact
         tenant={tenant}
         baseUrl={baseUrl}
         getAccessToken={fetchToken}
-        fillParent
-        onReady={() => console.log('ready')}
-        onRoomHover={(d) => console.log('hover', d)}
-        onRoomSelected={(d) => console.log('selected', d)}
-        onError={(err) => console.error(err)}
-      />
+        style={{ width: '100%', height: '100%' }}
+      >
+        <HostChrome />
+      </SurfyPlatformView3dReact>
     </div>
   );
 }
 ```
 
-Préférez désormais la [Vue plateforme](./platform-campus-3d.md) pour explorer un bâtiment depuis la carte globale. Détail `setOptions` : [Options 3D](./options-3d.md). Couleurs d'espaces : [Couleurs des espaces](./room-colors.md).
+Voir [Pilotage contexte SDK](./platform-campus-3d.md#pilotage-contexte-sdk-chrome-hôte). Détail `setOptions` (layout building legacy) : [Options 3D](./options-3d.md). Couleurs d'espaces : [Couleurs des espaces](./room-colors.md).
 
 ## Offline layout (étage / bâtiment)
 

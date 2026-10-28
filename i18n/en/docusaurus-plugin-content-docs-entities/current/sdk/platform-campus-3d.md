@@ -12,7 +12,9 @@ Import: **`@surfy/surfy-sdk/react`**.
 > Eng spec (English): `docs/surfy-sdk/platform-campus-view-3d.md` in the Surfy monorepo.
 
 :::warning Public React contract = platform only
-`SurfyCampusView3dReact`, `SurfyBuildingLayout3dReact`, and `SurfyFloorLayout3dReact` are **deprecated** as public integrator surfaces. Prefer the platform view; for a floor / building plan outside the global map, use the **JS API** / **Web Component** (`mount*` / tags) — [Layout elements](./layout-elements.md). Details: [Surfy React Web](./surfy-react-web.md).
+**Sole entry:** `SurfyPlatformView3dReact` (**Platform view**).  
+`SurfyStructureCubyView3dReact` is **removed** from the public contract (do not import).  
+`SurfyCampusView3dReact`, `SurfyBuildingLayout3dReact`, and `SurfyFloorLayout3dReact` remain **deprecated**. Prefer the platform view; for a floor / building plan outside the global map, use the **JS API** / **Web Component** (`mount*` / tags) — [Layout elements](./layout-elements.md). Details: [Surfy React Web](./surfy-react-web.md).
 :::
 
 ## Recommended component
@@ -65,11 +67,11 @@ A **click on a structure** (or equivalent host focus):
 
 This contract covers Cuby **rendering** (pathfinding look). It does **not** include A→B route / wayfinding computation.
 
-The Surfy product `building/3d-maplibre` keeps the same in-map drill geste (outside métier changelog scope).
+The Surfy product `building/3d-maplibre` uses the **same entry** `SurfyPlatformView3dReact` (same in-map drill geste; outside métier changelog scope).
 
-## Host context control (focus)
+## Context control SDK (host chrome)
 
-Drive building / floor / selection from **your chrome**, outside the Surfy component:
+Drive building / floor / selection / position from **your chrome**, outside the Surfy component. Demo or host drawers / lists / buttons (buildings, floors, inject geo) are **host chrome** — **not** métier drawers packaged inside the SDK component.
 
 | API | Role |
 |-----|------|
@@ -125,9 +127,9 @@ After a **first successful fetch**, the Surfy local cache keeps the **all-in** p
 
 Floor / building layouts via JS API / WC: [Layout elements](./layout-elements.md). React layout offline (legacy): [Surfy React Web — Offline layout](./surfy-react-web.md#offline-layout-floor--building).
 
-## Altitude floor 0 & Position by altitude
+## Position by altitude (`usePositionFromGeo`)
 
-Building calibration may carry **Altitude floor 0**. The integrator injects `{ lat, lng, altitude }` (metres AMSL):
+The integrator **injects** a position `{ lat, lng, altitude }` (metres AMSL) via **`usePositionFromGeo` only**. This tranche does **not** expose an API to edit calibration (Altitude floor 0 / floor heights) — the building must already carry a calibrated altitude floor 0 in Surfy data.
 
 ```tsx
 function LocateButton() {
@@ -152,13 +154,18 @@ Without calibrated altitude floor 0: error `SdkAltitudeFloor0LockedError` (`ALTI
 ## Out of scope
 
 - Guided navigation / **A→B routes** (wayfinding)
+- Editing Altitude floor 0 / floor-height calibration via the SDK
+- Métier drawers / lists **packaged** in the SDK bundle (chrome = host)
 - People on the map
 - React Native / Google Maps
 - Web Component or `SurfySdk.mount*` for the platform
-- New campus / building / floor 3D React embeds as a public contract
+- `SurfyStructureCubyView3dReact` (removed) and new campus / building / floor 3D React embeds as a public contract
 
 For classic 2D floor / 3D building outside the global map: [Layout elements](./layout-elements.md) (JS API / WC). Cuby building layout options: [3D options](./options-3d.md).
 
-### Legacy (deprecated)
+### Legacy
 
-`SurfyCampusView3dReact` remains exported short-term with an `@deprecated` marker — do not use it for new embeds. Prefer `SurfyPlatformView3dReact` (plus `enterBuilding` focus when you need to frame a campus / building).
+| Export | Status |
+|--------|--------|
+| `SurfyStructureCubyView3dReact` | **Removed** from the public contract — use `SurfyPlatformView3dReact` |
+| `SurfyCampusView3dReact` | Exported short-term (`@deprecated`) — do not use for new embeds |

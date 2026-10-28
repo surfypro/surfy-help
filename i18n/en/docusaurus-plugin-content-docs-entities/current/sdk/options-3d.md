@@ -174,7 +174,7 @@ Useful after changing `selectedFloorIds`, `floorSpace`, navigation (`zoomMode`),
 
 Internal Surfy Work Canvas options (map filters, analysis layers, UI floor picker, etc.) are **not** configurable via the SDK. Only `SurfyLayout3dOptions` keys are the public contract.
 
-For the **Platform view**, the public contract is React (props + hooks) — not `setOptions` on a WC element. Building / floor focus and structure→Cuby drill go through `useSetCurrentZoom` / structure click; **massing** colors follow `Building.color` (not `setRoomColors`). See [Platform view](./platform-campus-3d.md).
+For the **Platform view**, the public contract is React (props + hooks) — not `setOptions` on a WC element. Building / floor focus and structure→Cuby drill go through `useSetCurrentZoom` / structure click; **Position by altitude** via `usePositionFromGeo`; **massing** colors follow `Building.color` (not `setRoomColors`). Control chrome = **host** — see [Context control SDK](./platform-campus-3d.md#context-control-sdk-host-chrome).
 
 React building / floor 3D layouts remain documented here for `ref.setOptions` parity (deprecated legacy) — prefer `mountBuilding3d` / WC for new embeds outside the platform.
 

@@ -7,13 +7,13 @@ sidebar_label: "React integration"
 
 | Need | Path |
 |------|------|
-| React app, **multi-building map** | **[Platform view](./platform-campus-3d.md)** — `SurfyPlatformView3dReact` (**sole** recommended public React surface); structure→Cuby in-map drill; context control + offline |
-| React app, composition / hooks around the platform | **[Surfy React Web](./surfy-react-web.md)** (`@surfy/surfy-sdk/react`) — Provider + hooks; campus/building/floor React layouts = **deprecated** |
+| React app, **multi-building map** | **[Platform view](./platform-campus-3d.md)** — `SurfyPlatformView3dReact` (**sole** public React entry); structure→Cuby in-map drill; **Context control SDK** (host chrome + hooks) + offline — **not** StructureCuby |
+| React app, composition / hooks around the platform | **[Surfy React Web](./surfy-react-web.md)** (`@surfy/surfy-sdk/react`) — Provider + hooks (`useSetCurrentZoom`, `usePositionFromGeo`); StructureCuby **removed**; campus/building/floor React layouts = **deprecated** |
 | Offline after first fetch (platform / layout) | `offlineEnabled` prop (**default `true`**, SWR) — [platform](./platform-campus-3d.md#offline-platform) · [layout](./surfy-react-web.md#offline-layout-floor--building) |
 | React app, floor / building plan **outside** the global map | `SurfySdk.mountFloor2d` / `mountBuilding3d` in a `useEffect` — [Layout elements](./layout-elements.md) |
 | HTML / Vue / non-React | [Web Component or mount*](./layout-elements.md) (floor / building; no platform WC) |
 
-Integrate via **platform React** first when you need a global view. Do not present campus / building React as the primary entry.
+Integrate via **platform React** first when you need a global view. Lists / drawers live in **your** UI (host chrome). Do not present StructureCuby / campus / building React as the entry.
 
 ## Mount from React (JS API)
 
@@ -88,4 +88,4 @@ export default defineConfig({
 
 ## Tests
 
-**surfy-sdk-demos** (**platform** route: structure click → Cuby PF-style) and related E2E validate load and no runtime errors. Reuse those patterns in CI.
+**surfy-sdk-demos** (`platform-3d` route: structure click → Cuby PF-style; sidebar = host chrome) and related E2E validate load and no runtime errors. Reuse those patterns in CI.

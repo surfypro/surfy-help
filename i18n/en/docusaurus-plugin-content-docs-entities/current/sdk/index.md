@@ -10,12 +10,13 @@ The **Surfy SDK** (`@surfy/surfy-sdk`) lets you embed a **2D floor plan**, a **3
 
 ### Integrator highlights (WI-429)
 
-- **Platform React only** — `SurfyPlatformView3dReact` = **sole** recommended public React surface for the global map; campus / building / floor 3D React **deprecated** — [Platform view](./platform-campus-3d.md) · [Surfy React Web](./surfy-react-web.md)
+- **Sole Platform entry** — `SurfyPlatformView3dReact` = **only** public React entry for the global map; `SurfyStructureCubyView3dReact` **removed**; campus / building / floor 3D React **deprecated** — [Platform view](./platform-campus-3d.md) · [Surfy React Web](./surfy-react-web.md)
+- **Context control SDK** — drawers / lists = **host chrome** via `useSetCurrentZoom` / `usePositionFromGeo` (no drawers packaged in the SDK) — [context control](./platform-campus-3d.md#context-control-sdk-host-chrome)
+- **Position by altitude** — `usePositionFromGeo` **only** (no calibration editing) — [altitude](./platform-campus-3d.md#position-by-altitude-usepositionfromgeo)
 - **Structure → Cuby drill** — structure click → Cuby pathfinding-style look (exploded, ground floor) **in the same map**; **no** A→B routing — [drill](./platform-campus-3d.md#structure-click--cuby-pathfinding-look-same-map)
 - **Structure colors** — massing aligned on `Building.color` (same SSOT as product building pathfinding)
 - **React parity** (legacy layouts) — props / events / handle aligned with the JS / WC API — [Surfy React Web](./surfy-react-web.md)
 - **Offline layout SDK** — `offlineEnabled` **default `true`**, SWR — [Offline layout](./surfy-react-web.md#offline-layout-floor--building) · [platform](./platform-campus-3d.md#offline-platform)
-- **Context control SDK** — building / floor focus via `useSetCurrentZoom` / callbacks — [context control](./platform-campus-3d.md#host-context-control-focus)
 - **MapLibre** — tiles / style = **browser cache only** (no dedicated Surfy tile cache)
 
 ## Layout surfaces (+ platform + data API)
@@ -50,7 +51,8 @@ const layout = SurfySdk.mountFloor2d({
 | `SurfySdk.mountFloor2d` / `mountBuilding3d` | Available — JS API recommended outside React |
 | Web Components (`surfy-floor-layout-2d`, `surfy-building-layout-3d`) | Available — same engine as `mount*` |
 | Surfy React Web (`@surfy/surfy-sdk/react`) | Available — **platform** recommended; campus/building/floor3d React **deprecated** |
-| **Platform view** (`SurfyPlatformView3dReact`) | Available — MapLibre + Cuby; structure→Cuby in-map drill; React Web only |
+| **Platform view** (`SurfyPlatformView3dReact`) | Available — **sole entry** MapLibre + Cuby; structure→Cuby in-map drill; React Web only |
+| `SurfyStructureCubyView3dReact` | **Removed** from the public contract — use the platform |
 | `SurfyCampusView3dReact` / React building & floor 3D layouts | **Deprecated** — do not use for new embeds |
 | `SurfyClient` (`@surfy/surfy-sdk/client`) | Available — QueryNode / entities |
 | `setRoomColors` / `clearRoomColors` | Available (2D + building 3D) |
@@ -93,7 +95,7 @@ sequenceDiagram
 | [Authentication](./authentication.md) | Machine JWT, backend proxy |
 | [Layout elements](./layout-elements.md) | JS `mount*` API + Web Components |
 | [Surfy React Web](./surfy-react-web.md) | Public React surface = **platform**; legacy layouts, offline |
-| [Platform view](./platform-campus-3d.md) | Multi-building map, **Cuby drill**, `Building.color`, context control, offline |
+| [Platform view](./platform-campus-3d.md) | Sole entry, **Cuby drill**, host chrome / Context control SDK, `usePositionFromGeo`, offline |
 | [Client data API](./client-data-api.md) | `SurfyClient` / QueryNode |
 | [Theme (MUI)](./theme.md) | `setTheme` |
 | [3D options](./options-3d.md) | `setOptions`, `fitToView` |
@@ -105,4 +107,4 @@ sequenceDiagram
 
 ## Reference demo
 
-The **surfy-sdk-demos** repo (`apps/react-web`) illustrates the surfaces and demo routes. For the global map, prefer the **platform** demo (structure click → Cuby PF-style in-map) — not campus/building React as the recommended surface. That repo’s E2E tests are part of the V1 delivery bar.
+The **surfy-sdk-demos** repo (`apps/react-web`) illustrates the surfaces and demo routes. For the global map, prefer the **platform** demo (`platform-3d`): structure click → Cuby PF-style in-map; sidebar = **host chrome** (`useSetCurrentZoom` / `usePositionFromGeo`) — not StructureCuby nor drawers packaged in the SDK. That repo’s E2E tests are part of the V1 delivery bar.

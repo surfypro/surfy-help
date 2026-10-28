@@ -174,7 +174,7 @@ Utile après un changement de `selectedFloorIds`, de `floorSpace`, de navigation
 
 Les options internes du Work Canvas Surfy (filtres carte, calques d'analyse, sélecteur d'étages UI, etc.) ne sont **pas** configurables via le SDK. Seules les clés de `SurfyLayout3dOptions` sont le contrat public.
 
-Pour la **Vue plateforme**, le contrat public est React (props + hooks) — pas `setOptions` sur un élément WC. Le focus bâtiment / étage et le drill structure→Cuby passent par `useSetCurrentZoom` / clic structure ; les couleurs de **massing** suivent `Building.color` (pas `setRoomColors`). Voir [Vue plateforme](./platform-campus-3d.md).
+Pour la **Vue plateforme**, le contrat public est React (props + hooks) — pas `setOptions` sur un élément WC. Le focus bâtiment / étage et le drill structure→Cuby passent par `useSetCurrentZoom` / clic structure ; la **Position par altitude** via `usePositionFromGeo` ; les couleurs de **massing** suivent `Building.color` (pas `setRoomColors`). Chrome de contrôle = **hôte** — voir [Pilotage contexte SDK](./platform-campus-3d.md#pilotage-contexte-sdk-chrome-hôte).
 
 Les layouts React building / floor 3D restent documentés ici pour la parité `ref.setOptions` (legacy déprécié) — préférer `mountBuilding3d` / WC pour de nouveaux embeds hors plateforme.
 
