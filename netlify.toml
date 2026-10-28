@@ -4,7 +4,7 @@
 # the build command installs pnpm with npm, then runs the real install + build.
 [build]
   base = "netlify-base"
-  command = "cd .. && npm install -g pnpm@12.15.0 && pnpm install --frozen-lockfile && pnpm build"
+  command = "cd .. && npm install -g pnpm@12.15.0 --force && pnpm install --frozen-lockfile && pnpm build"
   publish = "../build"
 
 [build.environment]
