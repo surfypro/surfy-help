@@ -29,6 +29,13 @@ Utile pour différencier le calque parmis d'autres
 
 ## Propriétés de base {#properties-base}
     
+### Commentaire {#comment}
+
+Une information complémentaire affichée aux personnes qui réservent un poste dans cette dimension
+
+*Nom technique:* ```comment```
+<PH code="dimension:comment"/>
+
 ### Couleur {#color}
 
 La couleur de calque d'analyse permet de différencier les espaces sur le plan

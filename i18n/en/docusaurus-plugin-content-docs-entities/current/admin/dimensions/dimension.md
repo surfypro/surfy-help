@@ -43,6 +43,13 @@ The analysis layer color allows differentiating spaces on the plan
 *Technical name:* ```color```
 <PH code="dimension:color"/>
 
+### Comment {#comment}
+
+Additional information is displayed to people who reserve a position in this dimension.
+
+*Technical name:* ```comment```
+<PH code="dimension:comment"/>
+
 ### Crowding Rate for Booking {#crowded-for-booking-rate}
 
 The crowding rate for booking allows defining the occupancy percentage beyond which a space is considered crowded for bookings

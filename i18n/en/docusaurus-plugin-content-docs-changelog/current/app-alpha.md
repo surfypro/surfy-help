@@ -12,6 +12,50 @@ Most organizations’ day-to-day application remains at [https://app.surfy.pro](
 
 When a release goes to production, only **features** are moved to [What's New](./app.md); the **Fixed bugs** sections are **not** copied to production (they are for the test team during the alpha cycle). This page is then hidden by renaming it to `_app-alpha.md`.
 
+## November 2, 2026
+
+- Dimension comment — booking note
+  - On a <OT code="dimension" />, <P code="dimension:comment" /> shows an **informational note** under the desk booking button (My planning, booking for someone else, guest planning).
+  - Clearing the comment removes the note.
+  - Guide: [Dimension comment — booking note](/entities/user-guide/booking-system/dimension-comment-booking-note).
+
+## October 30, 2026 - v3.5.67
+
+
+- Scenario → reference building sync
+  - New <LSV code="building:scenarioSync" /> view: from the **reference building**, pick a linked **scenario** to list **gaps** (creates, deletes, edits, different geometry) for spaces, desks, and objects.
+  - Then push scenario values to the reference **step by step**: for matching spaces, <P code="room:roomType" />, <P code="room:costCenter" />, then <P code="room:organization" />; for desks and objects, **position / rotation** first, then **properties** (e.g. type).
+  - Each step updates **all** matching items at once. Creates and deletes stay visible in the inventory; **space outlines** are listed but **not** applied in this version.
+
+- Typology group help (map filter)
+  - On the map filter **Typology groups**, the help (`?`) for a group shows a **table** (typology, area m², share %, desks) and a **pie chart** of area breakdown for the current perimeter (building or floor).
+
+- Floor plan view **Typology groups**
+  - New floor-plan display mode to view spaces by their **typology group**.
+
+- Data quality
+  - New view <LIV code="room:dq-room-floor-points-consistency" />: spaces whose floor does not match that of their points, with an action to reassign the points’ floor.
+  - New view <LIV code="itemType:dq-item-type-point-tenant-consistency" />: object types referenced by inconsistent equipment points, with an action to remove unused points.
+
+- Building reports
+  - New **Exceptional objects** report: object types with **1 to 4** occurrences on the selected buildings, with locations and the type photo.
+  - The **inventory** report now includes space **display names**.
+
+- Property selector
+  - When choosing table columns, you can **filter properties by name**.
+
+- Pathfinding — Edit mode and focus
+  - On the <LSV code="building:building-pathfinding" /> view, turn on **Edit mode** to attach a **space connector** by clicking a space (dedicated drawer). The connector is no longer edited from the 2D floor-plan space card.
+  - In current-floor mode (with Edit mode off), clicking a space **centers the view** on that space.
+  - Guide: [Pathfinding — navigating inside a building](/entities/user-guide/floor-plan/pathfinding-campus#edit-mode).
+
+### Fixed bugs (alpha QA verification)
+
+These items are listed for the test team on [app-alpha.surfy.pro](https://app-alpha.surfy.pro).
+They are **not** copied to the production changelog (`app.md`).
+
+- **Floor-plan image export**: organization **names** in the legend now show correctly on the exported image (no loading indicator instead of the name).
+
 ## October 23, 2026
 
 - MapLibre 3D Map — detail loading feedback
@@ -20,11 +64,6 @@ When a release goes to production, only **features** are moved to [What's New](.
   - Guide: [MapLibre 3D Map](/entities/user-guide/floor-plan/carte-3d-maplibre#detail-loading).
 
 ## October 22, 2026
-
-- Scenario → reference building sync
-  - New <LSV code="building:scenarioSync" /> view: from the **reference building**, pick a linked **scenario** to list **gaps** (creates, deletes, edits, different geometry) for spaces, desks, and objects.
-  - Then push scenario values to the reference **step by step**: for matching spaces, <P code="room:roomType" />, <P code="room:costCenter" />, then <P code="room:organization" />; for desks and objects, **position / rotation** first, then **properties** (e.g. type).
-  - Each step updates **all** matching items at once. Creates and deletes stay visible in the inventory; **space outlines** are listed but **not** applied in this version.
 
 - MapLibre 3D Map — Structure mode and Building mode
   - On the <LIV code="building:3d-maplibre" /> view, start with building **volumes** (**Structure mode**), using the **name list** on the left.
