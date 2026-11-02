@@ -61,7 +61,7 @@ var entities_paths_default = {
 		"itemType": "/entities/things/things-type",
 		"itemTypeFamily": "/entities/things/things-type",
 		"itemTypePoint": "/entities/things/things-type",
-		"itemTypeVisualEdge": null,
+		"itemTypeVisualEdge": "/entities/things/things-type",
 		"manufacturer": "/entities/things/things-type",
 		"workplaceTypeItemType": "/entities/things/things-type",
 		"workplaceUsageType": "/entities/things/things-type",
@@ -173,7 +173,7 @@ var entities_paths_default = {
 		"feature": "/entities/help",
 		"userRefreshToken": null
 	},
-	viewPathMapping: /* @__PURE__ */ JSON.parse("{\"occupancyStatus:list\":\"/entities/surfy/global-admin\",\"occupancyStatus:create\":\"/entities/surfy/global-admin\",\"occupancyStatus:import\":\"/entities/surfy/global-admin\",\"occupancyStatus:dataquality\":\"/entities/surfy/global-admin\",\"occupancyStatus:details\":\"/entities/surfy/global-admin\",\"occupancyStatus:edit\":\"/entities/surfy/global-admin\",\"user:list\":\"/entities/surfy/global-security\",\"user:create\":\"/entities/surfy/global-security\",\"user:import\":\"/entities/surfy/global-security\",\"user:dataquality\":\"/entities/surfy/global-security\",\"user:details\":\"/entities/surfy/global-security\",\"user:edit\":\"/entities/surfy/global-security\",\"userRefreshToken:list\":null,\"userRefreshToken:create\":null,\"userRefreshToken:import\":null,\"userRefreshToken:dataquality\":null,\"userRefreshToken:details\":null,\"userRefreshToken:edit\":null,\"companyType:list\":\"/entities/surfy/global-admin\",\"companyType:create\":\"/entities/surfy/global-admin\",\"companyType:import\":\"/entities/surfy/global-admin\",\"companyType:dataquality\":\"/entities/surfy/global-admin\",\"companyType:details\":\"/entities/surfy/global-admin\",\"companyType:edit\":\"/entities/surfy/global-admin\",\"company:cards\":\"/entities/admin\",\"company:people-info\":\"/entities/admin\",\"company:usage\":\"/entities/admin\",\"company:booking-reporting\":\"/entities/admin\",\"company:dataquality-index\":\"/entities/admin\",\"company:dq-reports-overview-duplicate-company\":\"/entities/admin\",\"company:list\":\"/entities/admin\",\"company:create\":\"/entities/admin\",\"company:import\":\"/entities/admin\",\"company:dataquality\":\"/entities/admin\",\"company:dashboard\":\"/entities/admin\",\"company:soc-tenant\":\"/entities/admin\",\"company:details\":\"/entities/admin\",\"company:edit\":\"/entities/admin\",\"company:dq-fix-inventory\":\"/entities/admin/dataquality\",\"company:dq-shapes-position\":\"/entities/admin/dataquality\",\"company:dq-image-list\":\"/entities/admin/dataquality\",\"campus:cards\":\"/entities/spaces\",\"campus:list\":\"/entities/spaces\",\"campus:create\":\"/entities/spaces\",\"campus:import\":\"/entities/spaces\",\"campus:dataquality\":\"/entities/spaces\",\"campus:details\":\"/entities/spaces\",\"campus:edit\":\"/entities/spaces\",\"roomConnectorType:list\":\"/entities/admin/connectors\",\"roomConnectorType:create\":\"/entities/admin/connectors\",\"roomConnectorType:import\":\"/entities/admin/connectors\",\"roomConnectorType:dataquality\":\"/entities/admin/connectors\",\"roomConnectorType:details\":\"/entities/admin/connectors\",\"roomConnectorType:edit\":\"/entities/admin/connectors\",\"roomConnector:list\":\"/entities/admin/connectors\",\"roomConnector:create\":\"/entities/admin/connectors\",\"roomConnector:import\":\"/entities/admin/connectors\",\"roomConnector:dataquality\":\"/entities/admin/connectors\",\"roomConnector:details\":\"/entities/admin/connectors\",\"roomConnector:edit\":\"/entities/admin/connectors\",\"segmentConnectorType:list\":\"/entities/admin/connectors\",\"segmentConnectorType:create\":\"/entities/admin/connectors\",\"segmentConnectorType:import\":\"/entities/admin/connectors\",\"segmentConnectorType:dataquality\":\"/entities/admin/connectors\",\"segmentConnectorType:details\":\"/entities/admin/connectors\",\"segmentConnectorType:edit\":\"/entities/admin/connectors\",\"segmentConnector:list\":\"/entities/admin/connectors\",\"segmentConnector:create\":\"/entities/admin/connectors\",\"segmentConnector:import\":\"/entities/admin/connectors\",\"segmentConnector:dataquality\":\"/entities/admin/connectors\",\"segmentConnector:details\":\"/entities/admin/connectors\",\"segmentConnector:edit\":\"/entities/admin/connectors\",\"userCompany:list\":\"/entities/admin/security\",\"userCompany:create\":\"/entities/admin/security\",\"userCompany:import\":\"/entities/admin/security\",\"userCompany:dataquality\":\"/entities/admin/security\",\"userCompany:details\":\"/entities/admin/security\",\"userCompany:edit\":\"/entities/admin/security\",\"personGender:list\":\"/entities/surfy\",\"personGender:create\":\"/entities/surfy\",\"personGender:import\":\"/entities/surfy\",\"personGender:dataquality\":\"/entities/surfy\",\"personGender:details\":\"/entities/surfy\",\"personGender:edit\":\"/entities/surfy\",\"personCompany:list\":\"/entities/admin/person-companies\",\"personCompany:create\":\"/entities/admin/person-companies\",\"personCompany:import\":\"/entities/admin/person-companies\",\"personCompany:dataquality\":\"/entities/admin/person-companies\",\"personCompany:details\":\"/entities/admin/person-companies\",\"personCompany:edit\":\"/entities/admin/person-companies\",\"jupUiLayout:list\":\"/entities/surfy/global-security\",\"jupUiLayout:create\":\"/entities/surfy/global-security\",\"jupUiLayout:import\":\"/entities/surfy/global-security\",\"jupUiLayout:dataquality\":\"/entities/surfy/global-security\",\"jupUiLayout:details\":\"/entities/surfy/global-security\",\"jupUiLayout:edit\":\"/entities/surfy/global-security\",\"buildingType:list\":\"/entities/admin/types\",\"buildingType:create\":\"/entities/admin/types\",\"buildingType:import\":\"/entities/admin/types\",\"buildingType:dataquality\":\"/entities/admin/types\",\"buildingType:details\":\"/entities/admin/types\",\"buildingType:edit\":\"/entities/admin/types\",\"organization:hierarchy\":\"/entities/organizations\",\"organization:list\":\"/entities/organizations\",\"organization:create\":\"/entities/organizations\",\"organization:import\":\"/entities/organizations\",\"organization:dataquality\":\"/entities/organizations\",\"organization:details\":\"/entities/organizations\",\"organization:edit\":\"/entities/organizations\",\"organization:dq-organization-hierarchy\":\"/entities/organizations/dataquality\",\"organization:dq-level1-not-used\":\"/entities/organizations/dataquality\",\"itemTypeFamily:list\":\"/entities/things/things-type\",\"itemTypeFamily:create\":\"/entities/things/things-type\",\"itemTypeFamily:import\":\"/entities/things/things-type\",\"itemTypeFamily:dataquality\":\"/entities/things/things-type\",\"itemTypeFamily:details\":\"/entities/things/things-type\",\"itemTypeFamily:edit\":\"/entities/things/things-type\",\"manufacturer:list\":\"/entities/things/things-type\",\"manufacturer:create\":\"/entities/things/things-type\",\"manufacturer:import\":\"/entities/things/things-type\",\"manufacturer:dataquality\":\"/entities/things/things-type\",\"manufacturer:details\":\"/entities/things/things-type\",\"manufacturer:edit\":\"/entities/things/things-type\",\"object3dModel:list\":\"/entities/surfy/global-admin\",\"object3dModel:create\":\"/entities/surfy/global-admin\",\"object3dModel:import\":\"/entities/surfy/global-admin\",\"object3dModel:dataquality\":\"/entities/surfy/global-admin\",\"object3dModel:details\":\"/entities/surfy/global-admin\",\"object3dModel:edit\":\"/entities/surfy/global-admin\",\"itemType:list\":\"/entities/things/things-type\",\"itemType:create\":\"/entities/things/things-type\",\"itemType:import\":\"/entities/things/things-type\",\"itemType:dataquality\":\"/entities/things/things-type\",\"itemType:shape-editor\":\"/entities/things/things-type\",\"itemType:avatar\":\"/entities/things/things-type\",\"itemType:details\":\"/entities/things/things-type\",\"itemType:edit\":\"/entities/things/things-type\",\"itemType:dq-not-used\":\"/entities/things/things-type/dataquality\",\"itemType:dq-uniq-name\":\"/entities/things/things-type/dataquality\",\"itemType:dq-family-tenant-consistency\":\"/entities/things/things-type/dataquality\",\"building:cards\":\"/entities/spaces\",\"building:pictures\":\"/entities/spaces\",\"building:3d-cards\":\"/entities/spaces\",\"building:gmap\":\"/entities/spaces\",\"building:3d-map\":\"/entities/spaces\",\"building:3d-maplibre\":\"/entities/spaces\",\"building:assets\":\"/entities/spaces\",\"building:list\":\"/entities/spaces\",\"building:create\":\"/entities/spaces\",\"building:import\":\"/entities/spaces\",\"building:dataquality\":\"/entities/spaces\",\"building:cuby\":\"/entities/spaces\",\"building:dashboard\":\"/entities/spaces\",\"building:inventory\":\"/entities/spaces\",\"building:cost-distribution-by-cost-center\":\"/entities/spaces\",\"building:clone\":\"/entities/spaces\",\"building:building-3d-gmap\":\"/entities/spaces\",\"building:building-pathfinding\":\"/entities/spaces\",\"building:building-ifc\":\"/entities/spaces\",\"building:building-dxf-importer\":\"/entities/spaces\",\"building:details\":\"/entities/spaces\",\"building:edit\":\"/entities/spaces\",\"building:dq-building-3d-eligibility\":\"/entities/spaces/dataquality\",\"mapScale:list\":\"/entities/spaces\",\"mapScale:create\":\"/entities/spaces\",\"mapScale:import\":\"/entities/spaces\",\"mapScale:dataquality\":\"/entities/spaces\",\"mapScale:details\":\"/entities/spaces\",\"mapScale:edit\":\"/entities/spaces\",\"mapScale:dq-not-used\":\"/entities/spaces/dataquality\",\"mapScale:dq-uniq-name\":\"/entities/spaces/dataquality\",\"structure:list\":\"/entities/spaces\",\"structure:create\":\"/entities/spaces\",\"structure:import\":\"/entities/spaces\",\"structure:dataquality\":\"/entities/spaces\",\"structure:editor\":\"/entities/spaces\",\"structure:gmap-calibrate\":\"/entities/spaces\",\"structure:details\":\"/entities/spaces\",\"structure:edit\":\"/entities/spaces\",\"structure:dq-structure-transform-without-anchor\":\"/entities/spaces/dataquality\",\"structurePoint:list\":\"/entities/spaces/space-points\",\"structurePoint:create\":\"/entities/spaces/space-points\",\"structurePoint:import\":\"/entities/spaces/space-points\",\"structurePoint:dataquality\":\"/entities/spaces/space-points\",\"structurePoint:details\":\"/entities/spaces/space-points\",\"structurePoint:edit\":\"/entities/spaces/space-points\",\"structureExclusion:list\":\"/entities/spaces/space-points\",\"structureExclusion:create\":\"/entities/spaces/space-points\",\"structureExclusion:import\":\"/entities/spaces/space-points\",\"structureExclusion:dataquality\":\"/entities/spaces/space-points\",\"structureExclusion:details\":\"/entities/spaces/space-points\",\"structureExclusion:edit\":\"/entities/spaces/space-points\",\"structureExclusionPoint:list\":\"/entities/spaces/space-points\",\"structureExclusionPoint:create\":\"/entities/spaces/space-points\",\"structureExclusionPoint:import\":\"/entities/spaces/space-points\",\"structureExclusionPoint:dataquality\":\"/entities/spaces/space-points\",\"structureExclusionPoint:details\":\"/entities/spaces/space-points\",\"structureExclusionPoint:edit\":\"/entities/spaces/space-points\",\"floor:list\":\"/entities/spaces\",\"floor:create\":\"/entities/spaces\",\"floor:import\":\"/entities/spaces\",\"floor:dataquality\":\"/entities/spaces\",\"floor:map\":\"/entities/spaces\",\"floor:cuby\":\"/entities/spaces\",\"floor:geojson\":\"/entities/spaces\",\"floor:simple-layout\":\"/entities/spaces\",\"floor:standalone-2d-map\":\"/entities/spaces\",\"floor:details\":\"/entities/spaces\",\"floor:edit\":\"/entities/spaces\",\"distributionCostType:list\":\"/entities/admin/types\",\"distributionCostType:create\":\"/entities/admin/types\",\"distributionCostType:import\":\"/entities/admin/types\",\"distributionCostType:dataquality\":\"/entities/admin/types\",\"distributionCostType:details\":\"/entities/admin/types\",\"distributionCostType:edit\":\"/entities/admin/types\",\"roomTypeGroup:list\":\"/entities/surfy/global-admin\",\"roomTypeGroup:create\":\"/entities/surfy/global-admin\",\"roomTypeGroup:import\":\"/entities/surfy/global-admin\",\"roomTypeGroup:dataquality\":\"/entities/surfy/global-admin\",\"roomTypeGroup:details\":\"/entities/surfy/global-admin\",\"roomTypeGroup:edit\":\"/entities/surfy/global-admin\",\"roomType:list\":\"/entities/admin/types/room-types\",\"roomType:create\":\"/entities/admin/types/room-types\",\"roomType:import\":\"/entities/admin/types/room-types\",\"roomType:dataquality\":\"/entities/admin/types/room-types\",\"roomType:details\":\"/entities/admin/types/room-types\",\"roomType:edit\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:list\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:create\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:import\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:dataquality\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:details\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:edit\":\"/entities/admin/types/room-types\",\"roomTypeGroupFloor:list\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:create\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:import\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:details\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:edit\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:list\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:create\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:import\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:details\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:edit\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"costCenter:list\":\"/entities/admin/types\",\"costCenter:create\":\"/entities/admin/types\",\"costCenter:import\":\"/entities/admin/types\",\"costCenter:dataquality\":\"/entities/admin/types\",\"costCenter:details\":\"/entities/admin/types\",\"costCenter:edit\":\"/entities/admin/types\",\"costCenterBuilding:list\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:create\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:import\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:details\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:edit\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:list\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:create\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:import\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:dataquality\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:details\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:edit\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"room:meeting-rooms\":\"/entities/spaces\",\"room:list\":\"/entities/spaces\",\"room:create\":\"/entities/spaces\",\"room:import\":\"/entities/spaces\",\"room:dataquality\":\"/entities/spaces\",\"room:details\":\"/entities/spaces\",\"room:edit\":\"/entities/spaces\",\"room:dq-organization-to-room\":\"/entities/spaces/dataquality\",\"room:dq-uniq-name\":\"/entities/spaces/dataquality\",\"room:dq-no-point\":\"/entities/spaces/dataquality\",\"room:dq-capacity-equals-seats-count\":\"/entities/spaces/dataquality\",\"room:dq-capacity-gt-0\":\"/entities/spaces/dataquality\",\"roomPoint:list\":\"/entities/spaces/space-points\",\"roomPoint:create\":\"/entities/spaces/space-points\",\"roomPoint:import\":\"/entities/spaces/space-points\",\"roomPoint:dataquality\":\"/entities/spaces/space-points\",\"roomPoint:details\":\"/entities/spaces/space-points\",\"roomPoint:edit\":\"/entities/spaces/space-points\",\"roomPoint:dq-uniq-position\":\"/entities/spaces/space-points/dataquality\",\"roomPoint:dq-not-used\":\"/entities/spaces/space-points/dataquality\",\"roomPointRoom:list\":\"/entities/spaces/space-points\",\"roomPointRoom:create\":\"/entities/spaces/space-points\",\"roomPointRoom:import\":\"/entities/spaces/space-points\",\"roomPointRoom:dataquality\":\"/entities/spaces/space-points\",\"roomPointRoom:details\":\"/entities/spaces/space-points\",\"roomPointRoom:edit\":\"/entities/spaces/space-points\",\"roomPointSegmentType:list\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:create\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:import\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:dataquality\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:details\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:edit\":\"/entities/surfy/global-admin\",\"roomPointSegment:list\":\"/entities/spaces\",\"roomPointSegment:create\":\"/entities/spaces\",\"roomPointSegment:import\":\"/entities/spaces\",\"roomPointSegment:dataquality\":\"/entities/spaces\",\"roomPointSegment:details\":\"/entities/spaces\",\"roomPointSegment:edit\":\"/entities/spaces\",\"roomPointSegment:dq-not-uniq\":\"/entities/spaces/dataquality\",\"roomPointSegment:dq-point-not-on-same-floor\":\"/entities/spaces/dataquality\",\"itemTypePoint:list\":\"/entities/things/things-type\",\"itemTypePoint:create\":\"/entities/things/things-type\",\"itemTypePoint:import\":\"/entities/things/things-type\",\"itemTypePoint:dataquality\":\"/entities/things/things-type\",\"itemTypePoint:details\":\"/entities/things/things-type\",\"itemTypePoint:edit\":\"/entities/things/things-type\",\"itemTypeVisualEdge:list\":null,\"itemTypeVisualEdge:create\":null,\"itemTypeVisualEdge:import\":null,\"itemTypeVisualEdge:dataquality\":null,\"itemTypeVisualEdge:details\":null,\"itemTypeVisualEdge:edit\":null,\"dimensionType:list\":\"/entities/admin/dimensions\",\"dimensionType:create\":\"/entities/admin/dimensions\",\"dimensionType:import\":\"/entities/admin/dimensions\",\"dimensionType:dataquality\":\"/entities/admin/dimensions\",\"dimensionType:details\":\"/entities/admin/dimensions\",\"dimensionType:edit\":\"/entities/admin/dimensions\",\"dimension:list\":\"/entities/admin/dimensions\",\"dimension:create\":\"/entities/admin/dimensions\",\"dimension:import\":\"/entities/admin/dimensions\",\"dimension:dataquality\":\"/entities/admin/dimensions\",\"dimension:details\":\"/entities/admin/dimensions\",\"dimension:edit\":\"/entities/admin/dimensions\",\"dimension:dq-missing-color\":\"/entities/admin/dimensions/dataquality\",\"dimensionRoom:list\":\"/entities/admin/dimensions\",\"dimensionRoom:create\":\"/entities/admin/dimensions\",\"dimensionRoom:import\":\"/entities/admin/dimensions\",\"dimensionRoom:dataquality\":\"/entities/admin/dimensions\",\"dimensionRoom:details\":\"/entities/admin/dimensions\",\"dimensionRoom:edit\":\"/entities/admin/dimensions\",\"dimensionRoom:dq-wrong-dimension-type\":\"/entities/admin/dimensions/dataquality\",\"dimensionFloor:list\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:create\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:import\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:dataquality\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:details\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:edit\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:list\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:create\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:import\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:details\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:edit\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"factType:list\":\"/entities/spaces/building-facts\",\"factType:create\":\"/entities/spaces/building-facts\",\"factType:import\":\"/entities/spaces/building-facts\",\"factType:dataquality\":\"/entities/spaces/building-facts\",\"factType:details\":\"/entities/spaces/building-facts\",\"factType:edit\":\"/entities/spaces/building-facts\",\"fact:list\":\"/entities/spaces/building-facts\",\"fact:create\":\"/entities/spaces/building-facts\",\"fact:import\":\"/entities/spaces/building-facts\",\"fact:dataquality\":\"/entities/spaces/building-facts\",\"fact:details\":\"/entities/spaces/building-facts\",\"fact:edit\":\"/entities/spaces/building-facts\",\"personState:list\":\"/entities/human/person-type\",\"personState:create\":\"/entities/human/person-type\",\"personState:import\":\"/entities/human/person-type\",\"personState:dataquality\":\"/entities/human/person-type\",\"personState:details\":\"/entities/human/person-type\",\"personState:edit\":\"/entities/human/person-type\",\"personSecurityProfile:list\":\"/entities/human/person-type\",\"personSecurityProfile:create\":\"/entities/human/person-type\",\"personSecurityProfile:import\":\"/entities/human/person-type\",\"personSecurityProfile:dataquality\":\"/entities/human/person-type\",\"personSecurityProfile:details\":\"/entities/human/person-type\",\"personSecurityProfile:edit\":\"/entities/human/person-type\",\"personType:list\":\"/entities/surfy/global-admin\",\"personType:create\":\"/entities/surfy/global-admin\",\"personType:import\":\"/entities/surfy/global-admin\",\"personType:dataquality\":\"/entities/surfy/global-admin\",\"personType:details\":\"/entities/surfy/global-admin\",\"personType:edit\":\"/entities/surfy/global-admin\",\"person:list\":\"/entities/human\",\"person:create\":\"/entities/human\",\"person:import\":\"/entities/human\",\"person:dataquality\":\"/entities/human\",\"person:home\":\"/entities/human\",\"person:person-bookings\":\"/entities/human\",\"person:details\":\"/entities/human\",\"person:edit\":\"/entities/human\",\"person:dq-only-associated-to-building\":\"/entities/human/dataquality\",\"person:dq-near-end-date\":\"/entities/human/dataquality\",\"person:dq-no-affectations\":\"/entities/human/dataquality\",\"person:dq-person-duplicate\":\"/entities/human/dataquality\",\"person:dq-not-affectable-end-date-expired\":\"/entities/human/dataquality\",\"personToPersonType:list\":\"/entities/human/person-relations\",\"personToPersonType:create\":\"/entities/human/person-relations\",\"personToPersonType:import\":\"/entities/human/person-relations\",\"personToPersonType:dataquality\":\"/entities/human/person-relations\",\"personToPersonType:details\":\"/entities/human/person-relations\",\"personToPersonType:edit\":\"/entities/human/person-relations\",\"personToPerson:list\":\"/entities/human/person-relations\",\"personToPerson:create\":\"/entities/human/person-relations\",\"personToPerson:import\":\"/entities/human/person-relations\",\"personToPerson:dataquality\":\"/entities/human/person-relations\",\"personToPerson:details\":\"/entities/human/person-relations\",\"personToPerson:edit\":\"/entities/human/person-relations\",\"vehicleType:list\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:create\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:import\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:dataquality\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:details\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:edit\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:list\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:create\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:import\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:dataquality\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:details\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:edit\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicle:list\":\"/entities/human/person-vehicles\",\"vehicle:create\":\"/entities/human/person-vehicles\",\"vehicle:import\":\"/entities/human/person-vehicles\",\"vehicle:dataquality\":\"/entities/human/person-vehicles\",\"vehicle:details\":\"/entities/human/person-vehicles\",\"vehicle:edit\":\"/entities/human/person-vehicles\",\"personToVehicle:list\":\"/entities/human/person-vehicles\",\"personToVehicle:create\":\"/entities/human/person-vehicles\",\"personToVehicle:import\":\"/entities/human/person-vehicles\",\"personToVehicle:dataquality\":\"/entities/human/person-vehicles\",\"personToVehicle:details\":\"/entities/human/person-vehicles\",\"personToVehicle:edit\":\"/entities/human/person-vehicles\",\"roomAffectation:room-mouvement-matrix-import\":\"/entities/affectations\",\"roomAffectation:list\":\"/entities/affectations\",\"roomAffectation:create\":\"/entities/affectations\",\"roomAffectation:import\":\"/entities/affectations\",\"roomAffectation:dataquality\":\"/entities/affectations\",\"roomAffectation:details\":\"/entities/affectations\",\"roomAffectation:edit\":\"/entities/affectations\",\"workplaceType:list\":\"/entities/things/things-type\",\"workplaceType:create\":\"/entities/things/things-type\",\"workplaceType:import\":\"/entities/things/things-type\",\"workplaceType:dataquality\":\"/entities/things/things-type\",\"workplaceType:editor\":\"/entities/things/things-type\",\"workplaceType:avatar\":\"/entities/things/things-type\",\"workplaceType:details\":\"/entities/things/things-type\",\"workplaceType:edit\":\"/entities/things/things-type\",\"workplaceType:dq-not-used\":\"/entities/things/things-type/dataquality\",\"workplaceType:dq-workplace-type-item-type-position-z\":\"/entities/things/things-type/dataquality\",\"workplaceUsageType:list\":\"/entities/things/things-type\",\"workplaceUsageType:create\":\"/entities/things/things-type\",\"workplaceUsageType:import\":\"/entities/things/things-type\",\"workplaceUsageType:dataquality\":\"/entities/things/things-type\",\"workplaceUsageType:details\":\"/entities/things/things-type\",\"workplaceUsageType:edit\":\"/entities/things/things-type\",\"workplaceTypeItemType:list\":\"/entities/things/things-type\",\"workplaceTypeItemType:create\":\"/entities/things/things-type\",\"workplaceTypeItemType:import\":\"/entities/things/things-type\",\"workplaceTypeItemType:dataquality\":\"/entities/things/things-type\",\"workplaceTypeItemType:details\":\"/entities/things/things-type\",\"workplaceTypeItemType:edit\":\"/entities/things/things-type\",\"workplace:list\":\"/entities/things\",\"workplace:create\":\"/entities/things\",\"workplace:import\":\"/entities/things\",\"workplace:dataquality\":\"/entities/things\",\"workplace:assign-current-user\":\"/entities/things\",\"workplace:details\":\"/entities/things\",\"workplace:edit\":\"/entities/things\",\"workplace:dq-workplace-transit-with-affectations\":\"/entities/things/dataquality\",\"item:list\":\"/entities/things\",\"item:create\":\"/entities/things\",\"item:import\":\"/entities/things\",\"item:dataquality\":\"/entities/things\",\"item:details\":\"/entities/things\",\"item:edit\":\"/entities/things\",\"item:dq-item-not-in-workplace-room\":\"/entities/things/dataquality\",\"workplaceAffectation:workplace-mouvement-matrix-import\":\"/entities/affectations\",\"workplaceAffectation:list\":\"/entities/affectations\",\"workplaceAffectation:create\":\"/entities/affectations\",\"workplaceAffectation:import\":\"/entities/affectations\",\"workplaceAffectation:dataquality\":\"/entities/affectations\",\"workplaceAffectation:details\":\"/entities/affectations\",\"workplaceAffectation:edit\":\"/entities/affectations\",\"workplaceAffectation:dq-workplace-affectation-latest\":\"/entities/affectations/dataquality\",\"organizationFloor:list\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:create\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:import\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:dataquality\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:details\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:edit\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:list\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:create\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:import\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:details\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:edit\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"roomTypeFloor:list\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:create\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:import\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:details\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:edit\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:list\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:create\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:import\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:details\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:edit\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"itemToPerson:list\":\"/entities/affectations\",\"itemToPerson:create\":\"/entities/affectations\",\"itemToPerson:import\":\"/entities/affectations\",\"itemToPerson:dataquality\":\"/entities/affectations\",\"itemToPerson:details\":\"/entities/affectations\",\"itemToPerson:edit\":\"/entities/affectations\",\"personToBuilding:list\":\"/entities/affectations\",\"personToBuilding:create\":\"/entities/affectations\",\"personToBuilding:import\":\"/entities/affectations\",\"personToBuilding:dataquality\":\"/entities/affectations\",\"personToBuilding:details\":\"/entities/affectations\",\"personToBuilding:edit\":\"/entities/affectations\",\"dimensionToPerson:list\":\"/entities/affectations\",\"dimensionToPerson:create\":\"/entities/affectations\",\"dimensionToPerson:import\":\"/entities/affectations\",\"dimensionToPerson:dataquality\":\"/entities/affectations\",\"dimensionToPerson:details\":\"/entities/affectations\",\"dimensionToPerson:edit\":\"/entities/affectations\",\"dimensionToPerson:dq-dimension-to-person-latest\":\"/entities/affectations/dataquality\",\"dimensionTypeToBuilding:list\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:create\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:import\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:dataquality\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:details\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:edit\":\"/entities/admin/dimensions\",\"workingLocation:list\":\"/entities/surfy/global-admin\",\"workingLocation:create\":\"/entities/surfy/global-admin\",\"workingLocation:import\":\"/entities/surfy/global-admin\",\"workingLocation:dataquality\":\"/entities/surfy/global-admin\",\"workingLocation:details\":\"/entities/surfy/global-admin\",\"workingLocation:edit\":\"/entities/surfy/global-admin\",\"personWorkingLocation:my-planning\":\"/entities/planning\",\"personWorkingLocation:obo-planning\":\"/entities/planning\",\"personWorkingLocation:guest-planning\":\"/entities/planning\",\"personWorkingLocation:booking-maps\":\"/entities/planning\",\"personWorkingLocation:booking-security-day\":\"/entities/planning\",\"personWorkingLocation:pwl-dimension\":\"/entities/planning\",\"personWorkingLocation:list\":\"/entities/planning\",\"personWorkingLocation:create\":\"/entities/planning\",\"personWorkingLocation:import\":\"/entities/planning\",\"personWorkingLocation:dataquality\":\"/entities/planning\",\"personWorkingLocation:details\":\"/entities/planning\",\"personWorkingLocation:edit\":\"/entities/planning\",\"personToWorkplaceBooking:dashboard-index\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:list\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:create\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:import\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:dataquality\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:details\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:edit\":\"/entities/planning/bookings\",\"personToRoomBooking:list\":\"/entities/planning/bookings\",\"personToRoomBooking:create\":\"/entities/planning/bookings\",\"personToRoomBooking:import\":\"/entities/planning/bookings\",\"personToRoomBooking:dataquality\":\"/entities/planning/bookings\",\"personToRoomBooking:details\":\"/entities/planning/bookings\",\"personToRoomBooking:edit\":\"/entities/planning/bookings\",\"personToDimensionBooking:list\":\"/entities/planning/bookings\",\"personToDimensionBooking:create\":\"/entities/planning/bookings\",\"personToDimensionBooking:import\":\"/entities/planning/bookings\",\"personToDimensionBooking:dataquality\":\"/entities/planning/bookings\",\"personToDimensionBooking:details\":\"/entities/planning/bookings\",\"personToDimensionBooking:edit\":\"/entities/planning/bookings\",\"personCompanyMission:list\":\"/entities/admin/person-companies\",\"personCompanyMission:create\":\"/entities/admin/person-companies\",\"personCompanyMission:import\":\"/entities/admin/person-companies\",\"personCompanyMission:dataquality\":\"/entities/admin/person-companies\",\"personCompanyMission:details\":\"/entities/admin/person-companies\",\"personCompanyMission:edit\":\"/entities/admin/person-companies\",\"personCompanyToItemType:list\":\"/entities/admin/person-companies\",\"personCompanyToItemType:create\":\"/entities/admin/person-companies\",\"personCompanyToItemType:import\":\"/entities/admin/person-companies\",\"personCompanyToItemType:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToItemType:details\":\"/entities/admin/person-companies\",\"personCompanyToItemType:edit\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:list\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:create\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:import\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:details\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:edit\":\"/entities/admin/person-companies\",\"personCompanyToItem:list\":\"/entities/admin/person-companies\",\"personCompanyToItem:create\":\"/entities/admin/person-companies\",\"personCompanyToItem:import\":\"/entities/admin/person-companies\",\"personCompanyToItem:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToItem:details\":\"/entities/admin/person-companies\",\"personCompanyToItem:edit\":\"/entities/admin/person-companies\",\"legend:list\":\"/entities/admin\",\"legend:create\":\"/entities/admin\",\"legend:import\":\"/entities/admin\",\"legend:dataquality\":\"/entities/admin\",\"legend:details\":\"/entities/admin\",\"legend:edit\":\"/entities/admin\",\"openerPostMessageHost:list\":\"/entities/admin/api\",\"openerPostMessageHost:create\":\"/entities/admin/api\",\"openerPostMessageHost:import\":\"/entities/admin/api\",\"openerPostMessageHost:dataquality\":\"/entities/admin/api\",\"openerPostMessageHost:details\":\"/entities/admin/api\",\"openerPostMessageHost:edit\":\"/entities/admin/api\",\"companyWorkingLocation:list\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:create\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:import\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:dataquality\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:details\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:edit\":\"/entities/planning/planning-admin\",\"bookingVehicleConfiguration:list\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:create\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:import\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:dataquality\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:details\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:edit\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:list\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:create\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:import\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:dataquality\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:details\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:edit\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"jupObjectType:list\":\"/entities/surfy/global-security\",\"jupObjectType:create\":\"/entities/surfy/global-security\",\"jupObjectType:import\":\"/entities/surfy/global-security\",\"jupObjectType:dataquality\":\"/entities/surfy/global-security\",\"jupObjectType:details\":\"/entities/surfy/global-security\",\"jupObjectType:edit\":\"/entities/surfy/global-security\",\"jupUiView:list\":\"/entities/surfy/global-security\",\"jupUiView:create\":\"/entities/surfy/global-security\",\"jupUiView:import\":\"/entities/surfy/global-security\",\"jupUiView:dataquality\":\"/entities/surfy/global-security\",\"jupUiView:details\":\"/entities/surfy/global-security\",\"jupUiView:edit\":\"/entities/surfy/global-security\",\"jupRole:help\":\"/entities/surfy/global-security\",\"jupRole:azure-sync\":\"/entities/surfy/global-security\",\"jupRole:list\":\"/entities/surfy/global-security\",\"jupRole:create\":\"/entities/surfy/global-security\",\"jupRole:import\":\"/entities/surfy/global-security\",\"jupRole:dataquality\":\"/entities/surfy/global-security\",\"jupRole:matrix\":\"/entities/surfy/global-security\",\"jupRole:details\":\"/entities/surfy/global-security\",\"jupRole:edit\":\"/entities/surfy/global-security\",\"jupUiOption:list\":\"/entities/surfy/global-security\",\"jupUiOption:create\":\"/entities/surfy/global-security\",\"jupUiOption:import\":\"/entities/surfy/global-security\",\"jupUiOption:dataquality\":\"/entities/surfy/global-security\",\"jupUiOption:details\":\"/entities/surfy/global-security\",\"jupUiOption:edit\":\"/entities/surfy/global-security\",\"jupUiOperation:list\":\"/entities/surfy/global-security\",\"jupUiOperation:create\":\"/entities/surfy/global-security\",\"jupUiOperation:import\":\"/entities/surfy/global-security\",\"jupUiOperation:dataquality\":\"/entities/surfy/global-security\",\"jupUiOperation:details\":\"/entities/surfy/global-security\",\"jupUiOperation:edit\":\"/entities/surfy/global-security\",\"contentRole:list\":\"/entities/admin/security\",\"contentRole:create\":\"/entities/admin/security\",\"contentRole:import\":\"/entities/admin/security\",\"contentRole:dataquality\":\"/entities/admin/security\",\"contentRole:details\":\"/entities/admin/security\",\"contentRole:edit\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:list\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:create\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:import\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:dataquality\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:details\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:edit\":\"/entities/admin/security\",\"jupRoleToJupUiView:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:list\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:create\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:import\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:details\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:edit\":\"/entities/surfy/global-security\",\"contentRoleToBuilding:list\":\"/entities/admin/security\",\"contentRoleToBuilding:create\":\"/entities/admin/security\",\"contentRoleToBuilding:import\":\"/entities/admin/security\",\"contentRoleToBuilding:dataquality\":\"/entities/admin/security\",\"contentRoleToBuilding:details\":\"/entities/admin/security\",\"contentRoleToBuilding:edit\":\"/entities/admin/security\",\"contentRoleToUserCompany:list\":\"/entities/admin/security\",\"contentRoleToUserCompany:create\":\"/entities/admin/security\",\"contentRoleToUserCompany:import\":\"/entities/admin/security\",\"contentRoleToUserCompany:dataquality\":\"/entities/admin/security\",\"contentRoleToUserCompany:details\":\"/entities/admin/security\",\"contentRoleToUserCompany:edit\":\"/entities/admin/security\",\"contentRoleToFloor:list\":\"/entities/admin/security\",\"contentRoleToFloor:create\":\"/entities/admin/security\",\"contentRoleToFloor:import\":\"/entities/admin/security\",\"contentRoleToFloor:dataquality\":\"/entities/admin/security\",\"contentRoleToFloor:details\":\"/entities/admin/security\",\"contentRoleToFloor:edit\":\"/entities/admin/security\",\"partnerApiCredential:list\":\"/entities/admin/api\",\"partnerApiCredential:create\":\"/entities/admin/api\",\"partnerApiCredential:import\":\"/entities/admin/api\",\"partnerApiCredential:dataquality\":\"/entities/admin/api\",\"partnerApiCredential:details\":\"/entities/admin/api\",\"partnerApiCredential:edit\":\"/entities/admin/api\",\"apiUser:list\":\"/entities/admin/api\",\"apiUser:create\":\"/entities/admin/api\",\"apiUser:import\":\"/entities/admin/api\",\"apiUser:dataquality\":\"/entities/admin/api\",\"apiUser:edit-fetch-loop-repro\":\"/entities/admin/api\",\"apiUser:details\":\"/entities/admin/api\",\"apiUser:edit\":\"/entities/admin/api\",\"apiUserToJupRole:list\":\"/entities/admin/api\",\"apiUserToJupRole:create\":\"/entities/admin/api\",\"apiUserToJupRole:import\":\"/entities/admin/api\",\"apiUserToJupRole:dataquality\":\"/entities/admin/api\",\"apiUserToJupRole:details\":\"/entities/admin/api\",\"apiUserToJupRole:edit\":\"/entities/admin/api\",\"apiUserToContentRole:list\":\"/entities/admin/api\",\"apiUserToContentRole:create\":\"/entities/admin/api\",\"apiUserToContentRole:import\":\"/entities/admin/api\",\"apiUserToContentRole:dataquality\":\"/entities/admin/api\",\"apiUserToContentRole:details\":\"/entities/admin/api\",\"apiUserToContentRole:edit\":\"/entities/admin/api\",\"jupUiTenantOperation:list\":\"/entities/admin/security\",\"jupUiTenantOperation:create\":\"/entities/admin/security\",\"jupUiTenantOperation:import\":\"/entities/admin/security\",\"jupUiTenantOperation:dataquality\":\"/entities/admin/security\",\"jupUiTenantOperation:details\":\"/entities/admin/security\",\"jupUiTenantOperation:edit\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:list\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:create\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:import\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:dataquality\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:details\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:edit\":\"/entities/admin/security\",\"authentificationConnection:list\":\"/entities/surfy/global-security\",\"authentificationConnection:create\":\"/entities/surfy/global-security\",\"authentificationConnection:import\":\"/entities/surfy/global-security\",\"authentificationConnection:dataquality\":\"/entities/surfy/global-security\",\"authentificationConnection:details\":\"/entities/surfy/global-security\",\"authentificationConnection:edit\":\"/entities/surfy/global-security\",\"userRegistrationTenantRule:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:details\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:edit\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:details\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:edit\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:details\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:edit\":\"/entities/admin/authentification\",\"partnerExportMappingConfiguration:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:edit\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:edit\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:edit\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:edit\":\"/entities/admin/partner-export-mapping\",\"jupRoleToJupUiLayout:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:edit\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:list\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:create\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:import\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:dataquality\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:details\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:edit\":\"/entities/surfy/global-security\",\"itemFact:list\":\"/entities/things/items-fact\",\"itemFact:create\":\"/entities/things/items-fact\",\"itemFact:import\":\"/entities/things/items-fact\",\"itemFact:dataquality\":\"/entities/things/items-fact\",\"itemFact:details\":\"/entities/things/items-fact\",\"itemFact:edit\":\"/entities/things/items-fact\",\"featureFamily:list\":\"/entities/help\",\"featureFamily:create\":\"/entities/help\",\"featureFamily:import\":\"/entities/help\",\"featureFamily:dataquality\":\"/entities/help\",\"featureFamily:details\":\"/entities/help\",\"featureFamily:edit\":\"/entities/help\",\"featureGroup:list\":\"/entities/help\",\"featureGroup:create\":\"/entities/help\",\"featureGroup:import\":\"/entities/help\",\"featureGroup:dataquality\":\"/entities/help\",\"featureGroup:details\":\"/entities/help\",\"featureGroup:edit\":\"/entities/help\",\"feature:list\":\"/entities/help\",\"feature:create\":\"/entities/help\",\"feature:import\":\"/entities/help\",\"feature:dataquality\":\"/entities/help\",\"feature:details\":\"/entities/help\",\"feature:edit\":\"/entities/help\"}")
+	viewPathMapping: /* @__PURE__ */ JSON.parse("{\"occupancyStatus:list\":\"/entities/surfy/global-admin\",\"occupancyStatus:create\":\"/entities/surfy/global-admin\",\"occupancyStatus:import\":\"/entities/surfy/global-admin\",\"occupancyStatus:dataquality\":\"/entities/surfy/global-admin\",\"occupancyStatus:details\":\"/entities/surfy/global-admin\",\"occupancyStatus:edit\":\"/entities/surfy/global-admin\",\"user:list\":\"/entities/surfy/global-security\",\"user:create\":\"/entities/surfy/global-security\",\"user:import\":\"/entities/surfy/global-security\",\"user:dataquality\":\"/entities/surfy/global-security\",\"user:details\":\"/entities/surfy/global-security\",\"user:edit\":\"/entities/surfy/global-security\",\"userRefreshToken:list\":null,\"userRefreshToken:create\":null,\"userRefreshToken:import\":null,\"userRefreshToken:dataquality\":null,\"userRefreshToken:details\":null,\"userRefreshToken:edit\":null,\"companyType:list\":\"/entities/surfy/global-admin\",\"companyType:create\":\"/entities/surfy/global-admin\",\"companyType:import\":\"/entities/surfy/global-admin\",\"companyType:dataquality\":\"/entities/surfy/global-admin\",\"companyType:details\":\"/entities/surfy/global-admin\",\"companyType:edit\":\"/entities/surfy/global-admin\",\"company:cards\":\"/entities/admin\",\"company:people-info\":\"/entities/admin\",\"company:usage\":\"/entities/admin\",\"company:booking-reporting\":\"/entities/admin\",\"company:dataquality-index\":\"/entities/admin\",\"company:dq-reports-overview-duplicate-company\":\"/entities/admin\",\"company:list\":\"/entities/admin\",\"company:create\":\"/entities/admin\",\"company:import\":\"/entities/admin\",\"company:dataquality\":\"/entities/admin\",\"company:dashboard\":\"/entities/admin\",\"company:soc-tenant\":\"/entities/admin\",\"company:details\":\"/entities/admin\",\"company:edit\":\"/entities/admin\",\"company:dq-fix-inventory\":\"/entities/admin/dataquality\",\"company:dq-shapes-position\":\"/entities/admin/dataquality\",\"company:dq-image-list\":\"/entities/admin/dataquality\",\"campus:cards\":\"/entities/spaces\",\"campus:list\":\"/entities/spaces\",\"campus:create\":\"/entities/spaces\",\"campus:import\":\"/entities/spaces\",\"campus:dataquality\":\"/entities/spaces\",\"campus:details\":\"/entities/spaces\",\"campus:edit\":\"/entities/spaces\",\"roomConnectorType:list\":\"/entities/admin/connectors\",\"roomConnectorType:create\":\"/entities/admin/connectors\",\"roomConnectorType:import\":\"/entities/admin/connectors\",\"roomConnectorType:dataquality\":\"/entities/admin/connectors\",\"roomConnectorType:details\":\"/entities/admin/connectors\",\"roomConnectorType:edit\":\"/entities/admin/connectors\",\"roomConnector:list\":\"/entities/admin/connectors\",\"roomConnector:create\":\"/entities/admin/connectors\",\"roomConnector:import\":\"/entities/admin/connectors\",\"roomConnector:dataquality\":\"/entities/admin/connectors\",\"roomConnector:details\":\"/entities/admin/connectors\",\"roomConnector:edit\":\"/entities/admin/connectors\",\"segmentConnectorType:list\":\"/entities/admin/connectors\",\"segmentConnectorType:create\":\"/entities/admin/connectors\",\"segmentConnectorType:import\":\"/entities/admin/connectors\",\"segmentConnectorType:dataquality\":\"/entities/admin/connectors\",\"segmentConnectorType:details\":\"/entities/admin/connectors\",\"segmentConnectorType:edit\":\"/entities/admin/connectors\",\"segmentConnector:list\":\"/entities/admin/connectors\",\"segmentConnector:create\":\"/entities/admin/connectors\",\"segmentConnector:import\":\"/entities/admin/connectors\",\"segmentConnector:dataquality\":\"/entities/admin/connectors\",\"segmentConnector:details\":\"/entities/admin/connectors\",\"segmentConnector:edit\":\"/entities/admin/connectors\",\"userCompany:list\":\"/entities/admin/security\",\"userCompany:create\":\"/entities/admin/security\",\"userCompany:import\":\"/entities/admin/security\",\"userCompany:dataquality\":\"/entities/admin/security\",\"userCompany:details\":\"/entities/admin/security\",\"userCompany:edit\":\"/entities/admin/security\",\"personGender:list\":\"/entities/surfy\",\"personGender:create\":\"/entities/surfy\",\"personGender:import\":\"/entities/surfy\",\"personGender:dataquality\":\"/entities/surfy\",\"personGender:details\":\"/entities/surfy\",\"personGender:edit\":\"/entities/surfy\",\"personCompany:list\":\"/entities/admin/person-companies\",\"personCompany:create\":\"/entities/admin/person-companies\",\"personCompany:import\":\"/entities/admin/person-companies\",\"personCompany:dataquality\":\"/entities/admin/person-companies\",\"personCompany:details\":\"/entities/admin/person-companies\",\"personCompany:edit\":\"/entities/admin/person-companies\",\"jupUiLayout:list\":\"/entities/surfy/global-security\",\"jupUiLayout:create\":\"/entities/surfy/global-security\",\"jupUiLayout:import\":\"/entities/surfy/global-security\",\"jupUiLayout:dataquality\":\"/entities/surfy/global-security\",\"jupUiLayout:details\":\"/entities/surfy/global-security\",\"jupUiLayout:edit\":\"/entities/surfy/global-security\",\"buildingType:list\":\"/entities/admin/types\",\"buildingType:create\":\"/entities/admin/types\",\"buildingType:import\":\"/entities/admin/types\",\"buildingType:dataquality\":\"/entities/admin/types\",\"buildingType:details\":\"/entities/admin/types\",\"buildingType:edit\":\"/entities/admin/types\",\"organization:hierarchy\":\"/entities/organizations\",\"organization:list\":\"/entities/organizations\",\"organization:create\":\"/entities/organizations\",\"organization:import\":\"/entities/organizations\",\"organization:dataquality\":\"/entities/organizations\",\"organization:details\":\"/entities/organizations\",\"organization:edit\":\"/entities/organizations\",\"organization:dq-organization-hierarchy\":\"/entities/organizations/dataquality\",\"organization:dq-level1-not-used\":\"/entities/organizations/dataquality\",\"itemTypeFamily:list\":\"/entities/things/things-type\",\"itemTypeFamily:create\":\"/entities/things/things-type\",\"itemTypeFamily:import\":\"/entities/things/things-type\",\"itemTypeFamily:dataquality\":\"/entities/things/things-type\",\"itemTypeFamily:details\":\"/entities/things/things-type\",\"itemTypeFamily:edit\":\"/entities/things/things-type\",\"manufacturer:list\":\"/entities/things/things-type\",\"manufacturer:create\":\"/entities/things/things-type\",\"manufacturer:import\":\"/entities/things/things-type\",\"manufacturer:dataquality\":\"/entities/things/things-type\",\"manufacturer:details\":\"/entities/things/things-type\",\"manufacturer:edit\":\"/entities/things/things-type\",\"object3dModel:list\":\"/entities/surfy/global-admin\",\"object3dModel:create\":\"/entities/surfy/global-admin\",\"object3dModel:import\":\"/entities/surfy/global-admin\",\"object3dModel:dataquality\":\"/entities/surfy/global-admin\",\"object3dModel:details\":\"/entities/surfy/global-admin\",\"object3dModel:edit\":\"/entities/surfy/global-admin\",\"itemType:list\":\"/entities/things/things-type\",\"itemType:create\":\"/entities/things/things-type\",\"itemType:import\":\"/entities/things/things-type\",\"itemType:dataquality\":\"/entities/things/things-type\",\"itemType:shape-editor\":\"/entities/things/things-type\",\"itemType:avatar\":\"/entities/things/things-type\",\"itemType:details\":\"/entities/things/things-type\",\"itemType:edit\":\"/entities/things/things-type\",\"itemType:dq-not-used\":\"/entities/things/things-type/dataquality\",\"itemType:dq-uniq-name\":\"/entities/things/things-type/dataquality\",\"itemType:dq-family-tenant-consistency\":\"/entities/things/things-type/dataquality\",\"itemType:dq-item-type-point-tenant-consistency\":\"/entities/things/things-type/dataquality\",\"building:cards\":\"/entities/spaces\",\"building:pictures\":\"/entities/spaces\",\"building:3d-cards\":\"/entities/spaces\",\"building:gmap\":\"/entities/spaces\",\"building:3d-map\":\"/entities/spaces\",\"building:3d-maplibre\":\"/entities/spaces\",\"building:assets\":\"/entities/spaces\",\"building:list\":\"/entities/spaces\",\"building:create\":\"/entities/spaces\",\"building:import\":\"/entities/spaces\",\"building:dataquality\":\"/entities/spaces\",\"building:cuby\":\"/entities/spaces\",\"building:dashboard\":\"/entities/spaces\",\"building:inventory\":\"/entities/spaces\",\"building:cost-distribution-by-cost-center\":\"/entities/spaces\",\"building:clone\":\"/entities/spaces\",\"building:scenarioSync\":\"/entities/spaces\",\"building:building-3d-gmap\":\"/entities/spaces\",\"building:building-pathfinding\":\"/entities/spaces\",\"building:building-ifc\":\"/entities/spaces\",\"building:building-dxf-importer\":\"/entities/spaces\",\"building:details\":\"/entities/spaces\",\"building:edit\":\"/entities/spaces\",\"building:dq-building-3d-eligibility\":\"/entities/spaces/dataquality\",\"mapScale:list\":\"/entities/spaces\",\"mapScale:create\":\"/entities/spaces\",\"mapScale:import\":\"/entities/spaces\",\"mapScale:dataquality\":\"/entities/spaces\",\"mapScale:details\":\"/entities/spaces\",\"mapScale:edit\":\"/entities/spaces\",\"mapScale:dq-not-used\":\"/entities/spaces/dataquality\",\"mapScale:dq-uniq-name\":\"/entities/spaces/dataquality\",\"structure:list\":\"/entities/spaces\",\"structure:create\":\"/entities/spaces\",\"structure:import\":\"/entities/spaces\",\"structure:dataquality\":\"/entities/spaces\",\"structure:editor\":\"/entities/spaces\",\"structure:gmap-calibrate\":\"/entities/spaces\",\"structure:details\":\"/entities/spaces\",\"structure:edit\":\"/entities/spaces\",\"structure:dq-structure-transform-without-anchor\":\"/entities/spaces/dataquality\",\"structurePoint:list\":\"/entities/spaces/space-points\",\"structurePoint:create\":\"/entities/spaces/space-points\",\"structurePoint:import\":\"/entities/spaces/space-points\",\"structurePoint:dataquality\":\"/entities/spaces/space-points\",\"structurePoint:details\":\"/entities/spaces/space-points\",\"structurePoint:edit\":\"/entities/spaces/space-points\",\"structureExclusion:list\":\"/entities/spaces/space-points\",\"structureExclusion:create\":\"/entities/spaces/space-points\",\"structureExclusion:import\":\"/entities/spaces/space-points\",\"structureExclusion:dataquality\":\"/entities/spaces/space-points\",\"structureExclusion:details\":\"/entities/spaces/space-points\",\"structureExclusion:edit\":\"/entities/spaces/space-points\",\"structureExclusionPoint:list\":\"/entities/spaces/space-points\",\"structureExclusionPoint:create\":\"/entities/spaces/space-points\",\"structureExclusionPoint:import\":\"/entities/spaces/space-points\",\"structureExclusionPoint:dataquality\":\"/entities/spaces/space-points\",\"structureExclusionPoint:details\":\"/entities/spaces/space-points\",\"structureExclusionPoint:edit\":\"/entities/spaces/space-points\",\"floor:list\":\"/entities/spaces\",\"floor:create\":\"/entities/spaces\",\"floor:import\":\"/entities/spaces\",\"floor:dataquality\":\"/entities/spaces\",\"floor:map\":\"/entities/spaces\",\"floor:cuby\":\"/entities/spaces\",\"floor:geojson\":\"/entities/spaces\",\"floor:simple-layout\":\"/entities/spaces\",\"floor:standalone-2d-map\":\"/entities/spaces\",\"floor:details\":\"/entities/spaces\",\"floor:edit\":\"/entities/spaces\",\"distributionCostType:list\":\"/entities/admin/types\",\"distributionCostType:create\":\"/entities/admin/types\",\"distributionCostType:import\":\"/entities/admin/types\",\"distributionCostType:dataquality\":\"/entities/admin/types\",\"distributionCostType:details\":\"/entities/admin/types\",\"distributionCostType:edit\":\"/entities/admin/types\",\"roomTypeGroup:list\":\"/entities/surfy/global-admin\",\"roomTypeGroup:create\":\"/entities/surfy/global-admin\",\"roomTypeGroup:import\":\"/entities/surfy/global-admin\",\"roomTypeGroup:dataquality\":\"/entities/surfy/global-admin\",\"roomTypeGroup:details\":\"/entities/surfy/global-admin\",\"roomTypeGroup:edit\":\"/entities/surfy/global-admin\",\"roomType:list\":\"/entities/admin/types/room-types\",\"roomType:create\":\"/entities/admin/types/room-types\",\"roomType:import\":\"/entities/admin/types/room-types\",\"roomType:dataquality\":\"/entities/admin/types/room-types\",\"roomType:details\":\"/entities/admin/types/room-types\",\"roomType:edit\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:list\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:create\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:import\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:dataquality\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:details\":\"/entities/admin/types/room-types\",\"roomTypeGroupToRoomType:edit\":\"/entities/admin/types/room-types\",\"roomTypeGroupFloor:list\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:create\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:import\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:details\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupFloor:edit\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:list\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:create\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:import\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:details\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"roomTypeGroupBuilding:edit\":\"/entities/admin/admin-reporting/admin-room-type-group-reporting\",\"costCenter:list\":\"/entities/admin/types\",\"costCenter:create\":\"/entities/admin/types\",\"costCenter:import\":\"/entities/admin/types\",\"costCenter:dataquality\":\"/entities/admin/types\",\"costCenter:details\":\"/entities/admin/types\",\"costCenter:edit\":\"/entities/admin/types\",\"costCenterBuilding:list\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:create\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:import\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:details\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterBuilding:edit\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:list\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:create\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:import\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:dataquality\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:details\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"costCenterFloor:edit\":\"/entities/admin/admin-reporting/admin-cost-center-reporting\",\"room:meeting-rooms\":\"/entities/spaces\",\"room:list\":\"/entities/spaces\",\"room:create\":\"/entities/spaces\",\"room:import\":\"/entities/spaces\",\"room:dataquality\":\"/entities/spaces\",\"room:details\":\"/entities/spaces\",\"room:edit\":\"/entities/spaces\",\"room:dq-organization-to-room\":\"/entities/spaces/dataquality\",\"room:dq-room-floor-points-consistency\":\"/entities/spaces/dataquality\",\"room:dq-uniq-name\":\"/entities/spaces/dataquality\",\"room:dq-no-point\":\"/entities/spaces/dataquality\",\"room:dq-capacity-equals-seats-count\":\"/entities/spaces/dataquality\",\"room:dq-capacity-gt-0\":\"/entities/spaces/dataquality\",\"roomPoint:list\":\"/entities/spaces/space-points\",\"roomPoint:create\":\"/entities/spaces/space-points\",\"roomPoint:import\":\"/entities/spaces/space-points\",\"roomPoint:dataquality\":\"/entities/spaces/space-points\",\"roomPoint:details\":\"/entities/spaces/space-points\",\"roomPoint:edit\":\"/entities/spaces/space-points\",\"roomPoint:dq-uniq-position\":\"/entities/spaces/space-points/dataquality\",\"roomPoint:dq-not-used\":\"/entities/spaces/space-points/dataquality\",\"roomPointRoom:list\":\"/entities/spaces/space-points\",\"roomPointRoom:create\":\"/entities/spaces/space-points\",\"roomPointRoom:import\":\"/entities/spaces/space-points\",\"roomPointRoom:dataquality\":\"/entities/spaces/space-points\",\"roomPointRoom:details\":\"/entities/spaces/space-points\",\"roomPointRoom:edit\":\"/entities/spaces/space-points\",\"roomPointSegmentType:list\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:create\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:import\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:dataquality\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:details\":\"/entities/surfy/global-admin\",\"roomPointSegmentType:edit\":\"/entities/surfy/global-admin\",\"roomPointSegment:list\":\"/entities/spaces\",\"roomPointSegment:create\":\"/entities/spaces\",\"roomPointSegment:import\":\"/entities/spaces\",\"roomPointSegment:dataquality\":\"/entities/spaces\",\"roomPointSegment:details\":\"/entities/spaces\",\"roomPointSegment:edit\":\"/entities/spaces\",\"roomPointSegment:dq-not-uniq\":\"/entities/spaces/dataquality\",\"roomPointSegment:dq-point-not-on-same-floor\":\"/entities/spaces/dataquality\",\"itemTypePoint:list\":\"/entities/things/things-type\",\"itemTypePoint:create\":\"/entities/things/things-type\",\"itemTypePoint:import\":\"/entities/things/things-type\",\"itemTypePoint:dataquality\":\"/entities/things/things-type\",\"itemTypePoint:details\":\"/entities/things/things-type\",\"itemTypePoint:edit\":\"/entities/things/things-type\",\"itemTypeVisualEdge:list\":\"/entities/things/things-type\",\"itemTypeVisualEdge:create\":\"/entities/things/things-type\",\"itemTypeVisualEdge:import\":\"/entities/things/things-type\",\"itemTypeVisualEdge:dataquality\":\"/entities/things/things-type\",\"itemTypeVisualEdge:details\":\"/entities/things/things-type\",\"itemTypeVisualEdge:edit\":\"/entities/things/things-type\",\"dimensionType:list\":\"/entities/admin/dimensions\",\"dimensionType:create\":\"/entities/admin/dimensions\",\"dimensionType:import\":\"/entities/admin/dimensions\",\"dimensionType:dataquality\":\"/entities/admin/dimensions\",\"dimensionType:details\":\"/entities/admin/dimensions\",\"dimensionType:edit\":\"/entities/admin/dimensions\",\"dimension:list\":\"/entities/admin/dimensions\",\"dimension:create\":\"/entities/admin/dimensions\",\"dimension:import\":\"/entities/admin/dimensions\",\"dimension:dataquality\":\"/entities/admin/dimensions\",\"dimension:details\":\"/entities/admin/dimensions\",\"dimension:edit\":\"/entities/admin/dimensions\",\"dimension:dq-missing-color\":\"/entities/admin/dimensions/dataquality\",\"dimensionRoom:list\":\"/entities/admin/dimensions\",\"dimensionRoom:create\":\"/entities/admin/dimensions\",\"dimensionRoom:import\":\"/entities/admin/dimensions\",\"dimensionRoom:dataquality\":\"/entities/admin/dimensions\",\"dimensionRoom:details\":\"/entities/admin/dimensions\",\"dimensionRoom:edit\":\"/entities/admin/dimensions\",\"dimensionRoom:dq-wrong-dimension-type\":\"/entities/admin/dimensions/dataquality\",\"dimensionFloor:list\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:create\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:import\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:dataquality\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:details\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionFloor:edit\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:list\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:create\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:import\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:details\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"dimensionBuilding:edit\":\"/entities/admin/admin-reporting/admin-dimension-reporting\",\"factType:list\":\"/entities/spaces/building-facts\",\"factType:create\":\"/entities/spaces/building-facts\",\"factType:import\":\"/entities/spaces/building-facts\",\"factType:dataquality\":\"/entities/spaces/building-facts\",\"factType:details\":\"/entities/spaces/building-facts\",\"factType:edit\":\"/entities/spaces/building-facts\",\"fact:list\":\"/entities/spaces/building-facts\",\"fact:create\":\"/entities/spaces/building-facts\",\"fact:import\":\"/entities/spaces/building-facts\",\"fact:dataquality\":\"/entities/spaces/building-facts\",\"fact:details\":\"/entities/spaces/building-facts\",\"fact:edit\":\"/entities/spaces/building-facts\",\"personState:list\":\"/entities/human/person-type\",\"personState:create\":\"/entities/human/person-type\",\"personState:import\":\"/entities/human/person-type\",\"personState:dataquality\":\"/entities/human/person-type\",\"personState:details\":\"/entities/human/person-type\",\"personState:edit\":\"/entities/human/person-type\",\"personSecurityProfile:list\":\"/entities/human/person-type\",\"personSecurityProfile:create\":\"/entities/human/person-type\",\"personSecurityProfile:import\":\"/entities/human/person-type\",\"personSecurityProfile:dataquality\":\"/entities/human/person-type\",\"personSecurityProfile:details\":\"/entities/human/person-type\",\"personSecurityProfile:edit\":\"/entities/human/person-type\",\"personType:list\":\"/entities/surfy/global-admin\",\"personType:create\":\"/entities/surfy/global-admin\",\"personType:import\":\"/entities/surfy/global-admin\",\"personType:dataquality\":\"/entities/surfy/global-admin\",\"personType:details\":\"/entities/surfy/global-admin\",\"personType:edit\":\"/entities/surfy/global-admin\",\"person:list\":\"/entities/human\",\"person:create\":\"/entities/human\",\"person:import\":\"/entities/human\",\"person:dataquality\":\"/entities/human\",\"person:home\":\"/entities/human\",\"person:person-bookings\":\"/entities/human\",\"person:details\":\"/entities/human\",\"person:edit\":\"/entities/human\",\"person:dq-only-associated-to-building\":\"/entities/human/dataquality\",\"person:dq-near-end-date\":\"/entities/human/dataquality\",\"person:dq-no-affectations\":\"/entities/human/dataquality\",\"person:dq-person-duplicate\":\"/entities/human/dataquality\",\"person:dq-not-affectable-end-date-expired\":\"/entities/human/dataquality\",\"personToPersonType:list\":\"/entities/human/person-relations\",\"personToPersonType:create\":\"/entities/human/person-relations\",\"personToPersonType:import\":\"/entities/human/person-relations\",\"personToPersonType:dataquality\":\"/entities/human/person-relations\",\"personToPersonType:details\":\"/entities/human/person-relations\",\"personToPersonType:edit\":\"/entities/human/person-relations\",\"personToPerson:list\":\"/entities/human/person-relations\",\"personToPerson:create\":\"/entities/human/person-relations\",\"personToPerson:import\":\"/entities/human/person-relations\",\"personToPerson:dataquality\":\"/entities/human/person-relations\",\"personToPerson:details\":\"/entities/human/person-relations\",\"personToPerson:edit\":\"/entities/human/person-relations\",\"vehicleType:list\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:create\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:import\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:dataquality\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:details\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicleType:edit\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:list\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:create\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:import\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:dataquality\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:details\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehiclePropulsionType:edit\":\"/entities/surfy/global-admin/admin-vehicles\",\"vehicle:list\":\"/entities/human/person-vehicles\",\"vehicle:create\":\"/entities/human/person-vehicles\",\"vehicle:import\":\"/entities/human/person-vehicles\",\"vehicle:dataquality\":\"/entities/human/person-vehicles\",\"vehicle:details\":\"/entities/human/person-vehicles\",\"vehicle:edit\":\"/entities/human/person-vehicles\",\"personToVehicle:list\":\"/entities/human/person-vehicles\",\"personToVehicle:create\":\"/entities/human/person-vehicles\",\"personToVehicle:import\":\"/entities/human/person-vehicles\",\"personToVehicle:dataquality\":\"/entities/human/person-vehicles\",\"personToVehicle:details\":\"/entities/human/person-vehicles\",\"personToVehicle:edit\":\"/entities/human/person-vehicles\",\"roomAffectation:room-mouvement-matrix-import\":\"/entities/affectations\",\"roomAffectation:list\":\"/entities/affectations\",\"roomAffectation:create\":\"/entities/affectations\",\"roomAffectation:import\":\"/entities/affectations\",\"roomAffectation:dataquality\":\"/entities/affectations\",\"roomAffectation:details\":\"/entities/affectations\",\"roomAffectation:edit\":\"/entities/affectations\",\"workplaceType:list\":\"/entities/things/things-type\",\"workplaceType:create\":\"/entities/things/things-type\",\"workplaceType:import\":\"/entities/things/things-type\",\"workplaceType:dataquality\":\"/entities/things/things-type\",\"workplaceType:editor\":\"/entities/things/things-type\",\"workplaceType:avatar\":\"/entities/things/things-type\",\"workplaceType:details\":\"/entities/things/things-type\",\"workplaceType:edit\":\"/entities/things/things-type\",\"workplaceType:dq-not-used\":\"/entities/things/things-type/dataquality\",\"workplaceType:dq-workplace-type-item-type-position-z\":\"/entities/things/things-type/dataquality\",\"workplaceUsageType:list\":\"/entities/things/things-type\",\"workplaceUsageType:create\":\"/entities/things/things-type\",\"workplaceUsageType:import\":\"/entities/things/things-type\",\"workplaceUsageType:dataquality\":\"/entities/things/things-type\",\"workplaceUsageType:details\":\"/entities/things/things-type\",\"workplaceUsageType:edit\":\"/entities/things/things-type\",\"workplaceTypeItemType:list\":\"/entities/things/things-type\",\"workplaceTypeItemType:create\":\"/entities/things/things-type\",\"workplaceTypeItemType:import\":\"/entities/things/things-type\",\"workplaceTypeItemType:dataquality\":\"/entities/things/things-type\",\"workplaceTypeItemType:details\":\"/entities/things/things-type\",\"workplaceTypeItemType:edit\":\"/entities/things/things-type\",\"workplace:list\":\"/entities/things\",\"workplace:create\":\"/entities/things\",\"workplace:import\":\"/entities/things\",\"workplace:dataquality\":\"/entities/things\",\"workplace:assign-current-user\":\"/entities/things\",\"workplace:details\":\"/entities/things\",\"workplace:edit\":\"/entities/things\",\"workplace:dq-workplace-transit-with-affectations\":\"/entities/things/dataquality\",\"item:list\":\"/entities/things\",\"item:create\":\"/entities/things\",\"item:import\":\"/entities/things\",\"item:dataquality\":\"/entities/things\",\"item:details\":\"/entities/things\",\"item:edit\":\"/entities/things\",\"item:dq-item-not-in-workplace-room\":\"/entities/things/dataquality\",\"workplaceAffectation:workplace-mouvement-matrix-import\":\"/entities/affectations\",\"workplaceAffectation:list\":\"/entities/affectations\",\"workplaceAffectation:create\":\"/entities/affectations\",\"workplaceAffectation:import\":\"/entities/affectations\",\"workplaceAffectation:dataquality\":\"/entities/affectations\",\"workplaceAffectation:details\":\"/entities/affectations\",\"workplaceAffectation:edit\":\"/entities/affectations\",\"workplaceAffectation:dq-workplace-affectation-latest\":\"/entities/affectations/dataquality\",\"organizationFloor:list\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:create\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:import\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:dataquality\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:details\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationFloor:edit\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:list\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:create\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:import\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:details\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"organizationBuilding:edit\":\"/entities/admin/admin-reporting/admin-organization-reporting\",\"roomTypeFloor:list\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:create\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:import\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:details\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeFloor:edit\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:list\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:create\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:import\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:dataquality\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:details\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"roomTypeBuilding:edit\":\"/entities/admin/admin-reporting/admin-room-type-reporting\",\"itemToPerson:list\":\"/entities/affectations\",\"itemToPerson:create\":\"/entities/affectations\",\"itemToPerson:import\":\"/entities/affectations\",\"itemToPerson:dataquality\":\"/entities/affectations\",\"itemToPerson:details\":\"/entities/affectations\",\"itemToPerson:edit\":\"/entities/affectations\",\"personToBuilding:list\":\"/entities/affectations\",\"personToBuilding:create\":\"/entities/affectations\",\"personToBuilding:import\":\"/entities/affectations\",\"personToBuilding:dataquality\":\"/entities/affectations\",\"personToBuilding:details\":\"/entities/affectations\",\"personToBuilding:edit\":\"/entities/affectations\",\"dimensionToPerson:list\":\"/entities/affectations\",\"dimensionToPerson:create\":\"/entities/affectations\",\"dimensionToPerson:import\":\"/entities/affectations\",\"dimensionToPerson:dataquality\":\"/entities/affectations\",\"dimensionToPerson:details\":\"/entities/affectations\",\"dimensionToPerson:edit\":\"/entities/affectations\",\"dimensionToPerson:dq-dimension-to-person-latest\":\"/entities/affectations/dataquality\",\"dimensionTypeToBuilding:list\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:create\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:import\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:dataquality\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:details\":\"/entities/admin/dimensions\",\"dimensionTypeToBuilding:edit\":\"/entities/admin/dimensions\",\"workingLocation:list\":\"/entities/surfy/global-admin\",\"workingLocation:create\":\"/entities/surfy/global-admin\",\"workingLocation:import\":\"/entities/surfy/global-admin\",\"workingLocation:dataquality\":\"/entities/surfy/global-admin\",\"workingLocation:details\":\"/entities/surfy/global-admin\",\"workingLocation:edit\":\"/entities/surfy/global-admin\",\"personWorkingLocation:my-planning\":\"/entities/planning\",\"personWorkingLocation:obo-planning\":\"/entities/planning\",\"personWorkingLocation:guest-planning\":\"/entities/planning\",\"personWorkingLocation:booking-maps\":\"/entities/planning\",\"personWorkingLocation:booking-security-day\":\"/entities/planning\",\"personWorkingLocation:pwl-dimension\":\"/entities/planning\",\"personWorkingLocation:list\":\"/entities/planning\",\"personWorkingLocation:create\":\"/entities/planning\",\"personWorkingLocation:import\":\"/entities/planning\",\"personWorkingLocation:dataquality\":\"/entities/planning\",\"personWorkingLocation:details\":\"/entities/planning\",\"personWorkingLocation:edit\":\"/entities/planning\",\"personToWorkplaceBooking:dashboard-index\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:list\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:create\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:import\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:dataquality\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:details\":\"/entities/planning/bookings\",\"personToWorkplaceBooking:edit\":\"/entities/planning/bookings\",\"personToRoomBooking:list\":\"/entities/planning/bookings\",\"personToRoomBooking:create\":\"/entities/planning/bookings\",\"personToRoomBooking:import\":\"/entities/planning/bookings\",\"personToRoomBooking:dataquality\":\"/entities/planning/bookings\",\"personToRoomBooking:details\":\"/entities/planning/bookings\",\"personToRoomBooking:edit\":\"/entities/planning/bookings\",\"personToDimensionBooking:list\":\"/entities/planning/bookings\",\"personToDimensionBooking:create\":\"/entities/planning/bookings\",\"personToDimensionBooking:import\":\"/entities/planning/bookings\",\"personToDimensionBooking:dataquality\":\"/entities/planning/bookings\",\"personToDimensionBooking:details\":\"/entities/planning/bookings\",\"personToDimensionBooking:edit\":\"/entities/planning/bookings\",\"personCompanyMission:list\":\"/entities/admin/person-companies\",\"personCompanyMission:create\":\"/entities/admin/person-companies\",\"personCompanyMission:import\":\"/entities/admin/person-companies\",\"personCompanyMission:dataquality\":\"/entities/admin/person-companies\",\"personCompanyMission:details\":\"/entities/admin/person-companies\",\"personCompanyMission:edit\":\"/entities/admin/person-companies\",\"personCompanyToItemType:list\":\"/entities/admin/person-companies\",\"personCompanyToItemType:create\":\"/entities/admin/person-companies\",\"personCompanyToItemType:import\":\"/entities/admin/person-companies\",\"personCompanyToItemType:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToItemType:details\":\"/entities/admin/person-companies\",\"personCompanyToItemType:edit\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:list\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:create\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:import\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:details\":\"/entities/admin/person-companies\",\"personCompanyToRoomType:edit\":\"/entities/admin/person-companies\",\"personCompanyToItem:list\":\"/entities/admin/person-companies\",\"personCompanyToItem:create\":\"/entities/admin/person-companies\",\"personCompanyToItem:import\":\"/entities/admin/person-companies\",\"personCompanyToItem:dataquality\":\"/entities/admin/person-companies\",\"personCompanyToItem:details\":\"/entities/admin/person-companies\",\"personCompanyToItem:edit\":\"/entities/admin/person-companies\",\"legend:list\":\"/entities/admin\",\"legend:create\":\"/entities/admin\",\"legend:import\":\"/entities/admin\",\"legend:dataquality\":\"/entities/admin\",\"legend:details\":\"/entities/admin\",\"legend:edit\":\"/entities/admin\",\"openerPostMessageHost:list\":\"/entities/admin/api\",\"openerPostMessageHost:create\":\"/entities/admin/api\",\"openerPostMessageHost:import\":\"/entities/admin/api\",\"openerPostMessageHost:dataquality\":\"/entities/admin/api\",\"openerPostMessageHost:details\":\"/entities/admin/api\",\"openerPostMessageHost:edit\":\"/entities/admin/api\",\"companyWorkingLocation:list\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:create\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:import\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:dataquality\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:details\":\"/entities/planning/planning-admin\",\"companyWorkingLocation:edit\":\"/entities/planning/planning-admin\",\"bookingVehicleConfiguration:list\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:create\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:import\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:dataquality\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:details\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfiguration:edit\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:list\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:create\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:import\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:dataquality\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:details\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"bookingVehicleConfigurationToParkingRoomTypeConfiguration:edit\":\"/entities/planning/planning-admin/vehicle-planning-admin\",\"jupObjectType:list\":\"/entities/surfy/global-security\",\"jupObjectType:create\":\"/entities/surfy/global-security\",\"jupObjectType:import\":\"/entities/surfy/global-security\",\"jupObjectType:dataquality\":\"/entities/surfy/global-security\",\"jupObjectType:details\":\"/entities/surfy/global-security\",\"jupObjectType:edit\":\"/entities/surfy/global-security\",\"jupUiView:list\":\"/entities/surfy/global-security\",\"jupUiView:create\":\"/entities/surfy/global-security\",\"jupUiView:import\":\"/entities/surfy/global-security\",\"jupUiView:dataquality\":\"/entities/surfy/global-security\",\"jupUiView:details\":\"/entities/surfy/global-security\",\"jupUiView:edit\":\"/entities/surfy/global-security\",\"jupRole:help\":\"/entities/surfy/global-security\",\"jupRole:azure-sync\":\"/entities/surfy/global-security\",\"jupRole:list\":\"/entities/surfy/global-security\",\"jupRole:create\":\"/entities/surfy/global-security\",\"jupRole:import\":\"/entities/surfy/global-security\",\"jupRole:dataquality\":\"/entities/surfy/global-security\",\"jupRole:matrix\":\"/entities/surfy/global-security\",\"jupRole:details\":\"/entities/surfy/global-security\",\"jupRole:edit\":\"/entities/surfy/global-security\",\"jupUiOption:list\":\"/entities/surfy/global-security\",\"jupUiOption:create\":\"/entities/surfy/global-security\",\"jupUiOption:import\":\"/entities/surfy/global-security\",\"jupUiOption:dataquality\":\"/entities/surfy/global-security\",\"jupUiOption:details\":\"/entities/surfy/global-security\",\"jupUiOption:edit\":\"/entities/surfy/global-security\",\"jupUiOperation:list\":\"/entities/surfy/global-security\",\"jupUiOperation:create\":\"/entities/surfy/global-security\",\"jupUiOperation:import\":\"/entities/surfy/global-security\",\"jupUiOperation:dataquality\":\"/entities/surfy/global-security\",\"jupUiOperation:details\":\"/entities/surfy/global-security\",\"jupUiOperation:edit\":\"/entities/surfy/global-security\",\"contentRole:list\":\"/entities/admin/security\",\"contentRole:create\":\"/entities/admin/security\",\"contentRole:import\":\"/entities/admin/security\",\"contentRole:dataquality\":\"/entities/admin/security\",\"contentRole:details\":\"/entities/admin/security\",\"contentRole:edit\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:list\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:create\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:import\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:dataquality\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:details\":\"/entities/admin/security\",\"jupUserCompanyToJupRole:edit\":\"/entities/admin/security\",\"jupRoleToJupUiView:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiView:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:list\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:create\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:import\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:details\":\"/entities/surfy/global-security\",\"jupRoleToJupObjectType:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOption:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiOperation:edit\":\"/entities/surfy/global-security\",\"contentRoleToBuilding:list\":\"/entities/admin/security\",\"contentRoleToBuilding:create\":\"/entities/admin/security\",\"contentRoleToBuilding:import\":\"/entities/admin/security\",\"contentRoleToBuilding:dataquality\":\"/entities/admin/security\",\"contentRoleToBuilding:details\":\"/entities/admin/security\",\"contentRoleToBuilding:edit\":\"/entities/admin/security\",\"contentRoleToUserCompany:list\":\"/entities/admin/security\",\"contentRoleToUserCompany:create\":\"/entities/admin/security\",\"contentRoleToUserCompany:import\":\"/entities/admin/security\",\"contentRoleToUserCompany:dataquality\":\"/entities/admin/security\",\"contentRoleToUserCompany:details\":\"/entities/admin/security\",\"contentRoleToUserCompany:edit\":\"/entities/admin/security\",\"contentRoleToFloor:list\":\"/entities/admin/security\",\"contentRoleToFloor:create\":\"/entities/admin/security\",\"contentRoleToFloor:import\":\"/entities/admin/security\",\"contentRoleToFloor:dataquality\":\"/entities/admin/security\",\"contentRoleToFloor:details\":\"/entities/admin/security\",\"contentRoleToFloor:edit\":\"/entities/admin/security\",\"partnerApiCredential:list\":\"/entities/admin/api\",\"partnerApiCredential:create\":\"/entities/admin/api\",\"partnerApiCredential:import\":\"/entities/admin/api\",\"partnerApiCredential:dataquality\":\"/entities/admin/api\",\"partnerApiCredential:details\":\"/entities/admin/api\",\"partnerApiCredential:edit\":\"/entities/admin/api\",\"apiUser:list\":\"/entities/admin/api\",\"apiUser:create\":\"/entities/admin/api\",\"apiUser:import\":\"/entities/admin/api\",\"apiUser:dataquality\":\"/entities/admin/api\",\"apiUser:edit-fetch-loop-repro\":\"/entities/admin/api\",\"apiUser:details\":\"/entities/admin/api\",\"apiUser:edit\":\"/entities/admin/api\",\"apiUserToJupRole:list\":\"/entities/admin/api\",\"apiUserToJupRole:create\":\"/entities/admin/api\",\"apiUserToJupRole:import\":\"/entities/admin/api\",\"apiUserToJupRole:dataquality\":\"/entities/admin/api\",\"apiUserToJupRole:details\":\"/entities/admin/api\",\"apiUserToJupRole:edit\":\"/entities/admin/api\",\"apiUserToContentRole:list\":\"/entities/admin/api\",\"apiUserToContentRole:create\":\"/entities/admin/api\",\"apiUserToContentRole:import\":\"/entities/admin/api\",\"apiUserToContentRole:dataquality\":\"/entities/admin/api\",\"apiUserToContentRole:details\":\"/entities/admin/api\",\"apiUserToContentRole:edit\":\"/entities/admin/api\",\"jupUiTenantOperation:list\":\"/entities/admin/security\",\"jupUiTenantOperation:create\":\"/entities/admin/security\",\"jupUiTenantOperation:import\":\"/entities/admin/security\",\"jupUiTenantOperation:dataquality\":\"/entities/admin/security\",\"jupUiTenantOperation:details\":\"/entities/admin/security\",\"jupUiTenantOperation:edit\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:list\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:create\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:import\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:dataquality\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:details\":\"/entities/admin/security\",\"contentRoleToJupUiTenantOperation:edit\":\"/entities/admin/security\",\"authentificationConnection:list\":\"/entities/surfy/global-security\",\"authentificationConnection:create\":\"/entities/surfy/global-security\",\"authentificationConnection:import\":\"/entities/surfy/global-security\",\"authentificationConnection:dataquality\":\"/entities/surfy/global-security\",\"authentificationConnection:details\":\"/entities/surfy/global-security\",\"authentificationConnection:edit\":\"/entities/surfy/global-security\",\"userRegistrationTenantRule:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:details\":\"/entities/admin/authentification\",\"userRegistrationTenantRule:edit\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:details\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToJupRole:edit\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:list\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:create\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:import\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:dataquality\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:details\":\"/entities/admin/authentification\",\"userRegistrationTenantRuleToContentRole:edit\":\"/entities/admin/authentification\",\"partnerExportMappingConfiguration:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfiguration:edit\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMapping:edit\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingToRoomType:edit\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:list\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:create\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:import\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:dataquality\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:details\":\"/entities/admin/partner-export-mapping\",\"partnerExportMappingConfigurationToFloor:edit\":\"/entities/admin/partner-export-mapping\",\"jupRoleToJupUiLayout:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayout:edit\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:list\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:create\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:import\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:dataquality\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:details\":\"/entities/surfy/global-security\",\"jupUiLayoutTab:edit\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:list\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:create\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:import\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:dataquality\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:details\":\"/entities/surfy/global-security\",\"jupRoleToJupUiLayoutTab:edit\":\"/entities/surfy/global-security\",\"itemFact:list\":\"/entities/things/items-fact\",\"itemFact:create\":\"/entities/things/items-fact\",\"itemFact:import\":\"/entities/things/items-fact\",\"itemFact:dataquality\":\"/entities/things/items-fact\",\"itemFact:details\":\"/entities/things/items-fact\",\"itemFact:edit\":\"/entities/things/items-fact\",\"featureFamily:list\":\"/entities/help\",\"featureFamily:create\":\"/entities/help\",\"featureFamily:import\":\"/entities/help\",\"featureFamily:dataquality\":\"/entities/help\",\"featureFamily:details\":\"/entities/help\",\"featureFamily:edit\":\"/entities/help\",\"featureGroup:list\":\"/entities/help\",\"featureGroup:create\":\"/entities/help\",\"featureGroup:import\":\"/entities/help\",\"featureGroup:dataquality\":\"/entities/help\",\"featureGroup:details\":\"/entities/help\",\"featureGroup:edit\":\"/entities/help\",\"feature:list\":\"/entities/help\",\"feature:create\":\"/entities/help\",\"feature:import\":\"/entities/help\",\"feature:dataquality\":\"/entities/help\",\"feature:details\":\"/entities/help\",\"feature:edit\":\"/entities/help\"}")
 };
 //#endregion
 //#region src/surfy-help/metaModel/metamodel.json.helper.ts
@@ -1637,7 +1637,7 @@ function capitalize(string) {
 	return string.charAt(0).toUpperCase() + string.slice(1);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/responsivePropType/responsivePropType.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/responsivePropType/responsivePropType.mjs
 var import_prop_types = /* @__PURE__ */ __toESM(require_prop_types(), 1);
 var responsivePropType = process.env.NODE_ENV !== "production" ? import_prop_types.default.oneOfType([
 	import_prop_types.default.number,
@@ -1697,7 +1697,7 @@ function deepmerge(target, source, options = { clone: true }) {
 	return output;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/cssContainerQueries/cssContainerQueries.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/cssContainerQueries/cssContainerQueries.mjs
 var MIN_WIDTH_PATTERN = /min-width:\s*([0-9.]+)/;
 /**
 * WARN: Mutably updates the `css` object.
@@ -1764,7 +1764,7 @@ function cssContainerQueries(themeInput) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/createBreakpoints/createBreakpoints.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/createBreakpoints/createBreakpoints.mjs
 var sortBreakpointsValues = (values) => {
 	const breakpointsAsArray = Object.keys(values).map((key) => ({
 		key,
@@ -1824,7 +1824,7 @@ function createBreakpoints(breakpoints) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/breakpoints/breakpoints.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/breakpoints/breakpoints.mjs
 var EMPTY_THEME$2 = {};
 /** @internal */
 var values = {
@@ -1901,7 +1901,7 @@ function hasBreakpoint(breakpoints, value) {
 	return false;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/style/style.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/style/style.mjs
 /**
 * HACK: The `alternateProp` logic is there because our theme looks like this:
 * {
@@ -1977,7 +1977,7 @@ function style$1(options) {
 	return fn;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/spacing/spacing.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/spacing/spacing.mjs
 var EMPTY_THEME$1 = { internal_cache: {} };
 var properties = {
 	m: "margin",
@@ -2138,7 +2138,7 @@ spacingFn.propTypes = process.env.NODE_ENV !== "production" ? Array.from(spacing
 }, {}) : {};
 spacingFn.filterProps = spacingKeys;
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/compose/compose.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/compose/compose.mjs
 function compose(...styles) {
 	const handlers = styles.reduce((acc, style) => {
 		style.filterProps.forEach((prop) => {
@@ -2156,7 +2156,7 @@ function compose(...styles) {
 	return fn;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/borders/borders.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/borders/borders.mjs
 /** @internal */
 function borderTransform(value) {
 	if (typeof value !== "number") return value;
@@ -2193,7 +2193,7 @@ borderRadius.propTypes = process.env.NODE_ENV !== "production" ? { borderRadius:
 borderRadius.filterProps = ["borderRadius"];
 compose(border, borderTop, borderRight, borderBottom, borderLeft, borderColor, borderTopColor, borderRightColor, borderBottomColor, borderLeftColor, borderRadius, outline, outlineColor);
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/cssGrid/cssGrid.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/cssGrid/cssGrid.mjs
 var gap = (props) => {
 	if (props.gap !== void 0 && props.gap !== null) {
 		const transformer = createUnaryUnit(props.theme, "spacing", 8, "gap");
@@ -2226,7 +2226,7 @@ rowGap.propTypes = process.env.NODE_ENV !== "production" ? { rowGap: responsiveP
 rowGap.filterProps = ["rowGap"];
 compose(gap, columnGap, rowGap, style$1({ prop: "gridColumn" }), style$1({ prop: "gridRow" }), style$1({ prop: "gridAutoFlow" }), style$1({ prop: "gridAutoColumns" }), style$1({ prop: "gridAutoRows" }), style$1({ prop: "gridTemplateColumns" }), style$1({ prop: "gridTemplateRows" }), style$1({ prop: "gridTemplateAreas" }), style$1({ prop: "gridArea" }));
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/palette/palette.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/palette/palette.mjs
 /** @internal */
 function paletteTransform(value, userValue) {
 	if (userValue === "grey") return userValue;
@@ -2247,7 +2247,7 @@ compose(style$1({
 	transform: paletteTransform
 }));
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/sizing/sizing.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/sizing/sizing.mjs
 var breakpointsValues = values;
 /** @internal */
 function sizingTransform(value) {
@@ -2298,7 +2298,7 @@ style$1({
 });
 compose(width, maxWidth, minWidth, height, maxHeight, minHeight, style$1({ prop: "boxSizing" }));
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/styleFunctionSx/defaultSxConfig.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/styleFunctionSx/defaultSxConfig.mjs
 var defaultSxConfig = {
 	border: {
 		themeKey: "borders",
@@ -2450,7 +2450,7 @@ var defaultSxConfig = {
 	}
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/styleFunctionSx/styleFunctionSx.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/styleFunctionSx/styleFunctionSx.mjs
 var EMPTY_THEME = {};
 function unstable_createStyleFunctionSx() {
 	function styleFunctionSx(props) {
@@ -3748,7 +3748,7 @@ var isPropValid = /* #__PURE__ */ memoize(function(prop) {
 	return reactPropsRegex.test(prop) || prop.charCodeAt(0) === 111 && prop.charCodeAt(1) === 110 && prop.charCodeAt(2) < 91;
 });
 //#endregion
-//#region node_modules/.pnpm/@emotion+styled@11.14.1_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@types+react@19.3.0_react@19.3.0/node_modules/@emotion/styled/base/dist/emotion-styled-base.browser.esm.js
+//#region node_modules/.pnpm/@emotion+styled@11.14.1_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_support_66567a6d487057730d85a2b89a7b6a94/node_modules/@emotion/styled/base/dist/emotion-styled-base.browser.esm.js
 var isDevelopment = false;
 var testOmitPropsOnStringTag = isPropValid;
 var testOmitPropsOnComponent = function testOmitPropsOnComponent(key) {
@@ -3846,7 +3846,7 @@ var createStyled$1 = function createStyled(tag, options) {
 	};
 };
 //#endregion
-//#region node_modules/.pnpm/@emotion+styled@11.14.1_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@types+react@19.3.0_react@19.3.0/node_modules/@emotion/styled/dist/emotion-styled.browser.esm.js
+//#region node_modules/.pnpm/@emotion+styled@11.14.1_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_support_66567a6d487057730d85a2b89a7b6a94/node_modules/@emotion/styled/dist/emotion-styled.browser.esm.js
 var tags = [
 	"a",
 	"abbr",
@@ -3988,7 +3988,7 @@ tags.forEach(function(tagName) {
 	styled$3[tagName] = styled$3(tagName);
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+styled-engine@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emot_ed87484fdbd85921ed28e0bf330f4eeb/node_modules/@mui/styled-engine/index.mjs
+//#region node_modules/.pnpm/@mui+styled-engine@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_suppor_2b210160cf52eee740d1b6b5b1905b65/node_modules/@mui/styled-engine/index.mjs
 /**
 * @mui/styled-engine v9.4.0
 *
@@ -4023,10 +4023,10 @@ function internal_serializeStyles(styles) {
 * @typeparam SpecificComponentProps  Props which will *not* be included when withComponent is called
 */
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/createTheme/shape.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/createTheme/shape.mjs
 var shape = { borderRadius: 4 };
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/createTheme/createSpacing.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/createTheme/createSpacing.mjs
 function createSpacing(spacingInput = 8, transform = createUnarySpacing({ spacing: spacingInput })) {
 	if (spacingInput.mui) return spacingInput;
 	const spacing = (...argsInput) => {
@@ -4042,7 +4042,7 @@ function createSpacing(spacingInput = 8, transform = createUnarySpacing({ spacin
 	return spacing;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/createTheme/applyStyles.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/createTheme/applyStyles.mjs
 /**
 * A universal utility to style components with multiple color modes. Always use it from the theme object.
 * It works with:
@@ -4118,7 +4118,7 @@ function applyStyles(key, styles) {
 	return {};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/createTheme/createTheme.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/createTheme/createTheme.mjs
 function createTheme$1(options = {}, ...args) {
 	const { breakpoints: breakpointsInput = {}, palette: paletteInput = {}, spacing: spacingInput, shape: shapeInput = {}, ...other } = options;
 	const breakpoints = createBreakpoints(breakpointsInput);
@@ -4154,7 +4154,7 @@ function createTheme$1(options = {}, ...args) {
 	return muiTheme;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/useThemeWithoutDefault/useThemeWithoutDefault.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/useThemeWithoutDefault/useThemeWithoutDefault.mjs
 function isObjectEmpty(obj) {
 	return Object.keys(obj).length === 0;
 }
@@ -4163,7 +4163,7 @@ function useThemeWithoutDefault(defaultTheme = null) {
 	return !contextTheme || isObjectEmpty(contextTheme) ? defaultTheme : contextTheme;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/useTheme/useTheme.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/useTheme/useTheme.mjs
 var systemDefaultTheme$1 = createTheme$1();
 function useTheme$1(defaultTheme = systemDefaultTheme$1) {
 	return useThemeWithoutDefault(defaultTheme);
@@ -4187,7 +4187,7 @@ var createClassNameGenerator = () => {
 };
 var ClassNameGenerator = createClassNameGenerator();
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/createBox/createBox.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/createBox/createBox.mjs
 function createBox(options = {}) {
 	const { themeId, defaultTheme, defaultClassName = "MuiBox-root", generateClassName } = options;
 	const BoxRoot = styled$2("div", { shouldForwardProp: (prop) => prop !== "theme" && prop !== "sx" && prop !== "as" })(styleFunctionSx_default);
@@ -4233,7 +4233,7 @@ function generateUtilityClasses(componentName, slots, globalStatePrefix = "Mui")
 	return result;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/Box/Box.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/Box/Box.mjs
 /**
 *
 * Demos:
@@ -4298,7 +4298,7 @@ function getDisplayName(Component) {
 	}
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/preprocessStyles.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/preprocessStyles.mjs
 function preprocessStyles(input) {
 	const { variants, ...style } = input;
 	const result = {
@@ -4313,7 +4313,7 @@ function preprocessStyles(input) {
 	return result;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/createStyled/createStyled.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/createStyled/createStyled.mjs
 var systemDefaultTheme = createTheme$1();
 function shouldForwardProp(prop) {
 	return prop !== "ownerState" && prop !== "theme" && prop !== "sx" && prop !== "as";
@@ -4528,7 +4528,7 @@ function clamp(val, min = Number.MIN_SAFE_INTEGER, max = Number.MAX_SAFE_INTEGER
 	return Math.max(min, Math.min(val, max));
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/colorManipulator/colorManipulator.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/colorManipulator/colorManipulator.mjs
 /**
 * Returns a number whose value is limited to the given range.
 * @param {number} value The value to be clamped
@@ -4779,7 +4779,7 @@ function private_safeEmphasize(color, coefficient, warning) {
 	}
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/DefaultPropsProvider/DefaultPropsProvider.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/DefaultPropsProvider/DefaultPropsProvider.mjs
 var PropsContext = /*#__PURE__*/ React$1.createContext(void 0);
 function DefaultPropsProvider$1({ value, children }) {
 	return /*#__PURE__*/ jsx(PropsContext.Provider, {
@@ -4813,7 +4813,7 @@ function useDefaultProps$1({ props, name }) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/memoTheme.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/memoTheme.mjs
 var arg = { theme: void 0 };
 /**
 * Memoize style function on theme.
@@ -4834,7 +4834,7 @@ function unstable_memoTheme(styleFn) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/cssVars/createGetCssVar.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/cssVars/createGetCssVar.mjs
 /**
 * The benefit of this function is to help developers get CSS var from theme without specifying the whole variable
 * and they does not need to remember the prefix (defined once).
@@ -4852,7 +4852,7 @@ function createGetCssVar$1(prefix = "") {
 	return getCssVar;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/cssVars/cssVarsParser.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/cssVars/cssVarsParser.mjs
 var prototypePollutingKeys = /* @__PURE__ */ new Set([
 	"__proto__",
 	"constructor",
@@ -4971,7 +4971,7 @@ function cssVarsParser(theme, options) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/cssVars/prepareCssVars.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/cssVars/prepareCssVars.mjs
 function prepareCssVars(theme, parserConfig = {}) {
 	const { getSelector = defaultGetSelector, disableCssColorScheme, colorSchemeSelector: selector, enableContrastVars } = parserConfig;
 	const { colorSchemes = {}, components, defaultColorScheme = "light", ...otherTheme } = theme;
@@ -5058,7 +5058,7 @@ function prepareCssVars(theme, parserConfig = {}) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/cssVars/getColorSchemeSelector.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/cssVars/getColorSchemeSelector.mjs
 function createGetColorSchemeSelector(selector) {
 	return function getColorSchemeSelector(colorScheme) {
 		if (selector === "media") {
@@ -5077,13 +5077,13 @@ function createGetColorSchemeSelector(selector) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/colors/common.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/colors/common.mjs
 var common = {
 	black: "#000",
 	white: "#fff"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/colors/grey.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/colors/grey.mjs
 var grey = {
 	50: "#fafafa",
 	100: "#f5f5f5",
@@ -5101,7 +5101,7 @@ var grey = {
 	A700: "#616161"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/colors/purple.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/colors/purple.mjs
 var purple = {
 	50: "#f3e5f5",
 	100: "#e1bee7",
@@ -5119,7 +5119,7 @@ var purple = {
 	A700: "#aa00ff"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/colors/red.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/colors/red.mjs
 var red = {
 	50: "#ffebee",
 	100: "#ffcdd2",
@@ -5137,7 +5137,7 @@ var red = {
 	A700: "#d50000"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/colors/orange.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/colors/orange.mjs
 var orange = {
 	50: "#fff3e0",
 	100: "#ffe0b2",
@@ -5155,7 +5155,7 @@ var orange = {
 	A700: "#ff6d00"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/colors/blue.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/colors/blue.mjs
 var blue = {
 	50: "#e3f2fd",
 	100: "#bbdefb",
@@ -5173,7 +5173,7 @@ var blue = {
 	A700: "#2962ff"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/colors/lightBlue.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/colors/lightBlue.mjs
 var lightBlue = {
 	50: "#e1f5fe",
 	100: "#b3e5fc",
@@ -5191,7 +5191,7 @@ var lightBlue = {
 	A700: "#0091ea"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/colors/green.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/colors/green.mjs
 var green = {
 	50: "#e8f5e9",
 	100: "#c8e6c9",
@@ -5209,7 +5209,7 @@ var green = {
 	A700: "#00c853"
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/createPalette.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/createPalette.mjs
 function getLight() {
 	return {
 		text: {
@@ -5452,7 +5452,7 @@ const theme2 = createTheme({ palette: {
 	}, other);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/focusVisible.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/focusVisible.mjs
 var focusVisibleOffsetVar = "--_focusVisible-offset";
 var focusVisibleBehaviorVar = "--_focusVisible-behavior";
 var focusVisibleShadowVar = "--_focusVisible-shadow";
@@ -5505,7 +5505,7 @@ function wireFocusVisibleVars(resolved) {
 	return resolved;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+sty_36105e7ee58f34dff8f9008d36bb9dba/node_modules/@mui/system/cssVars/prepareTypographyVars.mjs
+//#region node_modules/.pnpm/@mui+system@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-colo_5ee0f86024f93d7258de5be36f171945/node_modules/@mui/system/cssVars/prepareTypographyVars.mjs
 function prepareTypographyVars(typography) {
 	const vars = {};
 	Object.entries(typography).forEach((entry) => {
@@ -5515,7 +5515,7 @@ function prepareTypographyVars(typography) {
 	return vars;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/createMixins.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/createMixins.mjs
 function createMixins(breakpoints, mixins) {
 	return {
 		toolbar: {
@@ -5527,7 +5527,7 @@ function createMixins(breakpoints, mixins) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/createTypography.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/createTypography.mjs
 function round$1(value) {
 	return Math.round(value * 1e5) / 1e5;
 }
@@ -5586,7 +5586,7 @@ function createTypography(palette, typography) {
 	}, other, { clone: false });
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/shadows.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/shadows.mjs
 var shadowKeyUmbraOpacity = .2;
 var shadowKeyPenumbraOpacity = .14;
 var shadowAmbientShadowOpacity = .12;
@@ -5625,7 +5625,7 @@ var shadows = [
 	createShadow(0, 11, 15, -7, 0, 24, 38, 3, 0, 9, 46, 8)
 ];
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/createTransitions.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/createTransitions.mjs
 var DEFAULT_TRANSITION_PROPS$1 = ["all"];
 var EMPTY_OPTIONS$1 = {};
 var easing = {
@@ -5685,7 +5685,7 @@ function createTransitions(inputTransitions) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/createMotion.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/createMotion.mjs
 var EMPTY_MOTION = {};
 function createMotion(inputMotion = EMPTY_MOTION) {
 	return {
@@ -5694,7 +5694,7 @@ function createMotion(inputMotion = EMPTY_MOTION) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/zIndex.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/zIndex.mjs
 var zIndex = {
 	mobileStepper: 1e3,
 	fab: 1050,
@@ -5706,7 +5706,7 @@ var zIndex = {
 	tooltip: 1500
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/stringifyTheme.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/stringifyTheme.mjs
 function isSerializable(val) {
 	return isPlainObject(val) || typeof val === "undefined" || typeof val === "string" || typeof val === "boolean" || typeof val === "number" || Array.isArray(val);
 }
@@ -5754,7 +5754,7 @@ theme.transitions = createTransitions(theme.transitions || {});
 export default theme;`;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/createThemeNoVars.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/createThemeNoVars.mjs
 function coefficientToPercentage(coefficient) {
 	if (typeof coefficient === "number") return `${(coefficient * 100).toFixed(0)}%`;
 	return `calc((${coefficient}) * 100%)`;
@@ -5863,7 +5863,7 @@ function createThemeNoVars(options = {}, ...args) {
 	return muiTheme;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/getOverlayAlpha.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/getOverlayAlpha.mjs
 function getOverlayAlpha(elevation) {
 	let alphaValue;
 	if (elevation < 1) alphaValue = 5.11916 * elevation ** 2;
@@ -5871,7 +5871,7 @@ function getOverlayAlpha(elevation) {
 	return Math.round(alphaValue * 10) / 1e3;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/createColorScheme.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/createColorScheme.mjs
 var defaultDarkOverlays = [...Array(25)].map((_, index) => {
 	if (index === 0) return "none";
 	const overlay = getOverlayAlpha(index);
@@ -5905,12 +5905,12 @@ function createColorScheme(options) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/shouldSkipGeneratingVar.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/shouldSkipGeneratingVar.mjs
 function shouldSkipGeneratingVar(keys) {
 	return keys[0] === "motion" || keys[0] === "focusVisible" || !!keys[0].match(/(cssVarPrefix|colorSchemeSelector|modularCssLayers|rootSelector|typography|mixins|breakpoints|direction|transitions)/) || !!keys[0].match(/sxConfig$/) || keys[0] === "palette" && !!keys[1]?.match(/(mode|contrastThreshold|tonalOffset)/);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/excludeVariablesFromRoot.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/excludeVariablesFromRoot.mjs
 /**
 * @internal These variables should not appear in the :root stylesheet when the `defaultColorScheme="dark"`
 */
@@ -5920,7 +5920,7 @@ var excludeVariablesFromRoot = (cssVarPrefix) => [
 	`--${cssVarPrefix ? `${cssVarPrefix}-` : ""}palette-AppBar-darkColor`
 ];
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/createGetSelector.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/createGetSelector.mjs
 var createGetSelector_default = (theme) => (colorScheme, css) => {
 	const root = theme.rootSelector || ":root";
 	const selector = theme.colorSchemeSelector;
@@ -5956,7 +5956,7 @@ var createGetSelector_default = (theme) => (colorScheme, css) => {
 	return root;
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/createThemeWithVars.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/createThemeWithVars.mjs
 function assignNode(obj, keys) {
 	keys.forEach((k) => {
 		if (!obj[k]) obj[k] = {};
@@ -6286,7 +6286,7 @@ function createThemeWithVars(options = {}, ...args) {
 	return theme;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/createTheme.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/createTheme.mjs
 function attachColorScheme(theme, scheme, colorScheme) {
 	if (!theme.colorSchemes) return;
 	if (colorScheme) theme.colorSchemes[scheme] = {
@@ -6367,35 +6367,35 @@ function createTheme(options = {}, ...args) {
 	}, ...args);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/defaultTheme.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/defaultTheme.mjs
 var defaultTheme$1 = createTheme();
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/identifier.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/identifier.mjs
 var identifier_default = "$$material";
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/useTheme.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/useTheme.mjs
 function useTheme() {
 	const theme = useTheme$1(defaultTheme$1);
 	if (process.env.NODE_ENV !== "production") React$1.useDebugValue(theme);
 	return theme["$$material"] || theme;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/slotShouldForwardProp.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/slotShouldForwardProp.mjs
 function slotShouldForwardProp(prop) {
 	return prop !== "ownerState" && prop !== "theme" && prop !== "sx" && prop !== "as";
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/rootShouldForwardProp.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/rootShouldForwardProp.mjs
 var rootShouldForwardProp = (prop) => slotShouldForwardProp(prop) && prop !== "classes";
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/styled.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/styled.mjs
 var styled$1 = createStyled({
 	themeId: identifier_default,
 	defaultTheme: defaultTheme$1,
 	rootShouldForwardProp
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/DefaultPropsProvider/DefaultPropsProvider.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/DefaultPropsProvider/DefaultPropsProvider.mjs
 function DefaultPropsProvider(props) {
 	return /*#__PURE__*/ jsx(DefaultPropsProvider$1, { ...props });
 }
@@ -6413,13 +6413,13 @@ function useDefaultProps(params) {
 	return useDefaultProps$1(params);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/utils/memoTheme.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/utils/memoTheme.mjs
 var memoTheme = unstable_memoTheme;
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/utils/capitalize.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/utils/capitalize.mjs
 var capitalize_default = capitalize;
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/utils/createSimplePaletteValueFilter.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/utils/createSimplePaletteValueFilter.mjs
 /**
 * Type guard to check if the object has a "main" property of type string.
 *
@@ -6455,7 +6455,7 @@ function createSimplePaletteValueFilter(additionalPropertiesToCheck = []) {
 	return ([, value]) => value && checkSimplePaletteColorValues(value, additionalPropertiesToCheck);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/Typography/typographyClasses.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/Typography/typographyClasses.mjs
 function getTypographyUtilityClass(slot) {
 	return generateUtilityClass("MuiTypography", slot);
 }
@@ -6483,7 +6483,7 @@ generateUtilityClasses("MuiTypography", [
 	"gutterBottom"
 ]);
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/Typography/Typography.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/Typography/Typography.mjs
 var useUtilityClasses$4 = (ownerState) => {
 	const { align, gutterBottom, noWrap, variant, classes } = ownerState;
 	return composeClasses({ root: [
@@ -6708,7 +6708,7 @@ process.env.NODE_ENV !== "production" && (Typography$1.propTypes = {
 	variantMapping: import_prop_types.default.object
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/SvgIcon/svgIconClasses.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/SvgIcon/svgIconClasses.mjs
 function getSvgIconUtilityClass(slot) {
 	return generateUtilityClass("MuiSvgIcon", slot);
 }
@@ -6725,7 +6725,7 @@ generateUtilityClasses("MuiSvgIcon", [
 	"fontSizeLarge"
 ]);
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/styles/reducedMotion.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/styles/reducedMotion.mjs
 var defaultStyles = { transition: "none" };
 function resolveReducedMotionStyles(reducedMotion, styles) {
 	if (reducedMotion === "always") return styles;
@@ -6733,7 +6733,7 @@ function resolveReducedMotionStyles(reducedMotion, styles) {
 	return null;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/transitions/utils.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/transitions/utils.mjs
 var reflow = (node) => node.scrollTop;
 var EMPTY_STYLE = {};
 var DEFAULT_TRANSITION_PROPS = ["all"];
@@ -6786,7 +6786,7 @@ function getTransitionStyles(theme, props = DEFAULT_TRANSITION_PROPS, options = 
 	} : transitionStyles;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/SvgIcon/SvgIcon.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/SvgIcon/SvgIcon.mjs
 var useUtilityClasses$3 = (ownerState) => {
 	const { color, fontSize, classes } = ownerState;
 	return composeClasses({ root: [
@@ -6980,7 +6980,7 @@ process.env.NODE_ENV !== "production" && (SvgIcon.propTypes = {
 });
 SvgIcon.muiName = "SvgIcon";
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/SvgIcon/createSvgIcon.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/SvgIcon/createSvgIcon.mjs
 /**
 * Private module reserved for @mui packages.
 */
@@ -6998,7 +6998,7 @@ function createSvgIcon(path, displayName) {
 	return /*#__PURE__*/ React$1.memo(/*#__PURE__*/ React$1.forwardRef(Component));
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/internal/svg-icons/MoreHoriz.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/internal/svg-icons/MoreHoriz.mjs
 /**
 * @ignore - internal component.
 */
@@ -7054,7 +7054,7 @@ function isFocusVisible(element) {
 	return false;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/utils/useForkRef.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/utils/useForkRef.mjs
 var useForkRef_default = useForkRef;
 //#endregion
 //#region node_modules/.pnpm/@mui+utils@9.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@mui/utils/useEventCallback/useEventCallback.mjs
@@ -7070,10 +7070,10 @@ function useEventCallback(fn) {
 	return React$1.useRef((...args) => (0, ref.current)(...args)).current;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/utils/useEventCallback.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/utils/useEventCallback.mjs
 var useEventCallback_default = useEventCallback;
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/utils/useFocusableWhenDisabled.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/utils/useFocusableWhenDisabled.mjs
 function useFocusableWhenDisabled(parameters) {
 	const { focusableWhenDisabled, disabled, composite = false, tabIndex: tabIndexProp = 0, isNativeButton } = parameters;
 	const isFocusableComposite = composite && focusableWhenDisabled !== false;
@@ -7100,7 +7100,7 @@ function useFocusableWhenDisabled(parameters) {
 	]);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/ButtonBase/useButtonBase.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/ButtonBase/useButtonBase.mjs
 var EMPTY$1 = {};
 function useButtonBase(parameters) {
 	const { nativeButton, nativeButtonProp, internalNativeButton = nativeButton, allowInferredHostMismatch = false, disabled, type, hasFormAction = false, tabIndex = 0, focusableWhenDisabled: focusableWhenDisabledParam, stopEventPropagation = false, onBeforeKeyDown, onBeforeKeyUp } = parameters;
@@ -7226,7 +7226,7 @@ function useLazyRef(init, initArg) {
 	return ref;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/useLazyRipple/useLazyRipple.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/useLazyRipple/useLazyRipple.mjs
 /**
 * Lazy initialization container for the Ripple instance. This improves
 * performance by delaying mounting the ripple until it's needed.
@@ -7337,7 +7337,7 @@ function useTimeout() {
 	return timeout;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/ButtonBase/Ripple.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/ButtonBase/Ripple.mjs
 /**
 * @ignore - internal component.
 */
@@ -7419,7 +7419,7 @@ process.env.NODE_ENV !== "production" && (Ripple.propTypes = {
 	timeout: import_prop_types.default.number.isRequired
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/ButtonBase/touchRippleClasses.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/ButtonBase/touchRippleClasses.mjs
 var touchRippleClasses = generateUtilityClasses("MuiTouchRipple", [
 	"root",
 	"ripple",
@@ -7430,7 +7430,7 @@ var touchRippleClasses = generateUtilityClasses("MuiTouchRipple", [
 	"childPulsate"
 ]);
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/transitions/useReducedMotion.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/transitions/useReducedMotion.mjs
 var MEDIA_QUERY = "(prefers-reduced-motion: reduce)";
 var REDUCED_MOTION_DURATION = 0;
 var REDUCED_MOTION_DELAY = "0ms";
@@ -7521,7 +7521,7 @@ function useReducedMotion(mode, disablePrefersReducedMotion) {
 	}), [shouldReduceMotion]);
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/ButtonBase/TouchRipple.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/ButtonBase/TouchRipple.mjs
 var DURATION = 550;
 var EMPTY_OBJ = {};
 var EMPTY_ARRAY = [];
@@ -7899,7 +7899,7 @@ process.env.NODE_ENV !== "production" && (TouchRipple.propTypes = {
 	className: import_prop_types.default.string
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/ButtonBase/buttonBaseClasses.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/ButtonBase/buttonBaseClasses.mjs
 function getButtonBaseUtilityClass(slot) {
 	return generateUtilityClass("MuiButtonBase", slot);
 }
@@ -7909,7 +7909,7 @@ var buttonBaseClasses = generateUtilityClasses("MuiButtonBase", [
 	"focusVisible"
 ]);
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/ButtonBase/ButtonBase.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/ButtonBase/ButtonBase.mjs
 var useUtilityClasses$2 = (ownerState) => {
 	const { disabled, focusVisible, focusVisibleClassName, suppressFocusVisible, classes } = ownerState;
 	const composedClasses = composeClasses({ root: [
@@ -8269,7 +8269,7 @@ process.env.NODE_ENV !== "production" && (ButtonBase.propTypes = {
 	type: import_prop_types.default.string
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/Breadcrumbs/BreadcrumbCollapsed.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/Breadcrumbs/BreadcrumbCollapsed.mjs
 var BreadcrumbCollapsedButton = styled$1(ButtonBase, { name: "MuiBreadcrumbCollapsed" })(memoTheme(({ theme }) => ({
 	display: "flex",
 	marginLeft: `calc(${theme.spacing(1)} * 0.5)`,
@@ -8328,7 +8328,7 @@ process.env.NODE_ENV !== "production" && (BreadcrumbCollapsed.propTypes = {
 	sx: import_prop_types.default.object
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/Breadcrumbs/breadcrumbsClasses.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/Breadcrumbs/breadcrumbsClasses.mjs
 function getBreadcrumbsUtilityClass(slot) {
 	return generateUtilityClass("MuiBreadcrumbs", slot);
 }
@@ -8339,7 +8339,7 @@ var breadcrumbsClasses = generateUtilityClasses("MuiBreadcrumbs", [
 	"separator"
 ]);
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/Breadcrumbs/Breadcrumbs.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/Breadcrumbs/Breadcrumbs.mjs
 var useUtilityClasses$1 = (ownerState) => {
 	const { classes } = ownerState;
 	return composeClasses({
@@ -9606,6 +9606,13 @@ var ViewCoreSchema = {
 				hidden: void 0,
 				isStandalone: void 0,
 				shouldDisplay: void 0
+			},
+			"dq-item-type-point-tenant-consistency": {
+				name: "dq-item-type-point-tenant-consistency",
+				isDefaultView: void 0,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
 			}
 		}
 	},
@@ -9720,6 +9727,13 @@ var ViewCoreSchema = {
 			},
 			clone: {
 				name: "clone",
+				isDefaultView: void 0,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			scenarioSync: {
+				name: "scenarioSync",
 				isDefaultView: void 0,
 				hidden: void 0,
 				isStandalone: void 0,
@@ -10638,6 +10652,13 @@ var ViewCoreSchema = {
 		dataQualities: {
 			"dq-organization-to-room": {
 				name: "dq-organization-to-room",
+				isDefaultView: void 0,
+				hidden: void 0,
+				isStandalone: void 0,
+				shouldDisplay: void 0
+			},
+			"dq-room-floor-points-consistency": {
+				name: "dq-room-floor-points-consistency",
 				isDefaultView: void 0,
 				hidden: void 0,
 				isStandalone: void 0,
@@ -34622,6 +34643,21 @@ var dimensionObjectTypeDefintion = {
 			},
 			association: void 0
 		},
+		comment: {
+			name: "comment",
+			objectTypeName: "dimension",
+			type: "text",
+			options: {
+				mandatory: false,
+				readOnly: false,
+				calculated: false,
+				technical: false,
+				unit: void 0,
+				defaultValue: void 0,
+				regex: void 0
+			},
+			association: void 0
+		},
 		createdAt: {
 			name: "createdAt",
 			objectTypeName: "dimension",
@@ -58292,7 +58328,7 @@ function getObjectTypeCapitalizedSingularLabel(translation, objectTypeName) {
 	return capitalizeFirstLetter(getObjectTypeSingularLabel(translation, objectTypeName));
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/locale/utils/buildFormatNumber.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/locale/utils/buildFormatNumber.mjs
 var buildFormatNumber = (locale) => {
 	let formatter;
 	if (typeof Intl !== "undefined" && Intl.NumberFormat) try {
@@ -58304,7 +58340,7 @@ var buildFormatNumber = (locale) => {
 	};
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/locale/deDE.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/locale/deDE.mjs
 var formatNumber$4 = buildFormatNumber("de-DE");
 var deDE$1 = { components: {
 	MuiBreadcrumbs: { defaultProps: { expandText: "Pfad anzeigen" } },
@@ -58342,10 +58378,10 @@ var deDE$1 = { components: {
 	} }
 } };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/locale/enUS.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/locale/enUS.mjs
 var enUS$1 = {};
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/locale/esES.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/locale/esES.mjs
 var formatNumber$3 = buildFormatNumber("es-ES");
 var esES$1 = { components: {
 	MuiBreadcrumbs: { defaultProps: { expandText: "Mostrar ruta" } },
@@ -58383,7 +58419,7 @@ var esES$1 = { components: {
 	} }
 } };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/locale/frFR.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/locale/frFR.mjs
 var formatNumber$2 = buildFormatNumber("fr-FR");
 var frFR$1 = { components: {
 	MuiBreadcrumbs: { defaultProps: { expandText: "Montrer le chemin" } },
@@ -58421,7 +58457,7 @@ var frFR$1 = { components: {
 	} }
 } };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/locale/itIT.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/locale/itIT.mjs
 var formatNumber$1 = buildFormatNumber("it-IT");
 var itIT$1 = { components: {
 	MuiBreadcrumbs: { defaultProps: { expandText: "Visualizza percorso" } },
@@ -58459,7 +58495,7 @@ var itIT$1 = { components: {
 	} }
 } };
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/locale/nlNL.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/locale/nlNL.mjs
 var formatNumber = buildFormatNumber("nl-NL");
 var nlNL$1 = { components: {
 	MuiBreadcrumbs: { defaultProps: { expandText: "Pad tonen" } },
@@ -58497,12 +58533,12 @@ var nlNL$1 = { components: {
 	} }
 } };
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.14.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@em_00c1d8ea85ab5c1149c18c16b8d695d8/node_modules/@mui/x-date-pickers/locales/utils/getPickersLocalization.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.14.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supp_64ff9ef023fe5f44ae2a739f51721d78/node_modules/@mui/x-date-pickers/locales/utils/getPickersLocalization.mjs
 var getPickersLocalization = (pickersTranslations) => {
 	return { components: { MuiLocalizationProvider: { defaultProps: { localeText: _extends({}, pickersTranslations) } } } };
 };
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.14.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@em_00c1d8ea85ab5c1149c18c16b8d695d8/node_modules/@mui/x-date-pickers/locales/deDE.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.14.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supp_64ff9ef023fe5f44ae2a739f51721d78/node_modules/@mui/x-date-pickers/locales/deDE.mjs
 var timeViews$1 = {
 	hours: "Stunden",
 	minutes: "Minuten",
@@ -58620,7 +58656,7 @@ var enUS = getPickersLocalization({
 	empty: "Empty"
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.14.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@em_00c1d8ea85ab5c1149c18c16b8d695d8/node_modules/@mui/x-date-pickers/locales/esES.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.14.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supp_64ff9ef023fe5f44ae2a739f51721d78/node_modules/@mui/x-date-pickers/locales/esES.mjs
 var views$2 = {
 	hours: "Horas",
 	minutes: "Minutos",
@@ -58681,7 +58717,7 @@ var esES = getPickersLocalization({
 	empty: "Vacío"
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.14.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@em_00c1d8ea85ab5c1149c18c16b8d695d8/node_modules/@mui/x-date-pickers/locales/frFR.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.14.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supp_64ff9ef023fe5f44ae2a739f51721d78/node_modules/@mui/x-date-pickers/locales/frFR.mjs
 var views$1 = {
 	hours: "heures",
 	minutes: "minutes",
@@ -58742,7 +58778,7 @@ var frFR = getPickersLocalization({
 	empty: "Vider"
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.14.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@em_00c1d8ea85ab5c1149c18c16b8d695d8/node_modules/@mui/x-date-pickers/locales/itIT.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.14.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supp_64ff9ef023fe5f44ae2a739f51721d78/node_modules/@mui/x-date-pickers/locales/itIT.mjs
 var views = {
 	hours: "le ore",
 	minutes: "i minuti",
@@ -58805,7 +58841,7 @@ var itIT = getPickersLocalization({
 	empty: "Vuoto"
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+x-date-pickers@9.14.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@em_00c1d8ea85ab5c1149c18c16b8d695d8/node_modules/@mui/x-date-pickers/locales/nlNL.mjs
+//#region node_modules/.pnpm/@mui+x-date-pickers@9.14.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supp_64ff9ef023fe5f44ae2a739f51721d78/node_modules/@mui/x-date-pickers/locales/nlNL.mjs
 var timeViews = {
 	hours: "uren",
 	minutes: "minuten",
@@ -66104,7 +66140,7 @@ var require_warning = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = warning;
 }));
 //#endregion
-//#region node_modules/.pnpm/jotai@2.20.3_@babel+core@7.29.7_@babel+template@7.29.7_@types+react@19.3.0_react@19.3.0/node_modules/jotai/esm/vanilla/internals.mjs
+//#region node_modules/.pnpm/jotai@2.20.3_@babel+core@7.29.7_supports-color@5.5.0__@babel+template@7.29.7_@types+react@19.3.0_react@19.3.0/node_modules/jotai/esm/vanilla/internals.mjs
 var import_node_polyglot = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var entries = require_object_entries();
 	var warning = require_warning();
@@ -66938,7 +66974,7 @@ function buildStore(...partialBuildingBlocks) {
 	return store;
 }
 //#endregion
-//#region node_modules/.pnpm/jotai@2.20.3_@babel+core@7.29.7_@babel+template@7.29.7_@types+react@19.3.0_react@19.3.0/node_modules/jotai/esm/vanilla.mjs
+//#region node_modules/.pnpm/jotai@2.20.3_@babel+core@7.29.7_supports-color@5.5.0__@babel+template@7.29.7_@types+react@19.3.0_react@19.3.0/node_modules/jotai/esm/vanilla.mjs
 var keyCount = 0;
 function atom(read, write) {
 	const key = `atom${++keyCount}`;
@@ -66969,7 +67005,7 @@ function getDefaultStore() {
 	return defaultStore;
 }
 //#endregion
-//#region node_modules/.pnpm/jotai@2.20.3_@babel+core@7.29.7_@babel+template@7.29.7_@types+react@19.3.0_react@19.3.0/node_modules/jotai/esm/react.mjs
+//#region node_modules/.pnpm/jotai@2.20.3_@babel+core@7.29.7_supports-color@5.5.0__@babel+template@7.29.7_@types+react@19.3.0_react@19.3.0/node_modules/jotai/esm/react.mjs
 var StoreContext = createContext(void 0);
 function useStore(options) {
 	const store = useContext(StoreContext);
@@ -67545,6 +67581,7 @@ function guessI18nMissingKey(key) {
 	const words = key.split(".").slice(-2);
 	const first = words[0];
 	const last = words[1];
+	if (last == null || first == null) return cleanUpGuess(first ?? last ?? key);
 	if (["label", "singular"].includes(last)) return cleanUpGuess(first);
 	if (["views"].includes(first)) return cleanUpGuess(last);
 	if (last.endsWith("plural")) return cleanUpGuess(toPlural(first));
@@ -72938,7 +72975,7 @@ function ClickOnIndexViewMenuPathBreadcrumb(props) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/Box/boxClasses.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/Box/boxClasses.mjs
 var boxClasses = generateUtilityClasses("MuiBox", ["root"]);
 var Box$1 = createBox({
 	themeId: identifier_default,
@@ -73070,7 +73107,7 @@ function PaperFrame(props) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/jotai-family@1.1.0_jotai@2.20.3_@babel+core@7.29.7_@babel+template@7.29.7_@types+react@19.3.0_react@19.3.0_/node_modules/jotai-family/dist/atomFamily.js
+//#region node_modules/.pnpm/jotai-family@1.1.0_jotai@2.20.3_@babel+core@7.29.7_supports-color@5.5.0__@babel+templat_3ca45985ec1a3f7d98c13436de267525/node_modules/jotai-family/dist/atomFamily.js
 function atomFamily(initializeAtom, areEqual) {
 	let shouldRemove = null;
 	const atoms = /* @__PURE__ */ new Map();
@@ -73129,7 +73166,7 @@ function atomFamily(initializeAtom, areEqual) {
 }
 atomFamily((_workCanvasId) => atom(false));
 //#endregion
-//#region node_modules/.pnpm/jotai@2.20.3_@babel+core@7.29.7_@babel+template@7.29.7_@types+react@19.3.0_react@19.3.0/node_modules/jotai/esm/vanilla/utils.mjs
+//#region node_modules/.pnpm/jotai@2.20.3_@babel+core@7.29.7_supports-color@5.5.0__@babel+template@7.29.7_@types+react@19.3.0_react@19.3.0/node_modules/jotai/esm/vanilla/utils.mjs
 var RESET = /* @__PURE__ */ Symbol("");
 var isPromiseLike$2 = (x) => typeof (x == null ? void 0 : x.then) === "function";
 function createJSONStorage(getStringStorage = () => {
@@ -105135,7 +105172,7 @@ function url(uri, path = "", loc) {
 	return obj;
 }
 //#endregion
-//#region node_modules/.pnpm/socket.io-parser@4.2.7/node_modules/socket.io-parser/build/esm/is-binary.js
+//#region node_modules/.pnpm/socket.io-parser@4.2.7_supports-color@5.5.0/node_modules/socket.io-parser/build/esm/is-binary.js
 var withNativeArrayBuffer = typeof ArrayBuffer === "function";
 var isView = (obj) => {
 	return typeof ArrayBuffer.isView === "function" ? ArrayBuffer.isView(obj) : obj.buffer instanceof ArrayBuffer;
@@ -105163,7 +105200,7 @@ function hasBinary(obj, toJSON) {
 	return false;
 }
 //#endregion
-//#region node_modules/.pnpm/socket.io-parser@4.2.7/node_modules/socket.io-parser/build/esm/binary.js
+//#region node_modules/.pnpm/socket.io-parser@4.2.7_supports-color@5.5.0/node_modules/socket.io-parser/build/esm/binary.js
 /**
 * Replaces every Buffer | ArrayBuffer | Blob | File in packet with a numbered placeholder.
 *
@@ -105228,7 +105265,7 @@ function _reconstructPacket(data, buffers) {
 	return data;
 }
 //#endregion
-//#region node_modules/.pnpm/socket.io-parser@4.2.7/node_modules/socket.io-parser/build/esm/index.js
+//#region node_modules/.pnpm/socket.io-parser@4.2.7_supports-color@5.5.0/node_modules/socket.io-parser/build/esm/index.js
 var esm_exports = /* @__PURE__ */ __exportAll({
 	Decoder: () => Decoder,
 	Encoder: () => Encoder,
@@ -110263,7 +110300,7 @@ function SurfyHelpStandaloneViewMenuBreadcrumb(props) {
 var version = {
 	"major": 3,
 	"minor": 5,
-	"build": 58
+	"build": 67
 };
 //#endregion
 //#region src/back/Tracking/version.ts
@@ -110343,6 +110380,19 @@ var jsonTranslationsFiles = {
 		"AddressDialog.selectedAddress": "Adresse sélectionnée",
 		"AddressDialog.validate": "Valider",
 		"AllTenantsDataQualityTable.enableAllTenantsLabel": "Inclure toutes les plateformes",
+		"ApplyScenarioSyncDimensionAsyncAction.help": "Reporter les valeurs du scénario sur la référence pour cette dimension",
+		"ApplyScenarioSyncDimensionAsyncAction.label": "Appliquer",
+		"ArdianMSUserSyncOperation.description": "Charge les utilisateurs Entra (filtre : compte actif + licence + employeeId + usageLocation du pays du tenant), crée l’organisation racine « Ardian Corporate » et les départements (level 1), puis propose les collaborateurs (employeeId→code, jobTitle→title, department→organization, téléphone conservé). Suppression uniquement si externalId = AZURE-ARDIAN et absent de la source. Détail console : logs [ardian-ms-users].",
+		"ArdianMSUserSyncOperation.helpCommon": "Guide utilisateur Ardian (référence commune)",
+		"ArdianMSUserSyncOperation.helpCustom": "Documentation custom (tenant)",
+		"ArdianMSUserSyncOperation.load": "Charger les utilisateurs Entra",
+		"ArdianMSUserSyncOperation.loadedCounts": "Entra brut : %{raw} — après filtre (enabled + licence + employeeId + usageLocation) : %{filtered}",
+		"ArdianMSUserSyncOperation.refresh": "Recommencer",
+		"ArdianMSUserSyncOperation.stepOrgCreate": "création (Ardian Corporate + départements)",
+		"ArdianMSUserSyncOperation.stepOrgHierarchy": "hiérarchie (département → Ardian Corporate)",
+		"ArdianMSUserSyncOperation.stepOrgUpdate": "mise à jour (Ardian Corporate + départements)",
+		"ArdianMSUserSyncOperation.stepPeople": "collaborateurs (Entra → Surfy)",
+		"ArdianMSUserSyncOperation.title": "Synchronisation des utilisateurs Microsoft",
 		"AssignOboBuildingAsyncAction.assignHelp": "Affecter %{buildingName} à cette personne lui permettant de réserver un poste de travail",
 		"AssignPersonCheckListBuildingAffectations.title": "Cette personne est déjà directement affectée sur d'autres bâtiments, voulez-vous supprimer les affectations suivantes pour %{personFullname}",
 		"AssignPersonCheckListDialog.actions.close.help": "Fermer et ne supprimer aucune autre affectation",
@@ -111024,6 +111074,8 @@ var jsonTranslationsFiles = {
 		"DeletePartnerEntitiesAsyncAction.label": "Supprimer dans %{partnerName}",
 		"DeleteStructureExclusionAsyncAction.ariaLabel": "Supprimer l'exclusion structure",
 		"DeleteStructureExclusionAsyncAction.help": "Supprimer cette exclusion structure (patio, vide, colonne) sans toucher à la forme extérieure",
+		"DeleteUnusedCrossTenantItemTypePointsAsyncAction.help": "Supprimer les points incohérents sur cette société (lignes non utilisées sélectionnées)",
+		"DeleteUnusedCrossTenantItemTypePointsAsyncAction.label": "Supprimer les points incohérents",
 		"DeleteWorkplace.help": "Supprimer le poste de travail : [ %{name} ], les affectations seront aussi supprimées",
 		"DeskBookingConfirmationButton.bookingConfirmed": "La réservation de poste de travail a été confirmée",
 		"DeskBookingConfirmationButton.confirm": "Confirmer votre présence",
@@ -111346,6 +111398,7 @@ var jsonTranslationsFiles = {
 		"ErrorImpossibleToFindTheEntities.text": "Il est impossible de trouver %{determinants.defined} recherché",
 		"ErrorImpossibleToFindTheEntity.text": "Il est impossible de trouver %{determinant.defined} recherchés",
 		"Errors.AUTHENTIFICATION_CONNECTION_NOT_FOUND_FOR_EMAIL": "Aucune connexion d'authentification n'a été trouvée pour le domaine %{domain}",
+		"Errors.entityNotFound": "L'objet demandé n'existe pas.",
 		"Errors.networkError": "Des problèmes de connexion ou de réseau ont été détectés, merci de patienter et de réessayer dans quelques secondes",
 		"Errors.ROOM_BOOKING_CONFLICT": "L'espace est déjà réservée pour ce créneau horaire. Veuillez choisir un autre horaire ou un autre espace.",
 		"Errors.WORKPLACE_BOOKING_CONFLICT": "Le poste de travail est déjà réservé pour ce créneau horaire. Veuillez choisir un autre horaire ou un autre poste de travail.",
@@ -111384,6 +111437,8 @@ var jsonTranslationsFiles = {
 		"FieldTypeIndexBoolean.help": "Modifier la valeur directement",
 		"FieldTypeIndexBoolean.values.false": "Non",
 		"FieldTypeIndexBoolean.values.true": "Oui",
+		"FieldTypeLegendConfiguration.addDivider": "Ajouter un séparateur",
+		"FieldTypeLegendConfiguration.dividerLabel": "Séparateur",
 		"FieldTypeLegendConfiguration.familyCostCenters": "Centres de coût",
 		"FieldTypeLegendConfiguration.familyOrganizationsDirection": "Directions",
 		"FieldTypeLegendConfiguration.familyOrganizationsService": "Services",
@@ -111391,6 +111446,7 @@ var jsonTranslationsFiles = {
 		"FieldTypeLegendConfiguration.familyRoomTypes": "Typologies",
 		"FieldTypeLegendConfiguration.legacyRoomTypeGroups": "Groupes de typologie — sélection par entité",
 		"FieldTypeLegendConfiguration.legacyRoomTypes": "Typologies — sélection par entité",
+		"FieldTypeLegendConfiguration.removeDivider": "Supprimer le séparateur",
 		"FieldTypeLegendConfiguration.selectionByEntity": "Sélection des propriétés par entité",
 		"FieldTypeLegendConfiguration.selectionByFilter": "Sélection par filtre",
 		"FieldTypeLegendConfiguration.selectionStructure": "Sélection des propriétés de la structure",
@@ -111411,6 +111467,8 @@ var jsonTranslationsFiles = {
 		"FixAddressButton.progress.refreshing": "Rafraîchissement de la vue...",
 		"FixAddressButton.progress.updating": "Mise à jour du bâtiment dans Surfy...",
 		"FixAddressButton.success.message": "✅ L'adresse de '%{buildingName}' a été corrigée avec succès",
+		"FixRoomFloorFromPointsAsyncAction.help": "Remettre l'étage de l'espace sur celui de ses points (lignes sélectionnées)",
+		"FixRoomFloorFromPointsAsyncAction.label": "Corriger l'étage",
 		"FloorMap.tabs.all": "Voir toutes les formes sélectionnées en liste",
 		"FloorMap.tabs.analyticsDimensionTypes": "Colorier les espaces sur le plan en fonction des <b>calques d'analyse</b>",
 		"FloorMap.tabs.building": "Voir les informations du bâtiment",
@@ -111589,6 +111647,20 @@ var jsonTranslationsFiles = {
 		"ItemTypeDataQualityNotUsed.columns.name": "Nom du type d'objet",
 		"ItemTypeDataQualityNotUsed.columns.shape": "Forme",
 		"ItemTypeDataQualityNotUsed.columns.workplaceTypeCount": "Nombre de type de poste de travail",
+		"ItemTypeDataQualityPointTenantConsistency.enableAllTenantsLabel": "Toutes les sociétés",
+		"ItemTypeDataQualityPointTenantConsistency.headerCrossTenantPointCount": "Points incohérents",
+		"ItemTypeDataQualityPointTenantConsistency.headerItemsCount": "Objets",
+		"ItemTypeDataQualityPointTenantConsistency.headerItemTypeId": "Id type d'objet",
+		"ItemTypeDataQualityPointTenantConsistency.headerItemTypeName": "Type d'objet",
+		"ItemTypeDataQualityPointTenantConsistency.headerItemTypeTenant": "Société",
+		"ItemTypeDataQualityPointTenantConsistency.headerOwnerPlatformPointCount": "Points (société du type)",
+		"ItemTypeDataQualityPointTenantConsistency.headerReason": "Raison",
+		"ItemTypeDataQualityPointTenantConsistency.headerSourceTenants": "Sociétés des points",
+		"ItemTypeDataQualityPointTenantConsistency.headerWorkplacesCount": "Postes de travail",
+		"ItemTypeDataQualityPointTenantConsistency.headerWorkplaceTypeLinksCount": "Types de poste",
+		"ItemTypeDataQualityPointTenantConsistency.numberOfItemTypes": "Types d'objet concernés",
+		"ItemTypeDataQualityPointTenantConsistencyTableRow.reasonTenantMismatch": "Points d'équipement incohérents.",
+		"ItemTypeDataQualityPointTenantConsistencyTableRow.reasonUnusedSuggestDelete": "Non utilisé (objets / postes) — suppression des points possible.",
 		"ItemTypeDataQualityUniqName.buttonRenameHelp": "Renommer les types d'objet sélectionnés en ajoutant (1), (2), (3) pour chaque doublon",
 		"ItemTypeDataQualityUniqName.headerCompany": "Entreprise",
 		"ItemTypeDataQualityUniqName.headerId": "Id",
@@ -112038,6 +112110,8 @@ var jsonTranslationsFiles = {
 		"models.Building.views.list-simple.label": "Liste simple",
 		"models.Building.views.pictures.help": "Voir les bâtiments avec des photos",
 		"models.Building.views.pictures.label": "Photos",
+		"models.Building.views.scenarioSync.help": "Reporter les valeurs d'un <b>scénario</b> sur le bâtiment de référence %{name}, dimension par dimension",
+		"models.Building.views.scenarioSync.label": "Synchronisation scénario",
 		"models.Building.views.zbre-sync.help": "Synchroniser le bâtiment avec la plateforme Zbre",
 		"models.Building.views.zbre-sync.label": "Synchronisation Zbre",
 		"models.BuildingType.description": "Un type de bâtiment permet de catégoriser les bâtiments selon leur usage",
@@ -112241,6 +112315,8 @@ var jsonTranslationsFiles = {
 		"models.Dimension.properties.carbonFootprintPerMeter.label": "Empreinte carbone par mètre carré",
 		"models.Dimension.properties.color.description": "La couleur de calque d'analyse permet de différencier les espaces sur le plan",
 		"models.Dimension.properties.color.label": "Couleur",
+		"models.Dimension.properties.comment.description": "Une information complémentaire affichée aux personnes qui réservent un poste dans cette dimension",
+		"models.Dimension.properties.comment.label": "Commentaire",
 		"models.Dimension.properties.crowdedForBookingRate.description": "Le taux de surcharge pour la réservation permet de définir le pourcentage d'occupation au-delà duquel un espace est considéré comme surchargé pour les réservations",
 		"models.Dimension.properties.crowdedForBookingRate.label": "Taux de surcharge pour la réservation",
 		"models.Dimension.properties.name.description": "Utile pour différencier le calque parmis d'autres",
@@ -112492,6 +112568,8 @@ var jsonTranslationsFiles = {
 		"models.ItemType.views.avatar.label": "Forme",
 		"models.ItemType.views.dq-family-tenant-consistency.help": "Lister les types d'objet liés à une famille incohérente ; permet de les réassigner à la famille UNCLASSIFIED",
 		"models.ItemType.views.dq-family-tenant-consistency.label": "Famille incohérente",
+		"models.ItemType.views.dq-item-type-point-tenant-consistency.help": "Lister les types d'objet référencés par des points d'équipement incohérents",
+		"models.ItemType.views.dq-item-type-point-tenant-consistency.label": "Points d'équipements incohérents",
 		"models.ItemType.views.dq-not-used.help": "Lister tous les types d'objets non utilisés via des objets ou via des types de poste de travail non utilisés",
 		"models.ItemType.views.dq-not-used.label": "Non utilisés",
 		"models.ItemType.views.dq-uniq-name.help": "Lister les types d'objet ayant le même nom au sein d'une même entreprise ; permet de les renommer en ajoutant (1), (2), (3)",
@@ -113166,6 +113244,8 @@ var jsonTranslationsFiles = {
 		"models.Room.views.dq-no-point.label": "Les espaces sans assez de points",
 		"models.Room.views.dq-organization-to-room.help": "Détecter les associations d'espaces avec les organisations qui ne sont pas valides",
 		"models.Room.views.dq-organization-to-room.label": "Erreurs sur les organisations des espaces",
+		"models.Room.views.dq-room-floor-points-consistency.help": "Espaces dont l'étage ne correspond pas à l'étage de leurs points — corrigeable en réaffectant l'étage des points",
+		"models.Room.views.dq-room-floor-points-consistency.label": "Espaces avec étage incohérent (points)",
 		"models.Room.views.dq-uniq-name.help": "Propose des noms pour les espaces qui n'ont pas de nom ou le nom n'est pas unique dans un même étage",
 		"models.Room.views.dq-uniq-name.label": "Proposition de noms pour les espaces",
 		"models.Room.views.map.help": "Voir le plan de l'espace %{name}",
@@ -113802,6 +113882,15 @@ var jsonTranslationsFiles = {
 		"PlanningPersonAffectations.alerts.noAffectation.message": "Vous n'êtes associé à aucun territoire, merci de vous rapprocher de votre responsable d'affectation afin de pouvoir réserver un espace de travail",
 		"PlanningPersonAffectations.alerts.noAffectation.messageForPerson": "%{personFullName} n'est associé à aucun territoire, merci de vous rapprocher de son responsable d'affectation afin de pouvoir réserver un espace de travail",
 		"PlanningPersonAffectations.alerts.noAffectation.title": "Impossible de réserver un poste de travail",
+		"PlatformCubyContextLoadingOverlay.phaseApplyLook": "Affichage des espaces…",
+		"PlatformCubyContextLoadingOverlay.phaseBuildScenes": "Préparation 3D…",
+		"PlatformCubyContextLoadingOverlay.phaseError": "Échec du chargement",
+		"PlatformCubyContextLoadingOverlay.phaseFetchLayout": "Chargement du plan…",
+		"PlatformCubyContextLoadingOverlay.phaseReady": "Détail prêt",
+		"PlatformCubyContextLoadingOverlay.title": "Chargement du détail",
+		"PlatformStructureBuildingList.title": "Bâtiments",
+		"PropertSelectorDrawer.filter.ariaLabel": "Filtrer les propriétés par nom",
+		"PropertSelectorDrawer.filter.placeholder": "Filtrer les propriétés…",
 		"PropertSelectorDrawer.help": "Sélectionner les propriétés que vous souhaitez afficher dans le tableau",
 		"PropertSelectorDrawer.options.reset.help": "Remettre la sélection des propriétés à leur état inital",
 		"PropertSelectorDrawer.options.reset.label": "Réinitialiser la sélection",
@@ -113960,6 +114049,18 @@ var jsonTranslationsFiles = {
 		"RoomCard.tabs.people.help": "Afficher les personnes affectées à cet espace",
 		"RoomCard.tabs.room": "Espace",
 		"RoomCardSelectDimensions.needSave": "Merci de sauvegarder ou d'annuler vos changements avant de pouvoir modifier les calques d'analyses de cet espace",
+		"RoomDataQualityFloorPointsConsistency.enableAllTenantsLabel": "Toutes les sociétés",
+		"RoomDataQualityFloorPointsConsistency.headerCurrentFloor": "Étage actuel",
+		"RoomDataQualityFloorPointsConsistency.headerCurrentFloorTenant": "Société de l'étage",
+		"RoomDataQualityFloorPointsConsistency.headerPointsCount": "Points",
+		"RoomDataQualityFloorPointsConsistency.headerReason": "Raison",
+		"RoomDataQualityFloorPointsConsistency.headerRoomId": "Id espace",
+		"RoomDataQualityFloorPointsConsistency.headerRoomName": "Espace",
+		"RoomDataQualityFloorPointsConsistency.headerRoomTenant": "Société",
+		"RoomDataQualityFloorPointsConsistency.headerSuggestedFloor": "Étage des points",
+		"RoomDataQualityFloorPointsConsistency.headerSuggestedFloorTenant": "Société de l'étage des points",
+		"RoomDataQualityFloorPointsConsistency.numberOfRooms": "Espaces concernés",
+		"RoomDataQualityFloorPointsConsistency.reasonFloorMismatch": "L'étage de l'espace ne correspond pas à l'étage de ses points.",
 		"RoomDataQualityOrganizationToRoom.headerBuilding": "Bâtiment",
 		"RoomDataQualityOrganizationToRoom.headerDirection": "Direction",
 		"RoomDataQualityOrganizationToRoom.headerFloor": "Étage",
@@ -113983,7 +114084,11 @@ var jsonTranslationsFiles = {
 		"RoomsBulkEditSelectDimensions.multipleValues": "Valeurs multiples",
 		"RoomSegmentRoomsList.title": "Les espaces attachés à ce segment",
 		"RoomTooltip.roomWorkplaceAffectations": "Affectations des postes de travail",
-		"RoomTypeGroupHelpTitle.exclude": "Le groupement de type d'espaces %{name} est de type exclusion. Il regroupe tous les espaces à l'exception des typologies d'espaces suivantes :",
+		"RoomTypeGroupHelpTitle.columnRoomType": "Typologie",
+		"RoomTypeGroupHelpTitle.columnShare": "%",
+		"RoomTypeGroupHelpTitle.columnSurface": "Surface",
+		"RoomTypeGroupHelpTitle.columnWorkplaces": "Postes",
+		"RoomTypeGroupHelpTitle.exclude": "Le groupement de type d'espaces %{name} est de type exclusion. Il regroupe les typologies d'espaces disponibles suivantes :",
 		"RoomTypeGroupHelpTitle.include": "Le groupement de type d'espaces %{name} regroupe les typologies d'espaces suivantes :",
 		"RoomTypeGroupLabel.exclude.tooltip": "Le groupe de typologie d'espace exclue les types d'espaces associés",
 		"RoomTypeGroupMapFilter.Empty": "Il n'y a aucun groupe de type d'espace associé aux espaces via les type d'espaces, vous pouvez en ajouter en modifiant un groupe de type d'espace et en y ajoutant associant un type d'espace, puis vous pourrez contrôler leur affichage depuis cette section",
@@ -113996,6 +114101,37 @@ var jsonTranslationsFiles = {
 		"RoomWorkplaceList.EmptyList": "Il n'y a aucun poste de travail dans cet espace",
 		"SavePlanAsSvgButton.help": "Télécharge le plan tel qu'affiché en fichier SVG. Le fichier s'ouvre à l'échelle 1, sans zoom ni décalage.",
 		"SavePlanAsSvgButton.label": "Sauvegarder le plan en SVG",
+		"ScenarioReferenceSyncDimensionStepper.applyError": "Échec de l'application de cette dimension. L'inventaire reste affiché.",
+		"ScenarioReferenceSyncDimensionStepper.dimensionItemGeo": "Géométrie objets",
+		"ScenarioReferenceSyncDimensionStepper.dimensionItemProps": "Propriétés objets",
+		"ScenarioReferenceSyncDimensionStepper.dimensionRoomCostCenter": "Centre de coût",
+		"ScenarioReferenceSyncDimensionStepper.dimensionRoomOrganization": "Service",
+		"ScenarioReferenceSyncDimensionStepper.dimensionRoomRoomType": "Typologie espace",
+		"ScenarioReferenceSyncDimensionStepper.dimensionWorkplaceGeo": "Géométrie postes",
+		"ScenarioReferenceSyncDimensionStepper.dimensionWorkplaceProps": "Propriétés postes",
+		"ScenarioReferenceSyncDimensionStepper.matchesToApply": "{{count}} match(s) à appliquer",
+		"ScenarioReferenceSyncDimensionStepper.nothingToSync": "Rien à synchroniser",
+		"ScenarioReferenceSyncDimensionStepper.stepCompleted": "appliquée",
+		"ScenarioReferenceSyncDimensionStepper.stepperTitle": "Dimensions de synchro",
+		"ScenarioReferenceSyncInventory.ambiguousCaption": "À préciser — exclus de la synchro",
+		"ScenarioReferenceSyncInventory.createDeleteLaterCaption": "Synchronisation create/delete : plus tard",
+		"ScenarioReferenceSyncInventory.geometryRoomCaption": "Détectée — non appliquée (MVP)",
+		"ScenarioReferenceSyncInventory.inventaireTitle": "Inventaire des écarts",
+		"ScenarioReferenceSyncInventory.natureAmbiguous": "Ambiguïtés",
+		"ScenarioReferenceSyncInventory.natureCreate": "Créations",
+		"ScenarioReferenceSyncInventory.natureDelete": "Suppressions",
+		"ScenarioReferenceSyncInventory.natureEdit": "Éditions",
+		"ScenarioReferenceSyncInventory.natureGeometry": "Géométrie",
+		"ScenarioReferenceSyncInventory.noDiffs": "Aucun écart à synchroniser entre ce scénario et la référence.",
+		"ScenarioReferenceSyncInventory.objectTypeItem": "Objets",
+		"ScenarioReferenceSyncInventory.objectTypeRoom": "Espaces",
+		"ScenarioReferenceSyncInventory.objectTypeWorkplace": "Postes",
+		"ScenarioReferenceSyncView.flowCaption": "Les valeurs du scénario seront reportées sur le bâtiment de référence, dimension par dimension.",
+		"ScenarioReferenceSyncView.loadError": "Impossible de charger les données du couple référence / scénario.",
+		"ScenarioReferenceSyncView.lockedReferenceCaption": "Référence : {{name}}",
+		"ScenarioReferenceSyncView.noScenarios": "Aucun scénario enfant pour ce bâtiment. Créez un scénario depuis la vue Clone.",
+		"ScenarioReferenceSyncView.scenarioPickerLabel": "Scénario",
+		"ScenarioReferenceSyncView.title": "Synchro scénario → référence",
 		"ScreenshotNoLegendButton.help": "Télécharger l'image de ce que vous voyez sur l'écran sans legende, la sortie sera rapide mais la qualité de l'export ne sera pas optimale",
 		"ScreenshotNoLegendButton.label": "Copie d'écran sans legende",
 		"SearchFieldString.searchEmpty.help.false": "Rechercher des éléments vide ou sans valeur",
@@ -114105,6 +114241,14 @@ var jsonTranslationsFiles = {
 		"TenantOperations.bourbon-import-hr-file.label": "Import Fichier RH",
 		"TenantOperations.egis-import-hr-file.label": "Import Fichier RH",
 		"TenantOperations.essilor-import-hr-file.label": "Import Fichier RH",
+		"TenantOperations.ms-user-sync-ardian-spain.description": "Synchronise les utilisateurs Entra ID pour le tenant Ardian Espagne",
+		"TenantOperations.ms-user-sync-ardian-spain.label": "Synchronisation des utilisateurs Microsoft (Espagne)",
+		"TenantOperations.ms-user-sync-ardian-uk.description": "Synchronise les utilisateurs Entra ID pour le tenant Ardian UK",
+		"TenantOperations.ms-user-sync-ardian-uk.label": "Synchronisation des utilisateurs Microsoft (UK)",
+		"TenantOperations.ms-user-sync-ardian-usa.description": "Synchronise les utilisateurs Entra ID pour le tenant Ardian USA",
+		"TenantOperations.ms-user-sync-ardian-usa.label": "Synchronisation des utilisateurs Microsoft (USA)",
+		"TenantOperations.ms-user-sync-ardian.description": "Synchronise les utilisateurs Entra ID pour le tenant Ardian France",
+		"TenantOperations.ms-user-sync-ardian.label": "Synchronisation des utilisateurs Microsoft (France)",
 		"TenantOperations.ms-user-sync-bourbon.description": "Synchronise les utilisateurs depuis Microsoft",
 		"TenantOperations.ms-user-sync-bourbon.label": "Synchronisation des utilisateurs Microsoft",
 		"TenantOperations.ms-user-sync-thea.description": "Synchronise les utilisateurs depuis Microsoft",
@@ -114270,7 +114414,7 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.AddRoomPointOption.help.enable": "Ajouter un sommet permet de retravailler avec plus de precisions une forme",
 		"WorkCanvas.Options.AddRoomPointOption.label.disable": "Arrêter l'ajout d'un sommet",
 		"WorkCanvas.Options.AddRoomPointOption.label.enable": "Ajouter un sommet",
-		"WorkCanvas.Options.AddRoomShapeOption.description": "Les angles de création sont bloqués à 45°, pour les débloquer gardez appuyé sur la touche du clavier <b>SHIFT</b> et continuez la création, pour créer votre sommet positionnez la souris dans le cercle à l'intersection du triangle, Pour commencer un espace en réutilisant un sommet existant, gardez la touche du clavier <b>ALT</b> appuyé et cliquez sur le sommet.",
+		"WorkCanvas.Options.AddRoomShapeOption.description": "Les angles de création sont bloqués à 45°, pour les débloquer gardez appuyé sur la touche du clavier <b>SHIFT</b> et continuez la création, pour créer votre sommet positionnez la souris dans le cercle à l'intersection du triangle. Pour commencer un espace en réutilisant un sommet existant, gardez la touche du clavier <b>ALT</b> appuyé et cliquez sur le sommet ; pendant ce temps, les segments ne se surlignent plus en rouge afin de laisser les sommets visibles et cliquables.",
 		"WorkCanvas.Options.AddRoomShapeOption.help.disable": "Annuler la création de l'espace",
 		"WorkCanvas.Options.AddRoomShapeOption.help.enable": "Ajouter un espace sur le plan",
 		"WorkCanvas.Options.AddRoomShapeOption.label.disable": "Annuler l'ajout d'un espace",
@@ -114623,6 +114767,19 @@ var jsonTranslationsFiles = {
 		"AddressDialog.selectedAddress": "Selected address",
 		"AddressDialog.validate": "Validate",
 		"AllTenantsDataQualityTable.enableAllTenantsLabel": "Include all platforms",
+		"ApplyScenarioSyncDimensionAsyncAction.help": "Copy scenario values onto the reference for this dimension",
+		"ApplyScenarioSyncDimensionAsyncAction.label": "Apply",
+		"ArdianMSUserSyncOperation.description": "Loads Entra users (filter: enabled account + license + employeeId + tenant usageLocation), creates root organization « Ardian Corporate » and departments (level 1), then proposes collaborators (employeeId→code, jobTitle→title, department→organization, telephone kept). Deletes only when externalId = AZURE-ARDIAN and missing from source. Console detail: [ardian-ms-users] logs.",
+		"ArdianMSUserSyncOperation.helpCommon": "Ardian user guide (shared reference)",
+		"ArdianMSUserSyncOperation.helpCustom": "Custom documentation (tenant)",
+		"ArdianMSUserSyncOperation.load": "Load Entra users",
+		"ArdianMSUserSyncOperation.loadedCounts": "Entra raw: %{raw} — after filter (enabled + license + employeeId + usageLocation): %{filtered}",
+		"ArdianMSUserSyncOperation.refresh": "Start over",
+		"ArdianMSUserSyncOperation.stepOrgCreate": "create (Ardian Corporate + departments)",
+		"ArdianMSUserSyncOperation.stepOrgHierarchy": "hierarchy (department → Ardian Corporate)",
+		"ArdianMSUserSyncOperation.stepOrgUpdate": "update (Ardian Corporate + departments)",
+		"ArdianMSUserSyncOperation.stepPeople": "collaborators (Entra → Surfy)",
+		"ArdianMSUserSyncOperation.title": "Microsoft users synchronization",
 		"AssignOboBuildingAsyncAction.assignHelp": "Assign %{buildingName} to this person so they can book a workplace",
 		"AssignPersonCheckListBuildingAffectations.title": "This person is already directly assigned on other buildings, do you want to remove the following assignments for %{personFullname}",
 		"AssignPersonCheckListDialog.actions.close.help": "Close and don't delete any other assignments",
@@ -115304,6 +115461,8 @@ var jsonTranslationsFiles = {
 		"DeletePartnerEntitiesAsyncAction.label": "Delete in %{partnerName}",
 		"DeleteStructureExclusionAsyncAction.ariaLabel": "Remove structure exclusion",
 		"DeleteStructureExclusionAsyncAction.help": "Remove this structure exclusion (patio, void, column) without affecting the outer shape",
+		"DeleteUnusedCrossTenantItemTypePointsAsyncAction.help": "Delete inconsistent points on this company (selected unused rows)",
+		"DeleteUnusedCrossTenantItemTypePointsAsyncAction.label": "Delete inconsistent points",
 		"DeleteWorkplace.help": "Delete workstation: [ %{name} ], assignments will also be deleted",
 		"DeskBookingConfirmationButton.bookingConfirmed": "Workplace booking confirmed",
 		"DeskBookingConfirmationButton.confirm": "Confirm",
@@ -115626,6 +115785,7 @@ var jsonTranslationsFiles = {
 		"ErrorImpossibleToFindTheEntities.text": "Cannot find the %{determinants.defined}",
 		"ErrorImpossibleToFindTheEntity.text": "It is not possible to find %{determinant.defined} wanted",
 		"Errors.AUTHENTIFICATION_CONNECTION_NOT_FOUND_FOR_EMAIL": "No authentication connection was found for the domain %{domain}",
+		"Errors.entityNotFound": "The requested item does not exist.",
 		"Errors.networkError": "Connection or network issues have been detected, please wait and try again in a few seconds",
 		"Errors.ROOM_BOOKING_CONFLICT": "The space is already reserved for this time slot. Please choose another time or space.",
 		"Errors.WORKPLACE_BOOKING_CONFLICT": "The workstation is already reserved for this time slot. Please choose another time or workstation.",
@@ -115664,6 +115824,8 @@ var jsonTranslationsFiles = {
 		"FieldTypeIndexBoolean.help": "Modify the value directly",
 		"FieldTypeIndexBoolean.values.false": "No",
 		"FieldTypeIndexBoolean.values.true": "Yes",
+		"FieldTypeLegendConfiguration.addDivider": "Add a separator",
+		"FieldTypeLegendConfiguration.dividerLabel": "Separator",
 		"FieldTypeLegendConfiguration.familyCostCenters": "Cost centers",
 		"FieldTypeLegendConfiguration.familyOrganizationsDirection": "Directions",
 		"FieldTypeLegendConfiguration.familyOrganizationsService": "Services",
@@ -115671,6 +115833,7 @@ var jsonTranslationsFiles = {
 		"FieldTypeLegendConfiguration.familyRoomTypes": "Room types",
 		"FieldTypeLegendConfiguration.legacyRoomTypeGroups": "Room type groups — per-entity selection",
 		"FieldTypeLegendConfiguration.legacyRoomTypes": "Room types — per-entity selection",
+		"FieldTypeLegendConfiguration.removeDivider": "Remove separator",
 		"FieldTypeLegendConfiguration.selectionByEntity": "Entity property selection",
 		"FieldTypeLegendConfiguration.selectionByFilter": "Filter selection",
 		"FieldTypeLegendConfiguration.selectionStructure": "Structure property selection",
@@ -115691,6 +115854,8 @@ var jsonTranslationsFiles = {
 		"FixAddressButton.progress.refreshing": "Refreshing view...",
 		"FixAddressButton.progress.updating": "Building update in Surfy...",
 		"FixAddressButton.success.message": "✅ The address of ' %{buildingName} ' has been successfully corrected",
+		"FixRoomFloorFromPointsAsyncAction.help": "Set the space floor to its points floor (selected rows)",
+		"FixRoomFloorFromPointsAsyncAction.label": "Fix floor",
 		"FloorMap.tabs.all": "See all selected shapes in list",
 		"FloorMap.tabs.analyticsDimensionTypes": "Color the spaces on the plan according to the <b>analysis layers</b>",
 		"FloorMap.tabs.building": "View building information",
@@ -115869,6 +116034,20 @@ var jsonTranslationsFiles = {
 		"ItemTypeDataQualityNotUsed.columns.name": "Object type name",
 		"ItemTypeDataQualityNotUsed.columns.shape": "Form",
 		"ItemTypeDataQualityNotUsed.columns.workplaceTypeCount": "Number of workstation type",
+		"ItemTypeDataQualityPointTenantConsistency.enableAllTenantsLabel": "All companies",
+		"ItemTypeDataQualityPointTenantConsistency.headerCrossTenantPointCount": "Inconsistent points",
+		"ItemTypeDataQualityPointTenantConsistency.headerItemsCount": "Items",
+		"ItemTypeDataQualityPointTenantConsistency.headerItemTypeId": "Item type id",
+		"ItemTypeDataQualityPointTenantConsistency.headerItemTypeName": "Item type",
+		"ItemTypeDataQualityPointTenantConsistency.headerItemTypeTenant": "Company",
+		"ItemTypeDataQualityPointTenantConsistency.headerOwnerPlatformPointCount": "Points (type company)",
+		"ItemTypeDataQualityPointTenantConsistency.headerReason": "Reason",
+		"ItemTypeDataQualityPointTenantConsistency.headerSourceTenants": "Point companies",
+		"ItemTypeDataQualityPointTenantConsistency.headerWorkplacesCount": "Workplaces",
+		"ItemTypeDataQualityPointTenantConsistency.headerWorkplaceTypeLinksCount": "Workplace types",
+		"ItemTypeDataQualityPointTenantConsistency.numberOfItemTypes": "Affected item types",
+		"ItemTypeDataQualityPointTenantConsistencyTableRow.reasonTenantMismatch": "Inconsistent equipment points.",
+		"ItemTypeDataQualityPointTenantConsistencyTableRow.reasonUnusedSuggestDelete": "Unused (items / workplaces) — points can be deleted.",
 		"ItemTypeDataQualityUniqName.buttonRenameHelp": "Rename selected item types by adding (1), (2), (3) for each duplicate",
 		"ItemTypeDataQualityUniqName.headerCompany": "Company",
 		"ItemTypeDataQualityUniqName.headerId": "Id",
@@ -116318,6 +116497,8 @@ var jsonTranslationsFiles = {
 		"models.Building.views.list-simple.label": "Simple list",
 		"models.Building.views.pictures.help": "See the buildings with photos",
 		"models.Building.views.pictures.label": "Pictures",
+		"models.Building.views.scenarioSync.help": "Transfer the values ​​of a <b>scenario</b> to the reference building %{name} , dimension by dimension",
+		"models.Building.views.scenarioSync.label": "Script synchronization",
 		"models.Building.views.zbre-sync.help": "Synchronize the building with the Zbre platform",
 		"models.Building.views.zbre-sync.label": "Zbre synchronization",
 		"models.BuildingType.description": "A building type allows buildings to be categorized according to their use",
@@ -116521,6 +116702,8 @@ var jsonTranslationsFiles = {
 		"models.Dimension.properties.carbonFootprintPerMeter.label": "Carbon Footprint per Square Meter",
 		"models.Dimension.properties.color.description": "The analysis layer color allows differentiating spaces on the plan",
 		"models.Dimension.properties.color.label": "Color",
+		"models.Dimension.properties.comment.description": "Additional information is displayed to people who reserve a position in this dimension.",
+		"models.Dimension.properties.comment.label": "Comment",
 		"models.Dimension.properties.crowdedForBookingRate.description": "The crowding rate for booking allows defining the occupancy percentage beyond which a space is considered crowded for bookings",
 		"models.Dimension.properties.crowdedForBookingRate.label": "Crowding Rate for Booking",
 		"models.Dimension.properties.name.description": "Useful for differentiating the layer among others",
@@ -116772,6 +116955,8 @@ var jsonTranslationsFiles = {
 		"models.ItemType.views.avatar.label": "Form",
 		"models.ItemType.views.dq-family-tenant-consistency.help": "List the object types linked to an inconsistent family; allows them to be reassigned to the UNCLASSIFIED family.",
 		"models.ItemType.views.dq-family-tenant-consistency.label": "Incoherent family",
+		"models.ItemType.views.dq-item-type-point-tenant-consistency.help": "List the types of objects referenced by inconsistent equipment points.",
+		"models.ItemType.views.dq-item-type-point-tenant-consistency.label": "Inconsistent equipment points",
 		"models.ItemType.views.dq-not-used.help": "List all unused object types via objects or via unused workstation types",
 		"models.ItemType.views.dq-not-used.label": "Not used",
 		"models.ItemType.views.dq-uniq-name.help": "List the types of objects with the same name within the same company; allows you to rename them by adding (1), (2), (3)",
@@ -117446,6 +117631,8 @@ var jsonTranslationsFiles = {
 		"models.Room.views.dq-no-point.label": "Spaces without enough points",
 		"models.Room.views.dq-organization-to-room.help": "Detect space associations with organizations that are not valid",
 		"models.Room.views.dq-organization-to-room.label": "Errors in the organization of spaces",
+		"models.Room.views.dq-room-floor-points-consistency.help": "Spaces whose level does not correspond to the level of their points — correctable by reassigning the level of the points",
+		"models.Room.views.dq-room-floor-points-consistency.label": "Spaces with inconsistent flooring (points)",
 		"models.Room.views.dq-uniq-name.help": "Suggests names for spaces that do not have a name or the name is not unique on the same floor",
 		"models.Room.views.dq-uniq-name.label": "Proposed names for spaces",
 		"models.Room.views.map.help": "View space plan %{name}",
@@ -118082,6 +118269,15 @@ var jsonTranslationsFiles = {
 		"PlanningPersonAffectations.alerts.noAffectation.message": "You are not associated with any territory, please contact your assignment manager to be able to reserve a workspace",
 		"PlanningPersonAffectations.alerts.noAffectation.messageForPerson": "%{personFullName} is not associated with any territory; please contact their assigned manager to reserve a workspace.",
 		"PlanningPersonAffectations.alerts.noAffectation.title": "Unable to reserve a workstation",
+		"PlatformCubyContextLoadingOverlay.phaseApplyLook": "Showing spaces…",
+		"PlatformCubyContextLoadingOverlay.phaseBuildScenes": "Preparing 3D…",
+		"PlatformCubyContextLoadingOverlay.phaseError": "Loading failed",
+		"PlatformCubyContextLoadingOverlay.phaseFetchLayout": "Loading floor plan…",
+		"PlatformCubyContextLoadingOverlay.phaseReady": "Detail ready",
+		"PlatformCubyContextLoadingOverlay.title": "Loading building detail",
+		"PlatformStructureBuildingList.title": "Buildings",
+		"PropertSelectorDrawer.filter.ariaLabel": "Filter properties by name",
+		"PropertSelectorDrawer.filter.placeholder": "Filter the properties…",
 		"PropertSelectorDrawer.help": "Select the properties you want to display in the table",
 		"PropertSelectorDrawer.options.reset.help": "Return the selection of properties to their initial state",
 		"PropertSelectorDrawer.options.reset.label": "Reset selection",
@@ -118240,6 +118436,18 @@ var jsonTranslationsFiles = {
 		"RoomCard.tabs.people.help": "Show people assigned to this space",
 		"RoomCard.tabs.room": "Space",
 		"RoomCardSelectDimensions.needSave": "Please save or cancel your changes before you can modify the analysis layers of this space",
+		"RoomDataQualityFloorPointsConsistency.enableAllTenantsLabel": "All companies",
+		"RoomDataQualityFloorPointsConsistency.headerCurrentFloor": "Current floor",
+		"RoomDataQualityFloorPointsConsistency.headerCurrentFloorTenant": "Floor company",
+		"RoomDataQualityFloorPointsConsistency.headerPointsCount": "Points",
+		"RoomDataQualityFloorPointsConsistency.headerReason": "Reason",
+		"RoomDataQualityFloorPointsConsistency.headerRoomId": "Space id",
+		"RoomDataQualityFloorPointsConsistency.headerRoomName": "Space",
+		"RoomDataQualityFloorPointsConsistency.headerRoomTenant": "Company",
+		"RoomDataQualityFloorPointsConsistency.headerSuggestedFloor": "Points floor",
+		"RoomDataQualityFloorPointsConsistency.headerSuggestedFloorTenant": "Points floor company",
+		"RoomDataQualityFloorPointsConsistency.numberOfRooms": "Affected spaces",
+		"RoomDataQualityFloorPointsConsistency.reasonFloorMismatch": "The space floor does not match the floor of its points.",
 		"RoomDataQualityOrganizationToRoom.headerBuilding": "Building",
 		"RoomDataQualityOrganizationToRoom.headerDirection": "Direction",
 		"RoomDataQualityOrganizationToRoom.headerFloor": "Floor",
@@ -118263,7 +118471,11 @@ var jsonTranslationsFiles = {
 		"RoomsBulkEditSelectDimensions.multipleValues": "Multiple values",
 		"RoomSegmentRoomsList.title": "The spaces attached to this segment",
 		"RoomTooltip.roomWorkplaceAffectations": "Workstation assignments",
-		"RoomTypeGroupHelpTitle.exclude": "The %{name} space type grouping is of type exclusion. It groups all spaces except the following space typologies:",
+		"RoomTypeGroupHelpTitle.columnRoomType": "Typology",
+		"RoomTypeGroupHelpTitle.columnShare": "%",
+		"RoomTypeGroupHelpTitle.columnSurface": "Area",
+		"RoomTypeGroupHelpTitle.columnWorkplaces": "Positions",
+		"RoomTypeGroupHelpTitle.exclude": "The space type grouping %{name} is of type exclusion. It groups the following available space types:",
 		"RoomTypeGroupHelpTitle.include": "The %{name} space type grouping groups the following space typologies:",
 		"RoomTypeGroupLabel.exclude.tooltip": "The space typology group excludes associated space types",
 		"RoomTypeGroupMapFilter.Empty": "There is no space type group associated with spaces via space types, you can add more by editing a space type group and adding associating a space type to it, then you can control their display from this section",
@@ -118276,6 +118488,37 @@ var jsonTranslationsFiles = {
 		"RoomWorkplaceList.EmptyList": "There are no workstations in this space",
 		"SavePlanAsSvgButton.help": "Download the plan as displayed as an SVG file (DOM copy, not server). The file opens at scale 1, with no zoom or offset.",
 		"SavePlanAsSvgButton.label": "Save plan as SVG",
+		"ScenarioReferenceSyncDimensionStepper.applyError": "Failed to apply this dimension. The inventory stays visible.",
+		"ScenarioReferenceSyncDimensionStepper.dimensionItemGeo": "Item geometry",
+		"ScenarioReferenceSyncDimensionStepper.dimensionItemProps": "Item properties",
+		"ScenarioReferenceSyncDimensionStepper.dimensionRoomCostCenter": "Cost center",
+		"ScenarioReferenceSyncDimensionStepper.dimensionRoomOrganization": "Organization",
+		"ScenarioReferenceSyncDimensionStepper.dimensionRoomRoomType": "Space typology",
+		"ScenarioReferenceSyncDimensionStepper.dimensionWorkplaceGeo": "Workplace geometry",
+		"ScenarioReferenceSyncDimensionStepper.dimensionWorkplaceProps": "Workplace properties",
+		"ScenarioReferenceSyncDimensionStepper.matchesToApply": "{{count}} match(es) to apply",
+		"ScenarioReferenceSyncDimensionStepper.nothingToSync": "Nothing to sync",
+		"ScenarioReferenceSyncDimensionStepper.stepCompleted": "applied",
+		"ScenarioReferenceSyncDimensionStepper.stepperTitle": "Sync dimensions",
+		"ScenarioReferenceSyncInventory.ambiguousCaption": "Needs clarification — excluded from sync",
+		"ScenarioReferenceSyncInventory.createDeleteLaterCaption": "Create/delete sync: later",
+		"ScenarioReferenceSyncInventory.geometryRoomCaption": "Detected — not applied (MVP)",
+		"ScenarioReferenceSyncInventory.inventaireTitle": "Difference inventory",
+		"ScenarioReferenceSyncInventory.natureAmbiguous": "Ambiguities",
+		"ScenarioReferenceSyncInventory.natureCreate": "Creations",
+		"ScenarioReferenceSyncInventory.natureDelete": "Deletions",
+		"ScenarioReferenceSyncInventory.natureEdit": "Edits",
+		"ScenarioReferenceSyncInventory.natureGeometry": "Geometry",
+		"ScenarioReferenceSyncInventory.noDiffs": "No differences to sync between this scenario and the reference.",
+		"ScenarioReferenceSyncInventory.objectTypeItem": "Items",
+		"ScenarioReferenceSyncInventory.objectTypeRoom": "Spaces",
+		"ScenarioReferenceSyncInventory.objectTypeWorkplace": "Workplaces",
+		"ScenarioReferenceSyncView.flowCaption": "Scenario values will be applied to the reference building, one dimension at a time.",
+		"ScenarioReferenceSyncView.loadError": "Unable to load the reference / scenario pair.",
+		"ScenarioReferenceSyncView.lockedReferenceCaption": "Reference: {{name}}",
+		"ScenarioReferenceSyncView.noScenarios": "No child scenarios for this building. Create one from the Clone view.",
+		"ScenarioReferenceSyncView.scenarioPickerLabel": "Scenario",
+		"ScenarioReferenceSyncView.title": "Scenario → reference sync",
 		"ScreenshotNoLegendButton.help": "Download the image of what you see on screen without legend; output is fast but export quality may not be optimal",
 		"ScreenshotNoLegendButton.label": "Screenshot without legend",
 		"SearchFieldString.searchEmpty.help.false": "Search for empty or worthless elements",
@@ -118385,6 +118628,14 @@ var jsonTranslationsFiles = {
 		"TenantOperations.bourbon-import-hr-file.label": "Import HR File",
 		"TenantOperations.egis-import-hr-file.label": "Import HR File",
 		"TenantOperations.essilor-import-hr-file.label": "Import HR File",
+		"TenantOperations.ms-user-sync-ardian-spain.description": "Synchronizes Entra ID users for the Ardian Spain tenant",
+		"TenantOperations.ms-user-sync-ardian-spain.label": "Microsoft users synchronization (Spain)",
+		"TenantOperations.ms-user-sync-ardian-uk.description": "Synchronizes Entra ID users for the Ardian UK tenant",
+		"TenantOperations.ms-user-sync-ardian-uk.label": "Microsoft users synchronization (UK)",
+		"TenantOperations.ms-user-sync-ardian-usa.description": "Synchronizes Entra ID users for the Ardian USA tenant",
+		"TenantOperations.ms-user-sync-ardian-usa.label": "Microsoft users synchronization (USA)",
+		"TenantOperations.ms-user-sync-ardian.description": "Synchronizes Entra ID users for the Ardian France tenant",
+		"TenantOperations.ms-user-sync-ardian.label": "Microsoft users synchronization (France)",
 		"TenantOperations.ms-user-sync-bourbon.description": "Synchronizes users from Microsoft",
 		"TenantOperations.ms-user-sync-bourbon.label": "Microsoft User Synchronization",
 		"TenantOperations.ms-user-sync-thea.description": "Synchronizes users from Microsoft",
@@ -118550,7 +118801,7 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.AddRoomPointOption.help.enable": "Adding a vertex makes it possible to rework with more precision a form",
 		"WorkCanvas.Options.AddRoomPointOption.label.disable": "Stop adding a vertex",
 		"WorkCanvas.Options.AddRoomPointOption.label.enable": "Add a summit",
-		"WorkCanvas.Options.AddRoomShapeOption.description": "The angles of creation are locked at 45°, to unlock them keep pressed the <b>SHIFT</b> keyboard key and continue the creation, to create your vertex position the mouse in the circle at the intersection of the triangle, To start a space by reusing a existing vertex, keep the <b>ALT</b> keyboard key pressed and click on the vertex.",
+		"WorkCanvas.Options.AddRoomShapeOption.description": "The creation angles are locked at 45°. To unlock them, hold down the <b>SHIFT</b> key and continue creating. To create your vertex, position the mouse in the circle at the intersection of the triangle. To start a new space by reusing an existing vertex, hold down the <b>ALT</b> key and click on the vertex; during this time, the segments will no longer be highlighted in red to keep the vertices visible and clickable.",
 		"WorkCanvas.Options.AddRoomShapeOption.help.disable": "Cancel space creation",
 		"WorkCanvas.Options.AddRoomShapeOption.help.enable": "Add a space on the plan",
 		"WorkCanvas.Options.AddRoomShapeOption.label.disable": "Cancel adding a space",
@@ -118903,6 +119154,19 @@ var jsonTranslationsFiles = {
 		"AddressDialog.selectedAddress": "Dirección seleccionada",
 		"AddressDialog.validate": "Validar",
 		"AllTenantsDataQualityTable.enableAllTenantsLabel": "Incluir todas las plataformas",
+		"ApplyScenarioSyncDimensionAsyncAction.help": "Informe los valores del escenario a la referencia para esta dimensión.",
+		"ApplyScenarioSyncDimensionAsyncAction.label": "Aplicar",
+		"ArdianMSUserSyncOperation.description": "Carga usuarios de Entra (filtro: cuenta activa + licencia + employeeId + usageLocation del país del inquilino), crea la organización raíz &quot;Ardian Corporate&quot; y departamentos (nivel 1), luego sugiere empleados (employeeId→code, jobTitle→title, department→organization, phone number retained). La eliminación solo ocurre si externalId = AZURE-ARDIAN y no está presente en el origen. Detalles de la consola: logs [ardian-ms-users].",
+		"ArdianMSUserSyncOperation.helpCommon": "Guía del usuario de Ardian (referencia común)",
+		"ArdianMSUserSyncOperation.helpCustom": "Documentación personalizada (inquilino)",
+		"ArdianMSUserSyncOperation.load": "Cargar los usuarios Entra",
+		"ArdianMSUserSyncOperation.loadedCounts": "Entrada sin procesar: %{raw} — después del filtrado (habilitado + licencia + employeeId + usageLocation): %{filtered}",
+		"ArdianMSUserSyncOperation.refresh": "Reiniciar",
+		"ArdianMSUserSyncOperation.stepOrgCreate": "creación (Ardian Corporate + departamentos)",
+		"ArdianMSUserSyncOperation.stepOrgHierarchy": "jerarquía (departamento → Corporación Ardian)",
+		"ArdianMSUserSyncOperation.stepOrgUpdate": "Actualización (Ardian Corporate + departamentos)",
+		"ArdianMSUserSyncOperation.stepPeople": "colaboradores (Entra → Surfy)",
+		"ArdianMSUserSyncOperation.title": "Sincronización de usuarios de Microsoft",
 		"AssignOboBuildingAsyncAction.assignHelp": "Asignar %{buildingName} a esta persona, permitiéndole reservar una estación de trabajo.",
 		"AssignPersonCheckListBuildingAffectations.title": "Esta persona ya está directamente asignada en otros edificios, ¿desea eliminar las siguientes asignaciones para %{personFullname} ?",
 		"AssignPersonCheckListDialog.actions.close.help": "Cierra y no elimines ninguna otra tarea",
@@ -119584,6 +119848,8 @@ var jsonTranslationsFiles = {
 		"DeletePartnerEntitiesAsyncAction.label": "Eliminar en %{partnerName}",
 		"DeleteStructureExclusionAsyncAction.ariaLabel": "Eliminar la exclusión de la estructura",
 		"DeleteStructureExclusionAsyncAction.help": "Elimine esta exclusión estructural (patio, vacío, columna) sin alterar la forma externa.",
+		"DeleteUnusedCrossTenantItemTypePointsAsyncAction.help": "Eliminar puntos inconsistentes para esta empresa (líneas no utilizadas seleccionadas)",
+		"DeleteUnusedCrossTenantItemTypePointsAsyncAction.label": "Eliminar puntos inconsistentes",
 		"DeleteWorkplace.help": "Eliminar estación de trabajo: [ %{name} ], las asignaciones también se eliminarán",
 		"DeskBookingConfirmationButton.bookingConfirmed": "La reserva del puesto de trabajo ha sido confirmada.",
 		"DeskBookingConfirmationButton.confirm": "Confirma tu asistencia",
@@ -119906,6 +120172,7 @@ var jsonTranslationsFiles = {
 		"ErrorImpossibleToFindTheEntities.text": "No se puede encontrar el %{determinants.defined}",
 		"ErrorImpossibleToFindTheEntity.text": "No es posible encontrar %{determinant.defined} deseado",
 		"Errors.AUTHENTIFICATION_CONNECTION_NOT_FOUND_FOR_EMAIL": "No se encontró ninguna conexión de autenticación para el dominio %{domain}",
+		"Errors.entityNotFound": "El artículo solicitado no existe.",
 		"Errors.networkError": "Se han detectado problemas de conexión o de red. Espere y vuelva a intentarlo en unos segundos.",
 		"Errors.ROOM_BOOKING_CONFLICT": "El espacio ya está reservado para esta franja horaria. Por favor, elija otra hora o espacio.",
 		"Errors.WORKPLACE_BOOKING_CONFLICT": "La estación de trabajo ya está reservada para esta franja horaria. Elija otra hora o estación de trabajo.",
@@ -119944,6 +120211,8 @@ var jsonTranslationsFiles = {
 		"FieldTypeIndexBoolean.help": "Modificar el valor directamente",
 		"FieldTypeIndexBoolean.values.false": "No",
 		"FieldTypeIndexBoolean.values.true": "Sí",
+		"FieldTypeLegendConfiguration.addDivider": "Añade un separador",
+		"FieldTypeLegendConfiguration.dividerLabel": "Separador",
 		"FieldTypeLegendConfiguration.familyCostCenters": "centros de costos",
 		"FieldTypeLegendConfiguration.familyOrganizationsDirection": "Direcciones",
 		"FieldTypeLegendConfiguration.familyOrganizationsService": "Servicios",
@@ -119951,6 +120220,7 @@ var jsonTranslationsFiles = {
 		"FieldTypeLegendConfiguration.familyRoomTypes": "tipos",
 		"FieldTypeLegendConfiguration.legacyRoomTypeGroups": "Grupos tipológicos: selección por entidad",
 		"FieldTypeLegendConfiguration.legacyRoomTypes": "Tipologías: selección por entidad",
+		"FieldTypeLegendConfiguration.removeDivider": "Retire el separador",
 		"FieldTypeLegendConfiguration.selectionByEntity": "Selección de propiedades por entidad",
 		"FieldTypeLegendConfiguration.selectionByFilter": "Selección por filtro",
 		"FieldTypeLegendConfiguration.selectionStructure": "Selección de las propiedades de la estructura",
@@ -119971,6 +120241,8 @@ var jsonTranslationsFiles = {
 		"FixAddressButton.progress.refreshing": "Vista refrescante...",
 		"FixAddressButton.progress.updating": "Actualización de edificio en Surfy...",
 		"FixAddressButton.success.message": "✅ La dirección de ' %{buildingName} ' se ha corregido correctamente",
+		"FixRoomFloorFromPointsAsyncAction.help": "Reposicione el nivel del espacio al de sus puntos (líneas seleccionadas).",
+		"FixRoomFloorFromPointsAsyncAction.label": "Corrige el suelo",
 		"FloorMap.tabs.all": "Ver todas las formas seleccionadas en la lista",
 		"FloorMap.tabs.analyticsDimensionTypes": "Colorea los espacios del plano según las <b>capas de análisis.</b>",
 		"FloorMap.tabs.building": "Ver información del edificio",
@@ -120149,6 +120421,20 @@ var jsonTranslationsFiles = {
 		"ItemTypeDataQualityNotUsed.columns.name": "Nombre del tipo de objeto",
 		"ItemTypeDataQualityNotUsed.columns.shape": "Formulario",
 		"ItemTypeDataQualityNotUsed.columns.workplaceTypeCount": "Número de tipo de estación de trabajo",
+		"ItemTypeDataQualityPointTenantConsistency.enableAllTenantsLabel": "Todas las empresas",
+		"ItemTypeDataQualityPointTenantConsistency.headerCrossTenantPointCount": "Inconsistencias",
+		"ItemTypeDataQualityPointTenantConsistency.headerItemsCount": "objetos",
+		"ItemTypeDataQualityPointTenantConsistency.headerItemTypeId": "ID de tipo de objeto",
+		"ItemTypeDataQualityPointTenantConsistency.headerItemTypeName": "Tipo de objeto",
+		"ItemTypeDataQualityPointTenantConsistency.headerItemTypeTenant": "Compañía",
+		"ItemTypeDataQualityPointTenantConsistency.headerOwnerPlatformPointCount": "Puntos (sociedad del tipo)",
+		"ItemTypeDataQualityPointTenantConsistency.headerReason": "Razón",
+		"ItemTypeDataQualityPointTenantConsistency.headerSourceTenants": "Compañías de puntos",
+		"ItemTypeDataQualityPointTenantConsistency.headerWorkplacesCount": "Estaciones de trabajo",
+		"ItemTypeDataQualityPointTenantConsistency.headerWorkplaceTypeLinksCount": "Tipos de empleo",
+		"ItemTypeDataQualityPointTenantConsistency.numberOfItemTypes": "Tipos de objetos involucrados",
+		"ItemTypeDataQualityPointTenantConsistencyTableRow.reasonTenantMismatch": "Puntos de equipamiento inconsistentes.",
+		"ItemTypeDataQualityPointTenantConsistencyTableRow.reasonUnusedSuggestDelete": "No utilizados (objetos/posiciones): los puntos pueden eliminarse.",
 		"ItemTypeDataQualityUniqName.buttonRenameHelp": "Cambie el nombre de los tipos de objetos seleccionados agregando (1), (2), (3) para cada duplicado.",
 		"ItemTypeDataQualityUniqName.headerCompany": "negocios",
 		"ItemTypeDataQualityUniqName.headerId": "IDENTIFICACIÓN",
@@ -120598,6 +120884,8 @@ var jsonTranslationsFiles = {
 		"models.Building.views.list-simple.label": "Lista simple",
 		"models.Building.views.pictures.help": "Ver edificios con fotos",
 		"models.Building.views.pictures.label": "Imágenes",
+		"models.Building.views.scenarioSync.help": "Transfiere los valores de un <b>escenario</b> al edificio de referencia %{name} , dimensión por dimensión.",
+		"models.Building.views.scenarioSync.label": "Sincronización de scripts",
 		"models.Building.views.zbre-sync.help": "Sincroniza el edificio con la plataforma Zbre",
 		"models.Building.views.zbre-sync.label": "Sincronización zbre",
 		"models.BuildingType.description": "Un tipo de edificio permite categorizar los edificios según su uso",
@@ -120801,6 +121089,8 @@ var jsonTranslationsFiles = {
 		"models.Dimension.properties.carbonFootprintPerMeter.label": "Huella de carbono por metro cuadrado",
 		"models.Dimension.properties.color.description": "El color de la capa de análisis permite diferenciar espacios en el plano.",
 		"models.Dimension.properties.color.label": "color",
+		"models.Dimension.properties.comment.description": "Se muestra información adicional a las personas que reservan una posición en esta dimensión.",
+		"models.Dimension.properties.comment.label": "Comentario",
 		"models.Dimension.properties.crowdedForBookingRate.description": "La tasa de sobrecarga de reservas permite definir el porcentaje de ocupación más allá del cual un espacio se considera sobrecargado para las reservas.",
 		"models.Dimension.properties.crowdedForBookingRate.label": "Tasa de recargo por reserva",
 		"models.Dimension.properties.name.description": "Útil para diferenciar la capa entre otras.",
@@ -121052,6 +121342,8 @@ var jsonTranslationsFiles = {
 		"models.ItemType.views.avatar.label": "Formulario",
 		"models.ItemType.views.dq-family-tenant-consistency.help": "Enumera los tipos de objetos vinculados a una familia inconsistente; permite reasignarlos a la familia NO CLASIFICADO.",
 		"models.ItemType.views.dq-family-tenant-consistency.label": "Familia incoherente",
+		"models.ItemType.views.dq-item-type-point-tenant-consistency.help": "Enumere los tipos de objetos a los que hacen referencia los puntos de equipo inconsistentes.",
+		"models.ItemType.views.dq-item-type-point-tenant-consistency.label": "Puntos de equipo inconsistentes",
 		"models.ItemType.views.dq-not-used.help": "Enumere todos los tipos de objetos no utilizados mediante objetos o mediante tipos de estaciones de trabajo no utilizados",
 		"models.ItemType.views.dq-not-used.label": "No utilizado",
 		"models.ItemType.views.dq-uniq-name.help": "Enumera los tipos de objetos con el mismo nombre dentro de la misma empresa; permite cambiarles el nombre agregando (1), (2), (3)",
@@ -121726,6 +122018,8 @@ var jsonTranslationsFiles = {
 		"models.Room.views.dq-no-point.label": "Espacios sin puntos suficientes",
 		"models.Room.views.dq-organization-to-room.help": "Detectar asociaciones espaciales con organizaciones que no son válidas",
 		"models.Room.views.dq-organization-to-room.label": "Errores en la organización de los espacios",
+		"models.Room.views.dq-room-floor-points-consistency.help": "Espacios cuyo nivel no se corresponde con el nivel de sus puntos: se puede corregir reasignando el nivel de los puntos.",
+		"models.Room.views.dq-room-floor-points-consistency.label": "Espacios con pavimento irregular (puntos)",
 		"models.Room.views.dq-uniq-name.help": "Sugiere nombres para espacios que no tienen nombre o el nombre no es único en el mismo piso",
 		"models.Room.views.dq-uniq-name.label": "Nombres propuestos para espacios",
 		"models.Room.views.map.help": "Ver plan de espacio %{name}",
@@ -122362,6 +122656,15 @@ var jsonTranslationsFiles = {
 		"PlanningPersonAffectations.alerts.noAffectation.message": "No estás asociado a ningún territorio, por favor contacta a tu responsable de asignación para poder reservar un espacio de trabajo.",
 		"PlanningPersonAffectations.alerts.noAffectation.messageForPerson": "%{personFullName} no está asociado a ningún territorio; póngase en contacto con su gerente asignado para reservar un espacio de trabajo.",
 		"PlanningPersonAffectations.alerts.noAffectation.title": "No se puede reservar una estación de trabajo",
+		"PlatformCubyContextLoadingOverlay.phaseApplyLook": "Espacios de exhibición…",
+		"PlatformCubyContextLoadingOverlay.phaseBuildScenes": "Preparación 3D…",
+		"PlatformCubyContextLoadingOverlay.phaseError": "Error al cargar",
+		"PlatformCubyContextLoadingOverlay.phaseFetchLayout": "Cargando el mapa…",
+		"PlatformCubyContextLoadingOverlay.phaseReady": "Listo para los detalles",
+		"PlatformCubyContextLoadingOverlay.title": "Cargando detalles",
+		"PlatformStructureBuildingList.title": "Edificios",
+		"PropertSelectorDrawer.filter.ariaLabel": "Filtrar propiedades por nombre",
+		"PropertSelectorDrawer.filter.placeholder": "Filtrar las propiedades…",
 		"PropertSelectorDrawer.help": "Seleccione las propiedades que desea mostrar en la tabla",
 		"PropertSelectorDrawer.options.reset.help": "Restablecer la selección de propiedades a su estado inicial",
 		"PropertSelectorDrawer.options.reset.label": "Restablecer selección",
@@ -122520,6 +122823,18 @@ var jsonTranslationsFiles = {
 		"RoomCard.tabs.people.help": "Mostrar personas asignadas a este espacio",
 		"RoomCard.tabs.room": "Espacio",
 		"RoomCardSelectDimensions.needSave": "Guarde o cancele sus cambios antes de poder modificar las capas de análisis de este espacio",
+		"RoomDataQualityFloorPointsConsistency.enableAllTenantsLabel": "Todas las empresas",
+		"RoomDataQualityFloorPointsConsistency.headerCurrentFloor": "Piso actual",
+		"RoomDataQualityFloorPointsConsistency.headerCurrentFloorTenant": "Empresa de pisos",
+		"RoomDataQualityFloorPointsConsistency.headerPointsCount": "Puntos",
+		"RoomDataQualityFloorPointsConsistency.headerReason": "Razón",
+		"RoomDataQualityFloorPointsConsistency.headerRoomId": "espacio de identificación",
+		"RoomDataQualityFloorPointsConsistency.headerRoomName": "Espacio",
+		"RoomDataQualityFloorPointsConsistency.headerRoomTenant": "Compañía",
+		"RoomDataQualityFloorPointsConsistency.headerSuggestedFloor": "Piso de puntos",
+		"RoomDataQualityFloorPointsConsistency.headerSuggestedFloorTenant": "Compañía de puntos de piso",
+		"RoomDataQualityFloorPointsConsistency.numberOfRooms": "Áreas afectadas",
+		"RoomDataQualityFloorPointsConsistency.reasonFloorMismatch": "El nivel del espacio no se corresponde con el nivel de sus puntos.",
 		"RoomDataQualityOrganizationToRoom.headerBuilding": "Edificio",
 		"RoomDataQualityOrganizationToRoom.headerDirection": "Dirección",
 		"RoomDataQualityOrganizationToRoom.headerFloor": "piso",
@@ -122543,7 +122858,11 @@ var jsonTranslationsFiles = {
 		"RoomsBulkEditSelectDimensions.multipleValues": "Valores múltiples",
 		"RoomSegmentRoomsList.title": "Los espacios adjuntos a este segmento.",
 		"RoomTooltip.roomWorkplaceAffectations": "Asignaciones de estaciones de trabajo",
-		"RoomTypeGroupHelpTitle.exclude": "La agrupación de tipos de espacio %{name} es de tipo de exclusión. Reúne todos los espacios a excepción de las siguientes tipologías de espacios:",
+		"RoomTypeGroupHelpTitle.columnRoomType": "Tipología",
+		"RoomTypeGroupHelpTitle.columnShare": "%",
+		"RoomTypeGroupHelpTitle.columnSurface": "superficie",
+		"RoomTypeGroupHelpTitle.columnWorkplaces": "Puestos",
+		"RoomTypeGroupHelpTitle.exclude": "La agrupación de tipos de espacio %{name} es de tipo exclusión. Agrupa los siguientes tipos de espacio disponibles:",
 		"RoomTypeGroupHelpTitle.include": "La agrupación de tipos de espacio %{name} reúne las siguientes tipologías de espacio:",
 		"RoomTypeGroupLabel.exclude.tooltip": "El grupo de tipología de espacio excluye los tipos de espacio asociados.",
 		"RoomTypeGroupMapFilter.Empty": "No hay ningún grupo de tipo de espacio asociado con espacios a través de tipos de espacio, puede agregar más editando un grupo de tipo de espacio y agregándole un tipo de espacio asociado, luego puede controlar su visualización desde esta sección",
@@ -122556,6 +122875,37 @@ var jsonTranslationsFiles = {
 		"RoomWorkplaceList.EmptyList": "No hay estaciones de trabajo en este espacio.",
 		"SavePlanAsSvgButton.help": "Descarga el plano tal como se muestra en formato SVG. El archivo se abre a escala 1:1, sin zoom ni desplazamiento.",
 		"SavePlanAsSvgButton.label": "Guardar el plan como SVG",
+		"ScenarioReferenceSyncDimensionStepper.applyError": "La aplicación de esta dimensión falló. El inventario permanece visible.",
+		"ScenarioReferenceSyncDimensionStepper.dimensionItemGeo": "Geometría de objetos",
+		"ScenarioReferenceSyncDimensionStepper.dimensionItemProps": "Propiedades del objeto",
+		"ScenarioReferenceSyncDimensionStepper.dimensionRoomCostCenter": "Centro de coste",
+		"ScenarioReferenceSyncDimensionStepper.dimensionRoomOrganization": "Servicio",
+		"ScenarioReferenceSyncDimensionStepper.dimensionRoomRoomType": "Tipología espacial",
+		"ScenarioReferenceSyncDimensionStepper.dimensionWorkplaceGeo": "Publicaciones de geometría",
+		"ScenarioReferenceSyncDimensionStepper.dimensionWorkplaceProps": "Propiedades del puesto",
+		"ScenarioReferenceSyncDimensionStepper.matchesToApply": "{{count}} coincidencia(s) para aplicar",
+		"ScenarioReferenceSyncDimensionStepper.nothingToSync": "Nada que sincronizar",
+		"ScenarioReferenceSyncDimensionStepper.stepCompleted": "aplicado",
+		"ScenarioReferenceSyncDimensionStepper.stepperTitle": "Dimensiones de sincronización",
+		"ScenarioReferenceSyncInventory.ambiguousCaption": "Por especificar: excluido de la sincronización.",
+		"ScenarioReferenceSyncInventory.createDeleteLaterCaption": "Sincronización de creación/eliminación: más adelante",
+		"ScenarioReferenceSyncInventory.geometryRoomCaption": "Detectado — no implementado (MVP)",
+		"ScenarioReferenceSyncInventory.inventaireTitle": "Inventario de discrepancias",
+		"ScenarioReferenceSyncInventory.natureAmbiguous": "Ambigüedades",
+		"ScenarioReferenceSyncInventory.natureCreate": "Creaciones",
+		"ScenarioReferenceSyncInventory.natureDelete": "Eliminaciones",
+		"ScenarioReferenceSyncInventory.natureEdit": "Ediciones",
+		"ScenarioReferenceSyncInventory.natureGeometry": "Geometría",
+		"ScenarioReferenceSyncInventory.noDiffs": "No hay desfase para sincronizar entre este escenario y la referencia.",
+		"ScenarioReferenceSyncInventory.objectTypeItem": "objetos",
+		"ScenarioReferenceSyncInventory.objectTypeRoom": "Espacios",
+		"ScenarioReferenceSyncInventory.objectTypeWorkplace": "Puestos",
+		"ScenarioReferenceSyncView.flowCaption": "Los valores del escenario se transferirán al edificio de referencia, dimensión por dimensión.",
+		"ScenarioReferenceSyncView.loadError": "No se pudieron cargar los datos del par referencia/escenario.",
+		"ScenarioReferenceSyncView.lockedReferenceCaption": "Referencia: {{name}}",
+		"ScenarioReferenceSyncView.noScenarios": "No existen escenarios secundarios para este edificio. Cree un escenario desde la vista Clonar.",
+		"ScenarioReferenceSyncView.scenarioPickerLabel": "Guión",
+		"ScenarioReferenceSyncView.title": "Sincronización de scripts → referencia",
 		"ScreenshotNoLegendButton.help": "Descargue la imagen de lo que ve en la pantalla sin título, la salida será rápida pero la calidad de la exportación no será óptima",
 		"ScreenshotNoLegendButton.label": "Captura de pantalla sin título",
 		"SearchFieldString.searchEmpty.help.false": "Buscar elementos vacíos o sin valor",
@@ -122665,6 +123015,14 @@ var jsonTranslationsFiles = {
 		"TenantOperations.bourbon-import-hr-file.label": "Importar archivo HR",
 		"TenantOperations.egis-import-hr-file.label": "Importar archivo HR",
 		"TenantOperations.essilor-import-hr-file.label": "Importar archivo HR",
+		"TenantOperations.ms-user-sync-ardian-spain.description": "Sincroniza los usuarios de Entra ID para el inquilino de Ardian España.",
+		"TenantOperations.ms-user-sync-ardian-spain.label": "Sincronización de usuarios de Microsoft (España)",
+		"TenantOperations.ms-user-sync-ardian-uk.description": "Sincroniza los usuarios de Entra ID para el inquilino de Ardian UK.",
+		"TenantOperations.ms-user-sync-ardian-uk.label": "Sincronización de usuarios de Microsoft (Reino Unido)",
+		"TenantOperations.ms-user-sync-ardian-usa.description": "Sincroniza los usuarios de Entra ID para el inquilino de Ardian USA.",
+		"TenantOperations.ms-user-sync-ardian-usa.label": "Sincronización de usuarios de Microsoft (EE. UU.)",
+		"TenantOperations.ms-user-sync-ardian.description": "Sincroniza los usuarios de Entra ID para el inquilino de Ardian France.",
+		"TenantOperations.ms-user-sync-ardian.label": "Sincronización de usuarios de Microsoft (Francia)",
 		"TenantOperations.ms-user-sync-bourbon.description": "Sincroniza usuarios de Microsoft",
 		"TenantOperations.ms-user-sync-bourbon.label": "Sincronización de usuarios de Microsoft",
 		"TenantOperations.ms-user-sync-thea.description": "Sincroniza usuarios de Microsoft",
@@ -122830,7 +123188,7 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.AddRoomPointOption.help.enable": "Agregar un vértice permite volver a trabajar con mayor precisión un formulario",
 		"WorkCanvas.Options.AddRoomPointOption.label.disable": "Deja de agregar un vértice",
 		"WorkCanvas.Options.AddRoomPointOption.label.enable": "Agregar una cumbre",
-		"WorkCanvas.Options.AddRoomShapeOption.description": "Los ángulos de creación están bloqueados a 45°, para desbloquearlos mantenga presionada la tecla <b>SHIFT</b> del teclado y continúe con la creación, para crear su vértice coloque el mouse en el círculo en la intersección del triángulo, para iniciar un espacio reutilizando un vértice existente , mantenga presionada la tecla <b>ALT</b> del teclado y haga clic en el vértice.",
+		"WorkCanvas.Options.AddRoomShapeOption.description": "Los ángulos de creación están bloqueados a 45°. Para desbloquearlos, mantén pulsada la tecla <b>MAYÚS</b> y continúa creando. Para crear un vértice, coloca el ratón en el círculo situado en la intersección del triángulo. Para crear un nuevo espacio reutilizando un vértice existente, mantén pulsada la tecla <b>ALT</b> y haz clic en el vértice; durante este proceso, los segmentos dejarán de estar resaltados en rojo para que los vértices permanezcan visibles y se pueda hacer clic en ellos.",
 		"WorkCanvas.Options.AddRoomShapeOption.help.disable": "Deshacer la creación de espacio",
 		"WorkCanvas.Options.AddRoomShapeOption.help.enable": "Añadir un espacio en el plano",
 		"WorkCanvas.Options.AddRoomShapeOption.label.disable": "Deshacer la adición de un espacio",
@@ -123183,6 +123541,19 @@ var jsonTranslationsFiles = {
 		"AddressDialog.selectedAddress": "Indirizzo selezionato",
 		"AddressDialog.validate": "convalidare",
 		"AllTenantsDataQualityTable.enableAllTenantsLabel": "Includi tutte le piattaforme",
+		"ApplyScenarioSyncDimensionAsyncAction.help": "Riporta i valori dello scenario al riferimento per questa dimensione",
+		"ApplyScenarioSyncDimensionAsyncAction.label": "Fare domanda a",
+		"ArdianMSUserSyncOperation.description": "Carica gli utenti Entra (filtro: account attivo + licenza + employeeId + usageLocation del paese del tenant), crea l'organizzazione radice &quot;Ardian Corporate&quot; e i dipartimenti (livello 1), quindi suggerisce i dipendenti (employeeId→codice, jobTitle→titolo, dipartimento→organizzazione, numero di telefono mantenuto). La rimozione avviene solo se externalId = AZURE-ARDIAN ed è assente dall'origine. Dettagli della console: log [ardian-ms-users].",
+		"ArdianMSUserSyncOperation.helpCommon": "Manuale utente di Ardian (riferimento comune)",
+		"ArdianMSUserSyncOperation.helpCustom": "Documentazione personalizzata (inquilino)",
+		"ArdianMSUserSyncOperation.load": "Carica utenti Entra",
+		"ArdianMSUserSyncOperation.loadedCounts": "Input grezzo: %{raw} — dopo il filtraggio (abilitato + licenza + employeeId + usageLocation): %{filtered}",
+		"ArdianMSUserSyncOperation.refresh": "Ricomincia",
+		"ArdianMSUserSyncOperation.stepOrgCreate": "creazione (Ardian Corporate + dipartimenti)",
+		"ArdianMSUserSyncOperation.stepOrgHierarchy": "gerarchia (dipartimento → Ardian Corporate)",
+		"ArdianMSUserSyncOperation.stepOrgUpdate": "Aggiornamento (Ardian Corporate + dipartimenti)",
+		"ArdianMSUserSyncOperation.stepPeople": "collaboratori (Entra → Surfy)",
+		"ArdianMSUserSyncOperation.title": "Sincronizzazione utente Microsoft",
 		"AssignOboBuildingAsyncAction.assignHelp": "Assegna %{buildingName} a questa persona, consentendole di riservare una postazione di lavoro.",
 		"AssignPersonCheckListBuildingAffectations.title": "Questa persona è già assegnata direttamente su altri edifici, vuoi rimuovere le seguenti assegnazioni per %{personFullname}",
 		"AssignPersonCheckListDialog.actions.close.help": "Chiudi e non eliminare altre assegnazioni",
@@ -123864,6 +124235,8 @@ var jsonTranslationsFiles = {
 		"DeletePartnerEntitiesAsyncAction.label": "Elimina in %{partnerName}",
 		"DeleteStructureExclusionAsyncAction.ariaLabel": "Rimuovere l'esclusione della struttura",
 		"DeleteStructureExclusionAsyncAction.help": "Rimuovere questa esclusione strutturale (patio, vuoto, colonna) senza alterare la forma esterna",
+		"DeleteUnusedCrossTenantItemTypePointsAsyncAction.help": "Rimuovi i punti incoerenti per questa azienda (sono state selezionate le righe non utilizzate)",
+		"DeleteUnusedCrossTenantItemTypePointsAsyncAction.label": "Rimuovere i punti incoerenti",
 		"DeleteWorkplace.help": "Elimina workstation: [ %{name} ], anche le assegnazioni verranno eliminate",
 		"DeskBookingConfirmationButton.bookingConfirmed": "La prenotazione della postazione di lavoro è stata confermata.",
 		"DeskBookingConfirmationButton.confirm": "Conferma la tua presenza",
@@ -124186,6 +124559,7 @@ var jsonTranslationsFiles = {
 		"ErrorImpossibleToFindTheEntities.text": "Impossibile trovare %{determinants.defined} cercato",
 		"ErrorImpossibleToFindTheEntity.text": "Impossibile trovare %{determinant.defined} ricercato",
 		"Errors.AUTHENTIFICATION_CONNECTION_NOT_FOUND_FOR_EMAIL": "Nessuna connessione di autenticazione trovata per il dominio %{domain}",
+		"Errors.entityNotFound": "L'articolo richiesto non esiste.",
 		"Errors.networkError": "Sono stati rilevati problemi di connessione o di rete, attendi e riprova tra qualche secondo",
 		"Errors.ROOM_BOOKING_CONFLICT": "Il posto è già prenotato per questa fascia oraria. Si prega di scegliere un altro orario o un altro posto.",
 		"Errors.WORKPLACE_BOOKING_CONFLICT": "La postazione di lavoro è già prenotata per questa fascia oraria. Si prega di scegliere un altro orario o un'altra postazione di lavoro.",
@@ -124224,6 +124598,8 @@ var jsonTranslationsFiles = {
 		"FieldTypeIndexBoolean.help": "Modificare direttamente il valore",
 		"FieldTypeIndexBoolean.values.false": "NO",
 		"FieldTypeIndexBoolean.values.true": "SÌ",
+		"FieldTypeLegendConfiguration.addDivider": "Aggiungi un separatore",
+		"FieldTypeLegendConfiguration.dividerLabel": "Separatore",
 		"FieldTypeLegendConfiguration.familyCostCenters": "Centri di costo",
 		"FieldTypeLegendConfiguration.familyOrganizationsDirection": "Indicazioni",
 		"FieldTypeLegendConfiguration.familyOrganizationsService": "Servizi",
@@ -124231,6 +124607,7 @@ var jsonTranslationsFiles = {
 		"FieldTypeLegendConfiguration.familyRoomTypes": "Tipi",
 		"FieldTypeLegendConfiguration.legacyRoomTypeGroups": "Gruppi tipologici — selezione per entità",
 		"FieldTypeLegendConfiguration.legacyRoomTypes": "Tipologie — selezione per entità",
+		"FieldTypeLegendConfiguration.removeDivider": "Rimuovere il separatore",
 		"FieldTypeLegendConfiguration.selectionByEntity": "Selezione delle proprietà per entità",
 		"FieldTypeLegendConfiguration.selectionByFilter": "Selezione tramite filtro",
 		"FieldTypeLegendConfiguration.selectionStructure": "Selezione delle proprietà della struttura",
@@ -124251,6 +124628,8 @@ var jsonTranslationsFiles = {
 		"FixAddressButton.progress.refreshing": "Una vista rinfrescante...",
 		"FixAddressButton.progress.updating": "Aggiornamento dell'edificio a Surfy...",
 		"FixAddressButton.success.message": "✅ L'indirizzo di ' %{buildingName} ' è stato corretto con successo",
+		"FixRoomFloorFromPointsAsyncAction.help": "Riposizionare il livello spaziale su quello dei suoi punti (linee selezionate).",
+		"FixRoomFloorFromPointsAsyncAction.label": "Correggere il pavimento",
 		"FloorMap.tabs.all": "Visualizza tutte le forme selezionate nell'elenco",
 		"FloorMap.tabs.analyticsDimensionTypes": "Colora gli spazi sulla pianta in base ai <b>livelli di analisi</b>",
 		"FloorMap.tabs.building": "Vedi le informazioni sull'edificio",
@@ -124429,6 +124808,20 @@ var jsonTranslationsFiles = {
 		"ItemTypeDataQualityNotUsed.columns.name": "Nome del tipo di oggetto",
 		"ItemTypeDataQualityNotUsed.columns.shape": "Modulo",
 		"ItemTypeDataQualityNotUsed.columns.workplaceTypeCount": "Numero del tipo di postazione di lavoro",
+		"ItemTypeDataQualityPointTenantConsistency.enableAllTenantsLabel": "Tutte le aziende",
+		"ItemTypeDataQualityPointTenantConsistency.headerCrossTenantPointCount": "Incoerenze",
+		"ItemTypeDataQualityPointTenantConsistency.headerItemsCount": "oggetti",
+		"ItemTypeDataQualityPointTenantConsistency.headerItemTypeId": "ID tipo oggetto",
+		"ItemTypeDataQualityPointTenantConsistency.headerItemTypeName": "Tipo di oggetto",
+		"ItemTypeDataQualityPointTenantConsistency.headerItemTypeTenant": "Azienda",
+		"ItemTypeDataQualityPointTenantConsistency.headerOwnerPlatformPointCount": "Punti (società di questo tipo)",
+		"ItemTypeDataQualityPointTenantConsistency.headerReason": "Motivo",
+		"ItemTypeDataQualityPointTenantConsistency.headerSourceTenants": "Aziende di punti",
+		"ItemTypeDataQualityPointTenantConsistency.headerWorkplacesCount": "Posti di lavoro personali",
+		"ItemTypeDataQualityPointTenantConsistency.headerWorkplaceTypeLinksCount": "Tipi di lavoro",
+		"ItemTypeDataQualityPointTenantConsistency.numberOfItemTypes": "Tipologie di oggetti interessati",
+		"ItemTypeDataQualityPointTenantConsistencyTableRow.reasonTenantMismatch": "Punti di equipaggiamento incoerenti.",
+		"ItemTypeDataQualityPointTenantConsistencyTableRow.reasonUnusedSuggestDelete": "Gli oggetti/posizioni non utilizzati possono essere eliminati.",
 		"ItemTypeDataQualityUniqName.buttonRenameHelp": "Rinomina i tipi di oggetto selezionati aggiungendo (1), (2), (3) per ogni duplicato.",
 		"ItemTypeDataQualityUniqName.headerCompany": "Azienda",
 		"ItemTypeDataQualityUniqName.headerId": "ID",
@@ -124878,6 +125271,8 @@ var jsonTranslationsFiles = {
 		"models.Building.views.list-simple.label": "Elenco semplice",
 		"models.Building.views.pictures.help": "Visualizza gli edifici con le foto",
 		"models.Building.views.pictures.label": "Immagini",
+		"models.Building.views.scenarioSync.help": "Trasferisci i valori di uno <b>scenario</b> all'edificio di riferimento %{name} , dimensione per dimensione",
+		"models.Building.views.scenarioSync.label": "Sincronizzazione degli script",
 		"models.Building.views.zbre-sync.help": "Sincronizza l'edificio con la piattaforma Zbre",
 		"models.Building.views.zbre-sync.label": "Sincronizzazione Zebra",
 		"models.BuildingType.description": "Una tipologia di edificio consente di classificare gli edifici in base al loro utilizzo",
@@ -125081,6 +125476,8 @@ var jsonTranslationsFiles = {
 		"models.Dimension.properties.carbonFootprintPerMeter.label": "Impronta di carbonio per metro quadrato",
 		"models.Dimension.properties.color.description": "Il colore del livello di analisi consente di differenziare gli spazi sulla pianta",
 		"models.Dimension.properties.color.label": "Colore",
+		"models.Dimension.properties.comment.description": "Le informazioni aggiuntive vengono visualizzate alle persone che prenotano una posizione in questa dimensione.",
+		"models.Dimension.properties.comment.label": "Commento",
 		"models.Dimension.properties.crowdedForBookingRate.description": "Il tasso di sovraccarico delle prenotazioni consente di definire la percentuale di occupazione oltre la quale uno spazio è considerato sovraccarico di prenotazioni.",
 		"models.Dimension.properties.crowdedForBookingRate.label": "Supplemento di prenotazione",
 		"models.Dimension.properties.name.description": "Utile per differenziare lo strato tra gli altri",
@@ -125332,6 +125729,8 @@ var jsonTranslationsFiles = {
 		"models.ItemType.views.avatar.label": "Modulo",
 		"models.ItemType.views.dq-family-tenant-consistency.help": "Elenca i tipi di oggetto collegati a una famiglia incoerente; consente di riassegnarli alla famiglia NON CLASSIFICATA.",
 		"models.ItemType.views.dq-family-tenant-consistency.label": "Famiglia incoerente",
+		"models.ItemType.views.dq-item-type-point-tenant-consistency.help": "Elencare le tipologie di oggetti a cui fanno riferimento i punti apparecchiatura incoerenti.",
+		"models.ItemType.views.dq-item-type-point-tenant-consistency.label": "Punti di equipaggiamento incoerenti",
 		"models.ItemType.views.dq-not-used.help": "Elenca tutti i tipi di oggetti inutilizzati tramite oggetti o tramite tipi di workstation inutilizzati",
 		"models.ItemType.views.dq-not-used.label": "Non usato",
 		"models.ItemType.views.dq-uniq-name.help": "Elenca i tipi di oggetti con lo stesso nome all'interno della stessa azienda; consente di rinominarli aggiungendo (1), (2), (3)",
@@ -126006,6 +126405,8 @@ var jsonTranslationsFiles = {
 		"models.Room.views.dq-no-point.label": "Spazi senza punti sufficienti",
 		"models.Room.views.dq-organization-to-room.help": "Rileva associazioni spaziali con organizzazioni non valide",
 		"models.Room.views.dq-organization-to-room.label": "Errori nell'organizzazione degli spazi",
+		"models.Room.views.dq-room-floor-points-consistency.help": "Spazi il cui livello non corrisponde al livello dei loro punti — correggibile riassegnando il livello dei punti",
+		"models.Room.views.dq-room-floor-points-consistency.label": "Spazi con pavimentazione irregolare (punti)",
 		"models.Room.views.dq-uniq-name.help": "Suggerisce nomi per spazi che non hanno un nome o il nome non è univoco sullo stesso piano",
 		"models.Room.views.dq-uniq-name.label": "Nomi proposti per gli spazi",
 		"models.Room.views.map.help": "Visualizza planimetria %{name}",
@@ -126642,6 +127043,15 @@ var jsonTranslationsFiles = {
 		"PlanningPersonAffectations.alerts.noAffectation.message": "Non sei associato ad alcun territorio, contatta il tuo responsabile di assegnazione per poter prenotare uno spazio di lavoro",
 		"PlanningPersonAffectations.alerts.noAffectation.messageForPerson": "%{personFullName} non è associato ad alcun territorio; si prega di contattare il responsabile assegnato per prenotare una postazione di lavoro.",
 		"PlanningPersonAffectations.alerts.noAffectation.title": "Impossibile prenotare una postazione di lavoro",
+		"PlatformCubyContextLoadingOverlay.phaseApplyLook": "Spazi espositivi…",
+		"PlatformCubyContextLoadingOverlay.phaseBuildScenes": "Preparazione 3D…",
+		"PlatformCubyContextLoadingOverlay.phaseError": "Caricamento non riuscito",
+		"PlatformCubyContextLoadingOverlay.phaseFetchLayout": "Caricamento della mappa…",
+		"PlatformCubyContextLoadingOverlay.phaseReady": "Pronto per i dettagli",
+		"PlatformCubyContextLoadingOverlay.title": "Dettagli di caricamento",
+		"PlatformStructureBuildingList.title": "Edifici",
+		"PropertSelectorDrawer.filter.ariaLabel": "Filtra le proprietà per nome",
+		"PropertSelectorDrawer.filter.placeholder": "Filtra le proprietà…",
 		"PropertSelectorDrawer.help": "Seleziona le proprietà che desideri visualizzare nella tabella",
 		"PropertSelectorDrawer.options.reset.help": "Ripristina la selezione delle proprietà al loro stato iniziale",
 		"PropertSelectorDrawer.options.reset.label": "Ripristina selezione",
@@ -126800,6 +127210,18 @@ var jsonTranslationsFiles = {
 		"RoomCard.tabs.people.help": "Mostra le persone assegnate a questo spazio",
 		"RoomCard.tabs.room": "Spazio",
 		"RoomCardSelectDimensions.needSave": "Salva o annulla le modifiche prima di poter modificare i livelli di analisi di questo spazio",
+		"RoomDataQualityFloorPointsConsistency.enableAllTenantsLabel": "Tutte le aziende",
+		"RoomDataQualityFloorPointsConsistency.headerCurrentFloor": "Piano attuale",
+		"RoomDataQualityFloorPointsConsistency.headerCurrentFloorTenant": "Azienda di pavimentazione",
+		"RoomDataQualityFloorPointsConsistency.headerPointsCount": "Punti",
+		"RoomDataQualityFloorPointsConsistency.headerReason": "Motivo",
+		"RoomDataQualityFloorPointsConsistency.headerRoomId": "Spazio ID",
+		"RoomDataQualityFloorPointsConsistency.headerRoomName": "Spazio",
+		"RoomDataQualityFloorPointsConsistency.headerRoomTenant": "Azienda",
+		"RoomDataQualityFloorPointsConsistency.headerSuggestedFloor": "Piano dei punti",
+		"RoomDataQualityFloorPointsConsistency.headerSuggestedFloorTenant": "Floor Points Company",
+		"RoomDataQualityFloorPointsConsistency.numberOfRooms": "Aree interessate",
+		"RoomDataQualityFloorPointsConsistency.reasonFloorMismatch": "Il livello dello spazio non corrisponde al livello dei suoi punti.",
 		"RoomDataQualityOrganizationToRoom.headerBuilding": "Edificio",
 		"RoomDataQualityOrganizationToRoom.headerDirection": "Direzione",
 		"RoomDataQualityOrganizationToRoom.headerFloor": "Piano",
@@ -126823,7 +127245,11 @@ var jsonTranslationsFiles = {
 		"RoomsBulkEditSelectDimensions.multipleValues": "Valori di cambio",
 		"RoomSegmentRoomsList.title": "Gli spazi allegati a questo segmento",
 		"RoomTooltip.roomWorkplaceAffectations": "Compiti della postazione di lavoro",
-		"RoomTypeGroupHelpTitle.exclude": "Il tipo di spazio raggruppato %{name} è di tipo esclusione. Riunisce tutti gli spazi ad eccezione delle seguenti tipologie di spazi:",
+		"RoomTypeGroupHelpTitle.columnRoomType": "Tipologia",
+		"RoomTypeGroupHelpTitle.columnShare": "%",
+		"RoomTypeGroupHelpTitle.columnSurface": "La zona",
+		"RoomTypeGroupHelpTitle.columnWorkplaces": "Posizioni",
+		"RoomTypeGroupHelpTitle.exclude": "Il raggruppamento di tipi di spazio %{name} è di tipo esclusione. Raggruppa i seguenti tipi di spazio disponibili:",
 		"RoomTypeGroupHelpTitle.include": "Il raggruppamento di tipi di spazio %{name} riunisce le seguenti tipologie di spazio:",
 		"RoomTypeGroupLabel.exclude.tooltip": "Il gruppo di tipologie di spazio esclude i tipi di spazio associati",
 		"RoomTypeGroupMapFilter.Empty": "Non esiste alcun gruppo di tipi di spazio associato agli spazi tramite i tipi di spazio, puoi aggiungerne altri modificando un gruppo di tipi di spazio e aggiungendovi associando un tipo di spazio, quindi puoi controllarne la visualizzazione da questa sezione",
@@ -126836,6 +127262,37 @@ var jsonTranslationsFiles = {
 		"RoomWorkplaceList.EmptyList": "Non sono presenti postazioni di lavoro in questo spazio",
 		"SavePlanAsSvgButton.help": "Scarica la planimetria così come viene visualizzata, in formato SVG. Il file si aprirà in scala 1:1, senza zoom né offset.",
 		"SavePlanAsSvgButton.label": "Salva il piano come SVG",
+		"ScenarioReferenceSyncDimensionStepper.applyError": "L'applicazione di questa dimensione non è riuscita. L'inventario rimane visualizzato.",
+		"ScenarioReferenceSyncDimensionStepper.dimensionItemGeo": "Geometria dell'oggetto",
+		"ScenarioReferenceSyncDimensionStepper.dimensionItemProps": "Proprietà dell'oggetto",
+		"ScenarioReferenceSyncDimensionStepper.dimensionRoomCostCenter": "Centro di costo",
+		"ScenarioReferenceSyncDimensionStepper.dimensionRoomOrganization": "Servizio",
+		"ScenarioReferenceSyncDimensionStepper.dimensionRoomRoomType": "Tipologia di spazio",
+		"ScenarioReferenceSyncDimensionStepper.dimensionWorkplaceGeo": "Articoli di geometria",
+		"ScenarioReferenceSyncDimensionStepper.dimensionWorkplaceProps": "Pubblica proprietà",
+		"ScenarioReferenceSyncDimensionStepper.matchesToApply": "{{count}} corrispondenze da applicare",
+		"ScenarioReferenceSyncDimensionStepper.nothingToSync": "Niente da sincronizzare",
+		"ScenarioReferenceSyncDimensionStepper.stepCompleted": "applicato",
+		"ScenarioReferenceSyncDimensionStepper.stepperTitle": "Dimensioni di sincronizzazione",
+		"ScenarioReferenceSyncInventory.ambiguousCaption": "Da specificare — escluso dalla sincronizzazione",
+		"ScenarioReferenceSyncInventory.createDeleteLaterCaption": "Creazione/eliminazione della sincronizzazione: più tardi",
+		"ScenarioReferenceSyncInventory.geometryRoomCaption": "Rilevato — non implementato (MVP)",
+		"ScenarioReferenceSyncInventory.inventaireTitle": "Inventario delle discrepanze",
+		"ScenarioReferenceSyncInventory.natureAmbiguous": "Ambiguità",
+		"ScenarioReferenceSyncInventory.natureCreate": "Creatori",
+		"ScenarioReferenceSyncInventory.natureDelete": "Eliminazioni",
+		"ScenarioReferenceSyncInventory.natureEdit": "Edizioni",
+		"ScenarioReferenceSyncInventory.natureGeometry": "Geometria",
+		"ScenarioReferenceSyncInventory.noDiffs": "Non è necessario alcun intervallo di tempo per la sincronizzazione tra questo scenario e il riferimento.",
+		"ScenarioReferenceSyncInventory.objectTypeItem": "oggetti",
+		"ScenarioReferenceSyncInventory.objectTypeRoom": "Spazi",
+		"ScenarioReferenceSyncInventory.objectTypeWorkplace": "Posizioni",
+		"ScenarioReferenceSyncView.flowCaption": "I valori dello scenario verranno trasferiti all'edificio di riferimento, dimensione per dimensione.",
+		"ScenarioReferenceSyncView.loadError": "Impossibile caricare i dati della coppia riferimento/scenario.",
+		"ScenarioReferenceSyncView.lockedReferenceCaption": "Riferimento: {{name}}",
+		"ScenarioReferenceSyncView.noScenarios": "Per questo edificio non esistono scenari secondari. Crea uno scenario dalla vista Clona.",
+		"ScenarioReferenceSyncView.scenarioPickerLabel": "Scenario",
+		"ScenarioReferenceSyncView.title": "Script sync → reference",
 		"ScreenshotNoLegendButton.help": "Scarica l'immagine di ciò che vedi a schermo senza didascalia, l'output sarà veloce ma la qualità dell'export non sarà ottimale",
 		"ScreenshotNoLegendButton.label": "Screenshot senza didascalia",
 		"SearchFieldString.searchEmpty.help.false": "Cerca elementi vuoti o senza valore",
@@ -126945,6 +127402,14 @@ var jsonTranslationsFiles = {
 		"TenantOperations.bourbon-import-hr-file.label": "Importazione file HR",
 		"TenantOperations.egis-import-hr-file.label": "Importazione file HR",
 		"TenantOperations.essilor-import-hr-file.label": "Importazione file HR",
+		"TenantOperations.ms-user-sync-ardian-spain.description": "Sincronizza gli utenti Entra ID per il tenant Ardian Spagna",
+		"TenantOperations.ms-user-sync-ardian-spain.label": "Sincronizzazione utenti Microsoft (Spagna)",
+		"TenantOperations.ms-user-sync-ardian-uk.description": "Sincronizza gli utenti Entra ID per il tenant Ardian UK",
+		"TenantOperations.ms-user-sync-ardian-uk.label": "Sincronizzazione utenti Microsoft (Regno Unito)",
+		"TenantOperations.ms-user-sync-ardian-usa.description": "Sincronizza gli utenti Entra ID per il tenant Ardian USA",
+		"TenantOperations.ms-user-sync-ardian-usa.label": "Sincronizzazione utenti Microsoft (USA)",
+		"TenantOperations.ms-user-sync-ardian.description": "Sincronizza gli utenti Entra ID per il tenant Ardian Francia",
+		"TenantOperations.ms-user-sync-ardian.label": "Sincronizzazione utenti Microsoft (Francia)",
 		"TenantOperations.ms-user-sync-bourbon.description": "Sincronizza gli utenti di Microsoft",
 		"TenantOperations.ms-user-sync-bourbon.label": "Sincronizzazione utente Microsoft",
 		"TenantOperations.ms-user-sync-thea.description": "Sincronizza gli utenti di Microsoft",
@@ -127110,7 +127575,7 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.AddRoomPointOption.help.enable": "L'aggiunta di un vertice consente di rielaborare una forma con maggiore precisione",
 		"WorkCanvas.Options.AddRoomPointOption.label.disable": "Smetti di aggiungere un vertice",
 		"WorkCanvas.Options.AddRoomPointOption.label.enable": "Aggiungi vertice",
-		"WorkCanvas.Options.AddRoomShapeOption.description": "Gli angoli di creazione sono bloccati a 45°, per sbloccarli tieni premuto il tasto <b>SHIFT</b> della tastiera e continua la creazione, per creare il tuo vertice posiziona il mouse nel cerchio all'intersezione del triangolo, Per iniziare uno spazio riutilizzando un vertice esistente , tieni premuto il tasto <b>ALT</b> della tastiera e clicca sul vertice.",
+		"WorkCanvas.Options.AddRoomShapeOption.description": "Gli angoli di creazione sono bloccati a 45°. Per sbloccarli, tieni premuto il tasto <b>MAIUSC</b> e continua a creare. Per creare il vertice, posiziona il mouse nel cerchio all'intersezione del triangolo. Per iniziare un nuovo spazio riutilizzando un vertice esistente, tieni premuto il tasto <b>ALT</b> e fai clic sul vertice; durante questa operazione, i segmenti non saranno più evidenziati in rosso per mantenere i vertici visibili e cliccabili.",
 		"WorkCanvas.Options.AddRoomShapeOption.help.disable": "Annulla la creazione dello spazio",
 		"WorkCanvas.Options.AddRoomShapeOption.help.enable": "Aggiungi spazio sulla planimetria",
 		"WorkCanvas.Options.AddRoomShapeOption.label.disable": "Annulla l'aggiunta di uno spazio",
@@ -127463,6 +127928,19 @@ var jsonTranslationsFiles = {
 		"AddressDialog.selectedAddress": "Geselecteerd adres",
 		"AddressDialog.validate": "bevestigen",
 		"AllTenantsDataQualityTable.enableAllTenantsLabel": "Neem alle platforms op",
+		"ApplyScenarioSyncDimensionAsyncAction.help": "Rapporteer de scenario-waarden aan de referentie voor deze dimensie.",
+		"ApplyScenarioSyncDimensionAsyncAction.label": "Toepassen",
+		"ArdianMSUserSyncOperation.description": "Laadt Entra-gebruikers (filter: actief account + licentie + employeeId + usageLocation van het tenantland), maakt de hoofdorganisatie &quot;Ardian Corporate&quot; en afdelingen aan (niveau 1), en stelt vervolgens medewerkers voor (employeeId→code, jobTitle→title, department→organization, phone number behouden). Verwijdering vindt alleen plaats als externalId = AZURE-ARDIAN en ontbreekt in de bron. Console-details: logs [ardian-ms-users].",
+		"ArdianMSUserSyncOperation.helpCommon": "Ardian gebruikershandleiding (algemene referentie)",
+		"ArdianMSUserSyncOperation.helpCustom": "Aangepaste documentatie (huurder)",
+		"ArdianMSUserSyncOperation.load": "Laad de gebruikers Entra",
+		"ArdianMSUserSyncOperation.loadedCounts": "Ruwe invoer: %{raw} — na filtering (enabled + license + employeeId + usageLocation): %{filtered}",
+		"ArdianMSUserSyncOperation.refresh": "Herstarten",
+		"ArdianMSUserSyncOperation.stepOrgCreate": "creatie (Ardian Corporate + afdelingen)",
+		"ArdianMSUserSyncOperation.stepOrgHierarchy": "hiërarchie (afdeling → Ardian Corporate)",
+		"ArdianMSUserSyncOperation.stepOrgUpdate": "Update (Ardian Corporate + afdelingen)",
+		"ArdianMSUserSyncOperation.stepPeople": "samenwerkingspartners (Entra → Surfy)",
+		"ArdianMSUserSyncOperation.title": "Microsoft-gebruikerssynchronisatie",
 		"AssignOboBuildingAsyncAction.assignHelp": "Wijs %{buildingName} toe aan deze persoon, zodat hij of zij een werkplek kan reserveren.",
 		"AssignPersonCheckListBuildingAffectations.title": "Deze persoon is al direct toegewezen aan andere gebouwen, wil je de volgende toewijzingen voor %{personFullname} verwijderen",
 		"AssignPersonCheckListDialog.actions.close.help": "Sluit en verwijder geen andere toewijzingen",
@@ -128144,6 +128622,8 @@ var jsonTranslationsFiles = {
 		"DeletePartnerEntitiesAsyncAction.label": "Verwijderen in %{partnerName}",
 		"DeleteStructureExclusionAsyncAction.ariaLabel": "Verwijder de uitsluiting van de structuur",
 		"DeleteStructureExclusionAsyncAction.help": "Verwijder deze structurele belemmering (terras, holte, kolom) zonder de externe vorm te veranderen.",
+		"DeleteUnusedCrossTenantItemTypePointsAsyncAction.help": "Verwijder inconsistente punten voor dit bedrijf (ongebruikte regels geselecteerd)",
+		"DeleteUnusedCrossTenantItemTypePointsAsyncAction.label": "Verwijder tegenstrijdige punten",
 		"DeleteWorkplace.help": "Werkstation verwijderen: [ %{name} ], opdrachten worden ook verwijderd",
 		"DeskBookingConfirmationButton.bookingConfirmed": "De reservering van de werkplek is bevestigd.",
 		"DeskBookingConfirmationButton.confirm": "Bevestig uw aanwezigheid",
@@ -128466,6 +128946,7 @@ var jsonTranslationsFiles = {
 		"ErrorImpossibleToFindTheEntities.text": "Kon het gezochte %{determinants.defined} niet vinden",
 		"ErrorImpossibleToFindTheEntity.text": "De gezochte %{determinant.defined} kan niet worden gevonden",
 		"Errors.AUTHENTIFICATION_CONNECTION_NOT_FOUND_FOR_EMAIL": "Er is geen authenticatieverbinding gevonden voor het domein %{domain}",
+		"Errors.entityNotFound": "Het gevraagde artikel bestaat niet.",
 		"Errors.networkError": "Er zijn verbindings- of netwerkproblemen gedetecteerd. Wacht even en probeer het over een paar seconden opnieuw",
 		"Errors.ROOM_BOOKING_CONFLICT": "Deze ruimte is al gereserveerd voor dit tijdslot. Kies alstublieft een ander tijdstip of een andere ruimte.",
 		"Errors.WORKPLACE_BOOKING_CONFLICT": "Deze werkplek is al gereserveerd voor dit tijdslot. Kies een ander tijdstip of een andere werkplek.",
@@ -128504,6 +128985,8 @@ var jsonTranslationsFiles = {
 		"FieldTypeIndexBoolean.help": "Wijzig de waarde rechtstreeks",
 		"FieldTypeIndexBoolean.values.false": "Neen",
 		"FieldTypeIndexBoolean.values.true": "Ja",
+		"FieldTypeLegendConfiguration.addDivider": "Voeg een scheidingsteken toe",
+		"FieldTypeLegendConfiguration.dividerLabel": "Scheider",
 		"FieldTypeLegendConfiguration.familyCostCenters": "Kostenplaatsen",
 		"FieldTypeLegendConfiguration.familyOrganizationsDirection": "Routebeschrijving",
 		"FieldTypeLegendConfiguration.familyOrganizationsService": "Diensten",
@@ -128511,6 +128994,7 @@ var jsonTranslationsFiles = {
 		"FieldTypeLegendConfiguration.familyRoomTypes": "Typologieën",
 		"FieldTypeLegendConfiguration.legacyRoomTypeGroups": "Typologiegroepen — selectie op basis van entiteit",
 		"FieldTypeLegendConfiguration.legacyRoomTypes": "Typologieën — selectie op basis van entiteit",
+		"FieldTypeLegendConfiguration.removeDivider": "Verwijder de scheidingswand.",
 		"FieldTypeLegendConfiguration.selectionByEntity": "Eigenschappen selecteren op basis van entiteit",
 		"FieldTypeLegendConfiguration.selectionByFilter": "Selectie via filter",
 		"FieldTypeLegendConfiguration.selectionStructure": "De eigenschappen van de structuur selecteren",
@@ -128531,6 +129015,8 @@ var jsonTranslationsFiles = {
 		"FixAddressButton.progress.refreshing": "Verfrissend uitzicht...",
 		"FixAddressButton.progress.updating": "Gebouwupdate in Surfy...",
 		"FixAddressButton.success.message": "✅ Het adres van ' %{buildingName} ' is succesvol gecorrigeerd",
+		"FixRoomFloorFromPointsAsyncAction.help": "Breng het ruimteniveau in lijn met dat van de punten (geselecteerde lijnen).",
+		"FixRoomFloorFromPointsAsyncAction.label": "Corrigeer de vloer",
 		"FloorMap.tabs.all": "Bekijk alle geselecteerde vormen in de lijst",
 		"FloorMap.tabs.analyticsDimensionTypes": "Kleur de ruimtes op het plan volgens de <b>analyselagen</b>",
 		"FloorMap.tabs.building": "Bekijk gebouwinformatie",
@@ -128709,6 +129195,20 @@ var jsonTranslationsFiles = {
 		"ItemTypeDataQualityNotUsed.columns.name": "Naam objecttype",
 		"ItemTypeDataQualityNotUsed.columns.shape": "Vorm",
 		"ItemTypeDataQualityNotUsed.columns.workplaceTypeCount": "Aantal werkplektypes",
+		"ItemTypeDataQualityPointTenantConsistency.enableAllTenantsLabel": "Alle bedrijven",
+		"ItemTypeDataQualityPointTenantConsistency.headerCrossTenantPointCount": "Inconsistenties",
+		"ItemTypeDataQualityPointTenantConsistency.headerItemsCount": "Objecten",
+		"ItemTypeDataQualityPointTenantConsistency.headerItemTypeId": "objecttype-ID",
+		"ItemTypeDataQualityPointTenantConsistency.headerItemTypeName": "Object type",
+		"ItemTypeDataQualityPointTenantConsistency.headerItemTypeTenant": "Bedrijf",
+		"ItemTypeDataQualityPointTenantConsistency.headerOwnerPlatformPointCount": "Punten (maatschappij van het type)",
+		"ItemTypeDataQualityPointTenantConsistency.headerReason": "Reden",
+		"ItemTypeDataQualityPointTenantConsistency.headerSourceTenants": "Puntenbedrijven",
+		"ItemTypeDataQualityPointTenantConsistency.headerWorkplacesCount": "Persoonlijke werkplekken",
+		"ItemTypeDataQualityPointTenantConsistency.headerWorkplaceTypeLinksCount": "Soorten banen",
+		"ItemTypeDataQualityPointTenantConsistency.numberOfItemTypes": "Soorten objecten die hierbij betrokken zijn",
+		"ItemTypeDataQualityPointTenantConsistencyTableRow.reasonTenantMismatch": "Inconsistente uitrustingspunten.",
+		"ItemTypeDataQualityPointTenantConsistencyTableRow.reasonUnusedSuggestDelete": "Ongebruikte (objecten/posities) — punten kunnen worden verwijderd.",
 		"ItemTypeDataQualityUniqName.buttonRenameHelp": "Hernoem de geselecteerde objecttypen door (1), (2), (3) toe te voegen voor elk duplicaat.",
 		"ItemTypeDataQualityUniqName.headerCompany": "Onderneming",
 		"ItemTypeDataQualityUniqName.headerId": "ID",
@@ -129158,6 +129658,8 @@ var jsonTranslationsFiles = {
 		"models.Building.views.list-simple.label": "Simpele lijst",
 		"models.Building.views.pictures.help": "Bekijk gebouwen met foto's",
 		"models.Building.views.pictures.label": "Foto's",
+		"models.Building.views.scenarioSync.help": "Draag de waarden van een <b>scenario</b> dimensie voor dimensie over naar het referentiegebouw %{name} .",
+		"models.Building.views.scenarioSync.label": "Scriptsynchronisatie",
 		"models.Building.views.zbre-sync.help": "Synchroniseer het gebouw met het Zbre-platform",
 		"models.Building.views.zbre-sync.label": "Zbre-synchronisatie",
 		"models.BuildingType.description": "Met een gebouwtype kunnen gebouwen worden gecategoriseerd op basis van hun gebruik",
@@ -129361,6 +129863,8 @@ var jsonTranslationsFiles = {
 		"models.Dimension.properties.carbonFootprintPerMeter.label": "Koolstofvoetafdruk per vierkante meter",
 		"models.Dimension.properties.color.description": "Met de kleur van de analyselaag kunt u ruimtes op het plan onderscheiden",
 		"models.Dimension.properties.color.label": "Kleur",
+		"models.Dimension.properties.comment.description": "Aanvullende informatie wordt weergegeven aan mensen die een positie in deze dimensie reserveren.",
+		"models.Dimension.properties.comment.label": "Opmerking",
 		"models.Dimension.properties.crowdedForBookingRate.description": "Met de overbezettingsgraad van reserveringen kunt u het bezettingspercentage definiëren waarbij een ruimte als overbezet wordt beschouwd voor reserveringen.",
 		"models.Dimension.properties.crowdedForBookingRate.label": "Boekingstoeslagtarief",
 		"models.Dimension.properties.name.description": "Handig om onder andere de laag te differentiëren",
@@ -129612,6 +130116,8 @@ var jsonTranslationsFiles = {
 		"models.ItemType.views.avatar.label": "Vorm",
 		"models.ItemType.views.dq-family-tenant-consistency.help": "Geef een lijst van de objecttypen die gekoppeld zijn aan een inconsistente familie; hiermee kunnen ze opnieuw worden toegewezen aan de familie ONGEKLASSIFICEERD.",
 		"models.ItemType.views.dq-family-tenant-consistency.label": "Onsamenhangende familie",
+		"models.ItemType.views.dq-item-type-point-tenant-consistency.help": "Geef een lijst van de soorten objecten waarnaar wordt verwezen door inconsistente apparatuurpunten.",
+		"models.ItemType.views.dq-item-type-point-tenant-consistency.label": "Inconsistente uitrustingspunten",
 		"models.ItemType.views.dq-not-used.help": "Maak een lijst van alle ongebruikte objecttypen via objecten of via ongebruikte werkstationtypen",
 		"models.ItemType.views.dq-not-used.label": "Niet gebruikt",
 		"models.ItemType.views.dq-uniq-name.help": "Lijst de typen objecten met dezelfde naam binnen hetzelfde bedrijf; hiermee kunt u ze hernoemen door (1), (2), (3) toe te voegen.",
@@ -130286,6 +130792,8 @@ var jsonTranslationsFiles = {
 		"models.Room.views.dq-no-point.label": "Spaties zonder voldoende punten",
 		"models.Room.views.dq-organization-to-room.help": "Detecteer ruimteassociaties met organisaties die niet geldig zijn",
 		"models.Room.views.dq-organization-to-room.label": "Fouten in de organisatie van ruimtes",
+		"models.Room.views.dq-room-floor-points-consistency.help": "Ruimtes waarvan het niveau niet overeenkomt met het niveau van hun punten — dit kan worden gecorrigeerd door het niveau van de punten opnieuw toe te wijzen.",
+		"models.Room.views.dq-room-floor-points-consistency.label": "Ruimtes met een ongelijkmatige vloer (punten)",
 		"models.Room.views.dq-uniq-name.help": "Stelt namen voor voor ruimtes die geen naam hebben of de naam is niet uniek op dezelfde verdieping",
 		"models.Room.views.dq-uniq-name.label": "Voorgestelde namen voor spaties",
 		"models.Room.views.map.help": "Bekijk het ruimteplan %{name}",
@@ -130922,6 +131430,15 @@ var jsonTranslationsFiles = {
 		"PlanningPersonAffectations.alerts.noAffectation.message": "U bent aan geen enkel gebied gekoppeld. Neem contact op met uw opdrachtmanager om een ​​werkruimte te kunnen reserveren",
 		"PlanningPersonAffectations.alerts.noAffectation.messageForPerson": "%{personFullName} is niet gekoppeld aan een specifiek gebied; neem contact op met de aan hem/haar toegewezen manager om een ​​werkplek te reserveren.",
 		"PlanningPersonAffectations.alerts.noAffectation.title": "Kan geen werkplek reserveren",
+		"PlatformCubyContextLoadingOverlay.phaseApplyLook": "Ruimtes weergeven…",
+		"PlatformCubyContextLoadingOverlay.phaseBuildScenes": "3D-voorbereiding…",
+		"PlatformCubyContextLoadingOverlay.phaseError": "Laden mislukt",
+		"PlatformCubyContextLoadingOverlay.phaseFetchLayout": "De kaart wordt geladen…",
+		"PlatformCubyContextLoadingOverlay.phaseReady": "Klaar voor de details",
+		"PlatformCubyContextLoadingOverlay.title": "Details laden",
+		"PlatformStructureBuildingList.title": "Gebouwen",
+		"PropertSelectorDrawer.filter.ariaLabel": "Filter eigenschappen op naam",
+		"PropertSelectorDrawer.filter.placeholder": "Filter de eigenschappen…",
 		"PropertSelectorDrawer.help": "Selecteer de eigenschappen die u in de tabel wilt weergeven",
 		"PropertSelectorDrawer.options.reset.help": "Breng de selectie van eigenschappen terug naar hun oorspronkelijke staat",
 		"PropertSelectorDrawer.options.reset.label": "Selectie opnieuw instellen",
@@ -131080,6 +131597,18 @@ var jsonTranslationsFiles = {
 		"RoomCard.tabs.people.help": "Toon mensen die aan deze ruimte zijn toegewezen",
 		"RoomCard.tabs.room": "Ruimte",
 		"RoomCardSelectDimensions.needSave": "Bewaar of annuleer uw wijzigingen voordat u de analyselagen van deze ruimte kunt wijzigen",
+		"RoomDataQualityFloorPointsConsistency.enableAllTenantsLabel": "Alle bedrijven",
+		"RoomDataQualityFloorPointsConsistency.headerCurrentFloor": "Huidige verdieping",
+		"RoomDataQualityFloorPointsConsistency.headerCurrentFloorTenant": "Vloerbedrijf",
+		"RoomDataQualityFloorPointsConsistency.headerPointsCount": "Punten",
+		"RoomDataQualityFloorPointsConsistency.headerReason": "Reden",
+		"RoomDataQualityFloorPointsConsistency.headerRoomId": "ID-ruimte",
+		"RoomDataQualityFloorPointsConsistency.headerRoomName": "Ruimte",
+		"RoomDataQualityFloorPointsConsistency.headerRoomTenant": "Bedrijf",
+		"RoomDataQualityFloorPointsConsistency.headerSuggestedFloor": "Vloer van punten",
+		"RoomDataQualityFloorPointsConsistency.headerSuggestedFloorTenant": "Floor Points Company",
+		"RoomDataQualityFloorPointsConsistency.numberOfRooms": "Betreffende gebieden",
+		"RoomDataQualityFloorPointsConsistency.reasonFloorMismatch": "Het niveau van de ruimte komt niet overeen met het niveau van de punten waarin deze zich bevindt.",
 		"RoomDataQualityOrganizationToRoom.headerBuilding": "Gebouw",
 		"RoomDataQualityOrganizationToRoom.headerDirection": "Richting",
 		"RoomDataQualityOrganizationToRoom.headerFloor": "Vloer",
@@ -131103,7 +131632,11 @@ var jsonTranslationsFiles = {
 		"RoomsBulkEditSelectDimensions.multipleValues": "Meerdere waarden",
 		"RoomSegmentRoomsList.title": "De ruimtes die aan dit segment zijn gekoppeld",
 		"RoomTooltip.roomWorkplaceAffectations": "Werkstationopdrachten",
-		"RoomTypeGroupHelpTitle.exclude": "De groepering van het ruimtetype %{name} is van het uitsluitingstype. Het brengt alle ruimtes samen, met uitzondering van de volgende ruimtetypologieën:",
+		"RoomTypeGroupHelpTitle.columnRoomType": "Typologie",
+		"RoomTypeGroupHelpTitle.columnShare": "%",
+		"RoomTypeGroupHelpTitle.columnSurface": "Oppervlak",
+		"RoomTypeGroupHelpTitle.columnWorkplaces": "Posities",
+		"RoomTypeGroupHelpTitle.exclude": "De ruimtetypegroepering %{name} is van het uitsluitingstype. Deze groepeert de volgende beschikbare ruimtetypes:",
 		"RoomTypeGroupHelpTitle.include": "De ruimtetypegroepering %{name} brengt de volgende ruimtetypologieën samen:",
 		"RoomTypeGroupLabel.exclude.tooltip": "De ruimtetypologiegroep sluit bijbehorende ruimtetypen uit",
 		"RoomTypeGroupMapFilter.Empty": "Er is geen ruimtetypegroep gekoppeld aan ruimtes via ruimtetypen. U kunt er meer toevoegen door een ruimtetypegroep te bewerken en er een ruimtetype aan toe te voegen. Vervolgens kunt u de weergave ervan vanuit deze sectie beheren",
@@ -131116,6 +131649,37 @@ var jsonTranslationsFiles = {
 		"RoomWorkplaceList.EmptyList": "In deze ruimte zijn geen werkplekken aanwezig",
 		"SavePlanAsSvgButton.help": "Download het plan zoals weergegeven in SVG-formaat. Het bestand wordt op schaal 1:1 geopend, zonder inzoomen of verschuiving.",
 		"SavePlanAsSvgButton.label": "Sla het plan op als SVG-bestand.",
+		"ScenarioReferenceSyncDimensionStepper.applyError": "De toepassing van deze dimensie is mislukt. De inventaris blijft weergegeven.",
+		"ScenarioReferenceSyncDimensionStepper.dimensionItemGeo": "Objectgeometrie",
+		"ScenarioReferenceSyncDimensionStepper.dimensionItemProps": "Objecteigenschappen",
+		"ScenarioReferenceSyncDimensionStepper.dimensionRoomCostCenter": "Kostenplaats",
+		"ScenarioReferenceSyncDimensionStepper.dimensionRoomOrganization": "Dienst",
+		"ScenarioReferenceSyncDimensionStepper.dimensionRoomRoomType": "Ruimtetypologie",
+		"ScenarioReferenceSyncDimensionStepper.dimensionWorkplaceGeo": "berichten over geometrie",
+		"ScenarioReferenceSyncDimensionStepper.dimensionWorkplaceProps": "Berichteigenschappen",
+		"ScenarioReferenceSyncDimensionStepper.matchesToApply": "{{count}} overeenkomst(en) om toe te passen",
+		"ScenarioReferenceSyncDimensionStepper.nothingToSync": "Niets om te synchroniseren",
+		"ScenarioReferenceSyncDimensionStepper.stepCompleted": "toegepast",
+		"ScenarioReferenceSyncDimensionStepper.stepperTitle": "Synchroniseer afmetingen",
+		"ScenarioReferenceSyncInventory.ambiguousCaption": "Nader te bepalen — uitgesloten van de synchronisatie",
+		"ScenarioReferenceSyncInventory.createDeleteLaterCaption": "Synchronisatie aanmaken/verwijderen: later",
+		"ScenarioReferenceSyncInventory.geometryRoomCaption": "Gedetecteerd — niet geïmplementeerd (MVP)",
+		"ScenarioReferenceSyncInventory.inventaireTitle": "Inventarisatie van afwijkingen",
+		"ScenarioReferenceSyncInventory.natureAmbiguous": "Dubbelzinnigheden",
+		"ScenarioReferenceSyncInventory.natureCreate": "Scheppingen",
+		"ScenarioReferenceSyncInventory.natureDelete": "Verwijderingen",
+		"ScenarioReferenceSyncInventory.natureEdit": "Edities",
+		"ScenarioReferenceSyncInventory.natureGeometry": "Geometrie",
+		"ScenarioReferenceSyncInventory.noDiffs": "Er is geen synchronisatieprobleem tussen dit scenario en de referentie.",
+		"ScenarioReferenceSyncInventory.objectTypeItem": "Objecten",
+		"ScenarioReferenceSyncInventory.objectTypeRoom": "Spaties",
+		"ScenarioReferenceSyncInventory.objectTypeWorkplace": "Posities",
+		"ScenarioReferenceSyncView.flowCaption": "De scenario-waarden worden dimensie voor dimensie overgedragen naar het referentiegebouw.",
+		"ScenarioReferenceSyncView.loadError": "Het lukt niet om de referentie-/scenario-paargegevens te laden.",
+		"ScenarioReferenceSyncView.lockedReferenceCaption": "Referentie: {{naam}}",
+		"ScenarioReferenceSyncView.noScenarios": "Er bestaan ​​geen subscenario's voor dit gebouw. ​​Maak een scenario aan vanuit de kloonweergave.",
+		"ScenarioReferenceSyncView.scenarioPickerLabel": "Scenario",
+		"ScenarioReferenceSyncView.title": "Scriptsynchronisatie → referentie",
 		"ScreenshotNoLegendButton.help": "Download de afbeelding van wat u op het scherm ziet zonder bijschrift. De uitvoer zal snel zijn, maar de kwaliteit van de export zal niet optimaal zijn",
 		"ScreenshotNoLegendButton.label": "Screenshot zonder onderschrift",
 		"SearchFieldString.searchEmpty.help.false": "Zoek naar lege of waardeloze elementen",
@@ -131225,6 +131789,14 @@ var jsonTranslationsFiles = {
 		"TenantOperations.bourbon-import-hr-file.label": "HR-bestand importeren",
 		"TenantOperations.egis-import-hr-file.label": "HR-bestand importeren",
 		"TenantOperations.essilor-import-hr-file.label": "HR-bestand importeren",
+		"TenantOperations.ms-user-sync-ardian-spain.description": "Synchroniseert Entra ID-gebruikers voor de Ardian Spain-tenant.",
+		"TenantOperations.ms-user-sync-ardian-spain.label": "Microsoft-gebruikerssynchronisatie (Spanje)",
+		"TenantOperations.ms-user-sync-ardian-uk.description": "Synchroniseert Entra ID-gebruikers voor de Ardian UK-tenant.",
+		"TenantOperations.ms-user-sync-ardian-uk.label": "Microsoft-gebruikerssynchronisatie (VK)",
+		"TenantOperations.ms-user-sync-ardian-usa.description": "Synchroniseert Entra ID-gebruikers voor de Ardian USA-tenant.",
+		"TenantOperations.ms-user-sync-ardian-usa.label": "Microsoft-gebruikerssynchronisatie (VS)",
+		"TenantOperations.ms-user-sync-ardian.description": "Synchroniseert Entra ID-gebruikers voor de Ardian France-tenant.",
+		"TenantOperations.ms-user-sync-ardian.label": "Microsoft-gebruikerssynchronisatie (Frankrijk)",
 		"TenantOperations.ms-user-sync-bourbon.description": "Synchroniseert gebruikers van Microsoft",
 		"TenantOperations.ms-user-sync-bourbon.label": "Microsoft-gebruikerssynchronisatie",
 		"TenantOperations.ms-user-sync-thea.description": "Synchroniseert gebruikers van Microsoft",
@@ -131390,7 +131962,7 @@ var jsonTranslationsFiles = {
 		"WorkCanvas.Options.AddRoomPointOption.help.enable": "Door een hoekpunt toe te voegen, kunt u een vorm nauwkeuriger bewerken",
 		"WorkCanvas.Options.AddRoomPointOption.label.disable": "Stop met het toevoegen van een hoekpunt",
 		"WorkCanvas.Options.AddRoomPointOption.label.enable": "Voeg een hoekpunt toe",
-		"WorkCanvas.Options.AddRoomShapeOption.description": "De creatiehoeken zijn geblokkeerd op 45°. Om ze te ontgrendelen, houdt u de <b>SHIFT-</b> toetsenbordtoets ingedrukt en gaat u door met creëren. Om uw hoekpunt te creëren, plaatst u de muis in de cirkel op het snijpunt van de driehoek. Om een ​​spatie te starten door een bestaand hoekpunt te hergebruiken, houdt u ingedrukt Houd de <b>ALT-</b> toetsenbordtoets ingedrukt en klik op het hoekpunt.",
+		"WorkCanvas.Options.AddRoomShapeOption.description": "De hoeken voor het creëren zijn vergrendeld op 45°. Om ze te ontgrendelen, houd je de <b>SHIFT-</b> toets ingedrukt en ga je verder met creëren. Om je hoekpunt te creëren, plaats je de muis in de cirkel op het snijpunt van de driehoek. Om een ​​nieuwe ruimte te starten door een bestaand hoekpunt te hergebruiken, houd je de <b>ALT-</b> toets ingedrukt en klik je op het hoekpunt; gedurende deze tijd zullen de segmenten niet langer rood gemarkeerd zijn, zodat de hoekpunten zichtbaar en klikbaar blijven.",
 		"WorkCanvas.Options.AddRoomShapeOption.help.disable": "Maak het maken van ruimte ongedaan",
 		"WorkCanvas.Options.AddRoomShapeOption.help.enable": "Voeg ruimte toe aan het plan",
 		"WorkCanvas.Options.AddRoomShapeOption.label.disable": "Het toevoegen van een spatie ongedaan maken",
@@ -131860,7 +132432,7 @@ function PropertyTypeDescription(props) {
 	return null;
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+icons-material@9.4.0_@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3._968db6ddde4f40d43c39bdbaf180132c/node_modules/@mui/icons-material/NewReleases.mjs
+//#region node_modules/.pnpm/@mui+icons-material@9.4.0_@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3._1baae4d9b73534dd97304f5ade4360fa/node_modules/@mui/icons-material/NewReleases.mjs
 var NewReleases_default = createSvgIcon(/*#__PURE__*/ jsx("path", { d: "m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68zm-10 5h-2v-2h2zm0-4h-2V7h2z" }), "NewReleases");
 //#endregion
 //#region src/front/jup/Entities/Entity/PropertyTypeIcons/PropertyTypeMandatoryIcon.tsx
@@ -131946,7 +132518,7 @@ function PropertyTypeLabel(props) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/@mui+icons-material@9.4.0_@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3._968db6ddde4f40d43c39bdbaf180132c/node_modules/@mui/icons-material/ContentCopyTwoTone.mjs
+//#region node_modules/.pnpm/@mui+icons-material@9.4.0_@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3._1baae4d9b73534dd97304f5ade4360fa/node_modules/@mui/icons-material/ContentCopyTwoTone.mjs
 var ContentCopyTwoTone_default = createSvgIcon([/*#__PURE__*/ jsx("path", {
 	d: "M8 7h11v14H8z",
 	opacity: ".3"
@@ -132087,7 +132659,7 @@ function createValueRef(value) {
 //#region node_modules/.pnpm/react-transition-group@4.4.5_react-dom@19.3.0_react@19.3.0__react@19.3.0/node_modules/react-transition-group/esm/TransitionGroupContext.js
 var TransitionGroupContext_default = React.createContext(null);
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/internal/Transition.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/internal/Transition.mjs
 function resolveTimeouts(timeout) {
 	if (timeout == null) return {
 		appear: void 0,
@@ -132407,7 +132979,7 @@ process.env.NODE_ENV !== "production" && (Transition.propTypes = {
 	unmountOnExit: import_prop_types.default.bool
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/Fade/Fade.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/Fade/Fade.mjs
 var styles = {
 	entering: { opacity: 1 },
 	entered: { opacity: 1 },
@@ -132579,7 +133151,7 @@ process.env.NODE_ENV !== "production" && (Fade$1.propTypes = {
 	})])
 });
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/Paper/paperClasses.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/Paper/paperClasses.mjs
 function getPaperUtilityClass(slot) {
 	return generateUtilityClass("MuiPaper", slot);
 }
@@ -132615,7 +133187,7 @@ generateUtilityClasses("MuiPaper", [
 	"elevation24"
 ]);
 //#endregion
-//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0__@emotion+s_29723ed27d840a809ccd0197b9e6ccef/node_modules/@mui/material/Paper/Paper.mjs
+//#region node_modules/.pnpm/@mui+material@9.4.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.0_supports-co_1d658e7b9f14f9b2c212c1869df315db/node_modules/@mui/material/Paper/Paper.mjs
 var useUtilityClasses = (ownerState) => {
 	const { square, elevation, variant, classes } = ownerState;
 	return composeClasses({ root: [
