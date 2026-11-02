@@ -19,6 +19,11 @@ Lors d’une mise en production, seules les **nouveautés** sont reprises dans l
   - Vider le commentaire retire la note.
   - Guide : [Commentaire de dimension — note à la réservation](/entities/user-guide/booking-system/dimension-comment-booking-note).
 
+- Affectation d’une <OT code="dimension" /> à une <OT code="person" />
+  - Depuis la fiche personne, la fenêtre pour choisir un calque d’affectation à associer n’affichait auparavant que son **nom** : des calques homonymes (même nom, types ou bâtiments différents) étaient difficiles à distinguer.
+  - Chaque ligne indique désormais le **nom du calque**, le **type de calque**, et lorsque ce type est lié à un ou plusieurs bâtiments, le **nom du bâtiment** — par exemple **Quartier Est < Quartiers < Tour Nord**.
+  - Les listes et sélecteurs qui affichent un calque d’affectation utilisent la même présentation.
+
 ## 30 Octobre 2026 - v3.5.67
 
 

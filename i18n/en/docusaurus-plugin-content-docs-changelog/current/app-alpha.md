@@ -19,6 +19,11 @@ When a release goes to production, only **features** are moved to [What's New](.
   - Clearing the comment removes the note.
   - Guide: [Dimension comment — booking note](/entities/user-guide/booking-system/dimension-comment-booking-note).
 
+- Associating a <OT code="dimension" /> with a <OT code="person" />
+  - On the person record, the dialog to pick an assignment layer to link used to show **only its name**, so homonyms (same name across types or buildings) were hard to tell apart.
+  - Each row now shows the **layer name**, its **layer type**, and when that type is linked to one or more buildings, the **building name(s)** — for example **East District < Neighborhoods < North Tower**.
+  - Lists and selectors that show an assignment layer use the same format.
+
 ## October 30, 2026 - v3.5.67
 
 
