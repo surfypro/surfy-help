@@ -35,7 +35,6 @@ Lors d’une mise en production, seules les **nouveautés** sont reprises dans l
 
 - Qualité des données
   - Nouvelle vue <LIV code="room:dq-room-floor-points-consistency" /> : espaces dont l’étage ne correspond pas à celui de leurs points, avec une action pour réaffecter l’étage des points.
-  - Nouvelle vue <LIV code="itemType:dq-item-type-point-tenant-consistency" /> : types d’objet référencés par des points d’équipement incohérents, avec une action pour supprimer les points inutiles.
 
 - Rapports bâtiment
   - Nouveau rapport **Objets exceptionnels** : types d’objet présents en **1 à 4** exemplaires sur les bâtiments sélectionnés, avec localisations et photo du type.
@@ -43,6 +42,12 @@ Lors d’une mise en production, seules les **nouveautés** sont reprises dans l
 
 - Sélecteur de propriétés
   - Lors du choix des colonnes d’un tableau, vous pouvez **filtrer les propriétés par nom**.
+
+- Légendes personnalisées (export plan)
+  - Une légende d’export peut commencer par un **bloc totaux étage**, puis un **bloc filtres** : choisissez une **famille** (organisations, typologies, groupes de typologie, centres de coût, ou dimension / quartier) et les **propriétés** à afficher (ex. nombre de postes, surface).
+  - Pour la famille choisie, la légende liste **automatiquement** les éléments **présents sur l’étage** (sans les cocher un par un).
+  - Vous pouvez ajouter des **séparateurs** et **réordonner** librement les éléments de la légende.
+  - Cours : [Exporter un plan avec légende](/docs/courses/views/planexport).
 
 - Pathfinding — Mode édition et focus
   - Sur la vue <LSV code="building:building-pathfinding" />, activez le **Mode édition** pour rattacher un **connecteur d’espaces** en cliquant sur un espace (tiroir dédié). Le connecteur n’est plus édité depuis la carte d’espace du plan 2D.

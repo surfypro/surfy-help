@@ -35,7 +35,6 @@ When a release goes to production, only **features** are moved to [What's New](.
 
 - Data quality
   - New view <LIV code="room:dq-room-floor-points-consistency" />: spaces whose floor does not match that of their points, with an action to reassign the points’ floor.
-  - New view <LIV code="itemType:dq-item-type-point-tenant-consistency" />: object types referenced by inconsistent equipment points, with an action to remove unused points.
 
 - Building reports
   - New **Exceptional objects** report: object types with **1 to 4** occurrences on the selected buildings, with locations and the type photo.
@@ -43,6 +42,12 @@ When a release goes to production, only **features** are moved to [What's New](.
 
 - Property selector
   - When choosing table columns, you can **filter properties by name**.
+
+- Custom legends (plan export)
+  - An export legend can start with a **floor totals** block, then a **filters** block: choose a **family** (organizations, room types, typology groups, cost centers, or dimension / neighborhood) and the **properties** to show (e.g. desk count, area).
+  - For the chosen family, the legend **automatically** lists items **present on the floor** (no need to tick them one by one).
+  - You can add **dividers** and **freely reorder** legend items.
+  - Course: [Export a plan with a legend](/docs/courses/views/planexport).
 
 - Pathfinding — Edit mode and focus
   - On the <LSV code="building:building-pathfinding" /> view, turn on **Edit mode** to attach a **space connector** by clicking a space (dedicated drawer). The connector is no longer edited from the 2D floor-plan space card.
