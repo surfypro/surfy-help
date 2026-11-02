@@ -9,6 +9,7 @@ Besoin d'un petit coup de pouce ? Nos tutoriels vous guideront dans la prise en 
 
 A gauche de l'écran, l'arborescence des fonctionnalités<br />
 A droite de l'écran, la recherche par mots clés et les chapitres de la page active<br />
+Ci-dessous, cliquer sur le titre du chapitre permet d'accéder aux tutoriels correspondants.
 
 ## [Les Surfaces dans Surfy](/docs/surfaces/)
 
@@ -16,7 +17,6 @@ Pour utiliser Surfy j'ai besoin de plans statiques en 2D qui serviront de fond d
 Dans Surfy je crée un bâtiment puis un étage avec son fond de plan et son échelle afin de pouvoir dessiner et qualifier les espaces.
 J'obtiens alors les informations surfaciques par typologie d'espace ou par tout autre calque personnalisé: Organisations, natures de sol, zones d'évacuation, centres de coût, etc...<br />
 Je peux également dupliquer un bâtiment ou un étage existant pour proposer un nouvel aménagement de mes espaces et décider en toute connaissance de mes données.<br />
-
 
 ## [Les Personnes dans Surfy](/docs/people/)
 
