@@ -35,6 +35,7 @@ Lors d’une mise en production, seules les **nouveautés** sont reprises dans l
 
 - Qualité des données
   - Nouvelle vue <LIV code="room:dq-room-floor-points-consistency" /> : espaces dont l’étage ne correspond pas à celui de leurs points, avec une action pour réaffecter l’étage des points.
+  - Sur <LIV code="person:dq-only-associated-to-building" /> (personnes liées à un bâtiment sans autre affectation), vous pouvez **filtrer la liste par un ou plusieurs bâtiments**.
 
 - Rapports bâtiment
   - Nouveau rapport **Objets exceptionnels** : types d’objet présents en **1 à 4** exemplaires sur les bâtiments sélectionnés, avec localisations et photo du type.

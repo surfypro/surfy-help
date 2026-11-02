@@ -35,6 +35,7 @@ When a release goes to production, only **features** are moved to [What's New](.
 
 - Data quality
   - New view <LIV code="room:dq-room-floor-points-consistency" />: spaces whose floor does not match that of their points, with an action to reassign the points’ floor.
+  - On <LIV code="person:dq-only-associated-to-building" /> (people linked to a building with no other assignment), you can **filter the list by one or more buildings**.
 
 - Building reports
   - New **Exceptional objects** report: object types with **1 to 4** occurrences on the selected buildings, with locations and the type photo.
