@@ -39,6 +39,16 @@ You can set an optional color on <OT code="roomConnectorType" /> and <OT code="s
 
 **Connectors mode** is **not** the origin → destination route: it is a visual check of connector wiring inside **this** building (not multi-building campus navigation).
 
+### Edit mode {#edit-mode}
+
+To attach a **space connector** (link between floors) from the Pathfinding view:
+
+1. Open the <LSV code="building:building-pathfinding" /> view.
+2. Turn on **Edit mode**.
+3. Click a space: a drawer opens to choose the space connector.
+
+The connector is no longer edited from the 2D floor-plan space card. With Edit mode off, clicking a space (current-floor mode) **centers the view** on that space.
+
 ### What this is not
 
 - **Not** multi-building **campus** navigation or outdoor travel between buildings.

@@ -39,6 +39,16 @@ Vous pouvez définir une couleur optionnelle sur les fiches <OT code="roomConnec
 
 **Mode connecteurs** n’est **pas** le tracé d’itinéraire origine → destination : c’est une aide visuelle pour vérifier le câblage des connecteurs dans **ce** bâtiment (pas le campus multi-bâtiments).
 
+### Mode édition {#mode-edition}
+
+Pour rattacher un **connecteur d’espaces** (liaison entre étages) depuis la vue Pathfinding :
+
+1. Ouvrez la vue <LSV code="building:building-pathfinding" />.
+2. Activez le **Mode édition**.
+3. Cliquez sur un espace : un tiroir s’ouvre pour choisir le connecteur d’espaces.
+
+Le connecteur n’est plus édité depuis la carte d’espace du plan 2D. Avec le Mode édition désactivé, un clic sur un espace (mode étage courant) **centre la vue** sur cet espace.
+
 ### Ce que ce n’est pas
 
 - **Pas** la navigation **campus** multi-bâtiments ni le trajet extérieur entre bâtiments.

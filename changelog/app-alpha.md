@@ -12,6 +12,61 @@ L’application utilisée au quotidien par la plupart des organisations reste su
 
 Lors d’une mise en production, seules les **nouveautés** sont reprises dans la page [Nouveautés](./app.md) ; les sections **Bugs résolus** ne sont **pas** reportées en production (elles servent à la vérification de l’équipe de test pendant le cycle alpha). Cette page est ensuite masquée en la renommant `_app-alpha.md`.
 
+## 2 Novembre 2026
+
+- Commentaire de dimension — note à la réservation
+  - Sur une <OT code="dimension" />, le champ <P code="dimension:comment" /> permet d’afficher une **note informative** sous le bouton de réservation de poste (Mon planning, réservation pour une autre personne, planning des invités).
+  - Vider le commentaire retire la note.
+  - Guide : [Commentaire de dimension — note à la réservation](/entities/user-guide/booking-system/dimension-comment-booking-note).
+
+- Affectation d’une <OT code="dimension" /> à une <OT code="person" />
+  - Depuis la fiche personne, la fenêtre pour choisir un calque d’affectation à associer n’affichait auparavant que son **nom** : des calques homonymes (même nom, types ou bâtiments différents) étaient difficiles à distinguer.
+  - Chaque ligne indique désormais le **nom du calque**, le **type de calque**, et lorsque ce type est lié à un ou plusieurs bâtiments, le **nom du bâtiment** — par exemple **Quartier Est < Quartiers < Tour Nord**.
+  - Les listes et sélecteurs qui affichent un calque d’affectation utilisent la même présentation.
+
+## 30 Octobre 2026 - v3.5.67
+
+
+- Synchronisation scénario → bâtiment de référence
+  - Nouvelle vue <LSV code="building:scenarioSync" /> : depuis le **bâtiment de référence**, choisissez un **scénario** lié pour lister les **écarts** (créations, suppressions, modifications, géométrie différente) sur les espaces, postes et objets.
+  - Reportez ensuite les valeurs du scénario vers la référence **étape par étape** : pour les espaces correspondants, <P code="room:roomType" />, <P code="room:costCenter" /> puis <P code="room:organization" /> ; pour les postes et objets, d’abord la **position / orientation**, puis les **propriétés** (ex. type).
+  - Chaque étape s’applique à **tous** les éléments concernés d’un coup. Les créations et suppressions restent visibles dans l’inventaire ; la **forme des espaces** est listée mais **non** reportée dans cette version.
+
+- Aide des groupes de typologie (filtre carte)
+  - Sur le filtre carte **Groupes de typologie**, l’aide (`?`) d’un groupe affiche un **tableau** (typologie, surface m², part %, postes) et un **camembert** de répartition des surfaces sur le périmètre courant (bâtiment ou étage).
+
+- Vue plan **Groupes de typologies**
+  - Nouveau mode d’affichage du plan d’étage pour voir les espaces selon leur **groupe de typologie**.
+
+- Qualité des données
+  - Nouvelle vue <LIV code="room:dq-room-floor-points-consistency" /> : espaces dont l’étage ne correspond pas à celui de leurs points, avec une action pour réaffecter l’étage des points.
+  - Sur <LIV code="person:dq-only-associated-to-building" /> (personnes liées à un bâtiment sans autre affectation), vous pouvez **filtrer la liste par un ou plusieurs bâtiments**.
+
+- Rapports bâtiment
+  - Nouveau rapport **Objets exceptionnels** : types d’objet présents en **1 à 4** exemplaires sur les bâtiments sélectionnés, avec localisations et photo du type.
+  - Le rapport d’**inventaire** inclut désormais les **noms d’affichage** des espaces.
+
+- Sélecteur de propriétés
+  - Lors du choix des colonnes d’un tableau, vous pouvez **filtrer les propriétés par nom**.
+
+- Légendes personnalisées (export plan)
+  - Une légende d’export peut commencer par un **bloc totaux étage**, puis un **bloc filtres** : choisissez une **famille** (organisations, typologies, groupes de typologie, centres de coût, ou dimension / quartier) et les **propriétés** à afficher (ex. nombre de postes, surface).
+  - Pour la famille choisie, la légende liste **automatiquement** les éléments **présents sur l’étage** (sans les cocher un par un).
+  - Vous pouvez ajouter des **séparateurs** et **réordonner** librement les éléments de la légende.
+  - Cours : [Exporter un plan avec légende](/docs/courses/views/planexport).
+
+- Pathfinding — Mode édition et focus
+  - Sur la vue <LSV code="building:building-pathfinding" />, activez le **Mode édition** pour rattacher un **connecteur d’espaces** en cliquant sur un espace (tiroir dédié). Le connecteur n’est plus édité depuis la carte d’espace du plan 2D.
+  - En mode étage courant (hors Mode édition), un clic sur un espace **centre la vue** sur cet espace.
+  - Guide : [Pathfinding — navigation dans un bâtiment](/entities/user-guide/floor-plan/pathfinding-campus#mode-edition).
+
+### Bugs résolus (vérification test alpha)
+
+Ces points sont listés pour l’équipe de test sur [app-alpha.surfy.pro](https://app-alpha.surfy.pro).
+Ils ne sont **pas** reportés dans le changelog production (`app.md`).
+
+- **Export image de plan** : les **noms d’organisations** de la légende s’affichent correctement sur l’image exportée (plus d’indicateur de chargement à la place du nom).
+
 ## 23 Octobre 2026
 
 - Carte 3D MapLibre — feedback de chargement du détail
@@ -20,11 +75,6 @@ Lors d’une mise en production, seules les **nouveautés** sont reprises dans l
   - Guide : [Carte 3D MapLibre](/entities/user-guide/floor-plan/carte-3d-maplibre#chargement-du-detail).
 
 ## 22 Octobre 2026
-
-- Synchronisation scénario → bâtiment de référence
-  - Nouvelle vue <LSV code="building:scenarioSync" /> : depuis le **bâtiment de référence**, choisissez un **scénario** lié pour lister les **écarts** (créations, suppressions, modifications, géométrie différente) sur les espaces, postes et objets.
-  - Reportez ensuite les valeurs du scénario vers la référence **étape par étape** : pour les espaces correspondants, <P code="room:roomType" />, <P code="room:costCenter" /> puis <P code="room:organization" /> ; pour les postes et objets, d’abord la **position / orientation**, puis les **propriétés** (ex. type).
-  - Chaque étape s’applique à **tous** les éléments concernés d’un coup. Les créations et suppressions restent visibles dans l’inventaire ; la **forme des espaces** est listée mais **non** reportée dans cette version.
 
 - Carte 3D MapLibre — Mode structure et Mode bâtiment
   - Sur la vue <LIV code="building:3d-maplibre" />, explorez d’abord les **volumes** des bâtiments (**Mode structure**), avec la **liste des noms** à gauche.
