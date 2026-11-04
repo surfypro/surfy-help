@@ -12,6 +12,13 @@ L’application utilisée au quotidien par la plupart des organisations reste su
 
 Lors d’une mise en production, seules les **nouveautés** sont reprises dans la page [Nouveautés](./app.md) ; les sections **Bugs résolus** ne sont **pas** reportées en production (elles servent à la vérification de l’équipe de test pendant le cycle alpha). Cette page est ensuite masquée en la renommant `_app-alpha.md`.
 
+## 4 Novembre 2026 - v3.5.69
+
+- <LSV code="building:dashboard" />
+  - Onglet **Groupes de typologie** : sur **Types de surface par service**, **Répartition des types de surface par service** et **Ratio m²/PdT par service**, **barrer un service** via l’en-tête de colonne **Service** ou par **clic graphique** sur le **libellé Service** sous le graphique (option toolbar du tableau, activée par défaut ; désactivable). Réaffichage via l’en-tête de colonne. **Filtre rapport session** — non mémorisé.
+  - Vous pouvez toujours **barrer une série** (ligne) via la légende ou le tableau de données du rapport.
+  - Guide détaillé : [Dashboard bâtiment — rapports Groupes de typologie](/entities/user-guide/spaces/building-dashboard-room-type-group-reports).
+
 ## 2 Novembre 2026
 
 - Commentaire de dimension — note à la réservation

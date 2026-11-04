@@ -12,6 +12,13 @@ Most organizations’ day-to-day application remains at [https://app.surfy.pro](
 
 When a release goes to production, only **features** are moved to [What's New](./app.md); the **Fixed bugs** sections are **not** copied to production (they are for the test team during the alpha cycle). This page is then hidden by renaming it to `_app-alpha.md`.
 
+## November 4, 2026 - v3.5.69
+
+- <LSV code="building:dashboard" />
+  - **Typology groups** tab: on **Surface types by service**, **Distribution of surface types by service**, and **m²/PdT ratio per service**, **strike through a service** via the **Service** column header or by **clicking the service label** under the chart (table toolbar toggle, on by default; can be turned off). Restore via the column header. **Session report filter** — not saved across visits.
+  - You can still **strike through a series** (row) from the legend or the report data table.
+  - Step-by-step guide: [Building dashboard — typology group reports](/entities/user-guide/spaces/building-dashboard-room-type-group-reports).
+
 ## November 2, 2026
 
 - Dimension comment — booking note
