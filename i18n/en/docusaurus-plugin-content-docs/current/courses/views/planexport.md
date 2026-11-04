@@ -21,7 +21,7 @@ To export a floor plan as an Image,
 -   go to the relevant floor
 -   display on the plan the layer and information necessary for image output: furniture, text display, font size, icon size, ...
 
-For more information on plan display configuration, see the chapter [Display Plans in 2D](/en/docs/courses/views/2Dviews).
+For more information on plan display configuration, see the chapter [Display Plans in 2D](/en/docs/courses/views/2Dviews.md).
 
 -   once the plan is configured, click on the "cloud" icon above the plan to "save as Image" the floor plan.
 
@@ -43,26 +43,27 @@ When exporting a floor plan as an image with legend, the "default legend" is com
 -   floor information, identical to the floor card information to the left of the plan
 -   displayed layer legend, with cumulative information by layer.
 
-You can customize the legend displayed on image output by creating legends adapted to the information to display.
+You can create custom legends, and display the legend of your choice on image outputs.
 
-To do this, from the left menu,
+To create a legend, from the left menu,
 
 -   click on "Administration" then "Legend" to "Create a legend"
 -   give a name to the legend to create
--   in "Configuration", "Property Selection", check the properties and information to display for "buildings" and "floors"
--   in "Space typologies", check the information to display (number of spaces, total capacity) for each space typology present on the platform
--   in "space typology groups", check the information to display (number of spaces, total capacity) for each space typology group present on the platform.
+-   in "Structure property selection", check the properties and information to display for "buildings" and "floors"
+-   in "Filter selection", check the information to display (number of spaces, total capacity, occupancy rate,...) for Directions, Services, typologies, typology groups, cost centers,... and analysis layers present on the platform.
+-   in "Property selection by entity", check the information to display (number of spaces or total capacity) individually for each typology and for each typology group.
+-   in "Sort property display order", move each property up or down to configure the order of information in the legend.
+-   "Add a separator" isolates a group of information from the following or preceding information.
 -   "validate creation" of the legend
 
 When exporting a floor plan as an image with legend, "select legend" to the right of the screen allows you to find the different saved legends to display the selected legend.
 
 The legend preview is viewable by clicking on the "Preview legend" icon at the bottom of the "save as image" card to the right of the screen.
 
-:::tip GOOD TO KNOW
-A space typology group allows grouping several space typologies to facilitate their management and display.
-You can create for example a space typology group "Meeting spaces" grouping the space typologies "Meeting room", "Bubble" and "Meeting box" to display or cumulate information from all typologies included in the group.
 
-To configure a space typology group, see the chapter on [Space Typology Groups](/en/docs/tutorials/surfaces/room/roomtype/#space-typology-groups)
+
+:::tip GOOD TO KNOW
+It may be necessary to reload a modified legend by selecting another legend, then selecting again the legend to use in order to validate it.
 :::
 
 ### Export 2D Plans of Multiple Floors

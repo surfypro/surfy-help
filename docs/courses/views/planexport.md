@@ -43,26 +43,27 @@ Lors de la sortie en image du plan d'un étage avec légende, la "légende par d
 -   des informations de l'étage, identiques aux informations de la fiche de l'étage à gauche du plan
 -   de la légende du calque affiché, avec le cumul des informations par calque.
 
-On peut personnaliser la légende affichée sur la sortie en image en créant des légendes adaptées aux informations à afficher.
+On peut créer des légendes personnalisées, et afficher la légende de son choix sur les sorties en image.
 
-Pour cela, depuis le menu de gauche,
+Pour créer une légende, depuis le menu de gauche,
 
 -   cliquer sur "Administration" puis "Légende" pour "Créer une légende"
 -   donner un nom à la légende à créer
--   dans "Configuration", "Sélection des propriétés", cocher les propriétés et informations à afficher pour les "bâtiments" et les "étages"
--   dans "Typologies d'espace", cocher les informations à afficher (nombre d'espaces, capacité totale) pour chaque typologie d'espace présente sur la plateforme
--   dans "groupes de typologies d'espace", cocher les informations à afficher (nombre d'espaces, capacité totale) pour chaque groupe de typologies d'espace présent sur la plateforme.
+-   dans "Sélection des propriétés de la structure", cocher les propriétés et informations à afficher pour les "bâtiments" et les "étages"
+-   dans "Sélection par filtre", cocher les informations à afficher (nombre d'espaces, capacité totale, taux d'occupation,...) pour les Directions, Services, typologies, groupes de typologies, centres de coût,... et calques d'analyse présents sur la plateforme.
+-   dans "Sélection des propriétés par entité", cocher les informations à afficher (nombre d'espace ou capacité totale) individuellement pour chaque typologie et pour chaque groupe de typologies.
+-   dans "Trier l'ordre d'affichage des propriétés", faire remonter ou descendre chaque propriété afin de configurer l'ordre des informations dans la légende.
+-   "Ajouter un séparateur" permet d'isoler un groupe d'informations des informations suivantes ou précédentes.
 -   "valider la création" de la légende
 
 Lors de la sortie en image du plan d'un étage avec légende, "sélectionner la légende" à droite de l'écran permet de retrouver les différentes légendes enregistrées afin d'afficher la légende sélectionnée.
 
 L'aperçu de la légende est visualisable en cliquant sur l'icône "Prévisualiser la légende" en bas de la fiche "sauvegarder en image" à droite de l'écran.
 
-:::tip BON A SAVOIR
-Un groupe de typologies d'espace permet de regrouper plusieurs typologies d'espace pour faciliter leur gestion et leur affichage.
-On peut créer par exemple un groupe de typologies d'espace "Espaces de réunion" regroupant les typologies d'espace "Salle de réunion", "Bulle" et "Box de réunion" afin de les afficher ou de cumuler les informations de l'ensemble des typologies inclues dans le groupe.
 
-Pour configurer un groupe de typologies d'espace, voir le chapitre sur [Les groupes de typologies d'espace](/docs/tutorials/surfaces/room/roomtype/#les-groupes-de-typologies-despace)
+
+:::tip BON A SAVOIR
+Il peut être nécessaire de recharger la légende modifiée en sélectionnant une autre légende, puis en sélectionnant de nouveau la légende à utiliser pour la valider.
 :::
 
 ### Exporter les plans 2D de plusieurs étages
