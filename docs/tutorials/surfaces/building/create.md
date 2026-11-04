@@ -10,13 +10,18 @@ Pour créer un nouveau bâtiment à partir de la page d'accueil de Surfy,
 
 -   cliquer sur le menu contextuel, puis sur "Créer un bâtiment".
 -   indiquer les propriétés <P code="building:name" /> et <P code="building:color" /> pour son environnement. Ces deux propriétés sont obligatoires.
--   cliquer sur "valider la création" ou compléter les informations puis "valider la création".
--   ajouter la propriété <P code="building:address" /> du bâtiment permet de placer les bâtiments sur une carte pour une gestion multisite optimisée.
--   le "bâtiment de référence" est le bâtiment derrière lequel le nouveau bâtiment sera caché. Celui-ci sera considéré comme un scénario de son bâtiment de référence. Sans bâtiment de référence, le bâtiment sera en première page (page d'accueil) et sera considéré comme "bâtiment principal".
--   à la création d'un scénario, le "bâtiment de référence" par défaut est le bâtiment à partir duquel le scénario a été créé.
+-   cliquer sur "valider la création" ou compléter les informations puis "valider la création".<br />
 
-:::tip Le bâtiment de référence
-Le bâtiment de référence peut aussi être un bâtiment quelconque derrière lequel on positionne le bâtiment en question. Cela permet d'établir un classement sur plusieurs niveaux des différents projets. Les bâtiments visibles sur la page d'accueil sont les "bâtiments principaux" et les recherches peuvent en option sous la loupe ne s'exercer que sur ces seuls bâtiments.
+-   ajouter la propriété <P code="building:address" /> du bâtiment permet de placer les bâtiments sur une carte pour une gestion multisite optimisée.
+-   "Type de bâtiment" : locataire ou propriétaire, les informations à renseigner seront différentes.
+-   "Utilisateur propriétaire du bâtiment" : par défaut, permet de connaitre la personne ayant créé le bâtiment.
+-   "Vision du plan par défaut" : on peut choisir une vision pré programmée par défaut pour l'accès aux plans.
+-   "Campus" : permet d'associer ou de retirer l'association d'un bâtiment à un campus.
+-   le "bâtiment d'origine" est le bâtiment derrière lequel le nouveau bâtiment sera caché. Celui-ci sera considéré comme un scénario de son bâtiment d'origine. Sans bâtiment d'origine, le bâtiment sera en première page (page d'accueil) et sera considéré comme "bâtiment principal".<br />
+A la création d'un scénario, le "bâtiment d'origine" par défaut est le bâtiment à partir duquel le scénario a été créé.
+
+:::tip Le bâtiment d'origine
+Le bâtiment d'origine peut aussi être un bâtiment quelconque derrière lequel on positionne le bâtiment en question. Cela permet d'établir un classement sur plusieurs niveaux des différents projets. Les bâtiments visibles sur la page d'accueil sont les "bâtiments principaux" et les recherches peuvent en option sous la loupe ne s'exercer que sur ces seuls bâtiments.
 :::
 
 ## Créer un scénario {#create-scenario} ##

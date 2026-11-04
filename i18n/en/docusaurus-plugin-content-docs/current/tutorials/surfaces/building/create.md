@@ -10,12 +10,17 @@ title: "Create a Building"
 
 To create a new building from the Surfy home page,
 
--   click on the context menu (gray box under the search magnifying glass), then on "Create a building".
+-   click on the context menu, then on "Create a building".
 -   indicate the <P code="building:name" /> and <P code="building:color" /> properties for its environment. These two properties are mandatory.
--   click on "validate creation" or complete the information then "validate creation".
+-   click on "validate creation" or complete the information then "validate creation".<br />
+
 -   adding the building's <P code="building:address" /> property allows you to place buildings on a map for optimized multi-site management.
--   the "reference building" is the building behind which the new building will be hidden. It will be considered as a scenario of its reference building. Without a reference building, the building will be on the first page (home page) and will be considered as "main building".
--   when creating a scenario, the default "reference building" is the building from which the scenario was created.
+-   "Building type": tenant or owner; the information to fill in will differ.
+-   "Building owner user": by default, identifies the person who created the building.
+-   "Default plan view": you can choose a pre-programmed default view for plan access.
+-   "Campus": allows associating or removing a building's association with a campus.
+-   the "reference building" is the building behind which the new building will be hidden. It will be considered as a scenario of its reference building. Without a reference building, the building will be on the first page (home page) and will be considered as "main building".<br />
+When creating a scenario, the default "reference building" is the building from which the scenario was created.
 
 :::tip Reference Building
 The reference building can also be any building behind which you position the building in question. This allows you to establish a multi-level ranking of different projects. Buildings visible on the home page are "main buildings" and searches can optionally under the magnifying glass only be exercised on these buildings only.
@@ -32,7 +37,7 @@ To create a new scenario, from the home page,
 -   click on the icon at the bottom right of the building card to get "scenarios and projects of building XXX"
 -   existing scenario cards appear
 -   click on "create a new scenario"
--   fill in the <P code="building:name" /> of the scenario to create (example: project 1, accounting redevelopment proposal, ...)
+-   fill in the <P code="building:name" /> of the scenario to create (example: project 1, Accounting redevelopment proposal, ...)
 -   give a <P code="building:color" /> different from that of the original building to avoid building errors during modifications
 -   you can duplicate or not:
         -   workstations
