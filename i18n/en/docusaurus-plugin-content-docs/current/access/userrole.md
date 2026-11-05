@@ -168,6 +168,11 @@ This role, added to the basic Reader (`READ`) user role, allows modifying space 
 
 More information about [qualifying a space](/en/docs/tutorials/surfaces/room/edit#qualify-a-space-or-modify-space-information).
 
+#### Neighbouring spaces (`CONTIGU`)
+
+This role allows managing only part of the plan, for very large floors, to avoid excessive latency.
+
+A "neurons" icon above the plan activates the feature and lets you select the display of one, two or three spaces contiguous to the selected space.
 
 ### Roles for furniture
 
