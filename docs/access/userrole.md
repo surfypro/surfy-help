@@ -90,7 +90,7 @@ Ces rôles sont inclus par défaut dans le rôle utilisateur de base Administrat
 Ce rôle, ajouté au rôle utilisateur de base Lecteur (`READ`), permet de créer des personnes, de visualiser la liste des personnes entrées dans Surfy, d'affecter ces personnes ou de supprimer leur affectation aux postes de travail, aux quartiers d'affectation ou aux espaces.<br />
 Il permet de créer une matrice de transfert mais ne permet pas de l'importer dans Surfy pour exécuter le transfert d'affectations.
 
-Ce rôle ne permet pas de supprimer des personnes de la base de données.
+Ce rôle ne permet pas de supprimer des personnes de la base de données
 
 La page d'accueil comporte la vue des bâtiments principaux (hors scénarios) avec photos. La vue des bâtiments principaux en tuiles est accessible.<br />
 
