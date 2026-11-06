@@ -172,7 +172,7 @@ Ce rôle n'est pas inclu par défaut dans les rôles utilisateur de base.
 
 Ce rôle permet de ne gérer qu'une partie du plan, dans le cas d'étages très étendus afin d'éviter un temps de latence trop important.
 
-Une icône "neurones" située au dessus du plan permet d'activer la fonctionnalité et de sélectionner l'affichage d'un, deux ou trois espaces contigus à l'espace sélectionné.
+L'icône "neurones" située au dessus du plan permet d'activer la fonctionnalité et de sélectionner l'affichage d'un, deux ou trois espaces contigus à l'espace sélectionné.
 
 ### Rôles pour le mobilier
 
