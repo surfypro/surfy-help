@@ -170,6 +170,8 @@ More information about [qualifying a space](/en/docs/tutorials/surfaces/room/edi
 
 #### Neighbouring spaces (`CONTIGU`)
 
+This role is not included by default in the basic user roles.
+
 This role allows managing only part of the plan, for very large floors, to avoid excessive latency.
 
 A "neurons" icon above the plan activates the feature and lets you select the display of one, two or three spaces contiguous to the selected space.
