@@ -1,0 +1,9 @@
+{
+  "label": "Espaces",
+  "key": "user-guide-spaces",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Guides utilisateur liés aux espaces et au dashboard bâtiment"
+  }
+}
